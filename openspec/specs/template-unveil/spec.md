@@ -118,3 +118,12 @@ Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`, p
 - [ ] Vitest tests cover all sections with 100% line/branch/function coverage
 - [ ] Per-app verification (`scripts/verify-app.sh unveil`) passes successfully
 - [ ] Footer links `https://www.componentdock.com/`
+- [ ] 1. Navigation Bar — the navigation bar displays "Unveil." and all primary navigation links
+- [ ] 2. Hero Section — the hero section displays the gradient background, headline, subtitle, and CTA buttons
+- [ ] 3. Services Section — six service cards are displayed with icons and hover styling
+- [ ] 4. About & Team Section — team member cards for Adrian, Arthur, Anna, and Brian are displayed with social icons
+- [ ] 5. Counter & Testimonials Section — customer feedback and pagination controls are visible
+- [ ] 6. Why Choose Us Section — key business advantages are clearly laid out in a multi-column grid
+- [ ] 7. Portfolio / Work Section — portfolio project cards are displayed with hover overlays
+- [ ] 8. Pricing Section — subscription tier cards with features and call-to-action buttons are shown
+- [ ] 9. Blog Section — recent articles are rendered in a responsive grid

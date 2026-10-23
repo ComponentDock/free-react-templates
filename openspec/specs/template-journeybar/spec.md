@@ -116,3 +116,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to Component Dock
 - [ ] `public/CNAME` is `journeybar.free.componentdock.com` and `homepage` matches
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero And Headline — the h1 and subtitle are visible and centred above the search bar
+- [ ] Service Tabs — aria-selected="true"` moves to `Cars`, the Cars panel is
+- [ ] Per-Service Fields — the panel exposes origin, destination, date and cabin-class
+- [ ] Search Affordance — the page stays put with the entered criteria intact

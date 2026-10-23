@@ -186,3 +186,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays brand and navigation links — the navbar shows the brand "Cayo"
+- [ ] Hero section displays hotel heading with image slider — the hero shows "Welcome to Cayo Hotel" subheading
+- [ ] Booking form allows room reservation — check-in and check-out date inputs are visible
+- [ ] Services section displays amenities — all 4 service titles are visible
+- [ ] Rooms section displays room types with prices — Suite ($100), Family ($140), Deluxe ($130), Classic ($200), Superior ($120), Luxe ($500) are visible
+- [ ] Restaurant section displays tabbed menu — Main Dish tab is active
+- [ ] Counter section displays statistics — The counter section display 4 statistics with parallax background: 50 Hotel Branches, 20000 Happy Guests, 100 Rooms, 100 Destinations
+- [ ] About section with video preview — The about section display a video preview image with play button, heading "Watch Our Video", description text, and social media links
+- [ ] Testimonials carousel — The testimonials section display a carousel of guest reviews with avatars, star ratings, quotes, and navigation arrows
+- [ ] Blog section displays recent posts — The blog section display 3 blog post cards with images, dates, authors, comment counts, and excerpts

@@ -160,3 +160,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with sticky header and mobile menu — I see the logo "Justlaw", five nav links, and a "Free Consultation" button
+- [ ] Hero section with headline and consultation bar — I see the headline, subtitle, phone number, and a play button
+- [ ] Legal Practice Area section — I see three cards with titles and descriptions
+- [ ] About section with stats — I see the heading, description, and two counter stats
+- [ ] Free Consultation form — I see five input fields and a submit button
+- [ ] Recent Case Studies with tabs — three Vehicle Accident cases are displayed
+- [ ] Testimonials section — I see three testimonials with quotes and client names
+- [ ] Team Members section — I see three team member cards
+- [ ] CTA Banner — I see the heading and a "Get Started" button

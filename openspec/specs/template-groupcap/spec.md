@@ -160,3 +160,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders with grouped multiselect widget — the heading "Multi-Select #8 (Limit selection on groups)" is visible
+- [ ] Dropdown opens showing grouped options — a dropdown panel appears with a search input
+- [ ] Selecting options within a group — the checkbox next to "Alpha" is checked
+- [ ] Per-group limit enforcement — the remaining unchecked options in Group A are disabled
+- [ ] Deselecting restores group capacity — "Alpha" is unchecked
+- [ ] Independent group limits — all unchecked options in Group C remain enabled
+- [ ] Search filters options — only options containing "Al" are visible
+- [ ] Deselect All clears all selections — all checkboxes are unchecked
+- [ ] Select All fills groups to limits — Group A has 2 items selected (at its limit)
+- [ ] Button text reflects selections — the dropdown button text shows "Alpha, Echo"

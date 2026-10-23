@@ -124,3 +124,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays brand and navigation — the navbar shows "Loaf" as the brand
+- [ ] Hero section renders — the hero shows heading "Whenever we bake, bake with our heart"
+- [ ] About section renders — the about section shows heading "Brand new app to blow your mind"
+- [ ] Categories section shows food items — the categories section shows three items
+- [ ] Video section renders — the video section shows a heading
+- [ ] Testimonials section renders — the testimonials section shows heading "Enjoy our Client's Review"
+- [ ] Blog section renders — the blog section shows heading "Latest posts from our Blog"

@@ -273,3 +273,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Petsitting" and links to the main sections
+- [ ] Hero section — it SHALL contain a level-1 heading matching "Highest Quality Care For Pets You'll Love"
+- [ ] Intro services section — it SHALL show the three service blocks, each with an icon, title, and copy
+- [ ] Why-choose-us section — it SHALL show the heading "Why Choose Us?"
+- [ ] FAQ section — it SHALL show the heading "Frequently Asks Questions"
+- [ ] Testimonials section — it SHALL show the heading "Happy Clients & Feedbacks"
+- [ ] Pricing section — it SHALL show the heading "Choose Your Plan"
+- [ ] Gallery section — it SHALL show the heading "Pets Gallery"
+- [ ] Blog section — it SHALL show the heading "Latest news from our blog"
+- [ ] Consultation section — it SHALL show the heading "Free Consultation"
+- [ ] Footer — it SHALL show the site name "Petsitting" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

@@ -199,3 +199,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-screen background renders — a full-screen background image is visible
+- [ ] Heading renders — the heading "Coming Soon" is displayed in bold white text
+- [ ] Description paragraph — a description paragraph is visible with white text
+- [ ] Countdown timer displays — four countdown circles are displayed in a row
+- [ ] Notify Us CTA button — a "NOTIFY US" button is displayed
+- [ ] Social media links — the text "Follow us for update" is displayed

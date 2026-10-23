@@ -245,3 +245,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar shows the logo "Smilecraft" in white
+- [ ] Hero section — the heading "Modern Dentistry in a Calm and Relaxed Environment" is displayed
+- [ ] Emergency and hours strip — "Emergency Cases" heading is shown with phone number "+123-456-7890"
+- [ ] Appointment form — form inputs are displayed: Department dropdown, Name, Email, Date, Time, Phone
+- [ ] Services section — the heading "Our Service Keeps You Smile" is displayed
+- [ ] About section — the heading "Smilecraft with a Personal Touch" is shown
+- [ ] Team section — the heading "Meet Our Experienced Dentist" is displayed
+- [ ] Achievements counter — a gradient section (blue→teal) shows counter stats
+- [ ] Pricing section — 4 pricing cards are displayed: Basic, Standard, Premium, Platinum
+- [ ] Newsletter section — the heading "Subscribe to our Newsletter" is shown
+- [ ] Testimonials section — the heading "What Our Patients Say" is displayed
+- [ ] Blog section — the heading "Latest Blog" is shown
+- [ ] Responsive design — the navbar switches to a mobile hamburger menu

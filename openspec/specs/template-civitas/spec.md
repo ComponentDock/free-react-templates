@@ -84,3 +84,7 @@ As a visitor, I want footer navigation, company info, and Component Dock attribu
 - [ ] Component Dock attribution link present in footer
 - [ ] Responsive layout on mobile and desktop
 - [ ] Zero references to ColorLib in app code
+- [ ] Navigation Bar — I should see the brand title "Civitas"
+- [ ] Hero Section — I should see the headline "We have the best solution for your business to grow"
+- [ ] Why Choose Us / Services Section — I should see cards for "Web Design", "Web Development", "Branding & Identity", and "Graphic Design"
+- [ ] Recent Blog Posts — I should see 3 recent article entries with date badges ("23 Aug 2020") and descriptions

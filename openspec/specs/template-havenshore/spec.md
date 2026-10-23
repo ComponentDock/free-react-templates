@@ -163,3 +163,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with transparent header, logo, phone, and Book Now CTA — the navbar shows "Havenshore" logo text, phone number, and "Book Now" link
+- [ ] Hero section displays heading, tagline, and scroll arrow — a heading "Havenshore" is visible
+- [ ] Booking form with date inputs, guest select, and submit button — "Check In", "Check Out", and "Guest" labels are visible
+- [ ] Video intro section with heading, description, and play button — a heading containing "shelter is the Outcome" is visible
+- [ ] Pampering section with heading and description — a heading "Pampering Included" is visible
+- [ ] About features section with three alternating image-text rows — headings for "restaurant", "Swimming Pool", and "Party Center" are visible
+- [ ] Testimonials section with quote cards — a heading containing "past guests" is visible
+- [ ] Instagram gallery strip — multiple Instagram images are visible in a horizontal layout
+- [ ] Accessibility landmarks and semantics — banner, main, and contentinfo landmarks are present

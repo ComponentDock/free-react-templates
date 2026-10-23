@@ -136,3 +136,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar with logo and search — the "BroadSheet" logo is visible
+- [ ] Navbar with horizontal menu — all 9 menu items are visible
+- [ ] Hero with breaking news tickers — the "Breaking News" badge is visible
+- [ ] FeaturedPosts section — the main featured post shows image, category, title, author, excerpt
+- [ ] PopularNews section — 4 post cards are displayed
+- [ ] Newsletter form interaction — the form does not navigate away
+- [ ] VideoSection — 3 video thumbnails are displayed with play button overlays
+- [ ] Editorial section — the Editor's Pick shows 6 posts

@@ -235,3 +235,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with top bar and navigation links — the top bar SHALL display the tagline "We believe we help people for happier lives"
+- [ ] Hero banner with brand styling — the hero banner SHALL have a brand red background
+- [ ] Call-to-top section with CTA — the call-to-top section SHALL have a light gray (#f9f9ff) background
+- [ ] Services/countries section with four cards — the services section SHALL display exactly 4 country cards
+- [ ] Booking form with consultation fields — the booking form section SHALL have a dark overlay background
+- [ ] Features section with six items — the features section SHALL display exactly 6 feature items
+- [ ] Reviews section with customer testimonials — the reviews section SHALL display customer testimonials
+- [ ] Brand logos section — the brand logos section SHALL display exactly 5 logo placeholders
+- [ ] Blog section with two posts — the blog section SHALL display exactly 2 blog post cards
+- [ ] CTA bottom section — the CTA bottom section SHALL have a dark overlay background

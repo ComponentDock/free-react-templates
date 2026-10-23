@@ -174,3 +174,11 @@ The page SHALL set the document title to "Regvox — Registration Form Template"
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Page layout — I see a white card centered horizontally and vertically on a light gray background
+- [ ] Two-column card layout — I see an image section on the left side of the card
+- [ ] Hero image — I see a hero image filling the left column
+- [ ] Registration form heading — I see a heading with text "REGISTRATION FORM"
+- [ ] Form fields — I see a text input labeled "First Name"
+- [ ] Register button — I see a "Register" button with a dark background and white text
+- [ ] Dark mode toggle — the document root receives the "dark" class
+- [ ] Document title — the document title is "Regvox — Registration Form Template"

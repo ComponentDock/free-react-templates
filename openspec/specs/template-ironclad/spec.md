@@ -162,3 +162,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section displays construction company heading — the heading "We Build Great Projects" is displayed
+- [ ] Features strip shows three service highlights — "Quality Construction", "Professional Liability", and "Dedicated To Our Clients" are displayed
+- [ ] About section displays company information — "Welcome to Ironclad" heading is displayed
+- [ ] CTA bar shows services heading and quote button — the heading "Providing Personalized and High Quality Services" is displayed
+- [ ] Services section shows three service cards — "Architecture", "Renovation", and "Construction" cards are shown
+- [ ] Stats section displays project and customer counters — "48,000" and "Project Completed" are displayed
+- [ ] Projects section shows six project cards — the heading "Latest Projects" is displayed
+- [ ] Testimonials section shows quotes with navigation — a testimonial quote is displayed
+- [ ] Navbar displays navigation with mobile toggle — Home, About, Services, Projects, Blog, and Contact links are visible

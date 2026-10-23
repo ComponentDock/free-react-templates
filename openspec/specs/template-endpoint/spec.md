@@ -300,3 +300,13 @@ Dock (`https://www.componentdock.com/`) instead.
       differs.
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Endpoint" and links to Products, Pricing, About, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Ship Better APIs Faster"
+- [ ] Stats band — it SHALL show four metrics (Developers, API Calls/mo, Uptime, SDKs) with their values
+- [ ] Features section — it SHALL contain a heading "Everything You Need to Ship APIs"
+- [ ] Testimonials section — it SHALL contain a heading "Trusted by Engineering Teams"
+- [ ] Contact section — it SHALL show a form with Full Name, Email Address, Phone Number, Project Type, and Project Details fields and a "Send Message" button
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] CTA band — it SHALL contain a heading "Ready to Ship Better APIs?"
+- [ ] Footer — it SHALL show three link columns (Products, Developers, Company) and a brand blurb
+- [ ] Page composition — the page SHALL compose the header, hero, stats band, features, testimonials, contact, FAQ, CTA band, and footer in order

@@ -235,4 +235,3 @@ Background:
 - [ ] Placeholder images via picsum.photos with deterministic seeds
 - [ ] 100% test coverage (Vitest + Testing Library)
 - [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com

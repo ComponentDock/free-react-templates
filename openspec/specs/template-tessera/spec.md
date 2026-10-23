@@ -312,3 +312,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Tessera"
+- [ ] Hero slider — it SHALL show the subheading "Architecture Firm", the heading
+- [ ] About section — it SHALL show the eyebrow "About"
+- [ ] Stats band — it SHALL show values for Years of Experience, Happy Clients,
+- [ ] Work flow — it SHALL show the heading "Our Work Flow"
+- [ ] Services — it SHALL show the heading "Our Services"
+- [ ] Featured projects — it SHALL show the heading "Featured Projects"
+- [ ] Testimonials — it SHALL show the heading "Our satisfied customer says"
+- [ ] Team — it SHALL show the heading "Our Architect Team"
+- [ ] Blog — it SHALL show the heading "Recent Blog"
+- [ ] Clients — it SHALL show the heading "Our Clients"
+- [ ] Footer — it SHALL show the brand name "Tessera" and a blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the

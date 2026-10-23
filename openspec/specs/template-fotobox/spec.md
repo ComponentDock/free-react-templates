@@ -118,3 +118,5 @@ Extracted from screenshot visual analysis:
 - [ ] All sections match original structure and order 1:1
 - [ ] 100% test coverage (Vitest + Testing Library)
 - [ ] Conventional commit: `feat: add Fotobox template (ColorLib Photography 2)`
+- [ ] Hero Slider — The hero section is a large image slider (near full viewport height)
+- [ ] Thumbnail Gallery View — "SHOW THUMBNAILS" text link in the footer area, underlined, uppercase

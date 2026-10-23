@@ -169,3 +169,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders correctly — a centered heading "State Selector" is visible
+- [ ] Dropdown opens on click — a dropdown panel appears below the trigger
+- [ ] Single state selection — "Alabama" gets a light blue (#e1f2fb) background
+- [ ] Multiple state selection — all three items show light blue (#e1f2fb) background
+- [ ] Deselect a state — "California" loses the light blue background
+- [ ] Select all states — all 50 states are selected
+- [ ] Deselect all states — no states are selected
+- [ ] Search filters states — only states containing "New" are visible (New Hampshire, New Jersey, New Mexico, New York)
+- [ ] Dropdown closes on outside click — the dropdown panel closes
+- [ ] Keyboard accessibility — the dropdown opens
+- [ ] Responsive layout — the heading is centered

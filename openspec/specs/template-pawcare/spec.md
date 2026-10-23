@@ -218,3 +218,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Pawcare" and links to About
+- [ ] Hero slider — it SHALL contain a level-1 heading "We Care Your Pets"
+- [ ] Services section — it SHALL contain a heading "Services for every dog"
+- [ ] About section — it SHALL contain a heading "We care your pet" and an "About Us"
+- [ ] Testimonials section — it SHALL contain at least one testimonial card with a name
+- [ ] Team section — it SHALL contain a heading "Our Team"
+- [ ] Call-to-action band — it SHALL contain a heading "Why go with Pawcare?"
+- [ ] Footer — it SHALL show contact details, an "Our Services" column, and a
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -173,3 +173,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar displays "Eduforge" as logo text
+- [ ] Hero section — the hero displays "Eduforge Online Training Courses" as the main heading
+- [ ] About section — the about section displays "Welcome to Eduforge"
+- [ ] Courses section — the heading reads "Explore Courses"
+- [ ] CTA section — the CTA section shows a headline mentioning Eduforge and a "Get Started!" button
+- [ ] Why Us section — the heading reads "Why Eduforge"
+- [ ] Contact CTA section — the heading reads "Contact Us"

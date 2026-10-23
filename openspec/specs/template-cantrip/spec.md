@@ -89,3 +89,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Accordion wizard navigation — the Basic Information panel is visible
+- [ ] Step 1 — Basic Information form — the field value updates
+- [ ] Step 2 — Additional Information form — the field value updates
+- [ ] Step 3 — Specialities and Submit — the form submission is handled
+- [ ] Responsive layout — the form is visible and usable

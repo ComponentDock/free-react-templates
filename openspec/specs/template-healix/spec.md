@@ -165,3 +165,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar with contact information — the phone number "+1 234 567 8900" is visible
+- [ ] Navbar with navigation and CTA — the logo "Healix" is displayed
+- [ ] Hero banner with appointment search — the headline "The Most Valuable Thing is Your Health" is displayed
+- [ ] Appointment form section — the heading "Welcome to Healix" is displayed
+- [ ] Statistics counter — the stat "18+ Years of Experience" is displayed
+- [ ] About section with features — the heading "Your Health is Our Priority" is displayed
+- [ ] Departments grid — 7 department cards are displayed (Neurology, Ophthalmology, Nuclear Magnetic, X-Ray, Surgical, Cardiology, Dental)
+- [ ] Doctor profiles — "Dr. Alicia Henderson" with specialty "Cardiologist" is displayed
+- [ ] Blog section — 3 blog post cards are displayed with titles and read more links
+- [ ] Testimonials — patient names "Jessica Torres" and "Rebecca Gray" are displayed with quotes
+- [ ] App renders all sections — all sections render in order: TopBar, Navbar, HeroBanner, AppointmentSection, StatsCounter, AboutSection, Departments, Doctors, BlogSection, Testimonials, Footer

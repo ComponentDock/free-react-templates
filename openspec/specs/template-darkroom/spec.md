@@ -191,3 +191,7 @@ and a document title.
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; brand tokens (#0ECE91, #111111, #222222, Raleway + Aldrich) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `darkroom-<n>`, Google Fonts links, lucide icons only)
+- [ ] Navigation bar — the navbar SHALL show the site name "Darkroom" with a camera icon on the left
+- [ ] Hero section — the hero SHALL show the uppercase headline "Hello! Welcome to
+- [ ] Gallery section — the filter bar SHALL show uppercase categories: All, Photography,
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

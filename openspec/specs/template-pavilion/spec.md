@@ -160,3 +160,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays site identity and navigation — I see "Pavilion" branding in the navigation
+- [ ] Hero section displays hotel headline — I see the heading "Top Hotel in the City"
+- [ ] Booking bar shows reservation form — I see a "Check In" date input
+- [ ] About section displays company information — I see "About our company"
+- [ ] Rooms section displays room cards — I see the heading "Our Rooms"
+- [ ] Dining section displays two feature areas — I see "Dining and Drinks" heading
+- [ ] Testimonials section displays customer review — I see testimonial text
+- [ ] Blog section displays recent posts — I see the heading "Our Blog"
+- [ ] Gallery section displays hotel images — I see a gallery section with images

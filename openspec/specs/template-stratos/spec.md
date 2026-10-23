@@ -256,3 +256,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Stratos" and links to Products, Pricing, About, Blog, and Contact
+- [ ] Hero section — it SHALL contain the badge "Trusted by 10,000+ developers worldwide"
+- [ ] Stats band — it SHALL show 500K+ Deployments, 40+ Global Regions, 99.99% Uptime SLA, and 10K+ Active Teams
+- [ ] Features section — it SHALL contain a heading "Everything You Need to Ship"
+- [ ] Testimonials section — it SHALL contain a heading "Loved by Developers"
+- [ ] FAQ section — it SHALL show five questions including "What frameworks and languages does Stratos support?" and "How does pricing work?"
+- [ ] CTA section — it SHALL contain a heading "Ready to Ship Faster?"
+- [ ] Footer — it SHALL show the blurb, contact details (phone, email, address), and link columns Products, Developers, and Company
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

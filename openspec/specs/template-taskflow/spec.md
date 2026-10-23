@@ -162,3 +162,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero slider — it SHALL display the heading "Strategic Design for Brands"
+- [ ] About section with accordion — it SHALL show a "Welcome & Introduce" meta heading
+- [ ] Services section — it SHALL show the heading "Here are some of my expertise"
+- [ ] Portfolio section — it SHALL show the heading "Recent Work"
+- [ ] Blog section — it SHALL show the heading "Recent Blog"
+- [ ] CTA section — it SHALL show the heading "Get in Touch!"
+- [ ] Brand styling — links and buttons SHALL use the brand color #F75940

@@ -126,3 +126,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar with secondary navigation and social links — the secondary navigation is visible with all four links
+- [ ] Dark navbar with branding and category navigation — the "Pressbox" branding and "24H" badge are visible
+- [ ] Hero carousel with featured articles — the first featured article is displayed with its title, category, date, and comment count
+- [ ] Trending posts and recent articles grid — the "Trending Posts" heading is visible
+- [ ] Newsletter subscription section — the "Stay Connected" heading is visible

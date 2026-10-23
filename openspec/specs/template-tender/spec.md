@@ -223,3 +223,14 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Tender" and links to Home, About, Groomers, Services, Blog, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "The Kind of Care Your Pets Deserve"
+- [ ] Services tiles — it SHALL show tiles titled Veterinary Service, Pet Grooming, and Pet Setting
+- [ ] About section — it SHALL contain a heading "We Are Best Agency For Your Pets"
+- [ ] Groomers section — it SHALL contain a heading "Our Groomers"
+- [ ] Testimonials section — it SHALL contain a heading "happy Customers Says"
+- [ ] Pricing section — it SHALL contain a heading "Affordable Packages"
+- [ ] Blog section — it SHALL contain a heading "Latest Blog Updates"
+- [ ] Appointment section — it SHALL contain a heading "Make An Appointment"
+- [ ] Footer — it SHALL show the site name "Tender" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -220,3 +220,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar — it SHALL show "Phone no:" with a clickable phone link
+- [ ] Navigation bar — it SHALL show the brand name "Zenbloom" linking to `#home
+- [ ] Hero section — it SHALL display the heading "Yoga Enhances Your Life"
+- [ ] Services section — it SHALL display three service cards
+- [ ] About section — it SHALL show the number "42" with "Years Experience" label
+- [ ] Features section — it SHALL display the heading "Control Your Body To Free Your Soul"
+- [ ] Counter section — it SHALL display four statistic values and labels
+- [ ] Classes section — it SHALL display six class cards with titles
+- [ ] Testimonials section — it SHALL show the heading "What They Are Saying"
+- [ ] Schedule section — it SHALL display all seven day headers
+- [ ] Trainers section — it SHALL display four trainer cards with names
+- [ ] Blog section — it SHALL display three blog cards with titles and dates

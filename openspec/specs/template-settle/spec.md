@@ -254,3 +254,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run readme:status` regenerated after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Settle" and a "Home" link pointing to the page root
+- [ ] Hero slider — it SHALL show a level-1 headline (e.g. "Wood & Cloth Sofa")
+- [ ] Featured categories — it SHALL show the heading "Featured Category"
+- [ ] Product grid — it SHALL show the heading "awesome shop"
+- [ ] Offer band — it SHALL show the headline "Weekly Sale on 60% Off All Products"
+- [ ] Best sellers — it SHALL show the heading "Best Sellers"
+- [ ] Newsletter subscribe — it SHALL show the heading "Subscribe to get Updated with new offers"
+- [ ] Client logos — it SHALL render at least four client logo images
+- [ ] Footer — it SHALL show link columns (e.g. Top Products, Quick Links, Features, Resources)
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

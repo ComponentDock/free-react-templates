@@ -216,3 +216,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Voyager" and all navigation links
+- [ ] Hero slider — the hero SHALL display a subtitle and heading text
+- [ ] Reservation search — the form SHALL show fields for Where, Check-in, Check-out, Guest, and a "Find Flights" button
+- [ ] Services section — the section SHALL display four service cards: Amazing Travel, Our Cruises, Book Your Trip, Nice Support
+- [ ] Popular destinations — the section SHALL display six destination cards with star ratings and prices
+- [ ] Recent blog — the section SHALL display a featured image and three blog entries with date, title, and category
+- [ ] Promotional sale — the section SHALL display a percentage discount, "Book Now" and "Read more" buttons
+- [ ] Recommended hotels — the section SHALL display four hotel cards with price badges and star ratings
+- [ ] Testimonials — the section SHALL display three testimonials with avatar, name, location, and quoted text
+- [ ] Popular countries — the section SHALL display four tour images with titles and prices
+- [ ] Newsletter signup — the section SHALL display a heading, email input, and subscribe button

@@ -145,3 +145,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation & Header — the navbar SHALL display the "Logistix" logo, all five navigation links, social icons, and the phone number button
+- [ ] Hero Section — it SHALL display the "Welcome to Logistix" label, the main heading, subtitle text, and an "Explore Us" call-to-action link
+- [ ] Services Section — it SHALL display all four service titles and their descriptions
+- [ ] About Us Section — the corresponding content panel SHALL expand or collapse
+- [ ] Our Mission Section — it SHALL display the "Our Mission" label, a blockquote, and a "Learn More" link
+- [ ] Projects Section — it SHALL display numbered project items with titles, descriptions, and view links
+- [ ] CTA Banner — it SHALL display the heading text and a "Learn More" link
+- [ ] Testimonial Section — it SHALL display the testimonial quote, founder name "Graham Cracker", role, and a play video button
+- [ ] Blog Section — it SHALL display three blog post cards with dates and titles
+- [ ] Brand Partners — it SHALL display all partner brand names

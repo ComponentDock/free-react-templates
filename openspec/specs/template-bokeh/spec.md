@@ -124,3 +124,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to Component Dock
 - [ ] `public/CNAME` is `bokeh.free.componentdock.com` and `homepage` matches
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar And Hero — the navbar and hero image are visible with a single h1
+- [ ] Filterable Portfolio Gallery — only fashion-categorised items remain in the grid and the
+- [ ] Services And Pricing — three cards are visible showing `$76`, `$86` and `$96
+- [ ] About And Testimonials — each card shows the quote, client name and role

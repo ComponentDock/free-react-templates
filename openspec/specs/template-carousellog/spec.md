@@ -66,3 +66,7 @@ Recreation of ColorLib **Carousel 16** (`https://colorlib.com/wp/template/carous
 - [ ] Vitest coverage at 100%
 - [ ] Fully responsive on mobile and desktop
 - [ ] Footer links to `https://www.componentdock.com/`
+- [ ] Navbar & Header — the navigation bar displays the brand logo and links for Home, Features, Testimonials, and Contact
+- [ ] Hero Section with Testimonial Carousel — the carousel slides to display the next/previous testimonial card smoothly
+- [ ] Testimonial Details & Cards — each card clearly presents the author's avatar, feedback text, and professional title
+- [ ] Call to Action (CTA) Section — a distinct call-to-action section appears with a headline, description, and action button

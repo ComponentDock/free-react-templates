@@ -283,3 +283,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Doglife" and links to the main sections
+- [ ] Hero section — it SHALL contain a level-1 heading matching "We Love Dogs"
+- [ ] Welcome section — it SHALL show the heading "Welcome To Our Website"
+- [ ] Highlights section — it SHALL show the headings "Happy Pets" and "Modern Equipment"
+- [ ] Pricing section — it SHALL show the heading "Pricing Table"
+- [ ] FAQ section — it SHALL show the heading "Frequently Ask Questions"
+- [ ] Testimonials section — it SHALL show the heading "Happy Customers"
+- [ ] Blog section — it SHALL show the heading "Doglife Blog"
+- [ ] Services section — it SHALL show the heading "Our Services"
+- [ ] Contact section — it SHALL show the heading "Contact Form"
+- [ ] Footer — it SHALL show the site name "Doglife" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

@@ -101,3 +101,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders with registration form — THEN I see a heading "Create Account"
+- [ ] Form fields present — THEN I see input fields for "First Name", "Last Name", "Email", "Password", "Confirm Password"
+- [ ] First and Last Name side by side — THEN the "First Name" and "Last Name" inputs are on the same row
+- [ ] Form submission — AND I fill in all required fields
+- [ ] Side image visible on desktop — THEN I see an image on the right side of the card

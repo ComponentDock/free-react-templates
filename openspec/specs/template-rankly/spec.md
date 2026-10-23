@@ -197,3 +197,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top Bar — the top bar shows a phone number and email address
+- [ ] Navigation Bar — the navbar shows the "Rankly" logo
+- [ ] Hero Section — a headline about SEO analysis is visible
+- [ ] Services Section — three service cards are visible (Site Audit, Keyword Research, Content Optimization)
+- [ ] About Section — a heading about strategy driving growth is visible
+- [ ] Features Section — a heading about ranking improvement is visible
+- [ ] Pricing Section — three pricing plans are visible (Standard, Business, Ultimate)
+- [ ] Team Section — four team member cards are visible
+- [ ] Testimonials Section — testimonial quotes with author names and roles are visible
+- [ ] Blog Section — four blog post cards are visible
+- [ ] Brands Section — five brand logo placeholders are visible
+- [ ] Contact Form — a form with name, email, subject, and message fields is visible
+- [ ] Accessibility — banner, main, and contentinfo landmarks are present in the DOM

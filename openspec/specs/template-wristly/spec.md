@@ -134,3 +134,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% coverage via Vitest + Testing Library
 - [ ] `scripts/verify-app.sh wristly` passes
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page composition — The system render all sections in order with Poppins font, centered content, and proper spacing
+- [ ] Navbar — The system render a sticky navbar with "Wristly" logo and 6 nav links
+- [ ] Hero — The system render a hero with dark gradient bg, headline, subtitle, and gradient pill CTA
+- [ ] About section — Split layout: image left, text right with heading, paragraph, and CTA
+- [ ] Features — 4 feature cards with icons in a responsive grid around a central product image
+- [ ] Services — 6 service cards in a 3×2 grid with lucide-react icons
+- [ ] Products — Dark bg section with 4 product cards: image, name, price, "Pre Order" button
+- [ ] Reviews — 3 reviewer cards with name, text, and star ratings (lucide-react Star icon)
+- [ ] FAQ accordion — 4 FAQ items with expand/collapse toggle using aria-expanded

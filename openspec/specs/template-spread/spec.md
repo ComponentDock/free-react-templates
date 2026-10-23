@@ -147,3 +147,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with logo and navigation links — the navbar shows the logo "Spread", all five nav links, and a search icon
+- [ ] Hero carousel renders 3 slides — 3 hero slides are rendered with play buttons
+- [ ] Featured video section displays main content — the featured video section shows the title, excerpt, play button, share icon, and social icons (Facebook, Twitter)
+- [ ] Sidebar shows Most Popular and Latest Videos — the Most Popular section shows 5 post cards with titles, thumbnails, and stats
+- [ ] Trending Now section displays 3 cards — 3 trending post cards are shown with images, titles, categories, and stats
+- [ ] Featured Videos grid displays 4 posts — 4 featured video cards are shown with images, titles, categories, and stats
+- [ ] Most Viewed Videos displays 3 posts — 3 most viewed video cards are shown with images, titles, and stats

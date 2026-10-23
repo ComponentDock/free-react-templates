@@ -209,3 +209,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Elevation" and links to Home, About Us, Services, and Projects
+- [ ] Hero section — it SHALL contain a level-1 heading "Precise Concept"
+- [ ] Concept section — it SHALL show a heading "Precise Concept Design for Stylish Living"
+- [ ] Features section — it SHALL show at least three items titled "Architecture"
+- [ ] Fun facts section — it SHALL show the heading "Quick Facts"
+- [ ] Testimonials section — it SHALL show a quote and an author name "Fanny Spencer"
+- [ ] Projects section — it SHALL contain a heading "Recent Projects"
+- [ ] Clients logo strip — it SHALL show at least four client names
+- [ ] Footer — it SHALL show a newsletter heading, an email input, and a subscribe button
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -222,3 +222,13 @@ the new, original name — short, evocative, no collision with `apps/`,
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the brand name "Fern" linking to `#home
+- [ ] Hero section — it SHALL contain the headline "Discover Your Perfect Home"
+- [ ] Search bar — it SHALL show a location text input
+- [ ] Features section — it SHALL show feature cards with an icon, title, and description
+- [ ] Featured properties — it SHALL show property cards with an image, title, location,
+- [ ] Cities section — it SHALL show city cards with a background image and city name
+- [ ] How it works — it SHALL show numbered steps with a title and description
+- [ ] Testimonials — it SHALL show testimonials with a quote, author name, and role
+- [ ] Agents section — it SHALL show agent cards with a photo, name, and role
+- [ ] Blog section — it SHALL show blog post cards with an image, date, title, and

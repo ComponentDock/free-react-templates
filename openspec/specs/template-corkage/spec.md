@@ -114,3 +114,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar shows the brand "Corkage" and all navigation links plus the "Book a Table" button
+- [ ] Hero section — the hero heading "Fresh And Delicious Food" is visible
+- [ ] About section — the about heading containing "Sed ut perspiciatis" is visible
+- [ ] Menu section — the Starters tab is active and shows starter menu items
+- [ ] Testimonials section — at least one testimonial with a quote, name, and role is visible
+- [ ] Reservation form — the reservation form has Name, Email, Phone, Date, Time, and Number of Guests fields

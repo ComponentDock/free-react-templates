@@ -158,3 +158,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders logo and navigation links — I see a logo "Azureline" on the left
+- [ ] Hero displays fullscreen intro banner — I see the subtitle "Introducing"
+- [ ] Features display numbered cards — I see three feature cards
+- [ ] Video section shows thumbnail and content — I see a video thumbnail image with a play button
+- [ ] Services section with split layout — I see the heading "Services We Offered"
+- [ ] Latest Works carousel — I see the heading "Some Of Our Latest Works"
+- [ ] Newsletter subscription form — I see "Subscribe for our Newsletter"
+- [ ] Contact form with split layout — I see a contact image on the left

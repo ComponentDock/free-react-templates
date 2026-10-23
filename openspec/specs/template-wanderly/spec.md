@@ -150,3 +150,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar with destinations and social links — the TopBar shows "Top destinations" label with Asia, Europe, and America links
+- [ ] Navbar with navigation and Book Now CTA — the navbar shows Home, About, Packages, Blog, and Contact links
+- [ ] Hero banner with gradient overlay — the banner shows "Wanderly" heading and "Let's start your journey" tagline
+- [ ] Tabbed booking form — the Hotels tab is active with destination, check-in, check-out, and guest inputs
+- [ ] Top Places destination cards — four destination cards are displayed with unique names and locations
+- [ ] Featured Event section — the event section displays "Maldives — Asia" with date "12 Aug 2025" and cost "$820"
+- [ ] Hotel & Restaurant listings — three hotel cards are displayed with names and prices
+- [ ] Client testimonials — four review cards are displayed with author names
+- [ ] Best Services section — Transportation, Guidance, Accommodation, and Discover World services are shown

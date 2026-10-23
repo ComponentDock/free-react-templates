@@ -136,3 +136,6 @@ The page footer links to Component Dock.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Page layout — the entire viewport is covered by a dark grayscale map background
+- [ ] Card header banner — the card header displays a workspace/desk photo with a green-tinted overlay
+- [ ] Contact form — I see a "Full Name" label with an underline input field

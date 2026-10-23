@@ -122,3 +122,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to Component Dock
 - [ ] `public/CNAME` is `eddy.free.componentdock.com` and `homepage` matches
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar And Hero — a `banner` landmark shows the navbar and hero image
+- [ ] Services And Gallery — each image in the grid exposes descriptive alt text (e.g
+- [ ] About And Testimonials — each quote is paired with the guest's name and role
+- [ ] Booking Enquiry — the submit is intercepted (`preventDefault`) and the page does

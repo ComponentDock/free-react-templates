@@ -243,3 +243,12 @@ The template SHALL NOT contain any references to "ColorLib" in source code, comm
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Header — the brand logo is displayed in the header
+- [ ] Hero Banner — the heading "Crafting Best Experience" is displayed in brand red (#f5204b) at 60px
+- [ ] Experience Section — two image thumbnails are displayed side by side on the left
+- [ ] Service Carousel — a white carousel card is displayed with a heading in brand red and paragraph text
+- [ ] Services Grid — 4 service cards are displayed in a single row on desktop
+- [ ] Video Section — a video thumbnail with a dark overlay is displayed
+- [ ] Projects Gallery — project images are displayed in a grid layout
+- [ ] Contact Area — a dark background (#222222) contact form is displayed on the right
+- [ ] Mobile Responsiveness — the header shows a hamburger menu

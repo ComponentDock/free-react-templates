@@ -140,3 +140,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Bell icon with badge count — a bell icon is visible
+- [ ] Toggle opens notifications dropdown — the notifications panel is visible
+- [ ] Notification items displayed — five notification items are visible
+- [ ] Unread items highlighted — unread items have a light yellow background (#fffaef)
+- [ ] View All link — a "View All" link is visible at the bottom of the list

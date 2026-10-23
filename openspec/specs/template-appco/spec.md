@@ -258,3 +258,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Appco" and links to the main sections
+- [ ] Hero section — it SHALL contain a level-1 heading matching "Get things done with Appco"
+- [ ] Features section — it SHALL show the heading "Some of the best features Of Our App!"
+- [ ] Services section — it SHALL show the heading "How Can We Help Your with Appco!"
+- [ ] Video/demo section — it SHALL show the heading "See Appco in Action"
+- [ ] Pricing section — it SHALL show the heading "Choose Your Very Best Pricing Plan."
+- [ ] Testimonials section — it SHALL show the heading "What Our Customers Have to Say"
+- [ ] FAQ section — it SHALL show the heading "Frequently Asked Questions"
+- [ ] Download CTA section — it SHALL show the heading "Our App Available For Any Device Download now"
+- [ ] Metrics section — it SHALL show the heading "Say Hello To The Collaboration Hub."
+- [ ] Footer — it SHALL show the site name "Appco" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

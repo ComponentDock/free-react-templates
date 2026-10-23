@@ -106,3 +106,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Render the login card layout — a card element with dark navy background is visible and centered on the page
+- [ ] Display the avatar — an avatar element with rounded-full shape and 100px dimensions is visible
+- [ ] Display welcome heading and subtitle — the text "Welcome" and "Sign in by entering the information below" are visible
+- [ ] Render username input with icon — the field accepts and displays the typed text
+- [ ] Render password input with icon — the field accepts and displays the typed text as masked characters
+- [ ] Display Forgot Password link — the link navigates to the forgot password target
+- [ ] Display Get Started submit button — the form submission is triggered
+- [ ] Display Sign Up CTA — a "Sign Up" link is visible and clickable

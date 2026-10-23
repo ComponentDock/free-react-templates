@@ -134,3 +134,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo and navigation links — I see "Fixero" with an orange dot in the logo area
+- [ ] Hero section with background image — I see the heading "Perfection is always in our mind."
+- [ ] Quotation form section — I see Name, Email, and Message input fields
+- [ ] Services section with 6 service cards — I see 6 service cards with icons and descriptions
+- [ ] About section with tabbed content — I see the Quality image and description
+- [ ] Testimonials section — I see 2 testimonial cards with quotes and avatars
+- [ ] Projects gallery section — I see 6 project cards with images
+- [ ] Blog section — I see 3 blog post cards with titles and excerpts

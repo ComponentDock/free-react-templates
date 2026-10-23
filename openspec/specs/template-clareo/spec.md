@@ -117,3 +117,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar with responsive mobile menu — the navbar shows the logo "Clareo" with camera icon and all menu items (Home, Services, About, Gallery, Blog, Contact)
+- [ ] Hero section with background image — it displays a heading "Classy Rebel Fashion Photoshoot", a subtitle, and a "View Gallery" button linking to the gallery section
+- [ ] Services section with three service cards — it shows Photography, Image Processing, and Videography cards with icons and descriptions
+- [ ] About section with split layout — it displays the heading "We Are Clareo a Photography Studio" and descriptive paragraphs
+- [ ] Gallery section with image grid and hover captions — it displays 8 images in a 4-column grid
+- [ ] Blog section with post cards — it shows 3 blog posts with titles, dates, and author names
+- [ ] Instagram section with image tiles — it displays 8 image tiles with accessible labels

@@ -146,3 +146,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar contains the text "Expo"
+- [ ] Hero — the hero section displays "Build audience and grow your brand"
+- [ ] Brands — the brands section displays "Trusted by over 3,000 world's leading companies"
+- [ ] About — the about section displays "We take a steps to build a successful business"
+- [ ] Features — the features section displays "How we can help"
+- [ ] ProjectUs — the project-us section displays "We are here to help you for better solutions"
+- [ ] Pricing — the pricing section displays "Affordable pricing plan"
+- [ ] CallToAction — the cta section displays "Let's talk about your project"

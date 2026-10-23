@@ -182,3 +182,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Hero — the Hero band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Categories — the Categories band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Locations — the Locations band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Food Grid — the Food Grid band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] How It Works — the How It Works band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] CTA — the CTA band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] CTA App — the CTA App band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Clients — the Clients band SHALL be present at its documented position with the structure, copy and tokens named above

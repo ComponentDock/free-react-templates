@@ -98,3 +98,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-page login layout — a white card is visible in the center of the viewport
+- [ ] Login form with username and password fields — a text input with placeholder "username" is visible
+- [ ] Login button — a button with text "LOGIN" is visible
+- [ ] Registration link — the text "Not registered?" is visible
+- [ ] Document title — the document title is "Keycard — Login Form Template"

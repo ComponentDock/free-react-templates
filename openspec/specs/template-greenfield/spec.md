@@ -208,3 +208,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact info and social links — I should see the email address "info@greenfield.com" in the top bar
+- [ ] BrandBar shows logo and contact details — I should see the brand name "Greenfield"
+- [ ] Navbar provides navigation and mobile menu — I should see navigation links for Home, About, Services, Projects, Blog, and Contact
+- [ ] Hero section displays welcome content — I should see "Welcome to Greenfield" subheading
+- [ ] Services section shows four service cards — I should see 4 service cards
+- [ ] About section displays company info — I should see "We're Leader In Agricultural Market" heading
+- [ ] Counter section shows statistics — I should see 4 counter items
+- [ ] Projects section shows portfolio — I should see "Explore Projects" heading
+- [ ] Video section — I should see a play button
+- [ ] Testimonials section — I should see "Testimonials" heading
+- [ ] Request Quote form and FAQ — I should see form fields for First Name, Last Name, Phone, Service, and Message
+- [ ] Blog section — I should see "Recent Post" heading
+- [ ] Newsletter subscription — I should see "Subscribe to our Newsletter" heading

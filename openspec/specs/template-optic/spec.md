@@ -144,3 +144,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full page render with all sections — the document title is "Optic — Photographer Portfolio"
+- [ ] Navbar with split navigation — the navbar displays left links: Home, About, Services
+- [ ] Services section with four service cards — the services section displays heading "Services"
+- [ ] About section with progress bars — the about section displays heading "About Me"
+- [ ] Gallery section with photo grid — the gallery section displays heading "My Photography"
+- [ ] Testimonials section with carousel — the testimonials section displays heading "What Clients Are Saying"
+- [ ] Blog section with post cards — the blog section displays heading "Blog Posts"
+- [ ] Contact section with form — the contact section displays heading "Say Hello"

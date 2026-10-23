@@ -278,3 +278,15 @@ The system SHALL expose accessible semantics throughout.
 - [ ] No ColorLib references in any app file; footer links
       https://www.componentdock.com/.
 - [ ] Placeholder images use `https://picsum.photos/seed/callcraft-<n>/<w>/<h>`.
+- [ ] Navbar — a sticky navbar SHALL be visible at the top
+- [ ] Hero / Banner section — a hero section SHALL be visible with a background image
+- [ ] Features section (3 columns) — three feature columns SHALL be visible
+- [ ] Testimonials section — a testimonial card SHALL be visible
+- [ ] Offered Services section — service cards SHALL be displayed
+- [ ] Facts / Stats section — 5 stat counters SHALL be visible
+- [ ] Services Grid section — 6 service cards SHALL be visible in a grid layout
+- [ ] Info / CTA section — a gradient background (from `#62bdfc` to `#8490ff`) SHALL be visible
+- [ ] About section — a headline "We Believe that Interior beautifies the Total Architecture" SHALL be visible
+- [ ] Brand logos section — a row of placeholder partner/client logos SHALL be visible
+- [ ] Contact section — a heading "If you need, Just drop us a line" SHALL be visible
+- [ ] Accessibility and semantics — all sections SHALL use semantic HTML (`<header>`, `<main>`, `<section>`, `<footer>`)

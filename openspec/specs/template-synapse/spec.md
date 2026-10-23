@@ -206,3 +206,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Synapse" and links to Home, About, Services, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Mass People Oriented Software"
+- [ ] How-it-works section — it SHALL contain a heading "How It work for you"
+- [ ] CTA splits — it SHALL contain the heading "We've made a life that will change you"
+- [ ] Screenshots section — it SHALL contain a heading "Unique Screens that work perfectly"
+- [ ] Pricing section — it SHALL contain a heading "Choose Your Price Plan"
+- [ ] Testimonials section — it SHALL contain a heading "Feedback from Customers"
+- [ ] Impress section — it SHALL contain a heading "Got Impressed to our features?"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

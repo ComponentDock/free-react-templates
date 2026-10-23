@@ -180,3 +180,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section with parallax background and CTA — a heading is visible with the text "Far far away, behind the word mountains"
+- [ ] Navbar with logo, navigation links, and mobile toggle — the logo "Plumb" is visible
+- [ ] Latest product section with image and text — the text "Latest Product" is visible
+- [ ] Four-column features section — numbers 1, 2, 3, and 4 are visible
+- [ ] Web resources section with stats and checklist — the heading "Web Resources" is visible
+- [ ] News section with author cards — the heading "On The News" is visible
+- [ ] Newsletter subscription form — the email input is cleared
+- [ ] Services grid with icons — headings for Web Development, Web Design, Graphic Design, and Copywriting are visible
+- [ ] Testimonials section with quotes — the heading "Testimonials" is visible
+- [ ] Call to action section — the heading "Ready to get started?" is visible

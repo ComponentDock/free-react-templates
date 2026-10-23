@@ -143,3 +143,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar with contact info and social links — the navbar shows the logo, contact info, nav links, and social icons
+- [ ] Hero section with headline and CTA — the heading, subtitle, and CTA button are displayed
+- [ ] About section with images and description — the heading, quote, description text, and CTA button are visible
+- [ ] Services section showcasing yoga disciplines — 6 service cards are displayed with the correct names
+- [ ] Choose Us section with statistics — all four statistics are shown with their labels
+- [ ] Upcoming courses section — 3 course cards are displayed with JOIN NOW buttons
+- [ ] Gallery section with image grid — 8 images are displayed in a grid
+- [ ] Instructors section with team members — 4 instructor cards are shown with names and roles
+- [ ] Appointment booking form — all form fields and the submit button are present
+- [ ] Testimonials carousel — testimonial quotes and author names are displayed, and prev/next navigation works

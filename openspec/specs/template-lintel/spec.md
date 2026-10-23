@@ -226,3 +226,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Lintel" and links to Home,
+- [ ] Hero carousel — it SHALL show a level-1 heading and a "Contact Us" button
+- [ ] About section — it SHALL contain a heading "Welcome To Our Company"
+- [ ] Services section — it SHALL contain a heading "What We Do"
+- [ ] Projects section — it SHALL contain a heading "Our Projects"
+- [ ] Testimonials section — it SHALL show a quotation and an attribution (name and role)
+- [ ] Blog section — it SHALL contain a heading "Blog and Updates"
+- [ ] Footer — it SHALL show an about blurb, a features link list, and a copyright
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

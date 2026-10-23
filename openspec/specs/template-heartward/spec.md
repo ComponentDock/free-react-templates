@@ -141,3 +141,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sticky navbar with navigation and CTA — the navbar shows the brand "Heartward", all navigation links, and the "Donate" button
+- [ ] Hero banner section — the hero section shows the heading "Save the children"
+- [ ] About section — the heading "We Are A Non-profit Organization" is shown
+- [ ] Features section — 3 feature cards are displayed with icons, titles, and descriptions
+- [ ] Popular Causes section — 3 cause cards are shown with donation progress information
+- [ ] Call-to-action banner — the heading "Volunteer Needed At Your Area" is shown
+- [ ] Upcoming Events section — 3 event cards are shown with date and countdown information
+- [ ] Blog section — the featured post and 3 sidebar posts are displayed
+- [ ] Newsletter signup — an email input and "Subscribe" button are displayed

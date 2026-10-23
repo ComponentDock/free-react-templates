@@ -51,3 +51,5 @@ Recreation of ColorLib **Carousel 03** (`https://colorlib.com/wp/template/carous
 - [ ] Unit tests with 100% coverage (`npm run test:coverage`) pass.
 - [ ] Build succeeds (`npm run build`).
 - [ ] CNAME and homepage configured correctly for Surge deployment (`glide.free.componentdock.com`).
+- [ ] 1. Header & Section Title — they should see the section title "Carousel #03" centered with appropriate spacing
+- [ ] 2. Interactive Carousel Cards — the active slide updates smoothly, showing the corresponding background image, category badge ("WEB DESIGN"), and bold serif headline

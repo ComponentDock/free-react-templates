@@ -169,3 +169,13 @@ The system SHALL render a dark navy footer with the site name "Precept", link co
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — it SHALL show the site name "Precept" as a link
+- [ ] Hero section — it SHALL contain the headline text
+- [ ] Features section — it SHALL show three feature cards with titles and "Join Now" links
+- [ ] Popular courses section — it SHALL show at least three course cards with prices and titles
+- [ ] CTA section — it SHALL show the headline and an "Enroll Now" button
+- [ ] Reviews section — it SHALL show instructor cards with names and star ratings
+- [ ] Search course section — the input value SHALL update to reflect the typed text
+- [ ] Upcoming events section — it SHALL show event cards with titles, dates, and venues
+- [ ] Blog section — it SHALL show blog post cards with titles and "View More" buttons
+- [ ] Newsletter section — the form SHALL submit without page reload

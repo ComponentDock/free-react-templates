@@ -156,3 +156,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo, navigation, and cart — the navbar displays "Bazaar" logo and navigation links (Home, Shop, Blog, About, Contact)
+- [ ] Hero slider with rotating slides — the hero shows the first slide with "Men's", "Jeans", "Collection" headings
+- [ ] Featured products mixed-size grid — 4 product cards display: "Fashion for men", "New Arrival Dress", "Sale 20% off", "Shoes for men"
+- [ ] New arrivals product grid — 8 product cards display with "$300.00" prices and "New" tags
+- [ ] Promotional 45% off section — "45" and "Off" and "Sale" text are visible
+- [ ] Our Products grid — products display with Sale and New tags
+- [ ] Testimonials section — 3 testimonials display with names (Alysha Myers, James Fisher, Jacob Webb) and quotes
+- [ ] Blog section — 3 blog cards display with "Openning Branches" titles and "Noah Henderson" authors
+- [ ] Newsletter subscription — the email input clears
+- [ ] Back to top button — a "Back to top" link is visible

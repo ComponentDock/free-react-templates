@@ -145,3 +145,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — it shows "Maxim" brand with links: Home, About, Practice Areas, Attorneys, Blog, Contact, and a "Request a Quote" CTA button
+- [ ] Hero Section — it displays "Reputation, Respect, Result" heading with a "Request a Quote" button
+- [ ] Counter Stats — it shows 4 cards: 50 Years Experience, 10000 Trusted Clients, 564 Qualified Lawyers, 300 Honors & Awards
+- [ ] About Section — it shows a two-column layout with image and "Welcome to Maxim A Law Firm" heading
+- [ ] Testimonials — the displayed testimonial changes
+- [ ] Practice Areas — the corresponding content panel is shown
+- [ ] Attorneys — it shows 4 attorney cards with social media icons
+- [ ] Blog — it shows 3 blog post cards
+- [ ] Contact Form — validation errors appear for all required fields

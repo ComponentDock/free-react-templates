@@ -68,3 +68,8 @@ Recreation of ColorLib "Schmidt" template (preview URL: https://preview.colorlib
 - [ ] Linter passes (`npm run lint`)
 - [ ] Vitest coverage is 100% lines/functions/branches/statements
 - [ ] Footer links to `https://www.componentdock.com/`
+- [ ] Navbar navigation — they see the brand logo and navigation links (Home, About, Services, Experiences, Works, Blog, Contact)
+- [ ] Hero showcase — it displays the subheading, headline, CTA buttons, and profile showcase
+- [ ] Services display — service cards are displayed with icons and descriptions
+- [ ] Portfolio works — project cards are shown with preview images and titles
+- [ ] Contact form interaction — validation passes and a success confirmation appears

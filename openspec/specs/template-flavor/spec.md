@@ -122,3 +122,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with navigation — the header displays the "Flavor" logo and all navigation links
+- [ ] Hero section with call-to-action — the hero section shows the heading and a "Book a table" button
+- [ ] Info bar with contact details — four info items are displayed with icons
+- [ ] About section — the about section shows the heading and descriptive text
+- [ ] Specialties section — three specialty dish cards are rendered
+- [ ] Parallax introduction — the parallax section displays the heading and CTA
+- [ ] Tabbed menu — the corresponding menu items are displayed
+- [ ] Testimonials — testimonial quotes with author names are displayed
+- [ ] Reservation form — the reservation form displays all required input fields

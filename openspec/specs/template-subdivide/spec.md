@@ -200,3 +200,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Footer renders with white background — the footer element has a white background
+- [ ] Five link columns are centered — the "Discover" column contains links: "Website editors", "Online retail", "Get started", "Services"
+- [ ] Divider separates columns from bottom bar — a border-top divider is visible between the link columns and the bottom bar
+- [ ] Bottom bar with social icons, copyright, and app links — the left section shows social media icons for Twitter and Facebook
+- [ ] Link hover behavior — the link color transitions smoothly from #777 to #4200ff
+- [ ] Responsive layout — the five link columns stack vertically
+- [ ] Accessibility — the footer uses a semantic `<footer>` element

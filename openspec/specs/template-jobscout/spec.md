@@ -167,3 +167,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays brand and navigation — the navbar SHALL show the brand text "JobScout"
+- [ ] Hero displays headline and search form — the heading "Find the most exciting startup jobs" SHALL be visible
+- [ ] Categories section shows job categories — 8 category cards SHALL be shown
+- [ ] CV Upload CTA section — the heading SHALL be visible
+- [ ] Featured Jobs listing — 4 job cards SHALL be shown
+- [ ] How It Works process steps — 3 step cards SHALL be shown
+- [ ] Testimonial section — the quote text SHALL be visible
+- [ ] Company Stats section — the heading "24k Talented people are getting Jobs" SHALL be visible
+- [ ] Blog section — 2 blog cards SHALL be shown

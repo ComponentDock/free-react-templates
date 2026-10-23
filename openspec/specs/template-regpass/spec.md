@@ -114,3 +114,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders with all sections — the hero image is visible
+- [ ] All form fields are present — the username field is displayed
+- [ ] Form fields are arranged in two-column rows — the username and email fields are side by side
+- [ ] User can fill in the form — the username field contains "john"
+- [ ] User can select dropdown options — the country dropdown shows "United Kingdom"
+- [ ] User can toggle the terms checkbox — the terms checkbox is checked
+- [ ] Form submits without error — the form submits without error

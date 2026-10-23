@@ -171,3 +171,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with sticky navigation — the navbar displays brand "Trekly" and all 8 navigation links
+- [ ] Hero slider with auto-advance — the first slide displays "Discover Greece" subheading and the corresponding headline
+- [ ] Search form — all 4 form fields and the search button are present
+- [ ] Services section — 4 cards appear: Activities, Travel Arrangement, Private Guide, Location Manager
+- [ ] Stats counter section — 4 stat values are displayed: 10,000+ Happy Customers, 1,000+ Tours, 200+ Destinations, 50,000+ Activities
+- [ ] Parallax CTA sections — the heading "Choose the Perfect Destination" is displayed with a Discover button
+- [ ] Travel destination cards — 5 destination cards are displayed with price "$400" each
+- [ ] Hotel cards — 2 hotel cards are displayed
+- [ ] Room cards — 4 room cards are displayed each with a "Book Now" button
+- [ ] Restaurant cards — 3 restaurant cards are displayed
+- [ ] Blog entries — 3 blog entries are displayed with Read More links

@@ -168,3 +168,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Two-panel layout — a dark background content area occupies the left portion of the screen
+- [ ] Blog post list — at least 4 blog post items are visible in the content area
+- [ ] Close button — a white X icon button is visible in the top-right of the dark content area
+- [ ] Onboarding sidebar — the text "GET STARTED" is visible at the top of the sidebar
+- [ ] Onboarding steps — the first two steps ("Create organization", "Create project") display green checkmark icons
+- [ ] User profile — a circular avatar image is visible at the bottom of the sidebar

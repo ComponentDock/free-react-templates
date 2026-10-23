@@ -48,3 +48,6 @@ A Bootstrap Buttons Showcase template with navigation and header, button showcas
 - [ ] Vitest coverage at 100%
 - [ ] Footer links to Component Dock
 - [ ] No mention of ColorLib in code
+- [ ] Navigation and Header — The page must render a clean header with title "BtnSpark - Interactive Button Showcase" and navigation links
+- [ ] Button Showcase Categories — The page must showcase diverse button variants including Solid, Outline, Gradient, Pill, Icon Buttons, Floating Action Buttons, and Loading state buttons
+- [ ] Interactive States — Buttons must provide clear active, focus, and disabled states

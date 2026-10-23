@@ -194,3 +194,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Girder" and links to Home, Projects, Services, About, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "We Are Girder"
+- [ ] Services section — it SHALL contain a heading "Our Services"
+- [ ] Projects section — it SHALL contain a heading "Recent Projects"
+- [ ] Testimonials section — it SHALL contain a heading "People Says"
+- [ ] CTA banner — it SHALL contain the heading "The road of success is always under construction"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

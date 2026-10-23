@@ -132,3 +132,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Footer renders with semantic markup — a `<footer>` element with `role="contentinfo"` is visible
+- [ ] Newsletter subscription form — a "Stay Updated" heading is visible
+- [ ] Navigation columns — a "Company" heading is visible
+- [ ] Social media icons — social links for Instagram, Twitter, Facebook, LinkedIn, and YouTube are present
+- [ ] Brand identity — a brand link "Loom" is visible
+- [ ] Responsive layout — a three-column grid is displayed

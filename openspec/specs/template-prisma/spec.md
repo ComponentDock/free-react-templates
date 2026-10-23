@@ -249,5 +249,14 @@ chips, and a copyright bottom bar.
 - [ ] PR description: source template, preview URL, design tokens, what
       differs
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
+- [ ] Navigation bar — the navbar SHALL show a fuchsia logo mark with the wordmark
+- [ ] Hero section — the hero SHALL show a pill badge "Award-Winning Creative Agency"
+- [ ] Stats strip — the strip SHALL be separated by top and bottom borders
+- [ ] Awards strip — the section SHALL show the four award entries: "Awwwards Site of
+- [ ] Services section — the section SHALL have the heading "What We Do"
+- [ ] Selected Work section — the section SHALL have the heading "Selected Work"
+- [ ] Testimonials section — the section SHALL have the heading "What Clients Say"
+- [ ] Contact section — the section SHALL have the heading "Let's Work Together"
+- [ ] Footer — the footer SHALL show the "Prisma" wordmark and a short tagline
       (`kreativ.free.componentdock.com`) + homepage + `npm run
   readme:status`

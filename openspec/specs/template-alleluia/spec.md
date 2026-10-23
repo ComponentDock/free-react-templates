@@ -137,3 +137,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with logo and navigation — the logo "Alleluia" is visible
+- [ ] Hero section displays fullscreen background with CTA — the h1 heading contains "Our lives in praising God"
+- [ ] About section shows church description — the heading "Who We Are" is visible
+- [ ] Events section shows upcoming events — the heading "Upcoming Events" is visible
+- [ ] Sermons section shows recent sermons — the heading "Recent Sermons" is visible
+- [ ] Gallery section shows image grid — the heading "Our Gallery" is visible

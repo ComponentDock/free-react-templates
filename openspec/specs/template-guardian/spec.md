@@ -227,3 +227,15 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Top bar — the top bar SHALL show an address and a phone number
+- [ ] Navigation bar — the navbar SHALL show the site name "Guardian" and links to Home, Services, About, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Saving Animals Changing Live"
+- [ ] About section — it SHALL contain a level-2 heading "The Kind of Care Your Pets Deserve"
+- [ ] Services section — it SHALL contain a heading "Our Pet Care Services"
+- [ ] Video band — it SHALL show a play button over a video thumbnail with the label "Play the video to see more"
+- [ ] Story section — it SHALL contain a heading "Animals has come to mean so much in t live"
+- [ ] Emergency CTA section — it SHALL contain the heading "For Emergency care Just Call Us"
+- [ ] Testimonials section — it SHALL show a customer quote and the author name "Pete Sariya"
+- [ ] Volunteer section — it SHALL contain a heading "We looking for helping hand"
+- [ ] Footer — it SHALL show the site name "Guardian" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

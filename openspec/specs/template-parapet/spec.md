@@ -326,3 +326,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Parapet" and links to Services, Projects, Process, About, and Contact
+- [ ] Hero section — it SHALL show the badge "Trusted by 500+ clients since 1998"
+- [ ] Stats strip — it SHALL show "Projects Completed", "Years Experience", "On-Time Delivery", and "Team Members" labels
+- [ ] Services section — it SHALL contain a heading "What We Build"
+- [ ] Projects section — it SHALL contain a heading "Our Recent Projects"
+- [ ] Results section — it SHALL contain a heading "Project Transformations"
+- [ ] Process section — it SHALL contain a heading "How We Build"
+- [ ] About section — it SHALL contain a heading "Building Excellence Since 1998"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Clients Say"
+- [ ] Contact section — it SHALL contain a heading "Request a Free Quote"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Emergency CTA section — it SHALL contain a heading "Ready to Start Your Project?"
+- [ ] Footer — it SHALL show the site name "Parapet" and a brand blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

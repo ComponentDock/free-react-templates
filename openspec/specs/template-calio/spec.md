@@ -198,3 +198,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Renders calendar region — Given** the page is rendered
+- [ ] Default view is month — Given** the page is rendered
+- [ ] Switch views — Given** the page is rendered
+- [ ] Navigate months — Given** the page is rendered
+- [ ] Navigate weeks — Given** the page is rendered
+- [ ] Navigate days — Given** the page is rendered
+- [ ] Display events in month view — Given** the page is rendered
+- [ ] Display events in week/day view — Given** the page is rendered
+- [ ] Display events in list view — Given** the page is rendered
+- [ ] Event click opens URL — Given** the page is rendered
+- [ ] Accessibility — Given** the page is rendered

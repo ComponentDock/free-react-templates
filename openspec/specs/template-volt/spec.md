@@ -304,3 +304,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sidebar — the sidebar SHALL be fixed to the left edge, 25% wide and full
+- [ ] Mobile navigation — the sidebar SHALL be hidden off-canvas (translated left) and a
+- [ ] Blog grid layout — it SHALL occupy the left column of the first row and show a
+- [ ] Blog card content — the card SHALL contain an h3 title (Poppins 20px, black) linking

@@ -87,3 +87,8 @@ Recreation of ColorLib **Carousel V12** (`https://colorlib.com/wp/template/carou
 - [ ] 100% test coverage maintained across new components
 - [ ] Component Dock attribution present in footer
 - [ ] Responsive layouts verified on mobile and desktop viewports
+- [ ] 1. Header / Navbar — all navigation links and the CTA button are visible and interactive
+- [ ] 2. Hero Showcase — the headline, descriptive subtext, and call-to-action buttons are clearly displayed
+- [ ] 3. Product Carousel Section — the active product slides transition smoothly and update the visible items
+- [ ] 4. Features Grid — all feature cards display correct icons, titles, and descriptions
+- [ ] 5. Testimonials Section — user feedback cards display with proper formatting and ratings

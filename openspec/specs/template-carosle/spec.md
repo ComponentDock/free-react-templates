@@ -52,3 +52,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage on all components.
 - [ ] Footer correctly includes link to `https://www.componentdock.com/`.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Testimonial Carousel Section — The template must display a clean, centered testimonial carousel featuring quote cards with quotation marks icon, descriptive quote text, author name, and role/title

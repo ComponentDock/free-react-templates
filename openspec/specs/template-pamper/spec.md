@@ -201,3 +201,13 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Top bar — the top bar SHALL show a phone number and a "Become a Volunteer" button
+- [ ] Navigation bar — the navbar SHALL show the site name "Pamper" and links to Home, About, Services, Gallery, Blog, and Contact
+- [ ] Hero section — it SHALL contain a kicker "Welcome to Pamper" and a level-1 heading "Give your pet Best Care"
+- [ ] About section — it SHALL contain a level-2 heading "We care your pet As you care" and an image
+- [ ] Services section — it SHALL contain a heading "We Provide Best Services"
+- [ ] Adopt counters section — it SHALL contain a heading "We need your help Adopt Us"
+- [ ] Testimonials section — it SHALL show a customer quote and the author's name
+- [ ] Volunteer section — it SHALL contain a heading "Become a Volunteer" and an image
+- [ ] Footer — it SHALL show a "Subscribe Newsletter" widget with an email input and a subscribe button
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

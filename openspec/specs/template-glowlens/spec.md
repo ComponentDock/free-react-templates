@@ -114,3 +114,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — the header shows the logo, nav links (Home, About, Services, Portfolio, Contact), and a search icon
+- [ ] Hero section — a hero section displays with the title "Glowlens" and subtitle "We Create Awesome Photographies and more"
+- [ ] Intro section — the subtitle "Amazing Studio", heading "We Are So Creative", a paragraph, and a "Read More" button are visible
+- [ ] Portfolio grid — 7 portfolio items are displayed in a grid
+- [ ] Milestones section — 4 stat boxes are visible: 48 Projects, 7 Awards, 23K Photos, 19 Tutorials
+- [ ] Services section — the subtitle "Amazing Studio", heading "See What We Offer", paragraph, and "Read More" button are visible
+- [ ] Contact section — contact info (phone, email, address) is visible

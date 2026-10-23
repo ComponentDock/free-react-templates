@@ -107,3 +107,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders all sections — the navbar is visible with logo "Dune"
+- [ ] Navigation links work — the page scrolls to the about section
+- [ ] Mobile menu toggles — the mobile menu opens
+- [ ] Search form submission — the form does not reload the page
+- [ ] Newsletter subscription — a success message appears

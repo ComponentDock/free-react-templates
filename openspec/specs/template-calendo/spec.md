@@ -90,3 +90,6 @@ Recreation of Colorlib **Calendar V05** (`https://colorlib.com/wp/template/calen
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Interactive Calendar Grid & Navigation — the calendar grid displays all days of the current month with correct weekday alignment
+- [ ] Date Ribbon & Quick Selection — a date ribbon displays yesterday, today, and tomorrow
+- [ ] Event Management & Agenda — the sidebar displays scheduled events with times, titles, and category tags

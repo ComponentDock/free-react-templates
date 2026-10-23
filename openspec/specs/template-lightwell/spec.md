@@ -216,3 +216,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — a link with text "Lightwell" SHALL be visible in the header
+- [ ] Hero Banner — a hero illustration image SHALL be visible
+- [ ] Video CTA — a play button icon SHALL be visible
+- [ ] About — a heading "Brief Information About" SHALL be visible
+- [ ] Features — 7 feature cards SHALL be displayed
+- [ ] FAQ and Stats — 4 statistics SHALL be shown with large green numbers
+- [ ] Contact — a heading "Send Us Message" SHALL be visible

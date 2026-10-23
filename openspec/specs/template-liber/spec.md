@@ -131,3 +131,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — GIVEN** the page loads, When I look at the header, Then I see "Liber" logo and navigation links
+- [ ] Hero — GIVEN** the page loads, When I look at the hero section, Then I see "Author: Travor James", "New Adventure", and a "Buy Now" button
+- [ ] About — GIVEN** the page loads, When I look at the about section, Then I see the author name, bio text, and portrait image
+- [ ] Features — GIVEN** the page loads, When I look at the features section, Then I see 4 feature cards with icons
+- [ ] Counters — GIVEN** the page loads, When I look at the counters section, Then I see 4 stat values and labels
+- [ ] Pricing — GIVEN** the page loads, When I look at the pricing section, Then I see 3 pricing tiers with prices and purchase buttons
+- [ ] Courses — GIVEN** the page loads, When I look at the courses section, Then I see 3 course cards with titles, prices, and view buttons
+- [ ] App Download — GIVEN** the page loads, When I look at the CTA section, Then I see App Store and Play Store download links
+- [ ] Testimonials — GIVEN** the page loads, When I look at the testimonials section, Then I see 3 testimonial cards with names and quotes

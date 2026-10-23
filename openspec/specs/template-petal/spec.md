@@ -126,3 +126,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders all sections — the navbar, hero, benefits, categories, about, arrivals, CTA,
+- [ ] Hero displays tagline and CTA — a heading "Making beautiful flowers a part of your life" is shown
+- [ ] Benefits section shows four items — 4 benefit items are displayed with icons and text
+- [ ] Categories section shows four cards — 4 category cards with names and item counts are displayed
+- [ ] Arrivals section filters products — only bouquet products are displayed
+- [ ] CTA section shows action buttons — "Order Now" and "Contact Us" buttons are present
+- [ ] Blog section shows three posts — 3 blog post cards are displayed

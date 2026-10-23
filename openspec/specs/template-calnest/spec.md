@@ -93,3 +93,7 @@ The system SHALL render a footer with copyright and a link to Component Dock.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — it displays the brand logo "Calnest", navigation links (Calendar, Schedule, Events, Features), and a CTA button
+- [ ] Hero section — it displays a headline, subtitle, primary action button, and a visual calendar preview card
+- [ ] Interactive calendar grid & event sidebar — it allows switching months, selecting days, viewing scheduled events, and adding new events
+- [ ] Features section — it displays 3-4 feature cards with icons, titles, and descriptions

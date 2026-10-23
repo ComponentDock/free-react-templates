@@ -233,3 +233,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Amber" and a "Home" link pointing to the page root
+- [ ] Hero — it SHALL show a level-1 headline (e.g. "Best Barber in your Town")
+- [ ] About — it SHALL show the heading "Experienced and Traditional Stylish Barber Shop"
+- [ ] Services — it SHALL show the heading "our service"
+- [ ] Gallery — it SHALL show the heading "Our Gallery"
+- [ ] Video band — it SHALL show the heading "Watch the Video How we Work?"
+- [ ] Cutter masters team — it SHALL show the heading "Our Cutter Masters"
+- [ ] How to Find Us — it SHALL show the heading "How to Find Us"
+- [ ] Footer — it SHALL show the site name "Amber" and navigation links
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

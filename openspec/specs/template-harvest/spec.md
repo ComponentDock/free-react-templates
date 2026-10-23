@@ -288,3 +288,19 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Top bar — the top bar SHALL show a welcome message, an email address, and a phone number
+- [ ] Navigation bar — the navbar SHALL show the site name "Harvest" and links to Home, About, Shop, News, and Contact
+- [ ] Hero section — it SHALL contain a level-2 heading "The hearth of the farm is the true center of our universe."
+- [ ] Benefits section — it SHALL contain a level-2 heading "Best Services"
+- [ ] About section — it SHALL contain an "About us" kicker and a heading "Let Us Tell You Our Story"
+- [ ] Journey section — it SHALL contain a level-2 heading "Our Journey From Farm To Your Table"
+- [ ] Services section — it SHALL contain a "What we do" kicker and the heading "Our Produce Is Mainstay For Us"
+- [ ] Featured products section — it SHALL contain a level-2 heading "Featured Products"
+- [ ] Newsletter section — it SHALL show an email input and a "Subscribe" button
+- [ ] Farming practices section — it SHALL contain a heading "Farming Practices To Preserve Land & Water"
+- [ ] Testimonial section — it SHALL show a customer quote
+- [ ] Contact section — it SHALL contain a heading "Get In Touch With Us"
+- [ ] News section — it SHALL show two news posts, each with a date, an author, and a title
+- [ ] Trust badges section — it SHALL contain a heading "Our Certifications & Guarantees"
+- [ ] Footer — it SHALL show the site name "Harvest" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

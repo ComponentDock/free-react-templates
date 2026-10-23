@@ -227,3 +227,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Dark navbar — the navbar SHALL display the brand "Trailquest" in white text
+- [ ] Hero section — the hero SHALL display the heading "Discover A new Place"
+- [ ] Search tabs — 3 search tabs SHALL be displayed: Flight, Hotel, Car Rent
+- [ ] Features intro section — 3 feature items SHALL be displayed in a row
+- [ ] Featured destinations — 3 destination image cards SHALL be displayed
+- [ ] Services section — 4 service cards SHALL be displayed in a row
+- [ ] Popular destinations section — multiple destination cards SHALL be displayed
+- [ ] Counter section — the counters SHALL animate from 0 to their final values
+- [ ] Testimonials section — a testimonial carousel SHALL be displayed
+- [ ] Blog section — 3 blog cards SHALL be displayed
+- [ ] Newsletter section — an email input and Subscribe button SHALL be displayed

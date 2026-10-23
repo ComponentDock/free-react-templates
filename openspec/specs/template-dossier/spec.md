@@ -151,3 +151,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders all sections in correct order — the navbar, hero, about, skills, testimonials, services, benefits, portfolio, resume, blog, contact, and footer sections are rendered in order
+- [ ] Navbar with navigation links — all seven navigation links are visible
+- [ ] Hero section with name and CTAs — the hero heading shows "Howdy, I'm Alex Morgan"
+- [ ] About section with portrait and buttons — the heading, text, buttons, and portrait image are present
+- [ ] Skills with progress bars — five progressbar elements exist with correct aria-valuenow
+- [ ] Client testimonials — at least two testimonial cards are shown with author names and quotes
+- [ ] Services grid — six service cards are shown with titles and Learn More links
+- [ ] Benefits callout — both headings and the description are present
+- [ ] Portfolio image grid — six portfolio items are shown with images
+- [ ] Resume timeline — education and experience entries are shown with dates and descriptions
+- [ ] Blog posts — three blog posts are shown with titles and dates
+- [ ] Contact form and details — all four form fields and the submit button are present

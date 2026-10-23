@@ -229,3 +229,15 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Whisker" and links to Home, About, Services, Gallery, Blog, and Contact
+- [ ] Hero section — it SHALL contain a kicker "We help to groom your pet" and a level-1 heading "We Care Your Pets."
+- [ ] Services section — it SHALL contain a kicker "Our Professional Services" and a heading "Best Pet Care Services"
+- [ ] About section — it SHALL show the counter "354" and a heading "We are commited for better service"
+- [ ] Gallery section — it SHALL contain a kicker "Our Recent Photos" and a heading "Pets Photo Gallery"
+- [ ] Contact form section — it SHALL contain a level-2 heading
+- [ ] Team section — it SHALL contain a kicker "Our Professional members" and a heading "Our Team Mambers"
+- [ ] Testimonial section — it SHALL show a customer quote and the author name "Margaret Lawson"
+- [ ] Blog section — it SHALL contain a kicker "Oure recent news" and a heading "Our Recent Blog"
+- [ ] Call-to-action section — it SHALL contain the heading "Any time you can call us!"
+- [ ] Footer — it SHALL show the site name "Whisker" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -181,3 +181,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] All sections render in correct order — all 12 sections are visible in the correct order
+- [ ] TopBar displays contact info and social links — the phone number "+(123) 1234-567-8901" is visible
+- [ ] Navbar displays navigation links and CTA — "Home", "About", "Projects", "Services", "Blog", "Contact" links are visible
+- [ ] Hero displays heading and CTA over background image — "Professional Construction Services" subtitle is visible
+- [ ] Services section shows 3 service cards — the heading "Our Services" is visible
+- [ ] About section shows split layout — "Who we are" heading is visible
+- [ ] Projects section shows tabbed gallery — "Our Projects" heading is visible
+- [ ] Contact CTA section shows call to action — "Let's talk with us" heading is visible
+- [ ] Stats section shows counters — 3 stat counters are displayed with numbers
+- [ ] Team section shows 3 team members — "Our team" heading is visible
+- [ ] Testimonial section shows quote — "Testimonial" heading is visible
+- [ ] Latest News section shows blog posts — "Latest News" heading is visible

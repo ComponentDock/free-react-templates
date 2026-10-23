@@ -198,3 +198,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page shell — the page shows Navbar, Hero, About, CTA Banner, Menu, Testimonials, Chefs, Ingredients, Blog, Newsletter, and Footer sections
+- [ ] Navbar — the navbar shows Home, About, Chef, Menu, Reservation, Blog, Contact links
+- [ ] Hero — the hero shows "Cooking Since Best Quality" heading
+- [ ] About section with reservation form — the reservation form has Name, Phone, Email fields
+- [ ] CTA Banner — "Private Dinners & Happy Hours" heading is visible
+- [ ] Tabbed Menu — Breakfast, Lunch, Dinner, Desserts tabs are visible
+- [ ] Testimonials — a different review appears
+- [ ] Chef profiles — the "Our Master Chef" heading is visible
+- [ ] Ingredients feature — "Perfect Ingredients" heading is visible
+- [ ] Blog section — "Recent Blog" heading is visible
+- [ ] Newsletter CTA — a newsletter heading is visible
+- [ ] Accessibility — the mobile menu toggle has an aria-label

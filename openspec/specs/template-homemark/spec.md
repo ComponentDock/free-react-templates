@@ -242,3 +242,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header / Navbar — the header SHALL show the brand wordmark "HOMESTEAD" on the left
+- [ ] Hero section — a full-width background image SHALL be shown
+- [ ] Feature icons row — 9 items SHALL be shown: Easy Buying, Ready to Move, Great
+- [ ] Intro / Our Houses section — the heading "Our Houses" SHALL be shown
+- [ ] Design / Gallery section — a dark-background section SHALL be shown with a light heading
+- [ ] Location section — the heading "Location" SHALL be shown
+- [ ] Features section — the heading "Features" SHALL be shown
+- [ ] Call to Action section — a background image SHALL be shown
+- [ ] Responsive behavior — all grid rows SHALL stack to single columns

@@ -161,3 +161,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with responsive mobile menu — the navbar displays all navigation links and the logo
+- [ ] Hero banner displays heading and subtitle — the hero section shows the heading "Crafting Best Experience"
+- [ ] Experience section shows image grid and content — two images are displayed alongside the heading and description
+- [ ] Service carousel displays rotating content — the carousel shows "Artistic Vision" as the first slide title
+- [ ] Services grid shows four icon cards — four service cards are displayed with their respective icons and descriptions
+- [ ] Video section shows thumbnail and descriptive text — a video thumbnail with play button is displayed
+- [ ] Features row shows three horizontal cards — three feature cards are displayed with icons and descriptions
+- [ ] Contact section has address info and form — address, email, and phone info are displayed
+- [ ] Footer shows newsletter, about links, and instafeed — the About Agency column shows four navigation links
+- [ ] Responsive layout adapts to mobile — the navbar collapses to a hamburger menu

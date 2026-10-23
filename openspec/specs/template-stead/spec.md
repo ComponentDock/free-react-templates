@@ -318,4 +318,14 @@ info.
 - [ ] Visual pass vs live demo `https://preview.colorlib.com/theme/findstate/`
 - [ ] TEMPLATES.md lines 395, 1016, AND 2589 all marked `[x]`
 - [ ] `public/CNAME` = `stead.free.componentdock.com`; `homepage` =
+- [ ] Header and navigation — the brand "Stead" SHALL appear on the left
+- [ ] Hero — the hero SHALL show a large background photo washed with a
+- [ ] Property search form — the form SHALL show a Location text input with placeholder
+- [ ] Exclusive offer property cards — the section SHALL show the gold subheading "What we offer"
+- [ ] Why choose us — the section SHALL show the heading "Why Choose Us?"
+- [ ] Stats counter — the section SHALL show a background photo with a gold overlay
+- [ ] Find properties in your city — the section SHALL show the heading "Find Properties In Your
+- [ ] Testimonials — the section SHALL show the heading "Happy Clients"
+- [ ] Agents — the section SHALL show the heading "Our Agents"
+- [ ] Recent blog — the section SHALL show the heading "Recent Blog"
       `https://stead.free.componentdock.com`

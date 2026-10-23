@@ -144,3 +144,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar and navigation — the email "hello@alignwell.com" and "Help Desk" link are visible
+- [ ] Hero section — the heading "Welcome to our chiropractic centre" and "Book an Appointment" link are visible
+- [ ] Appointment booking form — name, phone, service select, and doctor select inputs are visible
+- [ ] Services section — Spinal Manipulation, Electrotherapy, Medical Acupuncture, Therapeutic Exercise, Manual Lymphatic, and Joint Mobilization are visible in the services section
+- [ ] Team section — Lloyd Wilson, Rachel Parker, and Ian Smith are visible
+- [ ] About section with stats — the about text and all three stat labels and values are visible
+- [ ] Testimonials section — at least one testimonial quote and client name are visible
+- [ ] Gallery section — Foot Pain, Back Pain, and Lower Back Pain are visible in the gallery
+- [ ] Blog section — at least two blog post titles are visible

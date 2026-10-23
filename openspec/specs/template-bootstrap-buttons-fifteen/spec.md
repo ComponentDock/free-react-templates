@@ -92,3 +92,8 @@
 - [ ] Vitest test suite runs with 100% coverage (`npm run test:coverage`).
 - [ ] Build succeeds (`npm run build`).
 - [ ] Component Dock footer attribution is present and links correctly.
+- [ ] Header / Navigation & Hero Showcase Intro — the header and hero section display the title "Bootstrap Buttons Fifteen", subtitle, and quick navigation links
+- [ ] Solid & Filled Button Variants — all standard color variants are rendered with proper hover, focus, and active states
+- [ ] Outline & Ghost Button Variants — the background fills smoothly while maintaining clear border contrast
+- [ ] Gradient & Glowing Button Effects — gradient fills and glowing shadow effects are clearly visible
+- [ ] Icon Buttons & Button Groups — the connected buttons highlight interactively as a cohesive group

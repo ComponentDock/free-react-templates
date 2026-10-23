@@ -205,3 +205,12 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Biscuit" and links to Services, About, Gallery, Team, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Where Every Pet Gets the Royal Treatment"
+- [ ] Services section — it SHALL contain a heading "Our Services"
+- [ ] About section — it SHALL contain a kicker "Our Story" and a heading "A Place Where Pets Come First"
+- [ ] Gallery section — it SHALL contain a heading "Happy Pets Gallery"
+- [ ] Testimonials section — it SHALL contain a heading "What Pet Parents Say"
+- [ ] Call-to-action section — it SHALL contain a heading "Ready to Pamper Your Pet?"
+- [ ] Footer — it SHALL show the site name "Biscuit" and link columns
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

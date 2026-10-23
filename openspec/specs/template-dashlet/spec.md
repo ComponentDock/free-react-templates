@@ -92,3 +92,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sidebar navigation — "Home" SHALL be highlighted as the active navigation link
+- [ ] Featured users section — 8 featured users SHALL be displayed (Matt, Spike, Jassy, William, Johan, Charise, James, Chris)
+- [ ] Article grid — 8 article cards SHALL be displayed
+- [ ] Responsive sidebar — the sidebar SHALL be hidden

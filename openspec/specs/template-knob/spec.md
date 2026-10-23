@@ -134,3 +134,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Toggle switch component — a checkbox input with accessible name "Notifications" is present
+- [ ] Toggle showcase section — a heading "Checkbox #18" is present

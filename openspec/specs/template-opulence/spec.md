@@ -172,3 +172,13 @@ Extracted from the live preview CSS (`css/style.css`):
 - [ ] ColorLib source slug `deluxe` recorded
 - [ ] Preview URL and screenshot URL recorded
 - [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [ ] Navbar — the navbar displays "Opulence" as the logo text
+- [ ] Hero Slider — a full-height hero section displays
+- [ ] Booking Form — a booking form appears below the hero with negative margin
+- [ ] About Section — a two-column section displays
+- [ ] Amenities Section — 4 amenity cards are displayed in a row
+- [ ] Rooms Section — 6 room cards are displayed in a 3-column grid
+- [ ] Counter Section — 4 statistics are displayed: Happy Guests, Rooms, Staffs, Destination
+- [ ] Testimonials Section — a carousel displays testimonial cards
+- [ ] Blog Section — 4 blog entry cards are displayed
+- [ ] Instagram Section — a 6-column image strip is displayed

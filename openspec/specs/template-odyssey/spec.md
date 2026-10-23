@@ -253,3 +253,10 @@ Dock (`https://www.componentdock.com/`) instead.
       PR lists source (ColorLib Ruft), preview URL, tokens, and what differs.
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show a paper-plane logo mark and the site name "Odyssey"
+- [ ] Banner hero — it SHALL show a level-1 heading with two lines: "Charter Yacht" and "The Luxury Of Traveling"
+- [ ] Featured post slider — it SHALL show at least three featured post slides
+- [ ] Blog post list — it SHALL show at least five post items
+- [ ] Sidebar widgets — it SHALL show a search input with a circular purple search button
+- [ ] Footer — it SHALL show "About Us" text, a newsletter blurb with subscribe form, an Instagram thumbnail grid, and a "Follow Us" social row
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

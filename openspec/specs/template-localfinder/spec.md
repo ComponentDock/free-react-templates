@@ -131,3 +131,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and branding — the navbar shows the LocalFinder logo, all 5 nav links, the Add Listing button, and the user icon
+- [ ] Hero section with search form — the input displays the typed text
+- [ ] Most Popular Categories section — 5 category cards appear with their respective names and listing counts (Food & Drink: 78, Restaurant: 32, Hotels: 16, Beauty & Spa: 55, Shopping: 23)
+- [ ] Most Searched Services with tabs — the Restaurant tab is active and 4 restaurant listings are shown
+- [ ] Featured Locations section — 4 location cards appear: New York (2,840), Los Angeles (1,925), Chicago (1,430), Miami (980)
+- [ ] Testimonials section — 3 testimonial cards appear with names, roles, and quotes
+- [ ] Blog section — 3 blog post cards appear with titles and dates
+- [ ] Newsletter subscription — the form accepts the input without error

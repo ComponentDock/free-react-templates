@@ -172,3 +172,12 @@ Feature: Footer
 - [ ] Google Fonts loaded via index.html link
 - [ ] Icons from lucide-react (replacing ti- icons)
 - [ ] Works with packages/ui components where possible
+- [ ] Navbar — a navbar is visible at the top
+- [ ] Hero / Banner — a hero banner is visible
+- [ ] Client Logos — a horizontal carousel of 6+ partner logos is visible
+- [ ] About Us — subtitle "About Us" is shown in brand green
+- [ ] Services — 3 numbered service cards are shown (01, 02, 03)
+- [ ] Projects / Portfolio — subtitle "our project" and heading "Our Projects" are shown
+- [ ] Creative / Video Section — heading "We work hard and think creatively"
+- [ ] Testimonials — subtitle "Testimonials" and heading "What our Client say"
+- [ ] CTA Banner — heading "Let's create something awesome together"

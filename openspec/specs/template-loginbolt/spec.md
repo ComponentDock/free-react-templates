@@ -146,3 +146,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Split-screen layout — the card shows a form on the left and an image on the right
+- [ ] Form title — the form displays the title "Account Login"
+- [ ] Input fields — the username and password inputs are displayed side by side
+- [ ] Sign In button — a full-width "Sign In" button is displayed below the inputs
+- [ ] Forgot password and Sign Up links — a "Forgot" text is displayed in gray (#999999)
+- [ ] Form validation — a validation message "Type user name" appears near the username input

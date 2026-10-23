@@ -181,3 +181,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar — a top bar shows phone number "+00 1234 567"
+- [ ] Navbar — a dark navbar shows the brand name "Plea"
+- [ ] Hero section — a hero section displays with a background image and dark overlay
+- [ ] Intro feature boxes — three feature boxes are displayed in a row
+- [ ] How It Works section — three steps are shown: "Make Schedule", "Start Discussion", "Enjoy Plan"
+- [ ] About section — a split layout shows an image on the left and text on the right
+- [ ] Services section — three service cards are displayed in a row
+- [ ] Testimonials section — a carousel shows client testimonials
+- [ ] Pricing section — three pricing cards are displayed
+- [ ] Appointment section — a form displays with fields: Name, Email, Phone, Date, Subject, Message
+- [ ] Blog section — three blog post cards are shown

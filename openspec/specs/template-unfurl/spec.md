@@ -167,3 +167,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — the navbar displays the "Unfurl" logo and all 8 navigation links
+- [ ] Hero Section — the hero section displays "Unfurl" as the heading and the designer subtitle
+- [ ] Portfolio Grid — 9 portfolio items are displayed in a grid
+- [ ] About Section — it displays "About Me" heading, description text, and a "Download my CV" button
+- [ ] Services Section — 6 service cards are displayed with titles: Digital Strategy, Web Design, User Experience, Web Development, WordPress Solutions, Mobile Applications
+- [ ] Skills Section — 4 skill bars are displayed: WordPress (85%), HTML/CSS (95%), JavaScript (80%), Design (90%)
+- [ ] Testimonials Section — 3 testimonial cards are displayed with names and roles
+- [ ] Journal Section — 3 blog post cards are displayed
+- [ ] Contact Section — a form with Name, Email, and Message fields and a "Send Message" button is displayed

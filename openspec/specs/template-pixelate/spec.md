@@ -134,3 +134,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and CTA — the navbar displays the "Pixelate" logo, all five nav links, and the "Let's Talk" CTA button
+- [ ] Hero section with designer intro — the hero section shows the designer heading, subtitle, and portrait image
+- [ ] About info bar — the about info bar shows design specialty, phone, and email
+- [ ] Services section with 4 cards — four service cards are displayed with icons and descriptions
+- [ ] Gallery section with hover overlay — a category label overlay appears on that item
+- [ ] About Me with skill bars — three skill bars render with labels and percentage values
+- [ ] Brand carousel — six brand placeholders are displayed
+- [ ] Testimonials section — testimonial quotes and author information are displayed
+- [ ] Blog section with 3 posts — three blog cards are displayed with images and metadata

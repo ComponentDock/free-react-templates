@@ -169,3 +169,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Footer renders with dark navy background — the footer element has a dark navy background (#141d2a)
+- [ ] CTA banner is displayed above the footer — the CTA section shows "Ready for a next project?"
+- [ ] Footer logo column displays brand name — the first column shows "Footwell" as a link
+- [ ] Footer link columns are present — the "Customers" column contains links "Buyer" and "Supplier"
+- [ ] Social media icons are displayed — the "Follow us" section shows social media icon links
+- [ ] Link hover behavior — the link color transitions smoothly
+- [ ] Responsive layout — the footer columns stack vertically
+- [ ] Accessibility — the footer uses a semantic `<footer>` element

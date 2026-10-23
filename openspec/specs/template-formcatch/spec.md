@@ -180,3 +180,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page title rendering — I see a heading "Contact Form #03" centered at the top of the page
+- [ ] Info bar with contact items — I see a horizontal row of four contact items below the title
+- [ ] Two-column contact card — I see a centered card with a form on the left and an image on the right
+- [ ] Contact form fields — I see a Full Name input, Email Address input, Subject input, Message textarea, and Send Message button
+- [ ] Form input styling — all form inputs have a bottom border only
+- [ ] Send Message button styling — the Send Message button has a teal background and white text
+- [ ] Responsive behavior — the info bar items wrap to multiple rows

@@ -136,3 +136,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders all sections — the navbar, hero, stats, services, portfolio, CTA, testimonials, pricing, blog, and footer sections are rendered
+- [ ] Navigation is functional — links for Home, What We Do, Projects, Pricing, Blog, About, and Contact are visible
+- [ ] Stats display correct numbers — the numbers 1,000 (Years), 12,000 (Brigades), 10,000 (Engineering Units), and 12,921 (Employees) are displayed
+- [ ] Services section shows 4 items — cards for Construction Management, Pre-Construction Services, Construction Services, and General Constructing are displayed
+- [ ] Pricing shows 3 plans — Basic Plan, Standard Plan, and Premium Plan at $29/month are displayed
+- [ ] Quote form modal opens — a modal dialog appears with fields for Full Name, Email, Date, Time, and Message

@@ -252,3 +252,11 @@ Dock (`https://www.componentdock.com/`) instead.
       URL (`garment.free.componentdock.com`) + homepage + `npm run
   readme:status`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the header SHALL show the site name "Garment" on the left
+- [ ] Cart drawer — a right-side cart drawer SHALL open with 3 demo line items, each
+- [ ] Hero section — the hero SHALL show a background photo placeholder (seeded
+- [ ] Category tiles — the section SHALL show 3 equal tiles with photo placeholders
+- [ ] CTA banner — the banner SHALL show a background photo placeholder
+- [ ] Popular products — the section SHALL have the heading "Popular Products"
+- [ ] Brands strip — the section SHALL have a light gray background (`#f5f7f9`)
+- [ ] Footer — the footer SHALL have a dark background (`#252525`)

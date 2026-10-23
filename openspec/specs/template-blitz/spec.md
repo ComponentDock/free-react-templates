@@ -147,3 +147,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — all navigation links are visible in the header
+- [ ] Hero section — the headline "Modern design easy to use" is displayed
+- [ ] Icon boxes section — all four feature items with icons, titles, and descriptions are visible
+- [ ] About section — three feature blocks with headings and person info (Michael Smith, Manager) are visible
+- [ ] Services section — at least 7 service cards are displayed with unique icons and titles
+- [ ] Features section — four feature items (Responsive, Clean code, Retina ready, Great team) are visible
+- [ ] Call to action section — the headline and description are displayed
+- [ ] Text line section — the headline and CTA button are visible
+- [ ] Newsletter section — an email input and subscribe button are present

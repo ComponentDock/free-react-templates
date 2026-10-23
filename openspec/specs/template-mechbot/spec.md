@@ -395,3 +395,12 @@ Dock (`https://www.componentdock.com/`) instead.
       PR lists source (ColorLib Robotics), preview URL, tokens, and what
       differs.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar SHALL show the site name "Mechbot" as the brand
+- [ ] Hero / Banner — it SHALL show the headline "Improved Production level with Robotics"
+- [ ] Products — it SHALL show the heading "Featured Robotics Products to Show"
+- [ ] HomeAbout — it SHALL show the heading "Globally Connected by Large Network"
+- [ ] AboutVideo — it SHALL show the heading "Brand new app to blow your mind"
+- [ ] Features — it SHALL show the heading "Some Features that Made us Unique"
+- [ ] BrandLogos — it SHALL show exactly 5 logo images in a responsive row
+- [ ] Blog — it SHALL show the heading "Latest News from our Blog"
+- [ ] Page composition — the page SHALL compose the navbar, hero, products, home-about, about-video, features, brand-logos, blog, and footer in order

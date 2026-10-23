@@ -256,3 +256,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Crafted" and links to Home, About, Services, Projects, Team, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "We Are Crafted" with a design & development service line
+- [ ] Brand strip — it SHALL show at least four client brand tiles
+- [ ] Services section — it SHALL contain a heading "We Provide These Services to Our Customers"
+- [ ] About section with stats — it SHALL contain a heading "Some Info About Us"
+- [ ] Portfolio section — it SHALL contain a heading "Recent Portfolio Showcase"
+- [ ] Team section — it SHALL contain a heading "Our Interactive Team Mates"
+- [ ] Testimonials section — it SHALL show quotes attributed to "Marvel Maison"
+- [ ] CTA band — it SHALL contain a heading "Get to Know Project Estimate?"
+- [ ] Blog section — it SHALL contain a heading "Latest Posts From Our Blog"
+- [ ] Footer — it SHALL show an "About Crafted" blurb and navigation links
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -48,3 +48,5 @@ New original name: `carouselflow` (`@free-react-templates/carouselflow`). Stack:
 - [ ] Vitest unit tests achieve 100% test coverage across all components and hooks.
 - [ ] Footer links to `https://www.componentdock.com/`.
 - [ ] `public/CNAME` contains `carouselflow.free.componentdock.com`.
+- [ ] 1. Header / Title Section — Centered section heading (`Carousel #2` / `Our Products`) styled with clean typography and spacing
+- [ ] 2. Carousel Showcase Section (`bg-left-half`) — Split background container (`bg-[#f8f9fa]` on the left half)

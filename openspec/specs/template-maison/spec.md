@@ -205,3 +205,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% lines/functions/branches/statements coverage for `apps/maison`
 - [ ] Surge URL in PR + bookkeeping: `https://maison.free.componentdock.com`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Maison" and links to Home, About, Services, Projects, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading with "Posh living"
+- [ ] Projects section — it SHALL contain a heading "Here are some of Our Latest Works"
+- [ ] Services section — it SHALL contain a heading "Top Services That We Offers"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Priority Client's Say"
+- [ ] Counters band — it SHALL show the values "1990", "50+", and "25+"
+- [ ] Blog section — it SHALL contain a heading "A Glimpse from Our Latest Blog"
+- [ ] Call-to-action band — it SHALL contain the text "Join us today without any hesitation"
+- [ ] Footer — it SHALL show an about blurb and social links (Facebook, X, LinkedIn, Instagram)
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

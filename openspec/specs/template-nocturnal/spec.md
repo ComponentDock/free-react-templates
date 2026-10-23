@@ -93,3 +93,8 @@
 - [ ] Vitest test suite runs with 100% coverage (`npm run test:coverage`).
 - [ ] Build succeeds (`npm run build`).
 - [ ] Component Dock footer attribution is present and links correctly.
+- [ ] Header / Navigation & Hero Showcase Intro — the header and hero section display the title "Nocturnal Buttons", subtitle, and quick navigation links on a dark background
+- [ ] Solid & Filled Dark Button Variants — all standard color variants are rendered with proper hover, focus, and active glow states
+- [ ] Outline & Neon Glow Button Variants — the luminous shadow intensity increases smoothly while maintaining high contrast
+- [ ] Gradient & Shadow Button Effects — dark gradient fills and layered glow effects are clearly visible
+- [ ] Icon Buttons & Button Groups — the connected buttons highlight interactively as a cohesive group

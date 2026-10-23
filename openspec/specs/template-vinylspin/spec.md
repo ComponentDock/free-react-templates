@@ -161,3 +161,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders all sections in correct order — I see the Navbar with logo "Vinylspin"
+- [ ] Navbar provides navigation and auth — the Navbar shows "Vinylspin" as the logo
+- [ ] Hero section displays release info — I see "New single release" as subtitle
+- [ ] Featured Album shows player — I see the "Featured Album" heading
+- [ ] Shows section lists upcoming events — I see "Upcoming Shows" heading
+- [ ] Artist section displays bio — I see "The Artist" heading
+- [ ] CTA banner has action button — I see "Get your tickets now!" heading

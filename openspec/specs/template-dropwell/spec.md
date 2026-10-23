@@ -106,3 +106,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Toggle opens dropdown menu — the menu is visible
+- [ ] Nested submenu expands — the nested submenu is visible
+- [ ] Click outside closes menu — the menu is not visible
+- [ ] Escape closes menu — the menu is not visible

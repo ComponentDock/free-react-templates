@@ -245,3 +245,12 @@ About us text, Services links, About links, Resources links, a
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Top bar and navigation — it SHALL show the site name "FrameCraft" with the "Craft" portion
+- [ ] Hero slider — it SHALL show a gold subtitle ("WE BUILD YOUR HOME")
+- [ ] Services section — it SHALL show 4 service items with gold circle icons
+- [ ] Features row — it SHALL show 3 feature cards with icons, titles, and descriptions
+- [ ] About section — it SHALL show the heading "Welcome to FrameCraft"
+- [ ] Counter section — it SHALL show 4 counters that animate from 0 to their target value
+- [ ] Projects gallery — it SHALL show project cards with images and category labels
+- [ ] Testimonials section — it SHALL show the heading "Testimonial" / "Happy Clients"
+- [ ] Blog section — it SHALL show the heading "Our Blog" / "Recent Blog"

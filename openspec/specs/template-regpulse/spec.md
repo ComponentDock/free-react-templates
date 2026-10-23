@@ -98,3 +98,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Renders all form fields — I see a heading "Booking place for your dinner!"
+- [ ] Default dining space selection — the radio "4" is checked
+- [ ] Dining space selection changes — the radio "2" is checked
+- [ ] Form submission shows confirmation — I see "Thank you!"
+- [ ] Design tokens match source — the body background is warm peach

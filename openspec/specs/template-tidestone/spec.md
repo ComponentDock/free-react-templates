@@ -108,3 +108,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation links are present — the navbar contains links for Home, About, Properties, Gallery, Blog, Contact
+- [ ] Booking form has required fields — the booking form contains a keywords input
+- [ ] Room cards display pricing — "Classic Bed Room" is shown with price "$150.00"
+- [ ] Mobile navigation toggle — the mobile navigation menu becomes visible

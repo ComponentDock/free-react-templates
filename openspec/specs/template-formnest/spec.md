@@ -134,3 +134,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders with split-screen layout — the heading "Let's work together" is visible on the left
+- [ ] Contact information panel — the heading "Let's work together" is displayed
+- [ ] Contact form renders all fields — the Name input with placeholder "Your name" is present
+- [ ] Form submission — the form submission is handled (default prevented)
+- [ ] User can fill form fields — the field value updates to reflect the typed text

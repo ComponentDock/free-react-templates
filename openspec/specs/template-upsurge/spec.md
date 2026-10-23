@@ -353,3 +353,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No ColorLib assets copied (picsum seeds `upsurge-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the header SHALL show a rocket icon + "Upsurge" logo on the left
+- [ ] Hero section — the hero SHALL show the headline "Unbeatable Offers" in white,
+- [ ] Features section — the section SHALL show a small rocket icon, an uppercase grey
+- [ ] Domain search section — the section SHALL show the white title "See our features" with
+- [ ] Skills & testimonials section — it SHALL show five labeled progress bars — Illustrator 80,
+- [ ] Pricing section — the section SHALL show its centered section title and three
+- [ ] Banner section — the banner SHALL show the headline "Dedicated hosting solutions
+- [ ] Footer widgets — it SHALL show the logo with an about paragraph and five social
+- [ ] Page composition — the page SHALL compose the Header in the banner landmark, all

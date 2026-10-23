@@ -125,3 +125,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with responsive mobile menu — I shall see the "Drifter" logo and links for Home, About, Services, Portfolio, Blog, Contact
+- [ ] Hero banner with background image — I shall see "This is me", "Alex Morgan", and a "Discover Now" button
+- [ ] About section with stats and skill bars — I shall see stat cards with values $2.5M, 1,465, and 3,965
+- [ ] Services section with 3 service cards — I shall see Architecture, Interior Design, and Concept Design cards
+- [ ] Portfolio section with filter tabs and project grid — I shall see 6 project items
+- [ ] Testimonials section — I shall see 3 testimonial quotes with author names
+- [ ] Blog section with 3 post cards — I shall see 3 blog post cards with titles and Read More links

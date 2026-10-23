@@ -420,3 +420,14 @@ Dock (`https://www.componentdock.com/`) instead.
       tokens, and what differs.
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar SHALL show the site name "Millwright" as the brand
+- [ ] Hero slider — it SHALL show slide 1 with the headline "We Are Industrial Company"
+- [ ] Feature highlights — it SHALL show three features titled "Automotive Parts", "Maintenance Services", and "Green Energy", each with an orange icon and a blurb
+- [ ] Services section — it SHALL show the heading "We Are Reliable Engineering In House"
+- [ ] Split block — it SHALL show the heading "Create, Enhance and Sustain" with two paragraphs and a "Read More" link, and an image on the opposite side
+- [ ] Projects grid — it SHALL show the heading "Our Latest Projects" and a lead paragraph
+- [ ] Testimonial carousel — it SHALL show the heading "Happy Clients"
+- [ ] Blog section — it SHALL show the heading "Blog Posts" and a lead paragraph
+- [ ] CTA band — it SHALL show the heading "Create, Enhance and Sustain" in white on the orange band
+- [ ] Footer — it SHALL show an "About Us" column with a paragraph and social icons (Twitter, Facebook, LinkedIn, Instagram)
+- [ ] Page composition — the page SHALL compose the navbar, hero slider, features, services, split block, projects, testimonials, blog, CTA band, and footer in order

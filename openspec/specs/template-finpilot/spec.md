@@ -182,3 +182,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the "FinPilot" logo is visible in the navbar
+- [ ] Hero Section — the headline "Grow Big with FinPilot Business" is displayed
+- [ ] Services Section — the heading "Explore Our Solutions" is displayed
+- [ ] About Section — the heading "The Largest Business Expert" is displayed
+- [ ] Counters Section — "520+" Total Projects is displayed
+- [ ] Gallery Section — the heading "Our Recent Works" is displayed
+- [ ] Features Section — three features are shown: Unlimited Control, Rapid Growth, Problem Solving
+- [ ] Financial Solution Section — the heading "Gives you the best Financial solution for business" is displayed
+- [ ] Testimonials Section — the heading "What Our Clients Say" is displayed
+- [ ] CTA Section — the heading "Do you Have any Project?" is displayed

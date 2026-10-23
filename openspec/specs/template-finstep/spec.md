@@ -187,3 +187,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page Load and Layout — a centered white card is displayed on a background image
+- [ ] Step Indicator Bar — four step circles are shown: About, Account, Ownership, Financing
+- [ ] Step 1 - About (Personal Information) — the step icon shows an account/person icon
+- [ ] Step 2 - Account — section heading "Do you have an account?" is displayed
+- [ ] Step 3 - Ownership — section heading "More About Yourself" is displayed
+- [ ] Step 4 - Financing — section heading "Financing Information" is displayed
+- [ ] Navigation — the "Previous" button is not visible
+- [ ] Floating Label Animation — the label animates upward
+- [ ] Responsive Layout — the card takes 90% width

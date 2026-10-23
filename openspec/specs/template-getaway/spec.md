@@ -210,3 +210,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the brand text "Getaway" with "Travel Agency" is visible
+- [ ] Hero section — the heading "Make Your Tour Amazing With Us" is visible
+- [ ] Search form — a destination text input is present
+- [ ] Services section — the heading "It's time to start your adventure" is visible
+- [ ] Statistics section — counters for "300 Successful Tours", "24,000 Happy Tourists",
+- [ ] Best places section — 4 destination cards are displayed (Singapore, Canada, Thailand,
+- [ ] Tour packages section — 6 tour cards are displayed with price and duration
+- [ ] Testimonials section — testimonial cards with names and quotes are visible
+- [ ] Blog section — 3 blog post cards are displayed

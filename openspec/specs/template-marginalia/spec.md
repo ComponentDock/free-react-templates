@@ -290,3 +290,9 @@ Dock (`https://www.componentdock.com/`) instead.
       images, reconstructed navbar links/footer).
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show a search trigger icon on the left
+- [ ] Hero section — it SHALL show a level-1 heading (e.g. "My personal journey
+- [ ] Blog feed — it SHALL show an uppercase meta row with an author and a date
+- [ ] Share rail — it SHALL show a vertical stack of social icon links (e.g
+- [ ] Footer — it SHALL show the site name "Marginalia"
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -178,3 +178,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — Given** the page is rendered
+- [ ] Hero — Given** the page is rendered
+- [ ] Features — Given** the page is rendered
+- [ ] Special Dishes — Given** the page is rendered
+- [ ] Our Menu — Given** the page is rendered
+- [ ] Testimonials — Given** the page is rendered
+- [ ] Blog — Given** the page is rendered

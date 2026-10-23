@@ -74,3 +74,9 @@ Built as a responsive React 19 single-page application using Vite, Tailwind CSS 
 - [ ] Vitest coverage report hits 100% lines/functions/branches/statements.
 - [ ] Production build (`npm run build`) completes successfully.
 - [ ] App CNAME is `dentocare.free.componentdock.com` and footer links Component Dock.
+- [ ] Navbar & Hero Section — they see the navigation bar with logo "Dentocare", links (Home, Dentist, About, Services, Pricing, Blog, Contact), and an "Make An Appointment" button
+- [ ] Appointment Booking Form — a confirmation message is displayed
+- [ ] Services Showcase — they see service cards (Tooth Protection, Dental Implants, Dental Care, Teeth Whitening, etc.) with icons and descriptions
+- [ ] Counters & Statistics — they see key metrics (3000+ Happy Patients, 2200+ Successful Operations, 24/7 Support)
+- [ ] Dentists Team — they see profile cards for Dr. Lloyd Wilson, Dr. Rachel Parker, Dr. Ian Smith, and Dr. Alicia Henderson with their roles and social links
+- [ ] Pricing & Packages — they see tiered pricing packages with "Get Started" buttons

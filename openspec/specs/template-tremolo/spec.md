@@ -85,3 +85,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero and Header Section — it displays a stylish header banner with title "Exquisite Food, Crafted with Passion"
+- [ ] Categorized Food Accordion Sections — the accordion expands smoothly to reveal individual menu items
+- [ ] Interactive Item Details and Dietary Badges — each item displays its price formatted correctly (e.g. "$14.50")

@@ -123,3 +123,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with contact bar and navigation — the header displays phone number, address, and email in the top bar
+- [ ] Hero section with property showcase — a hero section with a property image is visible
+- [ ] Search bar for property filtering — three input fields are visible with appropriate placeholders
+- [ ] Featured properties grid — three property cards are visible
+- [ ] Map section with location selector — a map placeholder is visible
+- [ ] Hot deal featured property — a property image is visible
+- [ ] Client testimonials section — a background image is visible

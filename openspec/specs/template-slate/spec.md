@@ -257,3 +257,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `public/CNAME` = `slate.free.componentdock.com`; `homepage` =
       `https://slate.free.componentdock.com`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero — the hero SHALL have a solid slate blue-grey background (`#6A6F82`)
+- [ ] Mobile menu — a full-screen overlay menu SHALL open, covering the viewport
+- [ ] Features — the section SHALL have a white background with a short section
+- [ ] About / stats band — the section SHALL have the slate `#6A6F82` background with white
+- [ ] Testimonials — the section SHALL show a heading and three testimonial cards on a
+- [ ] Contact — the section SHALL show a heading and contact details (email,

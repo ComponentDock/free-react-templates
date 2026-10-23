@@ -174,3 +174,14 @@ The template SHALL NOT contain any references to "colorlib" in app source files.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Fixed sidebar navigation — the sidebar is visible on the left with all navigation links
+- [ ] Hero section — the hero section displays "Hi!" and "I'm Alex" headings
+- [ ] About section — "Who Am I?" heading and service icons (Graphic Design, Web Design, Software, Application) are visible
+- [ ] Counters section — four stats (Cups of coffee, Projects, Clients, Partners) are displayed
+- [ ] Services section — 6 service cards with icons and descriptions are visible
+- [ ] Skills section — 6 progress bars with correct percentages are rendered
+- [ ] Education section — the entry expands to show its content
+- [ ] Experience section — 5 work experience entries with titles and periods are visible
+- [ ] Work portfolio section — only portfolio items matching that category are displayed
+- [ ] Blog section — a featured blog post and 2 side posts are visible
+- [ ] Contact section — the form submits without error

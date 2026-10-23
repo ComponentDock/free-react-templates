@@ -224,3 +224,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the site name "Roost" linking to `#home
+- [ ] Hero section — it SHALL contain the headline "Get your way home worldwide"
+- [ ] Services section — it SHALL show the "Our Services" heading
+- [ ] Property listings — it SHALL show the "Our Property" heading
+- [ ] Search CTA banner — it SHALL show the "Choose Your Dream House" heading
+- [ ] About section — it SHALL show the "Roost Real Estate Agency" heading
+- [ ] How it works section — it SHALL show the "How it works" heading
+- [ ] Agent CTA banner — it SHALL show the "$120,000" heading
+- [ ] Agents section — it SHALL show the "Our Agents" heading
+- [ ] Blog section — it SHALL show the "Our Blog" heading
+- [ ] Testimonials section — it SHALL show the "What Client Says" heading
+- [ ] Contact section — it SHALL show the "Contact Me" heading
+- [ ] Page composition — all sections SHALL be present in the main landmark

@@ -292,3 +292,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] package-lock.json registers @free-react-templates/ascent
 - [ ] PR merged immediately after verification
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header and navbar — it shows the brand wordmark "Ascent", the nav links
+- [ ] Hero — it shows the hero headline and a "Visit Our Works" CTA button in
+- [ ] Services — it shows the label "Services", the section heading, and the three
+- [ ] About band — it shows the label "About Us", the heading "Empowering
+- [ ] Portfolio / Featured Works — it shows the heading "Featured Works" and five work cards, each
+- [ ] How we work — it shows the heading "How we work", the quote and paragraph copy,
+- [ ] Team — it shows the heading "Our Creative Team" and the four members with
+- [ ] Testimonials — it displays the testimonial text and the author "Robert Thomson"
+- [ ] Contact form — it shows the inputs "Your Name", "Email", "Subject", the "Message"

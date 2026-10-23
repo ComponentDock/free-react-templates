@@ -55,3 +55,5 @@ A Carousel & Testimonials Showcase template with header navigation and footer at
 - [x] Build (`npm run build`) completes successfully.
 - [x] Footer correctly links `https://www.componentdock.com/`.
 - [x] No mention of ColorLib in application source code.
+- [ ] Header Navigation — it displays a brand logo and navigation menu items
+- [ ] Hero Carousel Testimonial Section — the user can click next/previous arrow controls or pagination dots to switch between testimonials smoothly

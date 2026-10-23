@@ -91,3 +91,9 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Footer links Component Dock (`https://www.componentdock.com/`)
 - [ ] No reference to ColorLib in app code
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] Navigation & Header — the User views sticky header with logo, navigation links (Home, About, Service, Blog, Contact), social icons, and phone contact number (`10 (87) 237 3784`). behaves as described…
+- [ ] Hero Section & Quick Offer Calculator — the User sees banner with background image, title "A TRULY GLOBAL SERVICE PROVIDER", subtitle "We make your cargo transport simple", and a "Explore Us" button.…
+- [ ] Services Grid — the User views 4-column commercial cleaning / logistics service cards with icon, title, description, and arrow link buttons. behaves as described by the fidelity notes
+- [ ] About / Transport Solution Sections (Visit One, Two, Three) — the User views professional transportation business details, interactive accordion for Road Transport / Sea Cargo, mission quote callout…
+- [ ] Want To Work / CTA & Client Testimonial — the User views "Need Help? Get Free quote!" CTA banner and client testimonial carousel with video modal trigger. behaves as described by the fidelity notes
+- [ ] Latest News & Brand Logos — the User views latest blog posts / freight articles and partner brand logo carousel. behaves as described by the fidelity notes

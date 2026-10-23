@@ -258,3 +258,16 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Snuggle" and links to Home, About, Services, Gallery, Pricing, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Highest Quality Care For Pets You'll Love"
+- [ ] Services tiles — it SHALL show tiles titled Dog Walking, Pet Daycare, and Pet Grooming
+- [ ] Why Choose Us section — it SHALL contain a heading "Why Choose Us?"
+- [ ] Counters section — it SHALL show four counters labeled Customer, Professionals, Products, and Pets Hosted
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asks Questions"
+- [ ] Testimonials section — it SHALL contain a heading "Happy Clients & Feedbacks"
+- [ ] Pricing section — it SHALL contain a heading "Choose Your Plan"
+- [ ] Gallery section — it SHALL contain a heading "Pets Gallery"
+- [ ] Blog section — it SHALL contain a heading "Latest news from our blog"
+- [ ] Appointment section — it SHALL contain a heading "Free Consultation"
+- [ ] Footer — it SHALL show the site name "Snuggle" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

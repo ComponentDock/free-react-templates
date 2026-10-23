@@ -205,3 +205,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top Bar — the top bar displays a phone number and email address
+- [ ] Navbar — the navbar displays "Chambers" as the brand
+- [ ] Hero Section — the hero headline reads "Don't Feel Helpless We Fight for Justice"
+- [ ] Intro Features — four feature cards are displayed in a row
+- [ ] About Section — the about section displays "Welcome to Chambers" as a subheading
+- [ ] Counter Stats — four stat blocks are visible
+- [ ] Practice Areas — the heading reads "What We Cover"
+- [ ] Cases Gallery — case items are shown in a grid
+- [ ] Attorneys — attorney cards are displayed
+- [ ] Responsive Design — the navbar shows a hamburger toggle

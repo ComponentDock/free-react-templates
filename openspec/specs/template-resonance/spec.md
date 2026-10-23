@@ -153,3 +153,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Resonance" linking to the page root
+- [ ] Hero section — it SHALL show an uppercase pill label "Welcome to our site"
+- [ ] Features section — it SHALL show an uppercase pill label "Features" and a level-1 heading "Our Features"
+- [ ] About section — it SHALL show a placeholder image on the left
+- [ ] Services section — it SHALL show an uppercase pill label "Services" and a level-2 heading "Our Services"
+- [ ] Testimonials section — it SHALL show an uppercase pill label "Testimonials" and a level-1 heading "Testimonials"
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the page sections in the main landmark, and the Footer in the contentinfo landmark

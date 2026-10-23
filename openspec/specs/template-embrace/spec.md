@@ -241,3 +241,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Hero — the Hero band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Service Intro — the Service Intro band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Causes (Most Popular Causes) — the Causes (Most Popular Causes) band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Latest Donations — the Latest Donations band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Testimonials ("What People Says") — the Testimonials ("What People Says") band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Success Stories — the Success Stories band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] News / About / Gallery — the News / About / Gallery band SHALL be present at its documented position with the structure, copy and tokens named above

@@ -82,3 +82,8 @@ Recreation of ColorLib Accordion 20 (`https://colorlib.com/wp/template/accordion
 - [ ] Design tokens (Emerald-600, gray-50, etc.) correctly applied via Tailwind v4 classes
 - [ ] 100% test coverage maintained across all components
 - [ ] Footer links https://www.componentdock.com/
+- [ ] Navigation & Header — the header shows the brand logo and navigation links
+- [ ] Hero & Introduction Section — only accordion items related to General are shown
+- [ ] Interactive Accordion Groups — the panel expands smoothly to reveal its content
+- [ ] Feature Highlights / Statistics — metrics such as "100% Responsive", "Fast Animations", and "24/7 Support" are clearly rendered
+- [ ] Newsletter & CTA Section — a success confirmation message is displayed

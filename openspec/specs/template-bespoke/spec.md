@@ -150,3 +150,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with responsive mobile menu — the logo "Bespoke" is visible
+- [ ] Hero carousel with rotating headings — the heading "Bespoke Presents" is visible
+- [ ] Product collections carousel — the "Collections" heading is visible
+- [ ] About section with stacked images — "A Fashion Boutique" heading is visible
+- [ ] Testimonials section — "Testimonials" heading is visible
+- [ ] Blog posts grid — "Blog Posts" heading is visible

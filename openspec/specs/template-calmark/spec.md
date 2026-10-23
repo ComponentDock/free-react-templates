@@ -89,3 +89,7 @@ The system SHALL render a footer with copyright and a link to Component Dock.
 - [x] Build succeeds (`npm run build`)
 - [x] Footer links to `https://www.componentdock.com/`
 - [x] No references to ColorLib in app code
+- [ ] Display current temporal grid — it renders three distinct columns: Year, Month, and Day
+- [ ] Navigation bar — it shows the site name "Calmark" and navigation links to Calendar and Features sections
+- [ ] Hero section — it shows a level-1 headline "Calendar & Schedule Dashboard"
+- [ ] Features section — it shows at least three feature cards (Real-Time Sync, Smart Reminders, Usage Analytics)

@@ -198,3 +198,11 @@ signup, and social links.
 - [ ] All images use `picsum.photos/seed/healpoint-N/w/h`
 - [ ] Section order matches the original 1:1
 - [ ] Design tokens match extracted values (brand purple #772dff, accent blue #0ba9ff, fonts Roboto + Playfair Display)
+- [ ] Navigation bar — the navbar SHALL show the site name "Healpoint" and a "Home" link pointing to the page root
+- [ ] Hero banner — it SHALL show a level-1 headline (e.g. "Growing up your children with our most smart monitization")
+- [ ] Features — it SHALL render three feature cards (Emergency Services, Doctors Schedule, Online Appointment)
+- [ ] About section — it SHALL show the heading "Welcome to Medicare Center"
+- [ ] Departments — it SHALL show the heading "Medicare Popular Departments"
+- [ ] Counter / stats — it SHALL render four stat cards
+- [ ] Team — it SHALL show the heading "Our Doctors"
+- [ ] Blog and appointment — it SHALL show the heading "Our Recent Blogs"

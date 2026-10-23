@@ -216,3 +216,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and CTA — the navbar displays links for Home, Services, Features, Price, Testimonials, and a Get Started CTA
+- [ ] Hero section with overlay — the hero section displays "Organize all with Nimbus" as the main heading
+- [ ] Features section with cards — three feature cards are displayed with titles "Stunning Visuals", "Clean Code", and "Punctuality"
+- [ ] About section with split layout — the about section displays "Powerful User Interface Design" heading and a "Get Started now" CTA
+- [ ] Services section with numbered items — 6 service items are displayed with numbers 01-06 and titles including "User Research", "User Interface", "Sketch & Wireframes", and "User Experience"
+- [ ] CTA section with blue background — the CTA section displays "Got Impressed by our features" and a "Request Free Demo" link
+- [ ] Video section with play button — a play button with aria-label "Play video" is displayed
+- [ ] Support section with image and text — the support section displays "24/7 Support system" and "A Handy support system for the Software"
+- [ ] Pricing section with 3 plans — three pricing cards display "Real Basic" at $39, "Real Standard" at $69, and "Real Ultimate" at $99
+- [ ] Testimonials section — three testimonial cards display with names "Sarah Mitchell", "James Cooper", and "Emily Chen"
+- [ ] Blog section — two blog posts display with titles "How to Scale Your SaaS Product Effectively" and "The Future of Cloud-Based Platforms"
+- [ ] Document title — document.title equals "Nimbus — SaaS Landing Template"

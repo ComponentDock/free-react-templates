@@ -148,3 +148,9 @@ and a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Creativex" and links to Work, Services, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading
+- [ ] Services section — it SHALL contain a heading "What We Do"
+- [ ] Selected work section — it SHALL contain a heading "Selected Work"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

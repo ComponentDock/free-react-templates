@@ -144,3 +144,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and branding — the logo, all nav links, working hours, phone, appointment button, and social icons are visible
+- [ ] Hero section with call-to-action — the subtitle, title, description, and both CTA buttons are visible
+- [ ] Intro section with stats and appointment form — all three milestone values and labels are visible
+- [ ] Why Choose Us section — all three feature titles and descriptions are visible
+- [ ] Call-to-action banner — the phone number links to the tel: protocol
+- [ ] Services grid — all six service cards with titles and descriptions are visible
+- [ ] Parallax discount section — the discount percentage, title, description, and button are visible
+- [ ] Newsletter signup — the form submits without page navigation

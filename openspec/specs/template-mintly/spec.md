@@ -294,3 +294,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `public/CNAME` = `mintly.free.componentdock.com`; `homepage` =
       `https://mintly.free.componentdock.com`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar SHALL have a white background and a dark charcoal brand
+- [ ] Hero — the hero SHALL have a white background split into a left text
+- [ ] Info cards — the band SHALL have the light mint `#B9F7F8` background spanning
+- [ ] Departments — the section SHALL show a heading and sub-line on a white or soft
+- [ ] About — the section SHALL show a split layout: an image on one side and a
+- [ ] FAQ — the section SHALL show a heading and an accordion of at least
+- [ ] Contact — the section SHALL show a heading and contact details (address,

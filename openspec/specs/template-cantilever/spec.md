@@ -215,3 +215,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Cantilever" and links to Home, About, Work, Services, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Precise concept design for stylish living"
+- [ ] Welcome (About) section — it SHALL show the eyebrow "Welcome to Cantilever"
+- [ ] Services section — it SHALL contain a heading "What we offer to our clients"
+- [ ] Projects section — it SHALL contain a heading "Our Recent Completed Projects"
+- [ ] Testimonials section — it SHALL contain a heading "What Customer Say About Us"
+- [ ] Client logos section — it SHALL show at least four client logo names
+- [ ] Blog section — it SHALL contain a heading "Recent From Our Blog"
+- [ ] Footer — it SHALL show the "About Me", "Newsletter", and "Follow Me" columns
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

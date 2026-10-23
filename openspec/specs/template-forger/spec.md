@@ -146,3 +146,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile toggle — the navbar displays the brand link "F", all six navigation links, and the "Hire me" button
+- [ ] Hero section with greeting and CTA — the hero section shows "Hello" badge, "Alex Forger" heading, and "A Freelance Web Developer" subtitle
+- [ ] About Me section with services and counter — the About section shows "Web Design" and "Web Application" service headings
+- [ ] Skills section with progress bars — 6 progress bars are rendered with aria-valuenow values of 75, 60, 85, 90, 70, and 80 respectively
+- [ ] What I Do service columns — headings "Explore", "Create", and "Learn" are visible with their respective service items
+- [ ] Hire Me CTA banner — the text "Available" and "For Freelancing" are visible with a "Hire me" link
+- [ ] Projects grid — 5 project cards with "Branding & Illustration Design" titles are rendered
+- [ ] Blog section with 3 entries — 3 blog article elements are rendered with titles and metadata
+- [ ] Contact form — the field values update accordingly

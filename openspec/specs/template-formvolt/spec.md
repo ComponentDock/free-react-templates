@@ -117,3 +117,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Two contact cards rendered side by side — two contact cards are visible
+- [ ] Left card defaults to "Say Hi" mode — the left card's "Say Hi" radio is selected
+- [ ] Right card defaults to "Get a Quote" mode — the right card's "Get a Quote" radio is selected
+- [ ] Form fields are functional — the form submits with the entered data

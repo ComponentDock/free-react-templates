@@ -166,3 +166,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section with dark food photography background — a full-width hero section is visible with a dark background image
+- [ ] Navigation overlays the hero — the navigation bar is positioned over the hero section
+- [ ] About section with two-column layout — an "About Us" label and "Delicious food provider since 1990" heading are displayed
+- [ ] Food menu section with 2-column grid — a "Popular Menu" subtitle and "Delicious Food Menu" heading are displayed
+- [ ] Parallax section between menu and testimonials — a full-width section with a dark background image is displayed
+- [ ] Testimonials carousel — a "Testimonials" subtitle and "What they said" heading are displayed
+- [ ] Contact section with reservation info — a "Contact Us" heading is displayed
+- [ ] Responsive design — the navigation collapses to a hamburger menu
+- [ ] Design tokens match original — they use Playfair Display serif font

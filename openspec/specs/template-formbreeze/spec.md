@@ -147,3 +147,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-page gradient background — the page has a blue gradient background from #0072ff to #00c6ff
+- [ ] White card with two-column layout — I see a white card centered on the gradient background
+- [ ] Contact form — I see a heading "Get in touch" above the form
+- [ ] Illustration section — I see a decorative illustration with icons
+- [ ] Responsive design — the illustration is hidden

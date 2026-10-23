@@ -239,3 +239,6 @@ The system SHALL render a minimal footer with a Component Dock credit link.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Page layout — the page background SHALL be a horizontal linear gradient from
+- [ ] Heading — it SHALL show the text "GradientScan" (replacing the original
+- [ ] Search form — the form container SHALL have a white (`#fff`) background

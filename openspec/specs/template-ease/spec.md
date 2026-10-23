@@ -149,3 +149,13 @@ Dark, elegant hotel booking template with:
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Hero Section — a full-viewport hero section is displayed with a dark overlay background
+- [ ] About Section — an about section displays the heading "Unwind A Hotel Booking Agency"
+- [ ] Services Section — six service cards are displayed: Free Wifi, Easy Booking, Restaurant, Swimming Pool, Beauty & Health, Help & Support
+- [ ] Call to Action / Intro Section — a full-width parallax image section is shown
+- [ ] Featured Rooms Section — the heading reads "Featured Rooms"
+- [ ] Restaurant & Bar Section — the heading reads "Restaurant & Bar"
+- [ ] Video Section — a dark overlay section with background image is displayed
+- [ ] Testimonials Section — the heading reads "Happy Guests"
+- [ ] Counter Section — numerical counters are displayed (e.g., number of rooms, guests, staff)
+- [ ] Gallery Section — a grid of hotel photos is displayed

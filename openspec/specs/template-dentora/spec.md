@@ -304,3 +304,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Dentora"
+- [ ] Hero section — it SHALL show the badge "Now Accepting New Patients"
+- [ ] Stats strip — it SHALL show "Happy Patients", "Years Experience", "Expert Dentists", and "Satisfaction Rate" labels
+- [ ] Services section — it SHALL contain a heading "Comprehensive Dental Care"
+- [ ] Team section — it SHALL contain a heading "Meet Our Dentists"
+- [ ] Why Us section — it SHALL contain a heading "Modern Care You Can Trust"
+- [ ] Results section — it SHALL contain a heading "See the Difference"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Patients Say"
+- [ ] Insurance section — it SHALL contain a heading "We Accept Most Insurance Plans"
+- [ ] Emergency CTA section — it SHALL contain a heading mentioning "Dental Emergency"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Contact section — it SHALL contain a heading "Schedule Your Visit"
+- [ ] Footer — it SHALL show the site name "Dentora" and a brand blurb

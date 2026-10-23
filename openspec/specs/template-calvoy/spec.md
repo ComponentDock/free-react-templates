@@ -43,3 +43,5 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - [ ] Tailwind CSS 4 compiles correctly with proper theme tokens.
 - [ ] Vitest tests pass with 100% coverage across lines, functions, branches, and statements.
 - [ ] Footer correctly links to Component Dock.
+- [ ] Centered Date Picker Interface — a centered header ("Calvoy - Date Picker") and a date input field with placeholder "Pick A Date" are displayed
+- [ ] Interactive Date Selection Modal / Dropdown — an interactive calendar picker popup/dropdown appears allowing month navigation and date selection

@@ -168,3 +168,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar display navigation links and mobile menu — the navbar shows links: Home, Services, Portfolio, About, News, Video, Skills, Contact
+- [ ] Hero display headline and subtitle — the headline reads "We Craft Awesome Web And Graphic Design Solutions"
+- [ ] Services display 8 service items — section number "01" and title "Services" are displayed
+- [ ] Portfolio display project grid — section number "02" and title "Portfolio" are displayed
+- [ ] About display timeline and team — section number "03" and title "CRAFTERS" are displayed
+- [ ] News display blog posts and testimonials — section number "04" and title "STORIES" are displayed
+- [ ] Video display feature items — section number "05" and title "OFFER" are displayed
+- [ ] Skills display progress bars — section number "06" and title "EXPERTISE" are displayed
+- [ ] Contact have a working form — section number "07" and title "Contact" are displayed

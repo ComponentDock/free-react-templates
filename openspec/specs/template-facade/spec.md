@@ -217,3 +217,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Facade" and links to Home, About, Services, Projects, Blog, and Contact
+- [ ] Hero section — it SHALL contain the tagline "Building for Society"
+- [ ] Feature tiles — it SHALL show tiles titled "Creative Design", "Experienced Style", "Product Research", and "Affordable Price"
+- [ ] About section — it SHALL contain the heading "We are world number one Company"
+- [ ] Recent work section — it SHALL contain a heading "Recent Work" and a subheading "View Our Project"
+- [ ] Call-to-action section — it SHALL contain the heading "View Our Project"
+- [ ] Testimonials section — it SHALL contain the heading "Happy Clients"
+- [ ] Brand logos section — it SHALL show at least three brand logo placeholders
+- [ ] Footer — it SHALL show link columns (e.g. "Top Products", "Quick Links", "Features", "Resources")
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

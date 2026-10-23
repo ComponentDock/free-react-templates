@@ -206,3 +206,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top menu bar with social icons and CTA — social media icons for Facebook, Twitter, and Dribbble are displayed in the top bar
+- [ ] Navigation bar with dropdowns — the Embankment logo is displayed
+- [ ] Hero banner with centered content — the heading "Build Your Dream" is centered
+- [ ] Services section with 3 cards — 3 service cards are displayed in a row
+- [ ] Latest projects gallery with hover overlay — 6 project cards are displayed in a 3-column grid
+- [ ] Team section with golden hover overlay — 4 team member cards are displayed
+- [ ] Counter statistics bar — a golden background section is visible
+- [ ] Features section with bordered cards — 6 feature cards are displayed
+- [ ] Testimonials carousel — a testimonial with avatar, quote, name, and role is displayed
+- [ ] Client logos — 5 client logo images are displayed
+- [ ] Responsive layout — a hamburger menu toggle button is visible

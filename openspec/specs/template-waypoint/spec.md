@@ -195,3 +195,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-viewport hero with travel background image — the hero section shows a full-viewport background image
+- [ ] Search form with gradient overlay — the search form is centered on screen
+- [ ] Search Hotels heading — the form shows a heading "Search Hotels" in Poppins bold font
+- [ ] Travel type tabs — "HOTEL ONLY" is the active tab with navy background
+- [ ] Destination input field — the destination input is visible with placeholder "Destination, hotel name"
+- [ ] Check-in and check-out date inputs — the check-in and check-out date inputs are visible
+- [ ] Travelers select dropdown — the travelers dropdown shows "1 adult" as default
+- [ ] Add a Flight and Add a Car checkboxes — "Add a Flight" checkbox is checked
+- [ ] Search button — the "Search" button is visible with orange background
+- [ ] Responsive layout — the date and traveler inputs stack vertically

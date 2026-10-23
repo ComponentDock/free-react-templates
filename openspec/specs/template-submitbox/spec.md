@@ -160,3 +160,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Renders heading "Sign Up #03" or "Hello! Please signup to continue" — Given** the page is rendered
+- [ ] Renders all four input fields with correct placeholders — Given** the page is rendered
+- [ ] Full Name field accepts text input — Given** the page is rendered
+- [ ] Email field accepts email input — Given** the page is rendered
+- [ ] Password field masks input — Given** the page is rendered
+- [ ] Confirm Password field masks input — Given** the page is rendered
+- [ ] Submit button is present and clickable — Given** the page is rendered
+- [ ] Social login buttons render (Facebook, Twitter) — Given** the page is rendered
+- [ ] Left panel shows icon and "Already have an account?" text — Given** the page is rendered
+- [ ] "Sign In" button renders in left panel — Given** the page is rendered
+- [ ] "I'm already a member! Sign In" link renders — Given** the page is rendered
+- [ ] Responsive: stacks on mobile, side-by-side on desktop — Given** the page is rendered

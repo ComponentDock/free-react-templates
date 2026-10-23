@@ -434,3 +434,14 @@ Dock (`https://www.componentdock.com/`) instead.
       differs.
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar SHALL show the site name "Metalwork" as the brand
+- [ ] Hero slider — slide 1 SHALL show the headline "We Are Industrial Company"
+- [ ] Features ("We'll Handle Any Problems and Solve Them") — it SHALL show the heading "We'll Handle Any Problems and Solve Them"
+- [ ] Services row — it SHALL show "Modern Design", "Built With Passion", and "Fast Loading", each with a centered orange icon and a blurb
+- [ ] About blocks — it SHALL show the image on the left, the heading "Let's Build Together", a paragraph, and a "Read More" link
+- [ ] Projects grid — it SHALL show the heading "Projects" with a lead paragraph
+- [ ] Testimonials — it SHALL show the heading "Testimonial"
+- [ ] Blog section — it SHALL show the heading "Blog Posts" with a lead paragraph
+- [ ] CTA band — it SHALL show a white heading and lead paragraph on the orange background
+- [ ] Footer — it SHALL show an "About" column with a paragraph and social icons
+- [ ] Page composition — the page SHALL compose the navbar, hero slider, features, services row, about blocks, projects grid, testimonials, blog, CTA band, and footer in order

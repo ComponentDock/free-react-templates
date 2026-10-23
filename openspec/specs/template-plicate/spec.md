@@ -49,3 +49,5 @@ Recreation of ColorLib [Accordion 05](https://colorlib.com/wp/template/accordion
 - [ ] Build succeeds (`npm run build`)
 - [ ] Component Dock footer link present
 - [ ] No ColorLib references in app code
+- [ ] Header Section — they should see the main header "Interactive Accordion Showcase" and subtitle describing the component set
+- [ ] Interactive Accordion Component — the corresponding content area expands with smooth transition and the chevron icon rotates

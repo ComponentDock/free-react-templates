@@ -136,3 +136,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile menu — the navbar shows "Learnhub" brand, all 5 nav links, and a Login button
+- [ ] Hero section with CTAs — the hero shows "Advance Your Career with Expert-Led Courses" heading
+- [ ] Features section — three feature cards are visible with titles and descriptions
+- [ ] About section — the about section shows "Learn Skills That Matter for Your Career" heading
+- [ ] Stats section — four stats are visible: 250 Courses, 15,000 Students, 92% Career Advancement, 45 Countries
+- [ ] Courses section — three course cards are visible with titles, prices, and instructor names
+- [ ] Platform section — the platform section shows "Learn Anywhere" and "Verified Certificates" features
+- [ ] Testimonials section — three testimonial cards are visible with names, roles, and quotes
+- [ ] Blog section — three blog cards are visible with categories, titles, and engagement counts

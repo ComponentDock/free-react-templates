@@ -205,3 +205,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top header bar — the top header SHALL display "Welcome to Ledgerly" with the brand name highlighted
+- [ ] Navigation bar — the navbar SHALL display the Ledgerly logo
+- [ ] Hero section — it SHALL contain a level-1 heading mentioning "Crypto World"
+- [ ] Features section — it SHALL show 4 feature cards with titles and descriptions
+- [ ] About section — it SHALL show an image and descriptive text about the platform
+- [ ] Currency calculator — it SHALL show two conversion forms
+- [ ] Blog and prices — it SHALL show 3 blog posts with titles, categories, dates, and excerpts
+- [ ] Newsletter subscription — it SHALL show a "Subscribe to Newsletter" heading
+- [ ] Page composition — the document title SHALL be "Ledgerly — Cryptocurrency Template"

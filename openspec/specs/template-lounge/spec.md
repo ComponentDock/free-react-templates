@@ -185,3 +185,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — the navbar displays the brand "Lounge" and navigation links (Home, About, Rooms, Dining & Bar, Amenities, Booking, Blog, Contact)
+- [ ] Hero Carousel — the first slide is visible with heading "Welcome to Lounge — your seaside retreat"
+- [ ] Reservation Form — it displays Check-in, Check-out, Guests, and Room Type fields with a "Check Availability" button
+- [ ] Services Section — the "Master Bedrooms" tab is active with its description
+- [ ] Room Showcase — 4 room cards are displayed with names, prices, and descriptions
+- [ ] Parallax Conference — it shows "Conference Centre" heading with a "View more details" button
+- [ ] Restaurant Menu — the "Main" tab is active showing main course items
+- [ ] Testimonials — 3 testimonial cards are displayed with names, origins, ratings, and quotes
+- [ ] Blog — 3 blog cards are displayed with images, titles, dates, and authors
+- [ ] Events — event items are displayed with date badges, titles, descriptions, and "Join event" / "See details" buttons
+- [ ] Instagram Gallery — 5 images are displayed in a grid with hover overlay

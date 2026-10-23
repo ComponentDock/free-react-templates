@@ -157,3 +157,13 @@ The template SHALL NOT contain any references to "colorlib" in application sourc
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] TopBar displays contact information — the top bar shows "hello@threadcraft.com" and "+1 555 123 4567"
+- [ ] Navbar displays logo and navigation — the logo "Threadcraft" is displayed
+- [ ] HeroSlider displays promotional slides — the first slide with "Summer Collection" heading is visible
+- [ ] CategoryTabs switch product categories — that tab becomes visually active
+- [ ] TrendingProducts displays and filters products — products matching that category are shown
+- [ ] DealOfTheWeek displays countdown timer — the countdown timer shows Days, Hrs, Mins, Secs values
+- [ ] FeaturedProducts displays tabbed products — that tab becomes active
+- [ ] CollectionGallery displays image grid — 6 collection images are displayed
+- [ ] BlogSection displays blog posts — 3 blog cards with dates and titles are shown
+- [ ] FeaturesBar displays feature highlights — all 3 feature items are displayed

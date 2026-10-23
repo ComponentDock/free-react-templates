@@ -74,3 +74,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sidebar navigation — the sidebar is visible at the left side with the logo "Galleryvue", navigation links (Home, Gallery, About, Blog, Contact), and social icons (Facebook, Twitter, Instagram…
+- [ ] Gallery grid — 12 gallery items are rendered in a 3-column grid (1 column on mobile, 2 on tablet, 3 on desktop)

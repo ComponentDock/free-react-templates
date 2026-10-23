@@ -147,3 +147,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with navigation — the header is visible at the top of the page
+- [ ] Sidebar with personal information — a profile photo is displayed
+- [ ] Tab navigation switches content — the Skills panel is displayed
+- [ ] About section displays profile content — the job title "HTML5 & CSS Developer" is shown

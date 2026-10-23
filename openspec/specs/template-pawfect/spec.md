@@ -213,3 +213,13 @@ and a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Top info bar — the top bar SHALL show the phone number, the opening hours, and the email address
+- [ ] Navigation bar — the navbar SHALL show the site name "Pawfect" and links to the main sections
+- [ ] Hero section — it SHALL contain a level-1 heading matching "We Care Your Pets"
+- [ ] Services section — it SHALL show the heading "Services for every dog"
+- [ ] About section — it SHALL show the image with an accessible label
+- [ ] Team section — it SHALL show the heading "Our Team"
+- [ ] Testimonials and counters — it SHALL show at least one quote card with a name
+- [ ] Contact CTA band — it SHALL show the heading "Why go with Pawfect?"
+- [ ] Footer — it SHALL show the site name "Pawfect", a tagline, and social links
+- [ ] Page composition — the page SHALL compose the top bar and Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

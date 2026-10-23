@@ -109,3 +109,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation links — it shows the brand name "Curate" and links for Home, Portfolio, Services, and Testimonial
+- [ ] Hero section with CTA — it shows the subtitle "Now you can watch the Talent", the heading "Let's Explore Idea!", and an "Explore Now" button linking to #portfolio
+- [ ] Filterable portfolio grid — all 12 portfolio items are visible
+- [ ] Services section — a dark overlay banner with "This is what we can do for you" heading appears
+- [ ] Testimonials section — 4 testimonials appear with avatar, name, star rating, and review text

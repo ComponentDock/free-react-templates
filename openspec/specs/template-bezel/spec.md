@@ -151,3 +151,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar displays the logo and all six navigation links
+- [ ] Hero Section — the hero section displays the subtitle, headline, and CTA button
+- [ ] Video Introduction — the section displays heading text and a play button
+- [ ] Feature Grid — four feature cards are displayed with their titles and descriptions
+- [ ] About Split — the section displays the image, heading, and CTA button
+- [ ] Services — six service cards are displayed
+- [ ] Product Catalog — four product cards are displayed with names, prices, and CTA buttons
+- [ ] Reviews — six review cards are displayed with star ratings
+- [ ] FAQ Accordion — the answer expands

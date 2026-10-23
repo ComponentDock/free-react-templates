@@ -334,3 +334,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Section order matches the preview 1:1; tokens (#d79100, #dda226, #db9c1a, #dfa733, #242f3a, #212529, #6c757d, #f8f9fa, #e9ecef, #ebc880, Playfair Display/Raleway) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `barrister-<n>`, Google Fonts links, lucide icons only)
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header + navigation — the header SHALL show the brand "Barrister" on the left in a serif
+- [ ] Hero — the hero SHALL fill the width with a photo background (seeded
+- [ ] Intro (promise) section — the section SHALL show the centered heading "My promise to every
+- [ ] About me section — the section SHALL have a light gray (#f8f9fa) background
+- [ ] Why Us heading + icon row — the section SHALL show the gold uppercase kicker "Why Us" with a
+- [ ] Gallery slider — it SHALL show a slider of four distinct images (seeded picsum;
+- [ ] Why Choose Us section — the section SHALL show a photo on the left and the heading "Why
+- [ ] List Of Services section — the section SHALL show a white box with the heading "List Of
+- [ ] Page composition — the page SHALL compose the Header in the banner landmark, all

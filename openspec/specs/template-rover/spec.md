@@ -251,3 +251,15 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Rover" and links to Home, About, Doctor, Pricing, Blog, Services, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "We Love Dogs"
+- [ ] Welcome section with feature tiles — it SHALL contain a level-2 heading "Welcome To Our Website"
+- [ ] Featured veterinarian section — it SHALL contain a heading naming the veterinarian (Jean Smith) and the role "Our Dog Veterinarian"
+- [ ] Pricing section — it SHALL contain a level-2 heading "Pricing Table"
+- [ ] FAQ section — it SHALL contain a level-2 heading "Frequently Ask Questions"
+- [ ] Testimonials section — it SHALL contain a level-2 heading "Happy Customers"
+- [ ] Blog section — it SHALL contain a level-2 heading "Rover Blog"
+- [ ] Services section — it SHALL contain a level-2 heading "Our Services"
+- [ ] Contact section — it SHALL contain a level-2 heading "Contact Form"
+- [ ] Footer — it SHALL show the site name "Rover" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

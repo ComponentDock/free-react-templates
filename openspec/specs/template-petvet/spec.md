@@ -222,3 +222,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Petvet" and links to the main sections
+- [ ] Hero section — it SHALL contain a level-1 heading matching "The Kind of Care Your Pets Deserve"
+- [ ] Intro services section — it SHALL show the three service blocks, each with an icon, title, and copy
+- [ ] Services section — it SHALL show the heading "We Are Best Agency For Your Pets"
+- [ ] Groomers section — it SHALL show the heading "Our Groomers"
+- [ ] Testimonials section — it SHALL show the heading "happy Customers Says"
+- [ ] Pricing section — it SHALL show the heading "Affordable Packages"
+- [ ] Blog section — it SHALL show the heading "Latest Blog Updates"
+- [ ] Footer — it SHALL show the site name "Petvet" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

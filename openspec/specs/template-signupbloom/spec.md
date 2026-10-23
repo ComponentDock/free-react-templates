@@ -170,3 +170,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Split layout — the form is shown on the left half and the illustration on the right half
+- [ ] Form heading — a heading with text "Sign Up" is visible
+- [ ] Form fields — a text input with placeholder "Name" is present
+- [ ] Terms checkbox — the terms checkbox is checked
+- [ ] Register button — a "Register" button is visible and has type "submit"
+- [ ] Social login buttons — a "Register with Facebook" button with blue background is visible
+- [ ] Social divider — the text "or register using" is displayed between the button and social logins
+- [ ] Illustration — an illustration image is visible on the right side

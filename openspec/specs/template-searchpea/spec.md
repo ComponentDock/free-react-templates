@@ -175,3 +175,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full viewport background — the page has a full-viewport background image
+- [ ] Centered pill-shaped search card — a pill-shaped search card is displayed
+- [ ] Search input area — the left portion of the card has a light mint green background (#d9f1e3)
+- [ ] Search button — a green SEARCH button is displayed on the right side of the card
+- [ ] Hint text — a hint text is displayed below the search card
+- [ ] Responsive behavior — the input field height reduces to approximately 50px
+- [ ] Accessibility — the search input is focusable via keyboard

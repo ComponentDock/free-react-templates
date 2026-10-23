@@ -153,3 +153,10 @@ Extracted from `https://preview.colorlib.com/theme/photography/css/main.css`:
 - [ ] All sections match original structure and order 1:1
 - [ ] 100% test coverage (Vitest + Testing Library)
 - [ ] Conventional commit: `feat: add Lenskeeper template (ColorLib Photography)`
+- [ ] Navbar — The navbar is absolutely positioned over the hero carousel
+- [ ] Hero / Banner Carousel — The hero section is a full-viewport-height image carousel (Bootstrap-style)
+- [ ] About Section — The section sits on a light background (#f9f9ff)
+- [ ] Gallery Section — The section has a dark background (#222222) with white text
+- [ ] Call-to-Action Section — The section has the brand gradient background (linear-gradient #7a77ff → #8cfe86)
+- [ ] Blog Section — Centered heading: "Our Recent Blogs" (h1)
+- [ ] Contact Section — Left column: contact image (img-fluid, full width)

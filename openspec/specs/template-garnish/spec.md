@@ -189,3 +189,10 @@ a copyright line linking to Component Dock.
 - [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] Footer links to Component Dock
 - [ ] Placeholder images use picsum.photos with deterministic seeds
+- [ ] Navigation bar — it SHALL show the site name "Garnish" linking to `#home
+- [ ] Hero section — it SHALL contain a headline (e.g. "Welcome to Garnish")
+- [ ] About Us section — it SHALL show the heading "About Us"
+- [ ] Dish Menu section — it SHALL show the heading "Special"
+- [ ] Awards section — it SHALL show the heading "Awards"
+- [ ] Testimonials section — it SHALL show the heading "Testimonials"
+- [ ] Reservation section — it SHALL show the heading "Reservation"

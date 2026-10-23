@@ -92,3 +92,7 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Wisp" and a "Home" link pointing to the page root
+- [ ] Error section with sad emoji — it SHALL show a sad emoji with an accessible label
+- [ ] Footer — it SHALL show the site name "Wisp" and a tagline
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the error section in the main landmark, and the Footer in the contentinfo landmark

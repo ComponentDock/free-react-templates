@@ -438,3 +438,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to `https://www.componentdock.com/`; no ColorLib
       references in app code
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — it SHALL have a dark background with the white bold brand
+- [ ] Hero slider — it SHALL show a 750px-tall background with the diagonal
+- [ ] Domain search — it SHALL have a #233142 background with the white heading "Search
+- [ ] Guarantee services — it SHALL show the heading "The WebHost Guarantee" on a #f8f9fa
+- [ ] Counter band — it SHALL show a parallax background image with the white
+- [ ] Pricing plans — it SHALL show the heading "Our Best Pricing" on a #f8f9fa
+- [ ] Why Choose Us — it SHALL show the heading "Why Choose Us?"
+- [ ] Testimonials — it SHALL show the white heading "Our satisfied customer says"
+- [ ] VPS hosting tabs — it SHALL show the heading "How it works" with three tabs: Next
+- [ ] Client logos — it SHALL have a #233142 background with the white heading "Our
+- [ ] Recent blog — it SHALL show the heading "Recent Blog" on a #f8f9fa background
+- [ ] Footer — it SHALL have a #233142 background with four columns: brand

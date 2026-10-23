@@ -55,3 +55,7 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - [ ] Vitest coverage is 100% (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links Component Dock
+- [ ] Header & Navigation — The app shall render a top navigation bar with brand title ("Daylark"), date indicator, view switcher (Month / Week / Day / List), and quick action button ("+ New Event")
+- [ ] Interactive Calendar Grid — The app shall display a fully interactive monthly/weekly calendar grid showing days of the current month, highlighted current date, and scheduled events with category…
+- [ ] Event Management Panel — A sidebar or modal showing upcoming events for the selected date, with details (title, time, location, attendees, description) and ability to add/edit/delete events
+- [ ] Mini Calendar & Filters — A sidebar widget featuring a mini month picker and category filters (Work, Personal, Meetings, Reminders)

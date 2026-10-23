@@ -66,3 +66,7 @@ Recreation of ColorLib **Victor** (`https://colorlib.com/wp/template/victor/`), 
 - [ ] Vitest unit tests pass with 100% coverage
 - [ ] Build succeeds without errors
 - [ ] Footer links to https://www.componentdock.com/
+- [ ] 1. Navbar — the navbar should display navigation links and the consultation CTA
+- [ ] 2. Hero — the hero section displays the main headline and "Get Started" button
+- [ ] 3. Clients / Features — three distinct benefit cards are rendered in a responsive grid
+- [ ] 4. ProjectUs / Accordion Services — the corresponding body text expands or collapses smoothly

@@ -194,3 +194,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with transparent overlay on hero — the navbar is positioned over the hero section
+- [ ] Hero section displays with search form — a full-viewport hero section is visible
+- [ ] Feature Destinations shows 3 image cards — 3 equal-width destination cards appear in a row
+- [ ] Top Destinations shows 6-column grid — a "Top Destinations" heading and subtext are centered
+- [ ] Promo section cover displays parallax banner — a full-width parallax background image is shown at 500px height
+- [ ] Featured Destinations carousel renders — a left panel shows "More Featured Destinations" heading, subtext, and prev/next arrow buttons
+- [ ] Responsive behavior — the navbar collapses to a hamburger menu
+- [ ] Accessibility — all images have descriptive alt text

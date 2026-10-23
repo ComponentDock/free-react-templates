@@ -116,3 +116,8 @@ and a mandatory credit link to Component Dock (`https://www.componentdock.com/`)
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — it SHALL show the site name "Somersault" linking to `#home
+- [ ] Hero slider section — the active slide SHALL transition smoothly to the selected slide
+- [ ] Interactive Carousel Showcase section — the carousel items SHALL scroll or transition to reveal adjacent cards
+- [ ] Features grid section — it SHALL display 3-4 feature cards with clear visual hierarchy
+- [ ] Testimonials / Stats section — stats and testimonial cards SHALL be clearly legible against a contrasting background

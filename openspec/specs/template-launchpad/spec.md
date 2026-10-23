@@ -106,3 +106,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] GHERKIN: App renders with correct title — Given** the page is rendered
+- [ ] GHERKIN: All sections are present in the main landmark — Given** the page is rendered
+- [ ] GHERKIN: Navbar toggles mobile menu — Given** the page is rendered
+- [ ] GHERKIN: Pricing shows three plans with correct names and prices — Given** the page is rendered

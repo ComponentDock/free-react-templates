@@ -317,3 +317,15 @@ Dock (`https://www.componentdock.com/`) instead.
       differs.
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Forma" and links to About, Portfolio, Services, Pricing, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Transforming Spaces Into Extraordinary Experiences"
+- [ ] Services section — it SHALL contain a heading "Comprehensive Design Services"
+- [ ] Portfolio section — it SHALL contain a heading "Featured Projects"
+- [ ] Process section — it SHALL contain a heading "How We Work"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Clients Say"
+- [ ] Awards section — it SHALL contain a heading "Awards & Accolades"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Contact section — it SHALL show a form with Full Name, Email Address, Phone Number, Project Type, and Project Details fields and a "Send Message" button
+- [ ] CTA band — it SHALL contain a heading "Ready to Transform Your Space?"
+- [ ] Footer — it SHALL show link columns and a brand blurb
+- [ ] Page composition — the page SHALL compose the header, hero, services, portfolio, process, testimonials, awards, FAQ, contact, CTA band, and footer in order

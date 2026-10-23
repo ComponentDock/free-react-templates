@@ -259,3 +259,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the site name "Archon" and links for Home, Inner
+- [ ] Hero section — it SHALL contain a level-1 heading with the template tagline
+- [ ] Mission section — it SHALL contain the subtitle "Our Mission"
+- [ ] Services section — it SHALL contain the label "Our Services" and a heading
+- [ ] News section — it SHALL contain the subtitle "Ideas & Publications" and the
+- [ ] Testimonials section — it SHALL contain the subtitle "What They Say" and the heading
+- [ ] Footer — it SHALL show "About Us" with a "Learn more" button
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

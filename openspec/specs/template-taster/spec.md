@@ -195,3 +195,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with logo and hamburger — the logo "T" is visible at the top center
+- [ ] Hero section displays with background image and CTA — the heading "Welcome to Taster" is visible
+- [ ] Features section shows alternating image-text cards — 3 feature cards are displayed
+- [ ] About section displays restaurant description — the heading "The Restaurant" is visible
+- [ ] Image divider renders decorative image — a decorative restaurant ambiance image is visible
+- [ ] Chefs section shows chef profiles — 2 chef cards are displayed
+- [ ] Menu section has tabbed food items — 3 tabs are visible: Breakfast, Brunch, Dinner
+- [ ] Services section displays 6 service cards — 6 service cards are displayed
+- [ ] Reservation form renders all fields — a form is visible with fields: Name, Email, Phone, Number of Persons, Date, Time
+- [ ] Testimonials carousel cycles through reviews — a testimonial with quote, author photo, name, and role is visible
+- [ ] Contact form renders with fields — a contact form is visible with fields: Name, Email, Phone, Message

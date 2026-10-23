@@ -248,3 +248,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — Given** the page loads,
+- [ ] Hero — Given** the page loads,
+- [ ] Most Visited Places — Given** the page loads,
+- [ ] Popular Categories — Given** the page loads,
+- [ ] Why Us — Given** the page loads,
+- [ ] Testimonials — Given** the page loads,
+- [ ] Blog — Given** the page loads,
+- [ ] FAQ — Given** the page loads,
+- [ ] CTA — Given** the page loads,

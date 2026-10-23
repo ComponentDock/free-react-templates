@@ -208,3 +208,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page loads with header and logo — a header is visible with the brand logo
+- [ ] Hamburger menu opens sidebar — a sidebar slides in from the right
+- [ ] Sidebar closes — the sidebar closes with a slide animation
+- [ ] About section displays correctly — a large watermark heading "About" (250px) is visible behind content
+- [ ] Services section displays correctly — a large watermark heading "Services" appears behind content
+- [ ] Portfolio section displays work entries — a large watermark heading "Portfolio" appears behind content
+- [ ] Blog section shows carousel of articles — a large watermark heading "Blog" appears behind content
+- [ ] Testimonials section shows client quotes — a large watermark heading "Testimonies" appears behind content
+- [ ] Footer displays three columns — a "Let's Talk" column shows contact text, email link, and social icons
+- [ ] Design tokens are correctly applied — body font is "Karla" with fallback Arial
+- [ ] Responsive behavior — the page has top padding of 5em for the fixed nav

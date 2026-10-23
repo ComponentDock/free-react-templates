@@ -100,3 +100,10 @@ Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
 - [ ] 100% test coverage maintained (`npm run test:coverage`).
 - [ ] Footer links to `https://www.componentdock.com/`.
 - [ ] CNAME configured as `lull.free.componentdock.com`.
+- [ ] Navigation & Header — The header must display the logo "LULL HOTEL BOOKING" and navigation links: Home, About, Rooms, Resto & Bar, Blog, Contact
+- [ ] Hero Section & Booking Bar — Hero features a full-width background image with dark overlay, subtitle "ENJOY YOUR WONDERFUL HOLIDAYS...", headline "Most Relaxing Place", and CTA buttons "TAKE A TOUR"…
+- [ ] About Section — Heading "Lull A Hotel Booking Agency", description paragraph, and "BOOK YOUR ROOM NOW" action link
+- [ ] Services Grid — 6 key hotel services with icons and titles: Free Wifi, Easy Booking, Restaurant, Swimming Pool, Beauty & Health, Help & Support
+- [ ] Featured Rooms — Grid of featured accommodations (Suite Room, Family Room, Deluxe Room) with image, description, price, and "BOOK NOW" action
+- [ ] Restaurant & Bar Menu — Grid showcasing popular dishes (Grilled Beef with potatoes, Ultimate Overload, Ham & Pineapple) with prices and descriptions
+- [ ] Testimonials & Blog — Guest reviews carousel ("Happy Guests") and recent blog posts grid ("Best Hotel Near Beach") with comments and dates

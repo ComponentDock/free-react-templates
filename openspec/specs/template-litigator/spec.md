@@ -169,3 +169,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders all sections with correct landmarks and title — the document title is "Litigator — Law Firm Landing Template"
+- [ ] Navbar provides navigation with mobile toggle — I see a link "Home" pointing to "#home"
+- [ ] Hero section displays headline and CTA — I see a heading level 1 containing "We Fight"
+- [ ] Practice Areas section lists four legal areas — I see a heading "Our Practice Areas"
+- [ ] Stats section displays four statistics — I see values "90+", "3K+", "2K+", and "200+"
+- [ ] Testimonials section provides carousel navigation — I see a heading "Happy Clients"
+- [ ] Expertise section displays four service cards — I see a heading "More Expertise"
+- [ ] CTA section displays consultation prompt — I see a heading containing "Let's get started"

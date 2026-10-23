@@ -145,3 +145,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with scroll-aware styling — the navbar displays all six navigation links
+- [ ] Hero section with greeting and CTA — the hero section shows "Hello" subheading
+- [ ] About section with services and counter — service cards for "Web Design" and "Web Application" are visible
+- [ ] Skills section with progress bars — four progress bars are visible with correct percentages
+- [ ] Projects gallery with hover overlay — six project cards are visible with titles
+- [ ] Blog section with posts — three blog posts are visible with dates and titles
+- [ ] Contact section with form — a "Thank you!" success message is displayed

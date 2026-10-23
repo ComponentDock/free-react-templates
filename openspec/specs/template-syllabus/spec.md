@@ -192,3 +192,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo, nav links, and phone sidebar — the brand text "syllabus" and all nav links (Home, About Us, Courses, Elements, News, Contact) are visible
+- [ ] Hero section with background image — a heading containing "Get your" and "Education today!" is displayed
+- [ ] HeroBoxes with three info cards — three info boxes are displayed with titles "Online Courses", "Our Library", and "Our Teachers"
+- [ ] PopularCourses section with three course cards — a heading "Popular Courses" is displayed
+- [ ] Register section with promo and search form — text containing "Register now" and "50% discount" is displayed
+- [ ] Services section with six service cards — a heading "Our Services" is displayed
+- [ ] Testimonials section — a heading "What our students say" is displayed
+- [ ] Events section with three event items — a heading "Upcoming Events" is displayed

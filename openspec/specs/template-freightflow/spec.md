@@ -94,3 +94,10 @@ Recreation of ColorLib **Thelogistico** (`https://colorlib.com/wp/template/thelo
 - [ ] App builds successfully (`npm run build`)
 - [ ] Component Dock footer link present
 - [ ] No mention of ColorLib in app code
+- [ ] Navbar & Navigation — they should see the FreightFlow logo, navigation links (Home, About, Service, Blog, Contact), phone number (`+1 (800) 555-0199`), and social icons
+- [ ] Hero Section & Quick Quote — it displays the heading "A TRULY GLOBAL SERVICE PROVIDER", subtitle "We make your cargo transport simple", an "Explore Us" CTA button, and a quick quote / distance…
+- [ ] Core Services / Solutions Grid — they see 3-4 key freight services (Road Transport, Air Freight, Sea Cargo, Global Logistics Solutions) with interactive hover states and detail links
+- [ ] About & Interactive Tabs — the corresponding logistics capability details are displayed
+- [ ] Control & Milestone Features — it showcases step-by-step logistics solutions ("01 Logistic Solution", "02 Supply Chain Control") with clear CTAs
+- [ ] Client Testimonials — client quotes and founder names are displayed clearly
+- [ ] Latest News & Blog — articles such as "Freight Transport in Alaska" and "Perishable Logistics: Cold Chain" are displayed with dates and read-more links

@@ -106,3 +106,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Split-panel card layout — the hero image panel occupies the left half of the card
+- [ ] Hero image panel — a placeholder image is displayed
+- [ ] Registration form fields — the heading "Registration Form" is visible
+- [ ] Form submission with validation — a thank-you confirmation message is shown
+- [ ] Background — a light gray background is visible behind the card

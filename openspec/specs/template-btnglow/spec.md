@@ -84,3 +84,10 @@ Recreation of ColorLib **Bootstrap Buttons V12** (`https://colorlib.com/wp/templ
 - [ ] 100% test coverage on all components
 - [ ] Footer links https://www.componentdock.com/
 - [ ] No mention of ColorLib in app code
+- [ ] 1. Header & Navigation — the header displays title "Button #12" and navigation links
+- [ ] 2. Pick Your Style Section — default, outline, and rounded style variations are correctly rendered
+- [ ] 3. Pick Your Size Section — buttons are displayed in small, regular, and large dimension tiers
+- [ ] 4. Pick Your Color Section — all 7 semantic color variants appear in both solid and outline styles
+- [ ] 5. Buttons with Icons & Social Buttons — social buttons display respective icons and counts (e.g. 8.2k)
+- [ ] 6. Links, Disabled Buttons & Dropdowns — disabled buttons are non-clickable and dropdowns toggle correctly
+- [ ] 7. Checkboxes, Radios & Block Buttons — colored radios and block-level buttons render properly

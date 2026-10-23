@@ -63,3 +63,6 @@ Every template must include a branded footer linking to Component Dock.
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links to Component Dock
 - [ ] CNAME and homepage configured correctly
+- [ ] Header Title — the main title "FoldKit Widget" and subtitle are visible with correct background and typography
+- [ ] Accordion Sections (Profile, Messages, Settings, Logout) — it expands to reveal nested links and collapses any previously open section
+- [ ] Accessibility — the corresponding section expands or collapses

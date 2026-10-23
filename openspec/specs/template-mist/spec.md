@@ -108,3 +108,8 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Mist" and a "Home" link pointing to the page root
+- [ ] Error section — it SHALL contain a level-1 heading "404" and a level-2 heading "Oops, The Page you are looking for can't be found!"
+- [ ] Search bar — it SHALL show a search input with an accessible label and a submit button
+- [ ] Footer — it SHALL show the site name "Mist" and a tagline
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the error section in the main landmark, and the Footer in the contentinfo landmark

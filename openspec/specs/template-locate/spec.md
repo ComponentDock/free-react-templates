@@ -170,3 +170,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with logo and navigation links — the navbar shows "Scout" as the logo text
+- [ ] Hero section with search form — the hero heading contains "Find Nearby"
+- [ ] Most Visited Places section — 6 listing cards are displayed
+- [ ] Popular Categories section — 6 category tiles are shown (Hotels, Events, Spa, Stores, Restaurants, Other)
+- [ ] Why Us accordion section — the answer becomes visible
+- [ ] How It Works section — 3 step cards are shown with numbers 1, 2, 3
+- [ ] Testimonials carousel — the next testimonial is displayed
+- [ ] Blog / Tips section — 3 blog articles are shown with title, author, date, and excerpt
+- [ ] CTA banner — the CTA banner shows "Let's get started" heading and "Sign Up" button
+- [ ] Typed text animation — characters are typed one by one with a delay

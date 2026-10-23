@@ -200,3 +200,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and booking CTA — the logo "Skyline" is visible
+- [ ] Hero section with background and heading — a heading containing "Skyline" is visible
+- [ ] Menu section with categories and prices — the heading "Our Menu" is visible
+- [ ] Gallery section with image grid — the heading "Gallery" is visible
+- [ ] Reservation form on dark background — input fields for Event Name, Event Date, Event Time, Number of Guests,
+- [ ] Chef's Quotes testimonial section — a heading containing "Chef's" and "Quotes" is visible
+- [ ] Featured dishes call-to-action — the heading "Featured Dishes" is visible
+- [ ] Contact section with address and map — the address "432 Wyandotte Ave, Lakewood, OH 44107" is visible

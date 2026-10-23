@@ -86,3 +86,8 @@ New app name: `reverb`. Domain category: Business agency / Creative portfolio.
 - [ ] Production build passes successfully via `npm run build`
 - [ ] Footer links to `https://www.componentdock.com/` ("Component Dock")
 - [ ] `public/CNAME` contains `reverb.free.componentdock.com`
+- [ ] Navbar — they should see the brand title "Reverb"
+- [ ] Hero Section — they should see the heading "We are pretty Awesome" with dynamic typed words
+- [ ] About Section — they should see the subheading "About us" and heading "We are here to help grow your business"
+- [ ] Services Section — they should see "What We Offer" and service cards (Web Design, Graphic Design, Web/Mobile Application, Brand Identity)
+- [ ] Stats Counter — they should see project counts, happy clients, leadership, and years of experience

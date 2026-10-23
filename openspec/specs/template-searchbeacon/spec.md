@@ -104,3 +104,5 @@ verify before building from it): `#e07057`.
 - [ ] No ColorLib references in planned app code
 - [ ] Footer links to Component Dock
 - [ ] Placeholder images use picsum.photos
+- [ ] SearchBar component — Renders a search input with placeholder "Search..."
+- [ ] App — Renders the heading "SearchBeacon"

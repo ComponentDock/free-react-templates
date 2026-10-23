@@ -214,3 +214,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Gaas" and links to Home, Features, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Mass People Oriented Software"
+- [ ] Features section — it SHALL contain a heading "A Complete Software Based Website"
+- [ ] Feature tiles — it SHALL show tiles titled "Design Trends", "Development", and "Delivery"
+- [ ] Split sections — it SHALL contain the heading "We Believe that Inner beauty Lasts Long"
+- [ ] Features specs — it SHALL contain the heading "Amazing Features That make it Awesome!"
+- [ ] Pricing plans — it SHALL show plans titled "Real Basic", "Real Standard", and "Real Ultimate"
+- [ ] Client brands — it SHALL contain the heading "What Our Clients Say About Us"
+- [ ] Impress band — it SHALL contain the heading "Got Impressed to our features?"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

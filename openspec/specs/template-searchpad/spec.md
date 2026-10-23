@@ -128,3 +128,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page layout and background — the viewport background color is light blue
+- [ ] Two stacked search inputs — two search input fields are visible
+- [ ] First input is expandable and round — the first input is 60px wide with rounded corners (pill shape)
+- [ ] Second input is expandable and square — the second input is 60px wide with minimal border radius
+- [ ] Form submission — the page does not reload
+- [ ] Accessibility — each input has a visible label or aria-label

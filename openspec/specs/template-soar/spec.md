@@ -265,3 +265,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Soar" and links to Home, Domain, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Design. Development. Hosting."
+- [ ] Domain search section — it SHALL contain a heading "Get A Domain Name"
+- [ ] Services section — it SHALL contain a heading "Why choose us"
+- [ ] Pricing section — it SHALL contain a heading "Our Best Pricing"
+- [ ] Fun facts section — it SHALL contain a heading "Some fun facts"
+- [ ] Testimonials section — it SHALL contain a heading "Our satisfied customer says"
+- [ ] How it works section — it SHALL contain a heading "How it works"
+- [ ] Newsletter section — it SHALL contain a heading "Subscribe to our Newsletter"
+- [ ] Blog section — it SHALL contain a heading "Recent Blog"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

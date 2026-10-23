@@ -138,3 +138,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top Bar — they see a FAQ link, "Request an Appointment" link, and emergency phone number "+563 47558 623"
+- [ ] Header Navigation — they see the CarePoint logo with "Health Care Center" subtitle and navigation links (Home, About us, Services, News, Contact)
+- [ ] Hero Section — they see "Medicine made with care" as the main heading
+- [ ] Info Boxes — they see three cards with Working Hours, Appointments, and Emergency Cases content
+- [ ] About Section — they see "A great medical team to help your needs" heading and descriptive text
+- [ ] Departments Section — they see three department cards (Plastic Surgery, Gastroenterology, Dentistry) with doctor names and a read more card
+- [ ] Services Section — they see six services (Free Checkups, Screening Exams, RMI Services, Dentistry, Neonatology, Biochemistry) with icons and descriptions
+- [ ] CTA Section — they see "Need a personal health plan?" heading and a "Request a Plan" button
+- [ ] Responsive Layout — the layout adapts to mobile viewport width

@@ -166,3 +166,11 @@ Recreation of ColorLib **Karma** — a fashion/e-commerce single-page template w
 - [ ] Placeholder images use `https://picsum.photos/seed/cartnova-<n>/<w>/<h>`
 - [ ] Google Fonts loaded via index.html link (Poppins + Roboto)
 - [ ] Buttons use amber-to-orange gradient with pill shape (radius 50px)
+- [ ] Header — the header is visible with logo on the left
+- [ ] Banner — a heading "New Collection!" is visible
+- [ ] Features — 4 feature cards are displayed in a row
+- [ ] Category — an asymmetric grid of 4 category cards is displayed
+- [ ] Product Carousel — tabs for Latest, Best Seller, and Featured are displayed
+- [ ] Exclusive Deal — a countdown timer displays Days, Hours, Minutes, Seconds
+- [ ] Brand Logos — 5 brand logo images are shown in a horizontal row
+- [ ] Related Products — a carousel of product cards is shown

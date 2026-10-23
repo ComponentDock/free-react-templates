@@ -193,3 +193,12 @@ and a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Hound" and links to the main sections
+- [ ] Hero slider — it SHALL contain a level-1 heading matching "We Love Pets"
+- [ ] Dog life intro — it SHALL show the heading "It's a Dog Life"
+- [ ] About section — it SHALL show the heading "Every Dog Needs A Good Owner"
+- [ ] Team section — it SHALL show member cards for Mellisa Howard, Mike Richardson, Charles White, and Laura Smith
+- [ ] Dog breed collections — it SHALL show the heading "Dog Breed Collections"
+- [ ] Recent blog posts — it SHALL show the heading "Recent Blog Post"
+- [ ] Footer — it SHALL show the three columns (About The Breed, Contact Info, Quick Links)
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

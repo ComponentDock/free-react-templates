@@ -123,3 +123,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar is visible with brand name, navigation links to each section, a theme toggle button, and a CTA button
+- [ ] Hero Section — the hero section shows the main heading, subtitle text, and at least one action button
+- [ ] Vortex Gradient Buttons — at least 8 gradient buttons are displayed with distinct color variants
+- [ ] Neon and Glow Buttons — neon-bordered buttons with glow effects are displayed
+- [ ] 3D Depth Buttons — buttons with shadow-based 3D elevation are displayed
+- [ ] Interactive Playground — input controls for text, variant selector, size selector, and rounded corner toggle are present
+- [ ] 100% Test Coverage — all coverage metrics are at 100%
+- [ ] Build and Typecheck — no type errors are reported

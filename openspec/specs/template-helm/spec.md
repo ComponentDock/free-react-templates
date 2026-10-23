@@ -202,3 +202,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays all navigation links — I see "Home", "Technology", and "Careers" links
+- [ ] Hero displays the main headline — I see the heading "We can make it together"
+- [ ] What We Do section shows three feature cards — I see "What We do" label and a heading
+- [ ] Features section shows two split rows — I see "01." and "02."
+- [ ] Future Design section shows four feature boxes — I see "Creative Technology", "World-class Quality" (twice), and "Deep Resources"
+- [ ] Testimonial section displays a quote — I see the quote text and attribution "Mike Dorney — CEO and Co-Founder"
+- [ ] Blog section shows four post cards — I see four cards each with an image, date, title, and "Read More" link

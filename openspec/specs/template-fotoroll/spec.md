@@ -104,3 +104,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders all navigation links — I see the "Foto." logo
+- [ ] Mobile menu opens and closes — I see the mobile navigation
+- [ ] Hero slider auto-advances — I see "Mountain Vistas" heading
+- [ ] Hero slider manual navigation — I see "Urban Streets" heading
+- [ ] Portfolio grid displays images — I see 12 portfolio images
+- [ ] Blog section shows posts — I see 3 blog post cards with titles and dates

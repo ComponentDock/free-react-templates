@@ -164,3 +164,10 @@ The app code SHALL NOT contain any references to ColorLib.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Card layout — a centered card is visible
+- [ ] Form heading — the heading "Set The Event" appears in pink/coral serif font
+- [ ] Price display — "Price" label is shown with value "$270"
+- [ ] People selector — "People" label is shown with a dropdown selector defaulting to "1"
+- [ ] Form inputs — a "Name" text input is shown with an underline-only border style
+- [ ] Submit button — a "Send your booking" button is shown
+- [ ] Contact info overlay — the right panel shows an overlay at the bottom

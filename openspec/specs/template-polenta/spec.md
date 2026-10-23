@@ -130,3 +130,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar with two-tier layout — THEN the restaurant name "Polenta" is displayed
+- [ ] Hero section with parallax background — THEN the heading "Welcome To Polenta Restaurant" is displayed
+- [ ] About section with gallery — THEN the "About Us" subtitle and "The Polenta Restaurant" title are displayed
+- [ ] Menu section with tabbed interface — THEN the Dinner tab is active
+- [ ] Reservation form with opening times — THEN a confirmation message is displayed
+- [ ] Events section with event cards — THEN 4 event cards are rendered
+- [ ] Contact section with info and social links — THEN the "Get In Touch" heading is displayed

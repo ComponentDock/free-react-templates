@@ -80,3 +80,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders with registration form — the heading "Register" is visible
+- [ ] User interactions work correctly — the email field contains "test@example.com"
+- [ ] Social registration buttons are present — "Register with Facebook" button is visible

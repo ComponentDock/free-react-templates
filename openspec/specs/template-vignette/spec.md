@@ -134,3 +134,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with navigation and cart — the header shows the logo, navigation links, social icons, cart badge, and phone number
+- [ ] Promotional discount banner — three promotional messages are displayed side by side
+- [ ] Hero carousel slider — the first slide is shown with headline and CTA button
+- [ ] Top categories section — two category cards are shown with titles and CTA buttons
+- [ ] New arrivals product grid with filters — all 6 products are visible
+- [ ] Special offer section — the offer section shows product name, original price (struck through), sale price, and a CTA button
+- [ ] Testimonials carousel — the first testimonial quote, author name, and location are shown

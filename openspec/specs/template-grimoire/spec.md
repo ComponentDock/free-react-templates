@@ -123,3 +123,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Renders heading and first step on load — "Sign up to great new account" heading is visible
+- [ ] Step 1 contains account form fields — username input is visible
+- [ ] Can navigate to step 2 — "Personal Information" step title becomes visible
+- [ ] Step 2 contains personal form fields — full name input is visible
+- [ ] Can navigate to step 3 — "Payment Details" step title becomes visible
+- [ ] Step 3 contains payment form fields — credit card input is visible
+- [ ] Can navigate back to previous step — step 1 content becomes visible again

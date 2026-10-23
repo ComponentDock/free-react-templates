@@ -208,3 +208,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — Scenario: Renders logo and navigation links
+- [ ] HeroBanner — Scenario: Displays headline and CTA buttons
+- [ ] AboutSection — Scenario: Shows "About Us" heading and body text
+- [ ] FeaturedFood — Scenario: Shows food cards with name, price, and star ratings
+- [ ] OfferBanner — Scenario: Displays offer text "50% OFF" and Read More button
+- [ ] FoodMenu — Scenario: Renders 8 menu items with name and price
+- [ ] CtaBanner — Scenario: Shows CTA text and Reservation button
+- [ ] ChefSection — Scenario: Shows 3 chef cards with name and title
+- [ ] ReservationForm — Scenario: Renders form fields (name, email, phone, date, people)
+- [ ] BlogSection — Scenario: Shows 3 blog cards with title and date
+- [ ] App — Scenario: Composes all sections and sets document title

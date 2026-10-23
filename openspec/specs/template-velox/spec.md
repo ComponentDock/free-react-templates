@@ -124,3 +124,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] G1: Renders all sections — GIVEN** the page loads, when I scroll from top to bottom, then I see Navbar, Hero, About, Features, Projects, Testimonials, Blog, and Footer — in that order
+- [ ] G2: Navbar links — GIVEN** the page loads, when I inspect the navbar, then I see links for Home, About, Services, Portfolio, Blog, Contact
+- [ ] G3: Hero content — GIVEN** the page loads, when I read the hero section, then I see the subtitle "This is me", heading "Travor James", a description paragraph, and a "Discover Now" button
+- [ ] G4: About stats — GIVEN** the page loads, when I inspect the About section, then I see three stat items: "$2.5M Total Donation", "1465 Total Projects", "3965 Total Volunteers"
+- [ ] G5: Skill bars — GIVEN** the page loads, when I inspect the About section, then I see 5 skill bars with labels and percentage values
+- [ ] G6: Feature cards — GIVEN** the page loads, when I inspect the Features section, then I see 6 service cards (Architecture, Interior Design, Concept Design — each appearing twice)
+- [ ] G7: Project filter tabs — GIVEN** the page loads, when I inspect the Projects section, then I see filter tabs: All, Branding, Creative Work, Web Design
+- [ ] G8: Project grid — GIVEN** the page loads, when I inspect the Projects section, then I see 6 project cards with images and titles
+- [ ] G9: Testimonials — GIVEN** the page loads, when I inspect the Testimonials section, then I see testimonial cards with text, author names, and star ratings
+- [ ] G10: Blog posts — GIVEN** the page loads, when I inspect the Blog section, then I see 3 blog cards with images, dates, titles, and excerpts
+- [ ] G12: Responsive layout — GIVEN** the viewport is mobile (375px), when I view each section, then content stacks vertically and remains readable

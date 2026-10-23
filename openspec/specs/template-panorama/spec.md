@@ -133,3 +133,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo and navigation links — I see a link "Panorama" pointing to #home
+- [ ] Hero section with background image and CTA — I see a heading "We Are Panorama"
+- [ ] About section with overlapping images — I see a heading "Who Are You Guys"
+- [ ] Stats counter section — I see text "2393" and "Completed Projects"
+- [ ] Services grid with 6 cards — I see heading "Services"
+- [ ] Filterable portfolio grid — I see 9 portfolio images
+- [ ] Video CTA section — I see heading "We Are Web Agency"
+- [ ] Blog posts section — I see heading "Blog Posts"

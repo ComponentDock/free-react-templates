@@ -127,3 +127,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with mobile toggle — the navbar displays "Talentflow" logo and links for Home, About, Services, Team, Blog, Contact
+- [ ] Hero section with CTA — the headline reads "We Are Your Partners in Human Resource" and a "Get Started" button is present
+- [ ] Features section with three cards — three cards are rendered with titles "Corporate Collaboration", "Strategic Partners", and "Infinite Posibilities"
+- [ ] About section with image and accordion — the item content expands and clicking it again collapses it
+- [ ] Stats counters section — values "99,399", "199", and "24" are displayed with their labels
+- [ ] Team section with leadership cards — three cards show names "Bob Miller", "Jean Smith", and "David Wilson" with role "CEO and Co-Founder"
+- [ ] Testimonials section — a blockquote with the text "Far far away, behind the word mountains" is displayed
+- [ ] Blog section with post cards — four cards show titles "When she reached the first", "Duden flows by their place", "Italic Mountains", and "Behind the word mountains"

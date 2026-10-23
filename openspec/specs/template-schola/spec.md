@@ -271,3 +271,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Schola" and links to Courses, Categories, Instructors, Pricing, and About
+- [ ] Hero section — it SHALL contain a level-1 heading "Forge Your Future with Expert-Led Courses"
+- [ ] Categories section — it SHALL contain a heading "Browse by Category"
+- [ ] Featured courses — it SHALL contain a heading "Featured Courses"
+- [ ] Features section — it SHALL contain a heading "Everything You Need to Succeed"
+- [ ] Instructors section — it SHALL contain a heading "Learn from Industry Leaders"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Learners Say"
+- [ ] Pricing section — it SHALL contain a heading "Choose Your Learning Path"
+- [ ] CTA band — it SHALL contain a heading "Ready to Start Your Learning Journey?"
+- [ ] Footer — it SHALL show link columns (Categories, Company, Support, Legal) and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

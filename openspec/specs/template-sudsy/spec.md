@@ -144,3 +144,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays logo, navigation, and phone CTA — a sticky navbar is visible at the top
+- [ ] Hero section renders with background image and overlay — a full-width hero section is displayed
+- [ ] About section displays overlapping layout — the about section has a light blue (#EEF6FF) background
+- [ ] Pricing cards display services and prices — 3 pricing cards are shown in a row
+- [ ] Testimonials slider displays customer quotes — a testimonial slider is present
+- [ ] Services section displays four features — 4 service items are shown
+- [ ] Video/CTA section has dark background — a dark background section is displayed

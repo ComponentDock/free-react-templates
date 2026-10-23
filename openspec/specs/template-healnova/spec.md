@@ -224,3 +224,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the banner landmark contains a link with text "Healnova"
+- [ ] Hero section — the main landmark contains a heading "We Provide High Solutions for Your Health"
+- [ ] Quick contact bar — "Give us a call" and a phone number are visible
+- [ ] About section — "We Are Happy To Serve You!" heading is visible
+- [ ] Mission section — "Our Mission" subheading is visible
+- [ ] Services section — "Health Services We Provided" heading is visible
+- [ ] Team section — "Our Dedicated Doctors" heading is visible
+- [ ] Testimonials section — "Happy Patients" heading is visible
+- [ ] Blog section — "News & Updates" heading is visible

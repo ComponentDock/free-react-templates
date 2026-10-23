@@ -135,3 +135,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — GIVEN** the page loads, When I view the header, Then the logo "Residium" is visible
+- [ ] HeroSlider — GIVEN** the page loads, When I view the hero, Then the heading "We Create your dream apartment" is visible
+- [ ] About — GIVEN** the page loads, When I view the about section, Then "10 Years of Experience" badge is visible
+- [ ] Facilities — GIVEN** the page loads, When I view facilities, Then 3 facility cards are rendered
+- [ ] Apartments — GIVEN** the page loads, When I view apartments, Then at least 3 apartment cards are rendered
+- [ ] Testimonials — GIVEN** the page loads, When I view testimonials, Then at least 1 testimonial is visible
+- [ ] CTA — GIVEN** the page loads, When I view the CTA, Then "Get a free quotation Today!" is visible
+- [ ] LatestNews — GIVEN** the page loads, When I view news, Then at least 2 news cards are rendered

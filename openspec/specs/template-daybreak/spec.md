@@ -100,3 +100,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and search toggle — a banner landmark is present
+- [ ] Portfolio filter bar — the "All" filter button has aria-pressed="true"
+- [ ] Portfolio grid with filterable items — 6 portfolio items are visible
+- [ ] Two-column content split — a heading "The Story" is present

@@ -242,3 +242,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Fixly" and links to
+- [ ] Hero section — it SHALL contain a level-1 heading "Looking for the Right
+- [ ] Why choose us — it SHALL contain a heading "Why Choose Us?"
+- [ ] Services section — it SHALL show services including General Auto Repair, Brake
+- [ ] Steps section — it SHALL contain a heading "Get Car Repair In Easy Steps"
+- [ ] Statistics section — it SHALL contain a heading "Technical Statistics"
+- [ ] Mechanics section — it SHALL contain a heading "Expert Mechanics"
+- [ ] Testimonials section — it SHALL contain a heading "Happy Customers"
+- [ ] Blog section — it SHALL contain a heading "Recent From Blog"
+- [ ] Footer — it SHALL show link columns (Services, Recent Posts) and a
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -114,3 +114,9 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 - [ ] All 7 Gherkin features fully implemented and tested.
 - [ ] Footer includes mandatory Component Dock link.
 - [ ] No mention of ColorLib in app source code.
+- [ ] Responsive Navigation Bar — it displays the brand logo, links for Home, Features, Gallery, Testimonials, and Contact, and a "Get Started" CTA button
+- [ ] Hero Carousel Showcase — the carousel smoothly transitions to slide 2 with updated headline and CTA
+- [ ] Interactive Feature Cards Slider — each card shows an icon, title, description, and hover animation
+- [ ] Testimonial Carousel — the review quote, author avatar, and title update instantly
+- [ ] Image Gallery Carousel — responsive images load cleanly via Picsum placeholders
+- [ ] Newsletter Subscription — a success confirmation message appears

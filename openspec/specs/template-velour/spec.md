@@ -368,4 +368,14 @@ The system SHALL expose accessible semantics.
       shows sliding action panel, blog cards scale images on hover,
       newsletter form renders, footer links are interactive.
 - [ ] Responsive check at 768px (stacked columns, hamburger nav, no
+- [ ] Page shell — the page SHALL render in this order:
+- [ ] Header — a grey `#f6f6f6` bar SHALL display at the top
+- [ ] Hero banner — it SHALL have a background image covering the full section
+- [ ] Feature guarantee cards — four cards SHALL display in a 4-column grid
+- [ ] Featured products — a section title ("featured product for women") SHALL appear
+- [ ] Offer/sale section — it SHALL have a background image (cover, centered)
+- [ ] New products split layout — the left column SHALL show a grey `#f6f6f6` block with
+- [ ] Inspired products grid — a section title ("inspired products") SHALL appear
+- [ ] Blog posts — a section title ("latest blog") SHALL appear
+- [ ] Accessibility and semantics — the header SHALL use `<header>` with `<nav>` for navigation
       horizontal overflow).

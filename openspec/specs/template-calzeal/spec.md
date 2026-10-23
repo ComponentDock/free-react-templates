@@ -47,3 +47,5 @@ Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-1
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links Component Dock
 - [ ] Surge CNAME and homepage configured correctly
+- [ ] Interactive Datepicker Form — The main section must feature a clean form group with a "Select Date" label and an interactive date input / calendar popover widget
+- [ ] Verification & Responsive Layout — Responsive design adapting cleanly on mobile, tablet, and desktop viewports

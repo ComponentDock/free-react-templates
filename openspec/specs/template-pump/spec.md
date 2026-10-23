@@ -219,3 +219,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Pump" and a "Home" link pointing to the page root
+- [ ] Welcome hero — it SHALL show a level-1 headline (e.g. "Fuel Your Body Fitness", "Get Your Body Fit")
+- [ ] What We Do — it SHALL show the heading "What We Do?"
+- [ ] Our Coaches — it SHALL show the heading "Our Coaches"
+- [ ] Workout Classes — it SHALL show the heading "Workout Classes"
+- [ ] Membership Plans — it SHALL show the heading "Membership Plans"
+- [ ] Testimony band — it SHALL show the heading "Successful Stories"
+- [ ] Recent Blog — it SHALL show the heading "Recent Blog"
+- [ ] Footer — it SHALL show the site name "Pump"

@@ -166,3 +166,12 @@ https://www.componentdock.com/ branded as "Component Dock".
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — it SHALL show "Craft" as the site name
+- [ ] Hero section — I SHALL see the subheading "Hello! This is Craft"
+- [ ] Counter section — I SHALL see 4 counter items with numbers and labels
+- [ ] About section — I SHALL see an "About Me" heading
+- [ ] Skills section — I SHALL see at least 4 skill bars with labels and percentages
+- [ ] Services section — I SHALL see at least 3 service items with icons, titles, and descriptions
+- [ ] Projects section — I SHALL see at least 4 project items with images and titles
+- [ ] Blog section — I SHALL see at least 3 blog post cards with images, titles, and dates
+- [ ] Contact section — I SHALL see name, email, subject, and message fields + submit button

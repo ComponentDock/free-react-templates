@@ -127,3 +127,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] [ ] Renders heading with template name — Given** the page is rendered
+- [ ] [ ] Renders search input with placeholder — Given** the page is rendered
+- [ ] [ ] Search button on the right side of the input — Given** the page is rendered
+- [ ] [ ] Typing updates the search input — Given** the page is rendered
+- [ ] [ ] Form submission triggers onSubmit callback — Given** the page is rendered
+- [ ] [ ] Search icon button focuses the input — Given** the page is rendered
+- [ ] [ ] Footer renders current year — Given** the page is rendered

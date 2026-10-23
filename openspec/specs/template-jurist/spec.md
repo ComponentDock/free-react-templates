@@ -114,3 +114,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation links work — links for Home, About, Practice Area, Case Studies, and Contact are visible
+- [ ] Mobile menu toggles — the mobile menu opens with all navigation links
+- [ ] Consultation form accepts input — the field displays the entered text
+- [ ] FAQ accordion toggles — the answer becomes visible

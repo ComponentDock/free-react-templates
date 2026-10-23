@@ -217,3 +217,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Clipper" and a "Home" link pointing to the page root
+- [ ] Hero — it SHALL show a background image and the site wordmark "Clipper"
+- [ ] Quick info strip — it SHALL show a phone number item, a location item, and an hours item
+- [ ] Services — it SHALL show the heading "Services"
+- [ ] Barber features — it SHALL show the heading "Barber Features"
+- [ ] CTA band — it SHALL show a discount message (e.g. "Get 25% discount")
+- [ ] Good Looking Style — it SHALL show the heading "Good Looking Style"
+- [ ] Footer — it SHALL show the site name "Clipper" and quick links
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

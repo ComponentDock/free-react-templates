@@ -193,3 +193,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar with utility links and social icons — a thin dark navy top bar is displayed
+- [ ] Transparent navbar with mobile menu — the navbar is transparent and overlaid on the hero
+- [ ] Full-viewport hero with art background — a full-viewport hero section shows with a painting/art background image and dark overlay
+- [ ] Three info cards with icons — three cards are displayed in a row on white background
+- [ ] Decorative quote section — a large decorative quote text is displayed
+- [ ] Image gallery with lightbox — a heading "Our Gallery" is shown
+- [ ] Upcoming events section — a heading "Upcoming Events" is shown
+- [ ] Ticket pricing section — ticket information or pricing cards are displayed with prices and features
+- [ ] Blog post previews — a heading "Latest News" is shown
+- [ ] Contact form and map placeholder — a contact form with fields (name, email, subject, message) is displayed

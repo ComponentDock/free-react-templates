@@ -87,3 +87,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Render page title — the heading text "#09 — Bootstrap 4 Buttons" is visible
+- [ ] Render size buttons — the labels "Large", "Medium", and "Small" are visible
+- [ ] Render color buttons — 18 buttons are rendered
+- [ ] Render full-width block button — the text "Full width button" is visible

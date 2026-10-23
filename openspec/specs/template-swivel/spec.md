@@ -72,3 +72,7 @@ New original name: `swivel` (`apps/swivel`).
 - [ ] Responsive design verified across viewports
 - [ ] Footer links Component Dock correctly
 - [ ] No ColorLib provenance in app source code
+- [ ] Navigation & Header — the header displays the brand title "Swivel", navigation items (Home, Featured, Categories, About, Contact), and action buttons
+- [ ] Hero & Featured Carousel Section — the active featured post updates smoothly displaying title, excerpt, author, date, and CTA
+- [ ] Posts Grid & Categories Section — the displayed post cards filter accordingly
+- [ ] Newsletter Subscription Section — a success confirmation message is displayed

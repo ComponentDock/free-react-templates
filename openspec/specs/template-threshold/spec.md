@@ -132,3 +132,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Split-screen layout — the left form panel and right image panel are both visible side by side
+- [ ] Login form fields — the field accepts and displays the typed text
+- [ ] Remember me and forgot password — the checkbox state toggles
+- [ ] Submit button — a "Log In" button is visible and can be clicked to submit the form
+- [ ] Form submission — the form submission is handled without page navigation
+- [ ] Heading and subtitle — the heading "Welcome Back" is displayed
+- [ ] Background image panel — a decorative image panel is visible on the right side
+- [ ] Document title — document.title equals "Threshold — Login Form Template"

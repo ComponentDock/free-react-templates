@@ -146,3 +146,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Two calendars render side by side — I see two calendar panels
+- [ ] Calendar navigation is independent — the left calendar advances one month
+- [ ] Month navigation via chevrons — the calendar shows July 2026
+- [ ] Today is visually highlighted — it has a purple background
+- [ ] Correct grid for each month — there are 3 blank cells before day 1
+- [ ] Weekday header row — I see Sun, Mon, Tue, Wed, Thu, Fri, Sat in order
+- [ ] Accessible navigation buttons — each navigation button has an aria-label

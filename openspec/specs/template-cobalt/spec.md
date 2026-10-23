@@ -207,3 +207,14 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Cobalt" and links to Home, Features, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Promote your app with Cobalt"
+- [ ] Feature split sections — it SHALL contain a heading, an image, and a description
+- [ ] How-it-works section — it SHALL show steps numbered 01, 02, and 03 titled Sign Up for free, Make your profile, and Enjoy the app
+- [ ] Features band — it SHALL contain a heading "Features that give you real feel"
+- [ ] Easy setup section — it SHALL contain a heading "Easy setup and management"
+- [ ] Testimonials section — it SHALL contain a heading "Review from our regular users"
+- [ ] Pricing section — it SHALL contain a heading "Unlock full Power"
+- [ ] Call-to-action band — it SHALL contain a heading "Get start from now and increase productivity"
+- [ ] Footer — it SHALL show the site name "Cobalt" and an about blurb
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

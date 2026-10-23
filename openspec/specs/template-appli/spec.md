@@ -248,3 +248,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Appli" and links to the main sections
+- [ ] Hero — the hero SHALL show the headline "Stay connected together in your own business network"
+- [ ] Brand strip — a strip of six client wordmarks SHALL be visible with a top border
+- [ ] Services — the section SHALL show the heading and its supporting paragraph
+- [ ] About sections — the section SHALL show the heading "You have the power to personalize your website coding."
+- [ ] Video band — a play button with the accessible label "Play video" SHALL be visible
+- [ ] Testimonials — the section SHALL show the heading and its supporting paragraph
+- [ ] CTA band — the band SHALL show the heading, copy, and a "Browse Job" button
+- [ ] Footer — the footer SHALL show the brand blurb and three social links
+- [ ] Page composition — the document title SHALL be "Appli — App Landing Page Template"

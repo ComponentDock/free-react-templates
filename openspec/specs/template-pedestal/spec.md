@@ -174,3 +174,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Footer renders with correct semantic structure — a `<footer>` element with role="contentinfo" is present
+- [ ] About Us column renders with contact info and subscribe form — the "About Us" heading is displayed
+- [ ] Latest Tweet column renders with 3 tweet items — the "Latest Tweet" heading is displayed
+- [ ] Instagram column renders with 4 placeholder images — the "Instagram" heading is displayed
+- [ ] Design tokens are applied correctly — the footer element uses Poppins font family

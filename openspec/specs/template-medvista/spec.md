@@ -261,3 +261,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All 11 sections documented in Gherkin scenarios
 - [ ] New name `medvista` has no collision with existing apps/specs
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar — a black top bar is visible at the very top
+- [ ] Navbar — the navbar shows the brand "Medvista"
+- [ ] Hero — a full-height hero section is displayed with a background image
+- [ ] About — a left column shows a background image
+- [ ] Services — a light (#f8f9fa) background section is displayed
+- [ ] CTA Banner — a full-width section with a background image and dark overlay is displayed
+- [ ] Departments — a full-width container is displayed with no gutters
+- [ ] Doctors — it shows the heading "Our Qualified Doctors"
+- [ ] Blog — a light (#f8f9fa) background section is displayed
+- [ ] Testimonials — a full-width section with background image and dark overlay is displayed
+- [ ] Contact — it shows "Contact Us" heading

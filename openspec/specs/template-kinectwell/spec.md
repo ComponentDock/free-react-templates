@@ -148,3 +148,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — the header displays the site name "Kinectwell" with a logo badge
+- [ ] Hero Section — the hero displays the eyebrow "Welcome to Kinectwell"
+- [ ] About Section — the heading "About Us" is displayed
+- [ ] Services Section — the heading "Our Services" is displayed
+- [ ] Why Choose Us Section — the heading "Why Choose Us" is displayed
+- [ ] Appointment CTA — the heading "Book Your Appointment Today" is displayed on a green background
+- [ ] Testimonials Section — the heading "What Our Patients Say" is displayed
+- [ ] Skip Link Accessibility — a "Skip to main content" link targeting #main exists in the DOM
+- [ ] Document Title — the document title is "Kinectwell — Physical Therapy Template"

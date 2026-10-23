@@ -116,3 +116,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links `https://www.componentdock.com/`
 - [ ] No `colorlib` references in app code
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sticky Navigation Header — the header stays fixed at the top with clear navigation links
+- [ ] Hero Banner — they see a clear value proposition and primary action button
+- [ ] Interactive Accordion & FAQ Section — the corresponding content expands while other items remain collapsed
+- [ ] Feature Highlights Grid — they see clean cards with icons, titles, and descriptions
+- [ ] Testimonials Section — they see professional quotes and user attribution
+- [ ] Newsletter Signup Form — a success confirmation message is displayed

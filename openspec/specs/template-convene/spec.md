@@ -130,3 +130,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to Component Dock
 - [ ] `public/CNAME` is `convene.free.componentdock.com` and `homepage` matches
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero And Live Countdown — a `banner` landmark shows the event headline and `Buy Ticket
+- [ ] About And Speakers — each card exposes the speaker's name and role text
+- [ ] Schedule And Pricing — three cards are visible with the prices 79, 129 and 199
+- [ ] Blog, Newsletter And Contact — an inline success message replaces the form controls

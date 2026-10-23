@@ -163,3 +163,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays navigation and CTA — I see a "Gymcore" logo link
+- [ ] Hero section shows fitness headline — I see "Fitness Elements" tag text
+- [ ] About section describes the gym — I see "Story About Us" heading
+- [ ] Services section lists offerings — I see service items for "Strategies", "Yoga", "Workout", "Weight Loss"
+- [ ] Classes section shows available classes — I see "Unlimited Classes" heading
+- [ ] Team section shows trainers — I see "Expert Trainers" heading
+- [ ] Testimonials section shows member reviews — I see "What Our Members Say" heading
+- [ ] Banner section displays contact CTA — I see "Contact Us" text
+- [ ] Membership section shows pricing plans — I see "Membership Plans" heading
+- [ ] Register form collects user info — I see "Register Now" heading
+- [ ] Blog section shows latest posts — I see "Latest Blog" heading

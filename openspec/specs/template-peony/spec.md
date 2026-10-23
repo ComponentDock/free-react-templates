@@ -243,3 +243,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Peony" and a "Home" link pointing to the page root
+- [ ] Welcome hero — it SHALL show a level-1 headline (e.g. "Get Pretty Look" / "Beauty Salon")
+- [ ] About section — it SHALL show the heading "A World Class Beauty Salon Company"
+- [ ] Services section — it SHALL show the heading "Services"
+- [ ] Booking band — it SHALL show the heading "Make an Appointment"
+- [ ] Stylist team — it SHALL show the heading "Stylist"
+- [ ] Gallery — it SHALL show the heading "Working on a Salon"
+- [ ] Pricing — it SHALL show the heading "Our Prices"
+- [ ] Testimony band — it SHALL show the heading "Happy Customer"
+- [ ] Footer — it SHALL show the site name "Peony"

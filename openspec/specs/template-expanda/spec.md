@@ -74,3 +74,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Expand Manage Section — the Manage section is expanded by default showing items: 01 Account, 02 Settings, 03 Profile
+- [ ] Toggle Manage Section Off — the Manage section collapses and hides its sub-items
+- [ ] Expand Location Section — the Location section expands to show Regional Headquarters details
+- [ ] Toggle Location Section Off — the Location section collapses
+- [ ] Expand Hobbies Section — the Hobbies section expands to show Photography & Hiking interests
+- [ ] Toggle Hobbies Section Off — the Hobbies section collapses

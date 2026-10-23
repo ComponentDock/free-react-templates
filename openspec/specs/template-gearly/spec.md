@@ -222,3 +222,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Gearly" and a "Home" link pointing to the page root
+- [ ] Hero — it SHALL show an overline (e.g. "Best options for you") and a level-1 headline (e.g. "Drive safe & get license")
+- [ ] Feature section — it SHALL show the heading "Our feature"
+- [ ] About strip — it SHALL show the heading "Looking for lessons?"
+- [ ] Application form — the form SHALL contain labeled inputs for name, email, phone, and date/time
+- [ ] Pricing — it SHALL show the heading "Our Pricing"
+- [ ] Team — it SHALL show the heading "Our Instructors"
+- [ ] Footer — it SHALL show the site name "Gearly" and quick links
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

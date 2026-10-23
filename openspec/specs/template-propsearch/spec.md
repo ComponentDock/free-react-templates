@@ -151,3 +151,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page Structure — a heading "PropSearch" is visible
+- [ ] Location Input — a text input labeled "Location" is present with placeholder "City/Locality Name"
+- [ ] Property Type Dropdown — the Property Type dropdown contains options: Type, Commercial, - Office, Residential, Villa, Condominium, Apartment
+- [ ] Property Status Dropdown — the Property Status dropdown contains options: Type, Rent, Sale
+- [ ] Price Limit Dropdown — the Price Limit dropdown contains options from $5,000 to $2,000,000
+- [ ] Search Button — a button labeled "Search Availability" with subtitle "Best Price Guaranteed!" is visible
+- [ ] Form Submission — onSearch is called with { location: "Miami", propertyType: "villa", propertyStatus: "sale", priceLimit: "1000000" }
+- [ ] Accessibility — the form has aria-label "Property search form"

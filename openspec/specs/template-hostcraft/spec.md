@@ -291,3 +291,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation Bar — the logo "Hostcraft" is visible on the left
+- [ ] Hero Section — the subheading "Isometric Hosting" is visible in purple
+- [ ] Domain Search — a heading "Search Your Domain Name" is visible
+- [ ] Why Choose Us Features — the heading "Why Choose Us" is visible
+- [ ] Counter Statistics — the subheading "More than 12,000 websites trusted hosted" is visible
+- [ ] Main Services — the heading "Our Main Services" is visible
+- [ ] Pricing Plans — the heading "Our Best Pricing" is visible
+- [ ] Testimonials — the subheading "Customer Says" is visible
+- [ ] Tabbed Services — 3 tabs are visible: "Next gen VPS", "Performance", "Effectiveness"
+- [ ] Recent Blog — the heading "Recent Blog" is visible
+- [ ] Partner Logos — 5 partner logo images are visible in a row

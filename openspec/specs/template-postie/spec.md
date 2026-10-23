@@ -207,3 +207,12 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://colorlib.com/wp/template/standout/), preview URL, tokens
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Postie" and links to Intro, About, Features, and Pricing
+- [ ] Hero section — it SHALL contain a level-1 heading "An Amazing App That Does It All."
+- [ ] About section — it SHALL contain a heading "The Most Popular And Number 1 Mail App."
+- [ ] How-it-works section — it SHALL contain a heading "How The App Works?"
+- [ ] Features section — it SHALL contain a heading "Loaded With Features You Would Surely Love."
+- [ ] Testimonials section — it SHALL contain a heading "1 Million+ Users Can't Be Wrong."
+- [ ] Pricing section — it SHALL show plans named "Basic", "Pro Plan", and "Ultimate Plan" with the prices Free, $10, and $20 per month
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

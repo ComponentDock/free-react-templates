@@ -184,3 +184,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — I see "Vertex" logo and 8 nav links (Home, Services, Portfolio, Crafters, Stories, Offer, Expertise, Contact)
+- [ ] Hero section — I see the headline, subtitle, and a "Get Started" button
+- [ ] Services section — I see 4 cards with icons for Branding, Mobile Apps, Web, and Graphic
+- [ ] Portfolio section — I see 4 portfolio items with images and a "Load More" button
+- [ ] Crafters (team) section — I see Robert Williams (Lead Designer), John Doe (SEO Master), and Ann Peterson (PSD Guru)
+- [ ] Stories (blog) section — I see 4 post cards with authors, categories, and excerpts
+- [ ] Offer (video features) section — I see 6 feature icons with labels
+- [ ] Expertise (skills) section — I see 4 progress bars showing HTML 81%, CSS 93%, PSD 72%, Design 99%
+- [ ] Contact section — I see input fields for Name, Email, Subject, Message, and a submit button

@@ -59,3 +59,5 @@ Recreation of ColorLib Accordion 16 (`https://colorlib.com/wp/template/accordion
 - [ ] 100% test coverage (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links Component Dock (`https://www.componentdock.com/`)
+- [ ] Header Section — Display a prominent centered heading "Bootstrap Accordion #6" (or adapted branded heading)
+- [ ] Accordion Items — Stacked pill-shaped accordion items with `rounded-[40px]` and smooth expansion transitions

@@ -77,3 +77,6 @@ All accordion interactions SHALL be keyboard accessible and use proper ARIA attr
 - [x] App workspace `@free-react-templates/concertina` created in `apps/concertina`
 - [x] 100% test coverage (`npm run test:coverage`)
 - [x] Verification gate passes successfully (`scripts/verify-app.sh concertina`)
+- [ ] Accordion shows default expanded item on load — the main heading "Bootstrap Accordion #6" is visible
+- [ ] Accordion items toggle on click — Item 2 expands to reveal its description
+- [ ] Accessibility — the accordion item toggles its expanded state

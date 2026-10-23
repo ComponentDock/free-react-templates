@@ -180,3 +180,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with mobile toggle — the navbar shows the logo "Silhouette" and links to Home, About, Collections, Blog, Contact
+- [ ] Hero section with CTA — the hero section displays the headline, descriptive text, and a "Shop Now" button
+- [ ] Products grid — 8 product cards are displayed with names and prices
+- [ ] About section with features — the about section shows "Crafted with Intention" heading and 3 features
+- [ ] Testimonials section — 3 blockquotes are displayed with author names and roles
+- [ ] Blog section — 3 article cards are displayed with titles and dates
+- [ ] Newsletter signup — an email input with placeholder "Enter your email" and a "Subscribe" button are shown

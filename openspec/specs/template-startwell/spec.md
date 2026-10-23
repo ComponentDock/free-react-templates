@@ -68,3 +68,6 @@ Recreation of ColorLib Startright (`https://colorlib.com/wp/template/startright/
 - [ ] 100% test coverage on components.
 - [ ] Footer links to Component Dock.
 - [ ] CNAME configured correctly for Surge.
+- [ ] Navigation — it displays the "Startwell." brand name, navigation links, and mobile menu trigger
+- [ ] Hero Section — it displays the main headline "A big business starts small", a call-to-action button, and a hero visual
+- [ ] Features & Stats — key numerical counters and 6 feature cards with icons are displayed

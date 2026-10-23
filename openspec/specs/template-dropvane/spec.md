@@ -163,3 +163,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders heading — a heading with text "Dropdown #10" is visible and centered
+- [ ] Dropdown trigger button is visible — a button labeled "Request A Quote" is visible
+- [ ] Clicking the button opens the dropdown form — a dropdown panel appears below the button
+- [ ] Dropdown closes on outside click — the dropdown panel closes
+- [ ] Dropdown toggles on repeated clicks — the dropdown opens
+- [ ] Form inputs are interactive — the user can type text into the field
+- [ ] Form submission button — a button labeled "Send A Message" is visible
+- [ ] Accessibility attributes — aria-expanded is "false"
+- [ ] Responsive layout — the dropdown menu is horizontally centered on the page

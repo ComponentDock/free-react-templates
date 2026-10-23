@@ -130,3 +130,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and contact — the navbar displays the logo "Keycraft", all 6 navigation links, and the phone number "+1 800 556 6688"
+- [ ] Hero section with CTA — the hero section shows the heading and a "Contact us" link pointing to #contact
+- [ ] Get a quote form — the form displays inputs for name, phone, and a service dropdown with options (Access, Safes, Residential, Commercial)
+- [ ] Services grid — all 6 service card headings are visible
+- [ ] Why choose us section — all 5 checklist items are visible
+- [ ] Statistics counter — all 5 stat values and labels are visible
+- [ ] Products showcase — 5 product cards with prices are visible
+- [ ] Testimonials — the corresponding testimonial is displayed
+- [ ] Blog posts — all 4 blog post titles are visible

@@ -169,3 +169,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Gradient top bar displays social links and quick menu — a gradient bar with social icons and 5 menu items is visible above the navbar
+- [ ] Sticky navbar with logo and navigation — the navbar shows the logo, 5 navigation links, and a search icon
+- [ ] Hero section displays medical services tagline — the headline "We provide top medical services" is displayed
+- [ ] Contact info section shows 3 info cards — 3 contact info cards are visible with hours, phone, and address details
+- [ ] Welcome section with 3 feature cards and about text — 3 cards are visible (emergency, doctors, appointment)
+- [ ] Services section displays 6 services on gradient background — 6 service cards are visible with icons, titles, and descriptions
+- [ ] Doctors section shows 4 doctor profiles — 4 doctor cards are visible with name, specialty, and social icons
+- [ ] Testimonials section on dark background — testimonial quotes and author names are visible
+- [ ] Stats counter section with 4 metrics — 4 counter values and labels are visible
+- [ ] Appointment booking form with image — the form shows Name, Specialty, Phone, Doctor, Email, and Date fields
+- [ ] Partners section displays logo row — 5 partner logo images are visible

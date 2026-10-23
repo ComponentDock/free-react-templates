@@ -268,3 +268,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — it SHALL show the site name "Crafty" as a link
+- [ ] Hero / Banner — it SHALL show the heading "Crafting Best Experience" (h1)
+- [ ] Experience section — it SHALL show two images on the left side
+- [ ] Carousel / Testimonials — it SHALL show a testimonial slide with content
+- [ ] Services grid — it SHALL contain 4 service cards
+- [ ] Video section — it SHALL show a video thumbnail image on the left
+- [ ] Services horizontal — it SHALL contain 3 service cards
+- [ ] Contact section — it SHALL show the heading "Contact Us" (h2)
+- [ ] Page composition — all sections SHALL be present in the correct order

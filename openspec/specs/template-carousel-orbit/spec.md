@@ -67,3 +67,5 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
 - [ ] 100% test coverage on all components
 - [ ] Footer links Component Dock
 - [ ] Responsive across screen sizes
+- [ ] Hero & Showcase Intro Section — they see the "Carousel #2" header and "Our Products" section intro
+- [ ] Product Carousel / Grid Showcase Section — the carousel items shift accordingly and remain responsive

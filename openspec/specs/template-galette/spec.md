@@ -135,3 +135,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page heading — the heading "Checkbox #04" SHALL be displayed as the main heading
+- [ ] Selection prompt — a subtitle "Select your preferences" or similar prompt SHALL be
+- [ ] Custom checkboxes — at least 3 checkbox options SHALL be visible
+- [ ] Dark mode support — the page SHALL use dark background and light text colors

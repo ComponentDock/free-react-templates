@@ -117,3 +117,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — they see a sticky navbar with brand name and navigation links
+- [ ] Hero Section — they see a hero with the main heading "#05 — Bootstrap Buttons" and subtitle text
+- [ ] Solid Buttons — they see eight solid-colored buttons with semantic color coding
+- [ ] Outline Buttons — they see outline buttons with colored borders matching semantic intents
+- [ ] Shape Variants — they see pill-shaped and square button variants grouped under sub-headings
+- [ ] Sizes and States — they see large, default, and small buttons alongside disabled and active state buttons
+- [ ] Icon Buttons — they see buttons with icon + label combinations
+- [ ] Playground — they see a heading and a preview button demonstrating the current button style

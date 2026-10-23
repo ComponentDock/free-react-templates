@@ -117,3 +117,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation & Header — the header shows the brand logo "BtnCraft" and navigation links (Showcase, Variants, Sizes, States, Code)
+- [ ] Hero & Introduction — the heading "BtnCraft — Modern Bootstrap Button Showcase" is visible
+- [ ] Solid Button Variants — all 8 semantic color buttons (Primary, Secondary, Success, Danger, Warning, Info, Light, Dark) are visible with correct styling
+- [ ] Outline Button Variants — all 8 outline variant buttons are visible
+- [ ] Shape Variants — both Pill Buttons and Square Buttons subsections are displayed
+- [ ] Sizes & States — Small, Medium, and Large buttons are visible
+- [ ] Icon Buttons — buttons with icons (Download, Delete, Add to Cart, etc.) are visible
+- [ ] Interactive Playground — the preview button updates immediately to show the selected variant

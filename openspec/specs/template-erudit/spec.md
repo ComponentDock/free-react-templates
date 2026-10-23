@@ -168,3 +168,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — the navbar shows "Erudit" as the logo
+- [ ] Hero Slider — 4 hero slides are rendered
+- [ ] Course Search — a keyword search input is visible
+- [ ] Services Display — 6 service items are displayed with icons and labels
+- [ ] Popular Courses — 5 popular course cards are displayed
+- [ ] About Section — the "Who Are We" section is displayed
+- [ ] Testimonials — 5 testimonial cards are displayed
+- [ ] Instructors — 4 instructor cards are displayed
+- [ ] Course Grid — 6 course cards are displayed in a grid
+- [ ] Events and Blog — 4 upcoming event entries are displayed
+- [ ] Newsletter — an email input is visible

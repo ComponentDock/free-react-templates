@@ -214,3 +214,13 @@ Extracted from live preview CSS (`css/style.css`).
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays brand and navigation — the navbar displays "Reveal." as the centered logo
+- [ ] Hero section with background image — the heading "Reveal" is centered on the hero
+- [ ] Portfolio grid with 9 items — 9 portfolio items are shown in a 3-column grid
+- [ ] Client logos row — 4 client logo placeholders are displayed in a row
+- [ ] About me section — a portrait image appears on the left
+- [ ] Services section with 6 cards — 6 service cards are shown in a 3x2 grid
+- [ ] Skills section with counters — 4 skill counters are shown with their percentages
+- [ ] Testimonials section — 3 testimonial cards are displayed
+- [ ] Blog journal section — 5 blog posts are shown in an asymmetric grid
+- [ ] Contact section with form — a contact form with name, email, and message fields is shown

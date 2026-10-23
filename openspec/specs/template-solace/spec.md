@@ -68,3 +68,6 @@ The application SHALL display a footer with copyright and a link to https://www.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation and Hero Display — I should see the sticky navigation bar with brand logo and links (Home, About, Rooms, Resto & Bar, Blog, Contact)
+- [ ] Interactive Booking Widget — the booking widget should handle selection successfully without errors
+- [ ] Explore Rooms and Services — I should see room cards (Suite Room, Family Room, Deluxe Room) with "Book Now" buttons

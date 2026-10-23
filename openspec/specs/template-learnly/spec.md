@@ -184,3 +184,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact info and login/register — the top bar shows phone number "10 20 123 456", email "info@mydomain.com", and a "Have a question?" link
+- [ ] Navbar with navigation and social links — navigation links for Home, About Us, Admissions, Courses, and Contact are visible
+- [ ] Hero carousel with two slides — the heading "Learnly University" is displayed
+- [ ] Features section with three cards — cards for "Personalize Learning", "Trusted Courses", and "Tools for Students" are displayed
+- [ ] Courses section with six course cards — six course cards are rendered with titles, $99.00 price badges, and 5-star ratings
+- [ ] About section with background image — the heading "About Our University" and a "Read more" link are displayed
+- [ ] Testimonials section — four testimonial cards with names, roles, and quotes are displayed
+- [ ] Philosophy section with three pillars — all three pillar titles and descriptions are displayed
+- [ ] News section with blog posts and videos — the featured post "Campus Camping and Learning Session" and the heading "News & Updates" are displayed
+- [ ] Newsletter subscription form — an email input with placeholder "Enter your email" and a "Send" button are displayed

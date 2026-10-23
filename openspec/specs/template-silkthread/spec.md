@@ -158,3 +158,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with top bar and navigation — a top bar shows "Free shipping, 30-day return or refund guarantee"
+- [ ] Hero carousel — a full-width hero section is visible with a dark background image
+- [ ] Banner with 3 category items — 3 banner items are displayed
+- [ ] Product grid with filter tabs — filter tabs are displayed: Best Sellers, New Arrivals, Hot Sales
+- [ ] Categories section with hot deal and countdown — the section has a light beige background
+- [ ] Instagram image grid — 6 images are displayed in a grid
+- [ ] Blog/Latest section — a section title "Latest News" is displayed

@@ -91,3 +91,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Contact form renders with correct fields — the heading "Send us a message" is visible
+- [ ] Form validates required fields — error messages appear for Name, Email, and Message
+- [ ] Form submits with valid data — the onSubmit callback is invoked with the entered data
+- [ ] Map section renders alongside form — a map section with a location marker is visible
+- [ ] Responsive layout — the form takes full width and the map is hidden

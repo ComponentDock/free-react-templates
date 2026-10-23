@@ -150,3 +150,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-page background with centered wizard card — a full-page background image covers the viewport
+- [ ] Wizard header displays correctly — a blue header bar (#3760e5) is displayed at the top of the card
+- [ ] Step indicators render with correct state — 3 circular step indicators are displayed
+- [ ] Step 1 form fields — a "First Name" text input is displayed
+- [ ] Step 2 form fields — an "Email Address" email input is displayed
+- [ ] Step 3 form fields — a "Subject" dropdown select is displayed with options: Finance, Marketing, IT Support
+- [ ] Forward navigation — the wizard transitions to the next step
+- [ ] Backward navigation — the wizard transitions to the previous step
+- [ ] Responsive layout — the wizard card width adapts to approximately 90% of the viewport

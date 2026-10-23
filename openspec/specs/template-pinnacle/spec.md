@@ -213,3 +213,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Pinnacle" and links to Home, About, Projects, Service, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Dream Heaven City"
+- [ ] About section — it SHALL contain a heading "We've been creating Awesome Since 1992"
+- [ ] Overview section — it SHALL show four stat counters (286+, 942+, 263+, 2000+) with labels
+- [ ] Portfolio section — it SHALL show four project cards with dates, titles, and "Read More" links
+- [ ] Estimate call to action — it SHALL show a "Get to Know Project Estimate?" heading
+- [ ] Testimonials — it SHALL show a "What People Say About Us" heading
+- [ ] Footer — it SHALL show link columns (Top Products, Quick Links, Features, Resources)
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

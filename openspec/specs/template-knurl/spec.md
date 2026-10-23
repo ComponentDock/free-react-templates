@@ -85,3 +85,5 @@ buttons.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Button size variants — The system render the Sizes block with three blue "Button" buttons at
+- [ ] Button color palette — The system render the Button Colors block with all 18 solid color

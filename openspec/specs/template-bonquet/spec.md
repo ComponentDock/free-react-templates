@@ -102,3 +102,9 @@ Users SHALL see a footer with quick links, contact information, and a required l
 - [ ] Production build (`npm run build`)
 - [ ] Footer links Component Dock correctly
 - [ ] No mention of ColorLib in app code
+- [ ] Header Navigation — the header displays the logo, navigation links, phone number, and "Book a Table" button
+- [ ] Hero Section — the hero section displays the headline "Meet, Eat & Enjoy the true test", descriptive subtitle, "Our Menu" button, and "Watch Video" action
+- [ ] Features and Services — 3 feature cards are displayed with titles and descriptions
+- [ ] Most Popular Dishes Menu — the Breakfast tab is selected and breakfast dishes are shown
+- [ ] Table Reservation Booking — all form fields and the submit button are displayed
+- [ ] Customer Testimonials — customer names, quotes, and star ratings are displayed

@@ -130,3 +130,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and CTA — the navbar displays the "Lineup" logo, all five nav links, and the "Buy Tickets" CTA
+- [ ] Hero section with countdown — the hero section shows countdown values and the main heading
+- [ ] About section — the about section displays the heading, description, and both CTA buttons
+- [ ] Featured events grid — all featured event cards are rendered with images, titles, and dates
+- [ ] Next events section — three event cards are rendered with rating badges, titles, and Buy Tickets links
+- [ ] Regional events section — the heading updates to show the selected location name
+- [ ] Newsletter subscription form — the input values are updated

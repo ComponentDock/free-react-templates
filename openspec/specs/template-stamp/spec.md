@@ -225,3 +225,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders all navigation links and contact info — the phone number "+02 89 365 3652" is visible
+- [ ] Hero section displays headline and CTA — the text "Real Solutions!" is displayed
+- [ ] Services section shows 4 service cards — cards for "Advance Technology", "World Quality Service", "Competitive Pricing", and "Lifetime Support" are visible
+- [ ] About section displays commitment message — the heading "We Are Committed To Customer Satisfaction" is visible
+- [ ] Industries section shows 3 industry cards — cards for "Mechanical Engineering", "Chemical Research", and "Industrial Construction" are visible
+- [ ] FAQ section shows collapsible accordion — the first FAQ question is expanded and its answer is visible
+- [ ] Portfolio section shows project cards with overlay — cards for "Electrical Engineering", "Chemical Processing", "Structural Analysis", and "Industrial Automation" are visible
+- [ ] Team section displays 4 team members — members "Andrew Flentop", "Sarah Mitchell", "James Crawford", and "Maria Santos" are visible
+- [ ] Blog section shows 3 blog posts — posts with categories "Chemical Research", "Construction", and "Engineering" are visible
+- [ ] Newsletter section has email subscription form — the heading "Do You Have a Question?" is visible

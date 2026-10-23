@@ -137,3 +137,14 @@ Built as a responsive React 19 + Tailwind CSS 4 + TypeScript template with 100% 
 - [ ] `scripts/verify-app.sh molaris` passes (typecheck, lint, test:coverage 100%, build)
 - [ ] Footer links `https://www.componentdock.com/` as Component Dock
 - [ ] No reference to ColorLib in any app source file
+- [ ] 1. Navigation & Header — they see the contact phone and email at the top
+- [ ] 2. Hero Slider — they see the primary headline and professional dental background image
+- [ ] 3. Appointment Booking / Quick Info Bar — a success confirmation message is displayed
+- [ ] 4. Services Grid — they see distinct service cards with icons and descriptive text
+- [ ] 5. About & Statistics Section — they see key metrics highlighting clinic experience and patient satisfaction
+- [ ] 6. Meet Our Team (Qualified Dentists) — they see dentist cards with photos, names, and roles
+- [ ] 7. Call-to-Action (CTA) Banner — they see a full-width teal banner with a booking call to action
+- [ ] 8. Testimonials (Happy Customers) — they see patient quotes, star ratings, and names
+- [ ] 9. Treatment Results / Gallery — they see high-quality clinical outcome photos
+- [ ] 10. Recent Blog Posts — they see article cards with titles and snippets
+- [ ] 11. Pricing & Packages — they see structured price lists for routine checkups, whitening, and implants

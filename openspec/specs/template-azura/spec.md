@@ -217,3 +217,10 @@ and a document title.
 - [ ] `npm run spec:validate`
 - [ ] `bash scripts/verify-app.sh azura` (typecheck + lint + 100% coverage tests + build)
 - [ ] Screenshot review: blue brand, dark blue overlays, Noto Sans font, 7-section structure
+- [ ] Navigation bar — the navbar SHALL show the site name "Azura" and links to Home, Why Azura, Our Services, Gallery, About, and Contact Us
+- [ ] Hero section — it SHALL show the subheading "Welcome To Our Site"
+- [ ] Welcome split section — it SHALL show an image on the left
+- [ ] Why Choose Us section — it SHALL show counter stats (Years of experience, Projects, Clients)
+- [ ] Services section — it SHALL show the heading "Grow your business"
+- [ ] Blog posts section — it SHALL show the subheading "Our Blogs"
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -221,3 +221,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Blush" and links to Home, About, Features, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Blush the App"
+- [ ] About app split section — it SHALL contain the heading "Mobile ready"
+- [ ] FAQ section — it SHALL contain the heading "An app for Each & Everyone"
+- [ ] Stats section — it SHALL show "10 Years of Experience", "500 Happy Clients", "17k Followers on FB", "132 Finished Projects", and "3 Coffees a day"
+- [ ] Features section — it SHALL contain the heading "All the best features"
+- [ ] Pricing section — it SHALL contain the heading "Purchase App"
+- [ ] Footer — it SHALL show store download buttons and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

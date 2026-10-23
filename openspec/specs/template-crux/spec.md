@@ -193,3 +193,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile menu — the logo "Crux" and all four nav links are visible
+- [ ] Hero section with CTA — the heading "We're Creative" is visible
+- [ ] Features grid with 4 cards — headings for "Unlimited Colors", "Smart Security", "Endless Support", and "Reliable Design" are visible
+- [ ] About section with tabbed content — the heading "About Our Company" is visible
+- [ ] Video callout section — the heading with "New Features" is visible
+- [ ] Blog cards section with 3 articles — headings for "Creative Projects", "Digital Solutions", and "Growth Strategy" are visible
+- [ ] Story / CTA section — the heading with "Crafting Our Experiences" is visible
+- [ ] Newsletter subscription form — the heading "Subscribe Newsletter" is visible
+- [ ] Page composition — banner, main, and contentinfo landmarks are present

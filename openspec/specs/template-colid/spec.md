@@ -268,3 +268,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Colid" and links to Home, Service, Features, Pricing, Team, FAQ, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "It's all about Promoting your Business"
+- [ ] Highlight tiles — it SHALL show tiles titled "Easy to Use", "Awesome Design", and "Easy to Customize", each with a blurb
+- [ ] Caption slider — it SHALL show slides titled "Easy to Build" and "Easy to Use" with "Read more" links
+- [ ] Special features section — it SHALL contain a heading "Special Features"
+- [ ] Pricing section — it SHALL contain a heading "Affordable Price"
+- [ ] Team section — it SHALL show members "Jemy Sedonce", "Deborah Brown", "Harry Banks", and "Victoria Clark" with roles
+- [ ] Testimonials section — it SHALL show quotes attributed to "AR Rahman"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Blog section — it SHALL show three cards titled "Beautiful Place for your Great Journey"
+- [ ] Contact footer — it SHALL show "Contact with us", an address, telephone, and email details
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the contact footer in the contentinfo landmark

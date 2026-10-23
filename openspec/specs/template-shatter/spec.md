@@ -228,3 +228,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full magazine layout on page load — they see a banner area with a 3-column grid (left posts, center featured, right widgets)
+- [ ] Banner hero left column — 3 small post cards are stacked vertically in the left column
+- [ ] Banner hero center carousel — the center column shows a large featured post
+- [ ] Banner hero right sidebar widgets — the right column shows a weather widget
+- [ ] Navigation bar — a sticky navbar appears with dark #252525 background
+- [ ] Editors' Picks section — a heading "Editors' Picks" is displayed
+- [ ] International News section — a heading "International News" is displayed
+- [ ] Technology News section — a heading "Technology News" is displayed
+- [ ] Exclusive Videos section — a heading "Exclusive Videos" is displayed
+- [ ] Popular News Feed section — a heading "Popular News Feed" is displayed
+- [ ] Responsive layout — the 3-column banner collapses to a single column
+- [ ] Placeholder images — the image is a deterministic placeholder from picsum.photos

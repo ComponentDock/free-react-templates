@@ -178,3 +178,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page layout — I see a centered card with two columns on a light gray background
+- [ ] Contact form fields — I see a Name input field
+- [ ] Contact info panel — the "Contact us" heading has a short pink underline decoration below it
+- [ ] Responsive behavior — the two columns stack vertically

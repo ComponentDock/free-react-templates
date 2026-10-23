@@ -338,3 +338,9 @@ Dock (`https://www.componentdock.com/`) instead.
       tokens, and what differs. All THREE TEMPLATES.md "Coza Store"
       rows get `[x]` + the same live URL when done.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Topbar and header — a dark topbar SHALL show the text "Free shipping for standard order over $100"
+- [ ] Hero slider — the slider SHALL show three slides
+- [ ] Product grid — it SHALL show the heading "New arrivals"
+- [ ] Category banner — it SHALL show three cards labeled Women, Men, and Accessories
+- [ ] Cart and overlays — a dropdown SHALL show cart items with names, quantities, and prices
+- [ ] Page composition — the sections SHALL appear in the order: topbar and header, hero slider, product grid, category banner, footer

@@ -281,3 +281,10 @@ Dock (`https://www.componentdock.com/`) instead.
       images, tag typo correction).
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the header SHALL show the site name "Trove" on the left and a
+- [ ] Top stories strip — it SHALL show at least four story cards, each with a small
+- [ ] Featured post slider — it SHALL show a full-width background image with a white title
+- [ ] Post grid and pagination — it SHALL show a post image with a white details panel
+- [ ] Sidebar widgets — the About widget SHALL show an avatar, the name "Peter
+- [ ] Footer — the About Us column SHALL show a description paragraph
+- [ ] Page composition — the page SHALL compose the Header in the banner landmark, all

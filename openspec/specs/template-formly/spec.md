@@ -231,3 +231,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders the registration form — a full-page gradient background from purple to cyan is displayed
+- [ ] Header displays title — I see a heading "Event Registration Form"
+- [ ] Name field renders as two-column row — I see a "Name" label
+- [ ] Company field renders as full-width input — I see a "Company" label
+- [ ] Email field renders as full-width input — I see an "Email" label
+- [ ] Phone field renders as two-column row — I see a "Phone" label
+- [ ] Subject dropdown renders with options — I see a "Subject" label
+- [ ] Customer radio buttons render correctly — I see "Are you an existing customer?" text
+- [ ] Submit button renders with coral styling — I see a "Register" button
+- [ ] Responsive layout — the Name column pair stacks vertically

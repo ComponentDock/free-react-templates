@@ -219,3 +219,11 @@ The TEMPLATES.md screenshot shows a warm, elegant restaurant page with:
 - [ ] All sections recreate the original structure 1:1
 - [ ] Spec committed to openspec/specs/template-arborio/spec.md
 - [ ] Design notes committed to docs/templates/arborio/
+- [ ] Navbar — the top nav contains a logo link and three social media icon links
+- [ ] Hero — a heading "Welcome To" is visible
+- [ ] About — a section header with subtitle "About Us" and title is visible
+- [ ] Menu — a section header with subtitle "Discover" and title "Our Menu" is visible
+- [ ] Reservation — a form with fields for Name, Phone, Date, Email, Number of Guests, Time is visible
+- [ ] Events — a section header with subtitle "Special Event" and title "Upcoming Event" is visible
+- [ ] Contact — a map placeholder occupies the left 50%
+- [ ] Footer — a copyright line is displayed on the left

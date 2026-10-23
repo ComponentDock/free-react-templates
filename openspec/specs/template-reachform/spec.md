@@ -137,3 +137,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page Layout — the page shows a full-bleed background image with gradient overlay
+- [ ] Contact Form Title — the heading "Contact Us" is visible in the form card
+- [ ] Form Fields — a Name input field is visible
+- [ ] Submit Button — a button labeled "Send Your Message" is visible
+- [ ] Thank You State — the card shows "Thank You!" heading

@@ -245,3 +245,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Appy" and links to Home, About, Features, Pricing, FAQ, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Start your amazing stuff through appy."
+- [ ] About section — it SHALL contain a heading "About Appy" and a blurb
+- [ ] Split sections — it SHALL contain a heading "Great Application Ever"
+- [ ] Features section — it SHALL contain a heading "Powerful Features As Always"
+- [ ] Testimonials section — it SHALL contain a heading "Our Clients Love Us"
+- [ ] Screenshots section — it SHALL contain a heading "Screenshot 01"
+- [ ] Download section — it SHALL contain a heading "Download The App" and a blurb
+- [ ] Pricing section — it SHALL contain a heading "Our Awesome Pricing Plan"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Footer — it SHALL show link columns for about, solutions, and company
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

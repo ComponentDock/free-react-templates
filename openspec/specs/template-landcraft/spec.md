@@ -156,3 +156,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — the navbar shows the brand "Landcraft", contact info (hours, email, phone), and horizontal navigation links (Home, About, Services, Team, Portfolio, Blog, Contact)
+- [ ] Hero section — the heading "Welcome to Landcraft" is visible
+- [ ] About section — the heading "Who We Are" is visible
+- [ ] Services section — three service cards are displayed (Lawn Care, Landscape Design, Garden Maintenance)
+- [ ] Fun facts section — four statistics are shown: Projects Completed (2,157), Happy Clients (15,445), Awards Won (145), Team Members (1,200)
+- [ ] Portfolio section with filtering — all 6 portfolio items are displayed
+- [ ] Team section — four team members are displayed with name, role, and social links
+- [ ] FAQ accordion — its answer is revealed
+- [ ] Testimonials — client testimonials with names, roles, star ratings, and quotes are displayed
+- [ ] Newsletter signup — an email input and submit button are displayed

@@ -204,3 +204,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Stave"
+- [ ] Hero section — it SHALL show a level-1 heading "Musician"
+- [ ] Featured track section — it SHALL show the artist name "Frando Kally"
+- [ ] About section — it SHALL show the artist name "Jack Kalib"
+- [ ] Video gallery section — it SHALL show 4 video thumbnails with images from picsum.photos
+- [ ] Latest tracks section — it SHALL show a heading "Latest Tracks"
+- [ ] Gallery section — it SHALL show a heading "Image Galleries"
+- [ ] Contact CTA section — it SHALL show a heading "Contact For RSVP"

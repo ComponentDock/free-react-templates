@@ -182,3 +182,9 @@ and a document title.
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; brand tokens (#0ECE91, #111111, #222222, Raleway + Aldrich) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `sundial-<n>`, Google Fonts links, lucide/inline-SVG icons only)
+- [ ] Navigation bar — the navbar SHALL show the site name "Sundial" in bold uppercase
+- [ ] Hero section — it SHALL show a centered, uppercase, 30px headline welcoming the
+- [ ] Gallery filter controls — the filter bar SHALL show buttons: All, Photography, Travel,
+- [ ] Masonry gallery grid — it SHALL show at least twelve photo items in a masonry layout
+- [ ] Footer — the footer SHALL have a #222222 background
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

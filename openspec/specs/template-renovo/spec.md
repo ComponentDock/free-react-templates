@@ -165,3 +165,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact information — the TopBar shows Facebook, Twitter, Dribbble, and Behance icons
+- [ ] Navbar provides navigation — all 8 navigation links are visible
+- [ ] Hero section showcases the brand — the heading "All things need to repair" and the CTA button "Get Started" are visible
+- [ ] Services section displays offerings — 4 service cards are visible: Computer Repair, Mobile Repair, Data Recovery, Network Setup
+- [ ] About section describes capabilities — the heading and both feature boxes are visible
+- [ ] Discount CTA collects estimates — inputs for name, phone, email, and message are visible along with the "Get Estimate" button
+- [ ] Work process shows steps — all 4 step labels are visible
+- [ ] FAQ section with accordion and skills — the first FAQ item's content is visible
+- [ ] Testimonials showcase client feedback — 3 testimonials with names Sarah Mitchell, James Rodriguez, Emily Chen are visible
+- [ ] Blog shows recent posts — 4 blog post titles are visible

@@ -173,3 +173,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with navigation — the logo text "Fotura" is visible in the header
+- [ ] Hero slider with fullscreen carousel — the hero section occupies the full viewport height
+- [ ] Page composition — the document title is "Fotura — Photography Portfolio Template"
+- [ ] Placeholder images — all background images use picsum.photos URLs with the "fotura-" prefix

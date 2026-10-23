@@ -142,3 +142,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and booking CTA — the navbar shows the brand name "Haven"
+- [ ] Hero section with booking form — a heading with text "Haven A Luxury Hotel" is visible
+- [ ] About section with hotel description — a "About Us" label is visible
+- [ ] Services section with 6 service cards — headings for Travel Plan, Catering Service, Babysitting, Laundry, Hire Driver, Bar & Drink are visible
+- [ ] Room cards with pricing — headings for Double Room, Premium King Room, Deluxe Room, Family Room are visible
+- [ ] Testimonials section — a "What Customers Say?" heading is visible

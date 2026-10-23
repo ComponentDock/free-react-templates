@@ -105,3 +105,10 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 - [ ] All sections implemented with 100% test coverage
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] No mention of ColorLib in app source code
+- [ ] 1. Navigation Header — it shows the "Oraxol" logo and links for Work, Blog, About, and Contact
+- [ ] 2. Hero Section — it presents the core value proposition and freelance availability indicator
+- [ ] 3. Services / Solutions Section — each card shows a title, description, and icon
+- [ ] 4. Portfolio / Gallery Section — multiple design project cards are displayed with hover effects
+- [ ] 5. Testimonials / Satisfied Clients Section — interactive navigation buttons allow browsing client testimonials
+- [ ] 6. Team / Designers Section — member names and professional titles are presented
+- [ ] 7. Recent Blog Section — article titles, author info ("John Dorf"), and comment counts are shown

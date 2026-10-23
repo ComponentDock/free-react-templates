@@ -217,3 +217,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and dark mode toggle — I see links for "Home", "About", "Services", "Gallery", "Blog", "Contact"
+- [ ] Hero section with headline — I see the text "Modern Interior & Design"
+- [ ] Info highlights section — I see three info cards with titles "Clean and Services", "Clean and Modern", "Elegant and Modern"
+- [ ] Professional services banner — I see the heading "We will create modern and first class interior"
+- [ ] Services grid with three cards — I see service cards for "Lighting", "Interior Design", "Office Decoration"
+- [ ] Gallery with project images — I see at least 6 gallery items with images
+- [ ] Team section with three members — I see 3 team members with names and "Creative Director" roles
+- [ ] Testimonial carousel — I see a testimonial with author "Christine Eve"
+- [ ] CTA banner with contact button — I see "Are you Searching For a First-Class Consultant?"
+- [ ] Blog section with two posts — I see 2 blog post titles
+- [ ] Document title — the document title is "Cosyhaus — Interior Design Template"

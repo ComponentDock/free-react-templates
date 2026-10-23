@@ -199,3 +199,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section displays book headline and CTA — a hero section is visible with id "home"
+- [ ] Sticky navigation bar — a sticky header is displayed at the top
+- [ ] Features section shows book feature cards — the heading "Features Of This Book" is displayed
+- [ ] Screenshot carousel section — the heading "Book Screenshots" is displayed
+- [ ] About Author section — the heading "Hello, I'm the Author" is displayed
+- [ ] Testimonials section — the heading "Testimonials From Readers" is displayed
+- [ ] Newsletter subscription section — the heading "Subscribe For New Updates" is displayed
+- [ ] App sets document title — the document title is "BookCraft — Author Book Landing"

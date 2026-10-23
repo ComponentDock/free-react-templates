@@ -153,3 +153,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile menu — the brand "IRONPULSE" is visible
+- [ ] Hero section with headline and video play — the "Iron Pulse" headline is visible
+- [ ] Pricing section with 3 course cards — 3 pricing cards are visible
+- [ ] Programs section with 5 fitness programs — 5 program items are visible
+- [ ] Stats counter with 4 statistics — all 4 stat values are visible
+- [ ] Coaches section with 4 trainer cards — 4 coach cards are visible
+- [ ] Testimonials section — testimonial quotes are visible
+- [ ] Blog section with 3 posts — 3 blog posts are visible
+- [ ] Contact form with fields — a form with all input fields is visible
+- [ ] Gallery with 4 images — 4 gallery images are visible

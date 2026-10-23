@@ -233,3 +233,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Terra" and a "Home" link pointing to the page root
+- [ ] Welcome hero — it SHALL show a level-1 headline (e.g. "Beauty & Spa Wellness")
+- [ ] Services — it SHALL show the heading "Our Beauty & Spa Services"
+- [ ] Featured services — it SHALL show the heading "Discover the Best Beauty Salon Center"
+- [ ] Expert team — it SHALL show the heading "Our Expert Makeup & Beautician Artist"
+- [ ] Pricing — it SHALL show the heading "Get Our Package Pricing"
+- [ ] Appointment band — it SHALL show the heading "Make An Appointment"
+- [ ] Testimony band — it SHALL show the heading "What Customers Saying"
+- [ ] Blog posts — it SHALL show the heading "Recent From Blog"
+- [ ] Footer — it SHALL show the site name "Terra"

@@ -208,3 +208,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Itkol" and links to Home, Services, About, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "We provide best IT solution"
+- [ ] Services section — it SHALL contain a heading "IT solutions for startup and enterprises"
+- [ ] Features section — it SHALL contain a heading "Grow your business fast."
+- [ ] Industries section — it SHALL contain a heading "IT services customized for your industry"
+- [ ] About section — it SHALL contain a heading "ITKol - Partner for Your Business"
+- [ ] CTA band — it SHALL contain the heading "Innovative IT Solution for your Business & Startup"
+- [ ] Case studies — it SHALL contain the heading "Some of Our Great Stuffs"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

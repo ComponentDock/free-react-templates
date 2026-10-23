@@ -178,3 +178,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the site name "DigiView" linking to `#home
+- [ ] Hero section — it SHALL contain a heading with "digital agency" in green
+- [ ] Services section — 6 service cards SHALL be displayed
+- [ ] Projects section — project cards SHALL be shown in a grid
+- [ ] Stats counter — 4 counter labels SHALL be displayed: Happy Clients, Projects Completed, Team Members, Years Experience
+- [ ] About section — a heading with "About DigiView" SHALL be displayed
+- [ ] Process section — 4 steps SHALL be displayed: Discovery, Design, Development, Launch
+- [ ] Clients section — 6 client names SHALL be displayed
+- [ ] FAQ section — the answer SHALL toggle open
+- [ ] Testimonials section — a testimonial SHALL be displayed with name, role, and text
+- [ ] Blog section — 3 blog cards SHALL be displayed with images, titles, dates, and "Read more" links
+- [ ] Contact section — validation errors SHALL appear for name, email, and message

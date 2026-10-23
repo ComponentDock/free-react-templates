@@ -247,3 +247,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Launch section — the page SHALL show a white full-viewport section with a centered column
+- [ ] Offer modal shell — a dialog element SHALL be present with role="dialog" and aria-modal="true"
+- [ ] Close button — a button with aria-label "Close" SHALL be visible in the top-right corner
+- [ ] Modal logo — a centered SVG logo SHALL be rendered at the top of the modal content
+- [ ] Modal heading — the heading "Exclusives offer from Instagram" SHALL be displayed
+- [ ] Modal description — a paragraph SHALL be shown below the heading
+- [ ] Email subscription form — an email input field with placeholder "Enter your email address" SHALL be visible
+- [ ] Cancel text — the text "The sky was cloudless and of a deep dark blue." SHALL be displayed at the bottom
+- [ ] Dismiss actions — the modal SHALL close
+- [ ] Responsive behavior — the modal content SHALL stack vertically
+- [ ] Document title — the document title SHALL be "ModalRosa — Subscription Modal Popup"

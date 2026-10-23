@@ -66,3 +66,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Main Content — Light gray (#f5f5f5) background
+- [ ] Design — Poppins font from Google Fonts
+- [ ] Testing — Sidebar: profile rendering, nav items, active state switching, mobile toggle, overlay close, desktop visibility, footer link

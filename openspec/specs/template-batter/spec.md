@@ -122,3 +122,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile toggle — the navbar displays the "Batter" logo and all four navigation links
+- [ ] Hero section with CTA — it displays the heading "Instead of eating, you should feel the garnishing"
+- [ ] Features grid with three cards — three cards are displayed: "Stunning Visuals", "Clean Code", and "Punctuality"
+- [ ] Story section with dark background — it displays "Our Untold Story" heading
+- [ ] Portfolio works grid — six portfolio items are displayed in a responsive grid
+- [ ] Newsletter signup form — it displays "Subscribe for our Newsletter" heading
+- [ ] Footer widgets with contact info — three blocks are displayed: Address, Email Address, and Phone Number
+- [ ] App integration renders all sections — all eight sections are rendered in order

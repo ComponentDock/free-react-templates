@@ -192,3 +192,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Rouge" and a "Home" link pointing to the page root
+- [ ] Hero — it SHALL show a level-1 headline (e.g. "Be bold.Be beautiful.")
+- [ ] Intro section with stats — it SHALL show the heading "Why Choose Us?" and at least one lead paragraph
+- [ ] Services grid — it SHALL show the heading "Our Services"
+- [ ] Testimonials — it SHALL show the heading "Client Testimonials"
+- [ ] Footer — it SHALL show the site name "Rouge" and quick links
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

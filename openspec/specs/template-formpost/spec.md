@@ -126,3 +126,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] PageTitle — I should see a heading "Contact Form #09"
+- [ ] ContactInfo — I should see "Address" with "198 West 21th Street, Suite 721 New York NY 10016"
+- [ ] ContactForm — I should see text inputs for "Name", "Email", and "Subject"

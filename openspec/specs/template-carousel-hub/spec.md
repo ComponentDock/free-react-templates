@@ -72,3 +72,6 @@ authoritative again — CSS values are canonical over the screenshot
 - [ ] Responsive design verified for mobile, tablet, and desktop viewports.
 - [ ] 100% test coverage on all components.
 - [ ] Footer correctly includes link to `https://www.componentdock.com/`.
+- [ ] Hero Carousel Section — The template must display a prominent interactive image carousel with slide navigation (prev/next buttons and pagination dots)
+- [ ] Featured Collections / Grid — A structured grid section displaying featured items, categories, or portfolio cards with hover zoom effects and descriptions
+- [ ] Interactive Carousel Slider — Secondary card carousel showcasing testimonials, products, or featured media items with smooth slide transitions

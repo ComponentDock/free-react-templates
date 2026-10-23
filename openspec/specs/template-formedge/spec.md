@@ -175,3 +175,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-width dark background image — I see a full-width dark background image covering the viewport
+- [ ] Page title centered on background — I see "Contact Form #10" centered at the top in white text
+- [ ] Two-column content layout — I see contact info on the left and a white form card on the right
+- [ ] Contact info displays all items — I see a white icon and text "ADDRESS: 198 West 21th Street, Suite 721 New York NY 10016"
+- [ ] Contact form displays all fields in white card — I see a white card with rounded corners and shadow
+- [ ] Responsive behavior — the contact info and form card stack vertically

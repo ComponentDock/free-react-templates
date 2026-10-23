@@ -195,3 +195,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the nav shows the logo text "Pandemic"
+- [ ] Hero section — the hero shows heading "Stay Safe. Stay Home."
+- [ ] Statistics section — 3 stat cards are visible
+- [ ] What is Coronavirus section — 4 tip cards are visible with icons
+- [ ] How to Prevent section — 4 prevention items are displayed with icons
+- [ ] How To Protect Yourself section — two lists are visible: "You should do" and "You should avoid"
+- [ ] Symptoms section — 4 symptom cards are visible with icons
+- [ ] News & Articles section — 3 blog post cards are visible
+- [ ] App structure — the document title is "Pandemic — Health Information Template"

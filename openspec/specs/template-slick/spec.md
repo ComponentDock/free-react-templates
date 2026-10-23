@@ -210,3 +210,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Slick" and a "Home" link pointing to the page root
+- [ ] Hero — it SHALL show a level-1 headline (e.g. "WE'RE THE LAST OF BREED.")
+- [ ] About section — it SHALL show a heading (e.g. "ABOUT Our STORY")
+- [ ] Top prices — it SHALL show the heading "OUR TOP PRICES"
+- [ ] Categories — it SHALL show the heading "All We Do for You"
+- [ ] Services grid — it SHALL render three service cards (Stylish hair cut, Cut & hair style, Color & hair wash)
+- [ ] Testimonials — it SHALL show the heading "Customers Say About Us"
+- [ ] Footer — it SHALL show the site name "Slick" and contact info
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

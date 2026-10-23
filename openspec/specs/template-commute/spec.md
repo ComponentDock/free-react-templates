@@ -137,3 +137,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Render login form — I see "Sign In" heading
+- [ ] Remember me checkbox — the "Remember me" checkbox is unchecked
+- [ ] Forgot Password link — I navigate to #forgot
+- [ ] Social login buttons — I see "Login with Facebook" button
+- [ ] Form submission — the form submits without error

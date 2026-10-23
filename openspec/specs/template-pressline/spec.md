@@ -105,3 +105,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation links scroll to sections — the page scrolls to the corresponding section
+- [ ] Mobile navbar toggle — the mobile menu opens
+- [ ] Contact form clears on submission — all form fields are cleared

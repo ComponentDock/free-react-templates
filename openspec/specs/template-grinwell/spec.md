@@ -182,3 +182,10 @@ The footer SHALL display three columns: navigation links (Home, Services, News, 
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navbar displays navigation and branding — I see the "Grinwell" logo link
+- [ ] Hero section displays heading, video button, and CTAs — I see the heading "Dental Clinic for Everyone"
+- [ ] Features grid displays six service cards — I see six service cards arranged in a 3-column grid
+- [ ] Free quote form collects contact information — I see a name input field
+- [ ] Testimonials section displays client quotes — I see four testimonial cards
+- [ ] Why Choose Us section displays features and image — I see the heading "Why Choose Us"
+- [ ] Team section shows team member cards — I see three team member cards

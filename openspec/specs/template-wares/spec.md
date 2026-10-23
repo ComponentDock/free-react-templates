@@ -171,3 +171,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with search and cart — the logo "WARES" is visible
+- [ ] Category navigation — category links (Home, Hot Deals, Categories, etc.) are visible
+- [ ] Hero banners — the "New Collection" banner is visible with a Shop Now button
+- [ ] Product slider section — the section title "New Product Collection" is visible
+- [ ] Deals of the day — countdown units (Days, Hours, Mins, Secs) are displayed
+- [ ] Latest products — the section title "Latest Products" is visible
+- [ ] Picked for you — the section title "Picked For You" is visible

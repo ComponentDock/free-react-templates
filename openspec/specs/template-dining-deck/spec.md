@@ -119,3 +119,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with cursive branding — the navbar shows the "DiningDeck" logo and links for Home, About Us, Menu, Reservation, and Contacts
+- [ ] Hero section with food imagery — the hero section shows "Premium", "Quality", and "Restaurant & Dishes" text
+- [ ] About section with image and text — a restaurant image and descriptive paragraph are shown
+- [ ] Stats counters — 4 stat items with values (15+, 50+, 100+, 30+) and labels are visible
+- [ ] Features section — "Best Quality", "Seasonal Ingredients", and "Online Reservation" cards are shown
+- [ ] Reservation / Contact section — phone, address, and email contact details are shown
+- [ ] Design tokens match original — teal accent color is used for interactive elements and headings

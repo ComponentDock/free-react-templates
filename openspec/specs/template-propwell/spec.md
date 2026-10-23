@@ -176,3 +176,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header — the Header band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Hero — the Hero band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Filter Bar — the Filter Bar band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Recent Properties — the Recent Properties band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Services — the Services band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Featured Listings — the Featured Listings band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Looking Property — the Looking Property band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Popular Places — the Popular Places band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Reviews — the Reviews band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Latest News — the Latest News band SHALL be present at its documented position with the structure, copy and tokens named above
+- [ ] Partners — the Partners band SHALL be present at its documented position with the structure, copy and tokens named above

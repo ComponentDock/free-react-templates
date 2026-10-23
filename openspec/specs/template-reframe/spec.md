@@ -131,3 +131,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with sticky behavior and mobile toggle — the navbar shows the logo "Reframe", all nav links, and the "Quotation" button
+- [ ] Hero section with background image and CTA — the heading "We Are Leading The Way Construction Works" and subtitle are visible with a "Get Started" button linking to #contact
+- [ ] About section with text and image — the heading, blue underline accent, text, and image are visible
+- [ ] Projects grid section — three project cards appear with titles "House Renovation", "General Construction Building", and "Pre-Construction"
+- [ ] Services section with icon cards — three service cards appear with icons, titles, and descriptions
+- [ ] News section with article cards — four news cards appear with images, dates, and titles
+- [ ] Testimonials section — at least two testimonial cards appear with quotes and author names
+- [ ] CTA section — the heading "Contact Us For Projects or Need a Quotation" and a "Get Started" button are visible

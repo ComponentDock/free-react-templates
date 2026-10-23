@@ -188,3 +188,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Anvil" and links to Home, About, Services, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading
+- [ ] Stats section — it SHALL contain a heading "Let the number speaks for us."
+- [ ] Services section — it SHALL contain a heading "Our Specialty"
+- [ ] Grow section with testimonial — it SHALL contain a heading "Let's grow together"
+- [ ] Projects section — it SHALL show at least three project images with captions
+- [ ] Promo strip — it SHALL show "Contact us for quotations" and a contact button
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

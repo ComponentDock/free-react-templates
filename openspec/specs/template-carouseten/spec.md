@@ -90,3 +90,7 @@ The footer SHALL display the template name, copyright notice, and a link to Comp
 - [ ] Footer correctly links `https://www.componentdock.com/`.
 - [ ] No references to ColorLib remain in the app source code.
 - [ ] Build completes successfully with correct CNAME and homepage setup.
+- [ ] Hero Banner & Overview — the hero section displays a headline, description, and CTA buttons
+- [ ] Interactive Thumbnail Carousel — the active slide updates smoothly, displaying the corresponding image, caption, and title
+- [ ] Feature Highlights Grid — they see cards with icons, titles, and descriptions
+- [ ] Newsletter Subscription — a success message is displayed confirming the subscription

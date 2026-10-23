@@ -276,3 +276,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Heading section — a light page (`#f8f9fd`) SHALL show a centered heading "Statelist"
+- [ ] Dropdown trigger — a white trigger SHALL show below the heading with:
+- [ ] Dropdown with search and checkbox options — a white dropdown list SHALL appear below the trigger
+- [ ] Quantity indicator — the quantity SHALL show "(Any)"
+- [ ] Dropdown dismissal — the dropdown list SHALL close
+- [ ] Page composition — the heading and the dropdown control SHALL render in the main

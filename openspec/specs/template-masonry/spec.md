@@ -194,3 +194,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Screenshot review: sections, order, yellow brand, Oswald/Roboto fonts
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Masonry" and links to Home, About, Services, Portfolio, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading
+- [ ] About section — it SHALL contain a heading "We Are Creating Since 1990"
+- [ ] Services section — it SHALL contain a heading "Our Service Offerings"
+- [ ] Portfolio section — it SHALL contain a heading "Our Portfolio Museum"
+- [ ] Testimonials section — it SHALL show at least one quote with an author name
+- [ ] Contact section — it SHALL contain a heading "Send Us Messages"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

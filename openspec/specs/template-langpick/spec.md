@@ -119,3 +119,10 @@ The dropdown SHALL support keyboard navigation with ArrowDown, ArrowUp, Enter, S
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Page renders with heading and dropdown — they see a heading "Language Selector"
+- [ ] Dropdown opens and shows options — options PHP, Javascript, Java, jQuery, SQL, Wordpress, Python, .Net, HTML, CSS are visible
+- [ ] User can select multiple languages — "PHP" is selected
+- [ ] User can deselect languages — "PHP" is deselected
+- [ ] Select All selects all options — all 10 languages are selected
+- [ ] Clear All clears selections — no languages are selected
+- [ ] Keyboard navigation works — the dropdown opens

@@ -71,3 +71,7 @@ Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/b
 - [ ] `scripts/verify-app.sh btnforge` passes successfully
 - [ ] Footer links `https://www.componentdock.com/`
 - [ ] `public/CNAME` contains `btnforge.free.componentdock.com`
+- [ ] Header & Navigation — it displays the brand title "#06 — Bootstrap 4 Buttons" with a clean navbar and dark/light mode toggle
+- [ ] Button Sizes Showcase — it displays Large, Medium, and Small buttons with appropriate padding and font sizes
+- [ ] Button Colors Showcase — it displays Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray, and White buttons
+- [ ] Full-width Button — it displays a full-width primary button

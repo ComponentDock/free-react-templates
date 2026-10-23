@@ -157,3 +157,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with info bar and sticky navigation — the top bar shows email, phone, and address
+- [ ] Hero section with search form — a yellow script headline "Find your Next tour!" is displayed
+- [ ] Services section with 4 icon cards — 4 service cards are shown in a row
+- [ ] Favourite Places with 6 tour cards — 6 tour cards are displayed in a 3-column grid
+- [ ] Video area with parallax background — a yellow play button is centered
+- [ ] About company section with image and checklist — a 2-column layout is shown
+- [ ] Testimonial section — a quote icon and testimonial text are shown
+- [ ] Blog section with 2 cards — 2 blog cards are displayed

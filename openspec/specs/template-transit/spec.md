@@ -89,3 +89,7 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 - [ ] All Vitest tests pass with 100% coverage.
 - [ ] Responsive design verified across mobile, tablet, and desktop viewports.
 - [ ] Footer contains the mandatory Component Dock attribution link.
+- [ ] Hero Banner & Navigation — the top bar displays contact info (phone, email, hours) and social icons
+- [ ] Services Section — at least 4 core logistics services are displayed with icons, titles, short descriptions, and "Read More" links
+- [ ] About Us & Statistics Counter — key metrics are shown with animated or static counts (e.g., 99% Satisfied Clients, 1200+ Delivered Goods, 50+ Global Branches)
+- [ ] Tracking / Quote Calculator Section — a confirmation message or estimated shipping breakdown is shown

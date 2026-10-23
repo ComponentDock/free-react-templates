@@ -139,3 +139,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Blue-themed navigation bar — the navbar shows the logo, all five navigation links, and the Book Appointment button
+- [ ] Hero section with medical imagery — the subtitle, heading, and Discover More button are displayed
+- [ ] Welcome section with doctor image — a doctor image, heading, paragraph, and Our Departments button are displayed
+- [ ] Department cards grid — six department cards are displayed with icons, titles, and descriptions
+- [ ] Doctor team cards — three doctor cards are shown with name, specialty, and image
+- [ ] Appointment booking form — all six form fields and the submit button are displayed
+- [ ] Quality health features section — four feature cards are displayed with icons and descriptions
+- [ ] Emergency contact bar — phone number, address, and working hours are displayed

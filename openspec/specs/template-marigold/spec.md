@@ -226,3 +226,11 @@ and a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Marigold" and navigation links
+- [ ] Hero — it SHALL show a subheading (e.g. "UI/UX Designer & Developer")
+- [ ] About section — it SHALL show at least four stat counters (Happy Clients, Projects Done, Cups of Coffee, Working Hours)
+- [ ] Skills section — it SHALL show the heading "My Skills"
+- [ ] Services section — it SHALL show at least six service cards
+- [ ] Pricing section — it SHALL show the heading "Choose Your Pricing Plan"
+- [ ] Testimonials section — it SHALL show the heading "Happy Guests"
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

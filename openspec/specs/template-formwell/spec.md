@@ -188,3 +188,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full-page map background — the entire page background shows a map (Google Maps tile or static map image)
+- [ ] Centered contact card — I see a white card centered horizontally and vertically on the page
+- [ ] Banner image section — the top section of the card shows a banner image (person with laptop or similar)
+- [ ] Contact form — I see a "Full Name:" label with a text input showing placeholder "John Doe"
+- [ ] Submit button — I see a green "Submit" button with an arrow icon
+- [ ] Responsive layout — the card takes full width with horizontal padding

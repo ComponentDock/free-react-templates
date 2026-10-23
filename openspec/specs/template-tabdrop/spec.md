@@ -53,3 +53,5 @@
 - [ ] Footer links to `https://www.componentdock.com/`.
 - [ ] No mention of ColorLib in app source code.
 - [ ] CNAME points to `tabdrop.free.componentdock.com`.
+- [ ] Hero / Header Section — it displays a badge ("FAQ & Accordion"), a main title ("Frequently Asked Questions"), and a helpful subtitle
+- [ ] Interactive Accordion Sections — that item expands to show its detailed response text, while other items remain collapsed or can be toggled independently

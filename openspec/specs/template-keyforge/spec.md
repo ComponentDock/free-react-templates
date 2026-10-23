@@ -126,3 +126,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — Renders brand name "KeyForge"
+- [ ] Hero Slider — Displays slide heading and description
+- [ ] Quote Form — Shows all three input fields
+- [ ] Services — Renders all 6 service cards
+- [ ] About — Shows heading and feature list
+- [ ] Testimonials — Shows customer quotes

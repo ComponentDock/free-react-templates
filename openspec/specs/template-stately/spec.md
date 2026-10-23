@@ -220,3 +220,11 @@ contact information (address, phone, email).
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — it SHALL show the site name "Stately" linking to `#
+- [ ] Hero section — it SHALL show the subheading "Welcome To Our Site" in uppercase
+- [ ] Welcome section — it SHALL show a large image on the left side
+- [ ] Why Choose Us section — it SHALL show a sidebar with counter numbers and labels
+- [ ] Grow Your Business section — it SHALL show a large image on the left
+- [ ] Recent Blog Posts section — it SHALL show the subheading "Our Blogs" and heading "Recent Blog Posts"
+- [ ] Why Us section — it SHALL show the subheading "Why Us" and heading "Why Are We Awesome?"
+- [ ] Testimonials section — it SHALL show the subheading "Testimonial" and heading "Happy Clients"

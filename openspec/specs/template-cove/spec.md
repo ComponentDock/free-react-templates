@@ -159,3 +159,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Cove" and a "Home" link pointing to the page root
+- [ ] Error section with emoji illustration — it SHALL show the emoji illustration with an accessible label inside the light circle
+- [ ] Footer — it SHALL show the site name "Cove" and a tagline
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the error section in the main landmark, and the Footer in the contentinfo landmark

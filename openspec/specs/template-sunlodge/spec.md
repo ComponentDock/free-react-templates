@@ -174,3 +174,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with correct links and contact info — the navbar shows links: Home, Rooms, About, Blog, Contact
+- [ ] Hero displays headline with split layout — the hero displays "World Class Accommodation" heading
+- [ ] About section shows description and overlapping images — a heading and description text are visible
+- [ ] Popular rooms section displays room cards — four room cards are displayed
+- [ ] Video preview section shows play button — a play button is visible
+- [ ] Booking form displays all fields — the form shows Check In, Check Out, Room, Guest fields
+- [ ] Blog cards section shows post cards — three blog cards are displayed
+- [ ] Testimonials section shows client quotes — client quotes with author names are visible
+- [ ] Instagram feed shows photo grid — six photo thumbnails are displayed

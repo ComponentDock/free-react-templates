@@ -135,3 +135,11 @@ The system SHALL render a deep purple footer containing subject links, community
 - [ ] Build & Lint: `npm run build` and `npm run lint` succeed cleanly
 - [ ] Attribution: Footer links `https://www.componentdock.com/` ("Component Dock"), no ColorLib references in app code
 - [ ] CNAME: `public/CNAME` contains `eduflow.free.componentdock.com`
+- [ ] Navigation bar — it SHALL show the brand title "EduFlow" linking to `#home
+- [ ] Hero search section — the search action SHALL trigger smoothly or filter courses accordingly
+- [ ] Popular courses grid — each card SHALL display a picsum-seeded thumbnail image, course title, category tag, rating badge, and "Enroll Now" or details button
+- [ ] Platform overview section — it SHALL display aggregate statistics (130,000+ courses, expert instructors, millions of students) and a "Browse Courses" CTA button
+- [ ] Students viewing section — it SHALL display highly rated courses with instructor names and pricing details
+- [ ] Testimonials section — they SHALL show student feedback quotes, student names, roles, and avatar images on the distinctive warm background
+- [ ] Top categories grid — it SHALL display 8 distinct category cards with icons and course count badges
+- [ ] Become an instructor section — interactive triggers SHALL respond correctly

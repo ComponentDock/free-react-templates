@@ -164,3 +164,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header displays brand and navigation — the navbar displays the brand "Tribunal"
+- [ ] Hero section displays law firm headline — the hero section displays the heading "The Greatest Law Firm You Can Trust"
+- [ ] Stats counter displays firm metrics — the count "1,000" is displayed with label "Qualified Lawyers"
+- [ ] About section displays firm history — the heading "Founded in 1856, Our Agency has over 175 lawyers" is displayed
+- [ ] Practice areas section displays 6 service cards — the heading "What We Do" is displayed
+- [ ] Testimonials section displays client quotes — the heading "Testimonials" is displayed
+- [ ] Team section displays attorney profiles — the heading "Our Attorneys" is displayed
+- [ ] Contact form captures user inquiry — the heading "Free Legal Consultation" is displayed
+- [ ] Blog section displays article previews — the heading "Our Blog" is displayed

@@ -413,3 +413,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar — it SHALL show a phone number and location/address on the left side
+- [ ] Navbar — it SHALL show links for Home, About, Attorneys, Practice Areas,
+- [ ] Hero slider — the first slide SHALL contain a heading and a CTA button
+- [ ] Counter section — it SHALL show "Qualified Lawyers" with value 1500
+- [ ] About section — it SHALL contain a heading "80 Years Of Experience In Legal
+- [ ] Practice Areas section — it SHALL contain 4 cards for: Bank & Financial, Personal Injury,
+- [ ] Appointment section — the left side SHALL show a "Our Performance" heading and 3
+- [ ] Case Studies section — it SHALL show 4 cards, each with a background image
+- [ ] CTA Banner section — it SHALL contain a heading "Are You Facing Criminal Charges?"
+- [ ] Testimonials section — it SHALL show at least 5 testimonials
+- [ ] Blog section — it SHALL show 3 blog post cards
+- [ ] Newsletter CTA section — it SHALL contain a heading "Need Legal Adviser?"
+- [ ] Page composition — the page SHALL compose the TopBar + Navbar in the banner

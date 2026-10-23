@@ -420,3 +420,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run readme:status` regenerates README status; TEMPLATES.md row
       marked `[x]` with the live URL on merge.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the logo text "Dialpad"
+- [ ] Hero section — the hero SHALL display the subtitle "Discover the Colorful World"
+- [ ] Features section — it SHALL display three feature cards: "Online Support" (headset
+- [ ] Testimonials section — it SHALL display the heading "Why Choose Us Your Trusted Partner"
+- [ ] Offered services section — it SHALL display the heading "Our Offered Services"
+- [ ] Stats section — it SHALL display five stat items: "2536 Projects Completed",
+- [ ] Services section — it SHALL display the heading "Some Awesomeness that should share"
+- [ ] About info section — it SHALL display the heading "Responsible Customer Support"
+- [ ] About video section — it SHALL display the heading "We Believe that Interior beautifies
+- [ ] Brand logos section — it SHALL display five partner logos in a horizontal row
+- [ ] Contact form section — it SHALL display the heading "If you need, Just drop us a line"
+- [ ] Page composition — all twelve sections appear in the source order

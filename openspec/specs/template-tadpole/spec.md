@@ -183,3 +183,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact information and social links — the top bar displays the email address, phone number, and physical address
+- [ ] Navbar provides navigation and mobile menu — links for Home, About, Programs, Teachers, Events, Gallery, Blog, Contact are visible
+- [ ] Hero section displays headline and CTAs — the headline "Where Little Minds Grow Big Dreams" is displayed
+- [ ] Features section shows service cards — cards for "Playful Learning", "Creative Arts", and "Nature Exploration" appear
+- [ ] About section displays content — the heading "A Place Where Every Child Matters" is displayed
+- [ ] Programs section shows curriculum cards — cards for "Tiny Tots", "Little Explorers", and "Big Beginnings" appear
+- [ ] Teachers section shows staff cards — cards for Sarah Mitchell, James Wilson, and Emily Chen appear
+- [ ] Events section shows countdown timer — the countdown shows numeric values for Days, Hours, Minutes, Seconds
+- [ ] Testimonials section shows parent feedback — the next testimonial slide is shown
+- [ ] Blog section shows recent posts — three blog posts with titles, dates, and excerpts appear

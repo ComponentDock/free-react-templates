@@ -359,3 +359,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Section order matches the preview 1:1; tokens (#4760FF, #FA8F77, #140C40, #f7f7f7, Roboto) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `buzzer-<n>`, Google Fonts link for Roboto, lucide-react icons only)
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show "Buzzer" as the brand on the left
+- [ ] Hero slider — the hero SHALL show the headline "Entrepreneur. Investor
+- [ ] About section — the left column SHALL show the eyebrow "About Us" and the
+- [ ] Services grid — the section SHALL show the eyebrow "How we can help?" and the
+- [ ] Testimonials carousel — the section SHALL use a background image with a section-bg2
+- [ ] Team section — the section SHALL show the eyebrow "Our Team" and the heading
+- [ ] Secondary services grid — it SHALL show 2 service cards in a 2-column layout
+- [ ] Call-to-action section — the section SHALL show the heading "Get started with our
+- [ ] Full page composition — the page SHALL compose the Navbar in the banner landmark, all

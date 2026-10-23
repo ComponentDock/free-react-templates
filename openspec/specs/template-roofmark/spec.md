@@ -155,3 +155,10 @@ The app source code SHALL NOT contain any references to "colorlib" in files unde
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Header displays contact info and navigation — the top bar shows a phone number, address, and email
+- [ ] Hero slider displays property slides — a full-width hero image carousel is visible
+- [ ] Search bar allows property search — a "Find your home" search bar appears
+- [ ] Featured properties section shows listings — a section title reads "the best deals" and "Featured Properties"
+- [ ] Hot deal section shows featured listing — a large image is on the left with tags
+- [ ] Testimonials section displays client quotes — an image is on the left with a dark overlay
+- [ ] Footer displays site information — a dark purple background is visible

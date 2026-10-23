@@ -99,3 +99,4 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] REQ-2: Portfolio Grid — THEN it shows 9 portfolio items each with an image, category, title, description, and "View Portfolio" button

@@ -148,3 +148,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page title — the heading "Sign Up #01" is visible above the card
+- [ ] Signup card heading — the heading "Hello!" is visible
+- [ ] User avatar — a gray circular avatar with a person icon is visible
+- [ ] Form fields — a Full Name input with placeholder "John Doe" is visible
+- [ ] Form validation — "Full Name is required" error is displayed
+- [ ] Sign Up button — a "Sign Up" button with golden background is visible
+- [ ] Social login — "or" text is visible
+- [ ] Sign in redirect — "I'm already a member!" text is visible

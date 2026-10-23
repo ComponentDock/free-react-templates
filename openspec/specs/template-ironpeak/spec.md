@@ -121,3 +121,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders brand and navigation links — the brand "Ironpeak" link, all six nav links, and the "Become a Member" button are visible
+- [ ] Hero section displays heading and CTAs — the h1 heading "Health is wealth" and both CTA links are visible
+- [ ] Featured Classes section shows class cards — four class cards are visible with prices and names
+- [ ] Schedule section shows class times in a grid — all four items show their class name, time, date, and join button
+- [ ] Trainers section displays trainer profiles — three trainer profiles are visible with names and roles
+- [ ] Testimonials section shows client quotes — three testimonial quotes are visible with author names
+- [ ] Blog section shows post cards — two blog cards are visible with titles, dates, and "Read More" buttons

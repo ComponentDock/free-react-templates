@@ -179,3 +179,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full viewport background with dark overlay — the page has a full-viewport background image
+- [ ] Category dropdown — the left section contains a category dropdown
+- [ ] Text input — the middle section contains a text input
+- [ ] Search button — a gradient SEARCH button is displayed on the right
+- [ ] Responsive behavior — the form sections stack vertically
+- [ ] Accessibility — the category dropdown is focusable via keyboard

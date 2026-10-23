@@ -114,3 +114,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and social links — the navbar displays the logo, all five navigation links, and all six social icon links
+- [ ] Hero section with background image and CTA — the hero section displays the heading "Digital Agency", subheading "of the year 2024", credit text, and a "View Project" button
+- [ ] Category tiles section — two category tiles are displayed with the labels "Agency" and "What We Do?"
+- [ ] Newsletter subscription section — the input displays the typed email
+- [ ] Portfolio gallery with filter — all three gallery items are visible
+- [ ] Contact form — the form clears all fields

@@ -125,3 +125,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Two-column layout — the intro text and form card are displayed side by side
+- [ ] Intro text column — a heading "Get in Touch" is visible
+- [ ] Contact form with four fields — the First Name field value is "Jane"
+- [ ] Form submission — the form submission is handled without page reload
+- [ ] Accessible form — a form with aria-label "Contact form" is present

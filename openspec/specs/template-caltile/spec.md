@@ -66,3 +66,5 @@ As a visitor, I want clear footer navigation and branding.
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links Component Dock correctly (`https://www.componentdock.com/`)
 - [ ] No reference to ColorLib in app source files
+- [ ] Calendar Dashboard & Date Grid — the current month grid is displayed with correct days of the week headers (Sun-Sat)
+- [ ] Event Management — GIVEN** the user has selected a date

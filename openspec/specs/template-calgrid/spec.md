@@ -84,3 +84,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Centered page layout with dual calendar grids — the page shows a centered heading and two calendar grids
+- [ ] Calendar grid with month header and weekday row — it shows the correct number of day buttons with empty cells before the 1st
+- [ ] Month navigation with year rollover — the calendar displays the subsequent month with correct day positions
+- [ ] Today highlighting with accent color — today's date button has the accent background and "(today)" in its label
+- [ ] Accessible date buttons and navigation — its aria-label includes the day number, month name, and year

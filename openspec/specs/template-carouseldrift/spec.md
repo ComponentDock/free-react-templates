@@ -165,3 +165,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar and Navigation — a banner region is rendered with the site name "CarouselDrift", a Home link, and a Products link
+- [ ] Hero Section — a level-1 heading "Beautiful Carousel Showcase" is displayed with an "Explore Carousel" link pointing to `#carousel` and a "View Features" link pointing to `#features
+- [ ] Interactive Carousel Slider — the first slide title "DREAM DESTINATION" and subtitle "Tropical Paradise Resort" are visible
+- [ ] Features and Highlights Grid — six feature cards are rendered with titles: "Responsive Layout", "Touch & Gesture Support", "Customizable Styling", "Smooth Transitions", "Mobile-First Design", and…
+- [ ] Newsletter Subscription — a "Stay Updated" heading, email input, and "Subscribe" button are present

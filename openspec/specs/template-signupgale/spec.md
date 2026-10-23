@@ -235,3 +235,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Split-screen page layout — the left side displays a full-height illustration area
+- [ ] Flat vector illustration — an SVG or image illustration is visible
+- [ ] Signup form heading and subtitle — "Sign Up" heading is visible in dark charcoal
+- [ ] Form input fields — a text input with placeholder "Full name" is visible
+- [ ] Terms and conditions checkbox — the checkbox is checked by default
+- [ ] Register button — a "Register" button is visible
+- [ ] Social login section — a divider reads "— or register with —" in gray text
+- [ ] Form validation — required fields — validation errors appear for required fields

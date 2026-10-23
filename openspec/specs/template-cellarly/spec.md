@@ -130,3 +130,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders all nav links and brand — Given** the page is rendered
+- [ ] Cart dropdown opens/closes on click — Given** the page is rendered
+- [ ] Hero section displays heading and CTA buttons — Given** the page is rendered
+- [ ] Features section shows 3 feature cards — Given** the page is rendered
+- [ ] About section shows heading, description, and years counter — Given** the page is rendered
+- [ ] CategoryGrid renders 6 categories — Given** the page is rendered
+- [ ] ProductGrid renders 8 products with badges and prices — Given** the page is rendered
+- [ ] Testimonials section shows heading — Given** the page is rendered
+- [ ] BlogSection shows 4 blog entries — Given** the page is rendered
+- [ ] Footer renders all columns and links — Given** the page is rendered
+- [ ] Mobile nav toggle works — Given** the page is rendered
+- [ ] Page is fully responsive — Given** the page is rendered

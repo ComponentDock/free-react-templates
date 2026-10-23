@@ -145,3 +145,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders navigation links — the navbar shows Radiant. logo, and links: Home, Features, Pricing, Services, About, Contact
+- [ ] Hero section displays headline and feature cards — the hero shows the headline "Design is not just what it looks like and how it feels. Design is how it works."
+- [ ] About Us section shows three feature columns — three feature headings are visible: Years of Experience, Innovative, Solutions
+- [ ] Gallery renders masonry grid of images — five gallery images are visible in a grid layout
+- [ ] Pricing section shows three plans — three pricing cards are visible with plan names Free, Premium, Enterprise
+- [ ] Features split section displays two feature cards — Creativity and Solutions headings are visible
+- [ ] Testimonial section shows a quote — a testimonial quote is visible from "James Wilson", CEO, Co-Founder

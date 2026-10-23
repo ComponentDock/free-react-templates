@@ -113,3 +113,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section with background image and heading — a heading "WHAT ARE YOU LOOKING FOR?" SHALL be visible
+- [ ] Search form with input and icon button — the search input SHALL have placeholder "Type to search."
+- [ ] Category navigation strip — category links "New Arrivals", "Ladies", "Mens", "Accessories", and "Sale" SHALL be visible
+- [ ] Responsive design — the heading, search bar, and category nav SHALL all be visible

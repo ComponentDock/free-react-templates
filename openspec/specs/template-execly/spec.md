@@ -191,3 +191,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with sticky navigation — the header displays the brand name "Execly"
+- [ ] Hero banner section — the hero section displays the subtitle "Discover the Colorful World"
+- [ ] About section with features — the about section displays the heading "We Believe that Interior beautifies total"
+- [ ] Services grid — the services section displays the heading "What we can offer for you"
+- [ ] Features alternating layout — two "Basic Revolutions" headings are displayed
+- [ ] Portfolio gallery — six portfolio images are rendered
+- [ ] Stats counter section — the stats section displays 2,536 Projects Completed, 6,784 Really Happy Clients, 1,059 Total Tasks Completed, 2,239 Cups of Coffee Taken, and 435 In House Professionals
+- [ ] Recent works section — the heading "Our Recent Works may impress you" is displayed
+- [ ] Brand logos section — five brand placeholders are displayed (Brand One through Brand Five)
+- [ ] Contact form — the heading "You can drop us a line" is displayed
+- [ ] Document title — document.title equals "Execly — Corporate Business Template"

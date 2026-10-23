@@ -225,3 +225,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Rently" and links to
+- [ ] Hero section — it SHALL contain a level-1 heading "Fast & Easy Way To Rent A
+- [ ] Booking steps section — it SHALL show the steps Choose Your Pickup Location, Select the
+- [ ] Featured vehicles — it SHALL contain a heading "Feeatured Vehicles"
+- [ ] About section — it SHALL contain a heading "Welcome to Rently"
+- [ ] Services section — it SHALL contain a heading "Our Latest Services"
+- [ ] Driver CTA — it SHALL show the earn-with-us headline
+- [ ] Testimonials section — it SHALL contain a heading "Happy Clients"
+- [ ] Blog section — it SHALL contain a heading "Recent Blog"
+- [ ] Footer — it SHALL show link columns (Information, Customer Support) and a
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -167,3 +167,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — Sticky header:** Navbar sticks to top on scroll
+- [ ] Hero — Heading:** "Agricultural solution" heading is visible
+- [ ] About — Image:** About section image is visible
+- [ ] Services — Cards:** Two service cards are rendered
+- [ ] Stats — Counters:** Four stat items are displayed
+- [ ] Why Choose Us — Features:** Three feature items with checkmark icons are visible
+- [ ] Video — Play button:** Video play button is visible and clickable
+- [ ] Tips — Posts:** Two blog posts are displayed
+- [ ] Contact — Info:** Phone, email, and address are displayed
+- [ ] Accessibility — Semantic HTML:** Uses `<header>`, `<main>`, `<footer>`, `<nav>`, `<section>

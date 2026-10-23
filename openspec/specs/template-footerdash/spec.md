@@ -136,3 +136,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Content area renders above footer — a white content area is visible in the upper portion of the viewport
+- [ ] Footer section renders with dark background — the footer section has a dark background (#121212)
+- [ ] Subscription form is present — the footer displays a centered subscription form
+- [ ] Navigation links are present — the footer displays navigation menu links including "Home", "About", "Services", "Portfolio", "Blog", "Contact"
+- [ ] Social media icons are present — the footer displays social media icons (Facebook, Twitter/X, Instagram, LinkedIn, YouTube)
+- [ ] Footer padding and spacing — the footer has 80px vertical padding

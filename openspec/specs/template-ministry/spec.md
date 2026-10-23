@@ -189,3 +189,13 @@ The template SHALL NOT contain any references to "Colorlib" or
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navbar with navigation links and Donate CTA — the navbar displays links for Home, About, Ministries, Sermons, Events, Blog, and Contact
+- [ ] Hero section with background image and CTA — the hero shows "Transforming Lives" subheading, "Total Surrender to God" heading, description text, and "Become A Volunteer" button
+- [ ] Services section with cards and quote — three cards for Worship, Connect, and God's Love are displayed with icons and descriptions
+- [ ] About section with image and text — the image, "Connect, Grow and Serve with Us" heading, description, and "Learn More" button are visible
+- [ ] Counter section with statistics — the values 1,005,000 (Members), 65,000 (Pastors), 500,000 (Donations), and 50 (Churches) are shown
+- [ ] Sermons section with sermon cards — three sermon cards are displayed with Watch Sermons and Download Sermons buttons
+- [ ] Testimony section with testimonials — four testimonials with avatars and names are displayed
+- [ ] Blog section with blog cards — three blog cards with images, dates, authors, and Read more buttons are displayed
+- [ ] Events section with event listings — three event items with images, details, and More Details buttons are displayed
+- [ ] Gallery section with image grid — seven images are displayed in a grid with accessible labels

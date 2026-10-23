@@ -141,3 +141,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and controls — the navbar displays the Snowline logo and all navigation links
+- [ ] Hero banner with call-to-action — the subtitle "Winter Fashion", heading "Fashion Collection 2024", and "Shop Now" button are visible
+- [ ] Feature categories with hover overlays — three product category images are displayed in a row
+- [ ] New arrivals with filter tabs — all six products are displayed
+- [ ] Shipping info feature cards — four feature cards with titles and descriptions are displayed
+- [ ] Instagram photo feed — five square photos are displayed in a row
+- [ ] Responsive layout — navigation collapses to hamburger, feature cards stack vertically, and product grid shows one column

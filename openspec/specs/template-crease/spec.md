@@ -43,3 +43,5 @@ Recreation of ColorLib **Accordion 05** (`https://colorlib.com/wp/template/accor
 - [ ] Typecheck, lint, and build pass successfully
 - [ ] Footer correctly points to Component Dock
 - [ ] No mention of ColorLib in application source code
+- [ ] Hero / Header Section — As a visitor, I see a centered section heading "Accordion #05" with a generous padding rhythm (`ftco-section` padding)
+- [ ] Interactive Accordion Cards — As a visitor, I can view an interactive accordion component (`.myaccordion`) containing collapsible items (Manage, Location, Hobbies, etc.)

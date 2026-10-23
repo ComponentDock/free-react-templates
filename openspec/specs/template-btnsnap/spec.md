@@ -91,3 +91,6 @@ Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/templa
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Section Header and Style Showcase — solid and outline primary buttons with text, icons, and icon-only variants are displayed correctly
+- [ ] Color Palette Showcase — buttons styled with primary (`#007bff`), secondary (`#6c757d`), tertiary (`#ff4893`), and quaternary (`#01d28e`) colors are rendered with proper hover states
+- [ ] Social Media Buttons Showcase — Twitter, Facebook, LinkedIn, Pinterest, and Dribbble buttons are rendered in solid, outline, rounded (`btn-round`), icon-only, and stat counter badge formats (e.g.…

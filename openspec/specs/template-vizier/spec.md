@@ -182,3 +182,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header / Navigation — the logo "Vizier" is visible
+- [ ] Hero Carousel — the model name "Jesse Edwards" is visible
+- [ ] About Section — the heading "We Have 20+ Years Practical Experience in Agency" is visible
+- [ ] Services Section — four service cards are visible: Fashion Shows, Special Events, Commercial Photo, Model School
+- [ ] Model Gallery with Tabs — 8 model cards are displayed
+- [ ] Client Feedback / Testimonials — the heading "Client Feedback" is visible
+- [ ] CTA Section — the heading "Do You Want To Be A Model?" is visible
+- [ ] Blog / Latest News — the heading "Latest News" is visible

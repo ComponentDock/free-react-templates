@@ -173,3 +173,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays all sections — I see a navbar with "Palette." brand
+- [ ] Hero section shows designer info — I see a hero section with heading "Creative UI/UX Designer & Developer"
+- [ ] Stats section shows counters — I see 4 stat items: Project Complete, Happy Clients, Cups of coffee, Years experienced
+- [ ] About section shows personal info — I see "About Me" heading
+- [ ] Skills section shows progress — I see 6 skill cards: CSS, HTML, jQuery, Photoshop, WordPress, SEO
+- [ ] Services section shows offerings — I see 8 service cards in a grid
+- [ ] CTA banner prompts contact — I see "Have a project on your mind?" heading
+- [ ] Projects section shows portfolio — I see 8 project cards with images and overlay text
+- [ ] Testimonials section shows reviews — I see testimonial cards with quotes, names, and positions
+- [ ] Blog section shows posts — I see 3 blog cards with images, dates, and titles
+- [ ] Contact section has form and info — I see a contact form with name, email, subject, message fields

@@ -354,3 +354,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No ColorLib assets copied (picsum seeds `equity-<n>`, Google Fonts links, lucide/inline-SVG icons only)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Equity" with the brand
+- [ ] Hero carousel — the hero SHALL show a full-viewport (100vh, min 700px)
+- [ ] Featured services strip — it SHALL show three cards titled Business Analytics,
+- [ ] Investors section — it SHALL show the uppercase eyebrow and heading "Our
+- [ ] About section — it SHALL show a video figure (photo with a round white play
+- [ ] Services section — it SHALL show the heading "Our Services" on a #f4f5f9
+- [ ] Leadership section — it SHALL show the heading "Our Leadership"
+- [ ] Press section — it SHALL show the heading "Press Releases" beside a list of
+- [ ] Testimonials section — it SHALL show a photo background with a dark overlay and the
+- [ ] Blog section — it SHALL show the uppercase eyebrow "Latest Blog Posts" and
+- [ ] Contact section — it SHALL show the heading "Contact Us"
+- [ ] Footer — the footer SHALL have a #333333 background
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

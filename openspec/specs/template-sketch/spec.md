@@ -142,3 +142,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays navigation and branding — the navbar shows the "Sketch" logo, all four navigation links, and the "Get Started" CTA
+- [ ] Hero section displays headline and features — the hero shows the h1 heading "Create, Code, and Launch." and a "Get Started" button linking to #get-started
+- [ ] Achievements section shows statistics — all four stat values and their titles are visible
+- [ ] HowItWorks shows 3-step process — steps 1, 2, and 3 are displayed with titles and descriptions
+- [ ] Services section displays offerings — "Modern responsive design", "Performance optimized", and "SEO friendly structure" are listed, and a "Get Started" CTA is visible
+- [ ] Testimonials display client feedback — testimonial cards for Adam Aderson, Sarah Mitchell, and James Cooper are visible
+- [ ] Blog section shows recent posts — at least 3 blog articles are displayed with dates and titles

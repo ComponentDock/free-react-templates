@@ -193,3 +193,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Bloom" and a "Home" link pointing to the page root
+- [ ] Hero — it SHALL show a level-1 headline (e.g. "Beauty Salon")
+- [ ] Beauty experts team — it SHALL show the heading "Our Beauty Experts"
+- [ ] Our Work portfolio — it SHALL show the heading "Our Work"
+- [ ] Beauty pricing — it SHALL show the heading "Beauty Pricing"
+- [ ] Footer — it SHALL show the site name "Bloom" and contact details
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

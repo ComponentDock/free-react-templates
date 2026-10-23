@@ -212,3 +212,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Edifice" and links to Home, Feature, Project, Service, Blog, and Contact
+- [ ] Hero section — it SHALL show the eyebrow "Discover the Colorful World"
+- [ ] Features section — it SHALL show at least three cards titled "Building Drawings" with blurbs
+- [ ] Projects section — it SHALL contain a heading "Alex Complex for residence"
+- [ ] Facts band — it SHALL show at least four stat counters (Projects Completed, Happy Clients, Expert Workers, Awards Won)
+- [ ] Services section — it SHALL contain a heading "Some Features that Made us Unique"
+- [ ] Testimonials section — it SHALL contain a heading "Why we are the best"
+- [ ] Blog section — it SHALL contain a heading "Latest From Blog"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -256,3 +256,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with transparent background and scrolled state — logo and nav links (Home, About, Causes, Blog, Contact) are visible
+- [ ] Hero section displays background image, overlay, heading, CTAs, and donation widget — hero shows bg image + dark overlay + H1 "Raising Hope / To the Homeless & Hopeless People" in Patrick Hand
+- [ ] Donation widget form handles input — default submit is prevented (no backend)
+- [ ] Intro/About section renders two-column layout with feature cards — section shows left image + right content with heading "We Help Thousands of Children to Get Their Education" + 3 feature cards…
+- [ ] Counter section displays four statistics over background image — four stat cards show $60M, 9200, 5800, 2750 over bg image
+- [ ] Causes carousel displays cause cards with progress — 3+ cause cards visible in carousel
+- [ ] CTA/Image section renders split layout — left side shows "The Smallest Act of Kindness..." heading + Donate Now / Become Volunteer buttons, right side shows bg image
+- [ ] Volunteers grid displays four volunteer cards — 4 volunteer cards in responsive grid (1 col mobile, 2 col tablet, 4 col desktop)
+- [ ] Testimonials carousel displays testimonial cards — testimonial cards visible with navigation
+- [ ] CTA Banner section renders — "Do You Care Our Children?" heading + "Be A Volunteer" button visible
+- [ ] Blog section displays three blog cards — 3 blog cards in responsive grid
+- [ ] Design tokens applied correctly — primary gold #d49a3a used for buttons/accents, teal #042628 for footer, warm beige #f3f0eb for section backgrounds
+- [ ] Accessibility standards met — nav, main, section, footer elements used appropriately
+- [ ] Responsive breakpoints work — hero sidebar stacks below main content (`.col-lg-6` / `col-md-5 order-lg-last` split ends at 992)

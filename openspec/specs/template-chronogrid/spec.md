@@ -100,3 +100,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Render the monthly calendar grid — the heading "Calendar #01" is visible
+- [ ] Navigate between months — the displayed month changes to the previous month
+- [ ] Highlight selected date — that date cell has a rounded accent background and white text
+- [ ] Show past and future date colors — dates before the selected date display in the past color (#7c7d81)

@@ -91,3 +91,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar is sticky and responsive — all navigation links are visible without a hamburger menu
+- [ ] Countdown timer displays and updates — four countdown blocks are shown (Days, Hours, Minutes, Seconds)

@@ -179,3 +179,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Centered heading — a heading "Find What You Need" is visible and centered
+- [ ] Search input — a search input is visible with placeholder text "Search..."
+- [ ] Search button — a "Search" button is visible to the right of the input
+- [ ] Form layout — the search input and button are aligned in a horizontal row
+- [ ] Page background — the page background is #fafafa
+- [ ] Section spacing — the section has generous vertical padding (~7em top and bottom)
+- [ ] Hover transition — a smooth 0.3s transition is applied
+- [ ] Responsive behavior — the search form remains visible and functional
+- [ ] Accessibility — the search input has an associated aria-label
+- [ ] Form submission — the onSearch callback is called with "dashboard"

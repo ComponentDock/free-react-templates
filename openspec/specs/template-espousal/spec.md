@@ -331,5 +331,17 @@ and a document title.
 - [ ] `docs/templates/espousal/tasks.md` has the task outline + design notes.
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh
+- [ ] Navbar — the navbar SHALL show the brand name "Espousal" in the script font
+- [ ] Hero — it SHALL show the subheading "The Wedding of", the couple names
+- [ ] Invitation — it SHALL show an image beside a text block with "Join us to
+- [ ] Bride & Groom — it SHALL show a section heading "Bride & Groom" with a large
+- [ ] Love Story — it SHALL show a vertical center line with at least four events,
+- [ ] Sweet Messages — it SHALL show a rotating set of quote cards, each with a quote
+- [ ] Family & Friends — it SHALL show a responsive grid of eight cards, each with a
+- [ ] Place & Time — it SHALL show three cards titled The Reception, The Ceremony,
+- [ ] RSVP form — the form SHALL validate the name and email fields
+- [ ] Gallery — it SHALL show a responsive grid of at least eight square image
+- [ ] Footer — it SHALL show the brand, a blurb, social icons, Quick Links,
+- [ ] Page composition — the page SHALL compose the navbar, hero, invitation, Bride &
     espousal`, PR lists source (ColorLib Hookup), preview URL, tokens,
       and what differs.

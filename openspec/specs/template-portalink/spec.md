@@ -182,3 +182,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Centered card layout — the login card is centered horizontally and vertically on the viewport
+- [ ] Login form fields — the field accepts and displays the typed text
+- [ ] Sign In button — the Sign In button is visible, full-width, and has a rounded pill shape
+- [ ] Remember me and forgot password — the Remember Me checkbox is checked
+- [ ] Social login icons — a Facebook icon link with aria-label "Login with Facebook" is visible
+- [ ] Sign Up CTA — "Not a member?" text is visible with a "Sign Up" link pointing to "#signup"

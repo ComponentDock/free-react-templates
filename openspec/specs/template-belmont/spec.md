@@ -188,3 +188,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with brand, navigation, and book button — the navbar displays the brand text "hotel" and "Belmont"
+- [ ] Hero section displays headline and CTA — the hero section displays the subtitle "luxury resort"
+- [ ] Booking bar with date and room selectors — the booking bar shows three labeled select elements
+- [ ] Intro section with text and overlapping images — the intro section shows "Relax in our Hotel" heading
+- [ ] Big room feature section with image slider and testimonial — the heading "Rooms with private swimming pool" is visible
+- [ ] Rooms grid with three room cards — the rooms section shows three room cards
+- [ ] Gallery with image carousel — the gallery section displays images
+- [ ] Newsletter subscription form — the newsletter section shows "Our Newsletter" heading
+- [ ] App composes all sections — all major sections are present in the DOM

@@ -122,3 +122,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page layout with full-viewport background — I see a white card centered horizontally and vertically on a light blue background
+- [ ] Registration form heading — I see a heading with text "New Account?"
+- [ ] Form fields — I see a text input labeled "Username" with a user icon
+- [ ] Register button — I see a "Register" button with a #99ccff background
+- [ ] Decorative images on desktop — a decorative image appears at the bottom-left of the form card
+- [ ] Document title — the document title is "RegBox — Registration Form Template"

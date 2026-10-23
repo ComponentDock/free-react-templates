@@ -215,3 +215,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders brand and navigation — the navbar displays brand "Carewell"
+- [ ] Hero displays headline and CTAs — the heading "Together We Can Change Lives" is displayed
+- [ ] DonationStats shows four stat boxes — four stat boxes are shown with Total Donation, Fund Raised, Highest Donation, Total Donors
+- [ ] MajorCauses displays cause cards — three cause cards are displayed
+- [ ] MakeDonation renders donation form — buttons for $10, $50, $100, $250 are displayed
+- [ ] ClientsLogos displays partner logos — six partner logos are shown with alt text
+- [ ] SupportCampaign shows campaign cards — three campaign cards are displayed
+- [ ] ExperienceDonation displays parallax CTA — the heading "Experience How Your Donation Can Reach" is displayed
+- [ ] AboutNewsletter shows about card and newsletter — an about card with avatar image and "Create Fundraising Today" heading is shown

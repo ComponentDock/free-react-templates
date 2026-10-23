@@ -55,3 +55,5 @@ Recreation of ColorLib [Photosen](https://colorlib.com/wp/template/photosen/) (p
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links Component Dock
 - [ ] Public CNAME is `photolens.free.componentdock.com`
+- [ ] 1. Navigation bar — the navbar displays the brand name "Photolens"
+- [ ] 2. Photography Portfolio Grid — cards are displayed in a responsive grid layout

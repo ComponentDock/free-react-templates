@@ -72,3 +72,7 @@
 - [ ] Vitest coverage is 100% (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links `https://www.componentdock.com/`
+- [ ] Navbar & Navigation — they see the brand logo "Brieflaw."
+- [ ] Hero Section — they see the professional subheading "UI/UX Designer & Developer" (adapted for legal/professional services: "Legal Counsel & Advisory")
+- [ ] Services Section — they see a grid of service cards with icons, titles, and descriptions
+- [ ] Experience & Work Showcase — they see chronological career milestones and portfolio case studies with preview links

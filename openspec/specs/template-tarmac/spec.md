@@ -277,3 +277,12 @@ copyright line.
 - [ ] All images use seeded picsum placeholders
 - [ ] Icons use lucide-react
 - [ ] Dark mode toggles via `.dark` class
+- [ ] Navigation bar — the navbar SHALL show the site name "Tarmac" with the second
+- [ ] Hero section — it SHALL contain a level-1 heading about renting a car
+- [ ] Search filter bar — it SHALL contain dropdowns for Model, Brand, Year, and Price Limit
+- [ ] Services section — it SHALL contain a heading "Our Services"
+- [ ] Car listing section — it SHALL contain a heading "Choose Your Car"
+- [ ] How it works section — it SHALL contain a heading "How it works"
+- [ ] Testimonials section — it SHALL contain a heading "Happy Clients"
+- [ ] About section — it SHALL contain a heading "Choose A Perfect Car"
+- [ ] Blog section — it SHALL contain a heading "Recent Blog"

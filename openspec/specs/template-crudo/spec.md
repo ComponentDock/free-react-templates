@@ -142,3 +142,10 @@ Order extracted from `https://preview.colorlib.com/theme/caviar/`:
 - [ ] `package.json` homepage is `https://crudo.free.componentdock.com`
 - [ ] Placeholder images use `picsum.photos/seed/crudo-*`
 - [ ] Google Fonts loaded: Open Sans + Work Sans
+- [ ] Navbar — a fixed navbar spans the full width
+- [ ] Hero — a full-screen background image is displayed
+- [ ] About Us — the first block has image left, text right
+- [ ] Dish Menu — heading "Special" is centered
+- [ ] Awards — heading "Awards" is displayed
+- [ ] Testimonials — heading "Testimonials" is centered
+- [ ] Reservation — a dark background section is displayed

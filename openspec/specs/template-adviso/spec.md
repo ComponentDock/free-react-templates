@@ -375,3 +375,13 @@ Dock (`https://www.componentdock.com/`) instead.
       live URL when done.
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar SHALL show the site name "Adviso" as the brand
+- [ ] Hero slider — each slide SHALL show the headline "Unlock Your Online Growth Potential"
+- [ ] Mission strip — it SHALL show "Our Mission", the headline "The Foremost & Premier Source For Everything Business.", a paragraph, and a "Learn More" link in the secondary green
+- [ ] Services — it SHALL show cards numbered 01, 02, and 03 with the titles "Greet first-time visitors with a timely popup", "Annoying popups that show the minute you load", and "Turn your email list into…
+- [ ] About — it SHALL show a photo and the heading "For local heroes with big hearts and growing champions" on a mint background block
+- [ ] Solutions / blog row — it SHALL show the label "Our Solutions" and the heading "Our consulting solutions for the streaming era"
+- [ ] Video / split CTA — it SHALL show a large cover image with a mint circular play button
+- [ ] Case study — it SHALL show the heading "Case study" and a "LEARN MORE" link
+- [ ] Stats / Partner — it SHALL show the heading "Partner for your business" and a paragraph
+- [ ] Page composition — the page SHALL compose the navbar, hero slider, mission strip, services, about, solutions, video split CTA, case study, stats, and footer in order

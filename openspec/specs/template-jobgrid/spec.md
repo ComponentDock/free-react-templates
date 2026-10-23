@@ -185,3 +185,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo, navigation, and CTA — the navbar shows the "JobGrid" logo on the left
+- [ ] Hero section with search form — a heading "Find your dream job" is visible
+- [ ] Brand logos row — 6 partner logo placeholders are visible in a horizontal row
+- [ ] Services category cards — 6 category cards are displayed
+- [ ] About section with stats — the number "89027+" is visible
+- [ ] Top jobs listing — 6 job cards are displayed
+- [ ] Job post feature section — 2 feature cards are displayed side by side
+- [ ] Testimonials carousel — the displayed testimonial changes to the selected one
+- [ ] CTA banner — the heading "Start finding your dream job" is displayed
+- [ ] Responsive design — the navbar collapses into a hamburger menu
+- [ ] Accessibility — the input has an associated label or aria-label

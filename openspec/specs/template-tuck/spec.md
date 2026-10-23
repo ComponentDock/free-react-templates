@@ -280,5 +280,9 @@ convention on every template (the original has no footer).
       keyboard operable
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
+- [ ] Page structure — the page background SHALL be pale blue `#dcf1ff
+- [ ] Accordion behavior — the first item ("How to download and register?") SHALL be open
+- [ ] Answer body styling — the body SHALL have padding `20px` on all sides and base text
+- [ ] Responsive behavior — the accordion SHALL fill the container width with the same
       by implementer at ship time (mark the "Accordion 20" row, line 658 —
       Bootstrap Accordions category)

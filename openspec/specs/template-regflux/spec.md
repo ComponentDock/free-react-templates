@@ -102,3 +102,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Form renders all required fields — I see a "First Name" text input
+- [ ] Gender toggle selection — the "Male" button is highlighted with the accent color
+- [ ] Collapsible additional info section — I do not see an "Address" field
+- [ ] Form submission shows confirmation — I see a "Registration submitted" confirmation message

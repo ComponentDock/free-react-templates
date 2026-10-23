@@ -277,3 +277,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the logo text "AzurePeak" linking to the top
+- [ ] Hero section with booking form — it SHALL display a full-viewport section with an ocean background image
+- [ ] Stats bar — four stats SHALL be displayed in a horizontal grid
+- [ ] Rooms and suites section — three room cards SHALL be displayed in a 3-column grid
+- [ ] Amenities section — six amenity cards SHALL be displayed in a 3×2 grid
+- [ ] Dining section — three venue cards SHALL be displayed in a 3-column grid
+- [ ] Gallery section — a grid of placeholder images SHALL be displayed
+- [ ] Testimonials section — three testimonial cards SHALL be displayed
+- [ ] FAQ section — multiple FAQ items SHALL be displayed in an accordion
+- [ ] CTA / newsletter section — a gradient background SHALL be displayed
+- [ ] Dark mode — all sections SHALL render with dark backgrounds and light text
+- [ ] Responsive design — all sections SHALL adapt: grids collapse to fewer columns, text scales

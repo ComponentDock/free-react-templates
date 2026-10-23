@@ -138,3 +138,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact information — the text "Free Call" and "+1 234 456 78910" are visible
+- [ ] Navbar provides site navigation — links for Home, About, Services, Blog, Contact, and "Request A Quote" are visible
+- [ ] Hero section displays headline and CTAs — the heading "Lease The Right Equipment For Your Job" is visible
+- [ ] Features section shows services and quote form — "24/7 Customer Service", "Prompt Delivery", "Reliable Equipment", and "New Heavy Equipment" headings are visible
+- [ ] About section shows company stats — the values 50, 4,500, 300, and 300 are visible with labels "Years of Experience", "Customers Served", "Number of Equipment", "Number of Staff"
+- [ ] CTA banner promotes the company — "We Are Squadly" heading and "Make An Appointment" button are visible
+- [ ] Services section shows equipment cards — cards for Bulldozer, Forklift, Crane, and Excavator are visible
+- [ ] Testimonials section shows customer reviews — at least 3 testimonial cards with names are visible
+- [ ] Blog section shows recent posts — 3 blog post cards with "Read more" links are visible

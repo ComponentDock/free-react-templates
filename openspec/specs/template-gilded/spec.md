@@ -237,3 +237,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Gilded" and a "Home" link pointing to the page root
+- [ ] Welcome hero — it SHALL show a level-1 headline (e.g. "Beautiful Hair Comes From A Legendary.")
+- [ ] About — it SHALL show the heading "The House of Hair Salon & Spa"
+- [ ] Services — it SHALL show the heading "Our Services"
+- [ ] Why Choose Us — it SHALL show the heading "Why Choose Us"
+- [ ] Our Work portfolio — it SHALL show the heading "Our Work"
+- [ ] Experts team — it SHALL show the heading "Our Experts"
+- [ ] Blog — it SHALL show the heading "Latest News"
+- [ ] CTA band — it SHALL show the headline "Make Gilded Your Number One Choice"
+- [ ] Footer — it SHALL show the site name "Gilded" and opening times
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

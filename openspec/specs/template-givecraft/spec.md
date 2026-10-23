@@ -207,3 +207,13 @@ The footer SHALL link to `https://www.componentdock.com/` with text "Component D
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navbar displays logo and navigation links — the navbar shows a logo (green heart icon + "GiveCraft" text)
+- [ ] Hero banner displays headline and dual CTAs — the hero section shows a full-width background image
+- [ ] Causes section displays three cause cards — a heading "Our major causes" is displayed with a subtitle
+- [ ] About section displays nonprofit team info — an image is displayed on the left side
+- [ ] Featured causes section displays cause cards with progress — three feature cards are displayed
+- [ ] Upcoming events section displays event cards with countdown — four event cards are displayed in a 2x2 grid
+- [ ] Team section displays volunteer cards — four team member cards are displayed in a row
+- [ ] CTA section displays volunteer call-to-action — a dark overlay background is displayed
+- [ ] Story section displays blog cards — three story cards are displayed in a row
+- [ ] Newsletter subscribe bar — an email input field is displayed

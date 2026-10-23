@@ -156,3 +156,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and CTA — the navbar shows the brand "GiveMore", all navigation links, and the "Learn More" button
+- [ ] Hero banner section — the hero section shows the heading "Bless others with your gift"
+- [ ] Features section — 4 feature cards are displayed with icons, titles, and descriptions
+- [ ] Be Part section — the heading "Be a part of the breakthrough" is displayed
+- [ ] Counter stats section — all 4 stat labels and values are displayed
+- [ ] Featured Causes section — 3 cause cards are displayed
+- [ ] CTA Banner section — the motivational quote is displayed
+- [ ] Volunteers section — 4 volunteer cards are displayed
+- [ ] Blog section — 1 featured post and 3 smaller posts are displayed
+- [ ] Partners section — 5 partner logos are displayed
+- [ ] Accessibility — all images have alt text

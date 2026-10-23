@@ -230,3 +230,12 @@ Bottom: Copyright line with heart icon.
 - [ ] New name "mill" confirmed no collision with apps/ or specs/
 - [ ] ColorLib source URL recorded
 - [ ] Component Dock footer link requirement noted
+- [ ] 1. Navbar — the navbar displays brand "Mill" and links Home, About, Projects, Services, Blog, Contact
+- [ ] 2. Hero Slider — the hero section shows a full-width background image
+- [ ] 3. Features / Services (3-column) — three cards are visible: Automotive Parts, Maintenance Services, Green Energy
+- [ ] 4. About / Engineering (image + 4 features) — the heading reads "We Are Reliable Engineering In House"
+- [ ] 5. About Alternate (image + text block) — a heading "Create, Enhance and Sustain" is visible
+- [ ] 6. Projects Grid — 6 project cards are visible in a 3-column grid
+- [ ] 7. Testimonials (carousel) — at least 3 testimonial cards are visible
+- [ ] 8. Blog Posts — 4 blog post items are displayed in 2 columns
+- [ ] 9. CTA Banner — the background is orange (#fd5f00)

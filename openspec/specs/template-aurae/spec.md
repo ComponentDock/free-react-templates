@@ -172,3 +172,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile menu — the navbar shows the Aurae logo and all 7 navigation links
+- [ ] Hero section with yoga headline and CTAs — the hero shows "Get slim and toned with yoga" heading, descriptive text, and "Explore Classes" / "Learn More" buttons
+- [ ] About section with feature cards — the about section shows the welcome heading and all 3 feature cards with explore-more links
+- [ ] Popular classes with trainer info — all 3 class cards are shown with trainer names and book-now links
+- [ ] Trainers section with profiles — all 3 trainer profiles are shown with contact links
+- [ ] Testimonials slider — the displayed testimonial changes accordingly
+- [ ] Events section — all 3 event cards are shown
+- [ ] Pricing plans — all 4 pricing tiers are shown with prices and feature lists
+- [ ] Signup form with validation — a success message is shown

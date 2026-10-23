@@ -171,3 +171,8 @@ and a newsletter subscription form.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Spotguide"
+- [ ] Hero section — it SHALL contain a level-1 heading
+- [ ] Featured Places — it SHALL contain a heading "Featured Places"
+- [ ] Browse Categories — it SHALL contain a heading "Browse Categories"
+- [ ] Destinations section — it SHALL contain a heading "Reach millions of People"

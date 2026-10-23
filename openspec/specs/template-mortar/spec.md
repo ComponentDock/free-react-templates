@@ -186,3 +186,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with site name and navigation links — the navbar is rendered with the logo "Mortar."
+- [ ] Hero section displays agency headline and CTA — the hero section displays a heading containing "Creative"
+- [ ] Services section shows 6 service cards — 6 service cards are visible
+- [ ] About section shows agency description — an image and heading "About us" are visible
+- [ ] Team section shows member profiles — 2 team member cards are visible
+- [ ] Portfolio showcases project work — 3 project rows are visible
+- [ ] Testimonials section displays client quotes — 4 testimonial cards are visible
+- [ ] Gallery shows photo grid — 6 gallery images are visible
+- [ ] Contact form is functional — all form fields (name, email, subject, message) are present

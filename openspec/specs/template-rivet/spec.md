@@ -177,3 +177,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar displays "Rivet" as the brand name
+- [ ] Hero — the heading "Creating A Brighter Future" is displayed
+- [ ] Banner CTA — the heading "Trusted Construction & Development Since 1889" is displayed
+- [ ] Services — the heading "Services" is displayed
+- [ ] Recent Works — the heading "Recent Works" is displayed
+- [ ] Company News — the heading "Company News" is displayed
+- [ ] Testimonials — the heading "Testimonial" is displayed
+- [ ] App composition — sections appear in order: Navbar, Hero, BannerCTA, Services, RecentWorks, CompanyNews, Testimonials, Footer

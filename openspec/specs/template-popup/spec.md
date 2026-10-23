@@ -194,3 +194,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Launch section renders with heading and CTA button — I see a heading with text "Popup"
+- [ ] Modal opens on button click — a dialog element appears with role "dialog"
+- [ ] Modal displays text content — I see a heading inside the modal
+- [ ] Modal closes on close button click — the dialog disappears
+- [ ] Modal closes on backdrop click — the dialog disappears
+- [ ] Modal closes on Escape key — the dialog disappears
+- [ ] Focus trap in modal — focus moves to the first focusable element

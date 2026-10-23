@@ -165,3 +165,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar displays the brand "Edifica." with a golden accent dot
+- [ ] Hero section — the hero section displays the subheading "We're here to help you"
+- [ ] Services grid — four service cards are displayed with titles: Construction, House Renovation, Painting, Architecture Design
+- [ ] Features row — three feature cards are displayed with titles: Expert & Professional, High Quality Work, 24/7 Help Support
+- [ ] About section with tabs — the heading "We create and turn into reality" is visible
+- [ ] Counter statistics — the numbers 50, 8,500, 378, and 1,200 are displayed
+- [ ] Project gallery — six project images are displayed
+- [ ] Testimonials section — the heading "Happy Clients" is visible
+- [ ] Blog section — three blog cards are displayed with titles and metadata
+- [ ] Newsletter signup — the newsletter heading is visible

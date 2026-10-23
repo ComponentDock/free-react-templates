@@ -110,3 +110,10 @@ As a visitor, I want to see footer links and the required Component Dock attribu
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] `public/CNAME` contains `oralcare.free.componentdock.com`
 - [ ] Workspace registered in root `package.json` and package-lock.json
+- [ ] Top Bar & Navbar — the top bar should display working hours ("Monday - Friday 8:00AM-8:00PM"), phone ("+2 392 3929 210"), and location ("San Francisco, CA")
+- [ ] Hero Slider Section — it should display the headline "Dentist Services that You Can Trust"
+- [ ] Appointment Booking Form Section — fields for Full Name, Email Address, Phone Number, Appointment Date, Appointment Time, Doctor selection (e.g., Dr. Lloyd Wilson), and Message should be present
+- [ ] Statistics Counter Banner — it should display counters for Happy Patients (3000+), Performed Treatments (2200+), and Years of Experience (24+)
+- [ ] Services Grid — cards for Tooth Protection, Dental Implants, Dental Care, Teeth Whitening, Tooth Removal, and Tooth Inspection should be shown with icons and descriptions
+- [ ] Qualified Doctors — cards for Dr. Lloyd Wilson, Dr. Rachel Parker, Dr. Ian Smith, and Dr. Alicia Henderson should be displayed with photos, titles, and short bios
+- [ ] Testimonials & Patient Success Stories — patient reviews and treatment result highlights should be visible

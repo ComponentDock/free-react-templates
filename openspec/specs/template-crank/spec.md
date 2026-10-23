@@ -147,3 +147,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Renders the accordion heading — a heading with text "Bootstrap Accordion #7" is rendered
+- [ ] Renders all accordion items — all three question headers are visible: "How to download and register?", "How to create your paypal account?", "How to link your paypal and bank account?"
+- [ ] First item expanded by default — the first item's button has aria-expanded="true"
+- [ ] Toggle accordion items on click — the button's aria-expanded becomes "true"
+- [ ] Multiple items can be open simultaneously — both items are expanded simultaneously
+- [ ] Accessible accordion controls — its button has aria-expanded
+- [ ] Green accent on active items — its header button text uses the accent color class
+- [ ] Plus/minus icon toggle — a Plus icon is rendered in its header

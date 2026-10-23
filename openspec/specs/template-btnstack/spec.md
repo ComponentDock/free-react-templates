@@ -96,3 +96,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Size Variants — Large, Medium, and Small solid buttons are displayed with progressively smaller padding and text
+- [ ] Solid Buttons Showcase — all 18 solid color variant buttons are visible with their respective background colors
+- [ ] Outline Buttons Showcase — all outline variant buttons are visible with transparent backgrounds and colored borders
+- [ ] Interactive Playground — dropdown selectors for style, size, color, and roundedness are displayed along with a live preview button and a code snippet

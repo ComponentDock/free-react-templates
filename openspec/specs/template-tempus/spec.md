@@ -110,3 +110,9 @@ As a user, I want standard footer links and Component Dock attribution.
 - [ ] Responsive across mobile, tablet, desktop
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] No reference to ColorLib in app code
+- [ ] Header & Navigation — the logo "Tempus" is displayed
+- [ ] Hero Section — the headline "Manage Your Schedule Seamlessly" is displayed
+- [ ] Monthly Calendar Grid View — days of the week (Sun to Sat) are displayed as column headers
+- [ ] Upcoming Events List — event cards show time, title, location, and an "RSVP" / "Details" button
+- [ ] Event Categories — category cards (Work, Conference, Social, Personal) display icons and item counts
+- [ ] Newsletter Subscription — a success confirmation message is displayed

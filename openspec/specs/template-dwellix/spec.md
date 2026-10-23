@@ -153,3 +153,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar with logo and menu — the DWELLIX logo is visible
+- [ ] Property search bar with filters — 6 filter dropdowns (Location, Types, City, Bedrooms, Bathroom, Price Range) are visible
+- [ ] Featured property listings — 6 property cards are displayed with titles, locations, and seller info
+- [ ] Why Choose Us section — 3 feature items are visible: Find Your Home, Transportation Support, Save Your Money
+- [ ] Property categories section — 5 category cards are visible with property counts, names, and starting prices
+- [ ] Call-to-action banner — the heading "Download app & join now!" is visible
+- [ ] Latest news blog section — 3 blog post cards are visible with titles, authors, dates, and comment counts
+- [ ] Partner logos section — 5 partner logo images are visible

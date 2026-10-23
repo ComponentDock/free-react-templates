@@ -265,5 +265,8 @@ the drawer and the gallery grid SHALL reflow from 3 → 2 → 1 columns.
       dead-end without navigation (single-page recreation)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL THREE `- [ ]` rows
+- [ ] Header navigation — the header SHALL show the brand "Snaply" (white, 2rem) on the
+- [ ] Gallery grid — nine cards SHALL render in DOM order with the titles Nature,
+- [ ] Responsive layout — the gallery cards SHALL stack vertically in one column with
       (line 618 Bootstrap 5, line 2468 Photography, line 2546 Portfolio)
       `[x]` with the same surge URL + `npm run readme:status`

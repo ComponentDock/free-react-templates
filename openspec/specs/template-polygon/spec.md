@@ -127,3 +127,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders correctly — the navbar displays links for Home, About, Projects, Services, Blog, and Contact
+- [ ] Hero section displays correctly — the hero section shows "Creative Design" heading and Get Started / Download buttons
+- [ ] Features section shows three cards — three cards are shown: Modern Design, Build With Love, Fast Loading
+- [ ] About sections show numbered content — sections numbered 01 (Infrastructure) and 02 (Collaborate) are displayed
+- [ ] Projects grid shows project cards — six project cards are shown in a grid
+- [ ] Testimonials display correctly — testimonial cards with avatars and quotes are displayed

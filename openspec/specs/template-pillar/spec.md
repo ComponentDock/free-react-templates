@@ -167,3 +167,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with logo and navigation links — I see the "Pillar" logo linking to #home
+- [ ] Hero section displays with heading and CTA — I see the "Interior Design" heading
+- [ ] Features section displays three feature cards — I see three feature cards with icons and descriptions
+- [ ] About section displays with image and text — I see the "About Us" heading
+- [ ] Team section displays six team members — I see six team members with names and roles
+- [ ] Pricing section displays three plans — I see three pricing cards with prices and "Buy Now" buttons
+- [ ] FAQ section displays expandable questions — the answer expands and becomes visible
+- [ ] Testimonials section displays client quotes — I see client names, roles, and quoted text
+- [ ] Projects section displays project gallery — I see six project cards with titles and categories
+- [ ] Blog section displays recent posts — I see three blog post cards with dates
+- [ ] Services section displays service items — I see six service items with icons and titles
+- [ ] Contact section displays a form — the form submits without navigation

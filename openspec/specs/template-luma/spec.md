@@ -89,3 +89,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with brand and navigation — the navbar displays the brand name "Luma"
+- [ ] Hero carousel displays photography categories — 7 category slides are rendered in the DOM

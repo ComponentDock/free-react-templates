@@ -86,3 +86,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Mobile navigation toggle works — the mobile navigation menu opens
+- [ ] Pricing cards display correct plans — Single Package is shown at $20.00/mo

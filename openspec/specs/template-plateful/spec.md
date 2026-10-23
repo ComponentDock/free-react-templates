@@ -117,3 +117,12 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide icons, Vitest.
 - [ ] Footer contains Component Dock link (`https://www.componentdock.com/`)
 - [ ] No reference to ColorLib in app source files
 - [ ] `public/CNAME` contains `plateful.free.componentdock.com`
+- [ ] Header & Navigation — they see the logo and navigation links (Home, Menu, Reservation, Gallery, About, Blog, Contact)
+- [ ] Hero Slider — it displays welcome slides with headings, subtitles, and a "Look Menu" button
+- [ ] Welcome / About Section — it displays "Discover Our Story", "Pato Place" / Plateful highlights (Romantic Restaurant, Delicious Food, Red Wines You Love) with images and "Learn More" links
+- [ ] Menu Section — clicking a category displays the respective menu items with prices and descriptions
+- [ ] Events Section — it displays event cards with dates, times, descriptions, and "View Details" buttons
+- [ ] Booking / Reservation Form — a confirmation message appears
+- [ ] Customer Reviews — it displays customer feedback quotes and author avatars
+- [ ] Blog Section — they display article images, titles, dates, and "Continue Reading" links
+- [ ] Newsletter Signup — a success notification is shown

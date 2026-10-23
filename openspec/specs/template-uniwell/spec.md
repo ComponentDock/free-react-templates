@@ -141,3 +141,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact info and login link — the top bar shows "Have any questions?", phone "001-1234-88888", email "info@uniwell.edu", and "Register or Login"
+- [ ] Navbar provides navigation and search — the logo, Home/About/Courses/Blog/Page/Contact links, search and cart icons are visible
+- [ ] Hero section with search bar — the heading "The Premium System Education", subtitle "Future Of Education Technology", and search form are visible
+- [ ] Welcome section with feature cards — "Welcome To Uniwell E-Learning" heading and cards for Online Courses, Expert Instructors, Certified Programs, and Campus Life are visible
+- [ ] Course categories grid — Web Development (120), Mobile Development (85), Data Science (95), Business (110), Design (75), and Marketing (65) categories are shown
+- [ ] Popular courses grid — six course cards with titles, instructor names, star ratings, student counts, durations, prices, and Enroll Now buttons are shown
+- [ ] Registration CTA banner — "Register for Free Today" heading and a "Get Started" button linking to #register are visible
+- [ ] 100% test coverage — all coverage thresholds are met at 100%

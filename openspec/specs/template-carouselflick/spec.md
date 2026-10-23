@@ -71,3 +71,8 @@ Features an immersive image & content carousel showcase, portfolio highlights, i
 - [ ] Vitest component tests pass with 100% coverage across lines, functions, branches, statements
 - [ ] Production build succeeds via Vite
 - [ ] Footer contains the mandatory Component Dock link
+- [ ] Navigation Bar — the navigation bar displays brand logo "CarouselFlick", menu links (Home, Showcase, Gallery, About, Contact), and a CTA button ("Explore")
+- [ ] Immersive Hero Carousel — the active slide updates with a smooth transition, displaying new imagery, title, category badge, description, and action button
+- [ ] Thumbnail Navigation Strip — the main carousel jumps directly to that selected slide
+- [ ] Portfolio Highlights Grid — visitor sees cards showcasing featured creative projects with images, tags, and detail links
+- [ ] Newsletter Subscription CTA — a success confirmation message is displayed

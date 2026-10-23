@@ -139,3 +139,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation — The navbar shall display the brand name "Packr" and navigation links to all sections. On mobile, a hamburger button shall toggle a dropdown menu
+- [ ] Hero Section — The hero section shall display a background image with a dark overlay, a subtitle, a main heading, and a CTA button linking to the contact section
+- [ ] Services Section — The services section shall display 6 service cards in a responsive grid, each with an icon, title, and description
+- [ ] Portfolio Section — The portfolio section shall display 6 project items in a 2-column grid with hover effects showing project tags and title
+- [ ] Blog Section — The blog section shall display a featured image alongside 4 blog post cards, each with category, date, and title
+- [ ] Counter Section — The counter section shall display 3 counters that animate from 0 to their target values when scrolled into view
+- [ ] Testimonials Section — The testimonials section shall display 3 client testimonials with photos, quotes, and attribution
+- [ ] CTA Section — The CTA section shall display a call-to-action heading and a button linking to the contact section
+- [ ] Responsive Design — All sections shall be responsive and display correctly on mobile, tablet, and desktop screens

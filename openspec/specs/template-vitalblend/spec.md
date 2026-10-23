@@ -210,3 +210,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sticky navbar with logo, nav links, and CTA button — a sticky navbar is visible at the top with a logo on the left
+- [ ] Hero section with headline, subtitle, CTA, and video icon — a full-width hero area is visible with a background image
+- [ ] About section with image and text — a two-column layout is displayed with image on the left and text on the right
+- [ ] Green CTA banner between sections — a full-width green background banner is visible
+- [ ] Three-column services section with icons — three service cards are displayed in a centered row
+- [ ] Testimonial carousel with quote, avatar, and name — a testimonial is displayed with quote text, avatar, name, and role
+- [ ] Video background section with play button — a full-width background area is displayed
+- [ ] Blog section with rounded image cards — a heading "Latest Blog" is displayed centered above three cards
+- [ ] Satisfaction section overlapping the blog area — a green background shape appears on the left side

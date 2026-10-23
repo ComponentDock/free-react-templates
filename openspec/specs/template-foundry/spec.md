@@ -226,3 +226,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Screenshot comparison: hero slider, welcome, works, counters, services, blog, engineers, testimonials, newsletter, footer match the ColorLib "architect" preview layout and tokens
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Foundry" and links to Home, Projects, Services, Blog, About, and Contact
+- [ ] Hero slider — it SHALL contain a level-1 heading "Providing all Kinds of Construction Services"
+- [ ] Welcome section — it SHALL contain a heading "Secrets of Success of Our Projects"
+- [ ] Works section — it SHALL contain a heading "Our Done Projects"
+- [ ] Services section — it SHALL contain a heading "We Offer Services"
+- [ ] Blog section — it SHALL contain a heading "Read Our Blog"
+- [ ] Engineers section — it SHALL contain a heading "Our Engineers"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Client Says"
+- [ ] Newsletter section — it SHALL contain a heading "Sign up for a Newsletter"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

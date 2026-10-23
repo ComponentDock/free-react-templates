@@ -94,3 +94,8 @@ New app name: `props`. Domain category: Real Estate / Property listings.
 - [ ] Production build passes successfully via `npm run build`
 - [ ] Footer links to `https://www.componentdock.com/` ("Component Dock")
 - [ ] `public/CNAME` contains `props.free.componentdock.com`
+- [ ] Navbar — they should see the brand title "Props"
+- [ ] Hero Search — a search notification or filtered state should appear
+- [ ] Popular Properties — they should see property cards with images, pricing, bedrooms, bathrooms, and details
+- [ ] Stats Counter — they should see statistics for Buy Properties, Sell Properties, All Properties, and Agents
+- [ ] Our Agents — they should see agent cards for James Doe, Jean Smith, and Alicia Huston with their bios and social icons

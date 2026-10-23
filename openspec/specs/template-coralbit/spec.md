@@ -131,3 +131,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Circular checkbox rendering — it SHALL display a coral pink (#f67280) circular background
+- [ ] Checkbox interaction — the checkbox SHALL become checked
+- [ ] Disabled state — the checkbox SHALL remain unchecked
+- [ ] Showcase layout — four checkboxes SHALL be visible with labels "First checkbox", "Second checkbox", "Disabled", "Disabled & checked"
+- [ ] Typography and styling — the body SHALL use the Roboto font family

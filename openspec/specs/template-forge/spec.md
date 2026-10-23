@@ -414,3 +414,12 @@ Dock (`https://www.componentdock.com/`) instead.
       lightbox approach, slider/carousel simplification choices).
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header and navigation — the header SHALL show the site wordmark (uppercase, letter-
+- [ ] Hero section — it SHALL show the uppercase heading "We Are Creative Agency" in
+- [ ] About section — it SHALL show the uppercase eyebrow "Who We Are" in the
+- [ ] Portfolio section — it SHALL show the uppercase title "Latest Work" centered
+- [ ] Services section — it SHALL show the eyebrow "Featured Services", the divider bar,
+- [ ] Testimonials section — it SHALL show the uppercase title "Testimonial" centered
+- [ ] Call-to-action band — it SHALL use the brand teal `#20c997` background
+- [ ] Footer — it SHALL show an "About" column with a short text and social
+- [ ] Page composition — the page SHALL compose the header in the banner landmark, all

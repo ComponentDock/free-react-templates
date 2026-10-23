@@ -126,3 +126,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar displays welcome message and social links — a top bar is visible with text "Welcome to Newsflow."
+- [ ] Navbar displays logo, navigation, and CTA — the navbar displays the "Viral Story" logo
+- [ ] Trending stories section — three trending story cards are visible
+- [ ] Main content grid — a large feature card is displayed on the left (2/3 width)
+- [ ] More stories section — three story cards are displayed in a responsive grid
+- [ ] Newsletter signup form — a newsletter section with dark background is visible

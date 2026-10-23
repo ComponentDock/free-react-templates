@@ -235,3 +235,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Driven" and links to Home, Features, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Drive More Customers Through Digital"
+- [ ] Feature tiles section — it SHALL show three "A Volunteer" tiles with titles and blurbs
+- [ ] About split section — it SHALL contain the heading "Right people at the Right time."
+- [ ] Who can use section — it SHALL contain the heading "Who can use Driven?"
+- [ ] Mobile split section — it SHALL contain the heading "Easy to Use Mobile Application"
+- [ ] Pricing section — it SHALL show three plans priced $50.00, $60.00, and $80.00 per month
+- [ ] CTA section — it SHALL contain the heading "Very Useful & Friendly"
+- [ ] Footer — it SHALL show "About Us", "Contact Info", "Important Link", and "Newsletter" columns
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

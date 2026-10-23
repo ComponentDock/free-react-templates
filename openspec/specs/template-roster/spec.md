@@ -152,3 +152,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo, navigation, login, and add-listing button — the navbar displays the logo text "Roster"
+- [ ] Hero section with search form — a heading "Explore Your City" is displayed
+- [ ] Popular locations section with city cards — the "Explore Top Cities" heading is visible
+- [ ] Popular directory carousel — the "Popular Directory" heading is visible
+- [ ] How it works section with steps — the "How It Works" heading is visible
+- [ ] New directory section — the "New Directory" heading is visible

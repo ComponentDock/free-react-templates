@@ -156,3 +156,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Full viewport background — the page has a full-viewport background image
+- [ ] Centered search form — a form is centered vertically and horizontally
+- [ ] Search input default state — a single search input is displayed
+- [ ] Search icon — a white magnifying glass icon is displayed on the left side of the input
+- [ ] Focus and hover states — the bottom border becomes solid white (full opacity)
+- [ ] Responsive mobile layout — the input height reduces to approximately 50px
+- [ ] Keyboard and screen reader accessibility — the search input is focusable via keyboard

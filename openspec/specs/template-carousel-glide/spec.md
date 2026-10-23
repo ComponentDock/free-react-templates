@@ -90,3 +90,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer correctly links `https://www.componentdock.com/`.
 - [x] Zero references to ColorLib in app source files.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Split hero carousel — the active slide transitions, updating both the featured image and the headline text
+- [ ] Features section — it SHALL display four cards with icons (Camera, Zap, Sparkles, Palette), titles, and descriptions

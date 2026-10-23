@@ -480,3 +480,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer gate: `scripts/verify-app.sh vesper` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header — the navbar SHALL be transparent over the hero with white links
+- [ ] Hero — it SHALL show a full-width church-photo background with a subtle
+- [ ] About section — it SHALL show a church-interior photo on one side
+- [ ] Counter band — it SHALL show four counters: Members, Pastors, Donation and
+- [ ] Services grid — it SHALL show the centered H2 "Christian Church Services"
+- [ ] Sermons carousel — it SHALL show the H2 "Christian Church Sermons" on a light grey
+- [ ] Events section — a photo band with a dark overlay SHALL show the kicker "Events"
+- [ ] Causes section — it SHALL show the H2 "Causes Needs Our Help"
+- [ ] Daily verse band — it SHALL show a photo background with a strong dark overlay
+- [ ] Blog section — it SHALL show the H2 "Read the Latest Blog"
+- [ ] Pastor section — it SHALL show the H2 "Church Pastor"
+- [ ] Contact section — it SHALL show the H2 "Contact Me"
+- [ ] Gallery — it SHALL show the gallery heading and a grid of six photos
+- [ ] Page composition — the page SHALL compose the Header in the banner landmark, all

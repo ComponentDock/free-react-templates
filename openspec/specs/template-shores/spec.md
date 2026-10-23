@@ -138,3 +138,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — they see a transparent navbar with "Shores" logo and five navigation links
+- [ ] Hero Banner — they see "Give a hand" subtitle, "to make the better world" heading, description, "Donate Now" and "See Causes" buttons
+- [ ] Causes Section — they see "Give Donation", "Give Inspiration", and "Become Volunteer" cards
+- [ ] About Section — they see an image and text about the nonprofit team with a "Learn more" button
+- [ ] Featured Causes — each card shows title, description, progress bar, raised/goal amounts, donor count, and donate button
+- [ ] Events — each card shows title, description, countdown timer (days/hours/minutes/seconds), and "Learn More" button
+- [ ] Team — each card shows photo, name, role, description, and social icons (Facebook, Twitter, Instagram, Email)
+- [ ] CTA Banner — they see "Become a volunteer" heading, description, and "Join with us" button
+- [ ] Blog — each card shows image, date, category, and article title
+- [ ] Newsletter — they see a heading, email input, and "Subscribe" button

@@ -160,3 +160,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders navigation and brand — the navbar displays the Sagewell logo, Home, Courses, Blog, Pages, Contact links, and an Apply Now button
+- [ ] Hero section displays headline and CTAs — the hero section displays the headline and two CTA buttons
+- [ ] Services section shows service badges — the services section shows 3 service items each with an icon, title, and subtitle
+- [ ] Programs section with tabbed navigation — the Graduate tab is active and shows 3 program cards
+- [ ] Events section displays upcoming events — 3 event items are displayed with date, time, and location info
+- [ ] Admission form collects application data — the admission form shows all 5 input fields and a submit button
+- [ ] News section shows blog posts — 2 blog post cards are displayed with badges, dates, and comment counts

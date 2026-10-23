@@ -208,3 +208,12 @@ The template SHALL use lucide-react for icons, with inline SVGs for brand icons.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Transparent header overlay — the header contains a logo on the left
+- [ ] Hero section with slider — a full-width hero section is displayed with a dark background image
+- [ ] Services section — a left column shows the section title ("What We do?") with description text and "View all services" button
+- [ ] Work gallery — a grid of portfolio items is displayed
+- [ ] Counter stats — 4 stat items are displayed in a row
+- [ ] Team section — a background image fills the section
+- [ ] Blog section — a centered section title ("Blog Update") with subtitle ("Our Blog") is shown
+- [ ] Call to action — a dark background image is displayed
+- [ ] Icons from lucide-react — non-brand icons use lucide-react components

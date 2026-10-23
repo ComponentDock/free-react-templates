@@ -225,3 +225,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Gloss" and a "Home" link pointing to the page root
+- [ ] Welcome hero — it SHALL show a headline (e.g. "Make your face the center of attention.")
+- [ ] Professional makeup — it SHALL show the heading "Professional makeup"
+- [ ] Client cards — it SHALL render at least two client cards (Danielle Benton, Dani Alves)
+- [ ] Latest projects — it SHALL show the heading "Latest projects"
+- [ ] Makeup artist tips — it SHALL show the heading "Makeup artist tips"
+- [ ] Beauty products — it SHALL show the heading "Beauty products"
+- [ ] Discount CTA — it SHALL show a discount offer (e.g. "20% discount")
+- [ ] Footer — it SHALL show contact details (Address, Phone, Email)

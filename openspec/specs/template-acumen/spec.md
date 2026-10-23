@@ -226,3 +226,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section — it SHALL show the headline "We Are Provide Creative Business"
+- [ ] Navigation bar — it SHALL show navigation links pointing to their respective sections
+- [ ] About section tabs — the vision content SHALL be displayed
+- [ ] Services section — it SHALL show 6 service cards
+- [ ] Skills section — it SHALL show 6 progress bars
+- [ ] Portfolio filter — only graphics items SHALL be visible
+- [ ] Team section — it SHALL show 4 team member cards
+- [ ] Pricing toggle — prices SHALL show "/ Year"
+- [ ] Blog section — it SHALL show 1 featured post
+- [ ] Counter stats — "Project Complete" SHALL show 1,172
+- [ ] Contact form — it SHALL show fields for Name, Email, Subject, and Message

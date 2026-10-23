@@ -177,3 +177,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — it SHALL show links to About, Skills, Services, Portfolio, and Contact
+- [ ] Hero section — it SHALL display "Hello I'm"
+- [ ] About section — it SHALL display the heading "Creative & Committed"
+- [ ] Skills section — it SHALL display 4 skill items with percentage labels
+- [ ] Services section — it SHALL display 6 service items with titles and descriptions
+- [ ] Portfolio section — it SHALL display filter buttons
+- [ ] Cool facts section — it SHALL display 4 fact items with numbers
+- [ ] Testimonials section — it SHALL display at least one testimonial with heading, text,
+- [ ] Contact section — the form SHALL have Name, Email, Subject, and Message fields

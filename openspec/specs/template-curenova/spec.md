@@ -130,3 +130,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo and navigation — the navbar is visible with the "Curenova" logo and all navigation links
+- [ ] Hero section with call to action — a hero section is visible with the headline "Your Health is always in the first place" and a "Make an Appointment" button
+- [ ] Statistics counter section — 4 stat items are visible with their respective icons, numbers, and labels
+- [ ] Services grid — the services section is visible with all service items and icons
+- [ ] About section with accordion — the corresponding panel expands and other panels collapse
+- [ ] Features highlight section — 4 feature items are visible with icons, titles, and descriptions
+- [ ] Doctor profiles section — 3 doctor profiles are visible with names, specialties, and action buttons
+- [ ] Testimonials section — testimonial cards are visible with quotes, names, and star ratings
+- [ ] Blog section — 3 blog cards are visible with titles and excerpts

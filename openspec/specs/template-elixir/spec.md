@@ -187,3 +187,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays branding and navigation — the navbar shows the "Elixir" logo, all navigation links, a search button, and a cart link with badge
+- [ ] Hero section displays welcome message and CTA — the hero shows "Welcome To Elixir" as the main heading
+- [ ] Feature banners showcase store benefits — the feature banners section shows headings for "Free Shipping", "Season Sale 50% Off", and "Buy A Gift Card"
+- [ ] Popular products grid displays product cards — the popular products section shows 6 product cards with names (Bioderma, Chanca Piedra, Umcka Cold Care, Cetyl Pure, CLA Core, Poo Pourri) and prices
+- [ ] New products section displays on light background — the new products section shows 4 product cards (Umcka Cold Care, Bioderma, Chanca Piedra, Cetyl Pure)
+- [ ] Testimonials section displays customer reviews — the testimonials section shows quotes from Kelly Holmes, Rebecca Morando, and Lucas Gallone
+- [ ] CTA banners display on dark background — the CTA section shows "Elixir Products" and "Rated by Experts" headings

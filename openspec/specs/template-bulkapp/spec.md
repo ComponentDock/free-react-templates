@@ -223,3 +223,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "BulkApp" and links to Home, Features, Pricing, and Screens
+- [ ] Hero section — it SHALL contain a level-1 heading "The Best App in the Universe"
+- [ ] Features section — it SHALL contain a heading "Unique Features" and a blurb
+- [ ] About sections — it SHALL contain the heading "We Believe that Interior beautifies the Total Architecture"
+- [ ] Screenshots section — it SHALL contain a heading "Unique Screenshots"
+- [ ] Testimonials section — it SHALL contain a heading "Testimonials"
+- [ ] Download CTA — it SHALL contain a heading "Download This App Today!"
+- [ ] Latest news section — it SHALL contain a heading "Latest News"
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

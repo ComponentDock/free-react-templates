@@ -252,3 +252,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Roadly" and links to
+- [ ] Hero section — it SHALL contain a level-1 heading "Now It's easy for you rent a
+- [ ] Search strip — it SHALL contain a heading "Choose A Perfect Car" and selects for
+- [ ] Services section — it SHALL contain a heading "Our Services"
+- [ ] Cars section — it SHALL contain a heading "Choose Your Car" and a "What we
+- [ ] How it works section — it SHALL contain a "Work flow" kicker and a heading "How it
+- [ ] Testimonials section — it SHALL contain a "Testimonial" kicker and a heading "Happy
+- [ ] Search CTA section — it SHALL contain an "About us" kicker and a heading "Choose A
+- [ ] Blog section — it SHALL contain a "Blog" kicker and a heading "Recent Blog"
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

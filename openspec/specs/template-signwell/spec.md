@@ -173,3 +173,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] App composition and title — the page displays a social login section, a divider, and a login form card
+- [ ] Login form fields — a text input with placeholder "Username" is present
+- [ ] Social login buttons — buttons for Facebook, Twitter, and Google are present
+- [ ] Divider — a separator with text "or" is visible between the two sections
+- [ ] Responsive layout — the social buttons and login form are stacked vertically
+- [ ] Dark mode — the html element gains the "dark" class

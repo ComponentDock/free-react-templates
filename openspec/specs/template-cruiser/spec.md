@@ -106,3 +106,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page sections render in correct order — all 13 sections are present and visible
+- [ ] Navbar provides navigation — the page scrolls to the corresponding section
+- [ ] Hero carousel displays slides — at least one slide with heading text is visible
+- [ ] Services grid shows 6 service cards — 6 service cards are displayed
+- [ ] Pricing section shows 3 tiers — all 3 tiers display with their respective prices
+- [ ] Contact form is interactive — input fields for first name, last name, email, and a message textarea are present

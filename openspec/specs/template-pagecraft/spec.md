@@ -112,3 +112,11 @@ Recreation of ColorLib **Pageone** (`https://colorlib.com/wp/template/pageone/`)
 - [ ] Vitest tests pass with 100% coverage.
 - [ ] Footer links to Component Dock.
 - [ ] No mention of ColorLib in source code.
+- [ ] 1. Navigation (`Navbar.tsx`) — the navbar shows "PageCraft." logo and navigation links
+- [ ] 2. Hero Section (`Hero.tsx`) — it displays the agency headline and introductory copy
+- [ ] 3. Services Section (`Services.tsx`) — service cards with images and titles are displayed
+- [ ] 4. Process Section (`Process.tsx`) — sequential workflow steps are shown clearly
+- [ ] 5. Clients Section (`Clients.tsx`) — partner brand cards are displayed
+- [ ] 6. Features Section (`Features.tsx`) — feature items are listed in a clean grid
+- [ ] 7. Team Section (`Team.tsx`) — member photos, names, roles, and social icons appear
+- [ ] 8. Contact Section (`Contact.tsx`) — validation errors prevent submission

@@ -183,3 +183,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar with logo and navigation — the Anipulse logo is visible on the left
+- [ ] Hero carousel with anime show slides — the hero carousel shows the first slide with background image
+- [ ] Trending Now section with anime card grid — the "Trending Now" heading with red accent bar is visible
+- [ ] Popular Shows section — the "Popular Shows" heading is visible
+- [ ] Recently Added Shows section — the "Recently Added Shows" heading is visible
+- [ ] Live Action section — the "Live Action" heading is visible
+- [ ] Sidebar with Top Views and filter tabs — the "Top Views" heading is visible

@@ -171,3 +171,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar displays "JobVane" as brand text
+- [ ] Feature highlight bar — 4 feature cards are displayed on a blue background
+- [ ] Job categories — the heading reads "Top Categories"
+- [ ] Specialism search — the heading reads "Browse Job by Specialism"
+- [ ] Job listings — the heading reads "Hot Jobs"
+- [ ] Client testimonials — the heading reads "Happy Clients"
+- [ ] Candidate profiles — the heading reads "Latest Candidates"
+- [ ] Newsletter subscription — the heading reads "Subscribe to our Newsletter"

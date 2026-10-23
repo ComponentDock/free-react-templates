@@ -199,3 +199,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders and scrolls to sections — I see a logo on the left
+- [ ] Hero banner displays headline and CTA — I see a headline "Hello We're BizPlanner"
+- [ ] About section shows 4 feature cards — I see a centered section title
+- [ ] Services section shows 6 service items — I see 6 service items in a 3x2 grid
+- [ ] Projects gallery filters by category — the gallery shows only matching items
+- [ ] Parallax banner shows CTA — I see a heading and CTA button
+- [ ] Team section shows members — I see 4 team member cards
+- [ ] Skills section shows progress bars — I see 5 skill bars with correct labels and percentages
+- [ ] Clients section shows testimonials — the testimonial changes
+- [ ] Pricing section shows 3 plans — I see 3 pricing cards with plan names, prices, and features
+- [ ] Blog section shows posts — I see 3 blog cards with images, titles, and excerpts
+- [ ] Partners section shows logos — I see partner logo images
+- [ ] Contact section has form and info — I see a confirmation message
+- [ ] Brand color applied consistently — the brand color is applied for CTAs, icons, and accents

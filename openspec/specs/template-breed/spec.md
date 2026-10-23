@@ -225,3 +225,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "breed" and links to About,
+- [ ] Hero slider — the first slide SHALL contain a level-1 heading "We Love Pets"
+- [ ] About section — it SHALL contain a heading "It's a Dog Life" and a sub heading
+- [ ] Team section — it SHALL contain a heading "Every Dog Needs A Good Owner"
+- [ ] Breed collections section — it SHALL contain a heading "Dog Breed Collections"
+- [ ] Blog section — it SHALL contain a heading "Recent Blog Post"
+- [ ] Footer — it SHALL show the "About The Breed" blurb, "Contact Info" with a
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

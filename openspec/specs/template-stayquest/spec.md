@@ -92,3 +92,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero section with background image — a full-screen hero section is visible
+- [ ] Search heading — a heading with text "Search Hotel" is displayed
+- [ ] Search form bar with fields — a text input with placeholder "What are you looking for?" is present

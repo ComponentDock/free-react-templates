@@ -171,3 +171,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar renders contact info and action buttons — a phone number "+1 (168) 314 5016" is displayed
+- [ ] Navbar displays brand and navigation links — the brand text "Paprika" is displayed
+- [ ] Hero section displays welcome message and CTA — "Welcome To Our" text is displayed
+- [ ] Services section shows four items — "Pizzas", "Coffee", "Burgers", and "Drinks" service items are displayed
+- [ ] BookTable form with date, time, party size — a date input is visible
+- [ ] Menu section shows food items with prices — at least 4 menu items are displayed (Grilled Chicken, Lasagne Pasta, Pepperoni Pizza, Caesar Salad)
+- [ ] Chefs section shows team members — at least 4 chef cards are displayed (Suzanne Goin, Thomas Keller, Paul Bocuse, Giada De Laurentiis)
+- [ ] Events section shows upcoming event — an event heading "Next Event" is displayed
+- [ ] Blog section shows recent posts — at least 3 blog cards are displayed

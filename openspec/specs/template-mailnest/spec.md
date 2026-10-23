@@ -153,6 +153,9 @@ The page footer links to Component Dock.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Page layout — I see a centered two-column layout with the left column containing
+- [ ] Left column — illustration and heading — I see the heading "Let's talk about everything!" in large bold
+- [ ] Contact form — I see a "Your name" input, an "Email" input, a "Subject" input,
 
 ## Design tokens
 

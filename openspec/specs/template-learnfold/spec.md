@@ -167,3 +167,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile menu — the navbar shows "Learnfold" brand, all 5 nav links, and a Login button
+- [ ] Hero with signup form — the hero heading "Get The Best Free Online Courses" is displayed
+- [ ] Course categories grid — 6 category cards are rendered in a grid
+- [ ] Search section — the section background is brand primary
+- [ ] Featured courses with filter tabs — all 8 course cards are visible
+- [ ] Teacher signup section — Name, E-mail, Phone inputs are present
+- [ ] Banner CTA section — the heading "Join Our Community Now!" is displayed
+- [ ] Brand tokens applied consistently — Raleway font is loaded from Google Fonts

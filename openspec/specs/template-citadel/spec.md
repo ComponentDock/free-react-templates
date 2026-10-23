@@ -118,3 +118,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header with navigation and contact info — the phone number "+1 (800) 256-3562" is visible
+- [ ] Hero slider with industrial messaging — the tagline "Quality work. Trustable service. Dedicated team" is shown
+- [ ] Brand logos section — 6 brand logo images are rendered on a gray background
+- [ ] Services section with 3 service cards — the section title "Our Services" is visible
+- [ ] Projects section with dark overlay — the heading "Take a look around our projects" is visible
+- [ ] CTA section — the heading "Let's talk about your industrial problems" is visible
+- [ ] Location info section with 3 cards — "Our Location", "Opening Hours", and "Drop a Message" cards are visible

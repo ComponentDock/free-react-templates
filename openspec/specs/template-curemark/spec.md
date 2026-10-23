@@ -173,3 +173,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with logo, navigation, and emergency CTA — the navbar SHALL display the "Curemark" logo text
+- [ ] Hero banner with background image and CTA — the heading "The Best Medical Services" SHALL be visible
+- [ ] Information boxes (hours, emergency, appointment) — "Opening Hours" heading SHALL be visible
+- [ ] Department cards in 3x3 grid — the heading "Our Departments" SHALL be visible
+- [ ] Patient testimonials — the heading "Patient's Testimonials" SHALL be visible
+- [ ] News/blog posts — the heading "The News" SHALL be visible
+- [ ] Newsletter subscription — the heading "Subscribe to our newsletter" SHALL be visible

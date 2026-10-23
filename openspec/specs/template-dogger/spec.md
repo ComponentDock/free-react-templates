@@ -344,3 +344,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "dogger" and links to Home,
+- [ ] Hero section — it SHALL contain a level-1 heading "We Care For Your Dog"
+- [ ] Welcome and feature rows — it SHALL contain a heading "Welcome to Dogger Pet Care"
+- [ ] About section — it SHALL contain a heading "About Us"
+- [ ] Trainers section — it SHALL contain a heading "Our Trainers"
+- [ ] Pricing section — it SHALL contain a heading "Pricing Table"
+- [ ] FAQ accordion — it SHALL contain a heading "Frequently Ask Questions"
+- [ ] Testimonials section — it SHALL contain a heading "Happy Customers"
+- [ ] Gallery section — it SHALL contain a heading "Photo Gallery"
+- [ ] Blog section — it SHALL contain a heading "Dogger Blog"
+- [ ] Services section — it SHALL contain a heading "Our Services"
+- [ ] Contact section — it SHALL contain the headings "Contact Form" and "Contact Us"
+- [ ] Footer — it SHALL show the "About Us" blurb, a "Quick Links" column, a
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -241,3 +241,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact information and social links — the TopBar shows phone "(123) 456-789-1230" and email "info@retreat.com"
+- [ ] Navbar provides navigation and booking CTA — the navbar shows the "Retreat" logo
+- [ ] Hero section displays welcome message and CTA — the hero shows "Welcome To Retreat"
+- [ ] BookingForm allows date and guest selection — "Check In" and "Check Out" date inputs are present
+- [ ] About section displays hotel information — the about section shows "Welcome to" text
+- [ ] Services section displays 5 service items — all 5 service labels are visible
+- [ ] Rooms section displays room cards with pricing — "Premium King Room" and "Deluxe Suite" are displayed
+- [ ] Testimonials section displays guest feedback — a testimonial quote about a "wonderful stay" is displayed
+- [ ] Gallery section displays resort images — "Ocean View Suite", "Fine Dining Restaurant", "Spa & Sauna", and "Beach Activities" are displayed
+- [ ] Blog section displays latest news — 3 blog post titles are displayed
+- [ ] CTA section encourages contact — "Contact us now!" is displayed
+- [ ] Partners section displays partner logos — 5 partner names are displayed
+- [ ] App renders all sections in order — all major section content is present

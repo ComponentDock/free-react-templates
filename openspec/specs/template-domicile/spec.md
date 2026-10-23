@@ -88,3 +88,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Complete page composition — all section headings are present in the DOM
+- [ ] Brand identity — "Domicile" appears in navbar and footer
+- [ ] Property listings — all 6 property cards are visible with prices
+- [ ] Search filters — all 4 filter dropdowns are visible
+- [ ] 100% test coverage — coverage is 100%
+- [ ] Per-app verification gate — all steps pass

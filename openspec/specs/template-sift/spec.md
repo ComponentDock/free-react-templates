@@ -559,6 +559,12 @@ The system SHALL include the required attribution footer.
     "free-react-templates/sift" package-lock.json` ≥ 1) after `npm
     install` at root.
 - [ ] PR `feat/template-sift` description includes: source URL
+- [ ] Page layout — the page background SHALL be `#efefef
+- [ ] Option list — the menu SHALL list exactly these eight options in order:
+- [ ] Widget boxes and tinted chips — each widget SHALL be a white box with NO border, `4px` corner
+- [ ] Selection limit (Limit to 5) — the pick SHALL succeed (chip added, row dimmed, dropdown closed)
+- [ ] Interactions — that widget's dropdown SHALL open
+- [ ] Accessibility — each widget SHALL expose `role="combobox"` (or equivalent
       (https://colorlib.com/wp/template/multiselect-20/), preview URL (the
       `/theme/bootstrap/` one), the token list, and what differs (renames,
       paraphrased heading "Sift (Limit to 5)", no icomoon, Roboto Google

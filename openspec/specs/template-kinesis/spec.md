@@ -509,3 +509,19 @@ Dock (`https://www.componentdock.com/`) instead.
     kinesis`, PR lists source (ColorLib Dazko), preview URL, tokens,
       and what differs.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top strip — the top strip SHALL show the text "Free Call" in the brand red
+- [ ] Navbar — it SHALL show the site name "Kinesis" as the brand
+- [ ] Hero slider — it SHALL show the eyebrow "Crossfit" and headline "Shape Your Perfect Body" on the first slide
+- [ ] About section — it SHALL show the eyebrow "Information About Us" and the heading "Kinesis A Crossfit Workout Training Center"
+- [ ] Counter band — it SHALL show four counters labelled "Years of experienced", "Fitness Trainers", "Best Equipments", and "Satisfied Clients"
+- [ ] CTA band — it SHALL show the eyebrow "Join Us Now" and the heading "Join Us Our Free Workout Training With Kinesis"
+- [ ] Free fitness features — it SHALL show three cards titled "Free Fitness Training", "Tons of Cardio & Strength", and "No Commitment Memberships"
+- [ ] Classes section — it SHALL show the eyebrow "Our Classes" and the heading "Kinesis Workout Classes"
+- [ ] Pricing section — it SHALL show the eyebrow "Our Pricing" and the heading "Pricing & Packages"
+- [ ] Video band — it SHALL show a circular play button and the heading "Members Success Stories"
+- [ ] Schedules table — it SHALL show the eyebrow "Schedules" and the heading "Fitness Schedules"
+- [ ] Trainers section — it SHALL show the eyebrow "Trainer" and the heading "Fitness Trainer"
+- [ ] Testimonials section — it SHALL show the eyebrow "Testimonial" and the heading "Happy People"
+- [ ] Blog section — it SHALL show the eyebrow "Our Blog" and the heading "Recent Blog"
+- [ ] BMI calculator — it SHALL show the eyebrow "Get Your Body Max Index" and the heading "What is Your BMI"
+- [ ] Page composition — the page SHALL compose the top strip, navbar, hero slider, about, counters, CTA, features, classes, pricing, video band, schedules, trainers, testimonials, blog, BMI, and footer in…

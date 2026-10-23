@@ -201,3 +201,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the site name "Aurora" linking to `#home
+- [ ] Hero section — it SHALL contain the headline "New Styles, Suited for You Unlike Any
+- [ ] Arrivals section — it SHALL show the section heading
+- [ ] Parallax tiles — it SHALL show tiles titled "Peak Collection" and "Night Market",
+- [ ] Gallery section — it SHALL show the "Lookbook" heading
+- [ ] Features section — it SHALL show the "Why Aurora" heading
+- [ ] Performance section — it SHALL show the "Built to Perform" heading and both point headings
+- [ ] Newsletter form — an error message SHALL be displayed
+- [ ] Footer — it SHALL show the site name and tagline
+- [ ] Page composition — all sections SHALL be present in the main landmark

@@ -182,3 +182,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Gradient background — the page background should be a gradient from blue through pink to yellow
+- [ ] Centered card layout — a white card should be centered on the page
+- [ ] Card heading — the card heading should display "Form Wizard"
+- [ ] Progress bar — the progress bar should show 33%
+- [ ] Step 1 — Personal Info — fields for "Full name", "Email", and "Phone number" should be visible
+- [ ] Step 2 — Address — fields for "Building Number", "Street", "Town", and "Zip code" should be visible
+- [ ] Step 3 — Payment — fields for "Card Holder Name", "Card Number", "CVC", and "Expiration" should be visible
+- [ ] Step navigation — the next step should become visible
+- [ ] Form submission — the form should handle the submission
+- [ ] Input focus styling — the input border should change to green
+- [ ] Pill-shaped buttons — Next/Submit buttons should be green with pill shape
+- [ ] Responsive layout — the card heading should reposition and reduce in size

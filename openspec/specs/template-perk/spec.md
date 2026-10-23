@@ -218,3 +218,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header — the top bar SHALL show "Mon-Fri: 8am to 2pm" and "Sat-Sun: 11am to 4pm"
+- [ ] Hero — it SHALL show a level-1 headline "Start your day with a black Coffee"
+- [ ] About/Video section — it SHALL show the subtitle "Live Coffee making process"
+- [ ] Menu — it SHALL show the title "What kind of Coffee we serve for you"
+- [ ] Gallery — it SHALL render 5 gallery images with alt text "Coffee gallery"
+- [ ] Reviews — it SHALL show 2 reviewer cards with names and star ratings
+- [ ] Blog — it SHALL show 2 blog cards with titles, excerpts, dates, and tags
+- [ ] Page composition — the page SHALL compose the Header in the banner landmark,

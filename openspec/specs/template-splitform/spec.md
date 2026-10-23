@@ -109,3 +109,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Landing page with modal trigger — the landing section shows the "Splitform" heading, a subtitle, and a "Launch Modal" button
+- [ ] Split-panel modal with sign-in and sign-up forms — the left panel shows "Sign In" heading, username input, password input, Sign In button, Remember Me checkbox, Forgot Password link, "Or Sign In…
+- [ ] Modal dismissal — the modal closes
+- [ ] Dark mode toggle — the `dark` class is added to `<html>` and the button label changes to "Light mode"

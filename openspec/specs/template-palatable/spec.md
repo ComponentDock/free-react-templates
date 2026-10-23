@@ -166,3 +166,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top header bar — a top header bar is visible above the navbar
+- [ ] Sticky navbar — a sticky navbar is visible with a logo on the left
+- [ ] Hero carousel — a full-width image carousel is displayed with auto-rotation
+- [ ] Top categories section — 2 featured category cards are displayed
+- [ ] Best recipes grid — a heading is shown
+- [ ] CTA banner — a full-width banner with a background image and dark overlay is shown
+- [ ] Small recipes list — a list of 9 recipe items is displayed in a 2-column layout
+- [ ] Quote newsletter ad section — a 3-column layout is shown
+- [ ] Instagram gallery — a heading is shown
+- [ ] Responsive behavior — the navbar collapses to a hamburger menu

@@ -137,3 +137,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with branding and navigation — I see the GRAINCRAFT logo, all 6 nav links, and the "Get a Quote" button
+- [ ] Hero section with background imagery — I see the heading text and a "Contact Us" button
+- [ ] About section with stats — I see the heading, description text, 3 stat counters, and the "Contact Us" button
+- [ ] Services section with 4 service cards — I see 4 service card titles
+- [ ] Testimonials section with client quotes — I see at least 2 client names and quotes
+- [ ] Portfolio gallery — I see at least 6 project images
+- [ ] Choose Us section with 4 reasons — I see 4 reason titles
+- [ ] FAQ accordion — I see 3 question headings
+- [ ] App renders all sections in order — all 9 sections render in the correct order

@@ -118,3 +118,8 @@ live sheet; do not build them from the screenshot, take the palette above:
 - [ ] Lint and formatting checks pass.
 - [ ] Footer correctly links `https://www.componentdock.com/`.
 - [ ] No mention of ColorLib in app source code.
+- [ ] 1. Navigation Header — they see the brand logo and navigation links
+- [ ] 2. Hero Carousel Section — the carousel smoothly transitions to slide 2 with updated headline and image
+- [ ] 3. Features Grid — each card displays an icon, title, and descriptive text
+- [ ] 4. Interactive Showcase & Slides — the items scroll correctly into view
+- [ ] 5. Statistics Counter & Testimonials — the respective review text and author details appear

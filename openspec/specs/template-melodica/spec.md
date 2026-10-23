@@ -150,3 +150,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar with logo and section links — I see a navigation bar at the top with the logo "Melodica" and links to all sections
+- [ ] Hero section with headline and CTAs — I see a hero section with a large headline "Feel The Music" and a subtitle paragraph
+- [ ] About section with artist info and stats — I see an artist image and bio text describing the artist
+- [ ] Tracks section with featured tracks grid — I see a grid of at least 4 track cards with images and titles
+- [ ] Events section with upcoming shows — I see a list of upcoming events with date and venue information
+- [ ] Photo gallery grid — I see a grid of at least 6 images in a 2-3 column layout
+- [ ] Newsletter signup section — I see a heading "Subscribe", an email input, and a "Subscribe" button

@@ -384,4 +384,16 @@ The system SHALL include a skip-to-content link and a back-to-top button.
       preview URL, design tokens used, renames (Sapphire, email/domain,
       placeholder images)
 - [ ] After merge: `[~]` → `[x]` + surge URL + homepage in TEMPLATES.md,
+- [ ] Navigation bar — the navbar SHALL show the site name "Sapphire" and links to
+- [ ] Hero section with booking widget — it SHALL contain a level-1 heading "Experience Timeless Luxury"
+- [ ] Stats strip — it SHALL show the metrics 10000+ Guests Hosted, 150+ Luxury
+- [ ] Rooms & Suites section — it SHALL contain a heading "Rooms & Suites"
+- [ ] Amenities section — it SHALL contain a heading "World-Class Amenities"
+- [ ] Dining section — it SHALL contain a heading "Culinary Excellence"
+- [ ] Gallery section — it SHALL contain a heading "A Glimpse of Paradise"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Guests Say"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] CTA band — it SHALL contain a heading "Make Your Stay Extraordinary" on a
+- [ ] Footer — it SHALL show the site name, a blurb, and contact details
+- [ ] Accessibility and extras — a "Skip to content" link SHALL be the first focusable element
       `npm run readme:status`

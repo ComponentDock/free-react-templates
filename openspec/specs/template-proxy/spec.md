@@ -149,3 +149,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with mobile toggle — I see the "Proxy" logo and four navigation links
+- [ ] Hero section with CTAs — I see the heading, subtext, "Get In Touch" button, and "Download" button
+- [ ] Property listings grid — I see 8 property cards each with a price and address
+- [ ] Customer testimonials — I see 3 testimonials with avatars, quotes, and author names
+- [ ] About section — I see an image, "About Me" heading, and bio paragraphs
+- [ ] Features section — I see 3 feature cards with icons, titles, and descriptions
+- [ ] Blog section — I see 3 blog post cards with dates and titles

@@ -379,5 +379,16 @@ and a document title.
 - [ ] `docs/templates/ingot/tasks.md` has the task outline + design notes.
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh ingot`,
+- [ ] Navbar — the navbar SHALL show the site name "Ingot" as the brand
+- [ ] Hero slider — it SHALL show slide 1 with the headline "We Are Industrial Company"
+- [ ] Services section — it SHALL show the heading "We'll Handle Any Problems and Solve Them"
+- [ ] Feature highlights — it SHALL show three features titled "Modern Design", "Built With Passion", and "Fast Loading", each with an orange icon and a blurb
+- [ ] Split feature blocks — it SHALL show the heading "Let's Build Together" with a paragraph and a "Read More" link, and an image on the opposite side
+- [ ] Projects grid — it SHALL show the heading "Projects" and a lead paragraph
+- [ ] Testimonial carousel — it SHALL show the heading "Testimonial"
+- [ ] Blog section — it SHALL show the heading "Blog Posts" and a lead paragraph
+- [ ] CTA band — it SHALL show the heading "Get Started With Ingot Free Template" in white on the orange band
+- [ ] Footer — it SHALL show an "About" column with a paragraph and social icons (Twitter, Facebook, LinkedIn, Instagram)
+- [ ] Page composition — the page SHALL compose the navbar, hero slider, services, features, two split blocks, projects, testimonials, blog, CTA band, and footer in order
       PR lists source (ColorLib Industrial), preview URL, tokens, and what
       differs.

@@ -112,3 +112,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Sidebar profile section — a circular profile photo, user name "Alex Morgan", and location "San Francisco, CA" are visible in the sidebar
+- [ ] Stats display — the stats row shows "892 Posts", "22.5k Followers", and "150 Following"
+- [ ] Navigation menu — the sidebar contains navigation links for Feed, Explore, Notifications, Direct, Stats, and Sign out
+- [ ] Post grid — 8 post cards are displayed in a grid layout
+- [ ] Mobile sidebar toggle — the sidebar is translated off-screen

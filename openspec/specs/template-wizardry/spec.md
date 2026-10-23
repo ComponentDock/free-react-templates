@@ -117,3 +117,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Multi-step form wizard navigation — the wizard displays Step 1 (Account Setup) with form fields for email, password, and confirm password
+- [ ] Form validation prevents advancing on invalid input — inline validation error messages are displayed for email, password, and confirm password
+- [ ] Successful submission completes the wizard — a success screen is displayed with a "Complete!" header and "Registration Complete" message
+- [ ] Navigation buttons — the Back button is not visible

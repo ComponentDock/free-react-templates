@@ -75,3 +75,8 @@ As a visitor, I want to read client feedback and find company contact details an
 - [ ] 100% test coverage maintained
 - [ ] Responsive design verified on mobile and desktop viewports
 - [ ] Footer links https://www.componentdock.com/ present
+- [ ] Navigation & Header — the header displays the logo, navigation links (Home, Services, About, Blog, Contact), social icons, and "Get Free Quote" CTA button
+- [ ] Hero Section with Slider / Banner — it shows heading "Give your business a flow", subheading "Transport quality and excellence to enhance your business", and "Our Services" action link with carousel…
+- [ ] Services Grid — three primary shipping service cards appear with numbered headings (01. Air Shipping, 02. Logistic Service, 03. Ground Shipping) and descriptive summaries
+- [ ] Business Solutions & Features — it displays "Tracking Is Easy" and "Multiple Warehouses" feature blocks with descriptions and a "Learn More" button
+- [ ] Shipment Quote Calculator Form — clicking "Request Quote" validates the inputs and displays a success confirmation

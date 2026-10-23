@@ -234,3 +234,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Lucide React icons used for UI icons
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] Casamora template behaviour — the logo "Casamora" is visible

@@ -201,3 +201,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Terracotta" and links to Home, About, Service, Project, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading
+- [ ] Innovative strip — it SHALL show three cards with titles and blurbs
+- [ ] About section — it SHALL contain a heading "About Us"
+- [ ] Services section — it SHALL contain a heading "our service"
+- [ ] Projects section — it SHALL show at least three project cards with images and captions
+- [ ] Blog section — it SHALL show at least three blog cards with titles and dates
+- [ ] Contact section — it SHALL show an email address and a phone number
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

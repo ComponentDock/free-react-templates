@@ -131,3 +131,10 @@ a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Whelp", links to Home, About, Puppies, and Contact, and a dark-mode toggle button
+- [ ] Hero section — it SHALL contain the headline, the subtitle, and a "Meet the puppies" button linking to the puppies section
+- [ ] About section with stats — it SHALL show the description text
+- [ ] Puppies section — it SHALL show the section heading
+- [ ] Contact form — the form SHALL show an error message for each invalid field
+- [ ] Footer — it SHALL show the site name "Whelp" and a tagline
+- [ ] Page composition — the page SHALL compose all sections: the Navbar in the banner landmark, Hero, About, Puppies, and Contact in the main landmark, and the Footer in the contentinfo landmark

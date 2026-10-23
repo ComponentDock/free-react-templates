@@ -108,3 +108,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Offcanvas sidebar menu — the sidebar menu slides in from the left
+- [ ] Hero accordion gallery — 5 accordion items are rendered

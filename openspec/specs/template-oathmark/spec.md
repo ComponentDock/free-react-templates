@@ -154,3 +154,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the brand name "Oathmark" linking to #home
+- [ ] Hero section — it SHALL show the headline "Notary Public & Legal Solutions"
+- [ ] Practice Areas section — 6 practice area cards SHALL be displayed
+- [ ] About section — it SHALL show 2 attorney images
+- [ ] Testimonials section — 3 testimonial cards SHALL be displayed
+- [ ] Legal Solutions section — it SHALL show the heading "We Have Legal Solutions"

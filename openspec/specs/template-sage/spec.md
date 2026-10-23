@@ -221,3 +221,14 @@ and a document title.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navigation bar — the navbar SHALL show the site name "Sage" and links to the main sections
+- [ ] Hero section — it SHALL contain a level-1 heading matching "Welcome to Sage Pet Care"
+- [ ] Services section — it SHALL show cards for Love & Care, Fearsome, and Beautiful, each with an icon, title, and copy
+- [ ] About section — it SHALL show the heading "About Us"
+- [ ] Trainers section — it SHALL show the heading "Our Trainers"
+- [ ] Pricing section — it SHALL show the heading "Pricing Table"
+- [ ] FAQ section — it SHALL show the heading "Frequently Ask Questions"
+- [ ] Testimonials section — it SHALL show the heading "Happy Customers"
+- [ ] Photo gallery — it SHALL show the heading "Photo Gallery"
+- [ ] Footer — it SHALL show the site name "Sage" and social links
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

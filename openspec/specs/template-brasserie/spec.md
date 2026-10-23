@@ -143,3 +143,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the site name "Brasserie" linking to `#home
+- [ ] Hero section — it SHALL show a heading "Brasserie"
+- [ ] About section — it SHALL show a heading "About Us"
+- [ ] Specials / Menu section — it SHALL show a heading "Our Specials"
+- [ ] Awards section — it SHALL show a heading "Awards"
+- [ ] Testimonials section — it SHALL show a heading "Testimonials"
+- [ ] Reservation section — it SHALL show a heading "Reserve Your Desk"

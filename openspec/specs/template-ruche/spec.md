@@ -49,3 +49,6 @@ Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accor
 - [ ] 100% test coverage (`npm run test:coverage`)
 - [ ] Correct CNAME and homepage URL (`ruche.free.componentdock.com`)
 - [ ] Footer links Component Dock
+- [ ] Hero / Header Section — Scenario:** The page displays a prominent header section introducing the Ruche accordion collection with a title ("Ruche Interactive Accordions"), subtitle, and quick search…
+- [ ] Interactive Accordion Groups — Scenario:** Multiple categorized accordion groups (e.g., General Information, Technical Specifications, Integration Guide, Billing & Support) are rendered
+- [ ] Interactive Playground / Customizer — Scenario:** A live customization panel allows users to toggle accordion variants (flush, bordered, separated, rounded), add icons, and test states instantly

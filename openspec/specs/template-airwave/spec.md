@@ -507,3 +507,15 @@ Dock (`https://www.componentdock.com/`) instead.
       `npm run readme:status`
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Airwave" and links to
+- [ ] Hero section — it SHALL contain a pill badge "New Episode Every Tuesday"
+- [ ] Featured episode band — it SHALL show the eyebrow "Latest Episode" and the meta line
+- [ ] Recent Episodes section — it SHALL contain a heading "Recent Episodes"
+- [ ] Host section — it SHALL contain a heading "Meet Your Host"
+- [ ] Sponsors section — it SHALL contain a heading "Proudly Supported By"
+- [ ] Testimonials section — it SHALL contain a heading "What Listeners Say"
+- [ ] Newsletter section — it SHALL contain a heading "Never Miss an Episode" on a
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Contact section — it SHALL contain a heading "Let's Connect"
+- [ ] Footer — it SHALL show the site name, a blurb about real founder stories,
+- [ ] Accessibility and extras — a "Skip to content" link SHALL be the first focusable element

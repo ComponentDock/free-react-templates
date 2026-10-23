@@ -217,3 +217,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Ecobit" and links to Home, Features, Pricing, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Building Networks For People"
+- [ ] Feature tiles — it SHALL show tiles titled "Fully Secured", "Unique Design", and "A Volunteer"
+- [ ] Split sections — it SHALL contain one of the split headings
+- [ ] Pricing section — it SHALL contain a heading "Simple Pricing"
+- [ ] Reviews section — it SHALL show a quote with an attribution
+- [ ] Subscribe band — it SHALL contain the heading "Experience the most simple way to manage business"
+- [ ] Clients strip — it SHALL show at least four client logo tiles
+- [ ] Footer — it SHALL show link columns and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

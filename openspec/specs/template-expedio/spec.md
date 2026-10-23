@@ -153,3 +153,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders with brand and navigation — the navbar shows "Expedio" brand text
+- [ ] Hero section displays travel headline — the headline "Travel More To Discover Yourself" is displayed
+- [ ] Services section shows three service cards — "Our Popular Services" heading is visible
+- [ ] About section shows exploration text — the heading "Exploration is really the essence of the human spirit" is visible
+- [ ] Tours section shows tour package cards — four tour cards are displayed (Paris Tour, Bali Escape, Tokyo Adventure, Santorini Retreat)
+- [ ] Testimonials section shows client quotes — three testimonial cards are displayed
+- [ ] Search Package form has all fields — a text input with placeholder "Where do you want to go?" is shown
+- [ ] Blog section shows three blog posts — three blog post cards are displayed

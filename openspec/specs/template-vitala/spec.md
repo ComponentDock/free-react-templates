@@ -95,3 +95,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Mobile navigation toggle — the mobile navigation should be visible
+- [ ] Appointment form interaction — the form should remain visible
+- [ ] Department icons are displayed — I should see Cardiology, Urology, Dental Care, Eye Care, Neurology, and Plastic Surgery

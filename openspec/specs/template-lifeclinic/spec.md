@@ -232,3 +232,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top bar — it SHALL show "Welcome to LifeClinic" with "LifeClinic" highlighted in blue
+- [ ] Navigation bar — it SHALL show the brand name "LifeClinic"
+- [ ] Hero carousel — it SHALL show a background image from picsum.photos
+- [ ] Appointment booking form — it SHALL show "Make an Appointment" heading
+- [ ] About Us section — it SHALL show "We always put our patients first" heading
+- [ ] Cool facts statistics — it SHALL show "5632 Blood donations"
+- [ ] Gallery section — it SHALL show a grid of 6 images from picsum.photos
+- [ ] Features section — it SHALL show a thumbnail image on the left
+- [ ] Blog section — it SHALL show "Latest News" heading
+- [ ] Emergency helpline section — it SHALL show "For Emergency calls" heading with a phone icon

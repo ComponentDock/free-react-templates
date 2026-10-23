@@ -290,3 +290,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run readme:status` regenerates README status; TEMPLATES.md row
       marked `[x]` with the live URL on merge.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header and navbar — it shows the brand wordmark, the nav links
+- [ ] Hero slider — the headline "Music for everyone." renders with the word "Music"
+- [ ] Intro band ("Unlimited Access") — it shows the headline "Unlimited Access to 100K tracks" on the
+- [ ] How it works — it shows the three steps "Create an account", "Choose a plan",
+- [ ] Concept section — it shows the four items "Soul Music", "Live Concerts", "Dj
+- [ ] Subscription section — it shows the "$15/month" headline, the pink "Start a free trial
+- [ ] Premium section — it shows the four features "No ad interruptions", "High
+- [ ] Page composition — all eight sections appear in the source order and the page has

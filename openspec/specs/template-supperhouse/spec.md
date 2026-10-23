@@ -210,3 +210,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Supperhouse"
+- [ ] Hero banner — it SHALL show the subtitle "Wide Options of Choice"
+- [ ] Top Rated Dishes — it SHALL show 3 dish cards with images, headings, and descriptions
+- [ ] Video section — it SHALL show a play button
+- [ ] Features — it SHALL show 4 features: Refreshing Breakfast, Awesome Lunch, Soothing Dinner, Rich Quality Buffet
+- [ ] Featured Food Menus — it SHALL show a slide with title, description, and image
+- [ ] Chefs / Team — it SHALL show 4 team member cards with names and roles
+- [ ] Blog — it SHALL show 4 blog cards with dates, titles, excerpts, likes, and comments
+- [ ] Contact — it SHALL show a form with name, email, and message fields
+- [ ] Accessibility — the navbar SHALL have an aria-label "Primary"

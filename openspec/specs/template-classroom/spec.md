@@ -132,3 +132,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar shows logo "Classroom", nav links, and Contact Us button
+- [ ] Hero section — the hero section shows headline, CTA button, and sign-up form with email/password fields
+- [ ] Courses section — 3 course cards are visible with price, title, and student count
+- [ ] Programs section — 3 program rows are visible with titles and stats
+- [ ] Teachers section — 3 teacher cards are visible with names and Physics Teacher role
+- [ ] Testimonial section — the person name "Jerome Jensen" and quote text are visible
+- [ ] Why Choose Us section — 6 feature items are visible including "22,931 Yearly Graduates"
+- [ ] Contact form — all form fields and Send Message button are visible

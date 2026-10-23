@@ -159,3 +159,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar with navigation and mobile menu — I see links for "Home", "Portfolio", "Services", "About", "Contact"
+- [ ] Portfolio grid with 9 items — I see 9 portfolio project images
+- [ ] Services section with 6 cards — I see "Web Design", "Photography", "Marketing", "App Development",
+- [ ] About section with bio and work experience — I see "Bio" and "Work Experience" headings
+- [ ] Contact form with validation — I see inputs for Name, Email, Subject, Message

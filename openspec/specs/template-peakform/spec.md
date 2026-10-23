@@ -142,3 +142,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar renders logo, navigation links, and dropdown — the navbar displays "peakform" logo text and links for Home, Classes, Services, News, About, Contact
+- [ ] Hero section displays rotating slides — the hero section displays a headline with "Get In Shape" text
+- [ ] Feature blocks display gym categories — 4 feature items are displayed with Yoga, Weight Lifting, Boxing, and Running titles
+- [ ] About section shows gym information — the about section shows "All About Our Gym" heading, checklist items, and a "Read More" button
+- [ ] Featured classes show class cards — class cards are displayed with class titles, descriptions, and instructor names
+- [ ] Schedule shows day-based class timetable — day tabs are displayed with Sunday selected by default, showing class schedule rows
+- [ ] Testimonials display client quotes — testimonials are displayed with avatar images, names, and quote text
+- [ ] Trainers section shows trainer profiles — trainer cards are displayed with names and roles

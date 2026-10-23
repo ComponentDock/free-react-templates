@@ -102,3 +102,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page shell — a main container with class `bg-seekdot-bg` is rendered
+- [ ] Search bar — a form with aria-label "Search form" is present

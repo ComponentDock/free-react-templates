@@ -248,5 +248,12 @@ and a document title.
 - [ ] `docs/templates/edition/tasks.md` has the task outline + design notes.
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh edition`,
+- [ ] Header — the header SHALL show the site name "Edition" as the logo
+- [ ] Hero banner — it SHALL show a category label ("Tours & Travels"), a serif headline ("Amazing Places on earth"), and a date ("December 12, 2018")
+- [ ] Blog slider — it SHALL show at least three post cards
+- [ ] Recent posts list — it SHALL show a thumbnail with an overlaid author + date meta strip, a tag list, a serif title, an excerpt, and a "Read More" button
+- [ ] Sidebar widgets — it SHALL show, top to bottom: a "Newsletter" widget (email input + subscribe button), a "Category" widget (list rows), a "Popular Post" widget (thumb + title + date rows), and a…
+- [ ] Footer — it SHALL show four columns: "About Us", "Newsletter" (email input with orange submit button), "Instagram Feed" (4-column thumbnail grid), and "Follow Us" (social icons)
+- [ ] Page composition — the page SHALL compose the header, hero banner, blog slider, recent posts list with sidebar, and footer in order
       PR lists source (ColorLib Sensive), preview URL, tokens, and what
       differs.

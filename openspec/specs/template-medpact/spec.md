@@ -199,3 +199,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar shows the Medpact logo, all 6 nav links, and the appointment button
+- [ ] Hero section — they see the headline "Welcome to Medpact Hospital", a description, and two CTA buttons
+- [ ] Feature strip — they see exactly 4 feature cards with icons and labels
+- [ ] About section — they see the heading "Why Choose Us", a description, an image, and checklist items
+- [ ] Services section — they see exactly 4 service cards with icons and descriptions
+- [ ] Departments section — they see 6 department cards with icons and descriptions
+- [ ] Doctors section — they see 4 doctor cards with images, names, and specialties
+- [ ] Appointment form — browser validation errors appear
+- [ ] Testimonials section — they see 3 testimonial cards with names and quotes
+- [ ] Blog section — they see 3 blog post cards with images, dates, and Read More links
+- [ ] Accessibility — all interactive elements are focusable with visible focus rings
+- [ ] Responsive design — the layout stacks vertically and the nav collapses to a hamburger menu

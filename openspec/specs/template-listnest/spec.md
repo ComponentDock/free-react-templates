@@ -180,3 +180,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — it SHALL show the brand name "ListNest"
+- [ ] Hero section with search — it SHALL show the heading "Discover great places in New York"
+- [ ] Find Places section — it SHALL show the heading "What do you need to find?"
+- [ ] Featured Places section — it SHALL show the heading "Featured Places"
+- [ ] Browse Categories section — it SHALL show the heading "Browse Categories"
+- [ ] Add Listing CTA section — it SHALL show "Reach millions of People" heading
+- [ ] App composition — all 7 sections SHALL be present in the correct order

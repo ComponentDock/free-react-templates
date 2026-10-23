@@ -186,3 +186,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar with logo and links — the logo "Eminence" and links for Home, About, Services, Gallery, Testimonials, and Contact are visible
+- [ ] Hero section with profile info — the profile photo, name, title, and bio text are displayed
+- [ ] About section with stats and skills — three stat boxes show Total Donation $2.5M, Total Projects 1465, and Total Volunteers 3965
+- [ ] Experience and education tabs — the "My Experiences" tab is selected and experience entries are shown
+- [ ] Services section with three offerings — cards for Architecture, Interior Design, and Concept Design are shown with descriptions
+- [ ] Project gallery with filters — six project cards are displayed
+- [ ] Testimonials section with star ratings — three testimonial cards are shown with quotes, author names, and star ratings

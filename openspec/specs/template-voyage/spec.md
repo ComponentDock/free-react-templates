@@ -149,3 +149,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] CNAME and homepage configured correctly for `<name>.free.componentdock.com`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] Navigation Bar — all top navigation links and the contact CTA are visible and functional
+- [ ] Hero Section — the bold headline, watch video button, and background image are clearly displayed over the travel imagery
+- [ ] About Section — the heading, editorial paragraphs, and split feature images render correctly with a "Read more" action link
+- [ ] Destinations Carousel — destination cards display clear pricing tags and location details with navigation controls
+- [ ] Testimonials Section — traveler quotes, star ratings, and author details are displayed
+- [ ] FAQ Accordion — the accordion item expands to show the answer and collapses previously opened items
+- [ ] Blog / Recent Posts — four blog cards display properly with dates, titles, and read more links
+- [ ] Call to Action Banner — the engaging prompt and get started button invite conversion

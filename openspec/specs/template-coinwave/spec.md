@@ -151,3 +151,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Fixed header with navigation — a logo "CoinWave" is visible in the header
+- [ ] Hero banner section — a label "Currently Purchase Rate" is visible
+- [ ] Currency converter section — a heading "The Currency Converter" is visible
+- [ ] Services section — 3 service cards are visible with titles "Get Paid through Bitcoin", "Bitcoin Exchange Analysis", and "Send & Receive Bitcoin"
+- [ ] About section — a heading "Exchange Bitcoin is not that tough Anymore" is visible
+- [ ] Features section — 6 feature items are displayed with titles including "Expert Technicians" and "Professional Service"
+- [ ] Stats section — a heading "Ups and Downs of Bitcoin (Realtime)" is visible
+- [ ] Call to action section — a heading "Huge Transaction in last Week" is visible
+- [ ] Pricing section — 3 pricing cards are shown with titles "01 Ripple", "01 Ethereum", and "01 Bitcoin"
+- [ ] Blog section — 3 blog cards are shown with author names

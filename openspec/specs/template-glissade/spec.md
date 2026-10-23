@@ -240,3 +240,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar — the navbar SHALL show the site name "Glissade"
+- [ ] Hero — it SHALL show a gradient background from #3e69fe to #4cd4e3
+- [ ] Working Process — the heading "Our Working Process" SHALL be visible
+- [ ] Features — the heading "Our Exclusive Features" SHALL be visible
+- [ ] Remarkable Works — the heading "Remarkable Works" SHALL be visible
+- [ ] Story — it SHALL show the heading "From the part of beginning"
+- [ ] Newsletter — the heading "Subscribe for our Newsletter" SHALL be visible
+- [ ] Contact Form — the heading "Keep in Touch" SHALL be visible

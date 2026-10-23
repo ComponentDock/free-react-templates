@@ -202,3 +202,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Top navigation bar — a top navigation bar is visible at the top
+- [ ] Main navigation with logo and links — the logo "shoplane" is displayed with accent styling on "lane"
+- [ ] Category banners — three category banner cards are shown in a row
+- [ ] New arrivals product grid with filters — the heading "New Arrivals" is displayed
+- [ ] Deal of the week countdown — the heading "Deal Of The Week" is displayed
+- [ ] Best sellers carousel — the heading "Best Sellers" is displayed
+- [ ] Benefits row — four benefit items are shown in a row
+- [ ] Latest blogs section — the heading "Latest Blogs" is displayed
+- [ ] Newsletter subscription form — the heading "Newsletter" is displayed
+- [ ] Accessibility — the page has a navigation landmark for the header

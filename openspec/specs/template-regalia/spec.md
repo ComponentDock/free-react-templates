@@ -199,3 +199,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] TopBar displays contact information and social links — the top bar displays the phone number "+1 234 567 890"
+- [ ] Navbar displays brand and navigation links — the navbar displays "Regalia" as the brand
+- [ ] HeroSlider displays hero section with CTA — the heading "Experience Luxury Living" is visible
+- [ ] ReservationBar displays booking form — check-in date, check-out date, and guest count fields are visible
+- [ ] Services displays 4 service cards — service cards for Room Service, Restaurant, Spa & Wellness, and Swimming Pool are displayed
+- [ ] Rooms displays 3 room cards with prices — room cards for Deluxe Suite ($299), Executive Room ($199), and Garden Villa ($449) are displayed
+- [ ] DiningBar displays dining section — the heading "Fine Dining Experience" is visible
+- [ ] Blog displays 3 blog post cards — 3 blog post cards with titles and dates are displayed
+- [ ] Testimonials displays guest reviews — testimonial quotes from Sarah Johnson, Michael Chen, and Emma Williams are displayed
+- [ ] Newsletter displays email signup form — an email input and "Subscribe" button are visible
+- [ ] App renders all sections and sets title — the navigation, main content, and footer sections render without errors

@@ -98,3 +98,10 @@ Recreation of ColorLib **Universityedu** (`https://colorlib.com/wp/template/univ
 - [ ] Per-app gate `scripts/verify-app.sh campusly` passes (typecheck + lint + 100% coverage tests + build)
 - [ ] Footer links Component Dock correctly
 - [ ] No mention of ColorLib in source code
+- [ ] 1. Header & Navigation (`Navbar.tsx`) — Requirement**: Fixed/sticky navigation bar with logo, links (Home, Programs, About, Courses, Contact), and CTA button ("Get Started Now")
+- [ ] 2. Hero Section (`Hero.tsx`) — Requirement**: Full-width hero banner with dark overlay, bold uppercase heading ("SHOWCASE COURSES, EVENTS AND MORE!"), subtext, and call-to-action buttons ("Learn…
+- [ ] 3. About Section (`About.tsx`) — Requirement**: Two-column layout with feature illustration/image and heading "A comprehensive teaching approach" with descriptions and learn-more links
+- [ ] 4. Programs / Featured Courses Section (`Programs.tsx`) — Requirement**: Grid of featured academic programs and top stories (Faculty of Science, Faculty of Arts, Linguistics alumna stories)
+- [ ] 5. Essential Resources Section (`Resources.tsx`) — Requirement**: Four-column resource cards (First year students, Tuition & fees, International students, Essential resources)
+- [ ] 6. Trusted Students Counter & Partner Logos (`StatsAndBrands.tsx`) — Requirement**: Statistic counter banner ("TRUSTED BY OVER 6000+ STUDENTS") and brand logo carousel grid
+- [ ] 7. Newsletter Section (`Newsletter.tsx`) — Requirement**: Email subscription banner for campus updates and admissions alerts

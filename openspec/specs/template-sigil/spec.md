@@ -348,3 +348,11 @@ Every template MUST link Component Dock in the footer.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Page layout — the background is dark slate-purple (`#383a4f`)
+- [ ] Step navigation header — a white header bar is displayed at the top of the card
+- [ ] Step 1 — Personal Information — "First Name" and "Last Name" fields are displayed side-by-side
+- [ ] Step 2 — Bank Information — "Bank Name" field is displayed with a search icon
+- [ ] Step 3 — Confirm Details — a heading "Comfirm Details" (original typo preserved) is displayed
+- [ ] Navigation buttons — a circular green (`#25b45b`) Next/Finish button is visible at the bottom-right
+- [ ] Step transitions — the current step fades out and the new step fades in
+- [ ] Accessibility — every input has an associated `<label>` element

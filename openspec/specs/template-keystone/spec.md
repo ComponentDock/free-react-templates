@@ -216,3 +216,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Screenshot comparison: hero, about, services, work, team, blog, footer match the ColorLib "archi" preview layout and tokens
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Keystone" and links to Home, About, Services, Work, Team, Blog, and Contact
+- [ ] Hero section — it SHALL contain a level-1 heading "Focus on Design Quality"
+- [ ] About section — it SHALL contain the heading "52 Years of Experience in This Area"
+- [ ] Services section — it SHALL contain a heading "We Provide the Best Interior Solution for You"
+- [ ] Popular work section — it SHALL contain a heading "Our Best Recent Popular Work"
+- [ ] Experience band — it SHALL show a blurb and an "About Us" button
+- [ ] Team section — it SHALL contain a heading "The Best Team We Have Ever Had"
+- [ ] Blog section — it SHALL contain a heading "All Recent Articles From Us"
+- [ ] Footer — it SHALL show link columns (Quick Links, New Products, Support) and a copyright line
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -83,3 +83,7 @@ As a visitor, I want a footer containing standard links and the mandatory Compon
 - [ ] Vitest test suite achieves 100% test coverage.
 - [ ] Footer links to `https://www.componentdock.com/`.
 - [ ] No mention of ColorLib in source code or assets.
+- [ ] Navigation Bar — the header displays the brand logo "Gyrate", navigation links (Home, Features, Gallery, About, Contact), and a "Get Started" button
+- [ ] Split-Screen Carousel Hero — the slide updates smoothly with new headline, description, and high-resolution picture
+- [ ] Features / Highlights Section — multiple cards with icons, titles, and descriptive text are shown in a responsive grid
+- [ ] Interactive Call to Action (CTA) Banner — a success confirmation message is displayed

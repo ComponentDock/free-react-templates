@@ -90,3 +90,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Renders welcome heading and avatar — the heading "Welcome" is displayed
+- [ ] Email input with gradient underline — the email field contains "user@example.com"
+- [ ] Password input with visibility toggle — the password field type is "password"
+- [ ] Gradient LOGIN button — the LOGIN button has a gradient background and is full width with rounded-full styling

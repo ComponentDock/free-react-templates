@@ -314,3 +314,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Spec validated: `npm run spec:validate`
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navigation bar — the navbar SHALL show the site name "Deskly" and links to
+- [ ] Hero section — it SHALL contain a badge reading "Austin's Premier Coworking
+- [ ] Spaces section — it SHALL contain a heading "Find Your Perfect Workspace"
+- [ ] Amenities section — it SHALL contain a heading "Everything You Need"
+- [ ] Community section — it SHALL contain a heading "Join a Thriving Community"
+- [ ] Pricing section — it SHALL contain a heading "Flexible Plans for Every Team"
+- [ ] Testimonials section — it SHALL contain a heading "What Our Members Say"
+- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Call to action — it SHALL contain a heading "See It for Yourself"
+- [ ] Footer — it SHALL show link columns (Spaces, Company, Support) and a
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

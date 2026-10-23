@@ -351,3 +351,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Hero search — the "Home" pill is the pressed one (`aria-pressed="true"`)
+- [ ] Top Destination — six destination headings are shown
+- [ ] Interest grid — the centre card shows its description text
+- [ ] Popular listings carousel — four listing cards are visible, led by the first listing
+- [ ] Navigation — the five primary links are rendered
+- [ ] Call to action band — the heading, the count line and the "Explore More" action are shown
+- [ ] How it works — three step headings are shown
+- [ ] Testimonials — the first quote and its author are shown
+- [ ] Document title and provenance — the document title is "Locale — Directory & Listings"

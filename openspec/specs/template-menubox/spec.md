@@ -145,3 +145,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Profile button display — a profile button is visible with a circular avatar image
+- [ ] Dropdown toggle on click — a dropdown menu appears below the button
+- [ ] User info header in dropdown — the user name "Alex Morgan" is displayed
+- [ ] Menu items with icons — menu items are visible: Settings, Profile, Dashboard, Logout
+- [ ] Menu item hover effect — the item background changes color
+- [ ] Click outside closes dropdown — the menu closes
+- [ ] Escape key closes dropdown — the menu closes
+- [ ] Menu item click closes dropdown — the menu closes

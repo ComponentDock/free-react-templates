@@ -120,3 +120,6 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page renders the registration form — I see a heading "Registration Form"
+- [ ] Form fields are interactive — the first name field contains "John"
+- [ ] Form submission is handled — I see a button labeled "Submit"

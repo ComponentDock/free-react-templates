@@ -147,3 +147,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar displays contact info and navigation — the top info bar shows address, email, and phone number
+- [ ] Hero section displays headline and CTA — the hero section shows a healthcare headline
+- [ ] Services section shows 4 service cards — 4 service cards are visible
+- [ ] About section shows split layout — the about section has an image on the left
+- [ ] CTA banner displays consultation offer — a full-width banner shows "We Provide Free Health Care Consultation"
+- [ ] Department tabs switch content — 5 department tabs are visible: Neurology, Surgical, Dental, Ophthalmology, Cardiology
+- [ ] Testimonials section shows cards — testimonial cards with names and positions are visible
+- [ ] Stats counter shows 4 metrics — 4 stat items are visible: Years of Experience, Happy Patients, Number of Doctors, Number of Staff
+- [ ] Pricing section shows 4 plans — 4 pricing cards are visible: Basic, Standard, Premium, Platinum
+- [ ] Blog section shows 3 posts — 3 blog post cards are visible

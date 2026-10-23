@@ -150,3 +150,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Navbar navigation — the navbar displays the Turfly brand, five navigation links, and a "Get a Quote" button
+- [ ] Hero section — the hero section shows the headline "Lawn care for everyone", a description, "Our Services" link, and "Get a Quote" link
+- [ ] Services section — three cards are displayed with headings "Garden Care", "Lawn Mowing", and "Lawn Treatment"
+- [ ] About section — the heading "Welcome to Turfly", five checklist items, a "Learn More" link, and a decorative image are displayed
+- [ ] Seasonal Tips section — four cards are displayed with seasons Spring, Summer, Autumn, and Winter
+- [ ] Testimonials section — three cards are displayed with names Sarah Mitchell, James Cooper, and Emily Watson
+- [ ] Blog section — three blog post cards are displayed with titles and "Read More" links
+- [ ] Newsletter subscription — a heading "Subscribe to our Newsletter", an email input, and a "Subscribe" button are displayed

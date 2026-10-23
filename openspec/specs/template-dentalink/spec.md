@@ -178,3 +178,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header Navigation — they see the logo "Dentalink" in the header
+- [ ] Hero / Banner Section — they see a full-width hero with dark overlay background
+- [ ] Opening Hours Section — they see a white card with heading "Opening Hours"
+- [ ] Services Section — they see 4 service cards in a grid
+- [ ] About Section — they see a dark background section with split layout
+- [ ] Testimonials Section — they see the heading "Feedback from our real clients"
+- [ ] Team Section — they see the heading "Our Consultants"
+- [ ] Features Section — they see the heading "Features that make us unique"
+- [ ] Appointment Section — they see a dark background section with booking form
+- [ ] Blog Section — they see the heading "Latest From Our Blog"

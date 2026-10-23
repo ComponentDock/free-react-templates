@@ -115,3 +115,9 @@
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Header / Showcase Introduction — the title and subtitle are clearly visible against the dark background
+- [ ] Solid & Multi-Color Button Variants — all variants display distinct background colors and interactive hover states
+- [ ] Outline & Bordered Buttons — the border and text opacity transition smoothly
+- [ ] Rounded / Pill Button Variants — buttons feature pill-shaped border radiuses (`rounded-full`)
+- [ ] Icon-Enhanced Buttons — icons align correctly with text padding
+- [ ] Social Media Buttons with Statistics — brand colors and share metrics (e.g., "Share - 8.2k", "Connect with Twitter") are displayed

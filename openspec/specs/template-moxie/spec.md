@@ -440,4 +440,13 @@ dark-mode variants.
       `https://kreativ.free.componentdock.com`; run
       `npm run readme:status`.
 - [ ] PR description includes: source template + preview URL, design
+- [ ] Navbar — the fixed header SHALL show the "Moxie." wordmark on the left
+- [ ] Hero — it SHALL show the pill badge "Award-Winning Creative Agency" with
+- [ ] Awards strip — a bordered strip SHALL show Awwwards Site of the Day (2024),
+- [ ] Services — it SHALL show the heading "What We Do" and its lead paragraph
+- [ ] Selected Work — it SHALL show the heading "Selected Work" and a "View All
+- [ ] Testimonials — it SHALL show the heading "What Clients Say"
+- [ ] Contact — it SHALL show the heading "Let's Work Together" and its lead
+- [ ] Footer — it SHALL show the brand blurb and social icons
+- [ ] Page composition — sections SHALL appear in this order: navbar, hero, awards strip,
       tokens, renames (Pixel Studio → Moxie), placeholder images.

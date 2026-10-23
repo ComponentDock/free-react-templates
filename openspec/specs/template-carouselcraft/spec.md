@@ -65,3 +65,7 @@ Recreation of ColorLib **Carousel 15** (`https://colorlib.com/wp/template/carous
 - [ ] 100% test coverage maintained on all new components.
 - [ ] Footer contains Component Dock link.
 - [ ] No mention of ColorLib in source code.
+- [ ] Hero Banner & Navigation — The template must feature a responsive top navigation bar with brand logo and navigation links (Home, Features, Gallery, Contact)
+- [ ] Interactive Feature Carousel — A multi-item carousel component with sliding animation, next/previous controls, and dot indicators
+- [ ] Thumbnail Navigation Strip — A thumbnail preview bar underneath or beside the main carousel allowing direct click-to-slide navigation
+- [ ] Features / Highlights Grid — A 3-column feature grid highlighting key capabilities (Responsive Design, Touch Enabled, Smooth Transitions)

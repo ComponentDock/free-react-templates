@@ -136,3 +136,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Header renders with logo and animated headline — the header displays a logo element
+- [ ] Hamburger menu opens full-screen overlay — a full-screen white overlay appears
+- [ ] Portfolio grid displays masonry layout — items are displayed in a masonry grid layout
+- [ ] Like heart interaction — the like count increments
+- [ ] Load more button — a load-more arrow button is visible

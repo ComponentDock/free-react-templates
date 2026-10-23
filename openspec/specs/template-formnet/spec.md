@@ -105,3 +105,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Form renders all fields — I should see a heading "Get in Touch"
+- [ ] Form validates required fields — I should see "Name is required"
+- [ ] Form submits with valid data — I should see a success message
+- [ ] Checkbox toggles — the checkbox should be checked

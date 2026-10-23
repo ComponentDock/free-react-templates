@@ -232,3 +232,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [ ] Page structure and branding — the document title SHALL be "Glint — Dental Clinic Template"
+- [ ] Header info bar — four info columns SHALL be visible in the header bar
+- [ ] Navigation bar — the navbar SHALL contain links for Home, About, Services,
+- [ ] Hero slider — a hero section SHALL be visible with a heading and CTA button
+- [ ] CTA banner — a green banner SHALL be visible with text "Schedule your
+- [ ] About section — an about section SHALL be visible with a heading "We Care
+- [ ] Stats counter — 4 statistics SHALL be visible
+- [ ] Services grid — 6 service cards SHALL be rendered
+- [ ] Photo gallery — 4 gallery images SHALL be visible
+- [ ] Testimonials — at least one testimonial SHALL be visible with a quote,
+- [ ] Newsletter section — a newsletter section SHALL be visible with text "Subscribe to
+- [ ] Semantics — a banner landmark SHALL be present

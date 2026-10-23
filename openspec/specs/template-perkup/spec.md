@@ -91,3 +91,7 @@ Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`), 
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [ ] Navbar Navigation — the viewport smoothly scrolls to the Services section
+- [ ] Hero Call to Action — an action or modal triggers appropriately
+- [ ] Services Showcase — all 6 service cards are displayed with icons and descriptions
+- [ ] Pricing Selection — pricing tiers with features and CTA buttons are visible
