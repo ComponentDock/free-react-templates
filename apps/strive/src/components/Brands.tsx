@@ -24,7 +24,7 @@ export function Brands() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-display text-3xl font-bold text-ink dark:text-white sm:text-4xl">
-            Leading brands trust Bold for good
+            Leading brands trust Strive for good
           </h2>
           <p className="mt-4 leading-relaxed text-muted dark:text-gray-400">
             Used by fast-growing teams who value clean design and dependable performance.

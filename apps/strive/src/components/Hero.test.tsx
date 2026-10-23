@@ -19,9 +19,9 @@ describe('Hero', () => {
 
     expect(screen.getByRole('link', { name: 'Try it Free' })).toHaveAttribute('href', '#contact')
 
-    expect(screen.getByRole('img', { name: 'Bold hero dashboard illustration' })).toHaveAttribute(
+    expect(screen.getByRole('img', { name: 'Strive hero dashboard illustration' })).toHaveAttribute(
       'src',
-      'https://picsum.photos/seed/bold-hero/600/450',
+      'https://picsum.photos/seed/strive-hero/600/450',
     )
   })
 })

@@ -12,6 +12,6 @@ describe('FeatureRows', () => {
 
     expect(screen.getAllByRole('link', { name: 'Learn more' })).toHaveLength(3)
 
-    expect(screen.getAllByRole('img', { name: /Bold feature illustration/ })).toHaveLength(3)
+    expect(screen.getAllByRole('img', { name: /Strive feature illustration/ })).toHaveLength(3)
   })
 })

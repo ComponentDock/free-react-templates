@@ -1,17 +1,17 @@
-# Bold — Design Notes
+# Strive — Design Notes
 
 Reference: **Bold** — `https://colorlib.com/wp/template/bold/`  
 Live preview: `https://preview.colorlib.com/theme/bold/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bold-free-template.jpg  
-Shipped: https://bold.free.componentdock.com
+Shipped: https://strive.free.componentdock.com
 
-Bold is a single-page startup/marketing landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Bold" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Strive is a single-page startup/marketing landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Bold" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Raleway**, **Raleway:wght@400;500;600;700;800**
 
-## Design tokens (`apps/bold/src/index.css` `@theme`)
+## Design tokens (`apps/strive/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -49,7 +49,7 @@ Fonts loaded by `index.html` (Google Fonts): **Raleway**, **Raleway:wght@400;500
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Bold", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Strive", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and a call-to-action button.
@@ -87,8 +87,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/bold/` may name the source designer,
+- **Provenance ban.** No file under `apps/strive/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/bold/public/CNAME` = `bold.free.componentdock.com`
-  and the package `homepage` = `https://bold.free.componentdock.com`.
+- **Deploy identity.** `apps/strive/public/CNAME` = `strive.free.componentdock.com`
+  and the package `homepage` = `https://strive.free.componentdock.com`.

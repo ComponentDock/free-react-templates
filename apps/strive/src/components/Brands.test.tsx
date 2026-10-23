@@ -7,7 +7,7 @@ describe('Brands', () => {
     render(<Brands />)
 
     expect(
-      screen.getByRole('heading', { level: 2, name: 'Leading brands trust Bold for good' }),
+      screen.getByRole('heading', { level: 2, name: 'Leading brands trust Strive for good' }),
     ).toBeInTheDocument()
 
     expect(

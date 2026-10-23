@@ -14,7 +14,7 @@ export function Testimonial() {
         </blockquote>
 
         <img
-          src="https://picsum.photos/seed/bold-customer/96/96"
+          src="https://picsum.photos/seed/strive-customer/96/96"
           alt="Kayla Bryant avatar"
           className="mx-auto mt-8 h-16 w-16 rounded-full border-2 border-primary-500 object-cover"
         />

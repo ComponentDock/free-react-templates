@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Bold brand coral — measured from the reference stylesheet
+  /* Strive brand coral — measured from the reference stylesheet
      (css/style.css): primary #ff926b with lighter #ffa585.
      Scale keyed on primary-500 (#ff926b) so the shared ui
      Button/ButtonLink "primary" variant works. */

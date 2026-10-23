@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, sections, and footer with the correct landmarks and document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Bold — App Landing Template')
+    expect(document.title).toBe('Strive — App Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -21,7 +21,7 @@ describe('App', () => {
     ).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Our Achievements' })).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 2, name: 'Leading brands trust Bold for good' }),
+      screen.getByRole('heading', { level: 2, name: 'Leading brands trust Strive for good' }),
     ).toBeInTheDocument()
     expect(
       screen.getAllByRole('heading', {

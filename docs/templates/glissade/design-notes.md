@@ -7,7 +7,7 @@ Preview analyzed: 2026-09-10
 
 ### Phase 1: Scaffold
 
-- [ ] Copy simplest existing app as base (e.g. apps/bold or similar small app)
+- [ ] Copy simplest existing app as base (e.g. apps/strive or similar small app)
 - [ ] Rename package to @free-react-templates/glissade
 - [ ] Set CNAME to glissade.free.componentdock.com
 - [ ] Set homepage in package.json

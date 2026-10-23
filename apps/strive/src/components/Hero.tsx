@@ -12,7 +12,7 @@ export function Hero() {
             Another cool free template from Component Dock
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-white/90">
-            A clean, modern landing page to launch your next project — bold by name, bold by design.
+            A clean, modern landing page to launch your next project — built to move fast, designed to stand out.
           </p>
           <ButtonLink
             href="#contact"
@@ -24,8 +24,8 @@ export function Hero() {
 
         <div className="flex justify-center">
           <img
-            src="https://picsum.photos/seed/bold-hero/600/450"
-            alt="Bold hero dashboard illustration"
+            src="https://picsum.photos/seed/strive-hero/600/450"
+            alt="Strive hero dashboard illustration"
             className="w-full max-w-md rounded-2xl border-4 border-white/20 object-cover shadow-2xl"
           />
         </div>

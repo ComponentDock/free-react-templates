@@ -10,7 +10,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Bold — App Landing Template'
+    document.title = 'Strive — App Landing Template'
   }, [])
 
   return (
