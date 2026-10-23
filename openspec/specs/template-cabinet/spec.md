@@ -28,7 +28,7 @@ CSS values are canonical over any screenshot sample.
 | --- | --- | --- |
 | Accent (most-used chromatic) | `#d99a2b` | 1 declarations — `.inventory--low::before` |
 | Surface | `#ffffff` | 3 declarations — `.badge--sale`, `.header__cart-count` |
-| Typeface | `var(--font-heading)` (4 rules — h1)<br>`var(--font-body)` (3 rules — body) | `font-family` declarations in the theme sheet |
+| Typeface | **Poppins** — the sheet indents through its own variables (`var(--font-heading)` (4 rules — h1), `var(--font-body)` (3 rules — body)); they resolve in its `:root` block to `Poppins, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif`, so request the Google family `Poppins` (400/700) and never the variables | `font-family` declarations in the theme sheet |
 | Body type | `font-size: var(--text-base); font-weight: var(--font-body-weight); line-height: 1.6; color: rgb(var(--color-text))` | `body{…}` rule |
 | Radii | `var(--radius-base)`, `50%`, `var(--radius-media)` | `var(--radius-base)` (.button); `50%` (.icon-button); `var(--radius-media)` (.rte img) |
 

@@ -16,8 +16,10 @@ CSS values are canonical over any screenshot sample.
 | Accent (most-used chromatic) | `#ea9f48` | 1 declarations — `button` |
 | Surface | `#ffffff` | 2 declarations — `.inner`, `button` |
 | Ink / dark surface | `#000000` | 1 declarations — `.checkmark` |
-| Typeface | `"Muli-Regular"` (2 rules — body)<br>`"Muli-SemiBold"` (2 rules — button) | `font-family` declarations in the theme sheet |
+| Typeface | **Mulish** — request the Google family `Mulish` (400/600/700) (`Muli` is the same face's former name); the sheet declares the file stems `Muli-Regular` (2 rules — body), `Muli-SemiBold` (2 rules — button), and a font-file stem is never a family: `css?family=Muli-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the theme sheet |
 | Radii | `2px` | `2px` (.checkmark) |
+
+**Shipped app (recorded delta, 2026-10-23o):** the shipped app declares no `--font-*` token at all, so it renders in the Tailwind default face. The prep records the reference face; correcting the app is an implementer task, not a prep edit.
 
 Palette in order of use: `#999999` ×8, `#ffffff` ×2, `#000000` ×1, `#333333` ×1, `#666666` ×1, `#6d5555` ×1.
 

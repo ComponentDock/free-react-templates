@@ -19,7 +19,7 @@ CSS values are canonical over any screenshot sample.
 | Accent (most-used chromatic) | `#78453f` | 2 declarations — `.button:hover` |
 | Surface | `#ffffff` | 33 declarations — `body`, `.dark h2` |
 | Ink / dark surface | `#111111` | 9 declarations — `.brand`, `.hero-shade` |
-| Typeface | `var(--heading)` (1 rule — h1) | `font-family` declaration in the theme sheet |
+| Typeface | **Poppins** for body and **Cormorant Garamond** for headings — the sheet indents through its own variables (`var(--heading)` (1 rule — h1)); they resolve in its `:root`/theme block to `"Cormorant Garamond", Georgia, serif` for `--heading` and `Poppins,Arial,sans-serif` for the body, so request the Google families `Poppins` (400) and `Cormorant Garamond` — never the variables | `font-family` declaration in the theme sheet |
 | Body type | `color: var(--muted)` | `body{…}` rule |
 | Radii | `50%`, `35% 65% 60% 40%` | `50%` (.avatar); `35% 65% 60% 40%` (.testimonials:before) |
 

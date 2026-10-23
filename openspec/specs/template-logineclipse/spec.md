@@ -22,7 +22,7 @@ https://preview.colorlib.com/downloads/free/login-form-v9.zip (HTTP 200, 387,383
 | Other chromatic values | `#3b5998` (2), `#fa4251` (1), `#bd59d4` (1) | secondary hues in the same sheet |
 | Surface | `#ffffff` | 6 declarations — `.wrap-input100`, `.wrap-login100` |
 | Ink / dark surface | `#212529` | 1 declarations — `body` |
-| Typeface | `SourceSansPro-Regular` (4 rules — `.txt1`)<br>`SourceSansPro-Bold` (3 rules — `.alert-validate::before`) | `font-family` declarations in the design sheet |
+| Typeface | **Source Sans 3** — request the Google family `Source Sans 3` (400/700) (`Source Sans Pro` is the same face's former name); the sheet declares the file stems `SourceSansPro-Regular` (4 rules — `.txt1`), `SourceSansPro-Bold` (3 rules — `.alert-validate::before`), and a font-file stem is never a family: `css?family=SourceSansPro-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the design sheet |
 | Radii | `20px`, `10px`, `25px`, `50%` | `20px` (`.alert-validate::before`); `10px` (`.wrap-login100`); `25px` (`.login100-form-btn`); `50%` (`.login100-social-item`) |
 | Gradients | 4 declarations | `.container-login100::before` |
 

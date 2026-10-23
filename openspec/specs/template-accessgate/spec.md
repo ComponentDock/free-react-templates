@@ -30,8 +30,10 @@ CSS values are canonical over any screenshot sample.
 | Other chromatic values | `#c80000` | `#c80000` × 3 (.alert-validate::before) |
 | Surface | `#ffffff` | 6 declarations — `body`, `.wrap-login100` |
 | Ink / dark surface | `#333333` | 3 declarations — `.login100-form-title`, `.login100-form-btn:hover` |
-| Typeface | `Poppins-Regular` (4 rules — a)<br>`Poppins-Medium` (2 rules — .focus-input100::after) | `font-family` declarations in the theme sheet |
+| Typeface | **Poppins** — request the Google family `Poppins` (400/500/600/700); the sheet declares the file stems `Poppins-Regular` (4 rules — a), `Poppins-Medium` (2 rules — .focus-input100::after), and a font-file stem is never a family: `css?family=Poppins-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the theme sheet |
 | Radii | `50%`, `25px`, `2px` | `50%` (.login100-form-avatar); `25px` (.login100-form-btn); `2px` (.alert-validate::before) |
+
+**Shipped app (recorded delta, 2026-10-23o):** the shipped app declares `Roboto Condensed` for both body and headings, not the reference face. The prep records the reference face; correcting the app is an implementer task, not a prep edit.
 
 Palette in order of use: `#adadad` ×8, `#ffffff` ×6, `#333333` ×3, `#57b846` ×3, `#c80000` ×3, `#999999` ×2.
 

@@ -17,7 +17,7 @@ https://preview.colorlib.com/downloads/free/colorlib-regform-17.zip (HTTP 200, 2
 | Accent (most-used chromatic) | none — grayscale design | no chromatic value in the design sheet |
 | Surface | `#ffffff` | 2 declarations — `.inner`, `button` |
 | Ink / dark surface | `#333333` | 7 declarations — `.cl-form-control::-webkit-input-placeholder`, `body` |
-| Typeface | `Poppins-Regular` (6 rules — `.cl-form-control::-webkit-input-placeholder`)<br>`Poppins-SemiBold` (1 rule — `.inner h3`) | `font-family` declarations in the design sheet |
+| Typeface | **Poppins** — request the Google family `Poppins` (400/600); the sheet declares the file stems `Poppins-Regular` (6 rules — `.cl-form-control::-webkit-input-placeholder`), `Poppins-SemiBold` (1 rule — `.inner h3`), and a font-file stem is never a family: `css?family=Poppins-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the design sheet |
 
 Palette in order of use: `#333333` ×7, `#ffffff` ×2.
 

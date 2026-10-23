@@ -20,8 +20,10 @@ CSS values are canonical over any screenshot sample.
 | Other chromatic values | `#403866` | `#403866` × 2 (.contact100-form-title) |
 | Surface | `#ffffff` | 6 declarations — `body`, `.input100` |
 | Ink / dark surface | `#212529` | 1 declarations — `body` |
-| Typeface | `Ubuntu-Bold` (5 rules — a)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Typeface | **Ubuntu** — request the Google family `Ubuntu` (400/700); the sheet declares the file stems `Ubuntu-Bold` (5 rules — a); it also declares `-apple-system, sans-serif` (1 rule — body), and a font-file stem is never a family: `css?family=Ubuntu-Bold` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the theme sheet |
 | Radii | `31px`, `14px` | `31px` (.wrap-input100); `14px` (.alert-validate::before) |
+
+**Shipped app (recorded delta, 2026-10-23o):** the shipped app declares no `--font-*` token at all, so it renders in the Tailwind default face. The prep records the reference face; correcting the app is an implementer task, not a prep edit.
 
 Palette in order of use: `#bdbdd3` ×8, `#ffffff` ×6, `#c80000` ×3, `#403866` ×2, `#0056b3` ×1, `#007bff` ×1.
 

@@ -22,8 +22,11 @@ CSS values are canonical over any screenshot sample.
 | Accent (most-used chromatic) | `#cb8670` | 51 declarations — `.section-heading .line-`, `#scrollUp` |
 | Surface | `#ffffff` | 51 declarations — `.section-heading.white p`, `.section-heading.white h2` |
 | Ink / dark surface | `#363636` | 13 declarations — `h1`, `h2` |
-| Typeface | `"FuturaLT-Book"` (1 rule — body) | `font-family` declaration in the theme sheet |
+| Typeface | **Jost** — the sheet's only face is the file family `FuturaLT-Book` (1 rule — body), which is not published on Google Fonts (`css?family=Futura LT Book` → HTTP 400); load the geometric `Jost` (400) and keep `Questrial` as the documented alternative — the reference face itself cannot be shipped | `font-family` declaration in the theme sheet |
 | Body type | `font-size: 14px` | `body{…}` rule |
+
+**Shipped app (recorded delta, 2026-10-23o):** the shipped app declares `Cormorant Garamond` + `Poppins`, neither of which is a geometric Futura substitute. The prep records the reference face; correcting the app is an implementer task, not a prep edit.
+
 | Radii | `50%`, `4px` | `50%` (.preloader .cssload-loading i); `4px` (.single-accordion.panel) |
 
 Palette in order of use: `#cb8670` ×51, `#ffffff` ×51, `#363636` ×13, `#7d7d7d` ×7, `#000000` ×3, `#181818` ×2.

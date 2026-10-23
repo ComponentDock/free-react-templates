@@ -17,7 +17,7 @@ CSS values are canonical over any screenshot sample.
 | Other chromatic values | `#b721ff`, `#6a7dfe`, `#c80000` | `#b721ff` × 24 (a:hover); `#6a7dfe` × 4 (a:hover); `#c80000` × 3 (.alert-validate::before) |
 | Surface | `#ffffff` | 5 declarations — `.login100-form-btn`, `body` |
 | Ink / dark surface | `#333333` | 2 declarations — `.login100-form-title`, `.txt2` |
-| Typeface | `Poppins-Regular` (6 rules — a)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
+| Typeface | **Poppins** — request the Google family `Poppins` (400/500/700); the sheet declares the file stems `Poppins-Regular` (6 rules — a); it also declares `-apple-system, sans-serif` (1 rule — body), and a font-file stem is never a family: `css?family=Poppins-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the theme sheet |
 | Radii | `10px`, `25px`, `2px` | `10px` (.wrap-login100); `25px` (.wrap-login100-form-btn); `2px` (.alert-validate::before) |
 
 Palette in order of use: `#21d4fd` ×24, `#b721ff` ×24, `#adadad` ×8, `#ffffff` ×5, `#6a7dfe` ×4, `#c80000` ×3.

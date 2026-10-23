@@ -22,7 +22,7 @@ https://preview.colorlib.com/downloads/free/login-form-v8.zip (HTTP 200, 286,740
 | Other chromatic values | `#57b846` (4), `#c80000` (2) | secondary hues in the same sheet |
 | Surface | `#ffffff` | 7 declarations — `.container-login100`, `.wrap-login100` |
 | Ink / dark surface | `#212529` | 1 declarations — `body` |
-| Typeface | `Ubuntu-Regular` (4 rules — `.txt1`)<br>`Ubuntu-Bold` (4 rules — `.input100`) | `font-family` declarations in the design sheet |
+| Typeface | **Ubuntu** — request the Google family `Ubuntu` (400/700); the sheet declares the file stems `Ubuntu-Regular` (4 rules — `.txt1`), `Ubuntu-Bold` (4 rules — `.input100`), and a font-file stem is never a family: `css?family=Ubuntu-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the design sheet |
 | Radii | `27px`, `20px`, `31px`, `25px` | `27px` (`.input100`); `20px` (`.wrap-login100`); `31px` (`.focus-input100`); `25px` (`.login100-form-btn`) |
 
 Palette in order of use: `#1b3815` ×11, `#ffffff` ×7, `#57b846` ×4, `#ebebeb` ×2, `#c80000` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1.

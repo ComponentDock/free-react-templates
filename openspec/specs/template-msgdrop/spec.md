@@ -21,8 +21,11 @@ https://preview.colorlib.com/downloads/free/contact-form-v13.zip (HTTP 200, 206,
 | Other chromatic values | `#e53935` (12), `#c80000` (2), `#39b54a` (2) | secondary hues in the same sheet |
 | Surface | `#ffffff` | 5 declarations — `.contact100-form-btn`, `.wrap-contact100` |
 | Ink / dark surface | `#212529` | 1 declarations — `body` |
-| Typeface | `Poppins-Regular` (3 rules — `.input100`)<br>`Poppins-Medium` (3 rules — `.alert-validate::before`) | `font-family` declarations in the design sheet |
+| Typeface | **Poppins** — request the Google family `Poppins` (400/500); the sheet declares the file stems `Poppins-Regular` (3 rules — `.input100`), `Poppins-Medium` (3 rules — `.alert-validate::before`), and a font-file stem is never a family: `css?family=Poppins-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the design sheet |
 | Radii | `2px`, `25px` | `2px` (`.alert-validate::before`); `25px` (`.contact100-more`) |
+
+**Shipped app (recorded delta, 2026-10-23o):** the shipped app declares no `--font-*` token at all, so it renders in the Tailwind default face. The prep records the reference face; correcting the app is an implementer task, not a prep edit.
+
 | Gradients | 8 declarations | `.contact100-form-bgbtn`, `.focus-input100::before` |
 
 Palette in order of use: `#d5007d` ×12, `#e53935` ×12, `#cccccc` ×8, `#ffffff` ×5, `#c80000` ×2, `#39b54a` ×2, `#212529` ×1, `#007bff` ×1.

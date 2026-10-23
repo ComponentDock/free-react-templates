@@ -21,7 +21,7 @@ https://preview.colorlib.com/downloads/free/colorlib-regform-26.zip (HTTP 200, 1
 | Other chromatic values | `#accffe` (1) | secondary hues in the same sheet |
 | Surface | `#ffffff` | 2 declarations — `button`, `form` |
 | Ink / dark surface | `#333333` | 2 declarations — `.form-holder span`, `h3` |
-| Typeface | `Muli-Regular` (6 rules — `.cl-form-control::-webkit-input-placeholder`)<br>`Muli-SemiBold` (3 rules — `.cl-form-control`) | `font-family` declarations in the design sheet |
+| Typeface | **Mulish** — request the Google family `Mulish` (400/600) (`Muli` is the same face's former name); the sheet declares the file stems `Muli-Regular` (6 rules — `.cl-form-control::-webkit-input-placeholder`), `Muli-SemiBold` (3 rules — `.cl-form-control`), and a font-file stem is never a family: `css?family=Muli-Regular` answers HTTP 400, so an app that follows the stem falls back to the UA default | `font-family` declarations in the design sheet |
 
 Palette in order of use: `#999999` ×5, `#ffffff` ×2, `#333333` ×2, `#accffe` ×1, `#666666` ×1, `#99ccff` ×1.
 
