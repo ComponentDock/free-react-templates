@@ -50,29 +50,39 @@ def load():
 
 
 def rewrite(text: str, url: str, sha_raw: str, mod) -> tuple[str, bool]:
-    """Replace the sha256 recorded beside `url`'s basename with `sha_raw[:len]`."""
-    base = os.path.basename(url.split("?")[0])
-    rx = mod.basename_rx(base)
+    """Replace the sha256 recorded beside THIS citation with `sha_raw[:len]`.
+
+    Bound on the sheet's own path tail, not on its basename: a prep that cites
+    `01-homepage/css/styles.css`, `02-rsvp/css/styles.css` and `03-regular-page/
+    css/styles.css` has one line per sheet, and a basename-first binder rewrites
+    the first one three times.
+    """
     lines = text.split("\n")
-    for i, ln in enumerate(lines):
-        m = rx.search(ln)
-        if not m:
+    hits = []
+    for tail in mod.citation_tails(url):
+        rx = mod._tail_rx(tail)
+        hits = [(i, m.end()) for i, ln in enumerate(lines)
+                for m in [rx.search(ln)] if m]
+        if hits:
+            break
+    if not hits:
+        return text, False
+    i, end = hits[0]
+    # the sha sits AFTER the sheet's path, either on this line or the next
+    for j in (i, i + 1):
+        if j >= len(lines):
             continue
-        # the sha sits AFTER the basename, either on this line or the next
-        for j in (i, i + 1):
-            if j >= len(lines):
-                continue
-            start = m.end() if j == i else 0
-            seg = lines[j][start:]
-            ms = mod.SHA_RX.search(seg)
-            if not ms:
-                continue
-            old = ms.group(1)
-            if old == sha_raw[:len(old)]:
-                return text, False
-            new_seg = seg[:ms.start(1)] + sha_raw[:len(old)] + seg[ms.end(1):]
-            lines[j] = lines[j][:start] + new_seg
-            return "\n".join(lines), True
+        start = end if j == i else 0
+        seg = lines[j][start:]
+        ms = mod.SHA_RX.search(seg)
+        if not ms:
+            continue
+        old = ms.group(1)
+        if old == sha_raw[:len(old)]:
+            return text, False
+        new_seg = seg[:ms.start(1)] + sha_raw[:len(old)] + seg[ms.end(1):]
+        lines[j] = lines[j][:start] + new_seg
+        return "\n".join(lines), True
     return text, False
 
 
@@ -176,6 +186,20 @@ def controls() -> int:
     txt = spec_with(short + "…", len(body), body)
     _, hit6 = do(txt, body)
     cases.append(("prefix length is preserved", not hit6))
+
+    # BINDING: a sibling page's citation must keep its own number
+    sib = ("Sibling `pages/a/styles.css` (1,000 B, sha256 `aaaaaaaaaaaa…`).\n"
+           "Theme `https://preview.colorlib.com/theme/demo/css/styles.css` "
+           "(%d B, sha256 `%s…`).\n" % (len(body), lf_sha[:12]))
+    named = [("https://preview.colorlib.com/theme/demo/css/styles.css",
+              body.decode("utf-8", "replace"))]
+    todo = fixable(mod, sib, named, None)
+    new7 = sib
+    for u, sha in todo:
+        new7, _ = rewrite(new7, u, sha, mod)
+    cases.append(("a sibling citation keeps its number",
+                  "(1,000 B, sha256 `aaaaaaaaaaaa…`)" in new7
+                  and raw_sha[:12] in new7))
 
     ok = sum(1 for _, v in cases if v)
     for n, v in cases:
