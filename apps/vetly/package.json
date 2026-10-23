@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/thepetcare",
+  "name": "@free-react-templates/vetly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://thepetcare.free.componentdock.com",
+  "homepage": "https://vetly.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

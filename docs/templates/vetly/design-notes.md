@@ -1,17 +1,17 @@
-# Thepetcare — Design Notes
+# Vetly — Design Notes
 
 Reference: **Thepetcare** — `https://colorlib.com/wp/template/thepetcare/`  
 Live preview: `https://preview.colorlib.com/theme/thepetcare/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg  
-Shipped: https://thepetcare.free.componentdock.com
+Shipped: https://vetly.free.componentdock.com
 
-Thepetcare is a multi-section animal-care website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Thepetcare" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Vetly is a multi-section animal-care website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Thepetcare" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **DM Sans**, **DM Sans:wght@400;500;700**, **Fredoka One**
 
-## Design tokens (`apps/thepetcare/src/index.css` `@theme`)
+## Design tokens (`apps/vetly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Fonts loaded by `index.html` (Google Fonts): **DM Sans**, **DM Sans:wght@400;500
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Thepetcare", links to the main sections, a "Get Quote" button, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Vetly", links to the main sections, a "Get Quote" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a hero section with the headline "Saving Animals Changing Live", supporting copy, and an "Our Services" button.
@@ -85,8 +85,8 @@ The system SHALL render a footer with an about blurb, link columns (Navigation, 
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/thepetcare/` may name the source designer,
+- **Provenance ban.** No file under `apps/vetly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/thepetcare/public/CNAME` = `thepetcare.free.componentdock.com`
-  and the package `homepage` = `https://thepetcare.free.componentdock.com`.
+- **Deploy identity.** `apps/vetly/public/CNAME` = `vetly.free.componentdock.com`
+  and the package `homepage` = `https://vetly.free.componentdock.com`.

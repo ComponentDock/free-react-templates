@@ -599,7 +599,7 @@ template-grove                      buri                       -> apps/ravida   
 template-growly                     repeat                     -> apps/loop               (row 1153, banner)
 template-grubhaus                   foodbar                    -> apps/bites              (row 2680, row)
 template-guac                       avo                        -> apps/minima             (row 2499, row)
-template-guardian                   thepetcare                 -> apps/thepetcare         (row 52, unproven)
+template-guardian                   vetly                      -> apps/vetly         (row 52, unproven)
 template-guidelight                 lifecoach                  -> apps/coachly            (row 1390, row)
 template-gusset                     accordion-07               -> apps/lamina             (row 645, banner)
 template-gustable                   eatwell                    -> apps/tastory            (row 2678, banner)

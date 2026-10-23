@@ -46,7 +46,7 @@
   LinkedIn) inline SVG.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
-- Implementation based on `apps/thepetcare` (multi-section landing with
+- Implementation based on `apps/vetly` (multi-section landing with
   forms/dark mode); booking + newsletter forms validated with zod
   (per spec), native HTML attributes for required fields.
 
@@ -56,7 +56,7 @@
       requirements + scenarios + replication findings) — DONE on main (this
       prep).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/horse-club` (based on `apps/thepetcare`; package
+- [x] Create `apps/horse-club` (based on `apps/vetly`; package
       `@free-react-templates/horse-club`, registered in package-lock.json).
 - [x] TDD: tests first for Navbar, Hero, About/Video, Features, Home About,
       Pricing, Booking form, Testimonials, Blog, Gallery, Footer, App

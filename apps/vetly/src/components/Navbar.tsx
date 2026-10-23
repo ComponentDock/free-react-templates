@@ -23,7 +23,7 @@ export function Navbar() {
     <header className="border-b border-gray-200 bg-white/80 backdrop-blur dark:border-gray-800 dark:bg-gray-950/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <a href="#home" className="font-display text-xl text-brand">
-          Thepetcare
+          Vetly
         </a>
 
         <div className="flex items-center gap-4">
