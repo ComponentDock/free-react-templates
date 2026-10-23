@@ -23,7 +23,7 @@ describe('Footer', () => {
     }
 
     expect(
-      screen.getByText(`Copyright © ${new Date().getFullYear()} Appru. All rights reserved.`),
+      screen.getByText(`Copyright © ${new Date().getFullYear()} Rocket. All rights reserved.`),
     ).toBeInTheDocument()
   })
 
@@ -32,8 +32,8 @@ describe('Footer', () => {
     render(<Footer />)
 
     const input = screen.getByLabelText('Email address')
-    await user.type(input, 'hello@appru.com')
-    expect(input).toHaveValue('hello@appru.com')
+    await user.type(input, 'hello@rocket.com')
+    expect(input).toHaveValue('hello@rocket.com')
 
     await user.click(screen.getByRole('button', { name: 'Subscribe' }))
     expect(input).toHaveValue('')

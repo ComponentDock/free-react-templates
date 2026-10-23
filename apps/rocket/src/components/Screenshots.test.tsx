@@ -9,9 +9,9 @@ describe('Screenshots', () => {
     expect(screen.getByRole('heading', { level: 2, name: 'Featured Screens' })).toBeInTheDocument()
 
     for (let index = 1; index <= 4; index += 1) {
-      expect(screen.getByRole('img', { name: `Appru screen ${index}` })).toHaveAttribute(
+      expect(screen.getByRole('img', { name: `Rocket screen ${index}` })).toHaveAttribute(
         'src',
-        `https://picsum.photos/seed/appru-screen-${index}/400/800`,
+        `https://picsum.photos/seed/rocket-screen-${index}/400/800`,
       )
     }
   })

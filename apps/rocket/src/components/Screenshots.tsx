@@ -9,7 +9,7 @@ export function Screenshots() {
             Featured Screens
           </h2>
           <p className="mt-4 leading-relaxed text-muted dark:text-gray-400">
-            A look inside Appru — clean screens designed to keep every task one tap away.
+            A look inside Rocket — clean screens designed to keep every task one tap away.
           </p>
         </div>
 
@@ -17,8 +17,8 @@ export function Screenshots() {
           {screens.map((screen) => (
             <img
               key={screen}
-              src={`https://picsum.photos/seed/appru-screen-${screen}/400/800`}
-              alt={`Appru screen ${screen}`}
+              src={`https://picsum.photos/seed/rocket-screen-${screen}/400/800`}
+              alt={`Rocket screen ${screen}`}
               className="w-full rounded-2xl border border-gray-100 shadow-lg dark:border-gray-800"
             />
           ))}

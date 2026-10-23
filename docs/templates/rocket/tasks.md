@@ -1,7 +1,7 @@
-# Appru (Colorlib Appru) — Tasks & Design Notes
+# Rocket (ColorLib "Appru") — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
-> Implementation ships later on `feat/template-appru`.
+> Implementation ships later on `feat/template-rocket`.
 
 ## Design notes (replication findings)
 
@@ -14,7 +14,7 @@
   light (`#f9f9ff`) sections, a phone-mockup hero, a stats band, 3 feature
   tiles, testimonials, a screenshot strip, and 3 pricing plans.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "Appru" + links Home, About, Pricing, Pages, Elements,
+  1. Navbar: logo "Rocket" + links Home, About, Pricing, Pages, Elements,
      Blog, Contact.
   2. Hero (`home-banner-area`, image bg + gradient overlay): h1 "App That
      Suits You Better" + blurb + **Available on App Store** /
@@ -51,11 +51,11 @@
     `<link>`.
   - `.primary-btn`: height 50px, padding 0 45px, **border-radius 0**
     (square), gradient bg, white uppercase text.
-- **Recreation name:** Appru (app-themed, distinct from "Appli" and all
-  existing names). App folder `apps/appru`, package
-  `@free-react-templates/appru`.
+- **Recreation name:** Rocket (app-themed, distinct from "Appli" and all
+  existing names). App folder `apps/rocket`, package
+  `@free-react-templates/rocket`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/appru-<n>/<w>/<h>`); lucide-react icons (replaces
+  (`picsum.photos/seed/rocket-<n>/<w>/<h>`); lucide-react icons (replaces
   font-awesome/linearicons); Poppins + Roboto via Google Fonts; phone mockup
   as a styled illustration (no assets copied); store badges as lucide-icon
   buttons; gradient primary in `@theme`; repo-standard Navbar (dark-mode
@@ -64,18 +64,18 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-appru/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-rocket/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/appru` (copy `apps/velocity`; rename package to
-      `@free-react-templates/appru`; `npm install` at root for lockfile).
+- [x] Create `apps/rocket` (copy `apps/velocity`; rename package to
+      `@free-react-templates/rocket`; `npm install` at root for lockfile).
 - [x] TDD: tests first for Navbar, Hero (+StoreButtons), Stats, Features,
       About (×2), Video, Testimonials, Screenshots, Pricing, Footer,
       App composition — 14 tests, all green.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-appru`, open PR (source template, preview URL,
+- [ ] Push `feat/template-rocket`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -88,8 +88,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/appru/` may name the source designer,
+- **Provenance ban.** No file under `apps/rocket/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/appru/public/CNAME` = `appru.free.componentdock.com`
-  and the package `homepage` = `https://appru.free.componentdock.com`.
+- **Deploy identity.** `apps/rocket/public/CNAME` = `rocket.free.componentdock.com`
+  and the package `homepage` = `https://rocket.free.componentdock.com`.

@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, sections, and footer with the correct landmarks and document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Appru — App Landing Template')
+    expect(document.title).toBe('Rocket — App Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()

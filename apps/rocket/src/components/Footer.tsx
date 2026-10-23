@@ -55,11 +55,11 @@ export function Footer() {
             You can trust us — we only send promo offers.
           </p>
           <form onSubmit={handleSubmit} className="mt-6 flex items-stretch">
-            <label htmlFor="appru-newsletter" className="sr-only">
+            <label htmlFor="rocket-newsletter" className="sr-only">
               Email address
             </label>
             <input
-              id="appru-newsletter"
+              id="rocket-newsletter"
               type="email"
               required
               value={email}
@@ -80,7 +80,7 @@ export function Footer() {
 
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm text-gray-500">
-          Copyright © {new Date().getFullYear()} Appru. All rights reserved.
+          Copyright © {new Date().getFullYear()} Rocket. All rights reserved.
         </p>
         <SocialLinks />
       </div>
