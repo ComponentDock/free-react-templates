@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Landing brand colors — sampled programmatically from the ColorLib
-     "Landing Page Wordpress Themes" screenshot (landing-page-themes.jpg,
-     1200×891): white/very light-gray backgrounds (#ffffff, #f4f4f4,
+  /* Landing brand colors — sampled from the reference screenshot
+     (landing-page-themes.jpg, 1200×891): white/very light-gray
+     backgrounds (#ffffff, #f4f4f4,
      #fafafa) with a violet brand. Deep violet #7020c0 (buttons/CTAs),
      mid violet #7c44d6 (average of all sampled violet pixels — primary),
      light violet #8060e0 (gradients/accents). */

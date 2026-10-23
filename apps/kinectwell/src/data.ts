@@ -1,5 +1,5 @@
-/* All copy/content for Kinectwell, based on the ColorLib "Physical Therapy"
-   template description and design patterns. Original preview was 404 at
+/* All copy/content for Kinectwell, based on the reference design
+   description and design patterns. Original preview was 404 at
    implementation time; content follows the same kind of content as the
    source (physiotherapy, chiropractic, massage services). */
 

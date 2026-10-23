@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lede brand palette — recreated from the ColorLib "Magazine" template
-     (https://colorlib.com/wp/template/magazine/), tokens extracted from the
-     live preview's css/main.css:
+  /* Lede brand palette — measured from the reference design;
+     tokens extracted from the reference stylesheet:
      - dark navy #04091e — top bar, nav bar, section-title pills, footer
      - pink-red accent #f6214b — category tag pills, breaking-news label,
        subscribe button, title hover states

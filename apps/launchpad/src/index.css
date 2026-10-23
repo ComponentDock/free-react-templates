@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Launchpad brand palette — recreated from the ColorLib "Startup" design
+  /* Launchpad brand palette — measured from the reference design
      (primary red #df003a, teal accent #4cd3e3, blue #38a4ff). */
   --color-brand-50: #fef2f4;
   --color-brand-100: #fde3e8;

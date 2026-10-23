@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lagoon brand teal — inspired by the original ColorLib "Error 404
-     V17" error page (teal `:(` emoticon and hover background). */
+  /* Lagoon brand teal — inspired by the reference 404 error page
+     (teal `:(` emoticon and hover background). */
   --color-brand: #00b5c3;
 
   /* Text colors from the original stylesheet (css/style.css). */

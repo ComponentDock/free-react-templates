@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Kindred brand palette — recreated from the ColorLib "Aspiration"
-     stylesheet (css/style.css): brand blue #0028ff (38 uses: nav hover,
-     hero overlay, .bg-primary, .btn-primary, service icons, footer
-     overlay opacity .8). */
+  /* Kindred brand palette — measured from the reference design
+     (css/style.css): brand blue #0028ff (38 uses: nav hover, hero
+     overlay, .bg-primary, .btn-primary, service icons, footer overlay
+     opacity .8). */
   --color-brand: #0028ff;
   --color-brand-600: #0028ff;
   --color-brand-700: #0020cc;

@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Krypton brand palette — from ColorLib "Labs" digital agency template
-     (screenshot pixel analysis): deep purple #6420b1 primary, medium blue
+  /* Krypton brand palette — measured from the reference digital-agency
+     template (screenshot pixel analysis): deep purple #6420b1 primary, medium blue
      #5d80c0 secondary, dark text #1a1a2e, body #555, off-white #f8f9fa,
      warm peach #fdf2ee. */
   --color-primary-50: #f3eefa;
