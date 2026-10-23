@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand gradient — recreated from the ColorLib "Bobsled" design
+  /* Brand gradient — measured from the reference design
      (css/main.css): blue #3e69fe → cyan #4cd4e3, used on hero,
      features, contact, story bg, and button hover. */
   --color-brand-start: #3e69fe;

@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* FrostGuard brand tokens — extracted from ColorLib Hvacompany preview
-     (https://preview.colorlib.com/theme/hvacompany/):
+  /* FrostGuard brand tokens — extracted from the reference stylesheet:
      dark navy #142336, accent blue #4586D5, CTA yellow #FAD110,
      body text #444444, light gray BG #F3F8FC */
   --color-primary-900: #142336;

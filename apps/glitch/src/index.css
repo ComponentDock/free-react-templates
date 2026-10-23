@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Glitch brand pink — from the original ColorLib "Error 404 V6"
-     stylesheet (css/style.css): the neon 3D shadow bottom-right offset
-     and the "Homepage" link text/border (#ff005a). */
+  /* Glitch brand pink — from the reference design (css/style.css): the
+     neon 3D shadow bottom-right offset and the "Homepage" link text/border
+     (#ff005a). */
   --color-glow: #ff005a;
 
   /* Neon purple — the 3D shadow top-left offset, the "Page not found"

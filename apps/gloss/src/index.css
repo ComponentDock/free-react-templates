@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Gloss brand palette — recreated from the ColorLib "Makeup Artist"
-     design (css/style.css): brand pink #e65783 (buttons, headings, accents),
-     dark maroon #200204 / #111111 (hero, services, CTA, footer), light
+  /* Gloss brand palette — measured from the reference design
+     (css/style.css): brand pink #e65783 (buttons, headings, accents), dark
+     maroon #200204 / #111111 (hero, services, CTA, footer), light
      #f8f2f2 sections, muted #888888. */
   --color-brand: #e65783;
   --color-brand-deep: #cf3f6d;
