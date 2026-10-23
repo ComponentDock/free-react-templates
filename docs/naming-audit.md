@@ -23,7 +23,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815), `appco` →
 `flowly` (#1816), `applab` → `velocity` (#1817), `appli` → `knotly` (#1818),
 `appru` → `rocket` (#1819), `apps` → `hatch` (#1820), `appson` → `takeoff`
-(#1821), `appy` → `tandem`.
+(#1821), `appy` → `tandem` (#1822).
 
 | app                 | source design  |
 | ------------------- | -------------- |
