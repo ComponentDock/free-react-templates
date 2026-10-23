@@ -28,7 +28,8 @@
     "deploy": "bash scripts/deploy-template.sh",
     "deploy:aurora": "bash scripts/deploy-template.sh aurora",
     "prepare": "husky",
-    "sweep:provenance": "node scripts/sweep-provenance.mjs"
+    "sweep:provenance": "node scripts/sweep-provenance.mjs",
+    "audit:naming": "node scripts/audit-naming.mjs"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
