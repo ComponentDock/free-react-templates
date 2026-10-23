@@ -41,7 +41,7 @@ function CategoryTag({ category }: { category: (typeof articles)[number]['catego
 /** Left column of the light-grey main section: 3-up article card grid,
     "Whats trending" and "Most Popular Videos" feature blocks (split cards +
     small cards with round play buttons) and a LOAD MORE outline button
-    (reference: col-lg-8 on the Quitelight preview). */
+    (reference: col-lg-8 in the reference layout). */
 export function ArticleGrid() {
   return (
     <div className="lg:col-span-8 lg:pr-8">

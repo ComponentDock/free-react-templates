@@ -10,7 +10,7 @@ import {
   siteName,
 } from '../data'
 
-/* Red main navbar (reference `.vizew-main-menu`): logo left, uppercase
+/* Red main navbar (reference `.main-menu`): logo left, uppercase
    links right; Home active with a white underline; Pages/Features open
    dropdowns; hamburger menu on small screens. */
 export function Navbar() {

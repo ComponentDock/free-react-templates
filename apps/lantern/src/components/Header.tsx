@@ -11,8 +11,8 @@ import {
 
 /** Absolute overlay header (white text over the hero): wordmark left, search
     trigger + hamburger right, centered nav with a Sport dropdown sub-menu,
-    and a collapsible mobile menu (reference: the overlay header on the
-    Quitelight preview). */
+    and a collapsible mobile menu (reference: the overlay header of the
+    reference design). */
 export function Header() {
   const [searchOpen, setSearchOpen] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)

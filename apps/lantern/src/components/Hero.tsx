@@ -5,7 +5,7 @@ import { categoryColors, continueReadingLabel, heroPost, hotNews, hotNewsTitle }
 /** Full-height hero slider: featured article on the left (category tag, bold
     headline, Continue Reading outline button) over a dark-overlay photo, and
     a HOT NEWS horizontally scrollable carousel of white mini-cards on the
-    right (reference: .slider-main on the Quitelight preview). */
+    right (reference: .slider-main in the reference design). */
 export function Hero() {
   return (
     <section

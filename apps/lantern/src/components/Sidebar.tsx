@@ -13,7 +13,7 @@ const adBlockClasses =
 
 /** Right sidebar column: TOP STORIES rows (120x120 thumb + title), an ad
     placeholder, a NEWEST VIDEO list with play icons, and a second ad
-    placeholder (reference: col-lg-4 on the Quitelight preview). */
+    placeholder (reference: col-lg-4 in the reference layout). */
 export function Sidebar() {
   return (
     <aside aria-label="Sidebar" className="lg:col-span-4">

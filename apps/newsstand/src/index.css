@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Newsstand brand palette — recreated from the ColorLib "Webmag" preview
-   (https://preview.colorlib.com/theme/webmag/) live DOM + assets/css/style.css:
+/* Newsstand brand palette — measured from the reference design
+   (live DOM + assets/css/style.css):
    brand orange #ff8700 (newsletter button, cat-2 badge/nav hover, post-title
    hover, focus ring rgba(255,135,0,.15)), category accents green #4BB92F
    (cat-1 Web Design) / orange (cat-2 JavaScript) / purple #8d00ff (cat-3 CSS)

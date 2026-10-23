@@ -6,8 +6,8 @@ import { FeaturedGrey } from './components/FeaturedGrey'
 import { PostsSidebar } from './components/PostsSidebar'
 import { Footer } from './components/Footer'
 
-/* Newsstand — single-page magazine & blog landing (recreation of the
-   ColorLib "Webmag" template). Section order matches the reference 1:1:
+/* Newsstand — single-page magazine & blog landing (measured from the
+   reference design). Section order matches the reference 1:1:
    fixed header (nav + search overlay + aside drawer) → Recent Posts +
    Most Read sidebar → grey Featured band → Featured Posts + sidebar widgets
    → light footer. */

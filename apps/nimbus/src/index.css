@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Nimbus brand colors — from ColorLib "Saas" preview
-     (https://preview.colorlib.com/theme/saas/ + css/main.css):
-     a SaaS landing page with a blue #3bacf0 primary,
+  /* Nimbus brand colors — measured from the reference stylesheet
+     (css/main.css): a SaaS landing page with a blue #3bacf0 primary,
      green #88d200 CTA buttons, light bg #f9f9ff,
      dark navy footer #04091e, body text #777, headings #222. */
   --color-primary-50: #e8f6fd;
@@ -19,7 +18,7 @@
   --color-primary-800: #0a5580;
   --color-primary-900: #084568;
 
-  /* Accent green (ColorLib .primary-btn / .ticker-btn #88d200). */
+  /* Accent green (.primary-btn /.ticker-btn #88d200). */
   --color-accent-300: #a8e84d;
   --color-accent-400: #88d200;
   --color-accent-500: #6db300;
