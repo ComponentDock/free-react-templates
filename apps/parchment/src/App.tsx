@@ -6,10 +6,10 @@ import { FeaturedSlider } from './components/FeaturedSlider'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 
-/* Parchment — minimal editorial blog home page (ColorLib "Wordsmith"
-   recreation). The navy #111860 page background shows through behind the
-   footer band; the gray #f2f2f2 featured/entries sections and the white
-   s-extra section paint over it. */
+/* Parchment — minimal editorial blog home page, recreated from the reference
+   design. The navy #111860 page background shows through behind the footer
+   band; the gray #f2f2f2 featured/entries sections and the white s-extra
+   section paint over it. */
 export function App() {
   useEffect(() => {
     document.title = documentTitle

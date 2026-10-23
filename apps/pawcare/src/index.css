@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pawcare brand red-orange — from the original ColorLib "Anipat"
-     stylesheet (css/style.css): the .boxed-btn outline, its hover fill,
-     and accent colors (#ff3500). */
+  /* Pawcare brand red-orange — from the reference design (css/style.css):
+     the .boxed-btn outline, its hover fill, and accent colors (#ff3500). */
   --color-brand: #ff3500;
 
   /* Light section background — services area (#f9f9ff). */

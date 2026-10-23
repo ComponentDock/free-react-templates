@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pandemic brand palette — recreated from the ColorLib "Covid" design:
+  /* Pandemic brand palette — measured from the reference design:
      purple #6f42c1 accents/buttons, light purple backgrounds,
      red #e84a5f accent, green #a8df65 success. */
   --color-brand: #6f42c1;

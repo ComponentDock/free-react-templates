@@ -1,6 +1,5 @@
-/** Copy + content data for the Palate restaurant landing (recreation of
-    ColorLib "Appetizer"). Kept side-effect free so every entry is
-    unit-testable. */
+/** Copy + content data for the Palate restaurant landing, measured from the
+    reference design. Kept side-effect free so every entry is unit-testable. */
 
 export const BRAND = 'Palate'
 

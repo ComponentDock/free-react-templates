@@ -1,6 +1,6 @@
 import { siteName } from '../data'
 
-/* Wordmark (reference `div.header__logo`, an image of "wordsmith." set in an
+/* Wordmark (reference `div.header__logo`, a lowercase wordmark set in an
    italic serif) — recreated as text in Libre Baskerville italic. */
 export function Logo() {
   return (

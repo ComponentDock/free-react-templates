@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* PackWell brand palette — recreated from the ColorLib "Carries" design
+  /* PackWell brand palette — measured from the reference design
      (style.css): orange #f39c12 accents/CTAs, blue #0083ff links,
      dark blue-gray #3c4a62 headings/footer, light #f4f7f9 / gray #f1f1f1. */
   --color-brand: #f39c12;

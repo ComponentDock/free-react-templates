@@ -1,7 +1,6 @@
-/** Shared button recipes recreated from the source's .btn-primary /
-    .btn-white (ColorLib Appetizer, css/style.css): radius 2px, Poppins
-    uppercase. Plain string consts (not cn() — Tailwind-merge would drop
-    conflicting hover classes). */
+/** Shared button recipes taken from the reference .btn-primary / .btn-white
+    rules (css/style.css): radius 2px, Poppins uppercase. Plain string consts
+    (not cn() — Tailwind-merge would drop conflicting hover classes). */
 
 /* .btn-primary — orange #ffa323 bg + border, white text; hover darkens
    the orange slightly. */

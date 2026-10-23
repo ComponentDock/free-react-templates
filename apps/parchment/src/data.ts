@@ -1,6 +1,6 @@
-/* Parchment — minimal editorial blog home page (ColorLib "Wordsmith"
-   recreation, https://preview.colorlib.com/theme/wordsmith/). All copy is
-   paraphrased from the live preview DOM; all images are seeded picsum
+/* Parchment — minimal editorial blog home page, recreated from the reference
+   design. All copy is paraphrased from the live preview DOM; images are seeded
+   picsum
    placeholders; brand icons are inline SVG path data (lucide-react removed
    brand icons). */
 
