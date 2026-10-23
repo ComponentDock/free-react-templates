@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Flamingo brand palette — recreated from the ColorLib "Fantom" blog
-     template (https://colorlib.com/wp/template/fantom/), tokens extracted
-     from the live preview's style.css:
+  /* Flamingo brand palette — measured from the reference blog layout;
+     tokens extracted from the reference stylesheet:
      - primary #ff2f92 (nav bar, category pill borders, active pagination,
        newsletter arrow, tag-cloud hover, widget-title left border)
      - hover pink #cc2675 (nav item hover/active background)

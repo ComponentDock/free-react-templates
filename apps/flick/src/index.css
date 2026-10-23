@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Flick brand violet — inspired by the original ColorLib "Error 404
-     V15" animated canvas error page (bright, playful, motion-first). */
+  /* Flick brand violet — measured from the reference animated-canvas
+     error page (bright, playful, motion-first). */
   --color-brand: #8b5cf6;
 
   --color-primary-50: #f5f3ff;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Forma brand colors — from the ColorLib "Atelier" demo stylesheet
+  /* Forma brand colors — from the reference stylesheet
      (_astro/Base.*.css): primary gold/bronze scale (#c49536 accent-500,
      #a87a2a accent-600 hover, #d4a854 accent-400 highlights, #8c6124 deep),
      dark surfaces #030712/#111827/#1f2937, light surfaces #ffffff/#f9fafb,
