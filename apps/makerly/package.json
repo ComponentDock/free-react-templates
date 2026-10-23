@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/crafted",
+  "name": "@free-react-templates/makerly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://crafted.free.componentdock.com",
+  "homepage": "https://makerly.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

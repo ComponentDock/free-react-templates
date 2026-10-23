@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, all sections, and the footer with the correct landmarks and title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Crafted — Creative Agency Landing Template')
+    expect(document.title).toBe('Makerly — Creative Agency Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -14,7 +14,7 @@ describe('App', () => {
     const main = screen.getByRole('main')
     expect(main).toBeInTheDocument()
     const heading = screen.getByRole('heading', { level: 1 })
-    expect(heading.textContent).toMatch(/We Are Crafted/)
+    expect(heading.textContent).toMatch(/We Are Makerly/)
     expect(
       screen.getByRole('heading', { level: 2, name: 'Recent Portfolio Showcase' }),
     ).toBeInTheDocument()

@@ -13,7 +13,7 @@ const testimonials = [
     name: 'Marvel Maison',
     role: 'Chief Executive, Amazon',
     quote:
-      'Crafted delivered beyond our expectations. The team listened, designed with intent, and shipped a product our customers genuinely love using every day.',
+      'Makerly delivered beyond our expectations. The team listened, designed with intent, and shipped a product our customers genuinely love using every day.',
   },
 ] as const
 

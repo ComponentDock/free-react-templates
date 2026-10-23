@@ -27,7 +27,7 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center">
           <h2 className="font-display text-3xl font-bold text-ink dark:text-white sm:text-4xl">
-            We Are Crafted. We Provide These Services to Our Customers
+            We Are Makerly. We Provide These Services to Our Customers
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-body dark:text-gray-400">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

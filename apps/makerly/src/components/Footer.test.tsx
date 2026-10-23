@@ -7,7 +7,7 @@ describe('Footer', () => {
   it('renders the about blurb, navigation links, social links, and copyright', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('heading', { level: 2, name: 'About Crafted' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 2, name: 'About Makerly' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Navigation Links' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Newsletter' })).toBeInTheDocument()
     for (const label of ['Services', 'Projects', 'Team', 'Blog']) {
@@ -22,10 +22,10 @@ describe('Footer', () => {
     render(<Footer />)
 
     const input = screen.getByLabelText('Email address')
-    await user.type(input, 'hello@crafted.dev')
-    expect(input).toHaveValue('hello@crafted.dev')
+    await user.type(input, 'hello@makerly.dev')
+    expect(input).toHaveValue('hello@makerly.dev')
 
     await user.click(screen.getByRole('button', { name: 'Subscribe' }))
-    expect(input).toHaveValue('hello@crafted.dev')
+    expect(input).toHaveValue('hello@makerly.dev')
   })
 })

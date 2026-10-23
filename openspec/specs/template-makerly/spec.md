@@ -1,12 +1,17 @@
-# Template: Crafted (Creative Agency Landing)
+# Template: Makerly (Creative Agency Landing)
 
 ## Purpose
 
-Crafted is a single-page creative-agency landing template in the
+Makerly is a single-page creative-agency landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Crafted" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
 CSS 4 + TypeScript.
+
+Naming (AGENTS.md rule 5): the template ships as **Makerly** — an original name
+that evokes the creative-studio design — while the source design's name lives
+only here, in `TEMPLATES.md` and in the PR. The app folder, package, CNAME and
+every string in `apps/makerly/` carry the new name.
 
 ## Design reference (replication findings)
 
@@ -19,14 +24,14 @@ CSS 4 + TypeScript.
 - **Section order (1:1):**
   1. Navbar (`main-menu`): Home, About, Service, Project, Team, Blog,
      Contact (plus dropdowns for Project/Blog detail pages).
-  2. Hero (`banner-area`): "We Are Crafted. Design & Development Service
+  2. Hero (`banner-area`): "We Are Makerly. Design & Development Service
      Provider." + blurb + "More About Us" square outline button +
      "Watch Live Demo" video play button (overlay video modal).
   3. Brand strip (`brand-area`): 4+ client logo tiles.
-  4. Services (`service-area`): "We Are Crafted. We Provide These Services
+  4. Services (`service-area`): "We Are Makerly. We Provide These Services
      to Our Customers" + 3 icon tiles (original repeats the "Story
      Boarding" placeholder title 3× with different icons and blurbs).
-  5. About (`about-area` + `counter_area`): "We Are Crafted. Some Info
+  5. About (`about-area` + `counter_area`): "We Are Makerly. Some Info
      About Us" + blurb + 4 counters — 500+ Qualified Lawyer, 20,650+
      Solved Cases, 2.5k+ Trusted Clients, 50+ Achievements (demo content
      keeps the legal-theme labels).
@@ -42,7 +47,7 @@ CSS 4 + TypeScript.
      Estimate for Free" button.
   10. Blog (`blog-area`): "Latest Posts From Our Blog" + 3 cards (meta
       "25 june, 2018 | By Mark Wiens", title, excerpt, Read more).
-  11. Footer (`footer-area`): "About Crafted" blurb + Navigation links +
+  11. Footer (`footer-area`): "About Makerly" blurb + Navigation links +
       Newsletter signup (email + subscribe) + social icons + copyright.
 - **Design tokens extracted from `main.css`:**
   - Primary **blue `#4ba0f9`**, hover/accent **gradient
@@ -58,7 +63,7 @@ CSS 4 + TypeScript.
     transparent fill, ~40px horizontal padding, 48px line-height; hover
     fills with the blue→cyan gradient.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/crafted-<n>/<w>/<h>`); icons → lucide-react
+  (`picsum.photos/seed/makerly-<n>/<w>/<h>`); icons → lucide-react
   (PenTool, Palette, Code, Play, Quote, socials as inline SVG brand
   icons); font → Google Fonts Playfair Display + Roboto via `<link>`; no
   assets copied. Copy paraphrased keeping the same content kinds; the
@@ -66,7 +71,7 @@ CSS 4 + TypeScript.
   titles in the same style (Story Boarding, Creative Design, Web
   Development) so the tiles read as a real agency site.
 
-Crafted lives in `apps/crafted` and uses shared components from `packages/ui`
+Makerly lives in `apps/makerly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -82,14 +87,14 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Crafted",
+The system SHALL render a top navigation bar with the site name "Makerly",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Crafted page is rendered
+- **GIVEN** the Makerly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Crafted" and links to Home, About, Services, Projects, Team, Blog, and Contact
+- **THEN** the navbar SHALL show the site name "Makerly" and links to Home, About, Services, Projects, Team, Blog, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -108,7 +113,7 @@ call-to-action buttons.
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
-- **THEN** it SHALL contain a level-1 heading "We Are Crafted" with a design & development service line
+- **THEN** it SHALL contain a level-1 heading "We Are Makerly" with a design & development service line
 - **AND** it SHALL show a "More About Us" button
 - **AND** it SHALL show a "Watch Live Demo" button
 
@@ -214,9 +219,9 @@ newsletter signup, social links, and a copyright line.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show an "About Crafted" blurb and navigation links
+- **THEN** it SHALL show an "About Makerly" blurb and navigation links
 - **AND** it SHALL show a newsletter signup with an email input and subscribe button
-- **AND** it SHALL show social links and a copyright line for "Crafted"
+- **AND** it SHALL show social links and a copyright line for "Makerly"
 
 ### Requirement: Page composition
 
@@ -225,10 +230,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Crafted app is rendered
+- **GIVEN** the Makerly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Crafted — Creative Agency Landing Template"
+- **AND** the document title SHALL be "Makerly — Creative Agency Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -248,7 +253,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/crafted/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/makerly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -257,7 +262,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/crafted/` is inspected
+- **WHEN** every non-test file under `apps/makerly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -265,8 +270,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Crafted" and links to Home, About, Services, Projects, Team, Blog, and Contact
-- [x] Hero section — it SHALL contain a level-1 heading "We Are Crafted" with a design & development service line
+- [x] Navigation bar — the navbar SHALL show the site name "Makerly" and links to Home, About, Services, Projects, Team, Blog, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "We Are Makerly" with a design & development service line
 - [ ] Brand strip — it SHALL show at least four client brand tiles
 - [x] Services section — it SHALL contain a heading "We Provide These Services to Our Customers"
 - [x] About section with stats — it SHALL contain a heading "Some Info About Us"
@@ -275,5 +280,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Testimonials section — it SHALL show quotes attributed to "Marvel Maison"
 - [x] CTA band — it SHALL contain a heading "Get to Know Project Estimate?"
 - [x] Blog section — it SHALL contain a heading "Latest Posts From Our Blog"
-- [x] Footer — it SHALL show an "About Crafted" blurb and navigation links
+- [x] Footer — it SHALL show an "About Makerly" blurb and navigation links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

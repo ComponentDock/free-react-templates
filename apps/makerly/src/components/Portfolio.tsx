@@ -1,7 +1,7 @@
 const projects = [
-  { title: 'Santorini Island Dream', category: 'Holiday & Fun Package', seed: 'crafted-project-1' },
-  { title: 'Proper Guided Tour', category: 'Travel & Experience', seed: 'crafted-project-2' },
-  { title: 'Holiday and Fun Package', category: 'Tour & Adventure', seed: 'crafted-project-3' },
+  { title: 'Santorini Island Dream', category: 'Holiday & Fun Package', seed: 'makerly-project-1' },
+  { title: 'Proper Guided Tour', category: 'Travel & Experience', seed: 'makerly-project-2' },
+  { title: 'Holiday and Fun Package', category: 'Tour & Adventure', seed: 'makerly-project-3' },
 ] as const
 
 export function Portfolio() {

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crafted brand colors — from the reference stylesheet
+  /* Makerly brand colors — from the reference stylesheet
      (main.css): primary blue #4ba0f9, accent gradient
      linear-gradient(90deg, #4ba0f9 0%, #85f3f9 100%) on hover/CTA areas,
      yellow #f8b600 and cyan #4cd3e3 accents, dark sections #222222,

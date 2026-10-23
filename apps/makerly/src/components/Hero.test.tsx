@@ -7,7 +7,7 @@ describe('Hero', () => {
     render(<Hero />)
 
     const heading = screen.getByRole('heading', { level: 1 })
-    expect(heading.textContent).toMatch(/We Are Crafted/)
+    expect(heading.textContent).toMatch(/We Are Makerly/)
     expect(heading.textContent).toMatch(/Design & Development Service Provider/)
 
     expect(screen.getByRole('link', { name: 'More About Us' })).toBeInTheDocument()
