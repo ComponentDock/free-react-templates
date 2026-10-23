@@ -15,7 +15,7 @@ Threadcraft is a fashion eCommerce landing page template. It recreates the Color
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/fashi/ (HTTP 200, 57,452 B, fetched 2026-10-23) and its theme stylesheet `theme/fashi/css/style.min.css` (133,779 B, sha256 `3ed88c29dc3b…`).
+https://preview.colorlib.com/theme/fashi/ (HTTP 200, 57,452 B, fetched 2026-10-23) and its theme stylesheet `theme/fashi/css/style.min.css` (133,779 B, sha256 `732aa28eff86…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

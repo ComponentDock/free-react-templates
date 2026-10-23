@@ -14,7 +14,7 @@ A Drone Photography template with hero, services grid with three, video/how we w
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/dronephotography/ (HTTP 200, 35,099 B, fetched 2026-10-23) and its theme stylesheet `theme/dronephotography/assets/css/style.min.css` (206,874 B, sha256 `45708808b9cd…`).
+https://preview.colorlib.com/theme/dronephotography/ (HTTP 200, 35,099 B, fetched 2026-10-23) and its theme stylesheet `theme/dronephotography/assets/css/style.min.css` (206,874 B, sha256 `2e2a4a2e4cee…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

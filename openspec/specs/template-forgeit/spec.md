@@ -21,7 +21,7 @@ with sections for features, portfolio, services, about, team, blog, and contact.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/create/ (HTTP 200, 44,184 B, fetched 2026-10-23) and its theme stylesheet `theme/create/css/style.min.css` (184,297 B, sha256 `4042a1533c9f…`).
+https://preview.colorlib.com/theme/create/ (HTTP 200, 44,184 B, fetched 2026-10-23) and its theme stylesheet `theme/create/css/style.min.css` (184,297 B, sha256 `bcb59af6e9c3…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -13,7 +13,7 @@ A Food / Recipe Blog template with top header, sticky, hero carousel, top catego
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/delicious/ (HTTP 200, 53,391 B, fetched 2026-10-23) and its theme stylesheet `theme/delicious/style.min.css` (201,681 B, sha256 `eea7516f9746…`).
+https://preview.colorlib.com/theme/delicious/ (HTTP 200, 53,391 B, fetched 2026-10-23) and its theme stylesheet `theme/delicious/style.min.css` (201,681 B, sha256 `1ead9826ca67…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

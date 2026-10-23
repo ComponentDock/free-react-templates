@@ -13,7 +13,7 @@ LocalFinder is a local services directory listing template that helps users disc
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/directing/ (HTTP 200, 165,839 B, fetched 2026-10-23) and its theme stylesheet `theme/directing/css/style.min.css` (118,350 B, sha256 `0c4dbe57a255…`).
+https://preview.colorlib.com/theme/directing/ (HTTP 200, 165,839 B, fetched 2026-10-23) and its theme stylesheet `theme/directing/css/style.min.css` (118,350 B, sha256 `3fcacf7444d3…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

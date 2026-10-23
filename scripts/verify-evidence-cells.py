@@ -398,7 +398,7 @@ def fetch_sheet(f, url: str) -> str:
     return body
 
 
-BYTES_RX = re.compile(r"([0-9][0-9,]{2,})\s*B\b")
+BYTES_RX = re.compile(r"([0-9][0-9,]{1,})\s*B\b")
 SHA_RX = re.compile(r"sha256\s*`?([0-9a-f]{10,64})")
 NEWLINE_RX = re.compile(r"\r\n?")
 
@@ -428,21 +428,124 @@ def recorded_identity(txt: str, url: str):
     PAGE identity before naming the design sheet ("… (HTTP 200, 49,321 B,
     sha256 `eb29…`, fetched …) and its design stylesheet(s) `style.css`"), and
     reading those numbers as the sheet's made 266 preps look rebuilt.
+
+    BINDING is per CITATION, not per basename (`citation_identity`): a prep can
+    cite three sheets that all end in `styles.css` (`01-homepage`, `02-rsvp`,
+    `03-regular-page`), each with its own size. Bounding on the basename alone
+    read every one of them against the FIRST `styles.css` line and reported
+    design drift for a correct prep (aisle), and `fonts/icomoon/style.css`
+    (79,820 B) shadowed the theme sheet `css/style.css` for draftwell/elixir.
     """
-    base = os.path.basename(url.split("?")[0])
+    ident, _ = citation_identity(txt, url)
+    return ident
+
+
+def citation_tails(url: str):
+    """The cited sheet's own path tails, most specific first.
+
+    `/theme/wedding2/02-rsvp/css/styles.css` -> `theme/wedding2/02-rsvp/css/
+    styles.css`, `wedding2/02-rsvp/css/styles.css`, `02-rsvp/css/styles.css`,
+    `css/styles.css`. Binding the longest tail that the spec actually writes is
+    what keeps each sibling page's citation paired with its own numbers.
+    """
+    p = urllib.parse.urlparse(url.split("?")[0]).path
+    segs = [s for s in p.split("/") if s]
+    if len(segs) < 2:
+        return []
+    return ["/".join(segs[i:]) for i in range(0, len(segs) - 1)]
+
+
+def _tail_rx(tail: str):
+    return re.compile(r"(?<![A-Za-z0-9_.-])" + re.escape(tail) + r"(?![A-Za-z0-9_.-])")
+
+
+NEXT_CITE = re.compile(r"`?[^`\s]*\.css")
+
+
+def _cell_identity(lines, i: int, end: int, span: int = 2):
+    """(size, sha) written in THIS citation's clause, or (None, None).
+
+    The clause ends at the next sheet the line names: listnest records the
+    theme sheet and its icon subset on one line
+    (`css/style.min.css?v=3.0.0` … sha256 `6b49…`; plus `vendor/…/fontawesome
+    .subset.css` (1,672 B)), and reading past the next citation took the
+    SUBSET's 1,672 B as the theme sheet's size — the "twin-size" defect this
+    axis reported was half an artefact of its own window.
+    """
+    tail = lines[i][end:] + "\n" + "\n".join(lines[i + 1:i + 1 + span])
+    tail = re.split(r"\n\s*\n", tail)[0]
+    nxt = NEXT_CITE.search(tail)
+    if nxt:
+        tail = tail[:nxt.start()]
+    mb = BYTES_RX.search(tail)
+    ms = SHA_RX.search(tail)
+    if not (mb or ms):
+        return None, None
+    return (int(mb.group(1).replace(",", "")) if mb else None,
+            ms.group(1) if ms else None)
+
+
+def _merge_hits(hits, status="path"):
+    """((size, sha), status) — one identity from every citation of the sheet.
+
+    The same sheet is often cited twice: once in the research line with a bare
+    size (`> Sheet: `…?v=61a959d8` (10,652 B)`) and once in the identity table
+    with a size AND sha256. Both name the same file, so the size is the fact
+    and the sha is a refinement: agree on the size and keep the sha. Only
+    DISAGREEING sizes are a conflict — two numbers for one path is a cell that
+    cannot be read, and that is the one case worth a note.
+    """
+    sizes = {h[0] for h in hits if h[0] is not None}
+    if len(sizes) > 1:
+        return (None, None), "ambiguous"
+    size = next(iter(sizes)) if sizes else None
+    sha = next((h[1] for h in hits if h[1]), None)
+    return (size, sha), status
+
+
+def citation_identity(txt: str, url: str):
+    """((size, sha), status) — the identity recorded beside THIS citation.
+
+    `status` is `"path"` (bound on a path tail, the normal case), `"basename"`
+    (the spec names the sheet without a directory and only one citation carries
+    an identity) or `"ambiguous"` — several citations share the basename, none
+    is path-qualified, and they disagree: the cell cannot be bound, so neither
+    drift nor a missing record can be proved. Ambiguity is a NOTE, never
+    STALE-SKIN: believing the wrong line is what made aisle, loomings, pending,
+    grimoire, draftwell and elixir read as drift for ten censuses.
+    """
     lines = txt.splitlines()
-    rx = basename_rx(base)
+    for tail in citation_tails(url):
+        rx = _tail_rx(tail)
+        hits = []
+        for i, ln in enumerate(lines):
+            m = rx.search(ln)
+            if not m:
+                continue
+            size, sha = _cell_identity(lines, i, m.end())
+            if size is not None or sha is not None:
+                hits.append((size, sha))
+        if not hits:
+            continue
+        return _merge_hits(hits) if hits else ((None, None), "none")
+    # No path tail in the text: fall back to a bare basename, but only when it
+    # is unambiguous AND genuinely bare. A `styles.css` that three pages cite
+    # cannot be bound, and `fonts/icomoon/style.css` is NOT a citation of the
+    # theme's `style.css` — the directory in front of it says which sheet it is
+    # (elixir and draftwell recorded the icon font's 79,820 B that way).
+    base = os.path.basename(url.split("?")[0])
+    rx = re.compile(r"(?<![\w./-])" + re.escape(base) + r"(?![A-Za-z0-9_.-])")
+    hits = []
     for i, ln in enumerate(lines):
         m = rx.search(ln)
         if not m:
             continue
-        tail = ln[m.end():] + " " + (lines[i + 1] if i + 1 < len(lines) else "")
-        mb = BYTES_RX.search(tail)
-        ms = SHA_RX.search(tail)
-        if mb or ms:
-            size = int(mb.group(1).replace(",", "")) if mb else None
-            return size, (ms.group(1) if ms else None)
-    return None, None
+        size, sha = _cell_identity(lines, i, m.end())
+        if size is not None or sha is not None:
+            hits.append((size, sha))
+    if not hits:
+        return (None, None), "none"
+    return _merge_hits(hits, "basename")
 
 
 def identity_state(txt: str, url: str, body: str):
@@ -613,14 +716,20 @@ def audit_spec(f, root, path):
                 for u, _ in live}
     # Is the cited sheet still the file the cell was measured from?  The spec
     # records its size + sha256, so this is a byte comparison, not a guess.
-    changed, unrecorded, confirmed, basis = [], [], False, []
+    changed, unrecorded, confirmed, basis, ambiguous = [], [], False, [], []
     for u, body in named:
         b = os.path.basename(u.split("?")[0])
         if VENDOR_RX.search(b):
             continue
         st = identity_changed(txt, u, body)
         if st is None:
-            unrecorded.append(b)
+            # Several citations share this basename and none is path-qualified:
+            # the cell cannot be bound, so a missing record cannot be claimed
+            # either (CITATION-AMBIGUOUS is its own note).
+            if citation_identity(txt, u)[1] == "ambiguous":
+                ambiguous.append(b)
+            else:
+                unrecorded.append(b)
         elif st:
             changed.append(b)
         else:
@@ -668,7 +777,14 @@ def audit_spec(f, root, path):
                              "recorded sha256 reproduces only after newline "
                              "normalisation: the bytes were read in text mode, the "
                              "size from the wire — fix the basis, not the design"))
-    elif unrecorded:
+    if ambiguous and not stale:
+        rec["notes"].append(("CITATION-AMBIGUOUS", name, 0, "-",
+                             ", ".join(sorted(set(ambiguous)))[:70],
+                             "several citations share this basename and none is "
+                             "path-qualified: the recorded identity cannot be bound "
+                             "to one sheet, so neither drift nor a missing record "
+                             "is provable"))
+    if unrecorded and not stale:
         rec["notes"].append(("IDENTITY-UNRECORDED", name, 0, "-",
                              ", ".join(sorted(set(unrecorded)))[:70],
                              "no size/sha256 recorded beside the citation"))
@@ -748,6 +864,10 @@ BUCKET_DOC = {
                             "the measurement — a re-measure queue",
     "GRADIENT-SKEW": "the gradient declaration count does not reproduce",
     "ARCHIVE-SOURCE": "measured from the downloadable archive (no live demo serves the skin)",
+    "CITATION-AMBIGUOUS": "several citations of this basename exist and none is path-qualified, "
+                          "so the recorded identity cannot be bound to one sheet: neither drift "
+                          "nor a missing record is provable — fix the prep to cite each sheet by "
+                          "path",
 }
 
 
@@ -757,7 +877,8 @@ def render_md(recs, flags, notes, counts) -> str:
     L = ["# Evidence cells — the numeric claims in prep token tables", "",
          "```sh",
          "python3 scripts/verify-evidence-cells.py --md docs/evidence-cells.md",
-         "python3 scripts/verify-evidence-cells-controls.py   # 44/44 (13 GATE)",
+         "python3 scripts/reverify-citations.py --dry-run       # per-citation re-record",
+         "python3 scripts/verify-evidence-cells-controls.py    # 50/50 (16 GATE)",
          "```", "",
          "Generated by `scripts/verify-evidence-cells.py` (read-only; fetches the",
          "cited stylesheets once and caches them under `/tmp/evidence-cells`).", "",
@@ -780,16 +901,27 @@ def render_md(recs, flags, notes, counts) -> str:
          "  the cited sheet set (hex, 3-digit shorthand, `rgb()`/`rgba()` form), in the",
          "  demo page's own stylesheets and inline `<style>`, or in an inline",
          "  `style=` attribute. A hex that only lives in a CSS comment paints nothing.",
+         "* **Re-record** — a sheet that was rebuilt at the SAME length (the v3 "
+         "`?v=3.0.x` skins regenerate their minified bundle without changing size) is a"
+         " record defect, not design drift: `scripts/reverify-citations.py` rewrites the"
+         " cited file's sha256 per citation, and only when every declared colour and"
+         " every cited selector still exists in the live sheet set.",
          "* **Selector** — a claim's cited selectors are comma-split, `{prop}` notes",
          "  stripped, and matched against the sheet's selector atoms at FULL length.",
          "* **Sheet set** — identity is content (a demo may serve one file at two",
          "  URLs) *and* the normalised path key (`css/style.css` and `style.min.css`",
          "  are one design sheet in two forms). Counting per URL doubled every colour",
          "  of 324 rows in 71 preps.",
-         "* **Identity binding** — a recorded size/sha belongs to the basename it sits",
-         "  beside, bounded by a path delimiter: `styles.css` is a SUBSTRING of",
-         "  `main_styles.css`, and an unbounded match made a 1,440 B icon plugin compare",
-         "  against the theme sheet's 26,362 B on the line above (blitz).",
+         "* **Identity binding** — a recorded size/sha belongs to the CITATION it sits",
+         "  beside, bound on the sheet's own path tail (`02-rsvp/css/styles.css`), not on",
+         "  the basename: `aisle` cites three `styles.css` sheets, one per page, and a",
+         "  basename-first binder read all three against the first line. A basename with",
+         "  no directory in front of it is a bare citation only when nothing longer",
+         "  precedes it — `fonts/icomoon/style.css` is NOT the theme's `style.css`.",
+         "  Disagreeing sizes for one path are `CITATION-AMBIGUOUS`, never drift.",
+         "* **Clause window** — the numbers must sit in the same clause as the citation:",
+         "  the window stops at the next sheet the line names, so listnest's icon subset",
+         "  (`… fontawesome.subset.css` (1,672 B)) is not read as its theme sheet's size.",
          "* **Hash basis** — the recorded sha256 is compared on the bytes as served. A",
          "  record that reproduces only after universal-newline normalisation was hashed",
          "  from a TEXT-mode read (`\r\n` -> `\n`) while its size came from the wire: the",

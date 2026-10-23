@@ -13,7 +13,7 @@ React 19, Tailwind CSS 4, and TypeScript.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/megapod/ (HTTP 200, 53,327 B, fetched 2026-10-23) and its theme stylesheet `theme/megapod/css/style.min.css` (94,276 B, sha256 `c57f4ef3e5e4…`).
+https://preview.colorlib.com/theme/megapod/ (HTTP 200, 53,327 B, fetched 2026-10-23) and its theme stylesheet `theme/megapod/css/style.min.css` (94,276 B, sha256 `23ad8d729915…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

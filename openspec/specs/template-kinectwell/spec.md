@@ -12,7 +12,7 @@ Kinectwell is a professional physical therapy and rehabilitation landing page te
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/physicaltherapy/ (HTTP 200, 28,132 B, fetched 2026-10-23) and its theme stylesheet `theme/physicaltherapy/css/style.min.css` (194,735 B, sha256 `c50f87452b3a…`).
+https://preview.colorlib.com/theme/physicaltherapy/ (HTTP 200, 28,132 B, fetched 2026-10-23) and its theme stylesheet `theme/physicaltherapy/css/style.min.css` (194,735 B, sha256 `53e893325e06…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

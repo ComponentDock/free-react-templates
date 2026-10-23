@@ -11,7 +11,7 @@ Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/digilab/ (HTTP 200, 67,753 B, fetched 2026-10-23) and its theme stylesheet `theme/digilab/css/style.min.css` (197,589 B, sha256 `bf3dfdc5e304…`).
+https://preview.colorlib.com/theme/digilab/ (HTTP 200, 67,753 B, fetched 2026-10-23) and its theme stylesheet `theme/digilab/css/style.min.css` (197,589 B, sha256 `98bcc4c896bb…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

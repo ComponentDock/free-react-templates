@@ -18,7 +18,7 @@ CSS 4 + TypeScript.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/kindergarten/ (HTTP 200, 50,781 B, fetched 2026-10-23) and its theme stylesheet `theme/kindergarten/assets/css/style.min.css` (201,297 B, sha256 `d41228872160…`).
+https://preview.colorlib.com/theme/kindergarten/ (HTTP 200, 50,781 B, fetched 2026-10-23) and its theme stylesheet `theme/kindergarten/assets/css/style.min.css` (201,297 B, sha256 `69d1f3cccbe2…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

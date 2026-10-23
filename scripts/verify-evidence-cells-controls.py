@@ -596,6 +596,153 @@ def c31_lf_basis_does_not_hide_real_drift() -> bool:
     return fl == [] and "STALE-SKIN" in nt and "SHA-BASIS-LF" not in nt
 
 
+# ---- citation BINDING (per path, not per basename) -------------------------
+SIBLING_SPEC = """# Template: Demo (Landing)
+
+## Purpose
+
+A recreation of the reference at {demo}.
+
+| Accent | `#123456` | 3 declarations — `.demo` |
+
+Sibling page one `pages/a/styles.css` (1,000 B, sha256 `aaaaaaaaaaaa…`).
+Sibling page two `pages/b/styles.css` (2,000 B, sha256 `bbbbbbbbbbbb…`).
+Theme sheet `https://preview.colorlib.com/theme/demo/css/styles.css` ({size:,} B,
+sha256 `{sha}…`).
+""".strip()
+
+SIBLING_CSS = (".demo{color:#123456}\n" * 40)
+FILLER = ".pad{padding:1px}\n" * 40
+
+
+def _sibling(mod=None):
+    """(rec) for a prep whose demo sheet shares its basename with two siblings."""
+    body = SIBLING_CSS.encode()
+    sha = hashlib.sha256(body).hexdigest()[:12]
+    tmp = tempfile.mkdtemp()
+    root = os.path.join(tmp, "repo")
+    d = os.path.join(root, "openspec", "specs", "template-demo")
+    os.makedirs(d, exist_ok=True)
+    path = os.path.join(d, "spec.md")
+    open(path, "w").write(SIBLING_SPEC.format(demo=DEMO, size=len(body), sha=sha))
+    html = HTML.format(extra_links="", inline="#000000", pad="x" * 2200).replace(
+        'href="css/style.css"', 'href="css/styles.css"')
+    fetcher = Fake({DEMO: html.encode(), DEMO + "css/styles.css": body})
+    mod = mod or load()
+    return mod.audit_spec(fetcher, root, path), path, fetcher
+
+
+def c32_sibling_citations_bind_per_path() -> bool:
+    """Three `styles.css` citations: each must read ITS OWN numbers.
+
+    aisle cites `01-homepage`, `02-rsvp` and `03-regular-page` sheets that all
+    end in `styles.css`, each with its own size. Binding the basename read them
+    all against the first line and called a correct prep stale-for-drift.
+    """
+    rec, *_ = _sibling()
+    fl, nt = buckets(rec)
+    return fl == [] and "STALE-SKIN" not in nt
+
+
+def c32b_gate_basename_first_citation() -> bool:
+    """GATE: a basename-first binder reads the sibling's size as the sheet's."""
+    mod = load()
+
+    def basename_first(txt, url):
+        base = os.path.basename(url.split("?")[0])
+        lines = txt.splitlines()
+        rx = mod.basename_rx(base)
+        for i, ln in enumerate(lines):
+            m = rx.search(ln)
+            if not m:
+                continue
+            tail = "\n".join(lines[i:i + 3])
+            mb = mod.BYTES_RX.search(tail[m.end():])
+            ms = mod.SHA_RX.search(tail[m.end():])
+            if mb or ms:
+                return (int(mb.group(1).replace(",", "")) if mb else None,
+                        ms.group(1) if ms else None)
+        return None, None
+
+    mod.recorded_identity = basename_first
+    rec, *_ = _sibling(mod)
+    return "STALE-SKIN" in buckets(rec)[1]
+
+
+def c33_bare_basename_is_not_a_path_citation() -> bool:
+    """`fonts/icomoon/style.css` is a different sheet from `css/style.css`.
+
+    elixir and draftwell carried the icon font's 79,820 B as the theme sheet's
+    identity because a basename bound to any path delimiter matched it.
+    """
+    css = (".demo{color:#123456}\n" * 40)
+    txt = ("| Accent | `#123456` | 3 declarations — `.card:hover` |\n\n"
+           "| stylesheet | `https://preview.colorlib.com/theme/demo/"
+           "fonts/icomoon/style.css` | HTTP 200 · 1,200 B |\n"
+           "Tokens extracted from `css/style.css` (846 lines).\n")
+    rec, *_ = run(txt, css_extra=FILLER, pages={DEMO + "fonts/icomoon/style.css":
+                                               (".icon{color:#00ff00}" * 60).encode()})
+    fl, nt = buckets(rec)
+    return fl == [] and "STALE-SKIN" not in nt
+
+
+def c33b_gate_dirname_bound_basename() -> bool:
+    """GATE: allowing `/` before the basename borrows the icon font's identity."""
+    mod = load()
+    orig = mod.citation_identity
+
+    def loose(txt, url):
+        ident, status = orig(txt, url)
+        if status == "none":
+            base = os.path.basename(url.split("?")[0])
+            for i, ln in enumerate(txt.splitlines()):
+                m = mod.basename_rx(base).search(ln)
+                if m:
+                    size, sha = mod._cell_identity(txt.splitlines(), i, m.end())
+                    if size or sha:
+                        return (size, sha), "basename"
+        return ident, status
+
+    mod.citation_identity = loose
+    css = (".demo{color:#123456}\n" * 40)
+    txt = ("| Accent | `#123456` | 3 declarations — `.card:hover` |\n\n"
+           "| stylesheet | `https://preview.colorlib.com/theme/demo/"
+           "fonts/icomoon/style.css` | HTTP 200 · 1,200 B |\n"
+           "Tokens extracted from `css/style.css` (846 lines).\n")
+    rec, *_ = run(txt, mod=mod, css_extra=FILLER,
+                  pages={DEMO + "fonts/icomoon/style.css":
+                         (".icon{color:#00ff00}" * 60).encode()})
+    return "STALE-SKIN" in buckets(rec)[1]
+
+
+def c34_size_only_and_sha_citation_merge() -> bool:
+    """The research line (size only) and the identity table (size + sha) agree."""
+    body = (".demo{color:#123456}\n" * 40).encode()
+    sha = hashlib.sha256(body).hexdigest()[:12]
+    txt = ("| Accent | `#123456` | 3 declarations — `.demo` |\n\n"
+           "> Sheet: `https://preview.colorlib.com/theme/demo/css/special.css` "
+           "(%d B).\n\n"
+           "| stylesheet | `https://preview.colorlib.com/theme/demo/css/special.css` "
+           "| HTTP 200 · %d B · sha256 `%s` |\n" % (len(body), len(body), sha))
+    rec, *_ = run(txt, pages={DEMO + "css/special.css": body})
+    fl, nt = buckets(rec)
+    return fl == [] and "STALE-SKIN" not in nt and "CITATION-AMBIGUOUS" not in nt
+
+
+def c34b_gate_size_sha_conflict() -> bool:
+    """GATE: two DIFFERENT sizes for one path is a conflict, not a merge."""
+    body = (".demo{color:#123456}\n" * 40).encode()
+    sha = hashlib.sha256(body).hexdigest()[:12]
+    txt = ("| Accent | `#123456` | 3 declarations — `.demo` |\n\n"
+           "> Sheet: `https://preview.colorlib.com/theme/demo/css/special.css` "
+           "(1,234 B).\n\n"
+           "| stylesheet | `https://preview.colorlib.com/theme/demo/css/special.css` "
+           "| HTTP 200 · %d B · sha256 `%s` |\n" % (len(body), sha))
+    rec, *_ = run(txt, pages={DEMO + "css/special.css": body})
+    return "CITATION-AMBIGUOUS" in buckets(rec)[1]
+
+
+
 def collect():
     case("c01 count matches -> no note", c01_match)
     case("c02 count differs -> COUNT-SKEW note", c02_skew)
@@ -641,6 +788,12 @@ def collect():
     case("c30 LF hash basis is a note, not drift", c30_lf_basis_is_not_drift)
     case("c30b GATE LF basis probe", c30b_gate_lf_basis, gate=True)
     case("c31 LF basis does not hide real drift", c31_lf_basis_does_not_hide_real_drift)
+    case("c32 sibling citations bind per path", c32_sibling_citations_bind_per_path)
+    case("c32b GATE basename-first binder", c32b_gate_basename_first_citation, gate=True)
+    case("c33 bare basename is not a path citation", c33_bare_basename_is_not_a_path_citation)
+    case("c33b GATE dirname-bound basename", c33b_gate_dirname_bound_basename, gate=True)
+    case("c34 size-only and sha citation merge", c34_size_only_and_sha_citation_merge)
+    case("c34b GATE size/sha conflict", c34b_gate_size_sha_conflict, gate=True)
 
 
 def main():

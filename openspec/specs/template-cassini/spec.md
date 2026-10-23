@@ -18,7 +18,7 @@ Cassini is a photography studio website template featuring a full-screen hero im
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/cassi/ (HTTP 200, 8,565 B, fetched 2026-10-23) and its theme stylesheet `theme/cassi/css/style.min.css` (89,402 B, sha256 `d2422bb6c791…`).
+https://preview.colorlib.com/theme/cassi/ (HTTP 200, 8,565 B, fetched 2026-10-23) and its theme stylesheet `theme/cassi/css/style.min.css` (89,402 B, sha256 `621ca40d6621…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

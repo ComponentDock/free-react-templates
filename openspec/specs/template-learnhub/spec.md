@@ -10,7 +10,7 @@ Provide a free React template for online education platforms, featuring course l
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/etrain/ (HTTP 200, 43,695 B, fetched 2026-10-23) and its theme stylesheet `theme/etrain/css/style.min.css` (98,896 B, sha256 `4b2d68f0590c…`).
+https://preview.colorlib.com/theme/etrain/ (HTTP 200, 43,695 B, fetched 2026-10-23) and its theme stylesheet `theme/etrain/css/style.min.css` (98,896 B, sha256 `248497908046…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |
