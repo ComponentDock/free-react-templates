@@ -202,7 +202,7 @@ def spec_brand_claims(txt: str):
             h = norm("#" + h)
             if h in SOCIAL_BRAND or not is_chromatic(h) or chroma(h) < BRAND_CHROMA:
                 continue
-            out.append((i, h, role, decls, usage, s[:150]))
+            out.append((i, h, role, decls, usage, s))
     return out
 
 
@@ -223,6 +223,64 @@ def decls_of(line: str):
     """
     m = DECLS_RX.search(line)
     return int(m.group(1)) if m else None
+
+
+# --- claim scope: a row can disqualify ITSELF in its own words -------------
+# The claim extractor reads a role label; the row's evidence text often says
+# the colour is not a design token at all.  Measured on 2026-10-23 (153
+# UNSHIPPED): a framework's own default, a base rule the final one overrides,
+# an explicitly unused gradient stop, a diagnostic state colour, and a debt the
+# prep itself already adjudicated were all being reported as "the app is
+# missing the brand".  Each bucket below names the cue that dismisses it, and
+# every cue must be read from THIS row — never from elsewhere in the file.
+EVIDENCE_RX = (
+    ("EVIDENCE-VENDOR", re.compile(
+        r"(?i)(not the design|not the theme accent|bootstrap default|"
+        r"framework defaults?|vendor block|stock bs\d?|shared ui-kit|"
+        r"fully overridden|effectively unused|do not reproduce)")),
+    ("EVIDENCE-UNUSED", re.compile(r"(?i)(unused standalone|gradient midpoint)")),
+    ("EVIDENCE-STATE", re.compile(
+        r"(?i)\b(loader|spinner|alert-box|alert-validate|aria-invalid|"
+        r"::selection)\b")),
+    ("APP-DECISION", re.compile(
+        r"(?i)(recorded as a deliberate|deliberate (?:brighten|deviation)|"
+        r"deliberately deviates?)")),
+)
+# an alternative pair in ONE cell: `#a` / `#b`, `~#a` or `#b`.  The app may
+# ship either member, so painting the partner covers the row.
+ALT_RX = re.compile(r"~?`?#[0-9a-fA-F]{3,6}`?[\s`*]*(?:/|\bor\b)[\s`*]~?`?#[0-9a-fA-F]{3,6}`?")
+# the framework's own version remap: a BS4 default colour whose BS5 equivalent
+# is exactly what the app ships is a framework upgrade, not a replaced brand
+BS5_OF = {"#007bff": "#0d6efd", "#28a745": "#198754",
+          "#17a2b8": "#0dcaf0", "#e83e8c": "#d63384"}
+# every bucket that means "this row was dismissed, not the app"
+DISQUALIFIED = frozenset({"EVIDENCE-VENDOR", "EVIDENCE-UNUSED", "EVIDENCE-STATE",
+                          "APP-DECISION", "OR-COVERED", "FRAMEWORK-REMAP"})
+
+
+def evidence_kind(line: str):
+    """The bucket that dismisses this row, or None.
+
+    Scoped to the row: an app that ships a vendor hex IS a defect when the row
+    claims it as the design's brand; it is not when the row itself says the hex
+    comes from the vendor block.
+    """
+    for kind, rx in EVIDENCE_RX:
+        m = rx.search(line)
+        if m:
+            return kind, m.group(0).strip()
+    return None
+
+
+def alt_partners(line: str, h: str):
+    """Every colour paired with `h` by an `/` or `or` alternative in the row."""
+    out = []
+    for m in ALT_RX.finditer(line):
+        hexes = [norm("#" + x) for x in HEX_RX.findall(m.group(0))]
+        if h in hexes:
+            out.extend(x for x in hexes if x != h)
+    return out
+
 
 
 def usage_of(line: str) -> str:
@@ -330,17 +388,45 @@ def audit_spec(root: str, ref: str, path: str, args):
     blob = " ".join(hexes)
     uncovered = 0
     seen = set()
+    dismissed = set()
     for line_no, h, role, decls, usage, ctx in claims:
         if h in hexes or painted(blob, h):
             continue
         if h in seen:
             continue                      # one row per app+colour
+        # a row that disqualifies itself is not a claim about the design.
+        # Checked BEFORE `seen` so a second, honest row for the same hex in the
+        # same spec is still evaluated.
+        kind = evidence_kind(ctx)
+        if kind:
+            if h in dismissed:
+                continue
+            dismissed.add(h)
+            notes.append((name, kind[0],
+                          f"spec L{line_no} {role} {h}: row says \"{kind[1]}\""))
+            continue
+        # `#a` / `#b` is ONE alternative claim: the app may ship either member
+        alts = alt_partners(ctx, h)
+        hit_alt = next((a for a in alts if a in hexes or painted(blob, a)), None)
+        if hit_alt:
+            if h in dismissed:
+                continue
+            dismissed.add(h)
+            notes.append((name, "OR-COVERED",
+                          f"spec L{line_no} {role} {h}: app paints the row's "
+                          f"alternative {hit_alt}"))
+            continue
         seen.add(h)
         near, d = nearest(h, chrom)
         uncovered += 1
         if d <= TOL:
             notes.append((name, "APPROX",
                           f"spec L{line_no} {role} {h} ~ app {near} (Δ{d})"))
+            continue
+        if BS5_OF.get(h) == near:
+            notes.append((name, "FRAMEWORK-REMAP",
+                          f"spec L{line_no} {role} {h}: app ships the BS5 "
+                          f"equivalent {near}"))
             continue
         if VARIANT_RX.search(usage):
             notes.append((name, "APPROX-VARIANT",
@@ -410,7 +496,7 @@ def render_md(flags, notes, rows, args, counts=None) -> str:
     L = []
     L.append("# App-side fidelity delta — does each app paint the measured brand?\n")
     L.append("```sh\npython3 scripts/verify-app-fidelity.py --md docs/app-fidelity-delta.md\n"
-             "python3 scripts/verify-app-fidelity-controls.py   # 19/19\n```\n")
+             "python3 scripts/verify-app-fidelity-controls.py   # 27/27\n```\n")
     L.append("Generated by `scripts/verify-app-fidelity.py` (offline, read-only; it\n"
              "never edits `apps/`). Every other token axis compares a spec against\n"
              "its live reference sheet. This one compares the shipped app's own\n"
@@ -427,6 +513,15 @@ def render_md(flags, notes, rows, args, counts=None) -> str:
              "  `brand|primary|accent|cta|secondary` (variant labels such as `hover`,\n"
              "  `scale`, `tint` excluded; evidence fences, sibling sentences,\n"
              "  re-valuation arrows and rebuilt-sheet drift notes skipped).\n"
+             "* **Claim scope** — a row can disqualify itself in its own words,\n"
+             "  measured on 2026-10-23: a framework's own default (`stock BS5\n"
+             "  --bs-primary in the vendor block (not the design)`), a base rule the\n"
+             "  final one overrides (`fully overridden … do NOT reproduce`), an\n"
+             "  explicitly `unused standalone` gradient stop, a diagnostic state\n"
+             "  (`loader`, `.alert-box--error`, `[aria-invalid]`), and a debt the\n"
+             "  prep already adjudicated (`recorded as a deliberate …`). Those are\n"
+             "  notes, never flags: the app is right to omit them. So is a row that\n"
+             "  states alternatives (`#a` / `#b`) when the app paints either member.\n"
              "* **App side** — every hex in `apps/<name>/src/**` (`.css`, `.tsx`,\n"
              "  `.ts`, `.html`), matched in hex or `rgb()/rgba()` notation.\n"
              "* **UNSHIPPED** — a measured brand colour with no counterpart in the\n"
@@ -446,6 +541,12 @@ def render_md(flags, notes, rows, args, counts=None) -> str:
              f"claims / **{apps}** apps | measured brand colour absent from the app |")
     for k, note in (("APPROX", "near neighbour painted (Δ ≤ 24)"),
                     ("COVERED", "every measured brand-role claim painted"),
+                    ("EVIDENCE-VENDOR", "row itself says the hex is the vendor's, not the design's"),
+                    ("EVIDENCE-UNUSED", "row itself says the colour is unused standalone"),
+                    ("EVIDENCE-STATE", "loader / validation / error state, not a brand hue"),
+                    ("APP-DECISION", "the prep already records the app's deliberate deviation"),
+                    ("OR-COVERED", "row states alternatives; the app paints the partner"),
+                    ("FRAMEWORK-REMAP", "app ships the BS5 equivalent of a BS4 default"),
                     ("NO-TOKEN", "app src holds no chromatic hex"),
                     ("NO-CLAIM", "spec states no brand-role colour"),
                     ("ALIAS-SKIP", "alias prep, never built from"),
@@ -465,10 +566,10 @@ def render_md(flags, notes, rows, args, counts=None) -> str:
         L.append(f"| 50–89 | {band.get('50–89', 0)} | a neighbouring colour family |")
         L.append(f"| 90+ | {band.get('90+', 0)} | a different colour: the design's accent was replaced |")
         L.append("")
-        L.append("A colour that recurs across apps is one shortcut, not N mistakes: the\n"
-                 f"most repeated here is `{collections.Counter(r['hex'] for r in claim_rows).most_common(1)[0][0]}`,\n"
-                 "which several apps replaced with a different blue instead of the measured\n"
-                 "one.\n")
+        top_hex, top_n = collections.Counter(r['hex'] for r in claim_rows).most_common(1)[0]
+        L.append(f"A colour that recurs across apps is one shortcut, not N mistakes: the\n"
+                 f"most repeated here is `{top_hex}` ({top_n} apps), and each app replaced\n"
+                 f"it with a hue of its own choosing.\n")
     byapp = collections.Counter(r["app"] for r in rows if r["line"])
     if byapp:
         L.append("## Worst apps\n")
@@ -496,6 +597,16 @@ def render_md(flags, notes, rows, args, counts=None) -> str:
                 L.append(f"| `{name}` | `{m.group(1)}` | `{m.group(2)}` | "
                          f"`{m.group(3)}` | {m.group(4)} |")
         L.append("")
+    disq = [n for n in notes if n[1] in DISQUALIFIED]
+    if disq:
+        L.append("## Claims dismissed by their own evidence\n")
+        L.append("A brand-role row whose text says the colour is not this design's\n"
+                 "token is a note, not app debt — the app is right to omit it. Listed\n"
+                 "so the dismissal is auditable, never silent.\n")
+        L.append("| app | bucket | row |\n| --- | --- | --- |")
+        for name, kind, detail in disq:
+            L.append(f"| `{name}` | {kind} | {detail.replace('|', '/')[:150]} |")
+        L.append("")
     common = collections.Counter(r["hex"] for r in rows if r["line"])
     if common:
         L.append("## Systemic gaps\n")
@@ -513,7 +624,11 @@ def render_md(flags, notes, rows, args, counts=None) -> str:
              "  spec (`post-ship delta` line naming both values) so the next audit\n"
              "  reads it as adjudicated, not as drift.\n"
              "* An `APPROX` row needs no change: it records how far the app's hue\n"
-             "  sits from the measured one.\n")
+             "  sits from the measured one.\n"
+             "* A row listed under **Claims dismissed by their own evidence** needs\n"
+             "  no change either: its text already says the colour is the vendor's,\n"
+             "  unused, a state, an alternative the app ships, or a decision the\n"
+             "  prep recorded. Re-open it only if the row's *text* is wrong.\n")
     return "\n".join(L) + "\n"
 
 

@@ -280,6 +280,95 @@ def main() -> int:
         return (not k and not n, f"flags={sorted(k)} notes={sorted(n)}")
     case("spec without apps/<name> → nothing to compare", c19)
 
+    # 20 — GATE: a row that says the hex is the vendor's is not a claim
+    def c20(tmp):
+        extra = "| Bootstrap primary | `#0d6efd` | stock BS5 `--bs-primary` in the vendor block (not the design) |"
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        mut = mutate(tmp, "        kind = evidence_kind(ctx)\n        if kind:",
+                     "        kind = None\n        if kind:")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra), mut)
+        return (not k and "EVIDENCE-VENDOR" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: vendor-disclaimed row → EVIDENCE-VENDOR", c20)
+
+    # 21 — GATE: a validation/loader state colour is not a brand hue
+    def c21(tmp):
+        extra = "| Accent red | `#c80000` | 3 declarations — `.alert-validate::after` |"
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        mut = mutate(tmp, "        kind = evidence_kind(ctx)\n        if kind:",
+                     "        kind = None\n        if kind:")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra), mut)
+        return (not k and "EVIDENCE-STATE" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: loader/alert state colour → EVIDENCE-STATE", c21)
+
+    # 22 — GATE: an explicitly unused gradient stop is not a token
+    def c22(tmp):
+        extra = ("| brand-purple | `#a64bf4` | Gradient midpoint (unused standalone, "
+                 "part of gradient definition) |")
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        mut = mutate(tmp, "        kind = evidence_kind(ctx)\n        if kind:",
+                     "        kind = None\n        if kind:")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra), mut)
+        return (not k and "EVIDENCE-UNUSED" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: `unused standalone` row → EVIDENCE-UNUSED", c22)
+
+    # 23 — GATE: a debt the prep already adjudicated is recorded, not re-flagged
+    def c23(tmp):
+        extra = ("| Primary | `#0c786c` | app `#1089ff` is a brighter cyan than any "
+                 "measured pixel. Recorded as a deliberate brightening |")
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        mut = mutate(tmp, "        kind = evidence_kind(ctx)\n        if kind:",
+                     "        kind = None\n        if kind:")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra), mut)
+        return (not k and "APP-DECISION" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: adjudicated app deviation → APP-DECISION", c23)
+
+    # 24 — GATE: `#a` / `#b` is one claim; the app may ship the partner
+    def c24(tmp):
+        extra = "| Accent | `#0f7a3d` / `#12996a` | links, submit button |"
+        alt_css = "\n  --color-alt: #12996a;\n"
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra,
+                               app_css_extra=alt_css))
+        mut = mutate(tmp, "        alts = alt_partners(ctx, h)", "        alts = []")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra,
+                                   app_css_extra=alt_css), mut)
+        return (not k and "OR-COVERED" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: alternative pair, partner painted → OR-COVERED", c24)
+
+    # 25 — the OR rule is not a blanket silencer: neither member painted flags
+    def c25(tmp):
+        extra = "| Accent | `#0f7a3d` / `#12996a` | links, submit button |"
+        k, _n, _d = run(fixture(tmp, brand="#1089ff", app_brand="#c94e28", extra=extra))
+        return ("UNSHIPPED" in k, f"flags={sorted(k)}")
+    case("alternative pair with NEITHER member painted still flags", c25)
+
+    # 26 — GATE: the BS5 equivalent of a BS4 default is a framework upgrade
+    def c26(tmp):
+        extra = "| Primary | `#28a745` | body links |"
+        bs5_css = "\n  --color-success: #198754;\n"
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra,
+                               app_css_extra=bs5_css))
+        mut = mutate(tmp, "        if BS5_OF.get(h) == near:",
+                     "        if False and BS5_OF.get(h) == near:")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra,
+                                   app_css_extra=bs5_css), mut)
+        return (not k and "FRAMEWORK-REMAP" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: BS4 default → BS5 equivalent → FRAMEWORK-REMAP", c26)
+
+    # 27 — the dismissing cue must be on THIS row, not elsewhere in the spec
+    def c27(tmp):
+        extra = ("| Bootstrap primary | `#0d6efd` | stock BS5 in the vendor block (not the design) |\n"
+                 "| Brand accent | `#d2447a` | primary buttons |")
+        k, _n, d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        flagged = {f[2] for f in d["flags"]}
+        return (flagged == {"#d2447a"}, f"flags={sorted(flagged)}")
+    case("a vendor note on another row does not silence the brand row", c27)
+
     okN = sum(1 for ok, _n, _d in cases if ok)
     for ok, name, detail in cases:
         print(f"{'PASS' if ok else 'FAIL'}  {name}  ({detail})")
