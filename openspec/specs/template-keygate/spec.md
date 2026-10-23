@@ -155,7 +155,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] White full-page background with Lato font
 - [ ] Page heading "Login #03" centered, black, 28px

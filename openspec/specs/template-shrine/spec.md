@@ -200,7 +200,7 @@ Background:
 - **AND** the navbar should show a hamburger menu
 - **AND** the hero text should be readable on small screens
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Countdown top bar with timer updates
 - [ ] Red coral navbar with logo, nav links, Donate button

@@ -190,7 +190,7 @@ Examples:
 - **AND** service cards stack vertically
 - **AND** project grid adjusts to fewer columns
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order (Navbar → Hero → Features → About/Stats → Portfolio → Services → Why Choose Us → Testimonials → Blog → Footer)
 - [ ] Brand color `#ffd626` used for CTAs and accents (via Tailwind theme token)

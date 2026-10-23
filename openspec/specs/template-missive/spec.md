@@ -116,7 +116,7 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 - **WHEN** the user clicks "Send"
 - **THEN** the form should submit successfully
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with purple gradient background
 - [ ] White card is centered with correct two-column layout

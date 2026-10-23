@@ -162,7 +162,7 @@ Feature: Main Content
 - **GIVEN** the sidebar is open
 - **THEN** the main content area is shifted 300px to the right
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar slides in/out with smooth 1s cubic-bezier transition
 - [ ] Burger icon animates to X when sidebar is open

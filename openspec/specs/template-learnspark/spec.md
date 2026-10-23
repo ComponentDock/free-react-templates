@@ -239,7 +239,7 @@ template focused on online courses, instructors, and enrollment.
 - **AND** multiple columns: about, quick links, support
 - **AND** a "Made with Component Dock" link linking to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky on scroll, mobile hamburger, correct nav links, CTA button
 - [ ] Hero: headline text, auto-sliding, CTA buttons, slide dots

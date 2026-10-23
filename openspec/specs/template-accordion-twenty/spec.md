@@ -75,7 +75,7 @@ Recreation of ColorLib Accordion 20 (`https://colorlib.com/wp/template/accordion
 - **GIVEN** the page is scrolled to the bottom
 - **THEN** the footer displays copyright information and a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated with `npm run spec:validate`
 - [ ] All sections match ColorLib Accordion 20 reference structure

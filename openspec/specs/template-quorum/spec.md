@@ -185,7 +185,7 @@ Extracted from the live preview CSS (`css/style.css`) and inline HTML styles:
 - **THEN** a link to "https://www.componentdock.com/" is present
 - **AND** the link text references "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: dark bg, brand "Quorum", all nav links, CTA link
 - [ ] Hero: full-height, background image with overlay, heading, subtitle, CTA button

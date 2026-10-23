@@ -137,7 +137,7 @@ Feature: Mobile responsive sidebar
 - **WHEN** the user clicks the hamburger toggle button
 - **THEN** the sidebar slides in from the left
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar renders with logo, nav links with icons, newsletter form, footer
 - [ ] Toggle button opens/closes sidebar with smooth 0.3s transition

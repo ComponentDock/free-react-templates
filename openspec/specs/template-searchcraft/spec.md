@@ -188,7 +188,7 @@ Tests: Vitest + Testing Library, 100% coverage enforced.
 - **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are visible
 - **AND** a "Component Dock" attribution link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections rendered in correct order
 - [ ] Header: top bar + navbar with dropdown

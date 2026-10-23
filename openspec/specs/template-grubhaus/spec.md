@@ -150,7 +150,7 @@ Recreation of ColorLib's **Foodbar** template as a React 19 + Vite + Tailwind 4 
 - **AND** card backgrounds use dark tones
 - **AND** Brand Red (#f42f2c) accents remain visible on buttons and links
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated (`npm run spec:validate` passes)
 - [ ] All Gherkin scenarios are implementable

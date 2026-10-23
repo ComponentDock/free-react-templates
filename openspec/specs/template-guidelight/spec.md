@@ -199,7 +199,7 @@ Extracted from live preview CSS (`css/style.css`):
 - **GIVEN** the page loads
 - **THEN** the footer background is dark (#25262a)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections render in correct order
 - [ ] Design tokens match: Roboto font, #3a4971 primary, #bbcdde accent, #25262a footer

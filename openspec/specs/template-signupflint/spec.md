@@ -219,7 +219,7 @@ The template SHALL be responsive and work on both desktop and mobile viewports.
 - **WHEN** the page loads
 - **THEN** the card takes the full viewport width with appropriate padding
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered white card on light gray background
 - [ ] "Sign Up #01" title displayed above card

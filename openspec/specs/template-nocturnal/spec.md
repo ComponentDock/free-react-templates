@@ -86,7 +86,7 @@
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation passes (`npm run typecheck`).
 - [ ] Linting passes without errors (`npm run lint`).

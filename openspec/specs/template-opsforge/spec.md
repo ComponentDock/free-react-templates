@@ -134,7 +134,7 @@ The template is a clean, modern digital services/agency layout with:
 - **AND** social icons are displayed (Twitter, Facebook, Instagram, Dribbble, LinkedIn)
 - **AND** a copyright line with "Component Dock" link replaces the original attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with logo and all 6 nav links
 - [ ] Navbar becomes sticky on scroll with shadow

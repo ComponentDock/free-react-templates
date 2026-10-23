@@ -218,7 +218,7 @@ The template SHALL include a footer linking to Component Dock.
 - **AND** the link text reads "More templates at Component Dock"
 - **AND** the link opens in a new tab
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-column split layout (social left, form right) on desktop
 - [ ] Light blue-gray (#f8fafb) full-viewport background

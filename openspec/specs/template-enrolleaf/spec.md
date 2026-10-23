@@ -205,7 +205,7 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders full-viewport split-screen layout
 - [ ] Left column: white background, centered form content
@@ -223,7 +223,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Colors match design tokens
 - [ ] No references to ColorLib in app code
 - [ ] Footer links to Component Dock
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

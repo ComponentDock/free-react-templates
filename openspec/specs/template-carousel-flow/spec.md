@@ -39,7 +39,7 @@ As a visitor, I want to browse products and items in an interactive carousel so 
 - **WHEN** the footer is rendered
 - **THEN** it includes a link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully without TypeScript or lint errors.
 - [ ] All sections match the 1:1 structure of ColorLib carousel-12.

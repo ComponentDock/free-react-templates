@@ -42,7 +42,7 @@ As a user, I want to view an interactive calendar month grid, select dates, view
 - **THEN** it displays time slots, event titles, and categories with appropriate badges
 - **AND** the footer links to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App renders correctly with responsive layout
 - [ ] Tailwind CSS 4 theme tokens configured

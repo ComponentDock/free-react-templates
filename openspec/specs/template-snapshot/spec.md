@@ -149,7 +149,7 @@ The Credo template is a clean, warm photographer portfolio:
 - **AND** social media icons (Twitter, Facebook, Instagram, Dribbble, LinkedIn) are shown
 - **AND** a copyright line with "Component Dock" link is displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections present in correct order
 - [ ] Nunito font applied to all text

@@ -154,7 +154,7 @@ Dock (`https://www.componentdock.com/`) instead.
 3. **Portfolio Section** — filter tabs + masonry-style grid (2-col + 1-col mix), 600px item height, hover overlay with "+ See Project"
 4. **Footer** — centered "Let's work together" CTA, "Get in touch" button, social icon row, copyright with Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render (header, intro, portfolio, footer)
 - [ ] Font: Josefin Sans loaded from Google Fonts

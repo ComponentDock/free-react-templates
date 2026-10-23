@@ -42,7 +42,7 @@ As a visitor, I want to explore interactive accordion sections with smooth expan
 - **THEN** the footer displays copyright information and a link to `https://www.componentdock.com/` ("Component Dock")
 - **AND** no mention of ColorLib appears in the app code
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes
 - [ ] Typecheck, lint, unit tests, and build pass successfully

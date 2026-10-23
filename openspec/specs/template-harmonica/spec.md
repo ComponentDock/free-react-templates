@@ -37,7 +37,7 @@ As a site visitor, I want to explore restaurant specialties categorized in accor
 - **WHEN** they view the footer
 - **THEN** there is a link pointing to `https://www.componentdock.com/` with branded text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validates successfully (`npm run spec:validate`)
 - [ ] App builds cleanly (`npm run build`)

@@ -175,7 +175,7 @@ Background:
 - **AND** headings should use the "Lora" serif font
 - **AND** body text should use the "Roboto" sans-serif font
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Navbar: dark bg, logo, 8 nav links, search form

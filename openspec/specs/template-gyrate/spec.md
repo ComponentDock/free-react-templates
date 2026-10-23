@@ -76,7 +76,7 @@ As a visitor, I want a footer containing standard links and the mandatory Compon
 - **GIVEN** the page footer is rendered
 - **THEN** it contains copyright info, social links, and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App workspace `@free-react-templates/gyrate` correctly created in `apps/gyrate`.
 - [ ] TypeScript strict checking passes without errors.

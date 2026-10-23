@@ -150,7 +150,7 @@ Background:
 - **AND** images have alt text
 - **AND** the form has proper labels or placeholders
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: brand text, nav links, dropdown, CTA button, transparent on desktop
 - [ ] Hero slider: full-viewport, background images, centered text, outline button, multi-slide

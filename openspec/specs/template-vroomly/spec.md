@@ -137,7 +137,7 @@ Extracted from the live preview CSS (`css/main.css`):
 - **THEN** the background transitions from gold (#fab700) to transparent
 - **AND** the border and text color transition to gold (#fab700)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Navbar is sticky on scroll

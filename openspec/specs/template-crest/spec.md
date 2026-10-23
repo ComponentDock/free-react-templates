@@ -139,7 +139,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict check passes (`npm run typecheck` or per-app gate).
 - [ ] Tailwind CSS 4 compiles without error (`@theme` tokens configured).

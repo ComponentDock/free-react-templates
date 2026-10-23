@@ -124,7 +124,7 @@ Feature: Bracify dental clinic website
 - **AND** it shows a copyright line
 - **AND** the footer links to Component Dock (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order
 - [ ] Brand color `#51eaea` is used for buttons, active nav, and accents

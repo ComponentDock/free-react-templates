@@ -137,7 +137,7 @@ Recreation of ColorLib's **Medi 2** template as a React 19 + Vite + Tailwind 4 +
 - **AND** a copyright notice is present
 - **AND** a "Component Dock" link is included
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the original template structure and order
 - [ ] Brand blue (#175DFE) is used consistently for navbar and accents

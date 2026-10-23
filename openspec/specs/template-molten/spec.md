@@ -117,7 +117,7 @@ Recreation of the ColorLib **Inds** template as a React 19 + Vite + Tailwind CSS
 - **GIVEN** the newsletter renders, WHEN the user sees it, THEN an email input and submit button are displayed
 - **GIVEN** the footer bottom renders, WHEN the user sees it, THEN a copyright line and social media icons are shown, with a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App renders at `apps/molten/` with package `@free-react-templates/molten`
 - [ ] All 11 sections present in correct order

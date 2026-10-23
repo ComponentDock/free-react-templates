@@ -155,7 +155,7 @@ Recreation of ColorLib "Modal 08" — an email confirmation notification modal w
 - **THEN** the modal has `role="dialog"` and `aria-labelledby` pointing to the heading
 - **AND** the close button has `aria-label="Close"`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `openspec/specs/template-mailbliss/spec.md` exists with Gherkin scenarios
 - [ ] `docs/templates/mailbliss/tasks.md` exists with section breakdown

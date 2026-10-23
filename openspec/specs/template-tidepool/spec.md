@@ -170,7 +170,7 @@ Feature: Tidepool UI Kit Showcase
 - **THEN** text inputs, selects, checkboxes, radio buttons, and textareas are displayed
 - **AND** form inputs are focusable and accept user input
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 13 sections render in correct order matching source `index.html`
 - [ ] Color scheme grid uses exact brand hex values from CSS tokens

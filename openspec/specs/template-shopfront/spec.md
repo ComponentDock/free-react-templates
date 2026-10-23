@@ -150,7 +150,7 @@ Background:
 - **WHEN** the viewport width is less than 768px
 - **THEN** product grids should stack to 2 columns
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order: Top Header → Main Header → Category Nav → Hero Slider → Category Banners → Deals of the Day → Latest Products → Picked For You → Footer
 - [ ] Design tokens match: primary #F8694A, header #30323A, Hind font, no border-radius buttons

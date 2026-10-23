@@ -183,7 +183,7 @@ Recreation of ColorLib "Ilene Berg" as a React 19 + Vite + Tailwind CSS 4 + Type
 - **AND** the project carousel items stack vertically
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header renders with logo and nav links
 - [ ] Hero banner is fullscreen with purple overlay and centered content

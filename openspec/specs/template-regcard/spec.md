@@ -139,7 +139,7 @@ The footer SHALL display a link to ComponentDock.
 - **WHEN** I scroll to the bottom of the page
 - **THEN** I see a footer with a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Light blue page background (#d6eaf8)
 - [ ] Centered white card with shadow and rounded corners

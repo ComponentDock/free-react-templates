@@ -196,7 +196,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 4 solid icon buttons render with correct colors and icons
 - [ ] All 4 outline buttons render with correct border colors

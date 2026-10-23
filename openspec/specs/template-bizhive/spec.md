@@ -142,7 +142,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** multi-column layouts stack to single column
 - **AND** all text remains readable and buttons are tap-friendly
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections from the ColorLib source are present in order
 - [ ] Design tokens match: #28AE60 green, Poppins font, dark sections

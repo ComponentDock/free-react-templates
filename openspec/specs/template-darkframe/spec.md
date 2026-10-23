@@ -171,7 +171,7 @@ Feature: Footer
 - **THEN** a copyright line is displayed
 - **AND** a "Made with Component Dock" link points to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar is fixed-left 250px on desktop, collapses to top bar on mobile
 - [ ] Hero is full-viewport with dark overlay, Oswald heading, pill CTA button

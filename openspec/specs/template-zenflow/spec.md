@@ -188,7 +188,7 @@ Extracted from the live preview CSS (`style.css`):
 - **AND** a copyright bar is at the bottom
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 14 sections render in correct DOM order
 - [ ] Navbar has correct links and responsive menu

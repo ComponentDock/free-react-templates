@@ -87,7 +87,7 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 - **GIVEN** the page footer is rendered
 - **THEN** it contains a link to `https://www.componentdock.com/` labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Vite + React 19 + Tailwind CSS 4 workspace configured at `apps/btnpeak`
 - [ ] Package name `@free-react-templates/btnpeak`

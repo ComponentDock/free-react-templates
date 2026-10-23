@@ -41,7 +41,7 @@ Recreation of ColorLib [Accordion 05](https://colorlib.com/wp/template/accordion
 - **GIVEN** the user reaches the bottom of the page
 - **THEN** they should see the copyright and a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

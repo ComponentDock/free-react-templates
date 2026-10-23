@@ -121,7 +121,7 @@ Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registrat
 - **AND** the tab order follows logical field sequence
 - **AND** the "CONTINUE" button is reachable via Tab/Enter
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Pastel gradient background renders (blue-to-pink vertical)
 - [ ] Background watermark text "TELL US ABOUT YOURSELF" is visible but low-opacity

@@ -127,7 +127,7 @@ Extracted from the live demo CSS (`css/style.css`) at
 - **THEN** the footer should contain a link to https://www.componentdock.com/
 - **AND** the link text should mention "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with dark full-viewport background
 - [ ] Centered card with max-width 900px

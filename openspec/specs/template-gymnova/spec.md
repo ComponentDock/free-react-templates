@@ -125,7 +125,7 @@ Background:
 - **AND** a newsletter subscription form is present
 - **AND** a "Component Dock" link is in the footer
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Preview DOM structure matches section order above
 - [ ] Brand color `#FF1414` used for all CTAs

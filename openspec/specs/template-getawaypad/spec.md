@@ -172,7 +172,7 @@ The template SHALL display a 4-column footer with logo, services, tag cloud, sub
 - **WHEN** the footer is visible
 - **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections present in correct order matching preview DOM
 - [ ] Brand color `#fd7792` applied to buttons, stars, price, icon circles

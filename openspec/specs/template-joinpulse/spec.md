@@ -175,7 +175,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **THEN** a link to "https://www.componentdock.com/" is present
 - **AND** the link text mentions "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split layout renders correctly (social | divider | form)
 - [ ] Social buttons have correct brand colors (Facebook, Twitter, Google)

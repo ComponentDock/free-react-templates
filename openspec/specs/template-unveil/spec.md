@@ -112,7 +112,7 @@ Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`, p
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** the newsletter form and footer are displayed, including the "Component Dock" link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes
 - [ ] Vitest tests cover all sections with 100% line/branch/function coverage

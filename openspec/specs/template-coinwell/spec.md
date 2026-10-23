@@ -162,7 +162,7 @@ Extracted from the live preview stylesheet (style.css at preview.colorlib.com/th
 - **AND** social icons for Facebook, Twitter, Dribbble, Behance, Instagram are visible
 - **AND** the bottom footer shows copyright text with Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches DOM: Top Header → Navbar → Hero → Features → About → Currency Calculator → Blog & Prices → Newsletter → Footer → Bottom Footer
 - [ ] Color tokens match: navy (#0d104d), blue (#28408b), gold (#ffaf02), dark (#292929)

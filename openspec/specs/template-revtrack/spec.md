@@ -180,7 +180,7 @@
 - **GIVEN** the footer is rendered
 - **THEN** Quick Links include: About Us, Testimonials, Terms of Service, Privacy, Contact Us
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: brand text visible, all nav links present, active state uses #0779e4
 - [ ] Navbar: responsive hamburger menu on mobile

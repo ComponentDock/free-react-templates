@@ -167,7 +167,7 @@ Recreation of ColorLib "Corporate" template as a React 19 + Vite + Tailwind 4 + 
 - **AND** the contact section stacks vertically
 - **AND** footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, 6 nav links, sticky on scroll
 - [ ] Hero: full-screen bg image, overlay, subtitle, heading, "Discover Now" pill button

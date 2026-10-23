@@ -221,7 +221,7 @@ Name mapping: `apps/emerge` recreates ColorLib "Unfold".
 - **GIVEN** I am in light mode, When I look at the hero button, Then it stays
   white text (not dark) for contrast over the hero image.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Navbar: fixed, centered logo, split nav links, mobile hamburger, dark mode toggle

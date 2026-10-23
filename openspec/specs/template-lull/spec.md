@@ -92,7 +92,7 @@ Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
   - Scenario: User checks footer links and finds Component Dock attribution.
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict check passes (`npm run typecheck` or per-app gate).
 - [ ] Tailwind CSS 4 compiles without error (`@theme` tokens configured).

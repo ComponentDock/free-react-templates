@@ -179,7 +179,7 @@ Feature: Site footer
 - **AND** a footer bar shows app store badges and bottom nav links (DPA, Terms, Privacy)
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct order
 - [ ] Design tokens (colors, fonts, radii) match extracted values

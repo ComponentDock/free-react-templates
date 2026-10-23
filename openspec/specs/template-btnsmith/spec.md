@@ -67,7 +67,7 @@ Recreation of ColorLib Bootstrap Buttons 02 (`https://colorlib.com/wp/template/b
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 7 button categories (Standard, Dropdown, Groups, Checkboxes, Radios, Slide, Social) rendered faithfully.
 - [ ] Tailwind CSS 4 theme tokens configured correctly for primary, secondary, tertiary, and quaternary colors.

@@ -236,7 +236,7 @@ Feature: Squeakly Footer
 - **GIVEN** the footer is visible
 - **THEN** the copyright text links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches live preview 1:1 (14 sections)
 - [ ] Brand primary color `#225ae1` used for buttons and accents

@@ -175,7 +175,7 @@ Extracted from the live preview CSS (`css/style.css`) and inline styles.
 - **GIVEN** the About Us column is visible
 - **THEN** social icons for Facebook, Instagram, Twitter, and LinkedIn are displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero displays full-viewport background image with search form overlay
 - [ ] Search form has 4 fields: Select Type dropdown, Pick up, Drop off, Search Now

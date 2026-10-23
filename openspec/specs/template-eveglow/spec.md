@@ -157,7 +157,7 @@ content, countdown timer, CTA button, and social icons.
 - **AND** the footer text reads "Component Dock"
 - **AND** no ColorLib branding or attribution is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Background image covers full viewport with dark overlay
 - [ ] Title "Coming Soon" in Poppins, white, centered, 3.5em

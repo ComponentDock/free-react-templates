@@ -127,7 +127,7 @@ Recreation of ColorLib **AutoMotive** (`https://colorlib.com/wp/template/automot
 - **GIVEN** the user views the footer
 - **THEN** they should see a link to `https://www.componentdock.com/` branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder created at `apps/garagely` with valid `package.json` (`@free-react-templates/garagely`)
 - [ ] `vite.config.ts` includes `injectUiSource()` helper

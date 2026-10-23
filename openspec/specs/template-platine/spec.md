@@ -226,7 +226,7 @@ Feature: Footer
 7. `Reservation.tsx` — dark bg, form (date, time, persons, name, message, submit), food image beside
 8. `Footer.tsx` — dark bg, brand logo, copyright, Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render and match the original section order
 - [ ] Brand color (#ff0000) used consistently for accents, buttons, hover states

@@ -217,7 +217,7 @@ Recreation of ColorLib **Pacific** — a travel agency website template with a d
 - **GIVEN** the user hovers over a footer link
 - **THEN** the link color changes to orange (#f15d30)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: Navbar → Hero → Search Form → Services → Select Destination → Tour Destinations → Video Banner → About Us → Testimonials → Blog → CTA Banner → Footer
 - [ ] Font: Poppins (300–800) + Arizonia (cursive) loaded from Google Fonts

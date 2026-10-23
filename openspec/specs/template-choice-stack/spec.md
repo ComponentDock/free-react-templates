@@ -155,7 +155,7 @@ Background:
 - **AND** options have role="option"
 - **AND** aria-multiselectable="true" is set on the list
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Component renders collapsed with arrow indicator
 - [ ] Dropdown opens/closes on click, outside click, and Escape

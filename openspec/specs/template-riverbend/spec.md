@@ -156,7 +156,7 @@ Extracted from the preview's `styles/main_styles.css`:
 - **GIVEN** the footer is visible
 - **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections present in correct order matching preview DOM
 - [ ] Brand color `#ffa37b` applied to buttons, links, and accent elements

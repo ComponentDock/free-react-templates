@@ -137,7 +137,7 @@ Extracted from the live preview stylesheet (`css/style.css`) and inline HTML.
 - **GIVEN** the user views the footer
 - **THEN** the footer contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec matches section order from the live preview DOM exactly
 - [ ] Brand color `#042e4f` (navy) used for navbar and section backgrounds

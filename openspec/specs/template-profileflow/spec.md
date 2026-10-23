@@ -179,7 +179,7 @@ Recreation of ColorLib "Colorlib Wizard 9" — a multi-step user profile wizard 
 - **AND** the text becomes white
 - **AND** the background becomes #3b87d9
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 3-step wizard with Next/Back navigation
 - [ ] Step indicator (1/3, 2/3, 3/3) in top-right

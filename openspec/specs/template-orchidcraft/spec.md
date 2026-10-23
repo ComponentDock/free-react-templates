@@ -231,7 +231,7 @@ branded as "Component Dock".
 - **THEN** a link to componentdock.com is visible
 - **AND** the link text includes "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in the correct order
 - [ ] Header transitions from transparent to opaque on scroll

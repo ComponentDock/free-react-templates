@@ -165,7 +165,7 @@ testimonials, team, contact form, info banner, and a 4-column footer.
 - **AND** column 4 has a newsletter form with email input and Subscribe button
 - **AND** a copyright bar is shown with "Component Dock" attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the Conbusi preview structure and order
 - [ ] Blue gradient CTA buttons (#0181f5 → #5DB2FF) with 30px radius

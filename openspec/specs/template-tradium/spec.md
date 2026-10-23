@@ -222,7 +222,7 @@ testimonial carousel, blog posts, a contact form, and a multi-column footer.
 - **AND** a "Featured Product" sidebar with product image, name, price, and "Add to Cart" button
 - **AND** a copyright line at the bottom with "Made with Component Dock" link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 14 sections render in correct order (top bar → navbar → hero → products → newsletter → featured → about → team → special → services → testimonials → blog → contact → footer)
 - [ ] Design tokens match: brand orange #f16821, accent teal #46ddb0, Muli font, square buttons, #333 footer

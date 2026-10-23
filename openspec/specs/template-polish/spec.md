@@ -158,7 +158,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** the footer has social media icon links
 - **AND** the footer has a copyright line with Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct order (hero → booking → stats → industries → services → how it works → testimonials → pricing → CTA → blog → footer)
 - [ ] Hero has dark photographic background, overlay, diagonal clip, left-aligned text, outline CTA button

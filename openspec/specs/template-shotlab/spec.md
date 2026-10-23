@@ -143,7 +143,7 @@ Footer displays copyright with Component Dock link.
 - **THEN** it shows copyright text with current year
 - **AND** it links to https://www.componentdock.com/ (Component Dock)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar navigation matches ColorLib structure (logo, nav, newsletter, copyright)
 - [ ] Portfolio items alternate image/text left/right correctly

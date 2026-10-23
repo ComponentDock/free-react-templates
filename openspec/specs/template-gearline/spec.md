@@ -117,7 +117,7 @@ Recreation of the ColorLib "Watch" template as a React 19 + Vite + Tailwind CSS 
 - **THEN** it shows three columns: About Us, Newsletter signup, and Social media links
 - **AND** it includes a link to Component Dock (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header renders with all nav links and logo
 - [ ] Hero banner has background image, subtitle, headline, and CTA button

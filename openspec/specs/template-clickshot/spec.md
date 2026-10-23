@@ -148,7 +148,7 @@ Recreation of ColorLib **Shotgear** — a photography studio / creative agency t
 - **AND** a copyright bar is displayed at the bottom
 - **AND** the footer links to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render with correct headings and content
 - [ ] Navbar is responsive with hamburger menu on mobile

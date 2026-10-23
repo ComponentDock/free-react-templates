@@ -208,7 +208,7 @@ The template SHALL adapt layout at three breakpoints: >992px (full split), 768-9
 - **WHEN** the user views the page at <=576px width
 - **THEN** the card padding reduces to 15px horizontal
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Gradient background renders at -135deg from #c850c0 to #4158d0
 - [ ] White card centered with 10px border-radius, 960px max-width

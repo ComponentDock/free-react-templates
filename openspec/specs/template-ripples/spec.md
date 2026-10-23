@@ -55,7 +55,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully with Vite + React 19 + Tailwind v4 + TypeScript.
 - [ ] 100% test coverage with Vitest + Testing Library.

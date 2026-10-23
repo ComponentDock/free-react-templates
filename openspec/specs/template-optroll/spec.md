@@ -123,7 +123,7 @@ component page.
 - **AND** checkboxes are keyboard-accessible
 - **AND** the search input is focusable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered layout with heading and dropdown on light gray (#efefef) background
 - [ ] Font is Roboto (loaded via Google Fonts or system fallback)

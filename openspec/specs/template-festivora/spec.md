@@ -144,7 +144,7 @@ Background:
 - **AND** footer navigation links (Home, Speakers, Events, News, Contact) are present
 - **AND** a Component Dock attribution link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 13 sections render in the correct order
 - [ ] Design tokens match: `#f50136` primary, `#18181c` headings/footer, `#838383` body text

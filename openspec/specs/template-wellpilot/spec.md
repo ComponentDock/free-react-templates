@@ -179,7 +179,7 @@ Single-page index with these sections in order:
 - **AND** the logo accent color is green (#a3cb4c)
 - **AND** there is a "Made with Component Dock" attribution link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar: blue background, phone + email, social icons
 - [ ] Navbar: dark bg, brand with leaf icon, 8 nav links, sticky on scroll

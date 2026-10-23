@@ -185,7 +185,7 @@ Background:
 - **AND** product cards display in a 2-column grid
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in the correct order
 - [ ] Design tokens match: #5F67FF primary, #25282C header, Public Sans font

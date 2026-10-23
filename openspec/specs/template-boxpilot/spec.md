@@ -212,7 +212,7 @@ Feature: Footer
 - **THEN** it displays copyright text
 - **AND** a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct order
 - [ ] Navbar is sticky and responsive (mobile hamburger)

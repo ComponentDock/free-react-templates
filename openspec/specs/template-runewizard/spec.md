@@ -92,7 +92,7 @@ Recreation of ColorLib "Colorlib Wizard 15" — a multi-step financial sign-up w
 - **THEN** the layout adjusts to single-column
 - **AND** all form fields remain accessible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Multi-step form renders with 3 steps
 - [ ] Vertical progress sidebar with numbered steps

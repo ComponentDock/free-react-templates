@@ -67,7 +67,7 @@ As a user, I want a fully responsive layout and clear attribution.
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** the footer must display copyright and link `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Vite dev server starts successfully with zero type or build errors
 - [ ] Calendar grid renders correct month days and navigation works

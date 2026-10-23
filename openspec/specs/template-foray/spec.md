@@ -191,7 +191,7 @@ Recreation of ColorLib "F-plus Portfolio Template" as a modern React 19 + Vite +
 - **AND** clicks the submit button (arrow icon)
 - **THEN** the form attempts to submit (no backend — handled gracefully)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with logo and hamburger; overlay opens/closes
 - [ ] Navigation links scroll to correct sections

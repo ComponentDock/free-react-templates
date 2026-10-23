@@ -229,7 +229,7 @@ Background:
 - **THEN** the badge background matches its category color tint
 - **AND** the badge text is readable with sufficient contrast
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct page order
 - [ ] Brand color `#fc3f00` used for buttons, accents, scroll-to-top

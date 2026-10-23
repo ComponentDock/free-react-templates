@@ -45,7 +45,7 @@ As a visitor, I want to expand and collapse accordion items so that I can read d
 - **WHEN** the user scrolls to the bottom of the page
 - **THEN** a footer is visible containing copyright information and a link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Vite + React 19 + Tailwind CSS 4 setup is fully typed and clean
 - [ ] Accordion items support smooth open/close toggle state

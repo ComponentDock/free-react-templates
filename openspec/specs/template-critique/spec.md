@@ -114,7 +114,7 @@ Extracted from the preview page's `css/style.css` and inline styles.
 - **GIVEN** the modal is open on a narrow viewport (< 768px)
 - **THEN** the split layout stacks vertically (image on top, content below)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Trigger button launches the modal
 - [ ] Modal opens centered with correct shadow and border-radius

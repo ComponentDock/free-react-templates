@@ -122,7 +122,7 @@ Recreation of ColorLib **colorlib-search-8** — a single-page advanced search f
 - **AND** the search input padding adjusts for smaller screens
 - **AND** the search icon scales down
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Font: Roboto loaded from Google Fonts
 - [ ] Background: full-page placeholder image (picsum)

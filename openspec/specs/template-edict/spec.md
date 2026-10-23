@@ -200,7 +200,7 @@ Recreation of the ColorLib "Solicitor" template for a law firm / legal services 
 - **WHEN** I tap the hamburger icon
 - **THEN** the mobile menu slides in from the right
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Fonts loaded: Playfair Display (headings) + Roboto (body) via Google Fonts
 - [ ] Dark background (#1b1c1e) on body

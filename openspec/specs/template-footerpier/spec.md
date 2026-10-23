@@ -109,7 +109,7 @@ The footer columns SHALL stack vertically on small screens and display as a 4-co
 - **WHEN** the viewport width is 768px or more
 - **THEN** the footer columns are displayed in a 4-column grid
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Footer background is #7C4DFF (purple)
 - [ ] Four columns render on md+ screens

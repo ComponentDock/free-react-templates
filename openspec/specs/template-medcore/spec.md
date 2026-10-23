@@ -210,7 +210,7 @@ background: linear-gradient(to right, #3de6fa, #243eff);
 - **THEN** the footer bottom bar shows copyright text and navigation links
 - **AND** includes a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections present in correct order
 - [ ] Brand gradient (#3de6fa → #243eff) applied to top header, services overlay, testimonials overlay, CTA bar

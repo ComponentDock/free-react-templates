@@ -128,7 +128,7 @@ The preview shows a single-column centered layout on a light gray (#fafafa) back
 - **AND** list item text remains readable
 - **AND** touch targets are at least 44px
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page loads with centered "Accordion #05" heading (28px, black, font Poppins)
 - [ ] Page background is #fafafa (light gray)

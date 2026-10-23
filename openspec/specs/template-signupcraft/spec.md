@@ -241,7 +241,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout: image left (~40%), form card right (~60%)
 - [ ] Layout stacks vertically on mobile (<768px)

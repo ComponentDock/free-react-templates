@@ -165,7 +165,7 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 - **AND** listing cards stack vertically
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: white bg, brand with accent color, all links, CTA button
 - [ ] Hero: background image, dark overlay, headline, subtitle, search form with 4 fields

@@ -248,7 +248,7 @@ Feature: Taskfolio Responsive Design
 - **AND** service cards stack in a single column
 - **AND** blog entries stack in a single column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar: fixed position, logo block, nav links, social icons, copyright
 - [ ] Hero: image slider with 3 slides, white text overlay, outlined CTA button

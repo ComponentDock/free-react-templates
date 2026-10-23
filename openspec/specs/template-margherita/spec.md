@@ -176,7 +176,7 @@ Extracted from the ColorLib preview (`css/style.css`):
 - **AND** a copyright line appears at the bottom
 - **AND** the footer links to "Component Dock" (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections present in correct order
 - [ ] Brand colors match: primary `#78d5ef`, accent `#fac564`, dark `#000`/`#101315`

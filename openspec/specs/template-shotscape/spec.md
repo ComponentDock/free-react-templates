@@ -161,7 +161,7 @@ Extracted from the live preview CSS (https://preview.colorlib.com/theme/phozogy/
 - **THEN** a copyright line is shown below a separator border
 - **AND** it includes "Component Dock" link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, all 8 nav links, search icon, Pages dropdown
 - [ ] Hero: full-width slider, heading, paragraph, CTA button

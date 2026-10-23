@@ -104,7 +104,7 @@ live sheet; do not build them from the screenshot, take the palette above:
 - As a user, I want to see the Component Dock attribution footer.
 - Scenario: Footer renders at the bottom linking to `https://www.componentdock.com/`.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds cleanly without warnings (`npm run build`).
 - [ ] Tests pass with 100% coverage (`npm run test:coverage`).

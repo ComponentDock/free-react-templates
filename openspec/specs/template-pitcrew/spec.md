@@ -152,7 +152,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** headings follow a logical hierarchy (h1 > h2 > h3)
 - **AND** buttons have accessible labels
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order
 - [ ] Design tokens match: #5F67FF brand, Public Sans font, #25282C dark bg

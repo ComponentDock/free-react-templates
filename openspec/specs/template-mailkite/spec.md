@@ -146,7 +146,7 @@ Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contac
 - **AND** the heading, fields, and button remain visible and usable
 - **AND** the background image and gradient overlay still cover the viewport
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-screen background image with pink-to-coral gradient overlay
 - [ ] Centered white card with rounded corners and drop shadow

@@ -207,7 +207,7 @@ Feature: Seascape Footer
 - **GIVEN** the footer is visible
 - **THEN** a link to "https://www.componentdock.com/" is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: Header → Hero → Features → Gallery → About → Testimonials → Booking → Blog → Footer
 - [ ] Brand color `#ffa37b` (coral) used for CTA buttons, active nav, hover states

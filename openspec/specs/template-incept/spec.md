@@ -217,7 +217,7 @@ contact sections.
 - **AND** it should show a copyright line
 - **AND** it should include a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order: Top Bar → Navbar → Hero → Services Overview → Works → Features → Testimonials → Our Services → About Us → Our Team → Blog → Contact Us → CTA Banner → Footer
 - [ ] Brand color #32dbc6 used consistently for buttons, headings, checkmarks, dropdown border, CTA banner

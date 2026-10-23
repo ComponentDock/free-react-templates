@@ -171,7 +171,7 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 - **AND** social media icon links are displayed
 - **AND** the footer contains "Made with Component Dock" linking componentdock.com
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with all 6 links and "Roadwise" brand
 - [ ] Hero section has background image with dark overlay

@@ -112,7 +112,7 @@ The template uses a **sidebar + content** layout:
 - **AND** section titles have a short underline accent (2px, #99896e)
 - **AND** the overall aesthetic is clean, minimal, portfolio-focused
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar navigation matches original (dark bg, logo, menu, filters, social, copyright)
 - [ ] Portfolio masonry grid with hover overlay (+ icon + name)

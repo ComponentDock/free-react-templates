@@ -145,7 +145,7 @@
 - **AND** all form fields should be full-width
 - **AND** the step indicator should adapt to the smaller screen
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All form fields are present and properly labeled
 - [ ] Step navigation works correctly (Next, Back)

@@ -145,7 +145,7 @@ The page shall show a fullscreen loading spinner on initial load with a circular
 - **THEN** a fullscreen spinner overlay is visible
 - **AND** the spinner has a gold circular stroke animation
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: transparent bg, "Chateau" brand, all links, Rooms dropdown, Book Now CTA
 - [ ] Hero: full-viewport, dark overlay, heading, subtitle, gold CTA button

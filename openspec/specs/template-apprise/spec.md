@@ -139,7 +139,7 @@ Extracted from the template screenshot and ColorLib page metadata:
 - **AND** it links to https://www.componentdock.com/ branded as "Component Dock"
 - **AND** it has social media icon links
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero gradient matches purple-to-magenta (135deg, #6C3CE1 → #D946EF)
 - [ ] "Get Started" CTA button is coral-red (#FF4466)

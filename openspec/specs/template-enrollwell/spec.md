@@ -100,7 +100,7 @@ Extracted from the screenshot (preview unreachable):
 - **WHEN** the user clicks "CREATE MY ACCOUNT"
 - **THEN** the button registers the click (no navigation in static template)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout fills viewport height
 - [ ] Left panel shows placeholder background image

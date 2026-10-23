@@ -137,7 +137,7 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Mulish (Google Fonts) loaded for headings and body
 - [ ] Warm cream background (#f9f6f1) covers full viewport

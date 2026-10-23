@@ -185,7 +185,7 @@ Recreation of ColorLib "Vacation" — a free Bootstrap 4 travel agency website t
 - **THEN** zero matches are found
 - **AND** provenance exists only in the spec and TEMPLATES.md
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: dark bg, brand + subtitle, 5 nav links + Book Now CTA, scroll behavior
 - [ ] Hero: full-width image, dark overlay, centered text, play button icon

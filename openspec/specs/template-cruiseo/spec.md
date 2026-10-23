@@ -169,7 +169,7 @@ Users SHALL see a multi-column footer with social links and navigation.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: fixed, dark background, logo + 8 nav links, hamburger on mobile
 - [ ] Hero: full viewport height, dark overlay on image, headline, booking form (dropdown + 2 date inputs + search button)

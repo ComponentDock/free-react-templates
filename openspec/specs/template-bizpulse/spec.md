@@ -190,7 +190,7 @@ Extracted from the preview's CSS (`css/style.css`):
 - **AND** multi-column grids stack to single column
 - **AND** the hero text scales down appropriately
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 13 sections present in correct order: Navbar → Hero → About → Services → Portfolio → Middle Banner → Team → Skills → Clients → Pricing → Blog → Contact → Footer
 - [ ] Brand color `#d73e4d` used consistently for accents (icons, dividers, buttons, active states)

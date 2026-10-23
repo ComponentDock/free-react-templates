@@ -134,7 +134,7 @@ Extracted from `css/style.css` of the ColorLib download.
 - **GIVEN** the page renders
 - **THEN** a footer section links to https://www.componentdock.com/ branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-viewport light blue (#d8f4fe) background
 - [ ] Form centered vertically and horizontally, max-width 570px

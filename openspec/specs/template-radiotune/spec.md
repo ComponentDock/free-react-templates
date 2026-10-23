@@ -218,7 +218,7 @@ Extracted from `https://preview.colorlib.com/theme/razo/style.css`:
 - **GIVEN** the footer is rendered
 - **THEN** address, phone, and email contact info is visible with icons
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order: Navbar → Hero → Blog → Music Charts → Trending Video → App Download → Weekly Schedule → Latest News → Footer
 - [ ] Navbar: sticky on scroll, logo visible, all nav links present, mobile hamburger works, social share panel

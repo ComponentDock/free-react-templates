@@ -117,7 +117,7 @@ Clean, modern ecommerce storefront with a warm golden-orange accent palette. Whi
 - **AND** product carousels scroll horizontally
 - **AND** the exclusive deal section stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar is sticky with correct nav items and icons
 - [ ] Hero banner has correct headline, description, CTA, and image

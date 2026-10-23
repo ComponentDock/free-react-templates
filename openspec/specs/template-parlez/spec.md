@@ -125,7 +125,7 @@ Extracted from the live preview stylesheet (`styles/main_styles.css`).
 - **AND** a copyright bar shows phone number and social icons
 - **AND** the footer links to https://www.componentdock.com/ (Component Dock)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: logo, nav links (6), search, social icons, phone
 - [ ] Hero: heading, CTA button, background image

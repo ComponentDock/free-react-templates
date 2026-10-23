@@ -107,7 +107,7 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation (`npm run build`) succeeds.
 - [ ] 100% test coverage across all components.

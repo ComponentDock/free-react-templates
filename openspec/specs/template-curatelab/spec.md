@@ -147,7 +147,7 @@ Recreation of the ColorLib "Reopen" template as a React 19 + Vite + Tailwind CSS
 - **THEN** all grid items should display full-width
 - **AND** the portfolio overlay text should use smaller font (14px)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated with `npm run spec:validate`
 - [ ] All Gherkin scenarios have corresponding Vitest tests

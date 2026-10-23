@@ -159,7 +159,7 @@ Feature: Tandem creative agency template
 - **AND** hovering over a primary button should fill it with crimson and change text to white
 - **AND** the arrow icon should slide right on hover
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Poppins font loaded (weights 300, 500, 600)
 - [ ] Crimson body background (#e0003b)

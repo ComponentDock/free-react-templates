@@ -220,7 +220,7 @@ Feature: Footer
 - **THEN** a link to https://www.componentdock.com/ should be present
 - **AND** it should display as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections rendered in correct order matching preview DOM
 - [ ] Brand colors match: red #fe4c50, dark #1e1e27, gray #f2f2f2

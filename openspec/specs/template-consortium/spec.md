@@ -210,7 +210,7 @@ Background:
 - **AND** interactive elements are keyboard-focusable
 - **AND** color contrast meets WCAG AA standards for text on backgrounds
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections rendered in correct order
 - [ ] Brand color `#46ddb0` used on primary buttons and accents

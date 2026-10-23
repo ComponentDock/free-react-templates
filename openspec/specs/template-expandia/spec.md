@@ -40,7 +40,7 @@ As a visitor, I want to explore restaurant menu categories (Breakfast, Lunch, Di
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** the footer displays a link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes
 - [ ] Vitest test suite passes with 100% coverage on new components

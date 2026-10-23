@@ -164,7 +164,7 @@ typographic hierarchy.
 - **AND** buttons invert colors on hover (white text on black background)
 - **AND** section headings are uppercase with wide letter-spacing
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: transparent on hero, white links, sticky black on scroll, login/register + cart
 - [ ] Hero: full-width, bg image, carousel slides, "Latest album" subtitle, h2 title, "Discover" CTA

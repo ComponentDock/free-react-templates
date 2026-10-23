@@ -105,7 +105,7 @@ Recreation of ColorLib **Pageone** (`https://colorlib.com/wp/template/pageone/`)
 - **WHEN** the footer renders
 - **THEN** it includes copyright, site links, and Component Dock attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation passes without errors.
 - [ ] ESLint and Prettier check pass.

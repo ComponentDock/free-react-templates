@@ -52,7 +52,7 @@ Recreation of ColorLib Accordion 16 (`https://colorlib.com/wp/template/accordion
 - When the user clicks item 2
 - Then item 1 collapses and item 2 expands
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation (`npm run typecheck`)
 - [ ] Linting (`npm run lint`)

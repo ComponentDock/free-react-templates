@@ -171,7 +171,7 @@ Background:
 - **THEN** no file contains "colorlib.com" or "preview.colorlib.com"
 - **AND** the provenance is only in the spec and TEMPLATES.md
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 5 sections render in correct page order (Sidebar → Hero → About → Gallery → Footer)
 - [ ] Fixed left sidebar with hamburger toggle and slide-out nav panel

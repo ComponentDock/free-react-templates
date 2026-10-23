@@ -144,7 +144,7 @@ The template SHALL render a copyright line in the sidebar footer with Component 
 - **THEN** a copyright line is displayed
 - **THEN** the footer links to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar renders with logo, nav, newsletter form, and copyright
 - [ ] Sidebar is fixed 25% width on desktop, slides in on mobile

@@ -191,7 +191,7 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 - **AND** the bottom bar shows social media icons (twitter, facebook, globe, instagram)
 - **AND** the footer includes a link to componentdock.com
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches preview: Navbar → Hero → Stats Bar → About → Services → Why Choose Us → Application Form → Team → Testimonial → Blog → Footer
 - [ ] Brand color #3589f1 used for primary buttons and accents

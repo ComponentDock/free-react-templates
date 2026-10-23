@@ -39,7 +39,7 @@ Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-1
 - Responsive design adapting cleanly on mobile, tablet, and desktop viewports.
 - Fully accessible with proper label associations and keyboard navigation.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

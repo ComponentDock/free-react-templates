@@ -195,7 +195,7 @@ Background:
 - **THEN** each has a fixed parallax background image
 - **AND** a warm-toned overlay ensures text readability
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render in correct page order
 - [ ] Brand color `#ff5200` used for buttons, links, and accents

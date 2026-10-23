@@ -162,7 +162,7 @@ A dark footer with brand logo, quick links, services list, newsletter form, soci
 - **WHEN** the footer is visible
 - **THEN** a link to https://www.componentdock.com/ is present with text "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [x] All sections present in correct order matching preview DOM
 - [x] Brand color `#ff5e13` applied to buttons, accents, links

@@ -217,7 +217,7 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - **WHEN** I look at the footer copyright
 - **THEN** it contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar with phone, email, social icons
 - [ ] Main nav with "HomeSpace." logo (bold + danger dot), 5 links, Properties dropdown with nested submenu

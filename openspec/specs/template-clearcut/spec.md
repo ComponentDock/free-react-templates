@@ -144,7 +144,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **THEN** it contains a link to https://www.componentdock.com/
 - **AND** the link text references "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: dark bg, brand name, all 6 nav links, mobile hamburger toggle
 - [ ] Hero: split layout (text left, visual right), subheading, h1, h2, CTA button

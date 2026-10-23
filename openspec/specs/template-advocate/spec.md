@@ -67,7 +67,7 @@ A professional dark-themed legal, investigative, and security consulting website
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App workspace `@free-react-templates/advocate` created under `apps/advocate/`
 - [ ] `public/CNAME` contains `advocate.free.componentdock.com`

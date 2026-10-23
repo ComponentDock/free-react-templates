@@ -242,7 +242,7 @@ The app MUST have correct CNAME and homepage values for Surge deployment.
   - Column 4: "Have a Questions?" — address, phone, email (icon + text)
 - Bottom bar: copyright text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: Navbar → Hero Slider → Booking → Services Grid → Welcome/Services → Rooms → Testimonials → Video Hero → Restaurant → Footer
 - [ ] Playfair Display + Poppins font pairing loaded via Google Fonts

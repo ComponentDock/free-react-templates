@@ -118,7 +118,7 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - **WHEN** the user hovers over a menu item
 - **THEN** the item text changes to black
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Heading centered on page
 - [ ] Dropdown trigger shows cog icon + "Privacy Settings" label

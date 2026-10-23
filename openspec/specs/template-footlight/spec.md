@@ -154,7 +154,7 @@ The footer SHALL be responsive and work on mobile and desktop.
 - **AND** social icons wrap naturally
 - **AND** all content remains centered
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Preview content area: centered "Footer #9" heading, 70vh, light bg
 - [ ] Footer background: white (#ffffff)

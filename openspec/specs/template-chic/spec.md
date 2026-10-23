@@ -175,7 +175,7 @@ Feature: Chic Footer
 - **THEN** an email input field with placeholder text is shown
 - **AND** a submit button is positioned to the right of the input
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: dark top bar + white nav bar with logo and navigation
 - [ ] Hero: slider with subtitle, heading, description, CTA button, social icons

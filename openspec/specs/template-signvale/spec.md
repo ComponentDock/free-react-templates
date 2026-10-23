@@ -234,7 +234,7 @@ The template SHALL be responsive and work on both desktop and mobile viewports.
 - **THEN** the panels stack vertically at full width
 - **AND** all content remains accessible and readable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered split-screen card on light gray-blue (#f8f9fd) background
 - [ ] "Sign Up #03" title displayed above card in black

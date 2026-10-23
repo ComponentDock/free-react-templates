@@ -120,7 +120,7 @@ Overall aesthetic: minimal, modern, clean white with blue accent color.
 - **AND** the form fields are full-width
 - **AND** the social icons remain visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Poppins font loaded via Google Fonts in index.html
 - [ ] Brand color #3e64ff used for buttons and hover states

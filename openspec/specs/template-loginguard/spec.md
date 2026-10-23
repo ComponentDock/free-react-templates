@@ -150,7 +150,7 @@ The template SHALL include a footer linking to https://www.componentdock.com/ br
 - **WHEN** the user scrolls to the bottom of the page
 - **THEN** a link to https://www.componentdock.com/ is visible, labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page background is warm peach (#F5C7A9)
 - [ ] Dark navy card centered with rounded corners and shadow

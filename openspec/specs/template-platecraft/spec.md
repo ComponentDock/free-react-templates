@@ -149,7 +149,7 @@ Tests: Vitest + Testing Library, 100% line/function/branch/statement coverage.
 - **WHEN** the section is visible
 - **THEN** a Google Maps embed is displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero: full-viewport bg image, "Welcome to Platecraft" heading (Playfair Display), "Reserve A Table" outline button
 - [ ] Side nav: 5 links scroll to correct sections, sticky on scroll, hamburger on mobile

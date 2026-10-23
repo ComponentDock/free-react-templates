@@ -37,7 +37,7 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - **WHEN** the footer is rendered
 - **THEN** it displays a copyright notice and a link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation passes without errors (`npm run typecheck`).
 - [ ] Tailwind CSS 4 compiles correctly with proper theme tokens.

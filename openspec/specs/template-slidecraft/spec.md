@@ -39,7 +39,7 @@ As a visitor, I want to browse featured creative projects and portfolio items vi
 - **THEN** a detailed description or modal/preview appears
 - **AND** the footer displays copyright and links to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec valid (`npm run spec:validate`)
 - [ ] 100% test coverage on all components (`npm run test:coverage`)

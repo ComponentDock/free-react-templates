@@ -71,7 +71,7 @@ All accordion interactions SHALL be keyboard accessible and use proper ARIA attr
 - **Radius**: Rounded interactive accordion panels (`rounded-lg`)
 - **Footer Attribution**: Must link to `https://www.componentdock.com/` (\"Component Dock\").
 
-## Verification Checklist
+## Verification checklist
 
 - [x] Spec validated via `npm run spec:validate`
 - [x] App workspace `@free-react-templates/concertina` created in `apps/concertina`

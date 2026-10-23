@@ -151,7 +151,7 @@ Background:
 - **THEN** a full-width dark bar is displayed at the bottom
 - **AND** copyright text is shown in semi-transparent white
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 14 sections present in correct order
 - [ ] Poppins font used for body/headings, Reenie Beanie for script subheadings

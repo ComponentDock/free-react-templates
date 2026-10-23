@@ -125,7 +125,7 @@ The system SHALL render a deep purple footer containing subject links, community
 - **WHEN** the user inspects footer links
 - **THEN** it SHALL contain subject/community navigation links, a working email newsletter form, and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation: `npm run spec:validate` passes
 - [ ] Workspace setup: `apps/eduflow` configured in root `package.json` and registered in `package-lock.json`

@@ -47,7 +47,7 @@ As a user, I want to view a vertical calendar layout showing month navigation, d
 - **WHEN** the user clicks the "Next Month" or "Previous Month" button
 - **THEN** the calendar updates to show the correct days for the target month with accurate starting weekday alignment
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`)
 - [ ] Per-app gate verification (`scripts/verify-app.sh calendry`)

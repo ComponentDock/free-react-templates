@@ -205,7 +205,7 @@ Background:
 - **THEN** view count, like count, and comment count are displayed
 - **AND** each stat has an appropriate icon (eye, thumbs-up, comments)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct page order (navbar → hero → 3-col posts area → footer)
 - [ ] Brand color `#ed3974` used for buttons, category tags, accents

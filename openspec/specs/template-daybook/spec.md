@@ -41,7 +41,7 @@ As a user visiting Daybook, I want an intuitive calendar interface so that I can
 - **WHEN** the footer is rendered
 - **THEN** it displays a link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully with Vite and TypeScript strict mode.
 - [ ] All Vitest tests pass with 100% coverage.

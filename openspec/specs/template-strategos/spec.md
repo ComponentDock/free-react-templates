@@ -195,7 +195,7 @@ Recreation of ColorLib "Conbusi" consulting template as a single-page React 19 +
 - **AND** a bottom copyright bar with "All rights reserved" text
 - **AND** a "Component Dock" attribution link replacing the original Colorlib credit
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections present in correct order (TopBar → Navbar → Hero → Services → About → Counter → CaseStudy → FAQ → Team → Info CTA → Footer)
 - [ ] Design tokens match: `#0181f5` primary blue, `#5DB2FF` secondary, `#001D38` headings/navy, Poppins font

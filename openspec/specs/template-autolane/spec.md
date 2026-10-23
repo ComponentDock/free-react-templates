@@ -189,7 +189,7 @@ blog cards, and a dark four-column footer. The page uses Poppins font, orange
 - **AND** column 4: "Have a Questions?" with address, phone, email
 - **AND** a copyright line at the bottom links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: transparent on hero, white on scroll, brand "Autolane" visible
 - [ ] Hero: background image with 40% dark overlay, headline + play CTA + booking card

@@ -201,7 +201,7 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 - **AND** the link text references "Component Dock"
 - **AND** no ColorLib attribution links are present in the footer
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App name is `motorpath` (not `autoroad`)
 - [ ] Package name is `@free-react-templates/motorpath`

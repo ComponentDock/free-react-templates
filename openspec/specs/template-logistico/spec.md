@@ -84,13 +84,10 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `npm run test:coverage` achieves 100% lines/functions/branches/statements
 - [ ] All sections match 1:1 with ColorLib Thelogistico preview
 - [ ] Footer links Component Dock (`https://www.componentdock.com/`)
 - [ ] No reference to ColorLib in app code
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

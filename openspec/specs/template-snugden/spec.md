@@ -202,7 +202,7 @@ parallax, menu section, testimonials, blog, events, Instagram feed, and footer.
 - **GIVEN** the footer is visible
 - **THEN** a newsletter email input and submit button are present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections render in correct order
 - [ ] Navbar is sticky on scroll

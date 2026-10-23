@@ -120,7 +120,7 @@ A light gray section SHALL appear below the card area.
 - **THEN** I see a light gray (#f8f9fa) section below the gradient background
 - **AND** the section contains a "Made with Component Dock" footer link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-viewport gradient background renders correctly (light teal → dark navy)
 - [ ] White card is centered on the gradient with box shadow

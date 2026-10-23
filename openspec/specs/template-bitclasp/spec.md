@@ -328,7 +328,7 @@ Feature: Footer
 - **AND** social icons have dark background
 - **AND** social icons turn orange on hover
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct page order
 - [ ] Navbar is fixed-positioned, changes background on scroll

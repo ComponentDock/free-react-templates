@@ -125,7 +125,7 @@ Extracted from the live preview CSS (`css/style.css`) and screenshot analysis.
 - **AND** social media icons (Facebook, Instagram, Twitter, LinkedIn) are present
 - **AND** a "Component Dock" attribution link is in the footer
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec covers all 9 sections in correct order
 - [ ] Design tokens match the original CSS (primary `#0779e4`, Roboto font, `4px` radius)

@@ -149,7 +149,7 @@ beyond shared `packages/ui` (Button, ButtonLink, cn).
 - **AND** the service cards stack vertically
 - **AND** the portfolio grid becomes single-column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections present in correct order matching the ColorLib source
 - [ ] Design tokens match: brand primary #4986fc, dark navy #141b25, Arizonia logo font

@@ -55,7 +55,7 @@ Every template must include a branded footer linking to Component Dock.
 - **WHEN** the user is viewing the widget
 - **THEN** a visible link points to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

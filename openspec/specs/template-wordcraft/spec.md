@@ -245,7 +245,7 @@ Extracted from the live preview's CSS (`css/style.css`):
 - **THEN** it says "Component Dock" instead of "Colorlib"
 - **AND** it links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Brand color #17b978 used for accents, links, buttons, overlays
 - [ ] Font families: Open Sans (body), Raleway (headings)

@@ -77,7 +77,7 @@ New app name: `reverb`. Domain category: Business agency / Creative portfolio.
 - **GIVEN** the user scrolls to the footer
 - **THEN** they should see copyright information and a link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder `apps/reverb` created and registered in root `package.json` workspaces
 - [ ] TypeScript strict compilation passes without errors

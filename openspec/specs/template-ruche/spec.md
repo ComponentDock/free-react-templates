@@ -43,7 +43,7 @@ Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accor
 - **Scenario:** The footer displays branding and a required link to `https://www.componentdock.com/` ("Component Dock").
 - **Scenario:** Includes quick navigation links and copyright information.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated (`npm run spec:validate`)
 - [ ] 100% test coverage (`npm run test:coverage`)

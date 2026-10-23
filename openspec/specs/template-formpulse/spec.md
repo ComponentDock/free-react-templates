@@ -167,7 +167,7 @@ The template SHALL be responsive across screen sizes.
 - **WHEN** I view the form on a small screen
 - **THEN** the card padding adjusts appropriately for readability
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered white card with subtle shadow and border
 - [ ] "Get Started" heading is bold, black, large

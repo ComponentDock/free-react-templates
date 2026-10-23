@@ -109,7 +109,7 @@ Extracted from the live preview stylesheet (`assets/css/style.css`).
 - **THEN** a "back to top" button appears
 - **AND** clicking it scrolls the page to the top
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-tier header: logo + Sign in + social icons on top; sticky nav with category links + search below
 - [ ] What's New: large featured article left + 3 smaller cards right

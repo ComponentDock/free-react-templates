@@ -163,7 +163,7 @@ The template SHALL include a footer with a link to https://www.componentdock.com
 - **WHEN** the user loads the page
 - **THEN** a footer is visible with a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout renders correctly at desktop width
 - [ ] Gradient panel shows correct colors (#f75959 → #f35587)

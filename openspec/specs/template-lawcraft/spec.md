@@ -172,7 +172,7 @@ Extracted from `https://preview.colorlib.com/theme/lawride/css/style.css`:
 - **AND** all footer links hover to orange
 - **AND** the footer includes a "Made with Component Dock" attribution link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header Top Bar: dark background, phone + email info, social icons with orange separators
 - [ ] Navbar: white bg, Lora/Roboto fonts, orange active state, fixed on scroll with orange bg

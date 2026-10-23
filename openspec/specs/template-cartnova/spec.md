@@ -155,7 +155,7 @@ Recreation of ColorLib **Karma** — a fashion/e-commerce single-page template w
 - **AND** social media icons (Facebook, Twitter, etc.) are shown
 - **AND** a "Component Dock" attribution link is in the footer-bottom
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec covers every section in the correct order
 - [ ] Design tokens (colors, fonts, radii) match the original

@@ -138,7 +138,7 @@ Extracted from the live preview CSS (`css/style.css`) at `https://preview.colorl
 - **WHEN** the user presses Space or Enter
 - **THEN** the focused option's checkbox toggles
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with correct background (#f8f9fd) and Lato font
 - [ ] Centered heading renders at ~28px, black color

@@ -60,7 +60,7 @@ Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** they see the copyright notice and the required Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validates (`npm run spec:validate`)
 - [ ] App builds successfully

@@ -38,7 +38,7 @@ As a user, I want to view a monthly calendar grid with selectable days, so that 
 - **THEN** the event is added to the list for that date
 - **AND** displayed immediately in the events panel
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

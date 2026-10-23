@@ -129,7 +129,7 @@ Extracted from the ColorLib preview stylesheet (`assets/css/style.css`):
 - **AND** the 3-column expertise cards stack vertically
 - **AND** the 2x2 gallery grid stacks to 1 column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: transparent sticky nav, logo, nav links, CTA button, mobile hamburger
 - [ ] Hero: large name, subtitle, animated rotating text, full-width layout

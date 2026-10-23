@@ -185,7 +185,7 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-column layout: image left (58.88%), dark form panel right (41.12%)
 - [ ] Step indicator "N /3" updates correctly across steps

@@ -184,7 +184,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 4-step wizard with smooth step transitions
 - [ ] Step indicator sidebar with gold active state and vertical line
@@ -202,7 +202,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Tests: 100% coverage (lines, functions, branches, statements)
 - [ ] Typecheck passes, lint passes, build succeeds
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

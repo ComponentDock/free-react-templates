@@ -179,7 +179,7 @@ Gold → cream → cyan diagonal gradient.
 - **AND** form inputs have associated labels
 - **AND** the page has a valid heading hierarchy (h1 → h2 → h3)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero slider renders with 2+ slides and gradient overlay
 - [ ] 4 service cards render with icons and correct content

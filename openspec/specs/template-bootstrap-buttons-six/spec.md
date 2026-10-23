@@ -44,7 +44,7 @@ Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/b
 - **WHEN** the user checks the block button
 - **THEN** it should span 100% of its container width with clear hover feedback
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All size scales (Large, Medium, Small) render correctly
 - [ ] All 19 color variants display exact color contrast and hover effects

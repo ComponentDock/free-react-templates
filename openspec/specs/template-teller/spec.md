@@ -229,7 +229,7 @@ Background:
 - **AND** form inputs have associated <label> elements
 - **AND** interactive elements are keyboard-accessible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 16 sections present in correct order matching the original
 - [ ] Design tokens match: #fd7e14 orange brand, Open Sans font, pill-shaped buttons/inputs

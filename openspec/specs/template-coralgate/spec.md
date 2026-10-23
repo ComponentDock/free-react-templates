@@ -225,7 +225,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Card is centered on viewport with light gray background
 - [ ] Left column: "Sign In" heading with social icons, form fields, coral CTA button

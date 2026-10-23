@@ -37,7 +37,7 @@ A clean, elegant date picker and calendar scheduling interface featuring a focus
 - **WHEN** the footer is rendered
 - **THEN** it displays a link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully without errors
 - [ ] Tailwind v4 styling with Roboto font and indigo accent applied

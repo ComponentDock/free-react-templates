@@ -153,7 +153,7 @@ are visible in the copyright section
 - **AND** footer columns stack vertically
 - **AND** a mobile hamburger menu toggle is visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render: header, hero, services, portfolio, testimonials, blog, clients, footer
 - [ ] Hero has warm beige background with "Do What You Love" heading

@@ -233,7 +233,7 @@ landmark and a document title.
   landmark
 - **AND** the document title SHALL be "Stet — Blog Template"
 
-## Verification checklist (implementer)
+## Verification checklist
 
 - [ ] `scripts/verify-app.sh stet` passes (typecheck + lint + 100%
       coverage tests + build)

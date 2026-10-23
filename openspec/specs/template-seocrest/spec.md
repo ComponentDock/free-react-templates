@@ -135,7 +135,7 @@ Background:
 - **AND** font family is Poppins
 - **AND** button border-radius is 5px
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: transparent over hero, sticky on scroll with shadow
 - [ ] Hero: two-column (text left, image right), brand blue h1, pink CTA button

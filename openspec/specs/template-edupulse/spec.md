@@ -169,7 +169,7 @@ Background:
 - **AND** course cards stack vertically
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Design tokens match: navy `#0c2e60`, accent gradient `#ee390f`→`#f9b700`, highlight `#ff663b`

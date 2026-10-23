@@ -61,7 +61,7 @@ Recreation of ColorLib Startright (`https://colorlib.com/wp/template/startright/
 - **WHEN** the footer renders
 - **THEN** it includes navigation links, a newsletter subscription form, and a link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully with Vite and Tailwind CSS v4.
 - [ ] All 8 sections rendered cleanly.

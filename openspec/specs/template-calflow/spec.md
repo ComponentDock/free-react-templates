@@ -53,7 +53,7 @@ As a user, I want to add new events, filter by category, and view upcoming remin
 - **WHEN** the footer renders
 - **THEN** it displays "Made with Component Dock" linking to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes.
 - [ ] 100% test coverage on all components.

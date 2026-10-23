@@ -115,7 +115,7 @@ Food/grocery delivery theme with decorative food imagery in corners (spices, her
 - **AND** the progress indicator scales down appropriately
 - **AND** buttons remain accessible and tappable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec written with design tokens extracted from screenshot
 - [ ] New name `wizpath` confirmed non-colliding (`ls apps/`, existing specs)

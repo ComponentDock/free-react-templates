@@ -171,7 +171,7 @@ ColorLib's **Calvin** template.
 - **THEN** a link to "https://www.componentdock.com/" is present
 - **AND** the link text references "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Brand orange `#FF8553` used for CTAs, buttons, accent elements

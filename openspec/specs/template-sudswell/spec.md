@@ -246,7 +246,7 @@ Feature: Footer
 - **GIVEN** the footer is rendered
 - **THEN** a link to https://www.componentdock.com/ is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 14 sections render in correct order
 - [ ] Design tokens match: Roboto font, `#225ae1` blue, `#fedd32` yellow, `#161655` navy

@@ -124,7 +124,7 @@ Extracted from `https://preview.colorlib.com/theme/akame/style.css`.
 - **AND** contact info includes phone, email, and address
 - **AND** a copyright line with "Component Dock" link is shown
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in the correct order (11 sections)
 - [ ] Design tokens applied: gold `#bca858`, dark `#252525`, Playfair Display + Open Sans

@@ -208,7 +208,7 @@ two CTA buttons. The body background is deep navy blue throughout.
 - **THEN** the footer displays logo, about text, link columns, and newsletter form
 - **AND** the copyright line links to "https://www.componentdock.com/" (branded "Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 15 sections present in correct order
 - [ ] Navbar: logo, centered nav links, login button, mobile hamburger, scroll behavior

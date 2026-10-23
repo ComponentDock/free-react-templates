@@ -208,7 +208,7 @@ The footer SHALL link to https://www.componentdock.com/ branded as "Component Do
 - **THEN** the footer contains a link to https://www.componentdock.com/
 - **AND** the link opens in a new tab
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Heading matches "Multi-Select #9" (text match)
 - [ ] Trigger shows "Select Categories" placeholder when empty

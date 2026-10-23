@@ -110,7 +110,7 @@ Extracted from the live preview at `https://preview.colorlib.com/theme/magnews/`
 - **THEN** a dark footer is visible with four columns: About, Gallery, Social, Tweets
 - **AND** a copyright bar is at the very bottom with Component Dock attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top header bar: dark background, nav links, social icons, search bar
 - [ ] Logo area: "NEWSBYTE" + "24H" badge, ad space

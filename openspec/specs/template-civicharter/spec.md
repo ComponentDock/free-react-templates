@@ -219,7 +219,7 @@ Background:
 - **AND** clicks the "Subscribe" button
 - **THEN** the form attempts to submit (no page reload)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TopBar renders with social icons and contact info on dark background
 - [ ] Navbar is fixed, white, with logo + full nav including Blog dropdown

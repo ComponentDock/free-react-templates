@@ -154,7 +154,7 @@ Recreation of ColorLib "Colorlib Wizard 21" — a multi-step account registratio
 - **GIVEN** any page of the wizard
 - **THEN** a footer link to "Component Dock" (https://www.componentdock.com/) is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Raleway font loaded from Google Fonts
 - [ ] Full-screen background image applied to page

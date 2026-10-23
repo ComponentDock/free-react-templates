@@ -183,7 +183,7 @@ The template features a clean, modern education marketplace aesthetic:
 - **GIVEN** the footer is visible
 - **THEN** the copyright area links to "https://www.componentdock.com/" branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec section order matches preview: Header → Hero → About → Courses → Features → Faculty → Testimonials → Footer
 - [ ] Brand teal `#39cfca` used consistently for CTAs, hover states, links

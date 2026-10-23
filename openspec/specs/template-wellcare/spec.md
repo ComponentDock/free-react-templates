@@ -187,7 +187,7 @@ Extracted from `https://preview.colorlib.com/theme/medicare/css/style.css` + DOM
 - **AND** the counter items stack to 2-column layout
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo (stethoscope icon + brand), nav links, phone/address info, green CTA pill button
 - [ ] Hero: image slider with dark overlay, white text, green CTA, dot navigation

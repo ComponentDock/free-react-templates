@@ -150,7 +150,7 @@ So that I can browse properties and contact agents
 - **AND** the footer links are green
 - **AND** the footer includes a Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections present in correct order
 - [ ] Brand color `#24A148` used consistently (buttons, links, accents, subheadings)

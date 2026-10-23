@@ -149,7 +149,7 @@ aesthetic is clean and promotional with a soft pink color scheme.
 - **AND** the form input has no visible border
 - **AND** the cancel text is small and semi-transparent white
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with centered title + button layout
 - [ ] Button triggers modal open with fade-in animation

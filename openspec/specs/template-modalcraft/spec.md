@@ -113,7 +113,7 @@ functional — no decorative elements, just typography and interaction.
 - **AND** the modal has a white background with sharp corners
 - **AND** the modal has a deep box-shadow
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with centered title + button layout
 - [ ] Button triggers modal open with scale-in animation

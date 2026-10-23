@@ -197,7 +197,7 @@ Feature: Footer
 - **THEN** the copyright text reads "© <year> All rights reserved | Made with Component Dock"
 - **AND** the Component Dock text links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar sticky positioning works on scroll
 - [ ] Services dropdown appears on hover (desktop)

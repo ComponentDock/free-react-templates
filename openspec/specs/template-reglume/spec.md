@@ -163,7 +163,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Teal `#5eb2b3` full-page background
 - [ ] White 670px card, 8px radius, 30px 45px padding

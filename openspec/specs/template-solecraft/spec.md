@@ -147,7 +147,7 @@ Extracted from the live preview CSS and HTML:
 - **AND** the footer collapses to 2 columns
 - **AND** navigation switches to hamburger menu
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Announcement bar renders with gradient orange background
 - [ ] Sticky header with logo, nav links, action buttons

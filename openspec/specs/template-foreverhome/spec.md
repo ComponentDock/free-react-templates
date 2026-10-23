@@ -118,7 +118,7 @@ Recreation of ColorLib "Adopted" template as a React 19 + Vite + Tailwind 4 + Ty
 - **THEN** the navbar collapses into a hamburger menu
 - **AND** all sections stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar: brand background, social icons, Sponsor + Login buttons
 - [ ] Navbar: white bg, brand name, 5 nav links, hamburger on mobile

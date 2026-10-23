@@ -191,7 +191,7 @@ Extracted from the live preview CSS (`css/main.css`) and screenshot analysis.
 - **AND** headings should use font-weight 500
 - **AND** the hero heading should use font-weight 900
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order
 - [ ] Navbar: logo left, hamburger right, toggle works

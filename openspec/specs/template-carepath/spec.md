@@ -162,7 +162,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 section components render without errors
 - [ ] Design tokens match: Open Sans body, Playfair Display headings, #0051d2 primary

@@ -220,7 +220,7 @@ The original ColorLib screenshot (AVIF format, source unavailable for direct vis
 - **Buttons:** Green primary with rounded corners; the "Post New Job" button in the navbar is a pill-shaped (30px radius) green button.
 - **Footer:** Dark (`#0d0d0d`) with white text and green links.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, links, dropdown, mobile menu, Post New Job button
 - [ ] Hero: background image + overlay, "Find Job" heading, search form (2 inputs + button), category links

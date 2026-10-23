@@ -193,7 +193,7 @@ Background:
 - **THEN** it has a parallax background image effect
 - **AND** white text overlays are readable with sufficient contrast
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct page order
 - [ ] Brand color `#FFC000` used for buttons and accents

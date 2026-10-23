@@ -212,7 +212,7 @@ Google Fonts import: `https://fonts.googleapis.com/css?family=Poppins:200,300,40
 - **WHEN** the user hovers over a nav link
 - **THEN** the link color changes to brand blue `#1641ff`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero banner renders with dark overlay and centered white text
 - [ ] Hero CTA button has 5px radius and white background

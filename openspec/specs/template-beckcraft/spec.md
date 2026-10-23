@@ -129,7 +129,7 @@ Extracted from `css/style.css` at preview.colorlib.com/theme/beckham/:
 - **AND** a copyright notice is displayed
 - **AND** "Made with Component Dock" branding is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo, nav links, anchor scroll
 - [ ] Hero: 2-slide carousel with dark overlay, greeting, title

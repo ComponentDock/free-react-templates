@@ -154,7 +154,7 @@ Background:
 - **AND** I see a "Why Choose Us?" section with a button
 - **AND** I see a copyright notice linking to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TopBar countdown timer renders and counts down
 - [ ] Navbar links match original (Home, Pages, Ministries, Sermons, Contact)

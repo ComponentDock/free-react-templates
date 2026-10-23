@@ -120,7 +120,7 @@ Recreation of ColorLib template **Reg Form V12** (`colorlib-regform-12`).
 - **THEN** the card should expand to near-full width
 - **AND** the background image remains visible above/below the card
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-viewport background image with dark overlay
 - [ ] Left-aligned white card (~55% width, no border-radius)

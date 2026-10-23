@@ -169,7 +169,7 @@ https://preview.colorlib.com/theme/automotive/css/style.css.
 - **GIVEN** the user loads the page
 - **THEN** the footer contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections present in correct order: Header Top → Header Nav → Hero → Services → Choose Us → Products → Testimonials → Counter → Latest News → Footer Top → Footer Main → Footer Copyright
 - [ ] Font: Public Sans (loaded via Google Fonts)

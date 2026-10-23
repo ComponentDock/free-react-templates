@@ -141,7 +141,7 @@ The Autoroad screenshot shows:
 - **THEN** a link to "https://www.componentdock.com/" is present
 - **AND** the link text references "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: dark background, brand logo with accent, 5 nav links, sticky on scroll
 - [ ] Hero: background image with dark overlay, headline + description + video link on left, booking form card on right with 5 fields + submit button

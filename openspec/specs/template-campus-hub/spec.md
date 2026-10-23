@@ -203,7 +203,7 @@ posts, and contact information. The footer SHALL link to Component Dock.
 - **THEN** it SHALL show 4 columns: brand name + description, Quick Links, Blog posts, Contact Information
 - **AND** it SHALL include a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with brand, nav links, dropdowns, and Login/Register
 - [ ] Hero has background image, overlay, heading, and search form

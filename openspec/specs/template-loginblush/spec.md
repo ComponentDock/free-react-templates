@@ -248,7 +248,7 @@ Every template's footer MUST link https://www.componentdock.com/ (branded as "Co
 - **WHEN** the user views the page
 - **THEN** a "Component Dock" link is present in the footer area
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Gradient background renders (blue to pink)
 - [ ] Wave overlay image visible on background

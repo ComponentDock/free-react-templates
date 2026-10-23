@@ -243,7 +243,7 @@ Feature: Footer
 - **AND** contact information (phone, email, address) is displayed
 - **AND** a "Made with Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders all nav links and CTA button
 - [ ] Navbar collapses to hamburger on mobile

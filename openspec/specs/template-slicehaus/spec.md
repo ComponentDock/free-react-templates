@@ -150,7 +150,7 @@ Extracted from live preview CSS (`css/style.css`) and DOM structure.
 - **AND** it contains: About Us column with social icons, Recent Blog column, Newsletter signup column, and Contact info column
 - **AND** a bottom bar shows copyright and attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections match original order: Hero → Intro Bar → About → Services → Gallery → Counter → Menu → Blog → Contact → Footer
 - [ ] Brand gold (#f8b500) used for primary buttons and accents

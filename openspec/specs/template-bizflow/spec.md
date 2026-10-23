@@ -162,7 +162,7 @@ Extracted from `css/style.css` at preview.colorlib.com/theme/busicol/:
 - **AND** a copyright notice is shown
 - **AND** "Made with Component Dock" branding is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo, nav links
 - [ ] Hero: 3-slide carousel with dark overlay, CTAs

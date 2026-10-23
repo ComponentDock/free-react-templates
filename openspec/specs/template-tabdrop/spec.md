@@ -47,7 +47,7 @@
 - **WHEN** the footer renders
 - **THEN** it displays copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `npm run verify:app tabdrop` passes (typecheck + lint + 100% coverage tests + build).
 - [ ] Footer links to `https://www.componentdock.com/`.

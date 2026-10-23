@@ -57,7 +57,7 @@ As a visitor, I want to explore the carousel showcase, features, testimonials, a
 - **WHEN** the newsletter subscription form and footer are rendered
 - **THEN** the footer must prominently link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully with Vite and TypeScript strict mode.
 - [ ] Tailwind v4 CSS tokens and styling match the design specification.

@@ -49,7 +49,7 @@ As a visitor exploring template designs, I want to view a responsive carousel an
 - **GIVEN** the user reaches the bottom of the page
 - **THEN** the footer displays copyright information and a link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript typecheck passes (`npm run typecheck` or app gate)
 - [ ] Lint passes (`npm run lint`)

@@ -46,7 +46,7 @@ As a user, I want to click on a day cell to view or add events.
 - **WHEN** the user clicks on a specific day cell
 - **THEN** a detail panel or modal opens showing scheduled events for that date and an option to add a new event
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder created at `apps/monthgrid`
 - [ ] Registered in `package.json` workspaces and `package-lock.json`

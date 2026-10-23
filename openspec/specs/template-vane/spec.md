@@ -122,7 +122,7 @@ product designer & art director single-page site.
 - **AND** it should include a copyright notice
 - **AND** it should link to https://www.componentdock.com/ (Component Dock)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: hamburger icon → full-screen blue overlay with nav links
 - [ ] Hero: full-screen dark bg, headline, subheadline, yellow "Hire me now" CTA

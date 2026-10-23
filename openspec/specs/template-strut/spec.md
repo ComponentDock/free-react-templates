@@ -145,7 +145,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** focus-visible rings appear on interactive elements
 - **AND** the navigation is keyboard-navigable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header renders with top bar and main nav
 - [ ] Sticky header works on scroll

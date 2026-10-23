@@ -156,7 +156,7 @@ Extracted from the preview CSS (`style.css`) on 2026-09-28.
 - **AND** the grid layouts stack to single column
 - **AND** the hero text is centered and readable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero carousel renders with overlay and auto-play
 - [ ] Menu section shows 8 burger items in 2-column grid

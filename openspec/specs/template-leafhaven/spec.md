@@ -184,7 +184,7 @@ Feature: LeafHaven Hotel Template
 - **AND** multi-column sections stack vertically
 - **AND** the booking form fields stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct page order
 - [ ] Brand coral `#FD8F5F` used for buttons and accents

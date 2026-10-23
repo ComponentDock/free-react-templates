@@ -124,7 +124,7 @@ Recreation of ColorLib's **Burger** template as a React 19 + Vite + Tailwind 4 +
 - **AND** card backgrounds use dark tones
 - **AND** brand orange and gold accents remain visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated (`npm run spec:validate` passes)
 - [ ] All Gherkin scenarios are implementable

@@ -205,7 +205,7 @@ The page SHALL include a footer with a Component Dock link.
 - **AND** it links to https://www.componentdock.com/
 - **AND** the link text reads "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-page pink-to-purple horizontal gradient background renders
 - [ ] Centered white card with rounded corners and shadow displays

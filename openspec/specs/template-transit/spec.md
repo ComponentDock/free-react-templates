@@ -83,7 +83,7 @@ Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/
 - **WHEN** the footer is rendered
 - **THEN** it displays company links, newsletter subscription, and copyright notice with a link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully without TypeScript errors.
 - [ ] All Vitest tests pass with 100% coverage.

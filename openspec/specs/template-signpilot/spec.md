@@ -153,7 +153,7 @@ The page SHALL display a footer that links to https://www.componentdock.com/ bra
 - **AND** the link points to https://www.componentdock.com/
 - **AND** the link opens in a new tab
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders full-viewport diagonal split background (blue left, peach right)
 - [ ] Semi-transparent background overlay image is visible

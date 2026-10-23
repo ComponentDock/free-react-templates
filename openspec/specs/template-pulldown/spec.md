@@ -266,7 +266,7 @@
 - **WHEN** inspected
 - **THEN** `aria-haspopup="true"`, `aria-expanded` (true/false), and proper roles are present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with centered "Pulldown" heading
 - [ ] Four variation columns render in correct order (Dropdown, Dropup, Dropright, Dropleft)

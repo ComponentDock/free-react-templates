@@ -251,7 +251,7 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 - **AND** product grid shows fewer columns
 - **AND** the footer stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct page order
 - [ ] Design tokens match: brand `#f45d96`, headings `Libre Baskerville`, body `Quicksand`

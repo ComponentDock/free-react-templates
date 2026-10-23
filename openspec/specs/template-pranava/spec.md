@@ -195,7 +195,7 @@ Timetable → Testimonial → Contact (map) → Gallery → Footer.
 - **AND** social media icon links are shown (Pinterest, Facebook, Twitter, Dribbble, Behance)
 - **AND** a navigation menu with 5 items is visible (Home, About Us, Classes, Blog, Contact)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero section renders with background image and centered content
 - [ ] Hero heading "Find your inner CHI" displays correctly

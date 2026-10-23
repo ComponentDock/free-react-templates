@@ -144,7 +144,7 @@ The page SHALL render a footer with contact information (location, phone, email)
 - **WHEN** the page loads
 - **THEN** the footer contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Oswald + Roboto Condensed fonts loaded from Google Fonts
 - [ ] Transparent header with nav and Contact button

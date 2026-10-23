@@ -164,7 +164,7 @@ Feature: Wellbridge Footer
 - **AND** social media icons are displayed (Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn)
 - **AND** a "Component Dock" attribution link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: top bar with FAQ + Appointment links + emergency phone
 - [ ] Header: nav with 5 links (Home, About us, Services, News, Contact)

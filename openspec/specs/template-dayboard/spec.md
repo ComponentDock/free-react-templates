@@ -52,7 +52,7 @@ As a user, I want to view, add, and filter daily scheduled items.
 - **WHEN** I click "New Event", fill in title "Team Sync" at 10:00 AM, and save
 - **THEN** the new event appears in the schedule list and updates the calendar indicator
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully with Vite and TypeScript strict mode.
 - [ ] All tests pass under Vitest with 100% code coverage.

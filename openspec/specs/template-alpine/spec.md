@@ -252,7 +252,7 @@ Extracted from `https://preview.colorlib.com/theme/montana/css/style.css`:
 - **AND** adults and children dropdown selects are visible
 - **AND** a "Check Availability" button is at the bottom
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: transparent over hero, sticky on scroll, mobile hamburger
 - [ ] Hero: fullscreen slider with 4 slides, auto-cycling, nav arrows

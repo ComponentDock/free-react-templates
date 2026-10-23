@@ -243,7 +243,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections present and in correct DOM order
 - [ ] Design tokens match: brand #19c880, font Roboto, square buttons, #383749 text

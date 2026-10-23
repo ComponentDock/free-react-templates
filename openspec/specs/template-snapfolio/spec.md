@@ -137,7 +137,7 @@ Recreation of ColorLib Capture photography gallery template as a React 19 + Vite
 - **GIVEN** I am on a tablet device
 - **THEN** the gallery grid should show 2 columns
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar navigation renders with logo, menu items, and social links
 - [ ] Sidebar toggles on mobile with hamburger menu

@@ -148,7 +148,7 @@ Recreation of ColorLib "Colorlib Wizard 22" — a multi-step travel booking form
 - **AND** form fields stack vertically
 - **AND** the card remains centered
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split layout: image panel (left, 66.61%) + form panel (right)
 - [ ] Full-page background image with centered card (993px, 10px radius, shadow)

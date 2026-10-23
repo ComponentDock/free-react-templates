@@ -218,7 +218,7 @@ https://preview.colorlib.com/theme/robotics/css/main.css:
 - **AND** the hero section should stack text above image
 - **AND** the about/video sections should stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order (header → hero → products → about → about-video → features → brands → blog → footer)
 - [ ] Design tokens (colors, fonts, radii) match the extracted values from the original

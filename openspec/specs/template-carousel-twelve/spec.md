@@ -81,7 +81,7 @@ Recreation of ColorLib **Carousel V12** (`https://colorlib.com/wp/template/carou
 - **WHEN** the footer renders
 - **THEN** the Component Dock attribution link is present and correctly pointed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation passes (`npm run spec:validate`)
 - [ ] 100% test coverage maintained across new components

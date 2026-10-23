@@ -189,7 +189,7 @@ Extracted from the live preview CSS (`style.css`):
 - **AND** the brand logo "grille" is displayed
 - **AND** a copyright line with Component Dock link is shown
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render in correct page order
 - [ ] Navbar is fixed, transparent → dark on scroll

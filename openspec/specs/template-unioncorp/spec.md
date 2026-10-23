@@ -71,7 +71,7 @@ A Financial & Business Consulting template with hero banner, services grid, stat
   - When the footer renders
   - Then it includes the mandatory link to `https://www.componentdock.com/` as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully (`npm run build`)
 - [ ] Typecheck passes (`npm run typecheck`)

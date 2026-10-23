@@ -163,7 +163,7 @@ The screenshot shows a fullscreen hero with a deep-to-light blue gradient backgr
 - **AND** form inputs have associated labels
 - **AND** images have descriptive alt text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero renders fullscreen with gradient background
 - [ ] Navigation bar with hamburger menu works on all viewports

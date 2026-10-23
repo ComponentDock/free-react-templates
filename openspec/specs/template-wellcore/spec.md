@@ -308,7 +308,7 @@ Feature: Site footer
 - **GIVEN** I am on the Wellcore page
 - **THEN** the footer should display copyright information
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero slider renders with 3 slides, dark overlay, auto-advance
 - [ ] Sticky navbar with 8 links, transparent-to-solid transition on scroll

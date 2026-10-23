@@ -185,7 +185,7 @@ Extracted from `https://colorlib.com/etc/searchf/colorlib-search-15/css/style.cs
 - **AND** the card padding adjusts for smaller screens
 - **AND** tab links reduce to 22px font size
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Background image covers full viewport
 - [ ] Card is centered with 720px max-width, dark semi-transparent background

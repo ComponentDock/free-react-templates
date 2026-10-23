@@ -132,7 +132,7 @@ Feature: Shopvibe Ecommerce Landing Page
 - **AND** the Follow Us column has social media icon links
 - **AND** the footer bottom shows a copyright line with Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top menu renders with email and social icons
 - [ ] Navbar has logo, 5 nav links, cart icon, search icon

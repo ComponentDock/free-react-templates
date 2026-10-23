@@ -78,7 +78,7 @@
 - **WHEN** the footer renders
 - **THEN** it contains widget columns and a copyright notice with a link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders brand logo and links correctly
 - [ ] Hero banner displays headline and CTA button

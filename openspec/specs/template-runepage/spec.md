@@ -104,7 +104,7 @@ Recreation of ColorLib "Colorlib Wizard 4" — a multi-step academic course regi
 - **THEN** the background darkens to #c9a630
 - **AND** the arrow icon wobbles horizontally (CSS animation)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-panel layout matches 41%/59% ratio
 - [ ] Background image covers full viewport

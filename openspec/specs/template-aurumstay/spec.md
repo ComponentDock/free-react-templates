@@ -194,7 +194,7 @@ Extracted from the ColorLib Hiroto preview stylesheet:
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Header: sticky navbar, address, phone, nav links, "Book Now" CTA

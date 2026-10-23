@@ -131,7 +131,7 @@ Built as a responsive React 19 + Tailwind CSS 4 + TypeScript template with 100% 
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** they see site navigation, contact details, newsletter form, and the Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `npm run spec:validate` passes
 - [ ] `scripts/verify-app.sh molaris` passes (typecheck, lint, test:coverage 100%, build)

@@ -212,7 +212,7 @@ Feature: Footer
 - **THEN** a footer is visible
 - **AND** it contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render without errors
 - [ ] Navbar is sticky/fixed and responsive

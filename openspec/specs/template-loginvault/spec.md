@@ -219,7 +219,7 @@ The page footer SHALL link to Component Dock.
 - **THEN** the page footer links to https://www.componentdock.com/
 - **AND** the footer text reads "Made with Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with full-viewport gradient background (cyan → blue → magenta)
 - [ ] Decorative network/constellation overlay is visible over gradient

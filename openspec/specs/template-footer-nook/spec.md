@@ -138,7 +138,7 @@ featuring a multi-column link layout with a contact form sidebar.
 - **AND** the sidebar stretch pseudo-element is hidden
 - **AND** the layout stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero section renders with centered heading and correct padding
 - [ ] Footer background is #f1f6f5 (light mint)

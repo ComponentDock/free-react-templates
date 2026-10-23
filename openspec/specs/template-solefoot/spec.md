@@ -161,7 +161,7 @@ Background:
 - **THEN** the footer MUST link to https://www.componentdock.com/
 - **AND** the footer link text says "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero heading renders centered with white background
 - [ ] Footer uses dark background `#272727`

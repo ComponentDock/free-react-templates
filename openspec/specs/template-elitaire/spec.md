@@ -178,7 +178,7 @@ Feature: Elitaire — Photography Portfolio Template
 - **AND** the main content takes full width
 - **AND** photo grid stacks to fewer columns
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render in correct page order
 - [ ] Brand accent color `#df0e62` used for buttons, active states, section bars

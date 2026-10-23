@@ -150,7 +150,7 @@ Extracted from the live preview CSS (`style.css`).
 - **AND** a copyright line with Component Dock attribution is shown
 - **AND** the footer has a light lavender background (`#fcf8ff`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with correct links and responsive hamburger
 - [ ] Hero banner has gradient CTA buttons, portrait image, correct copy

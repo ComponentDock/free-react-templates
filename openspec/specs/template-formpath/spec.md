@@ -161,7 +161,7 @@ patterns.
 - **AND** the step indicator should remain visible
 - **AND** inputs and buttons should be full-width within the card
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered wizard card on light background
 - [ ] Step indicator shows 4 numbered circles with connecting lines

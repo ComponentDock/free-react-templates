@@ -114,7 +114,7 @@ Deploy target: `skyquest.free.componentdock.com`.
 - **GIVEN** the page has loaded
 - **THEN** a footer is present with a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-viewport background image loads
 - [ ] Gradient card is visible and centered

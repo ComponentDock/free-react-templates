@@ -184,7 +184,7 @@ Recreation of the ColorLib "Cakes" template for a bakery / cake shop landing pag
 - **GIVEN** the user scrolls to the footer bottom
 - **THEN** the copyright line contains a link to "https://www.componentdock.com/"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches the original 1:1 (Header → Hero → Popular → About → Services → Video → Testimonials → Instagram → Footer)
 - [ ] Brand color #F04506 used for all CTAs, links, and accent spans

@@ -206,7 +206,7 @@ The ColorLib source name "Satner" is FORBIDDEN as the app name.
 - **AND** the portfolio grid stacks to 1 column
 - **AND** the newsletter input width reduces
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in the correct order
 - [ ] Navbar is fixed/sticky with shadow on scroll

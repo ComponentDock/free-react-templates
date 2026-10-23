@@ -186,7 +186,7 @@ Extracted from `https://preview.colorlib.com/theme/credit/style.css`:
 - **THEN** a copyright area is shown at the very bottom
 - **AND** it includes the site name and a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: top contact bar + sticky navbar with logo and nav links
 - [ ] Hero: full-width image slider with dark overlay, headlines, indicators

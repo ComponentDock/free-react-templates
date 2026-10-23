@@ -94,7 +94,7 @@ Users SHALL see a footer with quick links, contact information, and a required l
 - **WHEN** the user clicks the go-to-top button
 - **THEN** the page scrolls smoothly to the top
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation (`npm run typecheck`)
 - [ ] Linting (`npm run lint`)

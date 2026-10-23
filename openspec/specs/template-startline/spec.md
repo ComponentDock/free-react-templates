@@ -57,7 +57,7 @@ As a user visiting the StartLine landing page, I want to explore the SaaS featur
 - **WHEN** I check the footer content
 - **THEN** I should see help, about, and support links, a newsletter subscription form, and the required copyright footer linking `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully (`npm run build`)
 - [ ] Typecheck passes (`npm run typecheck`)

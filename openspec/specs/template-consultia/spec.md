@@ -148,7 +148,7 @@ with newsletter, and a copyright bar with social links.
 - **THEN** the navbar shows a hamburger toggle button
 - **AND** navigation links collapse into a dropdown menu
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order matching the original
 - [ ] Coral gradient (#feb47b → #ff7e5f) applied to all CTA buttons

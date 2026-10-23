@@ -146,7 +146,7 @@ Extracted from the live preview CSS (`https://colorlib.com/etc/searchf/colorlib-
 - **WHEN** the user hovers over an inactive tab
 - **THEN** the tab text color transitions to orange (#ff8300)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Three tabs (Hotels, Car, Flight) render and switch correctly
 - [ ] Hotels tab active by default with correct form fields

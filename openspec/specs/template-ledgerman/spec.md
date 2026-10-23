@@ -162,7 +162,7 @@ This is a **sidebar layout** — the author panel sits fixed on the left with na
 - **AND** a "Made with ♥" attribution is displayed
 - **AND** a link to Component Dock is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar layout renders correctly (fixed left panel on desktop)
 - [ ] Hero section has full-height background image with overlay

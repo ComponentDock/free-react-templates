@@ -139,7 +139,7 @@ The application SHALL NOT contain any references to ColorLib in source files.
 - **WHEN** any source file in apps/cruisine/ is inspected
 - **THEN** no file contains the string "colorlib" (case-insensitive)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: transparent over hero, brand "Cruisine" in cursive, all nav links, social icons
 - [ ] Navbar: opaque dark background on scroll with shadow

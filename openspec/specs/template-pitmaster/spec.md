@@ -124,7 +124,7 @@ Recreation of ColorLib "Steakshop" — a steakhouse restaurant single-page websi
 - **AND** footer bottom has copyright text and social icons (Facebook, Twitter, Dribbble, Behance)
 - **AND** footer links section MUST include Component Dock attribution (per conventions)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order: Hero → Banner Bottom → Breakfast → Lunch → Reservation → Chef → Gallery → Brands → Footer
 - [ ] Pacifico font loaded for headings, Roboto for body

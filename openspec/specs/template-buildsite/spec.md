@@ -225,7 +225,7 @@ Order from the live preview HTML:
 - **GIVEN** the footer is visible
 - **THEN** Quick Links should include: About, Services, Projects, Contact Us
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order (11 sections)
 - [ ] Header: transparent → sticky on scroll with dark background

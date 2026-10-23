@@ -198,7 +198,7 @@ form, and testimonials. Dark overlay aesthetic with amber accent.
 - **AND** the reservation form fields stack vertically
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Playfair Display font loaded via Google Fonts
 - [ ] Brand color #fba83b used for links, prices, active tabs, service titles

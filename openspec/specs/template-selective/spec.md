@@ -133,7 +133,7 @@ Background:
 - **AND** I click the dropdown button again
 - **THEN** the search input should show placeholder "Search states"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Heading renders centered on page
 - [ ] Dropdown button shows label + "(Any)" quantity + chevron icon

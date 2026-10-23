@@ -208,7 +208,7 @@ Background:
 - **AND** specialty/menu columns stack vertically
 - **AND** the reservation form remains usable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct page order
 - [ ] Brand color `#FF6107` (orange) used for buttons and accents

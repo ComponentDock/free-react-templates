@@ -185,7 +185,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** a copyright line is centered at the bottom
 - **AND** the footer links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec matches section order from live preview DOM exactly
 - [ ] Design tokens (colors, fonts, radii) match extracted CSS values

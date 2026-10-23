@@ -128,7 +128,7 @@ Background:
 - **AND** heading icon badges use the brand accent color
 - **AND** the subscribe button uses a lighter variant #fe8ce3
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Footer background is the correct purple gradient (#2a1a5e → #5126a7 at 45deg)
 - [ ] All 4 columns present: About, Latest News, Information, Instagram

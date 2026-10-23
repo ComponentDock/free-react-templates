@@ -142,7 +142,7 @@ As a mobile visitor, the layout adapts to smaller screens.
 - **THEN** the sidebar slides in from the left
 - **AND** the main content is partially visible or overlaid
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar width ~280px, white background
 - [ ] Circular avatar with gray border

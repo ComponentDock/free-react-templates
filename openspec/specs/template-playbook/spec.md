@@ -222,7 +222,7 @@ Dock (`https://www.componentdock.com/`) instead.
 6. **CTA** — full-width animated section with "Start a Project." / "Let's chat we are good people." text swap, red background fill on hover
 7. **Footer** — copyright left, social icons (Facebook/Twitter/Dribbble/Instagram) right, border-top separator, Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render (navbar, hero, portfolio, what-we-do, blog, CTA, footer)
 - [ ] System font stack used (no custom Google Font)

@@ -133,7 +133,7 @@ Recreation of ColorLib "Carrentals" template as a React 19 + Vite + Tailwind 4 +
 - **AND** Quick Links, Resources, and Support sections are present
 - **AND** the footer contains a link to "Component Dock" (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, white bg, logo, mobile responsive
 - [ ] Hero: full viewport, background image, heading, dropdown selector, no overflow

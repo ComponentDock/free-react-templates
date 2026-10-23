@@ -185,7 +185,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [x] Vite + React 19 + Tailwind CSS 4 setup typechecks clean
 - [x] All three rows toggle with single-open accordion behaviour

@@ -158,7 +158,7 @@ Extracted from `css/style.css` (preview) and HTML structure:
 - **THEN** the page section remains vertically centered
 - **AND** the modal adjusts to fit the screen width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page section renders with heading and launch button
 - [ ] Modal opens on launch button click

@@ -203,7 +203,7 @@ Feature: Footer
 - **AND** social media icon links are displayed (Facebook, Instagram, Spotify, Twitter)
 - **AND** a "Component Dock" attribution link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: dark purple bg, centered nav, logo with equalizer bars icon
 - [ ] Hero: fullscreen slider, "your music." heading, ticket form with dropdown + input + button

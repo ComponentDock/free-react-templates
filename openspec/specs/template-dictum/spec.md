@@ -228,7 +228,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections present in correct order: Top Bar, Navbar, Hero, About Us, Team, How It Works, Services, Testimonials, Blog, Contact, CTA Banner, Footer
 - [ ] Font family is Roboto (loaded via Google Fonts in index.html)

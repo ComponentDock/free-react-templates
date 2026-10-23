@@ -108,7 +108,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide icons, Vitest.
 - **WHEN** the footer renders
 - **THEN** it displays Contact Us, Opening Times, Latest Posts, Gallery thumbnail grid, and a link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation (`npx tsc --noEmit`)
 - [ ] Lint check (`npm run lint`)

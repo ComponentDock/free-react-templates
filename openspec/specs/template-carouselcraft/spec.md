@@ -59,7 +59,7 @@ Recreation of ColorLib **Carousel 15** (`https://colorlib.com/wp/template/carous
 - A call-to-action banner prompting users to explore or download.
 - Footer with copyright, social links, and mandatory Component Dock attribution (`https://www.componentdock.com/`).
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes cleanly.
 - [ ] 100% test coverage maintained on all new components.

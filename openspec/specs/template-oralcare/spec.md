@@ -100,7 +100,7 @@ As a visitor, I want to see footer links and the required Component Dock attribu
 - **GIVEN** the user scrolls to the footer
 - **THEN** it should display copyright, quick links, and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App workspace `@free-react-templates/oralcare` created at `apps/oralcare/`
 - [ ] TypeScript strict typecheck passes (`npm run typecheck`)

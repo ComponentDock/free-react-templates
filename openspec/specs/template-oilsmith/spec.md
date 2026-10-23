@@ -225,7 +225,7 @@ Background:
 
 - **THEN** the footer lists services: Oil Change, Batteries, Tow Truck, Tire Change, Engine Repair
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: white bg, dark text, amber hover underlines, brand with amber period
 - [ ] Hero: full-width carousel, dark overlay, white text, amber accents, "Book an appointment" CTA

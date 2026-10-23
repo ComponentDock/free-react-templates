@@ -205,7 +205,7 @@ Extracted from `https://preview.colorlib.com/theme/carries/style.css`:
 - **GIVEN** the footer is rendered
 - **THEN** the background color is dark gray-blue
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, links, utility icons, sticky behavior, mobile hamburger
 - [ ] Hero: background image slides, headline, subtitle, 2 CTA buttons

@@ -170,7 +170,7 @@ Background:
 - **THEN** product grids should show 2 columns
 - **AND** category cards should stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order: Announcement → Header → Hero → Marquee → Categories → New Arrivals → Image+Text → Features → Journal → Footer
 - [ ] Design tokens match: accent #c8553d, Assistant font, 0px border-radius, color scheme sections

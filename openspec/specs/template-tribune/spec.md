@@ -161,7 +161,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original (Hero → Services → About → Schedule → Gallery → Testimonials → Pricing → Speakers → Newsletter → Footer)
 - [ ] Primary blue (#1162fb) used on buttons and services strip

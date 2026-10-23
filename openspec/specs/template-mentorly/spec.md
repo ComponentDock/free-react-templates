@@ -130,7 +130,7 @@ Recreation of the ColorLib "Coach" template as a React 19 + Vite + Tailwind 4 + 
 - **AND** multi-column grids collapse to single or two columns
 - **AND** the hero heading font size reduces to 2rem
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order
 - [ ] Brand yellow (#ffdd40) used on hero background only

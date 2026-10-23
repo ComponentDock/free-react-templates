@@ -129,7 +129,7 @@ a standalone React component page.
 - **AND** tags can be removed via keyboard
 - **AND** the search input is focusable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered layout with heading and multiselect on light gray (#efefef) background
 - [ ] Font is Roboto (loaded via Google Fonts or system fallback)

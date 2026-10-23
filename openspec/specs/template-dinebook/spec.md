@@ -168,7 +168,7 @@ Extracted from the original `css/style.css` at the preview URL.
 - **THEN** a footer link to "https://www.componentdock.com/" is visible
 - **AND** the link text reads "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 3-step wizard with correct section order: Book a table → Contact details → Confirmation
 - [ ] Split layout: image left (~59%) / form panel right (~41%)

@@ -117,7 +117,7 @@ The original is a Bootstrap 4 law firm template with:
 - As a visitor I see a multi-column footer with logo, quick links, practice area links, newsletter, and social icons
 - Footer has a dark background with light text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header is sticky on scroll with logo, nav links, and phone CTA
 - [ ] Hero section has background image, subtitle, heading, paragraph, and CTA button

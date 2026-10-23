@@ -118,7 +118,7 @@ Extracted from the live preview stylesheet (`style.css`):
 - **THEN** a circular blue (`#007AFF`) scroll-to-top button appears in the bottom-right corner
 - **AND** clicking it smoothly scrolls to the top of the page
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo + 5 nav links + phone CTA
 - [ ] Hero: full-width bg image, animated headline, pill CTA button

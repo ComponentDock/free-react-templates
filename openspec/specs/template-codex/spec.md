@@ -194,7 +194,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page displays "Register Wizard" heading in white, uppercase, bold
 - [ ] Full-page background image covers the viewport (use Picsum placeholder)

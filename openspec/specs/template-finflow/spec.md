@@ -246,7 +246,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero carousel renders 3 slides with correct headings and CTA buttons
 - [ ] Sticky navbar with dropdown navigation works on desktop

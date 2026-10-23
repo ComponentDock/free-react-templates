@@ -216,7 +216,7 @@ src/
 The template is a single-section, single-component page. No navbar, no footer
 section in the original — just the centered dropdown demo.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Lato font loads via Google Fonts link in index.html
 - [ ] Page background is #f8f9fd

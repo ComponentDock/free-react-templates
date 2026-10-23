@@ -162,7 +162,7 @@ two-column split:
 - **THEN** a footer link to "https://www.componentdock.com/" is present
 - **AND** the link text references "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Pink full-viewport background renders
 - [ ] White card centered with subtle shadow

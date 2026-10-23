@@ -143,7 +143,7 @@ Extracted from the live preview CSS (`style.css`) and inline styles.
 - **THEN** there is a link to https://www.componentdock.com/
 - **AND** the link text includes "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TopBar renders with contact info on black background
 - [ ] Navbar sticky with scroll behavior (transparent → solid)

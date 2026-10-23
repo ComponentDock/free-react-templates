@@ -188,7 +188,7 @@ Extracted from `https://preview.colorlib.com/theme/politics/css/main.css`:
 - **AND** the bottom has copyright text and social icon squares
 - **AND** the footer links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: fixed position, top bar with social icons + contact, navbar with logo + nav links
 - [ ] Hero: fullscreen with dark overlay, subtitle, heading, CTA button (square corners)

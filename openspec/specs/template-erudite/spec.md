@@ -176,7 +176,7 @@ Extracted from the live preview at https://preview.colorlib.com/theme/ezuca/ and
 - **THEN** it shows a copyright notice with the current year
 - **AND** it shows app store download links
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in the correct order matching the original
 - [ ] Design tokens (colors, fonts, spacing) match the original CSS

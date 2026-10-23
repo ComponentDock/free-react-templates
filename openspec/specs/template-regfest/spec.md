@@ -91,7 +91,7 @@ Extracted from the screenshot (preview unreachable, CSS not fetchable):
 - **THEN** the two columns stack vertically
 - **AND** the image appears above the form
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Gradient background fills entire viewport
 - [ ] Card is centered horizontally and vertically

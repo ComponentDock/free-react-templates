@@ -204,7 +204,7 @@ Background:
 - **THEN** it has a parallax background image effect
 - **AND** text overlays are readable with sufficient contrast
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct page order
 - [ ] Brand color `#f81c1c` used for buttons and accents

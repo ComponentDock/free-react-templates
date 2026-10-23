@@ -166,7 +166,7 @@ The original uses icomoon + flaticon icon fonts. In the React recreation, use `l
 - **AND** the gallery grid reduces columns
 - **AND** the contact form fields stack
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections implemented in correct order (hero → features → about/amortization → about-us → team → services → pricing → faq → testimonials → gallery → blog → contact → footer)
 - [ ] Navbar sticky with scroll behavior (white bg + shadow when scrolled)

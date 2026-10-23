@@ -241,7 +241,7 @@ live sheet; do not build them from the screenshot, take the palette above:
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Toolbar renders with correct month title, today/prev/next buttons
 - [ ] Toolbar buttons styled per design tokens (colors, radius, hover)

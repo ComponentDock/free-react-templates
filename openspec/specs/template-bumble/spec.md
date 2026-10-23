@@ -164,7 +164,7 @@ Recreation of the ColorLib "Bee" template as a construction company landing page
 - **AND** the 4-column grids stack to single column
 - **AND** the hero slider text remains readable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top info bar renders with 3 contact items + icons
 - [ ] Dark navbar with logo, nav links, and search form

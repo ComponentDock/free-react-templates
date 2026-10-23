@@ -139,7 +139,7 @@ Recreation of ColorLib "Marco 2" — a free Bootstrap 4 lawyer/attorney website 
 - **AND** split layout sections stack vertically
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with transparent background over hero, transitions to white on scroll
 - [ ] Hero split layout: 40% gray left, 60% image right

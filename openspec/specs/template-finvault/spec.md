@@ -226,7 +226,7 @@ Background:
 - **AND** the footer has a copyright line
 - **AND** the footer links to "https://www.componentdock.com/" branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 15 sections present in correct order
 - [ ] Navbar is sticky; mobile hamburger opens slide-out menu

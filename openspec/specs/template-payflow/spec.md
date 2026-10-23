@@ -122,7 +122,7 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 4-step wizard with fade transitions works correctly
 - [ ] All form fields render with correct labels and types

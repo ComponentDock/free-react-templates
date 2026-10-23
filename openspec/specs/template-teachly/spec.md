@@ -204,7 +204,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** a copyright line
 - **AND** a link to https://www.componentdock.com/ branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with correct links and transparent background
 - [ ] Banner displays heading, paragraph, and search form

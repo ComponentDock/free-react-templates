@@ -111,7 +111,7 @@ live sheet; do not build them from the screenshot, take the palette above:
 - **WHEN** they inspect the footer
 - **THEN** they see copyright info and a branded link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation (`npm run typecheck`) passes without errors.
 - [ ] All unit tests pass with **100% coverage** (`npm run test:coverage`).

@@ -115,7 +115,7 @@ The original template shows:
 - **AND** the destination grids stack to 1 column
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Fonts: Raleway for body, Playfair Display for headings
 - [ ] Brand colors: #000 (black CTA), #007bff (primary blue), #3395ff (hover)

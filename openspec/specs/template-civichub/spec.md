@@ -125,7 +125,7 @@ It recreates the ColorLib **Civic** design (https://colorlib.com/wp/template/civ
 - **GIVEN** user scrolls to footer, THEN copyright text with "Component Dock" link is visible
 - **GIVEN** user clicks "Component Dock" link, THEN browser navigates to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Josefin Sans font loaded via Google Fonts

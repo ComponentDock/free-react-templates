@@ -92,7 +92,7 @@ Recreation of ColorLib **Universityedu** (`https://colorlib.com/wp/template/univ
 - **Scenarios**:
 - **GIVEN** the user reaches the page bottom, when viewing footer links, then the Component Dock attribution link is present and valid
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `npm run spec:validate` passes
 - [ ] Per-app gate `scripts/verify-app.sh campusly` passes (typecheck + lint + 100% coverage tests + build)

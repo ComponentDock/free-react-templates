@@ -167,7 +167,7 @@ partner logo carousel and social icon circles.
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections rendered in correct order
 - [ ] Brand gradient (#ee8425 → #f9488b) applied to buttons, active tabs, badges

@@ -112,7 +112,7 @@ The app source files SHALL NOT contain any references to ColorLib.
 - **WHEN** searching all files in apps/confwell/src/
 - **THEN** no file contains the string "colorlib" (case-insensitive)
 
-## Verification Checklist
+## Verification checklist
 
 - [x] Spec exists at `openspec/specs/template-confwell/spec.md`
 - [x] Design tokens match reference CSS

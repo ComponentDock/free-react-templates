@@ -186,7 +186,7 @@ Users SHALL see a footer with about text, social links, navigation columns, and 
 - **WHEN** the footer is rendered
 - **THEN** a link to "Component Dock" (https://www.componentdock.com/) is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar sticky behavior works on scroll
 - [ ] Hero carousel auto-advances and responds to prev/next

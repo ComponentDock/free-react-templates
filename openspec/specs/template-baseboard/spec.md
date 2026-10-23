@@ -145,7 +145,7 @@ and a diagonal box-shadow.
 - **AND** all social icon links have accessible labels or aria-labels
 - **AND** the footer uses semantic HTML (footer, nav, ul, li)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Footer background is #141d2a (dark navy)
 - [ ] CTA banner is purple (#8186d5) with diagonal box-shadow

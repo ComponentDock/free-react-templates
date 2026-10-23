@@ -138,7 +138,7 @@ Extracted from live preview CSS (`css/style.css`) at `preview.colorlib.com/theme
 - **AND** a copyright line appears at the bottom center
 - **AND** the footer links to Component Dock (replacing Colorlib attribution)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top utility bar with contact info renders
 - [ ] Sticky navbar with logo, nav links, and social icons

@@ -158,7 +158,7 @@ Recreation of ColorLib **Ozberk** — a fullscreen business website template wit
 - **GIVEN** the user hovers over a footer link
 - **THEN** the link color changes to gold (#edbf3a)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: Nav → Banner → Team Force → Features → Video → Quote → Service → Contact → Footer
 - [ ] Font: Poppins loaded from Google Fonts

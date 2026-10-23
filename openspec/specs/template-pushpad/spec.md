@@ -44,7 +44,7 @@ The app SHALL render a footer containing copyright and a mandatory link to Compo
 - **WHEN** the user scrolls to the bottom of the page
 - **THEN** the footer displays copyright and links to `https://www.componentdock.com/` as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections from Bootstrap Buttons 02 rendered
 - [ ] Tailwind CSS tokens match design

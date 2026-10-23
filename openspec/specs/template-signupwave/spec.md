@@ -148,7 +148,7 @@ Extracted from `css/style.css` (preview) and the template HTML:
 - **THEN** a link to "https://www.componentdock.com/" is present
 - **AND** the link text mentions "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout renders correctly at 100vh
 - [ ] Background image covers the right panel

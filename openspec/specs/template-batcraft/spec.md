@@ -210,7 +210,7 @@ Fetched 2026-09-10. Structure extracted from rendered HTML:
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 7 sections present in correct order: Header → Hero → About → Work → Blog → Subscribe → Footer
 - [ ] Hero: 3-slide carousel with split layout (image left 75%, text right 25%)

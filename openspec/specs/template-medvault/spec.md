@@ -210,7 +210,7 @@ Feature: Footer
 - **THEN** a copyright notice is shown
 - **AND** a link to "https://www.componentdock.com/" is present (branded "Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with correct brand name and all nav links
 - [ ] Hero cover displays at full viewport height with background image

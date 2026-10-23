@@ -52,7 +52,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation passes (`npm run spec:validate`)
 - [ ] Per-app checks pass (`scripts/verify-app.sh bistro`)

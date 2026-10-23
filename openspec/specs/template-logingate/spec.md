@@ -178,7 +178,7 @@ The template SHALL include a footer linking to Component Dock.
 - **AND** the link text reads "More templates at Component Dock"
 - **AND** the link opens in a new tab
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Centered card layout on light gray (#f0f0f0) background
 - [ ] White card with shadow and rounded corners (~8px)

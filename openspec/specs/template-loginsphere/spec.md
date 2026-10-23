@@ -131,7 +131,7 @@ Single-page centered layout:
 - **AND** the form fields should stack vertically
 - **AND** the Remember Me / Forgot Password row should adapt to the viewport
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page background is #f8f9fd
 - [ ] Card is white with 5px border-radius and shadow

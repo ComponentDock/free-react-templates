@@ -118,7 +118,7 @@ Recreation of ColorLib **Ronin** — a personal portfolio / creative agency temp
 - **AND** a "Follow Me" column with social icons (Facebook, Twitter, Dribbble, Behance)
 - **AND** a copyright line linking to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with transparent background and all nav links
 - [ ] Hero section shows split layout (image + text) with gradient CTA button

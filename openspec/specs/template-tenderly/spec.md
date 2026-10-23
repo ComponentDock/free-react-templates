@@ -263,7 +263,7 @@ Feature: Footer
 - **AND** the bottom bar has a slightly lighter dark background (#053336)
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: brand text visible, all 5 nav links present, mobile hamburger toggle works
 - [ ] Hero: full-viewport, gradient overlay, Patrick Hand font on h1, both CTAs visible

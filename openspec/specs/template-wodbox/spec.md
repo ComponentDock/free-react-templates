@@ -198,7 +198,7 @@ Background:
 - **AND** pricing cards stack vertically
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct page order
 - [ ] Brand color `#ff9908` used for buttons, header border, prices, CTA

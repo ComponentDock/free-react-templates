@@ -187,7 +187,7 @@ Background:
 - **THEN** two-column sections stack into a single column
 - **AND** section padding is reduced
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: promo bar + countdown + sticky nav + phone + social icons
 - [ ] Hero: full-width bg image + dark overlay + tagline + heading + CTA button

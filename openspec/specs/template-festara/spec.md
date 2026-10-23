@@ -166,7 +166,7 @@ The template is a dark-purple-accented event/conference landing page with:
 - **AND** multi-column layouts stack vertically
 - **AND** pricing cards stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header renders with logo, nav links, and CTA button
 - [ ] Hero section has background image, heading, subtitle, buttons, and countdown

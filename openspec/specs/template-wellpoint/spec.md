@@ -188,7 +188,7 @@ https://preview.colorlib.com/theme/medica/
 - **AND** it shows utility links: FAQ, Book, Appointment, Contacts, email
 - **AND** the bar has a gradient background (cyan to blue)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections from the original are present in the correct order
 - [ ] Design tokens match: Montserrat font, #2f88fd primary blue, gradient

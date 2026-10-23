@@ -106,7 +106,7 @@ Extracted from the original `css/style.css`:
 - **WHEN** the user clicks Next without filling any fields
 - **THEN** validation errors are shown for required fields
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Matches section structure and order 1:1 (About → Account → Address)
 - [ ] Uses Poppins font via Google Fonts (not bundled)

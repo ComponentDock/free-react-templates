@@ -220,7 +220,7 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 - **AND** social media icons are in the About column
 - **AND** a "Made with Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, brand + 7 nav links, mobile hamburger
 - [ ] Hero: bg image + dark overlay, subheading, heading, "Learn more" CTA

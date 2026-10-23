@@ -156,7 +156,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - CTA: full-width background image + primary-color overlay
 - Footer: dark bg (`#242424` / `#3c3c3c`), 4-column link layout
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, 5 nav links, Contact Us button
 - [ ] Hero: background image overlay, headline, subtitle, 4-field search form

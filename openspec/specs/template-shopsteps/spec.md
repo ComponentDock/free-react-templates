@@ -182,7 +182,7 @@ Visual layout from the HTML structure and CSS:
 - **AND** the step indicator is keyboard navigable
 - **AND** focus states are visible on interactive elements
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Centered white card on background image
 - [ ] 4-step progress indicator with arrows

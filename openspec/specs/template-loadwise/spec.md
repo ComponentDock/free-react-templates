@@ -440,7 +440,7 @@ So that the recreation is visually faithful
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: sticky, dual logo, nav with submenus, social icons with hover rotation, "Get Free Quote" CTA
 - [ ] Hero: 3 slides, split panels (red/white), correct copy, background images (picsum placeholders), prev/next arrows, gradient overlay

@@ -174,7 +174,7 @@ Background:
 - **AND** buttons have pill shape (border-radius: 50px)
 - **AND** button hover triggers a skewed sweep animation
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order (header, banner, features, categories, latest products, coming products, exclusive deal, brand logos, deals of the week, footer)
 - [ ] White theme applied: `#ffffff` body bg, `#222222` headings, `#777777` body text

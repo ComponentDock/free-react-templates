@@ -198,7 +198,7 @@ The system SHALL be responsive and adapt the layout for mobile viewports.
 - **AND** the footer columns SHALL stack vertically
 - **AND** the hero headline SHALL scale down proportionally
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 5 sections render in correct DOM order (header → hero → gallery → blog → footer)
 - [ ] Hero slider cycles through 3 slides with animation

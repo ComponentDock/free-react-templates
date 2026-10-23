@@ -112,7 +112,7 @@ Background:
 - **AND** a "Made with Component Dock" attribution link to componentdock.com must be present
 - **AND** the copyright text should not reference Colorlib
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the original section order (8 sections)
 - [ ] Brand color #DB9A64 used consistently for accents, buttons, and highlights

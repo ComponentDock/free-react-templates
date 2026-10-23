@@ -167,7 +167,7 @@ awareness and showcase donation causes, volunteer teams, and events.
 - **AND** the about section stacks image above text
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the original order: Header → Hero → Services → About → Causes → Events → Team → CTA → Testimonials → Blog → Counter → Footer
 - [ ] Brand green `#09cc7f` used for primary buttons and accents

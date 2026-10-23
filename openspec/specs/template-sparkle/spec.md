@@ -245,7 +245,7 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 - **AND** social media icons are in the About column
 - **AND** a "Made with Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, brand + 6 nav links + "Request A Quote" CTA, mobile hamburger
 - [ ] Hero: bg image + dark overlay, heading, description, "Request A Quote" CTA

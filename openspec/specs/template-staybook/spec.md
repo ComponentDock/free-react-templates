@@ -217,7 +217,7 @@ The template SHALL be responsive across desktop, tablet, and mobile.
 - **AND** form rows stack vertically (single column)
 - **AND** buttons are full-width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split layout: image panel left, wizard form right
 - [ ] "Your reservation" heading on image panel

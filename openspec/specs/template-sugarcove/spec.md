@@ -199,7 +199,7 @@ The site SHALL be fully responsive across desktop, tablet, and mobile viewports.
 - **WHEN** the viewport is below 768px
 - **THEN** all sections stack vertically, the hamburger menu is shown, and product cards display in a single column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sticky header with logo, nav, CTA buttons; sticky on scroll with shadow
 - [ ] Hero section with background image, "Delicious" Lobster watermark, headline, gradient CTA button

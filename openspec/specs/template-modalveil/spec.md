@@ -132,7 +132,7 @@ conversion — the image draws attention while the form captures leads.
 - **AND** the image appears above the form content
 - **AND** all form fields remain usable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered "Modal #5" heading and launch button
 - [ ] Launch button triggers modal with split-screen layout

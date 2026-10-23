@@ -123,7 +123,7 @@ Recreation of ColorLib "Colorlib Wizard 26" — a 3-step meeting-room booking wi
 - **AND** date dropdowns become full-width and stacked
 - **AND** the step counter text ("1/3") is hidden
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page loads with dark background (#383a4f) and centered wizard card
 - [ ] Three-step horizontal indicator with correct colors

@@ -133,7 +133,7 @@ The template is a **centered wizard component** with two visual halves:
 - **THEN** the hero image is hidden or stacked above the form panel
 - **AND** the form panel takes full width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero image panel renders with food photography placeholder
 - [ ] Dark form panel overlaps hero image correctly

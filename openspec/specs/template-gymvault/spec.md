@@ -132,7 +132,7 @@ Extracted from `styles/main_styles.css` on the live preview:
 - **AND** three columns show "talk to us", "e-mail", and "location" contact info
 - **AND** a copyright bar with "Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header renders with logo, nav links, social icons, hamburger toggle
 - [ ] Hero slider displays background image with overlay, subtitle, headline, CTA button

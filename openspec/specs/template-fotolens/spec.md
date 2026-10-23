@@ -146,7 +146,7 @@ Feature: Fotolens — Photography Portfolio Template
 - **AND** specialty/gallery columns stack vertically
 - **AND** the CTA section stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 7 sections render in correct page order
 - [ ] Brand color `#dc3545` used for CTA button

@@ -173,7 +173,7 @@ Feature: Footer
 - **AND** a copyright notice with the current year is shown
 - **AND** a link to Component Dock is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: brand name, all nav links, sticky behavior, mobile hamburger toggle
 - [ ] Hero: full-screen bg image, dark overlay, heading + CTA button, social sidebar

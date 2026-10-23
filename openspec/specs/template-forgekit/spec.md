@@ -214,7 +214,7 @@ The template SHALL render a dark footer with About Us blurb, Features links, Fol
 - **THEN** the copyright links to `https://www.componentdock.com/`
 - **THEN** the link text reads "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order matching the ColorLib preview
 - [ ] Brand color `#32dbc6` is used consistently for accents and CTAs

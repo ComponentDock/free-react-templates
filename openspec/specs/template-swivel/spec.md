@@ -65,7 +65,7 @@ New original name: `swivel` (`apps/swivel`).
 - **WHEN** the footer renders
 - **THEN** it displays copyright, legal links, and a clear attribution link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated (`npm run spec:validate`)
 - [ ] Tests written and passing with 100% coverage

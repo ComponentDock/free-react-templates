@@ -130,7 +130,7 @@ Recreation of ColorLib **AutoMotive** (`https://colorlib.com/wp/template/automot
 - **AND** a copyright bar at the bottom with social icons
 - **AND** a link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder created at `apps/revline` with valid `package.json` (`@free-react-templates/revline`)
 - [ ] `vite.config.ts` includes `injectUiSource()` helper

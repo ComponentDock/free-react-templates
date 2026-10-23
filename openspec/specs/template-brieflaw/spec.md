@@ -65,7 +65,7 @@
 - **GIVEN** the user scrolls to the bottom
 - **THEN** they see copyright info and the mandatory "Made with Component Dock" link (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

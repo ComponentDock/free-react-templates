@@ -77,7 +77,7 @@ As a visitor, I want footer navigation, company info, and Component Dock attribu
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes
 - [ ] 100% test coverage (`npm run test:coverage`)

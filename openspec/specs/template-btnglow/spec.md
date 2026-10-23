@@ -78,7 +78,7 @@ Recreation of ColorLib **Bootstrap Buttons V12** (`https://colorlib.com/wp/templ
 - **GIVEN** the form controls section is visible
 - **THEN** colored radios and block-level buttons render properly
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated via `npm run spec:validate`
 - [ ] 100% test coverage on all components

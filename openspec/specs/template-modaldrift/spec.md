@@ -156,7 +156,7 @@ detailed user information.
 - **THEN** the input accepts text
 - **AND** the placeholder text indicates the expected format
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered "Modal #6" heading and launch button
 - [ ] Launch button triggers modal with split-screen layout

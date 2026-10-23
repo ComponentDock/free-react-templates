@@ -196,7 +196,7 @@ Feature: Footer
 - **WHEN** the user views the copyright line
 - **THEN** the text includes a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar is sticky on scroll, collapses to hamburger on mobile
 - [ ] Hero has background image with dark overlay, heading, subtext, CTA

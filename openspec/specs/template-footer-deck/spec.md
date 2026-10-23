@@ -142,7 +142,7 @@ The footer SHALL be responsive — single column on mobile, two-column split on 
 - **THEN** the left half shows three category columns
 - **AND** the right half shows social icons and subscribe form
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Font: Poppins loaded from Google Fonts via `<link>` in `index.html`
 - [ ] Footer background: `#f8f1f1`

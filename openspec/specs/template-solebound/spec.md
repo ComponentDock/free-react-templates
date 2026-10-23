@@ -167,7 +167,7 @@ The template SHALL render a footer with newsletter signup, navigation links, and
 - **AND** social icons are displayed (Instagram, Facebook, Twitter, YouTube, TikTok)
 - **AND** a copyright line and Component Dock attribution link are at the bottom
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Announcement bar renders with gradient and promo text
 - [ ] Header is sticky with backdrop-blur, logo, nav links, utility icons

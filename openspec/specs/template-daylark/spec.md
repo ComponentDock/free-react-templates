@@ -48,7 +48,7 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 
 - A clean footer with copyright and mandatory link to `https://www.componentdock.com/` ("Component Dock").
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

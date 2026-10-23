@@ -182,7 +182,7 @@ The page SHALL render a footer with business hours, inspiration links, about lin
 - **WHEN** the page loads
 - **THEN** the footer contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] DM Sans font loaded from Google Fonts
 - [ ] Hero slider with heading and CTA

@@ -64,7 +64,7 @@ So that I can copy or inspect production-ready Tailwind/React buttons.
 - **WHEN** viewing the footer
 - **THEN** it displays copyright and a link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated (`npm run spec:validate`)
 - [ ] 100% test coverage on new components

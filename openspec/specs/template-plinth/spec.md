@@ -139,7 +139,7 @@ Library with 100% coverage enforced.
 - **AND** social icons have accessible labels
 - **AND** the footer uses semantic HTML elements
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Footer has dark navy background (`#141d2a`)
 - [ ] CTA banner has lavender background (`#8186d5`)

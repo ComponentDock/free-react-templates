@@ -124,7 +124,7 @@ Recreation of ColorLib **Auction** (`https://colorlib.com/wp/template/auction/`)
 - **AND** the about section stacks vertically
 - **AND** footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder created at `apps/lotwise` with valid `package.json` (`@free-react-templates/lotwise`)
 - [ ] `vite.config.ts` includes `injectUiSource()` helper

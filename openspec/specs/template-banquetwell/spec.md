@@ -125,7 +125,7 @@ So that I can explore the menu and make reservations
 - **WHEN** I tap the hamburger
 - **THEN** a full-screen overlay menu appears with all nav links
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: sticky, logo text, nav links, reservation phone
 - [ ] Hero: parallax background, centered text, scroll indicator

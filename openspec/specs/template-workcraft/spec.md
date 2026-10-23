@@ -127,7 +127,7 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - **AND** the portfolio grid becomes 1-2 columns
 - **AND** blog cards stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order
 - [ ] Navbar is transparent/overlay with responsive hamburger

@@ -199,7 +199,7 @@ portfolio gallery, skills progress bars, testimonials, and blog section.
 - **GIVEN** I view the footer bottom
 - **THEN** I see copyright linking to componentdock.com
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: transparent overlay, logo, nav with dropdowns, "Let's Talk" button
 - [ ] Hero: background image, portrait, heading with name + role

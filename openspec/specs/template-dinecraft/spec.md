@@ -66,7 +66,7 @@ Recreation of ColorLib [Restauco](https://colorlib.com/wp/template/restauco/) (`
 - **WHEN** they click "Sent Request"
 - **THEN** a success confirmation toast or message is displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation succeeds with zero errors (`npm run typecheck`).
 - [ ] Tailwind CSS compiles successfully with brand tokens (`#FE5F41`, `#4D312C`).

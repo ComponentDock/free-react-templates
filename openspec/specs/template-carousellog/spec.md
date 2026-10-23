@@ -60,7 +60,7 @@ Recreation of ColorLib **Carousel 16** (`https://colorlib.com/wp/template/carous
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** the footer displays copyright information and a link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation passes (`npm run spec:validate`)
 - [ ] Vitest coverage at 100%

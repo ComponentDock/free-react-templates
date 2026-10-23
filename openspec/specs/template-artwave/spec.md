@@ -196,7 +196,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [x] All sections from the original are present in correct order
 - [x] Brand gradient (#3e69fe → #4cd4e3) used consistently on hero, featured, story, contact sections

@@ -156,7 +156,7 @@ Warm, minimalist checkout wizard with an earthy palette. Two-column layout insid
 - **AND** form inputs have light gray borders with rounded corners
 - **AND** the "Next" button matches the page background color with dark text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-column layout with illustration panel (left) and form card (right)
 - [ ] Progress bar with 4 labeled segments, active = orange, inactive = gray

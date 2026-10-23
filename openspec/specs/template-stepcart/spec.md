@@ -158,7 +158,7 @@ Recreation of ColorLib "Colorlib Wizard 5" — a flexible 4-step order/checkout 
 - **GIVEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Progress indicator renders 4 numbered circles connected by lines
 - [ ] Active step circle has blue background, inactive steps are gray

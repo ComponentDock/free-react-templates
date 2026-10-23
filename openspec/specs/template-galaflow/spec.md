@@ -187,7 +187,7 @@ Users SHALL see a dark purple footer with three columns and a copyright bar.
 - **AND** a newsletter form with email input is present
 - **AND** a Component Dock attribution link is present pointing to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in the correct order
 - [ ] Design tokens match: `#FDE449` primary yellow, `#302072` secondary purple, `#79709D` body text

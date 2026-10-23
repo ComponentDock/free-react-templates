@@ -161,7 +161,7 @@ Reproduced in exact order from the preview DOM:
 - **AND** the about section stacks image above text
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec reviewed for completeness (all 12 sections accounted for)
 - [ ] Design tokens match live preview CSS (brand #F0542C, navy #040E27, Raleway font, square buttons)

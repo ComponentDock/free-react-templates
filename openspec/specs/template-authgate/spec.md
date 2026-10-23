@@ -156,7 +156,7 @@ The template SHALL include a footer linking to https://www.componentdock.com/ (b
 - **WHEN** the user scrolls to the bottom of the page
 - **THEN** a footer with a link to Component Dock is visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with light gray background and centered card
 - [ ] Left panel is white with "Sign In" heading

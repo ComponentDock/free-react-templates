@@ -264,7 +264,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar: blue background, phone + email + social icons
 - [ ] Navbar: dark background, "CleanSlate" logo with yellow accent, 7 nav links, sticky, mobile hamburger
@@ -284,7 +284,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No ColorLib references in app code
 - [ ] Footer links to componentdock.com
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

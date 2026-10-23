@@ -161,7 +161,7 @@ Law firm professional template. Clean white background with pink-to-coral gradie
 - **AND** column 4 shows an Instagram feed grid
 - **AND** a copyright bar is at the bottom with Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, nav links, social icons, search, mobile hamburger
 - [ ] Hero: fullscreen overlay, headline, description, CTA button

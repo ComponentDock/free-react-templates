@@ -139,7 +139,7 @@ Feature: AuthWell login page
 - **THEN** a "Component Dock" link is visible in the footer
 - **AND** the link points to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-column split layout (illustration left, form right)
 - [ ] "Sign In" heading with subtitle

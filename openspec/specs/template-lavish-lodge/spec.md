@@ -141,7 +141,7 @@ Background:
 - **AND** the room cards stack vertically on mobile
 - **AND** the blog cards stack vertically on mobile
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order (hero → about → rooms → parallax → blog → footer)
 - [ ] Brand colors match: primary #c9ac88, dark #b99365, accent #ffc107

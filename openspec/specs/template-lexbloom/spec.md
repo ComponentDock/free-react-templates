@@ -229,7 +229,7 @@
 - **WHEN** they click the circular blue scroll-to-top button
 - **THEN** the page scrolls back to the top
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar is sticky on scroll with shadow effect
 - [ ] Hero slider has parallax background images with overlay

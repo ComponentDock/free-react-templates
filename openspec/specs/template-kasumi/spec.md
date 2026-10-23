@@ -187,7 +187,7 @@ The ColorLib preview shows a warm, elegant hotel template with:
 - **AND** shows a copyright bar at the bottom
 - **AND** the copyright links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar with address, phone, login/register, language selector
 - [ ] Navbar with logo, nav links, Book Now button

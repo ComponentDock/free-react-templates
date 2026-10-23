@@ -160,7 +160,7 @@ icons, and copyright.
 - **AND** a copyright line is at the bottom
 - **AND** the footer links to https://www.componentdock.com/ (branded "Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Template renders all sections in correct order: Header → Hero → About → CTA Banner → Services → Testimonials → Video → Blog → Newsletter → Footer
 - [ ] Design tokens match: green primary `#5AAC4E`, navy secondary `#1f2b7b`, Poppins font

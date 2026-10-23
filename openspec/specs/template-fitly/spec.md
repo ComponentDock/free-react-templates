@@ -280,7 +280,7 @@ Feature: Fitly Footer
 - **THEN** a link to https://www.componentdock.com/ is present
 - **AND** the link text references "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections from original template are present in correct order
 - [ ] Header: sticky, brand accent bg (#f15d44), logo + nav + CTA button

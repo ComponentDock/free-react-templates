@@ -213,7 +213,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: Navbar → Hero → Booking → About → Offers → Gallery → Testimonials → Events → CTA → Footer
 - [ ] Design tokens applied: brand orange `#fd7e14`, pill buttons (`rounded-full`), Mukta Mahee body font, Playfair Display headings
@@ -233,7 +233,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Google Fonts loaded via `<link>` in index.html
 - [ ] Lucide React icons used for UI icons
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

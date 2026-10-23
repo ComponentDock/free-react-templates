@@ -220,7 +220,7 @@ Extracted from the live preview CSS (`css/main.css`):
 - **AND** social icons are in dark (#111111) square buttons
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero banner renders with dark overlay and large price heading
 - [ ] Navbar is fixed, transparent initially, dark on scroll

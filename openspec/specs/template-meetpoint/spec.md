@@ -121,7 +121,7 @@ Each card has an image with a purple rating badge
 - **AND** social media icon links (Pinterest, LinkedIn, Instagram, Facebook, Twitter) are present
 - **AND** a "Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render in correct order matching the original
 - [ ] Hero countdown timer functions with Days/Hours/Minutes/Seconds

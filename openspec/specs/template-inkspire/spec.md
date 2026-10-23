@@ -170,7 +170,7 @@ Extracted from the ColorLib Author preview CSS (`css/style.css`).
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar with brand and 7 nav links, scroll-to-section, mobile hamburger
 - [ ] Hero with subheading, title, description, CTA button, illustration placeholder

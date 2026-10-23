@@ -174,7 +174,7 @@ Extracted from the live preview CSS (`css/style.css`) at `https://preview.colorl
 - **WHEN** the user focuses the tag's close button and presses Enter
 - **THEN** the tag is removed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with correct background (#fafafa) and Lato font
 - [ ] Centered heading renders at ~28px, black color

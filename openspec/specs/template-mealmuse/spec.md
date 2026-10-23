@@ -123,7 +123,7 @@ Extracted from the live preview's `css/style.css`:
 - **AND** sections stack vertically
 - **AND** the hero text remains centered and readable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections present in correct order
 - [ ] Fonts: Poppins (body/UI) + Lora (headings) loaded via Google Fonts

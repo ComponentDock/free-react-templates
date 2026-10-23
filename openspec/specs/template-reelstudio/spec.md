@@ -137,7 +137,7 @@ Recreation of the ColorLib **Videograph** template — a dark, cinematic video p
 - **WHEN** a user hovers over a primary CTA button
 - **THEN** a cyan border animation plays (left→top→right→bottom)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header with nav and social icons renders
 - [ ] Hero slider with text overlay and CTA button

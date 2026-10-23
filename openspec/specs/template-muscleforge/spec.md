@@ -183,7 +183,7 @@ https://preview.colorlib.com/theme/gym/css/main.css:
 - **THEN** social media icon links are visible
 - **AND** a copyright notice with "Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections rendered in correct order
 - [ ] Poppins font applied to headings and body

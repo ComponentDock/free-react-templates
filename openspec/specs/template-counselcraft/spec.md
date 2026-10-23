@@ -200,7 +200,7 @@ Family Problem, Personal Problem, Business Problem
 - **GIVEN** the user hovers over a social icon in the Footer
 - **THEN** the icon color changes to green (#589167)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TopBar renders with contact info and social icons
 - [ ] Navbar is sticky, has mobile toggle, all 7 nav links

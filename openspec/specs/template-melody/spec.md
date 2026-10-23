@@ -316,7 +316,7 @@ Twitter, Dribbble, Behance)
 - **THEN** a copyright notice is displayed in the footer bar
 - **AND** the copyright links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order (Header → Hero → Song → Tours → App → Featured → News → Newsletter → Footer)
 - [ ] Hero slider: fullscreen, dark overlay, "your music." headline, ticket form, social sidebar, scroll indicator

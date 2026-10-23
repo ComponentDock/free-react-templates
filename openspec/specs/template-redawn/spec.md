@@ -117,7 +117,7 @@ Dock (`https://www.componentdock.com/`) instead.
 | Social icon color     | `#CACACA`           | In overlay menu                                                |
 | Footer link color     | `#7e7e7e`           | Muted gray                                                     |
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Font `Lato` loaded via Google Fonts
 - [ ] Brand color `#f271ab` used for CTAs, hover states

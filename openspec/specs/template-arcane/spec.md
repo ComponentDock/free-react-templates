@@ -202,7 +202,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout: left visual panel + right form panel on desktop
 - [ ] 3-step wizard: Personal Info → Booking Details → Confirmation
@@ -223,7 +223,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

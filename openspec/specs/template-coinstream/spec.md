@@ -222,7 +222,7 @@ Name: **coinstream** — new original name (ColorLib source "coinbuzz" not reuse
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches: Navbar → Hero Slider → Featured → Bitcoin Info → Services → About → Testimonials → Special Quote → Market Resources → Expert CTA → Contact → Team → Investments CTA → Blog → Footer
 - [ ] Brand color `#ff7700` used for CTAs, highlights, and accents (not hard-coded — through Tailwind theme tokens)

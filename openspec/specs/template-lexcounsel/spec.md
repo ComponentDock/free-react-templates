@@ -134,7 +134,7 @@ Extracted from the live preview stylesheet (`assets/css/style.css`):
 - **AND** a copyright line with social icons (Twitter, Facebook, Instagram) is visible
 - **AND** the copyright links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections rendered in correct order
 - [ ] Header sticky on scroll, nav links functional

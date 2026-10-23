@@ -226,7 +226,7 @@ Support, and Company
 - **GIVEN** the footer is visible
 - **THEN** a link to https://www.componentdock.com/ is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo bold, all 6 nav links, mobile hamburger toggle
 - [ ] Hero: full-viewport bg image, heading text, search form with 4 fields

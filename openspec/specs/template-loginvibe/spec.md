@@ -169,7 +169,7 @@ Full-page diagonal gradient from magenta/purple (`#c471ed`) at bottom-right to c
 - **THEN** a footer link to "https://www.componentdock.com/" is present
 - **AND** the link text includes "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-page gradient background matches screenshot (purple-to-cyan diagonal)
 - [ ] Geometric angular overlays render over the gradient

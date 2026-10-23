@@ -124,7 +124,7 @@ Warm-toned bakery site with peach/pink backgrounds. Hero has a full-width slider
 - **AND** the about section stacks image above text
 - **AND** service cards stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections present in correct order
 - [ ] Navbar: sticky, responsive hamburger, logo, nav links, CTA button

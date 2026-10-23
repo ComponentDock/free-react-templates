@@ -143,7 +143,7 @@ Recreation of ColorLib **Bitcoin** (`https://colorlib.com/wp/template/bitcoin/`)
 - **AND** a footer bottom bar with copyright text linking `https://www.componentdock.com/` (branded "Component Dock") and social icon buttons
 - **AND** newsletter input has dark `#1e2235` background, rounded (20px), with an orange submit button
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder created at `apps/cryptforge` with valid `package.json` (`@free-react-templates/cryptforge`)
 - [ ] `vite.config.ts` includes `injectUiSource()` helper

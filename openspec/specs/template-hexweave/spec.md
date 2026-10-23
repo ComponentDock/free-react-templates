@@ -173,7 +173,7 @@ Every template footer MUST link to https://www.componentdock.com/ branded as "Co
 - **THEN** the footer contains a link to "https://www.componentdock.com/"
 - **AND** the link text includes "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Four-step wizard: Billing → Shipping → Payment → Confirm
 - [ ] Progress bars with peach-orange active/completed, gray inactive

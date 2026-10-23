@@ -142,7 +142,7 @@ screenshot visual analysis + ColorLib listing page embedded `<style>` blocks.
 - **AND** a copyright line appears at the bottom center
 - **AND** the footer links to Component Dock (replacing Colorlib attribution)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top utility bar with blue bg, phone + email, social icons
 - [ ] Sticky white navbar with logo (dark+yellow), nav links, yellow active underline

@@ -208,7 +208,7 @@ Recreation of ColorLib's **Create** template.
 - **AND** it contains About Us text, Features links, Follow Us social icons, and a newsletter subscribe form
 - **AND** the copyright line includes a link to Component Dock (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar: dark bg, phone/email, social icons
 - [ ] Navbar: sticky white, "Forgehaus." logo with teal dot, dropdown on About

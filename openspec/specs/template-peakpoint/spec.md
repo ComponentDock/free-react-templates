@@ -201,7 +201,7 @@ Extracted from the live preview CSS (`css/style.css`) and screenshot analysis:
 - **AND** the copyright text includes a "Made with ❤" line
 - **AND** the footer links to https://www.componentdock.com/ ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 13 sections rendered in correct order (Hero → About → Services → Portfolio → Parallax Banner → Team → Skills → Clients → Pricing → Blog → Partners → Contact → Footer)
 - [ ] Raleway font loaded from Google Fonts

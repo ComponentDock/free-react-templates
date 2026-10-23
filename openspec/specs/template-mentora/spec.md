@@ -148,7 +148,7 @@ Stack: React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict).
 - **AND** the gallery grid shows 2 columns
 - **AND** blog entries stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order
 - [ ] Navbar is sticky, responsive, has hamburger on mobile

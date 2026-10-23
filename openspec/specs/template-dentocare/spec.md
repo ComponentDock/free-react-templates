@@ -67,7 +67,7 @@ Built as a responsive React 19 single-page application using Vite, Tailwind CSS 
 - **GIVEN** the user reaches the bottom of the page
 - **THEN** they see recent dental tips and articles, contact info, and the required footer linking to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation (`npm run typecheck`) passes without errors.
 - [ ] ESLint linting passes clean.

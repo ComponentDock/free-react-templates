@@ -194,7 +194,7 @@ Recreation of ColorLib "Product" template.
 - **GIVEN** I visit the Merchpick homepage
 - **THEN** the footer should contain a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections from original template are present in same order
 - [ ] Design tokens match: brand teal `#0fb78d`, fonts Muli/Libre Baskerville

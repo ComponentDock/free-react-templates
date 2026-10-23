@@ -119,7 +119,7 @@ Background:
 - **AND** the car listings grid collapses to single column
 - **AND** the hero search form stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with logo + 6 nav links, absolute-positioned over hero
 - [ ] Hero has full-viewport background image + heading + search form (type select, 2 date inputs, search button)

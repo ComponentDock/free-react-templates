@@ -286,7 +286,7 @@ as "Component Dock".
 - **THEN** I see a link to https://www.componentdock.com/
 - **AND** the link text mentions "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Gradient background (#75e2e9 + linear-gradient) fills viewport
 - [ ] White card centered on page with border-radius 10px and box-shadow

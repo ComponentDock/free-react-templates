@@ -125,7 +125,7 @@ Church/ministry website with a full-width hero slider (dark overlay on warm-tone
 - **AND** column 4 shows "Visit or Talk to Us" with address, telephone, email
 - **AND** a copyright line includes a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 7 sections render (Navbar, Hero, Camp Meeting, Sermons, Events, Testimonial, Footer)
 - [ ] Design tokens match: brand #6A99CB, heading font Playfair Display, body font Open Sans, square buttons

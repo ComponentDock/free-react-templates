@@ -110,7 +110,7 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 - **THEN** they see an email input and a "Subscribe" button
 - **AND** contact info, useful links, and social icons are present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: transparent over hero, sticky on scroll with blue bar
 - [ ] Hero: bg image, headline, subtext, form card with selects/inputs

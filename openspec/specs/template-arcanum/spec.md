@@ -49,7 +49,7 @@ As a user visiting Arcanum, I want to step through a multi-step booking form so 
 - **WHEN** the user clicks "Confirm Booking"
 - **THEN** a success confirmation screen is displayed with booking details summary
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds correctly (`npm run build`).
 - [ ] Typecheck passes without errors (`npm run typecheck`).

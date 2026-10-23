@@ -123,7 +123,7 @@
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar with phone + email + social icons renders
 - [ ] Navbar sticky, gold brand, all nav links present, mobile toggle works

@@ -161,7 +161,7 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 3-step wizard navigates correctly with progress dots updating
 - [ ] Profile photo upload and circular preview work

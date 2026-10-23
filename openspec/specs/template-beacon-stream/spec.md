@@ -64,7 +64,7 @@
 - **WHEN** the footer renders
 - **THEN** it displays copyright information and a prominent link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes.
 - [ ] Unit & component tests cover all carousel interactions and states (100% coverage).

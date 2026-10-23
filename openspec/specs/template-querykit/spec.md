@@ -107,7 +107,7 @@ set against a bold blue hero background.
 - **THEN** the button text remains visible
 - **AND** the button remains black
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Brand blue background covers full viewport
 - [ ] Poppins font loaded via Google Fonts

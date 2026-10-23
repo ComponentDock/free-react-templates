@@ -190,7 +190,7 @@ Feature: Responsive sidebar layout
 - **WHEN** I click the toggle button
 - **THEN** the sidebar animates over 0.3s ease
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar renders with #212121 background, 250px width
 - [ ] Logo bar shows "Project Name" on #2f89fc background

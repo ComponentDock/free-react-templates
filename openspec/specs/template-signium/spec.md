@@ -176,7 +176,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout renders correctly (left panel white, right panel lavender)
 - [ ] Heading "Au Creative" with purple "Au" span
@@ -194,7 +194,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Uses picsum.photos for illustration placeholder
 - [ ] Google Fonts (Poppins, Montserrat) loaded via index.html
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

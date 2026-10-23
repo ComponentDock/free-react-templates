@@ -136,7 +136,7 @@ ColorLib template page screenshot and page metadata.
 - **AND** all section layouts stack vertically
 - **AND** images resize appropriately
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the Book Keeping preview structure and order
 - [ ] Dark blue CTA buttons (#2b3990) with sharp corners (2px radius)

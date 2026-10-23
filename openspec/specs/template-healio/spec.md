@@ -132,7 +132,7 @@ Background:
 - **AND** buttons use teal background with white uppercase text
 - **AND** sections alternate between white and #f4f8fb backgrounds
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order (top bar → nav → hero → info → CTA → services → departments → FAQ → news → footer)
 - [ ] Brand color #32c69a used for nav, buttons, accents

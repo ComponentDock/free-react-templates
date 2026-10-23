@@ -147,7 +147,7 @@ Background:
 - **WHEN** the viewport width is less than 768px
 - **THEN** category cards should stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order: Top Header → Main Header → Category Nav → Hero Slider → Category Cards → Women's Products → Deal of the Week → Men's Products → Blog → Footer
 - [ ] Design tokens match: gold #e7ab3c, Muli font, 60px pill buttons

@@ -115,7 +115,7 @@ Recreation of ColorLib **Schmidt** (`https://colorlib.com/wp/template/schmidt/`)
 - **THEN** they should see a footer with copyright information
 - **AND** the mandatory Component Dock attribution link (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders brand and all navigation links correctly across all pages
 - [ ] Home hero section displays full-viewport layout with gold overlay and image carousel

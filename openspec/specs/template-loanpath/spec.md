@@ -132,7 +132,7 @@ The original uses Font Awesome + Themify Icons + Flaticon. In the React recreati
 - **AND** about section stacks (image above text)
 - **AND** the hero form stacks below the headline
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections implemented in correct order (header → hero+calculator → services → about → how-it-works → brands → faq → testimonials → cta → footer)
 - [ ] Navbar sticky with scroll behavior

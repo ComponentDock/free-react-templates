@@ -244,7 +244,7 @@ The wizard SHALL be responsive on mobile devices.
 - **AND** the form panel takes full width
 - **AND** navigation buttons remain accessible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App renders in `apps/tablenook/` with package name `@free-react-templates/tablenook`
 - [ ] `vite.config.ts` includes `injectUiSource()`

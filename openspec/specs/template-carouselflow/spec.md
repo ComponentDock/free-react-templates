@@ -41,7 +41,7 @@ New original name: `carouselflow` (`@free-react-templates/carouselflow`). Stack:
 
 - Minimalist footer featuring copyright and mandatory Component Dock branding link (`https://www.componentdock.com/`).
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation (`npm run typecheck`) passes without errors.
 - [ ] Tailwind CSS 4 setup includes `@theme` configuration for primary blue (`#007bff`) and muted grays.

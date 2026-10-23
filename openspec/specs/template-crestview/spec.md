@@ -180,7 +180,7 @@ Recreation of ColorLib's **Radisson** template as a React 19 + Vite + Tailwind 4
 - **GIVEN** the recreation is rendered on a desktop viewport
 - **THEN** the Footer band SHALL be present at its documented position with the structure, copy and tokens named above
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: TopBar → Navbar → Hero → Booking → About → Rooms → Testimonials → Blog → Footer
 - [ ] Playfair Display + Roboto font pairing loaded via Google Fonts

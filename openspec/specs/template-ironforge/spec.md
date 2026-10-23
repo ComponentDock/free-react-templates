@@ -147,7 +147,7 @@ Background:
 - **AND** social media icons are present
 - **AND** the copyright includes a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections render in correct order
 - [ ] Design tokens match: #DC2F2F primary, #9870FC secondary, #25282a footer, #f2f3f7 light bg

@@ -41,7 +41,7 @@ A Bootstrap Buttons Showcase template with navigation and header, button showcas
 - The page footer must display copyright info and a required link to `https://www.componentdock.com/` ("Component Dock").
 - Scenario: User scrolls to the footer and clicks the Component Dock link.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

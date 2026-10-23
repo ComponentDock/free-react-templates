@@ -279,7 +279,7 @@ Feature: Footer
 - **AND** each icon has a dark background (#1e1e1e) with gray icon color (#777)
 - **AND** on hover the icon turns white
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder `apps/indiglow` created with correct package name `@free-react-templates/indiglow`
 - [ ] `public/CNAME` contains `indiglow.free.componentdock.com`

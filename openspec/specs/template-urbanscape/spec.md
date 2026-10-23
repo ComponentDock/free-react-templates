@@ -119,7 +119,7 @@ Extracted from the live preview stylesheet (`main.css`) and rendered DOM:
 - **AND** a copyright notice with Component Dock attribution is shown
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections rendered in correct order matching the original
 - [ ] Navbar is transparent on hero, sticky on scroll

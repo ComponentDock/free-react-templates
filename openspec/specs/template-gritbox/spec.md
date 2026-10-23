@@ -146,7 +146,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [x] Navbar renders with brand, dropdown, and mobile hamburger
 - [x] Hero slider auto-rotates between 2 slides with fade transition
@@ -164,7 +164,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] public/CNAME contains gritbox.free.componentdock.com
 - [x] homepage in package.json set correctly
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

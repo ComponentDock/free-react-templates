@@ -147,7 +147,7 @@ Extracted from the live preview at https://preview.colorlib.com/theme/evans/ and
 - **AND** the services grid stacks to single column
 - **AND** the navbar collapses to a hamburger menu
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: dark bg, transparent→dark scroll transition, hamburger on mobile
 - [ ] Hero: VR outline text with Barlow Condensed, split layout, background images

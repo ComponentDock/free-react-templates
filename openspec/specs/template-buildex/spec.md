@@ -212,7 +212,7 @@ Background:
 - **AND** project cards stack vertically
 - **AND** footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with all nav links (desktop + mobile hamburger)
 - [ ] Hero section matches dark purple (#2D0A31) background with overlay

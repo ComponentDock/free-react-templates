@@ -117,7 +117,7 @@ component page.
 - **AND** the search input is focusable
 - **AND** checkboxes are keyboard-accessible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders centered layout with heading and dropdown on light gray (#f8f9fd) background
 - [ ] Font is Lato (loaded via Google Fonts or system fallback)

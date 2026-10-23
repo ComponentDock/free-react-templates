@@ -41,7 +41,7 @@ As a developer or designer visiting BtnVault, I want to explore various styled b
 - **WHEN** the footer is rendered
 - **THEN** it contains a copyright notice and a mandatory link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header banner with title, description, and category filter pills.
 - [ ] Multiple interactive button sections with diverse shapes, colors, and shadows.

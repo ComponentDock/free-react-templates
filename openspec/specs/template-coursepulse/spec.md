@@ -107,7 +107,7 @@ Background:
 - **AND** the footer bottom shows a copyright line
 - **AND** the footer links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections present in correct order (Navbar → Hero → Categories → Search → Featured Courses → Signup → Banner → Footer)
 - [ ] Raleway font loaded from Google Fonts

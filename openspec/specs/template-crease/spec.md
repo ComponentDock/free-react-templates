@@ -36,7 +36,7 @@ Recreation of ColorLib **Accordion 05** (`https://colorlib.com/wp/template/accor
 
 - As a visitor, I see a branded footer linking to `https://www.componentdock.com/` ("Component Dock").
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation passes (`npm run spec:validate`)
 - [ ] 100% test coverage on all components

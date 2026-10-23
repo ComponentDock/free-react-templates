@@ -86,7 +86,7 @@ Recreation of ColorLib **Thelogistico** (`https://colorlib.com/wp/template/thelo
 - **WHEN** the footer renders
 - **THEN** it displays Quick Links, Solution links, Support items, a Newsletter subscription form, social links, and a mandatory "Component Dock" footer link (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

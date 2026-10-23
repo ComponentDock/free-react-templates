@@ -142,7 +142,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** a Newsletter signup form with email input and Subscribe button is present
 - **AND** a copyright bar links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: brand, all nav links, Sign Up CTA
 - [ ] Hero slider: carousel with property details cards (pink bg, specs)

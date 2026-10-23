@@ -181,7 +181,7 @@ Extracted from the live preview CSS (`main_styles.css`):
 - **THEN** a copyright bar is shown at the bottom
 - **AND** it links to "Component Dock" (not ColorLib)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header renders with logo, nav, and auth links
 - [ ] Hero slider shows background image, heading, subtitle, CTA

@@ -212,7 +212,7 @@ these.
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, nav links, CTA, mobile hamburger, hover states
 - [ ] Hero: heading, description, CTA button, image, quote overlay, feature cards

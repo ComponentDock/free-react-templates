@@ -201,7 +201,7 @@ Background:
 - **THEN** images have alt text
 - **THEN** form inputs have labels
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: brand text, 8 nav links, transparent on desktop, black on mobile
 - [ ] Hero slider: split layout, subheading, h1, description, CTA, vertical label, 2+ slides

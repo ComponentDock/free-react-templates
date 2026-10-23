@@ -174,7 +174,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Card centered vertically and horizontally on full-viewport page
 - [ ] Card width ~390px with 10px border-radius on desktop

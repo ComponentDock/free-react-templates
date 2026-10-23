@@ -242,7 +242,7 @@ Feature: AgentHub Footer
 - **THEN** a copyright line is present
 - **AND** a link to componentdock.com is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: hamburger toggle works on mobile, full-screen overlay opens/closes
 - [ ] Hero: full viewport height, background image with dark overlay, two CTA buttons pill-shaped

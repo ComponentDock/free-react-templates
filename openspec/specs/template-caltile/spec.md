@@ -58,7 +58,7 @@ As a visitor, I want clear footer navigation and branding.
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** a clean footer is visible containing navigation links and a required link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

@@ -173,7 +173,7 @@ The application SHALL NOT contain any references to ColorLib in source files.
 - **WHEN** any source file in apps/terrace/ is inspected
 - **THEN** no file contains the string "colorlib" (case-insensitive)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: 3-part layout, left links, center logo, right dropdowns
 - [ ] Hero: background image, "Terrace" heading, hr divider, tagline

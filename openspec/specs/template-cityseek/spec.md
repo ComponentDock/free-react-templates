@@ -59,7 +59,7 @@ As a visitor, I want to search for cities, attractions, or locations using a cle
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** the footer links to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec valid (`npm run spec:validate`)
 - [ ] Hero section renders with background image and dark overlay

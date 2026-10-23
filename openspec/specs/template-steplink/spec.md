@@ -151,7 +151,7 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Step 1 shows party size selector with person icon
 - [ ] Step 2 shows date input and time range selectors with calendar/clock icons

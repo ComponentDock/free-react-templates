@@ -165,7 +165,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Boxed layout (68.75% width centered) with dark textured body background
 - [ ] Gradient banner with subtitle, headline, and pill-shaped CTA button
@@ -180,7 +180,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Brand gradient applied to banners, service area, story area, icons, buttons
 - [ ] All sections match original order 1:1
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

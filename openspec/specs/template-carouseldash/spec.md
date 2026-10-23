@@ -181,7 +181,7 @@ Recreation of **ColorLib "Carousel 18"** (source slug: `carousel-18`), a Bootstr
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Tab navigation: three tabs ("First Tab", "Second Tab", "Third Tab"), first active by default
 - [ ] Active tab: dark text (`#000`) + bottom border underline (`1px solid #000` at `bottom: -1px`)

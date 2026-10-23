@@ -197,7 +197,7 @@ A newsletter subscribe form appears above a dark footer with 4 link columns.
 - **AND** a copyright line and Terms/Privacy/Compliances links are at the bottom
 - **AND** the footer links are in muted white text that brightens on hover
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top info bar with phone, email, social icons
 - [ ] Sticky navbar with logo and 8 nav links

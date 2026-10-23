@@ -44,7 +44,7 @@ Recreation of ColorLib **Carousel 03** (`https://colorlib.com/wp/template/carous
 - **WHEN** they view the footer
 - **THEN** they see "More templates at Component Dock" linking to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict check (`npm run typecheck`) passes.
 - [ ] Lint check (`npm run lint`) passes.

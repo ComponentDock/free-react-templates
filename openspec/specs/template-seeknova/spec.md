@@ -120,7 +120,7 @@ search form widget.
 - **THEN** the form submit event fires
 - **AND** the search query is accessible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-viewport container with background image (use `picsum.photos` placeholder)
 - [ ] Heading: "What are you looking for?" — white, bold, italic, Poppins 36px/800

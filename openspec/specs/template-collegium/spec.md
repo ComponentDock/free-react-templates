@@ -74,7 +74,7 @@ New original name: `collegium` (replaces ColorLib source name `universityedu`).
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

@@ -79,7 +79,7 @@ Recreation of ColorLib **Modal 10** — a newsletter subscription modal with a b
 - **AND** the form inputs stack vertically
 - **AND** the padding adjusts for smaller screens
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Modal opens and closes correctly
 - [ ] Background image header renders (use placeholder)

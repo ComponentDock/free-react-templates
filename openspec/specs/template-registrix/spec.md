@@ -136,7 +136,7 @@ Recreation of **ColorLib Reg Form V31** (`colorlib-regform-31`) as a React 19 + 
 - **WHEN** the page loads
 - **THEN** the card has horizontal margin of 20px
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page background is teal `#5eb2b3`
 - [ ] Card is white, 670px wide, 8px radius, centered

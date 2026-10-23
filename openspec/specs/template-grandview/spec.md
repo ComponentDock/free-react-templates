@@ -151,7 +151,7 @@ Recreation of ColorLib "Sogo Hotel" template.
 - **AND** buttons have pill shape (border-radius: 50px)
 - **AND** alternating sections use #f2f4fb light blue-gray background
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo, links, hamburger on mobile
 - [ ] Hero: full-screen bg, dark overlay, centered text, star icon, mouse scroll indicator

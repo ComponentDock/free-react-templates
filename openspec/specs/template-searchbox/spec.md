@@ -109,7 +109,7 @@ The template is a single-page, full-viewport search form with two visual section
 - **AND** the dropdown rows stack vertically (single column)
 - **AND** each dropdown takes full width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-screen cyan background (#00b5e9) fills viewport
 - [ ] White card centered vertically and horizontally

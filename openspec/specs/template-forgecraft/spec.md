@@ -153,7 +153,7 @@ Extracted from the live preview's `css/style.css`:
 - **GIVEN** the footer is visible, THEN a dark section shows about text, features links, social icons, and a newsletter subscription form
 - **GIVEN** the footer loads, THEN a copyright line with "Component Dock" link is displayed at the bottom
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Font: Quicksand loaded from Google Fonts
 - [ ] Brand color: #32dbc6 used for buttons, links, active states, checkmarks

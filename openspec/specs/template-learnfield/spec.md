@@ -98,7 +98,7 @@ The original is a comprehensive higher-education layout featuring a top announce
 - **THEN** the user sees quick links, program links, resource links, and a newsletter subscription form
 - **AND** the footer contains the mandatory copyright notice and brand attribution linking to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation passes without errors (`npm run typecheck` / `npm run verify:app`).
 - [ ] Linter passes (`npm run lint`).

@@ -127,7 +127,7 @@ Recreation of ColorLib "Colorlib Wizard 7" — a multi-step restaurant table boo
 - **AND** dropdowns and buttons are operable via Enter/Space
 - **AND** the step indicator is announced for screen readers
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Centered booking widget renders on white background
 - [ ] High-end food photograph is displayed as left/center background

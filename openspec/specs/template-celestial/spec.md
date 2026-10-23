@@ -223,7 +223,7 @@ The screenshot shows a dark, sophisticated creative agency aesthetic:
 - **THEN** the footer should display a copyright notice
 - **AND** the footer should link to Component Dock (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order matching the original
 - [ ] Navbar is transparent over hero, sticky on scroll

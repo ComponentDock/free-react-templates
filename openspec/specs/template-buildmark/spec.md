@@ -317,7 +317,7 @@ As a visitor, I want comprehensive footer with links and contact info.
 - **AND** the Contact column shows email, phone, and address
 - **AND** I see a copyright bar at the bottom with a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top header bar renders with phone, email, hours, social icons
 - [ ] Navbar is sticky, responsive, with dropdown menus

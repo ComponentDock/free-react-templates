@@ -185,7 +185,7 @@ The original is a Bootstrap 4 single-page education landing with:
 - **AND** course cards stack vertically
 - **AND** footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct order
 - [ ] Navbar: logo, 5 nav items, search toggle, top bar info

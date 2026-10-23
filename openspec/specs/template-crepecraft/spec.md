@@ -110,7 +110,7 @@ Extracted from live preview CSS (`css/main.css`):
 - **AND** a copyright line with "Component Dock" link is present
 - **AND** social media icons (Facebook, Twitter, Dribbble, Behance) are displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero section gradient matches `linear-gradient(135deg, #49e3ce 0%, #9920ed 100%)`
 - [ ] Font family is Poppins (loaded via Google Fonts link in index.html)

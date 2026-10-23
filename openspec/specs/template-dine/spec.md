@@ -137,7 +137,7 @@ The application SHALL NOT contain any references to ColorLib in source files.
 - **WHEN** any source file in apps/dine/ is inspected
 - **THEN** no file contains the string "colorlib" (case-insensitive)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: dark bg, brand "Dine", all nav links, services dropdown
 - [ ] Hero: 2 slides, background images, headings, CTA button

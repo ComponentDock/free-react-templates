@@ -66,7 +66,7 @@ Recreation of ColorLib **Saita** (`https://colorlib.com/wp/template/saita/`), a 
 - **AND** a call to action banner "PREPARE FOR TAKEOFF — Looking for business opportunity?"
 - **AND** a footer with company details, quick links, recent posts, and the mandatory Component Dock attribution link (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders brand and all navigation links correctly
 - [ ] Hero section displays gradient background, headline, and action buttons

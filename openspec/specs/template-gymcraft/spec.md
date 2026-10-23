@@ -224,7 +224,7 @@ Background:
 - **THEN** the footer contains a link to https://www.componentdock.com/
 - **AND** the link text mentions "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections rendered in correct order
 - [ ] Hero carousel auto-rotates with 3 slides

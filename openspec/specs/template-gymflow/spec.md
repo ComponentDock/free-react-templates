@@ -146,7 +146,7 @@ a masonry-style image grid. The footer is dark with a multi-column layout
 - **AND** social media icons are visible
 - **AND** a copyright line with Component Dock attribution is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: sticky on scroll, responsive hamburger menu, Oswald font nav
 - [ ] Hero: full-width dark image overlay, centered white text, orange pill CTA

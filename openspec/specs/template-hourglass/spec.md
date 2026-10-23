@@ -171,7 +171,7 @@ Background:
 - **WHEN** the user clicks "Service" in the navbar
 - **THEN** the page scrolls to the service section
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order
 - [ ] Navbar is sticky/fixed with correct links

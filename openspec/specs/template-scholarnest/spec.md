@@ -164,7 +164,7 @@ Extracted from the live preview CSS (`css/main.css`):
 - **AND** social icons (Facebook, Twitter, Dribbble, Behance) are visible
 - **AND** the footer links to Component Dock (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in the correct order: Navbar → Hero → About → Courses → Features → Faculty → Testimonials → Footer
 - [ ] Brand gradient (#39cfca → #3279bb) is applied to primary buttons, search button, course hover, testimonial overlay, footer newsletter button

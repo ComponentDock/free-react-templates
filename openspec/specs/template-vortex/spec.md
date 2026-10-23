@@ -42,7 +42,7 @@ As a user visiting the Vortex account management template, I want to explore col
 - **THEN** a success toast or confirmation message is displayed
 - **AND** form validation prevents submission of empty required fields
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully with Vite (`npm run build`)
 - [ ] Typecheck passes with zero errors (`npm run typecheck`)

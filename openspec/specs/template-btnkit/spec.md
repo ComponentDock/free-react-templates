@@ -67,7 +67,7 @@ An UI Component Showcase & Buttons Gallery template with navigation header, hero
 - **Requirement:** A clean dark footer with copyright information and mandatory attribution link pointing to `https://www.componentdock.com/` ("Component Dock").
 - **Scenario:** User scrolls to the bottom and clicks the Component Dock link.
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully without errors (`npm run build`).
 - [ ] 100% test coverage on all components (`npm run test:coverage`).

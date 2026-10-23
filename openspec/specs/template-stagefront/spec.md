@@ -129,7 +129,7 @@ Recreation of ColorLib "Staging" — an architecture, interior design, and proje
 - **AND** a copyright bar with Terms of use and Privacy Policy is shown
 - **AND** a Component Dock link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections match the original section order 1:1
 - [ ] Brand color #dfa667 used consistently for accents, section labels, CTA buttons

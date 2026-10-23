@@ -180,7 +180,7 @@ The template adapts gracefully to mobile, tablet, and desktop viewports.
 - **AND** the search bar fields stack vertically
 - **AND** category cards display in a 2-column or 3-column grid
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, all nav links, Log In, Register, Post an Ad button
 - [ ] Hero: background image, dark overlay, headline, subtitle

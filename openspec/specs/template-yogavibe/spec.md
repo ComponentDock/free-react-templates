@@ -136,7 +136,7 @@ Recreation of ColorLib **Doyoga** — a yoga studio landing page with hero video
 - **GIVEN** the footer, **when** the right column renders, **then** it shows "Subscribe Newsletter" heading with an email input + Send button, and "Follow Us" heading with social icons (Facebook, Twitter, Instagram, LinkedIn)
 - **GIVEN** the footer, **when** the copyright renders, **then** a centered line reads "Copyright © [year] All rights reserved | Made with ❤ by Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections render in correct order (top bar → navbar → hero → classes → schedule → about → events → gallery → contact → footer)
 - [ ] Navbar is sticky on scroll with shadow effect

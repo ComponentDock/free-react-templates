@@ -147,7 +147,7 @@ get in touch.
 - **AND** the watermark text is hidden on mobile (`d-none d-lg-block`)
 - **AND** all text remains readable at smaller viewport widths
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Dark navy (`#040E27`) used as primary background across hero,
       portfolio, and footer sections

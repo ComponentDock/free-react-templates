@@ -127,7 +127,7 @@ Recreation of ColorLib's **Clyde** personal portfolio template as a React 19 + V
 - **AND** a link to https://www.componentdock.com/ is present
 - **AND** social media icons are shown
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar with dark background and all section links
 - [ ] Hero slider with background image, overlay, headline, and two CTA buttons

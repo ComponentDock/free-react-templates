@@ -157,7 +157,7 @@ Recreation of the ColorLib "Edusite" education template as a React 19 + Vite + T
 - **AND** the courses grid becomes 1-column
 - **AND** the Why Us features stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections rendered in correct order
 - [ ] Navbar transparent over hero, links functional

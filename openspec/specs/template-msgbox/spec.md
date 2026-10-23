@@ -109,7 +109,7 @@ The page includes a footer with a Component Dock link.
 - **WHEN** I visit the MsgBox page
 - **THEN** I see a footer containing a link to "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-column layout matches screenshot (left ~40% info, right ~60% form)
 - [ ] "Contact Us" heading is large, bold, sans-serif

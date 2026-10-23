@@ -102,7 +102,7 @@ Full-viewport section (`.s004`):
 - **THEN** the search bar and heading remain centered
 - **AND** the search bar adapts to the smaller width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Background image covers the full viewport (centered, cover)
 - [ ] Font is Poppins (loaded via Google Fonts link in index.html)

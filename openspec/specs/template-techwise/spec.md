@@ -265,7 +265,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order (15 sections)
 - [ ] Navbar is sticky and has all nav links
@@ -287,7 +287,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage
 - [ ] App builds successfully
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

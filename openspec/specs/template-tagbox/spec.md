@@ -100,7 +100,7 @@ component with live search and tag-style selected items.
 - **THEN** the next option is highlighted
 - **AND** the highlighted option has a purple background
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Heading "Multi-Select #1" renders centered, Roboto font
 - [ ] Paragraph text is light gray (#b3b3b3), weight 300

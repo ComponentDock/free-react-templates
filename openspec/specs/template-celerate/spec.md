@@ -146,7 +146,7 @@ The CellOn template is a bright, clean tech/consulting landing page:
 - **AND** the outer body background is light gray (#f6f6fc)
 - **AND** the wrapper has rounded shadow appearance
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections present in correct order
 - [ ] Brand color #6cbb23 used consistently for accents, buttons, icons, links

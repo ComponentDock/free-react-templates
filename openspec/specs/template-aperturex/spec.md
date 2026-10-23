@@ -226,7 +226,7 @@ Feature: ApertureX — Photography Portfolio Template (Sidebar Layout)
 - **THEN** elements animate into view using AOS (fade-up)
 - **AND** animations have staggered delays for grouped items
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Fixed sidebar renders at 250px on desktop, collapses to top bar on mobile
 - [ ] Sidebar logo and nav links are visible and functional

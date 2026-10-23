@@ -64,7 +64,7 @@ Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/b
 - **WHEN** the footer is rendered
 - **THEN** it displays copyright information and a prominent link to `https://www.componentdock.com/` ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `npm run spec:validate` passes
 - [ ] `npm run test:coverage` achieves 100% lines/functions/branches/statements

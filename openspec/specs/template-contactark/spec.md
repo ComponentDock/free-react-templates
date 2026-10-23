@@ -167,7 +167,7 @@ Replace FontAwesome/Linearicons with `lucide-react`:
 - **THEN** the form container fills the available width with padding
 - **AND** all inputs and button remain usable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with #e6e6e6 background, form centered
 - [ ] Title "Get in Touch" in Oswald-Medium 30px, color #43383e

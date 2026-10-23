@@ -124,7 +124,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split layout: 50/50 on desktop, stacked on mobile (<576px)
 - [ ] Profile image: fixed right half (desktop), 400px banner (mobile)

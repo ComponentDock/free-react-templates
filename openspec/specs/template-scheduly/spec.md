@@ -68,7 +68,7 @@ As a user, I want to view a monthly calendar grid with scheduled events so that 
 - **WHEN** the footer renders
 - **THEN** it contains a link to https://www.componentdock.com/ anchored with "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

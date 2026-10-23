@@ -129,7 +129,7 @@ these.
 - **AND** the heading text should be dark (#000)
 - **AND** paragraph text should be medium gray (#777)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Launch button renders centered on page
 - [ ] Clicking launch button opens a full-screen modal overlay

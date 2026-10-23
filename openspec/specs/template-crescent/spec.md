@@ -189,7 +189,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the order: TopBar → Navbar → Hero → About → CTA → Sermons → Events → Gallery → Blog → Subscribe → Footer
 - [ ] Brand color `#c92f2f` used for buttons and accents via Tailwind theme

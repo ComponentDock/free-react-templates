@@ -147,7 +147,7 @@ Extracted from `styles/main_styles.css` on the live preview:
 - **AND** all navigation links are displayed vertically centered
 - **AND** the phone number is shown at the bottom of the menu
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order (header → hero → boxes → about → testimonials → gallery → services → blog → footer)
 - [ ] Brand orange `#f98c00` is used for buttons and accents

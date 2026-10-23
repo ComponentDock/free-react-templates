@@ -85,7 +85,7 @@ New app name: `props`. Domain category: Real Estate / Property listings.
 - **GIVEN** the user scrolls to the footer
 - **THEN** they should see copyright information and a link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder `apps/props` created and registered in root `package.json` workspaces
 - [ ] TypeScript strict compilation passes without errors

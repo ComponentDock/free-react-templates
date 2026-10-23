@@ -159,7 +159,7 @@ Background:
 - **AND** placeholders appear in semi-transparent white
 - **AND** the card has a rounded shadow
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Card renders centered with white background, rounded corners, shadow
 - [ ] Full-page background image is displayed (use picsum.photos placeholder)

@@ -177,7 +177,7 @@ linking to Component Dock.
 - **THEN** a footer is visible
 - **AND** the footer contains a link to "https://www.componentdock.com/"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Heading "Dropdown #9" centered on page
 - [ ] "Courses" trigger with layers icon and down-arrow renders

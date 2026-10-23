@@ -117,7 +117,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** it shows company info, quick links, and newsletter sections
 - **AND** it includes a "Made with Component Dock" link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order (Navbar → Hero → About → Services → Projects → Testimonials → Blog → Footer)
 - [ ] Design tokens match: brand color #8490ff, fonts Heebo/Roboto, gradients, dark footer

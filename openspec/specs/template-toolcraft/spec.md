@@ -125,7 +125,7 @@ Feature: Toolcraft — Construction/Handyman Landing Page
 - **AND** the footer contains a copyright notice
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo, 6 nav links, mobile hamburger
 - [ ] Hero: slider with 3 slides, dark overlay, heading text

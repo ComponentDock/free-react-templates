@@ -154,7 +154,7 @@ Built as a responsive React 19 + Tailwind CSS 4 + TypeScript template with 100% 
 - **AND** they see the copyright bar with "Component Dock" link
 - **AND** they see social media icon links
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct order
 - [ ] Brand color #67bc00 used for primary buttons and accent elements

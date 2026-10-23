@@ -195,7 +195,7 @@ Feature: CartDen Footer
 - **THEN** a copyright bar displays the current year
 - **AND** a "Component Dock" link is present (replacing original Colorlib attribution)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections match the original section order: Header → Nav → Hero Slider → Category Cards → Deals of the Day → Promo Banners → Latest Products → Footer
 - [ ] Design tokens match: brand `#F8694A`, dark `#30323A`, light bg `#F6F7F8`, font Hind

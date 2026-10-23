@@ -192,7 +192,7 @@ The search overlay is hidden by default and activated via the search icon.
 - **AND** the nav links should still be visible
 - **AND** the search overlay should still fill the full viewport
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Overlay is full-viewport, white background, z-index 9999
 - [ ] Overlay transitions with 0.3s ease (opacity + visibility)

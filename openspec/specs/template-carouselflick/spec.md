@@ -64,7 +64,7 @@ Features an immersive image & content carousel showcase, portfolio highlights, i
 - **GIVEN** the footer is rendered at the bottom of the page
 - **THEN** it displays copyright, social links, and a prominent link to https://www.componentdock.com/ ("Component Dock")
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation passes with zero errors
 - [ ] ESLint and oxlint report no issues

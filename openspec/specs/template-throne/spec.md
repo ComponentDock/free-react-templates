@@ -119,7 +119,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** a copyright notice with current year is shown
 - **AND** a "Component Dock" link replaces any external attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `npm run typecheck` passes for apps/throne
 - [ ] `npm run lint` passes for apps/throne

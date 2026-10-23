@@ -248,7 +248,7 @@ section treatment — the entire page is dark with white/primary text.
 - **AND** animations have staggered delays (0ms, 100ms, 200ms, 300ms)
 - **AND** animations trigger as sections enter the viewport
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder `apps/halfpipe` created with correct package name
 - [ ] `public/CNAME` contains `halfpipe.free.componentdock.com`

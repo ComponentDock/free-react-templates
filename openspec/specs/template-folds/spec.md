@@ -39,7 +39,7 @@ As a visitor, I want a footer linking to Component Dock.
 - **WHEN** the footer is rendered
 - **THEN** it contains a link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validated (`npm run spec:validate`)
 - [ ] Unit tests written with 100% coverage

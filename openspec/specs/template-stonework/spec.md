@@ -308,7 +308,7 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 - **AND** a description paragraph
 - **AND** a "Contact me!" button with border-radius 30px
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar is fixed left, 20% width on desktop, slides in on mobile
 - [ ] Hero slider renders 3 slides with background images and gold text panels

@@ -114,7 +114,7 @@ Extracted from screenshot pixel analysis and CSS references on the ColorLib page
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** a "Component Dock" link to `https://www.componentdock.com/` is visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Split-screen layout renders correctly (50/50 or close)
 - [ ] Left side shows placeholder image with dark overlay

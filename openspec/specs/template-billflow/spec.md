@@ -170,7 +170,7 @@ The template footer SHALL include Component Dock attribution.
 - **WHEN** the user views the template
 - **THEN** a footer link to `https://www.componentdock.com/` is present with text "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec matches ColorLib Wizard 5 screenshot section order and layout
 - [ ] 5-step wizard with progress indicator implemented

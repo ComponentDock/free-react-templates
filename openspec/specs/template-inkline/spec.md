@@ -172,7 +172,7 @@ website template.
 - **AND** the text is white and uppercase
 - **AND** on hover the background becomes white with colored text/border
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: logo + nav links + hamburger on mobile
 - [ ] Hero: fullscreen bg image, "Introducing" subtitle, "inkline" headline

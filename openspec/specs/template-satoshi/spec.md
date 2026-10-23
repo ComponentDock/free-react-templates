@@ -134,7 +134,7 @@ Recreation of ColorLib "Bitcoin" — a cryptocurrency landing page template feat
 - **AND** pricing cards stack vertically
 - **AND** the about section stacks to single column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Fixed header with logo and navigation links
 - [ ] Hero section with dark overlay, price display, and "Buy Bitcoin" CTA

@@ -192,7 +192,7 @@ Background:
 - **AND** the team cards stack vertically
 - **AND** the contact form is full-width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo text, all 6 nav links, mobile hamburger
 - [ ] Hero: 3-slide carousel, large heading, subtitle, CTA button, dots

@@ -150,7 +150,7 @@ The template is a travel/tourism booking site with:
 - **GIVEN** the Footer is visible
 - **THEN** it contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections rendered in correct order
 - [ ] Top bar: dark blue bg, contact info, social icons

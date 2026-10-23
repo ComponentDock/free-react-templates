@@ -127,7 +127,7 @@ in black (#000) at font-weight 400, and body text in gray.
 - **THEN** the text color is #000
 - **AND** the font-weight is 400
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with centered heading "Calendar #09"
 - [ ] Subheading "Calendar Datepicker" is present

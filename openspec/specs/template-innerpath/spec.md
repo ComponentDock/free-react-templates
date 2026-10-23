@@ -232,7 +232,7 @@ Order extracted from `https://preview.colorlib.com/theme/counselor/`:
 - **AND** a copyright bar is at the bottom
 - **AND** a link to "Component Dock" (https://www.componentdock.com/) is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec section order matches preview DOM order exactly
 - [ ] All 10 sections present (Navbar, Hero, How It Works, About, Services, Testimonials, Pricing, Contact, Blog, Footer)

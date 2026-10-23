@@ -206,7 +206,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order matching the ColorLib preview
 - [ ] Brand colors match: blue #1eaaf1, orange #fda638, green #8cc152, red #f1453d, purple #5d50c6

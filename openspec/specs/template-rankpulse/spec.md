@@ -128,7 +128,7 @@ Background:
 - **AND** service cards stack vertically on mobile
 - **AND** feature cards stack vertically on mobile
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections present in correct order
 - [ ] Navbar: sticky, logo, nav links, phone CTA, mobile hamburger

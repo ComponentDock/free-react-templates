@@ -95,7 +95,7 @@ Extracted from the screenshot (preview unreachable):
 - **AND** the footer contains a link to "Component Dock" (https://www.componentdock.com/)
 - **AND** the footer has a dark or contrasting background
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo on left, nav links on right, transparent overlay on hero
 - [ ] Hero: blue gradient background, centered heading + subtitle + CTA

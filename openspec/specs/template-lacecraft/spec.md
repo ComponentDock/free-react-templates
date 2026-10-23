@@ -216,7 +216,7 @@ Users SHALL see footer with brand, navigation links, and Component Dock attribut
 - **AND** I see payment method icons (Visa, Amex, etc.)
 - **AND** I see Privacy and Terms links
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections present in correct order (Navbar, Hero, Categories, Featured, Benefits, New Arrivals, Testimonials, Newsletter, Footer)
 - [ ] Dark mode support on all sections (`dark:` variants)

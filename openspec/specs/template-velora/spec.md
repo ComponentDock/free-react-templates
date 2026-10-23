@@ -243,7 +243,7 @@ a copyright notice and a link to Component Dock.
 - **THEN** the icon background SHALL change to purple (#854fee)
 - **AND** the icon SHALL turn white
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Transparent sticky navbar with logo + links + mobile toggle
 - [ ] Hero banner: split layout, gradient buttons, portrait image

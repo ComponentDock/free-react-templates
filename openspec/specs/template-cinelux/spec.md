@@ -149,7 +149,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** the hero text remains readable
 - **AND** team cards stack in a single column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: transparent, white text, logo + nav + social icons
 - [ ] Hero: full-width slider, 3 slides with subtitle/heading/CTA, pagination dots

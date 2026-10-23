@@ -69,7 +69,7 @@ As a visitor, I want to read client feedback and find company contact details an
 - **GIVEN** the user scrolls to the bottom
 - **THEN** client testimonials appear alongside the address, business hours, quick links, and the Component Dock footer attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validates successfully via `npm run spec:validate`
 - [ ] 100% test coverage maintained

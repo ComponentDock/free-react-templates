@@ -148,7 +148,7 @@ Recreation of ColorLib's **Dento** template as a free React component.
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TopHeader: gray bar, contact info, social icons
 - [ ] Navbar: sticky, logo, nav links, "Booking Now" CTA

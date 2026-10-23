@@ -172,7 +172,7 @@ Tailwind CSS 4 + TypeScript.
 - **THEN** a date picker appears
 - **AND** the user can select a date
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 3-step wizard with smooth transitions between steps
 - [ ] Step indicator (1/3, 2/3, 3/3) in top-right corner

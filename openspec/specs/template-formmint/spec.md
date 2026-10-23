@@ -119,7 +119,7 @@ Users SHALL see a footer with a link to https://www.componentdock.com/.
 - **THEN** the footer contains a link to https://www.componentdock.com/
 - **AND** the link text includes "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page loads with `#f2f2f2` gray background, form centered at ~550px width
 - [ ] Title "Send Us A Message" renders in uppercase, dark indigo (#403866)

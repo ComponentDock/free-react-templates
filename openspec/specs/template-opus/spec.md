@@ -107,7 +107,7 @@ time of research — falling back to screenshot reference)
 - **THEN** the footer should display a "Made with Component Dock" link
 - **AND** the footer link should point to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, nav links, active indicator, Login/Register
 - [ ] Hero: background, headline with green accent, inputs, CTA button, LIVE badge

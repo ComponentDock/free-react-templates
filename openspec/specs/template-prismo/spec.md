@@ -161,7 +161,7 @@ Feature: Footer
 - **AND** the footer links to https://www.componentdock.com/
 - **AND** a "More templates at Component Dock" or equivalent line is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order matching the original
 - [ ] Design tokens match: Open Sans, #00d089 brand green, pill buttons, #000 headings, #848484 body

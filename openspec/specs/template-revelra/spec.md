@@ -118,7 +118,7 @@ Recreation of ColorLib's **Evento** template for event/conference landing pages.
 - **AND** the newsletter has an email input and "SUBSCRIBE" button
 - **AND** a copyright bar at the bottom contains "Made with Component Dock" link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar is fixed-top, collapses on mobile, links scroll to sections
 - [ ] Hero slider has 3 slides with auto-advance and dot navigation

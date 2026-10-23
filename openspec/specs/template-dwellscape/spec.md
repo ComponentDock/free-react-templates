@@ -131,7 +131,7 @@ Extracted from `style.css` served by the preview page.
 - **THEN** a logo image and a horizontal menu with "Home" and "Pages" (with dropdown) are shown
 - **AND** a "Contact Us" button with brand green styling appears at the right
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero: full-width map area or parallax background with overlay
 - [ ] Search form: dark background (#2a303b), 6 filter dropdowns, 2 sliders, green search button

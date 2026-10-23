@@ -295,7 +295,7 @@ and a dark copy bar at the bottom.
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Logo with camera icon and "ImaStudio" text centered in navbar
 - [ ] Nav links split left/right on desktop, hamburger on mobile

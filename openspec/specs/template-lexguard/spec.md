@@ -62,7 +62,7 @@ Recreation of ColorLib "Schmidt" template (preview URL: https://preview.colorlib
 - **WHEN** the user clicks submit
 - **THEN** validation passes and a success confirmation appears
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript typecheck passes (`npm run typecheck`)
 - [ ] Linter passes (`npm run lint`)

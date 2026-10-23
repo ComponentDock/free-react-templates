@@ -143,7 +143,7 @@ Background:
 - **THEN** no file contains "colorlib.com" or "preview.colorlib.com"
 - **AND** the provenance is only in the spec and TEMPLATES.md
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 3 sections render in correct page order (Navbar → Carousel → Footer)
 - [ ] Navbar with logo "Flare", 7 nav links, Gallery dropdown, social icons

@@ -149,7 +149,7 @@ The Caviar template is a dark, moody, premium restaurant landing page:
 - **AND** the dish menu grid becomes single-column
 - **AND** the reservation section stacks vertically (form above image)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header with transparent navbar and sticky scroll behavior
 - [ ] Hero carousel with background images, overlay, heading, CTA

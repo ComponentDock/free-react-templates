@@ -128,7 +128,7 @@ Background:
 - **AND** the product grid stacks to 2 columns
 - **AND** the hero section stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: white bg, logo text, nav links with Collection dropdown, search overlay, icons with cart badge
 - [ ] Hero: split layout, product name/price/buttons on left, image on right

@@ -443,7 +443,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification checklist (all verified 2026-10-11)
+## Verification checklist
 
 - [x] Section order 1:1 with the preview DOM: white navbar → photo hero →
       tabbed booking card → features row → Popular Packages → black blog
@@ -496,7 +496,4 @@ Dock (`https://www.componentdock.com/`) instead.
       workspace
 - [x] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh wanderport` passes
-
-## Verification checklist
-
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

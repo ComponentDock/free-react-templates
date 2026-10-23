@@ -220,7 +220,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] 4-step wizard with correct step order (Basic Details → Account → Shipping → Payment)
 - [ ] Stepper shows 4 connected circles with icons (cart, lock, truck, card)

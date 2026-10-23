@@ -42,7 +42,7 @@ Recreation of ColorLib `accordion-04` (`https://preview.colorlib.com/theme/bac/a
 - **WHEN** the footer is visible
 - **THEN** it contains a link pointing to `https://www.componentdock.com/` with anchor text "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Vite + React 19 + Tailwind CSS 4 setup correctly
 - [ ] All accordion sections match the 1:1 structure of ColorLib accordion-04

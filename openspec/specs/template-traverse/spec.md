@@ -236,7 +236,7 @@ Feature: Footer
 - **GIVEN** the page loads
 - **THEN** the footer bottom bar shows a link to "https://www.componentdock.com/" branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: centered logo, split nav links, sticky on scroll, mobile hamburger
 - [ ] Hero: full-viewport, dark overlay, centered heading + subtitle

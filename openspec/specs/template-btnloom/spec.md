@@ -48,7 +48,7 @@
 - **WHEN** the user toggles button states
 - **THEN** interactive states respond correctly
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes
 - [ ] 100% test coverage (`npm run test:coverage`)

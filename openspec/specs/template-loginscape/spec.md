@@ -133,7 +133,7 @@ The template SHALL NOT contain any references to ColorLib in app source files, c
 - **WHEN** the app source code is inspected
 - **THEN** no "colorlib" or "colorlib.com" strings appear in any file under apps/loginscape/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Card is centered on light gray background
 - [ ] Purple avatar circle with user icon at top of card

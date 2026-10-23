@@ -103,7 +103,7 @@ As a user, I want standard footer links and Component Dock attribution.
 - **GIVEN** the user scrolls to the footer
 - **THEN** copyright info, navigation links, and "More templates at Component Dock" linking `https://www.componentdock.com/` are visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict check passes
 - [ ] Vitest coverage at 100%

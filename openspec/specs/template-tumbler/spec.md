@@ -218,7 +218,7 @@ Background:
 - **THEN** the footer should link to https://www.componentdock.com/
 - **AND** display "Component Dock" as the brand name
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 13 sections render in correct order
 - [ ] Off-canvas menu slides from right with dark overlay

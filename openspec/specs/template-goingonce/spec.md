@@ -157,7 +157,7 @@ Extracted from the live preview stylesheet (`css/style.css`) and DOM:
 - **GIVEN** the page loads
 - **THEN** all primary buttons have no border-radius (sharp corners)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App renders without errors in browser
 - [ ] All 8 sections present in correct order

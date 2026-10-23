@@ -222,7 +222,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order matching the original
 - [ ] Brand colors (#0fb78d green, #4fb0dc blue, #ec661f orange) used correctly

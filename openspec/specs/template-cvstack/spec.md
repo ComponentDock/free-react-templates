@@ -129,7 +129,7 @@ Full-viewport app (`100vw × 100vh`, overflow hidden) with padding frame (40px l
 - **AND** the main content background should switch to a dark tone
 - **AND** all text should remain readable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header with logo + 8 nav tabs + CTA button renders correctly
 - [ ] Sidebar shows profile image, general info list, social links

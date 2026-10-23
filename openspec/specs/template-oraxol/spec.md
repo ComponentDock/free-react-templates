@@ -99,7 +99,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 - **WHEN** the footer is rendered
 - **THEN** it displays all navigation columns, contact info, and the Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation passes (`npm run spec:validate`)
 - [ ] All sections implemented with 100% test coverage

@@ -170,7 +170,7 @@ Extracted from the live preview stylesheet (`style.css`):
 - **THEN** a link to "https://www.componentdock.com/" is present
 - **AND** the link text mentions "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero carousel renders with model names and portraits
 - [ ] Navbar is transparent on hero, white on scroll

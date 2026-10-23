@@ -148,7 +148,7 @@ Extracted from the live preview CSS (`style.css`) on 2026-08-25:
 - **AND** interactive elements are keyboard-focusable
 - **AND** heading hierarchy is correct (h1 > h2 > h3)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections present in correct order
 - [ ] Design tokens match: #007A5C green, #32404D dark slate, #F15B43 coral, Chivo font

@@ -116,7 +116,7 @@ Extracted from the live preview HTML/CSS and screenshot analysis.
 - **THEN** a footer link to "https://www.componentdock.com/" is visible
 - **AND** the link text reads "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Two-column layout renders correctly on desktop (form left, text right)
 - [ ] Vertical border separates form from sidebar

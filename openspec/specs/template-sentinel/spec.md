@@ -59,7 +59,7 @@ Recreation of ColorLib **Victor** (`https://colorlib.com/wp/template/victor/`), 
 - **GIVEN** the user reaches the footer
 - **THEN** the footer displays navigation links and the Component Dock link
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict check passes
 - [ ] Lint check passes

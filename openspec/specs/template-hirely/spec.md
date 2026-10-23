@@ -152,7 +152,7 @@ Extracted from the live preview's `css/custom-bs.css` and `css/style.css`:
 - **AND** social media icons (Facebook, Twitter, Instagram, LinkedIn) are shown
 - **AND** a copyright line with Component Dock attribution is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] `apps/hirely/` created, `package.json` uses `@free-react-templates/hirely`
 - [ ] `public/CNAME` contains `hirely.free.componentdock.com`

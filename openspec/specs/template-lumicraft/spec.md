@@ -175,7 +175,7 @@ Background:
 - **AND** social icons for Twitter, Behance, Dribbble, Facebook, and RSS are shown
 - **AND** a "Component Dock" link replaces the original Colorlib attribution
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches: Hero → Services → Portfolio → Crafters → Stories → Offer → Expertise → Contact → Footer
 - [ ] Section title blocks are 370×370px green (#32DB8A) with white Montserrat text

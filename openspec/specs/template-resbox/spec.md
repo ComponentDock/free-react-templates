@@ -185,7 +185,7 @@ Feature: Resbox Responsive
 - **GIVEN** I visit the Resbox homepage on a mobile viewport
 - **THEN** the navigation menu is replaced by a hamburger toggle
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar with 4 links (Home, About, Contact, Features) + logo
 - [ ] Search input with placeholder text

@@ -82,7 +82,7 @@ The footer SHALL display the template name, copyright notice, and a link to Comp
 - **WHEN** the footer is rendered.
 - **THEN** it contains the copyright notice and a link to https://www.componentdock.com/ (Component Dock).
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation passes without errors.
 - [ ] ESLint and code quality checks pass.

@@ -179,7 +179,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Preview heading "Footer #06" renders centered on light background
 - [ ] Newsletter section: left text block + right pill-shaped form
@@ -196,7 +196,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No ColorLib references in app code
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

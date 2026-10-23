@@ -164,7 +164,7 @@ A scroll-to-top button SHALL appear when the user scrolls down, allowing quick r
 - **WHEN** the user scrolls past the hero section
 - **THEN** a scroll-to-top button becomes visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar with phone and location renders
 - [ ] Navbar with logo and all nav items renders

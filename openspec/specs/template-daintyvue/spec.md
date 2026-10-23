@@ -144,7 +144,7 @@ Extracted from the live preview stylesheet (`main.css`) and DOM:
 - **AND** a social icons row is shown
 - **AND** the footer links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 10 sections match the original section order 1:1
 - [ ] Brand pink #fcd2ff used for accents, icons, and links

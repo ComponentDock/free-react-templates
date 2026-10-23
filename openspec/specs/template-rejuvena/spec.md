@@ -196,7 +196,7 @@ at the bottom.
 - **AND** a "SUBMIT" button at the bottom
 - **AND** the modal can be closed with the X button or clicking outside
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sticky header with logo, nav links (6), appointment button, dark-mode toggle
 - [ ] Hero section with background image, teal subheading, dark heading, CTA button

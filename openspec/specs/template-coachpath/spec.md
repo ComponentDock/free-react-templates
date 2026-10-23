@@ -206,7 +206,7 @@ newsletter/social).
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar is sticky, all 7 nav links scroll to correct sections
 - [ ] Hero has typed-text animation, amber CTA button smooth-scrolls

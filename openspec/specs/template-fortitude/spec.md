@@ -171,7 +171,7 @@ Recreation of ColorLib **Robust** — a fitness/gym template with dark overlays,
 - **AND** body text uses Poppins font family
 - **AND** CTA pill has a red-to-purple gradient with full border-radius
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero slider with 4 slides, correct copy, and "Join Classes" button
 - [ ] Intro section with 3 program cards and pricing badges

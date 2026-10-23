@@ -192,7 +192,7 @@ Feature: Fotocast — Photography Portfolio Template
 - **THEN** elements animate into view using AOS (fade-up)
 - **AND** animations have staggered delays for grouped items
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Logo renders with accent-colored period
 - [ ] Desktop nav shows all links with correct dropdown behavior

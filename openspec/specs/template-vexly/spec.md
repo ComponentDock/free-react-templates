@@ -292,7 +292,7 @@ The template is a single-page layout with these sections in order:
 - **AND** social icon links (Facebook, Twitter, Dribbble, Behance) should be visible
 - **AND** the footer MUST link https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header/Navbar: transparent on hero, fixed indigo on scroll, nav links
       with dropdown, Sign up button

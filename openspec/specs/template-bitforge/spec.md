@@ -281,7 +281,7 @@ Feature: Footer
 - **WHEN** the user views the copyright line
 - **THEN** it links to https://www.componentdock.com/ branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: fixed on scroll, correct links, dark background on scroll
 - [ ] Hero: full-width dark overlay, price display, CTA button, gradient styling

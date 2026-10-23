@@ -130,7 +130,7 @@ Recreation of Colorlib "Reg Form V33" — a split-screen registration/signup for
 - **GIVEN** the page is fully loaded
 - **THEN** a footer is present with a link to "https://www.componentdock.com/" branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Gradient background matches `linear-gradient(136deg, #fee140 0%, #fa709a 100%)`
 - [ ] Open Sans font loaded (regular, 600, bold)

@@ -47,7 +47,7 @@ A Carousel & Testimonials Showcase template with header navigation and footer at
 - **WHEN** the footer renders
 - **THEN** it displays copyright information and a prominent link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [x] TypeScript compilation (`npm run typecheck`) passes without errors.
 - [x] Linter (`npm run lint`) passes without warnings.

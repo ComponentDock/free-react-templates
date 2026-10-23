@@ -197,7 +197,7 @@ The page SHALL render a footer with the Zenleaf logo, recent blog posts, explore
 - **WHEN** the page loads
 - **THEN** the footer contains a link to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Oswald + Roboto fonts loaded from Google Fonts
 - [ ] Hero section with background image, heading, and CTA

@@ -156,7 +156,7 @@ Extracted from `css/style.css` (lines 8220–8380) and preview HTML:
 - **THEN** the modal content stacks vertically
 - **AND** all form fields remain accessible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Modal is centered on the page (both axes)
 - [ ] Modal max-width is 450px

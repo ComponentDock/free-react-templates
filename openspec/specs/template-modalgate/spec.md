@@ -124,7 +124,7 @@ strong shadow give the modal a bold, modern appearance.
 - **AND** the launch button remains visible and clickable
 - **AND** the modal adapts to the smaller viewport width
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with centered content and "Modal #7" heading
 - [ ] Launch button triggers modal

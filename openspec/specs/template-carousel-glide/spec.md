@@ -82,7 +82,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [x] TypeScript strict mode compilation (`npm run typecheck`) passes without errors.
 - [x] Tailwind CSS 4 build succeeds with `injectUiSource()` configured in `vite.config.ts`.

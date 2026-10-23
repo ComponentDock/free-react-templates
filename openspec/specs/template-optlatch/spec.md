@@ -148,7 +148,7 @@ form element demo centered on a light background.
 - **AND** the brand accent color is #ff5959 (coral red)
 - **AND** the font family is Lato, sans-serif
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Page renders with centered heading and dropdown button
 - [ ] Dropdown toggles open/closed on button click

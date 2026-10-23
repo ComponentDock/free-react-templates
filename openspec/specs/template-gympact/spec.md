@@ -162,7 +162,7 @@ Extracted from `https://preview.colorlib.com/theme/gym/css/main.css`:
 - **AND** the bottom bar has copyright text and social icons (Facebook, Twitter, Dribbble, Behance)
 - **AND** the footer links to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: top bar with tagline, logo, phone; nav menu with all 6 section links
 - [ ] Banner: full-screen hero with overlay, uppercase headline, subtitle

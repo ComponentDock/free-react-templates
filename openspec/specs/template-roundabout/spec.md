@@ -52,7 +52,7 @@ As a site visitor, I want to browse multiple featured slides in a responsive car
 - **WHEN** the footer is rendered
 - **THEN** it contains copyright and a prominent link to `https://www.componentdock.com/` labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict mode compiles without errors.
 - [ ] All Vitest tests pass with 100% coverage.

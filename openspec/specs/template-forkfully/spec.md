@@ -193,7 +193,7 @@ Feature: Forkfully Footer
 - **AND** social icons (Facebook, Twitter, Dribbble, Behance) are visible
 - **AND** a "Component Dock" attribution link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render in correct order
 - [ ] Navbar: transparent → sticky on scroll, mobile hamburger works

@@ -145,7 +145,7 @@ Extracted from live preview CSS (`css/style.css`) on 2026-09-10.
 - **AND** the testimonial cards display in a single column
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in the correct order
 - [ ] Hero is full-viewport height with background image

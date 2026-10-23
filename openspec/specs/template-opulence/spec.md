@@ -163,7 +163,7 @@ Extracted from the live preview CSS (`css/style.css`):
 - **AND** the footer links to Component Dock (https://www.componentdock.com/)
 - **AND** the footer shows contact phone and email
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec written and saved to `openspec/specs/template-opulence/spec.md`
 - [ ] Design tokens extracted from live preview CSS

@@ -119,7 +119,7 @@ Recreation of **ColorLib Reg Form V30** (`colorlib-regform-30`) as a React 19 + 
 - **WHEN** the form displays the First/Last Name or Password/Confirm rows
 - **THEN** the fields stack vertically instead of side by side
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Teal `#75e2e9` full-page background
 - [ ] White 850px card, 10px radius, shadow

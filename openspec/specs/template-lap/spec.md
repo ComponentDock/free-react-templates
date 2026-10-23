@@ -57,7 +57,7 @@ As a site visitor, I want to explore interactive accordion sections so that I ca
 
 ---
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App builds successfully (`npm run build`)
 - [ ] Typecheck passes without errors (`npm run typecheck`)

@@ -135,7 +135,7 @@ Extracted from the live preview's `style.css` on 2025-09-11.
 - **THEN** the footer background is dark blue-gray (#5d6b82)
 - **AND** text is white
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero section renders with slider, headline, and two CTA buttons
 - [ ] Navbar has all links and utility icons, becomes solid on scroll

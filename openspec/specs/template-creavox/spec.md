@@ -216,7 +216,7 @@ Extracted from live preview CSS (`style.css`) at
 - **AND** social media icon links (Twitter, Behance, Dribbble, Facebook, RSS)
     are visible on the right
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Hero section: centered logo, Montserrat heading, PT Serif subtitle,
       deep purple background with image overlay

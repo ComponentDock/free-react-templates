@@ -42,7 +42,7 @@ As a visitor, I want to browse products in an interactive carousel so that I can
 - **GIVEN** the page footer is displayed
 - **THEN** it contains a link to `https://www.componentdock.com/` branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation passes without errors
 - [ ] Linting and formatting rules satisfied

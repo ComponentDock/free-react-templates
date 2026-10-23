@@ -95,7 +95,7 @@ verify before building from it): `#e07057`.
 - Shows "Component Dock" branding
 - Shows copyright text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec covers all visible sections from screenshot
 - [ ] Design tokens match screenshot visual analysis

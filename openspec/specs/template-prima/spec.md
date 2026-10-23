@@ -104,7 +104,7 @@ The template MUST render sections in this exact order:
 - **GIVEN** the page loads, WHEN I scroll to the footer, THEN I see a dark navy background with multi-column link sections and a copyright line with a border
 - **GIVEN** the footer is visible, WHEN I read the copyright, THEN it includes a link to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections present in correct order
 - [ ] Font: Rubik loaded via Google Fonts

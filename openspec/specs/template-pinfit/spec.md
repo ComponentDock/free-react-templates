@@ -113,7 +113,7 @@ Background:
 - **AND** the footer contains copyright text
 - **AND** a link to "https://www.componentdock.com/" is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections render in correct DOM order
 - [ ] Hero slider shows correct heading, script subtitle, and CTA

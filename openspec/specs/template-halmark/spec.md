@@ -168,7 +168,7 @@ Feature: Halmark — Photography Portfolio Template
 - **AND** gallery/team columns stack vertically
 - **AND** the contact section stacks vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 9 sections render in correct page order
 - [ ] Brand color `#444444` used for CTA buttons

@@ -116,7 +116,7 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 - **THEN** there is a link to https://www.componentdock.com/
 - **AND** it reads "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo, 5 nav links, phone CTA, mobile hamburger
 - [ ] Hero: background image, headline, subtext, Buy/Rent tabs, search form with 3 fields + button

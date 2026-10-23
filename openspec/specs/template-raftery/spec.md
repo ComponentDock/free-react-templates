@@ -120,7 +120,7 @@ Background:
 - **AND** the footer contains: brand, services list, business hours, contact info
 - **AND** a "Component Dock" link is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TopBar: logo + 4 social icons visible
 - [ ] Navbar: 6 nav links, dark background, mobile toggle

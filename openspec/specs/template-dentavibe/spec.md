@@ -79,7 +79,7 @@ So that I can choose the right dental treatment and contact the clinic
 - **WHEN** viewing the footer
 - **THEN** they must see the link to Component Dock (`https://www.componentdock.com/`)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] App folder created at `apps/dentavibe/`
 - [ ] Workspace registered in root `package.json` and `package-lock.json`

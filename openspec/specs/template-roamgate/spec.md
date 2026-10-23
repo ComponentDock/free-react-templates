@@ -146,7 +146,7 @@ centered and contains:
 - **AND** the form fields stack vertically
 - **AND** the date fields stack vertically instead of side-by-side
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Full-viewport background image covers the entire screen
 - [ ] Dark semi-transparent card centered with rounded corners

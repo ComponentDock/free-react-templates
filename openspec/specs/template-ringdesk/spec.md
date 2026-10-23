@@ -135,7 +135,7 @@ brand logos, contact form, and dark footer.
 - **AND** sections stack vertically
 - **AND** feature/service cards stack to single column
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Fixed white navbar with logo and nav links
 - [ ] Full-screen hero with dark overlay, heading, and CTA

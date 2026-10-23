@@ -186,7 +186,7 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 - **Scenario: Newsletter input** — Given the footer renders, Then an email input + Send button are visible
 - **Scenario: Component Dock link** — Given the footer renders, Then a link to componentdock.com is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in the correct page order
 - [ ] Navbar is sticky on scroll

@@ -47,7 +47,7 @@ As a visitor, I want to view a full-screen image carousel with slide headings an
 - **WHEN** the user scrolls to the footer
 - **THEN** a "Made with Component Dock" link pointing to `https://www.componentdock.com/` must be visible
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript strict compilation passes without errors
 - [ ] Vitest test suite runs and achieves 100% test coverage

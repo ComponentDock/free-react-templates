@@ -153,7 +153,7 @@ Recreation of ColorLib "Suites" template.
 - **AND** sections alternate between white and #f8f9fa backgrounds
 - **AND** dark overlay sections use rgba(0,0,0,0.4)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo in Playfair Display, nav links with dropdown, hamburger on mobile
 - [ ] Hero: 3-slide carousel, full-viewport, dark overlay, centered text

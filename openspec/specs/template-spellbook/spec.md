@@ -120,7 +120,7 @@ Recreation of ColorLib "Colorlib Wizard 20" — a multi-step account setup wizar
 - **WHEN** the user hovers over the button
 - **THEN** the button background changes to dark (#090909)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Gradient background matches the reference (#884d80 → #9795f0 → #2b5876 → #4e4376 at 0deg)
 - [ ] White card with 10px border-radius and box-shadow centered on page

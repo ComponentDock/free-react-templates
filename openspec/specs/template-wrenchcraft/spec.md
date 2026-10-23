@@ -156,7 +156,7 @@ Extracted from the live preview CSS (`css/style.css`) and inline `<style>`:
 - **THEN** a link to https://www.componentdock.com/ is present
 - **AND** it is branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: logo, 6 nav links, primary CTA button
 - [ ] Hero: 2 slides with images, overlay, subtitle + headline + CTA

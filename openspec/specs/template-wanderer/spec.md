@@ -116,7 +116,7 @@ Recreation of ColorLib **Travelers** template.
 - **AND** multi-column grids stack to single column
 - **AND** the hero slider text remains readable
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: Navbar → Hero Slider → Experiences → Services → Testimonials → Destinations → Dark Services → Our Services → Newsletter → Footer
 - [ ] Brand accent `#ef6c57` used for links, icons, hover states

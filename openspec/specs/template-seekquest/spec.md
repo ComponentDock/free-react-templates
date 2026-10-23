@@ -121,7 +121,7 @@ Background:
 - **THEN** the form fields should be arranged in a horizontal row
 - **AND** the form should have 30px left padding
 
-## Verification Checklist
+## Verification checklist
 - [ ] Component renders with correct heading
 - [ ] All four form fields present (Location, Property Type, Property Status, Price Limit)
 - [ ] Location field has search icon and correct placeholder

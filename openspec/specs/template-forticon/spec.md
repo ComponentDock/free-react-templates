@@ -162,7 +162,7 @@ So that I can learn about services, view projects, and contact the team
 - **AND** I see a copyright notice
 - **AND** I see a link to "Component Dock" (https://www.componentdock.com/)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar with logo, 8 nav links, sticky on scroll
 - [ ] Hero slider with 3 slides, gradient overlay, CTA button

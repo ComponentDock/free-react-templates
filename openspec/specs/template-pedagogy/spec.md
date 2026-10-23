@@ -149,7 +149,7 @@ Extracted from `https://preview.colorlib.com/theme/onedu/assets/css/style.css`:
 - **AND** course cards stack in a single column
 - **AND** the footer columns stack vertically
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, logo, search, nav links, cart, sign-in button
 - [ ] Hero: background image, headline, subtext, search form with orange button

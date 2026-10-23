@@ -205,7 +205,7 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - **AND** it contains a Links column with nav items
 - **AND** it links to Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar with logo, 7 links, hamburger on mobile
 - [ ] Hero split layout with book promo content

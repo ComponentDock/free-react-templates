@@ -135,7 +135,7 @@ Background:
 - **AND** the copyright notice is displayed
 - **AND** a "Made with Component Dock" link to componentdock.com is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar: sticky, correct links, mobile hamburger menu
 - [ ] Hero: slider auto-transitions, CTA button styled, rating badge renders

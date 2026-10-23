@@ -59,7 +59,7 @@ Single section with:
 - **GIVEN** a mobile viewport, THEN the search bar scales down proportionally
 - **GIVEN** a desktop viewport, THEN the search bar is centered with max-width constraint
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Green circular search button with white magnifying glass icon
 - [ ] Pill-shaped search bar (circle button + rounded input)

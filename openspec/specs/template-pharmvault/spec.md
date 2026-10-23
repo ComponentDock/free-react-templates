@@ -180,7 +180,7 @@ Recreation of ColorLib **Pharmative** template.
 - **THEN** a copyright line is visible
 - **AND** it contains a link to "https://www.componentdock.com/" branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar renders with green bold brand prefix, nav links, cart badge, search icon
 - [ ] Hero carousel with 2 slides, dark overlay, background images, Shop Now button

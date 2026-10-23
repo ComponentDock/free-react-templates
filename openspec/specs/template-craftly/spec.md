@@ -174,7 +174,7 @@ The template is a clean, modern creative agency onepage. White navbar with "Crea
 - **AND** form fields have associated `<label>` elements
 - **AND** social links have descriptive text or aria-labels
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar is sticky and highlights active section on scroll
 - [ ] Typed animation cycles through words in the hero

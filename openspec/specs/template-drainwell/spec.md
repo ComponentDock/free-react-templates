@@ -143,7 +143,7 @@ contrasts a dark navy footer/CTA/hero with white content sections.
 - **AND** the footer links to https://www.componentdock.com/
 - **AND** a copyright notice is displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 11 sections render in correct order matching the original preview
 - [ ] Font: Poppins loaded via Google Fonts / CDN

@@ -306,7 +306,7 @@ All interactive elements SHALL be accessible.
 - **THEN** semantic elements are used: `<header>`, `<nav>`, `<main>`, `<footer>`, `<button>`, `<label>`
 - **AND** form inputs have associated labels or aria-labels
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 12 sections render correctly matching original structure order
 - [ ] Design tokens (colors, fonts) match the extracted CSS values

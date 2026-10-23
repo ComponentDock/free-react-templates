@@ -163,7 +163,7 @@ Feature: Footer
 - **AND** the footer contains address, phone, and email contact info
 - **AND** there is a "Component Dock" attribution link (branded as required)
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Top bar: dark purple-navy bg (#302a39), tagline text, 3 action links right-aligned
 - [ ] Main nav: logo, 7 nav items with dropdown on Courses, CTA "Get started"

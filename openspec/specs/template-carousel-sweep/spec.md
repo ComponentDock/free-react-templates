@@ -68,7 +68,7 @@ As a visitor, I want to browse featured interactive carousels and slides so that
 - **WHEN** the user checks the footer
 - **THEN** it must include a prominent link to `https://www.componentdock.com/` branded as Component Dock
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Spec validation (`npm run spec:validate`) passes
 - [ ] 100% test coverage on all components

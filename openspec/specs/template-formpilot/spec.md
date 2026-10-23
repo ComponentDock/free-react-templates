@@ -130,7 +130,7 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - **WHEN** the page is rendered
 - **THEN** the footer contains a link to https://www.componentdock.com/ labeled "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Multi-step form renders with 3 steps (Account Setup, Payment Details, Confirmation)
 - [ ] Vertical progress sidebar with numbered steps and checkmarks

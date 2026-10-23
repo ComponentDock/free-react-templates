@@ -128,7 +128,7 @@ Recreation of ColorLib **Crossbody** — a crossfit/gym landing page.
 - **GIVEN** the footer, **when** the bottom row renders, **then** it shows a copyright notice and links to the template source
 - **GIVEN** the footer, **when** it renders, **then** it MUST include a link to `https://www.componentdock.com/` branded as "Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar dark bg, responsive toggle, correct links
 - [ ] Hero full-viewport parallax with overlay, large headline, video link

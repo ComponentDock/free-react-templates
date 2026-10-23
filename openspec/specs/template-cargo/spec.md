@@ -64,7 +64,7 @@ Recreation of ColorLib **Logistic** free website template (`https://colorlib.com
 - **WHEN** the user clicks "Request Quote",
 - **THEN** a success confirmation message is displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Renders correctly at mobile, tablet, and desktop viewports.
 - [ ] All navigation links and buttons are interactive.

@@ -214,7 +214,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Header: logo, nav links, phone, social icons, hamburger
 - [ ] Hero slider: 3 slides with headlines, vertical nav dots
@@ -235,7 +235,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `public/CNAME` set to `treklore.free.componentdock.com`
 - [ ] `homepage` set to `https://treklore.free.componentdock.com`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-
-## Verification checklist
-
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/

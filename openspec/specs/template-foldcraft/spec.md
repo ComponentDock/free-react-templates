@@ -44,7 +44,7 @@ As a site visitor, I want to click accordion headers to expand or collapse conte
 - **GIVEN** the Foldcraft page is rendered
 - **THEN** the footer must contain a link to `https://www.componentdock.com/` with branded text
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] TypeScript compilation succeeds (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

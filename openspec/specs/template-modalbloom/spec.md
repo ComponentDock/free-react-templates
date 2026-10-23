@@ -200,7 +200,7 @@ The template SHALL include a footer linking to Component Dock.
 - **AND** the footer contains a link to https://www.componentdock.com/
 - **AND** the link text is "More templates at Component Dock"
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Modal opens with fade-in animation on button click
 - [ ] Modal closes on X button click

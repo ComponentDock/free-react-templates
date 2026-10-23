@@ -152,7 +152,7 @@ Background:
 - **WHEN** the user clicks the button
 - **THEN** the page scrolls smoothly to the top
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Font "Jost" loaded from Google Fonts
 - [ ] Brand red (#EA5252) used for accents, search button, hover states

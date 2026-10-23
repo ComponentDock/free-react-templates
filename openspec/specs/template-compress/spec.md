@@ -40,7 +40,7 @@ So that I can easily inspect information in a compact layout.
 - **WHEN** the user clicks different panels
 - **THEN** the active panels toggle correctly according to the accordion mode
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)

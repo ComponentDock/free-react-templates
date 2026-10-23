@@ -118,7 +118,7 @@ Extracted from `css/style.css` and preview HTML on 2026-08-24.
 - **AND** I can navigate to any page from the mobile menu
 - **AND** I can close the mobile menu with the close button
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections rendered in correct order (header → gallery → footer)
 - [ ] Fonts: Josefin Sans (body), Roboto Mono (accent)

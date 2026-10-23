@@ -220,7 +220,7 @@ Feature: Footer
 - **GIVEN** the footer is visible
 - **THEN** social icons have rounded square tiles with light background
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All 8 sections present in correct order
 - [ ] Navbar: logo, nav links, CTA, mobile menu

@@ -124,7 +124,7 @@ Navigation: Home | Services | Portfolio | About | News | Video | Skills | Contac
 - **GIVEN** the user scrolls to the footer
 - **THEN** a link to "Component Dock" is present
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Section order matches original: hero → services → portfolio → about → news → video → skills → contact → footer
 - [ ] Brand colors match: #221C5A (navy), #E74C78 (pink), #32DB8A (green)

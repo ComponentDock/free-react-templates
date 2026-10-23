@@ -177,7 +177,7 @@ Background:
 - **AND** the footer displays a newsletter signup form
 - **AND** the footer links to componentdock.com
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Navbar sticky with scroll effect, all links functional
 - [ ] Hero slider auto-rotates with dot navigation

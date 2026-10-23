@@ -50,7 +50,7 @@ Recreation of ColorLib Bootstrap Buttons 02 (https://colorlib.com/wp/template/bo
 - **GIVEN** the user scrolls to the bottom of the page
 - **THEN** the footer must display "Made with Component Dock" linking to https://www.componentdock.com/
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All creative button variations render correctly with responsive padding and typography
 - [ ] Hover, active, focus, and transition effects function flawlessly

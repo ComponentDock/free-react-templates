@@ -246,7 +246,7 @@ Extracted from the live preview CSS (`css/style.css`) and DOM analysis.
 - **AND** a description paragraph should be shown
 - **AND** a "Contact me!" yellow CTA button should be displayed
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Sidebar renders with logo, nav links, and social icons
 - [ ] Sidebar is collapsible on mobile with hamburger toggle

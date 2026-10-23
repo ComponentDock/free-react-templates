@@ -135,7 +135,7 @@ Background:
 - **AND** the services split layout stacks vertically
 - **AND** the 5-column blog grid stacks to fewer columns
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] Montserrat font loaded from Google Fonts
 - [ ] Brand color #1264fa applied to all buttons, links, active states

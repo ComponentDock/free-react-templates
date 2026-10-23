@@ -202,7 +202,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
-## Verification Checklist
+## Verification checklist
 
 - [ ] All sections render in correct order: Navbar → Hero → About → Services → Counter → Projects → Testimonials → Case Study → Pricing → Partner → Footer
 - [ ] Brand yellow `#fcd307` used for CTA buttons, icon backgrounds, and testimonials section
