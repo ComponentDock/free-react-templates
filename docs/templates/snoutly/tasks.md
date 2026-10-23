@@ -1,7 +1,7 @@
-# Leopet (Colorlib Leopet) — Tasks & Design Notes
+# Snoutly (Colorlib Snoutly) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-leopet`.
+> Implementation ships later on `feat/template-snoutly`.
 
 ## Design notes
 
@@ -12,7 +12,7 @@
 - **Structure observed (1:1, section order):**
   1. Header — nav (Home, About, Services, Gallery, Blog, Contact) +
      "Become a Volunteer" button.
-  2. Banner — h5 "Welcome to Leopet", h1 "Give your pet Best Care",
+  2. Banner — h5 "Welcome to Snoutly", h1 "Give your pet Best Care",
      "Our Services" + "Become a Volunteer" buttons.
   3. About — "We care your pet As you care", copy, "About Us"/"Browse Now"
      buttons, image.
@@ -27,12 +27,12 @@
   **#FF5B5B**, headings purple **#415094**, muted **#999999**, light
   backgrounds **#f9f9ff** / **#f0e9ff**; font **Quicksand** via Google Fonts;
   filled rounded teal buttons.
-- **Recreation name:** Leopet (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder `apps/leopet`,
-  package `@free-react-templates/leopet`.
+- **Recreation name:** Snoutly (keeps the original name — it is already a
+  distinct working name, not a ColorLib brand). App folder `apps/snoutly`,
+  package `@free-react-templates/snoutly`.
 - **Design approach:** teal brand tokens in `@theme`
   (`--color-brand: #53C9BB`, `#415094` heading purple); seeded picsum
-  placeholders `https://picsum.photos/seed/leopet-<n>/<w>/<h>`; lucide-react
+  placeholders `https://picsum.photos/seed/snoutly-<n>/<w>/<h>`; lucide-react
   icons (PawPrint, HeartPulse, Home for services); stat counters as static
   numbers; newsletter form with client-side validation (zod); repo-standard
   Navbar (dark-mode toggle) and Footer chrome; social icons (GitHub, X,
@@ -44,11 +44,11 @@
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-leopet/spec.md` (Gherkin requirements +
+- [ ] Write `openspec/specs/template-snoutly/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/leopet` (copy `apps/sage`; rename package to
-      `@free-react-templates/leopet`).
+- [ ] Create `apps/snoutly` (copy `apps/sage`; rename package to
+      `@free-react-templates/snoutly`).
 - [ ] TDD: tests first for Navbar, Hero, About, Services, Adoption counters,
       Testimonials, Volunteer, Footer, App composition; run red.
 - [ ] Implement components (green) at 100% coverage.
@@ -66,8 +66,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/leopet/` may name the source designer,
+- **Provenance ban.** No file under `apps/snoutly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/leopet/public/CNAME` = `leopet.free.componentdock.com`
-  and the package `homepage` = `https://leopet.free.componentdock.com`.
+- **Deploy identity.** `apps/snoutly/public/CNAME` = `snoutly.free.componentdock.com`
+  and the package `homepage` = `https://snoutly.free.componentdock.com`.

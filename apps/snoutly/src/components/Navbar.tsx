@@ -26,7 +26,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:justify-between">
         <div className="flex items-center gap-6">
           <a href="#top" className="text-2xl font-bold text-heading dark:text-white">
-            Leopet
+            Snoutly
           </a>
           <a
             href="tel:+02213256365"

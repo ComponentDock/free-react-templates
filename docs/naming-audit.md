@@ -13,9 +13,9 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Launch → Embark
+## State after Leopet → Snoutly
 
-7 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+6 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
@@ -30,17 +30,25 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `dogger` → `barkly` (#1830), `doglife` → `houndly` (#1831),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
-`launch` → `embark` (#1836).
+`launch` → `embark` (#1836), `leopet` → `snoutly` (#PRNUM).
 
-| app                 | source design  |
-| ------------------- | -------------- |
-| apps/leopet         | Leopet         |
-| apps/massive        | Massive        |
-| apps/medico         | Medico         |
-| apps/mosh           | Mosh           |
-| apps/pawpal         | PawPal         |
-| apps/petsitting     | Petsitting     |
-| apps/petvet         | Petvet         |
+| app             | source design |
+| --------------- | ------------- |
+| apps/massive    | Massive       |
+| apps/medico     | Medico        |
+| apps/mosh       | Mosh          |
+| apps/pawpal     | PawPal        |
+| apps/petsitting | Petsitting    |
+| apps/petvet     | Petvet        |
+
+## Pitfall — a design can carry two TEMPLATES.md rows
+
+`Leopet` appears on rows 47 **and** 438 (once under Animal, once under the
+Bootstrap/second pass). A rename that rewrites only the first hit leaves the
+other row pointing at the dead host, and `node scripts/audit-naming.mjs` will
+still report the app. Grep the display name in `TEMPLATES.md` before editing
+(`grep -n '^- \[x\] \*\*Leopet\*\*' TEMPLATES.md`) and update every row — the
+`docs/orphans.md` mapping and the README table regenerate from the same data.
 
 ## Rename checklist (proven on Thepetcare → Vetly, #1810, and Petcare → Pawly, #1812)
 
@@ -71,14 +79,13 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
    `xargs: oxlint: No such file or directory` before it verifies anything. Run
    the per-app gate manually instead (the hook would have run exactly that).
    The post-merge deploy may abort with `Aborted - Rate limited. (account). Verify
-   email or try again in 10 hours.` (Surge free-tier quota). That is not a rename
+email or try again in 10 hours.` (Surge free-tier quota). That is not a rename
    defect: the `verify` step in the same job passes and the nightly fleet audit
    re-deploys the new host. Queue it explicitly so the repair job knows about it:
    `printf '<new>\n' >> /tmp/surge-pending.txt && sort -u /tmp/surge-pending.txt -o /tmp/surge-pending.txt`
    (`redeploy-resume.sh`, hourly, publishes it once the cooldown/edge clears).
    `surge` is not installed on the runner, so the old
    hostname cannot be torn down locally — leave it.
-
 
 Prefer names that evoke the design (pet care → `Vetly`, horse club → `Canter`), a
 single lowercase word, no collision with `ls apps/`.
@@ -87,7 +94,7 @@ single lowercase word, no collision with `ls apps/`.
 
 A blind `farmie` → `harvest` find/replace also rewrites
 `https://colorlib.com/wp/template/farmie/` and
-`https://preview.colorlib.com/theme/farmie/` into the *new* name, which makes
+`https://preview.colorlib.com/theme/farmie/` into the _new_ name, which makes
 the spec cite a page that does not exist (and the replica's own provenance
 unverifiable). Replace case-variants selectively and then re-assert the two
 URLs plus the `ColorLib "X"` display name; only the app name should change.
@@ -118,7 +125,7 @@ again, fix the hook — do not `--no-verify` past it.
 
 The provenance restore after a blanket swap has to cover every phrasing the
 spec uses. `ColorLib free "Favison"` (Purpose paragraph) survived a restore that
-only matched `ColorLib "Favison"`, so the audit then reported the *new* folder as
+only matched `ColorLib "Favison"`, so the audit then reported the _new_ folder as
 reusing `ColorLib "Upswing"`. After the swap run `node scripts/audit-naming.mjs`
 and confirm the count went DOWN by one, and grep the spec for `ColorLib` to
 eyeball every line.

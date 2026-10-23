@@ -908,7 +908,7 @@ template-paintbox                   five-star                  -> apps/crafty   
 template-paladin                    game-warrior               -> apps/fragzone           (row 1821, row)
 template-palazzo                    roberto                    -> apps/retreat            (row 2993, banner)
 template-palladium                  whitespace                 -> apps/airy               (row 2578, unproven)
-template-pamper                     leopet                     -> apps/leopet             (row 438, unproven)
+template-pamper                     leopet                     -> apps/snoutly            (row 438, unproven)
 template-panache                    fancy                      -> apps/flair              (row 2322, unproven)
 template-panelview                  bootstrap-sidebar-08       -> apps/paneline           (row 2799, row)
 template-papernote                  newspaper                  -> apps/broadsheet         (row 2210, banner)

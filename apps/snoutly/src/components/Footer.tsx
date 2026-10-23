@@ -77,11 +77,11 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:reserve@leopet.com"
+                  href="mailto:reserve@snoutly.com"
                   className="flex items-center gap-2 transition-colors hover:text-brand"
                 >
                   <Mail className="h-4 w-4" aria-hidden="true" />
-                  reserve@leopet.com
+                  reserve@snoutly.com
                 </a>
               </li>
             </ul>
@@ -111,7 +111,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm font-medium">
-            Copyright © {new Date().getFullYear()} Leopet. All rights reserved.
+            Copyright © {new Date().getFullYear()} Snoutly. All rights reserved.
           </p>
           <SocialLinks />
         </div>
