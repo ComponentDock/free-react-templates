@@ -18,7 +18,7 @@ import { SocialIcon } from './SocialIcon'
 
 /* Dark footer (reference `footer.site-footer`, bg #262626): about column,
    latest post entries, quick links + social, and the copyright bar with an
-   original attribution (the ColorLib credit is replaced). */
+   original attribution (the source credit is replaced). */
 export function Footer() {
   const year = new Date().getFullYear()
 
@@ -103,6 +103,12 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-16 max-w-[1250px] border-t border-white/10 pt-8 text-center text-sm">
         <p>{footerCopyright(year)}</p>
+      </div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
       </div>
     </footer>
   )

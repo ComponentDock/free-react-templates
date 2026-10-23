@@ -1,9 +1,6 @@
-/* Umami — food magazine / recipe blog home page (ColorLib "Yummy 2"
-   recreation). Reference: ThemeWagon mirror
-   (https://themewagon.github.io/yummy2/) live DOM + css/style.css — the
-   official preview.colorlib.com/theme/yummy-2/ 404s. All copy paraphrased
-   from the mirror; images are deterministic picsum seeds (never the source
-   assets). */
+/* Umami — food magazine / recipe blog home page (measured from the
+   reference design): rendered DOM + css/style.css. All copy paraphrased;
+   images are deterministic picsum seeds (never the source assets). */
 
 export const siteName = 'Umami'
 export const tagline = 'Food Blog'

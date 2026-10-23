@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Treadly brand orange — Tailwind orange scale extracted from the original
-     ColorLib "Solestyle" demo stylesheet (Base.B5hAE-Ox.css): primary 600
+  /* Treadly brand orange — Tailwind orange scale measured from the reference
+     stylesheet (Base.css): primary 600
      #ea580c for buttons/CTA band, 500 #f97316 accents, 950 #431407 etc. */
   --color-primary-50: #fff7ed;
   --color-primary-100: #ffedd5;

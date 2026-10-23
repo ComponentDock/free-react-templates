@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Thepetcare brand pink — from the original ColorLib "Thepetcare"
-     stylesheet (assets/css/style.css): .btn background #FF3E7E. */
+  /* Thepetcare brand pink — measured from the reference stylesheet
+     (assets/css/style.css): .btn background #FF3E7E. */
   --color-brand: #ff3e7e;
 
   /* Dark navy — headings/alt sections (#140C40, #232F55, #023C5A). */

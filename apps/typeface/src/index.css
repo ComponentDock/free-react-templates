@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Typeface brand palette — recreated from the ColorLib "Wordify" preview
-   (https://preview.colorlib.com/theme/wordify/) live DOM + style.css:
+/* Typeface brand palette — measured from the reference design
+   (rendered DOM + css/style.css):
    brand purple #6610f2 (top bar, category badges, dropdown hover/active,
    pagination), hover #8540f5, dark purple #510bc4 (top-bar search input,
    focus #3d0894), dark footer #262626, card/body-frame border #efefef,

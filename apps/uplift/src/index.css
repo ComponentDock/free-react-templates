@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Uplift brand palette — recreated from the ColorLib "Hopehand" design.
+  /* Uplift brand palette — measured from the reference design.
      The primary scale IS the emerald brand color (#059669) so the shared
      packages/ui Button/ButtonLink render in brand emerald, and Tailwind's
      built-in gray scale drives the light/dark section rhythm. */

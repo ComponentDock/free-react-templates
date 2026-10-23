@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Tressly brand palette — recreated from the ColorLib "HairSal" design
+  /* Tressly brand palette — measured from the reference design
      (brand light green #8bc34a, light section bgs #edf0f5/#f4f5f9,
      footer dark #25262a). */
   --color-leaf-50: #f7fbf0;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* ColorLib "Error 404 V11" design tokens (recreated, no assets copied):
+  /* Reference error-page design tokens (no assets copied):
      near-black ink + hot-pink accent, Passion One display + Muli body. */
   --color-brand: #222225;
   --color-accent: #ff00b4;

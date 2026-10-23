@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Tidbit brand palette — recreated from the ColorLib "Miniblog" template
-     (https://colorlib.com/wp/template/miniblog/), tokens extracted from the
-     live preview's css/style.css:
+  /* Tidbit brand palette — measured from the reference design, tokens
+     extracted from css/style.css:
      - accent blue #2f89fc (links, active nav link, active pagination circle,
        primary category pill, Subscribe button)
      - accent hover #046df4 (a:hover)

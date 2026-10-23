@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Trailhead brand palette — recreated from the ColorLib "Hikers" template
-     (https://colorlib.com/wp/template/hikers/), tokens extracted from the
-     live preview's css/style.css:
+  /* Trailhead brand palette — measured from the reference design, tokens
+     extracted from css/style.css:
      - brand blue #2f89fc (active nav, nav hover, dropdown top border,
        chip hover bg); darker hover #046df4
      - ink #000 (logo, nav, headings, social-icon circles)
