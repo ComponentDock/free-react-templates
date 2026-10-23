@@ -198,3 +198,9 @@ The app source code SHALL NOT contain any references to ColorLib, colorlib.com, 
 - [ ] No ColorLib references in app source
 - [ ] 100% test coverage
 - [ ] Build passes
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v19/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5468d4` — nearest `#4272d7` (d=21)
+- `#4759c5` — nearest `#4272d7` (d=31)
+<!-- live-palette-unverified:end -->

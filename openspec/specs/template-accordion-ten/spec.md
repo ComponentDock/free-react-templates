@@ -54,3 +54,9 @@ As a site visitor, I want to explore collapsible accordion panels, category tabs
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-10/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#38ade0` (d=48)
+- `#64748b` — nearest `#38ade0` (d=111)
+<!-- live-palette-unverified:end -->

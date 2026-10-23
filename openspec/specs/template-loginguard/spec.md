@@ -166,3 +166,8 @@ The template SHALL include a footer linking to https://www.componentdock.com/ br
 - [ ] Footer links to Component Dock
 - [ ] Responsive on mobile viewports
 - [ ] Poppins font loaded via Google Fonts
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/login-form-19/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f5c7a9` — nearest `#fbd1b7` (d=18)
+<!-- live-palette-unverified:end -->

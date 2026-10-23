@@ -102,13 +102,21 @@ def configure(fetch, cache_dir=None):
 
 
 def demo(fetch, slug, name=None, aliases=None):
-    """(url, html) for the slug's live demo, or (None, "").
+    """(url, html) for the slug's live demo, or (None, "")."""
+    url, html, _via = demo_via(fetch, slug, name, aliases)
+    return url, html
 
-    Tries: skill alias map -> catalog[slug] -> catalog[name] -> the caller's
-    own ladder (`aliases` is a callable taking the slug).
+
+def demo_via(fetch, slug, name=None, aliases=None):
+    """(url, html, via) — `via` names the entry that matched.
+
+    `via` matters for identity: a demo matched on the INVENTED app name
+    (`catalog[name]`) is not proof that this slug resolves there — the name can
+    collide with a different ColorLib design.  Callers that make a
+    reference-identity claim must not treat `via == "name"` as proof.
     """
     if os.environ.get("NO_CATALOG"):      # A/B control: the pre-patch ladder only
-        return (None, "")
+        return (None, "", None)
     key = (slug, name)
     if key in _MEMO:
         return _MEMO[key]
@@ -118,17 +126,21 @@ def demo(fetch, slug, name=None, aliases=None):
         cands.append(aliases[name].get("url") or aliases[name])
     for k in (slug, name):
         if k and k in cat:
-            cands.append(cat[k])
+            cands.append((cat[k], "slug" if k == slug else "name"))
     # de-hyphenated spelling the ladder never tries (`faith-2` -> `/theme/faith2/`)
     if slug and "-" in slug:
-        cands.append("https://preview.colorlib.com/theme/"
-                     + slug.replace("-", "") + "/")
-    for url in [c for c in cands if isinstance(c, str)]:
+        cands.append(("https://preview.colorlib.com/theme/"
+                      + slug.replace("-", "") + "/", "dehyphenated"))
+    # the alias map entry is a caller-supplied skill table: identity-proven
+    cands = [c if isinstance(c, tuple) else (c, "alias") for c in cands]
+    for url, via in cands:
+        if not isinstance(url, str):
+            continue
         if not url.startswith("http"):
             url = "https://preview.colorlib.com/theme/" + url.strip("/") + "/"
         code, body = fetch(url)
         if str(code) == "200" and len(body) > MIN_BYTES:
-            _MEMO[key] = (url, body.decode("utf-8", "replace"))
+            _MEMO[key] = (url, body.decode("utf-8", "replace"), via)
             return _MEMO[key]
-    _MEMO[key] = (None, "")
+    _MEMO[key] = (None, "", None)
     return _MEMO[key]

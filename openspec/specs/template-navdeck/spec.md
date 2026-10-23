@@ -169,3 +169,8 @@ As a mobile visitor, the layout adapts to smaller screens.
 - [ ] Footer links to Component Dock
 - [ ] Placeholder images use picsum.photos
 - [ ] All tests pass, 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v01/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e8a038` — nearest `#ff7315` (d=61)
+<!-- live-palette-unverified:end -->

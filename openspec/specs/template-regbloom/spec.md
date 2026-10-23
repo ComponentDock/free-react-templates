@@ -154,3 +154,10 @@ returned 404 — all tokens derived from the TEMPLATES.md screenshot
 - [ ] Footer links to Component Dock (https://www.componentdock.com/)
 - [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md + PR)
 - [ ] Tests pass with 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-35/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4a7fb5` — nearest `#4077c8` (d=23)
+- `#5b8ec9` — nearest `#4077c8` (d=35)
+- `#e8735a` — nearest `#f25d5d` (d=24)
+<!-- live-palette-unverified:end -->

@@ -460,3 +460,10 @@ Dock (`https://www.componentdock.com/`) instead.
       by implementer at ship time
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bforms/colorlib-booking-3/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2b9328` — nearest `#9a8067` (d=129)
+- `#72b01d` — nearest `#9a8067` (d=97)
+- `#f14634` — nearest `#9a8067` (d=116)
+<!-- live-palette-unverified:end -->

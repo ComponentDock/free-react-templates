@@ -269,3 +269,9 @@ The system SHALL render a footer with company info and Component Dock link.
 - [ ] Google Fonts (Poppins) loaded via `<link>` in index.html
 - [ ] `public/CNAME` = `maidwise.free.componentdock.com`
 - [ ] `"homepage"` = `https://maidwise.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/cleaningcompany/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#81d742` — nearest `#28a745` (d=101)
+- `#5a9e2f` — nearest `#28a745` (d=55)
+<!-- live-palette-unverified:end -->

@@ -127,3 +127,9 @@ Recreation of the ColorLib "Contact Form V20" template as a React 19 + Vite + Ta
 - [ ] 100% test coverage
 - [ ] Typecheck passes
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v20/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#ff4b4b` — nearest `#ff4b5a` (d=15)
+- `#e74c3c` — nearest `#ff4b5a` (d=38)
+<!-- live-palette-unverified:end -->

@@ -229,3 +229,10 @@ Users SHALL see footer with brand, navigation links, and Component Dock attribut
 - [ ] Fonts loaded via Google Fonts link (Outfit + Inter)
 - [ ] Primary orange accent (#ea580c) consistent on CTAs
 - [ ] 100% test coverage (lines, functions, branches, statements)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/solestyle/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#22c55e` — nearest `#006fcf` (d=146)
+- `#ef4444` — nearest `#ea580c` (d=60)
+- `#facc15` — nearest `#fb923c` (d=70)
+<!-- live-palette-unverified:end -->

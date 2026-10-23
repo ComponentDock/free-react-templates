@@ -191,3 +191,9 @@ Extracted from screenshot analysis (preview CSS unavailable — 404): — **re-p
 - [ ] Placeholder images via picsum.photos
 - [ ] Google Fonts loaded via index.html link
 - [ ] Icons from lucide-react
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-9/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a5276` — nearest `#3377c0` (d=86)
+- `#2e6ba6` — nearest `#3377c0` (d=29)
+<!-- live-palette-unverified:end -->

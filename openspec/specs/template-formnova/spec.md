@@ -161,3 +161,8 @@ The template is a **centered wizard component** with two visual halves:
 - [ ] CNAME set to formnova.free.componentdock.com
 - [ ] Vite config has injectUiSource()
 - [ ] 100% test coverage maintained
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#d4c5a9` — nearest `#cdaa7c` (d=53)
+<!-- live-palette-unverified:end -->

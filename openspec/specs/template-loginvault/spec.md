@@ -249,3 +249,10 @@ The page footer SHALL link to Component Dock.
 - [ ] No ColorLib references in app code
 - [ ] `public/CNAME` set to `loginvault.free.componentdock.com`
 - [ ] `package.json` homepage set to `https://loginvault.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#00d2ff` — nearest `#00dbde` (d=34)
+- `#3a7bd5` — nearest `#3b5998` (d=70)
+- `#e040fb` — nearest `#a64bf4` (d=59)
+<!-- live-palette-unverified:end -->

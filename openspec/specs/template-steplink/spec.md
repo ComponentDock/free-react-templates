@@ -180,3 +180,8 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - [ ] No ColorLib references in app code (provenance only in spec)
 - [ ] All placeholder images use picsum.photos
 - [ ] Typography matches: geometric sans for headings, cursive script for tagline
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c9a96e` — nearest `#cdaa7c` (d=15)
+<!-- live-palette-unverified:end -->

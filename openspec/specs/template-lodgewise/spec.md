@@ -78,3 +78,11 @@ Recreation of ColorLib **Search 14** (hotel/booking search form widget).
 - [ ] Gherkin scenarios cover all interactive elements
 - [ ] Naming: "lodgewise" — no collision with existing apps/specs
 - [ ] No references to ColorLib in app code (provenance in spec only)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f9e4d4` — nearest `#ffece0` (d=16)
+- `#f5d6cc` — nearest `#ffece0` (d=31)
+- `#f0c75e` — nearest `#ffe151` (d=33)
+- `#efc050` — nearest `#ebcd3d` (d=23)
+<!-- live-palette-unverified:end -->

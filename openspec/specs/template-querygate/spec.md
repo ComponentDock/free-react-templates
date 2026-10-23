@@ -133,3 +133,9 @@ as closely as possible from the reference screenshot.
 - [ ] `npm run verify:app -- querygate` passes (typecheck + lint + 100% coverage + build)
 - [ ] `public/CNAME` = `querygate.free.componentdock.com`
 - [ ] `homepage` = `https://querygate.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-1/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4a7cda` — nearest `#4272d7` (d=13)
+- `#5b9bd5` — nearest `#4272d7` (d=48)
+<!-- live-palette-unverified:end -->

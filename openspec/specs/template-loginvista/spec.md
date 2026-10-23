@@ -123,3 +123,11 @@ background with blue gradient overlay.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v12/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a8ccc` — nearest `#007bff` (d=60)
+- `#00d4aa` — nearest `#00c6fb` (d=82)
+- `#0097e6` — nearest `#007bff` (d=38)
+- `#00bcd4` — nearest `#00c6fb` (d=40)
+<!-- live-palette-unverified:end -->

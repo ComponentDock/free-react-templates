@@ -145,3 +145,8 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 - [ ] Typecheck passes
 - [ ] Lint passes
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v12/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7c3aed` — nearest `#846add` (d=51)
+<!-- live-palette-unverified:end -->

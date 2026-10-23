@@ -180,3 +180,9 @@ The template SHALL include a footer linking to https://www.componentdock.com/ (b
 - [ ] Facebook and Twitter circular social buttons
 - [ ] Component Dock footer link
 - [ ] Responsive: stacks vertically on mobile
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v16/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#9b6b8a` — nearest `#a445b2` (d=56)
+- `#2196f3` — nearest `#007bff` (d=44)
+<!-- live-palette-unverified:end -->

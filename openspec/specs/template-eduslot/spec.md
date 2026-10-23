@@ -145,3 +145,10 @@ Recreation of ColorLib template **Reg Form V12** (`colorlib-regform-12`).
 - [ ] Responsive: card expands on mobile
 - [ ] No ColorLib references in app code
 - [ ] Footer links to https://www.componentdock.com/
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a73e8` — nearest `#4966b1` (d=74)
+- `#6c63ff` — nearest `#4966b1` (d=86)
+- `#5a52d5` — nearest `#4966b1` (d=45)
+<!-- live-palette-unverified:end -->

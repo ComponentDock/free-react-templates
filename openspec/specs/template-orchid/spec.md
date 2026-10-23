@@ -153,3 +153,11 @@ pill-shaped submit button.
 - [ ] Footer links to Component Dock
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage (lines, functions, branches, statements)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v14/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e91e8c` — nearest `#e8519e` (d=54)
+- `#8b5cf6` — nearest `#c77ff2` (d=70)
+- `#10b981` — nearest `#00ad5f` (d=39)
+- `#ef4444` — nearest `#fa4251` (d=17)
+<!-- live-palette-unverified:end -->

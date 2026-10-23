@@ -57,3 +57,11 @@ Recreation of ColorLib Bootstrap Buttons 02 (https://colorlib.com/wp/template/bo
 - [ ] Code snippet accordion/modal and copy-to-clipboard work as expected
 - [ ] Footer contains the mandatory Component Dock link
 - [ ] 100% test coverage with Vitest & Testing Library
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-02/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#4f69a2` (d=76)
+- `#6366f1` — nearest `#69b6f0` (d=80)
+- `#06b6d4` — nearest `#03a9f4` (d=35)
+- `#14b8a6` — nearest `#2884ba` (d=59)
+<!-- live-palette-unverified:end -->

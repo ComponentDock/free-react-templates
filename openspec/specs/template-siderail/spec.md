@@ -192,3 +192,13 @@ and ColorLib page analysis. See Design Reference section.) — **re-probed 2026-
 - [ ] All placeholder images use picsum.photos/seed/siderail-*
 - [ ] Tests pass with 100% coverage
 - [ ] Build succeeds without errors
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a73e8` — nearest `#0069d9` (d=32)
+- `#1464cc` — nearest `#0062cc` (d=20)
+- `#77cc6d` — nearest `#5356b1` (d=141)
+- `#6dab3c` — nearest `#393c7f` (d=140)
+- `#09aa59` — nearest `#0056b3` (d=123)
+- `#b97ebb` — nearest `#80bdff` (d=109)
+<!-- live-palette-unverified:end -->

@@ -156,3 +156,9 @@ The footer SHALL display a link to ComponentDock.
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage
 - [ ] CNAME and homepage configured
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#d6eaf8` — nearest `#c5e9ff` (d=18)
+- `#4da6e8` — nearest `#1da0f2` (d=49)
+<!-- live-palette-unverified:end -->

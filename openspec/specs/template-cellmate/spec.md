@@ -649,3 +649,8 @@ reachable interactive elements.
       `feat/template-cellmate` with source slug `css-table-20` + the
       `bootstrap/` preview path (and the stale `<title>Table #7</title>`
       caveat) + tokens in the description
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/css-table-20/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#fdd114` — nearest `#dc3545` (d=167)
+<!-- live-palette-unverified:end -->

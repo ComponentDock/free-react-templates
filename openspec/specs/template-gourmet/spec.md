@@ -159,3 +159,8 @@ The application SHALL NOT contain any references to ColorLib in source files.
 - [ ] Copyright bar with Component Dock link
 - [ ] No ColorLib references in app code
 - [ ] All tests pass with 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bft/bootstrap-footer-15/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f7b633` — nearest `#81ba4c` (d=121)
+<!-- live-palette-unverified:end -->

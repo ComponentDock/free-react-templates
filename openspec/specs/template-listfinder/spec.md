@@ -144,3 +144,8 @@ Feature: ListFinder Template
 - [ ] Footer: dark bg, 3-column layout, social icons, search form, Component Dock link in copyright
 - [ ] Mobile: responsive breakpoints work, hamburger menu toggles, columns stack
 - [ ] Design tokens: Nanum Gothic font loaded, #2f89fc primary color used, 7px card radius, 30px badge radius
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/directoryads/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#ffc107` — nearest `#f89d13` (d=39)
+<!-- live-palette-unverified:end -->

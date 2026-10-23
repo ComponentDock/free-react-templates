@@ -108,3 +108,8 @@ Extracted from the screenshot (preview unreachable):
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] Public/CNAME set to toolshed.free.componentdock.com
 - [ ] Tests pass with 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/tools/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4a6cf7` — nearest `#3e65ff` (d=16)
+<!-- live-palette-unverified:end -->

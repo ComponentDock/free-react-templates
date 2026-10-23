@@ -71,3 +71,11 @@ The system SHALL include accessible semantics and the required attribution foote
 | Surface    | `#242424`                               | Card containers & grouping panels |
 | Text       | `#f3f4f6` (Light gray)                  | Primary headings & copy           |
 | Font       | Inter / system sans-serif               | Google Fonts `<link>`             |
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#6366f1` — nearest `#69b6f0` (d=80)
+- `#10b981` — nearest `#138496` (d=57)
+- `#f59e0b` — nearest `#e0a800` (d=26)
+<!-- live-palette-unverified:end -->

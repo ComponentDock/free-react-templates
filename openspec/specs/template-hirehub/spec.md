@@ -235,3 +235,8 @@ The original ColorLib screenshot (AVIF format, source unavailable for direct vis
 - [ ] Footer: dark bg, 4 columns, social icons, Component Dock link, copyright
 - [ ] Responsive: mobile hamburger menu, stacked layouts on small screens
 - [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md/PR)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/jobfinder/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#ffc107` — nearest `#f8b500` (d=16)
+<!-- live-palette-unverified:end -->

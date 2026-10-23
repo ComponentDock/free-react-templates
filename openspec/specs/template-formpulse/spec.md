@@ -183,3 +183,8 @@ The template SHALL be responsive across screen sizes.
 - [ ] No ColorLib references in app source code
 - [ ] Design tokens extracted from reference match implementation
 - [ ] All tests pass at 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-19/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#d43a30` — nearest `#ef4339` (d=30)
+<!-- live-palette-unverified:end -->

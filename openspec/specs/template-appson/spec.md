@@ -40,7 +40,7 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Colorlib credit).
 - **Design tokens extracted from `style.css` / `typography.css`:**
   - Primary brand **orange `#ff6818`** (`.bg-theme` section backgrounds —
-    Features and Download bands — plus buttons/accents); shades `#fe5f1b`,
+    Features and Download bands — plus buttons/accents); shades `#f9621f`,
     `#ff6719`, `#ff5700`.
   - Supporting blue accent `#00b0ff`; dark headings `#272727`; muted body
     text `#666666` / `#696969`; light section background `#f3f3f3`, white.
@@ -269,3 +269,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Contact section — it SHALL contain a heading "Contact US" with fields for Name, Email address, Subject, and Message
 - [ ] Footer — it SHALL show a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/appson/` answers **HTTP 200** (33,954 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#fe5f1b` | `#f9621f` ×6 | 7 | `preview.css` (4,250 B, `629f91aa24b0…`) | `border: 3px solid #f9621f;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->

@@ -51,3 +51,9 @@ A Bootstrap Buttons Showcase template with navigation and header, button showcas
 - [ ] Navigation and Header — The page must render a clean header with title "BtnSpark - Interactive Button Showcase" and navigation links
 - [ ] Button Showcase Categories — The page must showcase diverse button variants including Solid, Outline, Gradient, Pill, Icon Buttons, Floating Action Buttons, and Loading state buttons
 - [ ] Interactive States — Buttons must provide clear active, focus, and disabled states
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#5635ea` (d=19)
+- `#7c3aed` — nearest `#6a4cec` (d=25)
+<!-- live-palette-unverified:end -->

@@ -129,3 +129,9 @@ Recreation of ColorLib **Login Form V3** as a React 19 + Vite + Tailwind 4 + Typ
 - [ ] Background image is a faded/desaturated city skyline
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] No references to ColorLib in app code
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v3/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7c6aef` — nearest `#7579ff` (d=23)
+- `#c94cf0` — nearest `#b224ef` (d=46)
+<!-- live-palette-unverified:end -->

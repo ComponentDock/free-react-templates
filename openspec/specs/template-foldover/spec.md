@@ -48,3 +48,9 @@ As a visitor, I want to explore interactive accordion sections with smooth expan
 - [ ] Typecheck, lint, unit tests, and build pass successfully
 - [ ] 100% test coverage maintained on all new components
 - [ ] Footer links correctly to Component Dock
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f59e0b` — nearest `#72c02c` (d=139)
+- `#d97706` — nearest `#72c02c` (d=132)
+<!-- live-palette-unverified:end -->

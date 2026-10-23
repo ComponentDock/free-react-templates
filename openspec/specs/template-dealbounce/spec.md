@@ -164,3 +164,8 @@ Background:
 - **Key difference from other modal templates:** Split layout with product image
   on the left, coupon code display with dashed border, and warm cream background
   instead of dark overlay or solid white.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/modal-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#007bff` — nearest `#a33805` (d=306)
+<!-- live-palette-unverified:end -->

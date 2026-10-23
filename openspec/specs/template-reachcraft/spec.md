@@ -149,3 +149,8 @@ The page footer links to Component Dock.
 - [ ] Page layout — the entire viewport is covered by a dark grayscale map background
 - [ ] Card header banner — the card header displays a workspace/desk photo with a green-tinted overlay
 - [ ] Contact form — I see a "Full Name" label with an underline input field
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v15/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4caf50` — nearest `#57b846` (d=17)
+<!-- live-palette-unverified:end -->

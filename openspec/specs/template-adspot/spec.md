@@ -183,3 +183,9 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 - [ ] All images use placeholder URLs (picsum.photos)
 - [ ] Footer links to Component Dock
 - [ ] No ColorLib references in app code
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/classyads/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#007bff` — nearest `#2f89fc` (d=49)
+- `#ffc107` — nearest `#f89d13` (d=39)
+<!-- live-palette-unverified:end -->

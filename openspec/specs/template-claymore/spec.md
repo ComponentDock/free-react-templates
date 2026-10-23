@@ -189,3 +189,9 @@ Background:
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] Tests pass at 100% coverage
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/fashe/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c8553d` — nearest `#d99a2b` (d=73)
+- `#e2a087` — nearest `#d99a2b` (d=93)
+<!-- live-palette-unverified:end -->

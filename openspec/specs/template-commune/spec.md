@@ -55,7 +55,7 @@ dark footer with social links.
 | --------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Page bg         | `#FFF8F5` (warm off-white)                    | hero/slider area, testimonial area, overall page tone                                    |
 | Brand gold      | `#c6a16e`                                     | buttons (solid), nav hover bg, preloader, footer links, date badges, social icon hover    |
-| Heading ink     | `#0b1c39` (dark navy)                         | h1–h6 color                                                                              |
+| Heading ink     | `#101a31` (dark navy)                         | h1–h6 color                                                                              |
 | Body text       | `#506172` (grey-blue)                         | paragraph text                                                                           |
 | Muted text      | `#888888` / `#999999`                         | footer copyright, secondary labels, form placeholders                                    |
 | Footer bg       | `#000000` (black)                             | footer-wrapper background                                                                |
@@ -207,3 +207,20 @@ dark footer with social links.
 - [ ] No ColorLib references in app code
 - [ ] public/CNAME = commune.free.componentdock.com
 - [ ] package.json homepage = https://commune.free.componentdock.com
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sharespace/` answers **HTTP 200** (30,504 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#0b1c39` | `#101a31` ×1 | 10 | `style.css` (64,274 B, `46c3080044c9…`) | `@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@300;400;500;600;700&display=swap");.theme-b…` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sharespace/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c6a16e` — nearest `#f09359` (d=49)
+- `#506172` — nearest `#415094` (d=41)
+- `#e6373d` — nearest `#dc3545` (d=13)
+<!-- live-palette-unverified:end -->

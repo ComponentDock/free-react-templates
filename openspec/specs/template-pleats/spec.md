@@ -48,3 +48,10 @@ As a user visiting the Pleats interactive accordion component showcase, I want t
 - [ ] Fully responsive layout matching live preview
 - [ ] Footer links to Component Dock
 - [ ] CNAME and homepage configured for pleats.free.componentdock.com
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#2563eb` — nearest `#007bff` (d=48)
+- `#64748b` — nearest `#0056b3` (d=112)
+<!-- live-palette-unverified:end -->

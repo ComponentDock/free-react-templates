@@ -64,3 +64,11 @@ As a site visitor, I want to explore interactive accordion sections so that I ca
 - [ ] 100% test coverage maintained (`npm run test:coverage`)
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] CNAME configured as `lap.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2c3e50` — nearest `#0056b3` (d=111)
+- `#34495e` — nearest `#0056b3` (d=100)
+- `#3498db` — nearest `#007bff` (d=70)
+- `#2980b9` — nearest `#0056b3` (d=59)
+<!-- live-palette-unverified:end -->

@@ -120,3 +120,10 @@ Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive car
 - [ ] Testimonial Carousel — the review quote, author avatar, and title update instantly
 - [ ] Image Gallery Carousel — responsive images load cleanly via Picsum placeholders
 - [ ] Newsletter Subscription — a success confirmation message appears
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-07/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6366f1` — nearest `#0069d9` (d=102)
+- `#4f46e5` — nearest `#0069d9` (d=87)
+- `#f59e0b` — nearest `#ff487e` (d=144)
+<!-- live-palette-unverified:end -->

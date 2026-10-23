@@ -187,3 +187,12 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-
 - [ ] Typecheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)
 - [ ] Build passes (`npm run build`)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/theinterior/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c6a16e` — nearest `#f09359` (d=49)
+- `#0b1c39` — nearest `#233148` (d=35)
+- `#506172` — nearest `#415094` (d=41)
+- `#e6373d` — nearest `#dc3545` (d=13)
+- `#ffe7ca` — nearest `#f09359` (d=142)
+<!-- live-palette-unverified:end -->

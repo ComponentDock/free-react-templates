@@ -14,11 +14,11 @@ yoga studios, fitness classes, and sports booking.
 
 | Token | Value | Notes |
 |---|---|---|
-| Brand blue | `#87CEEB` | Left half of diagonal split background |
-| Brand peach | `#F5D0C4` | Right half of diagonal split background |
+| Brand blue | `#84cde1` | Left half of diagonal split background |
+| Brand peach | `#f4d5cc` | Right half of diagonal split background |
 | Card background | `#FFFFFF` | White card |
 | Card radius | `12px` | Rounded corners on card |
-| Button background | `#87CEEB` | Matches brand blue |
+| Button background | `#84cde1` | Matches brand blue |
 | Button text | `#FFFFFF` | White |
 | Button radius | `4px` | Slightly rounded |
 | Heading color | `#333333` | Dark gray / near-black |
@@ -45,8 +45,8 @@ yoga/fitness background image.
 
 - **WHEN** I visit the Signpilot page
 - **THEN** I see a full-viewport background with a diagonal split
-- **AND** the left portion is light blue (#87CEEB)
-- **AND** the right portion is light peach (#F5D0C4)
+- **AND** the left portion is light blue (#84cde1)
+- **AND** the right portion is light peach (#f4d5cc)
 
 #### Scenario: Background overlay image is visible
 
@@ -117,7 +117,7 @@ background and white text.
 #### Scenario: Button is visible and styled
 
 - **WHEN** I visit the Signpilot page
-- **THEN** I see a "BOOK NOW →" button with a light blue (#87CEEB) background
+- **THEN** I see a "BOOK NOW →" button with a light blue (#84cde1) background
 - **AND** the button has white text and rounded corners
 
 #### Scenario: Submitting the form shows a success message
@@ -167,3 +167,14 @@ The page SHALL display a footer that links to https://www.componentdock.com/ bra
 - [ ] Footer links to Component Dock
 - [ ] No references to ColorLib in app code
 - [ ] Package name is @free-react-templates/signpilot
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-22/` answers **HTTP 200** (2,052 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#87ceeb` | `#84cde1` ×1 | 10 | `style.css?v=e7557d1d` (9,352 B, `00d03ff017f8…`) | `background: #84cde1;` |
+| `#f5d0c4` | `#f4d5cc` ×1 | 9 | `style.css?v=e7557d1d` (9,352 B, `00d03ff017f8…`) | `border: 1px solid #f4d5cc;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->

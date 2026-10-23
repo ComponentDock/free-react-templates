@@ -214,3 +214,8 @@ submission.
 - [ ] Font loading: Poppins (headings) + Roboto (body) via Google Fonts
 - [ ] Tailwind theme tokens defined in `@theme` block in `index.css`
 - [ ] Component file structure: `src/App.tsx`, `src/components/ContactPanel.tsx`, `src/components/ContactForm.tsx`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#007bff` — nearest `#55a44e` (d=201)
+<!-- live-palette-unverified:end -->

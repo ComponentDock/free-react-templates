@@ -188,3 +188,10 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - [ ] No ColorLib references in app code
 - [ ] TypeScript strict mode
 - [ ] 100% test coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e8d5f5` — nearest `#f6c2ec` (d=25)
+- `#f5c6d0` — nearest `#f6c2ec` (d=28)
+- `#7e8bd4` — nearest `#98add6` (d=43)
+<!-- live-palette-unverified:end -->

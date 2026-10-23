@@ -43,3 +43,9 @@ As a site visitor, I want to explore restaurant specialties categorized in accor
 - [ ] App builds cleanly (`npm run build`)
 - [ ] Tests cover all interactive accordion toggles with 100% coverage (`npm run test:coverage`)
 - [ ] Footer links to Component Dock
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-02/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#d4a373` — nearest `#feba2c` (d=86)
+- `#c69255` — nearest `#feba2c` (d=80)
+<!-- live-palette-unverified:end -->

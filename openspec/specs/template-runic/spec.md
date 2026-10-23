@@ -225,3 +225,10 @@ The page footer SHALL include a link to https://www.componentdock.com/.
 - [ ] Uses cn() from packages/ui
 - [ ] Font family: Montserrat + decorative display font via Google Fonts
 - [ ] 100% test coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#a8b5f0` — nearest `#aac1f0` (d=12)
+- `#95a3e6` — nearest `#98add6` (d=19)
+- `#f0a8d0` — nearest `#dbadd2` (d=22)
+<!-- live-palette-unverified:end -->

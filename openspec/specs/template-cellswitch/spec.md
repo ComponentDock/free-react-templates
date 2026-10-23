@@ -535,3 +535,8 @@ reachable interactive elements.
 - [ ] 100% test coverage via `scripts/verify-app.sh cellswitch`; PR
       `feat/template-cellswitch` with source slug + preview URL (the
       `bootstrap/` path) + tokens in the description
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/css-table-17/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#fdd114` — nearest `#4cd964` (d=194)
+<!-- live-palette-unverified:end -->

@@ -187,3 +187,11 @@ Recreation of ColorLib "Colorlib Wizard 5" — a flexible 4-step order/checkout 
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] Poppins font loaded from Google Fonts
 - [ ] Blue primary color (#3b82f6) used consistently
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#d9bda3` (d=188)
+- `#2563eb` — nearest `#d9bda3` (d=214)
+- `#ef4444` — nearest `#d9bda3` (d=155)
+- `#22c55e` — nearest `#d9bda3` (d=196)
+<!-- live-palette-unverified:end -->

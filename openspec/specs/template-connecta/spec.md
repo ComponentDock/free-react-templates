@@ -168,3 +168,11 @@ The page footer links to Component Dock.
 - [ ] Footer links to Component Dock
 - [ ] No ColorLib references in app code
 - [ ] `npm run spec:validate` passes
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v1/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#29b6f6` — nearest `#00c6ff` (d=45)
+- `#1565c0` — nearest `#0072ff` (d=68)
+- `#66bb6a` — nearest `#57b846` (d=39)
+- `#4caf50` — nearest `#57b846` (d=17)
+<!-- live-palette-unverified:end -->

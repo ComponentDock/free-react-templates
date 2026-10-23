@@ -59,3 +59,9 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - [ ] Interactive Calendar Grid — The app shall display a fully interactive monthly/weekly calendar grid showing days of the current month, highlighted current date, and scheduled events with category…
 - [ ] Event Management Panel — A sidebar or modal showing upcoming events for the selected date, with details (title, time, location, attendees, description) and ability to add/edit/delete events
 - [ ] Mini Calendar & Filters — A sidebar widget featuring a mini month picker and category filters (Work, Personal, Meetings, Reminders)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6366f1` — nearest `#80bdff` (d=93)
+- `#8b5cf6` — nearest `#80bdff` (d=98)
+<!-- live-palette-unverified:end -->

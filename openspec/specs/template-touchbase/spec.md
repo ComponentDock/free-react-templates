@@ -132,3 +132,8 @@ Two-column centered layout within a Bootstrap-style container:
 - [ ] 100% test coverage
 - [ ] TypeScript strict mode passes
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#0d6efd` — nearest `#007bff` (d=18)
+<!-- live-palette-unverified:end -->

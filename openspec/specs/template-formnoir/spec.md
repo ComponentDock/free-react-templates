@@ -232,3 +232,12 @@ The form adapts to different screen sizes.
 | Font — heading   | Poppins (sans-serif)        | Bold weight for "Contact Us"             |
 | Font — body      | Poppins (sans-serif)        | Regular weight for labels and inputs     |
 | Font — labels    | Poppins (sans-serif)        | 11–12px uppercase                        |
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v14/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e84393` — nearest `#e8519e` (d=18)
+- `#a855f7` — nearest `#c77ff2` (d=52)
+- `#0984e3` — nearest `#00ad5f` (d=139)
+- `#d63031` — nearest `#fa4251` (d=51)
+- `#00b894` — nearest `#00ad5f` (d=54)
+<!-- live-palette-unverified:end -->

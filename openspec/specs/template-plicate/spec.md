@@ -60,3 +60,9 @@ Recreation of ColorLib [Accordion 05](https://colorlib.com/wp/template/accordion
 - [ ] No ColorLib references in app code
 - [ ] Header Section — they should see the main header "Interactive Accordion Showcase" and subtitle describing the component set
 - [ ] Interactive Accordion Component — the corresponding content area expands with smooth transition and the chevron icon rotates
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#3b82f6` — nearest `#007bff` (d=60)
+<!-- live-palette-unverified:end -->

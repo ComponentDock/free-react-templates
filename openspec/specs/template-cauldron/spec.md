@@ -29,7 +29,7 @@ Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registrat
 | Input field background | `#f2f2f4` (light gray) | Pill-shaped inputs |
 | Input field border | `#e0e0e2` (thin gray) | Input borders |
 | Input placeholder text | `#9a9aa0` (medium gray) | Uppercase placeholder labels |
-| Profile circle accent | `#d8a8d8` (soft pink/mauve) | Avatar ring accent |
+| Profile circle accent | `#dbadd2` (soft pink/mauve) | Avatar ring accent |
 | Profile circle outer border | `#e0e0e2` | Avatar outer ring |
 | Continue button background | `#a8b8d2` (pastel blue) | CTA button |
 | Continue button text | `#ffffff` | Button label |
@@ -148,3 +148,24 @@ Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registrat
 - [ ] Keyboard accessible (focus rings, tab order)
 - [ ] Component Dock footer link present
 - [ ] No ColorLib references in app code
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` answers **HTTP 200** (7,014 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#d8a8d8` | `#dbadd2` ×1 | 8 | `style.css?v=59e273aa` (10,428 B, `c9bc979f15b9…`) | `background: #dbadd2;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#a8b8d1` — nearest `#98add6` (d=20)
+- `#e8b8d1` — nearest `#dbadd2` (d=17)
+- `#8997b5` — nearest `#98add6` (d=42)
+- `#a8b8d2` — nearest `#98add6` (d=20)
+- `#ff5f57` — nearest `#dbadd2` (d=150)
+- `#febc2e` — nearest `#dbadd2` (d=168)
+- `#28c840` — nearest `#98add6` (d=189)
+<!-- live-palette-unverified:end -->

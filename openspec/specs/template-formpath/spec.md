@@ -188,3 +188,10 @@ patterns.
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md/PR)
 - [ ] 100% test coverage (lines, functions, branches, statements)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-29/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a73e8` — nearest `#3d6aff` (d=43)
+- `#1464cc` — nearest `#3155cc` (d=33)
+- `#77cc6d` — nearest `#3155cc` (d=168)
+<!-- live-palette-unverified:end -->

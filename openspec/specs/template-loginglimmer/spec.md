@@ -134,3 +134,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Google fonts via <link> in index.html
 - [ ] Icons from lucide-react (if needed)
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v19/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5b7def` — nearest `#4272d7` (d=36)
+<!-- live-palette-unverified:end -->

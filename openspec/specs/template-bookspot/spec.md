@@ -101,3 +101,8 @@ Recreation of ColorLib "Search Form Bar 18" as a standalone React 19 + Vite + Ta
 - [ ] Responsive: card adapts to mobile viewport
 - [ ] No references to ColorLib in app code
 - [ ] Footer links to https://www.componentdock.com/
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-18/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6c63ff` — nearest `#6c7ae0` (d=39)
+<!-- live-palette-unverified:end -->

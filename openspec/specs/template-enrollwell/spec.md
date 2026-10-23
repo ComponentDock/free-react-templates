@@ -126,3 +126,9 @@ Extracted from the screenshot (preview unreachable) — **re-probed 2026-10-23: 
 - [ ] Footer links to Component Dock (https://www.componentdock.com/)
 - [ ] No ColorLib references in app code
 - [ ] All images use picsum.photos placeholders
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-24/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f0939b` — nearest `#ff97a4` (d=18)
+- `#f4a8ad` — nearest `#ff97a4` (d=22)
+<!-- live-palette-unverified:end -->

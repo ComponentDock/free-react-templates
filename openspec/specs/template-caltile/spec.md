@@ -68,3 +68,9 @@ As a visitor, I want clear footer navigation and branding.
 - [ ] No reference to ColorLib in app source files
 - [ ] Calendar Dashboard & Date Grid — the current month grid is displayed with correct days of the week headers (Sun-Sat)
 - [ ] Event Management — GIVEN** the user has selected a date
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-20/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#10b981` — nearest `#40e0d0` (d=100)
+<!-- live-palette-unverified:end -->

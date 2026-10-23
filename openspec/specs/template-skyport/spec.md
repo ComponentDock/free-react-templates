@@ -685,3 +685,9 @@ row, with an azure flat button for the purchase action and a scroll shadow.
       (new name, own logo/artwork/images/icons/copy, no dark hero overlay as in
       the source, lucide icons instead of Linearicons, added keyboard/aria
       states and the Component Dock attribution)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/hosting/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6927ff` — nearest `#a367e7` (d=90)
+- `#6247ea` — nearest `#6382e6` (d=59)
+<!-- live-palette-unverified:end -->

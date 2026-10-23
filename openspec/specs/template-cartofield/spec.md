@@ -115,3 +115,8 @@ Full-viewport layout with map background:
 - [ ] Footer links to Component Dock
 - [ ] No ColorLib references in app code
 - [ ] Spec is the sole provenance record
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v19/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4a7ec5` — nearest `#4272d7` (d=23)
+<!-- live-palette-unverified:end -->

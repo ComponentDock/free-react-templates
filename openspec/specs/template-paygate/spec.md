@@ -216,3 +216,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage
 - [x] No ColorLib references in app code
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-25/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#77cc6d` — nearest `#25b45b` (d=87)
+- `#09aa59` — nearest `#219c50` (d=29)
+<!-- live-palette-unverified:end -->

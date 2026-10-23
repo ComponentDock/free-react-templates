@@ -246,3 +246,8 @@ Every template footer MUST link https://www.componentdock.com/ (branded as "Comp
 - [ ] Tests pass with 100% coverage
 - [ ] `public/CNAME` contains `passvale.free.componentdock.com`
 - [ ] `homepage` in package.json is `https://passvale.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/login-form-20/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e8a090` — nearest `#fbceb5` (d=62)
+<!-- live-palette-unverified:end -->

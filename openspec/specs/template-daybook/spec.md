@@ -47,3 +47,9 @@ As a user visiting Daybook, I want an intuitive calendar interface so that I can
 - [ ] All Vitest tests pass with 100% coverage.
 - [ ] Tailwind CSS 4 setup includes correct `@theme` tokens and `injectUiSource()`.
 - [ ] Footer links correctly to Component Dock.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6366f1` — nearest `#80bdff` (d=93)
+- `#4f46e5` — nearest `#0056b3` (d=95)
+<!-- live-palette-unverified:end -->

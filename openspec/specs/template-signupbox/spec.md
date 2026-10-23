@@ -176,3 +176,8 @@ Extracted from `css/style.css` (lines 8220–8380) and preview HTML:
 - [ ] Responsive: content stacks on mobile
 - [ ] No ColorLib references in app code
 - [ ] Footer links to componentdock.com
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/modal-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#fb8691` — nearest `#80bdff` (d=174)
+<!-- live-palette-unverified:end -->

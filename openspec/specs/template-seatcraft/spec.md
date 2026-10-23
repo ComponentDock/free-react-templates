@@ -156,3 +156,8 @@ Recreation of ColorLib "Colorlib Wizard 7" — a multi-step restaurant table boo
 - [ ] Keyboard accessible (focus rings, tab order, Enter/Space)
 - [ ] Component Dock footer link present
 - [ ] No ColorLib references in app code
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c2955b` — nearest `#cdaa7c` (d=41)
+<!-- live-palette-unverified:end -->

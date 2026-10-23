@@ -75,3 +75,8 @@ As a user, I want to view a monthly calendar grid with scheduled events so that 
 - [ ] 100% test coverage on new components (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links to Component Dock (`https://www.componentdock.com/`)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-09/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#337ab7` (d=75)
+<!-- live-palette-unverified:end -->

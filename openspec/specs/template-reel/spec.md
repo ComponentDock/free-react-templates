@@ -66,3 +66,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Interactive Product & Feature Carousel Showcase — the active carousel slide transitions smoothly to display the corresponding feature content and imagery
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-11/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#64748b` — nearest `#0056b3` (d=112)
+<!-- live-palette-unverified:end -->

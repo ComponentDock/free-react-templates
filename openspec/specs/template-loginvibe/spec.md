@@ -196,3 +196,11 @@ Full-page diagonal gradient from magenta/purple (`#c471ed`) at bottom-right to c
 - [ ] No ColorLib references in any app code (comments, strings, URLs)
 - [ ] Placeholder images use picsum.photos if needed
 - [ ] Icons from lucide-react (User, Lock for inputs; Facebook, Twitter, Chrome for social)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v4/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c471ed` — nearest `#a64bf4` (d=49)
+- `#00d2ff` — nearest `#00dbde` (d=34)
+- `#8e2de2` — nearest `#a64bf4` (d=42)
+- `#db4437` — nearest `#ea4335` (d=15)
+<!-- live-palette-unverified:end -->

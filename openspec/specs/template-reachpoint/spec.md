@@ -134,3 +134,9 @@ Extracted from the live preview HTML/CSS and screenshot analysis.
 - [ ] 100% test coverage
 - [ ] `npm run typecheck` passes
 - [ ] `npm run lint` passes
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-11/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e86b5a` — nearest `#eb4d55` (d=31)
+- `#d45a4a` — nearest `#eb4d55` (d=29)
+<!-- live-palette-unverified:end -->

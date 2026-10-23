@@ -102,3 +102,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] template-btnridge template behaviour — Gherkin feature scenarios covering Header, SizeScale, ColorPalette, SocialButtons, and Footer sections
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#6366f1` — nearest `#69b6f0` (d=80)
+<!-- live-palette-unverified:end -->

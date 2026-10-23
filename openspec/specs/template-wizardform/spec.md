@@ -149,3 +149,13 @@ confirming the entered data before submission.
 - [ ] No references to ColorLib in app code (provenance in spec only)
 - [ ] Uses `cn()` from `packages/ui` for class composition
 - [ ] 100% test coverage (lines, functions, branches, statements)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-25/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#16213e` — nearest `#525575` (d=97)
+- `#0f3460` — nearest `#525575` (d=78)
+- `#e94560` — nearest `#525575` (d=153)
+- `#c73e54` — nearest `#525575` (d=124)
+- `#4caf50` — nearest `#25b45b` (d=41)
+- `#2a2a4a` — nearest `#525575` (d=73)
+<!-- live-palette-unverified:end -->

@@ -70,3 +70,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [x] Navbar Navigation — the navbar displays the logo "Vellum" and links for Features, FAQ, Resources, and Contact
 - [ ] Interactive Accordion Sections — the corresponding accordion content expands smoothly and the chevron icon rotates
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-16/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+<!-- live-palette-unverified:end -->

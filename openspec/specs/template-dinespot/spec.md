@@ -25,7 +25,7 @@ preference, and party size (2/4/6/8/10 via circular selectors), with a
    and sits centered on a warm peach background.
 
 2. **Warm peach/sand page background.** The page background is a solid
-   warm peach/sand color (~#F5D5B5 or #F0C9A0) — not white, not dark.
+   warm peach/sand color (~#ffd9b0 or #F0C9A0) — not white, not dark.
    This warm tone is the template's signature color and extends to the
    entire viewport behind the card.
 
@@ -65,7 +65,7 @@ kebab-case, no collision with `apps/`, `openspec/specs/`,
   (`colorlib-reg-form-13.jpg`) was analyzed visually.
 - **Screenshot (`colorlib-reg-form-13.jpg`, viewed 2026-09-27):**
   Full-viewport browser frame showing:
-  - **Page background:** Solid warm peach/sand color (~#F5D5B5 or
+  - **Page background:** Solid warm peach/sand color (~#ffd9b0 or
     #F0C9A0) — extends across the entire viewport.
   - **Card:** Two-panel horizontal layout, centered on the page:
     - **Left panel (~50%):** Full-height photograph of people dining
@@ -114,7 +114,7 @@ kebab-case, no collision with `apps/`, `openspec/specs/`,
 
 | Token                | Value                                  | Notes                                                                     |
 | -------------------- | -------------------------------------- | ------------------------------------------------------------------------- |
-| `--color-page`       | `#F5D5B5` (approx, warm peach/sand)   | Solid warm background across entire viewport                              |
+| `--color-page`       | `#ffd9b0` (approx, warm peach/sand)   | Solid warm background across entire viewport                              |
 | `--color-card-left`  | Photo (restaurant dining scene)        | Full-height image, rounded left corners                                   |
 | `--color-card-right` | `#1a1a1a` or `#222` (very dark)       | Form panel background, white text                                         |
 | `--color-brand`      | `#D4A76A` (approx, tan/gold)           | Submit button bg, selected person circle accent                           |
@@ -145,7 +145,7 @@ background and a centered two-panel card (photo left, form right).
 
 - **GIVEN** the Dinespot app is rendered on a desktop viewport
 - **THEN** the page background SHALL be a solid warm peach/sand color
-  (~#F5D5B5)
+  (~#ffd9b0)
 - **AND** a two-panel card SHALL render centered horizontally:
   - Left panel: a restaurant/dining photo (picsum placeholder seeded
     for this template) filling the full height
@@ -300,3 +300,18 @@ The system SHALL include the required attribution footer.
       form submission or success message.
 - [ ] Responsive check at 768px (card stacks vertically, no
       horizontal overflow).
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-13/` answers **HTTP 200** (4,924 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#f5d5b5` | `#ffd9b0` ×1 | 12 | `style.css?v=abb728b4` (11,471 B, `830650a432c4…`) | `background: #ffd9b0;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-13/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#d4a76a` — nearest `#e79e50` (d=33)
+<!-- live-palette-unverified:end -->

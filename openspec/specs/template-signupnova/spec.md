@@ -123,3 +123,9 @@ Single centered card on light gray background. Two-column layout:
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
 - [ ] Footer links to componentdock.com
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/signup-form-16/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7c3aed` — nearest `#6807f9` (d=56)
+- `#4c1d95` — nearest `#0056b3` (d=100)
+<!-- live-palette-unverified:end -->

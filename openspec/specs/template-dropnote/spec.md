@@ -124,3 +124,8 @@ overlay containing the message form.
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage (lines/functions/branches/statements)
 - [ ] `npm run verify:app dropnote` passes
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v19/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#4272d7` (d=36)
+<!-- live-palette-unverified:end -->

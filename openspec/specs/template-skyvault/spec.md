@@ -337,7 +337,7 @@ verbatim.
   `#b632fa` / `#487fee` on `#21263a`, stratus (Cloud83) `#25ae88`/`#7fabda`,
   stratos (Cloudnest) indigo `#6366f1`, nebuly (Cloudtemplate)
   `#3f52e3`/`#21bf73`, hostcraft (Cohost) `#6927ff`, upnode (Hami) `#1c66de`,
-  uplink (Hosthub) `#6247ea`/`#ec9d5f`, sitewise (Hostza) `#2e004b`/`#00d363`,
+  uplink (Hosthub) `#6247ea`/`#ec9d5f`, sitewise (Hostza) `#26064c`/`#00d363`,
   skyward (Ignite) `#207dff`/`#a1dd70`, upsurge (Ithost) `#eb2b63` on `#200545`,
   hostpeak (Lorahost) `#2926ac` → `#6128be`, soar (Raptor) `#2ebdc4`, netrise
   (Webhost) `#12e6ca`/`#8be55d` on `#233142`, skyport (Hosting) azure
@@ -837,3 +837,21 @@ Dock (`https://www.componentdock.com/`) instead.
       keyboard/aria states, local-only forms, and the Component Dock
       attribution)
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/hostspace/` answers **HTTP 200** (24,890 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#2e004b` | `#26064c` ×2 | 10 | `main_styles.css` (22,550 B, `fd9f7b1a5a85…`) | `background: #26064c;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/hostspace/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6247ea` — nearest `#6f42c1` (d=43)
+- `#ec9d5f` — nearest `#ffa07f` (d=37)
+- `#00d363` — nearest `#34ce57` (d=54)
+- `#5e3a8c` — nearest `#715691` (d=34)
+<!-- live-palette-unverified:end -->

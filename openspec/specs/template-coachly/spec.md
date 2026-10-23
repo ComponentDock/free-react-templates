@@ -29,7 +29,7 @@ a dark gray `#333` footer.
 | ------------------ | ---------------------- | -------------------------------------------------------------- |
 | Brand blue         | `#3a4971`              | Navbar bg, hero overlay tint, section headings, buttons, links |
 | Primary button     | `#3a4971`              | All CTA buttons (Get Started, Learn More, Submit, etc.)        |
-| Button hover       | `#2d3a5e`              | Slightly darker blue on hover                                  |
+| Button hover       | `#2d3958`              | Slightly darker blue on hover                                  |
 | Button radius      | `30px`                 | Fully rounded pill buttons                                     |
 | Footer bg          | `#333333`              | Dark footer background                                         |
 | Text primary       | `#333333`              | Headings, body text                                            |
@@ -337,3 +337,13 @@ The system SHALL provide accessible markup for all interactive elements.
 - [ ] Uses `lucide-react` for icons (no Font Awesome)
 - [ ] Uses `picsum.photos` for all placeholder images
 - [x] Footer links to componentdock.com
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/lifecoach/` answers **HTTP 200** (45,402 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#2d3a5e` | `#2d3958` ×1 | 6 | `bootstrap.min.css` (33,969 B, `180b63f39f01…`) | `*/:root{--blue:#007bff;--indigo:#0d0cb5;--purple:#7971ea;--pink:#e83e8c;--red:#e81050;--orange:#ef6c57;--yellow:#f89d13;--green:#8bc34a;--teal:#46d…` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->

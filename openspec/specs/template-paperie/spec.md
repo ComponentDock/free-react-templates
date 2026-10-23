@@ -507,3 +507,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] TEMPLATES.md `Invits` item marked `[x]` with the live
       `https://paperie.free.componentdock.com` URL + homepage
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/invits/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#811d92` — nearest `#800098` (d=30)
+<!-- live-palette-unverified:end -->

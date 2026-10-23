@@ -80,7 +80,7 @@ Extracted from the ColorLib page CSS and screenshot analysis:
 - Green "Get Started" pill button
 
 ### 9. Footer
-- Dark background (`#1a2b3c`)
+- Dark background (`#122b40`)
 - Column layout: About, Quick Links, Job Categories, Contact Info
 - Social icons
 - "Made with Component Dock" attribution link
@@ -141,3 +141,18 @@ Feature: JobSpring landing page
 - [ ] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos
 - [ ] All sections responsive (mobile-first)
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/jobboard2/` answers **HTTP 200** (43,658 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#1a2b3c` | `#122b40` ×1 | 9 | `gijgo.css` (55,532 B, `ae6c0a9951a2…`) | `border-color: #122b40;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/jobboard2/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a73e8` — nearest `#1976d2` (d=22)
+<!-- live-palette-unverified:end -->

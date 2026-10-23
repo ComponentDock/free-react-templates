@@ -51,3 +51,10 @@ Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/b
 - [ ] Full width button expands correctly to container bounds
 - [ ] Fully responsive on mobile and desktop viewports
 - [ ] Footer includes branded Component Dock link (`https://www.componentdock.com/`)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-06/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#6f42c1` (d=48)
+- `#2563eb` — nearest `#0069d9` (d=42)
+- `#64748b` — nearest `#3f4d71` (d=60)
+<!-- live-palette-unverified:end -->

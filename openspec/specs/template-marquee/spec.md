@@ -291,3 +291,8 @@ addition per conventions.md).
       outside click, Escape, and item activation
 - [ ] Footer links `https://www.componentdock.com/`; no ColorLib reference
       anywhere in `apps/marquee` (provenance lives only here + TEMPLATES.md + PR)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/dropdown-08/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#79a0eb` — nearest `#4d80e4` (d=55)
+<!-- live-palette-unverified:end -->

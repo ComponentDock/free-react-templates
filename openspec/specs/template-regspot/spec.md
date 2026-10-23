@@ -157,3 +157,9 @@ Background:
 - [ ] Tests at 100% coverage
 - [ ] Typecheck passes
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-7/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5b9bd5` — nearest `#4292dc` (d=27)
+- `#4a8bc2` — nearest `#4292dc` (d=28)
+<!-- live-palette-unverified:end -->

@@ -139,3 +139,8 @@ Screenshot analysis: The background behind the modal is transparent/dimmed. The 
 - [ ] 100% test coverage
 - [ ] TypeScript strict — no `any`
 - [ ] vitest + testing-library pass
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/modal-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#0d6efd` — nearest `#a33805` (d=295)
+<!-- live-palette-unverified:end -->

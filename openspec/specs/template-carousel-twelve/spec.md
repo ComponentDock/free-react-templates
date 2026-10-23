@@ -92,3 +92,9 @@ Recreation of ColorLib **Carousel V12** (`https://colorlib.com/wp/template/carou
 - [ ] 3. Product Carousel Section — the active product slides transition smoothly and update the visible items
 - [ ] 4. Features Grid — all feature cards display correct icons, titles, and descriptions
 - [ ] 5. Testimonials Section — user feedback cards display with proper formatting and ratings
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#2563eb` — nearest `#007bff` (d=48)
+<!-- live-palette-unverified:end -->

@@ -87,3 +87,12 @@ Recreation of ColorLib Accordion 20 (`https://colorlib.com/wp/template/accordion
 - [ ] Interactive Accordion Groups — the panel expands smoothly to reveal its content
 - [ ] Feature Highlights / Statistics — metrics such as "100% Responsive", "Fast Animations", and "24/7 Support" are clearly rendered
 - [ ] Newsletter & CTA Section — a success confirmation message is displayed
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-20/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#059669` — nearest `#0056b3` (d=98)
+- `#047857` — nearest `#0056b3` (d=98)
+- `#14b8a6` — nearest `#0056b3` (d=101)
+- `#064e3b` — nearest `#0056b3` (d=120)
+- `#134e4a` — nearest `#0056b3` (d=107)
+<!-- live-palette-unverified:end -->

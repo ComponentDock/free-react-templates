@@ -46,3 +46,8 @@ As a user, I want to view a monthly calendar grid with selectable days, so that 
 - [ ] Production build succeeds (`npm run build`)
 - [ ] Footer includes link to `https://www.componentdock.com/` ("Component Dock")
 - [ ] Public CNAME and homepage configured correctly
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-07/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#007bff` — nearest `#e13a9d` (d=254)
+<!-- live-palette-unverified:end -->

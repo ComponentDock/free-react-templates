@@ -6,7 +6,7 @@ ClassiPost is a classified ads listing template that recreates the ColorLib "Cla
 
 ## Design Tokens (extracted from ColorLib preview)
 
-- **Primary color**: teal/mint `#1ec6b6` / `#17c9b9`
+- **Primary color**: teal/mint `#1ec6b6` / `#1cd1b7`
 - **Background**: white (`#ffffff`) and light gray (`#f8f9fa`)
 - **Text**: dark (`#212529`)
 - **Font**: Poppins (Google Fonts)
@@ -104,3 +104,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Hero Section — the hero displays "Largest Classifieds In The World"
 - [ ] Categories Section — six categories are displayed: Real Estate, Books & Magazines, Furniture, Electronics, Cars & Vehicles, Other
 - [x] Featured Ads Section — the heading "Featured Ads" is displayed
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/classyads/` answers **HTTP 200** (171,017 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#17c9b9` | `#1cd1b7` ×1 | 10 | `bootstrap.min.css` (29,691 B, `373941dbdfca…`) | `*/:root{--blue:#2f89fc;--indigo:#6610f2;--purple:#7971ea;--pink:#e83e8c;--red:#f23a2e;--orange:#ef6c57;--yellow:#f89d13;--green:#8bc34a;--teal:#20c…` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->

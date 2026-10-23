@@ -148,3 +148,9 @@ The template SHALL NOT contain any references to ColorLib in app source files, c
 - [ ] 100% test coverage
 - [ ] Typecheck passes
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/login-form-18/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7b5ea7` — nearest `#8d448b` (d=42)
+- `#6a4f96` — nearest `#8d448b` (d=38)
+<!-- live-palette-unverified:end -->

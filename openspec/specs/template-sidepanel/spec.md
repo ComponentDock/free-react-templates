@@ -119,3 +119,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer links to https://www.componentdock.com/
 - [ ] `npm run spec:validate` passes
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bootstrap-sidebar/sidebar-01/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f5a623` — nearest `#f8b739` (d=28)
+<!-- live-palette-unverified:end -->

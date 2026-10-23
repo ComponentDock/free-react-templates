@@ -81,7 +81,7 @@ via-primary-700 to-purple-800`) with floating decorative blur circles
   - Brand primary (Tailwind **indigo** scale — put in `@theme` as `--color-primary-*`): **primary-100 #e0e7ff** (hover backgrounds), **primary-200 #c7d2fe**, **primary-300 #a5b4fc**, **primary-400 #818cf8** (decorative blobs), **primary-500 #6366f1**, **primary-600 #4f46e5** (solid primary buttons, links, "Post a Job", search button), **primary-700 #4338ca** (hover states), **primary-800 #3730a3**, **primary-900 #312e81** (dark hero gradient start), **primary-950 #1e1b4b** (dark hero gradient via).
   - Brand accent (Tailwind **emerald** scale — `--color-accent-*`): **accent-100 #d1fae5** (badges, icon-tile bg), **accent-300 #6ee7b7**, **accent-400 #34d399** (live pulse dot, ping), **accent-500 #10b981** (pulse dot base), **accent-600 #059669** (icon-tile text), **accent-700 #047857** (badge text), **accent-900 #064e3b** (dark icon-tile bg).
   - Gradient partner: **purple-400 #c084fc** (blob), **purple-800 #6b21a8** (hero/newsletter gradient end).
-  - Category tile hues (100 bg / 400–600 text pairs, dark: `-900/50` bg / `-400` text): blue (#dbeafe/#2563eb), pink (#fce7f3/#db2777), orange (#ffedd5/#ea580c), emerald (accent), red (#fee2e2/#dc2626), purple (#f3e8ff/#9333ea), yellow (#fef9c3/#ca8a04), teal (#ccfbf1/#0d9488).
+  - Category tile hues (100 bg / 400–600 text pairs, dark: `-900/50` bg / `-400` text): blue (#e0e7ff/#2563eb), pink (#fce7f3/#db2777), orange (#ffedd5/#ea580c), emerald (accent), red (#fee2e2/#dc2626), purple (#f3e8ff/#9333ea), yellow (#fef9c3/#ca8a04), teal (#ccfbf1/#0d9488).
   - Grays: **gray-50 #f9fafb** (alternate section bg), **gray-100 #f3f4f6** (inactive tab, tag chips, field bg), **gray-200 #e5e7eb** (borders: header, featured-jobs border-y, bottom bar), **gray-300 #d1d5db**, **gray-400 #9ca3af** (muted text), **gray-500 #6b7280**, **gray-600 #4b5563** (tag text, secondary text), **gray-700 #374151**, **gray-800 #1f2937** (dark borders, dark tag chips), **gray-900 #111827** (footer bg, dark section bg), **gray-950 #030712** (dark hero gradient end, dark bottom bar).
   - Star color: **yellow-400 #facc15** (testimonial star ratings), **yellow-900** (dark star chip bg).
   - Font (Google Fonts `<link>` in `index.html`): **Inter** (weights 300–800) for everything — headings `font-bold`/`font-extrabold`, body `font-normal`/`font-medium`, buttons `font-medium`/`font-semibold`.
@@ -399,3 +399,27 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] No copied ColorLib assets; brand indigo #4f46e5 → #4338ca in `@theme`
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/hirehub/` answers **HTTP 200** (117,730 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#dbeafe` | `#e0e7ff` ×3 | 6 | `Base.CP2aKeSg.css` (59,692 B, `fb714562efef…`) | `@layer properties{@supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b))…` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/hirehub/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2563eb` — nearest `#1877f2` (d=25)
+- `#db2777` — nearest `#3730a3` (d=170)
+- `#ffedd5` — nearest `#d1fae5` (d=50)
+- `#ea580c` — nearest `#312e81` (d=223)
+- `#dc2626` — nearest `#312e81` (d=194)
+- `#9333ea` — nearest `#6366f1` (d=70)
+- `#fef9c3` — nearest `#d1fae5` (d=56)
+- `#ca8a04` — nearest `#065f46` (d=211)
+- `#ccfbf1` — nearest `#d1fae5` (d=13)
+- `#0d9488` — nearest `#059669` (d=32)
+<!-- live-palette-unverified:end -->

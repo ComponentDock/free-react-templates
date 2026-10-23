@@ -70,3 +70,10 @@
 - [ ] Unit & component tests cover all carousel interactions and states (100% coverage).
 - [ ] Responsive layout verified across mobile, tablet, and desktop viewports.
 - [ ] Footer contains the required Component Dock attribution link.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-03/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#6366f1` — nearest `#b063c5` (d=89)
+- `#64748b` — nearest `#b063c5` (d=97)
+<!-- live-palette-unverified:end -->

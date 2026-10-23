@@ -31,7 +31,7 @@ Skyly, Coastly, Bookly, Nestly; re-branded) per the monorepo naming mandate
 > the live render 1:1 (yellow "BOOK A CAR" header + dark form card over a
 > yellow-cabs city-street photo).** NOTE: this is the DARK STACKED-CARD
 > variant with a YELLOW accent — do NOT confuse it with Ridely (Booking 13,
-> dark split-screen taxi card, `#ffc600`) or Coastly (Booking 2, dark
+> dark split-screen taxi card, `#ffc001`) or Coastly (Booking 2, dark
 > horizontal slab, `#72b01d` lime). It is the car-booking sibling of Bookly
 > (Booking 20, light stacked card, green) in structure — but DARK (`#101113`
 > card) with gold-yellow `#ffc001` accents.
@@ -163,13 +163,13 @@ bottom: 6px`, 32×32, `line-height: 32px`, `text-align: center`,
   do NOT merge:** Ridely = `#1a1b1d` card, max-width 768px, NO radius, a
   SPLIT layout (image panel LEFT 310px + form RIGHT with `margin-left:
 310px`), Raleway font, h2 "Book Your Taxi" white 42px weight-400,
-  FLOATING labels that turn `#ffc600` on focus, fields Name/Phone/Pickup
+  FLOATING labels that turn `#ffc001` on focus, fields Name/Phone/Pickup
   Location/Destination Location only, NO date/time row. Drivly = `#101113`
   card, max-width 642px, 3px radius, SINGLE centered card (NO split panel,
   no inner photo), Montserrat font, h1 "Book a car" gold `#ffc001` 58px
   weight-700, STATIC white 12px uppercase labels (never float), full field
   set (Name/Email/Phone/Pickup/Destination + Pickup Date/Hour/Min/AM-PM),
-  full-width gold "Book Now" button. Different accent (`#ffc600` vs
+  full-width gold "Book Now" button. Different accent (`#ffc001` vs
   `#ffc001`), different fonts, different layout.
 - **KEY DIFFERENCES vs Coastly (Booking 2) — the dark horizontal-bar
   variant, do NOT merge:** Coastly = solid `#1a1e24` dark charcoal HORIZONTAL
@@ -197,7 +197,7 @@ bottom: 6px`, 32×32, `line-height: 32px`, `text-align: center`,
   solid `#f5f5f5` fields. Both use static labels — but everything else
   differs.
 - **Family palette check (2026-08-09):** gold-yellow `#ffc001` is unique in
-  the family so far — Ridely `#ffc600` (slightly different yellow, dark
+  the family so far — Ridely `#ffc001` (slightly different yellow, dark
   split card), Skyly `#4fa3e3`, Coastly `#72b01d`, Guestly `#ff9000`,
   Roostly `#ff0063`, Stayly `#6499ff`, Roomzy `#f14634`, Innly `#c99552`,
   Lodgely `#6c8f18`, Bookly `#2b9328`, Nestly `#9a8067`, Hostly `#856849`.
@@ -460,3 +460,18 @@ Dock (`https://www.componentdock.com/`) instead.
       by implementer at ship time
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/bforms/colorlib-booking-4/` answers **HTTP 200** (4,100 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#ffc600` | `#ffc001` ×2 | 6 | `style.css?v=6f957109` (10,463 B, `97f38bcb89c8…`) | `color: #ffc001;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bforms/colorlib-booking-4/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#72b01d` — nearest `#ffc001` (d=145)
+<!-- live-palette-unverified:end -->

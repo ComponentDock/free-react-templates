@@ -250,3 +250,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Customer radio buttons render correctly — I see "Are you an existing customer?" text
 - [x] Submit button renders with coral styling — I see a "Register" button
 - [ ] Responsive layout — the Name column pair stacks vertically
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-5/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#ef4444` — nearest `#eb3746` (d=14)
+- `#dc2626` — nearest `#eb3746` (d=39)
+<!-- live-palette-unverified:end -->

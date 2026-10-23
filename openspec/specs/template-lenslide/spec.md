@@ -57,3 +57,8 @@ A Carousel & Testimonials Showcase template with header navigation and footer at
 - [x] No mention of ColorLib in application source code.
 - [ ] Header Navigation — it displays a brand logo and navigation menu items
 - [ ] Hero Carousel Testimonial Section — the user can click next/previous arrow controls or pagination dots to switch between testimonials smoothly
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#64748b` — nearest `#0056b3` (d=112)
+<!-- live-palette-unverified:end -->

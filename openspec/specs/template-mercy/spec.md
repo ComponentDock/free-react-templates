@@ -198,3 +198,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog — Given** the page loads
 - [ ] Volunteers — Given** the page loads
 - [ ] CTA Banner — Given** the page loads
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/unicare/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#82ae46` — nearest `#28a745` (d=90)
+<!-- live-palette-unverified:end -->

@@ -150,3 +150,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Story section — the heading contains "From the part of beginning" and a CTA links to #contact
 - [x] Newsletter signup — an email input and "Get Started" button are visible
 - [x] Contact form — name, email, and message inputs are visible with a "Send Message" button
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/kinetic/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4cd3e3` — nearest `#1da1f2` (d=70)
+- `#38a4ff` — nearest `#1da1f2` (d=30)
+- `#f44a40` — nearest `#a3e635` (d=176)
+<!-- live-palette-unverified:end -->

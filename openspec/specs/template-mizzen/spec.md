@@ -737,3 +737,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Squash-merge the PR, then mark the TEMPLATES.md `Website Menu 17` item `[x]` with the live
   `https://mizzen.free.componentdock.com` URL + homepage and run `npm run readme:status`
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/website-menu-17/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f1bc31` — nearest `#ff0000` (d=195)
+<!-- live-palette-unverified:end -->

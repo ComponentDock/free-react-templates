@@ -180,3 +180,10 @@ Warm, minimalist checkout wizard with an earthy palette. Two-column layout insid
 - [ ] No ColorLib references in app code
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] Placeholder images via picsum.photos with deterministic seeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f2994a` — nearest `#d9bda3` (d=99)
+- `#f2e0d3` — nearest `#f3d4b7` (d=30)
+- `#e8d4c4` — nearest `#f3d4b7` (d=17)
+<!-- live-palette-unverified:end -->

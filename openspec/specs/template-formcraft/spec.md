@@ -209,3 +209,8 @@ The page footer contains a link to Component Dock.
 | Font             | Poppins (sans-serif)    | Clean sans-serif via Google Fonts                  |
 | Input style      | Underline (no border)   | Bottom border only, no full border/box             |
 | Card padding     | ~40px                   | Internal card spacing                              |
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-20/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5b6abf` — nearest `#4d80e4` (d=45)
+<!-- live-palette-unverified:end -->

@@ -124,3 +124,8 @@ Background:
 - [ ] Footer links to Component Dock
 - [ ] No ColorLib references in app code
 - [ ] Uses picsum.photos for placeholder images
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v04/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#483d6b` — nearest `#0056b3` (d=105)
+<!-- live-palette-unverified:end -->

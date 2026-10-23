@@ -147,3 +147,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Banner header — I see "Contact Us" as the main heading in the banner area
 - [x] Contact form — I see a "Full Name" input field
 - [ ] Form interactivity — the field value updates to reflect my input
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v15/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#66bb6a` — nearest `#57b846` (d=39)
+<!-- live-palette-unverified:end -->

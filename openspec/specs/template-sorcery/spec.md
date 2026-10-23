@@ -55,3 +55,9 @@ Recreation of ColorLib **Colorlib Wizard 24** (`https://colorlib.com/wp/template
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-24/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2563eb` — nearest `#6bc734` (d=220)
+- `#10b981` — nearest `#6bc734` (d=120)
+<!-- live-palette-unverified:end -->

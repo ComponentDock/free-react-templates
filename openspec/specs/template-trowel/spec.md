@@ -397,3 +397,8 @@ The system SHALL use the specified design tokens consistently across all compone
 - [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [x] Footer links https://www.componentdock.com/ ("Component Dock").
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sintec/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c0392b` — nearest `#e13b33` (d=34)
+<!-- live-palette-unverified:end -->

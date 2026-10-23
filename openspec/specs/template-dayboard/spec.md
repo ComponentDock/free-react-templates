@@ -58,3 +58,10 @@ As a user, I want to view, add, and filter daily scheduled items.
 - [ ] All tests pass under Vitest with 100% code coverage.
 - [ ] Footer correctly links to `https://www.componentdock.com/`.
 - [ ] Responsive layout adapts cleanly across mobile, tablet, and desktop viewports.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#983df7` (d=76)
+- `#0d9488` — nearest `#983df7` (d=198)
+- `#64748b` — nearest `#a555f8` (d=131)
+<!-- live-palette-unverified:end -->

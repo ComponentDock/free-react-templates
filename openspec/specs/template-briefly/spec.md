@@ -191,3 +191,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Team section with three members — I should see the heading "Meet Our Experienced Team"
 - [x] CTA banner section — I should see the heading "Get to Know Project Estimate?"
 - [x] Blog section with three posts — I should see the heading "Latest From Our Blog Posts"
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/lawful/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f2c64d` — nearest `#f09359` (d=52)
+- `#ff5e13` — nearest `#fd7e14` (d=32)
+- `#415094` — nearest `#6f42c1` (d=66)
+<!-- live-palette-unverified:end -->

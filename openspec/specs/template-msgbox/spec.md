@@ -129,3 +129,9 @@ The page includes a footer with a Component Dock link.
 - [ ] White/light background, flat Bootstrap-like aesthetic
 - [ ] No ColorLib references in app code
 - [ ] Footer links to Component Dock
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2196f3` — nearest `#007bff` (d=44)
+- `#1a73e8` — nearest `#0069d9` (d=32)
+<!-- live-palette-unverified:end -->

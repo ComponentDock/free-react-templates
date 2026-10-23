@@ -266,3 +266,9 @@ Feature: Site footer
 - [ ] No ColorLib references in app code
 - [ ] `public/CNAME` contains `propbox.free.componentdock.com`
 - [ ] `package.json` homepage is `https://propbox.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/realestate2/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f77f00` — nearest `#fd7e14` (d=21)
+- `#1b2a4a` — nearest `#122b40` (d=13)
+<!-- live-palette-unverified:end -->

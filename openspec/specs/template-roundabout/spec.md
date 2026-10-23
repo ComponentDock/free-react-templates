@@ -58,3 +58,9 @@ As a site visitor, I want to browse multiple featured slides in a responsive car
 - [ ] All Vitest tests pass with 100% coverage.
 - [ ] Tailwind v4 CSS tokens and `injectUiSource()` configured correctly.
 - [ ] Footer includes Component Dock link.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-06/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#2563eb` — nearest `#007bff` (d=48)
+<!-- live-palette-unverified:end -->

@@ -75,3 +75,9 @@ The system SHALL render a footer with copyright and a link to Component Dock.
 - [x] Navigation bar — it shows the brand name "Calwave" and links to Schedule and Features
 - [ ] Hero section — it shows a headline "Advanced Time & Schedule Management" and CTA buttons
 - [ ] Features section — it shows key features such as Event Scheduling, Smart Notifications, and Time Tracking
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-06/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#308ff0` (d=18)
+- `#2563eb` — nearest `#1e88e5` (d=38)
+<!-- live-palette-unverified:end -->

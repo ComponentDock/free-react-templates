@@ -404,3 +404,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] BrandLogos — it SHALL show exactly 5 logo images in a responsive row
 - [ ] Blog — it SHALL show the heading "Latest News from our Blog"
 - [ ] Page composition — the page SHALL compose the navbar, hero, products, home-about, about-video, features, brand-logos, blog, and footer in order
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/robotics/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7680e6` — nearest `#6382e6` (d=19)
+<!-- live-palette-unverified:end -->

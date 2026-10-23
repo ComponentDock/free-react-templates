@@ -55,3 +55,9 @@
 - [ ] CNAME points to `tabdrop.free.componentdock.com`.
 - [ ] Hero / Header Section — it displays a badge ("FAQ & Accordion"), a main title ("Frequently Asked Questions"), and a helpful subtitle
 - [ ] Interactive Accordion Sections — that item expands to show its detailed response text, while other items remain collapsed or can be toggled independently
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-07/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#654ede` (d=24)
+- `#475569` — nearest `#0056b3` (d=103)
+<!-- live-palette-unverified:end -->

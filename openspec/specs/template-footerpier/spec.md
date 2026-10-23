@@ -133,3 +133,8 @@ The footer columns SHALL stack vertically on small screens and display as a 4-co
 - [ ] Poppins font family applied
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bft/bootstrap-footer-19/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7c4dff` — nearest `#5126a7` (d=105)
+<!-- live-palette-unverified:end -->

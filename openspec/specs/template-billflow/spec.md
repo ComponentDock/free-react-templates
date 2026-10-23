@@ -24,7 +24,7 @@
 
 | Token | Value | Notes |
 |---|---|---|
-| Brand primary | `#F2D7B9` | Warm peach-beige, used for page background + Next button |
+| Brand primary | `#f3d4b7` | Warm peach-beige, used for page background + Next button |
 | Brand secondary | `#E6C6A6` | Darker beige, footer/bottom strip |
 | Accent | `#D98E56` | Orange-peach, active step indicator |
 | Surface | `#FFFFFF` | White form card |
@@ -43,7 +43,7 @@
 Based on the screenshot, the template is a single-page multi-step wizard (no separate page sections — the entire template IS the wizard).
 
 ### 1. Page background + Split layout
-- Full-viewport warm peach-beige background (`#F2D7B9`)
+- Full-viewport warm peach-beige background (`#f3d4b7`)
 - Two-column split: left = decorative illustration, right = form card
 - Responsive: stacks vertically on mobile
 
@@ -77,7 +77,7 @@ Based on the screenshot, the template is a single-page multi-step wizard (no sep
 
 ### 6. Navigation button
 - "Next →" button at bottom-right of card
-- Solid warm peach-beige background (`#F2D7B9`)
+- Solid warm peach-beige background (`#f3d4b7`)
 - Dark grey text, bold, with arrow indicator
 - Subtle rounded corners
 - Hidden on last step (replaced by Submit)
@@ -193,3 +193,20 @@ The template footer SHALL include Component Dock attribution.
 - [ ] All tests pass with 100% coverage
 - [ ] TypeScript strict mode, no `any`
 - [ ] Uses `packages/ui` components where applicable (cn, Button, etc.)
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` answers **HTTP 200** (9,892 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#f2d7b9` | `#f3d4b7` ×3 | 4 | `style.css?v=4559639a` (12,177 B, `e0764ba9b5be…`) | `background: #f3d4b7;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e6c6a6` — nearest `#d9bda3` (d=16)
+- `#d98e56` — nearest `#d9bda3` (d=90)
+- `#e04040` — nearest `#d9bda3` (d=160)
+<!-- live-palette-unverified:end -->

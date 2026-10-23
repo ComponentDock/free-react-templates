@@ -999,3 +999,11 @@ copy verbatim.
       the source's unstyled hooks, per-column TLD tints kept by index, the
       blog-title cascade accident reconciled to a legible size, added
       keyboard/aria states, reduced-motion handling, Component Dock attribution)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/webhostingservice/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1c66de` — nearest `#007bff` (d=48)
+- `#6247ea` — nearest `#6f42c1` (d=43)
+- `#ec9d5f` — nearest `#f09359` (d=12)
+- `#3898f8` — nearest `#38a4ff` (d=14)
+<!-- live-palette-unverified:end -->

@@ -52,3 +52,9 @@ Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accor
 - [ ] Hero / Header Section — Scenario:** The page displays a prominent header section introducing the Ruche accordion collection with a title ("Ruche Interactive Accordions"), subtitle, and quick search…
 - [ ] Interactive Accordion Groups — Scenario:** Multiple categorized accordion groups (e.g., General Information, Technical Specifications, Integration Guide, Billing & Support) are rendered
 - [ ] Interactive Playground / Customizer — Scenario:** A live customization panel allows users to toggle accordion variants (flush, bordered, separated, rounded), add icons, and test states instantly
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-11/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#475569` — nearest `#0056b3` (d=103)
+<!-- live-palette-unverified:end -->

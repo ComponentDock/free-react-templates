@@ -280,3 +280,10 @@ The template SHALL include a footer linking to Component Dock.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e74c3c` — nearest `#fa4251` (d=30)
+- `#2ecc71` — nearest `#00ad5f` (d=58)
+- `#1abc9c` — nearest `#3fb8af` (d=42)
+<!-- live-palette-unverified:end -->

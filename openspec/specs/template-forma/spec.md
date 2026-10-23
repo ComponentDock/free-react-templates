@@ -329,3 +329,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] CTA band — it SHALL contain a heading "Ready to Transform Your Space?"
 - [ ] Footer — it SHALL show link columns and a brand blurb
 - [ ] Page composition — the page SHALL compose the header, hero, services, portfolio, process, testimonials, awards, FAQ, contact, CTA band, and footer in order
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/atelier/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#b88a3e` — nearest `#c49536` (d=18)
+<!-- live-palette-unverified:end -->

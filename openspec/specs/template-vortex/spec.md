@@ -50,3 +50,9 @@ As a user visiting the Vortex account management template, I want to explore col
 - [ ] Test suite achieves 100% coverage across all metrics
 - [ ] Footer contains mandatory Component Dock link (`https://www.componentdock.com/`)
 - [ ] CNAME file configured as `vortex.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#6366f1` — nearest `#007bff` (d=102)
+<!-- live-palette-unverified:end -->

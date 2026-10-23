@@ -47,3 +47,8 @@ So that I can easily inspect information in a compact layout.
 - [ ] 100% test coverage (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links to `https://www.componentdock.com/`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-15/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6366f1` — nearest `#007bff` (d=102)
+<!-- live-palette-unverified:end -->

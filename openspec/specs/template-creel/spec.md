@@ -77,3 +77,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Interactive Accordion & FAQ Showcase — the corresponding accordion content panel expands smoothly, displaying detailed text and icons
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6366f1` — nearest `#007bff` (d=102)
+<!-- live-palette-unverified:end -->

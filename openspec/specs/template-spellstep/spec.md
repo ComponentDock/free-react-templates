@@ -184,3 +184,11 @@ Every template's footer SHALL link to https://www.componentdock.com/.
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] TypeCheck passes (`npm run typecheck`)
 - [ ] Lint passes (`npm run lint`)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#b4c8e2` — nearest `#aac1f0` (d=19)
+- `#f0c6e2` — nearest `#f6c2ec` (d=12)
+- `#d2c4e5` — nearest `#dbadd2` (d=31)
+- `#8ea4c9` — nearest `#98add6` (d=19)
+<!-- live-palette-unverified:end -->

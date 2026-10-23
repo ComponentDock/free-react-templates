@@ -262,3 +262,9 @@ The page SHALL include a footer with Component Dock branding.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
 - [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/signup-form-10/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5cb85c` — nearest `#25a67b` (d=66)
+- `#4cae4c` — nearest `#229c73` (d=60)
+<!-- live-palette-unverified:end -->

@@ -94,3 +94,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Naming: "searchnest" — no collision with existing apps/specs
 - [ ] No references to ColorLib in app code (provenance in spec only)
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#efc050` — nearest `#ebcd3d` (d=23)
+<!-- live-palette-unverified:end -->

@@ -151,3 +151,9 @@ Feature: Responsive layout
 - [ ] Uses lucide-react for social icons
 - [ ] 100% test coverage
 - [ ] Spec + docs committed and pushed to main
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v10/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#00b4d8` — nearest `#007bff` (d=69)
+- `#7b2ff7` — nearest `#007bff` (d=145)
+<!-- live-palette-unverified:end -->

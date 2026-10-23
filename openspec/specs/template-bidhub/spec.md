@@ -16,7 +16,7 @@ testimonials, and CTA. Built with a warm orange accent palette and Muli font.
 | Token              | Value                                        | Notes                                                 |
 | ------------------ | -------------------------------------------- | ----------------------------------------------------- |
 | brand-color        | `#f37121`                                    | Orange — accent, buttons, testimonial overlay, icons  |
-| brand-hover        | `#d5610e`                                    | Darker orange for hover states                        |
+| brand-hover        | `#d5580c`                                    | Darker orange for hover states                        |
 | text-heading       | `#000000`                                    | Black headings                                        |
 | text-body          | `#212529`                                    | Dark gray body text                                   |
 | text-muted         | `#777`                                       | Muted text color                                      |
@@ -133,3 +133,13 @@ testimonials, and CTA. Built with a warm orange accent palette and Muli font.
 - [ ] Muli font loaded from Google Fonts
 - [ ] Orange (#f37121) accent color used consistently
 - [ ] Footer links to Component Dock
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/auction/` answers **HTTP 200** (23,844 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#d5610e` | `#d5580c` ×2 | 9 | `bootstrap.min.css` (35,021 B, `84273fd6d163…`) | `border-color: #d5580c; }` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->

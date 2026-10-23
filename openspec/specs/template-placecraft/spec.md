@@ -274,3 +274,9 @@ line with "Made with ❤️ by Component Dock" link to componentdock.com.
 - [ ] Dark footer (#333333) with correct text colors
 - [ ] No ColorLib references in app code
 - [ ] Responsive: mobile hamburger, stacked layouts on small screens
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/listed/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#7971ea` — nearest `#6f42c1` (d=63)
+- `#8bc34a` — nearest `#28a745` (d=103)
+<!-- live-palette-unverified:end -->

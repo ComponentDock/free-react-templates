@@ -45,3 +45,8 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - [ ] Footer correctly links to Component Dock.
 - [ ] Centered Date Picker Interface — a centered header ("Calvoy - Date Picker") and a date input field with placeholder "Pick A Date" are displayed
 - [ ] Interactive Date Selection Modal / Dropdown — an interactive calendar picker popup/dropdown appears allowing month navigation and date selection
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+<!-- live-palette-unverified:end -->

@@ -164,3 +164,9 @@ centered and contains:
 - [ ] Footer links to ComponentDock
 - [ ] CNAME: roamgate.free.componentdock.com
 - [ ] Tests pass at 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-18/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a73e8` — nearest `#5866cc` (d=69)
+- `#1464cc` — nearest `#5866cc` (d=68)
+<!-- live-palette-unverified:end -->

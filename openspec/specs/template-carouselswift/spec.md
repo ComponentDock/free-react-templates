@@ -64,3 +64,9 @@ As a visitor, I want to explore the carousel showcase, features, testimonials, a
 - [ ] All section components (Navbar, Hero, Carousel, Features, Testimonials, Newsletter, Footer) render correctly.
 - [ ] Vitest tests pass with 100% coverage.
 - [ ] Footer contains the mandatory Component Dock link (`https://www.componentdock.com/`).
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-17/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#f59e0b` — nearest `#0056b3` (d=306)
+<!-- live-palette-unverified:end -->

@@ -126,3 +126,8 @@ The dropdown SHALL support keyboard navigation with ArrowDown, ArrowUp, Enter, S
 - [ ] Select All selects all options — all 10 languages are selected
 - [ ] Clear All clears selections — no languages are selected
 - [ ] Keyboard navigation works — the dropdown opens
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/multiselect-03/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e8647c` — nearest `#96c8da` (d=160)
+<!-- live-palette-unverified:end -->

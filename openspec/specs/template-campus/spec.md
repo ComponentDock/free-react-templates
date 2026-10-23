@@ -427,3 +427,8 @@ Dock (`https://www.componentdock.com/`) instead.
       line 1625) marked `[x]` with surge URL on ship
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/academy/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#8bc34a` — nearest `#83c331` (d=26)
+<!-- live-palette-unverified:end -->

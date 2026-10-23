@@ -420,3 +420,8 @@ and a document title.
       https://preview.colorlib.com/#creativex-3), design tokens, and what
       differs (name, placeholders, paraphrased copy, inner pages not
       recreated).
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/creativex/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#facc15` — nearest `#f97316` (d=89)
+<!-- live-palette-unverified:end -->

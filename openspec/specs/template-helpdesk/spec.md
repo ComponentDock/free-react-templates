@@ -298,3 +298,9 @@ Feature: Dark footer with newsletter
 - [ ] Responsive: mobile nav, stacked layouts below 768px/800px
 - [ ] No ColorLib references in app code — provenance only in spec
 - [ ] Footer links to https://www.componentdock.com/ branded as "Component Dock"
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/callcenter/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5ec375` — nearest `#73fbaf` (d=83)
+- `#f2c94c` — nearest `#f09359` (d=56)
+<!-- live-palette-unverified:end -->

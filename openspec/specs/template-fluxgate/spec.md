@@ -169,3 +169,10 @@
 - [ ] All interactive elements have proper accessibility attributes
 - [ ] Smooth transitions between steps
 - [ ] Component Dock footer is present and links correctly
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-30/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#3760e5` (d=35)
+- `#4338ca` — nearest `#2b4ab3` (d=38)
+- `#10b981` — nearest `#2b4ab3` (d=125)
+<!-- live-palette-unverified:end -->

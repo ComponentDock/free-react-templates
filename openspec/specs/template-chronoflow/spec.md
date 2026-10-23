@@ -44,3 +44,9 @@ A clean, elegant date picker and calendar scheduling interface featuring a focus
 - [ ] Interactive date picker functions correctly
 - [ ] Footer links to Component Dock
 - [ ] 100% test coverage with Vitest & Testing Library
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4e73df` — nearest `#0089ec` (d=82)
+- `#2e384d` — nearest `#0056b3` (d=116)
+<!-- live-palette-unverified:end -->

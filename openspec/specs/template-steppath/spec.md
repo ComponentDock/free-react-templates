@@ -29,7 +29,7 @@ Extracted from screenshot pixel analysis (preview was unreachable — 404) — *
 | Token            | Value                                      | Notes                                   |
 | ---------------- | ------------------------------------------ | --------------------------------------- |
 | Background       | `#e6d2b4` (warm beige)                     | Page/card background                    |
-| Card background  | `#e8ceb3` → `#ebd5bb` (beige)              | Wizard card surface                     |
+| Card background  | `#e8ceb3` → `#f3d4b7` (beige)              | Wizard card surface                     |
 | Accent / teal    | `#d2e6e6` (light teal/mint)                | Progress indicator, step highlights     |
 | Accent secondary | `#c8dcdc` (lighter teal)                   | Secondary highlights                    |
 | Brand green      | `#46c24a` (approximate, from illustration) | Active step / CTA elements              |
@@ -252,3 +252,24 @@ Feature: Responsive wizard
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage (lines, functions, branches, statements)
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` answers **HTTP 200** (9,892 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#ebd5bb` | `#f3d4b7` ×3 | 9 | `style.css?v=4559639a` (12,177 B, `e0764ba9b5be…`) | `background: #f3d4b7;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e6d2b4` — nearest `#f3d4b7` (d=13)
+- `#e8ceb3` — nearest `#f3d4b7` (d=13)
+- `#46c24a` — nearest `#d9bda3` (d=172)
+- `#3c320a` — nearest `#d9bda3` (d=260)
+- `#64501e` — nearest `#d9bda3` (d=208)
+- `#d2be64` — nearest `#d9bda3` (d=63)
+- `#d2b45a` — nearest `#d9bda3` (d=74)
+<!-- live-palette-unverified:end -->

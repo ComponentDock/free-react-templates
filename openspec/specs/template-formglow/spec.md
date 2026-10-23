@@ -236,3 +236,11 @@ The page SHALL include a footer with a Component Dock link.
 - [ ] `homepage` in package.json is `https://formglow.free.componentdock.com`
 - [ ] `vite.config.ts` registers `injectUiSource()`
 - [ ] Footer credits Component Dock (not ColorLib)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v14/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e91e63` — nearest `#fa4251` (d=44)
+- `#ce93d8` — nearest `#c77ff2` (d=34)
+- `#4caf50` — nearest `#00ad5f` (d=77)
+- `#f44336` — nearest `#fa4251` (d=28)
+<!-- live-palette-unverified:end -->

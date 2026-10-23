@@ -49,3 +49,9 @@ As a user, I want to view an interactive calendar month grid, select dates, view
 - [ ] 100% test coverage with Vitest + Testing Library
 - [ ] Footer contains Component Dock link
 - [ ] No mention of ColorLib in source code
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-12/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6366f1` — nearest `#80bdff` (d=93)
+- `#4f46e5` — nearest `#0056b3` (d=95)
+<!-- live-palette-unverified:end -->

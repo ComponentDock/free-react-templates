@@ -50,3 +50,11 @@ The app SHALL render a footer containing copyright and a mandatory link to Compo
 - [ ] Tailwind CSS tokens match design
 - [ ] Responsive layout on mobile and desktop
 - [ ] 100% test coverage on all components
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-02/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#0d6efd` — nearest `#007bff` (d=18)
+- `#198754` — nearest `#4f69a2` (d=99)
+- `#dc3545` — nearest `#d03940` (d=14)
+- `#ffc107` — nearest `#d9af4b` (d=80)
+<!-- live-palette-unverified:end -->

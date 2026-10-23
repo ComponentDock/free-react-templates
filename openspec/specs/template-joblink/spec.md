@@ -209,3 +209,9 @@ at the bottom.
 - [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
 - [ ] picsum.photos for placeholder images, lucide-react for icons
 - [ ] Google Fonts loaded: Muli + Raleway
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/jobhub/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2d6ae6` — nearest `#1976d2` (d=31)
+- `#0fc969` — nearest `#09cc7f` (d=23)
+<!-- live-palette-unverified:end -->

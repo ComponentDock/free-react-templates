@@ -173,3 +173,9 @@ Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contac
 - [ ] No ColorLib references in app code
 - [ ] Uses picsum.photos for background image placeholder
 - [ ] Uses Poppins font via Google Fonts link in index.html
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v2/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#e91e8c` — nearest `#d5007d` (d=39)
+- `#f46036` — nearest `#e53935` (d=42)
+<!-- live-palette-unverified:end -->

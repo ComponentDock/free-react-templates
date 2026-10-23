@@ -145,3 +145,10 @@ A light gray section SHALL appear below the card area.
 - [ ] No ColorLib references in any app source files
 - [ ] `public/CNAME` contains `regnova.free.componentdock.com`
 - [ ] `package.json` homepage is `https://regnova.free.componentdock.com`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-32/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#5bc0de` — nearest `#e37b27` (d=238)
+- `#1a3a5c` — nearest `#e37b27` (d=218)
+- `#f5a623` — nearest `#fe892a` (d=31)
+<!-- live-palette-unverified:end -->

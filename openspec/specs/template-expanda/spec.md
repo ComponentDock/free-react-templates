@@ -80,3 +80,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Toggle Location Section Off — the Location section collapses
 - [ ] Expand Hobbies Section — the Hobbies section expands to show Photography & Hiking interests
 - [ ] Toggle Hobbies Section Off — the Hobbies section collapses
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#64748b` — nearest `#0056b3` (d=112)
+<!-- live-palette-unverified:end -->

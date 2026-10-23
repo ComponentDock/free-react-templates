@@ -182,3 +182,8 @@ The two-column layout adapts to smaller viewports.
 - [ ] Footer branded as "Component Dock"
 - [ ] Placeholder images via picsum.photos if any images used
 - [ ] Font loaded via Google Fonts link in index.html
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/contact-form-04/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#512d97` — nearest `#2e279d` (d=36)
+<!-- live-palette-unverified:end -->

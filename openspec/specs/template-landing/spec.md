@@ -195,3 +195,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] About split section — it SHALL contain a heading and a blurb
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/landing/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6020b0` — nearest `#286090` (d=91)
+- `#9050e0` — nearest `#66afe9` (d=104)
+- `#8f6153` — nearest `#c7254e` (d=82)
+<!-- live-palette-unverified:end -->

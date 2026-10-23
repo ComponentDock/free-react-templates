@@ -47,3 +47,9 @@ As a visitor, I want to browse featured creative projects and portfolio items vi
 - [ ] Footer links Component Dock (`https://www.componentdock.com/`)
 - [ ] No mention of ColorLib in app code
 - [ ] CNAME and homepage configured correctly
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-02/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f97316` — nearest `#0056b3` (d=296)
+- `#64748b` — nearest `#0056b3` (d=112)
+<!-- live-palette-unverified:end -->

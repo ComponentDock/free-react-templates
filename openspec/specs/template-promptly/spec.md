@@ -226,3 +226,8 @@ to trigger on close, proper ARIA attributes.
 ## Shape re-verification (live sheet, 2026-10-22)
 
 - `modal-11`: `.cl-btn{border-radius:0px}` — the launch button is square, not a 40 px pill.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/modal-11/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3e64ff` — nearest `#007bff` (d=66)
+<!-- live-palette-unverified:end -->

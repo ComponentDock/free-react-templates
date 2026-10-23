@@ -57,3 +57,9 @@ As a visitor exploring template designs, I want to view a responsive carousel an
 - [ ] Build succeeds without errors
 - [ ] Footer correctly links `https://www.componentdock.com/`
 - [ ] No mention of ColorLib in app source code
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-16/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1d3557` — nearest `#0056b3` (d=102)
+- `#457b9d` — nearest `#0056b3` (d=81)
+<!-- live-palette-unverified:end -->

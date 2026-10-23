@@ -84,3 +84,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero Carousel Section — Given** the user visits the SlideBay home page
 - [ ] Interactive Feature Showcase — Given** the user scrolls to the feature section
 - [ ] Testimonials / Carousel Display — Given** the user views the testimonials section
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#f97316` — nearest `#83b582` (d=173)
+- `#64748b` — nearest `#83b582` (d=73)
+<!-- live-palette-unverified:end -->

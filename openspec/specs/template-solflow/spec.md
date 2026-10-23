@@ -39,7 +39,7 @@ The description mentions: slider, CTA buttons, contact page, Google Maps, social
 | Token | Value | Source |
 |-------|-------|--------|
 | Brand primary | `#d4a54b` (warm gold/amber) | Screenshot hero area, nav accents |
-| Brand secondary | `#8b7baa` (muted purple/mauve) | CTA button fill, yoga mat |
+| Brand secondary | `#9482ac` (muted purple/mauve) | CTA button fill, yoga mat |
 | Text on dark | `#ffffff` | Hero overlay text |
 | Background (sections) | `#ffffff` (white) | General template body |
 | Background (alt sections) | `#f8f6f3` (warm off-white) | Alternating section backgrounds |
@@ -162,3 +162,18 @@ The description mentions: slider, CTA buttons, contact page, Google Maps, social
 - [ ] Responsive behavior at mobile breakpoints
 - [ ] Accessibility: alt text, labels, keyboard focus, heading order
 - [ ] No ColorLib references in app code (only in spec/PR)
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/yogastudio/` answers **HTTP 200** (31,150 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#8b7baa` | `#9482ac` ×21 | 12 | `style.css` (32,201 B, `a46586fdbe0e…`) | `color: #9482ac;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/yogastudio/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#d4a54b` — nearest `#fd7e14` (d=79)
+<!-- live-palette-unverified:end -->

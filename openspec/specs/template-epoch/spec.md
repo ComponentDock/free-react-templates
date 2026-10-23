@@ -84,3 +84,10 @@ As a user, I want a fully responsive layout and clear attribution.
 - [ ] Tailwind v4 `@theme` tokens and styles apply correctly
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] Vitest unit tests pass with 100% coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-14/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#0056b3` (d=95)
+- `#06b6d4` — nearest `#007bff` (d=73)
+- `#475569` — nearest `#0056b3` (d=103)
+<!-- live-palette-unverified:end -->

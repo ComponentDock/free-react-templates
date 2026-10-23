@@ -24,8 +24,8 @@ Extracted from screenshot pixel analysis and CSS references on the ColorLib page
 
 | Token | Value | Notes |
 |---|---|---|
-| Brand / primary | `#00ad5e` | Green — used for submit button, accent links |
-| Primary hover | `#02ab60` | Slightly darker green on hover |
+| Brand / primary | `#00ad5f` | Green — used for submit button, accent links |
+| Primary hover | `#00ad5f` | Slightly darker green on hover |
 | Primary light | `#85e3bf` / `#86dcb5` | Light green accent tints |
 | Primary tint | `#d5f4e4` / `#d5f4e4` | Very light green background tint |
 | Background | `#f2f2f2` | Page background (top/bottom margins) |
@@ -129,7 +129,7 @@ Extracted from screenshot pixel analysis and CSS references on the ColorLib page
 - [ ] Left side shows placeholder image with dark overlay
 - [ ] Right side shows white form card
 - [ ] All form inputs have labels and proper a11y attributes
-- [ ] Green submit button (#00ad5e) with correct hover state
+- [ ] Green submit button (#00ad5f) with correct hover state
 - [ ] Form validates on empty submit
 - [ ] Mobile: left image hidden, form full width
 - [ ] Keyboard navigation works (Tab order, focus rings)
@@ -140,3 +140,25 @@ Extracted from screenshot pixel analysis and CSS references on the ColorLib page
 - [ ] Build succeeds (`npm run build`)
 - [ ] Typecheck passes
 - [ ] Lint passes
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v17/index.html` answers **HTTP 200** (1,763 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#00ad5e` | `#00ad5f` ×4 | 1 | `style.css?v=93221552` (11,098 B, `b29ce0a2d5cf…`) | `color: #00ad5f;` |
+| `#02ab60` | `#00ad5f` ×4 | 3 | `style.css?v=93221552` (11,098 B, `b29ce0a2d5cf…`) | `color: #00ad5f;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/lf/Login_v17/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#85e3bf` — nearest `#00ad5f` (d=173)
+- `#86dcb5` — nearest `#00ad5f` (d=166)
+- `#d5f4e4` — nearest `#007bff` (d=246)
+- `#64748b` — nearest `#0056b3` (d=112)
+- `#94a3b8` — nearest `#0056b3` (d=167)
+- `#1a73e8` — nearest `#007bff` (d=36)
+- `#6366f1` — nearest `#007bff` (d=102)
+<!-- live-palette-unverified:end -->

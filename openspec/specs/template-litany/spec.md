@@ -139,3 +139,10 @@ Background:
 - [ ] Footer has Component Dock attribution
 - [ ] No ColorLib references in app code
 - [ ] CNAME set to litany.free.componentdock.com
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/faith2/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#b39a7a` — nearest `#ac8a74` (d=18)
+- `#c2a67c` — nearest `#ac8a74` (d=36)
+- `#c9a96e` — nearest `#ac8a74` (d=43)
+<!-- live-palette-unverified:end -->

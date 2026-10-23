@@ -56,3 +56,11 @@ As a user visiting Arcanum, I want to step through a multi-step booking form so 
 - [ ] Vitest unit tests pass with 100% test coverage.
 - [ ] Footer links to `https://www.componentdock.com/`.
 - [ ] Public CNAME contains `arcanum.free.componentdock.com`.
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-26/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#525575` (d=113)
+- `#6366f1` — nearest `#43ccba` (d=120)
+- `#7c3aed` — nearest `#525575` (d=130)
+- `#64748b` — nearest `#525575` (d=42)
+<!-- live-palette-unverified:end -->

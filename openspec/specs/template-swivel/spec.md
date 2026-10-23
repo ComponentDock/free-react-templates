@@ -76,3 +76,8 @@ New original name: `swivel` (`apps/swivel`).
 - [ ] Hero & Featured Carousel Section — the active featured post updates smoothly displaying title, excerpt, author, date, and CTA
 - [ ] Posts Grid & Categories Section — the displayed post cards filter accordingly
 - [ ] Newsletter Subscription Section — a success confirmation message is displayed
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/carousel-07/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f59e0b` — nearest `#ff487e` (d=144)
+<!-- live-palette-unverified:end -->

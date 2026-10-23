@@ -141,3 +141,10 @@ Extracted from the live preview stylesheet (`main.css`) and rendered DOM:
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] Typecheck passes with strict TypeScript
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/citylisting/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c6a16e` — nearest `#f09359` (d=49)
+- `#e6373d` — nearest `#dc3545` (d=13)
+- `#506172` — nearest `#57667e` (d=15)
+<!-- live-palette-unverified:end -->

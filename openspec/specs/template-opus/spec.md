@@ -123,3 +123,11 @@ time of research — falling back to screenshot reference)
 - [ ] Typecheck passes (tsc --noEmit)
 - [ ] Lint passes (oxlint)
 - [ ] Build succeeds (vite build)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/music/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#1a1147` — nearest `#002752` (d=36)
+- `#a4c400` — nearest `#cbdc0b` (d=47)
+- `#ffeb3b` — nearest `#eeff2d` (d=30)
+- `#ff1493` — nearest `#e83e8c` (d=48)
+<!-- live-palette-unverified:end -->

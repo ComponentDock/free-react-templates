@@ -127,3 +127,10 @@ approximate — implementer should match visual appearance closely.
 - [ ] `public/CNAME` = `regnoir.free.componentdock.com`
 - [ ] `"homepage"` = `https://regnoir.free.componentdock.com`
 - [ ] Package name = `@free-react-templates/regnoir`
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/regform/colorlib-regform-3/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#9b59b6` — nearest `#a18cd1` (d=58)
+- `#d4a5d4` — nearest `#fbc2eb` (d=54)
+- `#7cb342` — nearest `#57b846` (d=38)
+<!-- live-palette-unverified:end -->

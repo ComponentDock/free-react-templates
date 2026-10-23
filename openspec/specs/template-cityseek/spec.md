@@ -77,3 +77,9 @@ As a visitor, I want to search for cities, attractions, or locations using a cle
 - [ ] Responsive layout (stacked inputs on mobile)
 - [ ] Footer links to Component Dock
 - [ ] 100% test coverage (`npm run test:coverage`)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-1/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4a7cbe` — nearest `#4272d7` (d=28)
+- `#5b8ec9` — nearest `#4272d7` (d=40)
+<!-- live-palette-unverified:end -->

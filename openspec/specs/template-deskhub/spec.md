@@ -150,3 +150,8 @@ Background:
 - [ ] 100% test coverage (vitest + testing library)
 - [ ] No ColorLib references in app code
 - [ ] `packages/ui` components reused where applicable (cn, Button, Card)
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/sharespace/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#c6a16e` — nearest `#f09359` (d=49)
+<!-- live-palette-unverified:end -->

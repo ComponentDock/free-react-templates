@@ -102,3 +102,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Solid and Variant Buttons Grid — they should see categorized groups of buttons including Primary, Secondary, Success, Danger, Warning, and Info variants
 - [ ] Button Shapes and Sizes — they should see small, medium, and large buttons, as well as pill, square, and icon-appended variants
 - [ ] Interactive Playground & Code Copy — they can toggle button props (size, variant, rounded, shadow, icon) in real-time
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bb/bootstrap-buttons-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#6f42c1` (d=48)
+- `#6366f1` — nearest `#8540f5` (d=51)
+- `#10b981` — nearest `#138496` (d=57)
+<!-- live-palette-unverified:end -->

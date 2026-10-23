@@ -122,3 +122,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Interactive Calendar Grid — it shows the current month name, all seven weekday headers, and correct number of date buttons for the current month
 - [ ] Event Details Sidebar — it shows the formatted date and an events list
 - [ ] Calendar Grid with Event Badges — the date cell shows a truncated badge with the event title
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bootstrap/calendar-04/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4f46e5` — nearest `#7e0cf5` (d=76)
+- `#64748b` — nearest `#28a745` (d=105)
+- `#8b5cf6` — nearest `#cd4dcc` (d=80)
+<!-- live-palette-unverified:end -->

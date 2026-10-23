@@ -78,13 +78,13 @@ time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot) — **
   - Sidebar: solid royal-blue background (~#4361ee), full viewport height,
     ~250px wide.
   - Logo area: "Portfolic" in large white bold sans-serif text at top,
-    "Portfolio Agency" in lighter blue (~#7eb8ff) below.
+    "Portfolio Agency" in lighter blue (~#80bdff) below.
   - Navigation: 7 items vertically stacked — Home (house icon), About
     (user icon), Works (briefcase icon), Blog (pen icon), Gallery
     (image icon), Services (settings icon), Contacts (mail icon). White
     text, icon prefix, ~16px font, generous vertical spacing.
   - Newsletter: "Subscribe for newsletter" in white bold ~16px, below nav.
-    Email input with darker-blue background (~#3451c7), placeholder text
+    Email input with darker-blue background (~#3b4ec6), placeholder text
     "Enter Email Address", ~12px padding.
   - Footer in sidebar: "Copyright ©2019 All rights reserved | This template
     is made with by" in white ~12px at the very bottom.
@@ -102,8 +102,8 @@ time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot) — **
 | Token                | Value                           | Notes                                                                      |
 | -------------------- | ------------------------------- | -------------------------------------------------------------------------- |
 | `--color-sidebar`    | `#4361ee`                       | Royal blue sidebar background (estimated from screenshot; source CSS 404)  |
-| `--color-sidebar-dark` | `#3451c7`                     | Darker blue for input backgrounds within sidebar                            |
-| `--color-brand-sub`  | `#7eb8ff`                       | Lighter blue for "Portfolio Agency" subtitle                                |
+| `--color-sidebar-dark` | `#3b4ec6`                     | Darker blue for input backgrounds within sidebar                            |
+| `--color-brand-sub`  | `#80bdff`                       | Lighter blue for "Portfolio Agency" subtitle                                |
 | `--color-page`       | `#ffffff`                       | White main content background                                              |
 | `--color-text`       | `#222`                          | Main heading text (h1 "Sidebar #05")                                       |
 | `--color-text-body`  | `#666`                          | Body/paragraph text in main content                                        |
@@ -113,7 +113,7 @@ time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot) — **
 | `--sidebar-w`        | `250px`                         | Fixed sidebar width; full viewport height                                  |
 | `--sidebar-radius`   | `0`                             | No rounded corners — flat edges                                            |
 | `--nav-icon-size`    | `16px`                          | Icon size prefixing each nav item                                          |
-| `--input-bg`         | `#3451c7`                       | Darker blue input field background                                         |
+| `--input-bg`         | `#3b4ec6`                       | Darker blue input field background                                         |
 | `--input-radius`     | `4px`                           | Subtle rounded corners on email input                                      |
 | `--input-padding`    | `12px 16px`                     | Internal padding of email input                                            |
 | `--section-gap`      | `24px`                          | Vertical spacing between sidebar sections                                  |
@@ -154,7 +154,7 @@ The sidebar SHALL display a logo wordmark and brand subtitle at the top.
   bold text (~24px) reading "Portfolic" (or an appropriate portfolio
   brand name — the source uses "Portfolic" as its brand)
 - **AND** below the logo, a subtitle "Portfolio Agency" SHALL render in
-  lighter blue (`#7eb8ff`) at ~14px
+  lighter blue (`#80bdff`) at ~14px
 
 ### Requirement: Vertical navigation
 
@@ -191,7 +191,7 @@ navigation.
 - **THEN** below the navigation, a "Subscribe for newsletter" heading
   SHALL render in white bold text (~16px)
 - **AND** an email input field SHALL render with a darker-blue background
-  (`#3451c7`), placeholder text "Enter Email Address", and subtle rounded
+  (`#3b4ec6`), placeholder text "Enter Email Address", and subtle rounded
   corners (`border-radius: 4px`)
 - **AND** the input SHALL be functional (accepts email input; submission
   is mock — no real backend required)
@@ -265,3 +265,19 @@ The system SHALL include the required attribution footer.
       hamburger visible).
 - [ ] No ColorLib references in app code (provenance only in spec +
       TEMPLATES.md).
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/` answers **HTTP 200** (10,890 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#3451c7` | `#3b4ec6` ×1 | 8 | `style.css?v=1dfc2383` (16,150 B, `fb04b245985a…`) | `background: #3b4ec6;` |
+| `#7eb8ff` | `#80bdff` ×1 | 5 | `style.css?v=1dfc2383` (16,150 B, `fb04b245985a…`) | `border-color: #80bdff;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4361ee` — nearest `#3b4ec6` (d=45)
+<!-- live-palette-unverified:end -->

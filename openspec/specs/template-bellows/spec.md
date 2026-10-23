@@ -54,3 +54,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage (`npm run test:coverage`)
 - [ ] Footer links to Component Dock
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/bac/accordion-15/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#3b82f6` — nearest `#007bff` (d=60)
+- `#6366f1` — nearest `#007bff` (d=102)
+- `#2563eb` — nearest `#007bff` (d=48)
+<!-- live-palette-unverified:end -->

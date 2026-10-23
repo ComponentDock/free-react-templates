@@ -241,3 +241,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] No ColorLib references in implementation code (only in spec)
 - [ ] Name "relaybox" verified no collision with apps/ or specs/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v17/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#2ecc71` — nearest `#00ad5f` (d=58)
+<!-- live-palette-unverified:end -->

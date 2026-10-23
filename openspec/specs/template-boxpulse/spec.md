@@ -22,7 +22,7 @@ Source: https://colorlib.com/wp/template/boxus/
 | Font body           | `Roboto`, sans-serif                           | Paragraph text, descriptions                                                                                  |
 | Font accent         | `PT Serif`, serif                              | Quotes, testimonials                                                                                          |
 | Button radius       | 0 (sharp/square)                               | No border-radius on buttons/CTAs                                                                              |
-| Button border       | 2px solid `#E74C76`                            | Outlined CTA buttons                                                                                          |
+| Button border       | 2px solid `#e64b77`                            | Outlined CTA buttons                                                                                          |
 | Section backgrounds | Alternating `#221C5A` dark and `#FFFFFF` white | Hero dark, services white, portfolio dark, about white, stories dark, video white, skills dark, contact white |
 
 ## Section structure (in order)
@@ -177,3 +177,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Video display feature items — section number "05" and title "OFFER" are displayed
 - [ ] Skills display progress bars — section number "06" and title "EXPERTISE" are displayed
 - [ ] Contact have a working form — section number "07" and title "Contact" are displayed
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/boxus/` answers **HTTP 200** (72,508 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#e74c76` | `#e64b77` ×1 | 2 | `style.css` (28,656 B, `d0b9424c848c…`) | `background-color: #e64b77;` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->

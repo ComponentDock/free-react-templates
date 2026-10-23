@@ -17,7 +17,7 @@ pricing plans, contact form, and Google Maps integration.
 | Token            | Value                                | Source                             |
 | ---------------- | ------------------------------------ | ---------------------------------- |
 | Brand primary    | `#a3b627` (olive/yellow-green)       | Nav active state, CTA buttons      |
-| Brand secondary  | `#8dd1d1` (light teal)               | Service icon circular backgrounds  |
+| Brand secondary  | `#8fd0d2` (light teal)               | Service icon circular backgrounds  |
 | Background       | `#ffffff` (white)                     | Section backgrounds                |
 | Top bar bg       | `#333333` (dark gray)                | Top bar background                 |
 | Text primary     | `#333333` (dark)                      | Headings, body text                |
@@ -30,7 +30,7 @@ pricing plans, contact form, and Google Maps integration.
 | Button bg        | `#a3b627` (olive green)              | "MAKE AN APPOINTMENT" button       |
 | Button text      | `#ffffff` (white)                     | Button label color                 |
 | Hero overlay     | Semi-transparent dark gradient       | Over hero image                    |
-| Icon circles     | `#8dd1d1` background, white icons    | Service section circular icons     |
+| Icon circles     | `#8fd0d2` background, white icons    | Service section circular icons     |
 
 ## Sections (in order, from screenshot + ColorLib page description)
 
@@ -173,3 +173,18 @@ pricing plans, contact form, and Google Maps integration.
 - [ ] No ColorLib references in app code
 - [ ] Footer links to componentdock.com
 - [ ] Tests: 100% coverage on all components
+
+<!-- live-palette-revalue:start -->
+**Live palette re-value (2026-10-23)** — the demo `https://preview.colorlib.com/theme/lifecoaching/` answers **HTTP 200** (37,928 B); the declarations below are quoted from its own stylesheets.
+
+| claimed | painted | d | sheet (bytes, sha256) | declaration |
+| --- | --- | --- | --- | --- |
+| `#8dd1d1` | `#8fd0d2` ×8 | 2 | `style.css` (80,582 B, `c8af002e5c36…`) | `background: #8fd0d2 !important; }` |
+
+The claimed hex was a screenshot sample of the same hue; the sheet value is canonical (`docs/replication.md`).
+<!-- live-palette-revalue:end -->
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/lifecoaching/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#a3b627` — nearest `#c5cf31` (d=43)
+<!-- live-palette-unverified:end -->

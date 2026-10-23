@@ -203,3 +203,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Contact form — I see a "Full Name:" label with a text input showing placeholder "John Doe"
 - [x] Submit button — I see a green "Submit" button with an arrow icon
 - [ ] Responsive layout — the card takes full width with horizontal padding
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/cf/ContactFrom_v15/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#4cd137` — nearest `#57b846` (d=31)
+- `#5cb85c` — nearest `#57b846` (d=23)
+<!-- live-palette-unverified:end -->

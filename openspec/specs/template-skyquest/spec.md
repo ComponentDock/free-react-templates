@@ -130,3 +130,11 @@ Deploy target: `skyquest.free.componentdock.com`.
 - [ ] No ColorLib references in app code
 - [ ] Tests pass with 100% coverage
 - [ ] Build succeeds
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/searchf/colorlib-search-19/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#6a9cf5` — nearest `#47a9ff` (d=39)
+- `#b37ce8` — nearest `#c949fe` (d=60)
+- `#4ecdc4` — nearest `#47a9ff` (d=69)
+- `#44b09e` — nearest `#00ad5f` (d=93)
+<!-- live-palette-unverified:end -->

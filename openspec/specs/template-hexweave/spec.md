@@ -202,3 +202,9 @@ Every template footer MUST link to https://www.componentdock.com/ branded as "Co
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage
+
+<!-- live-palette-unverified:start -->
+**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
+- `#f5e6d3` — nearest `#f3d4b7` (d=33)
+- `#e8a87c` — nearest `#d9bda3` (d=47)
+<!-- live-palette-unverified:end -->
