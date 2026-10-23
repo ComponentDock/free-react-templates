@@ -1,17 +1,17 @@
-# Bulkapp — Design Notes
+# Bundle — Design Notes
 
 Reference: **Bulkapp** — `https://colorlib.com/wp/template/bulkapp/`  
 Live preview: `https://preview.colorlib.com/theme/bulkapp/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bulkapp-free-template.jpg  
-Shipped: https://bulkapp.free.componentdock.com
+Shipped: https://bundle.free.componentdock.com
 
-BulkApp is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "BulkApp" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Bundle is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "BulkApp" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Open Sans**, **Open Sans:wght@400;600;700**, **Roboto**
 
-## Design tokens (`apps/bulkapp/src/index.css` `@theme`)
+## Design tokens (`apps/bundle/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Fonts loaded by `index.html` (Google Fonts): **Open Sans**, **Open Sans:wght@400
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "BulkApp", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Bundle", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, a phone mockup illustration, and a call-to-action button.
@@ -95,8 +95,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/bulkapp/` may name the source designer,
+- **Provenance ban.** No file under `apps/bundle/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/bulkapp/public/CNAME` = `bulkapp.free.componentdock.com`
-  and the package `homepage` = `https://bulkapp.free.componentdock.com`.
+- **Deploy identity.** `apps/bundle/public/CNAME` = `bundle.free.componentdock.com`
+  and the package `homepage` = `https://bundle.free.componentdock.com`.
