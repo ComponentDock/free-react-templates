@@ -1,6 +1,6 @@
 import { HERO_SLIDES } from '../data'
 
-/* Hero recreated from the ColorLib "Clark" hero: a 750px black section
+/* Hero measured from the reference design hero: a 750px black section
    with the amber uppercase subheading, an 60px white h1 with an amber
    highlighted span, a 30px h2, the amber "Hire me" pill + white-outline
    "My works" ghost pill, and a cutout portrait on the right. The original

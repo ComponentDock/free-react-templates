@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Medwell brand palette — recreated from the ColorLib "Medcare" design
+  /* Medwell brand palette — measured from the reference design
      (primary blue #0051d2, body gray #797979, heading dark #020a21). */
   --color-brand-50: #e6efff;
   --color-brand-100: #b3cffc;

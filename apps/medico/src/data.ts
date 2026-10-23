@@ -1,8 +1,8 @@
-/* All copy/content for Medico, extracted from the ColorLib "Medico" live
-   preview (https://preview.colorlib.com/theme/medico/) on 2026-08-11.
+/* All copy/content for Medico, extracted from the reference design's live DOM
+   on 2026-08-11.
    Text keeps the source's kind of content; the source's typos are fixed
    deliberately ("Depertment" → "Departments", "Qualfied" → "Qualified",
-   "CHeart" → "Cardiac"), and the footer credit is reworded (no ColorLib
+   "CHeart" → "Cardiac"), and the footer credit is reworded (no external
    branding). */
 
 export const siteName = 'Medico'
@@ -196,5 +196,5 @@ export const newsletterBlurb =
 export const newsletterPlaceholder = 'Your email address'
 export const subscribeLabel = 'Subscribe'
 export const subscribeConfirmation = 'Thank you for subscribing!'
-export const footerCredit = 'This template is made with ♥ by Component Dock'
+export const footerCreditLabel = 'Component Dock'
 export const copyright = `© ${new Date().getFullYear()} ${siteName}. All rights reserved.`

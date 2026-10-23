@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — extracted from ColorLib Inspire stylesheet.
+  /* Brand palette — measured from the reference stylesheet.
      Primary blue #1daff3, hover #30b6f4, light bg #f8f9fa, dark footer #2c3e50. */
   --color-brand: #1daff3;
   --color-brand-hover: #30b6f4;

@@ -1,6 +1,6 @@
 /* All copy/content for Medpact — hospital & clinics website template.
-   Recreated from the ColorLib "Medicare" design; provenance lives only
-   in the spec, TEMPLATES.md, and the PR. */
+   Design tokens measured from the reference design; provenance lives only in
+   the spec, TEMPLATES.md, and the PR. */
 
 export const siteName = 'Medpact'
 export const skipLabel = 'Skip to main content'

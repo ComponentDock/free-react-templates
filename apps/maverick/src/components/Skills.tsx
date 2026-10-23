@@ -1,6 +1,6 @@
 import { SKILLS } from '../data'
 
-/* Skills section recreated from the ColorLib "Clark" skills: six progress
+/* Skills section measured from the reference design skills: six progress
    bars on a 10px #1a1a1a track with an amber fill, each labelled with the
    skill name (20px, weight 500) and its percentage. */
 

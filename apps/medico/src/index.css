@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Medico brand palette — recreated from the ColorLib "Medico" preview
-   (https://preview.colorlib.com/theme/medico/) live DOM + style.css:
+/* Medico brand palette — measured from the reference design live DOM +
+   stylesheet:
    primary blue gradient #649bff → #0070fa (buttons, reservation band),
    hover blue #0065e1, icon circles #f0e9ff (features) / #f2f6f8
    (departments), card border #f2f6f8, services band #f9f9ff, footer

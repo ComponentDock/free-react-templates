@@ -1,6 +1,6 @@
 import { PROJECTS, SERVICES_BLURB } from '../data'
 
-/* Projects section recreated from the ColorLib "Clark" masonry grid: six
+/* Projects section measured from the reference design masonry grid: six
    photo tiles (one 4-col, one 8-col, then two stacked in an 8-col slot and
    two stacked in a 4-col slot) that reveal a black overlay (opacity 0.9)
    with a centered title + category on hover. */

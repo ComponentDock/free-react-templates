@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Marginalia brand palette — recreated from the ColorLib "Blog Wordpress
-     Themes" roundup screenshot (preview 404s; the capture depicts the
-     featured "Jevelin" blog theme whose VISUAL DESIGN is recreated under the
-     new name). Monochrome editorial scheme: charcoal #141414 (header bar,
+  /* Marginalia brand palette — measured from the reference roundup screenshot
+     (the live preview 404s; the capture depicts a featured blog theme whose
+     visual design is recreated under the new name). Monochrome editorial
+     scheme: charcoal #141414 (header bar,
      hero overlay, footer), ink #222222 (headings, body text), meta #9b9b9b
      (byline, tags, icons), description #6b6b6b (excerpts). The only
      "accent" is the italic serif word in the hero headline. */

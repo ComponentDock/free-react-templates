@@ -3,7 +3,7 @@ import { Menu, X } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
 import { BRAND, NAV_LINKS } from '../data'
 
-/* Header recreated from the ColorLib "Clark" navbar: transparent over the
+/* Header measured from the reference design navbar: transparent over the
    black hero, turning fixed with a black background + soft shadow once the
    page is scrolled; links get the amber underline on hover/active. */
 

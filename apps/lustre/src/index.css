@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lustre brand colors — from the ColorLib "Vogue" preview
-     (https://preview.colorlib.com/theme/vogue/ + styles/main_styles.css):
-     a hair-salon theme with brand gold #ffae00 (appointment button,
+  /* Lustre brand colors — from the reference stylesheet: a hair-salon theme
+     with brand gold #ffae00 (appointment button,
      service-card bg, form buttons, links, author lines) and a brighter
      #ffbb00 (hover states, active nav underline, logo highlight), dark
      #1a1a1a (headings), #2a2a2a (button text on gold), #454545 (copyright),
@@ -17,12 +16,12 @@
   --color-gold-500: #ffae00;
   --color-gold-600: #e69c00;
 
-  /* Dark copy (ColorLib #1a1a1a) and muted copy. */
+  /* Dark copy (#1a1a1a) and muted copy. */
   --color-ink: #1a1a1a;
   --color-ink-soft: #2a2a2a;
   --color-smoke: #767271;
 
   /* Montserrat (body + headings) via Google Fonts <link> in index.html —
-     matching the ColorLib single-family typography. */
+     matching the reference single-family typography. */
   --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 }

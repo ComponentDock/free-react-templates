@@ -5,7 +5,7 @@ import {
   exploreLinks,
   exploreTitle,
   footerAboutBlurb,
-  footerCredit,
+  footerCreditLabel,
   newsletterBlurb,
   newsletterPlaceholder,
   newsletterTitle,
@@ -128,7 +128,13 @@ export function Footer() {
       </div>
       <div className="border-t border-gray-200/70 py-8 text-center">
         <p className="text-sm text-muted">
-          {copyright} | {footerCredit}
+          {copyright} | This template is made with <span aria-hidden="true">♥</span> by{' '}
+          <a
+            className="font-medium text-brand underline underline-offset-4 hover:no-underline"
+            href="https://www.componentdock.com/"
+          >
+            {footerCreditLabel}
+          </a>
         </p>
       </div>
     </footer>

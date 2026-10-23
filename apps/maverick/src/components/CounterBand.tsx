@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { COUNTER_STATS, HIRE_ME } from '../data'
 
-/* Counter band recreated from the ColorLib "Clark" counter: a photo
+/* Counter band measured from the reference design counter: a photo
    background with a dark overlay and four #191919 stat boxes (amber
    number + label) that count up from 0 when scrolled into view. */
 
