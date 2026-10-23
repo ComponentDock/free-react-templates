@@ -12,7 +12,12 @@ changed_files() {
 }
 
 changed_apps() {
-  changed_files | grep -oE '^apps/[^/]+' | cut -d/ -f2 | sort -u
+  # A rename diff lists BOTH sides (apps/old deleted, apps/new added); only
+  # folders that still exist can be verified — verify-app.sh exits 1 otherwise.
+  changed_files | grep -oE '^apps/[^/]+' | cut -d/ -f2 | sort -u |
+    while read -r app; do
+      [ -d "apps/${app}" ] && echo "${app}"
+    done
 }
 
 # Lint only changed files (not the entire codebase)
