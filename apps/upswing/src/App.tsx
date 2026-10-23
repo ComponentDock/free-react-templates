@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Favison — App Landing Template'
+    document.title = 'Upswing — App Landing Template'
   }, [])
 
   return (

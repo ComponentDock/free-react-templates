@@ -19,7 +19,7 @@ describe('Footer', () => {
     expect(screen.getByRole('link', { name: 'X' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'LinkedIn' })).toBeInTheDocument()
 
-    expect(screen.getByText(/Copyright © \d{4} Favison/)).toBeInTheDocument()
+    expect(screen.getByText(/Copyright © \d{4} Upswing/)).toBeInTheDocument()
   })
 
   it('submits the newsletter form without reloading', async () => {

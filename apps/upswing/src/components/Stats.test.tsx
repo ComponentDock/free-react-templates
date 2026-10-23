@@ -15,6 +15,6 @@ describe('Stats', () => {
       screen.getByText("He two face one moved dominion man you're likeness"),
     ).toBeInTheDocument()
     expect(screen.getByText('Sea forth fill have divide be dominion from life')).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Favison growth stats dashboard' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Upswing growth stats dashboard' })).toBeInTheDocument()
   })
 })

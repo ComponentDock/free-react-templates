@@ -20,8 +20,8 @@ export function Stats() {
     <section aria-label="Stats" className="bg-white py-16 sm:py-24 dark:bg-gray-950">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
         <img
-          src="https://picsum.photos/seed/favison-stats/640/560"
-          alt="Favison growth stats dashboard"
+          src="https://picsum.photos/seed/upswing-stats/640/560"
+          alt="Upswing growth stats dashboard"
           className="w-full rounded-xl shadow-lg"
         />
         <div>

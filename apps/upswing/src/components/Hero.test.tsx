@@ -11,6 +11,6 @@ describe('Hero', () => {
 
     expect(screen.getByText(/Lorem ipsum dolor sit amet/)).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Begin Free Trial' })).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: 'Favison dashboard preview' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Upswing dashboard preview' })).toBeInTheDocument()
   })
 })

@@ -12,7 +12,7 @@ const importantLinks = [
 const contactLines = [
   { icon: MapPin, text: '600/B, South Bhadalta, Bagbazar' },
   { icon: Phone, text: '+1 234 567 890' },
-  { icon: Mail, text: 'hello@favison.example' },
+  { icon: Mail, text: 'hello@upswing.example' },
 ] as const
 
 export function Footer() {
@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <h2 className="text-2xl font-bold text-white">About Us</h2>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
-              Favison helps teams build a better business faster — simple tools, honest pricing, and
+              Upswing helps teams build a better business faster — simple tools, honest pricing, and
               support that never sleeps.
             </p>
             <div className="mt-6">
@@ -97,7 +97,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} Favison. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Upswing. All rights reserved.</p>
           <p>
             Made with <span aria-hidden="true">♥</span> by{' '}
             <a

@@ -1,17 +1,21 @@
-# Favison — Design Notes
+# Upswing — Design Notes
+
+> **Renamed:** this app shipped as `favison` (a rule-5 violation — the folder
+> reused the ColorLib source name). It is now `apps/upswing` /
+> `@free-react-templates/upswing` / https://upswing.free.componentdock.com.
 
 Reference: **Favison** — `https://colorlib.com/wp/template/favison/`  
 Live preview: `https://preview.colorlib.com/theme/favison/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/favison-free-template.jpg  
-Shipped: https://favison.free.componentdock.com
+Shipped: https://upswing.free.componentdock.com
 
-Favison is a single-page SaaS/business landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Favison" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Upswing is a single-page SaaS/business landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Favison" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/favison/src/index.css` `@theme`)
+## Design tokens (`apps/upswing/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -52,7 +56,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Favison", anchor links to the page's sections, a "Sign Up" button, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Upswing", anchor links to the page's sections, a "Sign Up" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and a "Begin Free Trial" button.
@@ -96,8 +100,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/favison/` may name the source designer,
+- **Provenance ban.** No file under `apps/upswing/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/favison/public/CNAME` = `favison.free.componentdock.com`
-  and the package `homepage` = `https://favison.free.componentdock.com`.
+- **Deploy identity.** `apps/upswing/public/CNAME` = `upswing.free.componentdock.com`
+  and the package `homepage` = `https://upswing.free.componentdock.com`.
