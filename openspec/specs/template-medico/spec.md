@@ -163,7 +163,7 @@ Medico lives in `apps/medico` and uses shared components from
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#649bff` | live sheet paints it ×6 — `background-image` on `o:300,400,500,700&display=swap"); .btn_1, .btn_2, .regervation_part .btn_2:hover`; style.css (156,049 B, sha256 bab80011bfd6) · <https://preview.colorlib.com/theme/medico/> |
-| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (156,049 B, sha256 bab80011bfd6) · <https://preview.colorlib.com/theme/medico/> |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (156,049 B, sha256 bab80011bfd6) · <https://preview.colorlib.com/theme/medico/> — declared only by `.genric-btn.link` in the shared sheet — 7 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

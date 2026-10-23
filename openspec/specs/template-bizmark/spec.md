@@ -18,7 +18,7 @@ Extracted from the preview CSS (`css/style.css`) and live DOM:
 | ---------------- | -------------------------------------------------------- | ------------------------------------ |
 | Primary gradient | `linear-gradient(131deg, #feb47b, #ff7e5f)`              | Orange → salmon, used on all CTAs    |
 | Accent / hover   | `#ff7e5f`                                                | Coral-orange                         |
-| Secondary accent | `#ff8b23`                                                | Bright orange                        |
+| Secondary accent | `#ff8b23`                                                | Bright orange — declared only by `.blog_item_date` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 | Banner bg        | `#f0eed4` (fallback on mobile), white + bg image desktop | Light yellow-green tint              |
 | Section bg       | `#f7f7f7`                                                | Light gray (services area)           |
 | Headings color   | `#2f373d`                                                | Dark blue-gray                       |

@@ -46,6 +46,7 @@ free-react-templates/
 ├── docs/                     # AI context, conventions, contracts, ADRs
 │   ├── naming-audit.md       # apps still reusing a source name + rename recipe
 │   ├── app-fidelity-delta.md # app palette vs the brand colours its prep measured
+│   ├── app-fidelity-sheet-only.md # does the reference page render the claimed block?
 │   └── templates/<name>/     # Per-template prep: tasks/todo outline, notes
 │                             # (prepared on main while a PR awaits review)
 ├── .specify/                 # Spec Kit workflow scaffolding

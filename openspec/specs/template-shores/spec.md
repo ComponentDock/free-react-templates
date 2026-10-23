@@ -28,7 +28,7 @@ A charity/nonprofit landing page template with hero banner, donation causes, abo
 | Amber | `#fdbb00` | 7 | secondary accents and prices |
 | Highlight yellow | `#f4e700` | 10 | highlight chips |
 | Blue | `#38a4ff` | 9 | secondary icon fill |
-| Accent red | `#f44a40` | 6 | counter/emphasis accent |
+| Accent red | `#f44a40` | 6 | counter/emphasis accent — declared only by `.genric-btn.danger` in the shared sheet — 4 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 
 ### Typography
 

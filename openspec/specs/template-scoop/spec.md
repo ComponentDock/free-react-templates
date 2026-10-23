@@ -37,7 +37,7 @@ Scoop lives in `apps/scoop` and uses shared components from `packages/ui`
 | Token | Value | Occurrences | Role |
 | ----- | ----- | ----------- | ---- |
 | Action pink | `#ff1857` | 39 | `.top_menu` buy button, `.main_title2` 3 px left rule, `.carousel-indicators li.active`, nav/link hover, `.submit_btn` |
-| Gold accent | `#f8b600` | 19 | `.genric-btn.primary`, category/tag labels, inline link accents |
+| Gold accent | `#f8b600` | 19 | `.genric-btn.primary`, category/tag labels, inline link accents — declared only by `.ordered-list li` in the shared sheet — 17 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 | Ink | `#222222` | 28 | headings (Roboto 500), nav labels |
 | Body copy | `#777777` | 12 | `body` (Open Sans 14/24), `.main_title2 h2` ink is `#222222` |
 | Off-white band | `#f9f9ff` | 20 | `.top_menu` strip, alternating card band |
