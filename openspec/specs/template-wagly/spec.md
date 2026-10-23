@@ -1,16 +1,16 @@
-# Template: Breed (Dog Breed Landing — Hero Slider, Team, Breed Collections, Blog)
+# Template: Wagly (Dog Breed Landing — Hero Slider, Team, Breed Collections, Blog)
 
 ## Purpose
 
-Breed is a single-page dog-breed landing template in the free-react-templates
+Wagly is a single-page dog-breed landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Breed"
-website template design (see TEMPLATES.md), built under a different name with
+website template design (see TEMPLATES.md), built under the new name Wagly with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a clean, warm dog-care landing: a full-height hero slider
 ("We Love Pets" / "Care for dogs"), an about block ("It's a Dog Life"), a team
 row ("Every Dog Needs A Good Owner"), a dog-breed collection grid, a blog
-section, and a dark footer. Breed recreates that structure section-for-section
+section, and a dark footer. Wagly recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
 
@@ -46,7 +46,8 @@ assets copied).
      (date "Feb 26th, 2018" in post-meta style, h3 title, excerpt, "Read
      more" `.btn-primary .btn-sm`): "How to Train Your Dog", "Find The Right
      Food For Your Dogs", "Dog's Affections To Owner".
-  7. Footer (`site-footer`, bg `#262626`): "About The Breed" blurb column,
+  7. Footer (`site-footer`, bg `#262626`): "About The Breed" blurb column
+     (recreated as "About Wagly" — the app must not carry the source name),
      "Contact Info" (Address: 34 Street Name, City Name Here, United States;
      Telephone: +1 242 4942 290; Email: info@yourdomain.com), "Quick Links"
      (About, Terms of Use, Disclaimers, Contact), copyright line + social
@@ -63,28 +64,28 @@ assets copied).
     bg; `.btn-link` white; `.btn-sm` 12px.
   - Section padding: `7em 0`; post-meta: 14px, `letter-spacing: .2em`.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/breed-<n>/<w>/<h>`); icons → lucide-react (ChevronLeft,
+  (`picsum.photos/seed/wagly-<n>/<w>/<h>`); icons → lucide-react (ChevronLeft,
   ChevronRight, Mail, MapPin, Phone, ArrowRight); brand social icons → inline
   SVG; Open Sans via Google Fonts; repo-standard Navbar (dark-mode toggle) +
   Footer chrome. Hero slider recreated as a lightweight two-slide carousel
   with prev/next controls and dots. Footer credit line paraphrased ("All
   rights reserved", no ColorLib attribution copied verbatim).
 
-Breed lives in `apps/breed` and uses shared components from `packages/ui`
+Wagly lives in `apps/wagly` and uses shared components from `packages/ui`
 (Button, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "breed",
+The system SHALL render a top navigation bar with the site name "wagly",
 links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Breed page is rendered
+- **GIVEN** the Wagly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "breed" and links to About,
+- **THEN** the navbar SHALL show the site name "wagly" and links to About,
   Breeds, Blog, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
@@ -173,7 +174,7 @@ links, social icons, and a copyright line.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the "About The Breed" blurb, "Contact Info" with a
+- **THEN** it SHALL show the "About Wagly" blurb, "Contact Info" with a
   telephone number, and a "Quick Links" column
 - **AND** it SHALL show a copyright line
 
@@ -184,11 +185,11 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Breed app is rendered
+- **GIVEN** the Wagly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all
   sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Breed — Dog Breed Template"
+- **AND** the document title SHALL be "Wagly — Dog Breed Template"
 
 ### Requirement: Component Dock attribution
 
@@ -208,7 +209,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/breed/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/wagly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -217,7 +218,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/breed/` is inspected
+- **WHEN** every non-test file under `apps/wagly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -225,11 +226,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "breed" and links to About,
+- [x] Navigation bar — the navbar SHALL show the site name "wagly" and links to About,
 - [x] Hero slider — the first slide SHALL contain a level-1 heading "We Love Pets"
 - [ ] About section — it SHALL contain a heading "It's a Dog Life" and a sub heading
 - [ ] Team section — it SHALL contain a heading "Every Dog Needs A Good Owner"
 - [x] Breed collections section — it SHALL contain a heading "Dog Breed Collections"
 - [x] Blog section — it SHALL contain a heading "Recent Blog Post"
-- [x] Footer — it SHALL show the "About The Breed" blurb, "Contact Info" with a
+- [x] Footer — it SHALL show the "About Wagly" blurb, "Contact Info" with a
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -1,19 +1,19 @@
-# Breed — Implementation Tasks
+# Wagly — Implementation Tasks
 
-Source design: **Breed** (`https://colorlib.com/wp/template/breed/`) → recreation name **breed**. Shipped at https://breed.free.componentdock.com.
+Source design: **Breed** (`https://colorlib.com/wp/template/breed/`) → recreation name **wagly**. Shipped at https://wagly.free.componentdock.com.
 
-Scope: Breed is a single-page dog-breed landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Breed" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Scope: Wagly is a single-page dog-breed landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Breed" website template design (see TEMPLATES.md), built under the new name Wagly with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Component breakdown
 
-Render order as composed in `apps/breed/src/App.tsx`:
+Render order as composed in `apps/wagly/src/App.tsx`:
 
 ### 1. Navbar
-- The system SHALL render a top navigation bar with the site name "breed", links to the page's sections, and a dark-mode toggle button.
+- The system SHALL render a top navigation bar with the site name "wagly", links to the page's sections, and a dark-mode toggle button.
 - Scenario — Navbar content:
-  - **GIVEN** the Breed page is rendered
+  - **GIVEN** the Wagly page is rendered
   - **WHEN** the page loads
-  - **THEN** the navbar SHALL show the site name "breed" and links to About,
+  - **THEN** the navbar SHALL show the site name "wagly" and links to About,
   - **AND** the navbar SHALL show a dark-mode toggle button
 - Scenario — Dark mode toggle:
   - **GIVEN** the page is rendered
@@ -70,24 +70,24 @@ Render order as composed in `apps/breed/src/App.tsx`:
 - Scenario — Footer content:
   - **GIVEN** the page is rendered
   - **WHEN** the footer is displayed
-  - **THEN** it SHALL show the "About The Breed" blurb, "Contact Info" with a
+  - **THEN** it SHALL show the "About Wagly" blurb, "Contact Info" with a
   - **AND** it SHALL show a copyright line
 
 ### Cross-cutting requirements
 
 - **Page composition** — The system SHALL compose all sections in a single page with a main landmark and a document title.
-  - Scenario — Full page render: **GIVEN** the Breed app is rendered; **WHEN** the page loads; **THEN** the page SHALL compose the Navbar in the banner landmark, all; **AND** the document title SHALL be "Breed — Dog Breed Template"
+  - Scenario — Full page render: **GIVEN** the Wagly app is rendered; **WHEN** the page loads; **THEN** the page SHALL compose the Navbar in the banner landmark, all; **AND** the document title SHALL be "Wagly — Dog Breed Template"
 - **Component Dock attribution** — The system SHALL credit Component Dock — the marketplace that publishes this template — with a visible link to `https://www.componentdock.com/` in the site footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT change the footer's own layout or copy beyond the credit line.
   - Scenario — Footer attribution: **GIVEN** any page of the template is rendered; **WHEN** the footer is displayed; **THEN** it SHALL contain an anchor whose `href` is; **AND** the anchor's text SHALL name Component Dock
-- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/breed/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
-  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/breed/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] Footer credits Component Dock with a link to https://www.componentdock.com/; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/wagly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/wagly/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] Footer credits Component Dock with a link to https://www.componentdock.com/; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Verification
 
-- [x] `apps/breed` ships on https://breed.free.componentdock.com
+- [x] `apps/wagly` ships on https://wagly.free.componentdock.com
 - [x] Typecheck / lint / tests / build pass at the repo gate
 - [x] Section order and copy match the design notes
-- [x] No source-designer name, source URL or source template name under `apps/breed/`
+- [x] No source-designer name, source URL or source template name under `apps/wagly/`
 - [x] Footer links Component Dock
 
 ## Delivery contract (repo rules — non-negotiable)
@@ -98,8 +98,8 @@ Render order as composed in `apps/breed/src/App.tsx`:
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/breed/` may name the source designer,
+- **Provenance ban.** No file under `apps/wagly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/breed/public/CNAME` = `breed.free.componentdock.com`
-  and the package `homepage` = `https://breed.free.componentdock.com`.
+- **Deploy identity.** `apps/wagly/public/CNAME` = `wagly.free.componentdock.com`
+  and the package `homepage` = `https://wagly.free.componentdock.com`.

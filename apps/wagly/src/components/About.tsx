@@ -4,7 +4,7 @@ export function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-3">
         <div className="lg:col-span-1">
           <img
-            src="https://picsum.photos/seed/breed-about/600/520"
+            src="https://picsum.photos/seed/wagly-about/600/520"
             alt="A happy dog"
             className="h-full w-full object-cover"
           />

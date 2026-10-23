@@ -24,7 +24,7 @@ export function Breeds() {
           {breeds.map((breed) => (
             <article key={breed.name} className="text-center">
               <img
-                src={`https://picsum.photos/seed/breed-collection-${breed.seed}/600/400`}
+                src={`https://picsum.photos/seed/wagly-collection-${breed.seed}/600/400`}
                 alt={breed.name}
                 className="mx-auto w-full object-cover"
               />
