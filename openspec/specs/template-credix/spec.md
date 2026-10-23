@@ -8,7 +8,7 @@ A loan and credit company landing page with navy blue and golden accent, featuri
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/credit/ (HTTP 200, 39,614 B, fetched 2026-10-23) and its theme stylesheet `theme/credit/style.css` (56,866 B, sha256 `99fc516ba63a…`).
+https://preview.colorlib.com/theme/credit/ (HTTP 200, 39,614 B, fetched 2026-10-23) and its theme stylesheet `theme/credit/style.css` (56,866 B, sha256 `0ecc0e70b54b…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -400,6 +400,19 @@ def fetch_sheet(f, url: str) -> str:
 
 BYTES_RX = re.compile(r"([0-9][0-9,]{2,})\s*B\b")
 SHA_RX = re.compile(r"sha256\s*`?([0-9a-f]{10,64})")
+NEWLINE_RX = re.compile(r"\r\n?")
+
+
+def basename_rx(base: str):
+    """A basename bound to a path/quote boundary, not a bare substring.
+
+    `styles.css` occurs INSIDE `main_styles.css`, so a prep that cites an
+    icon-font plugin's `styles.css` and keeps the theme sheet's identity on the
+    line above (`styles/main_styles.css — HTTP 200, 26,362 B, sha256 `0264…``)
+    borrowed that identity and read as stale forever (blitz: its 8,232 B plugin
+    compared against 26,362 B, one STALE-SKIN in every census since -24a).
+    """
+    return re.compile(r"(?<![A-Za-z0-9_.-])" + re.escape(base) + r"(?![A-Za-z0-9_.-])")
 
 
 def recorded_identity(txt: str, url: str):
@@ -418,11 +431,12 @@ def recorded_identity(txt: str, url: str):
     """
     base = os.path.basename(url.split("?")[0])
     lines = txt.splitlines()
+    rx = basename_rx(base)
     for i, ln in enumerate(lines):
-        pos = ln.find(base)
-        if pos < 0:
+        m = rx.search(ln)
+        if not m:
             continue
-        tail = ln[pos + len(base):] + " " + (lines[i + 1] if i + 1 < len(lines) else "")
+        tail = ln[m.end():] + " " + (lines[i + 1] if i + 1 < len(lines) else "")
         mb = BYTES_RX.search(tail)
         ms = SHA_RX.search(tail)
         if mb or ms:
@@ -431,21 +445,50 @@ def recorded_identity(txt: str, url: str):
     return None, None
 
 
+def identity_state(txt: str, url: str, body: str):
+    """(state, basis) — is the cited sheet still the file the cell was measured from?
+
+    `state` is `"ok"`, `"changed"`, `"basis"` or `None` (nothing recorded).
+    `basis` names the hash basis that reproduced: `"raw"` (the bytes as served)
+    or `"lf"` — the recorded sha only reproduces after universal-newline
+    normalisation, i.e. the recording tool read curl's stdout in TEXT mode
+    (`\r\n` -> `\n`) while it took the byte count from the wire. Byline's
+    `theme/nikki/style.css` is 50,037 B both ways; its recorded
+    `sha256 7ac982cfad07` is the sha of the 48,420-byte LF-normalised text, and
+    the raw sha is `4ce08b1b780c`. That mix makes 23 correct preps read as
+    STALE-SKIN in every census — a hash-BASIS defect, not design drift, and the
+    fix is to state the raw sha (see scripts/fix-sha-basis.py).
+    """
+    size, sha = recorded_identity(txt, url)
+    if size is None and sha is None:
+        return None, None
+    raw = body.encode("utf-8", "replace")
+    if sha:
+        if hashlib.sha256(raw).hexdigest().startswith(sha[:10]):
+            return ("ok" if size is None or size == len(raw) else "changed"), "raw"
+        lf = NEWLINE_RX.sub("\n", body).encode("utf-8", "replace")
+        if hashlib.sha256(lf).hexdigest().startswith(sha[:10]):
+            return "basis", "lf"
+        return "changed", None
+    if size != len(raw):
+        return "changed", None
+    return "ok", None
+
+
 def identity_changed(txt: str, url: str, body: str):
     """True / False / None — does the cited sheet still match its recorded hash?
 
     `None` means the prep recorded no size or sha256 beside the citation, so the
-    question cannot be asked (IDENTITY-UNRECORDED, a note).
+    question cannot be asked (IDENTITY-UNRECORDED, a note). A hash that only
+    reproduces on a different basis is NOT drift (`identity_state` -> "basis");
+    it is reported separately so the basis can be fixed rather than the design
+    re-measured. The controls' GATE cases patch THIS function to disable the
+    guard, so `audit_spec` must keep calling it.
     """
-    size, sha = recorded_identity(txt, url)
-    if size is None and sha is None:
+    state, _ = identity_state(txt, url, body)
+    if state is None:
         return None
-    raw = body.encode("utf-8", "replace")
-    if size is not None and size != len(raw):
-        return True
-    if sha and not hashlib.sha256(raw).hexdigest().startswith(sha[:10]):
-        return True
-    return False
+    return state == "changed"
 
 
 def sheet_key(url, demo=None):
@@ -570,7 +613,7 @@ def audit_spec(f, root, path):
                 for u, _ in live}
     # Is the cited sheet still the file the cell was measured from?  The spec
     # records its size + sha256, so this is a byte comparison, not a guess.
-    changed, unrecorded, confirmed = [], [], False
+    changed, unrecorded, confirmed, basis = [], [], False, []
     for u, body in named:
         b = os.path.basename(u.split("?")[0])
         if VENDOR_RX.search(b):
@@ -581,7 +624,9 @@ def audit_spec(f, root, path):
         elif st:
             changed.append(b)
         else:
-            confirmed = True                     # byte-identical to its record
+            confirmed = True                     # the file the cell was measured from
+            if identity_state(txt, u, body)[1] == "lf":
+                basis.append(b)
     stale = bool(changed)
     # The host's v3 skins (vendor bundles, `?v=3.x`) are a REBUILT design, not
     # the sheet the cell was measured from.  Without a matching recorded
@@ -617,6 +662,12 @@ def audit_spec(f, root, path):
                                  str(rec["demo"])[:60],
                                  ", ".join("%s%s" % (b, live_ver.get(b, ""))
                                            for b in sorted(set(changed)))[:60])))
+    elif basis:
+        rec["notes"].append(("SHA-BASIS-LF", name, 0, "-",
+                             ", ".join(sorted(set(basis)))[:70],
+                             "recorded sha256 reproduces only after newline "
+                             "normalisation: the bytes were read in text mode, the "
+                             "size from the wire — fix the basis, not the design"))
     elif unrecorded:
         rec["notes"].append(("IDENTITY-UNRECORDED", name, 0, "-",
                              ", ".join(sorted(set(unrecorded)))[:70],
@@ -681,6 +732,10 @@ BUCKET_DOC = {
                   "declarations), so a different count is not a different truth",
     "STALE-SKIN": "the sheet the cell cites no longer matches the size/sha256 the prep "
                   "recorded beside it: the design moved after the measurement",
+    "SHA-BASIS-LF": "the recorded sha256 reproduces only after universal-newline "
+                    "normalisation (the bytes were hashed from a TEXT-mode read while the "
+                    "size came from the wire): the file is unchanged and the record is on "
+                    "the wrong basis — `fix-sha-basis.py`, not a re-measure",
     "REBUILT-SKIN": "the demo now serves a v3 rebuild (vendor bundles, `?v=3.x`) and the "
                     "cell records no identity for its sheet, so the claim cannot be "
                     "re-read at all — a re-measure queue, never a dismissal",
@@ -702,7 +757,7 @@ def render_md(recs, flags, notes, counts) -> str:
     L = ["# Evidence cells — the numeric claims in prep token tables", "",
          "```sh",
          "python3 scripts/verify-evidence-cells.py --md docs/evidence-cells.md",
-         "python3 scripts/verify-evidence-cells-controls.py   # 39/39 (11 GATE)",
+         "python3 scripts/verify-evidence-cells-controls.py   # 44/44 (13 GATE)",
          "```", "",
          "Generated by `scripts/verify-evidence-cells.py` (read-only; fetches the",
          "cited stylesheets once and caches them under `/tmp/evidence-cells`).", "",
@@ -731,6 +786,15 @@ def render_md(recs, flags, notes, counts) -> str:
          "  URLs) *and* the normalised path key (`css/style.css` and `style.min.css`",
          "  are one design sheet in two forms). Counting per URL doubled every colour",
          "  of 324 rows in 71 preps.",
+         "* **Identity binding** — a recorded size/sha belongs to the basename it sits",
+         "  beside, bounded by a path delimiter: `styles.css` is a SUBSTRING of",
+         "  `main_styles.css`, and an unbounded match made a 1,440 B icon plugin compare",
+         "  against the theme sheet's 26,362 B on the line above (blitz).",
+         "* **Hash basis** — the recorded sha256 is compared on the bytes as served. A",
+         "  record that reproduces only after universal-newline normalisation was hashed",
+         "  from a TEXT-mode read (`\r\n` -> `\n`) while its size came from the wire: the",
+         "  file is unchanged, so it is `SHA-BASIS-LF` (fix the record, see",
+         "  `scripts/fix-sha-basis.py`) and never design drift.",
          "* **Unreadable skin** — a rebuilt `?v=3.x` demo, or a sheet whose recorded",
          "  size/sha no longer matches, cannot answer *what the design paints*: those",
          "  claims are notes, not flags. The page identity on the Purpose line",

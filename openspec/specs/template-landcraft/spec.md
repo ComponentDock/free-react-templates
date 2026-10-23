@@ -18,7 +18,7 @@ Landcraft is a landscaping company landing page template. It recreates the Color
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/martxa/ (HTTP 200, 24,981 B, fetched 2026-10-23) and its theme stylesheet `theme/martxa/style.css` (16,086 B, sha256 `1c3381e9a070…`).
+https://preview.colorlib.com/theme/martxa/ (HTTP 200, 24,981 B, fetched 2026-10-23) and its theme stylesheet `theme/martxa/style.css` (16,086 B, sha256 `9c2b80c9b598…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

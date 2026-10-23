@@ -16,7 +16,7 @@ A Digital Agency template with category tiles, newsletter subscription and conta
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/pixel/ (HTTP 200, 22,638 B, fetched 2026-10-23) and its theme stylesheet `theme/pixel/style.css` (53,692 B, sha256 `650d45c3110a…`).
+https://preview.colorlib.com/theme/pixel/ (HTTP 200, 22,638 B, fetched 2026-10-23) and its theme stylesheet `theme/pixel/style.css` (53,692 B, sha256 `6b348799afdb…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

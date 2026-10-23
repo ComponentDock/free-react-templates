@@ -15,7 +15,7 @@ TypeScript.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/medcare/ (HTTP 200, 38,967 B, fetched 2026-10-23) and its theme stylesheet `theme/medcare/css/style.css` (74,492 B, sha256 `66bc4af972dd…`).
+https://preview.colorlib.com/theme/medcare/ (HTTP 200, 38,967 B, fetched 2026-10-23) and its theme stylesheet `theme/medcare/css/style.css` (74,492 B, sha256 `0e93a18437ef…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

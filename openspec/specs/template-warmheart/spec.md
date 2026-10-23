@@ -14,7 +14,7 @@ A Nonprofit Charity template with hero section with stats, welcome section with 
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/kindity/ (HTTP 200, 34,444 B, fetched 2026-10-23) and its theme stylesheet `theme/kindity/css/style.css` (71,765 B, sha256 `dd91e6ce5db2…`).
+https://preview.colorlib.com/theme/kindity/ (HTTP 200, 34,444 B, fetched 2026-10-23) and its theme stylesheet `theme/kindity/css/style.css` (71,765 B, sha256 `98db8df5c432…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

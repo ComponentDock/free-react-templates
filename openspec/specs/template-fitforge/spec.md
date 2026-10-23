@@ -14,7 +14,7 @@ A crossfit/gym landing page with hero, features, subscription, portfolio, testim
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/crossfit/ (HTTP 200, 23,593 B, fetched 2026-10-23) and its theme stylesheet `theme/crossfit/styles/main_styles.css` (18,035 B, sha256 `ba1271e4a52f…`).
+https://preview.colorlib.com/theme/crossfit/ (HTTP 200, 23,593 B, fetched 2026-10-23) and its theme stylesheet `theme/crossfit/styles/main_styles.css` (18,035 B, sha256 `7ee5f9e5f29a…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

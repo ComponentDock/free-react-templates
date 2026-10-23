@@ -11,7 +11,7 @@ Byline is a free React blog and magazine template that recreates the ColorLib Ni
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/nikki/ (HTTP 200, 37,459 B, fetched 2026-10-23) and its theme stylesheet `theme/nikki/style.css` (50,037 B, sha256 `7ac982cfad07…`).
+https://preview.colorlib.com/theme/nikki/ (HTTP 200, 37,459 B, fetched 2026-10-23) and its theme stylesheet `theme/nikki/style.css` (50,037 B, sha256 `4ce08b1b780c…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

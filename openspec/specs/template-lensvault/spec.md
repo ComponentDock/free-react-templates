@@ -18,7 +18,7 @@ LensVault is a photography portfolio website template featuring a sticky navigat
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/bitmap/ (HTTP 200, 20,325 B, fetched 2026-10-23) and its theme stylesheet `theme/bitmap/css/style.css` (61,803 B, sha256 `b3ba86067d90…`).
+https://preview.colorlib.com/theme/bitmap/ (HTTP 200, 20,325 B, fetched 2026-10-23) and its theme stylesheet `theme/bitmap/css/style.css` (61,803 B, sha256 `33e9e38b5237…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

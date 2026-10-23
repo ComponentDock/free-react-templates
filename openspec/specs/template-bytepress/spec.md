@@ -10,7 +10,7 @@ BytePress is a tech magazine and blog template featuring a dark hero with slider
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/techmag/ (HTTP 200, 34,043 B, fetched 2026-10-23) and its theme stylesheet `theme/techmag/styles/main_styles.css` (32,183 B, sha256 `4c35121486af…`).
+https://preview.colorlib.com/theme/techmag/ (HTTP 200, 34,043 B, fetched 2026-10-23) and its theme stylesheet `theme/techmag/styles/main_styles.css` (32,183 B, sha256 `09b883983617…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

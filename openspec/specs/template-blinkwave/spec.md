@@ -18,7 +18,7 @@ testimonials, blog, and footer sections.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/fastnet/ (HTTP 200, 32,851 B, fetched 2026-10-23) and its theme stylesheet `theme/fastnet/assets/css/style.css` (176,614 B, sha256 `9ce886e6b446…`).
+https://preview.colorlib.com/theme/fastnet/ (HTTP 200, 32,851 B, fetched 2026-10-23) and its theme stylesheet `theme/fastnet/assets/css/style.css` (176,614 B, sha256 `8bb10d0039be…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -15,7 +15,7 @@ call-to-action banner, and a dark-purple footer.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/expo/ (HTTP 200, 24,853 B, fetched 2026-10-23) and its theme stylesheet `theme/expo/assets/css/style.css` (182,950 B, sha256 `6666a524022f…`).
+https://preview.colorlib.com/theme/expo/ (HTTP 200, 24,853 B, fetched 2026-10-23) and its theme stylesheet `theme/expo/assets/css/style.css` (182,950 B, sha256 `7853eb7de51f…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -22,7 +22,7 @@ placeholder images, and the Component Dock brand.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/marimar/ (HTTP 200, 25,191 B, fetched 2026-10-23) and its theme stylesheet `theme/marimar/styles/main_styles.css` (21,735 B, sha256 `a218555c7f32…`).
+https://preview.colorlib.com/theme/marimar/ (HTTP 200, 25,191 B, fetched 2026-10-23) and its theme stylesheet `theme/marimar/styles/main_styles.css` (21,735 B, sha256 `1ff6709c4541…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

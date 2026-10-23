@@ -10,7 +10,7 @@ Recreation of ColorLib "Busicol" — a business consulting landing page with her
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/busicol/ (HTTP 200, 33,308 B, fetched 2026-10-23) and its theme stylesheet `theme/busicol/css/style.css` (157,866 B, sha256 `94e807d5f554…`).
+https://preview.colorlib.com/theme/busicol/ (HTTP 200, 33,308 B, fetched 2026-10-23) and its theme stylesheet `theme/busicol/css/style.css` (157,866 B, sha256 `63f7f7c4c4fe…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

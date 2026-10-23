@@ -11,6 +11,7 @@ Run: python3 verify-evidence-cells-controls.py          # expects 39/39 (11 GATE
 """
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import os
 import re
@@ -503,6 +504,98 @@ def c28_confirmed_identity_still_flags():
     return buckets(rec)[0] == ["COLOUR-ABSENT"]
 
 
+MAIN_BODY = (".x{color:#123456}" * 1500)
+MAIN_SHA = hashlib.sha256(MAIN_BODY.encode()).hexdigest()[:12]
+
+
+def _substring_case(mod=None):
+    """(rec) for a prep that cites `styles/styles.css` under a `main_styles.css` line."""
+    plugin = ".icon{color:#00ff00}" * 60            # 1,440 B icon font
+    txt = ("| Accent | `#123456` | 3 declarations — `.card:hover` |\n\n"
+           "Sheet `styles/main_styles.css` — HTTP 200, %s B, "
+           "sha256 `%s…`.\n"
+           "Plugin `styles/styles.css` is an icon font.\n" % (f"{len(MAIN_BODY):,}", MAIN_SHA))
+    pages = {DEMO + "styles/main_styles.css": MAIN_BODY.encode(),
+             DEMO + "styles/styles.css": plugin.encode()}
+    rec, *_ = run(txt, mod=mod, pages=pages)
+    return rec
+
+
+def c29_substring_basename() -> bool:
+    """A cited `styles.css` must not borrow `main_styles.css`'s identity.
+
+    `styles.css` is a SUBSTRING of `main_styles.css`; a bare `find()` read the
+    theme sheet's numbers as the icon plugin's and reported the plugin stale
+    (blitz, in every census from -24a).  Correct reading: nothing is recorded
+    beside the cited plugin, so the question cannot be asked.
+    """
+    fl, nt = buckets(_substring_case())
+    return fl == [] and "STALE-SKIN" not in nt and "IDENTITY-UNRECORDED" in nt
+
+
+def c29b_gate_substring_basename() -> bool:
+    """GATE: with the unbounded substring match back, the same prep reads stale."""
+    mod = load()
+
+    def bare(txt, url):
+        base = os.path.basename(url.split("?")[0])
+        lines = txt.splitlines()
+        for i, ln in enumerate(lines):
+            pos = ln.find(base)
+            if pos < 0:
+                continue
+            tail = ln[pos + len(base):] + " " + (lines[i + 1] if i + 1 < len(lines) else "")
+            mb = mod.BYTES_RX.search(tail)
+            ms = mod.SHA_RX.search(tail)
+            if mb or ms:
+                return (int(mb.group(1).replace(",", "")) if mb else None,
+                        ms.group(1) if ms else None)
+        return None, None
+
+    mod.recorded_identity = bare
+    return "STALE-SKIN" in buckets(_substring_case(mod))[1]
+
+
+def c30_lf_basis_is_not_drift() -> bool:
+    """A sha recorded from a TEXT-mode read is a basis defect, not design drift.
+
+    Size and content agree (the bytes are the same file); only the newline
+    normalisation differs.  Reported as SHA-BASIS-LF so the record can be fixed
+    instead of the design re-measured.
+    """
+    body = b"/* c */\r\n" + b".card:hover{color:#123456}\r\n" * 60
+    lf = hashlib.sha256(body.replace(b"\r\n", b"\n")).hexdigest()
+    txt = ("| Accent | `#123456` | 3 declarations — `.card:hover` |\n\n"
+           "Sheet `css/plain.css` (%d B, sha256 `%s…`).\n" % (len(body), lf[:12]))
+    rec, *_ = run(txt, pages={DEMO + "css/plain.css": body})
+    fl, nt = buckets(rec)
+    return fl == [] and "SHA-BASIS-LF" in nt and "STALE-SKIN" not in nt
+
+
+def c30b_gate_lf_basis() -> bool:
+    """GATE: without the basis probe the same prep reads STALE-SKIN."""
+    mod = load()
+    mod.NEWLINE_RX = re.compile(r"\0")
+    body = b"/* c */\r\n" + b".card:hover{color:#123456}\r\n" * 60
+    lf = hashlib.sha256(body.replace(b"\r\n", b"\n")).hexdigest()
+    txt = ("| Accent | `#123456` | 3 declarations — `.card:hover` |\n\n"
+           "Sheet `css/plain.css` (%d B, sha256 `%s…`).\n" % (len(body), lf[:12]))
+    rec, *_ = run(txt, mod=mod, pages={DEMO + "css/plain.css": body})
+    return "STALE-SKIN" in buckets(rec)[1] and "SHA-BASIS-LF" not in buckets(rec)[1]
+
+
+def c31_lf_basis_does_not_hide_real_drift() -> bool:
+    """A sheet that really changed keeps STALE-SKIN (the basis probe is not a blanket pass)."""
+    body = b".card:hover{color:#123456}\r\n" * 60
+    lf = hashlib.sha256(body.replace(b"\r\n", b"\n")).hexdigest()
+    txt = ("| Accent | `#123456` | 3 declarations — `.card:hover` |\n\n"
+           "Sheet `css/plain.css` (%d B, sha256 `%s…`).\n" % (len(body), lf[:12]))
+    moved = body + b".appended{color:#123456}\r\n"
+    rec, *_ = run(txt, pages={DEMO + "css/plain.css": moved})
+    fl, nt = buckets(rec)
+    return fl == [] and "STALE-SKIN" in nt and "SHA-BASIS-LF" not in nt
+
+
 def collect():
     case("c01 count matches -> no note", c01_match)
     case("c02 count differs -> COUNT-SKEW note", c02_skew)
@@ -543,6 +636,11 @@ def collect():
     case("c27 rebuilt skin is a note", c27_rebuilt_skin)
     case("c27b GATE rebuild guard", c27b_gate_rebuilt, gate=True)
     case("c28 confirmed sheet still flags", c28_confirmed_identity_still_flags)
+    case("c29 substring basename borrows no identity", c29_substring_basename)
+    case("c29b GATE basename boundary", c29b_gate_substring_basename, gate=True)
+    case("c30 LF hash basis is a note, not drift", c30_lf_basis_is_not_drift)
+    case("c30b GATE LF basis probe", c30b_gate_lf_basis, gate=True)
+    case("c31 LF basis does not hide real drift", c31_lf_basis_does_not_hide_real_drift)
 
 
 def main():

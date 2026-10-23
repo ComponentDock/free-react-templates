@@ -19,7 +19,7 @@ footer with newsletter signup.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/archirio/ (HTTP 200, 18,518 B, fetched 2026-10-23) and its theme stylesheet `theme/archirio/style.css` (8,320 B, sha256 `115f1f765717…`).
+https://preview.colorlib.com/theme/archirio/ (HTTP 200, 18,518 B, fetched 2026-10-23) and its theme stylesheet `theme/archirio/style.css` (8,320 B, sha256 `fbe59f985dd7…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -15,7 +15,7 @@ A medical/healthcare center website template. Recreation of ColorLib "Caremed".
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/caremed/ (HTTP 200, 22,131 B, fetched 2026-10-23) and its theme stylesheet `theme/caremed/styles/main_styles.css` (20,801 B, sha256 `6c4a4fe4cb32…`).
+https://preview.colorlib.com/theme/caremed/ (HTTP 200, 22,131 B, fetched 2026-10-23) and its theme stylesheet `theme/caremed/styles/main_styles.css` (20,801 B, sha256 `d61d124d3bb3…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

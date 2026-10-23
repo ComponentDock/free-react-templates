@@ -10,7 +10,7 @@ Lineup is an event calendar and concert listing landing page template. It provid
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/agenda/ (HTTP 200, 35,072 B, fetched 2026-10-23) and its theme stylesheet `theme/agenda/style.css` (46,724 B, sha256 `c5775168bf1a…`).
+https://preview.colorlib.com/theme/agenda/ (HTTP 200, 35,072 B, fetched 2026-10-23) and its theme stylesheet `theme/agenda/style.css` (46,724 B, sha256 `ec1837ae6adb…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -17,7 +17,7 @@ Dwelling is a one-page real estate landing page template, recreating the ColorLi
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/aler/ (HTTP 200, 65,917 B, fetched 2026-10-23) and its theme stylesheet `theme/aler/css/style.css` (84,143 B, sha256 `a37dafa8771d…`).
+https://preview.colorlib.com/theme/aler/ (HTTP 200, 65,917 B, fetched 2026-10-23) and its theme stylesheet `theme/aler/css/style.css` (84,143 B, sha256 `6ff7c5cbee5b…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

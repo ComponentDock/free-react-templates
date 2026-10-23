@@ -8,7 +8,7 @@ Recreation of ColorLib "Cryptian" (https://colorlib.com/wp/template/cryptian/) a
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/cryptian/ (HTTP 200, 61,050 B, fetched 2026-10-23) and its theme stylesheet `theme/cryptian/style.css` (30,745 B, sha256 `187300c15278…`).
+https://preview.colorlib.com/theme/cryptian/ (HTTP 200, 61,050 B, fetched 2026-10-23) and its theme stylesheet `theme/cryptian/style.css` (30,745 B, sha256 `d6dbebffefdb…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

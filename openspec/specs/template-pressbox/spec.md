@@ -10,7 +10,7 @@ Pressbox is a news and magazine website template built with React 19, Tailwind C
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/magnews/ (HTTP 200, 62,579 B, fetched 2026-10-23) and its theme stylesheet `theme/magnews/css/style.css` (24,804 B, sha256 `18697d1ddfec…`).
+https://preview.colorlib.com/theme/magnews/ (HTTP 200, 62,579 B, fetched 2026-10-23) and its theme stylesheet `theme/magnews/css/style.css` (24,804 B, sha256 `e48bd57bd145…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

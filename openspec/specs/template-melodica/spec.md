@@ -13,7 +13,7 @@ and newsletter signup.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/music/ (HTTP 200, 24,529 B, fetched 2026-10-23) and its theme stylesheet `theme/music/styles/main_styles.css` (32,427 B, sha256 `bfa2bef36079…`).
+https://preview.colorlib.com/theme/music/ (HTTP 200, 24,529 B, fetched 2026-10-23) and its theme stylesheet `theme/music/styles/main_styles.css` (32,427 B, sha256 `beba86a028d7…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

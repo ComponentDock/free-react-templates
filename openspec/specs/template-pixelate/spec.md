@@ -12,7 +12,7 @@ Pixelate is a personal portfolio template for digital product designers. It show
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/calvin/ (HTTP 200, 30,844 B, fetched 2026-10-23) and its theme stylesheet `theme/calvin/assets/css/style.css` (91,814 B, sha256 `33e9d1f46869…`).
+https://preview.colorlib.com/theme/calvin/ (HTTP 200, 30,844 B, fetched 2026-10-23) and its theme stylesheet `theme/calvin/assets/css/style.css` (91,814 B, sha256 `4ba2afe8e1d1…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

@@ -13,7 +13,7 @@ A real estate agency website template. Recreation of ColorLib **Myhome**.
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/myhome/ (HTTP 200, 30,185 B, fetched 2026-10-23) and its theme stylesheet `theme/myhome/styles/main_styles.css` (26,355 B, sha256 `0897f952df52…`).
+https://preview.colorlib.com/theme/myhome/ (HTTP 200, 30,185 B, fetched 2026-10-23) and its theme stylesheet `theme/myhome/styles/main_styles.css` (26,355 B, sha256 `c1006797b769…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |

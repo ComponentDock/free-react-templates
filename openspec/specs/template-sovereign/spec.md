@@ -14,7 +14,7 @@ Sovereign is a modern hotel booking website with a booking-form hero, room types
 
 <!-- design-tokens-backfill:2026-10-23 -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/thepalatin/ (HTTP 200, 28,927 B, fetched 2026-10-23) and its theme stylesheet `theme/thepalatin/style.css` (47,277 B, sha256 `f16031d729b8…`).
+https://preview.colorlib.com/theme/thepalatin/ (HTTP 200, 28,927 B, fetched 2026-10-23) and its theme stylesheet `theme/thepalatin/style.css` (47,277 B, sha256 `a7d49a832e0e…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |
