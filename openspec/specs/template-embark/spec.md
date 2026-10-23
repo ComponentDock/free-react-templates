@@ -1,8 +1,8 @@
-# Template: Launch (App Landing Page)
+# Template: Embark (App Landing Page)
 
 ## Purpose
 
-Launch is a single-page product landing template in the free-react-templates
+Embark is a single-page product landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Launch"
 website template design (see TEMPLATES.md), built under a different name with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -37,26 +37,32 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Font: **"Nunito"** (Google Fonts, 400/700).
   - Rounded buttons (radius 30px pills on CTAs, 12px cards).
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/launch-<n>/<w>/<h>`); icons → lucide-react (brand
+  (`picsum.photos/seed/embark-<n>/<w>/<h>`); icons → lucide-react (brand
   icons via inline SVG); auth/contact forms prevent default (no backend); no
   assets copied.
 
-Launch lives in `apps/launch` and uses shared components from `packages/ui`
+- **Recreation name:** **Embark** (start-of-journey evocation for a product
+  launch; no collision with any existing app). Folder `apps/embark`, package
+  `@free-react-templates/embark`. The app first shipped as `apps/launch`,
+  which reused the source design's name (AGENTS.md rule 5 violation) and was
+  renamed in the Launch → Embark PR.
+
+Embark lives in `apps/embark` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Launch.",
+The system SHALL render a top navigation bar with the site name "Embark.",
 anchor links to the page's sections, a "Sign in" button, and a dark-mode
 toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Launch page is rendered
+- **GIVEN** the Embark page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Launch." and links to Home, Features, Pricing, Testimonials, About, and Contact
+- **THEN** the navbar SHALL show the site name "Embark." and links to Home, Features, Pricing, Testimonials, About, and Contact
 - **AND** the navbar SHALL show a "Sign in" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -186,10 +192,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Launch app is rendered
+- **GIVEN** the Embark app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Launch — App Landing Template"
+- **AND** the document title SHALL be "Embark — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -209,7 +215,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/launch/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/embark/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -218,7 +224,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/launch/` is inspected
+- **WHEN** every non-test file under `apps/embark/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -226,7 +232,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Launch." and links to Home, Features, Pricing, Testimonials, About, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Embark." and links to Home, Features, Pricing, Testimonials, About, and Contact
 - [x] Pricing section — it SHALL contain a heading "Simple, Transparent Pricing"
 - [x] Features section — it SHALL contain a heading "Advantage of using our products"
 - [x] Testimonials section — it SHALL contain a heading "Our Customers Feedback"

@@ -28,8 +28,8 @@ export function About() {
               at the coast of the Semantics, a large language ocean.
             </p>
             <img
-              src="https://picsum.photos/seed/launch-about/640/480"
-              alt="Launch about preview"
+              src="https://picsum.photos/seed/embark-about/640/480"
+              alt="Embark about preview"
               className="mt-8 w-full max-w-md rounded-2xl shadow-xl"
             />
           </div>
@@ -39,7 +39,7 @@ export function About() {
               {news.map((item, index) => (
                 <li key={item.date} className="flex gap-4">
                   <img
-                    src={`https://picsum.photos/seed/launch-news-${index}/120/90`}
+                    src={`https://picsum.photos/seed/embark-news-${index}/120/90`}
                     alt=""
                     className="h-20 w-28 shrink-0 rounded-xl object-cover"
                   />

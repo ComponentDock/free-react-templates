@@ -27,7 +27,7 @@ export function Navbar({ onSignIn }: { onSignIn: () => void }) {
           href="#home"
           className="font-display text-2xl font-bold tracking-wide text-primary-600 dark:text-primary-400"
         >
-          Launch.
+          Embark.
         </a>
 
         <div className="flex items-center gap-3">

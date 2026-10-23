@@ -13,9 +13,9 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Gaas → Upleap
+## State after Launch → Embark
 
-8 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+7 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
@@ -29,11 +29,11 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829),
 `dogger` → `barkly` (#1830), `doglife` → `houndly` (#1831),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
-`favison` → `upswing` (#1834), `gaas` → `upleap` (#1835).
+`favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
+`launch` → `embark` (#TBD).
 
 | app                 | source design  |
 | ------------------- | -------------- |
-| apps/launch         | Launch         |
 | apps/leopet         | Leopet         |
 | apps/massive        | Massive        |
 | apps/medico         | Medico         |

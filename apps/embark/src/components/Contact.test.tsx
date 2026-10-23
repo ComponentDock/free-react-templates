@@ -27,7 +27,7 @@ describe('Contact', () => {
     await user.type(screen.getByLabelText('First name'), 'Ada')
     await user.type(screen.getByLabelText('Last name'), 'Lovelace')
     await user.type(screen.getByLabelText('Email address'), 'ada@example.com')
-    await user.type(screen.getByLabelText('Message'), 'Hello from Launch!')
+    await user.type(screen.getByLabelText('Message'), 'Hello from Embark!')
     await user.click(screen.getByRole('button', { name: 'Send Message' }))
 
     expect(screen.getByRole('button', { name: 'Send Message' })).toBeInTheDocument()

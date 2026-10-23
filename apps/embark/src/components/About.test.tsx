@@ -10,6 +10,6 @@ describe('About', () => {
     expect(
       screen.getAllByRole('heading', { level: 3, name: /Far far away behind the word mountains/ }),
     ).toHaveLength(3)
-    expect(screen.getByRole('img', { name: /Launch about preview/ })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: /Embark about preview/ })).toBeInTheDocument()
   })
 })

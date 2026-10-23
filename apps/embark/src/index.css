@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Launch brand colors — measured from the reference stylesheet
+  /* Embark brand colors — measured from the reference stylesheet
      stylesheet:
      primary blue #407BFF (buttons/accents, gradients to #0d58ff), dark navy
      #16213e (footer/dark sections), text #212529, muted #6c757d. */
