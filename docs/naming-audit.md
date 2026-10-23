@@ -19,6 +19,8 @@ node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
+In flight: `farmie` → `harvest`.
+
 Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815), `appco` →
 `flowly` (#1816), `applab` → `velocity` (#1817), `appli` → `knotly` (#1818),
