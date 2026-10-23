@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Ecobit — App Landing Template'
+    document.title = 'Nodely — App Landing Template'
   }, [])
 
   return (

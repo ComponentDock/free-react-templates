@@ -15,9 +15,9 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <h2 className="text-2xl font-bold text-ink dark:text-white">About Ecobit</h2>
+            <h2 className="text-2xl font-bold text-ink dark:text-white">About Nodely</h2>
             <p className="mt-4 text-sm leading-relaxed text-body dark:text-gray-400">
-              Ecobit helps teams build networks for people — simple tools, honest pricing, and
+              Nodely helps teams build networks for people — simple tools, honest pricing, and
               support that never sleeps.
             </p>
             <div className="mt-6">
@@ -59,9 +59,9 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-200 pt-8 text-sm text-gray-500 sm:flex-row sm:justify-between dark:border-gray-800">
-          <p>Copyright © {new Date().getFullYear()} Ecobit. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Nodely. All rights reserved.</p>
           <p>
-            Made with <span aria-hidden="true">♥</span> by Ecobit
+            Made with <span aria-hidden="true">♥</span> by Nodely
           </p>
         </div>
       </div>

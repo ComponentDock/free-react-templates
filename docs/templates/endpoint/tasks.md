@@ -80,7 +80,7 @@ preview host.
       requirements + scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
 - [ ] Create `apps/endpoint` (copy the section-rich landing app pattern —
-      ecobit; rename package to `@free-react-templates/endpoint`).
+      nodely; rename package to `@free-react-templates/endpoint`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Per-app gate: `bash scripts/verify-app.sh endpoint` (typecheck →

@@ -1,7 +1,7 @@
-# Ecobit (Colorlib Ecobit) — Tasks & Design Notes
+# Nodely (ColorLib Ecobit) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-ecobit`.
+> Prep artifacts prepared on `main` while the Tears PR (#5) awaited review.
+> Shipped as `apps/nodely`; the name/dir split below is provenance only.
 
 ## Design notes (replication findings)
 
@@ -14,7 +14,7 @@
   (`#f9f9ff`, `#f0e9ff`) sections, hero with phone mockup, 3 feature tiles,
   2 splits, pricing, reviews, and subscribe band.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "ecobit" + Home, features, pricing, Blog, pages,
+  1. Navbar: logo "nodely" + Home, features, pricing, Blog, pages,
      Elements, Contact + **sing up**.
   2. Hero (`banner_part`): h1 "Building Networks For People" + blurb +
      **try for free**.
@@ -37,11 +37,11 @@
   - Fonts: **"Barlow Semi Condensed"** + **"Rajdhani"** (Google Fonts
     `<link>`).
   - Orange buttons with white text.
-- **Recreation name:** Ecobit (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/ecobit`, package
-  `@free-react-templates/ecobit`.
+- **Recreation name:** **Nodely** — a new, original name (the source name is
+  provenance only, never the app identity). App folder `apps/nodely`, package
+  `@free-react-templates/nodely`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/ecobit-<n>/<w>/<h>`); lucide-react icons; Barlow
+  (`picsum.photos/seed/nodely-<n>/<w>/<h>`); lucide-react icons; Barlow
   Semi Condensed + Rajdhani via Google Fonts; forms prevent default (no
   backend); orange primary in `@theme`; repo-standard Navbar (dark-mode
   toggle) + Footer chrome.
@@ -49,16 +49,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-ecobit/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-nodely/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/ecobit` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/ecobit`).
+- [x] Create `apps/nodely` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/nodely`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [x] Push `feat/template-ecobit`, open PR (source template, preview URL,
+- [x] Push `feat/template-nodely`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -71,8 +71,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/ecobit/` may name the source designer,
+- **Provenance ban.** No file under `apps/nodely/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/ecobit/public/CNAME` = `ecobit.free.componentdock.com`
-  and the package `homepage` = `https://ecobit.free.componentdock.com`.
+- **Deploy identity.** `apps/nodely/public/CNAME` = `nodely.free.componentdock.com`
+  and the package `homepage` = `https://nodely.free.componentdock.com`.

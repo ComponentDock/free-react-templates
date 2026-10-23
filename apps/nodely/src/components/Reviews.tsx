@@ -13,7 +13,7 @@ const reviews = [
     name: 'Olivia Bennett',
     role: 'Product Lead, Northwind',
     quote:
-      'Ecobit paid for itself in the first month. Our network grew faster and our team finally has one place to manage it all.',
+      'Nodely paid for itself in the first month. Our network grew faster and our team finally has one place to manage it all.',
   },
   {
     name: 'Daniel Reyes',

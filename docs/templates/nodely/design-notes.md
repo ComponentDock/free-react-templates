@@ -1,17 +1,17 @@
-# Ecobit — Design Notes
+# Nodely — Design Notes
 
 Reference: **Ecobit** — `https://colorlib.com/wp/template/ecobit/`  
 Live preview: `https://preview.colorlib.com/theme/ecobit/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/ecobit-free-template.jpg  
-Shipped: https://ecobit.free.componentdock.com
+Shipped: https://nodely.free.componentdock.com
 
-Ecobit is a single-page app/business landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Ecobit" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Nodely is a single-page app/business landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Ecobit" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Barlow Semi Condensed**, **Barlow Semi Condensed:wght@400;500;600;700**, **Rajdhani**
 
-## Design tokens (`apps/ecobit/src/index.css` `@theme`)
+## Design tokens (`apps/nodely/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -57,7 +57,7 @@ Fonts loaded by `index.html` (Google Fonts): **Barlow Semi Condensed**, **Barlow
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Ecobit", anchor links to the page's sections, a "Sign up" button, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Nodely", anchor links to the page's sections, a "Sign up" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and a "try for free" button.
@@ -101,8 +101,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/ecobit/` may name the source designer,
+- **Provenance ban.** No file under `apps/nodely/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/ecobit/public/CNAME` = `ecobit.free.componentdock.com`
-  and the package `homepage` = `https://ecobit.free.componentdock.com`.
+- **Deploy identity.** `apps/nodely/public/CNAME` = `nodely.free.componentdock.com`
+  and the package `homepage` = `https://nodely.free.componentdock.com`.
