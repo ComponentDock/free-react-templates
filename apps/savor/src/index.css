@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Savor brand palette — recreated from the ColorLib "Foodeiblog" template
-     (https://colorlib.com/wp/template/foodeiblog/), tokens extracted from the
-     live preview's css/style.css:
+  /* Savor brand palette — measured from the reference design;
+     tokens extracted from the reference stylesheet:
      - orange #f4952f (category labels/dates, link hovers, active nav
        underline, .site-btn background, subscribe button, hero label)
      - ink #111111 (headings, nav, load-more text) · body #444444

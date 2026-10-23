@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Savory brand palette — recreated from the ColorLib "Bueno" preview
+  /* Savory brand palette — measured from the reference design
      (style.css tokens): sage/pistachio brand #b0c364 (40 usages: preloader,
      buttons, tags, hovers), darker variant #a3b65a, nav links #404040,
      post meta #7a7a7a, trending panel bg #dadfe5, footer text #666666. */

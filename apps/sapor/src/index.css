@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Sapor brand palette — recreated from the ColorLib "Flavor 6" design
+  /* Sapor brand palette — measured from the reference design
      (red primary scale, Tailwind red hues). */
   --color-primary-50: #fef2f2;
   --color-primary-100: #fee2e2;

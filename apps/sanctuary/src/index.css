@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sanctuary brand palette — recreated from the ColorLib "Faithcommunity"
-     design (warm purple primary scale, gold accent for service times). */
+  /* Sanctuary brand palette — measured from the reference design (warm purple
+     primary scale, gold accent for service times). */
   --color-primary-50: #faf5ff;
   --color-primary-100: #f3e8ff;
   --color-primary-200: #e9d5ff;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sartorial brand palette — recreated from the ColorLib "Menztailor" design
+  /* Sartorial brand palette — measured from the reference design
      (css/style.css): gold #c6a16e accents/buttons, dark #0b1416 body-bg,
      headings #0b1c39, body text #96989a. */
   --color-brand: #c6a16e;
