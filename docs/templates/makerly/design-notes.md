@@ -1,17 +1,17 @@
-# Crafted — Design Notes
+# Makerly — Design Notes
 
-Reference: **Crafted** — `https://colorlib.com/wp/template/crafted/`  
+Reference: **Crafted** (recreation ships as *Makerly*) — `https://colorlib.com/wp/template/crafted/`  
 Live preview: `https://preview.colorlib.com/theme/crafted/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/crafted-free-template.jpg  
-Shipped: https://crafted.free.componentdock.com
+Shipped: https://makerly.free.componentdock.com
 
-Crafted is a single-page creative-agency landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Crafted" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Makerly is a single-page creative-agency landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Crafted" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Playfair Display**, **Playfair Display:wght@500;600;700**, **Roboto**
 
-## Design tokens (`apps/crafted/src/index.css` `@theme`)
+## Design tokens (`apps/makerly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ Fonts loaded by `index.html` (Google Fonts): **Playfair Display**, **Playfair Di
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Crafted", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Makerly", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and two call-to-action buttons.
@@ -100,8 +100,8 @@ The system SHALL render a footer with an about blurb, navigation links, a newsle
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/crafted/` may name the source designer,
+- **Provenance ban.** No file under `apps/makerly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/crafted/public/CNAME` = `crafted.free.componentdock.com`
-  and the package `homepage` = `https://crafted.free.componentdock.com`.
+- **Deploy identity.** `apps/makerly/public/CNAME` = `makerly.free.componentdock.com`
+  and the package `homepage` = `https://makerly.free.componentdock.com`.

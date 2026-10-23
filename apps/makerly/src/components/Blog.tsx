@@ -5,7 +5,7 @@ const posts = [
     date: '25 June, 2018',
     excerpt:
       'Computers have become ubiquitous in almost every facet of our lives. At work, at school, and even at home, screens shape how we spend our days.',
-    seed: 'crafted-blog-1',
+    seed: 'makerly-blog-1',
   },
   {
     title: 'Design Trends That Define The Next Decade',
@@ -13,7 +13,7 @@ const posts = [
     date: '25 June, 2018',
     excerpt:
       'Great design is invisible: it guides attention, builds trust, and makes complex ideas feel effortless. Here are the patterns we keep coming back to.',
-    seed: 'crafted-blog-2',
+    seed: 'makerly-blog-2',
   },
   {
     title: 'Building Products People Actually Use',
@@ -21,7 +21,7 @@ const posts = [
     date: '25 June, 2018',
     excerpt:
       'A successful launch is less about the technology and more about the rituals: research, iteration, and honest feedback loops from day one.',
-    seed: 'crafted-blog-3',
+    seed: 'makerly-blog-3',
   },
 ] as const
 

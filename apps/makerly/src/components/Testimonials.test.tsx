@@ -7,7 +7,7 @@ describe('Testimonials', () => {
   it('renders the first quote with its attribution', () => {
     render(<Testimonials />)
 
-    expect(screen.queryByText(/Crafted delivered beyond our expectations/)).not.toBeInTheDocument()
+    expect(screen.queryByText(/Makerly delivered beyond our expectations/)).not.toBeInTheDocument()
     const figure = screen.getByRole('figure', { name: 'Marvel Maison' })
     expect(figure.textContent).toMatch(/Chief Executive, Amazon/)
   })

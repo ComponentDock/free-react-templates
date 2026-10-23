@@ -1,10 +1,10 @@
 import { SocialLinks } from './SocialLinks'
 
 const members = [
-  { name: 'Randy Weaver', role: 'Senior Barrister at law', seed: 'crafted-team-1' },
-  { name: 'Marvel Maison', role: 'Chief Executive', seed: 'crafted-team-2' },
-  { name: 'Diana Cole', role: 'Art Director', seed: 'crafted-team-3' },
-  { name: 'Ethan Marsh', role: 'Lead Developer', seed: 'crafted-team-4' },
+  { name: 'Randy Weaver', role: 'Senior Barrister at law', seed: 'makerly-team-1' },
+  { name: 'Marvel Maison', role: 'Chief Executive', seed: 'makerly-team-2' },
+  { name: 'Diana Cole', role: 'Art Director', seed: 'makerly-team-3' },
+  { name: 'Ethan Marsh', role: 'Lead Developer', seed: 'makerly-team-4' },
 ] as const
 
 export function Team() {

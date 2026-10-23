@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-ink">
       <img
-        src="https://picsum.photos/seed/crafted-hero/1920/1080"
+        src="https://picsum.photos/seed/makerly-hero/1920/1080"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover opacity-30"
@@ -16,7 +16,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-4 py-28 text-center sm:px-6 sm:py-36">
         <h1 className="font-display text-4xl font-bold leading-tight text-white sm:text-6xl">
-          We Are Crafted.
+          We Are Makerly.
           <span className="mt-3 block text-2xl font-medium text-primary-300 sm:text-4xl">
             Design &amp; Development Service Provider.
           </span>

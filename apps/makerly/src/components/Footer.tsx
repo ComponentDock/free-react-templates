@@ -18,7 +18,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-3">
           <div>
-            <h2 className="font-display text-2xl font-bold text-white">About Crafted</h2>
+            <h2 className="font-display text-2xl font-bold text-white">About Makerly</h2>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
               The world has become so fast paced that people don't want to stand by reading a page
               of information; they would much rather look at a presentation and understand it.
@@ -78,9 +78,9 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} Crafted. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Makerly. All rights reserved.</p>
           <p>
-            This template is made with <span aria-hidden="true">♥</span> by Crafted
+            This template is made with <span aria-hidden="true">♥</span> by Makerly
           </p>
         </div>
       </div>

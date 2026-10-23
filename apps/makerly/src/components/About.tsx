@@ -11,13 +11,13 @@ export function About() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <img
-            src="https://picsum.photos/seed/crafted-about/720/520"
-            alt="The Crafted studio at work"
+            src="https://picsum.photos/seed/makerly-about/720/520"
+            alt="The Makerly studio at work"
             className="w-full rounded object-cover shadow-lg"
           />
           <div>
             <h2 className="font-display text-3xl font-bold text-ink dark:text-white sm:text-4xl">
-              We Are Crafted. Some Info About Us
+              We Are Makerly. Some Info About Us
             </h2>
             <p className="mt-5 leading-relaxed text-body dark:text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
