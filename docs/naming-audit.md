@@ -55,7 +55,10 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
 3. `apps/<new>/public/CNAME` → `<new>.free.componentdock.com`.
 4. Brand copy inside the app: wordmark, footer heading, copyright,
    `document.title`, meta description, element ids and picsum seeds. Update the
-   tests that assert them.
+   tests that assert them. **The wordmark is often split markup**
+   (`dog<span class="text-brand">ger</span>`), so a plain `dogger`→`barkly`
+   string swap misses it — fix both halves, then the navbar test's accessible
+   name (`getByRole('link', { name: 'barkly' })`).
 5. `git mv openspec/specs/template-<old> openspec/specs/template-<new>` and
    `git mv docs/templates/<old> docs/templates/<new>`; keep
    `recreation of ColorLib "<source>"` provenance, rewrite naming notes.
@@ -69,7 +72,10 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
    The post-merge deploy may abort with `Aborted - Rate limited. (account). Verify
    email or try again in 10 hours.` (Surge free-tier quota). That is not a rename
    defect: the `verify` step in the same job passes and the nightly fleet audit
-   re-deploys the new host. `surge` is not installed on the runner, so the old
+   re-deploys the new host. Queue it explicitly so the repair job knows about it:
+   `printf '<new>\n' >> /tmp/surge-pending.txt && sort -u /tmp/surge-pending.txt -o /tmp/surge-pending.txt`
+   (`redeploy-resume.sh`, hourly, publishes it once the cooldown/edge clears).
+   `surge` is not installed on the runner, so the old
    hostname cannot be torn down locally — leave it.
 
 
