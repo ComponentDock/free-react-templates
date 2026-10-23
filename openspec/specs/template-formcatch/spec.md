@@ -33,6 +33,68 @@ target.
 live sheets do not paint (a hover/state shade may be inline or JS-driven;
 verify before building from it): `#7ec8e3`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Contact Form 03** — https://colorlib.com/wp/template/contact-form-03/
+- **Preview**: `https://preview.colorlib.com/theme/bootstrap/contact-form-03/` (the slug-only `/theme/contact-form-03/` path 404s; the `bootstrap/` path is the live demo) — HTTP 200 on 2026-10-23, 14,195 bytes, title `Contact Form 03`.
+- **Stylesheet measured**: `css/style.css?v=3656ea60` — 16,560 bytes, sha256 `9f28e79f2e1f…`. No second sheet, no inline `<style>`, no Google-Fonts `<link>` in the head.
+- **Measured how**: hex-literal census of the sheet (count = literal occurrences), then the winning rule per selector (the sheet is Bootstrap-4 base + a slim `cl-`-prefixed override layer, so several Bootstrap defaults survive in the file but are re-painted with `!important`).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand teal | `#46b5d1` | 6 | `a`, `.dbox p a`, `.dbox .icon` fill, `.cl-form-control:focus` border, `.cl-btn.cl-btn-primary` background + border |
+| Brand teal (hover) | `#2d9bb7` | 2 | `.cl-btn.cl-btn-primary:hover/:focus` background + border |
+| Page canvas | `#fafafa` | 1 | `body` background |
+| Body copy | `#666666` | 1 | `body` color |
+| Ink | `#000` | 4 | `.heading-section`, `h2/h3`, `.dbox p span`, `.contactForm .label` |
+| Card white | `#fff` | 12 | `.contact-wrap`, `.dbox .icon span` (glyph), `.cl-btn-primary` text, Bootstrap `body` base |
+| Success green | `#28a745` | 1 | `#form-message-success` confirmation copy |
+| Input hairline | `rgba(0,0,0,0.1)` | — | single `border-bottom` on `.contactForm .cl-form-control` |
+| Placeholder | `rgba(0,0,0,0.3)` | — | `::placeholder` in the form |
+
+Bootstrap-4 residues still present but **not visible** on this page (all overridden by the teal `!important` layer): `#007bff`×5, `#6c757d`×4, `#212529`×3, `#495057`×3, `#0062cc`×2, `#0069d9`, `#0056b3`, `#005cbf`, `#80bdff`, `#ced4da`, `#e9ecef`, `#fcf8e3`. Do not treat them as design tokens.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Poppins", Arial, sans-serif` · 16px / 1.8 | `body` override rule |
+| Headings (`h2`, `h3`, `.heading-section`) | same Poppins stack · 28px · `#000` · weight 400 | `h2, h3, .h2, .h3` + `.heading-section` |
+| Form labels | Poppins · 12px · 600 · uppercase | `.contactForm .label` |
+| Icons | Font Awesome 4 (`.fa fa-map-marker` / `fa-phone` / `fa-paper-plane` / `fa-globe`) | markup; 20px glyphs in 60px circles |
+
+Four `@font-face` blocks declare **Roboto**, but the `body`/heading overrides replace that stack with Poppins and the page loads no webfont file for it — in a browser without Poppins installed the reference falls back to Arial. **There is no serif face anywhere in this template** (see delta).
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Section band | `.ftco-section { padding: 7em 0 }` on `#fafafa` |
+| Card | 7/5 split, `.cl-no-gutters`: `.contact-wrap` white (7 cols) + `.info-wrap` (5 cols, `height: 400px`, `p-5`) |
+| Info icons | `.dbox .icon` 60×60, `border-radius: 50%`, `background: #46b5d1`, glyph `#fff` 20px; `.dbox` `padding: 0 20px`, `margin-bottom: 25px` |
+| Inputs | no box: `border: none; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 0`; focus border `#46b5d1`; `border-radius: 2px` (Bootstrap base 0.25rem overridden) |
+| Button | `.cl-btn.cl-btn-primary` `padding: 12px 16px`, `border-radius: 5px`, 14px/400, `#fff` on `#46b5d1`, `box-shadow: 0 10px 20px -6px rgba(0,0,0,0.12)`, hover `#2d9bb7` |
+| Right panel | `.info-wrap.img` = `background-size: cover / center`, inline `background-image: url(images/img.jpg)` — a **CSS background photo**, not an `<img>` (the demo file is a B&W lioness) |
+
+### Section order (reference DOM, top to bottom)
+
+`h2.heading-section ("Contact Form #03") -> 4-column info bar (.dbox ×4: address, phone, email, website) -> 7/5 card (white form panel with h3 "Contact Us" + underline form + Send Message, photo panel right) -> end of page`
+
+The reference has **no footer**; the shipped app appends the mandatory Component Dock footer.
+
+### Delta vs shipped app (`apps/formcatch`)
+
+- **Brand drift**: app `@theme` carries `--color-brand #7ec8e3` / `--color-brand-dark #5fb8d8` (the lighter teal read off the screenshot); the live sheet paints `#46b5d1` / `#2d9bb7`. Spec target = `#46b5d1`.
+- **Canvas drift**: app `--color-bg-page #f5f5f5`, reference `#fafafa`.
+- **Body copy**: app `--color-text-primary #333333`, reference `#666666` (headings alone are `#000`).
+- **Typography**: app loads **Playfair Display** (serif) for the page `h1` and the card `h2` and styles both `font-bold`; the reference is Poppins/Arial **sans** at weight 400 with `#000`. This is the one structural fidelity gap — the spec's "serif" wording above is the prep-time screenshot reading, not the measured reference.
+- **Icon size**: app `h-12 w-12` (48px) circles, reference 60px.
+- **Button radius**: app `rounded-[3px]`, reference `5px`; app has no shadow, reference `0 10px 20px -6px rgba(0,0,0,0.12)`.
+- **Heading level**: reference title is an `h2` (28px), app renders `h1` — acceptable for a11y, note it when parity-tuning.
+- Underline inputs, uppercase 12px labels, 4-up info bar, uppercase field order (name/email → subject → message) and the 7/5 card split all match 1:1.
+
 ## Requirements
 
 ### Requirement: Page title rendering

@@ -49,6 +49,38 @@ Preview: https://preview.colorlib.com/theme/contact-form-03/ (404 — design fro
 - Use `https://picsum.photos/seed/formcatch-1/600/600` as placeholder
 - Original shows a B&W cat photo — use a similar portrait-style image
 
+## Reference tokens (measured 2026-10-23)
+
+Read from the live demo `https://preview.colorlib.com/theme/bootstrap/contact-form-03/`
+(HTTP 200, 14,195 B, title `Contact Form 03`) and its single sheet
+`css/style.css?v=3656ea60` (16,560 B, sha256 `9f28e79f2e1f`). The slug-only
+`/theme/contact-form-03/` path 404s — always re-probe the `bootstrap/` path.
+
+| Token | Reference | App (`apps/formcatch`) |
+| ----- | --------- | ---------------------- |
+| Brand | `#46b5d1` | `#7ec8e3` (screenshot-derived, too light) |
+| Brand hover | `#2d9bb7` | `#5fb8d8` |
+| Page canvas | `#fafafa` | `#f5f5f5` |
+| Body copy | `#666666` | `#333333` |
+| Headings / labels | `#000` | `#333333` |
+| Card | `#fff` | `#fff` |
+| Success message | `#28a745` | n/a |
+| Body font | `"Poppins", Arial, sans-serif` 16px/1.8 | Poppins (`index.html` link) |
+| Heading font | Poppins, 28px, weight 400 | **Playfair Display serif, bold** ← only structural gap |
+| Labels | 12px, 600, uppercase | uppercase ✓ |
+| Info icon | 60×60, `border-radius: 50%`, teal fill, 20px white glyph | 48×48 (`h-12 w-12`) |
+| Inputs | underline only, `border-bottom: 1px solid rgba(0,0,0,0.1)`, focus `#46b5d1` | underline ✓ |
+| Button | `12px 16px`, radius `5px`, 14px, shadow `0 10px 20px -6px rgba(0,0,0,0.12)` | `3px` radius, no shadow |
+| Band rhythm | `.ftco-section` `padding: 7em 0` | ~`py-16`-ish, looser |
+
+Bootstrap-4 leftovers in the sheet (`#007bff`, `#6c757d`, `#212529`, `#495057`,
+`#0062cc`, `#ced4da`, `#e9ecef`, …) are overridden by the teal `!important`
+layer and are **not** design tokens.
+
+Section order measured in the reference DOM: `h2 ("Contact Form #03") → 4-up
+info bar (.dbox ×4) → 7/5 card (white form panel + CSS-background photo) → end`
+— the reference has no footer; ours appends the mandatory Component Dock footer.
+
 ## Fidelity notes
 
 - Match the info bar layout: 4 items in a horizontal row with circular icons
