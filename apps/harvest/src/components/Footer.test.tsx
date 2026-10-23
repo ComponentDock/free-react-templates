@@ -14,6 +14,11 @@ describe('Footer', () => {
     expect(screen.getByRole('heading', { name: 'Stay Connected' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Shop' })).toBeInTheDocument()
     expect(screen.getByText(/All rights reserved/)).toBeInTheDocument()
+    expect(screen.getByText(/Harvest\. All rights reserved\./)).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('renders the social links', () => {

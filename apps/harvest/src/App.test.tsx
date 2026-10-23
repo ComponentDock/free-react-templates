@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes all sections and sets the document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Farmie — Farm & Organic Shop Website Template')
+    expect(document.title).toBe('Harvest — Farm & Organic Shop Website Template')
 
     const main = screen.getByRole('main')
     const h2s = within(main).getAllByRole('heading', { level: 2 })

@@ -16,7 +16,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Farmie — Farm & Organic Shop Website Template'
+    document.title = 'Harvest — Farm & Organic Shop Website Template'
   }, [])
 
   return (

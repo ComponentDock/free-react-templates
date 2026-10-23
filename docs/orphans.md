@@ -619,7 +619,7 @@ template-halmark                    halen                      -> apps/captura  
 template-hapishop                   coloshop                   -> apps/shoplane           (row 1568, row)
 template-harmonia                   musiclab                   -> apps/sonority           (row 2273, banner)
 template-harmonica                  accordion-02               -> apps/tremolo            (row 640, row)
-template-harvest                    farmie                     -> apps/farmie             (row 1009, unproven)
+template-harvest                    farmie                     -> apps/harvest            (row 1009, row)
 template-havenkey                   oakberry                   -> apps/havenridge         (row 2604, banner)
 template-havenly                    adopted                    -> apps/giveaid            (row 1249, row)
 template-hawker                     selling                    -> apps/stall              (row 2358, row)

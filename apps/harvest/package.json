@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/farmie",
+  "name": "@free-react-templates/harvest",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://farmie.free.componentdock.com",
+  "homepage": "https://harvest.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

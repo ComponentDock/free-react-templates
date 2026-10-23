@@ -4,21 +4,21 @@ const testimonials = [
     role: 'Customer',
     quote:
       'Thank you for your organic products. My children like your products and they use them for breakfast. We are loving the pure milk, freshly picked fruit, and our staple, brown rice bread.',
-    seed: 'farmie-testimonial-1',
+    seed: 'harvest-testimonial-1',
   },
   {
     author: 'Ajoy Das',
     role: 'Client',
     quote:
       'The quality of the produce is outstanding. Everything arrives fresh and tastes like it was picked the same morning. Delivery is always on time and friendly.',
-    seed: 'farmie-testimonial-2',
+    seed: 'harvest-testimonial-2',
   },
   {
     author: 'Akash Khan',
     role: 'Customer',
     quote:
-      'I have been ordering from Farmie for over a year now. The eggs, vegetables, and dairy are consistently the best I have found anywhere in the city.',
-    seed: 'farmie-testimonial-3',
+      'I have been ordering from Harvest for over a year now. The eggs, vegetables, and dairy are consistently the best I have found anywhere in the city.',
+    seed: 'harvest-testimonial-3',
   },
 ] as const
 

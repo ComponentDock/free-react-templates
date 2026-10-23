@@ -5,25 +5,25 @@ const products = [
     name: 'Fresh Organic Strawberries',
     price: '$17.99',
     sale: null,
-    seed: 'farmie-product-1',
+    seed: 'harvest-product-1',
   },
   {
     name: 'Farm Eggs (Dozen)',
     price: '$9.99',
     sale: null,
-    seed: 'farmie-product-2',
+    seed: 'harvest-product-2',
   },
   {
     name: 'Organic Raw Honey',
     price: '$59.99',
     sale: null,
-    seed: 'farmie-product-3',
+    seed: 'harvest-product-3',
   },
   {
     name: 'Heirloom Tomato Basket',
     price: '$19.99',
     sale: '$29.99',
-    seed: 'farmie-product-4',
+    seed: 'harvest-product-4',
   },
 ] as const
 
