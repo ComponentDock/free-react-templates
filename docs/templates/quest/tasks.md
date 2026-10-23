@@ -1,0 +1,114 @@
+# Quest — Implementation Tasks
+
+Source design: **Dorne** (`https://colorlib.com/wp/template/dorne/`) → recreation name **quest**. Shipped at https://quest.free.componentdock.com.
+
+Scope: Quest is a single-page directory & listing website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Dorne" website template (source: https://colorlib.com/wp/template/dorne/ — "Dorne
+
+## Component breakdown
+
+Render order as composed in `apps/quest/src/App.tsx`:
+
+### 1. Navbar
+- The navbar SHALL include a mobile toggle button that shows/hides the mobile navigation menu.
+- Scenario — Mobile menu toggle:
+  - **WHEN** I click the mobile toggle button
+  - **THEN** the mobile navigation menu appears
+  - **AND** I can see the nav links and sign in / add listings options
+
+### 2. Hero
+- The hero section SHALL display a tabbed search form with Places and Events tabs, with Places active by default. Each tab shows destination, category, and price range selects plus a Search button.
+- Scenario — Hero tabs and search form:
+  - **WHEN** I visit the Quest template
+  - **THEN** I see "Places" and "Events" tabs in the hero
+  - **AND** the "Places" tab is active by default
+  - **AND** I see destination, category, and price range select dropdowns
+  - **AND** I see a Search button
+- Scenario — Switching tabs:
+  - **WHEN** I click the "Events" tab
+  - **THEN** the "Events" tab becomes active
+  - **AND** the "Places" tab is no longer active
+
+### 3. Categories
+- The categories section SHALL show 5 category cards with icons and labels: Hotels, Restaurants, Shopping, Beauty & Spa, Cinema.
+- Scenario — Category cards are rendered:
+  - **WHEN** I visit the Quest template
+  - **THEN** I see 5 category cards
+  - **AND** each card has an icon and a text label
+
+### 4. About
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: Discover your city with · Quest
+
+### 5. EditorsPick
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: Cities you must see · Editor&apos;s pick
+
+### 6. FeaturedDestinations
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: Featured destinations · Editor&apos;s pick
+
+### 7. FeaturedRestaurants
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: Featured Restaurants · Editor&apos;s pick
+
+### 8. FeaturedEvents
+- Each featured section SHALL display the correct number of cards: Editor's Pick shows 3 cities, Featured Destinations shows 5 destinations, Featured Restaurants shows 5 restaurants, Featured Events shows 6 events.
+- Scenario — Editor's pick shows 3 city cards:
+  - **WHEN** I visit the Quest template
+  - **THEN** I see 3 city cards in the Editor's Pick section
+- Scenario — Featured destinations shows 5 cards:
+  - **WHEN** I visit the Quest template
+  - **THEN** I see 5 destination cards with prices
+- Scenario — Featured restaurants shows 5 cards:
+  - **WHEN** I visit the Quest template
+  - **THEN** I see 5 restaurant cards with ratings
+- Scenario — Featured events shows 6 cards:
+  - **WHEN** I visit the Quest template
+  - **THEN** I see 6 event cards with dates
+
+### 9. Clients
+- The footer SHALL display "Made with" text with a heart icon and a link to componentdock.com branded as "Component Dock".
+- Scenario — Footer Component Dock link:
+  - **WHEN** I visit the Quest template
+  - **THEN** the footer contains a link to componentdock.com
+  - **AND** the footer shows "Made with" text
+  - **AND** the link opens in a new tab
+
+### 10. Footer
+- The footer SHALL display "Made with" text with a heart icon and a link to componentdock.com branded as "Component Dock".
+- Scenario — Footer Component Dock link:
+  - **WHEN** I visit the Quest template
+  - **THEN** the footer contains a link to componentdock.com
+  - **AND** the footer shows "Made with" text
+  - **AND** the link opens in a new tab
+
+### Cross-cutting requirements
+
+- **Page loads with all sections in correct order** — The template SHALL render all 10 sections in the correct DOM order: Navbar, Hero, Categories, About, Editor's Pick, Featured Destinations, Featured Restaurants, Featured Events, Clients, Footer.
+  - Scenario — All sections are present on page load: **WHEN** I visit the Quest template; **THEN** I see a navigation bar with logo and links; **AND** I see a hero section with headline "Discover places near you"; **AND** I see 5 category cards; **AND** I see an about section with heading; **AND** I see editor's pick city cards; **AND** I see featured destination cards; **AND** I see featured restaurant cards; **AND** I see featured event cards; **AND** I see client logos; **AND** I see a footer with Component Dock link
+- **Design tokens match ColorLib Dorne** — The template SHALL use the following design tokens extracted from the original: Open Sans font, brand color #7643ea, dark base #341a79, square button corners, centered section headings with decorative line.
+  - Scenario — Brand colors and font are applied: **WHEN** I visit the Quest template; **THEN** the page uses Open Sans font family; **AND** the brand purple color is visible on buttons and accents
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/quest/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/quest/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; `apps/quest/src/App.tsx` — main composition; `apps/quest/src/components/Navbar.tsx`; `apps/quest/src/components/Hero.tsx`; `apps/quest/src/components/Categories.tsx`; `apps/quest/src/components/About.tsx`; `apps/quest/src/components/EditorsPick.tsx`; `apps/quest/src/components/FeaturedDestinations.tsx`; `apps/quest/src/components/FeaturedRestaurants.tsx`; `apps/quest/src/components/FeaturedEvents.tsx`; `apps/quest/src/components/Clients.tsx`; `apps/quest/src/components/Footer.tsx`; `apps/quest/src/App.test.tsx` — 100% coverage tests; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/quest` ships on https://quest.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/quest/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/quest/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/quest/public/CNAME` = `quest.free.componentdock.com`
+  and the package `homepage` = `https://quest.free.componentdock.com`.

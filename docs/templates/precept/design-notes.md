@@ -1,0 +1,96 @@
+# Precept — Design Notes
+
+Reference: **Education** — `https://colorlib.com/wp/template/education/`  
+Live preview: `https://preview.colorlib.com/theme/education/`  
+Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/education-free-template.jpg  
+Shipped: https://precept.free.componentdock.com
+
+An Education & Courses template with hero, features, popular courses, cta, reviews and search course sections.
+
+## Typography
+
+Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
+
+## Design tokens (`apps/precept/src/index.css` `@theme`)
+
+| token | value | role |
+| --- | --- | --- |
+| `--color-brand` | `#f7631b` | brand |
+| `--color-brand-light` | `#ff8a50` | brand light |
+| `--color-navy` | `#04091e` | navy |
+| `--color-heading` | `#222222` | heading |
+| `--color-body` | `#777777` | body |
+| `--color-bg-light` | `#f9f9ff` | bg light |
+| `--font-poppins` | `'Poppins', sans-serif` | font poppins |
+
+## Document order
+
+| # | component | spec requirement | notes |
+| --- | --- | --- | --- |
+| 1 | `Navbar` | Navigation bar | see fidelity note below |
+| 2 | `Hero` | Hero section | see fidelity note below |
+| 3 | `Features` | Features section | see fidelity note below |
+| 4 | `PopularCourses` | Popular courses section | see fidelity note below |
+| 5 | `CtaSection` | CTA section | see fidelity note below |
+| 6 | `Reviews` | Reviews section | see fidelity note below |
+| 7 | `SearchCourse` | Search course section | see fidelity note below |
+| 8 | `UpcomingEvents` | Upcoming events section | see fidelity note below |
+| 9 | `Blog` | Blog section | see fidelity note below |
+| 10 | `Newsletter` | Newsletter section | see fidelity note below |
+| 11 | `Footer` | Footer | see fidelity note below |
+
+## Section-by-section fidelity
+
+### `Navbar`
+The system SHALL render a fixed navbar with a dark top bar (social icons, phone, email), the site name "Precept" with an orange left border, and navigation links (Home, About, Courses, Events, Blog, Contact) with a mobile hamburger toggle.
+
+### `Hero`
+The system SHALL render a full-height hero banner with a dark overlay background image, a headline "We Ensure Better Education for a Better World", supporting paragraph, and an orange "Get Started" CTA button.
+
+### `Features`
+The system SHALL render a 3-column feature section with cards for "Learn Online Courses", "No.1 of Universities", and "Huge Library", each with a description and a "Join Now" link.
+
+### `PopularCourses`
+The system SHALL render a course carousel section titled "Popular Courses We Offer" with course cards showing an image, user/comment counts, price, title, and description.
+
+### `CtaSection`
+The system SHALL render a call-to-action section with a background image, dark overlay, headline "Enhance Your Skills With Best Online Courses", and an "Enroll Now" button.
+
+### `Reviews`
+The system SHALL render an instructor/testimonial section titled "Our Expert Instructors" with instructor cards showing an avatar, name, role, star rating, and review text.
+
+### `SearchCourse`
+The system SHALL render a search section with a dark overlay background, heading "Search For Available Courses", and a search input with submit button.
+
+### `UpcomingEvents`
+The system SHALL render an events section titled "Upcoming Events" with event cards showing an image, title, date/time, and venue.
+
+### `Blog`
+The system SHALL render a blog section titled "Latest Posts From Blog" with post cards showing an image, author, date, comment count, title, excerpt, and a "View More" button.
+
+### `Newsletter`
+The system SHALL render a newsletter subscription section with an orange background, heading "Subscribe to Get Updated Information", email input, and a "Subscribe" button.
+
+### `Footer`
+The system SHALL render a dark navy footer with the site name "Precept", link columns (Quick Links, Resources, Contact), and a bottom bar with a "Made with ❤ by Component Dock" link pointing to `https://www.componentdock.com/`.
+
+## Deltas from the reference
+
+- Photographs are deterministic placeholders (`picsum.photos/seed/…`); no source asset is copied.
+- Icon glyphs come from `lucide-react`, not the source's icon font.
+- Copy is paraphrased to the same kind of content (headline + subtext + CTA, card title + blurb + link).
+- The source's credit bar is replaced by the Component Dock credit (see delivery contract).
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/precept/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/precept/public/CNAME` = `precept.free.componentdock.com`
+  and the package `homepage` = `https://precept.free.componentdock.com`.

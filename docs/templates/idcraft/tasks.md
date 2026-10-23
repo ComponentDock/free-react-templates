@@ -1,0 +1,121 @@
+# Idcraft — Implementation Tasks
+
+Source design: **Vcard** (`https://colorlib.com/wp/template/vcard/`) → recreation name **idcraft**. Shipped at https://idcraft.free.componentdock.com.
+
+Scope: A Personal vCard & Resume template with hero, about, skills, services, portfolio and cool facts sections.
+
+## Component breakdown
+
+Render order as composed in `apps/idcraft/src/App.tsx`:
+
+### 1. Navbar
+- The system SHALL render a transparent navbar with nav links (About, Skills, Services, Portfolio, Contact) and an "Available for freelance work" CTA button. The navbar SHALL become sticky with a white background and box shadow on scroll.
+- Scenario — Desktop navigation:
+  - **GIVEN** the page is rendered
+  - **WHEN** the navbar is displayed
+  - **THEN** it SHALL show links to About, Skills, Services, Portfolio, and Contact
+  - **AND** it SHALL show an "Available for freelance work" button
+- Scenario — Mobile navigation:
+  - **GIVEN** the page is rendered on a small screen
+  - **WHEN** the user clicks the hamburger toggle
+  - **THEN** the mobile menu SHALL become visible
+  - **AND** pressing the toggle again SHALL hide the menu
+
+### 2. Hero
+- The system SHALL render a full-height hero section with a background image, a dark overlay, the greeting "Hello I'm", the name "Maria Smith" in large amber text, the subtitle "Digital Designer & Illustrator", contact info (email, phone, website), and social icons.
+- Scenario — Hero content:
+  - **GIVEN** the page is rendered
+  - **WHEN** the hero section is visible
+  - **THEN** it SHALL display "Hello I'm"
+  - **AND** it SHALL display "Maria Smith" in amber
+  - **AND** it SHALL display "Digital Designer & Illustrator"
+  - **AND** it SHALL display email, phone, and website contact info
+  - **AND** it SHALL display social media icons
+
+### 3. About
+- The system SHALL render an about section with two columns: a heading "Creative & Committed" on the left, and a descriptive paragraph on the right.
+- Scenario — About content:
+  - **GIVEN** the page is rendered
+  - **WHEN** the about section is visible
+  - **THEN** it SHALL display the heading "Creative & Committed"
+  - **AND** it SHALL display descriptive paragraph text
+
+### 4. Skills
+- The system SHALL render a skills section with 4 circular progress indicators: Photos Taken (75%), Digital Design (83%), HTML Coding (25%), Illustrations (95%), each with a title and description.
+- Scenario — Skills display:
+  - **GIVEN** the page is rendered
+  - **WHEN** the skills section is visible
+  - **THEN** it SHALL display 4 skill items with percentage labels
+  - **AND** each item SHALL show a title and description
+
+### 5. Services
+- The system SHALL render a services section with 6 service cards on a dark overlay background: Digital Design, Illustrations, Web Design, Logo Design, Brand Identity, and Motion Graphics. Each card SHALL have an icon and description text.
+- Scenario — Services grid:
+  - **GIVEN** the page is rendered
+  - **WHEN** the services section is visible
+  - **THEN** it SHALL display 6 service items with titles and descriptions
+
+### 6. Portfolio
+- The system SHALL render a portfolio section with a filter bar (Digital Design, Web Design, Brand Identity, Illustrations, Motion Graphics) and a 4-column image gallery with hover overlays showing title, category, and a zoom icon.
+- Scenario — Portfolio gallery:
+  - **GIVEN** the page is rendered
+  - **WHEN** the portfolio section is visible
+  - **THEN** it SHALL display filter buttons
+  - **AND** it SHALL display portfolio items with images
+
+### 7. CoolFacts
+- The system SHALL render a cool facts section on a dark background with 4 stat columns: Projects Completed (10+), Happy Clients (87+), Awards Won (10+), and Coffee per day (7+).
+- Scenario — Facts stats:
+  - **GIVEN** the page is rendered
+  - **WHEN** the cool facts section is visible
+  - **THEN** it SHALL display 4 fact items with numbers
+
+### 8. Testimonials
+- The system SHALL render a testimonials section with quote cards containing a heading, testimonial text, author image, name, and role.
+- Scenario — Testimonials display:
+  - **GIVEN** the page is rendered
+  - **WHEN** the testimonials section is visible
+  - **THEN** it SHALL display at least one testimonial with heading, text,
+
+### 9. Contact
+- The system SHALL render a contact section with a two-column layout: a contact form (Name, Email, Subject, Message fields + Send Message button) on the left, and a map placeholder on the right. Below SHALL be a contact info bar with Address, Phone, and Email.
+- Scenario — Contact form:
+  - **GIVEN** the page is rendered
+  - **WHEN** the contact section is visible
+  - **THEN** the form SHALL have Name, Email, Subject, and Message fields
+  - **AND** a "Send Message" button SHALL be visible
+  - **AND** contact information (Address, Phone, Email) SHALL be displayed
+
+### 10. Footer
+- The system SHALL render a footer with a link to https://www.componentdock.com/ branded as "Component Dock".
+- Scenario — Footer link:
+  - **GIVEN** the page is rendered
+  - **WHEN** the footer is visible
+  - **THEN** it SHALL contain a link to componentdock.com
+
+### Cross-cutting requirements
+
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/idcraft/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/idcraft/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/idcraft` ships on https://idcraft.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/idcraft/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/idcraft/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/idcraft/public/CNAME` = `idcraft.free.componentdock.com`
+  and the package `homepage` = `https://idcraft.free.componentdock.com`.

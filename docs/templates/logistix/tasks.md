@@ -1,0 +1,106 @@
+# Logistix — Implementation Tasks
+
+Source design: **Thelogistico** (`https://colorlib.com/wp/template/thelogistico/`) → recreation name **logistix**. Shipped at https://logistix.free.componentdock.com.
+
+Scope: A Bootstrap 5 logistics template with navigation, hero, services, about us and our mission sections. Provide a free, production-ready React landing page for logistics and cargo transport companies, faithfully recreating the ColorLib Thelogistico design under the original name "Logistix" with React 19, Tailwind CSS 4, and TypeScript.
+
+## Component breakdown
+
+Render order as composed in `apps/logistix/src/App.tsx`:
+
+### 1. Navbar
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: Main navigation · Facebook · Instagram · LinkedIn · Mobile navigation
+
+### 2. Hero
+- The template SHALL display a full-width hero with a dark background image and gradient overlay, left-aligned white text ("Welcome to Logistix", "A TRULY GLOBAL SERVICE PROVIDER", subtitle, "Explore Us" CTA), and a right-aligned "Get a quick offer" form with Truckload select, Commodity select, Distance input, and estimated cost display.
+- Scenario — Hero renders heading and CTA:
+  - **WHEN** the hero section is rendered
+  - **THEN** it SHALL display the "Welcome to Logistix" label, the main heading, subtitle text, and an "Explore Us" call-to-action link
+- Scenario — Quick offer form displays all fields:
+  - **WHEN** the hero form is rendered
+  - **THEN** it SHALL display Truckload select, Commodity select, Distance input, and estimated cost "$10,400.00"
+
+### 3. Services
+- The template SHALL display a 4-column responsive grid of service cards: Air Freight, Ocean Freight, Road Transport, and Warehousing. Each card has an icon, title, description, and circular arrow link.
+- Scenario — All four services render:
+  - **WHEN** the services section is rendered
+  - **THEN** it SHALL display all four service titles and their descriptions
+
+### 4. About
+- The template SHALL display a 2-column split layout with an image on the left and content on the right, including an "About Us" label, heading, description paragraphs, and an accordion with "Road Transport" and "Sea Cargo" items.
+- Scenario — Accordion toggles on click:
+  - **WHEN** the user clicks an accordion button
+  - **THEN** the corresponding content panel SHALL expand or collapse
+
+### 5. Mission
+- The template SHALL display a dark-background 2-column split with a "Our Mission" label, blockquote, and "Learn More" outlined button on the left, and an image on the right.
+- Scenario — Mission section renders key elements:
+  - **WHEN** the mission section is rendered
+  - **THEN** it SHALL display the "Our Mission" label, a blockquote, and a "Learn More" link
+
+### 6. Projects
+- The template SHALL display a 2-column split with an image on the left and dark content on the right, including the heading "We give you complete control of your shipments" and numbered project cards.
+- Scenario — Project items render with numbers and links:
+  - **WHEN** the projects section is rendered
+  - **THEN** it SHALL display numbered project items with titles, descriptions, and view links
+
+### 7. CTABanner
+- The template SHALL display a light gray-blue banner with "Need Help? Get Free quote!" heading, subtitle, and an orange "Learn More" button.
+- Scenario — CTA banner renders heading and button:
+  - **WHEN** the CTA banner is rendered
+  - **THEN** it SHALL display the heading text and a "Learn More" link
+
+### 8. Testimonial
+- The template SHALL display a dark-background 2-column split with "Client Testimonial" label, quote, founder avatar and name on the left, and a video placeholder with play button on the right.
+- Scenario — Testimonial renders quote and founder info:
+  - **WHEN** the testimonial section is rendered
+  - **THEN** it SHALL display the testimonial quote, founder name "Graham Cracker", role, and a play video button
+
+### 9. Blog
+- The template SHALL display a light gray-blue section with "Latest News" heading and a 3-column grid of blog post cards with images, dates, and titles.
+- Scenario — Blog posts render:
+  - **WHEN** the blog section is rendered
+  - **THEN** it SHALL display three blog post cards with dates and titles
+
+### 10. Brands
+- The template SHALL display a horizontal row of partner brand names.
+- Scenario — Brand names render:
+  - **WHEN** the brands section is rendered
+  - **THEN** it SHALL display all partner brand names
+
+### 11. Footer
+- The template SHALL display a 5-column footer with logo, quick links, solutions, support, newsletter form with email input, social media icons, copyright line, and a mandatory Component Dock attribution link.
+- Scenario — Footer renders Component Dock link:
+  - **WHEN** the footer is rendered
+  - **THEN** it SHALL contain a link to `https://www.componentdock.com/` with text "Component Dock"
+
+### Cross-cutting requirements
+
+- **Navigation & Header** — The template SHALL display a sticky header with a black logo box showing "Logistix", desktop navigation links (Home, About, Services, Blog, Contact), social media icons (Facebook, Instagram, LinkedIn), a phone CTA button, and a mobile hamburger menu toggle.
+  - Scenario — Desktop navigation renders all links: **WHEN** the page loads on a desktop viewport; **THEN** the navbar SHALL display the "Logistix" logo, all five navigation links, social icons, and the phone number button
+  - Scenario — Mobile menu toggles open and closed: **WHEN** the user clicks the hamburger menu button on mobile; **THEN** the mobile navigation panel SHALL appear with all navigation links; **AND** clicking a link SHALL close the mobile menu
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/logistix/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/logistix/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/logistix` ships on https://logistix.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/logistix/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/logistix/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/logistix/public/CNAME` = `logistix.free.componentdock.com`
+  and the package `homepage` = `https://logistix.free.componentdock.com`.

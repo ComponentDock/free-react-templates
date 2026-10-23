@@ -1,0 +1,143 @@
+# Turbo — Implementation Tasks
+
+Source design: **Nitro** (`https://colorlib.com/wp/template/nitro/`) → recreation name **turbo**. Shipped at https://turbo.free.componentdock.com.
+
+Scope: Recreation of ColorLib Nitro (`https://colorlib.com/wp/template/nitro/`, preview: `https://preview.colorlib.com/theme/nitro/`). Built as a modern React 19 + Tailwind CSS 4 business agency landing template with hero, about, features, team, portfolio, services, testimonials, pricing, FAQ, blog, contact, and footer sections.
+
+## Component breakdown
+
+Render order as composed in `apps/turbo/src/App.tsx`:
+
+### 1. Navbar
+- The page shall display a sticky navbar with the "Turbo." logo and navigation links.
+- Scenario — Navbar renders logo and links:
+  - **WHEN** the page loads
+  - **THEN** the navbar shall display the logo text "Turbo" with a blue dot accent
+  - **AND** the navbar shall contain links for Home, About, Team, Portfolio, Services, Testimonials, Blog, and Contact
+- Scenario — Mobile menu toggles:
+  - **WHEN** the user clicks the mobile menu toggle button
+  - **THEN** the mobile navigation menu shall appear
+  - **AND** the toggle button aria-label shall change to "Close menu"
+
+### 2. Hero
+- The page shall display a full-width hero with background image, heading, subtitle, and CTA button.
+- Scenario — Hero displays welcome heading and CTA:
+  - **WHEN** the page loads
+  - **THEN** the hero section shall display a "Welcome" heading
+  - **AND** the hero shall display descriptive text about digital solutions
+  - **AND** the hero shall display a "Get In Touch" button linking to #contact
+
+### 3. About
+- The page shall display an About section with heading, description, and feature bullets.
+- Scenario — About section shows content:
+  - **WHEN** the page loads
+  - **THEN** the about section shall display the heading "For the next great business"
+  - **AND** the about section shall display 4 feature bullet points with check icons
+
+### 4. Features
+- The page shall display 3 feature cards with icons, titles, descriptions, and links.
+- Scenario — Features section shows three cards:
+  - **WHEN** the page loads
+  - **THEN** the features section shall display headings for "Minimal and Modern Design", "Do things with love", and "Take your business online"
+  - **AND** each feature card shall have a "Learn More" link
+
+### 5. Team
+- The page shall display 4 team member cards with photos, names, and titles.
+- Scenario — Team section shows members:
+  - **WHEN** the page loads
+  - **THEN** the team section shall display 4 team members with names and "Product Manager" titles
+  - **AND** each team member shall have a profile image
+
+### 6. Portfolio
+- The page shall display a filterable portfolio gallery with filter tabs.
+- Scenario — Portfolio shows all items by default:
+  - **WHEN** the page loads
+  - **THEN** the portfolio section shall display 6 portfolio items
+  - **AND** the filter tabs shall show "All", "Web", "Design", and "Brand"
+- Scenario — Portfolio filters by category:
+  - **WHEN** the user clicks the "Web" filter button
+  - **THEN** only portfolio items in the "Web" category shall be displayed
+
+### 7. Services
+- The page shall display 6 service cards with icons, titles, descriptions, and links.
+- Scenario — Services section shows all services:
+  - **WHEN** the page loads
+  - **THEN** the services section shall display Business Consulting, Market Analysis, User Monitoring, Insurance Consulting, Financial Investment, and Financial Management
+  - **AND** each service shall have a "Learn More" link
+
+### 8. Testimonials
+- The page shall display testimonials with quotes, author names, and roles.
+- Scenario — Testimonials show quotes and authors:
+  - **WHEN** the page loads
+  - **THEN** the testimonials section shall display 2 testimonial quotes
+  - **AND** each testimonial shall show an author name and role
+
+### 9. Pricing
+- The page shall display 3 pricing tiers with feature lists and CTA buttons.
+- Scenario — Pricing shows three plans:
+  - **WHEN** the page loads
+  - **THEN** the pricing section shall display Personal ($49), Business ($99), and Ultimate ($199) plans
+  - **AND** each plan shall have a "Get Started" button
+  - **AND** each plan shall list its features
+
+### 10. FAQ
+- The page shall display an FAQ accordion with expandable question/answer pairs.
+- Scenario — FAQ questions are expandable:
+  - **WHEN** the user clicks a FAQ question
+  - **THEN** the answer shall become visible
+  - **AND** the button aria-expanded attribute shall be "true"
+- Scenario — FAQ answers collapse:
+  - **WHEN** the user clicks an expanded FAQ question again
+  - **THEN** the answer shall be hidden
+
+### 11. Blog
+- The page shall display 3 blog cards with images, titles, authors, dates, and excerpts.
+- Scenario — Blog shows three posts:
+  - **WHEN** the page loads
+  - **THEN** the blog section shall display 3 blog post cards
+  - **AND** each card shall have a title, author name, and "Continue Reading..." link
+
+### 12. Contact
+- The page shall display contact information and a contact form.
+- Scenario — Contact form accepts input:
+  - **WHEN** the user types into the First Name, Last Name, Email, Subject, and Message fields
+  - **THEN** each field shall display the typed text
+- Scenario — Contact form resets on submit:
+  - **WHEN** the user fills the form and clicks Send
+  - **THEN** all form fields shall be cleared
+
+### 13. Footer
+- The page shall display a footer with logo, quick links, social links, and Component Dock copyright.
+- Scenario — Footer shows branding and links:
+  - **WHEN** the page loads
+  - **THEN** the footer shall display the "Turbo." logo
+  - **AND** the footer shall show Quick Links (About Us, Services, Testimonials, Contact Us)
+  - **AND** the footer shall show social links (Twitter, Facebook, Instagram)
+  - **AND** the footer shall display a copyright line with a link to https://www.componentdock.com/
+
+### Cross-cutting requirements
+
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/turbo/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/turbo/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/turbo` ships on https://turbo.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/turbo/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/turbo/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/turbo/public/CNAME` = `turbo.free.componentdock.com`
+  and the package `homepage` = `https://turbo.free.componentdock.com`.

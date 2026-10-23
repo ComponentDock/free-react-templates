@@ -1,0 +1,70 @@
+# Seekstream — Implementation Tasks
+
+Source design: **Colorlib Search 8** (`https://colorlib.com/wp/template/colorlib-search-8/`) → recreation name **seekstream**. Shipped at https://seekstream.free.componentdock.com.
+
+Scope: Seekstream provides a full-viewport advanced search form with keyword input and six category filter dropdowns, styled with a split white/dark card over a gray background. Users SHALL be able to type keywords, filter by category, view result counts, and trigger search/reset actions.
+
+## Component breakdown
+
+Render order as composed in `apps/seekstream/src/App.tsx`:
+
+### 1. SearchBar
+- The page SHALL render a search form with aria-label "Search form" centered on a gray background.
+- Scenario — Page loads with search form:
+  - **WHEN** the page loads
+  - **THEN** a form element with aria-label "Search form" is visible
+  - **AND** the document title is "Seekstream — Advanced Search Form"
+
+### 2. AdvancedSearch
+- The advanced search panel SHALL display "Advanced Search" heading, six filter dropdowns, result count, Reset button, and Search button.
+- Scenario — Filter dropdowns are rendered:
+  - **WHEN** the page renders
+  - **THEN** six select elements are visible
+  - **AND** filter labels ACCESSORIES, COLOR, SIZE, SALE, TIME, and TYPE are displayed
+- Scenario — Default filter option:
+  - **WHEN** the page renders
+  - **THEN** each dropdown has "All" as the default selected option
+- Scenario — Result count displayed:
+  - **WHEN** the page renders
+  - **THEN** "108 results" text is displayed in the accent color
+
+### 3. Footer
+- The footer SHALL link to Component Dock.
+- Scenario — Footer link:
+  - **WHEN** the page renders
+  - **THEN** a "More templates at Component Dock" link points to https://www.componentdock.com/
+
+### Cross-cutting requirements
+
+- **Search bar** — The search bar SHALL display a text input with "Type Keywords" placeholder and a magnifying glass icon.
+  - Scenario — User types in search input: **WHEN** the user types "shoes" in the search input; **THEN** the input value updates to "shoes"
+  - Scenario — Search icon is visible: **WHEN** the page renders; **THEN** a magnifying glass icon is displayed to the right of the input
+- **User interactions** — The form SHALL support search, reset, and keyboard interactions.
+  - Scenario — Search button triggers callback: **WHEN** the user clicks the "Search" button; **THEN** the onSearch callback is invoked
+  - Scenario — Reset button triggers callback: **WHEN** the user clicks the "Reset" button; **THEN** the onReset callback is invoked
+  - Scenario — Enter key is prevented: **WHEN** the user presses Enter in the search input; **THEN** form submission is prevented
+  - Scenario — Filter selection fires onChange: **WHEN** the user selects "Black" from the COLOR dropdown; **THEN** the onChange callback is called with "Black"
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/seekstream/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/seekstream/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/seekstream` ships on https://seekstream.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/seekstream/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/seekstream/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/seekstream/public/CNAME` = `seekstream.free.componentdock.com`
+  and the package `homepage` = `https://seekstream.free.componentdock.com`.

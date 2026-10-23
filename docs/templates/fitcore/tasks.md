@@ -1,0 +1,122 @@
+# Fitcore — Implementation Tasks
+
+Source design: **Fitnessclub** (`https://colorlib.com/wp/template/fitnessclub/`) → recreation name **fitcore**. Shipped at https://fitcore.free.componentdock.com.
+
+Scope: Recreate the ColorLib **Fitnessclub** design (https://colorlib.com/wp/template/fitnessclub/) as a React 19 + Tailwind CSS 4 + TypeScript single-page template under the name "FitCore".
+
+## Component breakdown
+
+Render order as composed in `apps/fitcore/src/App.tsx`:
+
+### 1. Header
+- The template SHALL display a transparent fixed header with brand logo, navigation links, and a "Become a Member" CTA, plus a responsive mobile hamburger menu.
+- Scenario — Desktop navigation:
+  - **WHEN** the page loads on a desktop viewport
+  - **THEN** the "FitCore" brand link, nav links (Home, About, Services, Schedule, Gallery, Contact), and "Become a Member" button are visible
+- Scenario — Mobile menu toggle:
+  - **WHEN** the user taps the hamburger icon on mobile
+  - **THEN** a full-screen mobile menu opens with all nav links and the CTA
+  - **AND** tapping a link or the close button dismisses the menu
+
+### 2. Hero
+- The template SHALL display a full-height hero with background image, accent subtitle, heading, CTA button, and a video play icon.
+- Scenario — Hero content:
+  - **WHEN** the page loads
+  - **THEN** the heading "Build Perfect Body Shape" is visible
+  - **AND** the "Become a Member" CTA links to the contact section
+  - **AND** a video play button is present
+
+### 3. About
+- The template SHALL display a two-column about section with an image and gym description.
+- Scenario — About content:
+  - **WHEN** the page loads
+  - **THEN** the "About Our Gym" section label and heading are visible
+  - **AND** an image of the gym is shown
+  - **AND** a "Become a Member" CTA is present
+
+### 4. Services
+- The template SHALL display a dark-background services section with three service cards (Quality Equipment, Health Caring, Gym Strategies).
+- Scenario — Service cards:
+  - **WHEN** the page loads
+  - **THEN** three service cards are visible with icons, titles, and descriptions
+  - **AND** each card has a "Discover More About Us" hover overlay
+
+### 5. Testimonials
+- The template SHALL display client feedback with a quote, author name, and role.
+- Scenario — Testimonial content:
+  - **WHEN** the page loads
+  - **THEN** the "Client Feedback" heading is visible
+  - **AND** a testimonial quote with author name and role is shown
+
+### 6. Gallery
+- The template SHALL display a 2-column image gallery with hover overlays.
+- Scenario — Gallery images:
+  - **WHEN** the page loads
+  - **THEN** five gallery images are displayed in a 2-column layout
+  - **AND** each image has a hover overlay with title and category
+
+### 7. Team
+- The template SHALL display trainer cards with images, roles, names, and social links.
+- Scenario — Trainer cards:
+  - **WHEN** the page loads
+  - **THEN** three trainer cards are visible
+  - **AND** each card shows the trainer's name, role, and social icon links
+
+### 8. MembershipBanner
+- The template SHALL display a full-width dark membership offer banner with heading and CTA.
+- Scenario — Banner content:
+  - **WHEN** the page loads
+  - **THEN** the "Membership Offer Available Now" heading is visible
+  - **AND** a "More Services" CTA button is present
+
+### 9. Schedule
+- The template SHALL display a tab-based weekly timetable with day tabs and class rows.
+- Scenario — Day tabs:
+  - **WHEN** the page loads
+  - **THEN** seven day tabs are visible (Saturday through Friday)
+  - **AND** Monday is selected by default
+  - **AND** clicking a day tab shows that day's classes with time, name, and instructor
+
+### 10. Contact
+- The template SHALL display contact information and a contact form.
+- Scenario — Contact form:
+  - **WHEN** the page loads
+  - **THEN** the contact form has name, email, and message fields
+  - **AND** the form can be submitted without page navigation
+
+### 11. Footer
+- The template SHALL display a dark footer with about text, quick links, newsletter subscription, and a "Component Dock" attribution link.
+- Scenario — Footer content:
+  - **WHEN** the page loads
+  - **THEN** the footer shows "About FitCore", "Quick Links", and "Newsletter" columns
+  - **AND** the newsletter form accepts an email and shows a confirmation
+  - **AND** the "Component Dock" link points to https://www.componentdock.com/
+
+### Cross-cutting requirements
+
+- **Design tokens** — The template SHALL use the brand colors, fonts, and layout patterns extracted from the original Fitnessclub design.
+  - Scenario — Brand colors: **WHEN** the template renders; **THEN** the primary brand color is #f04e3c (red-orange); **AND** headings use Teko font and body text uses Barlow font; **AND** buttons are uppercase with sharp corners and red background
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/fitcore/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/fitcore/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/fitcore` ships on https://fitcore.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/fitcore/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/fitcore/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/fitcore/public/CNAME` = `fitcore.free.componentdock.com`
+  and the package `homepage` = `https://fitcore.free.componentdock.com`.

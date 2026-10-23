@@ -1,0 +1,82 @@
+# Formwise — Implementation Tasks
+
+Source design: **Colorlib Regform 7** (`https://colorlib.com/wp/template/colorlib-regform-7/`) → recreation name **formwise**. Shipped at https://formwise.free.componentdock.com.
+
+Scope: Recreation of ColorLib Regform 7 (https://colorlib.com/wp/template/colorlib-regform-7/). A creative signup form template featuring two alternative form layouts with underline-style inputs, workspace illustrations, and a steel-blue register button.
+
+## Component breakdown
+
+Render order as composed in `apps/formwise/src/App.tsx`:
+
+### 1. SignupForm
+- The first card SHALL display a "Sign up" heading, four underline-style input fields (Name, Email, Password, Repeat Password) with left-aligned lucide-react icons, a terms checkbox, a steel-blue "Register" button, and an "I am already member" link. The illustration SHALL appear on the right side.
+- Scenario — Form fields present:
+  - **WHEN** a user sees the first card
+  - **THEN** a "Sign up" heading is displayed
+  - **AND** a Name input with user icon is present
+  - **AND** an Email input with mail icon is present
+  - **AND** a Password input with lock icon is present
+  - **AND** a Repeat Password input with lock icon is present
+  - **AND** a terms checkbox with "Terms of service" link is present
+  - **AND** a "Register" button is present
+  - **AND** an "I am already member" link is present
+- Scenario — Illustration on right:
+  - **WHEN** a user views the first card
+  - **THEN** the form fields are on the left side
+  - **AND** the illustration is on the right side
+
+### 2. Footer
+- The page footer SHALL contain a "Made with Component Dock" link pointing to https://www.componentdock.com/, opening in a new tab.
+- Scenario — Footer link:
+  - **WHEN** a user scrolls to the footer
+  - **THEN** a "Made with Component Dock" text is visible
+  - **AND** the "Component Dock" text links to https://www.componentdock.com/
+  - **AND** the link opens in a new tab
+
+### Cross-cutting requirements
+
+- **Page layout** — The page SHALL display two signup form cards vertically stacked on a light gray (#f5f5f5) background, centered within a max-width container.
+  - Scenario — Page renders two cards: **WHEN** a user visits the Formwise page; **THEN** two signup form cards are visible; **AND** both cards have white backgrounds with subtle shadows
+  - Scenario — Page background: **WHEN** a user views the page; **THEN** the page background is light gray
+- **Second signup form card (mirrored)** — The second card SHALL mirror the first card's layout with the illustration on the left and the form on the right. All form fields and elements SHALL be identical.
+  - Scenario — Mirrored layout: **WHEN** a user views the second card; **THEN** the illustration is on the left side; **AND** the form fields are on the right side
+  - Scenario — Same form fields: **WHEN** a user inspects the second card; **THEN** it contains the same fields as the first card (Name, Email, Password, Repeat Password, terms checkbox, Register button, already member link)
+- **Form field interaction** — All input fields SHALL accept user text input. The terms checkbox SHALL toggle on click. The Register button SHALL prevent default form submission.
+  - Scenario — Accept text input: **WHEN** a user types in the Name field; **THEN** the input displays the typed text
+  - Scenario — Email input: **WHEN** a user types in the Email field; **THEN** the input accepts email text
+  - Scenario — Password input: **WHEN** a user types in the Password field; **THEN** the input accepts password text (masked)
+  - Scenario — Repeat password input: **WHEN** a user types in the Repeat Password field; **THEN** the input accepts password text (masked)
+  - Scenario — Terms checkbox toggle: **WHEN** a user clicks the terms checkbox; **THEN** the checkbox toggles between checked and unchecked states
+  - Scenario — Form submission prevention: **WHEN** a user clicks the Register button; **THEN** the form does not navigate away from the page
+- **Design tokens and styling** — The template SHALL use underline-style inputs (bottom border only, transparent background), a steel-blue (#5b8fb9) brand color for the Register button, Poppins font from Google Fonts, and SVG workspace illustrations.
+  - Scenario — Input styling: **WHEN** a user views the form inputs; **THEN** each input has a bottom border only (underline style); **AND** each input has a transparent background
+  - Scenario — Button styling: **WHEN** a user views the Register button; **THEN** it has a steel-blue background; **AND** it has white text; **AND** it has rounded corners
+  - Scenario — Illustrations rendered: **WHEN** a user views the page; **THEN** SVG workspace illustrations are displayed; **AND** illustrations are hidden from screen readers (aria-hidden)
+  - Scenario — Lucide icons rendered: **WHEN** a user views the form fields; **THEN** user, mail, and lock icons from lucide-react are displayed next to their respective inputs
+- **Responsive layout** — The cards SHALL display side-by-side (form + illustration) on desktop and stack vertically on mobile.
+  - Scenario — Desktop layout: **WHEN** a user views the page on a desktop viewport; **THEN** each card shows form and illustration side by side
+  - Scenario — Mobile layout: **WHEN** a user views the page on a mobile viewport; **THEN** each card stacks form above illustration
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/formwise/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/formwise/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/formwise` ships on https://formwise.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/formwise/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/formwise/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/formwise/public/CNAME` = `formwise.free.componentdock.com`
+  and the package `homepage` = `https://formwise.free.componentdock.com`.

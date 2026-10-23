@@ -1,0 +1,61 @@
+# Formzen — Implementation Tasks
+
+Source design: **Contact Form V10** (`https://colorlib.com/wp/template/contact-form-v10/`) → recreation name **formzen**. Shipped at https://formzen.free.componentdock.com.
+
+Scope: Recreation of ColorLib "Contact Form V10" (https://colorlib.com/wp/template/contact-form-v10/). A minimalist contact form page with a light gray background, centered white card with subtle shadow, and a clean purple-branded send button.
+
+## Component breakdown
+
+Render order as composed in `apps/formzen/src/App.tsx`:
+
+### 1. ContactForm
+- No dedicated spec block — hold this band to the design notes.
+- Anchors: name · email · phone · message
+
+### 2. Footer
+- The page SHALL display a footer linking to Component Dock.
+- Scenario — Footer renders Component Dock link:
+  - **WHEN** I visit the Formzen page
+  - **THEN** I should see a "More templates at Component Dock" link
+  - **AND** the link should point to https://www.componentdock.com/
+
+### Cross-cutting requirements
+
+- **Page renders with form** — The page SHALL display a centered contact form card on a light gray background.
+  - Scenario — Form heading is visible: **WHEN** I visit the Formzen page; **THEN** I should see the heading "SEND US A MESSAGE"
+  - Scenario — All form fields are present: **WHEN** I visit the Formzen page; **THEN** I should see Name, Email, Phone, and Message fields; **AND** I should see a Send button
+- **Form field interactions** — The form SHALL accept user input in all fields.
+  - Scenario — Name field accepts text: **WHEN** I type "Jane Smith" in the Name field; **THEN** the Name field should contain "Jane Smith"
+  - Scenario — Email field accepts text: **WHEN** I type "jane@example.com" in the Email field; **THEN** the Email field should contain "jane@example.com"
+  - Scenario — Phone field accepts text: **WHEN** I type "555-1234" in the Phone field; **THEN** the Phone field should contain "555-1234"
+  - Scenario — Message field accepts text: **WHEN** I type "Hello there" in the Message field; **THEN** the Message field should contain "Hello there"
+- **Form submission** — The form SHALL prevent default browser navigation on submit.
+  - Scenario — Clicking Send does not navigate: **WHEN** I click the Send button; **THEN** the page should not navigate away
+- **Visual styling** — The page SHALL match the original design's visual language.
+  - Scenario — Page has light gray background: **WHEN** I visit the Formzen page; **THEN** the page background should be light gray
+  - Scenario — Card has white background: **WHEN** I visit the Formzen page; **THEN** the form card should have a white background with shadow
+  - Scenario — Send button is purple: **WHEN** I visit the Formzen page; **THEN** the Send button should be purple
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/formzen/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/formzen/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/formzen` ships on https://formzen.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/formzen/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/formzen/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/formzen/public/CNAME` = `formzen.free.componentdock.com`
+  and the package `homepage` = `https://formzen.free.componentdock.com`.

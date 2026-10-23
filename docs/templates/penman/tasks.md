@@ -1,0 +1,127 @@
+# Penman — Implementation Tasks
+
+Source design: **Author** (`https://colorlib.com/wp/template/author/`) → recreation name **penman**. Shipped at https://penman.free.componentdock.com.
+
+Scope: Penman is a personal author/book landing template with a clean, literary aesthetic. It features a full-height hero with book illustration, partner logos, about section, animated counters, chapter browser, testimonial carousel, book gallery, author bio, contact form with map, and a four-column footer.
+
+## Component breakdown
+
+Render order as composed in `apps/penman/src/App.tsx`:
+
+### 1. Navbar
+- The template SHALL render a sticky dark navbar with "Penman." brand (green dot accent), and navigation links: Home, About, Chapter, Reviews, My Books, Author, Contact.
+- Scenario — Brand and links visible:
+  - **WHEN** the page loads
+  - **THEN** the brand "Penman" is displayed
+  - **THEN** all 7 navigation links are visible
+- Scenario — Mobile menu toggle:
+  - **WHEN** the user clicks the hamburger menu button on mobile
+  - **THEN** the navigation links become visible
+  - **WHEN** the user clicks a navigation link
+  - **THEN** the mobile menu closes
+
+### 2. Hero
+- The template SHALL render a full-height hero section with a book headline, description, and CTA button.
+- Scenario — Hero content:
+  - **WHEN** the page loads
+  - **THEN** the subheading "Best Seller Book Of The Week" is displayed
+  - **THEN** the headline "Clue Of The Wooden Cottage" is displayed
+  - **THEN** a "Buy Now For $22.78" CTA button is present
+  - **THEN** a book illustration image is displayed
+
+### 3. Partners
+- The template SHALL render 5 partner logo placeholders in a row.
+- Scenario — Partner logos:
+  - **WHEN** the page loads
+  - **THEN** 5 partner logo images are displayed
+
+### 4. About
+- The template SHALL render a split about section with image and book description.
+- Scenario — About content:
+  - **WHEN** the page loads
+  - **THEN** the heading "About The Book" is displayed
+  - **THEN** subsections "Award achievements", "Read On Any Devices", "Very High Resolution" are displayed
+
+### 5. Counter
+- The template SHALL render animated stat counters for book metrics.
+- Scenario — Counter labels:
+  - **WHEN** the page loads
+  - **THEN** the labels "Copies Sold", "Copies Released", "Cup Of Coffee", "Happy Readers" are displayed
+
+### 6. Chapter
+- The template SHALL render a chapter browser with sidebar navigation and content panels.
+- Scenario — Chapter navigation:
+  - **WHEN** the page loads
+  - **THEN** the heading "What's Inside The Book" is displayed
+  - **THEN** 8 chapter navigation links are displayed
+  - **THEN** the default chapter "Title Page" content is shown
+- Scenario — Chapter switching:
+  - **WHEN** the user clicks a different chapter link
+  - **THEN** the content panel updates to show the selected chapter
+
+### 7. Testimonials
+- The template SHALL render customer testimonials on a dark background.
+- Scenario — Testimonials:
+  - **WHEN** the page loads
+  - **THEN** the heading "Kinds Words From Customers" is displayed
+  - **THEN** 3 testimonial cards with quote, name, and position are displayed
+
+### 8. MyBooks
+- The template SHALL render a grid of book cover cards.
+- Scenario — Book grid:
+  - **WHEN** the page loads
+  - **THEN** the heading "My Other Books" is displayed
+  - **THEN** 8 book cover cards are displayed with title and genre
+
+### 9. AuthorBio
+- The template SHALL render an author bio with info list and CTA.
+- Scenario — Author info:
+  - **WHEN** the page loads
+  - **THEN** the author name "Franklin Henderson" is displayed
+  - **THEN** the info list with Name, Date of birth, Address, Zip code, Email, Phone is displayed
+  - **THEN** "View All Books" CTA is displayed
+
+### 10. Contact
+- The template SHALL render a contact form with info cards and map placeholder.
+- Scenario — Contact form:
+  - **WHEN** the page loads
+  - **THEN** the heading "Contact Me" is displayed
+  - **THEN** 4 info cards (Address, Phone, Email, Website) are displayed
+  - **THEN** a contact form with Name, Email, Subject, Message fields and Send button is displayed
+
+### 11. Footer
+- The template SHALL render a four-column footer with Component Dock branding.
+- Scenario — Footer columns:
+  - **WHEN** the page loads
+  - **THEN** columns "About", "Links", "Services", "Have a Questions?" are displayed
+  - **THEN** social links (Twitter, Facebook, Instagram) are displayed
+- Scenario — Component Dock link:
+  - **WHEN** the page loads
+  - **THEN** a link to "https://www.componentdock.com/" branded as "Component Dock" is present
+
+### Cross-cutting requirements
+
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/penman/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/penman/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; **Primary brand color:** `#17b978` (green/teal); **Button color:** `#007bff` (Bootstrap blue); **Font pairing:** Raleway (headings) + Open Sans (body); **Section backgrounds:** White (`#fff`), light gray (`#f8f9fa`), dark overlay on images; **Testimonial section:** Dark background with white text overlay; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/penman` ships on https://penman.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/penman/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/penman/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/penman/public/CNAME` = `penman.free.componentdock.com`
+  and the package `homepage` = `https://penman.free.componentdock.com`.

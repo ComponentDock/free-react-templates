@@ -1,0 +1,144 @@
+# Cuddle — Implementation Tasks
+
+Source design: **Lovecare** (`https://colorlib.com/wp/template/lovecare/`) → recreation name **cuddle**. Shipped at https://cuddle.free.componentdock.com.
+
+Scope: A charity/donation landing page template with hero, donation widget, causes carousel, volunteer showcase, testimonials, blog, and footer — all styled with warm gold/teal brand colors, Patrick Hand display font, and Poppins body font.
+
+## Component breakdown
+
+Render order as composed in `apps/cuddle/src/App.tsx`:
+
+### 1. Navbar
+- Users SHALL see a fixed navbar with logo on left and navigation links on right.
+- Scenario — Desktop navbar visible:
+  - **WHEN** viewport width ≥ 992px
+  - **THEN** logo and nav links (Home, About, Causes, Blog, Contact) are visible
+- Scenario — Mobile hamburger menu:
+  - **WHEN** viewport width < 992px
+  - **THEN** hamburger button is visible and toggles mobile menu
+- Scenario — Scrolled navbar state:
+  - **WHEN** user scrolls > 80px
+  - **THEN** navbar gains white background and shadow
+
+### 2. Hero
+- Users SHALL see a full-screen hero with child portrait background, gold/white heading in Patrick Hand font, two CTAs, and a right-side donation widget.
+- Scenario — Hero content renders:
+  - **WHEN** page loads
+  - **THEN** hero shows bg image + dark overlay + H1 "Raising Hope / To the Homeless & Hopeless People" in Patrick Hand
+- Scenario — Primary CTA scrolls to causes:
+  - **WHEN** "Join Us" button clicked
+  - **THEN** page scrolls smoothly to causes/donate section
+- Scenario — Video CTA interaction:
+  - **WHEN** "Watch Video" link clicked
+  - **THEN** lightbox/modal opens (or no-op for static build)
+- Scenario — Donation widget renders:
+  - **WHEN** page loads
+  - **THEN** right sidebar shows stats box ($1,850,000 raised) + form with 5 fields (name, email, cause select, amount, payment radios)
+
+### 3. Intro
+- Users SHALL see a two-column section with image left, content right, and three feature cards.
+- Scenario — Intro section renders:
+  - **WHEN** page loads
+  - **THEN** section shows left image + right content with heading "We Help Thousands of Children to Get Their Education" + 3 feature cards (Start Donating, Join Community, Be Volunteer)
+
+### 4. Counter
+- Users SHALL see a section with background image and four stat cards.
+- Scenario — Counter stats render:
+  - **WHEN** page loads
+  - **THEN** four stat cards show $60M, 9200, 5800, 2750 over bg image
+
+### 5. Causes
+- Users SHALL see a horizontal carousel of cause cards with category badge, title, progress bar, and raised/goal amounts.
+- Scenario — Causes carousel renders:
+  - **WHEN** page loads
+  - **THEN** 3+ cause cards visible in carousel
+- Scenario — Carousel navigation:
+  - **WHEN** next/prev or pagination clicked
+  - **THEN** corresponding slide shown
+
+### 6. CtaImage
+- Users SHALL see left content with heading and two CTAs, right background image.
+- Scenario — CTA/Image section renders:
+  - **WHEN** page loads
+  - **THEN** left side shows "The Smallest Act of Kindness..." heading + Donate Now / Become Volunteer buttons, right side shows bg image
+
+### 7. Volunteers
+- Users SHALL see a responsive grid of 4 volunteer cards with photo, name, role, and social icons.
+- Scenario — Volunteers grid renders:
+  - **WHEN** page loads
+  - **THEN** 4 volunteer cards in responsive grid (1 col mobile, 2 col tablet, 4 col desktop)
+- Scenario — Volunteer card shows social links:
+  - **WHEN** volunteer card renders
+  - **THEN** Twitter, Facebook, Google, Instagram icons present with aria-labels
+
+### 8. Testimonials
+- Users SHALL see a carousel of testimonial cards with quote, author, and role.
+- Scenario — Testimonials carousel renders:
+  - **WHEN** page loads
+  - **THEN** testimonial cards visible with navigation
+
+### 9. CtaBanner
+- Users SHALL see a full-width banner with heading and volunteer CTA button.
+- Scenario — CTA Banner renders:
+  - **WHEN** page loads
+  - **THEN** "Do You Care Our Children?" heading + "Be A Volunteer" button visible
+
+### 10. Blog
+- Users SHALL see a responsive grid of 3 blog cards with image, meta, title, excerpt, and read more link.
+- Scenario — Blog grid renders:
+  - **WHEN** page loads
+  - **THEN** 3 blog cards in responsive grid
+
+### 11. Footer
+- Users SHALL see a dark teal footer with about column, recent posts, contact info, and copyright bar linking to Component Dock.
+- Scenario — Footer renders:
+  - **WHEN** page loads
+  - **THEN** 3 columns: About + socials, Recent Posts (2), Contact Info
+- Scenario — Copyright bar links Component Dock:
+  - **WHEN** footer copyright bar renders
+  - **THEN** link to https://www.componentdock.com/ with text "Component Dock"
+
+### Cross-cutting requirements
+
+- **Donation widget form handles input** — Users SHALL be able to interact with the donation form fields.
+  - Scenario — Form submission prevented: **WHEN** form submitted with valid data; **THEN** default submit is prevented (no backend)
+  - Scenario — Cause select updates value: **WHEN** cause dropdown changed; **THEN** selected value updates
+  - Scenario — Payment radio selection: **WHEN** payment radio changed; **THEN** selection updates visually
+- **Design tokens applied correctly** — The template SHALL use the specified design tokens.
+  - Scenario — Brand colors used: **WHEN** any component renders; **THEN** primary gold #d49a3a used for buttons/accents, teal #042628 for footer, warm beige #f3f0eb for section backgrounds
+  - Scenario — Fonts loaded: **WHEN** page loads; **THEN** Patrick Hand for headings, Poppins for body via Google Fonts
+  - Scenario — Button radius: **WHEN** buttons render; **THEN** 40px (pill) radius applied
+- **Accessibility standards met** — The template SHALL meet WCAG AA basics.
+  - Scenario — Semantic HTML: **WHEN** page renders; **THEN** nav, main, section, footer elements used appropriately
+  - Scenario — Heading hierarchy: **WHEN** page renders; **THEN** h1 → h2 → h3 hierarchy maintained
+  - Scenario — Form labels: **WHEN** donation form renders; **THEN** all inputs have associated labels
+  - Scenario — Focus visible: **WHEN** interactive elements focused; **THEN** visible focus ring shown
+  - Scenario — Image alt text: **WHEN** images render; **THEN** descriptive alt text present
+  - Scenario — ARIA labels on icon buttons: **WHEN** social links or carousel controls render; **THEN** aria-label present
+- **Responsive breakpoints work** — The template SHALL adapt to mobile, tablet, desktop.
+  - Scenario — Mobile hero stacks: **WHEN** viewport < 992px; **THEN** hero sidebar stacks below main content (`.col-lg-6` / `col-md-5 order-lg-last` split ends at 992)
+  - Scenario — Grid responsiveness: **WHEN** viewport < 768px; **THEN** grids show 1 column; **WHEN** viewport < 992px; **THEN** grids show 2 columns (`col-md-6`); **WHEN** viewport ≥ 992px; **THEN** grids show 3-4 columns (`col-lg-4`)
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/cuddle/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/cuddle/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+
+## Verification
+
+- [x] `apps/cuddle` ships on https://cuddle.free.componentdock.com
+- [x] Typecheck / lint / tests / build pass at the repo gate
+- [x] Section order and copy match the design notes
+- [x] No source-designer name, source URL or source template name under `apps/cuddle/`
+- [x] Footer links Component Dock
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer — or, when the design ships no footer, the page's
+  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
+  the only attribution line the recreation carries.
+- **Source credit is reading, not copy.** Where the research above quotes the
+  source's own credit string ("… made with ♥ by …"), it is what the source band
+  renders: the recreation replaces it with the Component Dock credit.
+- **Provenance ban.** No file under `apps/cuddle/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/cuddle/public/CNAME` = `cuddle.free.componentdock.com`
+  and the package `homepage` = `https://cuddle.free.componentdock.com`.
