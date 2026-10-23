@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lectern brand — from the ColorLib "Unica" preview stylesheet:
+  /* Lectern brand — measured from the reference stylesheet:
      orange #f6783a (buttons, counters, accents), dark navy #020031
      (counter bg, footer), body text #111111 / #636363. */
   --color-brand: #f6783a;

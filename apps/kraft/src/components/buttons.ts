@@ -1,6 +1,6 @@
 /**
- * Square outline button styles — recreated from ColorLib "CardBoard"
- * css/style.css `.btn-outline-black` / `.btn-outline-white`
+ * Square outline button styles — measured from the reference
+ * stylesheet (css/style.css): `.btn-outline-black` / `.btn-outline-white`
  * (2px border, uppercase, bold 13px, letter-spacing .2em, padding 10px 20px,
  * radius 0; hover inverts).
  */

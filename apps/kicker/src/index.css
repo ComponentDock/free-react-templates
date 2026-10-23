@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Kicker brand palette — recreated from the ColorLib "Megasis" template
-     (https://colorlib.com/wp/template/megasis/), tokens extracted from
-     the live preview's assets/css/style.css:
+  /* Kicker brand palette — measured from the reference design;
+     tokens extracted from the reference stylesheet:
      - brand red #C70D0D (CTA buttons, kicker tags, headline hovers)
      - ink / near-black #131313 (headlines, nav, dark section/footer bg)
      - footer text #C2C5DB (link color on dark bg)

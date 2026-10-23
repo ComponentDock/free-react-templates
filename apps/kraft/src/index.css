@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Kraft brand palette — recreated from the ColorLib "CardBoard" creative
+  /* Kraft brand palette — measured from the reference design creative
      agency design (css/style.css): brand amber #ffc107 (CTA band, "Who We
      Are" kicker, "View All Portfolio" link, service icons, dropdown hovers),
      hover amber #d39e00, signature footer amber #ffc809, dark #343a40

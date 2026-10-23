@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Kreativ brand palette — recreated from the ColorLib "Creativex 3" design
+  /* Kreativ brand palette — measured from the reference design
      (brand fuchsia #d946ef, accent orange #f97316). */
   --color-primary-50: #fdf4ff;
   --color-primary-100: #fae8ff;
