@@ -13,6 +13,6 @@ describe('Hero', () => {
     const image = container.querySelector('img')
     expect(image).not.toBeNull()
     expect(image).toHaveAttribute('alt', '')
-    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/dogger-hero/)
+    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/barkly-hero/)
   })
 })

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Dogger brand sage green — from the reference design (css/style.css):
+  /* Brand sage green — design-token note from the reference design (css/style.css):
      --primary, .btn-primary, navbar active/hover, .hover-1 overlay,
      accordion open toggle, testimonial blockquote background, trainers +
      pricing section background. */

@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/dogger",
+  "name": "@free-react-templates/barkly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://dogger.free.componentdock.com",
+  "homepage": "https://barkly.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

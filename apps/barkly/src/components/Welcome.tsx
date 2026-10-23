@@ -4,19 +4,19 @@ const features = [
   {
     title: 'Love & Care',
     copy: 'Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-    seed: 'dogger-feature-1',
+    seed: 'barkly-feature-1',
     flip: false,
   },
   {
     title: 'Fearsome',
     copy: 'Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-    seed: 'dogger-feature-2',
+    seed: 'barkly-feature-2',
     flip: true,
   },
   {
     title: 'Beautiful',
     copy: 'Far far away, behind the word mountains, Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.',
-    seed: 'dogger-feature-3',
+    seed: 'barkly-feature-3',
     flip: false,
   },
 ] as const
@@ -30,7 +30,7 @@ export function Welcome() {
             <PawPrint className="h-8 w-8" aria-hidden="true" />
           </span>
           <h2 className="mt-4 text-3xl font-extrabold text-black dark:text-white">
-            Welcome to Dogger Pet Care
+            Welcome to Barkly Pet Care
           </h2>
           <p className="mt-4 text-sm font-light leading-relaxed text-gray-500 dark:text-gray-400">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,

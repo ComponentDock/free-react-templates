@@ -1,10 +1,10 @@
 const photos = [
-  { seed: 'dogger-gallery-1' },
-  { seed: 'dogger-gallery-2' },
-  { seed: 'dogger-gallery-3' },
-  { seed: 'dogger-gallery-4' },
-  { seed: 'dogger-gallery-5' },
-  { seed: 'dogger-gallery-6' },
+  { seed: 'barkly-gallery-1' },
+  { seed: 'barkly-gallery-2' },
+  { seed: 'barkly-gallery-3' },
+  { seed: 'barkly-gallery-4' },
+  { seed: 'barkly-gallery-5' },
+  { seed: 'barkly-gallery-6' },
 ] as const
 
 export function Gallery() {
