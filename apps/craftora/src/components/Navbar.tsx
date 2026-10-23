@@ -35,7 +35,7 @@ export function Navbar() {
           href="#home"
           className="font-display text-2xl font-bold tracking-wide text-black dark:text-white"
         >
-          Chimper
+          Craftora
         </a>
 
         <div className="flex items-center gap-4">

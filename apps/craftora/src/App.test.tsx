@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the top bar, navbar, all sections, and footer with the correct landmarks and title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Chimper — Web Agency Template')
+    expect(document.title).toBe('Craftora — Web Agency Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -18,7 +18,7 @@ describe('App', () => {
     expect(
       screen.getByRole('heading', {
         level: 2,
-        name: 'Welcome To Chimper An Awward Winning Web Agency',
+        name: 'Welcome To Craftora An Awward Winning Web Agency',
       }),
     ).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: 'Our Values' })).toBeInTheDocument()

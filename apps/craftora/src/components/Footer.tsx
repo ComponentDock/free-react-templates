@@ -65,7 +65,7 @@ export function Footer() {
         </div>
 
         <p className="mt-14 border-t border-white/10 pt-8 text-center text-sm text-muted">
-          Copyright © {new Date().getFullYear()} Chimper. All rights reserved.
+          Copyright © {new Date().getFullYear()} Craftora. All rights reserved.
         </p>
       </div>
       <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">

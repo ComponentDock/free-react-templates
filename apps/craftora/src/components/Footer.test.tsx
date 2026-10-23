@@ -27,7 +27,7 @@ describe('Footer', () => {
     expect(screen.getByRole('button', { name: 'Send' })).toBeInTheDocument()
 
     expect(
-      screen.getByText(`Copyright © ${new Date().getFullYear()} Chimper. All rights reserved.`),
+      screen.getByText(`Copyright © ${new Date().getFullYear()} Craftora. All rights reserved.`),
     ).toBeInTheDocument()
   })
 

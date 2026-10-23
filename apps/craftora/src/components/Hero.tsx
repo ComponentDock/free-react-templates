@@ -20,8 +20,8 @@ export function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
       <img
-        src="https://picsum.photos/seed/chimper-hero/1920/1080"
-        alt="Chimper hero workspace"
+        src="https://picsum.photos/seed/craftora-hero/1920/1080"
+        alt="Craftora hero workspace"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
