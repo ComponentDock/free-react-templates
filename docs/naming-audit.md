@@ -74,6 +74,12 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
    `package-lock.json`), then `npm run readme:status`.
 9. `bash scripts/verify-app.sh <new>`, PR, squash-merge, delete the stale Surge
    site for the old hostname.
+   The post-merge deploy may abort with `Aborted - Rate limited. (account). Verify
+   email or try again in 10 hours.` (Surge free-tier quota). That is not a rename
+   defect: the `verify` step in the same job passes and the nightly fleet audit
+   re-deploys the new host. `surge` is not installed on the runner, so the old
+   hostname cannot be torn down locally — leave it.
+
 
 Prefer names that evoke the design (pet care → `Vetly`, horse → `Stable`), a
 single lowercase word, no collision with `ls apps/`.
