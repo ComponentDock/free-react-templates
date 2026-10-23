@@ -11,6 +11,15 @@ TypeScript.
 **Preview URL:** https://preview.colorlib.com/theme/musica/
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/musica-free-template.jpg
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#cc1573` | live sheet paints it ×42 — `background` on `.bg-gradients`; style.css (61,414 B, sha256 9380fb83219d) · <https://preview.colorlib.com/theme/musica/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #5722a9 x30, #bd177a x17, #27203f x1.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile menu

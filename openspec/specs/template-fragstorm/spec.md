@@ -13,6 +13,15 @@ Fragstorm is a gaming magazine template that recreates the ColorLib "Amin" desig
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fragstorm` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c20000` | live sheet paints it ×26 — `background` on `.section-title h5:after`; style.css (78,997 B, sha256 4394b0cd023a) · <https://preview.colorlib.com/theme/amin/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: TopBar displays weather, date, and social links

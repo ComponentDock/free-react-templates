@@ -53,6 +53,15 @@ TypeScript.
 Tessera lives in `apps/tessera` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0033c7` | live sheet paints it ×26 — `background` on `.hero-wrap .overlay`; style.css (77,535 B, sha256 62680c7f9e35) · <https://preview.colorlib.com/theme/mosaic/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

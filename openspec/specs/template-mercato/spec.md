@@ -57,6 +57,15 @@ PR.
 - **Footer:** light grey, 4 columns (About Us, Newsletter, Instagram Feed,
   Follow Us), copyright with Component Dock link.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffba00` | live sheet paints it ×66 — `background` on ` .blog-pagination .page-item.active .page-link, .single-footer-widget .click-btn`; main.css (112,824 B, sha256 b40c520261a3) · <https://preview.colorlib.com/theme/karma/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation header

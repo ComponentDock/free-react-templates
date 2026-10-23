@@ -17,6 +17,15 @@ links to Bio, Portfolio, Resume, and Contact pages. The template uses Open Sans
 for body text and Playfair Display for headings, with a coral/rose pink accent
 color (#F73859).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f73859` | live sheet paints it ×6 — `background` on `header .navbar .dropdown-menu .dropdown-item:hover`; style.css (8,582 B, sha256 244aba9109db) · <https://preview.colorlib.com/theme/personify/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Split-screen layout with fixed profile image

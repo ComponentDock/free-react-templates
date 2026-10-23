@@ -127,6 +127,15 @@ CSS 4 + TypeScript.
 Newswire lives in `apps/newswire` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#8bc34a` | live sheet paints it ×12 — `background` on `.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after`; style.css (23,638 B, sha256 8ec6f7d6136c) · <https://preview.colorlib.com/theme/meranda/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -6,6 +6,15 @@ Recreation of ColorLib Reg Form V13 (https://colorlib.com/wp/template/colorlib-r
 
 A split-screen dinner event booking form with a warm peach background, dark form panel, floating labels, dropdown selectors, and a person-count radio group with an active pill indicator.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#edb77d` | live sheet paints it ×6 — `background` on `.cl-active`; style.css?v=abb728b4 (11,471 B, sha256 830650a432c4) · <https://colorlib.com/etc/regform/colorlib-regform-13/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Renders all form fields

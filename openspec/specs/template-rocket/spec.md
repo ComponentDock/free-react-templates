@@ -53,6 +53,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Rocket lives in `apps/rocket` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#46dbf9` | live sheet paints it ×61 — `background-color` on `::selection`; main.css (68,570 B, sha256 74e5b63d5df5) · <https://preview.colorlib.com/theme/appru/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

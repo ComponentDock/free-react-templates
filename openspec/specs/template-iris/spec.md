@@ -238,6 +238,15 @@ p`, `.news_widget p`, `.social_widget p` (Roboto 14px/24px).
 Iris lives in `apps/iris` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fa333f` | live sheet paints it ×42 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (62,480 B, sha256 72f8f1365dde) · <https://preview.colorlib.com/theme/flash/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Fixed header with logo, navigation and dropdowns

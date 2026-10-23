@@ -31,6 +31,15 @@ backgrounds and a green submit button with arrow icon.
 | Placeholder color    | #999999                           |
 | Text muted           | #666666                           |
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#0072ff` | live sheet paints it ×4 — `background` on `.contact1`; style.css?v=0ffd760c (10,112 B, sha256 3d85b9c5c5ae) · <https://colorlib.com/etc/cf/ContactFrom_v1/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #00c6ff x4, #57b846 x1, #009bff x1.
+
 ## Requirements
 
 ### Requirement: Full-page gradient background

@@ -171,6 +171,15 @@ body text (14px). Buttons are fully PILL-shaped (`border-radius: 30px`,
   Maldives, Dubai), with a blinking cursor; a static first word is an
   acceptable progressive-enhancement fallback.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#08d9d6` | live sheet paints it ×35 — `background-color` on `.bg-primary`; style.css (33,805 B, sha256 08a634c36967) · <https://preview.colorlib.com/theme/travel2/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Navbar

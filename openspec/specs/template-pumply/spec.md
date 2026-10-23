@@ -195,6 +195,15 @@ rounded-0`). Bottom `row.pt-5.mt-5.text-center` copyright bar:
 Pumply lives in `apps/pumply` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#48d494` | live sheet paints it ×24 — `border-color` on `.form-control:active, .form-control:focus`; style.css (18,408 B, sha256 3cb89d5ad6dd) · <https://preview.colorlib.com/theme/gymer/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent navbar with wordmark, links, and outlined CTA

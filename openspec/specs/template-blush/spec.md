@@ -64,6 +64,15 @@ TypeScript.
 Blush lives in `apps/blush` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff4c8b` | live sheet paints it ×45 — `background-color` on `.search-button a`; style.css (39,631 B, sha256 e861256b655f) · <https://preview.colorlib.com/theme/selene/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

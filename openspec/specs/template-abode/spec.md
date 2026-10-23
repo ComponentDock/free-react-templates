@@ -38,6 +38,15 @@ CSS 4 + TypeScript.
 Abode lives in `apps/abode` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#d6a04c` | live sheet paints it ×73 — `background` on `#back-top`; style.css (76,157 B, sha256 09e77f6bfa6c) · <https://preview.colorlib.com/theme/belara/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

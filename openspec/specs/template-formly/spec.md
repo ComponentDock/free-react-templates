@@ -66,6 +66,15 @@ Single centered card on gradient background:
      - **Submit button** — "REGISTER", coral red (#EF4444), uppercase, 6px radius
 3. **Footer** — links to https://www.componentdock.com/
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#08aeea` | live sheet paints it ×5 — `background` on `.bg-gra-03`; style.css?v=89870ded (14,144 B, sha256 fb4ef6c840ab) · <https://colorlib.com/etc/regform/colorlib-regform-5/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #b721ff x5, #eb3746 x1, #ff4b5a x1.
+
 ## Requirements
 
 ### Requirement: Page renders the registration form

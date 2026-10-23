@@ -63,6 +63,7 @@ Extracted from `https://preview.colorlib.com/theme/sunfest/style.css`:
 | Next Events       | Bg image with semi-transparent overlays on cards       |
 | Last News         | White cards on dark bg                                 |
 | Footer            | Bg image (`footer-cover.jpg`)                          |
+| Brand (stated in this prep) | `#00d0ff` | live sheet paints it ×13 — `background` on `.hero-content .entry-header h2`; style.css (41,675 B, sha256 d773ed12f08d) · <https://preview.colorlib.com/theme/sunfest/> |
 
 ## Section Structure (top to bottom)
 

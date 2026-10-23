@@ -50,6 +50,15 @@ A Login Form template with form title, input fields, sign in button, forgot pass
 | Rhythm | vertical stack inside the form: title (`p-b-34`) → user name → password → button → "Forgot / User name–password?" (`p-t-27 p-b-239`) → "Sign Up" |
 | Bands | single-screen: light page → white card, form half white, photo half image — no dark bands |
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#00ad5f` | live sheet paints it ×4 — `background` on `.login100-form-btn`; style.css?v=93221552 (11,098 B, sha256 b29ce0a2d5cf) · <https://colorlib.com/etc/lf/Login_v17/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #c80000 x3.
+
 ## Requirements
 
 ### Requirement: Split-screen layout

@@ -157,6 +157,15 @@ rgba(0,0,0,0.15)`, height drops 100→70px, `position: fixed` top 0).
 Journal lives in `apps/journal` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#30336b` | live sheet paints it ×18 — `background-color` on `.original-btn:hover, .original-btn:focus`; style.css (43,889 B, sha256 5c694f69bd47) · <https://preview.colorlib.com/theme/original/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with ticker, logo and nav

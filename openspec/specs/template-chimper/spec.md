@@ -74,6 +74,15 @@ under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Chimper lives in `apps/chimper` and uses shared components from `packages/ui`
 (ButtonLink) where the house pattern does.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0d0cb5` | live sheet paints it ×14 — `border-color` on `.form-control:active, .form-control:focus`; style.css (22,329 B, sha256 52a01e23904b) · <https://preview.colorlib.com/theme/chimper/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar

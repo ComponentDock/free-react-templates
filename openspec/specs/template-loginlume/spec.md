@@ -17,6 +17,15 @@ responsive down to mobile.
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v18.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/loginlume` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#6675df` | live sheet paints it ×5 — `background` on `.login100-form-btn`; style.css?v=e8521769 (14,150 B, sha256 31b21277b932) · <https://colorlib.com/etc/lf/Login_v18/index.html> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Login form renders all fields and controls

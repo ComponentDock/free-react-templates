@@ -17,6 +17,15 @@ Passage is an immigration and visa consultation landing page template. It provid
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/immigration-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/passage` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f6214b` | live sheet paints it ×61 — `background-color` on `::selection`; main.css (48,703 B, sha256 a1a2d35195df) · <https://preview.colorlib.com/theme/immigration/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with top bar and navigation links

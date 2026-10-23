@@ -47,6 +47,15 @@ TypeScript.
 Gable lives in `apps/gable` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ccb78f` | live sheet paints it ×15 — `background-color` on `#colorlib-aside #colorlib-main-menu ul li a:after`; style.css (60,359 B, sha256 0490aed77d4b) · <https://preview.colorlib.com/theme/kd/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

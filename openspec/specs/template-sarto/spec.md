@@ -4,6 +4,15 @@
 
 Recreation of ColorLib "Fashiop" (https://colorlib.com/wp/template/fashiop/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template. Sarto is a fashion e-commerce landing page with a bold blue brand palette, full-width hero banner, product grid with hover icons, newsletter subscription, and a multi-column footer.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#1641ff` | live sheet paints it ×73 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (100,207 B, sha256 6e367f6483e6) · <https://preview.colorlib.com/theme/fashiop/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact and account links

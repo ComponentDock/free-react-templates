@@ -8,6 +8,15 @@ template (source: https://colorlib.com/wp/template/lingua/), built under a
 DIFFERENT name (**Lingo**), with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2e21df` | live sheet paints it ×18 — `background` on `.home_button`; main_styles.css (39,584 B, sha256 effd234ec19b) · <https://preview.colorlib.com/theme/lingua/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header navigation

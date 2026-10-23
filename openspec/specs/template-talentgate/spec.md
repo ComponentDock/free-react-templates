@@ -28,6 +28,15 @@ Tailwind CSS 4 + TypeScript.
   9. Newsletter: Parallax dark background, email input, green subscribe button.
   10. Footer: Dark blue-gray, three columns (About + social icons, Employers links, Workers links), "Made with Component Dock" link.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#157efb` | live sheet paints it ×24 — `background` on `.ftco-navbar-light .navbar-nav > .nav-item.cta > a`; style.css (71,587 B, sha256 8384bbbc64c3) · <https://preview.colorlib.com/theme/jobportal/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

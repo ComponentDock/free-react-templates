@@ -192,6 +192,15 @@ from-gray-900/90 via-gray-900/70 to-gray-900/40` overlay; headline
 Moda lives in `apps/moda` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c026d3` | live sheet paints it ×1 — `--color-primary-600` on `:root,:host`; Base.ZZmJ7T3G.css (46,604 B, sha256 b5f8576f354d) · <https://preview.colorlib.com/theme/shopper/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Announcement bar

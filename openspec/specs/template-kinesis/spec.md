@@ -235,6 +235,15 @@ Kinesis lives in `apps/kinesis` and uses shared components from
 Navbar/Footer chrome (adapted to the transparent-over-hero navbar and the
 dark 3-column footer with red accents).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#e1193e` | live sheet paints it ×66 — `background` on `.topper .ftco-social li a:after`; style.css (87,732 B, sha256 51abab4b25dd) · <https://preview.colorlib.com/theme/dazko/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top strip

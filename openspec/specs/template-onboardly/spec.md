@@ -31,6 +31,15 @@ Onboardly is a multi-step wizard form page with a footer. It recreates the Color
 7. **Navigation buttons** — Next/Previous with gradient background
 8. **Footer** — Component Dock link
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#2b5876` | live sheet paints it ×14 — `background-image` on `body`; style.css?v=e07163b0 (11,374 B, sha256 27ac98201b13) · <https://colorlib.com/etc/bwiz/colorlib-wizard-20/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #4e4376 x14, #884d80 x14, #a1c4fd x11.
+
 ## Requirements
 
 ### Feature: Onboardly account setup wizard

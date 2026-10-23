@@ -150,6 +150,15 @@ sans-serif`. Load via Google Fonts `<link>` in `index.html`.
   `https://picsum.photos/seed/crewcut-about/600/500`, team 1–4 →
   `https://picsum.photos/seed/crewcut-team-<n>/400/400`.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#4cd3e3` | live sheet paints it ×7 — `background` on `.genric-btn.success`; main.css (34,944 B, sha256 3a6d16f74454) · <https://preview.colorlib.com/theme/barber/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent navbar over gradient banner

@@ -39,6 +39,15 @@ CSS 4 + TypeScript.
 Mosh lives in `apps/mosh` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#4a7aec` | live sheet paints it ×38 — `border-color` on `.mosh-preloader`; style.css (33,510 B, sha256 ead508f65cb9) · <https://preview.colorlib.com/theme/mosh/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -217,6 +217,15 @@ lg:grid-cols-5` (4 fields + button), section backgrounds alternate
 Roamly lives in `apps/roamly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0d9488` | live sheet paints it ×8 — `background-color` on `.btn-primary`; Base.BnAJDKUQ.css (44,541 B, sha256 bd760dd9fcb6) · <https://preview.colorlib.com/theme/wanderlust/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with logo, nav, dropdown, and actions

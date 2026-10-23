@@ -65,6 +65,15 @@ Tailwind CSS 4 + TypeScript.
 Driven lives in `apps/driven` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0ab6ff` | live sheet paints it ×60 — `border` on `.btn_2:hover`; style.css (151,019 B, sha256 d1073e3132a6) · <https://preview.colorlib.com/theme/sasu/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

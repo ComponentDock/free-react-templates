@@ -259,6 +259,15 @@ height: calc(100vh)`; card columns 3-up (col-lg-3 shows / col-lg-4
 Decibel lives in `apps/decibel` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#e3207b` | live sheet paints it ×18 — `border-color` on `.form-control:active, .form-control:focus`; style.css (25,622 B, sha256 a3b71f8e2cea) · <https://preview.colorlib.com/theme/deejee/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

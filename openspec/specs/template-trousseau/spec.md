@@ -189,6 +189,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Trousseau lives in `apps/trousseau` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff2f92` | live sheet paints it ×45 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (66,582 B, sha256 0371e45e92c6) · <https://preview.colorlib.com/theme/honey/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header / navigation

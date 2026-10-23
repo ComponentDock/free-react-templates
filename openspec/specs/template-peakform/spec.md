@@ -15,6 +15,15 @@ Peakform is a gym and fitness landing page template, recreating the ColorLib Iro
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/ironmuscle-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/peakform` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f23a2e` | live sheet paints it ×12 — `border-color` on `.form-control:active, .form-control:focus`; style.css (23,298 B, sha256 c031018d09d3) · <https://preview.colorlib.com/theme/ironmuscle/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar renders logo, navigation links, and dropdown

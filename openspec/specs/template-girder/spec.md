@@ -41,6 +41,15 @@ Tailwind CSS 4 + TypeScript.
 Girder lives in `apps/girder` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#eb1c24` | live sheet paints it ×31 — `--bs-primary` on `:root`; style.css (56,259 B, sha256 9597cd55df9f) · <https://preview.colorlib.com/theme/constructed/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -195,6 +195,15 @@ rgba(21,228,253,0.9), rgba(36,76,253,0.9))` overlay; inputs width 100%,
 Curale lives in `apps/curale` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#244cfd` | live sheet paints it ×43 — `background-color` on `.spinner`; style.css (43,189 B, sha256 3bb7ba1a2302) · <https://preview.colorlib.com/theme/medino/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top info bar and sticky navigation header

@@ -136,6 +136,15 @@ relative` + `:after` overlay **`#0028ff`** (`opacity: 0` → **.7** on
 Volt lives in `apps/volt` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0028ff` | live sheet paints it ×16 — `background` on `#colorlib-aside:after`; style.css (58,917 B, sha256 a708d397351b) · <https://preview.colorlib.com/theme/ionize/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Sidebar

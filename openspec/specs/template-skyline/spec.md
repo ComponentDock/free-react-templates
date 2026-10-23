@@ -27,6 +27,15 @@ types (no ColorLib assets copied).
   `#777777`, headings `#000000`, section bg `#f9f9ff`, font headings
   "Playfair Display", font body "Roboto".
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ad9966` | live sheet paints it ×55 — `background-color` on `::selection`; main.css (68,380 B, sha256 7497dd9077ff) · <https://preview.colorlib.com/theme/rooftop/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and booking CTA

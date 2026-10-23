@@ -240,6 +240,7 @@ btn2` "Subscribe" (bg `#FEC82F`, color `#040F2E`, padding 17px 42px,
 | hero-overlay   | horizontal gradient `rgba(25,40,57,0.6)` → `rgba(25,40,57,0.1)` | hero-overly overlay over the hero photo                                                                                                                                                                    |
 | font-heading   | "Shippori Mincho"                                               | h1-h6, hero h1 (54px/600), quote (31px/600), promo-tab span, newsletter h2 (Google Fonts 400-800)                                                                                                          |
 | font-body      | "Roboto"                                                        | nav, buttons, body copy, card text (Google Fonts 300/400/500/700/900)                                                                                                                                      |
+| Brand (stated in this prep) | `#fec82f` | live sheet paints it ×84 — `background` on `.theme-bg`; style.css (127,796 B, sha256 da262365cd7c) · <https://preview.colorlib.com/theme/homofy/> |
 
 Radii: **0 on all buttons** (square — border-btn hero-btn, btn_01, .btn,
 submit-btn2, boxed-btn); **50% circles** on back-top/scrollUp (40px),

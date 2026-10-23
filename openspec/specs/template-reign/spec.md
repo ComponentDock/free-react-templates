@@ -15,6 +15,15 @@ Recreate the ColorLib Monarchy template as a React 19 + Tailwind CSS 4 + TypeScr
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/monarchy-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/reign` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f26200` | live sheet paints it ×18 — `border-color` on `.form-control:active, .form-control:focus`; style.css (19,524 B, sha256 2629fb191584) · <https://preview.colorlib.com/theme/monarchy/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar with sticky behavior

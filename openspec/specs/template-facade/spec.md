@@ -45,6 +45,15 @@ CSS 4 + TypeScript.
 Facade lives in `apps/facade` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#cea06c` | live sheet paints it ×58 — `background-color` on `::selection`; main.css (51,397 B, sha256 2be0d68d35e3) · <https://preview.colorlib.com/theme/arclabs/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

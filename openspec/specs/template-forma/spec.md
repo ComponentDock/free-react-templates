@@ -101,6 +101,15 @@ migration, so it follows the mirror, not today's preview host.
 Forma lives in `apps/forma` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#8c6124` | live sheet paints it ×6 — `background-color` on `.btn-primary:hover`; Base.C6KfloYb.css (56,194 B, sha256 52ae2615565f) · <https://preview.colorlib.com/theme/atelier/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

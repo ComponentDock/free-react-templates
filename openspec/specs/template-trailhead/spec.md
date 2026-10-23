@@ -132,6 +132,15 @@ d-block.d-sm-flex` (figure order-2 flex 150px rounded + text order-1 mr-4:
 Trailhead lives in `apps/trailhead` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2f89fc` | live sheet paints it ×13 — `background` on `.tags li a:hover`; style.css (24,504 B, sha256 b8402afcea58) · <https://preview.colorlib.com/theme/hikers/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header and navigation

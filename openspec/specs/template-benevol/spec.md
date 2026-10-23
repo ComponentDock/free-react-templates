@@ -238,6 +238,15 @@ row` mb-4; footer `4em 0` / `8em 0`; team card padding 30px.
 Benevol lives in `apps/benevol` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fd5f00` | live sheet paints it ×15 — `background` on `.primary-primary-outline--hover`; style.css (21,181 B, sha256 79095c60a3c2) · <https://preview.colorlib.com/theme/foundation/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Sticky navbar with wordmark and anchor links

@@ -263,6 +263,15 @@ auto`); counters 2-up (`col-6`); pricing 1-up; section-6 `:before`
 Momentum lives in `apps/momentum` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#743ad5` | live sheet paints it ×44 — `--bs-primary` on `:root`; style.css (59,342 B, sha256 6dfff34e54b4) · <https://preview.colorlib.com/theme/action/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent navbar with dropdowns and mobile panel

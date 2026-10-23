@@ -187,6 +187,15 @@ line-height 65px; padding 0 40px; border-radius: 0` (SHARP corners);
   bottom borders ≤767px; popular-card content/thumb stack ≤767px;
   hero/typography scale at 992/768/480.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#61ba6d` | live sheet paints it ×47 — `background` on `#preloader`; style.css (37,702 B, sha256 b041dbe06a3f) · <https://preview.colorlib.com/theme/academy/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Split header with top strip and green phone block

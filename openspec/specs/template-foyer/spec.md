@@ -36,6 +36,15 @@ CSS 4 + TypeScript.
 Foyer lives in `apps/foyer` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c6b069` | live sheet paints it ×68 — `background-color` on `::selection`; main.css (48,526 B, sha256 83ac25047542) · <https://preview.colorlib.com/theme/interior/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

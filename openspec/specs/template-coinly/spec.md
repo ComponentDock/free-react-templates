@@ -205,6 +205,15 @@ lucide-react icons).
 Coinly lives in `apps/coinly` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#4b6cd0` | live sheet paints it ×1 — `background` on `.social .facebook`; style.css (29,238 B, sha256 de9c74c442f7) · <https://preview.colorlib.com/theme/cryptocurrency/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

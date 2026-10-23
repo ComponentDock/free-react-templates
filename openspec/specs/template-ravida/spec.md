@@ -12,6 +12,15 @@ using placeholder images and the Component Dock brand.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#d6ad86` | live sheet paints it ×68 — `background-color` on `.btn_1`; style.css (191,718 B, sha256 dcfcad7f93e4) · <https://preview.colorlib.com/theme/buri/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Hero section with dark food photography background

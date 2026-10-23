@@ -149,6 +149,15 @@ Statecraft lives in `apps/statecraft` and uses shared components from
 Navbar/Footer chrome (adapted to the dark navbar + yellow CTA and the
 3-column yellow footer with newsletter form).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f3d955` | live sheet paints it ×60 — `background` on `.theme-bg`; style.css (97,974 B, sha256 0036288d0971) · <https://preview.colorlib.com/theme/consul/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

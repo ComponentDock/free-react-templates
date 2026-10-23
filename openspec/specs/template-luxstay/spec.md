@@ -136,6 +136,15 @@ CSS 4 + TypeScript.
   12. **Back-to-top button** (`.gototop` — fixed position, appears on
       scroll, dark bg, white up-arrow icon)
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#4586ff` | live sheet paints it ×23 — `background` on `::selection`; style.css (37,896 B, sha256 0144ed311c3e) · <https://preview.colorlib.com/theme/luxehotel/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar displays site info and social links

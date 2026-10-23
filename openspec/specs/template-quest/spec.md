@@ -8,6 +8,15 @@ ColorLib free "Dorne" website template
 (source: https://colorlib.com/wp/template/dorne/ — "Dorne - Directory & Listing Template"),
 built under a DIFFERENT name (Quest — evokes searching and finding in a directory).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#7643ea` | live sheet paints it ×19 — `background-color` on `.section-heading.dark span`; style.css (25,666 B, sha256 7fcf328579a1) · <https://preview.colorlib.com/theme/dorne/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Page loads with all sections in correct order

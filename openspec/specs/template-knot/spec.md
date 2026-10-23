@@ -141,6 +141,15 @@ text-center` = `.story_thumb` circular portrait (247×247, radius 50%,
   with ♥ by Component Dock" — "Component Dock" MUST link
   https://www.componentdock.com/ (replacing the source's Colorlib credit).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c78665` | live sheet paints it ×21 — `background` on `.boxed_btn3`; style.css (124,156 B, sha256 18b8ea68472c) · <https://preview.colorlib.com/theme/sunshine/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header and navbar

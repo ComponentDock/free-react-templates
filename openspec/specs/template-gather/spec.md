@@ -26,6 +26,7 @@ CSS values are canonical over any screenshot sample.
 | Ink / dark surface | `#000000` | 3 declarations — `h2`, `h3` |
 | Typeface | `"Ionicons"` (2 rules — [data-toggle="collapse"] .fa:before)<br>`"Poppins", sans-serif` (2 rules — body) | `font-family` declarations in the theme sheet |
 | Radii | `0.25rem`, `0 !important`, `calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0` | `0.25rem` (.cl-btn); `0 !important` (.myaccordion .cl-btn); `calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0` (.cl-card-header:first-child) |
+| Brand (measured) | `#38ade0` | live sheet paints it ×3 — `color` on `a`; style.css?v=76733119 (18,155 B, sha256 6477fb72decc) · <https://preview.colorlib.com/theme/bac/accordion-10/> |
 
 Palette in order of use: `#ffffff` ×6, `#000000` ×3, `#1c2938` ×3, `#212529` ×3, `#38ade0` ×3, `#0056b3` ×2.
 

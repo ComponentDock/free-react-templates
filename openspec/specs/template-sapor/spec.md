@@ -173,6 +173,15 @@ text-center lg:px-8`).
 Sapor lives in `apps/sapor` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fca5a5` | live sheet paints it ×3 — `color` on `.dark\:text-primary-300:is(.dark *)`; Base.Cdu-mown.css (45,097 B, sha256 07d43ef09429) · <https://preview.colorlib.com/theme/flavor/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

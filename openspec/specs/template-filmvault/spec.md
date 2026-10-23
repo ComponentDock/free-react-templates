@@ -42,6 +42,15 @@ Elegant, editorial photography portfolio with a dark, sophisticated aesthetic. P
 8. **Instagram Feed** — Full-width carousel of 5-6 Instagram photos with hover overlay showing Instagram icon
 9. **Footer** — Centered: logo, nav links (same as header), social icons (Twitter, Facebook, Pinterest), copyright with Component Dock link
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#1f2b7b` | live sheet paints it ×20 — `background` on `.genric-btn.primary`; style.css (213,088 B, sha256 ee30a0bda9ad) · <https://preview.colorlib.com/theme/rettro/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #2e6da4 x6, #4cd3e3 x7, #337ab7 x4.
+
 ## Requirements
 
 ### Feature: FilmVault template behaviour

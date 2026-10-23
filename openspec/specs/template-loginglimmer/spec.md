@@ -36,6 +36,7 @@ LoginGlimmer is a clean, minimalist login form template that recreates ColorLib 
 - **Font family:** System sans-serif or Inter/Roboto (clean, modern)
 - **Font weight:** Heading ~500–600, body ~400
 - **Link underline:** None by default (hover underline optional)
+- **Brand measured:** `#4272d7` — live sheet paints it ×4 — `background-color` on `.focus-input100-1::before, .focus-input100-2::before`; style.css?v=35c6d949 (10,834 B, sha256 697c76cf73bb) · <https://colorlib.com/etc/lf/Login_v19/index.html>
 
 ## Requirements
 

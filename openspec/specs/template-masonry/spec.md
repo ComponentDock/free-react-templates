@@ -41,6 +41,15 @@ CSS 4 + TypeScript.
 Masonry lives in `apps/masonry` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f9cc41` | live sheet paints it ×52 — `background` on `.primary-btn`; style.css (67,216 B, sha256 03910f1304fc) · <https://preview.colorlib.com/theme/astral/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

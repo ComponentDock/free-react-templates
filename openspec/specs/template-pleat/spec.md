@@ -15,6 +15,7 @@ Recreation of ColorLib **Accordion 13** (`https://colorlib.com/wp/template/accor
 - **Font Family:** `"Roboto", sans-serif`
 - **Border Radius:** `4px` (`rounded`)
 - **Accordion Body Text:** `#888888`
+- **Brand stated:** `#72c02c` — live sheet paints it ×3 — `color` on `.custom-accordion .cl-accordion-item .cl-btn-link[aria-expanded="true"]:before`; style.css?v=92579d65 (8,988 B, sha256 e1e89fa9fb0f) · <https://preview.colorlib.com/theme/bac/accordion-13/>
 
 ## Requirements
 

@@ -271,6 +271,15 @@ align-items-center`:
 Academia lives in `apps/academia` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#04d2c8` | live sheet paints it ×21 — `background` on `.boxed-btn:hover`; style.css (177,759 B, sha256 e84cdaf5bb94) · <https://preview.colorlib.com/theme/edumark/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with logo, navigation, login and phone pill

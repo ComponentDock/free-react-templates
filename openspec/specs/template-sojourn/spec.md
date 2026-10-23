@@ -90,6 +90,15 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Sojourn lives in `apps/sojourn` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn) and the repo-standard Navbar/Footer chrome.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#af7152` | live sheet paints it ×3 — `color` on `header .sidebar-menu ul li.active a`; header.css (12,724 B, sha256 11b5a4d15c6e) · <https://preview.colorlib.com/theme/sasha/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

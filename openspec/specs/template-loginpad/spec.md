@@ -44,6 +44,15 @@ A centered card login form template with account login fields and a pill-shaped 
 - Login button: full-width, 55px height, border-radius 27px (pill shape)
 - Focus effect: green border scale animation on input focus
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#57b846` | live sheet paints it ×6 — `background-color` on `.login100-form-btn:hover`; style.css?v=88d9357d (13,236 B, sha256 ece41fb772df) · <https://colorlib.com/etc/lf/Login_v14/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #c80000 x3.
+
 ## Requirements
 
 ### Requirement: Renders account login form

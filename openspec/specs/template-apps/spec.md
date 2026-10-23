@@ -48,6 +48,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Apps lives in `apps/apps` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3ea7ff` | live sheet paints it ×6 — `background-image` on `ry-btn, .footer-area .primary-btn:hover, .footer-social a:hover, .generic-banner`; main.css (37,569 B, sha256 160b85b8e620) · <https://preview.colorlib.com/theme/apps/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

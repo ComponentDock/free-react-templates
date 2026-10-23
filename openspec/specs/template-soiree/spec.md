@@ -4,6 +4,15 @@
 
 Recreation of ColorLib "Evento" (https://colorlib.com/wp/template/evento/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template named "Soiree". An event/conference landing page with hero, countdown, speakers, pricing, calendar, and footer sections.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f50136` | live sheet paints it ×43 — `border-top` on `.section_title .title:before`; main.css (37,385 B, sha256 76a91dd19c22) · <https://preview.colorlib.com/theme/evento/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with navigation

@@ -95,6 +95,15 @@ Sunday 8:00AM - 9:00PM` (register-link). Rebrand contact copy as Palate
 - **Placeholder images (never copy ColorLib assets):** hero slides → pinned picsum photo IDs (verified 2026-08-12: `https://picsum.photos/id/292/1920/1080` culinary mise-en-place still-life, `/id/1080/...` fresh strawberries, `/id/431/...` latte-art coffee on a wooden counter — replacing the originally pinned `palate-hero1..3` seeds, which rendered a night cityscape/bridge, a forest and a bridge; see seed-screening note below); counter bg → `https://picsum.photos/id/425/1920/600` (roasted coffee beans on light wood — the source has NO overlay, so a light photo keeps the black numbers readable; the pinned `palate-counter` seed rendered a dark forest scene); menu items → `picsum.photos/seed/palate-m1/200/200` … `palate-m18` (100px circles, `breakfast-1.jpg` etc.); chefs → `picsum.photos/seed/palate-c1/600/800` … `palate-c4` (`chef-1..4.jpg`); testimony avatars → `picsum.photos/seed/palate-t1/200/200` … `palate-t5` (`person_1..5.jpg`); testimony bg → `picsum.photos/seed/palate-testimonial/1920/800` (`bg_5.jpg`; the 80% white overlay makes the subject irrelevant); instagram thumbs → `picsum.photos/seed/palate-i1/300/300` … `palate-i6` (`insta-1..6.jpg`); map → a muted CSS grid pattern with a pin (no third-party map dependency).
 - **Icon mapping (source → lucide-react, verified 2026-08-09):** icon-phone2 (top bar) → `Phone` · icon-paper-plane (top bar) → `Send` · oi-menu (toggler) → `Menu` · flaticon-cake (Birthday Party) → `Cake` · flaticon-meeting (Business Meetings) → `Users` · flaticon-tray (Wedding Party) → `UtensilsCrossed` · ion-ios-play (video) → `Play` · ion-ios-arrow-down (select) → `ChevronDown` · icon-quote-left (testimony) → `Quote` · icon-heart (copyright) → `Heart`. **BRAND ICONS WERE REMOVED FROM lucide-react** — `Instagram`/`Facebook`/`Twitter`/`Linkedin`/`Google` are all `undefined` (verified in this repo's lucide-react); all social icons (footer 3 + chef 4 per card) must be inline SVG brand glyphs (simple-icons paths), white on dark / dark on light.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffa323` | live sheet paints it ×30 — `background` on `.ftco-navbar-light .navbar-nav > .nav-item.cta > a`; style.css (76,270 B, sha256 8833d3069863) · <https://preview.colorlib.com/theme/appetizer/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top info bar

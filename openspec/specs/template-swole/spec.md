@@ -186,6 +186,15 @@ offset-lg-1 col-md-6`, `.about_img` = `img/about_img.png`) → What
 Swole lives in `apps/swole` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#ff0000` | live sheet paints it ×47 — `background-color` on `.btn_1`; style.css (157,953 B, sha256 468ac2eb269a) · <https://preview.colorlib.com/theme/fitfloss/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #4cd3e3 x7, #38a4ff x6, #f44a40 x6.
+
 ## Requirements
 
 ### Requirement: Header and navigation

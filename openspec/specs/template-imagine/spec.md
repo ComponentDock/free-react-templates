@@ -198,6 +198,15 @@ Imagine lives in `apps/imagine` and uses shared components from
 - Footer: bg `#222222`, padding-top 100px; nav links white, hover
   `#8490ff`; social squares `#111111` 40×40px, hover gradient.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#908ced` | live sheet paints it ×6 — `background-image` on `e::after, .testimonial-area .overlay-bg, .footer-social a:hover, .generic-banner`; main.css (36,616 B, sha256 34f54c634ceb) · <https://preview.colorlib.com/theme/creativeagency/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

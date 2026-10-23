@@ -25,6 +25,15 @@ background. No navbar or sidebar — full-viewport form layout.
 | Input font size      | 15px, Oswald Medium                                        |
 | Validation error     | `#c80000` (red)                                            |
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#d5007d` | live sheet paints it ×8 — `background` on `.contact100-form-bgbtn`; style.css?v=487acd81 (10,103 B, sha256 a4857f75ef93) · <https://colorlib.com/etc/cf/ContactFrom_v7/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #e53935 x8, #df2351 x1, #c80000 x3.
+
 ## Requirements
 
 ### Requirement: Form renders all fields

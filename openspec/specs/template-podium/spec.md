@@ -311,6 +311,15 @@ border border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-800`;
 Podium lives in `apps/podium` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#8b5cf6` | live sheet paints it ×12 — `outline-color` on `:focus-visible`; index.K91MFDzv.css (42,072 B, sha256 32e32344af82) · <https://preview.colorlib.com/theme/eventor/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

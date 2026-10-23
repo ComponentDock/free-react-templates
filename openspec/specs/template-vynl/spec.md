@@ -17,6 +17,15 @@ provenance lives in this spec, TEMPLATES.md, and the PR.
   Nunito body font, uppercase 12px buttons with 2px border.
 - **Sections:** Navbar, Hero, Featured Events, Upcoming Events, Video/About, Footer.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#e4ae50` | live sheet paints it ×19 — `border-color` on `.form-control:active, .form-control:focus`; style.css (24,805 B, sha256 4b6e7af46d5c) · <https://preview.colorlib.com/theme/dj/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and dropdown

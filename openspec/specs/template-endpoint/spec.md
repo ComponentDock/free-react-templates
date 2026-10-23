@@ -106,6 +106,15 @@ preview host.
 Endpoint lives in `apps/endpoint` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f97316` | live sheet paints it ×6 — `outline-color` on `:focus-visible`; Base.mMnpPx9A.css (69,535 B, sha256 f103be96fd37) · <https://preview.colorlib.com/theme/apiforge/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

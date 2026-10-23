@@ -94,6 +94,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Glyph lives in `apps/glyph` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#6f6fff` | live sheet paints it ×36 — `background` on `.main_menu .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (56,485 B, sha256 8dba1313629f) · <https://preview.colorlib.com/theme/opium/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

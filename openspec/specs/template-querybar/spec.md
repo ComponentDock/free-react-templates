@@ -22,6 +22,7 @@ A standalone flight search form widget with a gradient card overlay on a full-vi
 - **Inputs:** border-radius 10px, padding 16.5px 20px, font-size 18px, white bg, color #666, placeholder #ccc
 - **Submit button:** bg #00ad5f, border-radius 10px, height 60px, white text, bold, uppercase, hover #00994b
 - **Background:** full-viewport cover image (ocean/cliff scene) — use picsum.photos placeholder
+- **Brand stated:** `#c949fe` — live sheet paints it ×5 — `background-image` on `.card-5::before`; style.css?v=bbb46df3 (13,153 B, sha256 b465e80c93ab) · <https://colorlib.com/etc/searchf/colorlib-search-19/>
 
 ## Design reference (replication findings)
 

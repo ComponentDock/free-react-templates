@@ -63,6 +63,7 @@ CSS values are canonical over any screenshot sample.
 | Surface | `#f0f0f0` | 2 declarations — `.img-shimmer` |
 | Ink / dark surface | `#1f2937` | 3 declarations — `.dark .prose hr`, `.dark .img-shimmer` |
 | Radii | `.5rem`, `.75rem` | `.5rem` (.prose pre); `.75rem` (.prose img) |
+| Brand (measured) | `#7c3aed` | live sheet paints it ×6 — `background-color` on `.btn-primary`; Base.DSJ9xNgp.css (62,363 B, sha256 da08a5963991) · <https://preview.colorlib.com/theme/alexrivera/> |
 
 Palette in order of use: `#1f2937` ×3, `#374151` ×2, `#f0f0f0` ×2, `#000000` ×1, `#111827` ×1, `#3f3f46` ×1.
 

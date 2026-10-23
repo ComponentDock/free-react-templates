@@ -204,6 +204,15 @@ content kinds (no ColorLib assets copied).
   `ArrowRight`, social icons (Facebook, Twitter/X, Instagram, etc.), logo mark
   (Heart/Leaf hybrid).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#a70000` | live sheet paints it ×28 — `background` on `.boxed-btn2`; style.css (55,786 B, sha256 a266f2594077) · <https://preview.colorlib.com/theme/nonprofit/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent header with nav and ghost Donate Now button

@@ -13,6 +13,15 @@ Fitnest is a yoga and fitness studio landing page template, recreating the Color
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/zogin-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fitnest` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#5768ad` | live sheet paints it ×44 — `background` on `.primary-btn`; style.css (48,693 B, sha256 4db3929b41a3) · <https://preview.colorlib.com/theme/zogin/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar with contact info and social links

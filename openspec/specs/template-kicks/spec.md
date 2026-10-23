@@ -27,6 +27,15 @@ Tailwind CSS 4 + TypeScript.
 Kicks lives in `apps/kicks` and uses shared components from `packages/ui`
 (cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#88c8bc` | live sheet paints it ×8 — `background` on `.colorlib-nav .top-menu .search-wrap .submit-search`; style.css (72,031 B, sha256 15e13c971b9b) · <https://preview.colorlib.com/theme/footwear/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #80bdff x1.
+
 ## Requirements
 
 ### Requirement: Navigation bar

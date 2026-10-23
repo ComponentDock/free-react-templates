@@ -112,6 +112,15 @@ typography, and content types (no ColorLib assets copied).
 Arena lives in `apps/arena` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c6019a` | live sheet paints it ×13 — `background-image` on `gallery_item_iner:after, .footer_part .single_footer_part .mail_part .email_icon`; style.css (161,382 B, sha256 5bc3d287e4c7) · <https://preview.colorlib.com/theme/beko/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -47,6 +47,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Terracotta lives in `apps/terracotta` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff7e00` | live sheet paints it ×55 — `background-color` on `.btn_1 span`; style.css (187,693 B, sha256 589cec70ddd4) · <https://preview.colorlib.com/theme/heaven/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

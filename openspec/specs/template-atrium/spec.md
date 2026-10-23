@@ -49,6 +49,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Atrium lives in `apps/atrium` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff5e13` | live sheet paints it ×20 — `background` on `.genric-btn.primary`; style.css (55,197 B, sha256 b69ce363fdd6) · <https://preview.colorlib.com/theme/ararat/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

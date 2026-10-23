@@ -20,6 +20,15 @@ A centered single-column contact form on a vibrant full-page gradient background
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#c77ff2` | live sheet paints it ×12 — `background` on `.container-contact100`; style.css?v=31b7f802 (11,265 B, sha256 d7bcede9dc79) · <https://colorlib.com/etc/cf/ContactFrom_v14/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #e8519e x12, #d867c6 x3, #00ad5f x1.
+
 ## Requirements
 
 ### Requirement: Page layout

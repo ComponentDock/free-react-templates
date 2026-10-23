@@ -39,6 +39,15 @@ ContactWave is a free, advanced contact form template that recreates the ColorLi
 | Border            | `#e0e0e0` light gray          | Input underlines                   |
 | Font family       | Inter, sans-serif             | Clean, modern typeface             |
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#00ad5f` | live sheet paints it ×4 — `background-color` on `.contact100-form-btn:hover`; style.css?v=25e70157 (20,184 B, sha256 47de382aaaac) · <https://colorlib.com/etc/cf/ContactFrom_v5/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #3fb8af x1, #fa4251 x1.
+
 ## Requirements
 
 ### Requirement: Renders the contact form heading

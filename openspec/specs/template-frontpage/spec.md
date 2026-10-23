@@ -34,6 +34,15 @@ FrontPage lives in `apps/frontpage` and uses shared components from
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/aznews-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/frontpage` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fc3f00` | live sheet paints it ×42 — `background` on `.theme-bg`; style.css (91,178 B, sha256 1b5471087dbb) · <https://preview.colorlib.com/theme/aznews/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar

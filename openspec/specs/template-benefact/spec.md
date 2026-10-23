@@ -164,6 +164,15 @@ CSS 4 + TypeScript.
 Benefact lives in `apps/benefact` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#00a651` | live sheet paints it ×21 — `border-color` on `.form-control:active, .form-control:focus`; style.css (25,438 B, sha256 4cecea4dc5c9) · <https://preview.colorlib.com/theme/fundraiser/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Green top bar with links and social icons

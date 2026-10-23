@@ -138,6 +138,15 @@ the migration, so it follows the mirror, not today's preview host.
 Coverly lives in `apps/coverly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2563eb` | live sheet paints it ×16 — `background-color` on `.btn-primary`; Base.BP2GuE7t.css (63,346 B, sha256 f8f3cd60bb24) · <https://preview.colorlib.com/theme/shieldguard/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

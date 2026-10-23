@@ -38,6 +38,15 @@ name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Vista lives in `apps/vista` and uses shared components from `packages/ui`
 (Button) and `cn()`.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff00b4` | live sheet paints it ×2 — `background` on `.notfound-search button`; style.css?v=295965e4 (6,621 B, sha256 271a5ecc362e) · <https://colorlib.com/etc/404/colorlib-error-404-11/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

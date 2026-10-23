@@ -37,6 +37,15 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Massive lives in `apps/massive` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#00e2d9` | live sheet paints it ×63 — `background` on `.home-three .scrolltotop:hover`; style.css (61,367 B, sha256 dae5e47ef90a) · <https://preview.colorlib.com/theme/massive/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #1193d4 x44, #ef494d x21, #00c9fd x30.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -180,6 +180,15 @@ transparent`; `.btn-outline-white` `border: 1px solid #fff`, white
   headings, `#8bc34a` price/check accent, alternating image/text offer
   cells, dark indigo footer with white links.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#120078` | live sheet paints it ×22 — `--bs-primary` on `:root`; style.css (52,992 B, sha256 ca085f6fd18f) · <https://preview.colorlib.com/theme/cuisines/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Sidebar navigation

@@ -203,6 +203,15 @@ hover:bg-primary-50` variants.
 Sanctuary lives in `apps/sanctuary` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#7e22ce` | live sheet paints it ×8 — `background-color` on `.btn-primary:hover`; Base.DMbVHkoj.css (39,269 B, sha256 9be1764a71c2) · <https://preview.colorlib.com/theme/faithcommunity/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

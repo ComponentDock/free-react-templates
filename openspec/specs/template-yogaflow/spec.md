@@ -33,6 +33,7 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 | Image border-radius | `15px` | `.image-holder img { border-radius: 15px }` |
 | Background | Full-viewport image (`bg-registration-form-6.jpg`) | `.wrapper { background: url(...) }` |
 | Responsive breakpoint | 991px (tablet), 767px (mobile) | `@media` rules |
+| Brand (stated in this prep) | `#84cde1` | live sheet paints it ×1 — `background` on `button`; style.css?v=e7557d1d (9,352 B, sha256 00d03ff017f8) · <https://colorlib.com/etc/regform/colorlib-regform-22/> |
 
 ## Layout & sections
 

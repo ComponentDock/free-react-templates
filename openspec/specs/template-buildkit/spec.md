@@ -184,6 +184,15 @@ radius 40px) is the hero/CTA shape. Sections breathe at 4em (6em for the
   rights reserved / This template is made with <heart> by <Colorlib>" —
   the demo brand "Buildex"/"Buildex Kit." appears NOWHERE in app files.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#6b48ff` | live sheet paints it ×51 — `--primary` on `:root`; style.css (107,043 B, sha256 a2ac8f5570c7) · <https://preview.colorlib.com/theme/buildex/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Navbar

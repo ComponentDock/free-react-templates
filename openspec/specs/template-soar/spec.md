@@ -59,6 +59,15 @@ CSS 4 + TypeScript.
 Soar lives in `apps/soar` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2ebdc4` | live sheet paints it ×30 — `background` on `.hero-wrap .overlay`; style.css (71,572 B, sha256 aa346a67d666) · <https://preview.colorlib.com/theme/raptor/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

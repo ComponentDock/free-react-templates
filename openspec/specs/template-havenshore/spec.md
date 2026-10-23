@@ -19,6 +19,15 @@ Preview: https://preview.colorlib.com/theme/ocheandeview/
 - **Footer:** dark #16161a background
 - **Section padding:** 120px top/bottom
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#2e6da4` | live sheet paints it ×6 — `background-image` on `.gj-slider-bootstrap-3 [role="handle"]`; gijgo.css (60,228 B, sha256 ffacdabd4b85) · <https://preview.colorlib.com/theme/ocheandeview/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #4cd3e3 x7, #337ab7 x4, #ff8400 x4.
+
 ## Requirements
 
 ### Requirement: Navbar renders with transparent header, logo, phone, and Book Now CTA

@@ -17,6 +17,15 @@ The original is a modern church community page with a crimson red (#b10707) and 
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/mimosan-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/alleluia` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#b10707` | live sheet paints it ×24 — `background` on `.button`; main_styles.css (26,877 B, sha256 4f62ef3c8aa8) · <https://preview.colorlib.com/theme/mimosan/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar renders with logo and navigation

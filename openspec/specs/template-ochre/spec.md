@@ -127,6 +127,15 @@ a h5`, `.btn_1` bg, banner category color). Hover dark **`#2a2a2a`**
 Ochre lives in `apps/ochre` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn, etc.).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fc4600` | live sheet paints it ×44 — `background-color` on `.btn_1`; style.css (152,893 B, sha256 84578427ca0e) · <https://preview.colorlib.com/theme/lifeleck/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with logo, navigation, search and social icons

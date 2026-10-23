@@ -29,6 +29,7 @@ services.
 | Hero text      | `#ffffff` on `amber-100` | Heading and subtitle              |
 | Page surface   | `gray-100`               | Area below the hero               |
 | Bar surface    | `#ffffff`                | Search bar card                   |
+| Brand (measured) | `#ff8300` | live sheet paints it ×3 — `background` on `.btn-submit`; style.css?v=716d3d5e (19,845 B, sha256 2d3e995316a5) · <https://colorlib.com/etc/searchf/colorlib-search-17/> |
 
 ## Requirements
 

@@ -342,6 +342,7 @@ authoritative again — CSS values are canonical over the screenshot
 | --- | --- | --- |
 | live page | `https://colorlib.com/etc/cs/comingsoon_04/index.html` | HTTP 200 · 3,527 B · title `Coming Soon 4` |
 | stylesheet | `https://colorlib.com/etc/cs/comingsoon_04/css/style.css?v=4e86c025` | HTTP 200 · 16,469 B · sha256 `852be96da789` |
+| Brand (stated in this prep) | `#3a5dff` | live sheet paints it ×3 — `border` on `.focus-input100`; style.css?v=4e86c025 (16,469 B, sha256 852be96da789) · <https://colorlib.com/etc/cs/comingsoon_04/index.html> |
 
 **Live palette** (hex × occurrences in that sheet): `#ffffff`×13,
 `#7918f2`×10, `#ac32e4`×8, `#4801ff`×8, `#999999`×5, `#000000`×3,

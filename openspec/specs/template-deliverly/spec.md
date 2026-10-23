@@ -226,6 +226,15 @@ Deliverly lives in `apps/deliverly` and uses shared components from
 Navbar/Footer chrome (adapted to the transparent navbar and the
 4-widget light-gray footer).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#61b15a` | live sheet paints it ×28 — `--bs-primary` on `:root`; style.css (60,151 B, sha256 ab2d5ad7e916) · <https://preview.colorlib.com/theme/dusk/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

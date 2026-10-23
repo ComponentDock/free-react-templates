@@ -7,6 +7,15 @@
 
 BoldCraft is a personal portfolio/agency template with a bold, modern aesthetic. It features a transparent sticky header, full-width hero with portrait and headline, about info bar, services grid, portfolio gallery with hover overlays, about section with skill progress bars, brand logo carousel, testimonial carousel, blog cards, and a two-part black footer with CTA and copyright linking to Component Dock.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff8553` | live sheet paints it ×51 — `background` on `.boxed-btn:hover`; style.css (91,814 B, sha256 4ba2afe8e1d1) · <https://preview.colorlib.com/theme/calvin/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

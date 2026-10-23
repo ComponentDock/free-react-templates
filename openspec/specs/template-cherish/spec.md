@@ -91,6 +91,15 @@ its brand, its headlines or its copy.
   8. The footer's attribution line is replaced by the **Component Dock** credit required of every
      template in this monorepo.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#d48f4c` | live sheet paints it ×17 — `background` on `.primary-btn`; style.css (30,285 B, sha256 659ebb1334e8) · <https://preview.colorlib.com/theme/dreamwed/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Page frame, header and the search sheet

@@ -4,6 +4,15 @@
 
 Recreate the ColorLib **Fitnessclub** design (https://colorlib.com/wp/template/fitnessclub/) as a React 19 + Tailwind CSS 4 + TypeScript single-page template under the name "FitCore". The template serves as a free, production-ready health and fitness club website with hero, about, services, testimonials, gallery, trainers, schedule, and contact sections.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f04e3c` | live sheet paints it ×23 — `background` on `.boxed-btn:hover`; style.css (65,964 B, sha256 2c5203068b0a) · <https://preview.colorlib.com/theme/fitnessclub/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header navigation

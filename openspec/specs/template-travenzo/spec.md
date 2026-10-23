@@ -36,6 +36,15 @@ Preview (screenshot only — live preview 404): ColorLib Search Form 15
    - Full-width green "Search" button
 3. **Footer** — simple footer with Component Dock link
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#00ad5f` | live sheet paints it ×4 — `background` on `.btn-submit`; style.css?v=1d29706e (19,376 B, sha256 7d4bdf645f0b) · <https://colorlib.com/etc/searchf/colorlib-search-15/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #00994b x1.
+
 ## Requirements
 
 ### Render

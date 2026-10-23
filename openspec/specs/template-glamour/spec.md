@@ -208,6 +208,15 @@ rgba(0,0,0,0.75)`; mobile text-center): `h3` white uppercase 24px
   blog images 1–3 → `glamour-blog-<n>/800/600`, footer block-21 thumbs →
   `glamour-thumb-<n>/160/160`.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f62a66` | live sheet paints it ×32 — `background` on `#colorlib-main-nav ul li.active a span:before`; style.css (73,563 B, sha256 46f7647fcee6) · <https://preview.colorlib.com/theme/look/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Fullscreen off-canvas navigation

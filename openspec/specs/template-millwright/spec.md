@@ -193,6 +193,15 @@ Millwright lives in `apps/millwright` and uses shared components from
 Navbar/Footer chrome (adapted to the transparent-over-hero navbar with
 Services dropdown and the light 3-column footer with orange links).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fd5f00` | live sheet paints it ×18 — `--primary` on `:root`; style.css (56,076 B, sha256 c38fff1aa8e8) · <https://preview.colorlib.com/theme/industries/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

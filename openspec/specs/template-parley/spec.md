@@ -210,6 +210,7 @@ From `css/style.css` (verified 2026-08-11):
   phone, mail, quote, chevrons). Brand icons (Facebook/Twitter/Googleplus)
   are NOT in lucide-react — use inline SVG brand paths per the
   colorlib-template-replication skill.
+- **Brand stated:** `#f1648f` — live sheet paints it ×5 — `background` on `.ftco-navbar-light .navbar-nav > .nav-item.active > a`; style.css (87,156 B, sha256 771382de5307) · <https://preview.colorlib.com/theme/negotiate/>
 
 ## Requirements
 

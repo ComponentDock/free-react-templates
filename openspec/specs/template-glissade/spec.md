@@ -40,6 +40,15 @@ React 19 + Tailwind CSS 4 + TypeScript.
   - Light bg: #f9f9ff
   - Border: #eee
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#4cd4e3` | live sheet paints it ×10 — `background-image` on `nav`; main.css (33,377 B, sha256 be77bd91ed3a) · <https://preview.colorlib.com/theme/bobsled/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

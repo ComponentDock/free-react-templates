@@ -62,6 +62,15 @@ preview host.
 Fade lives in `apps/fade` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fbbf24` | live sheet paints it ×13 — `background-color` on `.bg-accent-400`; Base.IGJSKSQB.css (58,909 B, sha256 1fcc6a7d8410) · <https://preview.colorlib.com/theme/barberkraft/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

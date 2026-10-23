@@ -23,6 +23,7 @@ Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - Form border: #43434d
 - Button: sharp corners (radius 0), uppercase, 11px, 700 weight
 - Selection: black bg, white text
+- **Brand stated:** `#0fb78d` — live sheet paints it ×27 — `background` on `.btn.btn-primary`; style.css (38,651 B, sha256 b78299d23982) · <https://preview.colorlib.com/theme/product/>
 
 ## Requirements
 

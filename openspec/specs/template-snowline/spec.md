@@ -13,6 +13,15 @@ Snowline is a fashion e-commerce shop landing page recreated from the ColorLib "
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/snowline` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2f7dfc` | live sheet paints it ×82 — `background-color` on `.btn_1`; style.css (227,044 B, sha256 4305ae4e8a37) · <https://preview.colorlib.com/theme/winter/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and controls

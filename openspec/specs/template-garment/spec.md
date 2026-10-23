@@ -76,6 +76,15 @@ CSS 4 + TypeScript.
 Garment lives in `apps/garment` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0315ff` | live sheet paints it ×20 — `background-color` on `.essence-btn`; core-style.css (56,707 B, sha256 5950d4634a62) · <https://preview.colorlib.com/theme/essence/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

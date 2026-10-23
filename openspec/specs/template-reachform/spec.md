@@ -26,6 +26,7 @@ and a gradient submit button. The title uses a serif/display font.
 - **Input borders:** Light gray `#dddddd` (default), pink `#e84393` (focused)
 - **Button:** Pink-to-coral gradient, white text, rounded (4px)
 - **Spacing:** Generous card padding (40px+)
+- **Brand measured:** `#d5007d` — live sheet paints it ×12 — `background` on `.focus-input2::before`; style.css?v=6c4ee4df (10,677 B, sha256 fe59dd56fc10) · <https://colorlib.com/etc/cf/ContactFrom_v2/index.html>
 
 ## Requirements
 

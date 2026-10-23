@@ -13,6 +13,15 @@ Wares is a free e-commerce React template that recreates the ColorLib "E Shop" d
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/e-shop-free-ecommerce-website-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/wares` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f8694a` | live sheet paints it ×43 — `background-color` on `.primary-btn`; style.css (32,594 B, sha256 6cea8fee30a4) · <https://preview.colorlib.com/theme/e-shop/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with search and cart

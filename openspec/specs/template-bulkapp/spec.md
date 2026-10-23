@@ -37,6 +37,15 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 BulkApp lives in `apps/bulkapp` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#7249fb` | live sheet paints it ×62 — `background-image` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (71,891 B, sha256 cea80a254d46) · <https://preview.colorlib.com/theme/bulkapp/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #bc2bff x54, #6247ea x24, #f8b600 x19.
+
 ## Requirements
 
 ### Requirement: Navigation bar

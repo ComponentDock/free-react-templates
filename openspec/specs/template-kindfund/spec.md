@@ -34,6 +34,15 @@ CSS 4 + TypeScript.
   10. Donation Form — amount buttons ($25/$50/$100/$200), name/email inputs, "Donate Now" submit
   11. Footer — four columns (About, Services, Contacts, Top News) + Component Dock link
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3cc78f` | live sheet paints it ×39 — `background-color` on `.overlay2::before`; style.css (150,393 B, sha256 e89cdaabf179) · <https://preview.colorlib.com/theme/charifit/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar

@@ -14,6 +14,7 @@ Recreation of ColorLib "Login Form V1" (https://colorlib.com/wp/template/login-f
 - Button: #57b846 green, 50px height, 25px border-radius, uppercase, hover #333333
 - Links: #666666, Poppins Regular 13px
 - Responsive: ≤768px image hidden, form full width
+- **Brand measured:** `#4158d0` — live sheet paints it ×4 — `background` on `.container-login100`; style.css?v=d26e13a7 (11,774 B, sha256 9328f0156410) · <https://colorlib.com/etc/lf/Login_v1/index.html>
 
 ## Requirements
 

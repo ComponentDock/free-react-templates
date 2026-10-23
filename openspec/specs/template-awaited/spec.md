@@ -356,6 +356,7 @@ s:0}`: `new Date(0, -1, 35, 19, 0, 0)` is always in the past, so the declared
 | base type              | `body,html{font-family:Arial,sans-serif; font-size:15px; color:#666666; background:#fff}` (all visible type is Poppins)                                                                                  | typography                                                   |
 | countdown behaviour    | target `now + 35 d + 19 h` (the configured `new Date(0,-1,35,19,…)` is always past); 1 s tick; days raw, h/m/s zero-padded; immediate first paint; interval cleared at 0 and on unmount                       | countdown                                                    |
 | attribution            | Poppins-Regular 12–13px white/70 centred line under the social row                                                                                                                                       | footer requirement (ADDED vs the reference — the source has no footer credit) |
+| Brand (stated in this prep) | `#7579ff` | live sheet paints it ×5 — `background` on `.overlay1::before`; style.css?v=fe7de957 (8,825 B, sha256 26fca5fc230a) · <https://colorlib.com/etc/cs/comingsoon_09/index.html> |
 
 ## Requirements
 

@@ -175,6 +175,15 @@ rgba(0,0,0,0.03)`; `.block-7 .heading` 14px uppercase; feature rows color
 Prime lives in `apps/prime` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn, etc.).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2f89fc` | live sheet paints it ×69 — `background` on `.ftco-navbar-light.scrolled .nav-item.cta > a`; style.css (75,852 B, sha256 b9f2ac328464) · <https://preview.colorlib.com/theme/ultim8/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

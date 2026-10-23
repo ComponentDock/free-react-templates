@@ -20,6 +20,15 @@ Design tokens captured from the original (see docs/replication.md):
 Silverleaf lives in `apps/silverleaf` and uses shared components from `packages/ui`
 (Button, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3c90f7` | live sheet paints it ×21 — `background` on `.btn.btn-primary`; style.css (21,736 B, sha256 a9a3daba0541) · <https://preview.colorlib.com/theme/elderly/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -214,6 +214,15 @@ Beanery lives in `apps/beanery` and uses shared components from
 Navbar/Footer chrome (adapted to the fixed dark sidebar header and the
 cream 3-column footer).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c46b48` | live sheet paints it ×36 — `background` on `#back-top`; style.css (63,668 B, sha256 aceb7deb3eb8) · <https://preview.colorlib.com/theme/decoffee/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Sidebar header

@@ -43,6 +43,15 @@ This template implements a **minimalist vertical accordion component** — three
 - **No shadows** — pure flat design with borders for separation
 - **No animations visible** in static screenshot; implementation should include smooth height transition
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#654ede` | live sheet paints it ×4 — `background` on `button[aria-expanded="true"] .icon`; style.css?v=6a6ac74e (16,628 B, sha256 fb45bacda9a9) · <https://preview.colorlib.com/theme/bac/accordion-07/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot.
+
 ## Requirements
 
 ### Requirement: The page SHALL render with a heading and three accordion items

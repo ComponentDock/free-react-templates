@@ -39,6 +39,15 @@ Single centered card on gradient background:
    - **Row 4** — Subject (select dropdown) — full width
    - **Submit button** — "Submit", blue (#4272d7), rounded
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#6c4079` | live sheet paints it ×5 — `background` on `.bg-gra-02`; style.css?v=b5f08591 (13,224 B, sha256 3d0fddb10f90) · <https://colorlib.com/etc/regform/colorlib-regform-4/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #fc2c77 x5, #3868cd x1, #4272d7 x1.
+
 ## Requirements
 
 ### Requirement: Page renders the registration form

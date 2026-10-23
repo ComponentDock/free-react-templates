@@ -36,6 +36,15 @@ navbar, hero, services, about, mission, team, CTA, and footer sections.
 8. **CTA** — "Want To Work With Us?" dark section with Contact Us button
 9. **Footer** — Dark background, 4 columns (logo+desc, quick links, services, newsletter), social icons, copyright with Component Dock link
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f27420` | live sheet paints it ×29 — `background` on `.boxed-btn:hover`; style.css (82,690 B, sha256 dc0b3bea7785) · <https://preview.colorlib.com/theme/inds/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact information

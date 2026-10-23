@@ -49,6 +49,7 @@ Extracted from the ColorLib screenshot (preview unavailable):
 | Font weight (heading) | `700` (bold) | "Say Hello!" |
 | Font weight (labels) | `400` (normal) | Field labels |
 | Font weight (inputs) | `400` (normal) | Input values |
+| Brand (measured) | `#00dbde` | live sheet paints it ×12 — `background` on `.container-contact100`; style.css?v=6abd1ef4 (14,498 B, sha256 2ec979f663e4) · <https://colorlib.com/etc/cf/ContactFrom_v4/index.html> |
 
 ## Requirements
 

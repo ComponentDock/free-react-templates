@@ -92,6 +92,15 @@ preview host.
 - **Shapes/radii:** `rounded-full` (pills: buttons, badge, chips),
   `rounded-xl` / `rounded-lg` (cards, hero image).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#059669` | live sheet paints it ×18 — `background-color` on `.btn-primary`; Base.i0ON5Ovl.css (64,542 B, sha256 fd1f2aa6481d) · <https://preview.colorlib.com/theme/hopehand/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

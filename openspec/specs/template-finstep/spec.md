@@ -17,6 +17,15 @@ Recreation of ColorLib "Colorlib Wizard 24" — a 4-step financial sign-up wizar
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-24.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/finstep` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#6bc734` | live sheet paints it ×3 — `background` on `.inner .cl-form-row .form-holder .cl-border`; style.css?v=e23e72d8 (17,041 B, sha256 6c88c088b509) · <https://colorlib.com/etc/bwiz/colorlib-wizard-24/index.html> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Page Load and Layout

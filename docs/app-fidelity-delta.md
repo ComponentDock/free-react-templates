@@ -10,10 +10,10 @@ never edits `apps/`). Every other token axis compares a spec against
 its live reference sheet. This one compares the shipped app's own
 palette against the brand-role colours its prep measured.
 
-_Provenance: main `831fb7c0c`, 2026-10-23 (offline, from the working tree)_
+_Provenance: after the brand-claim backfill: 267 preps gained a machine-readable Brand row (docs/brand-claims-coverage.md), 2026-10-23_
 
 Corpus: **3230** specs, **1703** of them
-with a shipped app (`apps/<name>/src`), **1844** brand-role
+with a shipped app (`apps/<name>/src`), **2110** brand-role
 colour claims evaluated.
 
 ## Method
@@ -41,13 +41,13 @@ colour claims evaluated.
 
 | bucket | n | meaning |
 | --- | --- | --- |
-| UNSHIPPED (flag) | **108** claims / **87** apps | measured brand colour absent from the app |
-| APPROX | 63 | near neighbour painted (Δ ≤ 24) |
-| COVERED | 968 | every measured brand-role claim painted |
-| NO-TOKEN | 11 | app src holds no chromatic hex |
-| NO-CLAIM | 512 | spec states no brand-role colour |
+| UNSHIPPED (flag) | **125** claims / **104** apps | measured brand colour absent from the app |
+| APPROX | 66 | near neighbour painted (Δ ≤ 24) |
+| COVERED | 1206 | every measured brand-role claim painted |
+| NO-TOKEN | 15 | app src holds no chromatic hex |
+| NO-CLAIM | 246 | spec states no brand-role colour |
 | ALIAS-SKIP | 0 | alias prep, never built from |
-| UNDOCUMENTED-ANCHOR | 64 | app anchor hex the spec never states |
+| UNDOCUMENTED-ANCHOR | 70 | app anchor hex the spec never states |
 
 ## Reading the numbers
 
@@ -56,9 +56,9 @@ the closest the app paints:
 
 | Δ | claims | what it means |
 | --- | --- | --- |
-| 25–49 | 26 | a re-picked shade of the same hue |
-| 50–89 | 27 | a neighbouring colour family |
-| 90+ | 55 | a different colour: the design's accent was replaced |
+| 25–49 | 31 | a re-picked shade of the same hue |
+| 50–89 | 33 | a neighbouring colour family |
+| 90+ | 61 | a different colour: the design's accent was replaced |
 
 A colour that recurs across apps is one shortcut, not N mistakes: the
 most repeated here is `#007bff`,
@@ -82,23 +82,23 @@ one.
 | `jobgrid` | 2 |
 | `pipekit` | 2 |
 | `slidebay` | 2 |
+| `arlo` | 1 |
 | `ascent` | 1 |
 | `bizmark` | 1 |
 | `bizplanner` | 1 |
 | `briefly` | 1 |
 | `btncraft` | 1 |
 | `btnshade` | 1 |
+| `captura` | 1 |
 | `carosle` | 1 |
 | `casepoint` | 1 |
+| `cloud` | 1 |
 | `concertina` | 1 |
+| `contactbreeze` | 1 |
+| `contactpulse` | 1 |
+| `convoke` | 1 |
 | `creel` | 1 |
 | `dashlet` | 1 |
-| `domkit` | 1 |
-| `droplist` | 1 |
-| `favison` | 1 |
-| `feast` | 1 |
-| `finflow` | 1 |
-| `footerpulse` | 1 |
 
 ## Unshipped measured brand colours
 
@@ -116,7 +116,9 @@ chromatic the app does paint, with the max-channel distance.
 | `fortify` | 33 | Purple accent | `#6382e6` | `#fab700` | 230 |
 | `fleetly` | 20 | Accent teal | `#4cd3e3` | `#e0a500` | 227 |
 | `fortify` | 31 | Cyan accent | `#4cd3e3` | `#fab700` | 227 |
+| `captura` | 21 | Brand (stated in this prep) | `#ff5e13` | `#21a0f5` | 226 |
 | `spotly` | 18 | Accent (most-used chromatic) | `#00ad5f` | `#d49530` | 212 |
+| `snowline` | 21 | Brand (stated in this prep) | `#2f7dfc` | `#ff005a` | 208 |
 | `ironpulse` | 25 | Accent (most-used chromatic) | `#ff0055` | `#5cc4e3` | 196 |
 | `ascent` | 54 | Accent orange | `#ff5e13` | `#4a47d6` | 195 |
 | `roost` | 33 | Warm accent | `#e88941` | `#3d9cff` | 190 |
@@ -128,6 +130,8 @@ chromatic the app does paint, with the max-channel distance.
 | `justly` | 32 | Kit primary navy | `#1f2b7b` | `#cc0000` | 173 |
 | `dropnest` | 30 | Column accent - Marketing | `#dc3545` | `#3fc5f0` | 171 |
 | `sprout` | 50 | Bootstrap primary | `#0d6efd` | `#b59877` | 168 |
+| `arlo` | 66 | Brand (measured) | `#7c3aed` | `#fde047` | 166 |
+| `flick` | 36 | Brand (stated in this prep) | `#00ffc0` | `#8b5cf6` | 163 |
 | `jobboard` | 18 | Brand color | `#1644ba` | `#b9d964` | 163 |
 | `vellum` | 11 | Brand Primary | `#4f46e5` | `#f200ff` | 163 |
 | `scoop` | 40 | Gold accent | `#f8b600` | `#ff1857` | 158 |
@@ -157,10 +161,12 @@ chromatic the app does paint, with the max-channel distance.
 | `tadpole` | 26 | Accent (most-used chromatic) | `#c2036f` | `#ff6b9d` | 104 |
 | `tickwell` | 20 | Accent (most-used chromatic) | `#c400c6` | `#6366f1` | 102 |
 | `mercy` | 17 | primary | `#82ae46` | `#e5554c` | 99 |
+| `contactpulse` | 28 | Brand (measured) | `#c77ff2` | `#e84393` | 95 |
 | `footerpulse` | 23 | Accent (most-used chromatic) | `#1089ff` | `#6ea8fe` | 94 |
 | `calwave` | 9 | Primary / Brand accent | `#3b82f6` | `#983df7` | 93 |
 | `powergrip` | 23 | Accent (most-used chromatic) | `#9870fc` | `#f5a0a0` | 93 |
 | `zestly` | 18 | Accent (most-used chromatic) | `#ffc000` | `#ff6357` | 93 |
+| `cloud` | 35 | Brand (stated in this prep) | `#18e06f` | `#0284c7` | 92 |
 | `shores` | 31 | Accent red | `#f44a40` | `#e0a500` | 91 |
 | `calwave` | 9 | Primary / Brand accent | `#2563eb` | `#7e0cf5` | 89 |
 | `fortify` | 35 | Orange accent | `#f09359` | `#fab700` | 89 |
@@ -172,11 +178,15 @@ chromatic the app does paint, with the max-channel distance.
 | `pieslice` | 15 | Accent (most-used chromatic) | `#ef0031` | `#c94e28` | 78 |
 | `btnridge` | 27 | Secondary olive | `#94aa2a` | `#8b5e3c` | 76 |
 | `pipekit` | 17 | Primary CTA | `#0062cc` | `#434380` | 76 |
+| `festpoint` | 21 | Brand (stated in this prep) | `#6b75ff` | `#34c0e7` | 75 |
+| `gather` | 29 | Brand (measured) | `#38ade0` | `#2563eb` | 74 |
 | `droplist` | 21 | Primary brand color | `#007bff` | `#0071bc` | 67 |
 | `btnspark` | 9 | Brand Colors | `#4f46e5` | `#0d6efd` | 66 |
 | `onepage` | 48 | Accent (dominant chromatic) | `#1088d5` | `#4f46e5` | 66 |
 | `bistro` | 9 | Brand Colors | `#d4a373` | `#ff7333` | 64 |
+| `lamina` | 51 | Brand (measured) | `#654ede` | `#2563eb` | 64 |
 | `creel` | 19 | Brand Colors | `#6366f1` | `#2563eb` | 62 |
+| `kicks` | 35 | Brand (measured) | `#88c8bc` | `#60a5fa` | 62 |
 | `briefly` | 25 | Accent (most-used chromatic) | `#f2c64d` | `#f9a88a` | 61 |
 | `regnest` | 20 | Accent (most-used chromatic) | `#385cb9` | `#3b82f6` | 61 |
 | `bizmark` | 21 | Secondary accent | `#ff8b23` | `#ff7e5f` | 60 |
@@ -185,6 +195,8 @@ chromatic the app does paint, with the max-channel distance.
 | `studium` | 22 | Accent magenta | `#e449ad` | `#ce4be8` | 59 |
 | `vertex` | 24 | accent-magenta | `#e74c78` | `#ee87a4` | 59 |
 | `wordpressapp` | 50 | Accent (dominant chromatic) | `#8839d4` | `#6a1b9a` | 58 |
+| `convoke` | 115 | Brand (stated in this prep) | `#0181f5` | `#1bb8f9` | 55 |
+| `orbit` | 35 | Brand (stated in this prep) | `#0046d5` | `#3730a3` | 55 |
 | `shopcraft` | 17 | Brand color | `#f41068` | `#c94433` | 53 |
 | `jobgrid` | 34 | Kit primary navy | `#1f2b7b` | `#1d2547` | 52 |
 | `formdrop` | 51 | Accent magenta | `#d62196` | `#e91e63` | 51 |
@@ -200,14 +212,19 @@ chromatic the app does paint, with the max-channel distance.
 | `overture` | 52 | Accent (most-used chromatic) | `#f84982` | `#e91e63` | 43 |
 | `touchpoint` | 54 | Brand blue | `#1089ff` | `#3b82f6` | 43 |
 | `gatherly` | 41 | --color-bs-primary | `#007bff` | `#2654ff` | 39 |
+| `travenzo` | 44 | Brand (measured) | `#00ad5f` | `#218838` | 39 |
+| `inkwell` | 21 | Brand (stated in this prep) | `#2f91ff` | `#4a90d9` | 38 |
+| `drift` | 34 | Brand (stated in this prep) | `#5c91fe` | `#818cf8` | 37 |
 | `ripples` | 12 | Brand Colors | `#007bff` | `#2563eb` | 37 |
 | `signvault` | 23 | brand-primary | `#e32249` | `#c0392b` | 35 |
 | `btnridge` | 28 | Accent crimson | `#f0134d` | `#dc3545` | 34 |
 | `sprintly` | 18 | secondary | `#e4381c` | `#c2410c` | 34 |
 | `buttonforge` | 12 | Primary Cyan/Teal accent | `#1fbbd3` | `#40bfc1` | 33 |
+| `contactbreeze` | 52 | Brand (measured) | `#00dbde` | `#00d2ff` | 33 |
 | `btnshade` | 11 | Accent Colors | `#28a745` | `#198754` | 32 |
 | `signupcraft` | 26 | Primary button color | `#fb771a` | `#e6951d` | 30 |
 | `powerwash` | 18 | --btn-primary | `#007bff` | `#0a5ef5` | 29 |
+| `journeybar` | 32 | Brand (measured) | `#ff8300` | `#f59e0b` | 27 |
 | `medprime` | 34 | Accent (dominant chromatic) | `#1b2e69` | `#001c64` | 27 |
 | `wizlane` | 22 | Primary Brand Green | `#77cc6d` | `#8eb852` | 27 |
 | `btnridge` | 26 | Primary indigo | `#494ca2` | `#5f32a5` | 26 |
@@ -233,6 +250,7 @@ The app's own brand anchor is a colour no spec token states.
 | `calwave` | `--color-accent` | `#7e0cf5` | `#2563eb` | 89 |
 | `cantrip` | `--color-brand` | `#6dab3c` | `#999999` | 93 |
 | `clearpoint` | `--color-brand` | `#00ffab` | `#666666` | 153 |
+| `cloud` | `--color-brand` | `#0ea5e9` | `#18e06f` | 122 |
 | `concertina` | `--color-accent` | `#563d7c` | `#64748b` | 55 |
 | `confreg` | `--color-brand` | `#3a7d44` | `#329e5e` | 33 |
 | `confreg` | `--color-accent` | `#2e7d32` | `#329e5e` | 44 |
@@ -244,12 +262,14 @@ The app's own brand anchor is a colour no spec token states.
 | `dropwell` | `--color-brand` | `#20c997` | `#4d80e4` | 77 |
 | `fitforge` | `--color-brand` | `#e63946` | `#ff5408` | 62 |
 | `fitforge` | `--color-accent` | `#f4a261` | `#a5a5a5` | 79 |
+| `flick` | `--color-brand` | `#8b5cf6` | `#00ffc0` | 163 |
 | `flightly` | `--color-brand` | `#ff4b5a` | `#808080` | 127 |
 | `forgehub` | `--color-secondary` | `#8bc34a` | `#167b6f` | 117 |
 | `formreach` | `--color-brand` | `#0d6efd` | `#6c757d` | 128 |
 | `formzen` | `--color-brand` | `#7c6bc4` | `#bdbdd3` | 82 |
 | `gallery` | `--color-brand` | `#e74c3c` | `#fd3137` | 27 |
 | `gatepass` | `--color-brand` | `#6c63ff` | `#888888` | 119 |
+| `gather` | `--color-accent` | `#2563eb` | `#007bff` | 37 |
 | `glowlens` | `--color-brand` | `#c1a052` | `#868686` | 59 |
 | `groove` | `--color-brand` | `#e8735a` | `#d95252` | 33 |
 | `hamlin` | `--color-accent` | `#f96d00` | `#6c757d` | 141 |
@@ -265,6 +285,7 @@ The app's own brand anchor is a colour no spec token states.
 | `pieslice` | `--color-brand` | `#e8663d` | `#ed0037` | 102 |
 | `pixelate` | `--color-brand` | `#6382e6` | `#999999` | 77 |
 | `portico` | `--color-brand` | `#3b82f6` | `#1a88ff` | 33 |
+| `rafter` | `--color-accent` | `#ffc93c` | `#faba00` | 60 |
 | `reachout` | `--color-brand` | `#4ecdc4` | `#6c757d` | 88 |
 | `regcraft` | `--color-accent` | `#4ade80` | `#57b846` | 58 |
 | `regflux` | `--color-brand` | `#c5e4f3` | `#ebebeb` | 38 |
@@ -278,12 +299,14 @@ The app's own brand anchor is a colour no spec token states.
 | `sidebarvault` | `--color-accent` | `#e74c3c` | `#cfcfcf` | 147 |
 | `signdrop` | `--color-brand` | `#4a7cf7` | `#0062cc` | 74 |
 | `slidebay` | `--color-brand` | `#007bff` | `#0056b3` | 76 |
+| `snowline` | `--color-brand` | `#ff005a` | `#ff3368` | 51 |
 | `sovereign` | `--color-brand` | `#1a73e8` | `#7d7d7d` | 107 |
 | `spruce` | `--color-accent` | `#ec583a` | `#999999` | 95 |
 | `stayquest` | `--color-brand` | `#c8a96e` | `#af7d51` | 44 |
 | `sudsy` | `--color-accent` | `#70d76a` | `#999999` | 62 |
 | `synod` | `--color-brand` | `#c0392b` | `#a66327` | 42 |
 | `threshold` | `--color-brand` | `#4f46e5` | `#888888` | 93 |
+| `townhub` | `--color-accent` | `#31ff7a` | `#999999` | 104 |
 | `vellum` | `--color-brand` | `#ffd369` | `#f8fafc` | 147 |
 | `wayfare` | `--color-brand` | `#f57224` | `#808080` | 117 |
 
@@ -299,12 +322,15 @@ not N independent mistakes.
 | `#4cd3e3` | 3 |
 | `#38a4ff` | 3 |
 | `#1089ff` | 3 |
+| `#7c3aed` | 2 |
+| `#ff5e13` | 2 |
 | `#3e64ff` | 2 |
 | `#52de97` | 2 |
 | `#3b82f6` | 2 |
 | `#f44a40` | 2 |
 | `#f84982` | 2 |
 | `#1f2b7b` | 2 |
+| `#00ad5f` | 2 |
 | `#0d6efd` | 2 |
 
 ## What to do with a hit

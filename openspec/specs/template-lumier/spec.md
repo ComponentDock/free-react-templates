@@ -15,6 +15,15 @@ Lumier is a single-page photographer portfolio template in the free-react-templa
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/lumier` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#df0e62` | live sheet paints it ×10 — `background` on `.custom-pagination a:hover`; style.css (14,049 B, sha256 c749c31c84d3) · <https://preview.colorlib.com/theme/elit/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Sidebar navigation

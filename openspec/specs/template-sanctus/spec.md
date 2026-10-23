@@ -221,6 +221,15 @@ text-transform: uppercase; }`; `btn-sm` = padding .25rem .5rem,
 Sanctus lives in `apps/sanctus` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f79918` | live sheet paints it ×26 — `--bs-primary` on `:root`; style.css (56,913 B, sha256 88a89b7399dd) · <https://preview.colorlib.com/theme/byfaith/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent navbar with wordmark and dropdown links

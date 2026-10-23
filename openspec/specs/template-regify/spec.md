@@ -4,6 +4,15 @@
 
 Regify is a free account application registration form template that recreates ColorLib "Colorlib Reg Form V8" (https://colorlib.com/wp/template/colorlib-regform-8/) as a React 19 + Tailwind CSS 4 + TypeScript application. The form provides a clean, centered signup card with name, email, password (with visibility toggle), repeat password, terms checkbox, and a gradient submit button on a full-page background photo.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#74ebd5` | live sheet paints it ×9 — `-webkit-border-image-source` on `.form-input:focus`; style.css?v=32ef4f3c (9,390 B, sha256 03650bc85aeb) · <https://colorlib.com/etc/regform/colorlib-regform-8/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #9face6 x9.
+
 ## Requirements
 
 ### Requirement: Page layout and branding

@@ -44,6 +44,15 @@ TypeScript.
 Facet lives in `apps/facet` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2e9e5b` | live sheet paints it ×55 — `background` on `.ftco-navbar-light .navbar-nav > .nav-item.cta > a`; style.css (76,518 B, sha256 2f9244af9f38) · <https://preview.colorlib.com/theme/square/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

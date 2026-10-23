@@ -129,6 +129,15 @@ rgba(153,153,153,0.1)`, margin -20px 0): h3 "Book an Appointment",
 Sana lives in `apps/sana` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn) and the repo-standard Navbar/Footer chrome.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3face4` | live sheet paints it ×59 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (67,531 B, sha256 e75d96a80a63) · <https://preview.colorlib.com/theme/hospice/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

@@ -6,6 +6,15 @@ Recreation of ColorLib Accordion V17 (https://colorlib.com/wp/template/accordion
 
 Crank is a clean, minimal FAQ accordion page with a plus/minus toggle style. It recreates the ColorLib Accordion V17 design using React, Tailwind CSS 4, and accessible accordion patterns. The template features a centered heading, three expandable question/answer items with green accent on active state, and a footer linking to Component Dock.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#72c02c` | live sheet paints it ×2 — `color` on `.custom-accordion .cl-accordion-item .cl-btn-link[aria-expanded="true"]:before`; style.css?v=2171e25a (9,114 B, sha256 fbc3fb63cfe2) · <https://preview.colorlib.com/theme/bac/accordion-17/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Renders the accordion heading

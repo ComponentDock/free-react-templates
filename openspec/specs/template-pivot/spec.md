@@ -26,6 +26,15 @@ footer with contact info and copyright.
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/martin-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/pivot` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffdd00` | live sheet paints it ×16 — `background` on `#colorlib-main-nav ul li.active a span:before`; style.css (33,465 B, sha256 cae9e2a07b0f) · <https://preview.colorlib.com/theme/martin/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, and mobile menu

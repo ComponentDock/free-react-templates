@@ -176,6 +176,7 @@ Tailwind CSS 4 + TypeScript.
 | base type         | source `body` is the system stack (`-apple-system, … Arial, sans-serif`) 1rem/1.5 `#212529` — but every VISIBLE glyph is Montserrat Thin, Montserrat Bold or Quantico                                                                                                                                            | typography                                        |
 | transitions       | `all .4s` (social circles); the flip animation is `turn`/`turn2` 0.5s linear, retriggered per changed digit                                                                                                                                                                                                      | interaction                                       |
 | attribution       | a small low-emphasis line linking `https://www.componentdock.com/` ("Component Dock"), pinned absolutely near the bottom edge of the shell so the three-band stack is untouched                                                                                                                                  | ADDED vs the reference (the source has no credit) |
+| Brand (stated in this prep) | `#b224ef` | live sheet paints it ×4 — `background` on `.overlay1::before`; style.css?v=a16d4cd3 (19,543 B, sha256 d7ba9df8bff4) · <https://colorlib.com/etc/cs/comingsoon_15/index.html> |
 
 ## Requirements
 

@@ -4,6 +4,15 @@
 
 Recreate the ColorLib "Services" template (https://colorlib.com/wp/template/services/) as a production-ready React 19 + Vite + Tailwind CSS 4 + TypeScript template named "Servhub". The original is a multi-section business services agency site with hero, about, services grid, project gallery, testimonials carousel, blog posts, contact form, and footer.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#c2e54f` | live sheet paints it ×17 — `background` on `.btn.btn-primary`; style.css (22,595 B, sha256 618b1554e2fb) · <https://preview.colorlib.com/theme/services/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with brand and navigation links

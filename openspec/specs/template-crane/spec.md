@@ -37,6 +37,15 @@ contact CTA, and footer sections.
 10. **Contact CTA** — Dark overlay banner: "Are you looking for a Construction and Industrial Experts?" heading + "Contact Us" button
 11. **Footer** — 4-column: About (address + social links), Popular Searches, Useful Links, Subscribe (email form). Bottom bar with Component Dock credit.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f0542c` | live sheet paints it ×32 — `background` on `.boxed-btn:hover`; style.css (149,258 B, sha256 b48dcf35f8b8) · <https://preview.colorlib.com/theme/constructo/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: All sections render in correct order

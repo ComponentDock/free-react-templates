@@ -165,6 +165,15 @@ class="position">` "Businessman".
   side → `https://picsum.photos/seed/succor-story/800/900`, avatar →
   `https://picsum.photos/seed/succor-person/160/160`.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffb400` | live sheet paints it ×23 — `background` on `.bg-primary`; style.css (69,467 B, sha256 5c05c8e01132) · <https://preview.colorlib.com/theme/aid/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent navbar over hero

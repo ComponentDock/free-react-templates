@@ -129,6 +129,15 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Pixora lives in `apps/pixora` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn, etc.).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#91d1ff` | live sheet paints it ×10 — `background-image` on `body:after, .primary-btn:after`; main.css (30,654 B, sha256 e8f68c53c874) · <https://preview.colorlib.com/theme/yaseen/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with nav and mobile menu

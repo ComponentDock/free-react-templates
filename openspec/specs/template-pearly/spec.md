@@ -209,6 +209,15 @@ Pearly lives in `apps/pearly` and uses shared components from `packages/ui`
 (adapted to the transparent-sticky mint-CTA header and the 3-column
 contact footer).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#39cca4` | live sheet paints it ×90 — `background` on `.theme-bg`; style.css (120,400 B, sha256 a12091d4204b) · <https://preview.colorlib.com/theme/dental/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

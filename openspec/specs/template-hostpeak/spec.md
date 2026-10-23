@@ -19,6 +19,7 @@ Hostpeak is a web hosting landing template. It recreates the ColorLib **Lorahost
 | Button radius     | `30px`                                        |
 | Body font         | Roboto 300                                    |
 | Heading font      | Lato 700                                      |
+| Brand (stated in this prep) | `#2926ac` — live sheet paints it ×4 — `background` on `g_item_img .blog_item_date,.button,.footer-area .single-footer-widget .click-btn`; style.css (31,488 B, sha256 43c0c99d5404) · <https://preview.colorlib.com/theme/lorahost/> |
 
 ## Sections
 

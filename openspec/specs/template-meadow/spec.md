@@ -264,6 +264,15 @@ Meadow lives in `apps/meadow` and uses shared components from `packages/ui`
 (adapted to the dark top bar + green navbar and the dark 4-widget footer),
 and the repo-standard dark-mode toggle.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#73b925` | live sheet paints it ×70 — `background` on `.ftco-navbar-light .container-xl`; style.css (80,087 B, sha256 5082a4ea77f4) · <https://preview.colorlib.com/theme/ecogreen/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar

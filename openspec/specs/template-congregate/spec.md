@@ -208,6 +208,15 @@ hover:bg-charcoal-100` (dark: `text-charcoal-400 hover:bg-charcoal-800`).
 Congregate lives in `apps/congregate` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f59e0b` | live sheet paints it ×13 — `outline-color` on `:focus-visible`; Base.CWHfKze-.css (45,227 B, sha256 fb595f78cd33) · <https://preview.colorlib.com/theme/hopefoundation/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

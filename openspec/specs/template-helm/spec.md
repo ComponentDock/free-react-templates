@@ -22,6 +22,15 @@ under the name "Helm" with a centered logo navbar, full-width hero overlay,
 4-column blog grid, and a newsletter footer. All designs use picsum.photos
 placeholders and DM Sans via Google Fonts.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff5533` | live sheet paints it ×17 — `border-color` on `.form-control:active, .form-control:focus`; style.css (20,351 B, sha256 b2a05d8ba61e) · <https://preview.colorlib.com/theme/cruise/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar displays all navigation links

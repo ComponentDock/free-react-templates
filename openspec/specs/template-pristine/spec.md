@@ -222,6 +222,15 @@ h5 a` 22px/500; `.wantToWork-caption h2` 30px/500/#132E43; `.info-man
 Pristine lives in `apps/pristine` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#006cff` | live sheet paints it ×46 — `background` on `#back-top`; style.css (78,231 B, sha256 04079460e72b) · <https://preview.colorlib.com/theme/cleaningservice/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

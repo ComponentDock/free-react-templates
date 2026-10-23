@@ -79,6 +79,15 @@ Section order measured in the reference DOM: top bar (phone +00 1234 567, email,
 - The hero's `#9acb56` gradient overlay (9 occurrences) is unmodelled in the app.
 - The app's `--color-display: 'Reenie Beanie'` and `--font-sans: 'Poppins'` match the reference pair exactly.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#6cae22` | live sheet paints it ×60 — `background` on `.icon-video`; style.css (82,521 B, sha256 e4172187ba7f) · <https://preview.colorlib.com/theme/yogabest/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar

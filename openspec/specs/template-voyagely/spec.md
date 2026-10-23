@@ -118,6 +118,15 @@ value="Book now">`.
   `https://picsum.photos/seed/voyagely-hero/1461/973` (source photo is
   1461×973; any 16:9 seed works).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f8ba0f` | live sheet paints it ×1 — `background` on `.submit`; style.css?v=006257d2 (7,219 B, sha256 984972379d30) · <https://colorlib.com/etc/regform/colorlib-regform-11/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Full-screen hero with photo background

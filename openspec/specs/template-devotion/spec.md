@@ -89,6 +89,15 @@ upcoming events, and a dark footer.
     Quick Menu (links), Ministries (links), Get In Touch (address, phone,
     email). Social icons (Facebook, Twitter, Instagram). Copyright bar.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f23a2e` | live sheet paints it ×8 — `border-color` on `.form-control:active, .form-control:focus`; style.css (23,578 B, sha256 7b6e5a960164) · <https://preview.colorlib.com/theme/faithful/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Devotion template behaviour

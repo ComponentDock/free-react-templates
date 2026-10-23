@@ -13,6 +13,15 @@ Captura is a photography portfolio template recreating the ColorLib "Halen" desi
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/halen-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/captura` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff5e13` | live sheet paints it ×20 — `background` on `.genric-btn.primary`; style.css (137,291 B, sha256 3f0bb2d8f02d) · <https://preview.colorlib.com/theme/halen/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with brand and navigation

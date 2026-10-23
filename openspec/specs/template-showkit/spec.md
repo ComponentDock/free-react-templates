@@ -40,6 +40,15 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Showkit lives in `apps/showkit` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f8395d` | live sheet paints it ×4 — `background` on `.item-imag:hover .product-title`; style.css (6,644 B, sha256 cc590156d539) · <https://preview.colorlib.com/theme/susan/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -211,6 +211,15 @@ radial-gradient(circle at top left, #3fcaff, #a4ffb0)`, `line-height:
   (`testimonial_bg.png`) cover; everything else transparent over white
   page.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3fcaff` | live sheet paints it ×77 — `background` on `.section_content h6:after`; style.css (93,475 B, sha256 2b634121ff15) · <https://preview.colorlib.com/theme/comodo/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

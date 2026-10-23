@@ -99,6 +99,15 @@ Recreation of **Colorlib Regform 27** — a 3-step wizard registration form with
        - 3 plan options (circular icon + title + description)
      - **Navigation bar** — Back Step + Next/Finish buttons (green circles)
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#4fab40` | live sheet paints it ×3 — `background` on `r .steps li.done a .step-icon, .form-register .steps li.done a:active .step-icon`; style.css?v=ca766f79 (16,525 B, sha256 5d0d9e244334) · <https://colorlib.com/etc/regform/colorlib-regform-27/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #3e4061 x2, #36782c x1.
+
 ## Requirements
 
 ### Requirement: Page renders with gradient background and white card

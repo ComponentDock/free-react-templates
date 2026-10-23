@@ -173,6 +173,15 @@ typography, and content types (no ColorLib assets copied).
   Fonts `<link>`; lucide-react icons (Globe, MessageCircle, Server, Cloud,
   Shield, etc. — probe each export before use).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2e004b` | live sheet paints it ×27 — `background-color` on `.overlay2::before`; style.css (154,330 B, sha256 988a2357b5c7) · <https://preview.colorlib.com/theme/hostza/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

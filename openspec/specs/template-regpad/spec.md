@@ -123,6 +123,7 @@ slug: `colorlib-regform-3`. Preview URL recorded below.
 | `--title-weight`     | `400`                                      | Heading font-weight (regular)                                        |
 | `--title-mb`         | `36px`                                     | Heading bottom margin                                                |
 | `--card-body-pad`    | `57px 65px` (desktop), `37px 30px` (mobile) | Right column internal padding                                     |
+| Brand (measured) | `#a18cd1` | live sheet paints it ×5 — `background` on `.bg-gra-01`; style.css?v=c4e3545f (10,694 B, sha256 65e88b2375b1) · <https://colorlib.com/etc/regform/colorlib-regform-3/> |
 
 ## Requirements
 

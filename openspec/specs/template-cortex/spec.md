@@ -71,6 +71,15 @@ preview host.
 Cortex lives in `apps/cortex` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#059669` | live sheet paints it ×15 — `background-color` on `.btn-primary`; Base.Doq5tvlT.css (64,808 B, sha256 d40abb483f98) · <https://preview.colorlib.com/theme/agentforge/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -63,6 +63,15 @@ A side-by-side login form template with gradient panel, account sign-in card, in
 - "Forgot password?" link: centered below button, OpenSans Regular 13px, #cccccc, white on hover
 - Responsive: below 576px, inputs stack vertically (100% width each)
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#2575fc` | live sheet paints it ×10 — `background` on `.container-login100`; style.css?v=014fa2e8 (11,702 B, sha256 c864530fae4d) · <https://colorlib.com/etc/lf/Login_v20/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #6a11cb x8, #c80000 x3.
+
 ## Requirements
 
 ### Requirement: Renders gradient background with centered form

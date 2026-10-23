@@ -176,6 +176,15 @@ Clamor lives in `apps/clamor` and uses shared components from `packages/ui`
 (adapted: this template's header is the absolute top-left logo + hamburger,
 not the standard navbar; the off-canvas menu replaces the standard nav).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff63b5` | live sheet paints it ×17 — `background` on `#colorlib-main-nav button`; style.css (29,500 B, sha256 b84f503cdc34) · <https://preview.colorlib.com/theme/shout/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

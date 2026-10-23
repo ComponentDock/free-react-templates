@@ -63,6 +63,15 @@ CSS 4 + TypeScript.
 Chisel lives in `apps/chisel` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#0779e4` | live sheet paints it ×25 — `background` on `.btn.btn-primary`; style.css (34,764 B, sha256 bcb19ad266c7) · <https://preview.colorlib.com/theme/reshape/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

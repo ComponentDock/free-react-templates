@@ -206,6 +206,15 @@ color: gray` — NOTE: 14px/1.8 here, NOT the 17px/1.5 of Accordion 03; the
   open. NO chevron icons (source comments the chevron out).
 - **Images:** NONE in the original — no placeholders needed.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f2dc63` | live sheet paints it ×3 — `background` on `.myaccordion .cl-card-header .heading .icon`; style.css?v=caf80ac8 (18,861 B, sha256 301adb374ece) · <https://preview.colorlib.com/theme/bac/accordion-04/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Page heading

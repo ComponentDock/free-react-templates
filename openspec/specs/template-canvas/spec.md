@@ -215,6 +215,15 @@ font-family:"Poppins", sans-serif }`; h1 900, h3/others 900/700; navbar logo
   existed; all five social glyphs (footer band) must be inline SVG brand
   paths (simple-icons) in gray, centered, no circles.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3b4eda` | live sheet paints it ×14 — `border-color` on `.form-control:active, .form-control:focus`; style.css (19,246 B, sha256 3b5e10982464) · <https://preview.colorlib.com/theme/approach/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with sticky state

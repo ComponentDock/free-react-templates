@@ -52,6 +52,15 @@ CSS 4 + TypeScript.
 Trestle lives in `apps/trestle` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#baff00` | live sheet paints it ×40 — `background` on `h1 span`; style.css (36,021 B, sha256 d5b5eb0da80b) · <https://preview.colorlib.com/theme/arcade/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

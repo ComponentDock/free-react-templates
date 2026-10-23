@@ -69,6 +69,15 @@ CSS 4 + TypeScript.
 Crafted lives in `apps/crafted` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#4ba0f9` | live sheet paints it ×50 — `background-color` on `::selection`; main.css (99,760 B, sha256 01d73bf47951) · <https://preview.colorlib.com/theme/crafted/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -228,6 +228,15 @@ rgba(255,87,0,0.12)`).
 Reachly lives in `apps/reachly` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff4495` | live sheet paints it ×66 — `background` on `#back-top`; style.css (76,943 B, sha256 13dcf036b95e) · <https://preview.colorlib.com/theme/calvino/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent header with nav and pink CTA

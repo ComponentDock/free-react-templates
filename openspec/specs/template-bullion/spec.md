@@ -220,6 +220,15 @@ rgba(0,0,0,.4) 100%)` hero overlay (`.bg-grad-layer-6:after`,
 Bullion lives in `apps/bullion` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f9b500` | live sheet paints it ×20 — `background` on `.bg-primary`; styles.css (77,811 B, sha256 f0d0fd35e2b5) · <https://preview.colorlib.com/theme/newsbit/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Utility top bar

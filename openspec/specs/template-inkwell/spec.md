@@ -13,6 +13,15 @@ Inkwell is a minimalist two-column contact form template designed for marketing 
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v11.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/inkwell` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2f91ff` | live sheet paints it ×8 — `background` on `.contact100-form-bgbtn`; style.css?v=f3a489e6 (9,978 B, sha256 26c795260863) · <https://colorlib.com/etc/cf/ContactFrom_v11/index.html> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Two-column layout

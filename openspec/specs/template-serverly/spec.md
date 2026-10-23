@@ -176,6 +176,15 @@ footer_social` icons; `copyright_bar` (bg #181d2e, height 44px,
 Serverly lives in `apps/serverly` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#487fee` | live sheet paints it ×6 — `background` on `.button::before`; main_styles.css (20,924 B, sha256 4b4bf46bd73e) · <https://preview.colorlib.com/theme/bhost/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header / navigation

@@ -79,6 +79,15 @@ Reference bands: left-section (under-construction copy, countdown, email pill, s
 - The reference's only chromatic UI colour is the `#e45f74` hover; its other literals are social-brand icon strokes and Bootstrap link defaults. The app declares no hex tokens at all (`@theme` has only `--font-sans`).
 - The demo page has a `ClassyCountdown` block (days/hours/minutes/seconds) that the shipped app does not render.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#e45f74` | live sheet paints it ×1 — `color` on `a:focus, a:active, a:hover, button:focus, button:active, button:hover`; style.css?v=84349a7d (14,814 B, sha256 6548d0673542) · <https://colorlib.com/etc/cs/01-comming-soon.html> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Split-screen hero layout

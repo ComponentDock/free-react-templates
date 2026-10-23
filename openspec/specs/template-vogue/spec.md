@@ -195,6 +195,15 @@ h4`, `.single-box-item .box-text h2` (48-60px), nav links + hover underline,
     "Made with ❤" linking to `https://www.componentdock.com/` (mandatory, no
     ColorLib credit).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fe439f` | live sheet paints it ×1 — `background` on `.single-product-item figure .p-status.sale`; style.css (37,530 B, sha256 a02910689692) · <https://preview.colorlib.com/theme/violet/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with logo, nav and account tools

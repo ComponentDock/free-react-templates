@@ -123,6 +123,7 @@ screenshot pixel-samples corroborate the gradient and header/zebra colors)
 | 12  | 2017-09-21 05:57    | 200388   | Game Console Controller  | $999.00  | 1        | $999.00  |
 | 13  | 2017-09-19 05:57    | 200387   | iPhone X 64Gb Grey       | $999.00  | 1        | $999.00  |
 | 14  | 2017-09-18 05:57    | 200386   | iPhone X 64Gb Grey       | $999.00  | 1        | $999.00  |
+| Brand (measured) | `#c850c0` | live sheet paints it ×5 — `background` on `.container-table100`; style.css?v=3a090e4e (6,723 B, sha256 575fc758e4a1) · <https://colorlib.com/etc/tb/Table_Responsive_v1/index.html> |
 
 (Rows 11–14 = rows 7–10 repeated — source quirk, replicate.)
 

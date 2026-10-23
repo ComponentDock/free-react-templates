@@ -202,6 +202,15 @@ rgba(0,0,0,.03)`, padding 30px; icon square 80×80 with Gradient A.
 Netrise lives in `apps/netrise` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn, etc.).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#12e6ca` | live sheet paints it ×88 — `background` on `.owl-carousel.home-slider .slider-item .slider-text .btn-primary`; style.css (93,325 B, sha256 33345862ea14) · <https://preview.colorlib.com/theme/webhost/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

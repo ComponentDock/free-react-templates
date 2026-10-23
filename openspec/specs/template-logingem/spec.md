@@ -75,6 +75,15 @@ circles), and an "Or Sign Up Using / Sign Up" link at the bottom.
 - Input focus: bottom border underline animates from 0 to 100% width, icon turns purple
 - Links: 0.4s transition on hover
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#00dbde` | live sheet paints it ×8 — `background` on `.login100-form-bgbtn`; style.css?v=824de217 (13,382 B, sha256 e4c0c71d8d7e) · <https://colorlib.com/etc/lf/Login_v4/index.html> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #fc00ff x8, #a64bf4 x4, #1da1f2 x1.
+
 ## Requirements
 
 ### Requirement: Full-viewport gradient background renders

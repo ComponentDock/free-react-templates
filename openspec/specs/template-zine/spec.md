@@ -152,6 +152,15 @@ padding-bottom: 70px`; cat-links `padding: 40px 100px 20px`; entry-title
 Zine lives in `apps/zine` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f5de87` | live sheet paints it ×4 — `background-color` on `.carousel_pagination a:hover`; style.css (25,444 B, sha256 9545a028b9b4) · <https://preview.colorlib.com/theme/katt/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header (logo + hamburger toggle)

@@ -298,6 +298,7 @@ authoritative again — CSS values are canonical over the screenshot
 | --- | --- | --- |
 | live page | `https://colorlib.com/etc/cs/comingsoon_05/index.html` | HTTP 200 · 2,138 B · title `Coming Soon 5` |
 | stylesheet | `https://colorlib.com/etc/cs/comingsoon_05/css/style.css?v=61a959d8` | HTTP 200 · 10,652 B · sha256 `733b4dc65427` |
+| Brand (stated in this prep) | `#f77062` | live sheet paints it ×4 — `background` on `.bg-g1`; style.css?v=61a959d8 (10,652 B, sha256 733b4dc65427) · <https://colorlib.com/etc/cs/comingsoon_05/index.html> |
 
 **Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
 `#f77062`×4, `#fe5196`×4, `#999999`×4, `#f65342`×4, `#fb3282`×4,

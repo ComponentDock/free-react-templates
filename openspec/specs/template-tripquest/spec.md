@@ -138,6 +138,15 @@ distinguishes this template from the rounded-card travel templates.
     border-bottom-right-radius: 20px` (sidebar variant — not on this
     page, noted for token completeness)
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f8b600` | live sheet paints it ×78 — `background-color` on `::selection`; main.css (68,736 B, sha256 370bce060c24) · <https://preview.colorlib.com/theme/travel/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Top bar + Navbar

@@ -38,6 +38,15 @@ CSS 4 + TypeScript.
 Anvil lives in `apps/anvil` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f23a2e` | live sheet paints it ×10 — `border-color` on `.form-control:active, .form-control:focus`; style.css (25,070 B, sha256 84d5350c68da) · <https://preview.colorlib.com/theme/industrie/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

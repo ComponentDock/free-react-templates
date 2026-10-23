@@ -36,6 +36,7 @@ Extracted from the downloaded template's CSS (`css/style.css`).
 | Button hover                  | Pseudo-element with reversed gradient: `linear-gradient(45deg, #ff4b5a 0%, #ff4b5a 28%, #2c6dd5 91%, #2c6dd5 100%)` fades in via `opacity: 0→1` |
 | Button transition             | `all .2s ease-out, color .2s ease-out`                                                                                                          |
 | Mobile (≤767px)               | Flex-wrap, all fields full-width, `padding: 20px`, margin-bottom between fields                                                                 |
+| Brand (measured) | `#2c6dd5` — live sheet paints it ×4 — `background` on `.s132 form .inner-form .input-field.third-wrap .btn-search`; style.css?v=343b3fc3 (10,305 B, sha256 b248ba1159e4) · <https://colorlib.com/etc/searchf/colorlib-search-25/> |
 
 ## Requirements
 

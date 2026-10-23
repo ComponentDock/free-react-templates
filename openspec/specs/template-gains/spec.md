@@ -171,6 +171,15 @@ sans-serif`) via Google Fonts (use `<link>` in index.html).
 Gains lives in `apps/gains` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn, etc.).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fa0347` | live sheet paints it ×50 — `background-image` on `video .video-play-button, .extends_part .extends_video .video-play-button:before`; style.css (163,152 B, sha256 3f47bf77db59) · <https://preview.colorlib.com/theme/fitzone2/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with logo, navigation, and CTA button

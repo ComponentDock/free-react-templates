@@ -205,6 +205,15 @@ rounded-full bg-primary-200 font-serif text-lg font-semibold text-primary-800`
 Shutter lives in `apps/shutter` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fef3c7` | live sheet paints it ×1 — `background-color` on `.bg-accent-100`; Base.UfbsfXhY.css (63,624 B, sha256 852833330729) · <https://preview.colorlib.com/theme/elenavoss/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

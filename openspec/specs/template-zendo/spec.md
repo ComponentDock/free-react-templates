@@ -183,6 +183,15 @@ solid rgba(0,0,0,0.05)`, `padding: 6em 0`), 4 columns: brand
 Zendo lives in `apps/zendo` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffb5b5` | live sheet paints it ×46 — `background` on `.owl-carousel.home-slider .slider-item .overlay`; style.css (77,773 B, sha256 a70ea87c56d9) · <https://preview.colorlib.com/theme/meditative/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with brand and dot-separated link row

@@ -183,6 +183,15 @@ button and `Footer.test.tsx` asserts it — that is the reference delta this
 block exposes.
 <!-- reference-revalue:end -->
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fc0254` | live sheet paints it ×47 — `background` on `.header-section .nav-menu .main-menu ul li a:after`; style.css (42,720 B, sha256 d08c771dd457) · <https://preview.colorlib.com/theme/yummy/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with logo, nav, and search

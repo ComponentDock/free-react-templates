@@ -42,6 +42,15 @@ TypeScript.
 Blueprint lives in `apps/blueprint` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#499bea` | live sheet paints it ×31 — `background` on `.video-hero .overlay`; style.css (38,023 B, sha256 313c5141b837) · <https://preview.colorlib.com/theme/unapp/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -64,6 +64,15 @@ Reference bands: Event Information -> Set The Event -> Request from You (3 wizar
 - The reference's only accent, `#49276c` (checkbox mark), is not tokenized in `apps/confwell`.
 - `Arvo` (body face) and the outlined `#fff` buttons do match the reference.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#49276c` | live sheet paints it ×1 — `color` on `.checkbox .checkmark`; style.css?v=9db4f24a (8,327 B, sha256 2645cc53dba1) · <https://colorlib.com/etc/bwiz/colorlib-wizard-3/index.html> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Split-screen layout renders on page load

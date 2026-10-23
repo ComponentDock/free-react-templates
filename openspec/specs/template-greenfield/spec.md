@@ -19,6 +19,15 @@ TypeScript.
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/farmland-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/greenfield` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#5d8c55` | live sheet paints it ×59 — `background` on `.ftco-navbar-light`; style.css (91,797 B, sha256 4ad8b6ff23dc) · <https://preview.colorlib.com/theme/farmland/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact info and social links

@@ -187,6 +187,15 @@ Fidelity refinements made while implementing (the spec above is authoritative):
 6. Blog card titles keep the reference's demo copy ("Summer ware are
    coming") — demo strings are reproduced, assets are not.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#57ffed` | live sheet paints it ×6 — `background-image` on `tn2.primary-border:hover,.content .content-overlay,.single-footer-widget .bb-btn`; main.css (13,172 B, sha256 d049e3b2551b) · <https://preview.colorlib.com/theme/travelasia/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Navbar

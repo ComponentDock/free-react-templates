@@ -180,6 +180,15 @@ Dynamo lives in `apps/dynamo` and uses shared components from `packages/ui`
 (adapted to the dark topbar + yellow search button + centered nav and the
 dark 4-column footer with bottom bar).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffc000` | live sheet paints it ×33 — `background` on `.site-btn`; style.css (36,484 B, sha256 6d9bb9e6c5aa) · <https://preview.colorlib.com/theme/industryinc/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header

@@ -28,6 +28,15 @@ Voyager lives in `apps/voyager` and uses shared components from `packages/ui`
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/tour-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/voyager` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ffdd00` | live sheet paints it ×32 — `background` on `::selection`; style.css (46,991 B, sha256 a7af912c9663) · <https://preview.colorlib.com/theme/tour/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

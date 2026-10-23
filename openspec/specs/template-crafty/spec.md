@@ -48,6 +48,15 @@ Crafty lives in `apps/crafty` and uses shared components from `packages/ui`.
   9. Footer — Dark bg, 4 cols: About Agency links, Newsletter signup,
      Instafeed (8 images), social icons. Bottom: copyright + Component Dock link
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f5204b` | live sheet paints it ×38 — `background-color` on `::selection`; main.css (33,235 B, sha256 ca7151bdf903) · <https://preview.colorlib.com/theme/five-star/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

@@ -108,6 +108,15 @@ sans-serif`) via Google Fonts.
 Deskly lives in `apps/deskly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fef3c7` | live sheet paints it ×3 — `background-color` on `.bg-primary-100`; Base.BmJJs_gh.css (62,014 B, sha256 fe1d78230239) · <https://preview.colorlib.com/theme/workhub/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

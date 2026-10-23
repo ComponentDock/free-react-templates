@@ -15,6 +15,15 @@ Recreate the ColorLib "Unica" university template as a React 19 + Tailwind CSS 4
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/unica-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/lectern` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f6783a` | live sheet paints it ×36 — `background` on `.site-btn`; style.css (30,885 B, sha256 92ccf8264749) · <https://preview.colorlib.com/theme/unica/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Template renders all 11 sections in correct order

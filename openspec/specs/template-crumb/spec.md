@@ -72,6 +72,15 @@ rgba(0,0,0,0.01) 90%, transparent)` on the bottom half; slides have a slow
 Crumb lives in `apps/crumb` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#e59f80` | live sheet paints it ×38 — `background-color` on `.preloader .circle-preloader .foode-preloader span`; style.css (50,706 B, sha256 d4ed99ba9865) · <https://preview.colorlib.com/theme/foode/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top bar and navigation

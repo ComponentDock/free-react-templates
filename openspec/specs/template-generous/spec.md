@@ -171,6 +171,15 @@ col-lg-4`): small thumb + text block (h3 + paragraph): **Give Meal A
 Generous lives in `apps/generous` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#79ccab` | live sheet paints it ×30 — `--primary` on `:root`; style.css (57,944 B, sha256 4218d79900db) · <https://preview.colorlib.com/theme/giving/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Dark navbar with wordmark and nav links

@@ -15,6 +15,15 @@ Loop is a digital agency landing page template recreating the ColorLib "Repeat" 
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/repeat-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/loop` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff8e71` | live sheet paints it ×37 — `--bs-primary` on `:root`; style.css (57,799 B, sha256 95442c2ffef0) · <https://preview.colorlib.com/theme/repeat/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar renders all navigation links

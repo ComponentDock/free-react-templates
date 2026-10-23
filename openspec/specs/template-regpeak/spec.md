@@ -42,6 +42,15 @@ A split-screen registration form with a dark-to-cyan gradient background, left-s
 - Form padding reduces to 30px 20px
 - Input width adjusts to 96% (991px), 94% (767px), 89% (575px)
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fe892a` | live sheet paints it ×2 — `border-bottom` on `.form-v6-content .form-detail .cl-form-row input:focus`; style.css?v=c7801708 (6,272 B, sha256 6cf77a74f9da) · <https://colorlib.com/etc/regform/colorlib-regform-32/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Full-viewport gradient background

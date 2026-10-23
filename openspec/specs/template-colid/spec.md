@@ -73,6 +73,15 @@ under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Colid lives in `apps/colid` and uses shared components from `packages/ui`
 (ButtonLink) where the house pattern does.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#75cbe7` | live sheet paints it ×8 — `background` on `.overlay:before, .sky-bg`; style.css (19,371 B, sha256 696e4d66b818) · <https://preview.colorlib.com/theme/colid/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

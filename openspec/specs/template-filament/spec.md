@@ -42,6 +42,15 @@ layout, colors, typography, and content types (no ColorLib assets copied).
   - Font: Poppins (weights 200–600)
   - Buttons: pill shape (border-radius 20px), uppercase, weight 500
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f6d0c5` | live sheet paints it ×6 — `background-image` on `rea .next-trigger:hover,.service-area .prev-trigger:hover,.footer-social a:hover`; main.css (28,682 B, sha256 dc4da8851ae8) · <https://preview.colorlib.com/theme/simples/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

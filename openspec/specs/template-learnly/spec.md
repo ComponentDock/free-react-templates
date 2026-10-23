@@ -19,6 +19,15 @@ CSS 4 + TypeScript.
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/academics-free-template.jpeg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/learnly` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#51be78` | live sheet paints it ×21 — `background` on `.sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after`; style.css (26,509 B, sha256 6861d08004e9) · <https://preview.colorlib.com/theme/academics/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact info and login/register

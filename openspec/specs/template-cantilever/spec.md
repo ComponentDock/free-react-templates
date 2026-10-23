@@ -40,6 +40,15 @@ Tailwind CSS 4 + TypeScript.
 Cantilever lives in `apps/cantilever` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#a7cb00` | live sheet paints it ×45 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (64,911 B, sha256 235006bc48dc) · <https://preview.colorlib.com/theme/maxitechture/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar

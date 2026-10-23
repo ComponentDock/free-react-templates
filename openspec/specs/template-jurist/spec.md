@@ -9,6 +9,15 @@ recreates the ColorLib Judicial design under the name "Jurist". The template
 features a hero section, about section, practice areas, expertise grid, stats,
 consultation form, testimonials with FAQ accordion, social bar, and footer.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#cea15a` | live sheet paints it ×16 — `border-color` on `.form-control:active, .form-control:focus`; style.css (20,247 B, sha256 aa13bf860284) · <https://preview.colorlib.com/theme/judicial/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Page renders all major sections in order

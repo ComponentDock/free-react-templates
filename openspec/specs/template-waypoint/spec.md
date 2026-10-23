@@ -30,6 +30,7 @@ Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - Search button: #ff8300 (orange) background, white text, 900 weight, 50px height
 - Search button hover: #e67600
 - Footer: #002c71 (navy) background, white/70 text, Component Dock link
+- **Brand stated:** `#002c71` — live sheet paints it ×3 — `border-top` on `.s012 form .inner-form header .travel-type-wrap .item:after`; style.css?v=9b36d97f (17,127 B, sha256 4e613151ceae) · <https://colorlib.com/etc/searchf/colorlib-search-12/>
 
 ## Design reference (replication findings)
 

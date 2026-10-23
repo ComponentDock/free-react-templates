@@ -151,6 +151,15 @@ and content types (no ColorLib assets copied).
   approximate with a plain light-gray/white 7px frame (e.g. a subtle
   `bg-neutral-100` border or a 7px `#f5f5f5` padding) — do NOT copy the PNG.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3e91f7` | live sheet paints it ×2 — `background` on `button`; style.css?v=fea9aed7 (7,353 B, sha256 851ffa2dcc58) · <https://colorlib.com/etc/regform/colorlib-regform-25/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Full-viewport photo background

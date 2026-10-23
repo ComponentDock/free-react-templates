@@ -173,6 +173,15 @@ intro (three pre-built pages copy — paraphrase); Cards — Cards Styles
   made with ♥ by Colorlib" — the recreation's footer links
   https://www.componentdock.com/ ("Component Dock") instead.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f44336` | live sheet paints it ×58 — `--primary` on `:root`; style.css (117,970 B, sha256 2d3020ed8721) · <https://preview.colorlib.com/theme/structure/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Navbar

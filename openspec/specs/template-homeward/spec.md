@@ -13,6 +13,15 @@ Homeward is a real estate landing page with a property-showcase hero, a search b
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/homeward` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#adc867` | live sheet paints it ×27 — `background` on `::selection`; main_styles.css (26,355 B, sha256 c1006797b769) · <https://preview.colorlib.com/theme/myhome/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with contact bar and navigation

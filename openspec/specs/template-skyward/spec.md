@@ -155,6 +155,15 @@ Skyward lives in `apps/skyward` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn) plus the repo-standard Navbar/Footer chrome
 (adapted to the dark navbar + green CTA and the blue 4-column footer).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#a1dd70` | live sheet paints it ×12 — `border` on `.ftco-navbar-light .navbar-nav > .nav-item.cta > a`; style.css (74,127 B, sha256 0c089c2a3609) · <https://preview.colorlib.com/theme/ignite/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

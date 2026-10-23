@@ -13,6 +13,15 @@ Artful is a creative art and crafting services landing page template, recreated 
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/artful` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f5204b` | live sheet paints it ×38 — `background-color` on `::selection`; main.css (33,235 B, sha256 ca7151bdf903) · <https://preview.colorlib.com/theme/five-star/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar with responsive mobile menu

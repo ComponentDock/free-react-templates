@@ -203,6 +203,15 @@ class="h5 text-black mb-3">` link "Fugit nam obcaecati fuga itaque"
   icon-pinterest → `Pinterest` (or `Link`) · icon-youtube → `Youtube` ·
   dropdown chevron (`\e313` icomoon) → `ChevronDown`.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#e3c4a8` | live sheet paints it ×17 — `border-color` on `.form-control:active, .form-control:focus`; style.css (22,968 B, sha256 9f520ccdbf2c) · <https://preview.colorlib.com/theme/apart/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Transparent navbar with dropdown

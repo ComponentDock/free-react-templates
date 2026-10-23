@@ -204,6 +204,15 @@ second family is emerald (`--accent-400 #34d399`, `--accent-500 #10b981`, `#0596
 2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec defect; the
 rows above are the reference's values.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2563eb` | live sheet paints it ×7 — `border-color` on `.border-primary-600`; Base.BvdG4YB3.css (35,243 B, sha256 ac60e1608b41) · <https://preview.colorlib.com/theme/vitality/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Top info bar

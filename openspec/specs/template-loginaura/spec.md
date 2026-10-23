@@ -25,6 +25,7 @@ A full-viewport centered login with a circular avatar, blue gradient background 
 | --color-icon        | #999999    | Left icon in inputs            |
 | --color-icon-focus  | #00c6fb    | Icon color on focus            |
 | --font-body         | Montserrat | Body text via Google Fonts     |
+| Brand (stated in this prep) | `#00c6fb` | live sheet paints it ×9 — `background` on `.container-login100::before`; style.css?v=a8c73224 (12,391 B, sha256 901a0078479d) · <https://colorlib.com/etc/lf/Login_v12/index.html> |
 
 ## Requirements
 

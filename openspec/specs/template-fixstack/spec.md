@@ -87,6 +87,7 @@ TypeScript.
   `padding-right: 10px` on all cells.
 - **No checkboxes, no buttons, no links, no interactivity** — the
   source has no JavaScript. Purely a static visual table.
+- **Brand measured:** `#fa71cd` — live sheet paints it ×5 — `background` on `.limiter`; style.css?v=fa1628e9 (5,895 B, sha256 a61a7017282b) · <https://colorlib.com/etc/tb/Table_Fixed_Column/index.html>
 
 ## Section structure (DOM order)
 

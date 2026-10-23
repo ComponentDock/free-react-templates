@@ -86,6 +86,15 @@ CSS 4 + TypeScript.
     buttons; no asset/CSS/font-file copying. Footer MUST link
     `https://www.componentdock.com/` branded as "Component Dock".
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#8a90ff` | live sheet paints it ×44 — `background-color` on `::selection`; main.css (45,830 B, sha256 12bda7c865b3) · <https://preview.colorlib.com/theme/robotics/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar

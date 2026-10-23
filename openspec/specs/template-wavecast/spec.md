@@ -184,6 +184,15 @@ controls>` styled dark (no mediaelement dependency) or a minimal custom
 Wavecast lives in `apps/wavecast` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#3ca59d` | live sheet paints it ×12 — `border-color` on `.form-control:active, .form-control:focus`; style.css (19,266 B, sha256 0981f827e368) · <https://preview.colorlib.com/theme/podcast/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Header with navigation

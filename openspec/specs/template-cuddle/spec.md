@@ -6,6 +6,15 @@ Recreation of ColorLib **Lovecare** (https://colorlib.com/wp/template/lovecare/)
 
 A charity/donation landing page template with hero, donation widget, causes carousel, volunteer showcase, testimonials, blog, and footer — all styled with warm gold/teal brand colors, Patrick Hand display font, and Poppins body font.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#d49a3a` | live sheet paints it ×48 — `background` on `.btn.btn-primary`; style.css (83,831 B, sha256 2475c6ce69a3) · <https://preview.colorlib.com/theme/lovecare/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navbar renders with transparent background and scrolled state

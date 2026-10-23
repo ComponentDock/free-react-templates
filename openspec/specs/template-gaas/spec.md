@@ -37,6 +37,15 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Gaas lives in `apps/gaas` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#8252fa` | live sheet paints it ×95 — `background` on `.price_head, .price_item:hover .price_footer, .news_widget .input-group .sub-btn`; style.css (95,281 B, sha256 761011b89085) · <https://preview.colorlib.com/theme/gaas/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Navigation bar
