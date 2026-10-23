@@ -28,7 +28,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `chimper` → `craftora` (#1826),
 `colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829),
 `dogger` → `barkly` (#1830), `doglife` → `houndly` (#1831),
-`ecobit` → `nodely` (#1832), `farmie` → `harvest`.
+`ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833).
 
 | app                 | source design  |
 | ------------------- | -------------- |
