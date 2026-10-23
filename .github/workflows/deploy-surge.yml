@@ -101,6 +101,21 @@ jobs:
               CHANGED="$(git show --name-only --pretty=format: "$AFTER")"
             fi
             APPS="$(printf '%s\n' "$CHANGED" | sed -n 's|^apps/\([^/]*\)/.*|\1|p' | sort -u | tr '\n' ' ')"
+            # A renamed app shows up in the diff under BOTH names (petcare ->
+            # pawly), and a deleted app folder shows up under its old name. Neither
+            # is a workspace any more, so keep only folders that still exist —
+            # otherwise `verify-app.sh petcare` fails and nothing gets deployed.
+            LIVE=""
+            DROPPED=""
+            for app in $APPS; do
+              if [ -f "apps/${app}/package.json" ]; then LIVE="${LIVE}${app} "; else DROPPED="${DROPPED}${app} "; fi
+            done
+            APPS="${LIVE% }"
+            if [ -n "$DROPPED" ]; then
+              echo "Skipped removed app folder(s): ${DROPPED% }"
+            fi
+
+
             if printf '%s\n' "$CHANGED" | grep -q '^packages/ui/'; then UI_CHANGED=true; else UI_CHANGED=false; fi
           fi
           echo "APPS=${APPS}" >> "$GITHUB_ENV"

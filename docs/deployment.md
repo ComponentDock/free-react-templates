@@ -55,7 +55,13 @@ A GitHub Action deploys the changed template(s) automatically:
   (`scripts/verify-app.sh`), deploys each app, then probes each URL and fails
   only if the site is not published **anywhere** (see `missing` below — the
   probe distinguishes a failed deploy from a branded edge that cannot serve TLS,
-  so an edge outage no longer turns every merge into a red run).
+  so an edge outage no longer turns every merge into a red run). A renamed app
+  appears in the diff under its OLD and NEW folder (`petcare` → `pawly`), so the
+  detected list is filtered to folders that still hold an `apps/<name>/package.json`
+  — otherwise the gate is asked to verify the vanished folder, fails, and the
+  rename never deploys (that is what happened to `vetly`, #1810, and `pawly`,
+  #1812 — both recovered with
+  `gh workflow run deploy-surge.yml -f app="pawly vetly"`).
 - Trigger 2 — **nightly fleet audit + repair** (`04:30 UTC`): every app's
   published domain is probed and the ones that answer with a Surge 404 are
   rebuilt and redeployed (4 shards, ≤ 40 apps per shard per night). This heals
