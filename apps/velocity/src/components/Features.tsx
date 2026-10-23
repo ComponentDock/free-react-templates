@@ -6,14 +6,14 @@ const rows = [
     icon: Sparkles,
     title: 'Features that give you real feel',
     copy: 'A carefully crafted interface with smooth animations and thoughtful details that make the app a joy to use.',
-    image: 'https://picsum.photos/seed/applab-4/800/600',
+    image: 'https://picsum.photos/seed/velocity-4/800/600',
     flipped: false,
   },
   {
     icon: Settings,
     title: 'Easy setup and management',
     copy: 'Get up and running in minutes — no technical skills required, with simple controls for every setting.',
-    image: 'https://picsum.photos/seed/applab-5/800/600',
+    image: 'https://picsum.photos/seed/velocity-5/800/600',
     flipped: true,
   },
 ] as const

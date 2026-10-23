@@ -49,7 +49,7 @@
   brand socials (X, Facebook, Pinterest) inline SVG; repo-standard Navbar
   (dark-mode toggle); reuse `packages/ui` (ButtonLink, cn) — do NOT
   duplicate components.
-- Base implementation on `apps/applab` (multi-section landing architecture
+- Base implementation on `apps/velocity` (multi-section landing architecture
   with navbar/hero/services/testimonials/footer).
 
 ## Tasks
@@ -58,7 +58,7 @@
 - [x] Write `openspec/specs/template-appli/spec.md` (Gherkin requirements +
       scenarios + replication findings).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/appli` (copy `apps/applab`; rename package to
+- [x] Create `apps/appli` (copy `apps/velocity`; rename package to
       `@free-react-templates/appli`; `npm install` at root for lockfile).
 - [x] TDD: tests first for Navbar, Hero, Brands, Services, About (×2),
       Video, Testimonials, Cta, Footer, App composition.

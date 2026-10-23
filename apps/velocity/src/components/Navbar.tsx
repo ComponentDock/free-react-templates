@@ -27,7 +27,7 @@ export function Navbar() {
           href="#home"
           className="font-display text-2xl font-extrabold text-primary-600 dark:text-primary-400"
         >
-          Applab
+          Velocity
         </a>
 
         <div className="flex items-center gap-4">

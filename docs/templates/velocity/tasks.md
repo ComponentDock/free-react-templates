@@ -1,7 +1,7 @@
-# Applab (Colorlib Applab) — Tasks & Design Notes
+# Velocity (Colorlib Applab) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-applab`.
+> Implementation ships later on `feat/template-velocity`.
 
 ## Design notes
 
@@ -26,12 +26,12 @@
   blue **#0181f5**/**#5DB2FF** accents; headings **#415094**, muted
   **#999999**, light sections **#f9f9ff**/**#f0e9ff**; fonts **Poppins** +
   Roboto via Google Fonts; filled rounded orange buttons.
-- **Recreation name:** Applab (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder `apps/applab`,
-  package `@free-react-templates/applab`.
+- **Recreation name:** Velocity (keeps the original name — it is already a
+  distinct working name, not a ColorLib brand). App folder `apps/velocity`,
+  package `@free-react-templates/velocity`.
 - **Design approach:** orange brand tokens in `@theme`
   (`--color-brand: #ff5e13`, green/blue accents); seeded picsum placeholders
-  `https://picsum.photos/seed/applab-<n>/<w>/<h>`; lucide-react icons
+  `https://picsum.photos/seed/velocity-<n>/<w>/<h>`; lucide-react icons
   (Users for team, CheckCircle for steps, Download for CTAs); how-it-works
   as numbered cards; repo-standard Navbar (dark-mode toggle) and Footer
   chrome; social icons (GitHub, X, LinkedIn) inline SVG.
@@ -42,13 +42,13 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-applab/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-velocity/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep); refined
-      on `feat/template-applab` with fetched preview DOM/CSS findings
+      on `feat/template-velocity` with fetched preview DOM/CSS findings
       (2026-08-05).
 - [x] Validate spec: `npm run spec:validate` (221 specs pass).
-- [x] Create `apps/applab` (copy `apps/flowly`; rename package to
-      `@free-react-templates/applab`).
+- [x] Create `apps/velocity` (copy `apps/flowly`; rename package to
+      `@free-react-templates/velocity`).
 - [x] TDD: tests first for Navbar, Hero, Feature blocks, How-it-works,
       Features strip, Testimonials, Pricing, CTA, Footer, App composition;
       13 tests, all green.
@@ -69,8 +69,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/applab/` may name the source designer,
+- **Provenance ban.** No file under `apps/velocity/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/applab/public/CNAME` = `applab.free.componentdock.com`
-  and the package `homepage` = `https://applab.free.componentdock.com`.
+- **Deploy identity.** `apps/velocity/public/CNAME` = `velocity.free.componentdock.com`
+  and the package `homepage` = `https://velocity.free.componentdock.com`.

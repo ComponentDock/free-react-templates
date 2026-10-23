@@ -12,7 +12,7 @@ const steps: Step[] = [
     number: '01',
     icon: UserPlus,
     title: 'Sign Up for free',
-    copy: 'Create your account in seconds and explore everything Applab has to offer.',
+    copy: 'Create your account in seconds and explore everything Velocity has to offer.',
   },
   {
     number: '02',

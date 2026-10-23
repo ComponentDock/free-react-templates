@@ -10,7 +10,7 @@ export function Cta() {
         </h2>
         <p className="mt-5 text-primary-100">
           Firmament morning sixth subdue darkness creeping gathered divide — join thousands of teams
-          already working smarter with Applab.
+          already working smarter with Velocity.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <ButtonLink

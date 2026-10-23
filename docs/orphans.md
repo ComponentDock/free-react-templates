@@ -269,7 +269,7 @@ template-clickshot                  shotgear                   -> apps/shotglow 
 template-clover                     accordion-06               -> apps/fanfold            (row 644, banner)
 template-coachcraft                 life-coaching              -> apps/elevate            (row 1389, row)
 template-coachpath                  coaching                   -> apps/clarity            (row 2304, row)
-template-cobalt                     applab                     -> apps/applab             (row 57, unproven)
+template-cobalt                     applab                     -> apps/velocity           (row 57, unproven)
 template-coda                       bootstrap-footer-04        -> apps/groundwork         (row 782, banner)
 template-codelens                   martin                     -> apps/pivot              (row 2526, row)
 template-coinpulse                  bitcoin                    -> apps/coinwave           (row 2017, banner)

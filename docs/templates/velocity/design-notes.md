@@ -1,17 +1,17 @@
-# Applab — Design Notes
+# Velocity — Design Notes
 
 Reference: **Applab** — `https://colorlib.com/wp/template/applab/`  
 Live preview: `https://preview.colorlib.com/theme/applab/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg  
-Shipped: https://applab.free.componentdock.com
+Shipped: https://velocity.free.componentdock.com
 
-Applab is a multi-section app/SaaS landing page template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Applab" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Velocity is a multi-section app/SaaS landing page template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Velocity" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700;800**, **Roboto**
 
-## Design tokens (`apps/applab/src/index.css` `@theme`)
+## Design tokens (`apps/velocity/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -51,10 +51,10 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Applab", links to the main sections, a "Download" button, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Velocity", links to the main sections, a "Download" button, and a dark-mode toggle button.
 
 ### `Hero`
-The system SHALL render a hero section with the headline "Promote your app with Applab", supporting copy, and CTA buttons.
+The system SHALL render a hero section with the headline "Promote your app with Velocity", supporting copy, and CTA buttons.
 
 ### `FeatureBlocks`
 The system SHALL render a features strip with "Features that give you real feel" and "Easy setup and management".
@@ -92,8 +92,8 @@ The system SHALL render a footer with an about blurb, link columns (Services, Us
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/applab/` may name the source designer,
+- **Provenance ban.** No file under `apps/velocity/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/applab/public/CNAME` = `applab.free.componentdock.com`
-  and the package `homepage` = `https://applab.free.componentdock.com`.
+- **Deploy identity.** `apps/velocity/public/CNAME` = `velocity.free.componentdock.com`
+  and the package `homepage` = `https://velocity.free.componentdock.com`.
