@@ -87,6 +87,58 @@ Blitz SHALL display a newsletter section with a dark background, heading "Subscr
 ### `Footer`
 Blitz SHALL display a footer with the brand logo, social icons (Pinterest, Facebook, Twitter, Dribbble, LinkedIn), link columns (Services, Menu, About), and a copyright bar linking to Component Dock.
 
+## Reference evidence (re-captured 2026-10-23)
+
+The stylesheet evidence recorded below is what the spec's token table is built
+from. The first capture read `plugins/icon-font/styles.css` — an icon-font
+plugin — and left the palette census empty. Plugin and vendor sheets
+(`plugins/*`, `styles/bootstrap4/bootstrap.min.css`) only ship glyphs, the grid
+and the reset; **the design system is `styles/main_styles.css`**, with
+`styles/responsive.css` for the breakpoints.
+
+| artifact | status | size | sha256 |
+| --- | --- | --- | --- |
+| `/theme/rango/` | HTTP 200 | 29,985 B | `04e954caed66…` |
+| `styles/main_styles.css` | HTTP 200, 232 rules, 89 hex declarations | 26,362 B | `02645bf23652…` |
+| `styles/responsive.css` | HTTP 200, 109 rules | 7,780 B | `44ec82494b49…` |
+
+### Band-by-band (DOM order → background → type)
+
+| # | band (source class) | component | background | fidelity notes |
+| --- | --- | --- | --- | --- |
+| 1 | `.header` (fixed, 128px → 80px scrolled) | `Navbar` | `rgba(27,11,51,0.52)` → `rgba(27,11,51,0.92)` | logo 36px/500 `#fefefe`, `letter-spacing:0.1em`, trailing glyph `#ff6b09`; search input on white with `0 8px 20px rgba(0,0,0,.15)` |
+| 2 | hero slider (carousel, prev/next) | `Hero` | photographic slides | 54px-tall `.button`-less CTA row; arrows circular, `#a2baff` icon, hover icon `#251343` on `#ff6b09` scaling in; scroll-down `.double_arrow` white → hover `#ff6b09` |
+| 2b | `.hero_side_text_container` (rotated −90°) | `Hero` | `#301b55` | 865×236 band pinned right, `h2` 30px/300 `#9878e2`, `p` 16px/300 white; hidden at ≤1280px in `responsive.css` |
+| 3 | `.icon_boxes` | `IconBoxes` | white | heading + `span` kicker `#452b78` 18px/500 with 29px top gap; 3-up grid, `.icon_box_item` 63px bottom rhythm (43px mobile) |
+| 4 | `.v_slider_section` | `AboutSection` | white band, purple cards | image left, vertical slick slider right; `.person_image` 44px circle, name 15px `#28262d`, title 13px `#909090` |
+| 5 | `.services` | `Services` | white | 7-card owl carousel; **centre card** `#452b78` with white copy and `#9c83ce` 50px icon; dots 10px `#d6cbed` → active 18px `#452b78` (rectangular sheet, only circles) |
+| 6 | `.features` | `Features` | `#fafbfb`, 120/130px padding | 3-col at `col-lg-4`: two `.features_item` blocks in the left column, a centre column with `.features_image` + `.features_button`, then two more items in the right column closed by `.features_button_2`; both buttons fill `#452b78` on hover; mobile order flips image first (`order-lg-2 order-1`) |
+| 7 | `.cta` | `Cta` | `#b0d5db` under `.cta_background` photo | 116/101px padding, white h1 + 16px/500 white copy; `.cta_image` 776px wide sits on the right, stacks under the copy on mobile |
+| 8 | `.text_line` | `TextLine` | white, 127/118px padding | copy left, `.text_line_image` absolute bottom-right; `.text_line_button` fills `#452b78` on hover |
+| 9 | `.newsletter` | `Newsletter` | `#1b0d37`, 110/141px padding | white h1 + 16px/500 `span`; `.newsletter_email` 53px `#452b78` white text; `.newsletter_submit_button` uppercase 14px/700 filling `#452b78` on hover; mobile: field 40px |
+| 10 | `.footer` | `Footer` | white | logo `#452b78`, intro 16px, social icons 12px `#bab6c3` → hover `#1b0d37`, column titles 18px/500 `#28262d`, links 16px/500 `#909090` → `#28262d`, credit 16px/500 `#cacaca` |
+
+### Type + shape contract
+
+- Body: `Poppins` 15px / line-height 2 / 400, colour `#6e6e6e`, on `#ffffff`.
+- Headings: `Poppins`, ink `#28262d`, h1 48px / h2 24px / h3 18px
+  (mobile 36 → 24 and h2 20).
+- Button labels: `Roboto` 14px / 700 / uppercase; `.button` is 174×54 with a
+  2px `#452b78` border and **no border radius** (140×40 on mobile).
+- The only `border-radius` in the sheet is `50%` — dots, arrows, avatars. Any
+  rounded card or pill button in the recreation would be a fidelity break.
+- Selection: `#ffd9bf` text on `#ff6b09`.
+
+### Token drift vs the shipped app
+
+`apps/blitz/src/index.css` already carries `#452b78`, `#ff6b09`, `#28262d`,
+`#6e6e6e`, `#fafbfb`-adjacent paper, `#1b0b32` (deep purple) and the
+Poppins/Roboto pair, so the implementation matches the sheet. The one mismatch
+is `--color-brand: #301b54` where the sheet's primary is `#452b78` and
+`#301b54` appears only on `.search_button:active` — the darker purple reads as a
+deliberate accent in the header, not a fidelity break, but it must not be used
+as the general CTA fill.
+
 ## Deltas from the reference
 
 - Photographs are deterministic placeholders (`picsum.photos/seed/…`); no source asset is copied.

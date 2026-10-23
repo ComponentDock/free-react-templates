@@ -1,6 +1,8 @@
 # Template: Blitz (Business)
 
-Recreation of ColorLib Rango (https://colorlib.com/wp/template/rango/).
+Recreation of ColorLib Rango (https://colorlib.com/wp/template/rango/), preview
+`https://preview.colorlib.com/theme/rango/`, rebuilt from scratch on
+Vite + React 19 + Tailwind CSS 4 + TypeScript (no assets copied).
 
 ## Purpose
 
@@ -8,19 +10,57 @@ Blitz is a creative agency landing page template featuring a fixed navbar, hero 
 
 ## Design tokens
 
-<!-- design-tokens-backfill:2026-10-23 -->
-Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/rango/ (HTTP 200, 29,985 B, fetched 2026-10-23) and its theme stylesheet `theme/rango/plugins/icon-font/styles.css` (8,232 B, sha256 `39a9cc387614…`).
-CSS values are canonical over any screenshot sample.
+<!-- design-tokens-backfill:2026-10-23 — repaired 2026-10-23 (the first capture read a plugin sheet, not the design system) -->
+Measured from the live preview on 2026-10-23, not sampled off the screenshot:
 
-| Token | Value | Evidence in the reference |
+- `https://preview.colorlib.com/theme/rango/` — HTTP 200, 29,985 B,
+  sha256 `04e954caed66…`.
+- design sheet `styles/main_styles.css` — HTTP 200, 26,362 B,
+  sha256 `02645bf23652…` (232 rules, 89 hex-colour declarations, 28 distinct).
+- breakpoint sheet `styles/responsive.css` — HTTP 200, 7,780 B,
+  sha256 `44ec82494b49…` (109 rules, 5 colour declarations).
+- **Correction:** the previous capture read `plugins/icon-font/styles.css`
+  (an 8,232 B icon-font plugin) and produced an empty palette census. Plugin
+  sheets (`plugins/*`, `styles/bootstrap4/bootstrap.min.css`) are grid/reset/icon
+  scaffolding — the design system is `styles/main_styles.css`. CSS values are
+  canonical over any screenshot sample.
+
+| Token | Value | Evidence in `main_styles.css` |
 | --- | --- | --- |
-| Typeface | `"outlined-iconset" !important` (2 rules — [data-icon]:before) | `font-family` declaration in the theme sheet |
+| Brand purple (primary) | `#452b78` | 14 declarations — `.button` (2px border), `.button a` (label), `.section_title span`, `.newsletter_email`, `.services_slider .owl-item.center .services_item_inner`, `.footer_logo a`, `.v_slider .slick-dots li.slick-active button` |
+| Accent orange | `#ff6b09` | 9 declarations — `.logo a span`, `::selection`, `.hamburger_container:hover i`, `.double_arrow:hover i`, `.hero_slider_nav div::before` |
+| Ink | `#28262d` | 4 declarations — `h1…h6`, `.person_name`, `.footer_col_title` |
+| Muted text | `#6e6e6e` (body), `#909090` (`.person_title`, `.footer_col ul li a`) | `body`, meta text |
+| Surface | `#ffffff` | 27 declarations — `body`, `.services_item`, `.text_line`, links |
+| Newsletter band | `#1b0d37` | `.newsletter { background: #1b0d37 }` |
+| Header tint | `rgba(27, 11, 51, 0.52)` fixed · `rgba(27, 11, 51, 0.92)` scrolled | `.header`, `.header.scrolled` |
+| Rotated hero side band | `#301b55`, `h2` `#9878e2`, `p` `#ffffff` | `.hero_side_text_container`, `.hero_side_text h2` |
+| Features band | `#fafbfb` | `.features` |
+| CTA band | `#b0d5db` fallback under `.cta_background` photo | `.cta` |
+| Lavender family | `#d6cbed` inactive dots · `#d4caeb` services arrows · `#9c83ce` centre-card icon · `#9988ba` placeholders · `#a2baff` hero arrows | dots/arrows/placeholder rules |
+| Peach accents | `#ffd9bf` (`::selection` background), `#ffa07f` (`p a`) | selection/links |
+| Footer | credit `#cacaca`, social icons `#bab6c3` → hover `#1b0d37` | `.footer_cr`, `.footer_social ul li a i` |
+| Typeface | **Poppins** body (`font-size: 15px; line-height: 2; font-weight: 400`), **Roboto** button labels (14px / 700 / uppercase) | `body`, `.button a` |
+| Type scale | h1 48px → 36px → 24px; h2 24px → 20px; h3 18px | `h1`–`h3` + `responsive.css` overrides |
+| Button shape | rectangular, **no radius**: `.button` 174×54, `border: 2px solid #452b78`, transparent fill, uppercase label at `line-height: 50px`; hover fills `#452b78` with white label; mobile 140×40 | `.button`, `.button a` |
+| Radii | only `50%` (5 rules: slick dots, `.hero_slider_nav div`, `.person_image`) | `border-radius` census |
+| Band order (DOM) | `header` → hero slider (arrows + rotated `#301b55` side text) → `icon_boxes` (3-up) → `v_slider_section` (dark purple about band, person cards) → `services` (7-card carousel, centre card purple) → `features` (`#fafbfb`, 3-col, centre image + button) → `cta` (full-bleed photo, white copy) → `text_line` (white, image bottom-right) → `newsletter` (`#1b0d37`) → `footer` | element class order in the fetched HTML |
 
-Palette in order of use: .
+Palette in order of use: `#ffffff` ×27, `#452b78` ×14, `#ff6b09` ×9,
+`#9988ba` ×5, `#28262d` ×4, `#909090` ×3, `#ffa07f` ×2, `#ffd9bf` ×2,
+`#d6cbed` ×2, `#1b0d37` ×2, `#cacaca` ×2, `#6e6e6e` ×1, `#ff6347` ×1,
+`#db5246` ×1, `#fefefe` ×1, `#301b54` ×1, `#1b0b32` ×1, `#a2baff` ×1,
+`#251343` ×1, `#301b55` ×1, `#9878e2` ×1, `#000` ×1, `#9c83ce` ×1,
+`#d4caeb` ×1, `#452b77` ×1, `#fafbfb` ×1, `#b0d5db` ×1, `#bab6c3` ×1
+(89 declarations across the design and breakpoint sheets).
 
-- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
-- Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Put brand purple, accent orange, ink and surface in `@theme`
+  (`--color-brand`, `--color-accent`, `--color-ink`, `--color-surface`) and use
+  them through utilities / `cn()`.
+- Keep buttons and cards **square** (the sheet's only radius is `50%`); the
+  orange is a text/hover accent, purple is the fill colour.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers
+  reuse the listed values.
 
 ## Requirements
 
