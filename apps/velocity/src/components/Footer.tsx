@@ -20,7 +20,7 @@ export function Footer() {
     <footer id="contact" className="bg-gray-950 py-16 text-gray-300">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="font-display text-2xl font-extrabold text-primary-400">Applab</h3>
+          <h3 className="font-display text-2xl font-extrabold text-primary-400">Velocity</h3>
           <p className="mt-5 text-sm leading-relaxed text-gray-400">
             Firmament morning sixth subdue darkness creeping gathered divide — a complete app &amp;
             SaaS landing page for your next launch.
@@ -50,7 +50,7 @@ export function Footer() {
 
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm text-gray-400">
-          Copyright © {new Date().getFullYear()} Applab. All rights reserved.
+          Copyright © {new Date().getFullYear()} Velocity. All rights reserved.
         </p>
         <SocialLinks />
       </div>

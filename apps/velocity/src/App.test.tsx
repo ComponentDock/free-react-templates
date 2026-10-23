@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, sections, and footer with the correct landmarks and document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Applab — App & SaaS Landing Page Template')
+    expect(document.title).toBe('Velocity — App & SaaS Landing Page Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -14,7 +14,7 @@ describe('App', () => {
     const main = screen.getByRole('main')
     expect(main).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 1, name: 'Promote your app with Applab' }),
+      screen.getByRole('heading', { level: 1, name: 'Promote your app with Velocity' }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { level: 3, name: 'Manage team in One Place' }),

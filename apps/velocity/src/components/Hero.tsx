@@ -13,7 +13,7 @@ export function Hero() {
             App &amp; SaaS Landing Page
           </p>
           <h1 className="mt-4 font-display text-4xl font-extrabold leading-tight text-navy dark:text-white sm:text-5xl lg:text-6xl">
-            Promote your app with Applab
+            Promote your app with Velocity
           </h1>
           <p className="mt-6 text-lg text-muted dark:text-gray-400">
             Get more users to promote your app with this template — a complete launch page for your
@@ -35,8 +35,8 @@ export function Hero() {
           </div>
         </div>
         <img
-          src="https://picsum.photos/seed/applab-hero/1200/900"
-          alt="Applab app on devices"
+          src="https://picsum.photos/seed/velocity-hero/1200/900"
+          alt="Velocity app on devices"
           className="h-full w-full rounded-3xl object-cover shadow-xl"
         />
       </div>

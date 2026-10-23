@@ -1,8 +1,8 @@
-# Template: Applab (App & SaaS Landing Page)
+# Template: Velocity (App & SaaS Landing Page)
 
 ## Purpose
 
-Applab is a multi-section app/SaaS landing page template in the
+Velocity is a multi-section app/SaaS landing page template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Applab" design (see TEMPLATES.md), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -10,10 +10,17 @@ name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 The original design is an orange app-promo landing page: hero with a
 "Promote your app with applab" headline, feature blocks, a three-step "how
 it works", a features strip, testimonials, a three-tier pricing table, a
-productivity CTA, and a multi-column footer. Applab follows the same
+productivity CTA, and a multi-column footer. Velocity follows the same
 structure and adds the repo's standard dark-mode toggle and accessible
 patterns. All imagery is recreated with seeded placeholder images (no assets
 copied).
+
+### Naming
+
+The source design is called "Applab"; this recreation ships as **Velocity** so
+the app folder, package and brand never reuse the ColorLib name (AGENTS.md
+rule 5). Provenance (the ColorLib "Applab" name and colorlib.com URLs) appears
+only here, in `docs/templates/velocity/`, in `TEMPLATES.md` and in the PR.
 
 ## Design reference (replication findings)
 
@@ -50,25 +57,25 @@ copied).
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#ff5e13`, orange scale + green/blue accents in
   `@theme`); placeholder images via
-  `https://picsum.photos/seed/applab-<n>/<w>/<h>`; icons from lucide-react;
+  `https://picsum.photos/seed/velocity-<n>/<w>/<h>`; icons from lucide-react;
   three-step "how it works" as numbered cards; social icons inline SVG; no
   assets copied.
 
-Applab lives in `apps/applab` and uses shared components from `packages/ui`
+Velocity lives in `apps/velocity` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Applab", links
+The system SHALL render a navigation bar with the site name "Velocity", links
 to the main sections, a "Download" button, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Applab page is rendered
+- **GIVEN** the Velocity page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Applab" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Velocity" and links to the main sections
 - **AND** the navbar SHALL show a "Download" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -81,13 +88,13 @@ to the main sections, a "Download" button, and a dark-mode toggle button.
 ### Requirement: Hero section
 
 The system SHALL render a hero section with the headline "Promote your app
-with Applab", supporting copy, and CTA buttons.
+with Velocity", supporting copy, and CTA buttons.
 
 #### Scenario: Hero content
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero section is displayed
-- **THEN** it SHALL contain a heading matching "Promote your app with Applab"
+- **THEN** it SHALL contain a heading matching "Promote your app with Velocity"
 - **AND** it SHALL show a supporting paragraph and CTA buttons
 
 ### Requirement: Feature blocks section
@@ -169,7 +176,7 @@ The system SHALL render a footer with an about blurb, link columns
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Applab" and an about blurb
+- **THEN** it SHALL show the site name "Velocity" and an about blurb
 - **AND** it SHALL show link columns and social links
 
 ### Requirement: Page composition
@@ -179,10 +186,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Applab app is rendered
+- **GIVEN** the Velocity app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Applab — App & SaaS Landing Page Template"
+- **AND** the document title SHALL be "Velocity — App & SaaS Landing Page Template"
 
 ### Requirement: Component Dock attribution
 
@@ -202,7 +209,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/applab/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/velocity/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -211,7 +218,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/applab/` is inspected
+- **WHEN** every non-test file under `apps/velocity/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -219,13 +226,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Applab" and links to the main sections
-- [x] Hero section — it SHALL contain a heading matching "Promote your app with Applab"
-- [ ] Feature blocks section — it SHALL show at least two feature blocks with headings and copy
-- [ ] How-it-works section — it SHALL show the three steps in order
-- [ ] Features strip — it SHALL show the feature headings with supporting copy
+- [x] Navigation bar — the navbar SHALL show the site name "Velocity" and links to the main sections
+- [x] Hero section — it SHALL contain a heading matching "Promote your app with Velocity"
+- [x] Feature blocks section — it SHALL show at least two feature blocks with headings and copy
+- [x] How-it-works section — it SHALL show the three steps in order
+- [x] Features strip — it SHALL show the feature headings with supporting copy
 - [x] Testimonials section — it SHALL show the heading "Review from our regular users"
 - [x] Pricing section — it SHALL show the heading "Unlock full Power"
 - [x] CTA section — it SHALL show the heading "Get start from now and increase productivity"
-- [x] Footer — it SHALL show the site name "Applab" and an about blurb
-- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
+- [x] Footer — it SHALL show the site name "Velocity" and an about blurb
+- [x] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

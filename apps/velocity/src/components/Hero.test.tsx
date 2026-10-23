@@ -7,7 +7,7 @@ describe('Hero', () => {
     render(<Hero />)
 
     expect(
-      screen.getByRole('heading', { level: 1, name: 'Promote your app with Applab' }),
+      screen.getByRole('heading', { level: 1, name: 'Promote your app with Velocity' }),
     ).toBeInTheDocument()
 
     expect(screen.getByText(/Get more users to promote your app/)).toBeInTheDocument()
@@ -15,9 +15,9 @@ describe('Hero', () => {
     expect(screen.getByRole('link', { name: 'Get Start Now' })).toHaveAttribute('href', '#download')
     expect(screen.getByRole('link', { name: 'Download Now' })).toHaveAttribute('href', '#download')
 
-    expect(screen.getByRole('img', { name: 'Applab app on devices' })).toHaveAttribute(
+    expect(screen.getByRole('img', { name: 'Velocity app on devices' })).toHaveAttribute(
       'src',
-      'https://picsum.photos/seed/applab-hero/1200/900',
+      'https://picsum.photos/seed/velocity-hero/1200/900',
     )
   })
 })

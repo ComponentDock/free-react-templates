@@ -3,7 +3,7 @@ import { Quote, Star } from 'lucide-react'
 const testimonials = [
   {
     quote:
-      'Applab helped us launch in record time — the template looks exactly like the product we dreamed of.',
+      'Velocity helped us launch in record time — the template looks exactly like the product we dreamed of.',
     name: 'Robert Smile',
     role: 'Product Manager',
   },
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     quote:
-      'Our conversion rate jumped after switching to Applab. It is fast, beautiful, and effortless to maintain.',
+      'Our conversion rate jumped after switching to Velocity. It is fast, beautiful, and effortless to maintain.',
     name: 'Emma Wilson',
     role: 'Growth Strategist',
   },

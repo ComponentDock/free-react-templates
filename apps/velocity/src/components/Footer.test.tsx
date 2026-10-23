@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('renders the site name, about blurb, link columns, social links, and copyright', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('heading', { level: 3, name: 'Applab' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 3, name: 'Velocity' })).toBeInTheDocument()
     expect(screen.getByText(/Firmament morning sixth subdue darkness/)).toBeInTheDocument()
 
     for (const title of ['Services', 'Useful Links', 'Downloads']) {

@@ -11,7 +11,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Applab — App & SaaS Landing Page Template'
+    document.title = 'Velocity — App & SaaS Landing Page Template'
   }, [])
 
   return (

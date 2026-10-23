@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/applab",
+  "name": "@free-react-templates/velocity",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://applab.free.componentdock.com",
+  "homepage": "https://velocity.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -12,19 +12,19 @@ const blocks: Block[] = [
     icon: Users,
     title: 'Manage team in One Place',
     copy: 'Keep your whole team, projects, and conversations in a single organized workspace.',
-    image: 'https://picsum.photos/seed/applab-1/800/600',
+    image: 'https://picsum.photos/seed/velocity-1/800/600',
   },
   {
     icon: Zap,
     title: 'All-powerful Pointing has no control',
     copy: 'Take full control of your app experience with powerful pointing and precision tools.',
-    image: 'https://picsum.photos/seed/applab-2/800/600',
+    image: 'https://picsum.photos/seed/velocity-2/800/600',
   },
   {
     icon: Globe,
     title: 'Establish a solid online presence',
     copy: 'Launch a polished, credible landing page that makes your product easy to discover.',
-    image: 'https://picsum.photos/seed/applab-3/800/600',
+    image: 'https://picsum.photos/seed/velocity-3/800/600',
   },
 ] as const
 
