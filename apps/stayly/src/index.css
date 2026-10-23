@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Stayly brand palette — recreated from the ColorLib "Colorlib Booking 12"
-     design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-12/):
+  /* Stayly brand palette — measured from the reference booking-form design:
      medium blue #6499ff is the ONLY brand color (Book Now button). */
   --color-brand: #6499ff;
 

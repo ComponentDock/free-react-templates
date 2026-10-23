@@ -16,4 +16,11 @@ describe('Footer', () => {
     const phone = screen.getByText('+001 345 6889')
     expect(phone).toHaveClass('text-brand')
   })
+
+  it('renders the Component Dock credit link', () => {
+    render(<Footer />)
+
+    const link = screen.getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+  })
 })

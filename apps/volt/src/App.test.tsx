@@ -19,4 +19,13 @@ describe('App', () => {
     expect(screen.getByRole('heading', { name: featured.post.title })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: verticalPosts[0]!.title })).toBeInTheDocument()
   })
+
+  it('renders the Component Dock credit footer', () => {
+    render(<App />)
+
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toBeInTheDocument()
+    const link = screen.getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+  })
 })

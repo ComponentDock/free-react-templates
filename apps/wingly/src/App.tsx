@@ -15,22 +15,35 @@ export function App() {
   }, [])
 
   return (
-    <main>
-      {/* Single-section demo: full-viewport section with the full-bleed photo
+    <>
+      <main>
+        {/* Single-section demo: full-viewport section with the full-bleed photo
           page background (NO scrim — the card's own rgba(0,0,0,0.7) provides
           the contrast), vertically centering the full-width dark booking
-          card; NO navbar, NO headline/CTA column, NO footer (source is a
-          bare booking form section). */}
-      <section
-        id="booking"
-        className="flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
-        style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
-      >
-        {/* Bootstrap container width (the card itself has no max-width). */}
-        <div className="w-full max-w-[1140px]">
-          <BookingForm />
-        </div>
-      </section>
-    </main>
+          card; NO navbar, NO headline/CTA column (the reference is a bare
+          booking form section) — only the repo-standard credit footer follows. */}
+        <section
+          id="booking"
+          className="flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
+          style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
+        >
+          {/* Bootstrap container width (the card itself has no max-width). */}
+          <div className="w-full max-w-[1140px]">
+            <BookingForm />
+          </div>
+        </section>
+      </main>
+      <footer className="bg-ink py-6 text-center text-[13px] text-white/70">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-semibold text-brand underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }

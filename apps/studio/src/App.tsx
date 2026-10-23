@@ -11,6 +11,17 @@ export function App() {
       <main>
         <Hero />
       </main>
+      <footer className="border-t border-white/10 bg-brand py-6 text-center text-[13px] text-subtext">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-semibold text-accent underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
     </div>
   )
 }
