@@ -95,7 +95,7 @@ border-radius: 50%; background: rgba(255,255,255,0.5); margin: 4px`;
 
 ## Implementation tasks
 
-- [ ] Copy the simplest existing app → `apps/vernazza`; rename package to
+- [x] Copy the simplest existing app → `apps/vernazza`; rename package to — superseded: shipped as `apps/spinwheel`
       `@free-react-templates/vernazza`
 - [ ] `public/CNAME` = `vernazza.free.componentdock.com`; `"homepage"` =
       `https://vernazza.free.componentdock.com` in package.json

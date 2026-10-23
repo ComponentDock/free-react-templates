@@ -361,7 +361,7 @@ monorepo convention (replaces the source demo's absence of any footer).
 
 ## Verification checklist
 
-- [ ] `apps/kalends` exists; package `@free-react-templates/kalends`;
+- [x] `apps/kalends` exists; package `@free-react-templates/kalends`; — superseded: shipped as `apps/calgrid`
       `public/CNAME` = `kalends.free.componentdock.com`; `homepage` =
       `https://kalends.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (300, 400, 500, 700); no

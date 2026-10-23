@@ -245,7 +245,7 @@ Background:
 ## Verification checklist
 
 - [ ] `openspec/specs/template-splithaven/spec.md` exists and is valid
-- [ ] `apps/splithaven/` created with correct package name
+- [x] `apps/splithaven/` created with correct package name — superseded: shipped as `apps/portico`
 - [ ] Split-screen layout: 50/50 on desktop, stacked on mobile
 - [ ] Background image covers panel (placeholder via picsum.photos)
 - [ ] Heading "Login to **BrandName**" renders correctly
@@ -258,7 +258,7 @@ Background:
 - [ ] "Log In" button: full-width, 54px height, #007bff bg, white text
 - [ ] Mobile (< 992px): image 500px above, form below
 - [ ] Footer links to Component Dock (no ColorLib reference)
-- [ ] No `colorlib` / `ColorLib` strings anywhere in `apps/splithaven/`
+- [x] No `colorlib` / `ColorLib` strings anywhere in `apps/splithaven/` — superseded: shipped as `apps/portico`
 - [ ] `npm run test:coverage` passes at 100%
 - [ ] `npm run typecheck` passes
 - [ ] `npm run lint` passes

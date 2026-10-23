@@ -441,7 +441,7 @@ Dock"). The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/portofino` exists; package `@free-react-templates/portofino`;
+- [x] `apps/portofino` exists; package `@free-react-templates/portofino`; — superseded: shipped as `apps/slidesync`
       `public/CNAME` = `portofino.free.componentdock.com`; `homepage` =
       `https://portofino.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400/500); no

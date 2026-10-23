@@ -56,7 +56,7 @@ from the full kit.
 
 ## TODO (Implementer)
 
-- [ ] Scaffold `apps/tidepool/` from simplest existing app template
+- [x] Scaffold `apps/tidepool/` from simplest existing app template — superseded: shipped as `apps/kaleido`
 - [ ] Set up `package.json` with `@free-react-templates/tidepool`
 - [ ] Create `public/CNAME` with `tidepool.free.componentdock.com`
 - [ ] Add "Work Sans" Google Font link in `index.html`

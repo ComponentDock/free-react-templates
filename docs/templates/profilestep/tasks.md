@@ -14,7 +14,7 @@ Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-9/index.html
 ## Task breakdown
 
 ### 1. Scaffold app
-- [ ] Create `apps/profilestep/` from simplest existing app
+- [x] Create `apps/profilestep/` from simplest existing app — superseded: shipped as `apps/formvane`
 - [ ] Rename package to `@free-react-templates/profilestep`
 - [ ] Set up `public/CNAME` → `profilestep.free.componentdock.com`
 - [ ] Add `homepage` to package.json

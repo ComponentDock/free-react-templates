@@ -12,7 +12,7 @@
 ## Implementation Order
 
 ### Phase 1: Scaffold
-- [ ] Copy simplest existing app (e.g. `apps/clarity`) to `apps/mentorly`
+- [x] Copy simplest existing app (e.g. `apps/clarity`) to `apps/mentorly` — superseded: shipped as `apps/northstar`
 - [ ] Rename package to `@free-react-templates/mentorly`
 - [ ] Create `public/CNAME` with `mentorly.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://mentorly.free.componentdock.com`

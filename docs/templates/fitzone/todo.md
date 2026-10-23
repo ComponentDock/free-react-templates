@@ -78,7 +78,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/fitzone` from simplest existing app
+- [x] Scaffold `apps/fitzone` from simplest existing app — superseded: shipped as `apps/gymcore`
 - [ ] Set up index.css with Tailwind + Poppins Google Font import
 - [ ] Implement Navbar component (transparent, responsive)
 - [ ] Implement Hero section

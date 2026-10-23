@@ -6,7 +6,7 @@
 
 ## Phase 1: Scaffolding & Setup
 
-- [ ] Copy base app structure to `apps/unveil`
+- [x] Copy base app structure to `apps/unveil` — superseded: shipped as `apps/pulsewave`
 - [ ] Update `package.json` with workspace name `@free-react-templates/unveil` and dependencies
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Configure `src/index.css` with Tailwind v4 theme tokens (`#553be6`, `#a87ffa`, `#1fb6fc`, `#2a3a60`, `#eaedff`, `#f9faff`, Roboto font)

@@ -58,7 +58,7 @@
 - [ ] Create branch `feat/template-adgate` from latest origin/main.
 - [ ] Mark Classy Ads `[~]` in TEMPLATES.md on the branch (claimed as AdGate).
 - [ ] Refine spec with any additional replication findings.
-- [ ] Scaffold `apps/adgate` (copy simplest multi-section app, rename package to `@free-react-templates/adgate`).
+- [x] Scaffold `apps/adgate` (copy simplest multi-section app, rename package to `@free-react-templates/adgate`) — superseded: shipped as `apps/classipost`.
 - [ ] Write tests first (TDD, red phase): Navbar, Hero, Search, Categories, Featured Ads, Trending, Testimonials, Newsletter, Footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded images, lucide icons, Google Fonts (Poppins).
 - [ ] Run verification gate: typecheck → lint → test:coverage (100%) → build → knip → fallow. Also `npm run spec:validate`.

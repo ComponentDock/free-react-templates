@@ -115,7 +115,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/fermata` (copy simplest existing app; package
+- [x] Scaffold `apps/fermata` (copy simplest existing app; package — superseded: shipped as `apps/soleplate`
       `@free-react-templates/fermata`; `public/CNAME` =
       `fermata.free.componentdock.com`; homepage =
       `https://fermata.free.componentdock.com`); register the workspace in

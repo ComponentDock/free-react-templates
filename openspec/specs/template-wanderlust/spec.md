@@ -304,7 +304,7 @@ The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/wanderlust` exists; package `@free-react-templates/wanderlust`;
+- [x] `apps/wanderlust` exists; package `@free-react-templates/wanderlust`; — superseded: shipped as `apps/revolve`
       `public/CNAME` = `wanderlust.free.componentdock.com`; `homepage` =
       `https://wanderlust.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (weights 300, 400, 500, 700);

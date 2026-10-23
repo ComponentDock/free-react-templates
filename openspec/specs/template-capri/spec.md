@@ -365,7 +365,7 @@ The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/capri` exists; package `@free-react-templates/capri`;
+- [x] `apps/capri` exists; package `@free-react-templates/capri`; — superseded: shipped as `apps/slidebay`
       `public/CNAME` = `capri.free.componentdock.com`; `homepage` =
       `https://capri.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (weights 300, 400, 500, 700);

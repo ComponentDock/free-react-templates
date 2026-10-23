@@ -1,4 +1,8 @@
 # ClearCut — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=airy -->
+> **SHIPPED-UNDER** — the ColorLib `whitespace` design this prep describes shipped
+> as `apps/airy` (<https://airy.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Whitespace  
 **Preview:** https://preview.colorlib.com/theme/whitespace/  
@@ -124,7 +128,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create `apps/clearcut/` workspace (copy from simplest existing app, rename package)
+- [x] Create `apps/clearcut/` workspace (copy from simplest existing app, rename package) — superseded: shipped as `apps/airy`
 - [ ] Set up `src/index.css` with Tailwind v4 + theme tokens (#78d5ef brand, Work Sans/Poppins fonts)
 - [ ] Build `src/components/Navbar.tsx`
 - [ ] Build `src/components/Hero.tsx` (split layout)

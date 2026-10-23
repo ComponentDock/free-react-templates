@@ -1,4 +1,9 @@
 # Template: Tropea (Split Image + Quote Testimonials Carousel with Circular Avatar-Thumbnail Navigation)
+<!-- prep-status: shipped-as=carouseldrift -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-15` design this prep describes already
+> ships as `apps/carouseldrift` (<https://carouseldrift.free.componentdock.com>).
+> Do not scaffold `apps/tropea`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carouseldrift/spec.md`.
 
 ## Purpose
 
@@ -395,7 +400,7 @@ https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] `apps/tropea` exists; package `@free-react-templates/tropea`;
+- [x] `apps/tropea` exists; package `@free-react-templates/tropea`; — superseded: shipped as `apps/carouseldrift`
       `public/CNAME` = `tropea.free.componentdock.com`; `homepage` =
       `https://tropea.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400); no

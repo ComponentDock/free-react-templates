@@ -119,7 +119,7 @@ Recreation of the ColorLib **Inds** template as a React 19 + Vite + Tailwind CSS
 
 ## Verification checklist
 
-- [ ] App renders at `apps/molten/` with package `@free-react-templates/molten`
+- [x] App renders at `apps/molten/` with package `@free-react-templates/molten` — superseded: shipped as `apps/millstone`
 - [ ] All 11 sections present in correct order
 - [ ] Brand tokens applied: #f27420 orange, #021a47 navy, Barlow headings, Roboto body
 - [ ] Buttons: sharp corners (no border-radius), dark bg, white text

@@ -50,7 +50,7 @@
 
 ## Tasks
 
-- [ ] Create app scaffold: `apps/premises/` (copy simplest existing app, rename package)
+- [x] Create app scaffold: `apps/premises/` (copy simplest existing app, rename package) — superseded: shipped as `apps/homefront`
 - [ ] Configure Tailwind theme tokens (colors, fonts)
 - [ ] Build TopBar component (social icons, phone)
 - [ ] Build Navbar component (brand, links, CTAs, sticky behavior)

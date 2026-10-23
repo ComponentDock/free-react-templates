@@ -88,7 +88,7 @@
 ## Todo (implementation order)
 
 - [ ] `npm run spec:validate` passes (spec: `openspec/specs/template-freight/`)
-- [ ] Scaffold `apps/freight` (copy simplest existing app; package
+- [x] Scaffold `apps/freight` (copy simplest existing app; package — superseded: shipped as `apps/convey`
       `@free-react-templates/freight`; `public/CNAME` =
       `freight.free.componentdock.com`; homepage
       `https://freight.free.componentdock.com`); run `npm install` at

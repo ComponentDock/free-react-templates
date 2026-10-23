@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup
-- [ ] Create `apps/formtrail/` from simplest existing app (copy + rename)
+- [x] Create `apps/formtrail/` from simplest existing app (copy + rename) — superseded: shipped as `apps/formvane`
 - [ ] Set package name to `@free-react-templates/formtrail`
 - [ ] Set `public/CNAME` to `formtrail.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://formtrail.free.componentdock.com`

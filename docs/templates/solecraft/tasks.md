@@ -10,7 +10,7 @@
 - [x] Design notes: docs/templates/solecraft/notes.md
 
 ## Implementation (for implementers)
-- [ ] Scaffold apps/solecraft from template (copy simplest existing app, rename package)
+- [x] Scaffold apps/solecraft from template (copy simplest existing app, rename package) — superseded: shipped as `apps/lacecraft`
 - [ ] Update public/CNAME → solecraft.free.componentdock.com
 - [ ] Update package.json homepage → https://solecraft.free.componentdock.com
 - [ ] Register workspace: `npm install` at root + verify package-lock.json

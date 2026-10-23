@@ -13,7 +13,7 @@ duplicates — mark ALL of them).
 
 ## Task outline (TDD, 100% coverage, one commit per section or logical group)
 
-- [ ] 1. Scaffold app `apps/mudra` (copy simplest existing app; rename package
+- [x] 1. Scaffold app `apps/mudra` (copy simplest existing app; rename package — superseded: shipped as `apps/shanti`
       `@free-react-templates/mudra`; register `injectUiSource()` in
       `vite.config.ts`; `npm install` at root so the lockfile registers the
       workspace; `index.html` title "Mudra — Yoga Studio Template" + Google

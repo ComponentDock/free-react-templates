@@ -38,7 +38,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessclub-free-
 
 ## Implementation checklist
 
-- [ ] Create apps/fitpulse workspace (copy simplest existing app)
+- [x] Create apps/fitpulse workspace (copy simplest existing app) — superseded: shipped as `apps/fitcore`
 - [ ] Set package name: @free-react-templates/fitpulse
 - [ ] Set public/CNAME: fitpulse.free.componentdock.com
 - [ ] Set homepage in package.json

@@ -405,7 +405,7 @@ The system SHALL set a descriptive document title.
       submit height **52px**; close 40×40; underline inputs
       (`border-bottom: 1px solid rgba(255,255,255,0.1)`); labels uppercase
       12px/1px; tabs 16px; checkbox 16×16/3px radius.
-- [ ] No ColorLib references in `apps/mezzanine` (provenance lives in this
+- [x] No ColorLib references in `apps/mezzanine` (provenance lives in this — superseded: shipped as `apps/entrywell`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Images: the ONLY image is the left-column background photo — recreate

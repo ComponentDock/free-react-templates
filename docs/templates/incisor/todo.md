@@ -8,7 +8,7 @@ Source: ColorLib "Dento" → https://preview.colorlib.com/theme/dento/
 
 ## Tasks
 
-- [ ] Copy simplest existing app → `apps/incisor`, rename package to `@free-react-templates/incisor`
+- [x] Copy simplest existing app → `apps/incisor`, rename package to `@free-react-templates/incisor` — superseded: shipped as `apps/dentalyn`
 - [ ] Update `public/CNAME` → `incisor.free.componentdock.com`
 - [ ] Update `homepage` in `package.json` → `https://incisor.free.componentdock.com`
 - [ ] Add `@source` injection in `vite.config.ts`

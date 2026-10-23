@@ -55,7 +55,7 @@
 ## Tasks
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/footlight/` from the simplest existing footer app
+- [x] Create `apps/footlight/` from the simplest existing footer app — superseded: shipped as `apps/soleplate`
 - [ ] Rename package to `@free-react-templates/footlight`
 - [ ] Create `public/CNAME` with `footlight.free.componentdock.com`
 - [ ] Set `homepage` in `package.json`

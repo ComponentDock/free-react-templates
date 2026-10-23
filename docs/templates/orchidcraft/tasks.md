@@ -110,7 +110,7 @@ The preview image shows a dark-purple/indigo creative agency landing page:
 
 ### Phase 1: Scaffold & Configuration
 
-- [ ] Copy simplest existing app (e.g. `apps/abjure`) to `apps/orchidcraft`
+- [x] Copy simplest existing app (e.g. `apps/abjure`) to `apps/orchidcraft` — superseded: shipped as `apps/blitz`
 - [ ] Rename package to `@free-react-templates/orchidcraft`
 - [ ] Update `vite.config.ts` with `injectUiSource()` pattern
 - [ ] Create `public/CNAME` with `orchidcraft.free.componentdock.com`

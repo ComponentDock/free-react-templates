@@ -80,7 +80,7 @@
 
 ## Tasks (implementation order)
 
-- [ ] Scaffold `apps/troth` (copy simplest existing app, rename package to
+- [x] Scaffold `apps/troth` (copy simplest existing app, rename package to — superseded: shipped as `apps/wedlock`
       `@free-react-templates/troth`; NOT `apps/wordpress-wedding-themes`);
       `npm install` at root so package-lock.json registers the workspace
 - [ ] `@theme` tokens: `--color-accent: #ec4899` (pink-500, recommended

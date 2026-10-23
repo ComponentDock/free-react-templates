@@ -1,4 +1,8 @@
 # Slant (ColorLib Bootstrap Buttons 05) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnquint -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-05` design this prep describes shipped
+> as `apps/btnquint` (<https://btnquint.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Slant** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 05"). Implementation

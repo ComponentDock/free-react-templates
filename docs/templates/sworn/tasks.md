@@ -58,7 +58,7 @@ apps/sworn/src/
 
 ## Tasks
 
-- [ ] Scaffold `apps/sworn/` (copy simplest existing app, rename package)
+- [x] Scaffold `apps/sworn/` (copy simplest existing app, rename package) — superseded: shipped as `apps/oathmark`
 - [ ] Install deps, verify `npm install` at root
 - [ ] Write tests for Navbar (desktop links, mobile menu, dropdown)
 - [ ] Write tests for Hero (heading, form fields, date picker, submit)

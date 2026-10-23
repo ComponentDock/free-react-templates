@@ -14,7 +14,7 @@
 
 ### Phase 1: Project Setup
 
-- [ ] Copy simplest existing app as scaffold (e.g. apps/pickset)
+- [x] Copy simplest existing app as scaffold (e.g. apps/pickset) — superseded: shipped as `apps/statelist`
 - [ ] Rename package to `@free-react-templates/optlatch`
 - [ ] Update `public/CNAME` to `optlatch.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://optlatch.free.componentdock.com`
@@ -77,5 +77,5 @@
 ### Phase 8: Verification
 
 - [ ] `scripts/verify-app.sh optlatch` passes (typecheck + lint + 100% coverage + build)
-- [ ] No ColorLib references in `apps/optlatch/`
+- [x] No ColorLib references in `apps/optlatch/` — superseded: shipped as `apps/statelist`
 - [ ] Footer links to Component Dock

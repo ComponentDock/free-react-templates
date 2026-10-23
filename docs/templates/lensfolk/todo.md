@@ -50,7 +50,7 @@ Split-panel layout. Left sidebar (fixed, ~30% width) contains author identity an
 
 ### 1. Scaffold
 
-- [ ] Create `apps/lensfolk/` (copy simplest existing app, rename package)
+- [x] Create `apps/lensfolk/` (copy simplest existing app, rename package) — superseded: shipped as `apps/photomuse`
 - [ ] Register in `package.json` workspaces
 - [ ] Set up `src/index.css` with Tailwind + theme tokens (brand color `#ccb78f`)
 - [ ] Set up `vite.config.ts` with `injectUiSource()`

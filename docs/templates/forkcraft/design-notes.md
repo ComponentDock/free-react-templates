@@ -34,7 +34,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/caviar-free-templ
 ## Implementation task outline
 
 ### Phase 1: Scaffolding
-- [ ] Create `apps/forkcraft/` (copy simplest existing app, rename package to `@free-react-templates/forkcraft`)
+- [x] Create `apps/forkcraft/` (copy simplest existing app, rename package to `@free-react-templates/forkcraft`) — superseded: shipped as `apps/brasserie`
 - [ ] Update `public/CNAME` → `forkcraft.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://forkcraft.free.componentdock.com`
 - [ ] Set up `src/index.css` with Tailwind v4 theme tokens (@theme block for brand colors)

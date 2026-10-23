@@ -97,7 +97,7 @@
 
 ## Implementation Tasks
 
-- [ ] Scaffold `apps/edupulse/` from simplest existing app
+- [x] Scaffold `apps/edupulse/` from simplest existing app — superseded: shipped as `apps/learnhub`
 - [ ] Rename package to `@free-react-templates/edupulse`
 - [ ] Set up `index.html` with Google Fonts (Poppins + Roboto)
 - [ ] Create `src/index.css` with Tailwind theme tokens

@@ -1,4 +1,8 @@
 # Tuck (ColorLib Accordion 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=jade -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-20` design this prep describes shipped
+> as `apps/jade` (<https://jade.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Tuck** (NEW name —
 > the ColorLib source keeps its name "Accordion 20"). Implementation ships on

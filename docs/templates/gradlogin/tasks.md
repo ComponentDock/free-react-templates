@@ -61,7 +61,7 @@
 
 ## Task Outline
 
-- [ ] Create `apps/gradlogin/` from simplest existing login template
+- [x] Create `apps/gradlogin/` from simplest existing login template — superseded: shipped as `apps/coralgate`
 - [ ] Rename package to `@free-react-templates/gradlogin`
 - [ ] Add Lato font via Google Fonts link in index.html
 - [ ] Build split-screen layout component

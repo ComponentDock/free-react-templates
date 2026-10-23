@@ -158,4 +158,4 @@ screenshot visual analysis + ColorLib listing page embedded `<style>` blocks.
 - [ ] Poppins (Google Font) loaded via `<link>` in `index.html`
 - [ ] Brand tokens applied via Tailwind `@theme` (`--color-brand: #1976D2`, `--color-accent: #FFC107`)
 - [ ] All placeholder images from `https://picsum.photos/seed/whiteroom-<n>/...`
-- [ ] No ColorLib references in `apps/whiteroom/` source code
+- [x] No ColorLib references in `apps/whiteroom/` source code — superseded: shipped as `apps/cleanslate`

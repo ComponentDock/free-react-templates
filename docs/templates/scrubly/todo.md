@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Scaffolding
-- [ ] Create apps/scrubly/ from simplest existing app
+- [x] Create apps/scrubly/ from simplest existing app — superseded: shipped as `apps/cleanslate`
 - [ ] Rename package to @free-react-templates/scrubly
 - [ ] Update vite.config.ts with injectUiSource()
 - [ ] Create public/CNAME with "scrubly.free.componentdock.com"
@@ -38,7 +38,7 @@
 
 ## Phase 5: Verification
 - [ ] Run scripts/verify-app.sh scrubly
-- [ ] Verify no ColorLib references in apps/scrubly/
+- [x] Verify no ColorLib references in apps/scrubly/ — superseded: shipped as `apps/cleanslate`
 - [ ] Verify footer links to https://www.componentdock.com/
 - [ ] Verify all placeholder images use picsum.photos
 - [ ] Verify design tokens match spec

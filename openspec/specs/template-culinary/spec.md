@@ -60,7 +60,7 @@ Recreation of ColorLib **Bootstrap Accordion V02** (`accordion-02`), a free food
 
 ## Verification checklist
 
-- [ ] App workspace `@free-react-templates/culinary` created at `apps/culinary/`
+- [x] App workspace `@free-react-templates/culinary` created at `apps/culinary/` — superseded: shipped as `apps/tremolo`
 - [ ] `vite.config.ts` includes `injectUiSource()`
 - [ ] `public/CNAME` contains `culinary.free.componentdock.com`
 - [ ] Footer links `https://www.componentdock.com/`

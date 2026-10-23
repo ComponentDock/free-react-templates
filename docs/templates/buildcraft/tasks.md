@@ -43,7 +43,7 @@
 - [x] Write `openspec/specs/template-buildcraft/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/buildcraft` (copy the section-rich landing app pattern —
+- [x] Create `apps/buildcraft` (copy the section-rich landing app pattern — — superseded: shipped as `apps/buildwell`
       Aurora; rename package to `@free-react-templates/buildcraft`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.

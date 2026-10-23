@@ -351,7 +351,7 @@ The system SHALL compose the page with a main landmark and a document title.
 - [ ] Source quirks handled: password placeholder reworded to "Enter
       password"; label `htmlFor` associations corrected; single `<form>`
       wrapping all fields (the source already has one form — keep it).
-- [ ] No ColorLib references in `apps/parvis` (provenance lives in this
+- [x] No ColorLib references in `apps/parvis` (provenance lives in this — superseded: shipped as `apps/modalshift`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] No images required (the source has none) — no picsum seeds needed.

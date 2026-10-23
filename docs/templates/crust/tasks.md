@@ -34,7 +34,7 @@ Recreation of ColorLib Bakery
 
 ## Tasks
 
-- [ ] Create `apps/crust/` from simplest existing app scaffold
+- [x] Create `apps/crust/` from simplest existing app scaffold — superseded: shipped as `apps/loaf`
 - [ ] Write tests for Header component
 - [ ] Write tests for Hero component
 - [ ] Write tests for About component

@@ -61,7 +61,7 @@
 
 ## Implementation tasks (for the implementer)
 
-- [ ] Scaffold `apps/enchant` (copy simplest existing app; package
+- [x] Scaffold `apps/enchant` (copy simplest existing app; package — superseded: shipped as `apps/onboardly`
       `@free-react-templates/enchant`; `public/CNAME` =
       `enchant.free.componentdock.com`; homepage
       `https://enchant.free.componentdock.com`; run `npm install` at root so

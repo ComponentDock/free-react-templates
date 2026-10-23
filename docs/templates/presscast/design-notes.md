@@ -64,7 +64,7 @@
 
 ## Implementation checklist
 
-- [ ] Create `apps/presscast/` from simplest existing app template
+- [x] Create `apps/presscast/` from simplest existing app template — superseded: shipped as `apps/kicker`
 - [ ] Rename package to `@free-react-templates/presscast`
 - [ ] Set up `public/CNAME` → `presscast.free.componentdock.com`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`

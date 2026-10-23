@@ -113,7 +113,7 @@ center center; background-repeat: no-repeat`, `padding: 7rem 0`,
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/stretto` (copy simplest existing app; package
+- [x] Scaffold `apps/stretto` (copy simplest existing app; package — superseded: shipped as `apps/cornerstone`
       `@free-react-templates/stretto`; `public/CNAME` =
       `stretto.free.componentdock.com`; homepage =
       `https://stretto.free.componentdock.com`); register the workspace in

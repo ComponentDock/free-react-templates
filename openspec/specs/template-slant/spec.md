@@ -1,4 +1,9 @@
 # Template: Slant (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnquint -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-05` design this prep describes already
+> ships as `apps/btnquint` (<https://btnquint.free.componentdock.com>).
+> Do not scaffold `apps/slant`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnquint/spec.md`.
 
 ## Purpose
 

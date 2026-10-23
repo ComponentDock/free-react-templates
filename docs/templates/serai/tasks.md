@@ -118,7 +118,7 @@
 
 ## Implementation tasks (TDD, in order)
 
-- [ ] Scaffold: copy simplest existing app → `apps/serai`, rename package
+- [x] Scaffold: copy simplest existing app → `apps/serai`, rename package — superseded: shipped as `apps/lexicon`
       `@free-react-templates/serai`, register workspace
       (`npm install --package-lock-only`), `public/CNAME` =
       `serai.free.componentdock.com`, homepage

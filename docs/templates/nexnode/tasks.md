@@ -1,5 +1,10 @@
 # Nexnode (ColorLib Hosthub) — Tasks & Design Notes
 
+<!-- prep-status: shipped-as=uplink -->
+> **SHIPPED-UNDER** — the ColorLib `hosthub` design this prep describes shipped
+> as `apps/uplink` (<https://uplink.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
+
 > Recreation of ColorLib "Hosthub" (https://colorlib.com/wp/template/hosthub/)
 > under the NEW original name **Nexnode**. Spec lives at
 > `openspec/specs/template-nexnode/spec.md`; app folder `apps/nexnode`,
@@ -91,7 +96,7 @@
 
 ## Task outline
 
-- [ ] Scaffold: copy simplest app → `apps/nexnode`, package
+- [x] Scaffold: copy simplest app → `apps/nexnode`, package — superseded: shipped as `apps/uplink`
       `@free-react-templates/nexnode`, homepage + public/CNAME
       (`nexnode.free.componentdock.com`), index.html (title "Nexnode —
       Hosting Template", Google Fonts Open Sans + Roboto, theme-color

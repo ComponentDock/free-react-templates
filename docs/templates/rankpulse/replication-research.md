@@ -38,7 +38,7 @@ CSS fetched from `https://preview.colorlib.com/theme/seogo/css/style.css`.
 ## Implementation Tasks
 
 ### 1. Project Setup
-- [ ] Create `apps/rankpulse/` from simplest existing app
+- [x] Create `apps/rankpulse/` from simplest existing app — superseded: shipped as `apps/seoflow`
 - [ ] Rename package to `@free-react-templates/rankpulse`
 - [ ] Set `public/CNAME` to `rankpulse.free.componentdock.com`
 - [ ] Add theme tokens to `src/index.css` (Tailwind `@theme` block)

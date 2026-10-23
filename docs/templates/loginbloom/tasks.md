@@ -58,7 +58,7 @@
 
 ## Tasks
 
-- [ ] Set up apps/loginbloom workspace (copy from simplest existing app, rename package)
+- [x] Set up apps/loginbloom workspace (copy from simplest existing app, rename package) — superseded: shipped as `apps/loginauth`
 - [ ] Add Poppins font via Google Fonts in index.html
 - [ ] Define Tailwind @theme tokens: brand-green (#57b846), page-bg (#ebeeef), card-bg, etc.
 - [ ] Build Banner section component with background image + dark overlay + heading

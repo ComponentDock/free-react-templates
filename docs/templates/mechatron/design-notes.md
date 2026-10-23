@@ -85,7 +85,7 @@
 
 ## Implementation TODO
 
-- [ ] Create `apps/mechatron/` workspace (copy from simplest existing app)
+- [x] Create `apps/mechatron/` workspace (copy from simplest existing app) — superseded: shipped as `apps/mechbot`
 - [ ] Set up `package.json` with `@free-react-templates/mechatron`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `index.html` with Google Fonts Poppins link

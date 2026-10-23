@@ -322,7 +322,7 @@ https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] `apps/procida` exists; package `@free-react-templates/procida`;
+- [x] `apps/procida` exists; package `@free-react-templates/procida`; — superseded: shipped as `apps/carousel-vane`
       `public/CNAME` = `procida.free.componentdock.com`; `homepage` =
       `https://procida.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400/500/900); no

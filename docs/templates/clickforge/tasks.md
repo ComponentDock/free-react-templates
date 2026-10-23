@@ -17,7 +17,7 @@
 
 ## Task Checklist
 
-- [ ] Initialize app `apps/clickforge` with Vite + React + Tailwind v4 + TypeScript
+- [x] Initialize app `apps/clickforge` with Vite + React + Tailwind v4 + TypeScript — superseded: shipped as `apps/btnridge`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `public/CNAME` (`clickforge.free.componentdock.com`)
 - [ ] Build components with 100% test coverage (Vitest + RTL)

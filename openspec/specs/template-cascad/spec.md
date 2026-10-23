@@ -1,4 +1,9 @@
 # Template: Cascad (Bootstrap Dropdowns)
+<!-- prep-status: shipped-as=cartwell -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-05` design this prep describes already
+> ships as `apps/cartwell` (<https://cartwell.free.componentdock.com>).
+> Do not scaffold `apps/cascad`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cartwell/spec.md`.
 
 ## Purpose
 

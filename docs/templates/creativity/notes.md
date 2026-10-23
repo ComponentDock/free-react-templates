@@ -72,7 +72,7 @@
 
 ## Implementation Tasks
 
-- [ ] Set up `apps/creativity` workspace (copy simplest existing app)
+- [x] Set up `apps/creativity` workspace (copy simplest existing app) — superseded: shipped as `apps/atelier`
 - [ ] Configure Tailwind theme tokens (Montserrat, #1264fa brand, etc.)
 - [ ] Build Navbar component (with mobile menu)
 - [ ] Build Hero component (split layout, feature cards, quote overlay)

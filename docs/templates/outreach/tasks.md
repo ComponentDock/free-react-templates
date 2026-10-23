@@ -75,7 +75,7 @@
 
 ## Implementation tasks
 
-- [ ] Create `apps/outreach/` from simplest existing app template
+- [x] Create `apps/outreach/` from simplest existing app template — superseded: shipped as `apps/sendwave`
 - [ ] Set package name to `@free-react-templates/outreach`
 - [ ] Set public/CNAME to `outreach.free.componentdock.com`
 - [ ] Set homepage in package.json

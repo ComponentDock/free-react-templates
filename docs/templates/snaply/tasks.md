@@ -73,7 +73,7 @@ margin-bottom: 30px`) = `img.img-fluid` (~900×874 source, grayscale by
 
 ## Implementation tasks (for the implementer)
 
-- [ ] Scaffold `apps/snaply` from the simplest existing app (rename package
+- [x] Scaffold `apps/snaply` from the simplest existing app (rename package — superseded: shipped as `apps/filmstock`
       to `@free-react-templates/snaply`; register the workspace in
       package-lock.json via `npm install --package-lock-only`); `public/CNAME`
       = `snaply.free.componentdock.com`, `"homepage"` =

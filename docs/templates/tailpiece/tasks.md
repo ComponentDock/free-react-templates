@@ -128,7 +128,7 @@ col-lg-3` ×4 — TWO columns on md (≥768px), FOUR on lg (≥992px), stacked
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/tailpiece` (copy simplest existing app; package
+- [x] Scaffold `apps/tailpiece` (copy simplest existing app; package — superseded: shipped as `apps/bedrock`
       `@free-react-templates/tailpiece`; `public/CNAME` =
       `tailpiece.free.componentdock.com`; homepage =
       `https://tailpiece.free.componentdock.com`); register the workspace in

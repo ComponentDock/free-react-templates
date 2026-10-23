@@ -117,7 +117,7 @@ border-color: #ff487e; }`, `.btn { font-size: 14px; }`; Bootstrap base
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/positano` (copy simplest existing app; package
+- [x] Scaffold `apps/positano` (copy simplest existing app; package — superseded: shipped as `apps/merry`
       `@free-react-templates/positano`; `public/CNAME` =
       `positano.free.componentdock.com`; homepage
       `https://positano.free.componentdock.com`); root `npm install` +

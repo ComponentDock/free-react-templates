@@ -444,7 +444,7 @@ convention on every template (the original has no footer).
       search bg `rgba(0,0,0,0.05)` radius 4px, rows 16px / weight 500 /
       35px indent / 12px gap, custom 20px checkbox squares; Lato 400 via
       Google Fonts `<link>`.
-- [ ] No ColorLib references in `apps/sickle` (provenance lives in this
+- [x] No ColorLib references in `apps/sickle` (provenance lives in this — superseded: shipped as `apps/statelist`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react

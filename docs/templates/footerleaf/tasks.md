@@ -65,7 +65,7 @@ New name: footerleaf
 
 ## Implementation tasks
 
-- [ ] Create `apps/footerleaf/` from simplest existing app template
+- [x] Create `apps/footerleaf/` from simplest existing app template — superseded: shipped as `apps/footerbloom`
 - [ ] Set up package.json, vite.config.ts, index.html
 - [ ] Implement Footerleaf.tsx with all sections
 - [ ] Write tests for each section

@@ -94,7 +94,7 @@
 
 ## Implementation tasks (TDD, in order)
 
-- [ ] Scaffold: copy simplest existing app → `apps/savora`, rename package
+- [x] Scaffold: copy simplest existing app → `apps/savora`, rename package — superseded: shipped as `apps/bonquet`
       `@free-react-templates/savora`, register workspace
       (`npm install --package-lock-only`), `public/CNAME` =
       `savora.free.componentdock.com`, homepage

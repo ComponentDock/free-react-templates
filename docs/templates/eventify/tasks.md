@@ -101,7 +101,7 @@
 
 ## Implementation tasks
 
-- [ ] Create `apps/eventify/` from simplest existing app scaffold
+- [x] Create `apps/eventify/` from simplest existing app scaffold — superseded: shipped as `apps/gathr`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `public/CNAME` with `eventify.free.componentdock.com`
 - [ ] Set up `package.json` with `@free-react-templates/eventify` + homepage

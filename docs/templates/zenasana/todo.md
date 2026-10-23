@@ -36,7 +36,7 @@ Preview: https://preview.colorlib.com/theme/yogalife/
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/zenasana` from simplest existing app
+- [x] Scaffold `apps/zenasana` from simplest existing app — superseded: shipped as `apps/soulflow`
 - [ ] Set up package.json, vite.config.ts, index.html with Google Fonts (Work Sans + Playfair Display)
 - [ ] Create index.css with Tailwind + custom tokens (@theme for brand teal #87e5da)
 - [ ] Implement Navbar component (sticky, logo, nav links, dropdown, mobile hamburger)

@@ -66,7 +66,7 @@
 ## Implementation Tasks
 
 ### Phase 1: Project Setup
-- [ ] Create `apps/ordercraft/` from simplest existing app template
+- [x] Create `apps/ordercraft/` from simplest existing app template — superseded: shipped as `apps/divine`
 - [ ] Rename package to `@free-react-templates/ordercraft`
 - [ ] Set up `public/CNAME` with `ordercraft.free.componentdock.com`
 - [ ] Set `homepage` in package.json

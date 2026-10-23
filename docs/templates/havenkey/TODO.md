@@ -15,7 +15,7 @@
 
 ### Phase 1 — Scaffold
 
-- [ ] Copy simplest existing app (e.g. `apps/dwell/`) → `apps/havenkey/`
+- [x] Copy simplest existing app (e.g. `apps/dwell/`) → `apps/havenkey/` — superseded: shipped as `apps/havenridge`
 - [ ] Rename package to `@free-react-templates/havenkey`
 - [ ] Set `public/CNAME` → `havenkey.free.componentdock.com`
 - [ ] Set `homepage` in package.json

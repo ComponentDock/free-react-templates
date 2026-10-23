@@ -94,7 +94,7 @@
 
 ## Task checklist
 
-- [ ] Scaffold `apps/sudscraft/` (copy simplest app, rename package)
+- [x] Scaffold `apps/sudscraft/` (copy simplest app, rename package) — superseded: shipped as `apps/washbox`
 - [ ] Set up `index.html` with Poppins + Work Sans Google Fonts
 - [ ] Create `src/index.css` with `@theme` tokens (brand colors, gradient)
 - [ ] Build `Navbar` component (sticky, with dropdown and phone CTA)

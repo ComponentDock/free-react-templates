@@ -69,7 +69,7 @@ A professional dark-themed legal, investigative, and security consulting website
 
 ## Verification checklist
 
-- [ ] App workspace `@free-react-templates/advocate` created under `apps/advocate/`
+- [x] App workspace `@free-react-templates/advocate` created under `apps/advocate/` — superseded: shipped as `apps/lawguard`
 - [ ] `public/CNAME` contains `advocate.free.componentdock.com`
 - [ ] Footer links `https://www.componentdock.com/` ("Component Dock")
 - [ ] No `colorlib` references in app source code

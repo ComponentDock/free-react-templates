@@ -242,4 +242,4 @@ Feature: Footer
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] Placeholder images via `https://picsum.photos/seed/palazzo-<n>/<w>/<h>`
-- [ ] Package: `@free-react-templates/palazzo` in `apps/palazzo`
+- [x] Package: `@free-react-templates/palazzo` in `apps/palazzo` — superseded: shipped as `apps/retreat`

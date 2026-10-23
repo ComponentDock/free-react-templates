@@ -46,7 +46,7 @@
 
 ## Tasks
 
-- [ ] Set up `apps/foreverhome/` workspace (copy simplest existing app)
+- [x] Set up `apps/foreverhome/` workspace (copy simplest existing app) — superseded: shipped as `apps/giveaid`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Create `src/index.css` with `@theme` brand tokens + font imports
 - [ ] Create `src/components/TopBar.tsx`

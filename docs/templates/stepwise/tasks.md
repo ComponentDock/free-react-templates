@@ -55,7 +55,7 @@
 
 ## Implementation tasks (for the implementer)
 
-- [ ] Scaffold `apps/stepwise` (copy simplest existing app; package
+- [x] Scaffold `apps/stepwise` (copy simplest existing app; package — superseded: shipped as `apps/reserva`
       `@free-react-templates/stepwise`; `public/CNAME` =
       `stepwise.free.componentdock.com`; homepage
       `https://stepwise.free.componentdock.com`; run `npm install` at root so

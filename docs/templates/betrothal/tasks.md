@@ -1,5 +1,10 @@
 # Betrothal — implementation tasks
 
+<!-- prep-status: shipped-as=cherish -->
+> **SHIPPED-UNDER** — the ColorLib `dreamwed` design this prep describes shipped
+> as `apps/cherish` (<https://cherish.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
+
 Recreation of ColorLib **"Dreamwed"** (source slug `dreamwed`) — a romantic
 single-page wedding / save-the-date site on a **clean white canvas** with a warm
 **ochre/gold accent `#d48f4c`**. Header is centred (ring icon above the wordmark,
@@ -36,7 +41,7 @@ Design notes: `docs/templates/betrothal/design-notes.md`.
 
 ## App setup
 
-- [ ] Copy the simplest existing app scaffold → `apps/betrothal`
+- [x] Copy the simplest existing app scaffold → `apps/betrothal` — superseded: shipped as `apps/cherish`
 - [ ] Rename package to `@free-react-templates/betrothal`; set
       `"homepage": "https://betrothal.free.componentdock.com"`
 - [ ] `public/CNAME` = `betrothal.free.componentdock.com`

@@ -145,7 +145,7 @@ Recreation of ColorLib **Bitcoin** (`https://colorlib.com/wp/template/bitcoin/`)
 
 ## Verification checklist
 
-- [ ] App folder created at `apps/cryptforge` with valid `package.json` (`@free-react-templates/cryptforge`)
+- [x] App folder created at `apps/cryptforge` with valid `package.json` (`@free-react-templates/cryptforge`) — superseded: shipped as `apps/coinwave`
 - [ ] `vite.config.ts` includes `injectUiSource()` helper
 - [ ] `public/CNAME` contains `cryptforge.free.componentdock.com`
 - [ ] Footer links `https://www.componentdock.com/` (Component Dock)

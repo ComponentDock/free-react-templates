@@ -87,7 +87,7 @@ New app name: `props`. Domain category: Real Estate / Property listings.
 
 ## Verification checklist
 
-- [ ] App folder `apps/props` created and registered in root `package.json` workspaces
+- [x] App folder `apps/props` created and registered in root `package.json` workspaces — superseded: shipped as `apps/quarters`
 - [ ] TypeScript strict compilation passes without errors
 - [ ] ESLint and code checks pass cleanly
 - [ ] Vitest tests cover all sections with 100% test coverage

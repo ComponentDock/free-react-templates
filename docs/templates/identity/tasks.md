@@ -146,7 +146,7 @@ bottom: 1px solid rgba(0,0,0,0.1)` (faint dividers; last none), icon
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/identity` (copy simplest existing app; package
+- [x] Scaffold `apps/identity` (copy simplest existing app; package — superseded: shipped as `apps/dropmenu`
       `@free-react-templates/identity`; `public/CNAME` =
       `identity.free.componentdock.com`; homepage =
       `https://identity.free.componentdock.com`); register the workspace in

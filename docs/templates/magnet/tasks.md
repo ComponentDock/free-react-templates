@@ -1,5 +1,10 @@
 # Magnet (ColorLib Calvino) — Tasks & Design Notes
 
+<!-- prep-status: shipped-as=reachly -->
+> **SHIPPED-UNDER** — the ColorLib `calvino` design this prep describes shipped
+> as `apps/reachly` (<https://reachly.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-magnet`.
 
@@ -141,7 +146,7 @@ gallery/footer-bg.jpg"` — background IMAGE (approximate with dark gradient
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/magnet` (copy simplest existing app; package
+- [x] Scaffold `apps/magnet` (copy simplest existing app; package — superseded: shipped as `apps/reachly`
       `@free-react-templates/magnet`; `public/CNAME` =
       `magnet.free.componentdock.com`; homepage =
       `https://magnet.free.componentdock.com`); register the workspace in

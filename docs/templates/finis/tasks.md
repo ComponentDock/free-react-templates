@@ -133,7 +133,7 @@ inline-block`; `a` `display: inline-block`, `padding: 10px`,
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/finis` (copy simplest existing app; package
+- [x] Scaffold `apps/finis` (copy simplest existing app; package — superseded: shipped as `apps/loom`
       `@free-react-templates/finis`; `public/CNAME` =
       `finis.free.componentdock.com`; homepage =
       `https://finis.free.componentdock.com`); register the workspace in

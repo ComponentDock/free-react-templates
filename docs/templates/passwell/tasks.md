@@ -89,7 +89,7 @@ body (font: Roboto, bg: #fff, 14px, #b3b3b3)
 ## Implementation tasks
 
 ### 1. Scaffold app
-- [ ] Create `apps/passwell/` from simplest existing login app (copy
+- [x] Create `apps/passwell/` from simplest existing login app (copy — superseded: shipped as `apps/passcraft`
       structure, rename package to `@free-react-templates/passwell`)
 - [ ] Set `public/CNAME` → `passwell.free.componentdock.com`
 - [ ] Set `"homepage"` in package.json

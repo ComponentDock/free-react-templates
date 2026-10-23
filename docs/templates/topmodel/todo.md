@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 - [ ] Scaffold app from template (copy simplest existing app, rename to topmodel)
-- [ ] Set up `apps/topmodel/` package.json, vite.config.ts, index.html with Google Fonts
+- [x] Set up `apps/topmodel/` package.json, vite.config.ts, index.html with Google Fonts — superseded: shipped as `apps/vizier`
 - [ ] Add brand token #ed489d to `src/index.css` @theme
 - [ ] Implement Navbar (transparent on hero, white on scroll)
 - [ ] Implement HeroCarousel (auto-advance, model data, social links, arrows)

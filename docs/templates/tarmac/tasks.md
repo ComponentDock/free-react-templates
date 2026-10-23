@@ -68,7 +68,7 @@
 - [x] Write `openspec/specs/template-tarmac/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/tarmac` (copy the section-rich landing app pattern —
+- [x] Create `apps/tarmac` (copy the section-rich landing app pattern — — superseded: shipped as `apps/highway`
       Terracotta; rename package to `@free-react-templates/tarmac`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.

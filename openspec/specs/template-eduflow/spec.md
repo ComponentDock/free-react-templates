@@ -128,7 +128,7 @@ The system SHALL render a deep purple footer containing subject links, community
 ## Verification checklist
 
 - [ ] Spec validation: `npm run spec:validate` passes
-- [ ] Workspace setup: `apps/eduflow` configured in root `package.json` and registered in `package-lock.json`
+- [x] Workspace setup: `apps/eduflow` configured in root `package.json` and registered in `package-lock.json` — superseded: shipped as `apps/scholar`
 - [ ] Vite config: `injectUiSource()` present in `vite.config.ts`
 - [ ] Component implementation: all 8 sections implemented with Tailwind v4 and Lucide icons
 - [ ] TDD coverage: 100% line/function/branch/statement coverage in Vitest (`npm run test:coverage`)

@@ -412,7 +412,7 @@ Dock"). The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/santorini` exists; package `@free-react-templates/santorini`;
+- [x] `apps/santorini` exists; package `@free-react-templates/santorini`; — superseded: shipped as `apps/reel`
       `public/CNAME` = `santorini.free.componentdock.com`; `homepage` =
       `https://santorini.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400/500); no

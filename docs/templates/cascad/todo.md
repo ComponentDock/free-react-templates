@@ -1,11 +1,15 @@
 # Cascad — Implementation TODO
+<!-- prep-status: shipped-as=cartwell -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-05` design this prep describes shipped
+> as `apps/cartwell` (<https://cartwell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib Dropdown 05 (Bootstrap Dropdowns category)
 > Source: https://colorlib.com/wp/template/dropdown-05/
 
 ## Tasks
 
-- [ ] Scaffold app `apps/cascad` from simplest existing app
+- [x] Scaffold app `apps/cascad` from simplest existing app — superseded: shipped as `apps/cartwell`
 - [ ] Set up index.css with Tailwind @theme tokens (brand-primary #fa697c, brand-dark #f83851)
 - [ ] Implement CartDropdown component (trigger bar + split button + dropdown menu)
 - [ ] Implement ProductItem sub-component (thumbnail + name + price + quantity)

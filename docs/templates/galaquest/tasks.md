@@ -63,7 +63,7 @@ fetched and analyzed (833 lines). Structure:
 ## Implementation task outline
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/galaquest/` (copy simplest existing app, rename package to `@free-react-templates/galaquest`)
+- [x] Create `apps/galaquest/` (copy simplest existing app, rename package to `@free-react-templates/galaquest`) — superseded: shipped as `apps/gathr`
 - [ ] Set up `public/CNAME` → `galaquest.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://galaquest.free.componentdock.com`
 - [ ] Run `npm install` at repo root for lockfile registration

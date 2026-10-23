@@ -121,7 +121,7 @@ inline-block`; `> span` — 10px circle `rgba(255,255,255,0.5)`, margin 4px;
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/santorini` (copy simplest existing app; package
+- [x] Scaffold `apps/santorini` (copy simplest existing app; package — superseded: shipped as `apps/reel`
       `@free-react-templates/santorini`; `public/CNAME` =
       `santorini.free.componentdock.com`; homepage
       `https://santorini.free.componentdock.com`); root `npm install` +

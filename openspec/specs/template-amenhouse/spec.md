@@ -1,4 +1,9 @@
 # Template: AmenHouse (Church Website)
+<!-- prep-status: shipped-as=fellowship -->
+> **SHIPPED-UNDER** — the ColorLib `brotherlylove` design this prep describes already
+> ships as `apps/fellowship` (<https://fellowship.free.componentdock.com>).
+> Do not scaffold `apps/amenhouse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fellowship/spec.md`.
 
 ## Purpose
 

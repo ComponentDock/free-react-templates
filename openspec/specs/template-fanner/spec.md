@@ -645,7 +645,7 @@ convention on every template (the original has no footer).
       rows `1px 0` margin, 5px vertical padding, 20px left padding,
       4px radius, `#efefef` hover/selected; list `columns-2` gap 0; Roboto
       300/400 via Google Fonts `<link>`.
-- [ ] No ColorLib references in `apps/fanner` (provenance lives in this
+- [x] No ColorLib references in `apps/fanner` (provenance lives in this — superseded: shipped as `apps/picklist`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react

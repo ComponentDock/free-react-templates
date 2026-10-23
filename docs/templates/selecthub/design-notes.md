@@ -56,7 +56,7 @@
 
 ## TODO
 
-- [ ] Create `apps/selecthub/` from a simple existing app
+- [x] Create `apps/selecthub/` from a simple existing app — superseded: shipped as `apps/multibox`
 - [ ] Implement SelectHub component (multi-select with tag chips)
 - [ ] Add color variant selector
 - [ ] Implement search filtering

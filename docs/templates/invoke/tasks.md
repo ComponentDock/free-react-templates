@@ -20,7 +20,7 @@
 
 ### 1. Scaffold app from template
 
-- [ ] Copy simplest existing app (e.g. `apps/conjure` or `apps/banish`) to `apps/invoke`
+- [x] Copy simplest existing app (e.g. `apps/conjure` or `apps/banish`) to `apps/invoke` — superseded: shipped as `apps/formpad`
 - [ ] Rename package to `@free-react-templates/invoke`
 - [ ] Update `public/CNAME` to `invoke.free.componentdock.com`
 - [ ] Update `homepage` in `package.json` to `https://invoke.free.componentdock.com`

@@ -1,4 +1,9 @@
 # Template: Skycast (Weather Condition Dropdown)
+<!-- prep-status: shipped-as=gust -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-03` design this prep describes already
+> ships as `apps/gust` (<https://gust.free.componentdock.com>).
+> Do not scaffold `apps/skycast`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gust/spec.md`.
 
 ## Purpose
 
@@ -223,7 +228,7 @@ Dock (the reference demo has no footer — this is a repo convention).
 
 ## Verification checklist
 
-- [ ] `apps/skycast` exists with package name `@free-react-templates/skycast`
+- [x] `apps/skycast` exists with package name `@free-react-templates/skycast` — superseded: shipped as `apps/gust`
 - [ ] `vite.config.ts` registers `injectUiSource()` (see docs/conventions.md)
 - [ ] Brand indigo `#3e64ff` / hover `#5878ff` and the four accents
       `#f9e090` / `#5edfff` / `#4d80e4` / `#ff8080` defined in `@theme`;

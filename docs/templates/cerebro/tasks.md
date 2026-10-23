@@ -66,7 +66,7 @@ Package: @free-react-templates/cerebro
 
 ## Implementation checklist
 
-- [ ] Create apps/cerebro workspace (copy simplest existing app)
+- [x] Create apps/cerebro workspace (copy simplest existing app) — superseded: shipped as `apps/learnwise`
 - [ ] Set up Tailwind theme tokens in index.css (@theme block)
 - [ ] Build TopHeader component
 - [ ] Build Navbar component (responsive with mobile toggle)

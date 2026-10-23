@@ -13,7 +13,7 @@
 
 ## Implementation Checklist
 
-- [ ] Scaffold `apps/calendo` (copy minimal structure, rename package, configure `vite.config.ts` with `injectUiSource()`, setup `public/CNAME`).
+- [x] Scaffold `apps/calendo` (copy minimal structure, rename package, configure `vite.config.ts` with `injectUiSource()`, setup `public/CNAME`) — superseded: shipped as `apps/calmark`.
 - [ ] Register workspace in root `package.json` / run `npm install`.
 - [ ] Build shared UI components & design tokens in `src/index.css` (Poppin font, Indigo primary `#4f46e5`, Tailwind v4 theme).
 - [ ] Build section components:

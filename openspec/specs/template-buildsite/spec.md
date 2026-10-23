@@ -1,4 +1,9 @@
 # Template: BuildSite (Construction Company)
+<!-- prep-status: shipped-as=hardhat -->
+> **SHIPPED-UNDER** — the ColorLib `constructioncompany` design this prep describes already
+> ships as `apps/hardhat` (<https://hardhat.free.componentdock.com>).
+> Do not scaffold `apps/buildsite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hardhat/spec.md`.
 
 ## Purpose
 

@@ -126,7 +126,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/hiredesk/` from simplest existing app
+- [x] Scaffold `apps/hiredesk/` from simplest existing app — superseded: shipped as `apps/jobvane`
 - [ ] Rename package to `@free-react-templates/hiredesk`
 - [ ] Set up `public/CNAME` → `hiredesk.free.componentdock.com`
 - [ ] Add Nunito Sans font via Google Fonts `<link>` in `index.html`

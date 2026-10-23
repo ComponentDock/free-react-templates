@@ -1,4 +1,8 @@
 # BuildSite — Implementation Notes
+<!-- prep-status: shipped-as=hardhat -->
+> **SHIPPED-UNDER** — the ColorLib `constructioncompany` design this prep describes shipped
+> as `apps/hardhat` (<https://hardhat.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib: Constructioncompany
@@ -30,7 +34,7 @@
 ## Implementation Tasks
 
 ### 1. Scaffold
-- [ ] Copy simplest existing app as base (e.g. apps/aurora → apps/buildsite)
+- [x] Copy simplest existing app as base (e.g. apps/aurora → apps/buildsite) — superseded: shipped as `apps/hardhat`
 - [ ] Rename package to @free-react-templates/buildsite
 - [ ] Update vite.config.ts with injectUiSource()
 - [ ] Set up index.css with Tailwind v4 + @theme tokens for brand colors

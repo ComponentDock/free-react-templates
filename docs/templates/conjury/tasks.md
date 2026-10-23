@@ -84,7 +84,7 @@
 
 ## Implementation tasks (for the implementer)
 
-- [ ] Scaffold `apps/conjury` (copy simplest existing app; package
+- [x] Scaffold `apps/conjury` (copy simplest existing app; package — superseded: shipped as `apps/hexcraft`
       `@free-react-templates/conjury`; `public/CNAME` =
       `conjury.free.componentdock.com`; homepage
       `https://conjury.free.componentdock.com`; run `npm install` at root so

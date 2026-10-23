@@ -535,7 +535,7 @@ The system SHALL render the monorepo-mandated attribution footer.
 
 ## Verification checklist
 
-- [ ] `apps/tare` exists; package `@free-react-templates/tare`; CNAME
+- [x] `apps/tare` exists; package `@free-react-templates/tare`; CNAME — superseded: shipped as `apps/multibox`
       `tare.free.componentdock.com`; homepage
       `https://tare.free.componentdock.com`; workspace registered in
       `package-lock.json` (`npm install` at root).
@@ -543,7 +543,7 @@ The system SHALL render the monorepo-mandated attribution footer.
       `#eeeeee`, chip-text `#333`, input `#999`, row `#444`, row-picked
       `#ccc`, no-results-fg `#777`, no-results-bg `#f4f4f4`, highlight
       `#3875d7`→`#2a62bc`; Roboto Google Fonts `<link>` (300/400).
-- [ ] No ColorLib strings anywhere in `apps/tare` (provenance lives only in
+- [x] No ColorLib strings anywhere in `apps/tare` (provenance lives only in — superseded: shipped as `apps/multibox`
       this spec, TEMPLATES.md, and the PR).
 - [ ] Footer credit links `https://www.componentdock.com/`.
 - [ ] 8-option list in exact order; no optgroups/limits/select-all.

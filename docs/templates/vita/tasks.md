@@ -95,7 +95,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/vita` (copy simplest existing app; package
+- [x] Scaffold `apps/vita` (copy simplest existing app; package — superseded: shipped as `apps/ochre`
       `@free-react-templates/vita`; register in package-lock via npm
       workspace install)
 - [ ] `@theme` tokens: brand orange `--color-brand` (#fc4600), dark

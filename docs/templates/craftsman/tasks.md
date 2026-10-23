@@ -89,7 +89,7 @@ Since this is a SPA recreation, combine key sections from all pages into a singl
 
 ## Implementation Checklist for Implementers
 
-- [ ] Create `apps/craftsman` workspace (copy structure from a clean reference app).
+- [x] Create `apps/craftsman` workspace (copy structure from a clean reference app) — superseded: shipped as `apps/lenscape`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Set `public/CNAME` to `craftsman.free.componentdock.com`.
 - [ ] Build components: `Navbar`, `Hero`, `About`, `Services`, `Experiences`, `Works`, `Blog`, `Contact`, `Footer`.

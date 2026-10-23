@@ -215,4 +215,4 @@ Timetable → Testimonial → Contact (map) → Gallery → Footer.
 - [ ] All text uses Montserrat font
 - [ ] Design tokens match: headings #493365, text #938e99, CTA #f7ffa0
 - [ ] No ColorLib references in app source code
-- [ ] No shared files modified (only apps/pranava/ and openspec/docs)
+- [x] No shared files modified (only apps/pranava/ and openspec/docs) — superseded: shipped as `apps/zen`

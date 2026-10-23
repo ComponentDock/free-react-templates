@@ -341,7 +341,7 @@ The system SHALL compose the page with a main landmark and a document title.
       description `#777` (14px), underline `#ccc` → focus `#000`, close
       `#ccc` → hover `#000`; Roboto via Google Fonts `<link>` (NO
       Poppins/Source Serif Pro — dead includes in the source).
-- [ ] No ColorLib references in `apps/turnstile` (provenance lives in this
+- [x] No ColorLib references in `apps/turnstile` (provenance lives in this — superseded: shipped as `apps/modalvault`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source modal has none); icons only via lucide-react.

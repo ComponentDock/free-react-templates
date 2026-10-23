@@ -34,7 +34,7 @@ Preview: https://preview.colorlib.com/theme/colorlib-regform-6/ (unreachable —
 
 ## Implementation checklist
 
-- [ ] Create apps/regsite with standard Vite + React 19 + Tailwind 4 setup
+- [x] Create apps/regsite with standard Vite + React 19 + Tailwind 4 setup — superseded: shipped as `apps/regline`
 - [ ] Set up Google Fonts link for Open Sans (400, 700)
 - [ ] Create dark page wrapper component
 - [ ] Build card container (max-width 900px, centered, 3px radius)

@@ -1,4 +1,8 @@
 # FindQuest — Implementation Todo
+<!-- prep-status: shipped-as=querybar -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-19` design this prep describes shipped
+> as `apps/querybar` (<https://querybar.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup
 - [ ] Copy simplest existing app as base (e.g. searchnest)

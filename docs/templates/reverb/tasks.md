@@ -1,4 +1,8 @@
 # Tasks & Design Notes: Reverb (ColorLib Repeat)
+<!-- prep-status: shipped-as=loop -->
+> **SHIPPED-UNDER** — the ColorLib `repeat` design this prep describes shipped
+> as `apps/loop` (<https://loop.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 

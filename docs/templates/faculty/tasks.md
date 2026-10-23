@@ -154,7 +154,7 @@ cover 752px 57%),`.tailor-details`(width 74%, padding 20px 40px 20px
 
 ## Tasks / todo outline (implementation order)
 
-- [ ] Scaffold `apps/faculty` (copy simplest existing app, rename package
+- [x] Scaffold `apps/faculty` (copy simplest existing app, rename package — superseded: shipped as `apps/scholara`
       to `@free-react-templates/faculty`, register in root
       `package-lock.json` via `npm install`, `injectUiSource()` in
       vite.config.ts).

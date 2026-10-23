@@ -149,7 +149,7 @@ a { color: #24A148; }
 
 ## Implementation Tasks
 
-- [ ] Create `apps/greenview/` (copy minimal starter, rename package)
+- [x] Create `apps/greenview/` (copy minimal starter, rename package) — superseded: shipped as `apps/fern`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `src/index.css` with Tailwind + `@theme` brand color
 - [ ] Create `src/App.tsx` composing all sections

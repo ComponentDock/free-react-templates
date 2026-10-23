@@ -75,7 +75,7 @@ New name: btnlab (apps/btnlab, @free-react-templates/btnlab)
 
 ## Implementation Tasks
 
-- [ ] Scaffold `apps/btnlab/` from a minimal existing app (copy + rename package).
+- [x] Scaffold `apps/btnlab/` from a minimal existing app (copy + rename package) — superseded: shipped as `apps/btnkit`.
 - [ ] Install dependencies and verify build.
 - [ ] Create `src/components/Hero.tsx` — heading on dark bg.
 - [ ] Create `src/components/DefaultButtons.tsx` — solid + outline + icon button grid.

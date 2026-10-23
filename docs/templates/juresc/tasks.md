@@ -77,7 +77,7 @@ Roboto loaded via Google Fonts. Weights: 300, 400, 500, 700.
 
 ## Implementation tasks
 
-- [ ] Set up `apps/juresc/` scaffold (copy from simplest existing app, rename package)
+- [x] Set up `apps/juresc/` scaffold (copy from simplest existing app, rename package) — superseded: shipped as `apps/docket`
 - [ ] Add Roboto font to index.html via Google Fonts link
 - [ ] Configure Tailwind theme tokens in index.css (@theme block with brand colors)
 - [ ] Implement TopBar component (phone, email, social icons)

@@ -12,7 +12,7 @@
 ## Implementation order
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/physique/` (copy simplest existing app, rename package to `@free-react-templates/physique`)
+- [x] Create `apps/physique/` (copy simplest existing app, rename package to `@free-react-templates/physique`) — superseded: shipped as `apps/stallion`
 - [ ] Set up `public/CNAME` → `physique.free.componentdock.com`
 - [ ] Set `homepage` in package.json
 - [ ] Register `injectUiSource()` in `vite.config.ts`

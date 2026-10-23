@@ -55,7 +55,7 @@
 ### Phase 5 — Verification
 - [ ] `npm run verify:app rediron` passes (typecheck + lint + tests + build)
 - [ ] Visual comparison with screenshot — section order matches
-- [ ] No ColorLib references in `apps/rediron/`
+- [x] No ColorLib references in `apps/rediron/` — superseded: shipped as `apps/trowel`
 - [ ] Footer links to `https://www.componentdock.com/`
 
 ## Design notes

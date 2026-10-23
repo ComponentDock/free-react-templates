@@ -85,7 +85,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/mill` from simplest existing app
+- [x] Scaffold `apps/mill` from simplest existing app — superseded: shipped as `apps/cogwork`
 - [ ] Set up `@theme` tokens in `index.css`
 - [ ] Build Navbar component
 - [ ] Build HeroSlider component

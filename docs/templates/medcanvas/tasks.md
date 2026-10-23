@@ -60,7 +60,7 @@
 - [ ] Write `openspec/specs/template-medcanvas/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/medcanvas` (copy the simplest medical app pattern — medwell;
+- [x] Create `apps/medcanvas` (copy the simplest medical app pattern — medwell; — superseded: shipped as `apps/curemark`
       rename package to `@free-react-templates/medcanvas`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.

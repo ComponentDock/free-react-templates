@@ -303,7 +303,7 @@ The system SHALL set a descriptive document title.
       ornaments), modal shadow `0 10px 34px -15px rgba(0,0,0,0.24)`, square
       dialog (radius 0); Lato + Pacifico via Google Fonts `<link>`; 4px-radius
       rectangular buttons (launch white text, SHOP NOW black text).
-- [ ] No ColorLib references in `apps/portal` (provenance lives in this
+- [x] No ColorLib references in `apps/portal` (provenance lives in this — superseded: shipped as `apps/snowdrift`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Images: exactly ONE picsum seed for the right-column winter photo

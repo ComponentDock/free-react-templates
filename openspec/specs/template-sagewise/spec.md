@@ -1,4 +1,9 @@
 # Template: Sagewise (Education / University Landing)
+<!-- prep-status: shipped-as=sagewell -->
+> **SHIPPED-UNDER** — the ColorLib `wiser` design this prep describes already
+> ships as `apps/sagewell` (<https://sagewell.free.componentdock.com>).
+> Do not scaffold `apps/sagewise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sagewell/spec.md`.
 
 ## Purpose
 

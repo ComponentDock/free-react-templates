@@ -350,7 +350,7 @@ TEMPLATES.md, and the PR).
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec (OpenSpec format).
-- [ ] App scaffolded as `apps/harmonia` (package
+- [x] App scaffolded as `apps/harmonia` (package — superseded: shipped as `apps/sonority`
       `@free-react-templates/harmonia`), lockfile registered
       (`grep -c 'free-react-templates/harmonia' package-lock.json` = 1),
       `public/CNAME` = `harmonia.free.componentdock.com`, `homepage` =
@@ -368,7 +368,7 @@ TEMPLATES.md, and the PR).
       a time; controls accessible (aria-labels).
 - [ ] Mobile nav collapses behind a toggle with `aria-expanded`.
 - [ ] Footer links Component Dock (`https://www.componentdock.com/`).
-- [ ] No ColorLib string in `apps/harmonia/**` (grep `colorlib` → 0 hits).
+- [x] No ColorLib string in `apps/harmonia/**` (grep `colorlib` → 0 hits) — superseded: shipped as `apps/sonority`.
 - [ ] `scripts/verify-app.sh harmonia` passes: typecheck + lint + knip +
       fallow + vitest 100% coverage + build.
 - [ ] Both TEMPLATES.md Musiclab rows (lines 606, 2271) marked `[x]` with

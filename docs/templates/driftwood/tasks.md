@@ -66,7 +66,7 @@ backgrounds, dark overlay on hero. Clean, modern travel agency aesthetic.
 ## Implementation tasks
 
 ### 1. Scaffold app
-- [ ] Create `apps/driftwood/` from simplest existing app template
+- [x] Create `apps/driftwood/` from simplest existing app template — superseded: shipped as `apps/tidal`
 - [ ] Set package name `@free-react-templates/driftwood`
 - [ ] Set `public/CNAME` to `driftwood.free.componentdock.com`
 - [ ] Set `homepage` in package.json to `https://driftwood.free.componentdock.com`

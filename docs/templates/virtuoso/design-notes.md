@@ -38,7 +38,7 @@ Package: @free-react-templates/virtuoso
 
 ## Implementation tasks
 
-- [ ] Create apps/virtuoso scaffold (copy simplest existing app, rename package)
+- [x] Create apps/virtuoso scaffold (copy simplest existing app, rename package) — superseded: shipped as `apps/valet`
 - [ ] Set up Tailwind theme tokens in index.css (@theme block)
 - [ ] Implement Navbar component (dark bg, responsive hamburger)
 - [ ] Implement Hero component (bg image, dark overlay, headline, CTA button)

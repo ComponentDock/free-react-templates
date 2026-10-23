@@ -38,7 +38,7 @@
 ## Implementation Tasks
 
 ### Phase 1: Scaffold
-- [ ] Create apps/civicharter from a minimal existing app template
+- [x] Create apps/civicharter from a minimal existing app template — superseded: shipped as `apps/civicpulse`
 - [ ] Set up vite.config.ts with injectUiSource()
 - [ ] Set public/CNAME to civicharter.free.componentdock.com
 - [ ] Set homepage in package.json

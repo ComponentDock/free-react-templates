@@ -86,7 +86,7 @@ clean lines, gradient-heavy, pill buttons, circular icons.
 ## Tasks for implementer
 
 ### Setup
-- [ ] Create `apps/crestone/` (copy simplest existing app, rename package to
+- [x] Create `apps/crestone/` (copy simplest existing app, rename package to — superseded: shipped as `apps/artwave`
       `@free-react-templates/crestone`)
 - [ ] Set up `public/CNAME` with `crestone.free.componentdock.com`
 - [ ] Set `"homepage": "https://crestone.free.componentdock.com"` in package.json

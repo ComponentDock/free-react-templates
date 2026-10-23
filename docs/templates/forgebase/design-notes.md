@@ -95,7 +95,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/forgebase/` from simplest existing app
+- [x] Scaffold `apps/forgebase/` from simplest existing app — superseded: shipped as `apps/fabricate`
 - [ ] Rename package to `@free-react-templates/forgebase`
 - [ ] Set up `public/CNAME` → `forgebase.free.componentdock.com`
 - [ ] Add Poppins font via Google Fonts `<link>` in index.html

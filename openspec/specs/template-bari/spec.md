@@ -367,7 +367,7 @@ https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] `apps/bari` exists; package `@free-react-templates/bari`;
+- [x] `apps/bari` exists; package `@free-react-templates/bari`; — superseded: shipped as `apps/carouselroll`
       `public/CNAME` = `bari.free.componentdock.com`; `homepage` =
       `https://bari.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400); no

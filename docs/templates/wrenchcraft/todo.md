@@ -4,7 +4,7 @@
 > as `apps/fixcraft` (<https://fixcraft.free.componentdock.com>).
 > The unchecked items below are prep history, not outstanding work.
 
-- [ ] Create app scaffold: `apps/wrenchcraft/` from template (copy simplest app, rename package)
+- [x] Create app scaffold: `apps/wrenchcraft/` from template (copy simplest app, rename package) — superseded: shipped as `apps/fixcraft`
 - [ ] Set up `src/index.css` with Poppins font import and Tailwind theme tokens (#064acb, #007bff, #f79f24)
 - [ ] Register workspace in root `package.json` and run `npm install`
 - [ ] Build Navbar component (sticky, hamburger mobile, links + CTA)

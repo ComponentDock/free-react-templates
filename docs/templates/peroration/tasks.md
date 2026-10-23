@@ -105,7 +105,7 @@ rgba(255,255,255,0.1)`):
 
 ## Implementation tasks
 
-- [ ] Scaffold app: copy simplest existing app → `apps/peroration`, package
+- [x] Scaffold app: copy simplest existing app → `apps/peroration`, package — superseded: shipped as `apps/footerpulse`
       `@free-react-templates/peroration`, `public/CNAME` +
       `peroration.free.componentdock.com`, homepage URL. `npm install` at
       root so package-lock.json registers the workspace.

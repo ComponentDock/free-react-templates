@@ -66,7 +66,7 @@ src/
 
 ## Implementation checklist
 
-- [ ] Create `apps/searchquest/` from simplest existing app template
+- [x] Create `apps/searchquest/` from simplest existing app template — superseded: shipped as `apps/seekgate`
 - [ ] Set up package name `@free-react-templates/searchquest`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Create `public/CNAME` with `searchquest.free.componentdock.com`

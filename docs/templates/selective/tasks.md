@@ -46,7 +46,7 @@
 
 ## Tasks
 
-- [ ] Create `apps/selective/` workspace (copy from simplest existing app)
+- [x] Create `apps/selective/` workspace (copy from simplest existing app) — superseded: shipped as `apps/statelist`
 - [ ] Set up `src/index.css` with Tailwind + Lato font via Google Fonts
 - [ ] Create `MultiSelectDropdown` component with toggle, search, checkbox list
 - [ ] Create `CheckboxItem` sub-component with custom styling

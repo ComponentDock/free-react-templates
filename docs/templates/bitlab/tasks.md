@@ -75,7 +75,7 @@ avatars, blog cards with date badges, contact form, dark footer.
 
 ### Phase 1: Scaffold
 
-- [ ] Create `apps/bitlab/` by copying the simplest existing app
+- [x] Create `apps/bitlab/` by copying the simplest existing app — superseded: shipped as `apps/byteops`
 - [ ] Rename package to `@free-react-templates/bitlab`
 - [ ] Set up `public/CNAME` with `bitlab.free.componentdock.com`
 - [ ] Set `homepage` in package.json to `https://bitlab.free.componentdock.com`

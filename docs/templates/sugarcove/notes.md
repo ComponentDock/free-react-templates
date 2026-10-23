@@ -77,7 +77,7 @@ border-radius: 0 0 60px 0; /* product cards */
 
 ### Phase 1: Scaffold
 
-- [ ] Create `apps/sugarcove/` from simplest existing app template
+- [x] Create `apps/sugarcove/` from simplest existing app template — superseded: shipped as `apps/crumbs`
 - [ ] Rename package to `@free-react-templates/sugarcove`
 - [ ] Update `public/CNAME` to `sugarcove.free.componentdock.com`
 - [ ] Update `package.json` homepage

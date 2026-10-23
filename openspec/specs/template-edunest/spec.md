@@ -1,4 +1,9 @@
 # Template: EduNest (Education)
+<!-- prep-status: shipped-as=classroom -->
+> **SHIPPED-UNDER** — the ColorLib `oneschool` design this prep describes already
+> ships as `apps/classroom` (<https://classroom.free.componentdock.com>).
+> Do not scaffold `apps/edunest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-classroom/spec.md`.
 
 ## Purpose
 
@@ -168,7 +173,7 @@ The template has a clean, professional education aesthetic:
 - [ ] Footer: white bg, 3 columns (About, Links, Subscribe), copyright + Component Dock link
 - [ ] Design tokens: brand `#7971EA`, font Mulish (Muli), pill buttons `border-radius: 30px`
 - [ ] Responsive: mobile hamburger, stacked layouts, reduced padding
-- [ ] No ColorLib references in `apps/edunest/`
+- [x] No ColorLib references in `apps/edunest/` — superseded: shipped as `apps/classroom`
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] `public/CNAME` contains `edunest.free.componentdock.com`
 - [ ] Package name: `@free-react-templates/edunest`

@@ -313,7 +313,7 @@ The system SHALL set a descriptive document title.
       inputs 52px/radius-5 with blue focus border; uppercase 12px muted
       labels; 50×50 circular social icons with tooltips; Bootstrap-default
       translucent-black close × (NOT teal — that was Modal 04).
-- [ ] No ColorLib references in `apps/doorway` (provenance lives in this
+- [x] No ColorLib references in `apps/doorway` (provenance lives in this — superseded: shipped as `apps/modalize`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] No images needed (the template is pure form UI — no picsum seeds, no

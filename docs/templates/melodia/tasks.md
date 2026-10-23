@@ -80,7 +80,7 @@
 
 ## Task Checklist
 
-- [ ] Create apps/melodia workspace (copy simplest existing app, rename package)
+- [x] Create apps/melodia workspace (copy simplest existing app, rename package) — superseded: shipped as `apps/groovecraft`
 - [ ] Configure vite.config.ts with injectUiSource()
 - [ ] Set up index.css with Tailwind + Archivo Narrow font import + theme tokens
 - [ ] Build Navbar component (transparent → sticky, mobile hamburger)

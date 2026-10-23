@@ -64,7 +64,7 @@ modern interior design studio website with:
 
 ### Phase 1: Scaffold
 
-- [ ] Create `apps/interloom/` (copy simplest existing app, rename package to
+- [x] Create `apps/interloom/` (copy simplest existing app, rename package to — superseded: shipped as `apps/plano`
       `@free-react-templates/interloom`)
 - [ ] Update `vite.config.ts` with `injectUiSource()`
 - [ ] Add Google Fonts link for Poppins in `index.html`
@@ -110,7 +110,7 @@ modern interior design studio website with:
 - [ ] `npm run build` — builds successfully
 - [ ] `scripts/verify-app.sh interloom` — full per-app gate passes
 - [ ] Visual review: screenshot matches original design intent
-- [ ] No ColorLib references in `apps/interloom/` code
+- [x] No ColorLib references in `apps/interloom/` code — superseded: shipped as `apps/plano`
 - [ ] Footer links to `https://www.componentdock.com/` as "Component Dock"
 
 ## Design notes for implementer

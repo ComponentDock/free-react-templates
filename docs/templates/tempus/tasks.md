@@ -4,7 +4,7 @@
 > as `apps/calday` (<https://calday.free.componentdock.com>).
 > The unchecked items below are prep history, not outstanding work.
 
-- [ ] Scaffold `apps/tempus` (package name `@free-react-templates/tempus`)
+- [x] Scaffold `apps/tempus` (package name `@free-react-templates/tempus`) — superseded: shipped as `apps/calday`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Set `public/CNAME` to `tempus.free.componentdock.com`
 - [ ] Create components:

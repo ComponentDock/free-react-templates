@@ -82,7 +82,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create `apps/badgeform/` from simplest existing app, rename package
+- [x] Create `apps/badgeform/` from simplest existing app, rename package — superseded: shipped as `apps/regvale`
 - [ ] Create `public/CNAME` with `badgeform.free.componentdock.com`
 - [ ] Set up `src/App.tsx` composing the single page
 - [ ] Create `src/components/BadgeRegistrationForm.tsx` — full page layout

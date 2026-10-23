@@ -141,7 +141,7 @@ Extracted from `https://preview.colorlib.com/theme/photography/css/main.css`:
 
 ## Verification checklist
 
-- [ ] App folder: `apps/lenskeeper`
+- [x] App folder: `apps/lenskeeper` — superseded: shipped as `apps/shuttercraft`
 - [ ] Package: `@free-react-templates/lenskeeper`
 - [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
 - [ ] Footer links to `https://www.componentdock.com/` ("Component Dock")

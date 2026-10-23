@@ -281,7 +281,7 @@ Feature: Footer
 
 ## Verification checklist
 
-- [ ] App folder `apps/indiglow` created with correct package name `@free-react-templates/indiglow`
+- [x] App folder `apps/indiglow` created with correct package name `@free-react-templates/indiglow` — superseded: shipped as `apps/azureline`
 - [ ] `public/CNAME` contains `indiglow.free.componentdock.com`
 - [ ] `package.json` homepage is `https://indiglow.free.componentdock.com`
 - [ ] Footer links to `https://www.componentdock.com/` (Component Dock) — NOT ColorLib

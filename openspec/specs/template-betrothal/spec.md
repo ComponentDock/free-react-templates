@@ -327,8 +327,8 @@ a main landmark and a contentinfo landmark.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/betrothal`
-- [ ] `npm run lint` passes for `apps/betrothal`
+- [x] `npm run typecheck` passes for `apps/betrothal` — superseded: shipped as `apps/cherish`
+- [x] `npm run lint` passes for `apps/betrothal` — superseded: shipped as `apps/cherish`
 - [ ] `scripts/verify-app.sh betrothal` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)

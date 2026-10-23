@@ -95,7 +95,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/brisk` (copy simplest existing app; package
+- [x] Scaffold `apps/brisk` (copy simplest existing app; package — superseded: shipped as `apps/focal`
       `@free-react-templates/brisk`; `public/CNAME` =
       `brisk.free.componentdock.com`; homepage =
       `https://brisk.free.componentdock.com`); register workspace in
@@ -156,5 +156,5 @@
 - [ ] Typography: Karla body + Playfair Display headings (Google Fonts)
 - [ ] Brand: #F9CE00 golden yellow on active nav, search btn, subscribe btn
 - [ ] Responsive: stacked below 768px, hamburger visible, all sections adapt
-- [ ] No ColorLib references in apps/brisk
+- [x] No ColorLib references in apps/brisk — superseded: shipped as `apps/focal`
 - [ ] `npm run verify:app brisk` green; TEMPLATES.md line 907 bookkept `[x]`

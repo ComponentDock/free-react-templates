@@ -478,7 +478,7 @@ convention on every template (the original has no footer).
       white text `2px 10px` padding, remove × `rgba(255,255,255,0.5)`
       left-aligned with 10px gap; Roboto 300/400 via Google Fonts
       `<link>`.
-- [ ] No ColorLib references in `apps/scythe` (provenance lives in this
+- [x] No ColorLib references in `apps/scythe` (provenance lives in this — superseded: shipped as `apps/picktag`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react (an `X`

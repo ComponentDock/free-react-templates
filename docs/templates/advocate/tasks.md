@@ -6,7 +6,7 @@
 
 ## App Scaffold
 
-- [ ] Create `apps/advocate/` with Vite + React 19 + TypeScript + Tailwind CSS 4
+- [x] Create `apps/advocate/` with Vite + React 19 + TypeScript + Tailwind CSS 4 — superseded: shipped as `apps/lawguard`
 - [ ] Configure `vite.config.ts` with `injectUiSource()` helper (copy pattern from existing apps)
 - [ ] Set `package.json` name to `@free-react-templates/advocate`
 - [ ] Add `public/CNAME` with `advocate.free.componentdock.com`
@@ -99,7 +99,7 @@
 
 - [ ] `App.tsx` imports and composes all sections in correct order
 - [ ] `main.tsx` entry point
-- [ ] Verify no ColorLib references anywhere in `apps/advocate/`
+- [x] Verify no ColorLib references anywhere in `apps/advocate/` — superseded: shipped as `apps/lawguard`
 
 ## Tests (Vitest + Testing Library)
 

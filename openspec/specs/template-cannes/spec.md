@@ -475,7 +475,7 @@ The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/cannes` exists; package `@free-react-templates/cannes`;
+- [x] `apps/cannes` exists; package `@free-react-templates/cannes`; — superseded: shipped as `apps/slidespot`
       `public/CNAME` = `cannes.free.componentdock.com`; `homepage` =
       `https://cannes.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (weights 300, 400, 500, 700);

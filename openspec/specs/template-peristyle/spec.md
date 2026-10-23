@@ -441,7 +441,7 @@ The system SHALL set a descriptive document title.
       **4px**, border none; input focus ring `rgba(237,81,7,0.25)` + border
       `#fba278`; left image column **50% width** (`object-cover`); dialog
       **max-width 800px** (`modal-lg` — do NOT fall back to 500px).
-- [ ] No ColorLib references in `apps/peristyle` (provenance lives in this
+- [x] No ColorLib references in `apps/peristyle` (provenance lives in this — superseded: shipped as `apps/modalpoint`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Brands/assets: the left cover photo is replaced with a picsum

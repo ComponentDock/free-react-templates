@@ -331,7 +331,7 @@ The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/faraway` exists; package `@free-react-templates/faraway`;
+- [x] `apps/faraway` exists; package `@free-react-templates/faraway`; — superseded: shipped as `apps/lattice`
       `public/CNAME` = `faraway.free.componentdock.com`; `homepage` =
       `https://faraway.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (weights 300, 400, 500, 700);

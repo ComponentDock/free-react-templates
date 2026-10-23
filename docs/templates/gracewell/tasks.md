@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup
-- [ ] Create `apps/gracewell/` from simplest existing app template
+- [x] Create `apps/gracewell/` from simplest existing app template — superseded: shipped as `apps/warmheart`
 - [ ] Rename package to `@free-react-templates/gracewell`
 - [ ] Set up `public/CNAME` with `gracewell.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://gracewell.free.componentdock.com`

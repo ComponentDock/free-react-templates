@@ -79,7 +79,7 @@ The preview is a single-page photographer portfolio with this section order:
 ## Implementation task outline
 
 ### Phase 1: Project setup
-- [ ] Create `apps/frameday/` (copy simplest existing photographer app)
+- [x] Create `apps/frameday/` (copy simplest existing photographer app) — superseded: shipped as `apps/photomuse`
 - [ ] Rename package to `@free-react-templates/frameday`
 - [ ] Set up `public/CNAME` as `frameday.free.componentdock.com`
 - [ ] Set `homepage` in package.json

@@ -46,7 +46,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create `apps/darkpick/` from simplest existing app (copy + rename)
+- [x] Create `apps/darkpick/` from simplest existing app (copy + rename) — superseded: shipped as `apps/thresh`
 - [ ] Set up Lato font (Google Fonts link in index.html)
 - [ ] Set up Font Awesome 4.7 (CDN link in index.html)
 - [ ] Create dark page background (#111)

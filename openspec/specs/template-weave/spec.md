@@ -270,7 +270,7 @@ Support links, a newsletter form and a copyright bar.
 
 ## Verification checklist
 
-- [ ] App `apps/weave` (package `@free-react-templates/weave`), 100%
+- [x] App `apps/weave` (package `@free-react-templates/weave`), 100% — superseded: shipped as `apps/spruce`
       vitest coverage, per-app gate green (`scripts/verify-app.sh weave`)
 - [ ] Section order 1:1 with the source: dark announcement strip + sticky
       white header (logo, nav, Get Free Quote) → split hero (headline +

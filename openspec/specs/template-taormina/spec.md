@@ -378,7 +378,7 @@ https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] `apps/taormina` exists; package `@free-react-templates/taormina`;
+- [x] `apps/taormina` exists; package `@free-react-templates/taormina`; — superseded: shipped as `apps/lenslide`
       `public/CNAME` = `taormina.free.componentdock.com`; `homepage` =
       `https://taormina.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400); no

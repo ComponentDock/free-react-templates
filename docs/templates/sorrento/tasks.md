@@ -1,4 +1,8 @@
 # Sorrento (ColorLib Carousel 08) — Tasks & Design Notes
+<!-- prep-status: shipped-as=swipe -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-08` design this prep describes shipped
+> as `apps/swipe` (<https://swipe.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-sorrento`.
@@ -116,7 +120,7 @@ border: 1px solid #dbcc8f` (GOLD-FILLED — differs from Positano's
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/sorrento` (copy simplest existing app; package
+- [x] Scaffold `apps/sorrento` (copy simplest existing app; package — superseded: shipped as `apps/swipe`
       `@free-react-templates/sorrento`; `public/CNAME` =
       `sorrento.free.componentdock.com`; homepage
       `https://sorrento.free.componentdock.com`); root `npm install` +

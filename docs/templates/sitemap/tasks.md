@@ -151,7 +151,7 @@ color: #000; font-weight: 400`; **hover → `#e83e8c`** (Bootstrap 4
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/sitemap` (copy simplest existing app; package
+- [x] Scaffold `apps/sitemap` (copy simplest existing app; package — superseded: shipped as `apps/droptile`
       `@free-react-templates/sitemap`; `public/CNAME` =
       `sitemap.free.componentdock.com`; homepage =
       `https://sitemap.free.componentdock.com`); register the workspace in

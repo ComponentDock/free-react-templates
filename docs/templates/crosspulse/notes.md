@@ -36,7 +36,7 @@
 ## Implementation Tasks
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/crosspulse/` (copy from simplest existing app, e.g. `apps/sprintly`)
+- [x] Create `apps/crosspulse/` (copy from simplest existing app, e.g. `apps/sprintly`) — superseded: shipped as `apps/ironpulse`
 - [ ] Update package.json → `@free-react-templates/crosspulse`
 - [ ] Set `public/CNAME` to `crosspulse.free.componentdock.com`
 - [ ] Set `homepage` to `https://crosspulse.free.componentdock.com`

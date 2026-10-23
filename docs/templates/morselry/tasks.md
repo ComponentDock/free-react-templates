@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Setup
-- [ ] Create apps/morselry (copy simplest existing app, rename package)
+- [x] Create apps/morselry (copy simplest existing app, rename package) — superseded: shipped as `apps/corkage`
 - [ ] Configure vite.config.ts with injectUiSource()
 - [ ] Set up index.html with Google Fonts (Poppins + Philosopher)
 - [ ] Configure Tailwind theme tokens in index.css (#DB9A64 brand, #001D38 dark)

@@ -550,7 +550,7 @@ The system SHALL include the required attribution footer.
 - [ ] Live behavior: click-pick closes dropdown; 5 picks then 6th silently
       blocked (input still usable); × removes chip and frees a slot; filter
       typing; arrow+Enter pick; Escape/outside close; widgets independent.
-- [ ] No ColorLib strings anywhere under `apps/sift` (source/provenance
+- [x] No ColorLib strings anywhere under `apps/sift` (source/provenance — superseded: shipped as `apps/optflow`
       lives only in this spec + TEMPLATES.md + the PR). Footer links
       https://www.componentdock.com/.
 - [ ] `public/CNAME` = `sift.free.componentdock.com`; `"homepage"` =

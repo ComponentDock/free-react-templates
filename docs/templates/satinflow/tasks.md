@@ -98,7 +98,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create app scaffold: `apps/satinflow/` (copy simplest existing app, rename package)
+- [x] Create app scaffold: `apps/satinflow/` (copy simplest existing app, rename package) — superseded: shipped as `apps/kael`
 - [ ] Configure vite.config.ts with injectUiSource()
 - [ ] Set up index.css with Tailwind entry + theme tokens (brand gradient, fonts)
 - [ ] Add Google Fonts link (Rubik + Roboto) to index.html

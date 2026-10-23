@@ -69,7 +69,7 @@ src/
 
 ## Implementation Tasks
 
-- [ ] Create `apps/signcraft/` from a minimal existing app (copy, rename package)
+- [x] Create `apps/signcraft/` from a minimal existing app (copy, rename package) — superseded: shipped as `apps/regvibe`
 - [ ] Set up `package.json` with `@free-react-templates/signcraft`
 - [ ] Create `vite.config.ts` with `injectUiSource()`
 - [ ] Create `index.html` with Open Sans Google Fonts link

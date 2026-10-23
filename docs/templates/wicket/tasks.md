@@ -1,4 +1,8 @@
 # Wicket (ColorLib Modal 19) — Tasks & Design Notes
+<!-- prep-status: shipped-as=splitmodal -->
+> **SHIPPED-UNDER** — the ColorLib `modal-19` design this prep describes shipped
+> as `apps/splitmodal` (<https://splitmodal.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Wicket** (NEW name —
 > the ColorLib source keeps its name "Modal 19"). Implementation ships on

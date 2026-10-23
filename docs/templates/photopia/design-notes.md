@@ -38,7 +38,7 @@
 
 ## Implementation Tasks
 
-- [ ] Scaffold apps/photopia from existing template (copy simplest app, rename package)
+- [x] Scaffold apps/photopia from existing template (copy simplest app, rename package) — superseded: shipped as `apps/filmstock`
 - [ ] Set up index.css with Tailwind theme tokens (Josefin Sans, Roboto Mono)
 - [ ] Implement Navbar component (transparent, white text, social icons)
 - [ ] Implement PhotoCard component (grayscale → color hover, overlay)

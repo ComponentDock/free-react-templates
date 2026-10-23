@@ -151,7 +151,7 @@ pos-relative` (blog-01/02/03.jpg) + `wrap-text-blo1 p-t-35`: date
 ## Implementation tasks (for the implementer)
 
 - [ ] `npm run spec:validate` for `template-forkly` before starting
-- [ ] Scaffold `apps/forkly` (copy simplest existing app, rename package
+- [x] Scaffold `apps/forkly` (copy simplest existing app, rename package — superseded: shipped as `apps/gastronome`
       to `@free-react-templates/forkly`); register workspace
       (`npm install --package-lock-only` if needed)
 - [ ] `@theme` tokens: `--color-brand: #ec1d25`, `--color-script:

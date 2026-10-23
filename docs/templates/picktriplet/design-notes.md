@@ -73,7 +73,7 @@ src/
 
 ## Implementation tasks
 
-- [ ] Create workspace `apps/picktriplet/` with package `@free-react-templates/picktriplet`
+- [x] Create workspace `apps/picktriplet/` with package `@free-react-templates/picktriplet` — superseded: shipped as `apps/optflow`
 - [ ] Set up Tailwind with @theme tokens for 3 chip colors
 - [ ] Implement `SelectedChip` component (renders a removable pill)
 - [ ] Implement `DropdownList` component (open dropdown with search + option list)

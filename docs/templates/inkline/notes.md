@@ -107,7 +107,7 @@
 
 ## Implementation Todo
 
-- [ ] Set up apps/inkline workspace (copy from simplest existing app)
+- [x] Set up apps/inkline workspace (copy from simplest existing app) — superseded: shipped as `apps/azureline`
 - [ ] Create index.css with Tailwind @theme tokens
 - [ ] Implement Header component (Navbar with hamburger toggle)
 - [ ] Implement Hero component (fullscreen bg, heading)

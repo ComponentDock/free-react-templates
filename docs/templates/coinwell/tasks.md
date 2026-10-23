@@ -11,7 +11,7 @@ Category: Cryptocurrency / Fintech
 ## Task List
 
 ### 1. Scaffold
-- [ ] Create `apps/coinwell/` from simplest existing app template
+- [x] Create `apps/coinwell/` from simplest existing app template — superseded: shipped as `apps/ledgerly`
 - [ ] Rename package to `@free-react-templates/coinwell`
 - [ ] Set `public/CNAME` to `coinwell.free.componentdock.com`
 - [ ] Set `homepage` in package.json to `https://coinwell.free.componentdock.com`
@@ -52,7 +52,7 @@ Category: Cryptocurrency / Fintech
 
 ### 5. Verification
 - [ ] Run `npm run verify:app coinwell` (typecheck + lint + 100% coverage + build)
-- [ ] Verify no ColorLib references in `apps/coinwell/`
+- [x] Verify no ColorLib references in `apps/coinwell/` — superseded: shipped as `apps/ledgerly`
 - [ ] Verify footer links to https://www.componentdock.com/
 
 ## Design Notes

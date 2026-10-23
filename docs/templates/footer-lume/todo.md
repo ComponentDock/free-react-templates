@@ -11,7 +11,7 @@
 ## Task Breakdown
 
 ### 1. Scaffold
-- [ ] Create `apps/footer-lume/` by copying the simplest existing footer app (e.g., footerwell)
+- [x] Create `apps/footer-lume/` by copying the simplest existing footer app (e.g., footerwell) — superseded: shipped as `apps/footerlume`
 - [ ] Rename package to `@free-react-templates/footer-lume`
 - [ ] Update `vite.config.ts` to register `injectUiSource()`
 - [ ] Update `public/CNAME` to `footer-lume.free.componentdock.com`

@@ -204,7 +204,7 @@ Dock (the reference demo has no footer — this is a repo convention).
 
 ## Verification checklist
 
-- [ ] `apps/popmenu` exists with package name `@free-react-templates/popmenu`
+- [x] `apps/popmenu` exists with package name `@free-react-templates/popmenu` — superseded: shipped as `apps/menubox`
 - [ ] `vite.config.ts` registers `injectUiSource()` (see docs/conventions.md)
 - [ ] Brand mint `#a3f7bf` / hover `#74f39e` defined in `@theme`; Poppins
       Google Font `<link>` in index.html

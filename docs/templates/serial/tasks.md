@@ -108,7 +108,7 @@
 
 ## Task outline (implementer)
 
-- [ ] Scaffold app: copy simplest existing app → `apps/serial`, package
+- [x] Scaffold app: copy simplest existing app → `apps/serial`, package — superseded: shipped as `apps/newsprint`
       `@free-react-templates/serial`
 - [ ] `@theme` tokens: brand #f79918, secondary #10495c, body #212529,
       light #f8f9fa, footer #888, dark-mode palette

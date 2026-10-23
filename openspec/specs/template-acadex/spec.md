@@ -1,4 +1,9 @@
 # Template: Acadex (Education — Online Courses Platform)
+<!-- prep-status: shipped-as=classroom -->
+> **SHIPPED-UNDER** — the ColorLib `oneschool` design this prep describes already
+> ships as `apps/classroom` (<https://classroom.free.componentdock.com>).
+> Do not scaffold `apps/acadex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-classroom/spec.md`.
 
 ## Purpose
 
@@ -214,5 +219,5 @@ teacher profiles, testimonials, and a contact form.
 - [ ] Placeholder images from picsum.photos
 - [ ] No ColorLib references in app code
 - [ ] Footer links to Component Dock
-- [ ] `apps/acadex/public/CNAME` = `acadex.free.componentdock.com`
-- [ ] `apps/acadex/package.json` homepage = `https://acadex.free.componentdock.com`
+- [x] `apps/acadex/public/CNAME` = `acadex.free.componentdock.com` — superseded: shipped as `apps/classroom`
+- [x] `apps/acadex/package.json` homepage = `https://acadex.free.componentdock.com` — superseded: shipped as `apps/classroom`

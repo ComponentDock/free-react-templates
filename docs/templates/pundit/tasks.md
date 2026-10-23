@@ -10,7 +10,7 @@ New name: `pundit`
 ## Task List
 
 ### Phase 1: Scaffolding
-- [ ] Create `apps/pundit/` from simplest existing app (copy, rename package to `@free-react-templates/pundit`)
+- [x] Create `apps/pundit/` from simplest existing app (copy, rename package to `@free-react-templates/pundit`) — superseded: shipped as `apps/civicpulse`
 - [ ] Set `public/CNAME` to `pundit.free.componentdock.com`
 - [ ] Set `package.json` homepage to `https://pundit.free.componentdock.com`
 - [ ] Run `npm install` at repo root to register workspace in lockfile

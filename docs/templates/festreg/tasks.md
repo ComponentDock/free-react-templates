@@ -28,7 +28,7 @@ Category: Concert/Event Registration Form
 
 ## Implementation tasks
 
-- [ ] Set up app scaffold (`apps/festreg`, package `@free-react-templates/festreg`)
+- [x] Set up app scaffold (`apps/festreg`, package `@free-react-templates/festreg`) — superseded: shipped as `apps/groove`
 - [ ] Add Nunito font link to `index.html` (weights 400, 700)
 - [ ] Create `Festreg.tsx` — page wrapper with blue background, centered card
 - [ ] Create `RegistrationForm.tsx` — heading, two-column input grid, submit button

@@ -18,7 +18,7 @@
 ## Implementation todo
 
 ### Phase 1 — Scaffold
-- [ ] Copy simplest existing app (e.g. `apps/aurora`) to `apps/gustable`
+- [x] Copy simplest existing app (e.g. `apps/aurora`) to `apps/gustable` — superseded: shipped as `apps/tastory`
 - [ ] Rename package to `@free-react-templates/gustable`
 - [ ] Update `vite.config.ts`, `package.json`, `public/CNAME`
 - [ ] Run `npm install` at repo root to register workspace

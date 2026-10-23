@@ -35,7 +35,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create `apps/toolcraft/` (copy from simplest existing app)
+- [x] Create `apps/toolcraft/` (copy from simplest existing app) — superseded: shipped as `apps/fixero`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `index.html` with Google Fonts preconnect + Work Sans link
 - [ ] Create `src/index.css` with Tailwind entry + theme tokens

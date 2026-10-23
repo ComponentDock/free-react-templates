@@ -52,7 +52,7 @@ Preview: https://preview.colorlib.com/theme/buri/
 
 ## Tasks
 
-- [ ] Create `apps/craver/` workspace (copy minimal app, rename package)
+- [x] Create `apps/craver/` workspace (copy minimal app, rename package) — superseded: shipped as `apps/ravida`
 - [ ] Set up `src/index.css` with Tailwind + custom theme tokens (colors, fonts)
 - [ ] Implement Navbar component (transparent, sticky, hamburger)
 - [ ] Implement Hero component (bg image, text overlay, CTA)

@@ -141,7 +141,7 @@
 
 ## Tasks
 
-- [ ] Implementer: copy the simplest existing app → `apps/skillet`
+- [x] Implementer: copy the simplest existing app → `apps/skillet` — superseded: shipped as `apps/savory`
       (package `@free-react-templates/skillet`), wire the Tailwind v4
       theme tokens per the spec.
 - [ ] Implementer: write tests (red) per spec scenarios, then

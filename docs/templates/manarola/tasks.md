@@ -121,7 +121,7 @@ left: 0; right: 0; border-bottom: 1px solid #000`) draws a black underline
 
 ## Implementation tasks
 
-- [ ] Copy the simplest existing app → `apps/manarola`; rename package to
+- [x] Copy the simplest existing app → `apps/manarola`; rename package to — superseded: shipped as `apps/carousel-glide`
       `@free-react-templates/manarola`
 - [ ] `public/CNAME` = `manarola.free.componentdock.com`; `"homepage"` =
       `https://manarola.free.componentdock.com` in package.json

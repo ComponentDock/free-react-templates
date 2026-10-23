@@ -366,7 +366,7 @@ monorepo convention (replaces the source demo's absence of any footer).
 
 ## Verification checklist
 
-- [ ] `apps/equinox` exists; package `@free-react-templates/equinox`;
+- [x] `apps/equinox` exists; package `@free-react-templates/equinox`; — superseded: shipped as `apps/caldesk`
       `public/CNAME` = `equinox.free.componentdock.com`; `homepage` =
       `https://equinox.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto; no font/image/icon assets

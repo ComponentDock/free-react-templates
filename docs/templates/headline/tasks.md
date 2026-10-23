@@ -69,7 +69,7 @@
 
 ## Tasks (implementer order)
 
-- [ ] Copy simplest existing app (e.g. apps/stratos) → `apps/headline`,
+- [x] Copy simplest existing app (e.g. apps/stratos) → `apps/headline`, — superseded: shipped as `apps/atlas`
       rename package to `@free-react-templates/headline` (register in
       workspace + lockfile)
 - [ ] `@theme` tokens: headline blue scale + neutrals + fonts

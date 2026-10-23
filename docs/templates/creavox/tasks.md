@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup
-- [ ] Create `apps/creavox/` from an existing simple app (e.g. `apps/abjure/`)
+- [x] Create `apps/creavox/` from an existing simple app (e.g. `apps/abjure/`) — superseded: shipped as `apps/boxpulse`
 - [ ] Rename package to `@free-react-templates/creavox`
 - [ ] Update `public/CNAME` to `creavox.free.componentdock.com`
 - [ ] Update `vite.config.ts` with `injectUiSource()`

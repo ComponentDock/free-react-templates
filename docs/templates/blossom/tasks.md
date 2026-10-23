@@ -67,7 +67,7 @@ on lavender bg. 5-column Instagram strip. Multi-column footer.
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/blossom/` from simplest existing app; rename package to `@free-react-templates/blossom`
+- [x] Scaffold `apps/blossom/` from simplest existing app; rename package to `@free-react-templates/blossom` — superseded: shipped as `apps/bloomfield`
 - [ ] Add Google Fonts link in index.html for Quicksand + Libre Baskerville
 - [ ] Add `@theme` block in index.css with primary pink #f45d96, near-black #111111, body text #444444, muted #888888, lavender #f7f5fa
 - [ ] Create Navbar component: logo left, nav links right, search/heart/bag icons

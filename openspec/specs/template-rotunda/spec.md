@@ -343,7 +343,7 @@ The system SHALL set a descriptive document title.
       `0 10px 50px -10px rgba(0,0,0,0.9)`, backdrop `#000`; **Roboto** via
       Google Fonts `<link>`; dialog radius **7px (round)**, buttons radius
       **4px**, border none; h3 "exclusive offer" 22px black, close × black.
-- [ ] No ColorLib references in `apps/rotunda` (provenance lives in this spec,
+- [x] No ColorLib references in `apps/rotunda` (provenance lives in this spec, — superseded: shipped as `apps/modalrosa`
       TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Brands/assets: the Instagram logo trademark is replaced with a NEUTRAL

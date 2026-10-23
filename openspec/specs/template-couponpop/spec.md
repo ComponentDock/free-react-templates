@@ -1,4 +1,9 @@
 # Template: CouponPop (Bootstrap Modal)
+<!-- prep-status: shipped-as=couponmodal -->
+> **SHIPPED-UNDER** — the ColorLib `modal-04` design this prep describes already
+> ships as `apps/couponmodal` (<https://couponmodal.free.componentdock.com>).
+> Do not scaffold `apps/couponpop`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-couponmodal/spec.md`.
 
 ## Purpose
 

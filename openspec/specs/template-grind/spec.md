@@ -471,7 +471,7 @@ The system SHALL render all sections in the source's 1:1 order.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec.
-- [ ] App folder `apps/grind`, package `@free-react-templates/grind`; NO
+- [x] App folder `apps/grind`, package `@free-react-templates/grind`; NO — superseded: shipped as `apps/sculpt`
       reference to ColorLib / "flawless" source name in any app file
       (provenance lives only in this spec, TEMPLATES.md, and the PR).
 - [ ] Footer links https://www.componentdock.com/ ("More templates at

@@ -315,7 +315,7 @@ The system SHALL set a descriptive document title.
       PILL**; modal max-width **600px**, ROUNDED corners (0.3rem); header
       230px; body margin-top **-180px**; icon 200×200 circle; modal shadow
       `0 10px 34px -15px rgba(0,0,0,0.24)`; backdrop `rgba(0,0,0,0.5)`.
-- [ ] No ColorLib references in `apps/narthex` (provenance lives in this
+- [x] No ColorLib references in `apps/narthex` (provenance lives in this — superseded: shipped as `apps/relay`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Images: NO background photos in this template — the only graphic is

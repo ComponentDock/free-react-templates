@@ -1,4 +1,9 @@
 # Template: CarouselCraft (carousel-15)
+<!-- prep-status: shipped-as=carouseldrift -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-15` design this prep describes already
+> ships as `apps/carouseldrift` (<https://carouseldrift.free.componentdock.com>).
+> Do not scaffold `apps/carouselcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carouseldrift/spec.md`.
 
 ## Purpose
 

@@ -69,7 +69,7 @@
 
 ## Tasks (implementation order)
 
-- [ ] Scaffold app: copy simplest existing app → `apps/stet`, package
+- [x] Scaffold app: copy simplest existing app → `apps/stet`, package — superseded: shipped as `apps/parchment`
       `@free-react-templates/stet`, register in root package.json
       workspaces, index.html (title "Stet — Blog Template", Google Fonts
       links for Nunito Sans + Libre Baskerville, favicon)

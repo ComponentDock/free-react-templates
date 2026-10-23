@@ -12,7 +12,7 @@
 ## Implementation order
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/flexzone/` (copy simplest existing app, rename package to `@free-react-templates/flexzone`)
+- [x] Create `apps/flexzone/` (copy simplest existing app, rename package to `@free-react-templates/flexzone`) — superseded: shipped as `apps/ironpeak`
 - [ ] Set up `public/CNAME` → `flexzone.free.componentdock.com`
 - [ ] Set `homepage` in package.json
 - [ ] Register `injectUiSource()` in `vite.config.ts`

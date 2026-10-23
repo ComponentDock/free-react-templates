@@ -120,7 +120,7 @@ Background:
 - [ ] `npm run verify:app dimbox` passes (typecheck + lint + knip + fallow + test:coverage + build)
 - [ ] Spec folder exists: `openspec/specs/template-dimbox/spec.md`
 - [ ] Docs folder exists: `docs/templates/dimbox/tasks.md`
-- [ ] No references to `colorlib.com` or `preview.colorlib.com` in `apps/dimbox/`
+- [x] No references to `colorlib.com` or `preview.colorlib.com` in `apps/dimbox/` — superseded: shipped as `apps/relay`
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] `public/CNAME` contains `dimbox.free.componentdock.com`
 - [ ] `package.json` homepage is `https://dimbox.free.componentdock.com`

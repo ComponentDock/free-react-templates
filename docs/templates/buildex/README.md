@@ -14,7 +14,7 @@
 
 ### Phase 1: Scaffold
 
-- [ ] Copy simplest existing app (e.g. apps/aurora) as apps/buildex
+- [x] Copy simplest existing app (e.g. apps/aurora) as apps/buildex — superseded: shipped as `apps/structa`
 - [ ] Rename package to @free-react-templates/buildex
 - [ ] Update vite.config.ts with injectUiSource()
 - [ ] Update index.html: Google Fonts link for Raleway

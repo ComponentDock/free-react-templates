@@ -104,7 +104,7 @@
 
 ## Implementation tasks (TDD, in order)
 
-- [ ] Scaffold: copy simplest existing app → `apps/lotly`, rename package
+- [x] Scaffold: copy simplest existing app → `apps/lotly`, rename package — superseded: shipped as `apps/quarters`
       `@free-react-templates/lotly`, register workspace
       (`npm install --package-lock-only`), `public/CNAME` =
       `lotly.free.componentdock.com`, homepage

@@ -98,7 +98,7 @@ New name: `quorum` (apps/quorum, @free-react-templates/quorum)
 
 ## Implementation Tasks
 
-- [ ] Create apps/quorum/ scaffold (copy simplest existing app, rename package)
+- [x] Create apps/quorum/ scaffold (copy simplest existing app, rename package) — superseded: shipped as `apps/maxim`
 - [ ] Set up index.html with Nunito Sans Google Font link
 - [ ] Configure vite.config.ts with injectUiSource()
 - [ ] Set up index.css with Tailwind + theme tokens (#6e5773 brand color)

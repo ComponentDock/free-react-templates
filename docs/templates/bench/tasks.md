@@ -41,7 +41,7 @@ Section padding: 3em mobile / 7em desktop.
 ## Implementation tasks
 
 ### Phase 1: Scaffold
-- [ ] Copy simplest existing app as base (e.g. `apps/brief`)
+- [x] Copy simplest existing app as base (e.g. `apps/brief`) — superseded: shipped as `apps/jurist`
 - [ ] Rename package to `@free-react-templates/bench`
 - [ ] Set `public/CNAME` → `bench.free.componentdock.com`
 - [ ] Set `homepage` in package.json

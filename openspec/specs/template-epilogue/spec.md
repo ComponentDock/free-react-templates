@@ -263,5 +263,5 @@ keyboard-operable interactivity.
       768px; menu links stack block below 768px
 - [ ] Fonts: Roboto + Poppins + Source Serif Pro via Google Fonts `<link>` in
       `index.html`
-- [ ] NO ColorLib reference anywhere in `apps/epilogue` (provenance lives only
+- [x] NO ColorLib reference anywhere in `apps/epilogue` (provenance lives only — superseded: shipped as `apps/pedestal`
       here + TEMPLATES.md + PR)

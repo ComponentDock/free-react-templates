@@ -360,7 +360,7 @@ The system SHALL set a descriptive document title.
       **Roboto** via Google Fonts `<link>`; dialog radius **7px (round)**,
       buttons radius **4px**, border none; heading "60% off coupon" 22px
       black; left image column ~200px (`object-cover`).
-- [ ] No ColorLib references in `apps/concourse` (provenance lives in this
+- [x] No ColorLib references in `apps/concourse` (provenance lives in this — superseded: shipped as `apps/modalbox`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Brands/assets: the left cover photo is replaced with a picsum

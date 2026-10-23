@@ -70,7 +70,7 @@ New name: craftcanvas
 
 ## Tasks
 
-- [ ] Create apps/craftcanvas/ scaffold (copy simplest existing app)
+- [x] Create apps/craftcanvas/ scaffold (copy simplest existing app) — superseded: shipped as `apps/atelier`
 - [ ] Set up index.css with @theme tokens (#1264fa brand, etc.)
 - [ ] Load Montserrat from Google Fonts in index.html
 - [ ] Implement Navbar component

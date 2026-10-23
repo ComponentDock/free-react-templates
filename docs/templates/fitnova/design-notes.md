@@ -108,7 +108,7 @@
 
 ## Implementation Tasks
 
-- [ ] Scaffold apps/fitnova from an existing simple app template
+- [x] Scaffold apps/fitnova from an existing simple app template — superseded: shipped as `apps/aurae`
 - [ ] Set up index.html with Google Fonts (Playfair Display + Open Sans)
 - [ ] Create index.css with Tailwind @theme tokens matching design tokens
 - [ ] Implement Header component (top bar + nav, responsive)

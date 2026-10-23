@@ -493,7 +493,7 @@ monorepo convention (replaces the source demo's absence of any footer).
 
 ## Verification checklist
 
-- [ ] `apps/interval` exists; package `@free-react-templates/interval`;
+- [x] `apps/interval` exists; package `@free-react-templates/interval`; — superseded: shipped as `apps/calstack`
       `public/CNAME` = `interval.free.componentdock.com`; `homepage` =
       `https://interval.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto; no font/image/icon assets

@@ -56,7 +56,7 @@
 
 ## Tasks
 
-- [ ] Create apps/searchnook/ from a simple app template
+- [x] Create apps/searchnook/ from a simple app template — superseded: shipped as `apps/seekspot`
 - [ ] Write SearchBar component (expandable animation)
 - [ ] Write Footer component
 - [ ] Write App.tsx composing sections

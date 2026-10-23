@@ -97,7 +97,7 @@
 
 ## TODO
 
-- [ ] Create `apps/bracify/` from template starter
+- [x] Create `apps/bracify/` from template starter — superseded: shipped as `apps/smilewell`
 - [ ] Set up `package.json` with `@free-react-templates/bracify`
 - [ ] Write `index.html` with Nunito Google Fonts link
 - [ ] Write `src/index.css` with Tailwind theme tokens

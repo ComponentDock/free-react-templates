@@ -139,7 +139,7 @@ alt="Image"></a>` + `<h3><a href="#">Title</a></h3>` — image wrapped in a
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/portofino` (copy simplest existing app; package
+- [x] Scaffold `apps/portofino` (copy simplest existing app; package — superseded: shipped as `apps/slidesync`
       `@free-react-templates/portofino`; `public/CNAME` =
       `portofino.free.componentdock.com`; homepage
       `https://portofino.free.componentdock.com`); root `npm install` +

@@ -214,5 +214,5 @@ Extracted from the live preview DOM and `css/style.css` (1,058 lines):
 - [ ] Typography: Karla body + Playfair Display headings (Google Fonts)
 - [ ] Brand color: #F9CE00 (golden yellow) on active nav, search button, subscribe button
 - [ ] Responsive: stacked layout below 768px, hamburger visible, all sections responsive
-- [ ] No ColorLib references anywhere in apps/brisk
+- [x] No ColorLib references anywhere in apps/brisk — superseded: shipped as `apps/focal`
 - [ ] `npm run verify:app brisk` passes; 100% test coverage

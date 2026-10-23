@@ -91,7 +91,7 @@
 
 ## Tasks
 
-- [ ] Create `apps/popslide/` from template scaffold
+- [x] Create `apps/popslide/` from template scaffold — superseded: shipped as `apps/bellpush`
 - [ ] Configure package.json, vite.config.ts, CNAME
 - [ ] Add Poppins Google Font to index.html
 - [ ] Build PageSection component with launch button

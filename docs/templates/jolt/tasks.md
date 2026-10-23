@@ -149,7 +149,7 @@ solid transparent`, `border-radius: 30px`, white, `padding: 14px 30px`;
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/jolt` (copy simplest existing app; package
+- [x] Scaffold `apps/jolt` (copy simplest existing app; package — superseded: shipped as `apps/momentum`
       `@free-react-templates/jolt`; `public/CNAME` =
       `jolt.free.componentdock.com`; homepage =
       `https://jolt.free.componentdock.com`); register the workspace in

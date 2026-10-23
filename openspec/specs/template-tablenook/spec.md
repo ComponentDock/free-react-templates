@@ -246,7 +246,7 @@ The wizard SHALL be responsive on mobile devices.
 
 ## Verification checklist
 
-- [ ] App renders in `apps/tablenook/` with package name `@free-react-templates/tablenook`
+- [x] App renders in `apps/tablenook/` with package name `@free-react-templates/tablenook` — superseded: shipped as `apps/platter`
 - [ ] `vite.config.ts` includes `injectUiSource()`
 - [ ] Split-screen layout: image left, dark form right
 - [ ] Step 1: "Book a Table" with People, Date, Time fields

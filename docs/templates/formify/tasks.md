@@ -80,7 +80,7 @@
 
 ## Tasks
 
-- [ ] Set up `apps/formify` workspace (copy simplest app, rename package)
+- [x] Set up `apps/formify` workspace (copy simplest app, rename package) — superseded: shipped as `apps/formvolt`
 - [ ] Create `src/App.tsx` composing Formify page
 - [ ] Implement `FormCard.tsx` with gradient background + heading
 - [ ] Implement `FormToggle.tsx` radio toggle

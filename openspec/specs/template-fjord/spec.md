@@ -357,7 +357,7 @@ The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/fjord` exists; package `@free-react-templates/fjord`;
+- [x] `apps/fjord` exists; package `@free-react-templates/fjord`; — superseded: shipped as `apps/carouselhub`
       `public/CNAME` = `fjord.free.componentdock.com`; `homepage` =
       `https://fjord.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (300, 400, 500, 700) AND

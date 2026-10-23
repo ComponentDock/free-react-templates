@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Scaffold
-- [ ] Create `apps/platewell/` (copy simplest existing app, rename package)
+- [x] Create `apps/platewell/` (copy simplest existing app, rename package) — superseded: shipped as `apps/tastory`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set `public/CNAME` → `platewell.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` → `https://platewell.free.componentdock.com`

@@ -59,7 +59,7 @@
 
 - [ ] Write `openspec/specs/template-attorix/spec.md` (Gherkin requirements
       + scenarios reflecting the REAL sections above). DONE (prepped).
-- [ ] Create `apps/attorix` (copy the simplest existing app, rename package
+- [x] Create `apps/attorix` (copy the simplest existing app, rename package — superseded: shipped as `apps/advocat`
       to `@free-react-templates/attorix`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement each section top-to-bottom, matching design tokens.

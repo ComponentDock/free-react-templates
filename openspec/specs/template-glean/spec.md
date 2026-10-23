@@ -400,7 +400,7 @@ convention on every template (the original has no footer).
       checkbox border 2px `rgba(0,0,0,0.2)`, panel shadow `0 3px 22px -15px
     rgba(0,0,0,0.63)`, heading `#000` 28px; Lato 400 via Google Fonts
       `<link>`. (NOT the green `#52de97` of Multiselect 01–04.)
-- [ ] No ColorLib references in `apps/glean` (provenance lives in this
+- [x] No ColorLib references in `apps/glean` (provenance lives in this — superseded: shipped as `apps/oversample`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react

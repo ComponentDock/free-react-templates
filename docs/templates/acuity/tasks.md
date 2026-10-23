@@ -15,7 +15,7 @@ Recreation of ColorLib **Accordion 15** (`https://colorlib.com/wp/template/accor
 
 ## Task Breakdown for Implementer
 
-- [ ] Scaffold app `apps/acuity` (copy from simplest existing app, update package name to `@free-react-templates/acuity`, add `public/CNAME` with `acuity.free.componentdock.com`).
+- [x] Scaffold app `apps/acuity` (copy from simplest existing app, update package name to `@free-react-templates/acuity`, add `public/CNAME` with `acuity.free.componentdock.com`) — superseded: shipped as `apps/foldkit`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Implement design tokens in `src/index.css` (`@theme`).
 - [ ] Build components: Navbar, Hero, ProfileAccordionList, AccordionCard, Footer.

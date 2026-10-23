@@ -1,4 +1,9 @@
 # Template: Fillet (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=btnbolt -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-09` design this prep describes already
+> ships as `apps/btnbolt` (<https://btnbolt.free.componentdock.com>).
+> Do not scaffold `apps/fillet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnbolt/spec.md`.
 
 ## Purpose
 

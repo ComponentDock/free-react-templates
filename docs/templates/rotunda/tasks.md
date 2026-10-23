@@ -91,7 +91,7 @@ font-size:22px }` → **22px BLACK**; paraphrase the Instagram brand name
 
 ## Implementation tasks (on `feat/template-rotunda`)
 
-- [ ] Copy the simplest existing app (e.g. `apps/postern` or `apps/vestry`) as
+- [x] Copy the simplest existing app (e.g. `apps/postern` or `apps/vestry`) as — superseded: shipped as `apps/modalrosa`
       `apps/rotunda`; rename package to `@free-react-templates/rotunda`; set
       `public/CNAME` = `rotunda.free.componentdock.com` and `"homepage"` =
       `https://rotunda.free.componentdock.com`; add Google-Fonts Roboto link +

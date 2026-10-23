@@ -86,7 +86,7 @@
 
 ## Verification checklist
 
-- [ ] App folder created at `apps/tavola`
+- [x] App folder created at `apps/tavola` — superseded: shipped as `apps/gastronome`
 - [ ] Package name `@free-react-templates/tavola`
 - [ ] `public/CNAME` set to `tavola.free.componentdock.com`
 - [ ] Footer links `https://www.componentdock.com/` ("Component Dock")

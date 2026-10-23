@@ -83,7 +83,7 @@
 
 ## Implementation Tasks
 
-- [ ] Copy simplest existing app as scaffold (e.g. `apps/strut/`)
+- [x] Copy simplest existing app as scaffold (e.g. `apps/strut/`) — superseded: shipped as `apps/industrix`
 - [ ] Rename package to `@free-react-templates/strut`
 - [ ] Set up `index.css` with Tailwind + `@theme` tokens (Rubik font, brand colors)
 - [ ] Implement `Navbar.tsx` (two-tier sticky header)

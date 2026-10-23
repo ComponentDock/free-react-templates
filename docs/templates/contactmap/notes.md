@@ -47,7 +47,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/contactmap/` from simplest existing contact app
+- [x] Scaffold `apps/contactmap/` from simplest existing contact app — superseded: shipped as `apps/dropform`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Add Poppins font link in `index.html`
 - [ ] Install `@react-google-maps/api` (or use iframe for map background)

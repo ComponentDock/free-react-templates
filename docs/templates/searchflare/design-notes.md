@@ -1,4 +1,8 @@
 # SearchFlare — Design Notes
+<!-- prep-status: shipped-as=seekdot -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-03` design this prep describes shipped
+> as `apps/seekdot` (<https://seekdot.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

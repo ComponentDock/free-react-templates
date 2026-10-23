@@ -1,4 +1,9 @@
 # Template: Throne (Portfolio/Agency)
+<!-- prep-status: shipped-as=reign -->
+> **SHIPPED-UNDER** — the ColorLib `monarchy` design this prep describes already
+> ships as `apps/reign` (<https://reign.free.componentdock.com>).
+> Do not scaffold `apps/throne`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reign/spec.md`.
 
 ## Purpose
 
@@ -121,8 +126,8 @@ Extracted from the live preview CSS (`css/style.css`):
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for apps/throne
-- [ ] `npm run lint` passes for apps/throne
+- [x] `npm run typecheck` passes for apps/throne — superseded: shipped as `apps/reign`
+- [x] `npm run lint` passes for apps/throne — superseded: shipped as `apps/reign`
 - [ ] `npm run test:coverage` passes at 100% lines/functions/branches/statements
 - [ ] `npm run build` produces valid output
 - [ ] All sections match the original order: Navbar → Hero → Services → Portfolio → Testimonials → Blog → Clients → Footer → Copyright

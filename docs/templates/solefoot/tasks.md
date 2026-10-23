@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Setup
-- [ ] Create `apps/solefoot/` by copying simplest existing app
+- [x] Create `apps/solefoot/` by copying simplest existing app — superseded: shipped as `apps/topaz`
 - [ ] Rename package to `@free-react-templates/solefoot`
 - [ ] Create `public/CNAME` with `solefoot.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://solefoot.free.componentdock.com`

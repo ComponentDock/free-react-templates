@@ -208,7 +208,7 @@ Extracted from the live preview CSS (`style.css`) and DOM analysis.
 - [ ] `public/CNAME` contains `motorpath.free.componentdock.com`
 - [ ] `homepage` in `package.json` is `https://motorpath.free.componentdock.com`
 - [ ] Footer links to `https://www.componentdock.com/` (branded "Component Dock")
-- [ ] No ColorLib references anywhere in `apps/motorpath/`
+- [x] No ColorLib references anywhere in `apps/motorpath/` — superseded: shipped as `apps/highway`
 - [ ] All images use `https://picsum.photos/seed/motorpath-<n>/<w>/<h>` placeholders
 - [ ] Font is loaded via Google Fonts `<link>` in `index.html`
 - [ ] Icons use `lucide-react` equivalents

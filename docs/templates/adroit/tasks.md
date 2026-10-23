@@ -1,4 +1,8 @@
 # Adroit (ColorLib Saita) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pulse -->
+> **SHIPPED-UNDER** — the ColorLib `saita` design this prep describes shipped
+> as `apps/pulse` (<https://pulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Saita" — free Bootstrap 5 digital-agency website
 > template (https://colorlib.com/wp/template/saita/) under the NEW name
@@ -127,7 +131,7 @@ order-lg-last`).
 
 ## Implementation tasks (TDD, in order)
 
-- [ ] Scaffold: copy simplest existing app → `apps/adroit`, rename package
+- [x] Scaffold: copy simplest existing app → `apps/adroit`, rename package — superseded: shipped as `apps/pulse`
       `@free-react-templates/adroit`, register workspace
       (`npm install --package-lock-only`), `public/CNAME` =
       `adroit.free.componentdock.com`, homepage

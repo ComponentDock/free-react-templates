@@ -1,4 +1,8 @@
 # EduNest — Implementation Todo
+<!-- prep-status: shipped-as=classroom -->
+> **SHIPPED-UNDER** — the ColorLib `oneschool` design this prep describes shipped
+> as `apps/classroom` (<https://classroom.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib OneSchool (https://colorlib.com/wp/template/oneschool/)
 

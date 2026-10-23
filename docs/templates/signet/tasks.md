@@ -141,7 +141,7 @@
 
 ## Implementation tasks (TDD, in order)
 
-- [ ] Scaffold: copy simplest existing app → `apps/signet`, rename package
+- [x] Scaffold: copy simplest existing app → `apps/signet`, rename package — superseded: shipped as `apps/lenscape`
       `@free-react-templates/signet`, register workspace
       (`npm install --package-lock-only`), `public/CNAME` =
       `signet.free.componentdock.com`, homepage

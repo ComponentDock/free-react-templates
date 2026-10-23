@@ -92,7 +92,7 @@
 
 ## Implementation Tasks
 
-- [ ] Scaffold `apps/voyagecraft` from simplest existing app
+- [x] Scaffold `apps/voyagecraft` from simplest existing app — superseded: shipped as `apps/getaway`
 - [ ] Create `public/CNAME` with `voyagecraft.free.componentdock.com`
 - [ ] Set `homepage` in `package.json`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`

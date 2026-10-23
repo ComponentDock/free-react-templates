@@ -228,5 +228,5 @@ CTA button, and an illustration in an orange accent wrap.
       feature grid with hover effects, light footer with subscribe form.
 - [ ] Responsive at 768px: hero stacks, navbar collapses to hamburger,
       grid goes to 1-2 columns, footer stacks.
-- [ ] No ColorLib references in `apps/launchcraft/` code (comments included).
+- [x] No ColorLib references in `apps/launchcraft/` code (comments included) — superseded: shipped as `apps/thrive`.
 - [ ] Footer links to https://www.componentdock.com/ branded "Component Dock".

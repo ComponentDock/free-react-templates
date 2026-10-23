@@ -58,7 +58,7 @@
 
 ## Tasks
 
-- [ ] Create `apps/bitshot/` workspace (copy simplest existing app, rename
+- [x] Create `apps/bitshot/` workspace (copy simplest existing app, rename — superseded: shipped as `apps/lensvault`
       package to `@free-react-templates/bitshot`)
 - [ ] Create `public/CNAME` with `bitshot.free.componentdock.com`
 - [ ] Set `"homepage": "https://bitshot.free.componentdock.com"` in package.json

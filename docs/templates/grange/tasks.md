@@ -1,4 +1,8 @@
 # Grange — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=greenfield -->
+> **SHIPPED-UNDER** — the ColorLib `farmland` design this prep describes shipped
+> as `apps/greenfield` (<https://greenfield.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib Farmland (https://colorlib.com/wp/template/farmland/)
 **Preview:** https://preview.colorlib.com/theme/farmland/
@@ -114,7 +118,7 @@ Light gray:   #f8f9fa
 
 ## Implementation Tasks
 
-- [ ] Copy starter app template to `apps/grange/`
+- [x] Copy starter app template to `apps/grange/` — superseded: shipped as `apps/greenfield`
 - [ ] Rename package to `@free-react-templates/grange`
 - [ ] Set up index.html with Google Fonts (Roboto + Covered By Your Grace)
 - [ ] Create `src/index.css` with Tailwind @theme tokens for brand colors

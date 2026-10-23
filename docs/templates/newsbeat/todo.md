@@ -50,7 +50,7 @@
 
 ## Implementation Checklist
 
-- [ ] Create apps/newsbeat/ from template starter
+- [x] Create apps/newsbeat/ from template starter — superseded: shipped as `apps/soundbite`
 - [ ] Install dependencies and verify dev server
 - [ ] Implement TopBar component with social icons
 - [ ] Implement Header with site title and navigation

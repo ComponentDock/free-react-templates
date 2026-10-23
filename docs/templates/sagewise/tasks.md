@@ -1,4 +1,8 @@
 # Sagewise — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=sagewell -->
+> **SHIPPED-UNDER** — the ColorLib `wiser` design this prep describes shipped
+> as `apps/sagewell` (<https://sagewell.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 **Source:** ColorLib "Wiser" — https://colorlib.com/wp/template/wiser/
 **Preview:** https://preview.colorlib.com/theme/wiser/

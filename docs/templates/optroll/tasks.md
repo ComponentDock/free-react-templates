@@ -72,7 +72,7 @@ Optroll (App)
 
 ## Implementation Tasks
 
-- [ ] Create app scaffold: `apps/optroll/` from simplest existing app
+- [x] Create app scaffold: `apps/optroll/` from simplest existing app — superseded: shipped as `apps/picklist`
 - [ ] Rename package to `@free-react-templates/optroll`
 - [ ] Add Roboto font to `index.html` (Google Fonts)
 - [ ] Build PageLayout with centered content + #efefef background + 7rem padding

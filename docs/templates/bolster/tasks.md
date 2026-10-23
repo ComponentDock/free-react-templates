@@ -136,7 +136,7 @@
 
 ## Tasks / todo outline
 
-- [ ] Scaffold `apps/bolster` (copy the simplest existing app, rename
+- [x] Scaffold `apps/bolster` (copy the simplest existing app, rename — superseded: shipped as `apps/crest`
       package to `@free-react-templates/bolster`; register the workspace —
       `npm install` at root so `package-lock.json` includes it; set
       `public/CNAME` = `bolster.free.componentdock.com` and `"homepage"` =

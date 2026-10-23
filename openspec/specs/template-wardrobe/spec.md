@@ -176,7 +176,7 @@ The system SHALL compose all sections in a single page with a main landmark and 
 
 ## Verification checklist
 
-- [ ] `apps/wardrobe` exists with package name `@free-react-templates/wardrobe`
+- [x] `apps/wardrobe` exists with package name `@free-react-templates/wardrobe` — superseded: shipped as `apps/closet`
 - [ ] `vite.config.ts` registers `injectUiSource()` (see docs/conventions.md)
 - [ ] Font Poppins loaded via Google Fonts `<link>` in index.html
 - [ ] Brand teal `#26a69a`, white `#ffffff`, dark `#333333`, gray `#666666`, gold `#ffc107`, green badge `#4caf50` defined in `@theme`

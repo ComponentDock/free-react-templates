@@ -1,4 +1,9 @@
 # Template: Lucero (Personal Portfolio)
+<!-- prep-status: shipped-as=calypso -->
+> **SHIPPED-UNDER** — the ColorLib `calvin` design this prep describes already
+> ships as `apps/calypso` (<https://calypso.free.componentdock.com>).
+> Do not scaffold `apps/lucero`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calypso/spec.md`.
 
 ## Purpose
 

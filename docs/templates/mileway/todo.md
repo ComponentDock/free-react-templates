@@ -4,7 +4,7 @@
 > as `apps/drivego` (<https://drivego.free.componentdock.com>).
 > The unchecked items below are prep history, not outstanding work.
 
-- [ ] Create `apps/mileway/` scaffold (copy simplest existing app, rename package)
+- [x] Create `apps/mileway/` scaffold (copy simplest existing app, rename package) — superseded: shipped as `apps/drivego`
 - [ ] Install Google Fonts Roboto in `index.html`
 - [ ] Configure `@theme` tokens in `src/index.css` (primary `#0779e4`, font Roboto)
 - [ ] Build `Navbar.tsx` — transparent → solid on scroll

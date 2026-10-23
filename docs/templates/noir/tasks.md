@@ -126,7 +126,7 @@ decoration-…`); pill button "Available for freelance work" +
 
 ## Tasks (implementation checklist)
 
-- [ ] Scaffold `apps/noir` from the simplest existing app; rename package to
+- [x] Scaffold `apps/noir` from the simplest existing app; rename package to — superseded: shipped as `apps/oraxol`
       `@free-react-templates/noir`; `public/CNAME` `noir.free.componentdock.com`;
       homepage `https://noir.free.componentdock.com`; `npm install` at root
       so the lockfile registers the workspace (deploy Action runs `npm ci`)

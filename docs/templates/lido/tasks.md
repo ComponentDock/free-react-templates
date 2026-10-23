@@ -62,7 +62,7 @@ responsive: { 0: { items: 1 }, 600: { items: 2 }, 1000: { items: 3 } } })`
 
 ## Implementation tasks (for the implementer stream)
 
-- [ ] Scaffold `apps/lido` (copy the simplest existing app, rename package
+- [x] Scaffold `apps/lido` (copy the simplest existing app, rename package — superseded: shipped as `apps/carosle`
       to `@free-react-templates/lido`); `public/CNAME` =
       `lido.free.componentdock.com`; `homepage` =
       `https://lido.free.componentdock.com`; register the workspace

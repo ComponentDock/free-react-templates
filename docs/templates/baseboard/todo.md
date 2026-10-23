@@ -60,7 +60,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create apps/baseboard with standard Vite+React+Tailwind scaffold
+- [x] Create apps/baseboard with standard Vite+React+Tailwind scaffold — superseded: shipped as `apps/footwell`
 - [ ] Create src/components/CtaBanner.tsx
 - [ ] Create src/components/FooterGrid.tsx
 - [ ] Create src/components/FooterLogo.tsx

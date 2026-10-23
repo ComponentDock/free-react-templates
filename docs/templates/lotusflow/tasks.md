@@ -89,7 +89,7 @@
 - [ ] `npm run lint` — no warnings
 - [ ] `npm run build` — successful build
 - [ ] `scripts/verify-app.sh lotusflow` — full per-app gate passes
-- [ ] No ColorLib references in any `apps/lotusflow/` file
+- [x] No ColorLib references in any `apps/lotusflow/` file — superseded: shipped as `apps/pranayama`
 - [ ] Footer links to https://www.componentdock.com/
 
 ### Phase 6: Ship

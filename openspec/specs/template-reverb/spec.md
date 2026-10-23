@@ -1,4 +1,9 @@
 # Template: Reverb (Business & Agency)
+<!-- prep-status: shipped-as=loop -->
+> **SHIPPED-UNDER** — the ColorLib `repeat` design this prep describes already
+> ships as `apps/loop` (<https://loop.free.componentdock.com>).
+> Do not scaffold `apps/reverb`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loop/spec.md`.
 
 ## Purpose
 
@@ -79,7 +84,7 @@ New app name: `reverb`. Domain category: Business agency / Creative portfolio.
 
 ## Verification checklist
 
-- [ ] App folder `apps/reverb` created and registered in root `package.json` workspaces
+- [x] App folder `apps/reverb` created and registered in root `package.json` workspaces — superseded: shipped as `apps/loop`
 - [ ] TypeScript strict compilation passes without errors
 - [ ] ESLint and code checks pass cleanly
 - [ ] Vitest tests cover all sections with 100% test coverage

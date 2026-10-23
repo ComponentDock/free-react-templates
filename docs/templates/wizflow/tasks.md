@@ -65,7 +65,7 @@
 
 ## Tasks
 
-- [ ] Set up workspace: `apps/wizflow/` with package.json, vite.config.ts, index.html
+- [x] Set up workspace: `apps/wizflow/` with package.json, vite.config.ts, index.html — superseded: shipped as `apps/onboardly`
 - [ ] Install dependencies: react, react-dom, tailwindcss, vitest, testing-library
 - [ ] Create `src/index.css` with Tailwind v4 + gradient theme tokens
 - [ ] Create `src/main.tsx` entry point

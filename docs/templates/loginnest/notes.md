@@ -61,7 +61,7 @@
 
 ## Implementation Tasks
 
-- [ ] Create `apps/loginnest/` from simplest existing login app
+- [x] Create `apps/loginnest/` from simplest existing login app — superseded: shipped as `apps/loginaura`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Create `src/index.css` with Tailwind + blue gradient theme tokens
 - [ ] Build `Background.tsx` — blue overlay on cityscape

@@ -46,7 +46,7 @@
 ## Tasks
 
 - [ ] Write `openspec/specs/template-pinfit/spec.md` (Gherkin requirements + scenarios + replication findings) — DONE on main (prep).
-- [ ] Create `apps/pinfit` (copy simplest fashion app; rename package to
+- [x] Create `apps/pinfit` (copy simplest fashion app; rename package to — superseded: shipped as `apps/sartorial`
       `@free-react-templates/pinfit`).
 - [ ] TDD: tests first for Navbar, HeroSlider, Services, HistoryVideo,
       ClientsSpeech, VisitTailor, Testimonials, Footer, App composition.

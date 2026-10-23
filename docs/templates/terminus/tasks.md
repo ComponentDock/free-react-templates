@@ -95,7 +95,7 @@ letter-spacing: 1px; border-radius: 40px`.
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/terminus` (copy simplest existing app; package
+- [x] Scaffold `apps/terminus` (copy simplest existing app; package — superseded: shipped as `apps/footerwell`
       `@free-react-templates/terminus`; `public/CNAME` =
       `terminus.free.componentdock.com`; homepage =
       `https://terminus.free.componentdock.com`); register the workspace in

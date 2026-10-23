@@ -111,7 +111,7 @@ responsive: { 0: { items: 1 }, 600: { items: 1 }, 1000: { items: 1 } } })`
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/cannes` (copy simplest existing app; package
+- [x] Scaffold `apps/cannes` (copy simplest existing app; package — superseded: shipped as `apps/slidespot`
       `@free-react-templates/cannes`; `public/CNAME` =
       `cannes.free.componentdock.com`; homepage
       `https://cannes.free.componentdock.com`); root `npm install` +

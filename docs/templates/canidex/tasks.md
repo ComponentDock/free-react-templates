@@ -74,7 +74,7 @@
 
 - [x] Write `openspec/specs/template-canidex/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
-- [ ] Create `apps/canidex` (copy the section-rich landing app pattern —
+- [x] Create `apps/canidex` (copy the section-rich landing app pattern — — superseded: shipped as `apps/ember`
       Sooth or Sapphire; rename package to `@free-react-templates/canidex`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.

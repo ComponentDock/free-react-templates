@@ -126,7 +126,7 @@ Recreation of ColorLib **Auction** (`https://colorlib.com/wp/template/auction/`)
 
 ## Verification checklist
 
-- [ ] App folder created at `apps/lotwise` with valid `package.json` (`@free-react-templates/lotwise`)
+- [x] App folder created at `apps/lotwise` with valid `package.json` (`@free-react-templates/lotwise`) — superseded: shipped as `apps/bidcraft`
 - [ ] `vite.config.ts` includes `injectUiSource()` helper
 - [ ] `public/CNAME` contains `lotwise.free.componentdock.com`
 - [ ] Footer links `https://www.componentdock.com/` ("Component Dock")

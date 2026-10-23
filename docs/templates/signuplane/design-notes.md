@@ -44,7 +44,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form
 ## Task Outline
 
 ### Phase 1: Setup
-- [ ] Create apps/signuplane/ (copy simplest existing form app)
+- [x] Create apps/signuplane/ (copy simplest existing form app) — superseded: shipped as `apps/regflux`
 - [ ] Rename package to @free-react-templates/signuplane
 - [ ] Set up vite.config.ts with injectUiSource()
 - [ ] Set up index.css with Tailwind v4 entry

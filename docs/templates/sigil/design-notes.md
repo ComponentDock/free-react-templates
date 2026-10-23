@@ -68,7 +68,7 @@
 ## Implementation Tasks
 
 ### Core structure
-- [ ] Create `apps/sigil/` directory from simplest existing app
+- [x] Create `apps/sigil/` directory from simplest existing app — superseded: shipped as `apps/paygate`
 - [ ] Rename package to `@free-react-templates/sigil`
 - [ ] Update `public/CNAME` to `sigil.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://sigil.free.componentdock.com`

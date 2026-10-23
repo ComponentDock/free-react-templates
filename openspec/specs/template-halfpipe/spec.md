@@ -250,7 +250,7 @@ section treatment — the entire page is dark with white/primary text.
 
 ## Verification checklist
 
-- [ ] App folder `apps/halfpipe` created with correct package name
+- [x] App folder `apps/halfpipe` created with correct package name — superseded: shipped as `apps/cruiser`
 - [ ] `public/CNAME` contains `halfpipe.free.componentdock.com`
 - [ ] `package.json` has `"homepage": "https://halfpipe.free.componentdock.com"`
 - [ ] Google Fonts loaded: Oswald (400, 700) + Rubik (300, 400, 700)

@@ -1,4 +1,8 @@
 # AmenHouse (ColorLib Brotherlylove) — Tasks & Design Notes
+<!-- prep-status: shipped-as=fellowship -->
+> **SHIPPED-UNDER** — the ColorLib `brotherlylove` design this prep describes shipped
+> as `apps/fellowship` (<https://fellowship.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-amenhouse`. Recreation name: **AmenHouse** (NEW name —
@@ -108,7 +112,7 @@ Fetched `https://preview.colorlib.com/theme/brotherlylove/` (632 lines).
 
 ### Phase 1: Scaffold
 
-- [ ] Create `apps/amenhouse/` from simplest existing app (copy + rename)
+- [x] Create `apps/amenhouse/` from simplest existing app (copy + rename) — superseded: shipped as `apps/fellowship`
 - [ ] Rename package to `@free-react-templates/amenhouse`
 - [ ] Set up `public/CNAME` → `amenhouse.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` → `https://amenhouse.free.componentdock.com`
@@ -141,7 +145,7 @@ Fetched `https://preview.colorlib.com/theme/brotherlylove/` (632 lines).
 - [ ] Lint passes (`npx oxlint src/`)
 - [ ] Build passes (`npx vite build`)
 - [ ] Visual match: compare with screenshot and preview DOM
-- [ ] No ColorLib references in `apps/amenhouse/` code
+- [x] No ColorLib references in `apps/amenhouse/` code — superseded: shipped as `apps/fellowship`
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] Images use `picsum.photos/seed/amenhouse-<n>/<w>/<h>` placeholders
 

@@ -216,7 +216,7 @@ Dock (the reference demo has no footer — this is a repo convention).
 
 ## Verification checklist
 
-- [ ] `apps/menubar` exists with package name `@free-react-templates/menubar`
+- [x] `apps/menubar` exists with package name `@free-react-templates/menubar` — superseded: shipped as `apps/dropkit`
 - [ ] `vite.config.ts` registers `injectUiSource()` (see docs/conventions.md)
 - [ ] Brand blue `#0075f6` / hover `#005dc3` defined in `@theme`; Poppins
       Google Font `<link>` in index.html

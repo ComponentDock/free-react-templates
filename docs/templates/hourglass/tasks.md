@@ -109,7 +109,7 @@ blue-gradient accordion. Footer is light with newsletter signup.
 
 ## Implementation tasks
 
-- [ ] Create `apps/hourglass/` from a minimal starter template
+- [x] Create `apps/hourglass/` from a minimal starter template — superseded: shipped as `apps/bezel`
 - [ ] Set up `package.json` with `@free-react-templates/hourglass`
 - [ ] Set `public/CNAME` to `hourglass.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://hourglass.free.componentdock.com`

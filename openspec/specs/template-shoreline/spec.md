@@ -287,7 +287,7 @@ The system SHALL render a "Go to Top" control with a double-chevron arrow.
 
 ## Verification checklist
 
-- [ ] App `apps/shoreline` (package `@free-react-templates/shoreline`), 100%
+- [x] App `apps/shoreline` (package `@free-react-templates/shoreline`), 100% — superseded: shipped as `apps/havenshore`
       vitest coverage, per-app gate green (`scripts/verify-app.sh shoreline`)
 - [ ] Section order 1:1 with the source: preloader → transparent header
       (logo, Call Us, Book Now, off-canvas menu) → hero (photo + overlay +

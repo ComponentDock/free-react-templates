@@ -60,7 +60,7 @@
 - [ ] Write `openspec/specs/template-garnish/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/garnish` (copy the simplest app; rename package to
+- [x] Create `apps/garnish` (copy the simplest app; rename package to — superseded: shipped as `apps/brasserie`
       `@free-react-templates/garnish`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.

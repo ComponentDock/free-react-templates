@@ -32,7 +32,7 @@ sets `opacity: 1; visibility: visible` on `.search-wrap`.
 ## Implementation Tasks
 
 ### Phase 1: Setup
-- [ ] Create `apps/seeklume/` by copying the simplest existing app
+- [x] Create `apps/seeklume/` by copying the simplest existing app — superseded: shipped as `apps/searchveil`
 - [ ] Rename package to `@free-react-templates/seeklume`
 - [ ] Update `public/CNAME` to `seeklume.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://seeklume.free.componentdock.com`

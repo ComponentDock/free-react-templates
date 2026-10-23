@@ -6,7 +6,7 @@
 
 ## Phase 1: Setup & Types
 
-- [ ] Create `apps/dayscape` workspace (copy from simplest existing app like `apps/chrono`)
+- [x] Create `apps/dayscape` workspace (copy from simplest existing app like `apps/chrono`) — superseded: shipped as `apps/timely`
 - [ ] Update `package.json` name to `@free-react-templates/dayscape`
 - [ ] Update `vite.config.ts` with `injectUiSource()` and correct `homepage` / `public/CNAME`
 - [ ] Run `npm install` at repo root to register workspace in lockfile

@@ -177,7 +177,7 @@ rgba(0,0,0,0.05)`; price `.number` 60px w500 pink; sup 24px pink;
 
 ## Tasks (implementation order)
 
-- [ ] Scaffold `apps/prana` (copy simplest existing app, rename package to
+- [x] Scaffold `apps/prana` (copy simplest existing app, rename package to — superseded: shipped as `apps/shanti`
       `@free-react-templates/prana`; NOT `apps/yogalax`); `npm install` at
       root so package-lock.json registers the workspace
 - [ ] `@theme` tokens: `--color-brand: #d291bc` (pink), `--color-light:

@@ -1,4 +1,8 @@
 # Mediflow — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=medprime -->
+> **SHIPPED-UNDER** — the ColorLib `medi-2` design this prep describes shipped
+> as `apps/medprime` (<https://medprime.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - **ColorLib**: Medi 2 (https://colorlib.com/wp/template/medi-2/)

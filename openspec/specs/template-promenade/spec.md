@@ -396,7 +396,7 @@ The system SHALL set a descriptive document title.
       Google Fonts `<link>`; dialog radius **7px (round)**, buttons radius
       **4px**, border none; input focus ring `rgba(237,81,7,0.25)` + border
       `#fba278`; left image column **50% width** (`object-cover`).
-- [ ] No ColorLib references in `apps/promenade` (provenance lives in this
+- [x] No ColorLib references in `apps/promenade` (provenance lives in this — superseded: shipped as `apps/signgate`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Brands/assets: the left cover photo is replaced with a picsum

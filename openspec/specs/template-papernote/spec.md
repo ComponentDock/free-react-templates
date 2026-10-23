@@ -204,5 +204,5 @@ columns. It targets a news/media publication site.
 - [ ] Placeholder images from picsum.photos
 - [ ] No ColorLib references in app code
 - [ ] Footer links to Component Dock
-- [ ] `apps/papernote/public/CNAME` = `papernote.free.componentdock.com`
-- [ ] `apps/papernote/package.json` homepage = `https://papernote.free.componentdock.com`
+- [x] `apps/papernote/public/CNAME` = `papernote.free.componentdock.com` — superseded: shipped as `apps/broadsheet`
+- [x] `apps/papernote/package.json` homepage = `https://papernote.free.componentdock.com` — superseded: shipped as `apps/broadsheet`

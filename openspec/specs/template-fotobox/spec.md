@@ -106,7 +106,7 @@ Extracted from screenshot visual analysis:
 
 ## Verification checklist
 
-- [ ] App folder: `apps/fotobox`
+- [x] App folder: `apps/fotobox` — superseded: shipped as `apps/fotoroll`
 - [ ] Package: `@free-react-templates/fotobox`
 - [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
 - [ ] Footer links to `https://www.componentdock.com/` ("Component Dock")

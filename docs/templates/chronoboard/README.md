@@ -120,9 +120,9 @@ const calendarOptions = {
 
 ### Phase 1: Setup & Toolbar
 
-- [ ] Create `apps/chronoboard` from template (copy simplest existing app)
+- [x] Create `apps/chronoboard` from template (copy simplest existing app) — superseded: shipped as `apps/timescape`
 - [ ] `npm install` at root to register workspace
-- [ ] Add FullCalendar packages to `apps/chronoboard/package.json`
+- [x] Add FullCalendar packages to `apps/chronoboard/package.json` — superseded: shipped as `apps/timescape`
 - [ ] Add Roboto Google Font link to `index.html`
 - [ ] Define design tokens in `src/index.css` @theme
 - [ ] Write `CalendarToolbar.test.tsx` (renders month title, buttons, clicks navigate)

@@ -59,7 +59,7 @@ Selectrack (App)
 
 ## Implementation Tasks
 
-- [ ] Create app scaffold: `apps/selectrack/` from simplest existing app
+- [x] Create app scaffold: `apps/selectrack/` from simplest existing app — superseded: shipped as `apps/statelist`
 - [ ] Rename package to `@free-react-templates/selectrack`
 - [ ] Add Lato font to `index.html`
 - [ ] Build PageLayout with centered content + #f8f9fd background

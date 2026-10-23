@@ -24,7 +24,7 @@ New name: autolane
 ## Tasks
 
 ### Project setup
-- [ ] Create apps/autolane/ by copying simplest existing app
+- [x] Create apps/autolane/ by copying simplest existing app — superseded: shipped as `apps/highway`
 - [ ] Rename package to @free-react-templates/autolane
 - [ ] Set public/CNAME to autolane.free.componentdock.com
 - [ ] Set homepage to https://autolane.free.componentdock.com

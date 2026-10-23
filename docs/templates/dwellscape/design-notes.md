@@ -68,7 +68,7 @@
 
 ## Implementation Tasks
 
-- [ ] Scaffold `apps/dwellscape` from simplest existing app (e.g. `apps/abjure`)
+- [x] Scaffold `apps/dwellscape` from simplest existing app (e.g. `apps/abjure`) — superseded: shipped as `apps/dwellix`
 - [ ] Rename package to `@free-react-templates/dwellscape`
 - [ ] Create `public/CNAME` with `dwellscape.free.componentdock.com`
 - [ ] Add Lato font via Google Fonts `<link>` in `index.html`

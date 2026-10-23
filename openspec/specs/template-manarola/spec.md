@@ -369,7 +369,7 @@ https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] `apps/manarola` exists; package `@free-react-templates/manarola`;
+- [x] `apps/manarola` exists; package `@free-react-templates/manarola`; — superseded: shipped as `apps/carousel-glide`
       `public/CNAME` = `manarola.free.componentdock.com`; `homepage` =
       `https://manarola.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (300/400/500) AND Playfair

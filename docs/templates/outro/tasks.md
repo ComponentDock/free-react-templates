@@ -119,7 +119,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/outro` (copy simplest existing app; package
+- [x] Scaffold `apps/outro` (copy simplest existing app; package — superseded: shipped as `apps/cairn`
       `@free-react-templates/outro`; `public/CNAME` =
       `outro.free.componentdock.com`; homepage =
       `https://outro.free.componentdock.com`); register the workspace in

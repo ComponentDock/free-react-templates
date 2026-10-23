@@ -11,7 +11,7 @@
 - [x] CSS tokens extracted (colors, fonts, spacing)
 
 ## Implementation (for implementer stream)
-- [ ] Copy simplest existing app to `apps/tagbox/`
+- [x] Copy simplest existing app to `apps/tagbox/` — superseded: shipped as `apps/picktag`
 - [ ] Update package.json: `@free-react-templates/tagbox`
 - [ ] Update `public/CNAME` → `tagbox.free.componentdock.com`
 - [ ] Update `vite.config.ts` with `injectUiSource()`

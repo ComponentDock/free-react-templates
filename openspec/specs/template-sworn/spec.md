@@ -347,5 +347,5 @@ The system SHALL include the required Component Dock attribution footer.
       (mock), all sections render in correct order.
 - [ ] Responsive check at 768px (hero stacks, practice areas go to 2-col,
       footer stacks, no horizontal overflow).
-- [ ] No ColorLib references in any `apps/sworn/` file (comments, strings,
+- [x] No ColorLib references in any `apps/sworn/` file (comments, strings, — superseded: shipped as `apps/oathmark`
       CSS, or config). Provenance only in spec and TEMPLATES.md.

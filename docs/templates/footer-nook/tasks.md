@@ -6,7 +6,7 @@
 
 ## Pre-Implementation
 
-- [ ] Create `apps/footer-nook/` directory
+- [x] Create `apps/footer-nook/` directory — superseded: shipped as `apps/footerdash`
 - [ ] Copy simplest existing footer app as starter
 - [ ] Rename package to `@free-react-templates/footer-nook`
 - [ ] Update `vite.config.ts` with `injectUiSource()` helper

@@ -1,4 +1,9 @@
 # Template: Picks (Bootstrap Checkbox UI Component)
+<!-- prep-status: shipped-as=checkly -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-02` design this prep describes already
+> ships as `apps/checkly` (<https://checkly.free.componentdock.com>).
+> Do not scaffold `apps/picks`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-checkly/spec.md`.
 
 ## Purpose
 

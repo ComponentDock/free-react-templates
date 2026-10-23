@@ -6,7 +6,7 @@
 
 ## Phase 1: Scaffold
 
-- [ ] Create `apps/wizpath/` (copy minimal existing app, rename package to `@free-react-templates/wizpath`)
+- [x] Create `apps/wizpath/` (copy minimal existing app, rename package to `@free-react-templates/wizpath`) — superseded: shipped as `apps/wizlane`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `src/index.css` with Tailwind v4 entry + `@theme` tokens (brand green `#78a44e`, page bg `#f5f2ed`, etc.)
 - [ ] Add Google Fonts link (Roboto) in `index.html`

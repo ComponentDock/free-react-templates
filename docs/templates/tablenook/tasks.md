@@ -144,7 +144,7 @@ App.tsx
 
 ## Implementation TODO
 
-- [ ] Scaffold `apps/tablenook/` from simplest existing app
+- [x] Scaffold `apps/tablenook/` from simplest existing app — superseded: shipped as `apps/platter`
 - [ ] Update package name to `@free-react-templates/tablenook`
 - [ ] Add Raleway + Satisfy fonts via Google Fonts link in `index.html`
 - [ ] Create `SplitScreenLayout.tsx` (flex container)

@@ -1,10 +1,14 @@
 # CouponPop — Tasks
+<!-- prep-status: shipped-as=couponmodal -->
+> **SHIPPED-UNDER** — the ColorLib `modal-04` design this prep describes shipped
+> as `apps/couponmodal` (<https://couponmodal.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Recreation of ColorLib Modal 04 (coupon modal popup)
 
 ## Checklist
 
-- [ ] Scaffold `apps/couponpop/` (copy overlay, rename package)
+- [x] Scaffold `apps/couponpop/` (copy overlay, rename package) — superseded: shipped as `apps/couponmodal`
 - [ ] Write spec (`openspec/specs/template-couponpop/spec.md`)
 - [ ] TDD: write tests first
   - [ ] Landing.test.tsx — heading, description, Launch Coupon button

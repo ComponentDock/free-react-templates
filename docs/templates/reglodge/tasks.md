@@ -166,7 +166,7 @@ photo bg, amber button, brown heading, gray borders.
 
 ### Phase 1: Scaffold
 
-- [ ] Copy simplest existing app as `apps/reglodge`
+- [x] Copy simplest existing app as `apps/reglodge` — superseded: shipped as `apps/regpass`
 - [ ] Rename package to `@free-react-templates/reglodge`
 - [ ] Update `public/CNAME` to `reglodge.free.componentdock.com`
 - [ ] Update `homepage` in `package.json` to

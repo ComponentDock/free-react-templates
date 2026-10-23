@@ -78,7 +78,7 @@ As a visitor, I want a footer containing standard links and the mandatory Compon
 
 ## Verification checklist
 
-- [ ] App workspace `@free-react-templates/gyrate` correctly created in `apps/gyrate`.
+- [x] App workspace `@free-react-templates/gyrate` correctly created in `apps/gyrate` — superseded: shipped as `apps/slidespot`.
 - [ ] TypeScript strict checking passes without errors.
 - [ ] Vitest test suite achieves 100% test coverage.
 - [ ] Footer links to `https://www.componentdock.com/`.

@@ -51,7 +51,7 @@
 
 ## Implementation Tasks
 
-- [ ] Scaffold `apps/casette` from simplest existing app
+- [x] Scaffold `apps/casette` from simplest existing app — superseded: shipped as `apps/appnova`
 - [ ] Set up package.json with `@free-react-templates/casette`
 - [ ] Configure vite.config.ts with `injectUiSource()`
 - [ ] Set up index.css with Tailwind + theme tokens

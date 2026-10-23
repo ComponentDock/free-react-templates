@@ -34,7 +34,7 @@ New name: modalbloom (replaces "Modal 18")
 
 ## Implementation Checklist
 
-- [ ] Create app folder `apps/modalbloom` (copy from simplest modal template)
+- [x] Create app folder `apps/modalbloom` (copy from simplest modal template) — superseded: shipped as `apps/modal-pulse`
 - [ ] Set up `package.json` with `@free-react-templates/modalbloom`
 - [ ] Add Google Fonts link for Roboto + Poppins in `index.html`
 - [ ] Build page container with full-viewport centering

@@ -77,7 +77,7 @@ Visual design notes (from preview + CSS):
 ## Implementation tasks
 
 ### Phase 1: Setup
-- [ ] Create `apps/mendly/` (copy simplest existing app, rename package to
+- [x] Create `apps/mendly/` (copy simplest existing app, rename package to — superseded: shipped as `apps/renovo`
       `@free-react-templates/mendly`)
 - [ ] Set `public/CNAME` to `mendly.free.componentdock.com`
 - [ ] Set `"homepage"` to `https://mendly.free.componentdock.com`

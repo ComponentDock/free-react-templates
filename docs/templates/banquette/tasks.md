@@ -80,7 +80,7 @@ border-bottom: 2px solid #feba2c }`
 
 ### Phase 1: Scaffolding
 
-- [ ] Copy simplest existing app to `apps/banquette`
+- [x] Copy simplest existing app to `apps/banquette` — superseded: shipped as `apps/tremolo`
 - [ ] Rename package to `@free-react-templates/banquette`
 - [ ] Set `public/CNAME` to `banquette.free.componentdock.com`
 - [ ] Set `homepage` in package.json to `https://banquette.free.componentdock.com`

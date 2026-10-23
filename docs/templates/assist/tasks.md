@@ -161,7 +161,7 @@ margin-top/opacity/visibility ease` (fade + **10px** slide-down — the
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/assist` (copy simplest existing app; package
+- [x] Scaffold `apps/assist` (copy simplest existing app; package — superseded: shipped as `apps/droplist`
       `@free-react-templates/assist`; `public/CNAME` =
       `assist.free.componentdock.com`; homepage =
       `https://assist.free.componentdock.com`); register the workspace in

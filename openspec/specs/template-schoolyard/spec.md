@@ -163,7 +163,7 @@ The template has a playful, colorful kindergarten aesthetic:
 - [ ] Footer: 3-column layout with description, quick links, about us, social icons, copyright + Component Dock link
 - [ ] Design tokens: brand `#ED078B`, fonts Fredoka One / DM Sans / Concert One, buttons border-radius 30px
 - [ ] Responsive: mobile hamburger menu, stacked layouts, reduced padding
-- [ ] No ColorLib references in `apps/schoolyard/`
+- [x] No ColorLib references in `apps/schoolyard/` — superseded: shipped as `apps/tadpole`
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] `public/CNAME` contains `schoolyard.free.componentdock.com`
 - [ ] Package name: `@free-react-templates/schoolyard`

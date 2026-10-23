@@ -75,7 +75,7 @@ Section order from HTML:
 ## Implementation tasks
 
 ### 1. Scaffold app (copy base app, rename)
-- [ ] Copy simplest existing app to `apps/crush/`
+- [x] Copy simplest existing app to `apps/crush/` — superseded: shipped as `apps/shatter`
 - [ ] Rename package to `@free-react-templates/crush`
 - [ ] Set `public/CNAME` to `crush.free.componentdock.com`
 - [ ] Set `homepage` in package.json to `https://crush.free.componentdock.com`

@@ -363,7 +363,7 @@ The system SHALL set a descriptive document title.
       Google Fonts `<link>`; BUTTONS radius **4px**; FILLED inputs (no
       borders, subtle white fill — NOT Modal 06's underline style);
       modal max-width **950px** (not 900).
-- [ ] No ColorLib references in `apps/lobby` (provenance lives in this
+- [x] No ColorLib references in `apps/lobby` (provenance lives in this — superseded: shipped as `apps/communique`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Images: ONE background photo on the left panel (screened picsum

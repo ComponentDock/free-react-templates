@@ -1,4 +1,8 @@
 # Fillet (ColorLib Bootstrap Buttons 09) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnbolt -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-09` design this prep describes shipped
+> as `apps/btnbolt` (<https://btnbolt.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main`. Recreation name: **Fillet** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 09"). Implementation

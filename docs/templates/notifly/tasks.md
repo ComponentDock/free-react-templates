@@ -150,7 +150,7 @@ visibility ease` (fade + **10px** slide-down — NOT Fount's 20px;
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/notifly` (copy simplest existing app; package
+- [x] Scaffold `apps/notifly` (copy simplest existing app; package — superseded: shipped as `apps/pings`
       `@free-react-templates/notifly`; `public/CNAME` =
       `notifly.free.componentdock.com`; homepage =
       `https://notifly.free.componentdock.com`); register the workspace in

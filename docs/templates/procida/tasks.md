@@ -87,7 +87,7 @@ position: relative; bottom: -30px` (hangs ~30px below the carousel). Each
 
 ## Implementation tasks
 
-- [ ] Copy the simplest existing app → `apps/procida`; rename package to
+- [x] Copy the simplest existing app → `apps/procida`; rename package to — superseded: shipped as `apps/carousel-vane`
       `@free-react-templates/procida`
 - [ ] `public/CNAME` = `procida.free.componentdock.com`; `"homepage"` =
       `https://procida.free.componentdock.com` in package.json

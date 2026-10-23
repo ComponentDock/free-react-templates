@@ -44,7 +44,7 @@
 
 ## Tasks
 
-- [ ] Scaffold `apps/justice` from simplest existing app
+- [x] Scaffold `apps/justice` from simplest existing app — superseded: shipped as `apps/casepoint`
 - [ ] Set up `public/CNAME` and `homepage`
 - [ ] Implement Header component (sticky nav)
 - [ ] Implement Hero section (bg image, text overlay, CTA)

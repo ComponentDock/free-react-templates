@@ -138,7 +138,7 @@ rgba(0,0,0,0.06)`): `row g-0` of 5 — Check-In (calendar icon + input
 
 ## Tasks / todo outline
 
-- [ ] Scaffold `apps/repose` (copy the simplest existing app, rename
+- [x] Scaffold `apps/repose` (copy the simplest existing app, rename — superseded: shipped as `apps/solace`
       package to `@free-react-templates/repose`; register the workspace —
       `npm install` at root so `package-lock.json` includes it; set
       `public/CNAME` = `repose.free.componentdock.com` and `"homepage"` =

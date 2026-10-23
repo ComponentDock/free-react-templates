@@ -84,7 +84,7 @@ Colorlib</title>`). Main stylesheet `css/style.css` (~73 KB) parsed for
 ## Todo (implementation order)
 
 - [ ] `npm run spec:validate` passes (spec: `openspec/specs/template-cameo/`)
-- [ ] Scaffold `apps/cameo` (copy simplest existing app; package
+- [x] Scaffold `apps/cameo` (copy simplest existing app; package — superseded: shipped as `apps/glamour`
       `@free-react-templates/cameo`; `public/CNAME` =
       `cameo.free.componentdock.com`; homepage
       `https://cameo.free.componentdock.com`); run `npm install` at root

@@ -41,7 +41,7 @@
 ## Task Outline
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/wellcore/` from simplest existing app
+- [x] Create `apps/wellcore/` from simplest existing app — superseded: shipped as `apps/vitaflow`
 - [ ] Rename package to `@free-react-templates/wellcore`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `index.css` with Tailwind v4 + theme tokens (primary, secondary colors)

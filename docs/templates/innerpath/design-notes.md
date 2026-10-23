@@ -48,7 +48,7 @@
 ## Task Outline
 
 ### Phase 1: Scaffolding
-- [ ] Create `apps/innerpath/` by copying simplest existing app
+- [x] Create `apps/innerpath/` by copying simplest existing app — superseded: shipped as `apps/plea`
 - [ ] Update package.json: name → @free-react-templates/innerpath
 - [ ] Create `public/CNAME` with `innerpath.free.componentdock.com`
 - [ ] Update `vite.config.ts` with `injectUiSource()` pattern

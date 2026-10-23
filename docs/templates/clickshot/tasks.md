@@ -5,7 +5,7 @@
 > The unchecked items below are prep history, not outstanding work.
 
 ## Phase 1: Setup
-- [ ] Create `apps/clickshot/` from a minimal existing app template
+- [x] Create `apps/clickshot/` from a minimal existing app template — superseded: shipped as `apps/shotglow`
 - [ ] Rename package to `@free-react-templates/clickshot`
 - [ ] Set `public/CNAME` to `clickshot.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://clickshot.free.componentdock.com`

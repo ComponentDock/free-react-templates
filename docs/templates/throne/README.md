@@ -1,4 +1,8 @@
 # Throne — Design Notes & Task Outline
+<!-- prep-status: shipped-as=reign -->
+> **SHIPPED-UNDER** — the ColorLib `monarchy` design this prep describes shipped
+> as `apps/reign` (<https://reign.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib "Monarchy": https://colorlib.com/wp/template/monarchy/
@@ -34,7 +38,7 @@
 
 ## Task Outline
 
-- [ ] Scaffold apps/throne from a minimal existing template
+- [x] Scaffold apps/throne from a minimal existing template — superseded: shipped as `apps/reign`
 - [ ] Add Jost Google Font to index.html
 - [ ] Create src/index.css with Tailwind @theme tokens (#f26200, #f5ecdb, #757575)
 - [ ] Build Navbar component (sticky, mobile menu)

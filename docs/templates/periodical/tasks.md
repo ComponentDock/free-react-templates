@@ -99,7 +99,7 @@
 
 ## Task outline (implementer)
 
-- [ ] Scaffold app: copy simplest existing app → `apps/periodical`,
+- [x] Scaffold app: copy simplest existing app → `apps/periodical`, — superseded: shipped as `apps/lede`
       package `@free-react-templates/periodical`
 - [ ] `@theme` tokens: brand #f6214b, dark #04091e, page bg #ecf0f1, grays
 - [ ] Poppins font link in `index.html`

@@ -1,4 +1,8 @@
 # Charcoal — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=calypso -->
+> **SHIPPED-UNDER** — the ColorLib `calvin` design this prep describes shipped
+> as `apps/calypso` (<https://calypso.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Calvin" — https://colorlib.com/wp/template/calvin/
 Preview: https://preview.colorlib.com/theme/calvin/
@@ -120,7 +124,7 @@ Footer is solid black providing strong contrast.
 
 ## Implementation Todo
 
-- [ ] Scaffold app: `apps/charcoal/` from a clean template copy
+- [x] Scaffold app: `apps/charcoal/` from a clean template copy — superseded: shipped as `apps/calypso`
 - [ ] Set up `index.css` with Tailwind `@theme` tokens (primary #FF8553, etc.)
 - [ ] Set up `index.html` with Google Fonts (Roboto Condensed + DM Sans)
 - [ ] Build Navbar component (transparent, sticky, mobile hamburger)

@@ -272,7 +272,7 @@ The system SHALL set a descriptive document title.
       none; modal max-width **500px**, **SQUARE corners (rounded-0)**, shadow
       `0 10px 50px -10px rgba(0,0,0,0.3)`, backdrop `rgba(0,0,0,0.5)`;
       header/body padding-left/right **30px**; header border-bottom none.
-- [ ] No ColorLib references in `apps/vestry` (provenance lives in this
+- [x] No ColorLib references in `apps/vestry` (provenance lives in this — superseded: shipped as `apps/popup`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Images: there are NO images in this template (unlike Ingress/Modal 10's

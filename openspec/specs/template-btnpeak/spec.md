@@ -89,7 +89,7 @@ Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/templa
 
 ## Verification checklist
 
-- [ ] Vite + React 19 + Tailwind CSS 4 workspace configured at `apps/btnpeak`
+- [x] Vite + React 19 + Tailwind CSS 4 workspace configured at `apps/btnpeak` — superseded: shipped as `apps/btnfuse`
 - [ ] Package name `@free-react-templates/btnpeak`
 - [ ] `public/CNAME` contains `btnpeak.free.componentdock.com`
 - [ ] `package.json` homepage is `https://btnpeak.free.componentdock.com`

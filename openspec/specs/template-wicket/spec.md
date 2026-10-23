@@ -1,4 +1,9 @@
 # Template: Wicket (Product Promo Modal)
+<!-- prep-status: shipped-as=splitmodal -->
+> **SHIPPED-UNDER** — the ColorLib `modal-19` design this prep describes already
+> ships as `apps/splitmodal` (<https://splitmodal.free.componentdock.com>).
+> Do not scaffold `apps/wicket`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-splitmodal/spec.md`.
 
 ## Purpose
 
@@ -312,7 +317,7 @@ The system SHALL compose the page with a main landmark and a document title.
       `#007bff`, counts `#b3b3b3`, description `#777` (14px), share `#ccc`,
       h3 `#000` (22px); Roboto via Google Fonts `<link>` (NO Poppins/Source
       Serif Pro — dead includes in the source).
-- [ ] No ColorLib references in `apps/wicket` (provenance lives in this
+- [x] No ColorLib references in `apps/wicket` (provenance lives in this — superseded: shipped as `apps/splitmodal`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] One placeholder product photo (`picsum.photos/seed/wicket-1/1000/667`);

@@ -1,4 +1,9 @@
 # Template: Sorrento (Testimonials Carousel)
+<!-- prep-status: shipped-as=swipe -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-08` design this prep describes already
+> ships as `apps/swipe` (<https://swipe.free.componentdock.com>).
+> Do not scaffold `apps/sorrento`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-swipe/spec.md`.
 
 ## Purpose
 
@@ -450,7 +455,7 @@ Dock"). The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/sorrento` exists; package `@free-react-templates/sorrento`;
+- [x] `apps/sorrento` exists; package `@free-react-templates/sorrento`; — superseded: shipped as `apps/swipe`
       `public/CNAME` = `sorrento.free.componentdock.com`; `homepage` =
       `https://sorrento.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (300, 400, 500, 700) +

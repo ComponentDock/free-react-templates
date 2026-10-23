@@ -20,7 +20,7 @@
 
 ### 1. Scaffold
 
-- [ ] Create `apps/sulci/` from simplest existing app
+- [x] Create `apps/sulci/` from simplest existing app — superseded: shipped as `apps/expanda`
 - [ ] Update package.json: `@free-react-templates/sulci`
 - [ ] Set `public/CNAME` → `sulci.free.componentdock.com`
 - [ ] Set `homepage` in package.json

@@ -6,7 +6,7 @@
 
 ## Phase 1: Scaffold
 
-- [ ] Copy simplest existing app as base (e.g. apps/sage or apps/bloom)
+- [x] Copy simplest existing app as base (e.g. apps/sage or apps/bloom) — superseded: shipped as `apps/coinwave`
 - [ ] Rename package to `@free-react-templates/bitforge`
 - [ ] Update `public/CNAME` to `bitforge.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://bitforge.free.componentdock.com`

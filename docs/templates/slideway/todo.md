@@ -31,7 +31,7 @@
 
 ## Todo Checklist for Implementer
 
-- [ ] Scaffold `apps/slideway` using an existing template as base.
+- [x] Scaffold `apps/slideway` using an existing template as base — superseded: shipped as `apps/merry`.
 - [ ] Register workspace in root `package.json` and run `npm install`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Implement components matching the Gherkin specs.

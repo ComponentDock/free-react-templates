@@ -103,7 +103,7 @@ reference. ⚠️ `apps/sapphire` was built from the mirror's tokens.
 
 ## Implementation tasks (for the implementer stream)
 
-- [ ] Scaffold `apps/sapphire` (copy simplest existing app, rename package
+- [x] Scaffold `apps/sapphire` (copy simplest existing app, rename package — superseded: shipped as `apps/azurepeak`
       to `@free-react-templates/sapphire`, register in vite.config with
       `injectUiSource()`, run `npm install` at root so package-lock.json
       registers the workspace)

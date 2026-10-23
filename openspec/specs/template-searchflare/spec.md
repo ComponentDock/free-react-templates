@@ -1,4 +1,9 @@
 # Template: SearchFlare (Search Form Bar)
+<!-- prep-status: shipped-as=seekdot -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-03` design this prep describes already
+> ships as `apps/seekdot` (<https://seekdot.free.componentdock.com>).
+> Do not scaffold `apps/searchflare`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekdot/spec.md`.
 
 ## Purpose
 

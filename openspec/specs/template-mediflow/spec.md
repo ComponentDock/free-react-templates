@@ -1,4 +1,9 @@
 # Template: Mediflow (Health & Medical Clinic)
+<!-- prep-status: shipped-as=medprime -->
+> **SHIPPED-UNDER** — the ColorLib `medi-2` design this prep describes already
+> ships as `apps/medprime` (<https://medprime.free.componentdock.com>).
+> Do not scaffold `apps/mediflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-medprime/spec.md`.
 
 ## Purpose
 

@@ -15,7 +15,7 @@
 ## Implementation Tasks
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/medvault/` by copying simplest existing app
+- [x] Create `apps/medvault/` by copying simplest existing app — superseded: shipped as `apps/elixir`
 - [ ] Rename package to `@free-react-templates/medvault`
 - [ ] Update `public/CNAME` to `medvault.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://medvault.free.componentdock.com`

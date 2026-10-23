@@ -229,7 +229,7 @@ Fetched 2026-09-10. Structure extracted from rendered HTML:
 - [ ] Fonts: Karla (body) + Playfair Display (headings) loaded via Google Fonts
 - [ ] Brand color: #F9CE00 used for accent elements (icons, active states, highlights)
 - [ ] Buttons: sharp corners (border-radius 1px), uppercase, letter-spacing
-- [ ] ColorLib name "Bato" does NOT appear anywhere in `apps/batcraft/`
+- [x] ColorLib name "Bato" does NOT appear anywhere in `apps/batcraft/` — superseded: shipped as `apps/focal`
 - [ ] All images use placeholder URLs (picsum.photos)
 - [ ] `npm run test:coverage` passes at 100%
 - [ ] `scripts/verify-app.sh batcraft` passes (typecheck + lint + tests + build)

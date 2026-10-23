@@ -1,4 +1,8 @@
 # Tasks & Design Notes: Saita (Digital Agency)
+<!-- prep-status: shipped-as=pulse -->
+> **SHIPPED-UNDER** — the ColorLib `saita` design this prep describes shipped
+> as `apps/pulse` (<https://pulse.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source & Mapping
 
@@ -30,7 +34,7 @@
 
 ## Implementation Checklist for Implementers
 
-- [ ] Create `apps/saita` workspace (copy structure from a clean reference app like `apps/aurora`).
+- [x] Create `apps/saita` workspace (copy structure from a clean reference app like `apps/aurora`) — superseded: shipped as `apps/pulse`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Set `public/CNAME` to `saita.free.componentdock.com`.
 - [ ] Build components (`Navbar`, `Hero`, `About`, `Counters`, `Services`, `Portfolio`, `Team`, `Pricing`, `Testimonials`, `Blog`, `Footer`).

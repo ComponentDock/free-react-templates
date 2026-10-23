@@ -47,7 +47,7 @@ Source: ColorLib Gotrip (https://preview.colorlib.com/theme/gotrip/)
 
 ## Tasks
 
-- [ ] Create apps/voyagepoint/ scaffold (copy minimal existing app)
+- [x] Create apps/voyagepoint/ scaffold (copy minimal existing app) — superseded: shipped as `apps/goquest`
 - [ ] Set up index.html with Google Fonts (Barlow Condensed, Roboto, Satisfy)
 - [ ] Implement TopBar component
 - [ ] Implement Navbar component (with mobile hamburger)

@@ -93,7 +93,7 @@ Spec: openspec/specs/template-regvista/spec.md
 
 ## Implementation tasks
 
-- [ ] Create apps/regvista workspace (copy simplest existing app, rename package)
+- [x] Create apps/regvista workspace (copy simplest existing app, rename package) — superseded: shipped as `apps/regfold`
 - [ ] Set up index.html with Poppins Google Fonts link (weights 400, 700)
 - [ ] Build gradient background component (full-page pink-to-purple gradient)
 - [ ] Build card container (centered, white bg, shadow, rounded, max-width 680px)

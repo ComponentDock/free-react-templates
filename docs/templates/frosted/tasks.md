@@ -63,7 +63,7 @@
 - [x] Write `openspec/specs/template-frosted/spec.md` (Gherkin
       requirements + scenarios + replication findings).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/frosted` (copy closest app; rename package to
+- [x] Create `apps/frosted` (copy closest app; rename package to — superseded: shipped as `apps/crumbs`
       `@free-react-templates/frosted`).
 - [ ] TDD: tests first for Navbar, Hero, PopularItems, About, Features,
       Video, Testimonials, InstagramGallery, Footer, App composition;

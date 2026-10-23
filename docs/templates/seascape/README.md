@@ -9,7 +9,7 @@ Preview: https://preview.colorlib.com/theme/theriver/
 
 ## Implementation TODO
 
-- [ ] `npm create vite@latest` → apps/seascape (React 19 + TS + Tailwind 4)
+- [x] `npm create vite@latest` → apps/seascape (React 19 + TS + Tailwind 4) — superseded: shipped as `apps/eddy`
 - [ ] Add `@source` inject in vite.config.ts (copy pattern from existing app)
 - [ ] Create `src/index.css` with Tailwind entry + `@theme` brand tokens:
   - `--color-brand: #ffa37b` (coral/salmon primary)

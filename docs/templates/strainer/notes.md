@@ -45,7 +45,7 @@ removable tags with white text. The dropdown menu has no border, rounded corners
 | Search | `.select2-search__field` inline | Input in dropdown, filters options client-side |
 
 ## Task checklist for implementer
-- [ ] Scaffold `apps/strainer/` from simplest existing app
+- [x] Scaffold `apps/strainer/` from simplest existing app — superseded: shipped as `apps/optwell`
 - [ ] Rename package to `@free-react-templates/strainer`
 - [ ] Create `src/components/Multiselect.tsx` — core component
   - Props: `options: string[]`, `placeholder?: string`, `searchPlaceholder?: string`

@@ -416,7 +416,7 @@ columns, a newsletter form and a copyright bar.
 
 ## Verification checklist
 
-- [ ] App `apps/studia` (package `@free-react-templates/studia`), 100%
+- [x] App `apps/studia` (package `@free-react-templates/studia`), 100% — superseded: shipped as `apps/scholar`
       vitest coverage, per-app gate green (`scripts/verify-app.sh studia`)
 - [ ] Section order 1:1 with the source: sticky white header (logo, pill
       search, nav, Sign In) → split hero (headline + subtext + search form

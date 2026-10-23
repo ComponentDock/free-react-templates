@@ -358,7 +358,7 @@ convention on every template (the original has no footer).
     rgba(0,0,0,0.14)`, radius 4px, caret `#999999`, checkbox border 2px
       `rgba(0,0,0,0.2)`, label gray, heading `#000` 28px; Lato 400 via
       Google Fonts `<link>`.
-- [ ] No ColorLib references in `apps/picker` (provenance lives in this
+- [x] No ColorLib references in `apps/picker` (provenance lives in this — superseded: shipped as `apps/optpick`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react

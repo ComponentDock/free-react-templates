@@ -1,8 +1,13 @@
 # GlobeTrek — Implementation Tasks
 
+<!-- prep-status: shipped-as=jetpath -->
+> **SHIPPED-UNDER** — the ColorLib `travelers` design this prep describes shipped
+> as `apps/jetpath` (<https://jetpath.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
+
 ## TODO
 
-- [ ] Create `apps/globetrek/` scaffold (copy from simplest existing app, rename package)
+- [x] Create `apps/globetrek/` scaffold (copy from simplest existing app, rename package) — superseded: shipped as `apps/jetpath`
 - [ ] Set up `public/CNAME` with `globetrek.free.componentdock.com`
 - [ ] Set `"homepage"` in `package.json`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`

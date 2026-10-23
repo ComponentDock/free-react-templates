@@ -22,7 +22,7 @@
 
 ## Task Breakdown for Implementers
 
-- [ ] Scaffold `apps/btnpeak` following standard app layout.
+- [x] Scaffold `apps/btnpeak` following standard app layout — superseded: shipped as `apps/btnfuse`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Implement components (`Navbar`, `ButtonShowcase`, `StatGrid`, `Footer`).
 - [ ] Add unit tests covering all Gherkin requirements with 100% test coverage.

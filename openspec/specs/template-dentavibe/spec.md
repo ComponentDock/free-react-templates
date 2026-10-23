@@ -81,7 +81,7 @@ So that I can choose the right dental treatment and contact the clinic
 
 ## Verification checklist
 
-- [ ] App folder created at `apps/dentavibe/`
+- [x] App folder created at `apps/dentavibe/` — superseded: shipped as `apps/odonto`
 - [ ] Workspace registered in root `package.json` and `package-lock.json`
 - [ ] Vite config includes `injectUiSource()`
 - [ ] `public/CNAME` has `dentavibe.free.componentdock.com`

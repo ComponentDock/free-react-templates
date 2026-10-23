@@ -182,7 +182,7 @@ shows a macOS browser frame with:
 
 ### 6. Docs & deploy
 
-- [ ] No ColorLib references anywhere in `apps/skywork/`
+- [x] No ColorLib references anywhere in `apps/skywork/` — superseded: shipped as `apps/azureline`
 - [ ] Footer links to componentdock.com
 - [ ] Commit: `feat: add Skywork template (ColorLib Blueline)`
 - [ ] PR + squash merge to main

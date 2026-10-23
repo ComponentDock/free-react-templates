@@ -54,7 +54,7 @@
 - "Made with Component Dock" or similar attribution
 
 ## Tasks
-- [ ] Scaffold apps/wardrobe from simplest existing app
+- [x] Scaffold apps/wardrobe from simplest existing app — superseded: shipped as `apps/closet`
 - [ ] Set up package.json, vite.config.ts, index.html (Poppins font)
 - [ ] Create Header component (brand, search, icons, mobile toggle)
 - [ ] Create HeroCarousel component (bg image, text overlay, 3-card carousel)

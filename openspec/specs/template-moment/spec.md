@@ -587,7 +587,7 @@ The system SHALL render a minimal footer per repo convention.
       icons, Google Fonts Lato, no external widget CSS
 - [ ] Footer links https://www.componentdock.com/ (required, no ColorLib in
       app code)
-- [ ] `apps/moment` package `@free-react-templates/moment`; CNAME
+- [x] `apps/moment` package `@free-react-templates/moment`; CNAME — superseded: shipped as `apps/timely`
       `moment.free.componentdock.com`; homepage set accordingly
 - [ ] Responsive: widget column shrinks on mobile, picker fits viewport, no
       horizontal overflow

@@ -157,7 +157,7 @@ social`: SIX 40×40 WHITE rounded-square links (radius 40%, glyph
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/psalm` (copy simplest existing app; package
+- [x] Scaffold `apps/psalm` (copy simplest existing app; package — superseded: shipped as `apps/sanctus`
       `@free-react-templates/psalm`; `public/CNAME` =
       `psalm.free.componentdock.com`; homepage =
       `https://psalm.free.componentdock.com`); register the workspace in

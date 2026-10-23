@@ -445,7 +445,7 @@ Dock"). The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/amalfi` exists; package `@free-react-templates/amalfi`;
+- [x] `apps/amalfi` exists; package `@free-react-templates/amalfi`; — superseded: shipped as `apps/carouseten`
       `public/CNAME` = `amalfi.free.componentdock.com`; `homepage` =
       `https://amalfi.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (INCLUDING weight 200 — the

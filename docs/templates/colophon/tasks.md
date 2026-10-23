@@ -98,7 +98,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/colophon` (copy simplest existing app; package
+- [x] Scaffold `apps/colophon` (copy simplest existing app; package — superseded: shipped as `apps/footwell`
       `@free-react-templates/colophon`; `public/CNAME` =
       `colophon.free.componentdock.com`; homepage =
       `https://colophon.free.componentdock.com`); register the workspace in

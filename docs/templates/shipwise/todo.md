@@ -9,7 +9,7 @@ New name: shipwise
 
 ## Tasks
 
-- [ ] Create app scaffold: `apps/shipwise/` (copy minimal starter, rename package)
+- [x] Create app scaffold: `apps/shipwise/` (copy minimal starter, rename package) — superseded: shipped as `apps/packwell`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `src/index.css` with Tailwind theme tokens (brand #f39c12, Roboto font)
 - [ ] Add Google Fonts link for Roboto in `index.html`

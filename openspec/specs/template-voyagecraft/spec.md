@@ -199,7 +199,7 @@ Recreation of ColorLib "Vacation" — a free Bootstrap 4 travel agency website t
 - [ ] Footer: 4-column layout, social icons, link lists, contact info, Component Dock link
 - [ ] Design tokens: Poppins font, #f9ab30 accent, #007bff primary, dark sections
 - [ ] All images: picsum.photos placeholders
-- [ ] No ColorLib references in `apps/voyagecraft/`
+- [x] No ColorLib references in `apps/voyagecraft/` — superseded: shipped as `apps/getaway`
 - [ ] `public/CNAME`: `voyagecraft.free.componentdock.com`
 - [ ] `package.json` homepage: `https://voyagecraft.free.componentdock.com`
 - [ ] `vite.config.ts`: registers `injectUiSource()`

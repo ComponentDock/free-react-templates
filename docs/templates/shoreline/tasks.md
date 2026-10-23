@@ -131,7 +131,7 @@ font-semibold w-full` + search icon). Labels Cormorant 22px/600 white;
 
 ## Build/task outline (implementer)
 
-- [ ] Scaffold `apps/shoreline` (copy simplest existing app; package
+- [x] Scaffold `apps/shoreline` (copy simplest existing app; package — superseded: shipped as `apps/havenshore`
       `@free-react-templates/shoreline`; `npm install` at root to register
       workspace + lockfile; `public/CNAME` = `shoreline.free.componentdock.com`,
       homepage = `https://shoreline.free.componentdock.com`)

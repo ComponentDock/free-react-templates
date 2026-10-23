@@ -40,7 +40,7 @@ Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-18/
 
 ## Tasks
 
-- [ ] Create app scaffold: `apps/seagrass/` (copy simplest existing footer app)
+- [x] Create app scaffold: `apps/seagrass/` (copy simplest existing footer app) — superseded: shipped as `apps/footerdash`
 - [ ] Set up index.css with Tailwind @theme tokens: `--color-accent: #12cc94`, `--color-bg-light: #f1f6f5`, `--color-submit: #2f89fc`
 - [ ] Build Hero.tsx: white section with centered heading
 - [ ] Build Footer.tsx: two-panel layout (left content + right sidebar)

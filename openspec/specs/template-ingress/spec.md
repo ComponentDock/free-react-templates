@@ -365,7 +365,7 @@ The system SHALL set a descriptive document title.
       backdrop `rgba(0,0,0,0.5)`; header band **230px**; body pull-up
       **-180px**; submit **130×52**; close 40×40 (white, opacity .5); icon
       circle 200×200; inputs 16px radius-0 + rounded-left/right 0.25rem.
-- [ ] No ColorLib references in `apps/ingress` (provenance lives in this
+- [x] No ColorLib references in `apps/ingress` (provenance lives in this — superseded: shipped as `apps/bellpush`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Images: the ONLY images are the header background photo and the email

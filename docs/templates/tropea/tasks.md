@@ -1,4 +1,8 @@
 # Tropea (ColorLib Carousel 15) — Tasks & Design Notes
+<!-- prep-status: shipped-as=carouseldrift -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-15` design this prep describes shipped
+> as `apps/carouseldrift` (<https://carouseldrift.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-tropea`.
@@ -101,7 +105,7 @@ display: block !important }`, `.image` gets `height: 300px`; thumbnail
 
 ## Implementation tasks
 
-- [ ] Copy the simplest existing app → `apps/tropea`; rename package to
+- [x] Copy the simplest existing app → `apps/tropea`; rename package to — superseded: shipped as `apps/carouseldrift`
       `@free-react-templates/tropea`
 - [ ] `public/CNAME` = `tropea.free.componentdock.com`; `"homepage"` =
       `https://tropea.free.componentdock.com` in package.json

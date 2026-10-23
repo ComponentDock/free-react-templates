@@ -20,7 +20,7 @@ Preview: https://preview.colorlib.com/theme/dup/
 ## Section-by-Section Tasks
 
 ### 1. App scaffold
-- [ ] Create `apps/tandem/` from simplest existing app
+- [x] Create `apps/tandem/` from simplest existing app — superseded: shipped as `apps/prism`
 - [ ] Rename package to `@free-react-templates/tandem`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `public/CNAME` with `tandem.free.componentdock.com`

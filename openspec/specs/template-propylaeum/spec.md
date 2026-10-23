@@ -372,7 +372,7 @@ The system SHALL compose the page with a main landmark and a document title.
 - [ ] Image: picsum placeholder under the `#b2fcff` band (deterministic seed
       e.g. `propylaeum-1`), subject suggesting work/travel/laptop; NO
       ColorLib asset.
-- [ ] No ColorLib references in `apps/propylaeum` (provenance lives in this
+- [x] No ColorLib references in `apps/propylaeum` (provenance lives in this — superseded: shipped as `apps/modal-pulse`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] No lucide icons (the source uses no glyphs).

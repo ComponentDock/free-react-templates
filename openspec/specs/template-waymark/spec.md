@@ -1,4 +1,9 @@
 # Template: Waymark (Travel Agency)
+<!-- prep-status: shipped-as=voyager -->
+> **SHIPPED-UNDER** — the ColorLib `tour` design this prep describes already
+> ships as `apps/voyager` (<https://voyager.free.componentdock.com>).
+> Do not scaffold `apps/waymark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-voyager/spec.md`.
 
 ## Purpose
 
@@ -287,6 +292,6 @@ Feature: Responsive design
 - [ ] Design tokens match: #FFDD00 brand yellow, #2C2E3E footer, Quicksand font, 30px pill buttons
 - [ ] All placeholder images use `picsum.photos/seed/waymark-<n>/...`
 - [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
-- [ ] `apps/waymark/public/CNAME` contains `waymark.free.componentdock.com`
+- [x] `apps/waymark/public/CNAME` contains `waymark.free.componentdock.com` — superseded: shipped as `apps/voyager`
 - [ ] Footer links to `https://www.componentdock.com/`
 - [ ] Typecheck passes, lint passes, tests pass at 100% coverage, build succeeds

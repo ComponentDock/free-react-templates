@@ -39,7 +39,7 @@
 
 ## Tasks
 
-- [ ] Create apps/drywall from a simple existing template (e.g., apps/aurora) as base
+- [x] Create apps/drywall from a simple existing template (e.g., apps/aurora) as base — superseded: shipped as `apps/nectar`
 - [ ] Set up Tailwind theme tokens in index.css (@theme block with brand colors)
 - [ ] Implement TopBar component
 - [ ] Implement Navbar component

@@ -10,7 +10,7 @@ Category: Ecommerce
 
 ## Tasks
 
-- [ ] Scaffold apps/pendulum from simplest existing app
+- [x] Scaffold apps/pendulum from simplest existing app — superseded: shipped as `apps/bezel`
 - [ ] Configure package.json, vite.config.ts, CNAME, index.html
 - [ ] Set up index.css with Tailwind + brand tokens (#235ee7, #4ae7fa, #04091e, #f9f9ff)
 - [ ] Implement Navbar.tsx (sticky, responsive hamburger, section links)

@@ -13,7 +13,7 @@
 ## Implementation Tasks
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/creativar/` by copying simplest existing app (e.g. apps/aurora)
+- [x] Create `apps/creativar/` by copying simplest existing app (e.g. apps/aurora) — superseded: shipped as `apps/imprint`
 - [ ] Rename package to `@free-react-templates/creativar`
 - [ ] Update `public/CNAME` to `creativar.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://creativar.free.componentdock.com`

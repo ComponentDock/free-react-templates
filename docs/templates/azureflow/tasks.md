@@ -10,7 +10,7 @@ Recreation of ColorLib Blueline as a React fullscreen business landing page.
 
 ### Phase 1: Scaffolding
 
-- [ ] Create `apps/azureflow/` from simplest existing app (copy + rename)
+- [x] Create `apps/azureflow/` from simplest existing app (copy + rename) — superseded: shipped as `apps/azureline`
 - [ ] Rename package to `@free-react-templates/azureflow`
 - [ ] Update `public/CNAME` to `azureflow.free.componentdock.com`
 - [ ] Update `homepage` in `package.json` to `https://azureflow.free.componentdock.com`

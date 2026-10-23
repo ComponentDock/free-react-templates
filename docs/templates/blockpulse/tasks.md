@@ -11,7 +11,7 @@ New name: Blockpulse
 ## Task List
 
 ### 1. Project Setup
-- [ ] Create `apps/blockpulse/` by copying simplest existing app
+- [x] Create `apps/blockpulse/` by copying simplest existing app — superseded: shipped as `apps/coinforge`
 - [ ] Rename package to `@free-react-templates/blockpulse`
 - [ ] Create `public/CNAME` with `blockpulse.free.componentdock.com`
 - [ ] Set `"homepage"` in package.json to `https://blockpulse.free.componentdock.com`

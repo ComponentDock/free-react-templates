@@ -285,7 +285,7 @@ The system SHALL set a descriptive document title.
       `#e53935` new-badge, warm grays `#666/#999` meta; buttons fully-rounded
       (pill), uppercase bold; **Playfair Display** serif for headlines +
       **Open Sans/Poppins** sans for body via Google Fonts `<link>`.
-- [ ] No ColorLib references in `apps/emporium` (provenance lives in this
+- [x] No ColorLib references in `apps/emporium` (provenance lives in this — superseded: shipped as `apps/mannequin`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] Assets: ALL photography is picsum placeholders

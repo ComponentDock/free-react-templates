@@ -133,7 +133,7 @@ text-[#4AA8C6]`, `rounded-[4px] px-[19px] py-[10px]` Cabin 14px/500);
 
 ## Build/task outline (implementer)
 
-- [ ] Scaffold `apps/weave` (copy simplest existing app; package
+- [x] Scaffold `apps/weave` (copy simplest existing app; package — superseded: shipped as `apps/spruce`
       `@free-react-templates/weave`; `npm install` at root to register
       workspace + lockfile; `public/CNAME` = `weave.free.componentdock.com`,
       homepage = `https://weave.free.componentdock.com`)

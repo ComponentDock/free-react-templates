@@ -86,7 +86,7 @@ process `md:grid-cols-3`, clients `md:grid-cols-2`, team `lg:grid-cols-4`.
 
 ## Tasks (implementation checklist)
 
-- [ ] Scaffold `apps/vanguard` from the simplest existing app; rename
+- [x] Scaffold `apps/vanguard` from the simplest existing app; rename — superseded: shipped as `apps/nexus`
       package to `@free-react-templates/vanguard`; `public/CNAME`
       `vanguard.free.componentdock.com`; homepage
       `https://vanguard.free.componentdock.com`; `npm install` at root so

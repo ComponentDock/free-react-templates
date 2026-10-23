@@ -75,7 +75,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/aula/` from simplest existing app
+- [x] Scaffold `apps/aula/` from simplest existing app — superseded: shipped as `apps/ethos`
 - [ ] Set up Tailwind with brand tokens in `index.css`
 - [ ] Implement Navbar component
 - [ ] Implement Hero component with search form

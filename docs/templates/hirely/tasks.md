@@ -9,7 +9,7 @@ Recreation of ColorLib "Careers" template.
 ## Tasks
 
 ### 1. Scaffold app
-- [ ] Copy simplest existing app (e.g. `apps/aurora/`) → `apps/hirely/`
+- [x] Copy simplest existing app (e.g. `apps/aurora/`) → `apps/hirely/` — superseded: shipped as `apps/jobquest`
 - [ ] Rename package to `@free-react-templates/hirely`
 - [ ] Set `public/CNAME` to `hirely.free.componentdock.com`
 - [ ] Set `homepage` in `package.json` to `https://hirely.free.componentdock.com`

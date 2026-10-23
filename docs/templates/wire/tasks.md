@@ -112,7 +112,7 @@
 
 ## Tasks (implementation order, TDD — tests first)
 
-- [ ] Scaffold `apps/wire` (copy simplest existing app, rename package to
+- [x] Scaffold `apps/wire` (copy simplest existing app, rename package to — superseded: shipped as `apps/newswire`
       `@free-react-templates/wire`; register `injectUiSource()` in
       `vite.config.ts`; `npm install` at root for lockfile)
 - [ ] `src/index.css` — Tailwind theme tokens: brand `#8bc34a`, caption

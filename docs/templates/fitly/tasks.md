@@ -16,7 +16,7 @@
 ## Implementation TODO (for implementer stream)
 
 ### Setup
-- [ ] Create apps/fitly from template starter
+- [x] Create apps/fitly from template starter — superseded: shipped as `apps/gymcore`
 - [ ] Register workspace in package.json + npm install
 - [ ] Set up CNAME (fitly.free.componentdock.com)
 - [ ] Set up index.html with Poppins Google Font link

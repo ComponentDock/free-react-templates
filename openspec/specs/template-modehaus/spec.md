@@ -160,7 +160,7 @@ New name: `modehaus` (German for "fashion house")
 - [ ] Blog section shows 3 cards with date, title, and "Read More"
 - [ ] Footer has 4 columns, dark background, newsletter input, Component Dock link
 - [ ] No references to ColorLib in app code — provenance only in spec/TEMPLATES.md
-- [ ] `apps/modehaus` package named `@free-react-templates/modehaus`
+- [x] `apps/modehaus` package named `@free-react-templates/modehaus` — superseded: shipped as `apps/threadline`
 - [ ] `public/CNAME` contains `modehaus.free.componentdock.com`
 - [ ] Placeholder images use `https://picsum.photos/seed/modehaus-<n>/<w>/<h>`
 - [ ] 100% test coverage on changed files

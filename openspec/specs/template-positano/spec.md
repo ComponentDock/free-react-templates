@@ -462,7 +462,7 @@ Dock"). The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/positano` exists; package `@free-react-templates/positano`;
+- [x] `apps/positano` exists; package `@free-react-templates/positano`; — superseded: shipped as `apps/merry`
       `public/CNAME` = `positano.free.componentdock.com`; `homepage` =
       `https://positano.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (weights 300, 400, 500, 700);

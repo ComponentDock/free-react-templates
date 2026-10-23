@@ -116,7 +116,7 @@
 
 ## Tasks (implementation checklist)
 
-- [ ] Scaffold `apps/studia` from the simplest existing app; rename package
+- [x] Scaffold `apps/studia` from the simplest existing app; rename package — superseded: shipped as `apps/scholar`
       to `@free-react-templates/studia`; `public/CNAME`
       `studia.free.componentdock.com`; homepage
       `https://studia.free.componentdock.com`; `npm install` at root so the

@@ -373,7 +373,7 @@ and a document title.
       `#222222`/`#777777`; Open Sans body + Roboto accents via Google Fonts
       `<link>`; button radii 5px (orange CTA) / 10px (price + service
       cards).
-- [ ] No ColorLib references in `apps/nexnode` (provenance lives in this
+- [x] No ColorLib references in `apps/nexnode` (provenance lives in this — superseded: shipped as `apps/uplink`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] All images picsum-seeded (`picsum.photos/seed/nexnode-N/w/h`); hero

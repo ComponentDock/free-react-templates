@@ -6,7 +6,7 @@
 
 ## Pre-implementation
 - [ ] Verify spec validates: `npm run spec:validate`
-- [ ] Copy simplest existing app as scaffold (e.g. `apps/abjure` → `apps/queryhub`)
+- [x] Copy simplest existing app as scaffold (e.g. `apps/abjure` → `apps/queryhub`) — superseded: shipped as `apps/searchpad`
 - [ ] Rename package to `@free-react-templates/queryhub`
 - [ ] Update `public/CNAME` to `queryhub.free.componentdock.com`
 - [ ] Update `homepage` in `package.json` to `https://queryhub.free.componentdock.com`

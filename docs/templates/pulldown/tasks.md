@@ -9,7 +9,7 @@
 ### Phase 1: Spec Review & Setup
 
 - [ ] Read and understand the spec at `openspec/specs/template-pulldown/spec.md`
-- [ ] Create app folder: `apps/pulldown`
+- [x] Create app folder: `apps/pulldown` — superseded: shipped as `apps/dropkit`
 - [ ] Copy minimal Vite+React+TS template from simplest existing app (e.g., `apps/abjure`)
 - [ ] Rename package to `@free-react-templates/pulldown`
 - [ ] Run `npm install` at repo root to register workspace

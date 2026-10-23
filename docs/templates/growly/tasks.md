@@ -1,4 +1,8 @@
 # Growly (ColorLib Repeat) — Tasks & Design Notes
+<!-- prep-status: shipped-as=loop -->
+> **SHIPPED-UNDER** — the ColorLib `repeat` design this prep describes shipped
+> as `apps/loop` (<https://loop.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Recreation of ColorLib "Repeat" — free Bootstrap 5 business/agency
 > website template (https://colorlib.com/wp/template/repeat/) under the NEW
@@ -103,7 +107,7 @@ around`: LEFT `col-lg-4`: h2 "Get anything done in one place" +
 
 ## Implementation tasks (TDD, in order)
 
-- [ ] Scaffold: copy simplest existing app → `apps/growly`, rename package
+- [x] Scaffold: copy simplest existing app → `apps/growly`, rename package — superseded: shipped as `apps/loop`
       `@free-react-templates/growly`, register workspace
       (`npm install --package-lock-only`), `public/CNAME` =
       `growly.free.componentdock.com`, homepage

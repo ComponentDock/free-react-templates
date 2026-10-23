@@ -178,7 +178,7 @@
 
 - [ ] `npm run spec:validate` for `template-moment` (spec exists on main;
       implementer re-validates after any spec touch)
-- [ ] Scaffold `apps/moment` from the simplest existing app (e.g.
+- [x] Scaffold `apps/moment` from the simplest existing app (e.g — superseded: shipped as `apps/timely`.
       `apps/aurora`); rename package to `@free-react-templates/moment`;
       `npm install` at root so `package-lock.json` registers the workspace
       (deploy Action runs `npm ci` — stale lockfile fails the build)

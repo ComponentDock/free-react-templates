@@ -144,5 +144,5 @@ Background:
 - [ ] No ColorLib references in app code (comments, strings, URLs)
 - [ ] Placeholder images use `picsum.photos/seed/bizcraft-*`
 - [ ] Responsive: hamburger nav at mobile, stacked sections
-- [ ] `apps/bizcraft/public/CNAME` contains `bizcraft.free.componentdock.com`
+- [x] `apps/bizcraft/public/CNAME` contains `bizcraft.free.componentdock.com` — superseded: shipped as `apps/bizmark`
 - [ ] `homepage` in `package.json` set to `https://bizcraft.free.componentdock.com`

@@ -1,4 +1,8 @@
 # HouseCraft — Design Notes & Tasks
+<!-- prep-status: shipped-as=homeward -->
+> **SHIPPED-UNDER** — the ColorLib `myhome` design this prep describes shipped
+> as `apps/homeward` (<https://homeward.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Myhome (https://preview.colorlib.com/theme/myhome/)
 New name: `housecraft`

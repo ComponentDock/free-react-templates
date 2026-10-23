@@ -71,7 +71,7 @@
 
 ## Tasks (implementation order, TDD — tests first)
 
-- [ ] Scaffold `apps/epilogue` (copy the simplest existing app, rename
+- [x] Scaffold `apps/epilogue` (copy the simplest existing app, rename — superseded: shipped as `apps/pedestal`
       package to `@free-react-templates/epilogue`; register `injectUiSource()`
       in `vite.config.ts`; `npm install` at root so the lockfile registers
       the workspace; CNAME `epilogue.free.componentdock.com`; homepage

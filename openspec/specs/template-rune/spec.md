@@ -346,7 +346,7 @@ The system SHALL carry the repo-standard footer attribution.
 
 ## Verification checklist
 
-- [ ] App folder `apps/rune` (package `@free-react-templates/rune`,
+- [x] App folder `apps/rune` (package `@free-react-templates/rune`, — superseded: shipped as `apps/arcane`
       `public/CNAME` = `rune.free.componentdock.com`, `homepage`
       https://rune.free.componentdock.com)
 - [ ] Mesh-gradient background recreated in CSS (no image asset)

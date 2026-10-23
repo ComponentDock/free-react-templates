@@ -6,7 +6,7 @@
 
 ## Phase 1: Setup
 
-- [ ] Create `apps/shopsteps/` from simplest existing app template
+- [x] Create `apps/shopsteps/` from simplest existing app template — superseded: shipped as `apps/wizlane`
 - [ ] Rename package to `@free-react-templates/shopsteps`
 - [ ] Set CNAME to `shopsteps.free.componentdock.com`
 - [ ] Set homepage to `https://shopsteps.free.componentdock.com`

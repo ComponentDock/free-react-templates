@@ -610,7 +610,7 @@ The system SHALL set a descriptive document title.
       produces a BMI result.
 - [ ] Footer: 4 widgets (About/Explore/Contacts/Gallery); Component Dock
       link present; source ColorLib attribution absent.
-- [ ] No "dazko"/"colorlib" strings anywhere in `apps/ironcore` (provenance
+- [x] No "dazko"/"colorlib" strings anywhere in `apps/ironcore` (provenance — superseded: shipped as `apps/kinesis`
       only in spec/TEMPLATES.md/PR).
 - [ ] 100% coverage in tests; `npm run verify:app` green; visual QA the
       built app on desktop + mobile.

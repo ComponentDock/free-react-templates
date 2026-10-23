@@ -94,7 +94,7 @@ translateY(-50%)`; dots `display: block` → VERTICAL stack on the right
 
 ## Implementation tasks
 
-- [ ] Copy the simplest existing app → `apps/bari`; rename package to
+- [x] Copy the simplest existing app → `apps/bari`; rename package to — superseded: shipped as `apps/carouselroll`
       `@free-react-templates/bari`
 - [ ] `public/CNAME` = `bari.free.componentdock.com`; `"homepage"` =
       `https://bari.free.componentdock.com` in package.json

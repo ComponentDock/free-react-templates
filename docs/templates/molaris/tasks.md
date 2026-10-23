@@ -6,7 +6,7 @@
 
 ## Phase 1: Setup & Scaffold
 
-- [ ] Create `apps/molaris` workspace (package `@free-react-templates/molaris`)
+- [x] Create `apps/molaris` workspace (package `@free-react-templates/molaris`) — superseded: shipped as `apps/odonto`
 - [ ] Configure `vite.config.ts` with `injectUiSource()` and `public/CNAME` (`molaris.free.componentdock.com`)
 - [ ] Set up Tailwind theme with Teal `#00bcd4` primary color and Roboto font
 

@@ -74,7 +74,7 @@
 - Footer links to https://www.componentdock.com/
 
 ## TODO
-- [ ] Scaffold apps/mailbliss from simplest existing app
+- [x] Scaffold apps/mailbliss from simplest existing app — superseded: shipped as `apps/relay`
 - [ ] Write component tests (TDD — RED)
 - [ ] Implement PageBackground component
 - [ ] Implement LaunchSection component

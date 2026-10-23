@@ -433,7 +433,7 @@ convention on every template (the original has no footer).
       trigger `#f8f9fa` / hover `#e2e6ea` + border `#d3d9df`, placeholder
       `#999`, text `#212529`, hover fill `#f8f9fa`, menu border
       `rgba(0,0,0,0.15)`; radius 4px; Lato 400 via Google Fonts `<link>`.
-- [ ] No ColorLib references in `apps/cull` (provenance lives in this
+- [x] No ColorLib references in `apps/cull` (provenance lives in this — superseded: shipped as `apps/filterpick`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react

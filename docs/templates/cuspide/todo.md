@@ -37,7 +37,7 @@ Preview: https://preview.colorlib.com/theme/dente/
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/cuspide` from simplest existing app
+- [x] Scaffold `apps/cuspide` from simplest existing app — superseded: shipped as `apps/brightoral`
 - [ ] Set up package.json, vite.config.ts, index.html with Google Fonts (Nunito Sans)
 - [ ] Create index.css with Tailwind + custom tokens (@theme for brand red #f23a2e, beige #ece8d9, charcoal #333333)
 - [ ] Implement TopBar component (social icons, contact info)

@@ -111,7 +111,7 @@ sans-serif`, NO border-top on the footer itself.
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/finale` (copy simplest existing app; package
+- [x] Scaffold `apps/finale` (copy simplest existing app; package — superseded: shipped as `apps/subdivide`
       `@free-react-templates/finale`; `public/CNAME` =
       `finale.free.componentdock.com`; homepage =
       `https://finale.free.componentdock.com`); register the workspace in

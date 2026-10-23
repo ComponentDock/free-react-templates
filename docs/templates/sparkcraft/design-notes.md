@@ -86,7 +86,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/sparkcraft/` from simplest existing app
+- [x] Scaffold `apps/sparkcraft/` from simplest existing app — superseded: shipped as `apps/luminary`
 - [ ] Rename package to `@free-react-templates/sparkcraft`
 - [ ] Set up `public/CNAME` → `sparkcraft.free.componentdock.com`
 - [ ] Add Rubik font via Google Fonts `<link>` in index.html

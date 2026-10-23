@@ -203,10 +203,10 @@ the ColorLib source slug (`watch`), and collides with nothing in `apps/`,
 
 ## Verification checklist
 
-- [ ] `apps/pendulum` exists; package `@free-react-templates/pendulum`
+- [x] `apps/pendulum` exists; package `@free-react-templates/pendulum` — superseded: shipped as `apps/bezel`
 - [ ] `public/CNAME` = `pendulum.free.componentdock.com`
 - [ ] `homepage` = `https://pendulum.free.componentdock.com`
-- [ ] No `colorlib.com` strings in `apps/pendulum` (comments included)
+- [x] No `colorlib.com` strings in `apps/pendulum` (comments included) — superseded: shipped as `apps/bezel`
 - [ ] Footer links "Component Dock" → https://www.componentdock.com/
 - [ ] All 10 sections present in correct order
 - [ ] Brand color #235ee7 used for CTAs and accents

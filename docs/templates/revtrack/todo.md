@@ -7,7 +7,7 @@
 ## Pre-implementation
 - [x] Spec written (openspec/specs/template-revtrack/spec.md)
 - [x] Design notes written (docs/templates/revtrack/design-notes.md)
-- [ ] Copy simplest existing app as scaffold (e.g. apps/aurora → apps/revtrack)
+- [x] Copy simplest existing app as scaffold (e.g. apps/aurora → apps/revtrack) — superseded: shipped as `apps/drivego`
 - [ ] Rename package to @free-react-templates/revtrack
 - [ ] Run npm install at root to register workspace
 - [ ] Create public/CNAME with revtrack.free.componentdock.com

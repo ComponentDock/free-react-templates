@@ -87,7 +87,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/caviar-free-templ
 
 ## Implementation Tasks
 
-- [ ] Create `apps/platine/` from simplest existing app scaffold
+- [x] Create `apps/platine/` from simplest existing app scaffold — superseded: shipped as `apps/brasserie`
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Create `src/index.css` with Tailwind + brand tokens (@theme)
 - [ ] Implement `Navbar.tsx` — transparent → sticky, mobile toggle

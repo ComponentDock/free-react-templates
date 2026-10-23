@@ -1,4 +1,8 @@
 # Blankspace (ColorLib Whitespace) — Tasks & Design Notes
+<!-- prep-status: shipped-as=airy -->
+> **SHIPPED-UNDER** — the ColorLib `whitespace` design this prep describes shipped
+> as `apps/airy` (<https://airy.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` under the new name **Blankspace**
 > (ColorLib source: "whitespace").
@@ -48,7 +52,7 @@
 - [ ] Write `openspec/specs/template-blankspace/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/blankspace` (copy the simplest existing SaaS landing app
+- [x] Create `apps/blankspace` (copy the simplest existing SaaS landing app — superseded: shipped as `apps/airy`
       pattern; rename package to `@free-react-templates/blankspace`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.

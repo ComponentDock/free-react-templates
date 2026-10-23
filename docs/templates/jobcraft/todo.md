@@ -35,7 +35,7 @@
 
 ## Implementation tasks
 
-- [ ] Create app scaffold: `apps/jobcraft/` from simplest existing app
+- [x] Create app scaffold: `apps/jobcraft/` from simplest existing app — superseded: shipped as `apps/jobquest`
 - [ ] Set up Tailwind theme tokens in index.css (Nunito font, #1644ba primary)
 - [ ] Build Navbar component with responsive mobile menu
 - [ ] Build Hero section with background image overlay + search form

@@ -99,7 +99,7 @@
 
 ## TODO (prep stream does NOT implement)
 
-- [ ] Implementer: copy simplest existing app → `apps/simmer`
+- [x] Implementer: copy simplest existing app → `apps/simmer` — superseded: shipped as `apps/zesty`
 - [ ] Implementer: write tests (red) per spec scenarios, then
       implementation (green) — 100% coverage
 - [ ] Implementer: `scripts/verify-app.sh simmer` until green

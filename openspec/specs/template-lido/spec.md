@@ -325,7 +325,7 @@ The system SHALL render a minimal footer with that link.
 
 ## Verification checklist
 
-- [ ] `apps/lido` exists; package `@free-react-templates/lido`;
+- [x] `apps/lido` exists; package `@free-react-templates/lido`; — superseded: shipped as `apps/carosle`
       `public/CNAME` = `lido.free.componentdock.com`; `homepage` =
       `https://lido.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins (weights 300, 400, 500, 700);

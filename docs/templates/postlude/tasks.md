@@ -109,7 +109,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/postlude` (copy simplest existing app; package
+- [x] Scaffold `apps/postlude` (copy simplest existing app; package — superseded: shipped as `apps/footerbreeze`
       `@free-react-templates/postlude`; `public/CNAME` =
       `postlude.free.componentdock.com`; homepage =
       `https://postlude.free.componentdock.com`); register the workspace in

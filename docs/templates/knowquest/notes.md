@@ -37,7 +37,7 @@ New name: knowquest · Stack: React 19, Vite, Tailwind 4, TypeScript
 
 ## Task Outline
 
-- [ ] Scaffold app: `apps/knowquest/` from simplest existing app, rename package
+- [x] Scaffold app: `apps/knowquest/` from simplest existing app, rename package — superseded: shipped as `apps/erudit`
 - [ ] Add Rubik font to index.html
 - [ ] Create Tailwind theme tokens: brand blue, dark bg, light grey bg
 - [ ] Build TopBar component

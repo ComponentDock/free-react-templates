@@ -21,7 +21,7 @@ Recreation of ColorLib **Modal 10** (`https://colorlib.com/wp/template/modal-10/
 
 ## Task Breakdown for Implementer
 
-- [ ] Scaffold app `apps/poppy` (copy from simplest existing app, update package name to `@free-react-templates/poppy`, add `public/CNAME` with `poppy.free.componentdock.com`).
+- [x] Scaffold app `apps/poppy` (copy from simplest existing app, update package name to `@free-react-templates/poppy`, add `public/CNAME` with `poppy.free.componentdock.com`) — superseded: shipped as `apps/bellpush`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Implement design tokens in `src/index.css` (`@theme`): brand blue `#3e64ff`, gradient colors `#dd00ff`/`#3e65ff`, icon circle bg `rgba(255,255,255,0.2)`, input bg `rgba(0,0,0,0.05)`, font Poppins.
 - [ ] Build components: PageShell (heading + launch button), NewsletterModal (overlay + dialog + gradient header + close button + body with icon + form), Footer.

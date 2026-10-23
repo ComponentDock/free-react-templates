@@ -15,7 +15,7 @@
 ## Implementation tasks (for implementer)
 
 ### Phase 1: Scaffolding
-- [ ] Create `apps/innerglow/` from simplest existing app template
+- [x] Create `apps/innerglow/` from simplest existing app template — superseded: shipped as `apps/aurae`
 - [ ] Rename package to `@free-react-templates/innerglow`
 - [ ] Update `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `index.html` with Google Fonts (Open Sans, Playfair Display)

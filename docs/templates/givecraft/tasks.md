@@ -12,7 +12,7 @@
 ## Implementation tasks (for implementers)
 
 ### Setup
-- [ ] Copy simplest existing app (e.g. `abjure`) to `apps/givecraft`
+- [x] Copy simplest existing app (e.g. `abjure`) to `apps/givecraft` — superseded: shipped as `apps/shores`
 - [ ] Rename package to `@free-react-templates/givecraft`
 - [ ] Update `package.json` homepage to `https://givecraft.free.componentdock.com`
 - [ ] Create `public/CNAME` with `givecraft.free.componentdock.com`
@@ -43,6 +43,6 @@
 
 ### Verification
 - [ ] `scripts/verify-app.sh givecraft` passes
-- [ ] No ColorLib references in `apps/givecraft/`
+- [x] No ColorLib references in `apps/givecraft/` — superseded: shipped as `apps/shores`
 - [ ] Footer links to ComponentDock
 - [ ] `npm run readme:status` updated

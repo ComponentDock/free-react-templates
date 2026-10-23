@@ -103,7 +103,7 @@
 ## Todo (implementation order)
 
 - [ ] `npm run spec:validate` passes (spec: `openspec/specs/template-charis/`)
-- [ ] Scaffold `apps/charis` (copy simplest existing app; package
+- [x] Scaffold `apps/charis` (copy simplest existing app; package — superseded: shipped as `apps/cuddle`
       `@free-react-templates/charis`; `public/CNAME` =
       `charis.free.componentdock.com`; homepage
       `https://charis.free.componentdock.com`); run `npm install` at

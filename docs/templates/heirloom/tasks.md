@@ -12,7 +12,7 @@ New name: heirloom
 
 ### Setup
 
-- [ ] Create `apps/heirloom/` (copy simplest existing app, rename package to `@free-react-templates/heirloom`)
+- [x] Create `apps/heirloom/` (copy simplest existing app, rename package to `@free-react-templates/heirloom`) — superseded: shipped as `apps/linnet`
 - [ ] Add `public/CNAME` with `heirloom.free.componentdock.com`
 - [ ] Set `homepage` in package.json to `https://heirloom.free.componentdock.com`
 - [ ] Configure `vite.config.ts` with `injectUiSource()` pattern

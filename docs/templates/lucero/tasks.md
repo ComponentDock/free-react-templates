@@ -1,4 +1,8 @@
 # Lucero — Design Notes & Task Outline
+<!-- prep-status: shipped-as=calypso -->
+> **SHIPPED-UNDER** — the ColorLib `calvin` design this prep describes shipped
+> as `apps/calypso` (<https://calypso.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Source
 - ColorLib Calvin: https://colorlib.com/wp/template/calvin/
@@ -80,7 +84,7 @@
 
 ## Implementation tasks
 
-- [ ] Create apps/lucero workspace (copy simplest existing app, rename package)
+- [x] Create apps/lucero workspace (copy simplest existing app, rename package) — superseded: shipped as `apps/calypso`
 - [ ] Set up index.html with Google Fonts (Roboto Condensed + DM Sans)
 - [ ] Create index.css with Tailwind theme tokens (brand color, fonts)
 - [ ] Implement Navbar component (transparent, sticky, hamburger)

@@ -44,7 +44,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/hostera` from existing template (copy simplest app, rename package)
+- [x] Scaffold `apps/hostera` from existing template (copy simplest app, rename package) — superseded: shipped as `apps/hostpeak`
 - [ ] Set up Google Fonts links in `index.html` (Roboto + Lato)
 - [ ] Define Tailwind theme tokens in `index.css` (@theme block with brand colors)
 - [ ] Build Navbar component (transparent, sticky on scroll)

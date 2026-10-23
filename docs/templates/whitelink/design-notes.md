@@ -65,7 +65,7 @@
 
 ## Implementer checklist
 
-- [ ] Create `apps/whitelink/` (copy simplest existing footer app as base)
+- [x] Create `apps/whitelink/` (copy simplest existing footer app as base) — superseded: shipped as `apps/cairn`
 - [ ] Set package name: `@free-react-templates/whitelink`
 - [ ] Set `public/CNAME`: `whitelink.free.componentdock.com`
 - [ ] Set `homepage` in package.json: `https://whitelink.free.componentdock.com`

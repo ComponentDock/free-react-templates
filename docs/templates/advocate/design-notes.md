@@ -85,7 +85,7 @@
 
 ### 1. App Scaffold
 
-- [ ] Create `apps/advocate/` with Vite + React + TS + Tailwind 4 workspace
+- [x] Create `apps/advocate/` with Vite + React + TS + Tailwind 4 workspace — superseded: shipped as `apps/lawguard`
 - [ ] Configure `vite.config.ts` with `injectUiSource()` and proper paths
 - [ ] Set `package.json` name to `@free-react-templates/advocate`
 - [ ] Add `public/CNAME` → `advocate.free.componentdock.com`

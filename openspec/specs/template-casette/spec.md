@@ -276,4 +276,4 @@ As a mobile visitor, the template adapts to my screen.
 - [ ] Responsive: navbar collapses, cards stack, hero stacks
 - [ ] No ColorLib references in app code
 - [ ] Footer branded "Component Dock"
-- [ ] `apps/casette` folder, `@free-react-templates/casette` package
+- [x] `apps/casette` folder, `@free-react-templates/casette` package — superseded: shipped as `apps/appnova`

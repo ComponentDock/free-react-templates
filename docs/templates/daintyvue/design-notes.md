@@ -44,7 +44,7 @@ Section padding: 120px (.section-gap)
 
 ## Implementation Tasks
 
-- [ ] Create `apps/daintyvue/` (copy simplest existing app, rename package)
+- [x] Create `apps/daintyvue/` (copy simplest existing app, rename package) — superseded: shipped as `apps/filament`
 - [ ] Set up `vite.config.ts` with `injectUiSource()` helper
 - [ ] Create `src/index.css` with Tailwind `@theme` tokens for pink + gradient
 - [ ] Add Google Fonts link (Poppins) in `index.html`

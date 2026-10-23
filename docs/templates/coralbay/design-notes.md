@@ -87,7 +87,7 @@
 
 ## Implementation tasks
 
-- [ ] Create `apps/coralbay/` from a boilerplate app, rename package
+- [x] Create `apps/coralbay/` from a boilerplate app, rename package — superseded: shipped as `apps/seaview`
 - [ ] Write `src/components/Navbar.tsx`
 - [ ] Write `src/components/Hero.tsx`
 - [ ] Write `src/components/BookingForm.tsx`

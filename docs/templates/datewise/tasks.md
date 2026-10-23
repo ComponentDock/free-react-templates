@@ -24,7 +24,7 @@
 
 ## Implementation Steps
 
-- [ ] Create `apps/datewise` workspace (copy simplest template, rename package to `@free-react-templates/datewise`).
+- [x] Create `apps/datewise` workspace (copy simplest template, rename package to `@free-react-templates/datewise`) — superseded: shipped as `apps/chronogrid`.
 - [ ] Write unit tests for Datewise components (Navbar, CalendarGrid, VerticalSidebar, Footer) achieving 100% coverage.
 - [ ] Implement components.
 - [ ] Verify with `scripts/verify-app.sh datewise`.

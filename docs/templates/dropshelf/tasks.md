@@ -64,7 +64,7 @@
 
 ## TODO
 
-- [ ] Create `apps/dropshelf/` workspace
+- [x] Create `apps/dropshelf/` workspace — superseded: shipped as `apps/dropslide`
 - [ ] Create `DropShelf.tsx` component with trigger + menu
 - [ ] Create `App.tsx` composing the page layout
 - [ ] Write tests (Vitest + RTL) for open/close, click-outside, hover states

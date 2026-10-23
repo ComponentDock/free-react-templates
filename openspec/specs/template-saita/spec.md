@@ -1,4 +1,9 @@
 # Spec: Saita (Digital Agency)
+<!-- prep-status: shipped-as=pulse -->
+> **SHIPPED-UNDER** — the ColorLib `saita` design this prep describes already
+> ships as `apps/pulse` (<https://pulse.free.componentdock.com>).
+> Do not scaffold `apps/saita`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pulse/spec.md`.
 
 ## Purpose
 

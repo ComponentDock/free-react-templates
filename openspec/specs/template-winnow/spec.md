@@ -429,7 +429,7 @@ convention on every template (the original has no footer).
       `rgba(191,191,191,0.87)`, caret `rgba(0,0,0,0.87)`, rows black 13px,
       summary `rgba(0,0,0,0.8)`, label gray; radius 4px; Lato 400 via
       Google Fonts `<link>`.
-- [ ] No ColorLib references in `apps/winnow` (provenance lives in this
+- [x] No ColorLib references in `apps/winnow` (provenance lives in this — superseded: shipped as `apps/combobox`
       spec, TEMPLATES.md, and the PR only).
 - [ ] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react

@@ -8,7 +8,7 @@
 
 ### Phase 1: Scaffold & Config
 
-- [ ] Create `apps/chalet/` from template (copy `apps/aurora` or simplest existing)
+- [x] Create `apps/chalet/` from template (copy `apps/aurora` or simplest existing) — superseded: shipped as `apps/lenscape`
 - [ ] Update `package.json`: name `@free-react-templates/chalet`, homepage `https://chalet.free.componentdock.com`
 - [ ] Add `public/CNAME` with `chalet.free.componentdock.com`
 - [ ] Configure `vite.config.ts` with `injectUiSource()` (copy pattern from existing app)

@@ -79,7 +79,7 @@ responsive: { 0: { items: 1 }, 600: { items: 2 }, 1000: { items: 3 } } })`
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/capri` (copy simplest existing app; package
+- [x] Scaffold `apps/capri` (copy simplest existing app; package — superseded: shipped as `apps/slidebay`
       `@free-react-templates/capri`; `public/CNAME` =
       `capri.free.componentdock.com`; homepage `https://capri.free.componentdock.com`);
       root `npm install` + lockfile check (`grep -c

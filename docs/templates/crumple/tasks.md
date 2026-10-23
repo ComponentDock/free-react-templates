@@ -28,7 +28,7 @@
 
 ### 1. Scaffold
 
-- [ ] Create `apps/crumple/` from simplest existing app
+- [x] Create `apps/crumple/` from simplest existing app — superseded: shipped as `apps/fanfold`
 - [ ] Update package.json: `@free-react-templates/crumple`
 - [ ] Set `public/CNAME` → `crumple.free.componentdock.com`
 - [ ] Set `homepage` in package.json

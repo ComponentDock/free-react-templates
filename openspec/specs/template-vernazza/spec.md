@@ -325,7 +325,7 @@ https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] `apps/vernazza` exists; package `@free-react-templates/vernazza`;
+- [x] `apps/vernazza` exists; package `@free-react-templates/vernazza`; — superseded: shipped as `apps/spinwheel`
       `public/CNAME` = `vernazza.free.componentdock.com`; `homepage` =
       `https://vernazza.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300/400/500); no

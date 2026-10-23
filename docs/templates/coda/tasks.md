@@ -100,7 +100,7 @@ li:last-child a` `padding-left: 0` (source typo — keep as-is). Copy:
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/coda` (copy simplest existing app; package
+- [x] Scaffold `apps/coda` (copy simplest existing app; package — superseded: shipped as `apps/groundwork`
       `@free-react-templates/coda`; `public/CNAME` =
       `coda.free.componentdock.com`; homepage =
       `https://coda.free.componentdock.com`); register the workspace in

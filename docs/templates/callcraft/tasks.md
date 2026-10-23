@@ -78,7 +78,7 @@ Brand area = `#f9f9ff`; Footer = `#222`.
 ## Implementation tasks
 
 ### Phase 1: Scaffold
-- [ ] Create `apps/callcraft/` from simplest existing app (copy + rename)
+- [x] Create `apps/callcraft/` from simplest existing app (copy + rename) — superseded: shipped as `apps/dialpad`
 - [ ] Rename package to `@free-react-templates/callcraft`
 - [ ] Set `homepage` to `https://callcraft.free.componentdock.com`
 - [ ] Create `public/CNAME` with `callcraft.free.componentdock.com`

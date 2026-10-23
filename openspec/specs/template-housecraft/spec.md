@@ -1,4 +1,9 @@
 # Template: HouseCraft (Real Estate)
+<!-- prep-status: shipped-as=homeward -->
+> **SHIPPED-UNDER** — the ColorLib `myhome` design this prep describes already
+> ships as `apps/homeward` (<https://homeward.free.componentdock.com>).
+> Do not scaffold `apps/housecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-homeward/spec.md`.
 
 ## Purpose
 

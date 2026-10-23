@@ -154,7 +154,7 @@ Extracted from the live preview's `css/custom-bs.css` and `css/style.css`:
 
 ## Verification checklist
 
-- [ ] `apps/hirely/` created, `package.json` uses `@free-react-templates/hirely`
+- [x] `apps/hirely/` created, `package.json` uses `@free-react-templates/hirely` — superseded: shipped as `apps/jobquest`
 - [ ] `public/CNAME` contains `hirely.free.componentdock.com`
 - [ ] `vite.config.ts` includes `injectUiSource()`
 - [ ] `index.html` loads Google Fonts (Nunito)

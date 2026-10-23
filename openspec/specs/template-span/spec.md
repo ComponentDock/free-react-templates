@@ -432,7 +432,7 @@ monorepo convention (replaces the source demo's absence of any footer).
 
 ## Verification checklist
 
-- [ ] `apps/span` exists; package `@free-react-templates/span`;
+- [x] `apps/span` exists; package `@free-react-templates/span`; — superseded: shipped as `apps/schedura`
       `public/CNAME` = `span.free.componentdock.com`; `homepage` =
       `https://span.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (300, 400, 500, 700); no

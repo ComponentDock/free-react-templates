@@ -203,15 +203,15 @@ Extracted from the preview's `css/style.css` (custom styles, after Bootstrap
 
 - [ ] `openspec/specs/template-mailpuff/spec.md` exists and passes
   `npm run spec:validate`
-- [ ] `apps/mailpuff/` created with standard Vite + React + Tailwind + TS
+- [x] `apps/mailpuff/` created with standard Vite + React + Tailwind + TS — superseded: shipped as `apps/relay`
   scaffold
-- [ ] `apps/mailpuff/package.json` has name
+- [x] `apps/mailpuff/package.json` has name — superseded: shipped as `apps/relay`
   `@free-react-templates/mailpuff`
-- [ ] `apps/mailpuff/public/CNAME` contains `mailpuff.free.componentdock.com`
-- [ ] `apps/mailpuff/vite.config.ts` registers `injectUiSource()`
+- [x] `apps/mailpuff/public/CNAME` contains `mailpuff.free.componentdock.com` — superseded: shipped as `apps/relay`
+- [x] `apps/mailpuff/vite.config.ts` registers `injectUiSource()` — superseded: shipped as `apps/relay`
 - [ ] `npm install` at repo root updates `package-lock.json`
 - [ ] Footer links to `https://www.componentdock.com/`
-- [ ] No references to "Colorlib" or "colorlib" in `apps/mailpuff/`
+- [x] No references to "Colorlib" or "colorlib" in `apps/mailpuff/` — superseded: shipped as `apps/relay`
 - [ ] Gradient header: `linear-gradient(45deg, #915eff, #ff8e59)`
 - [ ] Skew cuts: `::before` / `::after` with `skewY(10deg)` / `skewY(-10deg)`
 - [ ] Email icon in 200×200px circular container

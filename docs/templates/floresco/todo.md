@@ -12,7 +12,7 @@
 ## Implementation Order
 
 ### Phase 1 — Foundation
-- [ ] Create `apps/floresco/` (copy simplest existing app, rename package to `@free-react-templates/floresco`)
+- [x] Create `apps/floresco/` (copy simplest existing app, rename package to `@free-react-templates/floresco`) — superseded: shipped as `apps/bloomfield`
 - [ ] Set up `public/CNAME` → `floresco.free.componentdock.com`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `index.css` with Tailwind entry + `@theme` tokens for brand `#f45d96`

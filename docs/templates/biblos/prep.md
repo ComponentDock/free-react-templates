@@ -9,7 +9,7 @@
 
 ## Task checklist (for implementer)
 
-- [ ] Create `apps/biblos/` — copy simplest existing app, rename package to `@free-react-templates/biblos`
+- [x] Create `apps/biblos/` — copy simplest existing app, rename package to `@free-react-templates/biblos` — superseded: shipped as `apps/bookcraft`
 - [ ] Add Google Fonts `<link>` for Oswald + Roboto in `index.html`
 - [ ] Set `src/index.css` theme tokens: brand color `#1C63FB`, Oswald for headings, Roboto for body
 - [ ] Implement `Navbar.tsx` — sticky top, logo left, links right, mobile hamburger

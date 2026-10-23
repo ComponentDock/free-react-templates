@@ -257,8 +257,8 @@ https://www.componentdock.com/ is visible
 - [ ] All placeholder images use `https://picsum.photos/seed/physiohub-<n>/<w>/<h>`
 - [ ] Google Fonts loaded via `<link>` in `index.html`
 - [ ] Icons from `lucide-react`
-- [ ] `apps/physiohub/public/CNAME` contains `physiohub.free.componentdock.com`
-- [ ] `apps/physiohub/package.json` has `"homepage": "https://physiohub.free.componentdock.com"`
+- [x] `apps/physiohub/public/CNAME` contains `physiohub.free.componentdock.com` — superseded: shipped as `apps/kinectwell`
+- [x] `apps/physiohub/package.json` has `"homepage": "https://physiohub.free.componentdock.com"` — superseded: shipped as `apps/kinectwell`
 - [ ] `npm install` at repo root runs successfully after creating the workspace
 - [ ] Tests pass with 100% coverage
 - [ ] Typecheck passes

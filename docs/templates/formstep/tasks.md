@@ -14,7 +14,7 @@
 
 ## Implementation
 
-- [ ] Scaffold `apps/formstep` workspace (copy simplest app, rename package to `@free-react-templates/formstep`)
+- [x] Scaffold `apps/formstep` workspace (copy simplest app, rename package to `@free-react-templates/formstep`) — superseded: shipped as `apps/conjure`
 - [ ] Add Google Fonts (Mulish) link to `index.html`
 - [ ] Set up Tailwind theme tokens in `src/index.css`
 - [ ] Build `WizardSteps` component (horizontal step indicator)
@@ -47,5 +47,5 @@
 - [ ] `npx oxlint src/` passes
 - [ ] `npm run test:coverage` — 100% on all metrics
 - [ ] `npm run build` succeeds
-- [ ] No ColorLib references in `apps/formstep/` code
+- [x] No ColorLib references in `apps/formstep/` code — superseded: shipped as `apps/conjure`
 - [ ] Footer links to Component Dock

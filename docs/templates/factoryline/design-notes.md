@@ -105,7 +105,7 @@
 
 ## Implementation tasks
 
-- [ ] Scaffold `apps/factoryline/` from simplest existing app
+- [x] Scaffold `apps/factoryline/` from simplest existing app — superseded: shipped as `apps/cogwork`
 - [ ] Rename package to `@free-react-templates/factoryline`
 - [ ] Set up `public/CNAME` → `factoryline.free.componentdock.com`
 - [ ] Add Montserrat + Oxygen fonts via Google Fonts `<link>` in index.html

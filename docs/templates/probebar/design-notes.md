@@ -48,7 +48,7 @@
 - Added per convention: "Made with Component Dock" + link to componentdock.com
 
 ## Tasks
-- [ ] Create apps/probebar/ with standard Vite + React 19 + Tailwind 4 + TS setup
+- [x] Create apps/probebar/ with standard Vite + React 19 + Tailwind 4 + TS setup — superseded: shipped as `apps/searchgate`
 - [ ] Implement SearchBar component (green circle + input)
 - [ ] Add centered heading
 - [ ] Add responsive sizing

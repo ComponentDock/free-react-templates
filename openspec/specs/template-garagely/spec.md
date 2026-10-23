@@ -129,7 +129,7 @@ Recreation of ColorLib **AutoMotive** (`https://colorlib.com/wp/template/automot
 
 ## Verification checklist
 
-- [ ] App folder created at `apps/garagely` with valid `package.json` (`@free-react-templates/garagely`)
+- [x] App folder created at `apps/garagely` with valid `package.json` (`@free-react-templates/garagely`) — superseded: shipped as `apps/veloce`
 - [ ] `vite.config.ts` includes `injectUiSource()` helper
 - [ ] `public/CNAME` contains `garagely.free.componentdock.com`
 - [ ] Footer links `https://www.componentdock.com/` (Component Dock)

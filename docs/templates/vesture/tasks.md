@@ -96,7 +96,7 @@
 
 ## Implementation tasks (TDD, 100% coverage)
 
-- [ ] Scaffold `apps/vesture` (copy simplest existing app, rename package
+- [x] Scaffold `apps/vesture` (copy simplest existing app, rename package — superseded: shipped as `apps/drape`
       `@free-react-templates/vesture`); `index.html` with Montserrat +
       Cookie Google Fonts links + title "Vesture — Fashion Store Template"
 - [ ] Spec validation: `npm run spec:validate` (this spec)

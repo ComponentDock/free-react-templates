@@ -132,7 +132,7 @@ translateX(-50%); z-index: 99; width: 100%;` — positioned against
 
 ## Implementation task outline
 
-- [ ] Scaffold `apps/amalfi` (copy simplest existing app; package
+- [x] Scaffold `apps/amalfi` (copy simplest existing app; package — superseded: shipped as `apps/carouseten`
       `@free-react-templates/amalfi`; `public/CNAME` =
       `amalfi.free.componentdock.com`; homepage
       `https://amalfi.free.componentdock.com`); root `npm install` +

@@ -1,4 +1,8 @@
 # CarouselCraft (ColorLib Carousel 15) — Prep Outline & Research
+<!-- prep-status: shipped-as=carouseldrift -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-15` design this prep describes shipped
+> as `apps/carouseldrift` (<https://carouseldrift.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 ## Overview
 
@@ -17,7 +21,7 @@
 
 ## Task Breakdown for Implementer
 
-- [ ] Initialize `apps/carouselcraft` workspace package.
+- [x] Initialize `apps/carouselcraft` workspace package — superseded: shipped as `apps/carouseldrift`.
 - [ ] Configure `vite.config.ts` with `injectUiSource()`.
 - [ ] Implement components (`Navbar`, `Hero`, `Carousel`, `ThumbnailStrip`, `Features`, `Footer`).
 - [ ] Write comprehensive unit tests with 100% test coverage.

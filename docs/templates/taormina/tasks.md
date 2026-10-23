@@ -88,7 +88,7 @@ display: block !important }`, `.image` gets `height: 300px`; nav hidden;
 
 ## Implementation tasks
 
-- [ ] Copy the simplest existing app → `apps/taormina`; rename package to
+- [x] Copy the simplest existing app → `apps/taormina`; rename package to — superseded: shipped as `apps/lenslide`
       `@free-react-templates/taormina`
 - [ ] `public/CNAME` = `taormina.free.componentdock.com`; `"homepage"` =
       `https://taormina.free.componentdock.com` in package.json

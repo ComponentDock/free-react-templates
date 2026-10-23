@@ -8,7 +8,7 @@
 
 ### Phase 1: Scaffold & Configuration
 
-- [ ] Create `apps/loadwise` from template (copy simplest existing app like `apps/aurora`)
+- [x] Create `apps/loadwise` from template (copy simplest existing app like `apps/aurora`) — superseded: shipped as `apps/convey`
 - [ ] Rename package.json to `@free-react-templates/loadwise`
 - [ ] Update `vite.config.ts` with `injectUiSource()` helper
 - [ ] Add `public/CNAME` → `loadwise.free.componentdock.com`

@@ -95,7 +95,7 @@
 
 ## Implementation tasks
 
-- [ ] Set up `apps/pitstop/` workspace (copy minimal app, rename package)
+- [x] Set up `apps/pitstop/` workspace (copy minimal app, rename package) — superseded: shipped as `apps/veloce`
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `index.html` with Public Sans Google Font link
 - [ ] Create `src/index.css` with Tailwind entry + @theme tokens for brand colors

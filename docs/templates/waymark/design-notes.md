@@ -1,4 +1,8 @@
 # Waymark — Implementation Notes
+<!-- prep-status: shipped-as=voyager -->
+> **SHIPPED-UNDER** — the ColorLib `tour` design this prep describes shipped
+> as `apps/voyager` (<https://voyager.free.componentdock.com>).
+> The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib Tour (https://preview.colorlib.com/theme/tour/)
 New name: waymark
