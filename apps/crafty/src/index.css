@@ -5,11 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crafty brand colors — from the ColorLib "Five Star" preview
-     (https://preview.colorlib.com/theme/five-star/ + css/main.css):
-     an art/crafting theme with a red-rose #f5204b primary,
-     dark text #222222, muted text #777777, white backgrounds,
-     and dark overlays on banner/video/carousel areas. */
+  /* Crafty brand colors — an art/crafting theme with a red-rose #f5204b
+     primary, dark text #222222, muted text #777777, white backgrounds, and
+     dark overlays on banner/video/carousel areas (from the reference
+     stylesheet). */
   --color-primary-50: #fff0f3;
   --color-primary-100: #ffe0e8;
   --color-primary-200: #ffc6d4;
@@ -21,10 +20,10 @@
   --color-primary-800: #880c2d;
   --color-primary-900: #740e2c;
 
-  /* Muted copy (ColorLib #777777). */
+  /* Muted copy (#777777). */
   --color-smoke: #777777;
 
-  /* Dark headings (ColorLib #222222). */
+  /* Dark headings (#222222). */
   --color-ink: #222222;
 
   /* Section backgrounds. */
@@ -33,7 +32,7 @@
   /* Overlay darkness. */
   --color-overlay: rgba(15, 15, 15, 0.85);
 
-  /* Poppins font family — matching the ColorLib source. */
+  /* Poppins font family — matching the reference design. */
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand purple — from the original ColorLib Contact Form V16 design. */
+  /* Brand purple — measured from the reference design. */
   --color-brand: #7c4dff;
   --color-brand-dark: #6a1b9a;
   --color-brand-light: #ba68c8;

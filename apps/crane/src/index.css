@@ -5,10 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crane brand colors — from the ColorLib "Constructo" preview
-     (https://preview.colorlib.com/theme/constructo/ + css/style.css):
-     a construction company landing theme with an orange #F0542C primary,
-     a navy #001D38 dark overlay, and muted text #596672 / #707070. */
+  /* Crane brand colors — a construction company landing theme with an orange
+     #F0542C primary, a navy #001D38 dark overlay, and muted text #596672 /
+     #707070 (from the reference stylesheet). */
   --color-primary-50: #fef3ef;
   --color-primary-100: #fde2d9;
   --color-primary-200: #fac5b3;
@@ -20,7 +19,7 @@
   --color-primary-800: #852218;
   --color-primary-900: #6e2018;
 
-  /* Navy overlay (ColorLib .overlay::before background #001D38). */
+  /* Navy overlay (.overlay::before background #001D38). */
   --color-navy: #001d38;
 
   /* Light section backgrounds. */
@@ -31,8 +30,8 @@
   --color-heading: #001d38;
   --color-body: #596672;
 
-  /* Raleway via Google Fonts <link> in index.html — matching the
-     ColorLib font pairing. */
+  /* Raleway via Google Fonts <link> in index.html — matching the reference
+     font pairing. */
   --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Raleway', ui-sans-serif, system-ui, sans-serif;
 }
