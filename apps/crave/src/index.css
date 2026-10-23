@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Crave brand palette — inspired by the original ColorLib "Sneaky"
-     restaurant template (vivid red-orange accent, warm off-white). */
+  /* Crave brand palette — measured from the reference restaurant design
+     (vivid red-orange accent, warm off-white). */
   --color-brand: #e22104;
 
   --color-primary-50: #fef2f0;

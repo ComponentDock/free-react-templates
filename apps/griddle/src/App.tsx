@@ -8,10 +8,9 @@ import { InstagramGrid } from './components/InstagramGrid'
 import { Footer } from './components/Footer'
 
 /**
- * Griddle — recreation of ColorLib "Burger"
- * (https://colorlib.com/wp/template/burger/). Section order 1:1 with the
- * source: sticky header → hero slider → menu grid → about → video section →
- * testimonials → instagram grid → footer.
+ * Griddle — measured from the reference restaurant design. Section order 1:1
+ * with the source: sticky header → hero slider → menu grid → about → video
+ * section → testimonials → instagram grid → footer.
  */
 export function App() {
   return (

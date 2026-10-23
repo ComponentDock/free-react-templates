@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Credence brand palette — recreated from the ColorLib "Cvportfolio" design:
+  /* Credence brand palette — measured from the reference design:
      orange #f5a623 accents/buttons/contact bar, white sections, dark gray text. */
   --color-brand: #f5a623;
   --color-brand-dark: #e09500;

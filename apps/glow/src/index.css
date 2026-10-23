@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Glow brand amber — from the original ColorLib "Error 404 V8"
-     stylesheet (css/style.css): the "0" outline and the home-link
-     hover color (#ffab00). */
+  /* Glow brand amber — from the reference design (css/style.css): the "0"
+     outline and the home-link hover color (#ffab00). */
   --color-brand: #ffab00;
 
   /* Orange glow around the "0" (text-shadow, #ff8700). */

@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Guestly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V18" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-18/):
+  /* Guestly brand palette — measured from the reference booking-form design:
      bright orange #ff9000 is the ONLY accent color (static uppercase labels
      + the solid Check availability button background). */
   --color-brand: #ff9000;

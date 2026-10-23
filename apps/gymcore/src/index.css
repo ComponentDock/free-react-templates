@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Gymcore brand palette — recreated from the ColorLib "Gutim" design
+  /* Gymcore brand palette — measured from the reference design
      (css/style.css): coral #f15d44 accents, gradient buttons
      #eb3c5a → #f67831, dark bg #141414, gray cards #1e1e1e,
      light sections #f5f5f5, body text #6b6b6b, headings #111111. */

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Cuddle brand palette — recreated from the ColorLib "Lovecare" design
+  /* Cuddle brand palette — measured from the reference design
      (css/style.css): gold #d49a3a accents/buttons, teal #042628 footer,
      warm beige #f3f0eb section backgrounds, white #ffffff text on dark. */
   --color-brand: #d49a3a;
