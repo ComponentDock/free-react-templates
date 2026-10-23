@@ -6,9 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Wingly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V5" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-5/): red #f23e3e is the
+  /* Wingly brand palette — measured from the reference booking-form design:
+     red #f23e3e is the
      ONLY accent color (radio checked dots + "Show flights" submit button
      background). */
   --color-brand: #f23e3e;

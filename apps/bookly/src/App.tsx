@@ -11,37 +11,50 @@ export function App() {
   }, [])
 
   return (
-    <main>
-      {/* Single-section demo: full-viewport section with the full-bleed photo
+    <>
+      <main>
+        {/* Single-section demo: full-viewport section with the full-bleed photo
           page background washed out by an 80% white overlay, vertically
           centering a two-column row — LEFT CTA copy (h1 + paragraph) and
-          RIGHT white reservation card; NO navbar, NO footer (source is a
-          bare booking form section). */}
-      <section
-        id="booking"
-        className="relative flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
-        style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
-      >
-        <div aria-hidden="true" className="absolute inset-0 bg-white/80" />
+          RIGHT white reservation card; NO navbar (the reference is a bare
+          booking section) — only the repo-standard credit footer follows. */}
+        <section
+          id="booking"
+          className="relative flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
+          style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
+        >
+          <div aria-hidden="true" className="absolute inset-0 bg-white/80" />
 
-        <div className="relative grid w-full max-w-[1140px] grid-cols-1 gap-y-10 md:grid-cols-12">
-          {/* Left CTA column (source col-md-5, .booking-cta margin-top 45px). */}
-          <div className="md:col-span-5 md:pt-[45px]">
-            <h1 className="text-[52px] font-black uppercase leading-tight text-ink">
-              Make your reservation
-            </h1>
-            <p className="mt-4 text-[22px] leading-relaxed text-ink">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam
-              at consequatur quisquam suscipit.
-            </p>
-          </div>
+          <div className="relative grid w-full max-w-[1140px] grid-cols-1 gap-y-10 md:grid-cols-12">
+            {/* Left CTA column (source col-md-5, .booking-cta margin-top 45px). */}
+            <div className="md:col-span-5 md:pt-[45px]">
+              <h1 className="text-[52px] font-black uppercase leading-tight text-ink">
+                Make your reservation
+              </h1>
+              <p className="mt-4 text-[22px] leading-relaxed text-ink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam
+                numquam at consequatur quisquam suscipit.
+              </p>
+            </div>
 
-          {/* Right card column (source col-md-6 col-md-offset-1). */}
-          <div className="md:col-span-6 md:col-start-7">
-            <BookingForm />
+            {/* Right card column (source col-md-6 col-md-offset-1). */}
+            <div className="md:col-span-6 md:col-start-7">
+              <BookingForm />
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+      <footer className="border-t border-line bg-white py-6 text-center text-[13px] text-ink">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-bold uppercase tracking-wide text-brand underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }

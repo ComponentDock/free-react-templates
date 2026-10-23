@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Triply brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V14" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-14/):
+  /* Triply brand palette — measured from the reference booking-form design:
      taxi yellow #ffc600 is the ONLY brand color (solid Book Now button
      background, dark text). */
   --color-brand: #ffc600;

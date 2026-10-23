@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Volt brand palette — recreated from the ColorLib "Ionize" template
-     (https://colorlib.com/wp/template/ionize/), tokens extracted from the
-     live preview's css/style.css:
+  /* Volt brand palette — measured from the reference design, tokens
+     extracted from css/style.css:
      - royal blue #0028ff (sidebar photo overlay @ 60%, card hover/active bg,
        image hover overlay @ 70%, Read More link, btn-primary)
      - ink #000000 (card h3 titles, meta category links)

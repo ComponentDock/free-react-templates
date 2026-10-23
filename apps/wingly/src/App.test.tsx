@@ -36,13 +36,21 @@ describe('App', () => {
     expect(wrapper.className).toMatch(/max-w-\[1140px\]/)
   })
 
-  it('renders NO navbar, headline or footer (single-section form demo)', () => {
+  it('renders NO navbar or headline (single-section form demo)', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     expect(screen.queryByRole('heading')).not.toBeInTheDocument()
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
+  })
+
+  it('renders the Component Dock credit footer', () => {
+    render(<App />)
+
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toBeInTheDocument()
+    const link = screen.getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 })

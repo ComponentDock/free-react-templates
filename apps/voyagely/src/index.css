@@ -6,9 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Voyagely brand palette — recreated from the ColorLib "Colorlib Reg Form
-     V11" design (live demo:
-     https://colorlib.com/etc/regform/colorlib-regform-11/): gold #f8ba0f
+  /* Voyagely brand palette — measured from the reference registration-form
+     design: gold #f8ba0f
      (the "Book now" submit button) and its #ce9906 hover. */
   --color-brand: #f8ba0f;
 
