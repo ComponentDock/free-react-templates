@@ -214,4 +214,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All buttons have 3px 5px box-shadow depth effect
 - [ ] Poppins font is used throughout
 - [ ] Responsive layout works at mobile widths
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

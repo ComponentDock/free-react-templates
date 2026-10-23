@@ -773,7 +773,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Year header: centered dark year "2020", grey `#cccccc` chevrons at
       the row's edges (hover → pink), chevrons navigate YEARS (2021 / 2019
       scenarios verified with correct grids)
-- [ ] Month strip: `Jan..Dec` 11px uppercase grey; "Dec" bold pink in the
+- [x] Month strip: `Jan..Dec` 11px uppercase grey; "Dec" bold pink in the
       initial view; hover pink; click switches month (Nov 2020 = no leading
       blanks)
 - [ ] Grid: `Sun..Sat` 10px uppercase header; 37-cell December 2020 grid (6
@@ -791,7 +791,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Event dates: solid pink fill + 10px amber `#ffc107` dot (1px white
       border) top-left; seeded sample events visible when navigating to
       their month (e.g. May 2020, like the source's own seed)
-- [ ] Add Event dialog: pink full-widget overlay, "Add New Event" 28px
+- [x] Add Event dialog: pink full-widget overlay, "Add New Event" 28px
       white, Event name (text, maxlength 36) + Number of people (number,
       min 0 max 1000000) with proper `htmlFor` labels (no duplicate ids),
       black Cancel + white OK pills (radius 25px); validation errors
@@ -812,7 +812,7 @@ Dock (`https://www.componentdock.com/`) instead.
       add + re-render), Cancel/OK; no jQuery, no Bootstrap, no copied
       CSS/HTML — re-implemented with Tailwind tokens; no ColorLib strings
       anywhere in `apps/sakura`
-- [ ] A11y: chevrons `aria-label` "Previous year"/"Next year"; month cells
+- [x] A11y: chevrons `aria-label` "Previous year"/"Next year"; month cells
       and date cells are buttons with accessible labels ("December 2020",
       "18 December 2020"); Add Event / Cancel / OK are real buttons with
       `focus-visible` rings; dialog fields labeled
@@ -824,4 +824,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Calendar 08" row, line
       694 — Bootstrap Calendars (20) category; single row, no dups)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

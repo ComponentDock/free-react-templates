@@ -153,9 +153,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page layout — a heading "Multi-Select #9" is visible
-- [ ] Multi-select component — an input field with placeholder "Select Categories" is shown
+- [x] Multi-select component — an input field with placeholder "Select Categories" is shown
 - [ ] Variant color switching — the selected tag background changes to green (#c7f0db)
 - [ ] Responsive layout — the heading and multi-select remain centered
 - [ ] Closing dropdown on outside click — the dropdown closes

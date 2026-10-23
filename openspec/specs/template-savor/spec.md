@@ -236,7 +236,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/savor` created from a blog/landing app pattern, package renamed to
+- [x] `apps/savor` created from a blog/landing app pattern, package renamed to
       `@free-react-templates/savor`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run

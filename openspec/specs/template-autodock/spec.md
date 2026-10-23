@@ -279,4 +279,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Color tokens: brand #ffd000, dark #1e2228, white, overlay rgba(0,0,0,0.8)
 - [x] Font: Open Sans throughout
 - [x] Responsive: mobile hamburger menu, stacked columns on small screens
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

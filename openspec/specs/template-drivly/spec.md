@@ -436,7 +436,7 @@ Dock (`https://www.componentdock.com/`) instead.
       Location, Destination, Pickup Date + Hour/Min/AM-PM selects) →
       full-width gold-yellow "Book Now" button; NO navbar, NO footer
       (single-section demo)
-- [ ] Brand color `#ffc001` (gold-yellow — "Book a car" header + "Book
+- [x] Brand color `#ffc001` (gold-yellow — "Book a car" header + "Book
       Now" button background) in `@theme` and used via Tailwind classes
 - [ ] Card `#101113`; inputs `#f5f5f5` 45px 3px-radius borderless with dark
       `#101113` text; placeholders `rgba(16,17,19,0.3)`; labels `#fff`
@@ -448,7 +448,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Selects: Hour 1–12, Min 05–55 (step 5), AM/PM AM|PM — `appearance:
   none` + arrow glyph (rotated `➜`/ChevronDown, `#101113`, 14px, 32×32)
       at `right 0 bottom 6px`
-- [ ] "Book Now" button: solid `#ffc001` bg, dark `#101113` uppercase 700
+- [x] "Book Now" button: solid `#ffc001` bg, dark `#101113` uppercase 700
       text, height 50px, full width, radius 3px; validates required fields
       and shows a summary line / validation messages
 - [ ] Mobile (<576px): Name/Email stack; date+time row wraps full width;
@@ -458,5 +458,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

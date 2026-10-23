@@ -426,7 +426,7 @@ Dock (`https://www.componentdock.com/`) instead.
       app (comments included)
 - [x] TEMPLATES.md `Honey` item marked `[x]` with the live
       `https://trousseau.free.componentdock.com` URL + homepage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (filled in while building)
 

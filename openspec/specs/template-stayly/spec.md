@@ -318,23 +318,23 @@ Dock (`https://www.componentdock.com/`) instead.
       `cover`/`center`, hidden below 480px (form full-width then)
 - [ ] White card max-width 642px, shadow `0 5px 10px -5px rgba(0,0,0,0.3)`;
       form padding 30px, inner border `1px solid #f9fafc`
-- [ ] Header "Make your reservation": `#122244`, ~35px, weight 700,
+- [x] Header "Make your reservation": `#122244`, ~35px, weight 700,
       capitalized
 - [ ] Inputs: `#f7f9fa` background, height 40px, radius 0, no border,
       inset shadow `0 1px 4px rgba(181,193,204,0.3)`, 16px weight 700
       `#122244` text; placeholder `#dde3e8`
-- [ ] Date inputs native `<input type="date">`; required; empty state grey;
+- [x] Date inputs native `<input type="date">`; required; empty state grey;
       check-out ≥ check-in validation
 - [ ] Adults select 1/2/3 (default 1), Children select 0/1/2 (default 0),
       custom arrow (rotated `➜` or ChevronDown) `#dddee9`
 - [ ] Labels `#b5c1cc` 14px uppercase weight 700 above each input,
       associated via `htmlFor`/`id`
-- [ ] "Book Now" button: full width, `#6499ff` bg, white weight-700 16px,
+- [x] "Book Now" button: full width, `#6499ff` bg, white weight-700 16px,
       padding 13px 35px, no radius; shows summary / validation messages
 - [ ] Placeholder images via `picsum.photos/seed/stayly-<n>/<w>/<h>`, icons
       from lucide-react, no copied assets
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

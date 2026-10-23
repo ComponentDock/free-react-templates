@@ -71,8 +71,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Style showcase section — the user sees "Pick Your Style" heading and default primary and outline primary buttons with text, icons, and icon-only states
-- [ ] Color variants section — the user sees "Pick Your Color" heading and buttons for Primary, Secondary, Tertiary, and Quarternary in both solid and outline styles
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Style showcase section — the user sees "Pick Your Style" heading and default primary and outline primary buttons with text, icons, and icon-only states
+- [x] Color variants section — the user sees "Pick Your Color" heading and buttons for Primary, Secondary, Tertiary, and Quarternary in both solid and outline styles
 - [ ] Social action grid — the user sees Twitter, Facebook, and Dribbble buttons in 4 variant columns
-- [ ] Social brand buttons — the user sees "Social Buttons" heading and brand buttons with counts and share actions
+- [x] Social brand buttons — the user sees "Social Buttons" heading and brand buttons with counts and share actions

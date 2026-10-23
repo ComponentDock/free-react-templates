@@ -187,11 +187,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the brand name "Presswell"
+- [x] Navigation bar — the navbar SHALL show the brand name "Presswell"
 - [ ] Hero section — it SHALL show a level-1 headline about laundry service
-- [ ] Process section — it SHALL show the heading "This is how we work"
-- [ ] Services section — it SHALL show the heading "Services we offer"
-- [ ] CTA band — it SHALL show the heading "Call us for a service"
+- [x] Process section — it SHALL show the heading "This is how we work"
+- [x] Services section — it SHALL show the heading "Services we offer"
+- [x] CTA band — it SHALL show the heading "Call us for a service"
 - [ ] Testimonials section — it SHALL show at least three customer testimonials
-- [ ] Stats section — it SHALL show the heading "Company achievement"
-- [ ] About section — it SHALL show the heading "About company"
+- [x] Stats section — it SHALL show the heading "Company achievement"
+- [x] About section — it SHALL show the heading "About company"

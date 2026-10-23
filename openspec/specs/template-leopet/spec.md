@@ -210,13 +210,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Leopet" and links to the main sections
-- [ ] Hero section — it SHALL contain a level-1 heading matching "Give your pet Best Care"
-- [ ] About section — it SHALL show the heading "We care your pet As you care"
-- [ ] Services section — it SHALL show the heading "We Provide Best Services"
-- [ ] Adoption/counters section — it SHALL show the heading "We need your help Adopt Us"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Leopet" and links to the main sections
+- [x] Hero section — it SHALL contain a level-1 heading matching "Give your pet Best Care"
+- [x] About section — it SHALL show the heading "We care your pet As you care"
+- [x] Services section — it SHALL show the heading "We Provide Best Services"
+- [x] Adoption/counters section — it SHALL show the heading "We need your help Adopt Us"
 - [ ] Testimonials section — it SHALL show at least three testimonial quotes
-- [ ] Footer — it SHALL show the site name "Leopet" and a newsletter input
+- [x] Footer — it SHALL show the site name "Leopet" and a newsletter input
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

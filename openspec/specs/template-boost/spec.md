@@ -223,15 +223,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes
 - [ ] README status regenerated after merge (`npm run readme:status`)
 - [ ] TEMPLATES.md Webapp entries marked `[x]` with surge URL appended
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Boost." and links to Home, Features, Pricing, Blog, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Boost Productivity with Boost"
-- [ ] Features section — it SHALL contain a heading "The Features"
-- [ ] More features section — it SHALL contain a heading "More Features"
-- [ ] Testimonials section — it SHALL contain a heading "What People Says"
-- [ ] Pricing section — it SHALL contain a heading "Pricing for All"
-- [ ] Blog section — it SHALL contain a heading "News & Updates"
-- [ ] Contact section — it SHALL contain a heading "Get In Touch"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Boost." and links to Home, Features, Pricing, Blog, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Boost Productivity with Boost"
+- [x] Features section — it SHALL contain a heading "The Features"
+- [x] More features section — it SHALL contain a heading "More Features"
+- [x] Testimonials section — it SHALL contain a heading "What People Says"
+- [x] Pricing section — it SHALL contain a heading "Pricing for All"
+- [x] Blog section — it SHALL contain a heading "News & Updates"
+- [x] Contact section — it SHALL contain a heading "Get In Touch"
 - [ ] Footer — it SHALL show columns for About Us, Quick Links, Follow Us, and Subscribe Newsletter
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

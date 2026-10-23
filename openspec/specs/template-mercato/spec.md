@@ -187,11 +187,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero is fullscreen with product image and CTA
 - [ ] Product cards show all 4 hover action icons with brand gradient
 - [ ] Countdown timer displays and counts down
-- [ ] Footer has Component Dock link (not Colorlib)
-- [ ] No ColorLib references anywhere in `apps/mercato/`
-- [ ] CNAME: `mercato.free.componentdock.com`
-- [ ] Homepage: `https://mercato.free.componentdock.com`
+- [x] Footer has Component Dock link (not Colorlib)
+- [x] No ColorLib references anywhere in `apps/mercato/`
+- [x] CNAME: `mercato.free.componentdock.com`
+- [x] Homepage: `https://mercato.free.componentdock.com`
 - [ ] Images: `https://picsum.photos/seed/mercato-<n>/<w>/<h>` (deterministic)
 - [ ] `npm run test:coverage` passes at 100%
 - [ ] `bash scripts/verify-app.sh mercato` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

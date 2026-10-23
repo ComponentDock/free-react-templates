@@ -125,12 +125,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders logo, nav links, and phone number — the navbar displays the logo "Pediment", all navigation links, and the phone number "+01 123 456 789"
+- [x] Navbar renders logo, nav links, and phone number — the navbar displays the logo "Pediment", all navigation links, and the phone number "+01 123 456 789"
 - [ ] Hero section shows heading and CTA buttons — it displays the heading "Quality is not only our standard.", a "See Project" button linking to #projects, and a "Discover more" button linking to #about
-- [ ] About section shows heading and description — it displays the label "who are we", the heading "We propose and discuss design rules", description text, and a "Learn More" button
+- [x] About section shows heading and description — it displays the label "who are we", the heading "We propose and discuss design rules", description text, and a "Learn More" button
 - [ ] Projects section shows project cards — it displays 4 project cards with titles and category labels
 - [ ] Services section shows service cards and counter stats — it displays 4 service cards (Interior Design, Office Design, Home Design, Design drawing) and 4 counter stats (85, 127, 36, 74)
 - [ ] Testimonials section shows client quotes and avatars — it displays 3 testimonial quotes with client names and roles
 - [ ] Team section shows team members — it displays 3 team members with names, roles, and social media links
-- [ ] CTA section shows heading and button — it displays the heading and a "Contact Us" button
+- [x] CTA section shows heading and button — it displays the heading and a "Contact Us" button
 - [ ] Blog section shows blog cards — it displays 3 blog cards with categories and titles

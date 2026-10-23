@@ -147,13 +147,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Gradient background — I see a gradient background from lavender to sky blue
 - [ ] Split-panel card layout — I see a card with a left image panel and a right white form panel
-- [ ] Hero panel displays subscription info — I see the headline "Bring Your Music Along" in white bold text
+- [x] Hero panel displays subscription info — I see the headline "Bring Your Music Along" in white bold text
 - [ ] Registration form fields — I see a text input labeled "Full Name:" with placeholder "ex: Lindsey Wilson"
-- [ ] Form validation — required fields — I see "Email is required" error message
-- [ ] Email format validation — I see "Invalid email format" error message
+- [x] Form validation — required fields — I see "Email is required" error message
+- [x] Email format validation — I see "Invalid email format" error message
 - [ ] Password confirmation match — I see "Passwords do not match" error message
-- [ ] Register button styling — I see a "Register" button with blue background
+- [x] Register button styling — I see a "Register" button with blue background
 - [ ] Input focus styling — the input border changes to green

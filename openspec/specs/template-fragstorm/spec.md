@@ -143,13 +143,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar displays weather, date, and social links — the top bar displays a weather indicator, the current date, and 5 social media icons (Facebook, Twitter, YouTube, Instagram, Email)
-- [ ] Logo section shows brand name centered — the logo section shows "Fragstorm" text centered on a near-black background
+- [x] Logo section shows brand name centered — the logo section shows "Fragstorm" text centered on a near-black background
 - [ ] Navbar provides navigation with mobile support — all 6 navigation links are visible
 - [ ] Hero section displays featured article and trending posts — the hero section shows the featured article headline, author name, and publication date
 - [ ] Latest Preview shows review-score cards in a grid — 5 review cards are displayed with game titles and score numbers
 - [ ] Update News provides tabbed content by platform — PlayStation tab is active and shows 3 articles
 - [ ] Video Guide shows 3-column video cards — 3 video guide cards are displayed with titles, authors, dates, and comment counts
 - [ ] Instagram Posts shows image grid with hover overlay — 4 Instagram post images are displayed in a grid
-- [ ] App composes all sections in order — the document title contains "Fragstorm" and all sections are present with correct IDs
+- [x] App composes all sections in order — the document title contains "Fragstorm" and all sections are present with correct IDs

@@ -510,5 +510,5 @@ Dock (`https://www.componentdock.com/`) instead.
       reworded credit
 - [ ] TEMPLATES.md bookkeeping when shipped: mark ALL THREE "Look" dup
       rows (lines 443 / 1085 / 1716) `[x]` with the glamour surge URL
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

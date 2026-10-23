@@ -272,9 +272,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-flexure/spec.md` exists on the PR branch and
       validates (`npx openspec validate flexure --type spec`)
-- [ ] App folder `apps/flexure`, package `@free-react-templates/flexure`,
+- [x] App folder `apps/flexure`, package `@free-react-templates/flexure`,
       `npm install` at root so the lockfile registers the workspace
-- [ ] `homepage` = `https://flexure.free.componentdock.com`, `public/CNAME`
+- [x] `homepage` = `https://flexure.free.componentdock.com`, `public/CNAME`
       = `flexure.free.componentdock.com`
 - [ ] `index.html` loads Poppins **400 + 700** via Google Fonts `<link>`;
       NO copied woff2 files, NO ColorLib strings anywhere in the app
@@ -299,7 +299,7 @@ Dock (`https://www.componentdock.com/`) instead.
       before:font-bold before:text-xs before:text-[#808080]
       before:uppercase before:mb-[13px] before:min-w-[98px]` (Poppins 700 =
       the source's separate Poppins-Bold face), widths `max-[768px]:w-full`
-- [ ] Footer links `https://www.componentdock.com/` ("Component Dock")
+- [x] Footer links `https://www.componentdock.com/` ("Component Dock")
 - [ ] Tests (TDD, 100% coverage on changed code) mirror the Gherkin
       scenarios; `scripts/verify-app.sh flexure` passes
 - [ ] PR description records: source slug `responsive-table-v2`, preview
@@ -308,4 +308,4 @@ Dock (`https://www.componentdock.com/`) instead.
       reference), design tokens used, and what differs (new name Flexure;
       Poppins via Google Fonts instead of self-hosted woff2; zero images;
       Component Dock footer added)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

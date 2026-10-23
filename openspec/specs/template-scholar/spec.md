@@ -126,13 +126,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar shows the "Scholar" logo link
-- [ ] Hero Section — the hero heading "Learn new skills online with top educators" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar shows the "Scholar" logo link
+- [x] Hero Section — the hero heading "Learn new skills online with top educators" is visible
 - [ ] Popular Courses — the heading "The world's largest selection of courses" is visible
 - [ ] About Split — the heading "The world's largest selection of online courses" is visible
-- [ ] Students Viewing — the heading "Students are viewing" is visible
-- [ ] Testimonial — the heading "Student says about us" is visible
-- [ ] Categories Grid — the heading "Explore top categories" is visible
-- [ ] Become Instructor — the heading "Become an Instructor" is visible in the instructor section
+- [x] Students Viewing — the heading "Students are viewing" is visible
+- [x] Testimonial — the heading "Student says about us" is visible
+- [x] Categories Grid — the heading "Explore top categories" is visible
+- [x] Become Instructor — the heading "Become an Instructor" is visible in the instructor section
 - [ ] Back to Top — the back-to-top button is not visible

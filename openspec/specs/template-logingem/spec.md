@@ -278,19 +278,19 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Full-viewport background
 - [ ] White card centered vertically and horizontally (500px width, 10px radius)
-- [ ] Bold "Login" heading, centered, 39px Poppins Bold
-- [ ] Username input with label, bottom border, icon, placeholder "Type your username"
+- [x] Bold "Login" heading, centered, 39px Poppins Bold
+- [x] Username input with label, bottom border, icon, placeholder "Type your username"
 - [ ] Password input with label, bottom border, icon, masked dots
-- [ ] "Forgot password?" link, right-aligned
-- [ ] Full-width gradient "Login" button (teal to purple, pill shape, uppercase)
-- [ ] "Or Sign Up Using" divider text
+- [x] "Forgot password?" link, right-aligned
+- [x] Full-width gradient "Login" button (teal to purple, pill shape, uppercase)
+- [x] "Or Sign Up Using" divider text
 - [ ] Facebook, Twitter, Google social buttons (colored circles, centered)
-- [ ] "Or Sign Up Using" + "Sign Up" link at bottom
+- [x] "Or Sign Up Using" + "Sign Up" link at bottom
 - [ ] Hover effects (button gradient sweep, social button darken)
 - [ ] Focus effects (input underline animation, icon color change)
 - [ ] HTML5 validation on username (required) and password (required)
 - [ ] Responsive: card stays centered on smaller viewports
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

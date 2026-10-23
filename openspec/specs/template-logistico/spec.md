@@ -88,9 +88,9 @@ change the footer's own layout or copy beyond the credit line.
 
 - [ ] `npm run test:coverage` achieves 100% lines/functions/branches/statements
 - [ ] All sections match 1:1 with ColorLib Thelogistico preview
-- [ ] Footer links Component Dock (`https://www.componentdock.com/`)
-- [ ] No reference to ColorLib in app code
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer links Component Dock (`https://www.componentdock.com/`)
+- [x] No reference to ColorLib in app code
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] Navigation & Header — the User views sticky header with logo, navigation links (Home, About, Service, Blog, Contact), social icons, and phone contact number (`10 (87) 237 3784`). behaves as described…
 - [ ] Hero Section & Quick Offer Calculator — the User sees banner with background image, title "A TRULY GLOBAL SERVICE PROVIDER", subtitle "We make your cargo transport simple", and a "Explore Us" button.…
 - [ ] Services Grid — the User views 4-column commercial cleaning / logistics service cards with icon, title, description, and arrow link buttons. behaves as described by the fidelity notes

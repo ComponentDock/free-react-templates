@@ -194,13 +194,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar functionality — a navigation bar is visible at the top
-- [ ] Hero section — a tagline "We are new but doing great" is displayed in orange
-- [ ] Services section — a heading "Services we provide" is visible
-- [ ] About section — "Our Philosophy" heading is visible
-- [ ] Pricing section — an "Affordable pricing plan" heading is shown
+- [x] Hero section — a tagline "We are new but doing great" is displayed in orange
+- [x] Services section — a heading "Services we provide" is visible
+- [x] About section — "Our Philosophy" heading is visible
+- [x] Pricing section — an "Affordable pricing plan" heading is shown
 - [ ] Features accordion — a section heading is displayed
 - [ ] Testimonials section — the background is dark purple (#2D0A31)
-- [ ] Blog section — an "Our latest blog" heading is visible
+- [x] Blog section — an "Our latest blog" heading is visible

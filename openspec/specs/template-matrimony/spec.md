@@ -529,8 +529,8 @@ contentinfo landmarks.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/matrimony`
-- [ ] `npm run lint` passes for `apps/matrimony`
+- [x] `npm run typecheck` passes for `apps/matrimony`
+- [x] `npm run lint` passes for `apps/matrimony`
 - [ ] `scripts/verify-app.sh matrimony` passes (typecheck + lint + 100 %
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
@@ -593,7 +593,7 @@ contentinfo landmarks.
       (`https://picsum.photos/seed/matrimony-<n>/<w>/<h>`: hero 1920×1080,
       story photo 900×1100, gallery 1200×1400 …); flourish/laurel/corner marks
       and the plus glyph are inline SVG; no ColorLib asset or logo copied
-- [ ] No `colorlib` / `wed` / "Wed" provenance string anywhere in `apps/`
+- [x] No `colorlib` / `wed` / "Wed" provenance string anywhere in `apps/`
       (comments included); footer links Component Dock
 - [ ] No third-party tag or script: no `gtag`/`dataLayer`/`UA-` id, no
       `maps.googleapis.com`; head carries an own favicon (+ manifest) instead of

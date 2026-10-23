@@ -219,16 +219,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Top bar — it SHALL show the email "youremail@email.com" as a mailto link
-- [ ] Navigation bar — it SHALL show the brand name "Verdure" with subtitle "Landscaper & Gardener"
-- [ ] Hero section — it SHALL show the subheading "Welcome to Verdure"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Top bar — it SHALL show the email "youremail@email.com" as a mailto link
+- [x] Navigation bar — it SHALL show the brand name "Verdure" with subtitle "Landscaper & Gardener"
+- [x] Hero section — it SHALL show the subheading "Welcome to Verdure"
 - [ ] About section — it SHALL show the heading "We're Leader In Agricultural Market"
 - [ ] Stats section — it SHALL show "4,800" Projects Completed
-- [ ] Services section — it SHALL show the heading "Explore Our Best Offer"
+- [x] Services section — it SHALL show the heading "Explore Our Best Offer"
 - [ ] Projects section — it SHALL show six project cards with images
-- [ ] Assessment section — it SHALL show the heading "Assessment"
-- [ ] Testimonials section — it SHALL show the heading "What Our Clients Say"
-- [ ] Quote form section — it SHALL show the heading "Request An Estimate"
-- [ ] Blog section — it SHALL show the heading "Recent Post"
-- [ ] Pricing section — it SHALL show the heading "Our Plans & Pricing"
+- [x] Assessment section — it SHALL show the heading "Assessment"
+- [x] Testimonials section — it SHALL show the heading "What Our Clients Say"
+- [x] Quote form section — it SHALL show the heading "Request An Estimate"
+- [x] Blog section — it SHALL show the heading "Recent Post"
+- [x] Pricing section — it SHALL show the heading "Our Plans & Pricing"

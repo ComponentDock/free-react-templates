@@ -200,13 +200,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Truss" and links to Home, Services, Projects, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Creates Smart Architecture."
-- [ ] Mission section — it SHALL contain a MISSION label and a heading "Architectures for Complex Projects"
-- [ ] Services section — it SHALL contain a heading "Our Services"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Truss" and links to Home, Services, Projects, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Creates Smart Architecture."
+- [x] Mission section — it SHALL contain a MISSION label and a heading "Architectures for Complex Projects"
+- [x] Services section — it SHALL contain a heading "Our Services"
 - [ ] Testimonials section — it SHALL show a quote, a person's name, and their role
-- [ ] Projects section — it SHALL contain a heading "Our Projects"
-- [ ] Footer — it SHALL show an "About Truss." blurb, social links (Facebook, X, LinkedIn, Instagram), a Projects column, a Services column, and contact details
+- [x] Projects section — it SHALL contain a heading "Our Projects"
+- [x] Footer — it SHALL show an "About Truss." blurb, social links (Facebook, X, LinkedIn, Instagram), a Projects column, a Services column, and contact details
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

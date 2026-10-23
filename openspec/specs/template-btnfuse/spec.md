@@ -125,9 +125,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page Title — the heading "Button #09" is visible at the top in the heading-section style (32px font)
-- [ ] Pick Your Color Section — four buttons are visible: "Default Primary" (purple bg), "Default Secondary" (teal bg), "Default Tertiary" (pink bg), "Default Gradient" (green bg)
+- [x] Pick Your Color Section — four buttons are visible: "Default Primary" (purple bg), "Default Secondary" (teal bg), "Default Tertiary" (pink bg), "Default Gradient" (green bg)
 - [ ] White Card Stats — Icon Left — four white cards are visible: "275 New Posts" (purple icon), "109 New Comment" (teal icon), "68 % Bounce Rate" (pink icon), "343 Total Visits" (green icon)
 - [ ] White Card Stats — Icon Right — four white cards are visible: "275 New Projects" (green icon), "109 New Clients" (purple icon), "68 % Conversion Rate" (teal icon), "343 Support Tickets" (pink icon)
 - [ ] Colored Card Stats — Icon Left — four colored cards are visible: "275 New Posts" (purple bg), "109 New Comment" (teal bg), "68 % Bounce Rate" (pink bg), "343 Total Visits" (green bg)

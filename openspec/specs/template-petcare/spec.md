@@ -239,16 +239,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Petcare" and links to the main sections
-- [ ] Hero section — it SHALL contain a level-1 heading matching "We Care Your Pets."
-- [ ] Services section — it SHALL show the heading "Best Pet Care Services"
+- [x] Navigation bar — the navbar SHALL show the site name "Petcare" and links to the main sections
+- [x] Hero section — it SHALL contain a level-1 heading matching "We Care Your Pets."
+- [x] Services section — it SHALL show the heading "Best Pet Care Services"
 - [ ] Counters section — it SHALL show at least two stat counters
-- [ ] Commitment section — it SHALL show the heading "We are commited for better service"
-- [ ] Gallery section — it SHALL show the heading "Pets Photo Gallery"
+- [x] Commitment section — it SHALL show the heading "We are commited for better service"
+- [x] Gallery section — it SHALL show the heading "Pets Photo Gallery"
 - [ ] Call CTA section — it SHALL show the call-to-action text and a phone number
-- [ ] Team section — it SHALL show the heading "Our Team Mambers"
-- [ ] Blog section — it SHALL show the heading "Our Recent Blog"
-- [ ] Footer — it SHALL show the site name "Petcare" and an about blurb
+- [x] Team section — it SHALL show the heading "Our Team Mambers"
+- [x] Blog section — it SHALL show the heading "Our Recent Blog"
+- [x] Footer — it SHALL show the site name "Petcare" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

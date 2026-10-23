@@ -97,8 +97,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Hero section — a heading "Kaleido UI Kit" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Hero section — a heading "Kaleido UI Kit" is visible
 - [ ] Color palette showcase — 9 color swatches are visible
 - [ ] Typography showcase — headings from h1 to h6 are visible
 - [ ] Button showcase — primary, outline, ghost, and danger buttons are visible

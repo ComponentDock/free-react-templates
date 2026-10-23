@@ -190,14 +190,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — The system render a dark navbar with the brand name "Vigor" flanked by
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — The system render a dark navbar with the brand name "Vigor" flanked by
 - [ ] Hero section — The system render a full-height hero section with two slides. Each slide
 - [ ] About section — The system render a split-layout about section with a video placeholder
 - [ ] Services section — The system render a services section on a light background with a centered
 - [ ] Gym Classes section — The system render a dark-background gym classes section with heading "What
 - [ ] Pricing section — The system render a pricing section on a light background with heading
-- [ ] Testimonies section — The system render a testimonies section with heading "Successful Stories"
+- [x] Testimonies section — The system render a testimonies section with heading "Successful Stories"
 - [ ] Appointment section — The system render a dark-background appointment section with heading "Book
 - [ ] Blog section — The system render a blog section on a light background with heading
 - [ ] Counter section — The system render a counter section with a dark background image overlay

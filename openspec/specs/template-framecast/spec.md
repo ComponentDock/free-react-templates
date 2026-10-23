@@ -145,12 +145,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header navigation renders all links — the header displays "FRAMECAST" logo text
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header navigation renders all links — the header displays "FRAMECAST" logo text
 - [ ] Hero section displays headline and subtitle — the hero section has a dark navy background
 - [ ] Portfolio grid shows project items with hover effects — the portfolio section displays 9 project image cards in a grid
 - [ ] Services section shows three service cards — the services section displays 3 cards
-- [ ] Blog section shows articles — the blog section heading reads "Our Creative Articles"
+- [x] Blog section shows articles — the blog section heading reads "Our Creative Articles"
 - [ ] Testimonials section displays quotes — the testimonials section shows a quote with author name and role
 - [ ] CTA section encourages project discussion — a blue full-width section displays a call-to-action
 - [ ] Responsive layout adapts to mobile — the nav collapses to a hamburger menu

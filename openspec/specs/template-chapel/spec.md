@@ -184,17 +184,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar renders social links and countdown — Facebook, Twitter, Google, and Instagram icon links are rendered
 - [ ] Navbar displays site name, donation CTA, and navigation — Home, About Us, Sermons, Event, Blog, and Contact links are visible
-- [ ] Hero section renders heading and CTA — the heading "Living in God's Amazing Grace!" is displayed
+- [x] Hero section renders heading and CTA — the heading "Living in God's Amazing Grace!" is displayed
 - [ ] EventSpotlight shows event details and countdown — the event date (20 may), title, time, and location are visible
 - [ ] About section renders heading, text, CTA, and image — the heading, paragraphs, CTA button, and image are rendered
 - [ ] Services section renders three cards — three cards with titles, descriptions, and read-more links are visible
 - [ ] Sermon section displays sermon details — the sermon title, preacher name, categories, and description are displayed
-- [ ] EventList renders upcoming events — the "Upcoming Events" heading and event cards with thumbnails and details are visible
+- [x] EventList renders upcoming events — the "Upcoming Events" heading and event cards with thumbnails and details are visible
 - [ ] Blog section renders post cards — three article cards with images, titles, authors, and categories are visible
 - [ ] Newsletter renders email subscription form — the heading, email input, and subscribe button are rendered
 - [ ] ContactInfo displays contact details — the heading, city, address, email (as mailto link), and phone (as tel link) are rendered
-- [ ] Document title is set — the document title is "Chapel — Church Event Template"
+- [x] Document title is set — the document title is "Chapel — Church Event Template"

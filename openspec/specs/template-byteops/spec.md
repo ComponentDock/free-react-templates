@@ -158,10 +158,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with mobile toggle — the Primary navigation contains at least 7 section links
-- [ ] Tabbed services section — "Business Strategy" content is visible
-- [ ] FAQ accordion — "What services do you offer?" is visible
+- [x] Tabbed services section — "Business Strategy" content is visible
+- [x] FAQ accordion — "What services do you offer?" is visible
 - [ ] Stats counters — the values 500, 850, 20, and 24 are all visible
 - [ ] Team section — Lloyd Wilson, Rachel Parker, Ian Smith, and Alicia Henderson are visible
 - [ ] Blog section — blog post titles about lead generation, marketing trends, and online presence are visible

@@ -136,10 +136,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and contact info — the navbar displays the "Ethos" logo, all navigation links, and contact info
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and contact info — the navbar displays the "Ethos" logo, all navigation links, and contact info
 - [ ] Hero section with search form — the hero section displays the headline and a search form with all four inputs
-- [ ] Welcome section — the welcome section displays the "Welcome to Ethos" heading and a "Read More" button
+- [x] Welcome section — the welcome section displays the "Welcome to Ethos" heading and a "Read More" button
 - [ ] Knowledge feature cards — four feature cards are visible with icons, headings, descriptions, and links
 - [ ] Stats counter section — four stat counters are visible with their labels and values
 - [ ] Popular courses section — multiple course cards are visible with images, titles, descriptions, and prices

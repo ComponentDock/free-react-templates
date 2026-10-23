@@ -123,7 +123,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Multi-step wizard form — the user sees Account Information fields (username, email, password, confirm password)
 - [ ] Step indicator shows correct state — step 1 shows as completed (green)
 - [ ] Account information form — the browser shows native validation messages

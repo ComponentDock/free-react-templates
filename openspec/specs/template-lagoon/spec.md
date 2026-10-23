@@ -153,9 +153,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Lagoon" and a "Home" link pointing to the page root
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Lagoon" and a "Home" link pointing to the page root
 - [ ] Error section with teal emoticon — it SHALL show the `:(` emoticon in the brand color
-- [ ] Footer — it SHALL show the site name "Lagoon" and a tagline
+- [x] Footer — it SHALL show the site name "Lagoon" and a tagline
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the error section in the main landmark, and the Footer in the contentinfo landmark

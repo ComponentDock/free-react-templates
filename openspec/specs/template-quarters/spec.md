@@ -157,6 +157,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Social strip: 6 icons in tan band
 - [ ] Footer: 3 columns, subscribe form, Component Dock link
 - [ ] Mobile: hamburger menu, stacked grids
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

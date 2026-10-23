@@ -182,16 +182,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] "Sign Up #07" title above the card
 - [ ] Dark slate `#3c3d47` card, radius 10px, ~450px max width, subtle shadow
 - [ ] 100px circular avatar at top center of card
-- [ ] "Create Your Account" heading, weight 300, white
+- [x] "Create Your Account" heading, weight 300, white
 - [ ] Pill inputs (radius 40px, height 52px, transparent, white/10 border)
 - [ ] Uppercase 12px bold labels with letter-spacing
 - [ ] Password eye toggle switches input type + aria-label
-- [ ] Mint `#01d28e` pill "Sign Up" button, inverts on hover
+- [x] Mint `#01d28e` pill "Sign Up" button, inverts on hover
 - [ ] "I'm already a member! Sign In" line with mint link
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock")
 - [ ] Lato font via Google Fonts `<link>` in index.html
 - [ ] Avatar placeholder via `picsum.photos` seed `rosea`
 - [ ] Icons from `lucide-react` (Eye/EyeOff)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

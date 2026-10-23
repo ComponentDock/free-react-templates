@@ -381,4 +381,4 @@ Dock (`https://www.componentdock.com/`) instead.
       fields; smooth scroll between sections.
 - [ ] Responsive check at 768px and 480px: stacked layouts, no
       horizontal overflow, mobile nav toggle.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

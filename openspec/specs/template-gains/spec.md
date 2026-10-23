@@ -373,18 +373,18 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fonts: Teko (headings) + Open Sans (body) via Google Fonts `<link>`
 - [ ] Buttons: `.btn_2` pill style — gradient fill, 50px radius, 2px
       #fa0347 border, uppercase 13px 600, hover gradient slide
-- [ ] Hero: 160px condensed headline "Join now" (span contrast) + red
+- [x] Hero: 160px condensed headline "Join now" (span contrast) + red
       uppercase sub-line on dark bg image
 - [ ] About: 3-column layout (feature / image / feature), 4 features total
       with icons
 - [ ] Extends: gradient band + video play button + headline/copy
 - [ ] Offer: 4 image cards with hover overlay (title, copy, arrow button)
 - [ ] Testimonials: gray bg, ≥3 quotes with name + role
-- [ ] Calculate: bg image, "Calculate your bmi" heading, Male/Female/Other
+- [x] Calculate: bg image, "Calculate your bmi" heading, Male/Female/Other
       radio group, gradient pill CTA
 - [ ] Team: 3 trainer cards with hover social overlay (inline SVG brand
       icons — NOT lucide brand icons)
-- [ ] Subscribe: bg image, "Start 15 days free trial", validated email
+- [x] Subscribe: bg image, "Start 15 days free trial", validated email
       form + gradient pill Subscribe
 - [ ] Footer: 4 widget columns on #080a19 + copyright row with social icons
 - [ ] Placeholder images seeded (`picsum.photos/seed/gains-<n>/<w>/<h>`);
@@ -393,5 +393,5 @@ Dock (`https://www.componentdock.com/`) instead.
       THREE dup rows, lines 399, 1018, AND 1848, + surge URL) — NOT by the
       prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

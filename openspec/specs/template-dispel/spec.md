@@ -589,9 +589,9 @@ Dock (`https://www.componentdock.com/`) instead.
       Submit shows the inline success state.
 - [ ] Responsive check at 767px and 479px (stacked tiles/rows,
       full-width date group, reduced padding).
-- [ ] No ColorLib references in any app file; footer links
+- [x] No ColorLib references in any app file; footer links
       https://www.componentdock.com/.
 - [ ] Icon exports probed with
       `node -e "console.log(typeof require('lucide-react').X)"` for
       every mapped icon before use.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

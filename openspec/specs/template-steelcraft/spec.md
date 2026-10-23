@@ -363,11 +363,11 @@ Dock (`https://www.componentdock.com/`) instead.
       names, footer email) — same kinds of content, no duplicated strings;
       the "Creative designer at Colorlib" role replaced with a neutral job
       title
-- [ ] Footer links Component Dock (https://www.componentdock.com/) —
+- [x] Footer links Component Dock (https://www.componentdock.com/) —
       replaces the original "Colorlib" credit
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] TEMPLATES.md: mark BOTH lendo rows `[x]` (lines 600 and 1952) +
       surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (steelcraft.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

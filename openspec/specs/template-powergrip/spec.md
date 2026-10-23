@@ -168,16 +168,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar navigation — the user sees the "PowerGrip" logo and all seven navigation links
+- [x] Navbar navigation — the user sees the "PowerGrip" logo and all seven navigation links
 - [ ] Hero slider — the hero shows the first slide title and CTA button
 - [ ] Intro programs — three program cards are visible with titles and prices
 - [ ] Services section — four service cards are visible with headings and descriptions
 - [ ] Class schedule — that tab becomes active and class entries are displayed
 - [ ] Testimonials — three testimonial cards with names and quotes are visible
 - [ ] Trainers — four trainer cards are visible with names and images
-- [ ] Classes — three class cards are visible with "Learn More" links
+- [x] Classes — three class cards are visible with "Learn More" links
 - [ ] Events — three event cards are visible with dates and locations
 - [ ] Blog — three blog cards are visible with authors and titles
 - [ ] Newsletter — the input field displays the typed email

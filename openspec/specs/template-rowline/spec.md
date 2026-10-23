@@ -497,4 +497,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage via `scripts/verify-app.sh rowline`; PR
       `feat/template-rowline` with source slug + preview URL
       (`bootstrap/` path) + tokens in the description
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

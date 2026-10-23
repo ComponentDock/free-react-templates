@@ -424,7 +424,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes for this spec (whole-repo validate may
       fail on unrelated legacy specs — check this spec's own `✓` line).
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/alpinora`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/alpinora`
       (`scripts/verify-app.sh alpinora` in FAST_MODE; full `npm run gate`
       in CI).
 - [ ] Visual fidelity: transparent header (diamond mark + Alpinora +
@@ -456,4 +456,4 @@ Dock (`https://www.componentdock.com/`) instead.
       URL (https://preview.colorlib.com/theme/adventure/), design tokens,
       and what differs (new name Alpinora, placeholder images, paraphrased
       copy, inner pages not recreated, empty logo strip kept empty).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -344,9 +344,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-vendio/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/vendio`, package `@free-react-templates/vendio`, no
+- [x] App folder `apps/vendio`, package `@free-react-templates/vendio`, no
       ColorLib references in app code (grep for colorlib/Sublime in apps/vendio)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh vendio`
 - [ ] Section order matches the source: header → hero slider → ads row →
       products → XL ad → icon boxes → newsletter → footer
@@ -359,7 +359,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header: fixed white, 130px → 70px on scroll, logo 30px → 24px; nav links
       `#767676` → `#1b1b1b` hover; cart "(0)" count; search panel; mobile
       full-screen menu
-- [ ] Hero: 950px, cover photo, 60px white headline, outlined "Shop Now", 3
+- [x] Hero: 950px, cover photo, 60px white headline, outlined "Shop Now", 3
       slides with numbered dots 01/02/03 (active `#e95a5a`)
 - [ ] Badges: NEW `#6c6a74`, SALE `#e95a5a`, HOT `#1b1b1b`, rotated 90°,
       items 1 NEW / 2+8 SALE / 6 HOT
@@ -368,4 +368,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description: source template, preview URL, design tokens, diffs
       (name, placeholder images, flat nav, static footer, no fixed-bottom
       footer quirk)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

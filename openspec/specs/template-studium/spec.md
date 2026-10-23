@@ -182,12 +182,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Features section shows four icon+title+description cards
 - [ ] Testimonials display student quotes with avatars
 - [ ] About section has heading and description
-- [ ] Blog section shows three post cards with "Read more" links
+- [x] Blog section shows three post cards with "Read more" links
 - [ ] Footer has four columns, dark background, Component Dock link
 - [ ] All buttons use pill-shaped border-radius (40px)
 - [ ] Font family is Poppins throughout
 - [ ] Brand colors match: blue #0062cc, teal #24d2c8, magenta #ce4be8, orange #fc9927
 - [ ] Sections alternate between white and light (#f9faff / #f7f7f7) backgrounds
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

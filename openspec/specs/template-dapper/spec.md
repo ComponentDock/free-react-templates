@@ -232,15 +232,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Dapper" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline (e.g. "HairStyle is a Must Try Fashion")
-- [ ] About split — it SHALL show the heading "We Believe that Interior beauty Lasts Long"
-- [ ] Services grid — it SHALL show the heading "What We Can Do for You"
-- [ ] Barbers team — it SHALL show the heading "We Have All Famous Barbers"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Dapper" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline (e.g. "HairStyle is a Must Try Fashion")
+- [x] About split — it SHALL show the heading "We Believe that Interior beauty Lasts Long"
+- [x] Services grid — it SHALL show the heading "What We Can Do for You"
+- [x] Barbers team — it SHALL show the heading "We Have All Famous Barbers"
 - [ ] Testimonials — it SHALL render a quote with an author name
-- [ ] Pricing packages — it SHALL show the heading "Choose Your Package"
+- [x] Pricing packages — it SHALL show the heading "Choose Your Package"
 - [ ] Blog row — it SHALL show the heading "Latest From Blog"
-- [ ] Footer — it SHALL show the site name "Dapper" and quick links
+- [x] Footer — it SHALL show the site name "Dapper" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -147,7 +147,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top Bar & Navbar — the Top Bar & Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
 - [ ] Hero Carousel — the Hero Carousel band SHALL be present at its documented position with the structure, copy and tokens named above
 - [ ] About / Key Services Section — the About / Key Services Section band SHALL be present at its documented position with the structure, copy and tokens named above

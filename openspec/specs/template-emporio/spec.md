@@ -433,15 +433,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/emporio`)
 - [ ] Section order matches the reference 1:1 (header → hero slider → category cards → Trending This Week → testimonial → You May Like → Latest News → services strip → footer)
 - [ ] Design tokens in `@theme` (brand red #FF2020, charcoal #292621, footer #171613, testimonial band #F3EAD8, blog band #F6F6F6, strikethrough #CEBD9C, Roboto + Jost + Clicker Script font stacks)
-- [ ] Header: white top bar (About Us/Privacy/FAQ/Careers left; My Wishlist, Track Your Order, 5 social icons right), white main bar ("Emporio" wordmark + nav Home/Men/Women/Baby Collection [red "New" badge]/Pages/Blog/Contact + search/user/cart icons), dark promo strip ("Sale Up To 50%…" + Shop Now link); Pages and Blog dropdowns; mobile hamburger menu
-- [ ] Hero: 2-slide carousel (cover photos), red Clicker Script "Fashion Sale" eyebrow, 55px #292621 h1 "Minimal Menz Style", paragraph, red pill "Shop Now" (radius 35px, padding 22px 32px), navigable
-- [ ] Category cards: 3 photo cards (Men's/Women's/Baby Fashion) with dark bottom gradient, white 24px titles, white "Shop Now" links, hover scale 1.02
-- [ ] Trending This Week: "Trending This Week" + Men (active)/Women/Baby/Fashion tabs; product cards (photo + hover cart/heart/zoom icons + name + red $98.00 + strikethrough $120.00); tab switching swaps panes
-- [ ] Testimonial: #F3EAD8 band, "Customer Testimonial" + "Everybody is different…" copy + avatar + "Petey Cruiser — Designer" (NO Colorlib)
-- [ ] You May Like: "You May Like" heading + product carousel (same card kind)
-- [ ] Latest News: #F6F6F6 band, "Latest News" + 3 cards (photo, "Fashion Tips" tag, title, excerpt, dark uppercase "Read More" → outline on hover)
-- [ ] Services strip: 4 centered columns (icon + Fast & Free Delivery / Secure Payment / Money Back Guarantee / Online Support + "Free delivery on all orders")
+- [x] Header: white top bar (About Us/Privacy/FAQ/Careers left; My Wishlist, Track Your Order, 5 social icons right), white main bar ("Emporio" wordmark + nav Home/Men/Women/Baby Collection [red "New" badge]/Pages/Blog/Contact + search/user/cart icons), dark promo strip ("Sale Up To 50%…" + Shop Now link); Pages and Blog dropdowns; mobile hamburger menu
+- [x] Hero: 2-slide carousel (cover photos), red Clicker Script "Fashion Sale" eyebrow, 55px #292621 h1 "Minimal Menz Style", paragraph, red pill "Shop Now" (radius 35px, padding 22px 32px), navigable
+- [x] Category cards: 3 photo cards (Men's/Women's/Baby Fashion) with dark bottom gradient, white 24px titles, white "Shop Now" links, hover scale 1.02
+- [x] Trending This Week: "Trending This Week" + Men (active)/Women/Baby/Fashion tabs; product cards (photo + hover cart/heart/zoom icons + name + red $98.00 + strikethrough $120.00); tab switching swaps panes
+- [x] Testimonial: #F3EAD8 band, "Customer Testimonial" + "Everybody is different…" copy + avatar + "Petey Cruiser — Designer" (NO Colorlib)
+- [x] You May Like: "You May Like" heading + product carousel (same card kind)
+- [x] Latest News: #F6F6F6 band, "Latest News" + 3 cards (photo, "Fashion Tips" tag, title, excerpt, dark uppercase "Read More" → outline on hover)
+- [x] Services strip: 4 centered columns (icon + Fast & Free Delivery / Secure Payment / Money Back Guarantee / Online Support + "Free delivery on all orders")
 - [ ] Footer: dark #171613; subscribe area (white h3 + copy + email input + red square Subscribe button + socials); columns Shop Men/Shop Women/Baby Collection (5 links each) + Quick Links (6 links); copyright bar links Component Dock
 - [ ] Buttons: `.btn` red pill (radius 35px); `.btn_1` dark square → outline hover; `.subscribe-btn` red square 60px
-- [ ] Document title "Emporio — Fashion Shop Template"
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Document title "Emporio — Fashion Shop Template"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

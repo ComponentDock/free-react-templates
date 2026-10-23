@@ -280,10 +280,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Section order matches the reference 1:1 (header → hero photo wall → intro → footer)
 - [ ] Design tokens from the reference used in `@theme` (ink #212121, white #fff, overlay #060606, social icon #121212, body #7d7d7d, hairline #e8e8e8, search #000/#333/#999; Poppins Google Font)
 - [ ] Header: text logo left, hamburger + search right, slide-down nav (Home / About the Artist / Portfolio dropdown 1–3 / Blog / Elements / Contact), full-screen black search overlay with large input + close
-- [ ] Hero: 21 photo tiles (seeded picsum), masonry wall, auto-advance (1–7 tiles per breakpoint), hover overlay #060606 with white "Take a look at my Portfolio" slide-up caption
+- [x] Hero: 21 photo tiles (seeded picsum), masonry wall, auto-advance (1–7 tiles per breakpoint), hover overlay #060606 with white "Take a look at my Portfolio" slide-up caption
 - [ ] Social sidebar: white vertical bar (5 icons: Pinterest/Facebook/Twitter/Dribbble/Behance) pinned right edge; full-width horizontal on mobile
 - [ ] Intro: "My name is Sam. I'm a photographer" (48px), grey paragraph, underlined CTA "Take a look @my portfolio" (3px #212121 bottom border)
 - [ ] Progress bars: 6px track, #212121 fill at 75/100/90% for Nature/Passion/Portraits, white % tag (54×40 #212121) at fill end
-- [ ] Footer: #212121 bg, copyright "© 2026 Photofolio. All rights reserved." + Component Dock link (11px, white), 5 social icons right
-- [ ] No ColorLib assets copied; photos are seeded placeholders; icons from lucide-react
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer: #212121 bg, copyright "© 2026 Photofolio. All rights reserved." + Component Dock link (11px, white), 5 social icons right
+- [x] No ColorLib assets copied; photos are seeded placeholders; icons from lucide-react
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

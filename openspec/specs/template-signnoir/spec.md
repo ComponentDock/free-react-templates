@@ -349,7 +349,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Wrap: `col-lg-10` centered, 5px radius, shadow `0px 10px 34px -15px rgba(0,0,0,0.24)`, overflow hidden
 - [ ] Left panel: picsum placeholder photo (deterministic seed), solid-black 50% overlay, bottom-aligned text, padding 1.5rem/3rem lg
 - [ ] Left panel h2 "Welcome to signup form" (700, 24px, white) + "Far far away…" paragraph (rgba(255,255,255,0.8))
-- [ ] Right panel white, "Create an account" h3 weight 300
+- [x] Right panel white, "Create an account" h3 weight 300
 - [ ] Five label-left field rows: Full Name / Email Address (johndoe@email.com) / Phone no. (+01) / Password / Website — 150px label column, 50px gray-fill inputs (4px radius, calc(100% - 150px) width), rgba(0,0,0,0.3) placeholders
 - [ ] Focus darkens input fill to rgba(0,0,0,0.05), no ring (source behavior)
 - [ ] Terms checkbox checked by default, capitalized label, native input + styled check (no Font Awesome)
@@ -360,7 +360,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Brand tokens in `@theme` (page bg `#313131`, accent `#6807f9`, overlay black, wrap shadow, input fill)
 - [ ] Responsive: panels stack below 768px, 50/50 at ≥992px; NO `min-width: 992px` on body
 - [ ] Placeholder image from picsum.photos (deterministic seed `signnoir-1`)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -484,17 +484,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/reachly`)
 - [ ] Section order matches the reference 1:1 (header → hero → services → About → pricing → Why Choose Us → brand strip → case study → testimonials → CTA banner → footer)
 - [ ] Design tokens in `@theme` (brand pink #FF4495, gradient #FF4495→#FF6D6D, navy #192839, band #F8FBFE, Nunito + Jost font stacks)
-- [ ] Header: transparent, "Reachly" wordmark left, nav (Home/About/Services/Case Study/Blog/Contact) with Blog dropdown, "Call Us:" + pink pill "Let's Talk" right, white sticky bg
-- [ ] Hero: white pill eyebrow "Digital Marketing Expert", 58px navy h1, 20px subcopy, pink pill "Explore Services" (hero padding 15px 36px, radius 30px), decorative circular play button over right-side photo
+- [x] Header: transparent, "Reachly" wordmark left, nav (Home/About/Services/Case Study/Blog/Contact) with Blog dropdown, "Call Us:" + pink pill "Let's Talk" right, white sticky bg
+- [x] Hero: white pill eyebrow "Digital Marketing Expert", 58px navy h1, 20px subcopy, pink pill "Explore Services" (hero padding 15px 36px, radius 30px), decorative circular play button over right-side photo
 - [ ] Services: "Our Services / Provide Awesome Service With Our Tools" + 4 white cards (pink icon circle, 22px navy title, copy), hover → #192839 fill + white text
-- [ ] About: photo left, caption right ("About Us" eyebrow, h2, paragraph, pink "Explore More")
-- [ ] Pricing: #F8FBFE band, Yearly/Monthly pill tabs (active #192839), 3 cards (icon, plan, $05.00 price, 4 features, orange pill "Get Started"), hover shadow + pink-outline button
-- [ ] Why Choose Us: heading + right-aligned "Explore More" underline link, stats 450+/860, paragraph + Shonda Leer quote
+- [x] About: photo left, caption right ("About Us" eyebrow, h2, paragraph, pink "Explore More")
+- [x] Pricing: #F8FBFE band, Yearly/Monthly pill tabs (active #192839), 3 cards (icon, plan, $05.00 price, 4 features, orange pill "Get Started"), hover shadow + pink-outline button
+- [x] Why Choose Us: heading + right-aligned "Explore More" underline link, stats 450+/860, paragraph + Shonda Leer quote
 - [ ] Brand strip: 6 logo placeholders in a row
-- [ ] Case Study: "Some Of Our Awesome Stuffs" + 4 photo cards with "Marketing" tag + white overlay title on dark gradient
-- [ ] Testimonials: 3 slides (quote, avatar, author — NO Colorlib reference)
-- [ ] CTA banner: full-width bg photo + pink-gradient rounded box ("Interested to Digging Dipper?" + white copy + white-bordered "Contact Us" pill)
+- [x] Case Study: "Some Of Our Awesome Stuffs" + 4 photo cards with "Marketing" tag + white overlay title on dark gradient
+- [x] Testimonials: 3 slides (quote, avatar, author — NO Colorlib reference)
+- [x] CTA banner: full-width bg photo + pink-gradient rounded box ("Interested to Digging Dipper?" + white copy + white-bordered "Contact Us" pill)
 - [ ] Footer: about column (wordmark + blurb + socials), Navigation/Services/Support link columns, Contact Us column (email + phone), copyright bar links Component Dock
 - [ ] Buttons: `.btn_0` pink-gradient pill (radius 25px, arrow slides right on hover); `.get-btn` orange pill → pink outline on hover; `.border-btn` white outline; `.browse-btn` 2px pink underline
-- [ ] Document title "Reachly — SEO & Marketing Template"
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Document title "Reachly — SEO & Marketing Template"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -174,10 +174,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Dropdown behavior — the dropdown menu is visible
-- [ ] Selection — a tag "Alaska" appears in the selected area
-- [ ] Search / Filter — only options matching "Cal" are visible
+- [x] Selection — a tag "Alaska" appears in the selected area
+- [x] Search / Filter — only options matching "Cal" are visible
 - [ ] Select all / Clear all — all options are selected
 - [ ] Keyboard navigation — the dropdown is open
-- [ ] Accessibility — the trigger has aria-expanded="false"
+- [x] Accessibility — the trigger has aria-expanded="false"

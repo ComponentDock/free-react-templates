@@ -274,7 +274,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header renders with transparent background over hero
 - [ ] Logo and navigation links are present and functional
 - [ ] Hero slider cycles between slides with dark overlay
-- [ ] "Welcome" subheading and main heading are displayed
+- [x] "Welcome" subheading and main heading are displayed
 - [ ] Video play icon is present in hero
 - [ ] Our Info section shows 3 feature columns on dark background
 - [ ] Professional Services section has background image + text + CTA
@@ -286,10 +286,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] CTA Banner displays heading and Contact Us button
 - [ ] Blog section shows 2 posts with metadata
 - [ ] Footer shows logo, description, addresses, Instagram, social icons
-- [ ] Footer copyright includes "Component Dock"
+- [x] Footer copyright includes "Component Dock"
 - [ ] Scroll-to-top button appears and works
 - [ ] Design tokens match: brand-red #ff1313, dark-navy #16161a, Barlow + Barlow Condensed fonts
 - [ ] Buttons are square (border-radius 0) with uppercase text
 - [ ] All placeholder images use picsum.photos
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

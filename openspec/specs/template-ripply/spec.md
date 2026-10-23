@@ -508,7 +508,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `#dacafc → #9bccfc`, install band `#ede6fd → #d2e6fd`, section
       bg `#EFF1FF`, price header `#d8cafc`, text `#424242` / `#6b6d6f`,
       Poppins + Montserrat via Google Fonts.
-- [ ] Navbar: transparent, "Ripply" wordmark, uppercase links
+- [x] Navbar: transparent, "Ripply" wordmark, uppercase links
       (Home/FETURES/About/SCREENSHOT/Price/Blog/Contact), search icon,
       gradient-pill hover (radius 13px), mobile burger opens the menu.
 - [ ] Hero: full-cover background, giant white wordmark, subtitle,
@@ -517,7 +517,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Features: "POWERFUL APPS FETURES" title, 5 icon cards on white.
 - [ ] Choose us: `#EFF1FF` band, 4 items (Top Rated, Fetured App,
       Easy To Share, Best Apps).
-- [ ] Satisfaction: "AIM CLIENT SATISFACTION", 3 bullets (Easy To Use,
+- [x] Satisfaction: "AIM CLIENT SATISFACTION", 3 bullets (Easy To Use,
       24/7 Support, Well Documentation), testimonial by
       "Mr. Jonathon Smith".
 - [ ] Video: thumbnail panel with play button on `#EFF1FF`.
@@ -529,10 +529,10 @@ Dock (`https://www.componentdock.com/`) instead.
       featured / EXCLUSIVE $90), `#d8cafc` headers, 4 features each,
       gradient "PURCHASE NOW" pills (radius 17.5px); featured card has
       gradient header + shadow.
-- [ ] Team: "TEAM MEMBER" title, 4 photo cards with varied names/roles.
-- [ ] FAQ: "FREQUENTLY ASKED QUESTION" (typo fixed), 4 expandable
+- [x] Team: "TEAM MEMBER" title, 4 photo cards with varied names/roles.
+- [x] FAQ: "FREQUENTLY ASKED QUESTION" (typo fixed), 4 expandable
       items, active state on expansion.
-- [ ] Blog: "LATEST NEWS FROM BLOG", 2 post cards (thumb, category,
+- [x] Blog: "LATEST NEWS FROM BLOG", 2 post cards (thumb, category,
       title, meta, read-more).
 - [ ] Footer: subscription input-group (email + SEND), App Home and
       Support link columns, Contact Us form (name/phone/email/subject/
@@ -543,7 +543,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (`picsum.photos/seed/ripply-<n>/<w>/<h>`); logo recreated as text
       wordmark.
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [ ] 100% Vitest coverage on `apps/ripply` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/ripply` (lines/functions/branches/
       statements).
 - [ ] PR description includes: source template (ColorLib "Drimo"),
       preview URL (https://preview.colorlib.com/theme/drimo/ —
@@ -551,5 +551,5 @@ Dock (`https://www.componentdock.com/`) instead.
       design tokens used, what differs (name, portal gallery not
       recreated, placeholder images, text logo, Google-font
       substitution).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

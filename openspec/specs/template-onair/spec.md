@@ -152,12 +152,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders with brand and navigation links — the navbar shows the "OnAir" brand link
-- [ ] Hero section displays with CTA — the heading "Designed For Music, Engineered to Last" is visible
-- [ ] Blog section shows featured and trending posts — the "Blog New" heading is visible
-- [ ] Music charts section shows track listings — the "Music Chart" heading is visible
-- [ ] Trending video section renders — the "Trending Video" heading is visible
-- [ ] App download section renders — the "Radio Music" heading is visible
-- [ ] Weekly schedule table renders — the "Weekly Schedule" heading is visible
-- [ ] Latest news section renders — the "Latest News" heading is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders with brand and navigation links — the navbar shows the "OnAir" brand link
+- [x] Hero section displays with CTA — the heading "Designed For Music, Engineered to Last" is visible
+- [x] Blog section shows featured and trending posts — the "Blog New" heading is visible
+- [x] Music charts section shows track listings — the "Music Chart" heading is visible
+- [x] Trending video section renders — the "Trending Video" heading is visible
+- [x] App download section renders — the "Radio Music" heading is visible
+- [x] Weekly schedule table renders — the "Weekly Schedule" heading is visible
+- [x] Latest news section renders — the "Latest News" heading is visible

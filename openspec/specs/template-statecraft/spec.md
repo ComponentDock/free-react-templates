@@ -310,14 +310,14 @@ Dock (`https://www.componentdock.com/`) instead.
       More" variant reproduces `.border-btn`.
 - [ ] Hind + Shippori Mincho loaded via Google Fonts `<link>` in
       `index.html`; no font files copied.
-- [ ] Seeded picsum placeholders; no ColorLib images/CSS copied.
-- [ ] No `colorlib` / `preview.colorlib` strings anywhere in `apps/*`.
-- [ ] Footer links to https://www.componentdock.com/.
-- [ ] `public/CNAME` = `statecraft.free.componentdock.com`; package
+- [x] Seeded picsum placeholders; no ColorLib images/CSS copied.
+- [x] No `colorlib` / `preview.colorlib` strings anywhere in `apps/*`.
+- [x] Footer links to https://www.componentdock.com/.
+- [x] `public/CNAME` = `statecraft.free.componentdock.com`; package
       `@free-react-templates/statecraft`; homepage
       `https://statecraft.free.componentdock.com`; lockfile registered
       (`npm install` at root).
 - [ ] `vite.config.ts` keeps `injectUiSource()`.
 - [ ] Per-app gate passes: `scripts/verify-app.sh statecraft`
       (typecheck, lint, knip, fallow, 100% coverage tests, build).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

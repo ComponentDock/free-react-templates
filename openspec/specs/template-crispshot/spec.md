@@ -171,16 +171,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Navbar is fixed, transparent, with white text over hero
 - [ ] Hero has background image with dark overlay, headline, paragraph, CTA button, email link
 - [ ] CTA button is pill-shaped, transparent, fills #fc6060 on hover
-- [ ] Gallery shows filter buttons (All/Human/Nature/Country/Video) with "All" active
+- [x] Gallery shows filter buttons (All/Human/Nature/Country/Video) with "All" active
 - [ ] Gallery is a 4-column grid (desktop) / 2-column (mobile) of image cards
 - [ ] Gallery items show "+" overlay and scale on hover
-- [ ] "View More" button below gallery in pill style
+- [x] "View More" button below gallery in pill style
 - [ ] Instagram section shows heading + handle + grid of 6 images
 - [ ] Instagram hover shows coral overlay with icon + handle text
 - [ ] Footer has copyright, Component Dock link, social icons
 - [ ] Social icons turn #fc6060 on hover
 - [ ] Poppins font applied throughout
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` = `crispshot.free.componentdock.com`
-- [ ] `homepage` in package.json = `https://crispshot.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] `public/CNAME` = `crispshot.free.componentdock.com`
+- [x] `homepage` in package.json = `https://crispshot.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

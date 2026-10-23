@@ -125,12 +125,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Hero section with greeting, role, and CTAs — the hero section displays the greeting, name, role, both CTA buttons, and the portrait image
 - [ ] About section with bio and CV download — the about section displays the heading, bio text, image, and CV download button
 - [ ] Brand logos and experience counter — brand logos, experience counter, and phone number are all visible
 - [ ] Services section with four service cards — all four service cards display their titles and descriptions
 - [ ] Portfolio section with filter tabs and image grid — all six portfolio items are visible
 - [ ] Testimonials section — three testimonial cards with names, ratings, and quotes are visible
-- [ ] Newsletter signup — a "Thank you for subscribing!" message appears
+- [x] Newsletter signup — a "Thank you for subscribing!" message appears
 - [ ] Responsive navbar with mobile menu — the mobile menu opens with all nav links visible

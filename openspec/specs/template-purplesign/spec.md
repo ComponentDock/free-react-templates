@@ -171,19 +171,19 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Purple full-page background (`#c859ff`)
 - [ ] Lato font loaded from Google Fonts
 - [ ] Page heading "Login #02" centered, white
-- [ ] "Sign In" subheading, light weight
+- [x] "Sign In" subheading, light weight
 - [ ] Username + Password inputs: transparent bg, white bottom border, white placeholders
 - [ ] Submit button: yellow (`#f6f078`), black text, pill shape (40px radius), full width
 - [ ] Submit button hover: inverted (transparent bg, yellow text/border)
 - [ ] Remember Me checkbox with yellow checkmark
 - [ ] Forgot Password link in yellow
-- [ ] "Or Sign In With" divider
+- [x] "Or Sign In With" divider
 - [ ] Social buttons: Facebook + Twitter, white bg, black text, rounded
 - [ ] Social button hover: black bg, white text
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] `public/CNAME` contains `purplesign.free.componentdock.com`
-- [ ] `package.json` homepage is `https://purplesign.free.componentdock.com`
+- [x] No ColorLib references in app code (provenance only in spec)
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] `public/CNAME` contains `purplesign.free.componentdock.com`
+- [x] `package.json` homepage is `https://purplesign.free.componentdock.com`
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

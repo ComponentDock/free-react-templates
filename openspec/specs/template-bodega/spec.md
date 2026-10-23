@@ -197,12 +197,12 @@ change the footer's own layout or copy beyond the credit line.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] Navbar displays logo and navigation — the navbar shows the "Bodega" logo on the left
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Navbar displays logo and navigation — the navbar shows the "Bodega" logo on the left
 - [ ] Hero slider displays promotional slides — a full-width hero slider is visible
 - [ ] Featured products grid displays category cards — a 2×2 grid of product category cards is visible
-- [ ] Sale banner displays promotional content — a promotional banner shows "45 Sale" prominently
-- [ ] New arrivals section displays product grid — a heading "New Arrival" with a yellow underline is visible
+- [x] Sale banner displays promotional content — a promotional banner shows "45 Sale" prominently
+- [x] New arrivals section displays product grid — a heading "New Arrival" with a yellow underline is visible
 - [ ] Testimonials section displays customer reviews — the section has a light grey background
-- [ ] Blog section shows recent posts — a heading "Recent Blog" is visible
+- [x] Blog section shows recent posts — a heading "Recent Blog" is visible
 - [ ] Newsletter subscription form — the section background is golden yellow

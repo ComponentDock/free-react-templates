@@ -524,7 +524,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/summit` scaffolded from the simplest existing app; package
+- [x] `apps/summit` scaffolded from the simplest existing app; package
       renamed `@free-react-templates/summit`; workspace registered in
       `package-lock.json` (repo is bun-managed — `bun install` at root,
       never `npm add`)
@@ -558,5 +558,5 @@ Dock (`https://www.componentdock.com/`) instead.
       build); full gate runs in CI on merge
 - [ ] PR description includes: source template (Confer), preview URL,
       design tokens, renames, placeholder images
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

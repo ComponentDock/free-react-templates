@@ -342,9 +342,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-chrono/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/chrono`, package `@free-react-templates/chrono`, no
+- [x] App folder `apps/chrono`, package `@free-react-templates/chrono`, no
       ColorLib references in app code (grep for colorlib/Timezone in apps/chrono)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh chrono`
 - [ ] Section order matches the source: header → hero slider → New Arrivals →
       gallery mosaic → Popular Items → video banner → Watch of Choice →
@@ -379,4 +379,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (`preview.colorlib.com/theme/timezone/`), design tokens, diffs (name,
       placeholder images, React slider instead of slick/owl, hamburger
       instead of slicknav, Component Dock footer credit)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

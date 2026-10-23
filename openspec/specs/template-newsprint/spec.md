@@ -301,5 +301,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Sticky navbar turns solid black with shadow on scroll
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands
 - [ ] README Templates status + ALL THREE TEMPLATES.md Magdesign lines (271, 603, 2199) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

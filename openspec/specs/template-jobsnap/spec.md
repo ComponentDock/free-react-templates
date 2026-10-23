@@ -136,9 +136,9 @@ The app source code SHALL NOT contain any references to "ColorLib" or "colorlib.
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Header renders with brand text and navigation links — the header shows "Brand" as the logo text in blue (#4a90e2)
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Header renders with brand text and navigation links — the header shows "Brand" as the logo text in blue (#4a90e2)
 - [ ] Hero section displays full-width background image — a full-width hero section displays a background image
 - [ ] Search form bar overlays hero bottom — a white search card overlays the bottom of the hero section

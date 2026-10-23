@@ -128,8 +128,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-screen hero with background image — a full-viewport background image is visible
-- [ ] Heading and subtext — a heading "Coming Soon" is displayed centered on the page
+- [x] Heading and subtext — a heading "Coming Soon" is displayed centered on the page
 - [ ] Countdown timer — a countdown timer with 4 units (Days, Hours, Mins, Sec) is displayed
-- [ ] Notify Us button — a "NOTIFY US" button is displayed below the countdown
-- [ ] Social media links — a "Follow us for update" label is displayed near the bottom
+- [x] Notify Us button — a "NOTIFY US" button is displayed below the countdown
+- [x] Social media links — a "Follow us for update" label is displayed near the bottom
 - [ ] Responsive layout — all content remains centered and readable

@@ -237,7 +237,7 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Category tag badges use the correct gold/yellow background
 - [ ] Footer links to Component Dock
 - [ ] All placeholder images use picsum.photos with deterministic seeds
-- [ ] No references to ColorLib in app source code
+- [x] No references to ColorLib in app source code
 - [ ] Responsive layout works at mobile/tablet/desktop breakpoints
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

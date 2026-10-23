@@ -157,9 +157,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Brand header — the header SHALL show the site name "Trellis"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Brand header — the header SHALL show the site name "Trellis"
 - [ ] Navigation bar — the navbar SHALL show links to Home, About, Services,
 - [ ] Portfolio section — it SHALL show twelve project cards, each with a project image
 - [ ] Footer — it SHALL show the brand name and blurb

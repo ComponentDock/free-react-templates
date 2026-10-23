@@ -243,14 +243,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Cortex" and links to Platform, Pricing, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Build Autonomous AI Agents"
-- [ ] Features section — it SHALL contain a heading "Everything You Need to Build AI Agents"
-- [ ] Social proof section — it SHALL show a heading "Trusted by AI Teams Everywhere"
-- [ ] Contact section — it SHALL show a heading "Talk to Our Team" and a form with Full Name, Email Address, Phone Number, Project Type, and Project Details fields and a Send Message submit button
-- [ ] FAQ section — it SHALL show a heading "Frequently Asked Questions"
-- [ ] CTA band — it SHALL show a heading "Ready to Build Your First Agent?"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Cortex" and links to Platform, Pricing, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Build Autonomous AI Agents"
+- [x] Features section — it SHALL contain a heading "Everything You Need to Build AI Agents"
+- [x] Social proof section — it SHALL show a heading "Trusted by AI Teams Everywhere"
+- [x] Contact section — it SHALL show a heading "Talk to Our Team" and a form with Full Name, Email Address, Phone Number, Project Type, and Project Details fields and a Send Message submit button
+- [x] FAQ section — it SHALL show a heading "Frequently Asked Questions"
+- [x] CTA band — it SHALL show a heading "Ready to Build Your First Agent?"
 - [ ] Footer — it SHALL show Platform, Resources, and Company link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

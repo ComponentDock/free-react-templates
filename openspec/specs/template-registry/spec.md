@@ -166,11 +166,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page layout — I see a background image covering the viewport
-- [ ] Registration form heading — I see a heading with text "REGISTRATION FORM"
-- [ ] Form fields — I see a text input labeled "First Name"
+- [x] Registration form heading — I see a heading with text "REGISTRATION FORM"
+- [x] Form fields — I see a text input labeled "First Name"
 - [ ] Terms checkbox — I see a checkbox with the text "I accept the Terms of Use & Privacy Policy."
-- [ ] Register Now button — I see a "Register Now" button with a red background and white text
+- [x] Register Now button — I see a "Register Now" button with a red background and white text
 - [ ] Password match validation — I see an error message about passwords not matching
-- [ ] Document title — the document title is "Registry — Registration Form Template"
+- [x] Document title — the document title is "Registry — Registration Form Template"

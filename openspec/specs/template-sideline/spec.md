@@ -390,4 +390,4 @@ Dock (`https://www.componentdock.com/`) instead.
       backgrounds
 - [ ] 100% test coverage via `scripts/verify-app.sh sideline`; PR
       `feat/template-sideline`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

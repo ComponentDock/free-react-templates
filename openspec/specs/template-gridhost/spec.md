@@ -959,7 +959,7 @@ copy verbatim.
       `.work-company` band, partner-logo tiles (explicit size — never the
       reference's natural 196×102), `#back-top` and the sub-`lg` menu are all real
       styled components; nothing relies on a missing rule
-- [ ] Zero `colorlib` / "Webhostingservice" / `webhostingservice` provenance
+- [x] Zero `colorlib` / "Webhostingservice" / `webhostingservice` provenance
       references anywhere in `apps/gridhost` (comments included)
 - [ ] No copied assets: no `hero_right.png`, `visit_bg.jpg`, `section_bg02.jpg`,
       `section_bg03.jpg`, `footer_bg.jpg`, `cisco_brand*.png`, `blog*.png`,
@@ -972,10 +972,10 @@ copy verbatim.
       `aria-selected`, `aria-label` on the dot rail and arrows), every icon-only
       control has an accessible name, focus is visible everywhere, and
       `prefers-reduced-motion: reduce` disables carousel motion and transitions
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") and shows a computed current year; the contact column keeps the
       phone-as-heading shape
-- [ ] `public/CNAME` = `gridhost.free.componentdock.com` and
+- [x] `public/CNAME` = `gridhost.free.componentdock.com` and
       `"homepage": "https://gridhost.free.componentdock.com"` in
       `apps/gridhost/package.json`; `package-lock.json` registers
       `@free-react-templates/gridhost`

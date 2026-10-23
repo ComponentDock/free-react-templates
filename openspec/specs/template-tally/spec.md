@@ -148,9 +148,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar — GIVEN** the page loads, Then the top bar displays phone number and email address
-- [ ] Navbar — GIVEN** the page loads, Then the navbar shows brand "Tally"
+- [x] Navbar — GIVEN** the page loads, Then the navbar shows brand "Tally"
 - [ ] Hero — GIVEN** the page loads, Then a carousel displays the first slide with heading and CTA
 - [ ] About — GIVEN** the page loads, Then an image appears on the left and text content on the right
 - [ ] Services — GIVEN** the page loads, Then 4 service cards are displayed in a grid

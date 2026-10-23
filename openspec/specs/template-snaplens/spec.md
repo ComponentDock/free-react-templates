@@ -117,7 +117,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with logo, navigation links, search, and mobile toggle — the navbar displays the logo and all 6 navigation links
-- [ ] Hero section with title and subtitle — the hero section shows the heading "Snaplens" and the subtitle text
+- [x] Hero section with title and subtitle — the hero section shows the heading "Snaplens" and the subtitle text
 - [ ] Intro section with heading, text, CTA, and image — the intro section shows the heading, paragraph, CTA button, and studio image
 - [ ] Portfolio grid with 7 items and hover overlays — the portfolio section displays 7 clickable items with titles and categories
 - [ ] Milestones section with 4 stat counters — the milestones section displays all 4 stat values and labels

@@ -344,14 +344,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh sana`,
       PR lists source (ColorLib Hospice), preview URL, tokens, and what
       differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Hero — it SHALL show the headline "We Care for Your Health Every Moment"
-- [ ] Procedure Category — it SHALL show a centered heading "Procedure Category" and three
-- [ ] About Myself — it SHALL show the heading "About Myself" with supporting text
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Hero — it SHALL show the headline "We Care for Your Health Every Moment"
+- [x] Procedure Category — it SHALL show a centered heading "Procedure Category" and three
+- [x] About Myself — it SHALL show the heading "About Myself" with supporting text
 - [ ] Client Feedback — it SHALL show a centered heading "Enjoy our Client's Feedback"
-- [ ] Our Offered Services — it SHALL show a centered heading "Our Offered Services"
+- [x] Our Offered Services — it SHALL show a centered heading "Our Offered Services"
 - [ ] Appointment — it SHALL show the heading "Servicing Hours" with rows for
-- [ ] Recent Blogs — it SHALL show a centered heading "Our Recent Blogs"
-- [ ] Footer — it SHALL show a "Top Products" column of links, a "Contact Us"
+- [x] Recent Blogs — it SHALL show a centered heading "Our Recent Blogs"
+- [x] Footer — it SHALL show a "Top Products" column of links, a "Contact Us"
 - [ ] Page composition — the page SHALL compose the header, hero, Procedure Category,

@@ -266,10 +266,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/bulletin`); `grep -c "free-react-templates/bulletin"
     package-lock.json` >= 1
-- [ ] `"homepage": "https://bulletin.free.componentdock.com"`
+- [x] `"homepage": "https://bulletin.free.componentdock.com"`
       in `apps/bulletin/package.json`
 - [ ] PR title: `feat: Bulletin — news magazine template (ColorLib
     Newsflex)`; body includes source URL, preview URL
       (`https://preview.colorlib.com/theme/newsbox/`), tokens, and the
       slug note (`newsflex` preview 404s → use `newsbox`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -150,7 +150,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders all sections in correct order — the navbar, hero, about, skills, testimonials, services, benefits, portfolio, resume, blog, contact, and footer sections are rendered in order
 - [ ] Navbar with navigation links — all seven navigation links are visible
 - [ ] Hero section with name and CTAs — the hero heading shows "Howdy, I'm Alex Morgan"

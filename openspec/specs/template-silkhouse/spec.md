@@ -123,11 +123,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays logo, navigation, social icons, search, and cart — the navbar displays the "SilkHouse" logo
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar displays logo, navigation, social icons, search, and cart — the navbar displays the "SilkHouse" logo
 - [ ] Hero slider displays fashion imagery with auto-advance — a full-width image slider shows 3 slides
 - [ ] Categories grid shows 4 items with hover overlay — 4 category cards display in a row
-- [ ] New arrivals displays product grid with ratings and prices — the "New Arrival" section displays 8 product cards
+- [x] New arrivals displays product grid with ratings and prices — the "New Arrival" section displays 8 product cards
 - [ ] Collection promo renders promotional section — a promotional section shows a heading about the collection
-- [ ] Popular products displays product cards with Shop Now buttons — the "Popular Items" section displays product cards
+- [x] Popular products displays product cards with Shop Now buttons — the "Popular Items" section displays product cards
 - [ ] Features section shows 4 service items — 4 feature items display in a row

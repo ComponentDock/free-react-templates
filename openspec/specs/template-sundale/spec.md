@@ -189,12 +189,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header renders with navigation links — the navbar displays logo "Sundial"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header renders with navigation links — the navbar displays logo "Sundial"
 - [ ] Mobile menu toggles — the mobile navigation menu opens
-- [ ] Hero section displays headline and search form — the hero section shows "Find Your Dream Home"
+- [x] Hero section displays headline and search form — the hero section shows "Find Your Dream Home"
 - [ ] Featured properties shows 6 property cards — 6 property cards are displayed in a grid
-- [ ] Call to action section renders — the CTA section shows "Are you looking for a place to rent?"
-- [ ] Testimonials section renders — the testimonials section shows "Client testimonials"
-- [ ] Agent section renders — "Jeremy Scott" agent name is displayed
+- [x] Call to action section renders — the CTA section shows "Are you looking for a place to rent?"
+- [x] Testimonials section renders — the testimonials section shows "Client testimonials"
+- [x] Agent section renders — "Jeremy Scott" agent name is displayed
 - [ ] Footer newsletter form accepts email — the email is entered in the field

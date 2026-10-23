@@ -157,9 +157,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — all 6 navigation links are visible alongside the brand
-- [ ] Hero Section — it displays "Welcome" subheading, "We Help to Build You the Product" heading, "Business Solution" subheading, and a "Get in touch" CTA button
+- [x] Hero Section — it displays "Welcome" subheading, "We Help to Build You the Product" heading, "Business Solution" subheading, and a "Get in touch" CTA button
 - [ ] About Section — it shows Market Research, Financial Services, Online Marketing, and 24/7 Support
 - [ ] Services Grid — it displays Business Strategy, Data Analysis, Graphic Design, and Creative cards
 - [ ] Counter Stats — it shows Done Works (2000), Happy Customers (300), Coffee (100), and Work Hours (1000)

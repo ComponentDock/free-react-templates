@@ -212,8 +212,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Contact: form with all fields
 - [ ] Footer: dark bg, 3 columns, newsletter, Component Dock link
 - [ ] Design tokens: Open Sans, #fd7e14 orange, #343a40 dark, 30px pill buttons
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos
 - [ ] Package name: @free-react-templates/bankcraft
-- [ ] CNAME: bankcraft.free.componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] CNAME: bankcraft.free.componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

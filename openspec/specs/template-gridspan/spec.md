@@ -406,4 +406,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage via `scripts/verify-app.sh gridspan`; PR
       `feat/template-gridspan` with source slug + preview URL + tokens in
       the description
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

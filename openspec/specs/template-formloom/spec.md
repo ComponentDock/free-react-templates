@@ -125,9 +125,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Split-layout hero with image and form card — an image SHALL be visible on the left side of the layout
 - [ ] Student Registration Form with all fields — the Name, Father Name, Address, DOB, Pincode, and Email ID text/date inputs SHALL be visible
-- [ ] Form submission and reset behavior — a success message "Registration submitted successfully!" SHALL be displayed
-- [ ] Navbar with site name and dark mode toggle — the text "Formloom" SHALL be visible in the navbar
+- [x] Form submission and reset behavior — a success message "Registration submitted successfully!" SHALL be displayed
+- [x] Navbar with site name and dark mode toggle — the text "Formloom" SHALL be visible in the navbar
 - [ ] Design tokens matching original — the page background SHALL be dark charcoal

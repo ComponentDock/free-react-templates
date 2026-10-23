@@ -272,7 +272,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/rivulet`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/rivulet`
       (`scripts/verify-app.sh rivulet` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: hero (navy + particles + scroll pill), 5 post
@@ -289,5 +289,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description states source template (ColorLib "Droppler"), preview
       URL, design tokens, and what differs (name, placeholders, logo as
       inline SVG).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

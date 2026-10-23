@@ -210,17 +210,17 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Page renders full-viewport split-screen layout
 - [ ] Left column: white background, centered form content
 - [ ] Right column: background image, 50% width
-- [ ] "Sign Up" heading is visible (Roboto, bold)
+- [x] "Sign Up" heading is visible (Roboto, bold)
 - [ ] Name input with correct placeholder
 - [ ] Email input with correct placeholder
 - [ ] Password input with correct placeholder
 - [ ] Re-type Password input with correct placeholder
 - [ ] Terms checkbox is pre-checked
-- [ ] Terms text includes linked "Terms and Conditions" and "Privacy Policy"
-- [ ] "Register" button is full-width, blue, white text
+- [x] Terms text includes linked "Terms and Conditions" and "Privacy Policy"
+- [x] "Register" button is full-width, blue, white text
 - [ ] Mobile layout: image on top, form below
 - [ ] Fonts: Roboto family
 - [ ] Colors match design tokens
-- [ ] No references to ColorLib in app code
+- [x] No references to ColorLib in app code
 - [ ] Footer links to Component Dock
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

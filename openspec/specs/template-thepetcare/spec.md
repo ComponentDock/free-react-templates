@@ -216,15 +216,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Thepetcare" and links to the main sections
-- [ ] Hero section — it SHALL contain a level-1 heading matching "Saving Animals Changing Live"
-- [ ] About section — it SHALL show the heading "The Kind of Care Your Pets Deserve"
-- [ ] Services section — it SHALL show the heading "Our Pet Care Services"
+- [x] Navigation bar — the navbar SHALL show the site name "Thepetcare" and links to the main sections
+- [x] Hero section — it SHALL contain a level-1 heading matching "Saving Animals Changing Live"
+- [x] About section — it SHALL show the heading "The Kind of Care Your Pets Deserve"
+- [x] Services section — it SHALL show the heading "Our Pet Care Services"
 - [ ] Video block — it SHALL show the video text and a play button with an accessible label
-- [ ] Quote section — it SHALL show the heading "Animals has come to mean so much in t live"
+- [x] Quote section — it SHALL show the heading "Animals has come to mean so much in t live"
 - [ ] Emergency section — it SHALL show the emergency text and a phone number
-- [ ] Volunteer section — it SHALL show the heading "We looking for helping hand"
-- [ ] Footer — it SHALL show the site name "Thepetcare" and an about blurb
+- [x] Volunteer section — it SHALL show the heading "We looking for helping hand"
+- [x] Footer — it SHALL show the site name "Thepetcare" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

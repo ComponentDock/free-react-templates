@@ -332,10 +332,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] About section: split layout with text + image
 - [ ] Blog section: 3 cards in a row
 - [ ] Footer: dark bg, 4 columns, newsletter form, Component Dock link
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] All images use picsum-seeded placeholders
 - [ ] Dark mode toggle works
 - [ ] Mobile responsive (hamburger menu, stacked layout)
 - [ ] TypeScript strict mode — no `any` types
 - [ ] Tests: Vitest + Testing Library, 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

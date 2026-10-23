@@ -521,7 +521,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-capstan/spec.md` present; `npm run spec:validate` green
-- [ ] `apps/capstan` scaffolded from the simplest existing app; package
+- [x] `apps/capstan` scaffolded from the simplest existing app; package
       `@free-react-templates/capstan`; `"homepage": "https://capstan.free.componentdock.com"`;
       `public/CNAME` = `capstan.free.componentdock.com`; `vite.config.ts` keeps `injectUiSource()`
 - [ ] `npm install` at repo root registers the workspace
@@ -555,7 +555,7 @@ Dock (`https://www.componentdock.com/`) instead.
       hidden content not focusable, reduced-motion handled, no horizontal overflow at 320 px
 - [ ] Shape language: `rounded-none` on the strip, rows and slab; only rounding is the **`4 px`**
       search field and the **`4 px`** dropdown panel; no pills
-- [ ] Zero `colorlib` / "Website Menu 13" / `website-menu-13` strings in `apps/capstan` (comments
+- [x] Zero `colorlib` / "Website Menu 13" / `website-menu-13` strings in `apps/capstan` (comments
       included); none of the source's six labels, its `Page n` items, its `Magz.` wordmark, its
       `Search` placeholder or its `Website menu #03` heading reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `roboto-*.woff2` (all eight are dead
@@ -577,7 +577,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer attribution present; squash-merge the PR; mark the TEMPLATES.md `Website Menu 13`
       item `[x]` with the live `https://capstan.free.componentdock.com` URL + homepage and run
       `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Deltas (deliberate, to record in the PR)
 

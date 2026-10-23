@@ -300,7 +300,7 @@ Dock (`https://www.componentdock.com/`) instead.
       title "Toggly — Switch Toggle"
 - [ ] No images and NO icons needed (pure CSS toggle — faithful); no copied
       assets
-- [ ] Real hidden `<input type="checkbox">` inside each label (keyboard
+- [x] Real hidden `<input type="checkbox">` inside each label (keyboard
       focusable + `aria-label` named); toggle swaps track/knob colors + knob
       `translateX(20px)` with the reference timings (0.2s spring, 0.2s track,
       0.4s halo puff); honors `prefers-reduced-motion`
@@ -308,4 +308,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark the "Checkbox 06" row, line 738 —
       Bootstrap Checkboxes category, single row)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

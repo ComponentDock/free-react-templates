@@ -181,13 +181,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate`
 - [ ] `bash scripts/verify-app.sh abode` (typecheck + lint + 100% coverage tests + build)
 - [ ] Screenshot review: sections, order, gold brand, Questrial/Cabin fonts
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Abode" and links to Home, About, Services, Projects, Why Us, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Abode" and links to Home, About, Services, Projects, Why Us, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading
-- [ ] About section — it SHALL contain a heading "About Us"
-- [ ] Services section — it SHALL contain a heading "What We Do?"
-- [ ] Projects section — it SHALL contain a heading "Projects"
-- [ ] Why Us section — it SHALL contain a heading "Curating a workplace that inspires all of us"
+- [x] About section — it SHALL contain a heading "About Us"
+- [x] Services section — it SHALL contain a heading "What We Do?"
+- [x] Projects section — it SHALL contain a heading "Projects"
+- [x] Why Us section — it SHALL contain a heading "Curating a workplace that inspires all of us"
 - [ ] Footer — it SHALL show link columns (Quick Links, Services) and a newsletter form
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

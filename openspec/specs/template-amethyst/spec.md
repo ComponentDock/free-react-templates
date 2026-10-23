@@ -130,12 +130,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer renders semantic element with role — a `<footer>` element with `role="contentinfo"` is present in the DOM
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer renders semantic element with role — a `<footer>` element with `role="contentinfo"` is present in the DOM
 - [ ] Purple gradient background — the footer element has a linear-gradient background
 - [ ] Four-column layout on desktop — a CSS grid with 4 columns at lg breakpoint is applied
-- [ ] About column with contact details — an "About" heading is displayed
-- [ ] Latest News column with article cards — a "Latest News" heading is displayed
-- [ ] Information column with navigation links — an "Information" heading is displayed
-- [ ] Instagram column with photo grid — an "Instagram" heading is displayed
+- [x] About column with contact details — an "About" heading is displayed
+- [x] Latest News column with article cards — a "Latest News" heading is displayed
+- [x] Information column with navigation links — an "Information" heading is displayed
+- [x] Instagram column with photo grid — an "Instagram" heading is displayed
 - [ ] Design token colors — footer text uses the footer-text token color

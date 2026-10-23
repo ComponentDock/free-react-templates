@@ -705,13 +705,13 @@ Dock (`https://www.componentdock.com/`) instead.
       social icons are inline SVG brand glyphs and the validation glyph is the
       lucide `AlertCircle`; no copied assets, logo PNG, photo, font files or
       CSS; no jQuery, no framework, no CDN runtime
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Component Dock attribution links `https://www.componentdock.com/`
       (Poppins-Regular 12–13px `#999`, centred under the note)
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_06` references anywhere
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_06` references anywhere
       in `apps/airborne` (comments included)
-- [ ] App folder `apps/airborne`, package `@free-react-templates/airborne`,
+- [x] App folder `apps/airborne`, package `@free-react-templates/airborne`,
       `homepage` `https://airborne.free.componentdock.com`, `public/CNAME`
       `airborne.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh airborne` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

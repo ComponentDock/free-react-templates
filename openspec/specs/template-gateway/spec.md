@@ -399,16 +399,16 @@ Dock (`https://www.componentdock.com/`) instead.
       Google Fonts `<link>`; BUTTONS radius **4px** (NOT the 40px pill of
       Modal 05); underline inputs (transparent, bottom rule only, 30px);
       uppercase 12px letter-spacing-1 labels; 16×16 mint-fill checkbox.
-- [ ] No ColorLib references in `apps/gateway` (provenance lives in this
+- [x] No ColorLib references in `apps/gateway` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] No images needed (both panels render SOLID color — the source's `.img`
       class carries no background image; no picsum seeds); icons from
       lucide-react or inline SVG: `Beer` + `Bike` for the panel glyphs,
       `X` for the close (probe
       `node -e "console.log(typeof require('lucide-react').Beer)"` etc. and
       fall back to inline SVG paths if undefined).
-- [ ] Modal a11y: `role="dialog"`, `aria-modal="true"`, `aria-label`,
+- [x] Modal a11y: `role="dialog"`, `aria-modal="true"`, `aria-label`,
       Escape-to-close, backdrop click closes, close × with
       `aria-label="Close"`; labels wired to inputs (`htmlFor`/`id` — the
       source's `for=` attrs point at missing ids; wire them properly);
@@ -419,4 +419,4 @@ Dock (`https://www.componentdock.com/`) instead.
       the source kills the input focus ring — add a subtle focus-visible
       treatment (e.g. brighten the bottom rule) while keeping the
       underline look.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

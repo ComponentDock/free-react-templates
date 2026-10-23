@@ -123,12 +123,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Hero section with background image and CTA — the hero section shows "For More Agency" heading
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Hero section with background image and CTA — the hero section shows "For More Agency" heading
 - [ ] Full-screen overlay navigation — a full-screen overlay menu opens with links: Home, About Us, Projects, Clients, Recent News, Contact
-- [ ] About Us section with features — an image and "Who We Are" description are displayed
+- [x] About Us section with features — an image and "Who We Are" description are displayed
 - [ ] Filterable projects gallery — only branding items are displayed
-- [ ] Methods video section — "How We Work" heading and video play button are shown
+- [x] Methods video section — "How We Work" heading and video play button are shown
 - [ ] Clients logo section — a row of client logo images is displayed
 - [ ] Recent News blog cards — three blog post cards with title, author, and date are shown
 - [ ] Contact form — Name, Email, Subject, Telephone, Message fields and Send Message button are present

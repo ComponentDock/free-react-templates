@@ -378,21 +378,21 @@ Dock (`https://www.componentdock.com/`) instead.
       bg-light `#f8f9fa`, RSVP gray `#6c757d`; Poppins body + Great Vibes
       script headings + Libre Caslon Text accents via Google Fonts `<link>`;
       circular photos, round pink social icons, countdown timer.
-- [ ] No ColorLib references in `apps/nuptial` (provenance lives in this
+- [x] No ColorLib references in `apps/nuptial` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] All images picsum-seeded (`picsum.photos/seed/nuptial-N/w/h`).
 - [ ] Implementer gate: `scripts/verify-app.sh nuptial` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Nuptial" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show the kicker "The Wedding of"
-- [ ] Wedding invite — it SHALL show the kicker "Join us to celebrate the wedding day of"
-- [ ] Bride and Groom — it SHALL show the heading "Bride & Groom"
-- [ ] Love story timeline — it SHALL show the heading "Love Story"
-- [ ] Sweet messages — it SHALL show the heading "Sweet Messages"
-- [ ] Family and friends — it SHALL show the heading "Family & Friends"
-- [ ] Place and time — it SHALL show the heading "Place & Time"
-- [ ] RSVP form — it SHALL show the heading "Are Your Attending?"
-- [ ] Gallery — it SHALL show the heading "Gallery"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Nuptial" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show the kicker "The Wedding of"
+- [x] Wedding invite — it SHALL show the kicker "Join us to celebrate the wedding day of"
+- [x] Bride and Groom — it SHALL show the heading "Bride & Groom"
+- [x] Love story timeline — it SHALL show the heading "Love Story"
+- [x] Sweet messages — it SHALL show the heading "Sweet Messages"
+- [x] Family and friends — it SHALL show the heading "Family & Friends"
+- [x] Place and time — it SHALL show the heading "Place & Time"
+- [x] RSVP form — it SHALL show the heading "Are Your Attending?"
+- [x] Gallery — it SHALL show the heading "Gallery"
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

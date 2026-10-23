@@ -487,14 +487,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/keyhaven`
-- [ ] `npm run lint` passes for `apps/keyhaven`
+- [x] `npm run typecheck` passes for `apps/keyhaven`
+- [x] `npm run lint` passes for `apps/keyhaven`
 - [ ] `scripts/verify-app.sh keyhaven` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark, 4 links, "List Your Property" button, dark-mode
+- [x] Navbar: wordmark, 4 links, "List Your Property" button, dark-mode
       toggle, mobile menu
-- [ ] Hero: photo + gradient overlay, H1 with green "Dream Home", sub,
+- [x] Hero: photo + gradient overlay, H1 with green "Dream Home", sub,
       quick stats (500+ / $2B+ / 15+)
 - [ ] Search card: Buy/Rent/Sell tabs (active tab swaps), Location/Property
       Type/Price Range selects, Search button
@@ -512,6 +512,6 @@ Dock (`https://www.componentdock.com/`) instead.
       neighborhoods, contact), copyright + legal links
 - [ ] Dark mode toggles `.dark` and persists
 - [ ] Placeholder images via seeded picsum (`seed/keyhaven-<n>/<w>/<h>`)
-- [ ] No copied ColorLib assets; brand green #16a34a in `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No copied ColorLib assets; brand green #16a34a in `@theme`
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

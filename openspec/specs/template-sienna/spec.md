@@ -219,14 +219,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Sienna" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline (e.g. "We Specialize In All Phase Of hair")
-- [ ] About section — it SHALL show a heading (e.g. "We Are Artist, Hair Is My Canvas")
-- [ ] Advance features — it SHALL show the heading "Our Strength Is Your Smart beauty"
-- [ ] Services grid — it SHALL show the heading "Our Services"
-- [ ] Team — it SHALL show the heading "Our Team"
-- [ ] Pricing plan — it SHALL show the heading "Pricing Plan"
-- [ ] Footer — it SHALL show the site name "Sienna" and quick links
+- [x] Navigation bar — the navbar SHALL show the site name "Sienna" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline (e.g. "We Specialize In All Phase Of hair")
+- [x] About section — it SHALL show a heading (e.g. "We Are Artist, Hair Is My Canvas")
+- [x] Advance features — it SHALL show the heading "Our Strength Is Your Smart beauty"
+- [x] Services grid — it SHALL show the heading "Our Services"
+- [x] Team — it SHALL show the heading "Our Team"
+- [x] Pricing plan — it SHALL show the heading "Pricing Plan"
+- [x] Footer — it SHALL show the site name "Sienna" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

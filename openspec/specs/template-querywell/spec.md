@@ -118,14 +118,14 @@ Feature: Responsive layout
 ## Verification checklist
 
 - [ ] Hero section renders with full-bleed background image
-- [ ] Heading "WHAT ARE YOU LOOKING FOR?" displays white/uppercase/bold
+- [x] Heading "WHAT ARE YOU LOOKING FOR?" displays white/uppercase/bold
 - [ ] Search bar has dark background, flat corners, search icon
 - [ ] Search input accepts typing, shows placeholder when empty
 - [ ] Category links (New Arrivals, Ladies, Mens, Accessories, Sale) display below search
 - [ ] Category links are interactive (hover state)
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] Responsive on mobile and desktop
 - [ ] All tests pass with 100% coverage
-- [ ] No references to ColorLib in app code
+- [x] No references to ColorLib in app code
 - [ ] Package name: `@free-react-templates/querywell`
-- [ ] CNAME: `querywell.free.componentdock.com`
+- [x] CNAME: `querywell.free.componentdock.com`

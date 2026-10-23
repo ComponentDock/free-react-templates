@@ -414,12 +414,12 @@ Dock (`https://www.componentdock.com/`) instead.
       becomes `rgba(34, 34, 34, 0.9)`
 - [ ] All images are `picsum.photos/seed/tripquest-*` placeholders;
       icons from `lucide-react`; no copied assets or CSS
-- [ ] Zero `colorlib` references anywhere in `apps/tripquest`
-- [ ] App folder `apps/tripquest`, package
+- [x] Zero `colorlib` references anywhere in `apps/tripquest`
+- [x] App folder `apps/tripquest`, package
       `@free-react-templates/tripquest`, `homepage`
       `https://tripquest.free.componentdock.com`, `public/CNAME`
       `tripquest.free.componentdock.com`, lockfile registers the
       workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100%
       coverage; `scripts/verify-app.sh tripquest` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

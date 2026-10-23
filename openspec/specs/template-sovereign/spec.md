@@ -165,13 +165,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar navigation — the navbar displays the brand name "Sovereign" and navigation links for Home, About, Rooms, Amenities, Gallery, Contact, and Book Now
-- [ ] Hero section with booking form — the hero section shows "Welcome to Sovereign Hotel" heading and descriptive subheading
-- [ ] About section — it displays "About Our Hotel" heading, descriptive paragraph, and hotel lobby image
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar navigation — the navbar displays the brand name "Sovereign" and navigation links for Home, About, Rooms, Amenities, Gallery, Contact, and Book Now
+- [x] Hero section with booking form — the hero section shows "Welcome to Sovereign Hotel" heading and descriptive subheading
+- [x] About section — it displays "About Our Hotel" heading, descriptive paragraph, and hotel lobby image
 - [ ] Rooms section — 4 room cards are displayed: Standard Room, Deluxe Room, Executive Suite, and Presidential Suite
 - [ ] Amenities section — 6 amenity items are displayed: Swimming Pool, Spa & Wellness, Restaurant, Fitness Center, Free Wi-Fi, Airport Transfer
 - [ ] Gallery section — 8 images are displayed in a grid layout with alt text
 - [ ] Testimonials section — 3 guest reviews are displayed with 5-star ratings each
-- [ ] Booking CTA section — it displays "Book Your Stay Today" heading, descriptive text, and a Book Now button
-- [ ] Accessibility — it has an aria-label "Main navigation" and the mobile toggle has aria-label and aria-expanded
+- [x] Booking CTA section — it displays "Book Your Stay Today" heading, descriptive text, and a Book Now button
+- [x] Accessibility — it has an aria-label "Main navigation" and the mobile toggle has aria-label and aria-expanded

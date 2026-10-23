@@ -408,7 +408,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Mobile CTA bar below lg only
 - [ ] Scroll progress bar + back-to-top button
 - [ ] Design tokens: Outfit font, gray-950/900 dark theme, red-600 primary, red→purple gradient
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Placeholder images use picsum.photos
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

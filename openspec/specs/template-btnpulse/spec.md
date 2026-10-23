@@ -167,9 +167,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Full-width block button spans container
 - [ ] Hover overlay animation works on all buttons
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` contains `btnpulse.free.componentdock.com`
-- [ ] `homepage` in package.json is `https://btnpulse.free.componentdock.com`
+- [x] No ColorLib references in app code
+- [x] `public/CNAME` contains `btnpulse.free.componentdock.com`
+- [x] `homepage` in package.json is `https://btnpulse.free.componentdock.com`
 - [ ] TypeScript compiles without errors
 - [ ] All tests pass with 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

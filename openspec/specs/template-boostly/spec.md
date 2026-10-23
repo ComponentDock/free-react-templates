@@ -403,4 +403,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Uses Google Fonts (Josefin Sans + Roboto) via index.html link
 - [x] Uses lucide-react + inline SVG brand icons
 - [x] 100% test coverage (51 tests)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -118,8 +118,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Typecheck passes (`npm run typecheck --workspace @free-react-templates/carouselhub`)
 - [ ] Lint passes (`npm run lint`)
-- [ ] Vitest coverage is 100% for `apps/carouselhub`
+- [x] Vitest coverage is 100% for `apps/carouselhub`
 - [ ] Build succeeds (`npm run build --workspace @free-react-templates/carouselhub`)
 - [ ] Footer links to Component Dock
-- [ ] `public/CNAME` is `carouselhub.free.componentdock.com` and `homepage` matches
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `public/CNAME` is `carouselhub.free.componentdock.com` and `homepage` matches
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

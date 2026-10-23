@@ -279,11 +279,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Mobile: 70px top bar with logo + hamburger; white 300px right slide-in
       menu (same links + social), `aria-expanded` on the toggle,
       keyboard-operable (Escape closes).
-- [ ] All 19 images are picsum-seeded placeholders (no ColorLib assets) and
+- [x] All 19 images are picsum-seeded placeholders (no ColorLib assets) and
       the seeds were verified to render photographic subjects; icons from
       lucide-react / inline SVG.
 - [ ] PR description records source (ColorLib Shutter), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL THREE copies
       (lines 494, 1806, 2472) `[x]` when done.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

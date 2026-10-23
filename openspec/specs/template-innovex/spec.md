@@ -117,14 +117,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar renders contact info and social links — the top bar shows phone number and email
-- [ ] Navbar displays brand and navigation links — the navbar shows "Innovex" brand text
-- [ ] Hero section shows main heading and CTAs — the hero shows "Digital Innovation Company" heading
+- [x] Navbar displays brand and navigation links — the navbar shows "Innovex" brand text
+- [x] Hero section shows main heading and CTAs — the hero shows "Digital Innovation Company" heading
 - [ ] Services section shows 6 service cards — the services section shows 6 service items
 - [ ] About section shows experience info — the about section shows "42" years of experience
 - [ ] Counter section shows 4 statistics — the counter section shows 4 stat blocks
 - [ ] FAQ section shows accordion items — the FAQ section shows 4 questions
 - [ ] Progress bars display skill percentages — the skills section shows 4 progress bars
 - [ ] Team section shows 4 members — the team section shows 4 team member cards
-- [ ] App sets document title — the document title is "Innovex — Digital Agency Template"
+- [x] App sets document title — the document title is "Innovex — Digital Agency Template"

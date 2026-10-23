@@ -179,6 +179,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog grid with article previews
 - [ ] Footer with 4 widget columns and copyright
 - [ ] Placeholder images via picsum.photos (deterministic seeds)
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

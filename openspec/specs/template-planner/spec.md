@@ -397,7 +397,7 @@ Dock (`https://www.componentdock.com/`) instead.
       past/future colors recompute around the selection; selection survives
       month round-trips
 - [ ] Grid: 7 equal columns, thin `#e6e6e6` separators, dates centered
-- [ ] A11y: chevron buttons `aria-label` "Previous month"/"Next month";
+- [x] A11y: chevron buttons `aria-label` "Previous month"/"Next month";
       date cells are buttons with accessible labels ("19 December 2020")
       and `aria-selected`/`aria-current`; `focus-visible` rings everywhere
 - [ ] Responsive: no horizontal overflow at ≤480px, 7 columns preserved,
@@ -409,4 +409,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status`
       done by implementer at ship time (mark the "Calendar 01" row, line
       687 — Bootstrap Calendars (20) category; single row, no dups)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -379,12 +379,12 @@ Dock (`https://www.componentdock.com/`) instead.
       border `#E0CCE6`; Roboto via Google Fonts `<link>`; green pill
       buttons (radius 30px); outlined `.boxed-btn` style (letter-spacing
       3px, hover invert).
-- [ ] No ColorLib references in `apps/sitewise` (provenance lives in this
+- [x] No ColorLib references in `apps/sitewise` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] All images picsum-seeded (`picsum.photos/seed/sitewise-N/w/h`); no
       ColorLib asset copied (banner.png, support_bg.png, launch.png,
       map.svg, news photos are references only).
 - [ ] Implementer gate: `scripts/verify-app.sh sitewise` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -460,41 +460,41 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/vows`
-- [ ] `npm run lint` passes for `apps/vows`
+- [x] `npm run typecheck` passes for `apps/vows`
+- [x] `npm run lint` passes for `apps/vows`
 - [ ] `scripts/verify-app.sh vows` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark + icon, 8 links, rose "Start Planning" pill, dark-mode
+- [x] Navbar: wordmark + icon, 8 links, rose "Start Planning" pill, dark-mode
       toggle, mobile drawer with aria-expanded
 - [ ] Hero: blush gradient bg (primary-50 → white), serif "Your Dream
       Wedding Begins Here", sub, 2 CTAs (solid rose + outline), stats row
       (500+/12/5-Star), floating blur circles
 - [ ] Stats band: bg-gray-50 + border-y, 4 stats (Weddings Planned, Years
       Experience, Happy Couples, Venue Partners)
-- [ ] Services: "What We Do" / "Our Services" — 6 cards (Full Planning,
+- [x] Services: "What We Do" / "Our Services" — 6 cards (Full Planning,
       Day-of, Design & Decor, Venue Selection, Catering & Cake,
       Entertainment)
-- [ ] Portfolio: "Our Work" / "Our Portfolio" — 6 couple cards with venue
+- [x] Portfolio: "Our Work" / "Our Portfolio" — 6 couple cards with venue
       lines
-- [ ] Transformations: "Venue Styling" / "Venue Transformations" — 2+
+- [x] Transformations: "Venue Styling" / "Venue Transformations" — 2+
       before/after pairs with badges
-- [ ] Planner: "About Us" / "Meet Your Planner" — portrait, name, bio,
+- [x] Planner: "About Us" / "Meet Your Planner" — portrait, name, bio,
       credentials
-- [ ] Packages: "Investment" / "Wedding Packages" — Intimate $3,500, Classic
+- [x] Packages: "Investment" / "Wedding Packages" — Intimate $3,500, Classic
       $7,500 (Most Popular badge), Grand $15,000, each with features +
       "Inquire"
-- [ ] Testimonials: "Love Letters" / "What Our Couples Say" — 3+ cards with
+- [x] Testimonials: "Love Letters" / "What Our Couples Say" — 3+ cards with
       stars/quotes/authors/dates
-- [ ] FAQ: "Frequently Asked Questions" — 5-question accordion with
+- [x] FAQ: "Frequently Asked Questions" — 5-question accordion with
       aria-expanded
 - [ ] Contact CTA: rose gradient band, "Let's Create Your Perfect Day",
       white + outline buttons
-- [ ] Footer: dark, blurb + 3 link columns, "Stay Inspired" newsletter +
+- [x] Footer: dark, blurb + 3 link columns, "Stay Inspired" newsletter +
       Subscribe, copyright bar
 - [ ] DARK MODE INCLUDED (this template has dark: variants everywhere —
       do NOT build it light-only)
 - [ ] Placeholder images via seeded picsum (`seed/vows-<n>/<w>/<h>`)
 - [ ] No copied ColorLib assets; brand rose #e11d48 in `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

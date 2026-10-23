@@ -211,10 +211,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Sidebar navigation — the sidebar displays Home, Photos, Biography, Blog, and Contact links
 - [ ] Mobile sidebar — the sidebar slides in from the left with a dark overlay
-- [ ] Hero section — the hero displays the "Welcome" heading and "Contact Me" button
+- [x] Hero section — the hero displays the "Welcome" heading and "Contact Me" button
 - [ ] Photo gallery — 18 photo items are displayed in a grid
 - [ ] Testimonials carousel — the first testimonial is displayed with name and quote
 - [ ] Biography section — the biography heading, portrait image, name, bio paragraphs, and skill checklist are visible

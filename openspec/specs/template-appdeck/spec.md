@@ -167,11 +167,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Appdeck" and links to Home, Showcase, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Appdeck"
-- [ ] Showcase section — it SHALL show a heading announcing "3 home page" variants
-- [ ] CTA band — it SHALL contain a headline and a "Purchase Now" button
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Appdeck" and links to Home, Showcase, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Appdeck"
+- [x] Showcase section — it SHALL show a heading announcing "3 home page" variants
+- [x] CTA band — it SHALL contain a headline and a "Purchase Now" button
 - [ ] Footer — it SHALL show a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

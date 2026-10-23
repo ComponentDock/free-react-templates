@@ -198,7 +198,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: 4 columns, dark bg (#141313), Component Dock link
 - [ ] Fonts: Work Sans loaded via Google Fonts, Abril Fatface for hero
 - [ ] Colors: brand #78d5ef, accent #ff9a9a, dark #3c312e, footer #141313
-- [ ] No ColorLib references in app source code
+- [x] No ColorLib references in app source code
 - [ ] Placeholder images via picsum.photos
 - [ ] Responsive: mobile-friendly layout at all breakpoints
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

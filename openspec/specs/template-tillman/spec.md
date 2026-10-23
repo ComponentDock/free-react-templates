@@ -165,10 +165,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — Sticky header:** Navbar sticks to top on scroll
-- [ ] Hero — Heading:** "Agricultural solution" heading is visible
+- [x] Hero — Heading:** "Agricultural solution" heading is visible
 - [ ] About — Image:** About section image is visible
 - [ ] Services — Cards:** Two service cards are rendered
 - [ ] Stats — Counters:** Four stat items are displayed

@@ -402,5 +402,5 @@ Dock (`https://www.componentdock.com/`) instead.
       design tokens, and what differs (new name, placeholder images,
       state-driven playlist, static carousels, styled non-functional
       forms)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

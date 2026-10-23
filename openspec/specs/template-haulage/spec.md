@@ -509,10 +509,10 @@ Dock (`https://www.componentdock.com/`) instead.
       answer), NOT an accordion.
 - [ ] All forms (tracking, contact, newsletter) validate with
       error/success states; tracking submit shows the entered number.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets); icons
+- [x] All images are picsum-seeded placeholders (no ColorLib assets); icons
       from lucide-react / inline SVG (no brand icons from lucide).
 - [ ] PR description records source (ColorLib Cargo), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL FOUR copies
       (lines 357, 925, 2296, 2953) `[x]` when done.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

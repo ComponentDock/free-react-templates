@@ -263,5 +263,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Uses `packages/ui` components where possible
 - [ ] Footer links to Component Dock
 - [ ] 100% test coverage
-- [ ] No ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

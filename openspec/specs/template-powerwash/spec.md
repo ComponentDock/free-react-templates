@@ -232,7 +232,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonials carousel with avatars, stars, quotes, names
 - [ ] Consultation form with dropdown, name, email, date, submit
 - [ ] Footer has 4 columns + copyright bar + Component Dock link
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] All placeholder images use `https://picsum.photos/seed/powerwash-<n>/<w>/<h>`
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

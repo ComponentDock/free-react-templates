@@ -136,9 +136,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Contact: form with four fields + submit button
 - [ ] Fonts: Open Sans (body), Playfair Display (headings)
 - [ ] Accent color: #F73859 throughout (buttons, active states, portfolio overlay, icons)
-- [ ] Footer links to Component Dock (https://www.componentdock.com/)
-- [ ] No ColorLib references in app code
+- [x] Footer links to Component Dock (https://www.componentdock.com/)
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos
 - [ ] 100% test coverage
 - [ ] Spec + docs at openspec/specs/template-selfcraft/ and docs/templates/selfcraft/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

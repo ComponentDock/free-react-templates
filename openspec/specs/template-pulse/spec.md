@@ -277,7 +277,7 @@ them instead of rediscovering them:
 - [ ] Design tokens: teal `#1fc1a9` → blue `#5579fa` gradient, navy `#052c43` counters, footer `#031d2c`, Poppins via `<link>`.
 - [ ] Placeholder images use `https://picsum.photos/seed/pulse-<n>/<w>/<h>`; icons come from `lucide-react`.
 - [ ] Filters and carousel controls are keyboard reachable and labelled.
-- [ ] Mobile menu toggle exposes `aria-expanded` + `aria-controls="mobile-menu"`.
-- [ ] Footer links https://www.componentdock.com/; no `colorlib.com` string anywhere under `apps/pulse/`.
-- [ ] `public/CNAME` = `pulse.free.componentdock.com`; package `homepage` = `https://pulse.free.componentdock.com`.
+- [x] Mobile menu toggle exposes `aria-expanded` + `aria-controls="mobile-menu"`.
+- [x] Footer links https://www.componentdock.com/; no `colorlib.com` string anywhere under `apps/pulse/`.
+- [x] `public/CNAME` = `pulse.free.componentdock.com`; package `homepage` = `https://pulse.free.componentdock.com`.
 - [ ] `scripts/verify-app.sh pulse` green: typecheck, lint, 100% coverage, build.

@@ -214,16 +214,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — it SHALL show the brand name "Vivid" on the left
-- [ ] Hero section — it SHALL show the heading "We Are Creative Agency"
-- [ ] About section — it SHALL show the heading "Welcome to Website"
-- [ ] Portfolio section — it SHALL show the heading "Featured Works"
-- [ ] Services section — it SHALL show the heading "What we offer"
-- [ ] Why Choose Us section — it SHALL show the heading "Why Choose Us"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — it SHALL show the brand name "Vivid" on the left
+- [x] Hero section — it SHALL show the heading "We Are Creative Agency"
+- [x] About section — it SHALL show the heading "Welcome to Website"
+- [x] Portfolio section — it SHALL show the heading "Featured Works"
+- [x] Services section — it SHALL show the heading "What we offer"
+- [x] Why Choose Us section — it SHALL show the heading "Why Choose Us"
 - [ ] Stats section — it SHALL show Happy clients (451), Awards won (12), Cups of Coffee (154K), Projects completed (45)
-- [ ] Pricing section — it SHALL show the heading "Pricing Table"
+- [x] Pricing section — it SHALL show the heading "Pricing Table"
 - [ ] Testimonials section — it SHALL show a testimonial with avatar, name, role, and quote
-- [ ] Team section — it SHALL show the heading "Our Team"
-- [ ] Blog section — it SHALL show the heading "Recent News"
-- [ ] Contact section — it SHALL show the heading "Get in touch"
+- [x] Team section — it SHALL show the heading "Our Team"
+- [x] Blog section — it SHALL show the heading "Recent News"
+- [x] Contact section — it SHALL show the heading "Get in touch"

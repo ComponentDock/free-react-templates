@@ -135,7 +135,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders all sections — the navbar, hero, stats, services, portfolio, CTA, testimonials, pricing, blog, and footer sections are rendered
 - [ ] Navigation is functional — links for Home, What We Do, Projects, Pricing, Blog, About, and Contact are visible
 - [ ] Stats display correct numbers — the numbers 1,000 (Years), 12,000 (Brigades), 10,000 (Engineering Units), and 12,921 (Employees) are displayed

@@ -174,7 +174,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full viewport background — the page has a full-viewport background image
 - [ ] Centered pill-shaped search card — a pill-shaped search card is displayed
 - [ ] Search input area — the left portion of the card has a light mint green background (#d9f1e3)

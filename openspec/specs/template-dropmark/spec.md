@@ -146,7 +146,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Heading "Dropdown #3" centered on page
-- [ ] "Filetype" button with file-text icon renders
+- [x] "Filetype" button with file-text icon renders
 - [ ] Button has gray background (#f8f9fa) by default
 - [ ] Click toggles dropdown open/close
 - [ ] Button turns blue (#007bff) with white text when open
@@ -159,6 +159,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Outside click closes and resets button
 - [ ] aria-expanded toggles correctly
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Vitest + Testing Library tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

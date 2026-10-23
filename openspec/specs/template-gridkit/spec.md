@@ -239,4 +239,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] 100% test coverage via `scripts/verify-app.sh gridkit`; PR
       `feat/template-gridkit` with source slug + preview URL + tokens in
       the description
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

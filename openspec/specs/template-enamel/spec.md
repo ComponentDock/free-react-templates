@@ -626,7 +626,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Slider: 600px, 2 bright-photo slides, h1 50px w300 black (2-line
       spans), subheading 18px, lime `#a8c337` "View our works" button
       (px-4 py-3), slide switching control
-- [ ] Welcome: photo left + text right; subheading "Welcome to Enamel",
+- [x] Welcome: photo left + text right; subheading "Welcome to Enamel",
       headline (32px), 2 paragraphs, founder card "Dr. Paul Foster" /
       "CEO, Founder"
 - [ ] Consultation band: `#46b7de` with center `#24a1cd`; left "Dental
@@ -634,26 +634,26 @@ Dock (`https://www.componentdock.com/`) instead.
       Consultation" form (First Name, Last Name, Department select with 5
       options, Date, Time, lime "Appointment" submit); right "Find A
       Doctor" + "Meet our doctor" (typo fixed)
-- [ ] Services: heading "Services" / "Our Clinic Services"; 8 cards
+- [x] Services: heading "Services" / "Our Clinic Services"; 8 cards
       (col-md-3): Dental Implants, Cosmetic Dentistry, Dental Care, Teeth
       Whitening, Dental Calculus, Periodontics, Clip & Braces, Root Canal
       — DISTINCT blurbs
 - [ ] Quote intro: photo band + h3 "We promised to take care our
       patients and we delivered." + paragraph
-- [ ] Doctors: heading "Doctors" / "Our Qualified Doctors"; 4 cards:
+- [x] Doctors: heading "Doctors" / "Our Qualified Doctors"; 4 cards:
       Dr. Lloyd Wilson, Dr. Rachel Parker, Dr. Ian Smith, Dr. Alicia
       Henderson (all Dentist); hover-reveal social circles (lime icons)
-- [ ] Testimonials: bg-light, heading "Testimonials" / "Our Patients
+- [x] Testimonials: bg-light, heading "Testimonials" / "Our Patients
       Says About Us"; 4 horizontal cards (circular photo + quote + name +
       role), DISTINCT quotes
 - [ ] CTA band: photo + dark overlay; h2 "We Provide Free Dental Care
       Consultation" + sub-line + lime "Free Consultation" button (typo
       fixed)
-- [ ] Pricing: heading "Pricing" / "Our Pricing"; 4 cards (border
+- [x] Pricing: heading "Pricing" / "Our Pricing"; 4 cards (border
       `#c8eaf5`): Basic $24.50 / Standard $34.50 / Premium $54.50 /
       Platinum $89.50, "/ session", 5 features with zebra rows, pill Get
       Offer (radius 30px, bottom -26px); hover → button + price lime
-- [ ] Blog: bg-light, heading "Blog" / "Recent Blog"; 3 cards (image +
+- [x] Blog: bg-light, heading "Blog" / "Recent Blog"; 3 cards (image +
       blue meta-date box "18 / September / 2019", white box: title +
       excerpt + "Read More" + meta), DISTINCT titles/excerpts
 - [ ] Footer: bg `#46b7de`, 4 columns (About + Have a Questions?, Links + Services, Recent Blog, Opening Hours + Subscribe Us!) + centered
@@ -671,5 +671,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` on ALL THREE dup rows (lines 374, 971
       and 1509) + surge URL + `npm run readme:status` done by
       implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -181,7 +181,7 @@ Two-panel layout:
 - [ ] Blog posts render in a 2-column grid
 - [ ] Each post card shows avatar, title, and date
 - [ ] Responsive: single-column on mobile, sidebar hidden by default
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] `npm run verify:app marginote` passes

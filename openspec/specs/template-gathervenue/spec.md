@@ -172,23 +172,23 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Navbar: sticky, dark bg, correct nav links, "Buy Ticket" CTA
+- [x] Navbar: sticky, dark bg, correct nav links, "Buy Ticket" CTA
 - [ ] Hero: 100vh, background image, heading + subtext
 - [ ] About: section title with brand accent, description paragraph
 - [ ] Numbers: 4 stat counters
 - [ ] Gallery: horizontal image carousel with navigation
 - [ ] Video CTA: parallax bg, play icon, heading + subtext
-- [ ] Schedule: events list with date/time/title/speaker, "Download Schedule" button
+- [x] Schedule: events list with date/time/title/speaker, "Download Schedule" button
 - [ ] Speakers: 3-column grid, speaker cards with image overlay, modal on click
 - [ ] Sponsors: 4-column logo grid
-- [ ] CTA: parallax bg, "Get Ticket Now!" heading, "Buy Ticket" button
+- [x] CTA: parallax bg, "Get Ticket Now!" heading, "Buy Ticket" button
 - [ ] Contact: 3-column (Address, Phone, Email)
 - [ ] Map: placeholder area
 - [ ] Footer: Component Dock link, social icons, copyright
 - [ ] Typography: Poppins throughout
 - [ ] Colors: #dd0a37 brand, #0b0f28 dark, #F9F9FA speakers bg
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage
-- [ ] Deployed to gathervenue.free.componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Deployed to gathervenue.free.componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

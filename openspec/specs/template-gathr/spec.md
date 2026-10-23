@@ -228,17 +228,17 @@ footer, branded as "Component Dock".
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Navbar — a fixed-top navbar SHALL display with the logo text "Gathr"
-- [ ] Hero section — the headline "Prepare yourself for the conference" SHALL
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Navbar — a fixed-top navbar SHALL display with the logo text "Gathr"
+- [x] Hero section — the headline "Prepare yourself for the conference" SHALL
 - [ ] Event info cards — 4 cards SHALL be displayed: Date, Location, Speakers, Tickets
-- [ ] Countdown timer — a heading "Countdown to the big event" SHALL be displayed
-- [ ] About section — the heading "About the Event" SHALL be displayed
+- [x] Countdown timer — a heading "Countdown to the big event" SHALL be displayed
+- [x] About section — the heading "About the Event" SHALL be displayed
 - [ ] Features grid — 4 cards SHALL be displayed in a row
-- [ ] Speakers gallery — the heading "Our Speakers" SHALL be displayed
+- [x] Speakers gallery — the heading "Our Speakers" SHALL be displayed
 - [ ] Pricing table — 3 pricing cards SHALL be displayed
 - [ ] Event calendar table — a table with 3 event rows SHALL be displayed
-- [ ] Partners section — the heading "Our Partners" SHALL be displayed
-- [ ] CTA banner — the heading "Get Your Tickets" SHALL be displayed
+- [x] Partners section — the heading "Our Partners" SHALL be displayed
+- [x] CTA banner — the heading "Get Your Tickets" SHALL be displayed

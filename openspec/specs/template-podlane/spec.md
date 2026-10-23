@@ -135,14 +135,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Header: fixed, transparent → dark on scroll, logo + nav + submit + social + hamburger
-- [ ] Hero: full-viewport bg image, tags, heading, subtitle, track info, audio player, "More Info" button
+- [x] Hero: full-viewport bg image, tags, heading, subtitle, track info, audio player, "More Info" button
 - [ ] Shows: 3-column card grid, image + play icon + tag, date + title + likes/comments
 - [ ] Bi-weekly: parallax bg, heading + text + 3 platform buttons + image with logo
-- [ ] Category: "By Category" heading, 4-column card grid with image overlays, "Browse Shows" button
+- [x] Category: "By Category" heading, 4-column card grid with image overlays, "Browse Shows" button
 - [ ] Footer: dark bg, centered logo, tags/latest/instagram columns, social icons, copyright with Component Dock
 - [ ] Responsive: mobile hamburger menu, stacked cards, adjusted spacing
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] `public/CNAME` contains `podlane.free.componentdock.com`
-- [ ] Package name `@free-react-templates/podlane`, homepage `https://podlane.free.componentdock.com`
-- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] `public/CNAME` contains `podlane.free.componentdock.com`
+- [x] Package name `@free-react-templates/podlane`, homepage `https://podlane.free.componentdock.com`
+- [x] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

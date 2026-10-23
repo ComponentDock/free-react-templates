@@ -427,7 +427,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `--color-select` #3f3f4b, `--color-light` #F8F8F9,
       `--color-badge` #E30707, `--color-divider` #F3F3F3; font Roboto
       (300/400/500) via Google Fonts `<link>` in `index.html`
-- [ ] Header: absolute over hero, "Habitat" brand (house icon +
+- [x] Header: absolute over hero, "Habitat" brand (house icon +
       wordmark), nav (Home, Search Results, Categories, Single Property,
       Blog, Contact) + brand icon cluster (Pinterest, Facebook, Twitter,
       Dribbble, Behance — inline SVG, NOT lucide brand icons); mobile
@@ -456,12 +456,12 @@ Dock (`https://www.componentdock.com/`) instead.
       socials, 2 blog-post rows (thumb + h6 + clock "5 min" + Read
       More), Get In Touch column (address/email/phone/hours), copyright
       bar
-- [ ] All images are picsum placeholders with alt text; no ColorLib
+- [x] All images are picsum placeholders with alt text; no ColorLib
       assets
 - [ ] Icons from lucide-react except brand icons (inline SVG per skill);
       no icon fonts copied
 - [ ] Tests: one `describe` per component, scenarios mirroring this spec;
       100% coverage (lines/functions/branches/statements)
 - [ ] `scripts/verify-app.sh habitat` green (typecheck + lint + coverage + build)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

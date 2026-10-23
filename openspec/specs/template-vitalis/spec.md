@@ -221,14 +221,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Vitalis" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline (e.g. "Take the world's best quality Treatment")
-- [ ] Consultation band — it SHALL show the heading "Consultation"
-- [ ] Choose us — it SHALL show the heading "Offer for you"
+- [x] Navigation bar — the navbar SHALL show the site name "Vitalis" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline (e.g. "Take the world's best quality Treatment")
+- [x] Consultation band — it SHALL show the heading "Consultation"
+- [x] Choose us — it SHALL show the heading "Offer for you"
 - [ ] Procedures — it SHALL render four procedure cards (Body procedures, Facial Procedures, Breast procedures, Skin care & Beauty)
-- [ ] Expert doctors — it SHALL show the heading "Our Expert Doctors"
-- [ ] Blog — it SHALL show the heading "Skin care tips"
-- [ ] Footer — it SHALL show the site name "Vitalis" and quick links
+- [x] Expert doctors — it SHALL show the heading "Our Expert Doctors"
+- [x] Blog — it SHALL show the heading "Skin care tips"
+- [x] Footer — it SHALL show the site name "Vitalis" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

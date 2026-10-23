@@ -214,12 +214,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Split-panel full-viewport layout — THEN I should see a split layout filling the viewport height
-- [ ] Registration form displays all required fields — THEN I should see a "Register" heading (h3)
-- [ ] Two-column form grid — THEN "First Name" and "Last Name" should appear side by side
+- [x] Registration form displays all required fields — THEN I should see a "Register" heading (h3)
+- [x] Two-column form grid — THEN "First Name" and "Last Name" should appear side by side
 - [ ] Styled form inputs with shadows — THEN the text inputs should have no visible border
 - [ ] Custom checkbox with terms text — THEN I should see a custom checkbox (20×20px, 4px radius)
-- [ ] Orange register button — THEN the "Register" button should have orange background (#fb771a)
+- [x] Orange register button — THEN the "Register" button should have orange background (#fb771a)
 - [ ] Form accepts user input — THEN the first name field should contain "Jane"
-- [ ] Page title and accessibility — THEN the document title contain "RegMint"
+- [x] Page title and accessibility — THEN the document title contain "RegMint"

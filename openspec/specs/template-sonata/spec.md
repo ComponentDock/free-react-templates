@@ -273,7 +273,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Spec validated: `npm run spec:validate` passes for
       `template-sonata`.
-- [ ] App `apps/sonata` created on branch `feat/template-sonata` by an
+- [x] App `apps/sonata` created on branch `feat/template-sonata` by an
       implementer stream (NOT this prep stream).
 - [ ] All Gherkin scenarios above covered by Vitest + Testing Library tests
       at 100% coverage (lines/functions/branches/statements).
@@ -282,19 +282,19 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens match the reference: `#fc0254` pink, `#0a183d` navy,
       `#08192d` header, `#383b70` secondary button, `#1c294a` panel,
       `#6a7080` muted, Montserrat font, 50px pill buttons.
-- [ ] Footer links `https://www.componentdock.com/`; no ColorLib references
+- [x] Footer links `https://www.componentdock.com/`; no ColorLib references
       anywhere in `apps/sonata`.
-- [ ] `public/CNAME` = `sonata.free.componentdock.com`; `homepage` =
+- [x] `public/CNAME` = `sonata.free.componentdock.com`; `homepage` =
       `https://sonata.free.componentdock.com`; `npm install` run at root and
       `@free-react-templates/sonata` registered in `package-lock.json`.
 - [ ] `npm run readme:status` regenerates README status; TEMPLATES.md row
       marked `[x]` with the live URL on merge.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header and navbar — it shows the brand wordmark, the nav links
 - [ ] Hero slider — the headline "Music for everyone." renders with the word "Music"
-- [ ] Intro band ("Unlimited Access") — it shows the headline "Unlimited Access to 100K tracks" on the
-- [ ] How it works — it shows the three steps "Create an account", "Choose a plan",
-- [ ] Concept section — it shows the four items "Soul Music", "Live Concerts", "Dj
-- [ ] Subscription section — it shows the "$15/month" headline, the pink "Start a free trial
+- [x] Intro band ("Unlimited Access") — it shows the headline "Unlimited Access to 100K tracks" on the
+- [x] How it works — it shows the three steps "Create an account", "Choose a plan",
+- [x] Concept section — it shows the four items "Soul Music", "Live Concerts", "Dj
+- [x] Subscription section — it shows the "$15/month" headline, the pink "Start a free trial
 - [ ] Premium section — it shows the four features "No ad interruptions", "High
 - [ ] Page composition — all eight sections appear in the source order and the page has

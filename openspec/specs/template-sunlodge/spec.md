@@ -172,10 +172,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders with correct links and contact info — the navbar shows links: Home, Rooms, About, Blog, Contact
-- [ ] Hero displays headline with split layout — the hero displays "World Class Accommodation" heading
+- [x] Hero displays headline with split layout — the hero displays "World Class Accommodation" heading
 - [ ] About section shows description and overlapping images — a heading and description text are visible
 - [ ] Popular rooms section displays room cards — four room cards are displayed
 - [ ] Video preview section shows play button — a play button is visible

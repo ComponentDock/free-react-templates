@@ -238,13 +238,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the "Grillmark" logo link is visible
-- [ ] Hero — the hero headline "Premium cuts, expertly crafted" is visible
-- [ ] BannerBottom — the banner headline "Premium cuts, expertly crafted" is visible
-- [ ] Breakfast — the breakfast heading "Daily Food Courses with Drinks" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the "Grillmark" logo link is visible
+- [x] Hero — the hero headline "Premium cuts, expertly crafted" is visible
+- [x] BannerBottom — the banner headline "Premium cuts, expertly crafted" is visible
+- [x] Breakfast — the breakfast heading "Daily Food Courses with Drinks" is visible
 - [ ] Lunch — the lunch heading is visible
 - [ ] Reservation — the reservation form is visible
 - [ ] Chef — the chef image is visible
 - [ ] FoodGallery — the food gallery section heading is visible
-- [ ] Brands — the "In association with" heading is visible
+- [x] Brands — the "In association with" heading is visible

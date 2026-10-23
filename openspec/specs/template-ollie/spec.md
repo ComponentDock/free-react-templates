@@ -370,10 +370,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero carousel with full-width background images
 - [ ] FAQ accordion with 8 questions in 2 columns
 - [ ] Testimonials carousel with 4 items
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Placeholder images seeded (`picsum.photos/seed/ollie-<n>/<w>/<h>`);
       no copied assets
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` + surge
       URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

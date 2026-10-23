@@ -533,17 +533,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/momentum`)
 - [ ] Section order matches the reference 1:1 (navbar → hero → countdown → services+About box → pricing → More Features → testimonials+team → newsletter → footer)
 - [ ] Design tokens in `@theme` (brand purple #743ad5, brand pink #d53a9d, gradient to-right, black #000, #111, #222, light grey #efefef, Jost 400/600/700)
-- [ ] Navbar: absolute transparent over hero, wordmark "Momentum", links Home/Dropdown/Services/About/Contact Us, active Home white, dropdown + nested submenu (purple hover), white burger → mobile slide-in panel
-- [ ] Hero: 100vh min-700px, dark overlay rgba(0,0,0,.4), 90px bold white headline (typo fixed), credit line, "Read More" gradient pill (100px radius, uppercase, letter-spacing .2rem)
-- [ ] Countdown: black bg, "Don't wait" + "Event Countdown" (80px), 4 live units with 90px white numbers + uppercase grey labels, "Event ended" alert on expiry, "Get Started" pill
+- [x] Navbar: absolute transparent over hero, wordmark "Momentum", links Home/Dropdown/Services/About/Contact Us, active Home white, dropdown + nested submenu (purple hover), white burger → mobile slide-in panel
+- [x] Hero: 100vh min-700px, dark overlay rgba(0,0,0,.4), 90px bold white headline (typo fixed), credit line, "Read More" gradient pill (100px radius, uppercase, letter-spacing .2rem)
+- [x] Countdown: black bg, "Don't wait" + "Event Countdown" (80px), 4 live units with 90px white numbers + uppercase grey labels, "Event ended" alert on expiry, "Get Started" pill
 - [ ] Services: #efefef bg, 4 feature cards (purple 40px icons: Photography/Settings/Images/Layered), hover → gradient fill + white text; white About box overlapping (Who we are / About us / 2 paragraphs / Get Started white-interior pill + overlapping image)
-- [ ] Pricing: black bg, 3 purple cards ($49.99 / $199.99 / $975.99), white 30px names, 1px divider, 50px bold price, white outline "Buy" pill (hover invert)
+- [x] Pricing: black bg, 3 purple cards ($49.99 / $199.99 / $975.99), white 30px names, 1px divider, 50px bold price, white outline "Buy" pill (hover invert)
 - [ ] More Features: 100vh bg image + overlay, 3 dark cards (Creative/Design/Development, #222 bg), hover → gradient fill
-- [ ] Testimonials: white box pulled up (-200px), 3-slide slider with avatars/names/role "Product Marketer @Google", dot nav (#efefef → #743ad5 active)
-- [ ] Team: on #111 bottom half, Jessica Green (CEO, Co-Founder) + Jon Gold (CTO, Co-Founder), 30px white names, muted roles/bios, "Read bio" gradient pills
+- [x] Testimonials: white box pulled up (-200px), 3-slide slider with avatars/names/role "Product Marketer @Google", dot nav (#efefef → #743ad5 active)
+- [x] Team: on #111 bottom half, Jessica Green (CEO, Co-Founder) + Jon Gold (CTO, Co-Founder), 30px white names, muted roles/bios, "Read bio" gradient pills
 - [ ] Newsletter: #efefef bg, underline inputs (Your name / Your email) + black rounded Subscribe button, validation on submit
 - [ ] Footer: 4 circular social buttons (facebook/twitter/linkedin/dribbble inline SVG; hover purple), copyright + credit line
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Jost via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Action lines (549 AND 881) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

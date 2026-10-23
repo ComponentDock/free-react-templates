@@ -194,12 +194,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] All sections render in correct order — all 16 sections are visible in the correct order
 - [ ] Navbar displays navigation links — Home, About, Services, Gallery, Blog, Contact links are visible
-- [ ] Hero displays heading and CTA — the heading "Welcome to our" is visible
+- [x] Hero displays heading and CTA — the heading "Welcome to our" is visible
 - [ ] Features section shows 4 items — 4 feature cards are displayed (Professional Builder, We Deliver Quality, Always On Time, We Are Passionate)
-- [ ] About section has contact button — "About Us" title is visible
+- [x] About section has contact button — "About Us" title is visible
 - [ ] What We Offer shows 3 services — Building Construction, Project Planning, and House Renovation cards are visible
 - [ ] Why Choose Us shows 3 feature items — 30+ Years of Experience, Qualified Experts, and Best Customer Service items are visible
 - [ ] Gallery shows filterable project images — 6 project images are displayed
@@ -209,5 +209,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Projects section shows image grid — 8 project images are displayed
 - [ ] Blog shows 3 posts — 3 blog post cards are displayed
 - [ ] Partners displays logos — placeholder partner logos are visible
-- [ ] CTA banner has book now button — a "Book Now" button is visible
+- [x] CTA banner has book now button — a "Book Now" button is visible
 - [ ] Footer shows contact info — email, phone, and address are visible

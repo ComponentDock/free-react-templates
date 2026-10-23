@@ -226,15 +226,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Razor" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a subheading (e.g. "Welcome to Razor") and a level-1 headline
+- [x] Navigation bar — the navbar SHALL show the site name "Razor" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a subheading (e.g. "Welcome to Razor") and a level-1 headline
 - [ ] Services — it SHALL render four service cards (Hair Styles, Beard Trim, Hot Shave, Hair Shampoo)
 - [ ] Counters — it SHALL render four counters (Places, Events, Photos, Speakers) with numbers
-- [ ] Team — it SHALL show the heading "Our Expert Team"
-- [ ] Gallery — it SHALL show the heading "Photos of Our Events"
-- [ ] Pricing — it SHALL show the heading "Price & Plans"
+- [x] Team — it SHALL show the heading "Our Expert Team"
+- [x] Gallery — it SHALL show the heading "Photos of Our Events"
+- [x] Pricing — it SHALL show the heading "Price & Plans"
 - [ ] Appointment form — the form SHALL contain a first name input and a submit button
-- [ ] Footer — it SHALL show the site name "Razor" and quick links
+- [x] Footer — it SHALL show the site name "Razor" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

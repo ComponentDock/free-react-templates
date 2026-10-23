@@ -285,7 +285,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/gatherly` renders the twelve bands in the DOM order above (preloader overlay,
+- [x] `apps/gatherly` renders the twelve bands in the DOM order above (preloader overlay,
       navbar, hero slider, countdown, about+counter, gallery, subscribe, speakers, schedule,
       pricing, blog, contact, map, footer).
 - [ ] Hero is a two-slide carousel with the headline, the date line, a primary ticket button
@@ -297,8 +297,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gallery shows four images in one unguttered row; about shows the counter and the
       "Join Our Event" band.
 - [ ] Every anchor in the navbar resolves to a real section id (no dead `#…-section`).
-- [ ] Footer links to https://www.componentdock.com/ and the app's `public/CNAME` is
+- [x] Footer links to https://www.componentdock.com/ and the app's `public/CNAME` is
       `gatherly.free.componentdock.com` while `homepage` matches it.
-- [ ] No app file mentions ColorLib (provenance lives in this spec, TEMPLATES.md and the PR).
+- [x] No app file mentions ColorLib (provenance lives in this spec, TEMPLATES.md and the PR).
 - [ ] `npm run verify-app.sh gatherly` green: typecheck + lint + 100 % coverage + build.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

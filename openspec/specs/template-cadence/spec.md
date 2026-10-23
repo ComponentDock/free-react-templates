@@ -144,12 +144,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and mobile menu — the navbar displays "Cadence" as brand text
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and mobile menu — the navbar displays "Cadence" as brand text
 - [ ] Hero section with background imagery — the hero heading shows "Cadence Cadence"
-- [ ] Artist Bio section — the section heading shows "Artist Bio"
+- [x] Artist Bio section — the section heading shows "Artist Bio"
 - [ ] Upcoming Shows section — 4 upcoming shows are displayed
 - [ ] Music Player section — 4 track cards are displayed
-- [ ] Featured Album section — the album title "Love is all Around" is shown
-- [ ] Music/Artists Search panels — a "Music" heading is displayed
+- [x] Featured Album section — the album title "Love is all Around" is shown
+- [x] Music/Artists Search panels — a "Music" heading is displayed
 - [ ] Design tokens and styling — the body font is Raleway

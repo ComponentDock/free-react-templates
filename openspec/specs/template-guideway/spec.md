@@ -171,7 +171,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Top utility bar with logo, contact info, and "Free Consulting" CTA
+- [x] Top utility bar with logo, contact info, and "Free Consulting" CTA
 - [ ] Dark navbar with 6 nav links and search icon
 - [ ] Hero section with background image, overlay, heading, sub-headline, CTA
 - [ ] Features section with heading, paragraph, and two styled cards
@@ -185,8 +185,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark navbar bg #0f172a
 - [ ] Pill-shaped buttons (border-radius: 9999px)
 - [ ] Responsive breakpoints: hamburger nav at <768px, stacking columns
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] CNAME set to guideway.free.componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] CNAME set to guideway.free.componentdock.com
 - [ ] Coverage 100% lines/functions/branches/statements
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

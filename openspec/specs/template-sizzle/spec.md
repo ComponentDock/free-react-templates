@@ -374,11 +374,11 @@ Dock (`https://www.componentdock.com/`) instead.
       pitfall — NEVER write `tel:+...` literals in source)
 - [ ] Demo-repeated content varied (menu prices/copy, review names, blog
       dates/counts) — same kinds of content, no duplicated strings
-- [ ] Footer links Component Dock (https://www.componentdock.com/) —
+- [x] Footer links Component Dock (https://www.componentdock.com/) —
       replaces the original "Colorlib" credit
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] TEMPLATES.md: mark BOTH marco rows `[x]` (lines 444 and 2686) +
       surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (sizzle.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -209,8 +209,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog post cards render with Read More links
 - [ ] Footer links and newsletter form functional
 - [ ] Mobile responsive: offcanvas menu, stacked layouts
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Footer links to Component Dock (`https://www.componentdock.com/`)
-- [ ] `public/CNAME` contains `hibiscus.free.componentdock.com`
-- [ ] `homepage` in `package.json` set to `https://hibiscus.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code (provenance only in spec)
+- [x] Footer links to Component Dock (`https://www.componentdock.com/`)
+- [x] `public/CNAME` contains `hibiscus.free.componentdock.com`
+- [x] `homepage` in `package.json` set to `https://hibiscus.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

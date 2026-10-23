@@ -217,15 +217,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Applab" and links to the main sections
-- [ ] Hero section — it SHALL contain a heading matching "Promote your app with Applab"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Applab" and links to the main sections
+- [x] Hero section — it SHALL contain a heading matching "Promote your app with Applab"
 - [ ] Feature blocks section — it SHALL show at least two feature blocks with headings and copy
 - [ ] How-it-works section — it SHALL show the three steps in order
 - [ ] Features strip — it SHALL show the feature headings with supporting copy
-- [ ] Testimonials section — it SHALL show the heading "Review from our regular users"
-- [ ] Pricing section — it SHALL show the heading "Unlock full Power"
-- [ ] CTA section — it SHALL show the heading "Get start from now and increase productivity"
-- [ ] Footer — it SHALL show the site name "Applab" and an about blurb
+- [x] Testimonials section — it SHALL show the heading "Review from our regular users"
+- [x] Pricing section — it SHALL show the heading "Unlock full Power"
+- [x] CTA section — it SHALL show the heading "Get start from now and increase productivity"
+- [x] Footer — it SHALL show the site name "Applab" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

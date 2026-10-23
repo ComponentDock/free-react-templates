@@ -197,8 +197,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders and scrolls to sections — I see a logo on the left
 - [ ] Hero banner displays headline and CTA — I see a headline "Hello We're BizPlanner"
 - [ ] About section shows 4 feature cards — I see a centered section title

@@ -133,10 +133,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders with navigation and CTA — the "Seaview" logo, all five navigation links, and the "Book Now" button are visible
-- [ ] Hero section displays with parallax background — the "Book Your Stay" heading, subtitle paragraph, and "Book Now" button are visible
+- [x] Navbar renders with navigation and CTA — the "Seaview" logo, all five navigation links, and the "Book Now" button are visible
+- [x] Hero section displays with parallax background — the "Book Your Stay" heading, subtitle paragraph, and "Book Now" button are visible
 - [ ] Booking form captures guest details — the check-in input, check-out input, adults select, children select, and submit button are visible
-- [ ] Intro section shows welcome and gallery — the "Welcome" subtitle, main heading, description, and 4 gallery images are visible
-- [ ] Rooms showcase displays two room options — "Luxury Double Suite" at $129/Night and "Luxury Single Room" at $89/Night are displayed with feature checklists
-- [ ] Discover section shows services — the "Discover Seaview Hotel" heading and three service cards (Weddings, Parties, Relax) are visible
-- [ ] Testimonials section displays client reviews — the "Testimonials" heading and 3 testimonial cards with author names are visible
+- [x] Intro section shows welcome and gallery — the "Welcome" subtitle, main heading, description, and 4 gallery images are visible
+- [x] Rooms showcase displays two room options — "Luxury Double Suite" at $129/Night and "Luxury Single Room" at $89/Night are displayed with feature checklists
+- [x] Discover section shows services — the "Discover Seaview Hotel" heading and three service cards (Weddings, Parties, Relax) are visible
+- [x] Testimonials section displays client reviews — the "Testimonials" heading and 3 testimonial cards with author names are visible

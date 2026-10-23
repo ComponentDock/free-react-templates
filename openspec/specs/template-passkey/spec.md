@@ -272,12 +272,12 @@ Dock (`https://www.componentdock.com/`) instead.
       card 320px, shadow `0 10px 34px -20px rgba(0,0,0,.41)`, white caret
       near top-right (`right: 35px`); centers + `margin-top: 70px` on small
       screens
-- [ ] Form renders in order: "Email address" (placeholder email@example.com),
+- [x] Form renders in order: "Email address" (placeholder email@example.com),
       "Password" (placeholder Password), "Remember me" checkbox, full-width
       "Sign in" submit — reference field styling (52px, radius 4px, 2px
       `rgba(0,0,0,.05)` border)
 - [ ] `aria-haspopup`/`aria-expanded` flip on open/close; menu closes on
       outside click, Escape, and submit
-- [ ] Footer links `https://www.componentdock.com/`; no ColorLib reference
+- [x] Footer links `https://www.componentdock.com/`; no ColorLib reference
       anywhere in `apps/passkey` (provenance lives only here + TEMPLATES.md + PR)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

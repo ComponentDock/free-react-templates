@@ -138,9 +138,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Hero section renders with heading and description — a heading "We're Coming Soon" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Hero section renders with heading and description — a heading "We're Coming Soon" is visible
 - [ ] Countdown timer displays time remaining — the countdown timer shows Days, Hours, Minutes, and Seconds units
-- [ ] Email subscription form allows sign-up — an email input field and "SUBSCRIBE" button are visible
+- [x] Email subscription form allows sign-up — an email input field and "SUBSCRIBE" button are visible
 - [ ] Social media icons are displayed — Facebook, Twitter, Google+, Instagram, and Pinterest icons are visible
-- [ ] Accessibility — it has role="timer" and aria-label
+- [x] Accessibility — it has role="timer" and aria-label

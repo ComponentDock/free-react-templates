@@ -171,4 +171,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] No ColorLib references in app code (provenance in spec only)
 - [x] Responsive: mobile-first, hamburger nav on small screens
 - [x] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -130,9 +130,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Animated checkbox rendering — it SHALL display an indigo (#6366f1) square background with rounded corners
 - [ ] Checkbox interaction — the checkbox SHALL become checked with an animation
 - [ ] Disabled state — the checkbox SHALL remain unchecked
-- [ ] Showcase layout — four checkboxes SHALL be visible with labels "Design the mockups", "Build the components", "Write the tests", "Ship to production"
+- [x] Showcase layout — four checkboxes SHALL be visible with labels "Design the mockups", "Build the components", "Write the tests", "Ship to production"
 - [ ] Typography and styling — the body SHALL use the Inter font family

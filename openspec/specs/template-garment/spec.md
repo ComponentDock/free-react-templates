@@ -232,7 +232,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/garment` created from the section-rich landing app pattern
+- [x] `apps/garment` created from the section-rich landing app pattern
       (Aurora), package renamed to `@free-react-templates/garment`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run
@@ -251,12 +251,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` for BOTH Essence rows + Surge
       URL (`garment.free.componentdock.com`) + homepage + `npm run
   readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the header SHALL show the site name "Garment" on the left
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the header SHALL show the site name "Garment" on the left
 - [ ] Cart drawer — a right-side cart drawer SHALL open with 3 demo line items, each
 - [ ] Hero section — the hero SHALL show a background photo placeholder (seeded
 - [ ] Category tiles — the section SHALL show 3 equal tiles with photo placeholders
 - [ ] CTA banner — the banner SHALL show a background photo placeholder
-- [ ] Popular products — the section SHALL have the heading "Popular Products"
+- [x] Popular products — the section SHALL have the heading "Popular Products"
 - [ ] Brands strip — the section SHALL have a light gray background (`#f5f7f9`)
 - [ ] Footer — the footer SHALL have a dark background (`#252525`)

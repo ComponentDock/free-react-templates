@@ -157,15 +157,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Clicking search icon opens the overlay with full-width input
 - [ ] Overlay covers the entire navbar area (white background, absolute positioned)
 - [ ] Close (X) button closes the overlay with fade transition
-- [ ] Search input is borderless with "Type keyword and hit enter..." placeholder
+- [x] Search input is borderless with "Type keyword and hit enter..." placeholder
 - [ ] Input height is 50px, transparent background
 - [ ] Content section shows centered instruction text in gray (#757575, weight 300)
 - [ ] Font is Roboto (loaded via Google Fonts link in index.html)
 - [ ] Navbar has bottom border (#dae0e5) and subtle shadow
 - [ ] Transitions are smooth (0.3s ease)
 - [ ] Footer includes Component Dock link
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] `public/CNAME` contains `searchcloak.free.componentdock.com`
-- [ ] `package.json` homepage is `https://searchcloak.free.componentdock.com`
+- [x] No ColorLib references in app code (provenance only in spec)
+- [x] `public/CNAME` contains `searchcloak.free.componentdock.com`
+- [x] `package.json` homepage is `https://searchcloak.free.componentdock.com`
 - [ ] No asset copying — placeholder images via picsum.photos if needed
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

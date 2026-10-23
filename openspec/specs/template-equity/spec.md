@@ -346,24 +346,24 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/equity` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/equity` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- equity` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; brand tokens (#7f4782, #25262a/#000, #f4f5f9, #333333, Nunito + Georgia) used via `@theme`
 - [ ] Team names readable (upstream `text-white` bug deviation documented in PR)
-- [ ] No ColorLib assets copied (picsum seeds `equity-<n>`, Google Fonts links, lucide/inline-SVG icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Equity" with the brand
+- [x] No ColorLib assets copied (picsum seeds `equity-<n>`, Google Fonts links, lucide/inline-SVG icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Equity" with the brand
 - [ ] Hero carousel — the hero SHALL show a full-viewport (100vh, min 700px)
 - [ ] Featured services strip — it SHALL show three cards titled Business Analytics,
 - [ ] Investors section — it SHALL show the uppercase eyebrow and heading "Our
 - [ ] About section — it SHALL show a video figure (photo with a round white play
-- [ ] Services section — it SHALL show the heading "Our Services" on a #f4f5f9
-- [ ] Leadership section — it SHALL show the heading "Our Leadership"
-- [ ] Press section — it SHALL show the heading "Press Releases" beside a list of
+- [x] Services section — it SHALL show the heading "Our Services" on a #f4f5f9
+- [x] Leadership section — it SHALL show the heading "Our Leadership"
+- [x] Press section — it SHALL show the heading "Press Releases" beside a list of
 - [ ] Testimonials section — it SHALL show a photo background with a dark overlay and the
-- [ ] Blog section — it SHALL show the uppercase eyebrow "Latest Blog Posts" and
-- [ ] Contact section — it SHALL show the heading "Contact Us"
+- [x] Blog section — it SHALL show the uppercase eyebrow "Latest Blog Posts" and
+- [x] Contact section — it SHALL show the heading "Contact Us"
 - [ ] Footer — the footer SHALL have a #333333 background
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

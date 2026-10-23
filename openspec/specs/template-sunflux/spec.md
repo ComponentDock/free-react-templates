@@ -247,17 +247,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders all navigation links — the navbar displays links: About, Products, Services, Pricing, Blog, Contact
 - [ ] Dark mode toggle — the page switches to dark mode
 - [ ] Hero section displays savings calculator — the hero shows the headline "Power Your Home With Clean Energy"
 - [ ] Savings calculator computes results — the Annual Savings card updates to a non-zero dollar amount
 - [ ] Stats bar displays counters — it shows 4 stat items: Installations, Saved for Customers, Customer Satisfaction, States Served
-- [ ] Services section displays cards — it shows a heading "Complete Solar Solutions"
-- [ ] ROI calculator displays comparison — it shows a heading "Solar vs. Traditional Energy"
-- [ ] Installation timeline displays steps — it shows a heading "How It Works"
+- [x] Services section displays cards — it shows a heading "Complete Solar Solutions"
+- [x] ROI calculator displays comparison — it shows a heading "Solar vs. Traditional Energy"
+- [x] Installation timeline displays steps — it shows a heading "How It Works"
 - [ ] Testimonials carousel navigates — it shows at least 3 testimonial cards
-- [ ] CTA banner displays — it shows "Ready to Go Solar?" heading
+- [x] CTA banner displays — it shows "Ready to Go Solar?" heading
 - [ ] FAQ accordion expands and collapses — it displays at least 5 FAQ questions
 - [ ] Contact form validates inputs — validation errors appear for Full Name, Email, and Message
 - [ ] Mobile responsive layout — the navbar collapses to a hamburger menu

@@ -130,8 +130,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Category tags on each card
 - [ ] Load more arrow
 - [ ] 3-column footer with categories, links, social
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] No ColorLib references in app code
-- [ ] CNAME: `redawn.free.componentdock.com`
-- [ ] homepage in package.json: `https://redawn.free.componentdock.com`
+- [x] CNAME: `redawn.free.componentdock.com`
+- [x] homepage in package.json: `https://redawn.free.componentdock.com`
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -167,11 +167,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Oswald font loaded via Google Fonts (Regular, Medium, Bold)
 - [ ] Full-viewport gray (#e6e6e6) background
-- [ ] "Login" heading centered, Oswald-Medium 30px
+- [x] "Login" heading centered, Oswald-Medium 30px
 - [ ] Facebook social button: #3b5998, pill-shaped, icon + text
 - [ ] Twitter social button: #1da1f2, pill-shaped, icon + text
 - [ ] Social buttons hover to #333333
-- [ ] "Login with email" separator centered
+- [x] "Login with email" separator centered
 - [ ] Email input: white bg, pill-shaped, 62px tall, placeholder visible
 - [ ] Password input: white bg, pill-shaped, 62px tall, masked
 - [ ] Show/hide password toggle: eye icon, toggles visibility
@@ -179,6 +179,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] "Don't have an account?" + "SIGN UP NOW" link with bottom border
 - [ ] Responsive: works at 375px viewport width
 - [ ] Semantic HTML (form, inputs, button, labels/placeholders)
-- [ ] Footer links to https://www.componentdock.com/ (branded "Component Dock")
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to https://www.componentdock.com/ (branded "Component Dock")
+- [x] No ColorLib references in app code (only in spec + TEMPLATES.md)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

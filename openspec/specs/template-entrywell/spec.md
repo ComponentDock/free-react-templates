@@ -211,12 +211,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page layout and launch button — I see a heading "Entrywell"
-- [ ] Modal opens with split layout — I see a dialog with aria-modal "true"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page layout and launch button — I see a heading "Entrywell"
+- [x] Modal opens with split layout — I see a dialog with aria-modal "true"
 - [ ] Modal closes on user action — the modal is not visible
-- [ ] Sign In tab is active by default — the "Sign In" tab has aria-selected "true"
-- [ ] Sign Up tab switch — the "Sign Up" tab has aria-selected "true"
+- [x] Sign In tab is active by default — the "Sign In" tab has aria-selected "true"
+- [x] Sign Up tab switch — the "Sign Up" tab has aria-selected "true"
 - [ ] Tab switching hides inactive forms — I do not see a "Username" input
 - [ ] Brand colors and styling — buttons use background color #e3b04b
-- [ ] Accessibility — the dialog has role "dialog" and aria-modal "true"
+- [x] Accessibility — the dialog has role "dialog" and aria-modal "true"

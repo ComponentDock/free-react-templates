@@ -241,16 +241,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Horse Club", an email, and a phone number
-- [ ] Hero section — it SHALL contain a level-1 heading matching "Inter relation Between Horse & Rider"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Horse Club", an email, and a phone number
+- [x] Hero section — it SHALL contain a level-1 heading matching "Inter relation Between Horse & Rider"
 - [ ] About/video section — it SHALL show descriptive copy and a play button with an accessible label
 - [ ] Features section — it SHALL show the six feature cards, each with an icon, title, and copy
 - [ ] Home about section — it SHALL show an image with an accessible label and descriptive copy
-- [ ] Pricing section — it SHALL show the heading "Choose the best plan that suits you"
-- [ ] Booking section — it SHALL show the heading "Appointment Form" with form fields and a submit button
-- [ ] Blog section — it SHALL show the heading "Latest News from our Blog"
+- [x] Pricing section — it SHALL show the heading "Choose the best plan that suits you"
+- [x] Booking section — it SHALL show the heading "Appointment Form" with form fields and a submit button
+- [x] Blog section — it SHALL show the heading "Latest News from our Blog"
 - [ ] Gallery section — it SHALL show at least six gallery images with accessible labels
-- [ ] Footer — it SHALL show the site name "Horse Club" and an about blurb
+- [x] Footer — it SHALL show the site name "Horse Club" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

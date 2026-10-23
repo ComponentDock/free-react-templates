@@ -129,12 +129,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Typecheck passes (`npm run typecheck --workspace @free-react-templates/oversample`)
 - [ ] Lint passes (`npm run lint`)
-- [ ] Vitest coverage is 100% for `apps/oversample`
+- [x] Vitest coverage is 100% for `apps/oversample`
 - [ ] Build succeeds (`npm run build --workspace @free-react-templates/oversample`)
 - [ ] Footer links to Component Dock
-- [ ] `public/CNAME` is `oversample.free.componentdock.com` and `homepage` matches
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `public/CNAME` is `oversample.free.componentdock.com` and `homepage` matches
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Demo Framing — the h1 `Multiselect #05` is visible
 - [ ] Combobox Trigger — the listbox appears and the trigger reports
-- [ ] Option Selection — Option1` reports `aria-selected="true"` and the selection
+- [x] Option Selection — Option1` reports `aria-selected="true"` and the selection
 - [ ] Selection Chips And Counter — the chip disappears, the option is deselected and the counter

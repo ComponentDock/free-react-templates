@@ -188,7 +188,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero: background image, subtitle, headline, CTA button
 - [ ] Search form: 4 dropdowns, 2 range sliders, submit button
 - [ ] Welcome: 2-column layout, image, heading, description, 3 stat boxes
-- [ ] Properties: 3 cards, image, title, tag pills, price, "For Sale" button
+- [x] Properties: 3 cards, image, title, tag pills, price, "For Sale" button
 - [ ] Testimonials: left text + right carousel with avatar, quote, name, role
 - [ ] Cities: 4 image cards with centered button overlay
 - [ ] Features: 3x2 grid with icon, title, description
@@ -197,7 +197,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: links to Component Dock
 - [ ] Brand color #f5204b used consistently (buttons, active states)
 - [ ] Roboto font applied throughout
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos
 - [ ] lucide-react icons replacing themify/linericon icons
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

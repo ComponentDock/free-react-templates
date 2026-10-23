@@ -233,8 +233,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page title — the document title is "QueryBar — Flight Search"
-- [ ] Search form fields — two text inputs with placeholder "City, Region or Airport" are visible
+- [x] Page title — the document title is "QueryBar — Flight Search"
+- [x] Search form fields — two text inputs with placeholder "City, Region or Airport" are visible
 - [ ] Text input interaction — the From field contains "New York"
 - [ ] Date input interaction — the depart date is "2026-12-25"
 - [ ] Passengers dropdown — the dropdown is visible with "Room 1"

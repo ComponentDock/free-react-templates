@@ -138,11 +138,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-viewport gradient background — a blue-to-cyan gradient covers the full viewport
 - [ ] Circular avatar — a circular avatar image is displayed
-- [ ] Username display — the heading "John Doe" is rendered in white
+- [x] Username display — the heading "John Doe" is rendered in white
 - [ ] Login form with rounded inputs — a username input is present with a User icon on the left
-- [ ] Login button with gradient hover — a "Login" button is displayed
-- [ ] Forgot password link — a "Forgot Username / Password?" link is displayed
-- [ ] Create new account link — a "Create new account" link with an arrow is displayed
+- [x] Login button with gradient hover — a "Login" button is displayed
+- [x] Forgot password link — a "Forgot Username / Password?" link is displayed
+- [x] Create new account link — a "Create new account" link with an arrow is displayed

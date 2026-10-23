@@ -205,14 +205,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders with navigation and language selector — a dark navbar is visible
 - [ ] Info bar shows contact details — an info bar is visible below the navbar
 - [ ] Hero section with property showcase — the hero section is visible with a full-width property photo
 - [ ] Search form with tabs — a search form is visible
-- [ ] How It Work section — the "How It Work" section is visible
-- [ ] Featured Properties grid — a "Featured Properties" section is visible
-- [ ] Top Properties section — a "Top Properties" section is visible
-- [ ] Our Agents section — an "Our Agents" section is visible
-- [ ] Blog/News section — a "News Latest" blog section is visible
+- [x] How It Work section — the "How It Work" section is visible
+- [x] Featured Properties grid — a "Featured Properties" section is visible
+- [x] Top Properties section — a "Top Properties" section is visible
+- [x] Our Agents section — an "Our Agents" section is visible
+- [x] Blog/News section — a "News Latest" blog section is visible
 - [ ] Newsletter subscribe — a newsletter subscribe section is visible

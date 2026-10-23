@@ -308,20 +308,20 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Locks" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline ("We will make you stylish")
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Locks" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline ("We will make you stylish")
 - [ ] Info bar — it SHALL show a phone number, an address, and opening hours
 - [ ] Welcome — it SHALL show the heading "Welcome to Locks A Hair Salon"
-- [ ] Services — it SHALL show the heading "Our Services"
-- [ ] What We Do — it SHALL show the heading "What We Do"
-- [ ] Plan & Pricing — it SHALL show the heading "Plan & Pricing"
+- [x] Services — it SHALL show the heading "Our Services"
+- [x] What We Do — it SHALL show the heading "What We Do"
+- [x] Plan & Pricing — it SHALL show the heading "Plan & Pricing"
 - [ ] Discount band — it SHALL show the headline "Save up to 25% Off"
-- [ ] Hair stylist team — it SHALL show the heading "Our Hair Stylist"
-- [ ] Shop — it SHALL show the heading "Our Shop"
-- [ ] Gallery — it SHALL show the heading "Our Gallery"
+- [x] Hair stylist team — it SHALL show the heading "Our Hair Stylist"
+- [x] Shop — it SHALL show the heading "Our Shop"
+- [x] Gallery — it SHALL show the heading "Our Gallery"
 - [ ] Stats counter band — it SHALL render four statistics (Creative Makeup, Number of Awards, Happy Clients, Piercing Done)
-- [ ] Blog — it SHALL show the heading "Recent from blog"
-- [ ] Footer — it SHALL show the site name "Locks" and widget columns (About Us, Recent Blog, Services, Have a Questions?)
+- [x] Blog — it SHALL show the heading "Recent from blog"
+- [x] Footer — it SHALL show the site name "Locks" and widget columns (About Us, Recent Blog, Services, Have a Questions?)
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

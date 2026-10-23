@@ -181,7 +181,7 @@ The template SHALL use consistent brand colors.
 - [ ] Footer with copyright, heart icon, Component Dock link, social icons
 - [ ] Responsive: single-column grid on mobile
 - [ ] No references to ColorLib in app code (provenance only in spec/TEMPLATES.md)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Package: @free-react-templates/reprise
-- [ ] CNAME: reprise.free.componentdock.com
-- [ ] Homepage: https://reprise.free.componentdock.com
+- [x] CNAME: reprise.free.componentdock.com
+- [x] Homepage: https://reprise.free.componentdock.com

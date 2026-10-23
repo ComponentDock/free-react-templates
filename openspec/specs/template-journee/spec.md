@@ -414,10 +414,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-journee/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/journee`, package `@free-react-templates/journee`,
+- [x] App folder `apps/journee`, package `@free-react-templates/journee`,
       no ColorLib references in app code (grep for colorlib/Tourbi in
       apps/journee)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh journee`
 - [ ] Section order matches the source: header → hero banner → search
       country (+ donation cards) → feature → popular place → place details
@@ -435,17 +435,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Search section: white, overlaps banner (~-254px), yellow panel with
       country/city selects + blue "search" button; 3 donation cards
       (icon + h4 + p + "read more" script link)
-- [ ] Feature: split layout, "Amazing tour" heading + copy + 3 mini-cards
+- [x] Feature: split layout, "Amazing tour" heading + copy + 3 mini-cards
       (london 35 / Kashmir 75 / chaina 85 Places)
-- [ ] Popular place: "Most Popular place" title, 3 cards (icon + title + p + "book now") — Life of Egeft, Biking in Norway, Tour of iceland
+- [x] Popular place: "Most Popular place" title, 3 cards (icon + title + p + "book now") — Life of Egeft, Biking in Norway, Tour of iceland
 - [ ] Place details: centered text block + 2 photos + big yellow "view
       all" square (265×215px desktop)
-- [ ] Tour package: 4-slide carousel (photo + "Sawpalo, Brasil" + p + 5
+- [x] Tour package: 4-slide carousel (photo + "Sawpalo, Brasil" + p + 5
       yellow stars + "join now") with next/prev controls + right blurb
       ("tour package" + yellow "join now" pill)
-- [ ] CTA: blue-sky bg, "Join Our Newsletter" script + "Subscribe to get
+- [x] CTA: blue-sky bg, "Join Our Newsletter" script + "Subscribe to get
       Updated with new offers" + email input + yellow "subscribe now"
-- [ ] Blog: "our blog" title + 3 white cards (photo + "Luxerious Car
+- [x] Blog: "our blog" title + 3 white cards (photo + "Luxerious Car
       Rental" + p + date/likes/comments meta)
 - [ ] Footer: 4 columns (About Agency / Navigation Links (8, 2-col) /
       Newsletter (email + blue paper-plane) / Instafeed 8 thumbs) + bottom
@@ -458,4 +458,4 @@ Dock (`https://www.componentdock.com/`) instead.
       placeholder images, React carousel + mobile nav instead of
       owl-carousel/Bootstrap collapse, native selects instead of
       nice-select, Component Dock footer credit)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

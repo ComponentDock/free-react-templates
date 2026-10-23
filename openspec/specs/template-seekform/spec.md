@@ -83,8 +83,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Heading display — a heading "What are you looking for?" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Heading display — a heading "What are you looking for?" is visible
 - [ ] Search input — a search input is visible
-- [ ] Category pills — 5 category pills are visible: "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
+- [x] Category pills — 5 category pills are visible: "New Arrivals", "Ladies", "Mens", "Accessories", "Sale"
 - [ ] Background image — a full-screen background image is displayed

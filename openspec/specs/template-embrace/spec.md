@@ -239,8 +239,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — the Navbar band SHALL be present at its documented position with the structure, copy and tokens named above
 - [ ] Hero — the Hero band SHALL be present at its documented position with the structure, copy and tokens named above
 - [ ] Service Intro — the Service Intro band SHALL be present at its documented position with the structure, copy and tokens named above

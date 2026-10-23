@@ -242,9 +242,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog date badges in gold
 - [ ] Footer 4-column layout on desktop, stacked on mobile
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code (provenance in spec only)
+- [x] No ColorLib references in app code (provenance in spec only)
 - [ ] Placeholder images from picsum.photos
 - [ ] Google Fonts loaded via index.html link
 - [ ] Icons from lucide-react
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

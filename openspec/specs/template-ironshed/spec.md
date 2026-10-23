@@ -198,20 +198,20 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Navbar: absolute position, transparent overlay, all 6 nav links, search icon
-- [ ] Hero: carousel with 3 slides, background images, "Make it Shape" headline, subtitle, CTA button
+- [x] Hero: carousel with 3 slides, background images, "Make it Shape" headline, subtitle, CTA button
 - [ ] Services: 4 service items with icons, video thumbnail with play button
 - [ ] CTA Banner: parallax background, white text, headline + subtitle + button
-- [ ] Classes: 6 tabbed panels with images + descriptions, tab switching works, "View All Schedule" button
+- [x] Classes: 6 tabbed panels with images + descriptions, tab switching works, "View All Schedule" button
 - [ ] Trainer Schedule: weekly table, color-coded cells, correct workout labels
 - [ ] Team: 3 trainer cards with photo, specialty, name, description, social icons
 - [ ] Latest News: 3 blog cards with images, date/comments tags, title links
 - [ ] Footer: map embed, contact form (4 fields + submit), copyright, footer links, social icons
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] Design tokens: Oswald headings, Roboto body, #f34e3a brand accent, no border-radius buttons
 - [ ] Section title left accent bar (3px, #f34e3a)
 - [ ] All placeholder images use picsum.photos with deterministic seeds
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Tests: 100% coverage on all components
-- [ ] CNAME: ironshed.free.componentdock.com
+- [x] CNAME: ironshed.free.componentdock.com
 - [ ] package.json: @free-react-templates/ironshed, homepage set
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

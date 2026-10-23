@@ -508,10 +508,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run verify:app -- domily` (or `scripts/verify-app.sh domily`):
       typecheck + lint + vitest at 100% coverage (lines/functions/branches/
       statements) + build all green
-- [ ] No ColorLib / homofy reference in ANY app file (comments included);
+- [x] No ColorLib / homofy reference in ANY app file (comments included);
       provenance lives only in this spec, TEMPLATES.md, and the PR
-- [ ] Footer links https://www.componentdock.com/
-- [ ] `apps/domily/public/CNAME` = `domily.free.componentdock.com` and
+- [x] Footer links https://www.componentdock.com/
+- [x] `apps/domily/public/CNAME` = `domily.free.componentdock.com` and
       package `"homepage"` = `https://domily.free.componentdock.com`
 - [ ] Google Fonts: Shippori Mincho (400-800) + Roboto (300-900) via
       `<link>` in index.html — no copied font files
@@ -531,4 +531,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (slick-style scroll or client-side state)
 - [ ] README status + TEMPLATES.md bookkeeping (`[x]` + surge URL on both
       homofy rows, lines 590 + 2596) after ship
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

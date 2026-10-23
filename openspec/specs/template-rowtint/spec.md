@@ -387,7 +387,7 @@ SHALL be preserved for source fidelity and noted in the PR.
       `#343a40` dark default bg, **white `#fff` cell text**, soft
       shadow `0 5px 12px -12px rgba(0,0,0,0.29)`, border-collapse
       collapse
-- [ ] thead: 6 th ("Invoce" · "Customer" · "Ship" · "Price" ·
+- [x] thead: 6 th ("Invoce" · "Customer" · "Ship" · "Price" ·
       "Pruchased Price" · "" — or typo-fixed / visually-hidden
       "Actions") on a **charcoal `#343a40` band** — **13px / weight
       400 (explicit) / `#fff` / uppercase** / `20px 30px` padding /

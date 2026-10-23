@@ -109,10 +109,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders all navigation links and search — I should see links for Home, About, Services, Portfolio, Blog, Contact
-- [ ] Hero section displays title and subtitle — I should see "Beacon" as a heading and "We Create Awesome Photographies and more" as subtitle
-- [ ] Intro section shows creative description — I should see "Amazing studio" subtitle, "We are so Creative" heading, a paragraph, and a "Read More" button
+- [x] Hero section displays title and subtitle — I should see "Beacon" as a heading and "We Create Awesome Photographies and more" as subtitle
+- [x] Intro section shows creative description — I should see "Amazing studio" subtitle, "We are so Creative" heading, a paragraph, and a "Read More" button
 - [ ] Portfolio grid shows 7 items — I should see 7 portfolio items with titles and categories
 - [ ] Milestones shows 4 statistics — I should see 4 statistic items with values 48, 7, 23K, 19 and their labels
 - [ ] Services shows 4 service cards — I should see 4 service cards with their titles

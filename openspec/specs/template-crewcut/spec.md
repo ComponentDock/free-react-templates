@@ -394,12 +394,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Interactions: dark-mode toggle, contact form validation
       (name/email/subject/message, success message), newsletter submit,
       gallery hover captions, "See Details" + play buttons
-- [ ] Copy kinds kept: "HairStyle is a Must try Fashion for all Occasion",
+- [x] Copy kinds kept: "HairStyle is a Must try Fashion for all Occasion",
       "View More Changes", "What We Can Do for You", service titles, "Some
       Features that Made us Unique", feature titles, "We Believe that
       Interior beautifies the Total Architecture", "See Details",
       "Experienced Mentor Team", team names/roles, "Choose the Perfect Plan
       for you", plan names/prices/features, "If you need, Just drop us a
       line", contact info columns, footer widgets + reworded credit
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

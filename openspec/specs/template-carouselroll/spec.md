@@ -103,9 +103,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Lint passes (`npm run lint`)
 - [ ] Unit tests pass with 100% coverage (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
-- [ ] Footer links to Component Dock (`https://www.componentdock.com/`)
-- [ ] CNAME points to `carouselroll.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to Component Dock (`https://www.componentdock.com/`)
+- [x] CNAME points to `carouselroll.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header / Navbar — all navigation links and the dark-mode toggle are visible and interactive
 - [ ] Hero Showcase — the headline, descriptive subtext, and call-to-action buttons are clearly displayed
 - [ ] Vertical Carousel Showcase Section — the vertical slides transition correctly and update the active slide view

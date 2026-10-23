@@ -146,12 +146,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation links — the navbar displays the "Shuttercraft" brand name
-- [ ] Hero carousel with slides — the hero section shows the heading "Wildlife Photography"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation links — the navbar displays the "Shuttercraft" brand name
+- [x] Hero carousel with slides — the hero section shows the heading "Wildlife Photography"
 - [ ] About section with portrait and text — the about section displays a heading about photography
-- [ ] Gallery section with masonry grid — the gallery section shows the heading "My Recent Photos"
+- [x] Gallery section with masonry grid — the gallery section shows the heading "My Recent Photos"
 - [ ] Call-to-action banner — a "Let's Work Together" heading is visible
-- [ ] Blog section with post cards — the blog section shows the heading "Our Recent Blogs"
-- [ ] Contact section with form — a "Send Me a Message" heading is visible
+- [x] Blog section with post cards — the blog section shows the heading "Our Recent Blogs"
+- [x] Contact section with form — a "Send Me a Message" heading is visible
 - [ ] App composition and title — Navbar, Hero, About, Gallery, CallToAction, Blog, Contact, and Footer are all rendered

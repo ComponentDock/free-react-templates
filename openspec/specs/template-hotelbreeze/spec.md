@@ -203,8 +203,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Transparent navbar over hero image
 - [ ] Booking bar overlaps hero bottom
 - [ ] Fonts are Poppins (Google Fonts)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Footer links to Component Dock
 - [ ] All interactive elements are accessible (labels, aria-labels)
 - [ ] Responsive layout (mobile, tablet, desktop)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

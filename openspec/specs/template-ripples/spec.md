@@ -59,7 +59,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] App builds successfully with Vite + React 19 + Tailwind v4 + TypeScript.
 - [ ] 100% test coverage with Vitest + Testing Library.
-- [ ] Footer contains Component Dock link (`https://www.componentdock.com/`).
-- [ ] CNAME set to `ripples.free.componentdock.com`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer contains Component Dock link (`https://www.componentdock.com/`).
+- [x] CNAME set to `ripples.free.componentdock.com`.
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Interactive Accordion Sections — the corresponding panel expands to reveal its content

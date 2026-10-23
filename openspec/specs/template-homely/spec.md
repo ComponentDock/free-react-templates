@@ -398,11 +398,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/homely` scaffolded from the simplest existing app; package
+- [x] `apps/homely` scaffolded from the simplest existing app; package
       renamed to `@free-react-templates/homely`; `public/CNAME` =
       `homely.free.componentdock.com`; homepage
       `https://homely.free.componentdock.com`.
-- [ ] No "colorlib" string anywhere in `apps/homely/*` (provenance only
+- [x] No "colorlib" string anywhere in `apps/homely/*` (provenance only
       in this spec, TEMPLATES.md, and the PR).
 - [ ] `@theme` tokens: `--color-brand: #10c98f`, `--color-brand-deep:
 #0f4332`, `--color-brand-label: #0c8760`, `--color-ink: #0f4332`,
@@ -439,4 +439,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Post-merge bookkeeping: mark BOTH TEMPLATES.md "Easylo" rows
       (line ~575 and its duplicate ~1750) `[x]` with the live URL and
       run `npm run readme:status`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

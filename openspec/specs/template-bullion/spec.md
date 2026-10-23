@@ -430,5 +430,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: #191919 bg, white wordmark + blurb + copyright, two MOST POPULAR columns with accent headings, bottom bar with legal links + social icons
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Encode Sans Expanded via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Newsbit lines (275 AND 2206) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

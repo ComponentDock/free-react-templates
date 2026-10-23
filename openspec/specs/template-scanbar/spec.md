@@ -94,10 +94,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] The heading "Quick Find Your City" is visible — Given** the page loads
+- [x] The heading "Quick Find Your City" is visible — Given** the page loads
 - [ ] A text input with placeholder "ex: food, service, bar, hotel" is present — Given** the search form renders
 - [ ] A select with guest count options is present — Given** the search form renders
 - [ ] The input value updates — Given** I type into the WHAT field
 - [ ] The select value changes — Given** I select a WHERE option
 - [ ] The form submits without page navigation — Given** I click the SEARCH button
-- [ ] The document title is "Scanbar — Quick City Search Form" — Given** the page loads
+- [x] The document title is "Scanbar — Quick City Search Form" — Given** the page loads

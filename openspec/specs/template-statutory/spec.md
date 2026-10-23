@@ -145,12 +145,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — a dark navbar is visible with brand "Statutory" and nav links for Home, About, Practice Areas, Cases, Contact
+- [x] Navbar — a dark navbar is visible with brand "Statutory" and nav links for Home, About, Practice Areas, Cases, Contact
 - [ ] Hero section — the heading reads "Don't Feel Helpless We Fight for Justice"
 - [ ] Intro strip — four feature boxes are displayed: Expert Attorneys, Case Dismissed, Court Performance, Legal Protection
-- [ ] About section — the heading reads "Why Put Your Trust In Our Law Firm"
+- [x] About section — the heading reads "Why Put Your Trust In Our Law Firm"
 - [ ] Counter stats — four stats are displayed: Trusted Clients (3,000), Honor's & Awards (1,000), Expert Lawyers (2,000), Successful Cases (10,540)
 - [ ] Practice areas — six areas are displayed: Business Law, Family Law, Criminal Law, Real Estate Law, Personal Injury, Judicial Law
 - [ ] Case studies — six case study cards are displayed in a grid
 - [ ] Testimonials — three testimonial cards are displayed with client names, roles, and quotes
-- [ ] Appointment section — the heading reads "We Have Great Results"
+- [x] Appointment section — the heading reads "We Have Great Results"

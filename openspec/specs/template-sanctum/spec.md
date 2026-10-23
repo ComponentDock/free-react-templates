@@ -147,9 +147,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with site branding and navigation — the site name "Sanctum Church" is visible
-- [ ] Hero section with background image and CTA — the heading "Needing Jesus Christ Together" is visible
-- [ ] Bible Study countdown section — the "Bible Study" heading is visible
+- [x] Navbar with site branding and navigation — the site name "Sanctum Church" is visible
+- [x] Hero section with background image and CTA — the heading "Needing Jesus Christ Together" is visible
+- [x] Bible Study countdown section — the "Bible Study" heading is visible
 - [ ] About section with image and text — the about heading and paragraphs are visible
 - [ ] Services grid with four cards — four service cards are rendered with unique titles and descriptions
 - [ ] Newsletter subscription section — the newsletter heading and email input are present

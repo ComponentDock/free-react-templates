@@ -390,14 +390,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Montserrat (300/700/900) loaded via Google Fonts in `index.html`
 - [ ] `@theme` tokens: `--color-brand: #ee1e46`, `--color-page: #222831`, `--color-card: #0d0f13`, `--color-footer: #1a1e25`
 - [ ] Navbar absolute over hero: wordmark + uppercase links + active underline + red hover; mobile hamburger + slide-in menu with aria-expanded
-- [ ] Hero: picsum hero photo + dark overlay; h1 + subtext right column; 5-unit ticking countdown (useEffect, cleanup); "Book Ticket" red uppercase button (hover → transparent + white border) + "Learn More" white link
+- [x] Hero: picsum hero photo + dark overlay; h1 + subtext right column; 5-unit ticking countdown (useEffect, cleanup); "Book Ticket" red uppercase button (hover → transparent + white border) + "Learn More" white link
 - [ ] VS result card: `#0d0f13`, radius 10px, −90px overlap, shadow; centered 3rem score; dark left half (crest + "LA LEGA (win)" + 4 scorers); red right half with diagonal split (crest + "JUVENDU (loss)" + 4 scorers)
 - [ ] Latest News: red-bar heading + 3 hover caption cards (red diagonal + title + author row)
 - [ ] Dark section: 2 widgets with red title bars; VS blocks + info lines; ticking countdown in "Next Match"; standings table (Team/P/W/D/L/PTS, 8 rows) in "Football League"
 - [ ] Videos: red-bar heading + prev/next arrows + carousel (red 50px play button + ring + captions), keyboard accessible
-- [ ] Our Blog: 2 posts with red date pill + title + excerpt + "Read more"
-- [ ] Footer `#1a1e25`: 4 link columns + social icons (aria-labels) + Component Dock link; zero ColorLib references anywhere in the app
+- [x] Our Blog: 2 posts with red date pill + title + excerpt + "Read more"
+- [x] Footer `#1a1e25`: 4 link columns + social icons (aria-labels) + Component Dock link; zero ColorLib references anywhere in the app
 - [ ] Placeholder images use deterministic `picsum.photos/seed/striker-*` URLs
 - [ ] Lucide-react icons only (no icon fonts); no jQuery/owl — React countdown + native/state carousel
 - [ ] 100% test coverage via `scripts/verify-app.sh striker`; PR `feat/template-striker`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

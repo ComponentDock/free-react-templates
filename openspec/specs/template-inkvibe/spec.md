@@ -224,15 +224,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar SHALL show the brand name "Inkvibe"
-- [ ] Hero section — it SHALL show the heading "We Provide Forever."
-- [ ] About section — it SHALL show the heading "About Us"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar SHALL show the brand name "Inkvibe"
+- [x] Hero section — it SHALL show the heading "We Provide Forever."
+- [x] About section — it SHALL show the heading "About Us"
 - [ ] Services section — it SHALL show 6 service cards: Tattooing, Tattoo Design, Tattoo Removal, Piercing, Laser Removal, Henna Design
 - [ ] Portfolio section — it SHALL show filter buttons for All, Tattooing, Design, and Removal
 - [ ] Team section — it SHALL show 4 team members with name, role, and avatar image
 - [ ] Discount CTA — it SHALL show the heading "Get 30% Off Your Body Massage"
 - [ ] Pricing section — it SHALL show 3 tiers: Silver ($52), Diamond ($125), Golden ($95)
-- [ ] Book Now CTA — it SHALL show the heading "Book Your Session"
+- [x] Book Now CTA — it SHALL show the heading "Book Your Session"
 - [ ] Blog section — it SHALL show 4 blog post cards
-- [ ] Page composition — the document title SHALL be "Inkvibe — Tattoo Studio Landing Template"
+- [x] Page composition — the document title SHALL be "Inkvibe — Tattoo Studio Landing Template"

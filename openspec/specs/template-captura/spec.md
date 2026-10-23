@@ -123,13 +123,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with brand and navigation — the navbar displays the Captura logo, all five navigation links, and Facebook/Twitter/Instagram social icons
 - [ ] Hero section with headline and CTA — the hero section shows "Hi, This is Captura, a professional Photographer" and "I Captured Moments" with an "Explore Work" button
 - [ ] Photography skills section — the photography skills section displays the title and description text
 - [ ] Wildlife photography split section — an image and text block are displayed side by side with a CTA button
-- [ ] Photo gallery grid — 9 photos are displayed in a grid with titles like "Baby album", "Portrait album", and "Nature album"
-- [ ] Testimonials section — "Our Customers Say" heading, quote text, and "Robert Thomson" author name with avatar are visible
+- [x] Photo gallery grid — 9 photos are displayed in a grid with titles like "Baby album", "Portrait album", and "Nature album"
+- [x] Testimonials section — "Our Customers Say" heading, quote text, and "Robert Thomson" author name with avatar are visible
 - [ ] Team section with member cards — Milani Mou, Jasmine Pinky, and Piya Zosoldos are shown with their photos and social links
 - [ ] Contact information section — the address "200/D, Green lane, Kings street, New York", phone "+10 787 367 2567", and email "contact08@captura.com" are displayed
 - [ ] Instagram feed row — 6 photos are displayed in a row with Instagram overlay icons

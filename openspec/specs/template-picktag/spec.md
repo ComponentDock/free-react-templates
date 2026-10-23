@@ -244,6 +244,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Unselected options hover at #f4f4f4
 - [ ] Keyboard: Enter/Space toggles, Escape closes
 - [ ] Mobile: full-width stacked layout at 375px
-- [ ] Footer links to componentdock.com, no ColorLib references
-- [ ] No ColorLib references in any app source files
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to componentdock.com, no ColorLib references
+- [x] No ColorLib references in any app source files
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -183,7 +183,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] CTA: purple bg, centered text, outline-white button
 - [ ] Footer: 3 columns (about, nav, social), Component Dock link
 - [ ] All design tokens match extracted values
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
 - [ ] Placeholder images via picsum.photos/seed/impulse-*
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

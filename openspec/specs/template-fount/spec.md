@@ -377,7 +377,7 @@ media queries in the reference stylesheet).
       near-black `#212529`, centered, `my-5`/3rem top+bottom margins) on a
       WHITE page background (slim stylesheet sets no body bg)
 - [ ] `.content`-equivalent vertical padding is **7rem 0**
-- [ ] Centered trigger: "All sources" (lowercase s), gray `#888` text,
+- [x] Centered trigger: "All sources" (lowercase s), gray `#888` text,
       inline-block, `padding-right: 40px`, **NO background/border** (a
       plain link — unlike Docket's pill), with a down chevron (lucide
       `ChevronDown`) inside a **20px `#efefef` circle** at the right edge
@@ -388,7 +388,7 @@ media queries in the reference stylesheet).
       `0 15px 30px 0 rgba(0,0,0,.2)`, transparent border, no top/bottom
       padding) with the fade + 20px slide-down animation (margin-top
       0→20px)
-- [ ] Four items in order: **All Rources** (SOURCE TYPO — "Rources" with
+- [x] Four items in order: **All Rources** (SOURCE TYPO — "Rources" with
       an R, do NOT "fix" to "Sources"; single-line, no subtitle), Dropbox,
       Google Drive, Eventbrite — the last three with bold black titles and
       the subtitle "Lorem ipsum dolor sit amet harum." (13px `#999`)
@@ -411,6 +411,6 @@ media queries in the reference stylesheet).
 - [ ] Roboto (300/400) via Google Fonts `<link>` in `index.html`;
       Poppins/Source Serif Pro are loaded by the source but UNUSED — do not
       load them
-- [ ] Footer links `https://www.componentdock.com/`; no ColorLib reference
+- [x] Footer links `https://www.componentdock.com/`; no ColorLib reference
       anywhere in `apps/fount` (provenance lives only here + TEMPLATES.md +
       PR)

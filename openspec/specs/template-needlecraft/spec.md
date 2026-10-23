@@ -158,13 +158,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar displays "Needlecraft." as brand text (teal dot after name)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar displays "Needlecraft." as brand text (teal dot after name)
 - [ ] Hero — the hero has a full-width background image
 - [ ] Services Row — 5 service items are shown in a full-width row (equal columns)
-- [ ] About / Why Choose Us — the "Why Choose Us" section has an image on the right and heading + text on the left
+- [x] About / Why Choose Us — the "Why Choose Us" section has an image on the right and heading + text on the left
 - [ ] Service Cards — 4 service detail cards are shown in 2 columns
 - [ ] Testimonials — the testimonials section has a light gray background (#f8f9fa)
-- [ ] Blog — "News & Tips" heading is shown with "Blog" label in teal above
+- [x] Blog — "News & Tips" heading is shown with "Blog" label in teal above
 - [ ] CTA Banner — a teal (#2fc4b2) full-width banner is shown

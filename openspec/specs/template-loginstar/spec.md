@@ -178,17 +178,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Card centered vertically and horizontally on full-viewport page
 - [ ] Card width ~390px with 10px border-radius on desktop
-- [ ] "LOGIN" title: uppercase, Ubuntu Bold, 30px, color #403866, centered
+- [x] "LOGIN" title: uppercase, Ubuntu Bold, 30px, color #403866, centered
 - [ ] Username input: 62px height, #e6e6e6 bg, 3px radius, placeholder #8f8fa1
 - [ ] Password input: same styling as username
 - [ ] Focus ring: #827ffe border with scale animation on input focus
 - [ ] Remember me checkbox: custom styled, purple border + checkmark
-- [ ] "Forgot?" link: Ubuntu Regular 16px, color #827ffe, right-aligned
+- [x] "Forgot?" link: Ubuntu Regular 16px, color #827ffe, right-aligned
 - [ ] Login button: full-width, 62px height, #827ffe bg, white uppercase text, 3px radius
 - [ ] Button hover: transitions to #403866 over 0.4s
 - [ ] Form validation: red error messages for empty fields
 - [ ] Responsive: card fills width on mobile with padding
-- [ ] Footer links to componentdock.com
-- [ ] No ColorLib references in app code (provenance only in spec)
+- [x] Footer links to componentdock.com
+- [x] No ColorLib references in app code (provenance only in spec)
 - [ ] Ubuntu font loaded via Google Fonts in index.html
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

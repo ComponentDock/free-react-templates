@@ -378,8 +378,8 @@ Dock (`https://www.componentdock.com/`) instead.
       floating "Get Pick Up Here" yellow card.
 - [ ] Quote form has all six fields, validation with per-field errors, and a
       white/violet submit button.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Boxe), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

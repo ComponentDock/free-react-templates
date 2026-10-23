@@ -172,16 +172,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and brand — the navbar displays the Ember logo, all six navigation links, and the "Book a Table" button
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and brand — the navbar displays the Ember logo, all six navigation links, and the "Book a Table" button
 - [ ] Hero section with headline and CTAs — the hero section displays the headline, tagline, and both CTA buttons
-- [ ] Popular Dishes section — four dish cards are displayed with images, names, descriptions, and "Read More" links
-- [ ] History section — the heading, body text, background image, and "Read More" button are displayed
+- [x] Popular Dishes section — four dish cards are displayed with images, names, descriptions, and "Read More" links
+- [x] History section — the heading, body text, background image, and "Read More" button are displayed
 - [ ] Expect The Best video section — the heading and a play button link are displayed
 - [ ] Popular Menu with tabbed interface — the Special tab is active and six Special menu items are displayed
 - [ ] Team section with chef cards — four chef cards with images, names, and roles are displayed
 - [ ] Reservation form — the email input, guests select, time select, notes textarea, and submit button are displayed
 - [ ] Testimonials section — three testimonial cards with star ratings, quotes, and author information are displayed
-- [ ] Blog section — four blog post cards with images, dates, categories, titles, and "Read More" links are displayed
+- [x] Blog section — four blog post cards with images, dates, categories, titles, and "Read More" links are displayed
 - [ ] Responsive design — sections stack vertically and the mobile navigation is available
 - [ ] Dark mode support — all sections adapt their colors for dark mode

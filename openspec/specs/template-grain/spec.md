@@ -136,8 +136,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation — the navbar displays the "Grain" brand name
-- [ ] Hero Section — the project title "White Sofas" is displayed
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation — the navbar displays the "Grain" brand name
+- [x] Hero Section — the project title "White Sofas" is displayed
 - [ ] Project Gallery — 6 project cards are displayed
-- [ ] About Section — the heading "About Grain" is displayed
+- [x] About Section — the heading "About Grain" is displayed

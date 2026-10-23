@@ -528,13 +528,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/cargomate` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/cargomate` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- cargomate` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#e72727, #262533, #8f8f8f, #f8f8f8, #222, #e4e4e4, #e4e7e9, #ced4da, #444444, #cccccc, rgba(38,37,51,0.85), rgba(221,221,221,0.38), rgba(255,255,255,0.3), Roboto Condensed) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `cargomate-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
-- [ ] Quote tabs ("Get an estimation" + "Track Shipment") implemented with client-side state; both panes share one form dataset
+- [x] No ColorLib assets copied (picsum seeds `cargomate-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
+- [x] Quote tabs ("Get an estimation" + "Track Shipment") implemented with client-side state; both panes share one form dataset
 - [ ] Counters count up on scroll (fake timers in tests); testimonial slider is a state-based carousel
 - [ ] Sharp-corner design: border-radius 0 on buttons, inputs, cards, tabs; `.main_btn` inset-border + bottom-right corner-cut detail reproduced
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

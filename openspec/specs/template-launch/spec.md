@@ -224,13 +224,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Launch." and links to Home, Features, Pricing, Testimonials, About, and Contact
-- [ ] Pricing section — it SHALL contain a heading "Simple, Transparent Pricing"
-- [ ] Features section — it SHALL contain a heading "Advantage of using our products"
-- [ ] Testimonials section — it SHALL contain a heading "Our Customers Feedback"
-- [ ] About and news section — it SHALL contain a heading "About Us"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Launch." and links to Home, Features, Pricing, Testimonials, About, and Contact
+- [x] Pricing section — it SHALL contain a heading "Simple, Transparent Pricing"
+- [x] Features section — it SHALL contain a heading "Advantage of using our products"
+- [x] Testimonials section — it SHALL contain a heading "Our Customers Feedback"
+- [x] About and news section — it SHALL contain a heading "About Us"
 - [ ] Contact section — the form SHALL submit without navigating
 - [ ] Auth modal — it SHALL show a "Welcome Back" form with email and password fields, Continue with Google / GitHub buttons, and a submit button that does not navigate
 - [ ] Footer — it SHALL show link columns (Projects, Services, Contact) and a copyright line

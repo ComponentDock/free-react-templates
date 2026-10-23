@@ -384,7 +384,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/swole` created from a landing/app pattern, package renamed to
+- [x] `apps/swole` created from a landing/app pattern, package renamed to
       `@free-react-templates/swole`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run
@@ -424,4 +424,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] After merge: TEMPLATES.md Fitfloss (lines 396, 1841) `[~]` → `[x]` +
       Surge URL (`swole.free.componentdock.com`) + homepage + `npm
     run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

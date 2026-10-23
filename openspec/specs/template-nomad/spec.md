@@ -359,7 +359,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/nomad`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/nomad`
       (`scripts/verify-app.sh nomad` in FAST_MODE; full `npm run gate` in CI).
 - [ ] Visual fidelity: transparent navbar (logo + 5-link menu with 4
       dropdowns, white→fixed-white scroll state), 2-slide split hero (author
@@ -372,7 +372,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens in `@theme`: coral `#ff895d`, light blue `#78d5ef` (focus
       rings), body text `#666666`, headings `#000000`, muted `#b3b3b3`, footer
       `#141313`, search bg `#fafafa`, watermarks `#e6e6e6` / `#ebebeb`; Poppins + Abril Fatface via Google Fonts.
-- [ ] Buttons: coral `#ff895d` "Continue Reading" (rounded ~30px in hero,
+- [x] Buttons: coral `#ff895d` "Continue Reading" (rounded ~30px in hero,
       default radius on cards), white "Subscribe" on the coral newsletter
       widget; bordered uppercase tags in the Tag Cloud.
 - [ ] Placeholder images use `picsum.photos/seed/nomad-<n>/<w>/<h>` (hero
@@ -382,5 +382,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/explore/), design tokens, and what
       differs (name, placeholders, paraphrased card titles, inner pages not
       recreated).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

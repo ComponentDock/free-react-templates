@@ -553,12 +553,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/podium`
-- [ ] `npm run lint` passes for `apps/podium`
+- [x] `npm run typecheck` passes for `apps/podium`
+- [x] `npm run lint` passes for `apps/podium`
 - [ ] `scripts/verify-app.sh podium` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark, 5 links, "Get Tickets" gradient button, dark-mode
+- [x] Navbar: wordmark, 5 links, "Get Tickets" gradient button, dark-mode
       toggle, mobile menu
 - [ ] Hero: aurora bg (gradient + blur orbs + grid overlay), date badge,
       H1 with gradient "Technology", countdown (Days/Hours/Minutes/Seconds),
@@ -571,7 +571,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Tickets: 4 tiers (Early Bird sold out + strikethrough $499, Regular
       highlighted "Most Popular", VIP, Team); trust strip (Secure checkout /
       30-day refund policy / Instant confirmation)
-- [ ] Sponsors: 4 tiers with logo cards; "Become a Sponsor" callout with 2
+- [x] Sponsors: 4 tiers with logo cards; "Become a Sponsor" callout with 2
       CTAs
 - [ ] Venue: venue card (Moscone Center, 747 Howard Street, Directions),
       6 features, 3 hotels with distances, promo code note, "Get
@@ -585,5 +585,5 @@ Dock (`https://www.componentdock.com/`) instead.
       sponsor logos as styled text wordmarks
 - [ ] No copied ColorLib assets; brand gradient #8b5cf6 → #f43f5e in
       `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

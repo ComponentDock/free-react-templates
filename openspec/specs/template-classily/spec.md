@@ -176,7 +176,7 @@ All components in the template SHALL have 100% test coverage.
 
 ## Verification checklist
 
-- [ ] Navbar: sticky, logo with branding, 5 nav links, Log In/Register, "Post an Ad" CTA
+- [x] Navbar: sticky, logo with branding, 5 nav links, Log In/Register, "Post an Ad" CTA
 - [ ] Hero: full-width background image, centered headline + subtext, search bar with 3 fields + button
 - [ ] Category Stats: 6 items in a row, teal icons, names, count badges with teal border
 - [ ] Featured Ads: 4-column card grid with images, white cards on gray background
@@ -185,5 +185,5 @@ All components in the template SHALL have 100% test coverage.
 - [ ] Buttons: 8px radius, teal bg, white text
 - [ ] Form inputs: white bg, #ddd border, 8px radius
 - [ ] Icons: line/outline style from lucide-react
-- [ ] No ColorLib references in app code — provenance only in spec + TEMPLATES.md
+- [x] No ColorLib references in app code — provenance only in spec + TEMPLATES.md
 - [ ] 100% test coverage on all new components

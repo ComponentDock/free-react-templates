@@ -148,9 +148,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Image cards: grayscale default, color on hover, overlay transition
 - [ ] Buttons: white outline, uppercase, correct sizing
 - [ ] Footer: dark background (#333333), copyright text
-- [ ] Footer: links to Component Dock (not ColorLib)
+- [x] Footer: links to Component Dock (not ColorLib)
 - [ ] Mobile: hamburger menu, stacked grid
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -76,8 +76,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Heading display — a heading with text "Registration Form" is displayed
-- [ ] Form fields — inputs for "Your Name", "Your Email", "Your Password", and "Confirm Password" exist
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Heading display — a heading with text "Registration Form" is displayed
+- [x] Form fields — inputs for "Your Name", "Your Email", "Your Password", and "Confirm Password" exist
 - [ ] Form submission — the form does not submit or navigate
 - [ ] Responsive layout — inputs are displayed in a single column

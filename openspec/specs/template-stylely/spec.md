@@ -286,17 +286,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Stylely" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show the kicker "Feel Like Home"
-- [ ] About section — it SHALL show the heading "Connect with your dream style"
-- [ ] Service expectations — it SHALL show the heading "Service Expectation"
-- [ ] Offers — it SHALL show the heading "What We Offer"
-- [ ] Pricing plan — it SHALL show the heading "Pricing Plan"
-- [ ] Testimonials — it SHALL show the heading "What Clients Say"
-- [ ] Artists team — it SHALL show the heading "Meet Our Artist"
-- [ ] Appointment form — it SHALL show the heading "Make an Appointment"
-- [ ] Blog — it SHALL show the heading "Latest Style News"
-- [ ] Footer — it SHALL show the site name "Stylely" and contact details (e.g. phone number)
+- [x] Navigation bar — the navbar SHALL show the site name "Stylely" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show the kicker "Feel Like Home"
+- [x] About section — it SHALL show the heading "Connect with your dream style"
+- [x] Service expectations — it SHALL show the heading "Service Expectation"
+- [x] Offers — it SHALL show the heading "What We Offer"
+- [x] Pricing plan — it SHALL show the heading "Pricing Plan"
+- [x] Testimonials — it SHALL show the heading "What Clients Say"
+- [x] Artists team — it SHALL show the heading "Meet Our Artist"
+- [x] Appointment form — it SHALL show the heading "Make an Appointment"
+- [x] Blog — it SHALL show the heading "Latest Style News"
+- [x] Footer — it SHALL show the site name "Stylely" and contact details (e.g. phone number)
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

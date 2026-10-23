@@ -364,18 +364,18 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/confab` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/confab` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- confab` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#FFBD00, #FF60CE, #ec583a, #0B0016, #0a0a0a, #0e0e0e, #F2F4F8, #9B9EAC, #131933, Barlow/Mitr) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `confab-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header + navigation — the header SHALL show the brand "Confab" on the left
-- [ ] Hero slider — the slide SHALL show the headline "SanDiego Design Week" — the
+- [x] No ColorLib assets copied (picsum seeds `confab-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header + navigation — the header SHALL show the brand "Confab" on the left
+- [x] Hero slider — the slide SHALL show the headline "SanDiego Design Week" — the
 - [ ] Event stats band — it SHALL show three centered columns: "3" with caption "Day
-- [ ] Speakers section — the section SHALL show the heading "Speakers" (Mitr, white,
-- [ ] About section — the section SHALL show the heading "About Design Week"
-- [ ] Schedule section — the section SHALL show the heading "Schedule" (white uppercase)
+- [x] Speakers section — the section SHALL show the heading "Speakers" (Mitr, white,
+- [x] About section — the section SHALL show the heading "About Design Week"
+- [x] Schedule section — the section SHALL show the heading "Schedule" (white uppercase)
 - [ ] Blog section — it SHALL render three cards in a row (stacking on mobile), each
 - [ ] Sponsors band — it SHALL show a dark (#0e0e0e) card (padding ~45px 50px) containing
 - [ ] Map section — the section SHALL show a full-width map embed with an

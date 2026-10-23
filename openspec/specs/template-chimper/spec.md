@@ -253,16 +253,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top bar — it SHALL show "Phone: +1 292 3293 4238" and "Email: info@yourdomain.com"
-- [ ] Navigation bar — the navbar SHALL show the site name "Chimper" and links to Home, Work, Services, About, Blog, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "We Are Expert in" that cycles through "Web Apps", "WordPress", and "Mobile Apps"
-- [ ] Welcome / services section — it SHALL contain a heading "Welcome To Chimper An Awward Winning Web Agency"
-- [ ] Values section — it SHALL show items numbered 01, 02, and 03 titled "Our Values", "Our Mission", and "Our Philosophy"
-- [ ] Featured projects section — it SHALL contain a heading "Featured Projects"
-- [ ] Testimonials section — it SHALL show quotes attributed to "John Smith", "Christine Aguilar", "Robert Spears", and "Bruce Rogers"
-- [ ] Blog section — it SHALL show three cards titled "Create Beautiful Website In Less Than An Hour"
+- [x] Navigation bar — the navbar SHALL show the site name "Chimper" and links to Home, Work, Services, About, Blog, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "We Are Expert in" that cycles through "Web Apps", "WordPress", and "Mobile Apps"
+- [x] Welcome / services section — it SHALL contain a heading "Welcome To Chimper An Awward Winning Web Agency"
+- [x] Values section — it SHALL show items numbered 01, 02, and 03 titled "Our Values", "Our Mission", and "Our Philosophy"
+- [x] Featured projects section — it SHALL contain a heading "Featured Projects"
+- [x] Testimonials section — it SHALL show quotes attributed to "John Smith", "Christine Aguilar", "Robert Spears", and "Bruce Rogers"
+- [x] Blog section — it SHALL show three cards titled "Create Beautiful Website In Less Than An Hour"
 - [ ] Call-to-action band — it SHALL show "Hire Us & Let's Get Started"
-- [ ] Footer — it SHALL show an "About Us" blurb and a "Features" link column (About Us, Services, Testimonials, Contact Us)
+- [x] Footer — it SHALL show an "About Us" blurb and a "Features" link column (About Us, Services, Testimonials, Contact Us)
 - [ ] Page composition — the page SHALL compose the top bar and navbar in the banner landmark, all sections in the main landmark, and the footer in the contentinfo landmark

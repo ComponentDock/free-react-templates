@@ -387,7 +387,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/keyhold` created from a landing/app pattern, package renamed to
+- [x] `apps/keyhold` created from a landing/app pattern, package renamed to
       `@free-react-templates/keyhold`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run
@@ -425,4 +425,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] After merge: TEMPLATES.md Findstate (lines 395, 1014, 2589) `[~]` →
       `[x]` + Surge URL (`keyhold.free.componentdock.com`) +
       homepage + `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

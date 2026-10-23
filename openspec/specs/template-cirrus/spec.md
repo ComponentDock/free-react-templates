@@ -464,7 +464,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/cirrus` scaffolded from the simplest existing app; package
+- [x] `apps/cirrus` scaffolded from the simplest existing app; package
       renamed `@free-react-templates/cirrus`; workspace registered in
       `package-lock.json` (repo is bun-managed — `bun install` at root,
       never `npm add`)
@@ -501,7 +501,7 @@ Dock (`https://www.componentdock.com/`) instead.
       URL (`https://preview.colorlib.com/theme/cloudtemplate/`), design
       tokens, renames, placeholder images, fixed source typos, and the dup
       row (line 3053) covered by the same recreation
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

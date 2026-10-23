@@ -113,9 +113,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar Layout — a navigation bar is visible at the top
-- [ ] Brand Logo — the brand text "Brand" appears on the far left
-- [ ] Navigation Links — navigation links "Home", "About", "Contact" appear
+- [x] Brand Logo — the brand text "Brand" appears on the far left
+- [x] Navigation Links — navigation links "Home", "About", "Contact" appear
 - [ ] Search Input — a search input appears on the far right of the navbar
 - [ ] Responsive Behavior — the navigation links are hidden

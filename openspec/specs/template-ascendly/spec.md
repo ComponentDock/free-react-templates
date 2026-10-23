@@ -282,14 +282,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run verify:app ascendly` passes (typecheck + lint + 100% coverage + build)
 - [ ] TEMPLATES.md rows 341, 893, 2495 marked `[x]` with surge URL at ship
 - [ ] `npm run readme:status` regenerated after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Ascendly" and a "Home" link pointing to the page root
-- [ ] Hero section — it SHALL show a level-1 headline (e.g. "Grow Up Your Business.")
-- [ ] Feature cards — it SHALL render three cards titled "Financial Analysis", "Marketing Plans", and "Optimize Solutions"
-- [ ] Solutions carousel — it SHALL show the heading "Our Solutions" on the cream left-half band
-- [ ] Testimonial — it SHALL show the heading "Testimonial"
-- [ ] Blog section — it SHALL show the heading "Blog" and a "View All" link
-- [ ] CTA band — it SHALL show the headline "Let's work together to make your business growth dramatically."
-- [ ] Footer — it SHALL show the site name "Ascendly" (uppercase logo)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Ascendly" and a "Home" link pointing to the page root
+- [x] Hero section — it SHALL show a level-1 headline (e.g. "Grow Up Your Business.")
+- [x] Feature cards — it SHALL render three cards titled "Financial Analysis", "Marketing Plans", and "Optimize Solutions"
+- [x] Solutions carousel — it SHALL show the heading "Our Solutions" on the cream left-half band
+- [x] Testimonial — it SHALL show the heading "Testimonial"
+- [x] Blog section — it SHALL show the heading "Blog" and a "View All" link
+- [x] CTA band — it SHALL show the headline "Let's work together to make your business growth dramatically."
+- [x] Footer — it SHALL show the site name "Ascendly" (uppercase logo)
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -393,7 +393,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Top bar: grey bg, site URL left, phone + social icons right, responsive
-- [ ] Nav: "LuxStay" logo, menu items, Rooms dropdown, hamburger on mobile
+- [x] Nav: "LuxStay" logo, menu items, Rooms dropdown, hamburger on mobile
 - [ ] Hero: fullscreen slider, 4+ slides, bg images, overlay, h1+h2, two CTA buttons (blue + orange)
 - [ ] Reservation bar: dark purple bg, overlapping hero, date pickers, adults/children selects, search button
 - [ ] Services: white bg, 5-star heading, 4 circular-icon service cards
@@ -402,13 +402,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog: white bg, 5-star heading, video thumbnail with play button + 3 blog post entries
 - [ ] Testimonials: light grey bg, 3-star heading, 3 cards with circular user photos
 - [ ] Newsletter: background image with overlay, email input + subscribe button
-- [ ] Footer: 4 columns, brand + links + blog posts + contact, Component Dock link, no ColorLib references
+- [x] Footer: 4 columns, brand + links + blog posts + contact, Component Dock link, no ColorLib references
 - [ ] Back-to-top button functional
 - [ ] All images use placeholder URLs (picsum.photos/seed/luxstay-N/W/H)
 - [ ] Fonts loaded: Poppins + Playfair Display via Google Fonts
 - [ ] Brand blue #4586FF used consistently for interactive elements
 - [ ] Accent orange #F96D00 used for dining section and secondary CTAs
-- [ ] No ColorLib references in app code (only in spec and TEMPLATES.md)
-- [ ] Footer links https://www.componentdock.com/
+- [x] No ColorLib references in app code (only in spec and TEMPLATES.md)
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tailwind theme tokens defined in index.css for brand colors
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

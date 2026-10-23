@@ -89,15 +89,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] App folder created at `apps/zenith` with valid `package.json` (`@free-react-templates/zenith`)
+- [x] App folder created at `apps/zenith` with valid `package.json` (`@free-react-templates/zenith`)
 - [ ] `vite.config.ts` includes `injectUiSource()` helper
-- [ ] `public/CNAME` contains `zenith.free.componentdock.com`
-- [ ] Footer links `https://www.componentdock.com/` ("Component Dock")
+- [x] `public/CNAME` contains `zenith.free.componentdock.com`
+- [x] Footer links `https://www.componentdock.com/` ("Component Dock")
 - [ ] All sections rendered matching the spec and 1:1 design tokens
 - [ ] Vitest tests passing with 100% coverage (`npm run test:coverage`)
 - [ ] Per-app verification passes (`scripts/verify-app.sh zenith`)
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] Hero and Overview Section — they should see a prominent hero banner titled "Zenith Button Showcase" with a subtitle describing modern UI component collections
 - [ ] Solid and Variant Buttons Grid — they should see categorized groups of buttons including Primary, Secondary, Success, Danger, Warning, and Info variants
 - [ ] Button Shapes and Sizes — they should see small, medium, and large buttons, as well as pill, square, and icon-appended variants

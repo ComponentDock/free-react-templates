@@ -161,15 +161,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-page background image — the page body SHALL have a background image covering the viewport (min-height: 100vh)
 - [ ] Glassmorphism card renders centered — a card with backdrop-filter blur SHALL be visible centered on the page
-- [ ] Login heading visible — a heading "Login" SHALL be visible inside the card
-- [ ] Email/phone input renders — a text input with placeholder "Email address or phone number" SHALL be visible
-- [ ] Password input renders — a password input with placeholder "Password" SHALL be visible
-- [ ] Login button renders and is clickable — a button labeled "Login" SHALL be visible
-- [ ] Remember me checkbox renders — a checkbox labeled "Remember me" SHALL be visible
-- [ ] Forgot Password link renders — a link labeled "Forgot Password?" SHALL be visible
-- [ ] Create new account link renders — a link labeled "Create new account" SHALL be visible
+- [x] Login heading visible — a heading "Login" SHALL be visible inside the card
+- [x] Email/phone input renders — a text input with placeholder "Email address or phone number" SHALL be visible
+- [x] Password input renders — a password input with placeholder "Password" SHALL be visible
+- [x] Login button renders and is clickable — a button labeled "Login" SHALL be visible
+- [x] Remember me checkbox renders — a checkbox labeled "Remember me" SHALL be visible
+- [x] Forgot Password link renders — a link labeled "Forgot Password?" SHALL be visible
+- [x] Create new account link renders — a link labeled "Create new account" SHALL be visible
 - [ ] Responsive layout on mobile — the card SHALL fit within the viewport width
 - [ ] Accessibility - semantic elements — the form SHALL use semantic HTML form elements

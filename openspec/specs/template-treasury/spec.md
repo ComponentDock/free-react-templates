@@ -210,9 +210,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with logo and navigation — the navbar displays the Treasury logo, all navigation links, and social icons
-- [ ] Hero section with rotating headings — the hero displays "Banking Solutions" as the initial heading
+- [x] Hero section with rotating headings — the hero displays "Banking Solutions" as the initial heading
 - [ ] Features section with three cards — three feature cards are displayed with titles and descriptions
-- [ ] Newsletter subscription form — a success message "Thanks for subscribing!" is displayed
+- [x] Newsletter subscription form — a success message "Thanks for subscribing!" is displayed
 - [ ] About section — the about section displays the heading, subheading, and CTA button
 - [ ] Team section with member cards — four team member cards are displayed with names and roles
 - [ ] Gallery with filter functionality — all gallery images are displayed

@@ -207,6 +207,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: 4 columns (about, links, newsletter, social), dark bg
 - [ ] All design tokens match extracted values (gold #ffa800 brand, dark backgrounds)
 - [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] Placeholder images via picsum.photos/seed/vestly-*
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

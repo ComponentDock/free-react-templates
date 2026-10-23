@@ -352,15 +352,15 @@ Dock (`https://www.componentdock.com/`) instead.
       `#f9f9ff`/`#f0e9ff`, footer bg `#301A22`; Roboto body + Lora headings
       via Google Fonts `<link>`; pill buttons (radius 35px), rounded cards
       (10px), vertical hero dots.
-- [ ] No ColorLib references in `apps/meliora` (provenance lives in this
+- [x] No ColorLib references in `apps/meliora` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] All images picsum-seeded (`picsum.photos/seed/meliora-N/w/h`); hero +
       counter + emergency background seeds screened for a people/charity
       subject (see tasks.md verified picsum IDs).
 - [ ] Implementer gate: `scripts/verify-app.sh meliora` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (impl, 2026-08-16)
 

@@ -123,8 +123,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and CTA — the brand "Nestwell." is displayed in the navbar
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and CTA — the brand "Nestwell." is displayed in the navbar
 - [ ] Hero section with property showcase — a property headline is displayed in an h1 heading
 - [ ] Property search form — a Location text input with associated label is present
 - [ ] Featured Properties section — 5 property cards are rendered

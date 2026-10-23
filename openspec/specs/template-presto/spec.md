@@ -577,7 +577,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] FAQ: dark band, white title + translucent blurb, four items in two columns
       with white `Q.` glyph, white 20px questions and rgba(255,255,255,.6)
       answers
-- [ ] Split band + help CTA: image/caption 6/6 with outline-pill "Learn More";
+- [x] Split band + help CTA: image/caption 6/6 with outline-pill "Learn More";
       `#F8FCFF` band with "Need any help?" and a filled + outline CTA pair
 - [ ] Footer: purple image band, three `#C2C5DB` link columns with coral hover
       shift, logo + newsletter input (`43px`, `#695CAE`, `14px` radius) + coral
@@ -589,10 +589,10 @@ Dock (`https://www.componentdock.com/`) instead.
       form labels, `aria-label`s on icon-only controls (search, socials,
       back-to-top), focus-visible rings, keyboard-operable dropdown, mobile menu,
       slider and newsletter validation errors
-- [ ] `public/CNAME` = `presto.free.componentdock.com`; `"homepage"` matches;
+- [x] `public/CNAME` = `presto.free.componentdock.com`; `"homepage"` matches;
       `npm install` run at the repo root so the lockfile registers
       `@free-react-templates/presto`
-- [ ] Zero `colorlib` / "Fastes" / `fastes` references anywhere in `apps/presto`
+- [x] Zero `colorlib` / "Fastes" / `fastes` references anywhere in `apps/presto`
       (comments included — record the palette as design notes, not provenance)
 - [ ] No copied assets: no `img/**` photographs or `h1_hero.png` /
       `section_bg0*.png` / `price1.png` / `right-icon.png` / `brand*.png` /
@@ -608,4 +608,4 @@ Dock (`https://www.componentdock.com/`) instead.
       what differs (new name, corrected `.org` TLD, picsum placeholders, own
       logo/illustrations/waves/icons/copy, lucide icons, added keyboard/aria
       states and the Component Dock attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

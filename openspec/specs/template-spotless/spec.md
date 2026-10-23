@@ -379,7 +379,7 @@ Dock (`https://www.componentdock.com/`) instead.
       circular work-step icons.
 - [ ] No ColorLib references in `apps/spotless` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] All images picsum-seeded (`picsum.photos/seed/spotless-N/w/h`); no
       Rockville font file or ColorLib asset copied.
 - [ ] Implementer gate: `scripts/verify-app.sh spotless` (typecheck + lint +

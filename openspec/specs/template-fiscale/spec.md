@@ -344,15 +344,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/fiscale` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/fiscale` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- fiscale` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#24b800, #4877fb, #000, rgba(0,0,0,0.5), #888, #777, #efefef, #f8f9fa, #ccc, #e6e6e6, #fff) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `fiscale-<n>`, Google Fonts Poppins + Open Sans links, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `fiscale-<n>`, Google Fonts Poppins + Open Sans links, lucide icons + inline SVG brand icons only)
 - [ ] Buttons are pills (radius 30px, padding 12px 30px, uppercase 12px 700) with the three translucent variants (custom-primary / custom-secondary / custom-white-2) + hover fill states
 - [ ] Step cards overlap the following section (negative bottom margin) and reveal 2px blue top border on hover
 - [ ] Features rows alternate image position; green 40px number circles (1/2/3)
 - [ ] Testimonials slider implemented with client-side state (no tiny-slider dep); round white arrows hover green
 - [ ] Mobile offcanvas menu opens/closes with focus handling
-- [ ] Footer links Component Dock; no ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links Component Dock; no ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

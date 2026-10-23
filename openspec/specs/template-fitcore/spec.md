@@ -154,14 +154,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header navigation — the "FitCore" brand link, nav links (Home, About, Services, Schedule, Gallery, Contact), and "Become a Member" button are visible
-- [ ] Hero section — the heading "Build Perfect Body Shape" is visible
-- [ ] About section — the "About Our Gym" section label and heading are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header navigation — the "FitCore" brand link, nav links (Home, About, Services, Schedule, Gallery, Contact), and "Become a Member" button are visible
+- [x] Hero section — the heading "Build Perfect Body Shape" is visible
+- [x] About section — the "About Our Gym" section label and heading are visible
 - [ ] Services section — three service cards are visible with icons, titles, and descriptions
-- [ ] Testimonials section — the "Client Feedback" heading is visible
+- [x] Testimonials section — the "Client Feedback" heading is visible
 - [ ] Gallery section — five gallery images are displayed in a 2-column layout
 - [ ] Team section — three trainer cards are visible
-- [ ] Membership banner — the "Membership Offer Available Now" heading is visible
+- [x] Membership banner — the "Membership Offer Available Now" heading is visible
 - [ ] Schedule section — seven day tabs are visible (Saturday through Friday)
 - [ ] Contact section — the contact form has name, email, and message fields

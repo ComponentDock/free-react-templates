@@ -319,9 +319,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-headlock/spec.md` exists on the PR branch and
       validates (`npx openspec validate template-headlock --type spec`)
-- [ ] App folder `apps/headlock`, package `@free-react-templates/headlock`,
+- [x] App folder `apps/headlock`, package `@free-react-templates/headlock`,
       `npm install` at root so the lockfile registers the workspace
-- [ ] `homepage` = `https://headlock.free.componentdock.com`, `public/CNAME`
+- [x] `homepage` = `https://headlock.free.componentdock.com`, `public/CNAME`
       = `headlock.free.componentdock.com`
 - [ ] `index.html` loads Lato 400/700 via Google Fonts `<link>`; NO copied
       woff2 files, NO ColorLib strings anywhere in the app
@@ -343,7 +343,7 @@ Dock (`https://www.componentdock.com/`) instead.
       white gutters, `tr:hover td` → `#ebebeb` + pointer cursor, -30px
       gutter trick
 - [ ] 22 body rows per variant (11-row schedule ×2), five header labels
-- [ ] Footer links `https://www.componentdock.com/` ("Component Dock")
+- [x] Footer links `https://www.componentdock.com/` ("Component Dock")
 - [ ] Tests (TDD, 100% coverage on changed code) mirror the Gherkin
       scenarios; `scripts/verify-app.sh headlock` passes
 - [ ] PR description records: source slug `fixed-header-table`, preview
@@ -352,4 +352,4 @@ Dock (`https://www.componentdock.com/`) instead.
       reference), design tokens used, and what differs (new name Headlock;
       Lato via Google Fonts instead of self-hosted woff2; picsum placeholders
       not needed — zero images; Component Dock footer added)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

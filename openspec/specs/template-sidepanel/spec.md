@@ -109,13 +109,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Nav links (Home, About, Pages, Portfolio, Contact) render vertically
 - [ ] Home link highlighted in accent orange
 - [ ] Separator lines between nav items
-- [ ] Sidebar footer has ComponentDock link (no ColorLib reference)
+- [x] Sidebar footer has ComponentDock link (no ColorLib reference)
 - [ ] Main content area has white background
 - [ ] Top navbar has orange hamburger button + horizontal nav links
 - [ ] Page heading renders large and bold
 - [ ] Body text renders in medium gray
 - [ ] Responsive: sidebar collapses on mobile, hamburger toggles it
-- [ ] No ColorLib references in app code (spec + TEMPLATES.md + PR only)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code (spec + TEMPLATES.md + PR only)
+- [x] Footer links to https://www.componentdock.com/
 - [ ] `npm run spec:validate` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

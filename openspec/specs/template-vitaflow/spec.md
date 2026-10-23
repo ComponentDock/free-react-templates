@@ -203,16 +203,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] TopBar renders contact info and social links — the phone number "+00 1234 567" and email "emailsample@email.com" are visible
-- [ ] Navbar renders brand and navigation — the logo "Vitaflow" and all 8 nav links are visible
-- [ ] Hero displays hero content with CTA — the heading "Get in shape faster" and buttons "Learn more" and "Contact us" are visible
-- [ ] Services shows 3 service cards — 3 service cards with headings and "Read more" links are visible
-- [ ] AboutSplit shows founder info — the founder name "Cythia Hunter" and title "Personal Dietitian" are visible
+- [x] TopBar renders contact info and social links — the phone number "+00 1234 567" and email "emailsample@email.com" are visible
+- [x] Navbar renders brand and navigation — the logo "Vitaflow" and all 8 nav links are visible
+- [x] Hero displays hero content with CTA — the heading "Get in shape faster" and buttons "Learn more" and "Contact us" are visible
+- [x] Services shows 3 service cards — 3 service cards with headings and "Read more" links are visible
+- [x] AboutSplit shows founder info — the founder name "Cythia Hunter" and title "Personal Dietitian" are visible
 - [ ] ConsultationBar has form and CTAs — form inputs for First Name, Last Name, Date, Time, and a Services select are present
 - [ ] Testimonials display client quotes — 4 testimonial cards with names and positions are visible
 - [ ] HowItWorks shows 4 steps — 4 step cards with headings are visible
 - [ ] SuccessStories shows client stories — 3 story cards with names and roles are visible
-- [ ] CTAIntro displays CTA banner — the heading and "Free Consultation" button are visible
-- [ ] Pricing shows 4 plans — 4 pricing cards with plan names, prices, and "Get Started" buttons are visible
+- [x] CTAIntro displays CTA banner — the heading and "Free Consultation" button are visible
+- [x] Pricing shows 4 plans — 4 pricing cards with plan names, prices, and "Get Started" buttons are visible
 - [ ] Blog shows 3 posts — 3 blog cards with dates and headings are visible
 - [ ] App renders all sections in order — all 13 sections (TopBar, Navbar, Hero, Services, AboutSplit, ConsultationBar, Testimonials, HowItWorks, SuccessStories, CTAIntro, Pricing, Blog, Footer) are present

@@ -219,13 +219,13 @@ change the footer's own layout or copy beyond the credit line.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] Navbar displays logo and navigation — a white navbar is visible
 - [ ] Hero displays full-viewport cover — a full-viewport hero shows a background image
 - [ ] Services intro shows 3 feature cards — 3 service feature cards are displayed
 - [ ] Equipment strip shows 4 items — 4 equipment items are shown with icons
 - [ ] Appointment form on cream background — the appointment form has a cream (#ece8d9) background
-- [ ] Services grid displays 6 items — "Our Services" heading is displayed with bold "Services"
-- [ ] Success stories section — "Success Stories" heading is shown with bold "Stories"
-- [ ] Testimonials carousel — "People Says" heading is shown with bold "Says"
+- [x] Services grid displays 6 items — "Our Services" heading is displayed with bold "Services"
+- [x] Success stories section — "Success Stories" heading is shown with bold "Stories"
+- [x] Testimonials carousel — "People Says" heading is shown with bold "Says"
 - [ ] Responsive behavior — the navbar collapses to a hamburger menu

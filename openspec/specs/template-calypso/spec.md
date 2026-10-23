@@ -196,10 +196,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — Logo, Navigation, and CTA — the Navbar displays the "Calypso" logo text
-- [ ] Hero — Person Image, Name, and Title — the heading reads "My name is Alex. Digital Product Designer"
-- [ ] About Info Bar — Contact Details — it displays "Design For" with value "Web & Mobile"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — Logo, Navigation, and CTA — the Navbar displays the "Calypso" logo text
+- [x] Hero — Person Image, Name, and Title — the heading reads "My name is Alex. Digital Product Designer"
+- [x] About Info Bar — Contact Details — it displays "Design For" with value "Web & Mobile"
 - [ ] Services — 4 Cards in 2×2 Grid — it displays cards for Strategy, UX Design, Development, and Marketing
 - [ ] Gallery — 4 Images with Hover Overlay — it displays 4 images with alt text: Project Alpha, Project Beta, Project Gamma, Project Delta
 - [ ] About Me — Text and Skill Bars — it displays skill bars for UI Design (60%), UX Research (89%), and Illustration (95%)

@@ -234,7 +234,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with top bar and navigation links — the top bar SHALL display the tagline "We believe we help people for happier lives"
 - [ ] Hero banner with brand styling — the hero banner SHALL have a brand red background
 - [ ] Call-to-top section with CTA — the call-to-top section SHALL have a light gray (#f9f9ff) background

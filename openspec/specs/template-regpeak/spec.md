@@ -167,12 +167,12 @@ The template SHALL include a footer linking to https://www.componentdock.com/ br
 - [ ] Gradient background renders correctly (136deg, #000046 → #1cb5e0)
 - [ ] Card is centered both horizontally and vertically
 - [ ] Image panel on left (desktop) / top (mobile) with correct border-radius
-- [ ] Form heading "Register Form" centered, Nunito Bold, #333, 35px
+- [x] Form heading "Register Form" centered, Nunito Bold, #333, 35px
 - [ ] Four inputs rendered with correct placeholders
 - [ ] Input bottom border: 2px #e5e5e5, focus: 2px #fe892a
 - [ ] Register button: #fe892a, 160px wide, 6px radius, white text
 - [ ] Button hover: #e37b27
 - [ ] Mobile responsive stacking at ≤991px
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib in app code
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib in app code
 - [ ] Tests pass with 100% coverage

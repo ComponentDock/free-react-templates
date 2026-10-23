@@ -88,7 +88,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page loads with all sections — the navbar, hero, about, why-choose-us, services, skills, portfolio, team, pricing, blog, stats, contact, and footer sections are all visible
 - [ ] Pricing tabs switch between monthly and yearly — the price cards display yearly amounts
 - [ ] Why Choose Us tabs switch content — the vision content is displayed

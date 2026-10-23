@@ -93,4 +93,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Gherkin scenarios cover all interactive elements
 - [ ] Naming: "searchnest" — no collision with existing apps/specs
 - [ ] No references to ColorLib in app code (provenance in spec only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

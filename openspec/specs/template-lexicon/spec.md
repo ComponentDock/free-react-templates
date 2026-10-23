@@ -133,4 +133,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fonts: Baskervville (headings), Jost (body) via Google Fonts
 - [ ] Colors: brand #E29C89, dark #191514, header-top #2e0000
 - [ ] Responsive: mobile menu, stacked columns, reduced section padding
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

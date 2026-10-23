@@ -753,7 +753,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Nunito Sans loaded via an own Google Fonts `<link>`
       (`wght@200;300;400;500;700;900`), not by copying the source's `@font-face`
       files; all icons from `lucide-react`
-- [ ] Zero `colorlib` / "Server" / `server` provenance references anywhere in
+- [x] Zero `colorlib` / "Server" / `server` provenance references anywhere in
       `apps/rackline` (comments included)
 - [ ] No copied assets: no `hero_bg_1.jpg` / `hero_bg_2.jpg` / `hero_bg_3.jpg`,
       `person_1.jpg` / `person_2.jpg`, no icomoon / flaticon / fl-bigmug icon
@@ -765,9 +765,9 @@ Dock (`https://www.componentdock.com/`) instead.
       carousels have labelled controls and exposed active state; every icon-only
       control has an accessible name; `prefers-reduced-motion: reduce` disables
       reveals, parallax and autoplay
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") and shows a computed current year
-- [ ] `public/CNAME` = `rackline.free.componentdock.com` and
+- [x] `public/CNAME` = `rackline.free.componentdock.com` and
       `"homepage": "https://rackline.free.componentdock.com"` in
       `apps/rackline/package.json`; `package-lock.json` registers
       `@free-react-templates/rackline`
@@ -787,4 +787,4 @@ Dock (`https://www.componentdock.com/`) instead.
       instead of stellar/AOS, distinct footer link sets and four distinct
       testimonial people, local-only behaviour, added keyboard/aria states,
       reduced-motion handling, Component Dock attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

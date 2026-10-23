@@ -275,7 +275,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `bash scripts/verify-app.sh lantern` passes (typecheck + lint + 100%
       coverage tests + build, ~2–3 min)
 - [ ] `npm run spec:validate` passes
-- [ ] Header: white overlay text, wordmark "Lantern", search input, nav
+- [x] Header: white overlay text, wordmark "Lantern", search input, nav
       Home/Sport▾/Travel/Beauty/Music/Art/Fashion/Contact; Sport dropdown
       opens; mobile hamburger works
 - [ ] Hero: full-height bg photo + dark overlay, category tag + bold
@@ -296,7 +296,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/lantern`); `grep -c "free-react-templates/lantern"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://lantern.free.componentdock.com"`
+- [x] `"homepage": "https://lantern.free.componentdock.com"`
       in `apps/lantern/package.json`
 - [ ] PR title: `feat: Lantern — blog website template (ColorLib
 Quitelight)`; body includes the source URL, preview URL, tokens, and the

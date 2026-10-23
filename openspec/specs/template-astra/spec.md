@@ -132,12 +132,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with navigation and mobile menu — the navbar displays links for Home, About, Services, Works, and Contact
-- [ ] Hero section with parallax background — the headline reads "We provide creative solutions to turn your ideas into digital reality"
-- [ ] About section with process grid — the subhead shows "01 Who We Are"
+- [x] Hero section with parallax background — the headline reads "We provide creative solutions to turn your ideas into digital reality"
+- [x] About section with process grid — the subhead shows "01 Who We Are"
 - [ ] Services section with dark background — six service cards are displayed (Brand Identity, Illustration, Web Design, Product Strategy, UI/UX Design, Mobile Design)
 - [ ] Works section with portfolio and testimonials — eight portfolio items are displayed with images, titles, and categories
 - [ ] Clients section with logo grid — eight client placeholders are displayed
 - [ ] Stats section with counter values — four stat items are displayed with labels and numeric values
-- [ ] Contact section with form and info — a "Thanks for subscribing!" message is shown
+- [x] Contact section with form and info — a "Thanks for subscribing!" message is shown

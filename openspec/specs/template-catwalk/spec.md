@@ -296,17 +296,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Placeholder images seeded (`picsum.photos/seed/catwalk-<n>/<w>/<h>`);
       no ColorLib assets copied
 - [ ] New name "Catwalk" (never the ColorLib source name "Topmodel")
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Catwalk" and links to
-- [ ] Hero section — it SHALL contain an eyebrow "Top Model", a level-1 heading
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Catwalk" and links to
+- [x] Hero section — it SHALL contain an eyebrow "Top Model", a level-1 heading
 - [ ] Model search bar — it SHALL contain a "Search A Model" label and selects for
 - [ ] Services section — it SHALL show cards for Finding Agency, Types of Modeling,
 - [ ] Stats strip — it SHALL show counts for Models, Agency, Awards, and Events
-- [ ] About section — it SHALL contain "Welcome to Catwalk" and a heading "We Are
-- [ ] Model cards — it SHALL contain a heading "Popular Model"
-- [ ] Testimonials section — it SHALL contain a heading "My satisfied customer says"
-- [ ] Events section — it SHALL contain an eyebrow "Events" and a heading "Latest
-- [ ] Blog section — it SHALL contain a heading "Case Study"
+- [x] About section — it SHALL contain "Welcome to Catwalk" and a heading "We Are
+- [x] Model cards — it SHALL contain a heading "Popular Model"
+- [x] Testimonials section — it SHALL contain a heading "My satisfied customer says"
+- [x] Events section — it SHALL contain an eyebrow "Events" and a heading "Latest
+- [x] Blog section — it SHALL contain a heading "Case Study"
 - [ ] Footer — it SHALL show link columns About Me, Popular Links, and Quick
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

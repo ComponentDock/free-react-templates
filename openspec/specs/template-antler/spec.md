@@ -323,14 +323,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Navbar: transparent over hero on desktop (black text, hairline link
       separators, active #588da8); black bg + white links + "Menu" burger
       with aria-expanded on mobile
-- [ ] Hero: wordmark "Antler" 16vw/900/#313b44 with a hollow mid-word
+- [x] Hero: wordmark "Antler" 16vw/900/#313b44 with a hollow mid-word
       2-letter span (1px stroke), light-weight intro headline + 18px
       paragraph left, 70px circular avatar author card right
 - [ ] Blog list: 6 alternating rows (white/image-left, #313b44/image-right),
       meta (12px uppercase #588da8), 45px/800 titles (white on dark rows),
       author block with circular avatar + name + uppercase #588da8 role;
       centered 24px "View all articles" + chevron-right
-- [ ] Newsletter: bg-light band, "Subscribe to our Newsletter", fused
+- [x] Newsletter: bg-light band, "Subscribe to our Newsletter", fused
       input (radius 5px 0 0 5px, border #313b44) + Subscribe button (bg
       #313b44, radius 0 5px 5px 0), zod-validated with error + success states
 - [ ] Footer: #141b25, logo + blurb + 3 circular #588da8 social links,
@@ -342,5 +342,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on line 274
       "Moose", + surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

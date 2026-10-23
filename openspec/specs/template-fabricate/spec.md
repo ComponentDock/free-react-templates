@@ -225,11 +225,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Feedback: video play button + testimonial carousel, dark overlay
 - [ ] Blog: 3 cards with image, author, date, stats, title, excerpt
 - [ ] Footer: dark navy (#04091e), About Us + Newsletter + Follow Us columns
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code (only in spec and TEMPLATES.md)
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code (only in spec and TEMPLATES.md)
 - [ ] Brand color #fab700 used via Tailwind @theme token
 - [ ] Font: Poppins loaded via Google Fonts in index.html
 - [ ] All placeholder images use picsum.photos/seed/fabricate-N/
 - [ ] Package name: @free-react-templates/fabricate
-- [ ] CNAME: fabricate.free.componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] CNAME: fabricate.free.componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -214,13 +214,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Back button hidden on Step 1
 - [ ] Form validation prevents advancing with invalid/empty required fields
 - [ ] Progress indicator updates: completed = green checkmark, active = green circle
-- [ ] Success screen after submission with "Start Over" button
+- [x] Success screen after submission with "Start Over" button
 - [ ] Start Over resets wizard to Step 1
 - [ ] Responsive: single-column on mobile (< 768px)
 - [ ] Brand colors: blue (#1a73e8) for primary, green (#77CC6D) for accents/steps
 - [ ] Font: system sans-serif stack
-- [ ] Footer links to Component Dock (https://www.componentdock.com/)
-- [ ] No ColorLib references in app code
+- [x] Footer links to Component Dock (https://www.componentdock.com/)
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

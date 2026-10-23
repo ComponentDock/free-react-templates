@@ -319,11 +319,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Accordion FAQ works correctly (expand/collapse)
 - [ ] Contact form fields are present and accessible
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code (only in spec)
+- [x] No ColorLib references in app code (only in spec)
 - [ ] Placeholder images use seeded picsum URLs
 - [ ] Dark mode toggle works correctly
 - [ ] Mobile menu expands/collapses correctly
 - [ ] All interactive elements have proper accessibility
 - [ ] 100% test coverage on all new components
 - [ ] Spec committed and pushed to main
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

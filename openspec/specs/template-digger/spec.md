@@ -180,17 +180,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Top bar with contact info and social links — the email "info@digger.com" is visible
-- [ ] Sticky navigation with logo — the "Digger" logo text is visible
-- [ ] Hero section with CTA — the heading "Welcome to Digger" is visible
-- [ ] Services section with alternating blocks — "Land & Property" and "Surface Mining" sections are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Top bar with contact info and social links — the email "info@digger.com" is visible
+- [x] Sticky navigation with logo — the "Digger" logo text is visible
+- [x] Hero section with CTA — the heading "Welcome to Digger" is visible
+- [x] Services section with alternating blocks — "Land & Property" and "Surface Mining" sections are visible
 - [ ] Feature cards — six feature cards are visible with titles: Safety First, Land Development, Resource Extraction, Earth Moving, Construction, Mining Solutions
-- [ ] About section with stats — the "About Digger" heading is visible
+- [x] About section with stats — the "About Digger" heading is visible
 - [ ] Team section — team members Jean Smith, Bob Carry, and Ricky Fisher are visible with their roles
 - [ ] Pricing section — Basic ($47), Premium ($200), and Professional ($750) tiers are visible
 - [ ] FAQ section — all 8 FAQ questions are visible in a 2-column grid
 - [ ] Press section — three press articles with dates and titles are visible
 - [ ] Testimonials section — testimonial quotes from Michael Torres, Lisa Chen, and Robert Johnson are visible
-- [ ] Blog section — two blog posts with "Read More" links are visible
+- [x] Blog section — two blog posts with "Read More" links are visible
 - [ ] Contact form — First Name, Last Name, Email, and Your Message inputs are visible

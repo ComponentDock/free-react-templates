@@ -194,4 +194,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer links to Component Dock
 - [x] 100% test coverage with Vitest & Testing Library
 - [x] Passes per-app verification (`scripts/verify-app.sh plisse`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

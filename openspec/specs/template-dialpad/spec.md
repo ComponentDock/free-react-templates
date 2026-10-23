@@ -402,7 +402,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Spec validated: `npm run spec:validate` passes for
       `template-dialpad`.
-- [ ] App `apps/dialpad` created on branch `feat/template-dialpad` by an
+- [x] App `apps/dialpad` created on branch `feat/template-dialpad` by an
       implementer stream (NOT this prep stream).
 - [ ] All Gherkin scenarios above covered by Vitest + Testing Library tests
       at 100% coverage (lines/functions/branches/statements).
@@ -412,23 +412,23 @@ Dock (`https://www.componentdock.com/`) instead.
       `linear-gradient(0deg, #62bdfc, #8490ff)`, `#f9f9ff` light bg,
       `#222` dark bg, `#777` body text, `#222` headings, Poppins font,
       25px pill buttons, 120px section padding.
-- [ ] Footer links `https://www.componentdock.com/`; no ColorLib references
+- [x] Footer links `https://www.componentdock.com/`; no ColorLib references
       anywhere in `apps/dialpad`.
-- [ ] `public/CNAME` = `dialpad.free.componentdock.com`; `homepage` =
+- [x] `public/CNAME` = `dialpad.free.componentdock.com`; `homepage` =
       `https://dialpad.free.componentdock.com`; `npm install` run at root and
       `@free-react-templates/dialpad` registered in `package-lock.json`.
 - [ ] `npm run readme:status` regenerates README status; TEMPLATES.md row
       marked `[x]` with the live URL on merge.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the logo text "Dialpad"
-- [ ] Hero section — the hero SHALL display the subtitle "Discover the Colorful World"
-- [ ] Features section — it SHALL display three feature cards: "Online Support" (headset
-- [ ] Testimonials section — it SHALL display the heading "Why Choose Us Your Trusted Partner"
-- [ ] Offered services section — it SHALL display the heading "Our Offered Services"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the logo text "Dialpad"
+- [x] Hero section — the hero SHALL display the subtitle "Discover the Colorful World"
+- [x] Features section — it SHALL display three feature cards: "Online Support" (headset
+- [x] Testimonials section — it SHALL display the heading "Why Choose Us Your Trusted Partner"
+- [x] Offered services section — it SHALL display the heading "Our Offered Services"
 - [ ] Stats section — it SHALL display five stat items: "2536 Projects Completed",
-- [ ] Services section — it SHALL display the heading "Some Awesomeness that should share"
-- [ ] About info section — it SHALL display the heading "Responsible Customer Support"
+- [x] Services section — it SHALL display the heading "Some Awesomeness that should share"
+- [x] About info section — it SHALL display the heading "Responsible Customer Support"
 - [ ] About video section — it SHALL display the heading "We Believe that Interior beautifies
 - [ ] Brand logos section — it SHALL display five partner logos in a horizontal row
-- [ ] Contact form section — it SHALL display the heading "If you need, Just drop us a line"
+- [x] Contact form section — it SHALL display the heading "If you need, Just drop us a line"
 - [ ] Page composition — all twelve sections appear in the source order

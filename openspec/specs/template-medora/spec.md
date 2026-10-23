@@ -334,7 +334,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes
 - [ ] Utility bar shows phone + appointment link; header sticky white with
       all six links, active underline, mobile menu opens/closes
-- [ ] Hero shows full-width photo, dark overlay caption ("Quality Care" /
+- [x] Hero shows full-width photo, dark overlay caption ("Quality Care" /
       "Your Health Is Our Priority."), blue "Learn More" that scrolls to
       departments; hover → `#1464cc`
 - [ ] Feature bar renders 4 tiles with icons, anchor-scrolls, hover →
@@ -354,10 +354,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/medora`); `grep -c "free-react-templates/medora"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://medora.free.componentdock.com"`
+- [x] `"homepage": "https://medora.free.componentdock.com"`
       in `apps/medora/package.json`
 - [ ] PR title: `feat: Medora — medical clinic website template (ColorLib
   Medical Wordpress Themes)`; body includes the source URL, the
       double-redirect note (roundup article), the 404 preview URL, tokens,
       and the three-copy TEMPLATES.md note
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

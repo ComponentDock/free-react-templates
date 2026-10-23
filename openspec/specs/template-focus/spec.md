@@ -277,11 +277,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gallery: 12 tiles, 3-col no-gutter grid, lightbox popup, captions
 - [ ] Testimonials: carousel with ≥2 slides, arrows + dots, avatar/quote/name
 - [ ] Contact: 4 info boxes + validated form; footer with Component Dock link
-- [ ] No ColorLib assets copied: picsum.photos seeds, lucide-react icons,
+- [x] No ColorLib assets copied: picsum.photos seeds, lucide-react icons,
       Google Fonts links only
-- [ ] Footer links https://www.componentdock.com/ (required, no ColorLib in
+- [x] Footer links https://www.componentdock.com/ (required, no ColorLib in
       app code)
-- [ ] `apps/focus` package `@free-react-templates/focus`; CNAME
+- [x] `apps/focus` package `@free-react-templates/focus`; CNAME
       `focus.free.componentdock.com`; homepage set accordingly
 - [ ] 100% coverage tests, per-app gate green (`scripts/verify-app.sh focus`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

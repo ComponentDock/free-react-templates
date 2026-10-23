@@ -404,7 +404,7 @@ Dock (`https://www.componentdock.com/`) instead.
       Fonts `<link>`s in `index.html`
 - [ ] Photo header = seeded picsum (`guestly-1/…`) cover/center with
       `rgba(81,81,81,0.8)` overlay, full card width, padding 85px 25px 25px
-- [ ] Header: h2 "Reserve your Room", Medula One 58px `#fff` capitalized
+- [x] Header: h2 "Reserve your Room", Medula One 58px `#fff` capitalized
       (display font — NOT the body font), + 18px white subtitle paragraph
 - [ ] Arrival date (date, required) + Departure date (date, required)
       side by side; NO ⇔ divider
@@ -418,7 +418,7 @@ Dock (`https://www.componentdock.com/`) instead.
       NO tab background
 - [ ] Labels: static, uppercase, 14px weight-400 orange `#ff9000`, 20px
       left indent, `htmlFor`/`id` associated
-- [ ] "Check availability" button: full width, solid `#ff9000` bg, white
+- [x] "Check availability" button: full width, solid `#ff9000` bg, white
       bold 18px uppercase text, height 55px, radius 40px (pill), border
       none; validates (dates required, departure ≥ arrival) and shows
       summary / validation messages
@@ -429,5 +429,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

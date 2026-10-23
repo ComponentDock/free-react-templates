@@ -158,7 +158,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Heading "Dropdown #2" centered on page
-- [ ] "Privacy Settings" button with cog icon renders
+- [x] "Privacy Settings" button with cog icon renders
 - [ ] Click toggles dropdown open/close
 - [ ] Menu is wide (min-width 700px) with two columns
 - [ ] Column 1: Settings (cog), Account (person) with descriptions
@@ -173,6 +173,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Outside click closes dropdown
 - [ ] aria-expanded toggles correctly
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Vitest + Testing Library tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

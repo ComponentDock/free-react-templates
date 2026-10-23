@@ -187,17 +187,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar — the phone number "+1 234 5678 9101" is displayed
-- [ ] Navbar — the brand "ForgeHub" is displayed
-- [ ] Hero Section — the heading "We Love To Build" is displayed
-- [ ] ServicesOverview — three service cards are displayed with titles "Innovate", "Create", and "Scale"
-- [ ] Portfolio — the heading "Our Works" is displayed
+- [x] Navbar — the brand "ForgeHub" is displayed
+- [x] Hero Section — the heading "We Love To Build" is displayed
+- [x] ServicesOverview — three service cards are displayed with titles "Innovate", "Create", and "Scale"
+- [x] Portfolio — the heading "Our Works" is displayed
 - [ ] Features — a dark background section is displayed
-- [ ] Testimonials — the heading "Testimonials" is displayed
-- [ ] Services — the heading "Our Services" is displayed
-- [ ] About — the heading "About Us" is displayed
-- [ ] Team — the heading "Our Team" is displayed
-- [ ] Blog — the heading "Blog" is displayed
-- [ ] Contact — the heading "Contact Us" is displayed
+- [x] Testimonials — the heading "Testimonials" is displayed
+- [x] Services — the heading "Our Services" is displayed
+- [x] About — the heading "About Us" is displayed
+- [x] Team — the heading "Our Team" is displayed
+- [x] Blog — the heading "Blog" is displayed
+- [x] Contact — the heading "Contact Us" is displayed
 - [ ] CTA Banner — a teal background banner with "Let's Get Started" is displayed

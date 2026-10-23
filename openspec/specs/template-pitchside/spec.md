@@ -461,15 +461,15 @@ Dock (`https://www.componentdock.com/`) instead.
       `--color-ink: #151618`, `--color-muted: #636363`, `--color-meta: #ababab`,
       sport-tag variants `#0054a6` / `#e3ce1e`, social `#506eaa` / `#55acee` / `#dd4b39`
 - [ ] Header: solid #dd1515 bar; white wordmark + ball glyph; uppercase white 15px/500 links with 2px white underline on hover/active; white dropdown panels with #dd1515 link hover; search icon; mobile hamburger + panel with aria-expanded
-- [ ] Hero: picsum night-stadium photo + dark overlay, 700px centered; date line + headline; solid #dd1515 square "More Details" button (padding 14px 36px 12px, letter-spacing 1px)
-- [ ] Trending strip: #151618 bg; red 32% "Trending News" title block; headline slider with prev/next square arrows (keyboard accessible)
+- [x] Hero: picsum night-stadium photo + dark overlay, 700px centered; date line + headline; solid #dd1515 square "More Details" button (padding 14px 36px 12px, letter-spacing 1px)
+- [x] Trending strip: #151618 bg; red 32% "Trending News" title block; headline slider with prev/next square arrows (keyboard accessible)
 - [ ] Match section: dark low-poly picsum bg; "Next Match" (3 VS rows) + "Recent Results" (3 "1 : 2" rows); rows bg rgba(21,22,24,0.9); flag + team name + center label/score/date
 - [ ] Soccer feed: 4× 405px cards; red top-left tags; bottom white titles + "|" meta; picsum placeholders
-- [ ] Latest news: red-bar title + filter pills (hover #dd1515); 5 left-news cards (240px photo + red tag + #151618 title + red-icon meta + #636363 excerpt); "Club Ranking" points-table (Pos/Team/P/W/L/PTS with flags)
+- [x] Latest news: red-bar title + filter pills (hover #dd1515); 5 left-news cards (240px photo + red tag + #151618 title + red-icon meta + #636363 excerpt); "Club Ranking" points-table (Pos/Team/P/W/L/PTS with flags)
 - [ ] Hot videos: dark section; video cards with white top title + bottom-right duration chip; hover-revealed centered play button; state-driven modal (no magnific/jQuery)
 - [ ] Popular post: 5 overlay cards (240px) with red/blue/yellow sport tags + white bottom titles; "Follow Us" social rows (#506eaa/#55acee/#dd4b39); vote widget with white circle radios (controlled state)
-- [ ] Footer: dark photo treatment; wordmark + description; circular social icons (aria-labels, hover #dd1515); "Top Club" + "Recent News" widgets; copyright bar with Component Dock link; zero ColorLib references anywhere in the app
+- [x] Footer: dark photo treatment; wordmark + description; circular social icons (aria-labels, hover #dd1515); "Top Club" + "Recent News" widgets; copyright bar with Component Dock link; zero ColorLib references anywhere in the app
 - [ ] Placeholder images use deterministic `picsum.photos/seed/pitchside-*` URLs
 - [ ] Lucide-react icons only (no Font Awesome); no jQuery/owl/magnific — React state sliders/modal
 - [ ] 100% test coverage via `scripts/verify-app.sh pitchside`; PR `feat/template-pitchside`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

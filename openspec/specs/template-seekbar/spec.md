@@ -153,8 +153,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Background — a background image element SHALL be present with aria-hidden="true"
-- [ ] Search form — it SHALL contain a form element with aria-label "Search form"
-- [ ] Category dropdown — it SHALL default to "All Categories"
-- [ ] Document title — the document title SHALL be "Seekbar — Search Form Bar"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Background — a background image element SHALL be present with aria-hidden="true"
+- [x] Search form — it SHALL contain a form element with aria-label "Search form"
+- [x] Category dropdown — it SHALL default to "All Categories"
+- [x] Document title — the document title SHALL be "Seekbar — Search Form Bar"

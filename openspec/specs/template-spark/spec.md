@@ -243,17 +243,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Spark" and links to Home, Features, Services, Pricing, and Contact
-- [ ] Hero section — it SHALL contain a kicker "App Landing Page" and a level-1 heading "Get things done with Spark"
-- [ ] Features section — it SHALL contain a heading "Some of the best features Of Our App!"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Spark" and links to Home, Features, Services, Pricing, and Contact
+- [x] Hero section — it SHALL contain a kicker "App Landing Page" and a level-1 heading "Get things done with Spark"
+- [x] Features section — it SHALL contain a heading "Some of the best features Of Our App!"
 - [ ] Services section — it SHALL contain a heading "How Can We HelpYour with Spark!"
-- [ ] Video demo section — it SHALL contain a heading "See Spark in Action"
-- [ ] Pricing section — it SHALL contain a heading "Choose Your Very Best Pricing Plan."
-- [ ] Testimonials section — it SHALL contain a heading "What Our Customers Have to Say"
-- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
-- [ ] Integrations section — it SHALL contain a heading "Integrates With Your Favorite Tools"
+- [x] Video demo section — it SHALL contain a heading "See Spark in Action"
+- [x] Pricing section — it SHALL contain a heading "Choose Your Very Best Pricing Plan."
+- [x] Testimonials section — it SHALL contain a heading "What Our Customers Have to Say"
+- [x] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [x] Integrations section — it SHALL contain a heading "Integrates With Your Favorite Tools"
 - [ ] Metrics section — it SHALL show at least four stats with labels
-- [ ] Footer — it SHALL show the site name "Spark" and quick links
+- [x] Footer — it SHALL show the site name "Spark" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

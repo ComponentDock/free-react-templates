@@ -388,14 +388,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens above (blue-purple `#8a90ff`, body `#777777`,
       heading `#222222`, light bg `#f9f9ff`, dark bg `#222222`, Poppins
       font, rounded-full pill buttons) captured in the spec.
-- [ ] Footer requirement includes the mandatory `https://www.componentdock.com/`
+- [x] Footer requirement includes the mandatory `https://www.componentdock.com/`
       link branded as "Component Dock".
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh mechbot`,
       PR lists source (ColorLib Robotics), preview URL, tokens, and what
       differs.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar SHALL show the site name "Mechbot" as the brand
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar SHALL show the site name "Mechbot" as the brand
 - [ ] Hero / Banner — it SHALL show the headline "Improved Production level with Robotics"
 - [ ] Products — it SHALL show the heading "Featured Robotics Products to Show"
 - [ ] HomeAbout — it SHALL show the heading "Globally Connected by Large Network"

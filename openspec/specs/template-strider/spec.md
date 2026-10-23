@@ -150,9 +150,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Sticky navigation bar — the navbar shows "Strider" logo and links for Home, Shop, Blog, Contact
-- [ ] Hero banner with CTA — the hero shows the "Stride Into" heading with Style gradient text
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Sticky navigation bar — the navbar shows "Strider" logo and links for Home, Shop, Blog, Contact
+- [x] Hero banner with CTA — the hero shows the "Stride Into" heading with Style gradient text
 - [ ] Service features row — Free Delivery, Return Policy, 24/7 Support, and Secure Payment are shown
 - [ ] Category grid — all five category titles are displayed
 - [ ] Latest products listing — four product cards are displayed

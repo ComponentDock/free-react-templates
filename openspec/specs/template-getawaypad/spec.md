@@ -187,7 +187,7 @@ The template SHALL display a 4-column footer with logo, services, tag cloud, sub
 - [ ] Blog has 3 cards with meta info
 - [ ] Footer is 4-column with subscribe form and social links
 - [ ] Footer links to Component Dock
-- [ ] No references to ColorLib in app code
+- [x] No references to ColorLib in app code
 - [ ] All images use picsum.photos placeholders (deterministic seeds)
 - [ ] Mobile responsive: hamburger menu, stacked columns
 - [ ] 100% test coverage

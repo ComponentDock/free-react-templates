@@ -143,13 +143,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Navbar transparent over hero with white text
 - [ ] Hero section with blue gradient background
-- [ ] Hero heading "Tools UI Kit." in light weight
-- [ ] Hero subtitle and "DOWNLOAD TOOLS" CTA button
+- [x] Hero heading "Tools UI Kit." in light weight
+- [x] Hero subtitle and "DOWNLOAD TOOLS" CTA button
 - [ ] Basic Elements section with button showcase
 - [ ] Multiple button variant examples displayed
 - [ ] Components dropdown functional
 - [ ] Social icons in navbar (Facebook, Twitter, Instagram)
 - [ ] Footer with copyright and Component Dock link
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

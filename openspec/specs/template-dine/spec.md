@@ -139,14 +139,14 @@ The application SHALL NOT contain any references to ColorLib in source files.
 
 ## Verification checklist
 
-- [ ] Navbar: dark bg, brand "Dine", all nav links, services dropdown
+- [x] Navbar: dark bg, brand "Dine", all nav links, services dropdown
 - [ ] Hero: 2 slides, background images, headings, CTA button
-- [ ] About: image + text layout, "The Restaurant" heading
+- [x] About: image + text layout, "The Restaurant" heading
 - [ ] Gallery: 3 food images
 - [ ] Special Menu: carousel with 4 dish cards
 - [ ] Our Menu: 2-column grid with 6 items
 - [ ] Testimonials: 3 quotes with avatars
 - [ ] Blog: 2 post cards
 - [ ] Footer: About Us, Hours, Contact, Quick Links, Component Dock link
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] All tests pass with 100% coverage

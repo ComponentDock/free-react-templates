@@ -224,12 +224,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Section order matches reference 1:1
 - [ ] Design tokens in `@theme`
 - [ ] Footer links Component Dock
-- [ ] No references to 'colorlib' or 'magaznpro' in app source
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to 'colorlib' or 'magaznpro' in app source
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header with social icons, logo, and controls — the header SHALL show five social icon links (Facebook, Instagram, Twitter, LinkedIn, Tumblr) on the left
 - [ ] Sticky navigation bar — the nav bar SHALL have a pink `#f0d` background
 - [ ] Hero carousel — a full-width image SHALL be displayed
-- [ ] Trending Now section — a "TRENDING NOW" heading SHALL appear with a "View All" link
+- [x] Trending Now section — a "TRENDING NOW" heading SHALL appear with a "View All" link
 - [ ] What's New section — tabs for All, Lifestyle, Travel, Fashion, Photography SHALL be shown
 - [ ] Technology section — the section SHALL have a `#FFF6FE` background
 - [ ] Instagram strip — 6 square images SHALL be displayed in a row

@@ -183,11 +183,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays brand and navigation — the brand "Molars" and links for Home, About, Services, Testimonials, and Contact are visible
-- [ ] Hero section with headline and CTAs — the headline "Dental Clinic for Everyone" and two CTA links are visible
+- [x] Navbar displays brand and navigation — the brand "Molars" and links for Home, About, Services, Testimonials, and Contact are visible
+- [x] Hero section with headline and CTAs — the headline "Dental Clinic for Everyone" and two CTA links are visible
 - [ ] Features grid displays six services — cards for Periodontology, Tooth Whitening, Preventative Care, General Checkup, First Aid Treatment, and Tooth Alignment are visible
-- [ ] FreeQuote form with image — inputs for name, email, and message are visible with a "Get a quote now" button
+- [x] FreeQuote form with image — inputs for name, email, and message are visible with a "Get a quote now" button
 - [ ] Testimonials section with customer cards — four customer names, photos, and quotes are visible
 - [ ] WhyChooseUs section with three features — Fast Support, Happy Customers, and 24/7 Support headings with descriptions are visible
 - [ ] Team section with three members — three team members with names, specialties, social links, and bios are visible
-- [ ] App composes all sections — all sections are present and the document title is "Molars — Dental Clinic Landing"
+- [x] App composes all sections — all sections are present and the document title is "Molars — Dental Clinic Landing"

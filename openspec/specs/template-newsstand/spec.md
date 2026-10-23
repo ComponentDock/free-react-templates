@@ -351,15 +351,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/newsstand`
-- [ ] `npm run lint` passes for `apps/newsstand`
+- [x] `npm run typecheck` passes for `apps/newsstand`
+- [x] `npm run lint` passes for `apps/newsstand`
 - [ ] `scripts/verify-app.sh newsstand` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Header: fixed white 70px, "Newsstand" logo, News/Popular/Web Design/
+- [x] Header: fixed white 70px, "Newsstand" logo, News/Popular/Web Design/
       JavaScript/CSS/TypeScript links with dividers + category hover colors,
       search + aside toggles (aria-expanded)
-- [ ] Search overlay: covers nav, "Enter Your Search ..." input, orange
+- [x] Search overlay: covers nav, "Enter Your Search ..." input, orange
       focus ring, closes on Esc/close
 - [ ] Aside drawer: stacked links, "Recent Posts" widget rows, "Follow us"
       social links, close control
@@ -368,12 +368,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Most Read sidebar widget: 4+ thumbnail+title rows
 - [ ] Featured Posts grey band: #f8f9fb + #dfe3eb hairlines, centered heading,
       2 large rounded cards (10px)
-- [ ] Second section: "Featured Posts" + 4 cards + ad box; sidebar Categories
+- [x] Second section: "Featured Posts" + 4 cards + ad box; sidebar Categories
       (colored links + counts) + Tags pills
 - [ ] Footer: light, logo + legal links + copyright, About/Categories
       columns, newsletter form (label + input + 48px orange send button) +
       social icons (FB/X/Pinterest/YouTube/TikTok)
 - [ ] Newsletter submit shows a confirmation state
 - [ ] Placeholder images via seeded picsum (`seed/newsstand-<n>/<w>/<h>`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

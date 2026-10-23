@@ -262,8 +262,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Row separators: 1px `#f2f2f2` bottom border
 - [ ] Column widths: 225/205/195/235/170/330/305px
 - [ ] No interactivity (no state, no handlers)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] Zero ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] Zero ColorLib references in app code
 - [ ] `npm run spec:validate` passes
 - [ ] `scripts/verify-app.sh fixstack` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

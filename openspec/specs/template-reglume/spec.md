@@ -167,13 +167,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Teal `#5eb2b3` full-page background
 - [ ] White 670px card, 8px radius, 30px 45px padding
-- [ ] Heading "Register Account Form" with blue underline
+- [x] Heading "Register Account Form" with blue underline
 - [ ] 3 input fields with lucide-react icons (User, Mail, Lock)
 - [ ] Inputs: `#e5e5e5` border, `#b3b3b3` focus border, 4px radius
 - [ ] Register button: blue bg, white text, hover `#2f73a3`, box-shadow
 - [ ] Roboto font family (Google Fonts)
 - [ ] Responsive: margin change at ≤767px
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

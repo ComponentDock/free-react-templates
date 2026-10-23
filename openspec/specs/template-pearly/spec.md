@@ -358,11 +358,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/pearly` scaffolded from the simplest existing app; package
+- [x] `apps/pearly` scaffolded from the simplest existing app; package
       renamed to `@free-react-templates/pearly`; `public/CNAME` =
       `pearly.free.componentdock.com`; homepage
       `https://pearly.free.componentdock.com`.
-- [ ] No "colorlib" string anywhere in `apps/pearly/*` (provenance only in
+- [x] No "colorlib" string anywhere in `apps/pearly/*` (provenance only in
       this spec, TEMPLATES.md, and the PR).
 - [ ] `@theme` tokens: `--color-mint: #39CCA4`, `--color-navy: #122C77`,
       `--color-royal: #2845BA`, `--color-mist: #F9FCFC`,
@@ -384,4 +384,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Post-merge bookkeeping: mark BOTH TEMPLATES.md "Dental" rows (line
       ~572 and duplicate ~1505) `[x]` with the live URL and run
       `npm run readme:status`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

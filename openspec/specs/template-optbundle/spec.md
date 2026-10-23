@@ -180,8 +180,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page renders with centered heading — they see a heading "OptBundle"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page renders with centered heading — they see a heading "OptBundle"
 - [ ] Multiselect dropdown renders with categories — they see a multiselect dropdown
 - [ ] Selection adds chips — the item appears as a chip/tag in the trigger area
 - [ ] Search filters options — only matching items are shown

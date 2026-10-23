@@ -150,9 +150,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Sidebar Navigation — the sidebar displays the brand name and profile image
 - [ ] Hero Section — a large faded watermark text is displayed behind the content
-- [ ] Instagram Gallery Section — the heading "Follow me on Instagram" is displayed
+- [x] Instagram Gallery Section — the heading "Follow me on Instagram" is displayed
 - [ ] Page composition — the page SHALL compose the Sidebar in the complementary landmark, the hero in the banner landmark, the gallery in the main landmark, and the Footer in the contentinfo landmark

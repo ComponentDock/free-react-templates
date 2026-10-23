@@ -568,17 +568,17 @@ Dock (`https://www.componentdock.com/`) instead.
       returned; the veil is dismissible by keyboard as well as pointer; every
       interactive element has a visible focus ring; `prefers-reduced-motion:
       reduce` removes the slide and the scale-in
-- [ ] Zero `colorlib` / "Website Menu 02" / `website-menu-02` provenance references
+- [x] Zero `colorlib` / "Website Menu 02" / `website-menu-02` provenance references
       anywhere in `apps/slidenav` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no woff2 files
       (`open-sans-*.woff2`, `icomoon-subset.woff2`), no `icomoon` codepoints
       (`\e313`, `\f078`), no `cl-`-prefixed utility classes, no jQuery/Bootstrap
       (the rewritten snippet needs neither), no copied strings
-- [ ] `public/CNAME` = `slidenav.free.componentdock.com` and
+- [x] `public/CNAME` = `slidenav.free.componentdock.com` and
       `"homepage": "https://slidenav.free.componentdock.com"` in
       `apps/slidenav/package.json`; `package-lock.json` registers
       `@free-react-templates/slidenav`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") with a computed current year
 - [ ] PR description includes: source template (ColorLib Website Menu 02), preview
       URL (`https://preview.colorlib.com/theme/bootstrap/website-menu-02/` →
@@ -596,4 +596,4 @@ Dock (`https://www.componentdock.com/`) instead.
       instead of self-hosted woff2, the six dead `href="#"` links materialised as
       labelled panels, one reconciled breakpoint, added aria/keyboard states, an
       explicit veil element, reduced-motion handling, footer attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

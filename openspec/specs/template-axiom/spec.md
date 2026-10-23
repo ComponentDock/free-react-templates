@@ -413,7 +413,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/axiom`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/axiom`
       (`scripts/verify-app.sh axiom` in FAST_MODE; full `npm run gate`
       in CI).
 - [ ] Visual fidelity: transparent header (logo + 7 nav links + Pages
@@ -441,5 +441,5 @@ Dock (`https://www.componentdock.com/`) instead.
       `creative-agency-2-2` URL 404s), design tokens, and what differs
       (name, placeholders, carousel/grid simplification, video play →
       decorative/modal, no assets copied).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

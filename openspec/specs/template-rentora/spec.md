@@ -481,5 +481,5 @@ Dock (`https://www.componentdock.com/`) instead.
       for team) before pinning seeds.
 - [ ] PR description records source template (Rental), preview URL, tokens,
       and renames (including the "Sing Up" → "Sign Up" typo fix).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

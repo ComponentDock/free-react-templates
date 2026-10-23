@@ -177,8 +177,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Mobile breakpoint: image compresses to 200px, card moves below
 - [ ] Roboto font loads from Google Fonts
 - [ ] Component Dock footer link present
-- [ ] No ColorLib references in app code (provenance in spec only)
+- [x] No ColorLib references in app code (provenance in spec only)
 - [ ] 100% test coverage
 - [ ] TypeScript strict mode passes
 - [ ] Build succeeds without warnings
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

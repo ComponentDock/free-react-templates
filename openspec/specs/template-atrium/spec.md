@@ -203,14 +203,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Atrium" and links to Home, About, Services, Projects, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "We Design Your Space"
-- [ ] About section — it SHALL contain a heading "Architectural Plan Design and Build"
-- [ ] Services section — it SHALL contain a heading "Make Your Dream with Us"
-- [ ] Projects section — it SHALL contain a heading "Our Latest Projects"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Atrium" and links to Home, About, Services, Projects, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "We Design Your Space"
+- [x] About section — it SHALL contain a heading "Architectural Plan Design and Build"
+- [x] Services section — it SHALL contain a heading "Make Your Dream with Us"
+- [x] Projects section — it SHALL contain a heading "Our Latest Projects"
 - [ ] Testimonials section — it SHALL show a quote, an author name, and a role
 - [ ] Contact section — the form SHALL prevent default submission (no backend)
-- [ ] Footer — it SHALL show a "Do You Have Any Project or Query?" heading and a "Contact Us" button
+- [x] Footer — it SHALL show a "Do You Have Any Project or Query?" heading and a "Contact Us" button
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

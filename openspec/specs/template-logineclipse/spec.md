@@ -189,15 +189,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-viewport gradient background — the page body covers the full viewport with a background image
 - [ ] Login card renders centered — a white card is visible centered horizontally and vertically
-- [ ] Sign In title — the text "Sign In" is displayed at the top of the card
-- [ ] Username/email input field — an input field with placeholder "username or email" is visible
-- [ ] Password input field — a password input with placeholder "password" is visible
+- [x] Sign In title — the text "Sign In" is displayed at the top of the card
+- [x] Username/email input field — an input field with placeholder "username or email" is visible
+- [x] Password input field — a password input with placeholder "password" is visible
 - [ ] Input focus shadow effect — the input shows an enhanced box-shadow (0 5px 30px 0px rgba(0,0,0,0.2))
-- [ ] Sign In submit button — a button labeled "Sign In" is visible
-- [ ] Or login with divider — text "Or login with" is visible below the submit button
+- [x] Sign In submit button — a button labeled "Sign In" is visible
+- [x] Or login with divider — text "Or login with" is visible below the submit button
 - [ ] Social login buttons — a Facebook social login button is visible
-- [ ] Sign Up link — a link labeled "Sign Up" is visible at the bottom of the card
+- [x] Sign Up link — a link labeled "Sign Up" is visible at the bottom of the card
 - [ ] Accessibility - semantic elements — the form uses a semantic `<form>` element

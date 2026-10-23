@@ -238,12 +238,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog section shows 3 post cards
 - [ ] Instagram section shows image row with hover effect
 - [ ] Footer has 3 columns with correct links
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] Responsive design works at mobile breakpoints
-- [ ] No ColorLib references in app code (only in spec/docs/TEMPLATES.md)
+- [x] No ColorLib references in app code (only in spec/docs/TEMPLATES.md)
 - [ ] Placeholder images use picsum.photos with deterministic seeds
 - [ ] Google Fonts loaded via index.html link tags
 - [ ] Icons from lucide-react
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] Build passes without errors
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

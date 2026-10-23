@@ -225,7 +225,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero banner shows image + headline + CTA with blue accent stripe
 - [ ] Hero carousel renders 3 slides with hover overlays
 - [ ] Trending products grid shows 8 cards with hover action icons
-- [ ] Offer section renders with parallax background and "Shop Now" CTA
+- [x] Offer section renders with parallax background and "Shop Now" CTA
 - [ ] Best sellers carousel renders product cards
 - [ ] Blog section shows 3 cards with author, comments, title, excerpt, Read More
 - [ ] Subscribe section renders heading, email input, Subscribe Now button
@@ -236,7 +236,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Pill-shaped buttons (border-radius: 30px)
 - [ ] Oswald headings + Roboto body text via Google Fonts
 - [ ] All images use picsum-seeded placeholders
-- [ ] No ColorLib references in app code (provenance only in spec)
+- [x] No ColorLib references in app code (provenance only in spec)
 - [ ] Footer links Component Dock
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

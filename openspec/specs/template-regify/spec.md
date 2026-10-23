@@ -136,9 +136,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Signup form displays all required fields — THEN I should see a "Create account" heading
-- [ ] Password visibility toggle — THEN the password input should have type "password"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Signup form displays all required fields — THEN I should see a "Create account" heading
+- [x] Password visibility toggle — THEN the password input should have type "password"
 - [ ] Form accepts user input — THEN the name field should contain "Jane Doe"
 - [ ] Login and terms links — THEN I should see "Have already an account?"
 - [ ] Form styling matches design tokens — THEN the signup card should have white background

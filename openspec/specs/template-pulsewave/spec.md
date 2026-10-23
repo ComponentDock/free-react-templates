@@ -175,8 +175,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar shows "Pulsewave." and all 7 navigation links
-- [ ] Hero — the hero displays "Boost Personal Productivity" as the main heading
+- [x] Navbar — the navbar shows "Pulsewave." and all 7 navigation links
+- [x] Hero — the hero displays "Boost Personal Productivity" as the main heading
 - [ ] Services — all 6 service cards are visible with titles and descriptions
 - [ ] About — the heading "Pulsewave A Digital Agency Company" is visible
 - [ ] Team — all 4 team members are visible with names and social links

@@ -122,8 +122,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Landing page with modal trigger — the landing section shows the "CouponModal" heading, a subtitle, and a "Launch CouponModal" button
-- [ ] Coupon modal with two-column layout — the left column shows a background image and the right column shows "50% Off" heading, "On all Brands" subheading, promo code input, and "Start Shopping" button
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Landing page with modal trigger — the landing section shows the "CouponModal" heading, a subtitle, and a "Launch CouponModal" button
+- [x] Coupon modal with two-column layout — the left column shows a background image and the right column shows "50% Off" heading, "On all Brands" subheading, promo code input, and "Start Shopping" button
 - [ ] Modal dismissal — the modal closes
 - [ ] Responsive design — the modal columns stack vertically with the image on top

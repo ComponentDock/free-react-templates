@@ -412,7 +412,7 @@ Dock (`https://www.componentdock.com/`) instead.
       be `apps/wanderbug`, package `@free-react-templates/wanderbug`
 - [ ] No occurrence of the source slug/name ("tralive"/"Tralive") in any
       app file — provenance lives only in this spec and the PR
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock") and
+- [x] Footer links https://www.componentdock.com/ ("Component Dock") and
       nowhere else external; `public/CNAME` =
       `wanderbug.free.componentdock.com`; `homepage` matches
 - [ ] `@theme` tokens as listed above; Josefin Sans + Roboto loaded via
@@ -433,4 +433,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` reports no errors for this spec
 - [ ] Implementer runs `scripts/verify-app.sh wanderbug` (typecheck + lint +
       100% coverage tests + build) before PR
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

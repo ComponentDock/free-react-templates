@@ -137,8 +137,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the brand link, all six section links, and the "Get a Quote" button are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the brand link, all six section links, and the "Get a Quote" button are visible
 - [ ] Hero section — the hero section shows the subheading, heading, and CTA button
 - [ ] Services section — four service cards with icons, titles, and descriptions are visible
 - [ ] Stats counter section — four stat boxes with numbers and labels are visible
@@ -148,4 +148,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonials section — the testimonials heading and 3 client quotes are visible
 - [ ] Blog section — the blog heading and 3 post cards are visible
 - [ ] Newsletter section — the newsletter heading, email input, and subscribe button are visible
-- [ ] App composition — the document title is "Counsel — Lawyer & Legal Firm Template" and all sections are present
+- [x] App composition — the document title is "Counsel — Lawyer & Legal Firm Template" and all sections are present

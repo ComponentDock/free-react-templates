@@ -517,7 +517,7 @@ Dock (`https://www.componentdock.com/`) instead.
       radius 4px; Lato 400 via Google Fonts `<link>`.
 - [ ] No ColorLib references in `apps/thresh` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] NO images (the source has none); icons only via lucide-react
       (`Check` for the checked checkbox, `X` for chip remove / clear-all —
       probed before use). NO font-awesome, NO Select2, NO Bootstrap, NO

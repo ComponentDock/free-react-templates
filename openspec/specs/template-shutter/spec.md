@@ -473,20 +473,20 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/shutter`
-- [ ] `npm run lint` passes for `apps/shutter`
+- [x] `npm run typecheck` passes for `apps/shutter`
+- [x] `npm run lint` passes for `apps/shutter`
 - [ ] `scripts/verify-app.sh shutter` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark, 8 links, "Book a Session" button, dark-mode toggle,
+- [x] Navbar: wordmark, 8 links, "Book a Session" button, dark-mode toggle,
       mobile menu
-- [ ] Hero: full-bleed image + overlay, H1, sub-paragraph, "View Portfolio"
+- [x] Hero: full-bleed image + overlay, H1, sub-paragraph, "View Portfolio"
       ghost CTA
 - [ ] Stats: 4 animated counters (500+, 10+, 50+, 99%)
 - [ ] Portfolio: filter tabs (All/Weddings/Portraits/Nature/Editorial), 8
       cards, lightbox
 - [ ] About: biography, awards list (≥3)
-- [ ] Services: 3 package cards with features + "Inquire More"
+- [x] Services: 3 package cards with features + "Inquire More"
 - [ ] Results: 2 draggable before/after sliders
 - [ ] Testimonials: carousel with prev/next + dots, ≥4 quotes
 - [ ] FAQ: 5 accordion items expand/collapse with aria-expanded
@@ -497,5 +497,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Placeholder images via seeded picsum (`seed/shutter-<n>/<w>/<h>`)
 - [ ] No copied ColorLib assets; brand stone #1c1917 + gold #f59e0b in
       `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

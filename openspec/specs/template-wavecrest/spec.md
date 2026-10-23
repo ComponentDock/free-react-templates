@@ -164,10 +164,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Room features section shows 4 items with icons
 - [ ] Gallery carousel with 5 images
 - [ ] Newsletter with subscribe form
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] Pill buttons (50% border-radius)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos/seed/wavecrest-N/W/H
 - [ ] Google Fonts loaded via <link> in index.html
 - [ ] Tests pass with 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

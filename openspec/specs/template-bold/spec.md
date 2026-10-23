@@ -190,13 +190,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Bold" and links to Home, About, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Bold" and links to Home, About, and Contact
 - [ ] Achievements section — it SHALL show metrics for Members, Likes, and Share
-- [ ] Brand trust section — it SHALL contain a heading "Leading brands trust Bold for good"
+- [x] Brand trust section — it SHALL contain a heading "Leading brands trust Bold for good"
 - [ ] Feature rows — it SHALL show a heading, a blurb, and a "Learn more" button
-- [ ] Testimonial section — it SHALL contain a heading "Join over 1M+ people who enjoy using our app"
-- [ ] Contact form — it SHALL contain a heading "Fill out the form" and a company-size selector
+- [x] Testimonial section — it SHALL contain a heading "Join over 1M+ people who enjoy using our app"
+- [x] Contact form — it SHALL contain a heading "Fill out the form" and a company-size selector
 - [ ] Footer — it SHALL show link columns for about, solutions, and company
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

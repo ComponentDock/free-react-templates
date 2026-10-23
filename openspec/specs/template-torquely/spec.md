@@ -317,18 +317,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Torquely" and links to
-- [ ] Hero section — it SHALL contain a level-1 heading "Make your car last longer"
-- [ ] Intro strip — it SHALL show "Are you ready?" and "Let's repair it now!"
-- [ ] Services section — it SHALL contain a heading "Our car services"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Torquely" and links to
+- [x] Hero section — it SHALL contain a level-1 heading "Make your car last longer"
+- [x] Intro strip — it SHALL show "Are you ready?" and "Let's repair it now!"
+- [x] Services section — it SHALL contain a heading "Our car services"
 - [ ] About section — it SHALL contain a heading "We help more than 45 years serving
-- [ ] Statistics section — it SHALL show counters for "Years of Experienced" (45), "Project
-- [ ] Appointment section — it SHALL contain a heading "Free Consultation"
-- [ ] Testimonials section — it SHALL contain a heading "Happy Clients & Feedbacks"
-- [ ] Blog section — it SHALL contain a heading "Latest news from our blog"
-- [ ] Pricing section — it SHALL contain a heading "Pricing"
-- [ ] Projects section — it SHALL contain a heading "Done Projects"
+- [x] Statistics section — it SHALL show counters for "Years of Experienced" (45), "Project
+- [x] Appointment section — it SHALL contain a heading "Free Consultation"
+- [x] Testimonials section — it SHALL contain a heading "Happy Clients & Feedbacks"
+- [x] Blog section — it SHALL contain a heading "Latest news from our blog"
+- [x] Pricing section — it SHALL contain a heading "Pricing"
+- [x] Projects section — it SHALL contain a heading "Done Projects"
 - [ ] Footer — it SHALL show contact information and business hours
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

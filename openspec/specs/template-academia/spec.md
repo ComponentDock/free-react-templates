@@ -501,8 +501,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens from the reference used in `@theme` (teal #04D2C8, peach #FD8E5E, blue #5DB2FF, orange #FDAE5C, purple #D465EF, ink #1F1F1F, greys #919191/#999/#BABABA; Poppins + Crimson Text fonts)
 - [ ] Header: transparent over hero with white text, teal wordmark logo, centered nav with active Home teal underline, Log in link + orange pill phone button; sticky white variant; mobile hamburger menu
 - [ ] Hero: 100vh purple-gradient bg, two 6-col halves (illustration left / white 3-line headline + teal pill CTA right)
-- [ ] About: 46px heading, Crimson Text paragraph, "Enroll a Course" teal pill, three floating stat circles (peach/blue/teal at opacity .7, white text)
-- [ ] Popular Courses: section title + blurb, 9-tab bar (active = ink + teal underline), 3-col card grid (thumb, category span, 2-line title, star + (4.5), offer strikethrough + teal active price), tab click filters cards, teal outline "More Courses" pill
+- [x] About: 46px heading, Crimson Text paragraph, "Enroll a Course" teal pill, three floating stat circles (peach/blue/teal at opacity .7, white text)
+- [x] Popular Courses: section title + blurb, 9-tab bar (active = ink + teal underline), 3-col card grid (thumb, category span, 2-line title, star + (4.5), offer strikethrough + teal active price), tab click filters cards, teal outline "More Courses" pill
 - [ ] Testimonial: bg image + black overlay opacity .5, white centered quote + author + round avatar
 - [ ] Speciality: 4 cards with circular icon badges (teal/purple glyphs), heading + paragraph
 - [ ] Newsletter: solid #04D2C8 bg, white heading/description, 60px white input + peach Sign Up button, email validation + success state
@@ -510,5 +510,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: dark bg, white wordmark + blurb + socials, Courses/Resources/About columns (#BABABA links hover #FDAE5C), bottom copyright bar with Component Dock credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react; Poppins + Crimson Text via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Edumark lines (382 AND 1632 AND 2042) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

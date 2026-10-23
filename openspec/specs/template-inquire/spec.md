@@ -122,10 +122,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-viewport green background — the root container has a green background covering the full viewport
 - [ ] Centered white contact card — I see a white card centered on the green background
-- [ ] Contact form with five fields — I see a text input with placeholder "Your name"
-- [ ] Green submit button — I see a "Submit" button
+- [x] Contact form with five fields — I see a text input with placeholder "Your name"
+- [x] Green submit button — I see a "Submit" button
 - [ ] Form submission feedback — I see a success confirmation message
 - [ ] Responsive design — the form card is visible and usable

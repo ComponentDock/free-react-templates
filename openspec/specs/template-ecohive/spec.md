@@ -283,7 +283,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-ecohive/spec.md` validates (`npm run spec:validate`).
-- [ ] `apps/ecohive` exists, package `@free-react-templates/ecohive`, no ColorLib
+- [x] `apps/ecohive` exists, package `@free-react-templates/ecohive`, no ColorLib
       string in any file.
 - [ ] Section order matches the list above 1:1.
 - [ ] Design tokens match (`#2d0a31`, `#f067ff`, gradient `#7346d6→#a136b8`,
@@ -292,14 +292,14 @@ Dock (`https://www.componentdock.com/`) instead.
       assets.
 - [ ] `scripts/verify-app.sh ecohive` passes (typecheck + lint + 100% coverage +
       build).
-- [ ] `public/CNAME` = `ecohive.free.componentdock.com`; homepage set.
-- [ ] Footer links to https://www.componentdock.com/.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `public/CNAME` = `ecohive.free.componentdock.com`; homepage set.
+- [x] Footer links to https://www.componentdock.com/.
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header — the header shows the Ecohive wordmark, nav links Home, Packages,
-- [ ] Hero — a violet eyebrow, a large white H1 ("Powerful web hosting"), a muted
-- [ ] Domain search — it shows a "Search new domain" heading, a supporting paragraph, a
+- [x] Hero — a violet eyebrow, a large white H1 ("Powerful web hosting"), a muted
+- [x] Domain search — it shows a "Search new domain" heading, a supporting paragraph, a
 - [ ] Features — six feature cards each show an outlined icon, an `h5` caption and a
 - [ ] Pricing — three white tier cards (Shared Hosting $2.95/month, Dedicated Hosting
 - [ ] Split content bands — each shows a heading (ink `#4c1e51`) and paragraph beside an image
-- [ ] FAQ — it shows a "Frequently ask questions" title and an accordion whose
+- [x] FAQ — it shows a "Frequently ask questions" title and an accordion whose
 - [ ] Testimonials — a plum rounded card shows a quote, a 68×68 initials avatar and the

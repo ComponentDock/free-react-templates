@@ -120,8 +120,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No errors on valid submit
 - [ ] Responsive on mobile (375px)
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Uses placeholder images via picsum.photos
 - [ ] Google fonts via <link> in index.html
 - [ ] Icons from lucide-react (if needed)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

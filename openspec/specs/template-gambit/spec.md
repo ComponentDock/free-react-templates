@@ -514,7 +514,7 @@ Dock (`https://www.componentdock.com/`) instead.
       titles; Recent Update: 3 gradient-active tabs + 3 image/text panes
 - [ ] Gallery: 4 images with lightbox + hover eye icon; Testimonials: 3
       slides, 5 yellow stars, italic quotes, carousel controls
-- [ ] Pricing: 3 gradient cards, middle "active", $69.00 on `#342b7e` block,
+- [x] Pricing: 3 gradient cards, middle "active", $69.00 on `#342b7e` block,
       3 features each, "Order Now" gradient_btn
 - [ ] FAQ: 6 accordion items, one open at a time; Blog: 3 cards with meta
       row (calendar / heart / comments)
@@ -526,5 +526,5 @@ Dock (`https://www.componentdock.com/`) instead.
       hero game art recreated as an inline SVG (no assets copied)
 - [ ] Dark-mode toggle present per repo conventions (dark: variants)
 - [ ] README status table regenerated after merge (`npm run readme:status`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

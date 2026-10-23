@@ -236,17 +236,17 @@ Dock (`https://www.componentdock.com/`) instead.
       coverage tests + build)
 - [ ] `npm run spec:validate` passes
 - [ ] TEMPLATES.md Reshape lines marked `[x]` with the Chisel surge URL
-- [ ] `"homepage": "https://chisel.free.componentdock.com"` in
+- [x] `"homepage": "https://chisel.free.componentdock.com"` in
       `apps/chisel/package.json`
 - [ ] `npm run readme:status` regenerates README with Chisel listed
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Chisel" and links to Home,
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Chisel" and links to Home,
 - [ ] Hero section — it SHALL contain a level-1 heading "We are Chisel, and we shape
 - [ ] Stats band — it SHALL show the values 1087, 57, 670, and 900
 - [ ] About section — it SHALL show a heading and at least one paragraph of copy
-- [ ] Services section — it SHALL contain an "OUR SERVICES" eyebrow and an intro heading
-- [ ] Portfolio section — it SHALL contain a "PORTFOLIO" heading and at least one project
-- [ ] Testimonials section — it SHALL show a blockquote and the author name "James Anderson"
+- [x] Services section — it SHALL contain an "OUR SERVICES" eyebrow and an intro heading
+- [x] Portfolio section — it SHALL contain a "PORTFOLIO" heading and at least one project
+- [x] Testimonials section — it SHALL show a blockquote and the author name "James Anderson"
 - [ ] Blog section — it SHALL show four posts with headings
 - [ ] Footer — it SHALL show link columns, a contact block (address, phone,
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

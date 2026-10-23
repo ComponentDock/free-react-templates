@@ -170,7 +170,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Click toggles dropdown open/close
 - [ ] Menu contains: User Dashboard, Inbox, Following, Setting, Log out
 - [ ] Inbox has orange "3" badge
-- [ ] Setting has orange "New" badge
+- [x] Setting has orange "New" badge
 - [ ] Menu items have icons with 15px right margin
 - [ ] Items separated by rgba(0,0,0,0.1) borders
 - [ ] Menu has white background with box-shadow
@@ -178,6 +178,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Outside click closes dropdown
 - [ ] aria-expanded toggles correctly
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Vitest + Testing Library tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

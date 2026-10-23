@@ -155,7 +155,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full viewport background — the page has a full-viewport background image
 - [ ] Centered search form — a form is centered vertically and horizontally
 - [ ] Search input default state — a single search input is displayed

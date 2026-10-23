@@ -159,7 +159,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders with grouped multiselect widget — the heading "Multi-Select #8 (Limit selection on groups)" is visible
 - [ ] Dropdown opens showing grouped options — a dropdown panel appears with a search input
 - [ ] Selecting options within a group — the checkbox next to "Alpha" is checked

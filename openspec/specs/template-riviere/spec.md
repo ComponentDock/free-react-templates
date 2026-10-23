@@ -195,14 +195,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header utility bar — the top bar should display a country flag indicator and phone number
 - [ ] Main header navigation — the header should display the site logo
 - [ ] Hero slider — the hero slider should display a background image
-- [ ] Shop by Category — the "Shop by Category" section should display 4 category cards
-- [ ] Latest Products — the "Latest Products" section should display product cards
-- [ ] Best Collection — the "Best Collection of This Month" section should display products
+- [x] Shop by Category — the "Shop by Category" section should display 4 category cards
+- [x] Latest Products — the "Latest Products" section should display product cards
+- [x] Best Collection — the "Best Collection of This Month" section should display products
 - [ ] Shop Methods — the shop methods section should display 3 feature cards
 - [ ] Gallery — the gallery section should display 5 images in a horizontal row
 - [ ] Responsive design — the desktop navigation should be hidden

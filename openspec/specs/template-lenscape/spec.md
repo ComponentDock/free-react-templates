@@ -169,7 +169,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with navigation and mobile menu — it contains links for Home, About, Services, Skills, Works, Contact
 - [ ] Hero section with portrait and CTAs — it shows the heading "I'm Alex Mercer"
 - [ ] About section with counter stats — it shows stat values 12, 350, 200, 15 with their labels
@@ -177,4 +177,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Services section with cards — it shows 6 service cards with titles and descriptions
 - [ ] Works/Portfolio section — it shows 6 portfolio items with images and titles
 - [ ] Testimonials section — it shows 3 testimonials with names and quotes
-- [ ] Contact section with form — a "Thank you!" message is displayed
+- [x] Contact section with form — a "Thank you!" message is displayed

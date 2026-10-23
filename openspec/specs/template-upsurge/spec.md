@@ -346,17 +346,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/upsurge` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/upsurge` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- upsurge` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#eb2b63, #2e1779, #0a0228, #7246b3, #431483, #eef6f9, #200545, #1b043b, Montserrat) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `upsurge-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib assets copied (picsum seeds `upsurge-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar — the header SHALL show a rocket icon + "Upsurge" logo on the left
-- [ ] Hero section — the hero SHALL show the headline "Unbeatable Offers" in white,
+- [x] Hero section — the hero SHALL show the headline "Unbeatable Offers" in white,
 - [ ] Features section — the section SHALL show a small rocket icon, an uppercase grey
-- [ ] Domain search section — the section SHALL show the white title "See our features" with
+- [x] Domain search section — the section SHALL show the white title "See our features" with
 - [ ] Skills & testimonials section — it SHALL show five labeled progress bars — Illustrator 80,
 - [ ] Pricing section — the section SHALL show its centered section title and three
 - [ ] Banner section — the banner SHALL show the headline "Dedicated hosting solutions

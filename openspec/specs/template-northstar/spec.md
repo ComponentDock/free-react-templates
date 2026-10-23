@@ -196,13 +196,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation — I should see links for Home, About, Our Training, Services, Contact
-- [ ] Hero section — I should see a heading starting with "We are"
+- [x] Hero section — I should see a heading starting with "We are"
 - [ ] About section — I should see "Hey there, I'm John The Founder"
-- [ ] Training section — I should see heading "Our Training"
-- [ ] Services section — I should see heading "Our Services"
-- [ ] Gallery section — I should see heading "Gallery"
-- [ ] Testimonials section — I should see heading "Happy Customers"
-- [ ] Blog section — I should see heading "Our Blog"
+- [x] Training section — I should see heading "Our Training"
+- [x] Services section — I should see heading "Our Services"
+- [x] Gallery section — I should see heading "Gallery"
+- [x] Testimonials section — I should see heading "Happy Customers"
+- [x] Blog section — I should see heading "Our Blog"
 - [ ] Contact section — I should see fields for First Name (x2), Email, Message

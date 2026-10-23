@@ -207,8 +207,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Top info bar with welcome text + hours + phone
-- [ ] Sticky nav with logo, links, dropdown, "Book Now" button
-- [ ] Hero slider with background image, heading, quote, "About Us" button
+- [x] Sticky nav with logo, links, dropdown, "Book Now" button
+- [x] Hero slider with background image, heading, quote, "About Us" button
 - [ ] About section: 3-column layout (heading, image, content)
 - [ ] Services section: 4-column grid with icons
 - [ ] Why Choose Us: image + heading + bullet list on gray background
@@ -222,5 +222,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Open Sans for body text
 - [ ] Responsive layout across breakpoints
 - [ ] Component Dock footer link
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

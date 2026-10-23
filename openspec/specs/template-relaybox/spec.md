@@ -228,6 +228,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gherkin scenarios cover: layout, contact info, fields, validation,
       submission, responsiveness, footer
 - [ ] Design tokens table complete with hex estimates
-- [ ] No ColorLib references in implementation code (only in spec)
+- [x] No ColorLib references in implementation code (only in spec)
 - [ ] Name "relaybox" verified no collision with apps/ or specs/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

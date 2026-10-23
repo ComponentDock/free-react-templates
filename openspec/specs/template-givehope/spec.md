@@ -368,5 +368,5 @@ Dock (`https://www.componentdock.com/`) instead.
       scroll, progress bars animate, social icons appear on volunteer
       hover, newsletter form is functional (mock submit).
 - [ ] Responsive check at 576px and 768px (stacked layouts, no overflow).
-- [ ] Footer links to Component Dock, no ColorLib references in app code.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to Component Dock, no ColorLib references in app code.
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -410,17 +410,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/patisserie`)
 - [ ] Section order matches the reference 1:1 (header → hero → About → Latest Cakes → video → testimonials → blog → features → Instagram → footer)
 - [ ] Design tokens in `@theme` (brand gold #E5BF4A, page dark #0A0A0A, Poiret One + Jost font stacks)
-- [ ] Header: dark, top bar (social left + "Call Us" right), centered "Patisserie" gold wordmark, centered uppercase nav (Home/Cakes/About/Blog/Contact) with Blog dropdown, hamburger on mobile, `#0A0A0A` sticky bg
-- [ ] Hero: 700px cover photo (darkened), white pill badge, 70px Poiret One white h1, white 22px subcopy, square gold "Order Now" (hero padding 35px 55px)
+- [x] Header: dark, top bar (social left + "Call Us" right), centered "Patisserie" gold wordmark, centered uppercase nav (Home/Cakes/About/Blog/Contact) with Blog dropdown, hamburger on mobile, `#0A0A0A` sticky bg
+- [x] Hero: 700px cover photo (darkened), white pill badge, 70px Poiret One white h1, white 22px subcopy, square gold "Order Now" (hero padding 35px 55px)
 - [ ] About: centered 40px heading + 100px gold underline bar, gold 24px caption h2 + 2 paragraphs, round cake photo right
-- [ ] Latest Cakes: 4 product cards (photo, title, gold price), hover gold "Add to cart" bar, side arrows
+- [x] Latest Cakes: 4 product cards (photo, title, gold price), hover gold "Add to cart" bar, side arrows
 - [ ] Video: full-width bg photo + 100px white circle gold play icon + gold pulse ring, hover fills gold
-- [ ] Testimonials: "Food Lover's Say", 3 cards (5 gold stars, quote, avatar, Wilma Mumduya)
+- [x] Testimonials: "Food Lover's Say", 3 cards (5 gold stars, quote, avatar, Wilma Mumduya)
 - [ ] Blog: "Our Blogs" + "More Blog" button same row, 2 cards (photo, gold date badge, title, meta, gold link)
 - [ ] Features: 2 alternating rows (image right / image left), h3 + paragraph + gold "Learn More" underline link
-- [ ] Instagram: "Follow us on Instagram" + "@patisserie" handle + 4-col photo grid
+- [x] Instagram: "Follow us on Instagram" + "@patisserie" handle + 4-col photo grid
 - [ ] Footer: centered menu links + divider, about blurb + 3 social icons, Location + Contact gold-headed widgets, copyright bar links Component Dock
 - [ ] Buttons: `#E5BF4A` square (radius 0), `#0A0A0A` uppercase text, 1px `#2A2A2A` border; hover → transparent + gold border/text
 - [ ] Document title "Patisserie — Bakery Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 555 and line 1775
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

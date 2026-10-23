@@ -439,15 +439,15 @@ Dock (`https://www.componentdock.com/`) instead.
       (2px `#7ad4cc` border, white text, padding 15px 30px) for Sign Up
       Free; gradient variant (borderless, padding 17px 32px) for Get
       Started buttons
-- [ ] Header absolute over hero: "Coinly" text logo left; white nav
+- [x] Header absolute over hero: "Coinly" text logo left; white nav
       Solution / Features / News / About / Contact; outline Sign Up Free
       pill right
 - [ ] Hero: 900px, `#f3f7f9` bg + gradient polygon graphic top-right; 70px
       h2 (dark blue + teal span); 22px `#75849a` sub-heading; pill email
       input + gradient Get Started; laptop mockup right (~685px)
-- [ ] About: 48px dark-blue h2 "What is Bitcoin" + h5 + 2 paragraphs +
+- [x] About: 48px dark-blue h2 "What is Bitcoin" + h5 + 2 paragraphs +
       gradient button left; illustration right
-- [ ] Features: gradient band, white "Our Features" title, 6 cards
+- [x] Features: gradient band, white "Our Features" title, 6 cards
       (lucide icon + h4 + underlined Readmore): Mobile Apps, Safe &
       Secure, Wallet, Experts Support, Instant Exchange, Recuring Buys
 - [ ] Process: 3 steps with numbered icons and DISTINCT titles (source
@@ -474,5 +474,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` on ALL three dup rows (lines 371, 967, 1748) + surge URL + `npm run readme:status` done by implementer at
       ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

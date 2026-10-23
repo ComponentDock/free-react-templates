@@ -160,12 +160,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders with navigation links — the navbar displays "Lenscraft" logo
-- [ ] Hero banner displays with headline and image — a hero section displays with headline "Images matter"
-- [ ] About section renders with image and text — a section title "Let's Introduce About Myself" is visible
-- [ ] Services section displays 6 service cards — a "What We Offer" heading is visible
-- [ ] Portfolio gallery shows work items — a "Check Our Work" heading is visible
-- [ ] Pricing section shows 3 packages — a "Choose Your Package" heading is visible
-- [ ] Blog section shows recent posts — a "Latest Good Story" heading is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders with navigation links — the navbar displays "Lenscraft" logo
+- [x] Hero banner displays with headline and image — a hero section displays with headline "Images matter"
+- [x] About section renders with image and text — a section title "Let's Introduce About Myself" is visible
+- [x] Services section displays 6 service cards — a "What We Offer" heading is visible
+- [x] Portfolio gallery shows work items — a "Check Our Work" heading is visible
+- [x] Pricing section shows 3 packages — a "Choose Your Package" heading is visible
+- [x] Blog section shows recent posts — a "Latest Good Story" heading is visible
 - [ ] Mobile responsive layout — the navbar collapses to a hamburger menu

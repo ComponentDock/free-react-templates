@@ -113,9 +113,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation Bar — the navigation bar displays "Merry" brand text, Home/Features/Showcase/Contact links, and a "Get Started" button
-- [ ] Hero Section — a heading, description text, and "Explore Showcase" CTA link are visible
-- [ ] Interactive Carousel Section — the first carousel item "Modern Architecture Showcase" is displayed
-- [ ] Features Grid — four feature cards are displayed with titles "Multi-Item Display", "Smooth Transitions", "Accessible by Default", and "Community Driven"
-- [ ] Newsletter Subscription — an email input and "Subscribe" button are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation Bar — the navigation bar displays "Merry" brand text, Home/Features/Showcase/Contact links, and a "Get Started" button
+- [x] Hero Section — a heading, description text, and "Explore Showcase" CTA link are visible
+- [x] Interactive Carousel Section — the first carousel item "Modern Architecture Showcase" is displayed
+- [x] Features Grid — four feature cards are displayed with titles "Multi-Item Display", "Smooth Transitions", "Accessible by Default", and "Community Driven"
+- [x] Newsletter Subscription — an email input and "Subscribe" button are visible

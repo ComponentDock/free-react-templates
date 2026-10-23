@@ -193,13 +193,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Form inputs with bottom-border-only styling (transparent bg)
 - [ ] Gold pill-shaped CTA buttons (border-radius 21px)
 - [ ] Full-viewport background image with dark card overlay
-- [ ] "Your Reservation" heading in Bitter font, white, uppercase, bordered
+- [x] "Your Reservation" heading in Bitter font, white, uppercase, bordered
 - [ ] Backward/forward navigation between steps
 - [ ] Step 4 confirmation summary with checkbox list
 - [ ] Responsive: stacks vertically on mobile (< 768px)
-- [ ] No ColorLib references in app code (provenance only in spec)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code (provenance only in spec)
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Tests: 100% coverage (lines, functions, branches, statements)
 - [ ] Typecheck passes, lint passes, build succeeds
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

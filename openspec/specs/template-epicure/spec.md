@@ -356,11 +356,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh
     epicure`, PR lists source (ColorLib Cuisines), preview URL, tokens,
       and what differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Sidebar navigation — a fixed white sidebar SHALL show the site wordmark "Epicure"
-- [ ] Hero — it SHALL show the headline "You don't need a silver fork to eat good food."
-- [ ] Special Offers section — it SHALL show the eyebrow "Offers" above the heading "Special Offers"
-- [ ] About section — it SHALL show the eyebrow "About Us" and the heading "About Epicure"
-- [ ] Testimonials section — it SHALL show the eyebrow "Testimonials" and the heading "Happy Customers"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Sidebar navigation — a fixed white sidebar SHALL show the site wordmark "Epicure"
+- [x] Hero — it SHALL show the headline "You don't need a silver fork to eat good food."
+- [x] Special Offers section — it SHALL show the eyebrow "Offers" above the heading "Special Offers"
+- [x] About section — it SHALL show the eyebrow "About Us" and the heading "About Epicure"
+- [x] Testimonials section — it SHALL show the eyebrow "Testimonials" and the heading "Happy Customers"
 - [ ] Page composition — the page SHALL compose the sidebar, hero, special offers, about, testimonials, and footer in order

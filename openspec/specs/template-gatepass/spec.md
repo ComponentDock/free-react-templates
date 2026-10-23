@@ -128,12 +128,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Renders welcome heading and subtitle — I should see "Welcome Back"
-- [ ] Renders email and password fields — I should see an email field labeled "Email"
-- [ ] Renders social login buttons — I should see a "Sign in with Google" button
-- [ ] Renders forgot password link — I should see a "Forgot Password?" link
-- [ ] Renders create account link — I should see a "Create an account" link
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Renders welcome heading and subtitle — I should see "Welcome Back"
+- [x] Renders email and password fields — I should see an email field labeled "Email"
+- [x] Renders social login buttons — I should see a "Sign in with Google" button
+- [x] Renders forgot password link — I should see a "Forgot Password?" link
+- [x] Renders create account link — I should see a "Create an account" link
 - [ ] Accepts email input — the email field should contain "user@example.com"
 - [ ] Accepts password input — the password field should contain "secret123"
 - [ ] Form submits without error — the form should submit without error

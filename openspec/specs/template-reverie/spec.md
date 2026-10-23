@@ -774,7 +774,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] `public/CNAME` = `reverie.free.componentdock.com`; `homepage` matches.
 - [x] Tests: Vitest + Testing Library, 100% lines/functions/branches/statements.
 - [x] `scripts/verify-app.sh reverie` passes (typecheck + lint + coverage + build).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (implementer, 2026-10-13)
 

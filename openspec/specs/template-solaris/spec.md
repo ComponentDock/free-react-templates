@@ -192,12 +192,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Header: logo "Solaris" left, nav links right (Home, About, Portfolio,
+- [x] Header: logo "Solaris" left, nav links right (Home, About, Portfolio,
   Blog, Contact), search icon
 - [ ] Intro paragraph: 24px Montserrat, right-aligned description
 - [ ] Filter bar: All | Post | Image | Video | Extern with dot separators
 - [ ] Portfolio grid: 3-column masonry, 6 items, hover overlay with caption
-- [ ] Two-column section: "The Story" left, "Dreamers" right with "More…" link
+- [x] Two-column section: "The Story" left, "Dreamers" right with "More…" link
 - [ ] Footer: copyright + heart + logo + social links (Twitter, LinkedIn,
   Dribbble, Instagram)
 - [ ] Footer: Component Dock link present

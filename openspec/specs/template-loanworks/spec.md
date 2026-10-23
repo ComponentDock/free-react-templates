@@ -177,10 +177,10 @@ And the footer links to "https://www.componentdock.com/" branded as "Component D
 - [ ] Brand logos carousel displays
 - [ ] CTA banner has dark overlay
 - [ ] Footer has 4 columns with newsletter form
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] All buttons use teal (#33D4D6) brand color
 - [ ] Font is Roboto (loaded via Google Fonts)
 - [ ] Responsive on mobile, tablet, and desktop
-- [ ] No references to ColorLib in app code
-- [ ] `public/CNAME` contains `loanworks.free.componentdock.com`
-- [ ] `package.json` homepage is `https://loanworks.free.componentdock.com`
+- [x] No references to ColorLib in app code
+- [x] `public/CNAME` contains `loanworks.free.componentdock.com`
+- [x] `package.json` homepage is `https://loanworks.free.componentdock.com`

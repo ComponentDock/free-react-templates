@@ -184,7 +184,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Navbar: sticky, logo + links, mobile hamburger toggle
 - [ ] Banner: headline, subtext, gradient CTA button, video link, decorative blobs
-- [ ] About: two-column image + text, headline, "Read More" CTA
+- [x] About: two-column image + text, headline, "Read More" CTA
 - [ ] Services: gray bg, intro text, 2 service cards with icons
 - [ ] Testimonials: centered headline, thumbnail carousel, quote + reviewer
 - [ ] Portfolio: masonry grid, quote card + 4 project cards
@@ -194,6 +194,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Copyright: dark bar with copyright text
 - [ ] Design tokens: gradient buttons (#feb47b → #ff7e5f), pill shape (50px radius), Poppins headings, Roboto body
 - [ ] Responsive: all sections stack properly at mobile widths
-- [ ] No ColorLib references in app code — provenance only in spec + TEMPLATES.md
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code — provenance only in spec + TEMPLATES.md
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

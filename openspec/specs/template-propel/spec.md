@@ -333,17 +333,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/propel` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/propel` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- propel` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#0e49b5, #0c3e9a, #0b3a91, #212529, #6c757d, #efefef, #f8f9fa, #f0f0f0, #ccc, #999, #777, #888, #4a4a4a, Montserrat/Open Sans) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `propel-<n>`, Google Fonts links, lucide icons only)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header + navigation — the header SHALL show the brand "Propel" on the left in white
+- [x] No ColorLib assets copied (picsum seeds `propel-<n>`, Google Fonts links, lucide icons only)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header + navigation — the header SHALL show the brand "Propel" on the left in white
 - [ ] Hero — the hero SHALL fill the viewport (min-height 700px) with a photo
-- [ ] Startup / Best Company section — the section SHALL show the heading "Startup" (34px bold) with a
-- [ ] Services section — the section SHALL show the heading "Services" with a supporting
-- [ ] Blog Posts section — the section SHALL show the centered heading "Blog Posts" with a
-- [ ] Contact section — the section SHALL show the centered heading "Contact" with a
+- [x] Startup / Best Company section — the section SHALL show the heading "Startup" (34px bold) with a
+- [x] Services section — the section SHALL show the heading "Services" with a supporting
+- [x] Blog Posts section — the section SHALL show the centered heading "Blog Posts" with a
+- [x] Contact section — the section SHALL show the centered heading "Contact" with a
 - [ ] Half-content CTA panels — panel one SHALL show a cover image on the left and, on the right
 - [ ] Page composition — the page SHALL compose the Header in the banner landmark, all

@@ -159,11 +159,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays logo, navigation links, dark mode toggle, and CTA — the navbar shows "MicDrop" logo with a red microphone icon on the left
-- [ ] Hero displays headline, subtitle, and CTAs — a red pill badge shows "New Episode Every Tuesday"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar displays logo, navigation links, dark mode toggle, and CTA — the navbar shows "MicDrop" logo with a red microphone icon on the left
+- [x] Hero displays headline, subtitle, and CTAs — a red pill badge shows "New Episode Every Tuesday"
 - [ ] Stats bar shows key metrics — "500+" Episodes is displayed
-- [ ] Secondary stats section highlights reach — a light background section shows red stats: "200+" Episodes Published, "1M+" Total Downloads, "50+" Countries Reached, "4.9" Average Rating
+- [x] Secondary stats section highlights reach — a light background section shows red stats: "200+" Episodes Published, "1M+" Total Downloads, "50+" Countries Reached, "4.9" Average Rating
 - [ ] Episodes section shows recent episodes — a grid of episode cards is displayed
 - [ ] Guest profiles are displayed — guest cards show name, role/title, and a short bio
 - [ ] Newsletter form captures email — a heading invites subscription

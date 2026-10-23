@@ -141,12 +141,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Renders all form fields — the Name, Email, Budget, and Message fields are visible
-- [ ] Renders heading — a "Get Started" heading is visible
+- [x] Renders heading — a "Get Started" heading is visible
 - [ ] Updates Name input — the Name field contains "Alice"
 - [ ] Updates Email input — the Email field contains "alice@example.com"
-- [ ] Updates Budget select — the Budget dropdown shows "Low"
+- [x] Updates Budget select — the Budget dropdown shows "Low"
 - [ ] Updates Message textarea — the Message field contains "Hello there"
 - [ ] Prevents default form submission — the form does not navigate
 - [ ] Has underline-style inputs — it has a bottom border class

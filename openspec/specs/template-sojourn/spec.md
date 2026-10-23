@@ -252,12 +252,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh sojourn`,
       PR lists source (ColorLib Sasha), preview URL, tokens, and what differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header — the header SHALL show a light `header-top` with the site name "Sojourn" and a hamburger menu button
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header — the header SHALL show a light `header-top` with the site name "Sojourn" and a hamburger menu button
 - [ ] Banner slider — it SHALL show at least two slides
 - [ ] Post grid — it SHALL show at least eight post cards in a two-column centered grid
-- [ ] Sidebar widgets — it SHALL show, top to bottom: an "About me" widget (avatar, name, bio), a "Newsletter" widget, an "Instagram" thumbnail grid, a "Recent Posts" list (thumbnail + title + date), and…
+- [x] Sidebar widgets — it SHALL show, top to bottom: an "About me" widget (avatar, name, bio), a "Newsletter" widget, an "Instagram" thumbnail grid, a "Recent Posts" list (thumbnail + title + date), and…
 - [ ] Instagram strip — it SHALL show a full-width strip of six Instagram tiles
 - [ ] Footer — it SHALL show social icons on the right side of the footer row
 - [ ] Page composition — the page SHALL compose the header, banner slider, post grid, sidebar, Instagram strip, and footer in order

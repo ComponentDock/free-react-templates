@@ -406,7 +406,7 @@ Dock (`https://www.componentdock.com/`) instead.
       breakpoints)
 - [ ] Heading "Table #04" — 28px / font-weight 400 / `#000`, centered,
       3rem margin-bottom on the wrapper column
-- [ ] Subheading "Class Schedule Table" — 24px / font-weight 400 /
+- [x] Subheading "Class Schedule Table" — 24px / font-weight 400 /
       `#000`, centered, 1.5rem margin-bottom
 - [ ] Table: `min-width: 1000px` inside an `overflow-x-auto` wrapper;
       white background, centered text, shadow
@@ -436,4 +436,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] 100% test coverage via `scripts/verify-app.sh gridmark`; PR
       `feat/template-gridmark` with source slug + preview URL + tokens in
       the description
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

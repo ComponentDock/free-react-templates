@@ -441,15 +441,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/esquire` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/esquire` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- esquire` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#F2C64D, #CEA159, #1F1F1F, #000, #202020, #FFFDF8, #171717, #8B8B8B, #FEF7E7, #C7C7C7, #727272, #919191, #fff, Playfair Display, Poppins) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `esquire-<n>`, Google Fonts Playfair Display + Poppins links, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `esquire-<n>`, Google Fonts Playfair Display + Poppins links, lucide icons + inline SVG brand icons only)
 - [ ] Practice cards reveal the `rgba(31,31,31,0.9)` overlay with gold Learn More on hover; hero CTA inverts (gold fill) on hover
 - [ ] Testimonials carousel implemented with client-side state (no owl-carousel dep); arrows + dots behave
 - [ ] Header social chips 40×40 `#171717` circles; lawyer chips 35×35 `#FEF7E7` 10px radius; ALL other corners square
 - [ ] Appointment form validates (zod) + swaps to success (inputs unmount — assert absence); submit blocked until valid; full-width gold Submit
 - [ ] Mobile hamburger menu opens/closes with focus handling
 - [ ] Footer subscribe form validates + swaps to success
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

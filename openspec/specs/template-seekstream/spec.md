@@ -103,8 +103,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Search form rendering — a form element with aria-label "Search form" is visible
-- [ ] Search bar — the input value updates to "shoes"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Search form rendering — a form element with aria-label "Search form" is visible
+- [x] Search bar — the input value updates to "shoes"
 - [ ] Advanced search panel — six select elements are visible
 - [ ] User interactions — the onSearch callback is invoked

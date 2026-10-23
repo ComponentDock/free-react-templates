@@ -363,7 +363,7 @@ Dock (`https://www.componentdock.com/`) instead.
       overlay, `cover`/`center`
 - [ ] Card: max-width 768px, bg `#fff`, radius 3px, padding 30px, margin
       auto
-- [ ] Header: h1 "Make your reservation", Cardo 700 38px `#0c0c09`,
+- [x] Header: h1 "Make your reservation", Cardo 700 38px `#0c0c09`,
       centered, 40px bottom margin
 - [ ] Check In (date, required) + Check out (date, required) side by side;
       `⇔` divider in `#c99552` between them, `hidden` below `sm`
@@ -376,7 +376,7 @@ Dock (`https://www.componentdock.com/`) instead.
       focus
 - [ ] Labels: static, above input, 14px weight-700 capitalized `#c99552`,
       `htmlFor`/`id` associated
-- [ ] "Check availability" button: full width, `#c99552` bg, white
+- [x] "Check availability" button: full width, `#c99552` bg, white
       weight-700 14px text, height 50px, radius 3px, border none; validates
       (dates required, check-out ≥ check-in) and shows summary / validation
       messages
@@ -385,5 +385,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

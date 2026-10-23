@@ -146,19 +146,19 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Split-screen layout renders correctly (50/50 columns)
 - [ ] Left panel shows dark map background image
 - [ ] Green phone badge renders on the map with phone icon and number
-- [ ] Right panel shows white form with "Contact Us" heading
+- [x] Right panel shows white form with "Contact Us" heading
 - [ ] All four fields render: Name, Email, Phone, Message
-- [ ] Field labels match the original ("Name", "Email", "Phone", "Message")
-- [ ] Placeholder text matches ("Phone Number...", "Questions/Comments...")
+- [x] Field labels match the original ("Name", "Email", "Phone", "Message")
+- [x] Placeholder text matches ("Phone Number...", "Questions/Comments...")
 - [ ] Focus state shows coral/red underline
 - [ ] Validation shows green checkmark on valid fields
 - [ ] Send button has coral-to-pink gradient
 - [ ] Send button is pill-shaped (fully rounded)
 - [ ] Responsive: stacks vertically on mobile (<768px)
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` contains `msgdrop.free.componentdock.com`
-- [ ] `homepage` in package.json is `https://msgdrop.free.componentdock.com`
+- [x] No ColorLib references in app code
+- [x] `public/CNAME` contains `msgdrop.free.componentdock.com`
+- [x] `homepage` in package.json is `https://msgdrop.free.componentdock.com`
 - [ ] `vite.config.ts` registers `injectUiSource()`
-- [ ] Footer credits Component Dock (not ColorLib)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock (not ColorLib)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

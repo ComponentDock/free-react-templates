@@ -362,11 +362,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: 3 widget columns + social circles + Component Dock link
 - [ ] Buttons: pill `rounded-full` (radius 30px source); primary blue
       `#78d5ef`; nav CTA white/pink
-- [ ] No ColorLib assets copied: picsum.photos seeds, lucide-react icons,
+- [x] No ColorLib assets copied: picsum.photos seeds, lucide-react icons,
       Google Fonts links only; no particle library (CSS/SVG pattern)
-- [ ] Footer links https://www.componentdock.com/ (required, no ColorLib in
+- [x] Footer links https://www.componentdock.com/ (required, no ColorLib in
       app code)
-- [ ] `apps/mosaic` package `@free-react-templates/mosaic`; CNAME
+- [x] `apps/mosaic` package `@free-react-templates/mosaic`; CNAME
       `mosaic.free.componentdock.com`; homepage set accordingly
 - [ ] 100% coverage tests, per-app gate green (`scripts/verify-app.sh mosaic`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

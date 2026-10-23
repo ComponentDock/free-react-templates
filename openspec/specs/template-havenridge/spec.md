@@ -254,18 +254,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-havenridge/spec.md` exists and is valid
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/havenridge` exists with correct package name
+- [x] `apps/havenridge` exists with correct package name
 - [ ] Nunito Sans font loaded via Google Fonts `<link>` in index.html
-- [ ] `public/CNAME` = `havenridge.free.componentdock.com`
-- [ ] `"homepage"` = `https://havenridge.free.componentdock.com`
+- [x] `public/CNAME` = `havenridge.free.componentdock.com`
+- [x] `"homepage"` = `https://havenridge.free.componentdock.com`
 - [ ] All sections match the source order (navbar → hero → search → categories → properties → video → about → testimonials → footer)
 - [ ] Brand color #5ea51d used for accent elements
 - [ ] Dark hero with background images
 - [ ] Section backgrounds match: white for hero/search/properties, #f8f9fa for categories/about/testimonials
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Picsum images use deterministic seeds (havenridge-*)
 - [ ] `npm run verify:app -- havenridge` passes (typecheck + lint + 100% coverage + build)
 - [ ] PR includes: source URL, preview URL, token list, and differences
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -184,21 +184,21 @@ The page footer SHALL include a link to https://www.componentdock.com/.
 - [ ] Page background is a soft peach (`#f5e6d0`)
 - [ ] Form card is white with rounded corners (`8px` radius)
 - [ ] Step indicator: horizontal 4-segment bar, active = peach, inactive = grey
-- [ ] "Billing Details" heading and form on step 1
+- [x] "Billing Details" heading and form on step 1
 - [ ] First Name * and Last Name * side by side
 - [ ] Company Name (optional, no asterisk)
-- [ ] Country dropdown with "Viet Nam" option
-- [ ] Address * field with "Street address" placeholder
+- [x] Country dropdown with "Viet Nam" option
+- [x] Address * field with "Street address" placeholder
 - [ ] Apartment, suite, unit etc. (optional) field
 - [ ] Town / City * required field
-- [ ] "Next" button with right arrow icon
+- [x] "Next" button with right arrow icon
 - [ ] Required field validation prevents advancement
 - [ ] Optional fields do not block advancement
 - [ ] Back navigation preserves data
 - [ ] Progress bar updates as user advances
 - [ ] Responsive layout stacks on mobile
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib in app code
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib in app code
 - [ ] Uses cn() from packages/ui
 - [ ] Font family: Poppins via Google Fonts
 - [ ] 100% test coverage

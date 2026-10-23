@@ -374,9 +374,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-rhythm/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/rhythm`, package `@free-react-templates/rhythm`, no
+- [x] App folder `apps/rhythm`, package `@free-react-templates/rhythm`, no
       ColorLib references in app code (grep for colorlib/Djoz in apps/rhythm)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh rhythm`
 - [ ] Section order matches the source: header → hero → events carousel →
       about → services band → tracks → youtube feed → countdown → footer
@@ -391,21 +391,21 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header: absolute over hero, translucent deep purple, logo + nav
       (Home active / About / Discography / Tours / Videos / Pages▾ /
       Contact) + 4 social icons; mobile hamburger → deep-purple menu
-- [ ] Hero: purple-tinted DJ photo bg, "New single" eyebrow, 110px display
+- [x] Hero: purple-tinted DJ photo bg, "New single" eyebrow, 110px display
       "Feel the heart beats", blurb, 90px circular translucent play button,
       bottom chevron
-- [ ] Events: "Upcoming Events" title, 6-card carousel (3 per view), 360px
+- [x] Events: "Upcoming Events" title, 6-card carousel (3 per view), 360px
       photos, bottom-straddling date badges, title + venue lines
-- [ ] About: photo left; "DJ Alexandra Rud" + "About me" watermark, copy,
+- [x] About: photo left; "DJ Alexandra Rud" + "About me" watermark, copy,
       square purple CONTACT ME button
 - [ ] Services: photo column with play button + 2×2 zigzag tiles (Wedding /
       Clubs and bar / DJ lessons / Corporate events, alternating `#5c00ce` /
       `#5400BC`)
-- [ ] Tracks: "Latest tracks" + "Music podcast" watermark, outline "View all
+- [x] Tracks: "Latest tracks" + "Music podcast" watermark, outline "View all
       tracks" button, 4 static audio-player rows (no real audio)
-- [ ] Youtube: "Youtube feed" + "Latest videos" watermark, 3 video cards
+- [x] Youtube: "Youtube feed" + "Latest videos" watermark, 3 video cards
       with circular play buttons
-- [ ] Countdown: dark bg image, 90px "Tomorrowland 2020", 26px "Music
+- [x] Countdown: dark bg image, 90px "Tomorrowland 2020", 26px "Music
       festival start in", live days/hours/minutes/seconds timer (fake-timer
       tests, `act()` wrapper), "Buy tickets" button
 - [ ] Footer: bg image, address / brand+social (4 inline-SVG brand icons) /
@@ -421,4 +421,4 @@ Dock (`https://www.componentdock.com/`) instead.
       placeholder images, React carousel instead of owl-carousel, hamburger
       instead of slicknav, static track players instead of jPlayer, live
       countdown, Component Dock footer credit)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

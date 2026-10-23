@@ -246,8 +246,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Preloader displays and dismisses on load
 - [ ] Dark mode toggle works
 - [ ] Footer links to Component Dock
-- [ ] All images use picsum-seeded URLs (no ColorLib assets)
-- [ ] No ColorLib references in app code (comments included)
+- [x] All images use picsum-seeded URLs (no ColorLib assets)
+- [x] No ColorLib references in app code (comments included)
 - [ ] Font loaded via Google Fonts (PT Sans)
 - [ ] Responsive: sidebar collapses on mobile
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

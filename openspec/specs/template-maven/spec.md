@@ -400,21 +400,21 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/maven` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/maven` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- maven` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#ff1481, #162b45, #2e4158, #586779, #112e41, #f7f7f7, Roboto/Oswald/Poppins) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `maven-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib assets copied (picsum seeds `maven-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar — the navbar SHALL show the site logo on the left
 - [ ] Banner hero — the hero SHALL show the headline "Think Creative Turn" in Poppins
-- [ ] Features CTA band — the band SHALL show the pink uppercase eyebrow "Our Features"
+- [x] Features CTA band — the band SHALL show the pink uppercase eyebrow "Our Features"
 - [ ] Services section — it SHALL render four cards in a 4-column row (stacking on mobile):
 - [ ] About section — the left column SHALL show a photo collage with the headline "25
-- [ ] Recent work section — the section SHALL show the pink uppercase eyebrow "Recent Work" and
+- [x] Recent work section — the section SHALL show the pink uppercase eyebrow "Recent Work" and
 - [ ] Stats band — it SHALL show four items in a 4-column row (stacking on mobile):
 - [ ] Video and testimonials section — the left column SHALL show a video poster image (seeded picsum)
-- [ ] Team section — the section SHALL show the heading "Creative work for client"
-- [ ] Blog section — the section SHALL show the pink uppercase eyebrow "Latest News" and
+- [x] Team section — the section SHALL show the heading "Creative work for client"
+- [x] Blog section — the section SHALL show the pink uppercase eyebrow "Latest News" and
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

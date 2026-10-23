@@ -231,15 +231,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Terra" and a "Home" link pointing to the page root
-- [ ] Welcome hero — it SHALL show a level-1 headline (e.g. "Beauty & Spa Wellness")
-- [ ] Services — it SHALL show the heading "Our Beauty & Spa Services"
-- [ ] Featured services — it SHALL show the heading "Discover the Best Beauty Salon Center"
-- [ ] Expert team — it SHALL show the heading "Our Expert Makeup & Beautician Artist"
-- [ ] Pricing — it SHALL show the heading "Get Our Package Pricing"
-- [ ] Appointment band — it SHALL show the heading "Make An Appointment"
-- [ ] Testimony band — it SHALL show the heading "What Customers Saying"
-- [ ] Blog posts — it SHALL show the heading "Recent From Blog"
-- [ ] Footer — it SHALL show the site name "Terra"
+- [x] Navigation bar — the navbar SHALL show the site name "Terra" and a "Home" link pointing to the page root
+- [x] Welcome hero — it SHALL show a level-1 headline (e.g. "Beauty & Spa Wellness")
+- [x] Services — it SHALL show the heading "Our Beauty & Spa Services"
+- [x] Featured services — it SHALL show the heading "Discover the Best Beauty Salon Center"
+- [x] Expert team — it SHALL show the heading "Our Expert Makeup & Beautician Artist"
+- [x] Pricing — it SHALL show the heading "Get Our Package Pricing"
+- [x] Appointment band — it SHALL show the heading "Make An Appointment"
+- [x] Testimony band — it SHALL show the heading "What Customers Saying"
+- [x] Blog posts — it SHALL show the heading "Recent From Blog"
+- [x] Footer — it SHALL show the site name "Terra"

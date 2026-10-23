@@ -144,11 +144,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Announcement bar with rotating messages — an announcement bar is visible with a promotional message
-- [ ] Sticky navigation — the "Cabinet" logo is visible
-- [ ] Hero section — the heading "Furniture at cost" is visible
-- [ ] Product tabs — the "Sofas" tab is selected by default
-- [ ] About section — the "Manufacturer" heading is visible
+- [x] Sticky navigation — the "Cabinet" logo is visible
+- [x] Hero section — the heading "Furniture at cost" is visible
+- [x] Product tabs — the "Sofas" tab is selected by default
+- [x] About section — the "Manufacturer" heading is visible
 - [ ] Recommended products — 4 recommended products are displayed in a grid
-- [ ] Newsletter signup — the "Join our newsletter" heading is visible
+- [x] Newsletter signup — the "Join our newsletter" heading is visible

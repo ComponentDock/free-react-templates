@@ -254,18 +254,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Appson" and links to Home, About, Features, Screenshot, Pricing, Review, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Perfect Landing Page"
-- [ ] About section — it SHALL contain a level-2 heading "Work the way you live"
-- [ ] Features section — it SHALL contain a heading "Best Features"
-- [ ] Screenshots section — it SHALL contain a heading "Screenshots"
-- [ ] Download band — it SHALL contain a heading "Download Appson"
-- [ ] Pricing section — it SHALL contain a heading "Pricing Plan"
-- [ ] Team and stats section — it SHALL contain a heading "Meet my team"
-- [ ] Testimonial section — it SHALL contain a heading "Testimonial" and a quote
-- [ ] Blog section — it SHALL contain a heading "Our Latest Blog"
-- [ ] Contact section — it SHALL contain a heading "Contact US" with fields for Name, Email address, Subject, and Message
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Appson" and links to Home, About, Features, Screenshot, Pricing, Review, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Perfect Landing Page"
+- [x] About section — it SHALL contain a level-2 heading "Work the way you live"
+- [x] Features section — it SHALL contain a heading "Best Features"
+- [x] Screenshots section — it SHALL contain a heading "Screenshots"
+- [x] Download band — it SHALL contain a heading "Download Appson"
+- [x] Pricing section — it SHALL contain a heading "Pricing Plan"
+- [x] Team and stats section — it SHALL contain a heading "Meet my team"
+- [x] Testimonial section — it SHALL contain a heading "Testimonial" and a quote
+- [x] Blog section — it SHALL contain a heading "Our Latest Blog"
+- [x] Contact section — it SHALL contain a heading "Contact US" with fields for Name, Email address, Subject, and Message
 - [ ] Footer — it SHALL show a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

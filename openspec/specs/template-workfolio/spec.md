@@ -188,12 +188,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark navy backgrounds (#0d0f5b / #0a0b4d) on hero, about, reviews, footer
 - [ ] Coral (#ea5267) accent on buttons, section titles, portfolio hover
 - [ ] Masonry portfolio grid with 5 items and hover overlay
-- [ ] 3 service cards with icons and "learn more" links
+- [x] 3 service cards with icons and "learn more" links
 - [ ] Client review carousel with 6 items
 - [ ] Footer links to Component Dock
 - [ ] Responsive layout (mobile-friendly)
 - [ ] No ColorLib references in app code
 - [ ] 100% test coverage
 - [ ] Build passes without errors
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

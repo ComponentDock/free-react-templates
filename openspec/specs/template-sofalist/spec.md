@@ -360,18 +360,18 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/sofalist` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/sofalist` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- sofalist` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#cf7500, #267aa4, #d4eaf5, #3099cd, #f8f9fa, #f5ebeb, #cb9696, #dcebdd, #8bbd8e, #f5efd8, #d1b54a, #f4e6d8, #d29a61, #000, #fff) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `sofalist-<n>`, Google Fonts Poppins link, lucide icons only)
+- [x] No ColorLib assets copied (picsum seeds `sofalist-<n>`, Google Fonts Poppins link, lucide icons only)
 - [ ] Buttons are pills (radius 40px): white pill hero "Discover" (`#267aa4` text), amber `#cf7500` "Learn More" (hover: transparent + amber), secondary "Get A Request"; shadow `0 24px 36px -11px rgba(0,0,0,0.09)`
-- [ ] Hero: 100vh split, left text panel on pale blue, right photo, `<span>` emphasis on "Furniture Collections"
+- [x] Hero: 100vh split, left text panel on pale blue, right photo, `<span>` emphasis on "Furniture Collections"
 - [ ] Four pastel feature cards with circular icons + distinct blurbs
 - [ ] Gallery: 8 tiles, 340px tall, hover caption overlay + search icon
 - [ ] Stats band: pale-blue overlay over photo, 4 black 40px/600 counters
 - [ ] Testimonials carousel implemented with client-side state (no tiny-slider dep); 3+ slides, prev/next controls
 - [ ] How it Works: 3 steps with 01/02/03 badges + 130px white circle icons; Learn More + Get A Request CTA row
 - [ ] Blog: 3 entries, distinct paraphrased titles, meta row (Admin / date / comments)
-- [ ] Footer: pale blue `#d4eaf5`, contact block (address/phone/email), dark bottom bar, Component Dock credit; no ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer: pale blue `#d4eaf5`, contact block (address/phone/email), dark bottom bar, Component Dock credit; no ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -142,7 +142,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar with contact info and social links — the navbar shows the logo, contact info, nav links, and social icons
 - [ ] Hero section with headline and CTA — the heading, subtitle, and CTA button are displayed
 - [ ] About section with images and description — the heading, quote, description text, and CTA button are visible

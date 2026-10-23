@@ -433,10 +433,10 @@ Dock (`https://www.componentdock.com/`) instead.
       redaction pitfall — NEVER write `tel:+...` literals in source)
 - [ ] Demo-repeated content varied (brand logos, testimonials, news cards)
       — same kinds of content, no duplicated strings
-- [ ] Footer links Component Dock (https://www.componentdock.com/) —
+- [x] Footer links Component Dock (https://www.componentdock.com/) —
       replaces the original "Colorlib" credit
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] TEMPLATES.md: mark BOTH lawyerlegal rows `[x]` (lines 599 and 2127) + surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (juris.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -151,4 +151,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gallery renders masonry grid of images — five gallery images are visible in a grid layout
 - [ ] Pricing section shows three plans — three pricing cards are visible with plan names Free, Premium, Enterprise
 - [ ] Features split section displays two feature cards — Creativity and Solutions headings are visible
-- [ ] Testimonial section shows a quote — a testimonial quote is visible from "James Wilson", CEO, Co-Founder
+- [x] Testimonial section shows a quote — a testimonial quote is visible from "James Wilson", CEO, Co-Founder

@@ -387,8 +387,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark footer (#343a40) with About, Quick Links, Social, Newsletter
 - [ ] Responsive: mobile hamburger, stacking grids, reduced hero heading
 - [ ] Placeholder images use picsum.photos/seed/banknote-{n}/w/h
-- [ ] No ColorLib references in app code — provenance only in spec + TEMPLATES.md
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code — provenance only in spec + TEMPLATES.md
+- [x] Footer links to https://www.componentdock.com/
 - [ ] AOS scroll animations replicated (fade-up on scroll)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

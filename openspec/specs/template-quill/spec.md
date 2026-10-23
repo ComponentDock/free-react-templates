@@ -319,7 +319,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/quill` renders the seven bands in the DOM order above (navbar, hero,
+- [x] `apps/quill` renders the seven bands in the DOM order above (navbar, hero,
       category, travel, fashion, team, footer).
 - [ ] Navbar anchors resolve to real section ids (`#home`, `#news`, `#travel`,
       `#fashion`, `#team`) — no dead anchors; the Pages dropdown and mobile menu both
@@ -330,7 +330,7 @@ Dock (`https://www.componentdock.com/`) instead.
       at three.
 - [ ] Travel band sits on `#f9f9ff` and shows two columns of media rows with the dark date
       block (`day` + `month`).
-- [ ] Fashion grid starts at four cards and "Load More" appends the remaining four, then
+- [x] Fashion grid starts at four cards and "Load More" appends the remaining four, then
       disappears.
 - [ ] Team overlay is `bg-brand/70` on hover and both overlay and caption expose name +
       role.
@@ -342,7 +342,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `#f9f9ff`, `#111`, Poppins) and are consumed through Tailwind classes.
 - [ ] No app file mentions ColorLib (provenance lives in this spec, TEMPLATES.md and the
       PR); placeholders only — no copied assets.
-- [ ] `apps/quill/public/CNAME` is `quill.free.componentdock.com` and `homepage` in
+- [x] `apps/quill/public/CNAME` is `quill.free.componentdock.com` and `homepage` in
       `apps/quill/package.json` matches it.
 - [ ] `npm run spec:validate` passes and `scripts/verify-app.sh quill` is green
       (typecheck + lint + 100 % coverage + build).

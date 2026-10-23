@@ -170,14 +170,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Sticky navbar with logo, navigation links, and social icons — I see a sticky navbar with the logo "Workhive"
-- [ ] Hero section with background image, heading, and rating badge — I see the heading "Amazing workspace you will love"
-- [ ] About section with 2-column image and text layout — I see the label "About Us"
-- [ ] Testimonials section on peach background — I see the heading "Spaces that you'd love"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Sticky navbar with logo, navigation links, and social icons — I see a sticky navbar with the logo "Workhive"
+- [x] Hero section with background image, heading, and rating badge — I see the heading "Amazing workspace you will love"
+- [x] About section with 2-column image and text layout — I see the label "About Us"
+- [x] Testimonials section on peach background — I see the heading "Spaces that you'd love"
 - [ ] Spaces gallery with 3 hover-overlay cards — I see 3 space cards
-- [ ] Features section with 4 check-icon cards — I see the label "Features"
+- [x] Features section with 4 check-icon cards — I see the label "Features"
 - [ ] Video section with background image and play button — I see a play button in the video section
 - [ ] Brands logo strip on peach background — I see 5 brand name placeholders
-- [ ] Blog section with 3 article cards — I see the heading "Company Insights"
+- [x] Blog section with 3 article cards — I see the heading "Company Insights"
 - [ ] App integration renders all sections in order — I see all sections rendered in order: Navbar, Hero, About, Testimonials, Spaces, Features, VideoSection, Brands, Blog, Footer

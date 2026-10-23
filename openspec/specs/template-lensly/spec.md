@@ -370,8 +370,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonials: 3 cards on #f8f9fa; events: 3 post cards with
       date/author meta, title, excerpt; footer: 3 columns + newsletter +
       bottom bar with repo-standard credit.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Capture 2), preview URL
       (note: `/theme/capture2/`, not `capture-2`), tokens, and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

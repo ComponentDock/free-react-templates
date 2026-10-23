@@ -328,13 +328,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/barrister` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/barrister` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- barrister` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#d79100, #dda226, #db9c1a, #dfa733, #242f3a, #212529, #6c757d, #f8f9fa, #e9ecef, #ebc880, Playfair Display/Raleway) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `barrister-<n>`, Google Fonts links, lucide icons only)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header + navigation — the header SHALL show the brand "Barrister" on the left in a serif
+- [x] No ColorLib assets copied (picsum seeds `barrister-<n>`, Google Fonts links, lucide icons only)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header + navigation — the header SHALL show the brand "Barrister" on the left in a serif
 - [ ] Hero — the hero SHALL fill the width with a photo background (seeded
 - [ ] Intro (promise) section — the section SHALL show the centered heading "My promise to every
 - [ ] About me section — the section SHALL have a light gray (#f8f9fa) background

@@ -359,7 +359,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header is transparent over the hero with logo + tagline + hamburger;
       hamburger opens the fullscreen near-black overlay menu (scale-in) with
       Home/About/Blog/Contact, gold active link, and a close control.
-- [ ] Hero is full-height with the giant image-filled "Pulp" wordmark
+- [x] Hero is full-height with the giant image-filled "Pulp" wordmark
       (background-clip text), "Magazine" / "UK Edition" labels, and the
       animated background-color cycle.
 - [ ] Editorial list renders 11 alternating rows with 60px circular avatar
@@ -370,5 +370,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Erase), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -297,12 +297,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Resources: split layout, 3 accordion-style items, image right
 - [ ] Top Stories: 3-column card grid, title with right-aligned link
 - [ ] Partners: centered title, logo carousel
-- [ ] Trusted: dark green split section, white text, "Join Now" button
+- [x] Trusted: dark green split section, white text, "Join Now" button
 - [ ] Footer: 5-column layout, newsletter form, social icons, copyright
 - [ ] Mobile (375px): hamburger nav, stacked columns, tappable buttons
 - [ ] Footer links to Component Dock (NOT ColorLib)
 - [ ] No ColorLib references in app code (provenance in spec only)
 - [ ] Tests at 100% coverage for all sections
 - [ ] TypeScript strict, no `any` types
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

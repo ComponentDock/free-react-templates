@@ -523,10 +523,10 @@ Dock (`https://www.componentdock.com/`) instead.
       persist; progress bar advances with step; Back invisible-but-
       slot-kept on step 1; dropdowns open/close/select; payment tile
       selection swaps active; Finish does nothing; no submit.
-- [ ] No ColorLib strings anywhere under `apps/banish` (source/provenance
+- [x] No ColorLib strings anywhere under `apps/banish` (source/provenance
       lives only in this spec + TEMPLATES.md + the PR). Footer links
       https://www.componentdock.com/.
-- [ ] `public/CNAME` = `banish.free.componentdock.com`; `"homepage"` =
+- [x] `public/CNAME` = `banish.free.componentdock.com`; `"homepage"` =
       `https://banish.free.componentdock.com`.
 - [ ] Workspace registered in `package-lock.json` (`grep -c
 "free-react-templates/banish" package-lock.json` ≥ 1) after `npm
@@ -538,4 +538,4 @@ install` at root.
       placeholders, brand names as text instead of logo images, plain DOB
       input instead of the datepicker, accessible semantics + focus rings,
       footer, no ColorLib strings).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

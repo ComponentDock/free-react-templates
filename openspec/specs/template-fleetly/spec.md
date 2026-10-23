@@ -223,8 +223,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] CTA section has bg image + dark overlay + white heading
 - [ ] Blog section shows 4 cards in 4-column grid
 - [ ] Footer has dark navy bg, column links, newsletter form, social icons
-- [ ] Footer links to `https://www.componentdock.com/`
+- [x] Footer links to `https://www.componentdock.com/`
 - [ ] All design tokens match the original (Poppins font, `#fab700` gold, `#04091e` footer)
 - [ ] All images use `https://picsum.photos/seed/fleetly-<n>/<w>/<h>` placeholders
-- [ ] No ColorLib references in app source code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app source code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

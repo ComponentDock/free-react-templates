@@ -386,8 +386,8 @@ Dock (`https://www.componentdock.com/`) instead.
       Sans font, square green hero button (rounded-0), uppercase 12px bold
       arrow links (.more-39291 style), uppercase 20px bold section headings,
       transparent→white sticky navbar, light dot-grid footer.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Ideal), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

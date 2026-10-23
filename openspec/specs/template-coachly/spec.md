@@ -319,7 +319,7 @@ The system SHALL provide accessible markup for all interactive elements.
 ## Verification checklist
 
 - [ ] Navbar is sticky, responsive, `#3a4971` background
-- [ ] Hero has full-cover bg image, dark overlay, "Professional Life Coaching" heading
+- [x] Hero has full-cover bg image, dark overlay, "Professional Life Coaching" heading
 - [ ] Special Offers section has dark overlay, 2 offer cards
 - [ ] About section has split layout, "Welcome to LifeCoach" heading
 - [ ] Training section has 2-col grid with 6 items
@@ -329,11 +329,11 @@ The system SHALL provide accessible markup for all interactive elements.
 - [ ] Testimonials section has carousel with 3 entries
 - [ ] Blog Posts section has 3 cards with cover images
 - [ ] Contact section has form with Name, Email, Subject, Message fields
-- [ ] Footer is dark (`#333`), has newsletter signup, links to componentdock.com
+- [x] Footer is dark (`#333`), has newsletter signup, links to componentdock.com
 - [ ] All buttons use `border-radius: 30px` pill style
 - [ ] Roboto font used throughout
 - [ ] All interactive elements keyboard-accessible
-- [ ] No references to ColorLib in app code
+- [x] No references to ColorLib in app code
 - [ ] Uses `lucide-react` for icons (no Font Awesome)
 - [ ] Uses `picsum.photos` for all placeholder images
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com

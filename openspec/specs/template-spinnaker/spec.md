@@ -604,7 +604,7 @@ Dock (`https://www.componentdock.com/`) instead.
   items `rgba(255,255,255,0.8)` with `rgba(255,255,255,0.1)` rules; **only the four links below
   768 px** (image columns `display:none`) and four `172.5 px` columns with `142.5 × 250` images at
   768–991 px; **not** permanently expanded (no `display:block !important`); captions legible (delta)
-- [ ] Zero `colorlib` / "Website Menu V18" / `website-menu-18` strings in `apps/spinnaker` (comments
+- [x] Zero `colorlib` / "Website Menu V18" / `website-menu-18` strings in `apps/spinnaker` (comments
   included); none of the source's `Megawidth` brand, its four row labels, its `Page 1`…`Page 4` items,
   its `Amazing Architecture` / `Architect` card copy or its `Website menu #08` heading reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `img-1..3.jpg`, no `roboto-*.woff2` (all
@@ -623,8 +623,8 @@ Dock (`https://www.componentdock.com/`) instead.
   open trigger, placeholder photography instead of the three photographs, and the added footer
 - [ ] `scripts/verify-app.sh spinnaker` green (typecheck + lint + knip + fallow + vitest 100 % +
   build); `npm run spec:validate` green
-- [ ] `public/CNAME` + `homepage` set to `spinnaker.free.componentdock.com`; `package-lock.json`
+- [x] `public/CNAME` + `homepage` set to `spinnaker.free.componentdock.com`; `package-lock.json`
   registers the workspace; footer attribution present
 - [ ] Squash-merge the PR, then mark the `TEMPLATES.md` `Website Menu 18` item `[x]` with the live
   `https://spinnaker.free.componentdock.com` URL + homepage and run `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

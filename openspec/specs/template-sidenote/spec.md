@@ -121,10 +121,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Sidebar rendering — the sidebar heading "Share Your Article to the World" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Sidebar rendering — the sidebar heading "Share Your Article to the World" is visible
 - [ ] Post grid — 4 article elements are visible
 - [ ] Newsletter form — the input field reflects the typed value
 - [ ] Sidebar toggle on mobile — the sidebar is removed from the DOM
-- [ ] Accessibility — the sidebar has an aria-label "Newsletter signup sidebar"
-- [ ] Document title — the document title contains "Sidenote"
+- [x] Accessibility — the sidebar has an aria-label "Newsletter signup sidebar"
+- [x] Document title — the document title contains "Sidenote"

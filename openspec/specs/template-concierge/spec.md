@@ -465,4 +465,4 @@ Dock (`https://www.componentdock.com/`) instead.
       tiny-slider/glightbox/flatpickr → client-side state + native inputs,
       paraphrased copy incl. "John Doe", "43 Raymouth Rd." address, footer
       attribution → Component Dock).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

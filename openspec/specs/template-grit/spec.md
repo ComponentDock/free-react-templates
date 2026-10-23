@@ -364,9 +364,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-grit/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/grit`, package `@free-react-templates/grit`, no
+- [x] App folder `apps/grit`, package `@free-react-templates/grit`, no
       ColorLib references in app code (grep for colorlib/Stamina in apps/grit)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh grit`
 - [ ] Section order matches the source: header → hero → hours bar →
       features → CTA (Get The Result You Want) → classes → CTA (Every Step
@@ -381,4 +381,4 @@ Dock (`https://www.componentdock.com/`) instead.
       icons from `lucide-react`
 - [ ] PR description: source template, preview URL, design tokens, diffs
       (name, placeholder images, no video background)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

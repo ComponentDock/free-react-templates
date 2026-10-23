@@ -61,4 +61,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Vitest coverage is 100% on changed code
 - [ ] Build succeeds (`npm run build`)
 - [ ] Footer links to Component Dock
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -145,9 +145,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with logo, navigation links, and dark mode toggle — the navbar displays the "Gallery" logo text
-- [ ] Hero section with heading and subtitle — an h1 heading containing "design resources" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with logo, navigation links, and dark mode toggle — the navbar displays the "Gallery" logo text
+- [x] Hero section with heading and subtitle — an h1 heading containing "design resources" is visible
 - [ ] Portfolio grid with 9 items and hover overlays — 9 portfolio images are rendered
-- [ ] Load more button — a button with aria-label "Load more" is present
+- [x] Load more button — a button with aria-label "Load more" is present
 - [ ] App renders all sections and sets document title — the header, main content, and footer are all present in the DOM

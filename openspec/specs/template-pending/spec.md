@@ -637,7 +637,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] App exists at `apps/pending`, package `@free-react-templates/pending`,
+- [x] App exists at `apps/pending`, package `@free-react-templates/pending`,
       `homepage` `https://pending.free.componentdock.com`, `public/CNAME`
       `pending.free.componentdock.com`; `npm install` run at the repo root and the
       lockfile registers the workspace
@@ -706,7 +706,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fonts: Montserrat `400;600` + Kaushan Script via Google Fonts `<link>` (the
       Playlist Script substitution is recorded in the PR); icons are `lucide-react`
       only
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_13` references anywhere in
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_13` references anywhere in
       `apps/pending` (comments included)
 - [ ] No copied assets: no source photographs, no 127×24 `logo.png`, no favicon, no
       woff2 files, no `css/style.css` (including its `all: revert` guard and
@@ -729,4 +729,4 @@ Dock (`https://www.componentdock.com/`) instead.
       differs (new name, picsum placeholders, own wordmark/strings, Kaushan Script
       instead of the non-Google-Fonts Playlist Script, the white field-text delta,
       lucide icons, added `aria-label`s, Component Dock attribution line)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -322,9 +322,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-guild/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/guild`, package `@free-react-templates/guild`, no
+- [x] App folder `apps/guild`, package `@free-react-templates/guild`, no
       ColorLib references in app code (grep for colorlib/The Quest in apps/guild)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh guild`
 - [ ] Section order matches the source: header (logo + nav + ad) → hero
       slider (2 slides) → blog section (featured + 4 posts + sidebar) →
@@ -350,7 +350,7 @@ Dock (`https://www.componentdock.com/`) instead.
       Latest News (4) → ad → Latest Comments (4)
 - [ ] Blog list section: `#222222`, 4 compact posts (166px thumbs) +
       "Top 5 this week" numbered 01–05
-- [ ] Video section: `#2d2d2d`, logo + "2018's Best Game" + thumbnail with
+- [x] Video section: `#2d2d2d`, logo + "2018's Best Game" + thumbnail with
       pink pill play button
 - [ ] Footer: black, 5 columns, `#8c8c8c` copyright bar with Component Dock
       link; NO social icons anywhere
@@ -362,4 +362,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (`preview.colorlib.com/theme/thequest/` — NO hyphen), design tokens,
       diffs (name, placeholder images, slider implemented with React state
       instead of owl-carousel, mobile menu instead of slicknav)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

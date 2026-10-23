@@ -246,6 +246,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: CTA bar, multi-column layout, social icons, subscribe, copyright with Component Dock link
 - [ ] Design tokens: `#142336` dark, `#4586D5` blue, `#FAD110` yellow, Saira Condensed + Mulish fonts
 - [ ] Pill-shaped buttons (`border-radius: 60px`) for primary CTAs
-- [ ] No Colorlib references in app code; Component Dock link in footer
+- [x] No Colorlib references in app code; Component Dock link in footer
 - [ ] Placeholder images via `picsum.photos/seed/frostguard-*`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

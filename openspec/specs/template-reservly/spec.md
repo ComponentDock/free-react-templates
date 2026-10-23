@@ -246,14 +246,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Rectangular (non-pill) inputs/buttons, light-grey `#f4f4f4` inputs,
       white card, dark navbar/footer `#343a40`
 - [ ] Hero photo = seeded picsum (`reservly-1/1920/1080`) + blue overlay
-- [ ] Date inputs are native `<input type="date">`; check-out ≥ check-in
+- [x] Date inputs are native `<input type="date">`; check-out ≥ check-in
       validation
 - [ ] Steppers honor min bounds (Rooms/Adults ≥ 1, Children ≥ 0)
-- [ ] "Check availability" shows summary / validation messages
+- [x] "Check availability" shows summary / validation messages
 - [ ] Placeholder images via `picsum.photos/seed/reservly-<n>/<w>/<h>`,
       icons from lucide-react, no copied assets
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

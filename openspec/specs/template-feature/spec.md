@@ -574,9 +574,9 @@ Dock (`https://www.componentdock.com/`) instead.
       (250px + play), Tags (19 uppercase links), Gallery (8 tiles 50% ×
       170px + hover overlay), Blockquote, Paragraph, Subscribe (email
       input + orange pill button + success/error states)
-- [ ] Instagram strip: "Instagram" heading + 8 tiles (12.5% × 200px,
+- [x] Instagram strip: "Instagram" heading + 8 tiles (12.5% × 200px,
       responsive) with hover overlay
-- [ ] Footer `#F6F6F6` with 3 columns (Navigational, Recent Post, Tags) + paraphrased copyright (no ColorLib attribution)
+- [x] Footer `#F6F6F6` with 3 columns (Navigational, Recent Post, Tags) + paraphrased copyright (no ColorLib attribution)
 - [ ] Back-to-top button smooth-scrolls
 - [ ] Placeholder images use
       `https://picsum.photos/seed/feature-<n>/<w>/<h>` (4 hero slides
@@ -588,5 +588,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark-mode toggle present per repo conventions (dark: variants)
 - [ ] README status table regenerated after merge (`npm run readme:status`);
       mark TEMPLATES.md line 241 `[x]` when done
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -142,8 +142,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fullscreen hero with CTA — I see the hero heading "No Need to Find, This Is the Place on Web", a subtitle, and a "Get Started" button
 - [ ] Tabbed history section — the History tab is active and its content is visible
 - [ ] Services grid — I see all four service cards with their titles and descriptions
-- [ ] Experience gallery — I see the section title, images, content heading, and "View Details" button
+- [x] Experience gallery — I see the section title, images, content heading, and "View Details" button
 - [ ] Projects showcase — I see all three project cards with images and titles
 - [ ] Contact form — I see name, email, and message inputs, all required, plus a submit button
-- [ ] Newsletter signup — I see the yellow section with email input and "Get Started" button
+- [x] Newsletter signup — I see the yellow section with email input and "Get Started" button
 - [ ] Design tokens match source — the hero overlay, buttons, and accents use purple, the newsletter uses yellow, and the footer uses dark blue-gray

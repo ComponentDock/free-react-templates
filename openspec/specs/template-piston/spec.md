@@ -229,8 +229,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog section shows 3 cards with metadata
 - [ ] Gallery shows 4-column grid with hover overlay
 - [ ] Appointment form has all fields and submit button
-- [ ] Footer links to componentdock.com (replaces ColorLib attribution)
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] Footer links to componentdock.com (replaces ColorLib attribution)
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] Placeholder images use picsum.photos/seed/piston-<n>
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

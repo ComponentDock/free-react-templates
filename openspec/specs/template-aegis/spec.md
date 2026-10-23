@@ -422,10 +422,10 @@ Dock (`https://www.componentdock.com/`) instead.
       Inter font, pill buttons, rounded-2xl cards, hero + CTA gradients
 - [ ] All copy paraphrased from the Shieldnet demo (same kind of content);
       no ColorLib assets copied
-- [ ] `apps/aegis` package registered in `package-lock.json`
+- [x] `apps/aegis` package registered in `package-lock.json`
       (`grep -c "free-react-templates/aegis" package-lock.json`)
 - [ ] README Templates status section regenerated after the PR merge
 - [ ] TEMPLATES.md Shieldnet item flipped to `[x]` with the live Surge URL
       (by the implementer stream, after deploy)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

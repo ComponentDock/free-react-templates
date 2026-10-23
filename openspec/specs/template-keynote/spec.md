@@ -256,16 +256,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Keynote" and links to Speakers, Schedule, and Tickets
-- [ ] Hero section — it SHALL contain a level-1 heading "The Future of AI is Here"
-- [ ] Speakers section — it SHALL contain a heading "Learn from the Best"
-- [ ] Tracks section — it SHALL contain a heading "Three Distinct Paths"
-- [ ] Schedule section — it SHALL contain a heading "Three Days of Innovation"
-- [ ] Tickets section — it SHALL contain a heading "Secure Your Spot"
-- [ ] Sponsors section — it SHALL contain a heading "Backed by Leaders"
-- [ ] Venue section — it SHALL contain a heading "The Armory"
-- [ ] FAQ section — it SHALL show a heading "Got Questions?"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Keynote" and links to Speakers, Schedule, and Tickets
+- [x] Hero section — it SHALL contain a level-1 heading "The Future of AI is Here"
+- [x] Speakers section — it SHALL contain a heading "Learn from the Best"
+- [x] Tracks section — it SHALL contain a heading "Three Distinct Paths"
+- [x] Schedule section — it SHALL contain a heading "Three Days of Innovation"
+- [x] Tickets section — it SHALL contain a heading "Secure Your Spot"
+- [x] Sponsors section — it SHALL contain a heading "Backed by Leaders"
+- [x] Venue section — it SHALL contain a heading "The Armory"
+- [x] FAQ section — it SHALL show a heading "Got Questions?"
 - [ ] Footer — it SHALL show Event and Resources link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

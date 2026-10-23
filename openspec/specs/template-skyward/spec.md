@@ -386,17 +386,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh skyward`,
       PR lists source (ColorLib Ignite), preview URL, tokens, and what
       differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar SHALL show the site name "Skyward" as the brand
-- [ ] Hero — it SHALL show the uppercase subheading "Web Hosting"
-- [ ] Domain search band — it SHALL show a domain name input with placeholder "Enter your domain name..."
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar SHALL show the site name "Skyward" as the brand
+- [x] Hero — it SHALL show the uppercase subheading "Web Hosting"
+- [x] Domain search band — it SHALL show a domain name input with placeholder "Enter your domain name..."
 - [ ] Partner logos — it SHALL show a responsive row of at least five partner logo images
-- [ ] Features ("Why You Should Choose Us") — it SHALL show the heading "Why You Should Choose Us"
-- [ ] Stats counter — it SHALL show the heading "More than 12,000 websites trusted hosted"
-- [ ] Main services — it SHALL show the heading "Our Main Services"
-- [ ] Pricing — it SHALL show the heading "Our Best Pricing"
-- [ ] Testimonials — it SHALL show the heading "Our satisfied customer says"
-- [ ] Blog section — it SHALL show the heading "Recent Blog"
+- [x] Features ("Why You Should Choose Us") — it SHALL show the heading "Why You Should Choose Us"
+- [x] Stats counter — it SHALL show the heading "More than 12,000 websites trusted hosted"
+- [x] Main services — it SHALL show the heading "Our Main Services"
+- [x] Pricing — it SHALL show the heading "Our Best Pricing"
+- [x] Testimonials — it SHALL show the heading "Our satisfied customer says"
+- [x] Blog section — it SHALL show the heading "Recent Blog"
 - [ ] Footer — it SHALL show a brand column with an about paragraph
 - [ ] Page composition — the page SHALL compose the navbar, hero, domain band, partner logos, features, counters, services, pricing, testimonials, blog, and footer in order

@@ -490,10 +490,10 @@ Dock (`https://www.componentdock.com/`) instead.
       "Check Availability" button.
 - [ ] Restaurant menu uses dark bg image + Food/Desserts/Drinks tabs with six
       items per tab (red price, white title, dimmed description).
-- [ ] CTA "Reserve Now" opens the reservation modal (Name, Phone, Email,
+- [x] CTA "Reserve Now" opens the reservation modal (Name, Phone, Email,
       dates, Adults, Children, submit).
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Redplanet), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

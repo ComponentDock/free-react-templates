@@ -183,14 +183,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — it SHALL show the site name "Justly" linking to `#home
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — it SHALL show the site name "Justly" linking to `#home
 - [ ] Hero section — it SHALL display "Hi, I'm Justly" as a subtitle
 - [ ] Training categories — it SHALL show exactly two category cards
 - [ ] Services (What I Offer) — it SHALL show exactly three service cards
 - [ ] Gallery — it SHALL show exactly 6 gallery items
 - [ ] Pricing — it SHALL show exactly three pricing cards
-- [ ] About section — it SHALL show "About Me" heading
+- [x] About section — it SHALL show "About Me" heading
 - [ ] Blog section — it SHALL show exactly two blog post cards
 - [ ] Video section — it SHALL show a play button icon centered on a background image
 - [ ] Contact info — it SHALL show exactly three contact cards

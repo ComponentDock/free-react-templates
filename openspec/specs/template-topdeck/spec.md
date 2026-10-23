@@ -575,7 +575,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/topdeck` recreates ColorLib **"Website Menu V07"** (source slug
+- [x] `apps/topdeck` recreates ColorLib **"Website Menu V07"** (source slug
       `website-menu-07`, https://colorlib.com/wp/template/website-menu-07/) under
       the new name `topdeck`; the registry/`package.json` reads
       `@free-react-templates/topdeck`
@@ -635,18 +635,18 @@ Dock (`https://www.componentdock.com/`) instead.
       gets rounded, and no pills are introduced
 - [ ] The six declared targets resolve to real sections with `scroll-margin-top`
       ≥ the header height; **zero** dead `href="#"` links remain
-- [ ] Zero `colorlib` / "Website Menu 07" / `website-menu-07` provenance
+- [x] Zero `colorlib` / "Website Menu 07" / `website-menu-07` provenance
       references anywhere in `apps/topdeck` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no woff2 files
       (`quicksand-*.woff2`, `icomoon-subset.woff2`), no `hero_1.jpg`, no `cl-`
       utility classes, no jQuery/Bootstrap, no copied strings
       (`info@domain.com`, `+1 234 4567 8910`, the seven source labels), no inlined
       icomoon codepoints or SVG paths
-- [ ] `public/CNAME` = `topdeck.free.componentdock.com` and
+- [x] `public/CNAME` = `topdeck.free.componentdock.com` and
       `"homepage": "https://topdeck.free.componentdock.com"` in
       `apps/topdeck/package.json`; `package-lock.json` registers
       `@free-react-templates/topdeck`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") with a computed current year
 - [ ] Accessibility: toggle has `aria-expanded`/`aria-controls`; the dropdown
       parent has `aria-haspopup`/`aria-expanded`; the panel is a labelled region
@@ -676,4 +676,4 @@ Dock (`https://www.componentdock.com/`) instead.
       anchors materialised as labelled sections + real dropdown targets, one nav
       source of truth instead of a DOM clone, added aria/keyboard states,
       reduced-motion handling, footer attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

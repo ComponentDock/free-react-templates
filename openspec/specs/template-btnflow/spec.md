@@ -231,7 +231,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Responsive layout works at mobile widths
 - [ ] TypeScript strict compilation passes
 - [ ] Vitest coverage at 100% lines/functions/branches/statements
-- [ ] App public/CNAME set to `btnflow.free.componentdock.com`
-- [ ] Footer includes Component Dock branding link (`https://www.componentdock.com/`)
+- [x] App public/CNAME set to `btnflow.free.componentdock.com`
+- [x] Footer includes Component Dock branding link (`https://www.componentdock.com/`)
 - [ ] Tailwind `@theme` configuration matches all design tokens
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

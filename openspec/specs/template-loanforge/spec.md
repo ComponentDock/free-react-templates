@@ -314,16 +314,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens: brand blue `#3589f1`, dark navy `#000a2d`, heading
       font Rufina serif, body font Rubik sans-serif, button radius 5px.
 - [ ] Responsive check at 768px (single-column layout, no overflow).
-- [ ] No ColorLib references in any app file; footer links
+- [x] No ColorLib references in any app file; footer links
       https://www.componentdock.com/.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header / Navbar — the header SHALL display a logo on the left, navigation links
 - [ ] Hero Slider — the hero area SHALL display a background image with dark
-- [ ] About Section — the about section SHALL show the subtitle "About Our Company",
+- [x] About Section — the about section SHALL show the subtitle "About Our Company",
 - [ ] Services Section — the services section SHALL have a dark background image
-- [ ] Support / Why-Choose Section — the left column SHALL show a large image with a "Since 1992"
+- [x] Support / Why-Choose Section — the left column SHALL show a large image with a "Since 1992"
 - [ ] Application / Apply Form — the application section SHALL have a dark background image
-- [ ] Team Section — the heading "Take a look to our professional team members."
+- [x] Team Section — the heading "Take a look to our professional team members."
 - [ ] Testimonial Section — the testimonial section SHALL have a light lavender
-- [ ] Blog Section — the heading "News from around the world selected by us."
+- [x] Blog Section — the heading "News from around the world selected by us."
 - [ ] Accessibility and Semantics — the navbar SHALL use `<nav>` with semantic `<ul>`/`<li>` links

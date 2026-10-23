@@ -233,16 +233,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Favison" and links to Home, Features, Pricing, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Build a better business & faster"
-- [ ] Services section — it SHALL show cards titled "Unique Design", "Business Solution", and "Customer Support" each with a "Read More" link
-- [ ] About/features section — it SHALL show tiles titled "Cloud Compatibility", "On Time Delivery", "Easy to Use", "Mobile Application", "Add New Project", and "Generating Leads"
-- [ ] Pricing section — it SHALL contain a heading "Our Pricing Plan"
-- [ ] Feature band — it SHALL contain a heading "Easy to Use Mobile Application"
-- [ ] Stats split — it SHALL contain the heading "Form Female From Cattle Evening."
-- [ ] Blog section — it SHALL contain a heading "Read Our Latest News"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Favison" and links to Home, Features, Pricing, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Build a better business & faster"
+- [x] Services section — it SHALL show cards titled "Unique Design", "Business Solution", and "Customer Support" each with a "Read More" link
+- [x] About/features section — it SHALL show tiles titled "Cloud Compatibility", "On Time Delivery", "Easy to Use", "Mobile Application", "Add New Project", and "Generating Leads"
+- [x] Pricing section — it SHALL contain a heading "Our Pricing Plan"
+- [x] Feature band — it SHALL contain a heading "Easy to Use Mobile Application"
+- [x] Stats split — it SHALL contain the heading "Form Female From Cattle Evening."
+- [x] Blog section — it SHALL contain a heading "Read Our Latest News"
 - [ ] Brands strip — it SHALL show at least four client logo tiles
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

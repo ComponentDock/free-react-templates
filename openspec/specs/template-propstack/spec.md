@@ -137,8 +137,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the logo "Propstack." and all navigation links are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the logo "Propstack." and all navigation links are visible
 - [ ] Hero section — the heading and subtext are displayed
 - [ ] How It Works — 3 steps are displayed with icons and text
 - [ ] Properties — at least 1 property card with price, beds, baths, sqft is displayed

@@ -278,7 +278,7 @@ The template SHALL be responsive with hamburger nav, stacked columns, and reduce
 - [ ] All pill buttons have 20px border-radius, transparent bg, white border
 - [ ] Gradient text effects on icon labels and button hover states
 - [ ] Responsive: hamburger nav, stacked columns, reduced padding on mobile
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib in app code
 - [ ] Package name: @free-react-templates/glider
-- [ ] CNAME: glider.free.componentdock.com
+- [x] CNAME: glider.free.componentdock.com

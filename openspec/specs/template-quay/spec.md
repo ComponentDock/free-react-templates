@@ -308,7 +308,7 @@ Dock (`https://www.componentdock.com/`) instead.
       0.85rem, radius 0.25rem, bg #3E64FF, hover #1845FF
 - [ ] Hero: full-viewport slideshow (≥3 slides) with centered white
       overlay card (max-width 500px, padding 4rem)
-- [ ] All images are picsum placeholders with alt text; no ColorLib assets
+- [x] All images are picsum placeholders with alt text; no ColorLib assets
 - [ ] Icons from lucide-react (no icon fonts copied)
 - [ ] Mobile menu toggle + accessible slideshow controls
 - [ ] Footer subscribe form: zod validation, error + success states
@@ -316,5 +316,5 @@ Dock (`https://www.componentdock.com/`) instead.
       100% coverage (lines/functions/branches/statements)
 - [ ] `scripts/verify-app.sh quay` green (typecheck + lint + coverage +
       build)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

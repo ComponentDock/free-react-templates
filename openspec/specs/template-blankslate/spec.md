@@ -210,11 +210,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fonts: Poppins for headings, Work Sans for body (via Google Fonts link in index.html)
 - [ ] Button style: pill-shaped (border-radius: 30px), yellow background
 - [ ] Images use picsum.photos placeholder URLs
-- [ ] No ColorLib references in app source code (provenance only in spec and TEMPLATES.md)
-- [ ] Footer links to componentdock.com
+- [x] No ColorLib references in app source code (provenance only in spec and TEMPLATES.md)
+- [x] Footer links to componentdock.com
 - [ ] Responsive layout: mobile-first with proper breakpoints
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] TypeCheck passes (`npx tsc --noEmit`)
 - [ ] Lint passes
 - [ ] Build succeeds
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

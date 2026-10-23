@@ -95,7 +95,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page loads with all sections — I should see the navbar with logo and navigation links
 - [ ] Navigation contains required links — the navbar should contain links for Home, Ministries, Sermons, Blog, Contact
 - [ ] Hero section displays event info — the hero should show a headline about faith

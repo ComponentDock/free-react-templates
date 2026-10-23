@@ -206,7 +206,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Newsletter: parallax background, title, email input, subscribe button
 - [ ] Footer: logo, about text, 3 latest listings, nav links, phone, Component Dock link
 - [ ] Design tokens: Montserrat font, #487fee→#32fa95 gradient, #3f6fce blue, #2cd983 green, pill buttons (45px radius)
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] Placeholder images via `picsum.photos`
 - [ ] Google Font loaded via `<link>` in `index.html`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

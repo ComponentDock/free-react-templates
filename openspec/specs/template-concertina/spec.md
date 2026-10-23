@@ -113,9 +113,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Lint passes (`npm run lint`)
 - [ ] Vitest tests pass with 100% coverage (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
-- [ ] Footer links `https://www.componentdock.com/`
-- [ ] No `colorlib` references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links `https://www.componentdock.com/`
+- [x] No `colorlib` references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Sticky Navigation Header — the header stays fixed at the top with clear navigation links
 - [ ] Hero Banner — they see a clear value proposition and primary action button
 - [ ] Interactive Accordion & FAQ Section — the corresponding content expands while other items remain collapsed

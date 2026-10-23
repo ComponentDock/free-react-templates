@@ -154,15 +154,15 @@ The modal SHALL be accessible with proper ARIA attributes and keyboard navigatio
 
 ## Verification checklist
 
-- [ ] Modal opens on "Launch modal" button click
+- [x] Modal opens on "Launch modal" button click
 - [ ] Modal closes on "No thanks" click, backdrop click, Escape key
 - [ ] Illustration area uses `#b2fcff` light cyan background
 - [ ] Modal dialog has 7px border radius and heavy drop shadow
 - [ ] Heading is bold Roboto, paragraph is light gray
-- [ ] "Get the app" primary button has 4px radius
+- [x] "Get the app" primary button has 4px radius
 - [ ] Modal is centered vertically and horizontally
 - [ ] Backdrop overlay dims page when modal is open
-- [ ] aria-labelledby, role="dialog", aria-hidden attributes present
+- [x] aria-labelledby, role="dialog", aria-hidden attributes present
 - [ ] Tab focus is trapped within the modal when open
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib anywhere in app source code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib anywhere in app source code

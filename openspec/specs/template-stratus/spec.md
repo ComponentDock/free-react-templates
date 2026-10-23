@@ -355,7 +355,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header is a semi-transparent dark bar with 2px green bottom border,
       brand, five nav links, "Support 24/7", and Login/Register square
       buttons; mobile toggler has aria-expanded.
-- [ ] Hero is full-width with a dark cover photo, "The Best Hosting" heading,
+- [x] Hero is full-width with a dark cover photo, "The Best Hosting" heading,
       two paragraphs, square slate "Read More" button, and green active
       slider dot.
 - [ ] Features row renders three white cards (Worldwide Support / Safe &
@@ -363,16 +363,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Services section is a dark cover-photo band with white "The only ones /
       Our Best Services" title, central circular graphic, and six white
       service items (3 left / 3 right on desktop).
-- [ ] Trust section renders "We Generate Trust", a photo, paragraph, and four
+- [x] Trust section renders "We Generate Trust", a photo, paragraph, and four
       green-check list items.
 - [ ] Milestones band is solid #556080 with four stats (31k Clients, 98k
       Domains, 14k Awards, 362 VPS).
-- [ ] CTA renders "We are here to help you get started" with subtext and a
+- [x] CTA renders "We are here to help you get started" with subtext and a
       square green "Start" button.
 - [ ] Footer is two-tone dark (#1f2430 top with brand/social/four link
       columns, #171b26 bar with repo-standard credit).
 - [ ] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Cloud83), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -193,13 +193,13 @@ The template SHALL NOT contain any references to "ColorLib" in source code, comm
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Header — the brand "Artistry." is displayed in the header
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Header — the brand "Artistry." is displayed in the header
 - [ ] Hero Section — the headline "Hi there, I am Artistry" is displayed
 - [ ] About / Skills Section — a bold headline describing the creative director is displayed
-- [ ] Services Section — the section title "My Services" is displayed
-- [ ] Gallery Section — the section title "My Works" is displayed
-- [ ] Testimonials Section — the section title "What Clients say" is displayed
+- [x] Services Section — the section title "My Services" is displayed
+- [x] Gallery Section — the section title "My Works" is displayed
+- [x] Testimonials Section — the section title "What Clients say" is displayed
 - [ ] Mobile Responsiveness — the header shows a hamburger menu

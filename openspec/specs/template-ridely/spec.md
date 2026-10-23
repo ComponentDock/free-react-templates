@@ -370,7 +370,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `cover`/`center`, hidden below 480px (form full-width then)
 - [ ] Card max-width 768px, bg `#1a1b1d`, no shadow; form padding 30px,
       margin-left 310px (0 below 480px)
-- [ ] Header "Book Your Taxi": white, 42px, weight 400, uppercase, centered
+- [x] Header "Book Your Taxi": white, 42px, weight 400, uppercase, centered
 - [ ] Inputs: transparent bg, height 65px, padding-top 15px, radius 0,
       border-bottom 2px solid `#cecccd`, 16px weight 700 white,
       capitalized; placeholder `rgba(255,255,255,0.3)`; typed text
@@ -383,7 +383,7 @@ Dock (`https://www.componentdock.com/`) instead.
       required, custom arrow (rotated `➜` or ChevronDown) `#cecccd`
 - [ ] Pickup Date (date) + Pickup Time (time) side by side, required, grey
       empty state
-- [ ] "Book Now" button: full width, `#1a1b1d` bg, `#ffc600` weight-700 18px
+- [x] "Book Now" button: full width, `#1a1b1d` bg, `#ffc600` weight-700 18px
       text, 2px `#ffc600` border, height 55px, radius 0; shows summary /
       validation messages
 - [ ] Placeholder images via `picsum.photos/seed/ridely-<n>/<w>/<h>`, icons
@@ -391,5 +391,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

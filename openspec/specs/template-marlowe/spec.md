@@ -340,11 +340,11 @@ Dock (`https://www.componentdock.com/`) instead.
       (`picsum.photos/seed/marlowe-<n>/<w>/<h>`); logo recreated as text
       wordmark; ads as bordered placeholder boxes.
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [ ] 100% Vitest coverage on `apps/marlowe` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/marlowe` (lines/functions/branches/
       statements).
 - [ ] PR description includes: source template (ColorLib "Callie"), preview
       URL (https://preview.colorlib.com/theme/callie/ — reachable), design
       tokens used, what differs (name, placeholder images, text logo,
       placeholder ads).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -192,11 +192,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar shall display the logo text "Turbo" with a blue dot accent
-- [ ] Hero Section — the hero section shall display a "Welcome" heading
-- [ ] About Section — the about section shall display the heading "For the next great business"
-- [ ] Features Section — the features section shall display headings for "Minimal and Modern Design", "Do things with love", and "Take your business online"
-- [ ] Team Section — the team section shall display 4 team members with names and "Product Manager" titles
+- [x] Navbar — the navbar shall display the logo text "Turbo" with a blue dot accent
+- [x] Hero Section — the hero section shall display a "Welcome" heading
+- [x] About Section — the about section shall display the heading "For the next great business"
+- [x] Features Section — the features section shall display headings for "Minimal and Modern Design", "Do things with love", and "Take your business online"
+- [x] Team Section — the team section shall display 4 team members with names and "Product Manager" titles
 - [ ] Portfolio Section — the portfolio section shall display 6 portfolio items
 - [ ] Services Section — the services section shall display Business Consulting, Market Analysis, User Monitoring, Insurance Consulting, Financial Investment, and Financial Management
 - [ ] Testimonials Section — the testimonials section shall display 2 testimonial quotes

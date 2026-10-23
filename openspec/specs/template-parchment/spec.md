@@ -351,12 +351,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/parchment` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/parchment` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- parchment` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#111860, #0d134a, #1d28a1, #151515, #f2f2f2, #dddddd, #000, #fff, rgba(0,0,0,.8/.6/.5), rgba(255,255,255,.5), Libre Baskerville + Nunito Sans) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `parchment-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
 - [ ] Body page background reproduced (#111860 visible behind the footer band and page edges; content sections #f2f2f2 / #fff on top)
 - [ ] Featured slider implemented with client-side state (dots + prev/next; fake timers in tests where needed)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

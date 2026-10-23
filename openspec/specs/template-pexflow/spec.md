@@ -180,14 +180,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar navigation — the navbar shows the logo "Pexflow"
-- [ ] Hero / Banner section — a headline "Committed to Superior Quality and Results" is displayed
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar navigation — the navbar shows the logo "Pexflow"
+- [x] Hero / Banner section — a headline "Committed to Superior Quality and Results" is displayed
 - [ ] About section — a left image and right text column are visible
-- [ ] Services section — an "Our Services" heading is visible
-- [ ] Experience / Counter section — a "We Are Experience in Construction" heading is visible
-- [ ] Projects section with filter — an "Our Projects" heading is visible
+- [x] Services section — an "Our Services" heading is visible
+- [x] Experience / Counter section — a "We Are Experience in Construction" heading is visible
+- [x] Projects section with filter — an "Our Projects" heading is visible
 - [ ] Stats / Counter strip — four stat blocks are displayed: "60 Satisfied Client", "10 Worldwide Branches", "80 Total Projects", "24 Work Finished"
-- [ ] Reviews / Testimonials — a "Some Feedback From Client" heading is visible
-- [ ] Blog section — a "Recent News" heading is visible
+- [x] Reviews / Testimonials — a "Some Feedback From Client" heading is visible
+- [x] Blog section — a "Recent News" heading is visible
 - [ ] Responsive Design — the navbar collapses to a hamburger menu toggle

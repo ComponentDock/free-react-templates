@@ -420,16 +420,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/pumply`)
 - [ ] Section order matches the reference 1:1 (navbar → hero → counters → Step Up Your Fitness → Classes → Schedule → Trainers → Our Featured Services → Contact Us → footer)
 - [ ] Design tokens in `@theme` (brand green #48d494, button text #212529, page #000, contact #121212, hero fallback #222, Muli font stack)
-- [ ] Navbar: transparent over hero, "Pumply" wordmark, 5 white links, green-outlined CONTACT, hamburger on mobile, sticky white state
-- [ ] Hero: 100vh/min-900px, dark #222 + photo background, centered white 7rem/900 "Welcome To Pumply"
+- [x] Navbar: transparent over hero, "Pumply" wordmark, 5 white links, green-outlined CONTACT, hamburger on mobile, sticky white state
+- [x] Hero: 100vh/min-900px, dark #222 + photo background, centered white 7rem/900 "Welcome To Pumply"
 - [ ] Counters: 2,260 Members / 210 Daily Visitors / 887 Health Program / 1,920 Heart Beat with green icons + white numbers
-- [ ] Step Up Your Fitness: green 3rem/900 section title, paragraph, green "Get In Touch" button, green-shadowed photo right
+- [x] Step Up Your Fitness: green 3rem/900 section title, paragraph, green "Get In Touch" button, green-shadowed photo right
 - [ ] Classes: 5-card carousel, hover green overlay + title + category tags (Fitness / Cardio Vascular / Lose Weight / Cardio Vascular / Fitness), gray/green dots
 - [ ] Schedule: 6 day tabs (Mon/Tue/Wed/Thu/Fri/Sun), active green pill, bordered striped white-text table, 5 rows with Join Now links
-- [ ] Trainers: 3 cards (James Holmes / Kelly Green / Ben Smith), green offset shadows, "Aerobatics Trainer" role
+- [x] Trainers: 3 cards (James Holmes / Kelly Green / Ben Smith), green offset shadows, "Aerobatics Trainer" role
 - [ ] Our Featured Services: 6 green cards (Weight Lifting / Meditation / Crossfit / Aerobics / Gym / Circling), white icons + titles, dots
-- [ ] Contact Us: #121212 bg, centered form (First/Last name, Subject, Email, message), full-width "Send Message", validation errors
+- [x] Contact Us: #121212 bg, centered form (First/Last name, Subject, Email, message), full-width "Send Message", validation errors
 - [ ] Footer: About Pumply + Links (Home / Meditation / Gym / Aerobatics) + Subscribe (rounded-0 input + green button), copyright bar links Component Dock
 - [ ] Document title "Pumply — Gym Template"
 - [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 407 (Bootstrap), line 1855 (Health Fitness), line 2327 (One Page)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

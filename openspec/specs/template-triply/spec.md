@@ -394,12 +394,12 @@ Dock (`https://www.componentdock.com/`) instead.
       `#4d4d4d` bar with dark `#1a1b1d` text; hidden (opacity 0) until
       filled for text inputs; always visible for date/time/select; filled →
       white bar with dark text; associated via `htmlFor`/`id`
-- [ ] Passenger select options 1/2/3 + hidden "Select Passenger Numbers"
+- [x] Passenger select options 1/2/3 + hidden "Select Passenger Numbers"
       placeholder option, required, custom arrow (rotated `➜` or
       ChevronDown) `rgba(255,255,255,0.3)` → `#fff` when selected
 - [ ] Pickup Date (date) + Pickup Time (time) side by side, required, grey
       empty state
-- [ ] "Book Now" button: full width, `#ffc600` bg, `#1a1b1d` weight-700 18px
+- [x] "Book Now" button: full width, `#ffc600` bg, `#1a1b1d` weight-700 18px
       text, height 55px, radius 0, border none; shows summary / validation
       messages
 - [ ] Placeholder images via `picsum.photos/seed/triply-<n>/<w>/<h>`, icons
@@ -407,5 +407,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

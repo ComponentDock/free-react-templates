@@ -73,8 +73,8 @@ An UI Component Showcase & Buttons Gallery template with navigation header, hero
 - [ ] 100% test coverage on all components (`npm run test:coverage`).
 - [ ] Tailwind CSS 4 tokens and `@source` setup properly injected.
 - [ ] Footer links to Component Dock.
-- [ ] No references to ColorLib in app source code.
-- [ ] 1. Navigation Header — Requirement:** The app shall display a responsive navigation header with the brand logo ("BtnKit"), direct jump links to button categories (Solid, Outline, Social, Glow…
+- [x] No references to ColorLib in app source code.
+- [x] 1. Navigation Header — Requirement:** The app shall display a responsive navigation header with the brand logo ("BtnKit"), direct jump links to button categories (Solid, Outline, Social, Glow…
 - [ ] 2. Hero Section — Requirement:** A striking hero banner presenting the title "Free Dark Mode Bootstrap Buttons", a descriptive subtitle, and quick action buttons to explore or copy code snippets
 - [ ] 3. Solid Buttons Showcase — Requirement:** A grid of solid color buttons in various sizes (small, medium, large), contextual states (primary, success, danger, warning, info), and hover/active effects
 - [ ] 4. Outline & Ghost Buttons Showcase — Requirement:** A collection of outlined and ghost buttons with crisp borders and hover fill transitions

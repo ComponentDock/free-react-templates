@@ -162,12 +162,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar with mobile toggle — the navbar shows "Structura" logo and links for Home, About, Projects, Services, Contact
-- [ ] Hero section with CTA — the hero heading containing "Discover" is visible
-- [ ] About section with stats — "35" and "78" stat values are visible
+- [x] Navigation bar with mobile toggle — the navbar shows "Structura" logo and links for Home, About, Projects, Services, Contact
+- [x] Hero section with CTA — the hero heading containing "Discover" is visible
+- [x] About section with stats — "35" and "78" stat values are visible
 - [ ] Specialization grid with 6 items — 6 specialization items are displayed with their names
 - [ ] Projects section with filter tabs — fewer than 6 project cards are shown
-- [ ] Services section with 3 cards — 3 service cards with "Read More" links are visible
+- [x] Services section with 3 cards — 3 service cards with "Read More" links are visible
 - [ ] Fun facts with stat counters — values "16", "75", "18", "20" are visible with their labels
 - [ ] Team section with 4 members — 4 team members are displayed with names and roles
 - [ ] Testimonials section — 3 testimonial quotes with author names are visible

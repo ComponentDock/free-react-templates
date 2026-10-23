@@ -339,18 +339,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/metronome` exists; package `@free-react-templates/metronome`;
+- [x] `apps/metronome` exists; package `@free-react-templates/metronome`;
       `public/CNAME` = `metronome.free.componentdock.com`; `homepage` =
       `https://metronome.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (300, 400, 500, 700); no
       font/image/icon assets copied from ColorLib; no pickadate/jQuery/
       Bootstrap dependency added (React date-grid helper instead)
-- [ ] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
+- [x] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
       `apps/metronome` (provenance lives only in this spec, TEMPLATES.md,
       PR)
 - [ ] Page background `#fff`, section `py-28`, content centered; column
       ≈25% on lg+, full width below; Roboto body font
-- [ ] H2 "Pick a Date" — centered, 20px, `#000`, `mb-5` (3rem below)
+- [x] H2 "Pick a Date" — centered, 20px, `#000`, `mb-5` (3rem below)
 - [ ] Input: placeholder "Pick A Date", `#ced4da` border, `.25rem` radius,
       `#495057` text; focus ring `0 0 0 .2rem rgba(0,123,255,.25)` +
       `#80bdff` border
@@ -370,7 +370,7 @@ Dock (`https://www.componentdock.com/`) instead.
       hover; Today jumps to current month + fills input, Clear empties
       input, Close closes picker; input value format "d mmmm, yyyy"
       (e.g. "16 February, 2026")
-- [ ] Footer links "Component Dock" → https://www.componentdock.com/
+- [x] Footer links "Component Dock" → https://www.componentdock.com/
 - [ ] 100% coverage (lines/functions/branches/statements) via Vitest +
       Testing Library; tests mock the clock (`vi.setSystemTime`) for
       deterministic month-grid assertions, then `vi.useRealTimers()`;
@@ -378,6 +378,6 @@ Dock (`https://www.componentdock.com/`) instead.
       open, Esc handling, focus-visible rings
 - [ ] `npm run verify:app -- metronome` (or `scripts/verify-app.sh
     metronome`) passes: typecheck + lint + knip + fallow + 100% coverage + build
-- [ ] Deployed to https://metronome.free.componentdock.com (200, correct
+- [x] Deployed to https://metronome.free.componentdock.com (200, correct
       `<title>`, bundle hash matches local build)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

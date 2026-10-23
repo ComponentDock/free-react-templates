@@ -136,12 +136,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and auth CTAs — the navbar displays the logo "Nestled" with a primary-colored dot
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and auth CTAs — the navbar displays the logo "Nestled" with a primary-colored dot
 - [ ] Hero property slider — the hero section shows the first property with price, address, and bath/bed/sqft specs
-- [ ] Services section — a heading "We will help you find your home" is displayed
+- [x] Services section — a heading "We will help you find your home" is displayed
 - [ ] Properties carousel — property cards show image, price, specs, and location
-- [ ] Features section — "Ask our Customer Service" and "Visit our Blog" cards are displayed
-- [ ] Why Us section — 5 icon list items, a portrait image, and "Why Us" heading with description are shown
+- [x] Features section — "Ask our Customer Service" and "Visit our Blog" cards are displayed
+- [x] Why Us section — 5 icon list items, a portrait image, and "Why Us" heading with description are shown
 - [ ] Testimonials section — two testimonial cards with quotes, author names, and roles are displayed
 - [ ] 100% test coverage — all coverage metrics report 100%

@@ -122,7 +122,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Heading display — I see a heading with text "Checkbox #15"
 - [ ] Checkbox task list — I see 4 checkboxes
 - [ ] Toggle behavior — the checkbox becomes checked

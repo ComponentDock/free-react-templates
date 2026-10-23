@@ -408,15 +408,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh dynamo`,
       PR lists source (ColorLib Industry Inc), preview URL, tokens, and what
       differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header — the header SHALL show a dark topbar strip with short blurb text
-- [ ] Hero slider — it SHALL show two slides with the headline lines "Power", "& Energy", and "Industry"
-- [ ] Services section — it SHALL show six services titled "Mechanical Engineering", "Professional Workers", "Green Energy", "Power Engineering", "Oil & Lubricants", and "Power & Energy", each with an icon…
-- [ ] Features section — it SHALL show three cards titled "Chemical Research", "Engineering", and "Manufacturing"
+- [x] Hero slider — it SHALL show two slides with the headline lines "Power", "& Energy", and "Industry"
+- [x] Services section — it SHALL show six services titled "Mechanical Engineering", "Professional Workers", "Green Energy", "Power Engineering", "Oil & Lubricants", and "Power & Energy", each with an icon…
+- [x] Features section — it SHALL show three cards titled "Chemical Research", "Engineering", and "Manufacturing"
 - [ ] Clients section — it SHALL show the heading "A group of productive enterprises that produce or supply Goods, Services, or Sources of Income"
 - [ ] Testimonial section — it SHALL show a background image on the left half
-- [ ] CTA band — it SHALL show the heading "We produce or supply Goods, Services, or Sources" in white on the yellow band
-- [ ] Video section — it SHALL show the heading "We produce or supply Goods, & Services" with a blurb and a "Read More" button
+- [x] CTA band — it SHALL show the heading "We produce or supply Goods, Services, or Sources" in white on the yellow band
+- [x] Video section — it SHALL show the heading "We produce or supply Goods, & Services" with a blurb and a "Read More" button
 - [ ] Footer — it SHALL show an about column with a blurb and social icons (Facebook, Twitter, Dribbble, Behance)
 - [ ] Page composition — the page SHALL compose the header, hero slider, services, features, clients, testimonial, CTA band, video section, and footer in order

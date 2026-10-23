@@ -437,11 +437,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Room image hover zoom, blog thumb hover zoom-rotate, testimonial
       slider navigation work.
 - [ ] Navbar Blog dropdown and mobile hamburger (aria-expanded) work.
-- [ ] No ColorLib assets copied: picsum placeholders, lucide-react icons,
+- [x] No ColorLib assets copied: picsum placeholders, lucide-react icons,
       Google Fonts.
 - [ ] PR description records: source template (ColorLib Royal), preview URL,
       design tokens used, deviations (renamed "Hostelry", picsum images,
       paraphrased copy).
 - [ ] TEMPLATES.md bookkeeping marks BOTH duplicate rows (lines 491 and 1926) `[x]` with the surge URL when the app ships.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

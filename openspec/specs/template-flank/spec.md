@@ -145,18 +145,18 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Sidebar: fixed left position, navy (#1B2A4A) background, full viewport height
-- [ ] Logo: "Flank" text, white, bold, large font at top of sidebar
+- [x] Logo: "Flank" text, white, bold, large font at top of sidebar
 - [ ] Navigation: Home, About, Services, Portfolio, Blog, Contact — white text with icons, vertical stack
-- [ ] Newsletter: "Stay Updated" heading, email input + "Subscribe" button with blue accent
-- [ ] Copyright: small white text at bottom of sidebar, links to componentdock.com
+- [x] Newsletter: "Stay Updated" heading, email input + "Subscribe" button with blue accent
+- [x] Copyright: small white text at bottom of sidebar, links to componentdock.com
 - [ ] Hamburger: navy circular button, toggles sidebar on mobile
-- [ ] Main content: white background, "Sidebar Navigation" heading, 4 content cards in 2x2 grid
+- [x] Main content: white background, "Sidebar Navigation" heading, 4 content cards in 2x2 grid
 - [ ] Content cards: icon + title + description in each card
 - [ ] Responsive: sidebar collapses on mobile, hamburger toggles visibility
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] `public/CNAME` contains `flank.free.componentdock.com`
-- [ ] Package name `@free-react-templates/flank`, homepage `https://flank.free.componentdock.com`
-- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] `public/CNAME` contains `flank.free.componentdock.com`
+- [x] Package name `@free-react-templates/flank`, homepage `https://flank.free.componentdock.com`
+- [x] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
 - [ ] Global font: Poppins via Google Fonts
 - [ ] Brand color: `#1B2A4A` in Tailwind theme
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

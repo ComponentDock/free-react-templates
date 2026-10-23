@@ -226,12 +226,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Complete lineup grid: 4 columns on desktop, responsive breakpoints
 - [ ] Events carousel/swiper functional with navigation
 - [ ] News cards: 2-column layout, date badges with gradient
-- [ ] Footer: brand name, email, social icons, "Component Dock" link
+- [x] Footer: brand name, email, social icons, "Component Dock" link
 - [ ] Dark theme consistent across all sections
 - [ ] Sharp button corners (no border-radius)
 - [ ] Poppins font loaded (Google Fonts link in index.html)
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] All images use picsum.photos placeholders with deterministic seeds
 - [ ] lucide-react icons for social media and search
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

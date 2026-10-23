@@ -559,7 +559,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Focus ring: layer at `calc(100% + 4px)` offset `-2px`, `2px solid
       #3a5dff`, radius 25px, animating `scaleX(1.1) scaleY(1.2)` → `scale(1)`
       over `.4s`, `pointer-events:none`
-- [ ] Modal button "Get Updates": `width:100%`, `height:50px`, `#3a5dff`, radius
+- [x] Modal button "Get Updates": `width:100%`, `height:50px`, `#3a5dff`, radius
       25px, `padding 0 20px`, white 15px label, `#333` hover, `.4s`
 - [ ] Validation: invalid/empty Name or Email → white bubble (`1px solid
       #c80000`, radius 15px, `padding 4px 25px 4px 10px`, right 12px,
@@ -576,12 +576,12 @@ Dock (`https://www.componentdock.com/`) instead.
       the design); icons from `lucide-react` (`AlertCircle` replaces the source
       FontAwesome `\f06a`, own `X` replaces the icon-font close glyph); no
       copied assets, font files, or CSS; no jQuery, no framework, no CDN
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_04` references anywhere
+- [x] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_04` references anywhere
       in `apps/eve` (comments included)
-- [ ] App folder `apps/eve`, package `@free-react-templates/eve`, `homepage`
+- [x] App folder `apps/eve`, package `@free-react-templates/eve`, `homepage`
       `https://eve.free.componentdock.com`, `public/CNAME`
       `eve.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh eve` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

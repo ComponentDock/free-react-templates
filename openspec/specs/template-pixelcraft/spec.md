@@ -176,9 +176,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — it SHALL show the site name "Pixelcraft" linking to `#home
-- [ ] Hero section — it SHALL contain the headline "We Craft Awesome Web And Graphic Design Solutions"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — it SHALL show the site name "Pixelcraft" linking to `#home
+- [x] Hero section — it SHALL contain the headline "We Craft Awesome Web And Graphic Design Solutions"
 - [ ] Services section — it SHALL show the section number "01" and title "Services" in a green block
 - [ ] Portfolio section — it SHALL show the section number "02" and title "Portfolio" in a green block
 - [ ] About / Crafters section — it SHALL show the section number "03" and title "Crafters"

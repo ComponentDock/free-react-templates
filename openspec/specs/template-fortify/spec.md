@@ -197,7 +197,7 @@ The system SHALL provide accessible markup for all interactive elements.
 
 ## Verification checklist
 
-- [ ] Navbar is sticky, responsive, dark background, brand "Fortify"
+- [x] Navbar is sticky, responsive, dark background, brand "Fortify"
 - [ ] Hero has full-cover bg image, 0.7 dark overlay, headline + CTA
 - [ ] Services section has 3 cards with icons
 - [ ] Features section has 6 cards on `#f9f9ff` light bg with colorful icons
@@ -205,10 +205,10 @@ The system SHALL provide accessible markup for all interactive elements.
 - [ ] Gallery section has image grid with `picsum.photos` placeholders
 - [ ] Blog section has 4 cards on light bg with dates, likes, comments
 - [ ] Footer is `#04091e` dark navy, has newsletter + social links
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] All CTA buttons use `#fab700` brand yellow, flat style (no radius)
 - [ ] Poppins font used throughout
 - [ ] All interactive elements keyboard-accessible
-- [ ] No references to ColorLib in app code
+- [x] No references to ColorLib in app code
 - [ ] Uses `lucide-react` for icons (no Font Awesome, no Linearicons)
 - [ ] Uses `picsum.photos` for all placeholder images

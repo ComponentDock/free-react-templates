@@ -299,20 +299,20 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Farmie" and links to the main sections
-- [ ] Hero section — it SHALL contain a level-2 heading matching "The hearth of the farm is the true center of our universe."
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Farmie" and links to the main sections
+- [x] Hero section — it SHALL contain a level-2 heading matching "The hearth of the farm is the true center of our universe."
 - [ ] Benefits section — it SHALL show the four benefit titles, each with an icon and copy
-- [ ] About section — it SHALL show the heading "Let Us Tell You Our Story"
-- [ ] Farm-to-table section — it SHALL show the heading "From Farm To Your Table"
-- [ ] Services section — it SHALL show the heading "Our Produce Is Mainstay For Us"
-- [ ] Products section — it SHALL show the heading "Our Product Are Highest Quality"
-- [ ] Newsletter section — it SHALL show a newsletter heading and an email input with a "Subscribe" button
-- [ ] Farming practices section — it SHALL show the heading "Farming Practices To Preserve Land & Water"
+- [x] About section — it SHALL show the heading "Let Us Tell You Our Story"
+- [x] Farm-to-table section — it SHALL show the heading "From Farm To Your Table"
+- [x] Services section — it SHALL show the heading "Our Produce Is Mainstay For Us"
+- [x] Products section — it SHALL show the heading "Our Product Are Highest Quality"
+- [x] Newsletter section — it SHALL show a newsletter heading and an email input with a "Subscribe" button
+- [x] Farming practices section — it SHALL show the heading "Farming Practices To Preserve Land & Water"
 - [ ] Testimonials section — it SHALL show at least three testimonial quotes with customer names
-- [ ] Contact section — it SHALL show the heading "Get In Touch With Us"
+- [x] Contact section — it SHALL show the heading "Get In Touch With Us"
 - [ ] News section — it SHALL show at least four news posts with meta text and titles
-- [ ] Trust badges section — it SHALL show the heading "Our Certifications & Guarantees"
-- [ ] Footer — it SHALL show the site name "Farmie" and an about blurb
+- [x] Trust badges section — it SHALL show the heading "Our Certifications & Guarantees"
+- [x] Footer — it SHALL show the site name "Farmie" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

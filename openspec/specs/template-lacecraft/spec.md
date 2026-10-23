@@ -222,8 +222,8 @@ Users SHALL see footer with brand, navigation links, and Component Dock attribut
 - [ ] Dark mode support on all sections (`dark:` variants)
 - [ ] Product cards show hover effect with Add-to-Cart button
 - [ ] Responsive: mobile hamburger menu, stacked layout on small screens
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib in app code
 - [ ] Brand name "Lacecraft" used throughout (not "Solestyle")
 - [ ] Images use picsum.photos placeholders with deterministic seeds
 - [ ] Fonts loaded via Google Fonts link (Outfit + Inter)

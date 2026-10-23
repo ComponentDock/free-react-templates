@@ -540,16 +540,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/quad`)
 - [ ] Section order matches the reference 1:1 (header → hero → features → popular courses → registration → trainers → events → testimonials → footer)
 - [ ] Design tokens from the reference used in `@theme` (navy #002347, gold #fdc632, alt golds #f8b600/#f4e700, alt bg #f9f9ff, clock tile #334f6c, body text #7b838a; Roboto + Rubik fonts)
-- [ ] Header: absolute over hero, "Quad" wordmark + gold book icon, centered nav (Home active) navy → gold hover, search icon toggling the "Search Here" bar, mobile hamburger
-- [ ] Hero: min-h ~900px photo bg cover, centered uppercase sub-headline (20px navy) + headline "One Step Ahead This Season" (48px), navy "learn more" (.primary-btn2) + gold "see course" (.primary-btn) buttons (5px radius, 13px uppercase, 48–50px line-height)
-- [ ] Features: "Awesome Feature" title (36px bold Rubik), 3 cards (bg #f9f9ff, padding 40px 36px, icon + h4 + p; hover shadow rgba(0,35,71,.1))
+- [x] Header: absolute over hero, "Quad" wordmark + gold book icon, centered nav (Home active) navy → gold hover, search icon toggling the "Search Here" bar, mobile hamburger
+- [x] Hero: min-h ~900px photo bg cover, centered uppercase sub-headline (20px navy) + headline "One Step Ahead This Season" (48px), navy "learn more" (.primary-btn2) + gold "see course" (.primary-btn) buttons (5px radius, 13px uppercase, 48–50px line-height)
+- [x] Features: "Awesome Feature" title (36px bold Rubik), 3 cards (bg #f9f9ff, padding 40px 36px, icon + h4 + p; hover shadow rgba(0,35,71,.1))
 - [ ] Popular Courses: owl-style 3-slide carousel, cards with thumb, 65px circular gold $25 price badge (navy text, top -34px right 15px), "design" tag, title, blurb, author row + user 25 / heart 35 meta
-- [ ] Registration: navy bg, "Register Now" 42px white + blurb, 4 countdown tiles (#334f6c, 35px 20px padding) 150/23/47/59, "Courses for Free" form (name/phone/email + gold Submit) with validation + success state
-- [ ] Trainers: 4 cards (portrait, name, "Sr. web designer", blurb, 4 social icons)
-- [ ] Events: navy bg (130px 0 100px), 2 cards with image + right overlay panel (rgba(0,35,71,.5), 275px) — date/time/location/desc + square (rounded-0) gold "View Details"
-- [ ] Testimonials: "Client say about me" carousel, cards padding 50px 55px with soft shadow (0 15px 30px rgba(221,221,221,.3)), avatar + name + quote
+- [x] Registration: navy bg, "Register Now" 42px white + blurb, 4 countdown tiles (#334f6c, 35px 20px padding) 150/23/47/59, "Courses for Free" form (name/phone/email + gold Submit) with validation + success state
+- [x] Trainers: 4 cards (portrait, name, "Sr. web designer", blurb, 4 social icons)
+- [x] Events: navy bg (130px 0 100px), 2 cards with image + right overlay panel (rgba(0,35,71,.5), 275px) — date/time/location/desc + square (rounded-0) gold "View Details"
+- [x] Testimonials: "Client say about me" carousel, cards padding 50px 55px with soft shadow (0 15px 30px rgba(221,221,221,.3)), avatar + name + quote
 - [ ] Footer: navy bg, Top Products / Quick Links / Features / Resources columns + Newsletter (email + subscribe) + bottom copyright bar with Component Dock credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react + inline SVG socials; Roboto + Rubik via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Edustage lines (383 AND 1635 AND 2043) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

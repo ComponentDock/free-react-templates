@@ -598,7 +598,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Buttons: Default (outline) / Filled (solid) / Round (pill
       outline) / With Icon (solid + heart) + 40px circle heart button /
       Simple (link); seven colored text links Primary…Dark
-- [ ] Inputs: "Default" / "Success" (green) / "Error Input" (red) /
+- [x] Inputs: "Default" / "Success" (green) / "Error Input" (red) /
       "With Ionicons Icons" (leading lucide icon)
 - [ ] Checkboxes/radios: fill-style `#64c4ed`, checked + disabled
       variants, working toggling/selection
@@ -622,7 +622,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (React state, `aria-selected`)
 - [ ] Notifications: four labeled alerts (Info/Success/Warning/Error)
       with working × dismiss
-- [ ] Typography: Header 1–6 "Thinking in textures" (weight 500
+- [x] Typography: Header 1–6 "Thinking in textures" (weight 500
       `#212529`) + Paragraph sample (paraphrased)
 - [ ] Images: Rounded / Circle / Circle Raised (shadow) over ONE
       shared picsum portrait (`sorbet-person`) with "Clyde Ford"
@@ -636,13 +636,13 @@ Dock (`https://www.componentdock.com/`) instead.
       headlines ("…Enjoy Free UI Kit." / "We are Sorbet Free UI Kit." /
       "Get Sorbet Free UI Kit") + outline-white pill "See all
       components"; prev/next controls (React state)
-- [ ] Examples band: "Completed with examples" + centered
+- [x] Examples band: "Completed with examples" + centered
       paraphrasable paragraph
 - [ ] Login card: photo backdrop (picsum `sorbet-signup`), "Card
       Login" h4, 3 white circle social icon buttons, Username +
       Password inputs, `#64c4ed` terms fill-checkbox, white "Get
       Started" button; zod-validated, submit blocked until valid
-- [ ] CTA: "Do you like this UI Kit?" + large primary "Download, it's
+- [x] CTA: "Do you like this UI Kit?" + large primary "Download, it's
       free!" (no photo background)
 - [ ] Footer: bg-light "Copyright © <year> All rights reserved | Made
       with ♥ by Component Dock" linking
@@ -651,13 +651,13 @@ Dock (`https://www.componentdock.com/`) instead.
       icons from `lucide-react`; no copied assets or CSS; no Bootstrap
       JS, owl.carousel, magnific-popup, aos, nouislider,
       datetimepicker, ionicons/flaticon/icomoon fonts, or jQuery
-- [ ] Zero `colorlib` / "Smash" / "Smash Free UI Kit" demo-brand
+- [x] Zero `colorlib` / "Smash" / "Smash Free UI Kit" demo-brand
       references anywhere in `apps/sorbet` (comments included)
-- [ ] App folder `apps/sorbet`, package
+- [x] App folder `apps/sorbet`, package
       `@free-react-templates/sorbet`, `homepage`
       `https://sorbet.free.componentdock.com`, `public/CNAME`
       `sorbet.free.componentdock.com`, lockfile registers the
       workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh sorbet` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

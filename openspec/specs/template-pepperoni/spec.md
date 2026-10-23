@@ -147,11 +147,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar shows the brand "Pepperoni" and all navigation links
-- [ ] Hero section — the hero heading "Italian Cuisine" is visible
+- [x] Navigation bar — the navbar shows the brand "Pepperoni" and all navigation links
+- [x] Hero section — the hero heading "Italian Cuisine" is visible
 - [ ] Contact info bar — the phone number "000 (123) 456 7890" is visible
-- [ ] About section — the about heading containing "Welcome to" is visible
-- [ ] Services section — three service cards are visible with headings "Healthy Foods", "Fastest Delivery", and "Original Recipes"
+- [x] About section — the about heading containing "Welcome to" is visible
+- [x] Services section — three service cards are visible with headings "Healthy Foods", "Fastest Delivery", and "Original Recipes"
 - [ ] Gallery section — four gallery images are displayed
 - [ ] Counter section — four stat counters are visible with their respective numbers and labels
 - [ ] Tabbed menu section — the Pizza tab is active and shows pizza menu items

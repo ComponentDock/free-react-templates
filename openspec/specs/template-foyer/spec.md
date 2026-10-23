@@ -172,13 +172,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Foyer" and links to Home, About, Services, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Foyer" and links to Home, About, Services, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading
-- [ ] Services section — it SHALL contain a heading "What we offer to our clients"
-- [ ] Gallery section — it SHALL contain a heading "Our Recent Works may impress you"
-- [ ] Features section — it SHALL contain a heading "Some Features that Made us Unique"
-- [ ] Call to action — it SHALL show a "Request quote now" button
+- [x] Services section — it SHALL contain a heading "What we offer to our clients"
+- [x] Gallery section — it SHALL contain a heading "Our Recent Works may impress you"
+- [x] Features section — it SHALL contain a heading "Some Features that Made us Unique"
+- [x] Call to action — it SHALL show a "Request quote now" button
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -124,8 +124,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Frame layout with background image — a heading "Coming Soon" is visible inside a bordered frame container
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Frame layout with background image — a heading "Coming Soon" is visible inside a bordered frame container
 - [ ] Countdown timer — four time units are displayed: Days, Hours, Minutes, Seconds
 - [ ] Email signup form — an email input field is present
 - [ ] Social links — five social icon links are present (Facebook, Twitter, Google Plus, Instagram, Pinterest)

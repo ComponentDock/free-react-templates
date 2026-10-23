@@ -224,14 +224,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Filament"
-- [ ] Hero banner — the heading "Brand new Filament" SHALL be visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Filament"
+- [x] Hero banner — the heading "Brand new Filament" SHALL be visible
 - [ ] Features section — four feature cards SHALL be visible
 - [ ] Core Feature Carousel — the carousel SHALL advance to the next slide
 - [ ] Core Feature Image section — a feature image SHALL be visible
-- [ ] Process Steps — six steps SHALL be visible: "Brainstorm", "Discuss Ideas", "Projections", "Strategies", "Seo Target", "Awards"
+- [x] Process Steps — six steps SHALL be visible: "Brainstorm", "Discuss Ideas", "Projections", "Strategies", "Seo Target", "Awards"
 - [ ] Service Carousel — the service carousel SHALL advance to the next service
 - [ ] Newsletter section — an email input field SHALL be present
 - [ ] Contact section — a name input, email input, and message textarea SHALL be present
-- [ ] App composition — the document title SHALL be "Filament — Feminine Landing Page"
+- [x] App composition — the document title SHALL be "Filament — Feminine Landing Page"

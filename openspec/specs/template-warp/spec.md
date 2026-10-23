@@ -393,9 +393,9 @@ Dock (`https://www.componentdock.com/`) instead.
       deliberately fixed); add a focus-visible ring (source has none)
 - [ ] No copied assets, no icon font (pure CSS track + dots with the
       overflow-clip teleport trick)
-- [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
+- [x] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
 - [ ] `TEMPLATES.md` line 752 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

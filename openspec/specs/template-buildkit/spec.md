@@ -637,7 +637,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Notifications: four SOLID alerts (info `#29cded`, success
       `#38cd8b`, warning `#f89647`, danger `#f2395f`) with white text
       and the quirky demo-copy kinds
-- [ ] Typography: H1–H6 "Thinking in textures" scale, small-tag header,
+- [x] Typography: H1–H6 "Thinking in textures" scale, small-tag header,
       paragraph + quote samples
 - [ ] Images: rounded / circle / rounded-raised / circle-raised groups
       (picsum `buildkit-img-*`)
@@ -663,12 +663,12 @@ Dock (`https://www.componentdock.com/`) instead.
       jQuery
 - [ ] The page is RESPONSIVE (the source's `body { min-width: 992px }`
       desktop pin is intentionally NOT replicated)
-- [ ] Zero `colorlib` / "Buildex" / "Buildex Kit." demo-brand references
+- [x] Zero `colorlib` / "Buildex" / "Buildex Kit." demo-brand references
       anywhere in `apps/buildkit`
-- [ ] App folder `apps/buildkit`, package
+- [x] App folder `apps/buildkit`, package
       `@free-react-templates/buildkit`, `homepage`
       `https://buildkit.free.componentdock.com`, `public/CNAME`
       `buildkit.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh buildkit` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

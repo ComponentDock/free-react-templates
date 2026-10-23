@@ -157,14 +157,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with brand, navigation, CTA, and dark mode toggle — I should see the "Briefly" logo
-- [ ] Hero section with background image and CTA — I should see the heading "We Combine Business with Finance"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with brand, navigation, CTA, and dark mode toggle — I should see the "Briefly" logo
+- [x] Hero section with background image and CTA — I should see the heading "We Combine Business with Finance"
 - [ ] Stats counters section — I should see 596+ Qualified Lawyers
-- [ ] About video section with play button and author attribution — I should see the heading "Get to Know Project Estimate?"
-- [ ] Success cards section — I should see four "Road to Success" cards
-- [ ] Services section with three service cards — I should see the heading "Services Offered By Us"
+- [x] About video section with play button and author attribution — I should see the heading "Get to Know Project Estimate?"
+- [x] Success cards section — I should see four "Road to Success" cards
+- [x] Services section with three service cards — I should see the heading "Services Offered By Us"
 - [ ] Service detail split section — I should see the heading and description
-- [ ] Team section with three members — I should see the heading "Meet Our Experienced Team"
-- [ ] CTA banner section — I should see the heading "Get to Know Project Estimate?"
-- [ ] Blog section with three posts — I should see the heading "Latest From Our Blog Posts"
+- [x] Team section with three members — I should see the heading "Meet Our Experienced Team"
+- [x] CTA banner section — I should see the heading "Get to Know Project Estimate?"
+- [x] Blog section with three posts — I should see the heading "Latest From Our Blog Posts"

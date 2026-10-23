@@ -184,4 +184,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Link transitions are 0.3s ease
 - [ ] Responsive stacking on mobile
 - [ ] Component Dock attribution link present
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

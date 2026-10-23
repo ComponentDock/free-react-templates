@@ -264,6 +264,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer has dark background, quick links, subscribe form, Component Dock link
 - [ ] All buttons have 30px pill-shaped border-radius
 - [ ] Font is Open Sans (300/400/700) throughout
-- [ ] No ColorLib references in any app source file
+- [x] No ColorLib references in any app source file
 - [ ] Test coverage is 100% lines/functions/branches/statements
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -232,7 +232,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All images use seeded picsum placeholders
 - [ ] Footer links to Component Dock
 - [ ] Dark mode toggle works
-- [ ] No ColorLib references in app code (provenance only in spec/PR)
+- [x] No ColorLib references in app code (provenance only in spec/PR)
 - [ ] Tests pass at 100% coverage
 - [ ] Build succeeds with no errors
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

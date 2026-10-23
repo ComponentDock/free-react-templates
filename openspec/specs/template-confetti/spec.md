@@ -139,12 +139,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders navigation and CTA — links for Home, About, Speakers, Schedule, Blog, Contact are visible
-- [ ] Hero displays conference headline and actions — a heading "Digital Conference For Designers" is visible
+- [x] Hero displays conference headline and actions — a heading "Digital Conference For Designers" is visible
 - [ ] Countdown shows time units — four items are visible: Days (96), Hrs (15), Min (7), Sec (2)
-- [ ] About section shows conference details — heading "The Biggest Digital Conference" is visible
+- [x] About section shows conference details — heading "The Biggest Digital Conference" is visible
 - [ ] Gallery displays images — 5 images are visible
 - [ ] Pricing shows three tiers — cards for Day 1 ($5), Day 1-2-3 ($8), Day 1-2 ($6) are visible
-- [ ] Sponsors section shows brand logos — heading "Our Top General Sponsors" is visible
+- [x] Sponsors section shows brand logos — heading "Our Top General Sponsors" is visible
 - [ ] Blog section shows posts — 2 blog cards are visible

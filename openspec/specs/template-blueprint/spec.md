@@ -231,16 +231,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Blueprint" and links to Home, Works, Services, Blog, Pricing, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Take on your biggest projects and goals"
-- [ ] Feature tiles — it SHALL show tiles titled "Automatic Backup Data", "Page Builder", and "Create your own template"
-- [ ] Collaborate split section — it SHALL contain the heading "Collaborate with your design team in a new way"
-- [ ] Steps section — it SHALL contain the headings "Real template creation" and "Finish template creation"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Blueprint" and links to Home, Works, Services, Blog, Pricing, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Take on your biggest projects and goals"
+- [x] Feature tiles — it SHALL show tiles titled "Automatic Backup Data", "Page Builder", and "Create your own template"
+- [x] Collaborate split section — it SHALL contain the heading "Collaborate with your design team in a new way"
+- [x] Steps section — it SHALL contain the headings "Real template creation" and "Finish template creation"
 - [ ] Stats section — it SHALL show the numbers 1500, 500, and 1200
-- [ ] Blog section — it SHALL contain a heading "News from our Blog"
-- [ ] Trust section — it SHALL contain the heading "Already trusted by over 10,000 users"
-- [ ] Pricing section — it SHALL contain the heading "Pricing"
+- [x] Blog section — it SHALL contain a heading "News from our Blog"
+- [x] Trust section — it SHALL contain the heading "Already trusted by over 10,000 users"
+- [x] Pricing section — it SHALL contain the heading "Pricing"
 - [ ] Footer — it SHALL show the brand name, an information link column, recent blog entries, and contact info
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

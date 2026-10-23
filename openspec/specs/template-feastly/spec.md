@@ -157,12 +157,12 @@ All components must achieve 100% lines/functions/branches/statements coverage.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar with links — I see navigation links: Home, About, Menu, Specials, Contact
-- [ ] Hero banner with headline — I see "Discover the flavors of feastly" in the hero section
-- [ ] Welcome section with CTA — I see a "welcome to feastly" heading and a "book a table" button
+- [x] Hero banner with headline — I see "Discover the flavors of feastly" in the hero section
+- [x] Welcome section with CTA — I see a "welcome to feastly" heading and a "book a table" button
 - [ ] Food menu grid — I see 6 food items with names and prices
-- [ ] Reservation CTA banner — I see "Natural ingredients and tasty food" and a reservation button
+- [x] Reservation CTA banner — I see "Natural ingredients and tasty food" and a reservation button
 - [ ] Special dishes showcase — I see at least 2 numbered dish items with details
 - [ ] Customer testimonials — I see customer review cards with names and quotes
 - [ ] Blog-style food updates — I see blog cards with titles, dates, and excerpts

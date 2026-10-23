@@ -122,7 +122,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — the navbar is visible with brand name, navigation links to each section, a theme toggle button, and a CTA button
 - [ ] Hero Section — the hero section shows the main heading, subtitle text, and at least one action button
 - [ ] Vortex Gradient Buttons — at least 8 gradient buttons are displayed with distinct color variants

@@ -388,15 +388,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/resume`)
 - [ ] Section order matches the reference 1:1 (header → hero slider → about → services → portfolio → CTA band → testimonials → contact → footer)
 - [ ] Design tokens from the reference used in `@theme` (primary #ec5b53, hero headline #002d5b, text #000a2d/#999999, icon circle #fff4f4, card border #e1ebf7, footer #080827; Rubik + Rufina Google Fonts)
-- [ ] Header: sticky white, logo + centered nav (Home/About/Services/Portfolio/Page dropdown/Contact) + red "Get Free Consultent" button, mobile hamburger menu
+- [x] Header: sticky white, logo + centered nav (Home/About/Services/Portfolio/Page dropdown/Contact) + red "Get Free Consultent" button, mobile hamburger menu
 - [ ] Hero: full-height photo bg, eyebrow (#ec5b53), h1 "I'm Designer Harper F. Watson" (70px #002d5b), paragraph, "Learn More" red + "Hire Me" outlined buttons, portrait photo, 2-slide auto-advance
-- [ ] About: left heading + 2 paragraphs; right "Any Type Of Query & Discussion." + "Late talk with me" + underlined hireme@portfolio.com link + arrow
+- [x] About: left heading + 2 paragraphs; right "Any Type Of Query & Discussion." + "Late talk with me" + underlined hireme@portfolio.com link + arrow
 - [ ] Services: heading + 3 cards (UI/UX Design, Digital Marketing, Website Design) with circular icon, title, description
 - [ ] Portfolio: heading + tabs (All, Branding, Logo, UI/UX, Web Design) + 5 mosaic panes × 6 images, hover zoom
-- [ ] CTA band: photo bg, "Dont worry for contact i`m available" (#ec5b53), "Contact Me Now" button
+- [x] CTA band: photo bg, "Dont worry for contact i`m available" (#ec5b53), "Contact Me Now" button
 - [ ] Testimonials: heading + 3-slide slider (photo, name, role, quote)
-- [ ] Contact: photo bg, heading, Full Name/Email Address/Your Message form + red "Send Message", contact details (email + address)
-- [ ] Footer: #080827 bg, centered logo/email/address, Component Dock credit + "Stay Connected" social icons
+- [x] Contact: photo bg, heading, Full Name/Email Address/Your Message form + red "Send Message", contact details (email + address)
+- [x] Footer: #080827 bg, centered logo/email/address, Component Dock credit + "Stay Connected" social icons
 - [ ] Scroll-to-top circular button appears on scroll and scrolls back to top
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

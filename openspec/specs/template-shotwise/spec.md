@@ -118,7 +118,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation is accessible — the navigation contains links for Home, About, Services, Contact
 - [ ] Contact form captures user input — the contact form has a name input, email input, and message textarea
 - [ ] Newsletter subscription form — the newsletter section has an email input and a subscribe button

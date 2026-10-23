@@ -345,7 +345,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/meridian` scaffolded from the simplest existing app; package
+- [x] `apps/meridian` scaffolded from the simplest existing app; package
       renamed `@free-react-templates/meridian`; workspace registered in
       `package-lock.json` (repo is bun-managed — `bun install` at root,
       never `npm add`)
@@ -376,5 +376,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (`https://preview.colorlib.com/theme/consulting/`), design tokens,
       renames, placeholder images, distinct testimonial/service copy, and
       the dup row (line 954) covered by the same recreation
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

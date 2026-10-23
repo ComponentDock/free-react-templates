@@ -443,18 +443,18 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/gardenly` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/gardenly` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- gardenly` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#00880F, #305534, #66816A, #C9D6CB, #EFF6F0, #301A22, #e6115f, #12C426, #FF6162, #7EA0FF, #fff, rgba(48,85,52,0.2), rgba(48,85,52,0.7)) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `gardenly-<n>`, Google Fonts Barlow link, lucide icons only)
-- [ ] Header: thin white top bar (phone/email/hours + social) + sticky navbar (wordmark, 6 links, circular search icon, green "Get Free Quote" pill) + mobile slide-down menu
-- [ ] Hero: 700px, photo + rgba(48,85,52,0.2) overlay, white 60px headline, 24px sub-line, white pill "View Our Services" (radius 30px, `#305534` text), white dot controls with 23px active ring
-- [ ] Categories: mint `#EFF6F0` bg, 6 cards (rgba(255,255,255,0.5), radius 5px) with lucide icons + distinct blurbs; hover white fill + green underline + shadow; promo line with green "get free quote" anchor link
-- [ ] About: forest green `#305534` band, 2 garden photos, white 48px heading, 2 distinct "Our Mission" blocks
+- [x] No ColorLib assets copied (picsum seeds `gardenly-<n>`, Google Fonts Barlow link, lucide icons only)
+- [x] Header: thin white top bar (phone/email/hours + social) + sticky navbar (wordmark, 6 links, circular search icon, green "Get Free Quote" pill) + mobile slide-down menu
+- [x] Hero: 700px, photo + rgba(48,85,52,0.2) overlay, white 60px headline, 24px sub-line, white pill "View Our Services" (radius 30px, `#305534` text), white dot controls with 23px active ring
+- [x] Categories: mint `#EFF6F0` bg, 6 cards (rgba(255,255,255,0.5), radius 5px) with lucide icons + distinct blurbs; hover white fill + green underline + shadow; promo line with green "get free quote" anchor link
+- [x] About: forest green `#305534` band, 2 garden photos, white 48px heading, 2 distinct "Our Mission" blocks
 - [ ] Services: 3 cells, `#C9D6CB` grid borders, green icons, 24px/600 titles, 20px sage blurbs; hover green-tinted shadow
-- [ ] Projects: 4 cards, hidden caption → rgba(48,85,52,0.7) overlay + white 28px title + "View" on hover
+- [x] Projects: 4 cards, hidden caption → rgba(48,85,52,0.7) overlay + white 28px title + "View" on hover
 - [ ] Commitment: mint `#EFF6F0` column, "Our Commitment" 38px heading, quote + founder row (avatar, name, role), carousel controls
-- [ ] Quote form: coral label, 38px heading, 4 fields (55px pill inputs radius 25px, `#66816A` border), full-width green "Sent Request" submit, client-side validation
-- [ ] Footer: photo bg, wordmark + tagline + circular social icons, Services/Navigation/Contact columns, `#305534` text, copyright bar crediting Component Dock; no ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Quote form: coral label, 38px heading, 4 fields (55px pill inputs radius 25px, `#66816A` border), full-width green "Sent Request" submit, client-side validation
+- [x] Footer: photo bg, wordmark + tagline + circular social icons, Services/Navigation/Contact columns, `#305534` text, copyright bar crediting Component Dock; no ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

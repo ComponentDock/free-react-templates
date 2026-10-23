@@ -393,7 +393,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `index.html`
 - [ ] Navbar transparent over hero, sticky gradient on scroll; orange "Join
       Now" + outlined "Log in"; mobile toggle with aria-expanded
-- [ ] Hero: illustration, white headline/subtext, orange "Join for Free"
+- [x] Hero: illustration, white headline/subtext, orange "Join for Free"
       button
 - [ ] Services: 3 white rounded cards (radius 20px); courses: 4 cards with
       image/category/title/rating/price/"Find out more"
@@ -406,5 +406,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer indigo `#4255A4`; social icons are inline SVGs
 - [ ] Dark-mode `.dark` variants per repo conventions
 - [ ] README status table regenerated after merge (`npm run readme:status`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -227,15 +227,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Motorly" and links to
-- [ ] Hero section — it SHALL contain a level-1 heading "Welcome To Motorly Garage"
-- [ ] Services section — it SHALL contain a heading "What We Do?"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Motorly" and links to
+- [x] Hero section — it SHALL contain a level-1 heading "Welcome To Motorly Garage"
+- [x] Services section — it SHALL contain a heading "What We Do?"
 - [ ] Experience section — it SHALL contain a heading "We Have 20 Years Of Experience In
-- [ ] Products section — it SHALL contain a heading "Our Products"
-- [ ] Statistics section — it SHALL contain a heading "About Our Statistics"
-- [ ] News section — it SHALL contain a heading "Latest News"
-- [ ] Appointment section — it SHALL show a "Booking Repair" heading and an appointment form
+- [x] Products section — it SHALL contain a heading "Our Products"
+- [x] Statistics section — it SHALL contain a heading "About Our Statistics"
+- [x] News section — it SHALL contain a heading "Latest News"
+- [x] Appointment section — it SHALL show a "Booking Repair" heading and an appointment form
 - [ ] Footer — it SHALL show link columns (Quick Link, News, My Office) and a
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

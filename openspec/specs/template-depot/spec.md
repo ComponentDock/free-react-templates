@@ -372,10 +372,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/depot`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/depot`
       (`scripts/verify-app.sh depot` in FAST_MODE; full `npm run gate` in
       CI).
-- [ ] Visual fidelity: transparent navbar (brand "Depot", uppercase white
+- [x] Visual fidelity: transparent navbar (brand "Depot", uppercase white
       links + teal hover, mobile hamburger panel), hero (full-viewport
       photo + dark overlay + 2 slides with "Get Started" CTAs + dots),
       properties (6 cards with title/location/price + black-frame hover),
@@ -404,4 +404,4 @@ Dock (`https://www.componentdock.com/`) instead.
       tokens, and what differs (name, placeholder images, paraphrased
       copy, "Contct Us" typo fixed, no property-single subpage, single
       page only).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

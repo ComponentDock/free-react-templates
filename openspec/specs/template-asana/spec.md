@@ -121,12 +121,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation — the navbar shows the "Asana" logo and links to Home, Classes, Schedule, About, Events, Gallery, Contact
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation — the navbar shows the "Asana" logo and links to Home, Classes, Schedule, About, Events, Gallery, Contact
 - [ ] Hero section — the heading "A Yoga Studio" is visible with a play button link
 - [ ] Featured classes — four class cards are shown with name, price, and image
-- [ ] Schedule — four schedule items are shown with class name, time, date, and "Join from $15" button
-- [ ] About section — the "About Us" heading and description text are visible with two images
-- [ ] Events — two event cards are shown with title, date, and "Read More" button
+- [x] Schedule — four schedule items are shown with class name, time, date, and "Join from $15" button
+- [x] About section — the "About Us" heading and description text are visible with two images
+- [x] Events — two event cards are shown with title, date, and "Read More" button
 - [ ] Gallery — only images in that category are displayed
 - [ ] Contact form — a thank-you message is displayed

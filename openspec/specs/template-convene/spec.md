@@ -125,11 +125,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Typecheck passes (`npm run typecheck --workspace @free-react-templates/convene`)
 - [ ] Lint passes (`npm run lint`)
-- [ ] Vitest coverage is 100% for `apps/convene`
+- [x] Vitest coverage is 100% for `apps/convene`
 - [ ] Build succeeds (`npm run build --workspace @free-react-templates/convene`)
 - [ ] Footer links to Component Dock
-- [ ] `public/CNAME` is `convene.free.componentdock.com` and `homepage` matches
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `public/CNAME` is `convene.free.componentdock.com` and `homepage` matches
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Hero And Live Countdown — a `banner` landmark shows the event headline and `Buy Ticket
 - [ ] About And Speakers — each card exposes the speaker's name and role text
 - [ ] Schedule And Pricing — three cards are visible with the prices 79, 129 and 199

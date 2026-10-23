@@ -139,8 +139,8 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page shell and background — the document title SHALL be "Seekwell — Travel Search"
+- [x] Page shell and background — the document title SHALL be "Seekwell — Travel Search"
 - [ ] Tab navigation — I SHALL see three tab buttons: HOTELS, CAR, FLIGHT
-- [ ] Search form fields — I SHALL see a "Where:" input with placeholder "City, region or specific hotel"
-- [ ] Travellers dropdown — I SHALL see a "Travellers:" dropdown showing "1 Adult, 0 Children, 1 Room"
-- [ ] Search button and form submission — I SHALL see a "SEARCH" button
+- [x] Search form fields — I SHALL see a "Where:" input with placeholder "City, region or specific hotel"
+- [x] Travellers dropdown — I SHALL see a "Travellers:" dropdown showing "1 Adult, 0 Children, 1 Room"
+- [x] Search button and form submission — I SHALL see a "SEARCH" button

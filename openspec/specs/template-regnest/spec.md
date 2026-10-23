@@ -107,8 +107,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Form renders all booking fields — the heading "Booking Tickets" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Form renders all booking fields — the heading "Booking Tickets" is visible
 - [ ] Dynamic pricing based on ticket type and person count — the price updates to "$10.00"
 - [ ] Form submission with terms validation — a confirmation message is shown
 - [ ] Image carousel navigation — the displayed image changes

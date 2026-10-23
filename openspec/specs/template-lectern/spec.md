@@ -147,7 +147,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Template renders all 11 sections in correct order — the DOM contains elements with roles: banner (header), navigation (navbar), main (content), contentinfo (footer)
 - [ ] Navigation provides section anchors — the browser scrolls to the corresponding section anchor
 - [ ] Hero displays university branding — it shows the subtitle, headline, description, and CTA button
@@ -158,4 +158,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gallery shows 6 images — 6 images with alt text are present
 - [ ] Blog shows 4 posts — all 4 post titles, dates, and authors are visible
 - [ ] Newsletter form handles email submission — the email input value becomes empty
-- [ ] Dark mode toggle works — the html element gains the "dark" class
+- [x] Dark mode toggle works — the html element gains the "dark" class

@@ -478,7 +478,7 @@ Dock (`https://www.componentdock.com/`) instead.
       font)
 - [ ] Page background = seeded picsum (`skyly-1/1920/1080`) cover/center,
       full-bleed (source `background.jpg` not copied)
-- [ ] CTA: h1 "Book your flight today" 52px uppercase `#4fa3e3` weight 400 +
+- [x] CTA: h1 "Book your flight today" 52px uppercase `#4fa3e3` weight 400 +
       22px `#191a1e` paragraph
 - [ ] Radios: Roundtrip / One way / Multi-City custom circles (20px, 2px
       `#dfe5e9` border, checked → 10px `#4fa3e3` dot), labels weight 700
@@ -493,7 +493,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (Economy/Business/First) side by side in a 3-column row;
       `appearance: none`; floating `#dfe5e9` 32×32 arrow glyph (rotated
       `➜`/ChevronDown) at right 6px bottom 6px
-- [ ] "Show flights" button: full width, solid `#4fa3e3` bg, white uppercase
+- [x] "Show flights" button: full width, solid `#4fa3e3` bg, white uppercase
       18px text, height 65px, radius 4px, border none; validates (dates
       required, returning ≥ departing) and shows summary / validation
       messages
@@ -504,5 +504,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

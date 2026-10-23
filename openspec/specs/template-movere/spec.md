@@ -398,18 +398,18 @@ Dock (`https://www.componentdock.com/`) instead.
       100% coverage + build
 - [ ] Uses packages/ui (Button, ButtonLink, Badge, Card, cn) — knip-safe
 - [ ] Spec validated: `npm run spec:validate`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Movere" and links to
+- [x] Navigation bar — the navbar SHALL show the site name "Movere" and links to
 - [ ] Hero section — it SHALL contain a pill badge reading "Licensed & Insured in
 - [ ] About stats band — it SHALL show four statistics (Successful Moves, On-Time Rate,
-- [ ] Services section — it SHALL contain a heading "Moving Solutions for Every Need"
-- [ ] How It Works section — it SHALL contain a heading "Your Move in 4 Easy Steps"
-- [ ] Service Areas section — it SHALL contain a heading "We Move You Anywhere"
-- [ ] Pricing section — it SHALL contain a heading "Transparent, Honest Pricing"
-- [ ] Testimonials section — it SHALL contain a heading "Trusted by Thousands of Families"
-- [ ] Quote form section — it SHALL contain a heading "Get Your Free Moving Quote"
-- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
-- [ ] Call to action — it SHALL contain a heading "Ready to Make Your Move?"
+- [x] Services section — it SHALL contain a heading "Moving Solutions for Every Need"
+- [x] How It Works section — it SHALL contain a heading "Your Move in 4 Easy Steps"
+- [x] Service Areas section — it SHALL contain a heading "We Move You Anywhere"
+- [x] Pricing section — it SHALL contain a heading "Transparent, Honest Pricing"
+- [x] Testimonials section — it SHALL contain a heading "Trusted by Thousands of Families"
+- [x] Quote form section — it SHALL contain a heading "Get Your Free Moving Quote"
+- [x] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [x] Call to action — it SHALL contain a heading "Ready to Make Your Move?"
 - [ ] Footer — it SHALL show link columns (SERVICES, COMPANY, SUPPORT) and a
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

@@ -151,23 +151,23 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] All 9 sections present in correct order
 - [ ] Hero: slider with 3 slides, headline, signature, captions, dot nav
-- [ ] Gallery: asymmetric grid, 4 items with captions, hover overlay, "More Portfolio" button
+- [x] Gallery: asymmetric grid, 4 items with captions, hover overlay, "More Portfolio" button
 - [ ] About Me: full-width dark bg, heading, description, border button
 - [ ] Services: 4 icon cards in a row
 - [ ] Testimonials: dark bg, 2 slides with quotes, founder info, dot nav
-- [ ] Pricing: 3 cards, correct prices, "Most Popular" badge on Gold, feature lists
+- [x] Pricing: 3 cards, correct prices, "Most Popular" badge on Gold, feature lists
 - [ ] Instagram: horizontal carousel with hover overlay
 - [ ] Footer: centered logo, nav, social icons, copyright with Component Dock link
 - [ ] Fonts: Playfair Display for headings, Montserrat for body
 - [ ] Button style: border buttons with letter-spacing, uppercase
 - [ ] Navbar sticky on scroll
 - [ ] Responsive layout (mobile, tablet, desktop)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to `https://www.componentdock.com/`
+- [x] No ColorLib references in app code
+- [x] Footer links to `https://www.componentdock.com/`
 - [ ] Placeholder images use `picsum.photos/seed/filmvault-*`
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 
 ## Replication Notes
 

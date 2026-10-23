@@ -228,16 +228,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders the login card centered on the viewport — a single login card is displayed centered horizontally
 - [ ] Heading section displays above the card — the heading "Login #08" is visible above the card
 - [ ] Icon circle is displayed inside the card — a circular purple icon container (80px diameter, brand color background) is displayed
-- [ ] Subheading is displayed below the icon — the subheading "Have an account?" is displayed below the icon
-- [ ] Username input field accepts text — a username input field is displayed with placeholder "Username"
-- [ ] Password input field accepts text — a password input field is displayed with placeholder "Password"
-- [ ] Remember Me checkbox is interactive — a "Remember Me" checkbox is displayed
+- [x] Subheading is displayed below the icon — the subheading "Have an account?" is displayed below the icon
+- [x] Username input field accepts text — a username input field is displayed with placeholder "Username"
+- [x] Password input field accepts text — a password input field is displayed with placeholder "Password"
+- [x] Remember Me checkbox is interactive — a "Remember Me" checkbox is displayed
 - [ ] Forgot Password link is displayed — a "Forgot Password" link is displayed to the right of the checkbox row
-- [ ] Submit button has pill shape and purple styling — a "Get Started" button is displayed below the form fields
+- [x] Submit button has pill shape and purple styling — a "Get Started" button is displayed below the form fields
 - [ ] Page background is soft blue-gray — the page background color is soft blue-gray
 - [ ] Form fields have focus state — the field background slightly darkens
 - [ ] Responsive layout on mobile — the login card spans nearly the full width

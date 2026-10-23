@@ -337,7 +337,7 @@ meaning in the source markup).
       max-width 1140px / 15px gutters (540/720/960px breakpoints)
 - [ ] Heading "Table #03" — 28px / font-weight 400 / `#000`, centered,
       3rem margin-bottom
-- [ ] Subheading "Create Your Domain Name" — 24px / font-weight 400 /
+- [x] Subheading "Create Your Domain Name" — 24px / font-weight 400 /
       `#000`, centered, 1.5rem margin-bottom
 - [ ] Table: `min-width: 1000px` inside an `overflow-x-auto` wrapper;
       white background, centered text, shadow

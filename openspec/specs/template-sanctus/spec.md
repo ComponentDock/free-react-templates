@@ -451,16 +451,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/sanctus`)
 - [ ] Section order matches the reference 1:1 (navbar → hero → About → Recent Sermons → Why Us → Living Testimonies → Church Services → Join → footer)
 - [ ] Design tokens in `@theme` (brand amber #f79918, dark teal #10495c, footer beige #ede1d0, Poppins font stack)
-- [ ] Navbar: transparent over hero, "Sanctus" wordmark, 5 links (Home active) with Sermons dropdown, burger on mobile
-- [ ] Hero: cover photo + rgba(0,0,0,0.3) overlay, white uppercase subheading "Welcome to Sanctus church", hymn h1 40px/700, "Go to sermons" pill, right rounded image + 80px circular play icon
-- [ ] About: amber "About us" subheading, "Living and Sharing The Gospel" heading, 2 paragraphs, "Know more about us" pill, rounded photo
-- [ ] Recent Sermons: 3 cards (image, gray date "15 Jan 2020 • By Pastor Campbell", title, copy, btn-sm pill "Read more")
-- [ ] Why Us: #10495c bg, "Why Us" + white heading + right paragraph, video-bg image with play icon, 4 feature blocks (Peace with God / Relationship for the Soul / Identifying Limitations / His Kingdom) with uppercase white h3 + rgba(255,255,255,0.5) copy, "Send us your prayer request" pill
+- [x] Navbar: transparent over hero, "Sanctus" wordmark, 5 links (Home active) with Sermons dropdown, burger on mobile
+- [x] Hero: cover photo + rgba(0,0,0,0.3) overlay, white uppercase subheading "Welcome to Sanctus church", hymn h1 40px/700, "Go to sermons" pill, right rounded image + 80px circular play icon
+- [x] About: amber "About us" subheading, "Living and Sharing The Gospel" heading, 2 paragraphs, "Know more about us" pill, rounded photo
+- [x] Recent Sermons: 3 cards (image, gray date "15 Jan 2020 • By Pastor Campbell", title, copy, btn-sm pill "Read more")
+- [x] Why Us: #10495c bg, "Why Us" + white heading + right paragraph, video-bg image with play icon, 4 feature blocks (Peace with God / Relationship for the Soul / Identifying Limitations / His Kingdom) with uppercase white h3 + rgba(255,255,255,0.5) copy, "Send us your prayer request" pill
 - [ ] Living Testimonies: 9 cards (heading, italic quote, 40px avatar, James Campbell / Person), Prev/Next pills, amber-active dots
-- [ ] Church Services: white bg, 3 cards (Praise and Worship / Marriage / Exhortation) with amber 60px icons, "+ Read more" links
-- [ ] Join: #10495c bg, white heading, large "Join Us" pill (py-3 px-5)
+- [x] Church Services: white bg, 3 cards (Praise and Worship / Marriage / Exhortation) with amber 60px icons, "+ Read more" links
+- [x] Join: #10495c bg, white heading, large "Join Us" pill (py-3 px-5)
 - [ ] Footer: #ede1d0 bg, Contact / Sources (2 columns) / Links widgets, 6 circular social icons (amber hover), copyright bar links Component Dock
 - [ ] Buttons: #f79918 pill with white text, hover inverts to white bg + amber text + shadow
-- [ ] Document title "Sanctus — Church Template"
+- [x] Document title "Sanctus — Church Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 554 (Bootstrap 5), line 1291 (Church)
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

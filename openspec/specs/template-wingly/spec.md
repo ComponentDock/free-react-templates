@@ -450,7 +450,7 @@ Dock (`https://www.componentdock.com/`) instead.
       Flying from + Flying to row → Departing + Returning + Adults +
       Children row → Travel class + "Show flights" row; NO navbar, NO
       headline/CTA, NO footer (single-section demo)
-- [ ] Brand color `#f23e3e` (red — radio checked dots + "Show flights"
+- [x] Brand color `#f23e3e` (red — radio checked dots + "Show flights"
       button background) in `@theme` and used via Tailwind classes
 - [ ] Card `rgba(0,0,0,0.7)`; inputs white 50px PILL (radius 40px)
       borderless with dark `#191a1e` text; placeholders
@@ -467,11 +467,11 @@ Dock (`https://www.componentdock.com/`) instead.
       Economy/Business/First — `appearance: none` + arrow glyph (rotated
       `➜`/ChevronDown, `rgba(0,0,0,0.3)`, 14px, 32×32) at `right 10px
   bottom 6px`
-- [ ] "Show flights" button: solid `#f23e3e` bg, white uppercase 14px
+- [x] "Show flights" button: solid `#f23e3e` bg, white uppercase 14px
       text, height 50px, full width, radius 40px, hover opacity 0.9;
       validates required fields and shows a summary line / validation
       messages
-- [ ] Source typo "Flyning to" corrected to "Flying to"
+- [x] Source typo "Flyning to" corrected to "Flying to"
 - [ ] Mobile (<768px): route row stacks; date/passenger row wraps full
       width; travel class + button stack; button stays full width
 - [ ] Placeholder images via `picsum.photos/seed/wingly-<n>/<w>/<h>`, icons
@@ -479,5 +479,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

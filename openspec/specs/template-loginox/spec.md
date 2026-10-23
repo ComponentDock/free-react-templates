@@ -223,7 +223,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Social button hover: inverse (black bg, white text)
 - [ ] Password toggle works (show/hide via eye icon)
 - [ ] Remember Me checkbox checked by default
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] CNAME: loginox.free.componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] CNAME: loginox.free.componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

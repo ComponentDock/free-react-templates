@@ -364,17 +364,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Page renders with `#f8fafb` background
 - [ ] Two-column layout (social left, form right) with center divider
-- [ ] "Or register with" text visible in left column
+- [x] "Or register with" text visible in left column
 - [ ] Facebook social button (`#3b5998`) renders
 - [ ] Twitter social button (`#1da1f2`) renders
 - [ ] Google social button (`#ea4335`) renders
-- [ ] "— or —" divider visible between columns
+- [x] "— or —" divider visible between columns
 - [ ] White registration card with drop shadow renders
-- [ ] "Register" heading and subtitle visible
+- [x] "Register" heading and subtitle visible
 - [ ] Name, Email, Password, Re-type Password inputs render (underline style)
 - [ ] Terms and Conditions checkbox renders unchecked
-- [ ] "Sign In" link visible in muted text
-- [ ] "Register" pill button (`#38d39f`, border-radius 30px) renders
+- [x] "Sign In" link visible in muted text
+- [x] "Register" pill button (`#38d39f`, border-radius 30px) renders
 - [ ] Empty submit shows all validation errors
 - [ ] Invalid email shows email error
 - [ ] Short password shows password error
@@ -384,4 +384,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Valid submission shows success state
 - [ ] Component Dock footer link present
 - [ ] Responsive: stacks vertically on mobile
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

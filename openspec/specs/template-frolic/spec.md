@@ -441,10 +441,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/frolic` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/frolic` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- frolic` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#fd4d40, #dc3545, #16c3b0, #fdb62f, #71bc42, #17a2b8, #ffc107, #364d59, #f6f5f5, #343a40, #777, #000, DM Sans/Indie Flower) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `frolic-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib assets copied (picsum seeds `frolic-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

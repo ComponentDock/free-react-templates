@@ -164,12 +164,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header navigation and contact bar — the header top bar shows the address "450 Strand, Charing Cross"
-- [ ] Hero section with background image — the hero section shows subtitle "Pest Control"
-- [ ] About section with image gallery — the about section shows heading "Welcome to the Pest Control Services Company"
-- [ ] Services section with 8 pest control cards — the services section heading is "Our Services"
-- [ ] Choose Us section with features — the section heading is "Why People Choose Pest Control"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header navigation and contact bar — the header top bar shows the address "450 Strand, Charing Cross"
+- [x] Hero section with background image — the hero section shows subtitle "Pest Control"
+- [x] About section with image gallery — the about section shows heading "Welcome to the Pest Control Services Company"
+- [x] Services section with 8 pest control cards — the services section heading is "Our Services"
+- [x] Choose Us section with features — the section heading is "Why People Choose Pest Control"
 - [ ] Counter statistics bar — the counter section has a blue background
-- [ ] Testimonials section — the section heading is "Testimonials"
-- [ ] Latest Blog section — the section heading is "Latest Blog Post"
+- [x] Testimonials section — the section heading is "Testimonials"
+- [x] Latest Blog section — the section heading is "Latest Blog Post"

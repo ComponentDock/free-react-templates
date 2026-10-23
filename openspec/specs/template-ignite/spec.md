@@ -388,9 +388,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark mode toggle flips `.dark` on `document.documentElement` and all
       sections render a correct dark variant
 - [ ] Placeholder images use `https://picsum.photos/seed/ignite-<n>/<w>/<h>`
-- [ ] No ColorLib assets copied (no images/fonts/CSS from the source)
-- [ ] New original name "ignite" used everywhere (folder `apps/ignite`,
+- [x] No ColorLib assets copied (no images/fonts/CSS from the source)
+- [x] New original name "ignite" used everywhere (folder `apps/ignite`,
       package `@free-react-templates/ignite`); source slug recorded in PR
       description
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

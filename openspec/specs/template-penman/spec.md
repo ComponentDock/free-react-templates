@@ -166,13 +166,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the brand "Penman" is displayed
-- [ ] Hero Section — the subheading "Best Seller Book Of The Week" is displayed
+- [x] Navbar — the brand "Penman" is displayed
+- [x] Hero Section — the subheading "Best Seller Book Of The Week" is displayed
 - [ ] Partners Section — 5 partner logo images are displayed
-- [ ] About Section — the heading "About The Book" is displayed
-- [ ] Counter Section — the labels "Copies Sold", "Copies Released", "Cup Of Coffee", "Happy Readers" are displayed
+- [x] About Section — the heading "About The Book" is displayed
+- [x] Counter Section — the labels "Copies Sold", "Copies Released", "Cup Of Coffee", "Happy Readers" are displayed
 - [ ] Chapter Section — the heading "What's Inside The Book" is displayed
-- [ ] Testimonials Section — the heading "Kinds Words From Customers" is displayed
-- [ ] My Books Section — the heading "My Other Books" is displayed
-- [ ] Author Bio Section — the author name "Franklin Henderson" is displayed
-- [ ] Contact Section — the heading "Contact Me" is displayed
+- [x] Testimonials Section — the heading "Kinds Words From Customers" is displayed
+- [x] My Books Section — the heading "My Other Books" is displayed
+- [x] Author Bio Section — the author name "Franklin Henderson" is displayed
+- [x] Contact Section — the heading "Contact Me" is displayed

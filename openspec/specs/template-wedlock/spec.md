@@ -341,13 +341,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header nav matches the demo menu (10 top-level items + Pages
       dropdown), becomes fixed on scroll, and collapses to a working
       accessible mobile menu.
-- [ ] Services section shows "We make any idea and wish come true" + "We
+- [x] Services section shows "We make any idea and wish come true" + "We
       arrange the perfect weddings" with service cards.
-- [ ] Gallery ("Your memories") and preparation strip ("Get ready with us",
+- [x] Gallery ("Your memories") and preparation strip ("Get ready with us",
       6 items) render with photo placeholders.
-- [ ] Testimonials ("Feedback from our happy couples", 3 quotes) and
+- [x] Testimonials ("Feedback from our happy couples", 3 quotes) and
       stories ("Wedding stories") render.
-- [ ] Dark newsletter band ("Subscribe for the updates!") validates the
+- [x] Dark newsletter band ("Subscribe for the updates!") validates the
       email input with error/success states.
 - [ ] Footer renders office address / email / phone, Links column, and
       bottom copyright strip.
@@ -356,5 +356,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description records source (Wordpress Wedding Themes roundup →
       featured Veil theme), preview-404 fallback, tokens, and renames;
       TEMPLATES.md marks BOTH copies (lines 235 and 3107) `[x]` when done.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

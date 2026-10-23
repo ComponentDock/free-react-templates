@@ -634,12 +634,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Carousel: 3 picsum slides (`modkit-slide-1..3`) with white caption
       h5 + lorem line, 3 clickable dots, prev/next controls (React
       state)
-- [ ] Dropdowns: 4 "Dropdown button" toggles → Action / Another action /
+- [x] Dropdowns: 4 "Dropdown button" toggles → Action / Another action /
       Something else here (aria-expanded)
-- [ ] Forms: "Input" (Name/Email/Datetime Picker — native
+- [x] Forms: "Input" (Name/Email/Datetime Picker — native
       datetime-local) + "Input Shadow" (Username/Email/Password); focus
       border `#5753C9`, no ring; submit prevented
-- [ ] Modal: "Launch Demo Modal" → square borderless modal, "Modal
+- [x] Modal: "Launch Demo Modal" → square borderless modal, "Modal
       title" + × + 2 lorem paragraphs; × / backdrop / Escape close;
       focus managed
 - [ ] Navbar: six stacked dark bars (primary/success/info/danger/
@@ -671,12 +671,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All images are `picsum.photos/seed/modkit-*` placeholders; icons
       from `lucide-react`; no copied assets or CSS; no Bootstrap JS,
       nouislider, datetimepicker, font-awesome/icomoon fonts, or jQuery
-- [ ] Zero `colorlib` / "Next" / "Next UI Kit" demo-brand references
+- [x] Zero `colorlib` / "Next" / "Next UI Kit" demo-brand references
       anywhere in `apps/modkit` (comments included)
-- [ ] App folder `apps/modkit`, package
+- [x] App folder `apps/modkit`, package
       `@free-react-templates/modkit`, `homepage`
       `https://modkit.free.componentdock.com`, `public/CNAME`
       `modkit.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh modkit` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

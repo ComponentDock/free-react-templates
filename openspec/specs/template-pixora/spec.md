@@ -326,9 +326,9 @@ Dock (`https://www.componentdock.com/`) instead.
       & Perfect" mixed-weight heading, blurb, "Learn Details" link
 - [ ] Features: 6 white cards on the gradient with uppercase titles
 - [ ] Facts: 4 stats (48px number + 24px purple caption)
-- [ ] Services: 3 image cards on #f9faff with "View Details" links
+- [x] Services: 3 image cards on #f9faff with "View Details" links
 - [ ] Numbered rows: 01/02/03 purple counts + dash-prefixed titles
-- [ ] Newsletter: gradient band, "Subscribe for our Newsletter", email input,
+- [x] Newsletter: gradient band, "Subscribe for our Newsletter", email input,
       "Get Started" → success message
 - [ ] Footer: 3 menu links + 4 social icons (inline SVG, not lucide brand
       icons) + Component Dock link in the copyright line
@@ -337,4 +337,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on ALL FOUR
       lines 540, 2105, 2482, 2580 + surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

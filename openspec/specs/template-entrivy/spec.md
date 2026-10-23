@@ -117,7 +117,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Split-screen layout — the illustration occupies the left half and the form occupies the right half
-- [ ] Login form — a "Sign In" heading is visible
-- [ ] Social login — a "Login with Facebook" link is present
+- [x] Login form — a "Sign In" heading is visible
+- [x] Social login — a "Login with Facebook" link is present

@@ -237,18 +237,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] White navbar with "Draped" logo and nav links
-- [ ] Hero with product name, pricing, and "Shop Now" buttons
+- [x] White navbar with "Draped" logo and nav links
+- [x] Hero with product name, pricing, and "Shop Now" buttons
 - [ ] 3-column product grid with product cards
-- [ ] First featured banner ("Jacket") with dark overlay
+- [x] First featured banner ("Jacket") with dark overlay
 - [ ] Collections carousel section
-- [ ] Second featured banner ("New Denim Coat") with dark overlay
+- [x] Second featured banner ("New Denim Coat") with dark overlay
 - [ ] Footer with 4 columns + Component Dock link
 - [ ] Primary blue (#207dff) for buttons and links
 - [ ] Square buttons (border-radius: 0)
 - [ ] Font: Rubik (Google Fonts)
 - [ ] Dark mode toggle functional
 - [ ] All images use picsum.photos seeded URLs
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Sale tag with gold/yellow background on discounted items
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -181,10 +181,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] ARIA semantics correct (details/summary or ARIA pattern)
 - [ ] Focus visible rings on interactive elements
 - [ ] Responsive: works on mobile, tablet, desktop
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Design tokens in Tailwind @theme (index.css)
 - [ ] Placeholder images via picsum.photos if needed (not needed for this template)
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

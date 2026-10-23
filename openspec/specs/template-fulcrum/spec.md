@@ -150,12 +150,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Sticky navbar with logo and navigation links — I see a sticky navbar with the logo "Fulcrum"
-- [ ] Hero section with background image and CTA — I see the heading "We Are Digital Services"
-- [ ] About Us section with 3-column layout — I see a heading "About Us"
-- [ ] Services section with 6 service cards in a 2x3 grid — I see a heading "Services"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Sticky navbar with logo and navigation links — I see a sticky navbar with the logo "Fulcrum"
+- [x] Hero section with background image and CTA — I see the heading "We Are Digital Services"
+- [x] About Us section with 3-column layout — I see a heading "About Us"
+- [x] Services section with 6 service cards in a 2x3 grid — I see a heading "Services"
 - [ ] Projects section with filterable gallery — I see all 12 project images
-- [ ] Testimonials carousel on lime green background — I see the first testimonial quote and author "Jean Smith"
-- [ ] Blog posts section with 3-column cards — I see a heading "Blog Posts"
-- [ ] Contact form with office addresses — I see a heading "Contact Form"
+- [x] Testimonials carousel on lime green background — I see the first testimonial quote and author "Jean Smith"
+- [x] Blog posts section with 3-column cards — I see a heading "Blog Posts"
+- [x] Contact form with office addresses — I see a heading "Contact Form"

@@ -286,26 +286,26 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/uplift`
-- [ ] `npm run lint` passes for `apps/uplift`
+- [x] `npm run typecheck` passes for `apps/uplift`
+- [x] `npm run lint` passes for `apps/uplift`
 - [ ] `scripts/verify-app.sh uplift` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: "Uplift" logo, 9 anchor links, pill "Donate Now" CTA,
+- [x] Navbar: "Uplift" logo, 9 anchor links, pill "Donate Now" CTA,
       dark-mode toggle (aria-expanded)
 - [ ] Hero: badge pill, H1 with orange accent word, subtext, Donate Now /
       See Our Impact pill buttons, 4 stats, rounded photo
-- [ ] Mission: "Building a Better World Together" + 3 cause cards
-- [ ] Programs: gray band, "How We Help" + 4 program cards
-- [ ] Impact: "Numbers That Matter" stats strip
-- [ ] Stories: gray band, "Lives Transformed" testimonials
-- [ ] Get Involved: "Join Our Mission" + 3 cards
-- [ ] FAQ: "Frequently Asked Questions" accordion (5 questions)
+- [x] Mission: "Building a Better World Together" + 3 cause cards
+- [x] Programs: gray band, "How We Help" + 4 program cards
+- [x] Impact: "Numbers That Matter" stats strip
+- [x] Stories: gray band, "Lives Transformed" testimonials
+- [x] Get Involved: "Join Our Mission" + 3 cards
+- [x] FAQ: "Frequently Asked Questions" accordion (5 questions)
 - [ ] Donate: dark band, $25/$50/$100/$250/Custom chips, trust badges
 - [ ] Footer: 3 link columns + newsletter form + copyright
 - [ ] Brand tokens in `@theme`: emerald #059669 scale, orange #f97316,
       Manrope font; pill buttons; dark-mode variants on gray bands
 - [ ] Placeholder images via `picsum.photos/seed/uplift-<n>/<w>/<h>`;
       icons from lucide-react (brand icons as inline SVG)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

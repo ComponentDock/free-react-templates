@@ -132,8 +132,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page renders with title and layout — the heading "Formlink — Contact Form" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page renders with title and layout — the heading "Formlink — Contact Form" is visible
 - [ ] Two-column contact card — the shadow card is rendered with rounded corners
 - [ ] Contact form with all fields — the Full Name, Email Address, Subject, and Message fields are present
-- [ ] Info boxes display contact details — the address "198 West 21th Street" is visible
+- [x] Info boxes display contact details — the address "198 West 21th Street" is visible

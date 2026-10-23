@@ -499,12 +499,12 @@ Dock (`https://www.componentdock.com/`) instead.
       `picsum.photos/seed/advent-*`; the only icon is lucide-react
       `AlertTriangle` (replacing the source FontAwesome `\f071`); no copied
       assets, font files, or CSS; no jQuery, no framework, no CDN runtime
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_05` references anywhere
+- [x] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_05` references anywhere
       in `apps/advent` (comments included)
-- [ ] App folder `apps/advent`, package `@free-react-templates/advent`,
+- [x] App folder `apps/advent`, package `@free-react-templates/advent`,
       `homepage` `https://advent.free.componentdock.com`, `public/CNAME`
       `advent.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh advent` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

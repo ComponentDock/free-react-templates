@@ -206,13 +206,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar displays contact info and social links — the top bar shows an email address and phone number
 - [ ] Header navigation links — the header shows a logo linking to Home
 - [ ] Hero section displays headline and CTA — the hero section shows a headline about faith
 - [ ] Event banner shows upcoming event details — an upcoming event card shows date, title, time, and location
-- [ ] About section displays church welcome — the about section title reads "Welcome to our church"
+- [x] About section displays church welcome — the about section title reads "Welcome to our church"
 - [ ] Sermons section displays sermon cards — 3 sermon cards are displayed
 - [ ] Mission section shows 4 mission pillars — 4 mission items are displayed with titles and descriptions
 - [ ] Events section shows upcoming events — 3 events are displayed with date badges, titles, times, and locations

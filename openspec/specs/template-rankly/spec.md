@@ -195,10 +195,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top Bar — the top bar shows a phone number and email address
-- [ ] Navigation Bar — the navbar shows the "Rankly" logo
+- [x] Navigation Bar — the navbar shows the "Rankly" logo
 - [ ] Hero Section — a headline about SEO analysis is visible
 - [ ] Services Section — three service cards are visible (Site Audit, Keyword Research, Content Optimization)
 - [ ] About Section — a heading about strategy driving growth is visible

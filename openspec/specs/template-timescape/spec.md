@@ -423,12 +423,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/timescape` exists; package `@free-react-templates/timescape`;
+- [x] `apps/timescape` exists; package `@free-react-templates/timescape`;
       `public/CNAME` = `timescape.free.componentdock.com`; `homepage` =
       `https://timescape.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (weights 300, 400, 500, 700);
       no font/image/icon assets copied from ColorLib
-- [ ] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
+- [x] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
       `apps/timescape` (provenance lives only in this spec, TEMPLATES.md,
       PR)
 - [ ] Page background `#efefef`, section `py-28`, content centered
@@ -456,7 +456,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] "+5 more" overflow on Feb 12 (blue `#007bff`, `.85em`); popover
       lists the hidden events, dismissible
 - [ ] Events draggable to another day (interaction paraphrase)
-- [ ] Footer links "Component Dock" → https://www.componentdock.com/
+- [x] Footer links "Component Dock" → https://www.componentdock.com/
 - [ ] 100% coverage (lines/functions/branches/statements) via Vitest +
       Testing Library; a11y: semantic table/buttons, aria-labels, focus
       rings; tests mock the clock (`vi.setSystemTime`) for deterministic
@@ -465,6 +465,6 @@ Dock (`https://www.componentdock.com/`) instead.
       Jan→Dec navigation)
 - [ ] `npm run verify:app -- timescape` (or `scripts/verify-app.sh
     timescape`) passes: typecheck + lint + knip + fallow + 100% coverage + build
-- [ ] Deployed to https://timescape.free.componentdock.com (200, correct
+- [x] Deployed to https://timescape.free.componentdock.com (200, correct
       content)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -361,17 +361,17 @@ Dock (`https://www.componentdock.com/`) instead.
       mobile menu (close control, Escape-to-close)
 - [ ] Hero: dark background photo, two-line white headline with yellow
       span, "Join the Gym" yellow CTA
-- [ ] Features: heading with yellow-highlighted "workout" + 3 circular
+- [x] Features: heading with yellow-highlighted "workout" + 3 circular
       icon cards (icon circle bg #f6f9fa, hover yellow)
 - [ ] Discount band: dark bg, "Pay now and get a 25% Discount" (span
       yellow), 3 check-list lines, "Become a Member" button
 - [ ] Milestones: 4 yellow number chips + captions (1374 Happy Clients /
       356 Strong Bodies / 57k IG Followers / 24/7 Working Hours) on
       #f6f9fa
-- [ ] Trainers: "Meet the Trainers" + 4 circular-photo cards (name + bio)
+- [x] Trainers: "Meet the Trainers" + 4 circular-photo cards (name + bio)
 - [ ] BMI: dark #242424 panel, weight + height inputs, Calculate button,
       result field with category label
-- [ ] Newsletter: dark band, "Subscribe to newsletter" (span yellow),
+- [x] Newsletter: dark band, "Subscribe to newsletter" (span yellow),
       email input + Subscribe button
 - [ ] Footer: 4 widgets + social icons (inline SVG, not lucide brand
       icons) + Component Dock link in the copyright line
@@ -381,4 +381,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on ALL
       THREE lines 539, 1237, 1887 + surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

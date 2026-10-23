@@ -388,7 +388,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/pixelpress`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/pixelpress`
       (`scripts/verify-app.sh pixelpress` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: header (Follow us row + navy bar with logo / Login /
@@ -412,5 +412,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/endgam/), design tokens, and what
       differs (name, placeholders, text logo, skipped preloader and
       decorative footer pics).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

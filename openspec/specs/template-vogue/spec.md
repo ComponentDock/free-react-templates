@@ -399,10 +399,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/vogue`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/vogue`
       (`scripts/verify-app.sh vogue` in FAST_MODE; full `npm run gate` in
       CI).
-- [ ] Visual fidelity: header (white 104px, text logo "Vogue" + "Online
+- [x] Visual fidelity: header (white 104px, text logo "Vogue" + "Online
       Store" caption, centered nav with Shop dropdown, search/user/cart
       icons + "2" badge, Register · Sign in, mobile hamburger), announcement
       bar (`#B0BCC2` + 3 rotating promos), hero slider (giant "2019 /
@@ -433,4 +433,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/violet/), design tokens, and what
       differs (name, text logo instead of image logo, placeholder images,
       paraphrased copy, single page only).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

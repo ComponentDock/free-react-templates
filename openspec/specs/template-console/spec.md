@@ -390,7 +390,7 @@ media queries in the reference stylesheet).
       ChevronDown); unused CSS (`p` color, btn-custom, title-wrap) not
       reproduced; no panel-specific media query (the 7 blocks only size
       `.cl-container`/`.cl-col-md-*` and print)
-- [ ] Footer links `https://www.componentdock.com/`; NO ColorLib references
+- [x] Footer links `https://www.componentdock.com/`; NO ColorLib references
       anywhere in app code
 - [ ] 100% coverage; per-app gate passes; PR description states: source
       template (ColorLib Dropdown 17), preview URL

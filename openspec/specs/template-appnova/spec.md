@@ -296,13 +296,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Appnova" and links to Home, Features, How It Works, Screenshots, Testimonials, and Pricing
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Appnova" and links to Home, Features, How It Works, Screenshots, Testimonials, and Pricing
 - [ ] Hero section — it SHALL contain a level-1 heading with the app tagline
-- [ ] Features section — it SHALL contain a heading "Awesome Features" and a subtitle blurb
-- [ ] How It Works section — it SHALL contain a heading "How It Works" and a subtitle blurb
-- [ ] Screenshots gallery — it SHALL contain a heading "Screenshots" and a subtitle blurb
+- [x] Features section — it SHALL contain a heading "Awesome Features" and a subtitle blurb
+- [x] How It Works section — it SHALL contain a heading "How It Works" and a subtitle blurb
+- [x] Screenshots gallery — it SHALL contain a heading "Screenshots" and a subtitle blurb
 - [ ] Testimonials section — it SHALL contain a heading "What Our Users Say"
-- [ ] Pricing section — it SHALL contain a heading "Pricing Plans" and a subtitle blurb
+- [x] Pricing section — it SHALL contain a heading "Pricing Plans" and a subtitle blurb
 - [ ] Newsletter CTA section — it SHALL contain a heading such as "Stay Updated" or "Subscribe"
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

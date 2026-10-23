@@ -158,13 +158,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar displays contact information — a top bar is visible containing a phone number
 - [ ] Navbar provides navigation — a navigation bar with a logo is visible
 - [ ] Hero banner displays promotional content — the hero banner displays "Flat 75% Off"
-- [ ] Category grid shows product categories — the heading "Shop for Different Categories" is visible
+- [x] Category grid shows product categories — the heading "Shop for Different Categories" is visible
 - [ ] Men's products section with dark overlay — the heading "New released Products for Men" is visible
 - [ ] Women's products section — the heading "New released Products for Women" is visible
 - [ ] Countdown timer for deals — "Exclusive Hot Deal Ends in:" heading is visible
-- [ ] Related products grid — "Related Searched Products" heading is visible
+- [x] Related products grid — "Related Searched Products" heading is visible
 - [ ] Brand logos row — brand logo images are displayed in a row

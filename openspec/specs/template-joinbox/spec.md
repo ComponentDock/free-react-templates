@@ -125,8 +125,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Split-layout page structure — I see the form panel on the left and the image panel on the right
-- [ ] Registration form with seven fields — I see inputs with placeholders "e.g. John", "e.g. Smith",
+- [x] Registration form with seven fields — I see inputs with placeholders "e.g. John", "e.g. Smith",
 - [ ] Form validation — I see errors for First name, Last name, Email, Password, and
 - [ ] Successful submission state — I see "You're all set!" and the form is no longer visible

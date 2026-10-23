@@ -278,7 +278,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `bash scripts/verify-app.sh sonder` passes (typecheck + lint + 100%
       coverage tests + build, ~2–3 min)
 - [ ] `npm run spec:validate` passes
-- [ ] Header: dark `#111` bg, wordmark "Sonder", social icons, search,
+- [x] Header: dark `#111` bg, wordmark "Sonder", social icons, search,
       nav with Home/Categories/Blog/Styles/About/Contact; both dropdowns
       open; mobile menu works
 - [ ] Featured block: 1 big + 2 small cards with category pills, serif
@@ -298,7 +298,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/sonder`); `grep -c "free-react-templates/sonder"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://sonder.free.componentdock.com"`
+- [x] `"homepage": "https://sonder.free.componentdock.com"`
       in `apps/sonder/package.json`
 - [ ] PR title: `feat: Sonder — lifestyle blog website template (ColorLib
   Philosophy)`; body includes the source URL, preview URL, tokens, and

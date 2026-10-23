@@ -147,13 +147,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar displays the "Vibrance" logo and all six navigation links
-- [ ] Hero section — the hero displays "Get your free template now" pre-heading, "Vibrance Design" heading, and "Studio" in script font
+- [x] Navbar — the navbar displays the "Vibrance" logo and all six navigation links
+- [x] Hero section — the hero displays "Get your free template now" pre-heading, "Vibrance Design" heading, and "Studio" in script font
 - [ ] Social bar — four social media icon links are displayed with labels
-- [ ] Intro section — a heading with "Vibrance" in brand color and a description paragraph are visible
+- [x] Intro section — a heading with "Vibrance" in brand color and a description paragraph are visible
 - [ ] Event calendar — four event cards are displayed in a 2-column grid
 - [ ] Portfolio grid — six portfolio items with images and hover overlays are visible
 - [ ] Client logos — five client logo images are displayed
-- [ ] About section — a heading "Brand experts with +10y of experience" and description are visible
+- [x] About section — a heading "Brand experts with +10y of experience" and description are visible
 - [ ] Counter section — four stat items with icons, values, and labels are visible
 - [ ] Blog section — three blog cards with metadata and read-more buttons are visible

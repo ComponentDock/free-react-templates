@@ -475,10 +475,10 @@ data-duration="4"`) to its target and stops, never re-triggering on scroll-back
 - [ ] Accessibility: semantic landmarks (`header`/`nav`/`main`/`footer`), real
       labels on form controls, `aria-label`s on icon-only controls, focus-visible
       rings, keyboard-operable carousel, toggle and mobile menu
-- [ ] `public/CNAME` = `harbor.free.componentdock.com`; `"homepage"` matches;
+- [x] `public/CNAME` = `harbor.free.componentdock.com`; `"homepage"` matches;
       `npm install` run at the repo root so the lockfile registers
       `@free-react-templates/harbor`
-- [ ] Zero `colorlib` / "Deerhost" / `deerhost` references anywhere in
+- [x] Zero `colorlib` / "Deerhost" / `deerhost` references anywhere in
       `apps/harbor` (comments included — record the palette as design notes, not
       provenance)
 - [ ] No copied assets: no `img/**` photos or SVGs, no logo artwork, no

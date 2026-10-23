@@ -144,7 +144,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with logo, navigation links, and mobile menu — the navbar displays the "P." logo and navigation links (Home, About, Services, Work, Blog, Contact)
-- [ ] Hero section with carousel and social links — the hero section displays a developer intro headline and a "Hire me now" button
+- [x] Hero section with carousel and social links — the hero section displays a developer intro headline and a "Hire me now" button
 - [ ] Services section with three icon cards — the services section displays "What I Do" heading and three service cards (Explore, Create, Learn)
 - [ ] Work section with portfolio items — the work section displays portfolio items with images, tags, titles, and descriptions
-- [ ] Newsletter section with email subscription form — the newsletter section displays "Subscribe Newsletter" heading and an email input with "Subscribe Now" button
+- [x] Newsletter section with email subscription form — the newsletter section displays "Subscribe Newsletter" heading and an email input with "Subscribe Now" button

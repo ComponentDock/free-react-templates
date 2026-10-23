@@ -284,20 +284,20 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes
 - [ ] `bash scripts/verify-app.sh ascent` passes (typecheck, lint, 100%
       coverage tests, build)
-- [ ] 100% line/function/branch/statement coverage for apps/ascent
-- [ ] No colorlib strings anywhere under apps/ascent (comments included)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] public/CNAME = ascent.free.componentdock.com; package.json homepage =
+- [x] 100% line/function/branch/statement coverage for apps/ascent
+- [x] No colorlib strings anywhere under apps/ascent (comments included)
+- [x] Footer links to https://www.componentdock.com/
+- [x] public/CNAME = ascent.free.componentdock.com; package.json homepage =
       https://ascent.free.componentdock.com
 - [ ] package-lock.json registers @free-react-templates/ascent
 - [ ] PR merged immediately after verification
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header and navbar — it shows the brand wordmark "Ascent", the nav links
-- [ ] Hero — it shows the hero headline and a "Visit Our Works" CTA button in
-- [ ] Services — it shows the label "Services", the section heading, and the three
-- [ ] About band — it shows the label "About Us", the heading "Empowering
-- [ ] Portfolio / Featured Works — it shows the heading "Featured Works" and five work cards, each
-- [ ] How we work — it shows the heading "How we work", the quote and paragraph copy,
-- [ ] Team — it shows the heading "Our Creative Team" and the four members with
-- [ ] Testimonials — it displays the testimonial text and the author "Robert Thomson"
-- [ ] Contact form — it shows the inputs "Your Name", "Email", "Subject", the "Message"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header and navbar — it shows the brand wordmark "Ascent", the nav links
+- [x] Hero — it shows the hero headline and a "Visit Our Works" CTA button in
+- [x] Services — it shows the label "Services", the section heading, and the three
+- [x] About band — it shows the label "About Us", the heading "Empowering
+- [x] Portfolio / Featured Works — it shows the heading "Featured Works" and five work cards, each
+- [x] How we work — it shows the heading "How we work", the quote and paragraph copy,
+- [x] Team — it shows the heading "Our Creative Team" and the four members with
+- [x] Testimonials — it displays the testimonial text and the author "Robert Thomson"
+- [x] Contact form — it shows the inputs "Your Name", "Email", "Subject", the "Message"

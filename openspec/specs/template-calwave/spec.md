@@ -72,6 +72,6 @@ The system SHALL render a footer with copyright and a link to Component Dock.
 - [x] Footer links to `https://www.componentdock.com/`
 - [x] No references to ColorLib in app code
 - [ ] Calendar & Timepiece Planner component — it displays the current month, grid of days, and scheduling controls
-- [ ] Navigation bar — it shows the brand name "Calwave" and links to Schedule and Features
+- [x] Navigation bar — it shows the brand name "Calwave" and links to Schedule and Features
 - [ ] Hero section — it shows a headline "Advanced Time & Schedule Management" and CTA buttons
 - [ ] Features section — it shows key features such as Event Scheduling, Smart Notifications, and Time Tracking

@@ -99,9 +99,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Search input bar — a text input with placeholder "Type Keywords" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Search input bar — a text input with placeholder "Type Keywords" is visible
 - [ ] Advanced search panel — 6 filter dropdowns are visible: Category, Color, Size, Sale, Time, Type
-- [ ] Result count display — the text "108" and "results" are displayed
+- [x] Result count display — the text "108" and "results" are displayed
 - [ ] Reset functionality — all dropdowns return to their default empty values
 - [ ] Search submission — the form submission is handled without page navigation

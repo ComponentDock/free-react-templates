@@ -191,13 +191,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the brand name "Alibi" linked to #home
-- [ ] Hero section — the hero SHALL show heading text "Marco Sebastián"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the brand name "Alibi" linked to #home
+- [x] Hero section — the hero SHALL show heading text "Marco Sebastián"
 - [ ] Consultation form — the form SHALL contain a Name text input
-- [ ] Services section — the section SHALL show a "Our Services" heading
+- [x] Services section — the section SHALL show a "Our Services" heading
 - [ ] Counter section — the section SHALL show the value "18" with label "Years Experience"
-- [ ] Practice areas section — the section SHALL show a "Practice Areas" heading
-- [ ] Testimonials section — the section SHALL show a "Testimonials" heading
+- [x] Practice areas section — the section SHALL show a "Practice Areas" heading
+- [x] Testimonials section — the section SHALL show a "Testimonials" heading
 - [ ] Contact CTA section — the section SHALL contain links for Twitter, Facebook, Google, and Instagram
-- [ ] Blog section — the section SHALL show a "Latest From Blog" heading
+- [x] Blog section — the section SHALL show a "Latest From Blog" heading

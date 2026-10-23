@@ -72,7 +72,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Accordion items support smooth open/close toggle state
 - [ ] Active item styling matches design tokens (`#72c02c` border/text, green chevron)
 - [ ] First accordion item expanded by default (matching original)
-- [ ] Footer links to Component Dock (`https://www.componentdock.com/`)
+- [x] Footer links to Component Dock (`https://www.componentdock.com/`)
 - [ ] 100% test coverage with Vitest & Testing Library
 - [ ] Passes per-app verification (`scripts/verify-app.sh pleat`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

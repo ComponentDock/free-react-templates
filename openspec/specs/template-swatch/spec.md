@@ -542,12 +542,12 @@ Dock (`https://www.componentdock.com/`) instead.
       names, experience company names) — same kinds of content, no duplicated
       strings
 - [ ] Google Maps iframe replaced (placeholder or omitted; note deviation)
-- [ ] Footer links Component Dock (https://www.componentdock.com/)
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] Footer links Component Dock (https://www.componentdock.com/)
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] TEMPLATES.md: mark ALL 4 knuford rows `[x]` (lines 597, 2331, 2402, 2716) + surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (swatch.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (2026-08-18, stream 1)
 

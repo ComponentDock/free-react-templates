@@ -278,7 +278,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/studio`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/studio`
       (`scripts/verify-app.sh studio` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: page background `#272343`; centered white "Carousel
@@ -308,4 +308,4 @@ Dock (`https://www.componentdock.com/`) instead.
       `/theme/bootstrap/` prefix), design tokens, and what differs (name,
       placeholder images, lucide chevrons instead of icomoon, no
       free-template.co link, added Component Dock footer).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

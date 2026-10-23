@@ -120,14 +120,14 @@ The system SHALL render a footer section containing a link to
 
 ## Verification checklist
 
-- [ ] Heading renders "Contact Us" left-aligned in card
+- [x] Heading renders "Contact Us" left-aligned in card
 - [ ] Full Name, Email, and Message fields render with correct placeholders
-- [ ] "Send copy to my-email" checkbox unchecked by default
+- [x] "Send copy to my-email" checkbox unchecked by default
 - [ ] Checkbox toggles on click
-- [ ] "SEND EMAIL" button renders with green background
+- [x] "SEND EMAIL" button renders with green background
 - [ ] Checkbox and button aligned on same row
 - [ ] Footer links to Component Dock
-- [ ] No reference to ColorLib in any app source file
-- [ ] `public/CNAME` contains `dropform.free.componentdock.com`
-- [ ] `package.json` has `homepage` set to `https://dropform.free.componentdock.com`
+- [x] No reference to ColorLib in any app source file
+- [x] `public/CNAME` contains `dropform.free.componentdock.com`
+- [x] `package.json` has `homepage` set to `https://dropform.free.componentdock.com`
 - [ ] Tests achieve 100% coverage (lines, functions, branches, statements)

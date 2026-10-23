@@ -199,11 +199,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Haute" and a "Home" link pointing to the page root
-- [ ] Welcome hero — it SHALL show the headline "Style is forever"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Haute" and a "Home" link pointing to the page root
+- [x] Welcome hero — it SHALL show the headline "Style is forever"
 - [ ] Intro quote — it SHALL show a quote (e.g. "I firmly believe that with the right footwear one can rule the world.")
 - [ ] Portfolio grid — it SHALL render at least six photo tiles
-- [ ] Recent posts — it SHALL show the heading "Recent Posts"
-- [ ] Footer — it SHALL show the site name "Haute"
+- [x] Recent posts — it SHALL show the heading "Recent Posts"
+- [x] Footer — it SHALL show the site name "Haute"

@@ -304,9 +304,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/roam`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/roam`
       (`scripts/verify-app.sh roam` in FAST_MODE; full `npm run gate` in CI).
-- [ ] Visual fidelity: header (serif wordmark + "TRAVEL BLOG" tagline, 7
+- [x] Visual fidelity: header (serif wordmark + "TRAVEL BLOG" tagline, 7
       nav links, search icon, hamburger), hero (752px cover banner, 3-slide
       carousel: meta + serif headline + Read More + photo with PNG cutout +
       dots), travel category (6-card carousel, title + overlay + meta +
@@ -319,7 +319,7 @@ Dock (`https://www.componentdock.com/`) instead.
       footer `#f1f9ff`, accents `#4cd3e3` / `#38a4ff` / `#52c5fd`, borders
       `#cccccc` / `#dddddd`; Playfair Display 700 (headings) + Roboto
       400/500 (body) via Google Fonts `<link>` in `index.html`.
-- [ ] Buttons/links: "Read More" = 15px/500 black text with yellow hover
+- [x] Buttons/links: "Read More" = 15px/500 black text with yellow hover
       accent; newsletter sub-btn = yellow `#f8b600` with white arrow icon;
       section titles = 48px bold Playfair Display, left-aligned, max-width
       ~510px.
@@ -332,5 +332,5 @@ Dock (`https://www.componentdock.com/`) instead.
       what differs (name, placeholders, paraphrased copy, inner pages not
       recreated, hero slide headings JS-rendered in the static DOM so use
       the screenshot's editorial headline style).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

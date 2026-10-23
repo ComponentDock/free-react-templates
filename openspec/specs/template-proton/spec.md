@@ -247,4 +247,4 @@ The proton workspace SHALL produce a successful production build.
       theme (brand color, font, radii) — no hard-coded hex in sections.
 - [ ] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").

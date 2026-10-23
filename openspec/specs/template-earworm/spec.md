@@ -136,17 +136,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Header: sticky navbar, logo left, nav links centered, search + social icons right, hamburger on mobile
 - [ ] Hero: full-viewport carousel, 3 slides with bg images + dark overlay, heading + subtitle + 2 CTA buttons + music player area with audio controls + like/share/download
-- [ ] Latest Episodes: section heading with divider, filter tabs (5 categories), 2-column card grid with thumbnail + metadata + audio player + actions, "Load More" button
+- [x] Latest Episodes: section heading with divider, filter tabs (5 categories), 2-column card grid with thumbnail + metadata + audio player + actions, "Load More" button
 - [ ] Featured Guests: section heading with divider, guest grid with photo + name + role
 - [ ] Newsletter: parallax bg with overlay, heading + subtitle + email form + subscribe button
 - [ ] Footer: 4 columns (About Us, Categories, Latest Episodes, Follow Us), social icons, App Store/Google Play badges, copyright with Component Dock link
 - [ ] Responsive: mobile hamburger menu, stacked layouts, adjusted spacing
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] `public/CNAME` contains `earworm.free.componentdock.com`
-- [ ] Package name `@free-react-templates/earworm`, homepage `https://earworm.free.componentdock.com`
-- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] `public/CNAME` contains `earworm.free.componentdock.com`
+- [x] Package name `@free-react-templates/earworm`, homepage `https://earworm.free.componentdock.com`
+- [x] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
 - [ ] Global font: HK Grotesk via Google Fonts
 - [ ] Brand color: `#f55656` in Tailwind theme
 - [ ] Dark overlay: `rgba(0,0,0,0.5)` on hero slides and newsletter
 - [ ] Section padding: 80px top/bottom
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

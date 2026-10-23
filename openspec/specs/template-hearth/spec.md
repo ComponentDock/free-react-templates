@@ -398,14 +398,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/hearth` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/hearth` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- hearth` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#f34949, #f67979, #141313, #3c312e, #000, #fff, #e6e6e6, rgba(255,255,255,.7/.8/.1), Poppins + Lovers Quarrel) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `hearth-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `hearth-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
 - [ ] Script subheadings rendered in Lovers Quarrel 50px with the -20px overlap behind the h2 (z-index -1)
 - [ ] Counters count up on scroll into view (30/100/50/100) with fake timers in tests
 - [ ] Carousels (hero slider, testimony) implemented with client-side state, no new deps
 - [ ] Reservation form validates (zod) and blocks submit until complete
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -374,11 +374,11 @@ Dock (`https://www.componentdock.com/`) instead.
       (`picsum.photos/seed/chronicle-<n>/<w>/<h>`); logo recreated as
       text wordmark "Chronicle.".
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [ ] 100% Vitest coverage on `apps/chronicle` (lines/functions/
+- [x] 100% Vitest coverage on `apps/chronicle` (lines/functions/
       branches/statements).
 - [ ] PR description includes: source template (ColorLib "Content"),
       preview URL (https://preview.colorlib.com/theme/content/ —
       reachable), design tokens used, what differs (name, placeholder
       images, text logo).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

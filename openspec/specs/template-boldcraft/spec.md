@@ -180,16 +180,16 @@ The template SHALL NOT contain any references to "ColorLib" in source code, comm
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Header — the brand "BoldCraft" is displayed
-- [ ] Hero Section — the headline "My name is Marcus Cole. Digital Product Designer" is displayed
-- [ ] About Info Bar — the info bar shows "Design For" with "Web & Mobile"
-- [ ] Services Section — the section title "My Expertise" is displayed
-- [ ] Gallery Section — the section title "My Works" is displayed
-- [ ] About Me Section — the section title "About Me" is displayed
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Header — the brand "BoldCraft" is displayed
+- [x] Hero Section — the headline "My name is Marcus Cole. Digital Product Designer" is displayed
+- [x] About Info Bar — the info bar shows "Design For" with "Web & Mobile"
+- [x] Services Section — the section title "My Expertise" is displayed
+- [x] Gallery Section — the section title "My Works" is displayed
+- [x] About Me Section — the section title "About Me" is displayed
 - [ ] Brand Area — 6 partner logo placeholders are displayed in a row
-- [ ] Testimonials Section — the section title "Client Testimonial" is displayed
-- [ ] Blog Section — the section title "Latest News" is displayed
+- [x] Testimonials Section — the section title "Client Testimonial" is displayed
+- [x] Blog Section — the section title "Latest News" is displayed
 - [ ] Mobile Responsiveness — the header shows a hamburger menu

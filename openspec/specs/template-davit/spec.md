@@ -519,7 +519,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-davit/spec.md` present; `npm run spec:validate` green
-- [ ] `apps/davit` scaffolded from the simplest existing app; package
+- [x] `apps/davit` scaffolded from the simplest existing app; package
       `@free-react-templates/davit`; `"homepage": "https://davit.free.componentdock.com"`;
       `public/CNAME` = `davit.free.componentdock.com`; `vite.config.ts` keeps `injectUiSource()`
 - [ ] `npm install` at repo root registers the workspace
@@ -553,7 +553,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `prefers-reduced-motion: reduce`), card **66 → ≈377 px**, items `rgba(255,255,255,0.7)`
       (hover/current `#fff`) at `padding:.9rem 0` with `padding-bottom:10px` on the list; cart stays
       `40 × 40` amber; **no wrap** and `scrollWidth === innerWidth` at 320/375 px
-- [ ] Zero `colorlib` / "Website Menu 15" / `website-menu-15` strings in `apps/davit` (comments
+- [x] Zero `colorlib` / "Website Menu 15" / `website-menu-15` strings in `apps/davit` (comments
       included); none of the source's six labels, its `Logo` wordmark, its five dropdown placeholder
       strings or its `Website menu #05` heading reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `roboto-*.woff2` (all eight are dead
@@ -576,4 +576,4 @@ Dock (`https://www.componentdock.com/`) instead.
       attribution present
 - [ ] Squash-merge the PR, then mark the TEMPLATES.md `Website Menu 15` item `[x]` with the live
       `https://davit.free.componentdock.com` URL + homepage and run `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

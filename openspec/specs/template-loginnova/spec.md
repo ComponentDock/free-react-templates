@@ -181,16 +181,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Page background is full-viewport purple-to-blue gradient
-- [ ] "ACCOUNT LOGIN" heading is white, uppercase, centered, 30px
+- [x] "ACCOUNT LOGIN" heading is white, uppercase, centered, 30px
 - [ ] Username and password inputs are side by side on desktop (50% each)
 - [ ] Inputs have white background, 1px border, no bottom border
 - [ ] Username input has top-left radius 12px, password has top-right radius 12px
 - [ ] Floating labels animate on focus (shrink + slide up, 0.4s)
 - [ ] SIGN IN button is full-width, 70px tall, near-black, bottom radius 12px
 - [ ] Button hover reveals purple-to-blue gradient (0.4s fade)
-- [ ] "Forgot password?" link is centered, light gray, white on hover
+- [x] "Forgot password?" link is centered, light gray, white on hover
 - [ ] Inputs stack vertically on mobile (< 576px)
 - [ ] All typography uses OpenSans font family
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

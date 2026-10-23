@@ -202,14 +202,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `injectUiSource()` present in `vite.config.ts`
 - [ ] PR title/body records: recreation of ColorLib Transcend
       (https://colorlib.com/wp/template/transcend/), preview URL, tokens
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Chroma Studio" and links to Home, About, Services, Works, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Hello folks, we are Chroma Studio."
-- [ ] Who We Are section — it SHALL contain a heading "Who We Are"
-- [ ] What We Do section — it SHALL contain a heading "What We Do"
-- [ ] Works section — it SHALL contain a heading "Featured Works"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Chroma Studio" and links to Home, About, Services, Works, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Hello folks, we are Chroma Studio."
+- [x] Who We Are section — it SHALL contain a heading "Who We Are"
+- [x] What We Do section — it SHALL contain a heading "What We Do"
+- [x] Works section — it SHALL contain a heading "Featured Works"
 - [ ] Stats section — it SHALL show "129 Awards Received", "1507 Cups of Coffee", "108 Projects Completed", and "103 Happy Clients"
-- [ ] Contact section — it SHALL contain a heading "Contact Us"
+- [x] Contact section — it SHALL contain a heading "Contact Us"
 - [ ] Footer — it SHALL show a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

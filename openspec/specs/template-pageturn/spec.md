@@ -243,17 +243,17 @@ source files, comments, or metadata.
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Navigation bar — the navbar SHALL display the brand "PageTurn."
-- [ ] Hero section — it SHALL display the subheading "Best Seller Book Of The Week"
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Navigation bar — the navbar SHALL display the brand "PageTurn."
+- [x] Hero section — it SHALL display the subheading "Best Seller Book Of The Week"
 - [ ] Partner logos — 5 partner logo images SHALL be displayed in a horizontal row
-- [ ] About The Book — it SHALL display heading "About The Book"
+- [x] About The Book — it SHALL display heading "About The Book"
 - [ ] Stats counters — 4 stat cards SHALL be displayed: Copies Sold, Copies Released, Cup Of Coffee, Happy Readers
 - [ ] Chapter section — it SHALL display heading "What's Inside The Book"
 - [ ] Services — 3 service cards SHALL be displayed: Experience, Marketing Goals, Targeting Vision
-- [ ] Testimonials — heading "Kinds Words From Customers" SHALL be displayed in white
-- [ ] My Books grid — heading "My Other Books" SHALL be displayed
-- [ ] Author Bio — the author name "Franklin Henderson" SHALL be displayed
+- [x] Testimonials — heading "Kinds Words From Customers" SHALL be displayed in white
+- [x] My Books grid — heading "My Other Books" SHALL be displayed
+- [x] Author Bio — the author name "Franklin Henderson" SHALL be displayed
 - [ ] Contact section — 4 contact info cards SHALL be displayed with circular green icons

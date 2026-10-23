@@ -199,13 +199,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Terracotta" and links to Home, About, Service, Project, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Terracotta" and links to Home, About, Service, Project, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading
 - [ ] Innovative strip — it SHALL show three cards with titles and blurbs
-- [ ] About section — it SHALL contain a heading "About Us"
-- [ ] Services section — it SHALL contain a heading "our service"
+- [x] About section — it SHALL contain a heading "About Us"
+- [x] Services section — it SHALL contain a heading "our service"
 - [ ] Projects section — it SHALL show at least three project cards with images and captions
 - [ ] Blog section — it SHALL show at least three blog cards with titles and dates
 - [ ] Contact section — it SHALL show an email address and a phone number

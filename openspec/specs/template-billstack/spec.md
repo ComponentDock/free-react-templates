@@ -371,7 +371,7 @@ SHALL preserve readable contrast.
 - [ ] Table: `min-width: 1000px` inside an `overflow-x-auto` wrapper;
       white row bands, `#212529` cell text, soft shadow
       `0 5px 12px -12px rgba(0,0,0,0.29)`, border-collapse collapse
-- [ ] thead: 6 th ("Invoce" · "Customer" · "Ship" · "Price" ·
+- [x] thead: 6 th ("Invoce" · "Customer" · "Ship" · "Price" ·
       "Pruchased Price" · "Status" — or typo-fixed spellings) —
       **13px / weight 400 (explicit) / `#000` / uppercase** / 30px
       padding / NO borders / white background / `scope="col"` on all

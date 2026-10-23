@@ -151,10 +151,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Heading renders centered with "Multi-Select" and "Limit" text
+- [x] Heading renders centered with "Multi-Select" and "Limit" text
 - [ ] Background color matches `#efefef`
 - [ ] Three multi-select components render vertically stacked
-- [ ] Each component shows placeholder "Select Categories"
+- [x] Each component shows placeholder "Select Categories"
 - [ ] Color variant 1: cream tags `#e5e4cc`
 - [ ] Color variant 2: green tags `#c7f0db`
 - [ ] Color variant 3: blue tags `#d3f4ff`
@@ -166,7 +166,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Each dropdown operates independently
 - [ ] Search/filter works within dropdown
 - [ ] Accessibility: labels, semantic HTML, ARIA
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Tests pass with 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

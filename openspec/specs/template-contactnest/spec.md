@@ -207,7 +207,7 @@ and the card SHALL fill available width with appropriate padding.
 - [ ] Dark map background fills the entire viewport
 - [ ] White card is centered vertically and horizontally
 - [ ] Close button (gray circle X) is at card top-right
-- [ ] "Contact Us" heading is large, bold, dark
+- [x] "Contact Us" heading is large, bold, dark
 - [ ] Name and Email fields are in a two-column row
 - [ ] Message textarea spans full width
 - [ ] All inputs use underline-only borders (no box)
@@ -216,7 +216,7 @@ and the card SHALL fill available width with appropriate padding.
 - [ ] Footer text with phone number is centered below button
 - [ ] Phone number is coral-colored
 - [ ] Responsive: fields stack on mobile
-- [ ] No reference to ColorLib anywhere in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] `public/CNAME` contains `contactnest.free.componentdock.com`
+- [x] No reference to ColorLib anywhere in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] `public/CNAME` contains `contactnest.free.componentdock.com`
 - [ ] Package name is `@free-react-templates/contactnest`

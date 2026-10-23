@@ -99,7 +99,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] GHERKIN: Navbar renders with all links — Given** the page is rendered
 - [ ] GHERKIN: Hero shows property cards with prices — Given** the page is rendered
 - [ ] GHERKIN: Search form has all filter fields — Given** the page is rendered

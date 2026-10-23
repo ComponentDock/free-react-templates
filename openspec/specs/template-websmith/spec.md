@@ -346,17 +346,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/websmith` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/websmith` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- websmith` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (`#007bff`, `#000`, `#212529`, `#333333`, `#343a40`, `#b3b3b3`, `#8c8c8c`, `#f8f9fa`, `#f6f6f6`, `#ebeef0`, `#eee`, `#dee2e6`, `#28a745`, `#fff`) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `websmith-<n>` screened for subject, Google Fonts Roboto link, lucide/inline-SVG icons only)
-- [ ] Buttons are pills (radius 30px, 2px border): blue `#007bff` "Start a project" / "Visit website" / "Send Message" / "Subscribe" — hover/focus/active: black bg + black border
+- [x] No ColorLib assets copied (picsum seeds `websmith-<n>` screened for subject, Google Fonts Roboto link, lucide/inline-SVG icons only)
+- [x] Buttons are pills (radius 30px, 2px border): blue `#007bff` "Start a project" / "Visit website" / "Send Message" / "Subscribe" — hover/focus/active: black bg + black border
 - [ ] Hero: 100vh, intro text left (white 8rem/900 heading, 4rem ≤767px), image slider right 60% with overlay `rgba(0,0,0,.4)`, 50px circular blue arrows bottom-right; mobile: full-width image + white `.5` overlay + black sub-text
 - [ ] Services: light-gray `#f8f9fa` band, 6 cards, 50px blue icon circles, 2px blue top border, hover lift + shadow
-- [ ] About: eyebrow + "We Are Expert In Web" + 6 blue-check items + "Watch the video" play link; team duo (James Anderson / Chris Peters) side-by-side
+- [x] About: eyebrow + "We Are Expert In Web" + 6 blue-check items + "Watch the video" play link; team duo (James Anderson / Chris Peters) side-by-side
 - [ ] Portfolio: 3 slides, role line + quote + "Visit website" pill; Testimonials: 3 distinct paraphrased quotes + authors; sliders implemented client-side (no owl-carousel dep)
-- [ ] Contact form: First name / Last name / Email / Message + "Send Message"; validated
-- [ ] Footer: `#333333` bg, Navigation list, newsletter input + Subscribe, bottom bar with Component Dock credit; no ColorLib references in app code
+- [x] Contact form: First name / Last name / Email / Message + "Send Message"; validated
+- [x] Footer: `#333333` bg, Navigation list, newsletter input + Subscribe, bottom bar with Component Dock credit; no ColorLib references in app code
 - [ ] No literal `tel:` URIs in source (runtime-computed if needed); MemoryStorage polyfill in `src/test/setup.ts` (jsdom 30 has no localStorage) only if localStorage is used (dark mode is NOT in this template — skip unless needed)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

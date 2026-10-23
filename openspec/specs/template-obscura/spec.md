@@ -350,8 +350,8 @@ Dock (`https://www.componentdock.com/`) instead.
       padding 23px 45px, uppercase 14px/600), banner h2 30px uppercase
       letter-spacing 2px with white underline, footer muted text white
       0.25 opacity uppercase 14px, hero slide height ~919px.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Porto), preview URL, tokens,
       renames, and the script-font substitution.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

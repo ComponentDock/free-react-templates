@@ -433,10 +433,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-wayfarer/spec.md` validated
       (`npm run spec:validate`)
-- [ ] App folder `apps/wayfarer`, package
+- [x] App folder `apps/wayfarer`, package
       `@free-react-templates/wayfarer`, no ColorLib references in app code
       (grep for colorlib/Travelo in apps/wayfarer)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) —
       `bash scripts/verify-app.sh wayfarer`
 - [ ] Section order matches the source: header → hero slider → where you
@@ -456,7 +456,7 @@ Dock (`https://www.componentdock.com/`) instead.
       red Phone icon) + 4 socials (Instagram / Linkedin / Facebook /
       airbnb→lucide substitute) + search icon; mobile hamburger → nav
       toggle; search icon → modal with input + red "search" button
-- [ ] Hero: 650px slides (3: Indonesia / Australia / Switzerland), photo + navy overlay, cursive white h3, white p, teal "Explore Now"
+- [x] Hero: 650px slides (3: Indonesia / Australia / Switzerland), photo + navy overlay, cursive white h3, white p, teal "Explore Now"
       (boxed-btn3: radius 5, padding 18px 41px); white circular prev/next
       arrows (50px, hover orange `#ff5e13`) + pagination dots (12px,
       active `#ff5e13`)
@@ -467,7 +467,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Popular Destination: white bg, centered title + grey p; 6 cards
       (3-up): photo (radius 5, hover translateY(-10px)) + country (22px
       white, hover red) + teal "0N Places" pill (radius 30px)
-- [ ] Newsletter: bg image + navy overlay .7; "Subscribe Our Newsletter"
+- [x] Newsletter: bg image + navy overlay .7; "Subscribe Our Newsletter"
       h4 + p + white email input (50px, radius 5) + red "Subscribe"
       button
 - [ ] Popular Places: `#F7FAFD` bg, centered title + grey p; 6 white
@@ -499,4 +499,4 @@ Dock (`https://www.componentdock.com/`) instead.
       search modal instead of Swiper/Bootstrap, Component Dock footer
       credit); after merge mark BOTH TEMPLATES.md Travelo rows `[x]`
       (lines 519 and 3009 — Bootstrap 216 / Travel 44)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

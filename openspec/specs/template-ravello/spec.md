@@ -414,12 +414,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/ravello` exists; package `@free-react-templates/ravello`;
+- [x] `apps/ravello` exists; package `@free-react-templates/ravello`;
       `public/CNAME` = `ravello.free.componentdock.com`; `homepage` =
       `https://ravello.free.componentdock.com`
 - [ ] index.html loads Google Fonts Poppins; no font/image/icon assets
       copied from ColorLib
-- [ ] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
+- [x] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
       `apps/ravello` (provenance lives only in this spec, TEMPLATES.md,
       PR)
 - [ ] Single section (`py-[7em]`) on WHITE page background; centered
@@ -442,6 +442,6 @@ Dock (`https://www.componentdock.com/`) instead.
       (`rgba(255,255,255,0.5)`) OVERLAID at the bottom center of the
       slides (absolute, bottom ~20px — NOT below the carousel); active
       dot solid red `#ff5959`; clicking jumps to that slide
-- [ ] Footer: minimal footer linking "Component Dock" →
+- [x] Footer: minimal footer linking "Component Dock" →
       https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

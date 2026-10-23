@@ -117,8 +117,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation & Header — the navbar shows the brand title "Dayloom", view switcher buttons (Month, Week, Day), and a search input
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation & Header — the navbar shows the brand title "Dayloom", view switcher buttons (Month, Week, Day), and a search input
 - [ ] Interactive Calendar Grid — it shows the current month name, all seven weekday headers, and correct number of date buttons for the current month
 - [ ] Event Details Sidebar — it shows the formatted date and an events list
 - [ ] Calendar Grid with Event Badges — the date cell shows a truncated badge with the event title

@@ -97,8 +97,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar & Navigation — they see the brand logo "Odonto" and navigation links
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar & Navigation — they see the brand logo "Odonto" and navigation links
 - [ ] Hero Banner — they see professional dental care messaging and call-to-action buttons
 - [ ] Services Grid — they see icons, titles, and descriptions for each dental procedure
 - [ ] Appointment Booking — submitting shows a success confirmation message

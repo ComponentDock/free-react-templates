@@ -151,9 +151,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar displays contact and account links — the top bar displays "Call Us: 012 44 5698 7456 896"
-- [ ] Navbar provides navigation and icon actions — the "Sarto" logo links to #home
-- [ ] Hero section displays fashion banner — the heading "Fashion for Upcoming Winter" is visible
-- [ ] Hot Deals section shows two deal cards — two "Hot Deals of this Month" headings are visible
+- [x] Navbar provides navigation and icon actions — the "Sarto" logo links to #home
+- [x] Hero section displays fashion banner — the heading "Fashion for Upcoming Winter" is visible
+- [x] Hot Deals section shows two deal cards — two "Hot Deals of this Month" headings are visible
 - [ ] Clients Logo section shows partner logos — 5 client logo images are visible
-- [ ] Featured Products section displays product grid — "Featured Products" heading is visible
-- [ ] Newsletter section accepts email subscriptions — "Subscribe for Our Newsletter" heading is visible
+- [x] Featured Products section displays product grid — "Featured Products" heading is visible
+- [x] Newsletter section accepts email subscriptions — "Subscribe for Our Newsletter" heading is visible

@@ -172,9 +172,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page renders all major sections — I see a navigation bar with "Colloquium" brand
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page renders all major sections — I see a navigation bar with "Colloquium" brand
 - [ ] Countdown timer displays time units — I see countdown units for days, hours, minutes, and seconds
 - [ ] Schedule tabs switch content — I see sessions for Day 02
-- [ ] Pricing cards show correct plans — I see "Basic" plan at "$29"
-- [ ] Navbar has correct navigation links — I see navigation links for "Home", "About", "Pricing", "Schedule", "Speakers", "Blog", "Contact"
+- [x] Pricing cards show correct plans — I see "Basic" plan at "$29"
+- [x] Navbar has correct navigation links — I see navigation links for "Home", "About", "Pricing", "Schedule", "Speakers", "Blog", "Contact"

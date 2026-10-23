@@ -380,7 +380,7 @@ Dock (`https://www.componentdock.com/`) instead.
       coverage) → build.
 - [ ] Section order matches the original 1:1 (navbar → hero → portfolio →
       about → services → testimonial → CTA band → footer).
-- [ ] Design tokens applied: brand amber #ffc107 (CTA band, "Who We Are"
+- [x] Design tokens applied: brand amber #ffc107 (CTA band, "Who We Are"
       kicker, "View All Portfolio" link, service icons, loader stroke), footer
       amber #ffc809, dark navbar #343a40, light #f8f9fa (testimonials), DM
       Serif Display (headings) + Roboto Mono (body), square outline buttons
@@ -401,12 +401,12 @@ Dock (`https://www.componentdock.com/`) instead.
       Branding Identity, Mobile Application, Search Engine).
 - [ ] Testimonial carousel renders on light bg with round avatars, names,
       "Customer Corp." labels, and quotes, with accessible navigation.
-- [ ] CTA band is amber with white "Let's do more together" heading and an
+- [x] CTA band is amber with white "Let's do more together" heading and an
       outline "Get In Touch!" button.
 - [ ] Footer is amber #ffc809 with About + 4 social icons, Contact Info rows,
       Quick Links, and the repo-standard bottom credit.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (CardBoard), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

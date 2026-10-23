@@ -145,12 +145,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with logo and navigation — the logo link points to #home
-- [ ] Hero section with CTA — the h1 heading says "Get fit with us" and a "Join Now" link is present
-- [ ] Feature boxes — feature titles "Pilates with trainer", "Swimming Pool", and "Healthy diet plan" are visible
-- [ ] About section — the heading "About Sportium" and a "Join Now" button are present
-- [ ] Testimonials section — testimonial names "Diane Smith", "Mark Johnson", and "Sarah Williams" are visible with star ratings
+- [x] Hero section with CTA — the h1 heading says "Get fit with us" and a "Join Now" link is present
+- [x] Feature boxes — feature titles "Pilates with trainer", "Swimming Pool", and "Healthy diet plan" are visible
+- [x] About section — the heading "About Sportium" and a "Join Now" button are present
+- [x] Testimonials section — testimonial names "Diane Smith", "Mark Johnson", and "Sarah Williams" are visible with star ratings
 - [ ] Gallery section — 5 images are rendered in the gallery
 - [ ] Courses section — all 6 course titles are visible
-- [ ] Blog section — 3 articles with "Read More" links are visible
+- [x] Blog section — 3 articles with "Read More" links are visible

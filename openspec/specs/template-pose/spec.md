@@ -320,7 +320,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description records source (ColorLib Stylistic), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL THREE copies
       (lines 231, 1189, 1731) `[x]` when done.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

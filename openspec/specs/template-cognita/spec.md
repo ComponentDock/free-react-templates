@@ -131,14 +131,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] UpperBar — social icon links for Twitter, Facebook, LinkedIn, and Dribbble are visible
-- [ ] Navbar — a "Cognita" logo link is visible
-- [ ] Hero Section — the hero heading "Best Online Learning System" is visible
-- [ ] Intro Features — headings for "Learn Courses Online", "Online Library Store", "50% off in all selected Courses" are visible
-- [ ] Welcome Section — a "Welcome to Cognita" heading is visible
-- [ ] Features — headings for "Professional Courses", "Experienced Instructor", "Practical Training", "Validated Certificate" are visible
-- [ ] Classes — a "Our Classes" heading is visible
-- [ ] Testimonials — a "What Students Say" heading is visible
-- [ ] Professors — a "Our Experienced Professors" heading is visible
-- [ ] Events — a "Upcoming Events" heading is visible
+- [x] Navbar — a "Cognita" logo link is visible
+- [x] Hero Section — the hero heading "Best Online Learning System" is visible
+- [x] Intro Features — headings for "Learn Courses Online", "Online Library Store", "50% off in all selected Courses" are visible
+- [x] Welcome Section — a "Welcome to Cognita" heading is visible
+- [x] Features — headings for "Professional Courses", "Experienced Instructor", "Practical Training", "Validated Certificate" are visible
+- [x] Classes — a "Our Classes" heading is visible
+- [x] Testimonials — a "What Students Say" heading is visible
+- [x] Professors — a "Our Experienced Professors" heading is visible
+- [x] Events — a "Upcoming Events" heading is visible

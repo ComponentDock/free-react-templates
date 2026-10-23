@@ -391,7 +391,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Form row: `width:100%`, `55px` top padding, controls `margin 20px 5px 0`;
       input `220px` / `calc(100% - 10px)`, 40px tall, radius 5px, `#e6e6e6`
       with `#846add` 15px text and `#999999` "Your Email" placeholder
-- [ ] Button "Get Notified": `min-width:120px`, 40px tall, radius 5px, 20px
+- [x] Button "Get Notified": `min-width:120px`, 40px tall, radius 5px, 20px
       padding, `#846add` fill with white 15px label, `#333333` hover, `.4s`
 - [ ] Focus ring: full-size `1px solid #846add` layer at radius 5px animating
       `scaleX(1.1) scaleY(1.2)` → `scale(1)`, `pointer-events:none`, `.4s`
@@ -409,12 +409,12 @@ Dock (`https://www.componentdock.com/`) instead.
       `lucide-react` (`AlertTriangle` replaces the source FontAwesome
       `\f071`); no copied assets, font files, or CSS; no jQuery, no framework,
       no CDN
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
-- [ ] Zero `colorlib` / source-demo-brand / `comingsoon_03` references anywhere
+- [x] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Zero `colorlib` / source-demo-brand / `comingsoon_03` references anywhere
       in `apps/incoming` (comments included)
-- [ ] App folder `apps/incoming`, package `@free-react-templates/incoming`,
+- [x] App folder `apps/incoming`, package `@free-react-templates/incoming`,
       `homepage` `https://incoming.free.componentdock.com`, `public/CNAME`
       `incoming.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh incoming` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -135,12 +135,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header with navigation — the header displays the FitCraft logo and all navigation links
-- [ ] Hero section — the hero section shows the heading "Transform Your Body, Elevate Your Life" and a "Start Training Today" button
+- [x] Hero section — the hero section shows the heading "Transform Your Body, Elevate Your Life" and a "Start Training Today" button
 - [ ] Features section — the features section shows Quality Equipment, Health Caring, Flexible Hours, and Expert Trainers cards
 - [ ] Classes section — the classes section shows Weightlifting, Indoor cycling, Kettlebell power, Indoor cycling, and Boxing cards
-- [ ] Banner section — the banner shows "Registration now to get more deals" and an Appointment button
+- [x] Banner section — the banner shows "Registration now to get more deals" and an Appointment button
 - [ ] Pricing section — the pricing section shows Basic, Premium, and Standard plans with correct prices
 - [ ] Gallery section — the gallery section shows 6 images with titles
 - [ ] Team section — the team section shows Alex Morgan, Jordan Blake, and Casey Rivera

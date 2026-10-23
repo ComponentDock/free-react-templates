@@ -413,8 +413,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Interactivity client-side only: tabs, mobile menu, search +
       newsletter submit → success state (no owl-carousel/slicknav/
       nice-select/jquery)
-- [ ] Footer links Component Dock (https://www.componentdock.com/)
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] Footer links Component Dock (https://www.componentdock.com/)
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (hiredly.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

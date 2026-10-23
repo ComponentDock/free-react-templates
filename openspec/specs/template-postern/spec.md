@@ -338,18 +338,18 @@ Dock (`https://www.componentdock.com/`) instead.
       none; header h2 "Exclusive Offer" 18px, body h3 "Get a free a Ebook"
       22px, cancel link `rgba(255,255,255,0.5)` 13px bold; header divider
       `1px solid rgba(255,255,255,0.3)`.
-- [ ] No ColorLib references in `apps/postern` (provenance lives in this spec,
+- [x] No ColorLib references in `apps/postern` (provenance lives in this spec,
       TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] Images: recreate the photo background with a picsum seed image
       (`https://picsum.photos/seed/postern-1/<w>/<h>`, `background-size:
     cover`) — NEVER copy `images/hero_1.jpg`; the close × is a lucide `X`
       icon (never the icomoon `icon-close2` font); the header logo is a
       NEUTRAL placeholder — NEVER reproduce the Google Drive trademark.
-- [ ] Modal a11y: `role="dialog"`, `aria-modal="true"`, `aria-label`, a
+- [x] Modal a11y: `role="dialog"`, `aria-modal="true"`, `aria-label`, a
       labelled title, Escape-to-close, backdrop click closes, close × with
       `aria-label="Close"`; conditional render (not in DOM when closed).
-- [ ] Form: email input + Subscribe button; "Maybe later" cancel link
+- [x] Form: email input + Subscribe button; "Maybe later" cancel link
       dismisses the modal.
 - [ ] Mobile: verify the dialog fits at ≤575.98px (Bootstrap `margin: 0.5rem`),
       photo scales via `background-size: cover`, header cols stack/compress,
@@ -357,4 +357,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Source uses Bootstrap's data-API only (`data-toggle`/`data-dismiss`) —
       recreate open/close with React state (launch-to-open,
       close/backdrop/Escape-to-close); no auto-open on load.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

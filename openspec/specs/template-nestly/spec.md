@@ -428,7 +428,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (7/12: Check In + Check out dates, Guests + Kids selects) → RIGHT
       "Check availability" button (2/12); NO navbar, NO footer
       (single-section demo)
-- [ ] Brand color `#9a8067` (taupe — "Book Now" header + button background)
+- [x] Brand color `#9a8067` (taupe — "Book Now" header + button background)
       in `@theme` and used via Tailwind classes
 - [ ] Text `#3c404a` (dark slate values); labels/arrows `#818390` (grey);
       bar `#fff` with shadow `0 2px 5px -2px rgba(0,0,0,0.3)` and border
@@ -448,7 +448,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Selects: Guests 1/2/3 + Kids 0/1/2, `appearance: none`, arrow glyph
       (rotated `➜`/ChevronDown, `#818390` 12px 32×32) at right 0 bottom
       20px
-- [ ] "Check availability" button: solid `#9a8067` bg, white uppercase 14px
+- [x] "Check availability" button: solid `#9a8067` bg, white uppercase 14px
       weight-400 text, height 80px, full column width; validates (dates,
       check-out ≥ check-in) and shows summary / validation messages
 - [ ] Mobile (<992px): header → fields → button stack vertically; inner
@@ -458,5 +458,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

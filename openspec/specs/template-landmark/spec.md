@@ -415,10 +415,10 @@ Dock (`https://www.componentdock.com/`) instead.
       — same kinds of content, no duplicated strings
 - [ ] Newsletter panel bg is `#004274` navy (the LATER live stylesheet
       rule wins over `#F2F4F8` — verified via computed style)
-- [ ] Footer links Component Dock (https://www.componentdock.com/)
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] Footer links Component Dock (https://www.componentdock.com/)
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] TEMPLATES.md: mark BOTH konato rows `[x]` (lines 598 and 2598) +
       surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (landmark.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

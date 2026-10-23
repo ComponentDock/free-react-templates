@@ -110,9 +110,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with logo, navigation, and search — the navbar displays the "Sonance" logo text
-- [ ] Hero section with featured episode — the date "10 Dec 2019" is displayed
+- [x] Navbar with logo, navigation, and search — the navbar displays the "Sonance" logo text
+- [x] Hero section with featured episode — the date "10 Dec 2019" is displayed
 - [ ] Audio player with playback controls — the audio player shows track title and artist
 - [ ] Live & Upcoming episodes with category tabs — category tabs for All, Entrepreneurship, Media, Tech, and Tutorials are shown
-- [ ] Support The Show call-to-action — the "Support The Show" heading is visible
-- [ ] Latest Episodes grid — the "Latest Episodes" heading is displayed
+- [x] Support The Show call-to-action — the "Support The Show" heading is visible
+- [x] Latest Episodes grid — the "Latest Episodes" heading is displayed

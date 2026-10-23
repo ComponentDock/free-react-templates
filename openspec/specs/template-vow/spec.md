@@ -244,12 +244,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page structure and branding — the document title SHALL be "Vow — Fashion Shop Template"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page structure and branding — the document title SHALL be "Vow — Fashion Shop Template"
 - [ ] Header — the header SHALL contain links for Home, Clothes, Accessories,
-- [ ] Hero slider — a hero section SHALL be visible with a heading "New Collection"
-- [ ] Promo section — a promo section SHALL be visible with title "promo prices"
-- [ ] New arrivals — a new arrivals section SHALL be visible with title "new arrivals"
+- [x] Hero slider — a hero section SHALL be visible with a heading "New Collection"
+- [x] Promo section — a promo section SHALL be visible with title "promo prices"
+- [x] New arrivals — a new arrivals section SHALL be visible with title "new arrivals"
 - [ ] Extra promos — 2 extra promo banners SHALL be visible
 - [ ] Gallery — hashtag links (#vow, #vowinstagram, #vowgirl) SHALL be visible
 - [ ] Testimonials — at least one testimonial SHALL be visible with a quote,

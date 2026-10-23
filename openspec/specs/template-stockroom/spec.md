@@ -188,6 +188,6 @@ Dock (`https://www.componentdock.com/`) instead.
       → Use Inter or system font as substitute (no self-hosted fonts)
 - [ ] Colors: `#fbb710` brand, `#131212` dark, `#3c3c3c` newsletter, `#252525` footer
 - [ ] Buttons: rectangular (no radius), 55px height, 160px min-width
-- [ ] No ColorLib references in app code
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

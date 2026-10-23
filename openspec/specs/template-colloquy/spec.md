@@ -305,9 +305,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-colloquy/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/colloquy`, package `@free-react-templates/colloquy`, no
+- [x] App folder `apps/colloquy`, package `@free-react-templates/colloquy`, no
       ColorLib references in app code (grep for colorlib/The Conference in apps/colloquy)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh colloquy`
 - [ ] Section order matches the source (verified against the live preview
       DOM: home → intro → pricing → calendar → cta → footer): header (top row + nav) → hero → intro (6 cards) → pricing (3 plans) → events calendar
@@ -327,12 +327,12 @@ Dock (`https://www.componentdock.com/`) instead.
       Find out more)
 - [ ] Intro: 6 `#f3f7f9` cards (3-col, 2 rows), 24px titles, hover → blue
       gradient + white text
-- [ ] Calendar: `#f0f2f6` section, "22 april events calendar" title + icon,
+- [x] Calendar: `#f0f2f6` section, "22 april events calendar" title + icon,
       4 rows (time + icon + venue/event/speaker)
 - [ ] Pricing: parallax band, 3 white cards with 4px blue top bar, middle
       plan full gradient + white text (Free / $29.90 / $59.90), 4 features +
       orange info circle + Order plan buttons
-- [ ] CTA: parallax band, "Get your tickets now!" 48px + Find out more
+- [x] CTA: parallax band, "Get your tickets now!" 48px + Find out more
       button
 - [ ] Footer: `#0c081d` bg, about + socials + 2 link columns, `#050210`
       copyright bar with Component Dock link
@@ -345,4 +345,4 @@ Dock (`https://www.componentdock.com/`) instead.
       tokens, diffs (name, placeholder images, middle-plan label
       "recommended" kept or renamed, parallax via CSS background-attachment
       or fixed-position bg)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

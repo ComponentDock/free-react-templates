@@ -137,9 +137,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with brand, search, login, and navigation — the brand name "Joystick" is visible in the top bar
-- [ ] Hero section with background image and overlay — the hero heading "The Power of Gaming" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with brand, search, login, and navigation — the brand name "Joystick" is visible in the top bar
+- [x] Hero section with background image and overlay — the hero heading "The Power of Gaming" is visible
 - [ ] Games showcase grid — 3 game cards are visible
 - [ ] Monthly Picks with tabbed interface — the Popular tab is active by default
 - [ ] Video Reviews with interactive navigation — the first video is highlighted as active

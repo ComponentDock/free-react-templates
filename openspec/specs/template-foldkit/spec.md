@@ -128,11 +128,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Typecheck passes (`npm run typecheck --workspace @free-react-templates/foldkit`)
 - [ ] Lint passes (`npm run lint`)
-- [ ] Vitest coverage is 100% for `apps/foldkit`
+- [x] Vitest coverage is 100% for `apps/foldkit`
 - [ ] Build succeeds (`npm run build --workspace @free-react-templates/foldkit`)
 - [ ] Footer links to Component Dock
-- [ ] `public/CNAME` is `foldkit.free.componentdock.com` and `homepage` matches
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `public/CNAME` is `foldkit.free.componentdock.com` and `homepage` matches
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Widget Header — the h1 `FoldKit Widget` and its subtitle are visible, centred,
 - [ ] Four Accordion Rows — four buttons are present with the accessible names Profile,
 - [ ] Single-Open Expand / Collapse — Messages expands, Profile collapses, and only one panel is in

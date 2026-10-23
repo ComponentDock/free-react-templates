@@ -378,10 +378,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/mentory`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/mentory`
       (`scripts/verify-app.sh mentory` in FAST_MODE; full `npm run gate` in
       CI).
-- [ ] Visual fidelity: navbar (transparent over hero, white "Mentory" logo +
+- [x] Visual fidelity: navbar (transparent over hero, white "Mentory" logo +
       six links, active underline), hero (workspace-desk photo, 0.3 overlay,
       centered white "The Hub Of Tutorials" with 900-weight "Hub"/"Tutorials"),
       featured (grey band, cards overlapping hero bottom ~150px: one big
@@ -412,4 +412,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/tutor/), design tokens, and what
       differs (name, placeholders, paraphrased copy, single index page only —
       inner pages not recreated, invisible footer divider → subtle grey).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

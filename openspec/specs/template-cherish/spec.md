@@ -206,7 +206,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page frame, header and the search sheet — Given** any viewport
 - [ ] Hero, story and countdown — Then** the hero is a photographic band with `230px` of lead space and `215px` under it, inset
 - [ ] Album, day events, RSVP and venues — Then** the album is a **four-column by two-row** grid of eight pictures with `20px` gutters, its

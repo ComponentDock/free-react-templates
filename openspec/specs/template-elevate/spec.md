@@ -246,17 +246,17 @@ The app footer SHALL include a Component Dock attribution link.
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Navbar navigation — the navbar shows the Elevate logo, navigation links (Home, About, Services, Pricing, Blog, Contact), a dark mode toggle, and a "Get Started" CTA button
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Navbar navigation — the navbar shows the Elevate logo, navigation links (Home, About, Services, Pricing, Blog, Contact), a dark mode toggle, and a "Get Started" CTA button
 - [ ] Hero slider — a heading, subheading, and CTA button are visible with a background image
-- [ ] About section — an image and text describing the coaching service are visible with a "Learn More" button
+- [x] About section — an image and text describing the coaching service are visible with a "Learn More" button
 - [ ] Services section — 4 service cards are displayed, each with an icon, title, and description
 - [ ] Statistics counters — the counters animate from 0 to their target values (150+, 10+, 200+, 95%)
-- [ ] Pricing plans — 3 pricing cards (Basic $29, Standard $59, Premium $99) are shown with feature lists and "Get Started" buttons, with the Standard plan highlighted as "Most Popular"
+- [x] Pricing plans — 3 pricing cards (Basic $29, Standard $59, Premium $99) are shown with feature lists and "Get Started" buttons, with the Standard plan highlighted as "Most Popular"
 - [ ] Testimonials carousel — a client quote, name, role, and avatar are displayed with navigation arrows
-- [ ] CTA banner — a heading, description, and "Book a Free Consultation" button are visible
-- [ ] Blog section — 3 blog post cards are displayed, each with an image, date, title, excerpt, and "Read More" link
-- [ ] Contact form — a form with Name, Email, Subject, and Message fields plus a "Send Message" button is visible
+- [x] CTA banner — a heading, description, and "Book a Free Consultation" button are visible
+- [x] Blog section — 3 blog post cards are displayed, each with an image, date, title, excerpt, and "Read More" link
+- [x] Contact form — a form with Name, Email, Subject, and Message fields plus a "Send Message" button is visible
 - [ ] Accessibility — semantic elements like `<header>`, `<main>`, `<nav>`, `<section>`, and `<footer>` are used

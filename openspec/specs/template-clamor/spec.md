@@ -354,12 +354,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh clamor`,
       PR lists source (ColorLib Shout), preview URL, tokens, and what
       differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header — the header SHALL show the site name "Clamor." as the logo (white, uppercase, letter-spaced)
-- [ ] Featured flex — the left panel SHALL have a pink background and show the headline "We Are Functional & Creative Agency" with a small uppercase sub-line
-- [ ] Blog grid — it SHALL show a small uppercase label ("Most popular post") above a large serif heading ("What's hot"), both centered
-- [ ] Instagram strip — it SHALL show the uppercase "Instagram" heading
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header — the header SHALL show the site name "Clamor." as the logo (white, uppercase, letter-spaced)
+- [x] Featured flex — the left panel SHALL have a pink background and show the headline "We Are Functional & Creative Agency" with a small uppercase sub-line
+- [x] Blog grid — it SHALL show a small uppercase label ("Most popular post") above a large serif heading ("What's hot"), both centered
+- [x] Instagram strip — it SHALL show the uppercase "Instagram" heading
 - [ ] Footer — it SHALL show three columns: "About Me" (portrait, author name, blurb, pink social icons), "Latest Blog" (four thumb + title + date rows), and "Newsletter" (email input with pink "Subscribe"…
 - [ ] Off-canvas menu — it SHALL show a search input with a pink search button, menu links (Blog, Single Blog, About me, Contact me), an About Me block (portrait, name, blurb, socials), and Instagram tiles
 - [ ] Page composition — the page SHALL compose the header, featured flex, blog grid, Instagram strip, and footer in order

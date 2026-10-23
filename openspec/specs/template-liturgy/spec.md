@@ -178,10 +178,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar — a dark transparent navigation bar is visible at the top
 - [ ] Hero slider — a full-viewport image carousel is visible
 - [ ] Upcoming events section — a dark background section is visible
 - [ ] Worship time section — a split layout is visible
-- [ ] Recent sermons section — a section heading "Recent Sermons" / "Listen Our Sermons" is displayed
-- [ ] Ministries section — a section heading "Ministries" / "Events & Ministries" is displayed
+- [x] Recent sermons section — a section heading "Recent Sermons" / "Listen Our Sermons" is displayed
+- [x] Ministries section — a section heading "Ministries" / "Events & Ministries" is displayed

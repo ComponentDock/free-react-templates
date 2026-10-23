@@ -432,5 +432,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Source quirks kept: the blog band repeats the same card 12× (give 8–12 distinct titles instead); footer columns 2 and 3 duplicate the same links; the typed.js `.typed-words` effect is inert on the home page — skip it
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done by implementer at ship time (mark ALL THREE "Approach" rows — lines 336 Bootstrap, 886 Business and 1959 Interior Design)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

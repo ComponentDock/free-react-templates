@@ -135,8 +135,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Fixed Left Sidebar — the sidebar shows "Plinth." as the brand text
-- [ ] Breadcrumb Navigation — a breadcrumb shows "Home / Portfolio"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Fixed Left Sidebar — the sidebar shows "Plinth." as the brand text
+- [x] Breadcrumb Navigation — a breadcrumb shows "Home / Portfolio"
 - [ ] Portfolio Grid — a grid of 12 portfolio items is visible
-- [ ] Document Title — the document title is "Plinth — Minimalist Portfolio Template"
+- [x] Document Title — the document title is "Plinth — Minimalist Portfolio Template"

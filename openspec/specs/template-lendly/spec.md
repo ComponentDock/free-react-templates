@@ -458,5 +458,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Form submit → success state (no backend)
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL returns 200
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

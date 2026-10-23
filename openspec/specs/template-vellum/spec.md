@@ -67,6 +67,6 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar Navigation — the navbar displays the logo "Vellum" and links for Features, FAQ, Resources, and Contact
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar Navigation — the navbar displays the logo "Vellum" and links for Features, FAQ, Resources, and Contact
 - [ ] Interactive Accordion Sections — the corresponding accordion content expands smoothly and the chevron icon rotates

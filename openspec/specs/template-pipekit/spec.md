@@ -246,7 +246,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog: 3 post cards, background images, date/title/excerpt
 - [ ] Footer: 3 columns, brand + social, navigation, contact, Component Dock link
 - [ ] Design tokens: black brand, gold accent, Montserrat font, square buttons
-- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
 - [ ] Footer links to Component Dock
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

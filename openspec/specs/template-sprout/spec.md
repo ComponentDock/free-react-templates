@@ -266,10 +266,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog: 3-column grid with date overlays
 - [ ] Newsletter: parallax background with email form
 - [ ] Footer: dark, multi-column, Component Dock link
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] Placeholder images via `https://picsum.photos/seed/sprout-<n>/<w>/<h>`
 - [ ] Google Fonts via `<link>` in `index.html` (Poppins, Raleway, Crimson Text)
 - [ ] Icons via `lucide-react`
-- [ ] `apps/sprout/public/CNAME` contains `sprout.free.componentdock.com`
-- [ ] `apps/sprout/package.json` homepage is `https://sprout.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `apps/sprout/public/CNAME` contains `sprout.free.componentdock.com`
+- [x] `apps/sprout/package.json` homepage is `https://sprout.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

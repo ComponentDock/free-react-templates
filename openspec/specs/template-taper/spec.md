@@ -224,14 +224,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Taper" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline (e.g. "Our Hair Style make your look elegance")
-- [ ] About section — it SHALL show a heading (e.g. "52 Years Of Experience In Hair cut!")
-- [ ] Services grid — it SHALL show the heading "Professional Services"
+- [x] Navigation bar — the navbar SHALL show the site name "Taper" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline (e.g. "Our Hair Style make your look elegance")
+- [x] About section — it SHALL show a heading (e.g. "52 Years Of Experience In Hair cut!")
+- [x] Services grid — it SHALL show the heading "Professional Services"
 - [ ] Barbers team — it SHALL render at least three member cards with names (e.g. Guy C. Pulido, Steve L. Nolan, Edgar P. Mathis)
-- [ ] Pricing list — it SHALL show the heading "Our Best Pricing"
-- [ ] Gallery — it SHALL show the heading "our image gellary"
-- [ ] Footer — it SHALL show the site name "Taper" and quick links
+- [x] Pricing list — it SHALL show the heading "Our Best Pricing"
+- [x] Gallery — it SHALL show the heading "our image gellary"
+- [x] Footer — it SHALL show the site name "Taper" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

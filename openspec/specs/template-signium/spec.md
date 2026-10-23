@@ -179,7 +179,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Split-screen layout renders correctly (left panel white, right panel lavender)
-- [ ] Heading "Au Creative" with purple "Au" span
+- [x] Heading "Au Creative" with purple "Au" span
 - [ ] Tagline and description text match original
 - [ ] 4-step form with name, email, password, confirm password fields
 - [ ] Step indicator updates ("Step X / 4")
@@ -189,9 +189,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark (#222) body background
 - [ ] Brand purple (#7c7cdd) used for buttons and accents
 - [ ] Responsive: panels stack vertically below 768px
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Uses picsum.photos for illustration placeholder
 - [ ] Google Fonts (Poppins, Montserrat) loaded via index.html
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

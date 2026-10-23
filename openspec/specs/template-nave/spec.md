@@ -158,8 +158,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Heading font: Playfair Display (serif); body: Open Sans (sans-serif)
 - [ ] Square button corners (border-radius: 0) on primary CTA buttons
 - [ ] Placeholder images via picsum.photos/seed/nave-<n>
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
-- [ ] Footer links to componentdock.com
-- [ ] Public/CNAME: nave.free.componentdock.com
+- [x] No ColorLib references in app code (only in spec + TEMPLATES.md)
+- [x] Footer links to componentdock.com
+- [x] Public/CNAME: nave.free.componentdock.com
 - [ ] Package name: @free-react-templates/nave
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

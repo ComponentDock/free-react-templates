@@ -241,14 +241,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Pawpal" and links to the main sections
-- [ ] Hero section — it SHALL contain a level-1 heading matching "Where Every Pet Gets the Royal Treatment"
-- [ ] Services section — it SHALL show the heading "Our Services"
+- [x] Navigation bar — the navbar SHALL show the site name "Pawpal" and links to the main sections
+- [x] Hero section — it SHALL contain a level-1 heading matching "Where Every Pet Gets the Royal Treatment"
+- [x] Services section — it SHALL show the heading "Our Services"
 - [ ] Why-us section — it SHALL show the heading "A Place Where Pets Come First"
-- [ ] Gallery section — it SHALL show the heading "Happy Pets Gallery"
-- [ ] Testimonials section — it SHALL show the heading "What Pet Parents Say"
-- [ ] CTA section — it SHALL show the heading "Ready to Pamper Your Pet?"
-- [ ] Footer — it SHALL show the site name "Pawpal" and an about blurb
+- [x] Gallery section — it SHALL show the heading "Happy Pets Gallery"
+- [x] Testimonials section — it SHALL show the heading "What Pet Parents Say"
+- [x] CTA section — it SHALL show the heading "Ready to Pamper Your Pet?"
+- [x] Footer — it SHALL show the site name "Pawpal" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

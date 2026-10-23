@@ -338,7 +338,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/swish`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/swish`
       (`scripts/verify-app.sh swish` in FAST_MODE; full `npm run gate` in CI).
 - [ ] Visual fidelity: white header (top bar phone + REGISTER, uppercase
       nav, Pages dropdown), cream hero ("Defend &" orange / "Dominate"
@@ -359,5 +359,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description states source template (ColorLib "Basketball"), preview
       URL (https://preview.colorlib.com/theme/basketball/), design tokens,
       and what differs (name, placeholders, inner pages not recreated).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -178,10 +178,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header displays navigation and contact info — THEN the logo "Vitaheal+" is visible
-- [ ] Hero section with headline and CTA — THEN the heading "Medical Services that you can trust" is visible
-- [ ] Info boxes with consultation, emergency, and appointment — THEN "Free Consultations" heading is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header displays navigation and contact info — THEN the logo "Vitaheal+" is visible
+- [x] Hero section with headline and CTA — THEN the heading "Medical Services that you can trust" is visible
+- [x] Info boxes with consultation, emergency, and appointment — THEN "Free Consultations" heading is visible
 - [ ] CTA banner with appointment prompt — THEN the headline about making an appointment is visible
 - [ ] Services section with 6 service icons — THEN 6 service items are visible
 - [ ] Departments carousel — THEN 4 department cards are visible

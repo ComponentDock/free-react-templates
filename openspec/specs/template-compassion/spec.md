@@ -196,11 +196,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders all navigation links — the navbar displays brand "Compassion"
-- [ ] Hero displays welcome heading and CTA — the heading "Welcome to Compassion" is displayed
-- [ ] Worship Time section displays countdown and events — the left panel shows "Camp Meeting Will Start Soon"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders all navigation links — the navbar displays brand "Compassion"
+- [x] Hero displays welcome heading and CTA — the heading "Welcome to Compassion" is displayed
+- [x] Worship Time section displays countdown and events — the left panel shows "Camp Meeting Will Start Soon"
 - [ ] Audio Sermons section displays sermon cards — 3 sermon cards are displayed in a grid
 - [ ] Latest Events section displays event cards — 3 event cards are displayed with thumbnails and descriptions
 - [ ] Personal Testimony section displays carousel — a testimony with a circular photo, blockquote, and attribution is shown

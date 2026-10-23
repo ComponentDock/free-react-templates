@@ -129,9 +129,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with brand and navigation links — the brand name "Servhub" and all 6 navigation links are visible
-- [ ] Hero section with background image and CTA — the heading "We Are Digital Services" is visible
-- [ ] About Us section with three-column layout — the "About Us" heading and an image are visible
+- [x] Navbar with brand and navigation links — the brand name "Servhub" and all 6 navigation links are visible
+- [x] Hero section with background image and CTA — the heading "We Are Digital Services" is visible
+- [x] About Us section with three-column layout — the "About Us" heading and an image are visible
 - [ ] Services section with 2x3 grid of service cards — 6 service cards are visible with titles: Content Marketing, Social Media Marketing, Brand & Logo Design, Social Media Advertising, Email Marketing…
 - [ ] Projects section with filterable gallery — only Web-category projects are displayed
 - [ ] Testimonials section with carousel — the next testimonial is displayed

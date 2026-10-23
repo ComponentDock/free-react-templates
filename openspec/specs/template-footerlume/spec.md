@@ -102,8 +102,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Typecheck passes (`npm run typecheck --workspace @free-react-templates/footerlume`)
 - [ ] Lint passes (`npm run lint`)
-- [ ] Vitest coverage is 100% for `apps/footerlume`
+- [x] Vitest coverage is 100% for `apps/footerlume`
 - [ ] Build succeeds (`npm run build --workspace @free-react-templates/footerlume`)
 - [ ] Footer links to Component Dock
-- [ ] `public/CNAME` is `footerlume.free.componentdock.com` and `homepage` matches
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] `public/CNAME` is `footerlume.free.componentdock.com` and `homepage` matches
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

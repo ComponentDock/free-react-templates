@@ -147,11 +147,11 @@ sans-serif` (secondary, some text elements). Load via Google Fonts
 - [ ] Square buttons (border-radius: 0) documented
 - [ ] Gallery grid (6 items) + lightbox behavior documented
 - [ ] All section headings match the source DOM
-- [ ] Footer includes Component Dock attribution (NO ColorLib)
-- [ ] No ColorLib references in app code — provenance only in spec
+- [x] Footer includes Component Dock attribution (NO ColorLib)
+- [x] No ColorLib references in app code — provenance only in spec
 - [ ] Name "Gracious" does not collide with existing `apps/` or specs
 - [ ] Spec records source slug (`welfare`) + preview URL
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Requirements
 

@@ -460,8 +460,8 @@ Dock (`https://www.componentdock.com/`) instead.
       (trust strip + circle borders), Rubik font, pill buttons (radius
       30px), navy top bar + white sticky navbar, gallery tiles 580px with
       hover captions.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Cleaningservice), preview URL,
       tokens, and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

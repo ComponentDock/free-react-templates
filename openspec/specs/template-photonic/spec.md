@@ -148,10 +148,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation Bar — the navbar displays "photonic." with a purple dot
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation Bar — the navbar displays "photonic." with a purple dot
 - [ ] Hero Section — the hero displays the photographer's name and subtitle
 - [ ] Services Section — 4 service cards are displayed: Nature Photography, Portrait Photography, Wedding Photography, Food & Drink Photography
 - [ ] Testimonials Section — 3 testimonial cards are displayed
-- [ ] Gallery Section — the heading "My Photography" is displayed
+- [x] Gallery Section — the heading "My Photography" is displayed
 - [ ] Page Composition — all sections are composed in order: Navbar, Hero, Services, Testimonials, Gallery, Footer

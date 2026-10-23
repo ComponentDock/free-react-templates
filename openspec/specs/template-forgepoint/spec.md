@@ -232,11 +232,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gallery grid with hover overlays
 - [ ] Team cards with hover social icons
 - [ ] Responsive: hamburger nav on mobile, stacked layouts on small screens
-- [ ] Footer links to https://www.componentdock.com/ (branded "Component Dock")
-- [ ] No references to ColorLib in app source (provenance only in spec)
+- [x] Footer links to https://www.componentdock.com/ (branded "Component Dock")
+- [x] No references to ColorLib in app source (provenance only in spec)
 - [ ] Placeholder images via `https://picsum.photos/seed/forgepoint-<n>/<w>/<h>`
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] Typecheck passes (`npx tsc --noEmit`)
 - [ ] Lint passes (`npx oxlint src/`)
 - [ ] Build succeeds (`npx vite build`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

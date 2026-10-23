@@ -467,7 +467,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Page background = seeded picsum (`bookly-1/1920/1080`) cover/center
       full-bleed + `rgba(255,255,255,0.8)` overlay (source `background.jpg`
       not copied)
-- [ ] CTA: h1 "Make your reservation" 52px uppercase `#181818` weight 900 +
+- [x] CTA: h1 "Make your reservation" 52px uppercase `#181818` weight 900 +
       22px `#181818` paragraph, column ~5/12, `margin-top: 45px`
 - [ ] Card: white, max-width 642px, padding 40px 30px, shadow
       `0 0 10px -5px rgba(0,0,0,0.3)`, 20px `.form-group` rhythm
@@ -478,12 +478,12 @@ Dock (`https://www.componentdock.com/`) instead.
       `top: 20px` 16px `rgba(0,0,0,0.2)`, floated to `top: 0` 14px green
       `#2b9328` on focus OR non-empty (React state hook equivalent of the
       source jQuery `floatedLabel()`); `pointer-events: none`
-- [ ] Selects: Rooms 1/2/3 + Guests "1 Person"/"2 People"/"3 People",
+- [x] Selects: Rooms 1/2/3 + Guests "1 Person"/"2 People"/"3 People",
       `appearance: none`, arrow glyph (rotated `➜`/ChevronDown,
       `rgba(0,0,0,0.2)` 32×32 14px) at right 0 bottom 7px
 - [ ] Dates: Check In + Check Out (required), native date inputs, empty
       dates `rgba(0,0,0,0.2)`
-- [ ] "Book Now" button: full width, solid `#2b9328` bg, white weight-700
+- [x] "Book Now" button: full width, solid `#2b9328` bg, white weight-700
       capitalize 18px text, height 55px, border none; validates (name,
       valid email, phone, dates, check-out ≥ check-in) and shows summary /
       validation messages
@@ -494,5 +494,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

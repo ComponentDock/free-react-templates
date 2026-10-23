@@ -249,15 +249,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/chronos` exists; package `@free-react-templates/chronos`;
+- [x] `apps/chronos` exists; package `@free-react-templates/chronos`;
       `public/CNAME` = `chronos.free.componentdock.com`; `homepage` =
       `https://chronos.free.componentdock.com`
 - [ ] index.html loads Google Fonts Lato (weights 100, 300, 400, 700, 900);
       no font/image/icon assets copied from ColorLib
-- [ ] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
+- [x] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
       `apps/chronos` (provenance lives only in this spec, TEMPLATES.md, PR)
 - [ ] Page background `#f8f9fd`, section `py-28`, content centered
-- [ ] H2 "Today" — centered, 28px, `#000`
+- [x] H2 "Today" — centered, 28px, `#000`
 - [ ] Card: ~1/3 width centered on md+, full width on mobile; shadow
       `0 15px 30px -16px rgba(0,0,0,0.3)`; radius `0.25rem`; flush stack
 - [ ] Day band: weekday name, white uppercase `tracking-[0.35em]` on
@@ -268,11 +268,11 @@ Dock (`https://www.componentdock.com/`) instead.
       `#52de97`
 - [ ] All four values derive from the current date at render time; tests
       mock the clock (`vi.setSystemTime`) for deterministic assertions
-- [ ] Footer links "Component Dock" → https://www.componentdock.com/
+- [x] Footer links "Component Dock" → https://www.componentdock.com/
 - [ ] 100% coverage (lines/functions/branches/statements) via Vitest +
       Testing Library; a11y: semantic elements, focus-visible rings
 - [ ] `npm run verify:app -- chronos` (or `scripts/verify-app.sh chronos`)
       passes: typecheck + lint + knip + fallow + 100% coverage + build
-- [ ] Deployed to https://chronos.free.componentdock.com (200, correct
+- [x] Deployed to https://chronos.free.componentdock.com (200, correct
       `<title>`, bundle hash matches local build)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

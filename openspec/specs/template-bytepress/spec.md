@@ -144,12 +144,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] HeaderBar renders subscribe and social links — a "subscribe" link is visible in the top header bar
-- [ ] Navbar provides navigation — the "BytePress" logo text is displayed
-- [ ] Hero section displays featured content — the heading "Building the Future" is displayed
-- [ ] IntroCards display category previews — three category cards are visible with labels "technology", "videos", and "featured"
-- [ ] FeaturedSection shows posts and sidebar — the heading "Featured Posts" is displayed
-- [ ] TechnologySection shows horizontal post cards — the heading "Technology" is displayed with 3 post cards
-- [ ] WorldSection shows post grid — the heading "From the World" is displayed with 2 post cards
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] HeaderBar renders subscribe and social links — a "subscribe" link is visible in the top header bar
+- [x] Navbar provides navigation — the "BytePress" logo text is displayed
+- [x] Hero section displays featured content — the heading "Building the Future" is displayed
+- [x] IntroCards display category previews — three category cards are visible with labels "technology", "videos", and "featured"
+- [x] FeaturedSection shows posts and sidebar — the heading "Featured Posts" is displayed
+- [x] TechnologySection shows horizontal post cards — the heading "Technology" is displayed with 3 post cards
+- [x] WorldSection shows post grid — the heading "From the World" is displayed with 2 post cards
 - [ ] App renders all sections together — all major sections (header, navbar, hero, intro, featured, technology, world, footer) are rendered

@@ -754,7 +754,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/gangway` recreates ColorLib **"Website Menu V09"** (source slug
+- [x] `apps/gangway` recreates ColorLib **"Website Menu V09"** (source slug
       `website-menu-09`, https://colorlib.com/wp/template/website-menu-09/) under the
       new name `gangway`; the registry/`package.json` reads
       `@free-react-templates/gangway`
@@ -834,17 +834,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Shape language kept as the source has it: **`4px`** on the CTA pair and
       **`50%`** on the drawer disclosure only — square flyouts, square drawer, no
       pills anywhere
-- [ ] Zero `colorlib` / "Website Menu 09" / `website-menu-09` provenance references
+- [x] Zero `colorlib` / "Website Menu 09" / `website-menu-09` provenance references
       anywhere in `apps/gangway` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `quicksand-*.woff2`, no
       `icomoon-subset.woff2`, no `hero_1.jpg`, no inline SVG data URI, no `cl-`
       utility classes, no jQuery/Bootstrap, no copied strings (the 17 source labels
       and the "Brand" wordmark)
-- [ ] `public/CNAME` = `gangway.free.componentdock.com` and
+- [x] `public/CNAME` = `gangway.free.componentdock.com` and
       `"homepage": "https://gangway.free.componentdock.com"` in
       `apps/gangway/package.json`; `package-lock.json` registers
       `@free-react-templates/gangway`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component Dock")
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component Dock")
       with a computed current year
 - [ ] Accessibility: real `button`s with `aria-expanded`/`aria-controls` for the
       hamburger, the drawer's `✕` and every drawer disclosure arrow; disclosure
@@ -886,4 +886,4 @@ Dock (`https://www.componentdock.com/`) instead.
       normalised, the dead `Roboto` stack / `site-navbar-target` /
       `aligin-items-center` / `border-width-2` / nested-submenu / `600`-weight-font
       leftovers dropped, reduced-motion handling, footer attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

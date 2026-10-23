@@ -584,10 +584,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Live behavior: dot click jumps steps + marks progress; Forward/
       Backward never blocked; step 3 shows Submit; dropdown opens/closes/
       selects; values persist across steps; no submit action.
-- [ ] No ColorLib strings anywhere under `apps/conjure` (source/provenance
+- [x] No ColorLib strings anywhere under `apps/conjure` (source/provenance
       lives only in this spec + TEMPLATES.md + the PR). Footer links
       https://www.componentdock.com/.
-- [ ] `public/CNAME` = `conjure.free.componentdock.com`; `"homepage"` =
+- [x] `public/CNAME` = `conjure.free.componentdock.com`; `"homepage"` =
       `https://conjure.free.componentdock.com`.
 - [ ] Workspace registered in `package-lock.json` (`grep -c
   "free-react-templates/conjure" package-lock.json` ≥ 1) after `npm
@@ -598,4 +598,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (renamed "Conjure", Muli via Google Fonts, lucide icons, picsum
       placeholders, footer, accessible semantics + focus rings, no
       ColorLib strings).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

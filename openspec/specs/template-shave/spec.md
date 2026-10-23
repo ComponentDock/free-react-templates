@@ -156,11 +156,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Template renders all sections — the document title is "Shave — Barber Shop Landing Page"
-- [ ] Navbar with navigation — I see the "Shave" logo
-- [ ] Hero section — I see the heading "HairStyle is a"
-- [ ] Services section — I see "Beard Trimming", "Quality Gel Shave", "Effective Body Massage", "Stylish Hair Cutting" headings
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Template renders all sections — the document title is "Shave — Barber Shop Landing Page"
+- [x] Navbar with navigation — I see the "Shave" logo
+- [x] Hero section — I see the heading "HairStyle is a"
+- [x] Services section — I see "Beard Trimming", "Quality Gel Shave", "Effective Body Massage", "Stylish Hair Cutting" headings
 - [ ] Gallery section — I see 6 gallery images
 - [ ] Features section — I see 6 feature titles
 - [ ] About section — I see the about heading

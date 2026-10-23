@@ -215,14 +215,14 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — it SHALL show the site name "Silverleaf" with a blue accent period
-- [ ] Hero section — it SHALL display the heading "Expert Care for the Elderly"
+- [x] Navigation bar — it SHALL show the site name "Silverleaf" with a blue accent period
+- [x] Hero section — it SHALL display the heading "Expert Care for the Elderly"
 - [ ] Feature strip — it SHALL display 3 feature items: Independent Living, Senior Care, Patient Care
-- [ ] Services grid — it SHALL display 4 service cards with images and "Special Care" titles
+- [x] Services grid — it SHALL display 4 service cards with images and "Special Care" titles
 - [ ] Statistics counter — it SHALL display 4 statistics with large numbers and labels
-- [ ] About / Why Us section — it SHALL display the heading "Senior Care Center is for Your Family"
-- [ ] Cover / Goals section — it SHALL display "Our Goal is to Make Your Life Better" heading
+- [x] About / Why Us section — it SHALL display the heading "Senior Care Center is for Your Family"
+- [x] Cover / Goals section — it SHALL display "Our Goal is to Make Your Life Better" heading
 - [ ] Testimonials — it SHALL display 3 testimonial cards with quotes and author names
-- [ ] Opportunities section — it SHALL display 2 cards: "Join Our Community" and "Volunteer With Us"
-- [ ] About CTA section — it SHALL display "Senior & Elder Home Care Center" heading
+- [x] Opportunities section — it SHALL display 2 cards: "Join Our Community" and "Volunteer With Us"
+- [x] About CTA section — it SHALL display "Senior & Elder Home Care Center" heading
 - [ ] Blog / News section — it SHALL display 3 blog cards with meta information (date, author, comments)

@@ -189,15 +189,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header displays top info bar and main navigation — a top info bar shows email "medical@example.com" and location
-- [ ] Hero banner displays main heading and CTAs — the hero shows heading "Making Health Care Better Together"
+- [x] Header displays top info bar and main navigation — a top info bar shows email "medical@example.com" and location
+- [x] Hero banner displays main heading and CTAs — the hero shows heading "Making Health Care Better Together"
 - [ ] Feature strip shows three feature cards — three feature cards appear with icons and descriptions
 - [ ] Services section displays three service items — three service cards display with titles and descriptions
 - [ ] About section displays company info — the about section shows heading and description text
 - [ ] Team section shows doctor cards — three doctor cards display with names and specialties
 - [ ] Appointment section has FAQ and contact form — the answer expands or collapses
 - [ ] Testimonials section displays quotes — three testimonial quotes with author names display
-- [ ] Hotline section shows emergency contact — "Emergency Hotline" heading and phone number are visible
+- [x] Hotline section shows emergency contact — "Emergency Hotline" heading and phone number are visible
 - [ ] Blog section shows three post cards — three blog cards display with thumbnails and metadata
 - [ ] Brands section displays partner logos — the brands section displays five partner brand placeholders
 - [ ] Responsive design — the mobile navigation menu opens

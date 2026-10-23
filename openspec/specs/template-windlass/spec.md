@@ -497,7 +497,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-windlass/spec.md` present; `npm run spec:validate` green
-- [ ] `apps/windlass` scaffolded from the simplest existing app; package
+- [x] `apps/windlass` scaffolded from the simplest existing app; package
       `@free-react-templates/windlass`; `"homepage": "https://windlass.free.componentdock.com"`;
       `public/CNAME` = `windlass.free.componentdock.com`; `vite.config.ts` keeps `injectUiSource()`
 - [ ] `npm install` at repo root registers the workspace
@@ -533,7 +533,7 @@ Dock (`https://www.componentdock.com/`) instead.
       no horizontal overflow at 320 px
 - [ ] Shape language: the **only** rounding is the card's **`5 px`** and the circles' **`50%`**;
       no pills, no card hairline borders, no `4 px` panels (this variant has none)
-- [ ] Zero `colorlib` / "Website Menu 14" / `website-menu-14` strings in `apps/windlass` (comments
+- [x] Zero `colorlib` / "Website Menu 14" / `website-menu-14` strings in `apps/windlass` (comments
       included); none of the source's five labels, its `Digital` wordmark, its four platform names
       or its `Website menu #04` heading reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `roboto-*.woff2` (all eight are dead
@@ -550,7 +550,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer attribution present; squash-merge the PR; mark the TEMPLATES.md `Website Menu 14` item
       `[x]` with the live `https://windlass.free.componentdock.com` URL + homepage and run
       `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Deltas (deliberate, to record in the PR)
 

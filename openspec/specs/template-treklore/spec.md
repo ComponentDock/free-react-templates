@@ -228,11 +228,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] News: 3 posts + promotional sidebar
 - [ ] Footer: newsletter form, 3 contact columns, copyright + Component Dock
 - [ ] Responsive design (mobile hamburger, stacked columns)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via `picsum.photos/seed/treklore-<n>/`
 - [ ] Open Sans + Oswald loaded via Google Fonts
 - [ ] Brand tokens in `@theme` / `index.css`
-- [ ] `public/CNAME` set to `treklore.free.componentdock.com`
-- [ ] `homepage` set to `https://treklore.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] `public/CNAME` set to `treklore.free.componentdock.com`
+- [x] `homepage` set to `https://treklore.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

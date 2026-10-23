@@ -204,12 +204,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Top bar with countdown timer renders correctly
-- [ ] Red "Send Donations" button styled with #eb4141
+- [x] Red "Send Donations" button styled with #eb4141
 - [ ] Header is sticky with logo in Bilbo serif font
 - [ ] Nav links: Home, Ministries, Sermons, Blog, Contact
 - [ ] Hero slider with Owl Carousel-style functionality
-- [ ] "God is all around us" headline visible on slides
-- [ ] Intro section with "Welcome to Our Church" heading
+- [x] "God is all around us" headline visible on slides
+- [x] Intro section with "Welcome to Our Church" heading
 - [ ] Services section with parallax bg + 5 service items
 - [ ] Causes slider with card items
 - [ ] Quote section with parallax bg
@@ -223,5 +223,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fonts: Bilbo (headings/logo), Montserrat (body)
 - [ ] Placeholder images via picsum.photos/seed/sacredgate-*
 - [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

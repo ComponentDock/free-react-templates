@@ -361,13 +361,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/fiscal` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/fiscal` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- fiscal` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#0099e5, #4facfe, #00f2fe, #52565e, #212529, #6c757d, #f8f9fa, #efefef, Work Sans + Roboto, Georgia italic quotes) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `fiscal-<n>`, Google Fonts link, lucide icons only)
+- [x] No ColorLib assets copied (picsum seeds `fiscal-<n>`, Google Fonts link, lucide icons only)
 - [ ] Hero headline + subtext rendered WHITE (text-white beats the base black rule — verified in live render)
 - [ ] Sliders (portfolio, testimonials, news) implemented with client-side state, no new deps
 - [ ] Solutions dropdown + mobile slide-over accessible (aria-expanded, Escape, outside click)
 - [ ] Footer bottom bar carries the Component Dock attribution link
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

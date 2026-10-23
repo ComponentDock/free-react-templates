@@ -445,10 +445,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/flair`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/flair`
       (`scripts/verify-app.sh flair` in FAST_MODE; full `npm run gate` in
       CI).
-- [ ] Visual fidelity: fixed transparent header (lowercase "flair" wordmark,
+- [x] Visual fidelity: fixed transparent header (lowercase "flair" wordmark,
       Home/Pages/Work/Blog/Shop/Contact, search + bag icons, dark sticky
       state, gradient mobile panel), 900px hero (photo + `rgba(4,8,29,0.7)`
       overlay + Watch The Overview + 48px headline + About Us/Get a quote),
@@ -483,5 +483,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/fancy/), design tokens, and what
       differs (name, placeholders, paraphrased copy, inner pages not
       recreated, preloader optional).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

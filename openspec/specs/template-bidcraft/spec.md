@@ -150,11 +150,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation links and brand — the navbar displays "Bidcraft" brand text
-- [ ] Hero section with CTA — the heading "The Best Place to Buy and Sell" is displayed
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation links and brand — the navbar displays "Bidcraft" brand text
+- [x] Hero section with CTA — the heading "The Best Place to Buy and Sell" is displayed
 - [ ] Auction grid with product cards — 8 product cards are displayed
 - [ ] How It Works steps — 4 step items are displayed with titles Register, Buy or Bid,
-- [ ] About Us split section — "Fast Support" and "24/7 Support" feature items are listed
-- [ ] Testimonials section — the heading "Happy Clients" is visible
+- [x] About Us split section — "Fast Support" and "24/7 Support" feature items are listed
+- [x] Testimonials section — the heading "Happy Clients" is visible
 - [ ] Call to action section — the CTA text and Register button are displayed

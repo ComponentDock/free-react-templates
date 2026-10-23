@@ -431,11 +431,11 @@ Dock (`https://www.componentdock.com/`) instead.
       footer top + `#000` copyright bar)
 - [ ] Carousels behave like the reference (hero 3 slides, testimonials 3
       slides, expert doctors 6 slides) with prev/next + dot pagination
-- [ ] Appointment modal opens from every "Make an Appointment" CTA and
+- [x] Appointment modal opens from every "Make an Appointment" CTA and
       contains the full field set
-- [ ] No ColorLib assets copied; seeded picsum placeholders + lucide icons
+- [x] No ColorLib assets copied; seeded picsum placeholders + lucide icons
       (brand socials as inline SVGs)
 - [ ] PR description includes: source (ColorLib Docmed), preview URL,
       tokens used, differences (new name, placeholders, typo fix)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

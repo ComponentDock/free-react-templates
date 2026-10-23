@@ -355,21 +355,21 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/sapor`
-- [ ] `npm run lint` passes for `apps/sapor`
+- [x] `npm run typecheck` passes for `apps/sapor`
+- [x] `npm run lint` passes for `apps/sapor`
 - [ ] `scripts/verify-app.sh sapor` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark + icon, 5 links, red "Reserve a Table" button,
+- [x] Navbar: wordmark + icon, 5 links, red "Reserve a Table" button,
       transparent→solid on scroll, mobile drawer with aria-expanded
 - [ ] Hero: min-h-90vh, photo bg + dark overlay, red uppercase tagline,
       serif "Authentic Italian Cuisine" headline, sub, 2 CTAs, scroll arrow
 - [ ] About: "A Family Tradition of Excellence" + history + 3 stats
       (40+/50K+/4.9)
-- [ ] Menu: "Chef's Selections" — 4 dish cards with price + "Chef's Pick"
+- [x] Menu: "Chef's Selections" — 4 dish cards with price + "Chef's Pick"
       badge on Burrata
-- [ ] Testimonials: "Reviews & Testimonials" — 2+ cards with stars/quotes
-- [ ] Reservation: bg-gray-900, "Make a Reservation", full form (name,
+- [x] Testimonials: "Reviews & Testimonials" — 2+ cards with stars/quotes
+- [x] Reservation: bg-gray-900, "Make a Reservation", full form (name,
       email, date, time, guests, phone, notes) + "Request Reservation"
 - [ ] Gallery: responsive 2/3/4-col grid with 8+ alt-tagged tiles
 - [ ] Footer: bg-gray-900, blurb + contact, Quick Links, Hours (gray
@@ -378,5 +378,5 @@ Dock (`https://www.componentdock.com/`) instead.
       sections) — do not add a dark toggle
 - [ ] Placeholder images via seeded picsum (`seed/sapor-<n>/<w>/<h>`)
 - [ ] No copied ColorLib assets; brand red #dc2626 in `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

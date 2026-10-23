@@ -254,10 +254,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonial slider with pagination
 - [ ] News/events section with date badge overlay on featured event
 - [ ] Gallery mosaic with mixed aspect ratios
-- [ ] Footer links to componentdock.com
-- [ ] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] No ColorLib references in app code
 - [ ] Responsive: hamburger nav, stacked cards/footer on mobile
 - [ ] Placeholder images use picsum.photos/seed/learnpath-N/W/H
 - [ ] Google Fonts link for Roboto in index.html
 - [ ] Icons from lucide-react (replacing Font Awesome / Themify)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

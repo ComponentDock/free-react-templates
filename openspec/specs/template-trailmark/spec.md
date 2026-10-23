@@ -421,10 +421,10 @@ repo conventions.
 
 - [ ] `npm run spec:validate` passes for this spec (whole-repo validate may
       fail on unrelated legacy specs — check this spec's own `✓` line).
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/trailmark`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/trailmark`
       (`scripts/verify-app.sh trailmark` in FAST_MODE; full `npm run gate`
       in CI).
-- [ ] Visual fidelity: floating navy navbar (plane mark + "trailmark" +
+- [x] Visual fidelity: floating navy navbar (plane mark + "trailmark" +
       "travel agency", red active underline, expanding red search block,
       shrink-on-scroll), sunset coastal hero with amber "discover"
       watermark + white "Discover new worlds", dark search band ("Find
@@ -442,7 +442,7 @@ repo conventions.
       (hero, find bg, top ×4, last bg, video bg, popular ×8, special ×5,
       newsletter bg, latest ×2); icons from lucide-react; no ColorLib
       assets, CSS, or strings anywhere in `apps/trailmark`.
-- [ ] `public/CNAME` = `trailmark.free.componentdock.com`; package
+- [x] `public/CNAME` = `trailmark.free.componentdock.com`; package
       `@free-react-templates/trailmark`; `"homepage"`
       = `https://trailmark.free.componentdock.com`; lockfile registers the
       workspace; `injectUiSource()` present in `vite.config.ts`; footer

@@ -665,10 +665,10 @@ row, with an azure flat button for the purchase action and a scroll shadow.
 - [ ] Anchors: every in-page target uses a header offset (`scroll-margin-top`),
       verified by following a nav link and confirming the heading clears the
       fixed header
-- [ ] `public/CNAME` = `skyport.free.componentdock.com`; `"homepage"` matches;
+- [x] `public/CNAME` = `skyport.free.componentdock.com`; `"homepage"` matches;
       `npm install` run at the repo root so the lockfile registers
       `@free-react-templates/skyport`
-- [ ] Zero `colorlib` / "Hosting" / `hosting` provenance references anywhere in
+- [x] Zero `colorlib` / "Hosting" / `hosting` provenance references anywhere in
       `apps/skyport` (comments included — record the palette as design notes)
 - [ ] No copied assets: no `img/logo.png`, `header-bg.jpg`, `c1.jpg`,
       `info-bg.jpg`, `l1–l5.png`, `i1–i8.png`, no Linearicons/FontAwesome CSS,

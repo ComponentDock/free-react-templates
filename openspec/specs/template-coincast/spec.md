@@ -271,6 +271,6 @@ Dock (`https://www.componentdock.com/`) instead.
       `#ff7700`, dark `#242424`, button radius 4px, section titles
       centered with orange underline.
 - [ ] Responsive check at 767px: nav hidden, sections stack, images hidden.
-- [ ] No ColorLib references in any app file; footer links
+- [x] No ColorLib references in any app file; footer links
       https://www.componentdock.com/.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

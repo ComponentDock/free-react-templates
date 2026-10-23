@@ -189,16 +189,16 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Full-page purple gradient background renders correctly
-- [ ] Navigation bar with "Co." logo and "CONTACT US" button
+- [x] Navigation bar with "Co." logo and "CONTACT US" button
 - [ ] Centered white card with header image banner
-- [ ] "CONTACT US" heading on the banner with dark overlay
+- [x] "CONTACT US" heading on the banner with dark overlay
 - [ ] Close (X) button dismisses the card
 - [ ] Four form fields with left-side icons (name, email, phone, message)
 - [ ] Light gray input borders and placeholder text
 - [ ] Validation: red border + red X on invalid fields
-- [ ] "SEND NOW" pill button with purple background
-- [ ] Footer links to componentdock.com
+- [x] "SEND NOW" pill button with purple background
+- [x] Footer links to componentdock.com
 - [ ] Responsive layout (mobile-friendly)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] `packages/ui` components reused where possible
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

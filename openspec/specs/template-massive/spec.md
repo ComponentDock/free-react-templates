@@ -258,20 +258,20 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Massive" and links to Home, Features, App, Video, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Welcome To Massive App Store."
-- [ ] Features section — it SHALL contain a heading "App Features"
-- [ ] App split section — it SHALL contain a heading "All you want from app"
-- [ ] Video section — it SHALL contain a heading "Description With Video"
-- [ ] Work section — it SHALL contain a heading "How it work"
-- [ ] Screenshots section — it SHALL contain a heading "Awesome Screenshot"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Massive" and links to Home, Features, App, Video, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Welcome To Massive App Store."
+- [x] Features section — it SHALL contain a heading "App Features"
+- [x] App split section — it SHALL contain a heading "All you want from app"
+- [x] Video section — it SHALL contain a heading "Description With Video"
+- [x] Work section — it SHALL contain a heading "How it work"
+- [x] Screenshots section — it SHALL contain a heading "Awesome Screenshot"
 - [ ] Testimonials section — it SHALL contain a heading "What's say our Clients"
-- [ ] Download section — it SHALL contain a heading "Get Download Massive app"
-- [ ] Team section — it SHALL contain a heading "Our Expert Team"
-- [ ] Pricing section — it SHALL contain a heading "Pricing Table"
-- [ ] Blog section — it SHALL contain a heading "From Blog"
-- [ ] Contact section — it SHALL contain a heading "Get In Touch"
+- [x] Download section — it SHALL contain a heading "Get Download Massive app"
+- [x] Team section — it SHALL contain a heading "Our Expert Team"
+- [x] Pricing section — it SHALL contain a heading "Pricing Table"
+- [x] Blog section — it SHALL contain a heading "From Blog"
+- [x] Contact section — it SHALL contain a heading "Get In Touch"
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

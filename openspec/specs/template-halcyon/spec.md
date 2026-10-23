@@ -300,10 +300,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens match the reference: peach `#ffa188` primary (hover
       `#ff8362`), Muli body + Playfair Display serif headings, pill buttons
       (`border-radius: 30px`).
-- [ ] 100% Vitest coverage on `apps/halcyon` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/halcyon` (lines/functions/branches/
       statements).
 - [ ] Per-app gate `scripts/verify-app.sh halcyon` passes.
 - [ ] PR description includes: source template (ColorLib Wellspa), preview
       URL, design tokens used, what differs (renames, placeholder images).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

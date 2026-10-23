@@ -173,10 +173,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Full Name input with placeholder
 - [ ] Email Address input with placeholder
 - [ ] Service dropdown with "UI/UX Design", "eCommerce Bussiness", "Online Services"
-- [ ] "SEND" button with indigo-blue background
+- [x] "SEND" button with indigo-blue background
 - [ ] Social media icons (Facebook, Twitter, Instagram) in colored circles
 - [ ] Footer with Component Dock link
 - [ ] Responsive: columns stack on mobile
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] `packages/ui` components reused where possible
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

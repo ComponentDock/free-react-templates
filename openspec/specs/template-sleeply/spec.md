@@ -467,7 +467,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (Destination 8/12 + Guests 2/12 + Children 2/12) → row 2 (Check In
       4/12 + Check out 4/12 + "Check availability" 4/12); NO headline, NO
       navbar, NO hero chrome, NO footer (single-section demo)
-- [ ] Brand color `#184c8f` (navy-blue — labels + "Check availability"
+- [x] Brand color `#184c8f` (navy-blue — labels + "Check availability"
       button background) in `@theme` and used via Tailwind classes
 - [ ] Fields: solid `#f2f1f1` background; 65px height; 4px radius;
       borderless; shadowless; `#090a0b` 24px weight-300 text;
@@ -483,12 +483,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Selects: Guests 1–3, Children 0–2 — `appearance: none` + plain
       right-edge arrow zone (24px wide × 65px tall, `#b1b6bd` rotated
       `➜`/ChevronDown at 14px, pointer-events-none, NO background strip)
-- [ ] "Check availability" button: solid `#184c8f` bg, white uppercase 18px
+- [x] "Check availability" button: solid `#184c8f` bg, white uppercase 18px
       weight-600 text, height 90px (taller than fields), full width of its
       4/12 slot, 4px corners, NO hover rule; validates required fields
       (destination/check-in/check-out) and shows a summary line / validation
       messages
-- [ ] Source copy kept verbatim: "Check In" (capital I), "Check out"
+- [x] Source copy kept verbatim: "Check In" (capital I), "Check out"
       (lowercase o), placeholder "Enter Address, zip, city or airport"
 - [ ] Mobile (<768px): 8/2/2 row stacks full width; 4/4/4 row stacks full
       width; button stays full width
@@ -500,5 +500,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -264,17 +264,17 @@ Dock (`https://www.componentdock.com/`) instead.
       2px vertical dividers (`rgba(129,131,144,0.15)`) between columns
 - [ ] Inputs: transparent background, radius 0, no border, 50px tall, 20px
       `#222` text, no shadow on focus; placeholder `#818390`
-- [ ] Date inputs native `<input type="date">`; required; empty state grey;
+- [x] Date inputs native `<input type="date">`; required; empty state grey;
       check-out ≥ check-in validation
 - [ ] Guests select 1/2/3 (default 1) with custom arrow (rotated `➜` or
       ChevronDown), `#818390`
 - [ ] Labels 14px `#ff0063` above each input, associated via `htmlFor`/`id`
-- [ ] "Check availability" button: full width, 75px tall, `#ff0063` bg,
+- [x] "Check availability" button: full width, 75px tall, `#ff0063` bg,
       white 16px capitalize text; shows summary / validation messages
 - [ ] Placeholder images via `picsum.photos/seed/roostly-<n>/<w>/<h>`,
       icons from lucide-react, no copied assets
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

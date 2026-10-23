@@ -529,8 +529,8 @@ Everything below is a deliberate, recorded delta between the reference and the s
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/affiance`
-- [ ] `npm run lint` passes for `apps/affiance`
+- [x] `npm run typecheck` passes for `apps/affiance`
+- [x] `npm run lint` passes for `apps/affiance`
 - [ ] `scripts/verify-app.sh affiance` passes (typecheck + lint + 100 % coverage
       tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
@@ -539,7 +539,7 @@ Everything below is a deliberate, recorded delta between the reference and the s
       (`#eeeeee` track + `#F96D00` arc), `2s` rotation + `1.5s` dash animation,
       removed on mount and leaving on an `opacity .4s ease-out` transition,
       `aria-hidden`, reduced-motion aware
-- [ ] Header: transparent uppercase navbar over the hero, "AFFIANCE" wordmark +
+- [x] Header: transparent uppercase navbar over the hero, "AFFIANCE" wordmark +
       eight uppercase white links (Home · Groom & Bride · Our Story · Greetings ·
       Bridesmaid & Groomsmen · When & Where · RSVP · Gallery), keyboard-operable
       mobile menu with `aria-expanded`
@@ -559,7 +559,7 @@ Everything below is a deliberate, recorded delta between the reference and the s
       inset dashed `rgba(255,255,255,.5)` ring, a **120 px
       `rgba(255,255,255,.3)` two-doves glyph** at each panel's top corner,
       parallax off under reduced motion
-- [ ] Greetings: `#f8f9fa` band, subheading + script "Sweet Messages" title,
+- [x] Greetings: `#f8f9fa` band, subheading + script "Sweet Messages" title,
       guest-message carousel with a **40 px `#d291bc` disc + 30 px white
       single-dove glyph** above each card's top-left corner,
       reduced-opacity inactive items, pausable and reduced-motion safe
@@ -571,7 +571,7 @@ Everything below is a deliberate, recorded delta between the reference and the s
       event columns (Ceremony / Reception) each topped by a **100 px white disc
       with a 50 px `#d291bc` glyph** (church / wedding cake) and carrying date,
       time, address, phone and a keyless-map **See Map** link
-- [ ] RSVP: photo band + overlay, "Invitation" subheading + 60 px script "Will
+- [x] RSVP: photo band + overlay, "Invitation" subheading + 60 px script "Will
       You Attend?" title, Name / email / Guest select (Guest, 1–5) / Message
       textarea / `#d291bc` "I am attending" submit; local confirmation only, no
       external POST, labelled fields
@@ -595,8 +595,8 @@ Everything below is a deliberate, recorded delta between the reference and the s
       `lucide-react` `Church` / `Cake` and the small UI glyphs `Menu`, `X`,
       `ChevronDown`, `MapPin`, `Phone`, `Mail`, `ArrowUp`; no ColorLib asset
       copied
-- [ ] No `colorlib` / `twohearts` / "Twohearts" string anywhere in the app
+- [x] No `colorlib` / `twohearts` / "Twohearts" string anywhere in the app
       (comments included); footer links Component Dock
 - [ ] TEMPLATES.md `Twohearts` item marked `[x]` with the live
       `https://affiance.free.componentdock.com` URL + homepage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

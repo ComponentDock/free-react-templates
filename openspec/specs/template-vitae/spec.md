@@ -515,12 +515,12 @@ Dock (`https://www.componentdock.com/`) instead.
       social icons as inline SVG — lucide has no brand icons), no copied
       assets
 - [ ] No extra pages — nav links are smooth-scroll anchors to section ids
-- [ ] "Send Message" validates (first name, last name, valid email,
+- [x] "Send Message" validates (first name, last name, valid email,
       subject, message) and shows success / validation messages (pure
       exported function for tests)
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md: mark ALL FOUR dup rows `[x]` (Bootstrap line 446,
       One Page line 2338, Personal line 2407, Portfolio line 2528) + surge
       URL + `npm run readme:status` done by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

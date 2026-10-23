@@ -483,5 +483,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (`https://preview.colorlib.com/theme/news/`), design tokens used,
       what differs (renames, placeholder images, ad banners as neutral
       placeholders).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

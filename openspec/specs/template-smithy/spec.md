@@ -102,9 +102,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders all sections in correct order — I see the Navbar at the top
 - [ ] Navbar provides navigation — I see links for Home, About, Services, Portfolio, Contact
-- [ ] Hero section displays developer profile — I see the "Hello" subtitle
-- [ ] Portfolio section supports filtering — only portfolio items tagged "popular" are displayed
+- [x] Hero section displays developer profile — I see the "Hello" subtitle
+- [x] Portfolio section supports filtering — only portfolio items tagged "popular" are displayed
 - [ ] Newsletter form accepts email input — the input field shows the typed email

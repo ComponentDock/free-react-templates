@@ -463,15 +463,15 @@ Dock (`https://www.componentdock.com/`) instead.
       buttons with arrow icons (~10px 65px 10px 31px padding; hero-btn
       17px/18px variants), 765px photo hero, fixed-attachment services
       background.
-- [ ] Header has the navy top bar (phone + email + "Free Quote" button),
+- [x] Header has the navy top bar (phone + email + "Free Quote" button),
       sticky white nav with Pages dropdown, search overlay, and mobile
       hamburger.
 - [ ] Contact form has all five fields, Topic select, validation with
       per-field errors, and a red "Send Message" submit button.
-- [ ] Hero has the red square "Learn More" button and a circular play button
+- [x] Hero has the red square "Learn More" button and a circular play button
       opening a video modal.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Braxit), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

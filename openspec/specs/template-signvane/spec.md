@@ -195,10 +195,10 @@ The app code SHALL NOT contain any references to ColorLib in source files, comme
 
 - [ ] Light gray (#fafafa) background
 - [ ] "Sign Up #01" heading in Roboto, 28px
-- [ ] "Create Your Account" subtitle
+- [x] "Create Your Account" subtitle
 - [ ] 5 form fields with pill-shaped inputs
 - [ ] 2-column layout for name and password fields
-- [ ] Golden (#d5c455) "Sign Up" button, pill shape, 50% width
+- [x] Golden (#d5c455) "Sign Up" button, pill shape, 50% width
 - [ ] Button hover: transparent bg, golden border/text
 - [ ] Facebook (#44629b) and Twitter (#1dade9) social buttons
 - [ ] Social button hover turns golden
@@ -206,4 +206,4 @@ The app code SHALL NOT contain any references to ColorLib in source files, comme
 - [ ] Roboto font loaded via Google Fonts
 - [ ] Responsive: columns stack on mobile
 - [ ] Footer with Component Dock link
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code

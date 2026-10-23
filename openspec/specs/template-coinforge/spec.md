@@ -161,10 +161,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and login — the "Coinforge" brand link, all 9 nav links, and the Login button are visible
-- [ ] Hero section with CTA buttons — the hero heading "Fast Growing ICO Agency" is visible
-- [ ] Featured logos section — the "We are featured in" text and 6 logo names are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and login — the "Coinforge" brand link, all 9 nav links, and the Login button are visible
+- [x] Hero section with CTA buttons — the hero heading "Fast Growing ICO Agency" is visible
+- [x] Featured logos section — the "We are featured in" text and 6 logo names are visible
 - [ ] About section with CTA — the about heading and join button are visible
 - [ ] Features section with 3 cards — all three feature card titles and descriptions are visible
 - [ ] ICO Live section with stats and countdown — token sold count, ETH/BTC/LTH collection stats, countdown timer units, progress bar, and Buy Tokens button are visible

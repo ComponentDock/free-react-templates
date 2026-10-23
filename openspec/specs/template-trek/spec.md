@@ -373,21 +373,21 @@ Dock (`https://www.componentdock.com/`) instead.
       "Let's Enjoy The Wonders of Nature"; p 15px white; 60px circular
       play button (white border, `rgba(255,255,255,0.1)` bg, hover
       white bg + black icon) + "Watch the video"
-- [ ] Our Story: left heading (backdrop "Story" + sand "Discover
+- [x] Our Story: left heading (backdrop "Story" + sand "Discover
       Story" label + "Our Story" h3) + 2 paragraphs; right photo
-- [ ] Journey: centered heading (backdrop "Journey" + label "Journey" + "Your Journey Starts Here"); 6 photo cards (3-up): bottom-up
+- [x] Journey: centered heading (backdrop "Journey" + label "Journey" + "Your Journey Starts Here"); 6 photo cards (3-up): bottom-up
       gradient overlay, img scale(1.05)→1 hover, sand price pill
       (radius 30px, 12px uppercase l-s .2em) + 18px white title —
       vary the placeholder titles, keep prices
-- [ ] Our Team: centered heading (backdrop "Our Team" + "Amazing
+- [x] Our Team: centered heading (backdrop "Our Team" + "Amazing
       Staff" + "Meet Our Team"); 3 centered cards (photo mb-4, 18px
       name, 14px uppercase `#888` "Staff" caption, bio, 3 social
       icons)
-- [ ] Testimonials: centered heading (backdrop "Testimonials" +
+- [x] Testimonials: centered heading (backdrop "Testimonials" +
       "Testimony" + "Happy Customers"); 4 sand cards (padding 50px,
       20px text, offset square accent): photo + blockquote + author;
       carousel arrows + dots (React state)
-- [ ] Our Blog: centered heading (backdrop "Blog" + "Updates" + "Our
+- [x] Our Blog: centered heading (backdrop "Blog" + "Updates" + "Our
       Blog"); 3 cards: photo + white content box (20px padding): 22px
       title (hover sand) + `#ccc` 13px uppercase meta "July 17, 2019
       by Admin" + excerpt — vary titles
@@ -412,4 +412,4 @@ Dock (`https://www.componentdock.com/`) instead.
       Dock footer credit); after merge mark ALL THREE TEMPLATES.md
       Trips rows `[x]` (lines 520, 1209, 3010 — Bootstrap 216 /
       Business 365 / Travel 44)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

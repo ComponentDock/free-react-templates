@@ -272,5 +272,5 @@ Dock (`https://www.componentdock.com/`) instead.
       100% coverage + build
 - [ ] Uses packages/ui (Button, cn) where applicable — knip-safe
 - [ ] Spec validated: `npm run spec:validate`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

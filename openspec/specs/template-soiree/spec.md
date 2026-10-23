@@ -176,15 +176,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header with navigation — the header displays "Soiree" logo text
-- [ ] Hero section — the hero displays "Prepare yourself for the conference"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header with navigation — the header displays "Soiree" logo text
+- [x] Hero section — the hero displays "Prepare yourself for the conference"
 - [ ] Event info boxes — boxes show Date, Location, Speakers, and Tickets
 - [ ] Countdown timer — a countdown shows Days, Hours, Minutes, Seconds
-- [ ] About section — the section shows "About the event" heading
+- [x] About section — the section shows "About the event" heading
 - [ ] Speakers section — 8 speaker cards are displayed in a grid
 - [ ] Pricing section — 3 pricing cards are shown: Early Bird ($65), Start up ($85), Corporate ($95)
 - [ ] Calendar section — a table shows 3 upcoming events with date, title, time, and speaker
-- [ ] Partners section — the section shows "Our Partners" heading
-- [ ] Get tickets section — the section shows "Get your tickets" heading
+- [x] Partners section — the section shows "Our Partners" heading
+- [x] Get tickets section — the section shows "Get your tickets" heading
 - [ ] Accessibility — the page uses semantic elements: header, main, section, footer

@@ -597,7 +597,7 @@ Dock (`https://www.componentdock.com/`) instead.
       white h1), carousel dots (active #f17445), mouse scroll pill
 - [ ] Intro: 5 orange #f17445 cards pulled up over the hero (margin-top
       -6em), $150 MONTH, blurb, MORE link; stack on mobile
-- [ ] Services: "Work hard stay humble", 2×2 icon grid (Cardio, Body
+- [x] Services: "Work hard stay humble", 2×2 icon grid (Cardio, Body
       Building, Karate, Boxing), right photo collage, white skew strip
 - [ ] Schedule: #f2f3f7 bg, white pill weekday tabs (active #f17445),
       8 classes per day (orange icon, 06am - 8am with orange underline,
@@ -628,7 +628,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on lines 401
       AND 1849 "Flawless", + surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

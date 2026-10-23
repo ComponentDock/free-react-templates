@@ -160,8 +160,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders fixed header with logo and social links — a link with text "Exposely" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders fixed header with logo and social links — a link with text "Exposely" is visible
 - [ ] Hero section renders full-screen with background image — the section has min-h-screen class
 - [ ] Gallery renders portfolio grid with 7 items — the portfolio list contains exactly 7 list items
 - [ ] CTA section renders call to action with decorative text — an h2 heading with text "I am an experienced photographer" is visible

@@ -160,14 +160,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays navigation and branding — I see the "Dentalyn" logo link
-- [ ] Hero section displays heading and CTAs — I see the heading "We Believe Everyone Should Have Easy Access To Great Dental Care"
-- [ ] About section shows skill bars — I see skill bars labeled "Experience Dentist", "Modern Equipment", "Friendly Staff"
-- [ ] Stats section displays counters — I see "20" with "Years Of Experience"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar displays navigation and branding — I see the "Dentalyn" logo link
+- [x] Hero section displays heading and CTAs — I see the heading "We Believe Everyone Should Have Easy Access To Great Dental Care"
+- [x] About section shows skill bars — I see skill bars labeled "Experience Dentist", "Modern Equipment", "Friendly Staff"
+- [x] Stats section displays counters — I see "20" with "Years Of Experience"
 - [ ] Services section lists dental services — I see Teeth Whitening, Missing Teeth, Cosmetic Dentistry, Examination, Teeth Pain, Root Canal
 - [ ] Pricing section shows table — I see a table with column headers Service Names, Stage, Price
 - [ ] Appointment form collects booking info — I see inputs for Name, Phone, Email, Address
 - [ ] Team section shows dentist cards — I see three dentist names and roles
-- [ ] Testimonials section displays patient quotes — I see patient quotes with names and "Dental Patient" roles
+- [x] Testimonials section displays patient quotes — I see patient quotes with names and "Dental Patient" roles
 - [ ] Blog section shows recent posts — I see three blog post titles with dates and comment counts

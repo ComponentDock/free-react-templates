@@ -379,18 +379,18 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/interiora` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/interiora` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- interiora` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#e67118, #2a2a2a, #545454, #656565, #1a1a1a, #f1c4a3, #fff, #ffcc00, rgba(84,84,84,0.2), #5e5e5e) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `interiora-<n>`, Google Fonts Jost 300–900 link, lucide icons only)
+- [x] No ColorLib assets copied (picsum seeds `interiora-<n>`, Google Fonts Jost 300–900 link, lucide icons only)
 - [ ] Buttons match the three shapes: `btn_10` orange square (radius 0), `btn_1` dark pill (radius 41px, hover transparent), `btn_01` orange outline pill (hover fill); header CTA radius 25px
 - [ ] Hero slider: 3 slides, photo bg, rgba overlay, white 60px headline with underlined span, dark pill CTA, dot navigation
 - [ ] Nav hover: orange text + 3px orange underline sweep; sticky white header on scroll; mobile hamburger panel
 - [ ] Testimonials slider implemented with client-side state (no Owl Carousel dep); peach band bg
 - [ ] Counters render as orange 50px numbers; stars `#ffcc00`
-- [ ] Footer newsletter: email input (56px, orange 1px border, radius 30px) + arrow submit; Component Dock credit; no ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer newsletter: email input (56px, orange 1px border, radius 30px) + arrow submit; Component Dock credit; no ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

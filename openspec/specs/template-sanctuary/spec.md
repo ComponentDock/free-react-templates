@@ -423,23 +423,23 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/sanctuary`
-- [ ] `npm run lint` passes for `apps/sanctuary`
+- [x] `npm run typecheck` passes for `apps/sanctuary`
+- [x] `npm run lint` passes for `apps/sanctuary`
 - [ ] `scripts/verify-app.sh sanctuary` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark + tagline, 6 links, "Plan Your Visit" white pill +
+- [x] Navbar: wordmark + tagline, 6 links, "Plan Your Visit" white pill +
       "Give" outline pill, dark-mode toggle, mobile drawer with CTAs
 - [ ] Hero: bg-gray-900 + congregation photo overlay (opacity-40), serif
       "A Place to Belong" headline, sub-paragraph, 2 pill CTAs; "Join Us
       This Week" glass card with 3 services, gold (#facc15) times
-- [ ] Services: "Service Times" + 3 cards (Sunday Worship, Wednesday Bible
+- [x] Services: "Service Times" + 3 cards (Sunday Worship, Wednesday Bible
       Study, Youth Group) with descriptions
-- [ ] About: "Who We Are" + intro paragraph + "What We Believe" list
-- [ ] Events: "Upcoming Events" — featured Easter Sunday Celebration +
+- [x] About: "Who We Are" + intro paragraph + "What We Believe" list
+- [x] Events: "Upcoming Events" — featured Easter Sunday Celebration +
       3 list events
-- [ ] Ministries: "Get Connected" — 6 ministry cards
-- [ ] Sermons: "Recent Sermons" — 4 sermon cards
+- [x] Ministries: "Get Connected" — 6 ministry cards
+- [x] Sermons: "Recent Sermons" — 4 sermon cards
 - [ ] Stories of Faith: bg-primary-50, 3 testimonials with round avatars
 - [ ] CTA banner: bg-primary-700, "You're Welcome Here" + "Plan Your Visit"
 - [ ] Footer: bg-gray-900, brand blurb + socials, Connect/Grow/Resources
@@ -447,5 +447,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark mode toggles `.dark` and persists
 - [ ] Placeholder images via seeded picsum (`seed/sanctuary-<n>/<w>/<h>`)
 - [ ] No copied ColorLib assets; brand purple #9333ea → #7e22ce in `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

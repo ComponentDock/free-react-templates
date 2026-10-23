@@ -208,7 +208,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] White (#fff) background applied to modal body
 - [ ] Promotional image renders at 50% width on the left
 - [ ] Form has Email Address, First Name, and Password fields with labels
-- [ ] "Sign up" button is full-width with primary blue color
+- [x] "Sign up" button is full-width with primary blue color
 - [ ] Privacy note text is gray (#999) and small
 - [ ] Privacy link is dark (#555) and bold
 - [ ] Modal has 7px border-radius and deep box-shadow
@@ -216,5 +216,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Accessibility: focus trap within modal when open
 - [ ] Accessibility: aria-modal on modal dialog
 - [ ] Accessibility: focus returns to trigger button on close
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

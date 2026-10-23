@@ -150,7 +150,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] All 8 sections render in correct order
 - [ ] Design tokens match: #db2d2e primary, Lato font, 2px radius
-- [ ] Header: top bar dark, nav links, "Add Car" button
+- [x] Header: top bar dark, nav links, "Add Car" button
 - [ ] Hero: bg image, headline, search form with tabs
 - [ ] Services: 4 cards with icons, borders, centered text
 - [ ] Feature: split layout, 6 icon items, #f7f7f7 background
@@ -158,8 +158,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Choose Us: split layout with video placeholder
 - [ ] Latest News: 3 blog cards with thumbnails
 - [ ] Footer: dark bg, contact/info/brands columns, copyright
-- [ ] Footer links to componentdock.com
-- [ ] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] No ColorLib references in app code
 - [ ] Tests pass with 100% coverage
 - [ ] Build succeeds (vite build)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

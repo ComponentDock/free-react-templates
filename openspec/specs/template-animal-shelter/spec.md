@@ -254,16 +254,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Animal Shelter" and links to
-- [ ] Hero banner — it SHALL contain a level-1 heading "Adopt Us. We need your help."
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Animal Shelter" and links to
+- [x] Hero banner — it SHALL contain a level-1 heading "Adopt Us. We need your help."
 - [ ] Pet photo strip — it SHALL show at least four pet photos
-- [ ] Select-pet band — it SHALL contain a heading "Please select your favourite pet"
-- [ ] About section — it SHALL contain a heading "Globally Connected by Large Network"
-- [ ] Video section — it SHALL contain a heading "Watch this video how they live here"
-- [ ] Adoption process section — it SHALL contain a heading "Process to adopt a pet"
-- [ ] Testimonials section — it SHALL contain a heading "Testimonials from our guardians"
-- [ ] Volunteer call-to-action — it SHALL contain a heading "Want to help? Become a Volunteer"
-- [ ] Footer — it SHALL show an "About Us" widget, a "Useful Links" column, and a
+- [x] Select-pet band — it SHALL contain a heading "Please select your favourite pet"
+- [x] About section — it SHALL contain a heading "Globally Connected by Large Network"
+- [x] Video section — it SHALL contain a heading "Watch this video how they live here"
+- [x] Adoption process section — it SHALL contain a heading "Process to adopt a pet"
+- [x] Testimonials section — it SHALL contain a heading "Testimonials from our guardians"
+- [x] Volunteer call-to-action — it SHALL contain a heading "Want to help? Become a Volunteer"
+- [x] Footer — it SHALL show an "About Us" widget, a "Useful Links" column, and a
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

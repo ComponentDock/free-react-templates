@@ -249,11 +249,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page layout — a card container is visible on a light blue-white background
 - [ ] Dropdown open and close — a list of options appears below the trigger
 - [ ] Option selection — the checkbox becomes checked with a green checkmark
 - [ ] Select All / Clear All — all enabled options become checked
 - [ ] Disabled options — the option's selection state does not change
 - [ ] Keyboard navigation — focus moves to the next option
-- [ ] Accessibility — the trigger SHALL have `aria-haspopup="listbox"
+- [x] Accessibility — the trigger SHALL have `aria-haspopup="listbox"

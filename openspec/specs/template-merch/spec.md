@@ -168,10 +168,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays logo and navigation — the logo "Merch." should be visible
-- [ ] Hero section displays promotional content — a headline "The New Way To Display Product" should be visible
+- [x] Navbar displays logo and navigation — the logo "Merch." should be visible
+- [x] Hero section displays promotional content — a headline "The New Way To Display Product" should be visible
 - [ ] Features bar shows three benefits — 3 feature items should appear in a row
-- [ ] New Arrivals product grid — a "New Arrivals" heading should appear
-- [ ] Deal of the Week with countdown — a "Week Deal" label should appear
-- [ ] Popular Items section — a "Popular Items" heading should appear
+- [x] New Arrivals product grid — a "New Arrivals" heading should appear
+- [x] Deal of the Week with countdown — a "Week Deal" label should appear
+- [x] Popular Items section — a "Popular Items" heading should appear
 - [ ] Newsletter signup form — an email input field should be present

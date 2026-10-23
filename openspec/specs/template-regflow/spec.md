@@ -184,9 +184,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Button hover: blue fill slides from left, arrow shifts right
 - [ ] Mobile responsive: border/shadow removed, card goes full-width
 - [ ] Form fields have proper labels and aria attributes
-- [ ] No ColorLib references in any app source files
-- [ ] Footer links to Component Dock (not ColorLib) — NOTE: original has
+- [x] No ColorLib references in any app source files
+- [x] Footer links to Component Dock (not ColorLib) — NOTE: original has
   no footer; add a minimal footer with Component Dock attribution
 - [ ] 100% test coverage on all component files
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

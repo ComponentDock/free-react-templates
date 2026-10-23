@@ -457,7 +457,7 @@ The system SHALL carry the repo-standard footer attribution.
 
 ## Verification checklist
 
-- [ ] App folder `apps/hex` (package `@free-react-templates/hex`,
+- [x] App folder `apps/hex` (package `@free-react-templates/hex`,
       `public/CNAME` = `hex.free.componentdock.com`, `homepage`
       https://hex.free.componentdock.com)
 - [ ] Mesh-gradient background recreated in CSS (pink → lavender → cyan/teal;
@@ -478,7 +478,7 @@ The system SHALL carry the repo-standard footer attribution.
 - [ ] Roboto via Google Fonts (400/700); lucide-react icons only (probe
       exports: User, Lock, CreditCard, Wallet, ChevronDown)
 - [ ] Responsive stacking at 1199px / 991px / 767px / 575px breakpoints
-- [ ] Component Dock footer link; zero ColorLib references in app code
+- [x] Component Dock footer link; zero ColorLib references in app code
 - [ ] 100% Vitest coverage (lines/functions/branches/statements)
 - [ ] Per-app gate green: `npm run verify:app hex` + `npm run spec:validate`
 

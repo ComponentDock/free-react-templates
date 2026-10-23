@@ -201,8 +201,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Events section has parallax heading + event cards
 - [ ] Footer is dark navy (#1f1f2c) with 4 columns
 - [ ] Footer links to ComponentDock
-- [ ] No ColorLib references in app code
-- [ ] Footer branded as "Component Dock"
+- [x] No ColorLib references in app code
+- [x] Footer branded as "Component Dock"
 - [ ] 100% test coverage (Vitest)
 - [ ] Tests cover all interactive elements and section rendering
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

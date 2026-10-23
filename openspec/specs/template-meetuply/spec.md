@@ -177,11 +177,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar displays correctly — the navbar is visible at the top with a dark background
-- [ ] Hero section fills viewport — a large heading "Developer Conference 2025" is displayed
+- [x] Hero section fills viewport — a large heading "Developer Conference 2025" is displayed
 - [ ] Venue section with feature cards — 4 feature cards are displayed in a grid
-- [ ] Fun Facts section — the heading "Fun Facts" is visible
+- [x] Fun Facts section — the heading "Fun Facts" is visible
 - [ ] Counter statistics with animated count-up — each statistic animates from 0 to its target value
 - [ ] Speakers section with responsive grid — 4 speaker cards are displayed in a responsive grid
 - [ ] Schedule section with day tabs — the corresponding day's events are displayed

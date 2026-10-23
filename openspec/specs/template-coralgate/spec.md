@@ -228,15 +228,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Card is centered on viewport with light gray background
-- [ ] Left column: "Sign In" heading with social icons, form fields, coral CTA button
+- [x] Left column: "Sign In" heading with social icons, form fields, coral CTA button
 - [ ] Inputs are pill-shaped with light gray background
 - [ ] Sign In button is coral pink, full-width, pill-shaped
 - [ ] Remember Me checkbox is coral, checked by default
 - [ ] Forgot Password link is gray, right-aligned
-- [ ] Right column: coral gradient, "Welcome to login" heading, Sign Up outline button
+- [x] Right column: coral gradient, "Welcome to login" heading, Sign Up outline button
 - [ ] Responsive: columns stack on mobile
 - [ ] ComponentDock footer link present
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Tests: 100% coverage (lines, functions, branches, statements)
 - [ ] Typecheck passes, lint passes, build succeeds
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

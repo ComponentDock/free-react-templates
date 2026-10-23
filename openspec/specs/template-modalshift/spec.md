@@ -211,9 +211,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Page loads with centered heading and launch button
 - [ ] Modal opens with orange top border and gray background
 - [ ] Login form has Username/Email and Password fields
-- [ ] "Login" button is primary blue
-- [ ] "Forgot password" link is visible
-- [ ] "Sign up here" note is visible with bold link
+- [x] "Login" button is primary blue
+- [x] "Forgot password" link is visible
+- [x] "Sign up here" note is visible with bold link
 - [ ] Modal closes on backdrop click
 - [ ] Modal closes on close button click
 - [ ] Input fields have subtle shadow, no visible border
@@ -221,7 +221,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Keyboard navigation works (Tab, Escape)
 - [ ] Screen reader ARIA attributes present
 - [ ] Responsive on mobile and desktop
-- [ ] Footer links to Component Dock (https://www.componentdock.com/)
-- [ ] No ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer links to Component Dock (https://www.componentdock.com/)
+- [x] No ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

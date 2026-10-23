@@ -304,5 +304,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark-mode toggle + `dark:` variants on gray bands per demo
 - [ ] PR description states: source template Legaledge 2, preview URL +
       pages.dev fallback, design tokens, renames, placeholders
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

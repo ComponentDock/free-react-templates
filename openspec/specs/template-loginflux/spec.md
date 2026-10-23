@@ -195,17 +195,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Full-viewport split layout renders correctly at desktop widths
 - [ ] Left panel shows background image with purple→pink diagonal gradient overlay
 - [ ] Right panel is white with vertically centered form
-- [ ] "Sign Up" heading is large, bold, and dark
+- [x] "Sign Up" heading is large, bold, and dark
 - [ ] All five fields present: Full Name, Email, Username, Password, Repeat Password
 - [ ] Password and Repeat Password fields mask input
 - [ ] Green checkmark appears on valid Email and Username
 - [ ] "I agree to the Terms of User" checkbox with linked text
-- [ ] Gradient "Sign Up" button with pill shape
-- [ ] "Sign in →" link present
+- [x] Gradient "Sign Up" button with pill shape
+- [x] "Sign in →" link present
 - [ ] Bottom-border-only input styling
 - [ ] Responsive: panels stack on mobile (<768px)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Footer links to Component Dock
 - [ ] Specs/docs only reference ColorLib source
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

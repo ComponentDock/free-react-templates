@@ -450,7 +450,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Photo panel = seeded picsum (`hostly-1/…`) cover/center with
       `rgba(133,104,73,0.78)` overlay, 400px wide, left 25px, top/bottom
       -25px, radius 6px, padding 25px
-- [ ] Header: h2 "Make your reservation", Playfair Display 900 42px `#fff`
+- [x] Header: h2 "Make your reservation", Playfair Display 900 42px `#fff`
       (serif display — NOT the body font), capitalized, + 18px white
       subtitle paragraph; margin-top ~60px
 - [ ] Check In (date, required) + Check Out (date, required) side by side;
@@ -465,7 +465,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (rotated `➜`/ChevronDown) at right 3px bottom 5px, NO tab background
 - [ ] Labels: static, uppercase, 14px weight-400 taupe `#856849`, 20px left
       indent, `htmlFor`/`id` associated
-- [ ] "Check availability" button: full width, `rgba(133,104,73,0.9)` bg
+- [x] "Check availability" button: full width, `rgba(133,104,73,0.9)` bg
       (solid `#856849` on hover/focus), white bold 18px text, height 55px,
       radius 40px (pill), border none; validates (dates required, check-out
       ≥ check-in, room type required) and shows summary / validation
@@ -477,5 +477,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

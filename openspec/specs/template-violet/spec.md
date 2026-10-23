@@ -195,13 +195,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `injectUiSource()` present in `vite.config.ts`
 - [ ] PR title/body records: recreation of ColorLib Sierra
       (https://colorlib.com/wp/template/sierra/), preview URL, tokens
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Violet" and links to Home, Features, Testimonials, Team, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Choose a powerful design for your Start-up"
-- [ ] Features section — it SHALL contain a heading "Discover the features"
-- [ ] Testimonials section — it SHALL show a quote "They are the best" attributed to "Chriss Turner", CEO Enterprise
-- [ ] Team section — it SHALL contain a heading "We build a strong team of great people"
-- [ ] Contact section — it SHALL contain a heading "Get in touch, send us an e-mail or call us"
+- [x] Navigation bar — the navbar SHALL show the site name "Violet" and links to Home, Features, Testimonials, Team, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Choose a powerful design for your Start-up"
+- [x] Features section — it SHALL contain a heading "Discover the features"
+- [x] Testimonials section — it SHALL show a quote "They are the best" attributed to "Chriss Turner", CEO Enterprise
+- [x] Team section — it SHALL contain a heading "We build a strong team of great people"
+- [x] Contact section — it SHALL contain a heading "Get in touch, send us an e-mail or call us"
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -350,7 +350,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens from the reference used in `@theme` (accent orange
       #f05d23, sidebar rgba(0,0,0,0.04), subheading #bfbfbf, meta
       #b3b3b3, footer navy #132238; Work Sans + Poppins + Montserrat fonts)
-- [ ] Sidebar: fixed 25% left, "jotter" wordmark + grey dot, 6-link
+- [x] Sidebar: fixed 25% left, "jotter" wordmark + grey dot, 6-link
       Montserrat 700 nav (Home active) → black + underline hover,
       aside footer with copyright/Component Dock credit + 4 social icons,
       mobile off-canvas + hamburger
@@ -370,5 +370,5 @@ Dock (`https://www.componentdock.com/`) instead.
       Montserrat via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Elen lines (384 AND 2390
       AND 2713) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

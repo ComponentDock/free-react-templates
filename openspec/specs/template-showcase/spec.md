@@ -595,10 +595,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Rotating hero word + count-up counters + scroll-mouse animation work.
 - [ ] Navbar scroll state (fixed white blurred) and mobile hamburger work.
 - [ ] Contact form validates with zod; success state on valid submit.
-- [ ] No ColorLib assets copied: picsum placeholders, lucide-react +
+- [x] No ColorLib assets copied: picsum placeholders, lucide-react +
       inline-SVG brand icons, Google Fonts.
 - [ ] PR description records: source template (ColorLib Ronaldo), preview
       URL, design tokens used, deviations (renamed person name, picsum
       images, paraphrased copy).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

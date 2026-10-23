@@ -200,17 +200,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Hero renders headline and subtitle — I should see the heading "A Best Place To Stay"
 - [ ] Booking form is present — I should see a booking form with check-in and check-out date fields
 - [ ] Booking form prevents default submission — the form should not navigate away
-- [ ] Welcome section renders — I should see a "Welcome!" heading
-- [ ] Rooms and suites are displayed — I should see a "Rooms & Suites" heading
-- [ ] Photos gallery is displayed — I should see a "Photos" heading
-- [ ] Restaurant menu has tabs — I should see "Our Restaurant Menu" heading
+- [x] Welcome section renders — I should see a "Welcome!" heading
+- [x] Rooms and suites are displayed — I should see a "Rooms & Suites" heading
+- [x] Photos gallery is displayed — I should see a "Photos" heading
+- [x] Restaurant menu has tabs — I should see "Our Restaurant Menu" heading
 - [ ] Restaurant menu tab switching — the Desserts tab should be active
-- [ ] Testimonials are displayed — I should see a "People Says" heading
-- [ ] Events section is displayed — I should see an "Events" heading
-- [ ] CTA banner with reserve button — I should see "Reserve Now" text
+- [x] Testimonials are displayed — I should see a "People Says" heading
+- [x] Events section is displayed — I should see an "Events" heading
+- [x] CTA banner with reserve button — I should see "Reserve Now" text
 - [ ] Footer has newsletter form — I should see a newsletter email input
 - [ ] Newsletter form clears on submit — the email input should be cleared

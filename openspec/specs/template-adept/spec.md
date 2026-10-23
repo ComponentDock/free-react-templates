@@ -136,13 +136,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation — the navbar displays links for Home, Projects, Process, Testimonials, Services, Pricing, and Contact
-- [ ] Hero Section — the hero displays the heading "We Do Awesome Things"
-- [ ] About Section — the heading "Love Our Works" is displayed
-- [ ] Projects Gallery — the heading "Our Projects" is displayed
-- [ ] Process Steps — the heading "Our Approach" is displayed
-- [ ] Testimonials — the heading "Testimonials" is displayed
-- [ ] Services Grid — the heading "Services" is displayed
-- [ ] Pricing Tiers — the heading "Choose Your Plan" is displayed
-- [ ] Contact Form — the heading "Contact Us" is displayed
+- [x] Hero Section — the hero displays the heading "We Do Awesome Things"
+- [x] About Section — the heading "Love Our Works" is displayed
+- [x] Projects Gallery — the heading "Our Projects" is displayed
+- [x] Process Steps — the heading "Our Approach" is displayed
+- [x] Testimonials — the heading "Testimonials" is displayed
+- [x] Services Grid — the heading "Services" is displayed
+- [x] Pricing Tiers — the heading "Choose Your Plan" is displayed
+- [x] Contact Form — the heading "Contact Us" is displayed

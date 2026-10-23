@@ -196,21 +196,21 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Page displays "Register Wizard" heading in white, uppercase, bold
+- [x] Page displays "Register Wizard" heading in white, uppercase, bold
 - [ ] Full-page background image covers the viewport (use Picsum placeholder)
 - [ ] White card with rounded corners and drop shadow is centered
 - [ ] Four step tabs displayed horizontally: username, email, password, confirm password
 - [ ] Active step tab has blue (#3155cc) background with bright blue (#3d6aff) circle
 - [ ] Inactive step tabs have gray (#999) background with dark gray (#666) circle
 - [ ] Each step shows a pill-shaped input field with rounded corners (25px)
-- [ ] "next step" / "Confirm" button is flush-right inside the input (pill + button combo)
+- [x] "next step" / "Confirm" button is flush-right inside the input (pill + button combo)
 - [ ] Button background is #3155cc, hover is #1d41b8
 - [ ] Step navigation advances one step at a time with validation
-- [ ] Final step button text reads "Confirm"
-- [ ] Password fields use type="password" for masking
+- [x] Final step button text reads "Confirm"
+- [x] Password fields use type="password" for masking
 - [ ] Responsive: tabs stack vertically below 768px
-- [ ] Footer links to https://www.componentdock.com/ labeled "Component Dock"
+- [x] Footer links to https://www.componentdock.com/ labeled "Component Dock"
 - [ ] Font is Lato (loaded via Google Fonts)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

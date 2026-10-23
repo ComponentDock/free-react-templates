@@ -304,7 +304,7 @@ and a document title.
 - [ ] Classes slider with previous/next navigation
 - [ ] Placeholder images seeded (`picsum.photos/seed/fitlane-<n>/<w>/<h>`);
       no copied assets
-- [ ] Footer links to `https://www.componentdock.com/`
+- [x] Footer links to `https://www.componentdock.com/`
 - [ ] No references to the original source template name in app code
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` + surge URL) —
       NOT by the prep stream

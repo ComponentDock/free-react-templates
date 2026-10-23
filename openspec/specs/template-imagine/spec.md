@@ -417,4 +417,4 @@ Dock (`https://www.componentdock.com/`) instead.
       ALL THREE TEMPLATES.md Creative Agency 2 rows (lines 368, 961, 1457)
       marked `[x]` with the same surge URL at bookkeeping time (one
       recreation covers all dup rows)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -239,8 +239,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Centered white card with rounded corners and drop shadow
 - [ ] Warm off-white/beige textured background
 - [ ] Responsive: 2-column on desktop, single column on mobile
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code (provenance only in spec)
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code (provenance only in spec)
 - [ ] All placeholder images use picsum.photos
 - [ ] Typography: system sans-serif, clean and modern
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

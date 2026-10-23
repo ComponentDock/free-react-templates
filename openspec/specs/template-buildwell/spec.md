@@ -217,8 +217,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Accordion FAQ is interactive (expand/collapse)
 - [ ] Newsletter form in Newsletter section
 - [ ] Footer links to Component Dock
-- [ ] No references to ColorLib in any app source files
+- [x] No references to ColorLib in any app source files
 - [ ] Placeholder images via `picsum.photos/seed/buildwell-<n>/`
 - [ ] Tests at 100% coverage (lines, functions, branches, statements)
 - [ ] `npm run verify:app buildwell` passes
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -126,20 +126,20 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/wristly` exists; package `@free-react-templates/wristly`
-- [ ] `public/CNAME` = `wristly.free.componentdock.com`
-- [ ] `homepage` = `https://wristly.free.componentdock.com`
-- [ ] No `colorlib.com` strings in `apps/wristly`
-- [ ] Footer links "Component Dock" → https://www.componentdock.com/
+- [x] `apps/wristly` exists; package `@free-react-templates/wristly`
+- [x] `public/CNAME` = `wristly.free.componentdock.com`
+- [x] `homepage` = `https://wristly.free.componentdock.com`
+- [x] No `colorlib.com` strings in `apps/wristly`
+- [x] Footer links "Component Dock" → https://www.componentdock.com/
 - [ ] 100% coverage via Vitest + Testing Library
 - [ ] `scripts/verify-app.sh wristly` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page composition — The system render all sections in order with Poppins font, centered content, and proper spacing
-- [ ] Navbar — The system render a sticky navbar with "Wristly" logo and 6 nav links
+- [x] Navbar — The system render a sticky navbar with "Wristly" logo and 6 nav links
 - [ ] Hero — The system render a hero with dark gradient bg, headline, subtitle, and gradient pill CTA
 - [ ] About section — Split layout: image left, text right with heading, paragraph, and CTA
 - [ ] Features — 4 feature cards with icons in a responsive grid around a central product image
 - [ ] Services — 6 service cards in a 3×2 grid with lucide-react icons
-- [ ] Products — Dark bg section with 4 product cards: image, name, price, "Pre Order" button
+- [x] Products — Dark bg section with 4 product cards: image, name, price, "Pre Order" button
 - [ ] Reviews — 3 reviewer cards with name, text, and star ratings (lucide-react Star icon)
 - [ ] FAQ accordion — 4 FAQ items with expand/collapse toggle using aria-expanded

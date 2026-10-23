@@ -280,11 +280,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Three notification rows in order with avatars, green presence dots,
       names, actions, "10 min ago" timestamps; 1px `rgba(0,0,0,.05)` row
       separators
-- [ ] "View All" centered, uppercase, `#726df3`, with right arrow
-- [ ] Footer links `https://www.componentdock.com/`
-- [ ] No ColorLib references in any app file (provenance only in spec /
+- [x] "View All" centered, uppercase, `#726df3`, with right arrow
+- [x] Footer links `https://www.componentdock.com/`
+- [x] No ColorLib references in any app file (provenance only in spec /
       TEMPLATES.md / PR)
 - [ ] Placeholder avatars are deterministic (`picsum.photos/seed/chime-*`);
       fonts via Google Fonts `<link>`; icons from lucide-react
 - [ ] `docs/templates/chime/` consulted for implementation notes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

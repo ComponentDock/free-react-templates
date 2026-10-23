@@ -456,5 +456,5 @@ Dock (`https://www.componentdock.com/`) instead.
       by implementer at ship time (mark ALL FOUR "Ogani" rows: line 468
       Bootstrap, line 1116 Business, line 1594 Ecommerce, line 1790 Food
       Drinks)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

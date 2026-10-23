@@ -366,7 +366,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-menuribbon/spec.md` validated with `npm run spec:validate`
-- [ ] `apps/menuribbon` scaffolded from the simplest existing app, package renamed
+- [x] `apps/menuribbon` scaffolded from the simplest existing app, package renamed
       to `@free-react-templates/menuribbon`, `homepage` +
       `public/CNAME` = `menuribbon.free.componentdock.com`
 - [ ] `npm install` at the repo root; `grep -c "free-react-templates/menuribbon"
@@ -398,6 +398,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All four close paths work (glyph, outside click, `Escape`, resize > 768 px)
 - [ ] Hero band is `100vh`, cover-cropped, `center center`, no text
 - [ ] 100 % coverage on `npm run verify:app menuribbon`; no `--no-verify` bypass
-- [ ] No ColorLib reference in `apps/menuribbon/`; footer links Component Dock
+- [x] No ColorLib reference in `apps/menuribbon/`; footer links Component Dock
 - [ ] Shipped via PR on `feat/template-menuribbon`, squash-merged immediately
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

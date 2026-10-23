@@ -114,10 +114,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer renders with brand logo — a link with text "Baseplate" is visible in the footer
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer renders with brand logo — a link with text "Baseplate" is visible in the footer
 - [ ] Social media icons render with brand colors — links for Facebook, Twitter, Instagram, Behance, Dribbble, and YouTube are visible
-- [ ] Navigation links render in two columns — links for "Privacy" and "Policy" are visible
+- [x] Navigation links render in two columns — links for "Privacy" and "Policy" are visible
 - [ ] Copyright notice renders — a copyright notice containing the current year is visible
 - [ ] Footer has white background — the footer element has a white background class
 - [ ] Social icons have brand colors — the Facebook icon link has background color #3b579b

@@ -180,17 +180,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] "Sign Up #01" title above card
 - [ ] Green circle icon with pencil at card top
-- [ ] "Create Your Account" heading centered
+- [x] "Create Your Account" heading centered
 - [ ] FULL NAME input with green uppercase label
 - [ ] EMAIL ADDRESS input with green uppercase label
 - [ ] PASSWORD input with green uppercase label and eye toggle
 - [ ] Password visibility toggle works (show/hide)
 - [ ] Terms checkbox with "I Agree All Statements In Terms Of Service"
-- [ ] Full-width mint green "Sign Up" button
+- [x] Full-width mint green "Sign Up" button
 - [ ] "I'm already a member! Sign In" text with green link
 - [ ] Form validation (required fields)
 - [ ] Responsive: card adapts to mobile/desktop
-- [ ] Footer links to `https://www.componentdock.com/` ("Component Dock")
-- [ ] No ColorLib references in app code
+- [x] Footer links to `https://www.componentdock.com/` ("Component Dock")
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

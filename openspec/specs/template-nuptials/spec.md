@@ -416,7 +416,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-nuptials`.
-- [ ] Typecheck, lint, and vitest with 100% coverage for `apps/nuptials`.
+- [x] Typecheck, lint, and vitest with 100% coverage for `apps/nuptials`.
 - [ ] Production build succeeds (`npm run build --workspace=@free-react-templates/nuptials`).
 - [ ] Every section in the section order above is present, in order, on one page.
 - [ ] Brand color #c931ff is in `@theme` and used via Tailwind classes.
@@ -431,7 +431,7 @@ Dock (`https://www.componentdock.com/`) instead.
       writes it with its own inline `document.write(new Date().getFullYear())`)
       and links **"Component Dock"** → https://www.componentdock.com/ — no
       `colorlib` attribution, no hardcoded year.
-- [ ] No ColorLib assets copied (all images picsum-seeded, Poppins via link
+- [x] No ColorLib assets copied (all images picsum-seeded, Poppins via link
       with axes `100;200;300;400;500;600;700`).
 - [ ] Host layer excluded from the app: the served reference's injected
       `<meta name="robots" content="noindex, nofollow">` + `<link
@@ -447,4 +447,4 @@ Dock (`https://www.componentdock.com/`) instead.
       region, decorative media is `aria-hidden`, meaningful photos have
       non-empty `alt`.
 - [ ] TEMPLATES.md line 3105 (**Wedding**) marked `[x]` after merge with surge URL (do NOT touch lines 235 / 3109 — those are `wedlock`, already shipped).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

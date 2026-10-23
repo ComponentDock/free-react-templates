@@ -167,10 +167,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar displays contact information — the top bar shows the phone number "+880166 253 232"
-- [ ] Navbar provides navigation and CTA — the navbar displays the "Millstone" logo
-- [ ] Hero section displays industrial solutions heading — the hero displays "Industry Solutions!" as the main heading
+- [x] Navbar provides navigation and CTA — the navbar displays the "Millstone" logo
+- [x] Hero section displays industrial solutions heading — the hero displays "Industry Solutions!" as the main heading
 - [ ] Services section shows 3 service cards — 3 service cards are displayed
-- [ ] About section displays company information — the heading "Safe Industry Solutions" is visible
+- [x] About section displays company information — the heading "Safe Industry Solutions" is visible
 - [ ] Mission section shows 4 value cards — 4 mission cards are displayed
 - [ ] Team section shows 5 team members — 5 team member cards are displayed
-- [ ] CTA section drives contact — the heading "Want To Work With Us?" is visible
+- [x] CTA section drives contact — the heading "Want To Work With Us?" is visible

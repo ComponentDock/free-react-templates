@@ -394,7 +394,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Section order matches the reference 1:1 (top bar → navbar → hero → cause strip → Latest Causes → Why Choose Us → Latest Event → Donate Now → CTA strip → footer)
 - [ ] Design tokens in `@theme` (brand green #00a651, dark slate #21323b, text #364d59, red #dc3545, yellow #ffc107, light #f6f5f5, footer #c9ccd4, Roboto + Mansalva stacks)
 - [ ] Top bar: green #00a651, links Home / Events / Become A Volunteer + 2 social icons, hidden on mobile
-- [ ] Navbar: dark slate #21323b, "Benefact" wordmark, 5 white links, mobile hamburger
+- [x] Navbar: dark slate #21323b, "Benefact" wordmark, 5 white links, mobile hamburger
 - [ ] Hero: 100vh, static centered caption (Mansalva headline + square green Donate Now button), 3 rotating background photos, dark overlay
 - [ ] Cause strip: 3 × 300px cards overlapping hero, red/yellow/green tints (Livelihood / Natural Remedies / New Class Rooms), white script titles bottom-left, stack on mobile
 - [ ] Latest Causes: heading + copy row, 3 cards with 80% progress bars (red/green/yellow fills), badges (School/Health/Livelihood), "$32,919" green amount, avatar + "James Smith"
@@ -403,7 +403,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Donate Now: green overlay photo section, white card form (Name, Email, Amount in dollar), validation errors
 - [ ] CTA strip: bg-light #f6f5f5, Mansalva heading, right green Donate Now button
 - [ ] Footer: #c9ccd4, About Us + Features widgets, Subscribe form with green button, Follow Us social icons, Component Dock credit
-- [ ] Document title "Benefact — Charity Template"
+- [x] Document title "Benefact — Charity Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 404 (Bootstrap) and line 1269 (Charity)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

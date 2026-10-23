@@ -165,8 +165,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Renders the main heading and subtitle — a heading with text "Checkbox #07" is rendered at level 1
-- [ ] Renders all checkbox sections and options — headings for "Profile Settings", "Notifications", and "Privacy" are visible
-- [ ] Checkboxes have correct default states — "Email notifications" is checked
-- [ ] Checkboxes toggle on click — "Enable two-factor authentication" becomes checked
+- [x] Renders all checkbox sections and options — headings for "Profile Settings", "Notifications", and "Privacy" are visible
+- [x] Checkboxes have correct default states — "Email notifications" is checked
+- [x] Checkboxes toggle on click — "Enable two-factor authentication" becomes checked

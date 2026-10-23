@@ -63,6 +63,6 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] R1. Navbar & Header — Feature a clean header with title "Schedura — Date Range Picker" and subtitle
-- [ ] R2. Date Range Picker Form — Centered card layout with two columns for "From" (Start Date) and "To" (End Date)
+- [x] R2. Date Range Picker Form — Centered card layout with two columns for "From" (Start Date) and "To" (End Date)

@@ -447,7 +447,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens from the reference used in `@theme` (brand red
       #fa333f, ink #222222, body #777777, light #f9f9ff, borders #eeeeee /
       #1e233b, muted #cccccc, black #000; Roboto + PT Serif fonts)
-- [ ] Header: transparent over hero, "Iris" wordmark, 6 uppercase white
+- [x] Header: transparent over hero, "Iris" wordmark, 6 uppercase white
       Roboto 500 12px links (Home active), hover/active #fa333f, hover
       dropdowns, fixed solid-black on scroll, mobile hamburger (3 white
       bars → X) + stacked links with bottom borders
@@ -458,10 +458,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Feature rows: 4 alternating photo/text rows, white cards (10px
       radius, ±67px overlap), 42px serif headings, #f9f9ff/#eeeeee
       "Explore Gallery" buttons (hover → red fill + red shadow)
-- [ ] Services: "Services Offered by Us" 42px serif title + 8
+- [x] Services: "Services Offered by Us" 42px serif title + 8
       alternating image/text cells (#f9f9ff text panels, 20px serif
       headings)
-- [ ] Feedback: #f9f9ff rounded panel, "Client's Feedback" 36px serif +
+- [x] Feedback: #f9f9ff rounded panel, "Client's Feedback" 36px serif +
       white shadowed testimonial card with 3 slides (avatar, italic
       quote, name + role)
 - [ ] Instagram: centered white button over 6 equal squares, strip
@@ -474,5 +474,5 @@ Dock (`https://www.componentdock.com/`) instead.
       Google Fonts link; logo as white uppercase text wordmark
 - [ ] README Templates status + TEMPLATES.md Flash lines (400 AND 2447)
       marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

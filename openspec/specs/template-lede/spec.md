@@ -369,5 +369,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero overlays rgba(0,0,0,0.4) with headline + meta absolute bottom-left
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands
 - [ ] README Templates status + BOTH TEMPLATES.md Magazine lines (270 and 2197) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

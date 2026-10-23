@@ -512,5 +512,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description records source (ColorLib Clark), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL FOUR copies
       (lines 359, 2299, 2386, 2710) `[x]` when done.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

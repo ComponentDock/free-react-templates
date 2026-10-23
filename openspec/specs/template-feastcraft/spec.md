@@ -222,16 +222,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Navbar: logo with orange dot, 6 nav links, "Book a table" button, mobile hamburger
-- [ ] Hero: parallax bg, subtitle + heading + description, "Explore now" pill button, social icons
+- [x] Navbar: logo with orange dot, 6 nav links, "Book a table" button, mobile hamburger
+- [x] Hero: parallax bg, subtitle + heading + description, "Explore now" pill button, social icons
 - [ ] Popular Foods: subtitle + heading, 4 category tabs with icons, 2x2 food grid per category
 - [ ] Popular Desserts: 4 dessert cards with image + name + price
 - [ ] Testimonials: parallax bg, carousel with photo + name + title + quote
-- [ ] Photo Galleries: 2x2 image grid, "More Galleries" button, lightbox on click
+- [x] Photo Galleries: 2x2 image grid, "More Galleries" button, lightbox on click
 - [ ] Events: carousel with image + price + title + description + checklist
 - [ ] Book a Table CTA: parallax bg, subtitle + heading + button
 - [ ] Footer: 4 columns (About + Social, Projects, Services, Contact), copyright, Component Dock link
 - [ ] Design tokens: orange #ff5200 accent, Playfair Display headings, Nunito body, #fee2b3 peach bg
 - [ ] Buttons: pill-shaped (border-radius 30px), solid orange primary
-- [ ] No ColorLib references in app code — provenance in spec only
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code — provenance in spec only
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -220,14 +220,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Launch section — the page SHALL show a white full-viewport section with a centered column
-- [ ] Modal shell — a dialog element SHALL be present with `role="dialog"` and `aria-modal="true"
+- [x] Modal shell — a dialog element SHALL be present with `role="dialog"` and `aria-modal="true"
 - [ ] Lock icon — a circular container SHALL be displayed at the top center of the modal
-- [ ] Password protection label — the text "This link is password protected" SHALL be displayed centered below the lock icon
+- [x] Password protection label — the text "This link is password protected" SHALL be displayed centered below the lock icon
 - [ ] Description text — a paragraph SHALL be displayed with placeholder description text
 - [ ] Password input — a password input SHALL be displayed centered below the description
-- [ ] Submit button — a button labeled "Submit" SHALL be displayed centered below the input
-- [ ] Close button — a button with aria-label "Close" SHALL be visible in the top-right corner of the modal
+- [x] Submit button — a button labeled "Submit" SHALL be displayed centered below the input
+- [x] Close button — a button with aria-label "Close" SHALL be visible in the top-right corner of the modal
 - [ ] Dismiss actions — the modal SHALL close
-- [ ] Document title — the document title SHALL be "ModalVault — Password-Protected Modal"
+- [x] Document title — the document title SHALL be "ModalVault — Password-Protected Modal"

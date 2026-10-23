@@ -126,12 +126,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation links — the navbar displays "Tastory" brand and all seven navigation links
-- [ ] Hero section with call-to-action — the hero shows "Welcome To Tastory" heading
-- [ ] About section with story and image — it shows "Our Story" subtitle and "Welcome" heading
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation links — the navbar displays "Tastory" brand and all seven navigation links
+- [x] Hero section with call-to-action — the hero shows "Welcome To Tastory" heading
+- [x] About section with story and image — it shows "Our Story" subtitle and "Welcome" heading
 - [ ] Offers section with cards — three offer cards are visible with titles, images, and prices
 - [ ] Tabbed menu section — the Breakfast tab is active by default
-- [ ] News section with blog cards — three cards are visible with "Read More" links
+- [x] News section with blog cards — three cards are visible with "Read More" links
 - [ ] Gallery section with photo grid — six images are displayed in a grid
 - [ ] Contact section with form — a form with Name, Email, Message inputs and Send Message button is visible

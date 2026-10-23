@@ -160,12 +160,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Font: Josefin Sans loaded from Google Fonts
 - [ ] Brand colors match: black buttons, #979797 accents, #001418 dark teal
 - [ ] Portfolio filter tabs functional (All / Web / Digital / 3D / Brand)
-- [ ] Portfolio hover overlay with "+ See Project" animation
+- [x] Portfolio hover overlay with "+ See Project" animation
 - [ ] Header CTA button styled (rectangular, black bg, white text)
 - [ ] Footer social links present (5 icons)
-- [ ] Footer links to Component Dock (not Colorlib)
-- [ ] No ColorLib references in app code
+- [x] Footer links to Component Dock (not Colorlib)
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos
 - [ ] 100% test coverage
 - [ ] Responsive: hamburger nav on mobile, single-col portfolio
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

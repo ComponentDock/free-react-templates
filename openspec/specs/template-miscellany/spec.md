@@ -243,17 +243,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/miscellany` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/miscellany` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- miscellany` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; brand tokens (#F6490D, #F7AF1D, Roboto, white card overlap -3em) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `miscellany-<n>`, Google Fonts links, lucide icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Miscellany" (bold, uppercase, black)
+- [x] Navigation bar — the navbar SHALL show the site name "Miscellany" (bold, uppercase, black)
 - [ ] Hero slider — each slide SHALL contain a meta line with a category link, a date (e.g. "20 March 2018"), and an author ("By Rich")
 - [ ] Blog grid — each card SHALL contain a photo, an uppercase meta line (category, date, author), a bold 28px title, and an excerpt paragraph
 - [ ] Pagination — a pagination control SHALL show page numbers 1–4 with prev/next arrows and the current page highlighted
-- [ ] Instagram strip — it SHALL contain a heading "Instagram" (small, bold, uppercase)
+- [x] Instagram strip — it SHALL contain a heading "Instagram" (small, bold, uppercase)
 - [ ] Footer — it SHALL show a Navigational column (Home, About Me, Blog, Travel, Lifestyle, Fashion, Health)
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

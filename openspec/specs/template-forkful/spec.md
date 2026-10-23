@@ -192,7 +192,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar — The navigation bar displays the Forkful brand name and links to all major
 - [ ] Hero section — The hero section displays a large background image with a headline and
 - [ ] Welcome section — The welcome section uses a split layout with an image on the left and text

@@ -125,11 +125,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page layout — I see a white card centered horizontally and vertically on a blue background
 - [ ] Card header image — I see a cityscape image inside the card
-- [ ] Registration form heading — I see a heading with text "Registration Info"
-- [ ] Form fields — I see a text input labeled "Name"
-- [ ] Submit button — I see a "Submit" button with a green background
-- [ ] Dark mode toggle — the document root receives the "dark" class
-- [ ] Document title — the document title is "Regcraft — Registration Form Template"
+- [x] Registration form heading — I see a heading with text "Registration Info"
+- [x] Form fields — I see a text input labeled "Name"
+- [x] Submit button — I see a "Submit" button with a green background
+- [x] Dark mode toggle — the document root receives the "dark" class
+- [x] Document title — the document title is "Regcraft — Registration Form Template"

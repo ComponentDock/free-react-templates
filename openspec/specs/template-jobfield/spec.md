@@ -364,12 +364,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/jobfield`
-- [ ] `npm run lint` passes for `apps/jobfield`
+- [x] `npm run typecheck` passes for `apps/jobfield`
+- [x] `npm run lint` passes for `apps/jobfield`
 - [ ] `scripts/verify-app.sh jobfield` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Navbar: wordmark, 6 links, dark-mode toggle, "Post a Job" indigo
+- [x] Navbar: wordmark, 6 links, dark-mode toggle, "Post a Job" indigo
       button, mobile drawer with CTA
 - [ ] Hero: indigo→purple gradient + floating blur circles, emerald "2500+"
       badge, "Find Your Dream Job" headline, sub-paragraph, white search
@@ -377,25 +377,25 @@ Dock (`https://www.componentdock.com/`) instead.
       Filters", trending job links
 - [ ] Stats: 4 animated counters (2,500+ Active Jobs, 500+ Companies, 50K+
       Successful Hires, 4.8 User Rating)
-- [ ] Featured Jobs: "Latest Opportunities" + 6 job cards (logo, title,
+- [x] Featured Jobs: "Latest Opportunities" + 6 job cards (logo, title,
       company, badge, location, salary, posted, tags, Apply Now) + View All
       Jobs / Browse Categories
-- [ ] Categories: "Explore by Category" + 8 cards with distinct hue icon
+- [x] Categories: "Explore by Category" + 8 cards with distinct hue icon
       tiles and counts
-- [ ] Companies: "Companies Hiring Now" + 6 company cards + View All
+- [x] Companies: "Companies Hiring Now" + 6 company cards + View All
       Companies
-- [ ] How It Works: "Your Path to Success" + job-seeker/employer tabs, 3
+- [x] How It Works: "Your Path to Success" + job-seeker/employer tabs, 3
       steps each
-- [ ] Testimonials: "Success Stories" carousel — stars, quote, avatar,
+- [x] Testimonials: "Success Stories" carousel — stars, quote, avatar,
       prev/next + dots
-- [ ] FAQ: "Frequently Asked Questions" accordion — 5 questions, expandable
+- [x] FAQ: "Frequently Asked Questions" accordion — 5 questions, expandable
 - [ ] Job alerts: gradient section, "Never Miss an Opportunity", email form + Get Job Alerts, microcopy
-- [ ] CTA: "Ready to Take the Next Step?" + Find Jobs Now / Post a Job
+- [x] CTA: "Ready to Take the Next Step?" + Find Jobs Now / Post a Job
 - [ ] Footer: bg-gray-900, blurb + contact + socials, 4 columns, bottom bar
       with legal links
 - [ ] Dark mode toggles `.dark` and persists
 - [ ] Cookie-consent dialog + back-to-top floating button
 - [ ] Placeholder images via seeded picsum (`seed/jobfield-<n>/<w>/<h>`)
-- [ ] No copied ColorLib assets; brand indigo #4f46e5 → #4338ca in `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No copied ColorLib assets; brand indigo #4f46e5 → #4338ca in `@theme`
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

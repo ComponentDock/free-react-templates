@@ -105,7 +105,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page sections render in correct order — all 13 sections are present and visible
 - [ ] Navbar provides navigation — the page scrolls to the corresponding section
 - [ ] Hero carousel displays slides — at least one slide with heading text is visible

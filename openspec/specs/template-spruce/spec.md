@@ -194,17 +194,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Top bar announcement strip — the top bar displays announcement text and a "Learn More" link with href="#learn-more"
-- [ ] Sticky navigation bar — the navbar displays the "Spruce" logo, 6 nav links (Home, About, Services, Portfolio, Blog, Contact), and a "Free Quote" button
-- [ ] Hero section — the hero displays "Build your website in record time", an email input, and a "Get Free Quote" submit button
-- [ ] Services section — three service cards are displayed: "Unlimited Components", "Awesome Support", "Responsive Design"
-- [ ] About section — the about section displays the heading "All the features you'd expect" and 3 feature items
-- [ ] Brand logos section — the brand section displays "You'll be in good company", 6 brand placeholders, and a "Meet Our Customers" button
+- [x] Top bar announcement strip — the top bar displays announcement text and a "Learn More" link with href="#learn-more"
+- [x] Sticky navigation bar — the navbar displays the "Spruce" logo, 6 nav links (Home, About, Services, Portfolio, Blog, Contact), and a "Free Quote" button
+- [x] Hero section — the hero displays "Build your website in record time", an email input, and a "Get Free Quote" submit button
+- [x] Services section — three service cards are displayed: "Unlimited Components", "Awesome Support", "Responsive Design"
+- [x] About section — the about section displays the heading "All the features you'd expect" and 3 feature items
+- [x] Brand logos section — the brand section displays "You'll be in good company", 6 brand placeholders, and a "Meet Our Customers" button
 - [ ] FAQ accordion — its answer expands and other items collapse
 - [ ] Pricing section — the price changes from $20 to $05
-- [ ] Testimonials section — the testimonial section displays a quote, author "Bob Frapples", and role "CEO at TechCorp"
+- [x] Testimonials section — the testimonial section displays a quote, author "Bob Frapples", and role "CEO at TechCorp"
 - [ ] Project gallery — 3 project cards are displayed: "Mobile App", "E-Commerce Platform", "Corporate Website"
-- [ ] Call-to-action strip — the CTA displays "Create your amazing website with Spruce" and a "Start Free Trial" button
+- [x] Call-to-action strip — the CTA displays "Create your amazing website with Spruce" and a "Start Free Trial" button
 - [ ] App-level rendering — all sections render in order: TopBar, Navbar, Hero, Services, About, Brands, FAQ, Pricing, Testimonials, Gallery, CTA, Footer

@@ -168,12 +168,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-viewport green background — the page background is solid green (#6ab04c)
 - [ ] Centered white login card — a white (#ffffff) card is visible, centered horizontally and vertically
-- [ ] Username input field — a text input with placeholder "username" is visible
-- [ ] Password input field — a password input with placeholder "password" is visible below the username input
-- [ ] Green login button — a button labeled "LOGIN" is visible below the password input
+- [x] Username input field — a text input with placeholder "username" is visible
+- [x] Password input field — a password input with placeholder "password" is visible below the username input
+- [x] Green login button — a button labeled "LOGIN" is visible below the password input
 - [ ] Registration link — the text "Not registered?" is visible in muted gray (#999999)
 - [ ] No header, no footer, no logo — there is no visible header bar, navigation, or logo
 - [ ] Accessibility — focus moves from username input to password input to login button

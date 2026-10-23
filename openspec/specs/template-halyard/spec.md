@@ -627,7 +627,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/halyard` recreates ColorLib **"Website Menu V10"** (source slug
+- [x] `apps/halyard` recreates ColorLib **"Website Menu V10"** (source slug
       `website-menu-10`, https://colorlib.com/wp/template/website-menu-10/) under the
       new name `halyard`; the registry/`package.json` reads
       `@free-react-templates/halyard`
@@ -686,17 +686,17 @@ Dock (`https://www.componentdock.com/`) instead.
       `cl-collapse`, no drawer sub-lists, no `site-navbar-target` / `main-menu`
       classes, no inert auto margins, no `Roboto` stack, no unreferenced `600`-weight
       font, no `icomoon` subset
-- [ ] Zero `colorlib` / "Website Menu 10" / `website-menu-10` provenance references
+- [x] Zero `colorlib` / "Website Menu 10" / `website-menu-10` provenance references
       anywhere in `apps/halyard` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `quicksand-*.woff2`, no
       `icomoon-subset.woff2`, no `hero_1.jpg`, no inline SVG paths from the preview,
       no `cl-` utility classes, no jQuery/Bootstrap, no copied strings (the six source
       labels and the source's wordmark)
-- [ ] `public/CNAME` = `halyard.free.componentdock.com` and
+- [x] `public/CNAME` = `halyard.free.componentdock.com` and
       `"homepage": "https://halyard.free.componentdock.com"` in
       `apps/halyard/package.json`; `package-lock.json` registers
       `@free-react-templates/halyard`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component Dock")
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component Dock")
       with a computed current year (a documented delta — the source has no footer)
 - [ ] Accessibility: real `button`s with `aria-expanded`/`aria-controls` for the
       hamburger and the drawer's `✕`; `aria-current="page"` on the current row;
@@ -736,4 +736,4 @@ Dock (`https://www.componentdock.com/`) instead.
       `main-menu` classes dropped, the unreferenced `600`-weight font and the 408 B
       `icomoon` subset dropped, reduced-motion handling, `body{height:200vh}` filler
       replaced with real content, and the added footer)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

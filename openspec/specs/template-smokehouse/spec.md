@@ -133,7 +133,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Header: sticky on scroll, logo color switches white → black
 - [ ] Hero: parallax background, heading, play video button, scroll mouse indicator
-- [ ] About: image left, text right, "Read More" button
+- [x] About: image left, text right, "Read More" button
 - [ ] Services: 6 items, 3-column grid, icons + titles + descriptions
 - [ ] Menu: 3 tabs (Breakfast/Lunch/Dinner), 6 items per tab, circular images, prices
 - [ ] Counters: 3 stats with icons and labels, count-up animation
@@ -143,6 +143,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Map section placeholder (Google Maps embed area)
 - [ ] Footer: 4-column layout, social icons, copyright with Component Dock link
 - [ ] Design tokens match: Playfair Display font, #fba83b primary, sharp buttons, dark overlays
-- [ ] No ColorLib references in app code (provenance only in spec)
+- [x] No ColorLib references in app code (provenance only in spec)
 - [ ] All tests pass, 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

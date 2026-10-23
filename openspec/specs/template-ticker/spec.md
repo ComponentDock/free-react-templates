@@ -497,35 +497,35 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/ticker`
-- [ ] `npm run lint` passes for `apps/ticker`
+- [x] `npm run typecheck` passes for `apps/ticker`
+- [x] `npm run lint` passes for `apps/ticker`
 - [ ] `scripts/verify-app.sh ticker` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
 - [ ] Ticker bar: animated font-mono market prices with green/red changes
-- [ ] Navbar: wordmark + 5 links, "Sign in" + gradient "Start Trading",
+- [x] Navbar: wordmark + 5 links, "Sign in" + gradient "Start Trading",
       dark toggle, mobile drawer with aria-expanded
 - [ ] Hero: "Learn to Trade from Millionaire Mentors" (gold gradient span),
       sub, gradient CTA + outline CTA, live badge, avatar rating row; "Live
       Portfolio" glass card with balance, green chart, BTC notification,
       156/73%/2.4 stats
 - [ ] Stats strip: 156 / 73% / 2.4 with the three captions
-- [ ] Markets: "Choose Your Market" — 8 category cards with descriptions
-- [ ] Courses: "Master the Markets" — 5 cards with price/rating/students
-- [ ] Mentors: "Learn from Millionaire Traders" — 4 cards (Krieger, Chen,
+- [x] Markets: "Choose Your Market" — 8 category cards with descriptions
+- [x] Courses: "Master the Markets" — 5 cards with price/rating/students
+- [x] Mentors: "Learn from Millionaire Traders" — 4 cards (Krieger, Chen,
       Williams, Kowalski) with roles
-- [ ] Testimonials: "Traders Who Changed Their Lives" — 3+ cards with
+- [x] Testimonials: "Traders Who Changed Their Lives" — 3+ cards with
       avatars
-- [ ] Pricing: "Invest in Your Trading Future" — Free/Trader/Elite +
+- [x] Pricing: "Invest in Your Trading Future" — Free/Trader/Elite +
       "Need a Custom Solution?" card, Trader highlighted
 - [ ] FAQ: "Common Questions" accordion — 8 Q&As, chevron rotation,
       expand/collapse
-- [ ] CTA: "Ready to Start Your Trading Journey?" + large gradient button
+- [x] CTA: "Ready to Start Your Trading Journey?" + large gradient button
 - [ ] Footer: blurb, Markets/Popular Courses/Company/Legal columns,
       disclaimer, copyright
 - [ ] Dark mode default ON, toggle persists via localStorage
 - [ ] Placeholder images via seeded picsum (`seed/ticker-<n>/<w>/<h>`)
 - [ ] No copied ColorLib assets; amber #CC7800 → #AB5900 gradient in
       `@theme`/utilities
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

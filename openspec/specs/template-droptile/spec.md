@@ -202,14 +202,14 @@ change the footer's own layout or copy beyond the credit line.
 
 ## Verification checklist
 
-- [ ] Dropdown trigger renders with "Dropdown" text and arrow icon
+- [x] Dropdown trigger renders with "Dropdown" text and arrow icon
 - [ ] Trigger text is #888, turns #000 when open
 - [ ] Arrow rotates 180deg when open
 - [ ] Dropdown opens/closes on trigger click with opacity animation
 - [ ] Dropdown closes on outside click
 - [ ] Dropdown closes on Escape key
 - [ ] Three equal-width columns in flex row
-- [ ] Left column: hero image + "PSD Mockups" bold link + "View All Here" muted text
+- [x] Left column: hero image + "PSD Mockups" bold link + "View All Here" muted text
 - [ ] Middle column: 6 category links with counts
 - [ ] Right column: 6 category links with counts
 - [ ] Category links are #000, hover to #e83e8c
@@ -217,5 +217,5 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Mega menu: 20px padding, 33.33% columns
 - [ ] Transition: 0.3s all ease on links
 - [ ] ARIA: aria-expanded, aria-haspopup on trigger
-- [ ] No references to ColorLib in source code
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib in source code
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

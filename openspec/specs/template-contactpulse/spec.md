@@ -147,8 +147,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page layout — the page background SHALL be a full-page gradient transitioning from
 - [ ] Form fields — "YOUR NAME *" label SHALL be displayed above two side-by-side inputs
 - [ ] Field validation indicators — a green checkmark icon SHALL appear to the right of the field
-- [ ] Submit button — a "Submit →" button SHALL be displayed at the bottom of the form,
+- [x] Submit button — a "Submit →" button SHALL be displayed at the bottom of the form,

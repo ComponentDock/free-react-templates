@@ -712,7 +712,7 @@ Dock (`https://www.componentdock.com/`) instead.
   `16 px` bottom margin → centred circles with a `20 px` bottom margin); at 768–991 px it stays
   **78.4 px** with the circles centred (`margin:0 auto`) and the search clamped to its column
   (204 px at 768, 261 px at 991)
-- [ ] Zero `colorlib` / "Website Menu V17" / `website-menu-17` strings in `apps/mizzen` (comments
+- [x] Zero `colorlib` / "Website Menu V17" / `website-menu-17` strings in `apps/mizzen` (comments
   included); none of the source's row labels, its `Logistica`/`Architecture Agency` wordmark, its
   four placeholder item strings or its `Website menu #07` heading reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `roboto-*.woff2` (all eight are dead —
@@ -736,4 +736,4 @@ Dock (`https://www.componentdock.com/`) instead.
   attribution present
 - [ ] Squash-merge the PR, then mark the TEMPLATES.md `Website Menu 17` item `[x]` with the live
   `https://mizzen.free.componentdock.com` URL + homepage and run `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

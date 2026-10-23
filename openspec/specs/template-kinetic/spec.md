@@ -118,12 +118,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with mobile menu — the navbar displays "Kinetic" logo text and links: Home, About, Services, Portfolio, Contact
-- [ ] Hero section with gradient background — the hero heading contains "best place on web" and a "Get Started" CTA is visible
-- [ ] Working process section — labels "Researching", "Wireframing", "Prototyping", and "Final Design" are all visible
-- [ ] Features section with cards — 3 feature cards are visible with "Read More" links
-- [ ] Remarkable works portfolio section — 3 portfolio items are visible with "View Project" links
-- [ ] Story section — the heading contains "From the part of beginning" and a CTA links to #contact
-- [ ] Newsletter signup — an email input and "Get Started" button are visible
-- [ ] Contact form — name, email, and message inputs are visible with a "Send Message" button
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with mobile menu — the navbar displays "Kinetic" logo text and links: Home, About, Services, Portfolio, Contact
+- [x] Hero section with gradient background — the hero heading contains "best place on web" and a "Get Started" CTA is visible
+- [x] Working process section — labels "Researching", "Wireframing", "Prototyping", and "Final Design" are all visible
+- [x] Features section with cards — 3 feature cards are visible with "Read More" links
+- [x] Remarkable works portfolio section — 3 portfolio items are visible with "View Project" links
+- [x] Story section — the heading contains "From the part of beginning" and a CTA links to #contact
+- [x] Newsletter signup — an email input and "Get Started" button are visible
+- [x] Contact form — name, email, and message inputs are visible with a "Send Message" button

@@ -406,7 +406,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-homestead`
-- [ ] Scaffold `apps/homestead` (package `@free-react-templates/homestead`,
+- [x] Scaffold `apps/homestead` (package `@free-react-templates/homestead`,
       homepage `https://homestead.free.componentdock.com`, `public/CNAME` =
       `homestead.free.componentdock.com`); workspace registered in
       package-lock.json
@@ -414,8 +414,8 @@ Dock (`https://www.componentdock.com/`) instead.
       100% lines/functions/branches/statements via
       `scripts/verify-app.sh homestead` (typecheck + lint + knip + fallow +
       coverage + build)
-- [ ] No ColorLib reference anywhere in `apps/homestead` (comments included)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib reference anywhere in `apps/homestead` (comments included)
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Placeholder images via `https://picsum.photos/seed/homestead-<n>/<w>/<h>`
       (hero seed screened for a street/houses subject); Google Fonts
       (Nunito Sans) via `<link>`; icons from `lucide-react`
@@ -425,4 +425,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] After merge: mark TEMPLATES.md line 524 `[x]` with surge URL
       `https://homestead.free.componentdock.com`, run `npm run
     readme:status`, push
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

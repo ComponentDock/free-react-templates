@@ -521,14 +521,14 @@ Dock (`https://www.componentdock.com/`) instead.
       font, 5px button radius, section padding `6em 0`.
 - [ ] Hero search tabs switch forms (aria roles: tablist/tab/tabpanel,
       `aria-selected`); search forms do not navigate (no backend).
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets) and the
+- [x] All images are picsum-seeded placeholders (no ColorLib assets) and the
       seeds were verified to render suitable subjects; icons from
       lucide-react / inline SVG brand icons (footer social).
 - [ ] PR description records source (ColorLib Skillhunt), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL THREE copies
       (lines 496, 1166, 2005) `[x]` when done; footer links
       `https://www.componentdock.com/`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

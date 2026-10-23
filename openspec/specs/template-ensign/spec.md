@@ -694,7 +694,7 @@ Dock (`https://www.componentdock.com/`) instead.
       items) with `scroll-margin-top` ≥ the bar height; **zero** `href="#"`; images (if
       any) from `https://picsum.photos/seed/ensign-<n>/<w>/<h>`; the page scrolls so the
       non-sticky bar leaves the viewport
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component Dock") with a
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component Dock") with a
       computed current year
 - [ ] Shape language: **`0` radius** on the bar, the CTA (desktop), the trigger and the
       panel; the only rounding is the **`4px`** desktop dropdown and the **`5px`** mobile
@@ -710,11 +710,11 @@ Dock (`https://www.componentdock.com/`) instead.
       declared-but-unrendered 400/700 faces, and the `cl-` namespace itself
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no Roboto woff2 files, no inline
       SVG paths from the preview, no `cl-` utility classes, no jQuery/Bootstrap
-- [ ] Zero `colorlib` / "Website Menu 11" / `website-menu-11` provenance references
+- [x] Zero `colorlib` / "Website Menu 11" / `website-menu-11` provenance references
       anywhere in `apps/ensign` (comments included); none of the source's labels
       (`Home`, `Page`, `About`, `Menu`, `Blog`, `Contact`, `Book a table`, `Page 1`…`Page
       4`), its `Resto` wordmark or its `Website menu #01` heading reused
-- [ ] `public/CNAME` = `ensign.free.componentdock.com` and
+- [x] `public/CNAME` = `ensign.free.componentdock.com` and
       `"homepage": "https://ensign.free.componentdock.com"` in `apps/ensign/package.json`;
       `package-lock.json` registers `@free-react-templates/ensign`
 - [ ] Accessibility: real `button`s with `aria-expanded`/`aria-controls`; `aria-current`
@@ -753,7 +753,7 @@ Dock (`https://www.componentdock.com/`) instead.
       the source has `#fff` on `#fff`, focus management on `Escape`, the dead
       `cl-bg-dark`/`cl-navbar-dark`/Bootstrap-default rules dropped, reduced-motion
       handling, the 371 px filler page replaced by real content, and the added footer)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (built, measured over CDP)
 

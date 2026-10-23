@@ -114,11 +114,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page renders with heading and dropdown — they see a heading "Topic Selector"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page renders with heading and dropdown — they see a heading "Topic Selector"
 - [ ] Dropdown opens and shows options — options Topic 1 through Topic 11 are visible
-- [ ] User can select multiple topics — "Topic 1" is selected
-- [ ] User can deselect topics — "Topic 1" is deselected
+- [x] User can select multiple topics — "Topic 1" is selected
+- [x] User can deselect topics — "Topic 1" is deselected
 - [ ] Select All selects all enabled options — all 11 topics are selected
 - [ ] Clear All clears selections — no topics are selected
 - [ ] Keyboard navigation works — the dropdown opens

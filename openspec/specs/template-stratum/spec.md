@@ -212,10 +212,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top Bar — the top bar shows email, phone number, and social links (Twitter, Instagram)
-- [ ] Sticky Navbar — the navbar shows a logo "Stratum" and nav links (Home, Services, About Us, Press, Testimonials, Blog, Contact)
-- [ ] Hero Slider — 2 slides are displayed with background images, headings, subtext, and "Get in touch" outline-white button
+- [x] Sticky Navbar — the navbar shows a logo "Stratum" and nav links (Home, Services, About Us, Press, Testimonials, Blog, Contact)
+- [x] Hero Slider — 2 slides are displayed with background images, headings, subtext, and "Get in touch" outline-white button
 - [ ] Services — 2 alternating blocks are shown: one with image left + text right, the other reversed
 - [ ] Features Grid — 6 feature cards are shown in a 3-column grid on light background
 - [ ] About / Video Section — a video thumbnail with play button is displayed
@@ -225,4 +225,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Press Section — 3 press articles are listed with date, title, and description
 - [ ] Testimonials — testimonial cards are displayed with a blockquote, circular photo, and name
 - [ ] Blog Section — 2 blog cards are shown in a 2-column layout
-- [ ] Contact Section — a contact form appears with first name, last name, email, message textarea, and "Send Message" button
+- [x] Contact Section — a contact form appears with first name, last name, email, message textarea, and "Send Message" button

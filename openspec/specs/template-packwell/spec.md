@@ -204,5 +204,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All design tokens match the ColorLib reference
 - [ ] Responsive on mobile/tablet/desktop
 - [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

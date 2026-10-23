@@ -332,12 +332,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/typeface` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/typeface` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- typeface` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#6610f2, #8540f5, #510bc4, #3d0894, #262626, #efefef, #e6e6e6, #f7f7f7, #6c757d, #b3b3b3, #000, Josefin Sans + Inconsolata) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `typeface-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
 - [ ] Body frame reproduced (20px padding + 1px #efefef border on a #ccc textured page background)
 - [ ] Slider and carousels implemented with client-side state (fake timers in tests where needed)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

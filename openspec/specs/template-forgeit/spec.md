@@ -252,18 +252,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar renders contact info and social links — the top bar displays a phone number and email address
-- [ ] Navbar renders logo and navigation links — the navbar displays "Forgeit" with a brand-colored period
-- [ ] Hero section displays headline with typed animation — the hero displays "We Love To Build" as the main heading
+- [x] Navbar renders logo and navigation links — the navbar displays "Forgeit" with a brand-colored period
+- [x] Hero section displays headline with typed animation — the hero displays "We Love To Build" as the main heading
 - [ ] Features section shows three feature cards — three feature cards are displayed with numbers 01, 02, 03
-- [ ] Portfolio section shows work gallery — the portfolio section displays "Our Works" as the heading
+- [x] Portfolio section shows work gallery — the portfolio section displays "Our Works" as the heading
 - [ ] Dark feature strip shows capabilities — four feature items are displayed: Strategy, Web Development, Art Direction, Copywriting
-- [ ] Testimonials section shows client quotes — the testimonials section displays "Testimonials" as the heading
-- [ ] Services section shows six service items — the services section displays "Our Services" as the heading
-- [ ] About section shows company info — the about section displays "About Us" heading with a description paragraph
-- [ ] Team section shows team members — the team section displays "Our Team" as the heading
-- [ ] Blog section shows post cards — the blog section displays "Blog" as the heading
-- [ ] Contact section shows form and info — the contact section displays "Contact Us" as the heading
+- [x] Testimonials section shows client quotes — the testimonials section displays "Testimonials" as the heading
+- [x] Services section shows six service items — the services section displays "Our Services" as the heading
+- [x] About section shows company info — the about section displays "About Us" heading with a description paragraph
+- [x] Team section shows team members — the team section displays "Our Team" as the heading
+- [x] Blog section shows post cards — the blog section displays "Blog" as the heading
+- [x] Contact section shows form and info — the contact section displays "Contact Us" as the heading
 - [ ] CTA banner renders full-width call to action — a full-width banner displays "Let's Get Started"
 - [ ] App renders all sections in order — all major sections are rendered in order: TopBar, Navbar, Hero, Features, Portfolio, Dark Feature Strip, Testimonials, Services, About, Team, Blog, Contact, CTA…

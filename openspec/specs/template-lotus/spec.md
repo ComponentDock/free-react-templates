@@ -304,12 +304,12 @@ The system SHALL render all sections in the source's 1:1 order.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec.
-- [ ] App folder `apps/lotus`, package `@free-react-templates/lotus`; NO
+- [x] App folder `apps/lotus`, package `@free-react-templates/lotus`; NO
       reference to ColorLib / "yoga" source name in any app file (provenance
       lives only in this spec, TEMPLATES.md, and the PR).
-- [ ] Footer links https://www.componentdock.com/ ("More templates at
+- [x] Footer links https://www.componentdock.com/ ("More templates at
       Component Dock").
-- [ ] `public/CNAME` = `lotus.free.componentdock.com`; `"homepage"` =
+- [x] `public/CNAME` = `lotus.free.componentdock.com`; `"homepage"` =
       https://lotus.free.componentdock.com.
 - [ ] Brand token `#79efb4` in `@theme`; Quicksand font via Google Fonts
       `<link>` in index.html; body 18px.

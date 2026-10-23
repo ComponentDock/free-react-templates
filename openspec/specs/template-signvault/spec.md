@@ -220,21 +220,21 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Card is centered on light gray (#f5f5f5) background
 - [ ] Card has white background, 16px border-radius, subtle shadow
-- [ ] "Sign Up" heading is left-aligned inside card
-- [ ] Full Name input with "John Doe" placeholder
-- [ ] Email Address input with "johndoe@gmail.com" placeholder
-- [ ] Password input with "Password" placeholder
-- [ ] Confirm Password input with "Confirm Password" placeholder
+- [x] "Sign Up" heading is left-aligned inside card
+- [x] Full Name input with "John Doe" placeholder
+- [x] Email Address input with "johndoe@gmail.com" placeholder
+- [x] Password input with "Password" placeholder
+- [x] Confirm Password input with "Confirm Password" placeholder
 - [ ] Floating labels appear above inputs on focus/fill
 - [ ] Input focus border changes to brand red (#e32249)
 - [ ] Circular 56×56px red submit button with white icon
 - [ ] Submit button overlaps card bottom-right edge
 - [ ] Wave/swoosh decoration at card bottom in light gray
-- [ ] "Already have an account? Sign In" text below card
-- [ ] "Sign In" link is red (#e32249), underlined
+- [x] "Already have an account? Sign In" text below card
+- [x] "Sign In" link is red (#e32249), underlined
 - [ ] Brand red (#e32249) used consistently (button, link, focus)
 - [ ] Font is Poppins (Google Fonts)
 - [ ] Responsive: card takes full width on mobile
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -367,8 +367,8 @@ Dock (`https://www.componentdock.com/`) instead.
       mobile widths (photo band stays 200px, card full-width-ish with margin,
       no horizontal overflow) — verify the card still overlaps the band and
       nothing clips.
-- [ ] No ColorLib strings in any app file; footer links
+- [x] No ColorLib strings in any app file; footer links
       https://www.componentdock.com/; provenance lives only in this spec,
       TEMPLATES.md, and the PR; no source images/fonts shipped (picsum +
       Google Fonts + lucide only).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

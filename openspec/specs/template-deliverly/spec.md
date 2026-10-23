@@ -391,11 +391,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/deliverly` scaffolded from the simplest existing app; package
+- [x] `apps/deliverly` scaffolded from the simplest existing app; package
       renamed to `@free-react-templates/deliverly`; `public/CNAME` =
       `deliverly.free.componentdock.com`; homepage
       `https://deliverly.free.componentdock.com`.
-- [ ] No "colorlib" string anywhere in `apps/deliverly/*` (provenance only
+- [x] No "colorlib" string anywhere in `apps/deliverly/*` (provenance only
       in this spec, TEMPLATES.md, and the PR).
 - [ ] `@theme` tokens: `--color-brand: #61b15a`, `--color-brand-hover:
   #79bd73`, `--color-brand-border: #71b96b`, `--color-brand-active:
@@ -430,4 +430,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Post-merge bookkeeping: mark BOTH TEMPLATES.md "Dusk" rows (line
       ~574 and its duplicate ~986) `[x]` with the live URL and run
       `npm run readme:status`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

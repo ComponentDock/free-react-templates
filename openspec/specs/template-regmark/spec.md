@@ -125,10 +125,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] User Type Selection — "New bee" has aria-pressed="true"
-- [ ] Registration Form Fields — a "Full name" input is present
-- [ ] Terms Agreement — a checkbox labeled "Terms of service" is present
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] User Type Selection — "New bee" has aria-pressed="true"
+- [x] Registration Form Fields — a "Full name" input is present
+- [x] Terms Agreement — a checkbox labeled "Terms of service" is present
 - [ ] Form Submission — a success message appears
-- [ ] Login Link — a "Log in" link is present
-- [ ] Dark Mode — the document root gains the "dark" class
+- [x] Login Link — a "Log in" link is present
+- [x] Dark Mode — the document root gains the "dark" class

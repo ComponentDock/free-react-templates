@@ -191,12 +191,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Hero search form is interactive — the form submits without page navigation
-- [ ] FeaturedAds displays listing cards — four listing cards render with titles "New Black Car", "Own New House",
+- [x] FeaturedAds displays listing cards — four listing cards render with titles "New Black Car", "Own New House",
 - [ ] PopularCategories displays category grid — six categories render: Cars and Vehicles (1,921), Furniture (2,339),
-- [ ] TrendingToday displays listing cards in 2-column grid — four listing cards render including "Own New House" and "New Black Car"
-- [ ] Testimonials carousel navigates correctly — the testimonial author changes from "John Smith" to "Christine Aguilar"
-- [ ] Blog section displays three posts — three posts render with titles "Many People Selling Online",
+- [x] TrendingToday displays listing cards in 2-column grid — four listing cards render including "Own New House" and "New Black Car"
+- [x] Testimonials carousel navigates correctly — the testimonial author changes from "John Smith" to "Christine Aguilar"
+- [x] Blog section displays three posts — three posts render with titles "Many People Selling Online",
 - [ ] Newsletter form is interactive — the form submits without page navigation
 - [ ] Navbar mobile menu toggles — the mobile menu opens showing all nav links

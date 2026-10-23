@@ -97,7 +97,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page renders all sections — the heading "NEW YORK" is visible
-- [ ] Contact details displayed — the address "9757 Aspen Lane South" is visible
-- [ ] Form fields present and functional — a text input with placeholder "Your name" exists
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page renders all sections — the heading "NEW YORK" is visible
+- [x] Contact details displayed — the address "9757 Aspen Lane South" is visible
+- [x] Form fields present and functional — a text input with placeholder "Your name" exists

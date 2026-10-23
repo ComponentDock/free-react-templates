@@ -156,5 +156,5 @@ Footer displays copyright with Component Dock link.
 - [ ] Contact form has transparent inputs with bottom-border styling
 - [ ] Footer links to Component Dock
 - [ ] Responsive: sidebar collapses to hamburger on mobile
-- [ ] No references to ColorLib in app code
+- [x] No references to ColorLib in app code
 - [ ] All images use picsum.photos placeholders

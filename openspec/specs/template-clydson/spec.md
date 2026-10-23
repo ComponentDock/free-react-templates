@@ -172,16 +172,16 @@ The app SHALL NOT contain any references to ColorLib in source files, comments, 
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] Navbar displays navigation — the navbar shows the logo "Clydson." and navigation links for Home, About, Skills, Services, Projects, Blog, Contact
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Navbar displays navigation — the navbar shows the logo "Clydson." and navigation links for Home, About, Skills, Services, Projects, Blog, Contact
 - [ ] Hero section with CTAs — a full-viewport hero section is shown
 - [ ] Counter stats section — 4 stat cards are visible: Project Complete (750), Happy Clients (568), Cups of coffee (478), Years experienced (780)
-- [ ] About section with personal info — "About Me" heading is displayed
+- [x] About section with personal info — "About Me" heading is displayed
 - [ ] Skills section with circular progress — 6 circular progress cards are shown: CSS (95%), HTML (98%), jQuery (68%), Photoshop (92%), WordPress (83%), SEO (95%)
 - [ ] Services section with 8 cards — 8 service cards are shown: Web Design, Web Application, Web Development, Banner Design, Branding, Icon Design, Graphic Design, SEO
-- [ ] CTA banner — "Have a project on your mind." heading is displayed
+- [x] CTA banner — "Have a project on your mind." heading is displayed
 - [ ] Projects gallery — 8 project items are shown in a grid
 - [ ] Testimonials section — a blue background section is displayed
 - [ ] Blog section — 3 blog cards are shown with image, date, author, comments count, title, and excerpt

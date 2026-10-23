@@ -204,7 +204,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Header: transparent, sticky, logo + 6 nav links
 - [ ] Hero: 3-slide slider with white overlay, large heading, date info, pill CTA, dots
-- [ ] Gallery: 2-column split, 6 items total, "View Gallery" buttons, "See All" CTA
+- [x] Gallery: 2-column split, 6 items total, "View Gallery" buttons, "See All" CTA
 - [ ] Blog: light gray bg, 2-column, section title left, 2 blog items right
 - [ ] Footer: dark bg, 4-column, Component Dock link, copyright
 - [ ] Buttons: pill shape (60px radius), transparent, uppercase
@@ -212,4 +212,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Colors match tokens: #081624 dark, #f44336 red, #673ab7 purple, #f6f7f9 light bg, #222222 footer
 - [ ] Font: Lato throughout
 - [ ] 100% test coverage (lines, functions, branches, statements)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -346,8 +346,8 @@ Dock (`https://www.componentdock.com/`) instead.
       Plus Jakarta Sans + Inter, pill buttons, rounded-2xl cards)
 - [ ] Dark mode toggles `.dark` on root; localStorage persistence with
       Storage polyfill in test setup
-- [ ] No ColorLib assets copied; seeded picsum placeholders + lucide icons
+- [x] No ColorLib assets copied; seeded picsum placeholders + lucide icons
 - [ ] PR description includes: source (ColorLib Learnhub), preview URL,
       tokens used, differences (new name, placeholders)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

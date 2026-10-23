@@ -148,11 +148,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar shows the "Career" logo text and links: "For Candidates", "For Employers", "About", "Contact"
-- [ ] Hero search section — the heading "Find Your Dream Job" is displayed
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar shows the "Career" logo text and links: "For Candidates", "For Employers", "About", "Contact"
+- [x] Hero search section — the heading "Find Your Dream Job" is displayed
 - [ ] Popular Categories — 8 category cards are displayed: Accounting/Finance, Automotive, Construction, Telecommunications, Healthcare, Design/Multimedia, Transportation, Restaurant/Food
 - [ ] Recent Jobs — 5 job postings are displayed with title, company, location, salary, and type
 - [ ] Featured Jobs — 4 featured job cards are displayed with title, company, salary, and description
 - [ ] Testimonials — 3 testimonial cards are displayed with name, role, quote, and avatar image
-- [ ] CTA Banner — the heading "Your Dream Job is Waiting" is displayed
+- [x] CTA Banner — the heading "Your Dream Job is Waiting" is displayed

@@ -215,9 +215,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Chips toggle by click and Space; accessible name = label text (hidden
       native input + label for/id)
 - [ ] Icons: lucide-react Plus/Check (no FontAwesome, no copied assets)
-- [ ] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
+- [x] Footer: minimal, links https://www.componentdock.com/ (repo mandate —
       the demo itself has no footer)
 - [ ] `TEMPLATES.md` line 735 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

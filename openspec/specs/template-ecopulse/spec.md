@@ -191,12 +191,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the logo "EcoPulse" is visible in the top-left
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the logo "EcoPulse" is visible in the top-left
 - [ ] Hero slider — a full-width hero image is displayed with a dark overlay
 - [ ] About section — a section with light green background (#EEFFFA) is visible
 - [ ] Services section — three service cards are visible
-- [ ] Support section — a heading "Why You Should Join Us" is visible
+- [x] Support section — a heading "Why You Should Join Us" is visible
 - [ ] Cases section — three case study cards are visible
 - [ ] Blog section — two blog post cards are visible
 - [ ] Mobile responsiveness — the navigation collapses to a hamburger menu

@@ -98,12 +98,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] App workspace `apps/lawguard` created with valid `package.json`, `vite.config.ts`, `index.html`, and `src/`.
+- [x] App workspace `apps/lawguard` created with valid `package.json`, `vite.config.ts`, `index.html`, and `src/`.
 - [ ] `packages/ui` components imported and composed correctly (`cn()` utility used).
 - [ ] Tailwind CSS 4 theme tokens configured matching brand colors (`#037ef3`).
 - [ ] All sections from Solicitor live preview present in exact 1:1 order.
-- [ ] Footer contains mandatory link to `https://www.componentdock.com/`.
-- [ ] `public/CNAME` set to `lawguard.free.componentdock.com`.
+- [x] Footer contains mandatory link to `https://www.componentdock.com/`.
+- [x] `public/CNAME` set to `lawguard.free.componentdock.com`.
 - [ ] Vitest unit tests implemented with 100% coverage across lines, functions, branches, and statements.
 - [ ] `npm run verify:app lawguard` passes all checks (typecheck, lint, coverage, build).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

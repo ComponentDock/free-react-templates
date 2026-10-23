@@ -596,4 +596,4 @@ Dock (`https://www.componentdock.com/`) instead.
       tokens used, what differs (renames, placeholder images,
       tiny-slider/glightbox→client-side state, paraphrased copy incl.
       "Sport Nutriotionists" typo fix, "203 Fake St." address).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

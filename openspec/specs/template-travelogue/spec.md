@@ -234,20 +234,20 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Navbar renders with "Travelogue" site name and Home link
+- [x] Navbar renders with "Travelogue" site name and Home link
 - [ ] Hero displays full-viewport background with overlay, heading, CTA, arrows
 - [ ] Destinations section displays card grid with images and descriptions
 - [ ] Features section displays icon cards with titles and descriptions
 - [ ] Popular trips section displays trip cards with pricing
 - [ ] Testimonials section displays customer quotes
 - [ ] Newsletter section displays email input and subscribe button
-- [ ] Footer displays Component Dock link (https://www.componentdock.com/)
+- [x] Footer displays Component Dock link (https://www.componentdock.com/)
 - [ ] Dark mode toggle works and persists across reloads
 - [ ] All images use picsum-seeded placeholders
 - [ ] Google Fonts loaded via <link> in index.html
-- [ ] No ColorLib references in app code (comments, strings, data)
+- [x] No ColorLib references in app code (comments, strings, data)
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] TypeCheck passes with strict TypeScript
 - [ ] Lint passes (oxlint + prettier)
 - [ ] Build succeeds (vite build)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

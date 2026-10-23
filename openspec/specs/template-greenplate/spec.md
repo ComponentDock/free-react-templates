@@ -181,14 +181,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top Bar — the top bar displays a phone number, email address, and delivery information
-- [ ] Navigation Bar — the navbar shows the brand name "Greenplate"
-- [ ] Hero Section — a heading "We serve Fresh Vegetables & Fruits" is displayed
+- [x] Navigation Bar — the navbar shows the brand name "Greenplate"
+- [x] Hero Section — a heading "We serve Fresh Vegetables & Fruits" is displayed
 - [ ] Features Section — 4 feature cards are displayed
-- [ ] Categories Section — a "Vegetables" hero card is shown
+- [x] Categories Section — a "Vegetables" hero card is shown
 - [ ] Products Section — 8 product cards are displayed
-- [ ] Deal of the Day — "Deal of the day" heading is shown
-- [ ] Testimonials — "Our satisfied customer says" heading is shown
+- [x] Deal of the Day — "Deal of the day" heading is shown
+- [x] Testimonials — "Our satisfied customer says" heading is shown
 - [ ] Partners — 5 partner placeholder images are shown
-- [ ] Newsletter — a "Subscribe to our Newsletter" heading is shown
+- [x] Newsletter — a "Subscribe to our Newsletter" heading is shown

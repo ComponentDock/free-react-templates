@@ -447,7 +447,7 @@ Dock (`https://www.componentdock.com/`) instead.
       100% coverage tests + build)
 - [ ] Document title "Borough — Directory & Listing"; main + nav + footer
       landmarks
-- [ ] Navbar: transparent over hero, brand "Borough" + "Directory and
+- [x] Navbar: transparent over hero, brand "Borough" + "Directory and
       Listing" tagline, Home/About/Listing/Blog/Contact (13px 700 uppercase
       ls-2px), active Home in `#ff414d`, red "Add Listing" button, "Menu"
       toggler below lg
@@ -468,7 +468,7 @@ Dock (`https://www.componentdock.com/`) instead.
       Theater/Theater/Sports/Games/Places
 - [ ] About: subheading + h2, two paragraphs, 4 counters (50/210/450/100,
       40px 600 black) animating on scroll, labels per source
-- [ ] Testimonial: "Happy People" carousel, 1-per-view, 45px red quote
+- [x] Testimonial: "Happy People" carousel, 1-per-view, 45px red quote
       circle, avatar + Roger Scott / Marketing Manager, labeled dots
 - [ ] How It Works: `#151c26` dark band, white h2 + red subheading, 600px
       video poster with pulsing white 80px play circle, 4 `#f0f4f7` step
@@ -484,9 +484,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Images: picsum placeholders (`https://picsum.photos/seed/borough-<n>/…`)
       for hero, listing cards, intro, video poster, blog, avatars — NO
       ColorLib assets
-- [ ] NO ColorLib reference anywhere in `apps/borough` (provenance lives
+- [x] NO ColorLib reference anywhere in `apps/borough` (provenance lives
       only here + TEMPLATES.md + PR)
 - [ ] TEMPLATES.md bookkeeping: BOTH Directone rows (lines 573 AND 1525) →
       `[x]` + surge URL `https://borough.free.componentdock.com` +
       `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

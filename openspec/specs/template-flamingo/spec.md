@@ -329,10 +329,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/flamingo`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/flamingo`
       (`scripts/verify-app.sh flamingo` in FAST_MODE; full `npm run gate`
       in CI).
-- [ ] Visual fidelity: header (script "Flamingo" wordmark centered on
+- [x] Visual fidelity: header (script "Flamingo" wordmark centered on
       white + magenta `#ff2f92` nav bar with uppercase links, `#cc2675`
       hover, search icon, hamburger), hero (4 featured cards: photo +
       purple overlay `rgba(42,20,112,0.5)` + pill + headline + excerpt +
@@ -359,5 +359,5 @@ Dock (`https://www.componentdock.com/`) instead.
       URL (https://preview.colorlib.com/theme/fantom/), design tokens, and
       what differs (name, placeholders, paraphrased copy, inner pages not
       recreated).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

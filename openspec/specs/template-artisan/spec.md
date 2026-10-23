@@ -389,19 +389,19 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/artisan` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/artisan` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- artisan` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#e45447, #90acd1, #f9f9ff, #222222, #777777, #e2a599, #715f69, #ffc000, #cccccc, Poppins/Roboto) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `artisan-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib assets copied (picsum seeds `artisan-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar — the header SHALL show the logo on the left (coral #e45447 square
 - [ ] Hero banner — the hero SHALL show a periwinkle (#90acd1) speech bubble labeled
 - [ ] About section — the left column SHALL show a portrait photo (seeded picsum)
-- [ ] Latest works section — the section SHALL show the heading "Latest Works" with the coral
-- [ ] Job history section — the section SHALL show the heading "Job History" with the coral
-- [ ] Service offers section — the section SHALL show the heading "Service Offers" with the coral
+- [x] Latest works section — the section SHALL show the heading "Latest Works" with the coral
+- [x] Job history section — the section SHALL show the heading "Job History" with the coral
+- [x] Service offers section — the section SHALL show the heading "Service Offers" with the coral
 - [ ] Testimonials section — it SHALL show a slide with a quote mark, the author name "Fanny
 - [ ] Contact section — the section SHALL have a coral (#e45447) background
 - [ ] Page composition — the page SHALL compose the Header in the banner landmark, all

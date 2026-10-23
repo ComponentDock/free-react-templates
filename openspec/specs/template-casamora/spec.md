@@ -227,11 +227,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] CTA banner has top border + two-column layout
 - [ ] Footer uses dark background with 4-column grid
 - [ ] Footer links, contact info, newsletter form, and social icons all present
-- [ ] Footer links to Component Dock (not ColorLib)
-- [ ] No ColorLib references in app code (comments, strings, data)
+- [x] Footer links to Component Dock (not ColorLib)
+- [x] No ColorLib references in app code (comments, strings, data)
 - [ ] Uses `picsum.photos` for placeholder images
 - [ ] Google Fonts loaded via `<link>` in index.html
 - [ ] Lucide React icons used for UI icons
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] Casamora template behaviour — the logo "Casamora" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Casamora template behaviour — the logo "Casamora" is visible

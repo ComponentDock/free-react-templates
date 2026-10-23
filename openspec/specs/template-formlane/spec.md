@@ -135,7 +135,7 @@ The card SHALL stack vertically on mobile devices (<=991px).
 - [ ] Floating labels animate up on focus
 - [ ] Focus border turns green (#53C83C) with scaleX animation
 - [ ] Register button: white bg, dark text, 5px radius, hover → gray
-- [ ] Sign In button: same style, label "Sign In"
+- [x] Sign In button: same style, label "Sign In"
 - [ ] Mobile: card stacks vertically at ≤991px
-- [ ] Footer links to Component Dock (https://www.componentdock.com/)
-- [ ] No references to ColorLib in app code
+- [x] Footer links to Component Dock (https://www.componentdock.com/)
+- [x] No references to ColorLib in app code

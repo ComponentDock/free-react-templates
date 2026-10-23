@@ -426,4 +426,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark the "Accordion 04" row, line 642 —
       Bootstrap Accordions category; slug appears once, no dup rows)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

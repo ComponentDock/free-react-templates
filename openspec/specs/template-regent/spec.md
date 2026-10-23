@@ -189,14 +189,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] App renders all major sections — I see a navigation landmark
-- [ ] Navbar displays brand and navigation links — I see the text "Regent"
-- [ ] Hero displays carousel slides — I see the heading "Welcome To Regent"
+- [x] Navbar displays brand and navigation links — I see the text "Regent"
+- [x] Hero displays carousel slides — I see the heading "Welcome To Regent"
 - [ ] Rooms section displays room cards — I see 6 room cards
-- [ ] About section shows hotel description — I see "About Us" heading
+- [x] About section shows hotel description — I see "About Us" heading
 - [ ] Features section displays amenities — I see 8 feature items with icons and labels
-- [ ] Promo banner displays offer — I see "Summer Special" heading
+- [x] Promo banner displays offer — I see "Summer Special" heading
 - [ ] Gallery section shows hotel images — I see 8 gallery images
 - [ ] Events section displays upcoming events — I see 3 event cards with titles and dates
 - [ ] Testimonials section shows guest reviews — I see 3 testimonials with names and quotes

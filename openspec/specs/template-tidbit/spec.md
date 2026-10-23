@@ -336,5 +336,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero/retro cards: image + dark bottom gradient (transparent → rgba(0,0,0,0.8)) + white headline + date; off-canvas mobile menu with dark overlay
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands
 - [ ] README Templates status + ALL THREE TEMPLATES.md Miniblog lines (273, 454, 1100) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

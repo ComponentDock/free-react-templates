@@ -125,7 +125,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Regular dropdown button behavior — a dropdown menu appears with items: Dropdown, Active, Something else here, Separated link
 - [ ] Split dropdown button behavior — the dropdown menu toggles open/closed
 - [ ] Dropup, Dropright, Dropleft positioning — the menu appears above the button

@@ -167,10 +167,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays brand and navigation links — the brand name "TickTock" and all 6 nav links are visible
-- [ ] Hero section displays headline and CTA — the subtitle "Now you can feel the heat" and heading "Smart New Future" are visible
-- [ ] About section displays split layout — the heading, description text, video play button, and "Get Started Now" link are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar displays brand and navigation links — the brand name "TickTock" and all 6 nav links are visible
+- [x] Hero section displays headline and CTA — the subtitle "Now you can feel the heat" and heading "Smart New Future" are visible
+- [x] About section displays split layout — the heading, description text, video play button, and "Get Started Now" link are visible
 - [ ] Features section displays cards and image — 4 feature cards (High Performance, Smart Design, Built to Last, Seamless Connect) are visible
 - [ ] Products section displays cards on dark background — 4 product cards with names and prices are visible
 - [ ] Services section displays grid of service cards — 6 service cards are visible (Expert Technicians, Professional Service, Great Support, Technical Skills, Highly Recommended, Positive Reviews)

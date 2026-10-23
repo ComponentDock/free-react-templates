@@ -169,9 +169,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders with logo and navigation links — the navbar shows "Scout" as the logo text
-- [ ] Hero section with search form — the hero heading contains "Find Nearby"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders with logo and navigation links — the navbar shows "Scout" as the logo text
+- [x] Hero section with search form — the hero heading contains "Find Nearby"
 - [ ] Most Visited Places section — 6 listing cards are displayed
 - [ ] Popular Categories section — 6 category tiles are shown (Hotels, Events, Spa, Stores, Restaurants, Other)
 - [ ] Why Us accordion section — the answer becomes visible

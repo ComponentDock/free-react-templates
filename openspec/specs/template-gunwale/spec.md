@@ -824,7 +824,7 @@ line by reading the code and the tests, and to reproduce every number from
       `rgba(0,0,0,0.7)` text and placeholder, `padding:6px 12px 6px 16px`, `border-radius:0`,
       `box-shadow:none`, **no border of its own**; button **46 × 46** with a **20 px**
       magnifier; **257 px held at every width ≥ 375 px**
-- [ ] Search deltas: real `<form role="search">` + labelled input + submit handler that
+- [x] Search deltas: real `<form role="search">` + labelled input + submit handler that
       prevents the default and shows a status (source: `action="#"`, unlabelled icon button,
       placeholder-only), visible `focus-visible` ring on the input (the source has none),
       and **no horizontal overflow / no bar wrap at 320 px** (the source wraps to 90.72 px
@@ -859,13 +859,13 @@ line by reading the code and the tests, and to reproduce every number from
       dropdown items) with `scroll-margin-top` ≥ the bar height; **zero** `href="#"`; images
       (if any) from `https://picsum.photos/seed/gunwale-<n>/<w>/<h>`; the page scrolls so the
       non-sticky bar leaves the viewport
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component Dock") with a
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component Dock") with a
       computed current year
-- [ ] Zero `colorlib` / "Website Menu 12" / `website-menu-12` / `Gunwale`-as-source
+- [x] Zero `colorlib` / "Website Menu 12" / `website-menu-12` / `Gunwale`-as-source
       references anywhere in `apps/gunwale` (comments included); none of the source's
       strings (`Papermag`, `Magazine`, `Home`, `Page`, `Catalog`, `Blog`, `Contact`, `Page
       1`…`Page 4`, `Search`, `Website menu #02`, `Menu`) reused
-- [ ] `public/CNAME` = `gunwale.free.componentdock.com` and
+- [x] `public/CNAME` = `gunwale.free.componentdock.com` and
       `"homepage": "https://gunwale.free.componentdock.com"` in `apps/gunwale/package.json`;
       `package-lock.json` registers `@free-react-templates/gunwale`
 - [ ] Accessibility: real `button`s with `aria-expanded`/`aria-controls`; `aria-current` on
@@ -907,4 +907,4 @@ line by reading the code and the tests, and to reproduce every number from
       non-wrapping mobile bar below 375 px where the source wraps at 320 px, Google Fonts
       Poppins instead of the eight self-hosted Roboto files, reduced-motion handling, the
       112 px filler page replaced by real content, and the added footer)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

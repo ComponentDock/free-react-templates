@@ -286,4 +286,4 @@ Dock (`https://www.componentdock.com/`) instead.
       overflow).
 - [ ] Gradient overlay: must be blue-to-pink (`#6a82fb` → `#fc5c7d`)
       at 0.7 opacity, NOT a plain black overlay.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

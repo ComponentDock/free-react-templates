@@ -255,10 +255,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog section: 3 cards with image, category, excerpt, date
 - [ ] Footer: 5 columns, dark bg, social icons, Component Dock branding
 - [ ] Responsive: mobile hamburger, stacking grids, scrollable carousels
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
-- [ ] Footer links to componentdock.com
-- [ ] public/CNAME contains modista.free.componentdock.com
+- [x] No ColorLib references in app code (only in spec + TEMPLATES.md)
+- [x] Footer links to componentdock.com
+- [x] public/CNAME contains modista.free.componentdock.com
 - [ ] package.json homepage matches deploy URL
 - [ ] All placeholder images use picsum.photos with deterministic seeds
 - [ ] lucide-react icons replace Font Awesome / Simple Line Icons
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

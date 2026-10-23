@@ -414,7 +414,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-amplify`
-- [ ] Scaffold `apps/amplify` (package `@free-react-templates/amplify`,
+- [x] Scaffold `apps/amplify` (package `@free-react-templates/amplify`,
       homepage `https://amplify.free.componentdock.com`, `public/CNAME` =
       `amplify.free.componentdock.com`); workspace registered in
       package-lock.json
@@ -422,9 +422,9 @@ Dock (`https://www.componentdock.com/`) instead.
       100% lines/functions/branches/statements via
       `scripts/verify-app.sh amplify` (typecheck + lint + knip + fallow +
       coverage + build)
-- [ ] No ColorLib reference anywhere in `apps/amplify` (comments
+- [x] No ColorLib reference anywhere in `apps/amplify` (comments
       included — testimonial/email/footer copy paraphrased)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Placeholder images via `https://picsum.photos/seed/amplify-<n>/<w>/<h>`
       (hero mockup seeds screened for laptop/VR/phone subjects per the
       seed-screening method); Google Fonts (Poppins — Aileron
@@ -437,4 +437,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] After merge: mark TEMPLATES.md line 525 `[x]` with surge URL
       `https://amplify.free.componentdock.com`, run `npm run
     readme:status`, push
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

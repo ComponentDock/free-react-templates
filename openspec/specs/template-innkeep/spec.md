@@ -365,9 +365,9 @@ Dock (`https://www.componentdock.com/`) instead.
       in `index.html`, title "Innkeep — Room Booking Template"
 - [ ] Background photo = seeded picsum (`innkeep-badlands`); icons from
       lucide-react (`Calendar`, `ChevronDown`) — no copied assets
-- [ ] Date inputs are native `<input type="date">`; Check-out ≥ Check-in
+- [x] Date inputs are native `<input type="date">`; Check-out ≥ Check-in
       validation
-- [ ] Adults/Children selects 1–6 with chevron icons; "Children" typo fixed
+- [x] Adults/Children selects 1–6 with chevron icons; "Children" typo fixed
 - [ ] Custom consent checkbox with checkmark; BOOK ROOM hover slide-swap
 - [ ] Submit shows summary / validation messages (zod + react-hook-form
       patterns)
@@ -377,5 +377,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark the "Colorlib Regform 25" row, line
       324 — Booking Forms category)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

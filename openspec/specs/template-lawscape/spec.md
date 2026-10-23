@@ -207,15 +207,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] HeaderTop displays contact information and social links — a dark top bar shows a phone number and email address
-- [ ] Navbar renders with logo and navigation links — the navbar shows the "Lawscape" logo
-- [ ] Hero displays headline and call-to-action — the hero section shows the heading "We Well Understand Your Intention"
+- [x] Navbar renders with logo and navigation links — the navbar shows the "Lawscape" logo
+- [x] Hero displays headline and call-to-action — the hero section shows the heading "We Well Understand Your Intention"
 - [ ] Statistics counter displays four metric cards — four statistics cards are visible with values 35, 1526, 720, 680
-- [ ] About section shows video placeholder and description — the about section has the heading "We Properly Understand Your Purpose"
+- [x] About section shows video placeholder and description — the about section has the heading "We Properly Understand Your Purpose"
 - [ ] Practice areas section shows four area cards — four practice area cards are displayed with titles
 - [ ] Testimonials section renders client reviews — client testimonials are displayed with names and roles
 - [ ] Team section shows four attorney cards — four attorney cards are displayed with names and specializations
-- [ ] CTA section displays evaluation prompt — a "Free Case Evaluation" heading is displayed
+- [x] CTA section displays evaluation prompt — a "Free Case Evaluation" heading is displayed
 - [ ] Blog section shows latest posts — three blog cards are shown with titles, dates, and excerpts
 - [ ] Newsletter section with email subscription form — four columns are shown: About Agency, Navigation Links, Newsletter, InstaFeed

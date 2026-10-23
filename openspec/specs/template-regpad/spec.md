@@ -314,4 +314,4 @@ Dock (`https://www.componentdock.com/`) instead.
       Submit shows hover color change, form mock-submits without network.
 - [ ] Responsive check at 375px (stacked layout, image 400px tall,
       form padded 37px/30px, no overflow).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -197,11 +197,11 @@ in source files within apps/plano/.
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
 - [ ] Navbar renders navigation and dropdown menus — the navbar shows Home, Projects, Pages, Blog, and Contact links
-- [ ] Hero slider displays with overlay and CTA — the hero section shows "Interior Design Solution For Your Business"
+- [x] Hero slider displays with overlay and CTA — the hero section shows "Interior Design Solution For Your Business"
 - [ ] Services strip shows three service columns — Planing, Architecture, and 3D Design columns are visible
 - [ ] Portfolio gallery shows alternating image-text rows — "Our Works" heading is displayed
 - [ ] Skills section shows progress bars — Architecture shows 60%, 3D Design shows 65%, Interior shows 80%

@@ -390,18 +390,18 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `bash scripts/verify-app.sh kreativ` passes (typecheck + lint + 100%
       coverage tests + build, ~2–3 min)
 - [ ] `npm run spec:validate` passes
-- [ ] Header: fixed white/95 blur bar, wordmark "Kreativ" + icon, nav
+- [x] Header: fixed white/95 blur bar, wordmark "Kreativ" + icon, nav
       Work/Services/About/Contact, "Start a Project" pill; mobile hamburger
       works
 - [ ] Hero: badge with star, gradient headline (fuchsia→orange on "Bold
       Digital"), subtext, "View Our Work" primary + "Start a Project"
       outline CTAs, glow blobs, stats row (150+/50+/12/8), Scroll indicator
 - [ ] Awards strip: 4 awards with years on `border-y`
-- [ ] Services on `#F9FAFB`: "What We Do" + 4 cards (gradient icon tile,
+- [x] Services on `#F9FAFB`: "What We Do" + 4 cards (gradient icon tile,
       title, blurb, 4 features, Learn More link, fuchsia hover border/shadow)
 - [ ] Selected Work: 3 project cards (image, category, title, blurb) +
       "View All Projects"
-- [ ] Testimonials on `#F9FAFB`: "What Clients Say" + 3 cards (quote,
+- [x] Testimonials on `#F9FAFB`: "What Clients Say" + 3 cards (quote,
       avatar, name, role)
 - [ ] Contact: "Let's Work Together", 4 info blocks, form (Name, Email,
       Company, Service select, Budget select, Details, Send Message) with
@@ -416,9 +416,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/kreativ`); `grep -c "free-react-templates/kreativ"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://kreativ.free.componentdock.com"`
+- [x] `"homepage": "https://kreativ.free.componentdock.com"`
       in `apps/kreativ/package.json`
 - [ ] PR title: `feat: Kreativ — creative agency website template (ColorLib
     Creativex 3)`; body includes the source URL, preview URL (pages.dev),
       tokens, and the three-copy TEMPLATES.md note
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -267,18 +267,18 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Full-viewport photo background (picsum placeholder, deterministic seed `signum-1`) with `linear-gradient(45deg,#0360ed,#ff5db1)` @ 40% overlay
 - [ ] Centered white 28px page heading above the card ("Sign Up #09" or paraphrase)
 - [ ] Glass card: transparent fill, 1px rgba(255,255,255,0.2) border, 4px radius, 40px padding, centered, md:w-7/12 lg:w-5/12
-- [ ] "Create Your Account" light 22px white heading, centered
+- [x] "Create Your Account" light 22px white heading, centered
 - [ ] Uppercase bold 12px white labels above every field
 - [ ] Pill inputs: John Doe / johndoe@gmail.com / Password / Password (52px, radius 40px, transparent bg, translucent-white border, left padding 40px)
 - [ ] Left icons per field (lucide User / Send / Lock / Lock), white
 - [ ] Eye toggles on both password fields (independent show/hide, lucide Eye/EyeOff, aria-label)
-- [ ] Full-width blue pill "Sign Up" button (`#1089ff`), white text, transparent+blue-text hover
+- [x] Full-width blue pill "Sign Up" button (`#1089ff`), white text, transparent+blue-text hover
 - [ ] "I'm already a member! Sign In" footer line (`#1089ff` link)
 - [ ] Lato loaded via Google Fonts in index.html (weights 300 + 400)
 - [ ] Brand tokens in `@theme` (gradient endpoints, accent `#1089ff`, translucent border)
 - [ ] Placeholder image from picsum.photos (deterministic seed)
 - [ ] Responsive: card centered on mobile, fields full width
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

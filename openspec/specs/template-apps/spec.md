@@ -228,16 +228,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Apps" and links to Home, Service, Features, Pricing, and FAQ
-- [ ] Hero section — it SHALL contain a level-1 heading "The Best App in the Universe"
-- [ ] Categories section — it SHALL contain a heading "Latest News from all categories"
-- [ ] About section — it SHALL contain the heading "We Believe that Interior beautifies the Total Architecture"
-- [ ] Services section — it SHALL contain a heading "Some Features that Made us Unique"
-- [ ] Video band — it SHALL contain the heading "Being unique is the preference"
-- [ ] Pricing section — it SHALL contain a heading "Choose the Perfect Plan for you"
-- [ ] FAQ and stats section — it SHALL contain a heading "Frequently Asked Questions" with at least three expandable questions ("Are your Templates responsive?", "Does it have all the plugin as…
-- [ ] Call-to-action band — it SHALL contain a heading "Download This App Today!" and a blurb
-- [ ] Footer — it SHALL show a "Top Products" link column and a newsletter form with a "Subscribe" button
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Apps" and links to Home, Service, Features, Pricing, and FAQ
+- [x] Hero section — it SHALL contain a level-1 heading "The Best App in the Universe"
+- [x] Categories section — it SHALL contain a heading "Latest News from all categories"
+- [x] About section — it SHALL contain the heading "We Believe that Interior beautifies the Total Architecture"
+- [x] Services section — it SHALL contain a heading "Some Features that Made us Unique"
+- [x] Video band — it SHALL contain the heading "Being unique is the preference"
+- [x] Pricing section — it SHALL contain a heading "Choose the Perfect Plan for you"
+- [x] FAQ and stats section — it SHALL contain a heading "Frequently Asked Questions" with at least three expandable questions ("Are your Templates responsive?", "Does it have all the plugin as…
+- [x] Call-to-action band — it SHALL contain a heading "Download This App Today!" and a blurb
+- [x] Footer — it SHALL show a "Top Products" link column and a newsletter form with a "Subscribe" button
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

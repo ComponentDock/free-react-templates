@@ -188,13 +188,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header SHALL display logo and navigation — the logo shows equalizer-bar icon and "music" text
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header SHALL display logo and navigation — the logo shows equalizer-bar icon and "music" text
 - [ ] Hero section SHALL render a fullscreen slider — a fullscreen background image is displayed
 - [ ] Song section SHALL render an audio player — a parallax background is displayed
 - [ ] Tours section SHALL display tour dates — a promotional card shows background image with year, title, subtitle
 - [ ] App section SHALL promote app downloads — an app screenshot image is displayed
-- [ ] Featured Albums section SHALL render album grid — the heading reads "Featured Albums"
-- [ ] News section SHALL display news cards — the heading reads "Latest News"
-- [ ] Newsletter section SHALL provide subscription form — the heading reads "Subscribe & Follow"
+- [x] Featured Albums section SHALL render album grid — the heading reads "Featured Albums"
+- [x] News section SHALL display news cards — the heading reads "Latest News"
+- [x] Newsletter section SHALL provide subscription form — the heading reads "Subscribe & Follow"

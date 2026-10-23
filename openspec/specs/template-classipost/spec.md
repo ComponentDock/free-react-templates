@@ -99,8 +99,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — the navbar displays links for Home, Ads, About, Blog, and Contact
-- [ ] Hero Section — the hero displays "Largest Classifieds In The World"
+- [x] Hero Section — the hero displays "Largest Classifieds In The World"
 - [ ] Categories Section — six categories are displayed: Real Estate, Books & Magazines, Furniture, Electronics, Cars & Vehicles, Other
-- [ ] Featured Ads Section — the heading "Featured Ads" is displayed
+- [x] Featured Ads Section — the heading "Featured Ads" is displayed

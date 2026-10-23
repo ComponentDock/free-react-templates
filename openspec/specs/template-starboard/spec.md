@@ -443,7 +443,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/starboard` recreates ColorLib **"Website Menu V05"** (source slug
+- [x] `apps/starboard` recreates ColorLib **"Website Menu V05"** (source slug
       `website-menu-05`, https://colorlib.com/wp/template/website-menu-05/) under
       the new name `starboard`; the registry/`package.json` reads
       `@free-react-templates/starboard`
@@ -479,16 +479,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] The five declared targets resolve to real in-band panels with
       `scroll-margin-top` ≥ the header height; **zero** dead `href="#"` links
       remain
-- [ ] Zero `colorlib` / "Website Menu 05" / `website-menu-05` provenance
+- [x] Zero `colorlib` / "Website Menu 05" / `website-menu-05` provenance
       references anywhere in `apps/starboard` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no woff2 files
       (`open-sans-*.woff2`, `icomoon-subset.woff2`), no `hero_1.jpg`, no `cl-`
       utility classes, no jQuery/Bootstrap, no copied strings
-- [ ] `public/CNAME` = `starboard.free.componentdock.com` and
+- [x] `public/CNAME` = `starboard.free.componentdock.com` and
       `"homepage": "https://starboard.free.componentdock.com"` in
       `apps/starboard/package.json`; `package-lock.json` registers
       `@free-react-templates/starboard`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") with a computed current year
 - [ ] Accessibility: toggle has `aria-expanded`/`aria-controls`; the panel is a
       labelled region with focus moved in and returned; every interactive element
@@ -513,4 +513,4 @@ Dock (`https://www.componentdock.com/`) instead.
       page links materialised as labelled panels, one nav source of truth instead
       of a DOM clone, added aria/keyboard states, reduced-motion handling, footer
       attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

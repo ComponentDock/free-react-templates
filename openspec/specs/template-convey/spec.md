@@ -554,13 +554,13 @@ columns, and the repo-standard Component Dock credit.
       navigation/pin, phone, Facebook, Instagram, Twitter/X, Pinterest,
       Check); verify every lucide export with the typeof probe; NO
       fontawesome / themify / icomoon icon fonts
-- [ ] NO assets copied from ColorLib: placeholder images via
+- [x] NO assets copied from ColorLib: placeholder images via
       `https://picsum.photos/seed/<convey>-<n>/<w>/<h>`; hero/video/
       control-band photos subject-verified before the PR
-- [ ] Footer links Component Dock (https://www.componentdock.com/) —
+- [x] Footer links Component Dock (https://www.componentdock.com/) —
       replaces the original "Colorlib" credit; no colorlib.com /
       preview.colorlib.com strings in any app file
-- [ ] TEMPLATES.md: mark ALL THREE "Logistic" rows (lines 601, 1084, 2964) `[x]` + `https://convey.free.componentdock.com` +
+- [x] TEMPLATES.md: mark ALL THREE "Logistic" rows (lines 601, 1084, 2964) `[x]` + `https://convey.free.componentdock.com` +
       readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge workflow green + surge
       URL (convey.free.componentdock.com) returns 200

@@ -170,8 +170,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the brand text "Clearp." is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the brand text "Clearp." is visible
 - [ ] Hero section — the subheading "UI/UX Designer & Developer" is visible
 - [ ] About section — bio details and skill progress bars are displayed
 - [ ] Services section — service cards with icons, titles, and descriptions are shown

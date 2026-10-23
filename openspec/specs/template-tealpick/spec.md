@@ -162,13 +162,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders with correct layout and heading — the heading "Multi-Select #3" is visible
 - [ ] Multiselect dropdown shows name options — the options list appears
-- [ ] Selecting an option creates a tag pill — a teal green tag pill labeled "Joefrey" appears
+- [x] Selecting an option creates a tag pill — a teal green tag pill labeled "Joefrey" appears
 - [ ] Multiple selections are supported — both tag pills are visible
 - [ ] Deselecting via tag remove button — the "Joefrey" tag is removed
-- [ ] Live search filters options — only "Robert" is shown in the filtered list
+- [x] Live search filters options — only "Robert" is shown in the filtered list
 - [ ] Keyboard navigation — focus moves to the next option
 - [ ] Closing the dropdown — the dropdown closes
-- [ ] Accessibility — the combobox has `aria-expanded="false"
+- [x] Accessibility — the combobox has `aria-expanded="false"

@@ -714,12 +714,12 @@ Dock (`https://www.componentdock.com/`) instead.
       `simple-icons` shapes, exactly as the sibling coming-soon apps do); no
       copied assets, wordmark, photo, favicon, font files or CSS; no jQuery, no
       framework, no CDN runtime
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_11` / `WINTER`
+- [x] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_11` / `WINTER`
       references anywhere in `apps/oncoming` (comments included)
-- [ ] App folder `apps/oncoming`, package `@free-react-templates/oncoming`,
+- [x] App folder `apps/oncoming`, package `@free-react-templates/oncoming`,
       `homepage` `https://oncoming.free.componentdock.com`, `public/CNAME`
       `oncoming.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh oncoming` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

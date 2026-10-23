@@ -379,10 +379,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-gantry/spec.md` validated
       (`npm run spec:validate`)
-- [ ] App folder `apps/gantry`, package
+- [x] App folder `apps/gantry`, package
       `@free-react-templates/gantry`, no ColorLib references in app code
       (grep for colorlib/Engineers in apps/gantry)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) —
       `bash scripts/verify-app.sh gantry`
 - [ ] Section order matches the source: header-top + orange navbar →
@@ -412,15 +412,15 @@ Dock (`https://www.componentdock.com/`) instead.
       (name/phone/email/subject + message textarea), transparent
       underline inputs (2px `rgba(255,255,255,0.5)` bottom border, radius
       0), full-width orange "Send Message" button
-- [ ] Our Projects: `#09162a` bg, "Explore Our Recent Projects" +
+- [x] Our Projects: `#09162a` bg, "Explore Our Recent Projects" +
       carousel of 4 cards (photo + hover `rgba(0,0,0,0.7)` overlay +
       category "Factory" + title "Building Refinery"); 3-up desktop /
       stacked mobile
-- [ ] Testimonials: white bg, "What People Says" + 2 blocks (100px
+- [x] Testimonials: white bg, "What People Says" + 2 blocks (100px
       circular photo + 20px bold quote + orange uppercase client name)
 - [ ] News & Updates: `bg-light`, LEFT-aligned heading + 3 cards
       (photo + h3 title + "Posted by Admin In News" meta)
-- [ ] Newsletter: `#ff5e15` band, "Subscribe To Newsletter" + p + input
+- [x] Newsletter: `#ff5e15` band, "Subscribe To Newsletter" + p + input
       (2px white border, radius 0) + black "Subscribe" button
 - [ ] Footer: `#000` bg, 4 columns (brand + p + Learn More / Our Company
       6 / Our Services 3 / Contact 5) + bottom bar with Component Dock
@@ -438,4 +438,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (name, placeholder images, React slider/carousel + mobile nav
       instead of owl-carousel/Bootstrap collapse, Component Dock footer
       credit)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

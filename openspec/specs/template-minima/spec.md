@@ -139,11 +139,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar with responsive mobile menu — all 6 navigation links are visible in the navbar
 - [ ] Hero section with stats and CTA — the "400+" and "21+" stat counters are displayed
 - [ ] About section with services and welcome text — 5 service cards are visible (UI/UX Design, Web Development, Product Design, Mobile Apps, SEO)
-- [ ] Portfolio showcase with alternating layout — 3 portfolio items are visible with "View Portfolio" buttons
+- [x] Portfolio showcase with alternating layout — 3 portfolio items are visible with "View Portfolio" buttons
 - [ ] Testimonials section — 3 testimonial cards with author info are displayed
-- [ ] CTA banner with dark background — the heading "Fill in the brief and get the project estimate" and a "Get Started" button are visible
+- [x] CTA banner with dark background — the heading "Fill in the brief and get the project estimate" and a "Get Started" button are visible
 - [ ] Blog grid with 4 posts — 4 blog cards with titles and metadata are visible

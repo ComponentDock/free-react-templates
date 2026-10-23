@@ -372,9 +372,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-knot/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/knot`, package `@free-react-templates/knot`, no
+- [x] App folder `apps/knot`, package `@free-react-templates/knot`, no
       ColorLib references in app code (grep for colorlib/Sunshine in apps/knot)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh knot`
 - [ ] Section order matches the source: header → hero → countdown → love
       story → gallery → program → RSVP → location → footer
@@ -405,4 +405,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description: source template, preview URL, design tokens, diffs
       (name, placeholder images, countdown target date, RSVP no backend +
       validation, map embed choice, lightbox choice)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

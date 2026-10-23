@@ -435,23 +435,23 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/gavel` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/gavel` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- gavel` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#83b582, #222831, #f8f9fa, Poppins) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `gavel-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib assets copied (picsum seeds `gavel-<n>`, Google Fonts links, lucide icons + inline SVG brand icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar — the navbar SHALL show "Gavel" with a "A Law Firm" tagline on the
 - [ ] Hero section — the hero SHALL show the eyebrow "Product Liability & Personal
 - [ ] Services strip — it SHALL show four items in a 4-column row (stacking on mobile):
 - [ ] About / Welcome section — the left column SHALL show an image with a circular green play
 - [ ] Practice areas section — the section SHALL show the centered green eyebrow "Practice
-- [ ] Attorneys section — the section SHALL show the centered eyebrow "Our Attorney" and
-- [ ] Consultation section — the section SHALL show the eyebrow "Booking an Appointment" and
-- [ ] Case studies section — the section SHALL show the eyebrow "Explore Case Studies" and
-- [ ] Testimonials section — the section SHALL show the centered eyebrow "Testimonial" and
-- [ ] Blog section — the section SHALL show the centered eyebrow "Our Blog" and the
+- [x] Attorneys section — the section SHALL show the centered eyebrow "Our Attorney" and
+- [x] Consultation section — the section SHALL show the eyebrow "Booking an Appointment" and
+- [x] Case studies section — the section SHALL show the eyebrow "Explore Case Studies" and
+- [x] Testimonials section — the section SHALL show the centered eyebrow "Testimonial" and
+- [x] Blog section — the section SHALL show the centered eyebrow "Our Blog" and the
 - [ ] Gallery section — it SHALL render six image tiles in a single 6-column row (grid
 - [ ] Newsletter section — the band SHALL show the white headline "Subscribe to our
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all

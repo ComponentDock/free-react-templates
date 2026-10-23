@@ -648,7 +648,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] App exists at `apps/prologue`, package `@free-react-templates/prologue`,
+- [x] App exists at `apps/prologue`, package `@free-react-templates/prologue`,
       `homepage` `https://prologue.free.componentdock.com`, `public/CNAME`
       `prologue.free.componentdock.com`; `npm install` run at the repo root and
       the lockfile registers the workspace
@@ -723,7 +723,7 @@ Dock (`https://www.componentdock.com/`) instead.
       validation `#c80000`, body text `#666666`, shadow alpha `0.1`/`0.2`,
       scrim `rgba(0,0,0,0.5)`; radii `0px` (bar, field, tab, bubble) and `50%`
       (social circles)
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_14` references anywhere in
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_14` references anywhere in
       `apps/prologue` (comments included)
 - [ ] No copied assets: no `bg01.jpg`, no 35×43 `logo.png`, no favicon, no woff2
       files, no `css/style.css` (including its `all: revert` guard, the
@@ -750,4 +750,4 @@ Dock (`https://www.componentdock.com/`) instead.
       placeholder photo, own wordmark/copy — including the source's misspelled
       caption corrected, lucide icons, an added `aria-label` on the arrow button
       and the Component Dock attribution line)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

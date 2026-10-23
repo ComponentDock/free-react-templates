@@ -183,14 +183,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Page background is light gray (#f5f5f5)
 - [ ] Title heading is centered, dark text, semibold
-- [ ] Pill input: pink/lavender bg (#dfb8e0), fully rounded, placeholder "Search..."
+- [x] Pill input: pink/lavender bg (#dfb8e0), fully rounded, placeholder "Search..."
 - [ ] Circular button: pink/magenta (#c96eb5), white "X" icon, 50×50px
 - [ ] Button overlaps pill's right edge
 - [ ] Button hover darkens to #b55ea1 with smooth transition
 - [ ] Input focus ring in brand pink
 - [ ] Responsive: centered on mobile, pill width adapts
 - [ ] Keyboard: Tab navigates input → button → footer
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

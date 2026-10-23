@@ -58,8 +58,8 @@ The footer SHALL display copyright information and a link to `https://www.compon
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
 - [ ] Datepicker input with calendar popup — the calendar popup becomes visible
 - [ ] Interactive calendar grid with month navigation — it shows the correct number of day buttons with empty cells before the 1st

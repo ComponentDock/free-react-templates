@@ -294,12 +294,12 @@ The system SHALL render all sections in the source's 1:1 order.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec.
-- [ ] App folder `apps/vinyasa`, package `@free-react-templates/vinyasa`; NO
+- [x] App folder `apps/vinyasa`, package `@free-react-templates/vinyasa`; NO
       reference to ColorLib / "yogaflex" source name in any app file
       (provenance lives only in this spec, TEMPLATES.md, and the PR).
-- [ ] Footer links https://www.componentdock.com/ ("More templates at
+- [x] Footer links https://www.componentdock.com/ ("More templates at
       Component Dock").
-- [ ] `public/CNAME` = `vinyasa.free.componentdock.com`; `"homepage"` =
+- [x] `public/CNAME` = `vinyasa.free.componentdock.com`; `"homepage"` =
       https://vinyasa.free.componentdock.com.
 - [ ] Brand token `#0093df` in `@theme`; Roboto via Google Fonts `<link>` in
       index.html; square buttons (no radius) with the -10px 10px 20px shadow.

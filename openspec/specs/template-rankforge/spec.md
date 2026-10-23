@@ -204,13 +204,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — it SHALL show the site name "RankForge" linking to `#home
-- [ ] Hero section — it SHALL display the heading "We Collect High Quality Leads"
-- [ ] What We Do section — it SHALL display the heading "What We Will Do For Your Business"
+- [x] Navigation bar — it SHALL show the site name "RankForge" linking to `#home
+- [x] Hero section — it SHALL display the heading "We Collect High Quality Leads"
+- [x] What We Do section — it SHALL display the heading "What We Will Do For Your Business"
 - [ ] We Create Steps section — it SHALL display the heading about building a successful digital product
-- [ ] Generating Customers section — it SHALL display the heading "Generating New Customers Via Online Mode"
-- [ ] Pricing section — it SHALL display the heading "Choose Your Very Best Pricing Plan"
-- [ ] Portfolio section — it SHALL display the heading "Visit Some Of Our Awesome Stuffs"
-- [ ] Testimonials section — it SHALL display the heading "What Client Say About Us"
-- [ ] Blog/Tips section — it SHALL display the heading "Tips and Tricks From Our Experts"
-- [ ] CTA Banner — it SHALL display the heading "Have project in mind?"
+- [x] Generating Customers section — it SHALL display the heading "Generating New Customers Via Online Mode"
+- [x] Pricing section — it SHALL display the heading "Choose Your Very Best Pricing Plan"
+- [x] Portfolio section — it SHALL display the heading "Visit Some Of Our Awesome Stuffs"
+- [x] Testimonials section — it SHALL display the heading "What Client Say About Us"
+- [x] Blog/Tips section — it SHALL display the heading "Tips and Tricks From Our Experts"
+- [x] CTA Banner — it SHALL display the heading "Have project in mind?"

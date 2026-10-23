@@ -211,4 +211,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Placeholder images use `https://picsum.photos/seed/newsclip-<n>/<w>/<h>`
 - [x] Footer links to https://www.componentdock.com/
 - [x] No "colorlib" strings in app source
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

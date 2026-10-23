@@ -513,7 +513,7 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Intro panels: 3 equal panels (#4e4e4e / #fd5f00 / #a23131) with 2px white inset frame, white uppercase Anton headings, muted paragraphs; stack on mobile
 - [ ] About: fixed-bg image + gold overlay, circular play button on figure, Our Mission + 2 paragraphs, 4 orange Anton counters with underline (3293 / 3298 / 1212 / 392)
 - [ ] Discover: centered heading block + 2 alternating rows with left-aligned mini counters (15/1039 and 15/38)
-- [ ] Donate CTA: gold overlay, white headline, block orange "Donate Now" button (4px radius)
+- [x] Donate CTA: gold overlay, white headline, block orange "Donate Now" button (4px radius)
 - [ ] Causes: 6 cards 3-col grid (grey icon + orange H3 + paragraph), 1-col on mobile
 - [ ] Team: 3 cards, 130px circular avatars, LEGIBLE (dark) names, uppercase grey roles, 3 orange circular social buttons each
 - [ ] Testimonials: gold overlay, 4 quotes (white Georgia italic blockquote, avatar, white name) in a carousel
@@ -522,4 +522,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Footer: #333333 bg, About/Features/Some Paragraph/Subscribe (input + orange Subscribe)/Follow Us (4 social icons)/copyright with credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Anton + Nunito via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Foundation lines (402, 1266 AND 2322) marked `[x]` after merge
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

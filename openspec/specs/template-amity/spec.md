@@ -418,9 +418,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-amity/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/amity`, package `@free-react-templates/amity`, no
+- [x] App folder `apps/amity`, package `@free-react-templates/amity`, no
       ColorLib references in app code (grep for colorlib/The Charity in apps/amity)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh amity`
 - [ ] Section order matches the source: header (top bar + nav) → hero slider
       → icon boxes → welcome → events + featured cause → our causes → milestones
@@ -457,4 +457,4 @@ Dock (`https://www.componentdock.com/`) instead.
       (`preview.colorlib.com/theme/thecharity/` — no-hyphen slug), design
       tokens, diffs (name, placeholder images, slider implementation,
       newsletter no backend + validation)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

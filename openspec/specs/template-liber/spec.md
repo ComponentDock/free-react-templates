@@ -129,10 +129,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — GIVEN** the page loads, When I look at the header, Then I see "Liber" logo and navigation links
-- [ ] Hero — GIVEN** the page loads, When I look at the hero section, Then I see "Author: Travor James", "New Adventure", and a "Buy Now" button
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — GIVEN** the page loads, When I look at the header, Then I see "Liber" logo and navigation links
+- [x] Hero — GIVEN** the page loads, When I look at the hero section, Then I see "Author: Travor James", "New Adventure", and a "Buy Now" button
 - [ ] About — GIVEN** the page loads, When I look at the about section, Then I see the author name, bio text, and portrait image
 - [ ] Features — GIVEN** the page loads, When I look at the features section, Then I see 4 feature cards with icons
 - [ ] Counters — GIVEN** the page loads, When I look at the counters section, Then I see 4 stat values and labels

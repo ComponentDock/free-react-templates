@@ -459,5 +459,5 @@ Dock (`https://www.componentdock.com/`) instead.
       and focus rings
 - [ ] Dark-mode toggle present per repo conventions (dark: variants)
 - [ ] README status table regenerated after merge (`npm run readme:status`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

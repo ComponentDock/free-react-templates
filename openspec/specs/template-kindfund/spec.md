@@ -193,7 +193,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens match the extracted CSS values
 - [ ] Section order matches: top bar → navbar → hero → reasons → latest activities → popular causes → counter → volunteer → news → donation form → footer
 - [ ] Footer has Component Dock attribution link
-- [ ] No ColorLib references in any app code
+- [x] No ColorLib references in any app code
 - [ ] 100% test coverage on all components
 - [ ] `npm run verify:app kindfund` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

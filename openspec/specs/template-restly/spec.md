@@ -500,12 +500,12 @@ Dock (`https://www.componentdock.com/`) instead.
       arrow strip (24px wide × 80px tall, `rgba(255,255,255,0.3)` bg,
       rotated `➜`/ChevronDown, `#333`, 14px, pointer-events-none) at the
       field's right edge (NOT Wingly's floating 32×32 glyph)
-- [ ] "Check availability" button: solid `#8c5d28` bg, white uppercase 18px
+- [x] "Check availability" button: solid `#8c5d28` bg, white uppercase 18px
       weight-700 text, 0.6px letter-spacing, height 80px, full width of its
       4/12 slot, sharp corners, NO hover rule; validates required fields
       (destination/check-in/check-out) and shows a summary line / validation
       messages
-- [ ] Source copy kept verbatim: "Check In" (capital I), "Check out"
+- [x] Source copy kept verbatim: "Check In" (capital I), "Check out"
       (lowercase o), placeholder "Enter Address, zip, city or airport"
 - [ ] Mobile (<768px): 8/2/2 row stacks full width; 4/4/4 row stacks full
       width; button stays full width
@@ -516,5 +516,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

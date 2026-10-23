@@ -463,7 +463,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes for `template-fortis`
 - [ ] `scripts/verify-app.sh fortis` passes (typecheck + lint + vitest 100%
       coverage + build)
-- [ ] Sections in order (1:1 with the source): navbar (brand "Fortis.",
+- [x] Sections in order (1:1 with the source): navbar (brand "Fortis.",
       hamburger-only nav, off-canvas menu with Home/About/Work/Journal/
       Contact, sticky white + shadow + green logo on scroll) → hero
       (photo bg + `rgba(0,0,0,0.7)` overlay, centered "Fortis Web Design
@@ -503,5 +503,5 @@ Dock (`https://www.componentdock.com/`) instead.
       social icons as inline SVG brand icons
 - [ ] Document title "Fortis — Web Design Agency Template"; brand
       "Mighty." → "Fortis." everywhere
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

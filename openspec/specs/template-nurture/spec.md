@@ -230,11 +230,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero has background image with overlay
 - [ ] Feature cards in 3x2 grid
 - [ ] Pricing cards show 3 plans
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Responsive: mobile (375px), tablet (768px), desktop (1200px+)
-- [ ] No ColorLib references in app code
-- [ ] public/CNAME = nurture.free.componentdock.com
-- [ ] package.json homepage = https://nurture.free.componentdock.com
+- [x] No ColorLib references in app code
+- [x] public/CNAME = nurture.free.componentdock.com
+- [x] package.json homepage = https://nurture.free.componentdock.com
 - [ ] Tests pass with 100% coverage
 - [ ] `npm run verify:app` passes for nurture
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

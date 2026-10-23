@@ -182,9 +182,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header with navigation — it SHALL show the "Threadline" logo linking to `/
-- [ ] Hero banner — it SHALL display the "Summer Collection" label
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header with navigation — it SHALL show the "Threadline" logo linking to `/
+- [x] Hero banner — it SHALL display the "Summer Collection" label
 - [ ] Category banners — it SHALL show three category cards
 - [ ] Product tabs — it SHALL display best seller products
 - [ ] Hot deal countdown — the countdown timer SHALL display Days, Hours, Minutes, and Seconds

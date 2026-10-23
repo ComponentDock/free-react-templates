@@ -305,7 +305,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Spec validated: `npm run spec:validate` passes.
-- [ ] App folder `apps/convoke`, package `@free-react-templates/convoke`; no
+- [x] App folder `apps/convoke`, package `@free-react-templates/convoke`; no
       collision with existing apps/specs (checked before prepping).
 - [ ] Section order matches the reference 1:1 (header → hero → countdown →
       welcome → speakers → schedule → register → brands → faq → footer).
@@ -323,5 +323,5 @@ Dock (`https://www.componentdock.com/`) instead.
       gradient hero, React countdown, neutral copyright credit).
 - [ ] TEMPLATES.md lines 532 AND 1690 both marked `[x]` with the surge URL
       after deploy.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

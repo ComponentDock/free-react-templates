@@ -404,11 +404,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Featured products row scrollable/carousel; subscribe form shows a
       success state (no backend, no reload); nav mobile menu
       keyboard-operable.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets) and
+- [x] All images are picsum-seeded placeholders (no ColorLib assets) and
       the hero/collection seeds were verified to render fashion/shoe-like
       subjects; icons from lucide-react / inline SVG.
 - [ ] PR description records source (ColorLib Shoppers), preview URL
       (HTTP 200), tokens, and renames; TEMPLATES.md marks ALL THREE copies
       (lines 493, 1602, 1729) `[x]` when done.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

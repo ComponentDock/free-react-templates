@@ -241,15 +241,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Mocha"
-- [ ] Hero section — it SHALL show the eyebrow "Specialty Coffee Roasters"
-- [ ] Menu section — it SHALL contain a heading "Our Menu"
-- [ ] Story section — it SHALL contain a heading "From Portland, With Love"
-- [ ] Process section — it SHALL contain a heading "From Origin to Cup"
-- [ ] Shop section — it SHALL contain a heading "Take It Home"
-- [ ] Testimonials section — it SHALL contain a heading "What People Are Saying"
-- [ ] Newsletter section — it SHALL contain a heading "Join the Club"
+- [x] Navigation bar — the navbar SHALL show the site name "Mocha"
+- [x] Hero section — it SHALL show the eyebrow "Specialty Coffee Roasters"
+- [x] Menu section — it SHALL contain a heading "Our Menu"
+- [x] Story section — it SHALL contain a heading "From Portland, With Love"
+- [x] Process section — it SHALL contain a heading "From Origin to Cup"
+- [x] Shop section — it SHALL contain a heading "Take It Home"
+- [x] Testimonials section — it SHALL contain a heading "What People Are Saying"
+- [x] Newsletter section — it SHALL contain a heading "Join the Club"
 - [ ] Footer — it SHALL show link columns (Menu, Shop, Company)
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -171,9 +171,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Schedule tabs are interactive (3 days)
 - [ ] Gallery has 4 images with lightbox
 - [ ] Pricing cards show 3 tiers
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
 - [ ] 100% test coverage
 - [ ] Typecheck passes
 - [ ] Build succeeds
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

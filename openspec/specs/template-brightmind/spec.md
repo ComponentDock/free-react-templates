@@ -165,16 +165,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar — the navbar displays "Brightmind" brand and links: Home, About, Courses, Teachers, Blog, Events, Contact
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar — the navbar displays "Brightmind" brand and links: Home, About, Courses, Teachers, Blog, Events, Contact
 - [ ] Hero section — the hero shows the headline "No Nation Can Prosper In Life Without Education"
-- [ ] Search course section — a search input and "See all courses" link are visible
+- [x] Search course section — a search input and "See all courses" link are visible
 - [ ] Services section — three service cards are visible with icons and descriptions
 - [ ] Stats section — the counters show Satisfied Students, Courses Completed, and Expert Advisors
 - [ ] Testimonials section — testimonial cards are visible with quotes and author names
 - [ ] Teachers section — teacher cards are visible with names and subjects
-- [ ] Free trial section — a "Try our free trial course" heading and "Join now!" button are visible
-- [ ] Courses section — course cards are visible with category badges, titles, and "Enroll Now" links
+- [x] Free trial section — a "Try our free trial course" heading and "Join now!" button are visible
+- [x] Courses section — course cards are visible with category badges, titles, and "Enroll Now" links
 - [ ] Blog section — blog post cards are visible with dates, titles, and excerpts
 - [ ] Events section — event cards are visible with dates and titles
-- [ ] Newsletter section — an email input and "Subscribe" button are visible
+- [x] Newsletter section — an email input and "Subscribe" button are visible

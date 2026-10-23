@@ -275,7 +275,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/ochre` exists with package name `@free-react-templates/ochre`
+- [x] `apps/ochre` exists with package name `@free-react-templates/ochre`
 - [ ] `vite.config.ts` registers `injectUiSource()` (see docs/conventions.md)
 - [ ] Fonts Lora (400/700) + Cardo via Google Fonts `<link>` in index.html
 - [ ] Brand orange `#fc4600`, dark `#2a2a2a`, footer `#f7f7f7`, gray
@@ -292,5 +292,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run readme:status` regenerates README Templates status table
 - [ ] PR description states: source template (ColorLib Lifeleck), preview
       URL, design tokens, what differs (rename, picsum placeholders)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

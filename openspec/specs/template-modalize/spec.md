@@ -251,14 +251,14 @@ The system SHALL render a footer with the mandatory Component Dock link.
 - [ ] Overlay click dismisses modal
 - [ ] Escape key dismisses modal
 - [ ] Three social icons render as 40×40px circles above the form
-- [ ] Form has "Create Your Account" heading
+- [x] Form has "Create Your Account" heading
 - [ ] Three fields render with uppercase 12px labels
-- [ ] "Sign Up" button renders blue with rounded corners
+- [x] "Sign Up" button renders blue with rounded corners
 - [ ] "I'm already a member" link renders muted with underline
 - [ ] Footer links to Component Dock
 - [ ] All interactive elements are keyboard accessible
 - [ ] Focus is trapped within the modal when open
 - [ ] Tests pass with 100% coverage
-- [ ] No references to ColorLib anywhere in app code
-- [ ] `public/CNAME` contains `modalize.free.componentdock.com`
-- [ ] `homepage` in package.json is `https://modalize.free.componentdock.com`
+- [x] No references to ColorLib anywhere in app code
+- [x] `public/CNAME` contains `modalize.free.componentdock.com`
+- [x] `homepage` in package.json is `https://modalize.free.componentdock.com`

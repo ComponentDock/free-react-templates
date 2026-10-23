@@ -148,13 +148,13 @@ A Job Portal template with header/nav, hero, top jobs, about and job categories 
 - [ ] Font "DM Sans" loaded via Google Fonts link in `index.html`
 - [ ] Hero has two CTA buttons with correct styles (outlined + filled)
 - [ ] Top Jobs slider shows 6+ category cards with icons
-- [ ] "Remote" sticker badges on some job cards
+- [x] "Remote" sticker badges on some job cards
 - [ ] About section has split layout with image and text
 - [ ] Categories grid shows 6 cards in 3x2 layout
 - [ ] Testimonial slider with avatars and dot navigation
 - [ ] Footer has newsletter subscription form
 - [ ] Footer links to Component Dock
-- [ ] No references to ColorLib anywhere in app code
+- [x] No references to ColorLib anywhere in app code
 - [ ] Placeholder images via `picsum.photos`
 - [ ] Responsive: mobile hamburger menu, stacked layout on small screens
 - [ ] Tests: 100% line/function/branch/statement coverage

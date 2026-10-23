@@ -400,16 +400,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/solo`)
 - [ ] Section order matches the reference 1:1 (header → hero → about → services → facts → portfolio → testimonials → pricing → blog → brands → footer)
 - [ ] Design tokens from the reference used in `@theme` (primary #8490ff, gradient #8490ff→#62bdfc, light band #f9f9ff, body #777777, headings #222222, footer #04091e; Poppins Google Font)
-- [ ] Header: fixed white, scrolled shadow, "Solo" wordmark with primary-color icon, links + Blog/Pages dropdowns
-- [ ] Hero: #f9f9ff split hero, uppercase "This is me" eyebrow, 60px uppercase headline, intro paragraph, gradient "Discover Now" button, framed portrait on the right
-- [ ] About: photo left, "About Me"/"Personal Details" right, two paragraphs + "View Full Details" button
-- [ ] Services: centered "My Offered Services" title, 3 cards (Web Design, Web Development, Photography) with dark icons that invert to gradient on hover
+- [x] Header: fixed white, scrolled shadow, "Solo" wordmark with primary-color icon, links + Blog/Pages dropdowns
+- [x] Hero: #f9f9ff split hero, uppercase "This is me" eyebrow, 60px uppercase headline, intro paragraph, gradient "Discover Now" button, framed portrait on the right
+- [x] About: photo left, "About Me"/"Personal Details" right, two paragraphs + "View Full Details" button
+- [x] Services: centered "My Offered Services" title, 3 cards (Web Design, Web Development, Photography) with dark icons that invert to gradient on hover
 - [ ] Facts: gradient band with 4 count-up statistics
-- [ ] Portfolio: filters (All/Vector/Raster/UI/UX/Printing), 6 items with gradient hover overlay + preview icon, "View More" button
+- [x] Portfolio: filters (All/Vector/Raster/UI/UX/Printing), 6 items with gradient hover overlay + preview icon, "View More" button
 - [ ] Testimonials: #f9f9ff bg, carousel of white quote cards with avatar + name + role
 - [ ] Pricing: 3 cards (01 Economy £199 / 02 Business £299 / 03 Premium £399), hover → gradient + white
 - [ ] Blog: #f9f9ff bg, 3 post cards with author row + meta + "View More"
 - [ ] Brands: gradient band with 6 logo placeholders
 - [ ] Footer: #04091e, About Me + Newsletter + Follow Me widgets, heart-credit to Component Dock
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

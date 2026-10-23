@@ -251,10 +251,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes for this spec.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh odyssey`,
       PR lists source (ColorLib Ruft), preview URL, tokens, and what differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show a paper-plane logo mark and the site name "Odyssey"
-- [ ] Banner hero — it SHALL show a level-1 heading with two lines: "Charter Yacht" and "The Luxury Of Traveling"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show a paper-plane logo mark and the site name "Odyssey"
+- [x] Banner hero — it SHALL show a level-1 heading with two lines: "Charter Yacht" and "The Luxury Of Traveling"
 - [ ] Featured post slider — it SHALL show at least three featured post slides
 - [ ] Blog post list — it SHALL show at least five post items
 - [ ] Sidebar widgets — it SHALL show a search input with a circular purple search button

@@ -230,15 +230,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Bastion" and links to Home, About, Services, Pricing, Portfolio, Blog, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Bastion" and links to Home, About, Services, Pricing, Portfolio, Blog, and Contact
 - [ ] Hero slider — it SHALL show slide 1 with the label "#01 Exterior Building"
 - [ ] Counter band — it SHALL show the labels Finished Projects, Happy Customers, Working Hours, and Cups of Coffee
-- [ ] Services section — it SHALL contain a heading "Services"
-- [ ] Quote call to action — it SHALL show the heading "Get started"
-- [ ] Portfolio section — it SHALL contain a heading "Portfolio"
-- [ ] Testimonials section — it SHALL contain a heading "Clients Says"
+- [x] Services section — it SHALL contain a heading "Services"
+- [x] Quote call to action — it SHALL show the heading "Get started"
+- [x] Portfolio section — it SHALL contain a heading "Portfolio"
+- [x] Testimonials section — it SHALL contain a heading "Clients Says"
 - [ ] Pricing section — it SHALL show three plans: Basic Plan, Standard Plan, and Premium Plan
-- [ ] Footer — it SHALL show a "Contact Us" heading, an email link, and a copyright line
+- [x] Footer — it SHALL show a "Contact Us" heading, an email link, and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -630,7 +630,7 @@ Dock (`https://www.componentdock.com/`) instead.
       Warning/Danger text rows
 - [ ] Images: Rounded Raised / Rounded / Circle / Thumbnail over ONE
       shared picsum image (`flairkit-img-1`)
-- [ ] JS components: native datetime-local picker; "Basic Modal" →
+- [x] JS components: native datetime-local picker; "Basic Modal" →
       centered modal (× / backdrop / Escape close, focus managed);
       4-direction popovers (borderless shadowed cards); 4-direction
       tooltips (white/black shadowed, `aria-describedby`)
@@ -645,13 +645,13 @@ Dock (`https://www.componentdock.com/`) instead.
       icons from `lucide-react` (Home/Heart/Lock/User/Mail replace
       icomoon); no copied assets or CSS; no Bootstrap JS, nouislider,
       datetimepicker, font-awesome/icomoon fonts, or jQuery
-- [ ] Zero `colorlib` / "Regen" / "Regen UI Kit" demo-brand references
+- [x] Zero `colorlib` / "Regen" / "Regen UI Kit" demo-brand references
       anywhere in `apps/flairkit` (comments included)
-- [ ] App folder `apps/flairkit`, package
+- [x] App folder `apps/flairkit`, package
       `@free-react-templates/flairkit`, `homepage`
       `https://flairkit.free.componentdock.com`, `public/CNAME`
       `flairkit.free.componentdock.com`, lockfile registers the
       workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh flairkit` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

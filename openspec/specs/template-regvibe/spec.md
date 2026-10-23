@@ -108,5 +108,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Gradient background and centered card — a gradient background from yellow (#fee140) to pink (#fa709a) is visible
 - [ ] Left panel with hero image and overlay text — a hero image is displayed on the left panel
-- [ ] Registration form with all fields — a "Username" input field is visible
+- [x] Registration form with all fields — a "Username" input field is visible
 - [ ] Form field validation — the email field is required

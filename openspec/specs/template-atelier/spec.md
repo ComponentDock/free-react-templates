@@ -123,11 +123,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with logo, links, and mobile menu — the navbar displays the logo, all navigation links, and the CTA button
-- [ ] Hero section with split layout — the heading "Create, Code, and Published." is visible
+- [x] Hero section with split layout — the heading "Create, Code, and Published." is visible
 - [ ] Achievements statistics section — four stat values are visible: 99.55%, 98,000+, 99.99%, and 1M+
 - [ ] How It Works process steps — three step cards are visible with numbered titles
-- [ ] Services section with checklist — a heading, paragraph, 3 checklist items, and a "Get Started" button are visible
+- [x] Services section with checklist — a heading, paragraph, 3 checklist items, and a "Get Started" button are visible
 - [ ] Testimonial carousel — the first testimonial with author name and role is visible
 - [ ] Blog section with post cards — 5 blog post cards are visible with dates and titles

@@ -139,11 +139,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Right sidebar layout — the right sidebar is visible on the right side of the viewport
-- [ ] Brand header — "Kenitic" is displayed in bold white text at the top
+- [x] Brand header — "Kenitic" is displayed in bold white text at the top
 - [ ] Navigation items — the following navigation items are displayed in order: Home, About, Blog, Services, Contacts
-- [ ] Newsletter section — a "Subscribe for newsletter" heading is displayed below the navigation
+- [x] Newsletter section — a "Subscribe for newsletter" heading is displayed below the navigation
 - [ ] Toggle button — the sidebar collapses or expands
 - [ ] Mountain landscape background — a mountain landscape background is visible behind a blue gradient overlay
 - [ ] Main content area — a heading "Sidebar #04" is displayed

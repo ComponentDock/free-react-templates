@@ -159,17 +159,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] White full-page background with Lato font
 - [ ] Page heading "Login #03" centered, black, 28px
-- [ ] "Sign In" subheading, light weight (300)
+- [x] "Sign In" subheading, light weight (300)
 - [ ] Social icons (Facebook, Twitter) in card header right
 - [ ] Username + Password inputs with green icon overlays
-- [ ] "Save Password" checkbox, default checked
+- [x] "Save Password" checkbox, default checked
 - [ ] Login button: green (#a0c334), white text, right-aligned
 - [ ] Login button hover: transparent bg, green text/border
 - [ ] "Don't have an account? Sign Up" + "Forgot Password" links
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] public/CNAME contains keygate.free.componentdock.com
-- [ ] package.json homepage is https://keygate.free.componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] public/CNAME contains keygate.free.componentdock.com
+- [x] package.json homepage is https://keygate.free.componentdock.com
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] Builds without errors
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

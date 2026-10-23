@@ -421,10 +421,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Accessibility: heading is a real heading element; each tile group is
       labelled for assistive tech (Days/Hours/Minutes/Seconds); social links
       have `aria-label`s and visible focus rings
-- [ ] `public/CNAME` = `foretaste.free.componentdock.com`; `"homepage"` matches;
+- [x] `public/CNAME` = `foretaste.free.componentdock.com`; `"homepage"` matches;
       `npm install` run at the repo root so the lockfile registers
       `@free-react-templates/foretaste`
-- [ ] Zero `colorlib` / "Coming Soon 15" / `comingsoon_15` / "Montserrat-Thin" /
+- [x] Zero `colorlib` / "Coming Soon 15" / `comingsoon_15` / "Montserrat-Thin" /
       "Quantico-Regular" references anywhere in `apps/foretaste` (comments
       included — record the palette as design notes, not provenance)
 - [ ] No copied assets: no `bg01.jpg`, no 101×44 `logo.png`, no favicon, no
@@ -441,4 +441,4 @@ Dock (`https://www.componentdock.com/`) instead.
       and what differs (new name, picsum skyline placeholder, own monogram and
       copy, lucide icons, real caption elements with `aria-label`s, added
       keyboard focus states and the Component Dock attribution line)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

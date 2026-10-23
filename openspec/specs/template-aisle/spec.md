@@ -796,10 +796,10 @@ the prep stream. The landing-sheet tokens it did use are unaffected.
 
 - [ ] `openspec validate template-aisle --type spec` reports "Specification
       'template-aisle' is valid" (verified during prep, 2026-10-12)
-- [ ] `apps/aisle` exists, package name `@free-react-templates/aisle`, no
+- [x] `apps/aisle` exists, package name `@free-react-templates/aisle`, no
       `colorlib`/`preview.colorlib.com` string anywhere in `apps/aisle`, no
       `maps.googleapis.com`, no `gtag`, no `UA-` id
-- [ ] `public/CNAME` = `aisle.free.componentdock.com`, `homepage` =
+- [x] `public/CNAME` = `aisle.free.componentdock.com`, `homepage` =
       `https://aisle.free.componentdock.com`, footer links
       `https://www.componentdock.com/`
 - [ ] `vite.config.ts` registers `injectUiSource()`; shared UI comes from
@@ -880,7 +880,7 @@ the prep stream. The landing-sheet tokens it did use are unaffected.
       those)
 - [ ] TEMPLATES.md line 3107 flips to `[x]` **with** the surge URL only after the
       implementer merges (the prep stream never marks it)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (implementer, 2026-10-13)
 

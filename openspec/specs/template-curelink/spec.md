@@ -309,7 +309,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] All 10 sections render in correct order
-- [ ] Navbar has pharmacy icon, "Curelink" wordmark, nav links, CTA
+- [x] Navbar has pharmacy icon, "Curelink" wordmark, nav links, CTA
 - [ ] Mobile hamburger menu works
 - [ ] Hero shows blue overlay + headline + subtitle
 - [ ] Department tabs switch content correctly
@@ -323,7 +323,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to Component Dock
 - [ ] All design tokens match: blue `#167ce9`, purple `#39345a`,
   teal `#79efb4`, light blue `#78d5ef`, Work Sans
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` contains `curelink.free.componentdock.com`
-- [ ] `homepage` is `https://curelink.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] `public/CNAME` contains `curelink.free.componentdock.com`
+- [x] `homepage` is `https://curelink.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

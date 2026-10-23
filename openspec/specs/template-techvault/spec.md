@@ -138,7 +138,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page structure and layout — the TopBar with contact info is visible
 - [ ] Navigation and search — the categories menu shows product categories (Computers, Cameras, Hardware, Smartphones, etc.)
-- [ ] Hero banner with product spotlight — a headline "New Era of Smartphones" is visible
-- [ ] Deals of the Week with countdown — the title "Deals of the Week" is visible
-- [ ] Newsletter signup — the title "Sign up for Newsletter" is visible
+- [x] Hero banner with product spotlight — a headline "New Era of Smartphones" is visible
+- [x] Deals of the Week with countdown — the title "Deals of the Week" is visible
+- [x] Newsletter signup — the title "Sign up for Newsletter" is visible
 - [ ] Responsive design — the navigation collapses to a hamburger menu icon

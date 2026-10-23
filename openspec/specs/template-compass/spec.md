@@ -440,7 +440,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (radius 30px, height 43px), 40px/900 pink section titles, uppercase
       13px letter-spaced eyebrows, light-gray #f8f9fa section bands,
       rgba(0,0,0,0.2) hero overlay, sticky white navbar with shadow.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Pointer), preview URL, tokens,
       and renames.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

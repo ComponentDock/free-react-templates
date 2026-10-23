@@ -208,19 +208,19 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Two-column layout with form left, illustration right
 - [ ] #f8fafb light grayish page background
-- [ ] Bold dark heading "Sign In to Passpoint" (#333)
+- [x] Bold dark heading "Sign In to Passpoint" (#333)
 - [ ] Light gray subtext (#b3b3b3)
 - [ ] Username and Password inputs with bottom-border-only styling (1px solid #ccc)
 - [ ] Floating labels in 12px #b3b3b3
 - [ ] Form group first/last border-radius 7px
-- [ ] "Remember me" checkbox with mint accent (#38d39f), checked by default
-- [ ] "Forgot Password" link right-aligned, #888888, 14px
-- [ ] Full-width blue (#007bff) "Log In" button, 54px height, white text
-- [ ] "or sign in with" muted text
+- [x] "Remember me" checkbox with mint accent (#38d39f), checked by default
+- [x] "Forgot Password" link right-aligned, #888888, 14px
+- [x] Full-width blue (#007bff) "Log In" button, 54px height, white text
+- [x] "or sign in with" muted text
 - [ ] Three circular social buttons (Facebook #3b5998, Twitter #1da1f2, Google #ea4335), 50x50
 - [ ] Decorative illustration in right column
 - [ ] Responsive stacking on mobile (<992px)
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock")
+- [x] No ColorLib references in app code
 - [ ] Tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

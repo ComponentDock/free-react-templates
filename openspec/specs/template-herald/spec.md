@@ -555,7 +555,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/herald`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/herald`
       (`scripts/verify-app.sh herald` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: utility bar, middle header (logo + ad banner),
@@ -582,5 +582,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/ednews/), design tokens, and what
       differs (name, placeholders, text logo, heading typo fixes, renamed
       duplicate "STAY CONNECT" list heading).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

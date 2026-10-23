@@ -138,7 +138,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Blue-themed navigation bar — the navbar shows the logo, all five navigation links, and the Book Appointment button
 - [ ] Hero section with medical imagery — the subtitle, heading, and Discover More button are displayed
 - [ ] Welcome section with doctor image — a doctor image, heading, paragraph, and Our Departments button are displayed

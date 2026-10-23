@@ -483,7 +483,7 @@ at 360px.
 - [ ] Footer: `#333333`, 4 columns (About/Quick Links/Follow Us/
       Subscribe), white headings, `#737373` text, newsletter with email
       validation + success state, copyright bar
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock");
+- [x] Footer links https://www.componentdock.com/ ("Component Dock");
       zero ColorLib references anywhere in the app (comments included)
 - [ ] All imagery = `picsum.photos/seed/cargolane-*`; icons =
       lucide-react; no copied assets

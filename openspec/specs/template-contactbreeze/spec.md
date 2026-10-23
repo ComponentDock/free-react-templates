@@ -170,15 +170,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Full-page cyan-to-magenta gradient background renders correctly
 - [ ] White centered card with rounded corners and shadow
-- [ ] "Say Hello!" bold heading at top of card
+- [x] "Say Hello!" bold heading at top of card
 - [ ] Name input with label, placeholder, underline
 - [ ] Email input with label, placeholder, underline
-- [ ] "Needed Services" select dropdown with chevron
-- [ ] "Budget" select dropdown with chevron
+- [x] "Needed Services" select dropdown with chevron
+- [x] "Budget" select dropdown with chevron
 - [ ] Message textarea with label, placeholder, underline
-- [ ] "Submit →" gradient button (cyan→magenta), full-width, rounded
-- [ ] Footer links to componentdock.com
+- [x] "Submit →" gradient button (cyan→magenta), full-width, rounded
+- [x] Footer links to componentdock.com
 - [ ] Responsive layout (mobile-friendly)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] `packages/ui` components reused where possible
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

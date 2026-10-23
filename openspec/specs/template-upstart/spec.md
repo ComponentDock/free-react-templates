@@ -332,7 +332,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-upstart/spec.md` exists on main (this file) —
       prep claim marker; implementers skip items whose spec is missing.
-- [ ] Implementation lives in `apps/upstart` (package
+- [x] Implementation lives in `apps/upstart` (package
       `@free-react-templates/upstart`, CNAME
       `upstart.free.componentdock.com`, homepage set, lockfile registered
       via root `npm install`, `injectUiSource()` in `vite.config.ts`).
@@ -347,7 +347,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Interactions: Services dropdown on hover/focus; mobile off-canvas
       menu with `aria-expanded` + close button; no invented sliders,
       forms, or carousels.
-- [ ] No ColorLib strings anywhere in `apps/upstart`; footer links
+- [x] No ColorLib strings anywhere in `apps/upstart`; footer links
       Component Dock; picsum placeholders only; lucide-react icons tinted
       `#434ba4`.
 - [ ] TDD: tests mirror the Gherkin scenarios above per component;
@@ -355,4 +355,4 @@ Dock (`https://www.componentdock.com/`) instead.
       coverage + build).
 - [ ] PR description records: source slug `started`, preview URL, design
       tokens, and placeholder-image notes.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

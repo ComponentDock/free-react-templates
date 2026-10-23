@@ -164,17 +164,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 - [ ] Card is centered on screen with correct background color (#ebeeef)
 - [ ] Title banner shows background image with dark overlay
-- [ ] "Sign In" heading in correct font/size/color
+- [x] "Sign In" heading in correct font/size/color
 - [ ] Username input with label and placeholder
 - [ ] Password input with label and placeholder
 - [ ] Green focus underline animation on input focus
-- [ ] "Remember me" checkbox with green checked state
-- [ ] "Forgot Password?" link with hover color change
+- [x] "Remember me" checkbox with green checked state
+- [x] "Forgot Password?" link with hover color change
 - [ ] Login button with correct green color and pill shape
 - [ ] Button hover turns dark
 - [ ] Form validates required fields
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Specs/docs only contain source references
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

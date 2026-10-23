@@ -129,18 +129,18 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Sidebar: fixed left position, purple (#6C4AB6) background, full viewport height
-- [ ] Logo: "Splash" text, white, bold, large font at top of sidebar
+- [x] Logo: "Splash" text, white, bold, large font at top of sidebar
 - [ ] Navigation: Home (with ▼), About, Pages (with ▼), Portfolio, Contact — white text, vertical stack
 - [ ] Dropdowns: Home and Pages show/hide submenu on click
-- [ ] Newsletter: "Subscribe for newsletter" heading, email input with white bg + rounded corners
+- [x] Newsletter: "Subscribe for newsletter" heading, email input with white bg + rounded corners
 - [ ] Copyright: small white text at bottom of sidebar
 - [ ] Hamburger: purple circular button at sidebar boundary, toggles sidebar on mobile
 - [ ] Main content: light gray (#f5f5f5) background, "Sidebar #02" heading, body text paragraphs
 - [ ] Responsive: sidebar collapses on mobile, hamburger toggles visibility
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] `public/CNAME` contains `sidecraft.free.componentdock.com`
-- [ ] Package name `@free-react-templates/sidecraft`, homepage `https://sidecraft.free.componentdock.com`
-- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] `public/CNAME` contains `sidecraft.free.componentdock.com`
+- [x] Package name `@free-react-templates/sidecraft`, homepage `https://sidecraft.free.componentdock.com`
+- [x] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
 - [ ] Global font: Poppins via Google Fonts
 - [ ] Brand color: `#6C4AB6` in Tailwind theme
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -177,15 +177,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] All sections render in correct order — all 11 sections are visible in the correct order
 - [ ] TopBar displays opening hours and CTA — the opening hours text is visible
 - [ ] Navbar displays navigation links — Home, About, Services, Projects, Blog, Contact links are visible
 - [ ] Hero displays heading and CTA — the heading text is present
 - [ ] Features section shows 3 feature cards — three feature cards are displayed
 - [ ] About section shows split layout — an image is displayed on the left
-- [ ] Services section shows service cards — the "Our Services" heading is displayed
+- [x] Services section shows service cards — the "Our Services" heading is displayed
 - [ ] Gallery section shows filterable project grid — filter buttons for All, Architecture, Buildings, Bridges are present
-- [ ] Why Choose Us section shows content — a "Why Choose Us?" heading is present
-- [ ] Testimonials section shows testimonial cards — the "Testimonials" heading is displayed
+- [x] Why Choose Us section shows content — a "Why Choose Us?" heading is present
+- [x] Testimonials section shows testimonial cards — the "Testimonials" heading is displayed
 - [ ] Contact CTA banner displays — a heading about construction experts is visible

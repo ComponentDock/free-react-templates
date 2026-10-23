@@ -155,14 +155,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page structure and sections — the page contains a navigation bar, hero section, intro section, about section, quote section, CTA section, programs section, pricing section, contact section, and footer
 - [ ] Navbar navigation — the nav links are visible without a hamburger button
-- [ ] Hero section — I see the subtitle "go to the gym now!"
+- [x] Hero section — I see the subtitle "go to the gym now!"
 - [ ] Intro feature boxes — I see 3 feature boxes with icons, titles, and descriptions
-- [ ] About section — I see the heading "about prowess"
+- [x] About section — I see the heading "about prowess"
 - [ ] Quote section — I see a quote and author name
-- [ ] CTA section — I see the heading "join our gym"
+- [x] CTA section — I see the heading "join our gym"
 - [ ] Programs section — I see 3 program cards with titles and descriptions
 - [ ] Pricing section — I see 3 pricing tiers with plan names and prices
 - [ ] Contact section — I see phone number, email address, and location

@@ -379,16 +379,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh uplink`,
       PR lists source (ColorLib Hosthub), preview URL, tokens, and what
       differs.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header — the top bar SHALL show the phone number and email
 - [ ] Hero — it SHALL show the headline "We're Web Hosting Professionals" in
 - [ ] Features — it SHALL show a centered heading "Some Features that Made us
 - [ ] Pricing — it SHALL show a centered heading "Choose Your Best Pricing
-- [ ] Custom Solution — it SHALL show the headline "Looking for a Custom Solution?" with
+- [x] Custom Solution — it SHALL show the headline "Looking for a Custom Solution?" with
 - [ ] Testimonials — it SHALL show the heading "What our Client's Say about us" with
 - [ ] Services — it SHALL show a centered white heading "Top Services We
-- [ ] Latest Blog — it SHALL show a centered heading "Latest Posts from Our Blog"
+- [x] Latest Blog — it SHALL show a centered heading "Latest Posts from Our Blog"
 - [ ] Client Logos — it SHALL show a row of five client brand placeholders in
-- [ ] Footer — it SHALL show a "Top Products" column of links, a "Newsletter"
+- [x] Footer — it SHALL show a "Top Products" column of links, a "Newsletter"
 - [ ] Page composition — the page SHALL compose the header, hero, Features, Pricing,

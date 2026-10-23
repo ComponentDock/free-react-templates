@@ -457,7 +457,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes for this spec (whole-repo validate may
       fail on unrelated legacy specs — check this spec's own `✓` line).
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/skybound`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/skybound`
       (`scripts/verify-app.sh skybound` in FAST_MODE; full `npm run gate`
       in CI).
 - [ ] Visual fidelity: off-canvas menu (hamburger → X, white panel,
@@ -495,4 +495,4 @@ Dock (`https://www.componentdock.com/`) instead.
       what differs (new name Skybound, placeholder images, paraphrased
       copy, inner pages not recreated, hidden testimonial/newsletter image
       columns kept unrendered).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

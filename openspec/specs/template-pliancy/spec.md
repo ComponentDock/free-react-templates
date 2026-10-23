@@ -255,9 +255,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-pliancy/spec.md` exists on the PR branch and
       validates (`npx openspec validate pliancy --type spec`)
-- [ ] App folder `apps/pliancy`, package `@free-react-templates/pliancy`,
+- [x] App folder `apps/pliancy`, package `@free-react-templates/pliancy`,
       `npm install` at root so the lockfile registers the workspace
-- [ ] `homepage` = `https://pliancy.free.componentdock.com`, `public/CNAME`
+- [x] `homepage` = `https://pliancy.free.componentdock.com`, `public/CNAME`
       = `pliancy.free.componentdock.com`
 - [ ] `index.html` loads Open Sans 400 via Google Fonts `<link>`; NO copied
       woff2 files, NO ColorLib strings anywhere in the app
@@ -279,7 +279,7 @@ Dock (`https://www.componentdock.com/`) instead.
       implemented with Tailwind arbitrary `max-[992px]:` variants (992px
       is NOT a default Tailwind breakpoint) or an equivalent custom
       breakpoint
-- [ ] Footer links `https://www.componentdock.com/` ("Component Dock")
+- [x] Footer links `https://www.componentdock.com/` ("Component Dock")
 - [ ] Tests (TDD, 100% coverage on changed code) mirror the Gherkin
       scenarios; `scripts/verify-app.sh pliancy` passes
 - [ ] PR description records: source slug `responsive-table-v1`, preview
@@ -288,4 +288,4 @@ Dock (`https://www.componentdock.com/`) instead.
       reference), design tokens used, and what differs (new name Pliancy;
       Open Sans via Google Fonts instead of self-hosted woff2; picsum
       placeholders not needed — zero images; Component Dock footer added)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

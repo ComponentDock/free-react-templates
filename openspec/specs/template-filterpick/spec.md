@@ -157,6 +157,6 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Multiselect dropdown with checkmark UI — a dropdown trigger button is visible showing "Select options" placeholder text
-- [ ] Accessible markup — the trigger has aria-haspopup="listbox"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Multiselect dropdown with checkmark UI — a dropdown trigger button is visible showing "Select options" placeholder text
+- [x] Accessible markup — the trigger has aria-haspopup="listbox"

@@ -240,7 +240,7 @@ Dock (`https://www.componentdock.com/`) instead.
       toggle; select-all works; search filters options; button text
       updates with count; clicking outside closes dropdown.
 - [ ] Responsive check at 768px (column full-width, no overflow).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page shell — the page background SHALL be `#efefef` (light grey)
 - [ ] Multi-select widget — the trigger button SHALL display "0 selected" (or equivalent
 - [ ] Accessibility and semantics — the trigger button SHALL have `aria-haspopup` and

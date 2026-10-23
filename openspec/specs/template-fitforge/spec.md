@@ -135,13 +135,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with logo, navigation, and CTA — the navbar shows "FitForge" logo, all five nav links, search button, and "Get in touch" button
-- [ ] Hero section with headline and CTA — the heading text contains "Don't stop when you're tired"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with logo, navigation, and CTA — the navbar shows "FitForge" logo, all five nav links, search button, and "Get in touch" button
+- [x] Hero section with headline and CTA — the heading text contains "Don't stop when you're tired"
 - [ ] Features section with 4 feature cards — 4 feature cards are displayed with icons and text
-- [ ] Subscription section with benefits list — the heading says "Get your subscription"
+- [x] Subscription section with benefits list — the heading says "Get your subscription"
 - [ ] Portfolio gallery with hover overlay — 4 portfolio images are displayed
 - [ ] Testimonials section — a testimonial quote is displayed
 - [ ] Pricing plans section — 3 plan cards are displayed with prices $0, $30, and $55
-- [ ] CTA banner — the text "now!" is displayed
+- [x] CTA banner — the text "now!" is displayed
 - [ ] Page landmarks for accessibility — a navigation landmark is present

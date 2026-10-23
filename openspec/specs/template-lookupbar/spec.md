@@ -200,8 +200,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Transitions are 0.3s ease on interactive elements
 - [ ] Focus state on search input: black border, no shadow
 - [ ] Responsive: stacked on mobile, side-by-side on desktop (≥768px)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Footer includes Component Dock link
 - [ ] Package name: @free-react-templates/lookupbar
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

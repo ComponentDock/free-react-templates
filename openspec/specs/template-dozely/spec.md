@@ -503,11 +503,11 @@ Dock (`https://www.componentdock.com/`) instead.
     none`, FLOATING 32×32 arrow glyph at the right edge
       (`rgba(255,255,255,0.5)`, 14px, pointer-events-none — NOT Restly's
       full-height strip)
-- [ ] "Book Now" button: solid `#e35e0a` bg, white uppercase 16px weight-700
+- [x] "Book Now" button: solid `#e35e0a` bg, white uppercase 16px weight-700
       text, 1.3px letter-spacing, 60px height, full width, pill radius, hover/
       focus opacity 0.9; validates required fields (destination/check-in/
       check-out) and shows a summary line / validation messages
-- [ ] Source copy kept verbatim: "Make your reservation", "Country, ZIP,
+- [x] Source copy kept verbatim: "Make your reservation", "Country, ZIP,
       city...", "Check In", "Check out", "no of rooms" / "no of adults" /
       "no of children", "Enter your Email", "Enter you Phone" (source typo),
       "Book Now"
@@ -520,5 +520,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

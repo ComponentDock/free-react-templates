@@ -210,8 +210,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer with contact, news, newsletter, and Component Dock link
 - [ ] All brand colors match tokens (#e02529, #2f76c7, #ECBA0B)
 - [ ] Dark section backgrounds (#111111, #211E1E, #2F2C2C)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
 - [ ] 100% test coverage
 - [ ] Builds without errors
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

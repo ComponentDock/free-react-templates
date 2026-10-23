@@ -203,9 +203,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] CTA Banner: blue background, headline, button
 - [ ] Footer: About Us, 4 link columns, social icons, copyright, Component Dock link
 - [ ] Design tokens: brand #0779e4, font Roboto, border-radius 7px, proper spacing
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Images use picsum.photos placeholders
 - [ ] 100% test coverage (TDD)
 - [ ] Spec folder: openspec/specs/template-drivego/spec.md
 - [ ] Docs folder: docs/templates/drivego/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

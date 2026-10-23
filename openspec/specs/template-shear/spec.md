@@ -202,13 +202,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Shear" and a "Home" link pointing to the page root
+- [x] Navigation bar — the navbar SHALL show the site name "Shear" and a "Home" link pointing to the page root
 - [ ] Hero — it SHALL show a level-1 headline (e.g. "More Than Just A Haircut")
-- [ ] Welcome split — it SHALL show the heading "Welcome To Shear!"
-- [ ] Services & Pricing — it SHALL show the heading "Services & Pricing"
-- [ ] Hair styles — it SHALL show the heading "More Hair Styles"
-- [ ] Testimonials — it SHALL show the heading "Our Top Client Says"
-- [ ] Footer — it SHALL show the site name "Shear" and quick links
+- [x] Welcome split — it SHALL show the heading "Welcome To Shear!"
+- [x] Services & Pricing — it SHALL show the heading "Services & Pricing"
+- [x] Hair styles — it SHALL show the heading "More Hair Styles"
+- [x] Testimonials — it SHALL show the heading "Our Top Client Says"
+- [x] Footer — it SHALL show the site name "Shear" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

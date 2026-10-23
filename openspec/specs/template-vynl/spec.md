@@ -175,10 +175,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and dropdown — the navbar displays the brand name "Vynl." with a gold dot
-- [ ] Hero section with background image and CTA — the heading reads "Vynl Music Fest"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and dropdown — the navbar displays the brand name "Vynl." with a gold dot
+- [x] Hero section with background image and CTA — the heading reads "Vynl Music Fest"
 - [ ] Featured Events section with 3 event cards — 3 event cards are displayed
 - [ ] Upcoming Events section with asymmetric grid — 3 upcoming event cards are displayed
-- [ ] Video/About section with play button — the heading reads "We Love Music"
+- [x] Video/About section with play button — the heading reads "We Love Music"
 - [ ] App composes all sections in correct order — all sections are present in the correct order

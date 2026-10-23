@@ -139,14 +139,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Two-column registration card layout — a card with a left info panel and right form panel is visible
-- [ ] Information heading — the left panel displays heading "INFOMATION"
-- [ ] Register form heading — the right panel displays heading "REGISTER FORM"
+- [x] Information heading — the left panel displays heading "INFOMATION"
+- [x] Register form heading — the right panel displays heading "REGISTER FORM"
 - [ ] All registration form fields — the form has fields for First Name, Last Name, Email, Password, and Confirm Password
 - [ ] Terms and Conditions checkbox — a checkbox for Terms and Conditions is visible
-- [ ] Register button — a "Register" submit button is visible
-- [ ] Have An Account button — a "Have An Account" button is visible in the left panel
+- [x] Register button — a "Register" submit button is visible
+- [x] Have An Account button — a "Have An Account" button is visible in the left panel
 - [ ] Form submission prevention — the form submission is prevented
 - [ ] Typing in form fields — the field shows the typed text
-- [ ] Document title — the document title contains "Regwave"
+- [x] Document title — the document title contains "Regwave"

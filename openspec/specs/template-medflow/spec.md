@@ -143,12 +143,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays navigation and booking CTA — the navbar shows the logo, 5 navigation links, and a "Book Appointment" button
-- [ ] Hero section displays clinic tagline — the headline "Bringing health to life for the whole family." is displayed
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar displays navigation and booking CTA — the navbar shows the logo, 5 navigation links, and a "Book Appointment" button
+- [x] Hero section displays clinic tagline — the headline "Bringing health to life for the whole family." is displayed
 - [ ] Welcome section shows clinic intro — 3 checklist items with check icons are displayed
 - [ ] Departments tabbed showcase — the Dentistry tab is active by default
 - [ ] Doctor profiles grid — 3 doctor cards are displayed with names, specialties, and social link icons
 - [ ] Appointment booking form — each field updates its value
 - [ ] Quality Health feature cards — 3 cards are displayed with icons, titles, and descriptions
-- [ ] Emergency contact banner — the text "Emergency Medical Care" and phone number "+1-465 4545" are visible
+- [x] Emergency contact banner — the text "Emergency Medical Care" and phone number "+1-465 4545" are visible

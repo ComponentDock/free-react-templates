@@ -223,16 +223,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Arlo" and links to About, Projects, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Arlo" and links to About, Projects, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading
-- [ ] About section — it SHALL contain a heading "About Me"
-- [ ] Expertise section — it SHALL contain a heading "My Expertise"
-- [ ] Featured work section — it SHALL contain a heading "Featured Work"
-- [ ] Experience section — it SHALL contain a heading "Career Journey"
-- [ ] Testimonials section — it SHALL contain a heading "What Clients Say"
-- [ ] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [x] About section — it SHALL contain a heading "About Me"
+- [x] Expertise section — it SHALL contain a heading "My Expertise"
+- [x] Featured work section — it SHALL contain a heading "Featured Work"
+- [x] Experience section — it SHALL contain a heading "Career Journey"
+- [x] Testimonials section — it SHALL contain a heading "What Clients Say"
+- [x] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
 - [ ] Contact section — it SHALL contain a heading "Let's Work Together"
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

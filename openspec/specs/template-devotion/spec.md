@@ -219,9 +219,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Upcoming events red band shows below hero
 - [ ] Church services section shows 3 items with icons
 - [ ] Feature cards section shows 3 items with icons
-- [ ] "God is Love" section renders with sermon content and Watch Video CTA
-- [ ] "More Features" section renders
-- [ ] "Our Mission" section renders with Read More link
+- [x] "God is Love" section renders with sermon content and Watch Video CTA
+- [x] "More Features" section renders
+- [x] "Our Mission" section renders with Read More link
 - [ ] Sermons carousel displays entries with audio player UI
 - [ ] Testimonies carousel displays cards
 - [ ] Upcoming events carousel displays event cards
@@ -230,8 +230,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Primary color #f23a2e used for icons and accents
 - [ ] Pill-shaped buttons with 30px border-radius
 - [ ] Responsive layout works at 375px, 768px, 1024px
-- [ ] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec/TEMPLATES.md)
 - [ ] Placeholder images via picsum.photos with deterministic seeds
 - [ ] lucide-react icons replace icomoon/flaticon source icons
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

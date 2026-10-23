@@ -163,8 +163,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Landing page with modal trigger — the landing section shows the "Snowdrift" heading and a "Launch Sale" button
-- [ ] Two-column modal layout — the left panel shows a decorative snowflake icon, "Winter" subheading,
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Landing page with modal trigger — the landing section shows the "Snowdrift" heading and a "Launch Sale" button
+- [x] Two-column modal layout — the left panel shows a decorative snowflake icon, "Winter" subheading,
 - [ ] Modal dismissal — the modal closes
 - [ ] Responsive layout — the modal columns stack vertically

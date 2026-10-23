@@ -497,11 +497,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/meadow` scaffolded from the simplest existing app; package
+- [x] `apps/meadow` scaffolded from the simplest existing app; package
       renamed to `@free-react-templates/meadow`; `public/CNAME` =
       `meadow.free.componentdock.com`; homepage
       `https://meadow.free.componentdock.com`.
-- [ ] No "colorlib" string anywhere in `apps/meadow/*` (provenance only in
+- [x] No "colorlib" string anywhere in `apps/meadow/*` (provenance only in
       this spec, TEMPLATES.md, and the PR).
 - [ ] `@theme` tokens: `--color-brand: #73b925`, `--color-brand-deep:
 #7bc628`, `--color-mint: #d7f1b9`, `--color-mint-soft: #effae4`,
@@ -550,4 +550,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Post-merge bookkeeping: mark BOTH TEMPLATES.md "Ecogreen" rows
       (lines 577 and 1556) `[x]` with the live URL and run
       `npm run readme:status`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

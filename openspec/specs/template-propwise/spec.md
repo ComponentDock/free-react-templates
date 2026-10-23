@@ -164,7 +164,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top utility bar renders contact and auth links — the top bar shows a phone number ("+12312-3-1209" or similar)
 - [ ] Navbar renders navigation links — the navbar shows Home, Service, Property, and Contact links
 - [ ] Hero section displays headline and property search — the hero shows "We're Real Estate King" in bold white uppercase

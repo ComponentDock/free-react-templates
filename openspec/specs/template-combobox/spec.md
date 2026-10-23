@@ -216,10 +216,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Dropdown opens and closes correctly — the option list becomes visible
 - [ ] Options can be selected and deselected — PHP is marked as selected
 - [ ] Select All and Clear All work correctly — all enabled options are selected
 - [ ] Disabled options cannot be selected — onChange is not called
 - [ ] Keyboard navigation works correctly — the dropdown opens
-- [ ] Accessibility attributes are present — the trigger button has aria-expanded and aria-haspopup="listbox"
+- [x] Accessibility attributes are present — the trigger button has aria-expanded and aria-haspopup="listbox"

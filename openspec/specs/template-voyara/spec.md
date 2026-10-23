@@ -455,10 +455,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes for this spec (whole-repo validate may
       fail on unrelated legacy specs — check this spec's own `✓` line).
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/voyara`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/voyara`
       (`scripts/verify-app.sh voyara` in FAST_MODE; full `npm run gate`
       in CI).
-- [ ] Visual fidelity: white header (bold "voyara" wordmark + hamburger,
+- [x] Visual fidelity: white header (bold "voyara" wordmark + hamburger,
       soft shadow when stuck, Home/Facilities/Service/Book panel),
       full-viewport hero slider with pink→peach gradient overlay at 0.8
       opacity, centered white 72px "Enjoy Holidays / with affordable
@@ -481,9 +481,9 @@ Dock (`https://www.componentdock.com/`) instead.
       (hero ×2, service ×3, about, gallery ×6, insta ×8); icons from
       lucide-react with inline-SVG social icons; no ColorLib assets,
       CSS, or strings anywhere in `apps/voyara`.
-- [ ] `public/CNAME` = `voyara.free.componentdock.com`; package
+- [x] `public/CNAME` = `voyara.free.componentdock.com`; package
       `@free-react-templates/voyara`; `"homepage"`
       = `https://voyara.free.componentdock.com`; lockfile registers the
       workspace; `injectUiSource()` present in `vite.config.ts`; footer
       links Component Dock.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

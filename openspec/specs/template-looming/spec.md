@@ -616,7 +616,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] App exists at `apps/looming`, package `@free-react-templates/looming`,
+- [x] App exists at `apps/looming`, package `@free-react-templates/looming`,
       `homepage` `https://looming.free.componentdock.com`, `public/CNAME`
       `looming.free.componentdock.com`; `npm install` run at the repo root and the
       lockfile registers the workspace
@@ -666,7 +666,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `bg-[#333]`
 - [ ] Fonts: Playfair Display `ital,wght@1,900` + Poppins `400;500` via Google
       Fonts `<link>`; icons are `lucide-react` only
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_12` references anywhere in
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_12` references anywhere in
       `apps/looming` (comments included)
 - [ ] No copied assets: no source photographs, no `logo.png`, no favicon, no
       woff2 files, no `css/style.css` (including its `all: revert` guard and
@@ -688,4 +688,4 @@ Dock (`https://www.componentdock.com/`) instead.
       50/60/stacked split rhythm), and what differs (new name, picsum
       placeholders, own mark/strings, lucide icons, added `aria-label`, Component
       Dock attribution line)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

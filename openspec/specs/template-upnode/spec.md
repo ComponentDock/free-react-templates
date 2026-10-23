@@ -414,7 +414,7 @@ Dock (`https://www.componentdock.com/`) instead.
       coverage tests + build, ~2–3 min)
 - [ ] `npm run spec:validate` passes
 - [ ] Top bar: blue, phone + email left, Login/Register + language right
-- [ ] Nav: wordmark "Upnode", Home (active)/Hosting/Pages/About/Blog/
+- [x] Nav: wordmark "Upnode", Home (active)/Hosting/Pages/About/Blog/
       Contact, Live Chat outline + Get Start Now! buttons; dropdowns
       open; mobile menu works
 - [ ] Hero: solid `#1c66de`, white 82px headline, strikethrough price
@@ -423,7 +423,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (.COM/.NET/.ORG/.US/.BIZ/.CO)
 - [ ] Features grid on `#e8f1f8`: 6 icon cards (Auto Updates, Optimized
       Software, Daily Backups, Wide Networking, Protected, Free Support)
-- [ ] Pricing: 3 cards with Save-% tags, "Best Plan" on middle, blue
+- [x] Pricing: 3 cards with Save-% tags, "Best Plan" on middle, blue
       check lists, Get Started + view-all link
 - [ ] Discount CTA: 6 FREE mini-features + Get Started
 - [ ] Support band: 24/7 phone number + Live Chat
@@ -439,9 +439,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/upnode`); `grep -c "free-react-templates/upnode"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://upnode.free.componentdock.com"`
+- [x] `"homepage": "https://upnode.free.componentdock.com"`
       in `apps/upnode/package.json`
 - [ ] PR title: `feat: Upnode — web hosting website template (ColorLib
 Hami)`; body includes the source URL, preview URL, tokens, and the
       two-copy TEMPLATES.md note
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

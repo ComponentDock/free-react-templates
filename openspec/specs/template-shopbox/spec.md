@@ -302,14 +302,14 @@ Feature: Shopbox — Ecommerce Store Template
 - [ ] FeaturedCategories: grid of category cards with hover effect
 - [ ] FeaturedProducts: product cards with image, name, price, hover icons
 - [ ] PromoBanner: contrasting bg, headline, CTA
-- [ ] NewArrivals: product cards with "NEW" badge
+- [x] NewArrivals: product cards with "NEW" badge
 - [ ] BlogSection: 3-column post cards with all metadata
 - [ ] Newsletter: email input + submit, form validation
 - [ ] Footer: 4 columns, social icons, copyright, Component Dock link
 - [ ] All images use `picsum.photos/seed/shopbox-<n>/<w>/<h>` placeholders
 - [ ] Google Fonts loaded via `<link>` in index.html (Poppins)
 - [ ] Icons from lucide-react
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage (statements, branches, functions, lines)
 - [ ] `npm run verify:app shopbox` passes (typecheck + lint + knip + fallow + tests + build)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

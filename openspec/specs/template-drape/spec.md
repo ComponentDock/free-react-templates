@@ -142,14 +142,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Announcement bar — an announcement bar is visible with "Free shipping on orders over $100"
-- [ ] Sticky header with navigation — the "Drape." logo is visible
-- [ ] Hero banner — the heading "New season essentials" is visible
-- [ ] Marquee strip — text items including "Free shipping over $100" and "30 day returns" are present
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Announcement bar — an announcement bar is visible with "Free shipping on orders over $100"
+- [x] Sticky header with navigation — the "Drape." logo is visible
+- [x] Hero banner — the heading "New season essentials" is visible
+- [x] Marquee strip — text items including "Free shipping over $100" and "30 day returns" are present
 - [ ] Shop by category section — three category cards are visible: Clothing, Jewellery, Bags
 - [ ] New arrivals product grid — eight product cards are visible with titles and prices
-- [ ] Image with text section — the heading "Made to last" and an "Our story" link are visible
-- [ ] Features grid — "Free shipping", "30 day returns", and "Made responsibly" headings are visible
+- [x] Image with text section — the heading "Made to last" and an "Our story" link are visible
+- [x] Features grid — "Free shipping", "30 day returns", and "Made responsibly" headings are visible
 - [ ] Journal section — three article cards with titles, dates, and excerpts are visible
 - [ ] Document title — the document title is "Drape — Fashion E-Commerce Template"

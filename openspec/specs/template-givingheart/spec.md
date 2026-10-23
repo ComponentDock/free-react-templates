@@ -262,12 +262,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Volunteers: 4 cards, hover overlay with gradient
 - [ ] Donate: dark parallax background, form with all fields, trust items
 - [ ] Footer: links, social icons, Component Dock link
-- [ ] Sticky navbar with "Donate Now" CTA
+- [x] Sticky navbar with "Donate Now" CTA
 - [ ] All interactive elements accessible (keyboard, screen reader)
 - [ ] Responsive layout (mobile-first)
 - [ ] Dark mode toggle functional
-- [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code (only in spec + TEMPLATES.md)
+- [x] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage on all section components
 - [ ] Placeholder images use seeded picsum (`picsum.photos/seed/givingheart-<n>/`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

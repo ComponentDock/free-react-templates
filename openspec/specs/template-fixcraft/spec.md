@@ -210,14 +210,14 @@ change the footer's own layout or copy beyond the credit line.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] Top bar — the bar SHALL display a phone number and business hours
-- [ ] Navigation bar — the navbar SHALL show the site name "Fixcraft"
-- [ ] Hero slider — the first slide SHALL display "Make your car last longer"
-- [ ] Intro section — the heading SHALL contain "We care about your car"
-- [ ] Services section — "Our car services" heading SHALL appear
+- [x] Navigation bar — the navbar SHALL show the site name "Fixcraft"
+- [x] Hero slider — the first slide SHALL display "Make your car last longer"
+- [x] Intro section — the heading SHALL contain "We care about your car"
+- [x] Services section — "Our car services" heading SHALL appear
 - [ ] Counter section — it SHALL show counters for years, projects, staff, and happy clients
-- [ ] Appointment form — "Free Consultation" heading SHALL appear
-- [ ] Testimonials section — "Happy Clients & Feedbacks" heading SHALL appear
-- [ ] Blog section — "Latest news from our blog" heading SHALL appear
-- [ ] Pricing section — "Pricing" heading SHALL appear
+- [x] Appointment form — "Free Consultation" heading SHALL appear
+- [x] Testimonials section — "Happy Clients & Feedbacks" heading SHALL appear
+- [x] Blog section — "Latest news from our blog" heading SHALL appear
+- [x] Pricing section — "Pricing" heading SHALL appear

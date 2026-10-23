@@ -198,6 +198,6 @@ Users SHALL see a dark purple footer with three columns and a copyright bar.
 - [ ] Program Schedule: tabbed interface with 4 date tabs
 - [ ] Speakers: 4-col grid, hover-reveal social icons
 - [ ] Footer: dark purple bg, 3-col layout, newsletter form
-- [ ] No references to ColorLib in app code
-- [ ] `public/CNAME` contains `galaflow.free.componentdock.com`
-- [ ] `homepage` in package.json set to `https://galaflow.free.componentdock.com`
+- [x] No references to ColorLib in app code
+- [x] `public/CNAME` contains `galaflow.free.componentdock.com`
+- [x] `homepage` in package.json set to `https://galaflow.free.componentdock.com`

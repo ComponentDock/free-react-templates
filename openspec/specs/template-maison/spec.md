@@ -202,14 +202,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes
 - [ ] `bash scripts/verify-app.sh maison` passes (typecheck + lint + 100% coverage tests + build)
-- [ ] 100% lines/functions/branches/statements coverage for `apps/maison`
-- [ ] Surge URL in PR + bookkeeping: `https://maison.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Maison" and links to Home, About, Services, Projects, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading with "Posh living"
-- [ ] Projects section — it SHALL contain a heading "Here are some of Our Latest Works"
-- [ ] Services section — it SHALL contain a heading "Top Services That We Offers"
-- [ ] Testimonials section — it SHALL contain a heading "What Our Priority Client's Say"
+- [x] 100% lines/functions/branches/statements coverage for `apps/maison`
+- [x] Surge URL in PR + bookkeeping: `https://maison.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Maison" and links to Home, About, Services, Projects, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading with "Posh living"
+- [x] Projects section — it SHALL contain a heading "Here are some of Our Latest Works"
+- [x] Services section — it SHALL contain a heading "Top Services That We Offers"
+- [x] Testimonials section — it SHALL contain a heading "What Our Priority Client's Say"
 - [ ] Counters band — it SHALL show the values "1990", "50+", and "25+"
 - [ ] Blog section — it SHALL contain a heading "A Glimpse from Our Latest Blog"
 - [ ] Call-to-action band — it SHALL contain the text "Join us today without any hesitation"

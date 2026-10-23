@@ -142,10 +142,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar is visible with the logo "LensVault", navigation links (Home, Gallery, Services, About, Contact), and a search icon button
-- [ ] Hero banner — the hero section displays "LensVault Photography" as a heading, a subtitle about photography, and an "Explore Gallery" button
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar is visible with the logo "LensVault", navigation links (Home, Gallery, Services, About, Contact), and a search icon button
+- [x] Hero banner — the hero section displays "LensVault Photography" as a heading, a subtitle about photography, and an "Explore Gallery" button
 - [ ] Filterable photo gallery — 12 photo cards are displayed in a responsive grid (1 column on mobile, 2 on tablet, 4 on desktop)
 - [ ] Client testimonials — a "Client's Feedback" heading is displayed along with at least 3 testimonial entries, each showing an avatar, quote, name, and role
-- [ ] Services section — a "Why Choose Us" heading is displayed and 6 service cards are rendered, each with a title and description
+- [x] Services section — a "Why Choose Us" heading is displayed and 6 service cards are rendered, each with a title and description
 - [ ] Instagram feed — a "Follow Us on Instagram" button and 6 images in a horizontal row are displayed

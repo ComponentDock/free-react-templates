@@ -392,7 +392,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/parish`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/parish`
       (`scripts/verify-app.sh parish` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: transparent navbar (brand "Parish Christian
@@ -426,4 +426,4 @@ Dock (`https://www.componentdock.com/`) instead.
       URL (https://preview.colorlib.com/theme/vineyard/), design tokens,
       and what differs (name, placeholder images, paraphrased copy,
       events heading moved above cards, single page only).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

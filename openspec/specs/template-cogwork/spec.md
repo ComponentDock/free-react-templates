@@ -233,13 +233,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the brand text "Cogwork" is visible
-- [ ] Hero slider — the heading "We Are Industrial Company" is visible
-- [ ] Features section — three feature cards are visible: "Automotive Parts", "Maintenance Services", "Green Energy"
-- [ ] Engineering section — the heading "We Are Reliable Engineering In House" is visible
-- [ ] About section — the heading "Create, Enhance and Sustain" is visible
-- [ ] Projects gallery — the heading "Our Latest Projects" is visible
-- [ ] Testimonials — the heading "Happy Clients" is visible
-- [ ] Blog posts — the heading "Blog Posts" is visible
-- [ ] CTA banner — the heading "Create, Enhance and Sustain" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the brand text "Cogwork" is visible
+- [x] Hero slider — the heading "We Are Industrial Company" is visible
+- [x] Features section — three feature cards are visible: "Automotive Parts", "Maintenance Services", "Green Energy"
+- [x] Engineering section — the heading "We Are Reliable Engineering In House" is visible
+- [x] About section — the heading "Create, Enhance and Sustain" is visible
+- [x] Projects gallery — the heading "Our Latest Projects" is visible
+- [x] Testimonials — the heading "Happy Clients" is visible
+- [x] Blog posts — the heading "Blog Posts" is visible
+- [x] CTA banner — the heading "Create, Enhance and Sustain" is visible

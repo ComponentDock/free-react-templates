@@ -62,7 +62,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] TypeScript strict compilation (`npm run build` / typecheck)
 - [ ] Vitest coverage at 100% lines/functions/branches/statements
-- [ ] App public/CNAME set to `buttonforge.free.componentdock.com`
-- [ ] Footer includes Component Dock branding link (`https://www.componentdock.com/`)
+- [x] App public/CNAME set to `buttonforge.free.componentdock.com`
+- [x] Footer includes Component Dock branding link (`https://www.componentdock.com/`)
 - [ ] Tailwind `@theme` configuration matches Poppins font and brand colors (`#1fbbd3`, `#fb582f`, `#159688`, `#e92465`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

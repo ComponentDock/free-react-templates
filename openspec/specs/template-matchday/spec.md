@@ -415,14 +415,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fixed header: top bar (GET Tickets | Shop, LIVE badge + ticker, Sign up / Sign in) + split nav around overhanging crest + 3px orange bottom border; scrolled compaction; mobile hamburger + staggered fullscreen menu with aria-expanded
 - [ ] Hero slider: full-viewport picsum slides; orange number chip + navy countdown chip; skewed home/away chips + rotated outlined red "VS"; orange 92px Next square (hover navy), keyboard accessible
 - [ ] Breaking-news strip: orange title block + navy rotating headline (React state, no owl)
-- [ ] Latest results: centered title/subtitle/league line; two mirrored photo+score+name+blurb blocks with divider; orange "See More Info" button with navy fill-on-hover bar
+- [x] Latest results: centered title/subtitle/league line; two mirrored photo+score+name+blurb blocks with divider; orange "See More Info" button with navy fill-on-hover bar
 - [ ] Navy events/games band: two titled columns, `#242b56` 110px rows, event rows (photo/title/date/See More), game rows (crest | league · score · date | crest), decorative absolute player photo
 - [ ] Milestones: parallax band with 4 lucide-icon counters that count up once in view (cleanup on unmount)
 - [ ] Player of the month: navy number chip + 60px orange name + bio; two bottom-anchored photos spanning left half of viewport
 - [ ] Latest news: `#d7d9e5` band, 3 cards with white 75×75 date badges (orange day), hover shadow + orange title
 - [ ] CTA strip: orange bg + white hairline borders, navy uppercase span text, navy button with white fill hover
-- [ ] Footer `#0a1123`: crest + contact list + newsletter form (navy input, orange Submit, disclaimer) + nav links + `#070d1d` bar with Component Dock link; zero ColorLib references anywhere in the app
+- [x] Footer `#0a1123`: crest + contact list + newsletter form (navy input, orange Submit, disclaimer) + nav links + `#070d1d` bar with Component Dock link; zero ColorLib references anywhere in the app
 - [ ] Placeholder images use deterministic `picsum.photos/seed/matchday-*` URLs
 - [ ] Lucide-react icons only (no Font Awesome); no jQuery/owl — React state carousels + useEffect countdown/counters
 - [ ] 100% test coverage via `scripts/verify-app.sh matchday`; PR `feat/template-matchday`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -62,5 +62,5 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Hero section with background and heading — the heading "Discover the Amazing City" SHALL be visible
-- [ ] Search form with inputs and button — the first input SHALL have placeholder "What are you looking for?"
+- [x] Hero section with background and heading — the heading "Discover the Amazing City" SHALL be visible
+- [x] Search form with inputs and button — the first input SHALL have placeholder "What are you looking for?"

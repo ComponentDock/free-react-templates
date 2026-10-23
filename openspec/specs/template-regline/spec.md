@@ -189,17 +189,17 @@ The app source code SHALL NOT contain any references to ColorLib.
 ## Verification checklist
 
 - [ ] Page loads with dark background and centered white card
-- [ ] "Apply for job" heading is white, bold, and prominently displayed
+- [x] "Apply for job" heading is white, bold, and prominently displayed
 - [ ] Blue decorative element (triangle/arrow) appears below heading
 - [ ] Full name input field has label and placeholder
-- [ ] Email input field has label and placeholder "example@email.com"
-- [ ] Message textarea has label and placeholder "Message sent to the employer"
+- [x] Email input field has label and placeholder "example@email.com"
+- [x] Message textarea has label and placeholder "Message sent to the employer"
 - [ ] CV upload field shows "Choose file" button and helper text
-- [ ] "Send Application" button is blue with white text
+- [x] "Send Application" button is blue with white text
 - [ ] All form fields are vertically stacked with consistent spacing
 - [ ] Form validates required fields (name, email, message)
 - [ ] Email validation rejects invalid formats
 - [ ] File upload validates file size (max 50 MB)
 - [ ] Responsive layout works on mobile viewports
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code

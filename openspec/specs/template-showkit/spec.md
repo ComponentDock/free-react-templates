@@ -153,11 +153,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Showkit"
-- [ ] Hero section — it SHALL contain a level-1 heading "Showkit"
-- [ ] Home onepage demos section — it SHALL show a heading "Home onepage Demos"
-- [ ] Blog page demos section — it SHALL show a heading "Showkit Blog Page Demos"
+- [x] Navigation bar — the navbar SHALL show the site name "Showkit"
+- [x] Hero section — it SHALL contain a level-1 heading "Showkit"
+- [x] Home onepage demos section — it SHALL show a heading "Home onepage Demos"
+- [x] Blog page demos section — it SHALL show a heading "Showkit Blog Page Demos"
 - [ ] Footer — it SHALL show a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

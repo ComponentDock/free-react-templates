@@ -393,11 +393,11 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/kickoff` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/kickoff` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- kickoff` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#ffb400, #6b75ff, #59b7ff, #232931, #f8f9fa, #212529, #6c757d, Nunito Sans) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `kickoff-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `kickoff-<n>`, Google Fonts link, lucide icons + inline SVG brand icons only)
 - [ ] Countdown and counters implemented with client-side hooks (fake timers in tests)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

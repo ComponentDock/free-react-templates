@@ -341,13 +341,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/zesty` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/zesty` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- zesty` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#FC0254, #353535, #878787, #F8F9FB, #EAEDF2, #b8c1d0, #fff, PT Sans) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `zesty-<n>`, Google Fonts PT Sans link, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `zesty-<n>`, Google Fonts PT Sans link, lucide icons + inline SVG brand icons only)
 - [ ] Overlapping pink section-title bars + plus-icon boxes rendered as absolutely-positioned accents (top -57px / -157px behavior)
 - [ ] Filter grid implemented with client-side state (no mixitup dep); "Meat Lover" scenario passes
 - [ ] Search overlay opens/closes; subscribe form validates + swaps to success (input unmounts — assert absence)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

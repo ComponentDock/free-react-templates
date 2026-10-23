@@ -161,10 +161,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page structure and sections — the page contains a Navbar, Hero, Features, About, Programs, Class Timetable, Pricing, Why Choose Us, Video CTA, Blog, and Footer sections
-- [ ] Navbar with navigation — it shows the logo "Sprintly" and links: Home, About, Classes, Schedule, Pricing, Blog, Contact
-- [ ] Hero section — it shows heading "Fitness & Sport", subtitle "Join Us Now", and a "Get Started" button
+- [x] Navbar with navigation — it shows the logo "Sprintly" and links: Home, About, Classes, Schedule, Pricing, Blog, Contact
+- [x] Hero section — it shows heading "Fitness & Sport", subtitle "Join Us Now", and a "Get Started" button
 - [ ] Features section with three cards — it displays 3 cards each with a title and description
-- [ ] About section — it shows heading "Welcome to Sprintly" and a description paragraph
+- [x] About section — it shows heading "Welcome to Sprintly" and a description paragraph
 - [ ] Programs section with four cards — it displays 4 cards each with a title and description
 - [ ] Class timetable — it shows days of the week with class entries
 - [ ] Pricing section with three plans — it displays 3 plans each with a name, price, features list, and CTA button

@@ -235,15 +235,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Talon." and links to Home, Services, Elements, Blog, and Contact
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Talon." and links to Home, Services, Elements, Blog, and Contact
 - [ ] Social icons bar — it SHALL contain links to Facebook, Twitter, Pinterest, Dribbble, Behance, and LinkedIn
-- [ ] Hero section — it SHALL contain a level-1 heading "Do you need a modern website?"
-- [ ] Services section — it SHALL show the heading "Our Services"
-- [ ] Features section — it SHALL show the heading "Why Choose Us"
-- [ ] About section — it SHALL show the heading "About Us"
+- [x] Hero section — it SHALL contain a level-1 heading "Do you need a modern website?"
+- [x] Services section — it SHALL show the heading "Our Services"
+- [x] Features section — it SHALL show the heading "Why Choose Us"
+- [x] About section — it SHALL show the heading "About Us"
 - [ ] Milestones section — it SHALL show 4 milestone items with numeric values
-- [ ] Testimonials section — it SHALL show the heading "What People Say"
-- [ ] Blog section — it SHALL show the heading "Latest Blog"
-- [ ] App composition — it SHALL set the document title to "Talon — Modern Business Template"
+- [x] Testimonials section — it SHALL show the heading "What People Say"
+- [x] Blog section — it SHALL show the heading "Latest Blog"
+- [x] App composition — it SHALL set the document title to "Talon — Modern Business Template"

@@ -138,13 +138,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Close button (X) is positioned top-right inside search bar
 - [ ] Search form is centered with button on left, input on right
 - [ ] Button has `#007bff` background, white text, no border-radius
-- [ ] Input has placeholder "Search..."
-- [ ] Navbar shows "Brand" on left, nav links + search icon on right
+- [x] Input has placeholder "Search..."
+- [x] Navbar shows "Brand" on left, nav links + search icon on right
 - [ ] Content area shows instructional text in gray
 - [ ] Search icon in navbar toggles the search bar open
 - [ ] Close icon in search bar toggles it closed
 - [ ] Responsive at mobile breakpoints
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

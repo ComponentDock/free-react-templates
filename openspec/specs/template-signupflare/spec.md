@@ -245,16 +245,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] White card, 5px radius, soft shadow, centered, max width ~450px
 - [ ] 160px coral→pink gradient header band with curved bottom-right corner (`5px 5px 50% 0`)
 - [ ] 100px circular avatar with white ring, overlapping the band (picsum seed signupflare-1)
-- [ ] "Sign Up" light 22px heading, centered
+- [x] "Sign Up" light 22px heading, centered
 - [ ] Pill inputs: John Doe / johndoe@gmail.com / Password (52px, radius 40px, faint gray bg)
 - [ ] Password eye toggle (show/hide) with aria-label (lucide-react icons)
-- [ ] Full-width gradient pill "Continue" button, white text, #f35587 border, solid-pink hover
+- [x] Full-width gradient pill "Continue" button, white text, #f35587 border, solid-pink hover
 - [ ] "I'm already a member! Sign In" sign-in line (#f35587 link, left-aligned)
 - [ ] Lato loaded via Google Fonts in index.html (300, 400)
 - [ ] Brand tokens in `@theme` (gradient colors, page bg, accent)
 - [ ] Placeholder images from picsum.photos (deterministic seed)
 - [ ] Responsive: card centered on mobile, fields full width
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

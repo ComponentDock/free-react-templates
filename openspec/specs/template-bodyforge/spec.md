@@ -202,10 +202,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header/Navbar — the navbar SHALL show the site name "BodyForge"
-- [ ] Hero banner — the heading "Feel Good" and "Breath" SHALL be displayed
-- [ ] About section — the heading "Welcome To Our Best Fitness Club" SHALL be visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header/Navbar — the navbar SHALL show the site name "BodyForge"
+- [x] Hero banner — the heading "Feel Good" and "Breath" SHALL be displayed
+- [x] About section — the heading "Welcome To Our Best Fitness Club" SHALL be visible
 - [ ] Featured Classes — three class cards SHALL be displayed
 - [ ] Our Service — three service items SHALL be displayed with icon, title, and description
 - [ ] Fitness Coaches — four coach cards SHALL be displayed

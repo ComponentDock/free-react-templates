@@ -198,10 +198,10 @@ The page footer SHALL include a link to https://www.componentdock.com/.
 - [ ] Preview unreachable (404) — fallback to screenshot used for all design tokens
 - [ ] Page background is a pastel gradient (blue → lavender → pink)
 - [ ] Centered white card with large rounded corners (24px radius) and drop shadow
-- [ ] Decorative header "TELL US ABOUT YOURS" in large semi-transparent bubbly font
+- [x] Decorative header "TELL US ABOUT YOURS" in large semi-transparent bubbly font
 - [ ] Step indicator: 3 dot circles below the card, active = filled, inactive = outlined
 - [ ] Circular profile picture placeholder with lavender border
-- [ ] "CHOOSE PICTURE" link with camera icon below avatar
+- [x] "CHOOSE PICTURE" link with camera icon below avatar
 - [ ] Pill-shaped form inputs: First Name, Last Name, Team Name, Email, Create a Password
 - [ ] Uppercase placeholder text in inputs
 - [ ] Active field dot indicator (filled pink/lavender for focused field)
@@ -211,8 +211,8 @@ The page footer SHALL include a link to https://www.componentdock.com/.
 - [ ] Back navigation preserves entered data
 - [ ] Progress dots update as user advances
 - [ ] Responsive layout stacks on mobile
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib in app code
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib in app code
 - [ ] Uses cn() from packages/ui
 - [ ] Font family: Montserrat + decorative display font via Google Fonts
 - [ ] 100% test coverage

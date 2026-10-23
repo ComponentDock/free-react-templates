@@ -132,9 +132,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page background — the page background is a dark color (not white)
 - [ ] Centered card layout — I see a centered white card with rounded corners and shadow on the dark background
-- [ ] Banner header — I see "Contact Us" as the main heading in the banner area
-- [ ] Contact form — I see a "Full Name" input field
+- [x] Banner header — I see "Contact Us" as the main heading in the banner area
+- [x] Contact form — I see a "Full Name" input field
 - [ ] Form interactivity — the field value updates to reflect my input

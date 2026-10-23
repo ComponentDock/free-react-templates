@@ -140,9 +140,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonials carousel with person image + text
 - [ ] Book a Table form with all fields
 - [ ] Footer with 4 link columns + newsletter + social icons
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via picsum.photos
 - [ ] Responsive (mobile nav toggle)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

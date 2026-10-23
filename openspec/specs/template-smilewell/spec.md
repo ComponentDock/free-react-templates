@@ -190,7 +190,7 @@ Users SHALL see a dark footer with about text, features links, newsletter, socia
 - [ ] Contact section shows form with fields + sidebar text
 - [ ] Footer shows dark bg, 3 columns, newsletter, social icons, Component Dock link
 - [ ] No references to ColorLib in app code (only in spec/TEMPLATES.md)
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Placeholder images use https://picsum.photos/seed/smilewell-<n>/<w>/<h>
 - [ ] Font loaded: Nunito from Google Fonts
 - [ ] Scroll animations implemented (fade-up on sections)

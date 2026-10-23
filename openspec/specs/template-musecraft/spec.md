@@ -152,9 +152,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with navigation links — the navbar shows the Musecraft brand and all 7 navigation links
-- [ ] Hero section with headline — the hero shows the main heading with highlighted "Graphic Design Solutions" text
+- [x] Hero section with headline — the hero shows the main heading with highlighted "Graphic Design Solutions" text
 - [ ] Services section with 8 service cards — 8 service cards are displayed with icons and descriptions
 - [ ] Portfolio section with project grid — 4 portfolio items are displayed in a grid
 - [ ] Crafters/Team section — 3 team member cards are shown with names and roles

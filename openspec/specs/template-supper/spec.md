@@ -107,13 +107,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page loads with hero section — I should see the heading "Welcome to Supper"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page loads with hero section — I should see the heading "Welcome to Supper"
 - [ ] Navbar shows all navigation links — I should see links for "Home", "About", "Menu", "Reserve A Table", "Contact"
-- [ ] Features section shows food items — I should see "Find your best food" heading
-- [ ] About section is visible — I should see "The Restaurant" heading
-- [ ] Chefs section shows chef profiles — I should see "Meet The Chefs" heading
-- [ ] Menu section displays items — I should see "Menu" heading
-- [ ] Reservation form has all fields — I should see "Reservation" heading
-- [ ] Testimonials section shows reviews — I should see "Customer Reviews" heading
-- [ ] Contact form has required fields — I should see "Get In Touch" heading
+- [x] Features section shows food items — I should see "Find your best food" heading
+- [x] About section is visible — I should see "The Restaurant" heading
+- [x] Chefs section shows chef profiles — I should see "Meet The Chefs" heading
+- [x] Menu section displays items — I should see "Menu" heading
+- [x] Reservation form has all fields — I should see "Reservation" heading
+- [x] Testimonials section shows reviews — I should see "Customer Reviews" heading
+- [x] Contact form has required fields — I should see "Get In Touch" heading

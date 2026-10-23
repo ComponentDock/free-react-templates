@@ -200,13 +200,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with top bar and navigation — THEN the brand name "BrightPath" is visible
-- [ ] Hero section with search form — THEN the heading "We Rank the Best Courses on the Web" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with top bar and navigation — THEN the brand name "BrightPath" is visible
+- [x] Hero section with search form — THEN the heading "We Rank the Best Courses on the Web" is visible
 - [ ] Features section with three items — THEN New Classes, Top Courses, and Full E-Books are shown with descriptions
 - [ ] Departments section with grid and CTA — THEN all 7 department names are visible
 - [ ] Popular Courses section with 4 cards — THEN 4 course cards appear with titles, author names, prices, student and comment counts
 - [ ] Facts section with dark overlay — THEN all 6 fact titles and descriptions are shown
 - [ ] Testimonials section — THEN 3 testimonial names and quotes are visible
-- [ ] Registration section with countdown and form — THEN "Register Now" heading, countdown labels, and form fields are visible
+- [x] Registration section with countdown and form — THEN "Register Now" heading, countdown labels, and form fields are visible
 - [ ] Events section with 2 cards — THEN 2 event titles, dates, and descriptions are visible

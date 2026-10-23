@@ -222,7 +222,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Header: transparent bg, logo, nav with dropdowns, CTA button
 - [ ] Hero: full-screen bg image, dark overlay, centered date/title/subtitle, decorative shapes
-- [ ] Performers: black bg, "Performer" heading, 2x2 grid of 4 cards with images
+- [x] Performers: black bg, "Performer" heading, 2x2 grid of 4 cards with images
 - [ ] About: black bg, centered heading, split image+text layout, CTA button
 - [ ] Program: dark overlay bg, timeline of 4 items with circle indicators
 - [ ] Map: embedded map placeholder (600px height)
@@ -231,7 +231,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All sections use Anton headings, Muli body text, #FF4533 brand color
 - [ ] Buttons use sharp corners (0px border-radius), Anton font
 - [ ] Dark theme throughout (black backgrounds, light text)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

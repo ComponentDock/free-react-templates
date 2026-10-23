@@ -491,7 +491,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Oswald (400/500/600) + Nunito Sans (400/600/700) + script logo font
       (Pacifico or Dancing Script) via Google Fonts `<link>` in
       `index.html`; document title "Decibel — DJ & Radio Template"
-- [ ] Navbar: absolute over hero, script logo "Decibel." white; links
+- [x] Navbar: absolute over hero, script logo "Decibel." white; links
       Home (active) / DJs / Shows ▾ / Events / About / Contact at white
       60%, hover white; Shows dropdown (Top 20 of The Week, Featured
       Artist, Interviews, Sub Menu ▾ → Menu One/Two/Three) with pink
@@ -528,5 +528,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` on BOTH dup rows (lines 373 and 2262) +
       surge URL + `npm run readme:status` done by implementer at ship
       time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

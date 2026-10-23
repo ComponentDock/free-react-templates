@@ -475,26 +475,26 @@ Dock (`https://www.componentdock.com/`) instead.
       `#222222` / `#828bb2` / `#777777`, card bg `#f9f9fb`, feature-card
       bg `#f2f3f7`, video band `#828bb2`, footer dark `#222222`, Playfair
       Display 900 + Roboto 400/500/700 via Google Fonts.
-- [ ] Navbar: transparent, "Corona" serif wordmark, links + Pages/Blog
+- [x] Navbar: transparent, "Corona" serif wordmark, links + Pages/Blog
       dropdowns, sticky white + shadow, mobile burger opens the menu.
 - [ ] Hero: violet cover background, white Playfair headline "Take the
       first step to learn with us", paragraph, right-side illustration,
       wave bottom edge.
 - [ ] Features: 3 items (New Classes, Top Courses, Full E-Books), thin
       right borders, `#828bb2` icons, "Read More" links.
-- [ ] Popular courses: "Popular Courses Available Right Now", 4 cards
+- [x] Popular courses: "Popular Courses Available Right Now", 4 cards
       (thumb, uppercase category, price `$150`, title, 5 stars, "25
       Reviews"), `#f9f9fb` details panels.
 - [ ] Video: `#828bb2` band, white title "Watch Our Trainers in Live
       Action", thumbnails with overlay + centered play buttons.
-- [ ] Other features: "Features That Can Avail By Everyone", 6 `#f2f3f7`
+- [x] Other features: "Features That Can Avail By Everyone", 6 `#f2f3f7`
       cards (Lifetime Access, Source File Included, Student Membership,
       35000+ Courses, Expert Mentors, Live Supports).
-- [ ] Registration: violet band, "Courses for Free" + "It is high time
+- [x] Registration: violet band, "Courses for Free" + "It is high time
       for learning", glassy form panel (purple glow shadow), Name/Phone/
       Email underline inputs (white text), gradient "Submit" button.
-- [ ] Testimonials: quote + "Fanny Spencer" / "Chief Executive, Amazon" + photo.
-- [ ] Blog: 3 image cards (meta, title, blurb, "View Details" + arrow);
+- [x] Testimonials: quote + "Fanny Spencer" / "Chief Executive, Amazon" + photo.
+- [x] Blog: 3 image cards (meta, title, blurb, "View Details" + arrow);
       section title choice (canonical vs. demo quirk) documented in PR.
 - [ ] Footer: 5 widgets (Top Products, Quick Links, Features, Resources,
       Newsletter + email input), neutral copyright line.
@@ -506,12 +506,12 @@ Dock (`https://www.componentdock.com/`) instead.
       wordmark; image backgrounds approximated with solids/gradients or
       picsum covers.
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [ ] 100% Vitest coverage on `apps/corona` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/corona` (lines/functions/branches/
       statements).
 - [ ] PR description includes: source template (ColorLib "Eclipse"),
       preview URL (https://preview.colorlib.com/theme/eclipse/ —
       reachable), design tokens used, what differs (name, one-pager
       instead of multi-page demo, placeholder images, text logo, Google-
       font substitution, neutral footer credit).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

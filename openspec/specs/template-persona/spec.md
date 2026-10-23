@@ -310,7 +310,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/persona`); `grep -c "free-react-templates/persona"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://persona.free.componentdock.com"`
+- [x] `"homepage": "https://persona.free.componentdock.com"`
       in `apps/persona/package.json`
 - [ ] PR title: `feat: Persona — personal branding website template
     (ColorLib Personal Wordpress Themes)`; body includes the source URL,

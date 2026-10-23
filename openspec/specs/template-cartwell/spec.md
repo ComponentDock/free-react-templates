@@ -163,12 +163,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Cart trigger button — the cart trigger shows "Cart (N)" where N is the total quantity
 - [ ] Cart dropdown panel — each cart item shows a product image, name, unit price, quantity, and subtotal
 - [ ] Quantity controls — the quantity increases by 1
 - [ ] Remove items — the item is removed from the cart
 - [ ] Close behavior — the dropdown closes
-- [ ] Accessibility — the trigger has `aria-haspopup="menu"` and `aria-expanded
-- [ ] Checkout — a "Checkout" button is visible
+- [x] Accessibility — the trigger has `aria-haspopup="menu"` and `aria-expanded
+- [x] Checkout — a "Checkout" button is visible

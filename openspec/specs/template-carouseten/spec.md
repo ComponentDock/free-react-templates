@@ -87,8 +87,8 @@ The footer SHALL display the template name, copyright notice, and a link to Comp
 - [ ] TypeScript strict compilation passes without errors.
 - [ ] ESLint and code quality checks pass.
 - [ ] Vitest unit tests achieve 100% test coverage across all components.
-- [ ] Footer correctly links `https://www.componentdock.com/`.
-- [ ] No references to ColorLib remain in the app source code.
+- [x] Footer correctly links `https://www.componentdock.com/`.
+- [x] No references to ColorLib remain in the app source code.
 - [ ] Build completes successfully with correct CNAME and homepage setup.
 - [ ] Hero Banner & Overview — the hero section displays a headline, description, and CTA buttons
 - [ ] Interactive Thumbnail Carousel — the active slide updates smoothly, displaying the corresponding image, caption, and title

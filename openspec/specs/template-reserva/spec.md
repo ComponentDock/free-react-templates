@@ -277,8 +277,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Buttons are 140px × 50px, uppercase, with correct hover states
 - [ ] Form inputs: transparent bg, #ebebeb border, 50px height, Poppins font
 - [ ] Responsive layout at 992px, 768px, 480px breakpoints
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Google Fonts (Poppins) loaded via index.html
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

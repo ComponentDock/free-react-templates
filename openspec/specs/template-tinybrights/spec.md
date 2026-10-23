@@ -218,8 +218,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonials carousel works with navigation
 - [ ] Navbar scrolls to fixed with white background
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in any app code
+- [x] No ColorLib references in any app code
 - [ ] 100% test coverage (Vitest + Testing Library)
 - [ ] Typecheck and lint pass
 - [ ] Build succeeds
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

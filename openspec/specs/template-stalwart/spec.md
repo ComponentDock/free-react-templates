@@ -491,8 +491,8 @@ Dock (`https://www.componentdock.com/`) instead.
       links, back-to-top), near-black #1E1E1E (Free Quote button, info-man
       box, footer), #F2F4F8 services bg, 2px red about border, Oswald +
       Barlow fonts, square (radius-0) buttons, red pill Subscribe.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Congoro), preview URL, tokens,
       and renames.
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

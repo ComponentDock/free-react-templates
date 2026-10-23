@@ -267,7 +267,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Top bar: blue background, phone + email + social icons
-- [ ] Navbar: dark background, "CleanSlate" logo with yellow accent, 7 nav links, sticky, mobile hamburger
+- [x] Navbar: dark background, "CleanSlate" logo with yellow accent, 7 nav links, sticky, mobile hamburger
 - [ ] Hero: background image, subheading, headline, blue CTA
 - [ ] Appointment form: 4 fields + submit button, overlapping hero
 - [ ] Welcome/About: business hours card + cleaner image + welcome text
@@ -281,7 +281,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: 4 columns + copyright with Component Dock link
 - [ ] Responsive: all sections adapt to mobile viewports
 - [ ] Accessibility: semantic HTML, aria labels, keyboard navigation
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

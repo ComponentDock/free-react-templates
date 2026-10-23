@@ -171,9 +171,9 @@ The template SHALL NOT contain any references to "colorlib" in app source files.
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
 - [ ] Fixed sidebar navigation — the sidebar is visible on the left with all navigation links
 - [ ] Hero section — the hero section displays "Hi!" and "I'm Alex" headings
 - [ ] About section — "Who Am I?" heading and service icons (Graphic Design, Web Design, Software, Application) are visible

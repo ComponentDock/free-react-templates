@@ -171,14 +171,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Font family is Poppins
 - [ ] Floating subscribe form with pill shape (40px radius, white bg)
 - [ ] Subscribe button: #bfa88e bg, white text, uppercase, 150×56px
-- [ ] Brand column: logo (white, uppercase), description, "read more" link
+- [x] Brand column: logo (white, uppercase), description, "read more" link
 - [ ] Four nav columns: Discover, About, Resources, Social
 - [ ] Column dividers: 1px rgba(255,255,255,0.05), hidden on mobile
 - [ ] Nav links: rgba(255,255,255,0.4), white on hover
-- [ ] Partner strip with borders, 6 company links, "See All"
+- [x] Partner strip with borders, 6 company links, "See All"
 - [ ] Copyright bar: left-aligned, rgba(255,255,255,0.4), 14px
 - [ ] Legal links: Terms, Privacy, Compliances (right-aligned)
 - [ ] Links use accent color #bba387
 - [ ] Responsive: columns stack, dividers hide on mobile
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code (provenance in spec only)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

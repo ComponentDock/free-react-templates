@@ -161,12 +161,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header navigation — the header displays the "Pranayama" logo on the left
-- [ ] Hero section — a hero section with the heading "Find Your Zen" is displayed
-- [ ] Yoga classes section — a section title "Our Classes" is displayed
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header navigation — the header displays the "Pranayama" logo on the left
+- [x] Hero section — a hero section with the heading "Find Your Zen" is displayed
+- [x] Yoga classes section — a section title "Our Classes" is displayed
 - [ ] Different yoga section — a motivational quote is displayed
 - [ ] Yoga name section — three yoga styles are displayed: Hatha Yoga, Power Yoga, Ashtanga
 - [ ] Client testimonials — two testimonial cards are displayed
-- [ ] Call to action — the heading "Take a Free Class Now" is displayed
+- [x] Call to action — the heading "Take a Free Class Now" is displayed
 - [ ] Responsive layout — the navigation collapses to a hamburger menu

@@ -410,10 +410,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `openspec/specs/template-peregrine/spec.md` validated
       (`npm run spec:validate`)
-- [ ] App folder `apps/peregrine`, package
+- [x] App folder `apps/peregrine`, package
       `@free-react-templates/peregrine`, no ColorLib references in app
       code (grep for colorlib/Traveland in apps/peregrine)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) —
       `bash scripts/verify-app.sh peregrine`
 - [ ] Section order matches the source: header → hero → search panel →
@@ -434,7 +434,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Search panel: dark `#232931` rounded panel, 4 fields
       (Destination text, Check-in / Check-out dates, Price Limit select
       $5,000–$2,000,000) + gold "Search" button with black text
-- [ ] Best Place: centered heading + 4 cards (photo + white "$400" badge + "15 Days Tour" label + title + 5 gold stars + "(120)")
+- [x] Best Place: centered heading + 4 cards (photo + white "$400" badge + "15 Days Tour" label + title + 5 gold stars + "(120)")
 - [ ] Activities: bg-light, 4 blocks (icon 60px gradient text + h3 + p):
       Activities, Travel Arrangements, Private Guide, Location Manager
 - [ ] About: photo left + "About Traveland" heading + p + 2×2 grey
@@ -443,11 +443,11 @@ Dock (`https://www.componentdock.com/`) instead.
       "300 per person" + "New Orleans Hotel" + 5 stars + "(120)")
 - [ ] Things to Know: photo right + heading + 3 numbered tips + gold
       "Read more" button
-- [ ] Testimonials: dark overlay bg + white "Happy Traveler Says"
+- [x] Testimonials: dark overlay bg + white "Happy Traveler Says"
       heading + carousel (quote + name + position), prev/next controls
 - [ ] Recent Stories: bg-light, heading + 3 blog cards (photo + date
       block day/month/year + title)
-- [ ] Subscribe: dark band, "Subscribe to our Newsletter" heading +
+- [x] Subscribe: dark band, "Subscribe to our Newsletter" heading +
       70px email input + gold "Subscribe" button
 - [ ] Footer: `#222831` bg, 4 columns (brand + 3 social circles /
       Infromation 6 links / Experience 6 links / Have a Questions?
@@ -460,7 +460,7 @@ Dock (`https://www.componentdock.com/`) instead.
       (name, placeholder images, React carousel + mobile nav instead of
       owl-carousel/Bootstrap collapse, native select instead of
       bootstrap-datepicker, Component Dock footer credit)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

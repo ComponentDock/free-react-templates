@@ -171,7 +171,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Sticky white navbar with logo, nav links, and CTA button
 - [ ] Hero section with background image, heading, subtext, and CTA
 - [ ] Services carousel with image overlay cards
-- [ ] About section with "Our Philosophy" and author attribution
+- [x] About section with "Our Philosophy" and author attribution
 - [ ] Accordion with 4 items and stats on right
 - [ ] Testimonials carousel with dark background
 - [ ] Case studies grid with category tags
@@ -181,8 +181,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Brand color #FD8F5F applied as accent
 - [ ] Pill-shaped buttons (border-radius: 30px)
 - [ ] Responsive breakpoints
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] CNAME set to advisory.free.componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] CNAME set to advisory.free.componentdock.com
 - [ ] Coverage 100% lines/functions/branches/statements
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

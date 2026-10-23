@@ -478,4 +478,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md bookkeeping at ship time: mark BOTH `- [ ]` rows (line
       627 Bootstrap 5, line 1183 Business) `[x]` with the same surge URL
       (`https://thrive.free.componentdock.com`) + `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

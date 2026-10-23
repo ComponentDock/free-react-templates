@@ -428,21 +428,21 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/ivy`)
 - [ ] Section order matches the reference 1:1 (top bar → navbar → hero slider → services → What We Offer → counter/video → courses → teachers → quote form → events → blog → testimonials → gallery → footer)
 - [ ] Design tokens in `@theme` (brand orange #fd5f00, hover #e55500, navy #0d1128, gold #fda638, purple #5d50c6, footer #1a1a1a, Poppins stack)
-- [ ] Top bar: "Ivy. University" wordmark, contact toppers with orange icons, orange "Apply now" button
+- [x] Top bar: "Ivy. University" wordmark, contact toppers with orange icons, orange "Apply now" button
 - [ ] Navbar: dark navy, 6 white links, search input; mobile hamburger; scrolled glass state optional
-- [ ] Hero slider: 2 slides, 600px, photo + overlay, headline + Duden copy + orange "Contact Us" button, pager
+- [x] Hero slider: 2 slides, 600px, photo + overlay, headline + Duden copy + orange "Contact Us" button, pager
 - [ ] Services strip: 4 alternating orange/navy cards with white circular icons (Certified Teachers, Special Education, Book & Library, Sport Clubs)
 - [ ] What We Offer: framed photo left, heading + copy + 6 feature rows (orange circular icons) right
-- [ ] Counter/video: navy→orange gradient bg, video thumbnail + white circular play button, "Ivy University" heading, 4 counters (18 / 401 / 30 / 50)
+- [x] Counter/video: navy→orange gradient bg, video thumbnail + white circular play button, "Ivy University" heading, 4 counters (18 / 401 / 30 / 50)
 - [ ] Courses: 4 white radius-xl cards, meta row with orange icons (Mr. Khan / 10 seats / 4 Years), "Electric Engineering" title, "Apply now" button
-- [ ] Teachers: bg-light, 4 staff cards, orange "Teacher" position + social icons
+- [x] Teachers: bg-light, 4 staff cards, orange "Teacher" position + social icons
 - [ ] Request A Quote: orange→navy gradient overlay, form (First Name, Last Name, course select, Phone, Message), validation errors
-- [ ] Events: 3 cards, orange date badge (15 MAR etc.), time, blurb, "Learn More"
-- [ ] Blog: bg-light, 3 cards, orange date block (26 June 2032), meta, title, "Read more"
+- [x] Events: 3 cards, orange date badge (15 MAR etc.), time, blurb, "Learn More"
+- [x] Blog: bg-light, 3 cards, orange date block (26 June 2032), meta, title, "Read more"
 - [ ] Testimonials: avatar, purple #5d50c6 quote icon, name, orange position, orange active dot
 - [ ] Gallery: photo tiles with orange circular icon overlay, 2-col on mobile
 - [ ] Footer: #1a1a1a, 5 widgets (Have a Questions?, Recent Blog, Quick Links, Subscribe Us! with purple button, Connect With Us), orange underlines, Component Dock credit
-- [ ] Document title "Ivy — University Template"
+- [x] Document title "Ivy — University Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 403 (Bootstrap) and line 1642 (Education)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

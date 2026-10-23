@@ -506,10 +506,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run verify:app -- netora` (or `scripts/verify-app.sh netora`):
       typecheck + lint + vitest at 100% coverage (lines/functions/branches/
       statements) + build all green
-- [ ] No ColorLib / itlock reference in ANY app file (comments included);
+- [x] No ColorLib / itlock reference in ANY app file (comments included);
       provenance lives only in this spec, TEMPLATES.md, and the PR
-- [ ] Footer links https://www.componentdock.com/
-- [ ] `apps/netora/public/CNAME` = `netora.free.componentdock.com` and
+- [x] Footer links https://www.componentdock.com/
+- [x] `apps/netora/public/CNAME` = `netora.free.componentdock.com` and
       package `"homepage"` = `https://netora.free.componentdock.com`
 - [ ] Google Fonts: Fira Sans (400-800) + Rubik (300-700) via
       `<link>` in index.html — no copied font files
@@ -531,4 +531,4 @@ Dock (`https://www.componentdock.com/`) instead.
       Case Study → testimonials → footer
 - [ ] Bookkeeping: mark BOTH Itlock TEMPLATES.md rows (lines 592, 1064)
       `[x]` + `netora` URL + `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

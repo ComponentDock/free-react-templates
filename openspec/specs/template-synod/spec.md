@@ -112,10 +112,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navigation bar with countdown and donate CTA — the navbar displays the Synod logo, links (Home, About, Ministries, Sermons, Events, Gallery, News, Giving), a search icon, and a Donate button
 - [ ] Hero section with background image and CTA — the heading "Synod — A Place of Faith", subtitle, background image, and "Join us" button are displayed
 - [ ] Sermon section with media actions — the pastor photo, quote, speaker name, date, and category are displayed with four media buttons
-- [ ] About section with image and text — the image, heading "Welcome to Synod Church", two paragraphs, and "Read More" link are displayed
-- [ ] Features grid — three cards are displayed with titles "Spread Love", "Bible Study", and "Community"
+- [x] About section with image and text — the image, heading "Welcome to Synod Church", two paragraphs, and "Read More" link are displayed
+- [x] Features grid — three cards are displayed with titles "Spread Love", "Bible Study", and "Community"
 - [ ] Events section — at least three events are displayed with dates and locations

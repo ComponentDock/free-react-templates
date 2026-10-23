@@ -237,16 +237,16 @@ live sheet; do not build them from the screenshot, take the palette above:
 
 - [ ] Light gray page background (#f5f5f5)
 - [ ] Two-column card layout centered on page
-- [ ] Left card: white background, "Get in touch" heading
+- [x] Left card: white background, "Get in touch" heading
 - [ ] Name and Email fields side by side
 - [ ] Subject field full width
 - [ ] Message textarea full width, taller
-- [ ] "Send Message" blue button, white text, rounded
-- [ ] Right card: blue background, "Contact us" heading in white
+- [x] "Send Message" blue button, white text, rounded
+- [x] Right card: blue background, "Contact us" heading in white
 - [ ] Four contact items with circular icons (pin, phone, plane, globe)
 - [ ] Contact info text in white (bold labels, regular values)
 - [ ] Responsive: cards stack on mobile
-- [ ] No reference to ColorLib in app code
-- [ ] Footer links to componentdock.com
-- [ ] `public/CNAME` contains `touchpoint.free.componentdock.com`
-- [ ] `homepage` in package.json is `https://touchpoint.free.componentdock.com`
+- [x] No reference to ColorLib in app code
+- [x] Footer links to componentdock.com
+- [x] `public/CNAME` contains `touchpoint.free.componentdock.com`
+- [x] `homepage` in package.json is `https://touchpoint.free.componentdock.com`

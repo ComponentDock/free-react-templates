@@ -234,7 +234,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/crumb` created from a blog/landing app pattern, package renamed to
+- [x] `apps/crumb` created from a blog/landing app pattern, package renamed to
       `@free-react-templates/crumb`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run
@@ -253,4 +253,4 @@ test:coverage -- --project apps/crumb` or `scripts/verify-app.sh crumb`)
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL
       (`crumb.free.componentdock.com`) + homepage + `npm run
 readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

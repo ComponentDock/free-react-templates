@@ -126,7 +126,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] G1: Renders all sections — GIVEN** the page loads, when I scroll from top to bottom, then I see Navbar, Hero, About, Features, Projects, Testimonials, Blog, and Footer — in that order
 - [ ] G2: Navbar links — GIVEN** the page loads, when I inspect the navbar, then I see links for Home, About, Services, Portfolio, Blog, Contact
-- [ ] G3: Hero content — GIVEN** the page loads, when I read the hero section, then I see the subtitle "This is me", heading "Travor James", a description paragraph, and a "Discover Now" button
+- [x] G3: Hero content — GIVEN** the page loads, when I read the hero section, then I see the subtitle "This is me", heading "Travor James", a description paragraph, and a "Discover Now" button
 - [ ] G4: About stats — GIVEN** the page loads, when I inspect the About section, then I see three stat items: "$2.5M Total Donation", "1465 Total Projects", "3965 Total Volunteers"
 - [ ] G5: Skill bars — GIVEN** the page loads, when I inspect the About section, then I see 5 skill bars with labels and percentage values
 - [ ] G6: Feature cards — GIVEN** the page loads, when I inspect the Features section, then I see 6 service cards (Architecture, Interior Design, Concept Design — each appearing twice)

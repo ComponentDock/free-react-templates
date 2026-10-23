@@ -193,14 +193,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with logo and navigation links — the logo "Pipeflow" is visible
-- [ ] Hero section with dark overlay and CTA — the heading "We're your plumber" is visible
-- [ ] Quote/about section with split layout — a heading with "Plumbing" and "Nowhere" highlighted is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with logo and navigation links — the logo "Pipeflow" is visible
+- [x] Hero section with dark overlay and CTA — the heading "We're your plumber" is visible
+- [x] Quote/about section with split layout — a heading with "Plumbing" and "Nowhere" highlighted is visible
 - [ ] Services section with three service cards — headings for Maintenance, Residential Service, and Commercial Service are visible
-- [ ] Features section with image and feature cards — the heading "Features That make us Unique" is visible
+- [x] Features section with image and feature cards — the heading "Features That make us Unique" is visible
 - [ ] Counter/stats section with four statistics — the numbers 2536, 6784, 1059, and 12239 are visible
-- [ ] Video/promotional section with dark background — the heading "Explore ourselves in a new way" is visible
-- [ ] Call-to-action section — the heading "Got Impressed to our features" is visible
-- [ ] Testimonials section with carousel — the heading "What our Client's Say about us" is visible
+- [x] Video/promotional section with dark background — the heading "Explore ourselves in a new way" is visible
+- [x] Call-to-action section — the heading "Got Impressed to our features" is visible
+- [x] Testimonials section with carousel — the heading "What our Client's Say about us" is visible
 - [ ] Contact section with form — a name input, email input, and message textarea are visible

@@ -137,9 +137,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation — The navbar shall display the brand name "Packr" and navigation links to all sections. On mobile, a hamburger button shall toggle a dropdown menu
+- [x] Navigation — The navbar shall display the brand name "Packr" and navigation links to all sections. On mobile, a hamburger button shall toggle a dropdown menu
 - [ ] Hero Section — The hero section shall display a background image with a dark overlay, a subtitle, a main heading, and a CTA button linking to the contact section
 - [ ] Services Section — The services section shall display 6 service cards in a responsive grid, each with an icon, title, and description
 - [ ] Portfolio Section — The portfolio section shall display 6 project items in a 2-column grid with hover effects showing project tags and title

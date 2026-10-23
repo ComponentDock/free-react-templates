@@ -183,12 +183,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar navigation and mobile menu — links for Home, About, Services, Portfolio, Testimonials, and Contact are visible
-- [ ] Banner hero section — the heading reads "Digital and innovative idea"
-- [ ] About Us section — the heading reads "Digital design and development company"
-- [ ] Services section — "User experience design", "Web and App development", and
-- [ ] Portfolio section with filter tabs — the heading reads "Our Projects"
-- [ ] Creative section — the heading reads "We work hard and think creatively"
-- [ ] Testimonials section — the heading reads "What Our Clients Say"
-- [ ] CTA section — the heading reads "create something awesome together"
+- [x] Banner hero section — the heading reads "Digital and innovative idea"
+- [x] About Us section — the heading reads "Digital design and development company"
+- [x] Services section — "User experience design", "Web and App development", and
+- [x] Portfolio section with filter tabs — the heading reads "Our Projects"
+- [x] Creative section — the heading reads "We work hard and think creatively"
+- [x] Testimonials section — the heading reads "What Our Clients Say"
+- [x] CTA section — the heading reads "create something awesome together"

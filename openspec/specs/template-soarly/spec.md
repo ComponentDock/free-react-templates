@@ -525,7 +525,7 @@ Dock (`https://www.componentdock.com/`) instead.
       bg, `#1c2126` weight-700 text, 50px height, padding 0 50px, NO hover
       rule; validates required fields (flying-from/flying-to) and shows a
       summary line / validation messages
-- [ ] Source copy kept verbatim: "Book Your Flight", "Roundtrip", "One way",
+- [x] Source copy kept verbatim: "Book Your Flight", "Roundtrip", "One way",
       "Multi-City", "Flying from", "Flying to", "Check In", "Check Out",
       "Travel class", "Economy class" / "Business class" / "First class",
       "Adults", "Children", "Check availability"
@@ -538,5 +538,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

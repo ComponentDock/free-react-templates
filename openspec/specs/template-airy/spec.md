@@ -167,12 +167,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL display the brand "Airy" and all six navigation links
-- [ ] Hero section — the hero SHALL display the subheading "Welcome"
-- [ ] About section — the about section SHALL display the heading "What We Can Do for You"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL display the brand "Airy" and all six navigation links
+- [x] Hero section — the hero SHALL display the subheading "Welcome"
+- [x] About section — the about section SHALL display the heading "What We Can Do for You"
 - [ ] Services grid — the services grid SHALL display four items: Business Strategy, Data Analysis, Graphic Design, Creative
-- [ ] Counter section — the counter section SHALL display the heading "Interesting Facts"
-- [ ] Projects gallery — the projects section SHALL display the heading "Recent Projects"
-- [ ] Testimonials carousel — the testimony section SHALL display the heading "What Our Clients Say"
+- [x] Counter section — the counter section SHALL display the heading "Interesting Facts"
+- [x] Projects gallery — the projects section SHALL display the heading "Recent Projects"
+- [x] Testimonials carousel — the testimony section SHALL display the heading "What Our Clients Say"
 - [ ] Pricing section — the pricing section SHALL display four plans: Free ($0), Startup ($19), Premium ($49), Pro ($99)

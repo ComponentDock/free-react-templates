@@ -168,7 +168,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens match: Open Sans body, Playfair Display headings, #0051d2 primary
 - [ ] Hero banner has correct heading and two CTA buttons
 - [ ] Feature section shows 3 cards with icons
-- [ ] Services section shows 3 service items with "Learn More" links
+- [x] Services section shows 3 service items with "Learn More" links
 - [ ] About section right-aligned on desktop
 - [ ] Team section shows 3 doctor cards with social icons
 - [ ] Appointment area: FAQ accordion (5 items) + form (Name, Email, Message)
@@ -176,6 +176,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Brands logo carousel renders
 - [ ] Footer: 4 link columns + newsletter + social icons + copyright + Component Dock link
 - [ ] Responsive: mobile hamburger menu, stacked layouts
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Tests pass with 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

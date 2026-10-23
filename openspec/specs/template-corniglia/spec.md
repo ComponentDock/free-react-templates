@@ -319,13 +319,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/corniglia` exists; package `@free-react-templates/corniglia`;
+- [x] `apps/corniglia` exists; package `@free-react-templates/corniglia`;
       `public/CNAME` = `corniglia.free.componentdock.com`; `homepage` =
       `https://corniglia.free.componentdock.com`
 - [ ] index.html loads Google Fonts Roboto (300/400/500) AND Arbutus Slab
       (400 — the quote font; the serif-on-dark contrast is the signature
       typographic move); no font/image/icon assets copied from ColorLib
-- [ ] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
+- [x] No `colorlib.com` / `preview.colorlib.com` strings anywhere in
       `apps/corniglia` (provenance lives only in this spec, TEMPLATES.md, PR)
 - [ ] Single section (`py-[7em]`) on DARK SLATE `#393e46` background;
       centered WHITE heading (~20px, Roboto, ~3rem top/bottom margins) —
@@ -353,10 +353,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Responsive: ≥992px arrows visible; <992px arrows hidden, dots remain;
       no horizontal overflow at any width; blockquote centered within the
       fluid container
-- [ ] Footer: minimal "Component Dock" → https://www.componentdock.com/
+- [x] Footer: minimal "Component Dock" → https://www.componentdock.com/
 - [ ] TDD: 100% coverage; verify via `scripts/verify-app.sh corniglia`
 - [ ] PR: branch `feat/template-corniglia`, PR description with source slug,
       preview URL, tokens, renames (esp. "dark testimonials carousel —
       autoplay + loop + arrows + dots, ~1s slide — differs from Manarola's
       white tabbed media carousel"); merge immediately
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

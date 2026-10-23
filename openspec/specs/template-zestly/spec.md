@@ -117,12 +117,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with navigation and mobile toggle — the navbar displays the Zestly logo, six navigation links, and a search icon
-- [ ] Hero section with headline and CTA — the hero section displays the headline "Chicken dish with per boiled egg", supporting text, and a link to the recipes section
-- [ ] Recipe cards grid — three recipe cards are shown with titles "Egg Manchurian", "Pure Vegetable Bowl", and "Egg Masala Ramen"
+- [x] Hero section with headline and CTA — the hero section displays the headline "Chicken dish with per boiled egg", supporting text, and a link to the recipes section
+- [x] Recipe cards grid — three recipe cards are shown with titles "Egg Manchurian", "Pure Vegetable Bowl", and "Egg Masala Ramen"
 - [ ] Recipe videos section with play button — the heading "Recipe videos that never misses any portion" and a play button are visible
-- [ ] Dishes showcase section — three dish cards are shown with titles "Birthday Catering", "Corporate Events", and "Family Gatherings"
-- [ ] Latest trending CTA section — the heading "Discover latest trending recipes" and a "View all Recipes" button are visible
-- [ ] Customer feedback testimonials — three customer testimonials with names "Adame Nesane", "Maria Santos", and "James Wilson" are shown
+- [x] Dishes showcase section — three dish cards are shown with titles "Birthday Catering", "Corporate Events", and "Family Gatherings"
+- [x] Latest trending CTA section — the heading "Discover latest trending recipes" and a "View all Recipes" button are visible
+- [x] Customer feedback testimonials — three customer testimonials with names "Adame Nesane", "Maria Santos", and "James Wilson" are shown
 - [ ] Download app section — App Store and Play Store download buttons are visible

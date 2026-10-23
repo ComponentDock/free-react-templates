@@ -203,16 +203,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] TopBar — a dark top bar shows phone number "+00 1234 567" and email "youremail@email.com"
-- [ ] Navbar — the navbar displays "Precedent" logo and links: Home, About, Practice Areas, Cases, Attorneys, Blog, Contact
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] TopBar — a dark top bar shows phone number "+00 1234 567" and email "youremail@email.com"
+- [x] Navbar — the navbar displays "Precedent" logo and links: Home, About, Practice Areas, Cases, Attorneys, Blog, Contact
 - [ ] Hero — the hero shows heading "Don't Feel Helpless We Fight for Justice"
 - [ ] FeatureStrip — four feature cards are displayed: Expert Attorneys, Case Dismissed, Court Performance, Client Satisfaction
-- [ ] TrustSection — the section shows "Welcome to Precedent" subtitle and "Why to Put Trust In Precedent" heading
+- [x] TrustSection — the section shows "Welcome to Precedent" subtitle and "Why to Put Trust In Precedent" heading
 - [ ] PracticeAreas — six practice area cards are displayed: Business Law, Family Law, Criminal Law, Real Estate Law, Personal Injury, Judicial Law
 - [ ] Attorneys — four attorney cards are displayed with names, titles, and social media links
 - [ ] Testimonials — the next testimonial is displayed
-- [ ] CtaBanner — the section shows "We Have Great Results" heading
+- [x] CtaBanner — the section shows "We Have Great Results" heading
 - [ ] ContactForm — the form shows fields: Your Name, Your Email, Subject, Message
 - [ ] Accessibility — it uses semantic elements with proper aria-labels
 - [ ] Responsive — the navbar collapses to a hamburger menu

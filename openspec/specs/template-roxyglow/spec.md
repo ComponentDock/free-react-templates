@@ -250,13 +250,13 @@ The app MUST have correct CNAME and homepage values for Surge deployment.
 - [ ] Gold primary color (#b69100) used consistently for CTAs, stars, prices, accents
 - [ ] Black (#000000) used for booking button and dark overlays
 - [ ] Hero has 2-slide carousel with parallax background + dark overlay
-- [ ] Booking form has 5-field grid with dropdowns + "Check Availability" black button
+- [x] Booking form has 5-field grid with dropdowns + "Check Availability" black button
 - [ ] Services section uses 4-column image grid with hover overlays
 - [ ] Rooms section uses alternating 2-col layout (image + text panel with arrows)
 - [ ] Testimonials on light bg with circular avatars + gold quote icons + star ratings
 - [ ] Video hero section with large heading (800px height)
 - [ ] Restaurant section with 2-col menu grid + pattern background
 - [ ] Footer has 4-column layout + social icons
-- [ ] No ColorLib references in app code; footer links to Component Dock
-- [ ] `public/CNAME` contains `roxyglow.free.componentdock.com`
-- [ ] `package.json` homepage set to `https://roxyglow.free.componentdock.com`
+- [x] No ColorLib references in app code; footer links to Component Dock
+- [x] `public/CNAME` contains `roxyglow.free.componentdock.com`
+- [x] `package.json` homepage set to `https://roxyglow.free.componentdock.com`

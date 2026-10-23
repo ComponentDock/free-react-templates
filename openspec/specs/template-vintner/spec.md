@@ -295,11 +295,11 @@ Dock (`https://www.componentdock.com/`) instead.
       `#930077` accents, pill black buttons, light testimonials band
 - [ ] Google Fonts: Cinzel + Montserrat loaded via `<link>` in `index.html`
 - [ ] TEMPLATES.md lines 533, 1231, 1613, AND 1793 all marked `[x]`
-- [ ] `public/CNAME` = `vintner.free.componentdock.com`; `homepage` =
+- [x] `public/CNAME` = `vintner.free.componentdock.com`; `homepage` =
       `https://vintner.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header (logo + navbar) — the header SHALL show a centered brand wordmark "Vintner" in a
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Header (logo + navbar) — the header SHALL show a centered brand wordmark "Vintner" in a
 - [ ] Hero slider — the slide SHALL fill the viewport height (100vh, min-height
 - [ ] Products — the section SHALL show the centered Cinzel heading "Our
 - [ ] Testimonials — the section SHALL have the light background (`#f4f5f9`) of the
-- [ ] Blog — the section SHALL show the centered Cinzel heading "Wine's Blog"
+- [x] Blog — the section SHALL show the centered Cinzel heading "Wine's Blog"

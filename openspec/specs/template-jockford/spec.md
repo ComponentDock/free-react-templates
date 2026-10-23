@@ -219,14 +219,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Sidebar Navigation — a circular avatar image is displayed
 - [ ] Hero Section — the hero section fills the full viewport height
 - [ ] About Section — the heading "Who Am I?" is displayed
-- [ ] Services Section — the heading "Here are some of my expertise" is displayed
-- [ ] Skills Section — the heading "My Skills" is displayed
-- [ ] Education Section — the heading "Education" is displayed
-- [ ] Experience Section — the heading "Work Experience" is displayed
-- [ ] Work / Portfolio Section — the heading "Recent Work" is displayed
-- [ ] Blog Section — the heading "From the Blog" is displayed
-- [ ] Contact Section — the heading "Contact" is displayed
+- [x] Services Section — the heading "Here are some of my expertise" is displayed
+- [x] Skills Section — the heading "My Skills" is displayed
+- [x] Education Section — the heading "Education" is displayed
+- [x] Experience Section — the heading "Work Experience" is displayed
+- [x] Work / Portfolio Section — the heading "Recent Work" is displayed
+- [x] Blog Section — the heading "From the Blog" is displayed
+- [x] Contact Section — the heading "Contact" is displayed

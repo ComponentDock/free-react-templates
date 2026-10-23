@@ -157,13 +157,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Centered white card on light gray background
 - [ ] Blue circular user icon at top of card
-- [ ] "Sign In" heading in dark text, centered
+- [x] "Sign In" heading in dark text, centered
 - [ ] Username and Password inputs with full-border rounded styling
-- [ ] "Remember Me" checkbox with blue accent, checked by default
-- [ ] "Forgot Password" link in blue, right-aligned
-- [ ] Full-width blue (#4a90d9) "Login" button with slightly rounded corners
+- [x] "Remember Me" checkbox with blue accent, checked by default
+- [x] "Forgot Password" link in blue, right-aligned
+- [x] Full-width blue (#4a90d9) "Login" button with slightly rounded corners
 - [ ] Responsive card sizing on mobile viewports
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock")
+- [x] No ColorLib references in app code
 - [ ] Tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

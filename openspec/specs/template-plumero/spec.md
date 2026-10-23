@@ -220,8 +220,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Rubik font family applied as primary
 - [ ] 5px border-radius on all buttons
 - [ ] Responsive: hamburger menu on mobile, stacked grids
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Images use picsum.photos placeholders (deterministic seeds)
 - [ ] Icons from lucide-react (replace font awesome/flaticon)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

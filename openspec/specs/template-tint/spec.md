@@ -126,13 +126,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page loads with correct title — the document title is "Tint — Interior Design Studio"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page loads with correct title — the document title is "Tint — Interior Design Studio"
 - [ ] Navbar is visible with all links — the banner landmark is visible
 - [ ] Hero section shows headline and CTA — the hero headline mentions Interior Design Conference
 - [ ] About section displays company info — the about heading mentions Creating Awesomeness
 - [ ] Portfolio grid shows 4 projects — 4 portfolio items are displayed
-- [ ] CTA banner is visible — the CTA banner shows "Get to Know Project Estimate"
+- [x] CTA banner is visible — the CTA banner shows "Get to Know Project Estimate"
 - [ ] Stats counters are displayed — 4 stat items are visible with numeric values
 - [ ] Services section shows 6 services — 6 service cards are displayed
 - [ ] Testimonials section is present — the testimonials section contains at least 1 testimonial

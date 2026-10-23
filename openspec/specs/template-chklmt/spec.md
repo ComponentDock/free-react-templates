@@ -157,8 +157,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Design tokens documented: Roboto font, #efefef bg, #8cba51 green, Bootstrap 4
 - [ ] Selection limit (7 max) is the key behavioral feature
 - [ ] All 50 US states present as options
-- [ ] No `colorlib.com` or `preview.colorlib.com` strings in `apps/` code
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] `public/CNAME` contains `chklmt.free.componentdock.com`
-- [ ] `homepage` set to `https://chklmt.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No `colorlib.com` or `preview.colorlib.com` strings in `apps/` code
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] `public/CNAME` contains `chklmt.free.componentdock.com`
+- [x] `homepage` set to `https://chklmt.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

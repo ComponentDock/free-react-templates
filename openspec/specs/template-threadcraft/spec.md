@@ -154,12 +154,12 @@ The template SHALL NOT contain any references to "colorlib" in application sourc
       nav collapses to the mobile toggle, grids reflow.
 - [ ] Design tokens from the reference are applied via the Tailwind
       theme (brand color, font, radii) — no hard-coded hex in sections.
-- [ ] No ColorLib name, domain or URL in any app file or filename —
+- [x] No ColorLib name, domain or URL in any app file or filename —
       provenance stays in this spec, TEMPLATES.md and the PR.
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
-- [ ] TopBar displays contact information — the top bar shows "hello@threadcraft.com" and "+1 555 123 4567"
-- [ ] Navbar displays logo and navigation — the logo "Threadcraft" is displayed
-- [ ] HeroSlider displays promotional slides — the first slide with "Summer Collection" heading is visible
+- [x] Footer links https://www.componentdock.com/ ("Component Dock").
+- [x] TopBar displays contact information — the top bar shows "hello@threadcraft.com" and "+1 555 123 4567"
+- [x] Navbar displays logo and navigation — the logo "Threadcraft" is displayed
+- [x] HeroSlider displays promotional slides — the first slide with "Summer Collection" heading is visible
 - [ ] CategoryTabs switch product categories — that tab becomes visually active
 - [ ] TrendingProducts displays and filters products — products matching that category are shown
 - [ ] DealOfTheWeek displays countdown timer — the countdown timer shows Days, Hrs, Mins, Secs values

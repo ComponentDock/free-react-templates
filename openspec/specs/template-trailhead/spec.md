@@ -301,7 +301,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] `apps/trailhead` created from a blog/landing app pattern, package renamed
+- [x] `apps/trailhead` created from a blog/landing app pattern, package renamed
       to `@free-react-templates/trailhead`
 - [ ] TDD: tests written first (red), then implementation (green)
 - [ ] 100% coverage lines/functions/branches/statements (`npm run

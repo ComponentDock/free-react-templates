@@ -214,16 +214,16 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Facet" and links to Home, About, Projects, Team, Blog, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "We have a passion in creating new and unique spaces"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Facet" and links to Home, About, Projects, Team, Blog, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "We have a passion in creating new and unique spaces"
 - [ ] Services section — it SHALL show at least three feature cards (Perfectly Design, Carefully Planned, Smartly Execute) with blurbs
-- [ ] Call to action — it SHALL show a "Be Part of our Business" heading
-- [ ] Stats section — it SHALL show a heading "Since we started work in 1980"
-- [ ] Projects section — it SHALL contain a heading "Our Projects"
-- [ ] Team section — it SHALL show a heading "Behind those Beautiful Works"
-- [ ] Blog section — it SHALL show a heading "Read Our Stories"
-- [ ] Contact section — it SHALL show a heading "Contact Us"
+- [x] Call to action — it SHALL show a "Be Part of our Business" heading
+- [x] Stats section — it SHALL show a heading "Since we started work in 1980"
+- [x] Projects section — it SHALL contain a heading "Our Projects"
+- [x] Team section — it SHALL show a heading "Behind those Beautiful Works"
+- [x] Blog section — it SHALL show a heading "Read Our Stories"
+- [x] Contact section — it SHALL show a heading "Contact Us"
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

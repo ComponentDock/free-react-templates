@@ -459,7 +459,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer purple `#421b9b`; social icons are inline SVGs
 - [ ] Dark-mode `.dark` variants per repo conventions
 - [ ] README status table regenerated after merge (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

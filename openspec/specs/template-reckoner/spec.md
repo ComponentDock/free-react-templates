@@ -233,7 +233,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Contact sub-bar — a thin white top bar is visible
 - [ ] Navigation bar — a white full-width navigation bar is visible below the contact bar
 - [ ] Hero section — a full-width hero section is visible

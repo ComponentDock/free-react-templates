@@ -205,13 +205,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Snip" and a "Home" link pointing to the page root
-- [ ] Hero slider — it SHALL show a level-1 headline (e.g. "Experienced and traditional stylish barber shop")
-- [ ] About section — it SHALL show a heading (e.g. "About Us")
-- [ ] Services — it SHALL show the heading "Our Services"
-- [ ] Pricing — it SHALL show the heading "Pricing List"
-- [ ] Expert team — it SHALL show the heading "Expert Team"
-- [ ] Footer — it SHALL show the site name "Snip" and useful links
+- [x] Navigation bar — the navbar SHALL show the site name "Snip" and a "Home" link pointing to the page root
+- [x] Hero slider — it SHALL show a level-1 headline (e.g. "Experienced and traditional stylish barber shop")
+- [x] About section — it SHALL show a heading (e.g. "About Us")
+- [x] Services — it SHALL show the heading "Our Services"
+- [x] Pricing — it SHALL show the heading "Pricing List"
+- [x] Expert team — it SHALL show the heading "Expert Team"
+- [x] Footer — it SHALL show the site name "Snip" and useful links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

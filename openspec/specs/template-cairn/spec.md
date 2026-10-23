@@ -163,11 +163,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Footer renders with white background — the footer element has a white background (#fff)
 - [ ] Email subscribe form is displayed — an email input field is displayed with grey background (#e6e6e6)
 - [ ] Navigation links are displayed inline — navigation links are displayed inline and centered horizontally
 - [ ] Social media icons are displayed — social icons are displayed inline and right-aligned on desktop
 - [ ] Divider separates top and bottom sections — a border-bottom line separates the top section from the bottom bar
-- [ ] Bottom bar with logo centered — the logo text "Cairn" is centered
+- [x] Bottom bar with logo centered — the logo text "Cairn" is centered
 - [ ] Responsive layout — the top section stacks vertically

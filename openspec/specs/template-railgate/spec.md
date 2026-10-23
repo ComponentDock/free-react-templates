@@ -257,9 +257,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Heading: "Sidebar #09" in black, font-weight 400, Poppins
 - [ ] Body text: gray color, 14px, 1.8 line height, two paragraphs
 - [ ] Font: Poppins loaded from Google Fonts (weights 400, 500, 700)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code (only in spec/TEMPLATES.md)
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code (only in spec/TEMPLATES.md)
 - [ ] `vite.config.ts` has `injectUiSource()`
 - [ ] Tests: 100% lines/functions/branches/statements coverage
 - [ ] Build passes: typecheck + lint + test:coverage + build
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

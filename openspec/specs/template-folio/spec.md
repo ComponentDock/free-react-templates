@@ -159,11 +159,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Folio" and navigation links
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Folio" and navigation links
 - [ ] Hero section — it SHALL contain a subtitle text and a level-1 heading with the author name
 - [ ] Intro quote section — it SHALL show a play icon and a quoted text about the author
 - [ ] About section — it SHALL show an author image on one side and bio text on the other
-- [ ] Books gallery — it SHALL show a section heading "Our Books" or similar
+- [x] Books gallery — it SHALL show a section heading "Our Books" or similar
 - [ ] Statistics counter — it SHALL show at least 3 stat items with numbers and labels
 - [ ] Page composition — the page SHALL compose the Navbar, Hero, Intro, About, Books, Stats, and Footer

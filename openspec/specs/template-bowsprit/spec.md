@@ -611,7 +611,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/bowsprit` recreates ColorLib **"Website Menu V08"** (source slug
+- [x] `apps/bowsprit` recreates ColorLib **"Website Menu V08"** (source slug
       `website-menu-08`, https://colorlib.com/wp/template/website-menu-08/) under
       the new name `bowsprit`; the registry/`package.json` reads
       `@free-react-templates/bowsprit`
@@ -675,18 +675,18 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Shape language kept as the source has it: **`4px`** only on the flyout
       surface and the toggler, **`0`** on the CTA block — no pills, no extra
       rounding
-- [ ] Zero `colorlib` / "Website Menu 08" / `website-menu-08` provenance
+- [x] Zero `colorlib` / "Website Menu 08" / `website-menu-08` provenance
       references anywhere in `apps/bowsprit` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no
       `quicksand-*.woff2`, no `hero_1.jpg`, no inline SVG data URI, no `cl-`
       utility classes, no jQuery/Bootstrap, no copied strings (`Brand`,
       `Home`, `Recipes`, `Services`, `About`, `News`, `Contact Us`,
       `Food Catering`, `Drink & Beverages`, `Wedding & Birthday`)
-- [ ] `public/CNAME` = `bowsprit.free.componentdock.com` and
+- [x] `public/CNAME` = `bowsprit.free.componentdock.com` and
       `"homepage": "https://bowsprit.free.componentdock.com"` in
       `apps/bowsprit/package.json`; `package-lock.json` registers
       `@free-react-templates/bowsprit`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") with a computed current year
 - [ ] Accessibility: the toggle exposes `aria-expanded`/`aria-controls` (+
       `aria-haspopup` on the dropdown parent), the collapse region is labelled by
@@ -718,4 +718,4 @@ Dock (`https://www.componentdock.com/`) instead.
       a real hover+click keyboard disclosure, a hover/focus colour added for
       inactive labels since the source's `!important` rules leave none, the dead
       `body:before` veil dropped, reduced-motion handling, footer attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -212,15 +212,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Verve" and links to Home, Services, Portfolio, Blog, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Verve" and links to Home, Services, Portfolio, Blog, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading "I love to"
-- [ ] Services section — it SHALL contain a heading "Verve provides a fully featured text services platform!"
-- [ ] Call-to-action band — it SHALL contain the heading "Turn every channel into a revenue channel and drive business growth"
-- [ ] Works section — it SHALL contain a heading "Recent Works"
-- [ ] Testimonials section — it SHALL contain a heading "Our satisfied customer says"
-- [ ] Achievements counter — it SHALL contain a heading "Our achievements"
-- [ ] Blog section — it SHALL contain a heading "Recent Blog"
+- [x] Services section — it SHALL contain a heading "Verve provides a fully featured text services platform!"
+- [x] Call-to-action band — it SHALL contain the heading "Turn every channel into a revenue channel and drive business growth"
+- [x] Works section — it SHALL contain a heading "Recent Works"
+- [x] Testimonials section — it SHALL contain a heading "Our satisfied customer says"
+- [x] Achievements counter — it SHALL contain a heading "Our achievements"
+- [x] Blog section — it SHALL contain a heading "Recent Blog"
 - [ ] Footer — it SHALL show Quick Links, Contact Information, and Newsletter columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

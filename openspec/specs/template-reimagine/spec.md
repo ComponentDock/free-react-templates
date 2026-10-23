@@ -289,14 +289,14 @@ Dock (`https://www.componentdock.com/`) instead.
       scrolls, newsletter form has email validation.
 - [ ] Responsive check at 768px (hamburger nav, single-column layouts,
       no horizontal overflow).
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock").
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock").
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — a navbar SHALL display with a logo image on the left
 - [ ] Banner / Hero — a 600px-tall section with the pink-to-orange gradient background
 - [ ] Features section — a white-background section SHALL render with 3 feature cards
-- [ ] Services section — a gradient-background section SHALL display "Our Offered Services"
-- [ ] Portfolio / Amazing Works section — a section titled "Our Amazing Works" with subtitle
-- [ ] Story section — a gradient-background section SHALL render with "Our Untold Story"
+- [x] Services section — a gradient-background section SHALL display "Our Offered Services"
+- [x] Portfolio / Amazing Works section — a section titled "Our Amazing Works" with subtitle
+- [x] Story section — a gradient-background section SHALL render with "Our Untold Story"
 - [ ] Newsletter subscription — a light lavender (`#f9f9ff`) section SHALL display
 - [ ] Footer widgets — a gradient-background section SHALL display 3 contact widgets:
 - [ ] Accessibility and semantics — semantic HTML elements SHALL be used (`<header>`, `<nav>`,

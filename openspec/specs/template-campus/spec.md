@@ -419,11 +419,11 @@ Dock (`https://www.componentdock.com/`) instead.
       kinds, "By Simon Smith · March 18, 2018", star ratings, footer
       contact lines; the source "Wellcome" typo may be kept or fixed
       (deliberate)
-- [ ] Footer credit reworded (no "made with by Colorlib"); copyright line
+- [x] Footer credit reworded (no "made with by Colorlib"); copyright line
       kept
 - [ ] Responsive: features dividers flip horizontal ≤767px, popular cards
       stack ≤767px, hero h2 scales 60→30px, footer 4→2→1 columns
 - [ ] TEMPLATES.md: both "Academy" rows (Bootstrap line 328 + Education
       line 1625) marked `[x]` with surge URL on ship
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

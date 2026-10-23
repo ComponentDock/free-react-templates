@@ -521,5 +521,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL THREE `- [ ]` rows
       (lines ~460 Bootstrap, ~2457 Photography, ~2532 Portfolio) `[x]`
       with the same surge URL + `npm run readme:status` (implementer)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

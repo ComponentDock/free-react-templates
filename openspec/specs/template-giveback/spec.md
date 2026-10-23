@@ -277,19 +277,19 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Tokens used in the app: coral `#F15B43`, teal `#65C9BB`, orange
       `#FF6F00`, navy `#263B5C`, cream `#FCF2EB`; Jost headings + Rubik body
       via Google Fonts `<link>`; square buttons (radius 0).
-- [ ] No ColorLib references in `apps/giveback` (provenance lives in this
+- [x] No ColorLib references in `apps/giveback` (provenance lives in this
       spec, TEMPLATES.md, and the PR only).
-- [ ] Footer links `https://www.componentdock.com/`.
+- [x] Footer links `https://www.componentdock.com/`.
 - [ ] All images picsum-seeded (`picsum.photos/seed/giveback-N/w/h`).
 - [ ] Implementer gate: `scripts/verify-app.sh giveback` (typecheck + lint +
       100% coverage tests + build) and `npm run spec:validate`.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Giveback" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline "Give a helping hand to those who need it!"
-- [ ] Upcoming program — it SHALL show the label "Upcoming Program" and the heading "Donate vitamin B12 supply program"
-- [ ] About section — it SHALL show the heading "We are tender heart charity foundation."
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Giveback" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline "Give a helping hand to those who need it!"
+- [x] Upcoming program — it SHALL show the label "Upcoming Program" and the heading "Donate vitamin B12 supply program"
+- [x] About section — it SHALL show the heading "We are tender heart charity foundation."
 - [ ] Causes — it SHALL render three cards (Help the ecosystems, Donate Vitamin B12 Program, View Savers In Deworm Program)
-- [ ] What we are doing — it SHALL show the label "Helping today" and the heading "What we are doing"
-- [ ] Services — it SHALL show the heading "How we help people"
-- [ ] Blog — it SHALL show the heading "Latest Blog"
+- [x] What we are doing — it SHALL show the label "Helping today" and the heading "What we are doing"
+- [x] Services — it SHALL show the heading "How we help people"
+- [x] Blog — it SHALL show the heading "Latest Blog"
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

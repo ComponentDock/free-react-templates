@@ -489,22 +489,22 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/slugger`)
 - [ ] Section order matches the reference 1:1 (header → hero → match strip → scoreboard → game schedule → highlights → about → next match → team squad → services → testimonials → news → counters → subscribe → footer)
 - [ ] Design tokens from the reference used in `@theme` (primary #00bd56, secondary #207dff, dark #171b21, yellow #fdd043, footer #000000, text #999999; Oswald + Lato Google Fonts)
-- [ ] Header: transparent over hero → solid after scroll, logo (yellow mark + wordmark) + nav (Home/About/Games/Blog/Contact) + dark "Buy Ticket" (4 px rounded), mobile hamburger
-- [ ] Hero: full-height photo bg + overlay, h1 "Fieldrun Baseball Club" (80px white uppercase), paragraph, blue "Watch match" + green "Get ticket" buttons
-- [ ] Match strip: dark #171b21, Sluggers vs Jacksonville logos, "Baseball Champions League" + "Semi-Final", live countdown (days/hours/minutes/seconds), green "Buy Tickets"
-- [ ] Scoreboard: "Latest Game Result", 12 : 8 vs Mighty Falcons, "Game Report", diagonal blue/green slash background
-- [ ] Game schedule: heading + auto-advancing carousel of cards (logos, "Home @ Arena", date, "Watch Game"), green dots
+- [x] Header: transparent over hero → solid after scroll, logo (yellow mark + wordmark) + nav (Home/About/Games/Blog/Contact) + dark "Buy Ticket" (4 px rounded), mobile hamburger
+- [x] Hero: full-height photo bg + overlay, h1 "Fieldrun Baseball Club" (80px white uppercase), paragraph, blue "Watch match" + green "Get ticket" buttons
+- [x] Match strip: dark #171b21, Sluggers vs Jacksonville logos, "Baseball Champions League" + "Semi-Final", live countdown (days/hours/minutes/seconds), green "Buy Tickets"
+- [x] Scoreboard: "Latest Game Result", 12 : 8 vs Mighty Falcons, "Game Report", diagonal blue/green slash background
+- [x] Game schedule: heading + auto-advancing carousel of cards (logos, "Home @ Arena", date, "Watch Game"), green dots
 - [ ] Highlights: 400px image radius 5px + centered play button
-- [ ] About: photo bg + slash treatment, "About the Phoenix", paragraphs, "Watch Game" link, right image
+- [x] About: photo bg + slash treatment, "About the Phoenix", paragraphs, "Watch Game" link, right image
 - [ ] Next match: heading + left image + 4 schedule cards ("Home @ Arena - June 7, 2018", "vs", "Watch Game")
-- [ ] Team squad: dark slash section, "Our Team Squad" (accent word), 9 player cards (photo, name, position), auto carousel + green dots
+- [x] Team squad: dark slash section, "Our Team Squad" (accent word), 9 player cards (photo, name, position), auto carousel + green dots
 - [ ] Services: light bg, 4 blocks (Baseball Training, Softball Training, Basic Defense, Basic Tactics) with green icons
-- [ ] Testimonials: dark overlay, "Happy Viewers", auto carousel (avatar, quote, "Jason Smith", "Viewer")
+- [x] Testimonials: dark overlay, "Happy Viewers", auto carousel (avatar, quote, "Jason Smith", "Viewer")
 - [ ] News: "Recent News" + 4 cards with date block "29 / May / 2019", title, snippet, "More Details"
 - [ ] Counters: 4 animated stats (Game Played, Coaches, Trophies, Members)
-- [ ] Subscribe: photo bg, "Subcribe to our upcoming match", email input + green submit pill
+- [x] Subscribe: photo bg, "Subcribe to our upcoming match", email input + green submit pill
 - [ ] Footer: black bg, brand + Services/About Us/Company link widgets + "Have a Questions?" contact info + Component Dock credit row
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

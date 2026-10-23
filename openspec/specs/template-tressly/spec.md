@@ -193,13 +193,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Tressly" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline (e.g. "Beautiful Hair, Healthy You!")
-- [ ] About section with opening hours — it SHALL show a heading (e.g. "Welcome to Hair Salon")
-- [ ] Featured services — it SHALL show the heading "Featured Services"
-- [ ] Experience band — it SHALL show the heading "Experience Our Outstanding Services"
-- [ ] About Tressly — it SHALL show the heading "About Tressly"
-- [ ] Footer — it SHALL show the site name "Tressly" and quick links
+- [x] Navigation bar — the navbar SHALL show the site name "Tressly" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline (e.g. "Beautiful Hair, Healthy You!")
+- [x] About section with opening hours — it SHALL show a heading (e.g. "Welcome to Hair Salon")
+- [x] Featured services — it SHALL show the heading "Featured Services"
+- [x] Experience band — it SHALL show the heading "Experience Our Outstanding Services"
+- [x] About Tressly — it SHALL show the heading "About Tressly"
+- [x] Footer — it SHALL show the site name "Tressly" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

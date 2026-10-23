@@ -714,8 +714,8 @@ Dock (`https://www.componentdock.com/`) instead.
       (date selects + search row column, buttons 100px, tiles 90×61) —
       no horizontal overflow; content uses `min-height` so nothing clips
       on small screens.
-- [ ] No ColorLib strings in any app file; footer links
+- [x] No ColorLib strings in any app file; footer links
       https://www.componentdock.com/; provenance lives only in this
       spec, TEMPLATES.md, and the PR; no picsum/source images shipped
       (bank tiles are text/lucide cards).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -227,7 +227,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero full-width bg image + dark overlay
 - [ ] Work area uses bg image + overlay
 - [ ] All section headings match original hierarchy
-- [ ] Footer links to componentdock.com
-- [ ] No ColorLib references in app code
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer links to componentdock.com
+- [x] No ColorLib references in app code
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

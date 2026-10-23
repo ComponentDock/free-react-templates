@@ -128,8 +128,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Navbar renders navigation links — the navbar shows Home, About Us, Classes, Blog, and Contact links
 - [ ] Hero section displays main heading and CTA — the hero section shows "Find your inner CHI"
 - [ ] Courses section shows three yoga disciplines — three course headings are visible: Yoga, Hatha, Pilates
-- [ ] Meditation section has CTA — the meditation section shows a "Discover" button
+- [x] Meditation section has CTA — the meditation section shows a "Discover" button
 - [ ] Timetable shows working hours and progress — the timetable shows hours for each day of the week
-- [ ] Testimonial displays a quote — the testimonial section shows a quote from "Maria Smith"
+- [x] Testimonial displays a quote — the testimonial section shows a quote from "Maria Smith"
 - [ ] Contact section shows info — the contact section displays address, phone, and email
 - [ ] Gallery renders images — the gallery section renders 5 images

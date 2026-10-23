@@ -306,7 +306,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes for `template-palate`
 - [ ] `scripts/verify-app.sh palate` passes (typecheck + lint + vitest 100% coverage + build)
-- [ ] Sections in order (1:1 with source): black top info bar (phone/email/open hours) → transparent navbar (white links, orange active + "Book a table" pill; scrolled = fixed white) → 750px hero slider (3 Monoton headlines + "Order Now"/"View Menu" + dots) → About ("Appetizer Restaurant" + script "About" + orange video circle overlapping next section) → Counter band (18/15000/100/20 on photo) → Catering Services (3 cards, black 130px circles, bg `#fafafa`) → Our Menu (6 categories × 3 items, 100px circular photos, $29) → Make Reservation (form + map placeholder) → Our Master Chef (4 cards) → Happy Customer (5-slide carousel, white overlay) → dark footer (4 widgets + copyright)
+- [x] Sections in order (1:1 with source): black top info bar (phone/email/open hours) → transparent navbar (white links, orange active + "Book a table" pill; scrolled = fixed white) → 750px hero slider (3 Monoton headlines + "Order Now"/"View Menu" + dots) → About ("Appetizer Restaurant" + script "About" + orange video circle overlapping next section) → Counter band (18/15000/100/20 on photo) → Catering Services (3 cards, black 130px circles, bg `#fafafa`) → Our Menu (6 categories × 3 items, 100px circular photos, $29) → Make Reservation (form + map placeholder) → Our Master Chef (4 cards) → Happy Customer (5-slide carousel, white overlay) → dark footer (4 widgets + copyright)
 - [ ] Brand colors in `@theme`, used via Tailwind classes: `#ffa323` (brand orange: links, buttons, CTA pill, active link, video circle, script subheadings), `#000000` (icon circles, prices, counter numbers, labels), `#666666` body, `#141313` footer, `#fafafa` bg-light, `#fff` hero/nav text
 - [ ] Fonts via Google Fonts `<link>` in `index.html`: Poppins (body 17px), Monoton (hero h1 5vw uppercase), Miss Fajardose (script subheadings 100px orange); title "Palate — Restaurant Template"
 - [ ] Hero slider auto-rotates with white dot indicators; counter stats count up on scroll (IntersectionObserver); testimonial carousel one slide + dots + prev/next; navbar `.scrolled` fixed white state on scroll
@@ -314,5 +314,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Source typo fixed: hero slide 2 "Kick of Your Day" → "Kick Off Your Day"; 18 distinct dish names (source repeats 3); copyright rebranded "© Palate. All rights reserved."
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done by implementer at ship time (mark ALL FOUR "Appetizer" rows — lines 334, 885, 1768 and 2665 — Bootstrap category and the other three category rows)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

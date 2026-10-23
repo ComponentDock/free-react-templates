@@ -201,12 +201,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Launch section — the page SHALL show a white full-viewport section with a centered column
-- [ ] Review modal shell — a dialog element SHALL be present with role="dialog" and aria-modal="true"
+- [x] Review modal shell — a dialog element SHALL be present with role="dialog" and aria-modal="true"
 - [ ] Product image panel — a product image SHALL be displayed on the left panel
-- [ ] Product details panel — the heading "Grand Prix 4000" SHALL be displayed
-- [ ] Share button — a button with aria-label "Share" SHALL be visible in the top-right corner
-- [ ] Close button — a button with aria-label "Close" SHALL be visible
+- [x] Product details panel — the heading "Grand Prix 4000" SHALL be displayed
+- [x] Share button — a button with aria-label "Share" SHALL be visible in the top-right corner
+- [x] Close button — a button with aria-label "Close" SHALL be visible
 - [ ] Dismiss actions — the modal SHALL close
-- [ ] Document title — the document title SHALL be "SplitModal — Product Review Modal"
+- [x] Document title — the document title SHALL be "SplitModal — Product Review Modal"

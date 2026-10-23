@@ -203,13 +203,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Top bar — it SHALL show a date string
-- [ ] Header middle — it SHALL show the site name "FrontPage" as a link
-- [ ] Navigation bar — it SHALL show the site name "FrontPage" linking to `#home
-- [ ] Trending area — it SHALL contain the heading "Trending"
-- [ ] Weekly top news — it SHALL contain the heading "Weekly Top News"
+- [x] Header middle — it SHALL show the site name "FrontPage" as a link
+- [x] Navigation bar — it SHALL show the site name "FrontPage" linking to `#home
+- [x] Trending area — it SHALL contain the heading "Trending"
+- [x] Weekly top news — it SHALL contain the heading "Weekly Top News"
 - [ ] What's new section — it SHALL show the heading "What's New"
-- [ ] Weekly top news 2 — it SHALL contain the heading "Weekly Top News"
-- [ ] Recent articles — it SHALL contain the heading "Recent Articles"
+- [x] Weekly top news 2 — it SHALL contain the heading "Weekly Top News"
+- [x] Recent articles — it SHALL contain the heading "Recent Articles"
 - [ ] Page composition — all sections SHALL be present

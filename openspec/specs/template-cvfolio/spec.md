@@ -172,10 +172,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header contact bar — a header bar is visible at the top
 - [ ] Intro / Profile section — the intro section shows a circular profile photo
-- [ ] Portfolio section — a "Portfolio" heading is displayed with "MY WORK" subtitle
-- [ ] About Me section — an "About me" heading is displayed with "PROFESSIONAL PATH" subtitle
-- [ ] Work Experience section — a "Work Experience" heading is displayed with "PREVIOUS JOBS" subtitle
-- [ ] Education section — an "Education" heading is displayed with "ACADEMIC CAREER" subtitle
+- [x] Portfolio section — a "Portfolio" heading is displayed with "MY WORK" subtitle
+- [x] About Me section — an "About me" heading is displayed with "PROFESSIONAL PATH" subtitle
+- [x] Work Experience section — a "Work Experience" heading is displayed with "PREVIOUS JOBS" subtitle
+- [x] Education section — an "Education" heading is displayed with "ACADEMIC CAREER" subtitle

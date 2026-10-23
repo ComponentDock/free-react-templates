@@ -146,11 +146,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar navigation — the navbar displays links for Home, About, Courses, Pages, Blog, and Contact
-- [ ] Hero section with search — the hero section shows "We Rank the Best Courses on the Web"
-- [ ] About section — an image and the heading "Over 2500 Courses from 5 Platform" are visible
+- [x] Hero section with search — the hero section shows "We Rank the Best Courses on the Web"
+- [x] About section — an image and the heading "Over 2500 Courses from 5 Platform" are visible
 - [ ] Course categories — 14 course categories are displayed (Development, IT & Software, Photography, Language, Life Science, Business, Social Science, Data Science, Design, Training, Humanities…
-- [ ] Features grid — "Features That Make Us Hero" heading is shown
-- [ ] Faculty members — "Faculty Members" heading is shown
+- [x] Features grid — "Features That Make Us Hero" heading is shown
+- [x] Faculty members — "Faculty Members" heading is shown
 - [ ] Testimonials — testimonial items with author names and 5-star ratings are displayed

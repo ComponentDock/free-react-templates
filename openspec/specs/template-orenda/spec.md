@@ -268,5 +268,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate`
 - [ ] `bash scripts/verify-app.sh orenda` (typecheck + lint + 100% coverage tests + build)
 - [ ] Screenshot review: sections and order, `#2d3092` indigo brand, Josefin Sans/Sen, square buttons with hover sweep, dark `#0b0b1d` footer
-- [ ] TEMPLATES.md bookkeeping on merge: `[ ]` Onlineedu → `[x]` with `apps/orenda` (implementer task)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] TEMPLATES.md bookkeeping on merge: `[ ]` Onlineedu → `[x]` with `apps/orenda` (implementer task)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

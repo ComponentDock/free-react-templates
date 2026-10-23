@@ -412,12 +412,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `npm run typecheck` passes for `apps/congregate`
-- [ ] `npm run lint` passes for `apps/congregate`
+- [x] `npm run typecheck` passes for `apps/congregate`
+- [x] `npm run lint` passes for `apps/congregate`
 - [ ] `scripts/verify-app.sh congregate` passes (typecheck + lint + 100%
       coverage tests + build)
 - [ ] Full `npm run gate` passes in CI (knip + fallow included)
-- [ ] Header: amber logo mark + "Congregate" wordmark, About/Watch/Connect/
+- [x] Header: amber logo mark + "Congregate" wordmark, About/Watch/Connect/
       Give links, dark-mode toggle, amber "Plan Your Visit" button, mobile
       drawer with CTA
 - [ ] Hero: min-h-screen charcoal bg + full-bleed photo + overlay, "Everyone
@@ -427,11 +427,11 @@ Dock (`https://www.componentdock.com/`) instead.
       (7:00 PM) cards, Our Location card + Get Directions
 - [ ] What to Expect: "You're Invited" + 4 feature cards (Welcoming
       Community, Engaging Worship, Relevant Teaching, Great Kids Programs)
-- [ ] Watch & Listen: "Recent Messages" + 4 message cards (image, duration,
+- [x] Watch & Listen: "Recent Messages" + 4 message cards (image, duration,
       title, pastor/date) + View All Messages + Watch Live Every Sunday CTA
-- [ ] Get Involved: "Ways to Connect" + 4 cards (Plan Your Visit, Join a
+- [x] Get Involved: "Ways to Connect" + 4 cards (Plan Your Visit, Join a
       Group, Serve with Us, Next Steps)
-- [ ] Stories: dark section "Real People. Real Hope." + 3 testimonial cards
+- [x] Stories: dark section "Real People. Real Hope." + 3 testimonial cards
       (quote, author, meta, avatar)
 - [ ] CTA: "Your story isn't over." + Plan Your Visit / Watch a Message +
       stats (10+ Years, 500+ Weekly, 50+ Small Groups)
@@ -440,6 +440,6 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark mode toggles `.dark`, persists, and flips cream sections to
       charcoal-900
 - [ ] Placeholder images via seeded picsum (`seed/congregate-<n>/<w>/<h>`)
-- [ ] No copied ColorLib assets; brand amber #f59e0b in `@theme`
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No copied ColorLib assets; brand amber #f59e0b in `@theme`
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

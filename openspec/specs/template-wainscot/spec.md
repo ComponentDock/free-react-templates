@@ -316,9 +316,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-wainscot/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/wainscot`, package `@free-react-templates/wainscot`,
+- [x] App folder `apps/wainscot`, package `@free-react-templates/wainscot`,
       no ColorLib references in app code (grep for colorlib/Tangre in apps/wainscot)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh wainscot`
 - [ ] Section order matches the source: utility bar → navbar → hero →
       latest news → offer (stats + partner blurb) → projects → testimonials →
@@ -332,7 +332,7 @@ Dock (`https://www.componentdock.com/`) instead.
       menu
 - [ ] Hero: full-bleed interior photo, "Creativity Beyond Life" (Poppins
       300 white), white "Hire Us Now!" button
-- [ ] Latest news: 3 image cards under "Latest News from all categories"
+- [x] Latest news: 3 image cards under "Latest News from all categories"
 - [ ] Offer: `#222` bg, 4 stats (1.5K/10/250/369), "We can be your digital
       Problems Solution Partner", What we Offer (outlined) + Get a free
       Quote (solid) buttons
@@ -348,4 +348,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description: source template, preview URL, design tokens, diffs
       (name, placeholder images, paraphrased copy, newsletter no backend +
       validation)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -180,15 +180,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Full-viewport centered layout — the page background is white (#ffffff) and covers the full viewport height
 - [ ] Login card with green header — a card with width 500px, white background, border-radius 20px, and a subtle box shadow is visible
-- [ ] Username input field — a text input with placeholder "Username" is visible
-- [ ] Password input field — a password input with placeholder "Password" is visible
+- [x] Username input field — a text input with placeholder "Username" is visible
+- [x] Password input field — a password input with placeholder "Password" is visible
 - [ ] Input focus expansion effect — the input background area expands by 20px width
-- [ ] Forgot password link — the text "Forgot" is visible in muted gray (#999999)
-- [ ] Sign in submit button — a button labeled "Sign in" is visible
-- [ ] Sign up section — text "Don't have an account?" is visible at the bottom of the card in muted gray (#999999)
-- [ ] Form validation — an error message "Username is required" appears below the username input
+- [x] Forgot password link — the text "Forgot" is visible in muted gray (#999999)
+- [x] Sign in submit button — a button labeled "Sign in" is visible
+- [x] Sign up section — text "Don't have an account?" is visible at the bottom of the card in muted gray (#999999)
+- [x] Form validation — an error message "Username is required" appears below the username input
 - [ ] Responsive layout — the form shrinks to fit the viewport width
 - [ ] Semantic accessibility — the form uses semantic HTML elements

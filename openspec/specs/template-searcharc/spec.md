@@ -218,7 +218,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] White card form centered with correct max-width (790px)
 - [ ] Box shadow and border-radius match tokens
 - [ ] Category dropdown with all 7 options + chevron arrow
-- [ ] Text input with "Enter Keywords?" placeholder
+- [x] Text input with "Enter Keywords?" placeholder
 - [ ] Green search button with magnifying glass icon
 - [ ] Button hover changes to darker green
 - [ ] Tablet breakpoint (≤992px) reduces height to 50px

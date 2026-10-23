@@ -432,5 +432,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] README status table regenerated after merge (`npm run readme:status`);
       mark ALL THREE TEMPLATES.md rows (lines 240, 332, 1696) `[x]` when
       done
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

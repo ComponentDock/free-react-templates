@@ -182,14 +182,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders navigation and actions — the navbar shows Home, About, Shop, Blog, and Contact links
-- [ ] Hero section displays main heading and CTA — the hero shows "Fresh Flower & Gift Shop" tagline
+- [x] Hero section displays main heading and CTA — the hero shows "Fresh Flower & Gift Shop" tagline
 - [ ] Benefits section shows four benefit cards — four benefit cards are visible with their titles and descriptions
 - [ ] Categories section shows four category cards — four category cards are visible with names and item counts
-- [ ] About section displays two-column layout — "We provide all kinds of fresh flower services" heading is visible
-- [ ] New Arrivals section displays product grid with filters — 10 product cards are visible with "Fly Me To The Moon" names
-- [ ] Call to Action section displays CTA buttons — "Order Now" link points to #shop
+- [x] About section displays two-column layout — "We provide all kinds of fresh flower services" heading is visible
+- [x] New Arrivals section displays product grid with filters — 10 product cards are visible with "Fly Me To The Moon" names
+- [x] Call to Action section displays CTA buttons — "Order Now" link points to #shop
 - [ ] Blog section shows three blog posts — three blog post cards are visible with titles and tags
-- [ ] Testimonials section shows carousel — "Alejandro Houston" and "Businessman" are visible
+- [x] Testimonials section shows carousel — "Alejandro Houston" and "Businessman" are visible
 - [ ] Instagram feed shows five images — five Instagram post links are visible

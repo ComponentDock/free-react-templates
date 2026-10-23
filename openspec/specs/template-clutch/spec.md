@@ -239,18 +239,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes
 - [ ] `bash scripts/verify-app.sh clutch` passes (typecheck + lint + 100% coverage + build)
-- [ ] Every section above exists in `apps/clutch/src/App.tsx` in the documented order
+- [x] Every section above exists in `apps/clutch/src/App.tsx` in the documented order
 - [ ] Design tokens (#db2d2e red, #353535/#323232 darks, Lato) in `src/index.css` `@theme`
-- [ ] No ColorLib assets copied — all images picsum-seeded, icons lucide-react
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Clutch" and a "Home" link pointing to the page root
+- [x] No ColorLib assets copied — all images picsum-seeded, icons lucide-react
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Clutch" and a "Home" link pointing to the page root
 - [ ] Hero — it SHALL show an overline (e.g. "Find your dream car") and a level-1 headline (e.g. "Porsche Cayenne S")
 - [ ] Search form — the form SHALL contain labeled selects for year and brand
-- [ ] Services — it SHALL show the heading "What We Offers"
-- [ ] Feature section — it SHALL show the heading "We Are a Trusted Name In Auto"
-- [ ] Vehicle offers — it SHALL show the heading "Best Vehicle Offers"
-- [ ] Choose us — it SHALL show the heading "Why People Choose Us"
+- [x] Services — it SHALL show the heading "What We Offers"
+- [x] Feature section — it SHALL show the heading "We Are a Trusted Name In Auto"
+- [x] Vehicle offers — it SHALL show the heading "Best Vehicle Offers"
+- [x] Choose us — it SHALL show the heading "Why People Choose Us"
 - [ ] Blog row — it SHALL show the heading "Latest News Updates"
-- [ ] Footer — it SHALL show the site name "Clutch" and contact information
+- [x] Footer — it SHALL show the site name "Clutch" and contact information
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

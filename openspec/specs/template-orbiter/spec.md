@@ -186,10 +186,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog section shows 3 post cards
 - [ ] Testimonials slider renders with person images and quotes
 - [ ] Footer has 4 widget columns + social icons + copyright
-- [ ] Footer links to https://www.componentdock.com/
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Color tokens match: primary #3369e7, secondary #00aaff, heading #081b46, footer bg #efefef
 - [ ] Font: Noto Sans Google Font loaded in index.html
 - [ ] Mobile responsive (navbar collapses, columns stack)
-- [ ] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
+- [x] No ColorLib references in app code (provenance only in spec + TEMPLATES.md)
 - [ ] 100% test coverage on all components
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

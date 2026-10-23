@@ -171,12 +171,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders with logo and navigation links — the logo "Luminary" is displayed with a colored dot
+- [x] Navbar renders with logo and navigation links — the logo "Luminary" is displayed with a colored dot
 - [ ] Hero section displays headline and play button — a full-width background image is displayed
 - [ ] Services section shows four service cards — four cards are displayed: Inspire, Create, Innovate, Publish
-- [ ] About section displays features and image — "Why Are We Awesome?" heading is displayed
+- [x] About section displays features and image — "Why Are We Awesome?" heading is displayed
 - [ ] Concept section shows parallax background — a parallax background image fills the section
 - [ ] Testimonials carousel displays reviews — testimonial cards display person images, quotes, and names
-- [ ] Feature CTA section shows sharing prompt — "Help Us by Sharing Our Works" heading is displayed
+- [x] Feature CTA section shows sharing prompt — "Help Us by Sharing Our Works" heading is displayed

@@ -407,7 +407,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/journal`); `grep -c "free-react-templates/journal"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://journal.free.componentdock.com"`
+- [x] `"homepage": "https://journal.free.componentdock.com"`
       in `apps/journal/package.json`
 - [ ] PR title: `feat: Journal — lifestyle blog template (ColorLib
     Original)`; body includes source URL, preview URL

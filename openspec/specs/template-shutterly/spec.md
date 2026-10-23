@@ -414,9 +414,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Contact phone/email rendered as display strings; any `tel:`/`mailto:`
       hrefs computed at runtime from spaced literals (tel-literal redaction
       pitfall — NEVER write `tel:+...` literals in source)
-- [ ] Testimonial founder renamed (no "Colorlib" string in app code)
-- [ ] Footer links Component Dock (https://www.componentdock.com/)
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] Testimonial founder renamed (no "Colorlib" string in app code)
+- [x] Footer links Component Dock (https://www.componentdock.com/)
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (shutterly.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

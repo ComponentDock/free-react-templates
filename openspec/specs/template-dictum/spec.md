@@ -246,9 +246,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Contact: form with 5 fields + sidebar
 - [ ] CTA Banner: full-width teal bg, white heading
 - [ ] Footer: 4 columns, dark bg, social icons, newsletter
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] CNAME file: dictum.free.componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] CNAME file: dictum.free.componentdock.com
 - [ ] Placeholder images use picsum.photos
 - [ ] Icons from lucide-react
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

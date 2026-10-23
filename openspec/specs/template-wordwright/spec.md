@@ -273,9 +273,9 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Header: `#202020` bar, white script wordmark, 5 white links with Blog dropdown, hover `#FFEA01`, sticky `#0a0a0a` + shadow, mobile hamburger menu
 - [ ] Hero: 880px bg photo + yellow 55%×82% top-left block, 60px Montserrat H1 with 3px `#202020` bottom border, circular portrait + "Hi, I'm Wordwright" intro, square blue "See My Offers" button
 - [ ] Services: 50px title + 180×6px `#05f` underline bar, intro paragraph, 2×2 staggered grid of 4 cards (icon + 24px title link hover `#05f` + blurb)
-- [ ] Quote band: `#FFEA01` bg, photo + square blue "Learn More" button bottom-right, quote H2 + paragraph + signature image
+- [x] Quote band: `#FFEA01` bg, photo + square blue "Learn More" button bottom-right, quote H2 + paragraph + signature image
 - [ ] Testimonials: cream bg, "What Our Client Sayes" title, 3-slide carousel (quote + founder img + 5 stars `#0E1B50` + name `#4C526E`), dots
 - [ ] Stories band: `#202020` bg, photo + centered yellow "25 Years of Experience" box, white "Read my exemplary stories" heading, 2 story cards (white title link hover `#FFEA01`, blurb, muted meta)
 - [ ] Footer: cream, 50px headline, 3 social icons, square blue "Let's Start Discuss" button, 5-link row, copyright + Component Dock link
 - [ ] Responsive: hero stacks, services 1-col, quote/stories bands stack, mobile menu works
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

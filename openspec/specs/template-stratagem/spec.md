@@ -256,12 +256,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Header: two-tier navbar with logo, 6 nav links, "Get a Quote" CTA
+- [x] Header: two-tier navbar with logo, 6 nav links, "Get a Quote" CTA
 - [ ] Hero: 4-slide carousel with dark overlay, centered headline + CTA
 - [ ] Services: 6 icon cards in 3×2 grid
 - [ ] About: split layout with text + illustration
 - [ ] Counters: 4 stats on parallax background with dark overlay
-- [ ] Case Study: carousel of 4 cards with "More Cases" button
+- [x] Case Study: carousel of 4 cards with "More Cases" button
 - [ ] FAQ: accordion with 3 items + illustration
 - [ ] Testimonials: carousel with quote, avatar, name, role
 - [ ] Team: 3 member cards with social links
@@ -270,7 +270,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: 4-column layout + copyright bar with Component Dock link
 - [ ] Design tokens: Poppins font, #5DB2FF blue accent, #001D38 navy
 - [ ] All placeholder images via picsum.photos/seed/stratagem-*
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

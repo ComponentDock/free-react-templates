@@ -131,7 +131,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page layout — I see a full-screen background with a city skyline image
 - [ ] Two-column layout — the left column displays a decorative envelope illustration
-- [ ] Contact form — I see a "Get in touch" heading
+- [x] Contact form — I see a "Get in touch" heading

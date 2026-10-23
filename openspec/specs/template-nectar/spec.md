@@ -258,7 +258,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Blog: 3 cards with date badge overlays
 - [ ] Footer: 4 columns, newsletter form, Component Dock link
 - [ ] Responsive: hamburger nav, stacking grids, mobile-friendly forms
-- [ ] No ColorLib references in app code (provenance only in spec)
+- [x] No ColorLib references in app code (provenance only in spec)
 - [ ] Placeholder images via `picsum.photos/seed/nectar-<n>/...`
-- [ ] Footer links to `https://www.componentdock.com/`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links to `https://www.componentdock.com/`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

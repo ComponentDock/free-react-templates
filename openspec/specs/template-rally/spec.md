@@ -364,7 +364,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/rally`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/rally`
       (`scripts/verify-app.sh rally` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: header (transparent over hero → fixed purple gradient
@@ -397,5 +397,5 @@ Dock (`https://www.componentdock.com/`) instead.
       URL (https://preview.colorlib.com/theme/eventure/), design tokens, and
       what differs (name, placeholders, paraphrased copy, inner pages not
       recreated).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

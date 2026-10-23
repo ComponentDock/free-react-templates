@@ -204,13 +204,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation — "Register" and "Login" links are visible in the top bar
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation — "Register" and "Login" links are visible in the top bar
 - [ ] Hero Slider — a full-width image slider is visible
 - [ ] Featured Course — a featured course section is visible
-- [ ] Course Cards — a heading reads "Choose Your Course"
+- [x] Course Cards — a heading reads "Choose Your Course"
 - [ ] Milestones — 4 milestone counters are shown
 - [ ] Why Choose Us — the accordion panel toggles open/closed
 - [ ] News — 3 blog post previews are displayed
-- [ ] Join CTA — a heading reads "Join Our Platform Today"
+- [x] Join CTA — a heading reads "Join Our Platform Today"
 - [ ] Accessibility — banner, main, and contentinfo landmarks are present

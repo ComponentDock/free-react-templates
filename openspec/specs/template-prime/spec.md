@@ -433,12 +433,12 @@ Dock (`https://www.componentdock.com/`) instead.
       The Features
 - [ ] Quote section: left column solid `#2f89fc` with checklist; right form
       (Full Name/Email/Phone/Website/Message) with validation + success state
-- [ ] Newsletter: gradient band, "Subscribe to our Newsletter" (typo fixed),
+- [x] Newsletter: gradient band, "Subscribe to our Newsletter" (typo fixed),
       email validation
 - [ ] Icons: lucide-react (no flaticon/icomoon/FontAwesome, no copied assets)
-- [ ] No ColorLib references in any `apps/prime` file; footer links
+- [x] No ColorLib references in any `apps/prime` file; footer links
       https://www.componentdock.com/ ("Component Dock")
 - [ ] `TEMPLATES.md` lines 522, 1211, 2369 all marked `[x]` with surge URL by
       the implementer — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

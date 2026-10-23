@@ -136,12 +136,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header with two-tier layout and navigation — I see social links for Facebook, Twitter, and Dribbble
-- [ ] Hero section with background image and CTA — I see a heading "Protecting Your Digital Future"
-- [ ] Service section with three cards — I see a heading "Our Offered Services"
-- [ ] Feature section with six items on light background — I see a heading "Some Features that Made us Unique"
+- [x] Hero section with background image and CTA — I see a heading "Protecting Your Digital Future"
+- [x] Service section with three cards — I see a heading "Our Offered Services"
+- [x] Feature section with six items on light background — I see a heading "Some Features that Made us Unique"
 - [ ] Facts/stats counter section — I see the numbers 2536, 6784, 1059, 2239, 435
-- [ ] Gallery section with masonry layout — I see a heading "Latest From Our Gallery"
-- [ ] Blog section with four cards — I see a heading "Latest From Our Blog"
+- [x] Gallery section with masonry layout — I see a heading "Latest From Our Gallery"
+- [x] Blog section with four cards — I see a heading "Latest From Our Blog"
 - [ ] Brand color and font consistency — the CTA button has brand color background

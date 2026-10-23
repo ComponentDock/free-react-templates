@@ -142,13 +142,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — Renders logo and all nav links
-- [ ] Hero — Displays heading "Hello This is Vizion"
+- [x] Hero — Displays heading "Hello This is Vizion"
 - [ ] Services — Renders 3 service cards
 - [ ] Portfolio — Renders section header on dark background
-- [ ] About — Shows "About me" heading and description
+- [x] About — Shows "About me" heading and description
 - [ ] Stats — Shows 3 stat counters with values and labels
 - [ ] Testimonials — Renders testimonial content with author info
 - [ ] CTA — Shows "Let's discuss for a project" heading

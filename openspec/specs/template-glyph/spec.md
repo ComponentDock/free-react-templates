@@ -270,7 +270,7 @@ Dock (`https://www.componentdock.com/`) instead.
       100% coverage tests + build, ~2–3 min)
 - [ ] `npm run spec:validate` passes
 - [ ] Hero slider auto-advances and responds to manual prev/next controls
-- [ ] Mobile menu opens/closes; "Pages" submenu expands
+- [x] Mobile menu opens/closes; "Pages" submenu expands
 - [ ] Newsletter forms (sidebar + footer) validate email and show a
       success state
 - [ ] Fidelity: section order 1:1, Inconsolata monospace font, `#6f6fff`
@@ -282,10 +282,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/glyph`); `grep -c "free-react-templates/glyph"
   package-lock.json` >= 1
-- [ ] `"homepage": "https://glyph.free.componentdock.com"`
+- [x] `"homepage": "https://glyph.free.componentdock.com"`
       in `apps/glyph/package.json`
 - [ ] PR title: `feat: Glyph — blog template (ColorLib Opium)`; body
       includes source URL, preview URL
       (`https://preview.colorlib.com/theme/opium/`), tokens, and the
       three-copy TEMPLATES.md note
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

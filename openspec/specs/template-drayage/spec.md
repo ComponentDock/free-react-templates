@@ -393,11 +393,11 @@ Dock (`https://www.componentdock.com/`) instead.
       testimonials, 5-field form, 3 news cards, footer columns
 - [ ] All images are `picsum.photos/seed/drayage-*` placeholders; icons
       from `lucide-react`; zero copied assets
-- [ ] No "colorlib"/"Colorlib" string anywhere in `apps/drayage`
+- [x] No "colorlib"/"Colorlib" string anywhere in `apps/drayage`
       (grep); footer links Component Dock with the exact URL
-- [ ] `public/CNAME` = `drayage.free.componentdock.com`; `homepage` =
+- [x] `public/CNAME` = `drayage.free.componentdock.com`; `homepage` =
       `https://drayage.free.componentdock.com`
 - [ ] Form validation blocks invalid submit; valid submit shows success
 - [ ] Slider arrows + nav dropdown keyboard-operable with
       `aria-expanded`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -241,10 +241,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hamburger menu on mobile
 - [ ] Responsive grid collapse at breakpoints
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Brand tokens in `@theme` (Tailwind CSS 4)
 - [ ] Placeholder images via `picsum.photos`
 - [ ] Google Fonts (Roboto) loaded in index.html
 - [ ] `cn()` used for all class composition
 - [ ] 100% test coverage (Vitest + Testing Library)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

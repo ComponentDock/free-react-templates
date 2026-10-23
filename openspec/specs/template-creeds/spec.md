@@ -356,7 +356,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/creeds`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/creeds`
       (`scripts/verify-app.sh creeds` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: top bar (My Account + Donate Now + socials), white
@@ -389,5 +389,5 @@ Dock (`https://www.componentdock.com/`) instead.
       (https://preview.colorlib.com/theme/faith/), design tokens, and what
       differs (name, placeholders, paraphrased copy, inner pages not
       recreated).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

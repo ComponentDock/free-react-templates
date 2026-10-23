@@ -410,7 +410,7 @@ Dock (`https://www.componentdock.com/`) instead.
       "Send Now" button, disclaimer line, client-side success state
 - [ ] Footer: `#131313` bg, 4 columns (About / Categories / Categories /
       Quick Links), `#C2C5DB` links, bottom bar with Component Dock link
-- [ ] Header: red text wordmark, "Sign in" link + 5 social icons (inline SVG
+- [x] Header: red text wordmark, "Sign in" link + 5 social icons (inline SVG
       brand paths — lucide-react removed brand icons), sticky nav with
       dropdown (Page ▾) + mobile hamburger collapse
 - [ ] Icons from lucide-react (Play, Menu, ArrowUp, ChevronLeft/Right for
@@ -422,9 +422,9 @@ Dock (`https://www.componentdock.com/`) instead.
       owl/magnific-popup/nice-select)
 - [ ] Demo-repeated content varied (rail headlines, culture/science/video
       card titles + bylines) — same kinds of content, no duplicated strings
-- [ ] No colorlib.com / preview.colorlib.com strings in any app file
+- [x] No colorlib.com / preview.colorlib.com strings in any app file
 - [ ] TEMPLATES.md: mark BOTH megasis rows `[x]` (lines 604, 2202) + surge
       URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (kicker.free.componentdock.com) returns 200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

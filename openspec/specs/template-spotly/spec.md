@@ -90,7 +90,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Search Form Functionality — the destination input shows placeholder "City, country, or region"
-- [ ] Navigation — the navbar shows "Destinations", "Deals", and "About" links
-- [ ] Document Title — the document title is "Spotly — Travel Services Search"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Search Form Functionality — the destination input shows placeholder "City, country, or region"
+- [x] Navigation — the navbar shows "Destinations", "Deals", and "About" links
+- [x] Document Title — the document title is "Spotly — Travel Services Search"

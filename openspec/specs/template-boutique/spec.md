@@ -290,9 +290,9 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-boutique/spec.md` validated (`npm run spec:validate`)
-- [ ] App folder `apps/boutique`, package `@free-react-templates/boutique`, no
+- [x] App folder `apps/boutique`, package `@free-react-templates/boutique`, no
       ColorLib references in app code (grep for colorlib/Theplaza in apps/boutique)
-- [ ] Footer links https://www.componentdock.com/
+- [x] Footer links https://www.componentdock.com/
 - [ ] Tests first, 100% coverage (Vitest + RTL) — `bash scripts/verify-app.sh boutique`
 - [ ] Section order matches the source: header → hero slider → intro products
       → featured promos → product grid → blog → footer-top → copyright bar
@@ -304,10 +304,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Header: absolute over hero, logo + nav (HOME / WOMAN / MAN / LOOKBOOK
       / BLOG / CONTACT) + cart icon "2" badge + search icon; mobile
       hamburger → dark dropdown
-- [ ] Hero: cover bg photo, 2-slide slider, "from $19.90" eyebrow, 110px
+- [x] Hero: cover bg photo, 2-slide slider, "from $19.90" eyebrow, 110px
       uppercase "2018 summer collection", square dark Shop NOW! button,
       arrows + dots
-- [ ] Intro: "Premium products" (fix the source typo) + "We recommend",
+- [x] Intro: "Premium products" (fix the source typo) + "We recommend",
       5-card slider with hover overlay (name / $319.50 / ADD TO CART) and a
       NEW badge on one card
 - [ ] Featured: 2 photo panels, 3px `#b09d81` border, tan uppercase SEE MORE
@@ -340,4 +340,4 @@ Dock (`https://www.componentdock.com/`) instead.
       placeholder images, React sliders instead of owl-carousel, React filter
       instead of mixitup, hamburger instead of slicknav, Component Dock
       footer credit)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -178,14 +178,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Google Maps background with purple gradient overlay renders correctly
 - [ ] Centered white card with rounded corners and shadow
-- [ ] "Contact Us" heading in bold dark text, left-aligned
+- [x] "Contact Us" heading in bold dark text, left-aligned
 - [ ] Name field with validation: red error state when empty, green check when valid
 - [ ] Email field with validation: green check when valid, red when invalid
 - [ ] Message textarea with visible border
-- [ ] "SEND EMAIL" purple gradient pill button
+- [x] "SEND EMAIL" purple gradient pill button
 - [ ] Phone contact line below the button
-- [ ] Footer links to componentdock.com
+- [x] Footer links to componentdock.com
 - [ ] Responsive layout on mobile viewports
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] `packages/ui` components reused where possible
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

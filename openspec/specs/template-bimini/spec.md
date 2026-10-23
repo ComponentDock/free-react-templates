@@ -590,7 +590,7 @@ resets.
 - [ ] Close paths: close control, `Escape`, and an **added** outside/backdrop close (the source has
       none); `aria-expanded` in sync; page does not scroll while open; focus managed into and out of
       the sheet
-- [ ] Zero `colorlib` / `website-menu-20` / "Website Menu V20" / "Website menu 08" / "Company Logo" /
+- [x] Zero `colorlib` / `website-menu-20` / "Website Menu V20" / "Website menu 08" / "Company Logo" /
       `Website Menu #10` / `Lorem ipsum dolor sit amet` strings in `apps/bimini` (comments included);
       none of the source's four row labels (`Home`, `About`, `Blog`, `Contact`) or its `ftco-`/`cl-`/
       `colorlib-` class names reused
@@ -611,7 +611,7 @@ resets.
       `100vh` page), and the added footer
 - [ ] `scripts/verify-app.sh bimini` green (typecheck + lint + knip + fallow + vitest 100 % + build);
       `npm run spec:validate` green
-- [ ] `public/CNAME` + `homepage` set to `bimini.free.componentdock.com`; `package-lock.json`
+- [x] `public/CNAME` + `homepage` set to `bimini.free.componentdock.com`; `package-lock.json`
       registers the workspace; footer attribution present
 - [ ] Squash-merge the PR, then mark the `TEMPLATES.md` `Website Menu 20` item `[x]` with the live
       `https://bimini.free.componentdock.com` URL + homepage and run `npm run readme:status`

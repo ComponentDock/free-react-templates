@@ -469,10 +469,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Page background = seeded picsum (`coastly-1/1920/1080`) cover/center
       full-bleed + `rgba(255,255,255,0.85)` overlay (source `background.jpg`
       not copied)
-- [ ] CTA: h1 "Book Now!" 58px uppercase `#1a1e24` weight 400 + 16px
+- [x] CTA: h1 "Book Now!" 58px uppercase `#1a1e24` weight 400 + 16px
       `#1a1e24` paragraph, column ~7/12 pushed right
 - [ ] Form block: `#1a1e24`, flush 0-gap fields, ~4/12 pulled left
-- [ ] Destination field: label "Your Destination" (white, capitalize, top
+- [x] Destination field: label "Your Destination" (white, capitalize, top
       left 10px, `htmlFor`/`id`), placeholder "Enter a destination or hotel
       name"
 - [ ] Dates: Check In + Check out (required), `⇌` U+21CC `#f3eff5` 28px
@@ -483,7 +483,7 @@ Dock (`https://www.componentdock.com/`) instead.
       full height, right 0 bottom 0)
 - [ ] 1px `rgba(243,239,245,0.33)` vertical separators before Check out and
       Guests columns; 2px bottom border on every field
-- [ ] "Check availability" button: full width, solid `#72b01d` bg, white
+- [x] "Check availability" button: full width, solid `#72b01d` bg, white
       weight-700 capitalize text, height 100px, sharp corners, border none;
       hover/focus opacity 0.9; validates (destination + dates required,
       check-out ≥ check-in) and shows summary / validation messages
@@ -494,5 +494,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

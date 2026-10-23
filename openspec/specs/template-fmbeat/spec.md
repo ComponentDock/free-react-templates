@@ -138,11 +138,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header displays logo, navigation, and social icons — a dark header bar is visible at the top
 - [ ] Hero section displays slider with upcoming events — a hero section with a dark background image is visible
 - [ ] Promotion section displays three category cards — three promo boxes are displayed in a grid
-- [ ] Podcast section shows album art and audio player — a section title "Latest Podcast" with yellow underline is visible
-- [ ] Charts section shows branded banner — a section title "Charts" with yellow underline is visible
+- [x] Podcast section shows album art and audio player — a section title "Latest Podcast" with yellow underline is visible
+- [x] Charts section shows branded banner — a section title "Charts" with yellow underline is visible
 - [ ] Layout adapts to mobile viewport — the location badges are hidden
 - [ ] Design tokens match original template — the brand accent color is yellow (#ffe400)

@@ -464,15 +464,15 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/liftoff` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/liftoff` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- liftoff` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#00d2b5, #000, gray, #6c757d, #b3b3b3, #f6f6f6, #edf0f5, #8bc34a, #fff, Montserrat) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `liftoff-<n>`, Google Fonts Montserrat link, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `liftoff-<n>`, Google Fonts Montserrat link, lucide icons + inline SVG brand icons only)
 - [ ] Feature cards fill teal + lift 7px on hover (icon circle inverts); section-title 40px 900; feature-big rows alternate/reverse
 - [ ] Testimonials carousel implemented with client-side state (no owl-carousel dep); arrows + dots behave
 - [ ] Scrollspy active-link highlight (IntersectionObserver or scroll state) — no jQuery
 - [ ] Contact form validates (zod) + swaps to success (inputs unmount — assert absence); submit blocked until valid
 - [ ] Mobile offcanvas menu opens/closes with focus handling
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

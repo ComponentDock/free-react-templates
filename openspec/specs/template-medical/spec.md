@@ -209,14 +209,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Medical" and a "Home" link pointing to the page root
-- [ ] Banner hero — it SHALL show a level-1 headline (e.g. "We Care for Your Health Every Moment")
-- [ ] Appointment band — it SHALL show the heading "Servicing Hours"
-- [ ] Facilities — it SHALL show the heading "Our Latest Facilities"
-- [ ] Offered services — it SHALL show the heading "Our Offered Services"
-- [ ] Consultants — it SHALL show the heading "Our Consultants"
+- [x] Navigation bar — the navbar SHALL show the site name "Medical" and a "Home" link pointing to the page root
+- [x] Banner hero — it SHALL show a level-1 headline (e.g. "We Care for Your Health Every Moment")
+- [x] Appointment band — it SHALL show the heading "Servicing Hours"
+- [x] Facilities — it SHALL show the heading "Our Latest Facilities"
+- [x] Offered services — it SHALL show the heading "Our Offered Services"
+- [x] Consultants — it SHALL show the heading "Our Consultants"
 - [ ] Client feedback — it SHALL show the heading "Enjoy our Client's Feedback"
-- [ ] Recent blogs — it SHALL show the heading "Our Recent Blogs"
-- [ ] Footer — it SHALL show the site name "Medical"
+- [x] Recent blogs — it SHALL show the heading "Our Recent Blogs"
+- [x] Footer — it SHALL show the site name "Medical"

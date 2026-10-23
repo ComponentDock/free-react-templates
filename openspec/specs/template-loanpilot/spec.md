@@ -186,7 +186,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero section has background image, headline, subtitle, two green buttons, loan form
 - [ ] Loan form has all 5 inputs (Amount, Days, Repayment, Name, Phone) + green submit
 - [ ] About section: 2-column layout, heading, description, 2 sub-items, CTA, image
-- [ ] Loan Services: 4 image cards with text overlay, "Find Out More" links
+- [x] Loan Services: 4 image cards with text overlay, "Find Out More" links
 - [ ] Choose section: 6 feature cards in 3-column grid with icons
 - [ ] Testimonials: dark background, carousel with 3 customer reviews
 - [ ] Counter: 4 stats with icons and animated numbers
@@ -199,8 +199,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Font is Lato throughout
 - [ ] Background image sections use dark overlays
 - [ ] Mobile responsive at all breakpoints
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
-- [ ] CNAME file present with loanpilot.free.componentdock.com
+- [x] No ColorLib references in app code
+- [x] Footer links to componentdock.com
+- [x] CNAME file present with loanpilot.free.componentdock.com
 - [ ] homepage in package.json set correctly
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

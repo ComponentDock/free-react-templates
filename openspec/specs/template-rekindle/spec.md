@@ -333,7 +333,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `bash scripts/verify-app.sh rekindle` passes (typecheck + lint + 100%
       coverage tests + build, ~2–3 min)
 - [ ] `npm run spec:validate` passes
-- [ ] Navbar: white bar, centered "Rekindle" wordmark, left links Home /
+- [x] Navbar: white bar, centered "Rekindle" wordmark, left links Home /
       Category / Archive, right links Elements / Blog Detail / Contact,
       Playfair italic black links turning `#13113a` on hover/active, mobile
       toggler
@@ -357,9 +357,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm install` at root before committing (lockfile registers
       `apps/rekindle`); `grep -c "free-react-templates/rekindle"`
       package-lock.json >= 1
-- [ ] `"homepage": "https://rekindle.free.componentdock.com"`
+- [x] `"homepage": "https://rekindle.free.componentdock.com"`
       in `apps/rekindle/package.json`
 - [ ] PR title: `feat: Rekindle — blog magazine website template (ColorLib
   Revive)`; body includes the source URL, preview URL, tokens, and the
       two-copy TEMPLATES.md note
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

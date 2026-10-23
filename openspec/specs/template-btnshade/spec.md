@@ -81,7 +81,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] App builds successfully without TypeScript or lint errors
 - [ ] All 18 color variants render with correct styling and hover feedback
 - [ ] Responsive layouts work cleanly across mobile and desktop viewports
-- [ ] Footer includes the required link to `https://www.componentdock.com/` ("Component Dock")
+- [x] Footer includes the required link to `https://www.componentdock.com/` ("Component Dock")
 - [ ] 100% test coverage maintained across all components
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

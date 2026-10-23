@@ -305,7 +305,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] `apps/zine` exists with package name `@free-react-templates/zine`
+- [x] `apps/zine` exists with package name `@free-react-templates/zine`
 - [ ] `vite.config.ts` registers `injectUiSource()` (see docs/conventions.md)
 - [ ] Fonts Montserrat + PT Serif loaded via Google Fonts `<link>` in index.html
 - [ ] Brand pale yellow `#f5de87` and dark `#2f2f2b`/`#3a3a37` defined in `@theme`
@@ -315,5 +315,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md: mark ALL THREE Katt copies (lines 267, 1472, 2523) `[~]` → `[x]` + Surge URL + homepage after merge
 - [ ] `npm run readme:status` regenerates README Templates status table after merge
 - [ ] PR description states: source template (ColorLib Katt), preview URL, design tokens, what differs (rename, picsum placeholders)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

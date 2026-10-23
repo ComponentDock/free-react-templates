@@ -415,13 +415,13 @@ Dock (`https://www.componentdock.com/`) instead.
       trainer + duration)
 - [ ] Schedule: 7 day tabs (S M T W T F S, active = brand), per-day panels
       with timed class cards
-- [ ] Trainers: 4 round-avatar cards (name + "Trainer" + bio)
+- [x] Trainers: 4 round-avatar cards (name + "Trainer" + bio)
 - [ ] Services: 12 icon cards in 3-col grid
-- [ ] Contact: light bg, 4 inputs + textarea + "Send Message" block button
+- [x] Contact: light bg, 4 inputs + textarea + "Send Message" block button
 - [ ] Footer: dark, About / Links / Subscribe + Component Dock link
 - [ ] Placeholder images seeded (`picsum.photos/seed/sweatly-<n>/<w>/<h>`);
       no copied assets (hero video replaced with seeded photo + overlay)
 - [ ] `TEMPLATES.md` updated by the implementer (`[~]` → `[x]` on ALL FOUR
       lines 537, 1236, 1886, 2372 + surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

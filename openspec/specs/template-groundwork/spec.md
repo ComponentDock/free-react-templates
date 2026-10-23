@@ -176,7 +176,7 @@ The footer component SHALL NOT contain any references to ColorLib, colorlib.com,
 
 - [ ] Footer renders with black (#000) background
 - [ ] Four-column layout: brand + Shop + Press + About
-- [ ] Site logo "Groundwork" is 26px bold white
+- [x] Site logo "Groundwork" is 26px bold white
 - [ ] Each link column has 5 items with correct labels
 - [ ] Horizontal separator with rgba(255,255,255,0.2) border
 - [ ] Policy links (Privacy Policy, Terms & Conditions, Code of Conduct) on left
@@ -184,8 +184,8 @@ The footer component SHALL NOT contain any references to ColorLib, colorlib.com,
 - [ ] Social icons hover to white
 - [ ] Bottom disclaimer paragraph present
 - [ ] Link hover transitions (0.3s ease)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
-- [ ] CNAME file: `groundwork.free.componentdock.com`
-- [ ] Homepage: `https://groundwork.free.componentdock.com`
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock")
+- [x] CNAME file: `groundwork.free.componentdock.com`
+- [x] Homepage: `https://groundwork.free.componentdock.com`
 - [ ] 100% test coverage

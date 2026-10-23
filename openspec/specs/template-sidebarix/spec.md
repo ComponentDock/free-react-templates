@@ -129,8 +129,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Each post card has thumbnail + title + date
 - [ ] Responsive: mobile sidebar collapses, grid goes single-column
 - [ ] Footer links to Component Dock
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Uses picsum.photos for placeholder images
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Sidebarix template behaviour — a left sidebar panel is visible

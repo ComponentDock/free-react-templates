@@ -160,4 +160,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Uses picsum.photos placeholder images
 - [x] Uses lucide-react for icons
 - [x] Uses Google Fonts (Playfair Display + Roboto) via index.html link
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

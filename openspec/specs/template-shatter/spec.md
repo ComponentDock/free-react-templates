@@ -233,10 +233,10 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Banner hero center carousel — the center column shows a large featured post
 - [ ] Banner hero right sidebar widgets — the right column shows a weather widget
 - [ ] Navigation bar — a sticky navbar appears with dark #252525 background
-- [ ] Editors' Picks section — a heading "Editors' Picks" is displayed
-- [ ] International News section — a heading "International News" is displayed
-- [ ] Technology News section — a heading "Technology News" is displayed
-- [ ] Exclusive Videos section — a heading "Exclusive Videos" is displayed
-- [ ] Popular News Feed section — a heading "Popular News Feed" is displayed
+- [x] Editors' Picks section — a heading "Editors' Picks" is displayed
+- [x] International News section — a heading "International News" is displayed
+- [x] Technology News section — a heading "Technology News" is displayed
+- [x] Exclusive Videos section — a heading "Exclusive Videos" is displayed
+- [x] Popular News Feed section — a heading "Popular News Feed" is displayed
 - [ ] Responsive layout — the 3-column banner collapses to a single column
 - [ ] Placeholder images — the image is a deterministic placeholder from picsum.photos

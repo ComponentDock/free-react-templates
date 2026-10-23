@@ -113,9 +113,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page renders main heading and two-column layout — the heading "Fill the form" is rendered
-- [ ] Form renders all required fields — inputs with placeholders "First name" and "Last name" are visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page renders main heading and two-column layout — the heading "Fill the form" is rendered
+- [x] Form renders all required fields — inputs with placeholders "First name" and "Last name" are visible
 - [ ] Form accepts user input — the field value is "John"
-- [ ] Form submission shows success message — the text "Your message was sent, thank you!" is displayed
+- [x] Form submission shows success message — the text "Your message was sent, thank you!" is displayed
 - [ ] Sidebar displays descriptive content — the heading "Let's talk about everything" is rendered

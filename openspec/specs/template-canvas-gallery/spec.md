@@ -229,12 +229,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders with logo, links, and search — a navigation bar is visible at the top
 - [ ] Hero slider displays model slides — a hero carousel section is visible
 - [ ] About section displays agency info and services — an about section is visible
 - [ ] Gallery shows filterable portfolio — a tabbed gallery section is visible
 - [ ] Testimonials section displays client feedback — a testimonials section is visible
 - [ ] CTA banner renders with heading and button — a call-to-action banner is visible
-- [ ] Blog section shows latest posts — a blog section is visible with heading "Latest News"
+- [x] Blog section shows latest posts — a blog section is visible with heading "Latest News"
 - [ ] Layout is responsive — the navbar collapses to a hamburger menu

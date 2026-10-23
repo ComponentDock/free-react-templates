@@ -187,13 +187,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the logo text "Pyxis"
-- [ ] Hero banner — the banner SHALL show the heading "Effective Sleek and Clean Design for User Interface"
-- [ ] Team section — the section SHALL show the heading "Meet Our Team"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the logo text "Pyxis"
+- [x] Hero banner — the banner SHALL show the heading "Effective Sleek and Clean Design for User Interface"
+- [x] Team section — the section SHALL show the heading "Meet Our Team"
 - [ ] Features grid — I SHALL see 6 feature cards
 - [ ] Video section — the section SHALL show a play button
-- [ ] Testimonial section — the section SHALL show the counter "5962+" and "Projects Completed"
+- [x] Testimonial section — the section SHALL show the counter "5962+" and "Projects Completed"
 - [ ] Service section — I SHALL see 6 service items with icons and titles
 - [ ] Contact section — I SHALL see 4 contact columns: Visit Our Office, Let's Call Us, Let's Email Us, Customer Support
 - [ ] App composition — all sections SHALL be present in order: Navbar, Banner, TeamForce, Features, VideoSection, TestimonialSection, ServiceSection, ContactSection, Footer

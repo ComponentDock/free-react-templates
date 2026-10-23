@@ -488,7 +488,7 @@ the two sub-blocks. There is **no** container tier (this sheet only ships `cl-co
   **`#fff` + `z-index:999` + `translateX(0)`** open via **`body.offcanvas`**, which also pushes
   **`#colorlib-main`** and the toggle by **`270 px`**; `0.5s` (off under reduced motion); closes on
   outside click, scroll, `Escape` and a second press; **no** backdrop
-- [ ] Zero `colorlib` / "Website Menu V19" / `website-menu-19` strings in `apps/sponson` (comments
+- [x] Zero `colorlib` / "Website Menu V19" / `website-menu-19` strings in `apps/sponson` (comments
   included); none of the source's six row labels (`Home`, `Project`, `About`, `Services`, `Blog`,
   `Contact`), its `Website menu #09` heading or its `Heading Two` sub-headings reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `roboto-*.woff2` (all eight are dead —
@@ -507,7 +507,7 @@ the two sub-blocks. There is **no** container tier (this sheet only ships `cl-co
   photography (the source ships none), and the added footer
 - [ ] `scripts/verify-app.sh sponson` green (typecheck + lint + knip + fallow + vitest 100 % + build);
   `npm run spec:validate` green
-- [ ] `public/CNAME` + `homepage` set to `sponson.free.componentdock.com`; `package-lock.json`
+- [x] `public/CNAME` + `homepage` set to `sponson.free.componentdock.com`; `package-lock.json`
   registers the workspace; footer attribution present
 - [ ] Squash-merge the PR, then mark the `TEMPLATES.md` `Website Menu 19` item `[x]` with the live
   `https://sponson.free.componentdock.com` URL + homepage and run `npm run readme:status`

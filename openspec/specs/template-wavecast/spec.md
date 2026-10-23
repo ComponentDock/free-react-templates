@@ -371,15 +371,15 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/wavecast`)
 - [ ] Section order matches the reference 1:1 (header → hero → episodes/sidebar/cards/pagination → featured guests → subscribe band → footer)
 - [ ] Design tokens from the reference used in `@theme` (primary teal #3ca59d, footer dark #333333, body #4d4d4d, footer links #999999 / text #737373, light #f8f9fa/#f4f5f9, dark #25262a, border #efefef, muted #ccc; system sans font stack — no Google Fonts)
-- [ ] Header: "Wavecast." logo (teal dot), nav Home/Dropdown(Menu One/Two/Three)/About/Contact/Login·Register, active link teal, mobile hamburger
+- [x] Header: "Wavecast." logo (teal dot), nav Home/Dropdown(Menu One/Two/Three)/About/Contact/Login·Register, active link teal, mobile hamburger
 - [ ] Hero: 40px/900 "Tell Your Story to the World", "Join with us! Login or Register." paragraph, flat vector illustration right (no random landscape)
-- [ ] Sidebar: "Popular Podcaster" (14px uppercase), 6 entries (circular avatar, name, count like "32,420 podcasts")
+- [x] Sidebar: "Popular Podcaster" (14px uppercase), 6 entries (circular avatar, name, count like "32,420 podcasts")
 - [ ] Episodes: 5 white cards (photo 300px column, light title link, byline with `/` separators, dark audio player bar), 4px radius + soft shadow
 - [ ] Pagination: 40px circles 1–5 + next arrow, active = teal filled white text, border #efefef
-- [ ] Featured guests: light-gray band, centered "Featured Guests", 6 white slides (circular photo, light name, quote), auto-advance + prev/next arrows
-- [ ] Subscribe band: photo bg + rgba(0,0,0,.4) overlay, white "Subscribe" heading, transparent email input (italic placeholder, teal focus border) + teal "Send" button
-- [ ] Footer: bg #333333, About Us / Navigation / Subscribe columns, teal "Subscribe" button, copyright bar crediting Colorlib
+- [x] Featured guests: light-gray band, centered "Featured Guests", 6 white slides (circular photo, light name, quote), auto-advance + prev/next arrows
+- [x] Subscribe band: photo bg + rgba(0,0,0,.4) overlay, white "Subscribe" heading, transparent email input (italic placeholder, teal focus border) + teal "Send" button
+- [x] Footer: bg #333333, About Us / Navigation / Subscribe columns, teal "Subscribe" button, copyright bar crediting Colorlib
 - [ ] NO "Behind The Mic" team section (commented out in the reference — do not render)
-- [ ] No copied ColorLib assets; placeholders via picsum seeded `wavecast-<n>`; icons via lucide-react
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No copied ColorLib assets; placeholders via picsum seeded `wavecast-<n>`; icons via lucide-react
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -191,7 +191,7 @@ Background:
 - [ ] Brand accent color #21bf73 used for prices and testimony overlay
 - [ ] Font is Roboto (weights 300/400/500/700)
 - [ ] All images use picsum.photos placeholders
-- [ ] No references to ColorLib in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No references to ColorLib in app code
+- [x] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage
 - [ ] Responsive: mobile hamburger menu, single-column on small screens

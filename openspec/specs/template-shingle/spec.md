@@ -187,12 +187,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Top bar — it SHALL show the logo text "Shingle" linking to `#home
+- [x] Top bar — it SHALL show the logo text "Shingle" linking to `#home
 - [ ] Navigation bar — it SHALL show links to Home, About, Services, Projects, Blog, and Contact
 - [ ] Hero section — it SHALL show the subtitle "We Are Best Roofing Services"
 - [ ] Appointment section — it SHALL show tabs for Our Mission, Our Vision, and Our Value
 - [ ] Counter section — it SHALL show all four stat labels and values
-- [ ] Services section — it SHALL show all 6 service cards with title, description, and "Get Started" link
+- [x] Services section — it SHALL show all 6 service cards with title, description, and "Get Started" link
 - [ ] Gallery section — it SHALL show 8 images with alt text
 - [ ] Testimonials section — it SHALL show 3 cards with client names and quotes
 - [ ] Blog section — it SHALL show 3 blog post cards

@@ -252,15 +252,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Couture" and a "Home" link pointing to the page root
-- [ ] Welcome hero — it SHALL show a level-1 headline (e.g. "Le Stylist")
-- [ ] Trending — it SHALL show the heading "Trending"
-- [ ] Our Products — it SHALL show the heading "Our Products"
-- [ ] Summer Sale band — it SHALL show the heading "Summer Sale"
-- [ ] Testimony — it SHALL show a quote and the customer name "Roger Scott"
-- [ ] Recent Blog — it SHALL show the heading "Recent Blog"
-- [ ] Services — it SHALL show the heading "We want you to express yourself"
-- [ ] Subscribe band — it SHALL show the heading "Subscribe to our Newsletter"
-- [ ] Footer — it SHALL show the site name "Couture"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Couture" and a "Home" link pointing to the page root
+- [x] Welcome hero — it SHALL show a level-1 headline (e.g. "Le Stylist")
+- [x] Trending — it SHALL show the heading "Trending"
+- [x] Our Products — it SHALL show the heading "Our Products"
+- [x] Summer Sale band — it SHALL show the heading "Summer Sale"
+- [x] Testimony — it SHALL show a quote and the customer name "Roger Scott"
+- [x] Recent Blog — it SHALL show the heading "Recent Blog"
+- [x] Services — it SHALL show the heading "We want you to express yourself"
+- [x] Subscribe band — it SHALL show the heading "Subscribe to our Newsletter"
+- [x] Footer — it SHALL show the site name "Couture"

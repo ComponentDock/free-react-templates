@@ -524,7 +524,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] `npm run spec:validate` passes for this spec (whole-repo validate may
       fail on unrelated legacy specs — check this spec's own `✓` line).
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/outpost`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/outpost`
       (`scripts/verify-app.sh outpost` in FAST_MODE; full `npm run gate`
       in CI).
 - [ ] Visual fidelity: transparent navbar over the hero (white uppercase
@@ -552,9 +552,9 @@ Dock (`https://www.componentdock.com/`) instead.
       newsletter, testi ×3, blog ×3, insta ×8); icons from lucide-react
       with inline-SVG social icons; no ColorLib assets, CSS, or strings
       anywhere in `apps/outpost`.
-- [ ] `public/CNAME` = `outpost.free.componentdock.com`; package
+- [x] `public/CNAME` = `outpost.free.componentdock.com`; package
       `@free-react-templates/outpost`; `"homepage"`
       = `https://outpost.free.componentdock.com`; lockfile registers the
       workspace; `injectUiSource()` present in `vite.config.ts`; footer
       links Component Dock.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

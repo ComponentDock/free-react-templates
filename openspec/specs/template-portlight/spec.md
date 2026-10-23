@@ -169,12 +169,12 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays brand and navigation links — the navbar shows "Portlight" brand text
-- [ ] Hero section displays hotel message with carousel — the heading "Hotel for the whole family, all year round." is visible
+- [x] Navbar displays brand and navigation links — the navbar shows "Portlight" brand text
+- [x] Hero section displays hotel message with carousel — the heading "Hotel for the whole family, all year round." is visible
 - [ ] Booking bar provides reservation form — check-in date, check-out date, room, and guests fields are visible
-- [ ] About section describes the hotel — the heading "Harbor Lights Hotel & Resort" is visible
+- [x] About section describes the hotel — the heading "Harbor Lights Hotel & Resort" is visible
 - [ ] Services section shows hotel amenities — all 5 service headings are visible with descriptions
-- [ ] Testimonials carousel shows customer reviews — the first testimonial by "Gerald Hodson" is shown
+- [x] Testimonials carousel shows customer reviews — the first testimonial by "Gerald Hodson" is shown
 - [ ] Rooms section displays room cards with pricing — all 4 room names and prices ($120.00, $200.00, $160.00, $140.00) are visible
-- [ ] Restaurant section shows menu items — menu items "Grilled Crab with Onion" ($20.00), "Lobster Thermidor" ($35.00), "Grilled Salmon" ($25.00), "Wagyu Steak" ($45.00) are visible
+- [x] Restaurant section shows menu items — menu items "Grilled Crab with Onion" ($20.00), "Lobster Thermidor" ($35.00), "Grilled Salmon" ($25.00), "Wagyu Steak" ($45.00) are visible
 - [ ] Blog section shows recent posts — 3 articles are visible with dates and titles

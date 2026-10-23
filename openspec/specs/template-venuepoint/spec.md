@@ -149,10 +149,10 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Header displays navigation and contact — the header shows the restaurant logo "The Venue"
+- [x] Header displays navigation and contact — the header shows the restaurant logo "The Venue"
 - [ ] Hero section displays parallax background — it shows a full-width parallax background image
-- [ ] Intro section displays two images — it shows subtitle "Something new"
+- [x] Intro section displays two images — it shows subtitle "Something new"
 - [ ] Video section shows play button — it shows a parallax background
-- [ ] Signature dish section shows featured item — it shows subtitle "Something new"
-- [ ] Menu section displays three categories — it shows "The Menu" title with 5 stars
+- [x] Signature dish section shows featured item — it shows subtitle "Something new"
+- [x] Menu section displays three categories — it shows "The Menu" title with 5 stars
 - [ ] Reservation form accepts party details — it shows a date picker input

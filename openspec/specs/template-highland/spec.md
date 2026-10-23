@@ -176,7 +176,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Navbar is transparent initially, sticky black on scroll
 - [ ] Hero slider with 4 slides, centered white text
 - [ ] About section has 2-column layout with overlapping images
-- [ ] Offers section has 3 cards with images, bullets, and "book now" buttons
+- [x] Offers section has 3 cards with images, bullets, and "book now" buttons
 - [ ] Video section has dark overlay and circular play button
 - [ ] Dining section has reversed layout (images left, text right)
 - [ ] Featured Rooms has 4 room cards with gradient overlays
@@ -184,8 +184,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Instagram feed shows 5 images with hover overlay
 - [ ] Footer has 4 columns + newsletter + copyright
 - [ ] Responsive layout works on mobile (375px)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] public/CNAME contains highland.free.componentdock.com
-- [ ] package.json homepage set to https://highland.free.componentdock.com
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] public/CNAME contains highland.free.componentdock.com
+- [x] package.json homepage set to https://highland.free.componentdock.com
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

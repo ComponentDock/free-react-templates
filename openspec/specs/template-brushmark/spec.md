@@ -253,9 +253,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Portfolio grid has filter tabs and hover overlay effect
 - [ ] Blog cards have hover shadow and image scale effect
 - [ ] Footer is dark with gradient social icon hovers
-- [ ] No ColorLib references in app code (provenance in spec only)
-- [ ] Footer links Component Dock (https://www.componentdock.com/)
+- [x] No ColorLib references in app code (provenance in spec only)
+- [x] Footer links Component Dock (https://www.componentdock.com/)
 - [ ] Placeholder images use picsum.photos/seed/brushmark-*
 - [ ] Responsive: hero image and about image hidden on mobile
 - [ ] Mobile hamburger menu toggles navigation
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

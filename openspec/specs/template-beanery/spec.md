@@ -388,13 +388,13 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh
   beanery`, PR lists source (ColorLib Decoffee), preview URL, tokens,
       and what differs.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Sidebar header — a dark fixed sidebar SHALL show on the left with the site logo and tagline
-- [ ] Hero section — it SHALL show the headline "Handmade \"Cookies\" and Coffee Delights" with the quoted word "Cookies" in the brand copper color
+- [x] Hero section — it SHALL show the headline "Handmade \"Cookies\" and Coffee Delights" with the quoted word "Cookies" in the brand copper color
 - [ ] About section — it SHALL show the headline "A boutique and fun cafe that brought together coffee cultures of the whole world in California." with a paragraph and a signature image
-- [ ] Menu section — it SHALL show the heading "Our Menu" with a subtitle
+- [x] Menu section — it SHALL show the heading "Our Menu" with a subtitle
 - [ ] Services band — it SHALL show four service cards with icons
 - [ ] Gallery — it SHALL show four cafe/coffee images arranged in a staggered two-row layout
-- [ ] Testimonials — it SHALL show the heading "Love from Customers"
+- [x] Testimonials — it SHALL show the heading "Love from Customers"
 - [ ] Instagram band — it SHALL show at least four square cafe photos
 - [ ] Page composition — the page SHALL compose the sidebar header, hero, about, menu, services, gallery, testimonials, instagram band, and footer in order

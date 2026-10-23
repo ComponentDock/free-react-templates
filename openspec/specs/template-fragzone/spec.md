@@ -123,11 +123,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with logo, navigation links, and join button — the Fragzone logo is visible
-- [ ] Hero section with background image and CTA — the hero section shows "The Best Games Out There" heading
-- [ ] Latest news ticker bar — the "Latest News" label is visible
+- [x] Hero section with background image and CTA — the hero section shows "The Best Games Out There" heading
+- [x] Latest news ticker bar — the "Latest News" label is visible
 - [ ] Game types category cards — four game type cards are visible
-- [ ] Recent games gallery — the "Recent Games" heading is centered
-- [ ] Tournament listings — the "Tournaments" badge is visible
-- [ ] Recent reviews section — the "Recent Reviews" heading is centered
+- [x] Recent games gallery — the "Recent Games" heading is centered
+- [x] Tournament listings — the "Tournaments" badge is visible
+- [x] Recent reviews section — the "Recent Reviews" heading is centered

@@ -222,19 +222,19 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Full-page gradient background (cyan-to-magenta at 45deg)
 - [ ] Decorative geometric wireframe pattern on the left side
 - [ ] White card centered with 10px border-radius, 680px width
-- [ ] "Sign In With" heading: Montserrat Medium 39px #555555, centered
+- [x] "Sign In With" heading: Montserrat Medium 39px #555555, centered
 - [ ] Facebook button: #3b5998 bg, white text, icon, 10px radius, shadow, side-by-side with Google
 - [ ] Google button: white bg, #555555 text, Google icon, 10px radius, shadow
 - [ ] Social button hover: gradient overlay fades in
 - [ ] Username field: label Montserrat SemiBold 16px, input with #f7f7f7 bg, #e6e6e6 border, 10px radius, 60px height
-- [ ] Password field: same styling, "Forgot?" link with bottom border
+- [x] Password field: same styling, "Forgot?" link with bottom border
 - [ ] Input focus: magenta (#fc00ff) border overlay with pulse/scale animation
 - [ ] Sign In button: #333333 bg, white text, full-width, 10px radius, 60px height
 - [ ] Sign In button hover: gradient overlay fades in
 - [ ] "Not a member? Sign up now" with bottom-bordered link
 - [ ] Footer links to Component Dock
 - [ ] Responsive: social buttons stack vertically on narrow viewports
-- [ ] No ColorLib references in any app code
+- [x] No ColorLib references in any app code
 - [ ] Icons from lucide-react (Facebook, Chrome/Google for social)
 - [ ] Fonts loaded via Google Fonts (Poppins, Montserrat) in index.html
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

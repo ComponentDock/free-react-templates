@@ -179,14 +179,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Hero displays centered headline and CTA — a hero section is visible with background image
 - [ ] Navigation is transparent over hero, becomes sticky — the navigation bar is transparent and overlays the hero
-- [ ] About section with two-column layout — a left column shows heading "Hassle-Free Drone Photography"
+- [x] About section with two-column layout — a left column shows heading "Hassle-Free Drone Photography"
 - [ ] Services grid with three cards — 3 service cards are displayed in a row
 - [ ] Video/How We Work section with steps — a dark background image covers the section
 - [ ] Recent projects split layout — a split layout is displayed
 - [ ] Second services row with icon-only cards — 3 more service cards are displayed in a row
 - [ ] Testimonial carousel on dark background — a dark background image covers the section
-- [ ] Contact form with fields — a "Get a Quote" heading is displayed
+- [x] Contact form with fields — a "Get a Quote" heading is displayed
 - [ ] Scroll-to-top button — a circular orange back-to-top button appears at bottom-right

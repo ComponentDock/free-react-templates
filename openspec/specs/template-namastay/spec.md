@@ -171,8 +171,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders with brand and navigation links — the navbar displays the brand "Namastay"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders with brand and navigation links — the navbar displays the brand "Namastay"
 - [ ] Hero section displays headline and play button — the hero section displays the headline text
 - [ ] Features section shows three yoga feature cards — the features section shows Chakra, Lotus, and Yoga cards
 - [ ] Parallax quote section — the parallax section displays the quote text

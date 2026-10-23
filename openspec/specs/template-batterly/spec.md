@@ -331,17 +331,17 @@ Dock (`https://www.componentdock.com/`) instead.
       heading font Playfair Display serif, body font Montserrat
       sans-serif, pill buttons `border-radius: 60px`.
 - [ ] Responsive check at 768px (single-column layout, no overflow).
-- [ ] No ColorLib references in any app file; footer links
+- [x] No ColorLib references in any app file; footer links
       https://www.componentdock.com/.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header / Navigation Bar — a top bar SHALL display currency selector (USD default),
 - [ ] Hero Slider — the hero slider SHALL display with a background image and
-- [ ] About Section — the section SHALL have subtitle "About Cake shop" in
+- [x] About Section — the section SHALL have subtitle "About Cake shop" in
 - [ ] Categories Section — a carousel SHALL display category cards: Cupcake, Butter,
 - [ ] Product Grid — a 4-column grid SHALL display 8 product cards
-- [ ] Class Registration Section — the section SHALL have subtitle "Class cakes" and heading
-- [ ] Team Section — the heading "Sweet Baker" SHALL be displayed with a "Join Us"
-- [ ] Testimonial Section — the section SHALL have subtitle "Testimonial" and heading
+- [x] Class Registration Section — the section SHALL have subtitle "Class cakes" and heading
+- [x] Team Section — the heading "Sweet Baker" SHALL be displayed with a "Join Us"
+- [x] Testimonial Section — the section SHALL have subtitle "Testimonial" and heading
 - [ ] Instagram Section — the left column SHALL show heading "Sweet moments are saved
 - [ ] Map / Contact Section — a card SHALL overlay the map with city name, address,
 - [ ] Accessibility and Semantics — the navbar SHALL use `<nav>` with semantic `<ul>`/`<li>` links

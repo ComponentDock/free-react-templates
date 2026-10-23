@@ -163,11 +163,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar visibility and navigation — the navbar shows the brand name "Bites"
-- [ ] Hero section content — the hero section shows the heading "Delicious Cupcakes"
-- [ ] Top Dishes showcase — the "Our Top Rated Dishes" section shows exactly 3 dish cards
-- [ ] Menu section — the "Our Favourite Menu" section shows 6 menu items
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar visibility and navigation — the navbar shows the brand name "Bites"
+- [x] Hero section content — the hero section shows the heading "Delicious Cupcakes"
+- [x] Top Dishes showcase — the "Our Top Rated Dishes" section shows exactly 3 dish cards
+- [x] Menu section — the "Our Favourite Menu" section shows 6 menu items
 - [ ] Gallery section — the gallery section shows 6 images in a grid layout
 - [ ] Testimonials section — the testimonials section shows 3 reviewer cards
 - [ ] Reservation form — the reservation form shows inputs for name, email, phone, and date/time

@@ -126,9 +126,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar with navigation and auth buttons — the navbar displays the HireFlow logo, six navigation links, and Signup/Login buttons
-- [ ] Hero banner with search form — the headline "1500+ Jobs posted last week" is displayed
+- [x] Hero banner with search form — the headline "1500+ Jobs posted last week" is displayed
 - [ ] Features section with four cards — four cards are displayed with titles Searching, Applying, Security, and Notifications
 - [ ] Popular posts with job cards — at least four job post cards are displayed with titles and locations
 - [ ] Featured job categories — six category cards are displayed with their names

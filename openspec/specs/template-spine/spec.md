@@ -539,7 +539,7 @@ The footer SHALL contain a link to https://www.componentdock.com/.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-spine`
-- [ ] Document title "Spine — Book Shop"; NO ColorLib references in app
+- [x] Document title "Spine — Book Shop"; NO ColorLib references in app
       code; footer links https://www.componentdock.com/ ("Component Dock")
 - [ ] Header: logo + search pill (placeholder "Search book by author or
       publisher", red `Search` icon) + FAQ / Track Order + cart icon with
@@ -552,7 +552,7 @@ The footer SHALL contain a link to https://www.componentdock.com/.
 - [ ] Best Selling: `#FEF4F4` band, centered H2 30px 700, 8 cards
       (cover + "Moon Dance" 20px 700 + "J. R Rain" + 4½ gold stars
       `#FF5700` + "(120 Review)" + red "$50" 22px 500), arrows scroll
-- [ ] Featured: H2 + "View All" (2px `#EEE1E0` underline, hover red);
+- [x] Featured: H2 + "View All" (2px `#EEE1E0` underline, hover red);
       2 split cards — cover left, solid `#FF1616` right panel with white
       40px H3 "The Rage of Dragons", "By Evan Winter", "$50.00" white
       32px, white stars, white-outline pill "View Details" (radius 30px)

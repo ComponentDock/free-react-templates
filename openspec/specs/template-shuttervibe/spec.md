@@ -183,7 +183,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header bar — a fixed black header bar SHALL be visible at the top
 - [ ] Full-screen image gallery — a main image SHALL fill 80% of the viewport height below the header
 - [ ] Image info panel — the info panel SHALL expand to show the image title and description

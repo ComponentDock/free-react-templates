@@ -450,7 +450,7 @@ Dock (`https://www.componentdock.com/`) instead.
       #E0E0E0, `--color-ink` #000, `--color-footer` #1A1A1A,
       `--color-meta` #CED4DA; fonts Mukta Mahee (200, 300, 400) + Abril
       Fatface (400, 700) via Google Fonts `<link>` in `index.html`
-- [ ] Header: transparent over hero, brand "Wander" white Abril Fatface
+- [x] Header: transparent over hero, brand "Wander" white Abril Fatface
       30px, hamburger (3 bars) → fullscreen WHITE overlay nav with 40px
       black Abril Fatface links (Home, Hotels, About Us, Gallery, News,
       Contact), active/hover teal; toggle animates to X, aria-expanded
@@ -464,14 +464,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Experience: #FAFAFA bg + #E0E0E0 top border, centered heading +
       lead, SIX centered feature cards (icon ~70px lucide + h3 + p) in
       3-col grid
-- [ ] Slider: 70px heading "International Tour Management.", carousel of
+- [x] Slider: 70px heading "International Tour Management.", carousel of
       six ~100vh images, inactive slides dimmed (opacity .4), white
       arrows fade in on hover, dot indicators
 - [ ] Blog: solid #65C0BA band with white diagonal slant at top; 70px
       heading "Recent Blog Post" (#000 per reference) + translucent-white
       lead; THREE white cards (image, uppercase date meta, 26px title
       link, paragraph) with deepening hover shadow
-- [ ] Testimonials: #FAFAFA bg, 70px "Happy Customers" heading, THREE
+- [x] Testimonials: #FAFAFA bg, 70px "Happy Customers" heading, THREE
       cards (70px circular photo, italic 20px quote, italic attribution)
 - [ ] Top Destination: 32px heading + lead, FOUR cards (image + 20px
       title, teal hover, 18px teal stars with half-star, italic review
@@ -479,7 +479,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: #1A1A1A, four columns (Quick Link, Support, Contact Info,
       Subscribe), underline-only newsletter input + paper-plane submit,
       copyright bar + five social links
-- [ ] All images are picsum placeholders with alt text; no ColorLib
+- [x] All images are picsum placeholders with alt text; no ColorLib
       assets
 - [ ] Icons from lucide-react (no icon fonts copied; feature icons
       approximate flaticon subjects, e.g. Utensils, Globe, Plane,
@@ -490,5 +490,5 @@ Dock (`https://www.componentdock.com/`) instead.
       100% coverage (lines/functions/branches/statements)
 - [ ] `scripts/verify-app.sh wander` green (typecheck + lint + coverage +
       build)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

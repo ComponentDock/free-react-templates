@@ -196,5 +196,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Preview DOM structure analyzed
 - [ ] Screenshot reviewed for visual fidelity
 - [ ] Section order matches original: Header → Hero → Features → Specialties → Testimonials → Feature Menu → Chef → Menu Pricing → Events → Why Choose Us → Footer
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

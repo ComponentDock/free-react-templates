@@ -590,17 +590,17 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/lyceum` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/lyceum` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- lyceum` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#4dbf1c, #2c28b1/#9b5cf6 gradient, #222222, #777777, #f9f9ff, #eeeeee, #ffc000, #edf8e8, #04091e, rgba(255,255,255,0.65), #fff, Playfair Display, Roboto) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `lyceum-<n>`, Google Fonts Playfair Display + Roboto links, lucide icons + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `lyceum-<n>`, Google Fonts Playfair Display + Roboto links, lucide icons + inline SVG brand icons only)
 - [ ] Course cards show the bottom overlay (green Free badge, white title, meta); title turns green on hover
 - [ ] Team cards reveal the circular white overlay with 3 social icons on hover; name turns green
 - [ ] Testimonials carousel implemented with client-side state (no owl-carousel dep); arrows + dots behave; 3 distinct slides
-- [ ] Pricing cards: icon circle flips to green on hover; price fades out as "Join Now" fades in (with `0 10px 30px rgba(0,0,0,0.1)` shadow)
+- [x] Pricing cards: icon circle flips to green on hover; price fades out as "Join Now" fades in (with `0 10px 30px rgba(0,0,0,0.1)` shadow)
 - [ ] Footer newsletter: white 40px input + gradient arrow-only button; validates (zod) + swaps to success; gradient `background-size 200%` hover shift
 - [ ] Mobile hamburger menu opens/closes with focus handling
 - [ ] Hero + impress buttons invert correctly on hover (green fill / transparent)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

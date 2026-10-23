@@ -388,17 +388,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Build succeeds (`npm run build -w @free-react-templates/generous`)
 - [ ] Section order matches the reference 1:1 (navbar → hero slider → feature row → featured donation → Top Fundraisers → Latest Donations → featured section → Latest News → About Us → footer)
 - [ ] Design tokens in `@theme` (brand mint #79ccab, success green #28a745, warning yellow #ffc107, dark #343a40, light #fafafa, footer #404040, Poppins + Gaegu stacks)
-- [ ] Navbar: dark #343a40, "Generous" Gaegu uppercase wordmark, 6 white links (Home active), mobile hamburger
+- [x] Navbar: dark #343a40, "Generous" Gaegu uppercase wordmark, 6 white links (Home active), mobile hamburger
 - [ ] Hero: 100vh slides, black overlay .4, white Gaegu headline left (col-md-7), photo right, bar dots + arrows bottom-right, no buttons in the slide
 - [ ] Feature row: 3 blocks (Medical Mission / Make Donation Now / We Need Volunteers) with teal icons + "Learn More" links, stack on mobile
-- [ ] Featured donation: green #28a745 overlay .9, "Featured" meta + "School in Africa Need Renovations", "Last donation 1w ago", yellow #ffc107 progress, "$8,100 raised of $30,000", large Donate Now button, photo right
-- [ ] Top Fundraisers: centered heading, 6 cards × (photo, "Children Needs Food", text, "Last donation 1w ago", green #28a745 progress, "$8,100 raised of $30,000"), 3-col → 1-col on mobile
-- [ ] Latest Donations: 4 person cards on #fafafa (100px circular avatars, names, "Donated 3 hours ago", amounts $1,150/$150/$534/$2,500)
-- [ ] Featured section: teal #79ccab overlay .9, "School in Africa Need Renovations. Thanks To All Donors", "We have raised $30,000", Read The Full Story button, photo left
-- [ ] Latest News: bg-light #fafafa, 3 post cards (date "July 26, 2018", titles, excerpt, Read More)
+- [x] Featured donation: green #28a745 overlay .9, "Featured" meta + "School in Africa Need Renovations", "Last donation 1w ago", yellow #ffc107 progress, "$8,100 raised of $30,000", large Donate Now button, photo right
+- [x] Top Fundraisers: centered heading, 6 cards × (photo, "Children Needs Food", text, "Last donation 1w ago", green #28a745 progress, "$8,100 raised of $30,000"), 3-col → 1-col on mobile
+- [x] Latest Donations: 4 person cards on #fafafa (100px circular avatars, names, "Donated 3 hours ago", amounts $1,150/$150/$534/$2,500)
+- [x] Featured section: teal #79ccab overlay .9, "School in Africa Need Renovations. Thanks To All Donors", "We have raised $30,000", Read The Full Story button, photo left
+- [x] Latest News: bg-light #fafafa, 3 post cards (date "July 26, 2018", titles, excerpt, Read More)
 - [ ] About Us: heading + copy + Join Volunteer / Blog links, 3 mini-cards (Give Meal A Day / Free Education For African Children / Join As A Volunteers) with thumbs
 - [ ] Footer: #404040, About Us (+social icons) / Blog / Contact Info (address, phone, email, hours) columns, Component Dock credit bar
-- [ ] Document title "Generous — Charity Template"
+- [x] Document title "Generous — Charity Template"
 - [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 406 (Bootstrap), line 1271 (Charity), line 1300 (Church)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

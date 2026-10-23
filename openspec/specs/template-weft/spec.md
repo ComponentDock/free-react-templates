@@ -295,13 +295,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] Sidebar renders with dark `#18181c` background
-- [ ] Sidebar shows "Weft" brand name
+- [x] Sidebar shows "Weft" brand name
 - [ ] Sidebar nav links: Home, About Us, Services, Portfolio, Blog, Contact
 - [ ] Active nav link has `#99896e` background
 - [ ] Filter menu shows "Filter By:" with All, Branding, Design, Photography, Architecture
 - [ ] Filter controls the portfolio grid (Isotope-style filtering)
 - [ ] Social icons render in `#99896e` with hover to white
-- [ ] Copyright links to https://www.componentdock.com/
+- [x] Copyright links to https://www.componentdock.com/
 - [ ] Portfolio grid shows masonry layout with varying image sizes
 - [ ] Portfolio items have category tags for filtering
 - [ ] Portfolio hover shows overlay with details

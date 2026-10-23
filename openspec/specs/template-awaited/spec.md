@@ -556,11 +556,11 @@ Component Dock attribution, so a small line is added under the social row.
 - [ ] Placeholder photographs used are the two `picsum.photos/seed/awaited-bg*`
       URLs; icons are lucide-react only; no copied assets, wordmark, photo,
       favicon, font files or CSS; no jQuery, no framework, no CDN runtime
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Component Dock attribution links `https://www.componentdock.com/`
       (Poppins-Regular 12–13px, centred under the social row)
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_09` references anywhere
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_09` references anywhere
       in `apps/awaited` (comments included)
-- [ ] App folder `apps/awaited`, package `@free-react-templates/awaited`,
+- [x] App folder `apps/awaited`, package `@free-react-templates/awaited`,
       `homepage` `https://awaited.free.componentdock.com`, `public/CNAME`
       `awaited.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;

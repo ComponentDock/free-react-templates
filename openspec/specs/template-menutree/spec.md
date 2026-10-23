@@ -598,17 +598,17 @@ Dock (`https://www.componentdock.com/`) instead.
       returned; the social links have accessible names; every interactive element
       has a visible focus ring; `prefers-reduced-motion: reduce` removes the
       slide/fade motion
-- [ ] Zero `colorlib` / "Website Menu 01" / `website-menu-01` provenance
+- [x] Zero `colorlib` / "Website Menu 01" / `website-menu-01` provenance
       references anywhere in `apps/menutree` (comments included)
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no woff2 files
       (`open-sans-*.woff2`, `icomoon-subset.woff2`), no `icomoon` glyph
       codepoints (`\e313`, `\e315`, `\f078`), no `cl-`-prefixed utility classes,
       no jQuery/Bootstrap (the rewritten snippet needs neither), no copied strings
-- [ ] `public/CNAME` = `menutree.free.componentdock.com` and
+- [x] `public/CNAME` = `menutree.free.componentdock.com` and
       `"homepage": "https://menutree.free.componentdock.com"` in
       `apps/menutree/package.json`; `package-lock.json` registers
       `@free-react-templates/menutree`
-- [ ] Footer links `https://www.componentdock.com/` exactly once ("Component
+- [x] Footer links `https://www.componentdock.com/` exactly once ("Component
       Dock") with a computed current year
 - [ ] PR description includes: source template (ColorLib Website Menu 01),
       preview URL (`https://preview.colorlib.com/theme/bootstrap/website-menu-01/`
@@ -626,4 +626,4 @@ Dock (`https://www.componentdock.com/`) instead.
       instead of self-hosted woff2, the ten dead anchors materialised as labelled
       panels, one reconciled breakpoint, added aria/keyboard states, reduced-motion
       handling, footer attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

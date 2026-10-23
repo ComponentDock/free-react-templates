@@ -354,12 +354,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All images are seeded picsum placeholders
       (`picsum.photos/seed/savory-<n>/<w>/<h>`).
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [ ] 100% Vitest coverage on `apps/savory` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/savory` (lines/functions/branches/
       statements).
 - [ ] PR description includes: source template (ColorLib "Bueno"), preview
       URL (https://preview.colorlib.com/theme/bueno/ — reachable), design
       tokens used, what differs (name, placeholder images, script logo
       recreated as text, "Treading Post" typo paraphrased to "Trending
       Posts").
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

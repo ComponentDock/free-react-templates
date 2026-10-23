@@ -781,12 +781,12 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Placeholder photographs are the three `picsum.photos/seed/impending-bg*`
       URLs; icons are lucide-react only; no copied assets, mark, photo, favicon,
       font files or CSS; no jQuery, no framework, no CDN runtime
-- [ ] Component Dock attribution links `https://www.componentdock.com/`
-- [ ] Zero `colorlib` / source-demo-title / `comingsoon_10` references anywhere
+- [x] Component Dock attribution links `https://www.componentdock.com/`
+- [x] Zero `colorlib` / source-demo-title / `comingsoon_10` references anywhere
       in `apps/impending` (comments included)
-- [ ] App folder `apps/impending`, package `@free-react-templates/impending`,
+- [x] App folder `apps/impending`, package `@free-react-templates/impending`,
       `homepage` `https://impending.free.componentdock.com`, `public/CNAME`
       `impending.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh impending` passes
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -807,10 +807,10 @@ Dock (`https://www.componentdock.com/`) instead.
       drifting clouds hidden from the tree, and a working skip-to-content link
 - [ ] Anchors: in-page nav targets carry `scroll-margin-top` so headings clear
       the fixed header (124 px, 80 px scrolled), verified by following a nav link
-- [ ] `public/CNAME` = `skyvault.free.componentdock.com`; `"homepage"` matches;
+- [x] `public/CNAME` = `skyvault.free.componentdock.com`; `"homepage"` matches;
       `npm install` run at the repo root so the lockfile registers
       `@free-react-templates/skyvault`
-- [ ] Zero `colorlib` / "Hostspace" / `hostspace` provenance references anywhere
+- [x] Zero `colorlib` / "Hostspace" / `hostspace` provenance references anywhere
       in `apps/skyvault` (comments included — record the palette as design
       notes)
 - [ ] No copied assets: no `city.png`, `cloud.png`, `cloud_full.png`,
@@ -836,4 +836,4 @@ Dock (`https://www.componentdock.com/`) instead.
       `prefers-reduced-motion` handling for the reveal and cloud loops, added
       keyboard/aria states, local-only forms, and the Component Dock
       attribution)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

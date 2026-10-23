@@ -372,11 +372,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero headline tail uses the gradient typewriter effect (Depend On /
       Trust In / Rely On) per the live demo
 - [ ] Stats band counters animate (scroll-into-view reveal at minimum)
-- [ ] All images are seeded picsum placeholders (`coverly-<n>`); no ColorLib
+- [x] All images are seeded picsum placeholders (`coverly-<n>`); no ColorLib
       assets copied
 - [ ] Icons from lucide-react; shared components from packages/ui (Button,
       ButtonLink, Badge, Card, cn)
 - [ ] README templates-status table updated after merge
       (`npm run readme:status`)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

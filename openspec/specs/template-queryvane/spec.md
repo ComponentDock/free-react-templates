@@ -108,7 +108,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar displays brand and navigation — the navbar displays "Queryvane" as the brand name
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar displays brand and navigation — the navbar displays "Queryvane" as the brand name
 - [ ] Search overlay toggles on icon click — the search overlay becomes visible
 - [ ] Search form functionality — the input displays the typed text

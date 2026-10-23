@@ -280,18 +280,18 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Page renders all sections in order — the TopBar is visible at the top
-- [ ] TopBar displays contact information and social links — there are links labeled "Facebook", "Twitter", and "LinkedIn"
-- [ ] Navbar provides navigation — the brand name "Stall" is displayed
-- [ ] Hero displays heading and call-to-action buttons — the heading "Shop With Us" is displayed
+- [x] TopBar displays contact information and social links — there are links labeled "Facebook", "Twitter", and "LinkedIn"
+- [x] Navbar provides navigation — the brand name "Stall" is displayed
+- [x] Hero displays heading and call-to-action buttons — the heading "Shop With Us" is displayed
 - [ ] Products displays product grid — there are 6 product cards displayed
 - [ ] Newsletter provides email subscription — there is an email input field
 - [ ] FeaturedProducts displays featured items with pricing — there are 2 featured product cards
-- [ ] About displays company information — the heading "Why Choose Us" is displayed
+- [x] About displays company information — the heading "Why Choose Us" is displayed
 - [ ] Team displays team members — there are 3 team member cards
-- [ ] SpecialPromo displays countdown and shop button — the heading "Special Promo" is displayed
+- [x] SpecialPromo displays countdown and shop button — the heading "Special Promo" is displayed
 - [ ] Services displays service cards — there are 6 service cards
-- [ ] Testimonials displays carousel — the heading "Testimonials" is displayed
+- [x] Testimonials displays carousel — the heading "Testimonials" is displayed
 - [ ] BlogPosts displays blog cards — there are 3 blog post cards
 - [ ] Contact displays form — there are fields for First Name, Last Name, Email, Subject, and Message

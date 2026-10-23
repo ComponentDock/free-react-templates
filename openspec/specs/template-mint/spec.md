@@ -195,14 +195,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Mint" and links to Home, About, Services, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Experience Interior Design"
-- [ ] Services section — it SHALL contain a heading "What we offer"
-- [ ] Why Us section — it SHALL contain a heading "Why Us"
-- [ ] Testimonials section — it SHALL contain a heading "Testimonials"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Mint" and links to Home, About, Services, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Experience Interior Design"
+- [x] Services section — it SHALL contain a heading "What we offer"
+- [x] Why Us section — it SHALL contain a heading "Why Us"
+- [x] Testimonials section — it SHALL contain a heading "Testimonials"
 - [ ] Works section — it SHALL show at least three project images with captions
-- [ ] Blog section — it SHALL contain a heading "Our Blog Posts"
+- [x] Blog section — it SHALL contain a heading "Our Blog Posts"
 - [ ] Footer — it SHALL show link columns and a copyright line
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

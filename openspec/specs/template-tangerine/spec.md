@@ -249,14 +249,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Left image is a placeholder (picsum seed), not the source `bg_1.jpg`.
 - [ ] White card: max-width 400px, ~40px padding, shadow
       `0 15px 30px rgba(0,0,0,0.2)`, subtle corner rounding.
-- [ ] Centered dark "Sign Up" heading (Roboto, bold).
-- [ ] Three stacked inputs — labels "Your Email" / "Password" /
+- [x] Centered dark "Sign Up" heading (Roboto, bold).
+- [x] Three stacked inputs — labels "Your Email" / "Password" /
       "Re-type Password" + placeholders "your-email@gmail.com" /
       "Your Password" / "Your Password"; 54px tall, `#efefef` fill, no
       border, 4px radius, no focus outline; password fields masked.
 - [ ] Custom checkbox 20×20: `#e6e6e6` unchecked, brand orange `#fb771a` + white check when checked, checked by default, caption "Agree our
       Terms and Conditions" with linked terms text.
-- [ ] Full-width "Register" button: `#fb771a` bg, white text, 54px, 4px
+- [x] Full-width "Register" button: `#fb771a` bg, white text, 54px, 4px
       radius, hover `#eb6304`; submit shows an in-page success state.
 - [ ] Roboto loaded via Google Fonts link; brand tokens (`#fb771a`,
       `#f6f7fc`, `#efefef`, greys) in `@theme`.
@@ -265,8 +265,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Native checkbox input, label/input pairing, visible labels, focus
       rings, keyboard-operable.
 - [ ] No icon font — any icons via lucide-react (check glyph).
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock").
-- [ ] No ColorLib references in app code; provenance only in this spec,
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock").
+- [x] No ColorLib references in app code; provenance only in this spec,
       TEMPLATES.md and the PR.
 - [ ] Placeholder-free; no asset copies from the source.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

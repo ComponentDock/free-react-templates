@@ -115,10 +115,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar with logo and links — the navbar shows the "Keynest" logo
-- [ ] Hero section with property search form — the hero shows "Find Your Dream Home" heading
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar with logo and links — the navbar shows the "Keynest" logo
+- [x] Hero section with property search form — the hero shows "Find Your Dream Home" heading
 - [ ] Property listings grid — 6 property cards are displayed
-- [ ] Feature showcase section — the heading "Just browse away. It's all here." is visible
+- [x] Feature showcase section — the heading "Just browse away. It's all here." is visible
 - [ ] 4-step process section — 4 steps are displayed in a row
 - [ ] Team/agents section — 4 agent cards are shown

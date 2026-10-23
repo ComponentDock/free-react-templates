@@ -254,9 +254,9 @@ Dock (`https://www.componentdock.com/`) instead.
       (`wordpress-business-themes1.jpg`) — split hero, slate `#6A6F82`,
       bottom-corner wordmark + hamburger, no top navbar
 - [ ] TEMPLATES.md lines 535, 1234, 1499, AND 2101 all marked `[x]`
-- [ ] `public/CNAME` = `slate.free.componentdock.com`; `homepage` =
+- [x] `public/CNAME` = `slate.free.componentdock.com`; `homepage` =
       `https://slate.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Hero — the hero SHALL have a solid slate blue-grey background (`#6A6F82`)
 - [ ] Mobile menu — a full-screen overlay menu SHALL open, covering the viewport
 - [ ] Features — the section SHALL have a white background with a short section

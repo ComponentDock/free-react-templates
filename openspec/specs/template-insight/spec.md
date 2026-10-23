@@ -236,7 +236,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Responsive on mobile (375px)
 - [ ] Brand color `#ff656a` used for buttons and accents
 - [ ] Font is Poppins via Google Fonts
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] `packages/ui` components reused where applicable
 - [ ] Tests pass with 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -159,7 +159,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Dark navbar with brand and nav links renders correctly
 - [ ] Mobile hamburger menu toggles navigation
 - [ ] Hero slider shows 2 slides with background images, headings, CTAs
-- [ ] "Get Started" CTA has white outline style
+- [x] "Get Started" CTA has white outline style
 - [ ] Services section: 4 blocks with icons, orange headings, descriptions
 - [ ] Slanted section separators (CSS clip-path) render
 - [ ] Restaurant section: heading + paragraph + 3 images
@@ -171,8 +171,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Orange (#ff7404) used for CTAs, prices, active nav
 - [ ] Square button corners (border-radius: 0)
 - [ ] Open Sans font throughout
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Tests pass with 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

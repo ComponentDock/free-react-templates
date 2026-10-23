@@ -176,11 +176,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] TopBar renders social links and login CTA — the top bar shows links for Twitter, Facebook, Instagram, and LinkedIn
-- [ ] Navbar renders brand and navigation links — the navbar shows "GiveAid" brand text and 5 navigation links
-- [ ] Hero carousel displays children for adoption — the hero shows the heading "Needs a Caring Parents" and "Adopt Her Now!" button
-- [ ] About section and Steps accordion — the about section shows "Steps to adopt & foster a child" heading and "Adopt a child now" button
+- [x] Navbar renders brand and navigation links — the navbar shows "GiveAid" brand text and 5 navigation links
+- [x] Hero carousel displays children for adoption — the hero shows the heading "Needs a Caring Parents" and "Adopt Her Now!" button
+- [x] About section and Steps accordion — the about section shows "Steps to adopt & foster a child" heading and "Adopt a child now" button
 - [ ] Waiting Children section displays child cards — the section shows 5 child cards with names (Edward, Mellisa, Mark, Jessa, Ben) and ages
 - [ ] Featured Stories section displays story overlays — 3 story cards are visible with dates and titles
-- [ ] Newsletter subscription form — the form shows name and email inputs plus a "Subscribe" button
+- [x] Newsletter subscription form — the form shows name and email inputs plus a "Subscribe" button

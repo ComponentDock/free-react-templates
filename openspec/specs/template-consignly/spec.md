@@ -398,13 +398,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/consignly` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/consignly` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- consignly` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#081158, #070d59, #00eaff, #29eafd, #212529, #6c757d, #adb5bd, #f8f9fa, #efefef, #777, #0c1a87, Montserrat + Open Sans) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `consignly-<n>`, inline SVG dotted map, Google Fonts link, lucide + inline SVG brand icons only)
+- [x] No ColorLib assets copied (picsum seeds `consignly-<n>`, inline SVG dotted map, Google Fonts link, lucide + inline SVG brand icons only)
 - [ ] Count-up counters, testimonial slider, and accordion implemented with client-side state, no new deps
 - [ ] Hero search form submits without reload; video play control is an accessible button
 - [ ] Dropdown + mobile off-canvas menu accessible (aria-expanded, Escape, outside click)
 - [ ] Footer copyright bar carries the Component Dock attribution link
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

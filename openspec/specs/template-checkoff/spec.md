@@ -131,7 +131,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Renders the main heading and subtitle — a heading with text "Checkbox #11" is rendered at level 1
-- [ ] Checkboxes are interactive (non-disabled) — the "Second checkbox" becomes checked
+- [x] Checkboxes are interactive (non-disabled) — the "Second checkbox" becomes checked
 - [ ] Disabled checkboxes do not toggle — the "Disabled" checkbox remains unchecked

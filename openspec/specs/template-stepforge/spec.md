@@ -122,10 +122,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Three-step wizard flow — the heading "Form Booking Wizard" is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Three-step wizard flow — the heading "Form Booking Wizard" is visible
 - [ ] Step indicator reflects progress — step 1 icon shows completed (teal)
 - [ ] Personal Info form fields — the field value updates
 - [ ] Booking form fields — the selected room value updates
 - [ ] Confirmation summary — the table shows all booking details
-- [ ] Submit flow — a "Booking Confirmed!" message is displayed
+- [x] Submit flow — a "Booking Confirmed!" message is displayed

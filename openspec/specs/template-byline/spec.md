@@ -94,8 +94,8 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with brand, navigation, and social links — the navbar displays "Byline" brand, Home/About/Contact links, search button, and social icons
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with brand, navigation, and social links — the navbar displays "Byline" brand, Home/About/Contact links, search button, and social icons
 - [ ] Hero section with featured post — the hero section displays a post title, date, excerpt, and Read More button
 - [ ] Blog content area with posts and sidebar — the featured post title, author, and share icons are visible
 - [ ] Newsletter subscription form — the form submits without error

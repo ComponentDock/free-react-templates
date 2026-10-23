@@ -234,7 +234,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-prose`
-- [ ] 100% coverage (lines/functions/branches/statements) for `apps/prose`
+- [x] 100% coverage (lines/functions/branches/statements) for `apps/prose`
 - [ ] Per-app gate: `scripts/verify-app.sh prose` (typecheck + lint +
       coverage + build)
 - [ ] Visual diff against `https://preview.colorlib.com/theme/blogger/`:
@@ -242,9 +242,9 @@ Dock (`https://www.componentdock.com/`) instead.
       footer), button shapes
 - [ ] PR description includes: source template, preview URL, design
       tokens, what differs (name, seeded picsum images, lucide icons)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Prose" and links Home,
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Prose" and links Home,
 - [ ] Hero banner — it SHALL contain a level-1 heading "A Discount Toner Cartridge
 - [ ] Category area — it SHALL contain the heading "Latest News from all categories"
 - [ ] Travel section — it SHALL contain the heading "Hot topics from Travel Section"

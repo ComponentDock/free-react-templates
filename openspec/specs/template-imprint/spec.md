@@ -132,11 +132,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Page loads with correct title — the document title is "Imprint — Personal Portfolio Template"
-- [ ] Navbar renders brand and navigation — the navbar contains a link with text "Imprint"
-- [ ] Hero section renders main content — there is a heading containing "Creative Designer"
-- [ ] Intro section renders — there is a heading containing "Web Designer"
-- [ ] Services section shows four service cards — there are headings for "Web Design", "Web Development", "Graphic Design", and "Writing"
-- [ ] Portfolio section shows six entries — there are 6 elements with text "View Portfolio"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Page loads with correct title — the document title is "Imprint — Personal Portfolio Template"
+- [x] Navbar renders brand and navigation — the navbar contains a link with text "Imprint"
+- [x] Hero section renders main content — there is a heading containing "Creative Designer"
+- [x] Intro section renders — there is a heading containing "Web Designer"
+- [x] Services section shows four service cards — there are headings for "Web Design", "Web Development", "Graphic Design", and "Writing"
+- [x] Portfolio section shows six entries — there are 6 elements with text "View Portfolio"
 - [ ] Page composes all sections — there is a banner landmark

@@ -216,14 +216,14 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Buzz" and a "Home" link pointing to the page root
-- [ ] Hero — it SHALL show a level-1 headline (e.g. "Modern barber shop in center of the city")
-- [ ] About section — it SHALL show the heading "About Us"
-- [ ] Services grid — it SHALL show the heading "Our Services"
-- [ ] Pricing — it SHALL show the heading "Our Pricing"
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Buzz" and a "Home" link pointing to the page root
+- [x] Hero — it SHALL show a level-1 headline (e.g. "Modern barber shop in center of the city")
+- [x] About section — it SHALL show the heading "About Us"
+- [x] Services grid — it SHALL show the heading "Our Services"
+- [x] Pricing — it SHALL show the heading "Our Pricing"
 - [ ] Barbers team — it SHALL render three member cards with names (e.g. Jhon Smith, Jems Smith, Thomas J Watson)
-- [ ] Appointment form — it SHALL show the heading "Make an Appointment"
-- [ ] Footer — it SHALL show the site name "Buzz" and quick links
+- [x] Appointment form — it SHALL show the heading "Make an Appointment"
+- [x] Footer — it SHALL show the site name "Buzz" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

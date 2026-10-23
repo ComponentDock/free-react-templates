@@ -229,7 +229,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Brand colors match: #dc3545 red, #000 black, #f8f9fa light gray
 - [ ] Hero section is 90vh with 70px headline
 - [ ] Portfolio grid: 2 large + 3 small items with -100px overlap
-- [ ] Portfolio hover overlay: red (rgba(220,53,69,0.9)) with "View Case Study"
+- [x] Portfolio hover overlay: red (rgba(220,53,69,0.9)) with "View Case Study"
 - [ ] What We Do: 4 services (Web Development, Brand identity, Copywriting, eCommerce)
 - [ ] Blog posts: 1 full-width + 2 side-by-side with hover overlays
 - [ ] CTA: animated text swap on hover, red background fill

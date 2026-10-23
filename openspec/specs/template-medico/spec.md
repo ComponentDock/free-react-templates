@@ -360,24 +360,24 @@ Dock (`https://www.componentdock.com/`) instead.
       hover `#0065e1`, icon circles `#f0e9ff`/`#f2f6f8`, card border
       `#f2f6f8`, light bg `#f9f9ff`, footer `#f3f6f7`, headings
       `#242429`; Playfair Display headings + Roboto body.
-- [ ] Header: white bar, "Medico" wordmark, nav (Home, About, Doctors,
+- [x] Header: white bar, "Medico" wordmark, nav (Home, About, Doctors,
       Pages, Blog, Contact), "HOT LINE- 09856" callout, gradient "Make
       an appointment" button; mobile burger opens the menu panel.
-- [ ] Hero: 935px-tall banner, eyebrow "We are here for your care",
+- [x] Hero: 935px-tall banner, eyebrow "We are here for your care",
       60px serif headline "Best Care & Better Doctor", paragraph,
       gradient "Make an appointment" button, illustration placeholder.
-- [ ] About: photo left, "About us" heading + paragraph + white "learn
+- [x] About: photo left, "About us" heading + paragraph + white "learn
       more" button + 3 icon items (Emergency, Appointment, Qualified).
-- [ ] Services: `#f9f9ff` band, centered "Our services", 4 "Better
+- [x] Services: `#f9f9ff` band, centered "Our services", 4 "Better
       Future" cards with 50px `#f0e9ff` icon circles.
-- [ ] Departments: "Our Departments" title, 4 bordered cards with
+- [x] Departments: "Our Departments" title, 4 bordered cards with
       `#f2f6f8` icon circles and blurbs.
-- [ ] Doctors: "Experienced Doctors" title + subtitle, 4 photo cards
+- [x] Doctors: "Experienced Doctors" title + subtitle, 4 photo cards
       (name + specialty, social icon overlay).
 - [ ] Reservation: gradient band (dark-blue overlay feel), "Make an
       Appointment" heading, service + time selects, white submit button,
       confirmation on submit.
-- [ ] Blog: "Our Blog" title, 2 article cards (photo, title, author
+- [x] Blog: "Our Blog" title, 2 article cards (photo, title, author
       "Jhon mike", category "Clinic, doctors").
 - [ ] Footer: `#f3f6f7` background, about widget, Quick Links / Explore
       / Resources columns, Newsletter form, copyright bar.
@@ -388,12 +388,12 @@ Dock (`https://www.componentdock.com/`) instead.
       wordmark; brand icons (Facebook/Twitter/Skype/Instagram) as inline
       SVG.
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [ ] 100% Vitest coverage on `apps/medico` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/medico` (lines/functions/branches/
       statements).
 - [ ] PR description includes: source template (ColorLib "Medico"),
       preview URL (https://preview.colorlib.com/theme/medico/ —
       reachable), design tokens used, what differs (name kept from
       checklist, placeholder images, text logo, Google-font
       substitution, typo fixes).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

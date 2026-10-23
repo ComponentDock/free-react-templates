@@ -451,9 +451,9 @@ Display pairing as Tailwind 4 `@theme` tokens.
 - [ ] All images are `picsum.photos/seed/trekvoyage-*` placeholders;
       icons from `lucide-react`; no copied assets or CSS; no Bootstrap,
       owl-carousel, fancybox, or jQuery
-- [ ] Zero `colorlib` / "Travel." demo-brand references anywhere in
+- [x] Zero `colorlib` / "Travel." demo-brand references anywhere in
       `apps/trekvoyage`
-- [ ] App folder `apps/trekvoyage`, package
+- [x] App folder `apps/trekvoyage`, package
       `@free-react-templates/trekvoyage`, `homepage`
       `https://trekvoyage.free.componentdock.com`, `public/CNAME`
       `trekvoyage.free.componentdock.com`, lockfile registers the

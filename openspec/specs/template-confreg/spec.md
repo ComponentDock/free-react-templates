@@ -127,9 +127,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Split-panel layout — the hero panel occupies the left half of the card
-- [ ] Hero panel content — the heading "Register Now" is visible
+- [x] Hero panel content — the heading "Register Now" is visible
 - [ ] Registration form fields — fields for First Name, Last Name, Company, Email, and Phone Number are visible
 - [ ] Donation slider — the donation badge shows "$ 500"
 - [ ] Form submission — a success message is displayed

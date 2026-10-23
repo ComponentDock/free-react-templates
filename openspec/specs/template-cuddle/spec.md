@@ -255,11 +255,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar renders with transparent background and scrolled state — logo and nav links (Home, About, Causes, Blog, Contact) are visible
 - [ ] Hero section displays background image, overlay, heading, CTAs, and donation widget — hero shows bg image + dark overlay + H1 "Raising Hope / To the Homeless & Hopeless People" in Patrick Hand
 - [ ] Donation widget form handles input — default submit is prevented (no backend)
-- [ ] Intro/About section renders two-column layout with feature cards — section shows left image + right content with heading "We Help Thousands of Children to Get Their Education" + 3 feature cards…
+- [x] Intro/About section renders two-column layout with feature cards — section shows left image + right content with heading "We Help Thousands of Children to Get Their Education" + 3 feature cards…
 - [ ] Counter section displays four statistics over background image — four stat cards show $60M, 9200, 5800, 2750 over bg image
 - [ ] Causes carousel displays cause cards with progress — 3+ cause cards visible in carousel
 - [ ] CTA/Image section renders split layout — left side shows "The Smallest Act of Kindness..." heading + Donate Now / Become Volunteer buttons, right side shows bg image

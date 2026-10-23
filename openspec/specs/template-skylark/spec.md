@@ -376,13 +376,13 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/skylark` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/skylark` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- skylark` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#1D2A3B, #4657F0, #F9B71C, #747E8C, #f4f8fb, #191B26, Nunito Sans) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `skylark-<n>`, Google Fonts link, lucide icons only)
+- [x] No ColorLib assets copied (picsum seeds `skylark-<n>`, Google Fonts link, lucide icons only)
 - [ ] Feature + gallery sliders implemented with client-side state, no new deps
 - [ ] Filter form submits (Where / Date / Guests + Search Plane button); date field is a plain input
 - [ ] Pages dropdown + mobile menu accessible (aria-expanded, Escape, outside click)
 - [ ] Footer bottom bar carries the Component Dock attribution link
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

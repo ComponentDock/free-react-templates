@@ -514,14 +514,14 @@ Dock (`https://www.componentdock.com/`) instead.
       greeting (no alert).
 - [ ] Responsive check at 768px (card `calc(100% - 40px)`, no
       horizontal overflow).
-- [ ] No ColorLib references in any app file; footer links
+- [x] No ColorLib references in any app file; footer links
       https://www.componentdock.com/.
 - [ ] Icon exports probed with
       `node -e "console.log(typeof require('lucide-react').X)"` for
       every mapped icon before use (ChevronLeft, ChevronRight, Eye,
       EyeOff, CircleX — CircleX renamed from XCircle in recent
       lucide releases; probe both).
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Icon mapping (zmdi → lucide)
 

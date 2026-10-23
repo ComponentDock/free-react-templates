@@ -300,9 +300,9 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Intro: white section, single thin large headline
 - [ ] Split block 1: image + circular play button (opens video modal), heading + 2 paragraphs on the right
 - [ ] Split block 2: #fafafa band, 2 text blocks left, image with mint (#4ECCA3) quote overlay (24px, padding 80px, author name)
-- [ ] Testimonials: centered "Testimonials" heading, 3 flip cards (photo/name/role front, quote + round avatar back, hover flip)
+- [x] Testimonials: centered "Testimonials" heading, 3 flip cards (photo/name/role front, quote + round avatar back, hover flip)
 - [ ] What We Do: centered heading, 6 icon cards (mint circle behind icon, 20px heading, 16px paragraph)
 - [ ] Blog: #fafafa band, 3 image cards with category label, bold title, author + date meta; hover white panel
 - [ ] Footer: white bg, top border #eeeeee, 3 link columns, social circles, centered copyright
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

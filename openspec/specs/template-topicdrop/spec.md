@@ -171,4 +171,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer links to Component Dock
 - [x] No ColorLib references in app code (provenance only in spec)
 - [x] Placeholder images: N/A (no images in this template)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

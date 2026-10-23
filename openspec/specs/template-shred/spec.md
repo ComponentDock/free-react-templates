@@ -540,10 +540,10 @@ Dock (`https://www.componentdock.com/`) instead.
       program tab strip), `#fe7878` (promo band), Nunito Sans, pill buttons
       (radius 30px), black `#000` navbar/footer, `#f8f9fa` light bands,
       `#ffdddd` schedule band.
-- [ ] No ColorLib references in any app file; footer links
+- [x] No ColorLib references in any app file; footer links
       `https://www.componentdock.com/`.
 - [ ] TEMPLATES.md rows 498, 1167 and 1876 all marked `[x]` with the surge
       URL after shipping.
 - [ ] Picsum seeds screened for suitable subjects (fitness hero photos,
       coach/testimonial headshots) and pinned in the spec + PR.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

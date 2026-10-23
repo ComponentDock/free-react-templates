@@ -482,9 +482,9 @@ Dock (`https://www.componentdock.com/`) instead.
       inline boxes on unit-9 cards, footer #333333, body #4d4d4d, muted
       #737373/#b3b3b3/#a6a6a6, bg-light #f8f9fa sections, rgba(0,0,0,0.4)
       hero overlays, swiper bars 28×4px radius 0 active lime.
-- [ ] All images are picsum-seeded placeholders (no ColorLib assets).
+- [x] All images are picsum-seeded placeholders (no ColorLib assets).
 - [ ] PR description records source template (Radios), preview URL, tokens,
       renames, and the icon-substitution note (lucide/inline SVG for
       icomoon).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

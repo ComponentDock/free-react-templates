@@ -104,7 +104,7 @@ apps/dirly/
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — GIVEN** the page loads, Then the navbar is visible with logo, nav links, and Sign In button
 - [ ] Hero — GIVEN** the page loads, Then the hero section shows a background image with search bar
 - [ ] Popular Categories — GIVEN** the page loads, Then 4 category cards are displayed with images and names

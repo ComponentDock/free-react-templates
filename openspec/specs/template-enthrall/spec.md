@@ -615,7 +615,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `calc(100% - 40px)`, tabs stack to 100% width, form rows stack to
       one column, `form-flex` padding narrows, no horizontal overflow,
       validation errors never clipped — content uses `min-height`).
-- [ ] No ColorLib strings in any app file; footer links
+- [x] No ColorLib strings in any app file; footer links
       https://www.componentdock.com/; provenance lives only in this
       spec, TEMPLATES.md, and the PR.
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -275,9 +275,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — it SHALL show the logo text "AzurePeak" linking to the top
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — it SHALL show the logo text "AzurePeak" linking to the top
 - [ ] Hero section with booking form — it SHALL display a full-viewport section with an ocean background image
 - [ ] Stats bar — four stats SHALL be displayed in a horizontal grid
 - [ ] Rooms and suites section — three room cards SHALL be displayed in a 3-column grid

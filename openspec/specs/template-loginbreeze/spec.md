@@ -178,14 +178,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Full-viewport city skyline background with dark overlay
 - [ ] Centered gradient card (purple-to-indigo)
 - [ ] White circular logo icon with mountain/document icon
-- [ ] "Log In" heading in white, uppercase
+- [x] "Log In" heading in white, uppercase
 - [ ] Username input with user icon and underline border
 - [ ] Password input with lock icon and underline border
-- [ ] "Remember me" checkbox with indigo accent
-- [ ] White pill-shaped "Login" button, full-width
-- [ ] "Forgot Password?" link in white
+- [x] "Remember me" checkbox with indigo accent
+- [x] White pill-shaped "Login" button, full-width
+- [x] "Forgot Password?" link in white
 - [ ] Responsive centering on all viewports
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock")
+- [x] No ColorLib references in app code
 - [ ] Tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

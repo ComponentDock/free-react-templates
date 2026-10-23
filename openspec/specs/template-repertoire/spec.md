@@ -137,10 +137,10 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Hero section with image slider — the hero section shows "Strategic Design for Brands"
-- [ ] About section with accordion — "Welcome & Introduce" heading is visible
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Hero section with image slider — the hero section shows "Strategic Design for Brands"
+- [x] About section with accordion — "Welcome & Introduce" heading is visible
 - [ ] Services section — 6 service items are rendered
 - [ ] Portfolio section — 6 project cards are rendered
 - [ ] Blog section — 3 blog post cards are rendered
-- [ ] CTA section — "Get in Touch!" heading is visible and a "Contact me!" button is rendered
+- [x] CTA section — "Get in Touch!" heading is visible and a "Contact me!" button is rendered

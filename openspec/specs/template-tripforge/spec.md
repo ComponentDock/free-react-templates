@@ -505,10 +505,10 @@ repo conventions.
 
 - [ ] `npm run spec:validate` passes for this spec (whole-repo validate may
       fail on unrelated legacy specs — check this spec's own `✓` line).
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/tripforge`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/tripforge`
       (`scripts/verify-app.sh tripforge` in FAST_MODE; full `npm run gate`
       in CI).
-- [ ] Visual fidelity: transparent floating navbar (bold "tripforge" +
+- [x] Visual fidelity: transparent floating navbar (bold "tripforge" +
       coral dot, white links, outline "Add listing" pill filling coral on
       hover, solid dark on scroll), tropical beach hero with "Explore /
       your amazing city" (bold first line, weight-200 second), inline
@@ -530,7 +530,7 @@ repo conventions.
       (hero, band, dest ×6, tour ×5, hotel ×5, rest ×4, blog ×4, quote
       ×3); icons from lucide-react with inline-SVG brand icons; no
       ColorLib assets, CSS, or strings anywhere in `apps/tripforge`.
-- [ ] `public/CNAME` = `tripforge.free.componentdock.com`; package
+- [x] `public/CNAME` = `tripforge.free.componentdock.com`; package
       `@free-react-templates/tripforge`; `"homepage"`
       = `https://tripforge.free.componentdock.com`; lockfile registers the
       workspace; `injectUiSource()` present in `vite.config.ts`; footer

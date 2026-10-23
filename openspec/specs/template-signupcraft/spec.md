@@ -245,13 +245,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Split-screen layout: image left (~40%), form card right (~60%)
 - [ ] Layout stacks vertically on mobile (<768px)
-- [ ] "SIGN UP" heading is uppercase, bold, centered in card
+- [x] "SIGN UP" heading is uppercase, bold, centered in card
 - [ ] Email input with label and placeholder renders
 - [ ] Password input with label and placeholder renders (masked)
 - [ ] Re-type Password input with label and placeholder renders (masked)
 - [ ] Terms checkbox is checked by default
 - [ ] Terms/Privacy links are clickable and styled as orange links
-- [ ] Orange "Register" button is full-width with rounded corners
+- [x] Orange "Register" button is full-width with rounded corners
 - [ ] "or" text divider renders between Register and social buttons
 - [ ] Facebook button: dark blue background, icon, white text
 - [ ] Twitter button: light blue background, icon, white text
@@ -259,7 +259,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] All social buttons are full-width with rounded corners
 - [ ] Card has white background with subtle shadow
 - [ ] Page background is light gray (#f5f5f5)
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
 - [ ] Placeholder image: https://picsum.photos/seed/signupcraft/800/1200
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

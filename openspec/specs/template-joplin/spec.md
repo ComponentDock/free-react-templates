@@ -197,4 +197,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Tests pass with 100% coverage
 - [x] Build succeeds
 - [x] App renders without errors in browser
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

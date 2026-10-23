@@ -232,17 +232,17 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Countdown timer displays 4 circular units with pink numbers
 - [ ] Countdown updates every second
 - [ ] Logo is visible at top-right of right panel
-- [ ] "Under Construction" heading in Poppins, bold
+- [x] "Under Construction" heading in Poppins, bold
 - [ ] Description paragraph visible with maintenance message
-- [ ] Email input with "Enter your email" placeholder
-- [ ] "NOTIFY US" button in pink (#F84982), hover darkens to #e40b52
+- [x] Email input with "Enter your email" placeholder
+- [x] "NOTIFY US" button in pink (#F84982), hover darkens to #e40b52
 - [ ] Input focus shows pink border (#f89fbc)
 - [ ] Subtext visible below form
 - [ ] Social icons with brand colors
 - [ ] Component Dock footer link present
 - [ ] Responsive: stacks vertically at ≤992px
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
-- [ ] `public/CNAME` contains `imminence.free.componentdock.com`
-- [ ] `package.json` homepage is `https://imminence.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
+- [x] `public/CNAME` contains `imminence.free.componentdock.com`
+- [x] `package.json` homepage is `https://imminence.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

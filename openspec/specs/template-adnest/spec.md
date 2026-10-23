@@ -183,9 +183,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar renders correctly — the navbar SHALL display the "CLASSYADS" logo
-- [ ] Hero section renders search functionality — the hero SHALL show the headline "Largest Classifieds In The World"
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar renders correctly — the navbar SHALL display the "CLASSYADS" logo
+- [x] Hero section renders search functionality — the hero SHALL show the headline "Largest Classifieds In The World"
 - [ ] Category strip displays all categories — 6 category items SHALL be displayed: Real Estate, Books & Magazines, Furniture, Electronics, Cars & Vehicles, Other
-- [ ] Featured ads grid renders correctly — the "Featured Ads" heading SHALL be displayed
+- [x] Featured ads grid renders correctly — the "Featured Ads" heading SHALL be displayed
 - [ ] Mobile responsive layout — the navbar SHALL collapse to a hamburger menu

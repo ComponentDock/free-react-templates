@@ -293,7 +293,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] `npm run spec:validate` passes for `template-voyagely`
 - [ ] `scripts/verify-app.sh voyagely` passes (typecheck + lint + vitest 100%
       coverage + build)
-- [ ] Sections in order (1:1 with source): header (wordmark "VOYAGELY" +
+- [x] Sections in order (1:1 with source): header (wordmark "VOYAGELY" +
       grid menu icon) → full-screen hero photo → dark booking container
       (Destination · From · To · Quantity · Book now). No extra sections.
 - [ ] Brand colors in `@theme`, used via Tailwind classes: `#f8ba0f`
@@ -304,7 +304,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Hero photo = seeded picsum (`voyagely-hero`); wordmark = styled text;
       icons from lucide-react (`LayoutGrid`, `Calendar`, `ChevronUp`,
       `ChevronDown`) — no copied assets
-- [ ] Date inputs are native `<input type="date">`; To ≥ From validation
+- [x] Date inputs are native `<input type="date">`; To ≥ From validation
 - [ ] Stepper honors min 0; submit shows summary / validation messages
 - [ ] Mobile (≤768px): container `calc(100% - 30px)`, fields stack 1-col;
       ≤480px form padding 30px sides
@@ -312,5 +312,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done
       by implementer at ship time (mark the "Colorlib Regform 11" row, line
       323 — Booking Forms category)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

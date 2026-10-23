@@ -501,7 +501,7 @@ at 360px.
 - [ ] Footer: `#121212`, statement h2 + phone + `#1a2537` divider,
       4 columns (COMPANY / Open hour / RESOURCES / brand block),
       `#c4c4c4` blurb, social icons, copyright bar
-- [ ] Footer links https://www.componentdock.com/ ("Component Dock");
+- [x] Footer links https://www.componentdock.com/ ("Component Dock");
       zero ColorLib references anywhere in the app (comments included)
 - [ ] All imagery = `picsum.photos/seed/vitesse-*`; icons =
       lucide-react; no copied assets

@@ -238,15 +238,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Drively" and a "Home" link pointing to the page root
-- [ ] Hero with featured car — the hero SHALL show a featured car card with a level-2 heading (e.g. "Range Rover S7")
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Drively" and a "Home" link pointing to the page root
+- [x] Hero with featured car — the hero SHALL show a featured car card with a level-2 heading (e.g. "Range Rover S7")
 - [ ] Trip booking form — the form SHALL contain labeled inputs for pickup address, drop-off address, journey date, and return date
-- [ ] Offer carousel — it SHALL show a level-2 heading "Our Offer" with Previous/Next buttons
-- [ ] Services strip — it SHALL show a level-2 heading "Our services"
+- [x] Offer carousel — it SHALL show a level-2 heading "Our Offer" with Previous/Next buttons
+- [x] Services strip — it SHALL show a level-2 heading "Our services"
 - [ ] How it works — it SHALL show five steps numbered 01 through 05 with captions
-- [ ] Testimonials — it SHALL show a level-2 heading "Customer Testimony"
+- [x] Testimonials — it SHALL show a level-2 heading "Customer Testimony"
 - [ ] Blog row — it SHALL show a level-2 heading "Our Blog"
-- [ ] Footer — it SHALL show the site name "Drively" and quick links
+- [x] Footer — it SHALL show the site name "Drively" and quick links
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

@@ -391,7 +391,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/forge`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/forge`
       (`scripts/verify-app.sh forge` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: transparent navbar (wordmark + 5 links + search),
@@ -412,14 +412,14 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] PR description states source template (ColorLib "Craft"), preview
       URL, design tokens, and what differs (name, placeholders, video
       lightbox approach, slider/carousel simplification choices).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Header and navigation — the header SHALL show the site wordmark (uppercase, letter-
 - [ ] Hero section — it SHALL show the uppercase heading "We Are Creative Agency" in
-- [ ] About section — it SHALL show the uppercase eyebrow "Who We Are" in the
-- [ ] Portfolio section — it SHALL show the uppercase title "Latest Work" centered
-- [ ] Services section — it SHALL show the eyebrow "Featured Services", the divider bar,
-- [ ] Testimonials section — it SHALL show the uppercase title "Testimonial" centered
+- [x] About section — it SHALL show the uppercase eyebrow "Who We Are" in the
+- [x] Portfolio section — it SHALL show the uppercase title "Latest Work" centered
+- [x] Services section — it SHALL show the eyebrow "Featured Services", the divider bar,
+- [x] Testimonials section — it SHALL show the uppercase title "Testimonial" centered
 - [ ] Call-to-action band — it SHALL use the brand teal `#20c997` background
-- [ ] Footer — it SHALL show an "About" column with a short text and social
+- [x] Footer — it SHALL show an "About" column with a short text and social
 - [ ] Page composition — the page SHALL compose the header in the banner landmark, all

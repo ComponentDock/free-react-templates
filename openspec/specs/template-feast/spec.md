@@ -129,11 +129,11 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navbar with navigation and CTA — the navbar displays the Feast logo, About, Services, Menu, Gallery, Blog, Pages, Contact links, and a "Custom Order" button
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navbar with navigation and CTA — the navbar displays the Feast logo, About, Services, Menu, Gallery, Blog, Pages, Contact links, and a "Custom Order" button
 - [ ] Hero section with heading and background — the hero section displays "Food Catering Service." heading and a description about catering services
 - [ ] Services section with 6 service cards — 6 service cards are rendered: Birthday Catering, Wedding Service, Party Catering, Event Catering, Corporate Service, Catering On Demand
-- [ ] Video banner with play button — the "Watch Video" heading and a play button are displayed
-- [ ] Popular Orders section with 6 meal cards — 6 meal cards are rendered with names, prices, and "Order Now!" buttons
+- [x] Video banner with play button — the "Watch Video" heading and a play button are displayed
+- [x] Popular Orders section with 6 meal cards — 6 meal cards are rendered with names, prices, and "Order Now!" buttons
 - [ ] Testimonials section with customer feedback — 3 testimonial cards are displayed with author names and quotes
 - [ ] Brands section with logo grid — 8 brand logo placeholder images are displayed

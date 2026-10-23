@@ -154,12 +154,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 - [ ] Navbar — GIVEN** the page is loaded, Then the navbar is visible and sticky
 - [ ] Hero — GIVEN** the hero section is visible, Then it displays "I'm Professional" with typed word animation
-- [ ] About — GIVEN** the about section is visible, Then it shows "Welcome To My Website" heading
-- [ ] Training — GIVEN** the training section is visible, Then it shows "Life Coach Training" heading
-- [ ] Testimonials — GIVEN** the testimonials section is visible, Then it shows "Happy Customers" heading
-- [ ] Services — GIVEN** the services section is visible, Then it shows "Our Services" heading on primary background
-- [ ] Blog — GIVEN** the blog section is visible, Then it shows "Our Blog" heading
+- [x] About — GIVEN** the about section is visible, Then it shows "Welcome To My Website" heading
+- [x] Training — GIVEN** the training section is visible, Then it shows "Life Coach Training" heading
+- [x] Testimonials — GIVEN** the testimonials section is visible, Then it shows "Happy Customers" heading
+- [x] Services — GIVEN** the services section is visible, Then it shows "Our Services" heading on primary background
+- [x] Blog — GIVEN** the blog section is visible, Then it shows "Our Blog" heading
 - [ ] Contact — GIVEN** the contact section is visible, Then it shows a contact form with name, email, and message fields

@@ -188,13 +188,13 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Landing page renders with "Communique" heading and "Launch Modal" button
-- [ ] Modal opens on button click with `aria-modal="true"`
+- [x] Landing page renders with "Communique" heading and "Launch Modal" button
+- [x] Modal opens on button click with `aria-modal="true"`
 - [ ] Two-column layout: left image panel, right olive (#afa939) form panel
-- [ ] "Booking an Appointment" subheading displays (bold)
-- [ ] "Free Consultation" heading displays (bold, h3)
+- [x] "Booking an Appointment" subheading displays (bold)
+- [x] "Free Consultation" heading displays (bold, h3)
 - [ ] Form has Full Name, Email address, Subject, Message fields
-- [ ] "Send Message" button is dark charcoal (#2b2b28) and rounded
+- [x] "Send Message" button is dark charcoal (#2b2b28) and rounded
 - [ ] Form inputs have semi-transparent white backgrounds
 - [ ] Placeholder text is 40% white
 - [ ] Typed text is 70% white
@@ -208,4 +208,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer links to Component Dock
 - [ ] Dark mode toggle works
 - [ ] 100% test coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

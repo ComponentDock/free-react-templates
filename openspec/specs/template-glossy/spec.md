@@ -349,7 +349,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
-- [ ] Typecheck, lint, and 100% coverage tests pass for `apps/glossy`
+- [x] Typecheck, lint, and 100% coverage tests pass for `apps/glossy`
       (`scripts/verify-app.sh glossy` in FAST_MODE; full `npm run gate` in
       CI).
 - [ ] Visual fidelity: header-top (socials / centered logo / search +
@@ -364,5 +364,5 @@ Dock (`https://www.componentdock.com/`) instead.
       lucide-react icons; no ColorLib assets copied.
 - [ ] PR description states source template (ColorLib "Eden"), preview URL,
       design tokens, and what differs (name, placeholders, text logo).
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

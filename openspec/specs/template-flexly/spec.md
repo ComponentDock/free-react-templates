@@ -312,7 +312,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] App `apps/flexly` (package `@free-react-templates/flexly`), 100%
+- [x] App `apps/flexly` (package `@free-react-templates/flexly`), 100%
       vitest coverage, per-app gate green (`scripts/verify-app.sh flexly`)
 - [ ] Section order 1:1 with the source: navbar → hero slider (2 slides,
       vertical STRENGTH/WORKOUT) → salmon band (Free Lesson / 35% Discount
@@ -341,4 +341,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] TEMPLATES.md bookkeeping at ship time: mark ALL THREE `- [ ]` rows
       (lines ~497 Bootstrap, ~1875, ~2358) `[x]` with the same surge URL +
       `npm run readme:status` (implementer)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

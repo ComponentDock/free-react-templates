@@ -203,17 +203,17 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Two-column layout with form left, illustration right
 - [ ] White page background
-- [ ] Bold dark heading "Sign In to LoginLeaf"
+- [x] Bold dark heading "Sign In to LoginLeaf"
 - [ ] Gray subtext paragraph
 - [ ] Username and Password inputs with bottom-border-only styling
-- [ ] "Remember me" checkbox with mint accent
-- [ ] "Forgot Password" link right-aligned
-- [ ] Full-width mint green (#4ecdc4) "Log In" button with rounded corners
-- [ ] "or sign in with" text
+- [x] "Remember me" checkbox with mint accent
+- [x] "Forgot Password" link right-aligned
+- [x] Full-width mint green (#4ecdc4) "Log In" button with rounded corners
+- [x] "or sign in with" text
 - [ ] Three circular social buttons (Facebook, Twitter, Google) with correct brand colors
 - [ ] Flat-style decorative illustration in right column
 - [ ] Responsive stacking on mobile viewports
-- [ ] Footer links to https://www.componentdock.com/ ("Component Dock")
-- [ ] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/ ("Component Dock")
+- [x] No ColorLib references in app code
 - [ ] Tests at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

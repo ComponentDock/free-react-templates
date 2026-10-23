@@ -196,8 +196,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer bottom has copyright with heart icon
 - [ ] Design tokens match: #c5322d brand, Roboto font, #e8f0f2/#e5ecee backgrounds
 - [ ] All images use placeholder URLs (picsum.photos)
-- [ ] No ColorLib references in app code
-- [ ] Footer links to https://www.componentdock.com/
+- [x] No ColorLib references in app code
+- [x] Footer links to https://www.componentdock.com/
 - [ ] Tests pass at 100% coverage
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

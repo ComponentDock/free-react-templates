@@ -285,11 +285,11 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Footer: 4-column layout (about, blog, tags, contact)
 - [ ] Copyright bar: nav links + Component Dock link
 - [ ] Responsive design (mobile hamburger, stacked columns)
-- [ ] No ColorLib references in app code
+- [x] No ColorLib references in app code
 - [ ] Placeholder images via `picsum.photos/seed/trekcraft-<n>/`
 - [ ] Open Sans + display font loaded via Google Fonts
 - [ ] Brand tokens in `@theme` / `index.css`
-- [ ] `public/CNAME` set to `trekcraft.free.componentdock.com`
-- [ ] `homepage` set to `https://trekcraft.free.componentdock.com`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] `public/CNAME` set to `trekcraft.free.componentdock.com`
+- [x] `homepage` set to `https://trekcraft.free.componentdock.com`
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/

@@ -148,5 +148,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Lint passes (`npm run lint`)
 - [ ] Vitest coverage is 100% lines/functions/branches/statements (`npm run test:coverage`)
 - [ ] Build succeeds (`npm run build`)
-- [ ] Footer links Component Dock (`https://www.componentdock.com/`)
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Footer links Component Dock (`https://www.componentdock.com/`)
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

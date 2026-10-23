@@ -211,19 +211,19 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
-- [ ] 100% coverage on `apps/fable` (lines/functions/branches/statements)
+- [x] 100% coverage on `apps/fable` (lines/functions/branches/statements)
 - [ ] Per-app gate: `npm run verify:app -- fable` (typecheck + lint + coverage + build)
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; brand tokens (#fd5f00, #ffd615, Poppins + Playfair Display) used via `@theme`
-- [ ] No ColorLib assets copied (picsum seeds `fable-<n>`, Google Fonts links, lucide/inline-SVG icons only)
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Fable" (serif, with a yellow accent dot/span)
-- [ ] Hero slider — each slide SHALL contain a subheading ("Featured Posts"), a serif level-1 heading, a short paragraph, and a black "Read More" button with an arrow icon
-- [ ] Recent stories section — it SHALL contain a heading "Recent Stories"
-- [ ] Blog list with sidebar — it SHALL show blog entries with a thumbnail, a category label, a date (e.g. "March 01, 2018"), a title, an excerpt, and a "Read More" link
+- [x] No ColorLib assets copied (picsum seeds `fable-<n>`, Google Fonts links, lucide/inline-SVG icons only)
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Fable" (serif, with a yellow accent dot/span)
+- [x] Hero slider — each slide SHALL contain a subheading ("Featured Posts"), a serif level-1 heading, a short paragraph, and a black "Read More" button with an arrow icon
+- [x] Recent stories section — it SHALL contain a heading "Recent Stories"
+- [x] Blog list with sidebar — it SHALL show blog entries with a thumbnail, a category label, a date (e.g. "March 01, 2018"), a title, an excerpt, and a "Read More" link
 - [ ] About section — it SHALL contain a heading, a short paragraph, and an italic serif signature line
-- [ ] Counter section — it SHALL show at least four stat blocks, each with an icon in a blue-gradient circle, a bold number, and a label (e.g. "Years of Experienced", "Happy Customers")
-- [ ] Newsletter subscribe — it SHALL contain a heading "Subscribe to our Newsletter", an email input, and an orange submit button
-- [ ] Footer — it SHALL show the brand "Fable" with a short description
+- [x] Counter section — it SHALL show at least four stat blocks, each with an icon in a blue-gradient circle, a bold number, and a label (e.g. "Years of Experienced", "Happy Customers")
+- [x] Newsletter subscribe — it SHALL contain a heading "Subscribe to our Newsletter", an email input, and an orange submit button
+- [x] Footer — it SHALL show the brand "Fable" with a short description
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

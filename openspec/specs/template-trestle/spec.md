@@ -217,15 +217,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [ ] Navigation bar — the navbar SHALL show the site name "Trestle" and links to Home, About, Services, Projects, and Contact
-- [ ] Hero section — it SHALL contain a level-1 heading "Minimalistic Architecture and more"
-- [ ] Studio section — it SHALL contain the heading "We are a creative Architecture Studio"
-- [ ] Services section — it SHALL show cards titled "Plans and Projects", "Conceptual Architecture", "Apartment Buildings", "Skyscrapers Buildings", "Documentation", and "Restauration Projects" with "Read…
-- [ ] CTA banner — it SHALL contain the heading "Dare to dream of a modern home"
+- [x] Navigation bar — the navbar SHALL show the site name "Trestle" and links to Home, About, Services, Projects, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Minimalistic Architecture and more"
+- [x] Studio section — it SHALL contain the heading "We are a creative Architecture Studio"
+- [x] Services section — it SHALL show cards titled "Plans and Projects", "Conceptual Architecture", "Apartment Buildings", "Skyscrapers Buildings", "Documentation", and "Restauration Projects" with "Read…
+- [x] CTA banner — it SHALL contain the heading "Dare to dream of a modern home"
 - [ ] Milestones — it SHALL show "14" Years of Experience, "237" Projects Taken, "11k" Twitter Followers, and "12" Awards Won
-- [ ] Projects section — it SHALL contain the heading "Projects" and filter buttons "All", "Restaurations", "Buildings", and "Apartments"
+- [x] Projects section — it SHALL contain the heading "Projects" and filter buttons "All", "Restaurations", "Buildings", and "Apartments"
 - [ ] Clients strip — it SHALL show five client brand placeholders
 - [ ] Footer — it SHALL show social links (Pinterest, LinkedIn, Instagram, Facebook, Twitter)
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark

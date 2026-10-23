@@ -654,7 +654,7 @@ Dock (`https://www.componentdock.com/`) instead.
 ## Verification checklist
 
 - [ ] `openspec/specs/template-binnacle/spec.md` present; `npm run spec:validate` green
-- [ ] `apps/binnacle` scaffolded from the simplest existing app; package
+- [x] `apps/binnacle` scaffolded from the simplest existing app; package
       `@free-react-templates/binnacle`; `"homepage": "https://binnacle.free.componentdock.com"`;
       `public/CNAME` = `binnacle.free.componentdock.com`; `vite.config.ts` keeps
       `injectUiSource()`
@@ -700,7 +700,7 @@ Dock (`https://www.componentdock.com/`) instead.
       `1px rgba(0,0,0,0.05)` bottom rule below 768 px, current row `#000` with no slab, list
       `padding-bottom:10px`; **dropdown permanently expanded** in the panel
       (`position:static`, no shadow, `4 px` radius); `scrollWidth === innerWidth` at 320–991 px
-- [ ] Zero `colorlib` / "Website Menu 16" / `website-menu-16` strings in `apps/binnacle` (comments
+- [x] Zero `colorlib` / "Website Menu 16" / `website-menu-16` strings in `apps/binnacle` (comments
       included); none of the source's row labels, its `Papermag`/`Magazine` wordmark, its four
       placeholder item strings or its `Website menu #06` heading reused
 - [ ] No copied assets: no `style.css`, no `snippet.js`, no `roboto-*.woff2` (all eight are dead —
@@ -723,4 +723,4 @@ Dock (`https://www.componentdock.com/`) instead.
       attribution present
 - [ ] Squash-merge the PR, then mark the TEMPLATES.md `Website Menu 16` item `[x]` with the live
       `https://binnacle.free.componentdock.com` URL + homepage and run `npm run readme:status`
-- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
