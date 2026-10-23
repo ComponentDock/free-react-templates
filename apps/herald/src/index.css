@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Herald brand palette — recreated from the ColorLib "Ednews" template
-     (https://colorlib.com/wp/template/ednews/), tokens extracted from the
-     live preview's common/styles.css:
+  /* Herald brand palette — measured from the reference design, tokens
+     extracted from its common/styles.css:
      - primary navy #0C0E68 (35 usages: section bg, buttons, title underlines,
        dropdown hover) · nav navy #0A2D8B (bottom-menu + dropdown bg)
      - dark navy #050658 (footer bottom bar)

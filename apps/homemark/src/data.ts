@@ -1,6 +1,6 @@
 /** Homestead — one-page real-estate landing copy and imagery.
- *  Design tokens + section copy paraphrased from the ColorLib "Estate"
- *  reference; images are seeded placeholders (picsum) chosen for subject fit. */
+ *  Design tokens + section copy paraphrased from the reference design;
+ *  images are seeded placeholders (picsum) chosen for subject fit. */
 
 export const brand = {
   name: 'HOMESTEAD',

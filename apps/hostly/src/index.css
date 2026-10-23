@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Hostly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V17" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-17/):
+  /* Hostly brand palette — measured from the reference booking-form design:
      taupe/bronze #856849 is the ONLY brand color (static uppercase labels,
      the section wash at 0.33 alpha, the photo-panel scrim at 0.78 alpha,
      and the solid Check availability button at 0.9 alpha, 1 on hover). */

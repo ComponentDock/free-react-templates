@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Helm brand colors — from the ColorLib "Cruise" preview
-     (https://preview.colorlib.com/theme/cruise/ + css/style.css):
+  /* Helm brand colors — from the reference stylesheet:
      a technology corporate theme with coral-orange primary #ff5533,
      dark teal-gray body text #364d59, light section backgrounds
      #f8f9fa, and a black footer. */
@@ -21,17 +20,17 @@
   --color-primary-800: #7a2212;
   --color-primary-900: #52170d;
 
-  /* Body text from ColorLib (ColorLib #364d59). */
+  /* Body text from the reference stylesheet (#364d59). */
   --color-ink: #364d59;
 
-  /* Light section background (ColorLib .bg-light). */
+  /* Light section background (.bg-light). */
   --color-mist: #f8f9fa;
 
   /* Footer black. */
   --color-footer: #000000;
 
   /* DM Sans via Google Fonts <link> in index.html —
-     matching the ColorLib font. */
+     matching the reference font pairing. */
   --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
 }

@@ -1,9 +1,9 @@
 import { Package, PackageCheck, Plane, Ship, Truck, Warehouse, type LucideIcon } from 'lucide-react'
 
-/* Content model for the Haulage template — recreated from the ColorLib
-   "Cargo" preview (https://preview.colorlib.com/theme/cargo/). All photos
-   are picsum-seeded placeholders (no ColorLib assets); icons are
-   lucide-react (brand social icons are inline SVGs in the components). */
+/* Content model for the Haulage template — section order and copy types
+   measured from the reference design. All photos are picsum-seeded
+   placeholders (no third-party assets); icons are lucide-react (brand social
+   icons are inline SVGs in the components). */
 
 export const BRAND = 'Haulage'
 

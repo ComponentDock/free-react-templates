@@ -30,12 +30,21 @@ describe('App', () => {
     expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('Make your reservation')
   })
 
-  it('renders NO navbar, hero copy or footer (single-section form demo)', () => {
+  it('renders NO navbar or hero copy (single-section form demo)', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
+  })
+
+  it('closes the page with a Component Dock credit link', () => {
+    render(<App />)
+
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toBeInTheDocument()
+    const link = screen.getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+    expect(footer).toContainElement(link)
   })
 })

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Haute brand palette — recreated from the ColorLib "Instylr" design
+  /* Haute brand palette — measured from the reference design
      (css/style.css): brand hot pink #ff006c (logo span, nav hovers, blog
      tags, post dates, social hovers), header charcoal #262626, heading ink
      #081624, body gray #71767b. */
