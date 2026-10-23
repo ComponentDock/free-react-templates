@@ -92,7 +92,7 @@ Extracted from `https://preview.colorlib.com/theme/persuit/css/style.css`
 | bg-white | `#fff` | Card backgrounds, content areas |
 | bg-light | `#f8f9fa` | Page body background |
 | accent-teal | `#1cbbb4` | Minor accent (social) |
-| accent-gold | `#efb504` | Minor accent (sale badge alt) |
+| accent-gold | `#efb504` | Minor accent (sale badge alt) — declared only by `.product_details_text .p_rating li a` in the shared sheet — 3 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 
 ### Typography
 

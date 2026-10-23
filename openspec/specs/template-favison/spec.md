@@ -48,7 +48,7 @@ CSS 4 + TypeScript.
   - Dark sections **`#1d1d1d`** / **`#2a2a2a`**; light sections
     **`#f9f9ff`** / **`#f0e9ff`**; muted text **`#888888`** /
     **`#999999`**.
-  - Secondary accents: cyan **`#4cd3e3`**, yellow **`#f4e700`**.
+  - Secondary accents: cyan **`#4cd3e3`**, yellow **`#f4e700`** — declared only by `.warning` in the shared sheet — 6 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup)
   - Font: **"Poppins"** (Google Fonts).
   - Rounded pink buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders

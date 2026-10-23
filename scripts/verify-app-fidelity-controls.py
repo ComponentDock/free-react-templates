@@ -6,7 +6,7 @@ Mutation-based, offline, no repo needed: every case builds a synthetic prep root
 ONE guard disabled and prove the payload then fires — a control that cannot fail
 proves nothing.
 
-Run: python3 verify-app-fidelity-controls.py        # expects 19/19
+Run: python3 verify-app-fidelity-controls.py        # prints the count; 29 cases as of 2026-10-23
 """
 from __future__ import annotations
 
@@ -368,6 +368,29 @@ def main() -> int:
         flagged = {f[2] for f in d["flags"]}
         return (flagged == {"#d2447a"}, f"flags={sorted(flagged)}")
     case("a vendor note on another row does not silence the brand row", c27)
+
+    # 28 — GATE: a row whose block the page never renders is not app debt
+    def c28(tmp):
+        extra = ("| Secondary blue | `#38a4ff` | Accent for feature icons — declared only by "
+                 "`.genric-btn.info` (block absent from the page markup) |")
+        k, n, _d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        mut = mutate(tmp, "        kind = evidence_kind(ctx)\n        if kind:",
+                     "        kind = None\n        if kind:")
+        km, _nm, _dm = run(fixture(tmp, brand="#1089ff", extra=extra), mut)
+        return (not k and "EVIDENCE-SHEET-ONLY" in n and "UNSHIPPED" in km,
+                f"clean={sorted(k)}/{sorted(n)} mutated={sorted(km)}")
+    case("GATE: `declared only by` (block not rendered) → EVIDENCE-SHEET-ONLY", c28)
+
+    # 29 — the sheet-only cue is row-scoped too: a block note on the vendor row
+    #      must not silence an honest brand row in the same spec
+    def c29(tmp):
+        extra = ("| Secondary blue | `#38a4ff` | declared only by `.genric-btn.info` "
+                 "(block absent from the page markup) |\n"
+                 "| Brand accent | `#d2447a` | primary buttons |")
+        k, _n, d = run(fixture(tmp, brand="#1089ff", extra=extra))
+        flagged = {f[2] for f in d["flags"]}
+        return (flagged == {"#d2447a"}, f"flags={sorted(flagged)}")
+    case("a sheet-only note on another row does not silence the brand row", c29)
 
     okN = sum(1 for ok, _n, _d in cases if ok)
     for ok, name, detail in cases:

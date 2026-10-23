@@ -51,8 +51,8 @@ TEMPLATES.md, and the PR.
 - **Muted gray:** `#999999` — secondary body text, team roles.
 - **Light tints:** `#f9f9ff` / `#f0e9ff` — light section backgrounds in the
   CSS (used sparingly; keep white as the main light background).
-- **Accent orange:** `#ff5e13` — present in CSS palette (secondary accent;
-  not prominent on the main page — optional hover accent).
+- **Accent orange:** `#ff5e13` — present in CSS palette; declared only by `.contact-section .btn_2:hover` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup). Optional hover
+  accent, not prominent on the main page.
 - **Fonts:** `"Muli", sans-serif` (body), `"Roboto", sans-serif` (headings,
   section labels, team names). Load both via Google Fonts `<link>` in
   `index.html` (original font files NOT copied).

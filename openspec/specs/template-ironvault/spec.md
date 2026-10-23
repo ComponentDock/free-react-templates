@@ -132,7 +132,7 @@ Ironvault lives in `apps/ironvault` and uses shared components from
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (139,249 B, sha256 45ca3bd1c710) · <https://preview.colorlib.com/theme/fitnesstrainer/> |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (139,249 B, sha256 45ca3bd1c710) · <https://preview.colorlib.com/theme/fitnesstrainer/> — declared only by `.genric-btn.link` in the shared sheet — 7 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 
 Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
 

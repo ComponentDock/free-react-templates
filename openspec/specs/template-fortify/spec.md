@@ -27,13 +27,13 @@ flat buttons (no border-radius), and a dark navy `#04091e` footer.
 | Token              | Value                         | Notes                                                          |
 | ------------------ | ----------------------------- | -------------------------------------------------------------- |
 | Brand yellow       | `#fab700`                     | Primary accent: CTA buttons, counter bg, nav hover             |
-| Secondary blue     | `#38a4ff`                     | Accent color for feature icons                                 |
-| Cyan accent        | `#4cd3e3`                     | Service icon accent, feature icon accent                       |
-| Red accent         | `#f44a40`                     | Feature icon color                                             |
-| Purple accent      | `#6382e6`                     | Feature icon color                                             |
-| Pink accent        | `#e66686`                     | Feature icon color                                             |
-| Orange accent      | `#f09359`                     | Feature icon color                                             |
-| Green accent       | `#73fbaf`                     | Feature icon color                                             |
+| Secondary blue     | `#38a4ff`                     | Accent color for feature icons — declared only by `.genric-btn.info` in the shared sheet — 4 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
+| Cyan accent        | `#4cd3e3`                     | Service icon accent, feature icon accent — declared only by `.confirm-switch input:checked + label:before` in the shared sheet — 5 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
+| Red accent         | `#f44a40`                     | Feature icon color — declared only by `.genric-btn.danger` in the shared sheet — 4 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
+| Purple accent      | `#6382e6`                     | Feature icon color — declared only by `.progress-table .table-row .percentage .progress .progress-bar.color-1` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
+| Pink accent        | `#e66686`                     | Feature icon color — declared only by `.progress-table .table-row .percentage .progress .progress-bar.color-2` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
+| Orange accent      | `#f09359`                     | Feature icon color — declared only by `.single-input-secondary:focus` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
+| Green accent       | `#73fbaf`                     | Feature icon color — declared only by `.progress-table .table-row .percentage .progress .progress-bar.color-4` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 | Light bg           | `#f9f9ff`                     | Feature area, blog area background                             |
 | Navbar bg          | dark (transparent/dark)       | Sticky dark navbar                                             |
 | Hero overlay       | `rgba(0,0,0,0.7)`             | Dark overlay on hero banner image                              |

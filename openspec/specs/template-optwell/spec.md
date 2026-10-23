@@ -21,7 +21,7 @@ https://preview.colorlib.com/downloads/free/multiselect-12.zip (HTTP 200, 255,46
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (most-used chromatic) | `#5897fb` | 2 declarations — `.select2-container--classic.select2-container--open .select2-dropdown`, `.select2-container--default .select2-results__option--highlighted[aria-selected]` |
+| Accent (most-used chromatic) | `#5897fb` | 2 declarations — `.select2-container--classic.select2-container--open .select2-dropdown`, `.select2-container--default .select2-results__option--highlighted[aria-selected]` — declared only by `.select2-container--classic .select2-selection--single:focus` in the shared sheet — 6 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 | Other chromatic values | `#f67280` (2), `#dae0e5` (2), `#80bdff` (1) | secondary hues in the same sheet |
 | Surface | `#ffffff` | 15 declarations — `.select2-close-mask`, `.select2-container--classic .select2-dropdown` |
 | Ink / dark surface | `#000000` | 5 declarations — `.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before`, `.close` |

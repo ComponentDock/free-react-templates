@@ -32,7 +32,7 @@ Casepoint lives in `apps/casepoint` and uses shared components from `packages/ui
 | Off-white band | `#f9f9ff` | 27 | alternating section band, inputs |
 | Hairline lilac | `#f0e9ff` | 12 | input borders, card hairlines |
 | Muted copy | `#999999` | 10 | paragraphs, placeholders |
-| Secondary cyan | `#4cd3e3` | 7 | icon tiles |
+| Secondary cyan | `#4cd3e3` | 7 | icon tiles — declared only by `.confirm-switch input:checked+label:before` in the shared sheet — 5 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 | Hero H1 ink | `#212025` | — | `.hero__caption h1` (Rubik) |
 
 ### Typography

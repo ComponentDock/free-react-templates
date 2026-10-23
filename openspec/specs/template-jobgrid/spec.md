@@ -32,7 +32,7 @@ stylesheet).
 | Hairline lilac | `#f0e9ff` | 12 | input borders, `.top-jobs` card hairlines |
 | Muted copy | `#999999` | 10 | meta lines, placeholders |
 | Kit primary navy | `#1f2b7b` | 20 | shared UI-kit block (also present in Zacson / Thelawyer) — not the theme accent |
-| Secondary pink | `#ff3368` | 7 | `.about-area` accent, category labels |
+| Secondary pink | `#ff3368` | 7 | `.about-area` accent, category labels — declared only by `.irs-bar` in the shared sheet — 2 declaring rule(s), every one hanging off a class the page markup never uses (block absent from the page markup) |
 | Deepline blue | `#4463FF` | 1 | `.job-p` card panel |
 
 ### Typography
