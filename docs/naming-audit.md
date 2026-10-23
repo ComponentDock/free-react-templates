@@ -24,7 +24,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `flowly` (#1816), `applab` → `velocity` (#1817), `appli` → `knotly` (#1818),
 `appru` → `rocket` (#1819), `apps` → `hatch` (#1820), `appson` → `takeoff`
 (#1821), `appy` → `tandem` (#1822), `bold` → `strive` (#1823),
-`breed` → `wagly` (#1824), `bulkapp` → `bundle`.
+`breed` → `wagly` (#1824), `bulkapp` → `bundle` (#1825).
 
 | app                 | source design  |
 | ------------------- | -------------- |
