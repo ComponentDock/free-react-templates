@@ -1,4 +1,4 @@
-# Dropnest — Courses Dropdown (ColorLib Dropdown 19)
+# Template: Dropnest (Bootstrap Dropdowns)
 
 > Recreation of ColorLib Dropdown 19 (https://colorlib.com/wp/template/dropdown-19/).
 

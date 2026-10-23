@@ -1,4 +1,4 @@
-# Spec: Litigator — Law Firm Landing Template
+# Template: Litigator (Law Firm Landing)
 
 Recreation of ColorLib "Justice" (https://colorlib.com/wp/template/justice/).
 

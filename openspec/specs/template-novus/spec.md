@@ -12,6 +12,8 @@ stack:
   - Vite
 ---
 
+# Template: Novus (Coming Soon)
+
 ## Purpose
 
 Recreation of ColorLib "Coming Soon V18" (https://colorlib.com/wp/template/03-comming-soon/).

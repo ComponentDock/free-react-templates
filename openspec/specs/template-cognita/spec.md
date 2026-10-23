@@ -1,4 +1,4 @@
-# Cognita — Online Learning Template
+# Template: Cognita (Online Learning)
 
 Recreation of ColorLib **Eskwela** (https://colorlib.com/wp/template/eskwela/).
 

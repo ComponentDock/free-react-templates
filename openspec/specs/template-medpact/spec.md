@@ -17,7 +17,7 @@ metadata:
   colorlib_url: https://colorlib.com/wp/template/medicare/
 ---
 
-# Medpact — Hospital & Clinics Website Template
+# Template: Medpact (Hospital & Clinics Website)
 
 ## Purpose
 

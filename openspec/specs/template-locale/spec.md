@@ -1,4 +1,4 @@
-# Locale — Directory & Listings
+# Template: Locale (Directory & Listings)
 
 Recreation of ColorLib Gricklo (https://colorlib.com/wp/template/gricklo/)
 

@@ -1,4 +1,4 @@
-# Keycraft — Locksmith Services Landing Template
+# Template: Keycraft (Locksmith Services Landing)
 
 ## Purpose
 

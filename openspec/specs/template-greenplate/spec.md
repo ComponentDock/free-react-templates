@@ -1,4 +1,4 @@
-# Greenplate — Fresh Grocery / Organic Food Template
+# Template: Greenplate (Fresh Grocery / Organic Food)
 
 ## Purpose
 

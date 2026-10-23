@@ -1,4 +1,4 @@
-# template-foliox
+# Template: Foliox (Business)
 
 Recreation of ColorLib "FPlus" (https://colorlib.com/wp/template/fplus/).
 

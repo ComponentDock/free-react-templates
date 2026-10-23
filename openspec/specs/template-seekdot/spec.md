@@ -1,4 +1,4 @@
-# SeekDot — Search Form Bar Template
+# Template: SeekDot (Search Form Bar)
 
 Recreation of ColorLib "Search Form/Bar V03" (https://colorlib.com/wp/template/search-form-bar-03/).
 

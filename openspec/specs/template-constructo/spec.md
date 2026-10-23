@@ -1,4 +1,4 @@
-# Spec: Constructo — Construction Company Landing Template
+# Template: Constructo (Construction Company Landing)
 
 Recreation of ColorLib "Topbuilder" (https://colorlib.com/wp/template/topbuilder/).
 

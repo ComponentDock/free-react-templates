@@ -1,3 +1,5 @@
+# Template: Digger (One Page)
+
 ## Purpose
 
 Digger is a construction and mining landing page template recreated from the ColorLib Unearth design. It features a gradient top bar, sticky navigation, hero carousel, alternating services blocks, feature cards, about section with stats, team showcase, pricing tiers, FAQ accordion, press entries, testimonials, blog posts, contact form, and a branded footer.

@@ -5,7 +5,7 @@ source: https://colorlib.com/wp/template/karma/
 preview: https://preview.colorlib.com/theme/karma/
 ---
 
-# Strider — Fashion E-Commerce Shop Template
+# Template: Strider (Fashion E-Commerce Shop)
 
 ## Purpose
 

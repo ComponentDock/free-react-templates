@@ -1,4 +1,4 @@
-# Spec: Logistix (ColorLib Thelogistico)
+# Template: Logistix (Bootstrap 5)
 
 Recreation of ColorLib Thelogistico (`https://colorlib.com/wp/template/thelogistico/`) as **Logistix**, a professional shipping and cargo transport landing page template.
 

@@ -1,4 +1,4 @@
-# Spec: Imminence — Coming Soon Page Template
+# Template: Imminence (Coming Soon Page)
 
 > Recreation of ColorLib "02 Comming Soon" (https://colorlib.com/wp/template/02-comming-soon/)
 

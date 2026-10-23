@@ -8,6 +8,8 @@ description: >
   carousel, client logos, and newsletter footer.
 ---
 
+# Template: Indigo (Business)
+
 ## Purpose
 
 Indigo is a free SaaS software landing page template, a faithful React recreation of the ColorLib "Parason" design. It targets startups, SaaS products, and web application landing pages with a hero section, feature highlights, pricing plans, testimonials, and a newsletter footer.

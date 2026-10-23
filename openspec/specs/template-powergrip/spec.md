@@ -5,6 +5,8 @@ source: https://colorlib.com/wp/template/robust/
 preview: https://preview.colorlib.com/theme/robust/
 ---
 
+# Template: Powergrip (Health Fitness)
+
 ## Purpose
 
 PowerGrip is a gym and fitness landing page template that recreates the ColorLib "Robust" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It features a hero slider, program cards, services, class schedule, testimonials, trainers, classes, events, blog, newsletter, and a footer with Component Dock branding.

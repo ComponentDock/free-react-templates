@@ -1,4 +1,4 @@
-# Spec: Classroom — school & education landing template
+# Template: Classroom (school & education landing)
 
 Recreation of ColorLib "Oneschool" (https://colorlib.com/wp/template/oneschool/).
 

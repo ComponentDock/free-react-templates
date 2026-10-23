@@ -1,4 +1,4 @@
-# template-gallery
+# Template: Gallery (Bootstrap)
 
 ## Purpose
 

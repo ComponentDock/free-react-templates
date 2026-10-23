@@ -1,4 +1,4 @@
-# Seekstream — Advanced Search Form
+# Template: Seekstream (Advanced Search Form)
 
 Recreation of ColorLib Search 8 (https://colorlib.com/wp/template/colorlib-search-8/)
 

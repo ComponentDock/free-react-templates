@@ -1,4 +1,4 @@
-# Spec: Residium (ColorLib Hus)
+# Template: Residium (Real Estate)
 
 ## Purpose
 

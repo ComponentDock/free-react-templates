@@ -1,4 +1,4 @@
-# Spec: Gaze — Photography Gallery Template
+# Template: Gaze (Photography Gallery)
 
 ## Purpose
 

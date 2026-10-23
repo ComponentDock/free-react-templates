@@ -1,4 +1,4 @@
-# Spec: Entrywell — Sign-In/Sign-Up Modal Template
+# Template: Entrywell (Sign-In/Sign-Up Modal)
 
 > Recreation of ColorLib Modal 09
 > (https://colorlib.com/wp/template/modal-09/)

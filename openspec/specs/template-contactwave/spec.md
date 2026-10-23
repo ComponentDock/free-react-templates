@@ -1,4 +1,4 @@
-# ContactWave — ColorLib Contact Form V5 Recreation
+# Template: ContactWave (Contact Form)
 
 ## Purpose
 

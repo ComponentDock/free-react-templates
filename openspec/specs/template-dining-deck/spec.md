@@ -1,4 +1,4 @@
-# DiningDeck — Restaurant Landing Template
+# Template: DiningDeck (Restaurant Landing)
 
 Recreation of ColorLib "Wordpress Restaurant Themes" (Jevelin restaurant demo):
 https://colorlib.com/wp/template/wordpress-restaurant-themes/

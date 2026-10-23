@@ -1,4 +1,4 @@
-# Spec: Regease — Gaming Email Signup Form
+# Template: Regease (Gaming Email Signup Form)
 
 ## Purpose
 

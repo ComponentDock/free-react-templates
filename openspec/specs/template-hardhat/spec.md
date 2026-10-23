@@ -1,4 +1,4 @@
-# Spec: Hardhat — Construction Company Landing Template
+# Template: Hardhat (Construction Company Landing)
 
 Recreation of ColorLib "ConstructionCompany" (https://colorlib.com/wp/template/constructioncompany/).
 

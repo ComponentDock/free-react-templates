@@ -1,3 +1,5 @@
+# Template: CouponModal (Bootstrap Modals)
+
 ## Purpose
 
 CouponModal is a coupon discount popup template recreating ColorLib Modal 04. It provides a centered modal dialog with a two-column layout: a decorative background image on the left, and a "50% Off" headline, promo code input, and "Start Shopping" CTA on the right. The design uses Josefin Sans font, teal (#12d3cf) brand primary color, and a sharp-cornered modal with drop shadow.

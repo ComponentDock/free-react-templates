@@ -7,6 +7,8 @@ description: >
   Dark navy background (#383a4f), teal accent (#55e8d5), Open Sans font.
 ---
 
+# Template: StepForge (Bootstrap Wizards)
+
 ## Purpose
 
 Stepforge is a multi-step booking form wizard that recreates the ColorLib Wizard 26 design under a

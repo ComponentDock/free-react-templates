@@ -4,6 +4,8 @@ description: Creative portfolio showcase template — recreation of ColorLib "Po
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript
 ---
 
+# Template: Curate (Creative)
+
 ## Purpose
 
 Curate is a multi-section portfolio/creative agency landing page. It showcases filterable portfolio work, services, and client testimonials. Recreation of ColorLib "Portfolio" under a new name with the same section structure and visual design.

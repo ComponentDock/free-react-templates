@@ -1,4 +1,4 @@
-# Passgate — Login Form Template
+# Template: Passgate (Login Form)
 
 Recreation of ColorLib **Login Form 04**
 (https://colorlib.com/wp/template/login-form-04/).

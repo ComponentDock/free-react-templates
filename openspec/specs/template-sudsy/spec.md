@@ -1,4 +1,4 @@
-# Template: Sudsy — Car Wash & Detailing
+# Template: Sudsy (Car Wash & Detailing)
 
 ## Purpose
 

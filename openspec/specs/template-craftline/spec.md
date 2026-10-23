@@ -1,4 +1,4 @@
-# Craftline — Personal Resume & Portfolio Template
+# Template: Craftline (Personal Resume & Portfolio)
 
 ## Purpose
 

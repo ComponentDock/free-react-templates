@@ -1,4 +1,4 @@
-# Crux — Recreation of ColorLib Bbs
+# Template: Crux (Business)
 
 > Recreation of ColorLib "Bbs" (https://colorlib.com/wp/template/bbs/)
 > Preview: https://preview.colorlib.com/theme/bbs/

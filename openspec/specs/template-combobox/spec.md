@@ -1,4 +1,4 @@
-# Combobox — Multiselect Dropdown Template
+# Template: Combobox (Multiselect Dropdown)
 
 > Recreation of ColorLib Multiselect 03
 > (https://colorlib.com/wp/template/multiselect-03/)

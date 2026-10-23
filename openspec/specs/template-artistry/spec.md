@@ -1,4 +1,4 @@
-# Spec: Artistry
+# Template: Artistry (Personal)
 
 > Recreation of ColorLib "Jony" (https://colorlib.com/wp/template/jony/)
 > Preview: https://preview.colorlib.com/theme/jony/

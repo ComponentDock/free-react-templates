@@ -1,4 +1,4 @@
-# Sideframe — Right-side Contact Form Sidebar Template
+# Template: Sideframe (Right-side Contact Form Sidebar)
 
 Recreation of ColorLib "Colorlib Sidebar V04" (https://colorlib.com/wp/template/colorlib-sidebar-v04/).
 

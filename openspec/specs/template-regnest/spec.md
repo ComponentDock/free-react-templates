@@ -1,4 +1,4 @@
-# Regnest — Booking Ticket Registration Form
+# Template: Regnest (Booking Ticket Registration Form)
 
 > Recreation of ColorLib "Regform 29" (https://colorlib.com/wp/template/colorlib-regform-29/)
 > Preview unreachable (404); implementation based on screenshot analysis.

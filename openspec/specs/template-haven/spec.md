@@ -1,4 +1,4 @@
-# Haven — Luxury Hotel Landing Template
+# Template: Haven (Luxury Hotel Landing)
 
 > Recreation of ColorLib "Sona" (https://colorlib.com/wp/template/sona/)
 

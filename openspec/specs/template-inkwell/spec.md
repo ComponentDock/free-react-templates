@@ -1,3 +1,5 @@
+# Template: Inkwell (Blog)
+
 ## Purpose
 
 Inkwell is a minimalist two-column contact form template designed for marketing agencies and web service providers. It provides a clean, professional contact page with separate first/last name fields, email, and message inputs alongside an introductory text column.

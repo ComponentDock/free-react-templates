@@ -1,4 +1,4 @@
-# Spec: Silhouette — Apparel Store Landing Template
+# Template: Silhouette (Apparel Store Landing)
 
 Recreation of ColorLib **Fashion 2** (https://colorlib.com/wp/template/fashion-2/).
 

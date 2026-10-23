@@ -1,4 +1,4 @@
-# Spec: Asana (recreation of ColorLib DoYoga)
+# Template: Asana (Health Fitness)
 
 Recreation of ColorLib "Doyoga" (https://colorlib.com/wp/template/doyoga/).
 

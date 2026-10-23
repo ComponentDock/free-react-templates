@@ -1,4 +1,4 @@
-# Dune — Travel Agency Landing Page
+# Template: Dune (Travel Agency Landing Page)
 
 > Recreation of ColorLib "Safario" (https://colorlib.com/wp/template/safario/)
 > Preview: https://preview.colorlib.com/theme/safario/

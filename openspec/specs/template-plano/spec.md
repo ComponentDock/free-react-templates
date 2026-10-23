@@ -1,4 +1,4 @@
-# Spec: Plano (recreation of ColorLib Interior 2)
+# Template: Plano (Interior Design)
 
 ## Purpose
 

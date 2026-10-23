@@ -1,4 +1,4 @@
-# Spec: Merch (recreation of ColorLib Product)
+# Template: Merch (Ecommerce)
 
 ## Purpose
 

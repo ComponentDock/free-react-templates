@@ -1,3 +1,5 @@
+# Template: Regalia (Hotel)
+
 ## Purpose
 
 Recreate the ColorLib "Luxury Hotel" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript template named "Regalia". The original is a luxury hotel landing page with hero slider, reservation bar, services, rooms showcase, dining section, blog, testimonials, newsletter, and footer.

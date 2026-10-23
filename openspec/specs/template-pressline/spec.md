@@ -1,4 +1,4 @@
-# Template: Pressline
+# Template: Pressline (Business)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# LocalFinder — Directory Listing Template
+# Template: LocalFinder (Directory Listing)
 
 **Original:** ColorLib "Directing" — https://colorlib.com/wp/template/directing/
 **Preview:** https://preview.colorlib.com/theme/directing/

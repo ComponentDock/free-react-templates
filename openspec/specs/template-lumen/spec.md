@@ -7,7 +7,7 @@ preview_url: https://preview.colorlib.com/theme/glint/
 status: in_progress
 ---
 
-# Lumen — Creative Agency / Portfolio Template
+# Template: Lumen (Creative Agency / Portfolio)
 
 ## Purpose
 

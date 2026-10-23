@@ -7,7 +7,7 @@ template: conference-event
 tags: [conference, event, landing, speakers, countdown]
 ---
 
-# Huddle — Conference Event Landing Template
+# Template: Huddle (Conference Event Landing)
 
 ## Purpose
 

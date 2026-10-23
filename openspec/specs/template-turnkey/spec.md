@@ -3,7 +3,7 @@ name: template-turnkey
 description: Turnkey — Real estate website template (recreation of ColorLib Holmes)
 ---
 
-# Turnkey — Real Estate Template
+# Template: Turnkey (Real Estate)
 
 Recreation of [ColorLib Holmes](https://colorlib.com/wp/template/holmes/).
 Preview: https://preview.colorlib.com/theme/holmes/

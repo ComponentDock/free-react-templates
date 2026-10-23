@@ -1,4 +1,4 @@
-# Spec: Tavern — Restaurant Landing Template
+# Template: Tavern (Restaurant Landing)
 
 **Original:** ColorLib "Eatery" — https://colorlib.com/wp/template/eatery/  
 **Preview:** https://preview.colorlib.com/theme/eatery/  

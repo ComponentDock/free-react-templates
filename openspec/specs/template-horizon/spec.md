@@ -1,4 +1,4 @@
-# Horizon — Coming Soon Template
+# Template: Horizon (Coming Soon)
 
 > Recreation of ColorLib "08 Comming Soon" (Coming Soon V23)
 > Source: https://colorlib.com/wp/template/08-comming-soon/

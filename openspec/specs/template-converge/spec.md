@@ -1,4 +1,4 @@
-# spec: Converge — Marketing Conference Landing Template
+# Template: Converge (Marketing Conference Landing)
 
 Recreation of ColorLib "Confpro"
 (https://colorlib.com/wp/template/confpro/).

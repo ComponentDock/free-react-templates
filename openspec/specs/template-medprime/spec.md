@@ -1,4 +1,4 @@
-# Medprime — recreation of ColorLib Medi 2
+# Template: Medprime (Medical)
 
 Recreation of ColorLib "Medi 2" (https://colorlib.com/wp/template/medi-2/).
 

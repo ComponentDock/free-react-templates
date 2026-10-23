@@ -1,4 +1,4 @@
-# Spec: Bonquet (Food & Restaurant)
+# Template: Bonquet (Food & Restaurant)
 
 ## Purpose
 

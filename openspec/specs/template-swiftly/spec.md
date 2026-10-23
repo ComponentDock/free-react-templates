@@ -1,4 +1,4 @@
-# Spec: Swiftly
+# Template: Swiftly (Landing Page)
 
 ## Purpose
 

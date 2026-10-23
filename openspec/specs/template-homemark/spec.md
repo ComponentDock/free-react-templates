@@ -1,4 +1,4 @@
-# Template: Homestead (Real Estate / Property)
+# Template: Homemark (Real Estate / Property)
 
 ## Purpose
 

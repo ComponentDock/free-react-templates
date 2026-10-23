@@ -11,7 +11,7 @@ source: https://colorlib.com/wp/template/login-form-06/
 preview: https://preview.colorlib.com/theme/login-form-06/
 ---
 
-# Commute — Login Form Template
+# Template: Commute (Login Form)
 
 ## Purpose
 

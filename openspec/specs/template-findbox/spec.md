@@ -1,4 +1,4 @@
-# Spec: FindBox
+# Template: FindBox (Search Form Bar)
 
 Recreation of ColorLib Search Form Bar 11 (https://colorlib.com/wp/template/search-form-bar-11/).
 

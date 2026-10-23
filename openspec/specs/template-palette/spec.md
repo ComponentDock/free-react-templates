@@ -1,4 +1,4 @@
-# Spec: Palette
+# Template: Palette (Personal)
 
 Recreation of ColorLib Clyde (https://colorlib.com/wp/template/clyde/)
 

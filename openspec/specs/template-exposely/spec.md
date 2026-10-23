@@ -1,4 +1,4 @@
-# Spec: Exposely — Photography Portfolio Template
+# Template: Exposely (Photography Portfolio)
 
 > Recreation of ColorLib "Sonar" (https://colorlib.com/wp/template/sonar/)
 > Preview: https://preview.colorlib.com/theme/sonar/

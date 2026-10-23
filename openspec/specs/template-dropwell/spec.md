@@ -1,4 +1,4 @@
-# Spec: Dropwell — Nested Dropdown Menu
+# Template: Dropwell (Nested Dropdown Menu)
 
 > Recreation of ColorLib Dropdown 07 (https://colorlib.com/wp/template/dropdown-07/)
 

@@ -22,7 +22,7 @@ design_tokens:
   layout: Bootstrap-style grid, centered container
 ---
 
-# Embrace — Charity & Donation Template
+# Template: Embrace (Charity & Donation)
 
 Recreation of ColorLib "Charity" (https://colorlib.com/wp/template/charity/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 

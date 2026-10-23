@@ -1,4 +1,4 @@
-# Specification: BtnFlow (Bootstrap Buttons 17 Recreation)
+# Template: BtnFlow (Bootstrap Buttons)
 
 Recreation of ColorLib "Bootstrap Buttons 17" (`https://colorlib.com/wp/template/bootstrap-buttons-17/`). Preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-17/`. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

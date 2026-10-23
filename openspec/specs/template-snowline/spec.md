@@ -1,3 +1,5 @@
+# Template: Snowline (Business)
+
 ## Purpose
 
 Snowline is a fashion e-commerce shop landing page recreated from the ColorLib "Winter" template. It showcases product categories, new arrivals with filtering, shipping features, an Instagram feed, and a newsletter footer.

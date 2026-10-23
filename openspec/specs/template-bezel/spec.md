@@ -5,6 +5,8 @@ description: >
   a product/landing page for smartwatches.
 ---
 
+# Template: Bezel (Landing Page)
+
 ## Purpose
 
 Bezel is a multi-section single-page smartwatch landing template. It recreates

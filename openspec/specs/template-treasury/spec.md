@@ -1,3 +1,5 @@
+# Template: Treasury (Finance)
+
 ## Purpose
 
 Treasury is a banking and finance landing page template, recreation of ColorLib "Banker" (https://colorlib.com/wp/template/banker/). It provides a professional single-page template with hero, features, team, gallery, pricing, FAQ, blog, contact, and footer sections.

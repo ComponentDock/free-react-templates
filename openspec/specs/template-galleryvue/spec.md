@@ -1,4 +1,4 @@
-# Galleryvue — Photography Gallery Template
+# Template: Galleryvue (Photography Gallery)
 
 Recreation of ColorLib "Capture" (https://colorlib.com/wp/template/capture/)
 

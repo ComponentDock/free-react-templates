@@ -1,4 +1,4 @@
-# Venture — Recreation of ColorLib Startupbusiness
+# Template: Venture (Business)
 
 Recreation of ColorLib "StartupBusiness" (https://colorlib.com/wp/template/startupbusiness/).
 

@@ -1,4 +1,4 @@
-# Spec: Edifica
+# Template: Edifica (Construction)
 
 Recreation of ColorLib "Homebuilder" (https://colorlib.com/wp/template/homebuilder/).
 

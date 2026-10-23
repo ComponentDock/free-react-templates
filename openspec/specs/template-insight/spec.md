@@ -1,4 +1,4 @@
-# Spec: Insight — Consulting Company Landing Template
+# Template: Insight (Consulting Company Landing)
 
 ## Purpose
 

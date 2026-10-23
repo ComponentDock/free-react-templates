@@ -1,4 +1,4 @@
-# Specification: CarouselDrift
+# Template: CarouselDrift (Bootstrap Carousels)
 
 Recreation of ColorLib "Carousel V15" (https://colorlib.com/wp/template/carousel-15/).
 

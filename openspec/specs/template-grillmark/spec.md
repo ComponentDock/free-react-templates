@@ -1,4 +1,4 @@
-# Grillmark — Steakhouse Restaurant Template
+# Template: Grillmark (Steakhouse Restaurant)
 
 > **Original ColorLib source:** [Steakshop](https://preview.colorlib.com/theme/steakshop/)
 > **Preview URL:** https://preview.colorlib.com/theme/steakshop/

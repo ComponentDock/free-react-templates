@@ -1,4 +1,4 @@
-# Learnfold — Online Courses Education Platform
+# Template: Learnfold (Online Courses Education Platform)
 
 Recreation of ColorLib **Webuni** (https://colorlib.com/wp/template/webuni/).
 

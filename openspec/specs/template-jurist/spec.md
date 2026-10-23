@@ -1,4 +1,4 @@
-# Spec: Jurist
+# Template: Jurist (Lawyer)
 
 Recreation of ColorLib Judicial (https://colorlib.com/wp/template/judicial/).
 

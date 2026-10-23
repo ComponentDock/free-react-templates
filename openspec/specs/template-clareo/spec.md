@@ -1,4 +1,4 @@
-# Clareo — Photography Portfolio Template
+# Template: Clareo (Photography Portfolio)
 
 ## Purpose
 

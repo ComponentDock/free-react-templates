@@ -1,4 +1,4 @@
-# Spec: Relay — Email Confirmation Modal Template
+# Template: Relay (Email Confirmation Modal)
 
 > Recreation of ColorLib Modal 08
 > (https://colorlib.com/wp/template/modal-08/)

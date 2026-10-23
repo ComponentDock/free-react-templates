@@ -1,4 +1,4 @@
-# Spec: Nestwell — Real Estate Agency Template
+# Template: Nestwell (Real Estate Agency)
 
 Recreation of ColorLib Homeland (https://colorlib.com/wp/template/homeland/).
 

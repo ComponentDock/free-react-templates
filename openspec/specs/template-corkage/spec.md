@@ -1,4 +1,4 @@
-# Corkage — Indian Restaurant Landing Template
+# Template: Corkage (Indian Restaurant Landing)
 
 ## Purpose
 

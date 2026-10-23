@@ -1,4 +1,4 @@
-# Spec: Renovo
+# Template: Renovo (Business)
 
 Recreation of ColorLib **Repair** (https://colorlib.com/wp/template/repair/).
 

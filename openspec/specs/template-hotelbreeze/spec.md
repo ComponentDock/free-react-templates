@@ -5,6 +5,8 @@ template: colorlib-bright-hotel
 source: https://preview.colorlib.com/theme/bright-hotel/
 ---
 
+# Template: Hotelbreeze (Hotel)
+
 ## Purpose
 
 Recreation of ColorLib Bright Hotel (https://colorlib.com/wp/template/bright-hotel/) — a clean, minimal and sophisticated luxury hotel website template. The new name is "Hotelbreeze".

@@ -1,4 +1,4 @@
-# Polenta — Restaurant Landing Template
+# Template: Polenta (Restaurant Landing)
 
 > Recreation of ColorLib "Risotto" (https://colorlib.com/wp/template/risotto/)
 

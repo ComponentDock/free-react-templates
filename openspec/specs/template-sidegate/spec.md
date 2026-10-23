@@ -1,4 +1,4 @@
-# Sidegate — Template Spec
+# Template: Sidegate (Spec)
 
 ## Purpose
 

@@ -13,6 +13,8 @@ design_tokens:
   accent: "#007bff" (buttons, progress bars, CTA)
 ---
 
+# Template: Draftly (One Page)
+
 ## Purpose
 
 Recreate ColorLib "Clyde" (https://colorlib.com/wp/template/clyde/) as a

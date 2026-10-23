@@ -1,4 +1,4 @@
-# Spec: Hamlin — Real Estate Agency Template
+# Template: Hamlin (Real Estate Agency)
 
 Recreation of ColorLib Hamlet (https://colorlib.com/wp/template/hamlet/).
 

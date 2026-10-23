@@ -27,6 +27,8 @@ design_tokens:
   heading_title_color: '#ffffff'
 ---
 
+# Template: Dropvane (Bootstrap Dropdowns)
+
 ## Purpose
 
 Recreate the ColorLib Dropdown 10 template as "DropVane" — a responsive

@@ -1,4 +1,4 @@
-# Template Spec: Crinkle (Accordion 18 Recreation)
+# Template: Crinkle (Bootstrap Accordions)
 
 ## Purpose
 

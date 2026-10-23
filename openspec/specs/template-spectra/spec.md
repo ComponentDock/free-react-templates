@@ -1,3 +1,5 @@
+# Template: Spectra (One Page)
+
 ## Purpose
 
 Spectra is a personal portfolio/freelance developer template, recreating the ColorLib Niko design. It provides a single-page portfolio with navbar, hero section, about section, skills with progress bars, project gallery, blog posts, contact form, and a branded footer.

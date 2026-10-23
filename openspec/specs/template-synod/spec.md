@@ -1,4 +1,4 @@
-# Synod — Church Landing Template
+# Template: Synod (Church Landing)
 
 Recreation of ColorLib "Church Wordpress Themes" (https://colorlib.com/wp/template/church-wordpress-themes/).
 

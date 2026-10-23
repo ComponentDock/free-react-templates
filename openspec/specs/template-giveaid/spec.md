@@ -1,4 +1,4 @@
-# GiveAid — Charity & Child Adoption Template
+# Template: GiveAid (Charity & Child Adoption)
 
 > Recreation of ColorLib "Adopted" (https://colorlib.com/wp/template/adopted/)
 

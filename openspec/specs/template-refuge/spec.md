@@ -1,4 +1,4 @@
-# Template: Refuge
+# Template: Refuge (Business)
 
 > Recreation of ColorLib "Funder" (https://colorlib.com/wp/template/funder/)
 

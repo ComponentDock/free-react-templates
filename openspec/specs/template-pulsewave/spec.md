@@ -1,4 +1,4 @@
-# Spec: Pulsewave — Digital Agency Template
+# Template: Pulsewave (Digital Agency)
 
 > Recreation of ColorLib "Unbrew" (https://colorlib.com/wp/template/unbrew/).
 

@@ -1,4 +1,4 @@
-# Spec: GymBox
+# Template: GymBox (Health Fitness)
 
 ## Purpose
 

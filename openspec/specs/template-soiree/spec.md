@@ -1,4 +1,4 @@
-# template-soiree
+# Template: Soiree (Business)
 
 ## Purpose
 

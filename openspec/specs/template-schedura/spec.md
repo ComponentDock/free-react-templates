@@ -1,4 +1,4 @@
-# Spec: Schedura (Calendar 13 Recreation)
+# Template: Schedura (Bootstrap Calendars)
 
 Recreation of ColorLib Calendar 13 (`https://colorlib.com/wp/template/calendar-13/`), a clean date range picker template featuring a centered form with "From" and "To" date selection inputs and interactive calendar dropdowns.
 

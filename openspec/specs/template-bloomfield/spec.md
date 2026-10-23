@@ -1,4 +1,4 @@
-# Spec: Bloomfield (recreation of ColorLib Florist)
+# Template: Bloomfield (Ecommerce)
 
 ## Purpose
 

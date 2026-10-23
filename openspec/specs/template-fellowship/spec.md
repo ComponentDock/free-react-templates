@@ -1,3 +1,5 @@
+# Template: Fellowship (Church)
+
 ## Purpose
 
 Fellowship is a free church community landing page template. It recreates a

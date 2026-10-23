@@ -1,4 +1,4 @@
-# template-anipulse
+# Template: Anipulse (Gaming)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: Fragrance — Fashion E-Commerce Landing Template
+# Template: Fragrance (Fashion E-Commerce Landing)
 
 ## Purpose
 

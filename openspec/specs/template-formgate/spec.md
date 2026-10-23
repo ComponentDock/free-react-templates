@@ -1,4 +1,4 @@
-# FormGate — Contact Form Template Spec
+# Template: FormGate (Contact Form Template Spec)
 
 Recreation of ColorLib "Contact Form V19" (https://colorlib.com/wp/template/contact-form-19/).
 

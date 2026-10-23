@@ -1,4 +1,4 @@
-# Spec: Loginsplash — Vibrant Login Form
+# Template: Loginsplash (Vibrant Login Form)
 
 ## Purpose
 

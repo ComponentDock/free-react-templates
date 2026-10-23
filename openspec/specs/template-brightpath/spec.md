@@ -7,7 +7,7 @@ source_url: https://colorlib.com/wp/template/edusmart/
 preview_url: https://preview.colorlib.com/theme/edusmart/
 ---
 
-# BrightPath — Education & Online Courses Template
+# Template: BrightPath (Education & Online Courses)
 
 ## Purpose
 

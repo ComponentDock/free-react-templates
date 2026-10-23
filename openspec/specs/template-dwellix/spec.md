@@ -1,4 +1,4 @@
-# Spec: Dwellix — Real Estate Listing Template
+# Template: Dwellix (Real Estate Listing)
 
 > Recreation of ColorLib "Rehomes" (https://colorlib.com/wp/template/rehomes/)
 

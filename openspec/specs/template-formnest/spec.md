@@ -1,4 +1,4 @@
-# Formnest — Contact Form Template
+# Template: Formnest (Contact Form)
 
 Recreation of ColorLib "Contact Form V14" (https://colorlib.com/wp/template/contact-form-14/).
 

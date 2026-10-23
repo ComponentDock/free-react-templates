@@ -1,4 +1,4 @@
-# Spec: OptSelect — Multiselect Dropdown Template
+# Template: OptSelect (Multiselect Dropdown)
 
 Recreation of ColorLib Multiselect 06
 (https://colorlib.com/wp/template/multiselect-06/).

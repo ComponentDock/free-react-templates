@@ -6,7 +6,7 @@ preview: https://preview.colorlib.com/theme/bitmap/
 status: in-progress
 ---
 
-# LensVault — Photography Portfolio Template
+# Template: LensVault (Photography Portfolio)
 
 Recreation of ColorLib "Bitmap" (https://colorlib.com/wp/template/bitmap/)
 

@@ -1,4 +1,4 @@
-# Spec: Logincove — Split-Screen Login Form
+# Template: Logincove (Split-Screen Login Form)
 
 ## Purpose
 

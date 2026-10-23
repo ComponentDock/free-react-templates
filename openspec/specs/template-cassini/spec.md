@@ -6,7 +6,7 @@ preview: https://preview.colorlib.com/theme/cassi/
 status: in-progress
 ---
 
-# Cassini — Photography Studio Template
+# Template: Cassini (Photography Studio)
 
 Recreation of ColorLib "Cassi" (https://colorlib.com/wp/template/cassi/)
 

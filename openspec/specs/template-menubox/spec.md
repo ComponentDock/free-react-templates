@@ -1,4 +1,4 @@
-# Spec: Menubox — Profile Dropdown Menu Template
+# Template: Menubox (Profile Dropdown Menu)
 
 > Recreation of ColorLib "Dropdown V02" (https://colorlib.com/wp/template/dropdown-02/)
 

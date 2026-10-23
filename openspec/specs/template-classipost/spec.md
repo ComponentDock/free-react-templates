@@ -1,4 +1,4 @@
-# Spec: ClassiPost
+# Template: ClassiPost (Listing)
 
 ## Purpose
 

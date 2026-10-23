@@ -1,4 +1,4 @@
-# Spec: template-regpass
+# Template: Regpass (Registration Forms)
 
 ## Purpose
 

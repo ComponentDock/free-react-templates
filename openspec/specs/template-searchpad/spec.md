@@ -1,4 +1,4 @@
-# Spec: Searchpad
+# Template: Searchpad (Search Form Bar)
 
 ## Purpose
 

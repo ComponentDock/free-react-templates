@@ -1,3 +1,5 @@
+# Template: Fragstorm (Gaming)
+
 ## Purpose
 
 Fragstorm is a gaming magazine template that recreates the ColorLib "Amin" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides a dark-themed gaming news site with hero articles, review previews, tabbed update news, video guides, and Instagram posts.

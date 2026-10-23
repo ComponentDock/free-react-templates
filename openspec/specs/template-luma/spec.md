@@ -1,4 +1,4 @@
-# Luma — Photography Portfolio Template
+# Template: Luma (Photography Portfolio)
 
 Recreation of ColorLib "Photon" (https://colorlib.com/wp/template/photon/).
 

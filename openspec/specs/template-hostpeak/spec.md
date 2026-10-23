@@ -1,4 +1,4 @@
-# Hostpeak — Web Hosting Landing Template
+# Template: Hostpeak (Web Hosting Landing)
 
 Recreation of ColorLib [Lorahost](https://colorlib.com/wp/template/lorahost/) under the name **Hostpeak**.
 

@@ -1,4 +1,4 @@
-# Spec: Joystick — Gaming Magazine Template
+# Template: Joystick (Gaming Magazine)
 
 > Recreation of ColorLib "Egames" (https://colorlib.com/wp/template/egames/)
 

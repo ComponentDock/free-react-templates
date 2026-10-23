@@ -1,4 +1,4 @@
-# Signium — Four-Step Sign-Up Wizard Template
+# Template: Signium (Four-Step Sign-Up Wizard)
 
 > Recreation of ColorLib Wizard 17 (https://colorlib.com/wp/template/colorlib-wizard-17/)
 > Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-17/index.html

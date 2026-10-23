@@ -1,4 +1,4 @@
-# Spec: Zen (recreation of ColorLib Namaste)
+# Template: Zen (Creative)
 
 ## Purpose
 

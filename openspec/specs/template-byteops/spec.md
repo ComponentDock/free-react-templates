@@ -7,7 +7,7 @@ description: >
   FAQ accordion, testimonials carousel, blog cards, and contact form with map.
 ---
 
-# ByteOps — Digital Agency Template
+# Template: ByteOps (Digital Agency)
 
 ## Purpose
 

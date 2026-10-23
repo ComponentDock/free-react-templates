@@ -1,4 +1,4 @@
-# Template: Threshold
+# Template: Threshold (Login Forms)
 
 **Original:** ColorLib Login Form 02 (https://colorlib.com/wp/template/login-form-02/)
 **Preview:** https://preview.colorlib.com/theme/bootstrap/login-form-02/

@@ -1,4 +1,4 @@
-# Regflux — Registration Form Template
+# Template: Regflux (Registration Form)
 
 ## Purpose
 

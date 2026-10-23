@@ -1,4 +1,4 @@
-# template-maxim
+# Template: Maxim (Business)
 
 ## Purpose
 

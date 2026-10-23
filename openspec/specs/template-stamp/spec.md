@@ -1,4 +1,4 @@
-# Spec: Stamp — Industrial Manufacturing Landing Template
+# Template: Stamp (Industrial Manufacturing Landing)
 
 Recreation of ColorLib "Supreme" (https://colorlib.com/wp/template/supreme/).
 

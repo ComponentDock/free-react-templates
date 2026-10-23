@@ -1,4 +1,4 @@
-# Spotlight — Business Directory Template
+# Template: Spotlight (Business Directory)
 
 > Recreation of ColorLib Listed2 (https://colorlib.com/wp/template/listed2/)
 > Preview: https://preview.colorlib.com/theme/listed2/

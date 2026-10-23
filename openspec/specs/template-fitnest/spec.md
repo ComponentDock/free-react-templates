@@ -1,3 +1,5 @@
+# Template: Fitnest (Health Fitness)
+
 ## Purpose
 
 Fitnest is a yoga and fitness studio landing page template, recreating the ColorLib "Zogin" design under a new name. It provides a complete single-page marketing site for a yoga studio with navigation, hero, about, services, stats, courses, gallery, instructors, appointment booking, testimonials, and footer sections.

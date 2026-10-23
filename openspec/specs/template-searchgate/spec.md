@@ -1,4 +1,4 @@
-# Spec: SearchGate
+# Template: SearchGate (Search Form Bar)
 
 ## Purpose
 

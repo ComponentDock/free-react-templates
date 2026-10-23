@@ -1,4 +1,4 @@
-# Inquire — Contact Form Template
+# Template: Inquire (Contact Form)
 
 ## Purpose
 

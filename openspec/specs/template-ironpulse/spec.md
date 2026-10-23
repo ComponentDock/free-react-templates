@@ -7,6 +7,8 @@ original_url: https://colorlib.com/wp/template/crossbody/
 preview_url: https://preview.colorlib.com/theme/crossbody/
 ---
 
+# Template: Ironpulse (Bootstrap)
+
 ## Purpose
 
 IronPulse is a free crossfit and fitness landing page template built with React 19, Tailwind CSS 4, and TypeScript. It recreates the ColorLib Crossbody design under a new, original name. The template provides a complete gym/fitness website with hero, pricing, programs, stats, coaches, testimonials, blog, contact form, gallery, and footer sections.

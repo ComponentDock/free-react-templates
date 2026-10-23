@@ -1,4 +1,4 @@
-# Spec: Tint — Interior Design Studio Template
+# Template: Tint (Interior Design Studio)
 
 > Recreation of ColorLib "Pastel Interior" (https://colorlib.com/wp/template/pastel/)
 > Preview: https://preview.colorlib.com/theme/pastel/

@@ -17,6 +17,8 @@ stack:
   - lucide-react icons
 ---
 
+# Template: Lawscape (Consulting)
+
 ## Purpose
 
 Recreate ColorLib Lawride as a faithful React landing page for a law firm, using

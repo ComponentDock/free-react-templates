@@ -1,4 +1,4 @@
-# Template: Sarto
+# Template: Sarto (Ecommerce)
 
 ## Purpose
 

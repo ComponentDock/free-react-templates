@@ -1,4 +1,4 @@
-# Coinforge — ICO & Cryptocurrency Landing Template
+# Template: Coinforge (ICO & Cryptocurrency Landing)
 
 ## Purpose
 

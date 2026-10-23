@@ -1,4 +1,4 @@
-# Template: Cartly
+# Template: Cartly (Business)
 
 Recreation of ColorLib "Eiser" (https://colorlib.com/wp/template/eiser/).
 

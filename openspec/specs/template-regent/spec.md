@@ -1,4 +1,4 @@
-# Template: Regent
+# Template: Regent (Hotel)
 
 Recreation of ColorLib "Suites" (https://colorlib.com/wp/template/suites/).
 

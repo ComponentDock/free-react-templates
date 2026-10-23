@@ -21,6 +21,8 @@ design_tokens:
     dark_surface: '#1a1a1a'
 ---
 
+# Template: Sprintly (Health Fitness)
+
 ## Purpose
 
 Sprintly is a dark-themed fitness and sport landing page template. It recreates the ColorLib "Activitar" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application with 100% test coverage.

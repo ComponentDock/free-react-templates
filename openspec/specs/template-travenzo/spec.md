@@ -1,4 +1,4 @@
-# Spec — Travenzo (ColorLib Search 15)
+# Template: Travenzo (Search Form Bar)
 
 ## Purpose
 

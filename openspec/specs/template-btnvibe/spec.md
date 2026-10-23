@@ -1,4 +1,4 @@
-# Specification: BtnVibe Template (Bootstrap Buttons 06 Recreation)
+# Template: BtnVibe (Bootstrap Buttons)
 
 Recreation of ColorLib Bootstrap Buttons 06 under the original name **BtnVibe**.
 

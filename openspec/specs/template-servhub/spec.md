@@ -1,4 +1,4 @@
-# Servhub — Digital Services Template
+# Template: Servhub (Digital Services)
 
 ## Purpose
 

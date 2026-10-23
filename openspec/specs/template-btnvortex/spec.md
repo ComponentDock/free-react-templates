@@ -1,4 +1,4 @@
-# Specification: BtnVortex (Bootstrap Buttons 14 Recreation)
+# Template: BtnVortex (Bootstrap Buttons)
 
 Recreation of ColorLib "Bootstrap Buttons 14" (`https://colorlib.com/wp/template/bootstrap-buttons-14/`). Note: preview URL was unreachable; falling back to screenshot and professional button showcase patterns with modern vortex/gradient styling.
 

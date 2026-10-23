@@ -1,4 +1,4 @@
-# Spec: Innovex
+# Template: Innovex (Business)
 
 Recreation of ColorLib "Eroo" (https://colorlib.com/wp/template/eroo/) — a digital innovation/design agency landing page.
 

@@ -1,4 +1,4 @@
-# Cruiser — Skateboarding Personal Site Template
+# Template: Cruiser (Skateboarding Personal Site)
 
 Recreation of ColorLib "Skater" (https://colorlib.com/wp/template/skater/)
 

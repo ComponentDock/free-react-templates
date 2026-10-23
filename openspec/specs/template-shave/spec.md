@@ -1,4 +1,4 @@
-# Shave — Barber Shop Landing Page
+# Template: Shave (Barber Shop Landing Page)
 
 ## Purpose
 

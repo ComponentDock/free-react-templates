@@ -1,4 +1,4 @@
-# Spec: Retreat
+# Template: Retreat (Business)
 
 Recreation of ColorLib **Roberto** (https://colorlib.com/wp/template/roberto/).
 

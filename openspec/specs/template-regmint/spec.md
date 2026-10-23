@@ -1,4 +1,4 @@
-# Spec: RegMint — Split-Panel Registration Form
+# Template: RegMint (Split-Panel Registration Form)
 
 ## Purpose
 

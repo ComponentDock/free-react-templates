@@ -1,4 +1,4 @@
-# Template: Dentalink
+# Template: Dentalink (Dentist)
 
 ## Purpose
 

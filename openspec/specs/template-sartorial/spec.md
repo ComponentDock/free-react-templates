@@ -5,7 +5,7 @@ source: https://colorlib.com/wp/template/menztailor/
 preview: https://preview.colorlib.com/theme/menztailor/
 ---
 
-# Sartorial — Men's Tailor Shop Template
+# Template: Sartorial (Men's Tailor Shop)
 
 Recreation of ColorLib "Menztailor" (https://colorlib.com/wp/template/menztailor/).
 

@@ -8,6 +8,8 @@ stack:
   - TypeScript
 ---
 
+# Template: Landcraft (Business)
+
 ## Purpose
 
 Landcraft is a landscaping company landing page template. It recreates the ColorLib Martxa design as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application. The template showcases a full business landing experience: navbar, hero, about, services, statistics, portfolio with filtering, team, FAQ accordion, testimonials, blog, newsletter signup, and a branded footer.

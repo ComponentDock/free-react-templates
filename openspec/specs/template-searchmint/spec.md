@@ -1,4 +1,4 @@
-# Spec: SearchMint
+# Template: SearchMint (Search Form Bar)
 
 ## Purpose
 

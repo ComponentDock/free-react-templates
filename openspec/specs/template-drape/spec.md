@@ -1,4 +1,4 @@
-# Template: Drape
+# Template: Drape (Ecommerce)
 
 Recreation of ColorLib **Fashe** (https://colorlib.com/wp/template/fashe/).
 

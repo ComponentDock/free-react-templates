@@ -1,4 +1,4 @@
-# Spec: CalDesk (Calendar 14 Recreation)
+# Template: CalDesk (Bootstrap Calendars)
 
 ## Purpose
 

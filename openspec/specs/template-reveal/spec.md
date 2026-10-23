@@ -1,4 +1,4 @@
-# Template: Reveal
+# Template: Reveal (Personal)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Template: Dashlet
+# Template: Dashlet (Sidebar)
 
 Recreation of ColorLib Sidebar V05 (https://colorlib.com/wp/template/colorlib-sidebar-v05/)
 

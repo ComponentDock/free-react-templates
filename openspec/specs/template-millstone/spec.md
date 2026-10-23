@@ -1,4 +1,4 @@
-# Spec: Millstone — Industrial Company Landing Template
+# Template: Millstone (Industrial Company Landing)
 
 ## Purpose
 

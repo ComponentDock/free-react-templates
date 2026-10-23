@@ -1,4 +1,4 @@
-# Template: Snaplens
+# Template: Snaplens (Portfolio)
 
 **Source:** ColorLib "Halo" (https://colorlib.com/wp/template/halo/)
 **Preview:** https://preview.colorlib.com/theme/halo/

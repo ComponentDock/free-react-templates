@@ -1,4 +1,4 @@
-# Kael — Portfolio & Personal Site Template
+# Template: Kael (Portfolio & Personal Site)
 
 ## Purpose
 

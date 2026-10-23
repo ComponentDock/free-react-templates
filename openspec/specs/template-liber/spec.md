@@ -1,4 +1,4 @@
-# Liber — Author Book Landing Template
+# Template: Liber (Author Book Landing)
 
 Recreation of ColorLib "Book" (https://colorlib.com/wp/template/book/).
 Preview: https://preview.colorlib.com/theme/book/

@@ -1,4 +1,4 @@
-# Spec: Vitaheal (Medical & Healthcare Center)
+# Template: Vitaheal (Medical & Healthcare Center)
 
 ## Purpose
 

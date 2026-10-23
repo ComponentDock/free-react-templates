@@ -1,4 +1,4 @@
-# Spec: InboxLane — Contact Form with Map
+# Template: InboxLane (Contact Form with Map)
 
 > Recreation of ColorLib Contact Form 18 (https://colorlib.com/wp/template/contact-form-18/)
 

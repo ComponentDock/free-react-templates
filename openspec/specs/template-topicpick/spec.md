@@ -1,4 +1,4 @@
-# Topicpick — Multiselect Topic Selector Template
+# Template: Topicpick (Multiselect Topic Selector)
 
 ## Purpose
 

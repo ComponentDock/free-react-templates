@@ -1,4 +1,4 @@
-# Spec: Unfurl — Portfolio & Personal Template
+# Template: Unfurl (Portfolio & Personal)
 
 Recreation of ColorLib "Unfold" (https://colorlib.com/wp/template/unfold/).
 

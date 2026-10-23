@@ -1,4 +1,4 @@
-# Pana — Photography Accordion Gallery Template
+# Template: Pana (Photography Accordion Gallery)
 
 Recreation of ColorLib "Tulen" (https://colorlib.com/wp/template/tulen/).
 

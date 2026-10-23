@@ -1,4 +1,4 @@
-# Spec: Makely
+# Template: Makely (One Page)
 
 Recreation of ColorLib "Create" (https://colorlib.com/wp/template/create/).
 

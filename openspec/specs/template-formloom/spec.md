@@ -1,4 +1,4 @@
-# Spec: Formloom — Student Registration Form Template
+# Template: Formloom (Student Registration Form)
 
 Recreation of ColorLib "Colorlib Reg Form V15" (https://colorlib.com/wp/template/colorlib-regform-15/).
 

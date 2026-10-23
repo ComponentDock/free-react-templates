@@ -1,4 +1,4 @@
-# Spec: Droplist — Multi-Section Category Dropdown
+# Template: Droplist (Multi-Section Category Dropdown)
 
 > Recreation of ColorLib "Dropdown 20" (https://colorlib.com/wp/template/dropdown-20/)
 

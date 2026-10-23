@@ -1,4 +1,4 @@
-# Spec: Byline — Blog & Magazine Template
+# Template: Byline (Blog & Magazine)
 
 **Recreation of:** ColorLib "Nikki" (https://colorlib.com/wp/template/nikki/)
 **Preview URL:** https://preview.colorlib.com/theme/nikki/

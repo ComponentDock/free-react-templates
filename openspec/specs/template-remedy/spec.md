@@ -1,4 +1,4 @@
-# Spec: Remedy — Pharmacy & Supplement Store Template
+# Template: Remedy (Pharmacy & Supplement Store)
 
 ## Purpose
 

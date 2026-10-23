@@ -1,4 +1,4 @@
-# Flightly — Flight Search Form Template
+# Template: Flightly (Flight Search Form)
 
 Recreation of ColorLib "Colorlib Search 20" (https://colorlib.com/wp/template/colorlib-search-20/).
 

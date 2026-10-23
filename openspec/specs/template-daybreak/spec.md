@@ -1,4 +1,4 @@
-# Daybreak — Portfolio Template
+# Template: Daybreak (Portfolio)
 
 Recreation of ColorLib "Sun" (https://colorlib.com/wp/template/sun/)
 

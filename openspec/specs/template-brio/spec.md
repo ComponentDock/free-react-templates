@@ -1,3 +1,5 @@
+# Template: Brio (Business)
+
 ## Purpose
 
 Brio is a bright app landing page template recreating the ColorLib Typo design.

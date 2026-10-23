@@ -1,4 +1,4 @@
-# Brushmark — Creative Art Director Portfolio
+# Template: Brushmark (Creative Art Director Portfolio)
 
 Recreation of ColorLib "Breed2" (https://colorlib.com/wp/template/breed2/).
 

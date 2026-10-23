@@ -1,3 +1,5 @@
+# Template: Festpoint (Landing Page)
+
 ## Purpose
 
 Festpoint is a conference and event landing page template, recreated from the ColorLib "Eventalk" design. It provides a modern, responsive template for promoting tech conferences, with sections for hero, services, speaker showcase, schedule, blog, and contact.

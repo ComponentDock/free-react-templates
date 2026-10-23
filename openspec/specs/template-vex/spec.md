@@ -1,4 +1,4 @@
-# Spec: Vex — Modern Animated Checkbox Template
+# Template: Vex (Modern Animated Checkbox)
 
 Recreation of ColorLib Checkbox 17 (https://colorlib.com/wp/template/checkbox-17/).
 

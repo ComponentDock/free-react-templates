@@ -1,4 +1,4 @@
-# Spec — Erudit (recreation of ColorLib "Knowledge")
+# Template: Erudit (Education)
 
 ## Purpose
 

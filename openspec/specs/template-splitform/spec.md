@@ -1,3 +1,5 @@
+# Template: Splitform (Bootstrap Modals)
+
 ## Purpose
 
 Splitform is a dual-panel sign-in/sign-up modal template recreating ColorLib Modal 02. It provides a centered modal dialog split into two halves: a sign-in form on the left and a sign-up form on the right, separated by a vertical divider. The design uses Poppins font, Bootstrap-inspired blue primary color, and social login buttons (Facebook, Twitter).

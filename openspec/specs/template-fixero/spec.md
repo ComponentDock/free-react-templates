@@ -1,4 +1,4 @@
-# Fixero — Handyman & Construction Landing Template
+# Template: Fixero (Handyman & Construction Landing)
 
 Recreation of ColorLib "Handyman" (https://colorlib.com/wp/template/handyman/)
 

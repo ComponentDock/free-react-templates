@@ -1,4 +1,4 @@
-# Spec: Shotwise
+# Template: Shotwise (Photography)
 
 ## Purpose
 

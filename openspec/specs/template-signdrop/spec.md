@@ -1,3 +1,5 @@
+# Template: Signdrop (Registration Forms)
+
 ## Purpose
 
 Signdrop is a registration form template — a recreation of ColorLib Signup Form 06 (https://colorlib.com/wp/template/signup-form-06/). It features a split viewport layout with a centered registration form on the left and a full-height hero image on the right.

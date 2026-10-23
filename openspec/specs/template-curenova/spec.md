@@ -1,4 +1,4 @@
-# CureNova — Medical & Healthcare Center Template
+# Template: CureNova (Medical & Healthcare Center)
 
 ## Purpose
 

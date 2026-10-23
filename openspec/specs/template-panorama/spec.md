@@ -1,4 +1,4 @@
-# Panorama — Web Agency Portfolio Template
+# Template: Panorama (Web Agency Portfolio)
 
 ## Purpose
 

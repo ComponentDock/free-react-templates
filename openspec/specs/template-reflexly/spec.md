@@ -1,4 +1,4 @@
-# Reflexly — Photography Studio Template
+# Template: Reflexly (Photography Studio)
 
 Recreation of ColorLib **Phozogy** (https://colorlib.com/wp/template/phozogy/).
 

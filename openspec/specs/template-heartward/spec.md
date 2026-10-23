@@ -1,4 +1,4 @@
-# Heartward — Charity & Donation Landing
+# Template: Heartward (Charity & Donation Landing)
 
 ## Purpose
 

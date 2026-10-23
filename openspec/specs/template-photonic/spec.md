@@ -1,4 +1,4 @@
-# Spec: Photonic
+# Template: Photonic (Photography)
 
 > Recreation of ColorLib "Fotograp" (https://colorlib.com/wp/template/fotograp/)
 > Preview: https://preview.colorlib.com/theme/fotograp/

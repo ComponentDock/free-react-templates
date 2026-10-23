@@ -1,4 +1,4 @@
-# Spec: Photosnap
+# Template: Photosnap (Personal)
 
 > Recreation of ColorLib "Louie" (https://colorlib.com/wp/template/louie/)
 > Preview: https://preview.colorlib.com/theme/louie/

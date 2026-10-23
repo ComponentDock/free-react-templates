@@ -1,4 +1,4 @@
-# Spec: Onboardly
+# Template: Onboardly (Bootstrap Wizards)
 
 Recreation of ColorLib Wizard 20 — free account setup wizard template.
 Source: https://colorlib.com/wp/template/colorlib-wizard-20/

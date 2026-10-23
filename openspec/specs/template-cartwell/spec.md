@@ -1,4 +1,4 @@
-# Spec: Cartwell — Cart Dropdown Menu
+# Template: Cartwell (Cart Dropdown Menu)
 
 Recreation of ColorLib "Dropdown V05" (https://colorlib.com/wp/template/dropdown-05/).
 

@@ -1,4 +1,4 @@
-# Spec: Modus — Interior Design Template
+# Template: Modus (Interior Design)
 
 > Recreation of ColorLib [Interd](https://colorlib.com/wp/template/interd/).
 > Preview: https://preview.colorlib.com/theme/interd/

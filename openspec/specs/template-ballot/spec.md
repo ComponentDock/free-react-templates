@@ -1,4 +1,4 @@
-# Ballot — Custom Checkbox Template
+# Template: Ballot (Custom Checkbox)
 
 Recreation of ColorLib Checkbox 14 (https://colorlib.com/wp/template/checkbox-14/)
 

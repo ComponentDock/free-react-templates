@@ -1,4 +1,4 @@
-# Template: Tickwell
+# Template: Tickwell (Bootstrap Checkboxes)
 
 Recreation of ColorLib Checkbox 05 (https://colorlib.com/wp/template/checkbox-05/).
 

@@ -1,4 +1,4 @@
-# Melodica — Music Artist Landing Template
+# Template: Melodica (Music Artist Landing)
 
 Recreation of ColorLib "Music 2" (https://colorlib.com/wp/template/music-2/).
 

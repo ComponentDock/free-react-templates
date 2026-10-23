@@ -1,4 +1,4 @@
-# Spec: BytePress
+# Template: BytePress (Magazine)
 
 Recreation of ColorLib **Techmag** (https://colorlib.com/wp/template/techmag/)
 

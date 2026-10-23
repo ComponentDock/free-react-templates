@@ -1,4 +1,4 @@
-# Template: Stall
+# Template: Stall (Ecommerce)
 
 Recreation of ColorLib "Selling" (https://colorlib.com/wp/template/selling/).
 

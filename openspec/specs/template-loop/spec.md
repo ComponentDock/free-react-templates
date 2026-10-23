@@ -1,4 +1,4 @@
-# template-loop
+# Template: Loop (Bootstrap 5)
 
 Recreation of ColorLib "Repeat" (https://colorlib.com/wp/template/repeat/).
 

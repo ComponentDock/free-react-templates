@@ -7,6 +7,8 @@ description: >
   room showcases, discover carousel, testimonials, and a branded footer.
 ---
 
+# Template: Seaview (Business)
+
 ## Purpose
 
 Build a production-ready React recreation of the ColorLib Marimar hotel landing

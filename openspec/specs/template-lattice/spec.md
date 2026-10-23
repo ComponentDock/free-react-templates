@@ -7,7 +7,7 @@ preview: 'https://preview.colorlib.com/theme/bootstrap/carousel-02/'
 status: draft
 ---
 
-# Lattice — Portfolio Gallery Grid
+# Template: Lattice (Portfolio Gallery Grid)
 
 Recreation of ColorLib "Carousel 02" — a Bootstrap carousel demo showcasing a
 portfolio grid of work items with hover-reveal search overlays, card shadows,

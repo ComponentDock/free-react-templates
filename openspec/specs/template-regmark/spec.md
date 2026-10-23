@@ -1,4 +1,4 @@
-# Spec: Regmark — Registration Form Template
+# Template: Regmark (Registration Form)
 
 ## Purpose
 

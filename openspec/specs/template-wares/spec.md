@@ -1,3 +1,5 @@
+# Template: Wares (Ecommerce)
+
 ## Purpose
 
 Wares is a free e-commerce React template that recreates the ColorLib "E Shop" design. It provides a storefront layout with navbar, category navigation, hero banners, product sliders, daily deals with countdown, latest products, picked-for-you recommendations, and a dark footer with newsletter signup.

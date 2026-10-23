@@ -1,4 +1,4 @@
-# Querry — Fashion Search Form Hero Template
+# Template: Querry (Fashion Search Form Hero)
 
 Recreation of ColorLib **Colorlib Search 4** (https://colorlib.com/wp/template/colorlib-search-4/).
 

@@ -1,4 +1,4 @@
-# Griddle — Burger Restaurant Template
+# Template: Griddle (Burger Restaurant)
 
 Recreation of ColorLib "Burger" (https://colorlib.com/wp/template/burger/).
 

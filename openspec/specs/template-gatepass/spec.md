@@ -9,6 +9,8 @@ governance:
   status: active
 ---
 
+# Template: Gatepass (Login Forms)
+
 ## Purpose
 
 A modern, eye-catchy login form template featuring a dark gradient background,

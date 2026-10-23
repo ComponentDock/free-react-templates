@@ -1,4 +1,4 @@
-# Spec: RegVibe — Registration Form Template
+# Template: RegVibe (Registration Form)
 
 Recreation of ColorLib "Reg Form V33" (https://colorlib.com/wp/template/colorlib-regform-33/).
 Live preview: https://colorlib.com/etc/regform/colorlib-regform-33/

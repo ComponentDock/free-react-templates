@@ -1,4 +1,4 @@
-# Spec: BoldCraft
+# Template: BoldCraft (Personal)
 
 > Recreation of ColorLib "Calvin" (https://colorlib.com/wp/template/calvin/)
 > Preview: https://preview.colorlib.com/theme/calvin/

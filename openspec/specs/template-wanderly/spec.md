@@ -1,3 +1,5 @@
+# Template: Wanderly (Business)
+
 ## Purpose
 
 Wanderly is a travel agency landing template, a React recreation of the ColorLib "Martine" design (https://colorlib.com/wp/template/martine/). It features a top navigation bar, hero banner with gradient overlay, tabbed booking form, destination cards, event showcase, hotel listings, client testimonials, and services section.

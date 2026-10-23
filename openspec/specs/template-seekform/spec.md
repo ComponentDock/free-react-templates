@@ -1,4 +1,4 @@
-# Seekform — Full-page Search Form Template
+# Template: Seekform (Full-page Search Form)
 
 ## Purpose
 

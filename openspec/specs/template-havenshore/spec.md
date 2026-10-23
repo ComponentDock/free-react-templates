@@ -1,4 +1,4 @@
-# Havenshore — Hotel & Resort Landing Template
+# Template: Havenshore (Hotel & Resort Landing)
 
 ## Purpose
 

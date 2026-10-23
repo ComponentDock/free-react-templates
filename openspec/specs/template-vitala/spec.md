@@ -6,6 +6,8 @@ preview: https://preview.colorlib.com/theme/medicare2/
 type: medical-landing
 ---
 
+# Template: Vitala (Health Fitness)
+
 ## Purpose
 
 Vitala is a medical and healthcare landing page template. It recreates the ColorLib "Medicare2" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application with a blue gradient brand palette, Playfair Display headings, and Roboto body text.

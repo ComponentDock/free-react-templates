@@ -1,4 +1,4 @@
-# Citadel — Industrial / Construction Company Template
+# Template: Citadel (Industrial / Construction Company)
 
 **Source:** ColorLib "Durg" — https://colorlib.com/wp/template/durg/
 **Preview:** https://preview.colorlib.com/theme/durg/

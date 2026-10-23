@@ -1,4 +1,4 @@
-# Cellarly — Liquor Store Template
+# Template: Cellarly (Liquor Store)
 
 Recreation of ColorLib "Liquorstore" (https://colorlib.com/wp/template/liquorstore/)
 

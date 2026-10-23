@@ -1,4 +1,4 @@
-# Spec: Jade (ColorLib Accordion 20)
+# Template: Jade (Bootstrap Accordions)
 
 Recreation of ColorLib "Bootstrap Accordion V20" (https://colorlib.com/wp/template/accordion-20/).
 

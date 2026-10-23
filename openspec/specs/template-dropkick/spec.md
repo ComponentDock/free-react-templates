@@ -22,6 +22,8 @@ design_tokens:
   font_size_body: 18px
 ---
 
+# Template: Dropkick (Bootstrap Dropdowns)
+
 ## Purpose
 
 Recreate the ColorLib Dropdown 09 template as "Dropkick" — a responsive dropdown snippet

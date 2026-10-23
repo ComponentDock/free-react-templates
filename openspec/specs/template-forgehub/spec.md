@@ -1,4 +1,4 @@
-# Spec: ForgeHub
+# Template: ForgeHub (Portfolio)
 
 > Recreation of ColorLib "Create" (https://colorlib.com/wp/template/create/)
 > Preview: https://preview.colorlib.com/theme/create/

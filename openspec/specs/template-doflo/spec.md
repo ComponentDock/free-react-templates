@@ -1,4 +1,4 @@
-# Spec: Doflo — Digital Agency Landing Template
+# Template: Doflo (Digital Agency Landing)
 
 ## Purpose
 

@@ -5,7 +5,7 @@ source: https://colorlib.com/wp/template/elit/
 preview: https://preview.colorlib.com/theme/elit/
 ---
 
-# Lens — Photography Portfolio Template
+# Template: Lens (Photography Portfolio)
 
 ## Purpose
 

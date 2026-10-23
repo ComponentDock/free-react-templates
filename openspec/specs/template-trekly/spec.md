@@ -1,4 +1,4 @@
-# Template: Trekly
+# Template: Trekly (Business)
 
 ## Purpose
 

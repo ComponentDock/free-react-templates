@@ -1,4 +1,4 @@
-# Civicore — Job Board Template
+# Template: Civicore (Job Board)
 
 Recreation of ColorLib "Comport" (https://colorlib.com/wp/template/comport/).
 Preview: https://preview.colorlib.com/theme/comport/

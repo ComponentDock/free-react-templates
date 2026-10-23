@@ -7,7 +7,7 @@ source_url: https://colorlib.com/wp/template/edusite/
 preview_url: https://preview.colorlib.com/theme/edusite/
 ---
 
-# Eduforge — Education / Online Courses Template
+# Template: Eduforge (Education / Online Courses)
 
 Recreation of ColorLib "Edusite" (https://colorlib.com/wp/template/edusite/) as a React 19 + Vite + Tailwind 4 + TypeScript template.
 

@@ -1,4 +1,4 @@
-# Spec: Blitz
+# Template: Blitz (Business)
 
 Recreation of ColorLib Rango (https://colorlib.com/wp/template/rango/).
 

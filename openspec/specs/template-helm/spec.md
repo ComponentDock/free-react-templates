@@ -9,7 +9,7 @@ description: >
 tags: [landing, technology, corporate]
 ---
 
-# Helm — Technology Landing Template
+# Template: Helm (Technology Landing)
 
 Recreation of ColorLib "Cruise" (https://preview.colorlib.com/theme/cruise/).
 

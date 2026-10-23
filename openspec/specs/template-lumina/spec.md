@@ -1,4 +1,4 @@
-# Spec: Lumina
+# Template: Lumina (Creative)
 
 Recreation of ColorLib "Ilene Berg" (https://colorlib.com/wp/template/ilene-berg/).
 Preview: https://preview.colorlib.com/theme/ilene-berg/

@@ -1,4 +1,4 @@
-# Stitchly — Tailor & Sewing Services Template
+# Template: Stitchly (Tailor & Sewing Services)
 
 Recreation of ColorLib "Tailor" (https://colorlib.com/wp/template/tailor/).
 

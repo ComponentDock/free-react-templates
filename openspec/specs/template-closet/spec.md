@@ -1,4 +1,4 @@
-# Spec: Closet — Fashion Boutique Template
+# Template: Closet (Fashion Boutique)
 
 Recreation of ColorLib "Little Closet" (https://colorlib.com/wp/template/little-closet/).
 Preview: https://preview.colorlib.com/theme/littlecloset/ — ⚠️ Pointer status re-probed 2026-10-13: the slug-only path `/theme/little-closet/` still 404s, but the live demo exists at the alias directory `/theme/littlecloset/` (HTTP 200, 37,967 B). The screenshot is a supporting reference, not the sole one.

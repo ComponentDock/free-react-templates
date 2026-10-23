@@ -1,4 +1,4 @@
-# Spec: Shores — Charity & Nonprofit Landing Template
+# Template: Shores (Charity & Nonprofit Landing)
 
 > Recreation of ColorLib "Seelife"
 > (https://colorlib.com/wp/template/seelife/)

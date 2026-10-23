@@ -1,4 +1,4 @@
-# Navpoint — Directory & City Guide Template
+# Template: Navpoint (Directory & City Guide)
 
 **Source:** ColorLib DirectoryPlus (https://colorlib.com/wp/template/directoryplus/)
 **Preview:** https://preview.colorlib.com/theme/directoryplus/

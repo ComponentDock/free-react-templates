@@ -1,4 +1,4 @@
-# template-spruce
+# Template: Spruce (Bootstrap 5)
 
 Recreation of ColorLib "Olla" (https://colorlib.com/wp/template/olla/).
 

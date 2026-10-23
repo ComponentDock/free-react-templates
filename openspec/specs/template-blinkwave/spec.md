@@ -5,6 +5,8 @@ source: https://colorlib.com/wp/template/fastnet/
 preview: https://preview.colorlib.com/theme/fastnet/
 ---
 
+# Template: Blinkwave (Business)
+
 ## Purpose
 
 Recreate the ColorLib "Fastnet" ISP landing page as a React 19 + Tailwind CSS 4

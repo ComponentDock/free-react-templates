@@ -1,4 +1,4 @@
-# Entrivy — Login Form 07
+# Template: Entrivy (Login Form 07)
 
 Recreation of ColorLib "Login Form V07" (https://colorlib.com/wp/template/login-form-07/).
 

@@ -1,4 +1,4 @@
-# template-formzen
+# Template: Formzen (Contact Form)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: Loginaura — Personalized Avatar Login
+# Template: Loginaura (Personalized Avatar Login)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Template: Zenith Button Showcase (UI Component Showcase category)
+# Template: Zenith (UI Component Showcase category)
 
 ## Purpose
 

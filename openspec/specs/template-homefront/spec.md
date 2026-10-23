@@ -1,4 +1,4 @@
-# Spec — Homefront
+# Template: Homefront (Directory)
 
 > Recreation of ColorLib [Royalestate](https://colorlib.com/wp/template/royalestate/)
 > Preview: https://preview.colorlib.com/theme/royalestate/

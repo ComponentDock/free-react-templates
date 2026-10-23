@@ -6,6 +6,8 @@ source: https://colorlib.com/wp/template/design/
 preview: https://preview.colorlib.com/theme/design/
 ---
 
+# Template: Atelier (Bootstrap)
+
 ## Purpose
 
 Atelier is a creative agency landing page with a split hero, achievement stats, process steps, services, a testimonial carousel and blog cards. It recreates the ColorLib "Design" design with Vite, React 19, Tailwind CSS 4 and TypeScript.

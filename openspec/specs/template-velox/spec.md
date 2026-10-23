@@ -1,4 +1,4 @@
-# Spec: Velox — Personal/Freelancer Portfolio Template
+# Template: Velox (Personal/Freelancer Portfolio)
 
 Recreation of ColorLib "Ronin" (https://colorlib.com/wp/template/ronin/).
 Preview: https://preview.colorlib.com/theme/ronin/

@@ -1,4 +1,4 @@
-# Feast — Food Catering Service Template
+# Template: Feast (Food Catering Service)
 
 > Recreation of ColorLib "Flatter" (https://colorlib.com/wp/template/flatter/)
 

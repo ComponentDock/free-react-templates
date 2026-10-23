@@ -1,4 +1,4 @@
-# Regwell — Education Appointment Form Template
+# Template: Regwell (Education Appointment Form)
 
 Recreation of ColorLib "Colorlib Reg Form V12"
 (https://colorlib.com/wp/template/colorlib-regform-12/)

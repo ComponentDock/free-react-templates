@@ -1,4 +1,4 @@
-# Tastory — Restaurant Landing Template
+# Template: Tastory (Restaurant Landing)
 
 **Recreation of ColorLib Eatwell** (https://colorlib.com/wp/template/eatwell/)
 

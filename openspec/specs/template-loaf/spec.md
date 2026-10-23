@@ -1,4 +1,4 @@
-# Loaf — Bakery Template Spec
+# Template: Loaf (Bakery Template Spec)
 
 ## Purpose
 

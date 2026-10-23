@@ -1,4 +1,4 @@
-# Spec: Waypoint (recreation of ColorLib Search Form V12)
+# Template: Waypoint (Search Form Bar)
 
 Recreation of ColorLib "Colorlib Search Form V12" (https://colorlib.com/wp/template/colorlib-search-12/).
 

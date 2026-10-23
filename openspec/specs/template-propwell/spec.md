@@ -1,4 +1,4 @@
-# Spec: Propwell — Real Estate Landing Page
+# Template: Propwell (Real Estate Landing Page)
 
 Recreation of ColorLib [Leramiz](https://colorlib.com/wp/template/leramiz/).
 

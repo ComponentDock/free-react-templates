@@ -1,4 +1,4 @@
-# Batter — Creative Digital Agency Landing Page
+# Template: Batter (Creative Digital Agency Landing Page)
 
 ## Purpose
 

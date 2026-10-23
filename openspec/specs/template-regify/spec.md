@@ -1,4 +1,4 @@
-# Spec: Regify — Account Application Registration Form
+# Template: Regify (Account Application Registration Form)
 
 ## Purpose
 

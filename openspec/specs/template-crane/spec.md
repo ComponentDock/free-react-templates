@@ -1,4 +1,4 @@
-# Spec: Crane — Construction Company Landing Template
+# Template: Crane (Construction Company Landing)
 
 ## Purpose
 

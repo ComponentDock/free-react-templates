@@ -1,4 +1,4 @@
-# Spec: Platter — Restaurant Reservation Wizard Template
+# Template: Platter (Restaurant Reservation Wizard)
 
 ## Purpose
 

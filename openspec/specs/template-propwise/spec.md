@@ -1,4 +1,4 @@
-# Spec: Propwise (recreation of ColorLib Real Estate)
+# Template: Propwise (Real Estate)
 
 ## Purpose
 

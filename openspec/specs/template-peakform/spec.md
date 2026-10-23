@@ -1,4 +1,4 @@
-# Template: Peakform
+# Template: Peakform (Health Fitness)
 
 Recreation of ColorLib "Ironmuscle" (https://colorlib.com/wp/template/ironmuscle/).
 

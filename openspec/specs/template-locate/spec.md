@@ -1,4 +1,4 @@
-# Spec: Locate
+# Template: Locate (Directory)
 
 ## Purpose
 

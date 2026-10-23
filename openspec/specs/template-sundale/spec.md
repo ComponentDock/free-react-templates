@@ -1,4 +1,4 @@
-# Template: Sundial (Real Estate Agency Template)
+# Template: Sundale (Real Estate Agency Template)
 
 ## Purpose
 

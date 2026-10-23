@@ -1,4 +1,4 @@
-# Template: Landing Page (WordPress Themes Collection)
+# Template: Landing (WordPress Themes Collection)
 
 ## Purpose
 

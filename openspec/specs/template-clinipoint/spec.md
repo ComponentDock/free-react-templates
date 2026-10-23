@@ -1,4 +1,4 @@
-# Spec: Clinipoint — Health & Medical Landing Template
+# Template: Clinipoint (Health & Medical Landing)
 
 Recreation of ColorLib Medica (https://colorlib.com/wp/template/medica/).
 Preview: https://preview.colorlib.com/theme/medica/

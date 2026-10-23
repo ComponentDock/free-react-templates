@@ -1,4 +1,4 @@
-# Vinylspin — Music Band Landing Template
+# Template: Vinylspin (Music Band Landing)
 
 Recreation of ColorLib "Mixtape" (https://colorlib.com/wp/template/mixtape/).
 Preview: https://preview.colorlib.com/theme/mixtape/

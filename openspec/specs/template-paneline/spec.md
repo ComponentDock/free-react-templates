@@ -1,4 +1,4 @@
-# Spec: Paneline
+# Template: Paneline (Sidebar)
 
 Recreation of ColorLib Bootstrap Sidebar 08 (https://colorlib.com/wp/template/bootstrap-sidebar-08/).
 

@@ -5,6 +5,8 @@ colorlib: https://colorlib.com/wp/template/stated/
 preview: https://preview.colorlib.com/theme/stated/
 ---
 
+# Template: Propstack (Business)
+
 ## Purpose
 
 Recreation of ColorLib "Stated" (https://colorlib.com/wp/template/stated/) as a React 19 + Tailwind CSS 4 + TypeScript template named **Propstack**. A clean, professional real estate website with property listings, agent profiles, and contact form.

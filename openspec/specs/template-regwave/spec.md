@@ -1,3 +1,5 @@
+# Template: Regwave (Registration Forms)
+
 ## Purpose
 
 Regwave is a membership registration form template with a two-column card layout. The left panel provides informational content and a login action, while the right panel contains a multi-field registration form. The design uses a cyan background with a blue accent brand color, following the Colorlib Reg Form V30 pattern.

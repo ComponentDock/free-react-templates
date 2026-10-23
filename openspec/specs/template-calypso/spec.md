@@ -1,4 +1,4 @@
-# Calypso Template — OpenSpec
+# Template: Calypso (OpenSpec)
 
 Recreation of ColorLib "Calvin" (https://colorlib.com/wp/template/calvin/).
 

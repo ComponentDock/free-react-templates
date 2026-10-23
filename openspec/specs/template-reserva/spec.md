@@ -1,4 +1,4 @@
-# Reserva — Three-Step Room Booking Wizard Template
+# Template: Reserva (Three-Step Room Booking Wizard)
 
 > Recreation of ColorLib Wizard 19 (https://colorlib.com/wp/template/colorlib-wizard-19/)
 > Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-19/index.html

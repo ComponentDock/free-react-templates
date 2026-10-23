@@ -1,4 +1,4 @@
-# Optic — Photographer Portfolio Template
+# Template: Optic (Photographer Portfolio)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: Smithy
+# Template: Smithy (Personal)
 
 ## Purpose
 

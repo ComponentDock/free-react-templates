@@ -1,4 +1,4 @@
-# template-kinectwell
+# Template: Kinectwell (Health Fitness)
 
 Recreation of ColorLib "Physical Therapy" (https://colorlib.com/wp/template/physical-therapy/).
 

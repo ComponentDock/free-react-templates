@@ -1,4 +1,4 @@
-# Spec: Pixelate — Personal Portfolio / Digital Product Designer
+# Template: Pixelate (Personal Portfolio / Digital Product Designer)
 
 **Source:** ColorLib "Calvin" — https://colorlib.com/wp/template/calvin/
 **Preview:** https://preview.colorlib.com/theme/calvin/

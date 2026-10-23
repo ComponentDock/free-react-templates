@@ -1,4 +1,4 @@
-# Spec: Catalog — Directory & Listing Template
+# Template: Catalog (Directory & Listing)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Template: Kaleido
+# Template: Kaleido (One Page)
 
 Recreation of ColorLib "Jellyfish Ui Kit"
 (https://colorlib.com/wp/template/jellyfish-ui-kit/).

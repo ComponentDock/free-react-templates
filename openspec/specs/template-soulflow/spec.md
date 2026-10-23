@@ -1,4 +1,4 @@
-# Soulflow — Yoga & Meditation Studio Template
+# Template: Soulflow (Yoga & Meditation Studio)
 
 Recreation of ColorLib "Yogalife" (https://colorlib.com/wp/template/yogalife/).
 

@@ -1,4 +1,4 @@
-# Spec: Drifter
+# Template: Drifter (Landing Page)
 
 Recreation of ColorLib "Ronin" (https://colorlib.com/wp/template/ronin/).
 

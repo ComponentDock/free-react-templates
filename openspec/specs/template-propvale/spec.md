@@ -1,3 +1,5 @@
+# Template: Propvale (Real Estate)
+
 ## Purpose
 
 Propvale is a free real estate website template that recreates the ColorLib "Real Estate 2" design (https://colorlib.com/wp/template/real-estate-2/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides a property listing landing page with search, featured properties, FAQ, testimonials, agent profiles, and a call-to-action section.

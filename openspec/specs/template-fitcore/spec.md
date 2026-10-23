@@ -1,4 +1,4 @@
-# FitCore — Health & Fitness Template
+# Template: FitCore (Health & Fitness)
 
 ## Purpose
 

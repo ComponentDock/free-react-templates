@@ -7,6 +7,8 @@ description: Real estate landing page template
 category: Real Estate
 ---
 
+# Template: Dwelling (Real Estate)
+
 ## Purpose
 
 Dwelling is a one-page real estate landing page template, recreating the ColorLib "Aler" design (https://colorlib.com/wp/template/aler/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template. It provides a complete property listing experience with search, featured properties, agent profiles, categories, testimonials, and contact form.

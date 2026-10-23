@@ -1,4 +1,4 @@
-# Spec: Wayfare — Travel Search Form
+# Template: Wayfare (Travel Search Form)
 
 Recreation of ColorLib "Search Form V11" (https://colorlib.com/wp/template/colorlib-search-11/).
 

@@ -1,4 +1,4 @@
-# Dropslide — Custom Dropdown Menu Template
+# Template: Dropslide (Custom Dropdown Menu)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# GiveMore — Charity & Donation Landing
+# Template: GiveMore (Charity & Donation Landing)
 
 ## Purpose
 

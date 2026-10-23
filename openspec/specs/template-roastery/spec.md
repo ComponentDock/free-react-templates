@@ -1,4 +1,4 @@
-# Roastery — Coffee Shop Template
+# Template: Roastery (Coffee Shop)
 
 Recreation of ColorLib "Coffee Blend" (https://colorlib.com/wp/template/coffee-blend/)
 

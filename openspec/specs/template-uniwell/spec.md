@@ -1,4 +1,4 @@
-# spec: Uniwell
+# Template: Uniwell (Education)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: Calstack (Calendar 15 Recreation)
+# Template: Calstack (Bootstrap Calendars)
 
 ## Purpose
 

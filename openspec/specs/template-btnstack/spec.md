@@ -1,4 +1,4 @@
-# Specification: BtnStack (Bootstrap Buttons 03 Recreation)
+# Template: BtnStack (Bootstrap Buttons)
 
 Recreation of ColorLib Bootstrap Buttons 03 (`https://colorlib.com/wp/template/bootstrap-buttons-03/`) as **BtnStack**, a comprehensive, polished solid and outline button showcase with size variants, color palettes, states, and interactive playground.
 

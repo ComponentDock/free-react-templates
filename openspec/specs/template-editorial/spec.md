@@ -4,6 +4,8 @@ description: Editorial — magazine and blog template with sidebar navigation, h
 governed_by: TDD (100% coverage enforced)
 ---
 
+# Template: Editorial (Magazine)
+
 ## Purpose
 
 Editorial is a magazine and blog template with a fixed sidebar navigation, a full-viewport hero slider, an asymmetric post grid and pagination. It recreates the ColorLib **Megazine** design (https://colorlib.com/wp/template/megazine/).

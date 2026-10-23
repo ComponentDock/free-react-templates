@@ -6,6 +6,8 @@ preview: https://preview.colorlib.com/theme/boxus/
 status: in-progress
 ---
 
+# Template: Vertex (Landing Page)
+
 ## Purpose
 
 Vertex is a creative digital agency single-page landing template with services, portfolio, team, stories, video features and contact sections. It recreates the ColorLib **Boxus** design (https://colorlib.com/wp/template/boxus/) as `apps/vertex`.

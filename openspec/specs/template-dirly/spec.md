@@ -1,4 +1,4 @@
-# Spec: Dirly — Directory & Listing Template
+# Template: Dirly (Directory & Listing)
 
 > Recreation of ColorLib **Listingo** (https://colorlib.com/wp/template/listingo/)
 

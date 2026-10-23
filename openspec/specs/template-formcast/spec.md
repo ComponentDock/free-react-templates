@@ -9,6 +9,8 @@ preview: https://preview.colorlib.com/theme/contact-form-v20/
 status: in-progress
 ---
 
+# Template: Formcast (Contact Form)
+
 ## Purpose
 
 FormCast is a centered contact form template that recreates ColorLib Contact Form V20 (https://colorlib.com/wp/template/contact-form-v20/). It features a full-screen muted map-like gradient background with a centered white card, envelope icon, two-column name/email fields, a message textarea, and a coral-red send button.

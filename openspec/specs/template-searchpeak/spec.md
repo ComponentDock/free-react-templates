@@ -1,4 +1,4 @@
-# Spec: Searchpeak
+# Template: Searchpeak (Search Form Bar)
 
 ## Purpose
 

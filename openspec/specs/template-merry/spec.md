@@ -1,4 +1,4 @@
-# Specification: Merry (Carousel 07)
+# Template: Merry (Carousel 07)
 
 ## Purpose
 

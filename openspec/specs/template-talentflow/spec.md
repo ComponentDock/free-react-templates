@@ -14,6 +14,8 @@ design_tokens:
   counter_text: "#0389FF"
 ---
 
+# Template: Talentflow (Business)
+
 ## Purpose
 
 Talentflow is a professional HR consulting landing page template, recreating the ColorLib "Humanresources" design under a new name. It provides a complete single-page marketing site with navbar, hero, features, about/accordion, stats counters, team, testimonials, blog, and footer sections.

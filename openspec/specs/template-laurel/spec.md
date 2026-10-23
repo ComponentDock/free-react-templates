@@ -9,7 +9,7 @@ package_name: '@free-react-templates/laurel'
 category: Education
 ---
 
-# Laurel — Education Template Spec
+# Template: Laurel (Education Template Spec)
 
 Recreation of ColorLib Educrown (https://colorlib.com/wp/template/educrown/).
 

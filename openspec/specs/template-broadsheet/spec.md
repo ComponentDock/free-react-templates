@@ -1,4 +1,4 @@
-# Spec: BroadSheet — News & Magazine Template
+# Template: BroadSheet (News & Magazine)
 
 > Recreation of ColorLib "Newspaper" (https://colorlib.com/wp/template/newspaper/).
 > Preview: https://preview.colorlib.com/theme/newspaper/

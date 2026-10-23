@@ -1,4 +1,4 @@
-# Spec: Imprint — Personal Portfolio Template
+# Template: Imprint (Personal Portfolio)
 
 ## Purpose
 

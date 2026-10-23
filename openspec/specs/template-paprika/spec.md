@@ -1,4 +1,4 @@
-# Template: Paprika
+# Template: Paprika (Business)
 
 ## Purpose
 

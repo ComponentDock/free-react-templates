@@ -1,3 +1,5 @@
+# Template: Townhub (Directory)
+
 ## Purpose
 
 Recreate the ColorLib CityListing directory/listing template as a React 19 + Vite + Tailwind CSS 4 + TypeScript app named "TownHub". The template is a city directory one-pager with a hero search bar, popular locations, how-it-works steps, featured categories, testimonials, newsletter subscribe, blog posts, and a dark footer.

@@ -14,6 +14,8 @@ design_tokens:
   button_radius: none (square corners)
 ---
 
+# Template: Molars (Dentist)
+
 ## Purpose
 
 Molars is a dental clinic landing page recreated from the ColorLib "Dentures"

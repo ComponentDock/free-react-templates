@@ -1,4 +1,4 @@
-# Spec: Dropkit — Bootstrap Dropdown Showcase Template
+# Template: Dropkit (Bootstrap Dropdown Showcase)
 
 > Recreation of ColorLib "Dropdown 01" (https://colorlib.com/wp/template/dropdown-01/)
 

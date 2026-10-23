@@ -1,4 +1,4 @@
-# Template: Formbox
+# Template: Formbox (Contact Form)
 
 ## Purpose
 

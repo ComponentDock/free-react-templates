@@ -1,4 +1,4 @@
-# Spec: BtnMatrix (Bootstrap Buttons 20 / UI Components)
+# Template: BtnMatrix (Bootstrap Buttons 20 / UI Components)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Sidenote — Newsletter Sidebar Template
+# Template: Sidenote (Newsletter Sidebar)
 
 Recreation of ColorLib "Colorlib Sidebar V03" (https://colorlib.com/wp/template/colorlib-sidebar-v03/).
 

@@ -1,4 +1,4 @@
-# Timber — Interior Design / Construction Studio Template
+# Template: Timber (Interior Design / Construction Studio)
 
 > Recreation of ColorLib "Balay"
 > (https://colorlib.com/wp/template/balay/)

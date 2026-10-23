@@ -18,6 +18,8 @@ design_tokens:
   progress_bar_bg: '#f9f9ff'
 ---
 
+# Template: Prism (Business)
+
 ## Purpose
 
 Recreation of ColorLib "Dup" (https://preview.colorlib.com/theme/dup/) as a React + Tailwind CSS creative agency template named "Prism". The template showcases a creative agency with sections for studio introduction, achievements, video, skills, testimonials, and contact.

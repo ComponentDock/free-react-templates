@@ -1,4 +1,4 @@
-# Seminar — Conference & Workshop Event Landing Page
+# Template: Seminar (Conference & Workshop Event Landing Page)
 
 Recreation of ColorLib "Workshop" (https://colorlib.com/wp/template/workshop/).
 

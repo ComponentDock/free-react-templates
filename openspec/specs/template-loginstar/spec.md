@@ -1,4 +1,4 @@
-# Spec: Loginstar — Centered Purple Login Form
+# Template: Loginstar (Centered Purple Login Form)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: Focal — Photography Portfolio Template
+# Template: Focal (Photography Portfolio)
 
 > Recreation of ColorLib "Bato" (https://colorlib.com/wp/template/bato/)
 > Preview: https://preview.colorlib.com/theme/bato/

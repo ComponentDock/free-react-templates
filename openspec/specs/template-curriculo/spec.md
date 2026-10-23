@@ -1,4 +1,4 @@
-# Spec: Curriculo — Resume & Portfolio Template
+# Template: Curriculo (Resume & Portfolio)
 
 **Source:** ColorLib "Rezume" — https://colorlib.com/wp/template/rezume/
 **Preview:** https://preview.colorlib.com/theme/rezume/

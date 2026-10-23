@@ -1,4 +1,4 @@
-# Spec: Registry
+# Template: Registry (Registration Forms)
 
 ## Purpose
 

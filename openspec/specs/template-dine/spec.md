@@ -1,4 +1,4 @@
-# Template: Dine
+# Template: Dine (Business)
 
 ## Purpose
 

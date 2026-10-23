@@ -6,6 +6,8 @@ description: >
   services grid, portfolio grid, blog posts, and CTA contact section.
 ---
 
+# Template: Repertoire (Business)
+
 ## Purpose
 
 Repertoire is a portfolio and personal-branding landing page with a sticky sidebar navigation, a hero slider, services, portfolio and blog. It recreates the ColorLib **Work** design (https://colorlib.com/wp/template/work/).

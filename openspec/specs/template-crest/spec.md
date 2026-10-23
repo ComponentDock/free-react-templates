@@ -1,4 +1,4 @@
-# OpenSpec Specification: Template `crest` (Business / Consulting Agency)
+# Template: Crest (Business / Consulting Agency)
 
 ## Purpose
 

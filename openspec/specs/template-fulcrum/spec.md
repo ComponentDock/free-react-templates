@@ -1,4 +1,4 @@
-# Fulcrum — Digital Services Landing Template
+# Template: Fulcrum (Digital Services Landing)
 
 ## Purpose
 

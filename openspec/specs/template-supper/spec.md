@@ -1,4 +1,4 @@
-# Spec: Supper — Restaurant Template
+# Template: Supper (Restaurant)
 
 **Recreation of:** ColorLib "Meal" (https://colorlib.com/wp/template/meal/)
 **Preview:** https://preview.colorlib.com/theme/meal/

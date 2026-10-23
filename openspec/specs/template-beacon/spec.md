@@ -1,4 +1,4 @@
-# Beacon — Photography Portfolio Template
+# Template: Beacon (Photography Portfolio)
 
 ## Purpose
 

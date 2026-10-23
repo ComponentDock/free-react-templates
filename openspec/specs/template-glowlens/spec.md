@@ -1,4 +1,4 @@
-# Glowlens — Photography Portfolio Template
+# Template: Glowlens (Photography Portfolio)
 
 Recreation of ColorLib "Halo" (https://colorlib.com/wp/template/halo/).
 

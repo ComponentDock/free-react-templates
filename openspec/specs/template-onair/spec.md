@@ -1,4 +1,4 @@
-# OnAir — Radio & Music Template
+# Template: OnAir (Radio & Music)
 
 Recreation of ColorLib "Razo" (https://colorlib.com/wp/template/razo/)
 

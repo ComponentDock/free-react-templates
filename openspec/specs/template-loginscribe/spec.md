@@ -1,4 +1,4 @@
-# Spec: Loginscribe — Welcome Login Form
+# Template: Loginscribe (Welcome Login Form)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Template: ArtGallery
+# Template: ArtGallery (Landing Page)
 
 ## Purpose
 

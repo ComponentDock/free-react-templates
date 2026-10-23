@@ -5,6 +5,8 @@ template: colorlib-login-form-13
 source: https://preview.colorlib.com/theme/bootstrap/login-form-13/
 ---
 
+# Template: Keygate (Login Forms)
+
 ## Purpose
 
 Recreation of ColorLib Login Form 13 (https://colorlib.com/wp/template/login-form-13/) — a clean white-card login form template with icon inputs, green accent, and social icons in the header. The new name is "Keygate".

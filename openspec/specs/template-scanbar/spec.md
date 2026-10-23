@@ -1,4 +1,4 @@
-# Scanbar — Quick City Search Form
+# Template: Scanbar (Quick City Search Form)
 
 Recreation of ColorLib "Search Form 13" (https://colorlib.com/wp/template/colorlib-search-13/).
 

@@ -1,4 +1,4 @@
-# Spec: Dossier — Personal/CV Portfolio Template
+# Template: Dossier (Personal/CV Portfolio)
 
 ## Purpose
 

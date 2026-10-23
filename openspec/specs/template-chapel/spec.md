@@ -1,4 +1,4 @@
-# Chapel — Church Event Template
+# Template: Chapel (Church Event)
 
 Recreation of ColorLib "LibChurch" (https://colorlib.com/wp/template/libchurch/).
 

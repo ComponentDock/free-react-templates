@@ -1,4 +1,4 @@
-# Spec: Pillar — Architecture & Interior Design Template
+# Template: Pillar (Architecture & Interior Design)
 
 > Recreation of ColorLib "Archs" — https://colorlib.com/wp/template/archs/
 > Preview: https://preview.colorlib.com/theme/archs/

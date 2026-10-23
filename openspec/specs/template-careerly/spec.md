@@ -1,4 +1,4 @@
-# Careerly — Job Board & Career Portal Template
+# Template: Careerly (Job Board & Career Portal)
 
 ## Purpose
 

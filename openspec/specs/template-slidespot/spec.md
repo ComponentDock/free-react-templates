@@ -1,4 +1,4 @@
-# Specification: SlideSpot (Carousel 06)
+# Template: SlideSpot (Carousel 06)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec — AlignWell (ColorLib Chiropractic)
+# Template: AlignWell (Health Fitness)
 
 ## Purpose
 

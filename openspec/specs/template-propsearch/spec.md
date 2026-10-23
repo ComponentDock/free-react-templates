@@ -1,4 +1,4 @@
-# Template: PropSearch — Real Estate Search Form
+# Template: PropSearch (Real Estate Search Form)
 
 ## Purpose
 

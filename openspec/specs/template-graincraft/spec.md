@@ -1,4 +1,4 @@
-# Graincraft — Woodworking Company Landing Template
+# Template: Graincraft (Woodworking Company Landing)
 
 ## Purpose
 

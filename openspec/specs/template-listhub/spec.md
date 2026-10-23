@@ -1,4 +1,4 @@
-# Spec: Listhub — Directory Listing Template
+# Template: Listhub (Directory Listing)
 
 > Recreation of ColorLib "Listio" (https://colorlib.com/wp/template/listio/)
 > Preview: https://preview.colorlib.com/theme/listio/

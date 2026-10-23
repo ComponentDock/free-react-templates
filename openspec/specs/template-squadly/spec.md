@@ -1,4 +1,4 @@
-# Squadly — Heavy Equipment Rental Landing Template
+# Template: Squadly (Heavy Equipment Rental Landing)
 
 Recreation of ColorLib **Equipo** (https://colorlib.com/wp/template/equipo/).
 

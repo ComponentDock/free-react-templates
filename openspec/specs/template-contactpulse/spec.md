@@ -1,4 +1,4 @@
-# Template: ContactPulse
+# Template: ContactPulse (Contact Form)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: CalGrid (Calendar & Date Picker)
+# Template: CalGrid (Calendar & Date Picker)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Brightmind
+# Template: Brightmind (Education)
 
 ## Purpose
 

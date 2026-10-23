@@ -1,4 +1,4 @@
-# Regpulse — Dinner Event Booking Form
+# Template: Regpulse (Dinner Event Booking Form)
 
 Recreation of ColorLib Reg Form V13 (https://colorlib.com/wp/template/colorlib-regform-13/).
 

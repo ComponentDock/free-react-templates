@@ -1,4 +1,4 @@
-# Fotoroll — Photography Portfolio Template
+# Template: Fotoroll (Photography Portfolio)
 
 > Recreation of ColorLib "Photography 2" (https://colorlib.com/wp/template/photography-2/)
 

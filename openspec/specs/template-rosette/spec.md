@@ -1,4 +1,4 @@
-# Rosette — Registration Form Template
+# Template: Rosette (Registration Form)
 
 Recreation of ColorLib Regform 20 (https://colorlib.com/wp/template/colorlib-regform-20/).
 

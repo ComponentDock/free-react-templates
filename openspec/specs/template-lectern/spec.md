@@ -1,4 +1,4 @@
-# Spec: Lectern — University/Education Landing Template
+# Template: Lectern (University/Education Landing)
 
 Recreation of ColorLib "Unica" (https://colorlib.com/wp/template/unica/).
 

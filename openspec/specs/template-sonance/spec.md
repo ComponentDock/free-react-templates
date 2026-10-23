@@ -1,4 +1,4 @@
-# Sonance — Podcast Website Template
+# Template: Sonance (Podcast Website)
 
 Recreation of ColorLib "Megapod" (https://colorlib.com/wp/template/megapod/).
 

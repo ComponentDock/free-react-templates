@@ -1,4 +1,4 @@
-# Formpost — Contact Form 09 (ColorLib Contact Form 09)
+# Template: Formpost (Contact Form)
 
 Recreation of ColorLib "Contact Form 09"  
 https://colorlib.com/wp/template/contact-form-09/  

@@ -1,4 +1,4 @@
-# Spec: Bazaar — Fashion E-Commerce Landing Template
+# Template: Bazaar (Fashion E-Commerce Landing)
 
 ## Purpose
 

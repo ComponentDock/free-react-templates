@@ -1,4 +1,4 @@
-# Specification: BtnFuse (Bootstrap Buttons 19 Recreation)
+# Template: BtnFuse (Bootstrap Buttons)
 
 Recreation of ColorLib "Bootstrap Buttons 19" (`https://colorlib.com/wp/template/bootstrap-buttons-19/`). Preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-19/`. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

@@ -1,4 +1,4 @@
-# Namastay — Yoga Instructor Template
+# Template: Namastay (Yoga Instructor)
 
 **Recreation of:** ColorLib Yogafun
 **Source:** https://colorlib.com/wp/template/yogafun/

@@ -1,4 +1,4 @@
-# Seekmint — Search Form Bar 04
+# Template: Seekmint (Search Form Bar 04)
 
 Recreation of ColorLib "Search Form/Bar #04"
 (https://colorlib.com/wp/template/search-form-bar-04/).

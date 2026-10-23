@@ -1,4 +1,4 @@
-# Spec: Praxis
+# Template: Praxis (Health Fitness)
 
 Recreation of ColorLib "Drpro" (https://colorlib.com/wp/template/drpro/).
 

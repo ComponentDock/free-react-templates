@@ -1,4 +1,4 @@
-# Specification: BtnRiff (Bootstrap Buttons 15 Recreation)
+# Template: BtnRiff (Bootstrap Buttons)
 
 Recreation of ColorLib "Bootstrap Buttons 15" (`https://colorlib.com/wp/template/bootstrap-buttons-15/`). Preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-15/`. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

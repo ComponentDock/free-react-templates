@@ -1,4 +1,4 @@
-# Bulwark — Security & IT Services Template
+# Template: Bulwark (Security & IT Services)
 
 ## Purpose
 

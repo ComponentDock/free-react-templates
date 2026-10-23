@@ -1,4 +1,4 @@
-# Template: Photomuse
+# Template: Photomuse (Photography)
 
 Recreation of ColorLib Louie (https://colorlib.com/wp/template/louie/)
 

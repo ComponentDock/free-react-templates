@@ -6,6 +6,8 @@ preview_url: https://preview.colorlib.com/theme/bft/bootstrap-footer-19/
 screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-19.jpg
 ---
 
+# Template: Amethyst (Bootstrap Footers)
+
 ## Purpose
 
 Recreation of ColorLib Bootstrap Footer 19 (https://colorlib.com/wp/template/bootstrap-footer-19/).

@@ -1,4 +1,4 @@
-# Feastly — Restaurant Landing Template
+# Template: Feastly (Restaurant Landing)
 
 ## Purpose
 

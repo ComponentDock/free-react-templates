@@ -1,4 +1,4 @@
-# Spec: template-btnridge (Bootstrap Buttons 12)
+# Template: Btnridge (Bootstrap Buttons 12)
 
 ## Purpose
 

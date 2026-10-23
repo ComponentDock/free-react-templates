@@ -8,6 +8,8 @@ description: >
   signup.
 ---
 
+# Template: Cabinet (Ecommerce)
+
 ## Purpose
 
 Cabinet is a premium furniture e-commerce landing page featuring a clean,

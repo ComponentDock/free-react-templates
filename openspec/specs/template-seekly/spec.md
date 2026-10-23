@@ -1,4 +1,4 @@
-# Seekly — Search Form Hero Template
+# Template: Seekly (Search Form Hero)
 
 Recreation of ColorLib **Colorlib Search 1** (https://colorlib.com/wp/template/colorlib-search-1/).
 

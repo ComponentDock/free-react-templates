@@ -1,4 +1,4 @@
-# Musecraft — Creative Digital Agency Landing
+# Template: Musecraft (Creative Digital Agency Landing)
 
 Recreation of ColorLib "Boxus" (https://colorlib.com/wp/template/boxus/).
 

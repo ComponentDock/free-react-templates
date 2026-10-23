@@ -8,7 +8,7 @@ source:
   preview: https://preview.colorlib.com/theme/create/
 ---
 
-# Forgeit — Creative Agency Template
+# Template: Forgeit (Creative Agency)
 
 ## Purpose
 

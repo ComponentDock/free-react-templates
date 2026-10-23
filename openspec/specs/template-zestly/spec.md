@@ -1,4 +1,4 @@
-# Spec: Zestly
+# Template: Zestly (Food Drinks)
 
 Recreation of ColorLib "Tasty Recipes" (https://colorlib.com/wp/template/tasty-recipes/)
 

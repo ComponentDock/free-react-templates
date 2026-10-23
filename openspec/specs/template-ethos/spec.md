@@ -1,4 +1,4 @@
-# Spec: Ethos — Education Landing Template
+# Template: Ethos (Education Landing)
 
 > Recreation of ColorLib "University" (https://colorlib.com/wp/template/university/)
 

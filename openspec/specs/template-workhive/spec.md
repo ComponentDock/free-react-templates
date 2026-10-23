@@ -1,4 +1,4 @@
-# Workhive — Coworking & Shared Workspace Landing Template
+# Template: Workhive (Coworking & Shared Workspace Landing)
 
 ## Purpose
 

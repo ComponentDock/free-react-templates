@@ -1,4 +1,4 @@
-# Spec: Vignette — Fashion E-commerce Template
+# Template: Vignette (Fashion E-commerce)
 
 Recreation of ColorLib "Karl" (https://colorlib.com/wp/template/karl/)
 

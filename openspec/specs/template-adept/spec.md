@@ -1,4 +1,4 @@
-# Spec: Adept
+# Template: Adept (Business)
 
 ## Purpose
 

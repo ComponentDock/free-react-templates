@@ -1,4 +1,4 @@
-# Spec: SubmitBox — Signup Form Template
+# Template: SubmitBox (Signup Form)
 
 Recreation of ColorLib "Signup Form 13"
 (https://colorlib.com/wp/template/signup-form-13/)

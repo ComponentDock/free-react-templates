@@ -1,4 +1,4 @@
-# Spec: Pressbox
+# Template: Pressbox (Magazine)
 
 Recreation of ColorLib **Magnews** — https://colorlib.com/wp/template/magnews/
 

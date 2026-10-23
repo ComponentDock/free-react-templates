@@ -1,3 +1,5 @@
+# Template: Artful (Landing Page)
+
 ## Purpose
 
 Artful is a creative art and crafting services landing page template, recreated from the ColorLib "Five Star" design. It features a bold red brand color, full-screen hero, image gallery, carousel, services grid, video section, contact form, and dark footer with newsletter signup.

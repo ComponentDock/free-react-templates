@@ -1,4 +1,4 @@
-# Spec: Structa — Construction Company Template
+# Template: Structa (Construction Company)
 
 > Recreation of ColorLib "Consto" — https://colorlib.com/wp/template/consto/
 > Preview: https://preview.colorlib.com/theme/consto/

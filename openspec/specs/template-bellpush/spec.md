@@ -1,4 +1,4 @@
-# Spec: Bellpush — Newsletter Subscription Modal Template
+# Template: Bellpush (Newsletter Subscription Modal)
 
 > Recreation of ColorLib Modal 10
 > (https://colorlib.com/wp/template/modal-10/)

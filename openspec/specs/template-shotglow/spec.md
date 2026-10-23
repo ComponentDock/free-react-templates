@@ -1,4 +1,4 @@
-# Spec — Shotglow
+# Template: Shotglow (Business)
 
 > Recreation of ColorLib Shotgear
 > (https://colorlib.com/wp/template/shotgear/)

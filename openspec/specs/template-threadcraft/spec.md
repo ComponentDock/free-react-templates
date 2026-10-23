@@ -5,6 +5,8 @@ source: https://colorlib.com/wp/template/fashi/
 preview: https://preview.colorlib.com/theme/fashi/
 ---
 
+# Template: Threadcraft (Ecommerce)
+
 ## Purpose
 
 Threadcraft is a fashion eCommerce landing page template. It recreates the ColorLib Fashi design under a different name, providing a complete storefront with hero promotions, product grids, deal countdown, collection gallery, blog teasers, and footer.

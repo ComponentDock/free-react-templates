@@ -14,7 +14,7 @@ design_tokens:
   dark_mode: 'class-based (dark variant)'
 ---
 
-# Sitecraft — Construction Company Landing Page
+# Template: Sitecraft (Construction Company Landing Page)
 
 ## Purpose
 

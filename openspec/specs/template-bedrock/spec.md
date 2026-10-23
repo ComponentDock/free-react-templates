@@ -1,4 +1,4 @@
-# Template: Bedrock
+# Template: Bedrock (Bootstrap Footers)
 
 Recreation of ColorLib Bootstrap Footer 11 (https://colorlib.com/wp/template/bootstrap-footer-11/)
 

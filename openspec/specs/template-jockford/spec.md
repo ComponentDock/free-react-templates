@@ -1,4 +1,4 @@
-# Spec: Jockford
+# Template: Jockford (Personal)
 
 > Recreation of ColorLib "Jackson" (https://colorlib.com/wp/template/jackson/)
 > Preview: https://preview.colorlib.com/theme/jackson/

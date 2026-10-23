@@ -1,4 +1,4 @@
-# Spec: Courselex
+# Template: Courselex (Directory)
 
 ## Purpose
 

@@ -1,3 +1,5 @@
+# Template: Counsel (Business)
+
 ## Purpose
 
 Counsel is a lawyer and legal firm website template. It recreates the ColorLib Whisper design (https://colorlib.com/wp/template/whisper/) with a professional dark-blue aesthetic, Poppins + Lora fonts, and sections for services, practice areas, attorneys, testimonials, blog, and newsletter.

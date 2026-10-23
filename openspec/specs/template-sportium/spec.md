@@ -5,6 +5,8 @@ template: colorlib-sportsfit
 source: https://preview.colorlib.com/theme/sportsfit/
 ---
 
+# Template: Sportium (Health Fitness)
+
 ## Purpose
 
 Recreation of ColorLib Sportsfit (https://colorlib.com/wp/template/sportsfit/) — a fitness/gym landing page. The new name is "Sportium".

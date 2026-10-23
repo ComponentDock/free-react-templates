@@ -1,4 +1,4 @@
-# Spec: Rivet — Construction Company Template
+# Template: Rivet (Construction Company)
 
 > Recreation of ColorLib "Construct" — https://colorlib.com/wp/template/construct/
 > Preview: https://preview.colorlib.com/theme/construct/

@@ -1,4 +1,4 @@
-# Spec: Medflow — Medical Clinic Landing Template
+# Template: Medflow (Medical Clinic Landing)
 
 Recreation of ColorLib Medi (https://colorlib.com/wp/template/medi/).
 Preview: https://preview.colorlib.com/theme/medi/

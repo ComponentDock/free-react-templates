@@ -1,4 +1,4 @@
-# SignupGlow
+# Template: SignupGlow (Signup Forms)
 
 ## Purpose
 

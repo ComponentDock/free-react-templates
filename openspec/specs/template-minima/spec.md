@@ -1,4 +1,4 @@
-# Spec: Minima
+# Template: Minima (Business)
 
 Recreation of ColorLib "Avo" (https://colorlib.com/wp/template/avo/).
 

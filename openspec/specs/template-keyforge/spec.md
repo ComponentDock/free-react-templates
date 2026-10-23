@@ -1,4 +1,4 @@
-# KeyForge — Locksmith Services Landing Template
+# Template: KeyForge (Locksmith Services Landing)
 
 Recreation of ColorLib "Locksmith" (https://colorlib.com/wp/template/locksmith/)
 

@@ -1,4 +1,4 @@
-# Creed — Church Website Template
+# Template: Creed (Church Website)
 
 > Recreation of ColorLib "Faith 2" (https://colorlib.com/wp/template/faith-2/)
 

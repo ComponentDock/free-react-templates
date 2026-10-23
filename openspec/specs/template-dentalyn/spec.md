@@ -1,4 +1,4 @@
-# Dentalyn — Dental Clinic Landing Template
+# Template: Dentalyn (Dental Clinic Landing)
 
 Recreation of ColorLib **Dento** (https://colorlib.com/wp/template/dento/).
 

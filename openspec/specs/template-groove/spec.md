@@ -1,4 +1,4 @@
-# Groove — Concert Registration Form
+# Template: Groove (Concert Registration Form)
 
 Recreation of ColorLib "Regform 35" (https://colorlib.com/wp/template/colorlib-regform-35/).
 

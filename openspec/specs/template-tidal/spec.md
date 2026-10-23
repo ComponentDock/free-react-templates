@@ -4,7 +4,7 @@ description: Travel agency landing page — recreation of ColorLib "Pacific" (ht
 stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
 ---
 
-# Tidal — Travel Agency Landing Template
+# Template: Tidal (Travel Agency Landing)
 
 **Source:** ColorLib "Pacific" — https://colorlib.com/wp/template/pacific/
 **Preview:** https://preview.colorlib.com/theme/pacific/

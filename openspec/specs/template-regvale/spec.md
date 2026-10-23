@@ -1,4 +1,4 @@
-# Spec: Regvale — Registration Form Template
+# Template: Regvale (Registration Form)
 
 ## Purpose
 

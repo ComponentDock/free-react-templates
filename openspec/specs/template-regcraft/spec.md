@@ -1,4 +1,4 @@
-# Spec: Regcraft
+# Template: Regcraft (Registration Forms)
 
 ## Purpose
 

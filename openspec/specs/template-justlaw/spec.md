@@ -9,6 +9,8 @@ category: Lawyers
 status: in-progress
 ---
 
+# Template: Justlaw (Lawyer)
+
 ## Purpose
 
 Justlaw is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).

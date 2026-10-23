@@ -6,6 +6,8 @@ preview: https://preview.colorlib.com/theme/safario/
 status: draft
 ---
 
+# Template: Expedio (Business)
+
 ## Purpose
 
 Recreation of ColorLib "Safario" — a travel agency landing page with hero, services, about, tour packages, testimonials, search form, blog, and footer sections. The original uses Roboto/Roboto Condensed fonts with a purple (#6059f6) brand color, sharp-cornered buttons, and a clean travel-themed layout.

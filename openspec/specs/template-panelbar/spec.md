@@ -1,3 +1,5 @@
+# Template: Panelbar (Sidebar)
+
 ## Purpose
 
 Recreation of ColorLib Bootstrap Sidebar 04 as a React template named "Panelbar". A fixed left sidebar with a blue brand bar, icon-enhanced navigation links, hamburger toggle, and a clean white content area.

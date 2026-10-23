@@ -1,3 +1,5 @@
+# Template: Forger (Personal)
+
 ## Purpose
 
 Recreate the ColorLib "Niko" freelance developer portfolio template as a React 19 + Vite + Tailwind CSS 4 app named "Forger". The template features a dark navbar, hero with background image, about section with services, skills with progress bars, service columns, CTA banner, project grid, blog cards, contact form, and a dark footer with Component Dock branding.

@@ -1,4 +1,4 @@
-# Confreg
+# Template: Confreg (Registration Forms)
 
 ## Purpose
 

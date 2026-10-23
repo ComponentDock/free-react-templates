@@ -1,4 +1,4 @@
-# Belmont — Hotel Template
+# Template: Belmont (Hotel)
 
 **Recreation of:** ColorLib Samira
 **Source:** https://colorlib.com/wp/template/samira/

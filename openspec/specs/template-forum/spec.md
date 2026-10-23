@@ -7,7 +7,7 @@ template: conference-event
 tags: [conference, event, landing, speakers, pricing, schedule]
 ---
 
-# Forum — Conference Event Landing Template
+# Template: Forum (Conference Event Landing)
 
 ## Purpose
 

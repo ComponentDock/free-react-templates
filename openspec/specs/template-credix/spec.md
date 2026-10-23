@@ -1,4 +1,4 @@
-# Credix — Loan & Credit Company Template
+# Template: Credix (Loan & Credit Company)
 
 ## Purpose
 

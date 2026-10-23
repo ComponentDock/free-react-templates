@@ -6,6 +6,8 @@ preview: https://preview.colorlib.com/theme/stellar/
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript
 ---
 
+# Template: Astra (Business)
+
 ## Purpose
 
 Astra is a creative branding agency landing page with a parallax hero, services and portfolio grids, client logos, stat counters and a contact form. It recreates the ColorLib **Stellar** design (https://colorlib.com/wp/template/stellar/).

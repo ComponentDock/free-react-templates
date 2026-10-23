@@ -1,4 +1,4 @@
-# Spec: Precedent
+# Template: Precedent (Lawyer)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Template: Expo — SEO / Digital Marketing Landing Page
+# Template: Expo (SEO / Digital Marketing Landing Page)
 
 ## Purpose
 

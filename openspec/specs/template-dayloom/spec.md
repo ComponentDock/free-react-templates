@@ -1,4 +1,4 @@
-# Template: Dayloom
+# Template: Dayloom (Bootstrap Calendars)
 
 ## Purpose
 

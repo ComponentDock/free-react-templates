@@ -1,4 +1,4 @@
-# Bespoke — Fashion Boutique Landing Page
+# Template: Bespoke (Fashion Boutique Landing Page)
 
 Recreation of ColorLib "Fashion" (https://colorlib.com/wp/template/fashion/)
 

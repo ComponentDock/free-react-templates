@@ -1,4 +1,4 @@
-# Flavor — Restaurant Website Template
+# Template: Flavor (Restaurant Website)
 
 ## Purpose
 

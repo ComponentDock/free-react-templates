@@ -1,4 +1,4 @@
-# Fitcraft
+# Template: Fitcraft (Health Fitness)
 
 Recreation of ColorLib "GymLife" (https://colorlib.com/wp/template/gymlife/).
 

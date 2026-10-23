@@ -1,4 +1,4 @@
-# Spotly — Travel Services Search Form
+# Template: Spotly (Travel Services Search Form)
 
 Recreation of ColorLib Search 16 (https://colorlib.com/wp/template/colorlib-search-16/)
 

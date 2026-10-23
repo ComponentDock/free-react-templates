@@ -1,4 +1,4 @@
-# Spec: Iron
+# Template: Iron (Health Fitness)
 
 Recreation of ColorLib "Gym" (https://colorlib.com/wp/template/gym/).
 

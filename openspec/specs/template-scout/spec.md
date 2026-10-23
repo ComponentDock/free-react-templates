@@ -1,4 +1,4 @@
-# Scout — Three-Step Feedback Wizard Template
+# Template: Scout (Three-Step Feedback Wizard)
 
 > Recreation of ColorLib Wizard 18 (https://colorlib.com/wp/template/colorlib-wizard-18/)
 > Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-18/index.html

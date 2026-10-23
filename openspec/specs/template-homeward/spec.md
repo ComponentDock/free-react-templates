@@ -1,3 +1,5 @@
+# Template: Homeward (Real Estate)
+
 ## Purpose
 
 Homeward is a real estate landing page with a property-showcase hero, a search bar, a featured listings grid, a map section and testimonials. It recreates the ColorLib **Myhome** design as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.

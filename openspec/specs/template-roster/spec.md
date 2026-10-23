@@ -10,6 +10,8 @@ stack:
   typescript: strict
 ---
 
+# Template: Roster (Directory)
+
 ## Purpose
 
 Roster is a directory listing landing page template that recreates the ColorLib

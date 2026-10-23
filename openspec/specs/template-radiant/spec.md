@@ -1,4 +1,4 @@
-# Spec: Radiant (recreation of ColorLib Quantum)
+# Template: Radiant (Landing Page)
 
 ## Purpose
 

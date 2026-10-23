@@ -4,6 +4,8 @@ description: Newsletter subscription footer template (recreation of ColorLib Boo
 gherkin: true
 ---
 
+# Template: Loom (Bootstrap Footers)
+
 ## Purpose
 
 Loom is a responsive newsletter-subscription footer with a dark background, an email signup form, multi-column navigation and social icons. It recreates the ColorLib **Bootstrap Footer 10** design (https://colorlib.com/wp/template/bootstrap-footer-10/).

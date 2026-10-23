@@ -1,4 +1,4 @@
-# template-fragzone
+# Template: Fragzone (Business)
 
 Recreation of ColorLib "Game Warrior" (https://colorlib.com/wp/template/game-warrior/).
 

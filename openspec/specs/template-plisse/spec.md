@@ -1,4 +1,4 @@
-# Plisse — Interactive Accordion (Bootstrap Accordion #2)
+# Template: Plisse (Bootstrap Accordion #2)
 
 Recreation of ColorLib Accordion 12 (https://colorlib.com/wp/template/accordion-12/)
 

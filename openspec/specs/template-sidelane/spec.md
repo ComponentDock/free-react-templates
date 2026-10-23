@@ -1,4 +1,4 @@
-# Sidelane — Bootstrap Sidebar 05 Recreation
+# Template: Sidelane (Sidebar)
 
 ## Purpose
 

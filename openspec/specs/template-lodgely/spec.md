@@ -1,4 +1,4 @@
-# Lodgely — Luxury Hotel Landing Template
+# Template: Lodgely (Luxury Hotel Landing)
 
 > Recreation of ColorLib "Sogo" (https://colorlib.com/wp/template/sogo/)
 

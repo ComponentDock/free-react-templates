@@ -1,4 +1,4 @@
-# Spec: BtnClick (Bootstrap Buttons 10)
+# Template: BtnClick (Bootstrap Buttons 10)
 
 Recreation of ColorLib "Bootstrap Buttons 10" (`https://colorlib.com/wp/template/bootstrap-buttons-10/`) under the original name **BtnClick**.
 

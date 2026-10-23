@@ -1,4 +1,4 @@
-# Formnet — Contact Form Template
+# Template: Formnet (Contact Form)
 
 ## Purpose
 

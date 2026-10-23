@@ -1,4 +1,4 @@
-# Template: CalDay — Dual Interactive Calendar
+# Template: CalDay (Dual Interactive Calendar)
 
 ## Purpose
 

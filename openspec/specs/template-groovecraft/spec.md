@@ -1,4 +1,4 @@
-# Groovecraft — recreation of ColorLib Onemusic
+# Template: Groovecraft (Music)
 
 ## Purpose
 

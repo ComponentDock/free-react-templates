@@ -1,4 +1,4 @@
-# Spec: Prelude — Coming Soon Page Template
+# Template: Prelude (Coming Soon Page)
 
 > Recreation of ColorLib "01 Comming Soon" (https://colorlib.com/wp/template/01-comming-soon/)
 

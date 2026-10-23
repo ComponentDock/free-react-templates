@@ -1,4 +1,4 @@
-# Queryvane — Search Form Bar Template
+# Template: Queryvane (Search Form Bar)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Spec: Healix
+# Template: Healix (Medical)
 
 Recreation of ColorLib **Medex** (https://colorlib.com/wp/template/medex/)
 

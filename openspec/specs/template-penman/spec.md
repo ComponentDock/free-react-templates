@@ -1,4 +1,4 @@
-# Spec: Penman
+# Template: Penman (Personal)
 
 > Recreation of ColorLib "Author" (https://colorlib.com/wp/template/author/)
 > Preview: https://preview.colorlib.com/theme/author/

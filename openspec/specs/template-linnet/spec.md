@@ -1,4 +1,4 @@
-# Linnet
+# Template: Linnet (Consulting)
 
 ## Purpose
 

@@ -1,4 +1,4 @@
-# Ministry — Church Website Template
+# Template: Ministry (Church Website)
 
 ## Purpose
 

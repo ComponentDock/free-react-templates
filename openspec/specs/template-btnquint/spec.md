@@ -1,4 +1,4 @@
-# Spec: BtnQuint (Bootstrap Buttons 05)
+# Template: BtnQuint (Bootstrap Buttons 05)
 
 Recreation of ColorLib "Bootstrap Buttons V05" (https://colorlib.com/wp/template/bootstrap-buttons-05/).
 

@@ -1,4 +1,4 @@
-# Spec: Calio — Multi-View Calendar Template
+# Template: Calio (Multi-View Calendar)
 
 **Source:** Recreation of ColorLib Calendar V20 (https://colorlib.com/wp/template/calendar-20/)
 **Preview:** https://preview.colorlib.com/theme/bootstrap/calendar-20/

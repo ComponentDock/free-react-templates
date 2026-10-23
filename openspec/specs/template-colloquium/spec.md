@@ -1,4 +1,4 @@
-# Colloquium — Conference & Event Website Template
+# Template: Colloquium (Conference & Event Website)
 
 Recreation of ColorLib Convention (https://colorlib.com/wp/template/convention/)
 

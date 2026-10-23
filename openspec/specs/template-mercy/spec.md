@@ -1,4 +1,4 @@
-# Template: Mercy — Charity & Nonprofit Landing
+# Template: Mercy (Charity & Nonprofit Landing)
 
 Recreation of ColorLib "Unicare"
 (https://colorlib.com/wp/template/unicare/)

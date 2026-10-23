@@ -1,4 +1,4 @@
-# Podwave — Podcast Template
+# Template: Podwave (Podcast)
 
 Recreation of ColorLib "Podca" (https://colorlib.com/wp/template/podca/)
 

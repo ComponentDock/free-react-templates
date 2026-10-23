@@ -1,4 +1,4 @@
-# Lounge — Hotel Landing Template
+# Template: Lounge (Hotel Landing)
 
 Recreation of ColorLib "Cozy" (https://colorlib.com/wp/template/cozy/)
 

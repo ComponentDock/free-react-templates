@@ -1,4 +1,4 @@
-# Vitaflow — Health Coaching Landing Template
+# Template: Vitaflow (Health Coaching Landing)
 
 **Recreation of:** ColorLib "Healthcoach" (https://colorlib.com/wp/template/healthcoach/)
 **Preview:** https://preview.colorlib.com/theme/healthcoach/

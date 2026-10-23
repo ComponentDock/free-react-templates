@@ -1,4 +1,4 @@
-# Spec: Confetti — Digital Conference Template
+# Template: Confetti (Digital Conference)
 
 **Recreation of ColorLib "Eventz"** (https://colorlib.com/wp/template/eventz/)
 

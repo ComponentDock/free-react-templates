@@ -1,4 +1,4 @@
-# Scholar — Online Courses Template
+# Template: Scholar (Online Courses)
 
 > Recreation of the ColorLib "Onedu" design for the free-react-templates monorepo.
 

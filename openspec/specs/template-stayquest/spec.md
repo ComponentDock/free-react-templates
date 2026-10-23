@@ -1,4 +1,4 @@
-# Stayquest — Hotel Search Form Template
+# Template: Stayquest (Hotel Search Form)
 
 Recreation of ColorLib "Colorlib Search 2" (https://colorlib.com/wp/template/colorlib-search-2/).
 

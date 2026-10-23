@@ -1,3 +1,5 @@
+# Template: Overlay (Bootstrap Modals)
+
 ## Purpose
 
 Overlay is a sign-in popup template recreating ColorLib Modal 01. It provides a centered modal dialog with a login form (username, password, remember me, forgot password) triggered by a landing page button. The design uses Poppins font, Bootstrap-inspired blue primary color, and clean white card styling.

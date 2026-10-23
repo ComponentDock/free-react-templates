@@ -1,4 +1,4 @@
-# Grimoire — Sign-Up Wizard Template
+# Template: Grimoire (Sign-Up Wizard)
 
 > Recreation of ColorLib Wizard 16 (https://colorlib.com/wp/template/colorlib-wizard-16/)
 > Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-16/index.html

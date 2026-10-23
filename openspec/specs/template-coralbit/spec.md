@@ -1,4 +1,4 @@
-# Spec: Coralbit — Bootstrap Custom Checkbox Template
+# Template: Coralbit (Bootstrap Custom Checkbox)
 
 Recreation of ColorLib Checkbox 13 (https://colorlib.com/wp/template/checkbox-13/).
 

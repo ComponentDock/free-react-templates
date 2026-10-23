@@ -1,4 +1,4 @@
-# Template: Lineup
+# Template: Lineup (Event)
 
 Recreation of ColorLib "Agenda" (https://colorlib.com/wp/template/agenda/).
 

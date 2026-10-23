@@ -1,4 +1,4 @@
-# CivicPulse — Political/Party Landing Template
+# Template: CivicPulse (Political/Party Landing)
 
 Recreation of ColorLib Politics (https://colorlib.com/wp/template/politics/)
 

@@ -6,6 +6,8 @@ description: >
   Preview: https://preview.colorlib.com/theme/bobsled/
 ---
 
+# Template: Kinetic (Landing Page)
+
 ## Purpose
 
 Kinetic is a free creative agency landing page template that recreates the ColorLib "Bobsled" design under a new name. It features a gradient hero, step-by-step working process, feature cards, portfolio showcase, newsletter signup, and contact form — built with React 19, Tailwind CSS 4, and TypeScript.

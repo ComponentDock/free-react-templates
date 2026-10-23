@@ -1,4 +1,4 @@
-# Reign — Creative Portfolio Template
+# Template: Reign (Creative Portfolio)
 
 Recreation of ColorLib "Monarchy" (https://colorlib.com/wp/template/monarchy/).
 

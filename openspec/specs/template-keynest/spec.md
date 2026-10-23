@@ -1,3 +1,5 @@
+# Template: Keynest (Real Estate)
+
 ## Purpose
 
 Keynest is a free real estate property listing website template that recreates the ColorLib "Rolast" design (https://colorlib.com/wp/template/rolast/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides a property listing landing page with a hero search form, property cards, a feature showcase carousel, a 4-step process section, agent profiles, and a newsletter footer.

@@ -5,6 +5,8 @@ description: >
   ColorLib "Colorlib Wizard 21" (https://colorlib.com/wp/template/colorlib-wizard-21/).
 ---
 
+# Template: Steppr (Bootstrap Wizards)
+
 ## Purpose
 
 Steppr is a multi-step wizard form for account registration with payment details.

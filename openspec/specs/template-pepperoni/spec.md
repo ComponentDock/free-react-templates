@@ -1,4 +1,4 @@
-# Pepperoni — Pizza Restaurant Landing Template
+# Template: Pepperoni (Pizza Restaurant Landing)
 
 ## Purpose
 

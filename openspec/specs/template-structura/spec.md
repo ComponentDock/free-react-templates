@@ -5,7 +5,7 @@ source: https://colorlib.com/wp/template/archirio/
 preview: https://preview.colorlib.com/theme/archirio/
 ---
 
-# Structura — Architecture & Interior Design Template
+# Template: Structura (Architecture & Interior Design)
 
 ## Purpose
 

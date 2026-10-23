@@ -1,4 +1,4 @@
-# spec: Loginspark
+# Template: Loginspark (Login Forms)
 
 ## Purpose
 

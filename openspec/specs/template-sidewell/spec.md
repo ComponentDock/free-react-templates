@@ -1,4 +1,4 @@
-# Spec: Sidewell
+# Template: Sidewell (Sidebar)
 
 Recreation of ColorLib Bootstrap Sidebar 07 (https://colorlib.com/wp/template/bootstrap-sidebar-07/).
 

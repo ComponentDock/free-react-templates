@@ -1,4 +1,4 @@
-# Spec: Pings — Notifications Dropdown
+# Template: Pings (Notifications Dropdown)
 
 > Recreation of ColorLib Dropdown 15 (https://colorlib.com/wp/template/dropdown-15/)
 

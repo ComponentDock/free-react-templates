@@ -1,4 +1,4 @@
-# Carnivor — Steakhouse Landing Template
+# Template: Carnivor (Steakhouse Landing)
 
 Recreation of ColorLib "Steakshop" (https://colorlib.com/wp/template/steakshop/)
 

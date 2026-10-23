@@ -1,4 +1,4 @@
-# Launchpad — Recreation of ColorLib Startup
+# Template: Launchpad (Business)
 
 ## Purpose
 

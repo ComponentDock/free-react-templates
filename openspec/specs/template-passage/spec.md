@@ -1,4 +1,4 @@
-# Template: Passage — Immigration & Visa Consultation
+# Template: Passage (Immigration & Visa Consultation)
 
 Recreation of ColorLib "Immigration" (https://colorlib.com/wp/template/immigration/).
 

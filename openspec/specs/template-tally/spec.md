@@ -1,4 +1,4 @@
-# Tally — Accounting & Business Consulting Template
+# Template: Tally (Accounting & Business Consulting)
 
 Recreation of ColorLib **Accounting** (https://colorlib.com/wp/template/accounting/).
 
