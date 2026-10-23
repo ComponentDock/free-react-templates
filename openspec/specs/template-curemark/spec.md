@@ -13,9 +13,52 @@ https://colorlib.com/wp/template/medart/), built under a DIFFERENT name
 The original is a Bootstrap-based medical website with a hero slider,
 info boxes (opening hours, emergency, appointment form), a 3x3 grid of
 department cards, patient testimonials, blog/news cards, newsletter signup,
-and a multi-column footer. Design tokens: Raleway font, cyan-to-blue
-gradient (#32c8fa → #587de4), body text #404040, accent #18a3eb, section
-backgrounds #f0f4f8 / #f3f3f3 / #eaf1f3.
+and a multi-column footer. Reference-measured design tokens are recorded in
+**Design tokens** below — the cyan→blue gradient is real but written as
+`rgba(50,200,250,1)` → `rgba(88,125,228,1)`, so it is measured from the
+declaration rather than from a hex census.
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Medart** — https://colorlib.com/wp/template/medart/
+- **Preview**: `https://preview.colorlib.com/theme/medart/` — HTTP 200, **34,367 bytes**; the demo page's `<title>` is literally `Hello World` (the template never sets one — that is the reference's own gap, not a prep error).
+- **Stylesheets measured**: `style.css` — **32,077 bytes** (theme layer) + `css/bootstrap.min.css` 21,340 B (Bootstrap 4 subset) and `css/swiper.min.css` 5,697 B; `font-awesome/4.7.0` comes from cdnjs.
+- **Measured how**: hex-literal census per sheet, then the winning rule per selector. **One caveat**: the brand gradient start is written as `rgba(50,200,250,1)`, i.e. `#32c8fa` — a hex census scores it 0, so it is recorded here from the declaration, not the census.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand cyan | `#18a3eb` | 20 | `.button` bottom rule, `.call-btn` pill, icons, swiper bullets, active tab, subscribe banner |
+| Brand gradient | `rgba(50,200,250,1)` `#32c8fa` → `rgba(88,125,228,1)` `#587de4`, `180deg` | — | `.button.gradient-bg` (hero "Read More", appointment submit) |
+| Ink | `#404040` | 26 | `body`, `h1`–`h6`, `.entry-title` |
+| Muted copy | `#828282` | 27 | meta lines, form placeholders, small print |
+| Field band | `#f0f4f8` | 5 | input/textarea background, search field |
+| Card border | `#dde4ea` | 1 | `.appointment-box`, `.opening-hours` — `2px solid`, radius 20 px |
+| Dark band | `#262626` | 4 | footer text/heading accents |
+| Timetable band | `#f3f3f3` | 1 | `.accordion-wrap` rows |
+| Active tab | `#eaf1f3` | 1 | `ul.tabs-nav .tab-nav.active` |
+| Surface | `#fff` | 39 | page + card surfaces |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `'Raleway', sans-serif`, 16 px / 1.8, `#404040` | `body` (`@import` Raleway 200–700) |
+| Hero H1 | 60 px / 600 / `#404040` | `.hero-content-overlay h1` |
+| Section H2 | 48 px / 600 / `#404040`, `margin-bottom: 48px` | `.quality-services h2`, `.testimonial-section h2` |
+| Card title | 24 px / 700 / `#404040` | `.icon-box .entry-title` |
+| Buttons | 16 px / 600 | `.button` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Hero | light background (`#fff`/`#f0f4f8` wash) with a large **curved cyan swoosh graphic** and a cut-out photo on the right — **no scrim** (`.hero-content-overlay { background: rgba(0,0,0,0) }`), dark 60 px heading on the left, 01/02/03 slide index with the active number in cyan |
+| Buttons | `.button` `padding: 12px 50px 10px`, **radius 20 px**, `border-bottom: 3px solid #18a3eb`; `.gradient-bg` swaps it for the 180° cyan→blue gradient; `.call-btn` is the 210 px-wide phone pill in the nav |
+| Cards | `20 px` radius with a `2px solid #dde4ea` border that breaks behind the legend ("Opening Hours", "Emergency", "Make an Appointment") |
+| Section rhythm | `section { padding: 100px 0; margin-top: 100px }`; `margin-bottom: 80px` under testimonial headings |
+| Bands | white nav → light hero with swoosh → white info-card row on `#f0f4f8` fields → white departments grid → `#f3f3f3`/photo testimonial → white blog cards → cyan subscribe banner → `#262626` footer |
 
 ## Requirements
 

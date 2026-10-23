@@ -106,3 +106,26 @@ The system SHALL render a three-column footer with: 1. Left: site logo + descrip
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/scoop/public/CNAME` = `scoop.free.componentdock.com`
   and the package `homepage` = `https://scoop.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/force/` (HTTP 200, 43,569 B,
+title `Force Magazine`) and `css/style.css` (53,982 B) + `css/responsive.css`
+(9,362 B); Bootstrap 3/4, jQuery-UI, animate and owl sheets are vendor code.
+
+| Token | Reference | App (`apps/scoop`) |
+| ----- | --------- | ------------------ |
+| Action pink | `#ff1857` (39: top-menu button, 3px left rules, active dot, hover, `.submit_btn`) | `--color-brand: #ff1857` ✓ |
+| Gold | `#f8b600` (19: `.genric-btn.primary`, tags, link accents) | **missing** from `@theme` |
+| Ink | `#222222` (28, Roboto 500 headings/nav) | `--color-heading` ✓ |
+| Body copy | `#777777` (12, Open Sans 14/24) | `--color-body` ✓ |
+| Off-white band | `#f9f9ff` (20: `.top_menu` strip, card band) | `--color-section-bg` ✓ |
+| Footer | `#04091e` (1: `.footer-area` — **not** a hero overlay) | `--color-footer-bg` ✓ |
+| Secondary blues | `#38a4ff` (10) / `#4cd3e3` (11) | — |
+| Type | Open Sans body / Roboto headings | `--font-sans` / `--font-heading` ✓ |
+| Hero | `.home_banner_area` 600px photo, centred 480px copy, 36px/700 white title | — |
+| Radius | 3px buttons, 8px cards, 20px video pill | — |
+
+Section order measured: pink date strip → white logo/ad row → white menu →
+photo hero (pink category pill, white headline) → "Editor's Choice" grid →
+list bands on `#f9f9ff` → navy footer.

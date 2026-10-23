@@ -67,3 +67,25 @@ The page footer SHALL link to Component Dock.
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/loginbolt/public/CNAME` = `loginbolt.free.componentdock.com`
   and the package `homepage` = `https://loginbolt.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+The form templates were never published on the `preview.colorlib.com/theme/`
+host. The live demo is `https://colorlib.com/etc/lf/Login_v17/index.html`
+(HTTP 200, 1,763 B, title `Login V17`) with one sheet,
+`css/style.css?v=93221552` (11,098 B, no framework).
+
+| Token | Reference | App (`apps/loginbolt`) |
+| ----- | --------- | --------------------- |
+| Action green | `#00ad5f` (4: button fill, forgot link, sign-up link) | `--color-brand: #00ad5f` ✓ |
+| Button hover | `#333333` | `--color-brand-hover: #333333` ✓ |
+| Field border | `#e6e6e6`, square (no radius) | `--color-input-border: #e6e6e6` ✓ |
+| Input text | `#666666` 18px | `--color-text-body` ✓ |
+| Title | `#555555`, 20px, uppercase, `letter-spacing: 2px` | `--color-text-title` ✓ |
+| Helper/placeholder | `#999999` (9) | `--color-input-placeholder` ✓ |
+| Error | `#c80000` | `--color-error` ✓ |
+| Type | Poppins-Regular body, **Montserrat-Bold 12px** button | `--font-poppins` / `--font-montserrat` ✓ |
+| Shape | 1170px white card, `row-reverse` → form right / photo left, 50px button, radius 3px | — |
+
+Section order measured: full-viewport centred card → form half (title → user
+name → password → SIGN IN → forgot link → SIGN UP) → photo half (`bg-01.jpg`).

@@ -96,3 +96,26 @@ The system SHALL render a dark footer with the site logo, navigation links, soci
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/justly/public/CNAME` = `justly.free.componentdock.com`
   and the package `homepage` = `https://justly.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/zacson/` (HTTP 200, 37,905 B,
+title `Zacson | Personal Trainer and Gym Coaching`) and its single theme sheet
+`assets/css/style.min.css?v=3.0.4` (216,977 B; Bootstrap 5.3 variable layer
+inlined). The demo is a **3.0.4 rebuild** — `?v=3.0.4` on every asset.
+
+| Token | Reference | App (`apps/justly`) |
+| ----- | --------- | ------------------- |
+| Action red | `#e00000` (10: `.boxed-btn` label + hover fill, price block, blog date chip) | `--color-brand: #ff0000` |
+| Kit nav accent | `#FF0000` (`--kit-nav-accent` only) | matches the app brand, i.e. the app colour is the *nav* accent |
+| Heading ink | `#2c234d` (3, Oswald 500) | heading is white-on-dark throughout |
+| Off-white band | `#f9f9ff` (27) | — |
+| Black bands | `#000` (31: `.black-bg`, footer) | `--color-surface: #000000` ✓ |
+| Type | Oswald headings / Roboto Condensed body | same pair ✓ |
+| Hero H1 | 140px / 700 / uppercase / #fff, 900px slider | — |
+| Radius | 3px kit, 8px cards | mixed |
+
+Section order measured: transparent nav over photo hero → `.traning-categories`
+black band (2 cards) → `.team-area` "What I Offer" → `.pricing-area` "Pricing"
+(3 plans on `#f9f9ff` cards) → `.about-area2` "About Me" → `.home-blog-area`
+"From Blog" (2 posts) → `.services-area` Location/Phone/Email → black footer.

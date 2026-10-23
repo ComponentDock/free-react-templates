@@ -4,18 +4,54 @@
 
 A Fitness Trainer template with hero, training categories, services, gallery, pricing and about sections. Justly is a single-page fitness trainer landing template — a React recreation of the ColorLib free "Zacson" template (preview: https://preview.colorlib.com/theme/zacson/ — gym trainer personal site), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original (see docs/replication.md):
+Reference-measured design tokens are recorded in **Design tokens** below —
+re-measured 2026-10-23 from the live preview's own stylesheet, not carried over
+from memory (see `docs/replication.md`).
 
-- Brand red `#FF0000` (primary accent — buttons, highlights)
-- Dark background `#000` (hero, footer, training categories)
-- Heading font: Oswald (Google Fonts)
-- Body font: Roboto Condensed (Google Fonts)
-- Outline/border buttons with uppercase text and wide letter-spacing
-- White text on dark backgrounds
 - Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Justly lives in `apps/justly` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Zacson** — https://colorlib.com/wp/template/zacson/
+- **Preview**: `https://preview.colorlib.com/theme/zacson/` — HTTP 200, **37,905 bytes**, title `Zacson | Personal Trainer and Gym Coaching`; a **3.0.4 rebuild** (`?v=3.0.4` on every asset, Bootstrap 5.3 variable layer inlined in the theme sheet).
+- **Stylesheet measured**: `assets/css/style.min.css?v=3.0.4` — **216,977 bytes** (theme + inlined Bootstrap + self-hosted `@font-face` weights); `vendor/fontawesome/7.3.1/css/fontawesome.subset.css?v=3.0.4` — 1,737 B, icons only.
+- **Measured how**: hex-literal census per sheet (count = occurrences in that sheet), then the winning rule per selector. Bootstrap's variable layer is inlined here (`#007bff`×17, `#dc3545`×16, `#198754`×16, `#ffc107`×14, `#0dcaf0`×14, `#212529`×18, `#6c757d`×17, `#f8f9fa`×16) but paints nothing after the theme layer — it is **not** a token set.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action red | `#e00000` | 10 | `.boxed-btn` label + hover fill, `.pricing-area` price block, `.blog_item_date` chip |
+| Nav accent (kit var) | `#FF0000` | 2 | `--kit-nav-accent` (active nav/menu accent only) |
+| Heading ink | `#2c234d` | 3 | `h1`–`h6` (Oswald 500) |
+| Off-white band | `#f9f9ff` | 27 | alternating section band, kit form fields |
+| Ink black | `#000` | 31 | `.black-bg` — training-categories band, `.footer-area` |
+| Kit primary navy | `#1f2b7b` | 15 | shared UI-kit `.genric-btn.primary`, contact headings |
+| On-dark text | `#fff` | 120 | hero H1, `.boxed-btn` label, footer copy |
+| Body copy | `#767676` | 17 | paragraphs on light bands |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `Roboto Condensed, sans-serif`, 16 px | theme layer (`--kit-*` block sets `font-family:Roboto Condensed`) |
+| Headings | `Oswald, sans-serif`, 500, `#2c234d` | `h1`–`h6` theme rule |
+| Hero H1 | 140 px / **700** / uppercase / `#fff`; 70 px then 50 px at breakpoints | `.hero__caption h1` |
+| Nav | `Roboto Condensed`, 15 px | `--kit-nav-font-size: 15px` |
+| Buttons | `Oswald`, 14 px, `letter-spacing: 3px`, uppercase | `.boxed-btn` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Section rhythm | `.section-padding` **120 px** top/bottom; `.section-padding30` 100 px (65/70 px under 768 px) |
+| Hero | `.slider-area` full-bleed cover photo, `.slider-height` **900 px** (800/650/600/400 px across breakpoints); nav transparent over the photo, H1 lower-left |
+| Buttons | `.boxed-btn` `padding: 18px 44px`, `1px solid #e00000`, white fill + `#e00000` label, hover flips to `#e00000` fill + white label; `.large-width` 220 px |
+| Radius | **3 px** on kit inputs/buttons, **8 px** on cards; section bands square |
+| Bands | photo hero → `#000` categories band → white offers → white pricing on `#f9f9ff` cards → white about → white blog → `#000` footer |
 
 ## Requirements
 

@@ -87,3 +87,26 @@ Spread SHALL render a footer with About section, Quick Links, Categories, Newsle
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/spread/public/CNAME` = `spread.free.componentdock.com`
   and the package `homepage` = `https://spread.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/mag/` (HTTP 200, 75,309 B, title
+`Mag - Video & Magazine HTML Template`) and its **single** sheet `style.css`
+(72,734 B) — no Bootstrap is loaded at all.
+
+| Token | Reference | App (`apps/spread`) |
+| ----- | --------- | ------------------- |
+| Brand pink | `#ed3974` (55: `.mag-btn`, 4px section rules, hover, spinner) | `--color-brand: #ed3974` ✓ |
+| Heading ink | `#1a1a1a` (7, Poppins 500) | `--color-heading: #111111` (close, not the literal) |
+| Body copy | `#777777` (19) | `--color-body: #3d3d3d` (that literal is a single card border) |
+| Page band | `#f2f4f5` (7) | `--color-section-bg` ✓ |
+| Footer | `#111111` (1: `.footer-area`) | `--color-footer-bg: #252324` (**not in the sheet**) |
+| Nav | **white** 70px bar | `--color-nav-bg: #1a1a1a` (**wrong**: `#1a1a1a` is heading ink) |
+| Gold | `#bb8950` (2: share/twitter hover only) | `--color-gold` (promoted, unsupported) |
+| Hairlines | `#ebebeb` (13) | — |
+| Type | Poppins everywhere, 14px body | `--font-sans: Poppins` ✓ |
+| Radius | 3px `.mag-btn`, 4px hero arrows, 2px inputs, 15px play badge | — |
+
+Section order measured: white nav (wordmark / uppercase menu / search / pink
+SUBMIT VIDEO) → full-bleed photo slider → 3-column body (MOST POPULAR list,
+TRENDING NOW cards, social widget stack) → `#111111` footer.

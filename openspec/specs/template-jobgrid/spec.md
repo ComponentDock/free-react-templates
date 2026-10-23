@@ -10,8 +10,50 @@ Tailwind CSS 4 + TypeScript.
 
 The original is a Bootstrap-based job board landing with a dark hero area,
 search form, partner logos, category cards, stats section, job listings,
-testimonial carousel, and dark footer. Design tokens extracted from the
-preview stylesheet: brand blue `#367FFF`, dark navy `#1D2547`, Raleway font.
+testimonial carousel, and dark footer. Reference-measured design tokens are
+recorded in **Design tokens** below (re-measured 2026-10-23 from the preview
+stylesheet).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Jobhub** — https://colorlib.com/wp/template/jobhub/
+- **Preview**: `https://preview.colorlib.com/theme/jobhub/` — HTTP 200, **37,437 bytes**, title `Job board | Template`; original 1.x build (no `?v=` asset markers, no rebuild banner).
+- **Stylesheet measured**: `assets/css/style.css` — **240,058 bytes** (SCSS-compiled theme layer with its comments intact; no Bootstrap inside it — the framework is a separate vendored sheet) plus 13 vendored sheets (`bootstrap.min.css` 30,865 B, `gijgo.css` 55,521 B, `animate.min.css` 34,336 B, `slicknav.css`, `nice-select.css`, …) which are framework code, not design tokens.
+- **Measured how**: hex-literal census per sheet, then the winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action blue | `#367FFF` | 40 | `.boxed-btn` label + `:hover` fill, `.box` fill, primary links |
+| Hero/CTA green | `#11E276` | 7 | `.btn::before` hover fill, search submit icon, `.popular-search` tags, stat numbers |
+| Heading ink | `#1D2547` | 10 | `h1`–`h6` (Raleway 400) |
+| Off-white band | `#f9f9ff` | 27 | alternating section band, search inputs |
+| Hairline lilac | `#f0e9ff` | 12 | input borders, `.top-jobs` card hairlines |
+| Muted copy | `#999999` | 10 | meta lines, placeholders |
+| Kit primary navy | `#1f2b7b` | 20 | shared UI-kit block (also present in Zacson / Thelawyer) — not the theme accent |
+| Secondary pink | `#ff3368` | 7 | `.about-area` accent, category labels |
+| Deepline blue | `#4463FF` | 1 | `.job-p` card panel |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Muli", sans-serif`, 16 px | `body` |
+| Headings | `"Raleway", sans-serif`, 400, `#1D2547` | `h1`–`h6` |
+| Hero H1 | 46 px / 600 / `#fff`, then 60 px ≥992 px | `.slider-area .hero__caption h1` |
+| Buttons | `"Raleway"`, 14 px, uppercase, wide tracking | `.boxed-btn` |
+| Fonts loaded | `Muli` 300–800 + `Raleway` 400–900 (Google Fonts `@import` inside the theme sheet) | sheet head |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Hero | `.slider-area` full-bleed cover photo inside a white rounded card (top corners **10 px**), white search bar with 4-category select + green search icon |
+| Buttons | `.boxed-btn` `padding: 18px 44px`, white fill + `#367FFF` label, `1px solid #367FFF`, hover fills `#367FFF` |
+| Radius | **10 px** card top corners, **5 px** job cards/tags, **30 px** on the search pill/inputs, **50%** avatars |
+| Section rhythm | `.section-padding40` 40 px; `.about-area` 100 px; `.top-jobs` 0/40 px |
+| Bands | photo hero → white "Browse from over 2000+ jobs" → white stats/about → white top jobs → `bg`-photo "Post a job / Browse for job" → testimonial on photo → green-accent CTA → `#fff`-on-`#1D2547` footer |
 
 ## Requirements
 

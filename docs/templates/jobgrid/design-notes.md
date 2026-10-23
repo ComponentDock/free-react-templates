@@ -90,3 +90,26 @@ The page SHALL display a dark footer with: logo + description + social links, "T
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/jobgrid/public/CNAME` = `jobgrid.free.componentdock.com`
   and the package `homepage` = `https://jobgrid.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/jobhub/` (HTTP 200, 37,437 B,
+title `Job board | Template`) and its theme sheet `assets/css/style.css`
+(240,058 B, SCSS comments intact — Bootstrap 4 is a separate vendored sheet).
+
+| Token | Reference | App (`apps/jobgrid`) |
+| ----- | --------- | ------------------- |
+| Action blue | `#367FFF` (40: `.boxed-btn` label, hover fill) | `--color-brand: #367fff` ✓ |
+| CTA green | `#11E276` (7: `.btn::before` hover fill, search icon, popular tags, stat numbers) | **missing** from `@theme` |
+| Heading ink | `#1D2547` (10, Raleway 400) | `--color-brand-dark`, `--color-bg-dark` ✓ |
+| Off-white band | `#f9f9ff` (27) | `--color-bg-gray: #f1f5f9` (cooler, not the reference) |
+| Muted copy | `#999999` (10) | `--color-text-muted: #6d6e8d` (darker, cooler) |
+| Hairline | `#f0e9ff` (12) | — |
+| Type | **Muli body 16px**, Raleway headings | one `--font-sans: Raleway` for both |
+| Hero H1 | 46px / 600 / #fff → 60px ≥992px | — |
+| Radius | 10px card tops, 5px tags, 30px search pill, 50% avatars | — |
+
+Section order measured: white nav + "Post a Job" → photo hero in a rounded white
+card with 4-category search → "Browse from over 2000+ jobs" (6 cards) → stats
+"Want to hire perfect person?" → "Browse top jobs" (6 cards) → photo band
+"Post a job / Browse for job" → testimonial slider → CTA band → dark footer.

@@ -5,10 +5,50 @@
 A Login Form template with form title, input fields, sign in button, forgot password and sign up and form validation sections. Recreation of ColorLib **Login Form V17** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v17/
-- **Preview URL:** https://preview.colorlib.com/theme/login-form-v17/ (unreachable at prep time — 404; design tokens extracted from downloaded source zip)
+- **Preview URL:** https://colorlib.com/etc/lf/Login_v17/index.html — **HTTP 200, 1,763 bytes** (re-verified 2026-10-23). The form templates were never published under `preview.colorlib.com/theme/<slug>/`: that path 404s, `colorlib.com/etc/login-form-v17/` and `colorlib.com/etc/lf/login-form-v17/` 404 too, and the wp template page's `downloads/free/login-form-v17.zip` link is dead. `/etc/lf/Login_v17/index.html` is the canonical live demo and the only reference with a stylesheet.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v17.jpg
 - **New name:** `loginbolt` (app folder `apps/loginbolt`, package `@free-react-templates/loginbolt`)
 - **Deploy URL:** https://loginbolt.free.componentdock.com
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Login Form V17** — https://colorlib.com/wp/template/login-form-v17/
+- **Preview**: `https://colorlib.com/etc/lf/Login_v17/index.html` — HTTP 200, **1,763 bytes**, title `Login V17`. Not on the `preview.colorlib.com/theme/` host (see Purpose).
+- **Stylesheet measured**: `css/style.css?v=93221552` — **11,098 bytes**, one standalone sheet, no Bootstrap (`body` here is a normalised `-apple-system` stack; the theme only styles the form widgets).
+- **Measured how**: hex-literal census of the single sheet, then the winning rule per selector. Fonts are declared as `@font-face` families (`Poppins-Regular`, `Montserrat-Bold`) — self-hosted, no Google Fonts link.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action green | `#00ad5f` | 4 | `.login100-form-btn` fill, `.txt2` (forgot-password link), `.txt3` (sign-up link) |
+| Button hover | `#333333` | 2 | `.login100-form-btn:hover` fill |
+| Title ink | `#555555` | — | `.login100-form-title` (20 px, uppercase, `letter-spacing: 2px`) |
+| Input text | `#666666` | 2 | `.input100` (18 px) |
+| Helper text | `#999999` | 9 | `.txt1`, placeholders |
+| Field border | `#e6e6e6` | 2 | `.wrap-input100` `1px solid` |
+| Validation error | `#c80000` | 3 | `.alert-validate` tooltip + pointer |
+| Card surface | `#fff` | — | `.wrap-login100` 1170 px panel |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body / inputs | `Poppins-Regular`, 18 px in fields, 13 px helper | `.input100`, `.txt1` |
+| Title | `Poppins-Regular` **20 px**, uppercase, `letter-spacing: 2px` | `.login100-form-title` |
+| Button | `Montserrat-Bold` **12 px**, uppercase, `letter-spacing: 1px` | `.login100-form-btn` |
+| Sign-up link | `Poppins-Regular` 15 px uppercase | `.txt3` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Layout | `.container-login100` `min-height: 100vh`, centred, `padding: 15px`; `.wrap-login100` **1170 px** white card, `flex-direction: row-reverse` → **form on the right, photo panel on the left** |
+| Photo panel | `.login100-more` 50% width, `background-size: cover`, inline `url('images/bg-01.jpg')` on the demo page (not in the sheet) |
+| Fields | `.wrap-input100` square (`border: 1px solid #e6e6e6`, no radius), transparent input, `padding: 0 25px`; the two fields sit side-by-side (`rs1` / `rs2`) with `m-b-20` |
+| Button | full width, **height 50 px**, `border-radius: 3px`, `padding: 0 20px`, `transition: all .4s` |
+| Rhythm | vertical stack inside the form: title (`p-b-34`) → user name → password → button → "Forgot / User name–password?" (`p-t-27 p-b-239`) → "Sign Up" |
+| Bands | single-screen: light page → white card, form half white, photo half image — no dark bands |
 
 ## Requirements
 

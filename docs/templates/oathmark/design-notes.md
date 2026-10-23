@@ -84,3 +84,26 @@ apps/oathmark/
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/oathmark/public/CNAME` = `oathmark.free.componentdock.com`
   and the package `homepage` = `https://oathmark.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/notary/` (HTTP 200, 31,181 B,
+title `Notary — Free Website Template by Colorlib`) — theme layer
+`css/style.css` (18,248 B) plus its **compiled** `css/bootstrap.min.css`
+(34,158 B, Bootstrap 4.3.1), which is where the button colour lives.
+
+| Token | Reference | App (`apps/oathmark`) |
+| ----- | --------- | --------------------- |
+| Brand / CTA | `#fee2b3` peach (15: `.site-navbar` band, `.btn-primary` fill, active menu, form focus) | `--color-accent: #fee2b3` — present but secondary |
+| Primary in app | — | `--color-brand: #71bc42` — the reference green appears **once**, as `.ul-check.success li:before` (a list tick) |
+| CTA hover | `#fed48d` / border `#fdcf81` / ring `rgba(221,198,158,0.5)` | — |
+| Ink | `#364d59` (body 300, Playfair headings 300) | `--color-hero-overlay: #364d59` — it is text, not an overlay |
+| Hero scrim | `rgba(0,0,0,0.2)` | — |
+| Light band | `#f8f9fa` (5) | `--color-bg-light: #f8f9fa` ✓ |
+| Type | Playfair Display headings / Roboto body | same pair ✓ |
+| Hero H1 | 50px, `<strong>` 900, white via bootstrap `.text-white !important` | — |
+| Radius | `.btn` 0.25rem, accordion 4px, circles 50% — **no pills** | pill buttons |
+
+Section order measured: peach absolute navbar → 100vh photo hero + white
+appointment card → practicing/area cards → testimonial band → accordion →
+photo footer.

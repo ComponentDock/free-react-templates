@@ -173,3 +173,26 @@ The brand gradient flows from **cyan (#32c8fa)** on the left to
 5. Alt text on all images for accessibility.
 6. The Component Dock link in the footer must point to
    `https://www.componentdock.com/` with display text "Component Dock".
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/medart/` (HTTP 200, 34,367 B — the
+demo's own `<title>` is `Hello World`) and `style.css` (32,077 B) + Bootstrap 4
+subset (21,340 B) + swiper (5,697 B).
+
+| Token | Reference | App (`apps/curemark`) |
+| ----- | --------- | --------------------- |
+| Brand cyan | `#18a3eb` (20: button rule, phone pill, icons, bullets) | `--color-brand-accent` ✓ |
+| Gradient | `rgba(50,200,250,1)` `#32c8fa` → `rgba(88,125,228,1)` `#587de4`, 180° | `--color-brand-cyan` / `--color-brand-blue` ✓ |
+| Ink | `#404040` (26, Raleway 16/1.8; H1 60/600; H2 48/600) | `--color-body` ✓ |
+| Muted | `#828282` (27) | `--color-body-light: #757686` (close, not literal) |
+| Field band | `#f0f4f8` (5) | `--color-section-info` ✓ |
+| Bands | `#f3f3f3` accordion, `#eaf1f3` active tab, `#262626` footer | ✓ / ✓ / — |
+| Card border | `#dde4ea` `2px`, radius 20px | — |
+| Type | Raleway only (200–700) | `--font-family-heading: Raleway` ✓ |
+| Hero | light background + cyan swoosh graphic, **no scrim**, 01/02/03 index | — |
+| Buttons | 20px radius, `border-bottom: 3px #18a3eb`, `.gradient-bg` variant | — |
+
+Section order measured: white nav + cyan phone pill → swoosh hero → opening
+hours / emergency / appointment cards → departments grid → facilities →
+testimonials on photo → blog cards → cyan subscribe banner → `#262626` footer.

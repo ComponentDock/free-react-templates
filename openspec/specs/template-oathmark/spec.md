@@ -4,15 +4,54 @@
 
 A Legal / Notary Services template with hero, practice areas, about and legal solutions sections. Oathmark is a single-page legal/notary services template — a React recreation of the ColorLib free "Notary" template (preview: https://preview.colorlib.com/theme/notary/ — legal/notary landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original:
+Reference-measured design tokens are recorded in **Design tokens** below —
+re-measured 2026-10-23 from the preview's `style.css` + its compiled
+Bootstrap sheet (see `docs/replication.md`). The peach `#fee2b3`, not a green,
+is the brand/CTA colour.
 
-- Brand green `#71bc42` (CTA buttons, accents), dark hero overlay `#364d59`
-- Typeface: Playfair Display (headings) + Roboto (body) via Google Fonts
-- Pill-shaped buttons, light section backgrounds `#f8f9fa`, peach accent `#fee2b3`
 - Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Oathmark lives in `apps/oathmark` and uses shared components from `packages/ui`
 (cn).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Notary** — https://colorlib.com/wp/template/notary/
+- **Preview**: `https://preview.colorlib.com/theme/notary/` — HTTP 200, **31,181 bytes**, title `Notary — Free Website Template by Colorlib`; original build (Bootstrap **4.3.1** with the theme's own compiled `bootstrap.min.css`).
+- **Stylesheets measured**: `css/style.css` — **18,248 bytes** (the whole theme layer) and `css/bootstrap.min.css` — **34,158 bytes** (Bootstrap 4.3.1 with the theme's palette compiled in — this is where the button colour lives, not in `style.css`). Icons only: `fonts/icomoon/style.css` (79,820 B), `fonts/flaticon/font/flaticon.css`, `css/aos.css`, `css/fancybox`, `owl` sheets.
+- **Measured how**: hex-literal census per sheet, then the winning rule per selector; the button rule was traced into the Bootstrap sheet because `.btn.btn-primary` is only given padding in the theme layer.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Peach brand | `#fee2b3` | 15 | `.site-navbar` band, `.btn-primary` fill, `.site-navbar .site-menu .active`, form-control focus border, dropdown active bg |
+| Peach hover | `#fed48d` | 3 | `.btn-primary:hover` fill (border `#fdcf81`, focus ring `rgba(221,198,158,0.5)`) |
+| Body / heading ink | `#364d59` | 2 | `body` (300), `h1`–`h6` (Playfair Display 300) |
+| Light band | `#f8f9fa` | 5 | dropdown hover rows, mobile accordion hover |
+| Hairline | `#ced4da` | 3 | dropdown/menu dividers |
+| Form border | `#efefef` | 1 | `.custom-accordion .btn-link` border |
+| Green tick | `#71bc42` | 1 | `.ul-check.success li:before` **only** — a list tick, not a brand/CTA colour |
+| On-dark text | `#fff` | 20 | hero H1 (via `.text-white`), footer copy |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Roboto"`, 1 rem / 300 / `#364d59`, line-height 1.7 | `body` |
+| Headings | `'Playfair Display'`, 300, `#364d59` | `h1`–`h6` |
+| Hero H1 | 50 px, Playfair Display, **`<strong>` at 900**, rendered **white** — the markup is `<h1 class="text-white">` and Bootstrap's `.text-white !important` beats the theme's `#000` | `.hero .intro h1` + page markup |
+| Buttons | Bootstrap `.btn` 1 rem, `padding: 12px 25px`, `border-radius: .25rem` | `.btn.btn-primary` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Nav | `.site-navbar` **absolute at the top**, `background: #fee2b3`, `padding: 3rem 0` on desktop, logo `1.7rem` black, links `rgba(0,0,0,0.7)`; sticky state flips to `#fff` + `box-shadow: 4px 0 20px -5px rgba(0,0,0,0.2)` |
+| Hero | `.hero` `100vh`, `min-height: 770px`, cover photo `images/hero_bg_1.jpg`, `.overlay:before` scrim `rgba(0,0,0,0.2)`, 5/7 split with a white appointment card on the right |
+| Sections | `.site-section` `padding: 5em 0` (2.5em under 992 px); footer `8em 0` on a cover photo with `rgba(255,255,255,0.1)` top rule |
+| Radius | `50%` on social/icon circles, `4px` on accordion `.btn-link`, Bootstrap's `0.25rem` elsewhere — **no pill buttons** in the reference |
+| Bands | peach nav → photo hero → white practicing sections with peach icons → photo testimonial band → white accordion/CTA → photo footer |
 
 ## Requirements
 

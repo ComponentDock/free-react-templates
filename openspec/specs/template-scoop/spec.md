@@ -10,24 +10,60 @@ Tailwind CSS 4 + TypeScript.
 **Source mapping:** `apps/scoop` recreates
 `https://colorlib.com/wp/template/force/`.
 
-Design tokens captured from the original (see docs/replication.md):
+Reference-measured design tokens are recorded in **Design tokens** below —
+re-measured 2026-10-23 from `css/style.css` (see `docs/replication.md`). Note
+the navy `#04091e` paints the **footer**, not a hero overlay (the hero is a
+photo with white copy over it), and the gold is a tag/secondary accent.
 
-- Brand hot pink `#ff1857` (primary accent, buttons, submit buttons, hover
-  states), gold `#f8b600` (category tag badges `.gad_btn`)
-- Dark navy `#04091e` (banner background overlay)
-- Light background tint `#f9f9ff` (used as section background)
-- Text primary: `#222222`, muted: `#777777`
-- Typeface: Open Sans (Google Fonts via `<link>`)
-- Secondary font: Roboto
-- `.gad_btn`: category tag pill button (gold/yellow background)
-- `.submit_btn`: `#ff1857` bg, transparent on hover with `#ff1857` border
-- `.bbtns`: subscribe button in newsletter sidebar
-- Section padding: `p_100` / `p_120` (100-120px top/bottom)
+- `.gad_btn`: category tag pill (gold `#f8b600` background)
+- `.submit_btn`: `#ff1857` bg, transparent on hover with a `#ff1857` border
+- `.bbtns`: subscribe button in the newsletter sidebar
+- Section padding: `p_100` / `p_120` (100–120 px top/bottom)
 - Bootstrap-style grid (migrate to Tailwind flex/grid)
 - Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Scoop lives in `apps/scoop` and uses shared components from `packages/ui`
 (Button, cn).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Force** — https://colorlib.com/wp/template/force/
+- **Preview**: `https://preview.colorlib.com/theme/force/` — HTTP 200, **43,569 bytes**, title `Force Magazine`; original build.
+- **Stylesheets measured**: `css/style.css` — **53,982 bytes** (theme layer) + `css/responsive.css` 9,362 B; `css/bootstrap.css` 30,882 B, `vendors/jquery-ui/jquery-ui.css` 35,973 B, `vendors/animate-css/animate.css` 72,259 B, `vendors/linericon/style.css`, `owl.carousel`, `lightbox`, `nice-select` are framework/vendor code.
+- **Measured how**: hex-literal census per sheet, then the winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action pink | `#ff1857` | 39 | `.top_menu` buy button, `.main_title2` 3 px left rule, `.carousel-indicators li.active`, nav/link hover, `.submit_btn` |
+| Gold accent | `#f8b600` | 19 | `.genric-btn.primary`, category/tag labels, inline link accents |
+| Ink | `#222222` | 28 | headings (Roboto 500), nav labels |
+| Body copy | `#777777` | 12 | `body` (Open Sans 14/24), `.main_title2 h2` ink is `#222222` |
+| Off-white band | `#f9f9ff` | 20 | `.top_menu` strip, alternating card band |
+| Footer navy | `#04091e` | 1 | `.footer-area` background |
+| Hairline | `#eeeeee` | 8 | `.news_d_footer` rules, card separators |
+| Secondary blues | `#38a4ff` / `#4cd3e3` | 10 / 11 | icon tiles, hover fills |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Open Sans", sans-serif`, 14 px / 24 px, `#777777` | `body` |
+| Headings | `"Roboto", sans-serif`, 500 | `h1`–`h6` |
+| Hero title | 36 px / 700 / `#fff` | `.home_banner_area .banner_content h3` |
+| Nav | Roboto, 12 px, uppercase, 60 px line-height | `.main_menu .navbar-nav .nav-link` |
+| Buttons | `.genric-btn` uppercase, 3 px radius | `.genric-btn.primary` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Header | `.header_area` **absolute** over the hero (`z-index: 3`), `.top_menu` pink strip on `#f9f9ff`, white `.main_menu` bar, 90 px ad slot next to the wordmark |
+| Hero | `.home_banner_area` `min-height: 600px`, `.banner_inner` cover photo `img/banner/home-banner.jpg`, centred `.banner_content` (max-width 480 px) in white, pink category pill above the title |
+| Sections | `p_100` / `p_120` helpers (100–120 px), `.banner_area` 350 px inner-page photo banner with `.overlay` |
+| Radius | **3 px** on `.genric-btn`, **8 px** on cards, **50%** avatars/social, `20px` on the video pill |
+| Bands | pink top strip → white nav → photo hero with centred copy → white "Editor's Choice" cards → `#f9f9ff` list bands → `#04091e` footer |
 
 ## Requirements
 

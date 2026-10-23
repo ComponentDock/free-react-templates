@@ -99,3 +99,25 @@ The system SHALL render a footer with a dark background image, the "Casepoint" l
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/casepoint/public/CNAME` = `casepoint.free.componentdock.com`
   and the package `homepage` = `https://casepoint.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/thelawyer/` (HTTP 200, 43,455 B,
+title `Lawyer HTML-5 Template`) and `assets/css/style.css` (71,683 B).
+
+| Token | Reference | App (`apps/casepoint`) |
+| ----- | --------- | --------------------- |
+| Action blue | `#3957ff` (45: `.header-btn`, `.btn`, `.submit-btn`, hover fill, eyebrows) | `--color-brand: #3957ff` ✓ |
+| Heading ink | `#092c3f` (2, Josefin Sans 500) | `--color-text-heading: #092c3f` ✓ |
+| Deep navy | `#112957` (4: `.hero-btn`, `.post-btn`, `#back-top`) | `--color-brand-dark` ✓ |
+| Near-black | `#0b1416` (`.btn-black`) | `--color-brand-darker` ✓ |
+| Hero H1 ink | `#212025` (Rubik 68px/500) | `--color-hero-text` ✓ |
+| Card band | `#f7f9ff` (4: `.services-caption`) | `--color-bg-light: #f8f9fa` (wrong band) |
+| Footer | `#11141b` | — (**unmodelled**) |
+| Border | `#f0e9ff` (12) / `#dee2e6` (9) | `--color-border-card: #dddddd` (**not in the sheet**) |
+| Type | Josefin Sans headings / Roboto body / Rubik hero | all three ✓ |
+| Radius | 0 on buttons, 8px cards, 3px tiles | sharp ✓ |
+
+Section order measured: white nav + phone button → split photo hero → services
+cards (`#f7f9ff`) → about → photo "Are you Searching For a First-Class
+Consultant?" band → case studies → contact → `#11141b` footer.

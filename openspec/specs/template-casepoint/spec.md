@@ -4,17 +4,56 @@
 
 A Law Firm template with navigation header, hero, practice areas, about, contact and case studies sections. Casepoint is a single-page law firm landing template — a React recreation of the ColorLib free "TheLawyer" template (preview: https://preview.colorlib.com/theme/thelawyer/ — law firm landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original:
+Reference-measured design tokens are recorded in **Design tokens** below —
+re-measured 2026-10-23 from the preview stylesheet (see `docs/replication.md`).
 
-- Brand primary `#3957ff` (buttons, accent lines, subtitles)
-- Brand dark `#112957` (hero button bg, submit buttons)
-- Brand darker `#0b1416` (black CTA button)
-- Typeface: Josefin Sans (headings) + Roboto (body) + Rubik (hero h1) via Google Fonts
-- Sharp-corner buttons, white/light section backgrounds, card borders `#dddddd`
 - Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Casepoint lives in `apps/casepoint` and uses shared components from `packages/ui`
 (cn).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Thelawyer** — https://colorlib.com/wp/template/thelawyer/
+- **Preview**: `https://preview.colorlib.com/theme/thelawyer/` — HTTP 200, **43,455 bytes**, title `Lawyer HTML-5 Template`; original build (no `?v=` asset markers).
+- **Stylesheets measured**: `assets/css/style.css` — **71,683 bytes** (theme layer); vendored `bootstrap.min.css` 27,394 B, `slicknav.css`, `magnific-popup.css`, `nice-select.css`, `animate.min.css`, `slick.css`, icon sheets are framework code.
+- **Measured how**: hex-literal census per sheet, then the winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action blue | `#3957ff` | 45 | `.header-btn` fill, `.btn`, `.submit-btn`, `.boxed-btn:hover` fill, eyebrow/subtitle text |
+| Heading ink | `#092c3f` | 2 | `h1`–`h6` (Josefin Sans 500) |
+| Deep navy | `#112957` | 4 | `.hero-btn` fill (its `::before` flips to `#3957ff`), `.post-btn`, `#back-top`, header-right block |
+| Near-black | `#0b1416` | 1 | `.btn-black` fill |
+| Footer | `#11141b` | 1 | `.footer-area` background (`.footer-bottom` `30px 0 50px`) |
+| Card band | `#f7f9ff` | 4 | `.services-caption` cards |
+| Off-white band | `#f9f9ff` | 27 | alternating section band, inputs |
+| Hairline lilac | `#f0e9ff` | 12 | input borders, card hairlines |
+| Muted copy | `#999999` | 10 | paragraphs, placeholders |
+| Secondary cyan | `#4cd3e3` | 7 | icon tiles |
+| Hero H1 ink | `#212025` | — | `.hero__caption h1` (Rubik) |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Roboto", sans-serif`, 16 px | theme `body` rule |
+| Headings | `"Josefin Sans", sans-serif`, 500, `#092c3f` | `h1`–`h6` |
+| Hero H1 | 68 px / 500 / `#212025` / **Rubik**, 60 px at the next breakpoint | `.slider-area .hero__caption h1` |
+| Buttons | Josefin Sans, 14 px, uppercase, `padding: 18px 44px` | `.boxed-btn`, `.header-btn` |
+| Fonts loaded | `Josefin Sans` 300–600, `Roboto`, `Rubik` (Google Fonts `@import` inside the sheet) | sheet head |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Hero | split hero: `.slider-area` cover photo `img/hero/h1_hero.jpg` on the right, white copy panel on the left, decorative pastel squares; `.slider-area2` (inner pages) uses `hero2.png` |
+| Buttons | **sharp corners** (`border-radius: 0`), `.header-btn` `19px 44px`, `.boxed-btn` white fill + `#3957ff` label, hover fills `#3957ff`; `.hero-btn` `30px 38px` on `#112957` flipping to `#3957ff` |
+| Radius | **0** on buttons; **3 px** on small icon tiles, **8 px** on cards, **50%** avatars |
+| Section rhythm | `.section-padding` 120 px; `.pt-50/.pb-80` helpers on the about block |
+| Bands | white nav → split photo hero → white services grid (`#f7f9ff` cards) → white about → photo "Are you Searching For a First-Class Consultant?" band (white 48 px/700 heading) → white case studies → white contact → `#11141b` footer |
 
 ## Requirements
 

@@ -10,20 +10,55 @@ Tailwind CSS 4 + TypeScript.
 **Source mapping:** `apps/spread` recreates
 `https://colorlib.com/wp/template/mag/`.
 
-Design tokens captured from the original:
+Reference-measured design tokens are recorded in **Design tokens** below —
+re-measured 2026-10-23 from the single `style.css` (see `docs/replication.md`).
+The footer is `#111111` (not `#252324`) and the page band is `#f2f4f5`.
 
-- Brand pink `#ed3974` (primary accent, CTA buttons, hover states)
-- Gold accent `#bb8950` (category badges)
-- Dark backgrounds: `#252324` (footer), `#1a1a1a` (nav)
-- Text primary: `#3d3d3d`, muted: `#777777`, heading: `#111111`
-- Typeface: Poppins (Google Fonts via `<link>`)
-- Light section background: `#f2f4f5`
-- Section padding: 48-64px top/bottom
 - Flex/grid layout (Tailwind)
 - Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Spread lives in `apps/spread` and uses shared components from `packages/ui`
 (Button, cn).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Mag** — https://colorlib.com/wp/template/mag/
+- **Preview**: `https://preview.colorlib.com/theme/mag/` — HTTP 200, **75,309 bytes**, title `Mag - Video & Magazine HTML Template`; original build with **one** stylesheet and no framework (`style.css`, 72,734 B — Bootstrap is not loaded at all).
+- **Measured how**: hex-literal census of `style.css`, then the winning rule per selector. Body copy colour in the reference is `#777777`; `#3d3d3d`, `#bb8950`, `#252324` each occur once or twice and paint a single card/share hover — not brand tokens.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand pink | `#ed3974` | 55 | `.mag-btn` CTA fill, `.section-heading` 4 px left rule, nav/search hover, spinner, `.post-tag` labels |
+| Heading ink | `#1a1a1a` | 7 | `h1`–`h6` (Poppins 500) + `p` ink |
+| Body copy | `#777777` | 19 | paragraphs, search placeholder |
+| Page band | `#f2f4f5` | 7 | `body` background, widget cards |
+| Hairlines | `#ebebeb` | 13 | `.single-blog-post` bottom rules, search field divider |
+| Footer | `#111111` | 1 | `.footer-area` (`padding-top: 80px`) |
+| Hover dark | `#404040` | 4 | `.submit-video:hover`, dark-card hover |
+| Social blues | `#4b6cd0` / `#49a7f3` | 4 / 4 | Facebook / Twitter widget buttons |
+| Card surface | `#ffffff` | 37 | post cards, widget panels |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `"Poppins", sans-serif`, 14 px body | `body`, `h1`–`h6` |
+| Headings | Poppins 500, `#1a1a1a`, line-height 1.3 | `h1`–`h6` |
+| Hero headline | Poppins 500, white, centred over the photo | hero slide markup |
+| Nav | 13 px, 500, uppercase, `letter-spacing: 1px` | `.classynav ul li a` |
+| Buttons | `.mag-btn` Poppins 500, 14 px | `.mag-btn` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Header | white `.mag-main-menu` **70 px** tall: wordmark, uppercase menu, `200 px` search input with 1 px `#ebebeb` divider, pink **SUBMIT VIDEO** block flush right |
+| Hero | full-bleed photo slider (720/650 px frames at the top breakpoints) with white Poppins headline, pink `MAY 8, 2018 / LIFESTYLE` eyebrow, grey translucent square arrows, dark circular play button |
+| Layout | 3-column body: 1/4 "MOST POPULAR" list, 1/2 "TRENDING NOW" cards, 1/4 social widget stack |
+| Radius | **3 px** on `.mag-btn`, **4 px** on hero arrows, **2 px** on inputs, `15px` on the play badge, `50%` avatars — cards are square |
+| Bands | white nav → photo hero → `#f2f4f5` body with white cards → `#111111` footer |
 
 ## Requirements
 
