@@ -65,7 +65,7 @@ _anchors only_ — Dropnest · Courses Dropdown · Component Dock
 
 ## Reference tokens (measured 2026-10-23)
 
-Evidence: `https://preview.colorlib.com/theme/dropdown-19/` returns **HTTP 404** (element demo, no theme preview). Reference recovered from the official free-template archive `https://preview.colorlib.com/downloads/free/dropdown-19.zip` -> `dropdown-19/css/style.css` (research only; no asset copied).
+Evidence: slug-only `https://preview.colorlib.com/theme/dropdown-19/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/dropdown-19/ — **HTTP 200** on 2026-10-23, title "Dropdown #9". Its `css/style.css` is byte-identical (sha256 `6d6485dcaaf8029c...`, 12,597 bytes) to `dropdown-19/css/style.css` in `https://preview.colorlib.com/downloads/free/dropdown-19.zip`, so the archive is the live demo's un-versioned twin.
 
 - Hex census: `#007bff` 5, `#ffc107` 3, `#dc3545` 3, `#212529` 3, `#6c757d` 1, `#16181b` 1 (count = rules containing the literal).
 - Typefaces: All UI: `Roboto`.

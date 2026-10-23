@@ -64,7 +64,7 @@ Deselecting an option when at the limit SHALL re-enable the remaining unselected
 
 ## Reference tokens (measured 2026-10-23)
 
-Evidence: `https://preview.colorlib.com/theme/multiselect-17/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/multiselect-17.zip` -> `multiselect-17/css/style.css` (research only; no asset copied).
+Evidence: slug-only `https://preview.colorlib.com/theme/multiselect-17/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/multiselect-17/ — **HTTP 200** on 2026-10-23, title "Multi Select #7". Its `css/style.css` is byte-identical (sha256 `0a75591aaf36068d...`, 27,397 bytes) to `multiselect-17/css/style.css` in `https://preview.colorlib.com/downloads/free/multiselect-17.zip`, so the archive is the live demo's un-versioned twin.
 
 - Hex census: `#efefef` 1, `#8cba51` 2, `#dae0e5` 2, `#fff` 13, `#212529` 9, `#6c757d` 5 (count = rules containing the literal).
 - Typefaces: All UI: `Roboto`.

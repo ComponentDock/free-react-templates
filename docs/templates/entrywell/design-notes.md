@@ -67,7 +67,7 @@ The modal SHALL display a split layout — a background image on the left half a
 
 ## Reference tokens (measured 2026-10-23)
 
-Evidence: `https://preview.colorlib.com/theme/modal-09/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/modal-09.zip` -> `modal-09/css/style.css` (research only; no asset copied).
+Evidence: slug-only `https://preview.colorlib.com/theme/modal-09/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/modal-09/ — **HTTP 200** on 2026-10-23, title "Modal 09". Its `css/style.css` is byte-identical (sha256 `895ecf05eb789c21...`, 24,417 bytes) to `modal-09/css/style.css` in `https://preview.colorlib.com/downloads/free/modal-09.zip`, so the archive is the live demo's un-versioned twin.
 
 - Hex census: `#e3b04b` 9, `#2b2b28` 1, `#6c757d` 6, `#dee2e6` 5, `#495057` 4 (count = rules containing the literal).
 - Typefaces: All UI: `Roboto`; Labels: uppercase, letter-spaced, white on the dark panel.

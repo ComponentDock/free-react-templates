@@ -10,7 +10,7 @@ dark form panel on the right. Preview was 404; fell back to screenshot analysis.
 ## Design tokens (reference re-check, 2026-10-23)
 
 - **Source**: ColorLib **Colorlib Wizard 7** — https://colorlib.com/wp/template/colorlib-wizard-7/
-- **Preview**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/colorlib-wizard-7.zip` -> `colorlib-wizard-7/css/style.css` (research only; no asset copied).
+- **Preview**: all three preview paths return **HTTP 404** for this slug on 2026-10-23 — `/theme/colorlib-wizard-7/`, `/theme/bootstrap/colorlib-wizard-7/`, `/theme/bb/colorlib-wizard-7/` — so the demo is archive-only. Reference recovered from `https://preview.colorlib.com/downloads/free/colorlib-wizard-7.zip` -> `colorlib-wizard-7/css/style.css` (research only; no asset copied).
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-7.jpg
 - **Measured how**: hex-literal census of `colorlib-wizard-7/css/style.css` from the official free-template ZIP.
 

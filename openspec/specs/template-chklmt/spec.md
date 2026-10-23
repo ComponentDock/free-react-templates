@@ -17,9 +17,9 @@ selection limit.
 ## Design tokens (reference re-check, 2026-10-23)
 
 - **Source**: ColorLib **Multiselect 17** — https://colorlib.com/wp/template/multiselect-17/
-- **Preview**: `https://preview.colorlib.com/theme/multiselect-17/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/multiselect-17.zip` -> `multiselect-17/css/style.css` (research only; no asset copied).
+- **Preview**: slug-only `https://preview.colorlib.com/theme/multiselect-17/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/multiselect-17/ — **HTTP 200** on 2026-10-23, title "Multi Select #7". Its `css/style.css` is byte-identical (sha256 `0a75591aaf36068d...`, 27,397 bytes) to `multiselect-17/css/style.css` in `https://preview.colorlib.com/downloads/free/multiselect-17.zip`.
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-17.jpg
-- **Measured how**: hex-literal census of `multiselect-17/css/style.css` from the official free-template ZIP.
+- **Measured how**: hex-literal census of the live `css/style.css?v=9e5957cd` (27,397 bytes, archive-identical).
 
 ### Colors
 

@@ -112,7 +112,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg
 
 ## Reference tokens (measured 2026-10-23)
 
-Evidence: `https://preview.colorlib.com/theme/modal-10/` returns **HTTP 404** (element demo). Reference recovered from `https://preview.colorlib.com/downloads/free/modal-10.zip` -> `modal-10/css/style.css` (research only; no asset copied).
+Evidence: slug-only `https://preview.colorlib.com/theme/modal-10/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/modal-10/ — **HTTP 200** on 2026-10-23, title "Modal 10". Its `css/style.css` is byte-identical (sha256 `7fea63534e8a8c9f...`, 22,678 bytes) to `modal-10/css/style.css` in `https://preview.colorlib.com/downloads/free/modal-10.zip`, so the archive is the live demo's un-versioned twin.
 
 - Hex census: `#dd00ff` 8, `#3e64ff` 7, `#3e65ff` 7, `#6c757d` 4, `#212529` 3 (count = rules containing the literal).
 - Typefaces: All UI: `Poppins`; Heading: Poppins semibold, centred.

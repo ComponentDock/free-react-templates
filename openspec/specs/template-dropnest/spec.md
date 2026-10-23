@@ -17,7 +17,7 @@ border rgba(0,0,0,0.1), shadow 0 15px 30px rgba(0,0,0,0.2).
 ## Design tokens (reference re-check, 2026-10-23)
 
 - **Source**: ColorLib **Dropdown 19** — https://colorlib.com/wp/template/dropdown-19/
-- **Preview**: `https://preview.colorlib.com/theme/dropdown-19/` returns **HTTP 404** (element demo, no theme preview). Reference recovered from the official free-template archive `https://preview.colorlib.com/downloads/free/dropdown-19.zip` -> `dropdown-19/css/style.css` (research only; no asset copied).
+- **Preview**: slug-only `https://preview.colorlib.com/theme/dropdown-19/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/dropdown-19/ — **HTTP 200** on 2026-10-23, title "Dropdown #9". Its `css/style.css` is byte-identical (sha256 `6d6485dcaaf8029c...`, 12,597 bytes) to `dropdown-19/css/style.css` in `https://preview.colorlib.com/downloads/free/dropdown-19.zip`.
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-19.jpg
 - **Measured how**: hex-literal census of `dropdown-19/css/style.css` extracted from the official free-template ZIP.
 
@@ -54,7 +54,7 @@ border rgba(0,0,0,0.1), shadow 0 15px 30px rgba(0,0,0,0.2).
 ### Delta vs shipped app
 
 - `--color-dropnest-brand: #3fc5f0` (cyan) and `#fafafa` occur **0 times** in the reference stylesheet. The reference column accents are Bootstrap blue `#007bff`, amber `#ffc107`, crimson `#dc3545`.
-- The TEMPLATES.md screenshot is captioned "Dropdown #9" although the slug is `dropdown-19` — same demo, caption drift only.
+- Slug `dropdown-19` vs demo label: the live page's own `<title>` is "Dropdown #9" and the TEMPLATES.md screenshot is captioned the same way — one demo, numbering differs between slug and label.
 
 ## Requirements
 
