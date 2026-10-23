@@ -25,7 +25,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `appru` → `rocket` (#1819), `apps` → `hatch` (#1820), `appson` → `takeoff`
 (#1821), `appy` → `tandem` (#1822), `bold` → `strive` (#1823),
 `breed` → `wagly` (#1824), `bulkapp` → `bundle` (#1825),
-`chimper` → `craftora` (this PR).
+`chimper` → `craftora` (#1826).
 
 | app                 | source design  |
 | ------------------- | -------------- |
