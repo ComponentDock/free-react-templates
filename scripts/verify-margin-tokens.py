@@ -76,7 +76,9 @@ if not _SIB.exists():                     # the shipped copy lives in `scripts/`
             / "scripts/verify-spacing-tokens.py")
 _spec = importlib.util.spec_from_file_location("_spacing_tokens", _SIB)
 if _spec is None or _spec.loader is None:            # pragma: no cover
-    sys.exit("verify-spacing-tokens.py not found beside this script")
+    sys.exit("verify-spacing-tokens.py not found beside this script nor in\n"
+             "~/.hermes/skills/automation/componentdock-prep-stream/scripts/ "
+             "(the shared CSS parser/fetcher it reuses)")
 S = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(S)
 
