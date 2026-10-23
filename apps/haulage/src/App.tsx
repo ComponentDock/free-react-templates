@@ -14,8 +14,8 @@ import { Articles } from './components/Articles'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
-/* Haulage — single-page logistics & cargo template (recreation of the
-   ColorLib "Cargo" demo): top bar → sticky navbar → hero → service image
+/* Haulage — single-page logistics & cargo template (measured from the
+   reference design): top bar → sticky navbar → hero → service image
    cards → What We Offer → About Us → video/counters → Our Staff → Pricing
    → FAQ → Why Us → Happy Clients → Articles → Contact → footer. */
 export function App() {

@@ -1,6 +1,6 @@
 /**
- * Herald data — recreated from the ColorLib "Ednews" preview DOM
- * (https://preview.colorlib.com/theme/ednews/): same content kinds
+ * Herald data — section order and copy types measured from the reference
+ * design's DOM; same content kinds
  * (uppercase section titles, meta rows with date/author/comments/views,
  * news-ish headlines), paraphrased where useful. All imagery uses seeded
  * picsum placeholders.

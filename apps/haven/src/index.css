@@ -4,8 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Haven brand palette — warm gold/tan from the ColorLib "Sona" preview
-     (https://preview.colorlib.com/theme/sona/ + css/style.css):
+  /* Haven brand palette — warm gold/tan from the reference stylesheet:
      a luxury hotel landing theme with a warm gold #dfa974 primary,
      dark heading text #19191a, muted body text #6b6b6b. */
   --color-primary-50: #fdf6ed;
@@ -23,7 +22,7 @@
   --color-body: #6b6b6b;
 
   /* Lora (headings) + Cabin (body) via Google Fonts <link> in index.html —
-     matching the ColorLib font pairing. */
+     matching the reference font pairing. */
   --font-sans: 'Cabin', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Lora', Georgia, serif;
 }

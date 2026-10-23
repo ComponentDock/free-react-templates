@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Healnova brand palette — teal/blue from the ColorLib "Medically" design. */
+  /* Healnova brand palette — teal/blue from the reference stylesheet. */
   --color-brand: #31b0d5;
   --color-brand-dark: #2595b8;
 

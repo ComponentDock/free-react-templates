@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Haulage brand colors — from the ColorLib "Cargo" preview
-     (https://preview.colorlib.com/theme/cargo/ + css/style.css +
-     re-themed bootstrap.min.css): orange #ff8b00 is the re-themed
+  /* Haulage brand colors — from the reference stylesheet: orange #ff8b00 is
+     the re-themed
      Bootstrap --primary (logo, nav hover/active, section h2s, btn-primary
      bg, pricing price, counters, checkmarks, blog title hover, carousel
      dots). Hero overlay gradient #377aff → #00d9ff at 45°. Light-grey

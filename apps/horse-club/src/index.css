@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Horse Club brand pink-red — from the original ColorLib "Horse Club"
-     stylesheet (css/main.css): .banner-area / .btn background #f6214b. */
+  /* Horse Club brand pink-red — from the reference design stylesheet
+     (css/main.css): .banner-area / .btn background #f6214b. */
   --color-brand: #f6214b;
 
   /* Feature-icon palette (css/main.css): cyan, yellow, blue, orange, red. */

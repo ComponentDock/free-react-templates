@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Huddle brand colors — from ColorLib "Confe" conference template:
+  /* Huddle brand colors — from the reference conference stylesheet:
      red accent #f23a2e, body text #6b7280, dark headings #111827. */
   --color-brand: #f23a2e;
   --color-brand-hover: #d92f24;
