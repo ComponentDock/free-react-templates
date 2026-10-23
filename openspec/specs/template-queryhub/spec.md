@@ -13,9 +13,18 @@ search input on click.
 
 - **Source slug:** `colorlib-search-21`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-search-21/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-21/ (404 at prep time — falling back to screenshot)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-21/ (404 at prep time — falling back to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-21.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-21/` — HTTP 200, 2,156 B, title ``.
+>
+> Sheet: `https://colorlib.com/etc/searchf/colorlib-search-21/css/style.css?v=7b8a4c26` (8,551 B).
+> Faces it actually declares: `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (from screenshot)
 
@@ -130,7 +139,7 @@ background is a single solid color with no gradient or pattern.
 ## Verification checklist
 
 - [ ] Spec follows OpenSpec format
-- [ ] Design tokens extracted from screenshot (preview unreachable)
+- [ ] Design tokens extracted from screenshot (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - [ ] All sections from original covered in Gherkin scenarios
 - [ ] No ColorLib references in planned app code
 - [ ] Footer links to https://www.componentdock.com/

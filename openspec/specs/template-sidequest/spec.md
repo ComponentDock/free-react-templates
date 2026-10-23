@@ -11,7 +11,7 @@ Source: https://colorlib.com/wp/template/colorlib-sidebar-v07/
 Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v07/ (404;
 spec based on screenshot analysis)
 
-## Design tokens (from screenshot analysis)
+## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token            | Value                  | Notes                                                    |
 | ---------------- | ---------------------- | -------------------------------------------------------- |
@@ -28,6 +28,15 @@ spec based on screenshot analysis)
 | Close button     | X icon, white          | Top-right of dark content panel                          |
 | Progress bar H   | ~8px, rounded          | Horizontal progress indicator                            |
 | Section order    | Content list → Sidebar | Two-panel: left content list, right onboarding sidebar  |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v07/` — HTTP 200, 8,822 B, title `Sidebar #3`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v07/css/style.css?v=c4b2d8a2` (18,751 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

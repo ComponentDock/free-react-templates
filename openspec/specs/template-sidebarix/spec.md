@@ -5,10 +5,19 @@
 A left-profile-panel sidebar layout with a blog post grid. Recreation of ColorLib Sidebar V02.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-sidebar-v02/
-- **Preview:** https://preview.colorlib.com/theme/colorlib-sidebar-v02/ (404 — preview unreachable; design captured from TEMPLATES.md screenshot)
+- **Preview:** https://preview.colorlib.com/theme/colorlib-sidebar-v02/ (404 — preview unreachable; design captured from TEMPLATES.md screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 
-## Design tokens (from screenshot analysis)
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v02/` — HTTP 200, 8,848 B, title `Sidebar #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v02/css/style.css?v=6d7b392b` (15,347 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
+## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token             | Value                                     |
 | ----------------- | ----------------------------------------- |

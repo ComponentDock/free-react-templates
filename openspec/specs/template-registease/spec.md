@@ -6,13 +6,22 @@ Recreation of ColorLib "Colorlib Wizard 9" — a multi-step user profile
 registration wizard template.
 
 - **Source**: https://colorlib.com/wp/template/colorlib-wizard-9/
-- **Preview**: https://preview.colorlib.com/theme/colorlib-wizard-9/ (unreachable 404 at prep time; screenshot used as sole reference)
+- **Preview**: https://preview.colorlib.com/theme/colorlib-wizard-9/ (unreachable 404 at prep time; screenshot used as sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack**: React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **Category**: Multi-step registration / wizard form
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-9/index.html` — HTTP 200, 17,072 B, title `FormWizard_v9`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-9/css/style.css?v=bad17a70` (7,481 B).
+> Faces it actually declares: `Poppins-Medium`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from screenshot analysis (preview CSS unavailable — 404):
+Extracted from screenshot analysis (preview CSS unavailable — 404): — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token | Value | Source |
 |-------|-------|--------|

@@ -6,9 +6,18 @@ Recreation of ColorLib Login Form V1 as Logincraft — a split-screen login form
 
 - **Source:** https://colorlib.com/wp/template/login-form-v1/
 - **Demo (live):** https://colorlib.com/etc/lf/Login_v1/index.html
-- **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v1/ (HTTP 404 at time of prep; fallback to demo URL + screenshot)
+- **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v1/ (HTTP 404 at time of prep; fallback to demo URL + screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v1.jpg
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v1/index.html` — HTTP 200, 3,852 B, title `Login V1`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v1/css/style.css?v=d26e13a7` (11,774 B).
+> Faces it actually declares: `Poppins-Bold`, `Montserrat-Bold`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

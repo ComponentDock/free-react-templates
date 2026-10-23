@@ -2,7 +2,16 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Wizard 24** (`https://colorlib.com/wp/template/colorlib-wizard-24/`), preview URL `https://preview.colorlib.com/theme/colorlib-wizard-24/` (preview unreachable, designed from ColorLib screenshot and clean financial wizard / multi-step form patterns). Built with Vite, React 19, Tailwind CSS 4, TypeScript.
+Recreation of ColorLib **Colorlib Wizard 24** (`https://colorlib.com/wp/template/colorlib-wizard-24/`), preview URL `https://preview.colorlib.com/theme/colorlib-wizard-24/` (preview unreachable, designed from ColorLib screenshot and clean financial wizard / multi-step form patterns) — **re-probed 2026-10-23: the demo serves** (measured record below). Built with Vite, React 19, Tailwind CSS 4, TypeScript.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-24/index.html` — HTTP 200, 16,184 B, title `Wizard-v4`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-24/css/style.css?v=e23e72d8` (17,041 B).
+> Faces it actually declares: `Open Sans`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

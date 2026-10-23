@@ -7,9 +7,19 @@ A centered single-column contact form floating over a Google Maps background wit
 - **Source slug:** `contact-form-v9`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v9/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v9/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v9.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v9/index.html` — HTTP 200, 1,883 B, title `Contact V9`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v9/css/style.css?v=99ea44cf` (11,677 B).
+> Faces it actually declares: `SourceSansPro-Bold`, `JosefinSans-Bold`, `Segoe UI`, `Roboto`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

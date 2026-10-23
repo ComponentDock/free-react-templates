@@ -28,7 +28,7 @@ TypeScript.
   Colorlib"; meta description: "HTML5 & CSS3 based table example that can be
   used as a template for your website. Works with Bootstrap 4, 5 and 6, or
   on its own.")
-- **Preview — UNREACHABLE (verified 2026-09-30):** the slug-only URL
+- **Preview — UNREACHABLE (verified 2026-09-30):** the slug-only URL — **re-probed 2026-10-23: the demo serves** (measured record below)
   https://preview.colorlib.com/theme/responsive-table-v2/ returns **HTTP 404
   "Not Found"** (9-byte body), and the bootstrap-path variant
   https://preview.colorlib.com/theme/bootstrap/responsive-table-v2/ ALSO
@@ -74,6 +74,15 @@ TypeScript.
   pliancy — an evocative single word describing the template's signature
   behavior (V1 = Pliancy "quality of being pliant"; V2 = Flexure "state of
   being flexible").
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/tb/Table_Responsive_v2/index.html` — HTTP 200, 3,866 B, title `Table V02`.
+>
+> Sheet: `https://colorlib.com/etc/tb/Table_Responsive_v2/css/style.css?v=4f7e27fa` (6,050 B).
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 
@@ -303,7 +312,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Tests (TDD, 100% coverage on changed code) mirror the Gherkin
       scenarios; `scripts/verify-app.sh flexure` passes
 - [ ] PR description records: source slug `responsive-table-v2`, preview
-      UNREACHABLE (both paths 404; ZIP
+      UNREACHABLE (both paths 404; ZIP — **re-probed 2026-10-23: the demo serves** (measured record below)
       `preview.colorlib.com/downloads/free/responsive-table-v2.zip` was the
       reference), design tokens used, and what differs (new name Flexure;
       Poppins via Google Fonts instead of self-hosted woff2; zero images;

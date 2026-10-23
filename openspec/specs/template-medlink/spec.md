@@ -4,7 +4,18 @@
 
 Recreation of **ColorLib "Medical 2"** template
 (https://colorlib.com/wp/template/medical-2/).
-Preview was unreachable (404) — design derived from the TEMPLATES.md screenshot.
+Preview was unreachable (404) — design derived from the TEMPLATES.md screenshot — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/medical/` — HTTP 200, 34,682 B, title `Medical`.
+>
+> Sheets: `https://preview.colorlib.com/theme/medical/css/linearicons.css` (1,605 B), `https://preview.colorlib.com/theme/medical/css/font-awesome.min.css` (1,395 B), `https://preview.colorlib.com/theme/medical/css/bootstrap.css` (17,224 B), `https://preview.colorlib.com/theme/medical/css/magnific-popup.css` (4,213 B) (+7 more).
+> Colours that sheet actually paints: `#69be00` ×67, `#222222` ×29, `#777777` ×26.
+> Faces it actually declares: `Poppins`, `Helvetica`, `Segoe UI`, `Roboto`.
+> The recorded brand `#76b900` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript.
 **Deploy target:** `https://medlink.free.componentdock.com`.

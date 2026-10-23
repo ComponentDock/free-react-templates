@@ -21,7 +21,7 @@ with a blue accent palette.
 - **Original:** ColorLib "Checkbox 12" — twelfth of the "Bootstrap Checkboxes
   (20)" series in TEMPLATES.md (line 744 — mark that line `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/checkbox-12/
-  (preview returned 404 — falling back to screenshot and page metadata).
+  (preview returned 404 — falling back to screenshot and page metadata) — **re-probed 2026-10-23: the demo serves** (measured record below).
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-12.jpg
 - **Page metadata:** "Disabled/Checked Checkbox Snippet" — a Bootstrap checkbox
   component demo showing disabled and checked states.
@@ -39,6 +39,15 @@ with a blue accent palette.
   - Disabled text: `#6c757d` (Bootstrap muted)
   - Font: Roboto (Google Fonts)
   - Checkbox border: `#dee2e6` unchecked, `#0d6efd` checked
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/checkbox-12/` — HTTP 200, 1,636 B, title `Checkbox #2`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/checkbox-12/css/style.css?v=d6a5a1f3` (8,475 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

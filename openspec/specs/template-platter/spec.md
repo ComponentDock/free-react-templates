@@ -5,7 +5,16 @@
 Recreation of ColorLib "Colorlib Wizard 7" (https://colorlib.com/wp/template/colorlib-wizard-7/)
 as a React 19 + Tailwind CSS 4 + TypeScript single-page restaurant reservation wizard.
 The original is a 3-step booking form with a split layout: food image on the left,
-dark form panel on the right. Preview was 404; fell back to screenshot analysis.
+dark form panel on the right. Preview was 404; fell back to screenshot analysis — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` — HTTP 200, 10,359 B, title `FormWizard_v7`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-7/css/style.css?v=7973a996` (8,628 B).
+> Faces it actually declares: `Raleway-Bold`, `Satisfy-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (reference re-check, 2026-10-23)
 

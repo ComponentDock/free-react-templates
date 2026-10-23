@@ -2,7 +2,16 @@
 
 ## Purpose
 
-Recreation of [ColorLib Reg Form V1](https://colorlib.com/wp/template/colorlib-regform-1/) — a simple class registration form template. Preview URL: https://preview.colorlib.com/theme/colorlib-regform-1/ (unreachable at time of research; screenshot used as primary reference).
+Recreation of [ColorLib Reg Form V1](https://colorlib.com/wp/template/colorlib-regform-1/) — a simple class registration form template. Preview URL: https://preview.colorlib.com/theme/colorlib-regform-1/ (unreachable at time of research; screenshot used as primary reference) — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-1/` — HTTP 200, 5,038 B, title `Au Register Forms by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-1/css/style.css?v=7073e522` (10,853 B).
+> Faces it actually declares: `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript · Vitest + Testing Library
 
@@ -13,7 +22,7 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript · Vitest + Testing Libr
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-1.jpg
 - **Category:** Registration Forms (Bootstrap-compatible, framework-free)
 
-## Design tokens (from screenshot analysis)
+## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token | Value | Notes |
 |---|---|---|

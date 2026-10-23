@@ -10,8 +10,17 @@ background.
 - **Source slug:** `contact-form-12`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-12/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-12/ (404 at
-  time of prep — design tokens and layout extracted from the ColorLib screenshot)
+  time of prep — design tokens and layout extracted from the ColorLib screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/contact-form-12/` — HTTP 200, 8,275 B, title `Contact Form #2`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/contact-form-12/css/style.css?v=42465dea` (13,851 B).
+> Faces it actually declares: `Poppins`, `Roboto`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

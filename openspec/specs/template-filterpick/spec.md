@@ -17,13 +17,22 @@ The original is a Bootstrap multiselect dropdown list component: a clean, modern
 ## Source mapping
 
 - **ColorLib source:** Multiselect 04
-- **Preview URL:** https://preview.colorlib.com/theme/multiselect-04/ (unreachable — 404)
+- **Preview URL:** https://preview.colorlib.com/theme/multiselect-04/ (unreachable — 404) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New name:** filterpick
 - **Category:** Bootstrap Multiselect with Checkmarks
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/multiselect-04/` — HTTP 200, 1,120 B, title `Multiselect 04`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/multiselect-04/css/style.css?v=f8a52da3` (27,536 B).
+> Faces it actually declares: `Lato`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from the screenshot analysis (preview unreachable — fell back to screenshot).
+Extracted from the screenshot analysis (preview unreachable — fell back to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 ### Colors
 

@@ -41,7 +41,7 @@ returned HTTP 200 with a minimal page. The page contains:
 - A `<form>` element with a text `<input>` and a submit button
 - Minimal CSS for centering and styling
 
-### Design tokens (derived from screenshot — preview CSS not extractable)
+### Design tokens (derived from screenshot — preview CSS not extractable) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token | Value | Usage |
 |-------|-------|-------|
@@ -55,6 +55,15 @@ returned HTTP 200 with a minimal page. The page contains:
 | **Box shadow** | `0 2px 8px rgba(0,0,0,0.1)` (subtle) | Search bar elevation |
 | **Input padding** | ~12px 20px horizontal, ~10px vertical | Search input inner spacing |
 | **Search bar width** | ~450px max, centered | Responsive width |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-01/` — HTTP 200, 1,941 B, title `Search Form/Bar 01`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-01/css/style.css?v=6a455d52` (9,814 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

@@ -7,10 +7,20 @@ ContactWave is a free, advanced contact form template that recreates the ColorLi
 ## Source
 
 - **ColorLib template:** Contact Form V5
-- **Preview URL:** https://preview.colorlib.com/theme/contact-form-v5/ (unreachable at time of spec; screenshot used as primary reference)
+- **Preview URL:** https://preview.colorlib.com/theme/contact-form-v5/ (unreachable at time of spec; screenshot used as primary reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v5.jpeg
 
-## Design Tokens (from screenshot analysis)
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v5/index.html` — HTTP 200, 4,457 B, title `Contact V5`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v5/css/style.css?v=25e70157` (20,184 B).
+> Faces it actually declares: `Montserrat-Black`, `Poppins-Regular`, `Segoe UI`, `Roboto`.
+> The prescribed face `inter` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
+## Design Tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token             | Value                         | Notes                              |
 | ----------------- | ----------------------------- | ---------------------------------- |

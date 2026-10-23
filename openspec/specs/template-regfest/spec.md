@@ -6,12 +6,21 @@ Recreation of ColorLib **Regform 21** (`colorlib-regform-21`) — a full-viewpor
 event registration form with a two-column card layout over a gradient background.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-21/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-21/ (unreachable at time of prep; screenshot used as primary reference)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-21/ (unreachable at time of prep; screenshot used as primary reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-21/` — HTTP 200, 2,511 B, title `RegistrationForm_v5 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-21/css/style.css?v=9b85403f` (4,916 B).
+> Faces it actually declares: `Arvo-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 
-Extracted from the screenshot (preview unreachable, CSS not fetchable):
+Extracted from the screenshot (preview unreachable, CSS not fetchable) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token              | Value                                   | Source                              |
 | ------------------ | --------------------------------------- | ----------------------------------- |

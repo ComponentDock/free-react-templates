@@ -16,8 +16,17 @@ and a rounded pink submit button.
 
 **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-20/
 (status: 404 — preview page unreachable at prep time; design captured from
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-20/` — HTTP 200, 1,365 B, title `RegistrationForm_v4 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-20/css/style.css?v=d8d81ac3` (7,535 B).
+> Faces it actually declares: `Montserrat-Regular`, `ElMessiri-SemiBold`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 the ColorLib screenshot at
-https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-20.jpg)
+https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-20.jpg) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 **Source URL:** https://colorlib.com/wp/template/colorlib-regform-20/
 

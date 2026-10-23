@@ -3,12 +3,23 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 22 (`https://colorlib.com/wp/template/colorlib-wizard-22/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-22/` (unreachable at prep time — 404; fallback to ColorLib listing page CSS + screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-22/` (unreachable at prep time — 404; fallback to ColorLib listing page CSS + screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `arcane` (App directory: `apps/arcane`, Package: `@free-react-templates/arcane`)
 - **Category**: Forms / Multi-step Wizard
 - **Description**: A responsive split-screen form wizard for bookings, appointments, and similar multi-step flows. Left panel features a visual/illustration area; right panel houses the step-by-step form with progress indicator.
 - **Source slug**: `colorlib-wizard-22`
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-22.jpg` (1200×972, describes a split-screen layout with form on one side and visual on the other)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-22/index.html` — HTTP 200, 6,883 B, title `Wizard-v2`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-22/css/style.css?v=98c60d29` (11,581 B).
+> Faces it actually declares: `Muli`.
+> The recorded brand `#77cc6d` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+> The prescribed face `helvetica neue` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens (from reference CSS and ColorLib page)
 

@@ -16,8 +16,17 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 > (the `preview.colorlib.com/assets/js/products.js` product map only covers
 > new Astro-era templates), and the Wayback Machine has no archived snapshot
 > (CDX query returned empty). Per docs/replication.md the **screenshot is the
-> sole reference** (`colorlib-booking-1.jpg`, HTTP 200, fetched and analyzed
+> sole reference** (`colorlib-booking-1.jpg`, HTTP 200, fetched and analyzed — **re-probed 2026-10-23: the demo serves** (measured record below)
 > 2026-08-09) — the fallback path is documented here and in the PR.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bforms/colorlib-booking-1/` — HTTP 200, 3,248 B, title `Booking Form HTML Template`.
+>
+> Sheet: `https://colorlib.com/etc/bforms/colorlib-booking-1/css/style.css?v=b6834a27` (10,735 B).
+> Faces it actually declares: `Montserrat`, `Helvetica Neue`, `Helvetica`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design reference (replication findings)
 

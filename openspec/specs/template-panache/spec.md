@@ -95,7 +95,7 @@ fills, quote marks, and link underlines everywhere.
   left, white nav links (Home, Pages, Blog, Shop, Contact) with search +
   bag icons top right, and a white 3-column features box (Reliability
   leaf, Expertise gear, Quality diamond icons + lorem) overlapping the hero
-  bottom. Flat, corporate, clean. The screenshot only shows the top of the
+  bottom. Flat, corporate, clean. The screenshot only shows the top of the — **re-probed 2026-10-23: the demo serves** (measured record below)
   page — the preview DOM is authoritative for the rest.
 - **Live preview URL:** https://preview.colorlib.com/theme/fancy/
   (reachable, HTTP 200, 28.9 KB, title "Fancy - Creative Agency Template").
@@ -113,6 +113,16 @@ fills, quote marks, and link underlines everywhere.
   teal close button). Recreate the search overlay toggled by the navbar
   search icon (jsdom-safe); preloader optional (skip or a brief spinner).
 - **Navbar:** `header.header_area#header` — `position: fixed; width: 100%;
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/fancy/` — HTTP 200, 28,934 B, title `Fancy - Creative Agency Template`.
+>
+> Sheets: `https://preview.colorlib.com/theme/fancy/style.css` (22,642 B), `https://preview.colorlib.com/theme/fancy/css/responsive/responsive.css` (4,385 B).
+> Colours that sheet actually paints: `#7450fe` ×41, `#21d397` ×29, `#b5aec4` ×12.
+> Faces it actually declares: `Poppins`, `Playfair Display`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 height: 100px; z-index: 90`, transparent; sticky state adds
   `background-color: rgba(4, 8, 29, 0.85)` (`.is-sticky`). Inside: brand
   "fancy" → "Panache" (`a.navbar-brand`, Poppins 700 30px white) and

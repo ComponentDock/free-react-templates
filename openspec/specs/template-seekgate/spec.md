@@ -11,7 +11,7 @@ An advanced search form bar with keyword input, category filter dropdowns, resul
 
 ## Design tokens
 
-Extracted from the screenshot analysis.
+Extracted from the screenshot analysis — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                | Value                                    |
 | -------------------- | ---------------------------------------- |
@@ -35,6 +35,17 @@ Extracted from the screenshot analysis.
 | Result count         | Teal number + gray "results" text        |
 | Reset button         | Text only, dark gray, hover teal         |
 | Search button        | Rounded teal bg, white text, `px-5 py-2` |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-9/` — HTTP 200, 5,996 B, title ``.
+>
+> Sheet: `https://colorlib.com/etc/searchf/colorlib-search-9/css/style.css?v=b388b9e2` (14,114 B).
+> Faces it actually declares: `Lato`.
+> The recorded brand `#5fb8c2` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+> The prescribed face `roboto` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

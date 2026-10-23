@@ -11,7 +11,7 @@ A centered job application form on a dark background with labeled fields (full n
 
 ## Design tokens
 
-Extracted from screenshot analysis (preview CSS unavailable via direct fetch):
+Extracted from screenshot analysis (preview CSS unavailable via direct fetch): — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token                     | Value                                       | Source                                         |
 | ------------------------- | ------------------------------------------- | ---------------------------------------------- |
@@ -52,6 +52,16 @@ Extracted from screenshot analysis (preview CSS unavailable via direct fetch):
 | Button border-radius      | `4px`                                       | Rounded button corners                         |
 | Button margin-top         | `16px`                                      | Space above button from last field             |
 | Button cursor             | `pointer`                                   | Pointer cursor on hover                        |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-6/` — HTTP 200, 3,266 B, title `Apply for job by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-6/css/style.css?v=a0432fbe` (9,652 B).
+> Faces it actually declares: `Open Sans`, `Helvetica Neue`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Visual design notes (from screenshot analysis)
 

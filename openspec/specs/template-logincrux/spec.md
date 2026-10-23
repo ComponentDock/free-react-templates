@@ -5,9 +5,18 @@
 A recreation of ColorLib's **Login Form V17** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source:** [ColorLib Login Form V17](https://colorlib.com/wp/template/login-form-v17/)
-- **Preview URL:** `https://preview.colorlib.com/theme/login-form-v17/` (404 — unreachable at time of prep; design derived from screenshot)
+- **Preview URL:** `https://preview.colorlib.com/theme/login-form-v17/` (404 — unreachable at time of prep; design derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict)
 - **Package:** `@free-react-templates/logincrux`
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v17/index.html` — HTTP 200, 1,763 B, title `Login V17`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v17/css/style.css?v=93221552` (11,098 B).
+> Faces it actually declares: `Poppins-Regular`, `Montserrat-Bold`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

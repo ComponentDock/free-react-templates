@@ -3,7 +3,16 @@
 ## Purpose
 
 Recreation of ColorLib **Search Form 1** (`https://colorlib.com/wp/template/colorlib-search-1/`).
-Preview URL: `https://preview.colorlib.com/theme/colorlib-search-1/` (unreachable at time of prep — fell back to screenshot + ColorLib page).
+Preview URL: `https://preview.colorlib.com/theme/colorlib-search-1/` (unreachable at time of prep — fell back to screenshot + ColorLib page) — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-1/` — HTTP 200, 1,106 B, title ``.
+>
+> Sheet: `https://colorlib.com/etc/searchf/colorlib-search-1/css/style.css?v=3518010b` (7,057 B).
+> Faces it actually declares: `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Category**: Search Form & Bar Templates
 **Stack**: Vite · React 19 · Tailwind CSS 4 · TypeScript

@@ -6,10 +6,20 @@ A sidebar blog template with a cyan-accented nav panel, toggle button and a resp
 
 - **Source slug:** `colorlib-sidebar-v10`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-sidebar-v10/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-sidebar-v10/ (unreachable — 404; design derived from screenshot)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-sidebar-v10/ (unreachable — 404; design derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript · Vitest + Testing Library
 - **Package:** `@free-react-templates/marginote`
 - **Surge target:** `marginote.free.componentdock.com`
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v10/` — HTTP 200, 12,666 B, title `Sidebar #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v10/css/style.css?v=df77926e` (14,562 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 
@@ -139,7 +149,7 @@ The app SHALL maintain 100% test coverage across lines, functions, branches, and
 
 ## Design tokens
 
-Extracted from screenshot analysis (preview unavailable):
+Extracted from screenshot analysis (preview unavailable): — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token                    | Value                                       | Source                       |
 | ------------------------ | ------------------------------------------- | ---------------------------- |

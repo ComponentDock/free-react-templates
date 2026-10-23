@@ -7,8 +7,18 @@ A centered single-column contact form modal on a full-page purple gradient backg
 - **Source slug:** `contact-form-v16`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v16/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v16/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v16/index.html` — HTTP 200, 7,014 B, title `Contact V16`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v16/css/style.css?v=96a32ec2` (13,697 B).
+> Faces it actually declares: `Montserrat-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

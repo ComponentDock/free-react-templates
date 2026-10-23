@@ -73,7 +73,7 @@ Tailwind CSS 4 + TypeScript.
   background for creating a top-notch coming soon page.")
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_13/ returns
   **HTTP 404** (9 B, `text/plain`, verified 2026-10-11 — the family-wide
-  live-preview gap), so the live preview DOM is unreachable for this slug.
+  live-preview gap), so the live preview DOM is unreachable for this slug — **re-probed 2026-10-23: the demo serves** (measured record below).
   Fallback (documented per `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_13.zip`
   (HTTP 200, 695,439 B, `application/zip`) was downloaded and extracted to
@@ -102,6 +102,15 @@ Tailwind CSS 4 + TypeScript.
   SVG icons, its "Coming Soon" / "Sign Up" / "Email Address" /
   "Email is required: ex@abc.xyz" strings and its favicon are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_13/index.html` — HTTP 200, 5,976 B, title `Coming Soon 13`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_13/css/style.css?v=20641a4e` (12,391 B).
+> Faces it actually declares: `Montserrat-Regular`, `Playlist Script`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design reference (replication findings)
 

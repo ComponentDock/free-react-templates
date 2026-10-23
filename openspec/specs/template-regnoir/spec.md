@@ -18,11 +18,20 @@ shaped "Submit" button. The aesthetic is bold, moody, fashion/event-
 themed — suitable for music festivals, nightlife, or creative events.
 
 **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-3/
-(returns 404 at time of prep — fell back to screenshot analysis)
+(returns 404 at time of prep — fell back to screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-3/` — HTTP 200, 3,635 B, title `Au Register Forms by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-3/css/style.css?v=c4e3545f` (10,694 B).
+> Faces it actually declares: `Poppins`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Screenshot URL:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-3.jpg
 
-## Design tokens (from screenshot analysis)
+## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token          | Value                              | Use                                                        |
 | -------------- | ---------------------------------- | ---------------------------------------------------------- |

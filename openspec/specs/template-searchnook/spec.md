@@ -14,7 +14,16 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Source: https://colorlib.com/wp/template/search-form-bar-10/
 Preview: https://preview.colorlib.com/theme/search-form-bar-10/ (404 at time of
-prep — design captured from screenshot + ColorLib page meta).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-10/` — HTTP 200, 981 B, title `Search Form/Bar 10`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-10/css/style.css?v=c2113e0b` (9,064 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+prep — design captured from screenshot + ColorLib page meta) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 The original design is a minimal page with a title heading and a pill-shaped
 expandable search bar. The search bar sits centered on a light gray background.

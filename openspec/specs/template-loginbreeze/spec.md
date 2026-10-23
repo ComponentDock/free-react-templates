@@ -3,7 +3,16 @@
 ## Purpose
 
 Recreation of ColorLib "Login Form V3" (`login-form-v3`).
-Preview: https://preview.colorlib.com/theme/login-form-v3/ (unreachable — design tokens extracted from screenshot).
+Preview: https://preview.colorlib.com/theme/login-form-v3/ (unreachable — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v3/index.html` — HTTP 200, 2,085 B, title `Login V3`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v3/css/style.css?v=b2062df8` (13,333 B).
+> Faces it actually declares: `Poppins-Medium`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 Source page: https://colorlib.com/wp/template/login-form-v3/
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.

@@ -3,8 +3,17 @@
 ## Purpose
 
 - Recreation of ColorLib **Bootstrap Buttons 11** (`https://colorlib.com/wp/template/bootstrap-buttons-11/`).
-- Preview URL: `https://preview.colorlib.com/theme/bootstrap-buttons-11/` (Note: Live preview URL is unreachable; designed from the official ColorLib screenshot showing a comprehensive collection of styled buttons, gradients, icons, states, and interactive button groups).
+- Preview URL: `https://preview.colorlib.com/theme/bootstrap-buttons-11/` (Note: Live preview URL is unreachable; designed from the official ColorLib screenshot showing a comprehensive collection of styled buttons, gradients, icons, states, and interactive button groups) — **re-probed 2026-10-23: the demo serves** (measured record below).
 - Stack: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bb/bootstrap-buttons-11/` — HTTP 200, 3,279 B, title `Button #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-11/css/style.css?v=bd2a185c` (16,654 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens (Inferred from Screenshot / Standard Bootstrap UI Showcase Style)
 

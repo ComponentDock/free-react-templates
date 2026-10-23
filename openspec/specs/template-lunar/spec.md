@@ -41,7 +41,7 @@ Lunar lives in `apps/lunar` and uses shared components from `packages/ui`
   centered month header "February 2021" with small `<` / `>` arrows at the
   sides, a weekday row (Su Mo Tu We Th Fr Sa — the old demo's render shows
   "Me" for Monday, a typo in the screenshot only; the LIVE DOM renders
-  "Mo"), a 7-column grid of square day cells (dark grey current-month
+  "Mo") — **re-probed 2026-10-23: the demo serves** (measured record below), a 7-column grid of square day cells (dark grey current-month
   numbers, faint light-grey adjacent-month numbers), and the selected date
   (16) as a solid salmon-pink CIRCLE with white text. No other page
   furniture.
@@ -51,6 +51,15 @@ Lunar lives in `apps/lunar` and uses shared components from `packages/ui`
   any of this; use the monorepo stack + lucide-react icons (ChevronLeft /
   ChevronRight for the nav arrows) + no images at all (this design is pure
   CSS).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/calendar-16/` — HTTP 200, 1,019 B, title `Calendar #6`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/calendar-16/css/style.css?v=388326c2` (9,613 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ### Section order (1:1, confirmed from preview DOM)
 

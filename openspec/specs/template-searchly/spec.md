@@ -12,13 +12,22 @@ bar with a full-viewport hero background image, bold heading, and a multi-field
 search form (what + where + search button).
 
 - **Source:** https://colorlib.com/wp/template/colorlib-search-13/
-- **Live preview (archived):** unreachable — https://preview.colorlib.com/theme/colorlib-search-13/ returned 404
+- **Live preview (archived):** unreachable — https://preview.colorlib.com/theme/colorlib-search-13/ returned 404 — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Fallback reference:** screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-13.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-13/` — HTTP 200, 1,859 B, title ``.
+>
+> Sheet: `https://colorlib.com/etc/searchf/colorlib-search-13/css/style.css?v=b9130b7f` (11,116 B).
+> Faces it actually declares: `Poppins`, `Lato`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from the screenshot (preview unreachable). Approximate values from visual inspection.
+Extracted from the screenshot (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below). Approximate values from visual inspection.
 
 | Token               | Value                                                              |
 | ------------------- | ------------------------------------------------------------------ |

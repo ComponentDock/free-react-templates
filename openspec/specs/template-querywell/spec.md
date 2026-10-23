@@ -11,7 +11,7 @@ Package: `@free-react-templates/querywell`.
 
 ## Design tokens
 
-Extracted from screenshot analysis (preview unreachable; screenshot is sole reference):
+Extracted from screenshot analysis (preview unreachable; screenshot is sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below): — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token              | Value                     |
 | ------------------ | ------------------------- |
@@ -26,6 +26,15 @@ Extracted from screenshot analysis (preview unreachable; screenshot is sole refe
 | Category link bg   | Semi-transparent dark     |
 | Overall palette    | Muted earth tones in hero image, white text, dark search bar |
 | Section bg         | Hero image (full viewport height, centered) |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-5/` — HTTP 200, 1,758 B, title ``.
+>
+> Sheet: `https://colorlib.com/etc/searchf/colorlib-search-5/css/style.css?v=83704fa1` (8,519 B).
+> Faces it actually declares: `Poppins`, `Helvetica`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

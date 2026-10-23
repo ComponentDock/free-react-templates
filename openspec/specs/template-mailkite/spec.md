@@ -12,7 +12,7 @@ Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contac
 
 ## Design Tokens
 
-> Extracted from screenshot analysis (preview was unreachable).
+> Extracted from screenshot analysis (preview was unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token              | Value                          | Notes                                                    |
 | ------------------ | ------------------------------ | -------------------------------------------------------- |
@@ -32,6 +32,16 @@ Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contac
 | btn-radius         | `4px`                          | Slightly rounded button corners                          |
 | btn-padding        | `12px 32px`                    | Generous horizontal padding                              |
 | overlay-opacity    | `0.65`                         | Gradient overlay on background image                     |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v2/index.html` — HTTP 200, 1,685 B, title `Contact V2`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v2/css/style.css?v=6c4ee4df` (10,677 B).
+> Colours that sheet actually paints: `#d5007d` ×12, `#e53935` ×12.
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

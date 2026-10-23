@@ -3,10 +3,19 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 7 (`https://colorlib.com/wp/template/colorlib-wizard-7/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` (unreachable at time of prep; design captured from screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` (unreachable at time of prep; design captured from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `steplink` (App directory: `apps/steplink`, Package: `@free-react-templates/steplink`)
 - **Category**: Bootstrap Wizard Templates / Restaurant Reservation
 - **Description**: A premium restaurant table reservation form with a 3-step wizard process (party details → date/time → confirmation), split-layout with moody food photography and a dark form panel.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` — HTTP 200, 10,359 B, title `FormWizard_v7`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-7/css/style.css?v=7973a996` (8,628 B).
+> Faces it actually declares: `Raleway-Bold`, `Satisfy-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens (captured from ColorLib preview screenshot)
 

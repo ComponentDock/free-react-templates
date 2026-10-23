@@ -4,10 +4,20 @@
 
 A Login Form template with full-viewport background, centered login, username input with icon, password input with icon and sign in button sections. Recreation of ColorLib "Login Form V16" (slug: `login-form-v16`).
 
-- Preview URL: `https://preview.colorlib.com/theme/login-form-v16/` (unreachable — falling back to screenshot)
+- Preview URL: `https://preview.colorlib.com/theme/login-form-v16/` (unreachable — falling back to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - ColorLib source: `https://colorlib.com/wp/template/login-form-v16/`
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v16.jpg`
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v16/index.html` — HTTP 200, 1,424 B, title `Login V16`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v16/css/style.css?v=8ec96743` (11,857 B).
+> Colours that sheet actually paints: `#d41872` ×12.
+> Faces it actually declares: `Ubuntu-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

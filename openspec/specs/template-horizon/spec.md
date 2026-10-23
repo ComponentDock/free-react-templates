@@ -2,8 +2,17 @@
 
 > Recreation of ColorLib "08 Comming Soon" (Coming Soon V23)
 > Source: https://colorlib.com/wp/template/08-comming-soon/
-> Preview: unreachable (404); design based on screenshot + description.
+> Preview: unreachable (404); design based on screenshot + description — **re-probed 2026-10-23: the demo serves** (measured record below).
 > Description: "full-screen image background website template with a framed look"
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/08-comming-soon.html` — HTTP 200, 5,032 B, title `TITLE`.
+>
+> Sheet: `https://colorlib.com/etc/cs/08-comming-soon/css/style.css?v=19c47045` (9,480 B).
+> Faces it actually declares: `Open Sans`, `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Purpose
 

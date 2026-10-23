@@ -19,7 +19,7 @@ CSS 4 + TypeScript.
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_05/ returns
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11 — the same
   live-preview gap as the rest of the `comingsoon_*` family), so the live
-  preview DOM is unreachable for this slug. Fallback (documented per
+  preview DOM is unreachable for this slug. Fallback (documented per — **re-probed 2026-10-23: the demo serves** (measured record below)
   `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_05.zip`
   (HTTP 200, 254,330 B, `application/zip`) was downloaded and extracted to
@@ -37,6 +37,15 @@ CSS 4 + TypeScript.
   source demo title "Coming Soon 5" / "Coming Soon V05" and the demo footer
   credit are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_05/index.html` — HTTP 200, 2,138 B, title `Coming Soon 5`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_05/css/style.css?v=61a959d8` (10,652 B).
+> Faces it actually declares: `Ubuntu-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is one full-viewport screen, not a scrolling site. The background
 is the brand wash on `.bg-g1`:
@@ -108,7 +117,7 @@ body/placeholder greys `#555555` / `#999999`, and the `#c80000` validation red.
 - **Preview URL:** https://preview.colorlib.com/theme/comingsoon_05/ →
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11; the
   `comingsoon05`, `comingsoon-05`, `comingsoon5` and `comingsoon/05` variants
-  are 404 too). Fallback used (documented): the official source zip
+  are 404 too) — **re-probed 2026-10-23: the demo serves** (measured record below). Fallback used (documented): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_05.zip` (HTTP 200,
   254,330 B, `application/zip`), downloaded and extracted to
   `/tmp/cs05/comingsoon_05/`. Reference artifacts: `/tmp/cs05/cs05.zip`,

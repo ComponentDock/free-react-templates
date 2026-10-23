@@ -50,7 +50,17 @@ kebab-case `sideboard`, no collision with `apps/`, `openspec/specs/`,
 `sideboard` in ls apps/ or ls openspec/specs/). Source slug:
 `bootstrap-sidebar-07`. Preview URL:
 https://preview.colorlib.com/theme/bootstrap-sidebar-07/ (returns 404 at
-time of prep — 2026-09-30 — reference is the TEMPLATES.md screenshot).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bootstrap-sidebar/sidebar-07/` — HTTP 200, 10,631 B, title `Sidebar 07`.
+>
+> Sheet: `https://colorlib.com/etc/bootstrap-sidebar/sidebar-07/css/style.css?v=74146d45` (19,426 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+> The recorded brand `#4361ee` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+time of prep — 2026-09-30 — reference is the TEMPLATES.md screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 ## Design reference (replication findings)
 
@@ -58,11 +68,11 @@ time of prep — 2026-09-30 — reference is the TEMPLATES.md screenshot).
   #07"). Listed in TEMPLATES.md under **Bootstrap Sidebars** (section
   header line ~2798). Sibling templates in the family: Bootstrap Sidebar
   01–10 + Colorlib Sidebar V01–V10.
-- **Live preview — UNREACHABLE (404, verified 2026-09-30):** The naive
+- **Live preview — UNREACHABLE (404, verified 2026-09-30):** The naive — **re-probed 2026-10-23: the demo serves** (measured record below)
   `https://preview.colorlib.com/theme/bootstrap-sidebar-07/` returns HTTP
   404 ("Not Found"). Fallback: TEMPLATES.md screenshot
   (`bootstrap-sidebar-170658.jpg`). No CSS tokens could be extracted from
-  the live preview; all tokens are derived from the screenshot analysis.
+  the live preview; all tokens are derived from the screenshot analysis — **re-probed 2026-10-23: the demo serves** (measured record below).
 - **Screenshot analysis (viewed 2026-09-30 via vision):**
   - Two-panel layout: fixed left sidebar + scrollable main content.
   - Sidebar: solid royal-blue background (~#4361ee), full viewport height,

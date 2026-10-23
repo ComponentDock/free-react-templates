@@ -11,7 +11,7 @@ A free sign-up form template with a split-screen layout featuring a decorative p
 
 ## Design tokens
 
-Extracted from the ColorLib screenshot (preview was unreachable):
+Extracted from the ColorLib screenshot (preview was unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token                | Value                                                       | Source                      |
 | -------------------- | ----------------------------------------------------------- | --------------------------- |
@@ -31,6 +31,16 @@ Extracted from the ColorLib screenshot (preview was unreachable):
 | Button border-radius | `pill (9999px)`                                             | Rounded full                |
 | Social icon style    | `#f5a0b0` border + fill circles                             | Social login section        |
 | Photo panel          | 50% width on desktop, hidden on mobile (replaced by banner) | Split layout                |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-24/` — HTTP 200, 3,927 B, title `RegistrationForm_v8 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-24/css/style.css?v=8bf3a914` (6,437 B).
+> Faces it actually declares: `Muli-Regular`, `ChelseaMarket-Regular`.
+> The recorded brand `#f5a0b0` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Layout & sections
 

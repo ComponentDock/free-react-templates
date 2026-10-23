@@ -5,7 +5,16 @@
 Panelview is a two-column sidebar navigation template, a recreation of ColorLib
 "Bootstrap Sidebar 08". The original source is
 https://colorlib.com/wp/template/bootstrap-sidebar-08/. The live preview was
-unreachable at time of research (404), so the design is based on the screenshot
+unreachable at time of research (404), so the design is based on the screenshot — **re-probed 2026-10-23: the demo serves** (measured record below)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/` — HTTP 200, 16,384 B, title `Sidebar 08`.
+>
+> Sheet: `https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/css/style.css?v=83846b7b` (13,264 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 only.
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.

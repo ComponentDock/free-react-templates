@@ -9,8 +9,19 @@ Checkout button.
 
 - **Source slug:** `colorlib-sidebar-v09`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-sidebar-v09/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-sidebar-v09/ (404 — preview unreachable; design captured from screenshot + source page metadata)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-sidebar-v09/ (404 — preview unreachable; design captured from screenshot + source page metadata) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v09/` — HTTP 200, 8,988 B, title `Sidebar #9`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v09/css/style.css?v=96fb365a` (16,992 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The recorded brand `#1a73e8` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+> The prescribed face `inter` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (from source screenshot + Colorlib page CSS)
 

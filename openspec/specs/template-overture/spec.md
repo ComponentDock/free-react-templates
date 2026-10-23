@@ -14,7 +14,16 @@ A Coming Soon template with heading and subtext, countdown timer, notify us butt
 
 ## Live reference restored (2026-10-22)
 
-The prep recorded this ColorLib preview as unreachable, so its tokens were
+The prep recorded this ColorLib preview as unreachable, so its tokens were — **re-probed 2026-10-23: the demo serves** (measured record below)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/06-comming-soon.html` — HTTP 200, 5,032 B, title `TITLE`.
+>
+> Sheet: `https://colorlib.com/etc/cs/06-comming-soon/css/style.css?v=97cb11f3` (9,497 B).
+> Faces it actually declares: `Open Sans`, `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 read off the TEMPLATES.md screenshot and the docs brief says "screenshot
 only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
 live DOM and CSS are authoritative for token values — `docs/replication.md`:

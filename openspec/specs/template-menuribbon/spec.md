@@ -82,7 +82,7 @@ source name.
   archive's `index.html` (8,233 B) and the live page render the **same DOM** apart
   from the preview host's own head injections (a `cdnjs` `dns-prefetch`,
   `fetchpriority` on the stylesheet link, `?v=` cache-busters). **No
-  screenshot-only fallback was needed.**
+  screenshot-only fallback was needed.** — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-04.jpg`
   (HTTP 200, **AVIF**, 57,007 B, decodes **1200 × 972**) — a browser-chrome mock:
   a **light-grey utility bar** with `info@yourdomain.com` and `1+ (234) 5678 9101`
@@ -97,6 +97,15 @@ source name.
   six **Open Sans** woff2 subsets (300/400/700 × latin/latin-ext — the stylesheet
   itself only declares **400 and 700**) plus `icomoon-subset.woff2` (424 B, sha256
   `5dd63fd374884df19c9efc23f78cacdf2bc75ff36a7f8452db09ccbefa594e70`).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/website-menu-04/` — HTTP 200, 8,436 B, title `Website Menu #4`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/website-menu-04/css/style.css?v=a1db509a` (19,345 B).
+> Faces it actually declares: `Open Sans`, `Roboto`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (measured from the live preview's `css/style.css`)
 

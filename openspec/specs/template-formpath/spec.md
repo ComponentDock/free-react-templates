@@ -6,17 +6,26 @@ Recreation of ColorLib "Colorlib Wizard 29" — a four-step registration wizard
 with step indicator, built with Bootstrap in the original.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-wizard-29/
-- **Preview (live demo):** https://preview.colorlib.com/theme/colorlib-wizard-29/ (unreachable — 404 at time of research; design based on screenshot + template page metadata)
+- **Preview (live demo):** https://preview.colorlib.com/theme/colorlib-wizard-29/ (unreachable — 404 at time of research; design based on screenshot + template page metadata) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-29.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Description:** A simple free registration wizard template with a four-step
   process: username, email, password, and password confirmation. Centered card
   layout on a clean background with step indicator and navigation buttons.
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-29/index.html` — HTTP 200, 4,904 B, title `Au Form Wizard`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-29/css/style.css?v=07038cf2` (7,994 B).
+> Faces it actually declares: `Lato`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
 Extracted from the ColorLib template page CSS (`wp-custom-css`) and
-structural analysis. The preview was unreachable (404), so tokens are
+structural analysis. The preview was unreachable (404), so tokens are — **re-probed 2026-10-23: the demo serves** (measured record below)
 derived from the template listing page styles and standard Bootstrap Wizard
 patterns.
 

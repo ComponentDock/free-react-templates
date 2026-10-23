@@ -9,9 +9,18 @@ footer.
 
 - **ColorLib source:** https://colorlib.com/wp/template/boxus/
 - **Preview URL:** https://preview.colorlib.com/theme/boxus/ (returned 404 at prep
-  time; design captured from screenshot + live HTML/CSS fetched from preview server)
+  time; design captured from screenshot + live HTML/CSS fetched from preview server) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **New name:** `boxstudio` (apps/boxstudio, @free-react-templates/boxstudio)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/boxus/` — HTTP 200, 72,508 B, title `Boxus - Html Responsive One Page Template`.
+>
+> Sheets: `https://preview.colorlib.com/theme/boxus/css/clear.css` (1,403 B), `https://preview.colorlib.com/theme/boxus/css/common.css` (3,381 B), `https://preview.colorlib.com/theme/boxus/css/font-awesome.min.css` (1,151 B), `https://preview.colorlib.com/theme/boxus/css/carouFredSel.css` (2,375 B) (+4 more).
+> Faces it actually declares: `Roboto`, `Montserrat`, `Georgia`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

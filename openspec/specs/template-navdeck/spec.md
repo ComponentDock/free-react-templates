@@ -5,10 +5,19 @@
 Recreation of ColorLib **Sidebar V01** — a left profile sidebar with social media navigation and a content feed grid.
 
 - **Source slug:** `colorlib-sidebar-v01`
-- **Preview URL:** `https://preview.colorlib.com/theme/colorlib-sidebar-v01/` (returns 404 at time of prep — design captured from screenshot)
+- **Preview URL:** `https://preview.colorlib.com/theme/colorlib-sidebar-v01/` (returns 404 at time of prep — design captured from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Template page:** `https://colorlib.com/wp/template/colorlib-sidebar-v01/`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Description:** A left profile sidebar with an avatar, name and location, post/follower/following counts, and an icon menu for Feed, Explore, Notifications, Direct messages, Stats, and Sign out. The main content area is a 2-column grid of social media post cards.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v01/` — HTTP 200, 11,179 B, title `Sidebar #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v01/css/style.css?v=84a5a490` (15,095 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

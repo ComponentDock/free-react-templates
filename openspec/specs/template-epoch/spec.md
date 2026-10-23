@@ -2,7 +2,16 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`, preview unreachable, designed from screenshot reference). Built with Vite, React 19, Tailwind CSS 4, and TypeScript. Provides an elegant modern calendar event planner and scheduling interface with date selection, event management, and responsive layout.
+Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`, preview unreachable, designed from screenshot reference) — **re-probed 2026-10-23: the demo serves** (measured record below). Built with Vite, React 19, Tailwind CSS 4, and TypeScript. Provides an elegant modern calendar event planner and scheduling interface with date selection, event management, and responsive layout.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/calendar-14/` — HTTP 200, 1,146 B, title `Calendar #4`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/calendar-14/css/style.css?v=4c250d36` (11,192 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

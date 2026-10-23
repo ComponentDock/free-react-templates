@@ -5,11 +5,20 @@
 A Sidebar Navigation template with hamburger and main sections. Recreation of ColorLib **Bootstrap Sidebar 02** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/bootstrap-sidebar-02/
-- Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-02/ (unreachable — 404)
+- Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-02/ (unreachable — 404) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170618.jpg
 - New name: `sidecraft` (apps/sidecraft, @free-react-templates/sidecraft)
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
-- Note: Live preview was unreachable (404). Design tokens and structure derived from the screenshot.
+- Note: Live preview was unreachable (404). Design tokens and structure derived from the screenshot — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bootstrap-sidebar/sidebar-02/` — HTTP 200, 4,808 B, title `Sidebar 02`.
+>
+> Sheet: `https://colorlib.com/etc/bootstrap-sidebar/sidebar-02/css/style.css?v=49f8fffb` (16,998 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (extracted from screenshot)
 

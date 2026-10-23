@@ -11,9 +11,18 @@ Recreation of **ColorLib Wizard 8** — a multi-step onboarding/registration wiz
 
 - **Source slug:** `colorlib-wizard-8`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-8/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-wizard-8/ (404 — unreachable; design captured from screenshot)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-wizard-8/ (404 — unreachable; design captured from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **New name:** `wizpath` (app: `apps/wizpath`, package: `@free-react-templates/wizpath`)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-8/index.html` — HTTP 200, 23,071 B, title `FormWizard_v8`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-8/css/style.css?v=1b3edc92` (10,457 B).
+> Faces it actually declares: `Lato-Bold`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

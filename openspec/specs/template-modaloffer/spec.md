@@ -5,10 +5,20 @@
 Recreation of the ColorLib "Modal V18" template — a free offer with CTA modal for promoting exclusive offers, deals, and projects.
 
 - **Source:** [ColorLib Modal 18](https://colorlib.com/wp/template/modal-18/)
-- **Preview:** https://preview.colorlib.com/theme/modal-18/ (404 at time of prep — using page analysis)
+- **Preview:** https://preview.colorlib.com/theme/modal-18/ (404 at time of prep — using page analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-18.jpg
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Design category:** Modal (Bootstrap Modal Templates)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/modal-18/` — HTTP 200, 2,250 B, title `Modal #8`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/modal-18/css/style.css?v=6d8f01a7` (19,339 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+> The recorded brand `#ff6b35` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

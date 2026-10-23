@@ -9,8 +9,18 @@ centered on a light gray background.
 - **Source slug:** `contact-form-04`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-04/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-04/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/contact-form-04/` — HTTP 200, 13,939 B, title `Contact Form 04`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/contact-form-04/css/style.css?v=9be41b33` (17,693 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+> The recorded brand `#512d97` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

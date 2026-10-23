@@ -14,9 +14,18 @@ on a soft peach/beige page background. It features a four-step horizontal
 progress bar, a form with billing fields, and a "Next" button with a right-arrow icon.
 
 - **Source template**: [Colorlib Wizard 5](https://colorlib.com/wp/template/colorlib-wizard-5/)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-5/` (unreachable at prep time — 404; fallback to screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-5/` (unreachable at prep time — 404; fallback to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-5.jpg`
 - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` — HTTP 200, 9,892 B, title `FormWizard_v5`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-5/css/style.css?v=4559639a` (12,177 B).
+> Faces it actually declares: `Poppins-Medium`, `Muli-Bold`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Naming
 
@@ -180,7 +189,7 @@ The page footer SHALL include a link to https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] Preview unreachable (404) — fallback to screenshot used for all design tokens
+- [ ] Preview unreachable (404) — fallback to screenshot used for all design tokens — **re-probed 2026-10-23: the demo serves** (measured record below)
 - [ ] Page background is a soft peach (`#f5e6d0`)
 - [ ] Form card is white with rounded corners (`8px` radius)
 - [ ] Step indicator: horizontal 4-segment bar, active = peach, inactive = grey

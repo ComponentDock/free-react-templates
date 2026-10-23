@@ -5,9 +5,19 @@
 A Contact Form template with split-screen contact form, contact form fields, send button and footer attribution sections. Recreation of ColorLib **Contact Form V13** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source**: https://colorlib.com/wp/template/contact-form-v13/
-- **Preview URL**: https://preview.colorlib.com/theme/contact-form-v13/ (returned 404 at time of research — screenshot used as sole reference)
+- **Preview URL**: https://preview.colorlib.com/theme/contact-form-v13/ (returned 404 at time of research — screenshot used as sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v13.jpg
 - **Description**: A split-screen contact form with a dark map background on the left and a clean white form panel on the right. Features a green phone number badge overlay on the map, validated form fields with colored underlines, and a gradient coral-to-pink Send button.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v13/index.html` — HTTP 200, 2,971 B, title `Contact V13`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v13/css/style.css?v=2196fd26` (13,319 B).
+> Colours that sheet actually paints: `#d5007d` ×12, `#e53935` ×12.
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

@@ -33,7 +33,7 @@ TypeScript.
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11 — the same
   live-preview gap as the rest of the `comingsoon_*` family; there is no
   `theme/bootstrap/<slug>/` variant either), so the live preview DOM is
-  unreachable for this slug. Fallback (documented per `docs/replication.md`):
+  unreachable for this slug. Fallback (documented per `docs/replication.md`): — **re-probed 2026-10-23: the demo serves** (measured record below)
   the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_09.zip`
   (HTTP 200, 436,524 B, `application/zip`) was downloaded and extracted to
@@ -58,6 +58,15 @@ TypeScript.
   "OCEAN" wordmark image, its inlined fa-brand SVG icons, its "Sign Up" label,
   its "Coming Soon" copy and its favicon are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_09/index.html` — HTTP 200, 4,638 B, title `Coming Soon 9`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_09/css/style.css?v=fe7de957` (8,825 B).
+> Faces it actually declares: `Poppins-Thin`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is one full-viewport screen, not a scrolling site. Its skeleton is
 TWO sibling layers, both full-screen:

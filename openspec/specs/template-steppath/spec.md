@@ -6,15 +6,25 @@ Recreation of **ColorLib "Wizard 5"** — a 4-step order template designed for
 ecommerce websites with a convenient multi-step wizard flow.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-wizard-5/
-- **Preview (original):** https://preview.colorlib.com/theme/colorlib-wizard-5/ (unreachable at prep time)
+- **Preview (original):** https://preview.colorlib.com/theme/colorlib-wizard-5/ (unreachable at prep time) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-5.jpg
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript
 - **New name:** `steppath` (app folder: `apps/steppath`, package: `@free-react-templates/steppath`)
 - **Deploy target:** https://steppath.free.componentdock.com
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` — HTTP 200, 9,892 B, title `FormWizard_v5`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-5/css/style.css?v=4559639a` (12,177 B).
+> Faces it actually declares: `Poppins-Medium`, `Muli-Bold`.
+> The recorded brand `#46c24a` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from screenshot pixel analysis (preview was unreachable — 404):
+Extracted from screenshot pixel analysis (preview was unreachable — 404) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token            | Value                                      | Notes                                   |
 | ---------------- | ------------------------------------------ | --------------------------------------- |
@@ -33,7 +43,7 @@ Extracted from screenshot pixel analysis (preview was unreachable — 404):
 | Card radius      | ~8px (rounded card)                        | Wizard card corners                     |
 | Button radius    | ~4px (slightly rounded)                    | CTA button corners                      |
 
-**Color note:** The preview was unreachable. Tokens derived from screenshot
+**Color note:** The preview was unreachable. Tokens derived from screenshot — **re-probed 2026-10-23: the demo serves** (measured record below)
 pixel sampling. The palette is warm and earthy: beige/tan backgrounds with
 teal accents and golden/amber CTAs. This differs from typical modern
 flat UI — the warm tones give it an organic, approachable feel.

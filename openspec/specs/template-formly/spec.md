@@ -5,9 +5,18 @@
 An Event Registration Form template with name field, company field, email field, phone field, subject dropdown and customer radio buttons sections. Recreation of **ColorLib Regform 5** (`colorlib-regform-5`) as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-regform-5/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-5/ (unreachable; screenshot used as sole reference)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-5/ (unreachable; screenshot used as sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-5.jpg
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-5/` — HTTP 200, 6,592 B, title `Au Register Forms by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-5/css/style.css?v=89870ded` (14,144 B).
+> Faces it actually declares: `Open Sans`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens (extracted from screenshot)
 

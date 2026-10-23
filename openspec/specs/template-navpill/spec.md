@@ -68,7 +68,7 @@ source name.
   (3,336 B) and the live page render the **same DOM** apart from the preview
   host's own head injections (two `robots` meta tags, a `cdnjs` `dns-prefetch`,
   `fetchpriority` on the stylesheet link, `?v=` cache-busters). **No
-  screenshot-only fallback was needed.**
+  screenshot-only fallback was needed.** — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/website-menu-03.jpg`
   (HTTP 200, **AVIF**, 71,239 B, decodes **1200 × 972**) — a browser-chrome mock
   of a frame-filling **desert** photograph (Monument Valley buttes against a pale
@@ -82,6 +82,15 @@ source name.
   `.../website-menu-03/images/hero_1.jpg`), and `fonts/` with six **Open Sans**
   woff2 subsets (300/400/700 × latin/latin-ext — the stylesheet itself only
   declares **400 and 700**) plus `icomoon-subset.woff2` (424 B).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/website-menu-03/` — HTTP 200, 3,539 B, title `Website Menu #3`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/website-menu-03/css/style.css?v=0e95d7fb` (18,746 B).
+> Faces it actually declares: `Open Sans`, `Roboto`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (measured from the live preview's `css/style.css`)
 

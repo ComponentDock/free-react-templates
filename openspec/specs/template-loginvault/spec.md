@@ -5,12 +5,21 @@
 Recreation of ColorLib **Login Form V5** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v5/
-- **Preview URL:** https://preview.colorlib.com/theme/login-form-v5/ (404 at prep time — unreachable; design tokens extracted from downloaded screenshot)
+- **Preview URL:** https://preview.colorlib.com/theme/login-form-v5/ (404 at prep time — unreachable; design tokens extracted from downloaded screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v5.jpg
 - **New name:** `loginvault` (app folder `apps/loginvault`, package `@free-react-templates/loginvault`)
 - **Deploy URL:** https://loginvault.free.componentdock.com
 
-## Design Tokens (from screenshot analysis)
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v5/index.html` — HTTP 200, 2,615 B, title `Login V5`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v5/css/style.css?v=fecf782e` (13,961 B).
+> Faces it actually declares: `Poppins-Medium`, `Montserrat-Medium`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
+## Design Tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 ### Colors
 

@@ -6,14 +6,25 @@ Recreation of ColorLib **Search Form Bar 19** — a simple job search template w
 
 - **Source slug:** `search-form-bar-19`
 - **Source:** https://colorlib.com/wp/template/search-form-bar-19/
-- **Preview:** https://preview.colorlib.com/theme/search-form-bar-19/ — returned 404 at prep time
+- **Preview:** https://preview.colorlib.com/theme/search-form-bar-19/ — returned 404 at prep time — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Fallback reference:** screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-19.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Search Form Bar / Job Search
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-19/` — HTTP 200, 3,320 B, title `Search #9`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-19/css/style.css?v=d4d74eda` (16,483 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The recorded brand `#4a90e2` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from the screenshot analysis (preview CSS unavailable).
+Extracted from the screenshot analysis (preview CSS unavailable) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                       | Value                                                                    |
 | --------------------------- | ------------------------------------------------------------------------ |

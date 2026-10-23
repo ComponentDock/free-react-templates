@@ -16,7 +16,16 @@ text. The sidebar is always visible on desktop and toggleable on mobile.
 
 **Preview URL:** https://preview.colorlib.com/theme/bootstrap-sidebar-03/
 (Note: preview returned 404 at prep time. Design captured from screenshot
-and ColorLib page analysis. See Design Reference section.)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/` — HTTP 200, 7,091 B, title `Sidebar 03`.
+>
+> Sheet: `https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/css/style.css?v=ef4104b9` (15,743 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+and ColorLib page analysis. See Design Reference section.) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 ## Design reference (replication findings)
 

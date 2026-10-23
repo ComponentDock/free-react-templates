@@ -6,7 +6,16 @@ An Accordion & FAQ Showcase template with sticky navigation header, hero banner,
 
 - **New Name**: Concertina (`apps/concertina`)
 - **Category**: Accordion / FAQ / Interactive Display
-- **Preview URL**: `https://colorlib.com/wp/template/accordion-05/` (Live preview unreachable; design derived from official ColorLib screenshot analysis).
+- **Preview URL**: `https://colorlib.com/wp/template/accordion-05/` (Live preview unreachable; design derived from official ColorLib screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bac/accordion-05/` — HTTP 200, 9,961 B, title `Accordion 05`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bac/accordion-05/css/style.css?v=8d10e590` (17,751 B).
+> Faces it actually declares: `Poppins`, `Ionicons`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

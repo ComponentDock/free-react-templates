@@ -3,10 +3,20 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 5 (`https://colorlib.com/wp/template/colorlib-wizard-5/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-5/` (unreachable at prep time — design tokens extracted from screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-5/` (unreachable at prep time — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `billflow` (App directory: `apps/billflow`, Package: `@free-react-templates/billflow`)
 - **Category**: Forms / Multi-step Checkout Wizard
 - **Description**: A warm, modern multi-step checkout form wizard with split-screen layout — decorative illustration on the left, vertical form card on the right. Designed for e-commerce order/billing flows with a 5-step progress indicator and warm peach-beige color palette.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` — HTTP 200, 9,892 B, title `FormWizard_v5`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-5/css/style.css?v=4559639a` (12,177 B).
+> Faces it actually declares: `Poppins-Medium`, `Muli-Bold`.
+> The recorded brand `#d98e56` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

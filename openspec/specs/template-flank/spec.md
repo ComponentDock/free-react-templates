@@ -5,11 +5,21 @@
 A Sidebar Navigation template with hamburger and main sections. Recreation of ColorLib **Bootstrap Sidebar 03** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/bootstrap-sidebar-03/
-- Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-03/ (unreachable — 404)
+- Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-03/ (unreachable — 404) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170625.jpg
 - New name: `flank` (apps/flank, @free-react-templates/flank)
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
-- Note: Live preview was unreachable (404). Design tokens and structure derived from the screenshot and the existing sidecraft (Bootstrap Sidebar 02) pattern.
+- Note: Live preview was unreachable (404). Design tokens and structure derived from the screenshot and the existing sidecraft (Bootstrap Sidebar 02) pattern — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/` — HTTP 200, 7,091 B, title `Sidebar 03`.
+>
+> Sheet: `https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/css/style.css?v=ef4104b9` (15,743 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+> The recorded brand `#3b82f6` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (derived from sidebar template series)
 

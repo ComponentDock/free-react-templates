@@ -159,7 +159,16 @@ minutes|seconds` (`.l2-txt1`) over a label `span` (`.s2-txt4`:
 
 ## Live reference restored (2026-10-22)
 
-The prep recorded this ColorLib preview as unreachable, so its tokens were
+The prep recorded this ColorLib preview as unreachable, so its tokens were — **re-probed 2026-10-23: the demo serves** (measured record below)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_01/index.html` — HTTP 200, 5,236 B, title `Coming Soon 1`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_01/css/style.css?v=232f3841` (12,745 B).
+> Faces it actually declares: `Lato-Bold`, `Poppins-Bold`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 read off the TEMPLATES.md screenshot and the docs brief says "screenshot
 only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
 live DOM and CSS are authoritative for token values — `docs/replication.md`:

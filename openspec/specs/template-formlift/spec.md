@@ -10,8 +10,17 @@ button, all on a light gray background inside a centered white card.
 - **Source slug:** `contact-form-v5`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v5/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v5/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v5/index.html` — HTTP 200, 4,457 B, title `Contact V5`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v5/css/style.css?v=25e70157` (20,184 B).
+> Faces it actually declares: `Montserrat-Black`, `Poppins-Regular`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

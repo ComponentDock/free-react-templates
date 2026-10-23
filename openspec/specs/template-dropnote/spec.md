@@ -8,10 +8,19 @@ overlay containing the message form.
 
 - **ColorLib source:** https://colorlib.com/wp/template/contact-form-v19/
 - **Live preview:** https://preview.colorlib.com/theme/contact-form-v19/ (404 at
-  time of research — 2026-09-17; screenshot used as primary reference)
+  time of research — 2026-09-17; screenshot used as primary reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **ColorLib description:** "Our basic free contact form template for sending
   messages with a Google Maps background integration and responsive design."
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v19/index.html` — HTTP 200, 1,688 B, title `Contact V19`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v19/css/style.css?v=7f3c4b1b` (9,709 B).
+> Faces it actually declares: `OpenSans-Regular`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (extracted from screenshot + ColorLib page)
 

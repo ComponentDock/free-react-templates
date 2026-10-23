@@ -9,8 +9,18 @@ checkmarks and error indicators.
 - **Source slug:** `contact-form-v14`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v14/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v14/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v14/index.html` — HTTP 200, 2,410 B, title `Contact V14`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v14/css/style.css?v=31b7f802` (11,265 B).
+> Colours that sheet actually paints: `#c77ff2` ×12, `#e8519e` ×12.
+> Faces it actually declares: `Raleway-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

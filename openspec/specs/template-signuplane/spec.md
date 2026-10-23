@@ -34,7 +34,16 @@ https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-14.jpg):
 - Card: centered, max-width ~550px, white background, subtle drop shadow
 
 **Note:** The live preview at `preview.colorlib.com/theme/colorlib-regform-14/`
-returns 404. Research used the screenshot as the sole reference.
+returns 404. Research used the screenshot as the sole reference — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-14/` — HTTP 200, 6,004 B, title `Sign Up Form by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-14/css/style.css?v=5884c80a` (11,833 B).
+> Faces it actually declares: `Montserrat`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 Signuplane lives in `apps/signuplane` and uses shared components from
 `packages/ui` (Button, cn).

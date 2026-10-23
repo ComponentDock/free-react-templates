@@ -2,7 +2,16 @@
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Wizard 7" — a multi-step restaurant table booking form (3-step wizard) for food and restaurant businesses. Features a dark charcoal form panel overlapping a high-end food photograph, with guest count, date, and time selectors. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-7/ (returns 404 at prep time; design based on screenshot reference and ColorLib listing page). Source slug: `colorlib-wizard-7`.
+Recreation of ColorLib "Colorlib Wizard 7" — a multi-step restaurant table booking form (3-step wizard) for food and restaurant businesses. Features a dark charcoal form panel overlapping a high-end food photograph, with guest count, date, and time selectors. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-7/ (returns 404 at prep time; design based on screenshot reference and ColorLib listing page) — **re-probed 2026-10-23: the demo serves** (measured record below). Source slug: `colorlib-wizard-7`.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` — HTTP 200, 10,359 B, title `FormWizard_v7`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-7/css/style.css?v=7973a996` (8,628 B).
+> Faces it actually declares: `Raleway-Bold`, `Satisfy-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Multi-step reservation wizard with date/time pickers, guest count selector, step indicator, and dark elegant restaurant aesthetic.
 

@@ -11,8 +11,18 @@ card fills the viewport vertically.
 - **Source slug:** `contact-form-v4`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v4/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v4/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v4/index.html` — HTTP 200, 3,807 B, title `Contact V4`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v4/css/style.css?v=6abd1ef4` (14,498 B).
+> Colours that sheet actually paints: `#00dbde` ×12, `#fc00ff` ×12.
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

@@ -3,15 +3,24 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 21 (`https://colorlib.com/wp/template/colorlib-wizard-21/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-21/` (NOTE: preview was unreachable at prep time; design tokens inferred from the ColorLib description and wizard-series pattern)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-21/` (NOTE: preview was unreachable at prep time; design tokens inferred from the ColorLib description and wizard-series pattern) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `formpilot` (App directory: `apps/formpilot`, Package: `@free-react-templates/formpilot`)
 - **Category**: Forms / Multi-step Wizard
 - **Description**: A free account and payment details template with confirmation. Multi-step form wizard featuring account setup, payment details entry, and a confirmation/review screen. Responsive layout with configurable design. Part of the ColorLib Wizard series (Bootstrap form templates).
 - **Source slug**: `colorlib-wizard-21`
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-21/index.html` — HTTP 200, 11,768 B, title `Wizard-v1`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-21/css/style.css?v=c9f02cd3` (13,082 B).
+> Faces it actually declares: `Raleway`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-> NOTE: Preview was unreachable at prep time. Tokens below are inferred from the ColorLib description ("account and payment details template with confirmation") and the established Colorlib Wizard series pattern (see wizardry / Wizard 27, runewizard / Wizard 15 for reference).
+> NOTE: Preview was unreachable at prep time. Tokens below are inferred from the ColorLib description ("account and payment details template with confirmation") and the established Colorlib Wizard series pattern (see wizardry / Wizard 27, runewizard / Wizard 15 for reference) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token | Value | Source / Rationale |
 |-------|-------|--------------------|

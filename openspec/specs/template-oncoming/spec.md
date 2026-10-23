@@ -51,7 +51,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11 — the same
   live-preview gap as the rest of the `comingsoon_*` family; there is no
   `theme/bootstrap/<slug>/` variant either), so the live preview DOM is
-  unreachable for this slug. Fallback (documented per `docs/replication.md`):
+  unreachable for this slug. Fallback (documented per `docs/replication.md`): — **re-probed 2026-10-23: the demo serves** (measured record below)
   the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_11.zip`
   (HTTP 200, 700,942 B, `application/zip`) was downloaded and extracted to
@@ -75,6 +75,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   "Sign Up" / "Coming Soon" / "Days" / "Hr" / "Min" / "Sec" strings and its
   favicon are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_11/index.html` — HTTP 200, 5,009 B, title `Coming Soon 11`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_11/css/style.css?v=b77d0db0` (8,561 B).
+> Faces it actually declares: `Lato-Regular`, `PlayfairDisplay-Italic`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is one full-viewport screen, not a scrolling site. Its skeleton is
 TWO sibling layers:
@@ -450,7 +459,7 @@ distinctive in SIX ways — do not blur it with `03`–`10` or with the
 
 ## Live reference restored (2026-10-22)
 
-The prep recorded this ColorLib preview as unreachable, so its tokens were
+The prep recorded this ColorLib preview as unreachable, so its tokens were — **re-probed 2026-10-23: the demo serves** (measured record below)
 read off the TEMPLATES.md screenshot and the docs brief says "screenshot
 only". **Re-probed 2026-10-22** the reference answers **HTTP 200**, so the
 live DOM and CSS are authoritative for token values — `docs/replication.md`:

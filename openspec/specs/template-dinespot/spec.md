@@ -59,7 +59,7 @@ kebab-case, no collision with `apps/`, `openspec/specs/`,
 - **Original:** ColorLib "Colorlib Regform 13" (page title: "Booking
   place for your dinner!"). Listed in TEMPLATES.md at line 2629.
   Single template — no sibling regform-13 variants.
-- **Live preview — UNREACHABLE:** The naive
+- **Live preview — UNREACHABLE:** The naive — **re-probed 2026-10-23: the demo serves** (measured record below)
   `https://preview.colorlib.com/theme/colorlib-regform-13/` returns
   HTTP 404 (verified 2026-09-27). Fallback: the screenshot image
   (`colorlib-reg-form-13.jpg`) was analyzed visually.
@@ -101,6 +101,15 @@ kebab-case, no collision with `apps/`, `openspec/specs/`,
     (possibly a serif or stylized sans-serif); form fields use a
     clean sans-serif.
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-13/` — HTTP 200, 4,924 B, title `Sign Up Form by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-13/css/style.css?v=abb728b4` (11,471 B).
+> Faces it actually declares: `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
 | Token                | Value                                  | Notes                                                                     |
@@ -122,7 +131,7 @@ kebab-case, no collision with `apps/`, `openspec/specs/`,
 | `--circle-size`      | ~50–60px                               | Person count circular buttons                                             |
 
 **Note:** Colors marked "(approx)" are estimated from the screenshot
-since the live preview was unreachable. The implementer should verify
+since the live preview was unreachable. The implementer should verify — **re-probed 2026-10-23: the demo serves** (measured record below)
 against the actual ColorLib source CSS if obtainable.
 
 ## Requirements

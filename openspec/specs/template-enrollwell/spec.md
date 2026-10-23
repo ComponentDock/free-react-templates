@@ -6,15 +6,24 @@ Recreation of the ColorLib "Colorlib Regform 24" template as a React 19 + Vite +
 
 - **Source slug:** `colorlib-regform-24`
 - **Source URL:** https://colorlib.com/wp/template/colorlib-regform-24/
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-24/ (404 — preview unreachable; design based on screenshot)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-24/ (404 — preview unreachable; design based on screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-24.jpg
 - **Stack:** React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict)
 - **Package:** `@free-react-templates/enrollwell`
 - **Surge target:** `enrollwell.free.componentdock.com`
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-24/` — HTTP 200, 3,927 B, title `RegistrationForm_v8 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-24/css/style.css?v=8bf3a914` (6,437 B).
+> Faces it actually declares: `Muli-Regular`, `ChelseaMarket-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-Extracted from the screenshot (preview unreachable):
+Extracted from the screenshot (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token | Value | Usage |
 |-------|-------|-------|

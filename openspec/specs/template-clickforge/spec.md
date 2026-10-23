@@ -8,7 +8,17 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 12 (`https://colorlib.com/wp/template/bootstrap-buttons-12/`).
-Preview URL: https://colorlib.com/wp/template/bootstrap-buttons-12/ (Preview URL unreachable / archived; recreated faithfully from template screenshot and design system patterns).
+Preview URL: https://colorlib.com/wp/template/bootstrap-buttons-12/ (Preview URL unreachable / archived; recreated faithfully from template screenshot and design system patterns) — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bb/bootstrap-buttons-12/` — HTTP 200, 46,741 B, title `Button 02`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-12/css/style.css?v=ed38b1d6` (40,302 B).
+> Colours that sheet actually paints: `#494ca2` ×15, `#94aa2a` ×13, `#f0134d` ×13.
+> Faces it actually declares: `Poppins`, `Ionicons`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 Stack: React 19, Tailwind CSS 4, TypeScript, Lucide Icons.
 
 ## Design Tokens

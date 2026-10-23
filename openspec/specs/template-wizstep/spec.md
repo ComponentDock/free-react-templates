@@ -3,14 +3,23 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 6 (`https://colorlib.com/wp/template/colorlib-wizard-6/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-6/` (unreachable — 404 at time of research; screenshot used as sole reference)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-6/` (unreachable — 404 at time of research; screenshot used as sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `wizstep` (App directory: `apps/wizstep`, Package: `@free-react-templates/wizstep`)
 - **Category**: Forms / Multi-step Account Creation Wizard
 - **Description**: A clean, modern multi-step account creation wizard with a pastel gradient background, floating white card, step dot indicators, profile picture upload, and three steps (Personal Info, Team Details, Credentials).
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` — HTTP 200, 7,014 B, title `FormWizard_v6`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-6/css/style.css?v=59e273aa` (10,428 B).
+> Faces it actually declares: `Poppins-Medium`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-Extracted from the ColorLib Wizard 6 screenshot (preview URL was 404):
+Extracted from the ColorLib Wizard 6 screenshot (preview URL was 404) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 - **Background**: Pastel gradient — light lavender (#e8d5f5) at top fading to soft pink (#f5c6d0) at bottom
 - **Card**: Solid white (#ffffff) background, large rounded corners (border-radius ~20px), subtle drop shadow

@@ -5,9 +5,20 @@
 A sidebar navigation template with a branded logo, search input, icon-based nav menu, and a two-column blog post grid in the main content area. Recreation of ColorLib Sidebar V06.
 
 Source: https://colorlib.com/wp/template/colorlib-sidebar-v06/
-Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v06/ (unreachable — 404; spec based on screenshot)
+Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v06/ (unreachable — 404; spec based on screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
-## Design tokens (from screenshot analysis)
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v06/` — HTTP 200, 18,212 B, title `Sidebar #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v06/css/style.css?v=8618633c` (17,145 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The recorded brand `#25d366` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
+## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token        | Value                     | Notes                                                        |
 | ------------ | ------------------------- | ------------------------------------------------------------ |

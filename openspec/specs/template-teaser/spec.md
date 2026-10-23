@@ -18,9 +18,9 @@ layout, colors, typography, and content types (no ColorLib assets copied).
 - **Original:** ColorLib "08 Comming Soon" — free coming soon website
   template (source: https://colorlib.com/wp/template/08-comming-soon/).
 - **Live preview DOM:** `https://preview.colorlib.com/theme/08-comming-soon/`
-  returned HTTP 404 — preview is unreachable.
+  returned HTTP 404 — preview is unreachable — **re-probed 2026-10-23: the demo serves** (measured record below).
 - **Screenshot analyzed:** TEMPLATES.md screenshot
-  (`coming-soon-23.jpg`, 1200×972 px) — the sole reference. Pixel-level
+  (`coming-soon-23.jpg`, 1200×972 px) — the sole reference. Pixel-level — **re-probed 2026-10-23: the demo serves** (measured record below)
   color sampling performed; design tokens extracted below.
 - **Section order (1:1 from screenshot):**
   1. Header band (light, transitioning from white to warm gray): likely
@@ -51,6 +51,15 @@ layout, colors, typography, and content types (no ColorLib assets copied).
   - **Font:** Lato (sans-serif) via Google Fonts — standard for ColorLib
     coming-soon series.
   - **Buttons:** pink filled (#e15e88), likely rounded, centered.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/08-comming-soon.html` — HTTP 200, 5,032 B, title `TITLE`.
+>
+> Sheet: `https://colorlib.com/etc/cs/08-comming-soon/css/style.css?v=19c47045` (9,480 B).
+> Faces it actually declares: `Open Sans`, `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 <!-- live-token-reverify:2026-10-22 -->
 

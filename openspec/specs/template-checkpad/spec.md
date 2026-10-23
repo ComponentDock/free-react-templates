@@ -20,7 +20,7 @@ single-column centered layout with a green accent palette.
 - **Original:** ColorLib "Checkbox 19" — nineteenth of the "Bootstrap Checkboxes
   (20)" series in TEMPLATES.md (line 751 — mark that line `[x]` when done).
 - **Preview URL:** https://preview.colorlib.com/theme/checkbox-19/
-  (preview returned 404 — falling back to screenshot and page metadata).
+  (preview returned 404 — falling back to screenshot and page metadata) — **re-probed 2026-10-23: the demo serves** (measured record below).
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-19.jpg
 - **Page metadata:** "Checkbox Demo" — a Bootstrap checkbox component demo.
 - **Visual design (from page description + analogous templates):** Clean,
@@ -35,6 +35,15 @@ single-column centered layout with a green accent palette.
   - Disabled text: `#6c757d` (Bootstrap muted)
   - Font: Roboto (Google Fonts)
   - Checkbox border: `#dee2e6` unchecked, `#198754` checked
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/checkbox-19/` — HTTP 200, 2,865 B, title `Checkbox #9`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/checkbox-19/css/style.css?v=121f3fc3` (8,759 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

@@ -14,7 +14,7 @@ ProbeBar is a minimal search form bar component page with a centered heading, a 
 
 It recreates the ColorLib **Search Form/Bar 06** design (https://colorlib.com/wp/template/search-form-bar-06/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
-## Design Tokens (from screenshot analysis)
+## Design Tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 - **Font**: System sans-serif (Helvetica/Arial-like), no Google Font loaded
 - **Heading font size**: ~24px, weight 400, color #333, centered
@@ -26,6 +26,15 @@ It recreates the ColorLib **Search Form/Bar 06** design (https://colorlib.com/wp
 - **Section padding**: generous vertical padding (~8em)
 - **Layout**: centered, single component, clean minimal aesthetic
 - **Overall style**: Ultra-minimal — just a title and one search bar component. No footer section in original; recreation will add Component Dock footer per convention.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-06/` — HTTP 200, 1,976 B, title `Search Form/Bar 06`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-06/css/style.css?v=7aee19ab` (10,477 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Screenshot Analysis
 

@@ -6,13 +6,22 @@ Recreation of ColorLib's **Bootstrap Footer 18** — a dark footer with a center
 
 - **Source slug:** `bootstrap-footer-18`
 - **ColorLib page:** https://colorlib.com/wp/template/bootstrap-footer-18/
-- **Preview URL:** https://preview.colorlib.com/theme/bootstrap-footer-18/ (404 at time of research — design tokens derived from screenshot analysis and standard Bootstrap Footer series conventions)
+- **Preview URL:** https://preview.colorlib.com/theme/bootstrap-footer-18/ (404 at time of research — design tokens derived from screenshot analysis and standard Bootstrap Footer series conventions) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Footer
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bft/bootstrap-footer-18/` — HTTP 200, 7,465 B, title `Footer 08`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bft/bootstrap-footer-18/css/style.css?v=884ad530` (17,102 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-Extracted from screenshot analysis (preview unreachable). Tokens are inferred from the rendered screenshot and standard Bootstrap Footer series conventions.
+Extracted from screenshot analysis (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below). Tokens are inferred from the rendered screenshot and standard Bootstrap Footer series conventions — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                      | Value                                  | Source                                      |
 | -------------------------- | -------------------------------------- | ------------------------------------------- |

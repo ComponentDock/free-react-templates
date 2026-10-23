@@ -16,9 +16,19 @@ behind the form card.
 - **Source slug:** `contact-form-v8`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v8/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v8/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v8.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v8/index.html` — HTTP 200, 2,115 B, title `Contact V8`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v8/css/style.css?v=dfe4dfb6` (11,120 B).
+> Faces it actually declares: `JosefinSans-Bold`, `Oswald-Medium`, `Segoe UI`, `Roboto`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

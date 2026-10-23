@@ -16,7 +16,7 @@ TypeScript.
   HTTP 200, 109,371 B, verified 2026-10-11)
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_03/ returns
   **HTTP 404** (9 B, `text/plain`, verified 2026-10-11);
-  `.../theme/comingsoon_03/index.html` is 404 too, and the ColorLib template
+  `.../theme/comingsoon_03/index.html` is 404 too, and the ColorLib template — **re-probed 2026-10-23: the demo serves** (measured record below)
   page exposes only the anchor preview
   `https://preview.colorlib.com/#comingsoon_03` and a downloadable source zip
   (`https://preview.colorlib.com/downloads/free/comingsoon_03.zip`, HTTP 200,
@@ -30,6 +30,15 @@ TypeScript.
   the source demo brand "Coming Soon 3" / "Coming Soon V03" (and the demo
   wordmark rendered in the design) is never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_03/index.html` — HTTP 200, 2,103 B, title `Coming Soon 3`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_03/css/style.css?v=1c38656d` (10,104 B).
+> Faces it actually declares: `Barlow-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is a single full-viewport screen, not a scrolling site. A
 full-bleed light photograph fills the viewport (`background-position:center`,

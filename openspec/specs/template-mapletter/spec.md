@@ -5,14 +5,23 @@
 Recreation of the ColorLib "Contact Form V20" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page contact form.
 
 - **Source:** [ColorLib Contact Form V20](https://colorlib.com/wp/template/contact-form-v20/)
-- **Preview URL:** https://preview.colorlib.com/theme/contact-form-v20/ (unreachable at prep time — 404; spec based on screenshot)
+- **Preview URL:** https://preview.colorlib.com/theme/contact-form-v20/ (unreachable at prep time — 404; spec based on screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v20.jpg
 - **New name:** `mapletter` (apps/mapletter, `@free-react-templates/mapletter`)
 - **Deploy target:** https://mapletter.free.componentdock.com
 
-## Design tokens (from screenshot analysis)
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v20/index.html` — HTTP 200, 1,882 B, title `Contact V20`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v20/css/style.css?v=8a8b21a3` (11,349 B).
+> Faces it actually declares: `OpenSans-Regular`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
-> Note: Preview page returned 404 at prep time. Tokens inferred from the
+## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
+
+> Note: Preview page returned 404 at prep time. Tokens inferred from the — **re-probed 2026-10-23: the demo serves** (measured record below)
 > official ColorLib screenshot.
 
 | Token             | Value / description                                                       |

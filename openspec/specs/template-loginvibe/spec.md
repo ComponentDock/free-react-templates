@@ -5,11 +5,20 @@
 Recreation of ColorLib's **Login Form V4** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page login page.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v4/
-- **Preview (unreachable):** https://preview.colorlib.com/theme/login-form-v4/
+- **Preview (unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below):** https://preview.colorlib.com/theme/login-form-v4/
 - **Fallback reference:** Screenshot at `https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v4.jpg`
 - **New name:** `loginvibe` (`apps/loginvibe`, `@free-react-templates/loginvibe`)
 - **Surge target:** `https://loginvibe.free.componentdock.com`
 - **Provenance note:** The preview URL returned 404 during prep; all design tokens extracted from the screenshot.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v4/index.html` — HTTP 200, 4,217 B, title `Login V4`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v4/css/style.css?v=824de217` (13,382 B).
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

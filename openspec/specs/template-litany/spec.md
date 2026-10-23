@@ -5,12 +5,23 @@
 Recreation of ColorLib's **Faith 2** template — a church landing page with event countdown, hero slider, ministries, sermons, and donation flow.
 
 - **Source**: https://colorlib.com/wp/template/faith-2/
-- **Preview**: https://preview.colorlib.com/theme/faith-2/ (unreachable at prep time — falling back to screenshot)
+- **Preview**: https://preview.colorlib.com/theme/faith-2/ (unreachable at prep time — falling back to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/faith2-free-template.jpg
 - **Stack**: React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Package**: `@free-react-templates/litany`
 - **App folder**: `apps/litany`
 - **Deploy target**: `litany.free.componentdock.com`
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/faith2/` — HTTP 200, 41,374 B, title `Faith - Church Template | Home`.
+>
+> Sheet: `https://preview.colorlib.com/theme/faith2/style.css` (47,584 B).
+> Colours that sheet actually paints: `#ac8a74` ×69, `#1b1b1b` ×25, `#eff4f6` ×12.
+> Faces it actually declares: `Poppins`.
+> The recorded brand `#b39a7a` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens (extracted from preview screenshot)
 

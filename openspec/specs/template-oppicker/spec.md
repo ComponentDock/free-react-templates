@@ -8,8 +8,17 @@ dropdown list component.
 - **Source**: https://colorlib.com/wp/template/multiselect-01/
 - **Preview**: https://preview.colorlib.com/theme/bootstrap/multiselect-01/
   (preview reached; fallback to screenshot noted where preview was 404 at
-  `/theme/multiselect-01/`; actual URL uses `/theme/bootstrap/multiselect-01/`)
+  `/theme/multiselect-01/`; actual URL uses `/theme/bootstrap/multiselect-01/`) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/multiselect-01/` — HTTP 200, 1,453 B, title `Multiselect 01`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/multiselect-01/css/style.css?v=3e58a56a` (21,905 B).
+> Faces it actually declares: `Lato`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

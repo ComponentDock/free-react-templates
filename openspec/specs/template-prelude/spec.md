@@ -24,8 +24,17 @@ Prelude lives in `apps/prelude` and uses shared components from `packages/ui`.
 
 - **Source**: ColorLib **01 Comming Soon** — https://colorlib.com/wp/template/01-comming-soon/
 - **Preview**: https://colorlib.com/etc/cs/01-comming-soon.html — HTTP 200 on 2026-10-23; measured `01-comming-soon/css/style.css` (14,814 bytes). Title served: "TITLE".
-- **Path note**: No `/theme/` demo exists (`https://preview.colorlib.com/theme/01-comming-soon/` is 404). The live page is the catalog entry's own `url` for `01-comming-soon` in `assets/js/catalog-products-*.js`; it still carries the placeholder `<title>TITLE</title>`.
+- **Path note**: No `/theme/` demo exists (`https://preview.colorlib.com/theme/01-comming-soon/` is 404) — **re-probed 2026-10-23: the demo serves** (measured record below). The live page is the catalog entry's own `url` for `01-comming-soon` in `assets/js/catalog-products-*.js`; it still carries the placeholder `<title>TITLE</title>`.
 - **Measured how**: hex-literal census of `01-comming-soon/css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/01-comming-soon.html` — HTTP 200, 7,377 B, title `TITLE`.
+>
+> Sheet: `https://colorlib.com/etc/cs/01-comming-soon/css/style.css?v=84349a7d` (14,814 B).
+> Faces it actually declares: `Open Sans`, `Poppins`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ### Colors
 

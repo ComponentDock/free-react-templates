@@ -22,7 +22,7 @@ TypeScript.
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_07/ returns
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11 — the same
   live-preview gap as the rest of the `comingsoon_*` family), so the live
-  preview DOM is unreachable for this slug. Fallback (documented per
+  preview DOM is unreachable for this slug. Fallback (documented per — **re-probed 2026-10-23: the demo serves** (measured record below)
   `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_07.zip`
   (HTTP 200, 295,754 B, `application/zip`) was downloaded and extracted to
@@ -41,6 +41,15 @@ TypeScript.
   the source demo title "Coming Soon 7", its "UNO." PNG wordmark and its
   photograph are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_07/index.html` — HTTP 200, 5,030 B, title `Coming Soon 7`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_07/css/style.css?v=f68b666c` (11,990 B).
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is one full-viewport screen, not a scrolling site. The screen
 wrapper is `div.bg-img1.size1.overlay1` with an inline

@@ -63,7 +63,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   the TLD `th.scope` cells render bold (UA default — the snippet never
   sets `th` font-weight). Weight **500** is the Sign Up button font.
   (The preview's self-hosted Roboto 400/700 @font-face rules are
-  unreachable fallbacks — ignore them.)
+  unreachable fallbacks — ignore them.) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Assets:** none — the source page has NO images, logos, or
   illustrations. No picsum placeholders needed.
 - **Icons:** none in the source. No lucide imports required.
@@ -83,6 +83,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   follows the established `-kit` family (gridkit — the sibling Table 01
   recreation, ui-kit items like buildex-ui-kit/next-ui-kit) and reads
   naturally for a domain-pricing table.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/table-03/` — HTTP 200, 3,074 B, title `Table 03`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/table-03/css/style.css?v=75abd250` (12,085 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

@@ -2,10 +2,19 @@
 
 ## Purpose
 
-LoginGlimmer is a clean, minimalist login form template that recreates ColorLib Login Form V19 (preview: https://colorlib.com/wp/template/login-form-v19/; live preview unreachable — spec derived from screenshot). It provides a centered card layout with a login form (email, password) on a light blue-gray background, with forgot password and sign-up links. Fully responsive down to mobile.
+LoginGlimmer is a clean, minimalist login form template that recreates ColorLib Login Form V19 (preview: https://colorlib.com/wp/template/login-form-v19/; live preview unreachable — spec derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below). It provides a centered card layout with a login form (email, password) on a light blue-gray background, with forgot password and sign-up links. Fully responsive down to mobile.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v19/index.html` — HTTP 200, 1,829 B, title `Login V19`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v19/css/style.css?v=35c6d949` (10,834 B).
+> Faces it actually declares: `OpenSans-Regular`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Source:** ColorLib Login Form V19
-**Preview URL:** https://preview.colorlib.com/theme/login-form-v19/ (unreachable — screenshot used as reference)
+**Preview URL:** https://preview.colorlib.com/theme/login-form-v19/ (unreachable — screenshot used as reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v19.jpg
 
 ## Design tokens

@@ -4,9 +4,20 @@
 
 Recreation of ColorLib **Signup Form 16** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 - **ColorLib source:** https://colorlib.com/wp/template/signup-form-16/
-- **Preview URL:** https://preview.colorlib.com/theme/signup-form-16/ (Note: preview returned 404 at time of research; design captured from screenshot.)
+- **Preview URL:** https://preview.colorlib.com/theme/signup-form-16/ (Note: preview returned 404 at time of research; design captured from screenshot.) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, Vitest + Testing Library
 - **Package:** `@free-react-templates/signupnova`
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/signup-form-16/` — HTTP 200, 5,880 B, title `Sign Up 06`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/signup-form-16/css/style.css?v=8c643a4c` (19,355 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The recorded brand `#4c1d95` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

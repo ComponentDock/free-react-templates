@@ -8,13 +8,23 @@ multi-step form for collecting personal information, bank details, and
 confirming the entered data before submission.
 
 - **Source template**: [Colorlib Wizard 25](https://colorlib.com/wp/template/colorlib-wizard-25/)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-25/` (unreachable at prep time — 404; fallback to screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-25/` (unreachable at prep time — 404; fallback to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-25.jpg`
 - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict)
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-25/index.html` — HTTP 200, 13,635 B, title `Wizard-v5`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-25/css/style.css?v=63cdecb8` (16,029 B).
+> Faces it actually declares: `Nunito`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-> Extracted from the screenshot (preview unreachable) and Colorlib page metadata.
+> Extracted from the screenshot (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below) and Colorlib page metadata.
 
 | Token | Value | Notes |
 |-------|-------|-------|

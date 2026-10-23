@@ -11,7 +11,7 @@ Recreation of ColorLib **Contact Form V19** as a React 19 + Vite + Tailwind 4 + 
 
 ## Design tokens
 
-Extracted from screenshot analysis (preview unreachable):
+Extracted from screenshot analysis (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below): — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token | Value | Notes |
 |-------|-------|-------|
@@ -26,6 +26,15 @@ Extracted from screenshot analysis (preview unreachable):
 | Font family | Open Sans (or similar clean sans-serif) | Clean, readable sans-serif |
 | Card shadow | `0 4px 20px rgba(0,0,0,0.1)` | Subtle elevation shadow |
 | Icon color | `#999999` | Gray envelope icon in email field |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v19/index.html` — HTTP 200, 1,688 B, title `Contact V19`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v19/css/style.css?v=7f3c4b1b` (9,709 B).
+> Faces it actually declares: `OpenSans-Regular`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Layout
 

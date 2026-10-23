@@ -3,8 +3,18 @@
 ## Purpose
 
 - Recreation of ColorLib **Bootstrap Buttons 15** (`https://colorlib.com/wp/template/bootstrap-buttons-15/`).
-- Preview URL: `https://preview.colorlib.com/theme/bootstrap-buttons-15/` (Note: Live preview URL is unreachable; designed from the official ColorLib screenshot showing a comprehensive collection of fancy styled buttons, glowing effects, gradients, and interactive button states).
+- Preview URL: `https://preview.colorlib.com/theme/bootstrap-buttons-15/` (Note: Live preview URL is unreachable; designed from the official ColorLib screenshot showing a comprehensive collection of fancy styled buttons, glowing effects, gradients, and interactive button states) — **re-probed 2026-10-23: the demo serves** (measured record below).
 - Stack: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bb/bootstrap-buttons-15/` — HTTP 200, 57,931 B, title `Button 05`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-15/css/style.css?v=f4831e39` (31,391 B).
+> Colours that sheet actually paints: `#4f81c7` ×12, `#40bfc1` ×12, `#48da79` ×12.
+> Faces it actually declares: `Poppins`, `Ionicons`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens (Inferred from Screenshot / Standard Bootstrap UI Showcase Style)
 

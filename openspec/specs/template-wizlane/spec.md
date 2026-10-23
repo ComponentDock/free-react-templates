@@ -3,10 +3,19 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 8 (`https://colorlib.com/wp/template/colorlib-wizard-8/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-8/` (404 at time of prep; design captured from screenshot + ColorLib page description + CSS tokens)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-8/` (404 at time of prep; design captured from screenshot + ColorLib page description + CSS tokens) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `wizlane` (App directory: `apps/wizlane`, Package: `@free-react-templates/wizlane`)
 - **Category**: Bootstrap Wizard Templates / Food Store Checkout
 - **Description**: A 4-step food store checkout wizard with a centered white card on a textured warm background, green accent stepper with icons, form fields, and BACK/CONTINUE navigation buttons. Designed for online grocery/organic food ordering.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-8/index.html` — HTTP 200, 23,071 B, title `FormWizard_v8`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-8/css/style.css?v=1b3edc92` (10,457 B).
+> Faces it actually declares: `Lato-Bold`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens (captured from ColorLib CSS + screenshot)
 

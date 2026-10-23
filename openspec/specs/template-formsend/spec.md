@@ -11,8 +11,18 @@ purple Send button.
 - **Source slug:** `contact-form-v12`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v12/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v12/ (404 at
-  time of implementation — design tokens extracted from screenshot)
+  time of implementation — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v12/index.html` — HTTP 200, 3,495 B, title `Contact V12`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v12/css/style.css?v=8fccd02d` (10,730 B).
+> Faces it actually declares: `Montserrat-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

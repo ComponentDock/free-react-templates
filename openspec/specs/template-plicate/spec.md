@@ -2,7 +2,16 @@
 
 ## Purpose
 
-Recreation of ColorLib [Accordion 05](https://colorlib.com/wp/template/accordion-05/) (`https://preview.colorlib.com/theme/accordion-05/`, preview unreachable, designed from screenshot reference). Built as a clean, responsive interactive accordion component showcase in React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib [Accordion 05](https://colorlib.com/wp/template/accordion-05/) (`https://preview.colorlib.com/theme/accordion-05/`, preview unreachable, designed from screenshot reference) — **re-probed 2026-10-23: the demo serves** (measured record below). Built as a clean, responsive interactive accordion component showcase in React 19, Tailwind CSS 4, and TypeScript.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bac/accordion-05/` — HTTP 200, 9,961 B, title `Accordion 05`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bac/accordion-05/css/style.css?v=8d10e590` (17,751 B).
+> Faces it actually declares: `Poppins`, `Ionicons`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

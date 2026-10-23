@@ -23,7 +23,7 @@ TypeScript.
 - **Source:** https://colorlib.com/wp/template/fixed-column-table/
   (page title: "Fixed Column Table - Free HTML/CSS Table Template 2026 -
   Colorlib")
-- **Preview — UNREACHABLE (verified 2026-09-30):** the slug-only URL
+- **Preview — UNREACHABLE (verified 2026-09-30):** the slug-only URL — **re-probed 2026-10-23: the demo serves** (measured record below)
   https://preview.colorlib.com/theme/fixed-column-table/ returns **HTTP
   404**, and the bootstrap-path variant
   https://preview.colorlib.com/theme/bootstrap/fixed-column-table/ also
@@ -42,6 +42,15 @@ TypeScript.
   ACTIVITY / CONTACTS (and more columns beyond the fold), 7 data rows,
   bold uppercase dark header labels, thin light-gray row separators,
   horizontal scrollbar visible at the bottom of the table.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/tb/Table_Fixed_Column/index.html` — HTTP 200, 6,351 B, title `Table V05`.
+>
+> Sheet: `https://colorlib.com/etc/tb/Table_Fixed_Column/css/style.css?v=fa1628e9` (5,895 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

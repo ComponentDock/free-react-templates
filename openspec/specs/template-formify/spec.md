@@ -16,10 +16,19 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v3/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v3/ (404 at
   time of prep — design tokens extracted from TEMPLATES.md screenshot via
-  vision analysis)
+  vision analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Description:** "A powerful bundle of two variations of free contact form
   templates blended into one beautiful solution for your business website."
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v3/index.html` — HTTP 200, 3,505 B, title `Contact V3`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v3/css/style.css?v=c5447835` (15,136 B).
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design reference (replication findings)
 

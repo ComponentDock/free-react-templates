@@ -6,14 +6,24 @@ Recreation of ColorLib **Search Form Bar 14** — a full-screen overlay search f
 
 - **Source slug:** `search-form-bar-14`
 - **Source:** https://colorlib.com/wp/template/search-form-bar-14/
-- **Preview:** https://preview.colorlib.com/theme/search-form-bar-14/ — returned 404 at prep time
+- **Preview:** https://preview.colorlib.com/theme/search-form-bar-14/ — returned 404 at prep time — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Fallback reference:** screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-14.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Search Form Bar / Overlay Search
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-14/` — HTTP 200, 4,473 B, title `Search #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-14/css/style.css?v=e1a3443e` (16,885 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from the screenshot analysis (preview CSS unavailable).
+Extracted from the screenshot analysis (preview CSS unavailable) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                       | Value                                               |
 | --------------------------- | --------------------------------------------------- |

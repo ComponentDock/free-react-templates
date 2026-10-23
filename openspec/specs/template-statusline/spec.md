@@ -75,7 +75,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   weight 700 — though its visible × span overrides size/color). ⚠️ The
   preview's own head has **NO Google Fonts link** — Poppins is
   declared in CSS but never loaded there (falls back to Arial); the
-  only @font-face rules are unreachable Roboto 400/700 + a FontAwesome
+  only @font-face rules are unreachable Roboto 400/700 + a FontAwesome — **re-probed 2026-10-23: the demo serves** (measured record below)
   subset. The recreation SHALL load Poppins properly.
 - **Assets:** the source page references **5 avatar photos**
   `images/person_1.jpg` … `images/person_5.jpg` (business headshots),
@@ -110,6 +110,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   reads naturally for a table of status-pill lines. (The ColorLib
   family contains a template literally named "Pulse" — avoided the
   pulse* namespace for that reason.)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/table-05/` — HTTP 200, 8,847 B, title `Table 05`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/table-05/css/style.css?v=de8ec152` (11,913 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

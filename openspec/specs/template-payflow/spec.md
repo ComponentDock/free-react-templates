@@ -3,11 +3,20 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 5 (`https://colorlib.com/wp/template/colorlib-wizard-5/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-5/` (unreachable at prep time — fell back to screenshot + source HTML)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-5/` (unreachable at prep time — fell back to screenshot + source HTML) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Demo source**: `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html`
 - **New Name**: `payflow` (App directory: `apps/payflow`, Package: `@free-react-templates/payflow`)
 - **Category**: E-commerce / Multi-step Checkout Wizard
 - **Description**: A 4-step checkout/order wizard with a split-screen layout — decorative 3D illustration on the left, a white form card with step-by-step progress indicator on the right. Warm peach/tan color palette with Poppins typography.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html` — HTTP 200, 9,892 B, title `FormWizard_v5`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-5/css/style.css?v=4559639a` (12,177 B).
+> Faces it actually declares: `Poppins-Medium`, `Muli-Bold`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

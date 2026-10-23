@@ -9,10 +9,19 @@
 
 Recreation of ColorLib "Regform 6" — a single-page job application form template.
 - **ColorLib source:** [colorlib-regform-6](https://colorlib.com/wp/template/colorlib-regform-6/)
-- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-6/ (unreachable at time of prep — fallback to screenshot + downloaded source)
+- **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-6/ (unreachable at time of prep — fallback to screenshot + downloaded source) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Registration Forms
 - **Description:** "Apply for Job" form with full name, email, message textarea, file upload CV, and submit button. Dark background, white card with speech-bubble arrow pointer from card body to heading.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-6/` — HTTP 200, 3,266 B, title `Apply for job by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-6/css/style.css?v=a0432fbe` (9,652 B).
+> Faces it actually declares: `Open Sans`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

@@ -5,13 +5,22 @@
 Recreation of ColorLib's **Bootstrap Footer 19** — a purple footer with a four-column layout containing brand/contact details, a newsletter subscription form, latest news blog posts, and an Instagram photo grid, plus a copyright bar.
 
 - **Source:** Bootstrap Footer 19 — https://colorlib.com/wp/template/bootstrap-footer-19/
-- **Preview:** https://preview.colorlib.com/theme/bootstrap-footer-19/ (unreachable at prep time — design based on ColorLib screenshot and description)
+- **Preview:** https://preview.colorlib.com/theme/bootstrap-footer-19/ (unreachable at prep time — design based on ColorLib screenshot and description) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bft/bootstrap-footer-19/` — HTTP 200, 11,786 B, title `Footer 09`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bft/bootstrap-footer-19/css/style.css?v=dba2979d` (16,671 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-> NOTE: Preview was unreachable (404). Tokens derived from the ColorLib screenshot description ("purple footer, four columns, extra details, newsletter subscription, latest news, Instagram feed") and the standard Bootstrap Footer template pattern in the series.
+> NOTE: Preview was unreachable (404). Tokens derived from the ColorLib screenshot description ("purple footer, four columns, extra details, newsletter subscription, latest news, Instagram feed") and the standard Bootstrap Footer template pattern in the series — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                | Value                          | Source                                                |
 | -------------------- | ------------------------------ | ----------------------------------------------------- |

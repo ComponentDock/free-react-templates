@@ -5,13 +5,23 @@
 Recreation of **ColorLib Regform 32** — a split-card registration form with a full-viewport blue gradient background, left-side portrait image, and right-side form panel.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-32/
-- **Live preview:** https://preview.colorlib.com/theme/colorlib-regform-32/ (404 at time of prep — preview unavailable)
+- **Live preview:** https://preview.colorlib.com/theme/colorlib-regform-32/ (404 at time of prep — preview unavailable) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-32.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-32/` — HTTP 200, 1,511 B, title `Form-v6 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-32/css/style.css?v=c7801708` (6,272 B).
+> Faces it actually declares: `Nunito`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-Extracted from the screenshot analysis (preview was unreachable):
+Extracted from the screenshot analysis (preview was unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below): — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token | Value | Notes |
 |---|---|---|

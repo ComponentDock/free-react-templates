@@ -7,7 +7,16 @@ Regvox is a free member registration form template recreating ColorLib "Colorlib
 light gray background, a two-column layout with a hero image on the left and a registration form
 on the right. The form includes First Name, Last Name, Username, Email Address, Gender (select),
 Password, and Confirm Password fields with underline-style borders and inline icons, plus a dark
-Register button. Preview was unreachable (404); design derived from the TEMPLATES.md screenshot.
+Register button. Preview was unreachable (404); design derived from the TEMPLATES.md screenshot — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-17/` — HTTP 200, 4,676 B, title `RegistrationForm_v1 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-17/css/style.css?v=783e5349` (6,546 B).
+> Faces it actually declares: `Poppins-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

@@ -7,9 +7,19 @@ A split-screen contact page with a lifestyle desk-photo on the left and a clean 
 - **Source slug:** `contact-form-v18`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v18/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v18/ (404 at
-  prep time — design tokens extracted from screenshot)
+  prep time — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v18.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v18/index.html` — HTTP 200, 5,358 B, title `Contact V18`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v18/css/style.css?v=056ee19a` (14,995 B).
+> Faces it actually declares: `Montserrat-Bold`, `Poppins-Regular`, `Segoe UI`, `Roboto`.
+> The prescribed face `jost` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

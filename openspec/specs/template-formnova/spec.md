@@ -8,15 +8,24 @@ wizard. The original template is a sleek, dark-themed form with a 3-step flow
 
 - **ColorLib source:** https://colorlib.com/wp/template/colorlib-wizard-7/
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-wizard-7/ (returns
-  404 as of 2026-09-10; design captured from TEMPLATES.md screenshot only)
+  404 as of 2026-09-10; design captured from TEMPLATES.md screenshot only) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **App folder:** `apps/formnova`
 - **Package:** `@free-react-templates/formnova`
 - **Deploy target:** `https://formnova.free.componentdock.com`
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` — HTTP 200, 10,359 B, title `FormWizard_v7`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-7/css/style.css?v=7973a996` (8,628 B).
+> Faces it actually declares: `Raleway-Bold`, `Satisfy-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-Captured from the TEMPLATES.md screenshot (preview unreachable).
+Captured from the TEMPLATES.md screenshot (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                | Value                                    | Notes                                     |
 | -------------------- | ---------------------------------------- | ----------------------------------------- |

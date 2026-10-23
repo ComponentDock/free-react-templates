@@ -16,8 +16,17 @@ overlay containing two text inputs ("What are you looking for?" and
 a single-section hero with no additional content sections, footer, or
 navigation visible in the screenshot.
 
-**Preview URL (UNREACHABLE):** `https://preview.colorlib.com/theme/colorlib-search-1/`
-returns 404. Falling back to the screenshot as sole reference (verified
+**Preview URL (UNREACHABLE) — **re-probed 2026-10-23: the demo serves** (measured record below):** `https://preview.colorlib.com/theme/colorlib-search-1/`
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-1/` — HTTP 200, 1,106 B, title ``.
+>
+> Sheet: `https://colorlib.com/etc/searchf/colorlib-search-1/css/style.css?v=3518010b` (7,057 B).
+> Faces it actually declares: `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+returns 404. Falling back to the screenshot as sole reference (verified — **re-probed 2026-10-23: the demo serves** (measured record below)
 2026-09-28).
 
 **WHAT MAKES QUERYGATE DISTINCT (signature behaviors):**
@@ -39,7 +48,7 @@ returns 404. Falling back to the screenshot as sole reference (verified
    additional sections, no footer visible in the reference screenshot. This
    makes it the simplest kind of search-form template.
 
-## Design tokens (screenshot reference — preview unreachable)
+## Design tokens (screenshot reference — preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 | Token         | Value                                    | Use                                                     |
 | ------------- | ---------------------------------------- | ------------------------------------------------------- |
@@ -56,8 +65,8 @@ returns 404. Falling back to the screenshot as sole reference (verified
 | Font          | System/Bootstrap default (sans-serif)    | Likely 'Open Sans' or 'Poppins' — use system sans-serif |
 | Search bar radius | ~4px or 0                             | Minimal rounding on the search bar container           |
 
-**Note:** These tokens are derived from the screenshot only (preview
-unreachable). Implementer should match the visual proportions and colors
+**Note:** These tokens are derived from the screenshot only (preview — **re-probed 2026-10-23: the demo serves** (measured record below)
+unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below). Implementer should match the visual proportions and colors
 as closely as possible from the reference screenshot.
 
 ## Requirements

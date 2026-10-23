@@ -5,10 +5,19 @@
 Recreation of ColorLib "Login Form V11" as Loginblush — a centered login form on a blue-to-pink gradient background with a decorative wave overlay, white card, gray input fields with left-aligned icons, pink submit button, "Remember me" checkbox, and Facebook/Google social login buttons.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v11/
-- **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v11/ (HTTP 404 at time of prep; fallback to demo URL + screenshot)
+- **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v11/ (HTTP 404 at time of prep; fallback to demo URL + screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Demo (live):** https://colorlib.com/etc/lf/Login_v11/index.html
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v11.jpg
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v11/index.html` — HTTP 200, 4,293 B, title `Login V11`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v11/css/style.css?v=61d68c8b` (13,941 B).
+> Faces it actually declares: `Raleway-Bold`, `Poppins-Regular`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

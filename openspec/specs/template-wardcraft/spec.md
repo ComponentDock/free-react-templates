@@ -16,9 +16,18 @@ button and step pagination ("1 / 3"). The design is dark, sophisticated, and
 minimalist — targeting upscale dining establishments.
 
 - **Source template**: [Colorlib Wizard 7](https://colorlib.com/wp/template/colorlib-wizard-7/)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` (unreachable at prep time — 404; fallback to screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-7/` (unreachable at prep time — 404; fallback to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-7.jpg`
 - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html` — HTTP 200, 10,359 B, title `FormWizard_v7`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-7/css/style.css?v=7973a996` (8,628 B).
+> Faces it actually declares: `Raleway-Bold`, `Satisfy-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Naming
 
@@ -213,7 +222,7 @@ The page footer SHALL include a link to https://www.componentdock.com/.
 
 ## Verification checklist
 
-- [ ] Preview unreachable (404) — fallback to screenshot used for all design tokens
+- [ ] Preview unreachable (404) — fallback to screenshot used for all design tokens — **re-probed 2026-10-23: the demo serves** (measured record below)
 - [ ] Split layout: food photo left, dark form card right (overlapping)
 - [ ] White page background
 - [ ] Dark charcoal card with thin light gray border

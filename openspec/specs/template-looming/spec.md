@@ -48,7 +48,7 @@ Tailwind CSS 4 + TypeScript.
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_12/ returns
   **HTTP 404**, and the `https://preview.colorlib.com/theme/bootstrap/comingsoon_12/`
   variant is **HTTP 404** as well (both verified 2026-10-11 — the family-wide
-  live-preview gap), so the live preview DOM is unreachable for this slug.
+  live-preview gap), so the live preview DOM is unreachable for this slug — **re-probed 2026-10-23: the demo serves** (measured record below).
   Fallback (documented per `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_12.zip`
   (HTTP 200, 554,988 B, `application/zip`) was downloaded and extracted to
@@ -72,6 +72,15 @@ Tailwind CSS 4 + TypeScript.
   "Follow us for update now!" / "Email Address" / "Email is required: ex@abc.xyz"
   strings and its favicon are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_12/index.html` — HTTP 200, 4,773 B, title `Coming Soon 12`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_12/css/style.css?v=b18dee51` (11,285 B).
+> Faces it actually declares: `Poppins-Medium`, `PlayfairDisplay-BlackItalic`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is two columns in ONE `100vh` row, not a scrolling site. Its
 skeleton is a single flex row:

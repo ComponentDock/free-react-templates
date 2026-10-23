@@ -5,9 +5,20 @@
 A Landing Page template with top bar with utility, full-viewport hero with art, three info cards with icons and decorative quote sections. Recreation of ColorLib **Art Museum** template as a free React museum and art gallery website template.
 
 - Source slug: `art-museum`
-- Preview URL: https://preview.colorlib.com/theme/art-museum/ (unreachable — fell back to screenshot analysis)
+- Preview URL: https://preview.colorlib.com/theme/art-museum/ (unreachable — fell back to screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/artmuseum-free-template-1.jpg
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/artmuseum/` — HTTP 200, 30,760 B, title `Art Museum`.
+>
+> Sheets: `https://preview.colorlib.com/theme/artmuseum/css/linearicons.css` (1,340 B), `https://preview.colorlib.com/theme/artmuseum/css/font-awesome.min.css` (1,337 B), `https://preview.colorlib.com/theme/artmuseum/css/bootstrap.css` (10,780 B), `https://preview.colorlib.com/theme/artmuseum/css/magnific-popup.css` (4,213 B) (+5 more).
+> Colours that sheet actually paints: `#88d200` ×48, `#f9f9ff` ×35, `#222222` ×29.
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+> The recorded brand `#7ec843` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

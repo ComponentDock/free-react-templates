@@ -7,7 +7,7 @@ Recreation of ColorLib **Search Form Bar 02**
 
 Findspot is a search form bar template. It recreates the ColorLib **Search Form Bar 02** design (https://colorlib.com/wp/template/search-form-bar-02/, preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
-## Design Tokens (from screenshot analysis)
+## Design Tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 - **Font**: Poppins, sans-serif (Google Fonts)
 - **Body font size**: 16px, line-height 1.6
@@ -20,6 +20,15 @@ Findspot is a search form bar template. It recreates the ColorLib **Search Form 
 - **Search button**: background #e94560, border-radius 8px, white text, padding 0 24px
 - **Section padding**: 8em vertical
 - **Layout**: centered, max-width 600px
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/` — HTTP 200, 1,898 B, title `Search Form/Bar 02`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-02/css/style.css?v=fd50f59f` (11,097 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Screenshot Analysis
 

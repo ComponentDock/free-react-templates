@@ -16,7 +16,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   HTTP 200, 109,305 B, verified 2026-10-11)
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_04/ returns
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11), so the
-  live preview DOM is unreachable for this slug. Fallback (documented per
+  live preview DOM is unreachable for this slug. Fallback (documented per — **re-probed 2026-10-23: the demo serves** (measured record below)
   `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_04.zip`
   (HTTP 200, 252,580 B, `application/zip`) was downloaded and extracted —
@@ -32,6 +32,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   demo title "Coming Soon 4" / "Coming Soon V04" and the demo footer credit
   are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_04/index.html` — HTTP 200, 3,527 B, title `Coming Soon 4`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_04/css/style.css?v=4e86c025` (16,469 B).
+> Faces it actually declares: `Montserrat-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is one full-viewport screen, not a scrolling site. The background
 is a single diagonal gradient — `linear-gradient(-45deg, #ac32e4, #7918f2,

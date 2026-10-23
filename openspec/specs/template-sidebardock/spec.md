@@ -4,13 +4,23 @@
 
 Recreation of the ColorLib **Sidebar V10** template.
 - Source: https://colorlib.com/wp/template/colorlib-sidebar-v10/
-- Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v10/ (404 — unreachable; design derived from screenshot)
+- Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v10/ (404 — unreachable; design derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
 - Category: Sidebar layout — fixed left sidebar with author portrait, navigation, and social links; scrollable content grid of blog/article cards.
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v10/` — HTTP 200, 12,666 B, title `Sidebar #1`.
+>
+> Sheet: `https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v10/css/style.css?v=df77926e` (14,562 B).
+> Faces it actually declares: `Roboto`, `Segoe UI`, `Helvetica Neue`, `Noto Sans`.
+> The recorded brand `#00b4d8` occurs nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design tokens
 
-Extracted from the screenshot (preview was unreachable):
+Extracted from the screenshot (preview was unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token              | Value                                          |
 | ------------------ | ---------------------------------------------- |

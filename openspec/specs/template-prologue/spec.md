@@ -67,7 +67,7 @@ Tailwind CSS 4 + TypeScript.
   split-screen design, subscription and social icons.")
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_14/ returns
   **HTTP 404** (9 B, `text/plain`, verified 2026-10-11 — the family-wide
-  live-preview gap), so the live preview DOM is unreachable for this slug.
+  live-preview gap), so the live preview DOM is unreachable for this slug — **re-probed 2026-10-23: the demo serves** (measured record below).
   Fallback (documented per `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_14.zip`
   (HTTP 200, 409,625 B, `application/zip`) was downloaded and extracted to
@@ -98,6 +98,15 @@ Tailwind CSS 4 + TypeScript.
   "Subcribe Now:" / "Email is required: ex@abc.xyz" strings and its favicon are
   never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_14/index.html` — HTTP 200, 4,607 B, title `Coming Soon 14`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_14/css/style.css?v=0ef04472` (11,868 B).
+> Faces it actually declares: `Poppins-Medium`, `PlayfairDisplay-Regular`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design reference (replication findings)
 

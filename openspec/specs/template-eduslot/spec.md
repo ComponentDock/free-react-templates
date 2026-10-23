@@ -3,11 +3,20 @@
 ## Purpose
 
 Recreation of ColorLib template **Reg Form V12** (`colorlib-regform-12`).
-- Preview: https://preview.colorlib.com/theme/colorlib-regform-12/ (404 — fallback to screenshot only)
+- Preview: https://preview.colorlib.com/theme/colorlib-regform-12/ (404 — fallback to screenshot only) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - Source page: https://colorlib.com/wp/template/colorlib-regform-12/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-12.jpg
 - Category: Registration / Appointment Form — Education appointment scheduling
 - Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-12/` — HTTP 200, 3,301 B, title `Sign Up Form by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-12/css/style.css?v=cee4ba2b` (9,913 B).
+> Faces it actually declares: `Roboto Slab`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

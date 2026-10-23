@@ -23,7 +23,7 @@ submit button.
   Listed in TEMPLATES.md line 1432. Screenshot:
   `ContactFrom_v17.jpg` (1920×939, JPEG, reviewed visually).
 - **Live preview URL:** `https://preview.colorlib.com/theme/contact-form-v17/`
-  — **UNREACHABLE (returns HTTP 404, only 9 bytes "Not Found").**
+  — **UNREACHABLE (returns HTTP 404, only 9 bytes "Not Found").** — **re-probed 2026-10-23: the demo serves** (measured record below)
   Fallback to the screenshot analysis.
 - **Screenshot analysis (browser-reviewed, 1920×939 JPEG):**
   The screenshot shows a split two-column contact form layout:
@@ -53,7 +53,17 @@ submit button.
   3. Aesthetic: clean, corporate, professional. Green accent color.
      Two-column split layout is the defining visual feature.
 
-## Section order (from screenshot analysis — preview unreachable)
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v17/index.html` — HTTP 200, 7,407 B, title `Contact V17`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v17/css/style.css?v=d2ba1d00` (13,247 B).
+> Faces it actually declares: `Poppins-Regular`, `Montserrat-Bold`, `Segoe UI`, `Roboto`.
+> The recorded brands `#28a745`, `#2ecc71` occur nowhere in it: the values below are screenshot samples, not measurements — `docs/replication.md` makes the sheet canonical.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
+## Section order (from screenshot analysis — preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
 1. **Page background** — full-viewport light gray (#F5F5F5).
 2. **Container** — centered, max-width ~960px, flex two-column layout,
@@ -220,7 +230,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [ ] Spec created with full section order and design tokens
 - [ ] Screenshot analyzed visually (1920×939 JPEG)
-- [ ] Preview URL documented as unreachable (404) — fallback to screenshot
+- [ ] Preview URL documented as unreachable (404) — fallback to screenshot — **re-probed 2026-10-23: the demo serves** (measured record below)
 - [ ] Split-panel layout captured (dark left + white right)
 - [ ] Contact info blocks identified (address, phone, email with icons)
 - [ ] Form fields identified (first/last name, email, phone, message)

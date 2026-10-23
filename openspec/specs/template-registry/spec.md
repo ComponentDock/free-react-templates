@@ -7,7 +7,16 @@ Registry is a free registration form template recreating ColorLib "Colorlib Reg 
 background image with a centered card containing a registration form. The form has
 First Name/Last Name side-by-side, Email, Password, Confirm Password fields with
 rounded input borders, a terms checkbox, and a red "Register Now" button with hover
-animation. Preview was unreachable (404); design derived from the live source at
+animation. Preview was unreachable (404); design derived from the live source at — **re-probed 2026-10-23: the demo serves** (measured record below)
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-18/` — HTTP 200, 1,578 B, title `RegistrationForm_v2 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-18/css/style.css?v=ae61f35f` (5,941 B).
+> Faces it actually declares: `Muli-Bold`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 https://colorlib.com/etc/regform/colorlib-regform-18/ and the TEMPLATES.md screenshot.
 
 ## Design tokens

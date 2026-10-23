@@ -5,11 +5,20 @@
 A Coming Soon template with full-screen background, heading, description paragraph, countdown timer, notify us cta button and social media sections. Recreation of ColorLib "05 Comming Soon" (`05-comming-soon`).
 
 - **Source:** https://colorlib.com/wp/template/05-comming-soon/
-- **Preview (template HTML):** https://preview.colorlib.com/theme/05-comming-soon/ (404 — unreachable)
+- **Preview (template HTML):** https://preview.colorlib.com/theme/05-comming-soon/ (404 — unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **CSS reference:** https://colorlib.com/etc/cs/05-comming-soon/css/styles.css
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-20.jpg
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Coming Soon / Under Construction
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/05-comming-soon.html` — HTTP 200, 5,031 B, title `TITLE`.
+>
+> Sheet: `https://colorlib.com/etc/cs/05-comming-soon/css/style.css?v=6a513357` (9,448 B).
+> Faces it actually declares: `Open Sans`, `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ### Description from Colorlib
 

@@ -5,9 +5,18 @@
 Recreation of ColorLib Login Form V10 as Loginstar — a minimalist, centered login form on a plain white background. Ubuntu font family, lavender-purple brand color (#827ffe), full-width inputs with light gray backgrounds, a full-width purple submit button, "Remember me" checkbox, and "Forgot?" link. No images, no split layout — pure form.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v10/
-- **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v10/ (HTTP 404 at time of prep; fallback to download ZIP + screenshot)
+- **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v10/ (HTTP 404 at time of prep; fallback to download ZIP + screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v10.jpg
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v10/index.html` — HTTP 200, 1,737 B, title `Login V10`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v10/css/style.css?v=fbb2b74f` (11,321 B).
+> Faces it actually declares: `Ubuntu-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

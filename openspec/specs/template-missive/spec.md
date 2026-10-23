@@ -4,15 +4,25 @@
 
 Recreation of ColorLib "Contact Form V12"
 (https://colorlib.com/wp/template/contact-form-v12/).
-Preview URL (unreachable at prep time — 404):
+Preview URL (unreachable at prep time — 404) — **re-probed 2026-10-23: the demo serves** (measured record below):
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v12/index.html` — HTTP 200, 3,495 B, title `Contact V12`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v12/css/style.css?v=8fccd02d` (10,730 B).
+> Faces it actually declares: `Montserrat-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 https://preview.colorlib.com/theme/contact-form-v12/
 Screenshot reference: https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v12.jpg
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 
-## Design Tokens (from screenshot analysis)
+## Design Tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 
-> **Note:** The live preview at preview.colorlib.com was unreachable (404) at
+> **Note:** The live preview at preview.colorlib.com was unreachable (404) at — **re-probed 2026-10-23: the demo serves** (measured record below)
 > prep time. All tokens below are extracted from the screenshot.
 
 ### Colors

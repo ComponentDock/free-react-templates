@@ -6,11 +6,20 @@ A Login Form template with hover effects, focus effects, social login buttons, u
 
 - **Source:** https://colorlib.com/wp/template/login-form-v5/
 - **Preview (live HTML):** https://colorlib.com/etc/lf/Login_v5/index.html
-- **Preview (theme, unreachable):** https://preview.colorlib.com/theme/login-form-v5/ (404)
+- **Preview (theme, unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below):** https://preview.colorlib.com/theme/login-form-v5/ (404)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v5.jpg
 - **New name:** `loginpulse` (`apps/loginpulse`, `@free-react-templates/loginpulse`)
 - **Surge target:** `https://loginpulse.free.componentdock.com`
 - **Provenance note:** Live HTML source at `colorlib.com/etc/lf/Login_v5/index.html` was fetched and CSS tokens extracted directly. The theme preview returned 404.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v5/index.html` — HTTP 200, 2,615 B, title `Login V5`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v5/css/style.css?v=fecf782e` (13,961 B).
+> Faces it actually declares: `Poppins-Medium`, `Montserrat-Medium`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

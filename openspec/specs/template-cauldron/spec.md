@@ -2,7 +2,17 @@
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registration wizard form with avatar upload, profile fields, and step pagination. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-6/ (returns 404 at prep time; design based on screenshot reference). Source slug: `colorlib-wizard-6`.
+Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registration wizard form with avatar upload, profile fields, and step pagination. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-6/ (returns 404 at prep time; design based on screenshot reference) — **re-probed 2026-10-23: the demo serves** (measured record below). Source slug: `colorlib-wizard-6`.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` — HTTP 200, 7,014 B, title `FormWizard_v6`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-6/css/style.css?v=59e273aa` (10,428 B).
+> Faces it actually declares: `Poppins-Medium`.
+> The prescribed face `roboto` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Multi-step form wizard with avatar selection, text fields, step indicator, and a macOS-style browser window chrome wrapper.
 

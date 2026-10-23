@@ -21,7 +21,7 @@ CSS 4 + TypeScript.
 - **Source slug:** `table-with-vertical-horizontal-highlight`
 - **Source:** https://colorlib.com/wp/template/table-with-vertical-horizontal-highlight/
   (HTTP 200, 109,258 bytes, verified 2026-10-01)
-- **Preview — UNREACHABLE (verified 2026-10-01):** BOTH
+- **Preview — UNREACHABLE (verified 2026-10-01):** BOTH — **re-probed 2026-10-23: the demo serves** (measured record below)
   https://preview.colorlib.com/theme/table-with-vertical-horizontal-highlight/
   AND the sibling `bootstrap/` path
   https://preview.colorlib.com/theme/bootstrap/table-with-vertical-horizontal-highlight/
@@ -42,7 +42,7 @@ CSS 4 + TypeScript.
   jQuery, no Bootstrap, no build step, no CDN call"). **All DOM
   structure, data, and design tokens in this spec were captured
   directly from that ZIP — implementers do NOT need to re-fetch
-  anything.** Per docs/replication.md, an unreachable preview falls
+  anything.** Per docs/replication.md, an unreachable preview falls — **re-probed 2026-10-23: the demo serves** (measured record below)
   back to the screenshot; here the ZIP is the actual downloadable
   source, so it (plus the screenshot) is the canonical reference.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/table-with-vertical-horizontal-highlight.jpg
@@ -59,7 +59,7 @@ CSS 4 + TypeScript.
   ZIP's (screenshot: Lawrence Scott Mon = 2:00 PM, Beverly Reid Tue
   hover = "10:10 AM"; ZIP: Lawrence Scott Mon = "--", Beverly Reid
   Tue = 5:00 PM) — the ZIP data is canonical (it is the actual source
-  download; the live preview is gone). The screenshot captures only
+  download; the live preview is gone) — **re-probed 2026-10-23: the demo serves** (measured record below). The screenshot captures only
   the top table; the full page stacks all six.
 - **Fonts (source):** `@font-face` Montserrat-Regular + Montserrat-Medium
   loaded from local woff2 files. The recreation MUST load **Montserrat
@@ -104,6 +104,15 @@ CSS 4 + TypeScript.
   the nearest neighbor), the ONLY gradient-card table (ver6), and the
   ONLY table on a mid-gray `#d1d1d1` canvas (siblings use `#fafafa`,
   `#f8f9fd`, or blue-gray). Font is Montserrat (siblings: Poppins).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/tb/Table_Highlight_Vertical_Horizontal/index.html` — HTTP 200, 35,259 B, title `Table V03`.
+>
+> Sheet: `https://colorlib.com/etc/tb/Table_Highlight_Vertical_Horizontal/css/style.css?v=cb828767` (9,952 B).
+> Faces it actually declares: `Montserrat-Medium`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

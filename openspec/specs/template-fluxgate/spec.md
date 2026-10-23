@@ -6,13 +6,23 @@
 - **New Name**: `fluxgate` (App directory: `apps/fluxgate`, Package: `@free-react-templates/fluxgate`)
 - **Category**: Forms / Multi-step Wizard
 - **Description**: A clean, modern multi-step form wizard template featuring step-by-step navigation, account setup, personal details, payment information, and responsive layout.
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-30/` (unreachable at prep time — 404; fallback to screenshot)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-30/` (unreachable at prep time — 404; fallback to screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-30.jpg` (AVIF format)
 - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict)
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-30/index.html` — HTTP 200, 4,958 B, title `Wizard-v10`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-30/css/style.css?v=79adf51a` (9,710 B).
+> Faces it actually declares: `Montserrat`.
+> The prescribed face `poppins` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens (from reference)
 
-> Extracted from the screenshot (preview unreachable) and ColorLib wizard template patterns.
+> Extracted from the screenshot (preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below) and ColorLib wizard template patterns.
 
 | Token | Value | Notes |
 |-------|-------|-------|

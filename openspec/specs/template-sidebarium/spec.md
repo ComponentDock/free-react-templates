@@ -50,7 +50,16 @@ collision with `apps/`, `openspec/specs/`, `docs/templates/`, or any
 TEMPLATES.md name (verified: zero hits for `sidebarium` in ls apps/ or
 ls openspec/specs/). Source slug: `bootstrap-sidebar-05`. Preview URL:
 https://preview.colorlib.com/theme/bootstrap-sidebar-05/ (returns 404 at
-time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/` — HTTP 200, 10,890 B, title `Sidebar 05`.
+>
+> Sheet: `https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/css/style.css?v=1dfc2383` (16,150 B).
+> Faces it actually declares: `Poppins`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 ## Design reference (replication findings)
 
@@ -59,11 +68,11 @@ time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot).
   header line ~2790; the row at line 2796 —
   `wp/template/bootstrap-sidebar-05/`). Sibling templates in the family:
   Bootstrap Sidebar 01–10 + Colorlib Sidebar V01–V10.
-- **Live preview — UNREACHABLE (404, verified 2026-09-29):** The naive
+- **Live preview — UNREACHABLE (404, verified 2026-09-29):** The naive — **re-probed 2026-10-23: the demo serves** (measured record below)
   `https://preview.colorlib.com/theme/bootstrap-sidebar-05/` returns HTTP
   404 (9 bytes, "Not Found"). Fallback: TEMPLATES.md screenshot
   (`bootstrap-sidebar-170635.jpg`). No CSS tokens could be extracted from
-  the live preview; all tokens are derived from the screenshot analysis.
+  the live preview; all tokens are derived from the screenshot analysis — **re-probed 2026-10-23: the demo serves** (measured record below).
 - **Screenshot analysis (viewed 2026-09-29 via vision):**
   - Two-panel layout: fixed left sidebar + scrollable main content.
   - Sidebar: solid royal-blue background (~#4361ee), full viewport height,

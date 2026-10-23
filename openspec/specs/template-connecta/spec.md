@@ -10,8 +10,17 @@ left and a form with rounded inputs on the right.
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v1/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v1/ (404 at
   time of prep — design tokens extracted from ColorLib OG screenshot and
-  third-party descriptions)
+  third-party descriptions) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v1/index.html` — HTTP 200, 2,268 B, title `Contact V1`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v1/css/style.css?v=0ffd760c` (10,112 B).
+> Faces it actually declares: `Montserrat-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

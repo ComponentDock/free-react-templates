@@ -3,14 +3,23 @@
 ## Purpose
 
 - **Recreation of ColorLib source**: Colorlib Wizard 6 (`https://colorlib.com/wp/template/colorlib-wizard-6/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-6/` (404 at time of research — screenshot used as sole reference)
+- **Preview URL**: `https://preview.colorlib.com/theme/colorlib-wizard-6/` (404 at time of research — screenshot used as sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **New Name**: `spellstep` (App directory: `apps/spellstep`, Package: `@free-react-templates/spellstep`)
 - **Category**: Forms / Multi-step Wizard
 - **Description**: A 3-step account creation wizard with profile photo upload, personal info fields, and a pastel gradient background. Designed for team-based SaaS onboarding with pill-shaped inputs and a centered card layout.
 
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html` — HTTP 200, 7,014 B, title `FormWizard_v6`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-6/css/style.css?v=59e273aa` (10,428 B).
+> Faces it actually declares: `Poppins-Medium`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
+
 ## Design Tokens
 
-> Extracted from screenshot analysis (ColorLib preview unreachable).
+> Extracted from screenshot analysis (ColorLib preview unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 - **Background gradient**: Periwinkle blue (`#b4c8e2`) at top → Rose pink (`#f0c6e2`) at bottom
 - **Card**: White (`#ffffff`), rounded corners (~12px), soft gray drop shadow (`#d5d5d5`)

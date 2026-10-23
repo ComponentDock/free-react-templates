@@ -14,7 +14,7 @@ template with two layout variations (image-right and image-left).
 
 ## Design tokens
 
-Extracted from the screenshot (preview was unreachable):
+Extracted from the screenshot (preview was unreachable) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token            | Value                          | Notes                                      |
 | ---------------- | ------------------------------ | ------------------------------------------ |
@@ -31,6 +31,15 @@ Extracted from the screenshot (preview was unreachable):
 | Button radius    | `0.375rem` (6px)               | Slightly rounded corners                   |
 | Card radius      | `0.5rem` (8px)                 | Rounded card corners                       |
 | Card shadow      | `0 2px 15px rgba(0,0,0,0.08)`  | Subtle drop shadow                         |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-7/` — HTTP 200, 10,342 B, title `Sign Up Form by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-7/css/style.css?v=636e13a9` (11,878 B).
+> Faces it actually declares: `Poppins`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Sections (in order)
 

@@ -2,7 +2,16 @@
 
 ## Purpose
 
-Recreation of ColorLib "Colorlib Wizard 25" — a 3-step payment account creation wizard with step indicators, form fields, and confirmation. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-25/ (404 at time of research; screenshot used as primary reference). Source slug: `colorlib-wizard-25`.
+Recreation of ColorLib "Colorlib Wizard 25" — a 3-step payment account creation wizard with step indicators, form fields, and confirmation. Preview URL: https://preview.colorlib.com/theme/colorlib-wizard-25/ (404 at time of research; screenshot used as primary reference) — **re-probed 2026-10-23: the demo serves** (measured record below). Source slug: `colorlib-wizard-25`.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/bwiz/colorlib-wizard-25/index.html` — HTTP 200, 13,635 B, title `Wizard-v5`.
+>
+> Sheet: `https://colorlib.com/etc/bwiz/colorlib-wizard-25/css/style.css?v=63cdecb8` (16,029 B).
+> Faces it actually declares: `Nunito`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Multi-step form wizard with step indicators, form validation, and confirmation view.
 

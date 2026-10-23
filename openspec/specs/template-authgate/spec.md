@@ -5,9 +5,19 @@
 Recreation of ColorLib Login Form V16 as Authgate — a split-screen card login form centered on a light gray background. Left panel (white) holds the sign-in form with underline-style inputs; right panel (dusty mauve) holds the submit button, remember-me/forgot-password options, and social login icons.
 
 - Source: https://colorlib.com/wp/template/login-form-v16/
-- Preview: https://preview.colorlib.com/theme/login-form-v16/ (404 at time of prep — design captured from screenshot)
+- Preview: https://preview.colorlib.com/theme/login-form-v16/ (404 at time of prep — design captured from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v16.jpg
 - Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v16/index.html` — HTTP 200, 1,424 B, title `Login V16`.
+>
+> Sheet: `https://colorlib.com/etc/lf/Login_v16/css/style.css?v=8ec96743` (11,857 B).
+> Colours that sheet actually paints: `#d41872` ×12.
+> Faces it actually declares: `Ubuntu-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design Tokens
 

@@ -7,8 +7,17 @@ A single-page contact form with a full-page Google Maps background, a centered w
 - **Source slug:** `contact-form-v15`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v15/
 - **Preview URL:** https://preview.colorlib.com/theme/contact-form-v15/ (404 at
-  time of prep — design tokens extracted from screenshot)
+  time of prep — design tokens extracted from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cf/ContactFrom_v15/index.html` — HTTP 200, 2,897 B, title `Contact V15`.
+>
+> Sheet: `https://colorlib.com/etc/cf/ContactFrom_v15/css/style.css?v=9d1e75e5` (12,176 B).
+> Faces it actually declares: `Poppins-Bold`, `Segoe UI`, `Roboto`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 

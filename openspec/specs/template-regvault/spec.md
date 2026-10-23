@@ -3,7 +3,16 @@
 ## Purpose
 
 Recreation of ColorLib **Regform 21** (`colorlib-regform-21`).
-Preview URL: https://preview.colorlib.com/theme/colorlib-regform-21/ (unreachable at prep time — design captured from screenshot).
+Preview URL: https://preview.colorlib.com/theme/colorlib-regform-21/ (unreachable at prep time — design captured from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below).
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/regform/colorlib-regform-21/` — HTTP 200, 2,511 B, title `RegistrationForm_v5 by Colorlib`.
+>
+> Sheet: `https://colorlib.com/etc/regform/colorlib-regform-21/css/style.css?v=9b85403f` (4,916 B).
+> Faces it actually declares: `Arvo-Regular`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 Source: https://colorlib.com/wp/template/colorlib-regform-21/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-21.jpg
 
@@ -11,7 +20,7 @@ Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
 ## Design tokens
 
-Extracted from the screenshot (preview was 404):
+Extracted from the screenshot (preview was 404) — **re-probed 2026-10-23: the demo serves** (measured record below):
 
 | Token           | Value                           | Notes                                                             |
 | --------------- | ------------------------------- | ----------------------------------------------------------------- |

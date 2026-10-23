@@ -15,7 +15,7 @@ edge of the pill container for a distinctive layered aesthetic.
 
 ## Design tokens
 
-Extracted from the screenshot analysis (preview CSS unavailable).
+Extracted from the screenshot analysis (preview CSS unavailable) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 | Token                  | Value                                          |
 | ---------------------- | ---------------------------------------------- |
@@ -43,6 +43,16 @@ Extracted from the screenshot analysis (preview CSS unavailable).
 | Button transition      | `background-color 0.2s ease`                   |
 | Button shadow          | `box-shadow: 0 2px 8px rgba(0,0,0,0.1)`       |
 | Focus ring             | `outline: 2px solid #c96eb5` on input focus    |
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/search-form-bar-10/` — HTTP 200, 981 B, title `Search Form/Bar 10`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-10/css/style.css?v=c2113e0b` (9,064 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+> The prescribed face `montserrat` occurs in no rule of it.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Requirements
 

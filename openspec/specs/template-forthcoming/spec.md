@@ -27,7 +27,7 @@ Tailwind CSS 4 + TypeScript.
 - **Preview:** https://preview.colorlib.com/theme/comingsoon_08/ returns
   **HTTP 404** (9 B, `text/plain;charset=UTF-8`, verified 2026-10-11 — the same
   live-preview gap as the rest of the `comingsoon_*` family), so the live
-  preview DOM is unreachable for this slug. Fallback (documented per
+  preview DOM is unreachable for this slug. Fallback (documented per — **re-probed 2026-10-23: the demo serves** (measured record below)
   `docs/replication.md`): the official source zip
   `https://preview.colorlib.com/downloads/free/comingsoon_08.zip`
   (HTTP 200, 510,048 B, `application/zip`) was downloaded and extracted to
@@ -50,6 +50,15 @@ Tailwind CSS 4 + TypeScript.
   its uppercase "Coming Soon" headline copy, its `bg01.jpg` photograph, its
   zmdi gift-card glyph and its favicon are never reused
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/cs/comingsoon_08/index.html` — HTTP 200, 3,127 B, title `Coming Soon 8`.
+>
+> Sheet: `https://colorlib.com/etc/cs/comingsoon_08/css/style.css?v=baa69ba2` (11,247 B).
+> Faces it actually declares: `Poppins-Bold`, `PlayfairDisplay-Italic`, `Segoe UI`, `Roboto`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 The reference is one full-viewport screen, not a scrolling site. The screen
 wrapper is `div.bg-img1.overlay1.size1.flex-w.flex-c-m.p-t-55.p-b-55.p-l-15.p-r-15`

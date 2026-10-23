@@ -70,7 +70,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   tfoot month cells render bold (UA default — the snippet never sets
   `th` font-weight). Weight **600** is the class-card "Yoga training"
   strong label. (The preview's self-hosted Roboto 100/300/400/700
-  @font-face rules are unreachable fallbacks — ignore them.)
+  @font-face rules are unreachable fallbacks — ignore them.) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Assets:** the source page references **7 background images**
   `images/classes-1.jpg` … `images/classes-7.jpg` — fitness/yoga class
   photos (women training in a gym, pink/neutral tones), rendered as 90×90
@@ -97,6 +97,15 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
   follows the established grid family (gridkit — the Table 01 sibling,
   gridpane, gridline) and reads naturally for a class-schedule grid of
   marks.
+
+<!-- unreachable-reprobe:start -->
+> **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bootstrap/table-04/` — HTTP 200, 18,520 B, title `Table 04`.
+>
+> Sheet: `https://preview.colorlib.com/theme/bootstrap/table-04/css/style.css?v=19583881` (11,438 B).
+> Faces it actually declares: `Roboto`, `Poppins`, `Segoe UI`, `Helvetica Neue`.
+>
+> Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
+<!-- unreachable-reprobe:end -->
 
 ## Design tokens
 
