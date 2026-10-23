@@ -1,180 +1,264 @@
-# Template: Tandem (Creative Agency)
-<!-- prep-status: shipped-as=prism -->
-> **SHIPPED-UNDER** — the ColorLib `dup` design this prep describes already
-> ships as `apps/prism` (<https://prism.free.componentdock.com>).
-> Do not scaffold `apps/tandem`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-prism/spec.md`.
+# Template: Tandem (App Landing Page)
 
 ## Purpose
 
-Recreation of ColorLib **Dup** — a creative agency website template with a bold
-crimson-red dominant palette, boxed layout with shadow frame, full-bleed
-background images with red semi-transparent overlays, and a clean minimal
-aesthetic.
+Tandem is a single-page app landing template in the free-react-templates
+monorepo. It is an original React recreation of the ColorLib free "Appy"
+website template design (see TEMPLATES.md), built under a different name
+with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-- **Source:** https://colorlib.com/wp/template/dup/
-- **Preview:** https://preview.colorlib.com/theme/dup/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/dup-free-creative-agency-website-template.jpg
-- **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+Naming (AGENTS.md rule 5): the template ships as **Tandem** — a single
+lowercase word that differs from the source design's name; the source name is
+never the app folder, npm package or brand. Provenance stays in this spec,
+`TEMPLATES.md` and the PR.
 
-## Design Tokens
+## Design reference (replication findings)
 
-Extracted from the live preview CSS (`css/main.css`).
+- **Original:** ColorLib "Appy" — modern mobile app landing page for iOS &
+  Android (source: https://colorlib.com/wp/template/appy/).
+- **Demo DOM analyzed:** https://preview.colorlib.com/theme/appy/
+  (HTTP 200, full rendered DOM + `style.css` (33KB) extracted).
+  The TEMPLATES.md screenshot (`appy-free-template.jpg`) is the visual
+  reference; the design below is reconstructed from the DOM structure and
+  CSS tokens.
+- **Section title pattern:** every section pairs a small uppercase kicker
+  (`<h2 class="title">` — e.g. "Features", "Pricing Plan", "FAQ") with a
+  large heading rendered as `<p class="h3">` (e.g. "Powerful Features As
+  Always", "Our Awesome Pricing Plan", "Frequently Asked Questions"). The
+  React recreation renders the large title as the section `h2` heading and
+  the kicker as a small styled label, keeping one `h2` per section.
+- **Section order (1:1):** Navbar (Home, About, Features, Gallery, Pricing,
+  FAQ, Blog, Contacts + Sign Up) → Hero ("Start your amazing stuff through
+  tandem." + Download App) → About ("About Tandem" + Our Progress) → Split
+  ("Great Application Ever" + Learn More) → Video Features ("Great
+  Application Ever" + Learn More) → Features ("Powerful Features As Always"
+  - 6 tiles: Fast & Powerful, Easily Editable, Cloud Storage, Easy
+    Notifications, Fully Responsive, Editable Layout) → Testimonials ("Our
+    Clients Love Us" + Ashekur Rahman, Art Dirrector) → Screenshots
+    ("Screenshot 01" + Learn More) → Our Features ("Our Approach to Design is
+    Pretty Simple and Clear" + Easy Notifications, Fully Responsive, Editable
+    Layout) → Download ("Download The App" + Apple Store / Play Store) →
+    Pricing ("Our Awesome Pricing Plan" + Free $0 / Medium $49 / Business $99
+  - Purchase) → FAQ ("Frequently Asked Questions" + 3 Q&A) → Subscribe →
+    Footer (About, Solutions, Why Tandem, Resources, Company + copyright).
+- **Design tokens extracted from `style.css`:**
+  - Primary **blue `#5e88fc`** (buttons, accents) with supporting
+    `#4a7aff`, `#768ede`, `#8790af`.
+  - Light section backgrounds `#f5f6ff`, `#f2f3fc`; dark text `#434345`.
+  - Font: **"Open Sans"** (Google Fonts) + Linearicons for icons.
+  - Blue rounded buttons with white text.
+- **Recreation decisions:** photos → seeded picsum placeholders
+  (`picsum.photos/seed/tandem-<n>/<w>/<h>`); icons → lucide-react; the video
+  section → styled play button; no assets copied.
 
-| Token             | Value                                      | Usage                                |
-| ----------------- | ------------------------------------------ | ------------------------------------ |
-| Font family       | `"Poppins", sans-serif`                    | All text (weights 300, 500, 600)     |
-| Brand crimson     | `#e0003b`                                  | Body background, overlays (80% opacity), progress bars, button hover fill |
-| Brand crimson alt | `#df003a`                                  | Hover states, inline highlights (effectively same as brand crimson) |
-| Text dark         | `#222222`                                  | Headings                             |
-| Text gray         | `#777777`                                  | Body text, descriptions, links       |
-| Section bg white  | `#ffffff`                                  | Banner, achievements, skills, contact areas |
-| Section bg light  | `#f9fcff`                                  | Achievement link cards, progress bar backgrounds |
-| Button style      | Transparent bg, asymmetric padding (L:30px R:60px), pill shape | `.primary-btn` throughout |
-| Button hover      | `#e0003b` bg, white text, arrow slides right | Primary CTA interaction           |
-| Button white var  | White border, white text, hover fills white with crimson text | Carousel CTAs |
-| Overlay           | `rgba(224, 0, 59, 0.8)`                   | Studio, video, carousel, footer background overlays |
-| Body background   | `#e0003b` solid crimson                    | The body element itself is red       |
-| Content frame     | White bg, `margin: 50px`, `box-shadow: 0 0 50px rgba(0,0,0,0.2)` | Boxed layout wrapper (`.dup-body-wrap`) |
-| Section gap       | `padding: 90px 0`                          | Consistent vertical rhythm between sections |
-| Progress bar      | `#e0003b` fill on `#f9fcff` bg             | Skill progress indicators            |
-| Social colors     | Standard Font Awesome icon colors           | Footer social icons                  |
-
-## Section Structure (order preserved)
-
-1. **Header** — Logo left, nav links (Home, Generic, Elements) right, hamburger menu toggle (`.lnr-menu` icon)
-2. **Banner/Hero** — Full-width white background, 800px height on desktop, overlay (no visual effect on white), two-column layout:
-   - Left (col-lg-6): Headline "Sleek and Clean with same perspective", description paragraph, "Get Started" CTA button with arrow icon
-   - Right (col-lg-5): Hero image (banner.png)
-3. **Studio Area** — Full-bleed background image with crimson overlay (80% opacity), two-column layout:
-   - Left (col-md-4): Studio photo thumbnail
-   - Right (col-md-8): "Green Forest Studio" heading, description paragraph, "View More" CTA button
-4. **Achievement Area** — White background, two-column layout:
-   - Left (col-lg-5): "Our Achievements" heading, description paragraph, "View More" button
-   - Right (col-lg-6): 6-item grid (3 cols × 2 rows) of achievement cards:
-     - Behance Review (fa-behance), Dribbble Shots (fa-dribbble), Youtube Subscribe (fa-youtube), Github Push (fa-github), Offline Trophy (fa-trophy), Cash Prizes (fa-usd)
-     - Each: light bg card with icon + title
-5. **Video Area** — Full-bleed background image with crimson overlay (80% opacity):
-   - Centered play button (play-btn.png image link)
-   - "Everyone wants to be unique" heading (white)
-6. **Skill Area** — White background, two-column layout:
-   - Left (col-lg-5): "Our Tools Expertness" heading, description paragraph, "View More" button
-   - Right (col-lg-6): 4 labeled progress bars:
-     - Adobe Photoshop CC (70%), Adobe Illustrator CC (60%), Adobe Indesign CC (50%), Adobe After Effects CC (80%)
-     - Bar fill: crimson on light background
-7. **Carousel Area** — Full-bleed background image with crimson overlay (80% opacity), Owl Carousel (5 items):
-   - Each item: image thumbnail left (col-xl-6 col-md-4), text right (col-xl-6 col-md-7)
-   - Content: "Glowing Milk Bottle" heading, subtitle, description paragraph, "View More" button (white variant)
-8. **Contact Area** — White background, 4-column layout (col-lg-3 col-md-6):
-   - Visit Our Office (address), Let's call us (phone numbers), Let's Email Us (email addresses), Customer Support (support emails)
-   - Each column: heading + paragraph with contact details
-9. **Footer Widget Area** — Full-bleed background image with crimson overlay (80% opacity):
-   - **Subscription area**: Centered email input + "Subscribe now" button
-   - **Footer columns**: 4-column layout:
-     - About Agency (links: Managed Website, Manage Reputation, Power Tools, Marketing Service)
-     - Navigation Links (Home, Main Features, Offered Services, Latest Portfolio)
-     - Navigation Links (Works & Builders, Works & Wordpress, Works & Templates)
-     - Instafeed (8 thumbnail images in flex grid)
-   - **Footer bottom bar**: Copyright text left, social icons right (Facebook, Twitter, Dribbble, Behance)
+Tandem lives in `apps/tandem` and uses shared components from `packages/ui`
+(Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
-### Feature: Tandem template behaviour
+### Requirement: Navigation bar
 
-Feature: Tandem creative agency template
+The system SHALL render a top navigation bar with the site name "Tandem",
+anchor links to the page's sections, a "Sign Up" button, and a dark-mode
+toggle button.
 
-#### Scenario: Page loads with boxed layout on crimson background
+#### Scenario: Navbar content
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see a crimson (#e0003b) body background
-- **AND** the page content should be framed in a white centered box with shadow
+- **GIVEN** the Tandem page is rendered
+- **WHEN** the page loads
+- **THEN** the navbar SHALL show the site name "Tandem" and links to Home, About, Features, Pricing, FAQ, and Contact
+- **AND** the navbar SHALL show a "Sign Up" button and a dark-mode toggle button
 
-#### Scenario: Header displays logo and navigation
+#### Scenario: Dark mode toggle
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see a logo in the header
-- **AND** I should see navigation links for Home, Generic, and Elements
-- **AND** I should see a hamburger menu button
+- **GIVEN** the page is rendered
+- **WHEN** the user presses the dark-mode toggle
+- **THEN** the `.dark` class SHALL be toggled on the document root element
+- **AND** the toggle SHALL reflect the current mode
 
-#### Scenario: Hero banner shows headline and CTA
+### Requirement: Hero section
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see the headline "Sleek and Clean with same perspective"
-- **AND** I should see a descriptive paragraph below the headline
-- **AND** I should see a "Get Started" button with an arrow icon
+The system SHALL render a full-width hero with a headline, a blurb, a phone
+mockup illustration, and a download button.
 
-#### Scenario: Studio section displays with red overlay background
+#### Scenario: Hero content
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see the "Green Forest Studio" heading
-- **AND** I should see a description paragraph
-- **AND** I should see a "View More" button
-- **AND** the section should have a background image with crimson overlay
+- **GIVEN** the page is rendered
+- **WHEN** the hero is displayed
+- **THEN** it SHALL contain a level-1 heading "Start your amazing stuff through tandem."
+- **AND** it SHALL show a supporting blurb and a "Download App" button
 
-#### Scenario: Achievements section shows 6 metric cards
+### Requirement: About section
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see the "Our Achievements" heading
-- **AND** I should see 6 achievement cards with icons
-- **AND** the cards should include Behance Review, Dribbble Shots, Youtube Subscribe, Github Push, Offline Trophy, and Cash Prizes
+The system SHALL render an about section with the heading "About Tandem", a
+blurb, and progress indicators.
 
-#### Scenario: Video section displays play button
+#### Scenario: About content
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see the "Everyone wants to be unique" heading
-- **AND** I should see a play button that links to a video
-- **AND** the section should have a background image with crimson overlay
+- **GIVEN** the page is rendered
+- **WHEN** the about section is displayed
+- **THEN** it SHALL contain a heading "About Tandem" and a blurb
+- **AND** it SHALL show progress indicators labeled "Our Progress"
 
-#### Scenario: Skills section shows progress bars
+### Requirement: Split sections
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see the "Our Tools Expertness" heading
-- **AND** I should see 4 labeled progress bars
-- **AND** the progress bars should represent Adobe Photoshop CC, Illustrator CC, Indesign CC, and After Effects CC
+The system SHALL render two split sections with the heading "Great
+Application Ever", each with a blurb and a "Learn More" button.
 
-#### Scenario: Carousel displays project items
+#### Scenario: Split content
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see carousel slides with images and text
-- **AND** each slide should have a "View More" button with white variant styling
+- **GIVEN** the page is rendered
+- **WHEN** a split section is displayed
+- **THEN** it SHALL contain a heading "Great Application Ever"
+- **AND** it SHALL show a blurb and a "Learn More" button
 
-#### Scenario: Contact section shows 4 contact columns
+### Requirement: Features section
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see Visit Our Office, Let's call us, Let's Email Us, and Customer Support columns
-- **AND** each column should contain relevant contact information
+The system SHALL render a features section with a heading and six feature
+tiles, each with an icon, a title, and a blurb.
 
-#### Scenario: Footer contains subscription form and links
+#### Scenario: Features content
 
-- **GIVEN** I visit the Tandem page
-- **THEN** I should see an email subscription input with "Subscribe now" button
-- **AND** I should see footer columns with navigation links
-- **AND** I should see social icons for Facebook, Twitter, Dribbble, and Behance
-- **AND** I should see a Component Dock attribution link
+- **GIVEN** the page is rendered
+- **WHEN** the features section is displayed
+- **THEN** it SHALL contain a heading "Powerful Features As Always"
+- **AND** it SHALL show tiles titled "Fast & Powerful", "Easily Editable", "Cloud Storage", "Easy Notifications", "Fully Responsive", and "Editable Layout"
 
-#### Scenario: Primary buttons have pill shape and hover animation
+### Requirement: Testimonials section
 
-- **GIVEN** I visit the Tandem page
-- **THEN** all primary buttons should have pill-shaped rounded corners
-- **AND** hovering over a primary button should fill it with crimson and change text to white
-- **AND** the arrow icon should slide right on hover
+The system SHALL render a testimonials section with a heading, a quote, and
+a reviewer.
+
+#### Scenario: Testimonial content
+
+- **GIVEN** the page is rendered
+- **WHEN** the testimonials section is displayed
+- **THEN** it SHALL contain a heading "Our Clients Love Us"
+- **AND** it SHALL show a quote from "Ashekur Rahman", Art Director
+
+### Requirement: Screenshots section
+
+The system SHALL render a screenshots section with a heading and a row of
+screenshot placeholder images.
+
+#### Scenario: Screenshots content
+
+- **GIVEN** the page is rendered
+- **WHEN** the screenshots section is displayed
+- **THEN** it SHALL contain a heading "Screenshot 01"
+- **AND** it SHALL show at least three screenshot placeholder images and a "Learn More" button
+
+### Requirement: Download section
+
+The system SHALL render a download section with a heading, a blurb, and two
+store buttons.
+
+#### Scenario: Download content
+
+- **GIVEN** the page is rendered
+- **WHEN** the download section is displayed
+- **THEN** it SHALL contain a heading "Download The App" and a blurb
+- **AND** it SHALL show "Apple Store" and "Play Store" buttons
+
+### Requirement: Pricing section
+
+The system SHALL render a pricing section with three plans, each with a
+name, a price, a feature list, and a purchase button.
+
+#### Scenario: Pricing plans
+
+- **GIVEN** the page is rendered
+- **WHEN** the pricing section is displayed
+- **THEN** it SHALL contain a heading "Our Awesome Pricing Plan"
+- **AND** it SHALL show plans "Free" ($0), "Medium" ($49), and "Business" ($99), each with a feature list and a "Purchase" button
+
+### Requirement: FAQ section
+
+The system SHALL render an FAQ section with a heading and at least three
+questions.
+
+#### Scenario: FAQ content
+
+- **GIVEN** the page is rendered
+- **WHEN** the FAQ section is displayed
+- **THEN** it SHALL contain a heading "Frequently Asked Questions"
+- **AND** it SHALL show at least three expandable questions with answers
+
+#### Scenario: FAQ accordion toggling
+
+- **GIVEN** the FAQ section is displayed
+- **WHEN** the user activates a question
+- **THEN** the question SHALL expand and reveal its answer
+- **AND** when the user activates the same question again, it SHALL collapse and hide the answer
+
+### Requirement: Footer
+
+The system SHALL render a footer with link columns, social links, and a
+copyright line.
+
+#### Scenario: Footer content
+
+- **GIVEN** the page is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL show link columns for about, solutions, and company
+- **AND** it SHALL show social links (GitHub, X, LinkedIn) and a copyright line
+
+### Requirement: Page composition
+
+The system SHALL compose all sections in a single page with a main landmark
+and a document title.
+
+#### Scenario: Full page render
+
+- **GIVEN** the Tandem app is rendered
+- **WHEN** the page loads
+- **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
+- **AND** the document title SHALL be "Tandem — App Landing Template"
+
+### Requirement: Component Dock attribution
+
+The system SHALL credit Component Dock — the marketplace that publishes this
+template — with a visible link to `https://www.componentdock.com/` in the site
+footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT
+change the footer's own layout or copy beyond the credit line.
+
+#### Scenario: Footer attribution
+
+- **GIVEN** any page of the template is rendered
+- **WHEN** the footer is displayed
+- **THEN** it SHALL contain an anchor whose `href` is
+  `https://www.componentdock.com/`
+- **AND** the anchor's text SHALL name Component Dock
+
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/tandem/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/tandem/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
 ## Verification checklist
 
-- [ ] Poppins font loaded (weights 300, 500, 600)
-- [ ] Crimson body background (#e0003b)
-- [ ] Boxed white content wrapper with box-shadow and margin
-- [ ] Header with logo, nav links, hamburger menu
-- [ ] Hero banner: headline, description, CTA button with arrow
-- [ ] Studio section: background image + crimson overlay, photo + text layout
-- [ ] Achievements: 6 icon cards in 3-column grid
-- [ ] Video section: background image + crimson overlay, play button, heading
-- [ ] Skills: 4 labeled progress bars with crimson fill
-- [ ] Carousel: multiple slides with image + text + white-variant CTA
-- [ ] Contact: 4 columns with address/phone/email/support info
-- [ ] Footer: subscription form, 4-column links, social icons, Component Dock link
-- [ ] Pill-shaped buttons with hover animation (fill + arrow slide)
-- [ ] Responsive: columns collapse gracefully on mobile
-- [ ] No ColorLib references in app code
-- [ ] `public/CNAME` set to `tandem.free.componentdock.com`
-- [ ] `homepage` set to `https://tandem.free.componentdock.com`
+- [x] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- [x] Navigation bar — the navbar SHALL show the site name "Tandem" and links to Home, About, Features, Pricing, FAQ, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Start your amazing stuff through tandem."
+- [x] About section — it SHALL contain a heading "About Tandem" and a blurb
+- [x] Split sections — it SHALL contain a heading "Great Application Ever"
+- [x] Features section — it SHALL contain a heading "Powerful Features As Always"
+- [x] Testimonials section — it SHALL contain a heading "Our Clients Love Us"
+- [x] Screenshots section — it SHALL contain a heading "Screenshot 01"
+- [x] Download section — it SHALL contain a heading "Download The App" and a blurb
+- [x] Pricing section — it SHALL contain a heading "Our Awesome Pricing Plan"
+- [x] FAQ section — it SHALL contain a heading "Frequently Asked Questions"
+- [ ] Footer — it SHALL show link columns for about, solutions, and company
+- [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
