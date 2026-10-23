@@ -94,3 +94,30 @@ The system SHALL render a dark navy footer with the site name "Precept", link co
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/precept/public/CNAME` = `precept.free.componentdock.com`
   and the package `homepage` = `https://precept.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/education/` (HTTP 200, 41,573 B,
+title `Education`) and its theme sheet `css/main.css` (60,089 B, sha256
+`0615670e1059…`) over `css/bootstrap.css` (13,681 B). Nine sheets in total; the
+census reads `main.css` only.
+
+| Token | Reference | App (`apps/precept`) |
+| ----- | --------- | -------------------- |
+| Brand | `#f7631b` (88) | `#f7631b` ✓ |
+| Scrim navy | `rgba(4,9,30,0.8)` on `.banner-area .overlay-bg` | `--color-navy: #04091e` ✓ |
+| Ink | `#222` (33) | `#222222` ✓ |
+| Body copy | `#777` (23) | `#777777` ✓ |
+| Lilac-white band | `#f9f9ff` (22) | `#f9f9ff` ✓ |
+| Kit teal / blue | `#4cd3e3` (7) / `#38a4ff` (6) — `.genric-btn.success/.info` styleguide only | not used ✓ (correct) |
+| Face | Poppins 300 body / 600 headings, no serif | Poppins ✓ |
+| Radius | 3px (`.genric-btn.radius`), `50%` avatars | `rounded` |
+| Bands | `.section-gap` 100px, alternating white / `#f9f9ff` | `py-24` white / lilac |
+
+This prep's palette was already exact; the section exists so a fidelity pass can
+see the occurrence counts and the "kit colours are not page colours" note.
+
+Section order measured: header (phone/email/nav) → banner (0.8 navy scrim, 48px
+white H1, orange CTA) → features (3) → popular courses (3 cards, 355/35/$150) →
+"Get reduced fee" split band → upcoming events (2) → testimonial carousel →
+"Become an instructor" CTA → blog (3) → "Not Yet Satisfied" CTA → footer.

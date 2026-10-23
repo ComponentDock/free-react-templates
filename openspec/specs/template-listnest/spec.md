@@ -17,6 +17,57 @@ Design tokens captured from the original (see docs/replication.md):
 ListNest lives in `apps/listnest` and uses shared components from `packages/ui`
 (Button, cn).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Listing** — https://colorlib.com/wp/template/listing/
+- **Preview**: `https://preview.colorlib.com/theme/listing/` — HTTP 200 on 2026-10-23, **39,079 bytes**, title `Listing — Discover Great Local Places in New York`, `<meta name="generator" content="Listing 3.0.0">`.
+- **Stylesheet measured**: `css/style.min.css?v=3.0.0` — **188,216 bytes**, sha256 `6b49c637d8bb…`; plus `vendor/fontawesome/7.3.1/css/fontawesome.subset.css?v=3.0.0` (1,672 B, icons only). No webfont `<link>` — Roboto is self-hosted as six `@font-face` weights inside the sheet.
+- **Measured how**: hex-literal census per sheet (count = occurrences in the sheet), then the winning rule per selector. The demo is a **3.0.0 rebuild** (`?v=3.0.0`, Bootstrap 5.3 variable layer): mismatches with the shipped app are **drift**, not prep errors. Bootstrap's own variable palette (`#007bff`×24, `#6c757d`×19, `#212529`×18, `#198754`×16, `#dc3545`×16, `#f8f9fa`×16, `#ffc107`×14) paints nothing after the theme layer and is **not** a token set.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action crimson | `#d81b53` | 18 | `.btn-form` · `.featured-btn-wrap .btn-danger` · `.btn-contact` · `.review-btn .btn-outline-danger` · `.closed-now` · `.category-wrap:hover` |
+| Action crimson (hover) | `#b8143f` | 8 | `.featured-btn-wrap .btn-danger:hover` · `.btn-outline-danger:hover` · `.listing-modal__submit` |
+| Decorative pink | `#ff3a6d` | 2 | `.styled-heading h3:after` (heading underline) · `.category-img` |
+| Ink | `#3e434b` | 18 | headings, `.category-block h6`, `.detail-filter-wrap p`, `.map-icon:hover` |
+| Body copy | `#666a73` | 15 | `.featured-title-box ul li`, `.add-listing-wrap p`, `.map-icon`, checkboxes |
+| Muted meta | `#5f6d84` | 5 | `.featured-title-box p`/`span`, `.reserve-block p`, `.review-btn span` |
+| Price accent | `#8f6400` | 2 | `.featured-title-box p span` (the `$$` price level) |
+| Light band | `#f3f4f7` | 1 | `.light-bg` (alternating section band) |
+| Dark band | `#252a33` | 5 | `.dark-bg` (footer band) · `.is-sticky` · `.fixed` · `.map-close` |
+| On-dark text | `#fff` | 75 | `.slider` H1, `.dark-bg` copy, primary button labels |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `Roboto, sans-serif`, 16 px | `body` (theme layer overrides `--bs-body-font-family`) |
+| H1 (hero) | 72 px / **300** / `#fff` — 52 px then 40 px at the breakpoints | `h1,.h1` |
+| H2 (section) | 47 px → 34 px | `h2,.h2` |
+| Nav links | 16 px / 300 / `#fff` | `.navbar-light .navbar-nav .nav-link` |
+| Wordmark | 31 px | `.navbar-brand` |
+| Buttons | 18 px / 400, white on crimson | `.btn-form` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Section band | `.main-block { padding: 90px 0 }` (45px under the mobile breakpoint), alternating white / `#f3f4f7` |
+| Hero | `.slider` min-height **800px** (700px mobile), cover photo centred at `75%` vertical — no scrim, no gradient |
+| Radius | **3 px** on `.btn-form`, `.btn-group1`, `.btn-group2`, `.customer-content-wrap a`/`.helpful-btn`; Bootstrap's `--bs-border-radius` elsewhere |
+| Buttons | `.btn-form { padding: 17px; font-size: 18px }`; `.btn-outline-light { padding: 10px 16px }`, hover flips label to `#000` with a white fill |
+| Nav | `.navbar { padding: .5rem 0 }`, brand 31 px, `.btn-outline-light` "Add Listing" CTA |
+| Heading underline | `.styled-heading h3:after` — a short `#ff3a6d` rule under every section title |
+
+Section order measured in the reference DOM: skip-link → navbar (brand `Listing`, Explore / Listing / Pages dropdowns, `Add Listing`) → `.slider` (H1 "Discover great places in New York", sub-line, search) → `.main-block` "What do you need to find?" (3 category cards with counts) → `.main-block light-bg` "Featured Places" (6 cards) → `.main-block` "Browse Categories" (10 tiles) → `.main-block light-bg` "Reach millions of People" CTA → footer `.main-block dark-bg` (copyright + Colorlib credit) → `Add your business` modal form.
+
+**Deltas vs the shipped app** (drift is not a prep error — the app is already on main):
+- The app's primary `#ff3a6d` is the reference's **decorative underline** colour (2 occurrences), while the reference's **action** colour is `#d81b53` (18 occurrences, every CTA). The app carries no `#d81b53` at all.
+- Body copy: app `#737882` vs reference `#666a73`; the app's `#3e434b`, `#f3f4f7` and `#252a33` match the reference exactly.
+- The reference is a 3.0.0 rebuild, so the app's flat nav/search treatment is drift as much as omission.
+
 ## Requirements
 
 ### Requirement: Navigation bar

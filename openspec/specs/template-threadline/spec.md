@@ -42,6 +42,53 @@ target.
 live sheets do not paint (a hover/state shade may be inline or JS-driven;
 verify before building from it): `#ff6363`, `#ff7777`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Male Fashion** — https://colorlib.com/wp/template/malefashion/
+- **Preview**: `https://preview.colorlib.com/theme/malefashion/` — HTTP 200 on 2026-10-23, **56,662 bytes**, title `Male Fashion | Men's Clothing, Shoes and Accessories`, `<meta name="generator" content="Male Fashion 3.0.0">`.
+- **Stylesheet measured**: `css/style.min.css?v=3.0.0` — **74,332 bytes**, sha256 `539be22ccba7…`, over `css/bootstrap.min.css?v=3.0.0` (120,349 B) and `vendor/swiper/14.3.0/swiper-bundle.min.css` (14,615 B).
+- **Measured how**: hex-literal census of the theme sheet, then the winning rule per selector. The demo is a **3.0.0 rebuild** (`?v=3.0.0` on every asset, Swiper 14, Font Awesome 7, Bootstrap 5-era markup): mismatches with the shipped app are **drift**, not prep errors.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Ink / black surfaces | `#111` | 111 | `h1–h6` · `.section-title h2` · `.site-btn` · `.header__top` band · dropdown · `.footer` · product labels |
+| Pure black | `#000` | 5 | `.primary-btn` fill · search overlay · input focus |
+| Red accent | `#e53637` | 10 | `.header__menu ul li a:after` hover rule · `.banner__item` link underline · `.instagram__text h3` · product-tab active |
+| Deeper red | `#c8191a` | 13 | `.section-title span` kicker · `.hero__text h6` · countdown digits · pressed heart (`[aria-pressed=true]`) |
+| Copy muted | `#666` | 25 | old price · sidebar links · placeholders · product meta |
+| Copy alt | `#333` | 4 | search input, owl nav arrows, comment headings |
+| Product ink | `#0d0d0d` | 13 | product titles/prices, cart totals, sidebar list heads |
+| On-dark | `#fff` | — | `.header__top` links, `.site-btn` label, hero copy on photo |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `Nunito Sans, sans-serif` on `html,body` | `html,body` |
+| Headings | Nunito Sans · **400** · `#111` (H1 70 px, H2 36 px) | `h1–h6` — the sheet does **not** bold headings; weight lives on `.section-title h2` (700) |
+| Kicker | 14 px / 700 · uppercase · `letter-spacing: 2px` · `#c8191a` | `.section-title span` |
+| Buttons | 13–14 px / 700 · uppercase · `letter-spacing: 4px` | `.primary-btn`, `.site-btn`, `.banner__item__text a` |
+| Nav | 18 px / 600 · `#111` | `.header__menu ul li a` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radius | **0** on every button and band (`.primary-btn`, `.site-btn`, `.header__top`); `50%` on product-hover action dots and quantity chips |
+| Top bar | `.header__top` `#111`, 10 px padding, white uppercase 13 px links + currency toggle |
+| Header | white, logo row 30 px, menu 26 px, `#111` dropdown |
+| Hero | full-bleed photo slide (Swiper/owl), white 70 px display line, 4 px-tracked uppercase CTA |
+| Footer | `#111`, 70 px top padding |
+
+Section order measured in the reference DOM: `.header` (`#111` top bar: Sign in, FAQs, currency, cart) → hero slider → `.banner__item` category banners (3) → product tabs (New / Featured / Sale) → hot-deal countdown → Instagram strip → blog posts → `.footer` `#111` with newsletter.
+
+**Deltas vs the shipped app** (drift is not a prep error — the app is already on main):
+- The app ships an **invented red ramp** (`--color-brand-50 … -900`, centred on `#e53e3e`). The reference has exactly two reds with fixed roles: `#e53637` (hover underline / instagram heading) and `#c8191a` (kicker + pressed state) — neither is `#e53e3e`.
+- The app's surfaces `#1a1a1a` / `#111111` are close to the reference's single `#111`; the reference uses `#111` for **all** dark surfaces (no ladder).
+- Heading weight: the reference leaves `h1–h6` at **400** and bolds only `.section-title h2`; the app's bold-everything treatment is drift.
+
 ## Requirements
 
 ### Requirement: Header with navigation

@@ -13,6 +13,56 @@ Design tokens captured from the original:
 
 Precept lives in `apps/precept` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Education** — https://colorlib.com/wp/template/education/
+- **Preview**: `https://preview.colorlib.com/theme/education/` — HTTP 200 on 2026-10-23, **41,573 bytes**, title `Education`.
+- **Stylesheet measured**: `css/main.css` — **60,089 bytes**, sha256 `0615670e1059…`, the theme layer over `css/bootstrap.css` (13,681 B). Nine sheets total (`linearicons`, `font-awesome`, `bootstrap`, `magnific-popup`, `nice-select`, `animate`, `owl.carousel`, `jquery-ui`, `main`); the census below is `main.css` only.
+- **Measured how**: hex-literal census of `main.css`, then the winning rule per selector. Not a rebuild (no version marker, BS3/BS4-era markup, no `/kit/`).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand orange | `#f7631b` | 88 | `.primary-btn` · `.genric-btn.primary` · `::selection` · link/icon accents · banner CTA |
+| Surface lilac-white | `#f9f9ff` | 22 | `.whole-wrap` · `.sample-text-area` · `.button-area` · `.genric-btn.default` |
+| Ink | `#222` | 33 | `h1–h6` · `.genric-btn.default` label · dark buttons |
+| Body copy | `#777` | 23 | `body` · ordered/typography lists |
+| Body copy (alt) | `#777777` | 3 | comment bodies, `.comment-form .form-control` |
+| Ink (alt) | `#222222` | 2 | accordion/toggle `dt > a` |
+| Teal (kit) | `#4cd3e3` | 7 | `.genric-btn.success*` — the button kit, not page brand |
+| Blue (kit) | `#38a4ff` | 6 | `.genric-btn.info*` — the button kit |
+| Danger / warning (kit) | `#f44a40` / `#f4e700` | — | `.genric-btn.danger*`, `.genric-btn.warning*` |
+| Hero scrim | `rgba(4,9,30,0.8)` | — | `.banner-area .overlay-bg` over the right-aligned banner photo |
+| On-brand text | `#fff` | — | `.primary-btn`, `.primary-btn.white`, banner headings |
+
+The `genric-btn` palette (success/info/warning/danger) is a styleguide section on the same sheet; only `primary` is used by the page.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Poppins", sans-serif` · 14 px / **300** / 1.625em · `#777` | `body` |
+| Headings | Poppins · 600 · `#222` (H1 36 px, H2 30 px) | `h1–h6` |
+| Banner H1 | 48 px / 700 · `#fff` (36 → 45 → 32 at breakpoints) | `.banner-content h1` |
+| Buttons | 500 · `.genric-btn` `font-size: .8em`, `padding: 0 30px` | `.genric-btn` / `.primary-btn` |
+
+One face family, no serif, no second script.
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radius | **3 px** (`.genric-btn.radius`, 7 rules); `.genric-btn.circle` 20 px; 8 px on three cards; `50%` on review avatars |
+| Bands | `.section-gap` (100 px) alternating white and `#f9f9ff`; `.section-top-border` 50 px |
+| Banner | full-width photo anchored `right`, `rgba(4,9,30,0.8)` scrim, 48 px white H1, orange CTA |
+| Split bands | `.search-course-area` (photo left / copy + CTA right) and `.cta-one-area` / `.cta-two-area` (dark band, white label, orange or white button) |
+| Cards | course cards with the `355 / 35 / $150` stat row; event cards; blog cards with date/author meta |
+
+Section order measured in the reference DOM: `.header` (phone +953 012 3654 896, support@colorlib.com, nav Home/About/Courses/Events/Gallery/Blog) → `.banner-area` ("We Ensure better education for a better world") → `.feature-area` (Learn Online Courses, 3 items) → `.popular-course-area` (3 course cards, `355 / 35 / $150` stats) → `.search-course-area` ("Get reduced fee during this Summer!") → `.upcoming-event-area` (2 events) → `.review-area` (testimonial carousel, Fannie Rowe) → `.cta-one-area` ("Become an instructor") → `.blog-area` (3 posts) → `.cta-two-area` ("Not Yet Satisfied with our Trend?" + view our blog) → `.footer-area` (Top Products / Quick links / newsletter / copyright).
+
+**Deltas vs the shipped app**: none found — `--color-brand: #f7631b`, `--color-navy: #04091e` (the `rgba(4,9,30,0.8)` scrim), `--color-heading: #222222`, `--color-body: #777777` and `--color-bg-light: #f9f9ff` are all reference literals, and Poppins is the reference face.
+
 ## Requirements
 
 ### Requirement: Navigation bar

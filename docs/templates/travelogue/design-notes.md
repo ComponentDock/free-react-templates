@@ -94,3 +94,30 @@ The system SHALL render a footer with navigation, social links, and Component Do
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/travelogue/public/CNAME` = `travelogue.free.componentdock.com`
   and the package `homepage` = `https://travelogue.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+No live demo and no archive exist for this slug — five probe paths 404 and the
+slug is missing from the preview host's catalog map (`catalog-products-20261009-trace-developer.js`,
+633,990 B, 0 hits). The TEMPLATES.md screenshot is the only reference, and it is
+**The Valley on demo.themexpert.com** (the address bar says so), i.e. the ColorLib
+entry is a round-up post. Tokens below are pixel samples from that 1200×916 JPEG.
+
+| Token | Reference (screenshot) | App (`apps/travelogue`) |
+| ----- | ---------------------- | ----------------------- |
+| Hero water, deep marine | `#003c54` (2,854/16,000 samples) | — (photo comes from picsum) |
+| Hero water, shallow turquoise | `#0c786c` | — |
+| Brand | no flat brand fill exists; the nearest thing to a hue is the water `#003c54`–`#0c786c` | `#00b4d8` (`--color-primary-400`), no pixel within 33 units of it |
+| Hero heading | heavy geometric **sans**, ~56 px, white | `--font-display: 'Playfair Display'` (serif) ← the reference has no serif |
+| CTA | translucent white ≈ `rgba(255,255,255,0.25)`, near-black label `#0a1212`, square corners | dark solid `Button` (per spec) |
+| Logo | white tile + black mountain mark, flush left | text wordmark only |
+| Nav | transparent over the photo, white 14 px labels | repo-standard navbar + dark-mode toggle |
+
+Verified 2026-10-23: `/theme/<slug>/`, `/theme/bootstrap/<slug>/`, `/theme/bb/<slug>/`,
+`/etc/cs/<slug>/index.html` and `/downloads/free/<slug>.zip` all 404, and the
+preview catalog JS has no entry — so "no reference build" is a checked claim, not
+a single failed curl.
+
+Section order in the reference: nav (transparent) → full-bleed hero photo → 2-line
+H1 → `Let's go now` → carousel chevrons. Nothing below the hero exists in the
+reference; the rest of the page is an invented, repo-consistent structure.

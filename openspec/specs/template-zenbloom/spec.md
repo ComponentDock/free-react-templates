@@ -20,6 +20,65 @@ Design tokens captured from the original (see docs/replication.md):
 Zenbloom lives in `apps/zenbloom` and uses shared components from `packages/ui`
 (cn, Button).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Yogabest** — https://colorlib.com/wp/template/yogabest/
+- **Preview**: `https://preview.colorlib.com/theme/yogabest/` — HTTP 200 on 2026-10-23, **44,489 bytes**, title `Yogabest - Free Bootstrap 4 Template by Colorlib`.
+- **Stylesheet measured**: `css/style.css` — **82,521 bytes**, sha256 `e4172187ba7f…`, over Bootstrap 4 + Font Awesome (CDN) + owl-carousel / animate / magnific-popup / flaticon.
+- **Measured how**: hex-literal census of `css/style.css`, then the winning rule per selector.
+- **The rebuild flag on this demo is a FALSE POSITIVE**: `measure-reference-tokens.py` matches `3\.0\.\d` anywhere in the HTML and this page loads `js/jquery-migrate-3.0.1.min.js`. There is no `?v=` marker, no `/kit/`, no Bootstrap 5, and the title still self-identifies as a **Bootstrap 4** Colorlib build — the demo is the original, so app mismatches are prep-level facts, not drift.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Olive green | `#6cae22` | 60 | `a`/`button` · nav active · `.btn.btn-primary` (`!important`) · footer link + social hover · counter labels · `.text span` kicker |
+| Light green | `#9acb56` | 9 | `.hero-wrap .overlay-2` — `linear-gradient(to bottom, #9acb56 0%, rgba(255,255,255,0) 71%, rgba(255,255,255,0) 100%)` |
+| Ink | `rgba(0,0,0,0.8)` | — | `h1–h5` at **400** |
+| Body copy | `#999999` | 1 | `body` (16 px) |
+| Dark panel | `#141b25` | 3 | `.ftco-footer` · `.classes .text h3 a` · `.table thead th` |
+| Scrim | `#000000` | — | `.hero-wrap .overlay`, `.hero-wrap-2 .overlay`, `.ftco-about .overlay` |
+| White overlay | `#fff` | — | `.ftco-services .overlay` |
+| On-brand | `#fff` | — | `.btn-primary` label, footer headings, social glyphs |
+
+**Markup-level colour, not a sheet token**: `#F96D00` appears exactly once in the
+page, on the `#ftco-loader` preloader's inline SVG `stroke` (`<circle … stroke="#F96D00">`).
+It is a loader artefact — a stylesheet-only census can never see it, and it must
+not be promoted to a brand/accent role.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Poppins", Arial, sans-serif` · 16 px / 400 · `#999999` | `body` |
+| Headings | Poppins · **400** · `rgba(0,0,0,0.8)` | `h1–h5` |
+| Script accent | `"Reenie Beanie", cursive` | testimonial numerals (40 px), blog meta (14 px) |
+| Class meta | 12 px / 500 · uppercase · `#000` | `.classes .text .meta p` |
+| Footer widget head | 20 px / 600 · `#fff` | `.ftco-footer-widget h2` |
+| Buttons | 14 px / 400 · `padding: 9px 12px` | `.btn` |
+
+Two faces only: Poppins for everything, Reenie Beanie as a handwritten accent —
+no serif.
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radius | **4 px** on `.btn`; `50%` on `.ftco-footer-social` circles; 2 px on a couple of small chips; Bootstrap's `0.25rem` elsewhere |
+| Bands | `.ftco-section { padding: 7em 0 }` (6em small), alternating white / `bg-light` |
+| Hero | `.hero-wrap` **900 px**, cover photo + `#000` overlay (+`#9acb56` gradient variant), white H1 + CTA |
+| Counters | `.ftco-counter` over a photo, white numerals, green `.text span` kicker |
+| Testimonials | `block-18` with a 40 px Reenie Beanie numeral and a 14 px uppercase green kicker |
+| Footer | `#141b25`, 6em top padding, white headings, `rgba(255,255,255,0.7)` links → `#6cae22` hover |
+
+Section order measured in the reference DOM: top bar (phone +00 1234 567, email, 4 social chips) → navbar (Yogabest, Home/About/Trainer/Classes/Schedule/Blog/Contact) → `.hero-wrap` 900 px ("Welcome to Yogabest", "Yoga Enhances Your Life", CTA) → `.ftco-services bg-light` (Outdoor Activities …) → `.ftco-about img` (0 Year Of Experienced / "Relish in Nature's Natural Gift") → `.ftco-services img` ("Control Your Body To Free Your Soul", Body & Mind Balance) → `.ftco-counter img` (4 counters) → `.ftco-section` Yoga Classes (class cards, `Mon, Tue, Wed 8:00 am-9:00am`) → `testimony-section` → Yoga Schedule (Mon–Sun tabs) → Yoga Trainer (Elizabeth Nelson) → `bg-light` Our Blog (Oct. 10, 2020) → `.ftco-footer` `#141b25`.
+
+**Deltas vs the shipped app** (drift is not a prep error — the app is already on main):
+- Brand `#6cae22` matches exactly; the app's sage ramp around it is an invention, the reference has no ramp.
+- The app's `--color-ember-400: #f96d00` traces to the **preloader spinner stroke**, not to any section colour — keep it out of component styling.
+- The hero's `#9acb56` gradient overlay (9 occurrences) is unmodelled in the app.
+- The app's `--color-display: 'Reenie Beanie'` and `--font-sans: 'Poppins'` match the reference pair exactly.
+
 ## Requirements
 
 ### Requirement: Top bar

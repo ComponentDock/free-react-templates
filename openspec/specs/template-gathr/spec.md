@@ -14,6 +14,54 @@ event info cards, countdown timer, speaker gallery, pricing table, event
 calendar, partner logos, and a multi-column footer. Brand color is
 `#f50136` (vivid red), dark backgrounds `#18181c`, font is Montserrat.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Evento** — https://colorlib.com/wp/template/evento/
+- **Preview**: `https://preview.colorlib.com/theme/evento/` — HTTP 200 on 2026-10-23, **33,617 bytes**, title `Evento - Event Html Template`.
+- **Stylesheet measured**: `assets/css/main.css` — **37,385 bytes**, sha256 `76a91dd19c22…`, over `assets/css/bootstrap.min.css` (31,431 B) plus owl-carousel / animate / ionicons / et-line.
+- **Measured how**: hex-literal census of `main.css`, then the winning rule per selector. Not a rebuild (fixed-top Bootstrap 4 header, no version marker).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand red | `#f50136` | 43 | `.section_title .title:before` rule · `.icon_list li i` · `.loader .loader-inner` · nav hover · `.btn-primary` · `.price_highlight` · `.table.event_calender thead.event_title` · footer social hover |
+| Ink | `#18181c` | 20 | `h1–h6` · `header` / `.sticky_header` · `.btn` fill · `.price_tag` · event titles |
+| Body copy | `#838383` | 10 | `body` · `p` · link hover · footer menu links · price captions |
+| Light panel | `#f0f2f6` | 6 | `.bg-gray` · `.icon_box_one` · `.price_box` · calendar `tbody` |
+| Footer | `#0b031b` | 1 | `footer` |
+| Copyright bar | `#080113` | 1 | `.copyright_footer` |
+| Newsletter field | `#1f1039` | 2 | `footer .newsletter_form .form-control` |
+| Scrim | `rgba(0,0,0,0.4)` | — | `.bg-img .overlay_dark` (photo bands); inner pages `rgba(31,31,32,0.6)` |
+| On-brand | `#fff` | — | `.btn-primary` label, footer headings, calendar head |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Montserrat", sans-serif` · 14 px / 25 px / 400 · `#838383` | `body` (Google import in the same sheet) |
+| Headings | Montserrat · **700** · `#18181c` (H1 48 px, H2 42 px) | `h1–h6` |
+| Section title | 36 px · **uppercase** · 10 px padding | `.section_title .title` |
+| Buttons | 12 px / 500 · uppercase · `padding: 12px 40px` | `.btn` |
+| Price tag | 48 px / 700 · `#18181c`, `sup` 24 px `#838383` | `.price_box .price_tag` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radius | **0** on `.btn` (square CTAs); `.btn-rounded` 50 px pill variant; 4 px on `.bg-img` photo bands; `50px` circles on footer social |
+| Photo bands | `.bg-img` cover photo + `rgba(0,0,0,0.4)` overlay, 70 px vertical padding (`pt70 pb70`), 100 px (`pt100 pb100`) |
+| Pricing | `.price_box` `#f0f2f6`, `padding: 75px 30px`, highlight chip `#f50136`, hover/active flips the card to `#fff` |
+| Calendar | `.table.event_calender thead` `#f50136` white label; `tbody` `#f0f2f6`; 30 px date numerals |
+| Header | fixed-top, transparent → `#18181c` when sticky |
+| Footer | `#0b031b` with a `#1f1039` newsletter field, 50 px social circles, `#080113` copyright strip |
+
+Section order measured in the reference DOM: `.header.navbar.fixed-top` (Home/Speakers/Events/News/Contact + search) → `.home-cover` ("Prepare yourself for the conference", 12-14 February 2018 · Los Angeles CA, "Buy Tickets Now") → event-info strip (DATE / location / speakers / tickets) → `.bg-img pt70 pb70` "Counter until the big event" → About the event → our speakers (4) → pricing table (Early Bird 65 $, "recommended") → next events calendar table → `.bg-gray` our partners → `.bg-img` "GEt your tikets" CTA → footer (`#0b031b` + `#080113`).
+
+**Deltas vs the shipped app** (drift is not a prep error — the app is already on main):
+- The four core literals are exact (`#f50136`, `#18181c`, `#838383`, Montserrat).
+- **Two surfaces are missing from the app's palette**: the `#f0f2f6` panel (partners band, pricing card, calendar body) and the near-black footer ladder (`#0b031b` footer + `#080113` copyright + `#1f1039` field). The app models only `--color-light: #ffffff`, so those bands cannot be reproduced from tokens.
+
 ## Requirements
 
 ### Requirement: Navbar

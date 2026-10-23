@@ -83,3 +83,37 @@ The system SHALL render a dark footer with copyright text, a Component Dock link
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/listnest/public/CNAME` = `listnest.free.componentdock.com`
   and the package `homepage` = `https://listnest.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/listing/` (HTTP 200, 39,079 B,
+`<meta name="generator" content="Listing 3.0.0">`) and its single theme sheet
+`css/style.min.css?v=3.0.0` (188,216 B, sha256 `6b49c637d8bb…`, Roboto
+self-hosted as six `@font-face` weights). The demo is a **3.0.0 rebuild** —
+`?v=3.0.0` on every asset, Bootstrap 5.3 variable layer — so app/reference
+mismatches are drift, not prep error.
+
+| Token | Reference | App (`apps/listnest`) |
+| ----- | --------- | --------------------- |
+| Primary / action | `#d81b53` (18 occurrences: `.btn-form`, `.btn-danger`, `.btn-contact`, review links, category hover) | `#ff3a6d` (`--color-primary`) |
+| Action hover | `#b8143f` | `#f34e79` (lighter, not darker) |
+| Decorative accent | `#ff3a6d` — **only** the `.styled-heading h3:after` underline and `.category-img` | promoted to primary |
+| Ink | `#3e434b` (18) | `#3e434b` ✓ |
+| Body copy | `#666a73` (15) | `#737882` |
+| Muted meta | `#5f6d84` (5) | `#909090` |
+| Price accent | `#8f6400` (`$$` level span) | — |
+| Light band | `#f3f4f7` (`.light-bg`) | `#f3f4f7` ✓ |
+| Dark band | `#252a33` (`.dark-bg`, sticky nav, map close) | `#252a33` ✓ |
+| Hero | `.slider` 800px, cover photo at `center 75%`, **no scrim** | image + overlay |
+| Radius | 3px (`.btn-form`, `.btn-group*`, review pills) | `rounded-md`/none |
+| Type | Roboto 16px body; H1 72px/**300** white; nav 16px/300; buttons 18px/400 | Roboto ✓ |
+
+Bootstrap 5 variables (`#007bff`×24, `#6c757d`×19, `#212529`×18, `#198754`×16,
+`#dc3545`×16, `#f8f9fa`×16, `#ffc107`×14) are base-layer and paint nothing after
+the theme layer.
+
+Section order measured: skip-link → navbar (Explore / Listing / Pages + "Add
+Listing") → `.slider` hero + search → "What do you need to find?" 3 cards →
+`.light-bg` "Featured Places" 6 cards → "Browse Categories" 10 tiles →
+`.light-bg` "Reach millions of People" CTA → `.dark-bg` footer → "Add your
+business" modal.

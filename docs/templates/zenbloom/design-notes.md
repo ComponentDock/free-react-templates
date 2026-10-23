@@ -125,3 +125,37 @@ Fonts loaded via Google Fonts link in index.html:
   Recreate with a circular border + PlayCircle icon.
 - Original feature items use `.feature-1` class with icon + text.
   Recreate as flex column with lucide icon + heading + paragraph.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/yogabest/` (HTTP 200, 44,489 B,
+title `Yogabest - Free Bootstrap 4 Template by Colorlib`) and its theme sheet
+`css/style.css` (82,521 B, sha256 `e4172187ba7f…`).
+
+**Rebuild flag caveat**: `measure-reference-tokens.py` reports `rebuilt=True` for
+this page, but that is a **false positive** — its `3\.0\.\d` regex matched
+`js/jquery-migrate-3.0.1.min.js`. The page has no `?v=` asset markers, no `/kit/`,
+uses Bootstrap 4, and self-identifies as a Colorlib BS4 build, so this IS the
+original demo and any mismatch is a prep-level fact.
+
+| Token | Reference | App (`apps/zenbloom`) |
+| ----- | --------- | --------------------- |
+| Brand | `#6cae22` (60, `!important` on `.btn.btn-primary`) | `#6cae22` (`--color-sage-400`) ✓ |
+| Hero gradient | `#9acb56` → transparent (`.overlay-2`, 71% stop) | not modelled |
+| Ink | `rgba(0,0,0,0.8)` headings at **400** | headings bold |
+| Body copy | `#999999` (16px) | not tokenised |
+| Dark panel | `#141b25` (footer, table head, class titles) | not tokenised |
+| Script accent | `"Reenie Beanie", cursive` (testimonial numerals 40px, blog meta) | `--font-display: 'Reenie Beanie'` ✓ |
+| Face | Poppins 400 body 16px | Poppins ✓ |
+| Button | radius 4px, `9px 12px`, hover transparent + green label | 4px-ish ✓ |
+| Loader | `#F96D00` inline SVG stroke (`#ftco-loader`) | `--color-ember-400: #f96d00` ← traces here, not a brand role |
+
+`#F96D00` is markup, not sheet — a stylesheet-only census cannot see it, which is
+why it looked "invented" in an earlier pass. It is real, but it belongs to the
+preloader spinner, so it should not be used for section accents.
+
+Section order measured: top bar (phone/email/social) → navbar → 900px hero
+"Welcome to Yogabest" → services (bg-light) → about band with `#000` overlay →
+services band (image) → counters over photo → Yoga Classes → testimonial
+(Reenie Beanie numerals) → schedule tabs → trainers → blog (bg-light) →
+`#141b25` footer.

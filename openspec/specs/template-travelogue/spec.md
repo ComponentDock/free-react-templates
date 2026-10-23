@@ -21,29 +21,25 @@ arrows suggest a carousel-style hero.
 
 - **Original:** ColorLib "Travel Wordpress Themes" — free travel agency
   website template (source: https://colorlib.com/wp/template/travel-wordpress-themes/).
-- **Live preview DOM:** https://preview.colorlib.com/theme/travel-wordpress-themes/
-  returned HTTP 404 — preview unreachable. Fallback to TEMPLATES.md screenshot
-  (`travel-wordpress-themes.jpg`) as sole reference.
+- **Live preview DOM:** none exists — five candidate paths 404 and the slug is
+  absent from the preview host's catalog map (full probe list in **Design
+  tokens** below). The TEMPLATES.md screenshot (`travel-wordpress-themes.jpg`)
+  is the sole reference.
 - **Screenshot analysis:** The screenshot shows:
   1. Transparent navbar with "The Valley" mountain logo (left), navigation
      links (Home, Destination, Regions, Shop, Blog), phone number
      (+03 86 600 888 33), search icon (right).
   2. Full-viewport hero with an aerial photo of turquoise/teal ocean water
-     with traditional boats, large white serif/display heading
-     ("Travel WordPress Themes"), dark semi-transparent rounded CTA button
+     with traditional boats, large white sans-serif heading
+     ("Travel WordPress Themes"), a light translucent CTA button
      ("Let's go now"), and left/right chevron slider arrows.
-  3. The overall aesthetic is: turquoise/teal ocean tones, white text on dark
-     overlay, transparent navbar, luxury travel vibe.
-- **Design tokens (estimated from screenshot):**
-  - Brand color: **#00b4d8** (turquoise/teal from ocean imagery)
-  - Hero overlay: semi-transparent dark (rgba(0,0,0,0.3)–rgba(0,0,0,0.5))
-  - Text: **#ffffff** (white) on hero, **#333333** (dark) on light sections
-  - Button: dark semi-transparent background, white text, rounded corners
-    (~4px radius)
-  - Font: **"Playfair Display"** or similar serif/display for hero heading;
-    **"Poppins"** or similar sans-serif for body/nav
-  - Navbar: transparent background, white text links
-  - Overall: light/airy with ocean-teal accents
+  3. The overall aesthetic is: turquoise/teal ocean tones, white text on the
+     photo, transparent navbar, luxury travel vibe.
+  4. The screenshot was taken on **demo.themexpert.com** ("The Valley", a
+     third-party theme) — the ColorLib entry is a round-up post, which is why
+     no `/theme/<slug>/` build exists.
+- **Design tokens:** measured from the screenshot's pixels in **Design tokens**
+  below (no stylesheet exists to read).
 - **Section order (from screenshot — only hero visible, full structure inferred):**
   1. Header/Navbar: transparent, logo + nav links + phone + search
   2. Hero: full-viewport, aerial ocean photo, heading, CTA, slider arrows
@@ -63,6 +59,52 @@ footer with Component Dock link. All images picsum-seeded
 
 Travelogue lives in `apps/travelogue` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Travel Wordpress Themes** — https://colorlib.com/wp/template/travel-wordpress-themes/
+- **Preview**: **none exists.** Probed 2026-10-23: `/theme/travel-wordpress-themes/` 404 (9 B `text/plain`), `/theme/bootstrap/travel-wordpress-themes/` 404, `/theme/bb/travel-wordpress-themes/` 404, `colorlib.com/etc/cs/travel-wordpress-themes/index.html` soft-404 (`<title>Page Not Found - Colorlib</title>`), `/downloads/free/travel-wordpress-themes.zip` 404. The slug is also **absent from the preview host's own catalog map** (`assets/js/catalog-products-20261009-trace-developer.js`, 633,990 B — 0 occurrences), so no demo URL is registered anywhere.
+- **Why**: this ColorLib entry is a round-up post, not a free build. The TEMPLATES.md screenshot is **The Valley**, a third-party theme — the screenshot's own address bar reads `Not Secure — demo.themexpert.com`.
+- **Reference that remains**: the TEMPLATES.md screenshot `travel-wordpress-themes.jpg` (HTTP 200, 239,618 B, progressive JPEG **1200×916**, served as real JPEG — no AVIF conversion needed). The values below are **sampled from its pixels**, not read from a stylesheet, and are the only measurements that exist for this template.
+
+### Colors (pixel-sampled, 1200×916 screenshot)
+
+| Token | Value | Evidence |
+| ----- | ----- | -------- |
+| Hero water — deep marine | `#003c54` | dominant quantised bucket of the hero crop (≈2,854 of 16,000 samples) |
+| Hero water — mid teal | `#004848` | second bucket (1,671 samples) |
+| Hero water — shallow turquoise | `#0c786c` | brightest large-area turquoise (410 samples) |
+| Hero water — navy edge | `#003048` | 334 samples, top-right corner |
+| Heading / nav labels | `#fffafa` | pixel sample inside the H1 strokes (200,400) |
+| CTA fill | translucent white ≈ `rgba(255,255,255,0.25)` → samples `#c8dcd9`–`#e4efe9` | button box (165,537)–(285,570): the fill tracks the water pattern underneath, i.e. white at low opacity over the photo |
+| CTA label | `#0a1212` | darkest pixel inside the button box |
+| Logo tile | `#ffffff` block, `#000` glyph | logo box (46,60)–(158,122) holds both pure white and pure black |
+| App brand, for comparison | `#00b4d8` (`--color-primary-400`) | **not in the screenshot**: the nearest pixel anywhere is `#07a0f1` (chroma distance 33) on a single boat/title-bar pixel; no water area reaches it |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Hero H1 ("Travel WordPress Themes") | heavy geometric sans (Montserrat/Gilroy class), ~56 px at a 1200 px viewport, 2 lines, white | screenshot; **no serif face is present anywhere** in the reference |
+| Nav labels | ~14 px, letterspaced, white, over the photo | navbar row at y≈88 |
+| CTA label | ~13 px, near-black | "Let's go now" |
+| Wordmark | black mountain mark + "The Valley" wordmark inside a white tile | top-left |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Nav | transparent, sitting directly on the photo; white logo tile flush left; phone number + search icon right |
+| Hero | full-bleed photograph, no dark scrim measurable (the water is already dark at the right edge; the heading sits over the lighter turquoise half) |
+| CTA | ~110×34 px translucent-white rectangle, corners square-to-2 px at this scale, no shadow |
+| Carousel | chevron arrows vertically centred at both edges |
+
+Section order measured in the reference: **only the hero exists** — nav (transparent over the photo) → full-bleed hero photo → two-line H1 → `Let's go now` → left/right chevrons. Everything below the fold in the shipped app (destinations, features, trips, testimonials, newsletter, footer) is **invented**, because no reference page exists; the earlier version of this spec inferred that structure but did not say so plainly.
+
+**Deltas vs the shipped app** (drift is not a prep error — the app is already on main):
+- Primary: app `#00b4d8` is a brighter cyan than any measured pixel; the photo's marine range is `#003c54`–`#0c786c`. Recorded as a deliberate brightening, not a measurement.
+- Display face: app `--font-display: 'Playfair Display'` (serif) — the reference H1 is a **heavy sans**. The spec's earlier "Playfair Display or similar serif" line was an unsourced estimate and is corrected here.
+- CTA: the earlier "dark semi-transparent button" was wrong; the reference button is **light translucent** with a near-black label.
 
 ## Requirements
 

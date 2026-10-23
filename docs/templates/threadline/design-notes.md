@@ -44,3 +44,31 @@
 ## Fonts
 
 - Nunito Sans: 300, 400, 600, 700, 800, 900
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/malefashion/` (HTTP 200, 56,662 B,
+`<meta name="generator" content="Male Fashion 3.0.0">`) and its theme sheet
+`css/style.min.css?v=3.0.0` (74,332 B, sha256 `539be22ccba7…`), over Bootstrap 5
+(120,349 B) and Swiper 14 (14,615 B). **This is a 3.0.0 rebuild** — every asset
+carries `?v=3.0.0` — so app/reference gaps are drift, not prep error.
+
+| Token | Reference | App (`apps/threadline`) |
+| ----- | --------- | ----------------------- |
+| Accent red (hover) | `#e53637` (10) | ramp centred on `#e53e3e` (invented, no exact match) |
+| Accent red (kicker/pressed) | `#c8191a` (13) | — |
+| Ink | `#111` (111 occurrences, incl. `.header__top` and `.footer`) | `#1a1a1a` / `#111111` |
+| Product ink | `#0d0d0d` (13) | — |
+| Copy | `#666` (25) / `#333` (4) | not tokenised |
+| Face | Nunito Sans, headings **400** | Nunito Sans ✓, headings bold |
+| Button | radius 0, 13–14px/700 uppercase, `letter-spacing: 4px`, `padding 14px 30px` | tracked uppercase ✓ |
+| Header top bar | `#111`, 10px padding, white 13px uppercase links | ✓ |
+| Footer | `#111`, 70px top padding | `#111111` ✓ |
+
+The sheet uses **one** dark literal (`#111`) for header band, dropdown, buttons'
+text, footer and product labels; the app's two-step surface ladder is a
+reasonable simplification, not a fidelity target.
+
+Section order measured: `#111` top bar (Sign in / FAQs / currency / cart) → hero
+slider → 3 category banners → product tabs (New / Featured / Sale) → hot-deal
+countdown → Instagram strip → blog → `#111` footer + newsletter.

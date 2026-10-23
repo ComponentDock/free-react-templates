@@ -14,6 +14,57 @@ Design tokens extracted from the ColorLib Unicat preview:
 - Heading font: Merriweather (serif)
 - Body font: Open Sans (sans-serif)
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Unicat** — https://colorlib.com/wp/template/unicat/
+- **Preview**: `https://preview.colorlib.com/theme/unicat/` — HTTP 200 on 2026-10-23, **35,758 bytes**, title `Unicat`.
+- **Stylesheet measured**: `styles/main_styles.css` — **34,637 bytes**, sha256 `ae7a80996e71…`; plus `styles/responsive.css` (5,618 B) and `styles/bootstrap4/bootstrap.min.css` (127,343 B) as base.
+- **Measured how**: hex-literal census of `main_styles.css`, then the winning rule per selector. Not a rebuild (Bootstrap 4, no version marker, no `/kit/`).
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand cyan | `#14bdee` | 31 | `.top_bar` · `.logo_text span` · active nav + its `::after` underline · `.header_search_container` · `.course_price` · `.courses_button` · every card-title hover |
+| Ink | `#384158` | 14 | `h1–h6` (Roboto Slab 700) · `.logo_text` · nav links · course/event/team/news titles |
+| Body copy | `#a5a5a5` | 1 | `body` |
+| Subtitle | `#76777a` | 4 | `p` · `.home_slider_subtitle` (24 px) · `.team_subtitle` · social icons |
+| Placeholder | `#b5b8be` | 17 | `.home_search_input::placeholder` · `.course_price span` |
+| Icon ink | `#181818` | 1 | `.search_button i`, `.shopping_cart i` (hover → `#14bdee`) |
+| Footer navy | `#1e2434` | 1 | `.footer` |
+| Surface | `#FFFFFF` | — | `body`, `.features`, `.feature`, `.counter`, `.course` cards |
+| Card shadow | `rgba(29,34,47,0.1)` → `0 1px 10px` | — | `.course` |
+| On-brand | `#FFFFFF` | — | `.home_search_button`, `.courses_button a`, `.counter_title` |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `'Roboto', sans-serif` · 14 px / 400 · `#a5a5a5` | `body` |
+| Headings | `'Roboto Slab', serif` · **700** · `#384158` (H1 48 px, H2 36 px) | `h1–h6` |
+| Slider H1 | Roboto Slab 60 px / 700 · `#384158` | `.home_slider_title` |
+| Slider sub | 24 px · `#76777a` | `.home_slider_subtitle` |
+| Buttons | 14 px / 500 · uppercase · `letter-spacing: .1em` | `.home_search_button`, `.courses_button a` |
+| Card titles | Roboto Slab 20 px, hover `#14bdee` | `.course_title a`, `.event_title a`, `.team_title a` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Radius | **3 px** on buttons/search field (5 rules); **6 px** on `.course` cards; `50%` social chips |
+| Hero | full-width photo slide (`.home_slider_background` cover/centre) + a separately floated `.counter_background` photo on the stats band |
+| Search panel | 3–4 control row under the H1 (Category / Price / Type / Search), cyan submit `#14bdee`, fields 3 px radius |
+| Sections | `.features` 93/103 px padding; `.counter` white card row over the photo band |
+| Cards | white, 6 px radius, `0 1px 10px rgba(29,34,47,0.1)` shadow; header strip + title + meta rows |
+| Footer | `#1e2434`, 94 px top padding, `.footer_background` photo layer |
+
+Section order measured in the reference DOM: `.header` (phone 001-1234-88888, email, Register or Login, navbar Home/About/Courses/Blog/Page/Contact + search toggle) → home slider (H1 + subtitle + 3-field search) → `Welcome To Unicat E-Learning` + 4 feature cards (The Experts, Book & Library, Best Courses, Award & Reward) → `Popular Online Courses` (3 course cards + view all) → `Register Now` counter band with course-picker form → `Upcoming events` (3) → `The Best Tutors in Town` (4) → `Latest News` (5 posts) + newsletter → `.footer` `#1e2434`.
+
+**Deltas vs the shipped app** (drift is not a prep error — the app is already on main):
+- The app ships an **invented cyan ramp** (`--color-primary-400: #34c3eb`, `-500: #1fb0dc`, …). The reference brand is a single literal, `#14bdee`, with no ramp.
+- **Faces are invented**: app `--font-sans: 'Open Sans'` + `--font-display: 'Merriweather'` (serif). The reference is Roboto (UI) + **Roboto Slab** (headings) — a slab serif, not a transitional one.
+- App `--color-navy: #1b1b2f` is close to, but not, the reference footer `#1e2434`.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact info and login link

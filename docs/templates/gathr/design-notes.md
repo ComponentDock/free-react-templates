@@ -97,3 +97,32 @@ The system SHALL render a 3-column footer with brand info, instagram grid, and n
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/gathr/public/CNAME` = `gathr.free.componentdock.com`
   and the package `homepage` = `https://gathr.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/evento/` (HTTP 200, 33,617 B, title
+`Evento - Event Html Template`) and its theme sheet `assets/css/main.css`
+(37,385 B, sha256 `76a91dd19c22…`) over Bootstrap 4 (31,431 B) + owl/animate/
+ionicons. Not a rebuild.
+
+| Token | Reference | App (`apps/gathr`) |
+| ----- | --------- | ------------------ |
+| Brand | `#f50136` (43) | `#f50136` ✓ |
+| Brand dark | (hover is a fill flip, not a darker red) | `#d4002e` (invented) |
+| Ink | `#18181c` (20) | `#18181c` ✓ |
+| Body copy | `#838383` (10) | `#838383` ✓ |
+| Light panel | `#f0f2f6` (6: `.bg-gray`, `.icon_box_one`, `.price_box`, calendar `tbody`) | not tokenised |
+| Footer | `#0b031b` | not tokenised |
+| Copyright bar | `#080113` | not tokenised |
+| Newsletter field | `#1f1039` | not tokenised |
+| Face | Montserrat 700 headings / 400 body | Montserrat ✓ |
+| Button | radius **0**, 12px/500 uppercase, `padding 12px 40px`; `.btn-rounded` 50px pill | pill-ish |
+| Photo bands | `.bg-img` radius 4px + `rgba(0,0,0,0.4)` overlay, 70/100px padding | overlay ✓ |
+
+The footer's near-black ladder is the biggest gap: three distinct literals
+(`#0b031b`, `#080113`, `#1f1039`) against a single white `--color-light` token.
+
+Section order measured: fixed navbar → hero cover ("Prepare yourself for the
+conference", date/place, Buy Tickets Now) → event info strip → counter band →
+about → speakers (4) → pricing (Early Bird 65 $ "recommended") → calendar table →
+partners `.bg-gray` → ticket CTA → footer.
