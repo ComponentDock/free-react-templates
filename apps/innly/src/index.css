@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Innly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V15" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-15/):
+  /* Innly brand palette — measured from the reference booking-form design:
      bronze/tan #c99552 is the ONLY brand color (solid Check availability
      button background with white text, static labels, focus borders, the ⇔
      divider, and the select arrow-tab focus state). */

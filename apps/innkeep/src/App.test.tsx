@@ -60,12 +60,16 @@ describe('App', () => {
     expect(screen.getByLabelText('Check-in *')).toBeInTheDocument()
   })
 
-  it('renders NO navbar or footer (one-section form demo)', () => {
+  it('renders no navbar, one section, and the Component Dock footer', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

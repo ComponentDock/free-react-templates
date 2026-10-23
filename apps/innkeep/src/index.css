@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Innkeep brand palette — recreated from the ColorLib "Colorlib Regform 25"
-     design (live demo: https://colorlib.com/etc/regform/colorlib-regform-25/):
+  /* Innkeep brand palette — measured from the reference design:
      blue #3e91f7 (the "FIND A ROOM" heading + "BOOK ROOM" button bg). */
   --color-brand: #3e91f7;
 

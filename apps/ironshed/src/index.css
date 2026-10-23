@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette from ColorLib Ponigym
-     (https://preview.colorlib.com/theme/ponigym/ + css/style.css):
+  /* Brand palette from the reference stylesheet:
      a gym/fitness theme with red-orange #f34e3a accent,
      Oswald headings, Roboto body text. */
   --color-brand: #f34e3a;

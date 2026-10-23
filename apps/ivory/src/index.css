@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Ivory brand palette — recreated from the ColorLib "Blanca" template.
+  /* Ivory brand palette — measured from the reference design.
      Monochrome: ink #2f2f2f (body, headings, logo, buttons, footer bar),
      meta #afafaf (dates, tags, top-bar text), description #9d9d9d,
      copyright #b8b8b8, header social #bec4c9, footer social #74797e,

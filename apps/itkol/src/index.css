@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Itkol brand colors — from the ColorLib "IT-Solution" stylesheet
+  /* Itkol brand colors — from the reference stylesheet
      (assets/css/style.css): primary pink #ff4495 (41 refs — buttons,
      accents, headings), navy #232f55 + dark violet #140c40 (dark hero
      sections), light sections #f9f9ff/#f0e9ff, muted body #999999,
