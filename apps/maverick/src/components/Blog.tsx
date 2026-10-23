@@ -1,7 +1,7 @@
 import { MessageSquare } from 'lucide-react'
 import { BLOG_POSTS, SERVICES_BLURB } from '../data'
 
-/* Blog section recreated from the ColorLib "Clark" blog: three article
+/* Blog section measured from the reference design blog: three article
    cards, each with a 350px image, a meta row (date · author · comment
    count), a 20px white title link (amber on hover) and a lorem excerpt. */
 

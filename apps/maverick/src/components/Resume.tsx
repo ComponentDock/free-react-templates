@@ -1,7 +1,7 @@
 import { Download } from 'lucide-react'
 import { EDUCATION, EXPERIENCE, RESUME_BLURB, type ResumeEntry } from '../data'
 
-/* Resume section recreated from the ColorLib "Clark" resume: a faint
+/* Resume section measured from the reference design resume: a faint
    "Resume" watermark behind the heading, six dark cards in a two-column
    grid (three education + three experience entries, each with an amber
    date, white 26px title and amber uppercase institution) and a centered

@@ -3,7 +3,7 @@ import { Globe, Mail, MapPin, Phone, type LucideIcon } from 'lucide-react'
 import { CONTACT } from '../data'
 import { contactSchema, fieldErrors, initialContact, type ContactValues } from '../lib/forms'
 
-/* Contact section recreated from the ColorLib "Clark" contact: four info
+/* Contact section measured from the reference design contact: four info
    boxes (Address, Contact Number, Email Address, Website) with 100px
    circular icons, then a two-column block with the white contact form
    (name / email / subject / message, amber pill "Send Message") on one

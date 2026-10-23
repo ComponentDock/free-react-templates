@@ -1,6 +1,6 @@
 import { HIRE_ME } from '../data'
 
-/* Hire-me band recreated from the ColorLib "Clark" hire-me: a full-width
+/* Hire-me band measured from the reference design hire-me: a full-width
    amber band over a photo background with the white 40px heading "I'm
    Available for freelancing" and an amber pill button. On desktop the band
    overlaps the preceding counter section's bottom edge (~70px). */

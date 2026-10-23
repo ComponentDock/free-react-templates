@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Maverick brand colors — from the ColorLib "Clark" preview
-     (https://preview.colorlib.com/theme/clark/ + css/style.css):
-     primary amber #ffbd39 (buttons, hero headline span, resume dates,
+  /* Maverick brand colors — from the reference stylesheet: primary amber
+     #ffbd39 (buttons, hero headline span, resume dates,
      progress fills, service icons, hire-me band, counter numbers, nav
      active underline), page/hero/footer black #000000, card surfaces
      rgba(255,255,255,0.1), counter boxes #191919, progress track

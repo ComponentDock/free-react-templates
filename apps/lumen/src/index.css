@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lumen brand colors — from the ColorLib "Glint" preview
-     (https://preview.colorlib.com/theme/glint/ + css/main.css):
-     a dark creative agency theme with green #39b54a primary,
+  /* Lumen brand colors — from the reference stylesheet: a dark creative
+     agency theme with green #39b54a primary,
      blue #0087cc links, near-black #111111 background, and
      Montserrat/Lora font pairing. */
   --color-primary-50: #eafae0;
@@ -21,7 +20,7 @@
   --color-primary-800: #1a5724;
   --color-primary-900: #123e1a;
 
-  /* Secondary — link color from ColorLib #0087cc. */
+  /* Secondary — link color from #0087cc. */
   --color-link: #0087cc;
 
   /* Background tones. */
@@ -38,7 +37,7 @@
   --color-border: #e8e8e8;
 
   /* Montserrat (headings) + Lora (body) via Google Fonts <link> in
-     index.html — matching the ColorLib font pairing. */
+     index.html — matching the reference font pairing. */
   --font-sans: 'Lora', Georgia, serif;
   --font-display: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 }

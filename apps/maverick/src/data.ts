@@ -1,7 +1,7 @@
-/* Content model for the Maverick template — recreated from the ColorLib
-   "Clark" preview (https://preview.colorlib.com/theme/clark/). All photos
-   are picsum-seeded placeholders (no ColorLib assets); icons are
-   lucide-react (brand social icons are inline SVGs in components/icons). */
+/* Content model for the Maverick template — structure and tone measured from
+   the reference design. All photos are picsum-seeded placeholders (no
+   third-party assets copied); icons are lucide-react (brand social icons are
+   inline SVGs in components/icons). */
 
 export const BRAND = 'Maverick'
 

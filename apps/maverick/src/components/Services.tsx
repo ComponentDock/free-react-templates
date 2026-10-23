@@ -9,7 +9,7 @@ import {
 } from 'lucide-react'
 import { SERVICES, SERVICES_BLURB, type ServiceIcon } from '../data'
 
-/* Services section recreated from the ColorLib "Clark" services: six cards
+/* Services section measured from the reference design services: six cards
    in a three-column grid, each with a 60px amber icon and an uppercase
    letter-spaced title; on hover the card background flips to the amber
    brand color, the icon turns white and the title turns black. */

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Manor brand palette — recreated from the ColorLib "The Estate" design
+  /* Manor brand palette — measured from the reference design
      (coral accent #fd784f, dark navy #0e1d41). */
   --color-coral-50: #fff7f4;
   --color-coral-100: #ffe8df;

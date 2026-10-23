@@ -12,8 +12,8 @@ import { HireMe } from './components/HireMe'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
-/* Maverick — single-page freelance web designer portfolio (recreation of
-   the ColorLib "Clark" demo): header → hero → About → Resume → Services →
+/* Maverick — single-page freelance web designer portfolio, following the
+   reference design: header → hero → About → Resume → Services →
    Skills → Projects → Blog → counter band → hire-me band → Contact →
    footer. */
 

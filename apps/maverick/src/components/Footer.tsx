@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { BRAND, FOOTER_ABOUT, FOOTER_LINKS, FOOTER_QUESTIONS, FOOTER_SERVICES } from '../data'
 import { FacebookIcon, InstagramIcon, TwitterIcon } from './icons'
 
-/* Footer recreated from the ColorLib "Clark" footer: a black four-column
+/* Footer measured from the reference design footer: a black four-column
    footer (About + social circles, Links, Services, Have a Questions?) with
    a centered copyright bar. Brand social icons are inline SVGs (lucide
    removed brand icons). */
@@ -91,6 +91,12 @@ export function Footer() {
         Copyright © {year} All rights reserved | This template is made with{' '}
         <span aria-hidden="true">❤</span> by {BRAND}
       </p>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
+      </div>
     </footer>
   )
 }

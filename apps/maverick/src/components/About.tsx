@@ -1,7 +1,7 @@
 import { Download } from 'lucide-react'
 import { ABOUT } from '../data'
 
-/* About section recreated from the ColorLib "Clark" about: portrait on the
+/* About section measured from the reference design about: portrait on the
    left, "About Me" heading + lorem on the right, a personal-info list
    (white labels / light values), the amber "120 Project complete" counter
    and an amber pill "Download CV" button. */

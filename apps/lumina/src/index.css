@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lumina brand palette — recreated from the ColorLib "Ilene Berg" design
+  /* Lumina brand palette — measured from the reference design
      (css/main.css): purple #8460f6 buttons/overlay, pink #f3487f service icons,
      blue-gray #6f7598 service panels, yellow #f9c400 subscription,
      dark #4e5375 footer. */

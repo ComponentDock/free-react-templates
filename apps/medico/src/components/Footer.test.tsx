@@ -66,7 +66,11 @@ describe('Footer', () => {
     expect(
       screen.getByText(new RegExp(copyright.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))),
     ).toBeInTheDocument()
-    // The credit shares the paragraph with the copyright line.
-    expect(screen.getByText((content) => content.includes('Component Dock'))).toBeInTheDocument()
+    // The credit shares the paragraph with the copyright line and links to
+    // the Component Dock marketplace.
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

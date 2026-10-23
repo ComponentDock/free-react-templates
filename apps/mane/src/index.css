@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Mane brand palette — recreated from the ColorLib "Haircare" design
+  /* Mane brand palette — measured from the reference design
      (css/style.css): tan/gold #bf925b accents, dark plum #563b4c footer,
      light section bg #f8f9fa, dark heading #000000. */
   --color-brand: #bf925b;
