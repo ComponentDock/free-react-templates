@@ -20,6 +20,51 @@ Design tokens captured from the original (see docs/replication.md):
 Aurora lives in `apps/aurora` and uses shared components from `packages/ui`
 (Button, cn).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Maze** — https://colorlib.com/wp/template/maze/
+- **Preview**: `https://preview.colorlib.com/theme/maze/` — HTTP 200 on 2026-10-23, 15,186 bytes, title `Maze`.
+- **Stylesheets measured**: theme sheet `css/main.css` — 29,314 bytes, sha256 `6a44b919f7f9…`; base `css/bootstrap.css` 7,749 B plus icon/plugin sheets (`linearicons.css`, `font-awesome.min.css`, `nice-select.css`, `magnific-popup.css`). Only `main.css` paints brand colour.
+- **Measured how**: hex-literal census of `main.css` + winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand blush | `#f67590` | 25 | `body` background · `a:hover` · `.genric-btn.primary` fill/border · `.newsletter-area` band · `.process-area .lnr` is a separate `#f5204b` |
+| Blush (banner, deeper) | `#f66483` | 1 | `.banner-area` background — the hero band is one step deeper than the page |
+| Off-white canvas | `#f9f9ff` | 27 | `.genric-btn.default` · card/tile surfaces · the light section bands |
+| Section tint | `#f9faff` | 1 | `.process-area` background (feature grid) |
+| Ink | `#222222` | 13 | `a`, all `h1`–`h6`, `.h1`–`.h6`, body copy |
+| White | `#fff` | 54 | `.banner-content` + `h1` · `.featured-area` / `.image-gallery-area` / `.about-area` bands · `.primary-btn` fill · `.footer-area` text |
+| Footer icon hover | `#000` | — | `.footer-area i:hover`, `.footer-area a:hover` |
+
+`#56e4d2` (success), `#38a4ff` (info), `#f4e700` (warning), `#f44a40` (danger) are the `.genric-btn.*` demo palette — they are **not** brand tokens.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body / everything | `"Poppins", sans-serif` · `#222222` | `body` + the `/* Typography */` block |
+| `h1` | 36px | base heading rules |
+| `h2` | 30px | same block |
+| Banner copy | white, `h1` weight 600 | `.banner-content h1` |
+| Footer | white on a photographic background (`img/f-bg.jpg`) | `.footer-area` |
+
+Only Poppins is used — no serif, no icon-font colour tokens.
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Bands | `.banner-area` `#f66483` → `.featured-area` `#fff` → `.special-offer-area` → `.image-gallery-area` `#fff` → `.process-area` `#f9faff` (icon tiles white, 28px `#f5204b` glyphs) → `.about-area` `#fff` → `.newsletter-area` `#f67590` with white text → `.footer-area` (`background: url(../img/f-bg.jpg)`, `margin-bottom: 90px`) |
+| Primary CTA | `.primary-btn` white pill: `line-height: 40px`, `padding: 0 30px`, `border-radius: 20px`, `border: 1px solid #eee`, `#000` label, weight 500 |
+| Generic buttons | `.genric-btn` `line-height: 40px`, `padding: 0 30px`, `border-radius: 3px`, weight 500 |
+| Newsletter field | `.subscription` form with a `.primary-btn` submit inside the blush band |
+| Nav | `.header-area` fixed over the hero; `.banner-content` white text |
+
+Section order measured in the reference DOM: `header` + `nav.hide` → `.banner-area` (blush) hero `h1` → `.featured-area` ("Fresh Arrivals" / "Online Store" tiles) → `.special-offer-area` (16:9 offers) → `.image-gallery-area` → `.process-area` (6 icon features) → `.about-area` (two-up performance blocks) → `.newsletter-area` (`h3 "Subscribe for our Newsletter"` + `form.subscription`) → `.footer-area` (photo band, white text) → end.
+
 ## Requirements
 
 ### Requirement: Navigation bar

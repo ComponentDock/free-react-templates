@@ -17,6 +17,51 @@ background, white info panels).
 - **Source**: ColorLib "Thumber" — https://colorlib.com/wp/template/thumber/
 - **Preview**: https://preview.colorlib.com/theme/thumber/
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Thumber** — https://colorlib.com/wp/template/thumber/
+- **Preview**: `https://preview.colorlib.com/theme/thumber/` — HTTP 200 on 2026-10-23, 31,481 bytes, title `Thumber — Photography portfolio`.
+- **Stylesheet measured**: `css/style.min.css?v=3.1.0` — 44,624 bytes, sha256 `93f224e63a95…`, plus `kit/icons.css?v=3.1.0` (2,433 B) and the vendor set (`vendor/bootstrap-5.3.8` 232,111 B, swiper 14.3.0, photoswipe 5.4.4, fontawesome 7.3.1 subset).
+- **REBUILT demo.** The banner comment reads `Thumber 3.1.0`, sheets carry `?v=3.1.0`, markup loads Bootstrap **5.3.8** and a `/kit/` component layer. The live page is a **dark editorial re-design**, not the classic light Thumber that `apps/shuttervibe` recreates — every mismatch below is **drift**, not a wrong prep.
+- **Measured how**: hex-literal census of `style.min.css` + winning rule per selector; Bootstrap-5 chrome (`#0d6efd`, `#6c757d`, `#198754`, `#ffc107`, `#0dcaf0`, `#dc3545`, `#f8f9fa`) is excluded.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand pink | `#e44985` | 17 | `--bs-link-color` · `.site-section-heading:after` (rule under headings) · `.ul-check.primary li:before` · `.site-menu .active > a` / `> li > a:hover` · `.btn.btn-outline-white:hover` |
+| Primary button | `#b5225a` | 7 | `.btn.btn-primary` fill · `.prose blockquote` rule · `.field-exercise` left border · `.filter-bar button[aria-pressed=true]` |
+| Focus/hover accent | `#f69cc0` | 10 | `:focus-visible` outline · `.form-control:focus` border · `.gallery-thumbs .swiper-slide[aria-current=true]:before` · `.text-link:hover` · `.site-footer a:hover` |
+| Charcoal surface | `#303030` | 13 | `.project-meta` · `.project-next` · `.principles` · `.service-row` · `.process-grid li` text/blocks |
+| Photo plate | `#181818` | 8 | `.collection-image`, `.essay-image`, `.about-image`, `.service-image`, `.journal-image` placeholder surfaces |
+| Gallery surface | `#141414` | — | `.gallery-top` / `.swiper-slide` background, form-control focus fill, `.contact-aside > div` |
+| Header bar | `#000` | — | `.header-bar` fixed black navigation column |
+| Footer | `#080808` | 1 | `.site-footer` background |
+| Body copy | `#b8b8b8` | 12 | `body` color · `.form-control::placeholder` · `.site-footer` · `.collection-caption .eyebrow` |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| UI / body | `Quicksand` (self-hosted woff2, weights 300/400/500/700) · 1rem / 1.7 | `:root --bs-body-font-family`, `@font-face` block |
+| Display headings | **`Georgia, "Times New Roman", serif`** · `font-weight: 400` · `clamp(48px, 6.5vw, 98px)` on `.home-intro h2` / `.page-intro h1`; 34–56px on cards (`34`, `36`, `46`, `56`) | `.home-intro h2`, `.wide-collection h2`, `.service-row h2`, `.journal-card h3`, `.commission h2` |
+| Buttons | 12px · letter-spacing · `min-height: 48px` | `.btn.btn-primary` |
+| Lead paragraph | Georgia 28px `#e8e8e8` | `.article-lead` |
+
+This is a **two-face** system: Quicksand for chrome, **Georgia serif for every display line** — the shipped app uses Quicksand for both.
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Page | dark canvas, fixed `.header-bar` `#000` (250px column; a 70px bar under `lg`), content in `.section-block { margin: 100px 0 }` |
+| Buttons | `.btn { border-radius: 30px }`; primary `#b5225a` `min-height: 48px`, `padding: 0 28px`, 12px; `.btn.btn-outline-white` `border: 2px solid #fff` |
+| Form fields | `.form-control` `border: none`, `border-bottom: 2px solid gray`, `border-radius: 0`, `background: none`, white text; focus `#141414` fill + `#f69cc0` border |
+| Gallery | `.gallery-top` `height: calc(100vh - 170px)` on `#141414`; controls `#161616` `border-radius: 4px`; `.play-single-big` 90×90 circle, `2px solid #fff`; `.custom-pagination a` circles |
+| Footer | `.site-footer` `#080808`, top rule, `padding: 56px max(48px, (100% - 1380px)/2) 24px`, 14px copy |
+
+Section order measured in the reference DOM: fixed `.header-bar` → `.home-intro` (Georgia display line "The everyday," + intro copy, 1.3fr/1fr grid) → `.section-block` ("A story beyond the frame." with `.collection-caption` cards "Rooms to breathe" / "A little closer") → `.section-block` ("Look a little longer." with essay cards) → `.commission` ("Something in mind?" + CTA, top rule) → `.site-footer` → end. The app's per-photo info panel / zoom / thumbnail strip map onto `.gallery-top` + `.gallery-thumbs` + `.gallery-playback` controls in this rebuild.
+
 ## Requirements
 
 ### Requirement: Header bar

@@ -56,3 +56,32 @@
 - Use Tailwind classes for styling, map the CSS tokens to Tailwind theme values
 - For the arrow indicator, use CSS `::before`/`::after` with border hack or
   a rotated square, positioned above the dropdown panel
+
+## Reference tokens (measured 2026-10-23)
+
+**Archive-only evidence.** No live demo exists for this slug: on 2026-10-23
+`/theme/contact-form-v8/`, `/theme/bootstrap/`, `/theme/bft/`, `/theme/bb/`,
+`/theme/bac/`, `/theme/sidebar/` and `/etc/{regform,bforms}/` all returned 404.
+Measured from the official source archive
+`https://preview.colorlib.com/downloads/free/contact-form-v8.zip` (HTTP 200,
+81,489 B): `index.html` 1,988 B (title `Contact V8`) + `css/style.css`
+11,120 B, sha256 `5ed785486f99…`.
+
+| Token | Reference | App (`apps/dropform`) |
+| ----- | --------- | --------------------- |
+| Brand green | `#57b846` | `#4caf50` (`--color-btn`) |
+| Brand hover | `#1b3815` (button flips to near-black green) | `#43a047` (lighter green) |
+| Input text | `#1b3815` | `#333333` |
+| Field border | `#e6e6e6` 1px | `#cccccc` 1px, `rounded` |
+| Field height | `62px` (textarea 199px) | `h-12` (48px) |
+| Card | 500px wide, radius `10px`, `padding: 62px 55px 65px`, shadow `0 3px 20px 0 rgba(0,0,0,0.1)` | `max-w-[500px]` ✓, radius ~`4px`, `p-8`, `shadow-lg` |
+| Title | `JosefinSans-Bold` 30px `#333333`, left-aligned | Poppins (app font), similar size |
+| Inputs font | `JosefinSans-Bold` 15px | Poppins |
+| Checkbox | custom 20px square `#e6e6e6`, check glyph `#57b846`, label in `Oswald-Medium` | app has no copy-mail checkbox |
+| Focus | animated 1px green stroke drawn around the field | plain `focus:border` |
+| Backdrop | full-bleed Google-map iframe behind the card | flat `#e8e8e8` background |
+
+Section order measured in the archive DOM: map iframe → centered card
+[`"Contact Us"` → Name / Email / Message → checkbox "Send copy to my-email" →
+`Send Email`] → end. No footer in the reference; the app appends the mandatory
+Component Dock footer.

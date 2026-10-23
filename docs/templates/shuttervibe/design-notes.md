@@ -66,3 +66,39 @@ The system SHALL render a footer linking to Component Dock.
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/shuttervibe/public/CNAME` = `shuttervibe.free.componentdock.com`
   and the package `homepage` = `https://shuttervibe.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+**The demo is REBUILT.** `https://preview.colorlib.com/theme/thumber/` (HTTP 200,
+31,481 B) serves `Thumber 3.1.0` — sheets carry `?v=3.1.0`, markup loads
+Bootstrap **5.3.8** plus a `/kit/` component layer (`kit/icons.css`,
+`kit/gallery.min.css`, `kit/mobile-nav.min.css`, `kit/reveal.min.css`), and the
+page is a **dark editorial redesign** with `home-intro` / `section-block` /
+`commission` bands. The theme sheet is `css/style.min.css?v=3.1.0` (44,624 B,
+sha256 `93f224e63a95…`).
+
+Because the demo was redesigned, every mismatch below is **drift**, not a prep
+error: the shipped app recreates the classic light Thumber (fixed black header
+bar, full-screen Swiper gallery, thumbnail strip, mobile menu), whose structure
+still exists in the rebuild but whose palette and display face do not.
+
+| Token | Reference (3.1.0) | App (`apps/shuttervibe`) |
+| ----- | ----------------- | ------------------------ |
+| Brand pink | `#e44985` (`--bs-link-color`, heading rules, active nav) | `#e44985` ✓ (`--color-brand`) |
+| Primary button | `#b5225a` | `#c7376e` (`--color-brand-dark`) ← literal drift |
+| Focus/hover accent | `#f69cc0` | not tokenized |
+| Display face | **Georgia serif** (48–98px clamp) | `Quicksand` for headings ← face drift |
+| UI face | Quicksand (self-hosted woff2) | Quicksand ✓ |
+| Body copy | `#b8b8b8` on a dark canvas | dark page, lighter copy |
+| Surfaces | gallery `#141414`, plates `#181818`, footer `#080808`, header `#000` | black chrome ✓, no `#141414`/`#181818` ladder |
+| Charcoal block | `#303030` (`.project-meta`, `.service-row`, `.process-grid li`) | not tokenized |
+| Button shape | `.btn { border-radius: 30px }`, `min-height: 48px`, `padding: 0 28px`, 12px | pill-ish, similar |
+| Form fields | bottom `2px solid gray`, radius `0`, white text; focus `#141414` + `#f69cc0` border | underline inputs ✓, no pink focus |
+| Footer | `#080808`, `56px max(48px,…) 24px`, 14px | black footer ✓ |
+
+Section order measured in the reference DOM: fixed `.header-bar` → `.home-intro`
+(Georgia display + 1.3fr/1fr intro grid) → two `.section-block` bands with
+`.collection-caption` / `.essay-copy` cards → `.commission` CTA → `.site-footer`.
+The app's `Header/MobileMenu/Gallery|PhotoGrid/Footer` covers the header,
+gallery and footer of that skeleton; the editorial text bands
+(`home-intro`, `section-block`, `commission`) postdate the app.

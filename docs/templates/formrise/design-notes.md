@@ -96,3 +96,34 @@ Preview: https://preview.colorlib.com/theme/contact-form-07/ (404 — design fro
 - [ ] Write tests (100% coverage)
 - [ ] Run verify-app.sh
 - [ ] Commit + open PR
+
+## Reference tokens (measured 2026-10-23)
+
+Read from the live demo `https://preview.colorlib.com/theme/bootstrap/contact-form-07/`
+(HTTP 200, 13,988 B, title `Contact Form 07`) and its single sheet
+`css/style.css?v=bc1b3538` (17,028 B, sha256 `683de413988c…`). The slug-only
+`/theme/contact-form-07/` path 404s; the `bootstrap/` path is the live page.
+
+| Token | Reference | App (`apps/formrise`) |
+| ----- | --------- | --------------------- |
+| Form panel | `#272a34` charcoal | `#343a40` (`--color-card-dark`) |
+| Info panel | `#1c1e25` near-black | same surface as the form panel (one `bg-card-dark`) |
+| Accent / CTA | `#f39422` | `#e8a838` |
+| CTA hover | `#d67a0c` | `#d4952e` |
+| Page canvas | `#fafafa` | `#f5f5f5` |
+| Body copy | `#666666` | `#aaaaaa` on the dark card |
+| Panel headings | Poppins 400, white | Playfair Display serif bold ← no serif face in the reference |
+| Card radius | `10px` | `5px` (`rounded-[5px]`) |
+| Card shadow | `0 21px 41px -13px rgba(0,0,0,0.18)` | `shadow-lg` |
+| Inputs | `height: 52px`, bottom border `rgba(255,255,255,0.2)` | underline border `#555555` |
+| Button | radius `2px`, shadow `0 10px 20px -6px rgba(0,0,0,0.12)` | radius `3px`, no shadow |
+| Info icons | 50×50 circle, `rgba(255,255,255,0.02)` plate, white 20px glyph | circle ✓ |
+
+Bootstrap-4 leftovers (`#007bff`, `#6c757d`, `#212529`, `#495057`, `#0062cc`) are
+overridden by the `cl-` layer and are **not** design tokens.
+
+Section order measured in the reference DOM: `h2 ("Contact Form #07")` →
+`.wrapper` [left `.contact-wrap #272a34` (`h3 "Write us"`, Name/Email/Subject/
+Message, `Send Message`) | right `.info-wrap #1c1e25` (`h3 "Contact information"`,
+"We're open for any suggestion or just to have a chat", Address / Phone / Email /
+Website)] → end. No reference footer; ours appends the Component Dock footer.

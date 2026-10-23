@@ -97,3 +97,38 @@ The system SHALL render a dark navy footer with copyright text, social icons and
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/pixelcraft/public/CNAME` = `pixelcraft.free.componentdock.com`
   and the package `homepage` = `https://pixelcraft.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from the live demo `https://preview.colorlib.com/theme/boxus/` (HTTP 200,
+71,814 B, title `Boxus - Html Responsive One Page Template`) and its theme sheet
+`style.css` (28,656 B, sha256 `d0b9424c848c…`). The six vendor sheets
+(`prettyPhoto.css`, `sm-clean.css`, `clear.css`, `common.css`,
+`font-awesome.min.css`, `carou-red-el.css`) are chrome — their palettes are not
+tokens.
+
+| Token | Reference | App (`apps/pixelcraft`) |
+| ----- | --------- | ---------------------- |
+| Navy band | `#221c5a` | `#221c5a` ✓ (`--color-navy`) |
+| Body ink | `#23214c` | `#23214c` ✓ (`--color-navy-body`) |
+| Accent pink (submit) | `#e54b76` outlined, `2px`, fills on hover | `#e54b76` ✓ (`--color-pink-brand`) + `#ee87a4` hover |
+| Soft pink (link hover) | `#ee87a4` | `#ee87a4` ✓ |
+| Section tile green | `#32db8a` (services) | `#32db8a` ✓ (`--color-green-title`) |
+| Section numeral green | `#55b286` | `#55b286` ✓ (`--color-green-num`) |
+| Section numeral amber | `#e3a436` (portfolio, video) | **`#ffba42`** (`--color-yellow-timeline` / `-progress`) ← literal drift |
+| Blue/red numerals | not present — the reference numerals are green or amber only | `#4c9ee7`, `#e74c78` used for progress bars |
+| Display face | Montserrat 700 (56/109/180px) | Montserrat ✓ |
+| Body face | Roboto 16px/26px | Roboto ✓ |
+| Subtitle face | PT Serif 22px | PT Serif ✓ |
+| Submit button | full width, square (no radius), uppercase 16px, `padding: 12px 0` | similar |
+| Tile geometry | `.section-title-holder` 370×370 solid colour, white 109px heading | block present (size approximate) |
+
+The reference's numerals are colour-coded per section (`#32db8a` services,
+`#e3a436` portfolio/video); the app's single amber `#ffba42` is the one literal
+that does not exist in the sheet.
+
+Section order measured in the reference DOM: fixed navy `.menu-wrapper` → hero
+`h1.big-title` + `.title-desc` → SERVICES → PORTFOLIO → CRAFTERS → STORIES →
+OFFER → EXPERTISE → Contact (navy band, outlined pink full-width submit) →
+footer. The app's `Navbar/Hero/Services/Portfolio/About/Stories/Offer/Expertise/
+Contact/Footer` matches 1:1.

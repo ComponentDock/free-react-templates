@@ -35,6 +35,58 @@ target.
 live sheets do not paint (a hover/state shade may be inline or JS-driven;
 verify before building from it): `#6c63ff`, `#e91e63`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Contact Form 04** — https://colorlib.com/wp/template/contact-form-04/
+- **Preview**: `https://preview.colorlib.com/theme/bootstrap/contact-form-04/` (the slug-only `/theme/contact-form-04/` path 404s; the `bootstrap/` family is the live demo) — HTTP 200 on 2026-10-23, 13,939 bytes, title `Contact Form 04`.
+- **Stylesheet measured**: `css/style.css?v=9be41b33` — 17,693 bytes, sha256 `e7a78fbcb3f9…`. One sheet, no inline `<style>`, no webfont `<link>` in the head.
+- **Measured how**: hex-literal census of the sheet (count = literal occurrences), then the winning rule per selector. The sheet is a Bootstrap-4 base plus a slim `cl-`-prefixed theme layer; base hues the theme overrides are listed separately and are **not** tokens.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Panel gradient start | `#7f279c` | 10 | `.contact-wrap` `background` and every prefixed `linear-gradient(-45deg …, #7f279c 0%, #2e279d 100%)` fallback |
+| Panel gradient end | `#2e279d` | 9 | same rule, stop 100% (`linear-gradient(135deg, #7f279c 0%, #2e279d 100%)` wins) |
+| Accent magenta | `#d62196` | 4 | `a` color · `.info-wrap h3:after` (60×3 underline) · `.cl-btn.cl-btn-primary` background + border |
+| Accent magenta (hover) | `#aa1a77` | 2 | `.cl-btn.cl-btn-primary:hover, :focus` |
+| Page canvas | `#fafafa` | 1 | `body` background |
+| Body copy | `#666666` | 1 | `body` color |
+| Ink | `#000` | 5 | `h2,h3,.h2,.h3` · `.heading-section` · `.info-wrap h3` · `.dbox p span` · `.dbox .icon span` |
+| Card / on-panel text | `#fff` | 10 | `.contact-wrap h3` · `.cl-btn-primary` text · `.cl-form-control` base |
+| Error | `#f65c78` | 2 | `#contactForm .error` · `#form-message-warning` |
+| Success | `#28a745` | 2 | `#form-message-success` · `.submitting` |
+| Input hairline | `rgba(255,255,255,0.2)` → focus `0.5` | — | `.contactForm .cl-form-control` bottom border |
+| Icon ring | `1px solid rgba(0,0,0,0.05)` | — | `.info-wrap .dbox .icon` |
+
+Bootstrap-4 residues that the `cl-` layer overrides and that are **not** tokens: `#007bff`×5, `#6c757d`×4, `#212529`×3, `#495057`×3, `#0062cc`×2, `#0056b3`, `#80bdff`, `#ced4da`, `#e9ecef`, `#fcf8e3`.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Poppins", Arial, sans-serif` · 16px / 1.8 · 400 | `body` |
+| Page title (`h2.heading-section`) | Poppins · 28px · 400 · `#000` | `.heading-section` |
+| Panel headings (`h3`) | Poppins · 400 · `#fff` on the gradient, `#000` in the white panel | `.contact-wrap h3` / `h2,h3` |
+| Inputs | 14px (16px inside `#contactForm`) · `rgba(255,255,255,0.8)`; placeholder `rgba(255,255,255,0.5)` | `.cl-form-control` |
+| Button | 14px / 400 | `.cl-btn` |
+
+The sheet declares **no** `@font-face` and links no webfont, so Poppins falls back to Arial on a machine without it. **No serif face anywhere.**
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Section band | `.ftco-section { padding: 7em 0 }` on `#fafafa` |
+| Card | full-width `.wrapper`, `box-shadow: 0 21px 41px -13px rgba(0,0,0,0.18)`; 7/5 split inside |
+| Form panel | `.contact-wrap` 135° gradient `#7f279c → #2e279d` |
+| Info panel | white; `h3` underline 60×3 `#d62196`; `.dbox` rows `margin-bottom: 25px`; `.text` = `calc(100% - 50px)` |
+| Inputs | transparent, `height: 52px`, `border-radius: 0`, single bottom border 1px `rgba(255,255,255,0.2)`; focus `0.5`; `textarea` `height: inherit` |
+| Button | `padding: 12px 16px`, `border-radius: 5px`, shadow `0 10px 20px -6px rgba(0,0,0,0.12)`, hover shadow `… 0.22` |
+| Info icons | 50×50, `border-radius: 50%`, 1px `rgba(0,0,0,0.05)` ring, 20px `#000` glyph |
+
+Section order measured in the reference DOM: `h2 "Contact Form #04"` → `.wrapper` [left 7-col gradient panel: `h3 "Send us a message"` + Name/Email/Subject/Message + submit `Send Message` | right 5-col white panel: `h3 "Contact us"`, line "We're open for any suggestion or just to have a chat", four `.dbox` rows — Address / Phone / Email / Website] → end. The reference has **no footer**; the shipped app appends the mandatory Component Dock footer.
+
 ## Requirements
 
 ### Requirement: Page layout

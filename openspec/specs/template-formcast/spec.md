@@ -17,6 +17,54 @@ FormCast is a centered contact form template that recreates ColorLib Contact For
 
 Design tokens: brand coral-red #ef4444, font Inter, card shadow, light gray-blue gradient background.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Contact Form V20** — https://colorlib.com/wp/template/contact-form-v20/
+- **Preview**: **no live demo** — `/theme/contact-form-v20/`, `/theme/bootstrap/`, `/theme/bft/`, `/theme/bb/`, `/theme/bac/`, `/theme/sidebar/` and `/etc/{regform,bforms}/` all answered **404** on 2026-10-23. The reference is the official source archive `https://preview.colorlib.com/downloads/free/contact-form-v20.zip` (HTTP 200, 71,150 B): `contact-form-v20/index.html` 1,761 B, title `Contact V20`.
+- **Stylesheet measured**: `css/style.css` inside the archive — 11,349 bytes, sha256 `a12b10eedd02…`. No live twin exists to hash against, so this is archive-only evidence (stated as such, not as a verified live page).
+- **Measured how**: hex-literal census of that sheet + winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand coral | `#ff4b5a` | 2 | `.contact100-form-btn` background · `.focus-input100` 1px focus ring (`border-radius: 2px`) |
+| Button hover | `#333333` | 3 | `.contact100-form-btn:hover` background; also `.contact100-form-title` and `.input100` text |
+| Placeholder | `#555555` | 8 | `input`/`textarea` `::placeholder` (all vendor prefixes) |
+| Error | `#c80000` | 2 | `.alert-validate::before/::after` (client-side validation bubble) |
+| Input border | `#dbdbdb` | 1 | `.wrap-input100` `1px solid`, `border-radius: 2px` |
+| Symbol ring | `#e7e7e7` | 1 | `.contact100-form-symbol` 100×100 circle, `1px`, `border-radius: 50%` |
+| Card / symbol | `#fff` | 6 | `.wrap-contact100` background · `.contact100-form-symbol` fill · labels |
+| Page veil | `rgba(173,173,173,0.4)` | — | `.container-contact100::before` full-bleed overlay above the map iframe (`z-index: -2`) |
+| Link | `#666666` | 1 | `a` |
+
+Bootstrap residues (`#212529`, `#007bff`, `#0056b3`) are unused by the page and are **not** tokens.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Page | `OpenSans-Regular, sans-serif` | `body, html` override (custom face, declared `@font-face` with a local `fonts/` woff2) |
+| Card title | OpenSans-Regular · 30px · `#333333` · centered | `.contact100-form-title` |
+| Inputs | OpenSans-Regular · 20px (textarea 15px) · `#333333` | `input.input100` / `textarea.input100` |
+| Button | OpenSans-Regular · 13px · uppercase-ish label `Send` | `.contact100-form-btn` |
+
+Substitution for the app: **Open Sans** is on Google Fonts (the app ships Inter — a documented delta, not a reference face).
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Page | `min-height: 100vh`, centered flex, `padding: 15px`; Google-map iframe at `z-index: -2`, gray veil `rgba(173,173,173,0.4)` above it |
+| Card | `.wrap-contact100` **800px**, `border-radius: 2px`, `margin-top: 55px`, `padding: 92px 70px 88px 70px`, `box-shadow: 0 3px 20px 0 rgba(0,0,0,0.1)` |
+| Symbol | 100×100 circle, `1px solid #e7e7e7`, white fill, centered on the card's top edge (`top: -55px`) |
+| Fields | `.wrap-input100` 1px `#dbdbdb`, `border-radius: 2px`, `margin-bottom: 30px`; input `height: 60px`; textarea `min-height: 199px` |
+| Name/Email row | `.rs1` = two columns on ≥576px (flex, `width: calc(100% - 15px)`) |
+| Focus | `.focus-input100` inset ring 1px `#ff4b5a`, `border-radius: 2px`, scale-in on focus |
+| Button | `height: 50px`, `min-width: 100px`, `background: #ff4b5a`, `border-radius: 2px`, right-aligned (`justify-content: flex-end`), hover `#333333` |
+
+Section order measured in the archive DOM: map iframe → gray veil → card [`contact100-form-symbol` (100px circle, mail glyph) → `h3 "Drop Us A Message"` → Name + Email (two-up) → Message textarea → `Send` right-aligned] → end. No footer in the reference; the app appends the Component Dock footer.
+
 ## Requirements
 
 ### Requirement: Page renders with correct layout and heading

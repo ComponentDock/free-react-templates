@@ -24,6 +24,53 @@ Design Tokens:
 - Sidebar text: rgba(255, 255, 255, 0.5)
 - Sidebar icons: #ffffff
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Contact Form 17** — https://colorlib.com/wp/template/contact-form-17/
+- **Preview**: `https://preview.colorlib.com/theme/bootstrap/contact-form-17/` — HTTP 200 on 2026-10-23, 6,530 bytes, served `<title>` **`Contact Form #7`** (the demo's own label is one number off its slug; keep the app's own title, do not copy either number as copy).
+- **Stylesheet measured**: `css/style.css?v=ba904131` — 15,247 bytes, sha256 `af8d2e44c067…`. One sheet, no webfont `<link>`.
+- **Measured how**: hex-literal census + winning rule per selector. Two layers: Bootstrap-4 base (with a lime palette) and a late `cl-` theme layer that repaints the card navy, teal band and black hairlines.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand navy | `#35477d` | 3 | `.cl-btn.cl-btn-primary` background · `.contact-wrap .form h3` · `.contact-wrap .contact-info` background |
+| Teal band | `#8bbabb` | 1 | `body:before` — `height: 50vh`, full-width, behind the card's top half |
+| Body copy | `#8c8c8c` | 1 | `body` color (line-height 1.9) |
+| Ink | `#000` | 4 | `h3,.h3` · `.cl-col-form-label` · input focus border · `.submitting` |
+| Card labels | `#b3b3b3` | 1 | `.contact-wrap .cl-col-form-label` (14px) |
+| Input hairline | `#ccc` | 1 | `.cl-form-control` single bottom border |
+| White | `#fff` | 10 | `body` background · `.contact-wrap .form` · button text · `.contact-info h3` / icon glyphs |
+| Sidebar text | `rgba(255,255,255,0.5)` | — | `.contact-wrap .contact-info` and its `li` rows |
+| Error | `red` | — | `label.error` (12px) |
+
+The lime `#ccda46`×5 (`a`, `.cl-btn-primary`) and `#e9efb0` (input focus border) are **base-layer only** — `.cl-btn.cl-btn-primary` and the input rules are overridden to `#35477d` / `#000`. The page renders no anchor, so the lime is a dead token: do **not** put it in `@theme`. Other Bootstrap residues (`#212529`×7, `#6c757d`×4, `#495057`×3, `#fcf8e3`, `#ced4da`, `#e9ecef`, `#a3b023`, `#c0d02a`, `#adbb25`, `#b7c628`) are likewise invisible here.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Roboto", sans-serif` · 1rem · 1.9 · `#8c8c8c` | `body` (theme override; the base stack is the Bootstrap system stack) |
+| Card headings | Roboto · 20px · `.form h3` navy `#35477d`, `.contact-info h3` `#fff` | `.contact-wrap .form h3`, `.contact-wrap .contact-info h3` |
+| Labels | Roboto · 13px base, **14px `#b3b3b3` inside the card** | `.cl-col-form-label` |
+| Button | Roboto · 12px · uppercase · `letter-spacing: .2rem` | `.cl-btn` theme override |
+| Icons | `.wrap-icon` 20px `#fff` | `.contact-info ul li .wrap-icon` |
+
+Roboto is referenced by name only (no `@font-face`); a machine without it falls back to the system sans. **No serif face.**
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Page band | `.content { padding: 7rem 0 }` over the 50vh teal `body:before` |
+| Card | `.contact-wrap` white, `box-shadow: 0 0 20px 0 rgba(0,0,0,0.2)`; form and info panels `padding: 40px` |
+| Inputs | `border: none`, single bottom border `1px solid #ccc`, `border-radius: 0`, `height: 45px`, no padding, focus border `#000` |
+| Button | `height: 45px`, `border-radius: 0`, `border: none`, 12px uppercase `letter-spacing: .2rem`, `padding: 15px 20px`, navy on white |
+| Labels | 14px `#b3b3b3` inside the card, `margin: 0 0 10px` |
+
+Section order measured in the reference DOM: teal top band → white card [left `.form` panel: `h3 "Send us a message"` + Name\*/Email\*/Phone/Company/Message\* + `Send Message` | right `.contact-info` navy panel: `h3 "Contact Information"`, wrapped icon rows] → end. No page title and no footer in the reference; the app supplies the Component Dock footer.
+
 ## Requirements
 
 ### Requirement: Contact form rendering

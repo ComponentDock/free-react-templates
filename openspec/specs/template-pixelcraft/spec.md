@@ -22,6 +22,54 @@ Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 Pixelcraft lives in `apps/pixelcraft` and uses shared components from `packages/ui`
 (Button, cn).
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Boxus** — https://colorlib.com/wp/template/boxus/
+- **Preview**: `https://preview.colorlib.com/theme/boxus/` — HTTP 200 on 2026-10-23, 71,814 bytes, title `Boxus - Html Responsive One Page Template`.
+- **Stylesheet measured**: theme sheet `style.css` — 28,656 bytes, sha256 `d0b9424c848c…`, over six vendor sheets (`css/prettyPhoto.css` 27,099 B, `css/sm-clean.css` 11,209 B, `clear.css`, `common.css`, `font-awesome.min.css`, `carou-red-el.css`). Vendor palettes are excluded from the token table.
+- **Measured how**: hex-literal census per sheet + winning rule per selector; the vendor sheets' `#fff`/`#000`/`#eee` are gallery-chrome, not brand.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Navy (primary dark) | `#221c5a` | 8 | `.menu-wrapper` bar · `.section-content-holder .content-title` (180px watermark) · `.intro-page` hero band · `#services`/`#portfolio`/`#about` bands · footer |
+| Body ink | `#23214c` | 7 | `body` color · `body a` · `.contact-form input/textarea` text + placeholders |
+| Accent pink | `#e54b76` | 6 | `.contact-form input[type=submit]` text + 2px border, and its hover fill (`color: white; background-color: #e54b76`) |
+| Accent pink (soft) | `#ee87a4` | 3 | `body a:hover` · `.member-position` · `.blog-item-holder .info .cat-links a` |
+| Section green | `#32db8a` | 2 | `.section-title-holder` block background (services) |
+| Number green | `#55b286` | 2 | `.section-num span` (the 180px section numeral) |
+| Section amber | `#e3a436` | 2 | `#portfolio .section-title-holder span` · `#video .section-title-holder span` — the numeral changes colour per section |
+| White | `#fff` | 15 | `.section-title-holder h2` · `h1.big-title` · `.title-desc` · card text on navy |
+
+Menu/gallery chrome from `sm-clean.css` (`#d23600`, `#555555`, `#201b55`) is vendor, not brand.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `'Roboto', sans-serif` · 16px / 26px · 400 · `#23214c` | `body` |
+| Hero `h1.big-title` | `'Montserrat'` · 56px / 100% · 700 · `#fff` · `letter-spacing: -1px` | `h1.big-title` |
+| Section headings | Montserrat · 109px / 83px · 700 · white on the coloured tile | `.section-title-holder h2` |
+| Watermark title | Montserrat · 180px · 700 · uppercase · `#221c5a` | `.section-content-holder .content-title` |
+| Section numeral | Montserrat · 180px · 700 · `letter-spacing: -5px` · coloured per section | `.section-num span` |
+| Hero subtitle | `'PT Serif', serif` · 22px / 26px · max-width 333px | `.title-desc` |
+| Card titles | Montserrat · 24px (service), 20px uppercase `letter-spacing: 4px` (portfolio), 16px (post link) | `.service-title`, `.portfolio-text`, `.latest-post-bottom-text a` |
+
+Fonts are Google-Fonts faces (Montserrat, Roboto, PT Serif) — no self-hosted files in the archive.
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Section title tile | `.section-title-holder` **370×370**, solid `#32db8a` (green) or amber per section, white 109px heading inside |
+| Portfolio/video numeral | `.section-num span` 180px, `margin-left: -64px`, `letter-spacing: -5px` |
+| Bands | `.intro-page` navy full-height hero; `#services`/`#portfolio`/`#about` navy; alternating white content blocks; footer navy |
+| Submit button | outlined: `border: 2px solid #e54b76`, transparent fill, `color: #e54b76`, **full width**, `padding: 12px 0`, uppercase 16px, `margin-top: 30px`, no radius declared (square); hover fills `#e54b76` with white text |
+| Member cards | `.member-name` 16px/26px 700; `.member-position` `#ee87a4` |
+
+Section order measured in the reference DOM: fixed `.menu-wrapper` (navy) → hero `h1.big-title` + `.title-desc` → `SERVICES` (green 370 tile + watermark + service list) → `PORTFOLIO` (tile + grid) → `CRAFTERS` (team cards with `.member-name` / `.member-position`) → `STORIES` (blog cards, `cat-links` soft pink) → `OFFER` (prose block) → `EXPERTISE` (skills) → `Contact` (navy band, outlined pink submit, full-width) → footer (navy). No Component-Dock-style attribution in the reference; the app supplies it.
+
 ## Requirements
 
 ### Requirement: Navigation bar

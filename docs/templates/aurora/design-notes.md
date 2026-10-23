@@ -90,3 +90,33 @@ The system SHALL render a dark footer with the site name, a tagline, and social 
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/aurora/public/CNAME` = `aurora.free.componentdock.com`
   and the package `homepage` = `https://aurora.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from the live demo `https://preview.colorlib.com/theme/maze/` (HTTP 200,
+15,186 B, title `Maze`) and its theme sheet `css/main.css` (29,314 B, sha256
+`6a44b919f7f9…`), with `css/bootstrap.css` (7,749 B) as base.
+
+| Token | Reference | App (`apps/aurora`) |
+| ----- | --------- | ------------------- |
+| Page canvas | `#f67590` (the whole page is blush) | white page, blush only on banner/sections |
+| Brand (links, primary btn) | `#f67590` | `#f14a6e` (`--color-blush-500`) ← literal drift |
+| Hero band | `#f66483` | `#f66483` ✓ (`--color-blush-400`) |
+| Off-white tile | `#f9f9ff` | `#fef2f4`-family (`--color-blush-50`) — different tint |
+| Process band | `#f9faff` | `#fff` |
+| Ink | `#222222` | `#222`-ish via `text-primary` |
+| Feature icon | 28px `#f5204b` glyph on a white 20px-padded tile | pink glyph, no tile padding |
+| Primary CTA | white pill, `border-radius: 20px`, `line-height: 40px`, `padding: 0 30px`, `1px solid #eee` | white/pink pill, radius closer to `9999px` |
+| Demo button family | `#56e4d2`/`#38a4ff`/`#f4e700`/`#f44a40` are `.genric-btn.*` demo states | n/a — correctly not used |
+| Font | Poppins everywhere, `h1` 36px / `h2` 30px | Poppins ✓ |
+
+The reference's `body` is fully blush, which is why every section either keeps
+the blush or switches to white/`#f9faff`; the app starts from white and paints
+blush bands, so band order reads the same but the page background differs.
+
+Section order measured in the reference DOM: `header` + `nav.hide` →
+`.banner-area` `#f66483` → `.featured-area` → `.special-offer-area` →
+`.image-gallery-area` → `.process-area` `#f9faff` → `.about-area` →
+`.newsletter-area` `#f67590` → `.footer-area` (photo band) → end. The app's
+`Navbar/Hero/Arrivals/Parallax/Gallery/Features/Performance/Newsletter/Footer`
+matches 1:1.

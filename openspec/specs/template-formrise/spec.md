@@ -33,6 +33,56 @@ target.
 live sheets do not paint (a hover/state shade may be inline or JS-driven;
 verify before building from it): `#e8a838`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Contact Form 07** — https://colorlib.com/wp/template/contact-form-07/
+- **Preview**: `https://preview.colorlib.com/theme/bootstrap/contact-form-07/` (the slug-only `/theme/contact-form-07/` path 404s; the `bootstrap/` family is the live demo) — HTTP 200 on 2026-10-23, 13,988 bytes, title `Contact Form 07`.
+- **Stylesheet measured**: `css/style.css?v=bc1b3538` — 17,028 bytes, sha256 `683de413988c…`. One sheet, no inline `<style>`, no webfont `<link>`.
+- **Measured how**: hex-literal census of the sheet, then the winning rule per selector. Same Bootstrap-4 base + `cl-` theme layer as the other `contact-form-0N` siblings; the theme layer is what paints the page.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Accent orange | `#f39422` | 3 | `a` color · `.cl-btn.cl-btn-primary` background + border |
+| Accent orange (hover) | `#d67a0c` | 2 | `.cl-btn.cl-btn-primary:hover, :focus` |
+| Form panel (charcoal) | `#272a34` | 1 | `.contact-wrap` background — the whole left column |
+| Info panel (near-black) | `#1c1e25` | 1 | `.info-wrap` background — the right column |
+| Page canvas | `#fafafa` | 1 | `body` background |
+| Body copy | `#666666` | 1 | `body` color |
+| Ink | `#000` | 2 | `h2,h3,.h2,.h3` · `.heading-section` (page title only — the card headings are `#fff`/white) |
+| Card text | `#fff` | 12 | `.contact-wrap h3`, `.info-wrap h3`, `.dbox .icon span`, input text `rgba(255,255,255,0.8)` |
+| Input hairline | `rgba(255,255,255,0.2)` → focus `0.5` | — | `.contactForm .cl-form-control` bottom border |
+| Icon plate | `rgba(255,255,255,0.02)` | — | `.info-wrap .dbox .icon` 50×50 circle |
+| Error | `#f65c78` | 1 | `#contactForm .error` |
+
+Bootstrap-4 residues, overridden and **not** tokens: `#007bff`×5, `#6c757d`×4, `#212529`×3, `#495057`×3, `#0062cc`×2, `#0056b3`, `#0069d9`, `#005cbf`, `#80bdff`, `#ced4da`, `#e9ecef`, `#fcf8e3`.
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Poppins", Arial, sans-serif` · 16px / 1.8 · 400 | `body` (theme override) |
+| Page title | Poppins · 28px · 400 · `#000` | `.heading-section` |
+| Panel headings | Poppins · `#fff`; info panel `h3` 18px | `.contact-wrap h3`, `.info-wrap h3` |
+| Inputs | 14px (16px inside `#contactForm`) · `rgba(255,255,255,0.8)`; placeholder `0.5` | `.cl-form-control` |
+| Button | 14px / 400 | `.cl-btn` |
+
+No `@font-face`, no webfont link — Poppins falls back to Arial. **No serif face anywhere.**
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Section band | `.ftco-section { padding: 7em 0 }` on `#fafafa` |
+| Card | `.wrapper` `border-radius: 10px`, `overflow: hidden`, `box-shadow: 0 21px 41px -13px rgba(0,0,0,0.18)` |
+| Split | `.contact-wrap` (form) + `.info-wrap` (info), both `cl-p-md-5 cl-p-4`, 6/6 columns |
+| Inputs | transparent, `height: 52px`, `border-radius: 0`, bottom border 1px `rgba(255,255,255,0.2)` |
+| Button | `padding: 12px 16px`, `border-radius: 2px`, shadow `0 10px 20px -6px rgba(0,0,0,0.12)`, hover shadow `… 0.22` |
+| Info icons | 50×50, `border-radius: 50%`, `background: rgba(255,255,255,0.02)`, 20px `#fff` glyph |
+
+Section order measured in the reference DOM: `h2 "Contact Form #07"` → `.wrapper` [left `.contact-wrap` `#272a34`: `h3 "Write us"` + Name/Email/Subject/Message + submit `Send Message` | right `.info-wrap.img` `#1c1e25`: `h3 "Contact information"`, line "We're open for any suggestion or just to have a chat", four `.dbox` rows — Address / Phone / Email / Website] → end. No footer in the reference; the app appends the Component Dock footer.
+
 ## Requirements
 
 ### Requirement: Page layout

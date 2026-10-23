@@ -27,6 +27,49 @@ Assets are NOT copied — placeholder images via `picsum.photos`, icons from
 
 DropForm lives in `apps/dropform` and uses shared components from `packages/ui`.
 
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Contact Form V8** — https://colorlib.com/wp/template/contact-form-v8/
+- **Preview**: **no live demo** — `/theme/contact-form-v8/`, `/theme/bootstrap/`, `/theme/bft/`, `/theme/bb/`, `/theme/bac/`, `/theme/sidebar/` and `/etc/{regform,bforms}/` all answered **404** on 2026-10-23. The reference is the official source archive `https://preview.colorlib.com/downloads/free/contact-form-v8.zip` (HTTP 200, 81,489 B): `contact-form-v8/index.html` 1,988 B, title `Contact V8`.
+- **Stylesheet measured**: `css/style.css` inside the archive — 11,120 bytes, sha256 `5ed785486f99…`. Archive-only evidence; there is no live twin to hash against.
+- **Measured how**: hex-literal census of the sheet + winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand green | `#57b846` | 4 | `.contact100-form-btn` background · the two `focus-input100-*::before/::after` focus strokes · `.input-checkbox100:checked + .label-checkbox100::before` (check glyph) |
+| Ink green-black | `#1b3815` | 3 | `.input100` text · `.label-checkbox100` text · `.contact100-form-btn:hover` background |
+| Placeholder | `#999999` | 8 | `input`/`textarea` `::placeholder` (all vendor prefixes) |
+| Error | `#c80000` | 2 | `.alert-validate::before/::after` validation bubble |
+| Field border | `#e6e6e6` | 2 | `.wrap-input100` 1px box · `.label-checkbox100::before` (unchecked box) |
+| Card title | `#333333` | 1 | `.contact100-form-title` |
+| White | `#fff` | 6 | `.wrap-contact100` background · `.wrap-input100` background · button label |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Card title | `JosefinSans-Bold` (self-hosted woff2 in `fonts/`) · 30px · `#333333` · left-aligned | `.contact100-form-title` |
+| Inputs | `JosefinSans-Bold` · 15px · `#1b3815` | `.input100` |
+| Checkbox label | `Oswald-Medium` · 15px · `#1b3815` | `.label-checkbox100` |
+| Button | `JosefinSans-Bold` · 14px | `.contact100-form-btn` |
+
+Both faces ship as local woff2 files. Substitutes on Google Fonts: **Josefin Sans** (the app ships Poppins — a delta) and **Oswald** for the checkbox label.
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Page | `min-height: 100vh`, centered flex, `padding: 15px`; full-bleed Google-map iframe (`#google_map`, `z-index: -1`) behind the card |
+| Card | `.wrap-contact100` **500px**, `background: #fff`, `border-radius: 10px`, `padding: 62px 55px 65px 55px`, `box-shadow: 0 3px 20px 0 rgba(0,0,0,0.1)` (`padding: 62px 15px 65px` under 576px) |
+| Fields | `.wrap-input100` `background: #fff`, `1px solid #e6e6e6`, `margin-bottom: 17px`, no radius; input `height: 62px` `padding: 0 20px 0 23px`; textarea `min-height: 199px` |
+| Focus | animated 1px `#57b846` stroke that draws around the field (two spans, `full-w`/`full-h` keyframes, 0.1–0.2 s) |
+| Checkbox | native input hidden; 20px square `#e6e6e6` box with a FontAwesome check that turns `#57b846` when checked; label `padding-left: 32px` |
+| Button | `height: 42px`, `min-width: 160px`, `padding: 0 20px`, green fill, hover `#1b3815` |
+
+Section order measured in the archive DOM: map iframe → centered card [`contact100-form-title "Contact Us"` → Name / Email / Message (each a bordered `.wrap-input100`) → checkbox "Send copy to my-email" → submit `Send Email`] → end. No footer in the reference; the app appends the Component Dock footer.
+
 ## Requirements
 
 ### Requirement: Page layout and heading

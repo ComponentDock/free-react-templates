@@ -63,3 +63,34 @@ The template SHALL display a footer with a link to https://www.componentdock.com
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/formcast/public/CNAME` = `formcast.free.componentdock.com`
   and the package `homepage` = `https://formcast.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+**Archive-only evidence.** No live demo exists for this slug: on 2026-10-23
+`/theme/contact-form-v20/`, `/theme/bootstrap/`, `/theme/bft/`, `/theme/bb/`,
+`/theme/bac/`, `/theme/sidebar/` and `/etc/{regform,bforms}/` all returned 404.
+The reference is the official source archive
+`https://preview.colorlib.com/downloads/free/contact-form-v20.zip` (HTTP 200,
+71,150 B): `index.html` 1,761 B (title `Contact V20`) + `css/style.css`
+11,349 B, sha256 `a12b10eedd02…`. No live twin exists to hash against, so the
+sheet is not claimed to be a "verified live" page.
+
+| Token | Reference | App (`apps/formcast`) |
+| ----- | --------- | --------------------- |
+| Brand | `#ff4b5a` | `#ef4444` (`--color-brand`) |
+| Brand hover | `#333333` (button turns charcoal) | `#dc2626` (darker red) |
+| Card title | `#333333` | `#1f2937` |
+| Placeholder | `#555555` | `#9ca3af` |
+| Error | `#c80000` | `#ef4444` |
+| Input border | `#dbdbdb`, radius `2px` | `#d1d5db`, radius ~`6px` |
+| Symbol ring | `#e7e7e7`, 100×100 circle | icon present, no bordered circle |
+| Card | 800px, radius `2px`, `padding: 92px 70px 88px`, `margin-top: 55px`, shadow `0 3px 20px 0 rgba(0,0,0,0.1)` | `max-w-lg`, `rounded-lg`, `shadow-[0_25px_50px_-12px_…]` |
+| Field | `height: 60px`, `margin-bottom: 30px`, Name/Email two-up (`.rs1`) | two-up ✓ |
+| Button | `height: 50px`, `min-width: 100px`, right-aligned, radius `2px`, hover `#333333` | right-aligned ✓, rounded |
+| Font | `OpenSans-Regular` (custom face) | **Inter** ← substitute; Open Sans is the Google-Fonts equivalent |
+| Page veil | `rgba(173,173,173,0.4)` over a Google-map iframe | flat slate gradient, no map |
+
+Section order measured in the archive DOM: map iframe → gray veil → card
+[100px symbol circle → `h3 "Drop Us A Message"` → Name + Email two-up → Message
+textarea → `Send` right-aligned] → end. No footer in the reference; the app
+appends the Component Dock footer.

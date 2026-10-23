@@ -69,3 +69,34 @@ The template SHALL display a footer linking to https://www.componentdock.com/.
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/formbox/public/CNAME` = `formbox.free.componentdock.com`
   and the package `homepage` = `https://formbox.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from the live demo `https://preview.colorlib.com/theme/bootstrap/contact-form-17/`
+(HTTP 200, 6,530 B, served title `Contact Form #7`) and its single sheet
+`css/style.css?v=ba904131` (15,247 B, sha256 `af8d2e44c067…`).
+
+| Token | Reference | App (`apps/formbox`) |
+| ----- | --------- | -------------------- |
+| Brand navy | `#35477d` | `#35477d` ✓ (`--color-brand`) |
+| Teal band | `#8bbabb` (`body:before`, 50vh) | `#8bbabb` ✓ (`--color-bg-accent`) |
+| Body copy | `#8c8c8c` | `#8c8c8c` ✓ |
+| Card labels | `#b3b3b3` 14px | `#b3b3b3` ✓ |
+| Input hairline | `#ccc` bottom-only, radius `0`, focus `#000` | `#cccccc` ✓ |
+| Ink | `#000` (headings, focus) | `#000000` ✓ |
+| Sidebar text | `rgba(255,255,255,0.5)` | `rgba(255,255,255,0.5)` ✓ |
+| Panel padding | `40px` both panels | `p-8`/`p-10`-ish |
+| Band padding | `.content { padding: 7rem 0 }` | ~`py-16` |
+| Button | `height: 45px`, radius `0`, 12px uppercase, `letter-spacing: .2rem`, `padding: 15px 20px` | `rounded-none uppercase tracking-[0.2em] px-5 py-3 text-xs` ✓ |
+| Card shadow | `0 0 20px 0 rgba(0,0,0,0.2)` | `shadow-xl` |
+
+This prep is the **closest match in the batch**: every visible colour is already
+tokenized exactly. The lime `#ccda46`×5 in the sheet is base-layer only
+(`a`, `.cl-btn-primary`) and is overridden to navy — it is a dead token, not a
+missing brand colour.
+
+Section order measured in the reference DOM: teal top band → white card
+[`.form` (`h3 "Send us a message"`, Name\*/Email\*/Phone/Company/Message\*,
+`Send Message`) | navy `.contact-info` (`h3 "Contact Information"`, icon rows)] →
+end. The reference has no page title and no footer; the app supplies the
+mandatory Component Dock footer.
