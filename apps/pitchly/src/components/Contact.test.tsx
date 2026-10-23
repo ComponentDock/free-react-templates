@@ -27,7 +27,7 @@ describe('Contact', () => {
     }
 
     expect(
-      screen.getByText(`Copyright © ${new Date().getFullYear()} Colid. All rights reserved.`),
+      screen.getByText(`Copyright © ${new Date().getFullYear()} Pitchly. All rights reserved.`),
     ).toBeInTheDocument()
   })
 

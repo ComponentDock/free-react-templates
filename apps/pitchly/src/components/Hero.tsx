@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight, Play } from 'lucide-react'
 import { cn } from '@free-react-templates/ui'
 
 const screens = [
-  { name: 'Colid app screen 1', seed: 'colid-screen-1' },
-  { name: 'Colid app screen 2', seed: 'colid-screen-2' },
-  { name: 'Colid app screen 3', seed: 'colid-screen-3' },
-  { name: 'Colid app screen 4', seed: 'colid-screen-4' },
-  { name: 'Colid app screen 5', seed: 'colid-screen-5' },
+  { name: 'Pitchly app screen 1', seed: 'pitchly-screen-1' },
+  { name: 'Pitchly app screen 2', seed: 'pitchly-screen-2' },
+  { name: 'Pitchly app screen 3', seed: 'pitchly-screen-3' },
+  { name: 'Pitchly app screen 4', seed: 'pitchly-screen-4' },
+  { name: 'Pitchly app screen 5', seed: 'pitchly-screen-5' },
 ] as const
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-night">
       <img
-        src="https://picsum.photos/seed/colid-hero/1920/1080"
+        src="https://picsum.photos/seed/pitchly-hero/1920/1080"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover opacity-40"

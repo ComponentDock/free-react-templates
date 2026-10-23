@@ -1,17 +1,17 @@
-# Colid — Design Notes
+# Pitchly — Design Notes
 
 Reference: **Colid** — `https://colorlib.com/wp/template/colid/`  
 Live preview: `https://preview.colorlib.com/theme/colid/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colid-free-app-landing-page-website-template.jpg  
-Shipped: https://colid.free.componentdock.com
+Shipped: https://pitchly.free.componentdock.com
 
-Colid is a single-page business/promotional landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Colid" website template design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Pitchly is a single-page business/promotional landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Colid" website template design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/colid/src/index.css` `@theme`)
+## Design tokens (`apps/pitchly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -53,7 +53,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Colid", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Pitchly", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, a "Watch video" button, and a rotating screen preview.
@@ -103,8 +103,8 @@ The system SHALL render a contact footer with contact details, a contact form, a
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/colid/` may name the source designer,
+- **Provenance ban.** No file under `apps/pitchly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/colid/public/CNAME` = `colid.free.componentdock.com`
-  and the package `homepage` = `https://colid.free.componentdock.com`.
+- **Deploy identity.** `apps/pitchly/public/CNAME` = `pitchly.free.componentdock.com`
+  and the package `homepage` = `https://pitchly.free.componentdock.com`.

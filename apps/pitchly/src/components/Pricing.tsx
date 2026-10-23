@@ -38,7 +38,7 @@ export function Pricing() {
   return (
     <section id="pricing" className="relative overflow-hidden py-16 sm:py-24">
       <img
-        src="https://picsum.photos/seed/colid-pricing/1920/1080"
+        src="https://picsum.photos/seed/pitchly-pricing/1920/1080"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"

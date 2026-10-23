@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('renders the site name, section links, and dark-mode toggle', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: 'Colid' })).toHaveAttribute('href', '#home')
+    expect(screen.getByRole('link', { name: 'Pitchly' })).toHaveAttribute('href', '#home')
 
     for (const label of [
       'Home',

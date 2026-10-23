@@ -29,7 +29,7 @@ export function Navbar() {
           href="#home"
           className="font-display text-2xl font-bold tracking-wide text-primary-600 dark:text-primary-400"
         >
-          Colid
+          Pitchly
         </a>
 
         <div className="flex items-center gap-4">

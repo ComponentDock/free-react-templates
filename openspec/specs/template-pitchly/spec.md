@@ -1,8 +1,8 @@
-# Template: Colid (Business Promotion Landing)
+# Template: Pitchly (Business Promotion Landing)
 
 ## Purpose
 
-Colid is a single-page business/promotional landing template in the
+Pitchly is a single-page business/promotional landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Colid" website template design (see TEMPLATES.md), built
 under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -65,12 +65,12 @@ under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Section titles: uppercase h2 with a small icon underline (themify).
   - Price tables: white cards, text `#515656`, radius 2px.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/colid-<n>/<w>/<h>`); icons → lucide-react (Play,
+  (`picsum.photos/seed/pitchly-<n>/<w>/<h>`); icons → lucide-react (Play,
   Zap, Palette, Sliders, MessageCircle, etc.); font → Google Fonts Poppins
   via `<link>`; no assets copied. Paraphrased copy keeps the same content
   kinds (title + blurb + CTA).
 
-Colid lives in `apps/colid` and uses shared components from `packages/ui`
+Pitchly lives in `apps/pitchly` and uses shared components from `packages/ui`
 (ButtonLink) where the house pattern does.
 
 ## Design tokens
@@ -86,14 +86,14 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Colid",
+The system SHALL render a top navigation bar with the site name "Pitchly",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Colid page is rendered
+- **GIVEN** the Pitchly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Colid" and links to Home, Service, Features, Pricing, Team, FAQ, Blog, and Contact
+- **THEN** the navbar SHALL show the site name "Pitchly" and links to Home, Service, Features, Pricing, Team, FAQ, Blog, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -228,7 +228,7 @@ form, and a copyright line.
 - **WHEN** the footer is displayed
 - **THEN** it SHALL show "Contact with us", an address, telephone, and email details
 - **AND** it SHALL show a contact form with a "Submit" button
-- **AND** it SHALL show social links and a copyright line for "Colid"
+- **AND** it SHALL show social links and a copyright line for "Pitchly"
 
 ### Requirement: Page composition
 
@@ -237,10 +237,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Colid app is rendered
+- **GIVEN** the Pitchly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the contact footer in the contentinfo landmark
-- **AND** the document title SHALL be "Colid — Business Landing Template"
+- **AND** the document title SHALL be "Pitchly — Business Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -260,7 +260,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/colid/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/pitchly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -269,7 +269,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/colid/` is inspected
+- **WHEN** every non-test file under `apps/pitchly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -277,7 +277,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Colid" and links to Home, Service, Features, Pricing, Team, FAQ, Blog, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Pitchly" and links to Home, Service, Features, Pricing, Team, FAQ, Blog, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading "It's all about Promoting your Business"
 - [x] Highlight tiles — it SHALL show tiles titled "Easy to Use", "Awesome Design", and "Easy to Customize", each with a blurb
 - [x] Caption slider — it SHALL show slides titled "Easy to Build" and "Easy to Use" with "Read more" links

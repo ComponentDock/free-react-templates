@@ -1,8 +1,8 @@
 const members = [
-  { name: 'Jemy Sedonce', role: 'Co. Founder', seed: 'colid-team-1' },
-  { name: 'Deborah Brown', role: 'UX Designer', seed: 'colid-team-2' },
-  { name: 'Harry Banks', role: 'Founder', seed: 'colid-team-3' },
-  { name: 'Victoria Clark', role: 'Creative Director', seed: 'colid-team-4' },
+  { name: 'Jemy Sedonce', role: 'Co. Founder', seed: 'pitchly-team-1' },
+  { name: 'Deborah Brown', role: 'UX Designer', seed: 'pitchly-team-2' },
+  { name: 'Harry Banks', role: 'Founder', seed: 'pitchly-team-3' },
+  { name: 'Victoria Clark', role: 'Creative Director', seed: 'pitchly-team-4' },
 ] as const
 
 export function Team() {
