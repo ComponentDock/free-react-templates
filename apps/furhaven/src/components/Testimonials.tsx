@@ -10,7 +10,7 @@ export function Testimonials() {
         </p>
         <figure className="mt-14 rounded bg-white p-10 text-center shadow-sm dark:bg-gray-800">
           <img
-            src="https://picsum.photos/seed/animal-shelter-guardian/80/80"
+            src="https://picsum.photos/seed/furhaven-guardian/80/80"
             alt="Mark Alviro Wiens"
             className="mx-auto h-16 w-16 rounded-full object-cover"
           />

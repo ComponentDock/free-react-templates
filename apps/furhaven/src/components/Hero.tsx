@@ -2,7 +2,7 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[70vh] items-center justify-center overflow-hidden bg-black">
       <img
-        src="https://picsum.photos/seed/animal-shelter-hero/1600/900"
+        src="https://picsum.photos/seed/furhaven-hero/1600/900"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-60"
       />

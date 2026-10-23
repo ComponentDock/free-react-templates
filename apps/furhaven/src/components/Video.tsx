@@ -4,7 +4,7 @@ export function Video() {
   return (
     <section className="relative overflow-hidden bg-black py-24">
       <img
-        src="https://picsum.photos/seed/animal-shelter-video/1600/400"
+        src="https://picsum.photos/seed/furhaven-video/1600/400"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-50"
       />

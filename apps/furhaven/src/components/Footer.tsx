@@ -67,7 +67,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light text-gray-400">
-          Copyright © {new Date().getFullYear()} Animal Shelter. All rights reserved. More
+          Copyright © {new Date().getFullYear()} Furhaven. All rights reserved. More
           templates at{' '}
           <a
             href="https://www.componentdock.com/"

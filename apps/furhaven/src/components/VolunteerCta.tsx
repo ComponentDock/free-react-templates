@@ -2,7 +2,7 @@ export function VolunteerCta() {
   return (
     <section className="relative overflow-hidden bg-black py-24">
       <img
-        src="https://picsum.photos/seed/animal-shelter-cta/1600/500"
+        src="https://picsum.photos/seed/furhaven-cta/1600/500"
         alt=""
         className="absolute inset-0 h-full w-full object-cover opacity-50"
       />

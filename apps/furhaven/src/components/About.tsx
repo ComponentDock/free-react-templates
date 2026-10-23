@@ -3,7 +3,7 @@ export function About() {
     <section id="about" className="py-20 lg:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
         <img
-          src="https://picsum.photos/seed/animal-shelter-about/640/480"
+          src="https://picsum.photos/seed/furhaven-about/640/480"
           alt="About the shelter"
           className="w-full object-cover shadow-lg"
         />

@@ -11,7 +11,7 @@ describe('PetStrip', () => {
     expect(images[0]).toHaveAttribute('alt', 'Shelter pet 1')
     expect(images[0]).toHaveAttribute(
       'src',
-      expect.stringContaining('picsum.photos/seed/animal-shelter-1'),
+      expect.stringContaining('picsum.photos/seed/furhaven-1'),
     )
   })
 })
