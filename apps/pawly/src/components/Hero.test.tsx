@@ -12,6 +12,6 @@ describe('Hero', () => {
 
     const image = container.querySelector('img')
     expect(image).not.toBeNull()
-    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/petcare-hero/)
+    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/pawly-hero/)
   })
 })

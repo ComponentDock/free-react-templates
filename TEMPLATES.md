@@ -46,7 +46,7 @@
 - [x] **Horse Club** — [colorlib](https://colorlib.com/wp/template/horse-club/) · [horse-club](https://horse-club.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/horseclub-free-template.jpg)
 - [x] **Leopet** — [colorlib](https://colorlib.com/wp/template/leopet/) · [leopet](https://leopet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/leopet-free-template.jpg)
 - [x] **Pawpal** — [colorlib](https://colorlib.com/wp/template/pawpal/) · [pawpal](https://pawpal.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg)
-- [x] **Petcare** — [colorlib](https://colorlib.com/wp/template/petcare/) · [petcare](https://petcare.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg)
+- [x] **Petcare** — [colorlib](https://colorlib.com/wp/template/petcare/) · [pawly](https://pawly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg)
 - [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [petsitting](https://petsitting.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
 - [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://petvet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [x] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · [vetly](https://vetly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)

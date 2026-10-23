@@ -14,7 +14,7 @@ describe('Commitment', () => {
     const image = container.querySelector('img')
     expect(image).not.toBeNull()
     expect(image).toHaveAttribute('alt')
-    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/petcare-commit/)
+    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/pawly-commit/)
 
     expect(screen.getByRole('link', { name: 'Read More' })).toHaveAttribute('href', '#services')
   })

@@ -4,8 +4,8 @@ export function Commitment() {
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 sm:px-6 md:flex-row">
         <div className="flex-1">
           <img
-            src="https://picsum.photos/seed/petcare-commit/640/480"
-            alt="Veterinarian examining a happy dog at the Petcare clinic"
+            src="https://picsum.photos/seed/pawly-commit/640/480"
+            alt="Veterinarian examining a happy dog at the Pawly clinic"
             loading="lazy"
             className="w-full max-w-lg rounded-lg"
           />

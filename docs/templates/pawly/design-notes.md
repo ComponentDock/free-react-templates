@@ -1,17 +1,17 @@
-# Petcare — Design Notes
+# Pawly — Design Notes
 
 Reference: **Petcare** — `https://colorlib.com/wp/template/petcare/`  
 Live preview: `https://preview.colorlib.com/theme/petcare/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg  
-Shipped: https://petcare.free.componentdock.com
+Shipped: https://pawly.free.componentdock.com
 
-Petcare is a multi-section pet-care services website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Petcare" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Pawly is a multi-section pet-care services website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Petcare" design (see TEMPLATES.md), built under the new name Pawly with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Muli**, **Muli:wght@300;400;600;700;800**
 
-## Design tokens (`apps/petcare/src/index.css` `@theme`)
+## Design tokens (`apps/pawly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Fonts loaded by `index.html` (Google Fonts): **Muli**, **Muli:wght@300;400;600;7
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Petcare", links to the main sections, a phone number, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Pawly", links to the main sections, a phone number, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a hero section with the headline "We Care Your Pets." and a call-to-action button.
@@ -85,8 +85,8 @@ The system SHALL render a footer with an about blurb, link columns (Company, Ser
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/petcare/` may name the source designer,
+- **Provenance ban.** No file under `apps/pawly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/petcare/public/CNAME` = `petcare.free.componentdock.com`
-  and the package `homepage` = `https://petcare.free.componentdock.com`.
+- **Deploy identity.** `apps/pawly/public/CNAME` = `pawly.free.componentdock.com`
+  and the package `homepage` = `https://pawly.free.componentdock.com`.

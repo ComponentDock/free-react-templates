@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('shows the about blurb, link columns, contact details, socials, and copyright', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('link', { name: /petcare/i })).toHaveAttribute('href', '#top')
+    expect(screen.getByRole('link', { name: /pawly/i })).toHaveAttribute('href', '#top')
     expect(screen.getByText(/far far away, behind the word mountains/i)).toBeInTheDocument()
 
     for (const column of ['Company', 'Services', 'Get in Touch']) {
