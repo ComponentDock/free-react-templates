@@ -33,16 +33,21 @@ authoritative again — CSS values are canonical over the screenshot
 `#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
 these.
 
+**App delta (2026-10-23)** — `apps/queryvane/src/index.css` still carries the
+screenshot-era palette: `--color-brand: #2563eb` (0 hits in the sheet). The live sheet
+paints `#007bff` (`a`, `.cl-btn-primary`, `.dropdown-item.active`), hover `#0056b3`. The
+app predates the 2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a
+spec defect; the rows above are the reference's values.
+
 ## Design tokens
 
 <!-- design-tokens-backfill:2026-10-23 -->
-Measured from the shipped source bundle, not sampled off the screenshot:
-https://preview.colorlib.com/downloads/free/search-form-bar-17.zip (HTTP 200, 252,346 B, sha256 `135efd64581b…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+Measured from the live preview's own stylesheet, `https://preview.colorlib.com/theme/bootstrap/search-form-bar-17/css/style.css?v=6209e455` (HTTP 200, 17,178 B, sha256 `6a5417c8e3be`, re-read 2026-10-23 — the slug-only `/theme/search-form-bar-17/` path is the one that 404s), and cross-checked against the free source bundle `https://preview.colorlib.com/downloads/free/search-form-bar-17.zip` (recorded 2026-10-23: 252,346 B, sha256 `135efd64581b…`). CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (most-used chromatic) | `#80bdff` | 1 declarations — `.cl-form-control:focus` |
-| Other chromatic values | `#005cbf` (1) | secondary hues in the same sheet |
+| Accent (most-used chromatic) | `#007bff` | 5 declarations — `a`, `.cl-btn-primary` (bg + border), `.cl-btn-primary.disabled` |
+| Other chromatic values | `#80bdff` (1, form-focus border only), `#0062cc` (2, button active), `#0056b3` (1, `a:hover`), `#005cbf` (1) | secondary hues in the same sheet — never the accent |
 | Surface | `#ffffff` | 8 declarations — `.cl-form-control`, `.cl-form-control:focus` |
 | Ink / dark surface | `#000000` | 3 declarations — `.close`, `.close:hover` |
 | Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |

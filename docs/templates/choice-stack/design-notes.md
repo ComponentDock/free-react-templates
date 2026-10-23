@@ -47,7 +47,7 @@
 - Selected count or labels shown in trigger area
 - No card shadows, minimal borders
 - Bootstrap 4 conventions: 4px border-radius, standard padding
-- Blue accent (#1a73e8) for focus and selected states
+- Blue accent (#007bff) for links and selected-state text; the active trigger/menu border is #96c8da and the label/hover fill is #e8647c (live sheet, re-read 2026-10-23)
 - Pure white background, #eeeeee borders where needed
 - System sans-serif font, 16px base
 
@@ -101,7 +101,7 @@ interface ChoiceStackProps {
 
 - Minimalist aesthetic — no shadows, no heavy borders
 - Bootstrap 4 border-radius: 4px (0.25rem)
-- Focus ring: 2px outline offset with #1a73e8
+- Focus ring: the sheet draws no outline — focus is a 1px #96c8da border on `.ui.selection.cl-dropdown:focus`
 - Checkmark icon: simple ✓ character or SVG, blue when selected
 - Trigger shows "N selected" text when items chosen
 - Dropdown: white bg, 1px #eeeeee border, max-height with scroll

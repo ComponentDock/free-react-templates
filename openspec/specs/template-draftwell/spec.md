@@ -95,7 +95,7 @@ authoritative again — CSS values are canonical over the screenshot
 
 **Token deltas** — the sheet, not the screenshot, decides:
 
-- `#2671fa` → **`#1264fa`** — the sheet paints `a{color}` with it
+- `#1264fa` is the fill (29 declarations — `a{color}`, `.btn-primary`, icon circles) and `#2671fa` the hover (2 declarations — `.btn.btn-primary:hover{background, border-color}`): both are live, so the brief's "Brand blue / Hover blue" pair is correct. Re-measured 2026-10-23 on `css/style.css` (27,802 B, sha256 `4567f225ba66…`); the earlier "`#2671fa` → `#1264fa`" delta was a mis-capture of a real hover rule.
 
 **Low-chroma values the sheet actually uses** — `#6c757d`, `#f8f9fa`,
 `#212529`, `#495057`; any sampled Tailwind grey above is an approximation of

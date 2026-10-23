@@ -196,6 +196,14 @@ live sheet; do not build them from the screenshot, take the palette above:
 > (Tailwind, `primary-600 #2563eb`), not the rose design the screenshot
 > shows — do not mix the two.
 
+**App delta (2026-10-23)** — `apps/cura/src/index.css` still carries the screenshot-era
+palette: a rose accent scale (500 `#f43f5e`, 600 `#e11d48`); its blue primary scale
+already matches the live build. The live sheet paints no rose anywhere — the sheet's
+second family is emerald (`--accent-400 #34d399`, `--accent-500 #10b981`, `#059669`); blue
+`#2563eb`×7, `#3b82f6`×3, `#1d4ed8`×3 confirm the primary scale. The app predates the
+2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec defect; the
+rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: Top info bar

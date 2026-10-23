@@ -47,6 +47,13 @@ these.
 live sheet; do not build them from the screenshot, take the palette above:
 `#4ecdc4`.
 
+**App delta (2026-10-23)** — `apps/signwell/src/index.css` still carries the
+screenshot-era palette: a teal scale whose peak is `#4ecdc4` (300) over `#3dbcb3` (400).
+The live sheet paints `#38d39f` (`a`, `.cl-btn-primary`, checked indicator), hover
+`#29bb8a` (border `#27b183`), `a:hover` `#229c73`, focus border `#a0ead1`. The app
+predates the 2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec
+defect; the rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: App composition and title

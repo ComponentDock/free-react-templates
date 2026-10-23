@@ -75,6 +75,13 @@ these.
 live sheet; do not build them from the screenshot, take the palette above:
 `#28a745`.
 
+**App delta (2026-10-23)** — `apps/checksnap/src/index.css` still carries the
+screenshot-era palette: a Tailwind green scale 50–950 plus `#28a745` / `#218838`. The live
+sheet paints `#007bff` (links, checked border + fill, 20 % disabled fill), hover
+`#0056b3`, disabled icon `#7b7b7b`. The app predates the 2026-10-22 re-read, so this is
+implementer debt (**APP-DELTA**), not a spec defect; the rows above are the reference's
+values.
+
 ## Requirements
 
 ### Requirement: Renders the main heading and subtitle

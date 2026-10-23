@@ -123,6 +123,14 @@ these.
 live sheet; do not build them from the screenshot, take the palette above:
 `#60a5fa`.
 
+**App delta (2026-10-23)** — `apps/touchpoint/src/index.css` still carries the
+screenshot-era palette: `--color-brand-blue: #3b82f6`, `--color-brand-blue-light:
+#60a5fa`, `--color-page-bg: #f5f5f5`. The live sheet paints the effective CTA is `#1089ff`
+(`.cl-btn.cl-btn-primary` and `.cl-bg-primary`, both `!important`), hover `#006fdc`, focus
+border `#80bdff`, page `#fafafa`. The app predates the 2026-10-22 re-read, so this is
+implementer debt (**APP-DELTA**), not a spec defect; the rows above are the reference's
+values.
+
 ## Requirements
 
 ### Feature: Page Layout

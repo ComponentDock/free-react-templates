@@ -53,6 +53,13 @@ these.
 live sheet; do not build them from the screenshot, take the palette above:
 `#4ecdc4`, `#3dbdb5`.
 
+**App delta (2026-10-23)** — `apps/portalink/src/index.css` still carries the
+screenshot-era palette: `--color-primary: #4ecdc4`, `--color-primary-hover: #3dbdb5`. The
+live sheet paints `#01d28e`×11 (`a`, focus, `.social-media .social-icon:hover`,
+`.cl-btn.cl-btn-primary`), whose hover inverts to a transparent fill with a `#01d28e`
+border and text. The app predates the 2026-10-22 re-read, so this is implementer debt
+(**APP-DELTA**), not a spec defect; the rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: Centered card layout

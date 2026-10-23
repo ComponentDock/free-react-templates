@@ -92,6 +92,13 @@ authoritative again — CSS values are canonical over the screenshot
 `#495057`, `#b3b3b3`; any sampled Tailwind grey above is an approximation of
 these.
 
+**App delta (2026-10-23)** — `apps/signupgale/src/index.css` still carries the
+screenshot-era palette: `--color-brand: #7c6bf5`, `--color-brand-dark: #6a5ae0`. The live
+sheet paints `#6c63ff` (`a`, `.cl-btn-primary`, checked indicator), hover `#483dff`
+(border `#3c30ff`), `a:hover` `#2417ff`, focus border `#e4e3ff`. The app predates the
+2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec defect; the
+rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: Split-screen page layout

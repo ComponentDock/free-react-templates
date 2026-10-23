@@ -92,6 +92,13 @@ authoritative again — CSS values are canonical over the screenshot
 `#495057`, `#888888`; any sampled Tailwind grey above is an approximation of
 these.
 
+**App delta (2026-10-23)** — `apps/signupcraft/src/index.css` still carries the
+screenshot-era palette: `--color-brand: #f5a623`, `--color-brand-dark: #e6951d`. The live
+sheet paints `#fb771a` (`a`, `.cl-btn-primary`, checked indicator), hover `#eb6304`
+(border `#de5e04`), `a:hover` `#c55303`, focus border `#fdc197`. The app predates the
+2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec defect; the
+rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: Split-screen page layout

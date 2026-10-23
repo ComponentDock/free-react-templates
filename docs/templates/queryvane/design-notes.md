@@ -5,7 +5,7 @@ Live preview: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-17/`
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-17.jpg  
 Shipped: https://queryvane.free.componentdock.com
 
-Recreation of ColorLib "Search Form Bar 17" (https://colorlib.com/wp/template/search-form-bar-17/). A toggleable search form bar with a navbar, overlay search panel, and Component Dock footer. Preview was unreachable; design based on screenshot analysis. <!-- live-token-reverify:2026-10-22 -->
+Recreation of ColorLib "Search Form Bar 17" (https://colorlib.com/wp/template/search-form-bar-17/). A toggleable search form bar with a navbar, overlay search panel, and Component Dock footer. Reference re-read 2026-10-23: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-17/` answers **HTTP 200** (4,550 B) and its sheet `css/style.css?v=6209e455` (17,178 B, sha256 `6a5417c8e3be…`) is the token authority, so the prep-time "unreachable / screenshot-only" note is superseded. <!-- live-token-reverify:2026-10-22 -->
 
 ## Typography
 

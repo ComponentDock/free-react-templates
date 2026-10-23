@@ -65,6 +65,13 @@ authoritative again — CSS values are canonical over the screenshot
 live sheet; do not build them from the screenshot, take the palette above:
 `#7c3aed`.
 
+**App delta (2026-10-23)** — `apps/checkmark/src/index.css` still carries the
+screenshot-era palette: `--color-brand-violet: #7c3aed`, `-light: #ede9fe`, `-dark:
+#5b21b6`. The live sheet paints knob `#bd83ce` (`#cbx:checked + .toggle span`), ON track
+`#d0a8dc` (`:before`), OFF track `#e6e6e6`, page `#fafafa`. The app predates the
+2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec defect; the
+rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: Renders the main heading and subtitle

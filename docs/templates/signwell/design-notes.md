@@ -1,11 +1,11 @@
 # Signwell — Design Notes
 
 Reference: **Login Form 10** — `https://colorlib.com/wp/template/login-form-10/`  
-Live preview: `https://preview.colorlib.com/theme/login-form-10/`  
+Live preview: `https://preview.colorlib.com/theme/bootstrap/login-form-10/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-10-2.jpg  
 Shipped: https://signwell.free.componentdock.com
 
-Recreation of ColorLib "Login Form 10" (https://colorlib.com/wp/template/login-form-10/). A clean, modern login page with social login buttons on the left and a traditional username/password form on the right, separated by a divider. Preview was unreachable (404); design based on screenshot.
+Recreation of ColorLib "Login Form 10" (https://colorlib.com/wp/template/login-form-10/). A clean, modern login page with social login buttons on the left and a traditional username/password form on the right, separated by a divider. Reference re-read 2026-10-23: `https://preview.colorlib.com/theme/bootstrap/login-form-10/` answers **HTTP 200** (5,028 B) and its sheet `css/style.css?v=32eff87a` (16,446 B, sha256 `457117e0d2a6…`) is the token authority — the prep-time 404 / "design based on screenshot" note is superseded.
 
 ## Typography
 

@@ -56,6 +56,12 @@ authoritative again — CSS values are canonical over the screenshot
 `#16181b`, `#6c757d`; any sampled Tailwind grey above is an approximation of
 these.
 
+**App delta (2026-10-23)** — `apps/droplist/src/index.css` still carries the
+screenshot-era palette: `--color-brand: #0071bc`, `--color-brand-dark: #005a96`. The live
+sheet paints `#007bff` (`a`, `.cl-dropdown-item.active`) with `a:hover` `#0056b3`. The app
+predates the 2026-10-22 re-read, so this is implementer debt (**APP-DELTA**), not a spec
+defect; the rows above are the reference's values.
+
 ## Requirements
 
 ### Requirement: Page structure and heading

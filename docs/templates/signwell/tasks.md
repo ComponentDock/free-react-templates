@@ -2,7 +2,7 @@
 
 Source design: **Login Form 10** (`https://colorlib.com/wp/template/login-form-10/`) → recreation name **signwell**. Shipped at https://signwell.free.componentdock.com.
 
-Scope: Recreation of ColorLib "Login Form 10" (https://colorlib.com/wp/template/login-form-10/). A clean, modern login page with social login buttons on the left and a traditional username/password form on the right, separated by a divider. Preview was unreachable (404); design based on screenshot.
+Scope: Recreation of ColorLib "Login Form 10" (https://colorlib.com/wp/template/login-form-10/). A clean, modern login page with social login buttons on the left and a traditional username/password form on the right, separated by a divider. Reference re-read 2026-10-23: the live page `https://preview.colorlib.com/theme/bootstrap/login-form-10/` answers **HTTP 200** (5,028 B), sheet `css/style.css?v=32eff87a` 16,446 B — the prep-time 404 note is superseded.
 
 ## Component breakdown
 

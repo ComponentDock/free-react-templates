@@ -187,6 +187,14 @@ these.
 live sheet; do not build them from the screenshot, take the palette above:
 `#1371e6`, `#b9cae7`.
 
+**App delta (2026-10-23)** — `apps/planner/src/index.css` still carries the screenshot-era
+palette: accent `#3d88f7`, month `#1371e6`, chevron `#b9cae7`, past `#7c7d81`, gridline
+`#e6e6e6`, page `#f7f8fc`. The live sheet paints `#1089ff` (`a`, `.calendar_weekdays`,
+`calendar_header h2`, today dot), chevrons `#dcdcdc` (`button.switch-month`), past dates
+`#d5d5d5`, selected cell `#f0f0f0`, page `#f8f9fd`. The app predates the 2026-10-22
+re-read, so this is implementer debt (**APP-DELTA**), not a spec defect; the rows above
+are the reference's values.
+
 ## Requirements
 
 ### Requirement: Page structure
