@@ -37,17 +37,17 @@
 - `bg-[#272727] text-white py-12`
 - Container width, 4-column grid on md+ (`grid grid-cols-1 md:grid-cols-4 gap-8`)
 - **Column 1 (Contact + Subscribe):**
-  - Heading: "Gourmet" in white, 16px, font-bold
+  - Heading: "Gourmet" in white, 20px, font-bold
   - Contact list: address, phone, email with golden amber icons
   - Subscribe form: flex row with input (bg-white/5) + submit button (#f7b633, send icon)
 - **Column 2 (Latest News):**
-  - Heading: "Latest News" in white, 16px, font-bold
+  - Heading: "Latest News" in white, 20px, font-bold
   - 2 blog cards: each with placeholder image (picsum.photos seeded), title, meta (date, author, comments)
 - **Column 3 (Best Sellers):**
-  - Heading: "Best Sellers" in white, 16px, font-bold
+  - Heading: "Best Sellers" in white, 20px, font-bold
   - Product card: placeholder image, title, 5 star icons in #f7b633
 - **Column 4 (Instagram):**
-  - Heading: "Instagram" in white, 16px, font-bold
+  - Heading: "Instagram" in white, 20px, font-bold
   - 3x2 grid of placeholder images (picsum.photos seeded)
 
 ### Copyright Bar

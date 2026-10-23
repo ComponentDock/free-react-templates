@@ -101,7 +101,8 @@ page.
        use distinct recipe titles for the small cards).
   5. Footer (`footer-section`, bg `#EAEDF2`, padding-top 70px): left =
      logo + about blurb (grey `#7a818d`); right = "Subscribe to our
-     newsletter" + email input ("Your e-mail") + pink pill submit button;
+     newsletter" + email input ("Your e-mail") + pink submit button (sharp:
+     `border-radius: 0`, see the measured note below);
      social icons (Instagram, Pinterest, Facebook, Twitter, Youtube);
      bottom bar "© 2026 … All rights reserved | Made with ♥ by Umami"
      (source credit "by Colorlib" is dropped/replaced per naming mandate).
@@ -123,8 +124,11 @@ page.
   - Font: **"PT Sans", sans-serif** (400/700, Google Fonts) for body/nav/
     headings per the real CSS; the LOGO wordmark is a **serif italic**
     (Playfair Display italic, 600/700, Google Fonts) per the screenshot.
-  - Buttons: pill shape `border-radius: 50px`; submit button = `#FC0254` bg,
-    white 600 uppercase 14px, letter-spacing 1.5px, padding 25px 70px;
+  - Buttons: **SHARP — no `border-radius`** in the live sheet (the theme sets
+    none on `.subscribe-form button`, and Bootstrap's `button{border-radius:0}`
+    / `.btn{border-radius:.25rem}` are the only radii in the set); submit
+    button = `#FC0254` bg, white 600 uppercase 14px, letter-spacing 1.5px,
+    padding 17px 40px, `min-width: 205px`, `height` from content;
     primary button = `#FF5581` bg, white 20px 400, padding 11px 44px 15px.
   - Section rhythm: `.spad` = 100px top/bottom padding; section-title box =
     `#FC0254` bg, width ≈430–470px, right-aligned white bold H5, padding
@@ -155,6 +159,29 @@ page.
 
 Umami lives in `apps/umami` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
+
+<!-- reference-revalue:start -->
+Reference re-value (audit 2026-10-23, dead-bucket re-resolution axis): the
+slug's own demo is live again, so the shape claims were measured instead of
+inherited from the (now dead) ThemeWagon mirror:
+
+- catalog map entry for `yummy-2` → `https://preview.colorlib.com/theme/yummy/`
+  (200, 21,709 B); `theme/yummy2/` and `theme/yummy-2/` are 404, and
+  `themewagon.github.io/yummy2/` is 404 as well — the mirror the earlier prep
+  named is gone.
+- `css/style.css` (42,720 B) sets NO `border-radius` on
+  `.footer-section .subscribe-form button` (`border:1px solid #FC0254;
+  background:#FC0254; padding:17px 40px; min-width:205px; font-size:18px`) nor on
+  `.primary-btn`; the only radii in the sheet set are Bootstrap's
+  `button{border-radius:0}` and `.btn{border-radius:.25rem}`.
+- so the buttons are **sharp**, not `50px` pill; the `#FC0254` palette, PT Sans
+  body face and Playfair italic wordmark were all confirmed unchanged.
+
+App delta (implementer follow-up, NOT edited from the prep clone):
+`apps/umami/src/components/Footer.tsx` ships `rounded-full` on the submit
+button and `Footer.test.tsx` asserts it — that is the reference delta this
+block exposes.
+<!-- reference-revalue:end -->
 
 ## Requirements
 
@@ -285,7 +312,8 @@ form, social links, and a copyright bar.
 - **THEN** it SHALL show the site name "Umami" and a short about blurb on
   the left
 - **AND** it SHALL show a "Subscribe to our newsletter" heading with an
-  email input (placeholder "Your e-mail") and a pink pill submit button on
+  email input (placeholder "Your e-mail", 64px high, `border:1px solid #fff`)
+  and a pink submit button (sharp, 17px/40px padding) on
   the right
 - **AND** it SHALL show social icons (Instagram, Facebook, Twitter, Youtube)
 - **AND** the bottom bar SHALL show the copyright line "© 2026 … All rights
@@ -365,7 +393,7 @@ Dock (`https://www.componentdock.com/`) instead.
       page-top-recipe → Top Recipes this Week → Featured Recipes → footer);
       brand tokens from this spec (`#FC0254` primary pink, `#FF5581`
       secondary, `#353535` text, PT Sans + Playfair Display italic logo,
-      pill buttons, pink section-title boxes) in `@theme`
+      sharp buttons, pink section-title boxes) in `@theme`
 - [ ] Official preview unreachable (404 + NXDOMAIN + no archive); reference
       used = live ThemeWagon mirror `https://themewagon.github.io/yummy2/`
       (same template, content matches TEMPLATES.md screenshot 1:1) — PR

@@ -20,7 +20,7 @@ Recreation of ColorLib's **Bootstrap Footer 15** — a comprehensive dark footer
 | Logo color            | `#ffffff`                         | `.logo { color: #fff }`                                                    |
 | Logo subtitle color   | `#f7b633` (golden amber)          | `.logo span { color: #f7b633 }`                                            |
 | Footer heading color  | `#ffffff`                         | `.footer-05 .footer-heading { color: #fff }`                               |
-| Footer heading size   | `16px`                            | `.footer-05 .footer-heading { font-size: 16px }`                           |
+| Footer heading size   | `20px`                            | `.footer-05 .footer-heading { font-size: 20px }`                           |
 | Footer heading weight | `700`                             | `.footer-05 .footer-heading { font-weight: 700 }`                          |
 | Link color (accent)   | `#f7b633` (golden amber)          | `.footer-05 a { color: #f7b633 }`                                          |
 | Text color            | `rgba(255, 255, 255, 0.5)`        | `.footer-05 p { color: rgba(255,255,255,0.5) }`                            |
@@ -34,6 +34,20 @@ Recreation of ColorLib's **Bootstrap Footer 15** — a comprehensive dark footer
 | Border color          | `rgba(255, 255, 255, 0.1)`        | `.border-bottom { border-color: rgba(255,255,255,0.1) }`                   |
 | Star rating color     | `#f7b633`                         | `.rate .ion-ios-star { color: #f7b633 }`                                   |
 | Blog meta color       | `rgba(255, 255, 255, 0.5)`        | `.meta { color: rgba(255,255,255,0.5) }`                                   |
+
+<!-- reference-revalue:start -->
+Reference re-value (audit 2026-10-23, dead-bucket re-resolution axis): the live
+sheet now resolves and paints
+
+- demo `https://preview.colorlib.com/theme/bft/bootstrap-footer-15/` — 200,
+  `css/style.css` 17,199 B (original build, no `?v=3.x` kit markers)
+- `.footer-05 .footer-heading { font-size: 20px; color: #fff; margin-bottom: 30px }`
+  — the ONLY rule for that selector, no media override
+- the table above said `16px`; the reference value is **`20px`** (a
+  screenshot-sampled reading, five values off). Spec + brief corrected.
+
+App delta: none — `apps/dine`'s footer does not render this heading block.
+<!-- reference-revalue:end -->
 
 ## Requirements
 

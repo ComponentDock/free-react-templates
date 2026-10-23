@@ -70,8 +70,8 @@ page.
      and Eggs Recipe" + smaller cards (source reuses the same title — use
      distinct titles for small cards).
   5. Footer (bg `#EAEDF2`, pt 70px): left logo + blurb (grey `#7a818d`);
-     right newsletter heading + email input ("Your e-mail") + pink pill
-     submit; socials (Instagram, Pinterest, Facebook, Twitter, Youtube);
+     right newsletter heading + email input ("Your e-mail") + pink submit
+     (sharp corners — no radius in the sheet); socials (Instagram, Pinterest, Facebook, Twitter, Youtube);
      bottom bar "© 2026 … | Made with ♥ by Umami".
 - **Design tokens (real values from the mirror's `css/style.css`):**
   - Primary **hot pink `#FC0254`** — active nav, title boxes, tags, submit
@@ -83,8 +83,9 @@ page.
     `#F8F9FB`.
   - Font: **PT Sans** 400/700 (body/nav/headings); **Playfair Display
     italic** (logo wordmark, per screenshot).
-  - Buttons: pill 50px; submit = `#FC0254` bg, white 600 uppercase 14px, ls
-    1.5px, padding 25px 70px; primary = `#FF5581` bg, 20px 400, padding
+  - Buttons: SHARP (no `border-radius` in the live sheet, 2026-10-23); submit
+    = `#FC0254` bg, white 600 uppercase 14px, ls 1.5px, padding 17px 40px,
+    min-width 205px; primary = `#FF5581` bg, 20px 400, padding
     11px 44px 15px.
   - Section-title box: `#FC0254` bg, width ≈430–470px, right-aligned white
     bold H5, padding 18px 0 + right 40px, abs-positioned overlapping top
