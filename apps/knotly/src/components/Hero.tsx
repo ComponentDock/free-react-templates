@@ -11,7 +11,7 @@ export function Hero() {
           Stay connected together in your own business network
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90">
-          Personalized experiences are proven to increase conversions. Appli makes it easy.
+          Personalized experiences are proven to increase conversions. Knotly makes it easy.
           Let&apos;s make the internet delightfully human.
         </p>
         <ButtonLink href="#features" className="mt-10 rounded-full px-14 py-5 text-base shadow-lg">

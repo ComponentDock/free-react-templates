@@ -7,7 +7,7 @@ describe('Footer', () => {
     render(<Footer />)
 
     expect(
-      screen.getByText(/Appli keeps your team connected with personalized experiences/),
+      screen.getByText(/Knotly keeps your team connected with personalized experiences/),
     ).toBeInTheDocument()
 
     for (const label of ['X', 'Facebook', 'Pinterest']) {
@@ -40,7 +40,7 @@ describe('Footer', () => {
     }
 
     expect(
-      screen.getByText(`Copyright © ${new Date().getFullYear()} Appli. All rights reserved.`),
+      screen.getByText(`Copyright © ${new Date().getFullYear()} Knotly. All rights reserved.`),
     ).toBeInTheDocument()
   })
 })

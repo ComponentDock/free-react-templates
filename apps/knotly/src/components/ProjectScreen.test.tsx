@@ -6,7 +6,7 @@ describe('ProjectScreen', () => {
   it('renders the dashboard preview image overlapping the hero', () => {
     render(<ProjectScreen />)
 
-    const image = screen.getByRole('img', { name: 'Appli app dashboard preview' })
-    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/appli-screen/1200/750')
+    const image = screen.getByRole('img', { name: 'Knotly app dashboard preview' })
+    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/knotly-screen/1200/750')
   })
 })

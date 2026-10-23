@@ -20,9 +20,9 @@ export function Footer() {
     <footer id="contact" className="bg-navy py-16 text-gray-300 dark:bg-gray-950">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="font-display text-2xl font-extrabold text-white">Appli</h3>
+          <h3 className="font-display text-2xl font-extrabold text-white">Knotly</h3>
           <p className="mt-5 text-sm leading-relaxed text-muted-light">
-            Appli keeps your team connected with personalized experiences — a complete app landing
+            Knotly keeps your team connected with personalized experiences — a complete app landing
             page for your next launch.
           </p>
           <div className="mt-6">
@@ -50,7 +50,7 @@ export function Footer() {
 
       <div className="mx-auto mt-14 max-w-6xl border-t border-white/10 px-4 pt-8 sm:px-6">
         <p className="text-center text-sm text-muted-light">
-          Copyright © {new Date().getFullYear()} Appli. All rights reserved.
+          Copyright © {new Date().getFullYear()} Knotly. All rights reserved.
         </p>
       </div>
       <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">

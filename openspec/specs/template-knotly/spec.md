@@ -1,8 +1,8 @@
-# Template: Appli (App Landing Page)
+# Template: Knotly (App Landing Page)
 
 ## Purpose
 
-Appli is a single-page app landing template in the free-react-templates
+Knotly is a single-page app landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Appli"
 website template design (see TEMPLATES.md), built under a different name with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
@@ -11,7 +11,7 @@ The original design is a purple/indigo app-promo landing page: a full-bleed
 purple→blue gradient hero ("Stay connected together in your own business
 network"), an overlapping app-dashboard screenshot, a logo strip, six service
 cards, two alternating about sections, a play-video band, customer
-testimonials, a "Browse Job" CTA, and a dark multi-column footer. Appli
+testimonials, a "Browse Job" CTA, and a dark multi-column footer. Knotly
 recreates the structure and tokens and adds the repo's standard dark-mode
 toggle and accessible patterns. All imagery is recreated with seeded
 placeholder images (no assets copied).
@@ -66,12 +66,12 @@ placeholder images (no assets copied).
   sits over the gradient hero; sections recreated with Tailwind tokens in
   `@theme` (`--color-primary-600: #404dff` indigo scale, purple/blue gradient
   stops, pink CTA, navy headings, Muli/Raleway fonts); placeholder images via
-  `https://picsum.photos/seed/appli-<n>/<w>/<h>`; icons from lucide-react
+  `https://picsum.photos/seed/knotly-<n>/<w>/<h>`; icons from lucide-react
   (Palette, Phone, UtensilsCrossed, Code2, Building2, Camera, Sparkles,
   Quote, Play); brand social icons (X, Facebook, Pinterest) as inline SVG
   paths (lucide-react removed brand icons); no assets copied.
 
-Appli lives in `apps/appli` and uses shared components from `packages/ui`
+Knotly lives in `apps/knotly` and uses shared components from `packages/ui`
 (ButtonLink, cn).
 
 ## Requirements
@@ -79,14 +79,14 @@ Appli lives in `apps/appli` and uses shared components from `packages/ui`
 ### Requirement: Navigation bar
 
 The system SHALL render a navigation bar over the hero with the site name
-"Appli", links to the main sections (Home, Features, About, FAQ, Blog,
+"Knotly", links to the main sections (Home, Features, About, FAQ, Blog,
 Contact), a "Log in" button, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Appli" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Knotly" and links to the main sections
 - **AND** the navbar SHALL show a "Log in" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -104,7 +104,7 @@ followed by an overlapping app-dashboard placeholder image.
 
 #### Scenario: Hero content
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user views the top of the page
 - **THEN** the hero SHALL show the headline "Stay connected together in your own business network"
 - **AND** the hero SHALL show supporting copy about personalized experiences
@@ -117,7 +117,7 @@ The system SHALL render a bordered strip of client wordmarks below the hero.
 
 #### Scenario: Brand strip content
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls past the hero
 - **THEN** a strip of six client wordmarks SHALL be visible with a top border
 
@@ -129,7 +129,7 @@ title, and description.
 
 #### Scenario: Services grid
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the services section
 - **THEN** the section SHALL show the heading and its supporting paragraph
 - **AND** the section SHALL show six cards, each with an icon, a title, and a description
@@ -141,14 +141,14 @@ badge, a heading, copy, a "See how it work" link, and an image.
 
 #### Scenario: First about section
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the first about section
 - **THEN** the section SHALL show the heading "You have the power to personalize your website coding."
 - **AND** the section SHALL show the "See how it work" link and an image
 
 #### Scenario: Second about section
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the second about section
 - **THEN** the section SHALL show the heading "Personalized experiences are proven to increase conversions"
 - **AND** the layout SHALL alternate (image on the left, copy on the right)
@@ -160,7 +160,7 @@ button.
 
 #### Scenario: Video play button
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the video band
 - **THEN** a play button with the accessible label "Play video" SHALL be visible
 
@@ -171,7 +171,7 @@ two customer quotes, each with a founder name and role.
 
 #### Scenario: Testimonial cards
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the testimonials section
 - **THEN** the section SHALL show the heading and its supporting paragraph
 - **AND** the section SHALL show two quotes, each with a name and a role
@@ -183,7 +183,7 @@ finding your dream job", supporting copy, and a "Browse Job" button.
 
 #### Scenario: CTA content
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the CTA band
 - **THEN** the band SHALL show the heading, copy, and a "Browse Job" button
 
@@ -195,7 +195,7 @@ Facebook, Pinterest), three link columns ("Our solutions", "Company",
 
 #### Scenario: Footer content
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the user scrolls to the bottom
 - **THEN** the footer SHALL show the brand blurb and three social links
 - **AND** the footer SHALL show the "Our solutions", "Company", and "Support" link columns
@@ -204,13 +204,13 @@ Facebook, Pinterest), three link columns ("Our solutions", "Company",
 ### Requirement: Page composition
 
 The system SHALL compose all sections in the documented order with the
-document title "Appli — App Landing Page Template".
+document title "Knotly — App Landing Page Template".
 
 #### Scenario: Full page composition
 
-- **GIVEN** the Appli page is rendered
+- **GIVEN** the Knotly page is rendered
 - **WHEN** the page loads
-- **THEN** the document title SHALL be "Appli — App Landing Page Template"
+- **THEN** the document title SHALL be "Knotly — App Landing Page Template"
 - **AND** the page SHALL contain a banner, a main landmark with every section, and a contentinfo landmark
 
 ### Requirement: Component Dock attribution
@@ -231,7 +231,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/appli/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/knotly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -240,7 +240,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/appli/` is inspected
+- **WHEN** every non-test file under `apps/knotly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -248,7 +248,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Appli" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Knotly" and links to the main sections
 - [x] Hero — the hero SHALL show the headline "Stay connected together in your own business network"
 - [ ] Brand strip — a strip of six client wordmarks SHALL be visible with a top border
 - [ ] Services — the section SHALL show the heading and its supporting paragraph
@@ -257,4 +257,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Testimonials — the section SHALL show the heading and its supporting paragraph
 - [x] CTA band — the band SHALL show the heading, copy, and a "Browse Job" button
 - [ ] Footer — the footer SHALL show the brand blurb and three social links
-- [x] Page composition — the document title SHALL be "Appli — App Landing Page Template"
+- [x] Page composition — the document title SHALL be "Knotly — App Landing Page Template"

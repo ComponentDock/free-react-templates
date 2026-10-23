@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Appli brand indigo — from the reference stylesheet
+  /* Knotly brand indigo — from the reference stylesheet
      (assets/css/style.css): primary buttons/accents #404DFF. Scale keyed on
      primary-600 so the shared ui Button/ButtonLink "primary" variant works. */
   --color-primary-50: #eef0ff;

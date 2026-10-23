@@ -67,7 +67,7 @@
 - [x] Write `openspec/specs/template-appru/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/appru` (copy `apps/appli`; rename package to
+- [x] Create `apps/appru` (copy `apps/velocity`; rename package to
       `@free-react-templates/appru`; `npm install` at root for lockfile).
 - [x] TDD: tests first for Navbar, Hero (+StoreButtons), Stats, Features,
       About (×2), Video, Testimonials, Screenshots, Pricing, Footer,

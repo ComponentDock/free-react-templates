@@ -55,7 +55,7 @@
 
 - [x] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · [flowly](https://flowly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
 - [x] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · [velocity](https://velocity.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
-- [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://appli.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
+- [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [knotly](https://knotly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [x] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · [appru](https://appru.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg)
 - [x] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · [apps](https://apps.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
 - [x] **Appson** — [colorlib](https://colorlib.com/wp/template/appson/) · [appson](https://appson.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appson-free-template.jpg)
@@ -332,7 +332,7 @@
 - [x] **Andrea** — [colorlib](https://colorlib.com/wp/template/andrea/) · [memoir](https://memoir.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/andrea-free-template.jpg)
 - [x] **Apart** — [colorlib](https://colorlib.com/wp/template/apart/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apart-free-template.jpg) · [dwell](https://dwell.free.componentdock.com)
 - [x] **Appetizer** — [colorlib](https://colorlib.com/wp/template/appetizer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appetizer-free-template.jpg) · [palate](https://palate.free.componentdock.com)
-- [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://appli.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
+- [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [knotly](https://knotly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [x] **Approach** — [colorlib](https://colorlib.com/wp/template/approach/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/approach-free-template.jpg) · [canvas](https://canvas.free.componentdock.com)
 - [x] **Appru** — [colorlib](https://colorlib.com/wp/template/appru/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appru-free-template.jpg) · [appru](https://appru.free.componentdock.com)
 - [x] **Appy** — [colorlib](https://colorlib.com/wp/template/appy/) · [appy](https://appy.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appy-free-template.jpg)
@@ -2008,7 +2008,7 @@
 
 ## Landing Page (96)
 
-- [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [appli](https://appli.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
+- [x] **Appli** — [colorlib](https://colorlib.com/wp/template/appli/) · [knotly](https://knotly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appli-free-template.jpg)
 - [x] **Apps** — [colorlib](https://colorlib.com/wp/template/apps/) · [apps](https://apps.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/apps-free-app-website-template.jpg)
 - [x] **Art Museum** — [colorlib](https://colorlib.com/wp/template/art-museum/) · [artgallery](https://artgallery.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/artmuseum-free-template-1.jpg)
 - [x] **Author** — [colorlib](https://colorlib.com/wp/template/author/) · [pageturn](https://pageturn.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/author-free-template.jpg)

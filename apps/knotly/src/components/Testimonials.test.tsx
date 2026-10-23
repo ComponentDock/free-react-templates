@@ -15,7 +15,7 @@ describe('Testimonials', () => {
     ).toBeInTheDocument()
 
     expect(
-      screen.getByText(/Appli helped us personalize every step of the journey/),
+      screen.getByText(/Knotly helped us personalize every step of the journey/),
     ).toBeInTheDocument()
     expect(screen.getByText('Robert Brown')).toBeInTheDocument()
     expect(screen.getByText('Creative designer')).toBeInTheDocument()
