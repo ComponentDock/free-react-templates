@@ -6,7 +6,7 @@
 - [x] Extract CSS design tokens (colors, fonts, radii, spacing)
 - [x] Analyze section structure from HTML
 - [x] Write openspec/specs/template-gracecraft/spec.md
-- [x] Write docs/templates/gracecraft/notes.md
+- [x] Write docs/templates/gracecraft/design-notes.md
 
 ## Implementation (for implementer)
 

@@ -6,7 +6,8 @@
 
 A real estate property listing template with search functionality, property
 cards, category browsing, why-choose-us features, blog posts, and a newsletter
-footer. Lime-green accent (`#92c800`) on light background, Poppins font.
+footer. Lime-green accent (`#92c800`) as a fill on light surfaces, its darker
+`#507000` shade for text and focus rings, Lato typeface.
 
 ## Design tokens
 
@@ -16,15 +17,20 @@ https://preview.colorlib.com/theme/rehomes/ (HTTP 200, 37,234 B, sha256 `7deeb2c
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (most-used chromatic) | `#507000` | 44 declarations — `.rehomes-btn:focus,.rehomes-btn:hover`, `.section-heading :is(h2,.heading-h2) span` |
-| Other chromatic values | `#92c800` (41), `#2a303b` (29), `#1b2600` (8) | secondary hues in the same sheet |
+| Brand lime (fill) | `#92c800` | 44 declarations — `.rehomes-btn`, `button.mfp-arrow`, `.partner-area` band background, `.single-choose-us-content:hover`, `.slider-range .ui-widget-header`, `.newsletter-submit`, `.rehomes-search-form .form-control:focus` — every **painted** accent (button fills, hover fills, band background, slider track) |
+| Brand lime (text / contrast variant) | `#507000` | 49 declarations — the darker shade the demo uses for **text and rings on light surfaces**: `.section-heading :is(h2,.heading-h2) span`, `.classynav ul li.active a`, links/icons on hover, `button:focus-visible { outline: 3px solid #507000 }`. Never a fill: choosing it as the brand colour paints the page olive |
+| Other chromatic values | `#2a303b` (33), `#1b2600` (8), `#252525` (6) | secondary hues in the same sheet |
 | Surface | `#ffffff` | 76 declarations — `.mfp-image-holder .mfp-close,.mfp-iframe-holder .mfp-close`, `.rehomes-btn` |
 | Ink / dark surface | `#000000` | 18 declarations — `.bg-gradient-overlay:after`, `.bg-overlay:after` |
-| Typeface | `Lato` (2 rules — `:is(h1,.heading-h1),:is(h2,.heading-h2),:is(h3,.heading-h3),:is(h4,.heading-h4),:is(h5,.he`)<br>`object-fit: cover` (1 rule — `.jarallax>.jarallax-img`) | `font-family` declarations in the design sheet |
+| Typeface | **`Lato, sans-serif`** (2 rules — `:is(h1,.heading-h1),:is(h2,.heading-h2),…` and the button/label set). The sheet also carries one **malformed** declaration, `font-family:"object-fit: cover"` on `.jarallax>.jarallax-img` — that is a broken rule in the source, not a face; never load it | `font-family` declarations in the design sheet; the page links no Google Fonts, so ship Lato via `<link>` |
 | Radii | `5px`, `2px`, `50%`, `4px` | `5px` (`.bg-gradient-overlay:after`); `2px` (`.main-header-area .contact-btn a`); `50%` (`.single-footer-widget .nl-form button`); `4px` (`.classy-navbar-toggler`) |
 | Gradients | 5 declarations | `.bg-gradient-overlay:after`, `.single-categories-property-area.bg-gradient-overlay:after` |
 
-Palette in order of use: `#ffffff` ×76, `#507000` ×44, `#92c800` ×41, `#2a303b` ×29, `#555d69` ×26, `#000000` ×18, `#636a76` ×12, `#f5f8fa` ×8.
+Palette in order of use (root `style.min.css?v=3.0.1`, 85,564 B, 898 rules; hex
+occurrences): `#fff` ×81, `#507000` ×49, `#92c800` ×44, `#2a303b` ×33,
+`#555d69` ×26, `#ebebeb` ×15, `#636a76` ×12, `#000` ×8, `#f5f8fa` ×8,
+`#1b2600` ×8. The two limes are not interchangeable: `#92c800` is the demo's
+fill colour, `#507000` is its text/contrast variant added by the rebuilt sheet.
 
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.

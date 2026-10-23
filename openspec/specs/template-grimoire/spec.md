@@ -7,8 +7,11 @@
 
 A three-step sign-up wizard form with a clean, card-based layout on a background
 image. Each step has a title bar, form fields, and a footer showing step progress.
-The design uses Roboto Slab font, green accent (#6DAB3C), white card container
-with rounded corners, and a full-page background image.
+The design uses Roboto Slab font, a teal-green accent (`#1ABC9C`, 8 rules) with a
+darker `#148F77` hover, a white card container with rounded corners, and a
+full-page background image. (An earlier capture named the accent `#6DAB3C`; that
+value appears nowhere in the source — 0 hits across every stylesheet, page and
+script in the bundle.)
 
 ## Design tokens
 
@@ -18,14 +21,16 @@ https://preview.colorlib.com/downloads/free/colorlib-wizard-16.zip (HTTP 200, 24
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (most-used chromatic) | `#1abc9c` | 5 declarations — `.form-radio-item input:checked + label`, `.form-radio-item input:hover` |
-| Other chromatic values | `#ff0000` (1), `#148f77` (1) | secondary hues in the same sheet |
+| Accent (most-used chromatic) | `#1abc9c` | **8** declarations — `.form-radio-item input:checked + label`, `.form-radio-item input:hover`, `.form-radio-flex input:checked + label`, `.form-radio-flex input:hover`, `.steps ul .done a`, `.steps ul .done a .number`, +2 |
+| Other chromatic values | `#148f77` (1 — `.actions ul li a:hover`), `#ff0000` (2 — `label.error`, `input.error`) | secondary hues in the same sheet |
 | Surface | `#f8f8f8` | 5 declarations — `#button`, `.bar-strength` |
 | Ink / dark surface | `#222222` | 3 declarations — `.steps ul .current a`, `body` |
-| Typeface | `Roboto Slab` (3 rules — `#val`)<br>`Material-Design-Iconic-Font` (1 rule — `.steps ul .done a .number:after`) | `font-family` declarations in the design sheet |
+| Typeface | **`Roboto Slab`** (5 `font-family` declarations) + `Material-Design-Iconic-Font` (2 — the step-number icon face, **not** the body face) | `font-family` declarations in the design sheet |
 | Radii | `5px`, `8px`, `10px`, `5px 0 0 5px` | `5px` (`.form-radio-flex input + label`); `8px` (`.bar`); `10px` (`.cl-container`); `5px 0 0 5px` (`.form-radio-item input + label:first-of-type`) |
 
-Palette in order of use: `#999999` ×10, `#f8f8f8` ×5, `#1abc9c` ×5, `#ffffff` ×4, `#222222` ×3, `#dfdfdf` ×2, `#ff0000` ×1, `#ebebeb` ×1.
+Palette in order of use (`css/style.css`, 19,129 B, 141 rules): `#999999` ×11,
+`#1abc9c` ×8, `#ebebeb` ×7, `#f8f8f8` ×5, `#222222` ×4, `#ffffff` ×4,
+`#ff0000` ×2, `#dfdfdf` ×2, `#148f77` ×1.
 
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.

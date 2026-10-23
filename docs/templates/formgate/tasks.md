@@ -1,117 +1,109 @@
-# FormGate (ColorLib Contact Form 09) — Tasks & Design Notes
+# FormGate — Tasks
 
-> Prep artifacts prepared on `main` by the prep stream. Implementation ships
-> later on `feat/template-formgate`. Recreation name: **FormGate** (NEW name —
-> the ColorLib source keeps its name "Contact Form 09").
+Source: **Contact Form 19** — https://colorlib.com/wp/template/contact-form-19/ (`TEMPLATES.md` row 1422)
+Live preview (catalog-resolved): https://preview.colorlib.com/theme/bootstrap/contact-form-19/ — **HTTP 200**, 3,091 B, sha256 `8440ca0f977f…` (3 fetches, stable), `<title>Contact Form #9`
+Slug-only path: https://preview.colorlib.com/theme/contact-form-19/ → **404** (the demo lives in the host's `theme/bootstrap/` family)
+Sheet: `css/style.css?v=d060f86a` — 15,654 B, sha256 `706f4fbf35e9…`, 128 rules · Script: `js/snippet.js?v=36d04cc0` — 3,070 B, sha256 `1ec1044e2fea…`
+Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-19.jpg
+Spec: `openspec/specs/template-formgate/spec.md`
 
-## Source mapping
+New name: `formgate` · package `@free-react-templates/formgate` · deploy target `formgate.free.componentdock.com`
 
-- **ColorLib item:** "Contact Form 09" (TEMPLATES.md line 1412; section
-  "## Contact Form (42)" at line 1400).
-- **Source URL:** https://colorlib.com/wp/template/contact-form-09/
-- **Preview URL — UNREACHABLE (404):** https://preview.colorlib.com/theme/contact-form-09/
-  Returns HTTP 404. Design tokens extracted entirely from screenshot analysis.
+> **Prep correction (2026-10-23p).** This brief used to describe
+> **Contact Form 09** — a dark near-black page with a tan/gold accent, three
+> circular contact icons and a four-field form. That is a *different* ColorLib
+> entry, not this one. The spec, and the demo the preview host resolves for this
+> slug, are the light "Get Started" card below. Nothing in this file is copied
+> from the old text except the parts re-verified against the live demo.
 
-## Reference research (done — do not redo)
+## Prep (done — do not redo)
 
-### Screenshot (`contact-form-09.jpg`, 1200×972 AVIF)
+- [x] Resolve the preview through the host catalog (`theme/bootstrap/contact-form-19/`, 200) — the slug-only path 404s
+- [x] Read `css/style.css` and `js/snippet.js` from the live demo
+- [x] Record the real palette: lime **base** `#ccda46` / `#b7c628` / `#c0d02a`, but the **visible CTA is red `#ef4339`** (later override wins)
+- [x] Write the spec (`## Design reference` + Gherkin requirements) and this brief
 
-Browsed visually (image converted to JPEG for analysis). Layout (top to bottom):
+## What the page is
 
-1. **Header**: "Contact Form #09" centered white heading on near-black background.
-2. **Contact info row**: Three columns, centered, each with:
-   - Circular tan/gold icon (60px, 50% radius)
-   - Bold tan/gold label ("Address:", "Phone:", "Email:")
-   - White/light gray value text
-   - Left: location pin → "198 West 21th Street, Suite 721 New York NY 10016"
-   - Center: phone icon → "+ 1235 2355 98"
-   - Right: paper plane icon → "info@yoursite.com"
-3. **Form heading**: "Get in touch with us" centered white text
-4. **Form**: Four stacked full-width fields:
-   - Name (text input)
-   - Email (text input)
-   - Subject (text input)
-   - Message (textarea, taller)
-   - All have dark gray background (~#222), no visible border, light placeholder text
-5. **Submit button**: Full-width "SEND MESSAGE", tan/gold background, dark uppercase text, rectangular (no border-radius)
-6. **Footer**: Minimal, links to Component Dock
+A single white card on a light page — no hero, no imagery, no icons:
 
-**Aesthetic**: Dark, minimal, elegant. Near-black background with tan/gold accent. No decorative images or parallax — purely form-focused. Clean sans-serif typography.
+```
+body
+  div.content                        padding: 7rem 0
+    div.cl-container
+      div.cl-row.cl-align-items-stretch.cl-no-gutters.contact-wrap
+        div.cl-col-md-12
+          div.form.cl-h-100          background #fff, padding 40px
+            h3                       "Get Started"  (2rem, 700, #000, mb 30px)
+            form#contactForm
+              row 1  col-md-6  label "Name *"  + input[text] placeholder "Your name"
+                     col-md-6  label "Email *" + input[email] placeholder "Your email" required
+              row 2  col-md-12 label "Budget"  + select (Choose…, < $1,000, $2,000 - $5,000,
+                                              $5,000 - $15,000, $15,000 - $25,000, $25,000 >)
+              row 3  col-md-12 label "Message *" + textarea rows=4 minlength=5
+                                              placeholder "Write your message" required
+              row 4  col-md-12 input[submit] value "Send Message"
+                     + span.submitting (empty, filled by the script)
+            div#form-message-warning   (empty error slot; the source's id attribute is malformed)
+            div#form-message-success   "Your message was sent, thank you!"
+  script js/snippet.js
+```
 
-### Design tokens (screenshot analysis — preview was 404)
+## Design tokens
 
-| Token       | Value                                  | Use                                                        |
-| ----------- | -------------------------------------- | ---------------------------------------------------------- |
-| Page bg     | `#1a1a1a` (near-black)                | Full-viewport solid dark background                        |
-| Brand       | `#c9a96e` (tan/gold)                  | Icon circles, button background, label accent              |
-| Ink         | `#ffffff` (white)                      | Headings, body text                                        |
-| Muted       | `#aaaaaa` (light gray)                | Secondary info values                                      |
-| Input bg    | `#222222` (dark gray)                 | Form field backgrounds                                     |
-| Placeholder | `#999999`                             | Input placeholder labels                                   |
-| Button text | `#1a1a1a` (dark)                      | "SEND MESSAGE" label                                       |
-| Font        | 'Open Sans' 400/600/700               | Sans-serif via Google Fonts                                |
-| Icons       | Circular 60px, 50% radius             | tan/gold bg + white lucide icon                            |
-| Button      | Full-width, rectangular (no radius)   | tan/gold bg, dark uppercase text, ~50px height             |
-| Inputs      | Full-width, borderless, dark bg        | ~50px height, left-aligned placeholder                     |
-| Textarea    | Full-width, borderless, dark bg        | Min 120px tall                                             |
+| token | value | role |
+| --- | --- | --- |
+| `--color-cta` | `#ef4339` | submit button fill (winning override), `0 15px 30px 0 rgba(239,67,57,.2)` shadow |
+| `--color-cta-hover` | `#ef4339` darkening via shadow only — the sheet has no hover fill | `.cl-btn:hover { color: #fff }` |
+| `--color-accent-base` | `#ccda46` / `#b7c628` / `#c0d02a` | the imported `.cl-btn-primary` base the override repaints — **not** what the page shows |
+| `--color-surface` | `#ffffff` | card `.contact-wrap .form` |
+| `--color-card-border` | `#efefef` | `1px solid` on `.contact-wrap` + `box-shadow: 0 0 20px rgba(0,0,0,.05)` |
+| `--color-page` | `#ffffff` | `body` (the card is separated by its border + shadow, not a tint) |
+| `--color-ink` | `#000000` | `h3`, labels on the card (`#b3b3b3` for the muted variant) |
+| `--color-label` | `#b3b3b3`, 14px | `.contact-wrap .cl-col-form-label` |
+| `--color-rule` | `#ccc` | the only input border: `border-bottom` |
+| `--color-placeholder` | `#6c757d` | `::placeholder` |
+| type | **Roboto** — `h3` 2rem/700; inputs 1rem; button 11px, `letter-spacing: .2rem`, uppercase | sheet `font-family` + `.cl-btn` |
+| inputs | height **45px**, `border: none; border-bottom: 1px solid #ccc; border-radius: 0`, transparent background | `.cl-form-control`, `.cl-custom-select` |
+| button shape | `border-radius: 30px` (`!important` on `.cl-btn`), full label "SEND MESSAGE" | `.cl-btn`, `.cl-btn.cl-btn-primary` |
+| card | `padding: 40px`, `border: 1px solid #efefef`, `box-shadow: 0 0 20px rgba(0,0,0,.05)` | `.contact-wrap`, `.contact-wrap .form` |
+| page rhythm | `padding: 7rem 0` on `.content` | `.content` |
 
-### Icon mapping (lucide)
+## Behaviour (from `js/snippet.js`)
 
-| Source glyph    | Recreation         |
-| --------------- | ------------------ |
-| Location pin    | lucide `MapPin`    |
-| Phone           | lucide `Phone`     |
-| Paper plane     | lucide `Send`      |
+| behaviour | source |
+| --- | --- |
+| submit is intercepted | `e.preventDefault()` on `submit` (the browser has already blocked an invalid form thanks to `required` / `minlength`) |
+| busy state | `.submitting` text set to `Submitting...` and shown while posting |
+| success | on `OK` the form resets and `#form-message-success` ("Your message was sent, thank you!") flashes, then hides on a timer |
+| failure | `#form-message-warning` shown |
+| transport | `fetch('php/send-email.php', { method: 'POST', body: new FormData(form) })` |
 
-No other brand icons needed. No social media links.
+React equivalent: `onSubmit` → `preventDefault()`, validate with the native constraints,
+then set local state `status: 'submitting' | 'sent'` and render the same two messages.
+**No network call** — the recreation has no mail handler; show the success copy.
 
-### Picsum placeholder plan
+## Picsum placeholders
 
-**NONE.** This template has no decorative images — solid dark background, circular
-icon elements only, form fields. Everything is CSS + lucide icons.
+**None.** The source is text, a select and a textarea on a white card.
 
-## Implementation order (TDD, section-by-section)
+## Implementation order (TDD)
 
-1. [ ] Scaffold `apps/formgate` from the simplest existing app
-       (`cp -r apps/<simplest> apps/formgate`), rename package to
-       `@free-react-templates/formgate`, add Open Sans 400/600/700
-       Google Fonts `<link>` in index.html, set `public/CNAME` =
-       `formgate.free.componentdock.com` + `"homepage"`. Register the
-       workspace in package-lock.json.
-2. [ ] Write the spec-traceable test suite FIRST (Vitest + Testing
-       Library, 100% coverage): Page (dark bg, centered content, title
-       heading), ContactInfo (three columns, circular icons, labels +
-       values), FormSection ("Get in touch" heading, four fields with
-       placeholders, textarea min-height, SEND MESSAGE button, form
-       submission), Footer (Component Dock link). App (landmarks,
-       document title "FormGate — Contact").
-3. [ ] Layout shell: near-black `#1a1a1a` full-viewport bg, centered
-       content container (max-w ~800px, px padding), vertical flex
-       layout with sections.
-4. [ ] Title section: centered white heading "FormGate" (or similar
-       template name), large font size (~36px), white, margin-top for
-       spacing.
-5. [ ] Contact info row: flex row with three equal columns, centered.
-       Each column: circular 60px icon container (tan/gold bg, white
-       lucide icon), bold tan/gold label, white/gray value text below.
-       Responsive: stack vertically on mobile.
-6. [ ] Form section: "Get in touch with us" heading (white, centered),
-       four stacked form fields (Name, Email, Subject, Message textarea).
-       Fields: dark gray bg, no border, white text, placeholder in gray,
-       full width, ~50px height (textarea taller).
-7. [ ] Submit button: full-width, tan/gold bg, dark uppercase "SEND
-       MESSAGE" text, rectangular (no border-radius), ~50px height.
-8. [ ] Footer: minimal Component Dock credit linking
-       https://www.componentdock.com/.
-9. [ ] Run `npm run verify:app -- formgate` (typecheck → lint → vitest
-       100% → build) and fix until green.
-10. [ ] Open PR `feat/template-formgate` → merge immediately
-        (`gh pr merge --squash --delete-branch`); PR description must
-        include: source URL, preview URL (404), token list (near-black
-        `#1a1a1a`, tan/gold `#c9a96e`, Open Sans, 60px circular icons,
-        rectangular button), and what differs (renamed "FormGate", Open
-        Sans via Google Fonts, lucide icons — MapPin/Phone/Send, NO
-        picsum needed, Component Dock footer).
-11. [ ] Bookkeeping after merge: mark TEMPLATES.md line 1412 `[x]` + surge
-        URL (`https://formgate.free.componentdock.com`), `npm run
-        readme:status`, push.
+1. [ ] Scaffold `apps/formgate` from the simplest existing app; package `@free-react-templates/formgate`, `public/CNAME` = `formgate.free.componentdock.com`, `"homepage"` matching; Roboto 400/500/700 via Google Fonts `<link>`
+2. [ ] `@theme` tokens: `--color-cta: #ef4339`, `--color-surface: #fff`, `--color-card-border: #efefef`, `--color-ink: #000`, `--color-label: #b3b3b3`, `--color-rule: #ccc`, `--color-placeholder: #6c757d`
+3. [ ] Tests first (Vitest + Testing Library, 100% coverage): heading "Get Started"; the four controls with their labels and placeholders; the six budget options; native `required`/`minlength`; submit shows "Your message was sent, thank you!" and does not navigate; Component Dock link
+4. [ ] Shell: `.content` rhythm (`py-28`-equivalent at desktop), centred `.contact-wrap` card with `1px #efefef` border and the soft shadow
+5. [ ] Card: 40px padding, `h3` 2rem bold, labels 14px `#b3b3b3`
+6. [ ] Fields: Name + Email in a two-column row (stacked below `md`), Budget select and Message textarea full width; 45px height, underline-only border, no radius, transparent background
+7. [ ] Submit: pill (`30px`), `#ef4339` fill, white 11px uppercase label with `letter-spacing: .2em`, shadow `0 15px 30px 0 rgba(239,67,57,.2)`
+8. [ ] Messages: hidden success + warning slots; success copy exactly "Your message was sent, thank you!"
+9. [ ] Footer: Component Dock credit linking https://www.componentdock.com/
+10. [ ] `npm run verify:app -- formgate` until green; PR `feat/template-formgate` with source URL, preview URL, tokens, and the deltas (renamed FormGate, Roboto via Google Fonts, no mail transport)
+11. [ ] Bookkeeping after merge: `TEMPLATES.md` row 1422 `[x]` + surge URL, `npm run readme:status`, push
+
+## App delta (predates the correction)
+
+The shipped `apps/formgate` renders a light card with a **coral `#e07060`** accent,
+`#f5f5f5` page tint and Inter — i.e. neither this design's `#ef4339` CTA on a white
+card nor the old brief's dark/tan page. Colour + type layer needs the implementer
+follow-up above; the single-card page shape is right.

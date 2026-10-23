@@ -252,11 +252,15 @@ The system SHALL compose the sections in order and set the document title.
 
 ### Requirement: Provenance hygiene
 
-The system SHALL keep the design's provenance out of the app.
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/pulse/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR.
 
 #### Scenario: No source references in the app
 - **GIVEN** the repository state is inspected
-- **THEN** no file under `apps/pulse/` SHALL contain a `colorlib.com` URL or the source template's name
+- **WHEN** every non-test file under `apps/pulse/` is read
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** provenance SHALL live only in this spec, `TEMPLATES.md` and the pull request.
 
 ## Known gaps (recorded, not part of this contract)
