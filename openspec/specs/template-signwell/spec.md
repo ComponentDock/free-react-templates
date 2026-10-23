@@ -34,6 +34,7 @@ authoritative again — CSS values are canonical over the screenshot
 | --- | --- | --- |
 | live page | `https://preview.colorlib.com/theme/bootstrap/login-form-10/` | HTTP 200 · 5,028 B · title `Login #10` |
 | stylesheet | `https://preview.colorlib.com/theme/bootstrap/login-form-10/css/style.css?v=32eff87a` | HTTP 200 · 16,446 B · sha256 `457117e0d2a6` |
+| Brand (stated in this prep) | `#38d39f` | live sheet paints it ×6 — `background-color` on `.cl-btn-primary`; style.css?v=32eff87a (16,446 B, sha256 457117e0d2a6) · <https://preview.colorlib.com/theme/bootstrap/login-form-10/> |
 
 **Live palette** (hex × occurrences in that sheet): `#ffffff`×10,
 `#38d39f`×6, `#6c757d`×6, `#212529`×5, `#495057`×2, `#27b183`×2,

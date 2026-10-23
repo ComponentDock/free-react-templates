@@ -18,6 +18,15 @@ distinguishes three different facts that `NO-CLAIM` conflates:
 
 ## Buckets
 
+> **Correction 2026-10-23d** (`docs/theme-sheet-scope.md`): the `NO-THEME-SHEET`
+> bucket in this table was a **tool artefact**, not a finding. `is_vendor()`
+> matched the whole URL, so the preview host's demo *family* prefix
+> (`/theme/bootstrap/<slug>/`, `/theme/bb/<slug>/`) read as a library and the
+> demos' only linked sheet (`css/style.css`, 7.7–27 KB, live) was discarded:
+> **93/93 phantom, bucket now 0**, and 44 of them carry a measured `Brand` row.
+> The `NO-CLAIM` total after the fix is **201** (was 246). Everything else in
+> this table stands at the commit it was generated from.
+
 | bucket | n | meaning |
 | --- | --- | --- |
 | PROSE-ROW (flag) | 232 | the prep states the colour; the live sheet paints it → re-format as a row |
@@ -29,7 +38,7 @@ distinguishes three different facts that `NO-CLAIM` conflates:
 | FRAMEWORK-ONLY | 4 | every chromatic is a framework default |
 | LOW-SATURATION | 2 | chromatic but below BRAND_CHROMA |
 | NO-CHROMA | 10 | greyscale sheet |
-| NO-THEME-SHEET | 93 | every linked sheet is a vendor/library bundle |
+| NO-THEME-SHEET | 93 → **0** | ✗ **WRONG AS WRITTEN** — all 93 were phantom: the vendor test matched the demo *family* path (`/theme/bootstrap/<slug>/`), not a library. See `docs/theme-sheet-scope.md`. |
 | REBUILT | 72 | the live demo is a rebuilt 3.x kit (drift, not a gap) |
 | REF-DEAD / DEMO-AMBIGUOUS | 8 / 2 | unmeasurable |
 | ALIAS-SKIP / NO-SLUG | 0 / 0 | out of scope |

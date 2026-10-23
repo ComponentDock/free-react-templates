@@ -57,6 +57,15 @@ selection limit.
 - The selected-state green `#8cba51` has **no token** in `apps/chklmt/src/index.css`, and `MultiSelect.tsx` colours the check with `text-primary-500`, which is not defined in `@theme` — the glyph therefore inherits the body colour instead of the reference green.
 - `--color-action-btn` is `#f8f9fa`, while the reference trigger header is `#dae0e5`.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#8cba51` | live sheet paints it ×2 — `color` on `.cl-dropdown-menu li.selected > a.selected`; style.css?v=9e5957cd (27,397 B, sha256 0a75591aaf36) · <https://preview.colorlib.com/theme/bootstrap/multiselect-17/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Widget renders in collapsed state

@@ -28,6 +28,15 @@ Recreation of ColorLib "Contact Form 20" (https://colorlib.com/wp/template/conta
 7. "SEND MESSAGE" pill button (centered, indigo/blue)
 8. Footer linking to Component Dock
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ccda46` | live sheet paints it ×4 — `background-color` on `.cl-btn-primary`; style.css?v=9e8a49e7 (14,263 B, sha256 d20609c51c13) · <https://preview.colorlib.com/theme/bootstrap/contact-form-20/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Page renders centered card with heading

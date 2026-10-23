@@ -27,7 +27,14 @@ Buckets (they partition the corpus exactly once):
     NO-CHROMA      the sheet paints no chromatic colour (greyscale design)
   skipped:  ALIAS-SKIP · NO-SLUG · REF-DEAD · DEMO-AMBIGUOUS · NO-SHEET ·
             REBUILT (a rebuilt 3.x kit re-brands the page — values would be
-            drift, same rule as verify-shape-tokens.py)
+            drift, same rule as verify-shape-tokens.py) · PROSE-STATE (the prep
+            states a colour the sheet paints only in a `:hover`/`:focus` rule or
+            once — a state, not a surface)
+
+The VENDOR test is scoped BELOW the demo directory (2026-10-23d): `/theme/bootstrap/<slug>/`
+and `/theme/bb/<slug>/` are the preview host's family prefixes, so matching the
+whole URL turned 93 preps' only linked sheet (`css/style.css`, 7–27 kB, live) into
+a "vendor bundle" and bucketed them NO-THEME-SHEET.  93/93 were phantom.
 
 The axis is READ-ONLY.  `fix-brand-claims.py` writes the measured row.
 
@@ -48,6 +55,7 @@ import re
 import sys
 import threading
 from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlsplit
 
 
 def _load(fname: str):
@@ -90,8 +98,37 @@ VENDOR_RX = re.compile(
     r")")
 
 
-def is_vendor(url: str) -> bool:
-    return bool(VENDOR_RX.search(url.rsplit("/", 1)[-1] + " " + url))
+# a plugin bundle in `assets/css/plugins/` is not the design even when its file
+# name is unknown (measured on `autodock`: `plugins/gijgo.css`, a datepicker,
+# led with Material blue `#2196f3`).  Same rule as `verify-token-extra.py`.
+VENDOR_PATH_RX = re.compile(
+    r"(?i)/(plugins?|vendor|vendors|third[-_]?party|libs?|bower_components)/")
+
+
+def demo_relative(url: str, demo: str = "") -> str:
+    """The sheet's path RELATIVE to its own demo directory, plus its query.
+
+    The vendor test must never read the demo FAMILY's directory.  `/theme/bootstrap/<slug>/`
+    and `/theme/bb/<slug>/` are the preview host's family prefixes, not a library,
+    so testing the whole URL made the `bootstrap` token match the PATH: 93 preps
+    were bucketed NO-THEME-SHEET ("every linked sheet is a vendor bundle") while
+    their one linked sheet was a live 7–27 kB `css/style.css` — the design sheet
+    itself (measured 2026-10-23d, 93/93 phantom).  Scope the match to what the
+    demo actually ships.
+    """
+    a, b = urlsplit(url), urlsplit(demo or "")
+    path = a.path
+    if b.netloc and a.netloc == b.netloc:
+        d = b.path if b.path.endswith("/") else b.path + "/"
+        if path.startswith(d):
+            path = path[len(d):]
+    return path + ("?" + a.query if a.query else "")
+
+
+def is_vendor(url: str, demo: str = "") -> bool:
+    rel = demo_relative(url, demo)
+    return bool(VENDOR_RX.search(rel.rsplit("/", 1)[-1] + " " + rel)
+                or VENDOR_PATH_RX.search(rel))
 
 
 BLOCK_RX = re.compile(r"([^{}]{1,400})\{([^{}]*)\}", re.S)
@@ -115,6 +152,12 @@ HINT_RX = re.compile(r"(?i)(btn|button|nav|hero|banner|header|cta|primary|accent
 # a `:hover`/`:focus` background is a STATE, not a surface: a theme can accent
 # every hover without the colour being its brand (measured on `zine`/`stash`)
 STATE_RX = re.compile(r"(?i):(hover|focus|active|visited|checked|disabled|target)")
+# INTERACTION states only: a colour painted exclusively here is a focus ring or a
+# hover (measured on `multiform`: `#80bdff` is a `.cl-form-control:focus` border
+# and `subdivide`: `#4200ff` is `.nav-links li a:hover`).  A SELECTION state
+# (`:checked`) is NOT interaction — on a checkbox/toggle demo it is the design's
+# own paint (`ballot`'s `#7e0cf5` fills the checked indicator).
+INTER_RX = re.compile(r"(?i):(hover|focus|active|visited|target)")
 
 
 def sheet_stats(txt: str) -> dict:
@@ -129,6 +172,7 @@ def sheet_stats(txt: str) -> dict:
         sel = " ".join(m.group(1).split())[-80:]
         hint = bool(HINT_RX.search(sel) and not STATE_RX.search(sel))
         state = bool(STATE_RX.search(sel))
+        inter = bool(INTER_RX.search(sel))
         for d in m.group(2).split(";"):
             if ":" not in d:
                 continue
@@ -144,12 +188,15 @@ def sheet_stats(txt: str) -> dict:
                     else None)
             for h in hs:
                 st = stats.setdefault(h, dict(n=0, bg=0, fg=0, bd=0, state=0,
-                                              sel="", prop="", hint=0))
+                                              inter=0, sel="", prop="", hint=0))
                 st["n"] += 1
                 if kind:
                     st[kind] += 1
                 if hint:
                     st["hint"] += 1
+                if inter:
+                    # a declaration under `:hover`/`:focus`/`:active`/`:visited`
+                    st["inter"] += 1
                 if kind == "bg" and not st["bg"]:
                     pass
                 # remember the first SURFACE declaration for the evidence line
@@ -161,6 +208,23 @@ def sheet_stats(txt: str) -> dict:
 def brand_score(st) -> int:
     """A design colour paints surfaces; a text-state colour does not."""
     return 3 * min(st["bg"], 6) + 2 * min(st["hint"], 5) + min(st["n"], 20)
+
+
+def paints_surface(st) -> bool:
+    """Is this colour painted anywhere OUTSIDE an interaction state?
+
+    A `PROSE-ROW` re-states the prep's own value, so it must clear one bar: the
+    sheet must paint the colour somewhere a reader could see without hovering.
+    A colour painted ONLY under `:hover`/`:focus`/`:active`/`:visited` is a focus
+    ring or a hover (measured on `multiform`, whose only `#80bdff` is a
+    `.cl-form-control:focus` border, and `subdivide`, whose `#4200ff` is
+    `.nav-links li a:hover`); freezing that into a "brand" row gives the
+    live-token axis a claim to undo.  Counts are NOT part of the bar — a
+    selection state (`:checked`) is the design's own paint on a demo whose whole
+    point is the checked indicator (`ballot` `#7e0cf5`), and the prep's stated
+    value is already the prep's claim.
+    """
+    return not (st.get("n") and st.get("inter", 0) >= st.get("n"))
 
 
 def brand_rows(txt: str):
@@ -216,7 +280,7 @@ def measure_live(f, slug: str, name: str):
             continue
         rec = (su, len(body), VT.sha(body))
         sheets.append(rec)
-        if is_vendor(su):
+        if is_vendor(su, url):
             vendor.append(rec)
             continue
         txt = strip_comments(body.decode("utf-8", "replace"))
@@ -241,8 +305,8 @@ def measure_live(f, slug: str, name: str):
         live.update(counter)
         for h, st in sheet_stats(txt).items():
             agg = stats.setdefault(h, dict(n=0, bg=0, fg=0, bd=0, state=0,
-                                           sel="", prop="", hint=0))
-            for k in ("n", "bg", "fg", "bd", "state", "hint"):
+                                           inter=0, sel="", prop="", hint=0))
+            for k in ("n", "bg", "fg", "bd", "state", "inter", "hint"):
                 agg[k] += st[k]
             if not agg["sel"] and st["sel"]:
                 agg["sel"], agg["prop"] = st["sel"], st["prop"]
@@ -349,6 +413,13 @@ def audit_spec(f, root: str, ref: str, path: str, args):
     if pb:
         line_no, h, role, ctx = pb
         painted_here = theme_paint(m, h)
+        if painted_here and not paints_surface(m["stats"].get(h, {})):
+            rec, n, sel, prop = painted_here
+            return (name, "PROSE-STATE", h,
+                    f"{slug}: prose line {line_no} states {h}; the sheet paints it "
+                    f"x{n} ({prop} on `{sel}`) but every declaration sits under an "
+                    f"interaction state (:hover/:focus/:active) — a focus ring, not a "
+                    f"design surface, so no row is written | {m['url']}", {})
         if painted_here:
             rec, n, sel, prop = painted_here
             where_txt = (f"{rec[0].rsplit('/', 1)[-1]} ({rec[1]:,} B, sha256 {rec[2][:12]})"
@@ -511,7 +582,10 @@ def write_md(path: str, rows, bucket) -> None:
          f"| FRAMEWORK-ONLY | {bucket.get('FRAMEWORK-ONLY', 0)} | every chromatic is a framework default |",
          f"| LOW-SATURATION | {bucket.get('LOW-SATURATION', 0)} | chromatic but below BRAND_CHROMA |",
          f"| NO-CHROMA | {bucket.get('NO-CHROMA', 0)} | greyscale sheet |",
-         f"| NO-THEME-SHEET | {bucket.get('NO-THEME-SHEET', 0)} | every linked sheet is a vendor/library bundle |",
+         f"| NO-THEME-SHEET | {bucket.get('NO-THEME-SHEET', 0)} | "
+         f"no sheet below the demo directory is a theme sheet (vendor/library/font bundles only) |",
+         f"| PROSE-STATE | {bucket.get('PROSE-STATE', 0)} | "
+         f"stated in prose, but painted only under `:hover`/`:focus` or once — a state, not a surface; no row |",
          f"| REBUILT | {bucket.get('REBUILT', 0)} | the live demo is a rebuilt 3.x kit (drift, not a gap) |",
          f"| REF-DEAD / DEMO-AMBIGUOUS | {bucket.get('REF-DEAD', 0)} / {bucket.get('DEMO-AMBIGUOUS', 0)} | unmeasurable |",
          f"| ALIAS-SKIP / NO-SLUG | {bucket.get('ALIAS-SKIP', 0)} / {bucket.get('NO-SLUG', 0)} | out of scope |",

@@ -37,6 +37,7 @@ Extracted from the preview stylesheet (`css/style.css`) and HTML structure:
 | Content alignment        | Vertically + horizontally centered  | Flex centering                        |
 | Cancel text              | Small, gray color                   | Bottom of modal                       |
 | Launch button            | `px-6 py-3`                         | Centered on page                      |
+| Brand (measured) | `#ed5107` | live sheet paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=024500ef (16,232 B, sha256 3c8bab46f394) · <https://preview.colorlib.com/theme/bootstrap/modal-14/> |
 
 ## Visual Design
 

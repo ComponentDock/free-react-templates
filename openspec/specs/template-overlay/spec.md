@@ -13,6 +13,15 @@ Overlay is a sign-in popup template recreating ColorLib Modal 01. It provides a 
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-01.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/overlay` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fb8691` | live sheet paints it ×10 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=58a74b87 (22,114 B, sha256 9a0be9f2c1e0) · <https://preview.colorlib.com/theme/bootstrap/modal-01/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

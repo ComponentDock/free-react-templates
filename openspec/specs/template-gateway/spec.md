@@ -216,6 +216,15 @@ rgba(255,255,255,0.1)`, text `rgba(255,255,255,0.7)`, placeholders
     checkbox → full-width Sign Up → teal login link). Close × floats
     top-right over both panels.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#5eb7b7` | live sheet paints it ×8 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=ded377b3 (22,758 B, sha256 f10b95f99dd8) · <https://preview.colorlib.com/theme/bootstrap/modal-06/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Launch section

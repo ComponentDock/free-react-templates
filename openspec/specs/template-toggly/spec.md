@@ -144,6 +144,15 @@ transition: all 0.4s ease` (transient pink ripple puff on check).
 - **No images** in this template — pure form-component typography, so no
   picsum seeds are needed.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff7bb0` | live sheet paints it ×1 — `background` on `#cbx:checked + .toggle span, #cbx2:checked + .toggle span`; style.css?v=db26f6d5 (9,920 B, sha256 0d92796ccea6) · <https://preview.colorlib.com/theme/bootstrap/checkbox-06/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Demo section with heading

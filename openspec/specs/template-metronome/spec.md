@@ -120,6 +120,15 @@ in the source demo:
   image assets, no icon font. Use lucide-react ONLY if needed for the nav
   triangles/× (preferred: CSS borders + `×` text to match 1:1).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f78b65` | live sheet paints it ×6 — `border-color` on `.picker__select--month:focus, .picker__select--year:focus`; style.css?v=70e42654 (17,165 B, sha256 8d2c914dff11) · <https://preview.colorlib.com/theme/bootstrap/calendar-11/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Page composition

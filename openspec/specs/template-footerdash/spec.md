@@ -50,6 +50,7 @@ Extracted from screenshot analysis (preview unreachable) — **re-probed 2026-10
 | Nav link text-transform    | `uppercase`                            | Standard footer heading convention          |
 | Nav link letter-spacing    | `1px`                                  | Subtle letter spacing                       |
 | Surface (measured) | `#12cc94` | paints it ×5 — `background` on `.aside-stretch-right`; style.css?v=884ad530 (17,102 B, sha256 286f73f430fc) · <https://preview.colorlib.com/theme/bft/bootstrap-footer-18/> |
+| Brand (measured) | `#12cc94` | live sheet paints it ×5 — `background` on `.aside-stretch-right`; style.css?v=884ad530 (17,102 B, sha256 286f73f430fc) · <https://preview.colorlib.com/theme/bft/bootstrap-footer-18/> |
 
 ## Visual Design Notes (from screenshot)
 

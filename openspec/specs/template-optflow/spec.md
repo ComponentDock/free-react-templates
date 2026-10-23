@@ -33,6 +33,7 @@ Extracted from `css/style.css` and `css/chosen.css` of the ColorLib preview (fet
 | Active border          | `#5897fb` (blue)                                                        | chosen.css           |
 | Highlighted item       | `#3875d7` → `#2a62bc` gradient                                          | chosen.css           |
 | Search input height    | 32px, font-size 14px                                                    | style.css            |
+| Brand (measured) | `#3875d7` | live sheet paints it ×3 — `background-color` on `.chosen-container .chosen-results li.highlighted`; style.css?v=345ad018 (25,962 B, sha256 19c9fb159a87) · <https://preview.colorlib.com/theme/bootstrap/multiselect-20/> |
 
 ## Replication notes
 

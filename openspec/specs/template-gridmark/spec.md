@@ -146,6 +146,7 @@ canonical — see the stylesheet note in Purpose.)
 | Class card copy | ALL 19 cards in the source read identically: `<strong>Yoga training</strong>` + `<br>` + `7 am-6 am` | same KIND of content may be paraphrased; keep structure (bold label + time) |
 | Footer row content | 7 `th`: first `<a href="#">← September</a>`, middle 5 empty, last `<a href="#">November →</a>` | month-navigation pattern |
 | Print rules | thead `display: table-header-group`, tr/img `break-inside: avoid`, body/container `min-width: 992px`, cells forced white, `@page { size: a3 }` | minor; not required for parity |
+| Brand (stated in this prep) | `#ffafb0` | live sheet paints it ×3 — `color` on `a`; style.css?v=19583881 (11,438 B, sha256 8b14e6e11b56) · <https://preview.colorlib.com/theme/bootstrap/table-04/> |
 
 ## Requirements
 

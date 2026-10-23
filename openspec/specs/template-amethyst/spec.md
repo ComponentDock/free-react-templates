@@ -13,6 +13,15 @@ screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-
 Recreation of ColorLib Bootstrap Footer 19 (https://colorlib.com/wp/template/bootstrap-footer-19/).
 A purple gradient footer with 4 columns: About, Latest News, Information, and Instagram.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fe59d7` | live sheet paints it ×3 — `color` on `.footer-09 a`; style.css?v=dba2979d (16,671 B, sha256 904018a2fe5f) · <https://preview.colorlib.com/theme/bft/bootstrap-footer-19/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Footer renders semantic element with role

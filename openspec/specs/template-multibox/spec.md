@@ -31,6 +31,7 @@ https://preview.colorlib.com/downloads/free/multiselect-19.zip (HTTP 200, 254,59
 | Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
 | Radii | `4px`, `5px`, `0 0 4px 4px`, `3px` | `4px` (`.chosen-container .chosen-drop`); `5px` (`.chosen-container-single .chosen-single`); `0 0 4px 4px` (`.chosen-container-single .chosen-drop`); `3px` (`.chosen-container-multi .chosen-choices li.search-choice`) |
 | Gradients | 2 declarations | `.chosen-container-single .chosen-single` |
+| Brand (stated in this prep) | `#3875d7` | live sheet paints it ×3 — `background-color` on `.chosen-container .chosen-results li.highlighted`; style.css?v=bf1ae6e8 (26,051 B, sha256 e4f2e300972e) · <https://preview.colorlib.com/theme/bootstrap/multiselect-19/> |
 
 Palette in order of use: `#ffffff` ×14, `#212529` ×7, `#f8f9fa` ×5, `#000000` ×4, `#999999` ×3, `#eeeeee` ×3, `#f6f6f6` ×2, `#f4f4f4` ×2.
 

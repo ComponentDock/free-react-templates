@@ -350,6 +350,15 @@ the two sub-blocks. There is **no** container tier (this sheet only ships `cl-co
     `text-indent:-55px` / `font:bold 14px/.4 Helvetica` on the toggle's `i`, the orphan `</section>`,
     and all eight Roboto files.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ff6768` | live sheet paints it ×3 — `background-color` on `#colorlib-aside #colorlib-main-menu ul li a:after`; style.css?v=f7ba3f1d (13,527 B, sha256 97cbf12e70fd) · <https://preview.colorlib.com/theme/bootstrap/website-menu-19/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Page frame and the fixed side rail

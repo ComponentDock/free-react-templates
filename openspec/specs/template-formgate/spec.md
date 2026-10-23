@@ -19,6 +19,15 @@ underline-style inputs, a budget dropdown, message textarea, and a coral
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-19.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/formgate` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#ef4339` | live sheet paints it ×1 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=d060f86a (15,654 B, sha256 706f4fbf35e9) · <https://preview.colorlib.com/theme/bootstrap/contact-form-19/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Renders all form fields

@@ -41,6 +41,15 @@ Single full-height section:
 - Footer links to componentdock.com
 - Placeholder images via picsum.photos (none needed for this simple template)
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (measured) | `#3e2bcc` | live sheet paints it ×18 — `background` on `body`; style.css?v=dfd15eaa (11,710 B, sha256 3cb80a63d305) · <https://preview.colorlib.com/theme/bootstrap/search-form-bar-04/> |
+
+Measured from the live theme stylesheet: the most-painted colour that paints a surface (background declarations first, then a button/nav/hero selector), never sampled from a screenshot. Alternates in the same sheet: #c643e0 x16.
+
 ## Requirements
 
 ### Feature: Seekmint

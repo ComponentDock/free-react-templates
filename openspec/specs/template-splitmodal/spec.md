@@ -25,6 +25,7 @@ A centered full-viewport page with a split-screen product review modal featuring
 | Heart/like icon color | `#dc3545` (red)                     |
 | Message/add icon      | `#007bff` (blue)                    |
 | Share icon color      | `#ccc`, hover `#000`                |
+| Brand (stated in this prep) | `#ed5107` — live sheet paints it ×1 — `color` on `a`; style.css?v=e255e3d8 (16,572 B, sha256 f34087127e10) · <https://preview.colorlib.com/theme/bootstrap/modal-19/> |
 
 ## Design reference (replication findings)
 

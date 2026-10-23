@@ -30,6 +30,7 @@ A centered full-viewport page with a Bootstrap-style light pink modal popup feat
 | Cancel text color     | `rgba(255,255,255,0.5)`                                      | style.css `.cancel a`        |
 | Cancel text size      | `13px`, bold                                                 | style.css `.cancel a`        |
 | Separator line        | `1px solid rgba(255,255,255,0.3)`                            | style.css `.line`            |
+| Brand (measured) | `#c13584` | live sheet paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=bec13280 (18,948 B, sha256 175bee4636fd) · <https://preview.colorlib.com/theme/bootstrap/modal-13/> |
 
 ## Visual design (from screenshot + HTML)
 

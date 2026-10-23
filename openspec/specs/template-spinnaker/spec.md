@@ -387,6 +387,15 @@ vertical scrollbar and shifts the centred container by ~7.5 px).
     base rule shadowed at ≥992 px, the `[data-toggle="panel-collapse"]` typo branch in the script,
     the never-firing dropdown overflow guard, `width:inherit` on the bar, and all eight Roboto files.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fec771` | live sheet paints it ×4 — `color` on `a`; style.css?v=c3576057 (17,508 B, sha256 a443a4abc579) · <https://preview.colorlib.com/theme/bootstrap/website-menu-18/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Page frame and heading band

@@ -291,6 +291,15 @@ form still shows at 780 px (it only vanishes below `768 px`).
     `:where(html) … all: revert` reset, the system `Roboto` body stack, and all eight Roboto
     woff2 files.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#40bfc1` | live sheet paints it ×7 — `background-color` on `.ftco-navbar-light .cl-navbar-nav > .cl-nav-item > .cl-nav-link:before`; style.css?v=821da340 (21,762 B, sha256 20b277156bf8) · <https://preview.colorlib.com/theme/bootstrap/website-menu-13/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Heading band

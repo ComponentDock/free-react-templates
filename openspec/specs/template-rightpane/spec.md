@@ -15,6 +15,15 @@ A Sidebar Navigation template with brand header, navigation items, mountain land
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170724.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/rightpane` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#2f89fc` | live sheet paints it ×20 — `background` on `#sidebar:after`; style.css?v=12d6bffa (17,555 B, sha256 3473a8d2b7cf) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-10/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Right sidebar layout

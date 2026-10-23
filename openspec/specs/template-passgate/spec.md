@@ -10,6 +10,15 @@ width on desktop, full-width banner on mobile) and a centered white card on
 the right containing username/password fields, a "Remember me" checkbox, a
 "Forgot Password" link, and a full-width "Log In" button.
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fb771a` | live sheet paints it ×7 — `background-color` on `.cl-btn-primary`; style.css?v=dfa8daa4 (15,591 B, sha256 269a2cad14c3) · <https://preview.colorlib.com/theme/bootstrap/login-form-04/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Split-screen layout

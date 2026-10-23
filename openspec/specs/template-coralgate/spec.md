@@ -39,6 +39,7 @@ Extracted from the preview screenshot (preview unreachable for live DOM/CSS extr
 | Card border-radius          | ~4px                                        | Subtle rounding                          |
 | Card shadow                 | `0 4px 20px rgba(0,0,0,0.08)`               | Subtle drop shadow                       |
 | Card max-width              | ~750px                                      | Centered, responsive                     |
+| Brand (measured) | `#f75959` | live sheet paints it ×20 — `background` on `.cl-text-wrap`; style.css?v=2864ff24 (20,827 B, sha256 655dd87d3b09) · <https://preview.colorlib.com/theme/bootstrap/login-form-17/> |
 
 ## Layout Structure
 

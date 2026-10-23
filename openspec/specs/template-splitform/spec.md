@@ -13,6 +13,15 @@ Splitform is a dual-panel sign-in/sign-up modal template recreating ColorLib Mod
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-02.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/splitform` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#f9e090` | live sheet paints it ×8 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=350f0ba9 (24,742 B, sha256 74df8be8097b) · <https://preview.colorlib.com/theme/bootstrap/modal-02/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

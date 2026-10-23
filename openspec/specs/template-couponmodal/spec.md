@@ -13,6 +13,15 @@ CouponModal is a coupon discount popup template recreating ColorLib Modal 04. It
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-04.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/couponmodal` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#12d3cf` | live sheet paints it ×7 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=892c06b3 (19,825 B, sha256 bdac4f916cec) · <https://preview.colorlib.com/theme/bootstrap/modal-04/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

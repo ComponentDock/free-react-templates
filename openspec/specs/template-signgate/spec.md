@@ -40,6 +40,7 @@ Extracted from the preview stylesheet (`css/style.css`) and HTML structure:
 | Page layout               | Full viewport height, centered      | `height: 100vh` with flex centering      |
 | Content alignment         | Vertically + horizontally centered  | Flex centering on landing page           |
 | Surface (measured) | `#ed5107` | paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=add186fd (18,529 B, sha256 421e8a340698) · <https://preview.colorlib.com/theme/bootstrap/modal-15/> |
+| Brand (stated in this prep) | `#ed5107` | live sheet paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=add186fd (18,529 B, sha256 421e8a340698) · <https://preview.colorlib.com/theme/bootstrap/modal-15/> |
 
 ## Visual Design
 

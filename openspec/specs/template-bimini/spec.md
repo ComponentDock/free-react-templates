@@ -419,6 +419,15 @@ resets.
 20. **No webfont ships**, so the source renders Arial: add one Google Fonts `<link>` for Poppins
     (delta) rather than copying eight dead Roboto woff2 files (247,856 B = 91.98 % of the archive).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fec771` | live sheet paints it ×3 — `background` on `#colorlib-main-nav ul li.cl-active a span:before`; style.css?v=0b78360a (16,497 B, sha256 bd6e8d5c39a0) · <https://preview.colorlib.com/theme/bootstrap/website-menu-20/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Feature: Page frame and the full-viewport hero

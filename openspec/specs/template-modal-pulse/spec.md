@@ -50,6 +50,7 @@ Both Roboto and Poppins are loaded via Google Fonts / CDN.
 | Modal padding  | 0 left/right (body), 1.5rem (`.content-text`) |                            |
 | Button padding | 10px top/bottom (primary)                     |                            |
 | Surface (measured) | `#3e64ff` | paints it ×6 — `background-color` on `.cl-btn-primary`; style.css?v=6d8f01a7 (19,339 B, sha256 936a783d4a89) · <https://preview.colorlib.com/theme/bootstrap/modal-18/> |
+| Brand (stated in this prep) | `#3e64ff` | live sheet paints it ×6 — `background-color` on `.cl-btn-primary`; style.css?v=6d8f01a7 (19,339 B, sha256 936a783d4a89) · <https://preview.colorlib.com/theme/bootstrap/modal-18/> |
 
 ### Section backgrounds
 

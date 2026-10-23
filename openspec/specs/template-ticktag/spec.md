@@ -93,6 +93,15 @@ TypeScript. The page is a minimal showcase of pill-shaped "tag" checkboxes
 Ticktag lives in `apps/ticktag` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn, etc.).
 
+## Design tokens
+
+<!-- brand-claim:2026-10-23 -->
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Brand (stated in this prep) | `#fec771` | live sheet paints it ×2 — `border` on `ul.ks-cboxtags li input[type="checkbox"]:checked + label`; style.css?v=a0e964b3 (9,709 B, sha256 4aa5d2bbdff3) · <https://preview.colorlib.com/theme/bootstrap/checkbox-03/> |
+
+Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
+
 ## Requirements
 
 ### Requirement: Demo section with heading

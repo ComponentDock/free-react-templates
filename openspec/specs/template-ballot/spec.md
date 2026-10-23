@@ -22,6 +22,7 @@ Ballot is a custom checkbox template with a checkbox showcase and footer. It rec
 - **Text color:** #26282b (body), headings same
 - **Layout:** Centered container, left-aligned content, max-w-md
 - **Background:** White (#fff)
+- **Brand stated:** `#7e0cf5` — live sheet paints it ×2 — `background` on `.control input:checked ~ .control__indicator`; style.css?v=b808e430 (8,611 B, sha256 0bb0384e79ae) · <https://preview.colorlib.com/theme/bootstrap/checkbox-14/>
 
 ## Structure
 

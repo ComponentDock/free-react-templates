@@ -42,6 +42,7 @@ Recreation of ColorLib's **Bootstrap Footer 16** — a deep purple/charcoal foot
 | Icon color (checkmarks)  | inherited from `a` → `rgba(255,255,255,0.5)`  | ionicons via parent `a` color                                 |
 | Footer padding           | `7em 0`                                        | `footer { padding: 7em 0 }`                                   |
 | Newsletter section height| stretched (align-items-stretch)                 | `.row.align-items-stretch` in HTML                            |
+| Brand (measured) | `#d7b8ff` | live sheet paints it ×10 — `background` on `.footer-06:after`; style.css?v=782a180a (17,199 B, sha256 042a64e2db6f) · <https://preview.colorlib.com/theme/bft/bootstrap-footer-16/> |
 
 ## Requirements
 

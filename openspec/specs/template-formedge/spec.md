@@ -45,6 +45,7 @@ authoritative again — CSS values are canonical over the screenshot
 | --- | --- | --- |
 | live page | `https://preview.colorlib.com/theme/bootstrap/contact-form-10/` | HTTP 200 · 13,915 B · title `Contact Form 10` |
 | stylesheet | `https://preview.colorlib.com/theme/bootstrap/contact-form-10/css/style.css?v=f01ff150` | HTTP 200 · 17,079 B · sha256 `66c999ad3124` |
+| Brand (measured) | `#1089ff` | live sheet paints it ×3 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=f01ff150 (17,079 B, sha256 66c999ad3124) · <https://preview.colorlib.com/theme/bootstrap/contact-form-10/> |
 
 **Live palette** (hex × occurrences in that sheet): `#ffffff`×14,
 `#007bff`×5, `#6c757d`×4, `#212529`×3, `#495057`×3, `#1089ff`×3,

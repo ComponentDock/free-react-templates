@@ -165,6 +165,7 @@ stylesheet `https://preview.colorlib.com/theme/bootstrap/table-05/css/style.css?
 | Row data (canonical) | 1. markotto@email.com · Added: 01/03/2020 · Markotto89 · **Active** (checked) — 2. jacobthornton@email.com · Added: 01/03/2020 · Jacobthornton · **Waiting for Resassignment** — 3. larrybird@email.com · Added: 01/03/2020 · Larry_bird · **Active** — 4. johndoe@email.com · Added: 01/03/2020 · Johndoe1990 · **Active** — 5. garybird@email.com · Added: 01/03/2020 · Garybird_2020 · **Waiting for Resassignment** | same KIND of content may be paraphrased; keep structure (email + added-date + username + status) |
 | Table columns (thead) | 5: `[checkbox]` · `Email` · `Username` · `Status` · `[remove]` — th[0] and th[4] are EMPTY in the source | label only the middle 3 with `scope="col"` |
 | Print rules | thead `table-header-group`, tr/img `break-inside: avoid`, body/container `min-width: 992px`, cells forced white, `@page { size: a3 }` | minor; not required for parity |
+| Brand (stated in this prep) | `#40bfc1` | live sheet paints it ×2 — `color` on `.checkbox-primary`; style.css?v=de8ec152 (11,913 B, sha256 fc4eec6ee6ac) · <https://preview.colorlib.com/theme/bootstrap/table-05/> |
 
 ## Requirements
 

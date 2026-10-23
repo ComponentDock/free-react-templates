@@ -154,6 +154,7 @@ CSS values are canonical over the screenshot.)
 | Canonical data | 5 rows, ALL identical: row#th "1001" · "Mark Otto" · "Japan" · "$3000" · "$1200" · edit icon. Tint SEQUENCE (top→bottom): primary blue · success green · warning amber · danger red · info teal | same KIND of content may be paraphrased; keep 6 cells × 5 rows + the tint sequence |
 | Edit-icon source markup | `<a href="#">…inline SVG…</a>` | recreation SHALL use `<button type="button">` with lucide `SquarePen` + `aria-label` (identical visuals, real semantics); MUST NOT inline-copy the FontAwesome SVG path (asset-copy rule) |
 | Print rules | thead `table-header-group`, cells forced white, `@page { size: a3 }` | minor; not required for parity |
+| Brand (stated in this prep) | `#1089ff` | live sheet paints it ×2 — `background` on `.cl-bg-primary`; style.css?v=c2c0bfef (9,882 B, sha256 b67dc830ab1d) · <https://preview.colorlib.com/theme/bootstrap/table-10/> |
 
 ## Requirements
 

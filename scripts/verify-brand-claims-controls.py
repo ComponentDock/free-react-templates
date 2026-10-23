@@ -69,11 +69,13 @@ DEFAULT_CSS = (".btn { background: #1089ff; } .btn:hover { background: #1089ff; 
 
 def fixture(tmp: str, *, notes: str = "", tokens: str = "", css: str = "",
             sheets=None, page: str = PAGE, app: bool = True,
-            alias: bool = False) -> str:
+            alias: bool = False, base: str = BASE, slug: str = "calculator-01") -> str:
     root = os.path.join(tmp, "repo")
     sd = os.path.join(root, "openspec", "specs", "template-planner")
     os.makedirs(sd, exist_ok=True)
     body = SPEC.format(notes=notes, tokens=tokens)
+    if slug != "calculator-01":
+        body = body.replace("calculator-01", slug)
     if alias:
         body = body.replace("# Template: Planner (Widget)",
                             "# Template: Planner (Widget)\n"
@@ -85,9 +87,9 @@ def fixture(tmp: str, *, notes: str = "", tokens: str = "", css: str = "",
         open(os.path.join(src, "index.css"), "w").write(":root{--color-brand:#1089ff}")
     cache = os.path.join(tmp, "cache")
     os.makedirs(cache, exist_ok=True)
-    seed(cache, BASE, page)
+    seed(cache, base, page)
     for url, body_ in (sheets if sheets is not None
-                       else [(SHEET, css or DEFAULT_CSS)]):
+                       else [(base + "css/style.css", css or DEFAULT_CSS)]):
         seed(cache, url, body_)
     return root
 
@@ -171,8 +173,8 @@ def main() -> int:
                    ".cta{background:#c55303}")]
         link = PAGE.replace("<link", '<link rel="stylesheet" href="css/bootstrap.min.css"><link')
         ok = "MEASURED-ROW" not in buckets(run(fixture(tmp, sheets=vendor, page=link)))
-        mut = mutate(tmp, "        if is_vendor(su):\n            vendor.append(rec)\n            continue\n",
-                     "        if is_vendor(su):\n            vendor.append(rec)\n")
+        mut = mutate(tmp, "        if is_vendor(su, url):\n            vendor.append(rec)\n            continue\n",
+                     "        if is_vendor(su, url):\n            vendor.append(rec)\n")
         bad = buckets(run(fixture(tmp + "2", sheets=vendor, page=link), mut))
         return (ok and "MEASURED-ROW" in bad, f"clean={ok} mutated={sorted(bad)}")
     case("GATE: a vendor bundle's palette is never the brand", c5)
@@ -286,6 +288,35 @@ def main() -> int:
         return (first == second and "rows written: 0" in out,
                 f"identical={first == second} summary={out.strip().splitlines()[-1:]}")
     case("GATE: the fixer is a byte-level no-op on its second run", c15)
+
+    # 16 — GATE: the demo FAMILY prefix is not a library name
+    def c16(tmp):
+        base = "https://preview.colorlib.com/theme/bootstrap/checkbox-14/"
+        css = (".control__indicator{background:#7e0cf5}"
+               ".btn-check{background:#7e0cf5}"
+               ".control input:checked ~ .control__indicator{background:#7e0cf5}")
+        got = [(r["bucket"], r["hex"]) for r in
+               run(fixture(tmp, base=base, slug="checkbox-14", css=css))]
+        ok = got == [("MEASURED-ROW", "#7e0cf5")]
+        mut = mutate(tmp, '    return bool(VENDOR_RX.search(rel.rsplit("/", 1)[-1] + " " + rel)',
+                     '    return bool(VENDOR_RX.search(url.rsplit("/", 1)[-1] + " " + url)')
+        bad = buckets(run(fixture(tmp + "2", base=base, slug="checkbox-14", css=css), mut))
+        return (ok and "NO-THEME-SHEET" in bad,
+                f"clean={got} mutated={sorted(bad)}")
+    case("GATE: the demo FAMILY directory (/theme/bootstrap/) is not a vendor path", c16)
+
+    # 17 — GATE: a focus ring stated as the brand is not a brand row
+    def c17(tmp):
+        notes = "- Blue **`#80bdff`** brand."
+        css = ".cl-form-control:focus{border-color:#80bdff}"
+        got = [(r["bucket"], r["hex"]) for r in
+               run(fixture(tmp, notes=notes, css=css))]
+        mut = mutate(tmp, '        if painted_here and not paints_surface(',
+                     '        if False and not paints_surface(')
+        bad = buckets(run(fixture(tmp + "2", notes=notes, css=css), mut))
+        return (got == [("PROSE-STATE", "#80bdff")] and "PROSE-ROW" in bad,
+                f"clean={got} mutated={sorted(bad)}")
+    case("GATE: a colour painted only under :focus → PROSE-STATE, never a row", c17)
 
     passed = sum(1 for ok, _n, _d in cases if ok)
     gates = sum(1 for ok, n, _d in cases if n.startswith("GATE") and ok)
