@@ -13,18 +13,18 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Horse Club → Canter
+## State after Appco → Flowly
 
-27 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+26 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
 Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
-`animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815).
+`animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815), `appco` →
+`flowly` (#1816).
 
 | app                 | source design  |
 | ------------------- | -------------- |
-| apps/appco          | Appco          |
 | apps/applab         | Applab         |
 | apps/appli          | Appli          |
 | apps/appru          | Appru          |
