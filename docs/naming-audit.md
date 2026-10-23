@@ -13,9 +13,9 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Crafted → Makerly
+## State after Dogger → Barkly
 
-14 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+13 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
@@ -26,11 +26,11 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 (#1821), `appy` → `tandem` (#1822), `bold` → `strive` (#1823),
 `breed` → `wagly` (#1824), `bulkapp` → `bundle` (#1825),
 `chimper` → `craftora` (#1826),
-`colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829).
+`colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829),
+`dogger` → `barkly` (this PR).
 
 | app                 | source design  |
 | ------------------- | -------------- |
-| apps/dogger         | Dogger         |
 | apps/doglife        | Doglife        |
 | apps/ecobit         | Ecobit         |
 | apps/farmie         | Farmie         |
