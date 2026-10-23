@@ -252,6 +252,22 @@ no JS file; the responsive reflow is pure CSS media queries + `attr()`.
   767.996px, so arbitrary `max-[768px]:` variants are required for exact
   fidelity)
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/flexure/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/flexure/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `openspec/specs/template-flexure/spec.md` exists on the PR branch and
@@ -292,3 +308,4 @@ no JS file; the responsive reflow is pure CSS media queries + `attr()`.
       reference), design tokens used, and what differs (new name Flexure;
       Poppins via Google Fonts instead of self-hosted woff2; zero images;
       Component Dock footer added)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

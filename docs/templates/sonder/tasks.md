@@ -55,7 +55,7 @@ Section order: `s-pageheader--home` (header: logo + social FB/X/IG/Pinterest
 * Footer: Quick Links (Home, Blog, Styles, About, Contact, Privacy Policy),
   Archives (Jan–Dec subset), Social (Facebook, Instagram, Twitter,
   Pinterest, LinkedIn), "Our Newsletter" + blurb + email + Send
-  (`#0054a5`), bottom bar "© Copyright Philosophy 2038" + Colorlib credit +
+  (`#0054a5`), bottom bar "© Copyright Philosophy 2038" + Component Dock credit +
   back-to-top.
 
 ## Design tokens (from preview css/main.min.css)
@@ -101,7 +101,7 @@ Section order: `s-pageheader--home` (header: logo + social FB/X/IG/Pinterest
 6. **Footer** — dark `#151515`; 3 link columns (Quick Links, Archives,
    Social) + "Our Newsletter" (blurb, email input, `#0054a5` Send,
    validation + success state); bottom bar: "© Copyright Sonder 2038" +
-   paraphrased ColorLib credit + back-to-top.
+   paraphrased Component Dock credit + back-to-top.
 7. **Composition** — skip link, `<main>`, banner/contentinfo landmarks,
    document title "Sonder — Lifestyle Blog Template".
 

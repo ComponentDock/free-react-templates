@@ -173,8 +173,8 @@ rgba(255,255,255,.5)` inset 20px (via `:before`): panel 1 bg
       social icon links (icon-facebook, icon-twitter, icon-instagram,
       icon-linkedin). Bottom row `div.row.pt-5.mt-5` — copyright line:
       "Copyright © <year> All rights reserved | This template is made
-      with ♥ by Colorlib" (credit kept per CC BY 3.0, recreated as our
-      own text).
+      with ♥ by Colorlib" (the source credit is replaced by our own
+      Component Dock credit).
 
 - **Design tokens (from css/style.css + computed styles on the live
   preview):**

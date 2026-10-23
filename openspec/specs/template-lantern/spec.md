@@ -33,7 +33,7 @@ TypeScript.
   "Most Popular Videos" featured split card + video cards with play
   buttons → LOAD MORE outline button; right col sidebar: TOP STORIES list,
   ad banner, NEWEST VIDEO list, ad banner) → Dark footer `#191919` (logo,
-  newsletter subscribe form, copyright + ColorLib credit).
+  newsletter subscribe form, copyright + Component Dock credit).
 
 ### Hero slider (from live DOM)
 
@@ -75,7 +75,7 @@ TypeScript.
   (`color-white ptb-15`, placeholder " Your Email") + full-width outline
   "SUBSCRIBE" button (`btn-brdr-grey`). Bottom bar: "Copyright © All
   rights reserved | This template is made with ♥ by Colorlib" (paraphrased
-  to credit ColorLib).
+  to credit Component Dock).
 
 ## Design tokens (from preview common/styles.css)
 
@@ -237,7 +237,7 @@ a bottom bar.
 
 - **GIVEN** the footer is displayed
 - **WHEN** the bottom bar is rendered
-- **THEN** it SHALL show a copyright line and a paraphrased ColorLib credit
+- **THEN** it SHALL show a copyright line and a paraphrased Component Dock credit
   link
 
 ### Requirement: Page composition
@@ -253,6 +253,22 @@ main landmark, and a document title.
 - **AND** the header SHALL be in the banner landmark, the sections in the
   main landmark, and the footer in the contentinfo landmark
 - **AND** the document title SHALL be "Lantern — Blog Template"
+
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/lantern/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/lantern/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
 ## Verification checklist
 
@@ -271,7 +287,7 @@ main landmark, and a document title.
 - [ ] Sidebar: TOP STORIES rows (thumb + title), NEWEST VIDEO list, 2 ad
       placeholders
 - [ ] Footer `#191919`: newsletter form with validation + success state,
-      SUBSCRIBE button, bottom bar with copyright + ColorLib credit
+      SUBSCRIBE button, bottom bar with copyright + Component Dock credit
 - [ ] Fidelity: section order 1:1, `#F9B500` brand yellow, Poppins,
       `#F8F8F8` section bg, `#191919` footer, picsum placeholders seeded
       `lantern-<n>`, no copied assets
@@ -285,3 +301,4 @@ main landmark, and a document title.
 - [ ] PR title: `feat: Lantern — blog website template (ColorLib
 Quitelight)`; body includes the source URL, preview URL, tokens, and the
       three-copy TEMPLATES.md note
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

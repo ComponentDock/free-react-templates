@@ -178,6 +178,22 @@ The template SHALL include a footer linking to Component Dock.
 - **AND** the footer contains a link to https://www.componentdock.com/
 - **AND** the link text is "More templates at Component Dock"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/modalbox/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/modalbox/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [x] Modal opens with fade-in animation on button click
@@ -196,3 +212,4 @@ The template SHALL include a footer linking to Component Dock.
 - [x] Accessibility: aria-modal on modal dialog
 - [x] Accessibility: focus returns to trigger button on close
 - [x] Footer links to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

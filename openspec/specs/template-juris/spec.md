@@ -379,6 +379,22 @@ menu, and a copyright bar.
 - **WHEN** the user clicks the fixed circular `#B40000` back-to-top button
 - **THEN** the page SHALL scroll smoothly to the top
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/juris/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/juris/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Spec validates: `npm run spec:validate`
@@ -423,3 +439,4 @@ menu, and a copyright bar.
 - [ ] TEMPLATES.md: mark BOTH lawyerlegal rows `[x]` (lines 599 and 2127) + surge URL + readme:status when shipped
 - [ ] Deploy check: merged PR → Deploy to Surge.sh workflow green + surge
       URL (juris.free.componentdock.com) returns 200
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

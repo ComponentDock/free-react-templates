@@ -32,7 +32,7 @@ Logistics</title>`). A logistics/shipping one-pager: dark #262533 top strip
   name/role); a 3-card blog section (third card on a dark overlay image); a
   red CTA band ("Please feel free to reach us" + white "Explore More"
   button); and a dark footer (About Us, Newsletter with arrow submit, Follow
-  Us social icons, Colorlib credit line). Source:
+  Us social icons, Component Dock credit line). Source:
   https://colorlib.com/wp/template/lagoon/.
 - **Preview DOM analyzed:** https://preview.colorlib.com/theme/lagoon/
   (HTTP 200, ~37.5 KB HTML fetched; `style.css` ~135 KB parsed for tokens —
@@ -460,7 +460,7 @@ The system SHALL render a red call-to-action band with a white button.
 ### Requirement: Footer
 
 The system SHALL render a dark footer with About, Newsletter, social links,
-and the Colorlib credit.
+and the Component Dock credit.
 
 #### Scenario: Footer content
 
@@ -509,6 +509,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/cargomate/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/cargomate/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -521,3 +537,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Counters count up on scroll (fake timers in tests); testimonial slider is a state-based carousel
 - [ ] Sharp-corner design: border-radius 0 on buttons, inputs, cards, tabs; `.main_btn` inset-border + bottom-right corner-cut detail reproduced
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

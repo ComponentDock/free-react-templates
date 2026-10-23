@@ -286,6 +286,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/palate/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/palate/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for `template-palate`
@@ -299,3 +315,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Apps MUST import Button/ButtonLink/cn from `packages/ui` (knip gate)
 - [ ] TEMPLATES.md `[~]` → `[x]` + surge URL + `npm run readme:status` done by implementer at ship time (mark ALL FOUR "Appetizer" rows — lines 334, 885, 1768 and 2665 — Bootstrap category and the other three category rows)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

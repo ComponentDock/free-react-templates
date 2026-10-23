@@ -121,7 +121,7 @@
 - [ ] Testimonials: heading + 3-slide slider (photo, name, role, quote)
 - [ ] Contact: photo bg, heading, form (Full Name / Email Address / Your
       Message / Send Message), contact details (email + Baker Street address)
-- [ ] Footer: #080827, centered logo/email/address, ColorLib credit +
+- [ ] Footer: #080827, centered logo/email/address, Component Dock credit +
       "Stay Connected" social icons (lucide Twitter/Facebook/Instagram/Youtube)
 - [ ] Scroll-to-top: fixed circular button appears on scroll, scrolls to top
 - [ ] Tests for every section (RTL), 100% coverage

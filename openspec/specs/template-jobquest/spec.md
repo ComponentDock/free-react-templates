@@ -101,6 +101,22 @@ The footer displays link columns, social icons, and Component Dock attribution.
 - **AND** social media icon links are visible in the Contact Us column
 - **AND** a Component Dock attribution link to componentdock.com is present
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/jobquest/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/jobquest/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Design Tokens (from live preview CSS analysis)
 
 ### Colors
@@ -155,3 +171,4 @@ The footer displays link columns, social icons, and Component Dock attribution.
 - [ ] No ColorLib references in app code
 - [ ] Footer links to componentdock.com
 - [ ] CNAME + homepage configured for surge deploy
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -635,6 +635,22 @@ wrap and the `-15` sibling's 66 px no-wrap are both different shapes).
   `rel="noreferrer"`) and a computed current year render in the footer — a documented delta, since
   the source has no footer
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/binnacle/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/binnacle/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `openspec/specs/template-binnacle/spec.md` present; `npm run spec:validate` green
@@ -707,3 +723,4 @@ wrap and the `-15` sibling's 66 px no-wrap are both different shapes).
       attribution present
 - [ ] Squash-merge the PR, then mark the TEMPLATES.md `Website Menu 16` item `[x]` with the live
       `https://binnacle.free.componentdock.com` URL + homepage and run `npm run readme:status`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

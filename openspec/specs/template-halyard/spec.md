@@ -609,6 +609,22 @@ hamburger) and `X` (the drawer close).
   the link `.3s` transitions collapse to effectively instant, with all content present
   on first paint
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/halyard/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/halyard/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `apps/halyard` recreates ColorLib **"Website Menu V10"** (source slug
@@ -720,3 +736,4 @@ hamburger) and `X` (the drawer close).
       `main-menu` classes dropped, the unreferenced `600`-weight font and the 408 B
       `icomoon` subset dropped, reduced-motion handling, `body{height:200vh}` filler
       replaced with real content, and the added footer)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

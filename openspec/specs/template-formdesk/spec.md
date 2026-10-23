@@ -149,6 +149,22 @@ The page SHALL stack the two columns vertically on mobile devices.
 - **THEN** the two columns SHALL stack vertically with the photo on top and
   the form below
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/formdesk/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/formdesk/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Two-column layout with desk photo on left, form on right
@@ -163,3 +179,4 @@ The page SHALL stack the two columns vertically on mobile devices.
 - [ ] Responsive: columns stack on mobile
 - [ ] No ColorLib references in app code
 - [ ] `packages/ui` components reused where possible
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

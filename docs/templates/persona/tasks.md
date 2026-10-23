@@ -79,7 +79,7 @@ recreated; the numbered-entry pattern becomes the Projects showcase.
 8. **Contact** — heading + form (name/email/message, zod validation, success
    state) + contact details (email/phone/location).
 9. **Footer** — `#1c1e26`; wordmark, nav links, copyright with paraphrased
-   ColorLib credit.
+   Component Dock credit.
 
 ## Fidelity notes
 

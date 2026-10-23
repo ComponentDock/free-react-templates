@@ -145,7 +145,7 @@ rgba(255,255,255,.1)`), "Login / Register" + "English" flag dropdown
 10. **Footer** — white; Products / Programs / Company link columns +
     Subscribe Newsletter widget (pill input `#e8f1f8` + blue button,
     validation + success state) + brand-colored social circles; bottom
-    bar: copyright + paraphrased ColorLib credit + Payments We Accept
+    bar: copyright + paraphrased Component Dock credit + Payments We Accept
     icons.
 11. **Composition** — skip link, `<main>`, banner/contentinfo landmarks,
     document title "Upnode — Web Hosting Template".

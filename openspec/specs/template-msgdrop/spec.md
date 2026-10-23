@@ -125,6 +125,22 @@ The page SHALL include a footer with a Component Dock link.
 - **AND** it links to https://www.componentdock.com/
 - **AND** the link text reads "Component Dock"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/msgdrop/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/msgdrop/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Split-screen layout renders correctly (50/50 columns)
@@ -145,3 +161,4 @@ The page SHALL include a footer with a Component Dock link.
 - [ ] `homepage` in package.json is `https://msgdrop.free.componentdock.com`
 - [ ] `vite.config.ts` registers `injectUiSource()`
 - [ ] Footer credits Component Dock (not ColorLib)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

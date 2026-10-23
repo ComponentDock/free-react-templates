@@ -171,6 +171,22 @@ The layout SHALL be responsive on mobile devices with hamburger menu, stacked ca
 - **AND** cards stack vertically in a single column
 - **AND** the counter stats wrap into a 2×2 grid
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/kindfund/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/kindfund/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Spec reviewed; all sections from the original DOM mapped 1:1
@@ -180,3 +196,4 @@ The layout SHALL be responsive on mobile devices with hamburger menu, stacked ca
 - [ ] No ColorLib references in any app code
 - [ ] 100% test coverage on all components
 - [ ] `npm run verify:app kindfund` passes
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

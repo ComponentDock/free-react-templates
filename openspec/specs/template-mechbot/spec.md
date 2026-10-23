@@ -364,6 +364,22 @@ components.
 - **THEN** the hero, products, home-about, about-video, and blog sections SHALL use light bg `#f9f9ff`
 - **AND** the features and footer sections SHALL use dark bg `#222222`
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/mechbot/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/mechbot/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `openspec/specs/template-mechbot/spec.md` present with the full
@@ -378,3 +394,4 @@ components.
 - [ ] Implementer: TDD at 100% coverage, `bash scripts/verify-app.sh mechbot`,
       PR lists source (ColorLib Robotics), preview URL, tokens, and what
       differs.
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

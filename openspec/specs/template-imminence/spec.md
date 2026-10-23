@@ -209,6 +209,22 @@ viewports with the submit button adapting in size.
 - **WHEN** the viewport is 992px or narrower
 - **THEN** the email input area spans the full width of its container
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/imminence/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/imminence/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Split-screen layout renders correctly at 100vw × 100vh
@@ -229,3 +245,4 @@ viewports with the submit button adapting in size.
 - [ ] Footer links to https://www.componentdock.com/
 - [ ] `public/CNAME` contains `imminence.free.componentdock.com`
 - [ ] `package.json` homepage is `https://imminence.free.componentdock.com`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

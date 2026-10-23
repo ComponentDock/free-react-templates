@@ -301,6 +301,22 @@ Every monorepo template SHALL ship a minimal footer linking Component Dock.
 Given the page is rendered, then a minimal footer links "Component Dock" →
 https://www.componentdock.com/.
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/corniglia/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/corniglia/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `apps/corniglia` exists; package `@free-react-templates/corniglia`;
@@ -343,3 +359,4 @@ https://www.componentdock.com/.
       preview URL, tokens, renames (esp. "dark testimonials carousel —
       autoplay + loop + arrows + dots, ~1s slide — differs from Manarola's
       white tabbed media carousel"); merge immediately
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

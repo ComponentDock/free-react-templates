@@ -460,6 +460,22 @@ and a document title.
   banner, and footer in order
 - **AND** the document title SHALL be "Reachly — SEO & Marketing Template"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/reachly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/reachly/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -481,3 +497,4 @@ and a document title.
 - [ ] Footer: about column (wordmark + blurb + socials), Navigation/Services/Support link columns, Contact Us column (email + phone), copyright bar links Component Dock
 - [ ] Buttons: `.btn_0` pink-gradient pill (radius 25px, arrow slides right on hover); `.get-btn` orange pill → pink outline on hover; `.border-btn` white outline; `.browse-btn` 2px pink underline
 - [ ] Document title "Reachly — SEO & Marketing Template"
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

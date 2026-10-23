@@ -317,6 +317,22 @@ strings (the source brand, its slug, or the source domain).
 - **THEN** the main landmarks appear in the documented order (hero, listings,
   how-it-works), with the navigation bar above and the footer below
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/locale/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/locale/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Implementation notes
 
 - The recreation replaces the source's own brand strings and any copy that named
@@ -331,3 +347,7 @@ strings (the source brand, its slug, or the source domain).
   stay reachable by keyboard without a JavaScript hover state.
 - The folded panel mounts its contents only while open, so a shut panel holds no
   focusable copies of the bar's rows.
+
+## Verification checklist
+
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

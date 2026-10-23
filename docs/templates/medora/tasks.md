@@ -91,7 +91,7 @@ recreated; the entry list informs the Departments/Services cards.
    phone, department select, message; zod schema; success state) + clinic
    info (address, phone, email, hours).
 10. **Footer** — dark blue-grey; "Medora" wordmark, quick links, contact
-    columns, copyright + paraphrased Colorlib credit.
+    columns, copyright + paraphrased Component Dock credit.
 
 ## Implementation tips
 

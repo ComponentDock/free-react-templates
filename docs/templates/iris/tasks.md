@@ -83,7 +83,7 @@
      - About Me (`col-lg-5`): `f_title` h3 white PT Serif 18px bold (mb
        35px) + p (Roboto 14px/24px #777, mb 30px) + copyright p "Copyright
        © <year> All rights reserved | This template is made with ❤ by
-       Colorlib" — KEEP the Colorlib credit (CC BY 3.0); heart → lucide
+       Colorlib" — the source credit is replaced by the Component Dock credit; heart → lucide
        Heart; credit link #fa333f.
      - Newsletter (`col-lg-5`): h3 + p "Stay updated with our latest
        trends"; email input (height 40px, transparent, `border 1px solid

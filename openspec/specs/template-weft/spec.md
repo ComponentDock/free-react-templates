@@ -276,6 +276,22 @@ The system SHALL use the exact design tokens from the original template.
 - **AND** button padding SHALL be `15px 50px`
 - **AND** letter-spacing SHALL be `1px`
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/weft/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/weft/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Sidebar renders with dark `#18181c` background
@@ -299,3 +315,4 @@ The system SHALL use the exact design tokens from the original template.
 - [ ] No ColorLib references in app code
 - [ ] All design tokens match the reference exactly
 - [ ] Placeholder images use picsum.photos/seed/weft-*/w/h pattern
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

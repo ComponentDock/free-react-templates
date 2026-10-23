@@ -102,7 +102,7 @@ rgba(13,17,40,0.95), rgba(253,95,0,0.85))`): LEFT video thumbnail
       with orange arrow icons), **Subscribe Us!** (email input on
       white/10 bg + purple `#5d50c6` "Subscribe" button), **Connect With
       Us** (social icon row); widget headings white with orange underline;
-      bottom copyright bar (muted white text + ColorLib credit link).
+      bottom copyright bar (muted white text + Component Dock credit link).
 
 - **Design tokens (extracted from `css/style.css` `:root` + rules):**
   - Brand orange **`#fd5f00`** (`--fox-primary`) — CTAs, icon chips, date
@@ -367,7 +367,7 @@ bar.
   an email input with a purple `#5d50c6` "Subscribe" button, and social
   icons
 - **AND** widget headings SHALL be white with an orange underline
-- **AND** a copyright bar SHALL credit ColorLib
+- **AND** a copyright bar SHALL credit Component Dock with a link to https://www.componentdock.com/
 
 #### Scenario: Subscribe validation
 
@@ -404,6 +404,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/ivy/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/ivy/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -425,7 +441,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Blog: bg-light, 3 cards, orange date block (26 June 2032), meta, title, "Read more"
 - [ ] Testimonials: avatar, purple #5d50c6 quote icon, name, orange position, orange active dot
 - [ ] Gallery: photo tiles with orange circular icon overlay, 2-col on mobile
-- [ ] Footer: #1a1a1a, 5 widgets (Have a Questions?, Recent Blog, Quick Links, Subscribe Us! with purple button, Connect With Us), orange underlines, ColorLib credit
+- [ ] Footer: #1a1a1a, 5 widgets (Have a Questions?, Recent Blog, Quick Links, Subscribe Us! with purple button, Connect With Us), orange underlines, Component Dock credit
 - [ ] Document title "Ivy — University Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 403 (Bootstrap) and line 1642 (Education)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

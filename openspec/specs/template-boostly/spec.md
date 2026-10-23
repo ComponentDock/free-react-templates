@@ -369,6 +369,22 @@ Then its src is a picsum.photos URL seeded with "boostly-"
 And no source-template asset is shipped
 ```
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/boostly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/boostly/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [x] Navbar: sticky shadow on scroll, star wordmark, links, Blog dropdown, Join Us button, mobile off-canvas menu
@@ -387,3 +403,4 @@ And no source-template asset is shipped
 - [x] Uses Google Fonts (Josefin Sans + Roboto) via index.html link
 - [x] Uses lucide-react + inline SVG brand icons
 - [x] 100% test coverage (51 tests)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

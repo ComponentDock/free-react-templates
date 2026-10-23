@@ -75,6 +75,22 @@ Feature: Fotoroll Photography Portfolio
 - **THEN** I see a "Component Dock" link to componentdock.com
 - **AND** I see social media icons
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/fotoroll/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/fotoroll/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Preview analysis notes
 
 - ⚠️ Pointer status re-probed 2026-10-13: the slug-only path (`https://preview.colorlib.com/theme/photography-2/`) 404s, but the live demo is the alias directory `https://preview.colorlib.com/theme/photography2/` (HTTP 200, 6,928 B)
@@ -84,3 +100,7 @@ Feature: Fotoroll Photography Portfolio
 - Slider has dark overlay, large white text, "VIEW PROJECTS" underline CTA
 - Arrow navigation is circular dark buttons on left/right edges
 - Footer: copyright + "made with ♥ by Colorlib" + "SHOW THUMBNAIL" + social icons
+
+## Verification checklist
+
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

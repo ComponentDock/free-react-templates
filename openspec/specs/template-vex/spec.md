@@ -97,6 +97,22 @@ The template SHALL use Inter font via Google Fonts and a white background with d
 - **WHEN** the page loads
 - **THEN** the body SHALL use the Inter font family
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/vex/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/vex/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Design tokens (extracted from preview CSS)
 
 - **Font**: Inter (400, 500, 600, 700)
@@ -111,3 +127,7 @@ The template SHALL use Inter font via Google Fonts and a white background with d
 - **Checkmark icon**: white, centered, 14px
 - **Disabled opacity**: 0.5
 - **Transition**: 0.3s cubic-bezier(0.4, 0, 0.2, 1) for scale + color
+
+## Verification checklist
+
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

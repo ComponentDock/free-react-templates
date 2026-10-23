@@ -134,9 +134,30 @@ Closet is a fashion boutique template with a navbar, hero, popular products, new
 - **Given** the page is rendered
 - **When** the Footer is inspected
 - **Then** Multi-column layout with navigation links
+
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/closet/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/closet/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Fidelity Notes
 
 - No screenshot fallback needed: the slug-only preview path 404s, but the live demo is the alias directory `/theme/littlecloset/` (HTTP 200 re-probed 2026-10-13), so the design sheet is authoritative
 - Placeholder images via picsum.photos seeded URLs
 - No ColorLib assets copied
 - Brand icons via inline SVG (lucide-react removed brand icons)
+
+## Verification checklist
+
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

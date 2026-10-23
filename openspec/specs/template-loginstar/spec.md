@@ -158,6 +158,22 @@ The template SHALL include a footer (or link within the page) that links to http
 - **WHEN** the user views the page
 - **THEN** a link to https://www.componentdock.com/ is visible somewhere on the page
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/loginstar/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/loginstar/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Card centered vertically and horizontally on full-viewport page
@@ -175,3 +191,4 @@ The template SHALL include a footer (or link within the page) that links to http
 - [ ] Footer links to componentdock.com
 - [ ] No ColorLib references in app code (provenance only in spec)
 - [ ] Ubuntu font loaded via Google Fonts in index.html
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

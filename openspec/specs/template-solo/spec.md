@@ -335,7 +335,7 @@ row of client logo placeholders.
 ### Requirement: Footer
 
 The system SHALL render a dark #04091e footer with three widgets: About Me
-(text + copyright crediting ColorLib), Newsletter (email input + send
+(text + copyright crediting Component Dock), Newsletter (email input + send
 button), and Follow Me (social icon links).
 
 #### Scenario: Footer content
@@ -376,6 +376,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/solo/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/solo/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -394,5 +410,6 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Pricing: 3 cards (01 Economy £199 / 02 Business £299 / 03 Premium £399), hover → gradient + white
 - [ ] Blog: #f9f9ff bg, 3 post cards with author row + meta + "View More"
 - [ ] Brands: gradient band with 6 logo placeholders
-- [ ] Footer: #04091e, About Me + Newsletter + Follow Me widgets, heart-credit to ColorLib
+- [ ] Footer: #04091e, About Me + Newsletter + Follow Me widgets, heart-credit to Component Dock
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

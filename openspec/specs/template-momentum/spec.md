@@ -81,7 +81,7 @@ CSS 4 + TypeScript.
      60px / 40px responsive, weight 700, `line-height: 1`, AOS fade-up; fix
      the "Boostrap" typo → e.g. "New Template. Bootstrap Five." or similar
      two-line treatment); `p.subheading.text-white.mb-5` "A free template
-     by **Colorlib**" (link) — recreate credit per CC BY 3.0; `p` >
+     by **Colorlib**" (link) — recreated as the Component Dock credit; `p` >
      `a.btn.btn-primary-gradient` **"Read More"**.
   3. Countdown `div.section.section-2.js-countdown` (bg **`#000`**,
      padding 7rem 0) — `div.container`:
@@ -257,7 +257,8 @@ auto`); counters 2-up (`col-6`); pricing 1-up; section-6 `:before`
   transitions (not required for fidelity); dropdown nav (has-children)
   → hover/click dropdowns; jQuery clone-to-mobile-menu → shared menu data
   rendered in both desktop nav and mobile slide-in panel; logo recreated
-  as a Jost wordmark "Momentum"; ColorLib credit line kept per CC BY 3.0.
+  as a Jost wordmark "Momentum"; the source credit line becomes the Component
+  Dock credit (AGENTS.md rule 5).
 
 Momentum lives in `apps/momentum` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
@@ -508,6 +509,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/momentum/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/momentum/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -529,3 +546,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Jost via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Action lines (549 AND 881) marked `[x]` after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

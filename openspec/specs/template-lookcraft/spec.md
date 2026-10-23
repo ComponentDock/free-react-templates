@@ -184,6 +184,22 @@ Users SHALL see the Lato font family used throughout the template.
 - **THEN** all text should use the Lato font family
 - **AND** the hero heading should be displayed at very large scale
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/lookcraft/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/lookcraft/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Header: transparent, sticky, logo + 6 nav links
@@ -196,3 +212,4 @@ Users SHALL see the Lato font family used throughout the template.
 - [ ] Colors match tokens: #081624 dark, #f44336 red, #673ab7 purple, #f6f7f9 light bg, #222222 footer
 - [ ] Font: Lato throughout
 - [ ] 100% test coverage (lines, functions, branches, statements)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

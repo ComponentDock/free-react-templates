@@ -214,6 +214,22 @@ Users SHALL see a multi-column footer with a call-to-action bar, contact info, q
 - **THEN** a copyright line is shown
 - **AND** a link to Component Dock (https://www.componentdock.com/) replaces the Colorlib attribution
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/frostguard/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/frostguard/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Header: sticky, social icons, nav links, phone number
@@ -232,3 +248,4 @@ Users SHALL see a multi-column footer with a call-to-action bar, contact info, q
 - [ ] Pill-shaped buttons (`border-radius: 60px`) for primary CTAs
 - [ ] No Colorlib references in app code; Component Dock link in footer
 - [ ] Placeholder images via `picsum.photos/seed/frostguard-*`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

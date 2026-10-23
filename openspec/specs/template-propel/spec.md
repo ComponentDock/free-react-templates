@@ -314,6 +314,22 @@ and a document title.
   panels) in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Propel — Business & Startup Template"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/propel/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/propel/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -322,3 +338,4 @@ and a document title.
 - [ ] Full gate green in CI on merge (typecheck → lint → test:coverage → build → knip → fallow)
 - [ ] Section order matches the preview 1:1; tokens (#0e49b5, #0c3e9a, #0b3a91, #212529, #6c757d, #efefef, #f8f9fa, #f0f0f0, #ccc, #999, #777, #888, #4a4a4a, Montserrat/Open Sans) used via `@theme`
 - [ ] No ColorLib assets copied (picsum seeds `propel-<n>`, Google Fonts links, lucide icons only)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

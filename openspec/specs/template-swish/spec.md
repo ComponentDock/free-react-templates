@@ -90,7 +90,7 @@ Sans", sans-serif`, `font-weight: 900`, `text-transform: uppercase`,
     "Follow Us Instagram") + six-square Instagram-style image grid.
   - footer `.footer-area`: `#2a2a2a` dark, five columns (Top Products,
     Quick Links, Features, Resources — link lists; Newsletter — email input
-    - orange "subscribe" button), copyright bar with ColorLib credit
+    - orange "subscribe" button), copyright bar with Component Dock credit
       (paraphrased).
 - **Section order (1:1 from the preview DOM):**
   1. Header top bar: phone `+02 213 - 256 (365)` + `REGISTER` button.
@@ -287,7 +287,7 @@ The system SHALL render a dark five-column footer with a newsletter form.
 - **AND** the newsletter SHALL validate the email and show a success
   confirmation on valid submit, an error on invalid input
 - **AND** a copyright line SHALL read "© 2026 Swish — Basketball school
-  template" (paraphrase of the ColorLib credit line)
+  template" (paraphrase of the Component Dock credit line)
 
 ### Requirement: Page composition
 
@@ -319,6 +319,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/swish/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/swish/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes.
@@ -344,3 +360,4 @@ change the footer's own layout or copy beyond the credit line.
       URL (https://preview.colorlib.com/theme/basketball/), design tokens,
       and what differs (name, placeholders, inner pages not recreated).
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

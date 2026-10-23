@@ -438,6 +438,22 @@ And images have alt text
 And the video modal traps/returns focus appropriately and closes on Escape
 ```
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/pitchside/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/pitchside/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Roboto (300/400/500/700) loaded via Google Fonts in `index.html`
@@ -456,3 +472,4 @@ And the video modal traps/returns focus appropriately and closes on Escape
 - [ ] Placeholder images use deterministic `picsum.photos/seed/pitchside-*` URLs
 - [ ] Lucide-react icons only (no Font Awesome); no jQuery/owl/magnific — React state sliders/modal
 - [ ] 100% test coverage via `scripts/verify-app.sh pitchside`; PR `feat/template-pitchside`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

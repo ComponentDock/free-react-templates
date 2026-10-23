@@ -739,6 +739,22 @@ choice; any equivalent set is acceptable as long as the count stays four).
 - **And** `scripts/verify-app.sh gunwale` is green (typecheck + lint + knip + fallow + vitest
   at 100 % statements/branches/functions/lines + build) and `npm run spec:validate` passes
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/gunwale/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/gunwale/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 Measured evidence for every claim in this spec — an implementer should be able to tick each
@@ -891,3 +907,4 @@ line by reading the code and the tests, and to reproduce every number from
       non-wrapping mobile bar below 375 px where the source wraps at 320 px, Google Fonts
       Poppins instead of the eight self-hosted Roboto files, reduced-motion handling, the
       112 px filler page replaced by real content, and the added footer)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

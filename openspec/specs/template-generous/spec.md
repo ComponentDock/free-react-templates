@@ -333,7 +333,7 @@ and Contact Info columns plus a copyright bar.
 - **AND** the Contact Info column SHALL show the address "203 Fake St.
   Mountain View, San Francisco, California, USA", phone "+2 392 3929 210",
   email "info@yourdomain.com", and hours "Monday — Friday 8:00am - 5:00pm"
-- **AND** the copyright bar SHALL credit ColorLib
+- **AND** the copyright bar SHALL credit Component Dock with a link to https://www.componentdock.com/
 
 ### Requirement: Page composition
 
@@ -364,6 +364,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/generous/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/generous/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -381,7 +397,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Featured section: teal #79ccab overlay .9, "School in Africa Need Renovations. Thanks To All Donors", "We have raised $30,000", Read The Full Story button, photo left
 - [ ] Latest News: bg-light #fafafa, 3 post cards (date "July 26, 2018", titles, excerpt, Read More)
 - [ ] About Us: heading + copy + Join Volunteer / Blog links, 3 mini-cards (Give Meal A Day / Free Education For African Children / Join As A Volunteers) with thumbs
-- [ ] Footer: #404040, About Us (+social icons) / Blog / Contact Info (address, phone, email, hours) columns, ColorLib credit bar
+- [ ] Footer: #404040, About Us (+social icons) / Blog / Contact Info (address, phone, email, hours) columns, Component Dock credit bar
 - [ ] Document title "Generous — Charity Template"
 - [ ] ALL THREE TEMPLATES.md rows marked `[x]` on completion: line 406 (Bootstrap), line 1271 (Charity), line 1300 (Church)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

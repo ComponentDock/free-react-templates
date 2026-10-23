@@ -403,6 +403,22 @@ contentinfo landmarks, plus a scroll-to-top control.
 - **AND** after 300 px of scroll a magenta `#800098` circular scroll-to-top
   control SHALL fade in at the lower right
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/paperie/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/paperie/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Implementation notes (built 2026-10-12)
 
 - **Nav copy:** the design's own labels are reproduced exactly as this spec's header
@@ -490,3 +506,4 @@ contentinfo landmarks, plus a scroll-to-top control.
       included); footer links Component Dock
 - [x] TEMPLATES.md `Invits` item marked `[x]` with the live
       `https://paperie.free.componentdock.com` URL + homepage
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

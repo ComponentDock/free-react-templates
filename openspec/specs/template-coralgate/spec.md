@@ -209,6 +209,22 @@ The footer SHALL link to https://www.componentdock.com/ branded as "Component Do
 - **THEN** a "Component Dock" link should be visible
 - **AND** it should link to https://www.componentdock.com/
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/coralgate/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/coralgate/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Card is centered on viewport with light gray background
@@ -223,3 +239,4 @@ The footer SHALL link to https://www.componentdock.com/ branded as "Component Do
 - [ ] No ColorLib references in app code
 - [ ] Tests: 100% coverage (lines, functions, branches, statements)
 - [ ] Typecheck passes, lint passes, build succeeds
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

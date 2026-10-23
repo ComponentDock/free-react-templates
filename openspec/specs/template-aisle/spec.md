@@ -736,6 +736,22 @@ the source name, its copy verbatim or its typos.
   copy of `02-rsvp/`, `03-regular-page/` or `common-css/`, no `fluidbox`, no
   `countdown` and no map script (the two inner pages load none of the three)
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/aisle/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/aisle/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Prep status (re-checked 2026-10-13)
 
 `aisle` **shipped mid-run**: `feat: Aisle — wedding day template (ColorLib
@@ -864,6 +880,7 @@ the prep stream. The landing-sheet tokens it did use are unaffected.
       those)
 - [ ] TEMPLATES.md line 3107 flips to `[x]` **with** the surge URL only after the
       implementer merges (the prep stream never marks it)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (implementer, 2026-10-13)
 

@@ -157,7 +157,8 @@ translate(-50%,-50%)`, z-index 2): `a.btn.theme_btn` **"Follow us
        > and growth. The more effort you put into improving your skills, …"
        > — Roboto 14px/24px `#777777`, mb 30px); `p` copyright line
        > "Copyright © <year> All rights reserved | This template is made
-       > with ❤ by **Colorlib**" (KEEP the Colorlib credit per CC BY 3.0;
+       > with ❤ by **Colorlib**" (the source credit is REPLACED by the Component
+       > Dock credit, per AGENTS.md rule 5;
        > heart = `fa fa-heart-o` → lucide Heart; the credit link color is
        > `#fa333f`).
      - `div.col-lg-5.col-sm-6` > `aside.f_widget.news_widget`: `h3`
@@ -376,7 +377,7 @@ over a row of six equal square photos that overlaps the footer below.
 ### Requirement: Footer
 
 The system SHALL render a black footer with three widget columns (About
-Me with the Colorlib credit, Newsletter with an email form, Follow Me
+Me with the Component Dock credit, Newsletter with an email form, Follow Me
 with social links) and a bottom copyright bar.
 
 #### Scenario: Footer widgets
@@ -419,6 +420,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/iris/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/iris/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -449,7 +466,7 @@ change the footer's own layout or copy beyond the credit line.
       quote, name + role)
 - [ ] Instagram: centered white button over 6 equal squares, strip
       overlaps black footer (-120px)
-- [ ] Footer: #000 bg, About Me (+ Colorlib credit kept), Newsletter
+- [ ] Footer: #000 bg, About Me (+ Component Dock credit kept), Newsletter
       (email input #1e233b border + red arrow submit), Follow Me (4
       socials #cccccc → #fa333f hover)
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from
@@ -458,3 +475,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] README Templates status + TEMPLATES.md Flash lines (400 AND 2447)
       marked `[x]` after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

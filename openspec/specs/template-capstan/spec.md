@@ -502,6 +502,22 @@ Dock") with a computed current year - a documented delta, since the source has n
 - **THEN** exactly one `https://www.componentdock.com/` link branded "Component Dock" (new tab,
   `rel="noreferrer"`) and a computed year render in the footer
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/capstan/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/capstan/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `openspec/specs/template-capstan/spec.md` present; `npm run spec:validate` green
@@ -561,6 +577,7 @@ Dock") with a computed current year - a documented delta, since the source has n
 - [ ] Footer attribution present; squash-merge the PR; mark the TEMPLATES.md `Website Menu 13`
       item `[x]` with the live `https://capstan.free.componentdock.com` URL + homepage and run
       `npm run readme:status`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Deltas (deliberate, to record in the PR)
 

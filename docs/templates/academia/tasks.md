@@ -116,8 +116,8 @@ from-[#7C4DFF]-ish` — pick a purple ramp close to the screenshot,
     Illustrator, Adobe XD, UI/UX); col 3 Resources (Free Adobe XD
     Tutorials, About, Contact); col 4 About (Address "200, D-block,
     Green lane USA", Phone "+10 367 467 8934", Email); `border-t
-border-white/20` bottom bar with copyright + Colorlib credit (CC BY
-    3.0).
+border-white/20` bottom bar with copyright + the Component Dock credit (the
+    source's Component Dock credit is dropped — rule 5).
 13. `App.tsx` — compose Header + Hero + About + PopularCourses +
     Testimonial + Speciality + Newsletter + LatestBlog + Footer;
     document title "Academia — Education Template".

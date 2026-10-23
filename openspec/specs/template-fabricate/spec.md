@@ -196,6 +196,22 @@ Feature: Footer
 - **AND** column 3 shows "Follow Us" with social icons (Facebook, Twitter, Dribbble, Behance)
 - **AND** the copyright includes a link to Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/fabricate/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/fabricate/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Header top bar: dark bg, social icons, phone, email
@@ -216,3 +232,4 @@ Feature: Footer
 - [ ] All placeholder images use picsum.photos/seed/fabricate-N/
 - [ ] Package name: @free-react-templates/fabricate
 - [ ] CNAME: fabricate.free.componentdock.com
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

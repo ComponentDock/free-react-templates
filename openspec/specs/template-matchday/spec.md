@@ -392,6 +392,22 @@ And form inputs have associated labels
 And decorative rotating/counting regions do not trap focus or announce every tick
 ```
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/matchday/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/matchday/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Roboto (300/400/500/700/900) loaded via Google Fonts in `index.html`
@@ -409,3 +425,4 @@ And decorative rotating/counting regions do not trap focus or announce every tic
 - [ ] Placeholder images use deterministic `picsum.photos/seed/matchday-*` URLs
 - [ ] Lucide-react icons only (no Font Awesome); no jQuery/owl — React state carousels + useEffect countdown/counters
 - [ ] 100% test coverage via `scripts/verify-app.sh matchday`; PR `feat/template-matchday`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

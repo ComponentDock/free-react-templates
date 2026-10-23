@@ -386,6 +386,22 @@ and a document title.
   video, testimonials, blog, features, Instagram, and footer in order
 - **AND** the document title SHALL be "Patisserie — Bakery Template"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/patisserie/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/patisserie/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -407,3 +423,4 @@ and a document title.
 - [ ] Buttons: `#E5BF4A` square (radius 0), `#0A0A0A` uppercase text, 1px `#2A2A2A` border; hover → transparent + gold border/text
 - [ ] Document title "Patisserie — Bakery Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 555 and line 1775
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

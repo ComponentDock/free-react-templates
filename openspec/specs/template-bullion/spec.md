@@ -143,8 +143,8 @@ CSS 4 + TypeScript.
        blurb "Bit coin is an open-source, peer-to-peer, digital
        decentralized cryptocurrency. Powered by blockchain technology…",
        `p.color-ash` copyright "Copyright © <year> All rights reserved |
-       This template is made with ♥ by Colorlib" (credit kept per CC BY
-       3.0); `div.col-sm-4` — `h5.color-primary.mb-20` **MOST POPULAR**
+       This template is made with ♥ by Colorlib" (the source credit is
+       replaced by the Component Dock credit); `div.col-sm-4` — `h5.color-primary.mb-20` **MOST POPULAR**
        - two entries (`a.color-white` bold headline + `h6.mt-10` date,
          separated by `div.brdr-ash-1.opacty-2.mr-30` divider);
          `div.col-sm-4` — second **MOST POPULAR** column (same pattern).
@@ -397,6 +397,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/bullion/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/bullion/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -415,3 +431,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react / inline SVG for brands; Encode Sans Expanded via Google Fonts link
 - [ ] README Templates status + TEMPLATES.md Newsbit lines (275 AND 2206) marked `[x]` after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -147,6 +147,22 @@ buttons provide visual color accents against the neutral gray background.
 - **THEN** the footer should contain a link to "https://www.componentdock.com/"
 - **AND** the link text should reference "Component Dock"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/loginlens/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/loginlens/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Oswald font loaded via Google Fonts (Regular, Medium, Bold)
@@ -165,3 +181,4 @@ buttons provide visual color accents against the neutral gray background.
 - [ ] Semantic HTML (form, inputs, button, labels/placeholders)
 - [ ] Footer links to https://www.componentdock.com/ (branded "Component Dock")
 - [ ] No ColorLib references in app code (only in spec + TEMPLATES.md)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -80,8 +80,7 @@
      list (7 categories + counts, dotted separators, accent hover).
    - `Footer.tsx` — dark 4-col: About Us, Newsletter ("Stay updated with
      our latest trends", input + accent sub-btn), Instagram Feed 3×2
-     grid, Follow Us social icons; copyright bar with heart + Colorlib
-     credit in accent.
+     grid, Follow Us social icons; copyright bar with heart + Component Dock credit in accent.
 4. Compose in `App.tsx` in the exact section order above.
 5. TDD: scenario-style tests mirroring the spec; 100% coverage.
 6. `bash scripts/verify-app.sh glyph` + `npm run spec:validate`.

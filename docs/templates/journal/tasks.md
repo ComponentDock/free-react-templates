@@ -103,8 +103,7 @@
    - `InstagramFeed.tsx` — "Follow us @ Instagram" title + 7-square
      carousel with indigo overlay + instagram icon on hover.
    - `Footer.tsx` — centered nav (Home / About Us / Lifestyle / Travel /
-     Music / Contact), 6 social icons, copyright bar with heart + Colorlib
-     credit (paraphrased).
+     Music / Contact), 6 social icons, copyright bar with heart + Component Dock credit (paraphrased).
    - `NewsletterModal.tsx` — modal (title + email input + Submit
      original-btn), red close button, email validation + success state;
      opened by nav SUBSCRIBE button.

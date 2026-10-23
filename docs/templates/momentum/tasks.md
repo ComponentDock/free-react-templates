@@ -147,7 +147,7 @@ width: 100%; padding: 20px 0` — transparent OVER the hero) — `a.logo`
    bg `#743ad5` white): facebook / twitter / linkedin / dribbble (inline
    SVG — lucide removed brand glyphs; dribbble has no lucide equivalent);
    copyright line: "Copyright © <year> All rights reserved | This template
-   is made with ♥ by Colorlib" (credit kept per CC BY 3.0).
+   is made with ♥ by Colorlib" (replaced by the Component Dock credit).
 
 ## Implementation tasks (for the implementer stream)
 

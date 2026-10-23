@@ -267,4 +267,4 @@ cta 58px 68px.
   (560×400), blog thumbs cargomate-5..7 (400×300), blog overlay bg
   cargomate-8 (800×600), avatars cargomate-9..10 (70×70).
 - "Lagoon" brand → "Cargomate" everywhere (logo, footer credit keeps the
-  Colorlib attribution line).
+  Component Dock credit line).

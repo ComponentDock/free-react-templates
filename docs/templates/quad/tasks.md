@@ -125,8 +125,8 @@ sans-serif`. Add Roboto + Rubik Google Fonts `<link>` to `index.html`.
     Newsletter col (blurb "You can trust us. we only send promo
     offers," + email input + "subscribe" button); `border-t
 border-white/20` bottom bar: "Copyright ©2024 All rights reserved
-    | This template is made with ❤ by Colorlib" (keep credit, CC BY
-    3.0) + social icons.
+    | This template is made with ❤ by Colorlib" (replaced by the Component Dock
+    credit) + social icons.
 13. `App.tsx` — compose Header + Hero + Features + PopularCourses +
     Registration + Trainers + Events + Testimonials + Footer; document
     title "Quad — Education Template".

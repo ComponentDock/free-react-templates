@@ -201,7 +201,8 @@ align-items-center`:
        **Address** — "200, D-block, Green lane USA" · **Phone** —
        "+10 367 467 8934" · **Email** — "edumark@contact.com".
      - `div.footer_border` — thin divider bar; bottom copyright line
-       (credit "made with ♥ by Colorlib" kept per CC BY 3.0).
+       (the source's "made with ♥ by Colorlib" credit is replaced by the
+       Component Dock credit — AGENTS.md rule 5).
 
 - **Design tokens extracted from `css/style.css`:**
   - Primary teal **`#04D2C8`** — `.boxed_btn` bg (hero CTA, Enroll a
@@ -474,6 +475,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/academia/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/academia/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -490,7 +507,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Speciality: 4 cards with circular icon badges (teal/purple glyphs), heading + paragraph
 - [ ] Newsletter: solid #04D2C8 bg, white heading/description, 60px white input + peach Sign Up button, email validation + success state
 - [ ] Blog: 3 cards with image, date/category meta, bold title, paragraph
-- [ ] Footer: dark bg, white wordmark + blurb + socials, Courses/Resources/About columns (#BABABA links hover #FDAE5C), bottom copyright bar with Colorlib credit
+- [ ] Footer: dark bg, white wordmark + blurb + socials, Courses/Resources/About columns (#BABABA links hover #FDAE5C), bottom copyright bar with Component Dock credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react; Poppins + Crimson Text via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Edumark lines (382 AND 1632 AND 2042) marked `[x]` after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

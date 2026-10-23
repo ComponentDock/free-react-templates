@@ -478,6 +478,22 @@ row list (all from the single `@media (max-width:991.98px)` block).
   `rel="noreferrer"`) and a computed current year render in the footer — a documented delta, since
   the source has no footer
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/windlass/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/windlass/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `openspec/specs/template-windlass/spec.md` present; `npm run spec:validate` green
@@ -534,6 +550,7 @@ row list (all from the single `@media (max-width:991.98px)` block).
 - [ ] Footer attribution present; squash-merge the PR; mark the TEMPLATES.md `Website Menu 14` item
       `[x]` with the live `https://windlass.free.componentdock.com` URL + homepage and run
       `npm run readme:status`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Deltas (deliberate, to record in the PR)
 

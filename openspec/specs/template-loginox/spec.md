@@ -195,6 +195,22 @@ Every template footer MUST link to `https://www.componentdock.com/` branded as "
 - **WHEN** the page loads
 - **THEN** a footer link to "https://www.componentdock.com/" with text "More templates at Component Dock" is visible
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/loginox/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/loginox/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Lato font loaded (300, 400, 700)
@@ -210,3 +226,4 @@ Every template footer MUST link to `https://www.componentdock.com/` branded as "
 - [ ] No ColorLib references in app code
 - [ ] Footer links to componentdock.com
 - [ ] CNAME: loginox.free.componentdock.com
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

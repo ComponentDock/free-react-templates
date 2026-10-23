@@ -353,6 +353,22 @@ A single Component Dock attribution, per the monorepo rule.
   "Component Dock" — never ColorLib, "Colorlib", the source demo brand, or the
   source slug
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/incoming/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/incoming/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Layout 1:1 with the reference: one `min-height:100vh` centred screen
@@ -401,3 +417,4 @@ A single Component Dock attribution, per the monorepo rule.
       `incoming.free.componentdock.com`, lockfile registers the workspace
 - [ ] `vite.config.ts` keeps `injectUiSource()`; tests at 100% coverage;
       `scripts/verify-app.sh incoming` passes
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

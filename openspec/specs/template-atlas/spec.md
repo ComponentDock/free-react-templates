@@ -359,7 +359,7 @@ and a subscribe form.
   padding
 - **AND** the first column SHALL show the white logo and the copyright line
   "Copyright © <year> All rights reserved | This template is made with
-  <heart> by Colorlib" (original attribution)
+  <heart> by Component Dock" (paraphrased)
 - **AND** the second column SHALL show a flex menu of six links (Home,
   Fashion, Lifestyle, Contact, Gadgets, Video) at 33.3% width each
 - **AND** the third column SHALL show a white "Subscribe" heading and a form
@@ -396,6 +396,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/atlas/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/atlas/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -407,3 +423,4 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Two tab groups ("Don't Miss" + "What's Trending") implemented with client-side state; panes share one post dataset
 - [ ] Hero slider + hero-post strip + trending slider implemented as state-based carousels (fake timers in tests where needed)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

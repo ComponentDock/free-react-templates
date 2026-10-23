@@ -369,6 +369,22 @@ And images have alt text
 And countdown timers do not trap focus or announce every tick (aria-hidden on decorative countdown is acceptable)
 ```
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/striker/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/striker/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Montserrat (300/700/900) loaded via Google Fonts in `index.html`
@@ -384,3 +400,4 @@ And countdown timers do not trap focus or announce every tick (aria-hidden on de
 - [ ] Placeholder images use deterministic `picsum.photos/seed/striker-*` URLs
 - [ ] Lucide-react icons only (no icon fonts); no jQuery/owl — React countdown + native/state carousel
 - [ ] 100% test coverage via `scripts/verify-app.sh striker`; PR `feat/template-striker`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

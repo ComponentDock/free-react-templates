@@ -212,8 +212,8 @@ tN.jpg` (round-ish avatar) + `div.col-lg-8` > `div.testi_text`:
        Email Address" + `button.click-btn` **subscribe**).
      - `div.row.footer-bottom.d-flex.justify-content-between`:
        copyright line "Copyright ©2024 All rights reserved | This
-       template is made with ❤ by Colorlib" (keep Colorlib credit per
-       CC BY 3.0) + `div.footer-social` social icons.
+       template is made with ❤ by Colorlib" (the source credit is replaced by the Component Dock credit) +
+       `div.footer-social` social icons.
 
 - **Design tokens extracted from `css/style.css`:**
   - Primary navy **`#002347`** — headings (`h1–h6` color), nav links,
@@ -516,6 +516,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/quad/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/quad/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -532,7 +548,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Trainers: 4 cards (portrait, name, "Sr. web designer", blurb, 4 social icons)
 - [ ] Events: navy bg (130px 0 100px), 2 cards with image + right overlay panel (rgba(0,35,71,.5), 275px) — date/time/location/desc + square (rounded-0) gold "View Details"
 - [ ] Testimonials: "Client say about me" carousel, cards padding 50px 55px with soft shadow (0 15px 30px rgba(221,221,221,.3)), avatar + name + quote
-- [ ] Footer: navy bg, Top Products / Quick Links / Features / Resources columns + Newsletter (email + subscribe) + bottom copyright bar with Colorlib credit
+- [ ] Footer: navy bg, Top Products / Quick Links / Features / Resources columns + Newsletter (email + subscribe) + bottom copyright bar with Component Dock credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons from lucide-react + inline SVG socials; Roboto + Rubik via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Edustage lines (383 AND 1635 AND 2043) marked `[x]` after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

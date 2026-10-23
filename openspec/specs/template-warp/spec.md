@@ -347,6 +347,22 @@ with a main landmark and a document title.
 - **AND** the document title SHALL be "Warp — Teleport Toggle Switch UI
   Template"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/warp/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/warp/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -382,3 +398,4 @@ with a main landmark and a document title.
 - [ ] `TEMPLATES.md` line 752 updated by the implementer (`[~]` → `[x]` +
       surge URL) — NOT by the prep stream
 - [ ] README status table regenerated after deploy (`npm run readme:status`)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

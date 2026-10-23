@@ -370,6 +370,22 @@ a main landmark and a contentinfo landmark.
   sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Trousseau — Wedding Template"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/trousseau/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/trousseau/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [x] `npm run typecheck` passes for `apps/trousseau`
@@ -410,6 +426,7 @@ a main landmark and a contentinfo landmark.
       app (comments included)
 - [x] TEMPLATES.md `Honey` item marked `[x]` with the live
       `https://trousseau.free.componentdock.com` URL + homepage
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Implementation notes (filled in while building)
 

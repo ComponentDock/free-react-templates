@@ -312,7 +312,7 @@ paragraph, a three-field contact form, and contact details.
 ### Requirement: Footer
 
 The system SHALL render a dark navy footer with a centered top block (logo,
-email, address) and a bottom row with a copyright line crediting ColorLib and
+email, address) and a bottom row with a copyright line crediting Component Dock and
 "Stay Connected" social icons.
 
 #### Scenario: Footer content
@@ -364,6 +364,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/resume/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/resume/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -380,6 +396,7 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] CTA band: photo bg, "Dont worry for contact i`m available" (#ec5b53), "Contact Me Now" button
 - [ ] Testimonials: heading + 3-slide slider (photo, name, role, quote)
 - [ ] Contact: photo bg, heading, Full Name/Email Address/Your Message form + red "Send Message", contact details (email + address)
-- [ ] Footer: #080827 bg, centered logo/email/address, ColorLib credit + "Stay Connected" social icons
+- [ ] Footer: #080827 bg, centered logo/email/address, Component Dock credit + "Stay Connected" social icons
 - [ ] Scroll-to-top circular button appears on scroll and scrolls back to top
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

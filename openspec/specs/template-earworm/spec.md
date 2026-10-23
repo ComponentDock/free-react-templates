@@ -116,6 +116,22 @@ So that I can browse episodes, discover guests, and subscribe to the newsletter
 - **AND** I see App Store and Google Play badge images
 - **AND** I see a copyright line with Component Dock link
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/earworm/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/earworm/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] Header: sticky navbar, logo left, nav links centered, search + social icons right, hamburger on mobile
@@ -133,3 +149,4 @@ So that I can browse episodes, discover guests, and subscribe to the newsletter
 - [ ] Brand color: `#f55656` in Tailwind theme
 - [ ] Dark overlay: `rgba(0,0,0,0.5)` on hero slides and newsletter
 - [ ] Section padding: 80px top/bottom
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

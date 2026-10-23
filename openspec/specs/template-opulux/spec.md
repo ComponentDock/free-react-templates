@@ -210,6 +210,22 @@ The template SHALL be fully responsive.
 - **WHEN** the viewport is less than 768px wide
 - **THEN** the navbar shows hamburger menu, booking form stacks vertically, room cards display single column, and footer columns stack vertically
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/opulux/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/opulux/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Navbar renders with brand name and navigation links
@@ -230,3 +246,4 @@ The template SHALL be fully responsive.
 - [ ] Icons from lucide-react
 - [ ] 100% test coverage (lines, functions, branches, statements)
 - [ ] Build passes without errors
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -344,6 +344,22 @@ https://www.componentdock.com/ (branded "Component Dock").
 - **WHEN** the user scrolls to the bottom of the page
 - **THEN** a footer with a link to Component Dock is visible
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/joinflow/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/joinflow/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification Checklist
 
 - [ ] Page renders with `#f8fafb` background
@@ -368,3 +384,4 @@ https://www.componentdock.com/ (branded "Component Dock").
 - [ ] Valid submission shows success state
 - [ ] Component Dock footer link present
 - [ ] Responsive: stacks vertically on mobile
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

@@ -89,7 +89,7 @@ reserved | This template is made with ♥ by Colorlib".
    with play icons, ad placeholder 400×300.
 5. **Footer** — `#191919`; white logo, short text, newsletter form
    (email input + full-width "SUBSCRIBE" outline button, validation +
-   success state), bottom bar: copyright + paraphrased ColorLib credit.
+   success state), bottom bar: copyright + paraphrased Component Dock credit.
 6. **Composition** — skip link, `<main>`, banner/contentinfo landmarks,
    document title "Lantern — Blog Template".
 

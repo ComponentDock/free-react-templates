@@ -68,8 +68,8 @@ z-index:1001; background: rgba(0,0,0,0.04)`; mobile: off-canvas
        underline `scaleX(0)→1`; active → black).
      - `div.colorlib-footer` (absolute, bottom 40px, 14px,
        `rgba(0,0,0,.6)`): copyright line "Copyright ©2024 All rights
-       reserved | This template is made with ❤ by Colorlib" (keep
-       Colorlib credit per CC BY 3.0) + social icon links (icon-facebook,
+       reserved | This template is made with ❤ by Colorlib" (the source credit is
+       replaced by the Component Dock credit) + social icon links (icon-facebook,
        icon-twitter, icon-instagram, icon-linkedin; hover → `#f05d23`).
   2. Main `div#colorlib-main` (margin-left 25% / 270px on mobile):
      - Hero `div.hero-wrap.js-fullheight` (**height 100%**, position
@@ -216,7 +216,7 @@ icon links.
 - **AND** the navigation menu SHALL list Home (active), Photography,
   Travel, Fashion, About and Contact in Montserrat 700
 - **AND** the aside footer SHALL show the copyright line with the
-  Colorlib credit and four social icon links (Facebook, Twitter,
+  Component Dock credit and four social icon links (Facebook, Twitter,
   Instagram, LinkedIn)
 
 #### Scenario: Sidebar navigation interaction
@@ -324,6 +324,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/jotter/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/jotter/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -336,7 +352,7 @@ change the footer's own layout or copy beyond the credit line.
       #b3b3b3, footer navy #132238; Work Sans + Poppins + Montserrat fonts)
 - [ ] Sidebar: fixed 25% left, "jotter" wordmark + grey dot, 6-link
       Montserrat 700 nav (Home active) → black + underline hover,
-      aside footer with copyright/Colorlib credit + 4 social icons,
+      aside footer with copyright/Component Dock credit + 4 social icons,
       mobile off-canvas + hamburger
 - [ ] Hero: full-height washed photo bg + white overlay ~70%, circular
       portrait, "Hello I'm" 24px #bfbfbf, 900-weight name, intro
@@ -348,10 +364,11 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Footer: #132238 bg, Category / Archives / Have a Questions?
       columns (white 17px headings, muted links → white hover,
       categories with bottom borders) + bottom copyright bar with
-      Colorlib credit
+      Component Dock credit
 - [ ] Placeholder images are seeded picsum (no copied assets); icons
       from lucide-react + inline SVG socials; Work Sans + Poppins +
       Montserrat via Google Fonts link; logo as text wordmark
 - [ ] README Templates status + TEMPLATES.md Elen lines (384 AND 2390
       AND 2713) marked `[x]` after merge
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

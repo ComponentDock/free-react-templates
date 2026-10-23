@@ -340,6 +340,22 @@ The system SHALL use semantic HTML and accessible patterns.
 - **AND** images SHALL have descriptive alt text
 - **AND** the form input SHALL have an associated label
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/givehope/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/givehope/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run verify:app -- givehope` green: typecheck → lint → vitest
@@ -353,3 +369,4 @@ The system SHALL use semantic HTML and accessible patterns.
       hover, newsletter form is functional (mock submit).
 - [ ] Responsive check at 576px and 768px (stacked layouts, no overflow).
 - [ ] Footer links to Component Dock, no ColorLib references in app code.
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

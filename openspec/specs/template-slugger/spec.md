@@ -421,7 +421,7 @@ heading, text, an email input, and a green submit button.
 ### Requirement: Footer
 
 The system SHALL render a black footer with five link widgets, contact
-details, and a copyright row crediting ColorLib.
+details, and a copyright row crediting Component Dock.
 
 #### Scenario: Footer content
 
@@ -465,6 +465,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/slugger/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/slugger/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -487,7 +503,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] News: "Recent News" + 4 cards with date block "29 / May / 2019", title, snippet, "More Details"
 - [ ] Counters: 4 animated stats (Game Played, Coaches, Trophies, Members)
 - [ ] Subscribe: photo bg, "Subcribe to our upcoming match", email input + green submit pill
-- [ ] Footer: black bg, brand + Services/About Us/Company link widgets + "Have a Questions?" contact info + ColorLib credit row
+- [ ] Footer: black bg, brand + Services/About Us/Company link widgets + "Have a Questions?" contact info + Component Dock credit row
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Shape re-verification (live sheet, 2026-10-22)
 

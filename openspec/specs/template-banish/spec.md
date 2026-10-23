@@ -489,6 +489,22 @@ The system SHALL include the required attribution footer.
 - **THEN** the footer SHALL link to https://www.componentdock.com/ branded
   as "Component Dock"
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/banish/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/banish/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run verify:app -- banish` green: typecheck → lint → vitest
@@ -522,3 +538,4 @@ install` at root.
       placeholders, brand names as text instead of logo images, plain DOB
       input instead of the datepicker, accessible semantics + focus rings,
       footer, no ColorLib strings).
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

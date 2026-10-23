@@ -368,6 +368,22 @@ column, social icons, and a copyright bar.
 - **AND** a copyright bar SHALL show the current year, "All rights
   reserved", and a credit line for the template author
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/keyhold/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/keyhold/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes
@@ -409,3 +425,4 @@ column, social icons, and a copyright bar.
 - [ ] After merge: TEMPLATES.md Findstate (lines 395, 1014, 2589) `[~]` →
       `[x]` + Surge URL (`keyhold.free.componentdock.com`) +
       homepage + `npm run readme:status`
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

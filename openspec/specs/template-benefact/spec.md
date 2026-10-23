@@ -332,7 +332,7 @@ widgets, a newsletter subscribe form, social icons, and a copyright bar.
 - **AND** a Subscribe to Newsletter form (email input + green Subscribe
   button) and Follow Us social icons (Facebook, Twitter, Instagram,
   LinkedIn) SHALL be shown
-- **AND** a copyright bar SHALL credit ColorLib
+- **AND** a copyright bar SHALL credit Component Dock with a link to https://www.componentdock.com/
 
 #### Scenario: Subscribe validation
 
@@ -369,6 +369,22 @@ change the footer's own layout or copy beyond the credit line.
   `https://www.componentdock.com/`
 - **AND** the anchor's text SHALL name Component Dock
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/benefact/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/benefact/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `npm run spec:validate` passes for this spec
@@ -386,7 +402,8 @@ change the footer's own layout or copy beyond the credit line.
 - [ ] Latest Event: 2 cards, green date badge (22 / Oct 2019), "9:30 AM — 11:30 AM · Ghana Africa" meta, title link
 - [ ] Donate Now: green overlay photo section, white card form (Name, Email, Amount in dollar), validation errors
 - [ ] CTA strip: bg-light #f6f5f5, Mansalva heading, right green Donate Now button
-- [ ] Footer: #c9ccd4, About Us + Features widgets, Subscribe form with green button, Follow Us social icons, ColorLib credit
+- [ ] Footer: #c9ccd4, About Us + Features widgets, Subscribe form with green button, Follow Us social icons, Component Dock credit
 - [ ] Document title "Benefact — Charity Template"
 - [ ] BOTH TEMPLATES.md rows marked `[x]` on completion: line 404 (Bootstrap) and line 1269 (Charity)
 - [ ] Footer credits Component Dock with a link to https://www.componentdock.com/
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

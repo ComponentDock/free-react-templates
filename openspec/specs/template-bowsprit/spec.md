@@ -593,6 +593,22 @@ for the caret) instead of the inline SVG data URI and the CSS-border caret.
   the current row is not distinguished by colour alone, and `Escape` closes the
   flyout and the mobile list
 
+### Requirement: No source-site references in the app
+
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/bowsprit/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name — code, comments, CSS, markup, metadata and filenames
+included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
+the source paints its own credit line, the recreation SHALL credit Component
+Dock (`https://www.componentdock.com/`) instead.
+
+#### Scenario: Clean provenance
+
+- **GIVEN** the template is implemented from this spec
+- **WHEN** every non-test file under `apps/bowsprit/` is inspected
+- **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
+- **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
 ## Verification checklist
 
 - [ ] `apps/bowsprit` recreates ColorLib **"Website Menu V08"** (source slug
@@ -702,3 +718,4 @@ for the caret) instead of the inline SVG data URI and the CSS-border caret.
       a real hover+click keyboard disclosure, a hover/focus colour added for
       inactive labels since the source's `!important` rules leave none, the dead
       `body:before` veil dropped, reduced-motion handling, footer attribution)
+- [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
