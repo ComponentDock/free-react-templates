@@ -30,6 +30,17 @@ export function App() {
       >
         <BlogList />
       </main>
+      <footer className="ml-16 border-t border-mist/40 bg-white py-6 text-center md:ml-[100px]">
+        <p className="font-display text-[13px] uppercase tracking-wide text-body">
+          More templates at{' '}
+          <a
+            href="https://www.componentdock.com/"
+            className="font-bold text-brand underline-offset-4 hover:underline"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
       <FeaturedImage />
     </div>
   )

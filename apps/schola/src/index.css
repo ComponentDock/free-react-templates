@@ -5,10 +5,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Schola brand colors — sampled from the ColorLib "Academix" live demo
-     (academix-colorlib.pages.dev, Astro build): primary teal
-     oklch(55% .14 180) ≈ #008574, accent orange oklch(65% .18 40) ≈
-     #e65f2a, gray neutrals, light gray section bands (gray-100/50). */
+  /* Schola brand colors — measured from the reference stylesheet
+     (css/style.css, Astro build): primary teal oklch(55% .14 180) ≈
+     #008574, accent orange oklch(65% .18 40) ≈ #e65f2a, gray neutrals,
+     light gray section bands (gray-100/50). */
   --color-primary-50: #e6f7f4;
   --color-primary-100: #c8ede7;
   --color-primary-200: #97dccf;

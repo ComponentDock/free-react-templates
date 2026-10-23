@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Shanti brand palette — recreated from the ColorLib "Yogalax" template.
+  /* Shanti brand palette — measured from the reference design.
      Brand mauve/dusty rose #d291bc (links, buttons, active nav, service
      icons, checkmarks, blog day, price sup, quote badge, gallery hover
      icon, gradient overlays, footer background), light mauve circle

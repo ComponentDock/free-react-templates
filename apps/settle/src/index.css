@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Settle brand palette — recreated from the ColorLib "Aranoz" design
-     (live preview: https://preview.colorlib.com/theme/aranoz/). */
+  /* Settle brand palette — measured from the reference design
+     (css/style.css). */
   --color-brand: #ff3368; /* coral-pink: primary buttons, hovers */
   --color-hero: #ecfdff; /* pale cyan hero background */
   --color-paper: #f8fbff; /* feature card background */

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Scarlet brand red — inspired by the original ColorLib "Error 404
-     V16" error page (photographic background dimmed by a red overlay). */
+  /* Scarlet brand red — inspired by the reference 404 error page
+     (photographic background dimmed by a red overlay). */
   --color-brand: #ff0024;
 
   --color-primary-50: #fef2f2;
