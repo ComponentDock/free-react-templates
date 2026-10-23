@@ -147,6 +147,9 @@ Palette in order of use: `#f271ab` ×13, `#ffffff` ×9, `#222222` ×7, `#2f2f2f`
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+- This folder is prep history, not the fidelity reference: the design ships as
+  `apps/redawn`, and `openspec/specs/template-redawn/spec.md` holds the canonical
+  record. Do not scaffold `apps/pixelist`.
 
 ## Requirements
 

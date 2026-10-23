@@ -83,6 +83,9 @@ Palette in order of use: `#6b75ff` ×91, `#ffffff` ×53, `#59b7ff` ×42, `#6b76f
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+- This folder is prep history, not the fidelity reference: the design ships as
+  `apps/festpoint`, and `openspec/specs/template-festpoint/spec.md` holds the canonical
+  record. Do not scaffold `apps/rostrum`.
 
 ## Requirements
 

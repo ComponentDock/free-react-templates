@@ -246,6 +246,9 @@ Palette in order of use: `#ffffff` ×39, `#f17445` ×24, `#000000` ×22, `#f2f3f
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+- This folder is prep history, not the fidelity reference: the design ships as
+  `apps/sculpt`, and `openspec/specs/template-sculpt/spec.md` holds the canonical
+  record. Do not scaffold `apps/grind`.
 
 ## Requirements
 

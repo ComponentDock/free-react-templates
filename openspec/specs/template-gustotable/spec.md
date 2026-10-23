@@ -186,6 +186,9 @@ Palette in order of use: `#ffffff` ×86, `#fe5f41` ×45, `#f9f9ff` ×23, `#1f2b7
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+- This folder is prep history, not the fidelity reference: the design ships as
+  `apps/bonquet`, and `openspec/specs/template-bonquet/spec.md` holds the canonical
+  record. Do not scaffold `apps/gustotable`.
 
 ## Requirements
 
