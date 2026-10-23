@@ -15,27 +15,40 @@ export function App() {
   }, [])
 
   return (
-    <main>
-      {/* Single-section demo: full-viewport section with the full-bleed photo
-          page background (NO scrim, NO card — the translucent-white fields
-          provide their own contrast), vertically centering the headline and
-          the booking form; NO navbar, NO footer (source is a bare booking
-          form section). */}
-      <section
-        id="booking"
-        className="flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
-        style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
-      >
-        {/* Bootstrap container width (the form itself has no max-width). */}
-        <div className="w-full max-w-[1140px]">
-          {/* .booking-cta: centered serif headline — Cantata One, white,
-              52px, weight 700 (synthetic), 30px bottom margin. */}
-          <h1 className="mb-[30px] text-center font-serif text-[52px] font-bold text-white">
-            Make Your Reservation
-          </h1>
-          <ReservationForm />
-        </div>
-      </section>
-    </main>
+    <>
+      <main>
+        {/* Single-section demo: full-viewport section with the full-bleed photo
+            page background (NO scrim, NO card — the translucent-white fields
+            provide their own contrast), vertically centering the headline and
+            the booking form; NO navbar (the reference is a bare booking form
+            section, plus the Component Dock credit strip below). */}
+        <section
+          id="booking"
+          className="flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
+          style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
+        >
+          {/* Bootstrap container width (the form itself has no max-width). */}
+          <div className="w-full max-w-[1140px]">
+            {/* .booking-cta: centered serif headline — Cantata One, white,
+                52px, weight 700 (synthetic), 30px bottom margin. */}
+            <h1 className="mb-[30px] text-center font-serif text-[52px] font-bold text-white">
+              Make Your Reservation
+            </h1>
+            <ReservationForm />
+          </div>
+        </section>
+      </main>
+      <footer className="border-t border-ink/10 bg-white py-5 text-center text-[13px] text-ink">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-semibold text-brand underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }

@@ -4,11 +4,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand gradient start: warm yellow from the original ColorLib CSS
+  /* Brand gradient start: warm yellow from the reference design
      (linear-gradient 136deg, rgb(254,225,64) 0%). */
   --color-gradient-start: #fee140;
 
-  /* Brand gradient end: pink from the original ColorLib CSS
+  /* Brand gradient end: pink from the reference design
      (linear-gradient 136deg, ..., rgb(250,112,154) 100%). */
   --color-gradient-end: #fa709a;
 

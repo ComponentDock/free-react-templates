@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Riviere brand palette — recreated from ColorLib eStore design:
+  /* Riviere brand palette — measured from the reference design:
      primary red #ff003c, heading navy #0b1c39, body gray #506172,
      footer #f7f7f7, accent blue #2577fd. */
   --color-brand: #ff003c;

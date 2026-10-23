@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Reprise brand palette — recreated from the ColorLib "Reopen" design
+  /* Reprise brand palette — measured from the reference design
      (brand pink/rose accent #f277ae). */
   --color-rose-accent: #f277ae;
   --color-warm-gray: #ececec;

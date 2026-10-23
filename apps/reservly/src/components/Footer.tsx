@@ -5,6 +5,12 @@ export function Footer() {
         <p className="text-sm font-bold uppercase tracking-tight">Reservly</p>
         <p className="text-xs text-white/60">© 2026 Reservly. All rights reserved.</p>
       </div>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
+      </div>
     </footer>
   )
 }
