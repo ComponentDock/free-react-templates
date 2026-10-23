@@ -9,6 +9,27 @@ Rivet is a construction company landing page template featuring a hero banner,
 services grid, works gallery, company news, testimonials, and a 4-column footer.
 The design uses Open Sans typography with a steel blue (#4a90d9) brand palette.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/construct/ (HTTP 200, 39,919 B, sha256 `d7d8d6e19b74…`, fetched 2026-10-23) and its design stylesheet(s) `inline-style-0`, `style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f4b214` | 14 declarations — `.btn.btn-outline-primary`, `header .navbar .nav-link.active` |
+| Other chromatic values | `#f6c245` (2), `#5ac8d8` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 20 declarations — `.btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:a`, `.btn.btn-primary` |
+| Ink / dark surface | `#000000` | 6 declarations — `.btn.btn-outline-white:hover, .btn.btn-outline-white:focus`, `h1, h2, h3, h5` |
+| Typeface | `Open Sans` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px`, `16px` | `50%` (`.owl-carousel .owl-dots .owl-dot`); `4px` (`.media-feature`); `16px` (`#loader`) |
+
+Palette in order of use: `#ffffff` ×20, `#f4b214` ×14, `#000000` ×6, `#868e96` ×3, `#f6c245` ×2, `#e6e6e6` ×2, `#ced4da` ×2, `#495057` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

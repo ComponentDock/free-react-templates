@@ -9,6 +9,28 @@ A Business / Corporate template with hero banner, about, services, parallax bann
 - **ColorLib page:** https://colorlib.com/wp/template/bizpro/
 - **New name:** `bizplanner` (apps/bizplanner, @free-react-templates/bizplanner)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/bizpro/ (HTTP 200, 52,191 B, sha256 `d1f190f64752…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007ab9` | 6 declarations — `#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(4) a, `, `#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(4) a:h` |
+| Other chromatic values | `#70c2e9` (6), `#d8545d` (6), `#677fb5` (6) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 36 declarations — `.scroll-top`, `.theme-main-menu .navbar-nav>li>a` |
+| Ink / dark surface | `#000000` | 1 declarations — `.rev_slider_wrapper` |
+| Typeface | `Raleway` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `5px`, `15px` | `50%` (`#blog-section .single-news-item .img a`); `5px` (`.sidebar-tags ul li a`); `15px` (`.blog-details-post-wrapper .post-comment form button`) |
+| Gradients | 2 declarations | `.scroll-top:after` |
+
+Palette in order of use: `#ffffff` ×36, `#292929` ×12, `#677fb5` ×6, `#70c2e9` ×6, `#d8545d` ×6, `#007ab9` ×6, `#6f6f6f` ×4, `#d73e4d` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders and scrolls to sections

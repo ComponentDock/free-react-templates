@@ -6,6 +6,28 @@ A Job Board & Career Portal template with hero search, popular categories, recen
 
 A job board and career portal template with a search hero, category browsing, recent/featured job listings, testimonials, and a call-to-action banner. Brand color: `#28a745` (green). Font: 'Work Sans', sans-serif.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/jobfinder/ (HTTP 200, 43,119 B, sha256 `cfa3d41d0ff5…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `mediaelementplayer.min.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#21f8f8` | 1 declarations — `.mejs__captions-selected,.mejs__chapters-selected` |
+| Other chromatic values | `#23923d` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 24 declarations — `.site-footer a:hover`, `.site-navbar-wrap` |
+| Ink / dark surface | `#000000` | 14 declarations — `.text-black`, `::selection` |
+| Typeface | `Roboto Mono` (1 rule — `body`)<br>`Work Sans` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px`, `2px`, `30px` | `50%` (`.block-15 .owl-dots .owl-dot > span, .block-16 .owl-dots .owl-dot > span`); `4px` (`.feature-item`); `2px` (`.mejs__horizontal-volume-current,.mejs__horizontal-volume-total`); `30px` (`.btn.pill`) |
+| Gradients | 4 declarations | `.mejs__controls:not([style*="display: none"])`, `.mejs__time-buffering` |
+
+Palette in order of use: `#ffffff` ×24, `#000000` ×14, `#28a745` ×11, `#cccccc` ×4, `#eeeeee` ×2, `#0d0d0d` ×1, `#343a40` ×1, `#25262a` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

@@ -24,6 +24,26 @@ a free quote form, customer testimonials, a "why choose us" section, a team
 section, and a multi-column footer. The template uses Raleway font and a teal
 #12cad6 brand color.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/dentures/ (HTTP 200, 26,865 B, sha256 `a27833a36458…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#12cad6` | 11 declarations — `.btn.btn-outline-white:hover`, `.btn.btn-primary:hover` |
+| Surface | `#ffffff` | 26 declarations — `.btn.btn-white`, `.btn.btn-white:hover` |
+| Ink / dark surface | `#000000` | 2 declarations — `.text-black`, `::selection` |
+| Typeface | `Raleway` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px` | `50%` (`.player img`); `4px` (`.block-25 ul li a .image img`) |
+
+Palette in order of use: `#ffffff` ×26, `#12cad6` ×11, `#25262a` ×3, `#000000` ×2, `#999999` ×2, `#f4f5f9` ×2, `#f8f9fa` ×2, `#4d4d4d` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays brand and navigation

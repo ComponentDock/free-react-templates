@@ -17,6 +17,27 @@ different name. It provides a three-step flow (Personal Info, Address, Payment) 
 gradient background, green accent colors, and Roboto/Montserrat typography. Users fill in
 personal details, enter their address, and provide payment information before submitting.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-wizard-28.zip (HTTP 200, 2,724,594 B, sha256 `4a43586bec26…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#36c240` | 3 declarations — `.btn-next, .btn-back, .btn-last`, `.cl-progress-bar` |
+| Other chromatic values | `#22ae2c` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 6 declarations — `.btn-next, .btn-back, .btn-last`, `.cl-progress-bar` |
+| Ink / dark surface | `#333333` | 2 declarations — `.input--style-1`, `.input-icon` |
+| Typeface | `Roboto` (2 rules — `.input--style-1`)<br>`Montserrat` (1 rule — `.card-1 .card-heading`) | `font-family` declarations in the design sheet |
+| Radii | `17.5px`, `22.5px`, `3px`, `5px` | `17.5px` (`.cl-progress`); `22.5px` (`.btn-next, .btn-back, .btn-last`); `3px` (`.input--style-1`); `5px` (`.card-1`) |
+
+Palette in order of use: `#ffffff` ×6, `#999999` ×6, `#36c240` ×3, `#666666` ×2, `#333333` ×2, `#22ae2c` ×1, `#f5f5f5` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Gradient background

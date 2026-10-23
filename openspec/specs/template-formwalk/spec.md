@@ -8,6 +8,27 @@
 - **Category**: Forms / Multi-step Form Wizard
 - **Description**: A centered white card wizard on a full-page background image. Blue header bar with "FORM WIZARD" heading. Three circular step indicators connected by gray lines. Step 1: First Name + Last Name. Step 2: Email + Password. Step 3: Subject dropdown + Comment. Pill-shaped blue Next/Back buttons. Montserrat font, clean minimal aesthetic.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-wizard-30.zip (HTTP 200, 400,055 B, sha256 `6f7e1b10b4da…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#3760e5` | 3 declarations — `.actions ul li`, `.form-register .steps li.current a, .form-register .steps li.current a:active, .form-regis` |
+| Other chromatic values | `#2b4ab3` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 4 declarations — `.form-register .steps li .title`, `.wizard-form .wizard-header h3` |
+| Ink / dark surface | `#333333` | 2 declarations — `.inner .cl-form-row .form-holder input, .inner .cl-form-row .form-holder select`, `.inner .cl-form-row .form-holder label` |
+| Typeface | `Montserrat` (4 rules — `.form-register .steps li .title`) | `font-family` declarations in the design sheet |
+| Radii | `8px`, `50%`, `5px`, `25px` | `8px` (`.wizard-v10-content`); `50%` (`.form-register .steps li a`); `5px` (`.inner .cl-form-row .form-holder input, .inner .cl-form-row .form-holder select`); `25px` (`.actions ul li`) |
+
+Palette in order of use: `#ffffff` ×4, `#3760e5` ×3, `#333333` ×2, `#666666` ×2, `#cccccc` ×1, `#e5e5e5` ×1, `#2b4ab3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full-page background with centered wizard card

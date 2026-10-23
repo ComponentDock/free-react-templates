@@ -113,6 +113,27 @@ SEPARATE templates with their own slugs — do NOT conflate them.
       reserved." + mandatory "More templates at Component Dock" link
       (https://www.componentdock.com/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/yoga/ (HTTP 200, 35,273 B, sha256 `0f5d483519b3…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`, `icomoon.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#79efb4` | 19 declarations — `.btn-primary`, `.btn-primary.disabled, .btn-primary:disabled` |
+| Other chromatic values | `#4bea9b` (2), `#fcf8e3` (1), `#d4fae7` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 45 declarations — `.form-control`, `.table .table` |
+| Ink / dark surface | `#000000` | 4 declarations — `.close`, `.close:hover, .close:focus` |
+| Typeface | `Montserrat` (3 rules — `.popover`)<br>`Quicksand` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `0.25rem`, `2px`, `4px` | `50%` (`.owl-carousel .owl-dots .owl-dot span`); `0.25rem` (`.btn`); `2px` (`.blog-entry .text`); `4px` (`.comment-list li .comment-body .reply`) |
+
+Palette in order of use: `#ffffff` ×45, `#404044` ×23, `#79efb4` ×19, `#212529` ×8, `#6c757d` ×8, `#c0c0c3` ×5, `#000000` ×4, `#495057` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with brand and off-canvas navigation

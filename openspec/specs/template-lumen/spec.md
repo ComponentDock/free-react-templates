@@ -17,6 +17,28 @@ background with green (#39b54a) accent, Montserrat headings, and Lora body
 text. Sections: hero, about with stats, services grid, portfolio works,
 clients, contact form, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/glint/ (HTTP 200, 45,900 B, sha256 `f3f5bc0f1c62…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`, `photoswipe.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#b3262a` | 3 declarations — `.alert-box--error`, `.js-sample-form [aria-invalid=true]` |
+| Other chromatic values | `#ffff00` (1), `#ffd900` (1), `#ffd1d2` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 60 declarations — `.pswp__caption__center`, `.pswp__caption__center h4` |
+| Ink / dark surface | `#000000` | 43 declarations — `.kit-form-status.is-sending`, `.pswp__caption__center` |
+| Typeface | `montserrat-regular` (14 rules — `blockquote cite`)<br>`montserrat-medium` (9 rules — `.btn,button,input[type=submit],input[type=reset],input[type=button]`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `3px`, `4px`, `1000px` | `50%` (`.home-social i`); `3px` (`.alert-box`); `4px` (`.kit-form-status`); `1000px` (`.btn--pill,button.btn--pill`) |
+| Gradients | 2 declarations | `.pswp__caption__center`, `.s-home .shadow-overlay` |
+
+Palette in order of use: `#ffffff` ×60, `#000000` ×43, `#111111` ×4, `#b3262a` ×3, `#f1f1f1` ×2, `#b8b8b8` ×2, `#757575` ×2, `#151515` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders with logo and navigation links

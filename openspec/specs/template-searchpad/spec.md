@@ -7,6 +7,26 @@ Recreation of ColorLib "Colorlib Search Form V21" — an expandable search form 
 > Source: https://colorlib.com/wp/template/colorlib-search-21/
 > Preview: https://colorlib.com/etc/searchf/colorlib-search-21/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-search-21.zip (HTTP 200, 32,547 B, sha256 `f418664875ab…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d8f4fe` | 1 declarations — `.s128` |
+| Surface | `#ffffff` | 2 declarations — `.s128 form .inner-form .cl-row .input-field.first input`, `.s128 form .inner-form .cl-row .input-field.second input` |
+| Ink / dark surface | `#333333` | 1 declarations — `.s128 form .inner-form .cl-row .input-field.first .clear:hover svg, .s128 form .inner-form` |
+| Typeface | `Poppins` (2 rules — `.s128`) | `font-family` declarations in the design sheet |
+| Radii | `30px`, `3px` | `30px` (`.s128 form .inner-form .cl-row .input-field.first input`); `3px` (`.s128 form .inner-form .cl-row .input-field.second input`) |
+
+Palette in order of use: `#cccccc` ×4, `#666666` ×3, `#ffffff` ×2, `#d8f4fe` ×1, `#333333` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page layout and background

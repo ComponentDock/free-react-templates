@@ -26,6 +26,27 @@ target.
 **Live palette** (hex × occurrences across the sheets): `#ccda46`×4,
 `#b7c628`×2.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/contact-form-15.zip (HTTP 200, 112,426 B, sha256 `5d6a8108c561…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ccda46` | 4 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled, .cl-btn-primary:disabled` |
+| Other chromatic values | `#b7c628` (2), `#b90b0b` (1), `#fcf8e3` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 7 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#000000` | 4 declarations — `.cl-btn.cl-btn-primary`, `.cl-form-control:active, .cl-form-control:focus` |
+| Typeface | `Roboto` (1 rule — `body`)<br>`Roboto Mono` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem` | `0.25rem` (`.cl-btn`) |
+
+Palette in order of use: `#212529` ×7, `#ffffff` ×7, `#6c757d` ×4, `#ccda46` ×4, `#000000` ×4, `#495057` ×3, `#b7c628` ×2, `#fcf8e3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections

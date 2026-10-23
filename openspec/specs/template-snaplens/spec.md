@@ -8,6 +8,27 @@
 
 Recreate the ColorLib "Halo" photography portfolio template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app. The original is a dark-themed photography portfolio with hero slider, intro section, portfolio grid, milestones counters, services, contact form, and footer. Snaplens faithfully reproduces the section order, layout, typography (Open Sans), and color palette (dark backgrounds, #222121 text, #cc1847 accent) while using placeholder images and inline SVG brand icons.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/halo/ (HTTP 200, 21,563 B, sha256 `7e6d07debfb4…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`, `site.min.css`, `mobile-nav.css`, `sliders.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#cc1847` | 1 declarations — `.hero-slider .owl-dots .owl-dot.active span` |
+| Other chromatic values | `#5b2336` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 70 declarations — `#preloder`, `.site-btn.light` |
+| Ink / dark surface | `#000000` | 10 declarations — `.accordion-area .panel-link:after`, `.contact-section:after` |
+| Typeface | `Open Sans` (2 rules — `h1,h2,h3,h4,h5,h6`) | `font-family` declarations in the design sheet |
+| Radii | `60px`, `50px`, `50%`, `1px` | `60px` (`.loader`); `50px` (`.review-slider .client-pic`); `50%` (`.worknav .wn-thumb`); `1px` (`.kit-mobile-nav-toggle .slicknav_icon-bar`) |
+
+Palette in order of use: `#ffffff` ×70, `#000000` ×10, `#222121` ×9, `#868686` ×6, `#222222` ×6, `#111111` ×5, `#444444` ×4, `#555555` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, search, and mobile toggle

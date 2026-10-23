@@ -317,6 +317,26 @@ row list (all from the single `@media (max-width:991.98px)` block).
     (the sheet styles **no** rule for it — **zero** occurrences), the system `Roboto` font stack,
     and all eight Roboto woff2 files.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/website-menu-14.zip (HTTP 200, 257,214 B, sha256 `b9aec2d0d6d7…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fc7fb2` | 5 declarations — `.ftco-navbar-light .cl-navbar-nav > .cl-nav-item > .cl-nav-link:hover`, `.ftco-navbar-light .cl-navbar-nav > .cl-nav-item.cl-active > a` |
+| Surface | `#ffffff` | 8 declarations — `.ftco-navbar-light`, `.ftco-navbar-light .cl-navbar-brand` |
+| Ink / dark surface | `#000000` | 5 declarations — `.ftco-navbar-light`, `.heading-section` |
+| Typeface | `Poppins` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `5px`, `50%` | `0.25rem` (`.cl-navbar-toggler`); `5px` (`.ftco-navbar-light`); `50%` (`.social-media p a`) |
+
+Palette in order of use: `#ffffff` ×8, `#fc7fb2` ×5, `#000000` ×5, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1, `#6c757d` ×1, `#fafafa` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Feature: Heading band

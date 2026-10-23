@@ -31,6 +31,27 @@ target.
 live sheets do not paint (a hover/state shade may be inline or JS-driven;
 verify before building from it): `#2846f8`.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/reopen/ (HTTP 200, 11,463 B, sha256 `77c4ff00312f…`, fetched 2026-10-23) and its design stylesheet(s) `fonts.min.css`, `style.min.css`, `modern.min.css`, `photoswipe.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f277ae` | 17 declarations — `.carousel_pagination a:hover,.carousel_pagination a.selected`, `.sm-clean li a.current,.sm-clean .current_page_item a,.main-menu.sm-clean a:hover` |
+| Other chromatic values | `#78234b` (3), `#fd3137` (2), `#a43269` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 13 declarations — `.body-wrapper`, `.doc-loader` |
+| Ink / dark surface | `#000000` | 1 declarations — `#toggle.on div` |
+| Typeface | `Roboto` (3 rules — `.contact-form input[type=submit]`) | `font-family` declarations in the design sheet |
+| Radii | `90%`, `50px`, `2px`, `50%` | `90%` (`.big-circle`); `50px` (`.contact-form input[type=submit]`); `2px` (`.grid-item img`); `50%` (`.resource-slider .swiper-pagination-bullet:after`) |
+
+Palette in order of use: `#f277ae` ×17, `#ffffff` ×13, `#666666` ×7, `#222222` ×5, `#6f6f6f` ×4, `#cccccc` ×3, `#7e7e7e` ×3, `#9a9a9a` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with logo, navigation links, and dark mode toggle

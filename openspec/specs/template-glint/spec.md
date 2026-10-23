@@ -43,6 +43,28 @@ text.
 11. **Footer.** Three-column footer top (about+social, services list,
     opening hours) + bottom copyright with Component Dock link.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/prodent/ (HTTP 200, 25,549 B, sha256 `c47cf906dbe5…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`, `modern.min.css`, `mobile-nav.min.css`, `fonts.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#71cd29` | 31 declarations — `.site-btn`, `.site-btn.sb-dark` |
+| Other chromatic values | `#eff2f4` (9), `#004154` (4), `#003d50` (3) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 55 declarations — `.site-btn`, `.site-btn:hover` |
+| Ink / dark surface | `#000000` | 3 declarations — `#preloder`, `.kit-mobile-nav__panel` |
+| Typeface | `Montserrat` (1 rule — `html,body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `5px`, `60px`, `40px` | `50%` (`.iconbox-icon`); `5px` (`.main-menu li a`); `60px` (`.loader`); `40px` (`.main-menu a[aria-current=page]`) |
+| Gradients | 5 declarations | `.hero-scrim` |
+
+Palette in order of use: `#ffffff` ×55, `#71cd29` ×31, `#2d2d2d` ×15, `#eff2f4` ×9, `#696969` ×5, `#004154` ×4, `#000000` ×3, `#f4f8fb` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page structure and branding

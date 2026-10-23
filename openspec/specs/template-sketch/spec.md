@@ -34,6 +34,27 @@ types (no ColorLib assets copied).
   7. Blog: 5 blog entries with date, title, description
   8. Footer: About, social links, navigation columns, copyright + Component Dock link
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/design/ (HTTP 200, 24,919 B, sha256 `dcc4eaa0a6ef…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1264fa` | 29 declarations — `.btn.btn-primary`, `a` |
+| Other chromatic values | `#000839` (5), `#2671fa` (2), `#2b74fb` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 11 declarations — `#overlayer`, `.site-nav .site-navigation .site-menu > li.cta-button a:hover` |
+| Ink / dark surface | `#000000` | 9 declarations — `.site-mobile-menu-close > span:before, .site-mobile-menu-close > span:after`, `.site-nav .site-navigation .site-menu .has-children .dropdown a` |
+| Typeface | `Montserrat` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `30px`, `4px`, `2px` | `50%` (`.feature .icon-wrap:before`); `30px` (`.btn`); `4px` (`.control__indicator`); `2px` (`.burger:before, .burger span, .burger:after`) |
+
+Palette in order of use: `#1264fa` ×29, `#ffffff` ×11, `#000000` ×9, `#000839` ×5, `#f8f9fa` ×5, `#2671fa` ×2, `#e6e6e6` ×2, `#dae1e7` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays navigation and branding

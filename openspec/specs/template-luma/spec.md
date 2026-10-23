@@ -6,6 +6,28 @@ Recreation of ColorLib "Photon" (https://colorlib.com/wp/template/photon/).
 
 Luma is a photography portfolio single-page template featuring a full-screen image carousel with category slides, a sticky navbar with social links, and a branded footer. The design uses a teal (#20c997) accent, Josefin Sans font, and dark overlay on hover.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/photon/ (HTTP 200, 11,447 B, sha256 `7e25dac7d1f4…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#147c5d` | 43 declarations — `.form-check-input:focus`, `.form-control:focus` |
+| Other chromatic values | `#ccd5e3` (3), `#8abeae` (3), `#b9d8ce` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 45 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 46 declarations — `.text-bg-info`, `.text-bg-light` |
+| Typeface | not declared in the design sheet | inherits the framework/system stack |
+| Radii | `4px`, `8px`, `50%`, `1rem` | `4px` (`.kit-form-status`); `8px` (`.blog-card`); `50%` (`.form-check-input[type=radio]`); `1rem` (`.form-range::-moz-range-thumb`) |
+| Gradients | 4 declarations | `.mission-card:before`, `.process-number` |
+
+Palette in order of use: `#000000` ×46, `#ffffff` ×45, `#147c5d` ×43, `#5c626e` ×17, `#25262a` ×8, `#8abeae` ×3, `#ccd5e3` ×3, `#6c757d` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders with brand and navigation

@@ -127,6 +127,27 @@ recorded below.
       2. Footer menu (About, Features, Contact)
       3. Social icons + copyright (Component Dock link)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/rea/ (HTTP 200, 20,507 B, sha256 `b7eed3b09d7f…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `sm-clean.css`, `common.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f271ab` | 13 declarations — `::-moz-selection`, `::selection` |
+| Other chromatic values | `#d23600` (1), `#fd3137` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 9 declarations — `::-moz-selection`, `::selection` |
+| Ink / dark surface | `#000000` | 2 declarations — `#toggle div`, `#toggle.on div` |
+| Typeface | `Lato` (12 rules — `#header-main-menu .search-field`) | `font-family` declarations in the design sheet |
+| Radii | `5px`, `2px 2px 0 0`, `2px`, `0 0 2px 2px` | `5px` (`.sm-clean`); `2px 2px 0 0` (`.grid-item img`); `2px` (`.item-info`); `0 0 2px 2px` (`#blog-holder article .entry-content`) |
+
+Palette in order of use: `#f271ab` ×13, `#ffffff` ×9, `#222222` ×7, `#2f2f2f` ×6, `#f5f5f5` ×2, `#000000` ×2, `#a5a5a5` ×2, `#7e7e7e` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with animated headline

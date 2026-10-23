@@ -11,6 +11,27 @@ preview: https://preview.colorlib.com/theme/elit/
 
 Recreation of ColorLib "Elit" (https://colorlib.com/wp/template/elit/) as a React 19 + Tailwind CSS 4 + TypeScript photography portfolio template. The template features a fixed sidebar navigation, full-screen hero, photo grid gallery, testimonials, biography, blog, and contact form.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/elit/ (HTTP 200, 25,063 B, sha256 `23d3dbf0cab1…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#df0e62` | 10 declarations — `.site-mobile-menu .site-nav-wrap a.active,.site-mobile-menu .site-nav-wrap a:hover`, `.site-mobile-menu .site-nav-wrap li.active>a` |
+| Other chromatic values | `#8bc34a` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 15 declarations — `.form-control`, `.form-control:active,.form-control:focus` |
+| Ink / dark surface | `#000000` | 7 declarations — `.header-bar`, `::selection` |
+| Typeface | `Oswald` (1 rule — `.h1,.h2,.h3,h1,h2,h3`)<br>loaded via Google Fonts: `Quicksand` | `font-family` declarations in the design sheet |
+| Radii | `50%`, `30px` | `50%` (`.custom-pagination a`); `30px` (`.btn`) |
+
+Palette in order of use: `#ffffff` ×15, `#df0e62` ×10, `#000000` ×7, `#cccccc` ×3, `#8bc34a` ×1, `#25262a` ×1, `#212529` ×1, `#f8f9fa` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sidebar Navigation

@@ -96,6 +96,16 @@ order is:
     Footer MUST link `https://www.componentdock.com/` (branded
     "Component Dock").
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+No machine-readable reference: `https://preview.colorlib.com/theme/physical-therapy/`
+returns HTTP 404 and no source bundle exists (`.../downloads/free/physical-therapy.zip`,
+checked 2026-10-23). This prep is a SHIPPED-UNDER alias — the design already ships as
+`apps/kinectwell`, so the canonical token research lives in
+`openspec/specs/template-kinectwell/spec.md`; do not re-derive it here or scaffold
+`apps/physiohub`.
+
 ## Requirements
 
 ### Header

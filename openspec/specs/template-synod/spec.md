@@ -14,6 +14,36 @@ Recreate the ColorLib "Church WordPress Themes" template as a React 19 + Vite + 
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-church-themes-1.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/synod` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+No machine-readable reference: the demo path
+`https://preview.colorlib.com/theme/church-wordpress-themes/` and the source bundle
+`https://preview.colorlib.com/downloads/free/church-wordpress-themes.zip` both return HTTP 404
+(checked 2026-10-23 — this ColorLib entry publishes no free demo under that slug).
+Per `docs/replication.md` the published screenshot is the sole reference, so the
+values below are **sampled from the screenshot** (quantised, 12-colour median cut),
+not read from CSS. Treat them as approximate: match the hue, not the byte.
+
+![reference screenshot](https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-church-themes-1.jpg) — 1200×919, 176,699 B.
+
+`https://preview.colorlib.com/theme/church/` does answer ("Believe It Church"), but it is a different church design than this round-up entry, so its CSS is **not** used here.
+
+| Token | Value | Evidence in the screenshot |
+| --- | --- | --- |
+| Accent (dominant chromatic) | `#563523` | 11.6% of sampled pixels |
+| Other chromatic values | `#a66327` | secondary hues in the same screenshot |
+| Surface | `#ffffff` | dominant light ground |
+| Ink / dark surface | `#291d16` | darkest text / section ground |
+| Header band | `#dddddd` | most common colour in the top 12% |
+| Typeface | not recoverable from a screenshot | pick a neutral geometric sans already used by neighbouring templates (Poppins / Inter) and keep the screenshot's weight contrast |
+
+Palette sampled in order of area: `#ffffff` ×33.7%, `#291d16` ×12.3%, `#563523` ×11.6%, `#dedbd3` ×11.4%, `#a66327` ×8.6%.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Because these values are sampled rather than declared, keep the palette to these few hues — do not derive new shades from the screenshot's photo areas.
+- Spacing/radii are not recoverable either: reuse the shared `packages/ui` button and card radii instead of guessing from the thumbnail.
+
 ## Requirements
 
 ### Requirement: Navigation bar with countdown and donate CTA

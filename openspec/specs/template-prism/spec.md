@@ -24,6 +24,27 @@ design_tokens:
 
 Recreation of ColorLib "Dup" (https://preview.colorlib.com/theme/dup/) as a React + Tailwind CSS creative agency template named "Prism". The template showcases a creative agency with sections for studio introduction, achievements, video, skills, testimonials, and contact.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/dup/ (HTTP 200, 23,841 B, sha256 `f636403888b6…`, fetched 2026-10-23) and its design stylesheet(s) `main.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#df003a` | 14 declarations — `.genric-btn.primary`, `.genric-btn.primary:hover` |
+| Other chromatic values | `#e0003b` (11), `#73d61c` (5), `#38a4ff` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 56 declarations — `.sample-text-area`, `.text-white` |
+| Ink / dark surface | `#222222` | 16 declarations — `.h1, .h2, .h3, .h4, .h5, .h6`, `h1, h2, h3, h4, h5, h6` |
+| Typeface | `Poppins` (3 rules — `.h1, .h2, .h3, .h4, .h5, .h6`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `8px`, `8.5px`, `50%` | `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`); `50%` (`.default-switch input + label`) |
+
+Palette in order of use: `#ffffff` ×56, `#f9f9ff` ×24, `#222222` ×16, `#df003a` ×14, `#e0003b` ×11, `#777777` ×7, `#73d61c` ×5, `#38a4ff` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile toggle

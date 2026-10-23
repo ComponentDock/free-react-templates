@@ -20,6 +20,28 @@ design_tokens:
 
 Talentflow is a professional HR consulting landing page template, recreating the ColorLib "Humanresources" design under a new name. It provides a complete single-page marketing site with navbar, hero, features, about/accordion, stats counters, team, testimonials, blog, and footer sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/humanresources/ (HTTP 200, 30,690 B, sha256 `d9181863296b…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`, `reveal.min.css`, `mobile-nav.min.css`, `sliders.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0389ff` | 4 declarations — `.custom-pagination .next.active a,.custom-pagination .prev.active a,.custom-pagination li.`, `.templateux-counter .templateux-number` |
+| Other chromatic values | `#173651` (3), `#36a1ff` (2), `#1263b3` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 42 declarations — `.custom-pagination .next.active a,.custom-pagination .prev.active a,.custom-pagination li.`, `::-moz-selection` |
+| Ink / dark surface | `#000000` | 27 declarations — `::-moz-selection`, `::selection` |
+| Typeface | `Work Sans` (3 rules — `.kit-mobile-nav__panel`) | `font-family` declarations in the design sheet |
+| Radii | `8px`, `50%`, `4px`, `10px` | `8px` (`.btn,.btn.py-3`); `50%` (`.comment-list li .vcard img`); `4px` (`.comment-list li .comment-body .reply`); `10px` (`.templateux-navbar .desktop-submenu`) |
+| Gradients | 3 declarations | `.block-thumbnail-1:before,.block-thumbnail-1.show-text:before`, `.templateux-cover:before` |
+
+Palette in order of use: `#ffffff` ×42, `#000000` ×27, `#999999` ×5, `#0389ff` ×4, `#cccccc` ×3, `#173651` ×3, `#b3b3b3` ×2, `#36a1ff` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with mobile toggle

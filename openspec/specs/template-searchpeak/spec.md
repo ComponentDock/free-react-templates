@@ -7,6 +7,27 @@ Recreation of ColorLib "Colorlib Search 7" — an advanced search form with drop
 > Source: https://colorlib.com/wp/template/colorlib-search-7/
 > Preview: https://preview.colorlib.com/theme/colorlib-search-7/ (unavailable; design based on screenshot)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-search-7.zip (HTTP 200, 131,357 B, sha256 `0d96294cfee6…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#57b846` | 2 declarations — `.s007 form .inner-form .basic-search .input-field .result-count span`, `.s007 form .inner-form .input-field .btn-search` |
+| Other chromatic values | `#00b5e9` (1), `#4ea63f` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 4 declarations — `.s007 form .inner-form .advance-search`, `.s007 form .inner-form .input-field .btn-search` |
+| Ink / dark surface | `#000000` | 1 declarations — `.s007 form .inner-form .input-field .btn-delete:hover` |
+| Typeface | `Roboto` (7 rules — `.cl-sel-0`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `2.5px`, `2.5px 2.5px 0 0` | `3px` (`.s007 form .inner-form .input-field .btn-delete`); `2.5px` (`.choices__inner`); `2.5px 2.5px 0 0` (`.is-open .choices__inner`) |
+
+Palette in order of use: `#ffffff` ×4, `#999999` ×4, `#555555` ×3, `#333333` ×2, `#57b846` ×2, `#f9f9f9` ×1, `#b7b7b7` ×1, `#00b5e9` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page layout and background

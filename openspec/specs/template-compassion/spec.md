@@ -65,6 +65,28 @@ Tailwind CSS 4 + TypeScript.
      social icons, The Church links, Messages links, contact info.
      Component Dock attribution.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/inward/ (HTTP 200, 16,348 B, sha256 `678e21c65e26…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `mediaelementplayer.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#6a99cb` | 5 declarations — `header .navbar .dropdown-menu .dropdown-item.active`, `header .navbar .dropdown-menu .dropdown-item:hover` |
+| Other chromatic values | `#90b3d8` (2), `#21f8f8` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 28 declarations — `.btn.btn-outline-white`, `.btn.btn-primary` |
+| Ink / dark surface | `#000000` | 11 declarations — `.btn.btn-outline-white:hover, .btn.btn-outline-white:focus`, `.event-list-item p` |
+| Typeface | `Open Sans` (1 rule — `body`)<br>`Playfair Display` (1 rule — `h1, h2, h3`)<br>loaded via Google Fonts: `Open Sans` | `font-family` declarations in the design sheet |
+| Radii | `50%`, `2px`, `16px`, `0 0 4px 4px` | `50%` (`.owl-carousel .owl-dots .owl-dot`); `2px` (`.mejs__horizontal-volume-current,.mejs__horizontal-volume-total`); `16px` (`#loader`); `0 0 4px 4px` (`.mejs__volume-button:hover`) |
+| Gradients | 4 declarations | `.mejs__controls:not([style*="display: none"])`, `.mejs__time-buffering` |
+
+Palette in order of use: `#ffffff` ×28, `#000000` ×11, `#6a99cb` ×5, `#b3b3b3` ×2, `#90b3d8` ×2, `#eeeeee` ×2, `#cccccc` ×1, `#262626` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders all navigation links

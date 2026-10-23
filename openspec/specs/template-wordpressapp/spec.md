@@ -32,6 +32,34 @@ TypeScript.
 WordpressApp lives in `apps/wordpressapp` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+No machine-readable reference: the demo path
+`https://preview.colorlib.com/theme/wordpress-app-themes/` and the source bundle
+`https://preview.colorlib.com/downloads/free/wordpress-app-themes.zip` both return HTTP 404
+(checked 2026-10-23 — this ColorLib entry publishes no free demo under that slug).
+Per `docs/replication.md` the published screenshot is the sole reference, so the
+values below are **sampled from the screenshot** (quantised, 12-colour median cut),
+not read from CSS. Treat them as approximate: match the hue, not the byte.
+
+![reference screenshot](https://colorlib.com/wp/wp-content/uploads/sites/2/app-wordpress-themes.jpg) — 1200×966, 56,137 B.
+
+| Token | Value | Evidence in the screenshot |
+| --- | --- | --- |
+| Accent (dominant chromatic) | `#8839d4` | 39.8% of sampled pixels |
+| Other chromatic values | `#8666e2` | secondary hues in the same screenshot |
+| Surface | `#ffffff` | dominant light ground |
+| Ink / dark surface | `#111111` | no dark neutral sampled — keep the app's existing text token |
+| Header band | `#e5e5e5` | most common colour in the top 12% |
+| Typeface | not recoverable from a screenshot | pick a neutral geometric sans already used by neighbouring templates (Poppins / Inter) and keep the screenshot's weight contrast |
+
+Palette sampled in order of area: `#8839d4` ×39.8%, `#ffffff` ×16.2%, `#8666e2` ×11.7%.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Because these values are sampled rather than declared, keep the palette to these few hues — do not derive new shades from the screenshot's photo areas.
+- Spacing/radii are not recoverable either: reuse the shared `packages/ui` button and card radii instead of guessing from the thumbnail.
+
 ## Requirements
 
 ### Requirement: Navigation bar

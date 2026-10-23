@@ -165,6 +165,28 @@ Section order in the HTML:
   the menu section)
 - Instagram images: owl-carousel, single-instagram cards with food photos
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/restauco/ (HTTP 200, 46,868 B, sha256 `e47ff18a1785…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `gijgo.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fe5f41` | 45 declarations — `#back-top`, `.browse-btn` |
+| Other chromatic values | `#1f2b7b` (15), `#415094` (7), `#4d312c` (7) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 86 declarations — `#back-top`, `a,button` |
+| Ink / dark surface | `#000000` | 10 declarations — `.our-client .single-cat .cat-cap h5>a`, `.our-client .single-cat:hover .cat-cap h5` |
+| Typeface | `Mitr` (11 rules — `.btn`)<br>`Raleway` (4 rules — `.number a`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `3px`, `8px`, `4px` | `50%` (`#back-top`); `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `4px` (`.gj-picker-bootstrap`) |
+| Gradients | 1 declaration | `.blog_area a:hover,.blog_area a :hover` |
+
+Palette in order of use: `#ffffff` ×86, `#fe5f41` ×45, `#f9f9ff` ×23, `#1f2b7b` ×15, `#000000` ×10, `#999999` ×10, `#888888` ×8, `#eeeeee` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page shell and header

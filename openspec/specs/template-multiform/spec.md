@@ -10,6 +10,27 @@ A free state multiselect dropdown snippet using Bootstrap Framework. Recreation 
 - **New name**: `multiform`
 - **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/multiselect-15.zip (HTTP 200, 254,363 B, sha256 `eb14db12889e…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#dae0e5` | 2 declarations — `.btn-light:hover`, `.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).` |
+| Other chromatic values | `#80bdff` (1), `#e1f2fb` (1), `#e5e9ed` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 9 declarations — `.cl-form-control`, `.ms-options-wrap > button:focus, .ms-options-wrap > button` |
+| Ink / dark surface | `#000000` | 5 declarations — `.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before`, `.close` |
+| Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `4px`, `0.25rem` | `4px` (`.ms-options-wrap > .ms-options`); `0.25rem` (`.btn`) |
+
+Palette in order of use: `#ffffff` ×9, `#212529` ×9, `#6c757d` ×5, `#f8f9fa` ×5, `#000000` ×5, `#efefef` ×3, `#495057` ×3, `#aaaaaa` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders correctly

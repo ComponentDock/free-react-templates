@@ -14,6 +14,36 @@ Medprime is a medical clinic landing page template that recreates the ColorLib "
 - **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/nedi-free-template.jpg
 - **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/medprime` had no recorded reference (docs/replication.md requires one).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+No machine-readable reference: the demo path
+`https://preview.colorlib.com/theme/medi-2/` and the source bundle
+`https://preview.colorlib.com/downloads/free/medi-2.zip` both return HTTP 404
+(checked 2026-10-23 — this ColorLib entry publishes no free demo under that slug).
+Per `docs/replication.md` the published screenshot is the sole reference, so the
+values below are **sampled from the screenshot** (quantised, 12-colour median cut),
+not read from CSS. Treat them as approximate: match the hue, not the byte.
+
+![reference screenshot](https://colorlib.com/wp/wp-content/uploads/sites/2/nedi-free-template.jpg) — 1200×946, 130,154 B.
+
+`https://preview.colorlib.com/theme/medi/` does answer ("Medi"), but that is a newer revision than "Medi 2", so its CSS is **not** used here.
+
+| Token | Value | Evidence in the screenshot |
+| --- | --- | --- |
+| Accent (dominant chromatic) | `#1b2e69` | 29.4% of sampled pixels |
+| Other chromatic values | `#485786`, `#1548b0` | secondary hues in the same screenshot |
+| Surface | `#ffffff` | dominant light ground |
+| Ink / dark surface | `#111111` | no dark neutral sampled — keep the app's existing text token |
+| Header band | `#1d5af2` | most common colour in the top 12% |
+| Typeface | not recoverable from a screenshot | pick a neutral geometric sans already used by neighbouring templates (Poppins / Inter) and keep the screenshot's weight contrast |
+
+Palette sampled in order of area: `#ffffff` ×31.5%, `#1b2e69` ×29.4%, `#485786` ×8.5%, `#1548b0` ×7.9%.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Because these values are sampled rather than declared, keep the palette to these few hues — do not derive new shades from the screenshot's photo areas.
+- Spacing/radii are not recoverable either: reuse the shared `packages/ui` button and card radii instead of guessing from the thumbnail.
+
 ## Requirements
 
 ### Requirement: Blue-themed navigation bar

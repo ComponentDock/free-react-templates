@@ -4,6 +4,28 @@
 
 Recreate the ColorLib "Resta" template (https://colorlib.com/wp/template/resta/) as a React 19 + Tailwind CSS 4 + TypeScript single-page restaurant landing template named "Corkage". The design is a warm-toned Indian restaurant site with a hero carousel, about section, tabbed menu, testimonials, reservation form, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/resta/ (HTTP 200, 47,958 B, sha256 `171c66f3548e…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `gijgo.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#db9a64` | 25 declarations — `.boxed-btn`, `.boxed-btn3` |
+| Other chromatic values | `#ff5e13` (15), `#001d38` (9), `#415094` (7) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 89 declarations — `*::-moz-selection`, `.owl-carousel .owl-nav div` |
+| Ink / dark surface | `#000000` | 10 declarations — `.header-area .main-header-area .main-menu ul li .submenu li a`, `.header-area .main-header-area .main-menu ul li .submenu li:hover a` |
+| Typeface | `Poppins` (9 rules — `.boxed-btn`)<br>`Philosopher` (4 rules — `.about_area .about_info_wrap h3`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `3px`, `20px`, `8px` | `50%` (`.owl-carousel .owl-nav div`); `3px` (`.genric-btn.radius`); `20px` (`.about_area .about_img .img_1`); `8px` (`.confirm-radio`) |
+| Gradients | 7 declarations | `.blog_area a:hover, .blog_area a :hover`, `.bradcam_area::before` |
+
+Palette in order of use: `#ffffff` ×89, `#db9a64` ×25, `#f9f9ff` ×23, `#ff5e13` ×15, `#999999` ×11, `#000000` ×10, `#001d38` ×9, `#919191` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

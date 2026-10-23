@@ -8,6 +8,28 @@
 
 Citadel is an industrial/construction company landing page template. It showcases industrial services (construction, mechanical engineering, bridge construction), project portfolio, company info (location, hours, contact), and a call-to-action for industrial consulting. The design uses an orange (#ff5e13) accent color, dark navy (#020c26) backgrounds, and the Rubik Google Font for a modern industrial aesthetic.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/durg/ (HTTP 200, 31,871 B, sha256 `1ad146f261ba…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff5e13` | 46 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Other chromatic values | `#020c26` (24), `#415094` (7), `#4cd3e3` (5) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 80 declarations — `*::-moz-selection`, `::selection` |
+| Ink / dark surface | `#000000` | 4 declarations — `.single-blog .thumb:after`, `.single-post-area .navigation-area .nav-left .thumb` |
+| Typeface | `Rubik` (37 rules — `.boxed-btn`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `3px`, `8px`, `8.5px` | `50%` (`.about-area .about-thumb a.video-icon`); `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`) |
+| Gradients | 1 declaration | `.blog_area a:hover,.blog_area a :hover` |
+
+Palette in order of use: `#ffffff` ×80, `#ff5e13` ×46, `#020c26` ×24, `#f9f9ff` ×23, `#5c5c5c` ×15, `#999999` ×13, `#415094` ×7, `#777777` ×6.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with navigation and contact info

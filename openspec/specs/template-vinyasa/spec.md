@@ -131,6 +131,27 @@ rgba(0,0,0,0.1)`; `.primary-btn.white` variant — transparent bg, 1px
       reserved." + mandatory "More templates at Component Dock" link
       (https://www.componentdock.com/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/yogaflex/ (HTTP 200, 48,153 B, sha256 `7135e823fb21…`, fetched 2026-10-23) and its design stylesheet(s) `main.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#0093df` | 66 declarations — `.genric-btn.primary`, `::selection` |
+| Other chromatic values | `#4cd3e3` (5), `#38a4ff` (4), `#f4e700` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 102 declarations — `.genric-btn.default:hover`, `.text-white` |
+| Ink / dark surface | `#000000` | 4 declarations — `#header #logo h1 a, #header #logo h1 a:hover`, `.single-post-area .navigation-area .nav-left .thumb` |
+| Typeface | `Roboto` (3 rules — `.h1, .h2, .h3, .h4, .h5, .h6`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `8px`, `8.5px`, `50%` | `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`); `50%` (`.default-switch input + label`) |
+
+Palette in order of use: `#ffffff` ×102, `#0093df` ×66, `#222222` ×24, `#777777` ×16, `#f9f9ff` ×13, `#cccccc` ×8, `#4cd3e3` ×5, `#38a4ff` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top info bar

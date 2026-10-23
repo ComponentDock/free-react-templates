@@ -11,6 +11,27 @@ preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-15/
 
 FooterBloom recreates the ColorLib Bootstrap Footer 15 template as a React + Tailwind CSS component. It features a green (#68983b) footer with a 4-column layout containing brand info, blog posts, a product showcase, and an Instagram gallery, along with a subscribe form and copyright bar.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/bootstrap-footer-15.zip (HTTP 200, 1,376,508 B, sha256 `27e5bd22d977…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fff8a1` | 4 declarations — `.footer-05 .logo a span`, `.footer-05 a` |
+| Other chromatic values | `#80bdff` (1), `#81ba4c` (1), `#68983b` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 9 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#000000` | 5 declarations — `.cl-bs-tooltip-bottom .cl-arrow::before`, `.cl-bs-tooltip-top .cl-arrow::before` |
+| Typeface | `Poppins` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `50%` | `0.25rem` (`.cl-form-control`); `50%` (`.ftco-footer-social li a`) |
+
+Palette in order of use: `#ffffff` ×9, `#000000` ×5, `#6c757d` ×4, `#fff8a1` ×4, `#495057` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Footer renders with correct background and layout

@@ -23,6 +23,28 @@ template under the name "Draftly". The template showcases a creative UI/UX
 designer's profile with skills, services, projects, testimonials, blog, and
 contact form.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/clyde/ (HTTP 200, 51,368 B, sha256 `4b2d5b4b42fb…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#b1b493` | 37 declarations — `.ftco-navbar-light .navbar-nav>.nav-item.cta>a`, `.ftco-navbar-light .navbar-nav>.nav-item>.nav-link span:before` |
+| Other chromatic values | `#a0f669` (5), `#7fbdff` (3), `#b3d7ff` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 67 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 59 declarations — `.kit-form-status.is-sending`, `.text-bg-primary` |
+| Typeface | `Poppins` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `5px`, `1rem`, `4px` | `50%` (`.form-check-input[type=radio]`); `5px` (`.btn`); `1rem` (`.form-range::-moz-range-thumb`); `4px` (`.comment-list li .comment-body .reply`) |
+| Gradients | 1 declaration | `.owl-carousel.home-slider .slider-item .slider-text .one-third:before` |
+
+Palette in order of use: `#ffffff` ×67, `#000000` ×59, `#b1b493` ×37, `#666850` ×18, `#007bff` ×13, `#1d1f17` ×7, `#a0f669` ×5, `#6b6b6b` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation links

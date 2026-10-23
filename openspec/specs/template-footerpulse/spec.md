@@ -12,6 +12,27 @@ The original is a Bootstrap 4 footer snippet titled "Footer #10" with three colo
 2. **Dark footer body** (#3b3d41) with three nav columns (About, Company, Resources) and a subscribe form with input + button.
 3. **Copyright bar** with dynamic year, Component Dock attribution, and social media icons (Twitter, Facebook, Instagram) using inline SVG.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/bootstrap-footer-20.zip (HTTP 200, 343,218 B, sha256 `a3de6d9ad2f8…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1089ff` | 3 declarations — `.footer-10 .con-info .icon`, `.footer-10 .subscribe-form .cl-form-group .submit` |
+| Other chromatic values | `#80bdff` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 11 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#000000` | 4 declarations — `.cl-bs-tooltip-bottom .cl-arrow::before`, `.cl-bs-tooltip-top .cl-arrow::before` |
+| Typeface | `Poppins` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `50%` | `0.25rem` (`.cl-form-control`); `50%` (`.footer-10 .con-info .icon`) |
+
+Palette in order of use: `#ffffff` ×11, `#6c757d` ×4, `#000000` ×4, `#1089ff` ×3, `#495057` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: ContactCards section renders three colored info cards

@@ -4,6 +4,28 @@
 
 Pieslice is a pizza restaurant landing page template that recreates the ColorLib "Luigi's" design (https://colorlib.com/wp/template/luigis/) with a React 19 + Vite + Tailwind CSS 4 + TypeScript stack. It features a hero section, our story, best sellers grid, filterable menu, and a branded footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/luigis/ (HTTP 200, 32,199 B, sha256 `3cbb85c8cc26…`, fetched 2026-10-23) and its design stylesheet(s) `styles.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ef0031` | 15 declarations — `.bg-primary`, `.color-primary` |
+| Other chromatic values | `#1f8330` (5), `#ef002e` (3), `#ed0037` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 26 declarations — `header`, `header .main-menu li.drop-down > ul.drop-down-menu` |
+| Ink / dark surface | `#000000` | 8 declarations — `.bg-black`, `.bg-grad-layer-6:after` |
+| Typeface | `Open Sans` (2 rules — `.radial-progress .progress-title`)<br>`beyond_the_mountainsregular` (1 rule — `h1, h2, h3, .font-beyond`) | `font-family` declarations in the design sheet |
+| Radii | `2px`, `70px`, `80px`, `3px` | `2px` (`.btn-brdr-grey`); `70px` (`.circle-70`); `80px` (`.circle-80`); `3px` (`.br-3`) |
+| Gradients | 1 declaration | `.bg-grad-layer-6:after` |
+
+Palette in order of use: `#ffffff` ×26, `#ef0031` ×15, `#aaaaaa` ×9, `#111111` ×9, `#000000` ×8, `#cccccc` ×5, `#1f8330` ×5, `#ef002e` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar renders navigation and phone order

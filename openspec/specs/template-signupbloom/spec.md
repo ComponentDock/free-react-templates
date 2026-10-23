@@ -15,6 +15,27 @@ consent, a full-width green "Register" submit button, a divider
 ("or register using"), and three social login buttons (Facebook, Twitter, Google)
 each as full-width colored blocks.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/signup-form-08.zip (HTTP 200, 137,264 B, sha256 `b1639a5c6739…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#38d39f` | 6 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled, .cl-btn-primary:disabled` |
+| Other chromatic values | `#27b183` (2), `#7e0cf5` (1), `#0d95e8` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 9 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#212529` | 5 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `50%`, `4px` | `0.25rem` (`.cl-btn`); `50%` (`.social-login a`); `4px` (`.control__indicator`) |
+
+Palette in order of use: `#ffffff` ×9, `#38d39f` ×6, `#6c757d` ×6, `#212529` ×5, `#495057` ×2, `#27b183` ×2, `#b3b3b3` ×2, `#888888` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Split layout

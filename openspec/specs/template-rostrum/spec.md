@@ -62,6 +62,28 @@ Preview image: https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-
 - Dark footer matching navbar
 - Modern conference/event aesthetic with countdown timer prominent in hero
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/eventalk/ (HTTP 200, 50,756 B, sha256 `62908e908b35…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`, `icomoon.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#6b75ff` | 91 declarations — `.hero-wrap .overlay`, `.slider-text h1` |
+| Other chromatic values | `#59b7ff` (42), `#6b76ff` (30), `#78d5ef` (9) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 53 declarations — `.form-control`, `.table .table` |
+| Ink / dark surface | `#000000` | 26 declarations — `.close`, `.close:hover, .close:focus` |
+| Typeface | `Work Sans` (4 rules — `.popover`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `0.25rem`, `5px`, `4px` | `50%` (`.owl-carousel .owl-dots .owl-dot`); `0.25rem` (`.btn`); `5px` (`.form-control`); `4px` (`.comment-list li .comment-body .reply`) |
+| Gradients | 42 declarations | `.hero-wrap .overlay`, `.slider-text h1` |
+
+Palette in order of use: `#6b75ff` ×91, `#ffffff` ×53, `#59b7ff` ×42, `#6b76ff` ×30, `#000000` ×26, `#78d5ef` ×9, `#212529` ×8, `#6c757d` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Feature: Rostrum template behaviour

@@ -9,6 +9,28 @@ A Contact Form template with split-screen contact form, contact form fields, sen
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v13.jpg
 - **Description**: A split-screen contact form with a dark map background on the left and a clean white form panel on the right. Features a green phone number badge overlay on the map, validated form fields with colored underlines, and a gradient coral-to-pink Send button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/contact-form-v13.zip (HTTP 200, 206,751 B, sha256 `f27979196f15…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d5007d` | 12 declarations — `.contact100-form-bgbtn`, `.focus-input100::before` |
+| Other chromatic values | `#e53935` (12), `#c80000` (2), `#39b54a` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 5 declarations — `.contact100-form-btn`, `.wrap-contact100` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `Poppins-Regular` (3 rules — `.input100`)<br>`Poppins-Medium` (3 rules — `.alert-validate::before`) | `font-family` declarations in the design sheet |
+| Radii | `2px`, `25px` | `2px` (`.alert-validate::before`); `25px` (`.contact100-more`) |
+| Gradients | 8 declarations | `.contact100-form-bgbtn`, `.focus-input100::before` |
+
+Palette in order of use: `#d5007d` ×12, `#e53935` ×12, `#cccccc` ×8, `#ffffff` ×5, `#c80000` ×2, `#39b54a` ×2, `#212529` ×1, `#007bff` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Split-screen contact form layout

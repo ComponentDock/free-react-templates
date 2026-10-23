@@ -4,6 +4,28 @@
 
 Recreation of ColorLib "Multiselect 02" (https://colorlib.com/wp/template/multiselect-02/). A centered page with a heading, a label, and a multiselect dropdown for selecting topics from a list of 11 options. Brand color: #e8647c (pink/rose), font: Lato, white background.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/multiselect-02.zip (HTTP 200, 107,174 B, sha256 `65c175e4655e…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#96c8da` | 6 declarations — `.ui.selection.cl-active.cl-dropdown`, `.ui.selection.cl-active.cl-dropdown .cl-menu` |
+| Other chromatic values | `#e8647c` (4), `#cce2ff` (3), `#dae0e5` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 22 declarations — `.ui.button.toggle.cl-active`, `.ui.button.toggle.cl-active:hover` |
+| Ink / dark surface | `#000000` | 7 declarations — `.close`, `.close:hover` |
+| Typeface | `Lato` (7 rules — `.ui.button`)<br>`Icons` (1 rule — `i.icon`) | `font-family` declarations in the design sheet |
+| Radii | `.28571429rem`, `500rem`, `0 0 .28571429rem .28571429rem`, `5px` | `.28571429rem` (`.ui.button`); `500rem` (`.ui.tag.label:after`); `0 0 .28571429rem .28571429rem` (`.ui.cl-menu .cl-dropdown.item .cl-menu`); `5px` (`body ::-webkit-scrollbar-thumb`) |
+| Gradients | 2 declarations | `.ui.toggle.checkbox label:after` |
+
+Palette in order of use: `#ffffff` ×22, `#000000` ×7, `#212529` ×7, `#96c8da` ×6, `#f8f9fa` ×5, `#e6e6e6` ×5, `#e8647c` ×4, `#cce2ff` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders with heading and dropdown

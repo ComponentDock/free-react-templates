@@ -237,6 +237,27 @@ center` only — the reference does NOT mute them further). Gaps: `mb-3`
   "Button"; labels are "Large", "Medium", "Small", "Button Colors", "Full
   width button"; the 18 color labels are the color names themselves.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/bootstrap-buttons-17.zip (HTTP 200, 250,747 B, sha256 `df473a55f0a9…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#dae0e5` | see census below |
+| Other chromatic values | `#3395ff` (2), `#e2e6ea` (2), `#005cbf` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 53 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#000000` | 1 declarations — `.btn-black` |
+| Typeface | `Roboto` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `.25rem`, `.3rem`, `.2rem`, `4px` | `.25rem` (`.cl-btn`); `.3rem` (`.cl-btn-lg`); `.2rem` (`.cl-btn-sm`); `4px` (`.cl-btn`) |
+
+Palette in order of use: `#ffffff` ×53, `#212529` ×13, `#007bff` ×5, `#6c757d` ×4, `#28a745` ×4, `#17a2b8` ×4, `#ffc107` ×4, `#dc3545` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page structure

@@ -18,6 +18,27 @@ TypeScript.
 - Package: `@free-react-templates/shatter`
 - Deploy target: `shatter.free.componentdock.com`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/smashed/ (HTTP 200, 51,736 B, sha256 `ef13a0dc074b…`, fetched 2026-10-23) and its design stylesheet(s) `main.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff1857` | 30 declarations — `.primary-btn.fill`, `.primary-btn:hover` |
+| Other chromatic values | `#4cd3e3` (5), `#38a4ff` (4), `#f4e700` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 73 declarations — `.h1, .h2, .h3, .h4, .h5, .h6`, `::selection` |
+| Ink / dark surface | `#000000` | 2 declarations — `.single-post-area .navigation-area .nav-left .thumb`, `.single-post-area .navigation-area .nav-right .thumb` |
+| Typeface | `Roboto` (2 rules — `.h1, .h2, .h3, .h4, .h5, .h6`)<br>`Open Sans` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `8px`, `8.5px`, `50%` | `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`); `50%` (`.default-switch input + label`) |
+
+Palette in order of use: `#ffffff` ×73, `#ff1857` ×30, `#999999` ×13, `#222222` ×10, `#f9f9ff` ×8, `#2e2e2e` ×6, `#777777` ×6, `#252525` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full magazine layout on page load

@@ -6,6 +6,25 @@ Registration form template with a split-panel layout: a hero image on the left, 
 
 Recreation of ColorLib "Colorlib Regform 17" (https://colorlib.com/wp/template/colorlib-regform-17/).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-regform-17.zip (HTTP 200, 285,180 B, sha256 `5bab518dad77…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | none — grayscale design | no chromatic value in the design sheet |
+| Surface | `#ffffff` | 2 declarations — `.inner`, `button` |
+| Ink / dark surface | `#333333` | 7 declarations — `.cl-form-control::-webkit-input-placeholder`, `body` |
+| Typeface | `Poppins-Regular` (6 rules — `.cl-form-control::-webkit-input-placeholder`)<br>`Poppins-SemiBold` (1 rule — `.inner h3`) | `font-family` declarations in the design sheet |
+
+Palette in order of use: `#333333` ×7, `#ffffff` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- No rounding in the sheet: keep buttons and cards square unless a shared `packages/ui` component supplies its own.
+
 ## Requirements
 
 ### Requirement: Split-panel card layout

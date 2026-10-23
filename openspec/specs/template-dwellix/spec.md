@@ -8,6 +8,28 @@ A real estate property listing template with search functionality, property
 cards, category browsing, why-choose-us features, blog posts, and a newsletter
 footer. Lime-green accent (`#92c800`) on light background, Poppins font.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/rehomes/ (HTTP 200, 37,234 B, sha256 `7deeb2c1ccb2…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`, `reveal.min.css`, `mobile-nav.min.css`, `select.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#507000` | 44 declarations — `.rehomes-btn:focus,.rehomes-btn:hover`, `.section-heading :is(h2,.heading-h2) span` |
+| Other chromatic values | `#92c800` (41), `#2a303b` (29), `#1b2600` (8) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 76 declarations — `.mfp-image-holder .mfp-close,.mfp-iframe-holder .mfp-close`, `.rehomes-btn` |
+| Ink / dark surface | `#000000` | 18 declarations — `.bg-gradient-overlay:after`, `.bg-overlay:after` |
+| Typeface | `Lato` (2 rules — `:is(h1,.heading-h1),:is(h2,.heading-h2),:is(h3,.heading-h3),:is(h4,.heading-h4),:is(h5,.he`)<br>`object-fit: cover` (1 rule — `.jarallax>.jarallax-img`) | `font-family` declarations in the design sheet |
+| Radii | `5px`, `2px`, `50%`, `4px` | `5px` (`.bg-gradient-overlay:after`); `2px` (`.main-header-area .contact-btn a`); `50%` (`.single-footer-widget .nl-form button`); `4px` (`.classy-navbar-toggler`) |
+| Gradients | 5 declarations | `.bg-gradient-overlay:after`, `.single-categories-property-area.bg-gradient-overlay:after` |
+
+Palette in order of use: `#ffffff` ×76, `#507000` ×44, `#92c800` ×41, `#2a303b` ×29, `#555d69` ×26, `#000000` ×18, `#636a76` ×12, `#f5f8fa` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top header with contact info and social links

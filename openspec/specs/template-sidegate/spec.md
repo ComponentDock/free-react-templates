@@ -8,6 +8,26 @@ Sidegate is a sidebar navigation layout. It recreates the ColorLib **Colorlib Si
 
 Sidegate is a minimal sidebar navigation template recreating ColorLib Sidebar V08. It features a clean white sidebar with profile info and navigation items, paired with a 2-column blog post grid on a light gray background.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-sidebar-v08.zip (HTTP 200, 1,486,269 B, sha256 `500cade7e349…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff7315` | 1 declarations — `aside .side-inner .nav-menu ul li a:before` |
+| Surface | `#fcfcfc` | 4 declarations — `aside .side-inner .nav-menu ul li a:hover`, `aside .side-inner .nav-menu ul li.cl-active a` |
+| Ink / dark surface | `#000000` | 7 declarations — `.close`, `.close:hover` |
+| Typeface | `Roboto` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `2px` | `50%` (`aside .side-inner .profile img`); `2px` (`.burger:before, .burger span, .burger:after`) |
+
+Palette in order of use: `#000000` ×7, `#fcfcfc` ×4, `#ffffff` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1, `#cfcfcf` ×1, `#8b8b8b` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Sidebar

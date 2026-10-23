@@ -10,6 +10,27 @@ image. Each step has a title bar, form fields, and a footer showing step progres
 The design uses Roboto Slab font, green accent (#6DAB3C), white card container
 with rounded corners, and a full-page background image.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-wizard-16.zip (HTTP 200, 247,564 B, sha256 `c86a9eafb69b…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1abc9c` | 5 declarations — `.form-radio-item input:checked + label`, `.form-radio-item input:hover` |
+| Other chromatic values | `#ff0000` (1), `#148f77` (1) | secondary hues in the same sheet |
+| Surface | `#f8f8f8` | 5 declarations — `#button`, `.bar-strength` |
+| Ink / dark surface | `#222222` | 3 declarations — `.steps ul .current a`, `body` |
+| Typeface | `Roboto Slab` (3 rules — `#val`)<br>`Material-Design-Iconic-Font` (1 rule — `.steps ul .done a .number:after`) | `font-family` declarations in the design sheet |
+| Radii | `5px`, `8px`, `10px`, `5px 0 0 5px` | `5px` (`.form-radio-flex input + label`); `8px` (`.bar`); `10px` (`.cl-container`); `5px 0 0 5px` (`.form-radio-item input + label:first-of-type`) |
+
+Palette in order of use: `#999999` ×10, `#f8f8f8` ×5, `#1abc9c` ×5, `#ffffff` ×4, `#222222` ×3, `#dfdfdf` ×2, `#ff0000` ×1, `#ebebeb` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Renders heading and first step on load

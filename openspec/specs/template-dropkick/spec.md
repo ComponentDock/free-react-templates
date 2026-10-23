@@ -31,6 +31,27 @@ that reveals an image and descriptive text when the user clicks a "View Details"
 The design uses a clean light background, Roboto font, sky-blue accent button, and a
 white dropdown panel with shadow and arrow indicator.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/dropdown-09.zip (HTTP 200, 224,588 B, sha256 `38c9aa851e4e…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#12b5ea` | 2 declarations — `.cl-btn.cl-btn-primary:hover, .cl-btn.cl-btn-primary:focus` |
+| Other chromatic values | `#3fc5f0` (2), `#005cbf` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 10 declarations — `.cl-btn-primary`, `.cl-btn-primary:hover` |
+| Ink / dark surface | `#000000` | 2 declarations — `.heading-section`, `h2, .h2` |
+| Typeface | `Roboto` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `5px` | `0.25rem` (`.cl-btn`); `5px` (`.cl-btn`) |
+
+Palette in order of use: `#ffffff` ×10, `#212529` ×5, `#007bff` ×5, `#0062cc` ×2, `#000000` ×2, `#3fc5f0` ×2, `#12b5ea` ×2, `#0069d9` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders heading

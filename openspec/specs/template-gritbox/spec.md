@@ -11,6 +11,27 @@ A crossfit/gym landing page with hero slider, program carousel, trainer spotligh
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **New name:** `gritbox` (no collision with existing apps or specs)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/crossfits/ (HTTP 200, 25,981 B, sha256 `8866da5f36ef…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `mediaelementplayer.min.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#21f8f8` | 1 declarations — `.mejs__captions-selected,.mejs__chapters-selected` |
+| Surface | `#ffffff` | 19 declarations — `.site-footer a:hover`, `.site-wrap` |
+| Ink / dark surface | `#000000` | 11 declarations — `.text-black`, `::selection` |
+| Typeface | `Roboto Mono` (1 rule — `body`)<br>`Work Sans` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `2px`, `30px`, `7px` | `50%` (`.block-13 .owl-dots .owl-dot > span, .block-14 .owl-dots .owl-dot > span`); `2px` (`.mejs__horizontal-volume-current,.mejs__horizontal-volume-total`); `30px` (`.btn.pill`); `7px` (`.site-navbar .site-navigation .site-menu .has-children .dropdown`) |
+| Gradients | 4 declarations | `.mejs__controls:not([style*="display: none"])`, `.mejs__time-buffering` |
+
+Palette in order of use: `#ffffff` ×19, `#000000` ×11, `#fd7e14` ×11, `#eeeeee` ×2, `#f4f4f4` ×1, `#1e1e1c` ×1, `#343a40` ×1, `#25262a` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar

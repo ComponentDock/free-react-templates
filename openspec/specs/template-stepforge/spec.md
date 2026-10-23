@@ -16,6 +16,27 @@ different name. It provides a three-step flow (Personal Info, Booking, Confirm) 
 background, teal accent colors, and Open Sans typography. Users fill in personal details, select
 booking preferences, and review a summary before submitting.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-wizard-26.zip (HTTP 200, 273,754 B, sha256 `be99691663f0…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#55e8d5` | 4 declarations — `.form-register .steps li.current a .step-icon, .form-register .steps li.current a:active .`, `.inner .cl-form-row .form-holder .cl-form-control:focus + .label, .inner .cl-form-row .for` |
+| Other chromatic values | `#43ccba` (1), `#32998b` (1), `#525575` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 16 declarations — `.form-register .steps li a .title .step-icon`, `.form-register .steps li, .form-register .steps li.current` |
+| Ink / dark surface | `#333333` | 1 declarations — `.form-register .steps li a .step-text` |
+| Typeface | `Open Sans` (3 rules — `.inner .cl-form-row .form-holder input, .inner .cl-form-row .form-holder select`) | `font-family` declarations in the design sheet |
+| Radii | `5px`, `10px` | `5px` (`.actions ul li`); `10px` (`.wizard-v6-content`) |
+
+Palette in order of use: `#ffffff` ×16, `#55e8d5` ×4, `#cccccc` ×2, `#666666` ×2, `#383a4f` ×1, `#525575` ×1, `#333333` ×1, `#43ccba` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Three-step wizard flow

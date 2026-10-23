@@ -11,6 +11,28 @@ A dark-themed podcast website template. Recreation of ColorLib "The Hustle Hour"
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Description:** Podcast website with episode archives, audio players, guest profiles, newsletter signup, and platform distribution links.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/hustlehour/ (HTTP 200, 83,730 B, sha256 `50ef502b4235…`, fetched 2026-10-23) and its design stylesheet(s) `Base.D-0Tjs2q.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#dc2626` | 12 declarations — `.border-primary-600`, `.border-t-primary-600` |
+| Other chromatic values | `#1f2937` (12), `#374151` (11), `#f87171` (10) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 11 declarations — `.bg-white\/10`, `.border-white\/20` |
+| Ink / dark surface | `#000000` | 9 declarations — `.card`, `::file-selector-button` |
+| Typeface | `Outfit` (1 rule — `html,:host`) | `font-family` declarations in the design sheet |
+| Radii | `2147483647px`, `.25rem`, `.5rem`, `.75rem` | `2147483647px` (`.btn`); `.25rem` (`.rounded`); `.5rem` (`.prose pre`); `.75rem` (`.prose img`) |
+| Gradients | 2 declarations | `.dark .img-shimmer`, `.img-shimmer` |
+
+Palette in order of use: `#dc2626` ×12, `#1f2937` ×12, `#374151` ×11, `#ffffff` ×11, `#f87171` ×10, `#000000` ×9, `#111827` ×9, `#d1d5db` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays logo, navigation links, dark mode toggle, and CTA

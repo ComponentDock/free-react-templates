@@ -37,6 +37,28 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 10. Partner — logo area
 11. Footer — dark bg, 4-col: logo, Useful Links, Quick Links, Contact, Component Dock link
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/whitespace/ (HTTP 200, 40,223 B, sha256 `23fac23e971c…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fcd307` | 44 declarations — `.text-primary`, `a` |
+| Other chromatic values | `#78d5ef` (12), `#bbeaf7` (3), `#7a6000` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 72 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 67 declarations — `.kit-form-status.is-sending`, `.text-bg-primary` |
+| Typeface | `Poppins` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `30px`, `1rem`, `4px` | `50%` (`.form-check-input[type=radio]`); `30px` (`.ftco-navbar-light .navbar-nav>.nav-item.cta>a`); `1rem` (`.form-range::-moz-range-thumb`); `4px` (`.comment-list li .comment-body .reply`) |
+| Gradients | 2 declarations | `.hero-wrap .third:before`, `.hero-wrap-2 .overlay` |
+
+Palette in order of use: `#ffffff` ×72, `#000000` ×67, `#fcd307` ×44, `#78d5ef` ×12, `#666666` ×4, `#bbeaf7` ×3, `#1a1a1a` ×3, `#869791` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

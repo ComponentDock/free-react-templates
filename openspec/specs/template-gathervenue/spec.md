@@ -10,6 +10,27 @@ An Events / Conference template with hero section fills viewport, about section 
 - **New name:** `gathervenue` (package: `@free-react-templates/gathervenue`)
 - **Deploy target:** `gathervenue.free.componentdock.com`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/event/ (HTTP 200, 27,283 B, sha256 `f7a5421b908a…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#dd0a37` | 27 declarations — `.input:focus`, `.main-btn` |
+| Other chromatic values | `#0b0f28` (10) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 24 declarations — `#header`, `.main-btn` |
+| Ink / dark surface | `#000000` | 2 declarations — `#header.fixed-navbar`, `.speaker:after` |
+| Typeface | `Poppins` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `2px` | `50%` (`#galery-owl.owl-theme .owl-nav [class*='owl-']`); `2px` (`.input`) |
+
+Palette in order of use: `#dd0a37` ×27, `#ffffff` ×24, `#0b0f28` ×10, `#000000` ×2, `#f9f9fa` ×2, `#444444` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays correctly

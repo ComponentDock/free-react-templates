@@ -7,6 +7,27 @@ Recreate the ColorLib Vegefoods design as a React 19 + Tailwind CSS 4 + TypeScri
 **Source:** https://colorlib.com/wp/template/vegefoods/
 **Preview:** https://preview.colorlib.com/theme/vegefoods/
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/vegefoods/ (HTTP 200, 57,751 B, sha256 `c9fb3faeecf7…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-1`, `inline-style-0`, `inline-style-2`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#82ae46` | 46 declarations — `.ftco-navbar-light .navbar-brand`, `a` |
+| Other chromatic values | `#80bdff` (1), `#005cbf` (1), `#fcf8e3` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 66 declarations — `.form-control`, `.table .table` |
+| Ink / dark surface | `#000000` | 56 declarations — `.close`, `.close:hover` |
+| Typeface | `Poppins` (7 rules — `.hero-wrap .slider-text .bread`)<br>`Lora` (3 rules — `.deal-of-the-day h3`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `0.25rem`, `30px`, `4px` | `50%` (`.mouse-icon`); `0.25rem` (`.btn`); `30px` (`.btn`); `4px` (`.comment-list li .comment-body .reply`) |
+
+Palette in order of use: `#ffffff` ×66, `#000000` ×56, `#82ae46` ×46, `#007bff` ×9, `#6c757d` ×8, `#212529` ×6, `#b3b3b3` ×4, `#4d4d4d` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top Bar

@@ -17,6 +17,27 @@ Password) in a mix of single/double column layout, an orange (#fb771a)
 background image. Font is Roboto (weights 300, 400). On mobile the layout
 stacks vertically (image on top, form below).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/signup-form-02.zip (HTTP 200, 310,005 B, sha256 `db4236c77d95…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fb771a` | 7 declarations — `.cl-btn-primary`, `.cl-btn-primary.disabled, .cl-btn-primary:disabled` |
+| Other chromatic values | `#c55303` (2), `#de5e04` (2), `#eb6304` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 10 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#212529` | 3 declarations — `.cl-btn`, `.cl-btn:hover` |
+| Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `4px` | `0.25rem` (`.cl-btn`); `4px` (`.control__indicator`) |
+
+Palette in order of use: `#ffffff` ×10, `#fb771a` ×7, `#6c757d` ×6, `#212529` ×3, `#c55303` ×2, `#495057` ×2, `#de5e04` ×2, `#888888` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Split-layout page structure

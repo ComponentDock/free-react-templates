@@ -6,6 +6,28 @@ Recreation of ColorLib **Phozogy** (https://colorlib.com/wp/template/phozogy/).
 
 Reflexly is a photography studio landing page template featuring a hero carousel, services grid, photo categories, filterable portfolio gallery, and a full footer with subscribe form. The design uses a green accent (#009603), Quantico headings, Open Sans body text, and a dark header/footer with white content sections.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/phozogy/ (HTTP 200, 35,428 B, sha256 `729481628ede…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-1`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#009603` | 22 declarations — `.nav-menu ul li a:after`, `.primary-btn` |
+| Other chromatic values | `#af00e1` (2), `#ff9e35` (2), `#40c4ff` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 38 declarations — `.primary-btn`, `.site-btn` |
+| Ink / dark surface | `#000000` | 2 declarations — `#preloder`, `.search-model` |
+| Typeface | `Open Sans` (2 rules — `html, body`)<br>`Quantico` (5 rules — `.primary-btn`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `60px` | `50%` (`.categories-slider.owl-carousel .owl-nav button`); `60px` (`.loader`) |
+| Gradients | 2 declarations | `.blog-details-text .bd-tag-share .share a.instagram` |
+
+Palette in order of use: `#444444` ×43, `#ffffff` ×38, `#111111` ×35, `#009603` ×22, `#c4c4c4` ×10, `#888888` ×7, `#666666` ×6, `#f5f5f5` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with navigation

@@ -4,6 +4,27 @@
 
 Recreate the ColorLib **Woodwork** template (https://colorlib.com/wp/template/woodwork/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page landing template for a woodworking and construction company. The app lives at `apps/graincraft/` under the package name `@free-react-templates/graincraft`.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/woodwork/ (HTTP 200, 42,448 B, sha256 `9e5e0be422ce…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-1`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#bfb332` | 22 declarations — `.primary-btn`, `.section-title span` |
+| Other chromatic values | `#0043a1` (1), `#23c4ff` (1), `#ff000f` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 45 declarations — `.primary-btn`, `.site-btn` |
+| Ink / dark surface | `#000000` | 2 declarations — `#preloder`, `.blog__details__comment__item__text p` |
+| Typeface | `Rajdhani` (9 rules — `.header__menu ul li a`)<br>`Josefin Sans` (3 rules — `.testimonial__text h5 span`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `60px`, `2px` | `50%` (`.about__history .nav-item .nav-link:after`); `60px` (`.loader`); `2px` (`.canvas__open`) |
+
+Palette in order of use: `#111111` ×59, `#ffffff` ×45, `#bfb332` ×22, `#444444` ×19, `#adadad` ×15, `#888888` ×9, `#faf5f0` ×6, `#000000` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with branding and navigation

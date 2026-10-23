@@ -226,6 +226,27 @@ span` text, classes `.price` circle badge, trainers owl dot `.active`,
     own `id` in some build variants — order is what matters, use ids only
     as anchors.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/flawless/ (HTTP 200, 44,982 B, sha256 `53920607739b…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`, `flexslider.css`, `icomoon.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f17445` | 24 declarations — `::selection`, `a` |
+| Other chromatic values | `#f3865d` (2), `#f7af1d` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 39 declarations — `.colorlib-nav #colorlib-logo a`, `::selection` |
+| Ink / dark surface | `#000000` | 22 declarations — `.colorlib-nav ul li.has-dropdown .dropdown`, `.colorlib-nav ul li.has-dropdown .dropdown:before` |
+| Typeface | `Work Sans` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px`, `30px`, `15px` | `50%` (`.classes .classes-img`); `4px` (`.colorlib-nav ul li.has-dropdown .dropdown`); `30px` (`.btn`); `15px` (`.mouse-icon`) |
+
+Palette in order of use: `#ffffff` ×39, `#f17445` ×24, `#000000` ×22, `#f2f3f7` ×7, `#252525` ×3, `#f3865d` ×2, `#999999` ×1, `#f7af1d` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

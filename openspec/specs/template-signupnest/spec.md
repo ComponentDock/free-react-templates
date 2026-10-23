@@ -8,6 +8,27 @@ A split-panel registration form with a hero image on the left and a form on the 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-28.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-regform-28.zip (HTTP 200, 325,173 B, sha256 `6ffbab2ed7c1…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#3b63ca` | 1 declarations — `.form-v2-content .form-detail .register` |
+| Other chromatic values | `#53c83c` (1), `#3356b0` (1), `#385cb9` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 3 declarations — `.form-v2-content`, `.form-v2-content .form-detail .register` |
+| Ink / dark surface | `#333333` | 2 declarations — `.form-v2-content .form-detail h2`, `.form-v2-content .form-detail input` |
+| Typeface | `Roboto` (6 rules — `.form-v2-content .form-detail h2`)<br>`LineAwesome` (1 rule — `.form-v2-content .form-detail .cl-form-row label.error::after`) | `font-family` declarations in the design sheet |
+| Radii | `15px`, `50%`, `5px`, `6px` | `15px` (`.form-v2-content`); `50%` (`.form-v2-content .form-detail .cl-form-row label#valid`); `5px` (`.form-v2-content .form-detail input`); `6px` (`.form-v2-content .form-detail .register`) |
+
+Palette in order of use: `#999999` ×4, `#ffffff` ×3, `#333333` ×2, `#666666` ×2, `#53c83c` ×1, `#385cb9` ×1, `#3b63ca` ×1, `#3356b0` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Gradient background

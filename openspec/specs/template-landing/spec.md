@@ -43,6 +43,36 @@ CSS 4 + TypeScript.
 Landing Page lives in `apps/landing` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+No machine-readable reference: the demo path
+`https://preview.colorlib.com/theme/landing/` and the source bundle
+`https://preview.colorlib.com/downloads/free/landing.zip` both return HTTP 404
+(checked 2026-10-23 — this ColorLib entry publishes no free demo under that slug).
+Per `docs/replication.md` the published screenshot is the sole reference, so the
+values below are **sampled from the screenshot** (quantised, 12-colour median cut),
+not read from CSS. Treat them as approximate: match the hue, not the byte.
+
+![reference screenshot](https://colorlib.com/wp/wp-content/uploads/sites/2/landing-free-template.jpg) — 1200×946, 134,167 B.
+
+`https://preview.colorlib.com/theme/landing/` does answer ("Landing Template"), but it is a different free demo than this round-up entry, so its CSS is **not** used here.
+
+| Token | Value | Evidence in the screenshot |
+| --- | --- | --- |
+| Accent (dominant chromatic) | `none declared — see note` | 6.6% of sampled pixels |
+| — | — | the only chromatic clusters are `#8f6153` (6.6%) and neighbours — that is screenshot photography, not page chrome; the UI itself is neutral |
+| Surface | `#dee2e1` | dominant light ground |
+| Ink / dark surface | `#242625` | darkest text / section ground |
+| Header band | `#eae9ea` | most common colour in the top 12% |
+| Typeface | not recoverable from a screenshot | pick a neutral geometric sans already used by neighbouring templates (Poppins / Inter) and keep the screenshot's weight contrast |
+
+Palette sampled in order of area: `#242625` ×39.5%, `#dee2e1` ×35.4%, `#8f6153` ×6.6%.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Because these values are sampled rather than declared, keep the palette to these few hues — do not derive new shades from the screenshot's photo areas.
+- Spacing/radii are not recoverable either: reuse the shared `packages/ui` button and card radii instead of guessing from the thumbnail.
+
 ## Requirements
 
 ### Requirement: Navigation bar

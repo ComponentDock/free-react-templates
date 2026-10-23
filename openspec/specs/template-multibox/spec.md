@@ -16,6 +16,28 @@ with a custom React multi-select component, matching the visual presentation.
 - **Preview URL:** https://preview.colorlib.com/theme/bootstrap/multiselect-19/ (404; screenshot + CSS used)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-19.jpg
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/multiselect-19.zip (HTTP 200, 254,594 B, sha256 `832a7eb4b979…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#dae0e5` | 2 declarations — `.btn-light:hover`, `.btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).` |
+| Other chromatic values | `#d3f4ff` (1), `#3875d7` (1), `#c7f0db` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 14 declarations — `.chosen-container .chosen-drop`, `.chosen-container .chosen-results li.highlighted` |
+| Ink / dark surface | `#000000` | 4 declarations — `.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before`, `.close` |
+| Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `4px`, `5px`, `0 0 4px 4px`, `3px` | `4px` (`.chosen-container .chosen-drop`); `5px` (`.chosen-container-single .chosen-single`); `0 0 4px 4px` (`.chosen-container-single .chosen-drop`); `3px` (`.chosen-container-multi .chosen-choices li.search-choice`) |
+| Gradients | 2 declarations | `.chosen-container-single .chosen-single` |
+
+Palette in order of use: `#ffffff` ×14, `#212529` ×7, `#f8f9fa` ×5, `#000000` ×4, `#999999` ×3, `#eeeeee` ×3, `#f6f6f6` ×2, `#f4f4f4` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page layout

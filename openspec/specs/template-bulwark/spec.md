@@ -4,6 +4,27 @@
 
 Recreation of ColorLib "Security" (https://colorlib.com/wp/template/security/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page security/IT-services landing page. Delivers a two-tier header with social icons and nav, a hero with dark overlay and CTA, service cards, a features grid, a facts/stats counter bar, a masonry gallery, blog cards, and a dark footer with newsletter form and Component Dock link.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/security/ (HTTP 200, 25,161 B, sha256 `4404f5507b89…`, fetched 2026-10-23) and its design stylesheet(s) `main.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fab700` | 41 declarations — `.genric-btn.primary`, `::selection` |
+| Other chromatic values | `#4cd3e3` (5), `#38a4ff` (4), `#f4e700` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 58 declarations — `.sample-text-area`, `.text-white` |
+| Ink / dark surface | `#000000` | 1 declarations — `.single-blog .date` |
+| Typeface | `Poppins` (3 rules — `.h1, .h2, .h3, .h4, .h5, .h6`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `8px`, `8.5px`, `50%` | `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`); `50%` (`.default-switch input + label`) |
+
+Palette in order of use: `#ffffff` ×58, `#fab700` ×41, `#f9f9ff` ×32, `#222222` ×27, `#777777` ×15, `#4cd3e3` ×5, `#38a4ff` ×4, `#f4e700` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with two-tier layout and navigation

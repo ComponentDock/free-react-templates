@@ -9,6 +9,27 @@ Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-03/
 Stack: React 19, Vite, Tailwind CSS 4, TypeScript (strict). Vitest + Testing
 Library with 100% coverage enforced.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/bootstrap-footer-03.zip (HTTP 200, 252,479 B, sha256 `909ba1dc07c8…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff2e6e` | 1 declarations — `.footer-59391 .social-icons li a.dr` |
+| Other chromatic values | `#394cff` (1), `#00a0fb` (1), `#fa2614` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 4 declarations — `.footer-59391`, `.footer-59391 .site-logo` |
+| Ink / dark surface | `#000000` | 1 declarations — `.footer-59391 .site-logo a` |
+| Typeface | `Roboto` (2 rules — `body`)<br>`Poppins` (1 rule — `.footer-59391`) | `font-family` declarations in the design sheet |
+| Radii | `50%` | `50%` (`.footer-59391 .social-icons li a`) |
+
+Palette in order of use: `#ffffff` ×4, `#777777` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1, `#f8f9fa` ×1, `#dae0e5` ×1, `#000000` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Footer renders with brand logo

@@ -4,6 +4,27 @@
 
 Recreate the ColorLib "Pizza" template (https://colorlib.com/wp/template/pizza/) as a React 19 + Tailwind CSS 4 + TypeScript single-page restaurant landing template named "Pepperoni". The design is a dark-themed pizza restaurant site with a hero carousel, about section, services, gallery, tabbed menu, pricing, contact form, and footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/pizza/ (HTTP 200, 48,323 B, sha256 `f37c2109bbdb…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`, `icomoon.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fac564` | 39 declarations — `.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover`, `a` |
+| Other chromatic values | `#78d5ef` (9), `#5c3d03` (3), `#8d5d05` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 51 declarations — `.form-control`, `.table .table` |
+| Ink / dark surface | `#000000` | 18 declarations — `.close`, `.close:hover, .close:focus` |
+| Typeface | `Work Sans` (3 rules — `.popover`)<br>`Josefin Sans` (3 rules — `.ftco-navbar-light .navbar-brand`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `50%`, `4px`, `0.3rem` | `0.25rem` (`.btn`); `50%` (`.owl-carousel.home-slider .owl-dots .owl-dot`); `4px` (`.comment-list li .comment-body .reply`); `0.3rem` (`.popover`) |
+
+Palette in order of use: `#ffffff` ×51, `#fac564` ×39, `#000000` ×18, `#78d5ef` ×9, `#212529` ×8, `#6c757d` ×8, `#121618` ×5, `#cccccc` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

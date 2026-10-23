@@ -10,6 +10,28 @@ A Car Wash & Detailing template with hero, about, pricing, services and video/ct
 - **App folder:** `apps/sudsy`
 - **Package:** `@free-react-templates/sudsy`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/carwash/ (HTTP 200, 28,957 B, sha256 `465736ac1670…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `gijgo.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#007aff` | 27 declarations — `#back-top`, `.boxed-btn` |
+| Other chromatic values | `#1f2b7b` (15), `#1592e6` (7), `#415094` (7) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 88 declarations — `.boxed-btn`, `.boxed-btn:hover` |
+| Ink / dark surface | `#000000` | 10 declarations — `.categories-area .single-cat:hover .cat-cap h5`, `.slider-area .video-icon a::after` |
+| Typeface | `Poppins` (5 rules — `.slider-area .hero__caption h1`)<br>`Work Sans` (2 rules — `.boxed-btn`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `3px`, `8px`, `4px` | `50%` (`#back-top`); `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `4px` (`.gj-picker-bootstrap`) |
+| Gradients | 10 declarations | `.blog_area a:hover,.blog_area a :hover`, `.blog_details a:hover` |
+
+Palette in order of use: `#ffffff` ×88, `#007aff` ×27, `#f9f9ff` ×23, `#1f2b7b` ×15, `#000000` ×10, `#999999` ×10, `#888888` ×8, `#eeeeee` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays logo, navigation, and phone CTA

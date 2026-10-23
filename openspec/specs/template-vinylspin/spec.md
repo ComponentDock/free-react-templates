@@ -10,6 +10,27 @@ featured album with audio player, upcoming shows list, artist biography with pla
 CTA banner, and newsletter footer. The design uses a black background (#000), white text,
 red accent (#de4f32), and Montserrat font (Futura-like geometric sans).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/mixtape/ (HTTP 200, 20,894 B, sha256 `17f2eef172fd…`, fetched 2026-10-23) and its design stylesheet(s) `main_styles.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#de4f32` | 9 declarations — `.image_overlay`, `.menu_log_reg a:hover` |
+| Other chromatic values | `#de4f33` (2), `#ff6347` (1), `#ffa07f` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 31 declarations — `body`, `p` |
+| Ink / dark surface | `#000000` | 11 declarations — `.header`, `.menu_log_reg` |
+| Typeface | `Futura` (5 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%` | `50%` (`.jp-play`) |
+
+Palette in order of use: `#ffffff` ×31, `#000000` ×11, `#de4f32` ×9, `#333232` ×5, `#de4f33` ×2, `#5f5f5f` ×2, `#6d6d6d` ×2, `#ff6347` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders all sections in correct order

@@ -13,6 +13,27 @@ with date badges and media icons, upcoming events carousel, blog cards,
 newsletter subscription, and a 4-column footer. Brand color is deep red
 (#c92f2f). Font is Open Sans.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/crose/ (HTTP 200, 51,600 B, sha256 `e637533dea55…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c92f2f` | 61 declarations — `#scrollUp`, `.crose-btn` |
+| Other chromatic values | `#1f1f2c` (11), `#1d0b0b` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 35 declarations — `#scrollUp`, `.bg-white` |
+| Ink / dark surface | `#000000` | 1 declarations — `.bg-dark` |
+| Typeface | `Open Sans` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `5px`, `50%`, `2px`, `3px` | `5px` (`.about-us-area .about-thumbnail`); `50%` (`.single-team-members .team-thumb`); `2px` (`.comment_area .single_comment_area .comment-wrapper .comment-content a`); `3px` (`.crose-btn`) |
+
+Palette in order of use: `#c92f2f` ×61, `#ffffff` ×35, `#959595` ×25, `#636363` ×14, `#1f1f2c` ×11, `#c2c2c2` ×4, `#f3f3f3` ×3, `#000000` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact info and social links

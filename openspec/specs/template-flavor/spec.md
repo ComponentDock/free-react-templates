@@ -6,6 +6,27 @@ A Restaurant Website template with header with navigation, info bar with contact
 
 Flavor is a restaurant one-pager with warm orange (#FF6107) branding, Poppins + Lora fonts, full-screen hero, tabbed menu, reservation form, and testimonials.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/luto/ (HTTP 200, 62,754 B, sha256 `8e625a838bb2…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-1`, `flexslider.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff6107` | 16 declarations — `::selection`, `a` |
+| Other chromatic values | `#ff7121` (2), `#f7af1d` (1), `#302939` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 28 declarations — `#colorlib-main-nav #email`, `#colorlib-main-nav .colorlib-nav-toggle:hover i::before, #colorlib-main-nav .colorlib-nav-` |
+| Ink / dark surface | `#303030` | 10 declarations — `#colorlib-hero .flexslider .slides li .overlay`, `.article-entry .desc h2 a` |
+| Typeface | `Lora` (8 rules — `#colorlib-hero .flexslider .slider-text > .slider-text-inner h1`)<br>`Poppins` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px`, `2px`, `15px` | `50%` (`.dish-wrap .price`); `4px` (`.dish-wrap .addtocart .dis-tc span`); `2px` (`#colorlib-main-nav .colorlib-nav-toggle`); `15px` (`.mouse-icon`) |
+
+Palette in order of use: `#ffffff` ×28, `#ff6107` ×16, `#303030` ×10, `#636363` ×6, `#b0b0b0` ×6, `#7d7d7d` ×5, `#404044` ×5, `#fbfbfb` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with navigation

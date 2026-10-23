@@ -66,6 +66,27 @@ target.
 | stylesheet | `https://preview.colorlib.com/theme/pharma/css/jquery-ui.css` | HTTP 200 · 6,100 B · sha256 `4be1a367de69` · framework build |
 | … | (2 further sheet(s) linked, all fetched) | — |
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/pharma/ (HTTP 200, 23,067 B, sha256 `a41fd4a561cc…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#51eaea` | 14 declarations — `.btn.btn-primary:hover`, `.form-control:active, .form-control:focus` |
+| Other chromatic values | `#e86b00` (1), `#74d12b` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 13 declarations — `.site-navbar`, `.site-navbar .site-navigation .site-menu .has-children .dropdown` |
+| Ink / dark surface | `#000000` | 24 declarations — `.site-footer .footer-heading`, `.text-black` |
+| Typeface | `Crimson Text` (1 rule — `.testimony blockquote p`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px` | `50%` (`.block-3 .owl-dots .owl-dot > span`); `4px` (`.banner-1`) |
+
+Palette in order of use: `#000000` ×24, `#51eaea` ×14, `#ffffff` ×13, `#25262a` ×7, `#212529` ×3, `#f4f5f9` ×2, `#8c92a0` ×1, `#5c626e` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays branding and navigation

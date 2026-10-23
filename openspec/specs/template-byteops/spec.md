@@ -17,6 +17,28 @@ landing with 15 sections: navbar, hero, services (tabbed), features, projects,
 about, team, stats, process, partners, FAQ (accordion), testimonials, blog,
 contact (form + map), and footer with Component Dock attribution.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/digilab/ (HTTP 200, 68,114 B, sha256 `fa5ac7ba2291…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#31de79` | 57 declarations — `.form-check-input:focus`, `.form-control:focus` |
+| Other chromatic values | `#9ff669` (12), `#15803d` (6), `#98eebc` (3) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 63 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 62 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Nunito Sans` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `4px`, `1rem`, `30px` | `50%` (`.form-check-input[type=radio]`); `4px` (`.contact-section .box`); `1rem` (`.form-range::-moz-range-thumb`); `30px` (`.btn`) |
+| Gradients | 19 declarations | `.ftco-navbar-light .navbar-brand span`, `.ftco-navbar-light.scrolled .navbar-brand span` |
+
+Palette in order of use: `#ffffff` ×63, `#000000` ×62, `#31de79` ×57, `#9ff669` ×12, `#15803d` ×6, `#98eebc` ×3, `#232931` ×3, `#4a7d1c` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: App renders all sections

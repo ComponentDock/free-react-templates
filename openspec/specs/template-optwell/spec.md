@@ -13,6 +13,27 @@ Optwell is a bootstrap multiselect component page. It recreates the ColorLib **M
 - Background: light gray `#efefef`
 - Font: Roboto (Google Font)
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/multiselect-12.zip (HTTP 200, 255,463 B, sha256 `0ac05c7ae1fb…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#5897fb` | 2 declarations — `.select2-container--classic.select2-container--open .select2-dropdown`, `.select2-container--default .select2-results__option--highlighted[aria-selected]` |
+| Other chromatic values | `#f67280` (2), `#dae0e5` (2), `#80bdff` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 15 declarations — `.select2-close-mask`, `.select2-container--classic .select2-dropdown` |
+| Ink / dark surface | `#000000` | 5 declarations — `.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before`, `.close` |
+| Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `4px`, `0.25rem`, `7px` | `4px` (`.select2-container--default .select2-selection--multiple`); `0.25rem` (`.cl-form-control`); `7px` (`.select2-dropdown`) |
+
+Palette in order of use: `#ffffff` ×15, `#212529` ×7, `#888888` ×5, `#6c757d` ×5, `#f8f9fa` ×5, `#000000` ×5, `#999999` ×4, `#dddddd` ×3.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Rendering

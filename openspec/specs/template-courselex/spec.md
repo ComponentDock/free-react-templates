@@ -4,6 +4,28 @@
 
 Recreation of ColorLib **Educature** (https://colorlib.com/wp/template/educature/) — an education and online courses landing page. The template features a gradient hero with course search, about section, course categories, features grid, faculty members, testimonials, and a multi-column footer.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/educature/ (HTTP 200, 42,909 B, sha256 `7e1fdde32345…`, fetched 2026-10-23) and its design stylesheet(s) `main.css`, `inline-style-1`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#39cfca` | 33 declarations — `.primary-btn, .primary-btn.white:hover, .banner-content .input-wrap .search-btn, .courses-`, `::selection` |
+| Other chromatic values | `#4cd3e3` (5), `#3279bb` (5), `#38a4ff` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 84 declarations — `.primary-btn`, `.text-white` |
+| Ink / dark surface | `#000000` | 7 declarations — `.primary-btn.transparent:hover`, `.primary-btn.white` |
+| Typeface | `Montserrat` (2 rules — `.h1, .h2, .h3, .h4, .h5, .h6`)<br>`Roboto` (1 rule — `body`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `8px`, `8.5px`, `50%` | `3px` (`.genric-btn.radius`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`); `50%` (`.default-switch input + label`) |
+| Gradients | 5 declarations | `.primary-btn, .primary-btn.white:hover, .banner-content .input-wrap .search-btn, .courses-` |
+
+Palette in order of use: `#ffffff` ×84, `#39cfca` ×33, `#222222` ×27, `#f9f9ff` ×26, `#777777` ×16, `#cccccc` ×9, `#000000` ×7, `#f1f9ff` ×7.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar navigation

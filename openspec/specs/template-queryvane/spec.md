@@ -33,6 +33,27 @@ authoritative again — CSS values are canonical over the screenshot
 `#495057`, `#ced4da`; any sampled Tailwind grey above is an approximation of
 these.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/search-form-bar-17.zip (HTTP 200, 252,346 B, sha256 `135efd64581b…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#80bdff` | 1 declarations — `.cl-form-control:focus` |
+| Other chromatic values | `#005cbf` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 8 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#000000` | 3 declarations — `.close`, `.close:hover` |
+| Typeface | `Roboto` (3 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `30px` | `0.25rem` (`.cl-btn`); `30px` (`.search-wrap input[type="search"]`) |
+
+Palette in order of use: `#ffffff` ×8, `#007bff` ×5, `#6c757d` ×4, `#212529` ×3, `#000000` ×3, `#495057` ×2, `#0062cc` ×2, `#0056b3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar displays brand and navigation

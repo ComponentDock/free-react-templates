@@ -13,6 +13,27 @@ multiple parallax background-image sections, featured classes grid, coach
 profiles, newsletter discount, BMI calculator, testimonials, and a footer.
 Brand color: hot pink/magenta (#f61b55). Fonts: Roboto (body) + Rubik (headings).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/fitzone/ (HTTP 200, 25,527 B, sha256 `58e87adca8e3…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f61b55` | 37 declarations — `.custom-navbar`, `.main-menu ul li ul.sub-menu li a:hover` |
+| Other chromatic values | `#f8b600` (12), `#4cd3e3` (8), `#38a4ff` (7) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 87 declarations — `h1`, `h2` |
+| Ink / dark surface | `#222222` | 29 declarations — `.main-menu ul li a`, `h3` |
+| Typeface | `Roboto` (4 rules — `h1`)<br>`Rubik` (4 rules — `h3`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `50%`, `8px`, `8.5px` | `3px` (`.custom-navbar`); `50%` (`.client-slider.owl-carousel img`); `8px` (`.confirm-radio`); `8.5px` (`.default-switch`) |
+
+Palette in order of use: `#ffffff` ×87, `#f61b55` ×37, `#222222` ×29, `#777777` ×14, `#f5f5f5` ×13, `#f8b600` ×12, `#f9f9ff` ×11, `#4cd3e3` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header/Navbar

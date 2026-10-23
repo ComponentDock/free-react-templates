@@ -10,6 +10,28 @@ A Login Form template with full-viewport gradient, login, sign in title, usernam
 - **New name:** `logineclipse` (app folder `apps/logineclipse`, package `@free-react-templates/logineclipse`)
 - **Deploy URL:** https://logineclipse.free.componentdock.com
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/login-form-v9.zip (HTTP 200, 387,383 B, sha256 `bfe750917165…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#4b2354` | 13 declarations — `input:-moz-placeholder`, `input::-moz-placeholder` |
+| Other chromatic values | `#3b5998` (2), `#fa4251` (1), `#bd59d4` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 6 declarations — `.wrap-input100`, `.wrap-login100` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `SourceSansPro-Regular` (4 rules — `.txt1`)<br>`SourceSansPro-Bold` (3 rules — `.alert-validate::before`) | `font-family` declarations in the design sheet |
+| Radii | `20px`, `10px`, `25px`, `50%` | `20px` (`.alert-validate::before`); `10px` (`.wrap-login100`); `25px` (`.login100-form-btn`); `50%` (`.login100-social-item`) |
+| Gradients | 4 declarations | `.container-login100::before` |
+
+Palette in order of use: `#4b2354` ×13, `#ffffff` ×6, `#3b5998` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1, `#666666` ×1, `#999999` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full-viewport gradient background

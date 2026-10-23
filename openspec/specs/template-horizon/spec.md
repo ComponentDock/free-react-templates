@@ -33,6 +33,27 @@ authoritative again — CSS values are canonical over the screenshot
 **Low-chroma values the sheet actually uses** — `#333333`, `#555555`; any
 sampled Tailwind grey above is an approximation of these.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/08-comming-soon.zip (HTTP 200, 371,354 B, sha256 `ca0aca06cfdd…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f84982` | 2 declarations — `#normal-countdown .time-sec .main-time`, `.main-area .notify-btn` |
+| Other chromatic values | `#3aa4f8` (1), `#f43846` (1), `#e1c013` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 5 declarations — `.font-white`, `.main-area` |
+| Ink / dark surface | `#000000` | 1 declarations — `.main-area:after` |
+| Typeface | `Open Sans` (1 rule — `body`)<br>`Poppins` (1 rule — `h1, h3`) | `font-family` declarations in the design sheet |
+| Radii | `50px`, `100px`, `40px` | `50px` (`.main-area .notify-btn`); `100px` (`#normal-countdown .time-sec`); `40px` (`.main-area .social-btn > li > a > i`) |
+
+Palette in order of use: `#ffffff` ×5, `#333333` ×2, `#f84982` ×2, `#555555` ×1, `#e45f74` ×1, `#000000` ×1, `#2a61d6` ×1, `#3aa4f8` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Frame layout with background image

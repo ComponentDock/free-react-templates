@@ -11,6 +11,26 @@ An Architecture / Interior Design template with top, hero, features, about, team
 - **Package:** `@free-react-templates/archcraft`
 - **Surge target:** `archcraft.free.componentdock.com`
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/archs/ (HTTP 200, 49,321 B, sha256 `eb293b4f29c9…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#ff5733` | 18 declarations — `.form-control:active, .form-control:focus`, `.site-mobile-menu .site-nav-wrap a.active, .site-mobile-menu .site-nav-wrap a:hover` |
+| Surface | `#ffffff` | 24 declarations — `.btn.btn-primary`, `.site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5` |
+| Ink / dark surface | `#000000` | 12 declarations — `.text-black`, `::selection` |
+| Typeface | not declared in the design sheet | inherits the framework/system stack |
+| Radii | `50%`, `10px`, `4px` | `50%` (`.media.custom-media .icon:before`); `10px` (`.bg-light form`); `4px` (`.block-25 ul li a .image img`) |
+
+Palette in order of use: `#ffffff` ×24, `#ff5733` ×18, `#000000` ×12, `#212529` ×3, `#999999` ×2, `#ebeef0` ×2, `#dee2e6` ×2, `#333333` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Top bar renders social links and contact info

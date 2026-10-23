@@ -38,6 +38,27 @@ font, olive-green accent (#94aa2a), and a white dropdown panel with shadow
 and arrow indicator. The form includes fields for full name, email address,
 subject, and message, plus a submit button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/dropdown-10.zip (HTTP 200, 194,482 B, sha256 `b2a024d4aff3…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#94aa2a` | 4 declarations — `.cl-btn-group .cl-dropdown-menu:after`, `.cl-btn-group .heading-title` |
+| Other chromatic values | `#708120` (2), `#80bdff` (1), `#005cbf` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 13 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#000000` | 2 declarations — `.heading-section`, `h2, h3, .h2, .h3` |
+| Typeface | `Roboto` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `4px`, `5px`, `4px 4px 0 0` | `0.25rem` (`.cl-btn`); `4px` (`.cl-form-control`); `5px` (`.cl-btn`); `4px 4px 0 0` (`.cl-btn-group .heading-title`) |
+
+Palette in order of use: `#ffffff` ×13, `#212529` ×5, `#6c757d` ×5, `#007bff` ×5, `#94aa2a` ×4, `#495057` ×2, `#0062cc` ×2, `#000000` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page renders heading

@@ -9,6 +9,26 @@ A clean, centered account registration form with a light blue full-viewport back
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-26.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/colorlib-regform-26.zip (HTTP 200, 115,384 B, sha256 `af2216f8dd5b…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#99ccff` | 1 declarations — `button` |
+| Other chromatic values | `#accffe` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 2 declarations — `button`, `form` |
+| Ink / dark surface | `#333333` | 2 declarations — `.form-holder span`, `h3` |
+| Typeface | `Muli-Regular` (6 rules — `.cl-form-control::-webkit-input-placeholder`)<br>`Muli-SemiBold` (3 rules — `.cl-form-control`) | `font-family` declarations in the design sheet |
+
+Palette in order of use: `#999999` ×5, `#ffffff` ×2, `#333333` ×2, `#accffe` ×1, `#666666` ×1, `#99ccff` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- No rounding in the sheet: keep buttons and cards square unless a shared `packages/ui` component supplies its own.
+
 ## Requirements
 
 ### Requirement: Page layout with full-viewport background

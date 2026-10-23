@@ -4,6 +4,26 @@
 
 Recreation of ColorLib "Services" (https://colorlib.com/wp/template/services/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page digital services/agency landing page. Delivers a sticky navbar with bordered logo, a hero with background image and CTA, an about section with 3-column layout, service cards in a 2x3 grid, a filterable project gallery, a testimonials carousel on lime green background, blog post cards, a contact form with office addresses, and a footer with Component Dock link.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/services/ (HTTP 200, 27,120 B, sha256 `e88da7a568fe…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#c2e54f` | 16 declarations — `.btn.btn-primary`, `.form-control:active, .form-control:focus` |
+| Surface | `#ffffff` | 19 declarations — `.btn.btn-primary`, `.btn.btn-primary:hover` |
+| Ink / dark surface | `#000000` | 22 declarations — `.btn.btn-primary:hover`, `::selection` |
+| Typeface | `Jost` (5 rules — `.form-control`) | `font-family` declarations in the design sheet |
+| Radii | `30px`, `50%`, `4px` | `30px` (`.btn`); `50%` (`.comment-list li .vcard img`); `4px` (`.item`) |
+
+Palette in order of use: `#000000` ×22, `#ffffff` ×19, `#c2e54f` ×16, `#cccccc` ×2, `#666666` ×1, `#eff1f3` ×1, `#212529` ×1, `#f8f9fa` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Sticky navbar with logo and navigation links

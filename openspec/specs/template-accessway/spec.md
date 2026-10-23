@@ -4,6 +4,27 @@
 
 Recreation of ColorLib "Login Form 19" (https://colorlib.com/wp/template/login-form-19/). A centered dark navy login card with circular avatar, username/password fields with icons, and a Get Started button.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/login-form-19.zip (HTTP 200, 76,323 B, sha256 `2796b0d5f727…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#b689b0` | 5 declarations — `.cl-form-control:focus, .cl-form-control:active`, `a` |
+| Other chromatic values | `#80bdff` (1), `#005cbf` (1), `#000232` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 10 declarations — `.cl-form-control`, `.cl-form-control:focus` |
+| Ink / dark surface | `#000000` | 2 declarations — `.heading-section`, `h2, h3, .h2, .h3` |
+| Typeface | `Lato` (2 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `0.25rem`, `5px`, `50%`, `40px` | `0.25rem` (`.cl-btn`); `5px` (`.login-wrap`); `50%` (`.login-wrap .img`); `40px` (`.cl-btn`) |
+
+Palette in order of use: `#ffffff` ×10, `#007bff` ×5, `#b689b0` ×5, `#6c757d` ×4, `#212529` ×3, `#495057` ×2, `#0062cc` ×2, `#000000` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Render the login card layout

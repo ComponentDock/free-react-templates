@@ -27,6 +27,28 @@ design_tokens:
 
 Sprintly is a dark-themed fitness and sport landing page template. It recreates the ColorLib "Activitar" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application with 100% test coverage.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/activitar/ (HTTP 200, 51,744 B, sha256 `baf74d391e8c…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`, `inline-style-1`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#e4381c` | 52 declarations — `.nav-menu .mainmenu ul li.active a`, `.primary-btn:after` |
+| Other chromatic values | `#e16521` (28), `#ffca04` (1), `#7d2719` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 111 declarations — `.section-title h2`, `.section-title p` |
+| Ink / dark surface | `#000000` | 6 declarations — `#preloder`, `.map-contact-detalis .open-time h5` |
+| Typeface | `Oswald` (14 rules — `.primary-btn`)<br>`Nunito Sans` (6 rules — `.single-hero-item .hero-text h2`) | `font-family` declarations in the design sheet |
+| Radii | `2px`, `50%`, `4px`, `3px` | `2px` (`.price-section .toggle-option li .switch .slider`); `50%` (`.hero-items .owl-dots button.owl-dot`); `4px` (`.blog-single-sidebar .bs-latest-news .bl-item`); `3px` (`.blog-option .blog-option-right .show-result`) |
+| Gradients | 26 declarations | `.classtime-table table tbody tr td:after`, `.primary-btn:after` |
+
+Palette in order of use: `#ffffff` ×111, `#e4381c` ×52, `#e16521` ×28, `#151515` ×20, `#272727` ×17, `#000000` ×6, `#afb4bf` ×5, `#a6a6a6` ×5.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Page structure and sections

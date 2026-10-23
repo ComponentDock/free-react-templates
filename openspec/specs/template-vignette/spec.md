@@ -6,6 +6,28 @@ Recreation of ColorLib "Karl" (https://colorlib.com/wp/template/karl/)
 
 Vignette is a fashion e-commerce single-page template with a header, promotional banner, hero slider, category showcase, product grid with filters, offer highlight, testimonials carousel, and a footer with newsletter and social links. It faithfully recreates the ColorLib Karl design under a new name with the Vignette brand palette (hot pink #ff084e accents, Open Sans font, dark gray headings).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/karl/ (HTTP 200, 52,137 B, sha256 `d9bc342cdcbb…`, fetched 2026-10-23) and its design stylesheet(s) `core-style.min.css`, `photoswipe.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d6003a` | 35 declarations — `#scrollUp`, `.cart_quantity` |
+| Other chromatic values | `#ff084e` (11), `#7fbdff` (3), `#ff9800` (3) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 63 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 29 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Open Sans` (5 rules — `body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `1rem`, `2px`, `4px` | `50%` (`.cart_quantity`); `1rem` (`.form-range::-moz-range-thumb`); `2px` (`.karl-btn`); `4px` (`.kit-form-status`) |
+| Gradients | 1 declaration | `.single_catagory_area:before` |
+
+Palette in order of use: `#ffffff` ×63, `#d6003a` ×35, `#000000` ×29, `#3a3a3a` ×22, `#6b6b6b` ×20, `#f4f2f8` ×12, `#ff084e` ×11, `#007bff` ×10.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Header with navigation and cart

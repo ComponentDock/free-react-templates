@@ -6,6 +6,28 @@ Recreation of ColorLib "Homebuilder" (https://colorlib.com/wp/template/homebuild
 
 Edifica is a construction and home builder landing page template. It showcases services, company expertise, project portfolio, client testimonials, and a blog, with a newsletter signup and quote request form. The design uses a golden amber (#fdbe34) primary brand color, dark navy (#00043c) navbar, Poppins font, and a professional construction-industry aesthetic.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/homebuilder/ (HTTP 200, 42,757 B, sha256 `4103708a26d5…`, fetched 2026-10-23) and its design stylesheet(s) `style.min.css`, `photoswipe.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#fdbe34` | 55 declarations — `.form-check-input:focus`, `.form-control:focus` |
+| Other chromatic values | `#8f6500` (5), `#00043c` (5), `#fcad02` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 69 declarations — `.form-range:focus::-moz-range-thumb`, `.form-range:focus::-webkit-slider-thumb` |
+| Ink / dark surface | `#000000` | 76 declarations — `.text-bg-info`, `.text-bg-primary` |
+| Typeface | `Poppins` (5 rules — `.hero-wrap .slider-text .subheading`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `5px`, `4px`, `1rem` | `50%` (`.form-check-input[type=radio]`); `5px` (`.block-2 .author .image img`); `4px` (`.kit-form-status`); `1rem` (`.form-range::-moz-range-thumb`) |
+| Gradients | 4 declarations | `.block-2 .front:before`, `.owl-carousel.home-slider .slider-item .slider-text .text:before` |
+
+Palette in order of use: `#000000` ×76, `#ffffff` ×69, `#fdbe34` ×55, `#6c757d` ×5, `#696969` ×5, `#8f6500` ×5, `#00043c` ×5, `#fcad02` ×4.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navigation bar

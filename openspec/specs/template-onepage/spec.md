@@ -30,6 +30,34 @@ CSS 4 + TypeScript.
 OnePage lives in `apps/onepage` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+No machine-readable reference: the demo path
+`https://preview.colorlib.com/theme/one-page-wordpress-themes/` and the source bundle
+`https://preview.colorlib.com/downloads/free/one-page-wordpress-themes.zip` both return HTTP 404
+(checked 2026-10-23 — this ColorLib entry publishes no free demo under that slug).
+Per `docs/replication.md` the published screenshot is the sole reference, so the
+values below are **sampled from the screenshot** (quantised, 12-colour median cut),
+not read from CSS. Treat them as approximate: match the hue, not the byte.
+
+![reference screenshot](https://colorlib.com/wp/wp-content/uploads/sites/2/one-page-wordpress-themes-2.jpg) — 1200×916, 46,602 B.
+
+| Token | Value | Evidence in the screenshot |
+| --- | --- | --- |
+| Accent (dominant chromatic) | `#1088d5` | 31.7% of sampled pixels |
+| Other chromatic values | `#4656ed` | secondary hues in the same screenshot |
+| Surface | `#f8f8f9` | dominant light ground |
+| Ink / dark surface | `#111111` | no dark neutral sampled — keep the app's existing text token |
+| Header band | `#f9f8f8` | most common colour in the top 12% |
+| Typeface | not recoverable from a screenshot | pick a neutral geometric sans already used by neighbouring templates (Poppins / Inter) and keep the screenshot's weight contrast |
+
+Palette sampled in order of area: `#1088d5` ×31.7%, `#f8f8f9` ×19.1%, `#4656ed` ×11.2%.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Because these values are sampled rather than declared, keep the palette to these few hues — do not derive new shades from the screenshot's photo areas.
+- Spacing/radii are not recoverable either: reuse the shared `packages/ui` button and card radii instead of guessing from the thumbnail.
+
 ## Requirements
 
 ### Requirement: Navigation bar

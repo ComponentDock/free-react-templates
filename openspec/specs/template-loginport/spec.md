@@ -10,6 +10,27 @@ A Login Form template with full-viewport centered, login card with green header,
 - **New name:** `loginport` (app folder `apps/loginport`, package `@free-react-templates/loginport`)
 - **Deploy URL:** https://loginport.free.componentdock.com
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the shipped source bundle, not sampled off the screenshot:
+https://preview.colorlib.com/downloads/free/login-form-v8.zip (HTTP 200, 286,740 B, sha256 `9d6442c52211…`, fetched 2026-10-23) — the free source bundle, because `/theme/` returns 404 for this template; design stylesheet(s) `css/style.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#1b3815` | 11 declarations — `a:hover`, `input:-moz-placeholder` |
+| Other chromatic values | `#57b846` (4), `#c80000` (2) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 7 declarations — `.container-login100`, `.wrap-login100` |
+| Ink / dark surface | `#212529` | 1 declarations — `body` |
+| Typeface | `Ubuntu-Regular` (4 rules — `.txt1`)<br>`Ubuntu-Bold` (4 rules — `.input100`) | `font-family` declarations in the design sheet |
+| Radii | `27px`, `20px`, `31px`, `25px` | `27px` (`.input100`); `20px` (`.wrap-login100`); `31px` (`.focus-input100`); `25px` (`.login100-form-btn`) |
+
+Palette in order of use: `#1b3815` ×11, `#ffffff` ×7, `#57b846` ×4, `#ebebeb` ×2, `#c80000` ×2, `#212529` ×1, `#007bff` ×1, `#0056b3` ×1.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Full-viewport centered layout

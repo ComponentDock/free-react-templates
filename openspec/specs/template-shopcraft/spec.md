@@ -31,6 +31,28 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 9. Brand Logos — 5 partner logos
 10. Footer — About Us, Newsletter, Instagram Feed, Follow Us, Component Dock link
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/shop/ (HTTP 200, 34,757 B, sha256 `78e8a0c446b7…`, fetched 2026-10-23) and its design stylesheet(s) `main.css`, `inline-style-0`, `ion.rangeSlider.css`, `ion.rangeSlider.skinFlat.css`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#f41068` | 22 declarations — `.genric-btn.primary`, `::selection` |
+| Other chromatic values | `#fbd600` (5), `#4cd3e3` (5), `#38a4ff` (4) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 83 declarations — `.sample-text-area`, `.text-white` |
+| Ink / dark surface | `#000000` | 13 declarations — `.navbar-nav a`, `.primary-btn a` |
+| Typeface | `Poppins` (3 rules — `.h1, .h2, .h3, .h4, .h5, .h6`) | `font-family` declarations in the design sheet |
+| Radii | `3px`, `50%`, `20px`, `8px` | `3px` (`.genric-btn.radius`); `50%` (`.default-switch input + label`); `20px` (`.genric-btn.circle`); `8px` (`.confirm-radio`) |
+| Gradients | 4 declarations | `.countdown-area .countdown .countdown-item .countdown-timer, .footer-social a:hover i, .si`, `.single-search-product .desc .title` |
+
+Palette in order of use: `#ffffff` ×83, `#222222` ×28, `#f9f9ff` ×25, `#f41068` ×22, `#777777` ×14, `#000000` ×13, `#f9fafc` ×9, `#cccccc` ×8.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: TopBar displays contact information

@@ -6,6 +6,27 @@ Recreation of ColorLib **Webuni** (https://colorlib.com/wp/template/webuni/).
 
 Provide a free React template for online education platforms, featuring course categories, search, course listings with filtering, a teacher signup form, and a newsletter footer. Recreates the ColorLib Webuni design with crimson-red (#d82a4e) brand palette, Raleway typography, and responsive layout.
 
+## Design tokens
+
+<!-- design-tokens-backfill:2026-10-23 -->
+Measured from the live reference, not sampled off the screenshot:
+https://preview.colorlib.com/theme/webuni/ (HTTP 200, 31,594 B, sha256 `9173c97b822a…`, fetched 2026-10-23) and its design stylesheet(s) `style.css`, `inline-style-0`. CSS values are canonical over any screenshot sample.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (most-used chromatic) | `#d82a4e` | 29 declarations — `.main-menu ul li a:hover`, `.site-btn` |
+| Other chromatic values | `#edf4f6` (9), `#e4edef` (3), `#fbb710` (1) | secondary hues in the same sheet |
+| Surface | `#ffffff` | 22 declarations — `.site-btn`, `.site-btn:hover` |
+| Ink / dark surface | `#000000` | 2 declarations — `.accordion-area .panel-link:after`, `.site-btn.btn-dark` |
+| Typeface | `Raleway` (1 rule — `html, body`) | `font-family` declarations in the design sheet |
+| Radii | `50%`, `60px` | `50%` (`.course-item .course-info .course-author .ca-pic`); `60px` (`.loader`) |
+
+Palette in order of use: `#d82a4e` ×29, `#ffffff` ×22, `#edf4f6` ×9, `#474747` ×8, `#878787` ×5, `#e4edef` ×3, `#1f1f1f` ×3, `#000000` ×2.
+
+- Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
+- Do not invent shades: the census above is the sheet's own vocabulary; hovers reuse the listed values.
+- Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and mobile menu
