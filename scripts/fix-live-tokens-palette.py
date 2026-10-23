@@ -57,7 +57,7 @@ def locate(sheets, hexv: str):
 
     The evidence must name the FILE the value was read from: a spec's palette is
     usually painted by the theme sheet, not by the vendor sheet that happens to
-    be largest (measured 2026-10-23: `appson`'s orange sits in `style.css`, but a
+    be largest (measured 2026-10-23: `takeoff`'s orange sits in `style.css`, but a
     size-based pick wrote `bootstrap.min.css`).
     """
     for url, body in sheets:
