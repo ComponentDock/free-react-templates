@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lexicon brand palette — recreated from the ColorLib "Rolax" hotel design
+  /* Lexicon brand palette — measured from the reference hotel design
      (assets/css/style.css): salmon/coral #E29C89 buttons & accents,
      near-black #191514 headings, dark maroon #2e0000 header top bar,
      warm gray #94817E body text. */

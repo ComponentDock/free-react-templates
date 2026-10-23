@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Litigator brand — tan/gold #b49c73 from the ColorLib "Justice" preview
-     (https://preview.colorlib.com/theme/justice/ + css/style.css):
+  /* Litigator brand — tan/gold #b49c73 from the reference stylesheet:
      a dark law-firm theme with tan primary, #2d2d34 dark panels,
      and Rubik font. */
   --color-primary-50: #faf6f0;

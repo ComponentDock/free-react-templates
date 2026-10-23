@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Linnet brand palette — recreated from ColorLib Classic design
+  /* Linnet brand palette — measured from the reference design
      (primary blue #3498db, dark navy #2c3e50). */
   --color-primary-50: #eef6fc;
   --color-primary-100: #d5e9f7;

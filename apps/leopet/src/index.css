@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Leopet brand teal — from the original ColorLib "Leopet" stylesheet
+  /* Leopet brand teal — measured from the reference stylesheet
      (css/style.css): primary buttons, icons, accents. */
   --color-brand: #53c9bb;
 

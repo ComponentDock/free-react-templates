@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Locks brand palette — recreated from the ColorLib "Trim" design
+  /* Locks brand palette — measured from the reference design
      (css/style.css): tan/gold #ce9c6b accents + buttons (pill), brown
      #785028 secondary, pure-black ftco-bg-dark bands + footer. */
   --color-brand: #ce9c6b;

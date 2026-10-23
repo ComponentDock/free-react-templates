@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Locate brand colors — from the ColorLib "Browse" preview
-     (https://preview.colorlib.com/theme/browse/ + css/style.css):
+  /* Locate brand colors — from the reference stylesheet:
      a directory listing theme with teal #00918e primary,
      white body bg, muted #737373/#999999, and Rubik font. */
   --color-primary-50: #e6f7f7;
