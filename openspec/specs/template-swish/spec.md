@@ -117,6 +117,16 @@ Sans", sans-serif`, `font-weight: 900`, `text-transform: uppercase`,
 - The template ships multiple inner pages (blog single, elements, contact) —
   NOT required; recreate the index.html single page only.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (135,505 B, sha256 eecdc84e2994) · <https://preview.colorlib.com/theme/basketball/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Header with top bar and navbar

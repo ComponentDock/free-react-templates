@@ -36,8 +36,9 @@ stated in the spec (49), or the old lead was a framework default painted by a ve
 
 ## What the fixer wrote
 
-**237** specs (`MISSING-BRAND` + `DOC-ONLY`) get one measured row, labelled by the property
-that paints the colour:
+**239** specs (`MISSING-BRAND` + `DOC-ONLY`) get one measured row, labelled by the property
+that paints the colour (`237` in the first pass, `2` found by the post-fix re-run and closed in
+the follow-up: `dunkly`, `swish` — the cascade winner changed once a sibling row existed):
 
 | label | property |
 | --- | --- |
@@ -50,13 +51,15 @@ that paints the colour:
 compares claims with what the shipped app paints, and would report a wave of UNSHIPPED apps
 without any app changing. The row is a statement about the *reference*, not about the app:
 
-* **8** of the 237 colours are painted by the shipped app (corroborated),
+* **8** of the 239 colours are painted by the shipped app (corroborated),
 * **139** apps paint the palette their prep stated instead — the app is not wrong, the record
   was incomplete,
 * **90** preps have no app at all (prep history for a design that shipped under another name).
 
-Idempotent: a second run reports `already-stated` for every row and writes nothing. 40 of these
-specs had no `## Design tokens` section at all — it is created before `## Requirements`.
+Idempotent: a second run reports `already-stated` for every row and writes nothing, and the
+axis converges — re-running it at the fix commit leaves `MISSING-BRAND 0`, `DOC-ONLY 0`
+(1,004 → 780 subjects). 42 of these specs had no `## Design tokens` section at all — it is
+created before `## Requirements`.
 
 ## Guards (each closes a measured false-positive class)
 
@@ -321,6 +324,8 @@ fixer's idempotence, the no-brand-row rule and the partition invariant.
 | `whisker` | MISSING-BRAND | `#1f2b7b` | `background` on `.genric-btn.primary` | style.css |
 | `workhive` | MISSING-BRAND | `#415094` | `color` on `.genric-btn.link` | style.css |
 | `yogapulse` | MISSING-BRAND | `#001943` | `color` on `.pricing__item h4` | style.css |
+| `dunkly` | MISSING-BRAND | `#415094` | `color` on `.genric-btn.link` | style.css |
+| `swish` | MISSING-BRAND | `#415094` | `color` on `.genric-btn.link` | style.css |
 
 ## Next axes
 
