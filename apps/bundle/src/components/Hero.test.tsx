@@ -14,6 +14,6 @@ describe('Hero', () => {
 
     expect(screen.getByRole('link', { name: 'Explore Now' })).toHaveAttribute('href', '#features')
 
-    expect(screen.getByRole('img', { name: 'BulkApp app phone mockup' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'Bundle app phone mockup' })).toBeInTheDocument()
   })
 })

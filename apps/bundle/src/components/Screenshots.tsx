@@ -1,4 +1,4 @@
-const shots = ['bulkapp-shot-1', 'bulkapp-shot-2', 'bulkapp-shot-3', 'bulkapp-shot-4'] as const
+const shots = ['bundle-shot-1', 'bundle-shot-2', 'bundle-shot-3', 'bundle-shot-4'] as const
 
 export function Screenshots() {
   return (
@@ -17,7 +17,7 @@ export function Screenshots() {
             <img
               key={seed}
               src={`https://picsum.photos/seed/${seed}/300/560`}
-              alt={`BulkApp screenshot ${index + 1}`}
+              alt={`Bundle screenshot ${index + 1}`}
               className="w-full rounded-lg border border-gray-100 object-cover shadow-md dark:border-gray-800"
             />
           ))}

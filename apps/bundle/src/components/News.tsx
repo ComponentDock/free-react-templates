@@ -2,21 +2,21 @@ const posts = [
   {
     title: 'Benjamin Franklin Method Of Habit Formation',
     date: '10 April, 2018',
-    seed: 'bulkapp-news-1',
+    seed: 'bundle-news-1',
     blurb:
       'There are many kinds of narratives and organizing principles. Science is driven by evidence gathered in experiments, and by the falsification of extant theories.',
   },
   {
     title: 'Designing For Mobile-First Audiences',
     date: '22 May, 2018',
-    seed: 'bulkapp-news-2',
+    seed: 'bundle-news-2',
     blurb:
       'Every screen is a chance to delight. Learn how thoughtful spacing, clear hierarchy, and fast interactions keep mobile users coming back.',
   },
   {
     title: 'The Art Of Reliable Software Releases',
     date: '3 June, 2018',
-    seed: 'bulkapp-news-3',
+    seed: 'bundle-news-3',
     blurb:
       'Shipping with confidence means testing early, automating the boring parts, and keeping a calm rollback plan for the moments that matter.',
   },

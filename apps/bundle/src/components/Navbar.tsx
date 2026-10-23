@@ -25,7 +25,7 @@ export function Navbar() {
           href="#home"
           className="border-l-4 border-primary-400 pl-3 font-display text-2xl font-bold tracking-wide text-white"
         >
-          BulkApp
+          Bundle
         </a>
 
         <div className="flex items-center gap-4">

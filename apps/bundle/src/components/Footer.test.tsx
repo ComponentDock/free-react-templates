@@ -33,7 +33,7 @@ describe('Footer', () => {
     }
 
     expect(
-      screen.getByText(`Copyright © ${new Date().getFullYear()} BulkApp. All rights reserved.`),
+      screen.getByText(`Copyright © ${new Date().getFullYear()} Bundle. All rights reserved.`),
     ).toBeInTheDocument()
     expect(screen.getByText('Terms & Conditions')).toBeInTheDocument()
     expect(screen.getByText('Privacy Policy')).toBeInTheDocument()

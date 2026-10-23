@@ -17,7 +17,7 @@ export function Testimonials() {
           </blockquote>
           <figcaption className="mt-8">
             <img
-              src="https://picsum.photos/seed/bulkapp-avatar/64/64"
+              src="https://picsum.photos/seed/bundle-avatar/64/64"
               alt="Mark Alviro Wiens"
               className="mx-auto h-16 w-16 rounded-full object-cover"
             />

@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/bulkapp",
+  "name": "@free-react-templates/bundle",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://bulkapp.free.componentdock.com",
+  "homepage": "https://bundle.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
