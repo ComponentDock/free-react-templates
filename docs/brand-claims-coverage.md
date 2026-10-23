@@ -321,7 +321,6 @@ which is the live-token axis' subject.
 
 | spec | colour |
 | --- | --- |
-| `appson` | `#ff6818` |
 | `elevate` | `#81d742` |
 | `formlane` | `#009efd` |
 | `formwise` | `#5b8fb9` |
@@ -329,6 +328,7 @@ which is the live-token axis' subject.
 | `lenscraft` | `#fc6060` |
 | `rosette` | `#f8c8c8` |
 | `stayhaven` | `#cc0000` |
+| `takeoff` | `#ff6818` |
 | `talon` | `#ff5a00` |
 | `ticker` | `#ebb25f` |
 | `vaultly` | `#6d49f4` |
