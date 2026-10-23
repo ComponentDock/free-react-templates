@@ -9,7 +9,7 @@ export function AboutTwo() {
             We Believe that Interior beautifies the Total Architecture
           </h2>
           <p className="mt-6 leading-relaxed text-muted dark:text-gray-400">
-            Download Appru today and let the architecture of your app work for you — thoughtful
+            Download Rocket today and let the architecture of your app work for you — thoughtful
             details, honest design, and a standard of conduct your whole team can stand behind.
           </p>
           <div className="mt-10">
@@ -17,8 +17,8 @@ export function AboutTwo() {
           </div>
         </div>
         <img
-          src="https://picsum.photos/seed/appru-about-2/600/800"
-          alt="Appru app on a phone screen"
+          src="https://picsum.photos/seed/rocket-about-2/600/800"
+          alt="Rocket app on a phone screen"
           className="mx-auto w-full max-w-sm rounded-3xl shadow-xl"
         />
       </div>

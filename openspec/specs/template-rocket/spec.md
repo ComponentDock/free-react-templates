@@ -1,8 +1,8 @@
-# Template: Appru (App Landing Page)
+# Template: Rocket (App Landing Page)
 
 ## Purpose
 
-Appru is a single-page app landing template in the free-react-templates
+Rocket is a single-page app landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Appru"
 website template design (see TEMPLATES.md), built under a different name with
 the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -46,25 +46,25 @@ the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Buttons: `.primary-btn` — height 50px, 45px side padding,
     **border-radius 0** (square), gradient background, white uppercase text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/appru-<n>/<w>/<h>`); icons → lucide-react; the
+  (`picsum.photos/seed/rocket-<n>/<w>/<h>`); icons → lucide-react; the
   phone mockup → stylized div/illustration; store badges → styled buttons
   with lucide icons; no assets copied.
 
-Appru lives in `apps/appru` and uses shared components from `packages/ui`
+Rocket lives in `apps/rocket` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Appru",
+The system SHALL render a top navigation bar with the site name "Rocket",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Appru page is rendered
+- **GIVEN** the Rocket page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Appru" and links to Home, About, Pricing, Features, and Contact
+- **THEN** the navbar SHALL show the site name "Rocket" and links to Home, About, Pricing, Features, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -175,10 +175,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Appru app is rendered
+- **GIVEN** the Rocket app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Appru — App Landing Template"
+- **AND** the document title SHALL be "Rocket — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -198,7 +198,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/appru/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/rocket/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -207,7 +207,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/appru/` is inspected
+- **WHEN** every non-test file under `apps/rocket/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -215,7 +215,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Appru" and links to Home, About, Pricing, Features, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Rocket" and links to Home, About, Pricing, Features, and Contact
 - [x] Hero section — it SHALL contain a level-1 heading "App That Suits You Better"
 - [ ] Stats band — it SHALL show the figures 100K+ Total Downloads, 10K+ Positive Reviews, 50K+ Daily Visitors, 0.02% Uninstallation Rate, and 15K+ Pro User
 - [x] Features section — it SHALL contain a heading "Unique Features" and a blurb

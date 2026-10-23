@@ -47,7 +47,7 @@
   - Font: **Montserrat** (Google Fonts via `<link>`).
 - **Recreation name:** Appson. App folder `apps/appson`, package
   `@free-react-templates/appson`.
-- **Recreation approach:** copy `apps/appru` (closest app-landing pattern),
+- **Recreation approach:** copy `apps/rocket` (closest app-landing pattern),
   re-theme tokens to orange `#ff6818`, Montserrat; picsum placeholders
   (`picsum.photos/seed/appson-<n>/<w>/<h>`); lucide-react icons; no assets
   copied.
@@ -61,7 +61,7 @@
       pricing → team → testimonial → blog → contact → newsletter → footer).
 - [x] Validate spec: `npm run spec:validate`.
 - [ ] Create `apps/appson` (copy the section-rich landing app pattern —
-      Appru; rename package to `@free-react-templates/appson`).
+      Rocket; rename package to `@free-react-templates/appson`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →

@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/appru",
+  "name": "@free-react-templates/rocket",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://appru.free.componentdock.com",
+  "homepage": "https://rocket.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

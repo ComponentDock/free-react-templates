@@ -5,8 +5,8 @@ export function AboutOne() {
     <section id="about-1" className="bg-white py-24 dark:bg-gray-950">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
         <img
-          src="https://picsum.photos/seed/appru-about-1/600/800"
-          alt="Appru phone in hand"
+          src="https://picsum.photos/seed/rocket-about-1/600/800"
+          alt="Rocket phone in hand"
           className="mx-auto w-full max-w-sm rounded-3xl shadow-xl"
         />
         <div>

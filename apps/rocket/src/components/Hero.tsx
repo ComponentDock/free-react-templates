@@ -7,7 +7,7 @@ export function Hero() {
       className="relative overflow-hidden bg-night px-4 pb-24 pt-40 sm:px-6 lg:pb-32 lg:pt-48"
     >
       <img
-        src="https://picsum.photos/seed/appru-hero/1600/900"
+        src="https://picsum.photos/seed/rocket-hero/1600/900"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover opacity-25"
@@ -20,7 +20,7 @@ export function Hero() {
             App That Suits You Better
           </h1>
           <p className="mt-6 max-w-lg leading-relaxed text-white/80">
-            Inappropriate behavior is often laughed off as &ldquo;boys will be boys&rdquo; — Appru
+            Inappropriate behavior is often laughed off as &ldquo;boys will be boys&rdquo; — Rocket
             raises the standard for conduct, clarity, and care in every interaction.
           </p>
           <div className="mt-10">
@@ -28,8 +28,8 @@ export function Hero() {
           </div>
         </div>
         <img
-          src="https://picsum.photos/seed/appru-phone/600/900"
-          alt="Appru app phone mockup"
+          src="https://picsum.photos/seed/rocket-phone/600/900"
+          alt="Rocket app phone mockup"
           className="mx-auto w-full max-w-sm rounded-3xl shadow-2xl"
         />
       </div>

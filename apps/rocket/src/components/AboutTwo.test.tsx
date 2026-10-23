@@ -14,10 +14,10 @@ describe('AboutTwo', () => {
       name: 'We Believe that Interior beautifies the Total Architecture',
     })
     const image = within(section as HTMLElement).getByRole('img', {
-      name: 'Appru app on a phone screen',
+      name: 'Rocket app on a phone screen',
     })
 
-    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/appru-about-2/600/800')
+    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/rocket-about-2/600/800')
 
     expect(
       within(section as HTMLElement).getByRole('link', { name: 'Available on App Store' }),

@@ -21,9 +21,9 @@ describe('Hero', () => {
       '#pricing',
     )
 
-    expect(screen.getByRole('img', { name: 'Appru app phone mockup' })).toHaveAttribute(
+    expect(screen.getByRole('img', { name: 'Rocket app phone mockup' })).toHaveAttribute(
       'src',
-      'https://picsum.photos/seed/appru-phone/600/900',
+      'https://picsum.photos/seed/rocket-phone/600/900',
     )
   })
 })

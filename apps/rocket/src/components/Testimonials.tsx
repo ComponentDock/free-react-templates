@@ -27,7 +27,7 @@ export function Testimonials() {
           {avatars.map((avatar) => (
             <li key={avatar}>
               <img
-                src={`https://picsum.photos/seed/appru-customer-${avatar}/80/80`}
+                src={`https://picsum.photos/seed/rocket-customer-${avatar}/80/80`}
                 alt={`Customer avatar ${avatar}`}
                 className="h-14 w-14 rounded-full border-2 border-azure object-cover"
               />

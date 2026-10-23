@@ -14,10 +14,10 @@ describe('AboutOne', () => {
       name: 'We Believe that Interior beautifies the Total Architecture',
     })
     const image = within(section as HTMLElement).getByRole('img', {
-      name: 'Appru phone in hand',
+      name: 'Rocket phone in hand',
     })
 
-    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/appru-about-1/600/800')
+    expect(image).toHaveAttribute('src', 'https://picsum.photos/seed/rocket-about-1/600/800')
 
     const details = within(section as HTMLElement).getByRole('link', { name: 'Get Details' })
     expect(details).toHaveAttribute('href', '#pricing')
