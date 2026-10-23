@@ -181,3 +181,27 @@ https://www.componentdock.com/.
 - **WHEN** the footer loads
 - **THEN** a link to https://www.componentdock.com/ with "Component Dock" text
   is visible in the bottom bar
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- respawn` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 12 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Top bar with social icons and right-side navigation
+      - Logo navbar with mega-menu navigation
+      - Hero section with featured post and trending sidebar
+      - Latest preview section with carousel of post cards
+      - News & update section with tabbed content grid
+      - Video guide section with tabbed carousel
+      - Instagram post section with horizontal image grid
+      - Dark footer with brand info, editor's choice, and social links
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

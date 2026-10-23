@@ -309,6 +309,34 @@ and TEMPLATES.md.
 - **THEN** no file SHALL contain the strings "colorlib" or "ColorLib" or
   "preview.colorlib.com"
 
+## Verification checklist
+
+- [ ] `npm run verify:app -- courtcraft` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 17 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Header + navigation
+      - Hero slider
+      - Statistics counter
+      - Services / Practice Areas
+      - CTA parallax banner
+      - Testimonials
+      - Contact form
+      - Blog posts
+      - Attorney team
+      - Intro banner
+      - Footer
+      - Footer compliance
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
 ## Shape re-verification (live sheet, 2026-10-22)
 
 - `lawmaker`: `.btn{border-radius:30px}` (`.btn-lg` 6 px) — the primary button is a pill.

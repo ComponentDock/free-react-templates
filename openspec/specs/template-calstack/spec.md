@@ -42,3 +42,22 @@ The footer SHALL display a link to `https://www.componentdock.com/` branded as "
 
 - **WHEN** the user views the footer
 - **THEN** it contains a link to componentdock.com branded as "Component Dock"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- calstack` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 5 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Interactive calendar grid with month navigation
+      - Dual calendar layout
+      - Footer with Component Dock branding
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

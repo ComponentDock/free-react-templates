@@ -187,3 +187,30 @@ comments, or component code. Provenance lives only in the spec and TEMPLATES.md.
 
 - **WHEN** searching app source files for "colorlib"
 - **THEN** no matches are found
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- casepoint` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 19 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navigation header
+      - Hero section
+      - Practice Areas
+      - About section
+      - Contact form
+      - Case Studies
+      - CTA Banner
+      - Team section
+      - Testimonial section
+      - Blog section
+      - Footer
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

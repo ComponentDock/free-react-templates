@@ -371,3 +371,29 @@ The system SHALL use the specified design tokens consistently across all compone
 - **WHEN** font families are applied
 - **THEN** all text SHALL use the 'Raleway' font family
 - **AND** headings SHALL have appropriate font weights (700 for h1-h3, 600 for h4-h6)
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- trowel` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 31 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar
+      - Hero section
+      - AboutSection
+      - ServicesSection
+      - ProjectSection
+      - StatsSection
+      - Testimonials
+      - BlogSection
+      - Footer
+      - Accessibility
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

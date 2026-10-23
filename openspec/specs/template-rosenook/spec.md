@@ -147,3 +147,26 @@ The application SHALL NOT contain any references to ColorLib in app source code,
 
 - **WHEN** inspecting apps/rosenook/src/
 - **THEN** no file contains the string "colorlib" or "ColorLib"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- rosenook` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 11 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Footer background and layout
+      - Three-column link section
+      - Social icons
+      - Newsletter subscription form
+      - Copyright and legal links
+      - Component Dock branding
+      - Typography
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

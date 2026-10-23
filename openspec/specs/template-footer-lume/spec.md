@@ -137,3 +137,26 @@ The footer SHALL include a link to https://www.componentdock.com/ branded as "Co
 - **WHEN** the FooterLume page loads
 - **THEN** the footer includes a link to "https://www.componentdock.com/"
 - **AND** the link text reads "Component Dock"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- footer-lume` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 8 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Content area renders above footer
+      - Footer section renders with dark background
+      - Navigation menu links are present
+      - Social media icons are present
+      - Copyright bar is displayed
+      - Footer heading styling
+      - Component Dock footer link
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

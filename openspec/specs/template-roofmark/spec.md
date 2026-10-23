@@ -131,3 +131,27 @@ The app source code SHALL NOT contain any references to "colorlib" in files unde
 
 - **WHEN** the source code is inspected
 - **THEN** no file contains the string "colorlib"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- roofmark` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 14 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Header displays contact info and navigation
+      - Hero slider displays property slides
+      - Search bar allows property search
+      - Featured properties section shows listings
+      - Hot deal section shows featured listing
+      - Testimonials section displays client quotes
+      - Footer displays site information
+      - Footer links to Component Dock
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

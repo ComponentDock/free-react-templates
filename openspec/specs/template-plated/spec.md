@@ -67,3 +67,20 @@
 - **GIVEN** the user scrolls to the bottom of the page
 - **WHEN** the footer renders
 - **THEN** it should display quick links, contact info, and a link to https://www.componentdock.com/
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- plated` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 6 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Plated Restaurant Template Landing Page
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

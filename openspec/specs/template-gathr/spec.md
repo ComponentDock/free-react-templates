@@ -202,3 +202,32 @@ footer, branded as "Component Dock".
 - **GIVEN** the footer copyright is rendered
 - **THEN** a link to https://www.componentdock.com/ SHALL be present
 - **AND** the link text SHALL contain "Component Dock"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- gathr` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 17 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar
+      - Hero section
+      - Event info cards
+      - Countdown timer
+      - About section
+      - Features grid
+      - Speakers gallery
+      - Pricing table
+      - Event calendar table
+      - Partners section
+      - CTA banner
+      - Footer
+      - Component Dock footer link
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

@@ -123,3 +123,27 @@ All application code SHALL have 100% line, function, branch, and statement cover
 
 - **WHEN** tests are run with coverage enabled
 - **THEN** lines, functions, branches, and statements coverage SHALL all be 100%
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- questbar` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 13 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Search bar renders all elements
+      - Page title
+      - Category dropdown opens and closes
+      - Category selection updates label
+      - Search input accepts text
+      - Form submission
+      - Footer with Component Dock link
+      - 100% test coverage
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

@@ -223,3 +223,31 @@ a document title.
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Rover — Dog Care Template"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- rover` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 17 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navigation bar
+      - Hero section
+      - Welcome section with feature tiles
+      - Featured veterinarian section
+      - Pricing section
+      - FAQ section
+      - Testimonials section
+      - Blog section
+      - Services section
+      - Contact section
+      - Footer
+      - Page composition
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

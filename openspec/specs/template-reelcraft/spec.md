@@ -181,3 +181,30 @@ The template SHALL use lucide-react for icons, with inline SVGs for brand icons.
 - **WHEN** the template renders icons
 - **THEN** non-brand icons use lucide-react components
 - **AND** brand/social icons use inline SVG elements
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- reelcraft` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 18 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Transparent header overlay
+      - Hero section with slider
+      - Services section
+      - Work gallery
+      - Counter stats
+      - Team section
+      - Blog section
+      - Call to action
+      - Footer
+      - Placeholder images
+      - Icons from lucide-react
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

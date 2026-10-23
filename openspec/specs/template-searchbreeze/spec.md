@@ -158,3 +158,27 @@ on mount.
 
 - **WHEN** the page loads
 - **THEN** the document title is "Searchbreeze — Advanced Search Form"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- searchbreeze` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 13 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Page layout and background
+      - Keyword search bar
+      - Cyan divider
+      - Advanced Search section with six filters
+      - Footer action row
+      - Form submission prevention
+      - Footer with Component Dock link
+      - Document title
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

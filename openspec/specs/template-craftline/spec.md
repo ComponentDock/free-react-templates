@@ -146,3 +146,31 @@ The template SHALL NOT contain any references to "colorlib" in app source files.
 
 - **WHEN** searching apps/craftline/src for "colorlib"
 - **THEN** no matches are found
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- craftline` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 17 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Fixed sidebar navigation
+      - Hero section
+      - About section
+      - Counters section
+      - Services section
+      - Skills section
+      - Education section
+      - Experience section
+      - Work portfolio section
+      - Blog section
+      - Contact section
+      - Footer with Component Dock link
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

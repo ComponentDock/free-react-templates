@@ -180,3 +180,20 @@ Extracted from the live preview CSS (`css/style.css`):
 - **GIVEN** I navigate the page using only the Tab key
 - **THEN** I can reach all navigation links, form fields, buttons, and slider controls
 - **AND** focus indicators are visible on each focused element
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- frontier` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 15 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Frontier — Travel / Hotel Booking Template
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

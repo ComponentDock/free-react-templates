@@ -159,3 +159,28 @@ The app source code SHALL NOT contain any references to ColorLib, preview.colorl
 
 - **GIVEN** the app is built
 - **THEN** no source file in apps/searchsnap/ contains the string "colorlib" (case-insensitive)
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- searchsnap` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 11 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Full-screen overlay renders with light gray background
+      - Close button displays in top-right corner
+      - Close button dismisses overlay
+      - Pill-shaped search bar renders centered
+      - Search input accepts text
+      - Search button is visible and styled
+      - Search button triggers search action
+      - Enter key triggers search
+      - Footer links to Component Dock
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

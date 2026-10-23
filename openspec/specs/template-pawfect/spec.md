@@ -187,3 +187,29 @@ and a document title.
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the top bar and Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Pawfect — Pet Care Website Template"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- pawfect` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 11 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Top info bar
+      - Navigation bar
+      - Hero section
+      - Services section
+      - About section
+      - Team section
+      - Testimonials and counters
+      - Contact CTA band
+      - Footer
+      - Page composition
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

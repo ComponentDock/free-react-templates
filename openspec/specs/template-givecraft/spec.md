@@ -179,3 +179,31 @@ The footer SHALL link to `https://www.componentdock.com/` with text "Component D
 - **WHEN** I inspect the footer
 - **THEN** a link to `https://www.componentdock.com/` is present
 - **AND** the link text contains "Component Dock"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- givecraft` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 12 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar displays logo and navigation links
+      - Hero banner displays headline and dual CTAs
+      - Causes section displays three cause cards
+      - About section displays nonprofit team info
+      - Featured causes section displays cause cards with progress
+      - Upcoming events section displays event cards with countdown
+      - Team section displays volunteer cards
+      - CTA section displays volunteer call-to-action
+      - Story section displays blog cards
+      - Newsletter subscribe bar
+      - Footer displays mission, links, gallery, and contact
+      - Footer links to ComponentDock
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

@@ -219,3 +219,32 @@ The proton workspace SHALL produce a successful production build.
 
 - **WHEN** running `npm run build` in the proton workspace
 - **THEN** the build completes successfully
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- proton` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 16 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar renders with correct navigation links
+      - Hero section displays headline and CTA
+      - Features overlap card renders three feature items
+      - About section displays heading and two-column text
+      - Image carousel renders three images
+      - Services grid shows six service cards
+      - Portfolio thumbnails render in asymmetric grid
+      - Stats counter displays three metrics on blue background
+      - Testimonials section renders a quote
+      - Footer displays multi-column layout with links
+      - Footer links to Component Dock
+      - Tests pass with 100% coverage
+      - Build succeeds
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

@@ -200,3 +200,32 @@ The template MUST match the original ColorLib Umeet design tokens.
 - **THEN** primary color is #3b1d82 (deep purple)
 - **AND** accent color is #ea0763 (hot pink)
 - **AND** fonts are Oswald for headings and Roboto for body
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- conclave` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 18 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Page structure and sections
+      - Navbar
+      - Hero Banner
+      - Innovation/Countdown section
+      - Features section
+      - Speakers section
+      - Schedule section
+      - Pricing section
+      - Sponsors section
+      - Gallery section
+      - Blog section
+      - Footer
+      - Design fidelity
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

@@ -219,3 +219,33 @@ The app footer SHALL include a Component Dock attribution link.
 - **WHEN** the user views the footer
 - **THEN** a link to `https://www.componentdock.com/` is present
 - **AND** the link text includes "Component Dock" branding
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- elevate` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 29 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar navigation
+      - Hero slider
+      - About section
+      - Services section
+      - Statistics counters
+      - Pricing plans
+      - Testimonials carousel
+      - CTA banner
+      - Blog section
+      - Contact form
+      - Footer
+      - Accessibility
+      - Placeholder content
+      - Footer branding
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

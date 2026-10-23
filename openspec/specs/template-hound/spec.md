@@ -168,3 +168,28 @@ and a document title.
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
 - **AND** the document title SHALL be "Hound — Dog Breeds Website Template"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- hound` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 10 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navigation bar
+      - Hero slider
+      - Dog life intro
+      - About section
+      - Team section
+      - Dog breed collections
+      - Recent blog posts
+      - Footer
+      - Page composition
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

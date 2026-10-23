@@ -199,6 +199,30 @@ to trigger on close, proper ARIA attributes.
 - **GIVEN** the modal is open and I close it
 - **THEN** focus returns to the "Launch Modal" button
 
+## Verification checklist
+
+- [ ] `npm run verify:app -- promptly` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 15 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Page layout and launch button
+      - Modal opens on button click
+      - Modal close behavior
+      - Modal visual design
+      - Modal text content
+      - Footer with Component Dock link
+      - Dark mode support
+      - Accessibility
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
+
 ## Shape re-verification (live sheet, 2026-10-22)
 
 - `modal-11`: `.cl-btn{border-radius:0px}` — the launch button is square, not a 40 px pill.

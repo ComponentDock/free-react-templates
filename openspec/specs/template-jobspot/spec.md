@@ -187,3 +187,32 @@ The system SHALL not reference ColorLib in any app source code. All placeholder 
 
 - **WHEN** the page loads
 - **THEN** Source Sans 3 is loaded from Google Fonts
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- jobspot` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 17 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar
+      - Hero section
+      - Job search bar
+      - Services section
+      - Categories section
+      - Featured jobs section
+      - CTA banner
+      - Testimonials section
+      - Latest candidates section
+      - Recent blog section
+      - Newsletter section
+      - Footer
+      - Accessibility and standards
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

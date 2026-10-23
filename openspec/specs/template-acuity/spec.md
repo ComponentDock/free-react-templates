@@ -42,3 +42,20 @@ As a site visitor, I want to interact with profile widgets and collapsible accor
 - **WHEN** the page renders
 - **THEN** the accordion cards stack neatly with responsive padding and readable typography
 - **AND** the footer links to Component Dock (`https://www.componentdock.com/`)
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- acuity` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 3 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Interactive Profile & Widget Accordion Sections
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

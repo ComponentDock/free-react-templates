@@ -78,3 +78,22 @@ The template SHALL NOT reference "colorlib" in any source file, comment, or asse
 #### Scenario: Provenance isolation
 
 - **THEN** no file under apps/platter/ contains the string "colorlib"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- platter` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 10 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Three-step reservation wizard
+      - Design fidelity
+      - Mandatory footer
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").

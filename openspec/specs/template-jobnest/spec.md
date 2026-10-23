@@ -237,3 +237,30 @@ Every template's footer MUST link https://www.componentdock.com/ branded as "Com
 - **WHEN** the user views the footer
 - **THEN** a link to https://www.componentdock.com/ SHALL be present
 - **AND** the link text SHALL include "Component Dock"
+
+## Verification checklist
+
+- [ ] `npm run verify:app -- jobnest` green: typecheck → lint → vitest
+      (100% coverage) → build (per-app gate).
+- [ ] All 22 scenarios above are covered by colocated tests
+      (query by role/label; test names mirror the scenario names):
+      - Navbar displays brand and navigation
+      - Hero displays headline and CTA
+      - Job search bar with filters
+      - Popular categories grid
+      - Job listings section
+      - Featured candidates carousel
+      - Top companies section
+      - CTA banner with dual calls to action
+      - Testimonials section
+      - Footer with columns and newsletter
+      - Footer links to Component Dock
+- [ ] Sections render in the order listed in the requirements above,
+      with no console errors on load.
+- [ ] Responsive check at 375 / 768 / 1280px: no horizontal overflow,
+      nav collapses to the mobile toggle, grids reflow.
+- [ ] Design tokens from the reference are applied via the Tailwind
+      theme (brand color, font, radii) — no hard-coded hex in sections.
+- [ ] No ColorLib name, domain or URL in any app file or filename —
+      provenance stays in this spec, TEMPLATES.md and the PR.
+- [ ] Footer links https://www.componentdock.com/ ("Component Dock").
