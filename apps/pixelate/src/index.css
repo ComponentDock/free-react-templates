@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pixelate brand palette — recreated from ColorLib Calvin design
+  /* Pixelate brand palette — measured from the reference design
      (style.css): blue #6382e6 accents, coral #FF8553 buttons,
      light bg #fbf9ff, dark text #000d21. */
   --color-brand: #6382e6;

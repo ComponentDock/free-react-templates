@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Pixelpress brand palette — recreated from the ColorLib "Endgam" template
-     (https://colorlib.com/wp/template/endgam/), tokens extracted from the
-     live preview's css/style.css:
+  /* Pixelpress brand palette — measured from the reference design;
+     tokens extracted from the reference stylesheet:
      - magenta #b01ba5 (primary accent: category links, hero bottom border,
        social hover bg, offset button shadow, active slider dot) · brighter
        magenta #c313b7 · glow rgba(226,30,228,0.24)

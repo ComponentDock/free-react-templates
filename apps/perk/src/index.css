@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Perk brand palette — recreated from the ColorLib "Coffee" design
+  /* Perk brand palette — measured from the reference design
      (css/main.css): gold #b68834 buttons/accents, dark #222 headings,
      muted #777 body text, light bg #f9f9ff sections. */
   --color-brand: #b68834;

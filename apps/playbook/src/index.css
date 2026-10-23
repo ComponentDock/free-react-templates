@@ -4,8 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Playbook brand tokens — from the ColorLib "Strategy" preview
-     (https://preview.colorlib.com/theme/strategy/ + css/style.css):
+  /* Playbook brand tokens — from the reference stylesheet (css/style.css):
      a portfolio/creative agency theme with brand red #dc3545,
      dark text #000, secondary text #495057 / #6c757d, and
      light gray backgrounds #f8f9fa / #f6f6f6. */
@@ -22,7 +21,7 @@
   --color-white: #ffffff;
   --color-footer-border: #f4f4f4;
 
-  /* System font stack — matching the ColorLib Strategy template. */
+  /* System font stack — matching the reference design. */
   --font-sans:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
