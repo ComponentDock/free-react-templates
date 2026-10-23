@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('renders the link columns, social links, and copyright bar', () => {
     render(<Footer />)
 
-    for (const title of ['About', 'Solutions', 'Why Bold', 'Resources', 'Company']) {
+    for (const title of ['About', 'Solutions', 'Why Strive', 'Resources', 'Company']) {
       expect(screen.getByRole('heading', { level: 3, name: title })).toBeInTheDocument()
     }
 
@@ -20,7 +20,7 @@ describe('Footer', () => {
     }
 
     expect(
-      screen.getByText(`Copyright © ${new Date().getFullYear()} Bold. All rights reserved.`),
+      screen.getByText(`Copyright © ${new Date().getFullYear()} Strive. All rights reserved.`),
     ).toBeInTheDocument()
     expect(screen.getByText('Terms & Conditions')).toBeInTheDocument()
     expect(screen.getByText('Privacy Policy')).toBeInTheDocument()

@@ -12,7 +12,7 @@ const columns = [
     links: ['Studio', 'Creative', 'Design'],
   },
   {
-    title: 'Why Bold',
+    title: 'Why Strive',
     links: ['Marketing', 'Social Media', 'Agencies', 'Internal', 'Enterprise', 'Communications'],
   },
   {
@@ -57,7 +57,7 @@ export function Footer() {
         </div>
 
         <p className="mt-8 border-t border-white/10 pt-8 text-center text-sm text-gray-500">
-          Copyright © {new Date().getFullYear()} Bold. All rights reserved.
+          Copyright © {new Date().getFullYear()} Strive. All rights reserved.
         </p>
         <div className="mt-4 flex justify-center gap-6 text-sm text-gray-500">
           <a href="#home" className="transition-colors hover:text-white">

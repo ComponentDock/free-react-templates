@@ -24,7 +24,7 @@ export function Navbar() {
           href="#home"
           className="border-l-4 border-primary-500 pl-3 font-display text-2xl font-bold tracking-wide text-white"
         >
-          Bold
+          Strive
         </a>
 
         <div className="flex items-center gap-4">

@@ -1,12 +1,17 @@
-# Template: Bold (App Landing Page)
+# Template: Strive (App Landing Page)
 
 ## Purpose
 
-Bold is a single-page startup/marketing landing template in the
+Strive is a single-page startup/marketing landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Bold" website template design (see TEMPLATES.md), built under
 a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
+
+Naming (AGENTS.md rule 5): the template ships as **Strive** — a single
+lowercase word that differs from the source design's name; the source name is
+never the app folder, npm package or brand. Provenance stays in this spec,
+`TEMPLATES.md` and the PR.
 
 ## Design reference (replication findings)
 
@@ -20,11 +25,11 @@ TypeScript.
 - **Section order (1:1):** Navbar (Home, Dropdown, Inner Page, Contact us,
   Free Templates) → Hero ("Another cool free template by the fine folks at
   colorlib" + blurb + CTA) → Achievements (0 M+ Members, 0 K+ Likes, 0 K+
-  Share) → Brand trust ("Leading brands trust Bold for good" + 3 columns) →
+  Share) → Brand trust ("Leading brands trust Strive for good" + 3 columns) →
   Feature rows (3 x "Far far away Behind the Word Mountains" + Learn more)
   → Testimonial ("Join over 1M+ people who enjoy using our app" + Kayla
   Bryant, Social Media Manager) → Form ("Fill out the form" + Company size
-  1/2/3+) → Footer (About, Solutions, Why Bold, Resources, Company +
+  1/2/3+) → Footer (About, Solutions, Why Strive, Resources, Company +
   Terms & Conditions, Privacy Policy).
 - **Design tokens extracted from `style.css`:**
   - Primary **coral/orange `#ff926b`** (buttons, accents, highlights) with
@@ -37,10 +42,10 @@ TypeScript.
   Email, Company size, Message + "Send message" button; submit prevents
   default (no backend) and shows a thank-you status.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/bold-<n>/<w>/<h>`); icons → lucide-react; form
+  (`picsum.photos/seed/strive-<n>/<w>/<h>`); icons → lucide-react; form
   prevents default (no backend); no assets copied.
 
-Bold lives in `apps/bold` and uses shared components from `packages/ui`
+Strive lives in `apps/strive` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -56,14 +61,14 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Bold",
+The system SHALL render a top navigation bar with the site name "Strive",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
 - **GIVEN** the Bold page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Bold" and links to Home, About, and Contact
+- **THEN** the navbar SHALL show the site name "Strive" and links to Home, About, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -104,7 +109,7 @@ columns.
 
 - **GIVEN** the page is rendered
 - **WHEN** the brand trust section is displayed
-- **THEN** it SHALL contain a heading "Leading brands trust Bold for good"
+- **THEN** it SHALL contain a heading "Leading brands trust Strive for good"
 - **AND** it SHALL show three columns each with a heading and a blurb
 
 ### Requirement: Feature rows
@@ -164,7 +169,7 @@ and a document title.
 - **GIVEN** the Bold app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Bold — App Landing Template"
+- **AND** the document title SHALL be "Strive — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -184,7 +189,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/bold/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/strive/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -193,7 +198,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/bold/` is inspected
+- **WHEN** every non-test file under `apps/strive/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -201,9 +206,9 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Bold" and links to Home, About, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Strive" and links to Home, About, and Contact
 - [ ] Achievements section — it SHALL show metrics for Members, Likes, and Share
-- [x] Brand trust section — it SHALL contain a heading "Leading brands trust Bold for good"
+- [x] Brand trust section — it SHALL contain a heading "Leading brands trust Strive for good"
 - [ ] Feature rows — it SHALL show a heading, a blurb, and a "Learn more" button
 - [x] Testimonial section — it SHALL contain a heading "Join over 1M+ people who enjoy using our app"
 - [x] Contact form — it SHALL contain a heading "Fill out the form" and a company-size selector

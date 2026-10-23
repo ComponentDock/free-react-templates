@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/bold",
+  "name": "@free-react-templates/strive",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://bold.free.componentdock.com",
+  "homepage": "https://strive.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

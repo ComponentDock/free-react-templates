@@ -28,8 +28,8 @@ export function FeatureRows() {
 
             <div className="flex justify-center">
               <img
-                src={`https://picsum.photos/seed/bold-feature-${row}/600/450`}
-                alt={`Bold feature illustration ${row}`}
+                src={`https://picsum.photos/seed/strive-feature-${row}/600/450`}
+                alt={`Strive feature illustration ${row}`}
                 className="w-full max-w-md rounded-2xl border border-gray-100 object-cover shadow-xl dark:border-gray-800"
               />
             </div>

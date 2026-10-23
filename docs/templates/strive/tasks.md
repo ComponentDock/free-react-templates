@@ -1,7 +1,7 @@
 # Bold (Colorlib Bold) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
-> Implementation ships later on `feat/template-bold`.
+> Implementation ships later on `feat/template-strive`.
 
 ## Design notes (replication findings)
 
@@ -20,7 +20,7 @@
      blurb + CTA.
   3. Achievements: **0 M+ Members, 0 K+ Likes, 0 K+ Share** (counter-style
      stats in original).
-  4. Brand trust: "Leading brands trust Bold for good" + blurb + 3 columns
+  4. Brand trust: "Leading brands trust Strive for good" + blurb + 3 columns
      (each: heading + blurb).
   5. Feature rows: 3 alternating rows — each "Far far away Behind the Word
      Mountains" + blurb + **Learn more**.
@@ -29,7 +29,7 @@
      original).
   7. Form: "Fill out the form" + Company size selector (1 / 2 / 3+) +
      submit.
-  8. Footer: About, Solutions (Studio, Creative, Design), Why Bold
+  8. Footer: About, Solutions (Studio, Creative, Design), Why Strive
      (Marketing, Social Media, Agencies, Internal, Enterprise,
      Communications), Resources (Blog, Customers, Video Showcase, Watch a
      Demo), Company (About Us, Jobs, Press) + Terms & Conditions, Privacy
@@ -40,26 +40,26 @@
   - Font: **"Raleway"** (Google Fonts `<link>`).
   - Rounded coral buttons with white text.
 - **Recreation name:** Bold (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/bold`, package
+  existing names). App folder `apps/strive`, package
   `@free-react-templates/bold`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/bold-<n>/<w>/<h>`); lucide-react icons; Raleway via
+  (`picsum.photos/seed/strive-<n>/<w>/<h>`); lucide-react icons; Raleway via
   Google Fonts; form prevents default (no backend); coral primary in
   `@theme`; repo-standard Navbar (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-bold/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-strive/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/bold` (copy the section-rich landing app pattern —
+- [x] Create `apps/strive` (copy the section-rich landing app pattern —
       Aurora; rename package to `@free-react-templates/bold`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [x] Push `feat/template-bold`, open PR (source template, preview URL,
+- [x] Push `feat/template-strive`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -72,8 +72,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/bold/` may name the source designer,
+- **Provenance ban.** No file under `apps/strive/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/bold/public/CNAME` = `bold.free.componentdock.com`
-  and the package `homepage` = `https://bold.free.componentdock.com`.
+- **Deploy identity.** `apps/strive/public/CNAME` = `strive.free.componentdock.com`
+  and the package `homepage` = `https://strive.free.componentdock.com`.
