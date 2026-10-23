@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Slick brand palette — recreated from the ColorLib "Narosundar" design
+  /* Slick brand palette — measured from the reference design
      (assets/css/style.css): brand red #FB0000 accents/buttons, CTA blue
      #2845BA (Free Quote / Book Now), light section bgs #f9f9ff + lavender
      #f0e9ff, dark bands #150303 (prices band + footer), muted text #999999. */

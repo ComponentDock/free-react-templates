@@ -6,9 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sleeply brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V7" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-7/): navy-blue #184c8f
+  /* Sleeply brand palette — measured from the reference booking-form
+     design: navy-blue #184c8f
      is the ONLY accent color (labels below the fields + "Check availability"
      submit button background). */
   --color-brand: #184c8f;

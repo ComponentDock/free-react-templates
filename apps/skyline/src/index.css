@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Skyline brand palette — recreated from the ColorLib "Rooftop" design
+  /* Skyline brand palette — measured from the reference design
      (css/main.css): gold #ad9966 accents/buttons, dark #000000 headings,
      light bg #f9f9ff, muted body #777777. */
   --color-brand: #ad9966;

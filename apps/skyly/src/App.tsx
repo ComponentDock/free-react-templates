@@ -11,34 +11,48 @@ export function App() {
   }, [])
 
   return (
-    <main>
-      {/* Single-section demo: full-viewport section with the full-bleed photo
+    <>
+      <main>
+        {/* Single-section demo: full-viewport section with the full-bleed photo
           page background, vertically centering a two-column row — LEFT CTA
-          copy (h1 + paragraph) and RIGHT white flight-search card; NO
-          navbar, NO footer (source is a bare booking form section). */}
-      <section
-        id="booking"
-        className="flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
-        style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
-      >
-        <div className="grid w-full max-w-[1140px] grid-cols-1 gap-y-10 md:grid-cols-12">
-          {/* Left CTA column (source col-md-4, .booking-cta margin-top 45px). */}
-          <div className="md:col-span-4 md:pt-[45px]">
-            <h1 className="text-[52px] font-normal uppercase leading-tight text-brand">
-              Book your flight today
-            </h1>
-            <p className="mt-4 text-[22px] leading-relaxed text-ink">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam
-              at consequatur quisquam suscipit.
-            </p>
-          </div>
+          copy (h1 + paragraph) and RIGHT white flight-search card. No navbar
+          (the reference is a bare booking-form section); the Component Dock
+          credit line sits below it. */}
+        <section
+          id="booking"
+          className="flex min-h-screen items-center justify-center bg-cover bg-center px-[15px] py-10"
+          style={{ backgroundImage: `url('${SECTION_IMAGE}')` }}
+        >
+          <div className="grid w-full max-w-[1140px] grid-cols-1 gap-y-10 md:grid-cols-12">
+            {/* Left CTA column (source col-md-4, .booking-cta margin-top 45px). */}
+            <div className="md:col-span-4 md:pt-[45px]">
+              <h1 className="text-[52px] font-normal uppercase leading-tight text-brand">
+                Book your flight today
+              </h1>
+              <p className="mt-4 text-[22px] leading-relaxed text-ink">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam
+                numquam at consequatur quisquam suscipit.
+              </p>
+            </div>
 
-          {/* Right card column (source col-md-7 col-md-offset-1). */}
-          <div className="md:col-span-7 md:col-start-6">
-            <BookingForm />
+            {/* Right card column (source col-md-7 col-md-offset-1). */}
+            <div className="md:col-span-7 md:col-start-6">
+              <BookingForm />
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+      <footer className="border-t border-black/10 bg-white py-6 text-center text-[13px] text-ink">
+        <p>
+          More templates at{' '}
+          <a
+            className="font-semibold text-brand underline-offset-4 hover:underline"
+            href="https://www.componentdock.com/"
+          >
+            Component Dock
+          </a>
+        </p>
+      </footer>
+    </>
   )
 }

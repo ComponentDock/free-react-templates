@@ -6,8 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Skyly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V19" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-19/):
+  /* Skyly brand palette — measured from the reference booking-form
+     design:
      sky blue #4fa3e3 is the ONLY accent color (CTA headline, radio checked
      dots, submit button background). */
   --color-brand: #4fa3e3;

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Silverleaf brand palette — recreated from the ColorLib "Elderly" design
+  /* Silverleaf brand palette — measured from the reference design
      (css/style.css): primary blue #3c90f7, light bg #f8f9fa. */
   --color-brand: #3c90f7;
   --color-brand-dark: #2a7ad9;

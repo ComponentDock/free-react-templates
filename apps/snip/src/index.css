@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Snip brand palette — recreated from the ColorLib "Hairsalone" design
+  /* Snip brand palette — measured from the reference design
      (assets/css/style.css): hot pink #FF4495 accents, navy #00044A/#140C40
      headings, light section bgs #f9f9ff + lavender #f0e9ff, dark navy
      footer. */

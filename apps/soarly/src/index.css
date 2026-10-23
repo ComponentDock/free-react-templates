@@ -6,9 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Soarly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V9" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-9/): mustard yellow
+  /* Soarly brand palette — measured from the reference booking-form
+     design: mustard yellow
      #f7c411 (radio checked border + dot, "Check availability" button
      background) and near-black #1c2126 (field backgrounds, radio circle
      fill, button text). */

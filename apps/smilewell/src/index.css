@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Smilewell brand cyan/teal — from the ColorLib Toothsy preview:
+  /* Smilewell brand cyan/teal — measured from the reference preview:
      a dental clinic theme with cyan #51eaea primary,
      blue #499bea secondary, gradient cyan→blue,
      dark text #212529, body text #737373, footer #333333,
@@ -44,7 +44,7 @@
   /* Footer dark. */
   --color-footer: #333333;
 
-  /* Nunito (headings + body) via Google Fonts — matching the ColorLib font. */
+  /* Nunito (headings + body) via Google Fonts — matching the reference font pairing. */
   --font-sans: 'Nunito', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Nunito', ui-sans-serif, system-ui, sans-serif;
 }
