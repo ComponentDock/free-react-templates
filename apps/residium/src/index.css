@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Residium brand palette — recreated from the ColorLib "Hus" design
+  /* Residium brand palette — measured from the reference design
      (red accent #ff2424, orange secondary #ff5e13, navy #415094). */
   --color-red-50: #fff5f5;
   --color-red-100: #ffe0e0;

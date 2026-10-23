@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Refuge brand palette — recreated from ColorLib "Funder" design.
+  /* Refuge brand palette — measured from the reference design.
      Blue primary #2563eb, dark headings #1a202c, light bg #f8fafc. */
   --color-brand: #2563eb;
   --color-brand-dark: #1d4ed8;

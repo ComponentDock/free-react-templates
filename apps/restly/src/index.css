@@ -6,11 +6,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Restly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V6" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-6/): copper-brown
-     #8c5d28 is the ONLY accent color (inset field labels + "Check
-     availability" submit button background). */
+  /* Restly brand palette — measured from the reference booking-form design:
+     copper-brown #8c5d28 is the ONLY accent color (inset field labels +
+     "Check availability" submit button background). */
   --color-brand: #8c5d28;
 
   /* Ink — the dark #333 value text of the translucent-white fields. */

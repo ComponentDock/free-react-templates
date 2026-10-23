@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Ridely brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V13" design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-13/):
+  /* Ridely brand palette — measured from the reference booking-form design:
      taxi yellow #ffc600 is the ONLY brand color (floating labels on
      focus/fill + Book Now text/border). */
   --color-brand: #ffc600;

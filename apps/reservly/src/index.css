@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Reservly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V1" design (screenshot-only reference): Bootstrap primary blue
+  /* Reservly brand palette — measured from the reference booking-form design
+     (screenshot-only reference): Bootstrap primary blue
      #007bff (Check availability button), hover #0069d9 (Bootstrap's 7.5%
      darken of the primary). */
   --color-brand: #007bff;

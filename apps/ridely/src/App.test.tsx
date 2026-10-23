@@ -30,10 +30,14 @@ describe('App', () => {
     expect(section.contains(form)).toBe(true)
   })
 
-  it('does not render a navbar or a footer (single-section demo)', () => {
+  it('renders no navbar and a Component Dock credit footer (single-section demo)', () => {
     render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

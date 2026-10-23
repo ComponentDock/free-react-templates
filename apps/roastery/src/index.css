@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Roastery brand palette — recreated from the ColorLib "Coffee Blend"
-     design (dark coffee theme): espresso brown #3e2723, caramel
+  /* Roastery brand palette — measured from the reference design (dark coffee
+     theme): espresso brown #3e2723, caramel
      accent #d4a574, cream #f5f0eb, charcoal #1a1a1a. */
   --color-brand: #d4a574;
   --color-brand-dark: #b8895a;

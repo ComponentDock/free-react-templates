@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Roam brand palette — recreated from the ColorLib "Fantasy" travel blog
-     template (https://colorlib.com/wp/template/fantasy/), tokens extracted
-     from the live preview's style.css:
+  /* Roam brand palette — measured from the reference travel-blog design;
+     tokens extracted from the reference stylesheet:
      - primary #f8b600 (buttons, "Read More" hovers, link hovers)
      - ink #081113 (headings, dark text)
      - body #777777 (paragraph text)
