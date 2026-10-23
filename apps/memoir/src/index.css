@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Memoir brand palette — recreated from the ColorLib "Andrea" template.
+  /* Memoir brand palette — measured from the reference design.
      Soft sky-blue accent #1eafed (links, active nav underline, pagination,
      button hovers), ink rgba(0,0,0,0.8) headings, #212529 body, #bfbfbf
      meta, borders #dee2e6 / #e6e6e6 / #ccc, surfaces #fff / #f8f9fa /

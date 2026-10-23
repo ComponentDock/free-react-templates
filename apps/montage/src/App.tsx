@@ -9,10 +9,9 @@ import { SmallVideos } from './components/SmallVideos'
 import { AdBanner } from './components/AdBanner'
 import { Footer } from './components/Footer'
 
-/* Montage — single-page video magazine landing (recreation of the ColorLib
-   "Videomag" template). Section order matches the reference 1:1: top header
-   → navbar → hero grid → tabbed carousels → travel videos → small videos →
-   ad banner → footer. */
+/* Montage — single-page video magazine landing. Section order matches the
+   reference 1:1: top header → navbar → hero grid → tabbed carousels → travel
+   videos → small videos → ad banner → footer. */
 export function App() {
   useEffect(() => {
     document.title = documentTitle

@@ -6,9 +6,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Nestly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V3" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-3/): taupe #9a8067 is
+  /* Nestly brand palette — measured from the reference booking-form design:
+     taupe #9a8067 is
      the ONLY accent color (the "Book Now" serif header text AND the solid
      Check availability button background). */
   --color-brand: #9a8067;

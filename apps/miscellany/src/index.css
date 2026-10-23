@@ -2,9 +2,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Miscellany brand palette — recreated from the ColorLib "Stuff" preview
-   (https://preview.colorlib.com/theme/stuff/) live DOM + css/style.css:
-   brand orange-red #F6490D (all links, link hover, .btn-primary background,
+/* Miscellany brand palette — measured from the reference live DOM +
+   css/style.css: brand orange-red #F6490D (all links, link hover,
+   .btn-primary background,
    active nav item, video play icon, tag chip hover), accent yellow #F7AF1D
    (hero meta span icons), body #666 on #fff, headings #000, footer #212125,
    body font Roboto weight 300. */

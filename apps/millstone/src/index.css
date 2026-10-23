@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Millstone brand — from ColorLib "Inds" preview CSS:
+  /* Millstone brand — from the reference stylesheet CSS:
      primary orange #f27420, dark navy #00163e, body #666. */
   --color-primary-50: #fef6ef;
   --color-primary-100: #fde8d5;
