@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
-/* Scribble brand palette — recreated from the ColorLib "Suppablog" preview
-   (https://preview.colorlib.com/theme/suppablog/) live DOM + style.css:
+/* Scribble brand palette — measured from the reference design's
+   live DOM + stylesheet:
    brand teal #0697AE (entry-title hover, toggle), pink #D8588C (category
    links), dark surfaces #2D2D2D (rail/sidebar) + #333333 (menu panel),
    title ink #242424, body text #5B5B5B, muted #848484, dates #AABDBD,

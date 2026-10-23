@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Serenity brand palette — recreated from the ColorLib "Energen" spa design
+  /* Serenity brand palette — measured from the reference spa design
      (css/style.css): gold #d9bf77 accents + buttons, dark #212529 text,
      muted body #a6a6a6, light #f8f9fa section bands, dark footer. */
   --color-brand: #d9bf77;

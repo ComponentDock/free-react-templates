@@ -1,5 +1,5 @@
-/** Copy + content data for the Settle furniture-shop landing (recreation of
-    ColorLib "Aranoz"). Kept side-effect free so every entry is
+/** Copy + content data for the Settle furniture-shop landing (measured from
+    the reference design). Kept side-effect free so every entry is
     unit-testable. */
 
 export const BRAND = 'Settle'

@@ -62,9 +62,9 @@ export function Sidebar({ open, onToggle }: SidebarProps) {
             ))}
           </ul>
         </nav>
-        <footer className="mt-auto px-[50px] py-8 text-[13px] leading-[23px] text-ash">
+        <div className="mt-auto px-[50px] py-8 text-[13px] leading-[23px] text-ash">
           <p>{footerCopyright}</p>
-        </footer>
+        </div>
       </div>
       <Rail open={open} onToggle={onToggle} />
     </div>

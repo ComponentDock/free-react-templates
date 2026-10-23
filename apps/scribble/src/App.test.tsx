@@ -18,7 +18,7 @@ describe('App', () => {
     expect(document.title).toBe(documentTitle)
   })
 
-  it('composes the rail, sidebar, blog list, and featured image', () => {
+  it('composes the rail, sidebar, blog list, featured image, and footer', () => {
     const { container } = render(<App />)
 
     expect(screen.getByRole('link', { name: skipLabel })).toBeInTheDocument()
@@ -26,6 +26,16 @@ describe('App', () => {
     expect(screen.getByRole('heading', { level: 1, name: siteName })).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 2, name: featuredPost.title })).toBeInTheDocument()
     expect(container.querySelector('.featured-image')).not.toBeNull()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+  })
+
+  it('credits Component Dock in the footer', () => {
+    render(<App />)
+
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 
   it('opens and closes the sidebar through the rail toggle', async () => {

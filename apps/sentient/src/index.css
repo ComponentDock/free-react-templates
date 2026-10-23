@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sentient brand palette — recreated from the ColorLib "NeuralFlow" design.
+  /* Sentient brand palette — measured from the reference design.
      The primary scale IS the brand violet (#7c3aed) used for CTAs, links,
      glows and the hero grid; the accent scale is cyan (#06b6d4) for gradient
      text ends, glow orbs and the footer gradient. */
