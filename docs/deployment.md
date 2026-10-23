@@ -109,6 +109,32 @@ later), so fix the edge first, then re-publish the `insecure` /
 `edge-insecure` hosts one by one (`surge apps/<app>/dist https://<app>.<zone>`,
 rate-limited to ≈150 publishes/day).
 
+### Measured 2026-10-23 — the edge outage is current, and the obvious fallbacks do not work
+
+Re-measured after the batch-26 merge (2,857 rows done, 1,703 apps, so the fleet
+was static; nothing had been wrongly published):
+
+- `scripts/audit-deployments.sh` over 40 random apps: **0 `live`**, 27
+  `edge-insecure`, 13 `edge-live`. The 12 batch-26 apps: same classes, 0
+  `missing` — the content is at the origin, only the branded TLS edge is broken.
+- `http://<app>.free.componentdock.com` answers `301 https://…` and TLS then
+  fails at SNI with `sslv3 alert handshake failure` (Alert 40) for HTTP/1.1 and
+  HTTP/2, TLS 1.2 and 1.3. A WAF/blocked-IP would complete the handshake and
+  return 1020 — this is certificate selection, so it is the missing
+  second-level wildcard, not egress filtering.
+- Fallback **`<app>.componentdock.com` does not resolve at all** (`NXDOMAIN`, no
+  wildcard on the apex) — it would need a new proxied wildcard *and* 1,703
+  re-publishes, so it is not a cheap alternative.
+- Fallback **`free-react-templates-<app>.surge.sh` only exists for some
+  projects** (8/40 sampled: `volt`, `lodgely`, `aegis`, `jobfield`, `altruist`,
+  `appru`, `blaze`, `roam`); the rest 404. Not a usable public URL scheme.
+
+So the only fix is on the Cloudflare side (Total TLS / advanced certificate for
+`*.free.componentdock.com`), which needs a zone-scoped API token. Until then the
+marketplace's 1,704 demo links are broken in browsers while R2 downloads
+(`downloads.componentdock.com`) keep working. Do **not** answer this by
+re-publishing the fleet: every host is already at the origin.
+
 ### Setup (one-time, required)
 
 The action needs two **repository secrets** (Settings → Secrets and variables →
