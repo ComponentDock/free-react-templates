@@ -1,7 +1,7 @@
-# Animal Shelter (Colorlib Animal Shelter) — Tasks & Design Notes
+# Furhaven — Tasks & Design Notes (recreation of ColorLib "Animal Shelter")
 
-> Prep artifacts prepared on `main` while the Flick PR (#8) awaits review.
-> Implementation ships later on `feat/template-animal-shelter`.
+> Prep artifacts prepared on `main` by the prep stream; implementation shipped on
+> `feat/template-furhaven`. Renamed from the source design name (AGENTS.md rule 5).
 
 ## Design notes (replication findings)
 
@@ -46,10 +46,11 @@
     white, uppercase), h4 18px, h5 16px.
   - Shapes: `.primary-btn` square gold buttons (no radius), line-height 42px,
     padding 0 30px, uppercase; `.section-gap` = 120px 0.
-- **Recreation name:** Animal Shelter (kept — matches ColorLib name). App
-  folder `apps/animal-shelter`, package `@free-react-templates/animal-shelter`.
+- **Recreation name:** **Furhaven** — new original name, the source design name is
+  not reused (AGENTS.md rule 5). App folder `apps/furhaven`, package
+  `@free-react-templates/furhaven`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/animal-shelter-<n>/<w>/<h>`); lucide-react icons
+  (`picsum.photos/seed/furhaven-<n>/<w>/<h>`); lucide-react icons
   (ThumbsUp, User, ClipboardList, Wand2, Home, Phone, Mail, Play, Menu,
   Sun/Moon); brand social icons (facebook/twitter/dribbble/behance — removed
   from lucide-react) → inline SVG; Poppins via Google Fonts; repo-standard
@@ -58,18 +59,18 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-animal-shelter/spec.md` (Gherkin
+- [x] Write `openspec/specs/template-furhaven/spec.md` (Gherkin
       requirements + scenarios reflecting the REAL sections above).
-- [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/animal-shelter` (copy the simplest existing app — e.g.
-      Cloud; rename package to `@free-react-templates/animal-shelter`).
-- [ ] TDD: tests first for each section component; run red.
-- [ ] Implement components (green) at 100% coverage.
-- [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
+- [x] Validate spec: `npm run spec:validate`.
+- [x] Create `apps/furhaven` (copied the simplest existing app; package
+      `@free-react-templates/furhaven`).
+- [x] TDD: tests first for each section component; run red.
+- [x] Implement components (green) at 100% coverage.
+- [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-animal-shelter`, open PR (source template, preview
+- [x] Push `feat/template-furhaven`, open PR (source template, preview
       URL, design tokens, what differs).
-- [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
+- [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
 
 ## Delivery contract (repo rules — non-negotiable)
@@ -80,8 +81,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/animal-shelter/` may name the source designer,
+- **Provenance ban.** No file under `apps/furhaven/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/animal-shelter/public/CNAME` = `animal-shelter.free.componentdock.com`
-  and the package `homepage` = `https://animal-shelter.free.componentdock.com`.
+- **Deploy identity.** `apps/furhaven/public/CNAME` = `furhaven.free.componentdock.com`
+  and the package `homepage` = `https://furhaven.free.componentdock.com`.

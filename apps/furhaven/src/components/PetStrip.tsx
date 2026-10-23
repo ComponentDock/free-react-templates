@@ -15,7 +15,7 @@ export function PetStrip() {
         {pets.map((pet) => (
           <img
             key={pet.seed}
-            src={`https://picsum.photos/seed/animal-shelter-${pet.seed}/360/280`}
+            src={`https://picsum.photos/seed/furhaven-${pet.seed}/360/280`}
             alt={pet.alt}
             className="h-44 w-full object-cover shadow-lg sm:h-52"
           />

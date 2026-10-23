@@ -1,8 +1,8 @@
-# Template: Animal Shelter (Pet Adoption Landing)
+# Template: Furhaven (Pet Adoption Landing)
 
 ## Purpose
 
-Animal Shelter is a single-page pet-adoption landing template in the
+Furhaven is a single-page pet-adoption landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Animal Shelter" website template design (see TEMPLATES.md),
 built under a different name with the monorepo stack: Vite + React 19 +
@@ -11,7 +11,7 @@ Tailwind CSS 4 + TypeScript.
 The original is a warm, adoption-focused landing page: a full-screen banner
 ("Adopt Us. We need your help.") with a gold CTA, an overlapping pet-photo
 strip, an adoption-process explainer (4 steps), testimonials from "guardians",
-a volunteer call-to-action, and a dark footer. Animal Shelter recreates that
+a volunteer call-to-action, and a dark footer. Furhaven recreates that
 structure section-for-section with matching layout, colors, typography, and
 content types (no ColorLib assets copied).
 
@@ -69,27 +69,27 @@ content types (no ColorLib assets copied).
     CTA); `.section-gap` = 120px 0.
   - Header: fixed, transparent; `.header-scrolled` → `rgba(0,0,0,0.7)`.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/animal-shelter-<n>/<w>/<h>`); icons → lucide-react
+  (`picsum.photos/seed/furhaven-<n>/<w>/<h>`); icons → lucide-react
   (ThumbsUp, User, ClipboardList, Wand2, Home, Phone, Mail, Play, Menu,
   Sun/Moon); brand social icons (facebook/twitter/dribbble/behance — removed
   from lucide-react) → inline SVG; Poppins via Google Fonts; repo-standard
   Navbar (dark-mode toggle) + Footer chrome.
 
-Animal Shelter lives in `apps/animal-shelter` and uses shared components from
+Furhaven lives in `apps/furhaven` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Animal
-Shelter", links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name
+"Furhaven", links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Animal Shelter page is rendered
+- **GIVEN** the Furhaven page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Animal Shelter" and links to
+- **THEN** the navbar SHALL show the site name "Furhaven" and links to
   About and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
@@ -215,11 +215,11 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Animal Shelter app is rendered
+- **GIVEN** the Furhaven app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all
   sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Animal Shelter — Pet Adoption Template"
+- **AND** the document title SHALL be "Furhaven — Pet Adoption Template"
 
 ### Requirement: Component Dock attribution
 
@@ -239,7 +239,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/animal-shelter/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/furhaven/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -248,7 +248,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/animal-shelter/` is inspected
+- **WHEN** every non-test file under `apps/furhaven/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -256,7 +256,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Animal Shelter" and links to
+- [x] Navigation bar — the navbar SHALL show the site name "Furhaven" and links to
 - [x] Hero banner — it SHALL contain a level-1 heading "Adopt Us. We need your help."
 - [ ] Pet photo strip — it SHALL show at least four pet photos
 - [x] Select-pet band — it SHALL contain a heading "Please select your favourite pet"

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    /* Animal Shelter brand gold: the primary button background and ::selection
+    /* Furhaven brand gold: the primary button background and ::selection
      color (#fab700). */
   --color-brand: #fab700;
 

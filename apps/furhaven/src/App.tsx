@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Animal Shelter — Pet Adoption Template'
+    document.title = 'Furhaven — Pet Adoption Template'
   }, [])
 
   return (

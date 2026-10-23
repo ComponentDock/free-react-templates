@@ -1,17 +1,21 @@
-# Animal-shelter — Design Notes
+# Furhaven — Design Notes
 
 Reference: **Animal Shelter** — `https://colorlib.com/wp/template/animal-shelter/`  
 Live preview: `https://preview.colorlib.com/theme/animalshelter/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/animalshelter-free-template-1.jpg  
-Shipped: https://animal-shelter.free.componentdock.com
+Shipped: https://furhaven.free.componentdock.com
 
-Animal Shelter is a single-page pet-adoption landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Animal Shelter" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Furhaven is a single-page pet-adoption landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Animal Shelter" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+Naming: the source design name was not reused — the recreation ships as **Furhaven**
+(AGENTS.md rule 5). Provenance (`ColorLib "Animal Shelter"`) lives only in this doc,
+the spec, `TEMPLATES.md` and the PR.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600**
 
-## Design tokens (`apps/animal-shelter/src/index.css` `@theme`)
+## Design tokens (`apps/furhaven/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -40,7 +44,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Animal Shelter", links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Furhaven", links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width banner with a headline, a short subheading, and a primary call-to-action button over a darkened image background.
@@ -84,8 +88,8 @@ The system SHALL render a footer with about text, a useful-links column, contact
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/animal-shelter/` may name the source designer,
+- **Provenance ban.** No file under `apps/furhaven/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/animal-shelter/public/CNAME` = `animal-shelter.free.componentdock.com`
-  and the package `homepage` = `https://animal-shelter.free.componentdock.com`.
+- **Deploy identity.** `apps/furhaven/public/CNAME` = `furhaven.free.componentdock.com`
+  and the package `homepage` = `https://furhaven.free.componentdock.com`.

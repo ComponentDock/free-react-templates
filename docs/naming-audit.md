@@ -13,17 +13,17 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Petcare → Pawly
+## State after Animal Shelter → Furhaven
 
-29 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+28 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
-Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812).
+Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
+`animal-shelter` → `furhaven` (this PR).
 
 | app                 | source design  |
 | ------------------- | -------------- |
-| apps/animal-shelter | Animal Shelter |
 | apps/appco          | Appco          |
 | apps/applab         | Applab         |
 | apps/appli          | Appli          |

@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes all sections and sets the document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Animal Shelter — Pet Adoption Template')
+    expect(document.title).toBe('Furhaven — Pet Adoption Template')
 
     const main = screen.getByRole('main')
     expect(within(main).getByRole('heading', { level: 1 }).textContent).toBe(
