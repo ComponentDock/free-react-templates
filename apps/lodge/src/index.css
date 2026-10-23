@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lodge brand palette — recreated from the ColorLib "Hotel" design
+  /* Lodge brand palette — measured from the reference design
      (dark navy #1a1a2e, gold accent #d4a853, warm beige #f5f0eb). */
   --color-lodge-900: #1a1a2e;
   --color-lodge-800: #222240;

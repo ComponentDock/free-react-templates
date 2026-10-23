@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Liber brand palette — recreated from the ColorLib "Book" design
+  /* Liber brand palette — measured from the reference design
      (css/main.css): coral red #f53f51 accents/buttons, teal #4cd3e3
      accent, blue #38a4ff accent, dark #222222 headings, muted #777777
      body text, light bg #f9f9ff. */

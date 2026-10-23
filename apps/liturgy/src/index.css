@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Liturgy brand palette — recreated from the ColorLib Advent church design */
+  /* Liturgy brand palette — measured from the reference design */
   --color-golden-50: #fff8e1;
   --color-golden-100: #ffecb3;
   --color-golden-200: #ffe082;

@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lodgely brand palette — recreated from the ColorLib "Sogo" design:
+  /* Lodgely brand palette — measured from the reference design:
      golden amber #ffba5a is the primary accent (CTA buttons, price text,
      hover states). Body text #6c757d, headings #000, light bg #f2f4fb. */
   --color-brand: #ffba5a;

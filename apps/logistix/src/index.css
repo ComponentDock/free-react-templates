@@ -4,8 +4,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand orange — inspired by the original ColorLib Thelogistico
-     template (#f60 / #ff6600 used on buttons, links, accents). */
+  /* Brand orange — measured from the reference design
+     (#f60 / #ff6600 used on buttons, links, accents). */
   --color-brand: #ff6600;
   --color-brand-dark: #e55b00;
 

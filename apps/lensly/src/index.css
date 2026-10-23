@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Lensly brand colors — from the ColorLib "Capture 2" preview
-     (https://preview.colorlib.com/theme/capture2/ + css/style.css +
-     re-themed bootstrap.min.css): amber #f4ad2d is the re-themed
+  /* Lensly brand colors — measured from the reference stylesheet and its
+     re-themed Bootstrap layer: amber #f4ad2d is the re-themed
      Bootstrap --primary (btn-primary bg, text-primary hero h1, section
      eyebrow spans, nav hover/active, scrolled logo/links, blog title
      hover, social icons on dark). Black #000 for the about + footer
