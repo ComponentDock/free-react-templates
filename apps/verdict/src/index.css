@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Verdict brand palette — recreated from the ColorLib "Legaledge 2" design.
+  /* Verdict brand palette — measured from the reference design.
      The primary scale IS the deep navy brand color (#102a43) used across the
      hero/testimonials/footer bands, and the accent scale is the classic gold
      (#c9a227) used for CTAs and highlights. */

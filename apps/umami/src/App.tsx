@@ -8,8 +8,8 @@ import { PageTopRecipes } from './components/PageTopRecipes'
 import { TopRecipes } from './components/TopRecipes'
 import { documentTitle, skipLabel } from './data'
 
-/* Umami — food magazine / recipe blog home page (ColorLib "Yummy 2"
-   recreation; reference: ThemeWagon mirror). Section order matches the
+/* Umami — food magazine / recipe blog home page (measured from the
+   reference design). Section order matches the
    reference 1:1: header → page-top recipe hero → Top Recipes this Week →
    Featured Recipes → footer. */
 export function App() {

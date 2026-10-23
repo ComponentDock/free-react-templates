@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Wedlock brand palette — recreated from the ColorLib "Wordpress Wedding
-     Themes" roundup's featured theme (Veil). Brand accent 1 #E74923 (warm
+  /* Wedlock brand palette — measured from the reference design (the
+     roundup's featured theme). Brand accent 1 #E74923 (warm
      orange-red, CTAs/links/highlights), accent 2 #D60058 (deep magenta,
      secondary highlights). Hovers #C9320E / #BD004D. */
   --color-accent-50: #fdf1ec;

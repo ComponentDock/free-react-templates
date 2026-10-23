@@ -8,7 +8,7 @@ import { Navbar } from './components/Navbar'
 import { Sidebar } from './components/Sidebar'
 import { TopBar } from './components/TopBar'
 
-/* Typeface — minimal blog home page (ColorLib "Wordify" recreation). The
+/* Typeface — minimal blog home page (measured from the reference design). The
    whole page sits on a framed white sheet: 20px page padding + a 1px #efefef
    border with no top border, over the textured #ccc page background. */
 export function App() {

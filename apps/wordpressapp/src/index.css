@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* WordpressApp brand purple — from the original ColorLib "Wordpress App
-     Themes" screenshot (app-wordpress-themes.jpg): the hero is a deep
+  /* WordpressApp brand purple — measured from the reference screenshot
+     (app-wordpress-themes.jpg): the hero is a deep
      purple→violet gradient (#6a1b9a → #4a148c). */
   --color-brand: #6a1b9a;
 

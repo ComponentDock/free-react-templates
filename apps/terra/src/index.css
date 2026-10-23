@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Terra brand palette — recreated from the ColorLib "Kayelux" design
+  /* Terra brand palette — measured from the reference design
      (css/style.css): terracotta brand #e95b3a (buttons, headings, hovers),
      dark text #212529/#111111, light blush backgrounds #f8ebe6. */
   --color-brand: #e95b3a;

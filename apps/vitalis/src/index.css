@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Vitalis brand palette — recreated from the ColorLib "Aesthetic"
-     design (css/style.css): teal #13a2b7 accents + buttons, dark
+  /* Vitalis brand palette — measured from the reference design
+     (css/style.css): teal #13a2b7 accents + buttons, dark
      #111111 bands + footer, light #fff/#f8f9fa sections. */
   --color-brand: #13a2b7;
   --color-brand-dark: #0d7f91;

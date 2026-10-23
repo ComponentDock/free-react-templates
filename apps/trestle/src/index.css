@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Trestle brand lime — from the original ColorLib "Arcade" preview
+  /* Trestle brand lime — measured from the reference stylesheet
      (css/style.css): #baff00. */
   --color-brand: #baff00;
 

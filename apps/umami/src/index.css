@@ -1,8 +1,7 @@
 @import 'tailwindcss';
 
-/* Umami brand palette — recreated from the ColorLib "Yummy 2" design via
-   the ThemeWagon mirror (https://themewagon.github.io/yummy2/) live DOM +
-   css/style.css (the official preview.colorlib.com/theme/yummy-2/ 404s):
+/* Umami brand palette — measured from the reference design (rendered DOM
+   + css/style.css):
    primary pink #FC0254 (active nav link + underline, section-title boxes,
    category tags, submit button bg, hover overlays), secondary light pink
    #FF5581 (primary button bg), ink #353535 (titles/body 700), date grey
