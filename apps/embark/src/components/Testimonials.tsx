@@ -34,7 +34,7 @@ export function Testimonials() {
             Our Customers Feedback
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-gray-600 dark:text-gray-400">
-            Real words from teams who launch with us every day.
+            Real words from teams who grow with us every day.
           </p>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-3">

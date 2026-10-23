@@ -13,7 +13,7 @@ export function App() {
   const [modalOpen, setModalOpen] = useState(false)
 
   useEffect(() => {
-    document.title = 'Launch — App Landing Template'
+    document.title = 'Embark — App Landing Template'
   }, [])
 
   return (

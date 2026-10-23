@@ -1,7 +1,7 @@
-# Launch (Colorlib Launch) — Tasks & Design Notes
+# Embark (ColorLib Launch) — Tasks & Design Notes
 
-> Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-launch`.
+> Prep artifacts prepared on `main` while the Tears PR (#5) awaited review.
+> Implemented as `apps/embark`; this doc travels with the app rename.
 
 ## Design notes (replication findings)
 
@@ -29,27 +29,29 @@
   - Dark `#212529`; muted `#6c757d`; white bgs.
   - Font: **"Nunito"** (Google Fonts `<link>`).
   - Blue rounded buttons with white text.
-- **Recreation name:** Launch (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/launch`, package
-  `@free-react-templates/launch`.
+- **Recreation name:** **Embark** (start-of-journey evocation for a product
+  launch; no collision with any existing app). App folder `apps/embark`,
+  package `@free-react-templates/embark`. The app first shipped as
+  `apps/launch`, which reused the source design's name (AGENTS.md rule 5
+  violation) and was renamed in the Launch → Embark PR.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/launch-<n>/<w>/<h>`); lucide-react icons; Nunito via
+  (`picsum.photos/seed/embark-<n>/<w>/<h>`); lucide-react icons; Nunito via
   Google Fonts; auth forms prevent default (no backend); blue primary in
   `@theme`; repo-standard Navbar (dark-mode toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-launch/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-embark/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/launch` (copied the section-rich landing app pattern;
-      package `@free-react-templates/launch`).
+- [x] Create `apps/embark` (copied the section-rich landing app pattern;
+      package `@free-react-templates/embark`).
 - [x] TDD: tests first for each section component; ran red.
 - [x] Implement components (green) at 100% coverage (21 tests, 11 files).
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [x] Push `feat/template-launch`, open PR (source template, preview URL,
+- [x] Push `feat/template-embark`, open PR (source template, preview URL,
       design tokens, what differs).
 - [x] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -62,8 +64,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/launch/` may name the source designer,
+- **Provenance ban.** No file under `apps/embark/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/launch/public/CNAME` = `launch.free.componentdock.com`
-  and the package `homepage` = `https://launch.free.componentdock.com`.
+- **Deploy identity.** `apps/embark/public/CNAME` = `embark.free.componentdock.com`
+  and the package `homepage` = `https://embark.free.componentdock.com`.

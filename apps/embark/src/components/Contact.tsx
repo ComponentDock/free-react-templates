@@ -109,8 +109,8 @@ export function Contact() {
               <h3 className="mt-3 font-display text-lg font-semibold text-ink dark:text-white">
                 Email Us
               </h3>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">hello@launch.com</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">support@launch.com</p>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">hello@embark.com</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">support@embark.com</p>
             </div>
             <div className="rounded-2xl border border-gray-100 bg-paper p-6 dark:border-gray-800 dark:bg-gray-900">
               <h3 className="font-display text-lg font-semibold text-ink dark:text-white">

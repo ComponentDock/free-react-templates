@@ -17,7 +17,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="font-display text-xl font-bold text-white">About Launch.</h3>
+            <h3 className="font-display text-xl font-bold text-white">About Embark.</h3>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
               Far far away, behind the word mountains, far from the countries Vokalia and
               Consonantia, there live the blind texts.
@@ -73,9 +73,9 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-white/10 pt-8 text-sm text-gray-400 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} Launch. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Embark. All rights reserved.</p>
           <p>
-            Made with <span aria-hidden="true">♥</span> by Launch
+            Made with <span aria-hidden="true">♥</span> by Embark
           </p>
         </div>
       </div>

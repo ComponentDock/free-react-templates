@@ -1,17 +1,17 @@
-# Launch — Design Notes
+# Embark — Design Notes
 
 Reference: **Launch** — `https://colorlib.com/wp/template/launch/`  
 Live preview: `https://preview.colorlib.com/theme/launch/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/launch-free-template.jpeg  
-Shipped: https://launch.free.componentdock.com
+Shipped: https://embark.free.componentdock.com
 
-Launch is a single-page product landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Launch" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Embark is a single-page product landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Launch" website template design (see TEMPLATES.md), built under a different name (Embark, renamed from `apps/launch` under AGENTS.md rule 5) with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Nunito**, **Nunito:wght@400;600;700;800**
 
-## Design tokens (`apps/launch/src/index.css` `@theme`)
+## Design tokens (`apps/embark/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -47,7 +47,7 @@ Fonts loaded by `index.html` (Google Fonts): **Nunito**, **Nunito:wght@400;600;7
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Launch.", anchor links to the page's sections, a "Sign in" button, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Embark.", anchor links to the page's sections, a "Sign in" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and two call-to-action buttons on a blue gradient background.
@@ -88,8 +88,8 @@ The system SHALL render a sign-in/sign-up modal accessible from the navbar.
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/launch/` may name the source designer,
+- **Provenance ban.** No file under `apps/embark/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/launch/public/CNAME` = `launch.free.componentdock.com`
-  and the package `homepage` = `https://launch.free.componentdock.com`.
+- **Deploy identity.** `apps/embark/public/CNAME` = `embark.free.componentdock.com`
+  and the package `homepage` = `https://embark.free.componentdock.com`.
