@@ -26,7 +26,7 @@ Zenbloom lives in `apps/zenbloom` and uses shared components from `packages/ui`
 - **Preview**: `https://preview.colorlib.com/theme/yogabest/` — HTTP 200 on 2026-10-23, **44,489 bytes**, title `Yogabest - Free Bootstrap 4 Template by Colorlib`.
 - **Stylesheet measured**: `css/style.css` — **82,521 bytes**, sha256 `e4172187ba7f…`, over Bootstrap 4 + Font Awesome (CDN) + owl-carousel / animate / magnific-popup / flaticon.
 - **Measured how**: hex-literal census of `css/style.css`, then the winning rule per selector.
-- **The rebuild flag on this demo is a FALSE POSITIVE**: `measure-reference-tokens.py` matches `3\.0\.\d` anywhere in the HTML and this page loads `js/jquery-migrate-3.0.1.min.js`. There is no `?v=` marker, no `/kit/`, no Bootstrap 5, and the title still self-identifies as a **Bootstrap 4** Colorlib build — the demo is the original, so app mismatches are prep-level facts, not drift.
+- **The rebuild flag on this demo was a FALSE POSITIVE**: the detector used to match `3\.0\.\d` anywhere in the HTML and this page loads `js/jquery-migrate-3.0.1.min.js`. There is no `?v=` marker, no `/kit/`, no Bootstrap 5, and the title still self-identifies as a **Bootstrap 4** Colorlib build — the demo is the original, so app mismatches are prep-level facts, not drift. It now keys on asset/version markers only (`?v=3.`, `/kit/`, `Bootstrap v5.3`, a `generator` meta naming 3.0.x), so this demo reports `rebuilt=False` again.
 
 ### Colors
 

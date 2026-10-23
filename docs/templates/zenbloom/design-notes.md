@@ -132,11 +132,12 @@ Read from `https://preview.colorlib.com/theme/yogabest/` (HTTP 200, 44,489 B,
 title `Yogabest - Free Bootstrap 4 Template by Colorlib`) and its theme sheet
 `css/style.css` (82,521 B, sha256 `e4172187ba7f…`).
 
-**Rebuild flag caveat**: `measure-reference-tokens.py` reports `rebuilt=True` for
+**Rebuild flag caveat (tool fixed)**: `measure-reference-tokens.py` used to report `rebuilt=True` for
 this page, but that is a **false positive** — its `3\.0\.\d` regex matched
 `js/jquery-migrate-3.0.1.min.js`. The page has no `?v=` asset markers, no `/kit/`,
 uses Bootstrap 4, and self-identifies as a Colorlib BS4 build, so this IS the
-original demo and any mismatch is a prep-level fact.
+original demo and any mismatch is a prep-level fact. The detector now keys on
+asset/version markers only, so this demo reports `rebuilt=False`.
 
 | Token | Reference | App (`apps/zenbloom`) |
 | ----- | --------- | --------------------- |

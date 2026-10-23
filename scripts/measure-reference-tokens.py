@@ -81,27 +81,6 @@ def spec_candidates(name: str, root: str) -> list[str]:
     return cands
 
 
-def resolve(label: str, args, root: str) -> str | None:
-    if args.url:
-        return args.url
-    cands: list[str] = []
-    if args.spec:
-        cands += spec_candidates(args.spec, root)
-    for fam in FAMILIES:
-        cands.append(f"https://preview.colorlib.com/{fam}{label}/")
-    for sub in ("cs", "bwiz", "regform", "bforms", "searchf"):
-        cands.append(f"https://colorlib.com/etc/{sub}/{label}/")
-    seen: set[str] = set()
-    for url in cands:
-        if url in seen:
-            continue
-        seen.add(url)
-        got = fetch(url)
-        if got:
-            return got[0]
-    return None
-
-
 def fetch(url: str) -> tuple[str, str] | None:
     """Return (final_url, html) for a page, or None if it 404s."""
     tmp = "/tmp/.measure-probe.html"
@@ -177,7 +156,19 @@ def main(argv: list[str]) -> int:
 
     title_m = re.search(r"<title>(.*?)</title>", html, re.S | re.I)
     title = re.sub(r"\s+", " ", title_m.group(1)).strip() if title_m else ""
-    rebuilt = bool(re.search(r"\?v=3\.|/kit/|3\.0\.\d", html)) or "Bootstrap v5.3" in html
+    # REBUILT = the *demo* was redesigned (v3 asset chain, kit build, BS5.3).
+    # Key on asset/version markers only: a bare 3.0.x search over the whole page
+    # false-positives on vendored lib versions (yogabest loads
+    # js/jquery-migrate-3.0.1.min.js, which is not a rebuild marker — measured
+    # 2026-10-23, batch 4).
+    rebuilt = (
+        bool(re.search(r"\?v=3\.", html))
+        or "/kit/" in html
+        or "Bootstrap v5.3" in html
+        or bool(re.search(
+            r'<meta[^>]+name=["\']generator["\'][^>]+content=["\'][^"\']*\b3\.0\.\d',
+            html, re.I))
+    )
 
     sheets = []
     for i, tag in enumerate(re.findall(r"<link[^>]+rel=[\"']stylesheet[\"'][^>]*>", html, re.I)):
