@@ -12,6 +12,7 @@ Provide a professional tech repair services landing page with hero, services, ab
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#988fff` | live sheet paints it ×63 — `background-color` on `::selection`; main.css (51,610 B, sha256 a5e2df7c2ef4) · <https://preview.colorlib.com/theme/repair/> |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (51,610 B, sha256 a5e2df7c2ef4) · <https://preview.colorlib.com/theme/repair/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

@@ -28,6 +28,7 @@ Extracted from the live preview CSS (`css/style.css`):
 | Button radius | `5px` | Primary CTA buttons |
 | Border radius (cards) | `12px`, `20px` | Service cards, portfolio images |
 | Button hover | `#28AE61` | Slightly darker green on hover |
+| Surface (measured) | `#ff5e13` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (157,866 B, sha256 63f7f7c4c4fe) · <https://preview.colorlib.com/theme/busicol/> |
 
 ### Visual Design Notes (from screenshot)
 

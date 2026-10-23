@@ -15,6 +15,7 @@ and a dark footer with Component Dock branding.
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#cca772` | live sheet paints it ×43 — `background` on `.button--active`; style.css (47,021 B, sha256 cec2c02eda0c) · <https://preview.colorlib.com/theme/seapalace/> |
+| Surface (measured) | `#0b1a2a` | paints it ×1 — `background` on `.footer-area`; style.css (47,021 B, sha256 cec2c02eda0c) · <https://preview.colorlib.com/theme/seapalace/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

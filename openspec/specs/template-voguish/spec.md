@@ -143,6 +143,16 @@ Tailwind CSS 4 + TypeScript.
 Voguish lives in `apps/voguish` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#d42421` | paints it ×3 — `background` on `.checkout_btn`; style.css (139,307 B, sha256 b906caa8b8a8) · <https://preview.colorlib.com/theme/persuit/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Top header bar

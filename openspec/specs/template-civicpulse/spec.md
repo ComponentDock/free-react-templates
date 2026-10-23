@@ -21,6 +21,7 @@ Civicpulse is a political/party landing template with a top bar, navbar, hero, c
 - **Accordion active:** #3898f8 bg, white text
 - **Blog date badge:** #000 bg, white text
 - **Footer social hover:** #3898f8
+- **Surface (measured):** `#4cd3e3` — paints it ×7 — `background` on `.genric-btn.success`; main.css (49,840 B, sha256 ad5d47ac497c) · <https://preview.colorlib.com/theme/politics/>
 
 ## Section Structure (in order)
 

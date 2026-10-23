@@ -76,6 +76,7 @@ and ColorLib page analysis. See Design Reference section.) — **re-probed 2026-
 | Sidebar width       | ~270px                   | Fixed left sidebar                                              |
 | Border radius (inputs) | 4px                   | Newsletter email input, subscribe button                        |
 | Nav link padding    | ~12px vertical           | Spacing between sidebar navigation links                        |
+| Surface (measured) | `#494ca2` | paints it ×6 — `background` on `#sidebar`; style.css?v=ef4104b9 (15,743 B, sha256 46f12e9e9334) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/> |
 
 ## Structure (1:1 section order)
 

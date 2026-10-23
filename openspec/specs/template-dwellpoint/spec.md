@@ -37,6 +37,7 @@ A real estate multi-property website template with a hero banner, advanced prope
 | Text muted         | `#aaaaaa` | Subtitles, small labels                               |
 | Border             | `#eeeeee` | Card borders, dividers                                |
 | Card background    | `#ffffff` | Property cards, testimonial items                     |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (70,089 B, sha256 787ee18f3e55) · <https://preview.colorlib.com/theme/sel/> |
 
 ### Buttons
 

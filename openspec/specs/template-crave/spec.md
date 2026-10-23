@@ -88,6 +88,16 @@ The source appears TWICE in TEMPLATES.md (dup-row trap): line 1171
 - Fonts: Google Fonts link in index.html for "Josefin Sans" + "Open Sans"
 - Footer links to `https://www.componentdock.com/`
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#7676ff` | paints it ×1 — `background` on `.header_area.navbar_fixed .main_menu .navbar`; style.css (30,890 B, sha256 30d29563ebce) · <https://preview.colorlib.com/theme/sneaky/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Navbar

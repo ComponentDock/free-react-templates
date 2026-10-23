@@ -27,6 +27,7 @@ Extracted from the preview's `css/style.css`:
 | Button style     | `.boxed-btn2`: padding 22px 50px, larger CTA                     | Secondary CTA                                         |
 | Overlay          | `rgba(2,12,38,0.851)`                                            | Dark overlay on parallax sections                     |
 | Link underline   | `#ff5e13` with hover underline                                   | Footer links, contact links                           |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (64,778 B, sha256 e3256b7c830a) · <https://preview.colorlib.com/theme/durg/> |
 
 ## Requirements
 

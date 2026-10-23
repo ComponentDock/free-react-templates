@@ -42,6 +42,7 @@ Extracted from the ColorLib screenshot (preview unavailable):
 | Border radius (card) | `8px` | Rounded card corners |
 | Border radius (button) | `24px` (pill) | Fully rounded submit button |
 | Nav background | Transparent / gradient | Overlays page gradient |
+| Surface (measured) | `#846add` | paints it ×5 — `background` on `.contact100-form-btn`; style.css?v=96a32ec2 (13,697 B, sha256 23893b513d9c) · <https://colorlib.com/etc/cf/ContactFrom_v16/index.html> |
 
 ## Requirements
 

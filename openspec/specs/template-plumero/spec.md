@@ -56,6 +56,7 @@ all pages, CSS, JS).
 | Button primary | `#B08EAD` bg, `#fff` text, hover inverts | `.btn_1` — Shop Now, Subscribe |
 | Button outline | transparent bg, `#B08EAD` text, hover fills | `.btn_3` — Explore Now |
 | Button white | `#fff` bg, `#B08EAD` text on hover | `.btn_2` |
+| Surface (measured) | `#795376` | paints it ×34 — `background-color` on `.card_area .product_count input`; style.css (196,635 B, sha256 7154de8e9080) · <https://preview.colorlib.com/theme/pillowmart/> |
 
 ### Section structure (from fetched HTML, 448 lines)
 

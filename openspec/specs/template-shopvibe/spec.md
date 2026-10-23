@@ -36,6 +36,7 @@ four-column footer with newsletter signup.
 | Card hover icon bg | `rgba(197,50,45,0.8)`  | Red semi-transparent                       |
 | Footer bg          | `#ffffff`               | White                                      |
 | Top menu bg        | `#ffffff`               | White, light border                        |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (98,647 B, sha256 9557400c0929) · <https://preview.colorlib.com/theme/listashop/> |
 
 ## Section Structure (top-to-bottom, 1:1 fidelity)
 

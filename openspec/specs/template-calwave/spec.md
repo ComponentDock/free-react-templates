@@ -10,6 +10,7 @@ A Calendar & Timepiece Planner template with calendar & timepiece, hero and feat
 - **Background**: `#f8fafc` (Light Slate) / `#0f172a` (Dark Slate)
 - **Font family**: `'Inter'`, sans-serif
 - **Layout**: Navbar, Hero section, Interactive Calendar & Timepiece Planner grid, Features section, and Footer.
+- **Accent (measured):** `#8e24aa` — paints it ×4 — `color` on `[data-theme="july"] .cl-row.head`; style.css?v=025d7870 (14,584 B, sha256 daa8d924d775) · <https://preview.colorlib.com/theme/bootstrap/calendar-06/>
 
 ## Requirements
 

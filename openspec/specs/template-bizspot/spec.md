@@ -27,6 +27,7 @@ Recreation of ColorLib "Listio" — a local business directory listing template.
 | Header button radius | `4px` | Search icon container |
 | Section bg overlay gradient | `rgba(0,0,0,0.6)` → transparent | Hero overlay |
 | Footer sticky bg | `rgba(94,3,34,0.8)` | Sticky header when scrolled |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (92,556 B, sha256 a270d23a22b0) · <https://preview.colorlib.com/theme/listio/> |
 
 ## Page structure (section order, from live DOM)
 

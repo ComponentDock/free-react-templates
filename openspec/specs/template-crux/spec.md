@@ -27,6 +27,7 @@ CSS values are canonical over any screenshot sample.
 | Typeface | `"Poppins", sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
 | Body type | `color: #777777; font-size: 14px; font-weight: 300; line-height: 1.5em` | `body{…}` rule |
 | Radii | `3px`, `8px`, `8.5px` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `8.5px` (.default-switch) |
+| Surface (measured) | `#7034db` | paints it ×7 — `background-color` on `.story-area`; main.css (32,491 B, sha256 7d110e90fc67) · <https://preview.colorlib.com/theme/bbs/> |
 
 Palette in order of use: `#ffffff` ×42, `#f9f9ff` ×31, `#f58e9a` ×21, `#222222` ×14, `#fbde51` ×7, `#38a4ff` ×6.
 

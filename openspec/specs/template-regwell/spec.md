@@ -27,6 +27,7 @@ Regwell is an education appointment form template with a form card. It recreates
 | Border color  | `#dddddd` (light gray)   | Input underlines              |
 | Button radius | ~6px rounded             | Submit button                 |
 | Font family   | Inter (via Google Fonts) | Clean sans-serif body text    |
+| Surface (measured) | `#4966b1` | paints it ×3 — `background` on `.submit`; style.css?v=cee4ba2b (9,913 B, sha256 fca3e0e1b84c) · <https://colorlib.com/etc/regform/colorlib-regform-12/> |
 
 ## Section Structure (from screenshot, top-to-bottom)
 

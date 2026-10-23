@@ -244,6 +244,7 @@ Iris lives in `apps/iris` and uses shared components from `packages/ui`
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#fa333f` | live sheet paints it ×42 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (62,480 B, sha256 72f8f1365dde) · <https://preview.colorlib.com/theme/flash/> |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (62,480 B, sha256 72f8f1365dde) · <https://preview.colorlib.com/theme/flash/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

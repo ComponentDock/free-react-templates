@@ -31,6 +31,7 @@ a proper combobox/listbox pair (`role="combobox"`, `role="listbox"`,
 | Body text      | `#808080`        | Secondary copy                         |
 | Heading text   | `#000000`        | `Multiselect #05` heading              |
 | Menu surface   | `#ffffff`        | Dropdown panel                         |
+| Surface (measured) | `#5897fb` | paints it ×6 — `background-color` on `.select2-container--default .select2-results__option--highlighted[aria-selected]`; style.css?v=bdb83302 (34,338 B, sha256 da19c9d632aa) · <https://preview.colorlib.com/theme/bootstrap/multiselect-05/> |
 
 ## Requirements
 

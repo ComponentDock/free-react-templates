@@ -18,6 +18,7 @@ Preview: https://preview.colorlib.com/theme/ocheandeview/
 - **Button primary:** sage/khaki #B8B8A0 (hover: white bg, sage border)
 - **Footer:** dark #16161a background
 - **Section padding:** 120px top/bottom
+- **Accent (measured):** `#415094` — paints it ×7 — `color` on `.genric-btn.link`; style.css (110,177 B, sha256 175eaba30366) · <https://preview.colorlib.com/theme/ocheandeview/>
 
 ## Design tokens
 

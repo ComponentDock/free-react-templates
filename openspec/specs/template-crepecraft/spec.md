@@ -29,6 +29,7 @@ Extracted from live preview CSS (`css/main.css`):
 | Button radius | `20px` (pill) | `.primary-btn` — transparent bg, white border, gradient fill on hover via `:after` pseudo-element |
 | Icon circle radius | `3px` | `.single-widget .icon` border |
 | Section padding | `100px 0` | Standard section vertical rhythm |
+| Surface (measured) | `#9820ec` | paints it ×18 — `background` on `.genric-btn.primary`; main.css (37,031 B, sha256 aed66c98895a) · <https://preview.colorlib.com/theme/go-crepe/> |
 
 ## Section Structure (from live preview DOM)
 

@@ -58,6 +58,7 @@ name. Source slug + preview URL are recorded above.
 | Border radius (card)     | `8px`                                  | Subtle rounded corners on the form card      |
 | Border radius (button)   | `4px`                                  | Slightly rounded ghost button                |
 | Border radius (input)    | `0` (none)                             | Straight edges, bottom-border-only styling   |
+| Surface (measured) | `#cdaa7c` | paints it ×4 — `background` on `.ready span`; style.css?v=7973a996 (8,628 B, sha256 ccd298a1b9b2) · <https://colorlib.com/etc/bwiz/colorlib-wizard-7/index.html> |
 
 ## Requirements
 

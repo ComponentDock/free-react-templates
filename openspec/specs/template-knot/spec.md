@@ -140,6 +140,7 @@ text-center` = `.story_thumb` circular portrait (247×247, radius 50%,
   (pb 30px): "Copyright © <year> All rights reserved | This template is made
   with ♥ by Component Dock" — "Component Dock" MUST link
   https://www.componentdock.com/ (replacing the source's Colorlib credit).
+- **Surface (measured):** `#ff5e13` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (124,156 B, sha256 18b8ea68472c) · <https://preview.colorlib.com/theme/sunshine/>
 
 ## Design tokens
 

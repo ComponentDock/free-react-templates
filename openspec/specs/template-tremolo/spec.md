@@ -17,6 +17,7 @@ Recreation of ColorLib `accordion-02` (Free Food Menu Accordion), previewed at `
 - **Component Styles**:
   - Accordion cards: Expandable panels with smooth transitions, chevron indicators, and clear distinction between active and collapsed states.
   - Buttons and Badges: Pill-shaped dietary tags (Vegetarian, Spicy, Chef's Special), crisp CTA order buttons.
+- **Accent (measured):** `#feba2c` — paints it ×3 — `color` on `a`; style.css?v=18e7ffa9 (20,618 B, sha256 a3b3f59b5c79) · <https://preview.colorlib.com/theme/bac/accordion-02/>
 
 ## Requirements
 

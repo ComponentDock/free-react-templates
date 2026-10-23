@@ -26,6 +26,7 @@ featured products, offer banner, new products, blog, newsletter, and footer.
 | Footer bg      | #0d0d1f       | Very dark navy                               |
 | Button radius  | rounded-lg    | 0.5rem                                       |
 | Product hover  | green overlay | 60% opacity lime background                  |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (66,694 B, sha256 747e8b83fc95) · <https://preview.colorlib.com/theme/eiser/> |
 
 ## Sections (in order)
 

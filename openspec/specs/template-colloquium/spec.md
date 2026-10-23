@@ -26,6 +26,7 @@ CTA registration form, and a multi-column footer.
 | Text dark         | #333333          | Body on light backgrounds                  |
 | Font heading      | Barlow Condensed | Bold condensed headings                    |
 | Font body         | Barlow           | Regular body text                          |
+| Surface (measured) | `#423ead` | paints it ×41 — `background` on `.info-wrap`; style.css (88,202 B, sha256 87a2cd86098f) · <https://preview.colorlib.com/theme/convention/> |
 
 ## Sections (top to bottom)
 

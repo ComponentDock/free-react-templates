@@ -50,6 +50,7 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 | Collapsed accordion title | `#010A44`                                                                           | Open title turns `#FF9100`                                                                                                     |
 | Footer text               | `#949494`                                                                           | links/body on black                                                                                                            |
 | Section padding           | `120px` top / `100px` bottom                                                        | `.section-padding`                                                                                                             |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (71,624 B, sha256 15df8399bb83) · <https://preview.colorlib.com/theme/thestartup/> |
 
 ## Section inventory (DOM order, home page)
 

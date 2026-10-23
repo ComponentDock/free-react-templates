@@ -113,6 +113,7 @@ Convoke lives in `apps/convoke` and uses shared components from
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#0181f5` | live sheet paints it ×12 — `border` on `.boxed-btn`; style.css (134,261 B, sha256 2770e33de46a) · <https://preview.colorlib.com/theme/wemeet/> |
+| Surface (measured) | `#ff5e13` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (134,261 B, sha256 2770e33de46a) · <https://preview.colorlib.com/theme/wemeet/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

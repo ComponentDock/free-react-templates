@@ -25,6 +25,7 @@ A clean sidebar navigation template with a fixed left sidebar, main content area
 - Body text: `#666666`
 - Font: Poppins (Google Fonts)
 - Newsletter input bg: `rgba(255,255,255,0.2)`
+- **Surface (measured):** `#3445b4` — paints it ×7 — `background` on `#sidebar`; style.css?v=1dfc2383 (16,150 B, sha256 fb04b245985a) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/>
 
 ## Layout
 

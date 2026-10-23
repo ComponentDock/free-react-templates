@@ -228,6 +228,16 @@ heart` + **repo-standard credit** (replace the Colorlib credit line).
 Shanti lives in `apps/shanti` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#78d5ef` | paints it ×9 — `background-color` on `.btn-primary`; style.css (69,864 B, sha256 da8f87f5e153) · <https://preview.colorlib.com/theme/yogalax/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Transparent navigation bar

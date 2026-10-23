@@ -49,6 +49,7 @@ Villa lives in `apps/villa` and uses shared components from `packages/ui`
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#77d5f7` | live sheet paints it ×37 — `background` on `.genric-btn.primary`; main.css (37,718 B, sha256 97dd6b609a16) · <https://preview.colorlib.com/theme/layal/> |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (37,718 B, sha256 97dd6b609a16) · <https://preview.colorlib.com/theme/layal/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

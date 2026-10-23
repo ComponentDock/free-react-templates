@@ -63,6 +63,7 @@ taupe brand color #937c6f, dark #232323 headings, and #929191 body text.
 | font-heading   | `Open Sans` 700       | headings                      |
 | button-radius  | `0` (square)          | buttons                       |
 | button-padding | `12px 30px`           | buttons                       |
+| Accent (measured) | `#f5c06f` | paints it ×15 — `color` on `.rating_1 i:first-child`; main_styles.css (26,387 B, sha256 4c9d099c4e15) · <https://preview.colorlib.com/theme/wish/> |
 
 ## Requirements
 

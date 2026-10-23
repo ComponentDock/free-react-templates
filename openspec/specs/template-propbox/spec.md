@@ -31,6 +31,7 @@ Extracted from the ColorLib preview screenshot and page HTML/CSS:
 | Font family       | `"Poppins"`               | Sans-serif; headings + body (inferred from WP CSS)  |
 | Nav link color    | `#1B2A4A`                 | Dark navy text on white navbar                     |
 | Orange accent     | `#F77F00`                 | Also used on "Add Property" button, search icon     |
+| Surface (measured) | `#001d38` | paints it ×22 — `background` on `.header-area .header-top_area`; style.css (183,542 B, sha256 c44673d7754f) · <https://preview.colorlib.com/theme/realestate2/> |
 
 ## Section structure (from screenshot analysis)
 

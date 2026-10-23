@@ -21,6 +21,7 @@ Loaf is a business landing page with a navbar, hero, about band, categories, vid
 | Navy bg       | `#04091e` | Footer background, hero overlay base     |
 | Font family   | Poppins   | All text (300–700 weights)               |
 | Button radius | 25px      | Primary CTA buttons                      |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (47,840 B, sha256 6d45e6244089) · <https://preview.colorlib.com/theme/bakery/> |
 
 ## Sections (in order)
 

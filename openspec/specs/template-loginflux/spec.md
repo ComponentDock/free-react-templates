@@ -33,6 +33,7 @@ Extracted from screenshot (preview unavailable):
 | "Sign in" link color       | `#333333` (dark gray)                          | "Sign in →" link text                                         |
 | "Sign in" arrow            | Right arrow (→)                                | Inline after "Sign in" text                                   |
 | "Terms of User" link color | `#9B59B6` (brand purple)                       | Hyperlink in checkbox text                                    |
+| Surface (measured) | `#c77ff2` | paints it ×8 — `background` on `.login100-form-bgbtn`; style.css?v=73d8309b (14,071 B, sha256 00285d442cb4) · <https://colorlib.com/etc/lf/Login_v13/index.html> |
 
 ## Layout structure
 

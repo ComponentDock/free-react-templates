@@ -117,6 +117,16 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Edition lives in `apps/edition` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn) and the repo-standard Navbar/Footer chrome.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#62ddff` | paints it ×3 — `background-image` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (26,000 B, sha256 b8fd77bb0c3c) · <https://preview.colorlib.com/theme/sensive/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Header

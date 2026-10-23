@@ -36,6 +36,7 @@ Extracted from https://preview.colorlib.com/theme/portech/css/style.css:
 | Footer background | `#141b25` | `.ftco-footer` |
 | Footer text color | `rgba(255,255,255,0.9)` | Footer paragraphs |
 | Project card | Full bg-image with bottom text overlay | `.project-wrap` |
+| Surface (measured) | `#6f4be8` | paints it ×28 — `background` on `.ftco-intro .img .overlay`; style.css (92,260 B, sha256 2de446b4d7a9) · <https://preview.colorlib.com/theme/portech/> |
 
 ## Requirements
 

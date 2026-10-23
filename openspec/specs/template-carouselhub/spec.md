@@ -29,6 +29,7 @@ keeps the sky-blue brand accent, the slate-dark hero and the light
 | Slate light    | `#f8fafc` | Alternating section background            |
 | Card surface   | `#ffffff` | Cards on slate-light sections             |
 | Radius         | `rounded-md` / `rounded-full` | Buttons and carousel dots   |
+| Surface (measured) | `#b063c5` | paints it ×4 — `background` on `.owl-carousel .owl-dots .owl-dot.cl-active`; style.css?v=18e25668 (19,122 B, sha256 05c98090314f) · <https://preview.colorlib.com/theme/bootstrap/carousel-03/> |
 
 ## Requirements
 

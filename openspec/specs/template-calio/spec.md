@@ -17,6 +17,7 @@ Calio is a multi-view calendar template with a month view, week view, day view, 
 - **Text:** #212529 (primary), #666 (secondary)
 - **Today highlight:** #007bff background on current day cell
 - **Calendar layout:** Fixed-position, fills viewport with 20px margins
+- **Surface (measured):** `#f67280` — paints it ×10 — `background-color` on `.fc-button-primary`; style.css?v=eba3b761 (24,935 B, sha256 c1f1bf4ff455) · <https://preview.colorlib.com/theme/bootstrap/calendar-20/>
 
 ## Sections (in order)
 

@@ -31,6 +31,7 @@ A conference/event landing page template. Recreation of ColorLib **Eventro**.
 | Scroll-to-top               | `#FDE449` circle, 50px                 | White icon                                             |
 | Section title               | 60px Oswald, `#302072`, uppercase      | With `#FDE449` underline on hover                      |
 | Subtitle span               | 20px Oswald, `#140C40`, uppercase      | Letter-spacing 0.05em                                  |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (66,819 B, sha256 c4843396a9ac) · <https://preview.colorlib.com/theme/eventro/> |
 
 ## Section Structure (in order)
 

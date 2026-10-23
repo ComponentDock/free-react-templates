@@ -53,6 +53,7 @@ and the PR.
 | Avatar radius     | `50%`                                         | Circular author avatars                                        |
 | Font family       | `'Raleway', sans-serif`                       | Clean geometric sans-serif (Google Fonts)                      |
 | Font weights      | 300, 400, 500, 600, 700                       | Light through bold                                             |
+| Surface (measured) | `#1a5ed1` | paints it ×12 — `background` on `.site-btn.btn-3`; style.css (28,889 B, sha256 8f73e1ab413d) · <https://preview.colorlib.com/theme/academica/> |
 
 ## Requirements
 

@@ -114,6 +114,16 @@ section-bg` with `section_bg03.png`; carousel of 2+ slides: dashed-circle
 Scholium lives in `apps/scholium` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (67,485 B, sha256 4feb29793f73) · <https://preview.colorlib.com/theme/onlineedu/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

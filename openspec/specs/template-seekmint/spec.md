@@ -23,6 +23,7 @@ Seekmint is a search form bar 04 with a gradient background, heading, search bar
 | Placeholder text | Gray (#999)                               |
 | Font family      | Poppins (Google Fonts)                    |
 | Footer text      | White, semi-transparent                   |
+| Surface (measured) | `#c643e0` — paints it ×16 — `background` on `body`; style.css?v=dfd15eaa (11,710 B, sha256 3cb80a63d305) · <https://preview.colorlib.com/theme/bootstrap/search-form-bar-04/> |
 
 ## Layout
 

@@ -19,6 +19,7 @@ A full-viewport job search form template with a solid blue background, centered 
 - **Budget dropdown**: White background, styled select
 - **Search button**: Black background, white text, uppercase, rectangular
 - **Footer**: White text on blue, links to Component Dock
+- **Surface (measured):** `#1089ff` — paints it ×9 — `background` on `body`; style.css?v=1b7b7dc0 (15,416 B, sha256 84ad4e04c002) · <https://preview.colorlib.com/theme/bootstrap/search-form-bar-08/>
 
 ## Requirements
 

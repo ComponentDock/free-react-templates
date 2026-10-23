@@ -16,6 +16,7 @@ Homefront is a directory and listings landing page with a navbar, hero, search, 
 - Font: Poppins (Google Fonts)
 - Buttons: rounded, bg-primary with white text, hover darkens
 - Card style: white bg, subtle shadow, rounded corners
+- **Surface (measured):** `#26baee` — paints it ×27 — `background` on `.bg-primary`; style.css (76,655 B, sha256 79b9bd0b7809) · <https://preview.colorlib.com/theme/royalestate/>
 
 ## Sections (in order)
 

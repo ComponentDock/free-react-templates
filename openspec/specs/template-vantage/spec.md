@@ -179,6 +179,16 @@ icon.png` centered, `translateY(-50%)`). Project titles (from alt
 Vantage lives in `apps/vantage` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (73,046 B, sha256 cbc91aca2021) · <https://preview.colorlib.com/theme/biznance/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Header / navigation

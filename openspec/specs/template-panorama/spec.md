@@ -19,6 +19,7 @@ CSS values are canonical over any screenshot sample.
 | Ink / dark surface | `#000000` | 13 declarations — `h1`, `h2` |
 | Body type | `font-weight: 400; font-size: 1rem; line-height: 1.7` | `body{…}` rule |
 | Radii | `50%`, `7px`, `4px` | `50%` (.site-mobile-menu .site-nav-wrap .arrow-collapse); `7px` (.img-shadow); `4px` (.block__86547) |
+| Surface (measured) | `#007eff` | paints it ×12 — `background-color` on `.bg-primary`; custom-bs.css (35,950 B, sha256 fb029ca1be17) · <https://preview.colorlib.com/theme/scenic/> |
 
 Palette in order of use: `#ffffff` ×29, `#007bff` ×18, `#000000` ×13, `#212529` ×4, `#cccccc` ×4, `#f8f9fa` ×4.
 

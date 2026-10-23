@@ -16,6 +16,7 @@ Preview: Unavailable (404). Screenshot used as sole reference.
 - Text body: Dark gray `#555555`
 - Font heading: Cormorant Garamond (serif)
 - Font body: Lato (sans-serif)
+- **Accent (measured):** `#b99365` — paints it ×4 — `color` on `.btn.btn-outline-primary`; style.css (14,105 B, sha256 aa3163c6b7d8) · <https://preview.colorlib.com/theme/luxuryhotel/>
 
 ## Requirements
 

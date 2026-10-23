@@ -265,6 +265,16 @@ home-blog .overlay` rgba(38,37,51,0.85), `.estimated-cost label` color.
 Cargomate lives in `apps/cargomate` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (135,114 B, sha256 f5a3e8b56994) · <https://preview.colorlib.com/theme/lagoon/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Top strip and header

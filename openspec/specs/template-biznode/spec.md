@@ -81,6 +81,7 @@ Extracted from the live preview CSS (`main.css`) at
 | full-width-wrapper     | 100%                       | `.main-wrapper` (rest of page) |
 | banner-height          | 600px                      | Hero banner section            |
 | container              | Bootstrap-like `.container`| Content centers                |
+| Surface (measured) | `#7034db` | paints it ×7 — `background-color` on `.story-area`; main.css (32,491 B, sha256 7d110e90fc67) · <https://preview.colorlib.com/theme/bbs/> |
 
 ## Requirements
 

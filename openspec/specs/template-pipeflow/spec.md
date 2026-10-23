@@ -17,6 +17,7 @@ and footer.
 - **Text colors:** #222 (headings), #777 (body)
 - **Button shape:** pill/radius 50px, solid brand color, transparent on hover with white border
 - **Section spacing:** 120px vertical padding (.section-gap)
+- **Surface (measured):** `#4cd3e3` — paints it ×7 — `background` on `.genric-btn.success`; main.css (29,643 B, sha256 6023c7741260) · <https://preview.colorlib.com/theme/plumber/>
 
 ## Design reference (replication findings)
 

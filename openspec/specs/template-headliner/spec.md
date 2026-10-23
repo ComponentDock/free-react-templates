@@ -49,6 +49,7 @@ Extracted from the ColorLib listing page CSS and screenshot visual analysis:
 | section-padding-y | 60px   |
 | grid-gap          | 30px   |
 | card-image-ratio  | 16:10  |
+| Surface (measured) | `#140c40` | paints it ×57 — `background` on `#back-top`; style.css (213,734 B, sha256 3268c7edce5e) · <https://preview.colorlib.com/theme/awesomemagazine/> |
 
 ### Button / Badge Styles
 

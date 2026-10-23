@@ -35,6 +35,7 @@ Extracted from the live preview stylesheet (`css/style.css`) and HTML structure:
 | Promo image | `flex: 0 0 50%` | Takes exactly half the modal |
 | Page layout | Full viewport height, centered | `height: 100vh` |
 | Fade animation | Bootstrap `modal fade` | Scale + opacity transition |
+| Surface (measured) | `#ed5107` | paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=add186fd (18,529 B, sha256 421e8a340698) · <https://preview.colorlib.com/theme/bootstrap/modal-15/> |
 
 ## Visual Design
 

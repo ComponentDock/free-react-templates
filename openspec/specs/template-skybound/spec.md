@@ -151,6 +151,16 @@ arrow image hanging past the right edge.
   attribution; footer MUST link https://www.componentdock.com/
   ("Component Dock").
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#4cd3e3` | paints it ×11 — `background` on `.success`; style.css (81,615 B, sha256 f8b71781b93e) · <https://preview.colorlib.com/theme/beyond/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Off-canvas menu with hamburger toggle

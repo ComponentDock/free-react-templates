@@ -36,6 +36,7 @@ Extracted from preview live CSS (`css/main.css` + `css/util.css`):
 | Avatar border         | `4px solid #ec1d25`                               | Review section circular avatars                           |
 | Image hover           | `scale(1.1)` transition 0.6s                      | All image cards                                           |
 | Pattern bg            | Repeating subtle pattern over `#222222`           | Welcome, Booking, Sign-up sections                        |
+| Surface (measured) | `#d41b22` | paints it ×8 — `background-color` on `.swiper-pagination-bullet-active`; main.css (30,752 B, sha256 6b49c107da5e) · <https://preview.colorlib.com/theme/pato/> |
 
 ## Visual design notes (from screenshot + preview)
 

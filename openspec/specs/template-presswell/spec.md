@@ -38,6 +38,16 @@ section-for-section with matching layout, colors, typography, and content types
   9. Footer: Logo, description, social links, Services list, Contact info
   10. Footer Bottom: Copyright with Component Dock branding
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#140c40` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (55,325 B, sha256 74b8789b483e) · <https://preview.colorlib.com/theme/laundry/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

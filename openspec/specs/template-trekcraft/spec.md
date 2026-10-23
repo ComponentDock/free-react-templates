@@ -28,6 +28,7 @@ A Travel Agency template with main navigation, hero slider, search panel, intro 
 | Card radius              | `18px`                                        | Offer cards, rounded containers                                          |
 | Nav arrow                | SVG with gradient fill                        | Orange-to-purple arrow navigation                                        |
 | Star rating              | `#fa9e1c`                                     | Star icons for reviews                                                   |
+| Accent (measured) | `#ffeb8d` | paints it ×10 — `color` on `.rating_1 i:first-child`; main_styles.css (38,355 B, sha256 0f3a40297492) · <https://preview.colorlib.com/theme/travelix/> |
 
 ## Sections (order preserved 1:1)
 

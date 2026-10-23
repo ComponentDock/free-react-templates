@@ -35,6 +35,7 @@ Extracted from the live preview stylesheet (`style.css`):
 | Primary btn radius | `30px` | Pill shape |
 | Primary btn shadow | `0px 7px 21px 0px rgba(0,0,0,0.12)` | Subtle lift shadow |
 | Border btn | `border: 1px solid #007AFF`, no fill, `color: #007AFF` | `.borders-btn` |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (58,436 B, sha256 fb3b1613f1b5) · <https://preview.colorlib.com/theme/carwash/> |
 
 ## Requirements
 

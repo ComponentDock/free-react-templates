@@ -24,6 +24,7 @@ Recreation of ColorLib **Boxus** — a one-page creative digital agency template
 | Section BG alt    | Light gray `#f9f9f9`         | Alternating section backgrounds               |
 | Button radius     | Rounded (border-radius ~4px) | Small rounded corners on buttons              |
 | Button padding    | ~12px 30px                   | Comfortable padding, medium size              |
+| Surface (measured) | `#221c5a` | paints it ×8 — `background-color` on `#news`; style.css (28,656 B, sha256 d0b9424c848c) · <https://preview.colorlib.com/theme/boxus/> |
 
 ### Color palette (inline style accents from preview)
 - Service card dots: `#32DB8A` (green), `#FFBB42` (yellow), `#E74C78` (pink), `#4C9EE7` (blue)

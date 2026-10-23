@@ -54,6 +54,16 @@ types (no ColorLib assets copied).
 Healpoint lives in `apps/healpoint` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (79,586 B, sha256 4d31b82e0b84) · <https://preview.colorlib.com/theme/medicare2/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

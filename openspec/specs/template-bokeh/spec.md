@@ -33,6 +33,7 @@ static.
 | Surface       | `#ffffff`              | Cards and light sections          |
 | Muted band    | `#f7f7f7`              | Alternating section background    |
 | Border        | `#eeeeee`              | Hairlines                         |
+| Surface (measured) | `#f8b600` | paints it ×15 — `background` on `.genric-btn.primary`; style.css (76,165 B, sha256 d71bf3c38b9c) · <https://preview.colorlib.com/theme/pentax/> |
 
 ## Requirements
 

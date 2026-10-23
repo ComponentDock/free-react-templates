@@ -83,6 +83,7 @@ screenshot used as sole reference).
 | Button sizes                     | Small, Regular, Large — both filled and outlined variants                                                              | Screenshot — size rows                                                                |
 | Navbar                           | Dark transparent, logo left, nav items + download button right                                                         | Screenshot — fixed/absolute top bar                                                   |
 | CTA buttons (hero)               | Two buttons: "Download Tools" (pink filled) + "Components" (dark/outlined)                                             | Screenshot — hero section                                                             |
+| Surface (measured) | `#160f30` | paints it ×35 — `background` on `body`; style.css (120,188 B, sha256 885b19c2f393) · <https://preview.colorlib.com/theme/equip/> |
 
 ## Requirements
 

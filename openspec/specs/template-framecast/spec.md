@@ -142,6 +142,7 @@ Dock (`https://www.componentdock.com/`) instead.
 | `--btn-font`     | `"Alata", sans-serif`   | Button labels                                              |
 | Button radius    | `3px`                   | Subtle rounded corners on buttons                          |
 | Card radius      | `0`                     | Sharp rectangular portfolio items                          |
+| Surface (measured) | `#ff5e13` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (148,835 B, sha256 8b83dd343f25) · <https://preview.colorlib.com/theme/portfolio2/> |
 
 ## Verification checklist
 

@@ -26,6 +26,7 @@ Recreation of ColorLib's **Genius** template as a React 19 + Vite + Tailwind 4 +
 | Button radius | `30px` (rounded) |
 | Card radius | `4px` |
 | Avatar radius | `50%` (circular) |
+| Surface (measured) | `#ffd900` — paints it ×24 — `background` on `.hero-wrap .overlay`; style.css (69,362 B, sha256 d339e56a282a) · <https://preview.colorlib.com/theme/genius/> |
 
 ## Section structure
 

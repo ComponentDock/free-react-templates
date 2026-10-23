@@ -42,6 +42,7 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 | Button style | `padding: 15px 30px`, `font-size: 14px`, `font-weight: bold`, `text-transform: uppercase`, `letter-spacing: 0.1em` | CTA buttons (Contact Me, Send Message) |
 | Mobile menu | White bg, 300px wide, slides from right | Offcanvas mobile nav |
 | Pagination | Circular links (50% radius), hover → `#df0e62` bg | Blog section pagination |
+| Accent (measured) | `#8bc34a` | paints it ×1 — `color` on `.ul-check.success li:before`; style.css (14,049 B, sha256 c749c31c84d3) · <https://preview.colorlib.com/theme/elit/> |
 
 ## Section Structure (in page order)
 

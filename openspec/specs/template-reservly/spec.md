@@ -97,6 +97,16 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Reservly lives in `apps/reservly` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#1e62d8` | paints it ×1 — `background-color` on `.booking-form .submit-btn`; style.css?v=b6834a27 (10,735 B, sha256 d99007d3bb83) · <https://colorlib.com/etc/bforms/colorlib-booking-1/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -160,6 +160,7 @@ font-weight:600`.
 | Card details     | `padding:40px`; h5 18px Playfair; meta `margin-top:15px`; card `margin-bottom:60px`                                                                        | `.amenities-details` / `.amenities-meta` / `.single-amenities`                   |
 | Footer headings  | `h6 { color:#fff; font-size:18px; font-weight:600; margin-bottom:25px }`                                                                                   | `.footer-area h6`                                                                |
 | Icons            | lucide-react equivalents (Calendar, MessageCircle, ArrowRight, Folder, Search, Facebook, Twitter, Instagram, Dribbble, Behance, ArrowRight/LongArrowRight) | banner strip, meta, Read More, category, search, footer                          |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (46,946 B, sha256 9a33ff383125) · <https://preview.colorlib.com/theme/revive/> |
 
 ## Recreation decisions
 

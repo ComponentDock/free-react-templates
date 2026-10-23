@@ -23,6 +23,7 @@ navbar, hero, services, about, mission, team, CTA, and footer sections.
 - **White:** #ffffff
 - **Button style:** rounded, 5px radius, orange bg, white text
 - **Hero overlay:** navy at 70% opacity with diagonal stripe accent
+- **Surface (measured):** `#021a47` — paints it ×9 — `background` on `.btn`; style.css (82,690 B, sha256 dc0b3bea7785) · <https://preview.colorlib.com/theme/inds/>
 
 ## Sections (in order)
 

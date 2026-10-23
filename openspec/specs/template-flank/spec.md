@@ -44,6 +44,7 @@ A Sidebar Navigation template with hamburger and main sections. Recreation of Co
 | Newsletter input                | White bg, rounded, placeholder "Email Address"                | Newsletter subscription form                  |
 | Copyright text                  | White, 11px, below newsletter                                 | Footer copyright in sidebar                   |
 | Section separator               | Thin border/line between nav and newsletter                   | Visual divider                                |
+| Surface (measured) | `#494ca2` | paints it ×6 — `background` on `#sidebar`; style.css?v=ef4104b9 (15,743 B, sha256 46f12e9e9334) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-03/> |
 
 ## Page structure (section order, from screenshot)
 

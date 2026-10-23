@@ -66,6 +66,16 @@ copied).
 Getaway lives in `apps/getaway` and uses shared components from
 `packages/ui`.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#f9ab30` | paints it ×29 — `background` on `.btn.btn-primary`; style.css (67,697 B, sha256 9f944242d599) · <https://preview.colorlib.com/theme/vacation/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -22,6 +22,7 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 | Font family       | `"Work Sans"`             | sans-serif; headings + body            |
 | Counter text      | `#fff` on hero bg image   | White numbers + labels                 |
 | Blog card header  | `#78d5ef`                 | Same primary accent on blog cards      |
+| Surface (measured) | `#26baee` | paints it ×27 — `background` on `.bg-primary`; style.css (76,655 B, sha256 79b9bd0b7809) · <https://preview.colorlib.com/theme/royalestate/> |
 
 ## Section structure (from live preview DOM)
 

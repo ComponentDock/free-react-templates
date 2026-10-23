@@ -22,6 +22,7 @@ Recreation of ColorLib **Colorlib Wizard 26** (`https://colorlib.com/wp/template
   2. **Step Indicator Navigation**: Visual progress bar showing steps (e.g., 1. Personal Info, 2. Preferences & Booking Details, 3. Review & Confirmation).
   3. **Interactive Step Form**: Active step fields with live validation, next/previous buttons, and summary view.
   4. **Footer**: Clean footer with copyright and mandatory Component Dock attribution (`https://www.componentdock.com/`).
+- **Accent (measured):** `#55e8d5` — paints it ×4 — `color` on `.inner .cl-table-responsive tbody td`; style.css?v=7a140480 (14,751 B, sha256 eb2d2f825115) · <https://colorlib.com/etc/bwiz/colorlib-wizard-26/index.html>
 
 ## Requirements
 

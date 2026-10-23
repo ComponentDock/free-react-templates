@@ -192,6 +192,7 @@ newsletter submits. Testimonial thumbnails are the only rounded elements
 | footer link | `#999999` | footer nav links (hover `#ff2f8b`) |
 | hover shadow | `rgba(129,74,255,0.2)` | feature-card hover `box-shadow 0 5px 50px` |
 | white | `#FFFFFF` | hero headline, navbar links, outlined button, card hover titles |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (81,138 B, sha256 016eb8589e80) · <https://preview.colorlib.com/theme/taxa/> |
 
 - Fonts: Playfair Display 700 (ALL headings + package date day);
   Roboto 300/400/500/600 (body + UI; Google Fonts `<link>` in `index.html`).

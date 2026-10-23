@@ -140,6 +140,7 @@ Preview URL: https://preview.colorlib.com/theme/eiser/
 | `--section-gap`      | `120px` vertical padding           | `.section_gap` (80px on mobile)                                         |
 | `--product-hover`    | image scale 1.1, p_icon slide-up   | Product image hover zoom + icon panel slide-up transition               |
 | `--social-radius`    | `0` (square)                       | Footer social icon buttons — square with `rgba(255,255,255,0.15)` bg   |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (66,694 B, sha256 747e8b83fc95) · <https://preview.colorlib.com/theme/eiser/> |
 
 ## Requirements
 

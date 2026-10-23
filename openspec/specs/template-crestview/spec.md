@@ -29,6 +29,7 @@ Recreation of ColorLib's **Radisson** template as a React 19 + Vite + Tailwind 4
 | `--btn-text` | `#ffffff` | Button text |
 | `--section-shadow` | `0px 3px 16px 0px rgba(0,0,0,0.1)` | Cards, booking form shadow |
 | `--overlay-black` | `rgba(0,0,0,0.15)` | Hero image overlay gradient |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (67,566 B, sha256 c3523f60a171) · <https://preview.colorlib.com/theme/radisson/> |
 
 ## Section Structure (from preview DOM)
 

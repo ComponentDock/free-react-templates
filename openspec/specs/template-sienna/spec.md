@@ -71,6 +71,16 @@ copied).
 Sienna lives in `apps/sienna` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#09152b` | paints it ×1 — `background` on `.footer-area`; style.css (33,715 B, sha256 2283a32711dc) · <https://preview.colorlib.com/theme/remake/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

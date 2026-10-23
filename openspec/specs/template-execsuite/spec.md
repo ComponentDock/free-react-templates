@@ -26,6 +26,7 @@ Recreation of ColorLib "Corporate" template as a React 19 + Vite + Tailwind 4 + 
 | footer-social-bg | `#111` | Social icon button backgrounds |
 | white | `#fff` | Hero text, button text, footer headings |
 | border-light | `#eee` | Service "View Details" button border |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (37,211 B, sha256 f2037cd22231) · <https://preview.colorlib.com/theme/corporate/> |
 
 ### Typography
 - **Primary font:** `"Poppins", sans-serif` (Google Fonts, weights 100-700)

@@ -37,6 +37,7 @@ Extracted from the screenshot and ColorLib template page CSS:
 | Layout             | Two-column: main content ~65%, sidebar ~35%                        |
 | Sidebar position   | Right                                                              |
 | Chevron icon       | Dropdown arrow on category items                                   |
+| Accent (measured) | `#fc7fb2` — paints it ×4 — `color` on `a`; style.css?v=83846b7b (13,264 B, sha256 1269ac0ceee8) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/> |
 
 ## Requirements
 

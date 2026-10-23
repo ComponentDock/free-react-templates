@@ -35,6 +35,7 @@ Extracted from the screenshot analysis — **re-probed 2026-10-23: the demo serv
 | Result count         | Teal number + gray "results" text        |
 | Reset button         | Text only, dark gray, hover teal         |
 | Search button        | Rounded teal bg, white text, `px-5 py-2` |
+| Surface (measured) | `#00bbec` — paints it ×3 — `background` on `.s009 form .inner-form .input-field .btn-search`; style.css?v=b388b9e2 (14,114 B, sha256 8cdcefd5dec9) · <https://colorlib.com/etc/searchf/colorlib-search-9/> |
 
 <!-- unreachable-reprobe:start -->
 > **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/searchf/colorlib-search-9/` — HTTP 200, 5,996 B, title ``.

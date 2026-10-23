@@ -44,6 +44,7 @@ Preview was unreachable (404) — design derived from the TEMPLATES.md screensho
 | Font family     | `Poppins, sans-serif`  | Sans-serif medical/tech feel                |
 | Button radius   | `4px`                  | Subtle rounded corners on CTAs              |
 | Section spacing | ~80px vertical padding | Generous whitespace between sections        |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (69,500 B, sha256 a1a33ae80d08) · <https://preview.colorlib.com/theme/medical/> |
 
 ## Requirements
 

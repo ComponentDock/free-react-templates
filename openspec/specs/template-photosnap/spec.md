@@ -27,6 +27,7 @@ Extracted from the ColorLib Louie preview CSS (`css/style.css`):
 | Font signature | `"Herr Von Muellerhoff", cursive` | Signature element |
 | Button radius | Bootstrap defaults | Rounded buttons |
 | Avatar radius | `50%` | Circular profile images |
+| Surface (measured) | `#ccb78f` | paints it ×14 — `background` on `.ftco-bread`; style.css (71,039 B, sha256 116b552fc644) · <https://preview.colorlib.com/theme/louie/> |
 
 ### Buttons
 

@@ -29,6 +29,7 @@ and dual-action buttons.
 | Modal shadow       | `0 10px 50px -10px rgba(0,0,0,0.9)`         | `.modal-body` box-shadow               |
 | Button styles      | `btn-primary` solid fill, no border; `btn-link` text-only dismiss | Bootstrap classes |
 | Button padding     | Primary: `px-4 py-10` (10px top/bottom)     | `.btn-primary { padding-top: 10px }`   |
+| Surface (measured) | `#3e64ff` | paints it ×6 — `background-color` on `.cl-btn-primary`; style.css?v=6d8f01a7 (19,339 B, sha256 936a783d4a89) · <https://preview.colorlib.com/theme/bootstrap/modal-18/> |
 
 ## Requirements
 

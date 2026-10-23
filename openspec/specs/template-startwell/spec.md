@@ -11,6 +11,7 @@ Recreation of ColorLib Startright (`https://colorlib.com/wp/template/startright/
 - **Dark / Neutral Color**: `#252837` (Dark Slate / Navy)
 - **Background Tones**: Clean white `#ffffff` and light gray/slate `#f8f9fa`
 - **Button Shapes**: Fully rounded or softly rounded buttons (`rounded-full` or `rounded-md`) with hover transitions.
+- **Surface (measured):** `#10495c` — paints it ×19 — `background` on `.hero`; style.css (62,242 B, sha256 1803fe2e9ef5) · <https://preview.colorlib.com/theme/startright/>
 
 ## Sections
 

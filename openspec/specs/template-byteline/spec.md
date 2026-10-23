@@ -42,6 +42,7 @@ Extracted from the live preview CSS (`assets/css/style.css`) at https://preview.
 | Button border style | 1px solid `#fc3f00` | Boxed/outline variant |
 | Header top bar | Black (`#000000`) | Weather + date info bar |
 | Header sticky | White with shadow | Sticky nav on scroll |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (91,178 B, sha256 1b5471087dbb) · <https://preview.colorlib.com/theme/aznews/> |
 
 ## Section Structure (in page order)
 

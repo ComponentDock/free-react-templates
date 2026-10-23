@@ -35,6 +35,7 @@ Extracted from the preview stylesheet (`css/style.css`):
 | Option highlight bg | `#fff` | Hovered/highlighted option |
 | Option highlight text | `#000` | Hovered/highlighted option text |
 | Checkmark icon | Font Awesome `\f00c` (check) | Selected option indicator |
+| Surface (measured) | `#5897fb` | paints it ×6 — `background-color` on `.select2-container--default .select2-results__option--highlighted[aria-selected]`; style.css?v=bdb83302 (34,338 B, sha256 da19c9d632aa) · <https://preview.colorlib.com/theme/bootstrap/multiselect-05/> |
 
 ### Visual design (from TEMPLATES.md screenshot reference)
 

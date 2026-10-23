@@ -21,6 +21,7 @@ A luxury hotel template with hero, booking form, about, rooms, blog posts and fo
 | Heading text     | `#222222`                                     | h1, h2, h3                  |
 | Light section bg | `#f1f9ff`                                     | Testimonials, Blog sections |
 | Button style     | bg `#4d8eff`, white text, radius `0` (square) | CTAs                        |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (67,566 B, sha256 c3523f60a171) · <https://preview.colorlib.com/theme/radisson/> |
 
 ## Requirements
 

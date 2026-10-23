@@ -31,6 +31,7 @@ Recreation of ColorLib **Laundry** template as a React 19 + Vite + Tailwind 4 + 
 | Card radius | `12px`, `20px` | Service cards, offer cards |
 | Icon radius | `50%` | Circular icon containers |
 | Section tag | `rgba(103,133,255,0.1)` bg + `#6785FF` text | Light blue pill tag above headings |
+| Surface (measured) | `#140c40` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (55,325 B, sha256 74b8789b483e) · <https://preview.colorlib.com/theme/laundry/> |
 
 ## Page structure (section order, from live demo DOM)
 

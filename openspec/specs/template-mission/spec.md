@@ -203,6 +203,7 @@ content kinds (no ColorLib assets copied).
   `Stethoscope` (medicine), `GraduationCap` (education), `Users`,
   `ArrowRight`, social icons (Facebook, Twitter/X, Instagram, etc.), logo mark
   (Heart/Leaf hybrid).
+- **Surface (measured):** `#ff5e13` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (55,786 B, sha256 a266f2594077) · <https://preview.colorlib.com/theme/nonprofit/>
 
 ## Design tokens
 

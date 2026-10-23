@@ -29,6 +29,7 @@ Recreation of ColorLib "Multiselect V08" — a centered page showcasing a multi-
 | Highlighted bg | `#a7d129` | Selected/hovered dropdown items |
 | Group header bg | `rgba(0,0,0,0.05)` | Optgroup background |
 | Search choice bg | `rgba(0,0,0,0.1)` | Selected tag chips |
+| Surface (measured) | `#3875d7` | paints it ×6 — `background-color` on `.chosen-container .chosen-results li.highlighted`; style.css?v=3112cebb (28,831 B, sha256 7959b0340886) · <https://preview.colorlib.com/theme/bootstrap/multiselect-08/> |
 
 ## Visual design (from screenshot)
 

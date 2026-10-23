@@ -23,6 +23,7 @@ Recreation of ColorLib Login Form 19 as LoginGuard — a centered dark-card logi
 | --color-input-border   | rgba(255,255,255,0.3)           | Underline border on input fields                                   |
 | --color-input-focus    | rgba(255,255,255,0.7)           | Underline border on focus                                          |
 | --font-sans            | Poppins, sans-serif              | Primary font (clean geometric sans-serif)                          |
+| Surface (measured) | `#b689b0` | paints it ×8 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=f8ccea4d (15,520 B, sha256 b3092c347932) · <https://preview.colorlib.com/theme/bootstrap/login-form-19/> |
 
 ## Requirements
 

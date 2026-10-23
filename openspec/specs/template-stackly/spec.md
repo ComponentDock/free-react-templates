@@ -21,6 +21,7 @@ This template implements an **interactive vertical accordion component** — mul
 | `--color-accent`       | `#0ea5e9` / `sky-500`                                                          | Active accordion indicator / accent    |
 | `--font-family`        | `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif` | All text                               |
 | `--radius-panel`       | `0.5rem` / `rounded-lg`                                                        | Accordion container/item border radius |
+| Surface (measured) | `#db624e` | paints it ×4 — `background` on `.myaccordion .cl-btn`; style.css?v=5eee58af (18,199 B, sha256 1481625676d5) · <https://preview.colorlib.com/theme/bac/accordion-08/> |
 
 ### Visual Notes (from screenshot)
 

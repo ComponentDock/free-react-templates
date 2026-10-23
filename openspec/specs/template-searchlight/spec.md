@@ -34,6 +34,7 @@ Extracted from `css/main.css` on the live preview:
 | button-radius | `25px` | Primary buttons, pill shape |
 | button-padding | `42px line-height, 30px left, 60px right` | Asymmetric pill |
 | icon-circle | `40px border-radius, 1px solid #f0f0f0` | Service icons |
+| Surface (measured) | `#f54349` | paints it ×28 — `background` on `.genric-btn.primary`; main.css (37,197 B, sha256 fc6d55d61595) · <https://preview.colorlib.com/theme/seo/> |
 
 ## Section structure (in page order)
 

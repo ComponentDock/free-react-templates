@@ -289,6 +289,7 @@ rgba(0,0,0,0.1)`, opacity 0 → 1 on card hover).
 | paper            | `#ffffff`                | hero text, course overlay text, buttons, packages cards, newsletter input bg                              |
 | font-heading     | "Playfair Display"       | hero h3 (42px/900), main_title h2 (36px), team h4 (18px bold)                                             |
 | font-body        | "Roboto"                 | everything else (nav 500 12px uppercase, buttons 13–14px 500, body 14px)                                  |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (73,114 B, sha256 d4c88d3210b9) · <https://preview.colorlib.com/theme/learnit/> |
 
 Radii: 5px on `.main_btn` / `.main_btn2` / `.submit_btn` / cat badge /
 packages_item cards; 50% circle on package icon chips and the team hover

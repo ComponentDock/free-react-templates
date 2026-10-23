@@ -39,6 +39,16 @@ TypeScript.
 Pamper lives in `apps/pamper` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (154,853 B, sha256 ef0bb83e4e55) · <https://preview.colorlib.com/theme/leopet/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Top bar

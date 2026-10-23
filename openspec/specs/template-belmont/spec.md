@@ -20,6 +20,7 @@ CSS values are canonical over any screenshot sample.
 | --- | --- | --- |
 | Accent (most-used chromatic) | `#0092ef` | 1 declarations — `#cboxSlideshow` |
 | Surface | `#ffffff` | 2 declarations — `.cboxIframe`, `#cboxContent` |
+| Accent (measured) | `#d6baa0` | paints it ×21 — `color` on `.logo_subtitle`; main_styles.css (26,062 B, sha256 5bad665211d1) · <https://preview.colorlib.com/theme/samira/> |
 
 Palette in order of use: `#949494` ×2, `#ffffff` ×2, `#0092ef` ×1, `#cccccc` ×1.
 

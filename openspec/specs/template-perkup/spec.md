@@ -11,6 +11,7 @@ Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`), 
 - **Font Family**: "Roboto", sans-serif
 - **Border Radii**: Soft rounded corners (`rounded-lg`, `rounded-2xl`, pill buttons `rounded-full`)
 - **Spacing / Rhythm**: Generous vertical padding (`py-16 md:py-24`) per section
+- **Surface (measured):** `#a87ffa` — paints it ×21 — `background` on `.hero-wrap`; style.css (78,570 B, sha256 affb6762324a) · <https://preview.colorlib.com/theme/unbrew/>
 
 ## Section structure (1:1 with Unbrew)
 

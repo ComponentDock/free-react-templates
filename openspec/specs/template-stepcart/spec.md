@@ -46,6 +46,7 @@ Recreation of ColorLib "Colorlib Wizard 5" — a flexible 4-step order/checkout 
 | Text secondary | `#6b7280` | Descriptions |
 | Error color | `#ef4444` | Validation errors |
 | Success color | `#22c55e` | Completion state |
+| Surface (measured) | `#f3d4b7` | paints it ×3 — `background` on `.actions li a`; style.css?v=4559639a (12,177 B, sha256 e0764ba9b5be) · <https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html> |
 
 ## Requirements
 

@@ -25,6 +25,7 @@ A bakery and restaurant template with hero banner, about story, canvas and full 
 | Button radius (main) | 0px (square) |
 | Button radius (newsletter) | 45px (pill) |
 | Button radius (form submit) | 3px |
+| Surface (measured) | `#f8b600` — paints it ×19 — `background` on `.genric-btn.primary`; style.css (66,210 B, sha256 11bdc647ac23) · <https://preview.colorlib.com/theme/bakery2/> |
 
 ## Replication Reference
 

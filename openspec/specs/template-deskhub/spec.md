@@ -29,6 +29,7 @@ as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 | `accent-pink`      | `#e66686` | Progress bars, accent                      |
 | `accent-orange`    | `#f09359` | Progress bars, accent                      |
 | `accent-teal`      | `#4cd3e3` | Accent                                     |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (64,274 B, sha256 46c3080044c9) · <https://preview.colorlib.com/theme/sharespace/> |
 
 ### Typography
 

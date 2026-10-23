@@ -43,6 +43,16 @@ typography, and content types (no ColorLib assets copied).
 Modelo lives in `apps/modelo` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#751b7e` | paints it ×5 — `background` on `.button`; main_styles.css (22,470 B, sha256 f6dbe54de5c4) · <https://preview.colorlib.com/theme/modelo/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

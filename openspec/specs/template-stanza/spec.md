@@ -21,6 +21,7 @@ This template implements an **interactive FAQ and collapsible section accordion*
 | `--color-accent`     | `#2563eb` / `blue-600`                                                         | Active indicator and accent border |
 | `--font-family`      | `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif` | UI font stack                      |
 | `--radius-card`      | `0.75rem` / `rounded-xl`                                                       | Card corner rounding               |
+| Surface (measured) | `#37c46f` | paints it ×4 — `background` on `button[aria-expanded="true"]`; style.css?v=597df3f1 (17,341 B, sha256 dbcf30b1b9b5) · <https://preview.colorlib.com/theme/bac/accordion-09/> |
 
 ### Visual Notes (from screenshot)
 

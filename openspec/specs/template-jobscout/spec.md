@@ -32,6 +32,7 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 | Body font          | `"Muli", sans-serif`                                  | Google Font — body, sections                   |
 | Button primary     | Pink `#fb246a`, white text, uppercase, letter-spacing | CTA buttons                                    |
 | Button outlined    | Border `#8b92dd`, text `#8b92dd`, hover fill          | Browse All, Upload CV                          |
+| Surface (measured) | `#1f2b7b` | paints it ×21 — `background` on `.genric-btn.primary`; style.css (70,766 B, sha256 c36b919487a7) · <https://preview.colorlib.com/theme/jobfinderportal/> |
 
 ## Requirements
 

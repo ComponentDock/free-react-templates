@@ -129,6 +129,7 @@ kebab-case, no collision with `apps/`, `openspec/specs/`,
 | `--card-radius`      | ~10–15px                               | Rounded corners on the card (visible on photo side)                      |
 | `--btn-radius`       | ~8–10px                                | Submit button rounded corners                                             |
 | `--circle-size`      | ~50–60px                               | Person count circular buttons                                             |
+| Surface (measured) | `#edb77d` | paints it ×6 — `background` on `.submit`; style.css?v=abb728b4 (11,471 B, sha256 830650a432c4) · <https://colorlib.com/etc/regform/colorlib-regform-13/> |
 
 **Note:** Colors marked "(approx)" are estimated from the screenshot
 since the live preview was unreachable. The implementer should verify — **re-probed 2026-10-23: the demo serves** (measured record below)

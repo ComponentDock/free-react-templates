@@ -28,6 +28,7 @@ A real estate landing page with a transparent navbar over a full-viewport hero, 
 | `muted`       | `#777777` | Property list details                                              |
 | `faint`       | `#737373` | Footer blurb text                                                  |
 | `secondary`   | `#6c757d` | Uppercase date labels                                              |
+| Surface (measured) | `#752a90` | paints it ×8 — `background` on `.btn.btn-primary`; style.css (63,010 B, sha256 e39afa7b2cfd) · <https://preview.colorlib.com/theme/props/> |
 
 ### Spacing / Layout
 

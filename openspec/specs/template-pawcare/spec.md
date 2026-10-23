@@ -64,6 +64,16 @@ typography, and content types (no ColorLib assets copied).
 Pawcare lives in `apps/pawcare` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#4a3600` | paints it ×9 — `background-color` on `.gj-picker-md .arrow-begin`; gijgo.css (55,532 B, sha256 d9ea6e06f827) · <https://preview.colorlib.com/theme/anipat/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

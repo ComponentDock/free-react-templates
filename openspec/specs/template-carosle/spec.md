@@ -12,6 +12,7 @@
 - Font Family: "Inter", system-ui, sans-serif
 - Button Shapes: Rounded-full for carousel navigation controls
 - Section Backgrounds: Light gray `#f1f5f9`, clean white `#ffffff` cards
+- **Surface (measured):** `#afa939` — paints it ×5 — `background` on `.owl-carousel .owl-dots .owl-dot.cl-active`; style.css?v=dded2ecf (14,903 B, sha256 f5b2b624c889) · <https://preview.colorlib.com/theme/bootstrap/carousel-04/>
 
 ## Requirements
 

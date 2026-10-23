@@ -26,6 +26,7 @@ Stylux is a personal portfolio/creative designer template with a bold, modern ae
 | Social icon radius | 50% (circle) | 40×40px circular social buttons |
 | Section padding | 120px top/bottom (desktop) | Standard section spacing |
 | Hero height | 900px | `.single_slider` height |
+| Surface (measured) | `#ff5e13` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (143,415 B, sha256 524646160f4c) · <https://preview.colorlib.com/theme/melan/> |
 
 ## Requirements
 

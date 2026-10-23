@@ -48,6 +48,7 @@ The description mentions: slider, CTA buttons, contact page, Google Maps, social
 | Button radius | `4px` | Rounded CTA button |
 | Button padding | `12px 32px` | Generous button sizing |
 | Navbar background | Transparent / semi-transparent | Over hero image |
+| Surface (measured) | `#ffdd8d` | paints it ×23 — `background` on `.submit-btn`; style.css (32,201 B, sha256 a46586fdbe0e) · <https://preview.colorlib.com/theme/yogastudio/> |
 
 ## Requirements
 

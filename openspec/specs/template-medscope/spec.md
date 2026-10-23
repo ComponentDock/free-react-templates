@@ -97,6 +97,7 @@ and section highlights.
 | Light blue bg      | `#ecf0f8`                     |
 | Card shadow        | `0px 10px 20px 0px rgba(221,221,221,0.3)` |
 | Border color       | `#e8edf1`                     |
+| Surface (measured) | `#f8b600` — paints it ×15 — `background` on `.genric-btn.primary`; style.css (74,492 B, sha256 0e93a18437ef) · <https://preview.colorlib.com/theme/medcare/> |
 
 ## Requirements
 

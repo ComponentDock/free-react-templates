@@ -23,6 +23,7 @@ categories section with image cards.
 - **Search bar**: white bg, red search button
 - **Cards**: rounded corners, image bg, white text overlay with badge
 - **Navbar**: dark bg, white text, red accent button
+- **Surface (measured):** `#001d38` — paints it ×27 — `background` on `.footer`; style.css (191,907 B, sha256 450868ab17cf) · <https://preview.colorlib.com/theme/listingo/>
 
 ## Sections (top to bottom)
 

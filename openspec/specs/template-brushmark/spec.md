@@ -36,6 +36,7 @@ Preview URL: https://preview.colorlib.com/theme/breed2/
 | Main title size    | 42px, line-height 52px, weight 700           | Section headings                             |
 | Top text style     | uppercase, letter-spacing 2px, weight 500    | Section label ("Our Service", "Our Blog")    |
 | Top text accent    | rgba(237,35,159,0.6) blur(4px)              | Pink blur underline beneath top text         |
+| Surface (measured) | `#8034c3` | paints it ×2 — `background` on `.header_area.header_inner_page .navbar`; style.css (34,051 B, sha256 89cc9957db9a) · <https://preview.colorlib.com/theme/breed2/> |
 
 ## Requirements
 

@@ -32,6 +32,7 @@ Extracted from live preview CSS (`css/style.css`) at `https://preview.colorlib.c
 | Button (site-btn) | white bg, `#40424a` text, outline style | "Download CV", "Discover me", "See All Portfolio", "Send message" |
 | Footer bg | `#40424a` | Dark footer, copyright text `#838488` |
 | Resume with-bg | background-image (photo) | Education section has a parallax/photo background |
+| Accent (measured) | `#ff0f3c` | paints it ×11 — `color` on `.home-four-style .main-right-area .resume-list h2, .home-four-style .main-right-area .single-review .qut`; style.css (26,637 B, sha256 2336ef2fcb18) · <https://preview.colorlib.com/theme/civic/> |
 
 ## Section structure (order from live preview)
 

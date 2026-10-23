@@ -156,6 +156,7 @@ PR.
   `lucide-react` (Search, User, ShoppingBag, Heart, Play, Package, CreditCard,
   RefreshCw, Menu, X, ChevronLeft, ChevronRight, Globe) + inline SVG brand
   icons (twitter/facebook/behance) in `BrandIcon.tsx`.
+- **Surface (measured):** `#828bb2` — paints it ×28 — `background-color` on `.card_area .product_count input`; style.css (81,058 B, sha256 b5db29af81e7) · <https://preview.colorlib.com/theme/timezone/>
 
 ## Requirements
 

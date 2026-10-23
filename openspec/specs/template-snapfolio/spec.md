@@ -39,6 +39,7 @@ Recreation of ColorLib Capture photography gallery template as a React 19 + Vite
 - **Gallery cards:** Background image with dark overlay on hover
 - **Navigation:** Vertical sidebar with underline hover effect
 - **Footer:** 3-column layout (categories, archives, contact)
+- **Surface (measured):** `#f67e7d` — paints it ×11 — `background` on `#colorlib-aside`; style.css (57,218 B, sha256 66b4eaddfcc6) · <https://preview.colorlib.com/theme/capture/>
 
 ## Requirements
 

@@ -35,6 +35,7 @@ time of research — falling back to screenshot reference)
 | Border radius (btn) | `30px` (pill)               | CTA button                  |
 | Border radius (input)| `30px` (pill)              | Event/Tickets inputs        |
 | Border radius (badge)| `50%` (circle)             | LIVE badge, social icons    |
+| Surface (measured) | `#3b125d` | paints it ×12 — `background-color` on `.news`; main_styles.css (32,427 B, sha256 beba86a028d7) · <https://preview.colorlib.com/theme/music/> |
 
 ## Section Structure (top to bottom)
 

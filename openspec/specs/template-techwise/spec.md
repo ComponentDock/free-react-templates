@@ -26,6 +26,7 @@ A Creative Agency template with hero, services, about, team, counter and portfol
 | muted | `#999` | Secondary text |
 | border-radius | `0–5px` | Minimal, near-square buttons and cards |
 | button-radius | `0.25rem` (4px) | Bootstrap default btn |
+| Surface (measured) | `#6f4be8` | paints it ×28 — `background` on `.ftco-intro .img .overlay`; style.css (92,260 B, sha256 2de446b4d7a9) · <https://preview.colorlib.com/theme/portech/> |
 
 ### Visual Style (from screenshot)
 

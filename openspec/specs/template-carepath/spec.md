@@ -23,6 +23,7 @@ A medical/healthcare website template with top bar, navbar, hero banner, feature
 | Button radius    | `0px` (square / no rounding)         | `main_btn` and `main_btn_light`             |
 | Hero background  | `#0051d2` (solid blue)               | Banner area background                      |
 | Section padding  | `3em 0` / `7em 0` (responsive)      | `.site-section` equivalent                  |
+| Surface (measured) | `#f8b600` | paints it ×15 — `background` on `.genric-btn.primary`; style.css (74,492 B, sha256 0e93a18437ef) · <https://preview.colorlib.com/theme/medcare/> |
 
 ## Requirements
 

@@ -31,6 +31,7 @@ Extracted from the live preview stylesheet (`main.css`) and rendered DOM:
 | **Button radius (full)** | `50px` (rounded pill on search/add-listing) |
 | **Hero overlay**    | Dark gradient over background image            |
 | **Section padding** | ~150px vertical on feature sections           |
+| Surface (measured) | `#1f2b7b` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (73,958 B, sha256 71f62c3062b6) · <https://preview.colorlib.com/theme/citylisting/> |
 
 ## Visual Design Notes (from screenshot)
 

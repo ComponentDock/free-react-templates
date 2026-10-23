@@ -53,6 +53,7 @@ cn).
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#f5ca56` | live sheet paints it ×46 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (80,051 B, sha256 add54b362ddd) · <https://preview.colorlib.com/theme/loaft/> |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (80,051 B, sha256 add54b362ddd) · <https://preview.colorlib.com/theme/loaft/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

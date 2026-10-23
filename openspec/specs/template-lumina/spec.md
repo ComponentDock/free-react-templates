@@ -13,6 +13,7 @@ Lumina is a professional agency landing page template with a fullscreen hero, ta
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#8460f6` | live sheet paints it ×12 — `background-color` on `::selection`; main.css (35,006 B, sha256 abc8482990e2) · <https://preview.colorlib.com/theme/ilene-berg/> |
+| Surface (measured) | `#8560f6` | paints it ×19 — `background` on `.genric-btn.primary`; main.css (35,006 B, sha256 abc8482990e2) · <https://preview.colorlib.com/theme/ilene-berg/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

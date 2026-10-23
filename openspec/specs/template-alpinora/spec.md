@@ -159,6 +159,7 @@ background `#191919`. Fonts: Poppins 300/400/500/600/700 throughout.
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#b21aff` | live sheet paints it ×6 — `background-image` on `over, .video-area .overlay-bg, .single-footer-widget .click-btn, .generic-banner`; main.css (34,840 B, sha256 f9a42a005096) · <https://preview.colorlib.com/theme/adventure/> |
+| Surface (measured) | `#b01afe` | paints it ×21 — `background` on `.genric-btn.primary`; main.css (34,840 B, sha256 f9a42a005096) · <https://preview.colorlib.com/theme/adventure/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

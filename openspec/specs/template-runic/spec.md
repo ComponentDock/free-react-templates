@@ -55,6 +55,7 @@ name. Source slug + preview URL are recorded above.
 | Font family (decorative)   | `Bubblegum Sans, sans-serif` (or similar)| Large bubbly display font for decorative header |
 | Border radius (card)       | `24px`                                   | Large soft rounded corners                      |
 | Border radius (inputs/btn) | `50px` (pill)                            | Fully rounded pill shapes                       |
+| Surface (measured) | `#f6c2ec` | paints it ×3 — `background` on `.actions li:first-child a`; style.css?v=59e273aa (10,428 B, sha256 c9bc979f15b9) · <https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html> |
 
 ## Requirements
 

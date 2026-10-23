@@ -99,6 +99,7 @@ Embrace is a charity & donation template. It recreates the ColorLib **Charity** 
 - Heading font: Montserrat, 700 weight
 - Button style: rounded, primary color bg, white text
 - Section alternating: white / light gray
+- **Surface (measured):** `#fdbe34` — paints it ×17 — `background` on `.btn.btn-primary`; style.min.css (27,818 B, sha256 50743ac9f03e) · <https://preview.colorlib.com/theme/charity/>
 
 ## Requirements
 

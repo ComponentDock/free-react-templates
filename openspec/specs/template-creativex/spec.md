@@ -57,6 +57,7 @@ CSS values are canonical over any screenshot sample.
 | --- | --- | --- |
 | Accent (most-used chromatic) | `#c026d3` | 1 declarations — `.prose a:hover` |
 | Surface | `#fffffff2` | 1 declarations — `[data-header].scrolled` |
+| Surface (measured) | `#d946ef` | paints it ×15 — `background-color` on `.btn-primary`; Base.D2FQB9Bi.css (40,578 B, sha256 6c3bf736cb46) · <https://preview.colorlib.com/theme/creativex/> |
 
 Palette in order of use: `#c026d3` ×1, `#f0abfc` ×1, `#fffffff2` ×1.
 

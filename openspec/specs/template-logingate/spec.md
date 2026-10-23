@@ -33,6 +33,7 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 - **Social button shape:** circular (rounded-full), ~40px diameter
 - **Font family:** "Roboto", sans-serif (clean sans-serif, inferred from screenshot)
 - **Divider text ("or sign in with"):** #999999
+- **Surface (measured):** `#38d39f` — paints it ×6 — `background-color` on `.cl-btn-primary`; style.css?v=9f724c3e (16,749 B, sha256 b7e6308f88b6) · <https://preview.colorlib.com/theme/bootstrap/login-form-09/>
 
 ## Visual Design Notes (from screenshot)
 

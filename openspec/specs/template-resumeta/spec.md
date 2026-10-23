@@ -24,6 +24,7 @@ Recreation of ColorLib **Civic** — a single-page CV/resume template.
 | Button style      | white bg, `#40424a` 2px border, uppercase, 12px, 700 weight, no radius | `.site-btn` |
 | Circle radius     | `150px`                            | Circle-progress inner ring                   |
 | Section title     | `#40424a`, 2px underline via `::after` | Every section heading                     |
+| Accent (measured) | `#ff0f3c` | paints it ×11 — `color` on `.home-four-style .main-right-area .resume-list h2, .home-four-style .main-right-area .single-review .qut`; style.css (26,637 B, sha256 2336ef2fcb18) · <https://preview.colorlib.com/theme/civic/> |
 
 ## Section order (from DOM)
 

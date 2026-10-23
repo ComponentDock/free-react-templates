@@ -39,6 +39,16 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Input borders: bottom-only, #dddddd
   - Button: rounded, brand-teal bg, white text
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#2553b8` | paints it ×7 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=9eb9465a (16,597 B, sha256 4c27542db9df) · <https://preview.colorlib.com/theme/bootstrap/contact-form-06/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Page renders with title and layout

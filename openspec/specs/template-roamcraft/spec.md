@@ -37,6 +37,7 @@ Recreation of ColorLib **Pacific** — a travel agency website template with a d
 | Footer link hover | `#f15d30` | Orange |
 | Footer social icon | `#f15d30` | Hover: white |
 | Navbar | bg `dark` (dark bg), text white | Brand: "Pacific" bold + "Travel Agency" subtitle |
+| Surface (measured) | `#13d42a` | paints it ×14 — `background` on `.testimony-section .overlay, .ftco-select-destination .overlay`; style.css (78,179 B, sha256 ea3cf7028ab4) · <https://preview.colorlib.com/theme/pacific/> |
 
 ## Section Structure (order from preview)
 

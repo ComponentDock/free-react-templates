@@ -354,6 +354,16 @@ subject-icon`); Row 3 `col-lg-12` — Message textarea
 Clinica lives in `apps/clinica` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (63,211 B, sha256 32202027e229) · <https://preview.colorlib.com/theme/medicalcenter/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Preloader

@@ -26,6 +26,7 @@ Focal is a photography portfolio template with a navbar, hero, work gallery, abo
 | Submit button  | bg `#000000`, text white                          |
 | Slide number   | 220px font, watermark style, bottom-positioned    |
 | Tag badge      | uppercase, small, yellow bg or text               |
+| Surface (measured) | `#ffd614` — paints it ×2 — `background` on `.btn-primary:hover, .btn-primary:focus, .btn-primary:active`; style.css (29,136 B, sha256 a504b168f021) · <https://preview.colorlib.com/theme/bato/> |
 
 ## Sections (in order)
 

@@ -13,6 +13,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide icons, Vitest.
 - **Fonts**: Montserrat (sans-serif) for body and headings, Courgette for accent script headings.
 - **Button styling**: Rounded corners (`rounded-lg` / `bo-rad-10`), white or dark backgrounds with red hover states.
 - **Backgrounds**: Dark/patterned sections (`bg-zinc-900`, `bg-stone-900`, white).
+- **Surface (measured):** `#d41b22` — paints it ×8 — `background-color` on `.swiper-pagination-bullet-active`; main.css (30,752 B, sha256 6b49c107da5e) · <https://preview.colorlib.com/theme/pato/>
 
 ## Requirements
 

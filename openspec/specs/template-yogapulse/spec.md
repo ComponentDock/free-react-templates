@@ -25,6 +25,7 @@ Recreation of ColorLib Zogin (https://colorlib.com/wp/template/zogin/) — a yog
 - Overlay: rgba(0,0,0,0.5) on hero backgrounds
 - Card border-radius: 10px, 20px
 - Icon circles: 50% border-radius
+- **Accent (measured):** `#001943` — paints it ×5 — `color` on `.pricing__item h4`; style.css (48,693 B, sha256 4db3929b41a3) · <https://preview.colorlib.com/theme/zogin/>
 
 ## Requirements
 

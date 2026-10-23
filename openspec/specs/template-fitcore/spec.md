@@ -10,6 +10,7 @@ Recreate the ColorLib **Fitnessclub** design (https://colorlib.com/wp/template/f
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#f04e3c` | live sheet paints it ×23 — `background` on `.boxed-btn:hover`; style.css (65,964 B, sha256 2c5203068b0a) · <https://preview.colorlib.com/theme/fitnessclub/> |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (65,964 B, sha256 2c5203068b0a) · <https://preview.colorlib.com/theme/fitnessclub/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

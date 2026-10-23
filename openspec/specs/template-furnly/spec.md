@@ -151,6 +151,7 @@ all`, `brand work img-man all`, `brand`): `.projects_item` (relative,
   Dock" MUST link https://www.componentdock.com/ (replacing the source's
   Colorlib credit; heart icon lucide) + `.footer-social` 4 square icon links
   (bg `#111111`, 45px, white icons `#cccccc`, hover bg `#3face4`).
+- **Surface (measured):** `#4cd3e3` — paints it ×7 — `background` on `.genric-btn.success`; main.css (67,761 B, sha256 504dabd5f7b5) · <https://preview.colorlib.com/theme/tangre/>
 
 ## Requirements
 

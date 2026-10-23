@@ -48,6 +48,7 @@ name. Source slug + preview URL are recorded above.
 | Step inactive        | `#d9d9d9` (grey)              | Inactive step circles                |
 | Font family          | `Poppins, sans-serif`         | Via Google Fonts                     |
 | Border radius (card) | `8px`                         | Rounded card corners                 |
+| Surface (measured) | `#f3d4b7` | paints it ×3 — `background` on `.actions li a`; style.css?v=4559639a (12,177 B, sha256 e0764ba9b5be) · <https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html> |
 
 ## Requirements
 

@@ -16,6 +16,7 @@ Recreation of ColorLib "Sharespace" (https://colorlib.com/wp/template/sharespace
 | Body Text    | #5E5E5E      | Paragraphs — via `body` token                  |
 | Font Display | DM Sans      | Headings, nav, buttons — via `font-display`    |
 | Font Body    | Josefin Sans | Body text, paragraphs                          |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (64,274 B, sha256 46c3080044c9) · <https://preview.colorlib.com/theme/sharespace/> |
 
 ## Requirements
 

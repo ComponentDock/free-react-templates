@@ -34,6 +34,7 @@ Extracted from live preview CSS (`css/style.css`) and DOM structure.
 | Josefin Sans | Alternate heading font |
 | Work Sans | Alternate body font |
 | Nothing You Could Do | Decorative/script accent |
+| Surface (measured) | `#78d5ef` | paints it ×10 — `background-color` on `.btn-primary`; style.css (74,235 B, sha256 d50b5898308c) · <https://preview.colorlib.com/theme/pizza/> |
 
 ### Buttons
 - Primary: gold bg (`#f8b500`), dark text (`#212529`), rounded padding (`p-3 px-xl-4 py-xl-3`), no border-radius (sharp corners in original)

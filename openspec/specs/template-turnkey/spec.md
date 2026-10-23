@@ -20,6 +20,7 @@ Turnkey is a real estate template with a navbar, hero, properties, city gallery,
 - Body: #777777
 - Selection: #ea6c5d
 - Light: #f9f9ff
+- **Surface (measured):** `#4cd3e3` — paints it ×7 — `background` on `.genric-btn.success`; main.css (66,389 B, sha256 8a16d766634c) · <https://preview.colorlib.com/theme/holmes/>
 
 ## Sections
 

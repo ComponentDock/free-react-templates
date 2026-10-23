@@ -80,6 +80,16 @@ assets copied).
 Mouthful lives in `apps/mouthful` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (measured) | `#415094` | paints it ×14 — `color` on `.genric-btn.link`; style.css (205,598 B, sha256 a3803389e868) · <https://preview.colorlib.com/theme/dingo/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

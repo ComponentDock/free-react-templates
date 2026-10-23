@@ -10,6 +10,7 @@ Recreation of ColorLib "Evento" (https://colorlib.com/wp/template/evento/) as a 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#f50136` | live sheet paints it ×43 — `border-top` on `.section_title .title:before`; main.css (37,385 B, sha256 76a91dd19c22) · <https://preview.colorlib.com/theme/evento/> |
+| Surface (measured) | `#1f1039` | paints it ×2 — `background-color` on `footer .newsletter_form .form-control`; main.css (37,385 B, sha256 76a91dd19c22) · <https://preview.colorlib.com/theme/evento/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

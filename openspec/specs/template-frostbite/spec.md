@@ -50,6 +50,16 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Frostbite lives in `apps/frostbite` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#ff3368` | paints it ×10 — `background` on `.irs-bar`; style.css (227,044 B, sha256 4305ae4e8a37) · <https://preview.colorlib.com/theme/winter/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

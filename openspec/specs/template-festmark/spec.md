@@ -31,6 +31,7 @@ Recreation of the ColorLib **Eventro** template as a single-page event/conferenc
 | Nav hover          | `#FDE449`                | Header link hover + underline                   |
 | Footer bg          | `#000` (black)           | Footer background                               |
 | Footer text        | `#fff`                   | Footer links, copyright                         |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (66,819 B, sha256 c4843396a9ac) · <https://preview.colorlib.com/theme/eventro/> |
 
 ### Visual design notes (from preview screenshot)
 

@@ -15,6 +15,7 @@ Recreation of ColorLib "Contact Form 20" (https://colorlib.com/wp/template/conta
 - Button text: white, uppercase, letter-spacing
 - Button shape: pill (full rounded corners)
 - Font family: Poppins, sans-serif (Google Fonts)
+- **Surface (measured):** `#ccda46` — paints it ×4 — `background-color` on `.cl-btn-primary`; style.css?v=9e8a49e7 (14,263 B, sha256 d20609c51c13) · <https://preview.colorlib.com/theme/bootstrap/contact-form-20/>
 
 ## Structure
 

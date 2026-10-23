@@ -185,6 +185,7 @@ copied).
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#ffcb00` | live sheet paints it ×4 — `background` on `.underline_text:before`; style.css (55,389 B, sha256 2453fc1ecc23) · <https://preview.colorlib.com/theme/creativeagency2/> |
+| Surface (measured) | `#ff5e13` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (55,389 B, sha256 2453fc1ecc23) · <https://preview.colorlib.com/theme/creativeagency2/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

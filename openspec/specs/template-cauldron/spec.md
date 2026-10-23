@@ -38,6 +38,7 @@ Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registrat
 | macOS traffic lights | `#ff5f57` red, `#febc2e` yellow, `#28c840` green | Browser chrome |
 | Form card border-radius | `~10-12px` | Rounded corners |
 | Input border-radius | Full pill/rounded (`~20px`) | Rounded inputs |
+| Surface (measured) | `#f6c2ec` | paints it ×3 — `background` on `.actions li:first-child a`; style.css?v=59e273aa (10,428 B, sha256 c9bc979f15b9) · <https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html> |
 
 ## Requirements
 

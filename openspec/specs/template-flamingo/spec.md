@@ -145,6 +145,16 @@ Image-01..08.jpg`).
   the single index page only (nav links can be dead anchors `#` or scroll
   targets). The Pages dropdown may be omitted or kept as a static dropdown.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (56,855 B, sha256 f2271269086f) · <https://preview.colorlib.com/theme/fantom/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Header with script logo, pink nav bar and search

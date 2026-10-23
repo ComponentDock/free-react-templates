@@ -33,6 +33,7 @@ a footer with newsletter and social links.
 | **Body text color**        | `#222222`                               | Default text                         |
 | **Secondary text**         | `#777777`                               | Descriptions, labels                 |
 | **Button style**           | Rounded pill, brand blue bg, white text | CTAs                                 |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (68,906 B, sha256 28780e4fb5ed) · <https://preview.colorlib.com/theme/meetme/> |
 
 ## Requirements
 

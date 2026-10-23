@@ -31,6 +31,7 @@ Laurel is an education landing page with a navbar, hero, feature cards, about tr
 - **Shadow**: 0 7px 7px #c7c7c7
 - **Border radius**: 5-10px
 - **Section padding**: 100px (80px top/bottom)
+- **Surface (measured):** `#3ee792` — paints it ×11 — `background` on `.contact-form button`; style.css (11,449 B, sha256 e08d1cd26bba) · <https://preview.colorlib.com/theme/educrown/>
 
 ## Sections (in order)
 

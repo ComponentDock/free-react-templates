@@ -43,6 +43,7 @@ contrasts a dark navy footer/CTA/hero with white content sections.
 | Feature shadow      | `rgba(157,157,157,0.2)` | Feature card hover shadow              |
 | Icon hexagon border | `#A7A7A7`               | Service hexagon icons (default)        |
 | Icon hexagon hover  | `#f53f51` bg + white    | Service hexagon icons (hover)          |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (29,643 B, sha256 6023c7741260) · <https://preview.colorlib.com/theme/plumber/> |
 
 ## Section Structure (order from preview)
 

@@ -47,6 +47,16 @@ and content types (no ColorLib assets copied).
   9. Contact — split layout: map placeholder + form
   10. Footer — dark bg, 3-column (About Us, Contact Us, Newsletter), bottom bar with Component Dock link
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (28,448 B, sha256 5e2d98f93115) · <https://preview.colorlib.com/theme/restaurant/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

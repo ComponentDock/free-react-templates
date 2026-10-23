@@ -6,6 +6,16 @@
 
 A single-page React component showcase displaying a profile dropdown menu with user avatar, icons, and hover effects. The profile button reveals a dropdown containing user info and action items (Settings, Profile, Dashboard, Logout). Serves as a reference implementation for profile/user menus built with React and Tailwind CSS.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (measured) | `#a3f7bf` | paints it ×3 — `color` on `a`; style.css?v=6759880c (12,448 B, sha256 ecd1531a2bf6) · <https://preview.colorlib.com/theme/bootstrap/dropdown-02/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Profile button display

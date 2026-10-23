@@ -38,6 +38,7 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-
 | Button radius | `5px` | `.btn` class |
 | Button hover | Red slide-in from left (`scaleX`) | `.btn::before` with `#e6373d` background |
 | Team card gradient | top-to-bottom `rgba(2,26,71,0)` → `rgba(2,26,71,0.6)` | Dark overlay on team member cards |
+| Surface (measured) | `#ff1313` | paints it ×33 — `background` on `.btn`; style.css (206,276 B, sha256 ef72f846001e) · <https://preview.colorlib.com/theme/theinterior/> |
 
 ### Section structure (from live preview DOM, in order)
 

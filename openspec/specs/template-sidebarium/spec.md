@@ -117,6 +117,7 @@ time of prep — 2026-09-29 — reference is the TEMPLATES.md screenshot) — **
 | `--input-radius`     | `4px`                           | Subtle rounded corners on email input                                      |
 | `--input-padding`    | `12px 16px`                     | Internal padding of email input                                            |
 | `--section-gap`      | `24px`                          | Vertical spacing between sidebar sections                                  |
+| Surface (measured) | `#3445b4` | paints it ×7 — `background` on `#sidebar`; style.css?v=1dfc2383 (16,150 B, sha256 fb04b245985a) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/> |
 
 ## Requirements
 

@@ -6,6 +6,16 @@ Recreation of ColorLib Regform 20 (https://colorlib.com/wp/template/colorlib-reg
 
 A free, production-ready React registration form template with a pink/coral beauty theme. Split-screen layout with overlapping hero images on the left and a sign-up form (Name, Email, Password) with terms checkbox on the right. Designed for beauty, cosmetics, and lifestyle sign-up pages.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#ff9a9c` | paints it ×6 — `background` on `button`; style.css?v=d8d81ac3 (7,535 B, sha256 893c04a42ef6) · <https://colorlib.com/etc/regform/colorlib-regform-20/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Page layout renders correctly

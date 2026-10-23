@@ -16,6 +16,7 @@
   - Headings: `Mitr`, sans-serif (medium/bold, 500/700)
   - Body: `Raleway`, sans-serif (normal, 400/500)
 - **Buttons / Radii:** Pill buttons (`border-radius: 35px` / `rounded-full`), smooth hover transitions.
+- **Surface (measured):** `#1f2b7b` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (80,346 B, sha256 82af3cf541cb) · <https://preview.colorlib.com/theme/restauco/>
 
 ## Section Structure (1:1 with Restauco)
 

@@ -25,6 +25,16 @@ Sunlit lives in `apps/sunlit` and uses shared components from `packages/ui`
 Source: https://colorlib.com/wp/template/sunfest/
 Preview: https://preview.colorlib.com/theme/sunfest/
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#25ffbf` | paints it ×13 — `background` on `.tabs .tab-nav:hover`; style.css (41,675 B, sha256 d773ed12f08d) · <https://preview.colorlib.com/theme/sunfest/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

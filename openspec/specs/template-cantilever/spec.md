@@ -46,6 +46,7 @@ Cantilever lives in `apps/cantilever` and uses shared components from
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#a7cb00` | live sheet paints it ×45 — `background` on `.header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link`; style.css (64,911 B, sha256 235006bc48dc) · <https://preview.colorlib.com/theme/maxitechture/> |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (64,911 B, sha256 235006bc48dc) · <https://preview.colorlib.com/theme/maxitechture/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

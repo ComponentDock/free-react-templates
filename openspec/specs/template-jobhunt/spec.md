@@ -28,6 +28,7 @@ A Job Portal template with header/nav, hero, top jobs, about and job categories 
 | Sticker badge | bg `#000DFF`, text `#fff`, small pill | "Remote" tags on job cards |
 | Decorative watermark | Large faint text (e.g. "jobs", "Talents") | Background watermark text in hero/about sections |
 | Footer background | `#F1F5F9` (gray-bg) | Light grey footer area |
+| Surface (measured) | `#140c40` | paints it ×24 — `background` on `.genric-btn.primary`; style.css (83,627 B, sha256 01bad8d12415) · <https://preview.colorlib.com/theme/jobsco/> |
 
 ## Section structure (page order)
 

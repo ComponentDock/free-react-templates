@@ -29,6 +29,7 @@ CSS values are canonical over any screenshot sample.
 | Typeface | `Poppins, sans-serif` (12 rules — body)<br>`Playfair Display, serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
 | Body type | `font-weight: 400` | `body{…}` rule |
 | Radii | `50%`, `3px`, `8px` | `50%` (.header-area .social_media_links ul li a); `3px` (.slicknav_btn); `8px` (.primary-radio) |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (80,241 B, sha256 37013421cbe6) · <https://preview.colorlib.com/theme/lawful/> |
 
 Palette in order of use: `#ffffff` ×76, `#000000` ×29, `#f9f9ff` ×27, `#f2c64d` ×24, `#ff5e13` ×16, `#999999` ×11.
 

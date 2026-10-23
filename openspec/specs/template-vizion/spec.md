@@ -27,6 +27,7 @@ stats counters, testimonial carousel, project CTA, and a footer.
 - **Section backgrounds:** white (default), dark charcoal (#2B2B2B) for portfolio header
 - **Counter area:** white background
 - **Footer:** light gray background
+- **Surface (measured):** `#ff5e13` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (143,415 B, sha256 524646160f4c) · <https://preview.colorlib.com/theme/melan/>
 
 ## Section structure (in order)
 

@@ -43,6 +43,7 @@ a newsletter subscription form, and a multi-column footer.
 | ink         | `#111827` | Headings, dark text                |
 | surface     | `#f5f5f5` | Body background                    |
 | font-family | Poppins   | All text (weights 300–700)         |
+| Surface (measured) | `#9870fc` | paints it ×5 — `background` on `#colorlib-hero .flexslider .slides li .overlay`; style.css (35,859 B, sha256 20e69d9163ac) · <https://preview.colorlib.com/theme/complex/> |
 
 ## Sections (in order)
 

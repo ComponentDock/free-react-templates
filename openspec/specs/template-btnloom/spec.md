@@ -25,6 +25,7 @@
   - Outline: 1px solid border with transparent background
   - Sizes: Small (`5px 20px`), Regular, Large (`17px 24px`)
 - **Section Layout**: Single-page component showcase featuring interactive button variants, sizes, social media buttons, dropdown buttons, button groups, and checkbox/radio button states.
+- **Surface (measured):** `#a15bf0` — paints it ×14 — `background` on `.cl-btn.btn-quarternary`; style.css?v=a9e42b8b (27,619 B, sha256 f8ffea056152) · <https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/>
 
 ## Requirements
 

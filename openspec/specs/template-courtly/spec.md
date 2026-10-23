@@ -30,6 +30,7 @@ Extracted from the ColorLib preview CSS (`css/style.css`):
 | Light border/divider | `#eeeeee` | |
 | Pink accent | `#f13d80` | Links, hovers, active states |
 | Copyright link color | Gradient text (pink-to-coral via background-clip) | |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (80,241 B, sha256 37013421cbe6) · <https://preview.colorlib.com/theme/lawful/> |
 
 ## Visual Design Notes (from screenshot)
 

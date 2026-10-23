@@ -12,6 +12,7 @@ Keynest is a free real estate property listing website template that recreates t
 - **Body text:** #646D77 (gray)
 - **Background:** white (#fff) for most sections, light gray (#f8f9fa) for alternate sections
 - **Button style:** green border + text, solid green on hover, uppercase, letter-spacing 3px
+- **Surface (measured):** `#1f2b7b` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (223,082 B, sha256 28c0da644b01) · <https://preview.colorlib.com/theme/rolast/>
 
 ## Requirements
 

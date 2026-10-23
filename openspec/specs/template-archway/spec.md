@@ -31,6 +31,7 @@ Extracted from the live preview CSS (`css/style.css`):
 | Border radius  | `0.25rem`                                                       | Default buttons                                                 |
 | Button style   | `.btn-custom` — no bg, pink color, 4px solid pink bottom border | Decorative link-style CTA                                       |
 | Button white   | `.btn-white.btn-outline-white`                                  | White outlined button for hero CTAs                             |
+| Surface (measured) | `#ffcdcd` | paints it ×24 — `background` on `.subs-wrap`; style.css (70,553 B, sha256 753e22fca156) · <https://preview.colorlib.com/theme/klift/> |
 
 ## Sections (DOM order)
 

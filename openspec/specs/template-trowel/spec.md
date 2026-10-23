@@ -48,6 +48,7 @@ preview.colorlib.com/theme/sintec/) and aligned with monorepo conventions.
 | `--section-padding` | `80px 0` | Vertical padding for each section       |
 | `--container-max`   | `1170px` | Max-width for `.container`              |
 | `--border-radius`   | `4px`    | Default border radius for cards/buttons |
+| Surface (measured) | `#f8b600` | paints it ×15 — `background` on `.genric-btn.primary`; style.css (70,197 B, sha256 9e75c2ebc267) · <https://preview.colorlib.com/theme/sintec/> |
 
 ### Buttons
 

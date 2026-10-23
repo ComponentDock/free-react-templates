@@ -23,6 +23,7 @@ Recreation of the ColorLib **Shionhouse** template as a React 19 + Vite + Tailwi
 | Button radius | `4px` | Slightly rounded |
 | Border button | `#9F78FF` border, transparent bg | Secondary CTA |
 | Hero text | `#ffffff` | White text on dark overlay |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (62,397 B, sha256 346c8a82037e) · <https://preview.colorlib.com/theme/shionhouse/> |
 
 ## Section structure (page order)
 

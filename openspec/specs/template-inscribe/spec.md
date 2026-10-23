@@ -61,6 +61,7 @@ Extracted from the live preview stylesheet (`css/style.css`) at https://colorlib
 | Responsive (≤1199px)         | wrapper block, image 100%/45vh, form 100%/55vh, wizard 50% centered | |
 | Responsive (≤991px)          | image 35vh, form 65vh, wizard 80%       | |
 | Responsive (≤767px)          | image none (show img tag), wrapper auto, form auto/padded, wizard 100% | |
+| Accent (measured) | `#49276c` | paints it ×1 — `color` on `.checkbox .checkmark`; style.css?v=9db4f24a (8,327 B, sha256 2645cc53dba1) · <https://colorlib.com/etc/bwiz/colorlib-wizard-3/index.html> |
 
 ## Structure (from preview DOM)
 

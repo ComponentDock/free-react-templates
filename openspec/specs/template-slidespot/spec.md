@@ -13,6 +13,7 @@ Recreation of ColorLib "Carousel 06" (https://colorlib.com/wp/template/carousel-
   - Text: High-contrast white #ffffff on dark backgrounds, dark gray #1f2937 on light sections.
 - Typography: Clean sans-serif (Poppins via Google Fonts).
 - Footer: Mandatory footer linking https://www.componentdock.com/ (branded "Component Dock").
+- **Surface (measured):** `#ffc6be` — paints it ×5 — `background` on `.owl-carousel .owl-dots .owl-dot.cl-active`; style.css?v=db49ce39 (25,649 B, sha256 03a4549def55) · <https://preview.colorlib.com/theme/bootstrap/carousel-06/>
 
 ## Requirements
 

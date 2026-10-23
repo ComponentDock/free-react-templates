@@ -25,6 +25,7 @@ Tidal is a travel agency landing template with a navbar, hero, search bar, servi
 | Text secondary | `#6c757d`                  | Subtitles, descriptions          |
 | Light bg       | `#e9ecef`                  | Alternating section backgrounds  |
 | White          | `#fff`                     | Cards, primary backgrounds       |
+| Surface (measured) | `#13d42a` | paints it ×14 — `background` on `.testimony-section .overlay, .ftco-select-destination .overlay`; style.css (78,179 B, sha256 ea3cf7028ab4) · <https://preview.colorlib.com/theme/pacific/> |
 
 ## Sections (in order)
 

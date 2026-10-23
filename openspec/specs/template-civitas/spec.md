@@ -19,6 +19,7 @@ Recreation of ColorLib **Stodeo** (`https://colorlib.com/wp/template/stodeo/`), 
   - Generous padding on hero and feature boxes.
 
 ---
+- **Token (measured):** `#00aaff` — paints it ×11 — `--bs-secondary` on `:root`; style.css (57,399 B, sha256 2ff0558b7cb6) · <https://preview.colorlib.com/theme/stodeo/>
 
 ## Requirements
 

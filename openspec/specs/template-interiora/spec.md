@@ -67,6 +67,7 @@ Preview URL: https://preview.colorlib.com/theme/franclin/
 | Section padding     | 120px top/bottom (`section-padding`); `w-padding2` 80px vertical                                                           | about-low, our-services, popular-directorya, wantToWork                                                                                                                                        |
 | Newsletter input    | height 56px, border 1px `#e67118`, radius 30px, white bg, text `#5e5e5e`                                                   | `.footer-form form input`; submit = arrow icon button (right-arrow3.svg → lucide ArrowRight)                                                                                                   |
 | Header sticky       | `#ffff` bg + shadow `0 10px 15px rgba(25,25,25,0.1)`                                                                       | `.header-sticky.sticky-bar` on scroll; mobile hamburger + slicknav menu                                                                                                                        |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (70,980 B, sha256 e3ffd23b56c0) · <https://preview.colorlib.com/theme/franclin/> |
 
 ### Section structure (from the live DOM, top to bottom)
 

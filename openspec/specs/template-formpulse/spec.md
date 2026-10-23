@@ -34,6 +34,7 @@ Extracted from the live preview stylesheet (`css/style.css`):
 - **Select height:** 45px, same underline styling as text inputs
 - **Success color:** #55A44E (green), bold, 18px
 - **Error color:** #B90B0B (dark red)
+- **Surface (measured):** `#ccda46` — paints it ×4 — `background-color` on `.cl-btn-primary`; style.css?v=d060f86a (15,654 B, sha256 706f4fbf35e9) · <https://preview.colorlib.com/theme/bootstrap/contact-form-19/>
 
 ## Visual Design Notes (from screenshot)
 

@@ -35,6 +35,7 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 | Testimonial bg | White/light | Testimonial section |
 | Contact map | Google Maps embed | Right side of contact |
 | Team social | Circle icon buttons | Team member social links |
+| Surface (measured) | `#ff5e13` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (137,291 B, sha256 3f0bb2d8f02d) · <https://preview.colorlib.com/theme/halen/> |
 
 ## Section Structure (in page order)
 

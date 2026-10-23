@@ -27,6 +27,7 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 | Footer link hover  | `#0FB45F`              | Footer link hover state                |
 | Gold accent        | `#dca73a`              | Loading spinner accent                 |
 | Section padding    | `40px` top/bottom      | `.section-padding40` for content areas |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (223,082 B, sha256 28c0da644b01) · <https://preview.colorlib.com/theme/rolast/> |
 
 ## Section Structure (top to bottom)
 

@@ -36,6 +36,7 @@ Extracted from the live preview CSS (`css/style.css`) and HTML DOM:
 | Success message    | `#55A44E`, `font-weight: bold`, `font-size: 18px`                   |
 | Warning message    | `#B90B0B`                                                            |
 | Textarea           | `resize: vertical`                                                   |
+| Surface (measured) | `#ccda46` — paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=b9a397e5 (16,915 B, sha256 3478dc962c13) · <https://preview.colorlib.com/theme/bootstrap/contact-form-14/> |
 
 **Screenshot visual notes** (from ColorLib preview image — 1200×972px):
 The template is a single-section page (no header, no footer) with a full-bleed

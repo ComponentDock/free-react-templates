@@ -34,6 +34,7 @@ Extracted from the live preview at `https://preview.colorlib.com/theme/breed2/` 
 | Border color (forms)       | `#f0e9ff` (light lavender)                                                                               | Form inputs, pagination                                          |
 | Form border-radius         | `5px` (inputs), `12px` (textarea)                                                                        | Form styling                                                     |
 | Link hover color           | `#1345e6`                                                                                                | Blog tags, nav items, text links                                 |
+| Surface (measured) | `#8034c3` | paints it ×2 — `background` on `.header_area.header_inner_page .navbar`; style.css (34,051 B, sha256 89cc9957db9a) · <https://preview.colorlib.com/theme/breed2/> |
 
 ## Requirements
 

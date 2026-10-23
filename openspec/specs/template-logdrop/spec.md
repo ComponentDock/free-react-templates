@@ -28,6 +28,7 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 - **Input style:** Full-border rounded inputs (not bottom-border only), placeholder text light gray
 - **Checkbox:** Blue accent (#4a90d9), checked by default
 - **"Forgot Password" link:** Blue text (#4a90d9), right-aligned on checkbox row
+- **Surface (measured):** `#1089ff` — paints it ×9 — `background` on `.cl-btn.cl-btn-primary`; style.css?v=d5ab9ba5 (16,423 B, sha256 ea4466e813ad) · <https://preview.colorlib.com/theme/bootstrap/login-form-11/>
 
 ## Requirements
 

@@ -28,6 +28,7 @@ Recreation of ColorLib's **Foodbar** template as a React 19 + Vite + Tailwind 4 
 |------|--------|----------|
 | Headings | Oswald | serif, sans-serif |
 | Body | Roboto | sans-serif |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (80,764 B, sha256 63560ea63033) · <https://preview.colorlib.com/theme/foodbar/> |
 
 ### Buttons & Shapes
 - **Primary button (.main_btn):** padding 0 30px, background #f42f2c, color white, font-size 13px, uppercase Roboto, line-height ~40px. No border-radius (sharp/square corners).

@@ -51,6 +51,7 @@ Facade lives in `apps/facade` and uses shared components from `packages/ui`
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#cea06c` | live sheet paints it ×58 — `background-color` on `::selection`; main.css (51,397 B, sha256 2be0d68d35e3) · <https://preview.colorlib.com/theme/arclabs/> |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (51,397 B, sha256 2be0d68d35e3) · <https://preview.colorlib.com/theme/arclabs/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

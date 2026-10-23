@@ -32,6 +32,7 @@ A Landing Page template with top bar with utility, full-viewport hero with art, 
 | Body text             | `#333333`                   | Default paragraph color                          |
 | Muted text            | `#777777`                   | Secondary/meta text                              |
 | Button radius         | `0` (rectangular)           | Sharp corners on CTA buttons                     |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (45,526 B, sha256 0ee18f9a7b53) · <https://preview.colorlib.com/theme/artmuseum/> |
 
 ## Requirements
 

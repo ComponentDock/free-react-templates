@@ -14,6 +14,7 @@ Joystick is a gaming magazine website template featuring a hero slider, game sho
 - Button: square (no border-radius), `#20d8da` bg, white text, hover `#000000`
 - Dark section overlays: `rgba(0,0,0,0.6)`
 - Font: Open Sans (Google Fonts)
+- **Surface (measured):** `#dcdfff` — paints it ×1 — `background` on `.single-barfiller-area .barfiller`; style.css (48,373 B, sha256 a3ac29619767) · <https://preview.colorlib.com/theme/egames/>
 
 ## Requirements
 

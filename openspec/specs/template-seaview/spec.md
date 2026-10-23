@@ -34,6 +34,7 @@ CSS values are canonical over any screenshot sample.
 | Typeface | `'Playfair Display', serif` (4 rules — .section_title > div)<br>`'Lato', sans-serif` (3 rules — body) | `font-family` declarations in the theme sheet |
 | Body type | `font-size: 15px; font-weight: 400; color: #a5a5a5` | `body{…}` rule |
 | Radii | `50%`, `7px` | `50%` (.testimonial_author_image); `7px` (.search_close) |
+| Colour (measured) | `#ffa07f` | paints it ×2 — `border-bottom` on `p a`; main_styles.css (21,735 B, sha256 1ff6709c4541) · <https://preview.colorlib.com/theme/marimar/> |
 
 Palette in order of use: `#ffffff` ×26, `#ff9000` ×19, `#4a4f59` ×14, `#f4f5fa` ×7, `#bfc8d8` ×4, `#0e0923` ×1.
 

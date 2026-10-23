@@ -30,6 +30,7 @@ Recreation of ColorLib "Educature" template
 | Body font          | `Roboto`, sans-serif (weights 300, 400)                |
 | Button border-radius | 5px general; 20px pill for tag buttons               |
 | Section gap        | Consistent section-gap between sections                 |
+| Surface (measured) | `#4cd3e3` — paints it ×7 — `background` on `.genric-btn.success`; main.css (60,996 B, sha256 9024aae1f856) · <https://preview.colorlib.com/theme/educature/> |
 
 ## Visual Design Notes (from screenshot reference)
 

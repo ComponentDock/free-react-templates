@@ -29,6 +29,7 @@ Extracted from the live preview CSS (`css/main.css`):
 | Footer columns | 4 x link-column (2-col) + 1 x newsletter (4-col) |
 | Border radius general | 5px (buttons), 3px (inputs), 50% (avatars), 0 (transparent btns) |
 | Accent colors (from CSS) | `#6382e6` blue, `#e66686` pink, `#f09359` orange, `#73fbaf` green, `#a367e7` purple — used on feature-item colored accents |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (60,996 B, sha256 9024aae1f856) · <https://preview.colorlib.com/theme/educature/> |
 
 ## Section Structure (order)
 

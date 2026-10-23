@@ -31,6 +31,7 @@ A Food Bar / Restaurant template with buttons & shapes, hero, top dishes showcas
 | -------- | ------ | ---------- |
 | Headings | Oswald | sans-serif |
 | Body     | Roboto | sans-serif |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (80,764 B, sha256 63560ea63033) · <https://preview.colorlib.com/theme/foodbar/> |
 
 ### Buttons & Shapes
 

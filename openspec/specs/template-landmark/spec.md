@@ -177,6 +177,7 @@ pera` p (lorem) + `div.footer-social` (4 icon links: instagram,
 | blue-bg   | `#00A0EB`             | services band solid background (with `section-bg1.jpg` photo)                                                                                                                           |
 | footer-bg | `#F2F6F9`             | footer bottom/copyright bar                                                                                                                                                             |
 | font      | "Jost"                | everything (300–900 via Google Fonts `@import`; use `<link>` in index.html)                                                                                                             |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (86,540 B, sha256 2b9a26ca4a98) · <https://preview.colorlib.com/theme/konato/> |
 
 Radii: BUTTONS ARE 4px (`border-radius:4px` — `.btn`, `.submit-btn2`,
 search inputs/selects). `.submit-btn` (full-width Search) is 35px pill.

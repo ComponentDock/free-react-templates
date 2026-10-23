@@ -6,6 +6,16 @@ Recreation of ColorLib Bootstrap Sidebar 07 (https://colorlib.com/wp/template/bo
 
 Sidewell is a sidebar navigation template featuring a fixed blue sidebar with icon-labeled navigation, a sticky top bar with navigation links, and a clean white content area. Designed for dashboards, portfolios, and documentation sites.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#3e64ff` | paints it ×6 — `background` on `#sidebar`; style.css?v=74146d45 (19,426 B, sha256 bf94e27d3ca7) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-07/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Sidebar Navigation

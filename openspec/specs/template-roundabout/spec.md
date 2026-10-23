@@ -21,6 +21,7 @@ Recreation of ColorLib **Carousel V06** (`https://colorlib.com/wp/template/carou
   - Rounded corners (`rounded-xl`, `rounded-2xl`)
   - Soft shadows (`shadow-lg`, `shadow-xl`)
   - Smooth sliding transitions and interactive card focus states.
+- **Surface (measured):** `#ffc6be` — paints it ×5 — `background` on `.owl-carousel .owl-dots .owl-dot.cl-active`; style.css?v=db49ce39 (25,649 B, sha256 03a4549def55) · <https://preview.colorlib.com/theme/bootstrap/carousel-06/>
 
 ## Requirements
 

@@ -27,6 +27,7 @@ Extracted from the live preview stylesheet (`style.css`):
 | Card radius | 6px | Event cards |
 | Image radius | 10px | Featured event images |
 | Avatar radius | 50% | Rating badges |
+| Surface (measured) | `#9a28d7` | paints it ×28 — `background` on `.back-to-top`; style.css (46,724 B, sha256 ec1837ae6adb) · <https://preview.colorlib.com/theme/agenda/> |
 
 **Gradient class:** `.gradient-bg` — linear-gradient top-to-bottom from `#AA00FF` to `#581687`.
 

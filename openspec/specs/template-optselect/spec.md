@@ -24,6 +24,7 @@ Minimalist design with a green accent palette on a light background.
 - Accent bg: `#eef4ff`
 - Hover: `#f5f5f5`
 - Font: Inter, system sans-serif
+- **Accent (measured):** `#f16821` — paints it ×3 — `color` on `a`; style.css?v=28e3d655 (18,402 B, sha256 d4bb86a4d384) · <https://preview.colorlib.com/theme/bootstrap/multiselect-06/>
 
 ## Sections (in order)
 

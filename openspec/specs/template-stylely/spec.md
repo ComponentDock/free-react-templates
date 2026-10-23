@@ -72,6 +72,16 @@ types (no ColorLib assets copied).
 Stylely lives in `apps/stylely` and uses shared components from
 `packages/ui` (Button, ButtonLink, cn).
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Accent (measured) | `#415094` | paints it ×7 — `color` on `.genric-btn.link`; style.css (198,159 B, sha256 89921ec560c4) · <https://preview.colorlib.com/theme/hipstyle/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Navigation bar

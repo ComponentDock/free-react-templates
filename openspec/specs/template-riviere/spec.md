@@ -25,6 +25,7 @@ An E-Commerce template with header utility, main header navigation, hero slider,
 | Accent font    | `"Yellowtail", cursive`          | Decorative accent text                                   |
 | Button style   | Pill (25px radius)               | Uppercase, 3px letter-spacing, Playfair Display font     |
 | Primary button | `#ff003c` bg, dark text on hover | `.boxed-btn` — white bg + red border → red fill on hover |
+| Surface (measured) | `#828bb2` | paints it ×32 — `background-color` on `.card_area .product_count input`; style.css (359,784 B, sha256 9886ea948a8a) · <https://preview.colorlib.com/theme/estore/> |
 
 ## Visual Design Notes
 

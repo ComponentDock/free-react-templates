@@ -26,6 +26,7 @@ A Car Wash / Automotive Services template with hero, equipment, pricing cards, s
 | Button border-radius | 30px (pill)                                           | `.btn`                                                 |
 | Font — body          | Poppins (300-800)                                     | `body`                                                 |
 | Font — headings      | Work Sans (300-800)                                   | `h1-h6`, `.btn`                                        |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (58,436 B, sha256 fb3b1613f1b5) · <https://preview.colorlib.com/theme/carwash/> |
 
 ## Section Structure (from live preview DOM)
 

@@ -140,6 +140,16 @@ col-sm-6` `div.single-footer-widget` — "About Us" (blurb + `div
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn). Remember:
   `vite.config.ts` MUST register `injectUiSource()`.
 
+## Design tokens
+
+<!-- token-extra:2026-10-23 -->
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| Surface (measured) | `#f8b600` | paints it ×15 — `background` on `.genric-btn.primary`; style.css (76,378 B, sha256 82bd67f6dfe0) · <https://preview.colorlib.com/theme/eden/> |
+
+Measured from the live theme stylesheet (not sampled from the screenshot): the leading chromatic colour that paints a surface, kept as a surface token so the palette record is complete.  It is not a brand claim — the prep's own brand row above still governs the brand axis.
+
 ## Requirements
 
 ### Requirement: Header top bar

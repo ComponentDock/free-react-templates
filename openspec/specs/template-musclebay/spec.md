@@ -31,6 +31,7 @@ Extracted from the live preview stylesheet
 | banner overlay | dark semi-transparent over hero image |
 | section padding | `section-padding30` (~30px top/bottom) |
 | CTA section bg | `data-background` image with dark overlay |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (65,964 B, sha256 2c5203068b0a) · <https://preview.colorlib.com/theme/fitnessclub/> |
 
 ## Section order (1:1 from preview)
 

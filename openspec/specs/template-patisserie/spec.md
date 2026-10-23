@@ -199,6 +199,7 @@ Patisserie lives in `apps/patisserie` and uses shared components from
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
 | Brand (stated in this prep) | `#e5bf4a` | live sheet paints it ×56 — `background` on `#back-top`; style.css (69,452 B, sha256 d836bccb538a) · <https://preview.colorlib.com/theme/cakeshop/> |
+| Surface (measured) | `#1f2b7b` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (69,452 B, sha256 d836bccb538a) · <https://preview.colorlib.com/theme/cakeshop/> |
 
 Recorded so the palette is machine-readable: the prep already states this colour in its design notes, and this row carries the same value with the live-sheet evidence.
 

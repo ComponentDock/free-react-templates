@@ -31,6 +31,7 @@ background with blue gradient overlay.
 | "Create new account" | Blue/teal (#0097e6–#00bcd4), with right-arrow icon, centered at bottom |
 | Font family          | "Poppins", sans-serif                                  |
 | Overall aesthetic    | Clean, modern, centered card-less layout — the form is not inside a card/panel; fields float directly on the gradient background |
+| Accent (measured) | `#005bea` — paints it ×10 — `color` on `.focus-input100`; style.css?v=a8c73224 (12,391 B, sha256 901a0078479d) · <https://colorlib.com/etc/lf/Login_v12/index.html> |
 
 ## Requirements
 

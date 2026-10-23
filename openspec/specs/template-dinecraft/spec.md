@@ -13,6 +13,7 @@ Recreation of ColorLib [Restauco](https://colorlib.com/wp/template/restauco/) (`
 - **Fonts:** Heading: `"Mitr"`, sans-serif; Body: `"Raleway"`, sans-serif
 - **Button Radius:** Pill / Rounded (`35px`)
 - **Section Spacing:** Generous padding (`py-24` or `py-32`)
+- **Surface (measured):** `#1f2b7b` — paints it ×20 — `background` on `.genric-btn.primary`; style.css (80,346 B, sha256 82af3cf541cb) · <https://preview.colorlib.com/theme/restauco/>
 
 ## Sections & Structure (1:1 with ColorLib Restauco)
 

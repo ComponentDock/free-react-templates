@@ -30,6 +30,7 @@ Extracted from the live preview CSS (`css/style.css`):
 | Banner CTA button      | white bg, `border-radius: 5px` | Rounded corners, dark text                 |
 | Border/divider         | `#eeeeee`                      | Light gray borders                         |
 | Top menu bg            | `#04091e`                      | Very dark navy/black                       |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (98,647 B, sha256 9557400c0929) · <https://preview.colorlib.com/theme/listashop/> |
 
 ## Section Structure (from preview DOM)
 

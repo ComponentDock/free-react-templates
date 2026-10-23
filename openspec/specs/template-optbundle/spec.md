@@ -27,6 +27,7 @@ A clean multiselect dropdown demonstration page with categorized groupings. Recr
 | Choice chip bg      | `rgba(0,0,0,0.1)`           | Light bg for selected choice chips                |
 | Choice chip border  | `none`                      | No border on chips                                |
 | Section padding     | `7em 0`                     | Large vertical padding                            |
+| Surface (measured) | `#3875d7` | paints it ×6 — `background-color` on `.chosen-container .chosen-results li.highlighted`; style.css?v=3112cebb (28,831 B, sha256 7959b0340886) · <https://preview.colorlib.com/theme/bootstrap/multiselect-08/> |
 
 ## Section structure (order)
 

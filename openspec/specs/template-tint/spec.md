@@ -21,6 +21,7 @@ Tint is an interior design studio template with a navbar, hero, about band, port
 | Button shape    | `border-radius: 0px` (square corners) | `.main_btn`                               |
 | CTA button      | `#f9cc41` bg, `#000` text, no radius  | Banner CTAs                               |
 | Dark CTA button | `#f9cc41` bg, `#000` text, arrow icon | CTA banner                                |
+| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (76,662 B, sha256 8eef565d79fa) · <https://preview.colorlib.com/theme/pastel/> |
 
 ## Section order (matching original)
 

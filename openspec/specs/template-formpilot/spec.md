@@ -34,6 +34,7 @@
 | Step indicator | Numbered circles with active/completed states | Vertical sidebar pattern |
 | Active step color | Brand blue or green | Series convention |
 | Completed step indicator | Checkmark icon | Series convention |
+| Surface (measured) | `#2f8be0` | paints it ×3 — `background` on `.inner .cl-form-row .form-holder select`; style.css?v=c9f02cd3 (13,082 B, sha256 92e16f8d53d8) · <https://colorlib.com/etc/bwiz/colorlib-wizard-21/index.html> |
 
 ## Requirements
 

@@ -27,6 +27,7 @@ Extracted from the live preview CSS (`assets/css/style.css`):
 | `button-radius`   | `5px`                        | `.btn` border-radius                                       |
 | `card-radius`     | `0`                          | Cards have sharp edges (no border-radius)                  |
 | `section-padding` | `120px top / 100px bottom`   | `.section-padding`                                         |
+| Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (71,624 B, sha256 15df8399bb83) · <https://preview.colorlib.com/theme/thestartup/> |
 
 ## Section Structure (in order)
 

@@ -34,6 +34,7 @@ A clean, professional medical landing page with navigation, hero, services, depa
 - **Card border:** #e9ecef
 - **Font headings:** Poppins (Google Fonts)
 - **Font body:** Open Sans (Google Fonts)
+- **Surface (measured):** `#3c97e8` — paints it ×22 — `background` on `.gototop a`; style.css (45,206 B, sha256 d298bb89dc69) · <https://preview.colorlib.com/theme/medicare/>
 
 ## Requirements
 

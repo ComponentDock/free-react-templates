@@ -35,6 +35,7 @@ Extracted from the live preview stylesheet (css/main.css at preview.colorlib.com
 | Body weight    | 300                                     |
 | Line height    | 1.625em                                 |
 | Heading weight | 600                                     |
+| Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (37,211 B, sha256 f2037cd22231) · <https://preview.colorlib.com/theme/corporate/> |
 
 ## Requirements
 

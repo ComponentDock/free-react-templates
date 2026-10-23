@@ -15,6 +15,7 @@ New name: **Tribunal** (`apps/tribunal`, `@free-react-templates/tribunal`).
 - **Section Backgrounds:** White `#ffffff`, Light gray `#f8f9fa`.
 - **Body Text:** `#333333`, Muted `#6c757d`.
 - **Heading Color:** `#1a1a2e` (dark).
+- **Surface (measured):** `#fb5660` — paints it ×26 — `background` on `.testimony`; style.css (54,823 B, sha256 e1e62e8342d2) · <https://preview.colorlib.com/theme/theorder/>
 
 ## Requirements
 

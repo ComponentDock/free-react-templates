@@ -29,6 +29,7 @@ Extracted from ColorLib page CSS and screenshot analysis:
 | Button radius    | `8px` (rounded-lg)                      | Rounded search button                       |
 | Field radius     | `8px` (rounded-lg)                      | Rounded input fields                        |
 | Background image | Full-viewport travel photo (sunset beach)| Placeholder via picsum.photos              |
+| Surface (measured) | `#6c7ae0` | paints it ×4 — `background` on `.btn-submit`; style.css?v=0d9b6a3c (19,899 B, sha256 4c01af289836) · <https://colorlib.com/etc/searchf/colorlib-search-18/> |
 
 ## Visual Design (from screenshot)
 

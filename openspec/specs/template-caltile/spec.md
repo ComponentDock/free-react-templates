@@ -18,6 +18,7 @@ Recreation of ColorLib Calendar 20 (`https://colorlib.com/wp/template/calendar-2
   - Font Family: Inter / System Sans-Serif (`font-sans`).
 - **Surface & Shadows:**
   - Rounded card containers (`rounded-2xl shadow-sm border border-slate-100`).
+- **Surface (measured):** `#f67280` — paints it ×10 — `background-color` on `.fc-button-primary`; style.css?v=eba3b761 (24,935 B, sha256 c1f1bf4ff455) · <https://preview.colorlib.com/theme/bootstrap/calendar-20/>
 
 ## Requirements
 

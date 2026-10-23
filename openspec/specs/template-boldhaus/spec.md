@@ -109,6 +109,7 @@ are recorded below.
 | `--progress-bar`    | `height: 5px; bg: #e0003b`             | Skill progress bars                                                                       |
 | `--progress-track`  | `bg: #f9fcff`                          | Progress bar track background                                                             |
 | `--card-radius`     | `3px`                                  | Subtle rounding on studio thumbnail                                                       |
+| Surface (measured) | `#df003a` | paints it ×19 — `background` on `.genric-btn.primary`; main.css (33,364 B, sha256 0d44eb71ab6b) · <https://preview.colorlib.com/theme/dup/> |
 
 ## Requirements
 
