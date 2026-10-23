@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pop brand pink — from the original ColorLib "Error 404 V7"
-     stylesheet (css/style.css): the "404" display and the "Search"
-     button background (#ff508e). */
+  /* Pop brand pink — from the reference design (css/style.css): the "404"
+     display and the "Search" button background (#ff508e). */
   --color-brand: #ff508e;
 
   /* Accent teal — the "Return To Homepage" link and arrow (#39b1cb). */

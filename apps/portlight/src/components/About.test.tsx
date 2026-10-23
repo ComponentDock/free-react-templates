@@ -9,7 +9,7 @@ describe('About', () => {
 
   it('renders hotel name', () => {
     render(<About />)
-    expect(screen.getByText(/harbor lights hotel/i)).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /portlight hotel & resort/i })).toBeInTheDocument()
   })
 
   it('renders subheading about home feeling', () => {
@@ -25,7 +25,7 @@ describe('About', () => {
 
   it('renders about image', () => {
     render(<About />)
-    expect(screen.getByAltText(/harbor lights hotel/i)).toHaveAttribute(
+    expect(screen.getByAltText(/portlight hotel/i)).toHaveAttribute(
       'src',
       expect.stringContaining('portlight-about'),
     )

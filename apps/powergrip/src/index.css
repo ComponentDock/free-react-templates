@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-/* PowerGrip brand palette — design tokens from the ColorLib Robust preview:
+/* PowerGrip brand palette — design tokens from the reference design:
    brand red #DC2F2F (buttons, links, hover states), ink #333333 (headings),
    muted #999999 (body text), light #f8f8f8 (alternating section bg).
    Font: Poppins via Google Fonts <link> in index.html. */

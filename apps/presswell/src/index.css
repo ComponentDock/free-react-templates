@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Presswell brand palette — recreated from ColorLib "Laundry" design
+  /* Presswell brand palette — measured from the reference design
      (style.css): blue-purple #6785FF primary, #5172f5 secondary gradient,
      dark navy #072366 headings, navy #10285d body text. */
   --color-brand: #6785ff;

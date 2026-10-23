@@ -12,7 +12,7 @@ export function About({ className }: AboutProps) {
           <div className="overflow-hidden rounded-lg">
             <img
               src="https://picsum.photos/seed/portlight-about/800/600"
-              alt="Harbor Lights Hotel & Resort"
+              alt="Portlight Hotel & Resort"
               className="h-full w-full object-cover"
             />
           </div>
@@ -21,7 +21,7 @@ export function About({ className }: AboutProps) {
               Welcome to Portlight Hotel
             </h2>
             <h3 className="mb-6 text-3xl font-bold text-ink md:text-4xl">
-              Harbor Lights Hotel &amp; Resort
+              Portlight Hotel &amp; Resort
             </h3>
             <h4 className="mb-6 text-xl text-mist">It feels like staying in your own home.</h4>
             <p className="mb-8 leading-relaxed text-mist">

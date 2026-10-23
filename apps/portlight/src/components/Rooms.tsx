@@ -33,7 +33,7 @@ export function Rooms({ className }: RoomsProps) {
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-brand">
-            Harbor Lights Rooms
+            Portlight Rooms
           </p>
           <h2 className="text-3xl font-bold text-ink">Hotel Master&apos;s Rooms</h2>
         </div>
