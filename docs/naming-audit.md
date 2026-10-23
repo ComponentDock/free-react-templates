@@ -29,7 +29,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `colid` → `pitchly` (#1827), `crafted` → `makerly` (#1829),
 `dogger` → `barkly` (#1830), `doglife` → `houndly` (#1831),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
-`favison` → `upswing` (#1834), `gaas` → `upleap` (this PR).
+`favison` → `upswing` (#1834), `gaas` → `upleap` (#1835).
 
 | app                 | source design  |
 | ------------------- | -------------- |
