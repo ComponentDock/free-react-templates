@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Overture brand palette — from ColorLib 06 Comming Soon screenshot:
+  /* Overture brand palette — from the reference coming-soon screenshot:
      pink/rose accent for countdown numbers and CTA button. */
   --color-brand: #e91e63;
   --color-brand-hover: #c2185b;

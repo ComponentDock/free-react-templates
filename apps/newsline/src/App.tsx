@@ -7,8 +7,8 @@ import { TrendingVideos } from './components/TrendingVideos'
 import { Content } from './components/Content'
 import { Footer } from './components/Footer'
 
-/* Newsline — single-page news & magazine landing (recreation of the
-   ColorLib "Vizew" template). Section order matches the reference 1:1:
+/* Newsline — single-page news & magazine landing (measured from the
+   reference design). Section order matches the reference 1:1:
    top header → navbar → hero (featured + playlist) → trending grid →
    featured/category blocks + sidebar → footer. */
 export function App() {

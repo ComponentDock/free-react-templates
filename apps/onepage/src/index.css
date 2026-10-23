@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* OnePage brand colors — approximated from the ColorLib "One Page
-     Wordpress Themes" screenshot (live preview unreachable, HTTP 404):
+  /* OnePage brand colors — approximated from the reference screenshot
+     (live preview unreachable, HTTP 404):
      a classic blue accent on a light background with a dark footer.
      Blue approximated as indigo #4f46e5 (repo primary). */
   --color-primary-50: #eef2ff;

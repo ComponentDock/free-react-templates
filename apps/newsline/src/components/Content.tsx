@@ -11,7 +11,7 @@ import { VideoCarousel } from './VideoCarousel'
 import { LatestNews } from './LatestNews'
 import { Sidebar } from './Sidebar'
 
-/* Main content grid (reference `.vizew-post-area`): Featured / Sport /
+/* Main content grid (reference `.post-area`): Featured / Sport /
    Business carousels + Latest News in the left column, sidebar widgets in
    the right column. */
 export function Content() {

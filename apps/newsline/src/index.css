@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 
-/* Newsline brand palette — recreated from the ColorLib "Vizew" preview
-   (https://preview.colorlib.com/theme/vizew/) live DOM + style.css:
-   brand red #DB4437 (navbar, vizew-btn, news-title, section-heading
+/* Newsline brand palette — measured from the reference design
+   (live DOM + stylesheet):
+   brand red #DB4437 (navbar, .btn, .news-title, .section-heading
    underline, active playlist border), near-black inks #0F1112 (duration
    badge, button hover) + #222627 (page body background), playlist panel
    #393C3D with active row #4D5051, footer #191C1D, muted #A6A6A6,

@@ -1,9 +1,8 @@
 @import 'tailwindcss';
 
 @theme {
-  /* Nomad brand palette — recreated from the ColorLib "Explore" template
-     (https://colorlib.com/wp/template/explore/), tokens extracted from the
-     live preview's css/style.css:
+  /* Nomad brand palette — measured from the reference design;
+     tokens extracted from the reference stylesheet:
      - coral #ff895d (primary accent: CTA buttons, newsletter subs-wrap,
        active nav link, hovers)
      - light blue #78d5ef (Bootstrap primary, focus rings only)

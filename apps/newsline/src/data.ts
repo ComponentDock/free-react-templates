@@ -16,7 +16,7 @@ export const topSocialLabel = 'Top social links'
 export const topSearchLabel = 'Search site'
 export const loginLabel = 'Login'
 
-/* Navbar (reference `.vizew-main-menu`): red bar, logo left, uppercase
+/* Navbar (reference `.main-menu`): red bar, logo left, uppercase
    links right; Home active with white underline; Pages/Features have
    dropdowns. */
 export const navLabel = 'Main'
@@ -164,7 +164,7 @@ export const trendingVideos: Video[] = [heroVideos[0]!, heroVideos[2]!, heroVide
 export const cardImage = (video: Video, w = 350, h = 220) =>
   `https://picsum.photos/seed/${video.seed}/${w}/${h}`
 
-/* Content blocks (reference `.vizew-post-area`): Featured / Sport /
+/* Content blocks (reference `.post-area`): Featured / Sport /
    Business carousels + Latest News list in the main column. */
 export const contentSectionLabel = 'Video content'
 export const prevLabel = 'Previous videos'
