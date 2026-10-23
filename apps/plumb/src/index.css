@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Plumb brand colors — from the ColorLib "Gravity" preview:
+  /* Plumb brand colors — from the reference stylesheet:
      a creative agency landing theme with an orange #FB742D primary,
      black text, white background, and Lato + Playfair Display fonts. */
   --color-primary-50: #fff3ec;

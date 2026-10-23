@@ -45,6 +45,12 @@ export function Footer() {
       <p className="mt-10 text-[13px] text-white/50">
         {copyrightPrefix} {year} {copyrightSuffix}
       </p>
+      <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">
+        More templates at{' '}
+        <a href="https://www.componentdock.com/" className="underline underline-offset-4">
+          Component Dock
+        </a>
+      </div>
     </footer>
   )
 }

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Petsitting brand green — from the original ColorLib "Petsitting"
-     stylesheet (css/style.css): primary buttons, accents, hover states. */
+  /* Petsitting brand green — from the reference design (css/style.css):
+     primary buttons, accents, hover states. */
   --color-brand: #00bd56;
 
   /* Brand green hover/strong tone (#00bd55). */

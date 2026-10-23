@@ -1,7 +1,6 @@
 /**
- * Pixelpress data — recreated from the ColorLib "Endgam" preview DOM
- * (https://preview.colorlib.com/theme/endgam/): same content kinds and
- * structure (social row, navy nav, giant hero headline, story teasers,
+ * Pixelpress data — measured from the reference design DOM: same content
+ * kinds and structure (social row, navy nav, giant hero headline, story teasers,
  * latest-news cards, trending/categories sidebar, video promo, newsletter,
  * footer), paraphrased where useful. All imagery uses seeded picsum
  * placeholders.

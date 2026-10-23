@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pillar brand palette — recreated from the ColorLib "Archs" design
+  /* Pillar brand palette — measured from the reference design
      (accent #ff5733 orange-red). */
   --color-accent: #ff5733;
   --color-accent-dark: #e64a25;

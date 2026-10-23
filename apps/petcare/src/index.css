@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Petcare brand red — from the original ColorLib "Petcare" stylesheet
+  /* Petcare brand red — from the reference design
      (assets/css/style.css): primary buttons (`.header-btn`, `.btn`),
      accents, hover states. */
   --color-brand: #ff2121;
