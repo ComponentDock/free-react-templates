@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Quill brand palette — recreated from the ColorLib "Blogger" preview
+  /* Quill brand palette — measured from the reference design
      (css/main.css tokens): primary light blue #69B4FD, brand gradient
      45deg #62bdfc → #8490ff, ink #222222 (headings + footer bg), muted
      #777777 (body text), soft #f9f9ff (alternate section bg), chip

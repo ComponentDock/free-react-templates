@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Query brand blue — from the original ColorLib "Error 404 V5"
-     stylesheet (css/style.css): the "Search" button background, the
-     "Go Back" link color, and the input focus border (#57a3f8). */
+  /* Query brand blue — from the reference design (css/style.css): the "Search" button background,
+     the "Go Back" link color, and the input focus border (#57a3f8). */
   --color-brand: #57a3f8;
 
   /* Display and text colors from the original stylesheet. */

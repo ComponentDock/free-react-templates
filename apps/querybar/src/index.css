@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* QueryBar brand palette — recreated from the ColorLib Search Form V19 template
-     (purple-to-blue gradient #c949fe→#47a9ff, green CTA #00ad5f, Poppins font). */
+  /* QueryBar brand palette — measured from the reference search-form design:
+     purple-to-blue gradient #c949fe→#47a9ff, green CTA #00ad5f, Poppins font. */
   --color-querybar-gradient-start: #c949fe;
   --color-querybar-gradient-end: #47a9ff;
   --color-querybar-green: #00ad5f;

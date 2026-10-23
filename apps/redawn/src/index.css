@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Redawn brand palette — from the ColorLib "Rea" preview
-     (https://preview.colorlib.com/theme/rea/ + style.css):
+  /* Redawn brand palette — from the reference stylesheet:
      a creative portfolio theme with a pink #f271ab primary,
      dark gray body text, white background, and light gray accents. */
   --color-brand: #f271ab;

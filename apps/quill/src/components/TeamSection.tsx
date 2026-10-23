@@ -6,7 +6,7 @@ export function TeamSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="text-center">
           <h2 className="font-sans text-3xl font-semibold text-ink dark:text-white">
-            About Blogger Team
+            About Quill Team
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-muted dark:text-gray-400">
             The people behind the stories — editors, writers and photographers shaping the Quill
