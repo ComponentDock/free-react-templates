@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Idcraft brand palette — recreated from ColorLib Vcard design
+  /* Idcraft brand palette — measured from the reference design
      (amber accent #ffb016, dark heading #252525, gray text #828282). */
   --color-amber-brand: #ffb016;
   --color-dark-heading: #252525;

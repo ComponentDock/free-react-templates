@@ -34,13 +34,17 @@ describe('App', () => {
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Make your reservation')
   })
 
-  it('renders NO navbar, hero copy or footer (single-section form demo)', () => {
+  it('renders no navbar or hero copy, one section, and the Component Dock footer', () => {
     const { container } = render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     // Only the single booking section exists.
     expect(container.querySelectorAll('section')).toHaveLength(1)
     expect(container.querySelector('main')).not.toBeNull()
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

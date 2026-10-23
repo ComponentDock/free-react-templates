@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Hush brand palette — recreated from the ColorLib "Serenity" design.
+  /* Hush brand palette — measured from the reference design.
      The primary scale IS the sage/forest green (#4d5b4a) used for pill
      buttons, logo mark, dark bands and eyebrow accents. */
   --color-primary-100: #e3e7e2;

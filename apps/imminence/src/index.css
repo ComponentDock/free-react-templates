@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Imminence brand tokens — from the ColorLib "02 Comming Soon" design:
+  /* Imminence brand tokens — from the reference stylesheet:
      pink #F84982 primary, dark pink #e40b52 hover, light pink #f89fbc focus,
      input bg #F1F2F3, muted text #999, body #333, paragraph #555. */
   --color-brand-pink: #f84982;
