@@ -104,7 +104,7 @@ export function Contact() {
 
         <div className="mt-14 flex flex-col items-center gap-6 border-t border-white/20 pt-8 sm:flex-row sm:justify-between">
           <p className="text-sm text-white/80">
-            Copyright © {new Date().getFullYear()} Colid. All rights reserved.
+            Copyright © {new Date().getFullYear()} Pitchly. All rights reserved.
           </p>
           <p className="text-sm text-white/70">
             More templates at{' '}

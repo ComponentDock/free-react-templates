@@ -14,7 +14,7 @@ import { Contact } from './components/Contact'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Colid — Business Landing Template'
+    document.title = 'Pitchly — Business Landing Template'
   }, [])
 
   return (

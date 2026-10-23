@@ -1,7 +1,7 @@
 const posts = [
-  { seed: 'colid-blog-1' },
-  { seed: 'colid-blog-2' },
-  { seed: 'colid-blog-3' },
+  { seed: 'pitchly-blog-1' },
+  { seed: 'pitchly-blog-2' },
+  { seed: 'pitchly-blog-3' },
 ] as const
 
 export function Blog() {

@@ -1,7 +1,7 @@
-# Colid (Colorlib Colid) — Tasks & Design Notes
+# Pitchly (recreation of ColorLib "Colid") — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-colid`.
+> Implementation ships later on `feat/template-pitchly`.
 
 ## Design notes (replication findings)
 
@@ -14,7 +14,7 @@
   sections, "Watch video" hero, 3 highlight tiles, feature rows, 6 special
   feature tiles, and 2 pricing plans.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "colid" + Home, Service, Features, Pricing, Team, FAQ,
+  1. Navbar: logo "pitchly" + Home, Service, Features, Pricing, Team, FAQ,
      Blog, Contact.
   2. Hero: h1 "It's all about Promoting your Business" + **Watch video**.
   3. Highlights: **EASY TO USE / AWESOEM DESIGN / EASY TO CUSTOMAIZE**
@@ -37,27 +37,27 @@
   - Font: **"Poppins"** (Google Fonts `<link>`); themify icons (replaced by
     lucide-react).
   - Blue rounded buttons with white text.
-- **Recreation name:** Colid (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/colid`, package
-  `@free-react-templates/colid`.
+- **Recreation name:** Pitchly (original — the source design name is not
+  reused). App folder `apps/pitchly`, package
+  `@free-react-templates/pitchly`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/colid-<n>/<w>/<h>`); lucide-react icons; Poppins via
+  (`picsum.photos/seed/pitchly-<n>/<w>/<h>`); lucide-react icons; Poppins via
   Google Fonts; blue primary in `@theme`; repo-standard Navbar (dark-mode
   toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-colid/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-pitchly/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/colid` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/colid`).
+- [ ] Create `apps/pitchly` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/pitchly`).
 - [ ] TDD: tests first for each section component; run red.
 - [ ] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-colid`, open PR (source template, preview URL,
+- [ ] Push `feat/template-pitchly`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -70,8 +70,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/colid/` may name the source designer,
+- **Provenance ban.** No file under `apps/pitchly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/colid/public/CNAME` = `colid.free.componentdock.com`
-  and the package `homepage` = `https://colid.free.componentdock.com`.
+- **Deploy identity.** `apps/pitchly/public/CNAME` = `pitchly.free.componentdock.com`
+  and the package `homepage` = `https://pitchly.free.componentdock.com`.

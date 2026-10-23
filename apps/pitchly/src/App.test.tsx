@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, all sections, and the contact footer with the correct landmarks and title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Colid — Business Landing Template')
+    expect(document.title).toBe('Pitchly — Business Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
