@@ -1,8 +1,19 @@
 # Spec: Classroom — school & education landing template
 
+Recreation of ColorLib "Oneschool" (https://colorlib.com/wp/template/oneschool/).
+
 ## Purpose
 
 Recreate the ColorLib "Oneschool" school/education landing page as a React 19 + Tailwind CSS 4 + TypeScript template under the name "Classroom". The template serves as a free, production-ready education website landing page with courses, programs, teachers, testimonials, and contact form sections.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Oneschool" — https://colorlib.com/wp/template/oneschool/
+- **Source slug:** `oneschool`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/oneschool/ — **HTTP 200**, 35,314 B, fetched 2026-10-23 (page `<title>`: "OneSchool — Online and Classroom Courses With Expert Teachers"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/oneschool/css/style.min.css?v=3.0.0`, fetched 2026-10-23): brand `#7971ea`, `#f23a2e`, `#8bc34a`, `#f89d13`; dominant neutrals `#212529`, `#6c757d`, `#343a40`; type Mulish. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/oneschool-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/classroom` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

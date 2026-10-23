@@ -1,8 +1,19 @@
 # Spec: Asana (recreation of ColorLib DoYoga)
 
+Recreation of ColorLib "Doyoga" (https://colorlib.com/wp/template/doyoga/).
+
 ## Purpose
 
 Asana is a yoga studio landing page template featuring class listings, schedule, about section, events, gallery, and contact form. Recreated from the ColorLib DoYoga design.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Doyoga" — https://colorlib.com/wp/template/doyoga/
+- **Source slug:** `doyoga`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/doyoga/ — **HTTP 200**, 29,809 B, fetched 2026-10-23 (page `<title>`: "DoYoga — Website Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/doyoga/css/style.css`, fetched 2026-10-23): brand `#6610f2`; dominant neutrals `#212529`, `#ebeef0`, `#dee2e6`; type Quicksand. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/doyoga-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/asana` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -2,6 +2,15 @@
 
 Recreation of ColorLib Bootstrap Sidebar 04 as a React template named "Panelbar". A fixed left sidebar with a blue brand bar, icon-enhanced navigation links, hamburger toggle, and a clean white content area.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Bootstrap Sidebar V04" — https://colorlib.com/wp/template/bootstrap-sidebar-04/
+- **Source slug:** `bootstrap-sidebar-04`
+- **Preview URL analyzed:** https://colorlib.com/etc/bootstrap-sidebar/sidebar-04/ — **HTTP 200**, 6,547 B, fetched 2026-10-23 (page `<title>`: "Sidebar 04"). The slug-only path `https://preview.colorlib.com/theme/bootstrap-sidebar-04/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/bootstrap-sidebar/sidebar-04/css/style.css?v=b883fb14`, fetched 2026-10-23): brand `#2f89fc`, `#007bff`, `#0062cc`, `#0056b3`; dominant neutrals `#212529`, `#212121`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170630.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/panelbar` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Sidebar layout

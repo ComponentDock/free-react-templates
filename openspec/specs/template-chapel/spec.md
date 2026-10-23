@@ -1,8 +1,19 @@
 # Chapel — Church Event Template
 
+Recreation of ColorLib "LibChurch" (https://colorlib.com/wp/template/libchurch/).
+
 ## Purpose
 
 Recreate the ColorLib "Libchurch" church event template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app. The template provides a full church website with hero, events, about, services, sermons, blog, newsletter, and contact sections.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "LibChurch" — https://colorlib.com/wp/template/libchurch/
+- **Source slug:** `libchurch`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/libchurch/ — **HTTP 200**, 51,948 B, fetched 2026-10-23 (page `<title>`: "LibChurch - Event Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/libchurch/css/style.css`, fetched 2026-10-23): brand `#dd3e3e`, `#f44336`, `#3c1919`, `#673ab7`; dominant neutrals `#252525`, `#636363`, `#ebebeb`; type Lora, Open Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/libchurch-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/chapel` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

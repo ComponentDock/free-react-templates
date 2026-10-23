@@ -1,8 +1,19 @@
 # Template: Lumier (Photography Portfolio Template)
 
+Recreation of ColorLib "Elit" (https://colorlib.com/wp/template/elit/).
+
 ## Purpose
 
 Lumier is a single-page photographer portfolio template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Elit" photography website template design, built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Elit" — https://colorlib.com/wp/template/elit/
+- **Source slug:** `elit`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/elit/ — **HTTP 200**, 24,702 B, fetched 2026-10-23 (page `<title>`: "Elit Photography— Onepage Website Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/elit/css/style.css`, fetched 2026-10-23): brand `#df0e62`, `#8bc34a`; dominant neutrals `#25262a`, `#212529`, `#f8f9fa`; type Oswald. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/elit-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/lumier` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

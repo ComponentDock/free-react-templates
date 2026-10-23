@@ -1,5 +1,7 @@
 # Template: Sagewell (Education Landing — Teal Branded Learning Platform)
 
+Recreation of ColorLib "Wiser" (https://colorlib.com/wp/template/wiser/).
+
 ## Purpose
 
 Sagewell is a single-page education landing template in the
@@ -15,6 +17,15 @@ The original design is an education/university landing page with a teal
 (#1fc2d9) brand palette, Poppins font, hero slider, services strip,
 tabbed programs, events list, admission form, news cards, and a multi-column
 footer. The recreation matches section order, layout, and color tokens.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Wiser" — https://colorlib.com/wp/template/wiser/
+- **Source slug:** `wiser`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/wiser/ — **HTTP 200**, 25,485 B, fetched 2026-10-23 (page `<title>`: "A new way of learning | Wiser University"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/wiser/css/style.min.css?v=3.0.0`, fetched 2026-10-23): brand `#1fc2d9`, `#ff5e13`, `#234262`, `#5db2ff`; dominant neutrals `#f9f9ff`, `#1f1f1f`, `#f1f1f1`; type Poppins, Abril Fatface, Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/wiser-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/sagewell` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

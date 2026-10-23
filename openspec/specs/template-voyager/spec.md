@@ -1,5 +1,7 @@
 # Template: Voyager (Travel Agency)
 
+Recreation of ColorLib "Tour" (https://colorlib.com/wp/template/tour/).
+
 ## Purpose
 
 Voyager is a full-page travel agency website template in the free-react-templates
@@ -16,6 +18,15 @@ standard accessible patterns.
 
 Voyager lives in `apps/voyager` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Tour" — https://colorlib.com/wp/template/tour/
+- **Source slug:** `tour`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/tour/ — **HTTP 200**, 45,000 B, fetched 2026-10-23 (page `<title>`: "Tour Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/tour/css/style.css`, fetched 2026-10-23): brand `#ffdd00`, `#00bbf0`, `#ffe01a`, `#f7af1d`; dominant neutrals `#b3b3b3`, `#333333`, `#2c2e3e`; type Quicksand. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/tour-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/voyager` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

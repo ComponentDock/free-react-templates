@@ -1,8 +1,19 @@
 # Spec: Cartwell — Cart Dropdown Menu
 
+Recreation of ColorLib "Dropdown V05" (https://colorlib.com/wp/template/dropdown-05/).
+
 ## Purpose
 
 Provide a reusable cart dropdown menu component for eCommerce websites. When clicked, a cart icon reveals a dropdown panel with product items, quantity controls, pricing, and checkout actions.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Dropdown V05" — https://colorlib.com/wp/template/dropdown-05/
+- **Source slug:** `dropdown-05`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/dropdown-05/ — **HTTP 200**, 3,866 B, fetched 2026-10-23 (page `<title>`: "Dropdown 05"). The slug-only path `https://preview.colorlib.com/theme/dropdown-05/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/dropdown-05/css/style.css?v=618bad75`, fetched 2026-10-23): brand `#007bff`, `#fa697c`, `#0056b3`, `#f83851`; dominant neutrals `#212529`, `#6c757d`, `#16181b`; type Roboto, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-05.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/cartwell` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

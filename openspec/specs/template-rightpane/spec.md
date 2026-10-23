@@ -1,8 +1,19 @@
 # Template: Rightpane (Sidebar Navigation)
 
+Recreation of ColorLib "Bootstrap Sidebar V10" (https://colorlib.com/wp/template/bootstrap-sidebar-10/).
+
 ## Purpose
 
 A Sidebar Navigation template with brand header, navigation items, mountain landscape and main sections. Recreation of **ColorLib Bootstrap Sidebar 10** (`bootstrap-sidebar-10`) as a right-side sidebar navigation template with a mountain landscape background, brand header, nav links, newsletter signup, and footer.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Bootstrap Sidebar V10" — https://colorlib.com/wp/template/bootstrap-sidebar-10/
+- **Source slug:** `bootstrap-sidebar-10`
+- **Preview URL analyzed:** https://colorlib.com/etc/bootstrap-sidebar/sidebar-10/ — **HTTP 200**, 8,645 B, fetched 2026-10-23 (page `<title>`: "Sidebar 04"). The slug-only path `https://preview.colorlib.com/theme/bootstrap-sidebar-10/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/bootstrap-sidebar/sidebar-10/css/style.css?v=12d6bffa`, fetched 2026-10-23): brand `#2f89fc`, `#5effc9`, `#007bff`, `#0062cc`; dominant neutrals `#6c757d`, `#212529`, `#495057`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170724.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/rightpane` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

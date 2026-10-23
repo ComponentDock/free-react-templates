@@ -6,6 +6,15 @@ centered card layout with a login form (email, password, remember me, social
 buttons) on the left and a decorative image panel on the right, fully
 responsive down to mobile.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Login Form 18 by Colorlib" — https://colorlib.com/wp/template/login-form-v18/
+- **Source slug:** `login-form-v18`
+- **Preview URL analyzed:** https://colorlib.com/etc/lf/Login_v18/index.html — **HTTP 200**, 3,463 B, fetched 2026-10-23 (page `<title>`: "Login V18"). The slug-only path `https://preview.colorlib.com/theme/login-form-v18/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/lf/Login_v18/css/style.css?v=e8521769`, fetched 2026-10-23): brand `#6675df`, `#c80000`, `#007bff`, `#0056b3`; dominant neutrals `#999999`, `#333333`, `#555555`; type Poppins-Regular, Montserrat-Regular, Montserrat-Bold. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/Login_v18.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/loginlume` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Login form renders all fields and controls

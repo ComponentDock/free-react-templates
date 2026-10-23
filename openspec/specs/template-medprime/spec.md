@@ -1,8 +1,18 @@
 # Medprime — recreation of ColorLib Medi 2
 
+Recreation of ColorLib "Medi 2" (https://colorlib.com/wp/template/medi-2/).
+
 ## Purpose
 
 Medprime is a medical clinic landing page template that recreates the ColorLib "Medi 2" design using React 19, Vite, Tailwind CSS 4, and TypeScript. It provides a professional medical website with sections for services, doctors, appointments, and emergency contact.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Medi 2" — https://colorlib.com/wp/template/medi-2/
+- **Source slug:** `medi-2`
+- **Preview URL status:** `https://preview.colorlib.com/theme/medi-2/` answered **HTTP 404** on 2026-10-23 and the preview catalog (`assets/js/catalog-products-*.js`) holds **no demo entry** for the slug, so no live token read exists. The design page https://colorlib.com/wp/template/medi-2/ still answers, and the TEMPLATES.md screenshot below is the visual reference.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/nedi-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/medprime` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

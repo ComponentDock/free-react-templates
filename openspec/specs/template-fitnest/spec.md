@@ -2,6 +2,15 @@
 
 Fitnest is a yoga and fitness studio landing page template, recreating the ColorLib "Zogin" design under a new name. It provides a complete single-page marketing site for a yoga studio with navigation, hero, about, services, stats, courses, gallery, instructors, appointment booking, testimonials, and footer sections.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Zogin" — https://colorlib.com/wp/template/zogin/
+- **Source slug:** `zogin`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/zogin/ — **HTTP 200**, 36,437 B, fetched 2026-10-23 (page `<title>`: "Zogin | Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/zogin/css/style.css`, fetched 2026-10-23): brand `#5768ad`, `#263246`, `#001943`, `#f44336`; dominant neutrals `#ffffff`, `#9b9ea3`, `#6e7580`; type DM Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/zogin-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fitnest` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navigation bar with contact info and social links

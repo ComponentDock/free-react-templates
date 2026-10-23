@@ -1,11 +1,22 @@
 # Template: Swipe (Testimonials Carousel)
 
+Recreation of ColorLib "Carousel V08" (https://colorlib.com/wp/template/carousel-08/).
+
 ## Purpose
 
 Swipe is a single-section testimonials carousel page in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Carousel 08"
 website template design (see TEMPLATES.md), built under a different name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Carousel V08" — https://colorlib.com/wp/template/carousel-08/
+- **Source slug:** `carousel-08`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/carousel-08/ — **HTTP 200**, 4,196 B, fetched 2026-10-23 (page `<title>`: "Carousel 08"). The slug-only path `https://preview.colorlib.com/theme/carousel-08/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/carousel-08/css/style.css?v=76c340b7`, fetched 2026-10-23): brand `#dbcc8f`, `#007bff`, `#0056b3`; dominant neutrals `#d6d6d6`, `#869791`, `#212529`; type Poppins, Playfair Display, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-08.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/swipe` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

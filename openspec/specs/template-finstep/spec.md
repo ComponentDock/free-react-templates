@@ -1,10 +1,21 @@
 # Template: FinStep (Financial Sign-Up Wizard)
 
+Recreation of ColorLib "Colorlib Wizard 24" (https://colorlib.com/wp/template/colorlib-wizard-24/).
+
 ## Purpose
 
 Recreation of ColorLib "Colorlib Wizard 24" — a 4-step financial sign-up wizard with floating labels, gradient accents, and progress tracking. Preview URL: https://colorlib.com/etc/bwiz/colorlib-wizard-24/index.html. Source slug: `colorlib-wizard-24`.
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript. Multi-step form wizard with floating labels, gradient step indicators, and form validation.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Wizard 24" — https://colorlib.com/wp/template/colorlib-wizard-24/
+- **Source slug:** `colorlib-wizard-24`
+- **Preview URL analyzed:** https://colorlib.com/etc/bwiz/colorlib-wizard-24/index.html — **HTTP 200**, 16,184 B, fetched 2026-10-23 (page `<title>`: "Wizard-v4"). The slug-only path `https://preview.colorlib.com/theme/colorlib-wizard-24/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/bwiz/colorlib-wizard-24/css/style.css?v=e23e72d8`, fetched 2026-10-23): brand `#6bc734`; dominant neutrals `#e5e5e5`; type Open Sans, Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-24.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/finstep` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,8 +1,19 @@
 # SeekDot — Search Form Bar Template
 
+Recreation of ColorLib "Search Form/Bar V03" (https://colorlib.com/wp/template/search-form-bar-03/).
+
 ## Purpose
 
 Recreate the ColorLib "Search Form Bar 03" design as a React 19 + Tailwind CSS 4 component. The template features a minimal search form with a distinctive coral circular search icon button, white rounded search bar with shadow, centered on a light gray background.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Search Form/Bar V03" — https://colorlib.com/wp/template/search-form-bar-03/
+- **Source slug:** `search-form-bar-03`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/search-form-bar-03/ — **HTTP 200**, 1,947 B, fetched 2026-10-23 (page `<title>`: "Search Form/Bar 03"). The slug-only path `https://preview.colorlib.com/theme/search-form-bar-03/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/search-form-bar-03/css/style.css?v=6cabd44c`, fetched 2026-10-23): brand `#80bdff`, `#ff5858`; dominant neutrals `#6c757d`, `#495057`, `#212529`; type Roboto, Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-03.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/seekdot` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

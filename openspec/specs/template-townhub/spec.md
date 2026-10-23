@@ -2,6 +2,15 @@
 
 Recreate the ColorLib CityListing directory/listing template as a React 19 + Vite + Tailwind CSS 4 + TypeScript app named "TownHub". The template is a city directory one-pager with a hero search bar, popular locations, how-it-works steps, featured categories, testimonials, newsletter subscribe, blog posts, and a dark footer.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "CityListing" — https://colorlib.com/wp/template/citylisting/
+- **Source slug:** `citylisting`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/citylisting/ — **HTTP 200**, 34,725 B, fetched 2026-10-23 (page `<title>`: "Directory HTML-5 Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/citylisting/assets/css/style.css`, fetched 2026-10-23): brand `#eb566c`, `#1f2b7b`, `#ff3d1c`, `#ff3368`; dominant neutrals `#f9f9ff`, `#999999`, `#777777`; type Sulphur Point, Sacramento. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/citylisting-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/townhub` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Page renders all major sections in correct order

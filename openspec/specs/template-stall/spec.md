@@ -1,10 +1,21 @@
 # Template: Stall
 
+Recreation of ColorLib "Selling" (https://colorlib.com/wp/template/selling/).
+
 Recreation of the ColorLib "Selling" ecommerce store template.
 
 ## Purpose
 
 The Stall template is an ecommerce store landing page featuring a hero section with call-to-action buttons, product grid, newsletter signup, featured products with pricing, about section, team leadership, special promo with countdown, services, testimonials carousel, blog posts, contact form, and a dark footer with Component Dock attribution.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Selling" — https://colorlib.com/wp/template/selling/
+- **Source slug:** `selling`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/selling/ — **HTTP 200**, 37,305 B, fetched 2026-10-23 (page `<title>`: "Selling — Website by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/selling/css/style.css`, fetched 2026-10-23): brand `#f16821`, `#46ddb0`, `#f23a2e`; dominant neutrals `#edf0f5`, `#25262a`, `#b3b3b3`; type Muli. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/selling-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/stall` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

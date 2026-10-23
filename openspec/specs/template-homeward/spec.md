@@ -2,6 +2,15 @@
 
 Homeward is a real estate landing page with a property-showcase hero, a search bar, a featured listings grid, a map section and testimonials. It recreates the ColorLib **Myhome** design as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "MyHome" — https://colorlib.com/wp/template/myhome/
+- **Source slug:** `myhome`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/myhome/ — **HTTP 200**, 30,185 B, fetched 2026-10-23 (page `<title>`: "myHOME"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/myhome/styles/main_styles.css`, fetched 2026-10-23): brand `#adc867`, `#55407d`, `#1e1332`, `#ffa07f`; dominant neutrals `#ffffff`, `#2b2e35`, `#6c7079`; type Montserrat. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/myhome-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/homeward` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Header with contact bar and navigation

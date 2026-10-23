@@ -1,11 +1,22 @@
 # Spec: Minima
 
+Recreation of ColorLib "Avo" (https://colorlib.com/wp/template/avo/).
+
 ## Purpose
 
 Minima is a minimalist portfolio/agency landing page template, recreating
 the ColorLib "Avo" design under a new name. It features a dark hero with
 stat counters, about/services section, portfolio showcase, testimonials,
 CTA banner, blog grid, and multi-column footer with Component Dock branding.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Avo" — https://colorlib.com/wp/template/avo/
+- **Source slug:** `avo`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/avo/ — **HTTP 200**, 35,720 B, fetched 2026-10-23 (page `<title>`: "Avo | Web Design & Development Studio"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/avo/css/style.min.css?v=3.0.0`, fetched 2026-10-23): brand `#d1002c`, `#007bff`, `#dc3545`, `#28a745`; dominant neutrals `#6c757d`, `#343a40`, `#f8f9fa`; type Nunito Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/avo-free-templatel.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/minima` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

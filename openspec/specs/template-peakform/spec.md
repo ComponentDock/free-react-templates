@@ -1,8 +1,19 @@
 # Template: Peakform
 
+Recreation of ColorLib "Ironmuscle" (https://colorlib.com/wp/template/ironmuscle/).
+
 ## Purpose
 
 Peakform is a gym and fitness landing page template, recreating the ColorLib Ironmuscle design in React 19 + Vite + Tailwind CSS 4 + TypeScript. It showcases gym services, class schedules, trainers, and testimonials with a bold red brand palette.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Ironmuscle" — https://colorlib.com/wp/template/ironmuscle/
+- **Source slug:** `ironmuscle`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/ironmuscle/ — **HTTP 200**, 43,705 B, fetched 2026-10-23 (page `<title>`: "IronMuscle — Colorlib Website Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/ironmuscle/css/style.css`, fetched 2026-10-23): brand `#f23a2e`, `#28a745`; dominant neutrals `#edf0f5`, `#4d4d4d`, `#343a40`; type Roboto Mono, Nunito Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/ironmuscle-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/peakform` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

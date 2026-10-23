@@ -1,5 +1,7 @@
 # Template: Orbit (404 Error Page — Space Theme)
 
+Recreation of ColorLib "Colorlib Error 404 V10" (https://colorlib.com/wp/template/colorlib-error-404-10/).
+
 ## Purpose
 
 Orbit is a single-page 404 error page template in the free-react-templates
@@ -15,6 +17,15 @@ and accessible patterns.
 
 Orbit lives in `apps/orbit` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Error 404 V10" — https://colorlib.com/wp/template/colorlib-error-404-10/
+- **Source slug:** `colorlib-error-404-10`
+- **Preview URL analyzed:** https://colorlib.com/etc/404/colorlib-error-404-10/ — **HTTP 200**, 777 B, fetched 2026-10-23 (page `<title>`: "404 HTML Tempalte by Colorlib"). The slug-only path `https://preview.colorlib.com/theme/colorlib-error-404-10/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/404/colorlib-error-404-10/css/style.css?v=8a94e77a`, fetched 2026-10-23): brand `#0046d5`; type Montserrat. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-10.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/orbit` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

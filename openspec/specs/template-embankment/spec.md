@@ -1,5 +1,7 @@
 # Template: Embankment (Construction Company)
 
+Recreation of ColorLib "Builder" (https://colorlib.com/wp/template/builder/).
+
 ## Purpose
 
 Embankment is a single-page construction company website in the
@@ -8,6 +10,15 @@ ColorLib "Builder" free template, built under a DIFFERENT name
 (**Embankment**), with the monorepo stack: Vite + React 19 + Tailwind CSS 4
 
 - TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Builder" — https://colorlib.com/wp/template/builder/
+- **Source slug:** `builder`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/builder/ — **HTTP 200**, 29,896 B, fetched 2026-10-23 (page `<title>`: "Builder | Construction Company and General Contractor"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/builder/css/style.min.css?v=3.0.1`, fetched 2026-10-23): brand `#fab700`, `#8a6500`, `#007bff`, `#dc3545`; dominant neutrals `#f9f9ff`, `#6c757d`, `#343a40`; type Roboto, Oswald, Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/builder-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/embankment` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

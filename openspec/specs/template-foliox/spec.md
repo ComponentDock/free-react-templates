@@ -1,8 +1,19 @@
 # template-foliox
 
+Recreation of ColorLib "FPlus" (https://colorlib.com/wp/template/fplus/).
+
 ## Purpose
 
 Foliox is a portfolio and agency website template, recreating the ColorLib F-plus design under a new original name. It provides a complete agency/portfolio site with hero, about, projects gallery, methods, clients, news, and contact sections.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "FPlus" — https://colorlib.com/wp/template/fplus/
+- **Source slug:** `fplus`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/fplus/ — **HTTP 200**, 33,730 B, fetched 2026-10-23 (page `<title>`: "F-plus Portfolio Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/fplus/style.css`, fetched 2026-10-23): brand `#ff6c00`; dominant neutrals `#ebebeb`, `#959595`, `#000000`; type Montserrat. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/fplus-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/foliox` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

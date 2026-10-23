@@ -1,5 +1,7 @@
 # Template: Cloud (404 Error Page — Minimalist Cloud)
 
+Recreation of ColorLib "Colorlib Error 404 V14" (https://colorlib.com/wp/template/colorlib-error-404-14/).
+
 ## Purpose
 
 Cloud is a single-page 404 error page template in the free-react-templates
@@ -15,6 +17,15 @@ original inline SVG illustration (no assets copied).
 
 Cloud lives in `apps/cloud` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Error 404 V14" — https://colorlib.com/wp/template/colorlib-error-404-14/
+- **Source slug:** `colorlib-error-404-14`
+- **Preview URL analyzed:** https://colorlib.com/etc/404/colorlib-error-404-14/ — **HTTP 200**, 3,963 B, fetched 2026-10-23 (page `<title>`: "404 HTML Template by Colorlib"). The slug-only path `https://preview.colorlib.com/theme/colorlib-error-404-14/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/404/colorlib-error-404-14/css/style.css?v=d620e5ed`, fetched 2026-10-23): brand `#18e06f`; dominant neutrals `#f3f3f3`, `#151515`, `#fafbfd`; type Quicksand. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-error-404-14.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/cloud` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

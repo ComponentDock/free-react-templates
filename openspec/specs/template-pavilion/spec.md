@@ -1,5 +1,7 @@
 # Template: Pavilion (Hotel & Resort Landing)
 
+Recreation of ColorLib "Marian" (https://colorlib.com/wp/template/marian/).
+
 ## Purpose
 
 Pavilion is a single-page hotel landing template in the
@@ -16,6 +18,15 @@ gallery, and a dark footer with quick links, reservations contact, and a
 newsletter signup. Pavilion recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Marian" — https://colorlib.com/wp/template/marian/
+- **Source slug:** `marian`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/marian/ — **HTTP 200**, 43,896 B, fetched 2026-10-23 (page `<title>`: "Marian — Hotel & Resort above the Old Harbour"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/marian/assets/css/style.min.css?v=3.0.0`, fetched 2026-10-23): brand `#dca73a`, `#007bff`, `#dc3545`, `#28a745`; dominant neutrals `#f9f9ff`, `#6c757d`, `#343a40`; type Lato, Noto Serif, Snell Roundhand. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/marian-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/pavilion` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,11 +1,21 @@
 # Template: Alibi (Lawyer Landing)
 
+Recreation of ColorLib "Marco 2" (https://colorlib.com/wp/template/marco-2/).
+
 ## Purpose
 
 Alibi is a single-page lawyer landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Marco 2"
 design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Marco 2" — https://colorlib.com/wp/template/marco-2/
+- **Source slug:** `marco-2`
+- **Preview URL status:** `https://preview.colorlib.com/theme/marco-2/` answered **HTTP 404** on 2026-10-23 and the preview catalog (`assets/js/catalog-products-*.js`) holds **no demo entry** for the slug, so no live token read exists. The design page https://colorlib.com/wp/template/marco-2/ still answers, and the TEMPLATES.md screenshot below is the visual reference.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/marco2-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/alibi` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

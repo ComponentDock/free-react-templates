@@ -6,6 +6,15 @@ CSS 4, and TypeScript. The template provides a full church website landing
 experience with navigation, hero, sermon highlights, ministry features,
 services, events, testimonials, and footer.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Brotherlylove" — https://colorlib.com/wp/template/brotherlylove/
+- **Source slug:** `brotherlylove`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/brotherlylove/ — **HTTP 200**, 30,500 B, fetched 2026-10-23 (page `<title>`: "Brotherly Love — Worship, community, and practical kindness"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/brotherlylove/css/style.min.css?v=3.0.1`, fetched 2026-10-23): brand `#6c5b7b`, `#5a3d72`; dominant neutrals `#8c8394`, `#27242c`, `#635f69`; type Rubik. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/brotherlylove-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fellowship` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Page renders all sections

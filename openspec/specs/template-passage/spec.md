@@ -1,10 +1,21 @@
 # Template: Passage — Immigration & Visa Consultation
 
+Recreation of ColorLib "Immigration" (https://colorlib.com/wp/template/immigration/).
+
 Recreation of ColorLib Immigration layout. No ColorLib references in app code.
 
 ## Purpose
 
 Passage is an immigration and visa consultation landing page template. It provides a professional, trustworthy design for immigration service providers with sections for hero messaging, service cards (country destinations), a booking form, feature highlights, customer testimonials, blog posts, and a footer with Component Dock branding.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Immigration" — https://colorlib.com/wp/template/immigration/
+- **Source slug:** `immigration`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/immigration/ — **HTTP 200**, 28,752 B, fetched 2026-10-23 (page `<title>`: "Immigration"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/immigration/css/main.css`, fetched 2026-10-23): brand `#f6214b`, `#4cd3e3`, `#38a4ff`, `#f4e700`; dominant neutrals `#f9f9ff`, `#222222`, `#777777`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/immigration-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/passage` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

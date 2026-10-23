@@ -1,8 +1,19 @@
 # template-loop
 
+Recreation of ColorLib "Repeat" (https://colorlib.com/wp/template/repeat/).
+
 ## Purpose
 
 Loop is a digital agency landing page template recreating the ColorLib "Repeat" design. It features a dark navy + coral palette, Comfortaa display font, service slider, stat counters, and a three-column footer with Component Dock branding.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Repeat" — https://colorlib.com/wp/template/repeat/
+- **Source slug:** `repeat`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/repeat/ — **HTTP 200**, 21,132 B, fetched 2026-10-23 (page `<title>`: "Repeat — Free Bootstrap 5 Website Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/repeat/css/style.css`, fetched 2026-10-23): brand `#ff8e71`, `#003a70`, `#dc3545`, `#ff997f`; dominant neutrals `#212529`, `#6c757d`, `#f8f9fa`; type Comfortaa, Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/repeat-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/loop` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

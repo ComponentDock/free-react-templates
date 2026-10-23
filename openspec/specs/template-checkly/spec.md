@@ -1,5 +1,7 @@
 # Template: Checkly (Custom Checkbox Showcase)
 
+Recreation of ColorLib "Checkbox V02" (https://colorlib.com/wp/template/checkbox-02/).
+
 ## Purpose
 
 Checkly is a single-page component showcase template in the free-react-templates
@@ -18,6 +20,15 @@ and accessible patterns.
 
 Checkly lives in `apps/checkly` and uses shared components from `packages/ui`
 (cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Checkbox V02" — https://colorlib.com/wp/template/checkbox-02/
+- **Source slug:** `checkbox-02`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/checkbox-02/ — **HTTP 200**, 1,347 B, fetched 2026-10-23 (page `<title>`: "Checkbox 02"). The slug-only path `https://preview.colorlib.com/theme/checkbox-02/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/checkbox-02/css/style.css?v=2f2549cc`, fetched 2026-10-23): brand `#f76262`; dominant neutrals `#212529`, `#fafafa`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-02.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/checkly` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

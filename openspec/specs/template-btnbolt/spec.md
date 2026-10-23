@@ -4,6 +4,15 @@ Recreate ColorLib Bootstrap Buttons V09 as a React + Tailwind template named Btn
 This template showcases rounded Bootstrap 4 buttons in multiple sizes and the full
 18-color Bootstrap palette, with a full-width block button variant.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Bootstrap Buttons V09" — https://colorlib.com/wp/template/bootstrap-buttons-09/
+- **Source slug:** `bootstrap-buttons-09`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bb/bootstrap-buttons-09/ — **HTTP 200**, 3,279 B, fetched 2026-10-23 (page `<title>`: "Button #9"). The slug-only path `https://preview.colorlib.com/theme/bootstrap-buttons-09/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bb/bootstrap-buttons-09/css/style.css?v=942b5964`, fetched 2026-10-23): brand `#007bff`, `#28a745`, `#17a2b8`, `#ffc107`; dominant neutrals `#212529`, `#f8f9fa`, `#6c757d`; type Roboto, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-09.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/btnbolt` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Render page title

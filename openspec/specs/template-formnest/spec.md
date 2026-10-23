@@ -1,11 +1,22 @@
 # Formnest — Contact Form Template
 
+Recreation of ColorLib "Contact Form V14" (https://colorlib.com/wp/template/contact-form-14/).
+
 ## Purpose
 
 Formnest is a split-screen contact form template for marketing agencies and
 freelancers. It features an olive green background with a text panel on the
 left and a white form card on the right. The design recreates ColorLib
 Contact Form 14 under the original name "Formnest".
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Contact Form V14" — https://colorlib.com/wp/template/contact-form-14/
+- **Source slug:** `contact-form-14`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/contact-form-14/ — **HTTP 200**, 4,726 B, fetched 2026-10-23 (page `<title>`: "Contact Form #4"). The slug-only path `https://preview.colorlib.com/theme/contact-form-14/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/contact-form-14/css/style.css?v=b9a397e5`, fetched 2026-10-23): brand `#ccda46`, `#e9efb0`, `#b7c628`, `#a3b023`; dominant neutrals `#212529`, `#495057`, `#6c757d`; type Poppins, Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-14.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/formnest` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,5 +1,7 @@
 # Spec: Waypoint (recreation of ColorLib Search Form V12)
 
+Recreation of ColorLib "Colorlib Search Form V12" (https://colorlib.com/wp/template/colorlib-search-12/).
+
 ## Purpose
 
 Waypoint is a hotel and travel search form template in the free-react-templates
@@ -28,6 +30,15 @@ Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 - Search button: #ff8300 (orange) background, white text, 900 weight, 50px height
 - Search button hover: #e67600
 - Footer: #002c71 (navy) background, white/70 text, Component Dock link
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Search Form V12" — https://colorlib.com/wp/template/colorlib-search-12/
+- **Source slug:** `colorlib-search-12`
+- **Preview URL analyzed:** https://colorlib.com/etc/searchf/colorlib-search-12/ — **HTTP 200**, 14,357 B, fetched 2026-10-23. The slug-only path `https://preview.colorlib.com/theme/colorlib-search-12/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/searchf/colorlib-search-12/css/style.css?v=9b36d97f`, fetched 2026-10-23): brand `#002c71`, `#ff8300`, `#e67600`; dominant neutrals `#808080`, `#333333`, `#f9f9f9`; type Lato, Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-12.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/waypoint` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

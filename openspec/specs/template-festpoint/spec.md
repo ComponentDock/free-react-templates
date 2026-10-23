@@ -2,6 +2,15 @@
 
 Festpoint is a conference and event landing page template, recreated from the ColorLib "Eventalk" design. It provides a modern, responsive template for promoting tech conferences, with sections for hero, services, speaker showcase, schedule, blog, and contact.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Eventalk" — https://colorlib.com/wp/template/eventalk/
+- **Source slug:** `eventalk`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/eventalk/ — **HTTP 200**, 50,395 B, fetched 2026-10-23 (page `<title>`: "Eventalk - Free Bootstrap 4 Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/eventalk/css/style.css`, fetched 2026-10-23): brand `#6b75ff`, `#59b7ff`, `#6b76ff`, `#78d5ef`; dominant neutrals `#000000`, `#6c757d`, `#212529`; type Work Sans, SFMono-Regular. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/festpoint` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar with responsive mobile menu

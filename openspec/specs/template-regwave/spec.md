@@ -2,6 +2,15 @@
 
 Regwave is a membership registration form template with a two-column card layout. The left panel provides informational content and a login action, while the right panel contains a multi-field registration form. The design uses a cyan background with a blue accent brand color, following the Colorlib Reg Form V30 pattern.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Reg Form V30" — https://colorlib.com/wp/template/colorlib-regform-30/
+- **Source slug:** `colorlib-regform-30`
+- **Preview URL analyzed:** https://colorlib.com/etc/regform/colorlib-regform-30/ — **HTTP 200**, 2,706 B, fetched 2026-10-23 (page `<title>`: "Form-v4 by Colorlib"). The slug-only path `https://preview.colorlib.com/theme/colorlib-regform-30/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/regform/colorlib-regform-30/css/style.css?v=326630c5`, fetched 2026-10-23): brand `#3786bd`, `#53c83c`, `#75e2e9`, `#2f73a3`; dominant neutrals `#e5e5e5`; type Open Sans, LineAwesome. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-30.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/regwave` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Two-column registration card layout

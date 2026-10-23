@@ -1,8 +1,19 @@
 # Spec: Hardhat — Construction Company Landing Template
 
+Recreation of ColorLib "ConstructionCompany" (https://colorlib.com/wp/template/constructioncompany/).
+
 ## Purpose
 
 Recreate the ColorLib "Constructioncompany" construction company landing page as a modern React 19 + Tailwind CSS 4 + TypeScript single-page template named "Hardhat". The template provides a full-featured construction company website with top bar, navbar, hero, services, about, projects, contact CTA, stats, team, testimonials, blog, and footer sections.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "ConstructionCompany" — https://colorlib.com/wp/template/constructioncompany/
+- **Source slug:** `constructioncompany`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/constructioncompany/ — **HTTP 200**, 58,865 B, fetched 2026-10-23 (page `<title>`: "Construction Company - Professional Building Services"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/constructioncompany/assets/css/style.css`, fetched 2026-10-23): brand `#ff5f13`, `#1f2b7b`, `#415094`, `#4cd3e3`; dominant neutrals `#f9f9ff`, `#999999`, `#f1f1f1`; type Barlow, Teko, Lato. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/hardhat` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

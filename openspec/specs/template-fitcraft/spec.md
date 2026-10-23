@@ -1,8 +1,19 @@
 # Fitcraft
 
+Recreation of ColorLib "GymLife" (https://colorlib.com/wp/template/gymlife/).
+
 ## Purpose
 
 Fitcraft is a gym and fitness landing page template recreated from the ColorLib "Gymlife" design. It provides a modern, dark-themed fitness website with hero, features, classes, pricing, gallery, team, contact, and footer sections.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "GymLife" — https://colorlib.com/wp/template/gymlife/
+- **Source slug:** `gymlife`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/gymlife/ — **HTTP 200**, 35,158 B, fetched 2026-10-23 (page `<title>`: "Gym | Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/gymlife/css/style.css`, fetched 2026-10-23): brand `#f36100`, `#f44336`, `#673ab7`, `#d49d09`; dominant neutrals `#ffffff`, `#c4c4c4`, `#363636`; type Oswald, Muli. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/gymlife-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fitcraft` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

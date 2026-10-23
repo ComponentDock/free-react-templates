@@ -1,8 +1,19 @@
 # Spec: Jade (ColorLib Accordion 20)
 
+Recreation of ColorLib "Bootstrap Accordion V20" (https://colorlib.com/wp/template/accordion-20/).
+
 ## Purpose
 
 An elegant FAQ / accordion template built with React 19, TypeScript, and Tailwind CSS 4. Recreation of ColorLib Accordion 20 as **Jade**.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Bootstrap Accordion V20" — https://colorlib.com/wp/template/accordion-20/
+- **Source slug:** `accordion-20`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bac/accordion-20/ — **HTTP 200**, 4,344 B, fetched 2026-10-23 (page `<title>`: "Accordion #10"). The slug-only path `https://preview.colorlib.com/theme/accordion-20/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bac/accordion-20/css/style.css?v=06a4e7a7`, fetched 2026-10-23): brand `#007bff`, `#0056b3`, `#dcf1ff`, `#e76739`; dominant neutrals `#212529`, `#6c757d`, `#f1f4f8`; type Roboto, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-20.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/jade` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

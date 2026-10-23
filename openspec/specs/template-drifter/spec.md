@@ -1,10 +1,21 @@
 # Spec: Drifter
 
+Recreation of ColorLib "Ronin" (https://colorlib.com/wp/template/ronin/).
+
 Recreation of ColorLib "Ronin" — a personal portfolio / freelancer landing page.
 
 ## Purpose
 
 Build a personal portfolio landing page for a freelancer/designer, showcasing services, work samples, testimonials, and blog posts. The design follows the ColorLib "Ronin" template layout with a dark hero banner, skill bars, service cards, portfolio grid with filtering, and a dark footer.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Ronin" — https://colorlib.com/wp/template/ronin/
+- **Source slug:** `ronin`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/ronin/ — **HTTP 200**, 23,344 B, fetched 2026-10-23 (page `<title>`: "Ronin Multi"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens:** the demo's stylesheet could not be re-read on 2026-10-23; the stylesheet itself was not cached, so no token is claimed here.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/drifter` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

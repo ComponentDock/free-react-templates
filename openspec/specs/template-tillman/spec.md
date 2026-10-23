@@ -1,5 +1,7 @@
 # Template: Tillman (Agriculture Landing)
 
+Recreation of ColorLib "Agrica" (https://colorlib.com/wp/template/agrica/).
+
 ## Purpose
 
 Tillman is an agriculture/farm landing page template in the free-react-templates
@@ -34,6 +36,15 @@ TypeScript.
 8. **Tips from Experts** — two blog-style posts with horizontal layout (image left, title + description + "Read More" right), "More Tips" border button
 9. **Contact** — "Need any help?" section with phone/email/address info, "Drop Your Message" border button
 10. **Footer** — three columns: logo + description + social links, Quick Links, Company; bottom bar with Component Dock link
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Agrica" — https://colorlib.com/wp/template/agrica/
+- **Source slug:** `agrica`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/agrica/ — **HTTP 200**, 29,378 B, fetched 2026-10-23 (page `<title>`: "Agriculture | Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/agrica/assets/css/style.css`, fetched 2026-10-23): brand `#329d23`, `#1f2b7b`, `#285d25`, `#234821`; dominant neutrals `#f9f9ff`, `#999999`, `#f1f1f1`; type Josefin Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/agrica-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/tillman` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

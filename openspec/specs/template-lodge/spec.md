@@ -1,5 +1,7 @@
 # Template: Lodge (Hotel Landing)
 
+Recreation of ColorLib "Hotel" (https://colorlib.com/wp/template/hotel/).
+
 ## Purpose
 
 Lodge is a single-page hotel landing template in the free-react-templates
@@ -12,6 +14,15 @@ with booking form, facilities showcase, guestbook testimonials, Instagram
 gallery, and a multi-column footer. Lodge recreates that structure
 section-for-section with matching layout, colors, typography, and content
 types (no ColorLib assets copied).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Hotel" — https://colorlib.com/wp/template/hotel/
+- **Source slug:** `hotel`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/hotel/ — **HTTP 200**, 56,928 B, fetched 2026-10-23 (page `<title>`: "Hotel | Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/hotel/css/style.css`, fetched 2026-10-23): brand `#ae9548`, `#2d220f`, `#f44336`, `#ae954b`; dominant neutrals `#242424`, `#ffffff`, `#353535`; type Open Sans, Taviraj. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/hotel-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/lodge` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

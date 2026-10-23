@@ -1,5 +1,7 @@
 # Template: Pivot (Personal Developer Portfolio)
 
+Recreation of ColorLib "Martin" (https://colorlib.com/wp/template/martin/).
+
 ## Purpose
 
 Pivot is a single-page personal developer portfolio template in the
@@ -14,6 +16,15 @@ slides showing background images and developer intro text, a services section
 with three icon cards ("What I Do"), a work/case study carousel, a newsletter
 section with a resume link and email subscription form, and a two-column
 footer with contact info and copyright.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Martin" — https://colorlib.com/wp/template/martin/
+- **Source slug:** `martin`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/martin/ — **HTTP 200**, 18,150 B, fetched 2026-10-23 (page `<title>`: "Martin Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/martin/css/style.css`, fetched 2026-10-23): brand `#ffdd00`, `#002bdc`, `#ffe01a`; dominant neutrals `#333333`, `#e6e6e6`, `#1a1a1a`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/martin-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/pivot` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,5 +1,7 @@
 # Template: Airy (Business Agency)
 
+Recreation of ColorLib "Whitespace" (https://colorlib.com/wp/template/whitespace/).
+
 ## Purpose
 
 Airy is a multi-section business/agency landing page template in the free-react-templates
@@ -14,6 +16,15 @@ Google Fonts (Poppins), picsum.photos placeholders, and lucide-react icons.
 
 Airy lives in `apps/airy` and uses shared components from `packages/ui`
 (Button, cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Whitespace" — https://colorlib.com/wp/template/whitespace/
+- **Source slug:** `whitespace`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/whitespace/ — **HTTP 200**, 39,862 B, fetched 2026-10-23 (page `<title>`: "Whitespace | Business Strategy, Data and Design Studio"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/whitespace/css/style.min.css?v=3.0.0`, fetched 2026-10-23): brand `#fcd307`, `#78d5ef`, `#dc3545`, `#28a745`; dominant neutrals `#6c757d`, `#343a40`, `#f8f9fa`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/airy` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,8 +1,19 @@
 # Specification: CarouselDrift
 
+Recreation of ColorLib "Carousel V15" (https://colorlib.com/wp/template/carousel-15/).
+
 ## Purpose
 
 CarouselDrift is a modern, responsive interactive carousel and slide showcase template featuring a hero section, an immersive multi-item carousel slider with thumbnails/controls, feature highlights, a newsletter subscription banner, and a footer linking to Component Dock.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Carousel V15" — https://colorlib.com/wp/template/carousel-15/
+- **Source slug:** `carousel-15`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/carousel-15/ — **HTTP 200**, 3,950 B, fetched 2026-10-23 (page `<title>`: "Carousel #5"). The slug-only path `https://preview.colorlib.com/theme/carousel-15/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/carousel-15/css/style.css?v=c85044a4`, fetched 2026-10-23): brand `#007bff`, `#0056b3`; dominant neutrals `#212529`, `#adb5bd`, `#b3b3b3`; type Roboto, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-15.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/carouseldrift` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

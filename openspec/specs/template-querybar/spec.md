@@ -1,5 +1,7 @@
 # Template: QueryBar (Flight Search Form)
 
+Recreation of ColorLib "Colorlib Search Form V19" (https://colorlib.com/wp/template/colorlib-search-19/).
+
 ## Purpose
 
 A standalone flight search form widget with a gradient card overlay on a full-viewport background image. Recreation of ColorLib **Colorlib Search Form V19**.
@@ -20,6 +22,15 @@ A standalone flight search form widget with a gradient card overlay on a full-vi
 - **Inputs:** border-radius 10px, padding 16.5px 20px, font-size 18px, white bg, color #666, placeholder #ccc
 - **Submit button:** bg #00ad5f, border-radius 10px, height 60px, white text, bold, uppercase, hover #00994b
 - **Background:** full-viewport cover image (ocean/cliff scene) — use picsum.photos placeholder
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Search Form V19" — https://colorlib.com/wp/template/colorlib-search-19/
+- **Source slug:** `colorlib-search-19`
+- **Preview URL analyzed:** https://colorlib.com/etc/searchf/colorlib-search-19/ — **HTTP 200**, 6,720 B, fetched 2026-10-23 (page `<title>`: "Au Form Wizard"). The slug-only path `https://preview.colorlib.com/theme/colorlib-search-19/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/searchf/colorlib-search-19/css/style.css?v=bbb46df3`, fetched 2026-10-23): brand `#c949fe`, `#47a9ff`, `#6c7ae0`, `#00ad5f`; dominant neutrals `#808080`, `#e5e5e5`; type Poppins, Lato. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-19.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/querybar` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

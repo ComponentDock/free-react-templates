@@ -2,6 +2,15 @@
 
 Snowline is a fashion e-commerce shop landing page recreated from the ColorLib "Winter" template. It showcases product categories, new arrivals with filtering, shipping features, an Instagram feed, and a newsletter footer.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Winter" — https://colorlib.com/wp/template/winter/
+- **Source slug:** `winter`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/winter/ — **HTTP 200**, 27,405 B, fetched 2026-10-23 (page `<title>`: "winter"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/winter/css/style.css`, fetched 2026-10-23): brand `#2f7dfc`, `#ff3368`, `#415094`, `#4cd3e3`; dominant neutrals `#797979`, `#f9f9ff`, `#2a2a2a`; type Roboto, Roboto Condensed. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/winter-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/snowline` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and controls

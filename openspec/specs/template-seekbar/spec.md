@@ -1,5 +1,7 @@
 # Template: Seekbar (Search Form Bar)
 
+Recreation of ColorLib "Colorlib Search Form V24" (https://colorlib.com/wp/template/colorlib-search-24/).
+
 ## Purpose
 
 Seekbar is a full-page search form overlay on a background image in the
@@ -14,6 +16,15 @@ standard dark-mode toggle and accessible patterns.
 
 Seekbar lives in `apps/seekbar` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Search Form V24" — https://colorlib.com/wp/template/colorlib-search-24/
+- **Source slug:** `colorlib-search-24`
+- **Preview URL analyzed:** https://colorlib.com/etc/searchf/colorlib-search-24/ — **HTTP 200**, 1,564 B, fetched 2026-10-23. The slug-only path `https://preview.colorlib.com/theme/colorlib-search-24/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/searchf/colorlib-search-24/css/style.css?v=4649ca42`, fetched 2026-10-23): brand `#4272d7`, `#2d62d3`; dominant neutrals `#9a9a9a`, `#333333`, `#e5e5e5`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-24.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/seekbar` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

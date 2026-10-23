@@ -1,5 +1,7 @@
 # Template: FrontPage (News & Magazine Landing)
 
+Recreation of ColorLib "Aznews" (https://colorlib.com/wp/template/aznews/).
+
 ## Purpose
 
 FrontPage is a single-page news & magazine template in the free-react-templates
@@ -22,6 +24,15 @@ Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 FrontPage lives in `apps/frontpage` and uses shared components from
 `packages/ui`.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Aznews" — https://colorlib.com/wp/template/aznews/
+- **Source slug:** `aznews`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/aznews/ — **HTTP 200**, 68,661 B, fetched 2026-10-23 (page `<title>`: "News HTML-5 Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/aznews/assets/css/style.css`, fetched 2026-10-23): brand `#fc3f00`, `#415094`, `#4cd3e3`, `#38a4ff`; dominant neutrals `#f9f9ff`, `#999999`, `#eeeeee`; type Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/aznews-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/frontpage` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

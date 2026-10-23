@@ -1,5 +1,7 @@
 # Template: Gust (Weather Dropdown Menu)
 
+Recreation of ColorLib "Dropdown V03" (https://colorlib.com/wp/template/dropdown-03/).
+
 ## Purpose
 
 Gust is a single-page weather dropdown menu template in the free-react-templates
@@ -17,6 +19,15 @@ Poppins from Google Fonts.
 
 Gust lives in `apps/gust` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Dropdown V03" — https://colorlib.com/wp/template/dropdown-03/
+- **Source slug:** `dropdown-03`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/dropdown-03/ — **HTTP 200**, 6,666 B, fetched 2026-10-23 (page `<title>`: "Dropdown 03"). The slug-only path `https://preview.colorlib.com/theme/dropdown-03/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/dropdown-03/css/style.css?v=a5b47135`, fetched 2026-10-23): brand `#007bff`, `#3e64ff`, `#0062cc`, `#5878ff`; dominant neutrals `#212529`, `#16181b`, `#f8f9fa`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/dropdown-03.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/gust` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,8 +1,19 @@
 # Template: QuestBar (Search Form Component)
 
+Recreation of ColorLib "Search Form/Bar V05" (https://colorlib.com/wp/template/search-form-bar-05/).
+
 ## Purpose
 
 A standalone search form bar component with a category dropdown, text input, and search icon button. Recreation of ColorLib **Search Form Bar 05**.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Search Form/Bar V05" — https://colorlib.com/wp/template/search-form-bar-05/
+- **Source slug:** `search-form-bar-05`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/search-form-bar-05/ — **HTTP 200**, 2,915 B, fetched 2026-10-23 (page `<title>`: "Search Form/Bar 05"). The slug-only path `https://preview.colorlib.com/theme/search-form-bar-05/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/search-form-bar-05/css/style.css?v=43aad85e`, fetched 2026-10-23): brand `#12d3cf`, `#80bdff`; dominant neutrals `#6c757d`, `#495057`, `#212529`; type Roboto, Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-05.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/questbar` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

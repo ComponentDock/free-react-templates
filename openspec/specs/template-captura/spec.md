@@ -2,6 +2,15 @@
 
 Captura is a photography portfolio template recreating the ColorLib "Halen" design. It features a dark hero with blue accent, photography skills showcase, wildlife split section, 3x3 photo gallery with hover overlays, testimonials, team section, contact info with map, Instagram feed, and footer with Component Dock branding.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Halen" — https://colorlib.com/wp/template/halen/
+- **Source slug:** `halen`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/halen/ — **HTTP 200**, 63,889 B, fetched 2026-10-23 (page `<title>`: "Halen"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/halen/css/style.css`, fetched 2026-10-23): brand `#ff5e13`, `#48b6fb`, `#415094`, `#4cd3e3`; dominant neutrals `#f9f9ff`, `#999999`, `#2c2c2c`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/halen-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/captura` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar with brand and navigation

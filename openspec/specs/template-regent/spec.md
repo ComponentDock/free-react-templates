@@ -1,5 +1,7 @@
 # Template: Regent
 
+Recreation of ColorLib "Suites" (https://colorlib.com/wp/template/suites/).
+
 > Recreates ColorLib 'Suites' as a free React hotel & resort landing page.
 
 ## Purpose
@@ -34,6 +36,15 @@ Regent is a luxury hotel & resort landing page template built with React 19, Tai
 8. **Upcoming Events** — 3 event cards with image, title, date, description.
 9. **Testimonials** — 3 testimonials with avatar, name, quote.
 10. **Footer** — Dark bg (#000), 3 columns, social icons, copyright with Component Dock link.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Suites" — https://colorlib.com/wp/template/suites/
+- **Source slug:** `suites`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/suites/ — **HTTP 200**, 35,777 B, fetched 2026-10-23 (page `<title>`: "Suite — Colorlib Website Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/suites/css/style.css`, fetched 2026-10-23): brand `#f23a2e`, `#5c7893`; dominant neutrals `#343a40`, `#25262a`, `#212529`; type Playfair Display, Work Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/suites-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/regent` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

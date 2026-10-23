@@ -1,8 +1,19 @@
 # Sideframe — Right-side Contact Form Sidebar Template
 
+Recreation of ColorLib "Colorlib Sidebar V04" (https://colorlib.com/wp/template/colorlib-sidebar-v04/).
+
 ## Purpose
 
 A right-side contact form panel on a deep purple/indigo background, with a chat toggle button and a left-hand blog post grid on a gray background. Recreation of ColorLib Sidebar V04.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Sidebar V04" — https://colorlib.com/wp/template/colorlib-sidebar-v04/
+- **Source slug:** `colorlib-sidebar-v04`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v04/ — **HTTP 200**, 6,746 B, fetched 2026-10-23 (page `<title>`: "Sidebar #3"). The slug-only path `https://preview.colorlib.com/theme/colorlib-sidebar-v04/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v04/css/style.css?v=c28b8a0a`, fetched 2026-10-23): brand `#007bff`, `#0062cc`, `#0069d9`, `#0056b3`; dominant neutrals `#6c757d`, `#212529`, `#495057`; type Roboto, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-sidebar-v04.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/sideframe` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

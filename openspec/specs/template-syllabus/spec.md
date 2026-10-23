@@ -1,5 +1,7 @@
 # Template: Syllabus (Education / Courses)
 
+Recreation of ColorLib "Course" (https://colorlib.com/wp/template/course/).
+
 ## Purpose
 
 Syllabus is a single-page education/courses landing template in the
@@ -7,6 +9,15 @@ free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Course" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
 CSS 4 + TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Course" — https://colorlib.com/wp/template/course/
+- **Source slug:** `course`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/course/ — **HTTP 200**, 28,606 B, fetched 2026-10-23 (page `<title>`: "Course"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/course/styles/main_styles.css`, fetched 2026-10-23): brand `#ffb606`, `#ffa07f`, `#ffd266`, `#c88e00`; dominant neutrals `#ffffff`, `#a5a5a5`, `#1a1a1a`; type Roboto, Open Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/course-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/syllabus` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

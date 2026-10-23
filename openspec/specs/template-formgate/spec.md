@@ -1,5 +1,7 @@
 # FormGate — Contact Form Template Spec
 
+Recreation of ColorLib "Contact Form V19" (https://colorlib.com/wp/template/contact-form-19/).
+
 ## Purpose
 
 Minimalist single-page contact form recreating ColorLib "Contact Form 19"
@@ -7,6 +9,15 @@ under the original name **FormGate**. A centered white card on a light gray
 background containing a "Get Started" heading and a clean form with
 underline-style inputs, a budget dropdown, message textarea, and a coral
 "SEND MESSAGE" button.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Contact Form V19" — https://colorlib.com/wp/template/contact-form-19/
+- **Source slug:** `contact-form-19`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/contact-form-19/ — **HTTP 200**, 3,091 B, fetched 2026-10-23 (page `<title>`: "Contact Form #9"). The slug-only path `https://preview.colorlib.com/theme/contact-form-19/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/contact-form-19/css/style.css?v=d060f86a`, fetched 2026-10-23): brand `#ccda46`, `#e9efb0`, `#b7c628`, `#c0d02a`; dominant neutrals `#212529`, `#495057`, `#6c757d`; type Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/contact-form-19.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/formgate` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

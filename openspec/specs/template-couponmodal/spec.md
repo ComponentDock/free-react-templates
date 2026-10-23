@@ -2,6 +2,15 @@
 
 CouponModal is a coupon discount popup template recreating ColorLib Modal 04. It provides a centered modal dialog with a two-column layout: a decorative background image on the left, and a "50% Off" headline, promo code input, and "Start Shopping" CTA on the right. The design uses Josefin Sans font, teal (#12d3cf) brand primary color, and a sharp-cornered modal with drop shadow.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Modal V04" — https://colorlib.com/wp/template/modal-04/
+- **Source slug:** `modal-04`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/modal-04/ — **HTTP 200**, 2,971 B, fetched 2026-10-23 (page `<title>`: "Modal 04"). The slug-only path `https://preview.colorlib.com/theme/modal-04/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/modal-04/css/style.css?v=892c06b3`, fetched 2026-10-23): brand `#12d3cf`, `#007bff`, `#0062cc`, `#0056b3`; dominant neutrals `#6c757d`, `#212529`, `#495057`; type Josefin Sans, Segoe UI, SFMono-Regular. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-04.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/couponmodal` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

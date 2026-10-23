@@ -1,8 +1,18 @@
 # Synod — Church Landing Template
 
+Recreation of ColorLib "Church Wordpress Themes" (https://colorlib.com/wp/template/church-wordpress-themes/).
+
 ## Purpose
 
 Recreate the ColorLib "Church WordPress Themes" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page church landing template under the name "Synod". The original preview was unreachable; the design is derived from the ColorLib screenshot.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Church Wordpress Themes" — https://colorlib.com/wp/template/church-wordpress-themes/
+- **Source slug:** `church-wordpress-themes`
+- **Preview URL status:** `https://preview.colorlib.com/theme/church-wordpress-themes/` answered **HTTP 404** on 2026-10-23 and the preview catalog (`assets/js/catalog-products-*.js`) holds **no demo entry** for the slug, so no live token read exists. The design page https://colorlib.com/wp/template/church-wordpress-themes/ still answers, and the TEMPLATES.md screenshot below is the visual reference.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/wordpress-church-themes-1.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/synod` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

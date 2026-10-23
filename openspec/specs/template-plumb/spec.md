@@ -7,6 +7,15 @@ Plumb is a product landing page with a parallax hero, a latest-product band, fou
   features, services grid, testimonials, news cards, newsletter subscribe form,
   and a call to action.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Gravity" — https://colorlib.com/wp/template/gravity/
+- **Source slug:** `gravity`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/gravity/ — **HTTP 200**, 36,299 B, fetched 2026-10-23 (page `<title>`: "Gravity Free HTML Template by Cololib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/gravity/css/style.css`, fetched 2026-10-23): brand `#fb742d`, `#fa8900`, `#fb8141`, `#fb8546`; dominant neutrals `#ffffff`, `#000000`, `#f8f9fa`; type Lato, Playfair Display. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/gravity-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/plumb` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Hero section with parallax background and CTA

@@ -1,8 +1,18 @@
 # template-fragzone
 
+Recreation of ColorLib "Game Warrior" (https://colorlib.com/wp/template/game-warrior/).
+
 ## Purpose
 
 Fragzone is a gaming website template recreating the ColorLib Game Warrior design under a new original name. It provides a complete gaming community site with navbar, hero banner, latest news ticker, game category cards, recent games gallery, tournament listings, review cards, and a dark footer.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Game Warrior" — https://colorlib.com/wp/template/game-warrior/
+- **Source slug:** `game-warrior`
+- **Preview URL status:** `https://preview.colorlib.com/theme/game-warrior/` answered **HTTP 404** on 2026-10-23 and the preview catalog (`assets/js/catalog-products-*.js`) holds **no demo entry** for the slug, so no live token read exists. The design page https://colorlib.com/wp/template/game-warrior/ still answers, and the TEMPLATES.md screenshot below is the visual reference.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/gamewarrior-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fragzone` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

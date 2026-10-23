@@ -1,10 +1,21 @@
 # Calypso Template — OpenSpec
 
+Recreation of ColorLib "Calvin" (https://colorlib.com/wp/template/calvin/).
+
 Personal portfolio / resume template recreating ColorLib Calvin.
 
 ## Purpose
 
 Provide a free, open-source React portfolio/resume template with a modern design featuring a hero section, services grid, portfolio gallery, skill bars, testimonials, blog, and a branded footer.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Calvin" — https://colorlib.com/wp/template/calvin/
+- **Source slug:** `calvin`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/calvin/ — **HTTP 200**, 30,844 B, fetched 2026-10-23 (page `<title>`: "Personal | Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/calvin/assets/css/style.css`, fetched 2026-10-23): brand `#ff8553`, `#1f2b7b`, `#415094`, `#4cd3e3`; dominant neutrals `#f9f9ff`, `#999999`, `#888888`; type Roboto Condensed, DM Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/calvin-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/calypso` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

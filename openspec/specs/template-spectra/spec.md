@@ -2,6 +2,15 @@
 
 Spectra is a personal portfolio/freelance developer template, recreating the ColorLib Niko design. It provides a single-page portfolio with navbar, hero section, about section, skills with progress bars, project gallery, blog posts, contact form, and a branded footer.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Niko" — https://colorlib.com/wp/template/niko/
+- **Source slug:** `niko`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/niko/ — **HTTP 200**, 32,446 B, fetched 2026-10-23 (page `<title>`: "Niko - Free Bootstrap 4 Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/niko/css/style.css`, fetched 2026-10-23): brand `#0075f6`, `#9ff669`, `#31de79`, `#007bff`; dominant neutrals `#000000`, `#6c757d`, `#212529`; type Segoe UI, SFMono-Regular, Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/niko-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/spectra` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar with scroll-aware styling

@@ -1,5 +1,7 @@
 # Template: SplitModal (Product Review Modal)
 
+Recreation of ColorLib "Modal V19" (https://colorlib.com/wp/template/modal-19/).
+
 ## Purpose
 
 A centered full-viewport page with a split-screen product review modal featuring a product image on the left. It also includes product details with star rating and social counters on the right. Recreation of the ColorLib "Modal 19" template.
@@ -23,6 +25,15 @@ A centered full-viewport page with a split-screen product review modal featuring
 | Heart/like icon color | `#dc3545` (red)                     |
 | Message/add icon      | `#007bff` (blue)                    |
 | Share icon color      | `#ccc`, hover `#000`                |
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Modal V19" — https://colorlib.com/wp/template/modal-19/
+- **Source slug:** `modal-19`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/modal-19/ — **HTTP 200**, 8,624 B, fetched 2026-10-23 (page `<title>`: "Modal #9"). The slug-only path `https://preview.colorlib.com/theme/modal-19/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/modal-19/css/style.css?v=e255e3d8`, fetched 2026-10-23): brand `#007bff`, `#ed5107`, `#a33805`, `#ffc107`; dominant neutrals `#6c757d`, `#212529`, `#545b62`; type Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-19.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/splitmodal` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,8 +1,19 @@
 # Spec: Lectern — University/Education Landing Template
 
+Recreation of ColorLib "Unica" (https://colorlib.com/wp/template/unica/).
+
 ## Purpose
 
 Recreate the ColorLib "Unica" university template as a React 19 + Tailwind CSS 4 + TypeScript landing page under the name "Lectern". The template serves as a free, production-ready university/education website landing page with sections for services, courses, enrollment, gallery, blog, and newsletter.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Unica" — https://colorlib.com/wp/template/unica/
+- **Source slug:** `unica`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/unica/ — **HTTP 200**, 35,651 B, fetched 2026-10-23 (page `<title>`: "Unica - University Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/unica/css/style.css`, fetched 2026-10-23): brand `#f6783a`, `#020031`, `#f44336`, `#673ab7`; dominant neutrals `#b7b7b7`, `#111111`, `#636363`; type Rubik. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/unica-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/lectern` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

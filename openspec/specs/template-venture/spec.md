@@ -1,8 +1,19 @@
 # Venture — Recreation of ColorLib Startupbusiness
 
+Recreation of ColorLib "StartupBusiness" (https://colorlib.com/wp/template/startupbusiness/).
+
 ## Purpose
 
 Recreate the ColorLib Startupbusiness template as a React 19 + Vite + Tailwind CSS 4 + TypeScript template named "Venture". The template provides a business startup landing page with sections for services, skills, portfolio, testimonials, features, blog, and contact.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "StartupBusiness" — https://colorlib.com/wp/template/startupbusiness/
+- **Source slug:** `startupbusiness`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/startupbusiness/ — **HTTP 200**, 26,153 B, fetched 2026-10-23 (page `<title>`: "Business consulting for your next stage | Startup"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/startupbusiness/vendor/photoswipe/5.4.4/photoswipe.css?v=3.0.0`, fetched 2026-10-23): dominant neutrals `#4f4f4f`. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/startupbusiness-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/venture` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

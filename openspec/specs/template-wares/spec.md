@@ -2,6 +2,15 @@
 
 Wares is a free e-commerce React template that recreates the ColorLib "E Shop" design. It provides a storefront layout with navbar, category navigation, hero banners, product sliders, daily deals with countdown, latest products, picked-for-you recommendations, and a dark footer with newsletter signup.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "E Shop" — https://colorlib.com/wp/template/e-shop/
+- **Source slug:** `e-shop`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/e-shop/ — **HTTP 200**, 59,705 B, fetched 2026-10-23 (page `<title>`: "E-SHOP HTML Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/e-shop/css/style.css`, fetched 2026-10-23): brand `#f8694a`, `#ffb656`; dominant neutrals `#dadada`, `#30323a`, `#f6f7f8`; type Hind. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/e-shop-free-ecommerce-website-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/wares` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar with search and cart

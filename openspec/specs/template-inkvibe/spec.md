@@ -1,5 +1,7 @@
 # Template: Inkvibe (Tattoo Studio Landing)
 
+Recreation of ColorLib "Tattooz" (https://colorlib.com/wp/template/tattooz/).
+
 ## Purpose
 
 Inkvibe is a multi-section tattoo studio landing page template in the
@@ -16,6 +18,15 @@ Component Dock branding.
 
 Inkvibe lives in `apps/inkvibe` and uses shared components from `packages/ui`
 (cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Tattooz" — https://colorlib.com/wp/template/tattooz/
+- **Source slug:** `tattooz`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/tattooz/ — **HTTP 200**, 23,118 B, fetched 2026-10-23 (page `<title>`: "TattooZ || Preview"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/tattooz/style.css`, fetched 2026-10-23): brand `#fb9902`; dominant neutrals `#ffffff`, `#0d0f11`, `#131619`; type Montserrat. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/inkvibe` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

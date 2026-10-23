@@ -1,8 +1,19 @@
 # Spec: Constructo — Construction Company Landing Template
 
+Recreation of ColorLib "Topbuilder" (https://colorlib.com/wp/template/topbuilder/).
+
 ## Purpose
 
 Recreate the ColorLib "Topbuilder" construction company landing page as a modern React 19 + Tailwind CSS 4 + TypeScript single-page template named "Constructo". The template provides a full-featured construction company website with hero, features, about, services, team, stats, testimonials, gallery, blog, and footer sections.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Topbuilder" — https://colorlib.com/wp/template/topbuilder/
+- **Source slug:** `topbuilder`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/topbuilder/ — **HTTP 200**, 60,662 B, fetched 2026-10-23 (page `<title>`: "TOPBuilder | Construction Company and General Builders"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/topbuilder/css/style.min.css?v=3.0.0`, fetched 2026-10-23): brand `#f6b60b`, `#dc3545`, `#198754`, `#0d6efd`; dominant neutrals `#fefefe`, `#6c757d`, `#212529`; type Roboto, Oswald. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/topbuilder-construction-company-website-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/constructo` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,5 +1,7 @@
 # Template: Greenfield (Farm & Agriculture Landing)
 
+Recreation of ColorLib "Farmland" (https://colorlib.com/wp/template/farmland/).
+
 ## Purpose
 
 Greenfield is a single-page farm and agriculture website template in the
@@ -7,6 +9,15 @@ free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Farmland" website template design (see TEMPLATES.md), built under
 a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 +
 TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Farmland" — https://colorlib.com/wp/template/farmland/
+- **Source slug:** `farmland`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/farmland/ — **HTTP 200**, 57,375 B, fetched 2026-10-23 (page `<title>`: "Farmland - Free Bootstrap 4 Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/farmland/css/style.css`, fetched 2026-10-23): brand `#5d8c55`, `#ecdc67`, `#007bff`, `#3d5c38`; dominant neutrals `#000000`, `#6c757d`, `#212529`; type Covered By Your Grace, Segoe UI, Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/farmland-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/greenfield` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

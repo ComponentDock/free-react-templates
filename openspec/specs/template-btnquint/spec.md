@@ -1,8 +1,19 @@
 # Spec: BtnQuint (Bootstrap Buttons 05)
 
+Recreation of ColorLib "Bootstrap Buttons V05" (https://colorlib.com/wp/template/bootstrap-buttons-05/).
+
 ## Purpose
 
 A modern React button showcase and playground built with React 19, TypeScript, and Tailwind CSS 4. Recreation of ColorLib **Bootstrap Buttons 05** as **BtnQuint**.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Bootstrap Buttons V05" — https://colorlib.com/wp/template/bootstrap-buttons-05/
+- **Source slug:** `bootstrap-buttons-05`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bb/bootstrap-buttons-05/ — **HTTP 200**, 3,561 B, fetched 2026-10-23 (page `<title>`: "Button #1"). The slug-only path `https://preview.colorlib.com/theme/bootstrap-buttons-05/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bb/bootstrap-buttons-05/css/style.css?v=cbd17a42`, fetched 2026-10-23): brand `#007bff`, `#28a745`, `#17a2b8`, `#ffc107`; dominant neutrals `#212529`, `#6c757d`, `#f8f9fa`; type Roboto, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-05.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/btnquint` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

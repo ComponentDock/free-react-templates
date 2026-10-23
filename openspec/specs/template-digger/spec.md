@@ -2,6 +2,15 @@
 
 Digger is a construction and mining landing page template recreated from the ColorLib Unearth design. It features a gradient top bar, sticky navigation, hero carousel, alternating services blocks, feature cards, about section with stats, team showcase, pricing tiers, FAQ accordion, press entries, testimonials, blog posts, contact form, and a branded footer.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Unearth" — https://colorlib.com/wp/template/unearth/
+- **Source slug:** `unearth`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/unearth/ — **HTTP 200**, 48,838 B, fetched 2026-10-23 (page `<title>`: "Unearth — Website Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/unearth/css/style.css`, fetched 2026-10-23): brand `#ff8b00`, `#7a5e86`, `#f77b2e`, `#a75e67`; dominant neutrals `#f8f9fa`, `#ced4da`, `#e9ecef`; type Oswald, Rubik, Georgia. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/unearth-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/digger` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Top bar with contact info and social links

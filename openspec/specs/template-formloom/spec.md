@@ -1,8 +1,19 @@
 # Spec: Formloom — Student Registration Form Template
 
+Recreation of ColorLib "Colorlib Reg Form V15" (https://colorlib.com/wp/template/colorlib-regform-15/).
+
 ## Purpose
 
 Formloom is a student registration form template recreating the Colorlib Reg Form V15 design (colorlib-regform-15) under a new, original name. The template features a split-layout design with a hero image on the left and a comprehensive student registration form on the right, set against a dark charcoal background.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Colorlib Reg Form V15" — https://colorlib.com/wp/template/colorlib-regform-15/
+- **Source slug:** `colorlib-regform-15`
+- **Preview URL analyzed:** https://colorlib.com/etc/regform/colorlib-regform-15/ — **HTTP 200**, 6,652 B, fetched 2026-10-23 (page `<title>`: "Sign Up Form by Colorlib"). The slug-only path `https://preview.colorlib.com/theme/colorlib-regform-15/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/regform/colorlib-regform-15/css/style.css?v=162d630b`, fetched 2026-10-23): brand `#ff6801`, `#cd5300`; dominant neutrals `#ebebeb`, `#282828`, `#f8f8f8`; type Montserrat, Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-15.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/formloom` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -1,8 +1,19 @@
 # Spec: Litigator — Law Firm Landing Template
 
+Recreation of ColorLib "Justice" (https://colorlib.com/wp/template/justice/).
+
 ## Purpose
 
 Litigator is a free law firm landing page template that recreates the ColorLib "Justice" design under a different name. It provides a dark-themed, professional legal services website with a hero section, practice areas, statistics, client testimonials, expertise cards, a call-to-action, and a footer.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Justice" — https://colorlib.com/wp/template/justice/
+- **Source slug:** `justice`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/justice/ — **HTTP 200**, 30,886 B, fetched 2026-10-23 (page `<title>`: "Justice | Law Firm and Attorneys"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/justice/css/style.min.css?v=3.0.1`, fetched 2026-10-23): brand `#007bff`, `#b49c73`, `#dc3545`, `#198754`; dominant neutrals `#6c757d`, `#f8f9fa`, `#212529`; type Rubik. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/justice-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/litigator` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

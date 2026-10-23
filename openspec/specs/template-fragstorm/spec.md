@@ -2,6 +2,15 @@
 
 Fragstorm is a gaming magazine template that recreates the ColorLib "Amin" design as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. It provides a dark-themed gaming news site with hero articles, review previews, tabbed update news, video guides, and Instagram posts.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Amin" — https://colorlib.com/wp/template/amin/
+- **Source slug:** `amin`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/amin/ — **HTTP 200**, 152,501 B, fetched 2026-10-23 (page `<title>`: "Amin | Template"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/amin/css/style.css`, fetched 2026-10-23): brand `#c20000`, `#e10000`, `#4e0808`, `#a81d1d`; dominant neutrals `#ffffff`, `#c4c4c4`, `#666666`; type Montserrat, Cinzel. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/amin-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/fragstorm` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: TopBar displays weather, date, and social links

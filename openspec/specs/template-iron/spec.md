@@ -1,8 +1,19 @@
 # Spec: Iron
 
+Recreation of ColorLib "Gym" (https://colorlib.com/wp/template/gym/).
+
 ## Purpose
 
 Iron is a free React fitness and gym landing page template. It recreates a gym/fitness design with a hero banner, feature cards, BMI calculator, course listings, schedule table, trainer profiles, pricing plans, partner logos, a CTA section, and a footer. Built with React 19, Tailwind CSS 4, and TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Gym" — https://colorlib.com/wp/template/gym/
+- **Source slug:** `gym`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/gym/ — **HTTP 200**, 31,954 B, fetched 2026-10-23 (page `<title>`: "Gym"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/gym/css/main.css`, fetched 2026-10-23): brand `#f6214b`, `#4cd3e3`, `#38a4ff`, `#f4e700`; dominant neutrals `#f9f9ff`, `#222222`, `#f1f1f1`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/gym-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/iron` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

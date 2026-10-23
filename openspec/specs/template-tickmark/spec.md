@@ -1,5 +1,7 @@
 # Template: Tickmark (Custom Checkbox Showcase)
 
+Recreation of ColorLib "Checkbox V01" (https://colorlib.com/wp/template/checkbox-01/).
+
 ## Purpose
 
 Tickmark is a single-page component showcase template in the free-react-templates
@@ -18,6 +20,15 @@ and accessible patterns.
 
 Tickmark lives in `apps/tickmark` and uses shared components from `packages/ui`
 (cn).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Checkbox V01" — https://colorlib.com/wp/template/checkbox-01/
+- **Source slug:** `checkbox-01`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/checkbox-01/ — **HTTP 200**, 1,742 B, fetched 2026-10-23 (page `<title>`: "Checkbox 01"). The slug-only path `https://preview.colorlib.com/theme/checkbox-01/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/checkbox-01/css/style.css?v=0596307b`, fetched 2026-10-23): brand `#0075f6`, `#dc3545`, `#17a2b8`, `#ffc107`; dominant neutrals `#212529`, `#fafafa`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-01.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/tickmark` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

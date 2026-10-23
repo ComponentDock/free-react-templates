@@ -1,10 +1,21 @@
 # Template: Alleluia (Church Website)
 
+Recreation of ColorLib "Mimosan" (https://colorlib.com/wp/template/mimosan/).
+
 ## Purpose
 
 Alleluia is a single-page church website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Mimosan" design (see TEMPLATES.md, Church category), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a modern church community page with a crimson red (#b10707) and white identity: a fixed top bar with social links, a white header with "Alleluia" logo in serif font and nav links (Sermons, Events, Contact), a fullscreen hero with background image and "Our lives in praising God" headline with a CTA button, a two-column About section with image and description, an Events section with date badges and event cards, a three-column Sermons grid with images and preacher info, a nine-image Gallery grid, and a three-column dark footer with contact info, quick links, newsletter subscribe form, and a "Component Dock" attribution link. Alleluia recreates that structure section-for-section with matching layout, colors, typography, and content types (no ColorLib assets copied).
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Mimosan" — https://colorlib.com/wp/template/mimosan/
+- **Source slug:** `mimosan`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/mimosan/ — **HTTP 200**, 32,500 B, fetched 2026-10-23 (page `<title>`: "Mimosan"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/mimosan/styles/main_styles.css`, fetched 2026-10-23): brand `#b10707`, `#eb4141`, `#ffa07f`, `#ff6347`; dominant neutrals `#ffffff`, `#181818`, `#7c7c7c`; type Old Standard TT, Assistant, Open Sans. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/mimosan-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/alleluia` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

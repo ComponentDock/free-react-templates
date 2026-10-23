@@ -5,6 +5,15 @@ Recreate the ColorLib "Five Star" art and crafting website template as a React
 features a fullscreen hero banner, experience showcase, testimonial carousel,
 services grid, video section, contact form, and a newsletter footer.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Five Star" — https://colorlib.com/wp/template/five-star/
+- **Source slug:** `five-star`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/five-star/ — **HTTP 200**, 19,836 B, fetched 2026-10-23 (page `<title>`: "Five Star"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/five-star/css/main.css`, fetched 2026-10-23): brand `#f5204b`, `#4cd3e3`, `#38a4ff`, `#f4e700`; dominant neutrals `#f9f9ff`, `#222222`, `#777777`; type Poppins. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/five-star-art-crafting-website-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/brushwork` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar navigation

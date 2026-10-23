@@ -2,6 +2,15 @@
 
 Splitform is a dual-panel sign-in/sign-up modal template recreating ColorLib Modal 02. It provides a centered modal dialog split into two halves: a sign-in form on the left and a sign-up form on the right, separated by a vertical divider. The design uses Poppins font, Bootstrap-inspired blue primary color, and social login buttons (Facebook, Twitter).
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Modal V02" — https://colorlib.com/wp/template/modal-02/
+- **Source slug:** `modal-02`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/modal-02/ — **HTTP 200**, 6,032 B, fetched 2026-10-23 (page `<title>`: "Modal 02"). The slug-only path `https://preview.colorlib.com/theme/modal-02/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/modal-02/css/style.css?v=350f0ba9`, fetched 2026-10-23): brand `#f9e090`, `#c859ff`, `#ffab8c`, `#007bff`; dominant neutrals `#6c757d`, `#212529`, `#495057`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-02.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/splitform` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

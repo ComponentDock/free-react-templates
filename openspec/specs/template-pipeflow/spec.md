@@ -16,6 +16,15 @@ and footer.
 - **Button shape:** pill/radius 50px, solid brand color, transparent on hover with white border
 - **Section spacing:** 120px vertical padding (.section-gap)
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Plumber" — https://colorlib.com/wp/template/plumber/
+- **Source slug:** `plumber`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/plumber/ — **HTTP 200**, 26,292 B, fetched 2026-10-23 (page `<title>`: "Plumber"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/plumber/css/hexagons.min.css`, fetched 2026-10-23): brand `#3b5998`, `#55acee`, `#db514f`, `#cc181e`; dominant neutrals `#373a3c`. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/plumber-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/pipeflow` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Navbar with logo and navigation links

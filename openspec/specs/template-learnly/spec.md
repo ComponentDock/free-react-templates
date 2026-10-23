@@ -1,5 +1,7 @@
 # Template: Learnly (Education / University)
 
+Recreation of ColorLib "Academics" (https://colorlib.com/wp/template/academics/).
+
 ## Purpose
 
 Learnly is a single-page education/university landing template in the
@@ -7,6 +9,15 @@ free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Academics" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
 CSS 4 + TypeScript.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Academics" — https://colorlib.com/wp/template/academics/
+- **Source slug:** `academics`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/academics/ — **HTTP 200**, 31,754 B, fetched 2026-10-23 (page `<title>`: "Academics — Website by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/academics/css/style.css`, fetched 2026-10-23): brand `#51be78`, `#183661`, `#8bc34a`, `#7697c6`; dominant neutrals `#edf0f5`, `#25262a`, `#f4f5f9`; type Muli. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/academics-free-template.jpeg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/learnly` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

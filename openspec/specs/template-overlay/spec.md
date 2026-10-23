@@ -2,6 +2,15 @@
 
 Overlay is a sign-in popup template recreating ColorLib Modal 01. It provides a centered modal dialog with a login form (username, password, remember me, forgot password) triggered by a landing page button. The design uses Poppins font, Bootstrap-inspired blue primary color, and clean white card styling.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Modal V01" — https://colorlib.com/wp/template/modal-01/
+- **Source slug:** `modal-01`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/modal-01/ — **HTTP 200**, 4,298 B, fetched 2026-10-23 (page `<title>`: "Modal 01"). The slug-only path `https://preview.colorlib.com/theme/modal-01/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/modal-01/css/style.css?v=58a74b87`, fetched 2026-10-23): brand `#fb8691`, `#007bff`, `#0062cc`, `#0056b3`; dominant neutrals `#6c757d`, `#212529`, `#495057`; type Poppins, Segoe UI. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-01.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/overlay` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

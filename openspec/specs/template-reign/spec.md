@@ -1,8 +1,19 @@
 # Reign — Creative Portfolio Template
 
+Recreation of ColorLib "Monarchy" (https://colorlib.com/wp/template/monarchy/).
+
 ## Purpose
 
 Recreate the ColorLib Monarchy template as a React 19 + Tailwind CSS 4 + TypeScript single-page creative portfolio/agency template. Named "Reign" to evoke the royal/monarchy theme without matching the source name.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Monarchy" — https://colorlib.com/wp/template/monarchy/
+- **Source slug:** `monarchy`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/monarchy/ — **HTTP 200**, 21,002 B, fetched 2026-10-23 (page `<title>`: "Monarchy — Website Template by Colorlib"). The slug-only path is the demo itself — no alias was needed.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/monarchy/css/style.css`, fetched 2026-10-23): brand `#f26200`; dominant neutrals `#f8f9fa`, `#ced4da`, `#757575`; type Jost. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/monarchy-free-template.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/reign` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

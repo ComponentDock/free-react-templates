@@ -1,8 +1,19 @@
 # Entrivy — Login Form 07
 
+Recreation of ColorLib "Login Form V07" (https://colorlib.com/wp/template/login-form-07/).
+
 ## Purpose
 
 Recreate the ColorLib Login Form 07 template as a React 19 + Tailwind CSS 4 + TypeScript application. The template features a split-screen login form with a decorative illustration on the left and a styled login form with social login buttons on the right.
+
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Login Form V07" — https://colorlib.com/wp/template/login-form-07/
+- **Source slug:** `login-form-07`
+- **Preview URL analyzed:** https://preview.colorlib.com/theme/bootstrap/login-form-07/ — **HTTP 200**, 4,935 B, fetched 2026-10-23 (page `<title>`: "Login #7"). The slug-only path `https://preview.colorlib.com/theme/login-form-07/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://preview.colorlib.com/theme/bootstrap/login-form-07/css/style.css?v=1a56fd8a`, fetched 2026-10-23): brand `#6c63ff`, `#3c30ff`, `#2417ff`, `#483dff`; dominant neutrals `#6c757d`, `#212529`, `#495057`; type Roboto. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-07.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/entrivy` had no recorded reference (docs/replication.md requires one).
 
 ## Requirements
 

@@ -2,6 +2,15 @@
 
 Inkwell is a minimalist two-column contact form template designed for marketing agencies and web service providers. It provides a clean, professional contact page with separate first/last name fields, email, and message inputs alongside an introductory text column.
 
+## Design reference (replication findings)
+
+- **Source:** ColorLib "Contact Form v11" — https://colorlib.com/wp/template/contact-form-v11/
+- **Source slug:** `contact-form-v11`
+- **Preview URL analyzed:** https://colorlib.com/etc/cf/ContactFrom_v11/index.html — **HTTP 200**, 1,999 B, fetched 2026-10-23 (page `<title>`: "Contact V11"). The slug-only path `https://preview.colorlib.com/theme/contact-form-v11/` answers **404**; the live demo is the catalog alias above, recorded so the next prep does not repeat the probe.
+- **Design tokens read from the live stylesheet** (`https://colorlib.com/etc/cf/ContactFrom_v11/css/style.css?v=f3a489e6`, fetched 2026-10-23): brand `#2f91ff`, `#00c513`, `#c80000`, `#df2351`; dominant neutrals `#adadad`, `#212529`, `#333333`; type Raleway-SemiBold, Raleway-Black, Raleway-Bold. Frequencies are the sheet's own literals, not a design guess.
+- **Screenshot (visual reference):** https://colorlib.com/wp/wp-content/uploads/sites/2/ContactFrom_v11.jpg
+- **Provenance:** re-recorded 2026-10-23 by the SPEC-REFERENCE audit — this spec carried no ColorLib source URL before, so the shipped recreation in `apps/inkwell` had no recorded reference (docs/replication.md requires one).
+
 ## Requirements
 
 ### Requirement: Two-column layout
