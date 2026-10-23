@@ -20,10 +20,14 @@ describe('Footer', () => {
     expect(screen.getByText('info@yourdomain.com')).toBeInTheDocument()
   })
 
-  it('renders the copyright bar with the current year', () => {
+  it('renders the copyright bar with the current year and Component Dock link', () => {
     render(<Footer />)
     expect(
-      screen.getByText(new RegExp(`Copyright © ${new Date().getFullYear()}.*Component Dock`)),
+      screen.getByText(new RegExp(`Copyright © ${new Date().getFullYear()}`)),
     ).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Component Dock' })).toHaveAttribute(
+      'href',
+      'https://www.componentdock.com/',
+    )
   })
 })

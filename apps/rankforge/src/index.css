@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* RankForge brand palette — from the ColorLib "Seos" preview
-     (https://preview.colorlib.com/theme/seos/ + css/style.css):
+  /* RankForge brand palette — from the reference stylesheet:
      an SEO agency theme with a dark navy blue #2b4b80 primary,
      pink #ff5c97 accent, indigo #4043bc secondary, gradient
      #ff5c98 → #7b40c0, and light backgrounds #f9f9ff / #f0e9ff. */
@@ -46,7 +45,7 @@
   --color-footer-bg: #1b1b2f;
 
   /* Poppins (headings + body) via Google Fonts <link> in
-     index.html — matching the ColorLib font pairing. */
+     index.html — matching the reference font pairing. */
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }

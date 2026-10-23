@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — from the ColorLib Seo design (main.css):
+  /* Brand palette — from the reference design (main.css):
      primary red #f54349, body #777777, headings #222222,
      section bg #f9f9ff. */
   --color-brand: #f54349;

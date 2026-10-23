@@ -6,7 +6,7 @@ import { teamMembers } from '../data'
 describe('TeamSection', () => {
   it('renders the heading, blurb and team cards with hover-overlay names and roles', () => {
     render(<TeamSection />)
-    expect(screen.getByRole('heading', { name: /About Blogger Team/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /About Quill Team/i })).toBeInTheDocument()
     expect(screen.getByText(/The people behind the stories/i)).toBeInTheDocument()
 
     const cards = screen.getAllByRole('article')

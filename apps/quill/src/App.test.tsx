@@ -18,7 +18,7 @@ describe('App', () => {
     expect(
       within(main).getByRole('heading', { name: /Fashion News This Week/i }),
     ).toBeInTheDocument()
-    expect(within(main).getByRole('heading', { name: /About Blogger Team/i })).toBeInTheDocument()
+    expect(within(main).getByRole('heading', { name: /About Quill Team/i })).toBeInTheDocument()
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()

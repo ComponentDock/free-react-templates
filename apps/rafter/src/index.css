@@ -5,9 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Rafter brand palette — recreated from the ColorLib "Woodrox"
-     design (css/style.css): primary yellow #faba00 (50 refs),
-     dark ink #222222 (44 refs). */
+  /* Rafter brand palette — measured from the reference design (css/style.css):
+     primary yellow #faba00 (50 refs), dark ink #222222 (44 refs). */
   --color-brand: #faba00;
   --color-brand-dark: #d89f00;
 

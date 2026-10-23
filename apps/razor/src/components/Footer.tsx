@@ -86,8 +86,13 @@ export function Footer() {
         </div>
       </div>
       <div className="mt-14 border-t border-white/10 py-6 text-center text-sm text-white/60">
-        Copyright © {new Date().getFullYear()} All rights reserved | This template is made with ♥ by
-        Component Dock
+        Copyright © {new Date().getFullYear()} All rights reserved | This template is made with ♥ by{' '}
+        <a
+          className="font-semibold text-brand underline-offset-4 hover:underline"
+          href="https://www.componentdock.com/"
+        >
+          Component Dock
+        </a>
       </div>
     </footer>
   )

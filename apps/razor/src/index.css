@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Razor brand palette — recreated from the ColorLib "Barbero" design
+  /* Razor brand palette — measured from the reference design
      (css/style.css): gold #bf925b accents on near-black #090601
      backgrounds, mixed with light (bg-light) content sections. */
   --color-brand: #bf925b;
