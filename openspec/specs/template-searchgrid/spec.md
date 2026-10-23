@@ -4,20 +4,46 @@
 
 Searchgrid is a minimal search form bar template in the free-react-templates monorepo. It is an original React recreation of the ColorLib "Search Form Bar 12" free template (source: https://colorlib.com/wp/template/search-form-bar-12/), built under a DIFFERENT name (**Searchgrid**), with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-The template consists of a single horizontal navigation bar with three elements: brand text on the left, navigation links in the center, and a rounded search input with magnifying glass icon on the far right. The design is clean and minimal — white background, thin gray bottom border, Inter font family. The page body below the navbar is empty white space.
+The template consists of a single horizontal navigation bar with three elements: brand text on the left, navigation links in the center, and a rounded search input with magnifying glass icon on the far right. The design is clean and minimal — white background, thin gray bottom border, Roboto font family. The page body below the navbar is empty white space.
 
-**Design Tokens:**
+## Design tokens (reference re-check, 2026-10-23)
 
-| Token         | Value                        | Usage                      |
-| ------------- | ---------------------------- | -------------------------- |
-| Brand blue    | `#2874f0`                    | Brand logo text color      |
-| Background    | `#ffffff`                    | Navbar background          |
-| Nav text      | `#333333`                    | Navigation link text       |
-| Border light  | `#e8e8e8`                    | Navbar bottom border       |
-| Search border | `#e0e0e0`                    | Search input border        |
-| Placeholder   | `#aaaaaa`                    | Search placeholder text    |
-| Search radius | `20px`                       | Search input full rounding |
-| Font          | Inter, system-ui, sans-serif | Entire navbar              |
+- **Source**: ColorLib **Search Form Bar 12** — https://colorlib.com/wp/template/search-form-bar-12/
+- **Preview**: the slug-only path is a 404; the live demo is the Bootstrap-form
+  family path **`https://preview.colorlib.com/theme/bootstrap/search-form-bar-12/`**
+  — HTTP 200, title `Search #2` (the served title is the demo label, not the slug).
+- **Stylesheet measured**: `css/style.css?v=62bfd2ad` — **11,206 B** (Bootstrap 4
+  residue + the form layer; self-hosted Roboto 400/500/700).
+- **Measured how**: hex-literal census of that sheet, then the winning rule per
+  selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Page / navbar ground | `#fff` | 4 | `body { background-color:#fff }`, `.custom-navbar`, `.cl-form-control` |
+| Navbar rule | `#dae0e5` | 1 | `.custom-navbar { border-bottom: 1px solid #dae0e5 }` **plus** `box-shadow: 0 1px 5px rgba(0,0,0,.1)` — the "thin grey line" is border + shadow together |
+| Body ink | `#212529` | 1 | `body { color:#212529 }` — inherited by the nav links (they set **no** colour of their own) |
+| Field ink | `#495057` | 2 | `.cl-form-control` value text |
+| Field border | `#ced4da` | 1 | `.cl-form-control { border: 1px solid #ced4da }` |
+| Field focus border | `#000` | — | `.custom-navbar … .cl-form-control:focus { border-color:#000; box-shadow:none }` — the theme overrides Bootstrap's `#80bdff` / `rgba(0,123,255,.25)` ring on *this* control |
+| Placeholder | `#ccc` | 4 | `::-webkit-input-placeholder` family |
+| Framework blue | `#007bff` | 1 | `a` from the Bootstrap layer only — the sheet carries **no** `#2874f0` |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", …` | `body` rule |
+| Nav links | 1 rem, `padding: 25px 0`, `margin-left: 20px` | `.custom-navbar ul li a` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Search field | `.cl-form-control` base `1px solid #ced4da` + `0.25rem` radius, then the nav override: **`border-radius: 30px`**, `padding-left: 35px`, fixed width **120 px** growing to **200 px** on `:focus`/`:active`; the magnifier sits at `left: 15px`, vertically centred |
+| Navbar | single white row, `border-bottom: 1px solid #dae0e5`, 1 px shadow; `body { height: 200vh }` so the page below the bar is empty scroll space |
+| Icons | Bootstrap-icon glyphs inside the field; no separate icon sheet |
 
 ## Requirements
 

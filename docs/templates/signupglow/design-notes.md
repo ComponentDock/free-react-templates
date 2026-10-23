@@ -71,3 +71,21 @@ The template SHALL display a footer with a link to Component Dock.
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/signupglow/public/CNAME` = `signupglow.free.componentdock.com`
   and the package `homepage` = `https://signupglow.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/bootstrap/signup-form-12/`
+(HTTP 200, title `Sign Up 01`) and its single sheet `css/style.css?v=4e2c0ed1`
+(17,420 B).
+
+| Token | Reference | App (`apps/signupglow`) |
+| ----- | --------- | ----------------------- |
+| Brand gold | `#d5c455` (8: `a`, primary button fill + border, focus border, social hover, badge dot) | `--color-golden-400: #c9b458` (and `#C9B458` in the old spec) ✗ — the screenshot-sampled value is a compression artefact |
+| Page ground | `#f8f9fd` (`body`) | `--color-page-bg: #f5f5f5` |
+| Card | `#fff` | `--color-surface: #ffffff` ✓ |
+| Headings | `#000`, weight **400** | `--color-text: #333333` |
+| Copy | `gray` (`#808080`), 16 px / 1.8 | `--color-muted: #999999` |
+| Field border | `#ced4da` (Bootstrap), focus → gold + no shadow | `--color-border: #dddddd` |
+| Not in the sheet | `#3b5998`, `#1da1f2`, `#8bc34a` (0 occurrences) | `--color-fb-blue`, `--color-tw-blue`, `--color-badge-green`, `--color-avatar-bg` — all app-only |
+| Button | `border-radius: 40px` pill, gold fill → transparent+gold label on hover | pill present |
+| Face | Roboto 400/500/700 self-hosted | `--font-roboto` ✓ |

@@ -9,15 +9,49 @@ It is an original React recreation of the ColorLib free "Civic" template
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original:
+## Design tokens (reference re-check, 2026-10-23)
 
-- Font: Josefin Sans (Google Fonts via `<link>`)
-- Primary dark: `#40424a` (headings, text, button borders)
-- Accent red: `#ff0f3c` (hover states)
-- Light background: `#f2f7f8` (alternate sections)
-- Paragraph text: `#808181`
-- Border/gray: `#cacaca`
-- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
+- **Source**: ColorLib **Civic** — https://colorlib.com/wp/template/civic/
+- **Preview**: `https://preview.colorlib.com/theme/civic/` — HTTP 200, title
+  `Civic - CV Resume`; the served `index.html` carries `<body>` with **no**
+  `home-*-style` class, i.e. the default (home-one) skin.
+- **Stylesheets measured**: theme `css/style.css` — **26,637 B**; `css/bootstrap.min.css`
+  19,577 B; `css/owl.carousel.css` 3,958 B; `css/magnific-popup.css` 2,985 B;
+  icon sheets (`font-awesome`, `flaticon`) paint no colours.
+- **Measured how**: hex-literal census per sheet, then the winning rule per
+  selector, **plus** the variant check below.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Slate ink | `#40424a` | 22 | `h2`–`h4` (weight 600), `.fact-box` fill, `.footer-section` and `.info-section` fill, `.bar-inner` progress fill, `.resume-list` 2 px spine + dots, `.site-btn` 2 px border and label, `.site-logo a` |
+| Pale band | `#f2f7f8` | 8 | `.header-section` (padding 50 px 40 px), `.hero-section`, `.home-three-style .main-left-area` |
+| Dot grey | `#cacaca` | 9 | resume-list dot fill, carousel dot fill |
+| Paragraph | `#808181` | 4 | body copy |
+| Line grey | `#cacaca` / `#f9f9f9` | 9 / 3 | list spine, card washes |
+| **Variant-only** crimson | `#ff0f3c` | 11 | **only** inside `.home-four-style` rules (heading after-line, quote mark, resume `h2`) |
+| **Variant-only** indigo | `#481340` | 7 | only as the start stop of `.home-four-style .main-left-area`'s `linear-gradient(#481340 → #ff0f3c)` |
+| **Variant-only** azure | `#009fff` | 6 | only `.home-two-style` / `.home-six-style` backgrounds and dots |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `'Josefin Sans', sans-serif` | `html, body` rule; also re-declared on `h2,h3,h4` (600) |
+| Hero name | 90 px, weight 300–400, slate | `.hero-info h2` |
+| Buttons | uppercase **12 px**, `min-width: 213px`, `padding: 20px 10px 15px` | `.site-btn` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | `.site-btn` **white fill**, `2px solid #40424a`, slate label, hover keeps the slate label ("Download CV" / "Discover Me" in the reference screenshot) |
+| Radius | `150px` circle on `.circle-progress .progress-info` (127×127 px), `50px` on dots, `12px` on language chips; cards/sections square |
+| Bands | `#f2f7f8` header band (wordmark left, two outlined buttons right) → `#f2f7f8` hero (huge slate name, portrait right) → white General Info list → `#40424a` fact boxes → `#40424a` footer strip (`padding: 20px 0`) |
+| Accent rule | **The served page is monochrome slate.** The crimson/indigo/azure palettes exist only behind `home-two/four/six-style` variant classes that this `index.html` never applies — a spec must not present `#ff0f3c` as the page's accent. |
+
+Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Credentia lives in `apps/credentia` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).

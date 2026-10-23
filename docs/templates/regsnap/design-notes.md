@@ -65,3 +65,24 @@ The footer SHALL display "More templates at Component Dock" with a link to https
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/regsnap/public/CNAME` = `regsnap.free.componentdock.com`
   and the package `homepage` = `https://regsnap.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from the live demo `https://colorlib.com/etc/regform/colorlib-regform-2/`
+(HTTP 200, 5,036 B, title `Au Register Forms by Colorlib`) and its theme sheet
+`css/style.css?v=9bccf1c0` (12,022 B). The `/theme/colorlib-regform-2/` path
+404s — this family lives under `/etc/regform/`, which is why the earlier note
+said "preview unreachable".
+
+| Token | Reference | App (`apps/regsnap`) |
+| ----- | --------- | -------------------- |
+| Page red | `#fa4251` (×1, `.bg-red`) | `--color-bg-page: #fa4251` ✓ |
+| Action green | `#57b846` (`.btn--green`) | `--color-brand: #57b846` ✓ |
+| Green hover | `#4dae3c` | `--color-brand-dark: #4dae3c` ✓ |
+| Input ink | `#808080` (5) | `--color-text-placeholder: #808080` ✓ (the app also uses `#666` for values — reference placeholder is `#aaa`/`#888`) |
+| Lines | `#e5e5e5`, `#ccc` | `--color-border-input: #e5e5e5`, `--color-icon-muted: #cccccc` ✓ |
+| Face | Roboto 400/500/700 self-hosted | `'Roboto', 'Arial', 'Helvetica Neue', sans-serif` ✓ |
+| Radii | card `10px`, controls `3px` | matches |
+
+Nothing to change: this is the one template in the batch whose palette was
+measured correctly from the start.

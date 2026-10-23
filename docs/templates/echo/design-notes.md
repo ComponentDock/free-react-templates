@@ -92,3 +92,23 @@ The system SHALL render a dark footer with social links, contact email, and a li
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/echo/public/CNAME` = `echo.free.componentdock.com`
   and the package `homepage` = `https://echo.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/beckham/` (HTTP 200, title
+`Beckham Muff | UI/UX Designer and Front-End Developer`) and its theme sheet
+`css/style.min.css?v=3.0.1` (170,789 B, Bootstrap 5 inlined, self-hosted Poppins
+300/400/700). The demo is a **3.0.1 rebuild**.
+
+| Token | Reference | App (`apps/echo`) |
+| ----- | --------- | ----------------- |
+| Design accent | `#2f89fc` (27: `a`, `.text-primary`, nav active label+underline, owl dot, progress bar) | `--color-brand` is **mint** — see next row |
+| Bootstrap `primary` mint | `#79efb4` (21) — only `--bs-primary` consumers: form-control focus (`#bcf7da` border, `#79efb440` ring), `.form-check-input:checked`, `.form-range` thumb, `.btn-outline-primary` | `--color-brand: #79efb4` ✗ — this is the framework's primary variable, not the design accent; the reference's visible accent is the blue |
+| Page ground | `#121212` (`body`) | `--color-sidebar: #1a1a1a`, `--color-surface-dark: #222222` — both lighter than the reference ground |
+| Copy | `#8c8c8c`, 18 px / 1.8 | `--color-mist: #6c757d` |
+| Ink | `#fff` headings | `--color-ink: #212529` (Bootstrap body ink, not used by this theme) |
+| Face | **Poppins** 300/400/700 self-hosted | `--font-sans: 'Montserrat', …` ✗ |
+| Radius | `4px` kit, `50%` dots | — |
+
+Rebuild drift: the pre-3.0 screenshot is the same dark page with a blue link
+accent — no mint is visible there either.

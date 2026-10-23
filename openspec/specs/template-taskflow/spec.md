@@ -7,13 +7,47 @@ It is a React recreation of the ColorLib "Work" template
 (preview: https://preview.colorlib.com/theme/work/), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original:
+## Design tokens (reference re-check, 2026-10-23)
 
-- Brand orange-red `#F75940` (links, buttons, selection highlight)
-- Typeface: Quicksand (Google Fonts via `<link>`)
-- Fixed left sidebar with black logo, navigation, and social footer
-- Hero slider with dark overlay and centered text
-- Accordion in About section, 2-column service cards, portfolio grid, blog cards
+- **Source**: ColorLib **Work** — https://colorlib.com/wp/template/work/
+- **Preview**: `https://preview.colorlib.com/theme/work/` — HTTP 200, title
+  `Work: portfolio of designer Louie Jie`. The demo is a **3.0.0 rebuild**
+  (`?v=3.0.0` on every asset, Bootstrap 5 inlined, `.avif` hero images); the
+  TEMPLATES.md screenshot is the pre-3.0 release of the same design.
+- **Stylesheets measured**: `css/style.min.css?v=3.0.0` — **106,242 B**
+  (theme + inlined Bootstrap 5 + one self-hosted Quicksand 400 `@font-face`);
+  `vendor/swiper/14.3.0/swiper-bundle.min.css` 14,615 B;
+  `vendor/fontawesome/7.3.1/…subset.css` 1,704 B (icons, no colours).
+- **Measured how**: hex-literal census per sheet, then the winning rule per
+  selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand terracotta | `#c04531` | 17 | `a` (base + hover/active/focus), `.btn-primary` fill and **2 px** border, `.btn-primary.btn-outline` label + border, `.pagination li.active` fill, `.colorlib-social li a:hover`, `.KW_progressBar` |
+| Brand hover | `#ac3e2c` | — | `--bs-btn-hover-bg` / `--bs-btn-hover-border-color` on `.btn-primary` |
+| Ink | `#000` | 7 background / 49 text | dark hero panels, uppercase nav labels |
+| Paper | `#fff` | 70 | sidebar, content card, page ground |
+| Soft paper | `#fafafa` | 2 | section washes |
+| Bootstrap variables | `#0d6efd` 20 / `#6c757d` 18 / `#dc3545` 16 / `#198754` 16 / `#ffc107` 14 | — | framework layer only — **not** a token set |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `Quicksand` (one self-hosted 400 woff2, `fonts/quicksand/quicksand-latin-400-normal.woff2`), `sans-serif` fallback | 15 `font-family` declarations |
+| Nav labels | 11–12 px, uppercase, `letter-spacing: 2–3px`, `#000` | sidebar nav |
+| Hero card heading | 44 px, weight 400, `#000`, sentence case | `.headline`-style card in the screenshot |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | `.btn-primary` fill `#c04531` + white label + **`2px solid #c04531`**; `.btn-primary.btn-outline` transparent + `#c04531` label/border, hover fills; radius **4px** |
+| Radius | `4px` ×13 (buttons, inputs, cards), `1rem` ×4 (large panels), square hero card corners are 0 |
+| Layout (from the screenshot) | **fixed white left sidebar** — black square logotype, uppercase letterspaced nav (Home/Work/About/Services/Blog/Contact), social row, small copyright line — beside a full-bleed photo hero with a white content card overlapping its lower-left corner and a thin outlined "LEARN MORE →" button |
+| Bands | sidebar + hero photo → "Welcome & introduce" split (image left, copy right) → services cards → portfolio grid → blog → contact → footer |
 
 TaskFlow lives in `apps/taskflow` and uses shared components from `packages/ui`
 (Button, cn).

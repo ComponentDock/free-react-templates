@@ -4,18 +4,52 @@
 
 A SEO Agency template with hero, what we do, we create steps, generating customers, pricing and portfolio sections. RankForge is a single-page SEO agency landing template — a React recreation of the ColorLib free "Seos" template (preview: https://preview.colorlib.com/theme/seos/ — SEO agency landing), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original (see docs/replication.md):
+## Design tokens (reference re-check, 2026-10-23)
 
-- Primary (headings): `#2b4b80` (dark navy blue)
-- Accent/buttons: `#ff5c97` (pink)
-- Button hover: `#ec4683`
-- Secondary: `#4043bc` (indigo/purple)
-- Gradient CTA: `linear-gradient(0deg, #ff5c98, #7b40c0)`
-- Body text: `#707b8e`
-- Muted text: `#999999`
-- Light section backgrounds: `#f9f9ff`, `#f0e9ff`
-- Footer bg: `#1b1b2f`
-- Typeface: Poppins (Google Fonts via `<link>`)
+- **Source**: ColorLib **Seos** — https://colorlib.com/wp/template/seos/
+- **Preview**: `https://preview.colorlib.com/theme/seos/` — HTTP 200, title
+  `SEO HTML-5 Template`.
+- **Stylesheets measured**: theme `assets/css/style.css` — **67,171 B**;
+  `assets/css/bootstrap.min.css` 30,332 B (vendored separately, not inlined);
+  `slicknav.css` 2,506 B; `nice-select.css` 3,881 B; `magnific-popup.css` 4,213 B;
+  icon sheets (`flaticon`, `themify-icons`, `fontawesome-all`) paint no colours.
+- **Measured how**: hex-literal census per sheet, then the winning rule per
+  selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Action pink | `#ff5c97` | 29 | `.btn` fill, `.boxed-btn` label + `1px` border (hover flips to a `#ff5c97` fill), `.what-we-do .do-icon`, `#scrollUp`, preloader arc, footer social hover, section-title rules |
+| Heading navy | `#2b4b80` | 10 | `h1`–`h6` (weight 500), `.slider-area h1` 65 px / 700, `.section-tittle h2` 50 px / 700, `.we-create-cap h3` |
+| Step violet | `#7b40c0` | 15 | `.single-do.active` / `:hover` `.do-btn` label + icon chip, `.btn-ans` label — the **active-step** colour |
+| Step hover magenta | `#ec4683` | — | `.btn-ans::before`, `.header-btn::before` |
+| Header button | `#4043bc` | 2 | `.header-btn` background (the nav's quote button) and the dropdown's `border-top` |
+| Body copy | `#707b8e` | 2 | `p` (Poppins 16 px / 30 px line-height) and testimonial founder text |
+| Mist band | `#f9f9ff` | 27 | alternating section band + `.genric-btn.default-border:hover` |
+| Lavender band | `#f0e9ff` | 12 | second alternating band |
+| Secondary navy | `#415094` | 7 | kit button label / borders |
+| Muted | `#999999` | 10 | secondary copy |
+| Cyan | `#4cd3e3` | 7 | accent chips/icons |
+| Emphasis ink | `#222` | 21 | `b,sup,sub,u,del` and `.genric-btn.primary` fill — **not** a footer |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `"Poppins", sans-serif` — the sheet `@import`s `fonts.googleapis.com/css?family=Poppins:100i,200,300,300i,400,500,600,700,800,900` | first line of `style.css` |
+| Paragraphs | 16 px / 30 px line-height, `#707b8e` | `p` rule |
+| Section title | 50 px / weight 700 / `#2b4b80`, with a 45 px navy 2 px rule before the kicker | `.section-tittle h2`, `.section-tittle span::before` |
+| Buttons | 14 px, `letter-spacing: 3px`, capitalize | `.boxed-btn` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | `.boxed-btn` white fill + `#ff5c97` label + `1px solid #ff5c97` + `padding: 18px 44px`, hover fills pink with a white label; `.btn` pink fill; `.header-btn` `#4043bc` fill, `min-width: 120px` |
+| Radius | `50%` ×10 (dots, round buttons), `3px` ×7 on kit controls, `8px` ×6 on cards |
+| CTA | `.haveAproject::before` `linear-gradient(0deg, #ff5c98 0%, #7b40c0 100%)` — a gradient, so a hex census scores only its two stops |
+| Bands | white hero with photo right → `#f9f9ff` what-we-do → white 3-step create band → `#f0e9ff` customers → white pricing → portfolio → gradient CTA → footer (no theme `background` rule on the footer at all) |
 
 Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons.
 

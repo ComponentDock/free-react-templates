@@ -4,15 +4,44 @@
 
 A Personal vCard & Resume template with hero, about, skills, services, portfolio and cool facts sections. Idcraft is a single-page personal vCard / resume template — it is an original React recreation of the ColorLib free "Vcard" template (preview: https://preview.colorlib.com/theme/vcard/index-onepage.html), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original (see docs/replication.md):
+## Design tokens (reference re-check, 2026-10-23)
 
-- Brand amber `#ffb016` (buttons, section lines, active states, name)
-- Heading color `#252525`, body text `#828282`
-- Light background `#f3f5f8`, dark overlay `rgba(2,3,28,0.9)`
-- Typeface: Poppins (Google Fonts via `<link>`)
-- Solid amber buttons with no border-radius, bold, white text
-- Hero: full-height background image with dark overlay, large amber name
-- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
+- **Source**: ColorLib **Vcard** — https://colorlib.com/wp/template/vcard/
+- **Preview**: `https://preview.colorlib.com/theme/vcard/` — HTTP 200, title
+  `Vcard - Resume CV & Vcard Template` (the one-page variant this template
+  recreates, `index-onepage.html`, is also HTTP 200 beside it).
+- **Stylesheet measured**: `style.css` — **45,443 B**, the only sheet (no
+  Bootstrap; fonts come from the page's `<link>`).
+- **Measured how**: hex-literal census of that sheet (count = occurrences), then
+  the winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand amber | `#ffb016` | 34 | `.section-heading .line` (6×30 px rule), `#preloader`, `#scrollUp`, active/`hover` nav item + its underline, hero name `h2` (92 px), `.services-area` band fill, active portfolio-filter chip (`9 px` bar), portfolio zoom icon |
+| Heading ink | `#252525` | 18 | `h1`–`h6` |
+| Body copy | `#828282` | 11 | paragraphs, meta rows |
+| Light band | `#f3f5f8` | 6 | alternating section wash |
+| White | `#fff` / `#ffffff` | 18 / 5 | cards, button labels |
+| Overlay | `rgba(2, 3, 28, 0.9)` | 1 | hero photo scrim (exactly the value the app ships) |
+| Cold grey | `#c7d4dc` | 2 | skill-bar track |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `Poppins, sans-serif` | single `font-family` declaration on `body` |
+| Hero name | 92 px, weight **600**, `#ffb016`, `line-height: 1.1`, `margin-left: -5px` | `.hero-area .hero-content h2` |
+| Section heading | 30 px, weight 600, `#252525`, with the amber 6×30 px rule above | `.section-heading` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | `.vcard-btn` `min-width: 185px`, height **54 px**, **`border-radius: 0`**, no border, white label, `padding: 0 30px` |
+| Radius | `50%` ×4 (skill dots / avatars), `5px` ×2 (small chips); everything else square |
+| Bands | full-bleed hero photo (overlay `rgba(2,3,28,.9)`) with amber name → white about/skills → **amber `#ffb016` services band** → white portfolio (filter chips) → cool-facts counters → contact → footer |
 
 Idcraft lives in `apps/idcraft` and uses shared components from `packages/ui`
 (Button, cn).

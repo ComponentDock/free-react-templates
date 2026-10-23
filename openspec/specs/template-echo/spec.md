@@ -9,15 +9,52 @@ the ColorLib free "Beckham" template
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original:
+## Design tokens (reference re-check, 2026-10-23)
 
-- Font: Montserrat (Google Fonts via `<link>`)
-- Primary accent: #79efb4 (mint green)
-- Dark sidebar/nav: #1a1a1a
-- Light background: #fff (content areas)
-- Counter section: dark background (#222)
-- Footer: dark background (#222)
-- Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
+- **Source**: ColorLib **Beckham** — https://colorlib.com/wp/template/beckham/
+- **Preview**: `https://preview.colorlib.com/theme/beckham/` — HTTP 200, title
+  `Beckham Muff | UI/UX Designer and Front-End Developer`. The demo is a
+  **3.0.1 rebuild** (`?v=3.0.1` on every asset, Bootstrap 5 variable layer
+  inlined into the theme sheet) — the colour story below is the *current* live
+  demo; the pre-3.0 release the screenshot shows is darker/simpler (see the delta
+  note in `docs/templates/echo/design-notes.md`).
+- **Stylesheets measured**: `css/style.min.css?v=3.0.1` — **170,789 B**
+  (theme + inlined Bootstrap 5 + self-hosted Poppins `@font-face`);
+  `vendor/swiper/14.3.0/swiper-bundle.min.css` 14,615 B;
+  `vendor/photoswipe/5.4.4/photoswipe.css` 7,423 B (both framework-only).
+- **Measured how**: hex-literal census per sheet, then the winning rule per
+  selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Page ink | `#121212` | 15 | `body` background — the whole page is dark |
+| Body copy | `#8c8c8c` | — | `body` colour, 18 px / 1.8 |
+| **Design accent blue** | `#2f89fc` | 27 | `a` (base + hover), `.text-primary`, `#colorlib-main-nav li.active span` (label + underline), `.owl-dot.active span`, `.KW_progressBar` fill, `.home-slider .overlay` |
+| Bootstrap `primary` mint | `#79efb4` | 21 | **framework variable override only**: `--bs-primary` users — `.form-control:focus` (`border-color:#bcf7da`, ring `#79efb440`), `.form-check-input:checked`, `.form-range` thumb (`::-webkit`/`::-moz`), `.btn-outline-primary` |
+| Nav / panel dark | `#121212` | 15 | offcanvas nav, section panels (`#colorlib-main-nav`) |
+| White | `#fff` | 70 | headings, `.home-slider` copy, cards |
+| Bootstrap greys | `#6c757d` 20 / `#343a40` 18 / `#f8f9fa` 16 | — | framework layer, paints nothing theme-level |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `Poppins, Arial, sans-serif` — weights **300 / 400 / 700** self-hosted (`../fonts/poppins/poppins-latin-{300,400,700}-normal.woff2`) | `body` rule + `@font-face` block |
+| Body | 18 px / line-height 1.8, `#8c8c8c` | `body` rule |
+| Headings | white, `font-weight: 300` on the hero name | `h1`–`h6` + `.heading` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | Bootstrap `.btn` family; the theme's own CTA is the text link with `#2f89fc`; radius `4px` on kit controls |
+| Radius | `50%` ×10 (dots, avatars), `4px` on inputs/buttons, `var(--bs-border-radius)` elsewhere |
+| Bands | dark `#121212` throughout: full-bleed hero photo with `#2f89fc`-tinted overlay → intro band → portfolio grid → counters → blog → contact → dark footer; the offcanvas menu is `#121212` with `#2f89fc` active rules |
+| Screenshot check | The TEMPLATES.md screenshot (pre-3.0) is the same dark page with a **blue** link accent — no mint anywhere; mint appears only in form-control states |
+
+Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons
 
 Echo lives in `apps/echo` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).

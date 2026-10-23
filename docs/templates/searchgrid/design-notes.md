@@ -63,3 +63,22 @@
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/searchgrid/public/CNAME` = `searchgrid.free.componentdock.com`
   and the package `homepage` = `https://searchgrid.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/bootstrap/search-form-bar-12/`
+(HTTP 200, title `Search #2`) and its single sheet `css/style.css?v=62bfd2ad`
+(11,206 B).
+
+| Token | Reference | App (`apps/searchgrid`) |
+| ----- | --------- | ----------------------- |
+| Brand blue | **none** — the only blue is Bootstrap's `#007bff` on `a` (×1); the sheet contains **no** `#2874f0` | `--color-brand-blue: #2874f0` ✗ app-invented |
+| Navbar rule | `border-bottom: 1px solid #dae0e5` **+** `box-shadow: 0 1px 5px rgba(0,0,0,.1)` | `--color-border-light: #e8e8e8` (one line, no shadow) |
+| Nav text | inherited `body { color:#212529 }` (no rule of its own) | `--color-nav-text: #333333` |
+| Search field | `1px solid #ced4da`, radius **30 px**, `padding-left: 35px`, width 120 → 200 px on focus, focus border **`#000`** with the shadow removed | `--color-search-border: #e0e0e0`, radius 20 px |
+| Placeholder | `#ccc` | `--color-search-placeholder: #aaaaaa` |
+| Face | Roboto (self-hosted 400/500/700) | `--font-sans: 'Inter', system-ui, …` ✗ |
+| Page height | `body { height: 200vh }` — an intentionally empty scroll area under the bar | — |
+
+This is the batch's "screenshot-invented palette" case: the app's tokens were
+drawn from the JPEG, so every value is a shade off and the typeface is wrong.

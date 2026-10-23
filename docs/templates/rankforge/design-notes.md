@@ -110,3 +110,21 @@ The system SHALL render a dark footer with logo, address, social icons, three li
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/rankforge/public/CNAME` = `rankforge.free.componentdock.com`
   and the package `homepage` = `https://rankforge.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/seos/` (HTTP 200, title
+`SEO HTML-5 Template`) and its theme sheet `assets/css/style.css` (67,171 B);
+Bootstrap 5 is a separate vendored sheet — nothing framework-derived is a token.
+
+| Token | Reference | App (`apps/rankforge`) |
+| ----- | --------- | ---------------------- |
+| Action pink | `#ff5c97` (29: `.btn` fill, `.boxed-btn` label+border, do-icons, scrollUp, preloader, footer social hover) | `--color-accent-400: #ff5c97` ✓ |
+| Heading navy | `#2b4b80` (10, weight **500** on `h1`–`h6`, 700 on `.section-tittle h2`) | `--color-primary-700: #2b4b80` ✓ (as a 700-step of a gradient scale rather than the heading token) |
+| Step violet | `#7b40c0` (15: active/hover `.do-btn` label + icon chip, `.btn-ans`) | `--color-secondary-500: #4043bc` ✗ — `#4043bc` is real but it is the **`.header-btn`** fill (×2); the step colour is the violet |
+| Header button | `#4043bc` (2: `.header-btn` bg + dropdown border-top) | `--color-secondary-400: #6063d4` — neither value |
+| Body copy | `#707b8e` (2) | `--color-smoke: #707b8e` ✓ |
+| Mist / lavender bands | `#f9f9ff` (27) / `#f0e9ff` (12) | `--color-mist`, `--color-lavender` ✓ |
+| CTA gradient | `linear-gradient(0deg, #ff5c98 0%, #7b40c0 100%)` (`.haveAproject::before`) | — |
+| Footer | **no** theme `background` rule on `.footer-area` (the `#222` ×21 is `b,sup,sub,u,del` and `.genric-btn.primary`) | `--color-footer-bg: #1b1b2f` ✗ app-only |
+| Face | Poppins (`@import` 100i–900 in the sheet) | `--font-sans: 'Poppins', …` ✓ |

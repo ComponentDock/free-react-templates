@@ -4,19 +4,49 @@
 
 Recreation of ColorLib Signup Form 12 as a free React signup form template with golden accent colors, built with React, Tailwind CSS 4, and TypeScript. Original: https://colorlib.com/wp/template/signup-form-12/
 
-Design tokens extracted from screenshot:
+## Design tokens (reference re-check, 2026-10-23)
 
-- Brand accent: `#C9B458` (golden/mustard)
-- Page background: `#f5f5f5`
-- Card surface: `#ffffff`
-- Text primary: `#333333`
-- Text muted: `#999999`
-- Border: `#dddddd`
-- Font: Roboto (Google Fonts)
-- Social Facebook: `#3b5998`
-- Social Twitter: `#1da1f2`
-- Avatar background: `#cccccc`
-- Badge green: `#8bc34a`
+- **Source**: ColorLib **Signup Form 12** — https://colorlib.com/wp/template/signup-form-12/
+- **Preview**: the slug-only path is a 404; the live demo is the Bootstrap-form
+  family path **`https://preview.colorlib.com/theme/bootstrap/signup-form-12/`**
+  — HTTP 200, title `Sign Up 01` (the served title is the demo label, not the slug).
+- **Stylesheet measured**: `css/style.css?v=4e2c0ed1` — **17,420 B** (Bootstrap 4
+  residue + the form layer; self-hosted Roboto 400/500/700 and a FontAwesome
+  subset for the avatar badge).
+- **Measured how**: hex-literal census of that sheet, then the winning rule per
+  selector. The earlier "extracted from screenshot" values are corrected here —
+  the screenshot's gold reads `#c9b458` only because of JPEG/AVIF compression;
+  the sheet says `#d5c455`.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand gold | `#d5c455` | 8 | `a` colour, `.cl-btn.cl-btn-primary` fill + `1px` border (hover → transparent fill + gold label), `.cl-form-control:focus,:active` border, `.social-media .social-icon:hover` fill, `.login-wrap .img:before` badge dot |
+| Page ground | `#f8f9fd` | 1 | `body { background: #f8f9fd }` |
+| Card | `#fff` | 13 | `.login-wrap` panel, `.img` panel, button label |
+| Heading ink | `#000` | 3 | `h2,h3` (weight **400**) |
+| Body copy | `gray` (`#808080`) | — | `body { color: gray }`, 16 px / 1.8 |
+| Field ink | `#495057` | 2 | `.cl-form-control` |
+| Framework | `#007bff` 5 / `#6c757d` 4 / `#ced4da` 1 | — | Bootstrap layer only |
+| Not in the sheet | `#3b5998`, `#1da1f2`, `#8bc34a` | 0 | the app's social-brand and "badge green" tokens have **no** reference rule |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `"Roboto", Arial, sans-serif` | `body` rule (the Bootstrap system stack is overridden by the later theme rule) |
+| Body | 16 px / line-height 1.8, `gray` | `body` |
+| Headings | `h2,h3` weight **400**, `#000`, `line-height: 1.5` | theme heading rule |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | `.cl-btn` **`border-radius: 40px`** (pill), `.cl-btn-primary` gold fill + `1px solid #d5c455` + white label, hover → transparent fill + gold label |
+| Fields | `.cl-form-control` full-width, Bootstrap `1px #ced4da` border, focus border gold and **no** shadow |
+| Card | `.login-wrap` white panel with a right-hand `.img` photo panel carrying a `12×12 px` gold badge dot (plus a FontAwesome `\f067` plus glyph); `10px` radius |
+| Bands | one screen: `#f8f9fd` ground → centred "Sign Up #01" heading → white card (photo right, form left) |
 
 ## Requirements
 

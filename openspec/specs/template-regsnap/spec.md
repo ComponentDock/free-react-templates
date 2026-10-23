@@ -5,7 +5,51 @@
 Recreate Colorlib Regform 2 as a React template named Regsnap. This is a food class registration form with a split-screen card layout: hero image on the left, form fields on the right, set against a vibrant red background.
 
 Source: https://colorlib.com/wp/template/colorlib-regform-2/
-Preview was unreachable; this spec is based on the screenshot and the live source HTML/CSS.
+
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Regform 2** — https://colorlib.com/wp/template/colorlib-regform-2/
+- **Preview**: the `/theme/` family does **not** host this slug
+  (`https://preview.colorlib.com/theme/colorlib-regform-2/` → **HTTP 404**). The
+  live demo is the form family path
+  **`https://colorlib.com/etc/regform/colorlib-regform-2/`** — HTTP 200,
+  **5,036 B**, title `Au Register Forms by Colorlib`. (An earlier revision of
+  this spec said "preview unreachable"; the DOM was always live, just not under
+  `/theme/`.)
+- **Stylesheet measured**: `css/style.css?v=9bccf1c0` — **12,022 B** (the only
+  theme sheet; self-hosted Roboto 400/500/700 + a `Material-Design-Iconic-Font`
+  subset).
+- **Measured how**: hex-literal census of that sheet, then the winning rule per
+  selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Page red | `#fa4251` | 1 | `.bg-red` — the full-page panel behind the card |
+| Action green | `#57b846` | 1 | `.btn--green` — the submit button fill |
+| Action green hover | `#4dae3c` | 1 | `.btn--green:hover` |
+| Input text | `#808080` | 5 | `input` colour (and the `cl-sel-*` `rgb(128,128,128)` equivalents — the same value written twice) |
+| Placeholder | `#aaa` / `#888` | 1 / 1 | placeholder + muted label |
+| Lines | `#e5e5e5` / `#ccc` / `#666` | 1 / 2 / 1 | field underline, select arrow, label |
+| Card | `#fff` | 3 | white card surface |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Everything | `"Roboto", "Arial", "Helvetica Neue", sans-serif` | `body` (14 px, weight 400) + `.font-robo` |
+| Field labels | 16 px, weight **500**, `rgb(128,128,128)` | `.cl-sel-0` / `.cl-sel-1` |
+| Button label | 40 px line-height, white, `padding: 0 25px` | `.cl-btn` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Card | white, **`10px`** radius (`×3`), drop shadow, max-width 960 px, split image/form |
+| Controls | **`3px`** radius (`×6`) on inputs/selects/button, `4px` on the select dropdown panel |
+| Fields | underline-style `input` with no border and no box-shadow, full width |
+| Bands | one screen: `#fa4251` page ground → white split card (hero photo left, form right) |
 
 ## Requirements
 

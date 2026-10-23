@@ -89,3 +89,23 @@ The system SHALL render a footer with a link to https://www.componentdock.com/ b
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/idcraft/public/CNAME` = `idcraft.free.componentdock.com`
   and the package `homepage` = `https://idcraft.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/vcard/` (HTTP 200, title
+`Vcard - Resume CV & Vcard Template`) and its single sheet `style.css`
+(45,443 B; no Bootstrap).
+
+| Token | Reference | App (`apps/idcraft`) |
+| ----- | --------- | -------------------- |
+| Brand amber | `#ffb016` (34: section rules, preloader, scrollUp, nav active, 92 px hero name, services band, filter chip, zoom icon) | `--color-amber-brand: #ffb016` ✓ |
+| Heading ink | `#252525` (18) | `--color-dark-heading: #252525` ✓ |
+| Copy | `#828282` (11) | `--color-gray-text: #828282` ✓ |
+| Light band | `#f3f5f8` (6) | `--color-light-bg: #f3f5f8` ✓ |
+| Hero scrim | `rgba(2, 3, 28, 0.9)` (×1) | `--color-overlay-dark: rgba(2, 3, 28, 0.9)` ✓ |
+| Face | Poppins (single declaration) | `--font-sans: 'Poppins', …` ✓ |
+| Buttons | `border-radius: 0`, height 54 px, `min-width: 185px` | matches the screenshot (solid amber, square) |
+
+Exact match across the whole palette — the strongest of the ten. The only
+untracked reference value is the `#c7d4dc` skill-bar track (×2), which the
+app renders as a neutral.

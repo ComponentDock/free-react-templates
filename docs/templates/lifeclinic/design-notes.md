@@ -121,3 +121,25 @@ New name: `lifeclinic`
 - **No ColorLib references:** Replace all ColorLib attribution with Component Dock in footer
 - **Font:** Load Roboto from Google Fonts
 - **Icons:** Use lucide-react for phone, email, map, calendar icons
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/medilife/` (HTTP 200, title
+`Medilife - Health & Medical Template | Home`) and its single theme sheet
+`style.css` (47,506 B — no Bootstrap inside).
+
+| Token | Reference | App (`apps/lifeclinic`) |
+| ----- | --------- | ----------------------- |
+| Brand blue | `#006cff` (49: button fill, nav hover/active, hero overlay at 85 %, emergency band, contact panel, footer widget titles) | `--color-brand: #006cff` ✓ |
+| Navy | `#081f3e` (25: `h1`–`h6`, sticky nav, top bar, appointment panel, button hover) | `--color-navy: #081f3e` ✓ |
+| Heading ink | `#081f3e` — the `h1`–`h6` rule | `--color-heading: #1d1d1d` ✗ (that hex is ×1, the `.single-accordion h6 a` **background**) |
+| Footer | `#020f20` | `--color-footer-bg: #020f20` ✓ |
+| Light band | `#f5f7f9` | `--color-section-bg: #f5f7f9` ✓ |
+| Submit red | `#ff0000` (×1, `.medilife-appoint-btn` only); hover flips to a **white** fill + `#006cff` label | `--color-cta: #ff0000`, `--color-cta-hover: #006cff` ✓ |
+| Body copy | `#57595c` | `--color-muted: #57595c` ✓ |
+| Top-bar text | `#b5b5b5` | `--color-topbar-text: #b5b5b5` ✓ |
+| Face | Roboto (page `<link>`), headings 700 | `--font-sans: 'Roboto', …` ✓ |
+| Buttons | `border-radius: 0`, height 45 px, flush 40 px arrow block | radius 0 ✓ |
+
+Only the heading token needs attention: the reference's heading ink is the same
+navy as its chrome, not near-black.

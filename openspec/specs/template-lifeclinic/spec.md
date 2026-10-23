@@ -9,15 +9,47 @@ ColorLib free "Medilife" template
 built under a different name with the monorepo stack: Vite + React 19 +
 Tailwind CSS 4 + TypeScript.
 
-Design tokens captured from the original (see docs/replication.md):
+## Design tokens (reference re-check, 2026-10-23)
 
-- Font: Roboto (Google Fonts via `<link>`)
-- Primary brand: `#006cff` (blue — CTA hover, active nav, emergency bg)
-- Top bar bg: `#081f3e` (dark navy)
-- CTA button bg: `#ff0000` (red — emergency CTA)
-- Footer bg: `#020f20` (very dark navy)
-- Light section bg: `#f5f7f9`
-- Body text: `#1d1d1d` / `#57595c`
+- **Source**: ColorLib **Medilife** — https://colorlib.com/wp/template/medilife/
+- **Preview**: `https://preview.colorlib.com/theme/medilife/` — HTTP 200, title
+  `Medilife - Health & Medical Template | Home`.
+- **Stylesheet measured**: `style.css` — **47,506 B**, the theme's only sheet (no
+  Bootstrap, no `@import`); fonts are loaded by the page's own `<link>`.
+- **Measured how**: hex-literal census of that sheet (count = occurrences), then
+  the winning rule per selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| Brand blue | `#006cff` | 49 | `.medilife-btn` fill, nav link hover/active fill, `.bg-overlay::after` on the hero (`#006cff` at `opacity .85`), `.medilife-emergency-area`, `.medilife-contact-info` panel, footer widget titles, `#scrollUp`, `#preloader` |
+| Navy ink | `#081f3e` | 25 | `h1`–`h6` (weight 700), `.top-header-area` (45 px bar), `.is-sticky .main-header-area` (80 px), appointment form panel, `.medilife-btn` hover fill and the flush arrow block, `.btn-2` fill |
+| Hero/footer deepest navy | `#020f20` | 1 | `.footer-area` |
+| Light band | `#f5f7f9` | 7 | dropdown hover fill and the alternating soft band |
+| Body copy | `#57595c` | 6 | paragraphs |
+| Top-bar text | `#b5b5b5` | 1 | `.top-header-area p` |
+| Icon chip grey | `#cacaca` | 2 | `.service-icon` idle fill, inactive carousel dots |
+| Appointment submit red | `#ff0000` | 1 | `.medilife-appoint-btn` background — the form's submit only, **not** the emergency band |
+| Accordion header | `#1d1d1d` | 1 | `.single-accordion h6 a` background (a panel, not the heading colour) |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `"Roboto", sans-serif` | `body` rule |
+| Headings | `#081f3e`, weight **700** | `h1,h2,h3,h4,h5,h6` rule |
+| Hero slide heading | `h2` 60 px / `h5` kicker 22 px weight 600 | `.hero-slides-content` |
+| Buttons | 14 px, `min-width: 140px`, height 45 px | `.medilife-btn` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Buttons | `.medilife-btn` **`border-radius: 0`**, `padding: 0 55px 0 30px`, height 45 px, white label on `#006cff`, with a 40 px `#081f3e` arrow block flush to the right edge; hover flips both fills. `.btn-2` inverts the pair; `.btn-3`/`.btn-4` are white with a **2 px** `#006cff` border |
+| Radius | `50%` ×8 (carousel dots, icon circles) and `6px` ×1 on the dropdown/mobile menu panel; cards and bands are square |
+| Bands | navy top bar → transparent nav over hero photos → `#081f3e` appointment block with a `#006cff` contact panel → white services → `#f5f7f9` facts/gallery/blog → `#006cff` emergency band → `#020f20` footer |
+| Hero | Owl carousel, `.bg-overlay::after` `#006cff` at 85 % over the photo, left-aligned `#081f3e` 60 px heading |
 
 Assets are NOT copied — picsum.photos seeded placeholders + lucide-react icons.
 

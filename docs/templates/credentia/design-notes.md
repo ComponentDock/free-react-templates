@@ -101,3 +101,24 @@ The system SHALL render a footer with copyright text and a link to https://www.c
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/credentia/public/CNAME` = `credentia.free.componentdock.com`
   and the package `homepage` = `https://credentia.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/civic/` (HTTP 200, title
+`Civic - CV Resume`) and its theme sheet `css/style.css` (26,637 B);
+`css/bootstrap.min.css` (19,577 B) is vendored separately.
+
+| Token | Reference | App (`apps/credentia`) |
+| ----- | --------- | ---------------------- |
+| Slate ink / panel | `#40424a` (22: headings, `.fact-box`, footer, progress bars, resume spine, `.site-btn` border) | `--color-dark: #40424a` ✓ |
+| Pale band | `#f2f7f8` (8: header band, hero) | `--color-light: #f2f7f8` ✓ |
+| Paragraph | `#808181` | `--color-muted: #808181` ✓ |
+| Line / dot grey | `#cacaca` | `--color-border: #cacaca` ✓ |
+| Accent crimson | `#ff0f3c` — **variant-only**: every one of its 11 occurrences is scoped to `.home-four-style`, which this `index.html` never applies (same for `#481340`, the gradient's start stop, and `#009fff` in `home-two/six`) | `--color-accent: #ff0f3c` ✗ — the shipped page is monochrome slate; the crimson is the *fourth* skin's accent |
+| Teal scale | none — `--color-primary-50…950` (`#52859b` … `#33414d`) appears nowhere in the sheet | app-only scale |
+| Face | Josefin Sans (300–700) | `--font-sans: 'Josefin Sans', …` ✓ |
+| Buttons | white fill, `2px solid #40424a`, uppercase 12 px, `min-width: 213px` | matches the screenshot (outlined pair) |
+
+The TEMPLATES.md screenshot (1200×946) confirms the monochrome read: pale
+`#f2f7f8` ground, slate name at 90 px, two outlined buttons top-right, no
+crimson or purple anywhere.

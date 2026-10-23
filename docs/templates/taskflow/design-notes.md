@@ -82,3 +82,24 @@ The system SHALL render a CTA section with a light gray background, heading, des
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/taskflow/public/CNAME` = `taskflow.free.componentdock.com`
   and the package `homepage` = `https://taskflow.free.componentdock.com`.
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/work/` (HTTP 200, title
+`Work: portfolio of designer Louie Jie`) and its theme sheet
+`css/style.min.css?v=3.0.0` (106,242 B, Bootstrap 5 inlined, one self-hosted
+Quicksand 400). The demo is a **3.0.0 rebuild**.
+
+| Token | Reference | App (`apps/taskflow`) |
+| ----- | --------- | --------------------- |
+| Brand | `#c04531` (17: `a`, `.btn-primary` fill + 2 px border, outline button, pagination, social hover, progress bar) | `--color-brand-500: #ef3c22` ✗ — the reference terracotta is a duller red; `#c04531` appears nowhere in the app |
+| Brand hover | `#ac3e2c` (`--bs-btn-hover-bg`) | `--color-brand-600: #dc2d15` — brighter |
+| Paper | `#fff` (70), soft `#fafafa` | `--color-brand-light`-ish |
+| Framework | `#0d6efd` 20 / `#198754` 16 / `#dc3545` 16 / `#ffc107` 14 — Bootstrap only, no theme rule uses them | — |
+| Face | Quicksand (single 400 woff2) | `--font-sans: 'Quicksand', Arial, sans-serif` ✓ |
+| Buttons | `.btn-primary` fill + **2 px** same-colour border, radius 4 px | radius/scale present |
+| Layout | fixed white sidebar (black square logotype, uppercase 2–3 px letterspaced nav) + full-bleed photo hero with an overlapping white card and a thin outlined "LEARN MORE →" | matches the screenshot |
+
+Note the reference's nav labels are `#000` uppercase at 11–12 px with wide
+tracking; the app's sidebar is the closest thing to fidelity risk if it drifts to
+sentence case.

@@ -6,7 +6,45 @@ Zing is a restaurant landing page in the free-react-templates monorepo. It is an
 
 The original is a Bootstrap-based restaurant template with a hero slider, reservation form, tabbed menu, chef profiles, testimonials carousel, blog cards, newsletter CTA, and a dark footer with hours and social links.
 
-**Design tokens:** brand red `#e52b34`, decorative font "Dancing Script", body font "Roboto", dark footer `#333333`, light section bg `#f8f9fa`.
+## Design tokens (reference re-check, 2026-10-23)
+
+- **Source**: ColorLib **Tasteit** — https://colorlib.com/wp/template/tasteit/
+- **Preview**: `https://preview.colorlib.com/theme/tasteit/` — HTTP 200, title
+  `Taste.it | Family Restaurant Since 1958`. The demo is a **3.0.0 rebuild**
+  (`?v=3.0.0` on every asset, Bootstrap 5 inlined); the screenshot in
+  TEMPLATES.md is the pre-3.0 release of the same design.
+- **Stylesheets measured**: `css/style.min.css?v=3.0.0` — **196,189 B**
+  (theme + inlined Bootstrap 5 + self-hosted Roboto/Dancing Script);
+  `vendor/swiper/14.3.0/swiper-bundle.min.css` 14,615 B;
+  `vendor/fontawesome/7.3.1/…subset.css` 1,700 B (icons).
+- **Measured how**: hex-literal census per sheet, then the winning rule per
+  selector.
+
+### Colors
+
+| Token | Value | Occurrences | Role |
+| ----- | ----- | ----------- | ---- |
+| **Brand red** | `#cf1f28` | 44 | `a` (base/hover), `.navbar-brand`, nav link hover + `.nav-item.active`, `.nav-item.cta > a` fill (and again in `.scrolled`), `.bg-primary`, `.ftco-footer-social li a`, footer subscribe submit, breadcrumb hover, `.subheading-2` with its 85 px flanking rules |
+| A11y accent (3.0.0 patch) | `#e52b34` | 3 | `:focus-visible { outline: 3px solid … }` and the underline on the active nav item in the rebuilt sheet — a focus/underline accent, **not** the brand fill |
+| Footer | `#1a1a1a` | 1 | `.ftco-footer` |
+| Paper | `#fff` | 108 | body ground, cards, footer button label |
+| Ink | `#000` / `#333333` | 68 / 63 | overlays, framework body text (`--bs-body-color`) |
+
+### Typography
+
+| Element | Family / size | Evidence |
+| ------- | ------------- | -------- |
+| Body | `Roboto` (11 declarations), sans-serif fallback | `body` rule |
+| Decorative | `Dancing Script`, `cursive` (4 declarations) | hero `Cooking Since` line and the "About" kicker |
+| Nav | Roboto, uppercase 13–14 px | `.ftco-navbar-light .nav-link` |
+
+### Shapes & rhythm
+
+| Property | Reference value |
+| -------- | --------------- |
+| Nav | `.ftco-navbar-light` transparent over the hero, white on `.scrolled`; the last item (`.cta`) is a **filled `#cf1f28` pill with white label** |
+| Radius | `50%` ×15 (dots, avatars), `2px` on chips, `var(--bs-border-radius)` on controls |
+| Bands | dark food-photo hero with script headline and a dark info bar above the nav → white booking/reservation block with a **`#cf1f28` form panel** → about/chef → tabbed menu → testimonials → blog → newsletter → `#1a1a1a` footer |
 
 ## Requirements
 

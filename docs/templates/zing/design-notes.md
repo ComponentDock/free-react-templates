@@ -103,3 +103,22 @@
 - No parallax plugin — CSS `background-attachment: fixed` or a lightweight React parallax hook
 - Footer links to Component Dock instead of Colorlib
 - All images are deterministic placeholders via picsum.photos
+
+## Reference tokens (measured 2026-10-23)
+
+Read from `https://preview.colorlib.com/theme/tasteit/` (HTTP 200, title
+`Taste.it | Family Restaurant Since 1958`) and its theme sheet
+`css/style.min.css?v=3.0.0` (196,189 B, Bootstrap 5 inlined). The demo is a
+**3.0.0 rebuild**.
+
+| Token | Reference | App (`apps/zing`) |
+| ----- | --------- | ----------------- |
+| Brand red | `#cf1f28` (44: links, wordmark, nav active/CTA fill, `.bg-primary`, footer social, subscribe submit) | `--color-brand-red: #e52b34` ✗ — that hex is ×3 in the sheet and is the **3.0.0 accessibility accent** (`:focus-visible` outline, active-nav underline, `.subheading-2` rules), not the brand fill |
+| Footer | `#1a1a1a` (`.ftco-footer`, ×1) | `--color-brand-dark: #333333` ✗ — `#333333` is the framework body ink (×63) |
+| Light band | `#fff` / Bootstrap `#f8f9fa` (16) | `--color-brand-light: #f8f9fa` ✓ |
+| Copy | framework `#333` on white | `--color-muted-text: #777777` — no theme rule |
+| Faces | Roboto (11) + **Dancing Script** (4) | `--font-roboto` + `--font-dancing` ✓ |
+| Nav | transparent → white on `.scrolled`, CTA item is a filled `#cf1f28` pill | — |
+
+Rebuild drift: the screenshot (pre-3.0) shows the darker red booking panel and
+the script "Cooking Since" hero — same structure, older asset set.
