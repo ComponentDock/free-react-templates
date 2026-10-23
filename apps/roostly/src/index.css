@@ -6,9 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Roostly brand palette — recreated from the ColorLib "Colorlib Booking
-     Form V11" design (live demo:
-     https://colorlib.com/etc/bforms/colorlib-booking-11/):
+  /* Roostly brand palette — measured from the reference booking-form design:
      hot pink #ff0063 is the ONLY brand color (field labels + submit
      button). */
   --color-brand: #ff0063;

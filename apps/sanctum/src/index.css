@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — recreated from the ColorLib "Wisdom"
-     church theme (css/style.css + live preview):
+  /* Brand palette — measured from the reference church design
+     (css/style.css + live preview):
      brand teal #08c299 (buttons, accents), dark bg #1a1a1a,
      section light #f6f8f9, heading #252525, body #636363,
      parallax dark overlay. Font: Work Sans. */

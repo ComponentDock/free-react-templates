@@ -6,8 +6,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Roomzy brand palette — recreated from the ColorLib "Colorlib Booking 10"
-     design (live demo: https://colorlib.com/etc/bforms/colorlib-booking-10/):
+  /* Roomzy brand palette — measured from the reference design:
      red-orange #f14634 is the ONLY brand color (field labels + Book Now
      button). */
   --color-brand: #f14634;

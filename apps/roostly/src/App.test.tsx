@@ -34,11 +34,18 @@ describe('App', () => {
     expect(main.contains(form)).toBe(true)
   })
 
-  it('renders no navbar, hero copy, or footer (single-section demo)', () => {
+  it('renders no navbar or hero copy (single-section demo)', () => {
     render(<App />)
 
     expect(screen.queryByRole('navigation')).not.toBeInTheDocument()
-    expect(screen.queryByRole('contentinfo')).not.toBeInTheDocument()
     expect(screen.queryByRole('heading')).not.toBeInTheDocument()
+  })
+
+  it('renders the Component Dock footer credit', () => {
+    render(<App />)
+
+    const footer = screen.getByRole('contentinfo')
+    const link = within(footer).getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
   })
 })

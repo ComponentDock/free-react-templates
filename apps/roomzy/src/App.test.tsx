@@ -20,4 +20,12 @@ describe('App', () => {
     expect(form).not.toBeNull()
     expect(section.contains(form)).toBe(true)
   })
+
+  it('renders the Component Dock footer credit', () => {
+    render(<App />)
+
+    const footer = screen.getByRole('contentinfo')
+    const link = within(footer).getByRole('link', { name: 'Component Dock' })
+    expect(link).toHaveAttribute('href', 'https://www.componentdock.com/')
+  })
 })

@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sanctus brand palette — recreated from the ColorLib "Byfaith"
-     church theme (css/style.css + live preview): brand amber #f79918
+  /* Sanctus brand palette — measured from the reference church design
+     (css/style.css + live preview): brand amber #f79918
      (subheadings, pill buttons, service icons, testimonial nav pills,
      footer hovers), dark teal #10495c (Why Us + Join sections), warm
      beige #ede1d0 (footer). Buttons are PILLS: 30px radius, uppercase
@@ -21,7 +21,7 @@
   --color-ink: #1a1a1a;
 
   /* Poppins throughout (headings + body) via Google Fonts <link> in
-     index.html — matching the ColorLib font choice. */
+     index.html — matching the reference font pairing. */
   --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Poppins', ui-sans-serif, system-ui, sans-serif;
 }

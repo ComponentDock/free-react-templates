@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* SacredGate brand palette — recreated from the ColorLib "Church" design
+  /* SacredGate brand palette — measured from the reference design
      (css/main.css): red #eb4141 accents/buttons, yellow #ffd600 underline,
      dark #161619 footer, light #f0f4f8 sermon section. */
 

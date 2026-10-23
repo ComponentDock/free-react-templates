@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sarto brand palette — recreated from the ColorLib Fashiop design
+  /* Sarto brand palette — measured from the reference design
      (brand blue #1641ff). */
   --color-brand-50: #eef2ff;
   --color-brand-100: #dde5ff;
