@@ -22,7 +22,7 @@ list — record the mapping when those specs are next touched.
 Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815), `appco` →
 `flowly` (#1816), `applab` → `velocity` (#1817), `appli` → `knotly` (#1818),
-`appru` → `rocket` (this PR).
+`appru` → `rocket` (#1819).
 
 | app                 | source design  |
 | ------------------- | -------------- |
