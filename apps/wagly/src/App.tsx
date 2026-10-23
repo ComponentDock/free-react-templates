@@ -9,7 +9,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Breed — Dog Breed Template'
+    document.title = 'Wagly — Dog Breed Template'
   }, [])
 
   return (

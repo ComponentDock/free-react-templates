@@ -22,7 +22,7 @@ export function Team() {
           {members.map((member) => (
             <article key={member.name} className="text-center">
               <img
-                src={`https://picsum.photos/seed/breed-team-${member.seed}/360/300`}
+                src={`https://picsum.photos/seed/wagly-team-${member.seed}/360/300`}
                 alt={member.name}
                 className="mx-auto w-full max-w-xs object-cover"
               />

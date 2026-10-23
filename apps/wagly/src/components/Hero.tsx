@@ -5,12 +5,12 @@ const slides = [
   {
     heading: 'We Love Pets',
     copy: 'Every dog deserves a loving home, good food, and long walks. Our community helps you find the perfect companion and care for it like family.',
-    seed: 'breed-hero-1',
+    seed: 'wagly-hero-1',
   },
   {
     heading: 'Care for dogs',
     copy: 'From daily grooming to health checkups, we share everything you need to keep your dog happy, healthy, and by your side for years to come.',
-    seed: 'breed-hero-2',
+    seed: 'wagly-hero-2',
   },
 ] as const
 

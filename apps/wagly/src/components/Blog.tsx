@@ -35,7 +35,7 @@ export function Blog() {
           {posts.map((post) => (
             <article key={post.title}>
               <img
-                src={`https://picsum.photos/seed/breed-blog-${post.seed}/600/400`}
+                src={`https://picsum.photos/seed/wagly-blog-${post.seed}/600/400`}
                 alt=""
                 className="w-full object-cover"
               />

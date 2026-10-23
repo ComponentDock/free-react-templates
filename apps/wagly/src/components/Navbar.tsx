@@ -22,7 +22,7 @@ export function Navbar() {
     <header className="bg-night dark:bg-gray-950">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <a href="#top" className="text-lg font-normal uppercase tracking-[0.2em] text-white">
-          bre<span className="text-brand">ed</span>
+          wa<span className="text-brand">gly</span>
         </a>
 
         <div className="flex items-center gap-4">

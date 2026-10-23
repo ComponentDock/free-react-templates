@@ -39,7 +39,7 @@
 
 - [x] **Animal Shelter** — [colorlib](https://colorlib.com/wp/template/animal-shelter/) · [furhaven](https://furhaven.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/animalshelter-free-template-1.jpg)
 - [x] **Anipat** — [colorlib](https://colorlib.com/wp/template/anipat/) · [pawcare](https://pawcare.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/anipat-free-template.jpg)
-- [x] **Breed** — [colorlib](https://colorlib.com/wp/template/breed/) · [breed](https://breed.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed-free-template.jpg)
+- [x] **Breed** — [colorlib](https://colorlib.com/wp/template/breed/) · [Wagly](https://wagly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/breed-free-template.jpg)
 - [x] **Dogger** — [colorlib](https://colorlib.com/wp/template/dogger/) · [dogger](https://dogger.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dogger-free-template.jpg)
 - [x] **Doglife** — [colorlib](https://colorlib.com/wp/template/doglife/) · [doglife](https://doglife.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doglife-free-template.jpg)
 - [x] **Farmie** — [colorlib](https://colorlib.com/wp/template/farmie/) · [farmie](https://farmie.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/farmie-free-template.jpg)

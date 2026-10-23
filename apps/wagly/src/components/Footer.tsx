@@ -8,7 +8,7 @@ export function Footer() {
     <footer id="contact" className="bg-night py-16 text-white/50">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-3">
         <div>
-          <h3 className="text-base font-bold text-white">About The Breed</h3>
+          <h3 className="text-base font-bold text-white">About Wagly</h3>
           <p className="mt-5 text-sm font-light leading-relaxed">
             A loving community for dog owners and breeders — breed guides, care tips, and everything
             your furry friend needs to live its best life.
@@ -50,7 +50,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light">
-          Copyright © {new Date().getFullYear()} Breed. All rights reserved.
+          Copyright © {new Date().getFullYear()} Wagly. All rights reserved.
         </p>
         <SocialLinks />
       </div>

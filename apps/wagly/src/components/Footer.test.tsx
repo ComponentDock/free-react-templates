@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('shows the about blurb, contact info, quick links, socials, and copyright', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('heading', { name: 'About The Breed' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'About Wagly' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Contact Info' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Quick Links' })).toBeInTheDocument()
 

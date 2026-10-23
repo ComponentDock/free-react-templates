@@ -1,17 +1,17 @@
-# Breed — Design Notes
+# Wagly — Design Notes
 
 Reference: **Breed** — `https://colorlib.com/wp/template/breed/`  
 Live preview: `https://preview.colorlib.com/theme/breed/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/breed-free-template.jpg  
-Shipped: https://breed.free.componentdock.com
+Shipped: https://wagly.free.componentdock.com
 
-Breed is a single-page dog-breed landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Breed" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Breed is a single-page dog-breed landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Breed" website template design (see TEMPLATES.md), built under the new name Wagly with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Open Sans**, **Open Sans:wght@300;400;600;700**
 
-## Design tokens (`apps/breed/src/index.css` `@theme`)
+## Design tokens (`apps/wagly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ Fonts loaded by `index.html` (Google Fonts): **Open Sans**, **Open Sans:wght@300
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "breed", links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "wagly", links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-height hero slider with two slides, each with a headline, a short subheading, and two call-to-action buttons, plus prev/next controls.
@@ -71,8 +71,8 @@ The system SHALL render a footer with an about blurb, contact info, quick links,
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/breed/` may name the source designer,
+- **Provenance ban.** No file under `apps/wagly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/breed/public/CNAME` = `breed.free.componentdock.com`
-  and the package `homepage` = `https://breed.free.componentdock.com`.
+- **Deploy identity.** `apps/wagly/public/CNAME` = `wagly.free.componentdock.com`
+  and the package `homepage` = `https://wagly.free.componentdock.com`.
