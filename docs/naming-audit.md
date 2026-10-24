@@ -13,7 +13,7 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Pawpal → Groomly (2026-10-24o, this PR)
+## State after Pawpal → Groomly (2026-10-24o, #1851)
 
 **1 app reuses its source name** (`node scripts/audit-naming.mjs`:
 `apps/petsitting`), plus `apps/itkol`, which a name-only test still cannot see
@@ -185,7 +185,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 (#1842), `jobboard` → `rosterly` (#1843), `medical` → `verdia` (#1844),
 `nurture` → `cradle` (#1845), `oraxol` → `obsidian` (#1846),
 `unioncorp` → `meridia` (#1847), `petvet` → `vetora` (#1848), `pawpal` →
-`groomly` (this PR).
+`groomly` (#1851).
 
 | app              | source design |
 | ---------------- | ------------- |
