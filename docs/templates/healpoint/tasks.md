@@ -6,7 +6,7 @@
 > Fidelity reference: `openspec/specs/template-vitala/spec.md`.
 
 ## Setup
-- [ ] Create `apps/healpoint` by copying simplest existing app (e.g. apps/medical)
+- [ ] Create `apps/healpoint` by copying simplest existing app (e.g. apps/verdia)
 - [ ] Rename package to `@free-react-templates/healpoint`
 - [ ] Update `public/CNAME` to `healpoint.free.componentdock.com`
 - [ ] Update `package.json` homepage to `https://healpoint.free.componentdock.com`
