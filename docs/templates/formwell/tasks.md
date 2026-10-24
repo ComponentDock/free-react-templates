@@ -1,79 +1,64 @@
-# Formwell — Implementation Tasks
+# Tasks & Design Notes: FormWell (Contact Form 08)
 
-Source design: **Contact Form 08** (`https://colorlib.com/wp/template/contact-form-v15/`) → recreation name **formwell**. Shipped at https://formwell.free.componentdock.com.
+## Overview
 
-Row note: `TEMPLATES.md` links the slug `contact-form-08` for this app while the spec records `contact-form-v15`. This brief follows the SPEC — the disagreement is recorded, not resolved (ROW-MULTIPLICITY class, see the SPEC-REFERENCE audit, main `4820f472b`).
+Recreation of ColorLib **Contact Form 08** (`https://colorlib.com/wp/template/contact-form-08/`,
+live demo `https://preview.colorlib.com/theme/bootstrap/contact-form-08/`) as **FormWell** — one
+contact band: a centred heading, then a card that carries the form beside a photograph.
 
-Scope: A single-page contact form with a full-page Google Maps background, a centered white card with a banner image. It also includes and underline-style form inputs with a green submit button. Recreation of ColorLib **Contact Form V15**.
+Spec: `openspec/specs/template-formwell/spec.md` (rewritten 2026-10-24; it previously recorded
+Contact Form V15 and a map-backed banner card — see `docs/spec-row-mismatch.md`).
+Brief with measured tokens and the fidelity-delta table: `docs/templates/formwell/design-notes.md`.
+Shipped: https://formwell.free.componentdock.com
 
-## Component breakdown
+Row note: `TEMPLATES.md` line **1411** (`## Contact Form (42)`) links `contact-form-08` and
+`formwell`; the spec now records the same slug, so row and spec agree.
 
-Render order as composed in `apps/formwell/src/App.tsx`:
+## Section order & architecture
 
-### 1. PageTitle
-- No dedicated spec block — hold this band to the design notes.
-- Anchors: Formwell
+The reference is a snippet: one `.ftco-section` (7em vertical padding) holding a centred heading and
+one card. There is no navbar, hero, feature grid, testimonial band or footer — the recreation ships
+the same two bands plus the mandatory credit line.
 
-### 2. ContactCard
-- A white card is centered on the page over the map background.
-- Scenario — Card rendered centered:
-  - **WHEN** I visit the FormWell page
-  - **THEN** I see a white card centered horizontally and vertically on the page
-- Scenario — Card has shadow:
-  - **WHEN** I visit the FormWell page
-  - **THEN** the card has a soft box-shadow for depth
+| # | file | band | status |
+| --- | --- | --- | --- |
+| 1 | `src/components/PageTitle.tsx` | centred `h1` naming the template, in the slot the reference fills with its snippet heading | [x] |
+| 2 | `src/components/ContactCard.tsx` | white card: `ContactForm` column + `ContactImage` panel | [x] |
+| 3 | `src/components/ContactForm.tsx` | "Get in touch with us", Full Name / Email Address row, Subject, Message textarea, "Send Message" submit | [x] |
+| 4 | `src/components/ContactImage.tsx` | seeded placeholder photograph (`picsum.photos/seed/formwell`), hidden below `sm` | [x] |
+| 5 | `src/components/Footer.tsx` | Component Dock credit (`https://www.componentdock.com/`) | [x] |
+| 6 | `src/index.css` | `@theme` tokens: `--color-brand`, `--color-brand-dark`, `--color-bg-page`, `--color-text-*`, `--color-input-bg` | [x] |
 
-### 3. Footer
-- The page includes a footer with a Component Dock link.
-- Scenario — Footer present:
-  - **WHEN** I visit the FormWell page
-  - **THEN** I see a footer with a link to https://www.componentdock.com/
+## Tasks
 
-### Cross-cutting requirements
+- [x] Spec rewritten to the measured Contact Form 08 reference; Requirements aligned to the app
+- [x] Brief (`design-notes.md`) rewritten with measured tokens + document order + delta table
+- [x] Reference heading and four-field set in order, with the reference's own placeholders
+- [x] Uppercase labels associated with their fields; email input keeps `type="email"`
+- [x] Typing updates field state; submit prevents navigation
+- [x] Footer credit to Component Dock
+- [x] No source-site name, domain or URL anywhere under `apps/formwell/`
+- [ ] Skin parity with the reference: accent `#71a95a` / hover `#5a8947` (currently `#86b574` /
+      `#6d9a5c`), page ground `#ffffff` (currently `#f5f5f5`), body ink `#666666` (currently
+      `#333333`), 50px `#ffffff` fields under `0 8px 19px -13px rgba(0,0,0,.09)` with 5px radius
+      and `rgba(0,0,0,.3)` placeholders (currently `#f7f7f7` ~40px fields, 2px radius, no shadow,
+      `#999` placeholders), `#000` labels (currently `#555`), and the photo-as-card-background
+      composition (currently a 40% `<img>` panel beside a white card). Implementer change: update
+      `src/index.css` `@theme` + the component classes, adjust the tests that assert
+      `bg-input-bg` / accent values, then run `bash scripts/verify-app.sh formwell`
+- [ ] Submit-behaviour parity: native `required` / `minlength="5"`, the red warning and green
+      success lines, and the ajax POST (currently `preventDefault()` only)
 
-- **Full-page map background** — The page renders a full-viewport Google Maps background with a dark overlay.
-  - Scenario — Map background visible: **WHEN** I visit the FormWell page; **THEN** the entire page background shows a map (Google Maps tile or static map image)
-  - Scenario — Dark overlay on map: **WHEN** I visit the FormWell page; **THEN** the map has a dark semi-transparent overlay so the card stands out
-- **Banner image section** — The top of the card has a banner image with a dark overlay and text.
-  - Scenario — Banner image displayed: **WHEN** I visit the FormWell page; **THEN** the top section of the card shows a banner image (person with laptop or similar)
-  - Scenario — Dark overlay on banner: **WHEN** I visit the FormWell page; **THEN** the banner image has a dark semi-transparent overlay
-  - Scenario — Contact Us heading: **WHEN** I visit the FormWell page; **THEN** the text "Contact Us" is displayed centered on the banner in white bold text
-  - Scenario — Subheading: **WHEN** I visit the FormWell page; **THEN** the text "Feel free to drop us a line below!" is displayed below the heading in white
-- **Contact form** — Below the banner, the card contains a form with underline-style inputs.
-  - Scenario — Full Name field: **WHEN** I visit the FormWell page; **THEN** I see a "Full Name:" label with a text input showing placeholder "John Doe"
-  - Scenario — Email field: **WHEN** I visit the FormWell page; **THEN** I see an "Email:" label with a text input showing placeholder "Enter email address"
-  - Scenario — Phone field: **WHEN** I visit the FormWell page; **THEN** I see a "Phone:" label with a text input showing placeholder "Enter phone number"
-  - Scenario — Message field: **WHEN** I visit the FormWell page; **THEN** I see a "Message:" label with a textarea showing placeholder "Your Comments..."
-  - Scenario — Underline input style: **WHEN** I look at any form input; **THEN** it has a bottom border only (underline style) with no full box border
-  - Scenario — Labels left-aligned: **WHEN** I view the form; **THEN** labels are left-aligned next to or above their inputs
-- **Submit button** — A green rounded submit button appears below the form fields.
-  - Scenario — Submit button rendered: **WHEN** I visit the FormWell page; **THEN** I see a green "Submit" button with an arrow icon
-  - Scenario — Button rounded pill shape: **WHEN** I view the submit button; **THEN** it has a rounded pill shape (large border-radius)
-  - Scenario — Button centered: **WHEN** I visit the FormWell page; **THEN** the submit button is centered below the form fields
-- **Responsive layout** — The template is responsive and works on mobile.
-  - Scenario — Mobile stacking: **WHEN** I view the page on a mobile viewport (375px wide); **THEN** the card takes full width with horizontal padding
-  - Scenario — Form readable on mobile: **WHEN** I view the page on a mobile viewport; **THEN** all form fields and the button are readable and usable
-- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/formwell/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
-  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/formwell/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+## Design tokens & styling
 
-## Verification
+Measured from `theme/bootstrap/contact-form-08/css/style.css` (14,838 B, sha256 `2e795975…`): accent
+`#71a95a` (hover `#5a8947`), page ground `#ffffff`, heading and label ink `#000`, body ink
+`#666666`, field ink `rgba(0,0,0,.8)`, placeholder `rgba(0,0,0,.3)`, field surface `#ffffff` with
+`0 8px 19px -13px rgba(0,0,0,.09)`, button shadow `0 10px 20px -6px rgba(0,0,0,.12)`, 5px radii,
+50px fields, 83.33% card / 58.33% form column, 3rem card padding, 7em band padding, 12px/600
+uppercase labels, Poppins declared. Full table in the brief.
 
-- [x] `apps/formwell` ships on https://formwell.free.componentdock.com
-- [x] Typecheck / lint / tests / build pass at the repo gate
-- [x] Section order and copy match the design notes
-- [x] No source-designer name, source URL or source template name under `apps/formwell/`
-- [x] Footer links Component Dock
-
-## Delivery contract (repo rules — non-negotiable)
-
-- **Footer credit.** The footer — or, when the design ships no footer, the page's
-  last band — SHALL link [Component Dock](https://www.componentdock.com/). That is
-  the only attribution line the recreation carries.
-- **Source credit is reading, not copy.** Where the research above quotes the
-  source's own credit string ("… made with ♥ by …"), it is what the source band
-  renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/formwell/` may name the source designer,
-  carry a `colorlib.com` URL, or reuse the source template's name — code,
-  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/formwell/public/CNAME` = `formwell.free.componentdock.com`
-  and the package `homepage` = `https://formwell.free.componentdock.com`.
+Interactive states: the button darkens to `#5a8947` on hover/focus and deepens its shadow; a focused
+field paints **nothing** — the sheet's green focus border sits on a border the theme removed, and the
+field shadow is `!important` over the reboot's blue ring. `focus:ring-brand/30` in the app is
+therefore a divergence to settle when skin parity is taken.
