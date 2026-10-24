@@ -255,20 +255,23 @@ def c11g():
 
 
 def c12():
-    """The corpus itself: 15 DRIFT apps after the two 2026-10-24f corrections.
+    """The corpus itself: 10 DRIFT apps after the 2026-10-24h `formwell` rewrite.
 
     19 were measured, 17 after the row-map fix (atelier/landing/villa were
     false positives from matching the row's LINK TEXT), 15 after the `jobboard`
-    and `medical` provenance corrections landed.
+    and `medical` provenance corrections landed, 12 after `ledger` + `bistro`,
+    11 after `concertina`, 10 after `formwell` (each rewrite moves its app to
+    AGREE because the spec then names the design its row already carries).
     """
     mod = _load(VER, 'vsrm_ctl5')
     rep = mod.audit(REPO)
     drift = {r['app'] for r in rep['rows'] if r['bucket'] == 'DRIFT'}
-    for gone in ('atelier', 'landing', 'villa', 'jobboard', 'medical'):
+    for gone in ('atelier', 'landing', 'villa', 'jobboard', 'medical',
+                 'ledger', 'bistro', 'concertina', 'formwell', 'btnspark'):
         assert gone not in drift, gone
     for known in ('bellows', 'zenith', 'spark'):
         assert known in drift, known
-    assert len(drift) == 15, sorted(drift)
+    assert len(drift) == 10, sorted(drift)
 
 
 def c12g():
@@ -304,7 +307,7 @@ for fn, name, gate in [
     (c10, 'family boilerplate never scores', False),
     (c11, 'winner decides ROW-POINTER / SPEC-STALE / tie refuses', False),
     (c11g, 'GATE  one shared phrase is below MIN_EVIDENCE', True),
-    (c12, 'corpus: 15 DRIFT, the five fixed names gone', False),
+    (c12, 'corpus: 10 DRIFT, the nine fixed names gone', False),
     (c12g, 'GATE  corpus with no row map -> no flags', True),
 ]:
     case(fn, name, gate)

@@ -159,6 +159,12 @@ names. Renaming is the rename stream's call, not the prep stream's.
    Several pairs are near-duplicate ColorLib listings (`cakes`/`cake`,
    `academia`/`academics`); the adjudication above is per pair, not per app name,
    so this is its own axis.
+6. **Two surplus preps of a design that already shipped** — `openspec/specs/template-reachpad/`
+   and `openspec/specs/template-formspot/` both name **`contact-form-08`**, the design row 1411
+   already ships as `formwell`. Neither has an `apps/<name>` folder and neither appears in
+   `TEMPLATES.md`, so they are duplicate stock rather than competing claims (the census reports
+   them as `NO-APP`): no implementer should build them, and the only decision is whether to delete
+   them or keep them as inventory.
 
 ## Pits that cost iterations
 
