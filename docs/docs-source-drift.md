@@ -40,14 +40,16 @@ variant, not drift), `ROW-MULTI`, `BRIEF-PICKS-OTHER-SIBLING`.
 
 | bucket | count |
 | --- | --- |
-| `AGREE` | 1,678 |
-| `DOCS-STALE` | 20 |
+| `AGREE` | 1,681 |
+| `DOCS-STALE` | 17 |
 | `SPEC-STALE` | 1 |
 | `ROW-MULTI` | 3 (`counsel`, `reachout`, `roost` — the known row-multiplicity pairs) |
 | `DOC-SILENT` | 1 (`splitmodal`) |
 
-**21 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
-→ **21** (the four citation defects). Controls `15/15` at this figure.
+**18 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
+→ **21** (the four citation defects), → **18** (`lenscape`, `craftwork`, `vignette` —
+three briefs that described Bato / “Design” over a Schmidt or Karl spec, re-measured
+from the live sheets 2026-10-24). Controls `15/15` at this figure.
 
 ⚠️ **Scope: the axis reads SHIPPED apps only.** `docs/templates/` holds **3,236** briefs while
 `apps/` holds 1,703 — so **1,533 prepped-but-unshipped briefs are unjudged**, and a stale brief
@@ -65,7 +67,7 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 | `btnspark` | SPEC-STALE | bootstrap-buttons-14 | bootstrap-buttons-02 | bootstrap-buttons-02 | spec-side |
 | `buildwell` | ~~DOCS-STALE~~ **FIXED** | celt | ~~balay~~ celt | celt | design drift — brief rewritten from the live Celt sheet 2026-10-24 |
 | `captura` | DOCS-STALE | halen | bato | halen | design drift |
-| `craftwork` | DOCS-STALE | schmidt | design | schmidt | design drift |
+| `craftwork` | ~~DOCS-STALE~~ **FIXED** | schmidt | ~~design~~ schmidt | schmidt | design drift — brief re-measured from the live Schmidt sheet 2026-10-24 |
 | `crux` | DOCS-STALE | bbs | olla | bbs | design drift |
 | `derrick` | DOCS-STALE | vertex | engineers | vertex | design drift |
 | `dropform` | DOCS-STALE | contact-form-v8 | dropdown-07 | contact-form-v8 | design drift |
@@ -74,7 +76,7 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 | `formbreeze` | ~~DOCS-STALE~~ **FIXED** | contact-form-v1 | ContactFrom_v1 | contact-form-v1 | citation — `/etc/cf/` demo folder, now labelled |
 | `guideway` | ~~DOCS-STALE~~ **FIXED** | consulotion | ~~consolotion~~ consulotion | consulotion | citation — typo fixed |
 | `jobpulse` | DOCS-STALE | search-form-bar-08 | jobsco | search-form-bar-08 | design drift |
-| `lenscape` | DOCS-STALE | schmidt | bato | schmidt | design drift |
+| `lenscape` | ~~DOCS-STALE~~ **FIXED** | schmidt | ~~bato~~ schmidt | schmidt | design drift — brief + task outline re-measured 2026-10-24 |
 | `medical` | ~~DOCS-STALE~~ **FIXED** | medical | ~~medical-wordpress-themes~~ medical | medical | citation — category URL 301, now `medical` |
 | `praxis` | DOCS-STALE | drpro | university | drpro | design drift |
 | `querybar` | DOCS-STALE | colorlib-search-19 | colorlib-search-18 | colorlib-search-19 | design drift |
@@ -85,18 +87,19 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 | `spinwheel` | DOCS-STALE | carousel-17 | carousel-04 | carousel-17 | design drift |
 | `stallion` | DOCS-STALE | fitness | durg | fitness | design drift |
 | `stepforge` | DOCS-STALE | colorlib-wizard-26 | colorlib-wizard-25 | colorlib-wizard-26 | design drift |
-| `vignette` | DOCS-STALE | karl | bato | karl | design drift |
+| `vignette` | ~~DOCS-STALE~~ **FIXED** | karl | ~~bato~~ karl | karl | design drift — brief + token list re-measured 2026-10-24 |
 | `visage` | DOCS-STALE | vcard2 | thelook | vcard2 | design drift |
 | `zenbloom` | DOCS-STALE | yogabest | yogafun | yogabest | design drift |
 | `zing` | DOCS-STALE | tasteit | zeta | tasteit | design drift |
 
 Classes:
 
-- **design drift (22, 2 fixed → 20)** — the brief names a *different design*:
-  `smithy` (fixed) and `buildwell` (fixed: Balay brief over a Celt app) plus
-  `lenscape`,
-  `visage`, `praxis`, `feastly`, `derrick`, `vignette`, `buildwell`, `captura`,
-  `craftwork`, `crux`, `dropform`, `elixir`, `jobpulse`, `querybar`, `reachform`,
+- **design drift (22, 5 fixed → 17)** — the brief names a *different design*:
+  `smithy`, `buildwell` (Balay brief over a Celt app), `lenscape`, `craftwork`
+  and `vignette` are fixed (the last three on 2026-10-24 in one batch, each
+  re-measured from its spec's live sheet). Remaining:
+  `visage`, `praxis`, `feastly`, `derrick`, `captura`,
+  `crux`, `dropform`, `elixir`, `jobpulse`, `querybar`, `reachform`,
   `searchgate`, `spinwheel`, `stallion`, `stepforge`, `zenbloom`, `zing`. Each
   needs spec **and** brief re-read against the live reference before either is
   "fixed" (the `-24f`/`-24g` rule: adjudicate with the app's own copy, never by

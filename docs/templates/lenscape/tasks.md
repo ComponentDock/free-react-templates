@@ -1,90 +1,76 @@
-# Lenscape — Implementation Tasks
+# Lenscape — Task Outline
 
-## Template Info
-- **Name:** lenscape
-- **Source:** ColorLib "Bato" (https://colorlib.com/wp/template/bato/)
-- **Preview:** https://preview.colorlib.com/theme/bato/
-- **Category:** Photography Portfolio
-- **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+Source: ColorLib **Schmidt** (https://preview.colorlib.com/theme/schmidt/ — HTTP 200,
+7,602 B index, re-read 2026-10-24) · new name **lenscape** · personal portfolio,
+multi-page source consolidated to one page.
 
-## Tasks
+Companion research: `docs/templates/lenscape/design-notes.md`; contract:
+`openspec/specs/template-lenscape/spec.md`.
 
-### Phase 1: Scaffold
-- [ ] Create `apps/lenscape/` by copying simplest existing app (e.g. `apps/abjure/`)
-- [ ] Rename package to `@free-react-templates/lenscape`
-- [ ] Update `public/CNAME` to `lenscape.free.componentdock.com`
-- [ ] Update `package.json` homepage to `https://lenscape.free.componentdock.com`
-- [ ] Update `vite.config.ts` with `injectUiSource()` helper
-- [ ] Run `npm install` at repo root to register workspace in lockfile
-- [ ] Verify `grep -c "free-react-templates/lenscape" package-lock.json` > 0
+> The brief was rewritten 2026-10-24 (it had described ColorLib Bato). Section list
+> and tokens below are measured from the live Schmidt 3.0.0 preview and
+> `css/style.min.css` (190,347 B, sha256 `e37589d769…`). The inner pages
+> `about/services/experience/work/blog/contact.html` are all HTTP 200 and are the
+> reference for the sections a one-pager has to invent.
 
-### Phase 2: Design Tokens (index.css)
-- [ ] Add Google Fonts link in `index.html`: Karla (400,700) + Playfair Display (400,700)
-- [ ] Define `@theme` tokens: brand-yellow (#F9CE00), sage-footer (#b7c2c2), text colors
-- [ ] Configure Tailwind with custom colors for brand, footer, text
+## Section order (top → bottom, as shipped)
 
-### Phase 3: Components (TDD)
-- [ ] **Navbar.tsx** — centered logo + hamburger toggle
-  - Logo text "Lenscape" centered
-  - Hamburger icon on right (square 2px radius, black bg on hover)
-  - Open/close toggle state
-- [ ] **NavPanel.tsx** — off-canvas side panel
-  - Full-height white panel slides in from left
-  - Search input with yellow submit button
-  - Nav links: Home, Work, About, Contact (active = brand yellow)
-  - Thumbnail gallery (4 images)
-  - Click outside or X to close
-- [ ] **Hero.tsx** — full-height carousel with 3 slides
-  - Each slide: 75/25 split (image left, text panel right)
-  - Text panel: slide number (Playfair Display), tag (uppercase, letter-spacing 7px), heading, description, CTA
-  - Carousel auto-advance every 5s
-  - Next/prev navigation arrows
-  - Images: picsum.photos/seed/lenscape-hero-N/1200/800
-- [ ] **WorkGallery.tsx** — 6 alternating work entries
-  - Each entry: 75/25 split alternating left/right
-  - Odd entries: image right, text left (text-inner-right)
-  - Even entries: image left, text right (text-inner-left)
-  - Each has heading (link), description, "View Photo" CTA
-  - Images: picsum.photos/seed/lenscape-work-N/1200/800
-- [ ] **AboutSection.tsx** — 50/50 split with carousel
-  - Left: full-height background image (picsum.photos/seed/lenscape-about/800/900)
-  - Right: 3-slide carousel (About Us, My Story, Career)
-  - Each slide: category title, heading, body text
-  - Career slide: checklist with check icons (lucide-react Check)
-- [ ] **ContactSection.tsx** — address + form
-  - 3-column address block (MapPin, Phone, Mail, Globe icons from lucide-react)
-  - Contact form: Name, Email, Message (textarea) + "Send Message" button
-  - Yellow primary button styling
-- [ ] **NewsletterSection.tsx** — subscribe form
-  - Centered heading "Subscribe Newsletter"
-  - Subtitle text
-  - Email input + "Subscribe Now" yellow button
-  - Dark overlay background
-- [ ] **Footer.tsx** — 3-column footer
-  - Office, Get in Touch, Social columns (centered text)
-  - Social icons (lucide-react): Facebook, Twitter, Google, Dribbble
-  - Copyright line + "Made with ❤ by Component Dock" linking to componentdock.com
-  - Sage background (#b7c2c2)
-- [ ] **App.tsx** — compose all sections in order:
-  Navbar → Hero → WorkGallery → AboutSection → ContactSection → NewsletterSection → Footer
-  (NavPanel rendered conditionally based on nav open state)
+1. **Navbar** — wordmark “Lenscape.”, links Home · About · Services · Skills · Works · Contact; transparent over hero → `#222` bar after scroll; hamburger ≤991px
+2. **Hero** — `100vh` fixed-attachment photo + **right-half gold (`#d5c455`) panel** (hidden ≤767px), subheading “UI/UX Designer & Developer”, h1 at 80px/700, two square CTAs
+3. **About** — portrait/two-column split, `about-info` label list (label `#6e6218`), then the 4-counter band (number `#6e6218`, label `#666`)
+4. **Services** — 4 cards, gold icon, hover fills the card gold
+5. **Skills** — progress bars, gold `#d5c455` fill on a light track, `#6e6218` labels
+6. **Works** — square portfolio grid, gold overlay `opacity .9` on hover
+7. **Testimonials** — white cards, `50%` gold avatar circle with initials, name + role in `#6e6218`
+8. **Contact** — address / email / phone column + 4-field form with gold `:focus` border
+9. **Footer** — wordmark, blurb, social row, Component Dock line
 
-### Phase 4: Testing
-- [ ] Write tests for each component (Vitest + Testing Library)
-- [ ] Test navbar toggle open/close
-- [ ] Test hero carousel navigation
-- [ ] Test work gallery renders 6 entries with alternating layout
-- [ ] Test about carousel navigation
-- [ ] Test contact form renders all fields
-- [ ] Test newsletter form renders input + button
-- [ ] Test footer renders 3 columns and Component Dock link
-- [ ] Verify 100% coverage: `npm run test:coverage -- --workspace=apps/lenscape`
+## Component file plan
 
-### Phase 5: Verification
+```
+src/
+  App.tsx
+  index.css            (Tailwind + @theme tokens)
+  main.tsx
+  components/
+    Navbar.tsx
+    Hero.tsx
+    About.tsx          (split + counters)
+    Services.tsx
+    Skills.tsx
+    Works.tsx
+    Testimonials.tsx
+    Contact.tsx
+    Footer.tsx
+```
+
+## Fidelity notes
+
+- **Colors:** gold `#d5c455` · deep gold `#6e6218` (links, subheads, prices) · ink `#222` · body `#666` · page `#f8f8f8` · light band `#f8f9fa`. Ignore the sheet's Bootstrap vendor hexes (`#0d6efd`, `#212529`, …).
+- **Font:** Poppins (Google Fonts), body 16px/1.8, h1 80px/1.2/700, section h2 40px/1.4/600, subheading 16px/700 uppercase 1px tracking (12px/500 on mobile).
+- **Buttons:** square (`border-radius:0`), `9px 12px`, 12px/700 uppercase, 1px tracking, `box-shadow:0 24px 36px -11px #00000017`; gold bg with `#222` label, outline variant = gold 1px border + gold label.
+- **Hero overlay:** gold panel pinned to the right 50% of the hero, not a dark scrim; it disappears on small viewports.
+- **Navbar:** absolute/transparent at `top:20px` over the hero, solid `#222` once out of it; active link `#6e6218`.
+- **Services hover:** whole card flips to gold — the page's signature interaction.
+- **Works hover:** gold overlay at `.9` with centred title/category.
+- **Skills bars:** gold fill with a gold `::after` cap; keep the two-column bar list on desktop.
+- **Footer:** no dark band of its own — the source footer is a light `2em` band, 13px copyright.
+
+## Implementation tasks
+
+- [ ] Create `apps/lenscape/` by copying the simplest shipped app and renaming the package to `@free-react-templates/lenscape`
+- [ ] `public/CNAME` = `lenscape.free.componentdock.com`; `package.json` homepage to match
+- [ ] `@theme` tokens in `index.css` (gold, deep gold, ink, body, page, light band, Poppins)
+- [ ] Create `Navbar` (transparent → solid on scroll, mobile toggle)
+- [ ] Create `Hero` (fixed-attachment photo + right-half gold panel + two CTAs)
+- [ ] Create `About` (split bio + label list + 4 counters)
+- [ ] Create `Services` (4 cards, gold icon, gold hover fill)
+- [ ] Create `Skills` (progress bars with accessible `role="progressbar"`)
+- [ ] Create `Works` (6 square tiles, gold hover overlay)
+- [ ] Create `Testimonials` (initials avatar cards)
+- [ ] Create `Contact` (address column + 4-field form, gold focus ring)
+- [ ] Create `Footer` (wordmark, social row, Component Dock link)
+- [ ] Compose `App.tsx` in source order
+- [ ] Write tests for every component (100% coverage)
 - [ ] Run `scripts/verify-app.sh lenscape`
-- [ ] Typecheck passes
-- [ ] Lint passes
-- [ ] All tests pass at 100% coverage
-- [ ] Build succeeds
-- [ ] No ColorLib references in app code
-- [ ] Footer links to componentdock.com
+- [ ] Commit and open PR

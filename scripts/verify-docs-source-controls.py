@@ -237,7 +237,9 @@ def c11():
     assert by_app.get('buildwell') == 'AGREE', by_app.get('buildwell')  # fixed 2026-10-24 (design drift)
     for app in ('formbreeze', 'guideway', 'medical', 'soundbite'):        # citation defects, same run
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
-    assert len(res['flags']) == 21, len(res['flags'])
+    for app in ('lenscape', 'craftwork', 'vignette'):                      # briefs re-measured 2026-10-24 (batch 3)
+        assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
+    assert len(res['flags']) == 18, len(res['flags'])
 
 
 CASES = [
@@ -255,7 +257,7 @@ CASES = [
     (c09, 'brief without provenance -> DOC-SILENT note', False),
     (c10, 'the labelled `Source slug:` tier wins over a later URL', False),
     (c10g, 'GATE  disabling the label tier reads the later URL', True),
-    (c11, 'corpus: 1,703 apps, 21 flags, smithy + buildwell + 4 citation fixes', False),
+    (c11, 'corpus: 1,703 apps, 18 flags, smithy + buildwell + 4 citations + 3 briefs re-measured', False),
 ]
 
 
