@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Alms design tokens — measured from the reference stylesheet:
+     - brand yellow #f7ca44: counter panel, buttons, progress bars, overlays,
+       photo date badges, footer links
+     - ink #000: Dosis headings (300 weight)
+     - body #555555: Overpass body copy, 16px / 1.8 / 300
+     - muted #999999, soft #a2a2a2, faint #b3b3b3
+     - band #fafafa: alternating section ground
+     - line #f2f2f2: progress tracks and hairlines
+     - footer #404040: footer ground
+     - success #28a745: success-story button border
+     - fonts: Dosis (headings), Overpass (body)
+     - buttons are square (0 radius) with a 2px border and uppercase labels */
+  --color-brand: #f7ca44;
+  --color-primary-50: #fef8e3;
+  --color-primary-100: #fdf0c0;
+  --color-primary-200: #fbe08a;
+  --color-primary-300: #f9d061;
+  --color-primary-400: #f8cd50;
+  --color-primary-500: #f7ca44;
+  --color-primary-600: #f7ca44;
+  --color-primary-700: #e0b32e;
+  --color-primary-800: #c79d22;
+  --color-primary-900: #a37f18;
+  --color-ink: #000000;
+  --color-body: #555555;
+  --color-muted: #999999;
+  --color-soft: #a2a2a2;
+  --color-faint: #b3b3b3;
+  --color-line: #f2f2f2;
+  --color-band: #fafafa;
+  --color-footer: #404040;
+  --color-success: #28a745;
+  --font-sans: 'Overpass', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Dosis', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 300;
+    line-height: 1.2;
+    color: var(--color-ink);
+  }
+}
