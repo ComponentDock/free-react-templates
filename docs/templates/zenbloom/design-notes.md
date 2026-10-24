@@ -1,162 +1,196 @@
-# Zenbloom — Design Notes & Task Outline
+# Zenbloom — Design Notes
 
-## Source mapping
+- **Source slug:** `yogabest`
+- **ColorLib name:** Yogabest (yoga studio landing, Bootstrap 4 build)
+- **Listing:** https://colorlib.com/wp/template/yogabest/
+- **Preview:** https://preview.colorlib.com/theme/yogabest/ — HTTP 200, 44,489 B,
+  sha256 `bfafd5c31693f96e…` (measured 2026-10-24); page title
+  `Yogabest - Free Bootstrap 4 Template by Colorlib`
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/yogabest-colorlib-template.jpg
+  (1,200 × 946)
+- **New name:** zenbloom · **Category:** Yoga studio / wellness landing
+- **Spec:** `openspec/specs/template-zenbloom/spec.md`
+- **App:** `apps/zenbloom/` (TopBar · Navbar · Hero · Services · About · Features ·
+  Counter · Classes · Testimonials · Schedule · Trainers · Blog · Footer)
 
-| Field        | Value                                         |
-| ------------ | --------------------------------------------- |
-| ColorLib     | Yogafun                                       |
-| Slug         | yogafun                                       |
-| Preview      | https://preview.colorlib.com/theme/yogafun/   |
-| Source page  | https://colorlib.com/wp/template/yogafun/     |
-| New name     | zenbloom                                      |
-| App path     | apps/zenbloom                                 |
-| Package      | @free-react-templates/zenbloom                |
+Rewrite status: this brief replaced a **Yogafun** description on 2026-10-24 — the
+neighbouring sibling in the same family, a different design (and, per the earlier
+prep note, a different sheet). Docs-source drift caught it
+(`scripts/verify-docs-source.py`, `DOCS-STALE` `brief=yogafun`); the spec, the
+`TEMPLATES.md` row (`line 1892`) and the shipped app all recreate `yogabest`.
+Values below re-measured from the live reference that day; the sheet hash
+(`e4172187ba7f…`) is unchanged since the 2026-10-23 pass, so the earlier token
+work still holds.
 
-## Visual design (from screenshot + DOM analysis)
+## Reference identity (measured 2026-10-24)
 
-Yoga/wellness template with a dark olive-green color scheme (#71774b as
-brand). Clean, modern layout with generous whitespace. Hero section uses
-a full-bleed background image with dark overlay and large centered heading.
-Feature sections alternate between text-left/image-right and light
-backgrounds. The olive green gives it an earthy, organic feel appropriate
-for a yoga studio. Cards have no border-radius (sharp edges), buttons
-use Bootstrap-style 0.25rem radius. Testimonials use a horizontal
-carousel. Counter section is the only colored background (olive green).
+| Artefact | Bytes | sha256 (head) |
+| --- | --- | --- |
+| `/theme/yogabest/` (index) | 44,489 | `bfafd5c31693f96e…` |
+| `theme/yogabest/css/style.css` | 82,521 | `e4172187ba7f952b…` |
+| `css/owl.carousel.min.css`, `owl.theme.default.min.css`, `animate.css`, `magnific-popup.css`, `flaticon.css` + Bootstrap 4 & Font Awesome via CDN | supporting sheets | — |
 
-## Section implementation order
+The page is a large one-pager: **115** anchors, **44** inline
+`background-image` declarations and only **1** `<img>` — this design paints
+photography through CSS everywhere (hero, services, about, features, counters,
+testimonials, CTA). **No form** on the home page. Sibling pages exist
+(`about.html`, `trainer.html`, `classes.html`, `schedule.html`, `blog.html`,
+`contact.html`); Zenbloom recreates the **home page only**.
 
-### 1. App shell + Navbar
-- Create apps/zenbloom from simplest existing app (copy + rename)
-- Register workspace, npm install
-- Navbar: dark bg, logo "Zenbloom" (Montserrat bold), nav links
-- Dropdown for Classes on desktop, hamburger on mobile
-- Use packages/ui components where possible (Button, etc.)
+## Design tokens (from `css/style.css`, canonical over the screenshot)
 
-### 2. Hero Section
-- Full-viewport background image via picsum.photos placeholder
-- Dark overlay (bg-black/60 or similar)
-- Centered heading: "Lose Yourself In Ambience & Atmosphere" (Montserrat)
-- "Watch Video" button with play icon (lucide-react PlayCircle)
-- Animate entrance with CSS animation
+| Role | Value | Evidence in the sheet |
+| --- | --- | --- |
+| Brand green | `#6cae22` (60 declarations) | icons, kickers, counters, buttons, active states |
+| Green tint | `#9acb56` (9) | gradients / hover fills |
+| Paper | `#fff` (80) | page and card beds |
+| Ink | `#000000` (19) · `#212529` (8, Bootstrap default) | headings on light bands |
+| Neutrals | `#6c757d` (10) · `#dee2e6` (8) · `#007bff` (10, Bootstrap link) | muted copy, rules, default links |
+| Typeface | **Poppins** (`"Poppins", Arial, sans-serif`, 3 rules) + **Reenie Beanie** (`"Reenie Beanie", cursive`, 7 rules) | body/labels vs the handwritten script kickers |
+| Hero | `.hero-wrap{width:100%;height:900px;background-size:cover}` + angular clip (`.degree-right`) | the skewed hero signature |
+| Radii | `50%` (23 — avatars, play button, social dots) · `0.25rem` (9) · `4px` / `5px` (cards, inputs) | radii census |
+| Alternating bands | white and `bg-light` (`#f8f9fa`) | `.ftco-section` vs `.ftco-section.bg-light` |
 
-### 3. Features Grid
-- 3-column layout (col-lg-4 each)
-- Center column: scaled image with frame overlay
-- Left/right columns: 2 feature items each (icon + h3 + description)
-- Items: Chakra, Lotus, Chakra 2, Yoga
-- Responsive: stack on mobile, image above/below text
+Palette census, most-used first: `#fff` ×80, `#6cae22` ×60, `#000000` ×19,
+`#6c757d` ×10, `#007bff` ×10, `#9acb56` ×9. **One green over white/black** — no
+second brand hue appears above nine uses. (`#f96d00`, cited by an earlier spec
+pass as an "accent orange", has **0** occurrences in the live sheet; treat it as
+an app-side addition, not a source token.)
 
-### 4. Do Yoga Today
-- Two-column section
-- Left: heading "Do Yoga Today For Better Tomorrow", paragraph, "Read More" link
-- Right: scaled image with frame overlay (parallax-style)
-- Responsive: stack on mobile
+## Visual design (from the TEMPLATES.md screenshot)
 
-### 5. Perfect Yoga Style
-- Full-width, light background section
-- Heading + description text
-- Simple text section, centered
+A thin dark **top bar** with phone, e-mail and four round social dots, then a
+transparent **navbar** over a green-tinted yoga photo. The hero is the design's
+set piece: a full-height photo with the bottom-right corner **cut at an angle**
+(so white intrudes diagonally), a handwritten green script kicker
+(`Welcome to Yogabest` in Reenie Beanie), a large light-weight white Poppins
+headline `Yoga Enhances Your Life`, a short paragraph and a round green
+**play button** for the intro video. Screenshot samples cluster on olive/green
+(`#4a5434`, `#78814c`, `#a3a991`) plus white — the photo is the colour. Below it:
+a white band with three icon cards, a split about block ("Life in Divine Yoga"),
+a dark photo band with four equal feature cards, a counter row, a six-card
+classes grid, a testimonial slider over a photo, a schedule table, four trainer
+portraits, three blog cards and a dark footer.
 
-### 6. Yoga Classes
-- 6-card grid (3x2 on desktop, 2x3 on tablet, 1x6 on mobile)
-- Each card: image (picsum placeholder) + h3 heading
-- Class names: Yoga Barre, Yoga Core, Yoga For Health,
-  Yoga For Beginners, Yoga For All, Yoga Restore
-- Hover: image zoom effect
+## Section order (as the reference renders)
 
-### 7. Testimonials
-- Horizontal carousel/slider
-- Each slide: avatar (picsum), name, role, quote
-- Navigation arrows (left/right)
-- People: John Smith (XYZ Inc. Client), Joshua Darren, etc.
+1. **Top bar + navbar** — phone, e-mail, 4 social dots; dark transparent nav with
+   logo, `Home / About / Trainer / Classes / Schedule / Blog / Contact`.
+2. **Hero** — `.hero-wrap.degree-right` (900px): script kicker, `h1`, paragraph,
+   play button.
+3. **Services** — `.ftco-services.bg-light`: three icon cards
+   (`Outdoor Activites`, `Experienced Trainers`, `Happy Environment`).
+4. **About** — `.ftco-about.img` split: photo left, "Life in Divine Yoga" +
+   blockquote ("I am standing on my own altar, The Poses are my prayers") +
+   "This is how we work on our clients, Watch video".
+5. **Features** — `.ftco-services.img` on a photo: `Control Your Body To Free
+   Your Soul` + four cards (`Body & Mind Balance`, `Healthy Daily Life`,
+   `Improves your flexibility`, + one more).
+6. **Counters** — `.ftco-counter.img`: four animated figures.
+7. **Classes** — `h2` "Yogabest Classes" + six cards
+   (`Private & Group Lessons`, `Yoga for Pregnant`, `Yoga for Beginners`,
+   `Yoga Barre`, `Yoga Core`, `Yoga Restore`).
+8. **Testimonials** — `.testimony-section.bg-light`: `h2` "What They Are Saying"
+   over a photo with a quote column, five slides.
+9. **Schedule** — `h2` "Yogabest Schedule" + a weekly table inside
+   `.table-wrap` (horizontal scroll on mobile).
+10. **Trainers** — `h2` "The Best Trainer For You" + four portraits
+    (Elizabeth Nelson, Scarlett Torres, Victoria Wright, Stella Perry).
+11. **Blog** — `.bg-light`: `h2` "Recent Post" + three cards ("Treat Your Body
+    Like A Temple" repeated).
+12. **Footer** — `.ftco-footer`: brand + socials, `Recent Blog`, `Explore`,
+    `Have a Questions?` columns.
 
-### 8. Counter Section
-- Olive green background (#71774b)
-- 3-column layout with icons (lucide-react)
-- Items: Chat With Us (MessageCircle), Happy Customers (Heart),
-  Fast Support (Zap)
-- Each: icon + heading + short description
+## Section-by-section fidelity notes
 
-### 9. Blog
-- Heading: "Our Blog"
-- 2-column grid of blog post cards
-- Each: image, date, title, excerpt, "Read More" link
-- Responsive: stack on mobile
+**Top bar + navbar.** The top bar is the only dark strip above the hero
+(phone/e-mail left, round social dots right). The navbar is transparent over the
+photo and turns solid on scroll; links are white, small, tracked.
 
-### 10. Subscribe
-- Light background section
-- Heading: "Subscribe"
-- Email input + submit button
-- Description text above form
+**Hero.** Full-bleed photo, 900px tall on desktop, with the **diagonal cut** at
+the bottom-right — that angle is the design's identity; reproduce it with a
+clipped pseudo-element or `clip-path`, not a straight edge. Kicker is script
+(Reenie Beanie) in brand green; headline is Poppins, light weight, white, two
+lines; the round green play button carries a white triangle.
 
-### 11. Footer
-- Dark background (#212529)
-- 4-column grid: About, Contact Info, Quick Links, (empty or social)
-- Bottom: copyright + "Made with Component Dock" link
-- Responsive: stack on mobile
+**Services.** Three equal cards on `bg-light`: thin green line icon, bold title,
+muted blurb. No borders — the cards float on the band's tint.
 
-## Design token notes (for index.css @theme)
+**About.** Photo left, copy right (or reversed on mobile). The blockquote is set
+in italic Poppins and prefixed by a green quote glyph; the video link is a small
+green underlined label.
 
-```css
-@theme {
-  --color-brand: #71774b;
-  --color-brand-dark: #535837;
-  --color-brand-darker: #44482d;
-  --color-brand-light: #b0b68b;
-  --color-brand-muted: #8f965f;
-}
-```
+**Features.** Dark photo band with white `h2` centred and four translucent cards
+in a row; each card is icon + title + one-line blurb.
 
-Fonts loaded via Google Fonts link in index.html:
-- Montserrat (700) — headings, logo
-- Oxygen (400) — body text
+**Counters.** Four columns on a photo, big green numerals with muted captions;
+the source animates them up on scroll.
 
-## Fidelity notes
+**Classes.** Six cards, three per row: photo, title, meta line (level/duration),
+and a green "join now" style link.
 
-- Original uses Bootstrap grid (col-lg-4, col-md-6). Recreate with
-  Tailwind grid/flex utilities.
-- Original slider uses Owl Carousel. Replace with simple React state
-  carousel or CSS-only approach.
-- Original uses Font Awesome + Ionicons. Replace with lucide-react.
-- Original images: images/img_1.jpg etc. Use picsum.photos placeholders.
-- Original testimonial avatars: images/person_1.jpg etc. Use picsum with
-  seed for determinism.
-- Original "Watch Video" button wraps a play icon in a rounded border.
-  Recreate with a circular border + PlayCircle icon.
-- Original feature items use `.feature-1` class with icon + text.
-  Recreate as flex column with lucide icon + heading + paragraph.
+**Testimonials.** Photo band left, quote column right — avatar circle, quote,
+name, role; five slides with dots.
 
-## Reference tokens (measured 2026-10-23)
+**Schedule.** A plain table: time rows × weekday columns, header row in green,
+hairline dividers, no zebra. It scrolls horizontally under `md`.
 
-Read from `https://preview.colorlib.com/theme/yogabest/` (HTTP 200, 44,489 B,
-title `Yogabest - Free Bootstrap 4 Template by Colorlib`) and its theme sheet
-`css/style.css` (82,521 B, sha256 `e4172187ba7f…`).
+**Trainers.** Four portraits with name + role beneath, square photos, green
+role text.
 
-**Rebuild flag caveat (tool fixed)**: `measure-reference-tokens.py` used to report `rebuilt=True` for
-this page, but that is a **false positive** — its `3\.0\.\d` regex matched
-`js/jquery-migrate-3.0.1.min.js`. The page has no `?v=` asset markers, no `/kit/`,
-uses Bootstrap 4, and self-identifies as a Colorlib BS4 build, so this IS the
-original demo and any mismatch is a prep-level fact. The detector now keys on
-asset/version markers only, so this demo reports `rebuilt=False`.
+**Blog.** Three cards: photo, date/meta, title, `read more`.
 
-| Token | Reference | App (`apps/zenbloom`) |
-| ----- | --------- | --------------------- |
-| Brand | `#6cae22` (60, `!important` on `.btn.btn-primary`) | `#6cae22` (`--color-sage-400`) ✓ |
-| Hero gradient | `#9acb56` → transparent (`.overlay-2`, 71% stop) | not modelled |
-| Ink | `rgba(0,0,0,0.8)` headings at **400** | headings bold |
-| Body copy | `#999999` (16px) | not tokenised |
-| Dark panel | `#141b25` (footer, table head, class titles) | not tokenised |
-| Script accent | `"Reenie Beanie", cursive` (testimonial numerals 40px, blog meta) | `--font-display: 'Reenie Beanie'` ✓ |
-| Face | Poppins 400 body 16px | Poppins ✓ |
-| Button | radius 4px, `9px 12px`, hover transparent + green label | 4px-ish ✓ |
-| Loader | `#F96D00` inline SVG stroke (`#ftco-loader`) | `--color-ember-400: #f96d00` ← traces here, not a brand role |
+**Footer.** Dark ground with four columns (brand + socials, recent posts, explore
+links, contact). Replace the source credit with the Component Dock line.
 
-`#F96D00` is markup, not sheet — a stylesheet-only census cannot see it, which is
-why it looked "invented" in an earlier pass. It is real, but it belongs to the
-preloader spinner, so it should not be used for section accents.
+## Source → React adaptation
 
-Section order measured: top bar (phone/email/social) → navbar → 900px hero
-"Welcome to Yogabest" → services (bg-light) → about band with `#000` overlay →
-services band (image) → counters over photo → Yoga Classes → testimonial
-(Reenie Beanie numerals) → schedule tabs → trainers → blog (bg-light) →
-`#141b25` footer.
+| Source | Source element | React equivalent |
+| --- | --- | --- |
+| top bar + `.ftco-navbar-light` | contact strip + transparent nav | `TopBar`, `Navbar` |
+| `.hero-wrap.degree-right` | 900px photo hero with angled cut | `Hero` (clip-path) |
+| `.ftco-services.bg-light` | three icon cards | `Services` |
+| `.ftco-about.img` | split about + blockquote + video link | `About` |
+| `.ftco-services.img` | photo band + four cards | `Features` |
+| `.ftco-counter.img` | four counters | `Counter` |
+| classes grid | six class cards | `Classes` |
+| `.testimony-section` | quote slider over photo | `Testimonials` |
+| `.table-wrap` | weekly schedule table | `Schedule` |
+| trainer grid | four portraits | `Trainers` |
+| `.bg-light` blog band | three post cards | `Blog` |
+| `.ftco-footer` | four widget columns | `Footer` (Component Dock credit) |
+
+## Placeholder images / fonts
+
+`https://picsum.photos/seed/zenbloom-<n>/<w>/<h>` for every photo band (hero,
+about, features, counters, testimonials, class cards, trainers, blog).
+**Poppins** and **Reenie Beanie** come from Google Fonts via `<link>` — the two
+families the sheet names. Icons from `lucide-react`; the source's flaticon set is
+not copied.
+
+## App deltas (as shipped in `apps/zenbloom/`)
+
+- The palette is a green ramp around `#6cae22` (`--color-sage-400`) plus an
+  **ember ramp** around `#f96d00` (`--color-ember-400`) used for CTA hovers and
+  the loader. The ember hue is **not** in the live sheet (0 occurrences) — it is
+  an app-side accent; when the app is next touched, either drop it or keep it
+  deliberately as a secondary accent.
+- The hero keeps the angled cut and the script kicker; the play button opens no
+  video (no third-party embed), so it is decorative.
+- Counters render final values (no scroll animation); the testimonial slider
+  ships as a static set at desktop width.
+- All photography is picsum placeholders; the flaticon glyphs are replaced by
+  `lucide-react`.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer SHALL link
+  [Component Dock](https://www.componentdock.com/). That is the only attribution
+  line the recreation carries.
+- **Provenance ban.** No file under `apps/zenbloom/` may name the source
+  designer, carry a `colorlib.com` URL, or reuse the source template's name —
+  code, comments, CSS, markup, metadata and filenames included (AGENTS.md
+  rule 5).
+- **Deploy identity.** `apps/zenbloom/public/CNAME` =
+  `zenbloom.free.componentdock.com` and the package `homepage` =
+  `https://zenbloom.free.componentdock.com`.

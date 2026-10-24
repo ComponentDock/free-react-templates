@@ -34,19 +34,19 @@ Every shipped app lands in exactly one bucket:
 Notes: `NEAR-SLUG` (one normalised slug is a prefix of the other — spelling
 variant, not drift), `ROW-MULTI`, `BRIEF-PICKS-OTHER-SIBLING`.
 
-## Measured state (2026-10-24, working tree on top of `origin/main` @ `a71fb9300`, re-run after brief batch 5)
+## Measured state (2026-10-24, working tree on top of `origin/main` @ `dd03a359a`, re-run after brief batch 6)
 
 `shipped apps read: 1703 · TEMPLATES.md rows: 2857`
 
 | bucket | count |
 | --- | --- |
-| `AGREE` | 1,690 |
-| `DOCS-STALE` | 9 |
+| `AGREE` | 1,699 |
+| `DOCS-STALE` | 0 |
 | `SPEC-STALE` | 0 |
 | `ROW-MULTI` | 3 (`counsel`, `reachout`, `roost` — the known row-multiplicity pairs) |
 | `DOC-SILENT` | 1 (`splitmodal`) |
 
-**9 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
+**0 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
 → **21** (the four citation defects), → **18** (`lenscape`, `craftwork`, `vignette` —
 three briefs that described Bato / “Design” over a Schmidt or Karl spec, re-measured
 from the live sheets 2026-10-24), → **17** (`btnspark` — the last SPEC-STALE, its spec
@@ -54,10 +54,13 @@ rewritten from the live `bootstrap-buttons-02` sheet 2026-10-24), → **14** (`c
 `crux`, `derrick` — brief batch 4, each rewritten from its spec's live sheet
 2026-10-24: Halen, Bbs, Vertex), → **9** (brief batch 5 — the search-form-bar family
 `querybar`/`searchgate`/`jobpulse` and the `/etc/cf/` contact forms
-`reachform`/`dropform`, one sheet census per family, 2026-10-24). Controls `15/15` at this
+`reachform`/`dropform`, one sheet census per family, 2026-10-24), → **0** (brief batch 6 —
+`elixir`/`feastly`/`praxis`/`spinwheel`/`stallion`/`stepforge`/`visage`/`zenbloom`/`zing`,
+each rewritten from its spec's live sheet: Pharma, Foodfun, Drpro, Carousel 17,
+Fitness, Wizard 26, Vcard2, Yogabest, Tasteit, 2026-10-24). Controls `15/15` at this
 figure.
-`SPEC-STALE` is now an **empty bucket**: no shipped app has a spec that names a design
-its row does not.
+`SPEC-STALE` and `DOCS-STALE` are now **empty buckets**: no shipped app has a spec
+that names a design its row does not, and no shipped app's brief names another design.
 
 ⚠️ **Scope: the axis reads SHIPPED apps only.** `docs/templates/` holds **3,236** briefs while
 `apps/` holds 1,703 — so **1,533 prepped-but-unshipped briefs are unjudged**, and a stale brief
@@ -79,41 +82,40 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 | `crux` | ~~DOCS-STALE~~ **FIXED** | bbs | ~~olla~~ bbs | bbs | design drift — brief rewritten from the live Bbs sheet 2026-10-24 |
 | `derrick` | ~~DOCS-STALE~~ **FIXED** | vertex | ~~engineers~~ vertex | vertex | design drift — brief + tasks rewritten from the live Vertex sheet 2026-10-24 |
 | `dropform` | ~~DOCS-STALE~~ **FIXED** | contact-form-v8 | ~~dropdown-07~~ contact-form-v8 | contact-form-v8 | design drift — brief rewritten from the live sheet 2026-10-24 |
-| `elixir` | DOCS-STALE | pharma | colorlib-wizard-29 | pharma | design drift |
-| `feastly` | DOCS-STALE | foodfun | buri | foodfun | design drift |
+| `elixir` | ~~DOCS-STALE~~ **FIXED** | pharma | ~~colorlib-wizard-29~~ pharma | pharma | design drift — brief + tasks rewritten from the live Pharma sheet 2026-10-24 |
+| `feastly` | ~~DOCS-STALE~~ **FIXED** | foodfun | ~~buri~~ foodfun | foodfun | design drift — brief + tasks rewritten from the live Foodfun sheet 2026-10-24 |
 | `formbreeze` | ~~DOCS-STALE~~ **FIXED** | contact-form-v1 | ContactFrom_v1 | contact-form-v1 | citation — `/etc/cf/` demo folder, now labelled |
 | `guideway` | ~~DOCS-STALE~~ **FIXED** | consulotion | ~~consolotion~~ consulotion | consulotion | citation — typo fixed |
 | `jobpulse` | ~~DOCS-STALE~~ **FIXED** | search-form-bar-08 | ~~jobsco~~ search-form-bar-08 | search-form-bar-08 | design drift — brief rewritten from the live sheet 2026-10-24 |
 | `lenscape` | ~~DOCS-STALE~~ **FIXED** | schmidt | ~~bato~~ schmidt | schmidt | design drift — brief + task outline re-measured 2026-10-24 |
 | `medical` | ~~DOCS-STALE~~ **FIXED** | medical | ~~medical-wordpress-themes~~ medical | medical | citation — category URL 301, now `medical` |
-| `praxis` | DOCS-STALE | drpro | university | drpro | design drift |
+| `praxis` | ~~DOCS-STALE~~ **FIXED** | drpro | ~~university~~ drpro | drpro | design drift — brief + tasks rewritten from the live Drpro sheet 2026-10-24 |
 | `querybar` | ~~DOCS-STALE~~ **FIXED** | colorlib-search-19 | ~~colorlib-search-18~~ colorlib-search-19 | colorlib-search-19 | design drift — brief rewritten from the live sheet 2026-10-24 |
 | `reachform` | ~~DOCS-STALE~~ **FIXED** | contact-form-v2 | ~~contact-form-17~~ contact-form-v2 | contact-form-v2 | design drift — brief rewritten from the live sheet 2026-10-24 |
 | `searchgate` | ~~DOCS-STALE~~ **FIXED** | search-form-bar-06 | ~~colorlib-search-5~~ search-form-bar-06 | search-form-bar-06 | design drift — brief rewritten from the live sheet 2026-10-24 |
-| `smithy` | DOCS-STALE | satner | schmidt | satner | design drift |
+| `smithy` | ~~DOCS-STALE~~ **FIXED** | satner | ~~schmidt~~ satner | satner | design drift — brief rewritten 2026-10-24 |
 | `soundbite` | ~~DOCS-STALE~~ **FIXED** | the-hustle-hour | ~~hustlehour~~ the-hustle-hour | the-hustle-hour | citation — demo folder, now `the-hustle-hour` |
-| `spinwheel` | DOCS-STALE | carousel-17 | carousel-04 | carousel-17 | design drift |
-| `stallion` | DOCS-STALE | fitness | durg | fitness | design drift |
-| `stepforge` | DOCS-STALE | colorlib-wizard-26 | colorlib-wizard-25 | colorlib-wizard-26 | design drift |
+| `spinwheel` | ~~DOCS-STALE~~ **FIXED** | carousel-17 | ~~carousel-04~~ carousel-17 | carousel-17 | design drift — brief + tasks rewritten from the live Carousel 17 sheet 2026-10-24 |
+| `stallion` | ~~DOCS-STALE~~ **FIXED** | fitness | ~~durg~~ fitness | fitness | design drift — brief + tasks rewritten from the live Fitness sheet 2026-10-24 |
+| `stepforge` | ~~DOCS-STALE~~ **FIXED** | colorlib-wizard-26 | ~~colorlib-wizard-25~~ colorlib-wizard-26 | colorlib-wizard-26 | design drift — brief + tasks rewritten from the live Wizard 26 bundle 2026-10-24 (stale todo.md removed) |
 | `vignette` | ~~DOCS-STALE~~ **FIXED** | karl | ~~bato~~ karl | karl | design drift — brief + token list re-measured 2026-10-24 |
-| `visage` | DOCS-STALE | vcard2 | thelook | vcard2 | design drift |
-| `zenbloom` | DOCS-STALE | yogabest | yogafun | yogabest | design drift |
-| `zing` | DOCS-STALE | tasteit | zeta | tasteit | design drift |
+| `visage` | ~~DOCS-STALE~~ **FIXED** | vcard2 | ~~thelook~~ vcard2 | vcard2 | design drift — brief + tasks rewritten from the live Vcard2 sheet 2026-10-24 |
+| `zenbloom` | ~~DOCS-STALE~~ **FIXED** | yogabest | ~~yogafun~~ yogabest | yogabest | design drift — brief + tasks rewritten from the live Yogabest sheet 2026-10-24 |
+| `zing` | ~~DOCS-STALE~~ **FIXED** | tasteit | ~~zeta~~ tasteit | tasteit | design drift — brief + tasks rewritten from the live Tasteit sheet 2026-10-24 |
 
 Classes:
 
-- **design drift (22, 13 fixed → 9)** — the brief names a *different design*:
+- **design drift (22, all 22 fixed)** — the brief names a *different design*:
   `smithy`, `buildwell` (Balay brief over a Celt app), `lenscape`, `craftwork`,
   `vignette` and the 2026-10-24 batch-4 trio `captura` (Bato brief over Halen),
   `crux` (Olla over Bbs) and `derrick` (Engineers over Vertex) are fixed, each
   re-measured from its spec's live sheet, and the batch-5 five (`querybar` ← Colorlib
   Search Form V18, `searchgate` ← Search Form V5, `jobpulse` ← Jobsco, `reachform` ←
-  Contact Form 17, `dropform` ← Dropdown 07) are fixed the same day. Remaining:
-  `visage`, `praxis`, `feastly`, `elixir`, `spinwheel`, `stallion`, `stepforge`,
-  `zenbloom`, `zing`. Each
-  needs spec **and** brief re-read against the live reference before either is
-  "fixed" (the `-24f`/`-24g` rule: adjudicate with the app's own copy, never by
-  preference).
+  Contact Form 17, `dropform` ← Dropdown 07) are fixed the same day, and batch 6
+  (`elixir` ← Wizard 29, `feastly` ← Buri, `praxis` ← University, `spinwheel` ←
+  Carousel 04, `stallion` ← Durg, `stepforge` ← Wizard 25, `visage` ← The Look,
+  `zenbloom` ← Yogafun, `zing` ← Zeta) closes the class: each brief was rewritten
+  from its spec's live sheet, never by preference (the `-24f`/`-24g` rule).
 - **citation defect (4, all fixed 2026-10-24)** — same design, wrong slug in the brief:
   `formbreeze` cites the `/etc/cf/ContactFrom_v1/` demo folder for `contact-form-v1`;
   `guideway` cites `consolotion` (wp 404) for `consulotion` (wp 200);

@@ -1,124 +1,192 @@
-# Zing — Implementation Notes
+# Zing — Design Notes
 
-## Replication Reference
+- **Source slug:** `tasteit`
+- **ColorLib name:** Tasteit (demo brand "Taste.it — Family Restaurant Since 1958")
+- **Listing:** https://colorlib.com/wp/template/tasteit/
+- **Preview:** https://preview.colorlib.com/theme/tasteit/ — HTTP 200, 49,823 B,
+  sha256 `b80e76d207c75f52…` (measured 2026-10-24); page title
+  `Taste.it | Family Restaurant Since 1958`
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/tasteit-free-template.jpg
+  (1,200 × 946)
+- **New name:** zing · **Category:** Restaurant landing
+- **Spec:** `openspec/specs/template-zing/spec.md`
+- **App:** `apps/zing/` (Navbar · Hero · About · Menu · Ingredients ·
+  Testimonials · Chefs · Blog · CtaBanner · Newsletter · Footer)
 
-- **Source:** ColorLib "Zeta" — https://colorlib.com/wp/template/zeta/
-- **Preview:** https://preview.colorlib.com/theme/zeta/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/zeta-free-template.jpg
-- **Preview fetched:** Yes (24,713 bytes HTML, 23,319 bytes main CSS)
-- **CSS tokens extracted:** Yes — brand colors, fonts, button styles, backgrounds
+Rewrite status: this brief replaced a **Zeta** description on 2026-10-24 — Zeta is
+a different ColorLib theme entirely (an app-landing page), not this restaurant.
+Docs-source drift caught it (`scripts/verify-docs-source.py`, `DOCS-STALE`
+`brief=zeta`); the spec, the `TEMPLATES.md` row (`line 2703`) and the shipped app
+all recreate `tasteit`. Values below re-measured from the live reference that day.
 
-## Section Order (top → bottom)
+## Reference identity (measured 2026-10-24)
 
-1. **Navbar** — sticky, logo left, nav right, hamburger → fullscreen overlay
-2. **Hero Slider** — 3-slide parallax carousel with animated text + Discover CTA
-3. **Features** — 3-col grid, icon + heading + description
-4. **About** — parallax bg, "About Our Project" heading, 4 skill progress bars
-5. **Testimonials** — carousel, 3 items (photo, name, title, quote)
-6. **Services** — parallax bg, 3-col grid, icon + heading + description
-7. **Clients** — logo carousel
-8. **Contact** — parallax bg, "Let's Work Together" heading + CTA button
-9. **Footer** — copyright + 6 social icon links
+| Artefact | Bytes | sha256 (head) |
+| --- | --- | --- |
+| `/theme/tasteit/` (index) | 49,823 | `b80e76d207c75f52…` |
+| `theme/tasteit/css/style.min.css?v=3.0.0` | 196,189 | `9c14287525b09f39…` |
+| `vendor/swiper/14.3.0/swiper-bundle.min.css` (14,615 B), `vendor/fontawesome/7.3.1/…subset.css` (1,700 B) | supporting sheets | — |
 
-## Fidelity Notes
+**This demo is a 3.0.0 rebuild**: every asset carries `?v=3.0.0`, Bootstrap 5 is
+inlined into `style.min.css`, and Roboto / Dancing Script are self-hosted. The
+TEMPLATES.md screenshot is the pre-3.0 release of the same design — layout and
+palette agree, so the screenshot stays usable as the visual reference. The page
+holds **1** `<form>` (the booking card), **no** nav-form, a skip link, and
+`background-image: image-set(...)` on the photo bands (`bg_1`, `bg_2`, `about`,
+`bg_3`).
 
-### Navbar
-- Full-screen overlay menu on hamburger click (dark bg, centered nav + social icons)
-- Social icons in overlay: Pinterest, Facebook, Twitter, Dribbble, Behance, LinkedIn
-- Use `lucide-react` icons for social (or inline SVGs) since FontAwesome is not reused
+## Design tokens (from `css/style.min.css`, canonical over the screenshot)
 
-### Hero Slider
-- Replace OwlCarousel with a React carousel (or simple CSS/JS slider)
-- 3 slides, each with the same parallax background image but different sub-heading
-- Custom dot indicators (small circles, active state)
-- Nav arrows left/right
-- Content fades/slides in on active slide
+| Role | Value | Evidence in the sheet |
+| --- | --- | --- |
+| Brand red | `#cf1f28` (44) | links, active nav, `.btn-primary` fill, `.subheading-2`, footer submit, `.bg-primary` CTA band |
+| A11y accent (3.0.0 patch) | `#e52b34` (3) | `:focus-visible` outline + active-nav underline — a focus accent, **not** the brand fill |
+| Paper | `#fff` (108) · `#f8f9fa` (16, `bg-light` bands) | page and alternating sections |
+| Ink | `#000` (68) · `#343a40` (18) · `#6c757d` (18) | headings, body, muted |
+| Bootstrap link | `#007bff` (21) | default anchors not overridden by the theme |
+| Danger | `#dc3545` (16) | form validation chrome |
+| Footer | `#1a1a1a` ground, `#a3a3a3` copy, `padding: 6em 0 0` | `.ftco-footer` |
+| Subheading (eyebrow) | 16px, weight **900**, uppercase, `letter-spacing: 5px`, `1px solid rgba(255,255,255,.5)` box on dark; `.subheading-2` 18px/700 `#cf1f28` with 85px flanking rules on light | `.subheading`, `.subheading-2` |
+| Typeface | **Roboto** (10 declarations) body/UI + **Dancing Script** (cursive) for the hero's verb phrase | `--bs-font-sans-serif` resolves to Roboto |
+| Radii | `50%` (15 — avatars, dots) · `2px` (6) · `4px` (5) | radii census |
 
-### Features
-- 3 equal columns, centered content
-- White background, clean spacing
-- Use placeholder icons from `lucide-react`
+Palette census, most-used first: `#fff` ×108, `#000` ×68, `#cf1f28` ×44,
+`#007bff` ×21, `#6c757d` ×18, `#343a40` ×18, `#f8f9fa` ×16, `#dc3545` ×16.
 
-### About (Skills)
-- Parallax background image with dark overlay
-- 4 skill bars: Management, Design, Projects, Inspiration
-- Progress bars use brand orange (`#ff4200`) as fill
-- Use percentage-based widths for progress bars
+## Visual design (from the TEMPLATES.md screenshot)
 
-### Testimonials
-- Light background (`rgba(242,244,249,...)`)
-- Section heading with decorative letter span ("Testimonials" + styled "Z")
-- Circular user photo (use `picsum.photos/seed/zing-testimonial-<n>/...`)
-- Quote mark character, name, title, paragraph
+A slim **red contact strip** at the very top (phone + e-mail left, socials right),
+then a transparent dark navbar with the `Taste.it` wordmark (the `.it` in red) and
+uppercase tracked white links, `BOOK YOUR TABLE` last. The hero is a full-bleed
+restaurant photograph (screenshot samples `#021922` teal-dark, `#5e2f2b` warm
+brown) carrying a boxed uppercase eyebrow (`TASTE.IT RESTAURANT`), a huge
+`h1` "Cooking Since" with the year in **Dancing Script red**, and body copy. Below
+it a two-column band: a **red booking card** on the left (Your name, E-mail,
+Phone, Date, Time, Guest → white `Book Your Table Now` button, square corners)
+and a `Welcome to Taste.it` split with a chef portrait on the right. White and
+`#f8f9fa` bands alternate downwards; a dark testimonial band, a `#cf1f28`
+newsletter band and a near-black footer close the page.
 
-### Services
-- Parallax background with dark overlay (same pattern as About)
-- 3-column grid, white text
-- 3 items: smart structure, elements, bold colors
+## Section order (as the reference renders)
 
-### Clients
-- Simple horizontal logo carousel
-- Use placeholder logos or company name text
+1. **Contact strip** — phone `tel:`, e-mail `mailto:`, opening hours
+   ("Tue - Sun / 12:00 - 22:00, Fri - Sat to 23:00"), four social icons
+   (Facebook, X, Instagram, Yelp).
+2. **Navbar** — `.ftco_navbar` dark: `Taste.it` brand, `Home / About / Chef /
+   Menu / Blog / Contact`, `Book a table` CTA.
+3. **Hero** — `.hero-wrap` with `bg_1`: eyebrow `Taste.it Restaurant`,
+   `h1` "Cooking Since" + script `1958`, paragraph, scroll cue.
+4. **Booking + welcome** — `.ftco-wrap-about`: left `Book your Table` card
+   (name, e-mail, phone, date, time, guest + submit), right the chef portrait and
+   `Welcome to Taste.it` copy.
+5. **Intro band** — `.ftco-intro` with `bg_2`: `Private Dinners & Happy Hours`.
+6. **Menu** — `h2` "Our Menu" with six groups (`Brunch`, `Lunch`, `Dinner`,
+   `Desserts`, `Wine Card`, `Drinks & Tea`), three dishes each with price.
+7. **Testimonials** — `.testimony-section` dark photo: `Happy Guests`.
+8. **Chefs** — `.bg-light`: `Our Master Chefs`, four portraits
+   (Marco Ventura, Elena Brooks, Daniel Ortiz, Samuel Price).
+9. **Ingredients** — `Perfect Ingredients` split with photo.
+10. **Blog** — `.bg-light`: `Recent Stories`, three cards.
+11. **Newsletter / CTA** — `.ftco-intro.bg-primary` (red): "We Make Delicious &
+    Nutritious Food" + e-mail field.
+12. **Footer** — `.ftco-footer` on `#1a1a1a`: brand + socials, hours, explore
+    links, contact, copyright.
 
-### Contact
-- Parallax background with dark overlay
-- "Let's Work Together" heading with decorative "Z" span
-- Description paragraph
-- "Contact" button (brand orange, square, no border-radius)
-- Note: original has NO form — just a CTA button linking to contact page
+## Section-by-section fidelity notes
 
-### Footer
-- Dark background (`#171717`)
-- Copyright text left-aligned
-- 6 social icon links right-aligned
-- Footer MUST link `https://www.componentdock.com/` (replaces Colorlib attribution)
+**Contact strip.** Red ground, white text, small type: phone and e-mail as links,
+hours pushed right, then square-ish social glyphs. It is the page's top edge and
+the only place the red reads as a full band besides the newsletter CTA.
 
-## Component Breakdown
+**Navbar.** Transparent over the hero, dark on scroll; brand is `Taste.it` with
+the second syllable red. Links are uppercase, tracked, 12–13px; the CTA is the
+last item.
 
-| Component | Source Section | Notes |
-|-----------|---------------|-------|
-| `Navbar.tsx` | Header | Hamburger + fullscreen overlay |
-| `Hero.tsx` | Hero Slider | 3-slide carousel, parallax bg |
-| `Features.tsx` | Features | 3-column grid |
-| `About.tsx` | About + Skills | Parallax + progress bars |
-| `Testimonials.tsx` | Testimonials | Carousel with testimonials |
-| `Services.tsx` | Services | 3-column grid on parallax |
-| `Clients.tsx` | Clients | Logo carousel |
-| `Contact.tsx` | Contact | CTA section, no form |
-| `Footer.tsx` | Footer | Copyright + social links |
+**Hero.** One photograph, no overlay beyond a light wash; eyebrow is a *boxed*
+uppercase label (1px translucent border) — that box is the design's signature
+besides the script numeral. `h1` is a large sans line, with `1958` rendered in
+Dancing Script red on the same baseline.
 
-## Placeholder Assets
+**Booking card.** Solid `#cf1f28`, square corners, white inputs with no radius,
+white label text, and a white submit button with red label. Six fields in two
+columns, submit full-width at the bottom right. This is the page's only form —
+in React it is controlled state, `preventDefault` on submit.
 
-- Hero images: `https://picsum.photos/seed/zing-hero/1920/1080`
-- About background: `https://picsum.photos/seed/zing-about/1920/800`
-- Services background: `https://picsum.photos/seed/zing-services/1920/800`
-- Contact background: `https://picsum.photos/seed/zing-contact/1920/800`
-- Testimonial avatars: `https://picsum.photos/seed/zing-testimonial-<n>/150/150`
-- Feature/service icons: `lucide-react` icons
+**Welcome split.** Chef portrait right, copy left with a `subheading-2` eyebrow
+(red, tracked, with the 85px flanking rule) and a `h2` in `#343a40`.
 
-## Key Differences from Original
+**Intro band.** Full-bleed photo with a boxed white eyebrow and a large white
+line — a pure statement band, no buttons.
 
-- No FontAwesome — use `lucide-react` for all icons
-- No jQuery/OwlCarousel — pure React carousel implementation
-- No parallax plugin — CSS `background-attachment: fixed` or a lightweight React parallax hook
-- Footer links to Component Dock instead of Colorlib
-- All images are deterministic placeholders via picsum.photos
+**Menu.** Six groups laid out in columns; each dish is name + dotted leader +
+price, with a muted description under the name. Group titles are the `h3`s
+listed above.
 
-## Reference tokens (measured 2026-10-23)
+**Testimonials.** Dark photo band, white boxed eyebrow, quote cards with avatar
+circles, five slides (Swiper in the rebuild).
 
-Read from `https://preview.colorlib.com/theme/tasteit/` (HTTP 200, title
-`Taste.it | Family Restaurant Since 1958`) and its theme sheet
-`css/style.min.css?v=3.0.0` (196,189 B, Bootstrap 5 inlined). The demo is a
-**3.0.0 rebuild**.
+**Chefs.** Four cards on `bg-light`: square photo, name, role in red.
 
-| Token | Reference | App (`apps/zing`) |
-| ----- | --------- | ----------------- |
-| Brand red | `#cf1f28` (44: links, wordmark, nav active/CTA fill, `.bg-primary`, footer social, subscribe submit) | `--color-brand-red: #e52b34` ✗ — that hex is ×3 in the sheet and is the **3.0.0 accessibility accent** (`:focus-visible` outline, active-nav underline, `.subheading-2` rules), not the brand fill |
-| Footer | `#1a1a1a` (`.ftco-footer`, ×1) | `--color-brand-dark: #333333` ✗ — `#333333` is the framework body ink (×63) |
-| Light band | `#fff` / Bootstrap `#f8f9fa` (16) | `--color-brand-light: #f8f9fa` ✓ |
-| Copy | framework `#333` on white | `--color-muted-text: #777777` — no theme rule |
-| Faces | Roboto (11) + **Dancing Script** (4) | `--font-roboto` + `--font-dancing` ✓ |
-| Nav | transparent → white on `.scrolled`, CTA item is a filled `#cf1f28` pill | — |
+**Ingredients.** Split band: text + a list of ingredient chips on one side, photo
+on the other.
 
-Rebuild drift: the screenshot (pre-3.0) shows the darker red booking panel and
-the script "Cooking Since" hero — same structure, older asset set.
+**Blog.** Three cards on `bg-light`: photo, date, title, `read more`.
+
+**Newsletter CTA.** Full-bleed `#cf1f28` band: centred white `h2` and an inline
+e-mail + submit.
+
+**Footer.** Near-black, four widget columns (brand + socials, hours, explore,
+contact), muted copy, bottom bar with the copyright. Replace the source credit
+with the Component Dock line.
+
+## Source → React adaptation
+
+| Source | Source element | React equivalent |
+| --- | --- | --- |
+| contact strip | phone/e-mail/hours/socials | strip inside `Navbar` |
+| `.ftco_navbar` | dark nav + CTA | `Navbar` |
+| `.hero-wrap` `bg_1` | photo hero, boxed eyebrow, script numeral | `Hero` |
+| booking card + welcome split | 6-field form + chef portrait | `About` (form state) |
+| `.ftco-intro` `bg_2` | statement band | `Ingredients` / intro band |
+| menu groups | six tabbed groups × 3 dishes | `Menu` (tab state) |
+| `.testimony-section` | dark quote slider | `Testimonials` |
+| chefs grid | four portraits | `Chefs` |
+| ingredients split | text + chips + photo | `Ingredients` |
+| blog band | three cards | `Blog` |
+| `.ftco-intro.bg-primary` | red newsletter band | `Newsletter` / `CtaBanner` |
+| `.ftco-footer` | four widget columns | `Footer` (Component Dock credit) |
+
+## Placeholder images / fonts
+
+`https://picsum.photos/seed/zing-<n>/<w>/<h>` for the hero, chef portraits, menu
+dishes, testimonial avatars, blog cards and the ingredients split. **Roboto** and
+**Dancing Script** come from Google Fonts via `<link>`; the rebuild self-hosts the
+same two families. Icons from `lucide-react`; the source's Font Awesome 7 subset
+is not copied.
+
+## App deltas (as shipped in `apps/zing/`)
+
+- **Brand token differs:** the app themes on `--color-brand-red: #e52b34`, the
+  rebuild's **focus** accent, rather than the sheet's dominant `#cf1f28` brand
+  fill (44 declarations). When the app is next touched, re-point the token to
+  `#cf1f28` and keep `#e52b34` for focus rings only.
+- Tokens otherwise track the sheet: `--font-roboto`, `--font-dancing`,
+  `--color-brand-dark: #333333`, `--color-brand-light: #f8f9fa`,
+  `--color-muted-text: #777777`.
+- The menu ships as six tabs × three dishes (`useState` active tab), matching the
+  source's grouping.
+- Hero copy keeps the "Cooking Since 1958" construction with the script numeral;
+  the boxed eyebrow is preserved as a bordered label.
+- All photography is picsum placeholders; no third-party slider library — slide
+  state is React.
+
+## Delivery contract (repo rules — non-negotiable)
+
+- **Footer credit.** The footer SHALL link
+  [Component Dock](https://www.componentdock.com/). That is the only attribution
+  line the recreation carries.
+- **Provenance ban.** No file under `apps/zing/` may name the source designer,
+  carry a `colorlib.com` URL, or reuse the source template's name — code,
+  comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
+- **Deploy identity.** `apps/zing/public/CNAME` = `zing.free.componentdock.com`
+  and the package `homepage` = `https://zing.free.componentdock.com`.

@@ -222,7 +222,7 @@ def c10g():
 
 
 def c11():
-    """corpus: 1,703 apps, buckets partition once, 9 flags left after batch 5 (2026-10-24)."""
+    """corpus: 1,703 apps, buckets partition once, 0 flags after batch 6 (2026-10-24)."""
     root = os.path.dirname(HERE)
     res = V.audit(root)
     assert res['total'] == 1703, res['total']
@@ -244,7 +244,10 @@ def c11():
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
     for app in ('querybar', 'searchgate', 'jobpulse', 'reachform', 'dropform'):  # briefs re-measured 2026-10-24 (batch 5)
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
-    assert len(res['flags']) == 9, len(res['flags'])
+    for app in ('elixir', 'feastly', 'praxis', 'spinwheel', 'stallion',  # briefs re-measured 2026-10-24 (batch 6)
+                'stepforge', 'visage', 'zenbloom', 'zing'):
+        assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
+    assert len(res['flags']) == 0, len(res['flags'])
 
 
 CASES = [
@@ -262,7 +265,7 @@ CASES = [
     (c09, 'brief without provenance -> DOC-SILENT note', False),
     (c10, 'the labelled `Source slug:` tier wins over a later URL', False),
     (c10g, 'GATE  disabling the label tier reads the later URL', True),
-    (c11, 'corpus: 1,703 apps, 9 flags, the 18 brief/spec fixes through batch 5 all AGREE', False),
+    (c11, 'corpus: 1,703 apps, 0 flags, the 27 brief/spec fixes through batch 6 all AGREE', False),
 ]
 
 
