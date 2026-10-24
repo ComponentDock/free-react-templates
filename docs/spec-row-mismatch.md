@@ -75,7 +75,7 @@ after the `concertina` rewrite (spec `accordion-05` → `accordion-16`; census
 | `givehope` | `ROW-POINTER` | bcharity | givehope | "Bless others with your gift", "Become A Volunteer" |
 | `logistico` | `ROW-POINTER` | thelogistico | logistico | "We Give You Complete Control", "of Your Shipments" |
 | `prose` | `SPEC-STALE` | blogger | author | "Best Seller Book Of The Week", "About The Book" |
-| `spark` | `ROW-POINTER` | appco | spark | "App Landing Page", "Easy to Customize" |
+| `spark` | `ROW-POINTER` → **fixed** | appco | spark | "App Landing Page", "Easy to Customize" — design rebuilt as `flint` (2026-10-24), both rows re-pointed |
 | `stride` | `ROW-POINTER` | stamina | accordion-19 | "We Believe Little Things Matter", "Stay Healthy" |
 | `sudsy` | `ROW-POINTER` | carwash | sparkleclean | "Your car will look as your new one", "We have an application" |
 | `vellum` | `SPEC-STALE` | accordion-16 | readit | "Hello! Welcome to", "Build a Website in Minutes…" |
@@ -97,6 +97,7 @@ still **unresolved** (`cirrus`).
 | `bistro` | ColorLib "Accordion 02", warm-cream `#fcf8f2`/amber `#d4a373`, an "Our Specialties" Breakfast–Lunch–Dinner–Drink–Wine accordion | ColorLib "Allfood", measured orange `#ff5600` (+ sweep `#e74d00`), Josefin Sans/Poppins, the ten reference bands (hero · about · menu mosaic · about 2 · booking · services · subscribe · blog · footer) | the app's copy is Allfood's (`About Our Restaurant`, `Delicious Food`, `Best Chef`, `Quality Food`, `Our Recnet News`); **both** spec and `docs/templates/bistro/` were rewritten, tokens re-measured from `theme/allfood/assets/css/style.css` (58,090 B, sha `8e1b11a8…`). Two rows (330 `## Bootstrap`, 2666 `## Restaurant`) link `bistro` for this one design — `ROW-MULTI`, no pointer to move, no rename (`bistro` ≠ `allfood`) |
 | `concertina` | ColorLib "Accordion 05" (Poppins, mint `#75d6d1`, a seven-band marketing page) | ColorLib "Accordion 16", measured lime `#72c02c` on `#efefef`, `#f9f9f9` 40px pills, one band | the app's copy is Accordion 16's (`Bootstrap Accordion #6`, `How to download and register`, `How to link your paypal and bank account` — each 1 hit in a16, 0 in a05); **both** spec and `docs/templates/concertina/` were rewritten, tokens re-measured from `theme/bac/accordion-16/css/style.css` (9,013 B, sha `e61cfd1c…`). No row moved (`[concertina]` already sat on row 655, `## Bootstrap Accordions (20)`), no rename |
 | `formwell` | ColorLib "Contact Form V15" (`/template/contact-form-v15/`, demo `etc/cf/ContactFrom_v15/`, 12,176 B sheet, Poppins + `#57b846`), a map-`iframe` page behind a banner card with "Contact Us" / "Feel free to drop us a line below!" and Phone + underline fields | ColorLib "Contact Form 08", measured green `#71a95a` (+ hover `#5a8947`), 5px radii, 50px borderless white fields under `0 8px 19px -13px rgba(0,0,0,.09)`, 83.33% card with a 58.33% form column on a photo ground, 12px/600 uppercase labels | the app's copy is contact-form-08's (`Get in touch with us` 1/0, `Email Address` 1/0, `Send Message` 1/0, `Subject` 2/0 against v15); **both** spec and `docs/templates/formwell/` were rewritten, tokens re-measured from `theme/bootstrap/contact-form-08/css/style.css` (14,838 B, sha `2e795975…`, plus `snippet.js` 2,687 B sha `dd02a14f…`); the zip's two files hash identically, so the archive is the live twin. Row **1411** already said `contact-form-08`, no rename (`formwell` ≠ `contact-form-08`) |
+| `spark` (rows 626 + 1177) | ColorLib "Spark" credited to `apps/spark`, a 25→0 copy match for **Appco** | the Spark design rebuilt as **`flint`** (`apps/flint`); both rows re-pointed at it | the app's own copy is Appco's at 25 exclusive hits vs 0 for Spark (`--network --only spark`), and Appco is already shipped as `flowly` (row 56). `apps/spark` therefore leaves the DRIFT bucket and becomes the census's first `UNLINKED` app — a surplus duplicate of `flowly`, the `bellows`/`pleat` shape, not a second ship of Spark. Fidelity measured from `theme/spark/css/style.css` (60,200 B, sha `d463cfe0…`, teal `#367f7c`) |
 
 Both corrections make the rule-5 audit **louder, not quieter**: the folders
 `apps/jobboard` and `apps/medical` now normalise to their own source slug, so
@@ -126,7 +127,7 @@ names. Renaming is the rename stream's call, not the prep stream's.
    | --- | ---: | --- | --- |
    | Givehope | 1270 | `givehope` | bcharity |
    | Logistico | 2966 | `logistico` | thelogistico |
-   | Spark | 626 | `spark` | appco |
+   | ~~Spark~~ | ~~626~~ | ~~`spark`~~ | appco — **fixed**: rows 626/1177 now link `flint`, which recreates Spark |
    | Accordion 19 | 658 | `stride` | stamina |
    | Sparkleclean | 1178 | `sudsy` | carwash |
 
