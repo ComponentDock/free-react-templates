@@ -72,6 +72,13 @@ these.
 live sheet; do not build them from the screenshot, take the palette above:
 `#d4500a`.
 
+<!-- slug-token-agreement: login-form-05/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `login-form-05` design's live assets
+> (`https://preview.colorlib.com/theme/bootstrap/login-form-05/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `gatepass` (`openspec/specs/template-gatepass/spec.md`) states `roboto`, declared 8 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Split-screen layout

@@ -30,6 +30,13 @@ Recreation of ColorLib "Classy Ads" (https://colorlib.com/wp/template/classy-ads
 | Button radius | 4px | "Search" and "Post an Ad" buttons |
 | Search bar bg | #ffffff | Search bar container |
 
+<!-- slug-token-agreement: classy-ads/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `classy-ads` design's live assets
+> (`https://preview.colorlib.com/theme/classyads/`, 11 stylesheets fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `adnest` (`openspec/specs/template-adnest/spec.md`) states `arial, inter, open sans, roboto`, declared 13 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Sections (in order)
 
 1. **Navbar** — White top bar with logo "AdGate", nav links (Home, Ads, About, Blog, Contact), "Log In", "Register", and teal "Post an Ad" CTA button. Mobile hamburger menu.

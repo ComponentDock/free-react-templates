@@ -32,6 +32,13 @@ glass icon, separated by a cyan divider from the advanced filter grid below.
 | Divider            | 1px solid `#5bc0c7`            | Horizontal line between search bar and filters  |
 | Shadow             | light box-shadow on card       | Subtle elevation                                |
 
+<!-- slug-token-agreement: colorlib-search-9/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `colorlib-search-9` design's live assets
+> (`https://colorlib.com/etc/searchf/colorlib-search-9/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `searchquest` (`openspec/specs/template-searchquest/spec.md`) states `lato`, declared 12 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Section structure (top to bottom)
 
 1. **Full-viewport wrapper** — pale ice blue background, flex centered

@@ -52,6 +52,13 @@ Extracted from the live preview CSS (`https://preview.colorlib.com/theme/bb/boot
 | **Heading Font Size**       | `32px`                                  | `.heading-section`                                  |
 | **Subheading Font Size**    | `16px`                                  | `.heading-section small`                            |
 
+<!-- slug-token-agreement: bootstrap-buttons-17/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `bootstrap-buttons-17` design's live assets
+> (`https://preview.colorlib.com/theme/bb/bootstrap-buttons-17/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `pill` (`openspec/specs/template-pill/spec.md`) states `roboto`, declared 7 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Page Title

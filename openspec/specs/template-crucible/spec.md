@@ -44,6 +44,13 @@ Extracted from screenshot analysis (live preview unreachable) — **re-probed 20
 | Button radius      | `8–10px` (rounded)     | Form card corners, input fields               |
 | Card shadow        | Subtle drop shadow     | White form card elevation over beige bg       |
 
+<!-- slug-token-agreement: colorlib-wizard-5/brand -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's brand as `#f2994a`. The ColorLib `colorlib-wizard-5` design's live assets
+> (`https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `billflow` (`openspec/specs/template-billflow/spec.md`) states `#f3d4b7`, which those assets paint 3 times.
+> The `brand` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Visual Design (from screenshot)
 
 Warm, minimalist checkout wizard with an earthy palette. Two-column layout inside a centered container: the left side shows a decorative 3D illustration (plant/lamp scene) against the warm beige background, while the right side holds a white elevated form card. A 4-segment progress bar sits at the top of the card — the active step is orange, inactive steps are light gray with rounded corners. The form contains labeled text inputs and a country dropdown. A "Next →" button in the page's beige color advances to the next step. The overall aesthetic is inviting, clean, and modern — designed to feel approachable rather than sterile for eCommerce checkout.

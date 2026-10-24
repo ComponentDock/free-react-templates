@@ -50,6 +50,13 @@ An Event Registration Form template with name field, company field, email field,
 | Button text-transform  | uppercase                                         | REGISTER in caps                  |
 | Button letter-spacing  | 0.5px                                             | Slight letter spacing             |
 
+<!-- slug-token-agreement: colorlib-regform-5/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `colorlib-regform-5` design's live assets
+> (`https://colorlib.com/etc/regform/colorlib-regform-5/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `reglift` (`openspec/specs/template-reglift/spec.md`) states `open sans`, declared 6 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Layout Structure
 
 Single centered card on gradient background:

@@ -45,6 +45,13 @@ The original is a Bootstrap 4 law firm template with:
 | Section backgrounds | White (categories, services, team, blog), dark (`#2c2c2c`) for footer/newsletter/CTA banner | From preview HTML: `section-bg` class |
 | Card styling | White background, subtle border/shadow | Practice area cards, service cards, blog cards |
 
+<!-- slug-token-agreement: thelawyer/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `thelawyer` design's live assets
+> (`https://preview.colorlib.com/theme/thelawyer/`, 11 stylesheets fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `lexcounsel` (`openspec/specs/template-lexcounsel/spec.md`) states `roboto`, declared 13 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Feature: Header

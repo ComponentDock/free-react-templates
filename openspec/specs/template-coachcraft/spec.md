@@ -37,6 +37,13 @@ pricing plans, contact form, and Google Maps integration.
 | Hero overlay     | Semi-transparent dark gradient       | Over hero image                    |
 | Icon circles     | `#8fd0d2` background, white icons    | Service section circular icons     |
 
+<!-- slug-token-agreement: life-coaching/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `open sans`. The ColorLib `life-coaching` design's live assets
+> (`https://preview.colorlib.com/theme/lifecoaching/`, 7 stylesheets fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `elevate` (`openspec/specs/template-elevate/spec.md`) states `arial, poppins`, declared 54 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Sections (in order, from screenshot + ColorLib page description)
 
 1. **Top Bar** — Dark gray background (#333333). Left: phone icon + phone number. Right: social media icons (Facebook, Twitter, Instagram, Google+). White text, small font.

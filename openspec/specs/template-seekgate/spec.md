@@ -48,6 +48,13 @@ Extracted from the screenshot analysis — **re-probed 2026-10-23: the demo serv
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
 
+<!-- slug-token-agreement: colorlib-search-9/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `roboto`. The ColorLib `colorlib-search-9` design's live assets
+> (`https://colorlib.com/etc/searchf/colorlib-search-9/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `searchquest` (`openspec/specs/template-searchquest/spec.md`) states `lato`, declared 12 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Page shell

@@ -23,6 +23,13 @@ implementation; screenshot used as primary reference.
 | Button hover       | `#3A2FB5` | Darker brand                        |
 | Font family        | `Poppins` | Google Fonts, sans-serif            |
 
+<!-- slug-token-agreement: colorlib-regform-36/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `colorlib-regform-36` design's live assets
+> (`https://colorlib.com/etc/regform/colorlib-regform-36/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `badgeform` (`openspec/specs/template-badgeform/spec.md`) states `montserrat`, declared 5 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Page renders with registration form

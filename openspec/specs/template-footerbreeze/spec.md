@@ -31,6 +31,13 @@ A dark-themed footer with a black background, four-column layout (brand descript
 | Footer padding       | `7rem 0`                | `.footer-48201 { padding: 7rem 0 }`               |
 | Nav link spacing     | `margin-bottom: 10px`   | `.nav-links li { margin-bottom: 10px }`           |
 
+<!-- slug-token-agreement: bootstrap-footer-07/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `bootstrap-footer-07` design's live assets
+> (`https://preview.colorlib.com/theme/bft/bootstrap-footer-07/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `postlude` (`openspec/specs/template-postlude/spec.md`) states `roboto`, declared 7 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Preview content area

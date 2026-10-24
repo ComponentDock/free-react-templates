@@ -46,6 +46,13 @@ The screenshot shows a centered modal with:
 - Close button (X) in the top-right corner
 - Clean white background with rounded corners and drop shadow
 
+<!-- slug-token-agreement: modal-04/brand -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's brand as `#e74c3c`. The ColorLib `modal-04` design's live assets
+> (`https://preview.colorlib.com/theme/bootstrap/modal-04/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `couponmodal` (`openspec/specs/template-couponmodal/spec.md`) states `#12d3cf`, which those assets paint 7 times.
+> The `brand` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Landing page with modal trigger

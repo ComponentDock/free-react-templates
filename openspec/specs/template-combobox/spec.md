@@ -211,6 +211,13 @@ Dock (`https://www.componentdock.com/`) instead.
 | Checkmark bg       | #f0fdf4 (green-50)   | Selected option background |
 | Hover bg           | #f0f0f0              | Option hover               |
 
+<!-- slug-token-agreement: multiselect-03/ink -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's ink as `#1a1a1a`. The ColorLib `multiselect-03` design's live assets
+> (`https://preview.colorlib.com/theme/bootstrap/multiselect-03/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `pickbox` (`openspec/specs/template-pickbox/spec.md`) states `#000000`, which those assets paint 84 times.
+> The `ink` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Test count
 
 40 tests across 3 test files, 100% coverage on all metrics.

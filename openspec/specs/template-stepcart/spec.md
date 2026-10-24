@@ -53,6 +53,13 @@ Recreation of ColorLib "Colorlib Wizard 5" — a flexible 4-step order/checkout 
 | Success color | `#22c55e` | Completion state |
 | Surface (measured) | `#f3d4b7` | paints it ×3 — `background` on `.actions li a`; style.css?v=4559639a (12,177 B, sha256 e0764ba9b5be) · <https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html> |
 
+<!-- slug-token-agreement: colorlib-wizard-5/brand -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's brand as `#3b82f6`. The ColorLib `colorlib-wizard-5` design's live assets
+> (`https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `billflow` (`openspec/specs/template-billflow/spec.md`) states `#f3d4b7`, which those assets paint 3 times.
+> The `brand` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Feature: 4-Step eCommerce Checkout Wizard

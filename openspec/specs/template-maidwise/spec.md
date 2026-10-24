@@ -71,6 +71,13 @@ and white/light backgrounds.
 | Shadow        | 0 2px 15px rgba(0,0,0,0.08)  | Card shadow                                               |
 | Hero overlay  | rgba(0,0,0,0.5)              | Semi-transparent overlay on hero image                    |
 
+<!-- slug-token-agreement: cleaning-company/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `cleaning-company` design's live assets
+> (`https://preview.colorlib.com/theme/cleaningcompany/`, 7 stylesheets fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `scrubly` (`openspec/specs/template-scrubly/spec.md`) states `roboto`, declared 77 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Requirement: Page shell

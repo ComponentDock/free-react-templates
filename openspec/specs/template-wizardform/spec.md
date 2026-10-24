@@ -47,6 +47,13 @@ confirming the entered data before submission.
 | Navigation button | Arrow (→) icon | Next step indicator (no text label) |
 | Transitions | Smooth fade/slide between steps | Elegant transitions between sections |
 
+<!-- slug-token-agreement: colorlib-wizard-25/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `colorlib-wizard-25` design's live assets
+> (`https://colorlib.com/etc/bwiz/colorlib-wizard-25/index.html`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `sigil` (`openspec/specs/template-sigil/spec.md`) states `nunito`, declared 5 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Feature: WizardForm — 3-Step Payment Account Wizard

@@ -61,6 +61,13 @@ original is a Bootstrap-based snippet for user onboarding flows.
 | Body text color                | `#4B4B4B`                     | Dark gray for body text                                          |
 | Input focus border             | `#B4BDE8`                     | Periwinkle blue on focus                                         |
 
+<!-- slug-token-agreement: colorlib-wizard-6/body -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body as `#4b4b4b`. The ColorLib `colorlib-wizard-6` design's live assets
+> (`https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `potion` (`openspec/specs/template-potion/spec.md`) states `#808080`, which those assets paint 5 times.
+> The `body` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Feature: WizDeck — 3-Step Account Creation Wizard

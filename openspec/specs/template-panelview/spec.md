@@ -44,6 +44,13 @@ Extracted from the screenshot and ColorLib template page CSS:
 | Chevron icon       | Dropdown arrow on category items                                   |
 | Accent (measured) | `#fc7fb2` — paints it ×4 — `color` on `a`; style.css?v=83846b7b (13,264 B, sha256 1269ac0ceee8) · <https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/> |
 
+<!-- slug-token-agreement: bootstrap-sidebar-08/ink -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's ink as `#222222`. The ColorLib `bootstrap-sidebar-08` design's live assets
+> (`https://colorlib.com/etc/bootstrap-sidebar/sidebar-08/`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `paneline` (`openspec/specs/template-paneline/spec.md`) states `#000000`, which those assets paint 13 times.
+> The `ink` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Feature: Panelview — Sidebar Navigation Template

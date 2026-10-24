@@ -32,6 +32,13 @@ Extracted from the ColorLib page CSS and screenshot analysis:
 | Button radius     | `30px` (pill)           | CTA buttons                          |
 | Font family       | `Poppins, sans-serif`   | All text                             |
 
+<!-- slug-token-agreement: job-board-2/typeface -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's body typeface as `poppins`. The ColorLib `job-board-2` design's live assets
+> (`https://preview.colorlib.com/theme/jobboard2/`, 12 stylesheets fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) declare that family **0 times**, neither in a `font-family:` rule nor in a Google Fonts URL.
+> The sibling prep `jobnest` (`openspec/specs/template-jobnest/spec.md`) states `roboto`, declared 35 times.
+> The typeface row above is prep history for this role; re-read the sheet's `body{…}` rule before prescribing a face.
+<!-- /slug-token-agreement -->
+
 ## Sections (top → bottom)
 
 ### 1. Navbar

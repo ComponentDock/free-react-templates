@@ -42,6 +42,13 @@ overlay containing the message form.
 | Button border-radius | ~4px | Screenshot — rectangular with slight rounding |
 | Map background | Full-viewport Google Maps embed (NYC metro area in screenshot) | Screenshot |
 
+<!-- slug-token-agreement: contact-form-v19/ink -->
+> **Cross-prep token conflict, re-measured 2026-10-25.** This prep states the design's ink as `#1f2937`. The ColorLib `contact-form-v19` design's live assets
+> (`https://colorlib.com/etc/cf/ContactFrom_v19/index.html`, 1 stylesheet fetched — every linked sheet, the inline `<style>` blocks and the `style="…"` attributes) paint that colour **0 times**, in hex notation and in `rgb()`/`rgba()` notation, so it is not on the design.
+> The sibling prep `cartofield` (`openspec/specs/template-cartofield/spec.md`) states `#333333`, which those assets paint 3 times.
+> The `ink` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
+<!-- /slug-token-agreement -->
+
 ## Requirements
 
 ### Feature: DropNote template behaviour
