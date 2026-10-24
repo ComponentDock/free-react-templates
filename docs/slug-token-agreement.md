@@ -37,7 +37,7 @@ specs 3,237 · slugs 1,632 · multi-prep slugs 853 (+1,597 extra preps) · compa
   AGREE        480   one value for the role across every prep that defines it
   CONFLICT     139   two or more incommensurable values              ← the flags
   ADJUDICATED   18   a conflict whose loser already carries a measured block
-  notes: NO-TABLE 1,372 · THIN 1,079 · QUALIFIED 15 · SIBLING-MENTION 135 · NO-SLUG 8
+  notes: NO-TABLE 1,372 · THIN 1,079 · QUALIFIED 15 · SIBLING-MENTION 136 · NO-SLUG 8
 ```
 
 139 conflicts by role: `body` 39 · `typeface` 39 · `ink` 25 · `brand` 16 ·
