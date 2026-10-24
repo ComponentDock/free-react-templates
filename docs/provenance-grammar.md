@@ -87,7 +87,7 @@ invisible:
 | `apps/nurture` | Nurture     | same                                                      |
 | `apps/oraxol` | Oraxol      | same                                                      |
 | `apps/unioncorp` | Unioncorp | same                                                      |
-| `apps/itkol` | Itkol (slug `itkol`) | the spec quotes the marketing title `"IT-Solution"`; the folder equals the **slug**, not the quoted name — still hidden after the fix |
+| `apps/itkol` | Itkol (slug `itkol`) | the spec quotes the marketing title `"IT-Solution"`; the folder equals the **slug**, not the quoted name — hidden after the fix (**closed**: renamed `vantix` in #1854, provenance line now `ColorLib "Itkol"`) |
 
 So the naming audit now reports 9; the 10th needs the slug handle below. The
 rename stream (`docs/naming-audit.md`) is the owner of the fixes — this axis
@@ -136,7 +136,10 @@ prep, so it is left to the rename stream.
 
 ## Residual
 
-* `apps/itkol` — needs the slug comparison in `audit-naming.mjs` (above).
+* `apps/itkol` — **closed** (#1854): renamed `apps/vantix`, and the spec's
+  provenance line now names the design — `ColorLib "Itkol" (marketing title
+  "IT-Solution")` — instead of the marketing title, so the grammar reads it. The
+  slug comparison in `audit-naming.mjs` is still worth adding as a guard.
 * 9 `RULE5` violations for the rename stream: `expo`, `justlaw`, `nurture`,
   `oraxol`, `unioncorp` are new to it; `mosh`, `pawpal`, `petsitting`, `petvet`
   were already listed (`medico` became `sanara` in #1839).
