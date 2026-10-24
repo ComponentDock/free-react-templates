@@ -26,7 +26,7 @@ beforeEach(() => {
 describe('StatsCounter', () => {
   it('renders section heading', () => {
     render(<StatsCounter />)
-    expect(screen.getByRole('heading', { name: 'JobBoard Site Stats' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Rosterly Site Stats' })).toBeInTheDocument()
   })
 
   it('renders all stat labels', () => {

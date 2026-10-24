@@ -19,7 +19,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* About */}
           <div>
-            <h3 className="text-white font-bold text-lg mb-4">JobBoard</h3>
+            <h3 className="text-white font-bold text-lg mb-4">Rosterly</h3>
             <p className="text-sm leading-relaxed">
               Discover your next career opportunity with thousands of job listings from top
               companies worldwide. Your dream job is just a search away.
@@ -76,7 +76,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-sm">
                 <Mail size={14} />
-                <span>info@jobboard.com</span>
+                <span>info@rosterly.com</span>
               </li>
               <li className="flex items-center gap-2 text-sm">
                 <MapPin size={14} />

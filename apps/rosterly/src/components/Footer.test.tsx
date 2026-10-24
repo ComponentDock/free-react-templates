@@ -4,7 +4,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders brand name', () => {
     render(<Footer />)
-    expect(screen.getByText('JobBoard')).toBeInTheDocument()
+    expect(screen.getByText('Rosterly')).toBeInTheDocument()
   })
 
   it('renders brand description', () => {
@@ -30,7 +30,7 @@ describe('Footer', () => {
   it('renders Contact info', () => {
     render(<Footer />)
     expect(screen.getByText('+1 (555) 123-4567')).toBeInTheDocument()
-    expect(screen.getByText('info@jobboard.com')).toBeInTheDocument()
+    expect(screen.getByText('info@rosterly.com')).toBeInTheDocument()
     expect(screen.getByText('New York, NY')).toBeInTheDocument()
   })
 

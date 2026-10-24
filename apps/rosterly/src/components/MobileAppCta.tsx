@@ -4,7 +4,7 @@ export function MobileAppCta() {
   return (
     <section
       className="relative py-20 bg-cover bg-center"
-      style={{ backgroundImage: "url('https://picsum.photos/seed/jobboard-mobile/1920/500')" }}
+      style={{ backgroundImage: "url('https://picsum.photos/seed/rosterly-mobile/1920/500')" }}
     >
       <div className="absolute inset-0 bg-lime-400/90" />
       <div className="relative z-10 text-center max-w-3xl mx-auto px-4">
