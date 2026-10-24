@@ -33,12 +33,13 @@ Measured twice, both times a real defect:
 | `AGREE` | every naming file names the spec's design |
 | `STALE-TIE` | a file names a different design **that the row also names** — row multiplicity: the brief picked a sibling the row carries; a note, never a flag |
 | `STALE-ORPHAN` | a file names a design **neither the spec nor the row names** — the stale leftover; the only flagged class |
+| `ORPHAN-NO-THIRD-OPINION` | the same mismatch in a dir with **no row and no `apps/<name>`** — nothing can adjudicate it, so it is a note (recorded + queued), never a flag |
 | `SILENT` | no file names any design (a task outline legitimately does this) |
 | `SPEC-SILENT` | files name a design, the spec names none |
 | `NO-FILES` | the dir holds no markdown |
 | `NO-SPEC` | no `openspec/specs/template-<name>/spec.md` |
 
-## Measured state (main `4a9ca3cc9`, before this run's fix)
+## Measured state (main `4a9ca3cc9`, before the first fix)
 
 ```
 brief dirs read: 3236
@@ -50,9 +51,22 @@ brief dirs read: 3236
 flags: 69
 ```
 
-This run repaired **45 files in 44 dirs** (table below) and left **24 dirs**
-queued (table below) because the truth could not be measured. The axis reads
-`STALE-ORPHAN 24` afterwards, `AGREE 3097`.
+The first run repaired **45 files in 44 dirs** (table below) and left **24 dirs**
+queued because the palette test could not adjudicate them. The second run
+(2026-10-24p) closed that queue: **18 dirs / 19 files bannered**, 1 dir turned
+out to be an alias (not a defect), 5 dirs have no third opinion at all. Current
+state on `main`:
+
+```
+brief dirs read: 3236
+  AGREE                  3116
+  STALE-TIE                16   (notes)
+  STALE-ORPHAN              0   <- flags: CLOSED
+  ORPHAN-NO-THIRD-OPINION   5   (notes)
+  SILENT                   89
+  NO-SPEC                  10
+flags: 0
+```
 
 ## Adjudication — the app's own palette is the third opinion
 
@@ -131,37 +145,72 @@ declaration tier makes every extractor read the spec's design from then on.
 | `voyager` | `tasks.md` | `passport` | `tour` |
 | `waypoint` | `tasks.md` | `coaching` | `colorlib-search-12` |
 
-## Residual queue — 24 dirs (measured, deliberately not edited)
+## The residual queue — 24 dirs, closed 2026-10-24p
 
-`scripts/fix-brief-files.py` refuses a dir with no row (no third opinion) and the
-banner was applied with `--only <measured set>`, so these are untouched:
+The first run held 24 dirs because the **palette** test could not adjudicate them
+(neutral-only hits, no intersection, no reference at all, or no row). The second
+run used a different third opinion — the **app's own component shape and copy**,
+which is the strongest evidence available and needs no colour:
 
-| app | stale claim | spec | row | why held |
+| channel | what it settles | measured example |
+| --- | --- | --- |
+| demo title in the app's H1/H2 | a component demo names its own number | `tickbox` renders `Checkbox #10` → `checkbox-10` (the file said `checkbox-01`) |
+| nav-item list | sidebar/nav demos differ only in their menu | `sidelane` = Home·About·Works·Blog·Gallery·Services·Contacts → `bootstrap-sidebar-05` (…`-02` is Home 1-3/Pages/Portfolio) |
+| input `type` + `placeholder` | login/contact demos differ in their fields | `loginbreeze` posts `Username`+`Password` → `login-form-v3` (`-v18` has an `email` field) |
+| verbatim hero/section copy | multi-page themes keep their marketing copy | `cabinet` 26 app phrases appear in `furn`, 0 in `listio`; `ironclad` 24 in `wilcon`, 1 in `celt` |
+| section set / control gallery | refutes a stray of another *kind* | `palette` is a 12-section portfolio, the stray `bootstrap-buttons-01` is a button gallery |
+
+### Bannered — 18 dirs / 19 files
+
+`fix-brief-files.py --only …` (additive: banner + house-spelling `Source slug:`).
+"app" = the app's copy/controls confirm the SPEC's design; "spec+row" = the stray
+is refuted by the app's shape but the spec's design could not be confirmed from
+copy, so the banner names only the spec and the row (`--spec-only`).
+
+| dir | file | file said | spec / row | evidence |
 | --- | --- | --- | --- | --- |
-| `asana` | `yogalax` (tasks.md) | `doyoga` | doyoga | app palette hits only neutral shades |
-| `bizcraft` | `bizpro` (README.md) | `bizcon` | — | no TEMPLATES.md row (no third opinion) |
-| `buildcraft` | `buildcraft` (tasks.md) | `celt` | — | no TEMPLATES.md row (no third opinion) |
-| `cabinet` | `listio` (todo.md) | `furn` | furn | app palette absent from the sheet |
-| `cruiseo` | `car-rental` (tasks.md) | `carrentals` | — | no TEMPLATES.md row (no third opinion) |
-| `findspot` | `colorlib-search-23` (tasks.md), `colorlib-search-15` (todo.md) | `search-form-bar-02` | search-form-bar-02 | app palette absent from the sheet |
-| `formpost` | `contact-form-06` (tasks.md) | `contact-form-09` | contact-form-09 | app palette absent from the sheet |
-| `gather` | `evento` (tasks.md) | `accordion-10` | accordion-10 | no live page and no archive |
-| `grimoire` | `colorlib-wizard-21` (tasks.md) | `colorlib-wizard-16` | colorlib-wizard-16 | no live page and no archive |
-| `inquire` | `dropdown-10` (tasks.md) | `colorlib-contact-form` | colorlib-contact-form | no live page and no archive |
-| `ironclad` | `celt` (tasks.md) | `wilcon` | wilcon | app palette absent from the sheet |
-| `lenscraft` | `alime` (tasks.md) | `proshoot` | proshoot | app palette absent from the sheet |
-| `loginbreeze` | `login-form-v18` (outline.md) | `login-form-v3` | login-form-v3 | no live page and no archive |
-| `lumiere` | `rea` (tasks.md) | `mostudio` | mostudio | app palette hits only neutral shades |
-| `palette` | `bootstrap-buttons-01` (tasks.md) | `clyde` | clyde | app palette hits only neutral shades |
-| `prose` | `wordify` (tasks.md) | `blogger` | author | app palette absent from the sheet |
-| `seekform` | `colorlib-search-12` (tasks.md) | `colorlib-search-6` | colorlib-search-6 | no live page and no archive |
-| `sidelane` | `bootstrap-sidebar-02` (notes.md) | `bootstrap-sidebar-05` | bootstrap-sidebar-05 | no live page and no archive |
-| `soundbite` | `hustlehour` (tasks.md) | `the-hustle-hour` | the-hustle-hour | no live page and no archive |
-| `tally` | `bootstrap-buttons-16` (tasks.md) | `accounting` | accounting | app palette hits only neutral shades |
-| `threadline` | `fashion-2` (tasks.md) | `malefashion` | malefashion | app palette hits only neutral shades |
-| `tickbox` | `checkbox-01` (tasks.md) | `checkbox-10` | checkbox-10 | app palette absent from the sheet |
-| `tidecrest` | `ocheandeview` (design-notes.md) | `marian` | — | no TEMPLATES.md row (no third opinion) |
-| `turntable` | `carousel-08` (README.md) | `dj` | — | no TEMPLATES.md row (no third opinion) |
+| `asana` | `tasks.md` | `yogalax` | `doyoga` | app: "A Yoga Studio", "Featured Classes", "Schedule" = doyoga's headings |
+| `cabinet` | `todo.md` | `listio` | `furn` | app: 26 phrases in `furn`, 0 in `listio` |
+| `formpost` | `tasks.md` | `contact-form-06` | `contact-form-09` | app H2 `Contact Form #09` + "Get in touch with us" |
+| `grimoire` | `tasks.md` | `colorlib-wizard-21` | `colorlib-wizard-16` | app H2 "Sign up to great new account" + Personal Information/Payment Details |
+| `ironclad` | `tasks.md` | `celt` | `wilcon` | app: 24 phrases in `wilcon`, 1 in `celt` |
+| `lenscraft` | `tasks.md` | `alime` | `proshoot` | app: 18 phrases in `proshoot`, 0 in `alime` |
+| `loginbreeze` | `outline.md` | `login-form-v18` | `login-form-v3` | app fields = `Username`+`Password` (v18's are `email`+`pass`) |
+| `lumiere` | `tasks.md` | `rea` | `mostudio` | app: "Black & Gold Paint Face", "View Portfolio" = mostudio |
+| `seekform` | `tasks.md` | `colorlib-search-12` | `colorlib-search-6` | app H2 "What are you looking for?" = search-6's body copy |
+| `sidelane` | `notes.md` | `bootstrap-sidebar-02` | `bootstrap-sidebar-05` | app nav list = Sidebar #05's menu (Portfolic) |
+| `tally` | `tasks.md` | `bootstrap-buttons-16` | `accounting` | app: 11 phrases in `accounting`, 0 in the button demo |
+| `threadline` | `tasks.md` | `fashion-2` | `malefashion` | app: 14 phrases in `malefashion` |
+| `tickbox` | `tasks.md` | `checkbox-01` | `checkbox-10` | app H1 `Checkbox #10` |
+| `findspot` | `tasks.md`, `todo.md` | `colorlib-search-23`, `colorlib-search-15` | `search-form-bar-02` | spec+row: app is a bar-only component (2 controls), both strays are full search pages |
+| `gather` | `tasks.md` | `evento` | `accordion-10` | spec+row: app is one FAQ accordion, `evento` is an event landing page (hero/countdown/speakers) |
+| `inquire` | `tasks.md` | `dropdown-10` | `colorlib-contact-form` | spec+row: app is a 5-field contact form, `dropdown-10` is a dropdown demo ("Request A Quote / Consultation") |
+| `palette` | `tasks.md` | `bootstrap-buttons-01` | `clyde` | spec+row: app is a 12-section portfolio, the stray is a button gallery |
+| `prose` | `tasks.md` | `wordify` | `blogger` | spec+row: app is a book-author site (Hero/AboutBook/Chapters), 0 of `wordify`'s 206 phrases |
+
+### Not a defect — 1 dir (an alias, not a leftover)
+
+`soundbite`: the file named `hustlehour`, the spec names `the-hustle-hour`. They
+are **the same design** — `wp/template/the-hustle-hour/` is served at
+`/theme/hustlehour/` (HTTP 200, and 30 of the app's phrases appear there), and
+the row's own screenshot is `hustlehour-template-1771943880509.jpg`. The axis now
+folds the pair (`load_aliases()`), so the dir reads `AGREE` — bannering it would
+have written a false "superseded" note into a correct file.
+
+### Note bucket — 5 dirs with no third opinion
+
+No TEMPLATES.md row **and** no `apps/<name>`: an unshipped prep whose brief names
+a different design than its spec. Nothing can adjudicate it, so the axis records
+it as `ORPHAN-NO-THIRD-OPINION` (note, not flag) and the fixer refuses to touch
+it. Each needs a human decision — confirm the spec, or re-point the brief:
+
+| dir | file said | spec | why held |
+| --- | --- | --- | --- |
+| `bizcraft` | `bizpro` (`README.md`) | `bizcon` | no row, no app |
+| `buildcraft` | `buildcraft` (`tasks.md`) | `celt` | no row, no app — and the stray is the app's own name (source-name reuse) |
+| `cruiseo` | `car-rental` (`tasks.md`) | `carrentals` | no row, no app; `colorlib.com/wp/template/car-rental/` does not exist, `carrentals` does |
+| `tidecrest` | `ocheandeview` (`design-notes.md`) | `marian` | no row, no app; both designs have live previews |
+| `turntable` | `carousel-08` (`README.md`) | `dj` | no row, no app; both designs have live previews |
 
 ## Row ties — 16 dirs, notes not flags
 
@@ -195,6 +244,39 @@ row/naming decision, not a docs edit.
 5. **`norm()` must strip `#`.** The first palette read kept the leading `#`, so
    the cross-check reported `NO-INTERSECTION` for all 64 candidates — including
    `craftfolio`, whose `#e45447` is painted 42 times in the Steve sheet.
+6. **A rebuilt component-demo shell carries no copy at all.** `checkbox-10`
+   (1,068 B), `search-form-bar-02` (1,898 B), `dropdown-10` (2,143 B) and
+   `accordion-10` are React/kit shells whose text is a single `<h2>`
+   (`Checkbox #10`); a copy-overlap score of 0 there proves nothing about the
+   app. Use the **structure** channel instead — the demo title, the nav list, the
+   input `type`/`placeholder`, the control count (checkbox-01 has 7 coloured
+   variants, checkbox-10 has one unstyled toggle).
+7. **Fold aliases BEFORE bannering.** `soundbite`'s file named `hustlehour`; the
+   spec names `the-hustle-hour`; they are the same design (`/theme/hustlehour/`
+   is live, 30 app phrases match, the row's screenshot basename is `hustlehour`).
+   A banner would have written "superseded" into a correct file — worse than the
+   flag it removed. The fold is read offline from the row's own screenshot
+   basename and refuses any pair whose **digit sequences differ** (`creativex-3`
+   vs `creativex` are numbered sibling demos, never aliases).
+8. **Never claim the app confirms the spec when only the stray was refuted.**
+   5 of the 18 dirs (`findspot`, `gather`, `inquire`, `palette`, `prose`) have an
+   app whose copy matches *neither* candidate. The banner has a second wording
+   (`--spec-only`) that names the spec and the row only; over-claiming is exactly
+   the class of defect this axis exists to catch.
+9. **No third opinion is a note, not a flag.** A dir with no row and no
+   `apps/<name>` can never be adjudicated — it is `ORPHAN-NO-THIRD-OPINION` and
+   is queued for a human. Leaving it flagged made the axis permanently red with
+   nothing to fix (5 dirs).
+
+## Adjacent fix — a rule-5 rename left a stale `shipped-as` marker
+
+`verify-brief-spec.py` read `UNDER-TARGET-MISSING noir  target=oraxol  spec=oraxol`
+plus `TARGET-NO-APP:oraxol`: the brief's `<!-- prep-status: shipped-as=oraxol -->`
+marker outlived the app, which was renamed `oraxol` → `obsidian` (a ColorLib
+source name) on 2026-10-24. The axis verifies the target app EXISTS, so the
+rename turned a green axis red. Fixed in the same pass (`shipped-as=obsidian` +
+the rename noted in the banner); it was the only marker in the corpus pointing at
+a non-existent app (checked: 1 stale of 1,533 non-app briefs).
 
 ## How to run
 
@@ -202,13 +284,16 @@ row/naming decision, not a docs edit.
 python3 scripts/verify-brief-files.py                 # measured state + flags
 python3 scripts/verify-brief-files.py --md out.md     # the STALE-ORPHAN table
 python3 scripts/verify-brief-files.py --show STALE-TIE --verbose
+python3 scripts/verify-brief-files.py --show ORPHAN-NO-THIRD-OPINION --verbose
 python3 scripts/verify-brief-files.py --json out.json
 python3 scripts/fix-brief-files.py --dry-run          # banner plan (measured set only)
-python3 scripts/fix-brief-files.py --only a,b,c       # apply
-python3 scripts/verify-brief-files-controls.py        # 19/19 (6 GATE)
+python3 scripts/fix-brief-files.py --only a,b,c       # apply, app-confirmed wording
+python3 scripts/fix-brief-files.py --only d,e --spec-only d,e   # stray refuted only
+python3 scripts/verify-brief-files-controls.py        # 27/27 (10 GATE)
 ```
 
 Exit code: `0` = no `STALE-ORPHAN`, `1` = flags, `2` = bad usage. The controls are
 mutation-based and offline; the GATE cases disable the sibling-spelling fold, the
-round-up exclusion, the row third opinion or the declaration tier, prove the
-payload then fires, and prove the fixer is a byte-level no-op on a second run.
+round-up exclusion, the demo-dir alias fold, the alias digit guard, the row/app
+third opinion, or the `--spec-only` wording, prove the payload then fires, and
+prove the fixer is a byte-level no-op on a second run.

@@ -1,5 +1,13 @@
 # Gather (ColorLib Evento) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `evento` in an
+> earlier prep of `gather`. The spec and the TEMPLATES.md row are
+> ColorLib `accordion-10`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-gather/spec.md` is authoritative).
+> **Source slug:** `accordion-10`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-gather`.
 

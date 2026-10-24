@@ -1,5 +1,13 @@
 # Lenscraft — Implementation Tasks
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `alime` in an
+> earlier prep of `lenscraft`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `proshoot`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-lenscraft/spec.md` is authoritative).
+> **Source slug:** `proshoot`
+
+
 Source: ColorLib "Alime" (https://preview.colorlib.com/theme/alime/)
 
 ## Structure order (implement top-down)

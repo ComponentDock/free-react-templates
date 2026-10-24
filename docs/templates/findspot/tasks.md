@@ -1,5 +1,13 @@
 # Findspot — Implementation Tasks
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-search-23` in an
+> earlier prep of `findspot`. The spec and the TEMPLATES.md row are
+> ColorLib `search-form-bar-02`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-findspot/spec.md` is authoritative).
+> **Source slug:** `search-form-bar-02`
+
+
 Source: ColorLib Search Form 23
 Preview: https://preview.colorlib.com/theme/colorlib-search-23/ (404 at prep time)
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-23.jpg

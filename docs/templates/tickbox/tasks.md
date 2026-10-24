@@ -1,5 +1,13 @@
 # Tickbox (ColorLib Checkbox 01) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `checkbox-01` in an
+> earlier prep of `tickbox`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `checkbox-10`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-tickbox/spec.md` is authoritative).
+> **Source slug:** `checkbox-10`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-tickbox`.
 

@@ -1,5 +1,13 @@
 # Threadline — Implementation Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `fashion-2` in an
+> earlier prep of `threadline`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `malefashion`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-threadline/spec.md` is authoritative).
+> **Source slug:** `malefashion`
+
+
 <!-- doc-token-reverify:2026-10-22 -->
 
 > **Tokens re-verified against the live sheet (2026-10-22).** The rows below are the values the reference's own stylesheet paints, quoted with the rule that paints them; the sentence further down that carries the older value is a **screenshot approximation and is superseded** where the two differ.  CSS values are canonical over screenshots (`docs/replication.md`), so build the sheet's value.

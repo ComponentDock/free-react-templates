@@ -28,12 +28,23 @@ BUCKETS (one per brief dir — exact partition, priority order)
                  — rename/row work, never a doc defect; recorded as a note)
   STALE-ORPHAN   a file names a design that neither the spec nor the row names
                  — the stale leftover: the only class this axis flags
+  ORPHAN-NO-THIRD-OPINION
+                 the same mismatch in a dir with NO TEMPLATES.md row and NO
+                 `apps/<name>` — nothing can adjudicate it, so it is a note
+                 (recorded + queued), never a flag
   SPEC-SILENT    files name a design, the spec names none
 
 SIBLING SPELLINGS: the demo family dirs are multi-page, so a file can name the
 design by its FOLDER spelling (`/etc/cf/ContactFrom_v10/`, `/etc/lf/Login_v15/`).
 `design_key()` folds those (`contactfrom`→`contactform`, `loginv`→`loginformv`)
 so a spelling difference is never a flag (measured: 6 of the first 92).
+
+DEMO-DIR ALIASES: a ColorLib wp slug and its live demo dir are not always the
+same string — `wp/template/the-hustle-hour/` is served at `/theme/hustlehour/`.
+The row's own screenshot basename carries the demo spelling
+(`hustlehour-template-1771943880509.jpg`), so `load_aliases()` reads that map out
+of TEMPLATES.md and folds the pair (measured 2026-10-24: `soundbite` was a
+phantom flag until the fold existed).
 
 Usage:
   python3 scripts/verify-brief-files.py [--root .] [--json OUT] [--md OUT]
@@ -51,7 +62,8 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ORDER = ('design-notes.md', 'tasks.md', 'todo.md', 'notes.md', 'outline.md', 'README.md')
-BUCKETS = ('AGREE', 'STALE-TIE', 'STALE-ORPHAN', 'SILENT', 'SPEC-SILENT', 'NO-FILES', 'NO-SPEC')
+BUCKETS = ('AGREE', 'STALE-TIE', 'STALE-ORPHAN', 'ORPHAN-NO-THIRD-OPINION',
+           'SILENT', 'SPEC-SILENT', 'NO-FILES', 'NO-SPEC')
 
 
 def _load(fn: str, name: str):
@@ -82,8 +94,50 @@ def design_key(slug: str) -> str:
     return s
 
 
+# wp slug -> the demo dir the row's own screenshot basename names
+# (`the-hustle-hour` -> `hustlehour`). Populated by load_aliases(root).
+DEMO_ALIAS: dict[str, str] = {}
+ALIAS_ON = True
+ALIAS_DIGITS = True
+SHOT = re.compile(r'/([a-z0-9][a-z0-9_-]*)-template-\d+\.(?:jpe?g|png|avif|webp)\b', re.I)
+
+
+def load_aliases(root: str) -> dict[str, str]:
+    """Read the demo-dir spelling out of every TEMPLATES.md screenshot URL.
+
+    Guard: only a spelling that carries the SAME digit sequence is an alias —
+    `the-hustle-hour`/`hustlehour` folds, but `creativex-3`/`creativex` (a
+    numbered sibling demo) never does.
+    """
+    path = os.path.join(root, 'TEMPLATES.md')
+    out: dict[str, str] = {}
+    if not os.path.exists(path):
+        DEMO_ALIAS.clear()
+        return out
+    for line in open(path, encoding='utf-8', errors='replace'):
+        s = DS.ROW_SLUG.search(line)
+        m = SHOT.search(line)
+        if not s or not m:
+            continue
+        slug, shot = s.group(1), m.group(1).lower()
+        if not slug or not shot or DS.same(slug, shot):
+            continue
+        if ALIAS_DIGITS and re.sub(r'\D', '', slug) != re.sub(r'\D', '', shot):
+            continue
+        out[slug] = shot
+    DEMO_ALIAS.clear()
+    DEMO_ALIAS.update(out)
+    return out
+
+
 def same_design(a: str, b: str) -> bool:
-    return bool(a) and bool(b) and (DS.same(a, b) or design_key(a) == design_key(b))
+    if not a or not b:
+        return False
+    if DS.same(a, b) or design_key(a) == design_key(b):
+        return True
+    if ALIAS_ON:
+        return DEMO_ALIAS.get(a) == b or DEMO_ALIAS.get(b) == a
+    return False
 
 
 def brief_files(d: str) -> list[str]:
@@ -115,6 +169,7 @@ def main() -> int:
         return 2
 
     rows = DS.row_map(DS.load_rows(root))
+    load_aliases(root)
     by_bucket: dict[str, list[dict]] = {b: [] for b in BUCKETS}
     for name in sorted(os.listdir(briefs)):
         d = os.path.join(briefs, name)
@@ -148,11 +203,16 @@ def main() -> int:
                 bucket = 'AGREE'
             elif all(s['row_tie'] for s in stray):
                 bucket = 'STALE-TIE'
+            elif not row_designs and not os.path.isdir(os.path.join(root, 'apps', name)):
+                # no row AND no app: nothing can adjudicate the mismatch, so the
+                # stray may be the true design -> note + queue, never a flag
+                bucket = 'ORPHAN-NO-THIRD-OPINION'
             else:
                 bucket = 'STALE-ORPHAN'
         rec = {'name': name, 'bucket': bucket, 'spec': spec_design,
                'row': row_designs, 'files': named,
-               'stray': [] if bucket not in ('STALE-TIE', 'STALE-ORPHAN') else stray}
+               'stray': [] if bucket not in ('STALE-TIE', 'STALE-ORPHAN',
+                                             'ORPHAN-NO-THIRD-OPINION') else stray}
         by_bucket[bucket].append(rec)
         if a.verbose or (a.show and bucket == a.show):
             print(f"{bucket:13s} {name:20s} spec={spec_design or '-':18s} " +
@@ -163,7 +223,8 @@ def main() -> int:
     for b in BUCKETS:
         print(f"  {b:13s} {len(by_bucket[b])}")
     flags = len(by_bucket['STALE-ORPHAN'])
-    print(f"flags: {flags}   (notes: STALE-TIE {len(by_bucket['STALE-TIE'])})")
+    print(f"flags: {flags}   (notes: STALE-TIE {len(by_bucket['STALE-TIE'])}, "
+          f"ORPHAN-NO-THIRD-OPINION {len(by_bucket['ORPHAN-NO-THIRD-OPINION'])})")
     if a.json:
         json.dump({'total': total, 'buckets': {k: len(v) for k, v in by_bucket.items()},
                    'rows': [r for b in BUCKETS for r in by_bucket[b]]}, open(a.json, 'w'), indent=1)

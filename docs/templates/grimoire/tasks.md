@@ -1,5 +1,13 @@
 # Grimoire (ColorLib Wizard 21) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-wizard-21` in an
+> earlier prep of `grimoire`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `colorlib-wizard-16`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-grimoire/spec.md` is authoritative).
+> **Source slug:** `colorlib-wizard-16`
+
+
 > Prep stream output (stream 3). Implementer: branch `feat/template-grimoire`,
 > app `apps/grimoire`, package `@free-react-templates/grimoire`, deploy
 > `grimoire.free.componentdock.com`. Full requirements + Gherkin scenarios in

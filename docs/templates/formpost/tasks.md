@@ -1,5 +1,13 @@
 # Formpost — Implementation Tasks
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `contact-form-06` in an
+> earlier prep of `formpost`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `contact-form-09`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-formpost/spec.md` is authoritative).
+> **Source slug:** `contact-form-09`
+
+
 <!-- ref-reverify:2026-10-22 -->
 
 > **Reference re-verified live 2026-10-22** —

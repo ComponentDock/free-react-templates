@@ -1,5 +1,13 @@
 # FindSpot — Prep Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-search-15` in an
+> earlier prep of `findspot`. The spec and the TEMPLATES.md row are
+> ColorLib `search-form-bar-02`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-findspot/spec.md` is authoritative).
+> **Source slug:** `search-form-bar-02`
+
+
 ## Structure order (top to bottom)
 
 1. **Background layer** — Full-viewport hero image (beach/travel scene), CSS `background-size: cover`

@@ -1,5 +1,13 @@
 # SeekForm — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-search-12` in an
+> earlier prep of `seekform`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `colorlib-search-6`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-seekform/spec.md` is authoritative).
+> **Source slug:** `colorlib-search-6`
+
+
 ## Source
 - **ColorLib:** Search Form 12 — https://colorlib.com/wp/template/colorlib-search-12/
 - **Preview:** https://colorlib.com/etc/searchf/colorlib-search-12/

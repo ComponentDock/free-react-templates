@@ -1,5 +1,13 @@
 # Cabinet — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `listio` in an
+> earlier prep of `cabinet`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `furn`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-cabinet/spec.md` is authoritative).
+> **Source slug:** `furn`
+
+
 ## Source
 
 - ColorLib template: Listio

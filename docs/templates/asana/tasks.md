@@ -1,5 +1,13 @@
 # Asana (ColorLib Yogalax) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `yogalax` in an
+> earlier prep of `asana`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `doyoga`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-asana/spec.md` is authoritative).
+> **Source slug:** `doyoga`
+
+
 > Recreation of ColorLib "Yogalax" — free Bootstrap yoga studio template
 > (https://colorlib.com/wp/template/yogalax/) under the NEW name **Asana**
 > (Sanskrit for a yoga posture — the meditation/yoga theme; single lowercase

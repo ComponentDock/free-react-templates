@@ -1,5 +1,13 @@
 # Loginbreeze — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `login-form-v18` in an
+> earlier prep of `loginbreeze`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `login-form-v3`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-loginbreeze/spec.md` is authoritative).
+> **Source slug:** `login-form-v3`
+
+
 ## Source
 
 - **ColorLib template:** Login Form V18

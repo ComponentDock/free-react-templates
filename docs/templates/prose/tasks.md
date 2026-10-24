@@ -1,5 +1,13 @@
 # Prose (ColorLib Wordify) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `wordify` in an
+> earlier prep of `prose`. The spec and the TEMPLATES.md row are
+> ColorLib `blogger`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-prose/spec.md` is authoritative).
+> **Source slug:** `blogger`
+
+
 > Recreation of ColorLib "Wordify"
 > (https://colorlib.com/wp/template/wordify/) under the NEW name **Prose**
 > (writing/literary reference), per the monorepo naming mandate (never

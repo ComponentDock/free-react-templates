@@ -1,5 +1,13 @@
 # Lumiere — Implementation Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `rea` in an
+> earlier prep of `lumiere`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `mostudio`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-lumiere/spec.md` is authoritative).
+> **Source slug:** `mostudio`
+
+
 Source: ColorLib Rea → https://preview.colorlib.com/theme/rea/
 
 ## Section order (match 1:1)

@@ -1,5 +1,13 @@
 # Palette (ColorLib Bootstrap Buttons 01) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-buttons-01` in an
+> earlier prep of `palette`. The spec and the TEMPLATES.md row are
+> ColorLib `clyde`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-palette/spec.md` is authoritative).
+> **Source slug:** `clyde`
+
+
 > Prep artifacts prepared on `main`. Recreation name: **Palette** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 01"). Implementation
 > ships on `feat/template-palette` per the standard PR flow.

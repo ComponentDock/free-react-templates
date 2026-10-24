@@ -1,5 +1,13 @@
 # Inquire (ColorLib Dropdown 10) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `dropdown-10` in an
+> earlier prep of `inquire`. The spec and the TEMPLATES.md row are
+> ColorLib `colorlib-contact-form`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-inquire/spec.md` is authoritative).
+> **Source slug:** `colorlib-contact-form`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-inquire`.
 

@@ -45,11 +45,13 @@ VBF = _load('verify-brief-files.py', 'vbf')
 MARK = '<!-- brief-file-consensus: superseded design -->'
 
 
-def banner(name: str, spec: str, stray: str) -> str:
+def banner(name: str, spec: str, stray: str, spec_only: bool = False) -> str:
+    app_line = ("The spec and the TEMPLATES.md row are" if spec_only
+                else "The spec, the TEMPLATES.md row and the app are")
     return (
         f"{MARK}\n"
         f"> **SUPERSEDED DESIGN** — this file was written for ColorLib `{stray}` in an\n"
-        f"> earlier prep of `{name}`. The spec, the TEMPLATES.md row and the app are\n"
+        f"> earlier prep of `{name}`. {app_line}\n"
         f"> ColorLib `{spec}`: treat the section list below as history where the two\n"
         f"> disagree (`openspec/specs/template-{name}/spec.md` is authoritative).\n"
         f"> **Source slug:** `{spec}`\n"
@@ -74,9 +76,14 @@ def main() -> int:
     ap.add_argument('--root', default='.')
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--only', default='')
+    ap.add_argument('--spec-only', default='',
+                    help='comma list: the app cannot confirm the spec design, so the '
+                         'banner names only the spec + row (measured, not assumed)')
     a = ap.parse_args()
     root = os.path.abspath(a.root)
     only = {x.strip() for x in a.only.split(',') if x.strip()}
+    spec_only = {x.strip() for x in a.spec_only.split(',') if x.strip()}
+    VBF.load_aliases(root)
 
     rows = VBF.DS.row_map(VBF.DS.load_rows(root))
     specs = os.path.join(root, 'openspec', 'specs')
@@ -106,14 +113,15 @@ def main() -> int:
         if not strays:
             continue
         if not (rows.get(name) or []):
-            skipped.append((name, 'no-row-third-opinion',
+            skipped.append((name, 'no-row-third-opinion (note bucket)',
                             ','.join(x[1] for x in strays)))
             continue
         for p, design in strays:
             text = open(p, encoding='utf-8', errors='replace').read()
             off = insert_at(text)
             new = text[:off] + ('\n' if off and not text[:off].endswith('\n\n') else '') \
-                + banner(name, spec, design) + ('\n' if off else '\n') + text[off:]
+                + banner(name, spec, design, spec_only=name in spec_only) \
+                + ('\n' if off else '\n') + text[off:]
             changed.append((name, os.path.relpath(p, root), design, spec))
             if not a.dry_run:
                 open(p, 'w', encoding='utf-8').write(new)

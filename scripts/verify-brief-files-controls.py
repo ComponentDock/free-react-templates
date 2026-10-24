@@ -42,6 +42,14 @@ def row(title, slug, app=None):
             f' · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/{slug}.jpg){tail}')
 
 
+def row_shot(title, slug, shot, app=None):
+    """A row whose screenshot basename differs from the wp slug (demo-dir alias)."""
+    tail = f' · [{app}](https://{app}.free.componentdock.com)' if app else ''
+    return (f'- [x] **{title}** — [colorlib](https://colorlib.com/wp/template/{slug}/)'
+            f' · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/'
+            f'{shot}-template-1771943880509.jpg){tail}')
+
+
 def build(rows, briefs, specs):
     """rows: list[str]; briefs: {name: {file: text}}; specs: {name: slug}"""
     root = tempfile.mkdtemp(prefix='brieffiles-')
@@ -223,14 +231,89 @@ def c09g():  # GATE: the fixer is a byte-level no-op on its second run
     assert open(p, 'rb').read() == once, 'second run changed the file'
 
 
-def c10():  # no row -> no third opinion -> the fixer refuses (the stray may be the truth)
+def c10():  # no row -> no third opinion -> a note bucket, and the fixer refuses
     root = build([], {'alpha': {'design-notes.md': brief('alpha'), 'tasks.md': tasks('beta')}},
                  {'alpha': 'alpha'})
+    assert bucket_of(root, 'alpha') == 'ORPHAN-NO-THIRD-OPINION', bucket_of(root, 'alpha')
     p = os.path.join(root, 'docs', 'templates', 'alpha', 'tasks.md')
     before = open(p).read()
     sys.argv = ['x', '--root', root, '--only', 'alpha']
     FBF.main()
     assert open(p).read() == before, 'fixer edited a dir with no row'
+
+
+def c17():  # the alias fold: wp slug != demo dir spelling, read from the row's screenshot
+    root = build([row_shot('Hustlehour', 'the-hustle-hour', 'hustlehour', 'alpha')],
+                 {'alpha': {'design-notes.md': brief('the-hustle-hour'),
+                            'tasks.md': tasks('hustlehour')}},
+                 {'alpha': 'the-hustle-hour'})
+    assert bucket_of(root, 'alpha') == 'AGREE', bucket_of(root, 'alpha')
+
+
+def c17g():  # GATE: alias fold off -> the same corpus fires
+    old = VBF.ALIAS_ON
+    VBF.ALIAS_ON = False
+    try:
+        c17()
+    except AssertionError:
+        return
+    finally:
+        VBF.ALIAS_ON = old
+    raise AssertionError('alias fold disabled but the dir still read AGREE')
+
+
+def c18():  # a numbered sibling demo is NEVER an alias (digits must match)
+    root = build([row_shot('Creativex', 'creativex-3', 'creativex', 'alpha')],
+                 {'alpha': {'design-notes.md': brief('creativex-3'),
+                            'tasks.md': tasks('creativex')}},
+                 {'alpha': 'creativex-3'})
+    assert bucket_of(root, 'alpha') == 'STALE-ORPHAN', bucket_of(root, 'alpha')
+
+
+def c18g():  # GATE: drop the digit guard -> the numbered sibling folds and the flag hides
+    old = VBF.ALIAS_DIGITS
+    VBF.ALIAS_DIGITS = False
+    try:
+        c18()
+    except AssertionError:
+        return
+    finally:
+        VBF.ALIAS_DIGITS = old
+    raise AssertionError('digit guard disabled but the numbered sibling still fired')
+
+
+def c19():  # an app (not just a row) is a third opinion too
+    root = build([], {'alpha': {'tasks.md': tasks('beta')}}, {'alpha': 'alpha'})
+    os.makedirs(os.path.join(root, 'apps', 'alpha', 'src'), exist_ok=True)
+    assert bucket_of(root, 'alpha') == 'STALE-ORPHAN', bucket_of(root, 'alpha')
+
+
+def c19g():  # GATE: no app dir -> nothing can adjudicate -> note bucket, not a flag
+    root = build([], {'alpha': {'tasks.md': tasks('beta')}}, {'alpha': 'alpha'})
+    assert bucket_of(root, 'alpha') == 'ORPHAN-NO-THIRD-OPINION'
+
+
+def c20():  # --spec-only never claims the app confirms the spec
+    root = build([row('Alpha', 'alpha', 'alpha')],
+                 {'alpha': {'design-notes.md': brief('alpha'), 'tasks.md': tasks('beta')}},
+                 {'alpha': 'alpha'})
+    p = os.path.join(root, 'docs', 'templates', 'alpha', 'tasks.md')
+    sys.argv = ['x', '--root', root, '--only', 'alpha', '--spec-only', 'alpha']
+    FBF.main()
+    text = open(p).read()
+    assert 'The spec and the TEMPLATES.md row are' in text, 'spec-only wording missing'
+    assert 'and the app are' not in text, 'spec-only banner claimed the app'
+    assert bucket_of(root, 'alpha') == 'AGREE'
+
+
+def c20g():  # GATE: the default banner DOES name the app (the two variants differ)
+    root = build([row('Alpha', 'alpha', 'alpha')],
+                 {'alpha': {'design-notes.md': brief('alpha'), 'tasks.md': tasks('beta')}},
+                 {'alpha': 'alpha'})
+    p = os.path.join(root, 'docs', 'templates', 'alpha', 'tasks.md')
+    sys.argv = ['x', '--root', root, '--only', 'alpha']
+    FBF.main()
+    assert 'and the app are' in open(p).read(), 'default banner lost the app claim'
 
 
 def c11():  # a row-tie dir is never bannered
@@ -304,13 +387,21 @@ CASES = [
     (c08, 'the declaration tier outranks a stale URL in the body'),
     (c09, 'fixer banners, keeps the body, axis turns AGREE'),
     (c09g, 'GATE: the fixer is a byte-level no-op on its second run', True),
-    (c10, 'fixer refuses a dir with no row (no third opinion)', True),
+    (c10, 'no row AND no app -> note bucket, fixer refuses', True),
     (c11, 'fixer never edits a row-tie dir', True),
     (c12, 'front matter and H1 are never split', True),
     (c13, 'a dir with no markdown file is NO-FILES'),
     (c14, 'file-order independence'),
     (c15, 'exit code 1 when a flag is present'),
     (c16, 'buckets partition a mixed corpus exactly once'),
+    (c17, 'demo-dir alias (the-hustle-hour -> hustlehour) is not a flag'),
+    (c17g, 'GATE: alias fold off -> the same corpus fires', True),
+    (c18, 'a numbered sibling demo is never an alias'),
+    (c18g, 'GATE: digit guard off -> the numbered sibling folds', True),
+    (c19, 'an app dir is a third opinion without a row'),
+    (c19g, 'GATE: no app and no row -> note bucket, not a flag', True),
+    (c20, '--spec-only banner never claims the app confirms the spec'),
+    (c20g, 'GATE: the default banner does name the app', True),
 ]
 
 

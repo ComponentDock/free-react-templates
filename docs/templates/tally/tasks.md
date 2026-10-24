@@ -1,5 +1,13 @@
 # Tally (ColorLib Bootstrap Buttons 16) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-buttons-16` in an
+> earlier prep of `tally`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `accounting`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-tally/spec.md` is authoritative).
+> **Source slug:** `accounting`
+
+
 > Prep artifacts prepared on `main`. Recreation name: **Tally** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 16"). Implementation
 > ships on `feat/template-tally` per the standard PR flow.

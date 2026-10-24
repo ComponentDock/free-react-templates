@@ -1,5 +1,13 @@
 # Ironclad — Prep Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `celt` in an
+> earlier prep of `ironclad`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `wilcon`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-ironclad/spec.md` is authoritative).
+> **Source slug:** `wilcon`
+
+
 **Source:** ColorLib Celt — https://colorlib.com/wp/template/celt/
 **Preview:** https://preview.colorlib.com/theme/celt/
 **New name:** ironclad

@@ -1,7 +1,8 @@
 # Noir (ColorLib Oraxol) — Tasks & Design Notes
-<!-- prep-status: shipped-as=oraxol -->
+<!-- prep-status: shipped-as=obsidian -->
 > **SHIPPED-UNDER** — the ColorLib `oraxol` design this prep describes shipped
-> as `apps/obsidian` (<https://obsidian.free.componentdock.com>).
+> as `apps/obsidian` (<https://obsidian.free.componentdock.com>); the app was
+> renamed from `oraxol` (a ColorLib source name) on 2026-10-24.
 > The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships

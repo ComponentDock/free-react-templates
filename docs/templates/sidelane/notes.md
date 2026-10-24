@@ -1,5 +1,13 @@
 # SideLane — Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-sidebar-02` in an
+> earlier prep of `sidelane`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `bootstrap-sidebar-05`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-sidelane/spec.md` is authoritative).
+> **Source slug:** `bootstrap-sidebar-05`
+
+
 Source: ColorLib "Bootstrap Sidebar 02"
 Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-02/ (404 — screenshot only)
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170618.jpg
