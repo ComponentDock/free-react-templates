@@ -240,7 +240,9 @@ def c11():
     for app in ('lenscape', 'craftwork', 'vignette'):                      # briefs re-measured 2026-10-24 (batch 3)
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
     assert by_app.get('btnspark') == 'AGREE', by_app.get('btnspark')       # spec re-read from -02 2026-10-24
-    assert len(res['flags']) == 17, len(res['flags'])
+    for app in ('captura', 'crux', 'derrick'):                            # briefs re-measured 2026-10-24 (batch 4)
+        assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
+    assert len(res['flags']) == 14, len(res['flags'])
 
 
 CASES = [

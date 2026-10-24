@@ -34,23 +34,25 @@ Every shipped app lands in exactly one bucket:
 Notes: `NEAR-SLUG` (one normalised slug is a prefix of the other — spelling
 variant, not drift), `ROW-MULTI`, `BRIEF-PICKS-OTHER-SIBLING`.
 
-## Measured state (2026-10-24, working tree on top of `origin/main` @ `3d09ae788`, re-run after the btnspark spec fix)
+## Measured state (2026-10-24, working tree on top of `origin/main` @ `1b935a5a9`, re-run after brief batch 4)
 
 `shipped apps read: 1703 · TEMPLATES.md rows: 2857`
 
 | bucket | count |
 | --- | --- |
-| `AGREE` | 1,682 |
-| `DOCS-STALE` | 17 |
+| `AGREE` | 1,685 |
+| `DOCS-STALE` | 14 |
 | `SPEC-STALE` | 0 |
 | `ROW-MULTI` | 3 (`counsel`, `reachout`, `roost` — the known row-multiplicity pairs) |
 | `DOC-SILENT` | 1 (`splitmodal`) |
 
-**17 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
+**14 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
 → **21** (the four citation defects), → **18** (`lenscape`, `craftwork`, `vignette` —
 three briefs that described Bato / “Design” over a Schmidt or Karl spec, re-measured
 from the live sheets 2026-10-24), → **17** (`btnspark` — the last SPEC-STALE, its spec
-rewritten from the live `bootstrap-buttons-02` sheet 2026-10-24). Controls `15/15` at this figure.
+rewritten from the live `bootstrap-buttons-02` sheet 2026-10-24), → **14** (`captura`,
+`crux`, `derrick` — brief batch 4, each rewritten from its spec's live sheet
+2026-10-24: Halen, Bbs, Vertex). Controls `15/15` at this figure.
 `SPEC-STALE` is now an **empty bucket**: no shipped app has a spec that names a design
 its row does not.
 
@@ -69,10 +71,10 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 | --- | --- | --- | --- | --- | --- |
 | `btnspark` | ~~SPEC-STALE~~ **FIXED** | ~~bootstrap-buttons-14~~ bootstrap-buttons-02 | bootstrap-buttons-02 | bootstrap-buttons-02 | spec-side — spec rewritten from the live `-02` sheet 2026-10-24 |
 | `buildwell` | ~~DOCS-STALE~~ **FIXED** | celt | ~~balay~~ celt | celt | design drift — brief rewritten from the live Celt sheet 2026-10-24 |
-| `captura` | DOCS-STALE | halen | bato | halen | design drift |
+| `captura` | ~~DOCS-STALE~~ **FIXED** | halen | ~~bato~~ halen | halen | design drift — brief rewritten from the live Halen sheet 2026-10-24 |
 | `craftwork` | ~~DOCS-STALE~~ **FIXED** | schmidt | ~~design~~ schmidt | schmidt | design drift — brief re-measured from the live Schmidt sheet 2026-10-24 |
-| `crux` | DOCS-STALE | bbs | olla | bbs | design drift |
-| `derrick` | DOCS-STALE | vertex | engineers | vertex | design drift |
+| `crux` | ~~DOCS-STALE~~ **FIXED** | bbs | ~~olla~~ bbs | bbs | design drift — brief rewritten from the live Bbs sheet 2026-10-24 |
+| `derrick` | ~~DOCS-STALE~~ **FIXED** | vertex | ~~engineers~~ vertex | vertex | design drift — brief + tasks rewritten from the live Vertex sheet 2026-10-24 |
 | `dropform` | DOCS-STALE | contact-form-v8 | dropdown-07 | contact-form-v8 | design drift |
 | `elixir` | DOCS-STALE | pharma | colorlib-wizard-29 | pharma | design drift |
 | `feastly` | DOCS-STALE | foodfun | buri | foodfun | design drift |
@@ -97,12 +99,13 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 
 Classes:
 
-- **design drift (22, 5 fixed → 17)** — the brief names a *different design*:
-  `smithy`, `buildwell` (Balay brief over a Celt app), `lenscape`, `craftwork`
-  and `vignette` are fixed (the last three on 2026-10-24 in one batch, each
-  re-measured from its spec's live sheet). Remaining:
-  `visage`, `praxis`, `feastly`, `derrick`, `captura`,
-  `crux`, `dropform`, `elixir`, `jobpulse`, `querybar`, `reachform`,
+- **design drift (22, 8 fixed → 14)** — the brief names a *different design*:
+  `smithy`, `buildwell` (Balay brief over a Celt app), `lenscape`, `craftwork`,
+  `vignette` and the 2026-10-24 batch-4 trio `captura` (Bato brief over Halen),
+  `crux` (Olla over Bbs) and `derrick` (Engineers over Vertex) are fixed, each
+  re-measured from its spec's live sheet. Remaining:
+  `visage`, `praxis`, `feastly`,
+  `dropform`, `elixir`, `jobpulse`, `querybar`, `reachform`,
   `searchgate`, `spinwheel`, `stallion`, `stepforge`, `zenbloom`, `zing`. Each
   needs spec **and** brief re-read against the live reference before either is
   "fixed" (the `-24f`/`-24g` rule: adjudicate with the app's own copy, never by
@@ -165,9 +168,13 @@ Classes:
    (`the-hustle-hour` wp 200 as the design, `theme/hustlehour/` 200 as the demo folder,
    `wp/template/hustlehour/` 404). All four needed the labelled `Source slug:` tier —
    the axes read `ColorLib slug:` as no label at all.
-4. 17 remaining design-drift briefs, one per run, each with a live re-read of the
+4. 14 remaining design-drift briefs, one per run, each with a live re-read of the
    spec's slug (the `-24f` rewrite queue overlaps: `bistro`, `concertina`,
-   `formwell`, `prose`, `vellum`, `zenith` are spec-side there).
+   `formwell`, `prose`, `vellum`, `zenith` are spec-side there). Batch 5
+   candidates that share a family: `spinwheel`/`stepforge` (carousel / wizard
+   demo sheets), `querybar`/`searchgate`/`jobpulse` (the search-form-bar family),
+   `reachform`/`dropform` (contact-form demos — the `/etc/cf/` folder IS the
+   design) — measure one sheet and reuse the census across the family.
 5. ~~`btnspark`~~ — spec rewritten from the live `bootstrap-buttons-02` sheet
    2026-10-24 (preview 200 / 51,199 B, `<title>` "Button 07"; `css/style.css`
    30,764 B sha `4226c497…`; archive 200 / 110,958 B; 72 `<button>` + 12 dead
