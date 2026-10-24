@@ -38,6 +38,10 @@ uppercase letter-spaced form heading.
 | Card shadow       | Light box-shadow        | Subtle shadow on white card                |
 | Form heading style| Uppercase, letter-spaced| "SEND US A MESSAGE"                        |
 
+<!-- role-rule-tokens: contact-form-13/typeface -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own typeface; strongest `body{font-family:"Roboto", -apple-syste}` — the design declares `Roboto`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `formvault` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual design (from screenshot)
 
 The entire page has a blue-to-teal gradient background. Content is overlaid.

@@ -28,6 +28,10 @@ Recreation of ColorLib "Search Form Bar 18" as a standalone React 19 + Vite + Ta
 | Font family | `"Poppins", sans-serif` (inferred from ColorLib patterns) | Clean geometric sans-serif |
 | Section background | None — single centered card on photo | No other sections (this is a single-section form template) |
 
+<!-- role-rule-tokens: colorlib-search-18/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Lato", "Arial", "Helv}` — the design declares `Lato`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `seekwell` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: BookSpot — Travel Search Form

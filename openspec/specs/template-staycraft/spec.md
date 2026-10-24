@@ -36,6 +36,10 @@ Extracted from the live preview stylesheet (`css/style.css` + `css/bootstrap.css
 | **Border radius (testimonial images)** | `50%` (circle) | `rounded-circle` on author photos |
 | **Footer bg**      | `#222` or dark (from footer section CSS) | Dark footer                                  |
 
+<!-- role-rule-tokens: casahotel/footer -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own footer; strongest `.footer-section{background:#1a1a1a}` — the design declares `#1a1a1a`; this prep states `#222222`, which no rule that owns the footer band declares. The sibling prep `casamora` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section structure (in order)
 
 1. **Navbar** — absolute-positioned overlay on hero. Logo left (Playfair Display italic, white), hamburger menu right (3 white bars). Mobile: full-screen white overlay nav with large Playfair Display links.

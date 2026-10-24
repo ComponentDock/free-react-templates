@@ -72,6 +72,10 @@ Use Google Fonts `<link>` for Nunito Sans.
 | Testimonials     | White                             |
 | Footer           | `#333333` (dark gray)             |
 
+<!-- role-rule-tokens: dente/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#4d4d4d}` — the design declares `#4d4d4d`; this prep states `#ffffff`, which no rule that owns the body text colour declares. The sibling prep `cuspide` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Navbar displays logo and navigation

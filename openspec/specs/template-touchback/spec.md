@@ -32,6 +32,10 @@ A clean, minimal two-column contact page with a heading, description, and contac
 | Font family     | `'Poppins', sans-serif` | Google Fonts          |
 | Heading font    | `'Poppins', sans-serif` | Bold, large           |
 
+<!-- role-rule-tokens: contact-form-12/typeface -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own typeface; strongest `body{font-family:"Roboto", -apple-syste}` — the design declares `Roboto`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `touchbase` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Page layout

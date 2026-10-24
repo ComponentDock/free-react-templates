@@ -43,6 +43,10 @@ Recreation of ColorLib's **Bootstrap Footer 19** — a purple footer with a four
 | Footer padding       | `5rem 0`                       | Generous vertical spacing                              |
 | Column count         | 4 (on md+)                     | Standard Bootstrap grid                                |
 
+<!-- role-rule-tokens: bootstrap-footer-19/footer -->
+**Role rule (measured 2026-10-25):** 7 rule(s) own footer; strongest `.footer-09{background:linear-gradient(45deg,}` — the design declares `#2a1a5e`; this prep states `#7c4dff`, which no rule that owns the footer band declares. The sibling prep `footerdusk` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Footer renders with correct background and layout

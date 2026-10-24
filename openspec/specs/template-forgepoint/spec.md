@@ -27,6 +27,10 @@ An Industrial / Manufacturing template with header / nav, hero / slider, service
 | Button style | `.btn` + `.hero-btn` / `.get-btn` / `.white-btn` | Orange fill for primary CTAs, white fill for secondary |
 | Hero | Dark overlay on slider images, text animations | Multiple slides with fadeInUp animations |
 
+<!-- role-rule-tokens: inds/typeface -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own typeface; strongest `body{font-family:"Roboto", sans-serif}` — the design declares `Roboto`; this prep states `Barlow`, which no rule that owns the body typeface declares. The sibling prep `molten` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Header / Navbar

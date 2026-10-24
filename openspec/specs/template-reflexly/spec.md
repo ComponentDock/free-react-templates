@@ -30,6 +30,10 @@ Palette in order of use: `#444444` ×43, `#ffffff` ×38, `#111111` ×35, `#00960
 
 Sheet identity (measured 2026-10-24): `theme/phozogy/css/style.css` — 46,648 B, sha256 `0fd813727cf2…`.
 
+<!-- role-rule-tokens: phozogy/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#111111}` — the design declares `#111111`; this prep states `#000000`, which no rule that owns the heading ink declares. The sibling prep `shotscape` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Header with navigation

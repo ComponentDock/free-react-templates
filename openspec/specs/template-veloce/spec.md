@@ -29,6 +29,10 @@ Palette in order of use: `#353535` ×47, `#ffffff` ×40, `#5f67ff` ×24, `#72717
 - Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+<!-- role-rule-tokens: automotive/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#111111}` — the design declares `#111111`; this prep states `#353535`, which no rule that owns the heading ink declares. The sibling prep `pitcrew` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Full page renders all sections

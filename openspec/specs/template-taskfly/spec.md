@@ -35,6 +35,10 @@ Extracted from the live preview's `css/style.css`:
 | Font family | `"Roboto", Arial, sans-serif` | Global body font |
 | Font Awesome | `4.7.0` | Icon set (replace with lucide-react) |
 
+<!-- role-rule-tokens: virtualassistant/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#212529}` — the design declares `#212529`; this prep states `#1a1a1a`, which no rule that owns the body text colour declares. The sibling prep `valet` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Page structure (section order, 1:1 with source)
 
 1. **Navbar** — dark solid background, brand text "Virtual Assistant", nav

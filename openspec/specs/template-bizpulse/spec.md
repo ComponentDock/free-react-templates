@@ -53,6 +53,10 @@ Extracted from the preview's CSS (`css/style.css`):
 | Contact | White, 2-column: info + map, then form below |
 | Footer | Dark `#232a34` |
 
+<!-- role-rule-tokens: bizpro/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#6f6f6f}` — the design declares `#6f6f6f`; this prep states `#696f78`, which no rule that owns the body text colour declares. The sibling prep `bizwell` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual Design Notes (from Screenshot)
 
 - **Navbar:** Transparent overlay on hero, fixed. Logo in coral script font left, nav links right in all-caps white sans-serif. Active link highlighted in coral.

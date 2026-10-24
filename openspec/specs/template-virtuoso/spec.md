@@ -38,6 +38,10 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 
 **Visual notes from screenshot**: Clean, professional layout with a hero area featuring a large background image and dark overlay. Green accent lines flank the section subheading labels. Dark footer and testimonial sections contrast with light card-based content sections. The "How It Works" section uses a stepped numbered layout with hover-reveal descriptions.
 
+<!-- role-rule-tokens: virtualassistant/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#212529}` — the design declares `#212529`; this prep states `#495057`, which no rule that owns the body text colour declares. The sibling prep `valet` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: Navbar

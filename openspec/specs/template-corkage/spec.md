@@ -28,6 +28,10 @@ Palette in order of use: `#ffffff` ×89, `#db9a64` ×25, `#f9f9ff` ×23, `#ff5e1
 
 Sheet identity (measured 2026-10-24): `theme/resta/css/style.css` — 150,382 B, sha256 `113b5055b0bb…`; `theme/resta/css/gijgo.css` — 55,532 B, sha256 `ae6c0a9951a2…`.
 
+<!-- role-rule-tokens: resta/ink -->
+**Role rule (measured 2026-10-25):** 5 rule(s) own ink; strongest `h5{color:#001D38}` — the design declares `#001d38`; this prep states `#000000`, which no rule that owns the heading ink declares. The sibling prep `morselry` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Navigation bar

@@ -40,6 +40,10 @@ Extracted from the live preview stylesheet (`css/style.css`):
 | Subheading text      | Small uppercase, green `#17b978`          | Used for "Best Seller Book Of The Week", section labels |
 | Heading color        | `#000000`                                | Dark/black for h2/h3 headings                      |
 
+<!-- role-rule-tokens: author/ink -->
+**Role rule (measured 2026-10-25):** 10 rule(s) own ink; strongest `.h5{color:#263b5e}` — the design declares `#263b5e`; this prep states `#000000`, which no rule that owns the heading ink declares. The sibling prep `wordcraft` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section Order (from DOM)
 
 1. **Navbar** — Fixed/absolute, transparent bg, logo "Author." with green dot, 7 nav links (Home, About, Chapter, Reviews, My Books, Author, Contact). Collapses to hamburger on mobile.

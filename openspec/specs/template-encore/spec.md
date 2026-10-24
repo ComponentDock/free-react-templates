@@ -47,6 +47,10 @@ Recreation of the ColorLib "Music" template as a single-page React app.
 | Newsletter | White #ffffff |
 | Footer | White #ffffff |
 
+<!-- role-rule-tokens: music/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#a5a5a5}` — the design declares `#a5a5a5`; this prep states `#6d6d6d`, which no rule that owns the body text colour declares. The sibling prep `melody` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Reference identity — catalogue URL collision (measured 2026-10-24)
 
 Two catalogue keys resolve to `https://preview.colorlib.com/theme/music/` in the

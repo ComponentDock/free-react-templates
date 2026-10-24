@@ -70,6 +70,10 @@ and a dark footer with four columns.
 - Gradient overlay via `::after`: brand gradient at 0.9 opacity
 - Text: white, centered, uppercase subtitle + large h1 + description + CTA button
 
+<!-- role-rule-tokens: lorahost/brand -->
+**Role rule (measured 2026-10-25):** 4 rule(s) own brand; strongest `.button{background:linear-gradient(to rig}` — the design declares `#2926ac`; this prep states `#1e1859`, which no rule that owns the primary CTA fill declares. The sibling prep `hostpeak` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: Hostera template behaviour

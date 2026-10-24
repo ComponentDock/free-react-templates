@@ -99,6 +99,10 @@ blog cards, and a dark four-column footer. The page uses Poppins font, orange
 | Section padding    | `ftco-section` class (approx 80px vertical)           |
 | Border-radius      | `3px` (buttons), `5px` (request form card), `0` (form inputs/selects) |
 
+<!-- role-rule-tokens: autoroad/footer -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own footer; strongest `.ftco-footer{background:#000}` — the design declares `#000000`; this prep states `#3c312e`, which no rule that owns the footer band declares. The sibling prep `gearshift` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: Autolane — Car Rental Landing Page

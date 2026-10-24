@@ -31,6 +31,10 @@ Extracted from the live preview CSS (`styles/main_styles.css`):
 | Button radius    | `0` (sharp/square corners)     |
 | Avatar radius    | `50%` (circular)               |
 
+<!-- role-rule-tokens: elearn/brand -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own brand; strongest `.button{background:#ff8a00}` — the design declares `#ff8a00`; this prep states `#ff6600`, which no rule that owns the primary CTA fill declares. The sibling prep `cognocourse` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section structure (order from preview)
 
 1. **Top Bar** — Register/Login links, dark background bar at top.

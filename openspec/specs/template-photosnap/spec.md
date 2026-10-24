@@ -41,6 +41,10 @@ Extracted from the ColorLib Louie preview CSS (`css/style.css`):
 - Instagram grid: white/light background
 - Footer: `#242423` dark near-black
 
+<!-- role-rule-tokens: louie/typeface -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own typeface; strongest `body{font-family:"Montserrat", Arial, s}` — the design declares `Montserrat, Work Sans`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `photomuse` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Sidebar Navigation

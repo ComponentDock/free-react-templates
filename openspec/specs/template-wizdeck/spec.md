@@ -68,6 +68,10 @@ original is a Bootstrap-based snippet for user onboarding flows.
 > The `body` row above is prep history for this role; re-read the declaration that owns the role before painting it, and see `docs/slug-token-agreement.md`.
 <!-- /slug-token-agreement -->
 
+<!-- role-rule-tokens: colorlib-wizard-6/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Poppins-Regular"}` — the design declares `Poppins`; this prep states `Nunito`, which no rule that owns the body typeface declares. The sibling prep `charm` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: WizDeck — 3-Step Account Creation Wizard

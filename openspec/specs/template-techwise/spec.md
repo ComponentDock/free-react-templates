@@ -44,6 +44,10 @@ A Creative Agency template with hero, services, about, team, counter and portfol
 - Dark footer: 3-column layout (brand + nav, service links, contact info)
 - Copyright bar: very dark background, centered text
 
+<!-- role-rule-tokens: portech/brand -->
+**Role rule (measured 2026-10-25):** 3 rule(s) own brand; strongest `.services .btn-custom{background:#4986fc}` — the design declares `#4986fc`; this prep states `#f96d00`, which no rule that owns the primary CTA fill declares. The sibling prep `netcraft` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section Structure (from live preview DOM)
 
 1. **TopBar** — Phone number, email, social media icons (Facebook, Twitter, Instagram, Dribbble)

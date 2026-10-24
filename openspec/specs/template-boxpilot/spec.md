@@ -34,6 +34,10 @@ Recreation of ColorLib "Boxus" — a one-page creative digital agency template.
 ### Color palette (inline style accents from preview)
 - Service card dots: `#32DB8A` (green), `#FFBB42` (yellow), `#E74C78` (pink), `#4C9EE7` (blue)
 
+<!-- role-rule-tokens: boxus/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#23214c}` — the design declares `#23214c`; this prep states `#727190`, which no rule that owns the body text colour declares. The sibling prep `boxwise` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section Order (from preview DOM)
 
 1. **Navbar** — Fixed top, logo "BOXUS", links: Home, Services, Portfolio, About, News, Video, Skills, Contact. Mobile hamburger menu.

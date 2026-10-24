@@ -29,6 +29,10 @@ Palette in order of use: `#ffffff` ×28, `#ff6107` ×16, `#303030` ×10, `#63636
 
 Sheet identity (measured 2026-10-24): `theme/luto/css/style.css` — 35,252 B, sha256 `750ae6f7f05f…`; `theme/luto/css/flexslider.css` — 2,975 B, sha256 `f770be750aa6…`; `theme/luto/css/icomoon.css` — 1,696 B, sha256 `adc0af761f2f…`.
 
+<!-- role-rule-tokens: luto/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#404044}` — the design declares `#404044`; this prep states `#303030`, which no rule that owns the heading ink declares. The sibling prep `mealmuse` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Header with navigation

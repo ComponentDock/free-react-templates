@@ -32,6 +32,10 @@ Recreation of ColorLib's **Lingua** template as a React 19 + Vite + Tailwind 4 +
 | Card radius | `0` |
 | Avatar radius | `50%` (circular) |
 
+<!-- role-rule-tokens: lingua/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:'Poppins', sans-serif}` — the design declares `Poppins`; this prep states `Montserrat`, which no rule that owns the body typeface declares. The sibling prep `parlez` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section structure
 
 1. **Top Bar** — Phone number, language selector dropdown, social icons

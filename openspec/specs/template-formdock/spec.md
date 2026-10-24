@@ -39,6 +39,10 @@ labeled bordered inputs on the right. Features a blue button.
 | Button text       | White                   | —                                          |
 | Input style       | Bordered box            | Full border around inputs                  |
 
+<!-- role-rule-tokens: contact-form-12/typeface -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own typeface; strongest `body{font-family:"Roboto", -apple-syste}` — the design declares `Roboto`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `touchbase` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual design (from screenshot)
 
 The page has a clean white background with a centered two-column layout.

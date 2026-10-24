@@ -63,6 +63,10 @@ Extracted from screenshot analysis (preview CSS unavailable via direct fetch): �
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
 
+<!-- role-rule-tokens: colorlib-regform-6/typeface -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own typeface; strongest `body{font-family:"Open Sans", "Arial", }` — the design declares `Arial, Open Sans`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `regcove` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual design notes (from screenshot analysis)
 
 - Full-page dark charcoal (#212121) background.

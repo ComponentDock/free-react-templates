@@ -36,6 +36,10 @@ Palette in order of use: `#c92f2f` ×61, `#ffffff` ×35, `#959595` ×25, `#63636
 
 Sheet identity (measured 2026-10-24): `theme/crose/style.css` — 62,799 B, sha256 `d7335a56a578…`.
 
+<!-- role-rule-tokens: crose/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#1f1f2c}` — the design declares `#1f1f2c`; this prep states `#000000`, which no rule that owns the heading ink declares. The sibling prep `vaulted` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: TopBar displays contact info and social links

@@ -53,6 +53,10 @@ https://preview.colorlib.com/theme/automotive/css/style.css.
 - **Footer Main:** 4-column — About text, Quick Links, News list, Office address.
 - **Footer Copyright:** Dark bar with copyright text and social icons.
 
+<!-- role-rule-tokens: automotive/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#111111}` — the design declares `#111111`; this prep states `#353535`, which no rule that owns the heading ink declares. The sibling prep `pitcrew` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Section: Header Top Bar

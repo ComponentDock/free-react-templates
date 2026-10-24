@@ -52,6 +52,10 @@ Captured from the TEMPLATES.md screenshot (preview unreachable) — **re-probed 
 | **Button radius**    | 0 (sharp corners)                        | Rectangle, no border-radius               |
 | **Hero image**       | Full-height food photography             | Dark, moody, upscale restaurant tone      |
 
+<!-- role-rule-tokens: colorlib-wizard-7/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Raleway-Regular"}` — the design declares `Raleway`; this prep states `Montserrat`, which no rule that owns the body typeface declares. The sibling prep `tablenook` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section Structure
 
 The template is a **centered wizard component** with two visual halves:

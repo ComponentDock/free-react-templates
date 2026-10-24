@@ -48,6 +48,10 @@ Extracted from original template structure and screenshot:
 | Card blur                   | `backdrop-blur-md`                                  | Glass morphism                                     |
 | Subtitle color              | `rgba(255,255,255,0.7)`                             | "Please enter your credentials"                    |
 
+<!-- role-rule-tokens: login-form-v16/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:Ubuntu-Regular, sans-s}` — the design declares `Ubuntu`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `logingrove` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Layout structure
 
 Single-section full-viewport page with background image + dark overlay:

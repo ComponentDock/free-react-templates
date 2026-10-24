@@ -32,6 +32,10 @@ Extracted from ColorLib page CSS and screenshot analysis:
 | Background image | Full-viewport travel photo (sunset beach)| Placeholder via picsum.photos              |
 | Surface (measured) | `#6c7ae0` | paints it ×4 — `background` on `.btn-submit`; style.css?v=0d9b6a3c (19,899 B, sha256 4c01af289836) · <https://colorlib.com/etc/searchf/colorlib-search-18/> |
 
+<!-- role-rule-tokens: colorlib-search-18/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Lato", "Arial", "Helv}` — the design declares `Lato`; this prep states `Roboto`, which no rule that owns the body typeface declares. The sibling prep `seekwell` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual Design (from screenshot)
 
 The template is a single full-viewport section centered vertically and

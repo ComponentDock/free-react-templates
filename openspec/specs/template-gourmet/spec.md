@@ -55,6 +55,10 @@ sheet now resolves and paints
 App delta: none — `apps/dine`'s footer does not render this heading block.
 <!-- reference-revalue:end -->
 
+<!-- role-rule-tokens: bootstrap-footer-15/footer -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own footer; strongest `.footer-05{background:#68983b}` — the design declares `#68983b`; this prep states `#272727`, which no rule that owns the footer band declares. The sibling prep `footerleaf` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Footer header with logo and social icons

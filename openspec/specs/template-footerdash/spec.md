@@ -53,6 +53,10 @@ Extracted from screenshot analysis (preview unreachable) — **re-probed 2026-10
 | Surface (measured) | `#12cc94` | paints it ×5 — `background` on `.aside-stretch-right`; style.css?v=884ad530 (17,102 B, sha256 286f73f430fc) · <https://preview.colorlib.com/theme/bft/bootstrap-footer-18/> |
 | Brand (measured) | `#12cc94` | live sheet paints it ×5 — `background` on `.aside-stretch-right`; style.css?v=884ad530 (17,102 B, sha256 286f73f430fc) · <https://preview.colorlib.com/theme/bft/bootstrap-footer-18/> |
 
+<!-- role-rule-tokens: bootstrap-footer-18/footer -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own footer; strongest `.footer-08{background:#f1f6f5}` — the design declares `#f1f6f5`; this prep states `#121212`, which no rule that owns the footer band declares. The sibling prep `farewell` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual Design Notes (from screenshot)
 
 - The screenshot shows a dark footer occupying the lower portion of the viewport, with a white content area above.

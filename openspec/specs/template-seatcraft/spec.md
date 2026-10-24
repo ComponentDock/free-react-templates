@@ -32,6 +32,10 @@ Recreation of ColorLib "Colorlib Wizard 7" — a multi-step restaurant table boo
 | Step indicator text | `#FFFFFF` (white, small) | Progress marker |
 | Food image backdrop | Dark/moody editorial photography | Hero imagery |
 
+<!-- role-rule-tokens: colorlib-wizard-7/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Raleway-Regular"}` — the design declares `Raleway`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `tablenook` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: Restaurant Table Booking Wizard

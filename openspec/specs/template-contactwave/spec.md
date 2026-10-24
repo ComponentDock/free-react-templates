@@ -39,6 +39,10 @@ ContactWave is a free, advanced contact form template that recreates the ColorLi
 | Border            | `#e0e0e0` light gray          | Input underlines                   |
 | Font family       | Inter, sans-serif             | Clean, modern typeface             |
 
+<!-- role-rule-tokens: contact-form-v5/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:Poppins-Regular, sans-}` — the design declares `Poppins`; this prep states `Inter`, which no rule that owns the body typeface declares. The sibling prep `formlift` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Design tokens
 
 <!-- brand-claim:2026-10-23 -->

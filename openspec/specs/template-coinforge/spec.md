@@ -26,6 +26,10 @@ Palette in order of use: `#ffffff` ×38, `#004cff` ×6, `#062489` ×5, `#031b69`
 - Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+<!-- role-rule-tokens: cryptian/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#fff}` — the design declares `#ffffff`; this prep states `#031b69`, which no rule that owns the heading ink declares. The sibling prep `blocknest` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and login

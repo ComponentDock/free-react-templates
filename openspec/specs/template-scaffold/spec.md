@@ -43,6 +43,10 @@ Section headings use a centered `::before` pseudo-element: `width: 50px; height:
 - `.btn-outline-white`: white border + text, white hover bg → black text
 - Nav CTA: `#f4b214` background, black text, uppercase, large padding, box-shadow glow on hover
 
+<!-- role-rule-tokens: construct/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#868e96}` — the design declares `#868e96`; this prep states `#495057`, which no rule that owns the body text colour declares. The sibling prep `craneops` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Section Order (from preview DOM)
 
 1. **Navbar** — Fixed top, logo "CONSTRUCT" (text, uppercase), nav links: Home, Services (dropdown: Metal Roofing, General Contracting, House Renovation, Laminate Flooring, Construction Consultant), Works, News, About, Contact. Right-aligned CTA: "GET A QUOTE" (yellow bg, uppercase, two-line). Hamburger on mobile.

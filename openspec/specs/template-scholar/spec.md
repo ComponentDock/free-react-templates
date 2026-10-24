@@ -29,6 +29,10 @@ Palette in order of use: `#ffffff` ×78, `#ea5252` ×39, `#f9f9ff` ×27, `#ff6f0
 - Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+<!-- role-rule-tokens: onedu/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#3C3B37}` — the design declares `#3c3b37`; this prep states `#000000`, which no rule that owns the heading ink declares. The sibling prep `edunova` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: Navbar

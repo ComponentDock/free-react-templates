@@ -31,6 +31,10 @@ services.
 | Bar surface    | `#ffffff`                | Search bar card                   |
 | Brand (measured) | `#ff8300` | live sheet paints it ×3 — `background` on `.btn-submit`; style.css?v=716d3d5e (19,845 B, sha256 2d3e995316a5) · <https://colorlib.com/etc/searchf/colorlib-search-17/> |
 
+<!-- role-rule-tokens: colorlib-search-17/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Lato", "Arial", "Helv}` — the design declares `Lato`; this prep states `Poppins`, which no rule that owns the body typeface declares. The sibling prep `travelgate` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement 1: Hero And Headline

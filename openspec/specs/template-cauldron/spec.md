@@ -40,6 +40,10 @@ Recreation of ColorLib "Colorlib Wizard 6" — a multi-step onboarding/registrat
 | Input border-radius | Full pill/rounded (`~20px`) | Rounded inputs |
 | Surface (measured) | `#f6c2ec` | paints it ×3 — `background` on `.actions li:first-child a`; style.css?v=59e273aa (10,428 B, sha256 c9bc979f15b9) · <https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html> |
 
+<!-- role-rule-tokens: colorlib-wizard-6/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Poppins-Regular"}` — the design declares `Poppins`; this prep states `Roboto`, which no rule that owns the body typeface declares. The sibling prep `charm` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Feature: Multi-Step Onboarding Wizard

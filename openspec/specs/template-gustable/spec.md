@@ -41,6 +41,10 @@ Extracted from the live preview CSS (`css/style.css`):
 | Navbar font | `13px`, uppercase, `letter-spacing: 0.2em` | `.nav-link` |
 | Hero | Full viewport height (`100vh`), background image with dark overlay | `.site-cover` |
 
+<!-- role-rule-tokens: eatwell/body -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#b8b8b8}` — the design declares `#b8b8b8`; this prep states `#222222`, which no rule that owns the body text colour declares. The sibling prep `platewell` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual design (from screenshot)
 
 The Eatwell screenshot shows:

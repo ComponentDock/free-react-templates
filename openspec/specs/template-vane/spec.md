@@ -33,6 +33,10 @@ product designer & art director single-page site.
 | **Other radii**    | `30px` (pill shapes), `50%` (circles), `4px`, `2px`|
 | **Nav overlay**    | `rgba(0, 43, 220, 0.9)` (blue transparent)        |
 
+<!-- role-rule-tokens: martin/brand -->
+**Role rule (measured 2026-10-25):** 2 rule(s) own brand; strongest `.colorlib-footer .btn-footer a{background:#ffdd00}` — the design declares `#ffdd00`; this prep states `#002bdc`, which no rule that owns the primary CTA fill declares. The sibling prep `pivot` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual Design Notes (from screenshot)
 
 - **Clean, modern, bold** aesthetic with strong blue (#002bdc) and yellow

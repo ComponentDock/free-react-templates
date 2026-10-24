@@ -42,6 +42,10 @@ Recreation of **ColorLib Wizard 8** — a multi-step onboarding/registration wiz
 | Button style       | Solid green `#78a44e`, white uppercase text, no icon                         |
 | Card radius        | Rounded corners (~8–12px) with subtle drop shadow                            |
 
+<!-- role-rule-tokens: colorlib-wizard-8/typeface -->
+**Role rule (measured 2026-10-25):** 1 rule(s) own typeface; strongest `body{font-family:"Lato-Regular"}` — the design declares `Lato`; this prep states `Open Sans`, which no rule that owns the body typeface declares. The sibling prep `shopsteps` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Visual Design (from screenshot)
 
 Food/grocery delivery theme with decorative food imagery in corners (spices, herbs, tomatoes). Central white card on textured beige background. Four-step progress indicator at top. "BASIC DETAILS" form section with 2/3-column grid of input fields. Each field has a small matching icon. BACK and CONTINUE buttons at bottom of card. Minimalist, warm, earthy aesthetic.

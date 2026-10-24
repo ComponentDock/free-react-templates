@@ -36,6 +36,10 @@ Palette in order of use: `#ffffff` ×52, `#ff7902` ×29, `#688bfe` ×15, `#96969
 - Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.
 - Reuse the exact radii above for buttons, cards and dots — no unspecified rounding.
 
+<!-- role-rule-tokens: pixel/ink -->
+**Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `h6{color:#000000}` — the design declares `#000000`; this prep states `#212121`, which no rule that owns the heading ink declares. The sibling prep `pixelforge` states the measured value.
+<!-- /role-rule-tokens -->
+
 ## Requirements
 
 ### Requirement: Navbar with navigation and social links
