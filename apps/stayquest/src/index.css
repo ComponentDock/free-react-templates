@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Stayquest brand gold — inspired by the original ColorLib Search Form 2
+  /* Stayquest brand gold — measured from the reference design
      (warm gold/tan search button). */
   --color-brand: #c8a96e;
 

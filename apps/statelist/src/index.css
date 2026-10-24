@@ -5,7 +5,7 @@
 @theme {
   /* Statelist brand palette — light page (#f8f9fd) with red accent
      (#ff5959) for quantity, chevron, checked checkboxes. Token source:
-     ColorLib Multiselect 10 CSS token tail. */
+     the reference stylesheet. */
   --color-page: #f8f9fd;
   --color-accent: #ff5959;
   --color-label: #808080;

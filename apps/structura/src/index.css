@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Structura brand palette — recreated from the ColorLib Archirio design
+  /* Structura brand palette — measured from the reference design
      (lime accent #cee002, dark text #333132). */
   --color-lime-accent: #cee002;
   --color-charcoal: #333132;

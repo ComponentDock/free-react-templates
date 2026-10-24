@@ -4,7 +4,7 @@
 
 @theme {
   /* Squadly brand — heavy equipment rental theme, modeled after
-     the ColorLib "Equipo" template (https://preview.colorlib.com/theme/equipo/).
+     the reference design.
      Blue primary (#007bff), orange accent (#F96D00), dark navbar, white text on overlays. */
   --color-primary-50: #e6f2ff;
   --color-primary-100: #b3d9ff;
