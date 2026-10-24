@@ -1,17 +1,20 @@
-# Template: Petsitting (Pet Sitting Services Website)
+# Template: Pawstay (Pet Sitting Services Website)
 
 ## Purpose
 
-Petsitting is a multi-section pet-sitting services website template in the
+Pawstay is a multi-section pet-sitting services website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Petsitting" design (see TEMPLATES.md), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+The app ships as **Pawstay** (`apps/pawstay`) — an original pet-sitting name;
+the source design's own name is never reused as the app folder, package or
+brand (AGENTS.md rule 5).
 
 The original design is a green pet-care landing page: hero with a "Highest
 Quality Care For Pets You'll Love" headline, three intro services, a "Why
 Choose Us" strip, counters, an FAQ accordion, testimonials, a pricing table
 with monthly/yearly toggle, a pet gallery, blog posts, a free consultation
-form band, and a multi-column footer. Petsitting follows the same structure
+form band, and a multi-column footer. Pawstay follows the same structure
 and adds the repo's standard dark-mode toggle and accessible patterns. All
 imagery is recreated with seeded placeholder images (no assets copied).
 
@@ -45,7 +48,7 @@ imagery is recreated with seeded placeholder images (no assets copied).
       excerpt).
   11. Appointment — h2 "Free Consultation"; booking form band (fields +
       submit).
-  12. Footer — brand "Petsitting" + blurb, Latest News / Quick Links /
+  12. Footer — brand "Pawstay" + blurb, Latest News / Quick Links /
       "Have a Questions?" columns, bottom bar.
 - **Design tokens extracted from the stylesheet (`css/style.css`):**
   - Brand color: **#00bd56** (green — primary buttons/accents) with accent
@@ -70,27 +73,27 @@ imagery is recreated with seeded placeholder images (no assets copied).
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#00bd56`, green scale in `@theme`); placeholder images
-  via `https://picsum.photos/seed/petsitting-<n>/<w>/<h>`; icons from
+  via `https://picsum.photos/seed/pawstay-<n>/<w>/<h>`; icons from
   lucide-react; pricing monthly/yearly toggle as a stateful control;
   consultation form with client-side validation (regex-based, matching the
   repo's existing form pattern); social icons inline SVG; no assets copied.
 
-Petsitting lives in `apps/petsitting` and uses shared components from
+Pawstay lives in `apps/pawstay` and uses shared components from
 `packages/ui` (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Petsitting",
+The system SHALL render a navigation bar with the site name "Pawstay",
 links to the main sections, a "Get Started" button, and a dark-mode toggle
 button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Petsitting page is rendered
+- **GIVEN** the Pawstay page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Petsitting" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Pawstay" and links to the main sections
 - **AND** the navbar SHALL show a "Get Started" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -216,14 +219,14 @@ and a submit button.
 
 ### Requirement: Footer
 
-The system SHALL render a footer with the site name "Petsitting", an about
+The system SHALL render a footer with the site name "Pawstay", an about
 blurb, link columns, and social links.
 
 #### Scenario: Footer content
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Petsitting" and an about blurb
+- **THEN** it SHALL show the site name "Pawstay" and an about blurb
 - **AND** it SHALL show link columns and social links
 
 ### Requirement: Page composition
@@ -233,10 +236,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Petsitting app is rendered
+- **GIVEN** the Pawstay app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Petsitting — Pet Sitting Services Website Template"
+- **AND** the document title SHALL be "Pawstay — Pet Sitting Services Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -256,7 +259,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/petsitting/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/pawstay/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -265,7 +268,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/petsitting/` is inspected
+- **WHEN** every non-test file under `apps/pawstay/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -273,7 +276,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Petsitting" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Pawstay" and links to the main sections
 - [ ] Hero section — it SHALL contain a level-1 heading matching "Highest Quality Care For Pets You'll Love"
 - [ ] Intro services section — it SHALL show the three service blocks, each with an icon, title, and copy
 - [x] Why-choose-us section — it SHALL show the heading "Why Choose Us?"
@@ -283,5 +286,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Gallery section — it SHALL show the heading "Pets Gallery"
 - [x] Blog section — it SHALL show the heading "Latest news from our blog"
 - [x] Consultation section — it SHALL show the heading "Free Consultation"
-- [x] Footer — it SHALL show the site name "Petsitting" and an about blurb
+- [x] Footer — it SHALL show the site name "Pawstay" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

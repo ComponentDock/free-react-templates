@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/petsitting",
+  "name": "@free-react-templates/pawstay",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://petsitting.free.componentdock.com",
+  "homepage": "https://pawstay.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,17 +1,17 @@
-# Petsitting — Design Notes
+# Pawstay — Design Notes
 
 Reference: **Petsitting** — `https://colorlib.com/wp/template/petsitting/`  
 Live preview: `https://preview.colorlib.com/theme/petsitting/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg  
-Shipped: https://petsitting.free.componentdock.com
+Shipped: https://pawstay.free.componentdock.com
 
-Petsitting is a multi-section pet-sitting services website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Petsitting" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Pawstay is a multi-section pet-sitting services website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Petsitting" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Montserrat**, **Montserrat:wght@400;500;600;700;800**
 
-## Design tokens (`apps/petsitting/src/index.css` `@theme`)
+## Design tokens (`apps/pawstay/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Fonts loaded by `index.html` (Google Fonts): **Montserrat**, **Montserrat:wght@4
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Petsitting", links to the main sections, a "Get Started" button, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Pawstay", links to the main sections, a "Get Started" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a hero section with the headline "Highest Quality Care For Pets You'll Love", supporting copy, and CTA buttons.
@@ -77,7 +77,7 @@ The system SHALL render a blog section titled "Latest news from our blog" with a
 The system SHALL credit Component Dock — the marketplace that publishes this template — with a visible link to `https://www.componentdock.com/` in the site footer (AGENTS.md rule 5). The credit is chrome, not source content: it SHALL NOT change the footer's own layout or copy beyond the credit line.
 
 ### `Footer`
-The system SHALL render a footer with the site name "Petsitting", an about blurb, link columns, and social links.
+The system SHALL render a footer with the site name "Pawstay", an about blurb, link columns, and social links.
 
 ## Deltas from the reference
 
@@ -94,8 +94,8 @@ The system SHALL render a footer with the site name "Petsitting", an about blurb
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/petsitting/` may name the source designer,
+- **Provenance ban.** No file under `apps/pawstay/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/petsitting/public/CNAME` = `petsitting.free.componentdock.com`
-  and the package `homepage` = `https://petsitting.free.componentdock.com`.
+- **Deploy identity.** `apps/pawstay/public/CNAME` = `pawstay.free.componentdock.com`
+  and the package `homepage` = `https://pawstay.free.componentdock.com`.

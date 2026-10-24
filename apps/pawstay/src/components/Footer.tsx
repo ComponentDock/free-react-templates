@@ -21,7 +21,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 md:grid-cols-4">
         <div>
           <a href="#top" className="text-2xl font-extrabold text-white">
-            Pet<span className="text-brand">sitting</span>
+            Paw<span className="text-brand">stay</span>
           </a>
           <p className="mt-5 text-sm font-light leading-relaxed">
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
@@ -59,7 +59,7 @@ export function Footer() {
           <h3 className="text-base font-bold text-white">Have a Questions?</h3>
           <address className="mt-5 space-y-3 text-sm font-light not-italic">
             <p>120 Raymond Rd, New York</p>
-            <p>hello@petsitting.example</p>
+            <p>hello@pawstay.example</p>
             <a href="tel:+1234567890" className="block transition-colors hover:text-white">
               +1 234 567 890
             </a>
@@ -68,7 +68,7 @@ export function Footer() {
       </div>
       <div className="mx-auto mt-14 flex max-w-6xl flex-col items-center justify-between gap-6 border-t border-white/10 px-4 pt-8 sm:flex-row sm:px-6">
         <p className="text-sm font-light">
-          Copyright © {new Date().getFullYear()} Petsitting. All rights reserved.
+          Copyright © {new Date().getFullYear()} Pawstay. All rights reserved.
         </p>
       </div>
       <div className="mx-auto max-w-7xl px-4 pt-6 text-center text-xs opacity-70">

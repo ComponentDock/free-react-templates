@@ -13,6 +13,27 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Petsitting → Pawstay (2026-10-24p, this PR)
+
+**0 apps reuse their source name in the visible count** — the last visible
+violation is closed: `apps/petsitting` → `apps/pawstay`
+(`@free-react-templates/pawstay`, `pawstay.free.componentdock.com`). The source
+name survives only in the spec's `ColorLib "Petsitting"` provenance lines, the
+reference's own colorlib.com URLs, `petsitting-free-template.jpg` and the two
+`TEMPLATES.md` rows (50, 617), which now link `pawstay`. The design is
+unchanged — same green (`#00bd56`), hover `#00a34a`, Montserrat, same twelve
+bands; every brand string (wordmark `Paw<span>stay</span>`, footer copyright,
+`document.title`, meta description, `hello@pawstay.example`, picsum seeds
+`pawstay-*`) moved with it.
+
+One hidden violation remains (`apps/itkol`, folder equals the slug — a name-only
+test still cannot see it; see the RULE5-HIDDEN note below), so
+`node scripts/audit-naming.mjs` now reports `no app folder reuses its source
+design name` while still printing `specs without a ColorLib provenance line: 1`
+for that app. The prep pointer in
+`openspec/specs/template-snuggle/` + `docs/templates/snuggle/` was repointed at
+`apps/pawstay`.
+
 ## State after Pawpal → Groomly (2026-10-24o, #1851)
 
 **1 app reuses its source name** (`node scripts/audit-naming.mjs`:
@@ -185,11 +206,10 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 (#1842), `jobboard` → `rosterly` (#1843), `medical` → `verdia` (#1844),
 `nurture` → `cradle` (#1845), `oraxol` → `obsidian` (#1846),
 `unioncorp` → `meridia` (#1847), `petvet` → `vetora` (#1848), `pawpal` →
-`groomly` (#1851).
+`groomly` (#1851), `petsitting` → `pawstay` (this PR).
 
 | app              | source design |
 | ---------------- | ------------- |
-| apps/petsitting  | Petsitting    |
 | apps/itkol       | Itkol (hidden — folder equals the slug) |
 
 ## Pitfall — a design can carry two TEMPLATES.md rows

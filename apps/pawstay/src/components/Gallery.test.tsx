@@ -23,7 +23,7 @@ describe('Gallery', () => {
     expect(images.length).toBeGreaterThanOrEqual(6)
     for (const image of images) {
       expect(image).toHaveAttribute('alt')
-      expect(image.getAttribute('src')).toMatch(/picsum\.photos\/seed\/petsitting-gallery/)
+      expect(image.getAttribute('src')).toMatch(/picsum\.photos\/seed\/pawstay-gallery/)
     }
   })
 })

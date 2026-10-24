@@ -47,7 +47,7 @@
 - [x] **Leopet** — [colorlib](https://colorlib.com/wp/template/leopet/) · [snoutly](https://snoutly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/leopet-free-template.jpg)
 - [x] **Pawpal** — [colorlib](https://colorlib.com/wp/template/pawpal/) · [groomly](https://groomly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg)
 - [x] **Petcare** — [colorlib](https://colorlib.com/wp/template/petcare/) · [pawly](https://pawly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg)
-- [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [petsitting](https://petsitting.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
+- [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [pawstay](https://pawstay.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
 - [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [vetora](https://vetora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [x] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · [vetly](https://vetly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)
 
@@ -614,7 +614,7 @@
 - [x] **Pageone** — [colorlib](https://colorlib.com/wp/template/pageone/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pageone-free-template-1.jpg) · [nexus](https://nexus.free.componentdock.com)
 - [x] **Passport** — [colorlib](https://colorlib.com/wp/template/passport/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/passport-free-template.jpg) · [voyage](https://voyage.free.componentdock.com)
 - [x] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg) · [gastronome](https://gastronome.free.componentdock.com)
-- [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [petsitting](https://petsitting.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
+- [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [pawstay](https://pawstay.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
 - [x] **Photosen** — [colorlib](https://colorlib.com/wp/template/photosen/) · [filmstock](https://filmstock.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/photosen-free-template.jpg)
 - [x] **Props** — [colorlib](https://colorlib.com/wp/template/props/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/props-free-template.jpg) · [quarters](https://quarters.free.componentdock.com)
 - [x] **Repeat** — [colorlib](https://colorlib.com/wp/template/repeat/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/repeat-free-template.jpg) · [loop](https://loop.free.componentdock.com)
