@@ -21,9 +21,9 @@ python3 scripts/verify-brief-spec-controls.py  # 15/15 controls (4 GATE)
 
 | population | count | why it exists |
 | --- | --- | --- |
-| `UNDER-*` (carries `<!-- prep-status: shipped-as=… -->`) | 1,408 | prep history for a design that shipped under another name (renames, row-multiplicity, duplicate preps) |
+| `UNDER-*` (carries `<!-- prep-status: shipped-as=… -->`) | 1,418 | prep history for a design that shipped under another name (renames, row-multiplicity, duplicate preps) — 1,408 at batch-1 start, +10 once the spec-less dirs were marked |
 | `PENDING-*` (has a spec, no app) | 115 | surplus preps — the next thing an implementer could pick up |
-| `ORPHAN` (brief, no spec, no marker) | 10 | a prep artifact with no claim marker (AGENTS.md rule 2) |
+| `ORPHAN` (brief, no spec, no marker) | 10 → 0 | a prep artifact with no claim marker (AGENTS.md rule 2); all ten are now `shipped-as=` |
 
 Buckets:
 
