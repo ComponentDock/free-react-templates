@@ -8,9 +8,9 @@ describe('Footer', () => {
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 
-  it('renders the Expo logo', () => {
+  it('renders the Sightly logo', () => {
     render(<Footer />)
-    expect(screen.getByText('Expo')).toBeInTheDocument()
+    expect(screen.getByText('Sightly')).toBeInTheDocument()
   })
 
   it('renders navigation links', () => {
@@ -31,7 +31,7 @@ describe('Footer', () => {
     render(<Footer />)
     expect(screen.getByRole('heading', { name: 'Contact' })).toBeInTheDocument()
     expect(screen.getByText('+1 234 567 890')).toBeInTheDocument()
-    expect(screen.getByText('info@expo.com')).toBeInTheDocument()
+    expect(screen.getByText('info@sightly.com')).toBeInTheDocument()
     expect(screen.getByText(/123 Marketing St, Digital City/)).toBeInTheDocument()
   })
 

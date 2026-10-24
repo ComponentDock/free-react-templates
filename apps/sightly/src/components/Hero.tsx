@@ -4,7 +4,7 @@ export function Hero() {
       id="home"
       className="relative flex min-h-[600px] items-center bg-cover bg-center"
       style={{
-        backgroundImage: 'url(https://picsum.photos/seed/expo-hero/1600/900)',
+        backgroundImage: 'url(https://picsum.photos/seed/sightly-hero/1600/900)',
       }}
     >
       <div className="absolute inset-0 bg-black/50" />
@@ -26,7 +26,7 @@ export function Hero() {
         </div>
         <div className="hidden md:block">
           <img
-            src="https://picsum.photos/seed/expo-illustration/600/500"
+            src="https://picsum.photos/seed/sightly-illustration/600/500"
             alt="Marketing illustration"
             className="mx-auto w-full max-w-md rounded-lg"
           />

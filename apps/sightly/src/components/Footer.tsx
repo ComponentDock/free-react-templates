@@ -15,7 +15,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-16 md:grid-cols-4">
         {/* Brand & Social */}
         <div>
-          <h3 className="mb-4 text-2xl font-bold font-heading">Expo</h3>
+          <h3 className="mb-4 text-2xl font-bold font-heading">Sightly</h3>
           <p className="mb-4 text-sm text-gray-300">
             Helping brands grow through strategic digital marketing solutions.
           </p>
@@ -88,7 +88,7 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2 text-sm text-gray-300">
               <Mail size={16} />
-              info@expo.com
+              info@sightly.com
             </li>
             <li className="flex items-center gap-2 text-sm text-gray-300">
               <MapPin size={16} />
@@ -101,7 +101,7 @@ export function Footer() {
       {/* Copyright */}
       <div className="border-t border-white/10 py-6">
         <div className="mx-auto max-w-7xl px-4 text-center text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} Expo. All rights reserved. More templates at{' '}
+          &copy; {new Date().getFullYear()} Sightly. All rights reserved. More templates at{' '}
           <a
             href="https://www.componentdock.com/"
             className="text-primary transition-colors hover:text-white"

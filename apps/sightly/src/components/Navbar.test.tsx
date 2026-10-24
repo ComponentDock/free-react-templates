@@ -5,7 +5,7 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('renders the logo text', () => {
     render(<Navbar />)
-    expect(screen.getByText('Expo')).toBeInTheDocument()
+    expect(screen.getByText('Sightly')).toBeInTheDocument()
   })
 
   it('renders all navigation links', () => {

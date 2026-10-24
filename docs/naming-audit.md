@@ -13,6 +13,18 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Expo → Sightly (2026-10-24h)
+
+**8 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/jobboard`, `apps/medical`, `apps/nurture`, `apps/oraxol`, `apps/pawpal`,
+`apps/petsitting`, `apps/petvet`, `apps/unioncorp`), plus `apps/itkol`, which a
+name-only test still cannot see. `apps/expo` → `sightly` cleared the third of the
+nine visible violations; the source name survives only in the spec's
+`ColorLib "Expo"` provenance line, the reference's own colorlib.com URLs and the
+`theme/expo/assets` stylesheet path, which the token evidence quotes verbatim.
+`jobboard` and `medical` are back in the count because the spec↔row axis
+re-pointed their specs at the rows they actually ship.
+
 ## State after Justlaw → Lexon (2026-10-24g)
 
 **7 apps reuse their source name** (`node scripts/audit-naming.mjs`:
@@ -72,13 +84,19 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
 `massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
-`mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841).
+`mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`.
 
-| app             | source design |
-| --------------- | ------------- |
-| apps/pawpal     | PawPal        |
-| apps/petsitting | Petsitting    |
-| apps/petvet     | Petvet        |
+| app              | source design |
+| ---------------- | ------------- |
+| apps/jobboard    | Jobboard      |
+| apps/medical     | Medical       |
+| apps/nurture     | Nurture       |
+| apps/oraxol      | Oraxol        |
+| apps/pawpal      | PawPal        |
+| apps/petsitting  | Petsitting    |
+| apps/petvet      | Petvet        |
+| apps/unioncorp   | Unioncorp     |
+| apps/itkol       | Itkol (hidden — folder equals the slug) |
 
 ## Pitfall — a design can carry two TEMPLATES.md rows
 
