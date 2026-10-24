@@ -3,7 +3,7 @@ export function EnrollCta() {
     <section
       className="relative bg-cover bg-center bg-fixed bg-no-repeat py-24"
       style={{
-        backgroundImage: 'url(https://picsum.photos/seed/nurture-cta2/1920/600)',
+        backgroundImage: 'url(https://picsum.photos/seed/cradle-cta2/1920/600)',
       }}
     >
       <div className="absolute inset-0 bg-ink/80" />

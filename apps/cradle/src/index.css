@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Nurture brand palette — kids learning center design:
+  /* Cradle brand palette — kids learning center design:
      green #0fb78d primary, blue #4fb0dc secondary,
      lime #5cb100 accent, orange #ec661f CTA. */
   --color-brand: #0fb78d;

@@ -11,7 +11,7 @@ export function Navbar() {
     <nav className="fixed top-0 z-50 w-full bg-brand/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <a href="#home" className="text-xl font-bold text-white">
-          Nurture
+          Cradle
         </a>
 
         {/* Desktop links */}

@@ -8,7 +8,7 @@ export function About() {
           {/* Image */}
           <div className="relative">
             <img
-              src="https://picsum.photos/seed/nurture-about/600/500"
+              src="https://picsum.photos/seed/cradle-about/600/500"
               alt="Children learning in a classroom"
               className="w-full rounded-lg object-cover shadow-lg"
             />

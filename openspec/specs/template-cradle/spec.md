@@ -1,4 +1,4 @@
-# Template: Nurture (Kids Learning Center)
+# Template: Cradle (Kids Learning Center)
 
 ## Purpose
 
@@ -10,7 +10,9 @@ news, pricing plans, and a footer.
 - **Source:** https://colorlib.com/wp/template/nurture/
 - **Preview:** https://preview.colorlib.com/theme/nurture/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
-- **New name:** `nurture` (no collision with existing apps/specs)
+- **New name:** `cradle` (no collision with existing apps/specs; renamed from
+  `nurture` on 2026-10-24k because the folder reused the source design name —
+  rule 5. Design is unchanged.)
 - **Source design:** ColorLib "Nurture" — https://colorlib.com/wp/template/nurture/
 
 ## Design Tokens
@@ -64,7 +66,7 @@ news, pricing plans, and a footer.
 
 - **GIVEN** the page loads
 - **THEN** a fixed navbar is visible at the top
-- **AND** it contains the brand name "Nurture"
+- **AND** it contains the brand name "Cradle"
 - **AND** it has navigation links: Home, About, Courses, Pricing, News, Contact
 - **AND** on mobile (< 768px) a hamburger toggles the menu
 
@@ -210,7 +212,7 @@ news, pricing plans, and a footer.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/nurture/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/cradle/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -219,7 +221,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/nurture/` is inspected
+- **WHEN** every non-test file under `apps/cradle/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -234,8 +236,8 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Footer links to https://www.componentdock.com/
 - [ ] Responsive: mobile (375px), tablet (768px), desktop (1200px+)
 - [x] No ColorLib references in app code
-- [x] public/CNAME = nurture.free.componentdock.com
-- [x] package.json homepage = https://nurture.free.componentdock.com
+- [x] public/CNAME = cradle.free.componentdock.com
+- [x] package.json homepage = https://cradle.free.componentdock.com
 - [ ] Tests pass with 100% coverage
-- [ ] `npm run verify:app` passes for nurture
+- [x] `bash scripts/verify-app.sh cradle` passes
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

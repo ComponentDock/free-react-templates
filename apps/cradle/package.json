@@ -1,5 +1,5 @@
 {
-  "name": "@free-react-templates/nurture",
+  "name": "@free-react-templates/cradle",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://nurture.free.componentdock.com"
+  "homepage": "https://cradle.free.componentdock.com"
 }

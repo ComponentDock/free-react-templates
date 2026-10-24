@@ -15,7 +15,7 @@ export function Footer() {
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="mb-4 text-xl font-bold">Nurture</h3>
+            <h3 className="mb-4 text-xl font-bold">Cradle</h3>
             <p className="mb-4 text-sm text-white/60">
               Providing quality early childhood education in a warm, nurturing environment since
               2010.
@@ -63,7 +63,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-brand" />
-                info@nurture.com
+                info@cradle.com
               </li>
             </ul>
           </div>
@@ -98,7 +98,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-4 sm:flex-row">
           <p className="text-xs text-white/40">
-            &copy; {new Date().getFullYear()} Nurture. All rights reserved.
+            &copy; {new Date().getFullYear()} Cradle. All rights reserved.
           </p>
           <a
             href="https://www.componentdock.com/"

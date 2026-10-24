@@ -6,7 +6,7 @@ describe('App', () => {
   it('renders all sections', () => {
     render(<App />)
 
-    expect(screen.getAllByText('Nurture').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Cradle').length).toBeGreaterThan(0)
     expect(screen.getByText('Learning Center for Your Kids')).toBeInTheDocument()
     expect(screen.getByText('What We Offer')).toBeInTheDocument()
     expect(screen.getByText("Education for Tomorrow's Leaders")).toBeInTheDocument()
@@ -18,6 +18,6 @@ describe('App', () => {
 
   it('sets the document title', () => {
     render(<App />)
-    expect(document.title).toBe('Nurture — Kids Learning Center')
+    expect(document.title).toBe('Cradle — Kids Learning Center')
   })
 })

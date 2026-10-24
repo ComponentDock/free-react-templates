@@ -14,9 +14,11 @@ changed_files() {
 changed_apps() {
   # A rename diff lists BOTH sides (apps/old deleted, apps/new added); only
   # folders that still exist can be verified — verify-app.sh exits 1 otherwise.
+  # Use `if` (not `[ -d ] && echo`) so a deleted folder is not the loop's exit
+  # status: with `set -e` that aborted the hook before any app was verified.
   changed_files | grep -oE '^apps/[^/]+' | cut -d/ -f2 | sort -u |
     while read -r app; do
-      [ -d "apps/${app}" ] && echo "${app}"
+      if [ -d "apps/${app}" ]; then echo "${app}"; fi
     done
 }
 

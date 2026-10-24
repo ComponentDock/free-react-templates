@@ -12,7 +12,7 @@ export function Hero() {
       id="home"
       className="relative flex min-h-screen items-center justify-center bg-cover bg-center bg-no-repeat pt-20"
       style={{
-        backgroundImage: 'url(https://picsum.photos/seed/nurture-hero/1920/1080)',
+        backgroundImage: 'url(https://picsum.photos/seed/cradle-hero/1920/1080)',
       }}
     >
       {/* Dark overlay */}
