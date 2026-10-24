@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('shows the site name, section links, Get Started button, and the dark-mode toggle', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: /Petsitting/i })).toHaveAttribute('href', '#top')
+    expect(screen.getByRole('link', { name: /Pawstay/i })).toHaveAttribute('href', '#top')
     expect(screen.getByRole('navigation', { name: 'Main' })).toBeInTheDocument()
     for (const label of ['Home', 'About', 'Services', 'Gallery', 'Pricing', 'Blog', 'Contact']) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

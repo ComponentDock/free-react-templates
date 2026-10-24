@@ -1,7 +1,7 @@
-# Petsitting (Colorlib Petsitting) — Tasks & Design Notes
+# Pawstay (Colorlib Petsitting) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-petsitting`.
+> Implementation ships later on `feat/template-pawstay`.
 
 ## Design notes
 
@@ -34,12 +34,12 @@
 - **Design tokens:** brand green **#00bd56** (primary), accent blue
   **#207dff**; dark text **#212529**, light sections **#f8f9fa**; font
   **Montserrat** via Google Fonts; filled rounded green buttons.
-- **Recreation name:** Petsitting (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder
-  `apps/petsitting`, package `@free-react-templates/petsitting`.
+- **Recreation name:** Pawstay — an original pet-sitting name, distinct from
+  the source design name. App folder `apps/pawstay`, package
+  `@free-react-templates/pawstay`.
 - **Design approach:** green brand tokens in `@theme`
   (`--color-brand: #00bd56`); seeded picsum placeholders
-  `https://picsum.photos/seed/petsitting-<n>/<w>/<h>`; lucide-react icons
+  `https://picsum.photos/seed/pawstay-<n>/<w>/<h>`; lucide-react icons
   (Footprints, Dog, Scissors for intro services); pricing monthly/yearly
   toggle as a stateful control with tests; consultation form with
   client-side validation (zod); repo-standard Navbar (dark-mode toggle) and
@@ -52,12 +52,12 @@
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-petsitting/spec.md` (Gherkin
+- [ ] Write `openspec/specs/template-pawstay/spec.md` (Gherkin
       requirements + scenarios + replication findings) — DONE on main (this
       prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/petsitting` (copy `apps/pawly`; rename package to
-      `@free-react-templates/petsitting`).
+- [ ] Create `apps/pawstay` (copy `apps/pawly`; rename package to
+      `@free-react-templates/pawstay`).
 - [ ] TDD: tests first for Navbar, Hero, Intro Services, Why Choose Us,
       Counters, FAQ, Testimonials, Pricing (+ billing toggle), Gallery, Blog,
       Consultation form, Footer, App composition; run red.
@@ -76,8 +76,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/petsitting/` may name the source designer,
+- **Provenance ban.** No file under `apps/pawstay/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/petsitting/public/CNAME` = `petsitting.free.componentdock.com`
-  and the package `homepage` = `https://petsitting.free.componentdock.com`.
+- **Deploy identity.** `apps/pawstay/public/CNAME` = `pawstay.free.componentdock.com`
+  and the package `homepage` = `https://pawstay.free.componentdock.com`.

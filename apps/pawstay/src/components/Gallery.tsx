@@ -24,7 +24,7 @@ export function Gallery() {
               className="overflow-hidden rounded-lg bg-paper text-center dark:bg-gray-800"
             >
               <img
-                src={`https://picsum.photos/seed/petsitting-gallery-${pet.seed}/480/360`}
+                src={`https://picsum.photos/seed/pawstay-gallery-${pet.seed}/480/360`}
                 alt={`A ${pet.breed} cared for by our sitters`}
                 loading="lazy"
                 className="h-48 w-full object-cover md:h-64"

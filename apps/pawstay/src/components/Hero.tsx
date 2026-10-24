@@ -27,7 +27,7 @@ export function Hero() {
         </div>
         <div className="flex-1">
           <img
-            src="https://picsum.photos/seed/petsitting-hero/640/520"
+            src="https://picsum.photos/seed/pawstay-hero/640/520"
             alt="A happy dog being cared for by a pet sitter"
             className="mx-auto w-full max-w-md rounded-lg"
             fetchPriority="high"

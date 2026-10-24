@@ -1257,7 +1257,7 @@ template-snapshot                   credo                      -> apps/optic    
 template-snapvault                  fotograp                   -> apps/photonic           (row 2451, row)
 template-snapview                   bato                       -> apps/focal              (row 2500, banner)
 template-snugden                    cozy                       -> apps/lounge             (row 1904, banner)
-template-snuggle                    petsitting                 -> apps/petsitting         (row 617, unproven)
+template-snuggle                    petsitting                 -> apps/pawstay            (row 617, unproven)
 template-solebound                  solestyle                  -> apps/lacecraft          (row 2936, banner)
 template-solecraft                  solestyle                  -> apps/lacecraft          (row 2936, banner)
 template-solefoot                   bootstrap-footer-14        -> apps/topaz              (row 792, banner)

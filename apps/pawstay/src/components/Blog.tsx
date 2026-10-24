@@ -1,19 +1,19 @@
 const posts = [
   {
     title: 'The Best Diet for Senior Dogs',
-    seed: 'petsitting-blog-1',
+    seed: 'pawstay-blog-1',
     excerpt:
       'Older dogs have different nutritional needs. Here is how to keep them strong and energetic.',
   },
   {
     title: 'How to Introduce a New Kitten to Your Home',
-    seed: 'petsitting-blog-2',
+    seed: 'pawstay-blog-2',
     excerpt:
       'A calm first week makes all the difference. Follow these steps for a smooth transition.',
   },
   {
     title: 'Keeping Cats Entertained Indoors',
-    seed: 'petsitting-blog-3',
+    seed: 'pawstay-blog-3',
     excerpt: 'Simple toys and climbing spots that keep indoor cats active, curious, and content.',
   },
 ] as const

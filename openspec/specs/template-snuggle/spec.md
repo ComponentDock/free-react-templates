@@ -1,9 +1,9 @@
 # Template: Snuggle (Pet Sitting Services Landing)
-<!-- prep-status: shipped-as=petsitting -->
+<!-- prep-status: shipped-as=pawstay -->
 > **SHIPPED-UNDER** — the ColorLib `petsitting` design this prep describes already
-> ships as `apps/petsitting` (<https://petsitting.free.componentdock.com>).
+> ships as `apps/pawstay` (<https://pawstay.free.componentdock.com>).
 > Do not scaffold `apps/snuggle`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-petsitting/spec.md`.
+> Fidelity reference: `openspec/specs/template-pawstay/spec.md`.
 
 ## Purpose
 
