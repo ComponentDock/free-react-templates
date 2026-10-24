@@ -26,7 +26,7 @@ export function Navbar() {
           href="#home"
           className="font-display text-2xl font-black tracking-wide text-primary-500 dark:text-primary-300"
         >
-          Mosh
+          Motif
         </a>
 
         <div className="flex items-center gap-3">

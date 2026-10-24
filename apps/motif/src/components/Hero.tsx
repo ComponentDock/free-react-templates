@@ -6,7 +6,7 @@ export function Hero() {
       <div
         className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: "url('https://picsum.photos/seed/mosh-hero/1600/900')",
+          backgroundImage: "url('https://picsum.photos/seed/motif-hero/1600/900')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -1,17 +1,17 @@
-# Mosh — Design Notes
+# Motif — Design Notes
 
 Reference: **Mosh** — `https://colorlib.com/wp/template/mosh/`  
 Live preview: `https://preview.colorlib.com/theme/mosh/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/mosh-free-template.jpg  
-Shipped: https://mosh.free.componentdock.com
+Shipped: https://motif.free.componentdock.com
 
-Mosh is a single-page creative-business landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Mosh" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Motif is a single-page creative-business landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Mosh" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Roboto**, **Roboto:wght@400;500;700;900**
 
-## Design tokens (`apps/mosh/src/index.css` `@theme`)
+## Design tokens (`apps/motif/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -49,7 +49,7 @@ Fonts loaded by `index.html` (Google Fonts): **Roboto**, **Roboto:wght@400;500;7
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Mosh", anchor links to the page's sections, a "Login" link, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Motif", anchor links to the page's sections, a "Login" link, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline and a "Get your freebie template now!" call-to-action.
@@ -93,8 +93,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/mosh/` may name the source designer,
+- **Provenance ban.** No file under `apps/motif/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/mosh/public/CNAME` = `mosh.free.componentdock.com`
-  and the package `homepage` = `https://mosh.free.componentdock.com`.
+- **Deploy identity.** `apps/motif/public/CNAME` = `motif.free.componentdock.com`
+  and the package `homepage` = `https://motif.free.componentdock.com`.

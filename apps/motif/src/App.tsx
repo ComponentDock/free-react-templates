@@ -12,7 +12,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Mosh — App Landing Template'
+    document.title = 'Motif — App Landing Template'
   }, [])
 
   return (

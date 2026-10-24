@@ -10,7 +10,7 @@ export function CallToAction() {
       <div
         className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: "url('https://picsum.photos/seed/mosh-cta/1600/700')",
+          backgroundImage: "url('https://picsum.photos/seed/motif-cta/1600/700')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
