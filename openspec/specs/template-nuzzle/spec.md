@@ -17,6 +17,13 @@ Nuzzle lives in `apps/nuzzle` and uses shared components from `packages/ui`
 (Button, Card, cn) plus the zod-based validated form pattern established by
 Aurora.
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `anipat`
+- **ColorLib page:** https://colorlib.com/wp/template/anipat/ — HTTP 200, 111,698 B.
+- **Preview analyzed:** https://preview.colorlib.com/theme/anipat/ — HTTP 200, 26,404 B, sha256 `0e928f2f…`, served `<title>` "Animal". The slug-only `preview.colorlib.com/theme/anipat/` path is the demo itself.
+- **Stylesheet:** `https://preview.colorlib.com/theme/anipat/css/style.css` — 138,426 B, sha256 `fba889c3…`; literals in file order #f14437, #ed5b0d, #191d34, #909092; faces Poppins + Open Sans.
+
 ## Requirements
 
 ### Requirement: Navigation bar

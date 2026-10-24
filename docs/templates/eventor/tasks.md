@@ -1,4 +1,11 @@
 # Eventor (Colorlib Eventor) — Tasks & Design Notes
+<!-- prep-status: shipped-as=podium -->
+> **SHIPPED-UNDER** — the ColorLib `eventor` design this prep describes already
+> ships as `apps/podium` (<https://podium.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-eventor/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-podium/spec.md`.
+
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-eventor`.

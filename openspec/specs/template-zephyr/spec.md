@@ -16,6 +16,13 @@ patterns.
 Zephyr lives in `apps/zephyr` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `colorlib-error-404-17`
+- **ColorLib page:** https://colorlib.com/wp/template/colorlib-error-404-17/ — HTTP 200, 114,626 B.
+- **Preview analyzed:** https://colorlib.com/etc/404/colorlib-error-404-17/ — HTTP 200, 769 B, sha256 `f33bcf57…`, served `<title>"404 HTML Template by Colorlib"`. The `/theme/colorlib-error-404-17/` path does not serve this family (HTTP 404, 9 B, re-probed 2026-10-24).
+- **Stylesheet:** `colorlib-error-404-17/css/style.css?v=07d7aa78` — 6,048 B, sha256 `e29fba31…`; literals in file order `#00b5c3`, `#292929`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

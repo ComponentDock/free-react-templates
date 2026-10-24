@@ -17,6 +17,13 @@ accessible patterns.
 Coral lives in `apps/coral` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `colorlib-error-404-7`
+- **ColorLib page:** https://colorlib.com/wp/template/colorlib-error-404-7/ — HTTP 200, 114,503 B.
+- **Preview analyzed:** https://colorlib.com/etc/404/colorlib-error-404-7/ — HTTP 200, 862 B, sha256 `22198874…`, served `<title>"404 HTML Template by Colorlib"`. The `/theme/colorlib-error-404-7/` path does not serve this family (HTTP 404, 9 B, re-probed 2026-10-24).
+- **Stylesheet:** `colorlib-error-404-7/css/style.css?v=8b43eee6` — 5,813 B, sha256 `78922d58…`; literals in file order `#ff508e`, `#f8fafb`, `#39b1cb`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

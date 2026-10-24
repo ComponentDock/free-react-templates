@@ -1,4 +1,12 @@
 # Sweeply — Implementation Notes
+<!-- prep-status: shipped-as=tidywash -->
+> **SHIPPED-UNDER** — the ColorLib `sweeply` design this prep describes already
+> ships as `apps/tidywash` (<https://tidywash.free.componentdock.com>). This folder
+> carries **no spec** (`openspec/specs/template-sweeply/` does not exist), so it is
+> prep history, not a claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-tidywash/spec.md`.
+
+
 
 Source: ColorLib Cleanex (https://preview.colorlib.com/theme/cleanex/)
 Preview URL slug: `cleanex`

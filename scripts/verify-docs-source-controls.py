@@ -235,7 +235,9 @@ def c11():
     by_app = {r['app']: r['bucket'] for r in res['records']}
     assert by_app.get('smithy') == 'AGREE', by_app.get('smithy')      # fixed 2026-10-24 (-24h)
     assert by_app.get('buildwell') == 'AGREE', by_app.get('buildwell')  # fixed 2026-10-24 (design drift)
-    for app in ('formbreeze', 'guideway', 'medical', 'soundbite'):        # citation defects, same run
+    for app in ('formbreeze', 'guideway', 'verdia', 'soundbite'):        # citation defects, same run
+        # `medical` was renamed to `verdia` by the naming stream (#1844); the
+        # control asserts the app that exists today.
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
     for app in ('lenscape', 'craftwork', 'vignette'):                      # briefs re-measured 2026-10-24 (batch 3)
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))

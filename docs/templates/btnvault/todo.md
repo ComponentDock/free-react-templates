@@ -7,9 +7,15 @@
 
 ## Metadata
 
-- **Source**: ColorLib Bootstrap Buttons 02 (`https://colorlib.com/wp/template/bootstrap-buttons-02/`)
-- **Preview URL**: `https://colorlib.com/wp/template/bootstrap-buttons-02/`
-- **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-02.jpg`
+- **Source**: ColorLib Bootstrap Buttons 07 (`https://colorlib.com/wp/template/bootstrap-buttons-07/`)
+  — corrected 2026-10-24: this file (and the `-02` screenshot) named the wrong
+  sibling. The header, `README.md`, `tasks.md` and the shipped spec
+  (`openspec/specs/template-btnflare/spec.md`) all read `bootstrap-buttons-07`,
+  and `-02` is the design `btnsmith` / `pushpad` recreate. Both URLs were
+  probed on 2026-10-24: `/wp/template/bootstrap-buttons-07/` 200 (114,428 B),
+  the nested `/wp/template/bb/…` form 301, screenshot 59,675 B.
+- **Preview URL**: `https://colorlib.com/wp/template/bootstrap-buttons-07/`
+- **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-07.jpg`
 - **New App Name**: `btnvault` (`@free-react-templates/btnvault`)
 - **Deploy Target**: `https://btnvault.free.componentdock.com`
 

@@ -1,4 +1,11 @@
 # Wavecrest — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=wavecrest -->
+> **SHIPPED-UNDER** — the ColorLib `major` design this prep describes already
+> ships as `apps/wavecrest` (<https://wavecrest.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-major/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-wavecrest/spec.md`.
+
 
 Source: ColorLib Major
 Preview: https://preview.colorlib.com/theme/major/

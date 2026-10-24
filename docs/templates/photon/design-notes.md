@@ -1,4 +1,12 @@
 # Photon — Design Notes
+<!-- prep-status: shipped-as=proton -->
+> **SHIPPED-UNDER** — the ColorLib `photon` design this prep describes already
+> ships as `apps/proton` (<https://proton.free.componentdock.com>). This folder
+> carries **no spec** (`openspec/specs/template-photon/` does not exist), so it is
+> prep history, not a claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-proton/spec.md`.
+
+
 
 **Source:** ColorLib "Atomic" (https://colorlib.com/wp/template/atomic/)
 **Preview:** https://preview.colorlib.com/theme/atomic/

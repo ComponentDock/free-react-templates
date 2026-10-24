@@ -16,6 +16,13 @@ accessible patterns.
 Wisp lives in `apps/wisp` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `colorlib-error-404-18`
+- **ColorLib page:** https://colorlib.com/wp/template/colorlib-error-404-18/ — HTTP 200, 114,606 B.
+- **Preview analyzed:** https://colorlib.com/etc/404/colorlib-error-404-18/ — HTTP 200, 786 B, sha256 `07dbbbba…`, served `<title>"404 HTML Template by Colorlib"`. The `/theme/colorlib-error-404-18/` path does not serve this family (HTTP 404, 9 B, re-probed 2026-10-24).
+- **Stylesheet:** `colorlib-error-404-18/css/style.css?v=18373343` — 5,020 B, sha256 `d86ac088…`; literals in file order `#f2f5f8`, `#151723`, `#999fa5`, `#388dbc`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

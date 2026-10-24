@@ -1,9 +1,19 @@
 # Tasks & Design Notes: Cruiseo (ColorLib Car Rentals)
-<!-- prep-status: shipped-as=drivego -->
-> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes already
-> ships as `apps/drivego` (<https://drivego.free.componentdock.com>).
+<!-- prep-status: shipped-as=fleetly -->
+> **SHIPPED-UNDER** — the ColorLib `car-rental` design this prep describes already
+> ships as `apps/fleetly` (<https://fleetly.free.componentdock.com>).
 > Do not scaffold `apps/cruiseo`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-drivego/spec.md`.
+> Fidelity reference: `openspec/specs/template-fleetly/spec.md`.
+>
+> **Correction (measured 2026-10-24).** This header pointed at `drivego`, which
+> recreates the *sibling* design `carrentals` (row 929, "CarRental — Car Rental
+> Made Simple"), not the design these notes measure. The gold `#F9A826` /
+> "THE ROYAL ESSENCE OF JOURNEY" hero and the `carrental-free-template.jpg`
+> screenshot below are the `car-rental` row (924), and that design ships as
+> `fleetly`. Preview re-probed the same day, so the URL in "Source Mapping" is
+> corrected too: `theme/carrental/` = 200 (33,626 B, `<title>` "Car Rentals —
+> Car Hire by the Day or Week"); `theme/car-rental/` = 404 (9 B);
+> `theme/carrentals/` = 200 (34,955 B) but that is drivego's design, not this one.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cruiseo`. Recreation name: **Cruiseo** (NEW name —
@@ -13,8 +23,15 @@
 
 - **ColorLib item:** "Car Rental" (TEMPLATES.md line 924; section "## Business (365)").
 - **Source URL:** https://colorlib.com/wp/template/car-rental/
-- **Preview URL — REACHABLE:** https://preview.colorlib.com/theme/carrentals/
-  (HTTP 200). Full Bootstrap + jQuery site; CSS: `css/style.css` (23,650 bytes).
+- **Preview URL — REACHABLE:** https://preview.colorlib.com/theme/carrental/
+  (HTTP 200, 33,626 B, `<title>` "Car Rentals — Car Hire by the Day or Week";
+  re-probed 2026-10-24). **Re-skinned since this prep:** the live demo now serves
+  a 3.0.2 rebuild — `css/style.min.css?v=3.0.2` (193,438 B, sha256 `dc16f2fe…`,
+  Bootstrap defaults `#0d6efd`/`#dc3545` in the vendor block, Poppins) plus
+  `vendor/swiper/14.3.0` and `vendor/fontawesome/7.3.1`. The prep's
+  `css/style.css` (23,650 bytes, Roboto, gold `#F9A826`) is the ORIGINAL
+  theme — where the live demo disagrees, the screenshot
+  (`carrental-free-template.jpg`) is the fidelity reference.
   Fonts: Roboto (400, 700, 900) via Google Fonts. Icons: icomoon + flaticon
   font → replace with `lucide-react`.
 

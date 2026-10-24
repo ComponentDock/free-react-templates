@@ -1,4 +1,11 @@
 # Archi (Colorlib Archi) — Tasks & Design Notes
+<!-- prep-status: shipped-as=keystone -->
+> **SHIPPED-UNDER** — the ColorLib `archi` design this prep describes already
+> ships as `apps/keystone` (<https://keystone.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-archi/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-keystone/spec.md`.
+
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-archi`.

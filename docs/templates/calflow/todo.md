@@ -5,7 +5,11 @@
 > Do not scaffold `apps/calflow`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-caldesk/spec.md`.
 
-Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`).
+Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`).
+<!-- corrected 2026-10-24: this line read `calendar-12` (a sibling design that
+     several apps recreate), while the header, README.md and the shipped spec
+     `openspec/specs/template-caldesk/spec.md` all read `calendar-14`.
+     https://colorlib.com/wp/template/calendar-14/ is HTTP 200 (113,648 B). -->
 
 ## Architecture & Structure
 

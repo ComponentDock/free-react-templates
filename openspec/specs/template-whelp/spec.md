@@ -17,6 +17,13 @@ Whelp lives in `apps/whelp` and uses shared components from `packages/ui`
 (Button, Badge, Card, cn) plus the zod-based validated form pattern established
 by Aurora.
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `breed`
+- **ColorLib page:** https://colorlib.com/wp/template/breed/ — HTTP 200, 111,394 B.
+- **Preview analyzed:** https://preview.colorlib.com/theme/breed/ — HTTP 200, 35,184 B, sha256 `d531044b…`, served `<title>` "Colorlib Breed". The slug-only `preview.colorlib.com/theme/breed/` path is the demo itself.
+- **Stylesheet:** `https://preview.colorlib.com/theme/breed/css/style.css` — 15,560 B, sha256 `e53546c0…`; literals in file order #868e96, #ffce3a, #ffc107, #495057; faces Open Sans.
+
 ## Requirements
 
 ### Requirement: Navigation bar

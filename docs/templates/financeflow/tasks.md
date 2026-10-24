@@ -1,4 +1,11 @@
 # Financeflow (Colorlib Financeflow) — Tasks & Design Notes
+<!-- prep-status: shipped-as=ticker -->
+> **SHIPPED-UNDER** — the ColorLib `financeflow` design this prep describes already
+> ships as `apps/ticker` (<https://ticker.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-financeflow/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-ticker/spec.md`.
+
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-financeflow`.

@@ -55,7 +55,10 @@ GUARDS = {'slug_norm': True, 'label_tier': True, 'row_third_opinion': True}
 ROW = re.compile(r'^- \[[ xX~]\] \*\*(.+?)\*\*', re.M)
 ROW_SLUG = re.compile(r'\[colorlib\]\(https://colorlib\.com/wp/template/([\w.~%+-]+)/\)')
 ROW_APP = re.compile(r'\]\(https://([\w.-]+)\.free\.componentdock\.com\)', re.I)
-WP_URL = re.compile(r'colorlib\.com/wp/template/([\w.~%+-]+)/')
+# The wp URL can nest a family directory (`/wp/template/bb/bootstrap-buttons-02/`);
+# capturing only the first segment read the family (`bb`) as the design and made
+# `btnsmith` flag PENDING-DRIFT on 2026-10-24.  Take the whole tail, then last_seg().
+WP_URL = re.compile(r'colorlib\.com/wp/template/([\w.~%+-]+(?:/[\w.~%+-]+)*)')
 PRE_URL = re.compile(r'preview\.colorlib\.com/theme/([\w.~%+-]+(?:/[\w.~%+-]+)*)')
 ZIP_URL = re.compile(r'downloads/free/([\w.~%+-]+)\.zip')
 # `/etc/cf/ContactFrom_v1/index.html` — the comingsoon/contact-form families serve the
@@ -65,9 +68,19 @@ ETC_URL = re.compile(r'colorlib\.com/etc/[a-z0-9]+/([\w.~%+-]+)', re.I)
 # Line-anchored on purpose — the prose form ("… not the ColorLib source slug
 # `sakura`") named the app, not its design, and produced 65 phantom flags when
 # the tier was unanchored (measured 2026-10-24).
-LABELED = re.compile(r'(?m)^[\s>*+-]{0,8}(?:\*\*)?[Ss]ource\s+slug\**(?:\*\*)?\s*[:=]\s*\**`([\w.~%-]+)`')
+# The tier was also DEAD for the house spelling until 2026-10-24: every spec
+# writes `**Source slug:** `x`` (colon inside the bold, space before the
+# backtick) and the old pattern demanded backtick right after the asterisks, so
+# the declaration never outranked an incidental URL.  `\s*\**\s*[:=]\s*\**\s*`
+# accepts bold-colon, colon-then-bold and bare forms.
+LABELED = re.compile(r'(?m)^[\s>*+-]{0,8}(?:\*\*)?[Ss]ource\s+slug\s*\**\s*[:=]\s*\**\s*`([\w.~%+-]+)`')
 DOC_FILES = ('design-notes.md', 'tasks.md')
 HEAD_LINES = 30          # the source declaration lives in the header block
+# A page FILE name, not a design (`…/tattoo/index.html`), and a bare family
+# directory (`/theme/bb/`, `/etc/cf/`) which names a snippet family, not a design.
+PAGE_SEG = re.compile(r'^(?:index|home|default|main|page)(?:\.(?:html?|php))?$', re.I)
+FAMILY_SEG = {'bb', 'bft', 'bac', 'bootstrap', 'sidebar', 'cs', 'lf', 'cf',
+              'theme', 'etc', 'downloads', 'free', 'wp', 'template'}
 
 
 def norm(s: str) -> str:
@@ -75,9 +88,34 @@ def norm(s: str) -> str:
 
 
 def last_seg(path: str) -> str:
-    """Last path segment, minus sentence punctuation (`…/theme/busicol/.` -> busicol)."""
+    """The design named by a ColorLib path.
+
+    The design is the FIRST segment after the family root, unless that segment is
+    itself a family directory:
+
+      `wp/template/car-rental/`                 -> car-rental
+      `wp/template/bb/bootstrap-buttons-02/`    -> bootstrap-buttons-02   (family `bb`)
+      `theme/bootstrap/modal-09/`               -> modal-09               (family)
+      `theme/tattooz/tattoo/index.html`         -> tattooz  (the PAGE sub-dir is
+                                                   `tattoo`; reading it made
+                                                   `inkcraft` look like drift)
+      `theme/fashe/assets/css/style.css`        -> fashe    (a sheet URL is common
+                                                   in specs; `style.css` is not a
+                                                   design)
+      `etc/cf/ContactFrom_v1/index.html`         -> handled by the caller's capture
+    A page FILE name (`index.html`) and a page extension on a directory name
+    (`03-comming-soon.html`) are stripped, and a bare family prefix names no design.
+    """
     segs = [s for s in path.split('/') if s.strip('.')]
-    return segs[-1].strip('.,;:') if segs else ''
+    segs = [re.sub(r'\.(?:html?|php)$', '', s, flags=re.I) for s in segs]
+    segs = [s.strip('.,;:') for s in segs]
+    segs = [s for s in segs if s and not PAGE_SEG.match(s)]
+    if not segs:
+        return ''
+    head = segs[0].lower()
+    if head in FAMILY_SEG and len(segs) > 1:
+        return segs[1]
+    return '' if head in FAMILY_SEG else segs[0]
 
 
 # --- TEMPLATES.md ----------------------------------------------------------
@@ -120,12 +158,12 @@ def _candidates(text: str, head_only: bool) -> list[tuple[str, str]]:
     if GUARDS['label_tier'] and (m := LABELED.search(body)):
         cands.append((m.group(1), 'source-label'))
     if (m := WP_URL.search(body)):
-        cands.append((m.group(1), 'wp-url'))
+        cands.append((last_seg(m.group(1)), 'wp-url'))
     for m in PRE_URL.finditer(body):
         cands.append((last_seg(m.group(1)), 'preview-url'))
         break
     if (m := ETC_URL.search(body)):
-        cands.append((m.group(1), 'etc-url'))
+        cands.append((last_seg(m.group(1)), 'etc-url'))
     if (m := ZIP_URL.search(body)):
         cands.append((m.group(1), 'archive'))
     if head_only and not cands:

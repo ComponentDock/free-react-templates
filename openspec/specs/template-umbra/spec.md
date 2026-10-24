@@ -16,6 +16,13 @@ and adds the repo's standard dark-mode toggle and accessible patterns.
 Umbra lives in `apps/umbra` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `colorlib-error-404-6`
+- **ColorLib page:** https://colorlib.com/wp/template/colorlib-error-404-6/ — HTTP 200, 114,521 B.
+- **Preview analyzed:** https://colorlib.com/etc/404/colorlib-error-404-6/ — HTTP 200, 648 B, sha256 `4d5f6ea0…`, served `<title>"404 HTML Template by Colorlib"`. The `/theme/colorlib-error-404-6/` path does not serve this family (HTTP 404, 9 B, re-probed 2026-10-24).
+- **Stylesheet:** `colorlib-error-404-6/css/style.css?v=c3fb15e7` — 5,252 B, sha256 `15bb0bed…`; literals in file order `#030005`, `#8400ff`, `#ff005a`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

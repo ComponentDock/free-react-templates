@@ -192,4 +192,28 @@ Classes:
    described a **different** design — `-14` opens with "Button #04" and paints
    violet `#5635ea` / `#a15bf0` / cyan `#32c5f6` / green `#48da79`. Bucket
    `SPEC-STALE` is now empty (18 → 17).
-6. **Next axis:** spec ↔ brief over `openspec/specs/` (the 1,533 unshipped briefs).
+6. ~~**Next axis:** spec ↔ brief over `openspec/specs/` (the 1,533 unshipped briefs).~~
+   **SHIPPED 2026-10-24 as `docs/brief-pending.md`** — `scripts/verify-brief-spec.py`
+   (+ controls, 15/15) reads the 1,533 `docs/templates/<name>/` dirs that have no
+   app: 1,408 `shipped-as=` prep dirs, 115 surplus preps, 10 spec-less briefs.
+   24 flags → 0 (5 header/citation corrections, 9 specs given a measured
+   provenance block, 10 spec-less dirs marked).
+
+## Extractor fixes this axis' successor needed (2026-10-24)
+
+Widening to the unshipped layer exposed two defects in the shared extraction
+helpers, both fixed here and both **neutral for the shipped-apps verdict**
+(re-measured: 0 flags, controls 15/15):
+
+- **The labelled `Source slug:` tier was dead on the house spelling.** The
+  pattern wanted a backtick immediately after `**`; every doc writes
+  `- **Source slug:** `x`` (colon inside the bold, space before the backtick).
+  Measured over 8,271 specs+briefs: old pattern matched **88**, the fixed one
+  **572**. `ColorLib slug:` is still NOT a label tier.
+- **`last_seg()` read the page, not the design** — `wp/template/bb/…` yielded the
+  family `bb`, `theme/tattooz/tattoo/index.html` yielded `tattoo`, and a sheet
+  URL (`theme/fashe/assets/css/style.css`) would have yielded `style.css`. The
+  design is the first segment after the family root; family dirs (`bb`, `bft`,
+  `bac`, `bootstrap`, `sidebar`, `cs`, `lf`, `cf`) are transparent.
+- `verify-docs-source-controls.py` c11 asserted `medical`; the naming stream
+  renamed it to `verdia` (#1844). The control now asserts `verdia`.

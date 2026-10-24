@@ -1,4 +1,11 @@
 # Elena Voss (Colorlib Elena Voss) — Tasks & Design Notes
+<!-- prep-status: shipped-as=shutter -->
+> **SHIPPED-UNDER** — the ColorLib `elena-voss` design this prep describes already
+> ships as `apps/shutter` (<https://shutter.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-elena-voss/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-shutter/spec.md`.
+
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-elena-voss`.

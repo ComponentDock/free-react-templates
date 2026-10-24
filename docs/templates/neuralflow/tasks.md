@@ -1,4 +1,11 @@
 # Neuralflow (Colorlib Neuralflow) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sentient -->
+> **SHIPPED-UNDER** — the ColorLib `neuralflow` design this prep describes already
+> ships as `apps/sentient` (<https://sentient.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-neuralflow/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-sentient/spec.md`.
+
 
 > Prep artifacts prepared on `main` while the Cloud PR (#7) awaits review.
 > Implementation ships later on `feat/template-neuralflow`.

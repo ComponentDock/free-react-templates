@@ -1,4 +1,11 @@
 # Hvac (Colorlib HVAC) — Tasks & Design Notes
+<!-- prep-status: shipped-as=clutch,aeroworks -->
+> **SHIPPED-UNDER** — the ColorLib `hvac` design this prep describes already
+> ships as `apps/clutch` (<https://clutch.free.componentdock.com>), `apps/aeroworks` (<https://aeroworks.free.componentdock.com>). This folder carries **no spec**
+> (`openspec/specs/template-hvac/` does not exist), so it is prep history, not a
+> claim marker — do not scaffold an app from it.
+> Fidelity references: `openspec/specs/template-clutch/spec.md`, `openspec/specs/template-aeroworks/spec.md`.
+
 
 > Prep artifacts prepared on `main` while the Lagoon PR awaits review.
 > Implementation ships later on `feat/template-hvac`.

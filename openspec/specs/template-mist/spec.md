@@ -17,6 +17,13 @@ patterns.
 Mist lives in `apps/mist` and uses shared components from `packages/ui`
 (Button, ButtonLink, cn).
 
+Provenance (measured 2026-10-24):
+
+- **Source slug:** `colorlib-error-404-5`
+- **ColorLib page:** https://colorlib.com/wp/template/colorlib-error-404-5/ — HTTP 200, 114,547 B.
+- **Preview analyzed:** https://colorlib.com/etc/404/colorlib-error-404-5/ — HTTP 200, 851 B, sha256 `bd95d6b1…`, served `<title>"404 HTML Template by Colorlib"`. The `/theme/colorlib-error-404-5/` path does not serve this family (HTTP 404, 9 B, re-probed 2026-10-24).
+- **Stylesheet:** `colorlib-error-404-5/css/style.css?v=93dd9ff2` — 6,149 B, sha256 `9fe31e0e…`; literals in file order `#e3e3e3`, `#57a3f8`.
+
 ## Requirements
 
 ### Requirement: Navigation bar

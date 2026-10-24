@@ -1,4 +1,12 @@
 # Lamellar — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=fanfold -->
+> **SHIPPED-UNDER** — the ColorLib `lamellar` design this prep describes already
+> ships as `apps/fanfold` (<https://fanfold.free.componentdock.com>). This folder
+> carries **no spec** (`openspec/specs/template-lamellar/` does not exist), so it is
+> prep history, not a claim marker — do not scaffold an app from it.
+> Fidelity reference: `openspec/specs/template-fanfold/spec.md`.
+
+
 
 ## Source Mapping
 

@@ -1,8 +1,20 @@
-# Vesture (ColorLib Ashion) — Tasks & Design Notes
+# Vesture — Ashion-era prep history (superseded by the `fashe` line)
 <!-- prep-status: shipped-as=drape -->
 > **SHIPPED-UNDER** — the ColorLib `fashe` design this prep describes shipped
 > as `apps/drape` (<https://drape.free.componentdock.com>).
 > The unchecked items below are prep history, not outstanding work.
+>
+> **SUPERSEDED BODY (measured 2026-10-24).** The design notes below were written for
+> a DIFFERENT design — Ashion (`https://colorlib.com/wp/template/ashion/`, white /
+> pastel / black script). The `vesture` line was re-pointed to Fashe
+> (`https://colorlib.com/wp/template/fashe/`, terracotta `#C8553D`, Assistant) and
+> shipped as `apps/drape`; Ashion itself never shipped and no spec names it.
+> Authoritative Fashe research: `docs/templates/drape/design-notes.md` and
+> `openspec/specs/template-drape/spec.md`. Read the Ashion notes below as history,
+> NOT as a build instruction.
+>
+> - **Source slug:** `fashe`
+> - **Recreates:** Fashe — https://colorlib.com/wp/template/fashe/ (the Ashion references below are history)
 
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-vesture/` is the claim marker —
