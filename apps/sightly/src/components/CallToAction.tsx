@@ -3,7 +3,7 @@ export function CallToAction() {
     <section
       className="relative bg-cover bg-center py-20"
       style={{
-        backgroundImage: 'url(https://picsum.photos/seed/expo-cta/1600/600)',
+        backgroundImage: 'url(https://picsum.photos/seed/sightly-cta/1600/600)',
       }}
     >
       <div className="absolute inset-0 bg-primary/80" />

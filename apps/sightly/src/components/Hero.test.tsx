@@ -28,6 +28,6 @@ describe('Hero', () => {
     render(<Hero />)
     const img = screen.getByAltText('Marketing illustration')
     expect(img).toBeInTheDocument()
-    expect(img).toHaveAttribute('src', 'https://picsum.photos/seed/expo-illustration/600/500')
+    expect(img).toHaveAttribute('src', 'https://picsum.photos/seed/sightly-illustration/600/500')
   })
 })

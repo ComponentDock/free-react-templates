@@ -1,12 +1,12 @@
-# Template: Expo (SEO / Digital Marketing Landing Page)
+# Template: Sightly (SEO / Digital Marketing Landing Page)
 
 ## Purpose
 
-Expo is an SEO / digital marketing landing page. It recreates the ColorLib "Expo" design (https://colorlib.com/wp/template/expo/, preview: https://preview.colorlib.com/theme/expo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Sightly is an SEO / digital marketing landing page. It recreates the ColorLib "Expo" design (https://colorlib.com/wp/template/expo/, preview: https://preview.colorlib.com/theme/expo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Overview
 
-Expo is a single-page SEO and digital marketing landing page template.
+Sightly is a single-page SEO and digital marketing landing page template.
 It features a sticky transparent navbar, hero with CTA, trusted-by brand logos,
 about section, services/features grid, project showcase, pricing cards,
 call-to-action banner, and a dark-purple footer.
@@ -44,7 +44,7 @@ Feature: Sticky transparent navbar
 #### Scenario: Navbar renders logo and navigation links
 
 - **GIVEN** the page is loaded
-- **THEN** the navbar contains the text "Expo"
+- **THEN** the navbar contains the text "Sightly"
 - **AND** the navbar contains links for "Home", "About", "Services", "Blog", "Contact"
 - **AND** the navbar contains a phone CTA button
 
@@ -139,7 +139,7 @@ Feature: Footer
 #### Scenario: Footer has logo, columns, and copyright
 
 - **GIVEN** the page is loaded
-- **THEN** the footer contains the text "Expo"
+- **THEN** the footer contains the text "Sightly"
 - **AND** the footer displays navigation links
 - **AND** the footer displays service links
 - **AND** the footer displays contact information
@@ -154,7 +154,7 @@ Feature: Footer
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/expo/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/sightly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -163,14 +163,14 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/expo/` is inspected
+- **WHEN** every non-test file under `apps/sightly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
 ## Verification checklist
 
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navbar — the navbar contains the text "Expo"
+- [x] Navbar — the navbar contains the text "Sightly"
 - [x] Hero — the hero section displays "Build audience and grow your brand"
 - [ ] Brands — the brands section displays "Trusted by over 3,000 world's leading companies"
 - [x] About — the about section displays "We take a steps to build a successful business"

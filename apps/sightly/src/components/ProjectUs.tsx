@@ -13,7 +13,7 @@ export function ProjectUs() {
           </p>
         </div>
         <img
-          src="https://picsum.photos/seed/expo-project/600/500"
+          src="https://picsum.photos/seed/sightly-project/600/500"
           alt="Project solutions"
           className="w-full rounded-lg"
         />

@@ -10,9 +10,9 @@ describe('App', () => {
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })
 
-  it('renders the Expo brand name', () => {
+  it('renders the Sightly brand name', () => {
     render(<App />)
-    expect(screen.getAllByText('Expo').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Sightly').length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders all section headings', () => {

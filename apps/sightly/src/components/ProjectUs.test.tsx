@@ -21,6 +21,6 @@ describe('ProjectUs', () => {
     render(<ProjectUs />)
     const img = screen.getByAltText('Project solutions')
     expect(img).toBeInTheDocument()
-    expect(img).toHaveAttribute('src', 'https://picsum.photos/seed/expo-project/600/500')
+    expect(img).toHaveAttribute('src', 'https://picsum.photos/seed/sightly-project/600/500')
   })
 })

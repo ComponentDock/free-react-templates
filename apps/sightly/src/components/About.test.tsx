@@ -28,6 +28,6 @@ describe('About', () => {
     render(<About />)
     const img = screen.getByAltText('About us')
     expect(img).toBeInTheDocument()
-    expect(img).toHaveAttribute('src', 'https://picsum.photos/seed/expo-about/600/500')
+    expect(img).toHaveAttribute('src', 'https://picsum.photos/seed/sightly-about/600/500')
   })
 })

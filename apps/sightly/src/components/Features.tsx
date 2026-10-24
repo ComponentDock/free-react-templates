@@ -29,7 +29,7 @@ export function Features() {
       id="services"
       className="relative bg-cover bg-center py-20"
       style={{
-        backgroundImage: 'url(https://picsum.photos/seed/expo-features-bg/1600/900)',
+        backgroundImage: 'url(https://picsum.photos/seed/sightly-features-bg/1600/900)',
       }}
     >
       <div className="absolute inset-0 bg-secondary/90" />

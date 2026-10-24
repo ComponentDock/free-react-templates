@@ -7,7 +7,7 @@ export function Navbar() {
     <header role="banner" className="sticky top-0 z-50 bg-transparent">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         <a href="#" className="text-2xl font-bold text-white font-heading">
-          Expo
+          Sightly
         </a>
         <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (

@@ -1,17 +1,17 @@
-# Expo — Design Notes
+# Sightly — Design Notes
 
 Reference: **Expo** — `https://colorlib.com/wp/template/expo/`  
 Live preview: `https://preview.colorlib.com/theme/expo/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/expo-free-template.jpg  
-Shipped: https://expo.free.componentdock.com
+Shipped: https://sightly.free.componentdock.com
 
-Expo is an SEO / digital marketing landing page. It recreates the ColorLib **Expo** design (https://colorlib.com/wp/template/expo/, preview: https://preview.colorlib.com/theme/expo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Sightly is an SEO / digital marketing landing page. It recreates the ColorLib **Expo** design (https://colorlib.com/wp/template/expo/, preview: https://preview.colorlib.com/theme/expo/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Josefin Sans**, **Josefin Sans:wght@300;400;500;600;700**, **Roboto**
 
-## Design tokens (`apps/expo/src/index.css` `@theme`)
+## Design tokens (`apps/sightly/src/index.css` `@theme`)
 
 | token                    | value                                                  | role           |
 | ------------------------ | ------------------------------------------------------ | -------------- |
@@ -28,7 +28,7 @@ Fonts loaded by `index.html` (Google Fonts): **Josefin Sans**, **Josefin Sans:wg
 | `--font-body`            | `'Roboto', ui-sans-serif, system-ui, sans-serif`       | font body      |
 | `--font-sans`            | `'Roboto', ui-sans-serif, system-ui, sans-serif`       | font sans      |
 
-> The spec has no section-level requirements; the order below is read from `apps/expo/src/App.tsx` and the copy anchors from each component.
+> The spec has no section-level requirements; the order below is read from `apps/sightly/src/App.tsx` and the copy anchors from each component.
 
 ## Document order
 
@@ -50,7 +50,7 @@ Bands marked _anchors only_ have no dedicated requirement block in the spec; hol
 
 ### `Navbar`
 
-_anchors only_ — banner · Expo
+_anchors only_ — banner · Sightly
 
 ### `Hero`
 
@@ -99,8 +99,8 @@ _anchors only_ — contentinfo · Facebook · Twitter · LinkedIn
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/expo/` may name the source designer,
+- **Provenance ban.** No file under `apps/sightly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/expo/public/CNAME` = `expo.free.componentdock.com`
-  and the package `homepage` = `https://expo.free.componentdock.com`.
+- **Deploy identity.** `apps/sightly/public/CNAME` = `sightly.free.componentdock.com`
+  and the package `homepage` = `https://sightly.free.componentdock.com`.
