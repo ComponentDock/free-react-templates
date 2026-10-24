@@ -7,6 +7,44 @@
 
 Spotlight is a business directory template. It recreates the ColorLib "Listed2" design (https://colorlib.com/wp/template/listed2/, preview: https://preview.colorlib.com/theme/listed2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
+## Reference identity (measured 2026-10-24)
+
+This prep cites the row's OWN demo, and that is the correct one — but the
+catalogue does not: in
+`assets/js/catalog-products-20261009-trace-developer.js` (633,990 B, 1,961
+entries) the key `listed2` carries `url: https://preview.colorlib.com/theme/listed/`,
+a copy of key `listed`'s URL. `colorlibPreviewAliases` has no `listed2` entry,
+so the alias map does not explain it: it is a catalogue data bug.
+
+| URL | status | bytes | `<title>` | design |
+| --- | --- | --- | --- | --- |
+| `theme/listed/` | 200 | 23,918 | Colorlib Listed Directory Template | the `listed` post — Raleway + Playfair Display, Bootstrap-blue CTAs, "Find your perfect place." → `placeboard` |
+| `theme/listed2/` | 200 | 28,515 | Listed — Colorlib Website Template | **Listed2, this design** — Quicksand, `#7971ea`, `h1 "Find Nearby Appartments"` |
+| `theme/listing/` | 200 | 39,079 | Listing — Discover Great Local Places in New York | unrelated third design |
+
+Both archives 404 (`downloads/free/listed.zip`, `listed2.zip`), so the live
+preview is the sole DOM/CSS reference. Anything measured against `theme/listed/`
+belongs to the sibling design — see `template-placecraft`, whose TOKEN-UNVERIFIED
+verdict came from exactly that mistake.
+
+Measured geometry (1440 px, document 5,662 px): header 73 · hero 900 · Most
+Visited Places 598 · Popular Categories 478 · Why Us 624 · Testimonials 636
+(`#f8f9fa`) · Our Blog 900 · FAQ 562 · CTA 248 (`#7971ea`) · footer 642
+(`#333333`). Counts: 6 `.popular-category`, 3 `.listing-item`, 8 testimonial
+blocks, 4 FAQ items, 5 nav items, 61 anchors, 2 forms (hero search with no
+`action`; newsletter `action="#"`).
+
+Copy/structure corrections for the section list below:
+
+- **"How To List Your Property" is the title of the two Our Blog cards**
+  (`h2.font-size-regular` inside `div.h-entry`) — it is not a separate section.
+- The three "Sticky Band" `h2` occurrences are the Most Visited Places card
+  titles, not a section.
+- The base `.btn { border-radius: 0 }` is overridden for the hero Search button:
+  `.form-search-wrap .btn { border-radius: 30px; padding: 10px 30px }`, measured
+  computed radius `30px`; nav items and the category badge are also `30px`.
+  `apps/spotlight` ships 4px on the search wrapper, fields and button — app debt.
+
 ## Design Tokens (extracted from preview CSS)
 
 - **Brand color:** `#7971ea` (purple)
@@ -19,7 +57,8 @@ Spotlight is a business directory template. It recreates the ColorLib "Listed2" 
 - **Footer text:** `#737373`
 - **Border:** `#edf0f5`
 - **Font family:** Quicksand (weights 300-700)
-- **Button:** rounded, primary bg, white text
+- **Button:** base `.btn` radius `0`; hero Search CTA `.form-search-wrap .btn` radius `30px`, `padding: 10px 30px`, bg `#7971ea`, white text
+- **Pills:** nav active/hover item and listing category badge radius `30px`
 - **Cards:** white bg, image top, overlay content
 
 ## Sections (in order)

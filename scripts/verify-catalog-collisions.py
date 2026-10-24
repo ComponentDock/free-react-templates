@@ -21,6 +21,15 @@ adjudication is: catalogue `details` + the live page's own section copy vs each
 entry's thumbnail. This scanner cannot render, so it reports the *inventory* and
 whether each citing spec already carries a reference-identity note.
 
+VARIANT (measured 2026-10-24, `theme/listed/`): the shared `url` can be a plain
+catalogue DATA bug — `listed2`'s own directory `theme/listed2/` answers 200 with
+the design its thumbnail shows (Quicksand, `#7971ea`), so nothing is missing and
+only the `url` field is wrong. Probing `theme/<slug>-2/` and `theme/<slug>2/`
+before writing "unreachable" is mandatory. Note also that `verify-live-tokens.py`
+and `verify-shape-tokens.py` resolve demos catalogue-FIRST, so a colliding key
+makes them measure a spec against its SIBLING's page — a source of false
+TOKEN-UNVERIFIED / SHAPE-WRONG verdicts (`NO_CATALOG=1` is the A/B control).
+
 Buckets (partition, each group exactly once):
     NOTED        at least one citing spec carries a collision note
     UNNOTED      specs cite the directory and none records the collision (flag)

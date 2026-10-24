@@ -2,8 +2,18 @@
 
 Reference: **Listed2** — `https://colorlib.com/wp/template/listed2/`  
 Live preview: `https://preview.colorlib.com/theme/listed2/`  
-Screenshot:   
+Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/listed2-free-template.jpg  
 Shipped: https://spotlight.free.componentdock.com
+
+> **REFERENCE IDENTITY (2026-10-24)** — `theme/listed2/` is this design's own
+> demo (200, 28,515 B, `Listed — Colorlib Website Template`, Quicksand,
+> `#7971ea`, `h1 "Find Nearby Appartments"`). The catalogue's `listed2` key
+> carries `theme/listed/` by mistake (that URL renders the `listed` post —
+> Raleway/Playfair, Bootstrap-blue CTAs, now `apps/placeboard`), and there is no
+> `colorlibPreviewAliases` entry to explain it. Measured geometry: header 73 ·
+> hero 900 · Most Visited Places 598 · Popular Categories 478 · Why Us 624 ·
+> Testimonials 636 (`#f8f9fa`) · Our Blog 900 · FAQ 562 · CTA 248 (`#7971ea`) ·
+> footer 642 (`#333333`); document 5,662 px. Hero Search CTA is a 30px pill.
 
 Spotlight is a business directory template. It recreates the ColorLib **Listed2** design (https://colorlib.com/wp/template/listed2/, preview: https://preview.colorlib.com/theme/listed2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 

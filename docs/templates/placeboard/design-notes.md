@@ -5,6 +5,16 @@ Live preview: `https://preview.colorlib.com/theme/listed/`
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/listed-free-template-1.jpg  
 Shipped: https://placeboard.free.componentdock.com
 
+> **REFERENCE IDENTITY (2026-10-24)** — `theme/listed/` (200, 23,918 B,
+> `Colorlib Listed Directory Template`) renders THIS design, so every token and
+> note here is measured on the right page. Measured geometry: header 83 · hero
+> 900 · feature-destination 330 · Top Destinations 673 · section-cover 500 ·
+> More Featured Destinations 604 · footer 528 (`#f2f2f2`); document 3,535 px.
+> The catalogue also maps key `listed2` to this same URL — a data bug (no
+> `colorlibPreviewAliases` entry); the Listed2 design lives at `theme/listed2/`
+> (Quicksand, `#7971ea`) and ships as `apps/spotlight`. Do not treat this
+> directory as shared between the two preps.
+
 A Directory / Travel Listing template with hero, feature destinations, top destinations, section cover and featured destinations sections. Recreation of the ColorLib "Listed" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 ## Typography

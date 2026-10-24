@@ -5,6 +5,14 @@
 > Do not scaffold `apps/placecraft`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-spotlight/spec.md`.
 
+> **REFERENCE IDENTITY (2026-10-24)** — this design's demo is
+> `theme/listed2/` (200, 28,515 B, `Listed — Colorlib Website Template`,
+> Quicksand, `#7971ea`), NOT `theme/listed/`; the catalogue's `listed2` key
+> carries the sibling's URL by mistake. Geometry: header 73 · hero 900 · Most
+> Visited Places 598 · Popular Categories 478 · Why Us 624 · Testimonials 636 ·
+> Our Blog 900 · FAQ 562 · CTA 248 · footer 642. The hero Search button is a
+> 30px pill (`.form-search-wrap .btn`), not a square corner.
+
 Source: ColorLib Listed2 (https://preview.colorlib.com/theme/listed2/)
 
 ## Structure order

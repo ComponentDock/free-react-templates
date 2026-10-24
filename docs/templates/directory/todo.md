@@ -5,6 +5,12 @@
 > Do not scaffold `apps/directory`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-placeboard/spec.md`.
 
+> **REFERENCE IDENTITY (2026-10-24)** — `theme/listed/` (200, 23,918 B) renders
+> this row's `listed` design (Raleway/Playfair, Bootstrap-blue CTAs), so the notes below
+> stand. The catalogue ALSO maps key `listed2` to `theme/listed/` — a data bug
+> (no alias entry): the Listed2 design lives at `theme/listed2/` (200, 28,515 B,
+> Quicksand, `#7971ea`). Never measure a Listed2 claim against `theme/listed/`.
+
 Source: ColorLib "Listed" (https://preview.colorlib.com/theme/listed/)
 New name: directory
 Category: Real Estate / Directory

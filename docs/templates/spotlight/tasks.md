@@ -8,6 +8,12 @@
 - Package: @free-react-templates/spotlight
 - App folder: apps/spotlight
 
+> **REFERENCE IDENTITY (2026-10-24)** — preview `theme/listed2/` is correct and
+> is the ONLY page this design may be measured against (200, 28,515 B,
+> Quicksand, `#7971ea`). The catalogue's `listed2` key says `theme/listed/`,
+> which renders the sibling `listed` design (`apps/placeboard`) — a data bug,
+> not a shared demo. Hero Search button radius is 30px (pill), not 4px.
+
 ## Tasks
 
 - [x] Write spec (openspec/specs/template-spotlight/spec.md)

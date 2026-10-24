@@ -10,7 +10,8 @@
 Recreation of ColorLib's **Listed2** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source:** https://colorlib.com/wp/template/listed2/
-- **Preview:** https://preview.colorlib.com/theme/listed2/
+- **Preview:** https://preview.colorlib.com/theme/listed2/ — measured 2026-10-24:
+  200, 28,515 B, `<title>Listed — Colorlib Website Template`
 - **Package:** `@free-react-templates/placecraft`
 - **Deploy target:** `placecraft.free.componentdock.com`
 
@@ -18,6 +19,57 @@ A local business directory / listings template with a hero search bar,
 category grid, listing cards, testimonials, blog posts, FAQ accordion, and
 a newsletter CTA.
 - **Source design:** ColorLib "Listed2" — https://colorlib.com/wp/template/listed2/
+
+## Reference identity (measured 2026-10-24)
+
+The ColorLib catalogue keys TWO posts to one demo directory. Measured from
+`https://preview.colorlib.com/assets/js/catalog-products-20261009-trace-developer.js`
+(633,990 B, 1,961 entries):
+
+| key | `details` | `img` | catalogue `url` |
+| --- | --- | --- | --- |
+| `listed` | `/wp/template/listed/` (Business) | `listed-free-template-1-768x605.jpg` | `theme/listed/` |
+| `listed2` | `/wp/template/listed2/` (Business) | `listed2-free-template-768x605.jpg` | `theme/listed/` — **wrong: a copy of the sibling's** |
+
+`colorlibPreviewAliases` carries no `listed2` entry, so the alias map does not
+explain it: the `url` field is simply the sibling's value. This is a catalogue
+DATA bug, not a missing demo — unlike the magazine / law-firm / music groups,
+where the intended design had no directory at all.
+
+| URL | status | bytes | `<title>` | design |
+| --- | --- | --- | --- | --- |
+| `theme/listed/` | 200 | 23,918 | Colorlib Listed Directory Template | the sibling `listed` post — Raleway + Playfair Display, Bootstrap-blue CTAs, "Find your perfect place." → `placeboard` |
+| `theme/listed2/` | 200 | 28,515 | Listed — Colorlib Website Template | **Listed2** — Quicksand, `#7971ea`, "Find Nearby Appartments" → this prep |
+| `theme/listing/` | 200 | 39,079 | Listing — Discover Great Local Places in New York | a third, unrelated design (no theme sheet) |
+
+Archives: `downloads/free/listed.zip` and `listed2.zip` both 404 → the live
+previews are the sole DOM/CSS reference.
+
+### Why the former TOKEN-UNVERIFIED verdict was false
+
+`scripts/fix-live-tokens-palette.py` resolves a spec's demo through the
+catalogue's `url`, so for this key it measured Listed2's claims against the
+**Listed** palette. Against the right page both claims are painted:
+`#7971ea` ×19 and `#8bc34a` ×1 in `css/style.css` (25,557 B, sha256
+`b5f8e0a3d24e…`). The block at the end of this file now records that, and no
+claim in this spec is a screenshot sample.
+
+Measured geometry (1440 px, `theme/listed2/`, document 5,662 px): header 73 ·
+hero 900 (image + overlay) · Most Visited Places 598 · Popular Categories 478 ·
+Why Us 624 · Testimonials 636 (`#f8f9fa`) · Our Blog 900 · FAQ 562 · CTA 248
+(`#7971ea`) · footer 642 (`#333333`). Counts: 6 `.popular-category`,
+3 `.listing-item`, 8 testimonial blocks, 4 FAQ items, 5 nav items, 61 anchors,
+2 forms — hero search (text "What are you looking for?" + "Location" +
+category `<select>` + submit, no `action`) and newsletter ("Enter Email" +
+button, `action="#"`).
+
+Two copy facts the section list must respect: **"How To List Your Property" is
+the title of the two Our Blog cards** (`h2.font-size-regular` inside
+`div.h-entry`), not a section of its own; the three "Sticky Band" `h2`
+occurrences are the Most Visited Places card titles. The base
+`.btn { border-radius: 0 }` holds, but the hero Search button is a **pill**:
+`.form-search-wrap .btn { border-radius: 30px; padding: 10px 30px }` — computed
+radius `30px` — as are nav items and the category badge (`30px`).
 
 ## Design tokens
 
@@ -37,8 +89,9 @@ Extracted from the live preview stylesheet (`css/style.css`):
 | form-focus-border    | `#7971ea`                    | Input focus ring                           |
 | hero-overlay         | `rgba(0,0,0,0.6)`           | Dark overlay on hero image                 |
 | font-family          | Quicksand, sans-serif        | Loaded via Google Fonts (weights 300–700)  |
-| button-radius        | `0`                          | Square/sharp corners on all buttons        |
-| nav-pill-radius      | `30px`                       | Rounded pill for active/hover nav items    |
+| button-radius        | `0`                          | Base `.btn` only — the hero Search CTA overrides to `30px` |
+| search-btn-radius    | `30px`                       | `.form-search-wrap .btn` (measured computed `30px`) |
+| nav-pill-radius      | `30px`                       | Active/hover nav item, category badge, search wrap |
 | nav-dropdown-border  | `#7971ea` (top)              | 2px solid top border on dropdown           |
 
 ## Requirements
@@ -275,14 +328,19 @@ line with "Made with ❤️ by Component Dock" link to componentdock.com.
 - [ ] Footer: 4 link columns, newsletter form, Component Dock link
 - [ ] Brand color #7971ea used consistently (buttons, active states, links)
 - [ ] Font Quicksand applied throughout
-- [ ] Square button corners (border-radius: 0)
+- [ ] Square button corners base (`.btn` radius 0); hero Search CTA pill (30px)
 - [ ] Pill-shaped nav active items (border-radius: 30px)
 - [ ] Dark footer (#333333) with correct text colors
 - [ ] No ColorLib references in app code
 - [ ] Responsive: mobile hamburger, stacked layouts on small screens
 
 <!-- live-palette-unverified:start -->
-**TOKEN-UNVERIFIED (2026-10-23)** — the demo `https://preview.colorlib.com/theme/listed/` paints no counterpart within 12 RGB units of these claims (the re-value threshold). Each line names the nearest painted colour and its RGB distance: the claim is a screenshot sample, **not** a measured value — build from the sheet, not this list:
-- `#7971ea` — nearest `#6f42c1` (d=63)
-- `#8bc34a` — nearest `#28a745` (d=103)
+**TOKEN-VERIFIED (2026-10-24, supersedes the 2026-10-23 TOKEN-UNVERIFIED verdict)** — that
+verdict measured this design against the *sibling* page: the catalogue's `listed2`
+entry carries `url: theme/listed/` (the `listed` post's directory), and the
+LIVE-PALETTE fixer resolves demos through the catalogue URL. Measured against the
+row's own page, both claims are painted by
+`https://preview.colorlib.com/theme/listed2/css/style.css` (25,557 B, sha256
+`b5f8e0a3d24e…`): `#7971ea` ×19 declarations, `#8bc34a` ×1. No claim in this spec
+is a screenshot sample. See §Reference identity.
 <!-- live-palette-unverified:end -->

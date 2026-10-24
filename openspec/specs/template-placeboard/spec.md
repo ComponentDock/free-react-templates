@@ -10,6 +10,29 @@ A Directory / Travel Listing template with hero, feature destinations, top desti
 - **New name:** `placeboard` (apps/placeboard, package `@free-react-templates/placeboard`)
 - **Deploy target:** placeboard.free.componentdock.com
 
+## Reference identity (measured 2026-10-24)
+
+`https://preview.colorlib.com/theme/listed/` renders THIS row's design
+(`Colorlib Listed Directory Template`, 23,918 B, Raleway + Playfair Display,
+`#007bff`, `h1 "Find your perfect place."`) — so the preview and every token
+below are measured on the right page.
+
+The catalogue keys a second post to the same directory: in
+`assets/js/catalog-products-20261009-trace-developer.js` (633,990 B, 1,961
+entries) key `listed2` carries `url: theme/listed/` — a copy of key `listed`'s
+URL, with no entry in `colorlibPreviewAliases`. That is a catalogue data bug,
+not a second design on this page: the Listed2 design has its own directory at
+`theme/listed2/` (200, 28,515 B, Quicksand, `#7971ea`) and ships as
+`apps/spotlight`. Do NOT read `theme/listed/` as shared ground between the two
+preps; nothing here needs a repoint.
+
+Measured geometry (1440 px, document 3,535 px): header 83 · hero 900 (image +
+overlay) · feature-destination 330 · Top Destinations 673 · section-cover 500
+(image) · More Featured Destinations 604 · footer 528 (`#f2f2f2`) — five
+content sections plus header/footer, matching the section list below. Both
+archives 404 (`downloads/free/listed.zip`), so the live preview is the sole
+DOM/CSS reference.
+
 ## Design tokens (extracted from preview CSS)
 
 | Token                | Value                           | Notes                                     |

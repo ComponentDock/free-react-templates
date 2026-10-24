@@ -14,6 +14,20 @@ Recreation of ColorLib "Listed" — a travel/destination directory template.
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Real Estate (directory / listing / travel destinations)
 
+## Reference identity (measured 2026-10-24)
+
+`theme/listed/` (200, 23,918 B, `Colorlib Listed Directory Template`) renders
+this row's design, so the tokens below are measured on the right page — and this
+prep is a duplicate of `template-placeboard` for the same design.
+
+The catalogue's key `listed2` also carries `url: theme/listed/` (a copy of the
+sibling key's URL, no `colorlibPreviewAliases` entry) — a catalog data bug, not
+a shared page: the Listed2 design lives at `theme/listed2/` (200, 28,515 B,
+Quicksand, `#7971ea`) and ships as `apps/spotlight`. Measured geometry here:
+header 83 · hero 900 · feature-destination 330 · Top Destinations 673 ·
+section-cover 500 · More Featured Destinations 604 · footer 528 (`#f2f2f2`),
+document 3,535 px.
+
 ## Design Tokens
 
 Extracted from the live preview CSS (`css/style.css`):

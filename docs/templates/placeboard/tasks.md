@@ -2,6 +2,12 @@
 
 Source: ColorLib Listed — https://preview.colorlib.com/theme/listed/
 
+> **REFERENCE IDENTITY (2026-10-24)** — `theme/listed/` is this design's own
+> demo (200, 23,918 B, Raleway/Playfair, `#007bff`). The catalogue's `listed2`
+> key points at the same URL by mistake; Listed2's real demo is
+> `theme/listed2/` (Quicksand, `#7971ea`). Measured section heights: 900 / 330 /
+> 673 / 500 / 604, footer 528 — matching the order below.
+
 ## Section order (top to bottom)
 
 1. Navbar
