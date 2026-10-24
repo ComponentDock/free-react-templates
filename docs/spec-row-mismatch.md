@@ -47,17 +47,17 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24o, main after PR #1861 — the Logistico design is now built as `cargonaut` and row 2966 points at it, which leaves `logistico` unlinked; the steps that got here are in the chain below)
+## Census (re-measured 2026-10-24p, main after PR #1862 — the three `dreamrs` rows now point at the built `manorly` app, so that design left §2 of `docs/row-multiplicity.md`)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,232 |
-| apps                               | 1,707 |
-| `AGREE`                            | 1,700 |
+| specs                              | 3,233 |
+| apps                               | 1,708 |
+| `AGREE`                            | 1,701 |
 | `DRIFT`                            | **3** |
 | `PREP` (spec-only)                 | 1,525 |
-| `ROW-MULTI` apps                   | 36    |
-| `SLUG-OWNER` subjects              | 8     |
+| `ROW-MULTI` apps                   | 35    |
+| `SLUG-OWNER` subjects              | 6     |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
 row-map fix below, `15` after the two provenance corrections below, then `13` on the
@@ -73,7 +73,11 @@ and `5` after the Givehope design was built as **`alms`** and row 1270 re-pointe
 (`AGREE=1698 DRIFT=5`, apps `1705`), and `4` after the accordion-19 design was built as
 **`clasp`** and row 658 re-pointed to it (`AGREE=1699 DRIFT=4`, apps `1706`, specs `3,231`), and `3`
 after the Logistico design was rebuilt as **`cargonaut`** and row 2966 re-pointed to it
-(`AGREE=1700 DRIFT=3`, apps `1707`, specs `3,232`).
+(`AGREE=1700 DRIFT=3`, apps `1707`, specs `3,232`), and the Dreamrs design — whose three rows
+credited `skyline` while that app recreates Rooftop — was built as **`manorly`** (PR #1862) and its
+rows 106 / 1967 / 2587 re-pointed (`AGREE=1701 DRIFT=3`, apps `1,708`, specs `3,233`, `ROW-MULTI`
+35, `SLUG-OWNER` 6). `dreamrs` therefore leaves `docs/row-multiplicity.md` §2, which now counts
+**17** designs with no app.
 
 ## The 3 remaining drift cases (adjudicated against the live previews)
 

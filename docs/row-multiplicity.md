@@ -21,12 +21,13 @@ python3 scripts/verify-row-multiplicity.py --self-test     # 8/8
 python3 scripts/verify-row-multiplicity-controls.py        # 15/15 (4 GATE)
 ```
 
-Measured state (`main` @ `2a1fe620f` + this commit):
+Measured state (`main` after PR #1862, which shipped `manorly` and re-pointed the three
+`dreamrs` rows; offline census):
 
 ```
-rows 2,857 · slugs 1,646 · multi-row slugs 775 · extra rows 1,211 · flags 102
-  CONSISTENT   673   one app, and its spec claims the slug
-  SPEC-STALE    25   one app, whose spec does NOT claim the slug
+rows 2,857 · slugs 1,646 · multi-row slugs 775 · extra rows 1,211 · flags 101
+  CONSISTENT   674   one app, and its spec claims the slug
+  SPEC-STALE    24   one app, whose spec does NOT claim the slug
   DUPLICATE     73   >=2 apps, >=2 of them claiming the slug
   ROW-POINTER    4   >=2 apps, exactly ONE claims the slug
   SLUG-ORPHAN    0   no app claims the slug
@@ -141,7 +142,7 @@ Nine of the 73 do **not** reach that evidence bar. They are reported, not fixed:
 | `reopen` | 2 (2080,2556) | reprise, gallery | UNRESOLVED | one shared phrase only: reprise+gallery:1 |
 | `satner` | 3 (2426,2561,2726) | smithy, kael | UNRESOLVED | one shared phrase only: smithy+kael:1 |
 
-### 2. APP-WRONG-DESIGN — the row is a false `[x]` (18 slugs / 44 rows)
+### 2. APP-WRONG-DESIGN — the row is a false `[x]` (17 slugs / 41 rows)
 
 One app is credited by the rows of a design it does not recreate, and its own
 copy matches the design its spec names far better. The test compares EXCLUSIVE
@@ -149,7 +150,6 @@ phrases only (see "Identity" below), so each pair is `row-excl / spec-excl`:
 
 | slug | rows (lines) | app | its spec says | row-excl / spec-excl |
 |---|---|---|---|---|
-| `dreamrs` | 3 (106,1967,2587) | skyline | `rooftop` | 5 / 16 |
 | `shopmax` | 3 (230,1602,1730) | bazaar | `store` | 1 / 26 |
 | `juli` | 2 (266,2402) | petal | `florist` | 0 / 41 |
 | `fitnessgym` | 2 (397,1846) | vigor | `endurance` | 0 / 33 |
@@ -168,7 +168,9 @@ phrases only (see "Identity" below), so each pair is `row-excl / spec-excl`:
 | `amplify` | 3 (2287,2379,2496) | amplify | `uza` | 1 / 23 |
 | `resume` | 2 (2422,2724) | resume | `personalportfolio` | 0 / 17 |
 
-Those 18 ColorLib designs have **no app**, while their rows say `[x]`. The
+Those 18 ColorLib designs have **no app**, while their rows say `[x]`. One of them, `dreamrs`, is
+no longer in this table: PR #1862 built it as **`manorly`** and re-pointed rows 106 / 1967 / 2587 at
+that app, which takes the bucket to **17 slugs / 41 rows**. The
 recurring shape is a name collision — an app was given the invented name of
 *another* ColorLib design (`villa`, `summit`, `glamour`, `vigor`, `nova`,
 `orbit`, `depot`, `resume`, `amplify`, `imagine` are all ColorLib slugs that also
@@ -252,7 +254,7 @@ from the live side alone.
 1. **Re-point the 8 stale rows** in §4 (`sudsy`→`gleam` ×2, `batterly`→`crumbs`,
    `glint`→`lumen` ×4, and `saas` once the tail is adjudicated). `TEMPLATES.md`
    only; no marker flips, no app edits.
-2. **Re-open the 18 designs** in §2: their rows are `[x]` and no app recreates
+2. **Re-open the 17 designs** left in §2: their rows are `[x]` and no app recreates
    them. Point the rows at an app that does, or build them — and stop naming apps
    after ColorLib slugs, which is what created the class.
 3. **Decide the 64 duplicates** in §1: one product per design. The table names
