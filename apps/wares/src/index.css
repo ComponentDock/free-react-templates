@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Wares brand palette — recreated from the ColorLib "E Shop" design
+  /* Wares brand palette — measured from the reference design
      (css/style.css): orange #F8694A accents/buttons, dark #30323A headers,
      body #4A4E5A, light grey #F6F7F8 section backgrounds. */
   --color-brand: #f8694a;

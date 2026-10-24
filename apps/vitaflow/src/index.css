@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Vitaflow brand colors — from the ColorLib "Healthcoach" preview
-     (https://preview.colorlib.com/theme/healthcoach/ + css/style.css):
+  /* Vitaflow brand colors — from the reference stylesheet (css/style.css):
      a health coaching theme with a blue #1089ff primary,
      green #a3cb4c accent, dark #131719 footer, and #f8f9fa light bg. */
   --color-primary-50: #e6f3ff;
@@ -18,7 +17,7 @@
   --color-primary-800: #004073;
   --color-primary-900: #002d4d;
 
-  /* Green accent (ColorLib logo span #a3cb4c). */
+  /* Green accent (logo span #a3cb4c). */
   --color-accent-300: #c8e08a;
   --color-accent-400: #a3cb4c;
   --color-accent-500: #8ab33a;

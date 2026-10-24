@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* WashBox brand palette — recreated from the ColorLib "Carwash" design */
+  /* WashBox brand palette — measured from the reference design */
   --color-brand: #007aff;
   --color-brand-light: #0bc6ff;
   --color-brand-dark: #0d80f3;

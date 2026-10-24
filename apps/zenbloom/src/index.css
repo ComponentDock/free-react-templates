@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Zenbloom brand palette — recreated from the ColorLib Yogabest design
+  /* Zenbloom brand palette — measured from the reference design
      (green accent #6cae22, orange accent #F96D00). */
   --color-sage-50: #f4f9ee;
   --color-sage-100: #e6f2d8;

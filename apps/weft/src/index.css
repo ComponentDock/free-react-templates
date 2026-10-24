@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Weft brand colors — from the ColorLib "Cocoon" preview
-     (https://preview.colorlib.com/theme/cocoon/ + css/main.css):
+  /* Weft brand colors — from the reference stylesheet (css/main.css):
      a creative agency/portfolio theme with a dark charcoal sidebar #18181c,
      warm taupe accent #99896e, muted gray body text #9c9ca9,
      and white content background. */
