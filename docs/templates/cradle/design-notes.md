@@ -1,9 +1,9 @@
-# Nurture — Design Notes
+# Cradle — Design Notes
 
 Reference: **Nurture** — `https://colorlib.com/wp/template/nurture/`  
 Live preview: `https://preview.colorlib.com/theme/nurture/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/nurture-free-template.jpg  
-Shipped: https://nurture.free.componentdock.com
+Shipped: https://cradle.free.componentdock.com
 
 Recreation of ColorLib's **Nurture** kids learning center template as a React single-page application. The original is a colorful, playful education/daycare landing page with a hero, feature icons, class offerings, about section, school news, pricing plans, and a footer.
 
@@ -11,7 +11,7 @@ Recreation of ColorLib's **Nurture** kids learning center template as a React si
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/nurture/src/index.css` `@theme`)
+## Design tokens (`apps/cradle/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 | `--color-primary-900` | `#0a533d` | primary 900 |
 | `--font-sans` | `'Poppins', ui-sans-serif, system-ui, sans-serif` | Original font: Poppins throughout. |
 
-> The spec has no section-level requirements; the order below is read from `apps/nurture/src/App.tsx` and the copy anchors from each component.
+> The spec has no section-level requirements; the order below is read from `apps/cradle/src/App.tsx` and the copy anchors from each component.
 
 ## Document order
 
@@ -59,7 +59,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-*anchors only* — Nurture · Enroll Now
+*anchors only* — Cradle · Enroll Now
 
 ### `Hero`
 *anchors only* — Learning Center for Your Kids · Enroll Now
@@ -83,7 +83,7 @@ Bands marked *anchors only* have no dedicated requirement block in the spec; hol
 *anchors only* — Pricing · Choose the plan that best fits your child&apos;s needs and your family&apos;s budget. · Get Started
 
 ### `Footer`
-*anchors only* — Email for newsletter · Nurture · Quick Links · Home · About · Courses
+*anchors only* — Email for newsletter · Cradle · Quick Links · Home · About · Courses
 
 ## Deltas from the reference
 
@@ -100,8 +100,8 @@ Bands marked *anchors only* have no dedicated requirement block in the spec; hol
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/nurture/` may name the source designer,
+- **Provenance ban.** No file under `apps/cradle/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/nurture/public/CNAME` = `nurture.free.componentdock.com`
-  and the package `homepage` = `https://nurture.free.componentdock.com`.
+- **Deploy identity.** `apps/cradle/public/CNAME` = `cradle.free.componentdock.com`
+  and the package `homepage` = `https://cradle.free.componentdock.com`.

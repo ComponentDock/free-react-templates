@@ -13,6 +13,19 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Nurture → Cradle (2026-10-24k, #renumber)
+
+**5 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/oraxol`, `apps/pawpal`, `apps/petsitting`, `apps/petvet`,
+`apps/unioncorp`), plus `apps/itkol`, which a name-only test still cannot see.
+`apps/nurture` → `cradle` cleared the fifth of the eight visible violations; the
+source name survives only in the spec's `ColorLib "Nurture"` provenance line,
+the reference's own colorlib.com URLs and `nurture-free-template.jpg`, because
+the token evidence quotes the source sheets' measured declarations verbatim. The
+design is unchanged — same green palette (`#0fb78d`), Poppins, same nine bands.
+`docs/templates/cradle/tasks.md` was also repaired: it had been prepped from a
+different design (a charity page) and now records what actually ships.
+
 ## State after Medical → Verdia (2026-10-24j, #1844)
 
 **6 apps reuse their source name** (`node scripts/audit-naming.mjs`:

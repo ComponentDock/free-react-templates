@@ -1648,7 +1648,7 @@
 - [x] **Learnhub** · [coursely](https://coursely.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/learnhub/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/learnhub-template-1770211181840.jpg)
 - [x] **Learnit** — [colorlib](https://colorlib.com/wp/template/learnit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/learnit-free-template.jpg) · [lyceum](https://lyceum.free.componentdock.com)
 - [x] **Lingua** — [colorlib](https://colorlib.com/wp/template/lingua/) · [lingo](https://lingo.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lingua-free-template.jpg)
-- [x] **Nurture** — [colorlib](https://colorlib.com/wp/template/nurture/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nurture-free-template.jpg) · [nurture](https://nurture.free.componentdock.com)
+- [x] **Nurture** — [colorlib](https://colorlib.com/wp/template/nurture/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nurture-free-template.jpg) · [cradle](https://cradle.free.componentdock.com)
 - [x] **Onedu** — [colorlib](https://colorlib.com/wp/template/onedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onedu-free-template.jpg) · [scholar](https://scholar.free.componentdock.com)
 - [x] **Oneschool** — [colorlib](https://colorlib.com/wp/template/oneschool/) · [classroom](https://classroom.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oneschool-free-template.jpg)
 - [x] **Onlineedu** — [colorlib](https://colorlib.com/wp/template/onlineedu/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onlineedu-free-template.jpeg) · [Orenda](https://orenda.free.componentdock.com)

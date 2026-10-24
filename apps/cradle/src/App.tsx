@@ -11,7 +11,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Nurture — Kids Learning Center'
+    document.title = 'Cradle — Kids Learning Center'
   }, [])
 
   return (

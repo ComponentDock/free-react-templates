@@ -6,7 +6,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders brand name and tagline', () => {
     render(<Footer />)
-    expect(screen.getByText('Nurture')).toBeInTheDocument()
+    expect(screen.getByText('Cradle')).toBeInTheDocument()
     expect(screen.getByText(/quality early childhood education/)).toBeInTheDocument()
   })
 
@@ -22,7 +22,7 @@ describe('Footer', () => {
     render(<Footer />)
     expect(screen.getByText(/123 Education Lane/)).toBeInTheDocument()
     expect(screen.getByText('+1 (123) 456-7890')).toBeInTheDocument()
-    expect(screen.getByText('info@nurture.com')).toBeInTheDocument()
+    expect(screen.getByText('info@cradle.com')).toBeInTheDocument()
   })
 
   it('renders newsletter form', () => {
@@ -46,7 +46,7 @@ describe('Footer', () => {
   it('renders copyright and Component Dock link', () => {
     render(<Footer />)
     const year = new Date().getFullYear()
-    expect(screen.getByText(new RegExp(`${year} Nurture`))).toBeInTheDocument()
+    expect(screen.getByText(new RegExp(`${year} Cradle`))).toBeInTheDocument()
     expect(screen.getByText(/Component Dock/)).toBeInTheDocument()
   })
 

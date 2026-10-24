@@ -109,21 +109,21 @@ export interface NewsPost {
 
 export const NEWS_POSTS: NewsPost[] = [
   {
-    image: 'https://picsum.photos/seed/nurture-news1/600/400',
+    image: 'https://picsum.photos/seed/cradle-news1/600/400',
     date: 'March 15, 2026',
     title: 'Spring Enrollment Now Open',
     excerpt:
       'Join our exciting spring programs designed to inspire creativity and learning in children.',
   },
   {
-    image: 'https://picsum.photos/seed/nurture-news2/600/400',
+    image: 'https://picsum.photos/seed/cradle-news2/600/400',
     date: 'March 10, 2026',
     title: 'New Music Program Launch',
     excerpt:
       'We are thrilled to introduce our brand-new music program with professional instructors.',
   },
   {
-    image: 'https://picsum.photos/seed/nurture-news3/600/400',
+    image: 'https://picsum.photos/seed/cradle-news3/600/400',
     date: 'March 5, 2026',
     title: 'Summer Camp Registration',
     excerpt: 'Early bird registration for summer camp is now available — secure your spot today.',

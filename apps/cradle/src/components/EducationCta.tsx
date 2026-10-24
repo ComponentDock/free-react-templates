@@ -3,7 +3,7 @@ export function EducationCta() {
     <section
       className="relative bg-cover bg-center bg-fixed bg-no-repeat py-24"
       style={{
-        backgroundImage: 'url(https://picsum.photos/seed/nurture-cta1/1920/600)',
+        backgroundImage: 'url(https://picsum.photos/seed/cradle-cta1/1920/600)',
       }}
     >
       <div className="absolute inset-0 bg-brand/80" />
