@@ -26,8 +26,8 @@ const linkClasses =
 
 /** Dark multi-column footer: Quick Links / Archives / Social columns, a
     newsletter form with zod validation + success state, and a bottom bar with
-    copyright, credit and back-to-top (reference: .s-footer on the Philosophy
-    preview). */
+    copyright, credit and back-to-top (reference: .s-footer on the
+    reference design's live preview). */
 export function Footer() {
   const [email, setEmail] = useState('')
   const [error, setError] = useState<string | null>(null)

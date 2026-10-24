@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Sprintly brand palette — recreated from the ColorLib "Activitar" design
+  /* Sprintly brand palette — measured from the reference design
      (primary orange #e16521). */
   --color-brand-50: #fff7ed;
   --color-brand-100: #ffedd5;

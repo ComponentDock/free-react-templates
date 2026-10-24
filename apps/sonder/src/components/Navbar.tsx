@@ -14,7 +14,7 @@ type DropdownLabel = (typeof dropdowns)[number]['label']
 
 /** Dark page header: social icons + search top row, centered wordmark,
     uppercase nav with Categories/Blog dropdowns, mobile hamburger menu
-    (reference: .s-pageheader--home on the Philosophy preview). */
+    (reference: .s-pageheader--home on the reference design's live preview). */
 export function Navbar() {
   const [openDropdown, setOpenDropdown] = useState<DropdownLabel | null>(null)
   const [searchOpen, setSearchOpen] = useState(false)

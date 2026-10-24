@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Solaris brand palette — recreated from the ColorLib "Sun" design
+  /* Solaris brand palette — measured from the reference design
      (style.css): red #FD3137 accents, warm grey #E2E0E0 body bg,
      white #FFFFFF card, ink #191919 text. */
   --color-brand: #fd3137;

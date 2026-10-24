@@ -4,7 +4,7 @@ const chipClasses =
   'inline-block bg-chip px-5 py-1.5 text-[0.75rem] font-bold uppercase tracking-[0.2em] text-meta-2 transition-colors hover:bg-brand hover:text-white'
 
 /** White strip with a 2-column Popular Posts list and a Tags chip cloud
-    (reference: .s-extra on the Philosophy preview). */
+    (reference: .s-extra on the reference design's live preview). */
 export function PopularTags() {
   return (
     <section aria-label="Popular posts and tags" className="bg-white py-24">
