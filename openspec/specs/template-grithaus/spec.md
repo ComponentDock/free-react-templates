@@ -230,8 +230,8 @@ Both SHALL be links (href preserved as `#` anchors) and stack on mobile.
 
 ### Requirement: About section
 
-A section SHALL open with the label "Fitness Gym" (14px UPPERCASE gradient
-text) over the h2 "Why choose Fitness Gym?" (36px/600), then a
+A section SHALL open with the label "Grithaus" (14px UPPERCASE gradient
+text) over the h2 "Why choose Grithaus?" (36px/600), then a
 `col-lg-8` block holding two side-by-side paragraphs, a button pair
 ("Get a membership" outline + "Find out more" filled `btn-2`), and a
 `col-lg-4` portrait image pulled up by 50px.
@@ -240,7 +240,7 @@ text) over the h2 "Why choose Fitness Gym?" (36px/600), then a
 
 - **GIVEN** the about section is rendered
 - **WHEN** the user scrolls to it
-- **THEN** the section SHALL show the label "Fitness Gym" and the h2 "Why choose Fitness Gym?"
+- **THEN** the section SHALL show the label "Grithaus" and the h2 "Why choose Grithaus?"
 - **AND** SHALL show two paragraphs of body copy
 - **AND** SHALL show the buttons "Get a membership" and "Find out more"
 - **AND** SHALL show a portrait image in the right column
@@ -248,7 +248,7 @@ text) over the h2 "Why choose Fitness Gym?" (36px/600), then a
 ### Requirement: Experts band (4-photo collage)
 
 A dark band (photo background + `rgba(5,11,37,0.85)` overlay) SHALL show
-the white heading "Ask the experts" with the "Fitness Gym" label, an
+the white heading "Ask the experts" with the "Grithaus" label, an
 italic white paragraph in a `col-lg-3` column, and a `col-lg-9` collage of
 four absolutely-positioned trainer photos (40%/30%/30%/30% widths, bottom
 offsets −50/−60/−100px, 500px tall, `overflow: hidden`) each with a dark
@@ -330,7 +330,7 @@ four widgets: (1) brand wordmark, blurb, and six social links (Pinterest,
 Facebook, Twitter, Dribbble, Behance, Instagram — inline SVG brand glyphs,
 white → `#38b143` hover); (2) a "testimonials" slider with italic 13px
 `#bebebe` quotes and green 13px author names; (3) a "Classes" list
-(Bodybuilding Class, Fitness Class, Yoga Courses, Dumbell Class, Spinning
+(Bodybuilding Class, Fitness Class, Yoga Courses, Dumbbell Class, Spinning
 Class, Kangoo Jump Class); (4) a "Contact" block with address, phone
 (+53 345 7953 32453) and email. The bottom bar SHALL carry a centred
 copyright line whose outbound link goes to https://www.componentdock.com/
@@ -368,6 +368,17 @@ overrides.
 - **GIVEN** the Grithaus app is rendered
 - **WHEN** the page is inspected top to bottom
 - **THEN** the sections SHALL appear in the order: navbar, hero, promo banners, about, experts, services, pricing, working hours + newsletter, footer
+
+## Implementation notes (rebranding + fidelity calls)
+
+The reference's own brand is "Fitness Gym"; the recreation is branded
+**Grithaus**, so the section labels read "Grithaus" and the about heading
+reads "Why choose Grithaus?". Two structural fidelity calls: the reference
+renders **no section heading** above the services grid or inside the pricing
+band (both start straight into their grids), and the recreation matches that
+— the bands are labelled for assistive tech via `aria-label`. The footer's
+"testimonials" / "Classes" / "Contact" widget titles stay lowercase, as in
+the reference.
 
 ## Verification checklist
 
