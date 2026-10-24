@@ -13,7 +13,7 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Oraxol → Obsidian (2026-10-24l)
+## State after Oraxol → Obsidian (2026-10-24l, #1846)
 
 **4 apps reuse their source name** (`node scripts/audit-naming.mjs`:
 `apps/pawpal`, `apps/petsitting`, `apps/petvet`, `apps/unioncorp`), plus
