@@ -140,3 +140,25 @@ it was built from a spec with no visual reference).
   row at the app you build (never edit the other app's source to "become" the
   design) and mark **every** copy of a duplicated row — the same design often
   appears on 2–3 rows in different categories.
+- **Astro-built demos have no `css/main.css`.** A growing share of new previews
+  (`theme/saasify/`) ship one hashed sheet — `_astro/Base.<hash>.css` — and no
+  `js/main.js`. Tokens are compiled Tailwind utilities, not author custom
+  properties: `grep -oE '\.(bg|text|from|to|border|ring)-<name>-[0-9]+\{[^}]*\}'`
+  and read the literal out of the rule (`.bg-primary-600{background-color:#7c3aed}`)
+  — looking for `--color-primary-*` in `@theme` finds nothing. Gradient-clipped
+  headlines live in `.text-gradient` (`--tw-gradient-from/to`, often
+  `to right in oklab`); a near-miss hex pair there is a real fidelity delta.
+- **Multi-page previews 308 on the slug path.** `/contact` answers `308` with a
+  0-byte body and redirects to `/contact/` (then `200`); probe with `-L` or the
+  size reads as an empty page and the inner-page census silently comes back
+  blank. Their links are absolute (`/theme/<slug>/docs/`), so a one-pager must
+  map them to on-page anchors rather than copying `href`s.
+- **Measure the census before and after a spec rewrite.** `git stash push --
+  openspec/specs/template-<name> docs/templates/<name>` → run
+  `verify-spec-row-mismatch.py` → `git stash pop` gives the true "before"
+  numbers (`AGREE`/`DRIFT`/`SLUG-OWNER`), so the `docs/spec-row-mismatch.md`
+  table records measured values instead of a hand-computed guess — a spec
+  rewrite can move `SLUG-OWNER` too, not just `DRIFT`.
+- **`openspec validate` works from a clone without `node_modules`:** run the
+  main tree's binary from your own workdir
+  (`/root/free-react-templates/node_modules/.bin/openspec validate template-<name>`).
