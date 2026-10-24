@@ -47,14 +47,14 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24n, main `511bf6fc7` + this commit — the accordion-19 design is now built as `clasp` and row 658 points at it, which leaves `stride` unlinked; the steps that got here are in the chain below)
+## Census (re-measured 2026-10-24o, main after PR #1861 — the Logistico design is now built as `cargonaut` and row 2966 points at it, which leaves `logistico` unlinked; the steps that got here are in the chain below)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,231 |
-| apps                               | 1,706 |
-| `AGREE`                            | 1,699 |
-| `DRIFT`                            | **4** |
+| specs                              | 3,232 |
+| apps                               | 1,707 |
+| `AGREE`                            | 1,700 |
+| `DRIFT`                            | **3** |
 | `PREP` (spec-only)                 | 1,525 |
 | `ROW-MULTI` apps                   | 36    |
 | `SLUG-OWNER` subjects              | 8     |
@@ -71,28 +71,33 @@ both `spark` rows to the rebuilt `flint` (`AGREE=1695 DRIFT=8`), `7` after the `
 (spec `bootstrap-buttons-05` → `saasify`; census `AGREE=1697 DRIFT=6` at that commit, apps `1704`),
 and `5` after the Givehope design was built as **`alms`** and row 1270 re-pointed to it
 (`AGREE=1698 DRIFT=5`, apps `1705`), and `4` after the accordion-19 design was built as
-**`clasp`** and row 658 re-pointed to it (`AGREE=1699 DRIFT=4`, apps `1706`, specs `3,231`).
+**`clasp`** and row 658 re-pointed to it (`AGREE=1699 DRIFT=4`, apps `1706`, specs `3,231`), and `3`
+after the Logistico design was rebuilt as **`cargonaut`** and row 2966 re-pointed to it
+(`AGREE=1700 DRIFT=3`, apps `1707`, specs `3,232`).
 
-## The 4 remaining drift cases (adjudicated against the live previews)
+## The 3 remaining drift cases (adjudicated against the live previews)
 
 | app | verdict | spec says | row says | copy found on the winner |
 | --- | --- | --- | --- | --- |
 | `bellows` | `BOTH-STALE` → `accordion-01` | accordion-15 | accordion-03 | "Accordion #01", "Spa Therapies", "Face Treatments" |
 | `cirrus` | `UNRESOLVED` | cloudtemplate | saas | — (app copy is fintech; neither demo carries it) |
-| `logistico` | `ROW-POINTER` | thelogistico | logistico | "We Give You Complete Control", "of Your Shipments" |
 | `sudsy` | `ROW-POINTER` | carwash | sparkleclean | "Your car will look as your new one", "We have an application" |
 
 Three of the ten were **spec-side** (`prose`, `vellum`, `zenith`): the spec described a design the
 app does not render, and in all three the body (token table, section list, Requirements) was the
 other design's too — only `jobboard` and `medical` were provenance-only. `prose`, `vellum` and
-`zenith` are now fixed, so **no** spec-side case remains: the four left are two **row pointers**
-(`logistico`, `sudsy`), one **both-stale** (`bellows`) and one still **unresolved** (`cirrus`).
+`zenith` are now fixed, so **no** spec-side case remains: the three left are one **row pointer**
+(`sudsy`), one **both-stale** (`bellows`) and one still **unresolved** (`cirrus`). `logistico` left
+the table when the Logistico design was rebuilt as **`cargonaut`** (PR #1861) and row 2966
+re-pointed: the app called `logistico` renders Thelogistico's copy at 19 exclusive hits vs 1, and
+Thelogistico already ships as `logistix`, so `apps/logistico` joined the `UNLINKED` surplus class.
 `spark` left this table when #1858 re-pointed both of its rows to the rebuilt `flint`, `givehope`
 left it when the design was rebuilt as `alms` and row 1270 re-pointed — `apps/givehope` is a
 surplus duplicate of `givemore` (Bcharity) — and `stride` left it when the accordion-19 design it
-was falsely credited with was actually built as **`clasp`** (PR #1860). All three surplus apps
-(`spark` → `flowly`, `givehope` → `givemore`, `stride` → `grit`) are the census's `UNLINKED`
-class: complete, deployed, `TEMPLATES.md`-less duplicates of a design that already ships.
+was falsely credited with was actually built as **`clasp`** (PR #1860). All four surplus apps
+(`spark` → `flowly`, `givehope` → `givemore`, `stride` → `grit`, `logistico` → `logistix`) are the
+census's `UNLINKED` class: complete, deployed, `TEMPLATES.md`-less duplicates of a design that
+already ships.
 
 ## Fixed so far
 
