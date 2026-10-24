@@ -1,4 +1,12 @@
 # Encore — Design Notes & Implementation Tasks
+
+> **Reference identity (measured 2026-10-24).**
+> `https://preview.colorlib.com/theme/music/` is claimed by TWO catalogue keys
+> (`music` → `/wp/template/music-2/`, `catalog-141301` → `/wp/template/music/`) and
+> serves the **`music-2` rebuild**, not the full-screen musician page this prep's row
+> thumbnail shows. That thumbnail has no demo (9 prefixes 404) and no archive, so it
+> is unbuildable. Superseded by `apps/ampstat`. Authority:
+> `openspec/specs/template-encore/spec.md`.
 <!-- prep-status: shipped-as=ampstat -->
 > **SHIPPED-UNDER** — the ColorLib `music` design this prep describes shipped
 > as `apps/ampstat` (<https://ampstat.free.componentdock.com>).

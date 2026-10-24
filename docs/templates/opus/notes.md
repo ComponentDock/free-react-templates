@@ -1,4 +1,13 @@
 # Opus — Template Replication Notes
+
+> **Reference identity (measured 2026-10-24).**
+> The design is reachable at `https://preview.colorlib.com/theme/music/` (200, 24,529 B)
+> — only the slug-only `theme/music-2/` URL 404s, which is why this prep once said
+> "unreachable". The directory is claimed by two catalogue keys and serves the
+> **`music-2` rebuild**. Its screenshot-sampled tokens (`#1a1147`, `#a4c400`, `#ffeb3b`,
+> `#ff1493`, Poppins) were replaced by measured values (`#2457d7→#3b125d` gradient,
+> `#2ac275`, `#eeff2d`, `#e830fe`, Josefin Sans). Superseded by `apps/melodica`.
+> Authority: `openspec/specs/template-opus/spec.md`.
 <!-- prep-status: shipped-as=melodica -->
 > **SHIPPED-UNDER** — the ColorLib `music-2` design this prep describes already
 > ships as `apps/melodica` (<https://melodica.free.componentdock.com>).
@@ -6,7 +15,7 @@
 > Fidelity reference: `openspec/specs/template-melodica/spec.md`.
 
 **Source:** ColorLib "Music 2" — https://colorlib.com/wp/template/music-2/
-**Preview:** https://preview.colorlib.com/theme/music-2/ (UNREACHABLE — fallback to screenshot)
+**Preview:** https://preview.colorlib.com/theme/music/ (HTTP 200, 24,529 B, 2026-10-24 — the shared directory; `theme/music-2/` is the 404)
 **New name:** Opus
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 

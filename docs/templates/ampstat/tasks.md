@@ -1,5 +1,19 @@
 # Ampstat — Implementation Todo
 
+> **Reference identity (measured 2026-10-24).**
+> `https://preview.colorlib.com/theme/music/` is claimed by TWO catalogue keys —
+> `music` → `/wp/template/music-2/` and `catalog-141301` → `/wp/template/music/` —
+> and it serves the **`music-2` rebuild** (`Home · Artists · Download Music · News ·
+> Contact` + `Login / Register`, h1 `your music.` ×3, Bootstrap 4.1.2 + OwlCarousel +
+> jPlayer, Josefin Sans). This app reproduces that design; the row thumbnail
+> (`…fullscreen-musician…jpg`, magenta "MUSIC IS LIFE", hamburger only) is a **retired
+> design with no demo** — 9 prefixes 404, `music.zip`/`music-2.zip` 404, so there is
+> nothing to measure. Three `Music`/`Music 2` rows (1480, 2270, 2271) share this one
+> live design. App debt vs the reference: news band painted white / newsletter purple
+> (inverted), navbar transparent (reference: `#2457d7→#3b125d` gradient, 2px gradient
+> underline), flat green buttons (reference: 3-stop gradient), `bg-black/60`–`/70`
+> overlays the sheet never paints. Authority: `openspec/specs/template-ampstat/spec.md`.
+
 Source: ColorLib Music (https://preview.colorlib.com/theme/music/)
 New name: ampstat
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript

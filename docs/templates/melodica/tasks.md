@@ -1,5 +1,15 @@
 # Melodica — Implementation Tasks
 
+> **Reference identity (measured 2026-10-24).**
+> `https://preview.colorlib.com/theme/music/` is claimed by TWO catalogue keys
+> (`music` → `/wp/template/music-2/`, `catalog-141301` → `/wp/template/music/`). This
+> row (`Music 2`) owns the design the directory serves, so the reference is unambiguous.
+> **The shipped app does not follow it**: `apps/melodica` renders an invented page
+> (`About`/`Tracks`/`Events`/`Gallery`, headline "Feel The Music", indigo palette) while
+> the reference is the `your music.` hero, Tour Dates, App, Featured Albums, gradient
+> news band, Josefin Sans + `#2ac275` on `#2457d7→#3b125d`. Authority:
+> `openspec/specs/template-melodica/spec.md`.
+
 Source design: **Music 2** (`https://colorlib.com/wp/template/music-2/`) → recreation name **melodica**. Shipped at https://melodica.free.componentdock.com.
 
 Scope: Melodica is a dark-themed music artist/band landing page template with a deep blue-to-purple gradient color scheme, vibrant accent colors, and music-focused sections. It showcases an artist's brand, tracks, upcoming events, photo gallery, and newsletter signup.

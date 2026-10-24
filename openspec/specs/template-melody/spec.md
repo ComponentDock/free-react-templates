@@ -44,14 +44,14 @@ name is **Melody** (single lowercase word, music-related, no collision with
 ### Colors
 | Token | Value | Usage |
 |-------|-------|-------|
-| Brand green | `#2ac275` | Primary accent, buttons, active states, player bar |
+| Brand green | `#2ac275` | Primary accent, active nav dot, social circles, player bar (buttons paint a 3-stop gradient, not this flat) |
 | Dark purple | `#3b125d` | Header background, menu background |
 | Deep blue | `#2457d7` | Header gradient left, menu gradient left |
 | Bright yellow | `#eeff2d` | Header scroll state, button gradient, extra_year |
 | Lime yellow | `#cbdc0b` | Button gradient center |
-| Magenta/pink | `#e830fe` | Home slider dots, active nav marker |
-| Coral/salmon | `#ffa07f` | Home social section background |
-| Tomato red | `#ff1a4b` | Featured list border |
+| Magenta/pink | `#e830fe` | `LIVE` badge circle (90px, `right:-72px`) and the logo's centre bar — **not** the nav marker |
+| Coral/salmon | `#ffa07f` | Paragraph link bottom border (`p a`), and its hover fill — not a section background |
+| Tomato red | `#ff1a4b` | `.jp-state-playing .jp-play` (playing button fill + border) and `.album_play_button` |
 | Body text dark | `#2a2a2a` | Headings, primary text |
 | Body text medium | `#6d6d6d` | Secondary text |
 | Body text light | `#a5a5a5` | Placeholder, muted text |
@@ -63,7 +63,7 @@ name is **Melody** (single lowercase word, music-related, no collision with
 |------|-------|
 | Header/menu | `linear-gradient(to right, #2457d7, #3b125d)` |
 | Button | `linear-gradient(to right, #2ac275, #cbdc0b, #2ac275)` |
-| Header scrolled | `linear-gradient(to right, #eeff2d, #2ac275)` |
+| Header underline | `linear-gradient(to right, #eeff2d, #2ac275)` — `.header::after`, a **2px rule**, not the scrolled state (scrolling only shrinks the header 134px → 75px) |
 
 ### Typography
 | Token | Value |
@@ -77,7 +77,7 @@ name is **Melody** (single lowercase word, music-related, no collision with
 | Property | Value |
 |----------|-------|
 | Border radius | `22px` (pill shape) |
-| Background | `#2ac275` solid, or gradient |
+| Background | `linear-gradient(to right, #2ac275, #cbdc0b, #2ac275)` via `.button::after` (200×56px, radius 22px; the flat `#2ac275` is the fallback `background-color`) |
 | Text color | `#ffffff` |
 | Hover | Gradient underline effect via `::after` pseudo-element |
 | Button variants | `.button`, `.extra_button`, `.tour_button`, `.newsletter_button` |
@@ -87,7 +87,7 @@ name is **Melody** (single lowercase word, music-related, no collision with
 |----------|-------|
 | Border radius (cards) | `15px` |
 | Border radius (social icons) | `50%` (circular) |
-| Overlay | `rgba(0,0,0,0.66)` on background images |
+| Overlay | `rgba(0,0,0,0.66)` on the **featured-album caption bar only** — the hero, the song parallax band and the footer paint no overlay |
 | Semi-transparent white | `rgba(255,255,255,0.14)` and `rgba(255,255,255,0.63)` |
 
 ## Visual Design (from TEMPLATES.md screenshot)
@@ -148,6 +148,52 @@ The screenshot shows a dark, moody musician website with:
    - Logo (same 5-bar + text)
    - Social icons row (Pinterest, Facebook, Twitter, Dribbble, Behance)
    - Copyright bar
+
+## Reference identity — catalogue URL collision (measured 2026-10-24)
+
+Two catalogue keys resolve to `https://preview.colorlib.com/theme/music/` in the
+preview host's own 1,889-entry map
+(`assets/js/catalog-products-20261009-trace-developer.js`):
+
+| catalogue key | `details` post | that entry's `img` |
+| --- | --- | --- |
+| `music` (bare slug) | `/wp/template/music-2/` — "Music – Free Mobile-Ready Music Website Template **2026**" (published 2019-01-19, modified 2026-09-05) | `music-free-template.jpg` — the blue/purple **"YOUR MUSIC."** page |
+| `catalog-141301` | `/wp/template/music/` — "Music – Free Creative Musician Website Template" (published 2018-01-12, modified 2026-09-05) | `music-free-fullscreen-musician-website-template.jpg` — the magenta/violet **"MUSIC IS LIFE"** fullscreen page |
+
+The newer post owns the shared directory (the `-24t`/`-24u` tell): the bare-slug
+`music` key's `details` is `/template/music-2/`, and the directory renders **that**
+design. Measured chain (all fetched 2026-10-24, `curl -4`, Chrome/124 UA):
+
+| Fact | Reading |
+| --- | --- |
+| demo dir | `theme/music/` HTTP **200**, **24,529 B**; `theme/music/index.html` 200, same 24,529 B — a no-op link, never a 404 |
+| theme sheet | `styles/main_styles.css` **32,427 B**, sha256 `beba86a028d7b404b7686646afef111662cd0b8e0de7cfd6aca8b7ea44fd63d9`; `styles/responsive.css` **7,381 B**, sha256 `9f91b001d0c12e8aca6b309c3ca85fd48caa0f08f94176fcdf35c6113d0a6048` |
+| vendor | `styles/bootstrap-4.1.2/bootstrap.min.css` **142,041 B**, sha256 `cd5525bc887734465161af57feaa4d63c3f5681cb477816b23b6e17d94995707`; jQuery 3.3.1, OwlCarousel 2.3.4, **jPlayer** (`plugins/jPlayer/jquery.jplayer.min.js` 60,950 B), ScrollMagic/TweenMax/parallax — the 2019 build the `music-2` post ships |
+| faces | one `@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700')` (line 28 of the sheet); **no self-hosted face** |
+| nav labels | `Home · Artists · Download Music · News · Contact` + `Login / Register` — what the `music-2` thumbnail shows, and **not** the musician page's hamburger-only chrome |
+| h1 set | `your music.` ×3 (three owl-carousel slides, each `background-image:url(images/index.jpg)`), then `Tour Dates`, `Get Your Music Right Now!`, `Featured Albums`, `Latest News`, `Subscribe & Follow` |
+| pages | **4 live pages, all 200**: `index.html` 24,529 B · `artists.html` 26,880 B · `blog.html` 15,422 B · `contact.html` 9,726 B (`about.html` **404**) |
+| anchors | index holds **46** anchors — **35 dead `href="#"`**, 8 real page links (`index.html`/`artists.html`/`blog.html`/`contact.html` ×2 each), 2 `get.adobe.com/flashplayer` (the jPlayer "Update Required" decoy), 1 `colorlib.com` |
+| forms | hero `form.tickets_form` ×3 (one per slide): `input[type=text] placeholder="Tickets" required` + `button.tickets_form_button`; the "Event" control is a **div** (`custom_dropdown` → `Event 1/2/3`), *not* a `<select>`; newsletter `form#newsletter_form`: `input[type=email] placeholder="Your E-mail" required` + `button.newsletter_button` |
+| archive | `downloads/free/music.zip` **404** and `downloads/free/music-2.zip` **404** — the live directory is the only reference that exists |
+
+The `music` post's row thumbnail is the **undemo'd variant**:
+`music-free-fullscreen-musician-website-template.jpg` (1200×967) is a magenta→violet
+radial page — pixel samples, never CSS declarations: nav band `#aa1ddd`→`#e01cbc`
+at y≈60, hero `#8a1ced`→`#d61ebe` at y≈250, `#691cff`→`#aa1ddb` at y≈800, white
+`MUSIC IS LIFE` headline over three dancers, hamburger top-right and **no nav
+links**. Every prefix tried → **404**: `theme/music-2/`, `theme/music2/`,
+`theme/fullscreen-music/`, `theme/fullscreen-musician/`, `theme/musician/`,
+`theme/bootstrap/music/`, `theme/bb/music/`, `theme/etc/music/`,
+`colorlib.com/etc/music/index.html`; both archives 404. No DOM, no stylesheet, no
+archive — that design cannot be measured, so it is **unbuildable from a live
+reference**.
+
+**Consequence:** the three `**Music**`/`**Music 2**` rows in `TEMPLATES.md`
+(lines 1480, 2270, 2271) collapse onto ONE live design. This prep (`melody`) reproduces the design the directory actually serves — the
+`music-2` rebuild — and is superseded by `ampstat` (see SHIPPED-UNDER above).
+The musician page its thumbnail shows has no demo and no archive, so it is not
+a buildable target and must not be scaffolded.
 
 ## Requirements
 

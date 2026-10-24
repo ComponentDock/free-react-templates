@@ -1,4 +1,11 @@
 # Melody (ColorLib Music) — Tasks & Design Notes
+
+> **Reference identity (measured 2026-10-24).**
+> `https://preview.colorlib.com/theme/music/` is claimed by TWO catalogue keys
+> (`music` → `/wp/template/music-2/`, `catalog-141301` → `/wp/template/music/`) and
+> serves the **`music-2` rebuild**. The musician page in the row thumbnail has no demo
+> (9 prefixes 404) and no archive. Superseded by `apps/ampstat`. Authority:
+> `openspec/specs/template-melody/spec.md`.
 <!-- prep-status: shipped-as=ampstat -->
 > **SHIPPED-UNDER** — the ColorLib `music` design this prep describes shipped
 > as `apps/ampstat` (<https://ampstat.free.componentdock.com>).
