@@ -13,6 +13,21 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Pawpal → Groomly (2026-10-24o, this PR)
+
+**1 app reuses its source name** (`node scripts/audit-naming.mjs`:
+`apps/petsitting`), plus `apps/itkol`, which a name-only test still cannot see
+(`unknown: 1`, folder equals the slug and the spec quotes the marketing title).
+`apps/pawpal` → `groomly` cleared the seventh of the eight visible violations;
+the source name survives only in the spec's `ColorLib "PawPal"` provenance
+lines, the reference's own colorlib.com URLs and
+`pawpal-template-1770211334322.jpg`, because the token evidence quotes the
+source stylesheet verbatim. The design is unchanged — same pink (`#db2777`,
+hover `#be185d`), Poppins + Lora, same eight bands. All three `Pawpal` rows in
+`TEMPLATES.md` (48, 156, 2927) now point at `groomly`, and the derived
+`shipped-as` pointer in `openspec/specs/template-biscuit/` was repointed at
+`apps/groomly`.
+
 ## State after Petvet → Vetora (2026-10-24n, #1848)
 
 **2 apps reuse their source name** (`node scripts/audit-naming.mjs`:
@@ -169,15 +184,12 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`
 (#1842), `jobboard` → `rosterly` (#1843), `medical` → `verdia` (#1844),
 `nurture` → `cradle` (#1845), `oraxol` → `obsidian` (#1846),
-`unioncorp` → `meridia` (#1847), `petvet` → `vetora` (#1848).
+`unioncorp` → `meridia` (#1847), `petvet` → `vetora` (#1848), `pawpal` →
+`groomly` (this PR).
 
 | app              | source design |
 | ---------------- | ------------- |
-| apps/nurture     | Nurture       |
-| apps/oraxol      | Oraxol        |
-| apps/pawpal      | PawPal        |
 | apps/petsitting  | Petsitting    |
-| apps/unioncorp   | Unioncorp     |
 | apps/itkol       | Itkol (hidden — folder equals the slug) |
 
 ## Pitfall — a design can carry two TEMPLATES.md rows

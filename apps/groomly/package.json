@@ -1,8 +1,8 @@
 {
-  "name": "@free-react-templates/pawpal",
+  "name": "@free-react-templates/groomly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pawpal.free.componentdock.com",
+  "homepage": "https://groomly.free.componentdock.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

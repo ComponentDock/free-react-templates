@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, sections, and footer with the correct landmarks and document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Pawpal — Pet Grooming & Boarding Website Template')
+    expect(document.title).toBe('Groomly — Pet Grooming & Boarding Website Template')
 
     const banner = screen.getByRole('banner')
     expect(banner).toBeInTheDocument()

@@ -10,7 +10,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Pawpal — Pet Grooming & Boarding Website Template'
+    document.title = 'Groomly — Pet Grooming & Boarding Website Template'
   }, [])
 
   return (

@@ -15,7 +15,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:py-28">
         <div>
           <p className="text-sm font-semibold uppercase tracking-widest text-primary-600 dark:text-primary-400">
-            Welcome to Pawpal
+            Welcome to Groomly
           </p>
           <h1 className="mt-4 font-serif text-4xl font-bold leading-tight text-gray-900 dark:text-white sm:text-5xl lg:text-6xl">
             Where Every Pet Gets the Royal Treatment
@@ -49,8 +49,8 @@ export function Hero() {
         </div>
         <div className="relative">
           <img
-            src="https://picsum.photos/seed/pawpal-hero/1200/900"
-            alt="Happy dog receiving care at Pawpal"
+            src="https://picsum.photos/seed/groomly-hero/1200/900"
+            alt="Happy dog receiving care at Groomly"
             className="h-full w-full rounded-3xl object-cover shadow-xl"
           />
         </div>

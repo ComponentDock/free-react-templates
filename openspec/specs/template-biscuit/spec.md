@@ -1,9 +1,9 @@
 # Template: Biscuit (Premium Pet Care Landing)
-<!-- prep-status: shipped-as=pawpal -->
+<!-- prep-status: shipped-as=groomly -->
 > **SHIPPED-UNDER** — the ColorLib `pawpal` design this prep describes already
-> ships as `apps/pawpal` (<https://pawpal.free.componentdock.com>).
+> ships as `apps/groomly` (<https://groomly.free.componentdock.com>).
 > Do not scaffold `apps/biscuit`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-pawpal/spec.md`.
+> Fidelity reference: `openspec/specs/template-groomly/spec.md`.
 
 ## Purpose
 

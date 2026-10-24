@@ -45,7 +45,7 @@ export function WhyUs() {
             that genuinely loves animals.
           </p>
           <img
-            src="https://picsum.photos/seed/pawpal-why/800/600"
+            src="https://picsum.photos/seed/groomly-why/800/600"
             alt="Our climate-controlled pet care facility"
             className="mt-8 w-full rounded-3xl object-cover shadow-lg"
           />

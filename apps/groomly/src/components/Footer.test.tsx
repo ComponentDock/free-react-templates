@@ -5,7 +5,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders the site name, about blurb, link columns, hours, contact details, and social links', () => {
     render(<Footer />)
-    expect(screen.getByRole('heading', { name: 'Pawpal' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Groomly' })).toBeInTheDocument()
     expect(screen.getByText(/Austin, TX/)).toBeInTheDocument()
 
     expect(screen.getByRole('heading', { name: 'Services' })).toBeInTheDocument()
@@ -21,7 +21,7 @@ describe('Footer', () => {
     expect(screen.getByText('Saturday: 8:00 AM - 6:00 PM')).toBeInTheDocument()
     expect(screen.getByText('Sunday: 9:00 AM - 5:00 PM')).toBeInTheDocument()
 
-    expect(screen.getByRole('link', { name: 'hello@pawpal.com' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'hello@groomly.com' })).toBeInTheDocument()
     expect(screen.getByText('Austin, TX 78701')).toBeInTheDocument()
 
     for (const social of ['GitHub', 'X', 'LinkedIn']) {

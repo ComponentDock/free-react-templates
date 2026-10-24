@@ -1,14 +1,14 @@
 const images = [
   {
-    src: 'https://picsum.photos/seed/pawpal-1/600/600',
+    src: 'https://picsum.photos/seed/groomly-1/600/600',
     alt: 'Happy golden retriever after grooming',
   },
-  { src: 'https://picsum.photos/seed/pawpal-2/600/600', alt: 'Dogs playing in daycare' },
-  { src: 'https://picsum.photos/seed/pawpal-3/600/600', alt: 'Dalmatian portrait' },
-  { src: 'https://picsum.photos/seed/pawpal-4/600/600', alt: 'Cat being groomed' },
-  { src: 'https://picsum.photos/seed/pawpal-5/600/600', alt: 'Puppy enjoying a bath' },
+  { src: 'https://picsum.photos/seed/groomly-2/600/600', alt: 'Dogs playing in daycare' },
+  { src: 'https://picsum.photos/seed/groomly-3/600/600', alt: 'Dalmatian portrait' },
+  { src: 'https://picsum.photos/seed/groomly-4/600/600', alt: 'Cat being groomed' },
+  { src: 'https://picsum.photos/seed/groomly-5/600/600', alt: 'Puppy enjoying a bath' },
   {
-    src: 'https://picsum.photos/seed/pawpal-6/600/600',
+    src: 'https://picsum.photos/seed/groomly-6/600/600',
     alt: 'Pet relaxing in a cozy boarding suite',
   },
 ] as const
