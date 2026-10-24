@@ -89,3 +89,21 @@ Quarters SHALL provide a transparent navbar with the brand name "Quarters." and 
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/quarters/public/CNAME` = `quarters.free.componentdock.com`
   and the package `homepage` = `https://quarters.free.componentdock.com`.
+
+## Token re-read (2026-10-24s) — live-sheet audit
+
+The tan/cream palette above is **wrong** — none of `#e3c4a8`, `#ddb795`,
+`#eec60a`, `#edf0f5`, `#737373` occurs in `theme/props/css/style.css`
+(63,010 B, sha256 `e39afa7b2cfd…`; 0 matches each). Measured values:
+
+- **Brand teal `#1f6f8b`** — 42 declarations: `:root{--bs-primary}`, `a`,
+  `.btn-primary` background/border, `.hero{background-color}`, hero search submit.
+- **CTA gradient** `linear-gradient(270deg, #f82a7e 0%, #752a90 100%)` —
+  10 + 8 declarations on `.btn.btn-primary` (pill, `border-radius: 30px`) and the
+  property price bar. `#752a90` is the gradient's end stop, not a surface.
+- Text `#212529`, muted `#6c757d`, band `#f8f9fa`, link hover `#19596f`.
+- Typeface **Noto Sans JP** for headings *and* body (`h1…h6, .logo` + `body`,
+  14 px) — the Oswald/Nunito claim in the table above is unsupported.
+- Hero overlay is `rgba(0,0,0,0.2)` (`.hero.overlay:before`), slider overlay
+  `rgba(34,34,34,0.3)`.
+- Spec: `openspec/specs/template-quarters/spec.md` §Design tokens.

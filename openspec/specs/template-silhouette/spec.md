@@ -2,16 +2,49 @@
 
 Recreation of ColorLib "Fashion 2" (https://colorlib.com/wp/template/fashion-2/).
 
-**Preview unreachable** — design inferred from ColorLib description, screenshot URL,
-and the related Fashion template structure (section-1 hero, section-4 products,
-section-2 testimonials, section-3 blog, footer).
+**Reference (re-verified 2026-10-24s).** The preview IS reachable — the earlier
+"preview unreachable / inferred from description" note was a slug-only 404, not
+a dead demo. The demo directory is `https://preview.colorlib.com/theme/fashion/`
+(HTTP 200, 26,584 B), whose theme sheet `css/style.css` is 29,430 B, sha256
+`75499322b02a2b2d…`. The preview host's own catalog map keys this demo as
+`fashion` → `theme/fashion/`, and the row's screenshot
+(`fashion-free-template.jpg`) renders the same page: `Fashion.` wordmark, serif
+hero, coral accents. There is no `theme/fashion-2/`, `theme/fashion2/` or
+`theme/bootstrap/fashion-2/` (all 404) — probe the catalog before assuming a
+demo is dead.
+
+Note on the sibling row: the *other* ColorLib fashion entry in `TEMPLATES.md`
+(the bold green→yellow gradient design) is a different page — this spec's
+reference is the coral "Fashion." design only.
 
 ## Purpose
 
 A single-page apparel store landing template with hero, product grid, about section,
-testimonials, blog posts, newsletter signup, and footer. Minimalist fashion aesthetic
-with Lato + Playfair Display fonts, green (#6DAB3C) brand color, and dark charcoal
-(#1a1a2e) section backgrounds.
+testimonials, blog posts, and footer. Minimalist fashion aesthetic: Lato body +
+Playfair Display headings, coral `#ff6363` accent on white, hairline column rules.
+
+## Source structure (live DOM, in order)
+
+1. `nav.site-nav` — `Fashion.` wordmark (span-styled dot), links: Home, Dropdown
+   (Menu One/Two, Sub Menu One–Three), Menu Three, Inner Page, Contact Us;
+   `site-mobile-menu` panel for mobile.
+2. `section-1` hero — lorem blurb, a `1 of 0` owl counter, three stacked `h1`
+   lines ("Fashion Presents" / "Creative Design" / "Modern Fashion"), lorem
+   blurb, "Learn more" link under the image collage.
+3. `section-4` — "Collections" carousel (`Prev`/`Next`), four products repeated
+   twice for the loop: Minimal $29, Collecta $21, Nine8 $38, Hut $49.
+4. `section-2` — "A Fashion Boutique" split band (text + "Learn more" link,
+   figure image).
+5. `site-section.rounded` — "Testimonials" carousel: Adam Aderson, Lukas Devlin,
+   Kayla Bryant.
+6. `section-3` — "Blog Posts": three cards, each with a date ("May 17th, 2020"),
+   title and excerpt.
+7. Footer — three columns (About, Connect with us, Navigations) plus a copyright
+   bar.
+
+The live page has **no form and no `<input>`** (`document.forms.length === 0`):
+there is no newsletter in this design. The newsletter requirement below is a
+documented recreation addition, not a fidelity item.
 
 ## Requirements
 
@@ -70,13 +103,15 @@ product name, and price.
 ### Requirement: About section with features
 
 The template SHALL display a split layout about section with an image on the left
-and a feature list on the right. The feature list SHALL include Free Shipping,
-Secure Payment, and Sustainable items with lucide-react icons.
+and a feature list on the right. The source band (`section-2`) is headed
+"A Fashion Boutique" and carries a short blurb plus a "Learn more" link; the
+recreation renders the same band plus three feature items with lucide-react
+icons (additive, documented below).
 
 #### Scenario: About section renders heading and features
 
 - **WHEN** the page loads
-- **THEN** the about section shows "Crafted with Intention" heading and 3 features
+- **THEN** the about section shows its heading, a blurb, a "Learn more" link and 3 feature items
 
 #### Scenario: About section displays image
 
@@ -112,10 +147,11 @@ title, and excerpt.
 - **WHEN** the page loads
 - **THEN** each blog card shows an image with the post title as alt text
 
-### Requirement: Newsletter signup
+### Requirement: Newsletter signup (recreation addition)
 
-The template SHALL display a newsletter section with an email input and subscribe
-button. The form SHALL prevent default submission.
+The source page ships no form at all, so this section is an intentional
+recreation addition: the template SHALL display a newsletter band with an email
+input and subscribe button whose default submission is prevented.
 
 #### Scenario: Newsletter form renders
 
@@ -166,14 +202,28 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Design tokens
 
-- **Fonts:** Lato (sans-serif body), Playfair Display (serif headings)
-- **Brand color:** #6DAB3C (green primary)
-- **Accent color:** #B97EBB (lavender/purple)
-- **Dark charcoal:** #1a1a2e (nav, footer backgrounds)
-- **White:** #ffffff (card backgrounds, light sections)
-- **Light gray:** #f7f7f7 (section alternating backgrounds)
-- **Button style:** rounded, flat, green primary, hover darkens
-- **Section rhythm:** alternating light/dark backgrounds, generous padding
+Measured from the live sheet — `theme/fashion/css/style.css` (29,430 B, sha256
+`75499322b02a2b2d…`), preview `https://preview.colorlib.com/theme/fashion/`
+(HTTP 200, 26,584 B), re-read 2026-10-24s. Every value is the sheet's literal.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| **Brand coral — the design's lead** | `#ff6363` | **30 declarations** — `a`, `a:hover`, `.text-primary`, `a.text-primary`, nav `li.active > a`, `.site-mobile-menu` active links, `.dropdown` active |
+| `brand-hover` | `#ff7777` | 2 declarations — `.btn.btn-primary:hover` background + border |
+| Ink | `#000000` | 17 declarations — `::selection`, headings, nav links; `h1` labels are 100 px at desktop (`section-1 … text-wrap h1`) |
+| Surface | `#ffffff` | 11 declarations — `body{background}` |
+| Muted body copy | `#a09b9b` | `.section-1 p`, `.section-2 p`, `.section-3 p` |
+| Hairlines | `#efefef` | 5 declarations — `.lines-wrap` fixed column rules (three vertical 1 px lines behind the page) |
+| Off-white band | `#f8f9fa`, `#f9f9f9` | testimonial band, accordion item |
+| **Fonts** | Body `"Lato", sans-serif` 14 px; headings `"Playfair Display", serif` | `body` rule; `h1…h4` rule |
+| Radii | `30px` (pill buttons), `4px`, `50%` (owl dots / controls) | `.btn` / `.control__indicator` |
+
+**Prep correction (2026-10-24s).** The earlier block's palette — green `#6DAB3C`,
+lavender `#B97EBB`, charcoal `#1a1a2e`, `#f7f7f7` — occurs **nowhere** in the
+sheet (0 matches each); it was inferred from the description, not measured. The
+real design is coral-on-white with hairline column rules and no dark sections.
+The shipped app currently paints the invented palette, so this is recorded as
+app debt (see `docs/app-live-tokens.md`), not as a design choice.
 
 ## Coverage target: 100% lines/functions/branches/statements
 

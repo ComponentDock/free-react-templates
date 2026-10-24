@@ -1,7 +1,7 @@
 # Elevate — Design Notes
 
 Reference: **Life Coaching** — `https://colorlib.com/wp/template/life-coaching/`  
-Live preview: `https://preview.colorlib.com/theme/life-coaching/`  
+Live preview: `https://preview.colorlib.com/theme/lifecoaching/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoaching-free-template.jpg  
 Shipped: https://elevate.free.componentdock.com
 
@@ -92,3 +92,17 @@ The app SHALL display a footer with quick links, contact info, newsletter form, 
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/elevate/public/CNAME` = `elevate.free.componentdock.com`
   and the package `homepage` = `https://elevate.free.componentdock.com`.
+
+## Token re-read (2026-10-24s) — live-sheet audit
+
+- **Preview URL corrected:** the demo is `https://preview.colorlib.com/theme/lifecoaching/`
+  (HTTP 200, 37,928 B, sheet `css/style.css` 80,582 B, sha256 `c8af002e5c36f4ce…`).
+  `theme/life-coaching/` is a 404 — the earlier note in this file cited it.
+- Tokens (from the sheet): lead **lime `#c5cf31`** (34 decls — links,
+  `.heading-section .subheading`, the active nav block, `.btn.btn-primary`);
+  secondary **sky blue `#8fd0d2`** (8 decls — `.bg-secondary`, `.services .icon`,
+  `.services-2 .icon`, `.story-wrap .text h4 span`); ink `#212529` body /
+  `rgba(0,0,0,.8)` headings; tinted band `#f8f9fa`; dark band `#333333`;
+  Poppins 14 px body; radii 50% icon circles, 4–5 px controls.
+- Screenshot agrees: lime nav tab + lime appointment button, sky-blue icon
+  circles. Spec: `openspec/specs/template-elevate/spec.md` §Design tokens.

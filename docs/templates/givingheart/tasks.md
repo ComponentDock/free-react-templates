@@ -1,5 +1,13 @@
 # GivingHeart (ColorLib Charity 2) — Tasks & Design Notes
 
+## Token re-read (2026-10-24s) — superseded values below
+
+This task list was written before the live sheet was re-measured. Where it names
+design colours or fonts, use `openspec/specs/template-givingheart/spec.md`
+§Design tokens and `design-notes.md` §Token re-read instead — the summary:
+
+reference demo is `https://preview.colorlib.com/theme/charity2/` (not `theme/charity-2/`); lead **green `#83ba09`** (32 decls), ink `#23262a`, body `#5f646b`, band `#f4f4f8`, hairlines `#e6e6ea`, **Source Sans Pro** headings + Roboto body. The pink gradient palette below belongs to the other charity demo.
+
 > Prep artifacts prepared on `main` under the source name (charity-2);
 > renamed to the NEW name **GivingHeart** in the implementation PR.
 

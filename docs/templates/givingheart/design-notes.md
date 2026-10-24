@@ -1,7 +1,7 @@
 # Givingheart — Design Notes
 
 Reference: **Charity 2** — `https://colorlib.com/wp/template/charity-2/`  
-Live preview: `https://preview.colorlib.com/theme/charity-2/`  
+Live preview: `https://preview.colorlib.com/theme/charity2/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/charity2-free-template.jpg  
 Shipped: https://givingheart.free.componentdock.com
 
@@ -88,3 +88,31 @@ The system SHALL render a footer with navigation links, social media icons, and 
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/givingheart/public/CNAME` = `givingheart.free.componentdock.com`
   and the package `homepage` = `https://givingheart.free.componentdock.com`.
+
+## Token re-read (2026-10-24s) — REFERENCE CORRECTED
+
+**The reference in this file is the wrong demo.** `theme/charity-2/` is a
+different ColorLib charity page (hot-pink → orange → yellow gradients, Poppins).
+The "Charity 2" entry's demo — the one its screenshot
+(`charity2-free-template.jpg`) renders, and the one the preview host's catalog
+maps the entry to — is `https://preview.colorlib.com/theme/charity2/`
+(HTTP 200, 39,401 B; sheet `css/style.css` 28,184 B, sha256 `13ed53e60d095731…`).
+
+Measured palette: **brand green `#83ba09`** (32 decls — `.primary-button`,
+link/nav hover, counters, progress bars, image hover overlays, footer social);
+ink `#23262a` (headings + links); body `#5f646b` (15 px Roboto); band `#f4f4f8`
+(footer, about tint); hairlines `#e6e6ea` (18); white cards. Headings
+**Source Sans Pro** 700; 25 px pill buttons with a diagonal sheen; 10 px cards;
+50% avatars / meta icons.
+
+Sections (live DOM): header/navbar (Home · About · Causes · Events · Blog ·
+Contact + search + burger) → hero carousel, 100 vh ("Save The Children" /
+"Become A Volunteer") → `#about` "Welcome to Charity" + "Read More" →
+`#numbers` 47k Donors / 154K Children Saved / 785K Donated / 357 Volunteers →
+`#causes` "Our Causes" 6 cards with % progress bars → `#cta` "Become A Volunteer"
+parallax band → `#events` "Upcoming Events" 4 cards → `#testimonial` parallax,
+4 quotes → `#blog` "Our Blog" 3 cards → `#footer` (brand, Galery, Newsletter) +
+`#footer-bottom`.
+
+The pink tokens recorded above are not in this sheet; `apps/givingheart` still
+paints them → app debt. Spec: `openspec/specs/template-givingheart/spec.md`.

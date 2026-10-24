@@ -13,36 +13,52 @@ A real estate landing page with a transparent navbar over a full-viewport hero, 
 
 ### Fonts
 
-- **Headings:** `'Oswald', sans-serif` — uppercase, bold, wide letter-spacing
-- **Body:** `'Nunito Sans', sans-serif` — light/regular weight
+- **Headings and body:** `"Noto Sans JP", sans-serif` — the sheet sets
+  `h1…h6, .logo` and `body` to this family (body: `14px`, `#212529`). The
+  previous prep claimed `'Oswald'` + `'Nunito Sans'`; neither string occurs
+  anywhere in the 63,010 B `css/style.css` (`grep -ci` → 0), so both were
+  replaced by the measured family.
 
 ### Colors
 
-| Token         | Hex       | Usage                                                              |
-| ------------- | --------- | ------------------------------------------------------------------ |
-| `brand`       | `#e3c4a8` | Buttons, underlines, card-title highlights, logo dot, social strip |
-| `brand-dark`  | `#ddb795` | Social hover background                                            |
-| `brand-hover` | `#eec60a` | Social icon hover color                                            |
-| `ink`         | `#333333` | Body text                                                          |
-| `soft`        | `#edf0f5` | News section background                                            |
-| `muted`       | `#777777` | Property list details                                              |
-| `faint`       | `#737373` | Footer blurb text                                                  |
-| `secondary`   | `#6c757d` | Uppercase date labels                                              |
-| Surface (measured) | `#752a90` | paints it ×8 — `background` on `.btn.btn-primary`; style.css (63,010 B, sha256 e39afa7b2cfd) · <https://preview.colorlib.com/theme/props/> |
+Measured from the live sheet — `theme/props/css/style.css` (63,010 B, sha256
+`e39afa7b2cfd…`), preview `https://preview.colorlib.com/theme/props/`
+(HTTP 200, 214,331 B), re-read 2026-10-24s. Every hex below is a literal in
+that file; the count is its declaration count.
+
+| Token | Hex | Evidence |
+| --- | --- | --- |
+| **`brand` (the design's lead)** | `#1f6f8b` | **42 declarations** — `:root{--bs-primary}`, `a`, `.btn-primary` background/border, `.hero` `background-color`, `.hero .form-search .btn` |
+| `brand-hover` | `#19596f` | 4 declarations — `a:hover` |
+| **`cta-gradient`** | `linear-gradient(270deg, #f82a7e 0%, #752a90 100%)` | 10 `#f82a7e` + 8 `#752a90` declarations on `.btn.btn-primary` (and the property price bar) — the hero search button and every primary CTA |
+| `ink` | `#212529` | 15 declarations — `:root{--bs-dark}`, `body` |
+| `muted` | `#6c757d` | 12 declarations — `:root{--bs-gray}` |
+| `light` | `#f8f9fa` | 4 declarations — `:root{--bs-light}`, `.bg-light` |
+| `surface` | `#fff` | 37 declarations — `:root{--bs-white}` |
+| `overlay` | `rgba(34, 34, 34, 0.3)` / `rgba(0, 0, 0, 0.2)` | `.hero-slide .img.overlay:before`, `.hero.overlay:before` |
+
+**Prep correction (2026-10-24s).** The earlier table listed a tan/cream palette
+(`#e3c4a8`, `#ddb795`, `#eec60a`, `#edf0f5`, `#737373`) and called `#752a90`
+the "Surface". None of the tan values occurs in the sheet (**0** matches each),
+and `#752a90` is the *end stop* of the CTA gradient, not a surface. The design's
+lead is the teal `#1f6f8b` (headings, links, primary button, and the hero's own
+`background-color`).
 
 ### Spacing / Layout
 
-- **Hero:** full-viewport (min-height 600px, h-screen), `rgba(0,0,0,0.4)` overlay
+- **Hero:** full-viewport (min-height 600px, h-screen), `rgba(0,0,0,0.2)` overlay
 - **Property info:** split panel (photo left, spec list right), overlaps hero by 100px
 - **Browse grid:** 4-up on desktop, 2-up tablet, stacked mobile
 - **Featured collage:** 1 tall left + 2 stacked right
-- **News:** 3-up on light #EDF0F5 background
+- **News:** 3-up on light `#f8f9fa` background
 - **Footer:** 3-column white, `pt-[7em]`
 
 ### Button style
 
-- Square (no border-radius), tan `#e3c4a8` background, white text, uppercase
-- Hover: darker tan `#ddb795`
+- Pill: `border-radius: 30px` (also the hero search field), gradient
+  `270deg` pink `#f82a7e` → purple `#752a90`, white label, uppercase
+- Solid fallback `#1f6f8b` where the gradient is not used (hero search submit)
+- Hover: unchanged gradient; links darken to `#19596f`
 
 ## Requirements
 

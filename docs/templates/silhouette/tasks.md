@@ -1,5 +1,13 @@
 # Silhouette — Implementation Tasks
 
+## Token re-read (2026-10-24s) — superseded values below
+
+This task list was written before the live sheet was re-measured. Where it names
+design colours or fonts, use `openspec/specs/template-silhouette/spec.md`
+§Design tokens and `design-notes.md` §Token re-read instead — the summary:
+
+reference demo is `https://preview.colorlib.com/theme/fashion/`; lead **coral `#ff6363`** (30 decls), hover `#ff7777`, Lato + Playfair Display, hairlines `#efefef`. The green/lavender/charcoal palette below is invented.
+
 Source design: **Fashion 2** (`https://colorlib.com/wp/template/fashion-2/`) → recreation name **silhouette**. Shipped at https://silhouette.free.componentdock.com.
 
 Scope: A single-page apparel store landing template with hero, product grid, about section, testimonials, blog posts, newsletter signup, and footer. Minimalist fashion aesthetic with Lato + Playfair Display fonts, green (#6DAB3C) brand color, and dark charcoal (#1a1a2e) section backgrounds.

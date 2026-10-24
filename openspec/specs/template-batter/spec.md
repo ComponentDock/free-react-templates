@@ -6,22 +6,37 @@ Recreation of ColorLib "Go Crepe" (https://colorlib.com/wp/template/go-crepe/) a
 
 ## Design tokens
 
-<!-- design-tokens-backfill:2026-10-23 -->
+<!-- design-tokens-backfill:2026-10-23 · live re-read 2026-10-24s -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/go-crepe/ (HTTP 200, 18,588 B, fetched 2026-10-23) and its theme stylesheet `theme/go-crepe/css/main.css` (37,031 B, sha256 `aed66c98895a…`).
-CSS values are canonical over any screenshot sample.
+https://preview.colorlib.com/theme/go-crepe/ (HTTP 200, 18,588 B) and its theme
+stylesheet `theme/go-crepe/css/main.css` (37,031 B, sha256 `aed66c98895a4c2b…`).
+CSS values are canonical over any screenshot sample. The screenshot
+(`go-crepe-creative-digital-agency-website-template.jpg`) agrees: white nav over
+a purple→teal gradient banner.
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (most-used chromatic) | `#9820ec` | 17 declarations — `.genric-btn.primary`, `.genric-btn.primary:hover` |
-| Other chromatic values | `#56e4d2`, `#38a4ff`, `#f44a40` | `#56e4d2` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f44a40` × 6 (.genric-btn.danger) |
+| **Section gradient — the design's lead surface** | `linear-gradient(135deg, #49e3ce 0%, #9920ed 100%)` | 12 declarations, one shared group: `.banner-area`, `.story-area`, `.story-area-2`, `.footer-widget-area`, `body:after`, `.primary-btn:after`, `.single-feature .icon:after`, `.single-widget .icon:after`, `.footer-social a:after` |
+| Gradient stops | `#49e3ce` teal × 8 · `#9920ed` purple × 4 | `.banner-area` paints the gradient; `#49e3ce` also paints `nav a:hover`; `.single-feature .icon span` uses `linear-gradient(0deg, #9920ed, #49e3ce)` |
+| Button brand | `#9820ec` | 18 declarations — `.genric-btn.primary`, `.genric-btn.primary:hover`, `.genric-btn.primary-border` |
+| Deep-indigo ink accent | `#3c408f` | 3 declarations — `b, i, sup, sub, u, del`; `.story-area .primary-btn span` |
+| Other chromatic values | `#56e4d2`, `#38a4ff`, `#f4e700`, `#f44a40` | `#56e4d2` × 7 (.genric-btn.success); `#38a4ff` × 6 (.genric-btn.info); `#f4e700` × 6 (.genric-btn.warning); `#f44a40` × 6 (.genric-btn.danger) |
 | Surface | `#ffffff` | 60 declarations — `.text-white`, `.button-area` |
-| Ink / dark surface | `#222222` | 13 declarations — `h1`, `h2` |
+| Secondary surface | `#f9f9ff` | 29 declarations — `.genric-btn.default` |
+| Ink / dark surface | `#222222` | 13 declarations — `h1`…`h6` |
 | Typeface | `"Poppins", sans-serif` (3 rules — body) | `font-family` declaration in the theme sheet |
 | Body type | `color: #777777; font-size: 14px; font-weight: 300; line-height: 1.5em` | `body{…}` rule |
-| Radii | `3px`, `8px`, `50%` | `3px` (.genric-btn.radius); `8px` (.primary-radio); `50%` (.unordered-list li:before) |
+| Radii | `20px` (buttons), `3px` (cards/inputs), `8px` (radio), `50%` (dots) | `.primary-btn` `border-radius: 20px`; `.genric-btn.radius` `3px`; `.primary-radio` `8px`; `.unordered-list li:before` `50%` |
 
-Palette in order of use: `#ffffff` ×60, `#f9f9ff` ×29, `#9820ec` ×17, `#222222` ×13, `#56e4d2` ×7, `#777777` ×7.
+Palette in order of use: `#ffffff` ×60, `#f9f9ff` ×29, `#9820ec` ×18, `#222222`
+×13, `#49e3ce` ×8, `#777777` ×7, `#56e4d2` ×7, `#38a4ff` ×6, `#f4e700` ×6,
+`#f44a40` ×6, `#9920ed` ×4, `#3c408f` ×3.
+
+**Prep correction (2026-10-24s).** The first backfill recorded only the button
+brand and mis-stated its count as 17; it omitted the two colours the design is
+actually built from — the teal→purple **section gradient** and the indigo ink
+accent. Both rows above are measured from the same sheet, not copied from the
+app.
 
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.

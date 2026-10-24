@@ -1,5 +1,13 @@
 # Quarters — Implementation Tasks
 
+## Token re-read (2026-10-24s) — superseded values below
+
+This task list was written before the live sheet was re-measured. Where it names
+design colours or fonts, use `openspec/specs/template-quarters/spec.md`
+§Design tokens and `design-notes.md` §Token re-read instead — the summary:
+
+lead **teal `#1f6f8b`** (42 decls) + pill CTA gradient `#f82a7e → #752a90`; typeface **Noto Sans JP**; hero overlay `rgba(0,0,0,0.2)`.
+
 Source design: **Props** (`https://colorlib.com/wp/template/props/`) → recreation name **quarters**. Shipped at https://quarters.free.componentdock.com.
 
 Scope: A real estate landing page with a transparent navbar over a full-viewport hero, property information split panel, apartment browse grid. It also includes featured apartments collage, customer testimonials carousel, news cards, social strip, and a three-column footer. Recreation of ColorLib **Props**.

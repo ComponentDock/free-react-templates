@@ -6,14 +6,35 @@
 
 Fotoroll is a photography portfolio template with a navbar, hero, portfolio, blog and footer. It recreates the ColorLib **Photography 2** design (https://colorlib.com/wp/template/photography-2/, preview: https://preview.colorlib.com/theme/photography2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
 
-## Design tokens (from screenshot analysis)
+## Design tokens (live sheet)
 
-- **Accent color:** `#4ecdc4` (mint/teal) — used for logo dot, nav links, CTA hover
-- **Text:** `#333333` (dark), `#888888` (light/muted)
-- **Background:** `#ffffff` (white paper), `#f5f5f5` (gallery sections)
-- **Font:** Montserrat (Google Fonts) — clean sans-serif, weights 300–700
-- **Layout:** Full-width hero slider, masonry portfolio grid, 3-column blog cards
-- **Footer:** Dark `#333` background, social icons (Facebook, Twitter, Instagram, Dribbble), Component Dock link
+Measured from the live reference, not sampled off the screenshot — re-read
+2026-10-24s. Preview `https://preview.colorlib.com/theme/photography2/`
+(HTTP 200, 6,928 B) and its theme sheet `style.css` (20,293 B, sha256
+`bd3253ae7d70a330…`, linked as the last `<link>` after `css/bootstrap.min.css`,
+`css/font-awesome.min.css`, `css/swiper.min.css`).
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| **Accent — the design's only chromatic colour** | `#30df7a` (spring green) | 5 declarations — `.site-navigation ul li a:hover, …current-menu-item a`, `.header-email a`, `.single-post .entry-header .post-meta a`, `.footer-navigation ul li a:hover`, `.footer-social ul li a:hover` |
+| Ink | `#191919` | `body{color}` |
+| Muted greys | `#a6a6a6` (nav links), `#595959` (post body), `#bfbfbf` (byline) | sheet |
+| Surface | `#fff` | 11 declarations |
+| Hairlines | `#ebebeb` | `.site-navigation ul` border |
+| Typeface | `'Work Sans', sans-serif` — imported `fonts.googleapis.com/css?family=Work+Sans:300,400,500,700` | `@import` in `style.css`; `body{font-family}` |
+| Radii | `10px` (card), `50%` (slider arrows + counters) | sheet |
+| Buttons | Text-only: uppercase underlined links (`VIEW PROJECTS`, `SHOW THUMBNAILS`); no filled button anywhere | `style.css` |
+
+**Prep correction (2026-10-24s).** The first block was sampled off the
+screenshot and got both tokens wrong: it named a mint/teal `#4ecdc4` accent
+(the sheet has **no** such value) and Montserrat (the sheet imports **Work
+Sans**). The correct accent is the spring green `#30df7a`, which is what the
+screenshot's green logo dot, "Home" link and email CTA actually show.
+
+Inner pages (live, so they are the authoritative reference for the sections a
+one-page recreation has to compress): `portfolio.html` (200, 10,735 B) and
+`blog.html` (200, 9,004 B); `index.html` is the page itself (200, byte-count
+identical to the directory URL).
 
 ## Sections (in order)
 

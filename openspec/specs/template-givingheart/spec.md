@@ -7,234 +7,258 @@ monorepo. It is an original React recreation of the ColorLib free "Charity 2"
 website template design (see TEMPLATES.md), built under a different name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
-## Design reference (replication findings)
+- **Source:** ColorLib "Charity 2" — https://colorlib.com/wp/template/charity-2/
+- **Preview URL:** https://preview.colorlib.com/theme/charity2/ (HTTP 200,
+  39,401 B) — the hyphen-stripped demo directory, which is the one the preview
+  host's catalog map records for this entry and the one the row's screenshot
+  (`charity2-free-template.jpg`) renders.
+- **Theme stylesheet:** `theme/charity2/css/style.css`, 28,184 B, sha256
+  `13ed53e60d095731…`.
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/charity2-free-template.jpg
+  (green hero "Save The Children" + green pill CTAs; agrees with the live sheet).
 
-- **Original:** ColorLib "Charity 2" — charity/nonprofit template
-  (source: https://colorlib.com/wp/template/charity-2/).
-- **Demo DOM analyzed:** https://preview.colorlib.com/theme/charity-2/
-  (HTTP 200, full rendered DOM + `css/main.css` (10KB) extracted).
-  The TEMPLATES.md screenshot (`charity2-free-template.jpg`) is also available
-  as a visual reference.
-- **Section order (1:1):** Navbar (Home, Projects, About, Donate) → Hero/Banner
-  (full-screen dark overlay, headline "Waiting for Help", CTA button "Donate Now")
-  → Call-to-Action strip (pink gradient background, "Please Help them and Donate
-  now" + button) → Projects (3 project cards with image overlays, each with
-  headline + "Donate Now" + "read more") → About (split: left image, right text
-  "A very Lovely Welcome to our Company" + paragraph + "learn more" button) →
-  Volunteers (4 volunteer cards with image overlays + names) → Donate/Contact
-  (dark parallax background with overlay, heading "Donate Now", left info column
-  with 3 trust items, right form: project select, name, email, amount, message,
-  donate button, payment icons) → Footer (nav links, social icons, copyright).
-- **Design tokens extracted from `css/main.css`:**
-  - Primary brand **hot pink `#f41665`** (accents, hover states).
-  - **Gradient accent:** `linear-gradient(0deg, #f40f68 0%, #f86e3d 55%, #fbcd11 100%)`
-    (pink → orange → yellow; used on primary buttons, card overlays, call-to-action
-    strip).
-  - Light backgrounds `#f9f9ff` (projects area, volunteers area).
-  - Dark backgrounds `#222` (about area, donate area overlay `#000` at 0.9 opacity),
-    `#fff` (footer).
-  - Text colors: `#222` (body), `#777` (muted), `#fff` (on dark backgrounds).
-  - Fonts: **"Poppins"** (body, Google Fonts).
-  - Button shapes: `border-radius: 20px` (head-btn outline), `border-radius: 25px`
-    (primary-btn solid).
-  - Hero: background image with `overlay-bg` at `opacity: 0.5` black.
-  - Donate area: parallax background with `overlay-bg` at `opacity: 0.9` black.
-  - Card hover overlays: gradient background (pink → orange → yellow) fading in.
-  - Form inputs: `border-radius: 0`, transparent background, `border: 1px solid #656463`,
-    white text on dark background.
-- **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/givingheart-<n>/<w>/<h>`); icons → lucide-react;
-  Poppins via Google Fonts `<link>`; forms prevent default (no backend);
-  gradient primary in `@theme`; repo-standard Navbar + Footer chrome.
+**Reference correction (2026-10-24s).** The first prep measured
+`https://preview.colorlib.com/theme/charity-2/` — a *different* ColorLib charity
+demo (hot-pink → orange → yellow gradients, Poppins) that also answers 200 and
+is the twin of the older "Charity" entry. A healthy 200 is not evidence of the
+right design: the catalog's name→url map plus the row's screenshot decide it.
+Everything below was re-measured from `theme/charity2/`; the pink tokens the
+earlier revision recorded (`#f41665`, `#f40f68`, `#f86e3d`, `#fbcd11`) do not
+occur in this sheet at all. `apps/givingheart` still paints the pink palette, so
+the divergence is app debt, recorded in `docs/app-live-tokens.md`.
 
-GivingHeart lives in `apps/givingheart` and uses shared components from
-`packages/ui` (Button, ButtonLink, Card, cn).
+## Design tokens
+
+Measured from the live sheet, not sampled off the screenshot.
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| **Brand green — the design's lead** | `#83ba09` | **32 declarations** — `.primary-button` background, `a:hover`, `.navbar-menu li a:hover`, `.number i/.number span`, `.causes-progress-bar > div`, `.event .event-img a:after`, `.article .article-img a:after`, `.footer-social li a:hover`, `.owl-dot.active span`, `.input:focus` border |
+| Ink (headings + links) | `#23262a` | 6 declarations — `h1…h4`, `a`, `.section-title .sub-title`, nav dropdown chevron, search button |
+| Body copy | `#5f646b` | 5 declarations — `body` (15 px, Roboto), footer nav, pagination |
+| Section surface | `#f4f4f8` | 5 declarations — `#about:after`, `#footer`, dropdown and search panels |
+| Hairlines / dividers | `#e6e6ea` | **18 declarations** — nav item borders, `.input` border, `.causes-progress-bar` track, `#footer-bottom` border |
+| Surface | `#fff` | 20 declarations |
+| **Fonts** | Body `'Roboto', sans-serif` 15 px; headings `'Source Sans Pro', sans-serif` 700 | `body` rule; `h1, h2, h3, h4` rule (sheet header comment: "Fonts: Roboto, Source Sans Pro") |
+| Radii | `25px` (`.primary-button` pill, 45 px tall), `10px` (cards, progress track), `50%` (event meta icons, testimonial avatars, footer social) | sheet `border-radius` census |
+| Button behaviour | Solid green pill, white label, `opacity: .9` → `1` on hover, with a diagonal white sheen sweeping across (`.primary-button:after`) | `.primary-button` rules |
+| Hero | `#home-owl .home-item { height: 100vh }`, full-bleed `background-image` + `.section-bg` overlay layer; white `h1` at 55 px | sheet |
+| Parallax bands | `#cta` and `#testimonial` carry a `data-stellar-background-ratio="0.5"` background image | markup |
+
+## Section order (live DOM, 1:1)
+
+1. **Header / navbar** — `header#home` → `nav#main-navbar`: logo image (60 px),
+   links Home · About · Causes · Events · Blog · Contact, hover-to-open drop-down
+   (`.has-dropdown`), a search toggle with an inline form, and a mobile
+   `navbar-toggle-btn` / `search-toggle-btn` pair.
+2. **Hero carousel** — `#home-owl` (owl carousel, 100 vh): slide 1
+   "Save The Children" + lead + **View Causes** pill; slide 2
+   "Become A Volunteer" + **Join Us Now!** pill.
+3. **About** — `#about`: "Welcome to Charity" title, sub-title, paragraph,
+   **Read More** pill; image on the opposite column.
+4. **Counters** — `#numbers`: four stat blocks with icons — 47k *Donors*,
+   154K *Children Saved*, 785K *Donated*, 357 *Volunteers*.
+5. **Causes** — `#causes`: "Our Causes" + 6 cause cards; each card = image,
+   title, green progress bar with a `%` badge (87%, 53%, 72%, 64% …),
+   *Raised* / *Goal* amounts and a **Donate Now** pill.
+6. **CTA band** — `#cta`: parallax photo band, "Become A Volunteer" `h1`, lead,
+   **Join Us Now!** pill.
+7. **Events** — `#events`: "Upcoming Events" + 4 cards; each = 40 %-wide image
+   (green overlay on hover), circular clock + pin meta icons
+   ("24 October, 2018 | 8:00AM – 11:00PM", "2736 Hinkle Deegan Lake Road"),
+   title.
+8. **Testimonials** — `#testimonial`: parallax band + carousel of 4 quotes;
+   each quote = white blockquote card, 70 px round avatar, "John Doe" /
+   *Volunteer* (green uppercase).
+9. **Blog** — `#blog`: "Our Blog" + 3 cards (image, date, title, excerpt,
+   **Read More**).
+10. **Footer** — `#footer` on `#f4f4f8`: column 1 logo + blurb + contact
+    (email link, address), column 2 "Galery" (thumbnail grid), column 3
+    "Newsletter" (email input + **Subscribe** button); `#footer-bottom` with
+    footer nav (Home · About · Causes · Events · Blog · Contact), round social
+    buttons and the copyright line.
 
 ## Requirements
 
-### Requirement: Navigation bar
+### Requirement: Header / navbar
 
-The system SHALL render a sticky top navigation bar with the site name
-"GivingHeart", anchor links to page sections, and a "Donate Now" CTA button.
+The system SHALL render a white header bar 60 px tall with the site logo, the
+primary link set, a hover drop-down group, an inline search toggle and a mobile
+toggle button. Link and icon colours SHALL be `#23262a`, links turning brand
+green `#83ba09` on hover, with 1 px `#e6e6ea` dividers between items.
 
-#### Scenario: Navbar content
+#### Scenario: Desktop header renders all links
 
-- **GIVEN** the GivingHeart page is rendered
-- **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "GivingHeart" and links to Home,
-  Projects, About, and Donate
-- **AND** the navbar SHALL show a "Donate Now" CTA button
+- **WHEN** the page loads on a desktop viewport
+- **THEN** the header shows the GivingHeart wordmark and the links Home, About, Causes, Events, Blog, Contact
+- **AND** each link is separated by a 1 px `#e6e6ea` border
 
-#### Scenario: Sticky navbar
+#### Scenario: Link hover uses the brand green
 
-- **GIVEN** the page is rendered
-- **WHEN** the user scrolls past the hero section
-- **THEN** the navbar SHALL remain fixed at the top of the viewport
+- **WHEN** the user hovers a nav link
+- **THEN** the link colour changes to `#83ba09` and no background is painted
 
-### Requirement: Hero / Banner section
+#### Scenario: Search toggle
 
-The system SHALL render a full-width hero with a dark overlay background image,
-a level-1 heading, and a call-to-action button.
+- **WHEN** the user activates the search toggle
+- **THEN** an inline search field with placeholder "Search" is revealed
+- **AND** the field submits without reloading the page
 
-#### Scenario: Hero content
+#### Scenario: Mobile navigation
 
-- **GIVEN** the page is rendered
-- **WHEN** the hero section is displayed
-- **THEN** it SHALL contain a level-1 heading "Waiting for Help"
-- **AND** it SHALL show a "Donate Now" CTA button with gradient accent
-- **AND** the hero SHALL display a dark overlay (`opacity: 0.5`) over a background image
+- **WHEN** the user taps the burger button on a narrow viewport
+- **THEN** the link list expands (`.navbar-menu-active`, max-height transition)
+- **AND** the drop-down group renders inline, indented, instead of floating
+
+### Requirement: Hero carousel
+
+The system SHALL render a full-viewport hero carousel (100 vh) with two slides,
+each a full-bleed background image under a `.section-bg` overlay, a white `h1` at
+55 px, a lead paragraph and one green pill CTA.
+
+#### Scenario: Slide one
+
+- **WHEN** the hero is displayed
+- **THEN** the first slide shows the heading "Save The Children", a lead paragraph and a "View Causes" pill
+
+#### Scenario: Slide two
+
+- **WHEN** the carousel advances
+- **THEN** the second slide shows the heading "Become A Volunteer" and a "Join Us Now!" pill
+- **AND** dot indicators reflect the active slide
 
 #### Scenario: Hero height
 
-- **GIVEN** the page is rendered
-- **WHEN** the hero is displayed
-- **THEN** the hero SHALL fill most of the viewport height (full-screen-like)
-
-### Requirement: Call-to-Action strip
-
-The system SHALL render a horizontal call-to-action strip between the hero and
-projects sections with a gradient background.
-
-#### Scenario: CTA strip content
-
-- **GIVEN** the page is rendered
-- **WHEN** the call-to-action strip is displayed
-- **THEN** it SHALL contain the text "Please Help them and Donate now"
-- **AND** it SHALL show a "Donate Now" CTA button
-- **AND** the strip SHALL have a gradient background (pink → orange → yellow)
-
-### Requirement: Projects section
-
-The system SHALL render a projects section with a heading and 3 project cards
-in a 3-column grid, each with an image overlay and hover effect.
-
-#### Scenario: Projects heading
-
-- **GIVEN** the page is rendered
-- **WHEN** the projects section is displayed
-- **THEN** it SHALL show a section heading
-
-#### Scenario: Project cards
-
-- **GIVEN** the projects section is displayed
-- **WHEN** the cards are rendered
-- **THEN** there SHALL be exactly 3 project cards in a row
-- **AND** each card SHALL show a project image
-- **AND** each card SHALL have a "Donate Now" button and a "read more" link
-- **AND** hovering over a card SHALL reveal a gradient overlay
-
-#### Scenario: Project card layout
-
-- **GIVEN** a project card is rendered
-- **WHEN** the card is displayed
-- **THEN** the image SHALL fill the card area
-- **AND** the card details SHALL fade in from the bottom on hover
+- **WHEN** the page loads at any viewport
+- **THEN** the hero occupies the full viewport height (`100vh`)
 
 ### Requirement: About section
 
-The system SHALL render a split about section with a full-width image on the
-left and text content on the right, on a dark background.
+The system SHALL render a two-column about band headed "Welcome to Charity" with
+a sub-title, a body paragraph and a "Read More" green pill, beside an image.
 
 #### Scenario: About content
 
-- **GIVEN** the page is rendered
 - **WHEN** the about section is displayed
-- **THEN** it SHALL show a level-1 heading "A very Lovely Welcome to our Company"
-- **AND** it SHALL display a paragraph of descriptive text
-- **AND** it SHALL show a "learn more" button with gradient accent
+- **THEN** it shows the heading "Welcome to Charity", a sub-title, a paragraph and a "Read More" pill
+- **AND** the section's tinted half uses `#f4f4f8`
 
-#### Scenario: About layout
+### Requirement: Statistics counters
 
-- **GIVEN** the about section is displayed
-- **WHEN** the layout is rendered
-- **THEN** it SHALL be a 50/50 split with an image on the left and text on the right
-- **AND** the section SHALL have a dark (`#222`) background
+The system SHALL render four stat blocks, each an icon, a value and a label, in
+one row on desktop and two-up on small screens.
 
-### Requirement: Volunteers section
+#### Scenario: Counter values
 
-The system SHALL render a volunteers section with a heading and 4 volunteer
-cards in a 4-column grid, each with an image overlay and hover effect.
+- **WHEN** the counters are displayed
+- **THEN** they show 47k "Donors", 154K "Children Saved", 785K "Donated" and 357 "Volunteers"
+- **AND** each value is brand green `#83ba09`
 
-#### Scenario: Volunteers heading
+### Requirement: Causes grid
 
-- **GIVEN** the page is rendered
-- **WHEN** the volunteers section is displayed
-- **THEN** it SHALL show a level-1 heading "Our Volunteers"
-- **AND** it SHALL show a subtitle paragraph
+The system SHALL render six cause cards in a responsive grid, each with an
+image, a linked title, a green progress bar carrying a percentage badge, Raised
+and Goal amounts, and a "Donate Now" pill.
 
-#### Scenario: Volunteer cards
+#### Scenario: Cause card contents
 
-- **GIVEN** the volunteers section is displayed
-- **WHEN** the cards are rendered
-- **THEN** there SHALL be exactly 4 volunteer cards in a row
-- **AND** each card SHALL show a volunteer image
-- **AND** each card SHALL show a volunteer name on hover
-- **AND** hovering over a card SHALL reveal a gradient overlay
+- **WHEN** the causes section is displayed
+- **THEN** exactly 6 cards are rendered
+- **AND** each card shows a progress bar filled with `#83ba09` on an `#e6e6ea` track
+- **AND** each card shows a percentage badge on the bar
+- **AND** each card shows "Raised" and "Goal" amounts and a "Donate Now" pill
 
-### Requirement: Donate / Contact section
+#### Scenario: Card hover overlay
 
-The system SHALL render a donate section with a dark parallax background,
-a heading, a trust information column on the left, and a donation form on
-the right.
+- **WHEN** the user hovers a cause image
+- **THEN** a `#83ba09` overlay fades in at 60 % opacity
 
-#### Scenario: Donate section heading
+### Requirement: Call-to-action band
 
-- **GIVEN** the page is rendered
-- **WHEN** the donate section is displayed
-- **THEN** it SHALL show a level-1 heading "Donate Now"
-- **AND** it SHALL show a subtitle paragraph
+The system SHALL render a parallax photo band between the causes and events
+sections with a centred `h1`, a lead paragraph and a "Join Us Now!" pill.
 
-#### Scenario: Trust information
+#### Scenario: CTA content
 
-- **GIVEN** the donate section is displayed
-- **WHEN** the left column is rendered
-- **THEN** it SHALL show 3 trust items: "Divided Evenly", "Transparency All the
-  Way", and "Trustworthy"
-- **AND** each trust item SHALL have a heading and a description paragraph
+- **WHEN** the band is displayed
+- **THEN** it shows the heading "Become A Volunteer", a lead paragraph and a "Join Us Now!" pill
+- **AND** the background image scrolls at half speed (`data-stellar-background-ratio="0.5"`)
 
-#### Scenario: Donation form
+### Requirement: Events grid
 
-- **GIVEN** the donate section is displayed
-- **WHEN** the form is rendered
-- **THEN** it SHALL contain a project select dropdown ("Project you want to donate")
-- **AND** it SHALL contain a name input ("Enter your name")
-- **AND** it SHALL contain an email input ("Enter email address")
-- **AND** it SHALL contain a donation amount input ("Donation amount (USD)")
-- **AND** it SHALL contain a message textarea
-- **AND** it SHALL contain a "donate" submit button with gradient accent
-- **AND** it SHALL show a "We Accept" payment methods indicator below the form
+The system SHALL render four event cards in a 2 × 2 grid, each with a 40 %-wide
+image, meta lines for time and location with circular icons, and a linked title.
 
-#### Scenario: Form validation
+#### Scenario: Event card contents
 
-- **GIVEN** the donation form is displayed
-- **WHEN** the user submits without filling required fields
-- **THEN** the browser SHALL enforce required-field validation on name, email,
-  and project select
+- **WHEN** the events section is displayed
+- **THEN** exactly 4 cards are rendered
+- **AND** each card shows a date/time line and a location line, each preceded by a circular `#83ba09` icon
+- **AND** hovering the image fades in the green overlay
+
+### Requirement: Testimonials carousel
+
+The system SHALL render a parallax band containing a carousel of four
+testimonials, each a white blockquote card with a round avatar, the author name
+in white and the role in uppercase brand green.
+
+#### Scenario: Testimonial slide contents
+
+- **WHEN** the testimonials band is displayed
+- **THEN** four quotes are available in the carousel
+- **AND** each shows a round avatar, an author name and the role "Volunteer" in `#83ba09`
+- **AND** the quote sits on a white card
+
+### Requirement: Blog grid
+
+The system SHALL render three blog cards in a row, each with a rounded image,
+a date, a linked title, an excerpt and a "Read More" link.
+
+#### Scenario: Blog card contents
+
+- **WHEN** the blog section is displayed
+- **THEN** exactly 3 cards are rendered
+- **AND** each shows a date, a title and an excerpt with a "Read More" link
+- **AND** hovering the image fades in the green overlay
 
 ### Requirement: Footer
 
-The system SHALL render a footer with navigation links, social media icons,
-and a copyright notice linking to Component Dock.
+The system SHALL render a `#f4f4f8` footer with three columns — brand blurb +
+contact details, a "Galery" thumbnail grid, and a "Newsletter" email field with
+a "Subscribe" button — followed by a bordered bottom bar with footer navigation,
+round social buttons and a copyright line.
 
-#### Scenario: Footer content
+#### Scenario: Footer columns
 
-- **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show navigation links (Home, Projects, About, Donate)
-- **AND** it SHALL show social media icons (Facebook, Twitter, Dribbble, Behance)
-- **AND** it SHALL show a copyright line with "Made with" and a heart icon
-- **AND** the copyright SHALL link to https://www.componentdock.com/
+- **THEN** it shows the brand column with an email contact link
+- **AND** it shows the "Galery" thumbnail grid
+- **AND** it shows the "Newsletter" column with an email input and a "Subscribe" button
 
-### Requirement: Dark mode
+#### Scenario: Footer bottom bar
 
-The system SHALL support dark mode via a class-based toggle on the document root.
+- **WHEN** the footer's bottom bar is displayed
+- **THEN** it shows the nav links Home, About, Causes, Events, Blog, Contact
+- **AND** it shows round social buttons whose border turns `#83ba09` on hover
+- **AND** it shows a copyright line that links to https://www.componentdock.com/
 
-#### Scenario: Dark mode toggle
+#### Scenario: Newsletter submission
 
-- **GIVEN** the page is rendered
-- **WHEN** the user activates dark mode
-- **THEN** the `.dark` class SHALL be toggled on `document.documentElement`
-- **AND** component styles SHALL respond to the dark mode state
+- **WHEN** the user submits the newsletter form
+- **THEN** the default submission is prevented and the page does not reload
+
+### Requirement: Theme tokens
+
+The app SHALL express the measured design as Tailwind theme tokens — brand
+`#83ba09`, ink `#23262a`, body `#5f646b`, surface `#f4f4f8`, hairline `#e6e6ea`
+— and use them through utilities, never hard-coded hex values scattered across
+components.
+
+#### Scenario: Tokens resolve to the sheet's values
+
+- **WHEN** the app's `index.css` `@theme` block is inspected
+- **THEN** it declares the five values above
+- **AND** no component paints a chromatic colour outside the measured palette
 
 ### Requirement: No source-site references in the app
 
@@ -254,20 +278,19 @@ Dock (`https://www.componentdock.com/`) instead.
 
 ## Verification checklist
 
-- [ ] All 7 sections rendered in correct order matching the ColorLib preview
-- [ ] Hero fills viewport height with dark overlay
-- [ ] CTA strip has gradient background (pink → orange → yellow)
-- [ ] Projects: 3 cards, hover overlay with gradient
-- [ ] About: 50/50 split, dark background, image + text
-- [ ] Volunteers: 4 cards, hover overlay with gradient
-- [ ] Donate: dark parallax background, form with all fields, trust items
-- [ ] Footer: links, social icons, Component Dock link
-- [x] Sticky navbar with "Donate Now" CTA
+- [ ] All 10 blocks rendered in the live DOM's order (header, hero carousel, about, counters, causes, CTA, events, testimonials, blog, footer)
+- [ ] Hero occupies 100 vh with two slides and working dot indicators
+- [ ] Counters: 47k / 154K / 785K / 357 with their labels, values in `#83ba09`
+- [ ] Causes: 6 cards, green progress bars on `#e6e6ea` tracks, percentage badges, Raised/Goal, "Donate Now" pills
+- [ ] CTA + testimonials bands use the parallax photo backgrounds
+- [ ] Events: 4 cards with clock/pin meta icons and the green hover overlay
+- [ ] Testimonials: 4 white quote cards, round avatars, role in uppercase `#83ba09`
+- [ ] Blog: 3 cards with date, title, excerpt, "Read More"
+- [ ] Footer: three columns, "Galery" grid, newsletter form (submit prevented), bottom nav, round social buttons, Component Dock link
+- [ ] Brand green `#83ba09` is the app's lead colour (the shipped app currently paints the wrong pink palette — restyle)
 - [ ] All interactive elements accessible (keyboard, screen reader)
-- [ ] Responsive layout (mobile-first)
-- [ ] Dark mode toggle functional
+- [ ] Responsive layout (mobile-first); nav collapses to the toggle at the sheet's breakpoint
 - [x] No ColorLib references in app code (only in spec + TEMPLATES.md)
 - [x] Footer links to https://www.componentdock.com/
 - [ ] 100% test coverage on all section components
 - [ ] Placeholder images use seeded picsum (`picsum.photos/seed/givingheart-<n>/`)
-- [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

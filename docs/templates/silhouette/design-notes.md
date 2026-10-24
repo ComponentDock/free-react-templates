@@ -1,7 +1,7 @@
 # Silhouette — Design Notes
 
 Reference: **Fashion 2** — `https://colorlib.com/wp/template/fashion-2/`  
-Live preview: `https://preview.colorlib.com/theme/fashion-2/`  
+Live preview: `https://preview.colorlib.com/theme/fashion/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-free-template.jpg  
 Shipped: https://silhouette.free.componentdock.com
 
@@ -82,3 +82,25 @@ The template SHALL display a 3-column footer with About text, Quick Links, and C
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/silhouette/public/CNAME` = `silhouette.free.componentdock.com`
   and the package `homepage` = `https://silhouette.free.componentdock.com`.
+
+## Token re-read (2026-10-24s) — REFERENCE RESOLVED
+
+- The demo is live: `https://preview.colorlib.com/theme/fashion/` (HTTP 200,
+  26,584 B; sheet `css/style.css` 29,430 B, sha256 `75499322b02a2b2d…`). The
+  `theme/fashion-2/`, `theme/fashion2/` and `theme/bootstrap/fashion-2/` paths
+  all 404 — the entry's screenshot (`fashion-free-template.jpg`) renders the
+  coral design at `theme/fashion/`.
+- **Accent is coral `#ff6363`** (30 declarations — `a`, `.text-primary`, nav
+  active, mobile menu, dropdown active), hover `#ff7777` (2, `.btn-primary:hover`).
+  Ink `#000000`; body muted `#a09b9b`; hairlines `#efefef` (`.lines-wrap` column
+  rules); white surface.
+- Lato body 14 px + Playfair Display headings, h1 at 100 px desktop.
+- The green `#6DAB3C` / lavender `#B97EBB` / charcoal `#1a1a2e` palette above is
+  **invented** — 0 occurrences in the sheet. `apps/silhouette` paints it → app
+  debt.
+- Structure: nav (`Fashion.` wordmark, Home, Dropdown, Menu Three, Inner Page,
+  Contact Us) → hero (three stacked h1 lines, "1 of 0" counter) → Collections
+  carousel (Minimal $29, Collecta $21, Nine8 $38, Hut $49) → "A Fashion Boutique"
+  band → Testimonials (3) → Blog Posts (3) → 3-column footer. **No form or input
+  exists on the page** — the newsletter in the spec is a documented addition.
+- Spec: `openspec/specs/template-silhouette/spec.md`.

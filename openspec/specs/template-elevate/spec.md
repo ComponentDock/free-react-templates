@@ -5,10 +5,32 @@
 A Coaching / Consulting template with navbar navigation, hero slider, about, services, statistics counters and pricing plans sections. Recreation of the ColorLib "Life Coaching" template for a coaching/consulting landing page.
 
 - **Source template:** [Life Coaching](https://colorlib.com/wp/template/life-coaching/)
-- **Preview URL:** https://preview.colorlib.com/theme/life-coaching/ (404 — unreachable; fallback to screenshot analysis)
+- **Preview URL:** https://preview.colorlib.com/theme/lifecoaching/ (HTTP 200, 37,928 B; theme stylesheet `css/style.css` 80,582 B, sha256 `c8af002e5c36f4ce…`) — the hyphenated path `theme/life-coaching/` returns 404; the demo directory is the hyphen-stripped slug, as the preview host's catalog map records it.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoaching-free-template.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Coaching / Consulting landing page
+
+## Design tokens
+
+Measured from the live sheet, not sampled off the screenshot (re-read
+2026-10-24s; the earlier prep carried no token section at all).
+
+| Token | Value | Evidence in the reference |
+| --- | --- | --- |
+| **Brand lime — the design's lead** | `#c5cf31` | 34 declarations — `a`, `a:hover, a:focus`, `.social-media p a:hover`, `.heading-section .subheading`, `.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before` (the active nav block), `.btn.btn-primary` |
+| **Secondary sky blue** | `#8fd0d2` | 8 declarations — `.bg-secondary`, `.services .icon`, `.services-2 .icon`, `.story-wrap .text h4 span`, `.staff .text .position` |
+| Surface | `#ffffff` | 70 declarations — `:root{--white}` + section backgrounds |
+| Tinted band | `#f8f9fa` (+ `.bg-light`) | intro/services bands |
+| Ink | `#212529` body, `rgba(0, 0, 0, 0.8)` headings | `body` rule; `h1…h4` rule |
+| Dark band | `#333333` | `.footer .aside-stretch-right` |
+| Muted | `#6c757d`, `#b3b3b3` | `:root{--gray}`; `.owl-dots .owl-dot.active` |
+| Typeface | `"Poppins", Arial, sans-serif` (4 rules) | sheet `font-family` declarations; body 14 px / 1.8 |
+| Radii | `50%` (icon + avatar circles, 17 decls), `4px` (buttons/inputs, 7), `5px` (cards, 4) | sheet `border-radius` census |
+
+Screenshot agreement: lime nav tab on "HOME", lime `MAKE AN APPOINTMENT`
+button, lime eyebrow labels, and sky-blue circular service icons. Do not swap
+the two: lime is the action/hover colour, sky blue is the icon/eyebrow surface
+colour.
 
 ## Requirements
 

@@ -1,7 +1,7 @@
 # Fotoroll — Design Notes
 
 Reference: **Photography 2** — `https://colorlib.com/wp/template/photography-2/`  
-Live preview: `https://preview.colorlib.com/theme/photography-2/`  
+Live preview: `https://preview.colorlib.com/theme/photography2/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/photography-2-free-template-1.jpg  
 Shipped: https://fotoroll.free.componentdock.com
 
@@ -74,3 +74,20 @@ Bands marked *anchors only* have no dedicated requirement block in the spec; hol
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/fotoroll/public/CNAME` = `fotoroll.free.componentdock.com`
   and the package `homepage` = `https://fotoroll.free.componentdock.com`.
+
+## Token re-read (2026-10-24s) — live-sheet audit
+
+- **Preview URL corrected:** the demo is `https://preview.colorlib.com/theme/photography2/`
+  (HTTP 200, 6,928 B); the sheet is `style.css` (20,293 B, sha256
+  `bd3253ae7d70a330…`). `theme/photography-2/` 404s.
+- **Accent is spring green `#30df7a`** (5 declarations: nav hover/current,
+  `.header-email a`, post-meta, footer nav hover, footer social hover). The mint
+  `#4ecdc4` used in this file appears nowhere in the sheet.
+- Typeface is **Work Sans** (`@import` …Work+Sans:300,400,500,700), not
+  Montserrat. Body ink `#191919`; greys `#a6a6a6` / `#595959` / `#bfbfbf`;
+  hairlines `#ebebeb`; radii 10 px cards, 50% slider arrows.
+- No filled buttons anywhere: CTAs are uppercase underlined links
+  ("VIEW PROJECTS", "SHOW THUMBNAILS").
+- Inner pages are live and are the reference for the compressed one-pager:
+  `portfolio.html` (200, 10,735 B), `blog.html` (200, 9,004 B).
+- Spec: `openspec/specs/template-fotoroll/spec.md` §Design tokens.

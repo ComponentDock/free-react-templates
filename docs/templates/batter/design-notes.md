@@ -86,3 +86,20 @@ The template SHALL render a dark-background footer widget section with three con
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
 - **Deploy identity.** `apps/batter/public/CNAME` = `batter.free.componentdock.com`
   and the package `homepage` = `https://batter.free.componentdock.com`.
+
+## Token re-read (2026-10-24s) — live-sheet audit
+
+The palette table above records the **app's** orange ramp, not the design's.
+Re-measured from `theme/go-crepe/css/main.css` (37,031 B, sha256 `aed66c98895a…`):
+
+- **Lead surface = a gradient**, `linear-gradient(135deg, #49e3ce 0%, #9920ed 100%)`
+  — painted on `.banner-area`, `.story-area`, `.story-area-2`,
+  `.footer-widget-area` and the icon sheens (12 declarations). The banner is
+  teal→purple, never orange.
+- Button brand `#9820ec` (18 decls, `.genric-btn.primary`), teal stop `#49e3ce`
+  (8), purple stop `#9920ed` (4), indigo ink accent `#3c408f` (3: `b, i, sup…`,
+  `.story-area .primary-btn span`).
+- Typeface Poppins; buttons are 20 px pills (`.primary-btn`), generic buttons
+  3 px (`border-radius: 3px`).
+- The `--color-primary-*` ramp documented above is app debt: it is not in the
+  sheet. Spec: `openspec/specs/template-batter/spec.md` §Design tokens.

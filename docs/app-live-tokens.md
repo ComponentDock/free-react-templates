@@ -174,4 +174,18 @@ Corpus: **1703** shipped apps (`apps/<name>/src`).
 * `--no-scaffold`, `--scaffold-min N` and `--no-fw-shade` are the
   A/B controls for the corpus-level scaffold and library-state guards;
   `--show BUCKET` prints any bucket.
+* **Prep side of the 10 rows is CLOSED (2026-10-24s).** The six specs
+  behind those rows were re-read against their own live sheets and now
+  carry the missing design-surface colour: `batter` (`#49e3ce`,
+  `#9920ed`, `#3c408f` + the `135deg` banner gradient), `elevate`
+  (`#c5cf31`, `#8fd0d2` — it had no token section at all), `quarters`
+  (`#1f6f8b`, `#f82a7e`/`#752a90` gradient; the earlier tan palette
+  occurs 0× in the sheet), `fotoroll` (`#30df7a`), `givingheart`
+  (`#83ba09`) and `silhouette` (`#ff6363`). Two of the six had the
+  **wrong demo** recorded (`givingheart` measured `theme/charity-2/`,
+  the other charity page; `silhouette` declared the preview dead when
+  `theme/fashion/` serves it), and `fotoroll`/`silhouette` carried
+  screenshot-sampled tokens that no rule in the sheet paints. The rows
+  stay flagged here until the apps are repainted — that half is
+  implementer work, not prep.
 

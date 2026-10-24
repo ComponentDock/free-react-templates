@@ -1,5 +1,13 @@
 # Fotoroll — Implementation Tasks
 
+## Token re-read (2026-10-24s) — superseded values below
+
+This task list was written before the live sheet was re-measured. Where it names
+design colours or fonts, use `openspec/specs/template-fotoroll/spec.md`
+§Design tokens and `design-notes.md` §Token re-read instead — the summary:
+
+lead **spring green `#30df7a`** (5 decls — hover states only); typeface **Work Sans**; ink `#191919`; the mint `#4ecdc4` and Montserrat are both absent from the sheet.
+
 Source design: **Photography 2** (`https://colorlib.com/wp/template/photography-2/`) → recreation name **fotoroll**. Shipped at https://fotoroll.free.componentdock.com.
 
 Scope: Fotoroll is a photography portfolio template with a navbar, hero, portfolio, blog and footer. It recreates the ColorLib **Photography 2** design (https://colorlib.com/wp/template/photography-2/, preview: https://preview.colorlib.com/theme/photography2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
