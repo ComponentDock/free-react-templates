@@ -1,10 +1,12 @@
-# Design Notes & Task Outline: Unioncorp
+# Design Notes & Task Outline: Meridia
 
 ## Reference
 
 - **Source**: ColorLib Unioncorp (`https://colorlib.com/wp/template/unioncorp/`)
 - **Preview URL**: `https://preview.colorlib.com/theme/unioncorp/`
-- **Assigned Name**: `unioncorp` (Workspace: `@free-react-templates/unioncorp`)
+- **Assigned Name**: `meridia` (Workspace: `@free-react-templates/meridia`)
+- **Rename**: shipped until 2026-10-24 as `apps/unioncorp` — renamed to satisfy
+  AGENTS.md rule 5 (the source design name must never be the app name).
 
 ## Structure Order
 

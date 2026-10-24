@@ -1,8 +1,8 @@
-# Template: Unioncorp (Financial & Business Consulting)
+# Template: Meridia (Financial & Business Consulting)
 
 ## Purpose
 
-A Financial & Business Consulting template with hero banner, services grid, statistics & counters and footer attribution sections. Recreation of ColorLib "Unioncorp" (`https://colorlib.com/wp/template/unioncorp/`, preview: `https://preview.colorlib.com/theme/unioncorp/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`@free-react-templates/unioncorp`).
+A Financial & Business Consulting template with hero banner, services grid, statistics & counters and footer attribution sections. Recreation of ColorLib "Unioncorp" (`https://colorlib.com/wp/template/unioncorp/`, preview: `https://preview.colorlib.com/theme/unioncorp/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`@free-react-templates/meridia`).
 
 ## Design Tokens & Aesthetic
 
@@ -16,9 +16,9 @@ A Financial & Business Consulting template with hero banner, services grid, stat
 
 ## Requirements
 
-### Feature: Unioncorp template behaviour
+### Feature: Meridia template behaviour
 
-#### Scenario: Unioncorp
+#### Scenario: Meridia
 
 1. **Navbar**: Top bar with contact info (phone, email, social links) and main navigation menu (Home, About, Services, Work, Pricing, Blog, Contact, Get Started CTA).
 2. **Hero Section**: Full-screen banner with background image, dark navy overlay, headline ("Build Your Financial Plan With Our Specialists"), subtext, and action buttons ("Get Started", "Learn More").
@@ -37,7 +37,7 @@ A Financial & Business Consulting template with hero banner, services grid, stat
 ### Feature: Navigation
 
 - **Scenario**: User views navigation bar and clicks items
-  - Given the user is on the Unioncorp home page
+  - Given the user is on the Meridia home page
   - When the user views the navbar
   - Then the brand logo, nav links (About, Services, Work, Pricing, Blog, Contact), and CTA button are visible
   - And clicking a nav link scrolls or navigates to the respective section

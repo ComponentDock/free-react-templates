@@ -36,7 +36,7 @@ export function AboutOverview({ className }: AboutOverviewProps) {
           {/* Left — heading + description */}
           <div className="flex flex-col justify-center">
             <span className="mb-2 text-sm font-semibold uppercase text-primary-400">
-              About Union Corporation
+              About Meridia
             </span>
             <h2 id="about-heading" className="mb-4 text-2xl font-bold text-ink sm:text-3xl">
               More than 40M+ Trusted Our Financial &amp; Consultation Institution

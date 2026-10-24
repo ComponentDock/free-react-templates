@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Unioncorp brand palette — from the ColorLib Unioncorp preview:
+  /* Meridia brand palette — measured from the reference sheets:
      #4f86f9 primary blue, #052c43 deep navy, #3bd381 green accent,
      Poppins font family, light backgrounds #f9faff / #f8f9fa. */
   --color-primary-50: #e8f0ff;

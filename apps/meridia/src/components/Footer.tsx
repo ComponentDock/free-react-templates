@@ -43,7 +43,7 @@ export function Footer({ className }: FooterProps) {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="mb-3 text-lg font-bold">Unioncorp.</h3>
+            <h3 className="mb-3 text-lg font-bold">Meridia.</h3>
             <p className="mb-4 text-xs leading-relaxed text-white/60">
               A small river named Duden flows by their place and supplies it with the necessary
               regelialia.
@@ -120,8 +120,8 @@ export function Footer({ className }: FooterProps) {
               </li>
               <li className="flex items-center gap-2 text-xs text-white/60">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <a href="mailto:info@unioncorp.com" className="hover:text-white">
-                  info@unioncorp.com
+                <a href="mailto:info@meridia.com" className="hover:text-white">
+                  info@meridia.com
                 </a>
               </li>
             </ul>
@@ -132,7 +132,7 @@ export function Footer({ className }: FooterProps) {
       {/* Bottom bar */}
       <div className="mt-10 border-t border-white/10">
         <div className="container mx-auto flex flex-wrap items-center justify-between px-4 py-4 text-xs text-white/50">
-          <p>© {new Date().getFullYear()} Unioncorp. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Meridia. All rights reserved.</p>
           <p>
             Made with{' '}
             <a href="https://www.componentdock.com/" className="underline hover:text-white">

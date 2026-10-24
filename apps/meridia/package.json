@@ -1,7 +1,7 @@
 {
-  "name": "@free-react-templates/unioncorp",
+  "name": "@free-react-templates/meridia",
   "private": true,
-  "homepage": "https://unioncorp.free.componentdock.com",
+  "homepage": "https://meridia.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

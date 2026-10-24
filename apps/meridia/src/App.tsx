@@ -15,7 +15,7 @@ import { Footer } from './components/Footer'
 
 export default function App() {
   useEffect(() => {
-    document.title = 'Unioncorp — Finance & Consultation Template'
+    document.title = 'Meridia — Finance & Consultation Template'
   }, [])
 
   return (

@@ -6,7 +6,7 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('renders brand name and tagline', () => {
     render(<Navbar />)
-    expect(screen.getByText('Unioncorp.')).toBeInTheDocument()
+    expect(screen.getByText('Meridia.')).toBeInTheDocument()
     expect(screen.getByText('Finance & Consultation')).toBeInTheDocument()
   })
 

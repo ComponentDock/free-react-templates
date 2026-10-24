@@ -5,7 +5,7 @@ import App from './App'
 describe('App', () => {
   it('renders all major sections', () => {
     render(<App />)
-    expect(screen.getAllByText('Unioncorp.').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Meridia.').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText('Finance & Consultation')).toBeInTheDocument()
     expect(screen.getByText('Build Your Financial Plan With Our Specialists')).toBeInTheDocument()
     expect(screen.getByText('Our Exclusive Services We Offer For You')).toBeInTheDocument()
@@ -16,7 +16,7 @@ describe('App', () => {
 
   it('sets document title', () => {
     render(<App />)
-    expect(document.title).toBe('Unioncorp — Finance & Consultation Template')
+    expect(document.title).toBe('Meridia — Finance & Consultation Template')
   })
 
   it('renders Component Dock link in footer', () => {

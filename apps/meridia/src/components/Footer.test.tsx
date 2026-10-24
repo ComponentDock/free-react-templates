@@ -5,7 +5,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders brand name', () => {
     render(<Footer />)
-    expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('Unioncorp.')
+    expect(screen.getByRole('heading', { level: 3 })).toHaveTextContent('Meridia.')
   })
 
   it('renders all service links', () => {
@@ -37,7 +37,7 @@ describe('Footer', () => {
     render(<Footer />)
     expect(screen.getByText('San Francisco, California, USA')).toBeInTheDocument()
     expect(screen.getByText('+2 392 3929 210')).toBeInTheDocument()
-    expect(screen.getByText('info@unioncorp.com')).toBeInTheDocument()
+    expect(screen.getByText('info@meridia.com')).toBeInTheDocument()
   })
 
   it('renders Component Dock attribution link', () => {
