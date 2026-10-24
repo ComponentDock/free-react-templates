@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>), instead of Tailwind v4's
+   default prefers-color-scheme media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design tokens measured from the reference stylesheet:
+     - brand orange #ff3414: solid buttons, links, icon tints, accents
+     - brand soft #fd8e5e: the gradient partner of the brand orange
+     - navy #001d38: hero wash, dark bands, counter and footer headings
+     - mist #f9f9ff: light panel ground (testimonial wrapper)
+     - service #f5fbff: the service band ground
+     - body #596672: paragraph ink
+     - muted #727272: section-title subcopy
+     - line #eaeaea: top-bar hairline
+     - buttons are square (0 radius), uppercase 14px labels with 3px tracking */
+  --color-brand: #ff3414;
+  --color-primary-50: #fff1ee;
+  --color-primary-100: #ffe0d9;
+  --color-primary-200: #ffc0b1;
+  --color-primary-300: #ff9d84;
+  --color-primary-400: #fd8e5e;
+  --color-primary-500: #ff5e13;
+  --color-primary-600: #ff3414;
+  --color-primary-700: #e02b10;
+  --color-primary-800: #c0250e;
+  --color-primary-900: #9c1e0b;
+  --color-navy: #001d38;
+  --color-navy-soft: #0b2a48;
+  --color-mist: #f9f9ff;
+  --color-service: #f5fbff;
+  --color-body: #596672;
+  --color-muted: #727272;
+  --color-line: #eaeaea;
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--color-body);
+    background-color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-navy);
+  }
+}
