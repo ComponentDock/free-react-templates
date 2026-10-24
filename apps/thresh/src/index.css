@@ -5,7 +5,7 @@
 @theme {
   /* Thresh brand palette — dark page (#343434) with yellow accent
      (#f6c523) for chips, clear ×, checked boxes, and selected/hover
-     row text. Token source: ColorLib Multiselect 09 CSS token tail. */
+     row text. Token source: the reference stylesheet token tail. */
   --color-page: #343434;
   --color-accent: #f6c523;
   --color-panel: #000000;

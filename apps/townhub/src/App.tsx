@@ -9,7 +9,7 @@ import { Subscribe } from './components/Subscribe'
 import { Testimonial } from './components/Testimonial'
 
 /* TownHub — city directory & listing one-pager. Section order mirrors the
-   recreated ColorLib CityListing design 1:1: transparent navbar over hero
+   recreated from the reference design 1:1: transparent navbar over hero
    with search bar, popular locations, how-it-works dark band, featured
    categories, testimonials, newsletter subscribe, blog posts, dark footer. */
 export function App() {

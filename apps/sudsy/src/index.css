@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — recreated from the ColorLib "Carwash" design
+  /* Brand palette — measured from the reference design
      (css/main.css): primary blue #007AFF, dark navy #010A44/#072366,
      accent green #70D76A, light section bg #EEF6FF. */
   --color-brand: #007aff;

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Toothzen brand palette — recreated from the ColorLib "Dentamax" design */
+  /* Toothzen brand palette — measured from the reference design */
   --color-tooth-blue: #007bff;
   --color-tooth-dark-blue: #0f4883;
   --color-tooth-teal: #65d8ea;

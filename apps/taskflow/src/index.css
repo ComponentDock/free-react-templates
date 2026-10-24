@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* TaskFlow brand palette — orange-red #F75940 from ColorLib Work design */
+  /* TaskFlow brand palette — orange-red #F75940 measured from the reference design */
   --color-brand-50: #fef2f0;
   --color-brand-100: #fde1dc;
   --color-brand-200: #fbc3b9;

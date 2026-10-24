@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Swiftly brand palette — recreated from ColorLib Easy design tokens:
+  /* Swiftly brand palette — measured from the reference design tokens:
      brand coral #ff6363, body bg #f2f5f9, text #000839. */
   --color-brand: #ff6363;
   --color-brand-dark: #ff7777;

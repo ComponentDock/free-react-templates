@@ -3,8 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Travenzo brand palette — dark navy card, green CTA, from the
-     ColorLib Search 15 travel booking form. */
+  /* Travenzo brand palette — dark navy card, green CTA, measured from the
+     reference travel booking-form stylesheet. */
   --color-travenzo-card: #1a2238;
   --color-travenzo-card-light: #243049;
   --color-travenzo-green: #28a745;
