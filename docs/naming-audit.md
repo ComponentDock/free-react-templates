@@ -13,12 +13,9 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Massive → Appmint
+## State after Medico → Sanara
 
-> **In flight:** `Medico` → `Sanara` (claimed; renames in the table below
-> disappear as each PR merges).
-
-5 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
+4 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
 
@@ -34,11 +31,10 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
-`massive` → `appmint` (#1838).
+`massive` → `appmint` (#1838), `medico` → `sanara` (#1839).
 
 | app             | source design |
 | --------------- | ------------- |
-| apps/medico     | Medico        |
 | apps/mosh       | Mosh          |
 | apps/pawpal     | PawPal        |
 | apps/petsitting | Petsitting    |

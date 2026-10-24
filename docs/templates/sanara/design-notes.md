@@ -1,17 +1,18 @@
-# Medico — Design Notes
+# Sanara — Design Notes
 
-Reference: **Medico** — `https://colorlib.com/wp/template/medico/`  
+Recreation name: **Sanara** (`apps/sanara`, `@free-react-templates/sanara`)  
+Reference: **ColorLib "Medico"** — `https://colorlib.com/wp/template/medico/`  
 Live preview: `https://preview.colorlib.com/theme/medico/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/medic-free-template.jpg  
-Shipped: https://medico.free.componentdock.com
+Shipped: https://sanara.free.componentdock.com
 
-Medico is a single-page medical-clinic template in the free-react-templates monorepo. It is an original React recreation of the ColorLib "Medico" entry in TEMPLATES.md (line 448, source: https://colorlib.com/wp/template/medico/), built with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Sanara is a single-page medical-clinic template in the free-react-templates monorepo. It is an original React recreation of the ColorLib "Medico" entry in TEMPLATES.md (line 448, source: https://colorlib.com/wp/template/medico/), built with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Playfair Display**, **Playfair Display:wght@400;500;600;700**, **Roboto**
 
-## Design tokens (`apps/medico/src/index.css` `@theme`)
+## Design tokens (`apps/sanara/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -97,8 +98,8 @@ The system SHALL render a light footer with about text, link columns, a newslett
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/medico/` may name the source designer,
+- **Provenance ban.** No file under `apps/sanara/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/medico/public/CNAME` = `medico.free.componentdock.com`
-  and the package `homepage` = `https://medico.free.componentdock.com`.
+- **Deploy identity.** `apps/sanara/public/CNAME` = `sanara.free.componentdock.com`
+  and the package `homepage` = `https://sanara.free.componentdock.com`.

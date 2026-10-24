@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-/* Medico brand palette — measured from the reference design live DOM +
+/* Sanara brand palette — measured from the reference design live DOM +
    stylesheet:
    primary blue gradient #649bff → #0070fa (buttons, reservation band),
    hover blue #0065e1, icon circles #f0e9ff (features) / #f2f6f8
@@ -8,7 +8,7 @@
    #f3f6f7, headings #242429. Headings Playfair Display, body Roboto. */
 @theme {
   /* Blue scale so shared Button/ButtonLink `primary` variants resolve to
-     the Medico blue family (600 = gradient-ish base blue). */
+     the Sanara blue family (600 = gradient-ish base blue). */
   --color-primary-50: #eef6ff;
   --color-primary-100: #d9ecff;
   --color-primary-200: #b8daff;

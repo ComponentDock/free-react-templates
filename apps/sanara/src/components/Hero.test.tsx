@@ -17,6 +17,6 @@ describe('Hero', () => {
     render(<Hero />)
 
     const image = screen.getByRole('img', { name: heroImageAlt })
-    expect(image).toHaveAttribute('src', expect.stringContaining('picsum.photos/seed/medico-hero'))
+    expect(image).toHaveAttribute('src', expect.stringContaining('picsum.photos/seed/sanara-hero'))
   })
 })

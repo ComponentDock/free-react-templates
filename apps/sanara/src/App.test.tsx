@@ -16,7 +16,7 @@ import {
 describe('App', () => {
   it('sets the document title', () => {
     render(<App />)
-    expect(document.title).toBe('Medico — Medical / Health Care Template')
+    expect(document.title).toBe('Sanara — Medical / Health Care Template')
   })
 
   it('composes all sections in order', () => {

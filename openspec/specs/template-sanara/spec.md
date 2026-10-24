@@ -1,8 +1,8 @@
-# Template: Medico (Medical / Health Care Template)
+# Template: Sanara (Medical / Health Care Template)
 
 ## Purpose
 
-Medico is a single-page medical-clinic template in the
+Sanara is a single-page medical-clinic template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib "Medico" entry in TEMPLATES.md (line 448, source:
 https://colorlib.com/wp/template/medico/), built with the monorepo stack:
@@ -28,28 +28,33 @@ light footer (`#f3f6f7`) with about, Quick Links, Explore, Resources and
 Newsletter widgets plus a copyright bar. The brand accent is a blue
 gradient `linear-gradient(to right, #649bff 0%, #0070fa 100%)` with a
 solid hover blue `#0065e1`; headings use **Playfair Display** (serif),
-body uses **Roboto**. Medico recreates that structure section-for-section
+body uses **Roboto**. Sanara recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
 
 ## Design reference (replication findings)
 
+- **Recreation name:** **Sanara** (`apps/sanara`, package
+  `@free-react-templates/sanara`, https://sanara.free.componentdock.com) — a
+  new, original name that differs from the source (rule 5). The app first
+  shipped as `apps/medico`; the folder, package and host were renamed to
+  Sanara so nothing but provenance carries the source name.
 - **Original:** ColorLib "Medico" — Medical HTML Template
   (source: https://colorlib.com/wp/template/medico/; TEMPLATES.md line
   448).
 - **Live preview REACHABLE:** `https://preview.colorlib.com/theme/medico/`
-  (HTTP 200, title "medical"). DOM fetched and analyzed (`/tmp/medico.html`,
+  (HTTP 200, title "medical"). DOM fetched and analyzed (`/tmp/sanara.html`,
   32 KB); stylesheet `https://preview.colorlib.com/theme/medico/css/style.css`
   (156 KB) extracted for tokens; screenshot (`medic-free-template.jpg`,
   1200×946, TEMPLATES.md) reviewed visually in the browser. All references
   verified live. NOTE: an earlier prep draft of this spec referenced the
   ColorLib "Docmed" template by mistake — Docmed is a SEPARATE ColorLib
   template (own TEMPLATES.md line 376, preview
-  https://preview.colorlib.com/theme/docmed/); the live Medico DOM is the
+  https://preview.colorlib.com/theme/docmed/); the live Sanara DOM is the
   source of truth here.
 - **Section order (1:1 from the preview DOM):**
   1. Header `header` → `nav.navbar` (white): `div.logo` (image → text
-     wordmark "Medico"), centered `ul.navbar-nav.main-menu-item` — Home,
+     wordmark "Sanara"), centered `ul.navbar-nav.main-menu-item` — Home,
      about, Doctors, Pages (dropdown: services, depertments, Elements),
      blog (dropdown: blog, Single blog), Contact — and on the right a
      `a.btn_2.d-none.d-lg-block` "HOT LINE- 09856" callout plus
@@ -133,7 +138,7 @@ assets copied).
   - Icon circles 50px, radius 50%; card shadow none (bordered cards);
     section padding `140px 0`; hero height 935px.
 - **Visual design (screenshot, 1200×946):** clean medical one-pager in
-  whites and light blues. Header: "Medico" wordmark with a blue medical
+  whites and light blues. Header: "Sanara" wordmark with a blue medical
   cross, dark-gray nav links, solid blue "HOT LINE: 09856" button.
   Hero: left column with small uppercase "We Are Here For Your Care",
   large dark serif "Best Care & Better Doctor", lorem paragraph and a
@@ -143,18 +148,18 @@ assets copied).
   the fold (from the live DOM): About, services/departments cards,
   doctors grid, blue reservation band, blog, light footer.
 - **Recreation decisions:** photos/illustrations → seeded picsum
-  placeholders (`picsum.photos/seed/medico-<n>/<w>/<h>`: hero 600×600,
+  placeholders (`picsum.photos/seed/sanara-<n>/<w>/<h>`: hero 600×600,
   about 570×500, doctors 360×420, blog 570×420); the hero illustration →
   placeholder photo; icons → lucide-react (Stethoscope, Ambulance,
   HeartPulse, Activity, Hospital, Syringe, Pill, Phone, Mail, Calendar,
   Menu, X, ChevronDown, User, Clock, ArrowRight; brand icons
   LinkedIn/Facebook/Twitter/Skype/Instagram as inline SVG — lucide
   removed brand icons); fonts → Google Fonts `<link>` (Playfair Display
-  400/500/600/700 + Roboto 400/500); logo → text wordmark "Medico" with a
+  400/500/600/700 + Roboto 400/500); logo → text wordmark "Sanara" with a
   blue cross icon; source typos fixed ("Depertment" → "Departments",
   "Qualfied" → "Qualified", "CHeart" → "Cardiac"); no assets copied.
 
-Medico lives in `apps/medico` and uses shared components from
+Sanara lives in `apps/sanara` and uses shared components from
 `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -176,9 +181,9 @@ nav menu, a hotline callout and a gradient appointment button.
 
 #### Scenario: Header content
 
-- **GIVEN** the Medico page is rendered
+- **GIVEN** the Sanara page is rendered
 - **WHEN** the header is displayed
-- **THEN** it SHALL show the logo wordmark "Medico" on the left
+- **THEN** it SHALL show the logo wordmark "Sanara" on the left
 - **AND** it SHALL show the nav links Home, About, Doctors, Pages, Blog
   and Contact
 - **AND** it SHALL show a "HOT LINE- 09856" callout and a "Make an
@@ -198,7 +203,7 @@ paragraph, a gradient CTA button and an illustration.
 
 #### Scenario: Hero content
 
-- **GIVEN** the Medico page is rendered
+- **GIVEN** the Sanara page is rendered
 - **WHEN** the hero is displayed
 - **THEN** it SHALL show the eyebrow "We are here for your care"
 - **AND** it SHALL show the headline "Best Care & Better Doctor" in
@@ -300,7 +305,7 @@ newsletter form and a copyright bar.
 #### Scenario: Footer widgets
 
 - **GIVEN** the footer is displayed
-- **THEN** it SHALL show the "Medico" wordmark with an about paragraph
+- **THEN** it SHALL show the "Sanara" wordmark with an about paragraph
 - **AND** it SHALL show the link columns "Quick Links", "Explore" and
   "Resources" with their links
 - **AND** it SHALL show a "Newsletter" widget with an email input and a
@@ -321,12 +326,12 @@ landmark and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Medico app is rendered
+- **GIVEN** the Sanara app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the header in the banner landmark, all
   sections in the main landmark, and the footer in the contentinfo
   landmark
-- **AND** the document title SHALL be "Medico — Medical / Health Care
+- **AND** the document title SHALL be "Sanara — Medical / Health Care
   Template"
 
 ### Requirement: Component Dock attribution
@@ -347,7 +352,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/medico/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/sanara/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -356,13 +361,13 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/medico/` is inspected
+- **WHEN** every non-test file under `apps/sanara/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
 ## Verification checklist
 
-- [ ] `npm run spec:validate` passes for `template-medico`.
+- [ ] `npm run spec:validate` passes for `template-sanara`.
 - [ ] App renders all sections 1:1 in the order above (header → hero →
       about → services → departments → doctors → reservation → blog →
       footer).
@@ -370,7 +375,7 @@ Dock (`https://www.componentdock.com/`) instead.
       hover `#0065e1`, icon circles `#f0e9ff`/`#f2f6f8`, card border
       `#f2f6f8`, light bg `#f9f9ff`, footer `#f3f6f7`, headings
       `#242429`; Playfair Display headings + Roboto body.
-- [x] Header: white bar, "Medico" wordmark, nav (Home, About, Doctors,
+- [x] Header: white bar, "Sanara" wordmark, nav (Home, About, Doctors,
       Pages, Blog, Contact), "HOT LINE- 09856" callout, gradient "Make
       an appointment" button; mobile burger opens the menu panel.
 - [x] Hero: 935px-tall banner, eyebrow "We are here for your care",
@@ -394,16 +399,16 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Fonts (Playfair Display + Roboto) loaded via Google Fonts `<link>`;
       no font or image assets copied from the original.
 - [ ] All images are seeded picsum placeholders
-      (`picsum.photos/seed/medico-<n>/<w>/<h>`); logo recreated as text
+      (`picsum.photos/seed/sanara-<n>/<w>/<h>`); logo recreated as text
       wordmark; brand icons (Facebook/Twitter/Skype/Instagram) as inline
       SVG.
 - [ ] `vite.config.ts` registers `injectUiSource()` (see conventions).
-- [x] 100% Vitest coverage on `apps/medico` (lines/functions/branches/
+- [x] 100% Vitest coverage on `apps/sanara` (lines/functions/branches/
       statements).
 - [ ] PR description includes: source template (ColorLib "Medico"),
       preview URL (https://preview.colorlib.com/theme/medico/ —
-      reachable), design tokens used, what differs (name kept from
-      checklist, placeholder images, text logo, Google-font
+      reachable), design tokens used, what differs (new name Sanara,
+      placeholder images, text logo, Google-font
       substitution, typo fixes).
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

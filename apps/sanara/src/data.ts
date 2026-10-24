@@ -1,11 +1,11 @@
-/* All copy/content for Medico, extracted from the reference design's live DOM
+/* All copy/content for Sanara, extracted from the reference design's live DOM
    on 2026-08-11.
    Text keeps the source's kind of content; the source's typos are fixed
    deliberately ("Depertment" → "Departments", "Qualfied" → "Qualified",
    "CHeart" → "Cardiac"), and the footer credit is reworded (no external
    branding). */
 
-export const siteName = 'Medico'
+export const siteName = 'Sanara'
 export const skipLabel = 'Skip to main content'
 
 /* Header — white bar: wordmark left, centered nav, hotline callout +
@@ -39,7 +39,7 @@ export const heroEyebrow = 'We are here for your care'
 export const heroTitle = 'Best Care & Better Doctor'
 export const heroBlurb =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus cmodo viverra maecenas accumsan lacus vel.'
-export const heroImageSeed = 'medico-hero'
+export const heroImageSeed = 'sanara-hero'
 export const heroImageAlt = 'Medical care illustration'
 
 /* About — photo left, heading + paragraph + "learn more" + 3 icon items. */
@@ -47,7 +47,7 @@ export const aboutTitle = 'About us'
 export const aboutBlurb =
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus cmodo viverra maecenas accumsan lacus vel.'
 export const learnMoreLabel = 'learn more'
-export const aboutImageSeed = 'medico-about'
+export const aboutImageSeed = 'sanara-about'
 export const aboutImageAlt = 'Doctor with a patient'
 export interface AboutItem {
   title: string
@@ -101,10 +101,10 @@ export interface Doctor {
   seed: string
 }
 export const doctors: readonly Doctor[] = [
-  { name: 'DR Adam Billiard', specialty: 'Heart specialist', seed: 'medico-doctor-1' },
-  { name: 'DR Adam Billiard', specialty: 'Medicine specialist', seed: 'medico-doctor-2' },
-  { name: 'DR Fred Macyard', specialty: 'Cardiac specialist', seed: 'medico-doctor-3' },
-  { name: 'DR Justin Stuard', specialty: 'Heart specialist', seed: 'medico-doctor-4' },
+  { name: 'DR Adam Billiard', specialty: 'Heart specialist', seed: 'sanara-doctor-1' },
+  { name: 'DR Adam Billiard', specialty: 'Medicine specialist', seed: 'sanara-doctor-2' },
+  { name: 'DR Fred Macyard', specialty: 'Cardiac specialist', seed: 'sanara-doctor-3' },
+  { name: 'DR Justin Stuard', specialty: 'Heart specialist', seed: 'sanara-doctor-4' },
 ]
 export type SocialName = 'Facebook' | 'Twitter' | 'Skype' | 'Instagram'
 export const socialNames: readonly SocialName[] = ['Facebook', 'Twitter', 'Skype', 'Instagram']
@@ -151,14 +151,14 @@ export const blogPosts: readonly BlogPost[] = [
     author: 'Jhon mike',
     category: 'Clinic, doctors',
     blurb: blogBlurb,
-    seed: 'medico-blog-1',
+    seed: 'sanara-blog-1',
   },
   {
     title: 'First cattle which earth unto let health for can get and see what you',
     author: 'Jhon mike',
     category: 'Clinic, doctors',
     blurb: blogBlurb,
-    seed: 'medico-blog-2',
+    seed: 'sanara-blog-2',
   },
 ]
 export const blogImageAlt = (index: number) => `Blog article image ${index + 1}`

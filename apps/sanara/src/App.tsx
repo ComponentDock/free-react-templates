@@ -12,7 +12,7 @@ import { skipLabel } from './data'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Medico — Medical / Health Care Template'
+    document.title = 'Sanara — Medical / Health Care Template'
   }, [])
 
   return (

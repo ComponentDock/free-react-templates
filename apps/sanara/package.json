@@ -1,5 +1,5 @@
 {
-  "name": "@free-react-templates/medico",
+  "name": "@free-react-templates/sanara",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://medico.free.componentdock.com"
+  "homepage": "https://sanara.free.componentdock.com"
 }

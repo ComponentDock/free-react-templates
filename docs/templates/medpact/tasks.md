@@ -5,7 +5,7 @@ as "Medpact" — hospital & clinics website template.
 
 ## Phase 1: Scaffold
 
-- [x] Create `apps/medpact/` from medico template (simplest medical app)
+- [x] Create `apps/medpact/` from sanara template (simplest medical app)
 - [x] Rename package to `@free-react-templates/medpact`
 - [x] Set up `vite.config.ts` with `injectUiSource()`
 - [x] Set up `vitest.config.ts`

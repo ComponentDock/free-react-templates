@@ -1,12 +1,12 @@
-# Medico (ColorLib "Medico") — Shipped Template Notes
+# Sanara (ColorLib "Medico") — Shipped Template Notes
 
 > Implemented and shipped via PR #268 (merged 2026-08-11, commit `d08cd92f`)
-> on `feat/template-medico`. The original prep artifact for this folder
+> on `feat/template-sanara`. The original prep artifact for this folder
 > misattributed the template to ColorLib "Docmed" — that was WRONG: Docmed is a
 > SEPARATE ColorLib template (own rows in TEMPLATES.md at lines 376/1839/2232,
 > preview https://preview.colorlib.com/theme/docmed/), still unclaimed. The
 > Docmed research from the old prep artifact survives in git history (the
-> pre-`d08cd92f` version of `openspec/specs/template-medico/spec.md`).
+> pre-`d08cd92f` version of `openspec/specs/template-sanara/spec.md`).
 
 ## What shipped
 
@@ -15,10 +15,15 @@
   lines 448 / 1867 / 2252 (Bootstrap, Health Fitness, Medical sections — one
   app, all three rows marked `[x]`).
 - **Preview (reachable, HTTP 200):** https://preview.colorlib.com/theme/medico/
-- **App:** `apps/medico` (package `@free-react-templates/medico`), deployed to
-  https://medico.free.componentdock.com.
-- **Spec:** `openspec/specs/template-medico/spec.md` (rewritten to describe the
-  real Medico template; `npm run spec:validate` passes).
+- **App:** `apps/sanara` (package `@free-react-templates/sanara`), deployed to
+  https://sanara.free.componentdock.com.
+- **Spec:** `openspec/specs/template-sanara/spec.md` (rewritten to describe the
+  real Sanara template; `npm run spec:validate` passes).
+- **Rule-5 rename:** the app first shipped as `apps/medico` (same name as the
+  ColorLib source). It now lives at `apps/sanara` — package
+  `@free-react-templates/sanara`, host
+  https://sanara.free.componentdock.com — and the old folder/package/host are
+  retired. Provenance stays here, in the spec and in `TEMPLATES.md`.
 
 ## Structure (1:1 from the preview DOM)
 
@@ -37,7 +42,7 @@
 9. Footer (`footer` / `single-footer-widget`) + copyright bar
    (`copyright_part`).
 
-## Design tokens (from `medico-style.css`)
+## Design tokens (from `sanara-style.css`)
 
 - Brand blue: `#0065e1`; secondary blues `#649bff`, `#0070fa`, `#38a4ff`.
 - Appointment band gradient: `linear-gradient(to right, #649bff, #0070fa,
@@ -53,8 +58,8 @@
 
 ## Notes
 
-- This is the pipeline's de-facto naming pattern: row name "Medico" is used as
+- This is the pipeline's de-facto naming pattern: row name "Sanara" is used as
   the app name even though it matches the ColorLib slug (same as
   `thepetcare`).
-- Gate: `scripts/verify-app.sh medico` passes (typecheck + lint + 100%
+- Gate: `scripts/verify-app.sh sanara` passes (typecheck + lint + 100%
   coverage + build). Full gate runs in CI on merge + nightly.
