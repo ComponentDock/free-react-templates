@@ -54,25 +54,35 @@ every probe below passes `-4`. Hashes are the canonical body.
 
 | artefact | bytes | sha256 |
 | --- | ---: | --- |
-| `theme/bac/accordion-16/` page (DOM authority) | 4,272 | `98181b800ae523f941e7bfc2921bf04adf02f41aa744bb3f24aa69a23f506393` |
+| `theme/bac/accordion-16/` page (DOM authority) | 4,272 | — (page bodies are request-unstable; bytes only — `index.html` is byte-identical to the directory URL, so it is the same page, not a second one) |
 | `theme/bac/accordion-16/css/style.css?v=20298103` (token authority) | 9,013 | `e61cfd1ccb7c6cac05bc83c38f8201ae9edbddd0bc73553910011d80f18fc37a` |
-| `theme/bac/accordion-16/js/snippet.js?v=edc3dcd8` (collapse behaviour) | — | — (vendor toggle; not censused) |
-| screenshot (above) | 22,541 | — (AVIF) |
-| `downloads/free/accordion-16.zip` | — | — (HTTP 200: this family *does* ship an archive) |
+| `theme/bac/accordion-16/js/snippet.js?v=edc3dcd8` (collapse behaviour) | 4,219 | `ed1cd7bed848e13f2a349fdbc9fa32927477a7753321a45eae08348425e6c402` |
+| screenshot (above) | 22,541 | — (AVIF 1200 × 972) |
+| `downloads/free/accordion-16.zip` | 252,097 | `eeebd1b26ae9ac5a8d78fc66deaff1c7514fde1067462ce4e8e854b6461e943d` — its `css/style.css` and `js/snippet.js` hash **identically** to the live pair above, so the archive is the live twin |
 
 - **`measure-reference-tokens.py --slug accordion-16` reports `rebuilt: False`** — the demo is the
   original build, so any mismatch with the shipped app is DRIFT, not a redesign.
+- **Anchor census: the page holds 0 anchors and 3 buttons.** There is no nav, no footer and no
+  inner page (`index.html` is byte-identical to the directory URL), so the snippet shows no link
+  at all; the Component Dock credit is the recreation's own addition, in its last band.
 - The sheet is a self-contained snippet stylesheet: no framework, no Bootstrap base, and a
   `:where(html) :is(…) { all: revert }` reset that keeps a host page's reboot off the snippet.
-  Its only `@font-face` is the `icomoon` icon subset (the `+`/`−` glyphs); the text face is
-  Roboto, pulled from the system stack, not a webfont.
+  It ships its own faces: **two `@font-face` blocks for Roboto 400** (`fonts/roboto-400-latin.woff2`
+  and `fonts/roboto-400-latin-ext.woff2`, `font-display: swap`) plus the `icomoon` icon subset that
+  draws the `+`/`−` glyphs. So the text face IS webfont-delivered — but only weight 400, which is
+  the only weight the page uses. The stack after `"Roboto"` (`-apple-system, BlinkMacSystemFont,
+  "Segoe UI", …`) is the fallback, not the delivery. Load Roboto from Google Fonts in the
+  recreation (`css2?family=Roboto:wght@300;400;500;700&display=swap` answered **200** on
+  2026-10-24); never copy the woff2.
 
 ## Design tokens (measured from `css/style.css`, 9,013 B)
 
 Sheet census, theme sheet only: `#212529`×3, `#fff`×2, `#007bff`×2, `#0056b3`×2, `#72c02c`×2,
-`#6c757d`×1, `#efefef`×1, `#f9f9f9`×1, `#999`×1, `#888`×1. `#007bff` / `#0056b3` are the sheet's
-generic `a` / `a:hover` rules and are **not painted on this page** — the only chromatic the
-visitor sees is the lime `#72c02c`.
+`#6c757d`×1, `#efefef`×1, `#f9f9f9`×1, `#999`×1, `#888`×1. `#007bff` / `#0056b3` are link colours
+— the reboot `a` / `a:hover` pair (lines 122–130) plus its `.cl-btn-link` / `.cl-btn-link:hover`
+duplicates (lines 286–296) — and are **not painted on this page**: the live DOM holds **0 anchors**
+and 3 buttons, and the theme's `.custom-accordion .cl-btn-link` rule repaints both to `#999` /
+`#72c02c` anyway. The only chromatic the visitor sees is the lime `#72c02c`.
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
@@ -82,8 +92,8 @@ visitor sees is the lime `#72c02c`.
 | Closed row ink | `#999` | `.cl-accordion-item .cl-btn-link { color: #999 }` |
 | Panel ink | `#888` | `.cl-accordion-item .cl-accordion-body { color: #888 }` |
 | Ink (headings, body default) | `#212529` | 3 declarations — `body`, `h2`/`.h2`, `.cl-h2`; `h2 { font-size: 20px }` |
-| Muted (`a` default) | `#6c757d` | 1 declaration — generic `a`; not painted on this page |
-| Typeface (only face) | `Roboto` | 7 references along the system stack (`"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", …`); `h2` re-declares it |
+| Muted (disabled link) | `#6c757d` | 1 declaration — `.cl-btn-link.disabled` / `.cl-btn-link:disabled`; the page has no disabled control, so it is never painted |
+| Typeface (only face) | `Roboto` | 7 references along the stack (`"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", …`); `h2` re-declares it — and the sheet delivers weight 400 itself via two `@font-face` blocks (see above) |
 | Row radius | `40px` | `.cl-accordion-item { border-radius: 40px; overflow: hidden }` — a full pill |
 | Row rhythm | `10px` gaps | `.cl-accordion-item { margin-bottom: 10px }` |
 | Row padding | `15px` / `padding-left: 40px` | `.cl-btn-link` — 40px left inset leaves room for the glyph at `left: 15px` |
@@ -235,7 +245,7 @@ toggling) but not its **skin**. These deltas are recorded, not claimed:
 | Indicator | icomoon `+` / `−` glyph, lime when open | `lucide-react` chevron, rotates 180° | icon substitution is allowed; the state colour is the fidelity point |
 | Row ink | `#999` closed / `#72c02c` open | `#6b6b6b` / `#563d7c` | |
 | Panel ink | `#888` | `#6b6b6b` (`--color-text-body`) | |
-| Typeface | Roboto (system stack) | Open Sans body / Roboto Slab headings | the reference declares one text face |
+| Typeface | Roboto (the sheet delivers weight 400 as woff2) | Open Sans body / Roboto Slab headings | the reference declares one text face |
 
 Closing this delta is an implementer change (tests + per-app gate), not a prep one — it is not
 part of this rewrite.

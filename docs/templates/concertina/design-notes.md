@@ -37,9 +37,13 @@ in the viewport instead, which reads the same at desktop width.
 
 ## Typography
 
-One text face, no webfont: `body`, `h2`/`.h2` and the row buttons all resolve to
-`"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", …` from the system stack. The only
-`@font-face` in the sheet is the `icomoon` subset that draws the `+` / `−` indicator.
+One text face, webfont-delivered: the sheet declares **two `@font-face` blocks for Roboto 400**
+(`fonts/roboto-400-latin.woff2`, `fonts/roboto-400-latin-ext.woff2`, `font-display: swap`) plus
+the `icomoon` subset that draws the `+` / `−` indicator. `body`, `h2`/`.h2` and the row buttons
+all resolve to `"Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", …` — the stack after
+Roboto is the fallback, not the delivery. Only weight 400 is shipped, and it is the only weight
+the page uses. Load Roboto from Google Fonts instead of copying the woff2:
+`css2?family=Roboto:wght@300;400;500;700&display=swap` (verified **200**, 2026-10-24).
 
 | role | face | reference sizes |
 | --- | --- | --- |
@@ -68,8 +72,10 @@ Sheet census: `#212529`×3, `#fff`×2, `#007bff`×2, `#0056b3`×2, `#72c02c`×2,
 | border | none | rows are separated by ground tint and gap, not by a rule |
 | type scale | 20 / 16 px | `h2` 20px; labels and panels 1rem |
 
-Reference-only values the app does not paint: `#007bff` / `#0056b3` (generic `a` / `a:hover`),
-`#6c757d` (generic `a`), `#fff` (the row button repaint). None appears on the visible band.
+Reference-only values the app does not paint: `#007bff` / `#0056b3` (the sheet's link pair — reboot
+`a` / `a:hover` plus their `.cl-btn-link` duplicates; the page holds 0 anchors and the theme
+repaints the button colour anyway), `#6c757d` (`.cl-btn-link:disabled`), `#fff` (the row button
+repaint). None appears on the visible band.
 
 ## Deltas the app still carries (fidelity debt, recorded not claimed)
 
