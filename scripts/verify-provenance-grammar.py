@@ -68,7 +68,12 @@ BOLD = re.compile(r'ColorLib\s+(?:free\s+)?\*\*([^*\n]+?)\*\*')
 BARE = re.compile(r'ColorLib\s+(?:free\s+)?([A-Z][\w&.\'-]*(?:\s+[A-Z][\w&.\'-]*){0,3})')
 ROW = re.compile(r'^- \[[ xX~]\] \*\*(.+?)\*\*')
 ROW_SLUG = re.compile(r'\[colorlib\]\(https://colorlib\.com/wp/template/([\w.~%+-]+)/\)')
-ROW_APP = re.compile(r'\[([\w.-]+)\]\(https://\1\.free\.componentdock\.com\)')
+# The link TEXT is not the app name. Rows carry `[Atelier]`, `[Villa]`, `[Landing]`
+# and `[Job Board]` (title case / spaced) — matching `\1` against the text missed 3
+# of the 20 SPEC-ROW-MISMATCH subjects (measured 2026-10-24f: atelier, landing,
+# villa read as "no row links this app" and were reported as drift they were not).
+# The subdomain IS the app folder, so match that and ignore the label.
+ROW_APP = re.compile(r'\]\(https://([\w.-]+)\.free\.componentdock\.com\)', re.I)
 PURPOSE = re.compile(r'^##\s+Purpose\s*$', re.M)
 H2 = re.compile(r'^##\s', re.M)
 
@@ -111,7 +116,7 @@ def load_rows(path: str = 'TEMPLATES.md') -> list[dict]:
                 'line': i,
                 'name': m.group(1).strip(),
                 'slug': s.group(1) if s else None,
-                'apps': ROW_APP.findall(line),
+                'apps': [a.lower() for a in ROW_APP.findall(line)],
             })
     return rows
 

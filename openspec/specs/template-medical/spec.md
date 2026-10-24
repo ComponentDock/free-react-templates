@@ -3,9 +3,22 @@
 ## Purpose
 
 Medical is a single-page healthcare template in the free-react-templates
-monorepo. It is an original React recreation of the ColorLib free "Medical
-Wordpress Themes" design (see TEMPLATES.md), built under the monorepo
+monorepo. It is an original React recreation of the ColorLib "Medical" design
+(`https://colorlib.com/wp/template/medical/`, preview
+`https://preview.colorlib.com/theme/medical/`), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+
+- **Source design:** ColorLib "Medical" — https://colorlib.com/wp/template/medical/
+
+> **Provenance correction (2026-10-24f, `verify-spec-row-mismatch.py`).** This
+> spec named ColorLib "Medical Wordpress Themes" — a round-up article with no
+> demo of its own (`colorlib.com/wp/template/medical-wordpress-themes/` has no
+> `preview…/theme/` twin and no catalog entry). The design the app recreates,
+> and the design on the row that links it, is `medical`. The live DOM, the
+> token table below and the section order were already measured from
+> `/theme/medical/`; only the provenance name was wrong. The folder equals the
+> source slug, so the naming audit reports this app as a rule-5 rename
+> candidate (`docs/spec-row-mismatch.md`).
 
 The original is a green-accented medical page: a banner ("We Care for Your
 Health Every Moment"), a servicing-hours / appointment band ("Book an
@@ -21,15 +34,16 @@ assets copied).
 
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "Medical Wordpress Themes" — free medical website
-  template (source: https://colorlib.com/wp/template/medical-wordpress-themes/).
-- **Live preview DOM analyzed:** the official preview portal
-  (`https://preview.colorlib.com/theme/medical-wordpress-themes/`) returns
-  404; the live demo resolves at `https://preview.colorlib.com/theme/medical/`
-  (HTTP 200, 34.7KB) + stylesheet `css/main.css` (69.5KB). The rendered DOM
-  is the reference below; the TEMPLATES.md screenshot
-  (`medical-website-templates.jpg`) confirms the visual design (light
-  sections, green accents).
+- **Original:** ColorLib "Medical" — free medical website template
+  (source: https://colorlib.com/wp/template/medical/).
+- **Live preview DOM analyzed:** `https://preview.colorlib.com/theme/medical/`
+  (HTTP 200, 35.0 KB) + stylesheet `css/main.css` (69.5 KB); brand green
+  `#69be00`, ink `#222222`, muted `#777777`, paper `#f9f9ff`, Poppins. The
+  round-up slug this spec used to cite
+  (`https://preview.colorlib.com/theme/medical-wordpress-themes/`) 404s and has
+  no catalog entry. The rendered DOM is the reference below; the TEMPLATES.md
+  screenshot (`medical-website-templates.jpg`) confirms the visual design
+  (light sections, green accents).
 - **Section order (1:1):**
   1. Banner (`banner-area relative`): "We Care for Your Health Every
      Moment".

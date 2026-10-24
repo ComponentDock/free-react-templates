@@ -1,158 +1,212 @@
-# Template: JobBoard (Careers)
+# Template: JobBoard (Job Board / Careers Portal)
 
 ## Purpose
 
-A careers template with hero, stats banner, job listings, company logos and cta banner sections. Recreation of ColorLib's **Careers** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+A job-board landing page with hero search, trending keywords, a stats counter
+band, job cards, a "Looking For A Job?" call to action, a client-logo row, a
+mobile-app band and a four-column footer. Recreation of ColorLib "Jobboard"
+(`https://colorlib.com/wp/template/jobboard/`, preview
+`https://preview.colorlib.com/theme/jobboard/`) as a React 19 + Vite +
+Tailwind 4 + TypeScript single-page application.
 
-- **Source:** https://colorlib.com/wp/template/careers/
-- **Preview:** https://preview.colorlib.com/theme/careers/
+- **Source:** https://colorlib.com/wp/template/jobboard/
+- **Preview:** https://preview.colorlib.com/theme/jobboard/
 - **New name:** `jobboard`
 - **App folder:** `apps/jobboard`
 - **Package:** `@free-react-templates/jobboard`
 - **Surge target:** `jobboard.free.componentdock.com`
-- **Source design:** ColorLib "Careers" — https://colorlib.com/wp/template/careers/
+- **Source design:** ColorLib "Jobboard" — https://colorlib.com/wp/template/jobboard/
+
+> **Provenance correction (2026-10-24f, `verify-spec-row-mismatch.py`).** This
+> spec named ColorLib "Careers" until this run, and its token table carried that
+> design's royal blue `#1644ba`. The app never rendered that design: its copy
+> ("The Easiest Way To Get Your Dream Job", "JobBoard Site Stats", "Get The
+> Mobile Apps") is the Jobboard demo's, and its palette is Jobboard's lime
+> `#89ba16`. The spec now records the design the app actually recreates, which
+> is also the design on the row that links it. Note that the folder is the
+> source slug — the naming audit reports this app as a rule-5 rename candidate
+> (`docs/spec-row-mismatch.md`).
 
 ## Design tokens
 
+Measured from the live preview, not a screenshot: `css/style.css` (37,406 B) and
+`css/custom-bs.css` (36,236 B).
+
 | Token | Value | Notes |
 |-------|-------|-------|
-| Brand color | `#1644ba` | Deep royal blue — primary buttons, links, accent overlays |
-| Brand hover | `#1747c3` | Slightly lighter blue on hover |
-| Text primary | `#212529` | Dark grey for body copy |
-| Text on dark | `#fff` | White text on hero/overlay backgrounds |
-| Text muted | `rgba(255,255,255,0.6)` | Semi-transparent white for hero subtext |
-| Background light | `#f8f9fa` | Light grey section backgrounds |
-| Background card | `#ebeef0` | Input/select dropdown background |
-| Border accent | `#1644ba` | Top border on job item cards |
-| Font family | `"Nunito", sans-serif` | Google Font — load via `<link>` in index.html |
-| Border radius | `0.3rem` | Search form buttons and inputs |
-| Button style | Solid blue (`#1644ba`), white text, rounded `0.3rem` | `.btn-primary` pattern |
-| Overlay | `rgba(22,68,186,0.9)` | Blue overlay on stats/CTA banners |
-| Shadow | `0 2px 20px -2px rgba(0,0,0,0.2)` | Card lift shadow |
+| Brand color | `#89ba16` | Lime — `.btn-primary` background/border, links, accents |
+| Brand text | `#212529` | Ink on lime buttons (`.btn-primary{color:#212529}`) |
+| Secondary accent | `#fff568` | `.btn-warning` — highlight badge/pill |
+| Text primary | `#343a40` | Body ink |
+| Text muted | `#7f848c` | `.btn` default color, meta rows |
+| Background light | `#f8f9fa` | Alternating section bands (`.btn-light` too) |
+| Background card | `#ebeef0` | Search-select/input fills |
+| Border | `#dee2e6` / `#eee` / `#ccc` | Card and input borders |
+| Font family | `"Nunito", sans-serif` | Declared 4× in `custom-bs.css`; load via `<link>` |
+| Border radius | `0.25rem` (buttons), `7px` / `4px` (cards, pills) | Theme sheet |
+| Button style | Solid lime, ink text, `0.25rem` radius, no shadow | `.btn-primary` |
+| Overlay | Dark image overlay on hero + CTA | `.section-hero.overlay` |
 
 ## Section structure (page order)
 
-1. **Navbar** — Brand text "JobBoard" left-aligned, nav links center (Home, Job Listings, About, Services, Blog), "Contact Us" button right (blue, icon + text)
-2. **Hero** — Full-width background image with dark overlay, centered headline ("Find Your Next Career Move"), subtext, job search form (4 fields: keyword input, location dropdown, type dropdown, Search button)
-3. **Stats banner** — Blue overlay on hero image, "Job Board Statistics" heading, 4 stat counters (Jobs Posted, Companies, Candidates, Success Stories) with animated count-up
-4. **Job listings** — White background, "Featured Jobs" heading, list of job cards (each: title, company, type badge, location, salary, date), blue left-border accent, "View More Jobs" button
-5. **Company logos** — "Top Companies Hiring" heading, row of company logo placeholders (greyscale, hover to colour)
-6. **Testimonials** — Light grey background, testimonial carousel with avatar, name, role, quote
-7. **CTA banner** — Blue overlay, "Ready to Start?" heading, subtext, "Browse Jobs" button
-8. **Footer** — Multi-column: brand + description, Quick Links, Company, Contact info. Social icons. Copyright with Component Dock link.
+1. **Navbar** — "JobBoard" wordmark, links (Home, About, Job Listings, Pages,
+   Services, Blog, Contact), "Post a Job" + "Log In" on the right.
+2. **Hero** — full-width photo with dark overlay, headline "The Easiest Way To
+   Get Your Dream Job", a search form (text "Job title, Company…", two selects
+   "Select Region" / "Select Job Type", submit button).
+3. **Trending keywords** — "Trending Keywords:" label + tag chips.
+4. **Stats counter** — "JobBoard Site Stats" and "43,167 Job Listed" over a
+   photo band, four counters.
+5. **Job listings** — three-column card grid (Product Designer, Digital
+   Marketing Director, Back-end Engineer (Python), Senior Art Director …), each
+   card: logo, title, company, location, type, salary, bookmark/apply control.
+6. **CTA** — "Looking For A Job?" band with a button.
+7. **Company logos** — "Company We've Helped" + client logo row.
+8. **Mobile apps** — "Get The Mobile Apps" band: a person cutout beside a
+   composite store-badge image; the badges link nowhere (`href="#"`).
+9. **Footer** — four columns (Search Trending, Company, Support, Contact Us) and
+   the Component Dock credit line.
 
 ## Requirements
 
-### Navbar
+### Requirement: Navbar
 
-#### Scenario: Navbar displays brand and navigation
+The header SHALL show the JobBoard wordmark, the page links and the two
+right-hand actions, and collapse to a menu below the `lg` breakpoint.
 
-- **GIVEN** the user visits the page
-- **THEN** the navbar shows "JobBoard" as the brand
-- **AND** it has links: Home, Job Listings, About, Services, Blog
-- **AND** a "Contact Us" button is visible on the right
+#### Scenario: Navigation renders
 
-#### Scenario: Navbar is sticky on scroll
+- **GIVEN** the page is loaded
+- **WHEN** the viewport is at least 1024 px wide
+- **THEN** the wordmark, the section links and "Post a Job" / "Log In" are visible
+
+#### Scenario: Mobile menu
+
+- **GIVEN** the viewport is narrower than 1024 px
+- **WHEN** the user taps the menu toggle
+- **THEN** the links open in a stacked panel and the toggle exposes `aria-expanded`
+
+### Requirement: Hero search
+
+The hero SHALL render the reference headline over a photo with a dark overlay and
+a three-control search form.
+
+#### Scenario: Hero content
+
+- **GIVEN** the user arrives at the page
+- **THEN** the headline "The Easiest Way To Get Your Dream Job" is the page `h1`
+- **AND** a text input ("Job title, Company…") and two selects ("Select Region",
+  "Select Job Type") are present
+
+#### Scenario: Submitting the search
+
+- **GIVEN** the user has typed a keyword
+- **WHEN** the form is submitted
+- **THEN** the page does not navigate and the input keeps its value
+
+### Requirement: Trending keywords
+
+The hero SHALL be followed by a keyword strip labelled "Trending Keywords:".
+
+#### Scenario: Keyword chips
 
 - **GIVEN** the user scrolls past the hero
-- **THEN** the navbar remains fixed at the top
+- **THEN** at least four keyword chips are rendered
+- **AND** each chip is a link or button with an accessible name
 
-#### Scenario: Mobile hamburger menu
+### Requirement: Stats counter
 
-- **GIVEN** the viewport is under 1024px wide
-- **THEN** the nav links are hidden
-- **AND** a hamburger icon is visible
-- **WHEN** the user taps the hamburger
-- **THEN** the mobile menu slides open
+A photo band SHALL show the reference statistics headline and counters.
 
-### Hero section
+#### Scenario: Counters render
 
-#### Scenario: Hero displays headline and search form
+- **GIVEN** the stats band is in view
+- **THEN** "JobBoard Site Stats" and the "43,167 Job Listed" figure are visible
+- **AND** every counter shows a numeric value (no blank counters if the
+  intersection observer never fires)
 
-- **GIVEN** the user visits the page
-- **THEN** a headline is visible in the hero area
-- **AND** a search form has fields: keyword, location, job type
-- **AND** a "Search Jobs" button is present
+### Requirement: Job listings
 
-#### Scenario: Search form submits
+The listings SHALL be a responsive card grid carrying the reference job titles
+and meta rows.
 
-- **GIVEN** the user fills in keyword "developer"
-- **WHEN** the user clicks "Search Jobs"
-- **THEN** the form prevents default submission
+#### Scenario: Card contents
 
-### Stats banner
+- **GIVEN** the user reaches the listings
+- **THEN** at least four cards render
+- **AND** each card shows title, company, location, employment type and salary
 
-#### Scenario: Stats counters animate on scroll
+#### Scenario: Card affordance
 
-- **GIVEN** the user scrolls to the stats section
-- **THEN** four stat counters appear (Jobs Posted, Companies, Candidates, Success Stories)
-- **AND** each counter animates from 0 to its target number
+- **GIVEN** a card is hovered
+- **THEN** it lifts (shadow / border change) without shifting its neighbours
 
-### Job listings
+### Requirement: Call to action
 
-#### Scenario: Job cards display correctly
+A "Looking For A Job?" band SHALL follow the listings.
 
-- **GIVEN** the user scrolls to the job listings section
-- **THEN** at least 6 job cards are rendered
-- **AND** each card shows: title, company, type badge, location, salary, date
+#### Scenario: CTA band
 
-#### Scenario: Job card hover effect
+- **GIVEN** the user scrolls past the listings
+- **THEN** the CTA heading and a single primary button are visible
 
-- **GIVEN** the user hovers over a job card
-- **THEN** the card lifts with a shadow effect
+### Requirement: Client logos
 
-#### Scenario: View More button
+A logo row SHALL follow the CTA under the "Company We've Helped" heading.
 
-- **GIVEN** the user sees the job listings
-- **THEN** a "View More Jobs" button is visible below the list
+#### Scenario: Logo row
 
-### Company logos
+- **GIVEN** the user scrolls to the logo band
+- **THEN** at least five logos render as images with alt text
+- **AND** they desaturate by default and colourise on hover
 
-#### Scenario: Company logos section displays
+### Requirement: Mobile app band
 
-- **GIVEN** the user scrolls to the companies section
-- **THEN** a row of at least 6 company logo placeholders is visible
-- **AND** logos are greyscale, colour on hover
+The page SHALL show the "Get The Mobile Apps" band with a composite store-badge
+image.
 
-### Testimonials
+#### Scenario: App band
 
-#### Scenario: Testimonial carousel
+- **GIVEN** the user scrolls past the logos
+- **THEN** the heading and the badge image are visible
+- **AND** the badge is decorative or its links are inert (the reference's are
+  `href="#"`)
 
-- **GIVEN** the user scrolls to the testimonials section
-- **THEN** a testimonial card is visible with avatar, name, role, quote
-- **AND** navigation dots/arrows allow switching between testimonials
+### Requirement: Footer
 
-### CTA banner
+The footer SHALL carry the reference link columns and the Component Dock credit.
 
-#### Scenario: CTA banner displays
+#### Scenario: Footer columns
 
-- **GIVEN** the user scrolls to the call-to-action section
-- **THEN** a heading is visible
-- **AND** a "Browse Jobs" button links to the jobs section
+- **GIVEN** the user reaches the bottom of the page
+- **THEN** the columns Search Trending, Company, Support and Contact Us render
+- **AND** the copyright line links to https://www.componentdock.com/
 
-### Footer
+### Requirement: No source-site references in the app
 
-#### Scenario: Footer content
+The application SHALL NOT carry the source design's provenance: no file under
+`apps/jobboard/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+source template's name beyond the product name itself.
 
-- **GIVEN** the user scrolls to the bottom
-- **THEN** the footer shows: brand description, Quick Links, Company, Contact info
-- **AND** social media icons are present
-- **AND** a copyright line links to https://www.componentdock.com/
+#### Scenario: Source scan
+
+- **GIVEN** the shipped `apps/jobboard` tree
+- **WHEN** it is searched for `colorlib` (case-insensitive)
+- **THEN** no file matches
 
 ## Verification checklist
 
-- [ ] All sections match the original structure and order (1:1)
-- [ ] Brand color `#1644ba` used for buttons, links, accent overlays
-- [ ] Font "Nunito" loaded via Google Fonts link in `index.html`
-- [ ] Search form has 3 input fields + search button
-- [ ] Stats section has 4 animated counters
-- [ ] Job cards show: title, company, type, location, salary, date
-- [ ] Company logos section present
-- [ ] Testimonial carousel functional
-- [ ] CTA banner with blue overlay
-- [ ] Footer links to Component Dock
+- [ ] Section order matches the reference 1:1 (navbar → hero search → trending
+      keywords → stats → job cards → CTA → logos → mobile apps → footer)
+- [ ] Brand lime `#89ba16` is the only button fill; ink text on it
+- [ ] "Nunito" is loaded and applied to body copy
+- [ ] Hero search has one text input and two selects, and does not navigate
+- [ ] Stats band shows the "43,167 Job Listed" figure
+- [ ] Job cards carry title, company, location, type and salary
+- [ ] Footer has the four reference columns and links to
+      https://www.componentdock.com/
 - [x] No references to ColorLib anywhere in app code
-- [ ] Placeholder images via `picsum.photos`
-- [ ] Responsive: mobile hamburger menu, stacked layout on small screens
+- [ ] Placeholder images via `picsum.photos` (deterministic seeds)
+- [ ] Responsive: single-column cards under 640 px, menu collapse under 1024 px
 - [ ] Tests: 100% line/function/branch/statement coverage
 - [ ] TypeCheck passes, Lint passes, Build succeeds

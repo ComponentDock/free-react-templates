@@ -1,0 +1,185 @@
+# Spec ↔ row mismatch — does the spec name the design its row says it ships?
+
+Two records claim which ColorLib design an app recreates:
+
+- the **spec** — `openspec/specs/template-<name>/spec.md`, whose `## Purpose`
+  names the source design and usually links `colorlib.com/wp/template/<slug>/`;
+- the **row** — `TEMPLATES.md`, `[colorlib](https://colorlib.com/wp/template/<slug>/)`
+  on the line that links `<name>.free.componentdock.com`.
+
+Nothing compared them. `scripts/verify-provenance-grammar.py` reports the
+disagreement as one counted note (`SPEC-ROW-MISMATCH`) and moves on; rule 5
+(`audit-naming.mjs`) only asks whether the folder differs from the **quoted**
+source name. So an app could carry a spec for design A, a row for design B and a
+body built from design C, and every audit would stay quiet. This axis reads that
+note.
+
+```
+python3 scripts/verify-spec-row-mismatch.py            # offline census
+python3 scripts/verify-spec-row-mismatch.py --network  # adjudicate the drift
+python3 scripts/verify-spec-row-mismatch-controls.py   # 18/18 (6 GATE)
+```
+
+## What it measures
+
+Every spec lands in exactly one offline bucket:
+
+| bucket     | meaning                                                                 |
+| ---------- | ----------------------------------------------------------------------- |
+| `AGREE`    | the spec's source slug is on at least one row that links the app         |
+| `DRIFT`    | it is not — flag `SPEC-ROW-MISMATCH`                                     |
+| `PREP`     | no `apps/<folder>`: nothing ships, so there is no row claim to compare   |
+| `UNLINKED` | the app is not on any row (no such case today)                           |
+| `NO-SLUG`  | the spec names no resolvable source slug — flag `SPEC-SLUG-UNRESOLVED`   |
+
+Notes: `ROW-MULTI` (rows for ≥2 different designs link this app),
+`SLUG-OWNER` (the spec's slug has rows, and they link a *different* app),
+`NO-ROW-SLUG` (the slug appears on no row), `NO-APP`.
+
+`--network` adjudicates each `DRIFT` case: the app's own copy (string literals
+and JSX text under `apps/<name>/src`) is searched in the rendered body of the
+spec's design and of the row's design, and the winner names the stale record:
+
+| verdict      | meaning                                                     | fix belongs to      |
+| ------------ | ----------------------------------------------------------- | ------------------- |
+| `SPEC-STALE` | the app matches the row's design, not the spec's             | prep (`spec.md`)    |
+| `ROW-POINTER`| the app matches the spec's design, not the row's             | implementer / rows  |
+| `BOTH-STALE` | the app matches a third design in the same family            | both                |
+| `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
+
+## Census (measured 2026-10-24f, main `47b990932`)
+
+|                                    | count |
+| ---------------------------------- | ----: |
+| specs                              | 3,228 |
+| apps                               | 1,703 |
+| `AGREE`                            | 1,688 |
+| `DRIFT`                            | **15** |
+| `PREP` (spec-only)                 | 1,525 |
+| `ROW-MULTI` apps                   | 36    |
+| `SLUG-OWNER` subjects              | 30    |
+
+The chain that got here: `19` row-mismatch subjects measured, `17` after the
+row-map fix below, `15` after the two provenance corrections below.
+
+## The 15 drift cases (adjudicated against the live previews)
+
+| app | verdict | spec says | row says | copy found on the winner |
+| --- | --- | --- | --- | --- |
+| `bellows` | `BOTH-STALE` → `accordion-01` | accordion-15 | accordion-03 | "Accordion #01", "Spa Therapies", "Face Treatments" |
+| `bistro` | `SPEC-STALE` | accordion-02 | allfood | "Delicious Food", "Best Chef", "About Our Restaurant" |
+| `btnspark` | `UNRESOLVED` | bootstrap-buttons-14 | bootstrap-buttons-02 | — (button demos carry no prose; both are 3.1.0 rebuilds) |
+| `cirrus` | `UNRESOLVED` | cloudtemplate | saas | — (app copy is fintech; neither demo carries it) |
+| `concertina` | `SPEC-STALE` | accordion-05 | accordion-16 | "Bootstrap Accordion #6", "How to link your paypal…" |
+| `formwell` | `SPEC-STALE` | contact-form-v15 | contact-form-08 | "Get in touch with us", "Full Name", "Email Address" |
+| `givehope` | `ROW-POINTER` | bcharity | givehope | "Bless others with your gift", "Become A Volunteer" |
+| `ledger` | `SPEC-STALE` | accounting | daren | "Creative & Design" + the Daren lorem blocks |
+| `logistico` | `ROW-POINTER` | thelogistico | logistico | "We Give You Complete Control", "of Your Shipments" |
+| `prose` | `SPEC-STALE` | blogger | author | "Best Seller Book Of The Week", "About The Book" |
+| `spark` | `ROW-POINTER` | appco | spark | "App Landing Page", "Easy to Customize" |
+| `stride` | `ROW-POINTER` | stamina | accordion-19 | "We Believe Little Things Matter", "Stay Healthy" |
+| `sudsy` | `ROW-POINTER` | carwash | sparkleclean | "Your car will look as your new one", "We have an application" |
+| `vellum` | `SPEC-STALE` | accordion-16 | readit | "Hello! Welcome to", "Build a Website in Minutes…" |
+| `zenith` | `SPEC-STALE` | bootstrap-buttons-05 | saasify | "Active users", "Uptime SLA", "Everything you need to ship faster" |
+
+Nine of the fifteen are **spec-side**: the spec describes a design the app does
+not render, and in seven of those the body (token table, section list,
+Requirements) is the other design's too — only `jobboard` and `medical` were
+provenance-only.
+
+## Fixed in this run (`47b990932` + this commit)
+
+| app | was | now | why it was safe |
+| --- | --- | --- | --- |
+| `jobboard` | ColorLib "Careers", tokens `#1644ba`/Nunito, Careers sections | ColorLib "Jobboard", measured lime `#89ba16`, the nine reference bands, Requirements aligned to the app | the app's copy is Jobboard's; the row already said `jobboard`; tokens re-measured from `css/style.css` + `custom-bs.css` |
+| `medical` | ColorLib "Medical Wordpress Themes" (a round-up article, no demo) | ColorLib "Medical" | the body, tokens and section order were already measured from `/theme/medical/`; only the name was wrong |
+
+Both corrections make the rule-5 audit **louder, not quieter**: the folders
+`apps/jobboard` and `apps/medical` now normalise to their own source slug, so
+`verify-provenance-grammar.py` reports them as `RULE5` (8 → 10 violations, one of
+them `RULE5-HIDDEN`). That is the correct reading of the repo — the wrong spec
+was hiding two unchanged source names. Renaming is the rename stream's call, not
+the prep stream's.
+
+## Queue (docs-only, in order of yield)
+
+1. **Seven spec rewrites** — `bistro`→allfood, `concertina`→accordion-16,
+   `formwell`→contact-form-08, `ledger`→daren, `prose`→author, `vellum`→readit,
+   `zenith`→saasify. Each needs the provenance *and* the body rewritten from the
+   winner's live DOM (the token tables currently carry the other design's
+   palette). One app per run, the normal prep shape.
+2. **Five row pointers** (implementer/rename stream) — the rows below credit the
+   app with a design it does not recreate, so they are false `[x]`s and their
+   designs are, in fact, unshipped:
+
+   | row | line | links | which recreates |
+   | --- | ---: | --- | --- |
+   | Givehope | 1270 | `givehope` | bcharity |
+   | Logistico | 2966 | `logistico` | thelogistico |
+   | Spark | 626 | `spark` | appco |
+   | Accordion 19 | 658 | `stride` | stamina |
+   | Sparkleclean | 1178 | `sudsy` | carwash |
+
+   `apps/spark` and `apps/logistico` also collide with a *different* design's
+   slug — the `itkol` shape from `docs/provenance-grammar.md`.
+3. **One duplicate app pair** — `bellows` and `pleat` both recreate
+   `accordion-01`; the `accordion-01` row links `pleat`, and `bellows` sits on
+   the `accordion-03` row while rendering accordion-01's price list.
+4. **Two unresolved** — `btnspark` (both candidates are button galleries with no
+   own prose; decide from the screenshot) and `cirrus` (the app is a
+   fintech/investment landing; neither CloudTemplate nor SaaS carries a single
+   one of its strings, so its true source is a third design).
+5. **36 `ROW-MULTI` apps** — every one of these is linked from two different
+   designs' rows, so at least one row per pair credits an app with a design it
+   cannot ship: `amplify(uza/amplify) atelier(ashion/design)
+   batterly(cakes/cake) bazaar(shopmax/store) counsel(ariclaw/whisper)
+   depot(warehouse/depot) domicile(occupy/homespace) dossier(jackco/alias)
+   feast(foodblog/flatter) gallery(portfolio-wordpress-themes/reopen)
+   glamour(look/glamour) glint(prodent/glint) groove(hnband/colorlib-regform-35)
+   imagine(creative-agency-2/imagine) inkwell(axole/contact-form-v11)
+   ironpulse(topgym/crossbody) landing(landing-page-wordpress-themes/landing)
+   learnly(academia/academics) lodgely(colorlib-booking-16/sogo)
+   mortar(buildream/grunt) nova(colorlib-error-404-19/nova)
+   orbit(colorlib-error-404-10/orbit) petal(juli/florist)
+   pleat(accordion-01/accordion-13) pulse(saita/pulse)
+   reachout(contact-form-13/contact-form-16) resume(personalportfolio/resume)
+   roost(realtors/stayhome) skyline(dreamrs/rooftop) stave(accordion-14/musico)
+   studio(carousel-20/studio) summit(confer/summit) verdant(neos/alazea)
+   vigor(fitnessgym/endurance/vigor) villa(layal/villa) voyage(passport/voyage)`.
+   Several pairs are near-duplicate ColorLib listings (`cakes`/`cake`,
+   `academia`/`academics`); the adjudication above is per pair, not per app name,
+   so this is its own axis.
+
+## Pits that cost iterations
+
+- **The row's link TEXT is not the app name.** Rows carry `[Atelier]`, `[Villa]`,
+  `[Landing]`, and the pre-fix regex required the text to equal the subdomain, so
+  `atelier`, `landing` and `villa` read as "no row links this app" and were
+  reported as drift they were not (19 → 17). Match the **subdomain**, ignore the
+  label — the same fix went into `verify-provenance-grammar.py`.
+- **One shared phrase is not provenance.** Every accordion demo carries "behind
+  the word mountains"; a raw count crowned `accordion-03` for `bellows` (which is
+  `accordion-01`). Only copy that matches exactly ONE candidate scores, and a
+  verdict needs ≥ 2 exclusive hits (`MIN_EVIDENCE`).
+- **A single hit is a coincidence.** With a floor of 1, `cirrus` "matched"
+  CloudTemplate on the phrase "Website Hosting". It is a fintech app.
+- **A tie refuses.** contact-form-08 and -09 are twins ("Get in touch with us" in
+  both); with the exclusive rule `formwell` breaks the tie on "Full Name" /
+  "Email Address", but when nothing separates two designs the verdict is
+  `UNRESOLVED`, never a coin flip.
+- **Family demos live under a prefix.** `accordion-*` is `/theme/bac/`,
+  `bootstrap-buttons-*` is `/theme/bb/`, `contact-form-*` is
+  `/theme/bootstrap/`, `contact-form-v15` is `/etc/cf/ContactFrom_v15/index.html`.
+  The slug-only ladder resolves none of them.
+- **Only the bootstrap families ship archives.** `downloads/free/<slug>.zip`
+  exists for `accordion-01`, `contact-form-08`, `contact-form-v15`,
+  `bootstrap-buttons-*` and 404s for `bcharity`, `givehope`, `allfood`, `author`,
+  `ashion`, `design`, `landing`, `cloudtemplate`, `saas` — so the un-versioned
+  twin is not a fallback for business themes.
+- **Round-up slugs have no demo.** `medical-wordpress-themes`,
+  `landing-page-wordpress-themes`, `wordpress-wedding-themes` are articles whose
+  "template" is a screenshot. A spec citing one is not wrong about the artwork it
+  was commissioned from, but it cannot be a fidelity reference — name the demo.
+- **`-p2` has no `node_modules`**, so `npm run spec:validate` cannot run there;
+  the structural gate used here is `## Purpose` + `## Requirements` + at least one
+  `#### Scenario:` per edited spec, plus the heading count unchanged elsewhere.
