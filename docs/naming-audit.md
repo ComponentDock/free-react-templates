@@ -13,7 +13,7 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Nurture → Cradle (2026-10-24k, #renumber)
+## State after Nurture → Cradle (2026-10-24k, #1845)
 
 **5 apps reuse their source name** (`node scripts/audit-naming.mjs`:
 `apps/oraxol`, `apps/pawpal`, `apps/petsitting`, `apps/petvet`,
