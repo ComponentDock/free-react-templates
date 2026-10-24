@@ -4,8 +4,11 @@
 
 ### Source
 
-- **ColorLib slug:** contact-form-v1
-- **Preview:** https://colorlib.com/etc/cf/ContactFrom_v1/index.html
+- **Source slug:** `contact-form-v1` — ColorLib "Contact Form V1" (`https://colorlib.com/wp/template/contact-form-v1/`,
+  HTTP 200, 114,484 B; re-checked 2026-10-24)
+- **Preview:** `https://colorlib.com/etc/cf/ContactFrom_v1/index.html` (HTTP 200) — this family's demo
+  lives under `/etc/cf/<folder>/`; `https://preview.colorlib.com/theme/contact-form-v1/` is **404**.
+  `ContactFrom_v1` is the demo FOLDER, not the design slug (`wp/template/ContactFrom_v1/` also 404s).
 - **Description:** "A simple, versatile and easy-to-use contact form template"
 
 ### Layout

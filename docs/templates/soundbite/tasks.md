@@ -1,6 +1,6 @@
 # SoundBite — Implementation Tasks & Design Notes
 
-Source: ColorLib "The Hustle Hour" (slug: `hustlehour`)
+Source: ColorLib "The Hustle Hour" — **Source slug:** `the-hustle-hour` (demo folder `hustlehour`)
 Preview: https://preview.colorlib.com/theme/hustlehour/
 New name: soundbite (apps/soundbite, @free-react-templates/soundbite)
 

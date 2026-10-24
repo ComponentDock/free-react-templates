@@ -2,8 +2,10 @@
 
 ## Source
 
-- **ColorLib:** Consulotion (https://colorlib.com/wp/template/consolotion/)
-- **Preview:** https://preview.colorlib.com/theme/consolotion/ (404 at prep time)
+- **Source slug:** `consulotion` — ColorLib "Consulotion" (`https://colorlib.com/wp/template/consulotion/`,
+  HTTP 200, 113,472 B; re-checked 2026-10-24). The spelling `consolotion` **404s** on wp.
+- **Preview:** https://preview.colorlib.com/theme/consulotion/ (**404** — this slug has no `/theme/` build;
+  the wp template page's own screenshots and demo are the reference)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/consolution-free-template.jpg (AVIF format)
 - **Category:** IT Consultant / Marketing Agency
 - **Pages:** 8 (original multi-page; React version = single-page landing)

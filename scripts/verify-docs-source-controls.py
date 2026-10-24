@@ -222,7 +222,7 @@ def c10g():
 
 
 def c11():
-    """corpus: 1,703 apps, buckets partition once, smithy fixed (27 -> 26 on 2026-10-24)."""
+    """corpus: 1,703 apps, buckets partition once, smithy + buildwell + 4 citations fixed (27 -> 21, 2026-10-24)."""
     root = os.path.dirname(HERE)
     res = V.audit(root)
     assert res['total'] == 1703, res['total']
@@ -233,8 +233,11 @@ def c11():
     # one bucket per app: no double counting
     assert sum(res['counts'].values()) == res['total'], (res['counts'], res['total'])
     by_app = {r['app']: r['bucket'] for r in res['records']}
-    assert by_app.get('smithy') == 'AGREE', by_app.get('smithy')   # the fix this run shipped
-    assert len(res['flags']) == 26, len(res['flags'])
+    assert by_app.get('smithy') == 'AGREE', by_app.get('smithy')      # fixed 2026-10-24 (-24h)
+    assert by_app.get('buildwell') == 'AGREE', by_app.get('buildwell')  # fixed 2026-10-24 (design drift)
+    for app in ('formbreeze', 'guideway', 'medical', 'soundbite'):        # citation defects, same run
+        assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
+    assert len(res['flags']) == 21, len(res['flags'])
 
 
 CASES = [
@@ -252,7 +255,7 @@ CASES = [
     (c09, 'brief without provenance -> DOC-SILENT note', False),
     (c10, 'the labelled `Source slug:` tier wins over a later URL', False),
     (c10g, 'GATE  disabling the label tier reads the later URL', True),
-    (c11, 'corpus: 1,703 apps, 26 flags, smithy fixed', False),
+    (c11, 'corpus: 1,703 apps, 21 flags, smithy + buildwell + 4 citation fixes', False),
 ]
 
 

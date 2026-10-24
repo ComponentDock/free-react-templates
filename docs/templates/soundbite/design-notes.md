@@ -1,7 +1,9 @@
 # Soundbite — Design Notes & Replication Record
 
-Source: ColorLib "The Hustle Hour" (slug `hustlehour`)
-Preview verified live: https://preview.colorlib.com/theme/hustlehour/ (2026-10-01)
+Source: ColorLib "The Hustle Hour" — **Source slug:** `the-hustle-hour`
+(`https://colorlib.com/wp/template/the-hustle-hour/`, HTTP 200, 112,522 B; re-checked 2026-10-24)
+Preview verified live: https://preview.colorlib.com/theme/hustlehour/ (HTTP 200, 83,369 B) —
+`hustlehour` is the demo FOLDER name, not a design slug (`wp/template/hustlehour/` 404s).
 New name: Soundbite (`apps/soundbite`, `@free-react-templates/soundbite`)
 
 ## Replication verification

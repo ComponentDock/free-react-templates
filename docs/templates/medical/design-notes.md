@@ -1,7 +1,7 @@
 # Medical — Design Notes
 
-Reference: **Medical Wordpress Themes** — `https://colorlib.com/wp/template/medical-wordpress-themes/`  
-Live preview: `https://preview.colorlib.com/theme/medical-wordpress-themes/`  
+Reference: **Medical Wordpress Themes** — **Source slug:** `medical` (`https://colorlib.com/wp/template/medical/`, HTTP 200, 110,970 B; re-checked 2026-10-24).  
+Live preview: `https://preview.colorlib.com/theme/medical/` — HTTP 200, 34,704 B.  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/medical-free-clean-health-website-template.jpg — the ROW's slug `medical`, not the spec's `medical-wordpress-themes`  
 Shipped: https://medical.free.componentdock.com
 
