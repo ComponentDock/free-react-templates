@@ -1,5 +1,13 @@
 # Threshold (ColorLib Modal 04) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `modal-04` in an
+> earlier prep of `threshold`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `login-form-02`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-threshold/spec.md` is authoritative).
+> **Source slug:** `login-form-02`
+
+
 > Prep artifacts prepared on `main`. Recreation name: **Threshold** (NEW name —
 > the ColorLib source keeps its name "Modal 04"). Implementation ships on
 > `feat/template-threshold` per the standard PR flow.

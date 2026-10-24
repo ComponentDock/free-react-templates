@@ -1,5 +1,13 @@
 # Bezel (ColorLib Bootstrap Buttons 10) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-buttons-10` in an
+> earlier prep of `bezel`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `watch`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-bezel/spec.md` is authoritative).
+> **Source slug:** `watch`
+
+
 > Prep artifacts prepared on `main`. Recreation name: **Bezel** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 10"). Implementation
 > ships on `feat/template-bezel` per the standard PR flow.

@@ -1,5 +1,13 @@
 # Dwelling (ColorLib Oakberry) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `oakberry` in an
+> earlier prep of `dwelling`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `aler`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-dwelling/spec.md` is authoritative).
+> **Source slug:** `aler`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-dwelling`.
 

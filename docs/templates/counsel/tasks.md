@@ -1,5 +1,13 @@
 # Counsel (ColorLib Solicitor) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `solicitor` in an
+> earlier prep of `counsel`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `whisper`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-counsel/spec.md` is authoritative).
+> **Source slug:** `whisper`
+
+
 > Recreation of ColorLib "Solicitor" — free Bootstrap 5 law-firm /
 > legal-services website template (https://colorlib.com/wp/template/solicitor/)
 > under the NEW name **Counsel** ("counsel" — a lawyer or firm giving legal

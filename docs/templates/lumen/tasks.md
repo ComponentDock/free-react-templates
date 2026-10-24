@@ -1,5 +1,13 @@
 # Lumen (Colorlib Error 404 20) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-error-404-20` in an
+> earlier prep of `lumen`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `glint`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-lumen/spec.md` is authoritative).
+> **Source slug:** `glint`
+
+
 > Prep artifacts prepared on `main` while the Drift PR awaits review.
 > Implementation ships later on `feat/template-lumen`.
 

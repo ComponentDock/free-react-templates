@@ -1,5 +1,13 @@
 # Sartorial — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `malefashion` in an
+> earlier prep of `sartorial`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `menztailor`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-sartorial/spec.md` is authoritative).
+> **Source slug:** `menztailor`
+
+
 **Source:** ColorLib Malefashion  
 **Preview:** https://preview.colorlib.com/theme/malefashion/  
 **New name:** sartorial  

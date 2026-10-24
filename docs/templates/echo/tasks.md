@@ -1,5 +1,13 @@
 # Echo (Repeat) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `repeat` in an
+> earlier prep of `echo`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `beckham`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-echo/spec.md` is authoritative).
+> **Source slug:** `beckham`
+
+
 ## Recreated From
 
 - ColorLib Source: `Repeat` (`https://colorlib.com/wp/template/repeat/`)

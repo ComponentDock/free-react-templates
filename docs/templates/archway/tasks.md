@@ -1,5 +1,13 @@
 # Archway (ColorLib Archs) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `archs` in an
+> earlier prep of `archway`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `klift`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-archway/spec.md` is authoritative).
+> **Source slug:** `klift`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-archway`. Recreation name: **Archway** (NEW name —
 > the ColorLib source keeps its name "Archs").

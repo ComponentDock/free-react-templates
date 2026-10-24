@@ -1,5 +1,13 @@
 # Searchpad — Implementation TODO
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-search-10` in an
+> earlier prep of `searchpad`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `colorlib-search-21`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-searchpad/spec.md` is authoritative).
+> **Source slug:** `colorlib-search-21`
+
+
 Source: ColorLib "Search 10"
 Preview: https://colorlib.com/etc/searchf/colorlib-search-10/
 New name: searchpad

@@ -1,5 +1,13 @@
 # BrightPath — Implementation Todo & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `clever` in an
+> earlier prep of `brightpath`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `edusmart`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-brightpath/spec.md` is authoritative).
+> **Source slug:** `edusmart`
+
+
 ## Template info
 - **New name:** BrightPath
 - **ColorLib source:** Clever

@@ -1,5 +1,13 @@
 # Syllabus (ColorLib Ednews) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `ednews` in an
+> earlier prep of `syllabus`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `course`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-syllabus/spec.md` is authoritative).
+> **Source slug:** `course`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-syllabus`.
 

@@ -1,5 +1,13 @@
 # Voyager Template Implementation Outline & Task Breakdown
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `passport` in an
+> earlier prep of `voyager`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `tour`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-voyager/spec.md` is authoritative).
+> **Source slug:** `tour`
+
+
 Recreation of ColorLib "Passport" template (`https://colorlib.com/wp/template/passport/`).
 App folder: `apps/voyager` (`@free-react-templates/voyager`).
 Deployed at: `voyager.free.componentdock.com`.

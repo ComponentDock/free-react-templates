@@ -1,5 +1,13 @@
 # Forkful (ColorLib Accordion 02) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `accordion-02` in an
+> earlier prep of `forkful`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `foodfun`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-forkful/spec.md` is authoritative).
+> **Source slug:** `foodfun`
+
+
 > Prep artifacts prepared on `main`. Recreation name: **Forkful** (NEW name —
 > the ColorLib source keeps its name "Accordion 02"). Implementation ships on
 > `feat/template-forkful` per the standard PR flow.

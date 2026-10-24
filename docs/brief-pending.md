@@ -90,6 +90,14 @@ Off-diagonal findings batched into the same commit:
   1 `DOC-SILENT`) and its controls **15/15** after both extractor fixes, so the
   shipped-apps verdict is unchanged by the widening.
 
+## See also
+
+`docs/brief-file-consensus.md` — the same corpus read the other way: every
+`*.md` in a brief dir, not just the first one that names a design. A second file
+naming a *different* design (a leftover from an earlier prep of the same invented
+name: `craftfolio/todo.md` said Beckham over a Steve spec) is invisible to both
+axes above and is that axis' flag.
+
 ## Residual (deliberately not a flag)
 
 - `UNDER-BRIEF-SILENT` 65 + `PENDING-BRIEF-SILENT` 3: the brief names no design.

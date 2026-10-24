@@ -1,5 +1,13 @@
 # Keynest (ColorLib Youragent) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `youragent` in an
+> earlier prep of `keynest`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `rolast`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-keynest/spec.md` is authoritative).
+> **Source slug:** `rolast`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-keynest`. Recreation name: **Keynest** (NEW name —
 > the ColorLib source keeps its name "Youragent").

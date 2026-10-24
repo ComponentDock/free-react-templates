@@ -1,5 +1,13 @@
 # Pressly (ColorLib Newsflex) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `newsflex` in an
+> earlier prep of `pressly`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `magaznpro`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-pressly/spec.md` is authoritative).
+> **Source slug:** `magaznpro`
+
+
 <!-- ref-reverify:2026-10-22 -->
 
 > **Reference re-verified live 2026-10-22** —

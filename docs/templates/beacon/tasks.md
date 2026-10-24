@@ -1,5 +1,13 @@
 # Beacon (Colorlib Error 404 5) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-error-404-5` in an
+> earlier prep of `beacon`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `halo`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-beacon/spec.md` is authoritative).
+> **Source slug:** `halo`
+
+
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-beacon`.
 

@@ -1,5 +1,13 @@
 # Ember (Colorlib Error 404 4) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-error-404-4` in an
+> earlier prep of `ember`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `dingo`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-ember/spec.md` is authoritative).
+> **Source slug:** `dingo`
+
+
 > Prep artifacts prepared on `main` while the Drift PR awaits review.
 > Implementation ships later on `feat/template-ember`.
 

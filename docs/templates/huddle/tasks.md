@@ -1,5 +1,13 @@
 # Huddle (ColorLib Knights) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `knights` in an
+> earlier prep of `huddle`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `confe`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-huddle/spec.md` is authoritative).
+> **Source slug:** `confe`
+
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-huddle`. Source: ColorLib "Knights" — dark, high-contrast
 > American football club one-pager (https://colorlib.com/wp/template/knights/).

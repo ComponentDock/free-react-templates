@@ -1,5 +1,13 @@
 # Statute — Prep Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `lawful` in an
+> earlier prep of `statute`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `primelaw`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-statute/spec.md` is authoritative).
+> **Source slug:** `primelaw`
+
+
 **Source:** ColorLib "Lawful" — https://colorlib.com/wp/template/lawful/
 **Preview:** https://preview.colorlib.com/theme/lawful/
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/lawful-free-template.jpg

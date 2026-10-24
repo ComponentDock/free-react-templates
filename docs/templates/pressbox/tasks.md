@@ -1,5 +1,13 @@
 # Pressbox — Implementation Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `force` in an
+> earlier prep of `pressbox`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `magnews`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-pressbox/spec.md` is authoritative).
+> **Source slug:** `magnews`
+
+
 **Source:** ColorLib "Force" — https://colorlib.com/wp/template/force/
 **Preview:** https://preview.colorlib.com/theme/force/
 **New name:** pressbox

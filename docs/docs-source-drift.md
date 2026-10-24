@@ -7,6 +7,11 @@ Two layers claim which ColorLib design an app recreates:
 - the **brief** — `docs/templates/<name>/design-notes.md` + `tasks.md`, the layer
   an implementer actually reads while building.
 
+> **Scope of this axis:** it reads the first file that names a design. A brief
+> dir can hold up to six markdown files, and a stale leftover in a *second* file
+> is invisible here — that layer is `docs/brief-file-consensus.md`
+> (`scripts/verify-brief-files.py`, 45 files repaired 2026-10-24).
+
 Nothing compared the brief with the spec. On 2026-10-24 `docs/templates/jobboard/design-notes.md`
 defined `--color-brand: #1644ba` (Careers blue) over a spec that measured
 Jobboard's lime `#89ba16`, and `ledger`'s whole brief described "Accounting"

@@ -1,5 +1,13 @@
 # Vivid (ColorLib "Creativex 3") — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `creativex-3` in an
+> earlier prep of `vivid`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `creative-agency`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-vivid/spec.md` is authoritative).
+> **Source slug:** `creative-agency`
+
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-vivid` by an implementer stream.
 

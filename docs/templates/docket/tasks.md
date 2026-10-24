@@ -1,5 +1,13 @@
 # Docket (ColorLib Dropdown 13) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `dropdown-13` in an
+> earlier prep of `docket`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `lawfirm`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-docket/spec.md` is authoritative).
+> **Source slug:** `lawfirm`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-docket`.
 

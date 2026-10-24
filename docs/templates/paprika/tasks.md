@@ -1,5 +1,13 @@
 # Paprika (ColorLib Marco) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `marco` in an
+> earlier prep of `paprika`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `redcayenne`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-paprika/spec.md` is authoritative).
+> **Source slug:** `redcayenne`
+
+
 > Recreation of ColorLib "Marco" — free Bootstrap 4 restaurant website
 > template (https://colorlib.com/wp/template/marco/) under the NEW name
 > **Paprika** (the red spice — matches the red `#f42f2c` brand accent and

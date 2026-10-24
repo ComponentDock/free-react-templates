@@ -1,5 +1,13 @@
 # Reveal — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `04-comming-soon` in an
+> earlier prep of `reveal`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `unfold`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-reveal/spec.md` is authoritative).
+> **Source slug:** `unfold`
+
+
 ## Source
 - ColorLib: "Coming Soon V19" (`04-comming-soon`)
 - Preview: https://preview.colorlib.com/theme/04-comming-soon/ (404 — unreachable)

@@ -1,5 +1,13 @@
 # Byline (ColorLib Andrea) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `andrea` in an
+> earlier prep of `byline`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `nikki`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-byline/spec.md` is authoritative).
+> **Source slug:** `nikki`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-byline` by an implementer stream.
 

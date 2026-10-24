@@ -1,5 +1,13 @@
 # FitNest — Implementation Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `fitnezz` in an
+> earlier prep of `fitnest`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `zogin`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-fitnest/spec.md` is authoritative).
+> **Source slug:** `zogin`
+
+
 ## Template identity
 
 - **New name:** FitNest

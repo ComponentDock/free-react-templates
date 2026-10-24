@@ -1,5 +1,13 @@
 # Shuttercraft — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `cassi` in an
+> earlier prep of `shuttercraft`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `photography`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-shuttercraft/spec.md` is authoritative).
+> **Source slug:** `photography`
+
+
 Source: ColorLib Cassi (https://preview.colorlib.com/theme/cassi/)
 New name: shuttercraft
 

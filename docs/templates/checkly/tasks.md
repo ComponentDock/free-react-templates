@@ -1,5 +1,13 @@
 # Checkly (ColorLib Checkbox 04) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `checkbox-04` in an
+> earlier prep of `checkly`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `checkbox-02`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-checkly/spec.md` is authoritative).
+> **Source slug:** `checkbox-02`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-checkly`.
 

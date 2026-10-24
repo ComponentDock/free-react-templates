@@ -1,5 +1,13 @@
 # Toggle (ColorLib Bootstrap Buttons 02) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-buttons-02` in an
+> earlier prep of `toggle`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `checkbox-08`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-toggle/spec.md` is authoritative).
+> **Source slug:** `checkbox-08`
+
+
 > Prep artifacts prepared on `main`. Recreation name: **Toggle** (NEW name —
 > the ColorLib source keeps its name "Bootstrap Buttons 02"). Implementation
 > ships on `feat/template-toggle` per the standard PR flow.

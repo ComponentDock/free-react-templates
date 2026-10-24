@@ -1,5 +1,13 @@
 # Snaplens — Implementation Tasks
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `fotograp` in an
+> earlier prep of `snaplens`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `halo`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-snaplens/spec.md` is authoritative).
+> **Source slug:** `halo`
+
+
 Source: ColorLib Fotograp (https://colorlib.com/wp/template/fotograp/)
 Preview: https://preview.colorlib.com/theme/fotograp/
 

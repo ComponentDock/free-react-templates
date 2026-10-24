@@ -1,5 +1,13 @@
 # Nimbus (ColorLib Cloudnest) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `cloudnest` in an
+> earlier prep of `nimbus`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `saas`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-nimbus/spec.md` is authoritative).
+> **Source slug:** `saas`
+
+
 > Prep artifact written on `main` by the prep stream so implementers start
 > instantly. Implementation ships later on `feat/template-nimbus`.
 

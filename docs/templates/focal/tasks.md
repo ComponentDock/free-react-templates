@@ -1,5 +1,13 @@
 # Focal (ColorLib Revive) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `revive` in an
+> earlier prep of `focal`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `bato`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-focal/spec.md` is authoritative).
+> **Source slug:** `bato`
+
+
 > Recreation of ColorLib "Revive"
 > (https://colorlib.com/wp/template/revive/) under the NEW name **Focal**
 > (a photography-themed word — "focal length" — the "camera/lifestyle

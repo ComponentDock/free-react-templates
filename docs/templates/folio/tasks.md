@@ -1,5 +1,13 @@
 # Folio (ColorLib Article) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `article` in an
+> earlier prep of `folio`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `mellisa`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-folio/spec.md` is authoritative).
+> **Source slug:** `mellisa`
+
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-folio` by an implementer stream.
 

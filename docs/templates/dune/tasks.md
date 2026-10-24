@@ -1,5 +1,13 @@
 # Dune (Colorlib Error 404 2) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-error-404-2` in an
+> earlier prep of `dune`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `safario`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-dune/spec.md` is authoritative).
+> **Source slug:** `safario`
+
+
 > Prep artifacts prepared on `main` while the Drift PR awaits review.
 > Implementation ships later on `feat/template-dune`.
 

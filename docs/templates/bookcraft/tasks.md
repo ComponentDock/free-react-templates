@@ -1,5 +1,13 @@
 # BookCraft — Implementation Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-wizard-26` in an
+> earlier prep of `bookcraft`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `booke`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-bookcraft/spec.md` is authoritative).
+> **Source slug:** `booke`
+
+
 ## Source Mapping
 
 - **ColorLib source:** Colorlib Wizard 26

@@ -1,5 +1,13 @@
 # Onair — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `eighty8` in an
+> earlier prep of `onair`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `razo`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-onair/spec.md` is authoritative).
+> **Source slug:** `razo`
+
+
 Source: ColorLib Eighty8 → https://preview.colorlib.com/theme/eighty8/
 
 ## Component Order (section-by-section)

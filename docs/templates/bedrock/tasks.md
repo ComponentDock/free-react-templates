@@ -1,5 +1,13 @@
 # Bedrock — Implementation Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-footer-05` in an
+> earlier prep of `bedrock`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `bootstrap-footer-11`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-bedrock/spec.md` is authoritative).
+> **Source slug:** `bootstrap-footer-11`
+
+
 ## Source
 - ColorLib: Bootstrap Footer 05
 - Slug: `bootstrap-footer-05`

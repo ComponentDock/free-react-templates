@@ -1,5 +1,13 @@
 # Lumina (Colorlib Sunzine) — Tasks & Design Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `sunzine` in an
+> earlier prep of `lumina`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `ilene-berg`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-lumina/spec.md` is authoritative).
+> **Source slug:** `ilene-berg`
+
+
 > Prep artifact written on `main` by the prep stream so implementers start
 > instantly. Implementation ships later on `feat/template-lumina`.
 

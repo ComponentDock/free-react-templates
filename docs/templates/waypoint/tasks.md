@@ -1,5 +1,13 @@
 # Waypoint — Implementation Notes
 
+<!-- brief-file-consensus: superseded design -->
+> **SUPERSEDED DESIGN** — this file was written for ColorLib `coaching` in an
+> earlier prep of `waypoint`. The spec, the TEMPLATES.md row and the app are
+> ColorLib `colorlib-search-12`: treat the section list below as history where the two
+> disagree (`openspec/specs/template-waypoint/spec.md` is authoritative).
+> **Source slug:** `colorlib-search-12`
+
+
 Source: ColorLib Coaching (https://colorlib.com/wp/template/coaching/)
 Preview: https://preview.colorlib.com/theme/coaching/
 New name: waypoint
