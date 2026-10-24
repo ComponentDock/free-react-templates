@@ -6,7 +6,7 @@ import { Footer } from './Footer'
 describe('Footer', () => {
   it('renders the logo', () => {
     render(<Footer />)
-    expect(screen.getByRole('link', { name: 'Justlaw' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Lexon' })).toBeInTheDocument()
   })
 
   it('renders company links', () => {

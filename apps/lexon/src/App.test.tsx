@@ -5,10 +5,10 @@ import { App } from './App'
 describe('App', () => {
   it('renders all sections', () => {
     render(<App />)
-    expect(screen.getAllByText('Justlaw').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('Lexon').length).toBeGreaterThan(0)
     expect(screen.getByText(/we will fight/i)).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /legal practice area/i })).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /about just law/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /about lexon/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /free consultation/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /recent case studies/i })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /words from clients/i })).toBeInTheDocument()

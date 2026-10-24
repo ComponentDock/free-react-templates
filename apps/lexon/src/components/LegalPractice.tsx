@@ -34,7 +34,7 @@ export function LegalPractice() {
             <div key={item.title} className="group overflow-hidden rounded-lg bg-gray-50">
               <div className="relative overflow-hidden">
                 <img
-                  src={`https://picsum.photos/seed/justlaw-${item.title.toLowerCase().replace(/\s+/g, '-')}/400/250`}
+                  src={`https://picsum.photos/seed/lexon-${item.title.toLowerCase().replace(/\s+/g, '-')}/400/250`}
                   alt={item.title}
                   className="h-56 w-full object-cover transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"

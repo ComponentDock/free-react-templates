@@ -1,17 +1,17 @@
-# Justlaw — Design Notes
+# Lexon — Design Notes
 
-Reference: **Justlaw** — `https://colorlib.com/wp/template/justlaw/`  
+Reference: **Lexon** — `https://colorlib.com/wp/template/justlaw/`  
 Live preview: `https://preview.colorlib.com/theme/justlaw/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/justlaw-free-template.jpg  
-Shipped: https://justlaw.free.componentdock.com
+Shipped: https://lexon.free.componentdock.com
 
-Justlaw is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).
+Lexon is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Playfair Display**, **Playfair Display:wght@400;500;600;700;800;900**, **Roboto**
 
-## Design tokens (`apps/justlaw/src/index.css` `@theme`)
+## Design tokens (`apps/lexon/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ The template SHALL display a full-width hero with a background image, headline "
 The template SHALL display three practice area cards (Vehicle Accident, Health Law, Insurance Law) in a grid layout, each with an image, icon, title, and description.
 
 ### `About`
-The template SHALL display an "About Just Law" section with description text, counter stats (250+ Happy Clients, 920+ Winning Cases), and overlapping images.
+The template SHALL display an "About Lexon" section with description text, counter stats (250+ Happy Clients, 920+ Winning Cases), and overlapping images.
 
 ### `ConsultationForm`
 The template SHALL display a contact form with Name, Phone, Practice Area select, Email, Message textarea, and Submit button over a dark background image.
@@ -95,8 +95,8 @@ The template SHALL display a 4-column footer (logo + description + social, Compa
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/justlaw/` may name the source designer,
+- **Provenance ban.** No file under `apps/lexon/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/justlaw/public/CNAME` = `justlaw.free.componentdock.com`
-  and the package `homepage` = `https://justlaw.free.componentdock.com`.
+- **Deploy identity.** `apps/lexon/public/CNAME` = `justlaw.free.componentdock.com`
+  and the package `homepage` = `https://lexon.free.componentdock.com`.
