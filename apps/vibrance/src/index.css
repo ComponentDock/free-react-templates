@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Vibrance brand palette — from ColorLib Taxx preview
-     (https://preview.colorlib.com/theme/taxx/ + css/styles.css):
-     gradient orange #ff6a00 -> hot pink #FE018F, body #333, paragraphs #777 */
+  /* Vibrance brand palette — measured from the reference preview:
+     gradient orange #ff6a00 -> hot pink #FE018F, body #333, paragraphs #777. */
   --color-brand-orange: #ff6a00;
   --color-brand-pink: #fe018f;
   --color-ink: #333333;

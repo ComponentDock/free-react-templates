@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Turfly brand colors — from the ColorLib "Lawncare" preview
-     (https://preview.colorlib.com/theme/lawncare/ + css/style.css):
+  /* Turfly brand colors — measured from the reference stylesheet:
      a lawn care & landscaping theme with a green #4e9525 primary,
      yellow accent #fbd341, and dark footer #343a40. */
   --color-primary-50: #f0f9e8;
@@ -20,7 +19,7 @@
   --color-primary-800: #162e0b;
   --color-primary-900: #0b1706;
 
-  /* Yellow accent from ColorLib .btn_1 / seasonal cards (#fbd341). */
+  /* Yellow accent (.btn_1 / seasonal cards, #fbd341). */
   --color-accent-300: #fde68a;
   --color-accent-400: #fbd341;
   --color-accent-500: #e9be2a;
@@ -34,6 +33,6 @@
   --color-ink: #212529;
 
   /* Lato via Google Fonts <link> in index.html — matching the
-     ColorLib font pairing. */
+     reference font pairing. */
   --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
 }

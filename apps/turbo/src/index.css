@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Turbo brand palette — from the ColorLib "Nitro" preview
-     (https://preview.colorlib.com/theme/nitro/):
+  /* Turbo brand palette — measured from the reference stylesheet:
      a business agency theme with Bootstrap blue primary (#0d6efd),
      a purple accent (#505288), and Open Sans typography. */
   --color-primary-50: #e7f1ff;
@@ -20,7 +19,7 @@
   --color-primary-800: #063a7a;
   --color-primary-900: #042d5c;
 
-  /* Purple accent (ColorLib .circle-bg / secondary elements). */
+  /* Purple accent (.circle-bg / secondary elements). */
   --color-purple-400: #6b6daa;
   --color-purple-500: #505288;
   --color-purple-600: #3e4070;
@@ -32,6 +31,6 @@
   --color-silver: #dee2e6;
 
   /* Open Sans via Google Fonts <link> in index.html — matching the
-     ColorLib Nitro font pairing. */
+     reference font pairing. */
   --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
 }
