@@ -103,6 +103,10 @@ One app per PR; the deploy target changes, so re-run the per-app gate.
    (`dog<span class="text-brand">ger</span>`), so a plain `dogger`→`barkly`
    string swap misses it — fix both halves, then the navbar test's accessible
    name (`getByRole('link', { name: 'barkly' })`).
+   Grep **case-insensitively** and for display variants: the wordmark is
+   capitalised (`Justlaw`) while the CNAME/package is not (`justlaw`), and the
+   About heading can spell it out (`About Just Law` → `About Lexon`); a
+   lowercase-only grep misses all three.
 5. `git mv openspec/specs/template-<old> openspec/specs/template-<new>` and
    `git mv docs/templates/<old> docs/templates/<new>`; keep
    `recreation of ColorLib "<source>"` provenance, rewrite naming notes.
