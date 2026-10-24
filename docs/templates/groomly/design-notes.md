@@ -1,17 +1,17 @@
-# Pawpal — Design Notes
+# Groomly — Design Notes
 
 Reference: **Pawpal** — `https://colorlib.com/wp/template/pawpal/`  
 Live preview: `https://preview.colorlib.com/theme/pawpal/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg  
-Shipped: https://pawpal.free.componentdock.com
+Shipped: https://groomly.free.componentdock.com
 
-Pawpal is a multi-section pet-grooming website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "PawPal" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Groomly is a multi-section pet-grooming website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "PawPal" design (see TEMPLATES.md), shipped under the new name Groomly with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Lora**, **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/pawpal/src/index.css` `@theme`)
+## Design tokens (`apps/groomly/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Fonts loaded by `index.html` (Google Fonts): **Lora**, **Poppins**, **Poppins:wg
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Pawpal", links to the main sections (Services, About, Gallery, Contact), a "Book Now" button, and a dark-mode toggle button. (The demo's Team/Contact entries are separate pages; the single-page recreation anchors Contact to the footer.)
+The system SHALL render a navigation bar with the site name "Groomly", links to the main sections (Services, About, Gallery, Contact), a "Book Now" button, and a dark-mode toggle button. (The demo's Team/Contact entries are separate pages; the single-page recreation anchors Contact to the footer.)
 
 ### `Hero`
 The system SHALL render a hero section with the headline "Where Every Pet Gets the Royal Treatment", supporting copy, CTA buttons, and stat counters.
@@ -82,8 +82,8 @@ The system SHALL render a footer with the site name, an about blurb, link column
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/pawpal/` may name the source designer,
+- **Provenance ban.** No file under `apps/groomly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/pawpal/public/CNAME` = `pawpal.free.componentdock.com`
-  and the package `homepage` = `https://pawpal.free.componentdock.com`.
+- **Deploy identity.** `apps/groomly/public/CNAME` = `groomly.free.componentdock.com`
+  and the package `homepage` = `https://groomly.free.componentdock.com`.

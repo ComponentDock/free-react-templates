@@ -1,7 +1,7 @@
-# Pawpal (Colorlib PawPal) — Tasks & Design Notes
+# Groomly (ColorLib PawPal) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-pawpal`.
+> Implementation ships later on `feat/template-groomly`.
 
 ## Design notes
 
@@ -9,7 +9,7 @@
   template (source: https://colorlib.com/wp/template/pawpal/).
 - **Live demo DOM analyzed:** `https://pawpal-colorlib.pages.dev/` (HTTP
   200). The classic preview portal (`preview.colorlib.com/theme/pawpal/`
-  and variants) 404s — the portal's `products.js` manifest maps `#pawpal` to
+  and variants) 404s — the portal's `products.js` manifest maps `#groomly` to
   this Cloudflare Pages demo, which is the reference. Stylesheet:
   `/_astro/Base.BfUsFLRD.css` (Tailwind-based).
 
@@ -24,7 +24,7 @@ stylesheet
 (Poppins, Lora), so the live build matches the design the mirror served (the
 sheet's Astro hash differs from the mirror's prep-time `Base.BfUsFLRD.css` —
 a rebuild). The Cloudflare Pages mirror `https://pawpal-colorlib.pages.dev`
-is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/pawpal` was built
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/groomly` was built
 from the mirror's tokens before the migration, so it follows the mirror, not
 today's preview host.
 - **Structure observed (1:1, section order):**
@@ -47,13 +47,15 @@ today's preview host.
   tints **#f472b6**/**#fbcfe8**/**#fce7f3**; dark text **#111827**/**#1f2937**,
   muted **#9ca3af**/**#4b5563**; fonts **Poppins** + **Lora** (serif
   headings) via Google Fonts; filled rounded pink pill buttons.
-- **Recreation name:** Pawpal (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder `apps/pawpal`,
-  package `@free-react-templates/pawpal`.
+- **Recreation name:** Groomly — a new, original name that evokes the
+  design (pet grooming). Rule 5 forbids shipping under the source design's
+  name; the folder was renamed from the source name so no app reuses a
+  ColorLib name. App folder `apps/groomly`,
+  package `@free-react-templates/groomly`.
 - **Design approach:** pink primary scale in `@theme`
   (`--color-primary-600: #db2777` — drives shared ui Button/ButtonLink);
   light/pink section alternation; seeded picsum placeholders
-  `https://picsum.photos/seed/pawpal-<n>/<w>/<h>`; lucide-react icons
+  `https://picsum.photos/seed/groomly-<n>/<w>/<h>`; lucide-react icons
   (Scissors, Bath, Dog, Moon, Hand, Baby, BadgeCheck, Heart, Sparkles,
   Snowflake, Quote); repo-standard Navbar (dark-mode toggle) and Footer
   chrome; social icons (GitHub, X, LinkedIn) inline SVG.
@@ -66,13 +68,13 @@ today's preview host.
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-pawpal/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-groomly/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep); refined
-      on `feat/template-pawpal` with fetched demo DOM/CSS findings
+      on `feat/template-groomly` with fetched demo DOM/CSS findings
       (2026-08-04).
 - [x] Validate spec: `npm run spec:validate` (221 specs pass).
-- [x] Create `apps/pawpal` (copy `apps/canter`; rename package to
-      `@free-react-templates/pawpal`; drop unused zod dep).
+- [x] Create `apps/groomly` (copy `apps/canter`; rename package to
+      `@free-react-templates/groomly`; drop unused zod dep).
 - [x] TDD: tests first for Navbar, Hero, Services, WhyUs, Gallery,
       Testimonials, Cta, Footer, App composition; 11 tests, all green.
 - [x] Implement components (green) at 100% coverage.
@@ -92,8 +94,8 @@ today's preview host.
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/pawpal/` may name the source designer,
+- **Provenance ban.** No file under `apps/groomly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/pawpal/public/CNAME` = `pawpal.free.componentdock.com`
-  and the package `homepage` = `https://pawpal.free.componentdock.com`.
+- **Deploy identity.** `apps/groomly/public/CNAME` = `groomly.free.componentdock.com`
+  and the package `homepage` = `https://groomly.free.componentdock.com`.

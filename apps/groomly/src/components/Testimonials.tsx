@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react'
 const testimonials = [
   {
     quote:
-      'My anxious rescue dog Max used to hate grooming, but the team at Pawpal has completely changed his outlook. He actually gets excited when we pull into the parking lot!',
+      'My anxious rescue dog Max used to hate grooming, but the team at Groomly has completely changed his outlook. He actually gets excited when we pull into the parking lot!',
     name: 'Sarah Mitchell',
     role: 'Golden retriever mom',
   },

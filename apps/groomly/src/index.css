@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Pawpal brand pink — from the reference stylesheet
+  /* Groomly brand pink — from the reference stylesheet
      (/_astro/Base.BfUsFLRD.css): primary buttons/accents #db2777, hover
      #be185d, tints #f472b6/#fbcfe8/#fce7f3. Tailwind pink scale keyed on
      pink-600 so the shared ui Button/ButtonLink "primary" variant works. */

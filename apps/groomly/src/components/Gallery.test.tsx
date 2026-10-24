@@ -13,7 +13,7 @@ describe('Gallery', () => {
     expect(images.length).toBeGreaterThanOrEqual(6)
     for (const image of images) {
       expect(image).toHaveAccessibleName()
-      expect(image).toHaveAttribute('src', expect.stringContaining('picsum.photos/seed/pawpal-'))
+      expect(image).toHaveAttribute('src', expect.stringContaining('picsum.photos/seed/groomly-'))
     }
   })
 })

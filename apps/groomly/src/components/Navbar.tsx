@@ -26,7 +26,7 @@ export function Navbar() {
           href="#home"
           className="font-serif text-2xl font-bold text-primary-600 dark:text-primary-400"
         >
-          Pawpal
+          Groomly
         </a>
 
         <div className="flex items-center gap-4">

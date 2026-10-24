@@ -1,8 +1,8 @@
-# Template: Pawpal (Pet Grooming & Boarding Website)
+# Template: Groomly (Pet Grooming & Boarding Website)
 
 ## Purpose
 
-Pawpal is a multi-section pet-grooming website template in the
+Groomly is a multi-section pet-grooming website template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "PawPal" design (see TEMPLATES.md), built under a different
 name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -10,7 +10,7 @@ name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 The original design is a modern pink pet-grooming landing page: hero with a
 "Where Every Pet Gets the Royal Treatment" headline and stats, six service
 cards, a "why us" feature strip, a photo gallery, testimonials, a CTA band,
-and a dark footer. Pawpal follows the same structure and adds the repo's
+and a dark footer. Groomly follows the same structure and adds the repo's
 standard dark-mode toggle and accessible patterns. All imagery is recreated
 with seeded placeholder images (no assets copied).
 
@@ -36,7 +36,7 @@ stylesheet
 (Poppins, Lora), so the live build matches the design the mirror served (the
 sheet's Astro hash differs from the mirror's prep-time `Base.BfUsFLRD.css` —
 a rebuild). The Cloudflare Pages mirror `https://pawpal-colorlib.pages.dev`
-is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/pawpal` was built
+is still **NXDOMAIN** (re-checked 2026-10-13d). ⚠️ `apps/groomly` was built
 from the mirror's tokens before the migration, so it follows the mirror, not
 today's preview host.
 - **Structure (1:1, section order):**
@@ -80,27 +80,27 @@ today's preview host.
   wraps the header; sections recreated with Tailwind tokens
   (`--color-primary-*` = Tailwind pink scale keyed on `#db2777`, serif
   headings via `--font-serif: 'Lora'`); placeholder images
-  via `https://picsum.photos/seed/pawpal-<n>/<w>/<h>`; icons from
+  via `https://picsum.photos/seed/groomly-<n>/<w>/<h>`; icons from
   lucide-react; social icons inline SVG (GitHub, X, LinkedIn); no assets
   copied.
 
-Pawpal lives in `apps/pawpal` and uses shared components from `packages/ui`
+Groomly lives in `apps/groomly` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Pawpal", links
+The system SHALL render a navigation bar with the site name "Groomly", links
 to the main sections (Services, About, Gallery, Contact), a "Book Now"
 button, and a dark-mode toggle button. (The demo's Team/Contact entries are
 separate pages; the single-page recreation anchors Contact to the footer.)
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Pawpal page is rendered
+- **GIVEN** the Groomly page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Pawpal" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Groomly" and links to the main sections
 - **AND** the navbar SHALL show a "Book Now" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -193,7 +193,7 @@ columns (Services, Company, Support), and contact details.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Pawpal" and an about blurb
+- **THEN** it SHALL show the site name "Groomly" and an about blurb
 - **AND** it SHALL show link columns and contact details
 
 ### Requirement: Page composition
@@ -203,10 +203,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Pawpal app is rendered
+- **GIVEN** the Groomly app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Pawpal — Pet Grooming & Boarding Website Template"
+- **AND** the document title SHALL be "Groomly — Pet Grooming & Boarding Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -226,7 +226,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/pawpal/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/groomly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -235,7 +235,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/pawpal/` is inspected
+- **WHEN** every non-test file under `apps/groomly/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -243,12 +243,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Pawpal" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Groomly" and links to the main sections
 - [x] Hero section — it SHALL contain a level-1 heading matching "Where Every Pet Gets the Royal Treatment"
 - [x] Services section — it SHALL show the heading "Our Services"
 - [ ] Why-us section — it SHALL show the heading "A Place Where Pets Come First"
 - [x] Gallery section — it SHALL show the heading "Happy Pets Gallery"
 - [x] Testimonials section — it SHALL show the heading "What Pet Parents Say"
 - [x] CTA section — it SHALL show the heading "Ready to Pamper Your Pet?"
-- [x] Footer — it SHALL show the site name "Pawpal" and an about blurb
+- [x] Footer — it SHALL show the site name "Groomly" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
