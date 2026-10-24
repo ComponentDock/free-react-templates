@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Landly palette — measured from the reference stylesheet and computed styles:
+   brand lime-olive green #91b029 (CTAs, filter bar, prices, icons, heading
+   rules, agent photo frames, testimonial band), brand hover #779122,
+   body/heading slate #364d59 at weight 300, black #000 (services panel,
+   properties band, footer), card panel #222, light band #f6f5f5,
+   agent social circles #efefef, meta grey #999.
+   Type: DM Sans only (300 base weight); form controls 55px tall, 4px radius,
+   hairline border #e6e6e6; section rhythm 7rem desktop / 3rem mobile. */
+@theme {
+  --color-brand: #91b029;
+  --color-brand-deep: #779122;
+  --color-body: #364d59;
+  --color-ink: #000000;
+  --color-panel: #222222;
+  --color-light: #f6f5f5;
+  --color-meta: #999999;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #364d59;
+    font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #364d59;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  ::selection {
+    background: #91b029;
+    color: #ffffff;
+  }
+}
