@@ -5,13 +5,18 @@ Live preview: `https://preview.colorlib.com/theme/fashion/`
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-free-template.jpg  
 Shipped: https://silhouette.free.componentdock.com
 
-A single-page apparel store landing template with hero, product grid, about section, testimonials, blog posts, newsletter signup, and footer. Minimalist fashion aesthetic with Lato + Playfair Display fonts, green (#6DAB3C) brand color, and dark charcoal (#1a1a2e) section backgrounds.
+A single-page apparel store landing template with hero, product grid, about section, testimonials, blog posts, newsletter signup, and footer. Minimalist fashion aesthetic **measured from the live page**: Lato body + Playfair Display headings, coral `#ff6363` lead (30 declarations) on white, hairline `#efefef` column rules, no dark bands. The *shipped app* still paints an earlier invented green/lavender/charcoal palette — that is app debt, recorded in §Reference identity below and in the spec's prep correction.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Lato**, **Lato:wght@300;400;700;900**, **Playfair Display**
 
 ## Design tokens (`apps/silhouette/src/index.css` `@theme`)
+
+> **This table is the shipped app's own record, not the reference.** It lists what
+> `apps/silhouette` paints today; none of these values occurs in the reference
+> sheet. The measured design is the coral table in §Reference identity — a rebuild
+> follows that one, and the app is the debt.
 
 | token | value | role |
 | --- | --- | --- |
@@ -83,13 +88,23 @@ The template SHALL display a 3-column footer with About text, Quick Links, and C
 - **Deploy identity.** `apps/silhouette/public/CNAME` = `silhouette.free.componentdock.com`
   and the package `homepage` = `https://silhouette.free.componentdock.com`.
 
-## Token re-read (2026-10-24s) — REFERENCE RESOLVED
+## Reference identity — catalogue URL collision (measured 2026-10-24)
 
 - The demo is live: `https://preview.colorlib.com/theme/fashion/` (HTTP 200,
   26,584 B; sheet `css/style.css` 29,430 B, sha256 `75499322b02a2b2d…`). The
   `theme/fashion-2/`, `theme/fashion2/` and `theme/bootstrap/fashion-2/` paths
   all 404 — the entry's screenshot (`fashion-free-template.jpg`) renders the
   coral design at `theme/fashion/`.
+- **Two catalogue entries, one demo.** `catalog-141306` (`/wp/template/fashion/`,
+  thumbnail `fashion-bold-free-fashion-website-template-768x619.jpg`, the bold
+  green→yellow design) and key `fashion` (`/wp/template/fashion-2/`, thumbnail
+  `fashion-free-template.jpg`) both carry `url: theme/fashion/`. The directory
+  renders the **`fashion-2`** post's page — the post's own `og:image` is
+  `fashion-free-template.jpg` (2026-10-24). The bold design's own demo is dead on
+  every prefix probed (`fashion-2/`, `fashion2/`, `ashion/`, `bootstrap/fashion-2/`
+  404; `theme/bold/` is a different ColorLib post, coral `#ff926b` + Raleway) and
+  all three archive guesses 404 (`fashion.zip`, `fashion-2.zip`, `asion.zip`), so
+  the directory's identity is settled by the live render, not by the catalogue key.
 - **Accent is coral `#ff6363`** (30 declarations — `a`, `.text-primary`, nav
   active, mobile menu, dropdown active), hover `#ff7777` (2, `.btn-primary:hover`).
   Ink `#000000`; body muted `#a09b9b`; hairlines `#efefef` (`.lines-wrap` column

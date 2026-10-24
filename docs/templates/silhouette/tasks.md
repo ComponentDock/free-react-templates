@@ -1,6 +1,6 @@
 # Silhouette — Implementation Tasks
 
-## Token re-read (2026-10-24s) — superseded values below
+## Reference identity — catalogue URL collision (measured 2026-10-24; superseded values below)
 
 This task list was written before the live sheet was re-measured. Where it names
 design colours or fonts, use `openspec/specs/template-silhouette/spec.md`
@@ -10,7 +10,7 @@ reference demo is `https://preview.colorlib.com/theme/fashion/`; lead **coral `#
 
 Source design: **Fashion 2** (`https://colorlib.com/wp/template/fashion-2/`) → recreation name **silhouette**. Shipped at https://silhouette.free.componentdock.com.
 
-Scope: A single-page apparel store landing template with hero, product grid, about section, testimonials, blog posts, newsletter signup, and footer. Minimalist fashion aesthetic with Lato + Playfair Display fonts, green (#6DAB3C) brand color, and dark charcoal (#1a1a2e) section backgrounds.
+Scope: A single-page apparel store landing template with hero, product grid, about section, testimonials, blog posts, newsletter signup, and footer. Minimalist fashion aesthetic measured from the live page: Lato + Playfair Display, coral `#ff6363` lead on white with `#efefef` hairline column rules (the green `#6DAB3C` / lavender `#B97EBB` / charcoal `#1a1a2e` palette below is invented and is the shipped app's debt, not the design).
 
 ## Component breakdown
 
@@ -98,7 +98,7 @@ Render order as composed in `apps/silhouette/src/App.tsx`:
 ### Cross-cutting requirements
 
 - **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/silhouette/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
-  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/silhouette/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; **Fonts:** Lato (sans-serif body), Playfair Display (serif headings); **Brand color:** #6DAB3C (green primary); **Accent color:** #B97EBB (lavender/purple); **Dark charcoal:** #1a1a2e (nav, footer backgrounds); **White:** #ffffff (card backgrounds, light sections); **Light gray:** #f7f7f7 (section alternating backgrounds); **Button style:** rounded, flat, green primary, hover darkens; **Section rhythm:** alternating light/dark backgrounds, generous padding; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/silhouette/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; **Fonts:** Lato (sans-serif body), Playfair Display (serif headings); **Brand color:** #ff6363 (coral lead, 30 declarations in the reference sheet) with #ff7777 hover; **Ink:** #000000; **Muted body copy:** #a09b9b; **Hairlines:** #efefef (`lines-wrap` column rules); **White:** #ffffff surfaces; **Button style:** 30px pill, flat coral primary, hover lightens; **Section rhythm:** white bands separated by fixed hairline rules, generous padding, no dark sections. The shipped app's green `#6DAB3C` / lavender `#B97EBB` / charcoal `#1a1a2e` palette occurs nowhere in the reference and is recorded as app debt. [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Verification
 

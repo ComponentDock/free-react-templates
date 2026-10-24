@@ -3,11 +3,29 @@
 Reference: **Yummy 2** — `https://colorlib.com/wp/template/yummy-2/`  
 Live preview: `https://preview.colorlib.com/theme/yummy/` (the only path: the
 slug's own directory 404s — `colorlibPreviewAliases` maps `yummy-2 → yummy`;
-this row owns the shared directory, see the identity note in the spec)  
+this row owns the shared directory, see §Reference identity)  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg  
 Shipped: https://umami.free.componentdock.com
 
 Umami is a single-page food magazine / recipe-blog landing template in the free-react-templates monorepo.
+
+## Reference identity — catalogue URL collision (measured 2026-10-24)
+
+Two catalogue entries claim `https://preview.colorlib.com/theme/yummy/`, and the
+directory can only render one of them:
+
+| key | post | thumbnail | what the directory serves |
+| --- | --- | --- | --- |
+| `yummy` | `/wp/template/yummy-2/` — "Food **Magazine**" (this row) | `yummy-free-template.jpg` | **this design** |
+| `catalog-134132` | `/wp/template/yummy/` — "Creative Food **Blog**" | `yummy-minimal-food-blog-website-template-768x632.jpg` | no — that design has no demo |
+
+Evidence (re-probed 2026-10-24): the live page is 21,709 B, its sheet
+`css/style.css` is 42,720 B (sha256 `d08c771dd457…`), and the `yummy-2` post's
+own `og:image` is `yummy-free-template.jpg` — the same image as this row's
+screenshot. Every alternative prefix 404s (`theme/yummy-2/`, `theme/yummy2/`,
+`theme/bootstrap/yummy/`), so the blog design is unreachable and the magazine
+design is the one this brief may prescribe. The full chain is in
+`openspec/specs/template-umami/spec.md` §Reference identity.
 
 ## Typography
 

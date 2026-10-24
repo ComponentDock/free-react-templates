@@ -53,9 +53,18 @@ Buckets (partition, each group exactly once):
     UNNOTED      specs cite the directory and none records the collision (flag)
     NO-SPEC      no spec cites the directory at all
 
+`NOTED` is a GROUP fact: one citing spec with a note clears the group, so a
+sibling spec (or a brief in `docs/templates/<name>/`) can still cite the shared
+directory with no note at all. Measured 2026-10-24: NOTED 8/8 while 3 citing
+files were silent (`silhouette` design-notes + tasks on `theme/fashion/`,
+`umami` design-notes on `theme/yummy/`). Those are now fixed and the report
+prints the per-file residue at the end; `--strict-files` exits 1 when any group
+still carries a silent citing file.
+
 Usage:
     python3 scripts/verify-catalog-collisions.py            # report
     python3 scripts/verify-catalog-collisions.py --strict    # exit 1 if UNNOTED
+    python3 scripts/verify-catalog-collisions.py --strict-files  # + silent files
     python3 scripts/verify-catalog-collisions.py --group theme/fashion/
     python3 scripts/verify-catalog-collisions.py --self-test # controls only
 
@@ -177,6 +186,8 @@ def report(catalog, rows=None, only=None):
             "rows": {s: rows.get(s, []) for s in (slug_of(e) for _, e in entries)},
             "citing": says(cites),
             "noted": says([(p, True) for p in noted]),
+            # group-level NOTED hides a citing FILE with no note — keep it visible
+            "bare": says([(p, False) for p, ok in cites if not ok]),
         })
     return buckets
 
@@ -220,6 +231,9 @@ def self_test():
         ("bare hex is not a note", "the sheet paints #ff6363 thirty times", False),
         ("identity phrase accepted", "Reference identity (measured 2026-10-24)", True),
         ("retired variant accepted", "the bold variant is a retired design", True),
+        ("section heading accepted", "## Reference identity — catalogue URL collision (measured 2026-10-24)", True),
+        # the failure this axis found: a pointer to a note is not a note (umami)
+        ("cross-reference is not a note", "see the identity note in the spec", False),
     ]
     for name, text, expect in notes:
         got = bool(NOTE_RX.search(text))
@@ -234,6 +248,8 @@ def self_test():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--strict", action="store_true", help="exit 1 when UNNOTED > 0")
+    ap.add_argument("--strict-files", action="store_true",
+                    help="exit 1 when a citing file carries no collision note")
     ap.add_argument("--group", help="only this directory (substring match)")
     ap.add_argument("--self-test", action="store_true", help="run controls only")
     ap.add_argument("--json", action="store_true", help="machine-readable output")
@@ -262,10 +278,16 @@ def main():
                 for line, text in rows:
                     print(f"     row {line}: {text[:100]}")
             print(f"     citing specs: {len(g['citing'])} → {', '.join(os.path.basename(os.path.dirname(p)) if 'specs' in p else p for p in g['citing'][:6])}")
+            for b in g.get("bare", []):
+                print(f"     silent: {b}")
+    bare = [(g["url"], b) for g in sum(buckets.values(), []) for b in g.get("bare", [])]
     print(f"\ncolliding directories: {total} "
           f"(NOTED {len(buckets['NOTED'])} · UNNOTED {len(buckets['UNNOTED'])} "
           f"· NO-SPEC {len(buckets['NO-SPEC'])})")
+    print(f"citing files without a note: {len(bare)}")
     if args.strict and buckets["UNNOTED"]:
+        return 1
+    if args.strict_files and bare:
         return 1
     return 0
 
