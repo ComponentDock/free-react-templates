@@ -63,6 +63,46 @@ and `verify-live-tokens.py` resolve demos **catalogue-first**, so a colliding ke
 makes them measure a spec against its *sibling's* page — run them with
 `NO_CATALOG=1` as the A/B control when a verdict looks impossible.
 
+## The resolver is collision-aware (`catalog_resolve.demo_via`, 2026-10-24y)
+
+`verify-shape-tokens.py`, `verify-live-tokens.py` and
+`classify-live-token-flags.py` resolve a spec's demo **catalogue-first**
+through `scripts/catalog_resolve.py`. That made a colliding key measure a spec
+against its *sibling's* page — the false verdicts this axis documented — and the
+only workaround was to re-run with `NO_CATALOG=1`.
+
+`demo_via()` now closes that hole. When the catalogue sends a slug to a
+directory claimed by **more than one product entry**, it probes the slug's own
+`/theme/<slug>/` and prefers it **only if it answers 200 with a different body
+digest** (`via="slug-own"`). The digest is the deciding fact because a 200
+never adjudicates identity (see above); the slug that owns the directory gets
+its own page back unchanged. `colorlibPreviewAliases` entries are plain strings
+in the map, so an alias spelling is not counted as a second claim.
+
+Measured blast radius (live, 2026-10-24): **8 colliding directories · 20
+catalogue keys resolve through one · exactly 1 changes**:
+
+| slug | map → | before | after |
+| --- | --- | --- | --- |
+| `listed2` | `theme/listed/` | sibling's page | **`theme/listed2/`** — `via=slug-own`, 28,876 B, `<title>` "Listed — Colorlib Website Template" |
+
+The other 19 keys (`listed`, `medical`, `medical-2`, `mediplus`,
+`catalog-141348`, `lawyer`, `lawfirm`, `lawfirm-2`, `music`, `music-2`, `yummy`,
+`yummy-2`, `fashion`, `fashion-2`, `catalog-141301/134132/141306/199854/141453`)
+are unchanged: their own directory *is* the resolved one, the bodies match, and
+no probe fires for a non-colliding entry. The extra fetch is bounded by the
+`claims > 1` test, so the corpus-wide behaviour is identical everywhere else.
+
+```sh
+python3 scripts/catalog_resolve.py --self-test   # 7/7 controls
+```
+
+Effect on the record: the two `SHAPE-WRONG` flags on `placecraft` and
+`spotlight` (`.form-search-wrap .btn { border-radius: 30px }` measured against
+`theme/listed/`'s sharp `.btn`) now read **0 flags in catalogue-first mode** —
+`--slug placecraft` goes 1 → 0 without `NO_CATALOG=1`, which stays as the A/B
+control. `verify-live-tokens.py --all --worktree` is **0 flags** again.
+
 ## The gap this axis hid: group-level vs file-level
 
 `NOTED` was a **group** fact — one citing spec with a note cleared the directory.
@@ -86,7 +126,10 @@ cross-reference is not a note — a brief is read alone.
 
 1. ~~Inventory: 8 colliding directories~~ — done; all 8 adjudicated and noted.
 2. ~~Per-file residue (3 files)~~ — done 2026-10-24.
-3. **Row-pointer left to the implementer/rename stream** (not prep work): the
+3. ~~Make `catalog_resolve.demo_via` collision-aware~~ — done 2026-10-24y
+   (`via="slug-own"`, body-digest test, 7/7 self-test; 20 keys → 1 moved). The
+   two `SHAPE-WRONG` false verdicts it was blocking are gone.
+4. **Row-pointer left to the implementer/rename stream** (not prep work): the
    *other* design in a collision is unshipped where it has no demo, so its row is
    a false `[x]`. `medical` (row 2245, "TEAM OF EXCELLENCE" — no demo exists),
    `music` (`catalog-141301` fullscreen design), `fashion` (row 1709, bold
