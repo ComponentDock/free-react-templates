@@ -244,16 +244,23 @@ marks them `[x]` with `https://portray.free.componentdock.com` after merge.
 ### Requirement: Transparent header over the hero
 
 A **99px** header SHALL be `position: absolute` at the top of the page
-(`z-index: 9`), with **no fill**, `padding: 0 88px` (40px ≤1199, `15px 20px`
-≤991) and a `1px solid rgba(21,3,3,0.2)` bottom rule, so the hero's green band
-runs underneath it from `y=0`. It SHALL carry the wordmark at the left and, at
-the right, five links — Home, About, Portfolio, Blog, Contact — each
-**20px Chivo 400 ink** with `padding: 34px 42px` and a
+(`z-index: 9`), with **no fill**, `padding: 0 100px` at ≥1024 (the source's
+88px plus its 12px container gutter — the wordmark measures x=100 at 1440;
+`15px 20px` below) and a `1px solid rgba(21,3,3,0.2)` bottom rule, so the hero's
+green band runs underneath it from `y=0`. It SHALL carry the wordmark at the
+left and, at the right, five links — **Home, About, Expertise, Portfolio,
+Contact** — each **20px Chivo 400 ink** with `padding: 34px 42px` and a
 `1px solid rgba(21,3,3,0.2)` **left divider**, plus a separate underlined
-**"Fire me an Email"** link (20px, ink, `text-decoration: underline`). Blog
-SHALL expose a submenu (Blog, Blog Details, Elements) on a **`#01FF56` panel**
-(190px wide, `padding: 17px 0`, items 18px ink) that opens on hover **and on
-keyboard focus**. Hovering a top-level link SHALL fill it **`#00E64D`**.
+**"Fire me an email"** link (20px, ink, `text-decoration: underline`) with a
+42px left margin. Hovering a link SHALL fill it **`#00E64D`**.
+
+> **Documented delta (implementer, `feat/template-portray`):** the source's nav
+> names `Blog` and hides a `Blog · Blog Details · Elements` submenu behind it,
+> but those three inner pages are out of scope for a one-page recreation, so
+> every nav item points at a section that exists on this page (`#top`, `#about`,
+> `#expertise`, `#portfolio`, `#contact`) and no submenu is rendered. Shipping a
+> `Blog` label over a dead `#` anchor would have been the only alternative; the
+> header keeps the source's five-divider geometry and the separate email link.
 
 #### Scenario: Header floats on the hero
 
@@ -264,13 +271,13 @@ keyboard focus**. Hovering a top-level link SHALL fill it **`#00E64D`**.
 - **AND** a 1px `rgba(21,3,3,0.2)` rule SHALL close the header
 - **AND** the wordmark and six right-aligned items SHALL render
 
-#### Scenario: Nav hover and submenu
+#### Scenario: Nav hover and email link
 
 - **GIVEN** the desktop nav is rendered
-- **WHEN** the pointer enters "Blog"
+- **WHEN** the pointer enters a nav link
 - **THEN** that link SHALL fill `#00E64D`
-- **AND** a `#01FF56` 190px panel SHALL reveal Blog, Blog Details and Elements
-- **AND** tabbing to the same link SHALL open the panel as well
+- **AND** every nav item SHALL point at a section that exists on the page
+- **AND** the separate "Fire me an email" link SHALL open the visitor's mail client
 
 #### Scenario: Mobile menu
 
@@ -590,7 +597,7 @@ footer is corrected to `h3`), and the page SHALL NOT scroll horizontally at
 
 - **GIVEN** the page is rendered
 - **WHEN** the user tabs through it
-- **THEN** the wordmark, every nav item and submenu item, the hero CTA, the about CTA, every company link, every gallery tile and the footer form controls SHALL show a focus ring
+- **THEN** the wordmark, every nav item, the hero CTA, the about CTA, every company link, every gallery tile and the footer form controls SHALL show a focus ring
 - **AND** icon-only controls SHALL announce a name
 
 #### Scenario: Reduced motion
@@ -609,22 +616,22 @@ footer is corrected to `h3`), and the page SHALL NOT scroll horizontally at
 
 ## Verification checklist
 
-- [ ] `openspec/specs/template-portray/spec.md` is this file; `npm run spec:validate` passes.
-- [ ] `apps/portray` exists with `package.json` name `@free-react-templates/portray`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `portray.free.componentdock.com`, `homepage` = `https://portray.free.componentdock.com`.
-- [ ] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-neon: #01FF56`, `--color-band: #5AFF80`, `--color-hover: #00E64D`, `--color-ink: #150303`).
-- [ ] Section order matches the nine-row table (header → hero → about → expertise → experience → quote band → education → gallery → footer) with the measured heights at 1440 (900 / 1,072 / 684 / 1,056 / 662 / 767 / footer 880).
-- [ ] Header is absolute and transparent over the hero at y=0, 99px, `padding: 0 88px`, with a 1px `rgba(21,3,3,0.2)` bottom rule and left-divided nav links that fill `#00E64D` on hover; sticky variant fills `#5AFF80`.
-- [ ] Hero: `#5AFF80` band, `h1` 80px/400 Shippori with −2px tracking, 40px/300 Chivo subline, 224×69 outlined square button, portrait with its own `#01FF56` disc, portrait hidden ≤767.
-- [ ] About: photo background + white `max-width: 1076px` card with 100px padding, green eyebrow (1.6px tracking), 40px/400 statement, `#01FF56` CTA with ink text, four skill bars at 60/89/60/89 on an 8px `rgba(1,255,86,0.1)` track.
-- [ ] Expertise: `#01FF56` box with three 40px/400 headings (first ink, others `rgba(21,3,3,0.3)`), 27px white rotated notch at `right: -15px; top: 80px`, two `#656565` 18px paragraphs beside it.
-- [ ] Experience 4 rows / Education 2 rows: 60px/400 headings, single `#E2E2E2` first-row hairline, 30px/400 roles, "at <company>" with `#928888` "at", full-width 16px/300 descriptions.
-- [ ] Quote band 662px on `#01FF56`, photo left 56% / quote right 35% at 40px/300 Chivo, stacking photo-first ≤767.
-- [ ] Gallery strip renders five tiles (not the source's 1px collapse) with the 0.3 `#150303` hover wash, white 30px zoom glyph, keyboard-operable lightbox and no overflow at 390px.
-- [ ] Footer `#01FF56`: statement `h2` 40px/400, "Drop a line" form (three 50px underline inputs + 76px textarea + dark 238×64 submit), "Contact me" list, outlined résumé button, three 50px circular social buttons, 26px bottom line.
-- [ ] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/portray` = 0 hits.
-- [ ] No horizontal overflow at 390px (`document.documentElement.scrollWidth === 390`); ink colour set on the page root (not only on `p`); submit uses weight 700.
-- [ ] Placeholder imagery uses `https://picsum.photos/seed/portray-<n>/<w>/<h>` (deterministic: portrait, about desk, quote photo, five gallery tiles), Chivo + Shippori Mincho loaded via one Google Fonts `<link>`, icons from `lucide-react`.
-- [ ] `scripts/verify-app.sh portray` passes: typecheck, lint, 100% coverage tests, build.
-- [ ] Desktop (1440) and mobile (390) renders compared against the reference fold-by-fold; deviations listed in the PR.
-- [ ] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/portray" package-lock.json` ≥ 1.
-- [ ] TEMPLATES.md rows **593**, **2398** and **2523** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://portray.free.componentdock.com` after merge (prep stream does none of this).
+- [x] `openspec/specs/template-portray/spec.md` is this file; `npm run spec:validate` passes.
+- [x] `apps/portray` exists with `package.json` name `@free-react-templates/portray`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `portray.free.componentdock.com`, `homepage` = `https://portray.free.componentdock.com`.
+- [x] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-neon: #01FF56`, `--color-band: #5AFF80`, `--color-hover: #00E64D`, `--color-ink: #150303`).
+- [x] Section order matches the nine-row table (header → hero → about → expertise → experience → quote band → education → gallery → footer) with the measured heights at 1440 (900 / 1,072 / 684 / 1,056 / 662 / 767 / footer 880).
+- [x] Header is absolute and transparent over the hero at y=0, 99px, `padding: 0 100px` at ≥1024 (wordmark at x=100 at 1440), with a 1px `rgba(21,3,3,0.2)` bottom rule and left-divided nav links that fill `#00E64D` on hover; sticky variant fills `#5AFF80`.
+- [x] Hero: `#5AFF80` band, `h1` 80px/400 Shippori with −2px tracking, 40px/300 Chivo subline, 224×69 outlined square button, portrait with its own `#01FF56` disc, portrait hidden ≤767.
+- [x] About: photo background + white `max-width: 1076px` card with 100px padding, green eyebrow (1.6px tracking), 40px/400 statement, `#01FF56` CTA with ink text, four skill bars at 60/89/60/89 on an 8px `rgba(1,255,86,0.1)` track.
+- [x] Expertise: `#01FF56` box with three 40px/400 headings (first ink, others `rgba(21,3,3,0.3)`), 27px white rotated notch at `right: -15px; top: 80px`, two `#656565` 18px paragraphs beside it.
+- [x] Experience 4 rows / Education 2 rows: 60px/400 headings, single `#E2E2E2` first-row hairline, 30px/400 roles, "at <company>" with `#928888` "at", full-width 16px/300 descriptions.
+- [x] Quote band 662px on `#01FF56`, photo left 56% / quote right 35% at 40px/300 Chivo, stacking photo-first ≤767.
+- [x] Gallery strip renders five tiles (not the source's 1px collapse) with the 0.3 `#150303` hover wash, white 30px zoom glyph, keyboard-operable lightbox and no overflow at 390px.
+- [x] Footer `#01FF56`: statement `h2` 40px/400, "Drop a line" form (three 50px underline inputs + 76px textarea + dark 238×64 submit), "Contact me" list, outlined résumé button, three 50px circular social buttons, 26px bottom line.
+- [x] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/portray` = 0 hits.
+- [x] No horizontal overflow at 390px (`document.documentElement.scrollWidth === 390`); ink colour set on the page root (not only on `p`); submit uses weight 700.
+- [x] Placeholder imagery uses `https://picsum.photos/seed/portray-<n>/<w>/<h>` (deterministic: portrait, about desk, quote photo, five gallery tiles), Chivo + Shippori Mincho loaded via one Google Fonts `<link>`, icons from `lucide-react`.
+- [x] `scripts/verify-app.sh portray` passes: typecheck, lint, 100% coverage tests, build.
+- [x] Desktop (1440) and mobile (390) renders compared against the reference fold-by-fold; deviations listed in the PR.
+- [x] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/portray" package-lock.json` ≥ 1.
+- [~] TEMPLATES.md rows **593**, **2398** and **2523** were claimed `[x]` → `[~]` on the branch; the `[~]` → `[x]` flip plus `https://portray.free.componentdock.com` lands in the post-merge bookkeeping commit (prep stream does none of this).
