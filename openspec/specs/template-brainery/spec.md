@@ -1,4 +1,9 @@
 # Template: Brainery (Education / Learning Page)
+<!-- prep-status: shipped-as=lectio -->
+> **SHIPPED-UNDER** — the ColorLib `academica` design this prep describes already
+> ships as `apps/lectio` (<https://lectio.free.componentdock.com>).
+> Do not scaffold `apps/brainery`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lectio/spec.md`.
 
 ## Purpose
 

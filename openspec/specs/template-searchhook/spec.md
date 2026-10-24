@@ -1,4 +1,9 @@
 # Template: SearchHook (Search Form)
+<!-- prep-status: shipped-as=seekbar -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-24` design this prep describes already
+> ships as `apps/seekbar` (<https://seekbar.free.componentdock.com>).
+> Do not scaffold `apps/searchhook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekbar/spec.md`.
 
 ## Purpose
 

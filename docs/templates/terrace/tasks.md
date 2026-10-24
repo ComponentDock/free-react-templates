@@ -1,4 +1,9 @@
 # Terrace (ColorLib Rooftop) — Tasks & Design Notes
+<!-- prep-status: shipped-as=skyline -->
+> **SHIPPED-UNDER** — the ColorLib `rooftop` design this prep describes already
+> ships as `apps/skyline` (<https://skyline.free.componentdock.com>).
+> Do not scaffold `apps/terrace`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-skyline/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-terrace`. Recreation name: **Terrace** (NEW name —

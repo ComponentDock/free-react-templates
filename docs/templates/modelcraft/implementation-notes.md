@@ -1,4 +1,9 @@
 # ModelCraft — Implementation Notes
+<!-- prep-status: shipped-as=canvas-gallery -->
+> **SHIPPED-UNDER** — the ColorLib `mona` design this prep describes already
+> ships as `apps/canvas-gallery` (<https://canvas-gallery.free.componentdock.com>).
+> Do not scaffold `apps/modelcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-canvas-gallery/spec.md`.
 
 ## Source mapping
 - ColorLib: "Mona" (model agency template)

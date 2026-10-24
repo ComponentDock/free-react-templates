@@ -1,4 +1,9 @@
 # Alpine — Implementation Notes
+<!-- prep-status: shipped-as=highland -->
+> **SHIPPED-UNDER** — the ColorLib `montana` design this prep describes already
+> ships as `apps/highland` (<https://highland.free.componentdock.com>).
+> Do not scaffold `apps/alpine`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-highland/spec.md`.
 
 **Source:** ColorLib "Montana" (https://colorlib.com/wp/template/montana/)
 **Preview:** https://preview.colorlib.com/theme/montana/

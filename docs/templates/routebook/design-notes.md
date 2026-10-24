@@ -1,4 +1,9 @@
 # Routebook — Design Notes & Task Outline
+<!-- prep-status: shipped-as=localfinder -->
+> **SHIPPED-UNDER** — the ColorLib `directing` design this prep describes already
+> ships as `apps/localfinder` (<https://localfinder.free.componentdock.com>).
+> Do not scaffold `apps/routebook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-localfinder/spec.md`.
 
 **Source:** ColorLib Directing (slug: `directing`)
 **Preview:** https://preview.colorlib.com/theme/directing/

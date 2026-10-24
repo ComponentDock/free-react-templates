@@ -1,4 +1,9 @@
 # Musclepeak (ColorLib Zacson) — Tasks & Design Notes
+<!-- prep-status: shipped-as=justly -->
+> **SHIPPED-UNDER** — the ColorLib `zacson` design this prep describes already
+> ships as `apps/justly` (<https://justly.free.componentdock.com>).
+> Do not scaffold `apps/musclepeak`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-justly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-musclepeak`. Recreation name: **Musclepeak** (NEW name —

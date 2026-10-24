@@ -1,4 +1,9 @@
 # Template: Carouseldash (UI Components / Carousel)
+<!-- prep-status: shipped-as=carousel-glide -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-18` design this prep describes already
+> ships as `apps/carousel-glide` (<https://carousel-glide.free.componentdock.com>).
+> Do not scaffold `apps/carouseldash`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carousel-glide/spec.md`.
 
 ## Purpose
 

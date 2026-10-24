@@ -1,4 +1,9 @@
 # Pupa — Design Notes
+<!-- prep-status: shipped-as=weft -->
+> **SHIPPED-UNDER** — the ColorLib `cocoon` design this prep describes already
+> ships as `apps/weft` (<https://weft.free.componentdock.com>).
+> Do not scaffold `apps/pupa`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-weft/spec.md`.
 
 ## Source
 

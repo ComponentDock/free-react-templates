@@ -1,4 +1,9 @@
 # Template: Terrace (Food & Drinks)
+<!-- prep-status: shipped-as=skyline -->
+> **SHIPPED-UNDER** — the ColorLib `rooftop` design this prep describes already
+> ships as `apps/skyline` (<https://skyline.free.componentdock.com>).
+> Do not scaffold `apps/terrace`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-skyline/spec.md`.
 
 ## Purpose
 

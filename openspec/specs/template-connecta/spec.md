@@ -1,4 +1,9 @@
 # Template: Connecta (Contact Form)
+<!-- prep-status: shipped-as=formbreeze -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v1` design this prep describes already
+> ships as `apps/formbreeze` (<https://formbreeze.free.componentdock.com>).
+> Do not scaffold `apps/connecta`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formbreeze/spec.md`.
 
 ## Purpose
 

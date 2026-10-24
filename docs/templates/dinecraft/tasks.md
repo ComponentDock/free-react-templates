@@ -1,4 +1,9 @@
 # DineCraft (Recreation of ColorLib Restauco)
+<!-- prep-status: shipped-as=bonquet -->
+> **SHIPPED-UNDER** — the ColorLib `restauco` design this prep describes already
+> ships as `apps/bonquet` (<https://bonquet.free.componentdock.com>).
+> Do not scaffold `apps/dinecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bonquet/spec.md`.
 
 ## Tasks & Implementation Plan
 

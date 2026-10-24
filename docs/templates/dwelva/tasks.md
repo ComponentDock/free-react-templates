@@ -1,4 +1,9 @@
 # Dwelva — Implementation Tasks
+<!-- prep-status: shipped-as=propvale -->
+> **SHIPPED-UNDER** — the ColorLib `real-estate-2` design this prep describes already
+> ships as `apps/propvale` (<https://propvale.free.componentdock.com>).
+> Do not scaffold `apps/dwelva`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-propvale/spec.md`.
 
 Recreation of ColorLib **Real Estate 2** (slug: `real-estate-2`).
 

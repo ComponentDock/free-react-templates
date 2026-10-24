@@ -1,4 +1,9 @@
 # Loandawn — Implementation Notes
+<!-- prep-status: shipped-as=loanpilot -->
+> **SHIPPED-UNDER** — the ColorLib `loanday` design this prep describes already
+> ships as `apps/loanpilot` (<https://loanpilot.free.componentdock.com>).
+> Do not scaffold `apps/loandawn`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loanpilot/spec.md`.
 
 Source: ColorLib Loanday (https://preview.colorlib.com/theme/loanday/)
 New name: Loandawn (apps/loandawn)

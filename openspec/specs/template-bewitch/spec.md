@@ -1,4 +1,9 @@
 # Template: Bewitch (Accordion Sign-Up Wizard)
+<!-- prep-status: shipped-as=cantrip -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-13` design this prep describes already
+> ships as `apps/cantrip` (<https://cantrip.free.componentdock.com>).
+> Do not scaffold `apps/bewitch`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cantrip/spec.md`.
 
 ## Purpose
 

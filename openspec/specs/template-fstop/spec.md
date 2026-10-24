@@ -1,4 +1,9 @@
 # Template: Fstop (Bootstrap / Photography Template)
+<!-- prep-status: shipped-as=focus -->
+> **SHIPPED-UNDER** — the ColorLib `snapshot` design this prep describes already
+> ships as `apps/focus` (<https://focus.free.componentdock.com>).
+> Do not scaffold `apps/fstop`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-focus/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Snapshot" shipped as **Focus** (PR #436,
 > https://focus.free.componentdock.com, 2026-08-15). Do not implement —

@@ -1,4 +1,9 @@
 # EduHaven — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=scholarly -->
+> **SHIPPED-UNDER** — the ColorLib `education-wordpress-themes` design this prep describes already
+> ships as `apps/scholarly` (<https://scholarly.free.componentdock.com>).
+> Do not scaffold `apps/eduhaven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scholarly/spec.md`.
 
 Source: ColorLib "Education Wordpress Themes" — https://colorlib.com/wp/template/education-wordpress-themes/
 Preview: https://preview.colorlib.com/theme/education-wordpress-themes/ (UNAVAILABLE — 404)

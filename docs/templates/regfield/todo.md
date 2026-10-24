@@ -1,4 +1,9 @@
 # RegField — Implementation TODO
+<!-- prep-status: shipped-as=regnest -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-29` design this prep describes already
+> ships as `apps/regnest` (<https://regnest.free.componentdock.com>).
+> Do not scaffold `apps/regfield`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regnest/spec.md`.
 
 Source: ColorLib Regform 29
 Preview: https://colorlib.com/etc/regform/colorlib-regform-29/

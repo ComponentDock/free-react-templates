@@ -1,4 +1,9 @@
 # Spec: LoginScape — Centered Card Login Form
+<!-- prep-status: shipped-as=gatekeeper -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-18` design this prep describes already
+> ships as `apps/gatekeeper` (<https://gatekeeper.free.componentdock.com>).
+> Do not scaffold `apps/loginscape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gatekeeper/spec.md`.
 
 ## Purpose
 

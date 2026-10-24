@@ -1,4 +1,9 @@
 # Meetpoint — Implementation Notes
+<!-- prep-status: shipped-as=lineup -->
+> **SHIPPED-UNDER** — the ColorLib `agenda` design this prep describes already
+> ships as `apps/lineup` (<https://lineup.free.componentdock.com>).
+> Do not scaffold `apps/meetpoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lineup/spec.md`.
 
 ## Source
 - **ColorLib slug:** agenda

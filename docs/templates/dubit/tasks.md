@@ -1,4 +1,9 @@
 # Dubit — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=coinwave -->
+> **SHIPPED-UNDER** — the ColorLib `bitcoin` design this prep describes already
+> ships as `apps/coinwave` (<https://coinwave.free.componentdock.com>).
+> Do not scaffold `apps/dubit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coinwave/spec.md`.
 
 **Source:** ColorLib Bitcoin (`https://preview.colorlib.com/theme/bitcoin/`)
 **New name:** Dubit

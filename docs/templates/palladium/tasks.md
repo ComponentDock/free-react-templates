@@ -1,4 +1,9 @@
 # Palladium — Prep Notes
+<!-- prep-status: shipped-as=airy -->
+> **SHIPPED-UNDER** — the ColorLib `whitespace` design this prep describes already
+> ships as `apps/airy` (<https://airy.free.componentdock.com>).
+> Do not scaffold `apps/palladium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-airy/spec.md`.
 
 **Source:** ColorLib "Whitespace" — https://colorlib.com/wp/template/whitespace/
 **Preview:** https://preview.colorlib.com/theme/whitespace/

@@ -1,4 +1,9 @@
 # FormPulse — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=formgate -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-19` design this prep describes already
+> ships as `apps/formgate` (<https://formgate.free.componentdock.com>).
+> Do not scaffold `apps/formpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formgate/spec.md`.
 
 Source: ColorLib Contact Form 19
 Preview: https://preview.colorlib.com/theme/bootstrap/contact-form-19/

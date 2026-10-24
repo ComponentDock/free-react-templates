@@ -1,4 +1,9 @@
 # SearchCraft — Implementation Notes
+<!-- prep-status: shipped-as=rankly -->
+> **SHIPPED-UNDER** — the ColorLib `seo` design this prep describes already
+> ships as `apps/rankly` (<https://rankly.free.componentdock.com>).
+> Do not scaffold `apps/searchcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rankly/spec.md`.
 
 ## Source
 

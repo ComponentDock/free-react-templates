@@ -1,4 +1,9 @@
 # NovaSide — Design Notes & Task Outline
+<!-- prep-status: shipped-as=sidenote -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v03` design this prep describes already
+> ships as `apps/sidenote` (<https://sidenote.free.componentdock.com>).
+> Do not scaffold `apps/novaside`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sidenote/spec.md`.
 
 Source: ColorLib Sidebar V03 (`colorlib-sidebar-v03`)
 Preview: https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v03/

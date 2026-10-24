@@ -1,4 +1,9 @@
 # Spec: Pictura
+<!-- prep-status: shipped-as=lumiere -->
+> **SHIPPED-UNDER** — the ColorLib `mostudio` design this prep describes already
+> ships as `apps/lumiere` (<https://lumiere.free.componentdock.com>).
+> Do not scaffold `apps/pictura`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lumiere/spec.md`.
 
 > Recreation of ColorLib "Mostudio" (https://colorlib.com/wp/template/mostudio/)
 > Preview: https://preview.colorlib.com/theme/mostudio/

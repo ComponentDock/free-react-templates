@@ -1,4 +1,9 @@
 # Template: Fondant (Food & Drink / Bakery)
+<!-- prep-status: shipped-as=batterly -->
+> **SHIPPED-UNDER** — the ColorLib `cake` design this prep describes already
+> ships as `apps/batterly` (<https://batterly.free.componentdock.com>).
+> Do not scaffold `apps/fondant`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-batterly/spec.md`.
 
 ## Purpose
 

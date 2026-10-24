@@ -1,4 +1,9 @@
 # Fiduciary (ColorLib Unioncorp) — Tasks & Design Notes
+<!-- prep-status: shipped-as=unioncorp -->
+> **SHIPPED-UNDER** — the ColorLib `unioncorp` design this prep describes already
+> ships as `apps/unioncorp` (<https://unioncorp.free.componentdock.com>).
+> Do not scaffold `apps/fiduciary`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-unioncorp/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-fiduciary/` is the claim marker —

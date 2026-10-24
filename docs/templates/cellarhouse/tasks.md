@@ -1,4 +1,9 @@
 # Cellarhouse — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=cellarly -->
+> **SHIPPED-UNDER** — the ColorLib `liquorstore` design this prep describes already
+> ships as `apps/cellarly` (<https://cellarly.free.componentdock.com>).
+> Do not scaffold `apps/cellarhouse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cellarly/spec.md`.
 
 Source: ColorLib "Liquor Store" template
 Preview: https://preview.colorlib.com/theme/liquorstore/

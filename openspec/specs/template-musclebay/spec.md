@@ -1,4 +1,9 @@
 # Template: MuscleBay (Fitness Club Landing)
+<!-- prep-status: shipped-as=fitcore -->
+> **SHIPPED-UNDER** — the ColorLib `fitnessclub` design this prep describes already
+> ships as `apps/fitcore` (<https://fitcore.free.componentdock.com>).
+> Do not scaffold `apps/musclebay`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitcore/spec.md`.
 
 ## Purpose
 

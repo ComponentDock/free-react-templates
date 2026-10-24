@@ -1,4 +1,9 @@
 # Wellward — Implementation Notes
+<!-- prep-status: shipped-as=pandemic -->
+> **SHIPPED-UNDER** — the ColorLib `covid` design this prep describes already
+> ships as `apps/pandemic` (<https://pandemic.free.componentdock.com>).
+> Do not scaffold `apps/wellward`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pandemic/spec.md`.
 
 ## Source
 - ColorLib "Covid" template: https://colorlib.com/wp/template/covid/

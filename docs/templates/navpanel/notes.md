@@ -1,4 +1,9 @@
 # NavPanel — Design Notes & Task Outline
+<!-- prep-status: shipped-as=panelbar -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-sidebar-04` design this prep describes already
+> ships as `apps/panelbar` (<https://panelbar.free.componentdock.com>).
+> Do not scaffold `apps/navpanel`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-panelbar/spec.md`.
 
 **Source:** ColorLib Bootstrap Sidebar V04
 **Preview:** https://preview.colorlib.com/downloads/free/bootstrap-sidebar-04.zip

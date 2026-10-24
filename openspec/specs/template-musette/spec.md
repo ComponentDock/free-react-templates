@@ -1,4 +1,9 @@
 # Template: Musette (Interactive Accordion Showcase & FAQ)
+<!-- prep-status: shipped-as=pleat -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-13` design this prep describes already
+> ships as `apps/pleat` (<https://pleat.free.componentdock.com>).
+> Do not scaffold `apps/musette`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pleat/spec.md`.
 
 ## Purpose
 

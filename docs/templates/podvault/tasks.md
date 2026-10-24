@@ -1,4 +1,9 @@
 # Podvault (ColorLib Megapod) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sonance -->
+> **SHIPPED-UNDER** — the ColorLib `megapod` design this prep describes already
+> ships as `apps/sonance` (<https://sonance.free.componentdock.com>).
+> Do not scaffold `apps/podvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sonance/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-podvault`. Recreation name: **Podvault** (NEW name —

@@ -1,4 +1,9 @@
 # Torque — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=scoop -->
+> **SHIPPED-UNDER** — the ColorLib `force` design this prep describes already
+> ships as `apps/scoop` (<https://scoop.free.componentdock.com>).
+> Do not scaffold `apps/torque`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scoop/spec.md`.
 
 Source: ColorLib Force (https://colorlib.com/wp/template/force/)
 Preview: https://preview.colorlib.com/theme/force/

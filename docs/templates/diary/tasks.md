@@ -1,4 +1,9 @@
 # Diary (ColorLib Andrea) — Tasks & Design Notes
+<!-- prep-status: shipped-as=memoir -->
+> **SHIPPED-UNDER** — the ColorLib `andrea` design this prep describes already
+> ships as `apps/memoir` (<https://memoir.free.componentdock.com>).
+> Do not scaffold `apps/diary`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-memoir/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-diary`.

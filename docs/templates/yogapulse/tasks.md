@@ -1,4 +1,9 @@
 # Yogapulse (ColorLib Zogin) — Tasks & Design Notes
+<!-- prep-status: shipped-as=fitnest -->
+> **SHIPPED-UNDER** — the ColorLib `zogin` design this prep describes already
+> ships as `apps/fitnest` (<https://fitnest.free.componentdock.com>).
+> Do not scaffold `apps/yogapulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitnest/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-yogapulse`. Recreation name: **Yogapulse** (NEW name —

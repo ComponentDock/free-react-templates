@@ -1,4 +1,9 @@
 # Hoops (ColorLib Basketball) — Tasks & Design Notes
+<!-- prep-status: shipped-as=swish -->
+> **SHIPPED-UNDER** — the ColorLib `basketball` design this prep describes already
+> ships as `apps/swish` (<https://swish.free.componentdock.com>).
+> Do not scaffold `apps/hoops`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-swish/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-hoops` by an implementer stream.

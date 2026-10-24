@@ -1,4 +1,9 @@
 # Template: Semester (Education / Online Learning)
+<!-- prep-status: shipped-as=edify -->
+> **SHIPPED-UNDER** — the ColorLib `courses` design this prep describes already
+> ships as `apps/edify` (<https://edify.free.componentdock.com>).
+> Do not scaffold `apps/semester`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-edify/spec.md`.
 
 ## Purpose
 

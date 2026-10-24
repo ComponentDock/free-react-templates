@@ -1,4 +1,9 @@
 # Trolley (ColorLib Dropdown 05) — Tasks & Design Notes
+<!-- prep-status: shipped-as=cartwell -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-05` design this prep describes already
+> ships as `apps/cartwell` (<https://cartwell.free.componentdock.com>).
+> Do not scaffold `apps/trolley`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cartwell/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-trolley`.

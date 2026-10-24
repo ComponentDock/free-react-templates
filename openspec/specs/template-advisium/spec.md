@@ -1,4 +1,9 @@
 # Template: Advisium (Business Consulting)
+<!-- prep-status: shipped-as=advisory -->
+> **SHIPPED-UNDER** — the ColorLib `consulto` design this prep describes already
+> ships as `apps/advisory` (<https://advisory.free.componentdock.com>).
+> Do not scaffold `apps/advisium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-advisory/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Tumbler — Implementation Tasks
+<!-- prep-status: shipped-as=keycraft -->
+> **SHIPPED-UNDER** — the ColorLib `locksmith` design this prep describes already
+> ships as `apps/keycraft` (<https://keycraft.free.componentdock.com>).
+> Do not scaffold `apps/tumbler`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-keycraft/spec.md`.
 
 Source: ColorLib "Locksmith" (https://colorlib.com/wp/template/locksmith/)
 Preview: https://preview.colorlib.com/theme/locksmith/

@@ -1,4 +1,9 @@
 # JobGate — Implementation Notes
+<!-- prep-status: shipped-as=civicore -->
+> **SHIPPED-UNDER** — the ColorLib `comport` design this prep describes already
+> ships as `apps/civicore` (<https://civicore.free.componentdock.com>).
+> Do not scaffold `apps/jobgate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-civicore/spec.md`.
 
 ## Source
 - ColorLib: Comport — https://colorlib.com/wp/template/comport/

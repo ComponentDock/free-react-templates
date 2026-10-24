@@ -1,4 +1,9 @@
 # Template: Dishcraft (Restaurant)
+<!-- prep-status: shipped-as=supper -->
+> **SHIPPED-UNDER** — the ColorLib `meal` design this prep describes already
+> ships as `apps/supper` (<https://supper.free.componentdock.com>).
+> Do not scaffold `apps/dishcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-supper/spec.md`.
 
 ## Purpose
 

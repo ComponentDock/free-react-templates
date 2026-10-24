@@ -1,4 +1,9 @@
 # Template: DropFold (Dropdown Mega-Menu)
+<!-- prep-status: shipped-as=droptile -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-16` design this prep describes already
+> ships as `apps/droptile` (<https://droptile.free.componentdock.com>).
+> Do not scaffold `apps/dropfold`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-droptile/spec.md`.
 
 ## Purpose
 

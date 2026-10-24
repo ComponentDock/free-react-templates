@@ -1,4 +1,9 @@
 # Ephemeris (ColorLib "Calendar 06") — Tasks & Design Notes
+<!-- prep-status: shipped-as=calwave -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-06` design this prep describes already
+> ships as `apps/calwave` (<https://calwave.free.componentdock.com>).
+> Do not scaffold `apps/ephemeris`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calwave/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-ephemeris` by an implementer stream.

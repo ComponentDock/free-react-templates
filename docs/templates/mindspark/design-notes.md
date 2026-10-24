@@ -1,4 +1,9 @@
 # MindSpark — Design Notes
+<!-- prep-status: shipped-as=erudit -->
+> **SHIPPED-UNDER** — the ColorLib `knowledge` design this prep describes already
+> ships as `apps/erudit` (<https://erudit.free.componentdock.com>).
+> Do not scaffold `apps/mindspark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-erudit/spec.md`.
 
 ## Source
 - ColorLib: Knowledge (https://colorlib.com/wp/template/knowledge/)

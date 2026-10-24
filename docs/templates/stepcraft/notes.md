@@ -1,4 +1,9 @@
 # StepCraft — Design Notes
+<!-- prep-status: shipped-as=runic -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-6` design this prep describes already
+> ships as `apps/runic` (<https://runic.free.componentdock.com>).
+> Do not scaffold `apps/stepcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-runic/spec.md`.
 
 Source: ColorLib Wizard 6
 Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html

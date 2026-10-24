@@ -1,4 +1,9 @@
 # Template: Sidekick (Sidebar Layout)
+<!-- prep-status: shipped-as=rightpane -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-sidebar-10` design this prep describes already
+> ships as `apps/rightpane` (<https://rightpane.free.componentdock.com>).
+> Do not scaffold `apps/sidekick`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rightpane/spec.md`.
 
 ## Purpose
 

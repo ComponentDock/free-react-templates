@@ -1,4 +1,9 @@
 # Template: SwipeDeck (Carousel)
+<!-- prep-status: shipped-as=carouselroll -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-13` design this prep describes already
+> ships as `apps/carouselroll` (<https://carouselroll.free.componentdock.com>).
+> Do not scaffold `apps/swipedeck`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carouselroll/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Trailside — ColorLib Ecoland Replication
+<!-- prep-status: shipped-as=trekly -->
+> **SHIPPED-UNDER** — the ColorLib `ecoland` design this prep describes already
+> ships as `apps/trekly` (<https://trekly.free.componentdock.com>).
+> Do not scaffold `apps/trailside`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-trekly/spec.md`.
 
 ## Source
 

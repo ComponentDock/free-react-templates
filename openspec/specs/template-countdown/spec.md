@@ -1,4 +1,9 @@
 # Template: Countdown (Coming Soon Page)
+<!-- prep-status: shipped-as=prelude -->
+> **SHIPPED-UNDER** — the ColorLib `01-comming-soon` design this prep describes already
+> ships as `apps/prelude` (<https://prelude.free.componentdock.com>).
+> Do not scaffold `apps/countdown`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-prelude/spec.md`.
 
 ## Purpose
 

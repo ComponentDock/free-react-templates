@@ -1,4 +1,9 @@
 # Chaff (ColorLib Multiselect 18) — Tasks & Design Notes
+<!-- prep-status: shipped-as=groupcap -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-18` design this prep describes already
+> ships as `apps/groupcap` (<https://groupcap.free.componentdock.com>).
+> Do not scaffold `apps/chaff`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-groupcap/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-chaff`. Recreation name: **Chaff** (NEW name — the

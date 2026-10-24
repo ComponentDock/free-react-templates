@@ -1,4 +1,9 @@
 # Template: LoginSnap (Login Form)
+<!-- prep-status: shipped-as=loginpad -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v14` design this prep describes already
+> ships as `apps/loginpad` (<https://loginpad.free.componentdock.com>).
+> Do not scaffold `apps/loginsnap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginpad/spec.md`.
 
 ## Purpose
 

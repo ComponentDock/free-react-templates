@@ -1,4 +1,9 @@
 # Credium — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=credix -->
+> **SHIPPED-UNDER** — the ColorLib `credit` design this prep describes already
+> ships as `apps/credix` (<https://credix.free.componentdock.com>).
+> Do not scaffold `apps/credium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-credix/spec.md`.
 
 ## Source
 

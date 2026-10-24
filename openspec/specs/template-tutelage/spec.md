@@ -1,4 +1,9 @@
 # Template: Tutelage (Education)
+<!-- prep-status: shipped-as=mentory -->
+> **SHIPPED-UNDER** — the ColorLib `tutor` design this prep describes already
+> ships as `apps/mentory` (<https://mentory.free.componentdock.com>).
+> Do not scaffold `apps/tutelage`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mentory/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Tutor" shipped as **Mentory** (PR #455,
 > https://mentory.free.componentdock.com). Do NOT implement — delete on next

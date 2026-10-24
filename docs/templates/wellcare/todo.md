@@ -1,4 +1,9 @@
 # WellCare — Template Replication Notes
+<!-- prep-status: shipped-as=medpact -->
+> **SHIPPED-UNDER** — the ColorLib `medicare` design this prep describes already
+> ships as `apps/medpact` (<https://medpact.free.componentdock.com>).
+> Do not scaffold `apps/wellcare`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-medpact/spec.md`.
 
 **Source:** ColorLib Medicare  
 **Preview:** https://preview.colorlib.com/theme/medicare/  

@@ -1,4 +1,9 @@
 # Amicus — Design Notes & Task Outline
+<!-- prep-status: shipped-as=chambers -->
+> **SHIPPED-UNDER** — the ColorLib `lawfirm` design this prep describes already
+> ships as `apps/chambers` (<https://chambers.free.componentdock.com>).
+> Do not scaffold `apps/amicus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chambers/spec.md`.
 
 **Source:** ColorLib "Law Firm" → https://colorlib.com/wp/template/lawfirm/
 **Preview:** https://preview.colorlib.com/theme/lawfirm/

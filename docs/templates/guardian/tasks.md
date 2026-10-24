@@ -1,4 +1,9 @@
 # Guardian (Colorlib Thepetcare) — Tasks & Design Notes
+<!-- prep-status: shipped-as=vetly -->
+> **SHIPPED-UNDER** — the ColorLib `thepetcare` design this prep describes already
+> ships as `apps/vetly` (<https://vetly.free.componentdock.com>).
+> Do not scaffold `apps/guardian`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vetly/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-guardian`.

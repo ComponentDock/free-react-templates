@@ -1,4 +1,9 @@
 # Template: Bolter (Multiselect Dropdown)
+<!-- prep-status: shipped-as=multiform -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-15` design this prep describes already
+> ships as `apps/multiform` (<https://multiform.free.componentdock.com>).
+> Do not scaffold `apps/bolter`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-multiform/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Rollscape (Real Estate)
+<!-- prep-status: shipped-as=keynest -->
+> **SHIPPED-UNDER** — the ColorLib `rolast` design this prep describes already
+> ships as `apps/keynest` (<https://keynest.free.componentdock.com>).
+> Do not scaffold `apps/rollscape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-keynest/spec.md`.
 
 ## Purpose
 

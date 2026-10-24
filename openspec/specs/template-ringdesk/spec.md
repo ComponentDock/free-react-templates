@@ -1,4 +1,9 @@
 # Template: Ringdesk (Call Center / IT Services)
+<!-- prep-status: shipped-as=dialpad -->
+> **SHIPPED-UNDER** — the ColorLib `callcenter` design this prep describes already
+> ships as `apps/dialpad` (<https://dialpad.free.componentdock.com>).
+> Do not scaffold `apps/ringdesk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dialpad/spec.md`.
 
 ## Purpose
 

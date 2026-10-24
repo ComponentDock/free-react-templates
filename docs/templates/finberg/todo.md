@@ -1,4 +1,9 @@
 # Finberg — Implementation Todo
+<!-- prep-status: shipped-as=capitex -->
+> **SHIPPED-UNDER** — the ColorLib `finlone` design this prep describes already
+> ships as `apps/capitex` (<https://capitex.free.componentdock.com>).
+> Do not scaffold `apps/finberg`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-capitex/spec.md`.
 
 Source: ColorLib Finlone (https://colorlib.com/wp/template/finlone/)
 Preview: https://preview.colorlib.com/theme/finlone/

@@ -1,4 +1,9 @@
 # Chic — Implementation Notes
+<!-- prep-status: shipped-as=silkthread -->
+> **SHIPPED-UNDER** — the ColorLib `malefashion` design this prep describes already
+> ships as `apps/silkthread` (<https://silkthread.free.componentdock.com>).
+> Do not scaffold `apps/chic`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-silkthread/spec.md`.
 
 Source: ColorLib Malefashion
 Preview: https://preview.colorlib.com/theme/malefashion/

@@ -1,4 +1,9 @@
 # Consilium — Prep Notes
+<!-- prep-status: shipped-as=dictum -->
+> **SHIPPED-UNDER** — the ColorLib `consula` design this prep describes already
+> ships as `apps/dictum` (<https://dictum.free.componentdock.com>).
+> Do not scaffold `apps/consilium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dictum/spec.md`.
 
 Source: ColorLib Consula — https://colorlib.com/wp/template/consula/
 Preview: https://preview.colorlib.com/theme/consula/

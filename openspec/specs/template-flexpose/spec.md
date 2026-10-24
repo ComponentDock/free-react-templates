@@ -1,4 +1,9 @@
 # Template: Flexpose (Health & Fitness / Yoga)
+<!-- prep-status: shipped-as=zenbloom -->
+> **SHIPPED-UNDER** — the ColorLib `yogabest` design this prep describes already
+> ships as `apps/zenbloom` (<https://zenbloom.free.componentdock.com>).
+> Do not scaffold `apps/flexpose`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-zenbloom/spec.md`.
 
 ## Purpose
 

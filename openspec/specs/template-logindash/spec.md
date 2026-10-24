@@ -1,4 +1,9 @@
 # Template: Logindash (Login Form)
+<!-- prep-status: shipped-as=loginsplash -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v11` design this prep describes already
+> ships as `apps/loginsplash` (<https://loginsplash.free.componentdock.com>).
+> Do not scaffold `apps/logindash`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginsplash/spec.md`.
 
 ## Purpose
 

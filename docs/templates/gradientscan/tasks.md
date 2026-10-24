@@ -1,4 +1,9 @@
 # GradientScan (ColorLib Search Form Bar 04) — Tasks & Design Notes
+<!-- prep-status: shipped-as=seekmint -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-04` design this prep describes already
+> ships as `apps/seekmint` (<https://seekmint.free.componentdock.com>).
+> Do not scaffold `apps/gradientscan`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekmint/spec.md`.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

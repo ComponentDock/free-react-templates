@@ -1,4 +1,9 @@
 # Template: Ledgerman (Personal Portfolio / Resume)
+<!-- prep-status: shipped-as=craftline -->
+> **SHIPPED-UNDER** — the ColorLib `jackson` design this prep describes already
+> ships as `apps/craftline` (<https://craftline.free.componentdock.com>).
+> Do not scaffold `apps/ledgerman`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-craftline/spec.md`.
 
 ## Purpose
 

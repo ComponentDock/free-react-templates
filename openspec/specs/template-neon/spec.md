@@ -1,4 +1,9 @@
 # Template: Neon (404 Error Page — Dark Offset Glow)
+<!-- prep-status: shipped-as=glitch -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-error-404-6` design this prep describes already
+> ships as `apps/glitch` (<https://glitch.free.componentdock.com>).
+> Do not scaffold `apps/neon`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-glitch/spec.md`.
 
 ## Purpose
 

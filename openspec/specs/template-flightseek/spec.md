@@ -1,4 +1,9 @@
 # Template: Flightseek (Search Form)
+<!-- prep-status: shipped-as=flightly -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-20` design this prep describes already
+> ships as `apps/flightly` (<https://flightly.free.componentdock.com>).
+> Do not scaffold `apps/flightseek`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flightly/spec.md`.
 
 ## Purpose
 

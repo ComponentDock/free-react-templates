@@ -1,4 +1,9 @@
 # Template: EveGlow (Coming Soon)
+<!-- prep-status: shipped-as=overture -->
+> **SHIPPED-UNDER** — the ColorLib `06-comming-soon` design this prep describes already
+> ships as `apps/overture` (<https://overture.free.componentdock.com>).
+> Do not scaffold `apps/eveglow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-overture/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: MuscleForge (Fitness & Gym Landing)
+<!-- prep-status: shipped-as=iron -->
+> **SHIPPED-UNDER** — the ColorLib `gym` design this prep describes already
+> ships as `apps/iron` (<https://iron.free.componentdock.com>).
+> Do not scaffold `apps/muscleforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-iron/spec.md`.
 
 ## Purpose
 

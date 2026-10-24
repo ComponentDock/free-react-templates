@@ -1,4 +1,9 @@
 # Snugden — Prep Notes
+<!-- prep-status: shipped-as=lounge -->
+> **SHIPPED-UNDER** — the ColorLib `cozy` design this prep describes already
+> ships as `apps/lounge` (<https://lounge.free.componentdock.com>).
+> Do not scaffold `apps/snugden`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lounge/spec.md`.
 
 ## Source
 - **ColorLib:** Cozy → https://colorlib.com/wp/template/cozy/

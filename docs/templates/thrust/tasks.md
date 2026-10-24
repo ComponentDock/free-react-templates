@@ -1,4 +1,9 @@
 # Thrust (ColorLib "Startup") — Tasks & Design Notes
+<!-- prep-status: shipped-as=ascent -->
+> **SHIPPED-UNDER** — the ColorLib `startup-2` design this prep describes already
+> ships as `apps/ascent` (<https://ascent.free.componentdock.com>).
+> Do not scaffold `apps/thrust`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ascent/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-thrust` by an implementer stream.

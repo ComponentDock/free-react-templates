@@ -5,6 +5,12 @@ template: colorlib-zacson
 source: https://preview.colorlib.com/theme/zacson/
 ---
 
+<!-- prep-status: shipped-as=justly -->
+> **SHIPPED-UNDER** — the ColorLib `zacson` design this prep describes already
+> ships as `apps/justly` (<https://justly.free.componentdock.com>).
+> Do not scaffold `apps/musclepeak`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-justly/spec.md`.
+
 ## Purpose
 
 Recreation of ColorLib Zacson (https://colorlib.com/wp/template/zacson/) — a gym trainer personal landing page with hero slider, training categories, gallery, pricing plans, about section, and blog. The new name is "Musclepeak".

@@ -1,4 +1,9 @@
 # Brevity — Implementation Notes
+<!-- prep-status: shipped-as=imprint -->
+> **SHIPPED-UNDER** — the ColorLib `evans` design this prep describes already
+> ships as `apps/imprint` (<https://imprint.free.componentdock.com>).
+> Do not scaffold `apps/brevity`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-imprint/spec.md`.
 
 Source: ColorLib Evans (https://colorlib.com/wp/template/evans/)
 Preview: https://preview.colorlib.com/theme/evans/

@@ -1,4 +1,9 @@
 # Maidwise (ColorLib Cleaning Company) — Tasks & Design Notes
+<!-- prep-status: shipped-as=cleanslate -->
+> **SHIPPED-UNDER** — the ColorLib `cleaning-company` design this prep describes already
+> ships as `apps/cleanslate` (<https://cleanslate.free.componentdock.com>).
+> Do not scaffold `apps/maidwise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cleanslate/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-maidwise`. Recreation name: **Maidwise** (NEW name —

@@ -1,4 +1,9 @@
 # Template: Medix (Medical & Hospital)
+<!-- prep-status: shipped-as=salus -->
+> **SHIPPED-UNDER** — the ColorLib `docmed` design this prep describes already
+> ships as `apps/salus` (<https://salus.free.componentdock.com>).
+> Do not scaffold `apps/medix`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-salus/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Solflow — Design Notes & Task Outline
+<!-- prep-status: shipped-as=pranayama -->
+> **SHIPPED-UNDER** — the ColorLib `yoga-studio` design this prep describes already
+> ships as `apps/pranayama` (<https://pranayama.free.componentdock.com>).
+> Do not scaffold `apps/solflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pranayama/spec.md`.
 
 **Source:** ColorLib "Yoga Studio" (https://colorlib.com/wp/template/yoga-studio/)
 **New name:** Solflow

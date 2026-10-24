@@ -1,4 +1,9 @@
 # Groat — implementation tasks + design notes
+<!-- prep-status: shipped-as=chklmt -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-17` design this prep describes already
+> ships as `apps/chklmt` (<https://chklmt.free.componentdock.com>).
+> Do not scaffold `apps/groat`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chklmt/spec.md`.
 
 Recreates ColorLib **Multiselect 17** (`multiselect-17`) as **Groat**.
 Read `openspec/specs/template-groat/spec.md` first — it holds every token,

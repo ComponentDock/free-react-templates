@@ -1,4 +1,9 @@
 # Bootstrap Buttons Six — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnvibe -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-06` design this prep describes already
+> ships as `apps/btnvibe` (<https://btnvibe.free.componentdock.com>).
+> Do not scaffold `apps/bootstrap-buttons-six`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnvibe/spec.md`.
 
 - **Source**: ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/bootstrap-buttons-06/`)
 - **New Name**: `bootstrap-buttons-six` (Package: `@free-react-templates/bootstrap-buttons-six`)

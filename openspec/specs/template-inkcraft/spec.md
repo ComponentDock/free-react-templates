@@ -1,4 +1,9 @@
 # Template: Inkcraft (Tattoo & Body Art Studio)
+<!-- prep-status: shipped-as=inkvibe -->
+> **SHIPPED-UNDER** — the ColorLib `tattooz` design this prep describes already
+> ships as `apps/inkvibe` (<https://inkvibe.free.componentdock.com>).
+> Do not scaffold `apps/inkcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-inkvibe/spec.md`.
 
 ## Purpose
 

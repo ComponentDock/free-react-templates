@@ -1,4 +1,9 @@
 # Template: Vane (Portfolio / Agency)
+<!-- prep-status: shipped-as=pivot -->
+> **SHIPPED-UNDER** — the ColorLib `martin` design this prep describes already
+> ships as `apps/pivot` (<https://pivot.free.componentdock.com>).
+> Do not scaffold `apps/vane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pivot/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # SeekNova — Design Notes & Task Outline
+<!-- prep-status: shipped-as=seekform -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-6` design this prep describes already
+> ships as `apps/seekform` (<https://seekform.free.componentdock.com>).
+> Do not scaffold `apps/seeknova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekform/spec.md`.
 
 **Source:** ColorLib Colorlib Search 6 (`colorlib-search-6`)
 **Preview:** https://colorlib.com/etc/searchf/colorlib-search-6/

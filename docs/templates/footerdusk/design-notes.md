@@ -1,4 +1,9 @@
 # FooterDusk — Design Notes
+<!-- prep-status: shipped-as=amethyst -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-19` design this prep describes already
+> ships as `apps/amethyst` (<https://amethyst.free.componentdock.com>).
+> Do not scaffold `apps/footerdusk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-amethyst/spec.md`.
 
 ## Source
 

@@ -1,4 +1,9 @@
 # Formbay — Design Notes & Task Outline
+<!-- prep-status: shipped-as=formreach -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-11` design this prep describes already
+> ships as `apps/formreach` (<https://formreach.free.componentdock.com>).
+> Do not scaffold `apps/formbay`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formreach/spec.md`.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

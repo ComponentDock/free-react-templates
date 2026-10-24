@@ -1,4 +1,9 @@
 # BtnSnap — Tasks & Implementation Plan
+<!-- prep-status: shipped-as=btnmatrix -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-20` design this prep describes already
+> ships as `apps/btnmatrix` (<https://btnmatrix.free.componentdock.com>).
+> Do not scaffold `apps/btnsnap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnmatrix/spec.md`.
 
 Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/template/bootstrap-buttons-20/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-20/`).
 

@@ -1,4 +1,9 @@
 # Template: Navara (Technology / Corporate)
+<!-- prep-status: shipped-as=helm -->
+> **SHIPPED-UNDER** — the ColorLib `cruise` design this prep describes already
+> ships as `apps/helm` (<https://helm.free.componentdock.com>).
+> Do not scaffold `apps/navara`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-helm/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Mesmerize (Split-Panel Sign-Up Wizard)
+<!-- prep-status: shipped-as=signium -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-17` design this prep describes already
+> ships as `apps/signium` (<https://signium.free.componentdock.com>).
+> Do not scaffold `apps/mesmerize`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signium/spec.md`.
 
 ## Purpose
 

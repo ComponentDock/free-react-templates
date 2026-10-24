@@ -1,4 +1,9 @@
 # Edition (ColorLib Sensive) — Tasks & Design Notes
+<!-- prep-status: shipped-as=serif -->
+> **SHIPPED-UNDER** — the ColorLib `sensive` design this prep describes already
+> ships as `apps/serif` (<https://serif.free.componentdock.com>).
+> Do not scaffold `apps/edition`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-serif/spec.md`.
 
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-edition`.

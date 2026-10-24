@@ -1,4 +1,9 @@
 # Genesis (ColorLib Approach) — Tasks & Design Notes
+<!-- prep-status: shipped-as=canvas -->
+> **SHIPPED-UNDER** — the ColorLib `approach` design this prep describes already
+> ships as `apps/canvas` (<https://canvas.free.componentdock.com>).
+> Do not scaffold `apps/genesis`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-canvas/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-genesis/` is the claim marker —

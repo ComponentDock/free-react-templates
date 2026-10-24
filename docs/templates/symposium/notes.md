@@ -1,4 +1,9 @@
 # Symposium — Implementation Notes
+<!-- prep-status: shipped-as=colloquium -->
+> **SHIPPED-UNDER** — the ColorLib `convention` design this prep describes already
+> ships as `apps/colloquium` (<https://colloquium.free.componentdock.com>).
+> Do not scaffold `apps/symposium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-colloquium/spec.md`.
 
 Source: ColorLib "Convention" — https://colorlib.com/wp/template/convention/
 Preview: https://preview.colorlib.com/theme/convention/

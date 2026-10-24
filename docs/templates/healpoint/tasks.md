@@ -1,4 +1,9 @@
 # Healpoint — Implementation Tasks
+<!-- prep-status: shipped-as=vitala -->
+> **SHIPPED-UNDER** — the ColorLib `medicare2` design this prep describes already
+> ships as `apps/vitala` (<https://vitala.free.componentdock.com>).
+> Do not scaffold `apps/healpoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vitala/spec.md`.
 
 ## Setup
 - [ ] Create `apps/healpoint` by copying simplest existing app (e.g. apps/medical)

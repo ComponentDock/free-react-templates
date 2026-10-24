@@ -1,4 +1,9 @@
 # Template: ArtForge (Creative Agency)
+<!-- prep-status: shipped-as=mortar -->
+> **SHIPPED-UNDER** — the ColorLib `grunt` design this prep describes already
+> ships as `apps/mortar` (<https://mortar.free.componentdock.com>).
+> Do not scaffold `apps/artforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mortar/spec.md`.
 
 ## Purpose
 

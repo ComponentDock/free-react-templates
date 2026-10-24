@@ -1,4 +1,9 @@
 # Cobalt (Colorlib Applab) — Tasks & Design Notes
+<!-- prep-status: shipped-as=velocity -->
+> **SHIPPED-UNDER** — the ColorLib `applab` design this prep describes already
+> ships as `apps/velocity` (<https://velocity.free.componentdock.com>).
+> Do not scaffold `apps/cobalt`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-velocity/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-cobalt`.

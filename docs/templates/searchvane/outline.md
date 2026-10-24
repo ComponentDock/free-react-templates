@@ -1,4 +1,9 @@
 # SearchVane — Implementation Notes
+<!-- prep-status: shipped-as=findspot -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-02` design this prep describes already
+> ships as `apps/findspot` (<https://findspot.free.componentdock.com>).
+> Do not scaffold `apps/searchvane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-findspot/spec.md`.
 
 <!-- ref-reverify:2026-10-22 -->
 

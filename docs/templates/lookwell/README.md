@@ -1,4 +1,9 @@
 # Lookwell — Design Notes
+<!-- prep-status: shipped-as=gaze -->
+> **SHIPPED-UNDER** — the ColorLib `thelook` design this prep describes already
+> ships as `apps/gaze` (<https://gaze.free.componentdock.com>).
+> Do not scaffold `apps/lookwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gaze/spec.md`.
 
 Recreation of ColorLib "The Look" (thelook) — dark photography gallery template.
 

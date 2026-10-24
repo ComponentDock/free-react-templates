@@ -1,4 +1,9 @@
 # ExecSuite (ColorLib Corporate) — Tasks & Design Notes
+<!-- prep-status: shipped-as=execly -->
+> **SHIPPED-UNDER** — the ColorLib `corporate` design this prep describes already
+> ships as `apps/execly` (<https://execly.free.componentdock.com>).
+> Do not scaffold `apps/execsuite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-execly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-execsuite`. Recreation name: **ExecSuite** (NEW name —

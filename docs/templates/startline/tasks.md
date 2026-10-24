@@ -1,4 +1,9 @@
 # StartLine Implementation Tasks
+<!-- prep-status: shipped-as=thrive -->
+> **SHIPPED-UNDER** — the ColorLib `startright` design this prep describes already
+> ships as `apps/thrive` (<https://thrive.free.componentdock.com>).
+> Do not scaffold `apps/startline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-thrive/spec.md`.
 
 1. **Scaffold Workspace**
    - Copy simplest existing app (e.g. `apps/abode` or `apps/boost`) to `apps/startline`.

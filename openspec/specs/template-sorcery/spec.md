@@ -1,4 +1,9 @@
 # Template: Sorcery (Financial Form Wizard)
+<!-- prep-status: shipped-as=finstep -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-24` design this prep describes already
+> ships as `apps/finstep` (<https://finstep.free.componentdock.com>).
+> Do not scaffold `apps/sorcery`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-finstep/spec.md`.
 
 ## Purpose
 

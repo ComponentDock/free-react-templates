@@ -1,4 +1,9 @@
 # Template: Coachcraft (Life Coaching / Consulting)
+<!-- prep-status: shipped-as=elevate -->
+> **SHIPPED-UNDER** — the ColorLib `life-coaching` design this prep describes already
+> ships as `apps/elevate` (<https://elevate.free.componentdock.com>).
+> Do not scaffold `apps/coachcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-elevate/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Proplib (Real Estate)
+<!-- prep-status: shipped-as=propwise -->
+> **SHIPPED-UNDER** — the ColorLib `real-estate` design this prep describes already
+> ships as `apps/propwise` (<https://propwise.free.componentdock.com>).
+> Do not scaffold `apps/proplib`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-propwise/spec.md`.
 
 ## Purpose
 

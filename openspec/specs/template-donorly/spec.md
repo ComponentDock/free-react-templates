@@ -3,6 +3,11 @@
 > cleanup. Both TEMPLATES.md Fundraiser rows (404, 1267) are marked `[x]`.
 
 # Template: Donorly (Charity / Fundraising Template)
+<!-- prep-status: shipped-as=benefact -->
+> **SHIPPED-UNDER** — the ColorLib `fundraiser` design this prep describes already
+> ships as `apps/benefact` (<https://benefact.free.componentdock.com>).
+> Do not scaffold `apps/donorly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-benefact/spec.md`.
 
 ## Purpose
 

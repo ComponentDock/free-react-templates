@@ -1,4 +1,9 @@
 # Template: Spotguide (Directory/Listing Template)
+<!-- prep-status: shipped-as=listnest -->
+> **SHIPPED-UNDER** — the ColorLib `listing` design this prep describes already
+> ships as `apps/listnest` (<https://listnest.free.componentdock.com>).
+> Do not scaffold `apps/spotguide`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-listnest/spec.md`.
 
 ## Purpose
 

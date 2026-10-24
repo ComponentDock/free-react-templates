@@ -1,4 +1,9 @@
 # Regvox — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=regpilot -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-17` design this prep describes already
+> ships as `apps/regpilot` (<https://regpilot.free.componentdock.com>).
+> Do not scaffold `apps/regvox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regpilot/spec.md`.
 
 ## Structure (section order)
 

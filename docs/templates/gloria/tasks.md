@@ -1,4 +1,9 @@
 # Gloria — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=sprout -->
+> **SHIPPED-UNDER** — the ColorLib `spring` design this prep describes already
+> ships as `apps/sprout` (<https://sprout.free.componentdock.com>).
+> Do not scaffold `apps/gloria`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sprout/spec.md`.
 
 ## Source
 - ColorLib slug: `spring`

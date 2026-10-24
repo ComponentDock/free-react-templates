@@ -1,4 +1,9 @@
 # Optique (ColorLib Multiselect 09) — Tasks & Design Notes
+<!-- prep-status: shipped-as=thresh -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-09` design this prep describes already
+> ships as `apps/thresh` (<https://thresh.free.componentdock.com>).
+> Do not scaffold `apps/optique`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-thresh/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-optique`. Recreation name: **Optique** (NEW name —

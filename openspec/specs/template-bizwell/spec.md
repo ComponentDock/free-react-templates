@@ -1,4 +1,9 @@
 # Template: Bizwell (Business / Corporate)
+<!-- prep-status: shipped-as=bizplanner -->
+> **SHIPPED-UNDER** — the ColorLib `bizpro` design this prep describes already
+> ships as `apps/bizplanner` (<https://bizplanner.free.componentdock.com>).
+> Do not scaffold `apps/bizwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bizplanner/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Frostbite (E-Commerce Fashion Shop)
+<!-- prep-status: shipped-as=snowline -->
+> **SHIPPED-UNDER** — the ColorLib `winter` design this prep describes already
+> ships as `apps/snowline` (<https://snowline.free.componentdock.com>).
+> Do not scaffold `apps/frostbite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-snowline/spec.md`.
 
 ## Purpose
 

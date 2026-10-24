@@ -1,4 +1,9 @@
 # MsgBox — Design Notes & Tasks
+<!-- prep-status: shipped-as=touchback -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-12` design this prep describes already
+> ships as `apps/touchback` (<https://touchback.free.componentdock.com>).
+> Do not scaffold `apps/msgbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-touchback/spec.md`.
 
 ## Source
 - **ColorLib:** Contact Form 12 (V12)

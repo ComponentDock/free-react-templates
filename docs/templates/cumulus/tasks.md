@@ -1,4 +1,9 @@
 # Cumulus (ColorLib Cloudtemplate) — Tasks & Design Notes
+<!-- prep-status: shipped-as=nebuly -->
+> **SHIPPED-UNDER** — the ColorLib `cloudtemplate` design this prep describes already
+> ships as `apps/nebuly` (<https://nebuly.free.componentdock.com>).
+> Do not scaffold `apps/cumulus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nebuly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cumulus` by an implementer stream.

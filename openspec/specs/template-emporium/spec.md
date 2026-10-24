@@ -1,4 +1,9 @@
 # Template: Emporium (E-commerce Fashion Store)
+<!-- prep-status: shipped-as=mannequin -->
+> **SHIPPED-UNDER** — the ColorLib `coza-store` design this prep describes already
+> ships as `apps/mannequin` (<https://mannequin.free.componentdock.com>).
+> Do not scaffold `apps/emporium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mannequin/spec.md`.
 
 > **⚠️ SUPERSEDED — do not implement.** ColorLib "Coza Store" already shipped
 > as **Mannequin** (apps/mannequin) via PR #495

@@ -1,4 +1,9 @@
 # Expedition (ColorLib Trips) — Tasks & Design Notes
+<!-- prep-status: shipped-as=trek -->
+> **SHIPPED-UNDER** — the ColorLib `trips` design this prep describes already
+> ships as `apps/trek` (<https://trek.free.componentdock.com>).
+> Do not scaffold `apps/expedition`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-trek/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-expedition`.

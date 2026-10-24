@@ -1,4 +1,9 @@
 # Template: PentaStudio (Creative Agency)
+<!-- prep-status: shipped-as=artful -->
+> **SHIPPED-UNDER** — the ColorLib `five-star` design this prep describes already
+> ships as `apps/artful` (<https://artful.free.componentdock.com>).
+> Do not scaffold `apps/pentastudio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-artful/spec.md`.
 
 ## Purpose
 

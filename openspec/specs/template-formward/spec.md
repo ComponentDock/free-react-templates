@@ -1,4 +1,9 @@
 # Template: Formward (Contact Form)
+<!-- prep-status: shipped-as=formbloom -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-15` design this prep describes already
+> ships as `apps/formbloom` (<https://formbloom.free.componentdock.com>).
+> Do not scaffold `apps/formward`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formbloom/spec.md`.
 
 ## Purpose
 

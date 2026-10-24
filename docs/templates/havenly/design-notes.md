@@ -1,4 +1,9 @@
 # Havenly — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=giveaid -->
+> **SHIPPED-UNDER** — the ColorLib `adopted` design this prep describes already
+> ships as `apps/giveaid` (<https://giveaid.free.componentdock.com>).
+> Do not scaffold `apps/havenly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-giveaid/spec.md`.
 
 **Source:** ColorLib Adopted — https://preview.colorlib.com/theme/adopted/
 **New name:** havenly

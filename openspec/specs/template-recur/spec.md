@@ -1,4 +1,9 @@
 # Template: Recur (Business / Agency)
+<!-- prep-status: shipped-as=loop -->
+> **SHIPPED-UNDER** — the ColorLib `repeat` design this prep describes already
+> ships as `apps/loop` (<https://loop.free.componentdock.com>).
+> Do not scaffold `apps/recur`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loop/spec.md`.
 
 ## Purpose
 

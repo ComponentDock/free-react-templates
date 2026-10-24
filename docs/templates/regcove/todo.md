@@ -1,4 +1,9 @@
 # Regcove — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=regline -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-6` design this prep describes already
+> ships as `apps/regline` (<https://regline.free.componentdock.com>).
+> Do not scaffold `apps/regcove`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regline/spec.md`.
 
 **Source:** ColorLib Regform 6
 **Preview:** https://colorlib.com/wp/template/colorlib-regform-6/

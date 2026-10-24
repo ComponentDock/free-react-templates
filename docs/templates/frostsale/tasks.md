@@ -1,4 +1,9 @@
 # Frostsale (ColorLib Modal 03) — Design Notes
+<!-- prep-status: shipped-as=snowdrift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-03` design this prep describes already
+> ships as `apps/snowdrift` (<https://snowdrift.free.componentdock.com>).
+> Do not scaffold `apps/frostsale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-snowdrift/spec.md`.
 
 ## Structure order
 

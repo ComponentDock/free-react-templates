@@ -1,4 +1,9 @@
 # Template: CraneOps (Construction Company Landing)
+<!-- prep-status: shipped-as=rivet -->
+> **SHIPPED-UNDER** — the ColorLib `construct` design this prep describes already
+> ships as `apps/rivet` (<https://rivet.free.componentdock.com>).
+> Do not scaffold `apps/craneops`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rivet/spec.md`.
 
 ## Purpose
 

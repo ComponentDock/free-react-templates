@@ -1,4 +1,9 @@
 # Velora — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=kael -->
+> **SHIPPED-UNDER** — the ColorLib `satner` design this prep describes already
+> ships as `apps/kael` (<https://kael.free.componentdock.com>).
+> Do not scaffold `apps/velora`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kael/spec.md`.
 
 Source: ColorLib **Satner** (slug: `satner`)
 Preview: https://preview.colorlib.com/theme/satner/

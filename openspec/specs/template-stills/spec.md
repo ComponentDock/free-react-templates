@@ -1,4 +1,9 @@
 # Template: Stills (Photography Portfolio)
+<!-- prep-status: shipped-as=framely -->
+> **SHIPPED-UNDER** — the ColorLib `boto` design this prep describes already
+> ships as `apps/framely` (<https://framely.free.componentdock.com>).
+> Do not scaffold `apps/stills`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-framely/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Boto" was already shipped as **Framely**
 > (PR #311, https://free-react-templates-framely.surge.sh). This spec was

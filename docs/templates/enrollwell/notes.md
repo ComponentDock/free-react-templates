@@ -1,4 +1,9 @@
 # Enrollwell — Implementation Notes
+<!-- prep-status: shipped-as=formblush -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-24` design this prep describes already
+> ships as `apps/formblush` (<https://formblush.free.componentdock.com>).
+> Do not scaffold `apps/enrollwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formblush/spec.md`.
 
 ## Replication Reference
 

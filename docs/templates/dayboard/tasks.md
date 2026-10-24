@@ -1,4 +1,9 @@
 # Research & Tasks: Dayboard (ColorLib Calendar 05)
+<!-- prep-status: shipped-as=calmark -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-05` design this prep describes already
+> ships as `apps/calmark` (<https://calmark.free.componentdock.com>).
+> Do not scaffold `apps/dayboard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calmark/spec.md`.
 
 - **Source**: ColorLib Calendar 05 (`https://colorlib.com/wp/template/calendar-05/`)
 - **New App Name**: `dayboard` (`@free-react-templates/dayboard`)

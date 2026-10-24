@@ -1,4 +1,9 @@
 # Whisker (Colorlib Petcare) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pawly -->
+> **SHIPPED-UNDER** — the ColorLib `petcare` design this prep describes already
+> ships as `apps/pawly` (<https://pawly.free.componentdock.com>).
+> Do not scaffold `apps/whisker`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pawly/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-whisker`.

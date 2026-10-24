@@ -1,4 +1,9 @@
 # Template: Grind (Gym / Fitness Template)
+<!-- prep-status: shipped-as=sculpt -->
+> **SHIPPED-UNDER** — the ColorLib `flawless` design this prep describes already
+> ships as `apps/sculpt` (<https://sculpt.free.componentdock.com>).
+> Do not scaffold `apps/grind`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sculpt/spec.md`.
 
 > **SUPERSEDED** — this ColorLib source (Flawless) already shipped as
 > **Sculpt** (PR #358, https://sculpt.free.componentdock.com, merged

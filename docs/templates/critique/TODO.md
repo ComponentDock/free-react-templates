@@ -1,4 +1,9 @@
 # Critique — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=splitmodal -->
+> **SHIPPED-UNDER** — the ColorLib `modal-19` design this prep describes already
+> ships as `apps/splitmodal` (<https://splitmodal.free.componentdock.com>).
+> Do not scaffold `apps/critique`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-splitmodal/spec.md`.
 
 Source: ColorLib Modal 19 (split-screen product review modal)
 Preview: https://preview.colorlib.com/theme/bootstrap/modal-19/

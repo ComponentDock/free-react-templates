@@ -1,4 +1,9 @@
 # Incant (ColorLib Wizard 18) — Tasks & Design Notes
+<!-- prep-status: shipped-as=scout -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-18` design this prep describes already
+> ships as `apps/scout` (<https://scout.free.componentdock.com>).
+> Do not scaffold `apps/incant`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scout/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-incant`. Recreation name: **Incant** (NEW

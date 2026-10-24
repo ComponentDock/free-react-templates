@@ -1,4 +1,9 @@
 # Chronoflow — Implementation & Design Notes
+<!-- prep-status: shipped-as=calgrid -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-12` design this prep describes already
+> ships as `apps/calgrid` (<https://calgrid.free.componentdock.com>).
+> Do not scaffold `apps/chronoflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calgrid/spec.md`.
 
 - **Source**: ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`)
 - **App Directory**: `apps/chronoflow`

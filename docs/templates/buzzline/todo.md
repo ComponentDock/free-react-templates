@@ -1,4 +1,9 @@
 # Buzzline — Implementation TODO + Design Notes
+<!-- prep-status: shipped-as=dialpad -->
+> **SHIPPED-UNDER** — the ColorLib `callcenter` design this prep describes already
+> ships as `apps/dialpad` (<https://dialpad.free.componentdock.com>).
+> Do not scaffold `apps/buzzline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dialpad/spec.md`.
 
 ## Source
 - **ColorLib original:** Callcenter — https://colorlib.com/wp/template/callcenter/

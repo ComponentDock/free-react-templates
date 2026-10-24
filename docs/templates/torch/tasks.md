@@ -1,4 +1,9 @@
 # Torch (Colorlib Error 404 8) — Tasks & Design Notes
+<!-- prep-status: shipped-as=glow -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-error-404-8` design this prep describes already
+> ships as `apps/glow` (<https://glow.free.componentdock.com>).
+> Do not scaffold `apps/torch`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-glow/spec.md`.
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-torch`.

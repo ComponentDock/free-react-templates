@@ -1,4 +1,9 @@
 # Template: Excavate (Mining / Industrial)
+<!-- prep-status: shipped-as=digger -->
+> **SHIPPED-UNDER** — the ColorLib `unearth` design this prep describes already
+> ships as `apps/digger` (<https://digger.free.componentdock.com>).
+> Do not scaffold `apps/excavate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-digger/spec.md`.
 
 ## Purpose
 

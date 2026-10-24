@@ -1,4 +1,9 @@
 # MedCraft — Implementation Notes
+<!-- prep-status: shipped-as=curemark -->
+> **SHIPPED-UNDER** — the ColorLib `medart` design this prep describes already
+> ships as `apps/curemark` (<https://curemark.free.componentdock.com>).
+> Do not scaffold `apps/medcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-curemark/spec.md`.
 
 Source: ColorLib MedArt
 Preview: https://preview.colorlib.com/theme/medart/

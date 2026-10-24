@@ -1,4 +1,9 @@
 # Stills (ColorLib Boto) — Tasks & Design Notes
+<!-- prep-status: shipped-as=framely -->
+> **SHIPPED-UNDER** — the ColorLib `boto` design this prep describes already
+> ships as `apps/framely` (<https://framely.free.componentdock.com>).
+> Do not scaffold `apps/stills`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-framely/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-stills` by an implementer stream.

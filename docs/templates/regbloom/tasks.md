@@ -1,4 +1,9 @@
 # Regbloom (ColorLib Regform 35) — Tasks & Design Notes
+<!-- prep-status: shipped-as=groove -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-35` design this prep describes already
+> ships as `apps/groove` (<https://groove.free.componentdock.com>).
+> Do not scaffold `apps/regbloom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-groove/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-regbloom`. Recreation name: **Regbloom** (NEW name —

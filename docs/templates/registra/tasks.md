@@ -1,4 +1,9 @@
 # Registra — Implementation Tasks
+<!-- prep-status: shipped-as=regcraft -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-1` design this prep describes already
+> ships as `apps/regcraft` (<https://regcraft.free.componentdock.com>).
+> Do not scaffold `apps/registra`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regcraft/spec.md`.
 
 Source: ColorLib Reg Form V1 (`colorlib-regform-1`)
 Preview: https://preview.colorlib.com/theme/colorlib-regform-1/ (unreachable; screenshot used)

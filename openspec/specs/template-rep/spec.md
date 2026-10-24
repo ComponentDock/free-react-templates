@@ -1,4 +1,9 @@
 # Template: Rep (Fitness Gym Template)
+<!-- prep-status: shipped-as=pumply -->
+> **SHIPPED-UNDER** — the ColorLib `gymer` design this prep describes already
+> ships as `apps/pumply` (<https://pumply.free.componentdock.com>).
+> Do not scaffold `apps/rep`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pumply/spec.md`.
 
 ## Purpose
 

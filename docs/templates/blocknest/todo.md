@@ -1,4 +1,9 @@
 # BlockNest — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=coinforge -->
+> **SHIPPED-UNDER** — the ColorLib `cryptian` design this prep describes already
+> ships as `apps/coinforge` (<https://coinforge.free.componentdock.com>).
+> Do not scaffold `apps/blocknest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coinforge/spec.md`.
 
 Source: ColorLib Cryptian
 Preview: https://preview.colorlib.com/theme/cryptian/

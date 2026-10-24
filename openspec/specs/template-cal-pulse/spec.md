@@ -1,4 +1,9 @@
 # Template: CalPulse (Calendar)
+<!-- prep-status: shipped-as=metronome -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-11` design this prep describes already
+> ships as `apps/metronome` (<https://metronome.free.componentdock.com>).
+> Do not scaffold `apps/cal-pulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-metronome/spec.md`.
 
 ## Purpose
 

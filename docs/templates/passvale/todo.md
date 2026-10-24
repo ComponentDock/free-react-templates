@@ -1,4 +1,9 @@
 # Passvale — Implementation Task Outline
+<!-- prep-status: shipped-as=loginox -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-20` design this prep describes already
+> ships as `apps/loginox` (<https://loginox.free.componentdock.com>).
+> Do not scaffold `apps/passvale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginox/spec.md`.
 
 <!-- ref-reverify:2026-10-22 -->
 

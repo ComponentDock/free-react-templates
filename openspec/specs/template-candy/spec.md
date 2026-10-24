@@ -1,4 +1,9 @@
 # Template: Candy (404 Error Page — Pink Rounded Display)
+<!-- prep-status: shipped-as=pop -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-error-404-7` design this prep describes already
+> ships as `apps/pop` (<https://pop.free.componentdock.com>).
+> Do not scaffold `apps/candy`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pop/spec.md`.
 
 ## Purpose
 

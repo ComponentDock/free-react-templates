@@ -1,4 +1,9 @@
 # Template: Voguish (E-Commerce / Fashion Store)
+<!-- prep-status: shipped-as=modista -->
+> **SHIPPED-UNDER** — the ColorLib `persuit` design this prep describes already
+> ships as `apps/modista` (<https://modista.free.componentdock.com>).
+> Do not scaffold `apps/voguish`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modista/spec.md`.
 
 ## Purpose
 

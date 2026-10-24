@@ -1,4 +1,9 @@
 # Template: LoginVault (Login Form)
+<!-- prep-status: shipped-as=loginpulse -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v5` design this prep describes already
+> ships as `apps/loginpulse` (<https://loginpulse.free.componentdock.com>).
+> Do not scaffold `apps/loginvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginpulse/spec.md`.
 
 ## Purpose
 

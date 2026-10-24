@@ -1,4 +1,9 @@
 # CivicHub — Implementation Tasks
+<!-- prep-status: shipped-as=credentia -->
+> **SHIPPED-UNDER** — the ColorLib `civic` design this prep describes already
+> ships as `apps/credentia` (<https://credentia.free.componentdock.com>).
+> Do not scaffold `apps/civichub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-credentia/spec.md`.
 
 Recreation of ColorLib "Civic" (https://colorlib.com/wp/template/civic/)
 

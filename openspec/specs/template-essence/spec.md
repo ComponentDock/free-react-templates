@@ -1,4 +1,9 @@
 # Template: Essence (Ecommerce Shop)
+<!-- prep-status: shipped-as=fragrance -->
+> **SHIPPED-UNDER** — the ColorLib `aroma` design this prep describes already
+> ships as `apps/fragrance` (<https://fragrance.free.componentdock.com>).
+> Do not scaffold `apps/essence`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fragrance/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Byteline (News / Magazine)
+<!-- prep-status: shipped-as=frontpage -->
+> **SHIPPED-UNDER** — the ColorLib `aznews` design this prep describes already
+> ships as `apps/frontpage` (<https://frontpage.free.componentdock.com>).
+> Do not scaffold `apps/byteline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-frontpage/spec.md`.
 
 ## Purpose
 

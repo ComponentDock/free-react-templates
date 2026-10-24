@@ -1,4 +1,9 @@
 # Likeness — Design Notes
+<!-- prep-status: shipped-as=selfcraft -->
+> **SHIPPED-UNDER** — the ColorLib `personify` design this prep describes already
+> ships as `apps/selfcraft` (<https://selfcraft.free.componentdock.com>).
+> Do not scaffold `apps/likeness`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-selfcraft/spec.md`.
 
 ## Source
 

@@ -1,4 +1,9 @@
 # Template: Cartofield (Contact Form)
+<!-- prep-status: shipped-as=jotdown -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v19` design this prep describes already
+> ships as `apps/jotdown` (<https://jotdown.free.componentdock.com>).
+> Do not scaffold `apps/cartofield`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jotdown/spec.md`.
 
 ## Purpose
 

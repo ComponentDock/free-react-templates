@@ -1,4 +1,9 @@
 # Timeless (ColorLib Classic) — Implementation Tasks
+<!-- prep-status: shipped-as=acumen -->
+> **SHIPPED-UNDER** — the ColorLib `classic` design this prep describes already
+> ships as `apps/acumen` (<https://acumen.free.componentdock.com>).
+> Do not scaffold `apps/timeless`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-acumen/spec.md`.
 
 **Source:** https://colorlib.com/wp/template/classic/
 **Preview:** https://preview.colorlib.com/theme/classic/

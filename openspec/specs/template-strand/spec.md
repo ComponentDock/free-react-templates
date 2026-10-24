@@ -1,4 +1,9 @@
 # Template: Strand (Hair Salon Landing)
+<!-- prep-status: shipped-as=tressly -->
+> **SHIPPED-UNDER** — the ColorLib `hairsal` design this prep describes already
+> ships as `apps/tressly` (<https://tressly.free.componentdock.com>).
+> Do not scaffold `apps/strand`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tressly/spec.md`.
 
 ## Purpose
 

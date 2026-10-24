@@ -1,4 +1,9 @@
 # Vaulted (ColorLib Crose) — Tasks & Design Notes
+<!-- prep-status: shipped-as=crescent -->
+> **SHIPPED-UNDER** — the ColorLib `crose` design this prep describes already
+> ships as `apps/crescent` (<https://crescent.free.componentdock.com>).
+> Do not scaffold `apps/vaulted`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crescent/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-vaulted` by an implementer stream.

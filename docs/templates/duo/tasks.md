@@ -1,4 +1,9 @@
 # Duo — prep notes (ColorLib Checkbox 12)
+<!-- prep-status: shipped-as=checkify -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-12` design this prep describes already
+> ships as `apps/checkify` (<https://checkify.free.componentdock.com>).
+> Do not scaffold `apps/duo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-checkify/spec.md`.
 
 > Prepped by stream 3 (2026-08-15). Implementer: read `docs/replication.md`
 >

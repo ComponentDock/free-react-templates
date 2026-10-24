@@ -1,4 +1,9 @@
 # Betrothal — design notes (section-by-section fidelity)
+<!-- prep-status: shipped-as=cherish -->
+> **SHIPPED-UNDER** — the ColorLib `dreamwed` design this prep describes already
+> ships as `apps/cherish` (<https://cherish.free.componentdock.com>).
+> Do not scaffold `apps/betrothal`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cherish/spec.md`.
 
 > **Superseded (2026-10-12).** Prepared for the ColorLib template `dreamwed`
 > (TEMPLATES.md line 3097). That template shipped as **Cherish** (`apps/cherish`,

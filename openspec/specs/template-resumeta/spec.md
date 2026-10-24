@@ -1,4 +1,9 @@
 # Template: Resumeta (CV / Resume)
+<!-- prep-status: shipped-as=credentia -->
+> **SHIPPED-UNDER** — the ColorLib `civic` design this prep describes already
+> ships as `apps/credentia` (<https://credentia.free.componentdock.com>).
+> Do not scaffold `apps/resumeta`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-credentia/spec.md`.
 
 ## Purpose
 

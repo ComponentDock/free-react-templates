@@ -1,4 +1,9 @@
 # Freight (ColorLib Logistic) — Tasks & Design Notes
+<!-- prep-status: shipped-as=convey -->
+> **SHIPPED-UNDER** — the ColorLib `logistic` design this prep describes already
+> ships as `apps/convey` (<https://convey.free.componentdock.com>).
+> Do not scaffold `apps/freight`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-convey/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-freight`.

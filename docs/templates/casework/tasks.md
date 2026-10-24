@@ -1,4 +1,9 @@
 # Casework — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=alibi -->
+> **SHIPPED-UNDER** — the ColorLib `marco-2` design this prep describes already
+> ships as `apps/alibi` (<https://alibi.free.componentdock.com>).
+> Do not scaffold `apps/casework`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-alibi/spec.md`.
 
 ## Template Identity
 - **Name:** Casework

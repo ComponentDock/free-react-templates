@@ -1,4 +1,9 @@
 # Template: Envoi (Footer)
+<!-- prep-status: shipped-as=baseplate -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-03` design this prep describes already
+> ships as `apps/baseplate` (<https://baseplate.free.componentdock.com>).
+> Do not scaffold `apps/envoi`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-baseplate/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Vestibule (ColorLib Modal 02) — Tasks & Design Notes
+<!-- prep-status: shipped-as=splitform -->
+> **SHIPPED-UNDER** — the ColorLib `modal-02` design this prep describes already
+> ships as `apps/splitform` (<https://splitform.free.componentdock.com>).
+> Do not scaffold `apps/vestibule`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-splitform/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Vestibule** (NEW
 > name — the ColorLib source keeps its name "Modal 02"). Implementation

@@ -1,4 +1,9 @@
 # Trio — prep notes (ColorLib Checkbox 13)
+<!-- prep-status: shipped-as=coralbit -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-13` design this prep describes already
+> ships as `apps/coralbit` (<https://coralbit.free.componentdock.com>).
+> Do not scaffold `apps/trio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coralbit/spec.md`.
 
 > Prepped by stream 3 (2026-08-15). Implementer: read `docs/replication.md`
 >

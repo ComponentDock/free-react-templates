@@ -1,4 +1,9 @@
 # Formward (ColorLib Contact Form 15) — Tasks & Design Notes
+<!-- prep-status: shipped-as=formbloom -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-15` design this prep describes already
+> ships as `apps/formbloom` (<https://formbloom.free.componentdock.com>).
+> Do not scaffold `apps/formward`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formbloom/spec.md`.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

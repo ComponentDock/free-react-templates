@@ -1,4 +1,9 @@
 # Fetch (Colorlib Dogger) — Tasks & Design Notes
+<!-- prep-status: shipped-as=barkly -->
+> **SHIPPED-UNDER** — the ColorLib `dogger` design this prep describes already
+> ships as `apps/barkly` (<https://barkly.free.componentdock.com>).
+> Do not scaffold `apps/fetch`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-barkly/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-fetch`.

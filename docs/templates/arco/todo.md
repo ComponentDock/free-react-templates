@@ -1,4 +1,9 @@
 # Arco — Implementation Notes
+<!-- prep-status: shipped-as=timber -->
+> **SHIPPED-UNDER** — the ColorLib `balay` design this prep describes already
+> ships as `apps/timber` (<https://timber.free.componentdock.com>).
+> Do not scaffold `apps/arco`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-timber/spec.md`.
 
 Source: ColorLib "Balay" — https://colorlib.com/wp/template/balay/
 Preview: https://preview.colorlib.com/theme/balay/

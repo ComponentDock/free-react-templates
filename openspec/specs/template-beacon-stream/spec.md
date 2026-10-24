@@ -1,4 +1,9 @@
 # Template: Beacon Stream (Carousel Showcase / UI Component)
+<!-- prep-status: shipped-as=carouselhub -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-03` design this prep describes already
+> ships as `apps/carouselhub` (<https://carouselhub.free.componentdock.com>).
+> Do not scaffold `apps/beacon-stream`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carouselhub/spec.md`.
 
 ## Purpose
 

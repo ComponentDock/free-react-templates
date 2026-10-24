@@ -1,4 +1,9 @@
 # Wanderer — Implementation Notes
+<!-- prep-status: shipped-as=jetpath -->
+> **SHIPPED-UNDER** — the ColorLib `travelers` design this prep describes already
+> ships as `apps/jetpath` (<https://jetpath.free.componentdock.com>).
+> Do not scaffold `apps/wanderer`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jetpath/spec.md`.
 
 ## Template Info
 - **New name:** Wanderer

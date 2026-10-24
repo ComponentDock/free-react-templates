@@ -1,4 +1,9 @@
 # Template: Alpine (Hotel & Resort)
+<!-- prep-status: shipped-as=highland -->
+> **SHIPPED-UNDER** — the ColorLib `montana` design this prep describes already
+> ships as `apps/highland` (<https://highland.free.componentdock.com>).
+> Do not scaffold `apps/alpine`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-highland/spec.md`.
 
 ## Purpose
 

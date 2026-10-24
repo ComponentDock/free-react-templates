@@ -1,4 +1,9 @@
 # SelectCap — Implementation Tasks
+<!-- prep-status: shipped-as=chklmt -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-17` design this prep describes already
+> ships as `apps/chklmt` (<https://chklmt.free.componentdock.com>).
+> Do not scaffold `apps/selectcap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chklmt/spec.md`.
 
 ## Source
 

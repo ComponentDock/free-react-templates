@@ -1,4 +1,9 @@
 # Zenleaf (ColorLib Yogabest) — Tasks & Design Notes
+<!-- prep-status: shipped-as=zenbloom -->
+> **SHIPPED-UNDER** — the ColorLib `yogabest` design this prep describes already
+> ships as `apps/zenbloom` (<https://zenbloom.free.componentdock.com>).
+> Do not scaffold `apps/zenleaf`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-zenbloom/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-zenleaf`. Recreation name: **Zenleaf** (NEW name —

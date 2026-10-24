@@ -1,4 +1,9 @@
 # Template: Stamina (Crossfit / Gym)
+<!-- prep-status: shipped-as=vigor -->
+> **SHIPPED-UNDER** — the ColorLib `endurance` design this prep describes already
+> ships as `apps/vigor` (<https://vigor.free.componentdock.com>).
+> Do not scaffold `apps/stamina`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vigor/spec.md`.
 
 ## Purpose
 

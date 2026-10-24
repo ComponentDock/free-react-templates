@@ -1,4 +1,9 @@
 # Template: SportsClub (Fitness & Gym)
+<!-- prep-status: shipped-as=fitlane -->
+> **SHIPPED-UNDER** — the ColorLib `sportify` design this prep describes already
+> ships as `apps/fitlane` (<https://fitlane.free.componentdock.com>).
+> Do not scaffold `apps/sportsclub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitlane/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Smelter (Industrial / Manufacturing)
+<!-- prep-status: shipped-as=machina -->
+> **SHIPPED-UNDER** — the ColorLib `braxit` design this prep describes already
+> ships as `apps/machina` (<https://machina.free.componentdock.com>).
+> Do not scaffold `apps/smelter`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-machina/spec.md`.
 
 > **SUPERSEDED** — the ColorLib "Braxit" source this spec targets already
 > shipped as **Machina** (PR #313, https://free-react-templates-machina.surge.sh).

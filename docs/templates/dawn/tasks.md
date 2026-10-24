@@ -1,4 +1,9 @@
 # Dawn — Implementation Notes
+<!-- prep-status: shipped-as=novus -->
+> **SHIPPED-UNDER** — the ColorLib `03-comming-soon` design this prep describes already
+> ships as `apps/novus` (<https://novus.free.componentdock.com>).
+> Do not scaffold `apps/dawn`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-novus/spec.md`.
 
 ## Source
 - ColorLib: "Coming Soon V18" (`03-comming-soon`)

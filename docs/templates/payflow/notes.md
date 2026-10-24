@@ -1,4 +1,9 @@
 # Payflow — Implementation Notes
+<!-- prep-status: shipped-as=divine -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-5` design this prep describes already
+> ships as `apps/divine` (<https://divine.free.componentdock.com>).
+> Do not scaffold `apps/payflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-divine/spec.md`.
 
 Source: Colorlib Wizard 5 (`https://colorlib.com/wp/template/colorlib-wizard-5/`)
 Demo: `https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html`

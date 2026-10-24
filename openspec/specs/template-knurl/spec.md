@@ -1,4 +1,9 @@
 # Template: Knurl (Button / UI Kit Showcase)
+<!-- prep-status: shipped-as=buttonforge -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-16` design this prep describes already
+> ships as `apps/buttonforge` (<https://buttonforge.free.componentdock.com>).
+> Do not scaffold `apps/knurl`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-buttonforge/spec.md`.
 
 ## Purpose
 

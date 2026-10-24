@@ -1,3 +1,9 @@
+<!-- prep-status: shipped-as=snowdrift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-03` design this prep describes already
+> ships as `apps/snowdrift` (<https://snowdrift.free.componentdock.com>).
+> Do not scaffold `apps/frostsale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-snowdrift/spec.md`.
+
 ## Purpose
 
 Frostsale is a winter sale notification modal template recreating ColorLib Modal 03. It provides a centered modal dialog with a split-screen layout: left panel has teal background with sale text and discount percentage, right panel has a background image with a "Shop now" CTA button. The design uses Pacifico for the "Sale" heading, Lato for body text, and Bootstrap-inspired teal (#39bdc8) as the brand color.

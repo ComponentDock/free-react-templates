@@ -1,4 +1,9 @@
 # Template: Duo (Bootstrap Checkbox States Demo)
+<!-- prep-status: shipped-as=checkify -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-12` design this prep describes already
+> ships as `apps/checkify` (<https://checkify.free.componentdock.com>).
+> Do not scaffold `apps/duo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-checkify/spec.md`.
 
 ## Purpose
 

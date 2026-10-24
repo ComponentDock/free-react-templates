@@ -1,4 +1,9 @@
 # Template: ExecSuite (Corporate / Business Services)
+<!-- prep-status: shipped-as=execly -->
+> **SHIPPED-UNDER** — the ColorLib `corporate` design this prep describes already
+> ships as `apps/execly` (<https://execly.free.componentdock.com>).
+> Do not scaffold `apps/execsuite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-execly/spec.md`.
 
 ## Purpose
 

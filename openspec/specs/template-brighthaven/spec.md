@@ -1,4 +1,9 @@
 # Template: BrightHaven (Education / University)
+<!-- prep-status: shipped-as=brightmind -->
+> **SHIPPED-UNDER** — the ColorLib `genius` design this prep describes already
+> ships as `apps/brightmind` (<https://brightmind.free.componentdock.com>).
+> Do not scaffold `apps/brighthaven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-brightmind/spec.md`.
 
 ## Purpose
 

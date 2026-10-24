@@ -1,4 +1,9 @@
 # Inscribe — Design Notes
+<!-- prep-status: shipped-as=confwell -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-3` design this prep describes already
+> ships as `apps/confwell` (<https://confwell.free.componentdock.com>).
+> Do not scaffold `apps/inscribe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-confwell/spec.md`.
 
 ## Source mapping
 

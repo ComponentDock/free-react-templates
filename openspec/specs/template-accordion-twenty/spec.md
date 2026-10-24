@@ -1,4 +1,9 @@
 # Template: Accordion Twenty (UI Components & FAQ Showcase)
+<!-- prep-status: shipped-as=jade -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-20` design this prep describes already
+> ships as `apps/jade` (<https://jade.free.componentdock.com>).
+> Do not scaffold `apps/accordion-twenty`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jade/spec.md`.
 
 ## Purpose
 

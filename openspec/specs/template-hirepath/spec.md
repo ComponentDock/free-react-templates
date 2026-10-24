@@ -1,4 +1,9 @@
 # Template: HirePath (Job Board / Careers)
+<!-- prep-status: shipped-as=jobquest -->
+> **SHIPPED-UNDER** — the ColorLib `careers` design this prep describes already
+> ships as `apps/jobquest` (<https://jobquest.free.componentdock.com>).
+> Do not scaffold `apps/hirepath`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jobquest/spec.md`.
 
 ## Purpose
 

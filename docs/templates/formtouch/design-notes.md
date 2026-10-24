@@ -1,4 +1,9 @@
 # FormTouch — Design Notes
+<!-- prep-status: shipped-as=formcast -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v20` design this prep describes already
+> ships as `apps/formcast` (<https://formcast.free.componentdock.com>).
+> Do not scaffold `apps/formtouch`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formcast/spec.md`.
 
 Recreation of ColorLib Contact Form V20 (https://colorlib.com/wp/template/contact-form-v20/).
 Preview: https://colorlib.com/etc/cf/ContactFrom_v20/index.html

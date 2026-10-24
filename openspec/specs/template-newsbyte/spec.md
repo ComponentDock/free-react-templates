@@ -1,4 +1,9 @@
 # Template: NewsByte (News/Magazine)
+<!-- prep-status: shipped-as=pressbox -->
+> **SHIPPED-UNDER** — the ColorLib `magnews` design this prep describes already
+> ships as `apps/pressbox` (<https://pressbox.free.componentdock.com>).
+> Do not scaffold `apps/newsbyte`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pressbox/spec.md`.
 
 ## Purpose
 

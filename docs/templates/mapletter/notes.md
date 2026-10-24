@@ -1,4 +1,9 @@
 # MapLetter — Design & Implementation Notes
+<!-- prep-status: shipped-as=formcast -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v20` design this prep describes already
+> ships as `apps/formcast` (<https://formcast.free.componentdock.com>).
+> Do not scaffold `apps/mapletter`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formcast/spec.md`.
 
 Source: ColorLib Contact Form V20
 Preview: https://preview.colorlib.com/theme/contact-form-v20/ (404 at prep time)

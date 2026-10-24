@@ -1,4 +1,9 @@
 # Bricoleur — Implementation Notes
+<!-- prep-status: shipped-as=forgehub -->
+> **SHIPPED-UNDER** — the ColorLib `create` design this prep describes already
+> ships as `apps/forgehub` (<https://forgehub.free.componentdock.com>).
+> Do not scaffold `apps/bricoleur`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-forgehub/spec.md`.
 
 Source: ColorLib **Create** — https://colorlib.com/wp/template/create/
 Preview: https://preview.colorlib.com/theme/create/

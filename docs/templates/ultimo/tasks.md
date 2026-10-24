@@ -1,4 +1,9 @@
 # Ultimo (ColorLib Bootstrap Footer 15) — Tasks & Design Notes
+<!-- prep-status: shipped-as=footerbloom -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-15` design this prep describes already
+> ships as `apps/footerbloom` (<https://footerbloom.free.componentdock.com>).
+> Do not scaffold `apps/ultimo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerbloom/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-ultimo`.

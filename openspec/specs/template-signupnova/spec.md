@@ -1,4 +1,9 @@
 # Template: SignupNova (Form — Signup / Registration)
+<!-- prep-status: shipped-as=joinhub -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-16` design this prep describes already
+> ships as `apps/joinhub` (<https://joinhub.free.componentdock.com>).
+> Do not scaffold `apps/signupnova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-joinhub/spec.md`.
 
 ## Purpose
 

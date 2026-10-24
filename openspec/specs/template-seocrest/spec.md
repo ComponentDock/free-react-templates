@@ -1,4 +1,9 @@
 # Template: SeoCrest (SEO / Digital Marketing)
+<!-- prep-status: shipped-as=rankforge -->
+> **SHIPPED-UNDER** — the ColorLib `seos` design this prep describes already
+> ships as `apps/rankforge` (<https://rankforge.free.componentdock.com>).
+> Do not scaffold `apps/seocrest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rankforge/spec.md`.
 
 ## Purpose
 

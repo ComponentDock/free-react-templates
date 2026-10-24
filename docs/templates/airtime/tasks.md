@@ -1,4 +1,9 @@
 # Airtime — Task Outline
+<!-- prep-status: shipped-as=airwave -->
+> **SHIPPED-UNDER** — the ColorLib `the-hustle-hour` design this prep describes already
+> ships as `apps/airwave` (<https://airwave.free.componentdock.com>).
+> Do not scaffold `apps/airtime`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-airwave/spec.md`.
 
 ## Implementation tasks (for implementers)
 

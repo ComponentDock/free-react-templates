@@ -1,4 +1,9 @@
 # Template: Prisma (Creative Agency Template)
+<!-- prep-status: shipped-as=kreativ -->
+> **SHIPPED-UNDER** — the ColorLib `creativex-3` design this prep describes already
+> ships as `apps/kreativ` (<https://kreativ.free.componentdock.com>).
+> Do not scaffold `apps/prisma`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kreativ/spec.md`.
 
 ## Purpose
 

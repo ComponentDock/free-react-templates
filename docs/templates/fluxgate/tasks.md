@@ -1,4 +1,9 @@
 # Tasks & Research Notes: FluxGate (Colorlib Wizard 30)
+<!-- prep-status: shipped-as=formwalk -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-30` design this prep describes already
+> ships as `apps/formwalk` (<https://formwalk.free.componentdock.com>).
+> Do not scaffold `apps/fluxgate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formwalk/spec.md`.
 
 ## Research Summary
 

@@ -1,4 +1,9 @@
 # Template: Scheduly (Calendar & Scheduling)
+<!-- prep-status: shipped-as=timely -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-09` design this prep describes already
+> ships as `apps/timely` (<https://timely.free.componentdock.com>).
+> Do not scaffold `apps/scheduly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-timely/spec.md`.
 
 ## Purpose
 

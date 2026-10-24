@@ -1,4 +1,9 @@
 # Rejuvena — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=vitalis -->
+> **SHIPPED-UNDER** — the ColorLib `aesthetic` design this prep describes already
+> ships as `apps/vitalis` (<https://vitalis.free.componentdock.com>).
+> Do not scaffold `apps/rejuvena`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vitalis/spec.md`.
 
 ## Template Identity
 

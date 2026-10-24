@@ -1,4 +1,9 @@
 # Canape — Implementation TODO
+<!-- prep-status: shipped-as=brasserie -->
+> **SHIPPED-UNDER** — the ColorLib `caviar` design this prep describes already
+> ships as `apps/brasserie` (<https://brasserie.free.componentdock.com>).
+> Do not scaffold `apps/canape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-brasserie/spec.md`.
 
 Recreation of ColorLib Caviar (restaurant template).
 Source: https://colorlib.com/wp/template/caviar/

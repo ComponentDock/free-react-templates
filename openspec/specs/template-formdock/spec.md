@@ -1,4 +1,9 @@
 # Template: Formdock (Contact Form)
+<!-- prep-status: shipped-as=touchback -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-12` design this prep describes already
+> ships as `apps/touchback` (<https://touchback.free.componentdock.com>).
+> Do not scaffold `apps/formdock`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-touchback/spec.md`.
 
 ## Purpose
 

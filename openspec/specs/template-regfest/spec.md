@@ -1,4 +1,9 @@
 # Template: Regfest (Event Registration Form)
+<!-- prep-status: shipped-as=regvault -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-21` design this prep describes already
+> ships as `apps/regvault` (<https://regvault.free.componentdock.com>).
+> Do not scaffold `apps/regfest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regvault/spec.md`.
 
 ## Purpose
 

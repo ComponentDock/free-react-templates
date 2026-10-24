@@ -1,4 +1,9 @@
 # Reachpoint — Design Notes & Task Outline
+<!-- prep-status: shipped-as=formreach -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-11` design this prep describes already
+> ships as `apps/formreach` (<https://formreach.free.componentdock.com>).
+> Do not scaffold `apps/reachpoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formreach/spec.md`.
 
 ## Source
 - **ColorLib**: Contact Form V11

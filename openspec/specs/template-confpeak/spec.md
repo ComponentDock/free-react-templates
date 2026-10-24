@@ -1,4 +1,9 @@
 # Template: ConfPeak (Event / Conference)
+<!-- prep-status: shipped-as=festpoint -->
+> **SHIPPED-UNDER** — the ColorLib `eventalk` design this prep describes already
+> ships as `apps/festpoint` (<https://festpoint.free.componentdock.com>).
+> Do not scaffold `apps/confpeak`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-festpoint/spec.md`.
 
 ## Purpose
 

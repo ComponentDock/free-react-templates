@@ -1,4 +1,9 @@
 # Sideloom — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=dashlet -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v05` design this prep describes already
+> ships as `apps/dashlet` (<https://dashlet.free.componentdock.com>).
+> Do not scaffold `apps/sideloom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dashlet/spec.md`.
 
 Source: ColorLib Sidebar V05
 Preview: https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v05/

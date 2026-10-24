@@ -1,4 +1,9 @@
 # Template: Formpeak (Contact Form)
+<!-- prep-status: shipped-as=sendwave -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-05` design this prep describes already
+> ships as `apps/sendwave` (<https://sendwave.free.componentdock.com>).
+> Do not scaffold `apps/formpeak`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sendwave/spec.md`.
 
 ## Purpose
 

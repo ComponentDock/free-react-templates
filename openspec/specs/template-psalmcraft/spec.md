@@ -1,4 +1,9 @@
 # Template: PsalmCraft (Nonprofit / Church)
+<!-- prep-status: shipped-as=chapel -->
+> **SHIPPED-UNDER** — the ColorLib `libchurch` design this prep describes already
+> ships as `apps/chapel` (<https://chapel.free.componentdock.com>).
+> Do not scaffold `apps/psalmcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chapel/spec.md`.
 
 ## Purpose
 

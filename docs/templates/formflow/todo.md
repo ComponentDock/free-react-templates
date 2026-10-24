@@ -1,4 +1,9 @@
 # FormFlow — Task Outline & Design Notes
+<!-- prep-status: shipped-as=formpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-4` design this prep describes already
+> ships as `apps/formpad` (<https://formpad.free.componentdock.com>).
+> Do not scaffold `apps/formflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formpad/spec.md`.
 
 ## Structure order (top → bottom)
 

@@ -1,4 +1,9 @@
 # Revlane — Prep Notes
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes already
+> ships as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> Do not scaffold `apps/revlane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drivego/spec.md`.
 
 **Source:** ColorLib "Carrentals" — https://colorlib.com/wp/template/carrentals/
 **Preview:** https://preview.colorlib.com/theme/carrentals/

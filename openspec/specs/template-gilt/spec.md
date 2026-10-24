@@ -1,4 +1,9 @@
 # Template: Gilt (Hotel / Resort Landing)
+<!-- prep-status: shipped-as=hostelry -->
+> **SHIPPED-UNDER** — the ColorLib `royal` design this prep describes already
+> ships as `apps/hostelry` (<https://hostelry.free.componentdock.com>).
+> Do not scaffold `apps/gilt`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hostelry/spec.md`.
 
 > **SUPERSEDED** — this spec duplicates ColorLib "Royal", which shipped as
 > **Hostelry** (PR #430, https://hostelry.free.componentdock.com). Both

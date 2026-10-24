@@ -1,4 +1,9 @@
 # Edict — Implementation Tasks
+<!-- prep-status: shipped-as=lawguard -->
+> **SHIPPED-UNDER** — the ColorLib `solicitor` design this prep describes already
+> ships as `apps/lawguard` (<https://lawguard.free.componentdock.com>).
+> Do not scaffold `apps/edict`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lawguard/spec.md`.
 
 **Source:** ColorLib "Solicitor" — https://colorlib.com/wp/template/solicitor/
 **Preview:** https://preview.colorlib.com/theme/solicitor/

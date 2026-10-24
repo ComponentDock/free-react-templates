@@ -1,4 +1,9 @@
 # Template: Atolite (Business)
+<!-- prep-status: shipped-as=proton -->
+> **SHIPPED-UNDER** — the ColorLib `atomic` design this prep describes already
+> ships as `apps/proton` (<https://proton.free.componentdock.com>).
+> Do not scaffold `apps/atolite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-proton/spec.md`.
 
 ## Purpose
 

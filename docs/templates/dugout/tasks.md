@@ -1,4 +1,9 @@
 # Dugout (ColorLib Phoenix) — Tasks & Design Notes
+<!-- prep-status: shipped-as=slugger -->
+> **SHIPPED-UNDER** — the ColorLib `phoenix` design this prep describes already
+> ships as `apps/slugger` (<https://slugger.free.componentdock.com>).
+> Do not scaffold `apps/dugout`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-slugger/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Phoenix" shipped as **Slugger** (PR #418,
 > live at https://slugger.free.componentdock.com). Do NOT implement this

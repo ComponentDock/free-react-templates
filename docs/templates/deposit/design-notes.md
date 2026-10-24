@@ -1,4 +1,9 @@
 # Deposit — Implementation Notes
+<!-- prep-status: shipped-as=bankcraft -->
+> **SHIPPED-UNDER** — the ColorLib `banker` design this prep describes already
+> ships as `apps/bankcraft` (<https://bankcraft.free.componentdock.com>).
+> Do not scaffold `apps/deposit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bankcraft/spec.md`.
 
 Source: ColorLib Banker (https://preview.colorlib.com/theme/banker/)
 New name: deposit (apps/deposit)

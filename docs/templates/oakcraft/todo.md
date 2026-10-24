@@ -1,4 +1,9 @@
 # OakCraft — Implementation Todo and Design Notes
+<!-- prep-status: shipped-as=stockroom -->
+> **SHIPPED-UNDER** — the ColorLib `amado` design this prep describes already
+> ships as `apps/stockroom` (<https://stockroom.free.componentdock.com>).
+> Do not scaffold `apps/oakcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stockroom/spec.md`.
 
 ## Source mapping
 - ColorLib template: "Amado"

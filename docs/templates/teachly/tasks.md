@@ -1,4 +1,9 @@
 # Teachly — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=brightpath -->
+> **SHIPPED-UNDER** — the ColorLib `edusmart` design this prep describes already
+> ships as `apps/brightpath` (<https://brightpath.free.componentdock.com>).
+> Do not scaffold `apps/teachly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-brightpath/spec.md`.
 
 ## Source
 - ColorLib: Edusmart — https://colorlib.com/wp/template/edusmart/

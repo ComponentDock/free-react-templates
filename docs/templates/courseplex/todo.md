@@ -1,4 +1,9 @@
 # CoursePlex — Implementation Todo
+<!-- prep-status: shipped-as=eduforge -->
+> **SHIPPED-UNDER** — the ColorLib `edusite` design this prep describes already
+> ships as `apps/eduforge` (<https://eduforge.free.componentdock.com>).
+> Do not scaffold `apps/courseplex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-eduforge/spec.md`.
 
 **Source:** ColorLib Edusite (https://preview.colorlib.com/theme/edusite/)
 **Name:** courseplex

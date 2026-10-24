@@ -1,4 +1,9 @@
 # Drainwell — Implementation TODO
+<!-- prep-status: shipped-as=pipeflow -->
+> **SHIPPED-UNDER** — the ColorLib `plumber` design this prep describes already
+> ships as `apps/pipeflow` (<https://pipeflow.free.componentdock.com>).
+> Do not scaffold `apps/drainwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pipeflow/spec.md`.
 
 ## Design Notes
 

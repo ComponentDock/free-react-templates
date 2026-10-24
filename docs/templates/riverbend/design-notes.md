@@ -1,4 +1,9 @@
 # Riverbend — Implementation Notes
+<!-- prep-status: shipped-as=eddy -->
+> **SHIPPED-UNDER** — the ColorLib `theriver` design this prep describes already
+> ships as `apps/eddy` (<https://eddy.free.componentdock.com>).
+> Do not scaffold `apps/riverbend`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-eddy/spec.md`.
 
 ColorLib source: The River (theriver)
 Preview: https://preview.colorlib.com/theme/theriver/

@@ -1,4 +1,9 @@
 # Template: PageLeaf (Book Landing Page)
+<!-- prep-status: shipped-as=liber -->
+> **SHIPPED-UNDER** — the ColorLib `book` design this prep describes already
+> ships as `apps/liber` (<https://liber.free.componentdock.com>).
+> Do not scaffold `apps/pageleaf`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-liber/spec.md`.
 
 ## Purpose
 

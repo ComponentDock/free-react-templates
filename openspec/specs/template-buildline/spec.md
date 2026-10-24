@@ -1,4 +1,9 @@
 # Template: BuildLine (Construction / Contractor Website)
+<!-- prep-status: shipped-as=structa -->
+> **SHIPPED-UNDER** — the ColorLib `consto` design this prep describes already
+> ships as `apps/structa` (<https://structa.free.componentdock.com>).
+> Do not scaffold `apps/buildline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-structa/spec.md`.
 
 ## Purpose
 

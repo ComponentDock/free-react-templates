@@ -1,4 +1,9 @@
 # Template: Flockwell (Church / Faith)
+<!-- prep-status: shipped-as=ministry -->
+> **SHIPPED-UNDER** — the ColorLib `salvation` design this prep describes already
+> ships as `apps/ministry` (<https://ministry.free.componentdock.com>).
+> Do not scaffold `apps/flockwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ministry/spec.md`.
 
 ## Purpose
 

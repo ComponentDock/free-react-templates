@@ -1,4 +1,9 @@
 # GymNest — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=sportium -->
+> **SHIPPED-UNDER** — the ColorLib `sportsfit` design this prep describes already
+> ships as `apps/sportium` (<https://sportium.free.componentdock.com>).
+> Do not scaffold `apps/gymnest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sportium/spec.md`.
 
 **Source:** ColorLib Sportsfit (https://preview.colorlib.com/theme/sportsfit/)
 **New name:** GymNest → `apps/gymnest`

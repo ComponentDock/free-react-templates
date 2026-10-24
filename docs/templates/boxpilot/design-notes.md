@@ -1,4 +1,9 @@
 # Boxpilot — Design Notes & Task Outline
+<!-- prep-status: shipped-as=boxpulse -->
+> **SHIPPED-UNDER** — the ColorLib `boxus` design this prep describes already
+> ships as `apps/boxpulse` (<https://boxpulse.free.componentdock.com>).
+> Do not scaffold `apps/boxpilot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-boxpulse/spec.md`.
 
 **Source:** ColorLib Boxus — https://preview.colorlib.com/theme/boxus/
 **New name:** boxpilot

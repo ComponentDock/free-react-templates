@@ -1,4 +1,9 @@
 # Template: OliveBox (Contact Form)
+<!-- prep-status: shipped-as=formnest -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-14` design this prep describes already
+> ships as `apps/formnest` (<https://formnest.free.componentdock.com>).
+> Do not scaffold `apps/olivebox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formnest/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Cumulus (Bootstrap)
+<!-- prep-status: shipped-as=nebuly -->
+> **SHIPPED-UNDER** — the ColorLib `cloudtemplate` design this prep describes already
+> ships as `apps/nebuly` (<https://nebuly.free.componentdock.com>).
+> Do not scaffold `apps/cumulus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nebuly/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Magnet (Digital Marketing / SEO Agency)
+<!-- prep-status: shipped-as=reachly -->
+> **SHIPPED-UNDER** — the ColorLib `calvino` design this prep describes already
+> ships as `apps/reachly` (<https://reachly.free.componentdock.com>).
+> Do not scaffold `apps/magnet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reachly/spec.md`.
 
 > **SUPERSEDED** — this spec duplicates the ColorLib "Calvino" source
 > (https://colorlib.com/wp/template/calvino/), which shipped as

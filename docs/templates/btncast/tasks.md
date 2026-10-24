@@ -1,4 +1,9 @@
 # BtnCast — Design Notes & Task Breakdown
+<!-- prep-status: shipped-as=btnvortex -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-14` design this prep describes already
+> ships as `apps/btnvortex` (<https://btnvortex.free.componentdock.com>).
+> Do not scaffold `apps/btncast`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnvortex/spec.md`.
 
 Recreation of ColorLib Bootstrap Buttons 14 (`https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/`).
 

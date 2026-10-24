@@ -1,4 +1,9 @@
 # Template: Playville (Children's Education / Kindergarten)
+<!-- prep-status: shipped-as=tinybrights -->
+> **SHIPPED-UNDER** — the ColorLib `kiddos` design this prep describes already
+> ships as `apps/tinybrights` (<https://tinybrights.free.componentdock.com>).
+> Do not scaffold `apps/playville`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tinybrights/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Shrine (Religious / Church)
+<!-- prep-status: shipped-as=synod -->
+> **SHIPPED-UNDER** — the ColorLib `church-wordpress-themes` design this prep describes already
+> ships as `apps/synod` (<https://synod.free.componentdock.com>).
+> Do not scaffold `apps/shrine`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-synod/spec.md`.
 
 ## Purpose
 

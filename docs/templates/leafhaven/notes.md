@@ -1,4 +1,9 @@
 # LeafHaven — Implementation Notes
+<!-- prep-status: shipped-as=sunlodge -->
+> **SHIPPED-UNDER** — the ColorLib `ecoho` design this prep describes already
+> ships as `apps/sunlodge` (<https://sunlodge.free.componentdock.com>).
+> Do not scaffold `apps/leafhaven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sunlodge/spec.md`.
 
 ## Replication Reference
 

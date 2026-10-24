@@ -1,4 +1,9 @@
 # Template: Pixelforge (Creative Agency)
+<!-- prep-status: shipped-as=flux -->
+> **SHIPPED-UNDER** — the ColorLib `pixel` design this prep describes already
+> ships as `apps/flux` (<https://flux.free.componentdock.com>).
+> Do not scaffold `apps/pixelforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flux/spec.md`.
 
 ## Purpose
 

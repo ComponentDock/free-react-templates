@@ -1,4 +1,9 @@
 # Template: Pharmvault (Pharmacy / E-commerce)
+<!-- prep-status: shipped-as=remedy -->
+> **SHIPPED-UNDER** — the ColorLib `pharmative` design this prep describes already
+> ships as `apps/remedy` (<https://remedy.free.componentdock.com>).
+> Do not scaffold `apps/pharmvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-remedy/spec.md`.
 
 ## Purpose
 

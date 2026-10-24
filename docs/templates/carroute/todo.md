@@ -1,4 +1,9 @@
 # Carroute — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes already
+> ships as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> Do not scaffold `apps/carroute`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drivego/spec.md`.
 
 ## Source Mapping
 - **ColorLib source:** CarRental (carrentals)

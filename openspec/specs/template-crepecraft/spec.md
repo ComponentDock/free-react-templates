@@ -1,4 +1,9 @@
 # Template: CrapeCraft (Creative Digital Agency / Creative Portfolio)
+<!-- prep-status: shipped-as=batter -->
+> **SHIPPED-UNDER** — the ColorLib `go-crepe` design this prep describes already
+> ships as `apps/batter` (<https://batter.free.componentdock.com>).
+> Do not scaffold `apps/crepecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-batter/spec.md`.
 
 ## Purpose
 

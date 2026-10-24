@@ -1,4 +1,9 @@
 # StayBook — Four-Step Hotel Reservation Wizard
+<!-- prep-status: shipped-as=hexcraft -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-2` design this prep describes already
+> ships as `apps/hexcraft` (<https://hexcraft.free.componentdock.com>).
+> Do not scaffold `apps/staybook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hexcraft/spec.md`.
 
 > Recreation of ColorLib Wizard 2 (https://colorlib.com/wp/template/colorlib-wizard-2/)
 > Source HTML: https://colorlib.com/etc/bwiz/colorlib-wizard-2/index.html

@@ -1,4 +1,9 @@
 # Template: FootStack (Bootstrap Footer)
+<!-- prep-status: shipped-as=subdivide -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-06` design this prep describes already
+> ships as `apps/subdivide` (<https://subdivide.free.componentdock.com>).
+> Do not scaffold `apps/footstack`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-subdivide/spec.md`.
 
 ## Purpose
 

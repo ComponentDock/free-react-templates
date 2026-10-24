@@ -1,4 +1,9 @@
 # Template: Medscope (Medical Healthcare Website)
+<!-- prep-status: shipped-as=carepath -->
+> **SHIPPED-UNDER** — the ColorLib `medcare` design this prep describes already
+> ships as `apps/carepath` (<https://carepath.free.componentdock.com>).
+> Do not scaffold `apps/medscope`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carepath/spec.md`.
 
 ## Purpose
 

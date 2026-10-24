@@ -1,4 +1,9 @@
 # Template: Turfcraft (Lawn Care Landing Page)
+<!-- prep-status: shipped-as=turfly -->
+> **SHIPPED-UNDER** — the ColorLib `lawncare` design this prep describes already
+> ships as `apps/turfly` (<https://turfly.free.componentdock.com>).
+> Do not scaffold `apps/turfcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-turfly/spec.md`.
 
 ## Purpose
 

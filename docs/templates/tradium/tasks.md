@@ -1,4 +1,9 @@
 # Tradium (ColorLib Selling) — Tasks & Design Notes
+<!-- prep-status: shipped-as=stall -->
+> **SHIPPED-UNDER** — the ColorLib `selling` design this prep describes already
+> ships as `apps/stall` (<https://stall.free.componentdock.com>).
+> Do not scaffold `apps/tradium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stall/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-tradium`. Recreation name: **Tradium** (NEW name —

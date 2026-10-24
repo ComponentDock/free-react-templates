@@ -1,4 +1,9 @@
 # Stylux — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=vizion -->
+> **SHIPPED-UNDER** — the ColorLib `melan` design this prep describes already
+> ships as `apps/vizion` (<https://vizion.free.componentdock.com>).
+> Do not scaffold `apps/stylux`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vizion/spec.md`.
 
 > Source: ColorLib "Melan" — https://colorlib.com/wp/template/melan/
 > Preview: https://preview.colorlib.com/theme/melan/

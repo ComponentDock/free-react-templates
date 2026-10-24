@@ -1,4 +1,9 @@
 # Template: Sundial (Photography Gallery Template)
+<!-- prep-status: shipped-as=aperture -->
+> **SHIPPED-UNDER** — the ColorLib `sunzine` design this prep describes already
+> ships as `apps/aperture` (<https://aperture.free.componentdock.com>).
+> Do not scaffold `apps/sundial`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-aperture/spec.md`.
 
 ## Purpose
 

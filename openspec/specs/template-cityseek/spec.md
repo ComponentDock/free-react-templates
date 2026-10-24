@@ -1,4 +1,9 @@
 # Template: CitySeek (Search Form)
+<!-- prep-status: shipped-as=seekly -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-1` design this prep describes already
+> ships as `apps/seekly` (<https://seekly.free.componentdock.com>).
+> Do not scaffold `apps/cityseek`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekly/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: TripNest (Travel & Tourism)
+<!-- prep-status: shipped-as=treklore -->
+> **SHIPPED-UNDER** — the ColorLib `travello` design this prep describes already
+> ships as `apps/treklore` (<https://treklore.free.componentdock.com>).
+> Do not scaffold `apps/tripnest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-treklore/spec.md`.
 
 ## Purpose
 

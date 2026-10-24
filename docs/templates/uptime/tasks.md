@@ -1,4 +1,9 @@
 # Uptime (ColorLib Hostza) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sitewise -->
+> **SHIPPED-UNDER** — the ColorLib `hostza` design this prep describes already
+> ships as `apps/sitewise` (<https://sitewise.free.componentdock.com>).
+> Do not scaffold `apps/uptime`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sitewise/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-uptime` by an implementer stream.

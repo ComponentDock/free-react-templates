@@ -1,4 +1,9 @@
 # Template: FormSpark (Contact Form)
+<!-- prep-status: shipped-as=formdrop -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-04` design this prep describes already
+> ships as `apps/formdrop` (<https://formdrop.free.componentdock.com>).
+> Do not scaffold `apps/formspark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formdrop/spec.md`.
 
 ## Purpose
 

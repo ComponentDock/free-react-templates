@@ -1,4 +1,9 @@
 # Template: Finder (Photography Portfolio)
+<!-- prep-status: shipped-as=lensa -->
+> **SHIPPED-UNDER** — the ColorLib `nissa` design this prep describes already
+> ships as `apps/lensa` (<https://lensa.free.componentdock.com>).
+> Do not scaffold `apps/finder`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lensa/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Nissa" shipped as **Lensa** (PR #409,
 > https://lensa.free.componentdock.com). Do not implement this spec; it is a

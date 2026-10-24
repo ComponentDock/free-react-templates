@@ -1,4 +1,9 @@
 # Template: Tradium (E-Commerce Shop)
+<!-- prep-status: shipped-as=stall -->
+> **SHIPPED-UNDER** — the ColorLib `selling` design this prep describes already
+> ships as `apps/stall` (<https://stall.free.componentdock.com>).
+> Do not scaffold `apps/tradium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stall/spec.md`.
 
 ## Purpose
 

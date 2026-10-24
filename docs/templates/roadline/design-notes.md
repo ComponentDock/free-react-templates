@@ -1,4 +1,9 @@
 # Roadline — Design Notes
+<!-- prep-status: shipped-as=packwell -->
+> **SHIPPED-UNDER** — the ColorLib `carries` design this prep describes already
+> ships as `apps/packwell` (<https://packwell.free.componentdock.com>).
+> Do not scaffold `apps/roadline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-packwell/spec.md`.
 
 **Source:** ColorLib "Carries" — https://colorlib.com/wp/template/carries/
 **Preview:** https://preview.colorlib.com/theme/carries/

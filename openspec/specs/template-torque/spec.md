@@ -1,4 +1,9 @@
 # Template: Torque (Magazine / News Blog)
+<!-- prep-status: shipped-as=scoop -->
+> **SHIPPED-UNDER** — the ColorLib `force` design this prep describes already
+> ships as `apps/scoop` (<https://scoop.free.componentdock.com>).
+> Do not scaffold `apps/torque`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scoop/spec.md`.
 
 ## Purpose
 

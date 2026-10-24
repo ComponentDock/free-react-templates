@@ -1,4 +1,9 @@
 # Staycraft — Implementation TODO + Design Notes
+<!-- prep-status: shipped-as=casamora -->
+> **SHIPPED-UNDER** — the ColorLib `casahotel` design this prep describes already
+> ships as `apps/casamora` (<https://casamora.free.componentdock.com>).
+> Do not scaffold `apps/staycraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-casamora/spec.md`.
 
 ## Source mapping
 

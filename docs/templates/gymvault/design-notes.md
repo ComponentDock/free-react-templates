@@ -1,4 +1,9 @@
 # GymVault — Design Notes
+<!-- prep-status: shipped-as=fitlane -->
+> **SHIPPED-UNDER** — the ColorLib `sportify` design this prep describes already
+> ships as `apps/fitlane` (<https://fitlane.free.componentdock.com>).
+> Do not scaffold `apps/gymvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitlane/spec.md`.
 
 Recreation of ColorLib "Sportify" as a React 19 + Vite + Tailwind 4 + TypeScript gym/fitness landing page.
 

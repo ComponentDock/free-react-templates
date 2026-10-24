@@ -1,4 +1,9 @@
 # Strand (ColorLib Hairsal) — Tasks & Design Notes
+<!-- prep-status: shipped-as=tressly -->
+> **SHIPPED-UNDER** — the ColorLib `hairsal` design this prep describes already
+> ships as `apps/tressly` (<https://tressly.free.componentdock.com>).
+> Do not scaffold `apps/strand`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tressly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-strand`.

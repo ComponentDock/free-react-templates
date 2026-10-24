@@ -1,4 +1,9 @@
 # Erudite — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=learnpath -->
+> **SHIPPED-UNDER** — the ColorLib `ezuca` design this prep describes already
+> ships as `apps/learnpath` (<https://learnpath.free.componentdock.com>).
+> Do not scaffold `apps/erudite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-learnpath/spec.md`.
 
 ## Structure Order (section-by-section)
 

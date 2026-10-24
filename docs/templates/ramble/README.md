@@ -1,4 +1,9 @@
 # Ramble — Task Outline & Design Notes
+<!-- prep-status: shipped-as=getaway -->
+> **SHIPPED-UNDER** — the ColorLib `vacation` design this prep describes already
+> ships as `apps/getaway` (<https://getaway.free.componentdock.com>).
+> Do not scaffold `apps/ramble`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-getaway/spec.md`.
 
 **Source:** ColorLib "Vacation" — https://preview.colorlib.com/theme/vacation/
 **New name:** ramble

@@ -1,4 +1,9 @@
 # Template: CourseKit (Education / Online Courses)
+<!-- prep-status: shipped-as=syllabus -->
+> **SHIPPED-UNDER** — the ColorLib `course` design this prep describes already
+> ships as `apps/syllabus` (<https://syllabus.free.componentdock.com>).
+> Do not scaffold `apps/coursekit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-syllabus/spec.md`.
 
 ## Purpose
 

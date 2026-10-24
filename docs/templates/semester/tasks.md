@@ -1,4 +1,9 @@
 # Semester (ColorLib Courses) — Tasks & Design Notes
+<!-- prep-status: shipped-as=edify -->
+> **SHIPPED-UNDER** — the ColorLib `courses` design this prep describes already
+> ships as `apps/edify` (<https://edify.free.componentdock.com>).
+> Do not scaffold `apps/semester`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-edify/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-semester` by an implementer stream.

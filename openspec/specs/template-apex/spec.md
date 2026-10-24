@@ -1,4 +1,9 @@
 # Template: Apex (Consulting Agency Landing)
+<!-- prep-status: shipped-as=compass -->
+> **SHIPPED-UNDER** — the ColorLib `pointer` design this prep describes already
+> ships as `apps/compass` (<https://compass.free.componentdock.com>).
+> Do not scaffold `apps/apex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-compass/spec.md`.
 
 > **SUPERSEDED** — ColorLib Pointer shipped as **Compass** (PR #421,
 > https://compass.free.componentdock.com). Do not implement Apex; delete on

@@ -1,4 +1,9 @@
 # BugShield — Implementation Tasks
+<!-- prep-status: shipped-as=bugguard -->
+> **SHIPPED-UNDER** — the ColorLib `pestcontrol` design this prep describes already
+> ships as `apps/bugguard` (<https://bugguard.free.componentdock.com>).
+> Do not scaffold `apps/bugshield`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bugguard/spec.md`.
 
 Template: BugShield (ColorLib PestControl)
 Source: https://colorlib.com/wp/template/pestcontrol/

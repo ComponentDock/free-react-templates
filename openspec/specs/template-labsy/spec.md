@@ -1,4 +1,9 @@
 # Template: Labsy (Digital Agency Landing)
+<!-- prep-status: shipped-as=byteops -->
+> **SHIPPED-UNDER** — the ColorLib `digilab` design this prep describes already
+> ships as `apps/byteops` (<https://byteops.free.componentdock.com>).
+> Do not scaffold `apps/labsy`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-byteops/spec.md`.
 
 ## Purpose
 

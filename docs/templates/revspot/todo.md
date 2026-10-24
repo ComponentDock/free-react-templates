@@ -1,4 +1,9 @@
 # Revspot — Implementation Tasks
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes already
+> ships as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> Do not scaffold `apps/revspot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drivego/spec.md`.
 
 Source: ColorLib CarRental (slug: `carrentals`)
 Preview: https://preview.colorlib.com/theme/carrentals/

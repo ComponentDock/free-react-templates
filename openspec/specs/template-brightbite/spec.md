@@ -1,4 +1,9 @@
 # Template: Brightbite (Dental Clinic)
+<!-- prep-status: shipped-as=toothzen -->
+> **SHIPPED-UNDER** — the ColorLib `dentamax` design this prep describes already
+> ships as `apps/toothzen` (<https://toothzen.free.componentdock.com>).
+> Do not scaffold `apps/brightbite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-toothzen/spec.md`.
 
 ## Purpose
 

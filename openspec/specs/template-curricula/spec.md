@@ -1,4 +1,9 @@
 # Template: Curricula (Course Catalog Mega Menu)
+<!-- prep-status: shipped-as=dropnest -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-19` design this prep describes already
+> ships as `apps/dropnest` (<https://dropnest.free.componentdock.com>).
+> Do not scaffold `apps/curricula`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropnest/spec.md`.
 
 ## Purpose
 

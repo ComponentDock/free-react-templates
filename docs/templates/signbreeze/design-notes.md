@@ -1,4 +1,9 @@
 # Signbreeze — Design Notes
+<!-- prep-status: shipped-as=commute -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-06` design this prep describes already
+> ships as `apps/commute` (<https://commute.free.componentdock.com>).
+> Do not scaffold `apps/signbreeze`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-commute/spec.md`.
 
 ## Source
 - **ColorLib:** Login Form V06 (`login-form-06`)

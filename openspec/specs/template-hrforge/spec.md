@@ -1,4 +1,9 @@
 # Template: Hrforge (Corporate HR Agency)
+<!-- prep-status: shipped-as=talentflow -->
+> **SHIPPED-UNDER** — the ColorLib `humanresources` design this prep describes already
+> ships as `apps/talentflow` (<https://talentflow.free.componentdock.com>).
+> Do not scaffold `apps/hrforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-talentflow/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: LoginHive (Login Form)
+<!-- prep-status: shipped-as=signwell -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-10` design this prep describes already
+> ships as `apps/signwell` (<https://signwell.free.componentdock.com>).
+> Do not scaffold `apps/login-hive`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signwell/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Runway (ColorLib Libro) — Tasks & Design Notes
+<!-- prep-status: shipped-as=tome -->
+> **SHIPPED-UNDER** — the ColorLib `libro` design this prep describes already
+> ships as `apps/tome` (<https://tome.free.componentdock.com>).
+> Do not scaffold `apps/runway`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tome/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-runway`.

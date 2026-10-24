@@ -1,4 +1,9 @@
 # LoginCrest — Design Notes
+<!-- prep-status: shipped-as=loginglimmer -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v19` design this prep describes already
+> ships as `apps/loginglimmer` (<https://loginglimmer.free.componentdock.com>).
+> Do not scaffold `apps/logincrest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginglimmer/spec.md`.
 
 Source: ColorLib Login Form V19 (slug: `login-form-v19`)
 Preview: https://preview.colorlib.com/theme/login-form-v19/ (404)

@@ -1,4 +1,9 @@
 # Template: FormNoir (Contact Form)
+<!-- prep-status: shipped-as=contactpulse -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v14` design this prep describes already
+> ships as `apps/contactpulse` (<https://contactpulse.free.componentdock.com>).
+> Do not scaffold `apps/formnoir`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-contactpulse/spec.md`.
 
 ## Purpose
 

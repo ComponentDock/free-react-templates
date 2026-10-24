@@ -1,4 +1,9 @@
 # CoursePulse — Implementation Notes
+<!-- prep-status: shipped-as=learnfold -->
+> **SHIPPED-UNDER** — the ColorLib `webuni` design this prep describes already
+> ships as `apps/learnfold` (<https://learnfold.free.componentdock.com>).
+> Do not scaffold `apps/coursepulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-learnfold/spec.md`.
 
 Source: ColorLib WebUni (https://preview.colorlib.com/theme/webuni/)
 Spec: openspec/specs/template-coursepulse/spec.md

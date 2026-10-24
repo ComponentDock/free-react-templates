@@ -1,4 +1,9 @@
 # Template: Recount (Magazine / News Blog)
+<!-- prep-status: shipped-as=kicker -->
+> **SHIPPED-UNDER** — the ColorLib `megasis` design this prep describes already
+> ships as `apps/kicker` (<https://kicker.free.componentdock.com>).
+> Do not scaffold `apps/recount`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kicker/spec.md`.
 
 ## Purpose
 

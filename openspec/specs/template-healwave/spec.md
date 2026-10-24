@@ -1,4 +1,9 @@
 # Template: Healwave (Healthcare Landing)
+<!-- prep-status: shipped-as=medflow -->
+> **SHIPPED-UNDER** — the ColorLib `medi` design this prep describes already
+> ships as `apps/medflow` (<https://medflow.free.componentdock.com>).
+> Do not scaffold `apps/healwave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-medflow/spec.md`.
 
 ## Purpose
 

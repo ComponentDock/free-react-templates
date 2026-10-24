@@ -1,4 +1,9 @@
 # Template: Optbox (Form — Multiselect Dropdown)
+<!-- prep-status: shipped-as=oversample -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-05` design this prep describes already
+> ships as `apps/oversample` (<https://oversample.free.componentdock.com>).
+> Do not scaffold `apps/optbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-oversample/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Scholarkit — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=cognita -->
+> **SHIPPED-UNDER** — the ColorLib `eskwela` design this prep describes already
+> ships as `apps/cognita` (<https://cognita.free.componentdock.com>).
+> Do not scaffold `apps/scholarkit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cognita/spec.md`.
 
 Source: ColorLib Eskwela (https://preview.colorlib.com/theme/eskwela/)
 Preview URL analyzed: 2026-09-20

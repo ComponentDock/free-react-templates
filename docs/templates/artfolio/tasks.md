@@ -1,4 +1,9 @@
 # Artfolio — Implementation Tasks
+<!-- prep-status: shipped-as=brushmark -->
+> **SHIPPED-UNDER** — the ColorLib `breed2` design this prep describes already
+> ships as `apps/brushmark` (<https://brushmark.free.componentdock.com>).
+> Do not scaffold `apps/artfolio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-brushmark/spec.md`.
 
 Source: ColorLib Breed2 — https://preview.colorlib.com/theme/breed2/
 

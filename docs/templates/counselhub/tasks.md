@@ -1,4 +1,9 @@
 # CounselHub Template Tasks & Design Notes
+<!-- prep-status: shipped-as=chambers -->
+> **SHIPPED-UNDER** — the ColorLib `lawfirm` design this prep describes already
+> ships as `apps/chambers` (<https://chambers.free.componentdock.com>).
+> Do not scaffold `apps/counselhub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chambers/spec.md`.
 
 ## Overview
 

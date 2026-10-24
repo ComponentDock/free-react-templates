@@ -1,4 +1,9 @@
 # Steplink — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=platter -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-7` design this prep describes already
+> ships as `apps/platter` (<https://platter.free.componentdock.com>).
+> Do not scaffold `apps/steplink`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-platter/spec.md`.
 
 ## Source
 - **ColorLib**: Colorlib Wizard 7 (`colorlib-wizard-7`)

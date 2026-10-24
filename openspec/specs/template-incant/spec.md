@@ -1,4 +1,9 @@
 # Template: Incant (3-Step Feedback Wizard)
+<!-- prep-status: shipped-as=scout -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-18` design this prep describes already
+> ships as `apps/scout` (<https://scout.free.componentdock.com>).
+> Do not scaffold `apps/incant`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scout/spec.md`.
 
 ## Purpose
 

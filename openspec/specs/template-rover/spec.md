@@ -1,4 +1,9 @@
 # Template: Rover (Dog Care Landing)
+<!-- prep-status: shipped-as=houndly -->
+> **SHIPPED-UNDER** — the ColorLib `doglife` design this prep describes already
+> ships as `apps/houndly` (<https://houndly.free.componentdock.com>).
+> Do not scaffold `apps/rover`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-houndly/spec.md`.
 
 ## Purpose
 

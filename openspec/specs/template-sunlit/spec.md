@@ -1,4 +1,9 @@
 # Template: Sunlit (Music Festival Landing)
+<!-- prep-status: shipped-as=encoremix -->
+> **SHIPPED-UNDER** — the ColorLib `sunfest` design this prep describes already
+> ships as `apps/encoremix` (<https://encoremix.free.componentdock.com>).
+> Do not scaffold `apps/sunlit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-encoremix/spec.md`.
 
 ## Purpose
 

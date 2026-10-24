@@ -1,4 +1,9 @@
 # Template: Reeflore (Travel)
+<!-- prep-status: shipped-as=travelogue -->
+> **SHIPPED-UNDER** — the ColorLib `travel-wordpress-themes` design this prep describes already
+> ships as `apps/travelogue` (<https://travelogue.free.componentdock.com>).
+> Do not scaffold `apps/reeflore`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-travelogue/spec.md`.
 
 ## Purpose
 

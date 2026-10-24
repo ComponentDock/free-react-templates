@@ -1,4 +1,9 @@
 # Template: Threadlane (E-commerce Fashion Landing)
+<!-- prep-status: shipped-as=sarto -->
+> **SHIPPED-UNDER** — the ColorLib `fashiop` design this prep describes already
+> ships as `apps/sarto` (<https://sarto.free.componentdock.com>).
+> Do not scaffold `apps/threadlane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sarto/spec.md`.
 
 ## Purpose
 

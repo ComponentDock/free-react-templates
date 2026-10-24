@@ -1,4 +1,9 @@
 # Creativex (Colorlib Creativex 3) — Tasks & Design Notes
+<!-- prep-status: shipped-as=kreativ -->
+> **SHIPPED-UNDER** — the ColorLib `creativex-3` design this prep describes already
+> ships as `apps/kreativ` (<https://kreativ.free.componentdock.com>).
+> Do not scaffold `apps/creativex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kreativ/spec.md`.
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-creativex`.

@@ -1,4 +1,9 @@
 # Template: AdLog (Directory & Classifieds Landing)
+<!-- prep-status: shipped-as=catalog -->
+> **SHIPPED-UNDER** — the ColorLib `directoryads` design this prep describes already
+> ships as `apps/catalog` (<https://catalog.free.componentdock.com>).
+> Do not scaffold `apps/adlog`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-catalog/spec.md`.
 
 ## Purpose
 

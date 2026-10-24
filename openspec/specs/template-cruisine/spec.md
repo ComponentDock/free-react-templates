@@ -1,4 +1,9 @@
 # Template: Cruisine (Food & Drinks)
+<!-- prep-status: shipped-as=dining-deck -->
+> **SHIPPED-UNDER** — the ColorLib `wordpress-restaurant-themes` design this prep describes already
+> ships as `apps/dining-deck` (<https://dining-deck.free.componentdock.com>).
+> Do not scaffold `apps/cruisine`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dining-deck/spec.md`.
 
 ## Purpose
 

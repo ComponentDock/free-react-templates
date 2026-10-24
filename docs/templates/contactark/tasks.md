@@ -1,4 +1,9 @@
 # ContactArk — Implementation Notes
+<!-- prep-status: shipped-as=formnet -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v7` design this prep describes already
+> ships as `apps/formnet` (<https://formnet.free.componentdock.com>).
+> Do not scaffold `apps/contactark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formnet/spec.md`.
 
 Source: ColorLib Contact Form V7
 Preview: https://colorlib.com/etc/cf/ContactFrom_v7/index.html

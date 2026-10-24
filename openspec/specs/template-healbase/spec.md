@@ -1,4 +1,9 @@
 # Template: HealBase (Health & Wellness)
+<!-- prep-status: shipped-as=vitalblend -->
+> **SHIPPED-UNDER** — the ColorLib `healthcouch` design this prep describes already
+> ships as `apps/vitalblend` (<https://vitalblend.free.componentdock.com>).
+> Do not scaffold `apps/healbase`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vitalblend/spec.md`.
 
 ## Purpose
 

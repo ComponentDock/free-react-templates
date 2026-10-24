@@ -1,4 +1,9 @@
 # Cabin — Design Notes & Task Outline
+<!-- prep-status: shipped-as=residium -->
+> **SHIPPED-UNDER** — the ColorLib `hus` design this prep describes already
+> ships as `apps/residium` (<https://residium.free.componentdock.com>).
+> Do not scaffold `apps/cabin`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-residium/spec.md`.
 
 Source: ColorLib "Hus" (https://colorlib.com/wp/template/hus/)
 Preview: https://preview.colorlib.com/theme/hus/

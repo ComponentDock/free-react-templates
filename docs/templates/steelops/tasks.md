@@ -1,4 +1,9 @@
 # SteelOps — Implementation Notes
+<!-- prep-status: shipped-as=hardhat -->
+> **SHIPPED-UNDER** — the ColorLib `constructioncompany` design this prep describes already
+> ships as `apps/hardhat` (<https://hardhat.free.componentdock.com>).
+> Do not scaffold `apps/steelops`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hardhat/spec.md`.
 
 Source: ColorLib Constructioncompany
 Preview: https://preview.colorlib.com/theme/constructioncompany/

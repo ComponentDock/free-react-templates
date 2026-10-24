@@ -1,4 +1,9 @@
 # Template: Focuspoint (Photography Portfolio)
+<!-- prep-status: shipped-as=beacon -->
+> **SHIPPED-UNDER** — the ColorLib `halo` design this prep describes already
+> ships as `apps/beacon` (<https://beacon.free.componentdock.com>).
+> Do not scaffold `apps/focuspoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-beacon/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Pawfect (Anipat) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pawcare -->
+> **SHIPPED-UNDER** — the ColorLib `anipat` design this prep describes already
+> ships as `apps/pawcare` (<https://pawcare.free.componentdock.com>).
+> Do not scaffold `apps/pawfect`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pawcare/spec.md`.
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-pawfect`.

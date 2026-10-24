@@ -1,4 +1,9 @@
 # Template: Regspot (Registration Form)
+<!-- prep-status: shipped-as=formwise -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-7` design this prep describes already
+> ships as `apps/formwise` (<https://formwise.free.componentdock.com>).
+> Do not scaffold `apps/regspot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formwise/spec.md`.
 
 ## Purpose
 

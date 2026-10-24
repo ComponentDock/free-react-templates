@@ -1,4 +1,9 @@
 # Template: Runway (Fashion Magazine / Blog Template)
+<!-- prep-status: shipped-as=tome -->
+> **SHIPPED-UNDER** — the ColorLib `libro` design this prep describes already
+> ships as `apps/tome` (<https://tome.free.componentdock.com>).
+> Do not scaffold `apps/runway`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tome/spec.md`.
 
 ## Purpose
 

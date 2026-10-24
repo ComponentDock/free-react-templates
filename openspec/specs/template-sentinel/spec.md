@@ -1,4 +1,9 @@
 # Template: Sentinel (Business)
+<!-- prep-status: shipped-as=crest -->
+> **SHIPPED-UNDER** — the ColorLib `victor` design this prep describes already
+> ships as `apps/crest` (<https://crest.free.componentdock.com>).
+> Do not scaffold `apps/sentinel`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crest/spec.md`.
 
 ## Purpose
 

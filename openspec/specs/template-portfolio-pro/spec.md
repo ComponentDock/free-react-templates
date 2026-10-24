@@ -1,4 +1,9 @@
 # Template: PortfolioPro (Personal Portfolio / Resume)
+<!-- prep-status: shipped-as=echo -->
+> **SHIPPED-UNDER** — the ColorLib `beckham` design this prep describes already
+> ships as `apps/echo` (<https://echo.free.componentdock.com>).
+> Do not scaffold `apps/portfolio-pro`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-echo/spec.md`.
 
 ## Purpose
 

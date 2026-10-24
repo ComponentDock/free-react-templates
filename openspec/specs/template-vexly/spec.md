@@ -1,4 +1,9 @@
 # Template: Vexly (Software Landing Page)
+<!-- prep-status: shipped-as=indigo -->
+> **SHIPPED-UNDER** — the ColorLib `parason` design this prep describes already
+> ships as `apps/indigo` (<https://indigo.free.componentdock.com>).
+> Do not scaffold `apps/vexly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-indigo/spec.md`.
 
 ## Purpose
 

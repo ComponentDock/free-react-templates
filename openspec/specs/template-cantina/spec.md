@@ -1,4 +1,9 @@
 # Template: Cantina (Restaurant Landing)
+<!-- prep-status: shipped-as=pieslice -->
+> **SHIPPED-UNDER** — the ColorLib `luigis` design this prep describes already
+> ships as `apps/pieslice` (<https://pieslice.free.componentdock.com>).
+> Do not scaffold `apps/cantina`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pieslice/spec.md`.
 
 ## Purpose
 

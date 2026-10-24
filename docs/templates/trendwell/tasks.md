@@ -1,4 +1,9 @@
 # Trendwell — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=drape -->
+> **SHIPPED-UNDER** — the ColorLib `fashe` design this prep describes already
+> ships as `apps/drape` (<https://drape.free.componentdock.com>).
+> Do not scaffold `apps/trendwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drape/spec.md`.
 
 Source: ColorLib Fashe (https://colorlib.com/wp/template/fashe/)
 Preview: https://preview.colorlib.com/theme/fashe/

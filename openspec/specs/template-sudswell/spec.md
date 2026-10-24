@@ -1,4 +1,9 @@
 # Template: Sudswell (Cleaning Company)
+<!-- prep-status: shipped-as=tidywash -->
+> **SHIPPED-UNDER** — the ColorLib `cleanex` design this prep describes already
+> ships as `apps/tidywash` (<https://tidywash.free.componentdock.com>).
+> Do not scaffold `apps/sudswell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tidywash/spec.md`.
 
 ## Purpose
 

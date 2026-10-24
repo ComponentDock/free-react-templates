@@ -1,4 +1,9 @@
 # Template: CampusHub (Education)
+<!-- prep-status: shipped-as=ethos -->
+> **SHIPPED-UNDER** — the ColorLib `university` design this prep describes already
+> ships as `apps/ethos` (<https://ethos.free.componentdock.com>).
+> Do not scaffold `apps/campus-hub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ethos/spec.md`.
 
 ## Purpose
 

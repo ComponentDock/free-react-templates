@@ -1,4 +1,9 @@
 # Voguish — Tasks & Design Notes
+<!-- prep-status: shipped-as=modista -->
+> **SHIPPED-UNDER** — the ColorLib `persuit` design this prep describes already
+> ships as `apps/modista` (<https://modista.free.componentdock.com>).
+> Do not scaffold `apps/voguish`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modista/spec.md`.
 
 Source: ColorLib "Persuit" (https://colorlib.com/wp/template/persuit/)
 Preview: https://preview.colorlib.com/theme/persuit/

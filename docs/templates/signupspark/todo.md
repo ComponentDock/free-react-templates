@@ -1,4 +1,9 @@
 # Signupspark — Implementation Outline
+<!-- prep-status: shipped-as=modalpoint -->
+> **SHIPPED-UNDER** — the ColorLib `modal-16` design this prep describes already
+> ships as `apps/modalpoint` (<https://modalpoint.free.componentdock.com>).
+> Do not scaffold `apps/signupspark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalpoint/spec.md`.
 
 **Source:** ColorLib Modal 16
 **Preview:** https://preview.colorlib.com/theme/bootstrap/modal-16/

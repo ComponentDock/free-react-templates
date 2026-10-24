@@ -1,4 +1,9 @@
 # Fstop (ColorLib Snapshot) — Tasks & Design Notes
+<!-- prep-status: shipped-as=focus -->
+> **SHIPPED-UNDER** — the ColorLib `snapshot` design this prep describes already
+> ships as `apps/focus` (<https://focus.free.componentdock.com>).
+> Do not scaffold `apps/fstop`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-focus/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-fstop` by an implementer stream.

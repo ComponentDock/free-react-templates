@@ -1,4 +1,9 @@
 # LavishLodge — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=regalia -->
+> **SHIPPED-UNDER** — the ColorLib `luxury-hotel` design this prep describes already
+> ships as `apps/regalia` (<https://regalia.free.componentdock.com>).
+> Do not scaffold `apps/lavish-lodge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regalia/spec.md`.
 
 Source: ColorLib LuxuryHotel
 Preview: https://preview.colorlib.com/theme/luxuryhotel/

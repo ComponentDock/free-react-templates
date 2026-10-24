@@ -1,4 +1,9 @@
 # DayPlanner — Task & Implementation Outline
+<!-- prep-status: shipped-as=twilight -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-07` design this prep describes already
+> ships as `apps/twilight` (<https://twilight.free.componentdock.com>).
+> Do not scaffold `apps/dayplanner`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-twilight/spec.md`.
 
 ## Source
 

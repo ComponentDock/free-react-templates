@@ -1,4 +1,9 @@
 # Template: Taverna (Restaurant Website)
+<!-- prep-status: shipped-as=palate -->
+> **SHIPPED-UNDER** — the ColorLib `appetizer` design this prep describes already
+> ships as `apps/palate` (<https://palate.free.componentdock.com>).
+> Do not scaffold `apps/taverna`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-palate/spec.md`.
 
 > **SUPERSEDED (2026-08-12):** this prep duplicates ColorLib "Appetizer",
 > which shipped as **Palate** (`apps/palate`, PR #300, live at

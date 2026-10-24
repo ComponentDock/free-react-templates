@@ -1,4 +1,9 @@
 # Panelview — Implementation Tasks
+<!-- prep-status: shipped-as=paneline -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-sidebar-08` design this prep describes already
+> ships as `apps/paneline` (<https://paneline.free.componentdock.com>).
+> Do not scaffold `apps/panelview`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-paneline/spec.md`.
 
 Source: ColorLib "Bootstrap Sidebar 08"
 Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-08/ (unreachable; design from screenshot)

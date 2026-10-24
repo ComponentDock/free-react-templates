@@ -1,4 +1,9 @@
 # Penumbra (ColorLib "Eclipse") — Tasks & Design Notes
+<!-- prep-status: shipped-as=corona -->
+> **SHIPPED-UNDER** — the ColorLib `eclipse` design this prep describes already
+> ships as `apps/corona` (<https://corona.free.componentdock.com>).
+> Do not scaffold `apps/penumbra`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-corona/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-penumbra` by an implementer stream.

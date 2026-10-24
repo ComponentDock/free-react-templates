@@ -1,4 +1,9 @@
 # Redeemer (ColorLib Salvation) — Tasks & Design Notes
+<!-- prep-status: shipped-as=ministry -->
+> **SHIPPED-UNDER** — the ColorLib `salvation` design this prep describes already
+> ships as `apps/ministry` (<https://ministry.free.componentdock.com>).
+> Do not scaffold `apps/redeemer`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ministry/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-redeemer` by an implementer stream.

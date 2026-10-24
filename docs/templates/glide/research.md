@@ -1,4 +1,9 @@
 # Research & Implementation Plan: Glide (Carousel 03)
+<!-- prep-status: shipped-as=carouselhub -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-03` design this prep describes already
+> ships as `apps/carouselhub` (<https://carouselhub.free.componentdock.com>).
+> Do not scaffold `apps/glide`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carouselhub/spec.md`.
 
 - **Source Template**: ColorLib Carousel 03 (`https://colorlib.com/wp/template/carousel-03/`)
 - **Live Preview URL**: `https://preview.colorlib.com/theme/bootstrap/carousel-03/`

@@ -1,4 +1,9 @@
 # Cognocourse — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=learnpeak -->
+> **SHIPPED-UNDER** — the ColorLib `elearn` design this prep describes already
+> ships as `apps/learnpeak` (<https://learnpeak.free.componentdock.com>).
+> Do not scaffold `apps/cognocourse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-learnpeak/spec.md`.
 
 ## Source
 - **ColorLib slug:** elearn

@@ -1,4 +1,9 @@
 # Template: Sunset (404 Error Page — Gradient Display)
+<!-- prep-status: shipped-as=nova -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-error-404-19` design this prep describes already
+> ships as `apps/nova` (<https://nova.free.componentdock.com>).
+> Do not scaffold `apps/sunset`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nova/spec.md`.
 
 ## Purpose
 

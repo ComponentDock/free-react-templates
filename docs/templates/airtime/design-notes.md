@@ -1,4 +1,9 @@
 # Airtime — Design Notes & Task Outline
+<!-- prep-status: shipped-as=airwave -->
+> **SHIPPED-UNDER** — the ColorLib `the-hustle-hour` design this prep describes already
+> ships as `apps/airwave` (<https://airwave.free.componentdock.com>).
+> Do not scaffold `apps/airtime`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-airwave/spec.md`.
 
 Source: ColorLib "The Hustle Hour" — https://colorlib.com/wp/template/the-hustle-hour/
 Preview: https://preview.colorlib.com/#the-hustle-hour (JS-rendered, not fetchable via curl)

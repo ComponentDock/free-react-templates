@@ -1,4 +1,9 @@
 # Template: Scribe (Blog / Magazine Template)
+<!-- prep-status: shipped-as=antler -->
+> **SHIPPED-UNDER** — the ColorLib `moose` design this prep describes already
+> ships as `apps/antler` (<https://antler.free.componentdock.com>).
+> Do not scaffold `apps/scribe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-antler/spec.md`.
 
 ## Purpose
 

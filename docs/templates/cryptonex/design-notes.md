@@ -1,4 +1,9 @@
 # Cryptonex — Design Notes
+<!-- prep-status: shipped-as=coincast -->
+> **SHIPPED-UNDER** — the ColorLib `coinbuzz` design this prep describes already
+> ships as `apps/coincast` (<https://coincast.free.componentdock.com>).
+> Do not scaffold `apps/cryptonex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coincast/spec.md`.
 
 Recreation of ColorLib **Coinbuzz** (cryptocurrency/business template).
 Source: https://colorlib.com/wp/template/coinbuzz/

@@ -1,4 +1,9 @@
 # Template: ClosetCraft (Fashion House)
+<!-- prep-status: shipped-as=silkhouse -->
+> **SHIPPED-UNDER** — the ColorLib `shionhouse` design this prep describes already
+> ships as `apps/silkhouse` (<https://silkhouse.free.componentdock.com>).
+> Do not scaffold `apps/closetcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-silkhouse/spec.md`.
 
 ## Purpose
 

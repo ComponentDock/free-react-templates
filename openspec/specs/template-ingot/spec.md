@@ -1,4 +1,9 @@
 # Template: Ingot (Industrial / Steel Fabrication Template)
+<!-- prep-status: shipped-as=metalwork -->
+> **SHIPPED-UNDER** — the ColorLib `industrial` design this prep describes already
+> ships as `apps/metalwork` (<https://metalwork.free.componentdock.com>).
+> Do not scaffold `apps/ingot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-metalwork/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Elitaire (Photography Portfolio)
+<!-- prep-status: shipped-as=lens -->
+> **SHIPPED-UNDER** — the ColorLib `elit` design this prep describes already
+> ships as `apps/lens` (<https://lens.free.componentdock.com>).
+> Do not scaffold `apps/elitaire`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lens/spec.md`.
 
 ## Purpose
 

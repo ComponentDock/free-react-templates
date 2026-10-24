@@ -1,4 +1,9 @@
 # Tasks & Design Notes: Cruiseo (ColorLib Car Rentals)
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes already
+> ships as `apps/drivego` (<https://drivego.free.componentdock.com>).
+> Do not scaffold `apps/cruiseo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drivego/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cruiseo`. Recreation name: **Cruiseo** (NEW name —

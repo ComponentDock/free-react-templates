@@ -1,4 +1,9 @@
 # Template: Litany (Church / Religious)
+<!-- prep-status: shipped-as=creed -->
+> **SHIPPED-UNDER** — the ColorLib `faith-2` design this prep describes already
+> ships as `apps/creed` (<https://creed.free.componentdock.com>).
+> Do not scaffold `apps/litany`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-creed/spec.md`.
 
 ## Purpose
 

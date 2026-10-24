@@ -1,4 +1,9 @@
 # Reap (ColorLib Multiselect 07) — Tasks & Design Notes
+<!-- prep-status: shipped-as=topicdrop -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-07` design this prep describes already
+> ships as `apps/topicdrop` (<https://topicdrop.free.componentdock.com>).
+> Do not scaffold `apps/reap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-topicdrop/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Reap** (NEW name —
 > the ColorLib source keeps its name "Multiselect 07"). Implementation ships

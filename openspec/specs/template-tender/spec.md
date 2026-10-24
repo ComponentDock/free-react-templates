@@ -1,4 +1,9 @@
 # Template: Tender (Veterinary Services Landing)
+<!-- prep-status: shipped-as=petvet -->
+> **SHIPPED-UNDER** — the ColorLib `petvet` design this prep describes already
+> ships as `apps/petvet` (<https://petvet.free.componentdock.com>).
+> Do not scaffold `apps/tender`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-petvet/spec.md`.
 
 ## Purpose
 

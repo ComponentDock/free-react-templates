@@ -1,4 +1,9 @@
 # Privy (ColorLib Dropdown 11) — Tasks & Design Notes
+<!-- prep-status: shipped-as=dropslide -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-11` design this prep describes already
+> ships as `apps/dropslide` (<https://dropslide.free.componentdock.com>).
+> Do not scaffold `apps/privy`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropslide/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-privy`.

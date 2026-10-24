@@ -1,4 +1,9 @@
 # Capstone (ColorLib Bootstrap Footer 13) — Tasks & Design Notes
+<!-- prep-status: shipped-as=rosenook -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-13` design this prep describes already
+> ships as `apps/rosenook` (<https://rosenook.free.componentdock.com>).
+> Do not scaffold `apps/capstone`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rosenook/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-capstone`.

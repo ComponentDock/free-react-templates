@@ -1,4 +1,9 @@
 # SketchCraft — Implementation TODO
+<!-- prep-status: shipped-as=boldcraft -->
+> **SHIPPED-UNDER** — the ColorLib `calvin` design this prep describes already
+> ships as `apps/boldcraft` (<https://boldcraft.free.componentdock.com>).
+> Do not scaffold `apps/sketchcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-boldcraft/spec.md`.
 
 Source: ColorLib Calvin (https://colorlib.com/wp/template/calvin/)
 Preview: https://preview.colorlib.com/theme/calvin/

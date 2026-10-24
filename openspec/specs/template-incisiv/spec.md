@@ -1,4 +1,9 @@
 # Template: Incisiv (Dentist)
+<!-- prep-status: shipped-as=glint -->
+> **SHIPPED-UNDER** — the ColorLib `prodent` design this prep describes already
+> ships as `apps/glint` (<https://glint.free.componentdock.com>).
+> Do not scaffold `apps/incisiv`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-glint/spec.md`.
 
 ## Purpose
 

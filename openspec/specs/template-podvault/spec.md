@@ -1,4 +1,9 @@
 # Template: Podvault (Podcast/Media)
+<!-- prep-status: shipped-as=sonance -->
+> **SHIPPED-UNDER** — the ColorLib `megapod` design this prep describes already
+> ships as `apps/sonance` (<https://sonance.free.componentdock.com>).
+> Do not scaffold `apps/podvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sonance/spec.md`.
 
 ## Purpose
 

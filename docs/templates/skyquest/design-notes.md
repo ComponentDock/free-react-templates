@@ -1,4 +1,9 @@
 # SkyQuest — Implementation Notes
+<!-- prep-status: shipped-as=querybar -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-19` design this prep describes already
+> ships as `apps/querybar` (<https://querybar.free.componentdock.com>).
+> Do not scaffold `apps/skyquest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-querybar/spec.md`.
 
 Source: ColorLib "Colorlib Search 19" (colorlib-search-19)
 Preview: https://preview.colorlib.com/theme/colorlib-search-19/ (unreachable — based on screenshot)

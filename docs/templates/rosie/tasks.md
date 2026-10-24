@@ -1,4 +1,9 @@
 # Rosie (Colorlib Regform 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=rosette -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-20` design this prep describes already
+> ships as `apps/rosette` (<https://rosette.free.componentdock.com>).
+> Do not scaffold `apps/rosie`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rosette/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later. Recreation name: **Rosie** (NEW name — the ColorLib source keeps its

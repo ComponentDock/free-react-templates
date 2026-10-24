@@ -1,4 +1,9 @@
 # RegDesk — Implementation Tasks
+<!-- prep-status: shipped-as=regwave -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-30` design this prep describes already
+> ships as `apps/regwave` (<https://regwave.free.componentdock.com>).
+> Do not scaffold `apps/regdesk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regwave/spec.md`.
 
 ## Source
 - ColorLib: colorlib-regform-30

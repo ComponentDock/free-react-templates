@@ -1,4 +1,9 @@
 # Sunset (Colorlib Error 404 19) — Tasks & Design Notes
+<!-- prep-status: shipped-as=nova -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-error-404-19` design this prep describes already
+> ships as `apps/nova` (<https://nova.free.componentdock.com>).
+> Do not scaffold `apps/sunset`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nova/spec.md`.
 
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-sunset`.

@@ -1,4 +1,9 @@
 # Template: Donora (Charity / Fundraising Template)
+<!-- prep-status: shipped-as=altruist -->
+> **SHIPPED-UNDER** — the ColorLib `cause` design this prep describes already
+> ships as `apps/altruist` (<https://altruist.free.componentdock.com>).
+> Do not scaffold `apps/donora`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-altruist/spec.md`.
 
 > **SUPERSEDED** — this ColorLib "Cause" source already shipped as
 > **Altruist** (PR #316, https://free-react-templates-altruist.surge.sh).

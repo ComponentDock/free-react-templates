@@ -1,4 +1,9 @@
 # Template: Aurelius (E-Commerce)
+<!-- prep-status: shipped-as=threadcraft -->
+> **SHIPPED-UNDER** — the ColorLib `fashi` design this prep describes already
+> ships as `apps/threadcraft` (<https://threadcraft.free.componentdock.com>).
+> Do not scaffold `apps/aurelius`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-threadcraft/spec.md`.
 
 ## Purpose
 

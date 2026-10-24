@@ -1,4 +1,9 @@
 # Gymforge (ColorLib Gym) — Tasks & Design Notes
+<!-- prep-status: shipped-as=iron -->
+> **SHIPPED-UNDER** — the ColorLib `gym` design this prep describes already
+> ships as `apps/iron` (<https://iron.free.componentdock.com>).
+> Do not scaffold `apps/gymforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-iron/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-gymforge`. Recreation name: **Gymforge** (NEW name —

@@ -1,4 +1,9 @@
 # Solvox — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=innovex -->
+> **SHIPPED-UNDER** — the ColorLib `eroo` design this prep describes already
+> ships as `apps/innovex` (<https://innovex.free.componentdock.com>).
+> Do not scaffold `apps/solvox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-innovex/spec.md`.
 
 Source: ColorLib Eroo (https://colorlib.com/wp/template/eroo/)
 Preview: https://preview.colorlib.com/theme/eroo/

@@ -1,4 +1,9 @@
 # Pamper (Colorlib Leopet) — Tasks & Design Notes
+<!-- prep-status: shipped-as=snoutly -->
+> **SHIPPED-UNDER** — the ColorLib `leopet` design this prep describes already
+> ships as `apps/snoutly` (<https://snoutly.free.componentdock.com>).
+> Do not scaffold `apps/pamper`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-snoutly/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-pamper`.

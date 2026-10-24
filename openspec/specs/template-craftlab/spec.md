@@ -1,4 +1,9 @@
 # Template: Craftlab (Small Company / Creative Agency)
+<!-- prep-status: shipped-as=crux -->
+> **SHIPPED-UNDER** — the ColorLib `bbs` design this prep describes already
+> ships as `apps/crux` (<https://crux.free.componentdock.com>).
+> Do not scaffold `apps/craftlab`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crux/spec.md`.
 
 ## Purpose
 

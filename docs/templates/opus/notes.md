@@ -1,4 +1,9 @@
 # Opus — Template Replication Notes
+<!-- prep-status: shipped-as=melodica -->
+> **SHIPPED-UNDER** — the ColorLib `music-2` design this prep describes already
+> ships as `apps/melodica` (<https://melodica.free.componentdock.com>).
+> Do not scaffold `apps/opus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-melodica/spec.md`.
 
 **Source:** ColorLib "Music 2" — https://colorlib.com/wp/template/music-2/
 **Preview:** https://preview.colorlib.com/theme/music-2/ (UNREACHABLE — fallback to screenshot)

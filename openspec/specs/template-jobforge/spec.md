@@ -1,4 +1,9 @@
 # Template: JobForge (Job Board)
+<!-- prep-status: shipped-as=joblaunch -->
+> **SHIPPED-UNDER** — the ColorLib `jobstart` design this prep describes already
+> ships as `apps/joblaunch` (<https://joblaunch.free.componentdock.com>).
+> Do not scaffold `apps/jobforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-joblaunch/spec.md`.
 
 ## Purpose
 

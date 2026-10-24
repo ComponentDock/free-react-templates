@@ -1,4 +1,9 @@
 # Shuttle (ColorLib Multiselect 01) — Tasks & Design Notes
+<!-- prep-status: shipped-as=optpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-01` design this prep describes already
+> ships as `apps/optpick` (<https://optpick.free.componentdock.com>).
+> Do not scaffold `apps/shuttle`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optpick/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-shuttle`. Recreation name: **Shuttle** (NEW name

@@ -1,4 +1,9 @@
 # JoinPulse — Prep Notes
+<!-- prep-status: shipped-as=joinflow -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-10` design this prep describes already
+> ships as `apps/joinflow` (<https://joinflow.free.componentdock.com>).
+> Do not scaffold `apps/joinpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-joinflow/spec.md`.
 
 ## Source
 

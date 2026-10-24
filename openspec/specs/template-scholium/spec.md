@@ -1,4 +1,9 @@
 # Template: Scholium (Education / Online Learning Website)
+<!-- prep-status: shipped-as=orenda -->
+> **SHIPPED-UNDER** — the ColorLib `onlineedu` design this prep describes already
+> ships as `apps/orenda` (<https://orenda.free.componentdock.com>).
+> Do not scaffold `apps/scholium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-orenda/spec.md`.
 
 ## Purpose
 

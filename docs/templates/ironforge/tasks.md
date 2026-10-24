@@ -1,4 +1,9 @@
 # IronForge — Implementation Outline
+<!-- prep-status: shipped-as=powergrip -->
+> **SHIPPED-UNDER** — the ColorLib `robust` design this prep describes already
+> ships as `apps/powergrip` (<https://powergrip.free.componentdock.com>).
+> Do not scaffold `apps/ironforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-powergrip/spec.md`.
 
 Source: ColorLib Robust (https://colorlib.com/wp/template/robust/)
 Preview: https://preview.colorlib.com/theme/robust/

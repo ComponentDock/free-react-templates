@@ -1,4 +1,9 @@
 # Template: Maestro (Creative Agency Landing)
+<!-- prep-status: shipped-as=imagine -->
+> **SHIPPED-UNDER** — the ColorLib `creative-agency-2` design this prep describes already
+> ships as `apps/imagine` (<https://imagine.free.componentdock.com>).
+> Do not scaffold `apps/maestro`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-imagine/spec.md`.
 
 ## Purpose
 

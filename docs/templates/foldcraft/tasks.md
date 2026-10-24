@@ -1,4 +1,9 @@
 # Foldcraft Implementation Plan & Design Notes
+<!-- prep-status: shipped-as=creel -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-12` design this prep describes already
+> ships as `apps/creel` (<https://creel.free.componentdock.com>).
+> Do not scaffold `apps/foldcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-creel/spec.md`.
 
 Recreation of ColorLib **Accordion 12** (`accordion-12`).
 

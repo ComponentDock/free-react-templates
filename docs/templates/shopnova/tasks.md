@@ -1,4 +1,9 @@
 # Shopnova (ColorLib "Karma") — Tasks & Design Notes
+<!-- prep-status: shipped-as=mercato -->
+> **SHIPPED-UNDER** — the ColorLib `karma` design this prep describes already
+> ships as `apps/mercato` (<https://mercato.free.componentdock.com>).
+> Do not scaffold `apps/shopnova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mercato/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-shopnova` by an implementer stream.

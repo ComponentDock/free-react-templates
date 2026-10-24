@@ -1,4 +1,9 @@
 # AgentHub — Prep Notes
+<!-- prep-status: shipped-as=proxy -->
+> **SHIPPED-UNDER** — the ColorLib `youragent` design this prep describes already
+> ships as `apps/proxy` (<https://proxy.free.componentdock.com>).
+> Do not scaffold `apps/agenthub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-proxy/spec.md`.
 
 Source: ColorLib "Youragent" — https://colorlib.com/wp/template/youragent/
 Preview: https://preview.colorlib.com/theme/youragent/

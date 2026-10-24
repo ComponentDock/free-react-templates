@@ -1,4 +1,9 @@
 # Template: Rosie (Registration Form — Beauty / Cosmetics)
+<!-- prep-status: shipped-as=rosette -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-20` design this prep describes already
+> ships as `apps/rosette` (<https://rosette.free.componentdock.com>).
+> Do not scaffold `apps/rosie`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rosette/spec.md`.
 
 ## Purpose
 

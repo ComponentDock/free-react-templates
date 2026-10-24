@@ -1,4 +1,9 @@
 # Template: DealBounce (Modal / Popup)
+<!-- prep-status: shipped-as=modalbox -->
+> **SHIPPED-UNDER** — the ColorLib `modal-14` design this prep describes already
+> ships as `apps/modalbox` (<https://modalbox.free.componentdock.com>).
+> Do not scaffold `apps/dealbounce`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalbox/spec.md`.
 
 ## Purpose
 

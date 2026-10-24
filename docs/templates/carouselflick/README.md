@@ -1,4 +1,9 @@
 # CarouselFlick (Carousel V11 Recreation)
+<!-- prep-status: shipped-as=reel -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-11` design this prep describes already
+> ships as `apps/reel` (<https://reel.free.componentdock.com>).
+> Do not scaffold `apps/carouselflick`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reel/spec.md`.
 
 - **Source:** ColorLib Carousel 11 (`https://colorlib.com/wp/template/carousel-11/`)
 - **Preview URL:** `https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-11.jpg`

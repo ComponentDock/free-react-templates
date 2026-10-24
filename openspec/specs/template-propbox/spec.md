@@ -1,4 +1,9 @@
 # Template: PropBox (Real Estate)
+<!-- prep-status: shipped-as=propvale -->
+> **SHIPPED-UNDER** — the ColorLib `real-estate-2` design this prep describes already
+> ships as `apps/propvale` (<https://propvale.free.componentdock.com>).
+> Do not scaffold `apps/propbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-propvale/spec.md`.
 
 ## Purpose
 

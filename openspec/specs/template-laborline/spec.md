@@ -1,4 +1,9 @@
 # Template: Laborline (Portfolio / Personal)
+<!-- prep-status: shipped-as=repertoire -->
+> **SHIPPED-UNDER** — the ColorLib `work` design this prep describes already
+> ships as `apps/repertoire` (<https://repertoire.free.componentdock.com>).
+> Do not scaffold `apps/laborline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-repertoire/spec.md`.
 
 ## Purpose
 

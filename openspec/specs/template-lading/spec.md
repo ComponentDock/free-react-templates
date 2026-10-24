@@ -1,4 +1,9 @@
 # Template: Lading (Logistics / Cargo)
+<!-- prep-status: shipped-as=haulage -->
+> **SHIPPED-UNDER** — the ColorLib `cargo` design this prep describes already
+> ships as `apps/haulage` (<https://haulage.free.componentdock.com>).
+> Do not scaffold `apps/lading`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-haulage/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Cargo" shipped as **Haulage** (PR #315,
 > https://free-react-templates-haulage.surge.sh). Do NOT implement under the

@@ -1,4 +1,9 @@
 # Template: Joinup (Registration Signup Form — Split-Screen)
+<!-- prep-status: shipped-as=signupcraft -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-05` design this prep describes already
+> ships as `apps/signupcraft` (<https://signupcraft.free.componentdock.com>).
+> Do not scaffold `apps/joinup`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signupcraft/spec.md`.
 
 ## Purpose
 

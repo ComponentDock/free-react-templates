@@ -1,4 +1,9 @@
 # Shopvibe (ColorLib Listashop) — Tasks & Design Notes
+<!-- prep-status: shipped-as=catalogly -->
+> **SHIPPED-UNDER** — the ColorLib `listashop` design this prep describes already
+> ships as `apps/catalogly` (<https://catalogly.free.componentdock.com>).
+> Do not scaffold `apps/shopvibe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-catalogly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-shopvibe`. Recreation name: **Shopvibe** (NEW name —

@@ -1,4 +1,9 @@
 # Glimpse (ColorLib Dropdown 09) — Tasks & Design Notes
+<!-- prep-status: shipped-as=dropkick -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-09` design this prep describes already
+> ships as `apps/dropkick` (<https://dropkick.free.componentdock.com>).
+> Do not scaffold `apps/glimpse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropkick/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-glimpse`.

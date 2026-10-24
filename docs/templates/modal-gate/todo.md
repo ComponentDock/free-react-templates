@@ -1,4 +1,9 @@
 # ModalGate — Implementation Notes
+<!-- prep-status: shipped-as=postern -->
+> **SHIPPED-UNDER** — the ColorLib `modal-12` design this prep describes already
+> ships as `apps/postern` (<https://postern.free.componentdock.com>).
+> Do not scaffold `apps/modal-gate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-postern/spec.md`.
 
 ## Source
 

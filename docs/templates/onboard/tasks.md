@@ -1,4 +1,9 @@
 # Onboard (ColorLib Dropdown 07) — Tasks & Design Notes
+<!-- prep-status: shipped-as=dropwell -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-07` design this prep describes already
+> ships as `apps/dropwell` (<https://dropwell.free.componentdock.com>).
+> Do not scaffold `apps/onboard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropwell/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-onboard`.

@@ -1,4 +1,9 @@
 # Template: MailKite (Contact Form)
+<!-- prep-status: shipped-as=reachform -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v2` design this prep describes already
+> ships as `apps/reachform` (<https://reachform.free.componentdock.com>).
+> Do not scaffold `apps/mailkite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reachform/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Scholarium — Implementation Tasks
+<!-- prep-status: shipped-as=uniwell -->
+> **SHIPPED-UNDER** — the ColorLib `unicat` design this prep describes already
+> ships as `apps/uniwell` (<https://uniwell.free.componentdock.com>).
+> Do not scaffold `apps/scholarium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-uniwell/spec.md`.
 
 Source: ColorLib Unicat (https://colorlib.com/wp/template/unicat/)
 Preview: https://preview.colorlib.com/theme/unicat/

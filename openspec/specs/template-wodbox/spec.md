@@ -1,4 +1,9 @@
 # Template: WodBox (Fitness / CrossFit Gym)
+<!-- prep-status: shipped-as=fitforge -->
+> **SHIPPED-UNDER** — the ColorLib `crossfit` design this prep describes already
+> ships as `apps/fitforge` (<https://fitforge.free.componentdock.com>).
+> Do not scaffold `apps/wodbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitforge/spec.md`.
 
 ## Purpose
 

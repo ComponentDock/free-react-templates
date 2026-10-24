@@ -1,4 +1,9 @@
 # Lovekit — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=cuddle -->
+> **SHIPPED-UNDER** — the ColorLib `lovecare` design this prep describes already
+> ships as `apps/cuddle` (<https://cuddle.free.componentdock.com>).
+> Do not scaffold `apps/lovekit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cuddle/spec.md`.
 
 ## Source mapping
 

@@ -1,4 +1,9 @@
 # Velour — Implementation Notes
+<!-- prep-status: shipped-as=cartly -->
+> **SHIPPED-UNDER** — the ColorLib `eiser` design this prep describes already
+> ships as `apps/cartly` (<https://cartly.free.componentdock.com>).
+> Do not scaffold `apps/velour`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cartly/spec.md`.
 
 Source: ColorLib "Eiser" (https://colorlib.com/wp/template/eiser/)
 Preview: https://preview.colorlib.com/theme/eiser/

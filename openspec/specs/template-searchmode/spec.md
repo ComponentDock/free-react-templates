@@ -1,4 +1,9 @@
 # Template: SearchMode (Search Form)
+<!-- prep-status: shipped-as=seekstream -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-8` design this prep describes already
+> ships as `apps/seekstream` (<https://seekstream.free.componentdock.com>).
+> Do not scaffold `apps/searchmode`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekstream/spec.md`.
 
 ## Purpose
 

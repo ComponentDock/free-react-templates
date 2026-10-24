@@ -1,4 +1,9 @@
 # Netcraft — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=techwise -->
+> **SHIPPED-UNDER** — the ColorLib `portech` design this prep describes already
+> ships as `apps/techwise` (<https://techwise.free.componentdock.com>).
+> Do not scaffold `apps/netcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-techwise/spec.md`.
 
 Source: ColorLib Portech (https://colorlib.com/wp/template/portech/)
 Preview: https://preview.colorlib.com/theme/portech/

@@ -1,4 +1,9 @@
 # Darkroom (Colorlib Sunzine) — Tasks & Design Notes
+<!-- prep-status: shipped-as=aperture -->
+> **SHIPPED-UNDER** — the ColorLib `sunzine` design this prep describes already
+> ships as `apps/aperture` (<https://aperture.free.componentdock.com>).
+> Do not scaffold `apps/darkroom`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-aperture/spec.md`.
 
 > Prep artifact written on `main` by the prep stream so implementers start
 > instantly. Implementation ships later on `feat/template-darkroom`.

@@ -1,4 +1,9 @@
 # OilSmith — Design Notes
+<!-- prep-status: shipped-as=fixcraft -->
+> **SHIPPED-UNDER** — the ColorLib `autorepair` design this prep describes already
+> ships as `apps/fixcraft` (<https://fixcraft.free.componentdock.com>).
+> Do not scaffold `apps/oilsmith`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fixcraft/spec.md`.
 
 **Source**: ColorLib "Autorepair" (https://colorlib.com/wp/template/autorepair/)
 **Preview**: https://preview.colorlib.com/theme/autorepair/

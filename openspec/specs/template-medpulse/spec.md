@@ -1,4 +1,9 @@
 # Template: MedPulse (Medical / Healthcare)
+<!-- prep-status: shipped-as=healix -->
+> **SHIPPED-UNDER** — the ColorLib `medex` design this prep describes already
+> ships as `apps/healix` (<https://healix.free.componentdock.com>).
+> Do not scaffold `apps/medpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-healix/spec.md`.
 
 ## Purpose
 

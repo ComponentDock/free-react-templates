@@ -1,4 +1,9 @@
 # Crestview — Implementation Notes
+<!-- prep-status: shipped-as=grandeur -->
+> **SHIPPED-UNDER** — the ColorLib `radisson` design this prep describes already
+> ships as `apps/grandeur` (<https://grandeur.free.componentdock.com>).
+> Do not scaffold `apps/crestview`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-grandeur/spec.md`.
 
 ## Source
 - ColorLib Radisson: https://colorlib.com/wp/template/radisson/

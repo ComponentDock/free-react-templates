@@ -1,4 +1,9 @@
 # Vernal (ColorLib Spring) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sprout -->
+> **SHIPPED-UNDER** — the ColorLib `spring` design this prep describes already
+> ships as `apps/sprout` (<https://sprout.free.componentdock.com>).
+> Do not scaffold `apps/vernal`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sprout/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-vernal`. Recreation name: **Vernal** (NEW name —

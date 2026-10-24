@@ -1,4 +1,9 @@
 # Template: Portlane (Creative Portfolio Showcase)
+<!-- prep-status: shipped-as=framecast -->
+> **SHIPPED-UNDER** — the ColorLib `portfolio-2` design this prep describes already
+> ships as `apps/framecast` (<https://framecast.free.componentdock.com>).
+> Do not scaffold `apps/portlane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-framecast/spec.md`.
 
 ## Purpose
 

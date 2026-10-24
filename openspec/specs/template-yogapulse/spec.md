@@ -5,6 +5,12 @@ template: colorlib-zogin
 source: https://preview.colorlib.com/theme/zogin/
 ---
 
+<!-- prep-status: shipped-as=fitnest -->
+> **SHIPPED-UNDER** — the ColorLib `zogin` design this prep describes already
+> ships as `apps/fitnest` (<https://fitnest.free.componentdock.com>).
+> Do not scaffold `apps/yogapulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitnest/spec.md`.
+
 ## Purpose
 
 Recreation of ColorLib Zogin (https://colorlib.com/wp/template/zogin/) — a yoga studio landing page with hero slider, about section, yoga services, "Why Choose Us" with counters, upcoming courses, gallery, instructors, appointment form, and testimonials. The new name is "Yogapulse".

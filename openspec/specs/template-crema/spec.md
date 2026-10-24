@@ -1,4 +1,9 @@
 # Template: Crema (Coffee Shop Landing)
+<!-- prep-status: shipped-as=roastery -->
+> **SHIPPED-UNDER** — the ColorLib `coffee-blend` design this prep describes already
+> ships as `apps/roastery` (<https://roastery.free.componentdock.com>).
+> Do not scaffold `apps/crema`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-roastery/spec.md`.
 
 ## Purpose
 

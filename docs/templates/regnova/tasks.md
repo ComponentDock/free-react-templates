@@ -1,4 +1,9 @@
 # RegNova — Prep Notes
+<!-- prep-status: shipped-as=regpeak -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-32` design this prep describes already
+> ships as `apps/regpeak` (<https://regpeak.free.componentdock.com>).
+> Do not scaffold `apps/regnova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regpeak/spec.md`.
 
 Source: ColorLib Regform 32
 Preview: https://preview.colorlib.com/theme/colorlib-regform-32/ (404 — unavailable)

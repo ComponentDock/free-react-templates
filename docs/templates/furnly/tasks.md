@@ -1,4 +1,9 @@
 # Furnly (ColorLib "Tangre") — Tasks & Design Notes
+<!-- prep-status: shipped-as=wainscot -->
+> **SHIPPED-UNDER** — the ColorLib `tangre` design this prep describes already
+> ships as `apps/wainscot` (<https://wainscot.free.componentdock.com>).
+> Do not scaffold `apps/furnly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wainscot/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-furnly` by an implementer stream.

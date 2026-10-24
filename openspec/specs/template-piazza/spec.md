@@ -1,4 +1,9 @@
 # Template: Piazza (Modal)
+<!-- prep-status: shipped-as=splitmodal -->
+> **SHIPPED-UNDER** — the ColorLib `modal-19` design this prep describes already
+> ships as `apps/splitmodal` (<https://splitmodal.free.componentdock.com>).
+> Do not scaffold `apps/piazza`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-splitmodal/spec.md`.
 
 ## Purpose
 

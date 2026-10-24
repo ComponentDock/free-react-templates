@@ -1,4 +1,9 @@
 # Shoppe (ColorLib Minishop) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sneakly -->
+> **SHIPPED-UNDER** — the ColorLib `minishop` design this prep describes already
+> ships as `apps/sneakly` (<https://sneakly.free.componentdock.com>).
+> Do not scaffold `apps/shoppe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sneakly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-shoppe`.

@@ -1,4 +1,9 @@
 # Template: Bootstrap Buttons Eleven (UI Components / Buttons Showcase)
+<!-- prep-status: shipped-as=btnshade -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-11` design this prep describes already
+> ships as `apps/btnshade` (<https://btnshade.free.componentdock.com>).
+> Do not scaffold `apps/bootstrap-buttons-eleven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnshade/spec.md`.
 
 ## Purpose
 

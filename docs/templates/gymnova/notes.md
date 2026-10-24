@@ -1,4 +1,9 @@
 # GymNova — Implementation Notes
+<!-- prep-status: shipped-as=gymbox -->
+> **SHIPPED-UNDER** — the ColorLib `gym2` design this prep describes already
+> ships as `apps/gymbox` (<https://gymbox.free.componentdock.com>).
+> Do not scaffold `apps/gymnova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gymbox/spec.md`.
 
 **Source:** ColorLib Gym2 ([preview](https://preview.colorlib.com/theme/gym2/))
 **New name:** gymnova

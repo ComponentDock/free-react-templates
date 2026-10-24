@@ -1,4 +1,9 @@
 # Template: Unwrap (Portfolio / One-Page)
+<!-- prep-status: shipped-as=reveal -->
+> **SHIPPED-UNDER** — the ColorLib `unfold` design this prep describes already
+> ships as `apps/reveal` (<https://reveal.free.componentdock.com>).
+> Do not scaffold `apps/unwrap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reveal/spec.md`.
 
 ## Purpose
 

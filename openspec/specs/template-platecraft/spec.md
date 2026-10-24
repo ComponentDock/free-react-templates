@@ -1,4 +1,9 @@
 # Template: Platecraft (Restaurant / Dining)
+<!-- prep-status: shipped-as=supper -->
+> **SHIPPED-UNDER** — the ColorLib `meal` design this prep describes already
+> ships as `apps/supper` (<https://supper.free.componentdock.com>).
+> Do not scaffold `apps/platecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-supper/spec.md`.
 
 > Recreation of ColorLib "Meal" — https://colorlib.com/wp/template/meal/
 > Preview: https://preview.colorlib.com/theme/meal/

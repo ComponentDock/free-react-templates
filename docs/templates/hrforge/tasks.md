@@ -1,4 +1,9 @@
 # Hrforge (ColorLib Humanresources) — Tasks & Design Notes
+<!-- prep-status: shipped-as=talentflow -->
+> **SHIPPED-UNDER** — the ColorLib `humanresources` design this prep describes already
+> ships as `apps/talentflow` (<https://talentflow.free.componentdock.com>).
+> Do not scaffold `apps/hrforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-talentflow/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-hrforge`. Recreation name: **Hrforge** (NEW name —

@@ -1,4 +1,9 @@
 # FlavorHub — Implementation Notes
+<!-- prep-status: shipped-as=zestly -->
+> **SHIPPED-UNDER** — the ColorLib `tasty-recipes` design this prep describes already
+> ships as `apps/zestly` (<https://zestly.free.componentdock.com>).
+> Do not scaffold `apps/flavorhub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-zestly/spec.md`.
 
 ## Replication Reference
 

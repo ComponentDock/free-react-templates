@@ -1,4 +1,9 @@
 # Template: Rankline (SEO & SEM Agency Template)
+<!-- prep-status: shipped-as=resonance -->
+> **SHIPPED-UNDER** — the ColorLib `echo` design this prep describes already
+> ships as `apps/resonance` (<https://resonance.free.componentdock.com>).
+> Do not scaffold `apps/rankline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-resonance/spec.md`.
 
 ## Purpose
 

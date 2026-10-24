@@ -1,4 +1,9 @@
 # Template: Claymore (E-Commerce)
+<!-- prep-status: shipped-as=drape -->
+> **SHIPPED-UNDER** — the ColorLib `fashe` design this prep describes already
+> ships as `apps/drape` (<https://drape.free.componentdock.com>).
+> Do not scaffold `apps/claymore`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drape/spec.md`.
 
 ## Purpose
 

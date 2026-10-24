@@ -1,4 +1,9 @@
 # Tonic (ColorLib Slim) — Tasks & Design Notes
+<!-- prep-status: shipped-as=flexly -->
+> **SHIPPED-UNDER** — the ColorLib `slim` design this prep describes already
+> ships as `apps/flexly` (<https://flexly.free.componentdock.com>).
+> Do not scaffold `apps/tonic`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flexly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-tonic`.

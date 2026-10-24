@@ -1,4 +1,9 @@
 # Ascenda (ColorLib Stodeo) — Tasks & Design Notes
+<!-- prep-status: shipped-as=orbiter -->
+> **SHIPPED-UNDER** — the ColorLib `stodeo` design this prep describes already
+> ships as `apps/orbiter` (<https://orbiter.free.componentdock.com>).
+> Do not scaffold `apps/ascenda`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-orbiter/spec.md`.
 
 > Recreation of ColorLib "Stodeo — Free Bootstrap 5 Website Template by
 > Colorlib" (https://colorlib.com/wp/template/stodeo/) under the NEW name

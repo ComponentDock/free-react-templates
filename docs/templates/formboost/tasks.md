@@ -1,4 +1,9 @@
 # FormBoost — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=divine -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-5` design this prep describes already
+> ships as `apps/divine` (<https://divine.free.componentdock.com>).
+> Do not scaffold `apps/formboost`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-divine/spec.md`.
 
 Source: ColorLib Wizard 5
 Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-5/index.html

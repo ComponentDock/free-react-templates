@@ -1,4 +1,9 @@
 # HapiShop — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=shoplane -->
+> **SHIPPED-UNDER** — the ColorLib `coloshop` design this prep describes already
+> ships as `apps/shoplane` (<https://shoplane.free.componentdock.com>).
+> Do not scaffold `apps/hapishop`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shoplane/spec.md`.
 
 ## Source
 - **ColorLib slug:** coloshop

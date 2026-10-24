@@ -1,4 +1,9 @@
 # FinVault — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=finflow -->
+> **SHIPPED-UNDER** — the ColorLib `finances` design this prep describes already
+> ships as `apps/finflow` (<https://finflow.free.componentdock.com>).
+> Do not scaffold `apps/finvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-finflow/spec.md`.
 
 Source: ColorLib Finances (https://preview.colorlib.com/theme/finances/)
 New name: finvault | Package: @free-react-templates/finvault

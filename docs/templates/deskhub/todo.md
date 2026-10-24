@@ -1,4 +1,9 @@
 # DeskHub — Implementation Design Notes
+<!-- prep-status: shipped-as=workhive -->
+> **SHIPPED-UNDER** — the ColorLib `sharespace` design this prep describes already
+> ships as `apps/workhive` (<https://workhive.free.componentdock.com>).
+> Do not scaffold `apps/deskhub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-workhive/spec.md`.
 
 **Source**: ColorLib Sharespace (https://colorlib.com/wp/template/sharespace/)
 **Preview**: https://preview.colorlib.com/theme/sharespace/

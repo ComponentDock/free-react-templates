@@ -1,4 +1,9 @@
 # Cameo (ColorLib Look) — Tasks & Design Notes
+<!-- prep-status: shipped-as=glamour -->
+> **SHIPPED-UNDER** — the ColorLib `look` design this prep describes already
+> ships as `apps/glamour` (<https://glamour.free.componentdock.com>).
+> Do not scaffold `apps/cameo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-glamour/spec.md`.
 
 > **SUPERSEDED** — ColorLib "Look" shipped as **Glamour** (PR #392,
 > https://glamour.free.componentdock.com). Do NOT implement; delete on

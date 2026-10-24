@@ -1,4 +1,9 @@
 # Missive — Design Notes
+<!-- prep-status: shipped-as=formsend -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v12` design this prep describes already
+> ships as `apps/formsend` (<https://formsend.free.componentdock.com>).
+> Do not scaffold `apps/missive`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formsend/spec.md`.
 
 ## Source
 

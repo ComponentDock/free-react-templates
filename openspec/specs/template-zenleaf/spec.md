@@ -5,6 +5,12 @@ template: colorlib-yogabest
 source: https://preview.colorlib.com/theme/yogabest/
 ---
 
+<!-- prep-status: shipped-as=zenbloom -->
+> **SHIPPED-UNDER** — the ColorLib `yogabest` design this prep describes already
+> ships as `apps/zenbloom` (<https://zenbloom.free.componentdock.com>).
+> Do not scaffold `apps/zenleaf`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-zenbloom/spec.md`.
+
 ## Purpose
 
 Recreation of ColorLib Yogabest (https://colorlib.com/wp/template/yogabest/) — a yoga studio landing page with hero, services, about with video, counters, classes, testimonials, schedule calendar, trainers, blog, and footer. The new name is "Zenleaf".

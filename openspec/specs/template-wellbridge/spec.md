@@ -1,4 +1,9 @@
 # Template: Wellbridge (Medical / Healthcare)
+<!-- prep-status: shipped-as=carepoint -->
+> **SHIPPED-UNDER** — the ColorLib `caremed` design this prep describes already
+> ships as `apps/carepoint` (<https://carepoint.free.componentdock.com>).
+> Do not scaffold `apps/wellbridge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carepoint/spec.md`.
 
 ## Purpose
 

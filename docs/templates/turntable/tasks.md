@@ -1,4 +1,9 @@
 # Turntable (ColorLib Dj) — Tasks & Design Notes
+<!-- prep-status: shipped-as=vynl -->
+> **SHIPPED-UNDER** — the ColorLib `dj` design this prep describes already
+> ships as `apps/vynl` (<https://vynl.free.componentdock.com>).
+> Do not scaffold `apps/turntable`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vynl/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-turntable`. Recreation name: **Turntable** (NEW name —

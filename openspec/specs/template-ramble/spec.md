@@ -1,4 +1,9 @@
 # Template: Ramble (Travel Agency)
+<!-- prep-status: shipped-as=getaway -->
+> **SHIPPED-UNDER** — the ColorLib `vacation` design this prep describes already
+> ships as `apps/getaway` (<https://getaway.free.componentdock.com>).
+> Do not scaffold `apps/ramble`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-getaway/spec.md`.
 
 ## Purpose
 

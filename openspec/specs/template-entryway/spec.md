@@ -1,4 +1,9 @@
 # Template: Entryway (Login Form V3)
+<!-- prep-status: shipped-as=loginbreeze -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v3` design this prep describes already
+> ships as `apps/loginbreeze` (<https://loginbreeze.free.componentdock.com>).
+> Do not scaffold `apps/entryway`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginbreeze/spec.md`.
 
 ## Purpose
 

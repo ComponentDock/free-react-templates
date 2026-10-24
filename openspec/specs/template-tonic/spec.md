@@ -1,4 +1,9 @@
 # Template: Tonic (Fitness / Gym Template)
+<!-- prep-status: shipped-as=flexly -->
+> **SHIPPED-UNDER** — the ColorLib `slim` design this prep describes already
+> ships as `apps/flexly` (<https://flexly.free.componentdock.com>).
+> Do not scaffold `apps/tonic`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flexly/spec.md`.
 
 ## Purpose
 

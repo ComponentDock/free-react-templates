@@ -1,4 +1,9 @@
 # ButtonCraft (ColorLib Bootstrap Buttons 12) — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnridge -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-12` design this prep describes already
+> ships as `apps/btnridge` (<https://btnridge.free.componentdock.com>).
+> Do not scaffold `apps/button-craft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnridge/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships later on `feat/template-button-craft`. Recreation name: **ButtonCraft** (NEW name — the ColorLib source keeps its name "Bootstrap Buttons 12").
 

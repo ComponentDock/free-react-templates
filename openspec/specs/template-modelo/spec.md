@@ -1,4 +1,9 @@
 # Template: Modelo (Model Management Landing)
+<!-- prep-status: shipped-as=allure -->
+> **SHIPPED-UNDER** — the ColorLib `modelo` design this prep describes already
+> ships as `apps/allure` (<https://allure.free.componentdock.com>).
+> Do not scaffold `apps/modelo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-allure/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Tidecrest (Hotel)
+<!-- prep-status: shipped-as=pavilion -->
+> **SHIPPED-UNDER** — the ColorLib `marian` design this prep describes already
+> ships as `apps/pavilion` (<https://pavilion.free.componentdock.com>).
+> Do not scaffold `apps/tidecrest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pavilion/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Whisker (Pet Care Services Landing)
+<!-- prep-status: shipped-as=pawly -->
+> **SHIPPED-UNDER** — the ColorLib `petcare` design this prep describes already
+> ships as `apps/pawly` (<https://pawly.free.componentdock.com>).
+> Do not scaffold `apps/whisker`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pawly/spec.md`.
 
 ## Purpose
 

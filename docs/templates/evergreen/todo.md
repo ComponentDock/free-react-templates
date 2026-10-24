@@ -1,4 +1,9 @@
 # Evergreen — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=acumen -->
+> **SHIPPED-UNDER** — the ColorLib `classic` design this prep describes already
+> ships as `apps/acumen` (<https://acumen.free.componentdock.com>).
+> Do not scaffold `apps/evergreen`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-acumen/spec.md`.
 
 Source: ColorLib Classic (https://colorlib.com/wp/template/classic/)
 Preview: https://preview.colorlib.com/theme/classic/

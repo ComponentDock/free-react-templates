@@ -1,4 +1,9 @@
 # Template: Vitrine (Portfolio)
+<!-- prep-status: shipped-as=curate -->
+> **SHIPPED-UNDER** — the ColorLib `portfolio` design this prep describes already
+> ships as `apps/curate` (<https://curate.free.componentdock.com>).
+> Do not scaffold `apps/vitrine`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-curate/spec.md`.
 
 ## Purpose
 

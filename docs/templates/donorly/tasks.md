@@ -1,4 +1,9 @@
 # Donorly (ColorLib Fundraiser) — Tasks & Design Notes
+<!-- prep-status: shipped-as=benefact -->
+> **SHIPPED-UNDER** — the ColorLib `fundraiser` design this prep describes already
+> ships as `apps/benefact` (<https://benefact.free.componentdock.com>).
+> Do not scaffold `apps/donorly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-benefact/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-donorly`.

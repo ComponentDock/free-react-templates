@@ -1,4 +1,9 @@
 # Sagepoint — Implementation Todo + Design Notes
+<!-- prep-status: shipped-as=insight -->
+> **SHIPPED-UNDER** — the ColorLib `buson` design this prep describes already
+> ships as `apps/insight` (<https://insight.free.componentdock.com>).
+> Do not scaffold `apps/sagepoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-insight/spec.md`.
 
 **Source:** ColorLib "Buson" (https://colorlib.com/wp/template/buson/)
 **Preview:** https://preview.colorlib.com/theme/buson/

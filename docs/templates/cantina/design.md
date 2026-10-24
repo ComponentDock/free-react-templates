@@ -1,4 +1,9 @@
 # Cantina — Design Notes
+<!-- prep-status: shipped-as=pieslice -->
+> **SHIPPED-UNDER** — the ColorLib `luigis` design this prep describes already
+> ships as `apps/pieslice` (<https://pieslice.free.componentdock.com>).
+> Do not scaffold `apps/cantina`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pieslice/spec.md`.
 
 ColorLib source: https://colorlib.com/wp/template/luigis/
 Preview: https://preview.colorlib.com/theme/luigis/

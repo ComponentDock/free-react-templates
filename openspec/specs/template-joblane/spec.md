@@ -1,4 +1,9 @@
 # Template: JobLane (Job Board)
+<!-- prep-status: shipped-as=jobnest -->
+> **SHIPPED-UNDER** — the ColorLib `job-board-2` design this prep describes already
+> ships as `apps/jobnest` (<https://jobnest.free.componentdock.com>).
+> Do not scaffold `apps/joblane`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jobnest/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: LoginGate (Login Form)
+<!-- prep-status: shipped-as=passpoint -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-09` design this prep describes already
+> ships as `apps/passpoint` (<https://passpoint.free.componentdock.com>).
+> Do not scaffold `apps/logingate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-passpoint/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Timbercraft (Woodworking / Carpentry)
+<!-- prep-status: shipped-as=graincraft -->
+> **SHIPPED-UNDER** — the ColorLib `woodwork` design this prep describes already
+> ships as `apps/graincraft` (<https://graincraft.free.componentdock.com>).
+> Do not scaffold `apps/timbercraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-graincraft/spec.md`.
 
 ## Purpose
 

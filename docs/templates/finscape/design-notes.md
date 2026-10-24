@@ -1,4 +1,9 @@
 # Finscape — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=finflow -->
+> **SHIPPED-UNDER** — the ColorLib `finances` design this prep describes already
+> ships as `apps/finflow` (<https://finflow.free.componentdock.com>).
+> Do not scaffold `apps/finscape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-finflow/spec.md`.
 
 Source: ColorLib "Finances" (`https://colorlib.com/wp/template/finances/`)
 New name: Finscape (finance + landscape)

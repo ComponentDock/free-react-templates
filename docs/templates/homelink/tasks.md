@@ -1,4 +1,9 @@
 # Homelink — Implementation Tasks
+<!-- prep-status: shipped-as=domicile -->
+> **SHIPPED-UNDER** — the ColorLib `homespace` design this prep describes already
+> ships as `apps/domicile` (<https://domicile.free.componentdock.com>).
+> Do not scaffold `apps/homelink`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-domicile/spec.md`.
 
 Recreation of ColorLib "Homespace" (https://preview.colorlib.com/theme/homespace/).
 App folder: `apps/homelink`. Package: `@free-react-templates/homelink`.

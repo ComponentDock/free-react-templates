@@ -1,4 +1,9 @@
 # Template: Plinth (Footer)
+<!-- prep-status: shipped-as=footwell -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-01` design this prep describes already
+> ships as `apps/footwell` (<https://footwell.free.componentdock.com>).
+> Do not scaffold `apps/plinth`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footwell/spec.md`.
 
 ## Purpose
 

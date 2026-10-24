@@ -1,4 +1,9 @@
 # Spec: Logincraft — Split-Screen Login Form
+<!-- prep-status: shipped-as=loginspark -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v1` design this prep describes already
+> ships as `apps/loginspark` (<https://loginspark.free.componentdock.com>).
+> Do not scaffold `apps/logincraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginspark/spec.md`.
 
 ## Purpose
 

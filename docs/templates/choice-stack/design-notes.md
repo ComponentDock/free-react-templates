@@ -1,4 +1,9 @@
 # ChoiceStack — Design Notes & Implementation Tasks
+<!-- prep-status: shipped-as=topicpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-02` design this prep describes already
+> ships as `apps/topicpick` (<https://topicpick.free.componentdock.com>).
+> Do not scaffold `apps/choice-stack`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-topicpick/spec.md`.
 
 <!-- doc-token-reverify:2026-10-22 -->
 

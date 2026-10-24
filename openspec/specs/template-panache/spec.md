@@ -1,4 +1,9 @@
 # Template: Panache (Creative Agency Template)
+<!-- prep-status: shipped-as=flair -->
+> **SHIPPED-UNDER** — the ColorLib `fancy` design this prep describes already
+> ships as `apps/flair` (<https://flair.free.componentdock.com>).
+> Do not scaffold `apps/panache`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flair/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Registease — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=formvane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-9` design this prep describes already
+> ships as `apps/formvane` (<https://formvane.free.componentdock.com>).
+> Do not scaffold `apps/registease`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formvane/spec.md`.
 
 Source: ColorLib "Colorlib Wizard 9"
 Preview: https://preview.colorlib.com/theme/colorlib-wizard-9/ (404 — screenshot-only reference)

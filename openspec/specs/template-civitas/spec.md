@@ -1,4 +1,9 @@
 # Template: Civitas (Business & Agency)
+<!-- prep-status: shipped-as=orbiter -->
+> **SHIPPED-UNDER** — the ColorLib `stodeo` design this prep describes already
+> ships as `apps/orbiter` (<https://orbiter.free.componentdock.com>).
+> Do not scaffold `apps/civitas`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-orbiter/spec.md`.
 
 ## Purpose
 

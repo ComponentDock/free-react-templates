@@ -1,4 +1,9 @@
 # GymFlow — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=fitcraft -->
+> **SHIPPED-UNDER** — the ColorLib `gymlife` design this prep describes already
+> ships as `apps/fitcraft` (<https://fitcraft.free.componentdock.com>).
+> Do not scaffold `apps/gymflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fitcraft/spec.md`.
 
 ## Template Identity
 

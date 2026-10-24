@@ -1,4 +1,9 @@
 # AurumStay — Implementation Todo
+<!-- prep-status: shipped-as=hibiscus -->
+> **SHIPPED-UNDER** — the ColorLib `hiroto` design this prep describes already
+> ships as `apps/hibiscus` (<https://hibiscus.free.componentdock.com>).
+> Do not scaffold `apps/aurumstay`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hibiscus/spec.md`.
 
 Recreation of ColorLib Hiroto → https://preview.colorlib.com/theme/hiroto/
 

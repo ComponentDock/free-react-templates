@@ -1,4 +1,9 @@
 # Template: Bootstrap Buttons Fifteen (UI Components / Buttons Showcase)
+<!-- prep-status: shipped-as=btnriff -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-15` design this prep describes already
+> ships as `apps/btnriff` (<https://btnriff.free.componentdock.com>).
+> Do not scaffold `apps/bootstrap-buttons-fifteen`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnriff/spec.md`.
 
 ## Purpose
 

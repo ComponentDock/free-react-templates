@@ -1,4 +1,9 @@
 # Template: ModalGate (Modal)
+<!-- prep-status: shipped-as=modalshift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-17` design this prep describes already
+> ships as `apps/modalshift` (<https://modalshift.free.componentdock.com>).
+> Do not scaffold `apps/modalgate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalshift/spec.md`.
 
 ## Purpose
 

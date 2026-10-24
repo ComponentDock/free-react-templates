@@ -1,4 +1,9 @@
 # Template: Rimarc (Sports — Basketball)
+<!-- prep-status: shipped-as=hoopside -->
+> **SHIPPED-UNDER** — the ColorLib `thebasketball` design this prep describes already
+> ships as `apps/hoopside` (<https://hoopside.free.componentdock.com>).
+> Do not scaffold `apps/rimarc`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hoopside/spec.md`.
 
 ## Purpose
 

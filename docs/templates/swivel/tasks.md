@@ -1,4 +1,9 @@
 # Swivel Template — Tasks & Design Notes
+<!-- prep-status: shipped-as=merry -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-07` design this prep describes already
+> ships as `apps/merry` (<https://merry.free.componentdock.com>).
+> Do not scaffold `apps/swivel`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-merry/spec.md`.
 
 Recreates ColorLib `carousel-07` (`https://colorlib.com/wp/template/carousel-07/`) as **Swivel** (`apps/swivel`).
 

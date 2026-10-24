@@ -1,4 +1,9 @@
 # Waybill (ColorLib Thelogistico) — Tasks & Design Notes
+<!-- prep-status: shipped-as=logistix -->
+> **SHIPPED-UNDER** — the ColorLib `thelogistico` design this prep describes already
+> ships as `apps/logistix` (<https://logistix.free.componentdock.com>).
+> Do not scaffold `apps/waybill`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-logistix/spec.md`.
 
 > Recreation of ColorLib "Thelogistico — free Bootstrap 4 logistics /
 > transport website template" (https://colorlib.com/wp/template/thelogistico/)

@@ -1,4 +1,9 @@
 # Template: Oathsworn (Notary / Legal Services)
+<!-- prep-status: shipped-as=oathmark -->
+> **SHIPPED-UNDER** — the ColorLib `notary` design this prep describes already
+> ships as `apps/oathmark` (<https://oathmark.free.componentdock.com>).
+> Do not scaffold `apps/oathsworn`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-oathmark/spec.md`.
 
 ## Purpose
 

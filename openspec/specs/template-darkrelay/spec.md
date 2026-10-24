@@ -1,4 +1,9 @@
 # Template: DarkRelay (Dark Contact Form)
+<!-- prep-status: shipped-as=formrise -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-07` design this prep describes already
+> ships as `apps/formrise` (<https://formrise.free.componentdock.com>).
+> Do not scaffold `apps/darkrelay`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formrise/spec.md`.
 
 ## Purpose
 

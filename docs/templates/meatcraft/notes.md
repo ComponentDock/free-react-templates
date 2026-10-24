@@ -1,4 +1,9 @@
 # Meatcraft — Implementation Notes
+<!-- prep-status: shipped-as=carnivor -->
+> **SHIPPED-UNDER** — the ColorLib `steakshop` design this prep describes already
+> ships as `apps/carnivor` (<https://carnivor.free.componentdock.com>).
+> Do not scaffold `apps/meatcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carnivor/spec.md`.
 
 Source: ColorLib SteakShop (https://colorlib.com/wp/template/steakshop/)
 

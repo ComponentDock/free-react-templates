@@ -1,4 +1,9 @@
 # Template: Snapshot (Photographer Portfolio)
+<!-- prep-status: shipped-as=optic -->
+> **SHIPPED-UNDER** — the ColorLib `credo` design this prep describes already
+> ships as `apps/optic` (<https://optic.free.componentdock.com>).
+> Do not scaffold `apps/snapshot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optic/spec.md`.
 
 ## Purpose
 

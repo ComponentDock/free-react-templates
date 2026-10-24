@@ -1,4 +1,9 @@
 # Template: Marigold (Personal Portfolio)
+<!-- prep-status: shipped-as=clearpoint -->
+> **SHIPPED-UNDER** — the ColorLib `schmidt` design this prep describes already
+> ships as `apps/clearpoint` (<https://clearpoint.free.componentdock.com>).
+> Do not scaffold `apps/marigold`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-clearpoint/spec.md`.
 
 ## Purpose
 

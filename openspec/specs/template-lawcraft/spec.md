@@ -1,4 +1,9 @@
 # Template: Lawcraft (Law Firm Landing Page)
+<!-- prep-status: shipped-as=lawscape -->
+> **SHIPPED-UNDER** — the ColorLib `lawride` design this prep describes already
+> ships as `apps/lawscape` (<https://lawscape.free.componentdock.com>).
+> Do not scaffold `apps/lawcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lawscape/spec.md`.
 
 ## Purpose
 

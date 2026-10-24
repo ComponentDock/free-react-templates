@@ -1,4 +1,9 @@
 # Template: Kindheart (Charity / Nonprofit Template)
+<!-- prep-status: shipped-as=heartward -->
+> **SHIPPED-UNDER** — the ColorLib `charilife` design this prep describes already
+> ships as `apps/heartward` (<https://heartward.free.componentdock.com>).
+> Do not scaffold `apps/kindheart`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-heartward/spec.md`.
 
 ## Purpose
 

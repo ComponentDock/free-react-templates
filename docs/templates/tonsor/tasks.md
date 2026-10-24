@@ -1,4 +1,9 @@
 # Tonsor (ColorLib Barcut) — Tasks & Design Notes
+<!-- prep-status: shipped-as=dapper -->
+> **SHIPPED-UNDER** — the ColorLib `barcut` design this prep describes already
+> ships as `apps/dapper` (<https://dapper.free.componentdock.com>).
+> Do not scaffold `apps/tonsor`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dapper/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-tonsor` by an implementer stream.

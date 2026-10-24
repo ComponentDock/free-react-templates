@@ -1,6 +1,11 @@
 > **Prep status (re-verified 2026-10-13):** this spec's file content was a `git show` dump (commit header + unified diff) instead of the spec — written by `9ad976e44`, which restored the prep after the implementer bookkeeping commit deleted it. The real blob is restored here from `198bdf11d`; the Skater design shipped as `apps/ollie`.
 
 # Template: Kickflip (Skateboarding / Personal)
+<!-- prep-status: shipped-as=cruiser -->
+> **SHIPPED-UNDER** — the ColorLib `skater` design this prep describes already
+> ships as `apps/cruiser` (<https://cruiser.free.componentdock.com>).
+> Do not scaffold `apps/kickflip`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cruiser/spec.md`.
 
 ## Purpose
 

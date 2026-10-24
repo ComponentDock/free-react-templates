@@ -1,4 +1,9 @@
 # Template: Pixelist (Creative)
+<!-- prep-status: shipped-as=redawn -->
+> **SHIPPED-UNDER** — the ColorLib `rea` design this prep describes already
+> ships as `apps/redawn` (<https://redawn.free.componentdock.com>).
+> Do not scaffold `apps/pixelist`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-redawn/spec.md`.
 
 ## Purpose
 

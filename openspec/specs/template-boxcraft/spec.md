@@ -1,4 +1,9 @@
 # Template: BoxCraft (Creative Agency)
+<!-- prep-status: shipped-as=boxpulse -->
+> **SHIPPED-UNDER** — the ColorLib `boxus` design this prep describes already
+> ships as `apps/boxpulse` (<https://boxpulse.free.componentdock.com>).
+> Do not scaffold `apps/boxcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-boxpulse/spec.md`.
 
 ## Purpose
 

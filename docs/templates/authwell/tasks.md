@@ -1,4 +1,9 @@
 # AuthWell — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=entrivy -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-07` design this prep describes already
+> ships as `apps/entrivy` (<https://entrivy.free.componentdock.com>).
+> Do not scaffold `apps/authwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-entrivy/spec.md`.
 
 Source: ColorLib Login Form V07 (`login-form-07`)
 Preview: `https://preview.colorlib.com/theme/bootstrap/login-form-07/`

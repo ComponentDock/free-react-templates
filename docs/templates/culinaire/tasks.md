@@ -1,4 +1,9 @@
 # Culinaire — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=ravida -->
+> **SHIPPED-UNDER** — the ColorLib `buri` design this prep describes already
+> ships as `apps/ravida` (<https://ravida.free.componentdock.com>).
+> Do not scaffold `apps/culinaire`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ravida/spec.md`.
 
 Source: ColorLib "Buri" (https://colorlib.com/wp/template/buri/)
 Preview: https://preview.colorlib.com/theme/buri/

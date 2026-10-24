@@ -1,4 +1,9 @@
 # Template: Trailcraft (Travel Template)
+<!-- prep-status: shipped-as=trailquest -->
+> **SHIPPED-UNDER** — the ColorLib `adventure-2` design this prep describes already
+> ships as `apps/trailquest` (<https://trailquest.free.componentdock.com>).
+> Do not scaffold `apps/trailcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-trailquest/spec.md`.
 
 ## Purpose
 

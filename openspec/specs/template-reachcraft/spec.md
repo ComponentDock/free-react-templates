@@ -1,4 +1,9 @@
 # Template: Reachcraft (Contact Form)
+<!-- prep-status: shipped-as=linewell -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v15` design this prep describes already
+> ships as `apps/linewell` (<https://linewell.free.componentdock.com>).
+> Do not scaffold `apps/reachcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-linewell/spec.md`.
 
 ## Purpose
 

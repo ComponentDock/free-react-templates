@@ -1,4 +1,9 @@
 # Template: Torch (404 Error Page — Dark Amber Glow)
+<!-- prep-status: shipped-as=glow -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-error-404-8` design this prep describes already
+> ships as `apps/glow` (<https://glow.free.componentdock.com>).
+> Do not scaffold `apps/torch`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-glow/spec.md`.
 
 ## Purpose
 

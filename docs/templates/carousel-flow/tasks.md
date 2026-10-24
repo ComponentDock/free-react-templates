@@ -1,4 +1,9 @@
 # CarouselFlow (Carousel 12) — Implementation Outline & Design Notes
+<!-- prep-status: shipped-as=slidesync -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-12` design this prep describes already
+> ships as `apps/slidesync` (<https://slidesync.free.componentdock.com>).
+> Do not scaffold `apps/carousel-flow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-slidesync/spec.md`.
 
 ## Overview
 

@@ -1,4 +1,9 @@
 # Template: Searchdrop (Search Form Bar)
+<!-- prep-status: shipped-as=queryvane -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-17` design this prep describes already
+> ships as `apps/queryvane` (<https://queryvane.free.componentdock.com>).
+> Do not scaffold `apps/searchdrop`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-queryvane/spec.md`.
 
 ## Purpose
 

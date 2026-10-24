@@ -1,4 +1,9 @@
 # Cascade — Design Notes & Task Outline
+<!-- prep-status: shipped-as=pings -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-15` design this prep describes already
+> ships as `apps/pings` (<https://pings.free.componentdock.com>).
+> Do not scaffold `apps/cascade`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pings/spec.md`.
 
 **Source:** ColorLib Dropdown V15
 **Preview:** https://preview.colorlib.com/theme/bootstrap/dropdown-15/

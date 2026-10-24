@@ -1,4 +1,9 @@
 # Bumble — Template Implementation Notes
+<!-- prep-status: shipped-as=nectar -->
+> **SHIPPED-UNDER** — the ColorLib `bee` design this prep describes already
+> ships as `apps/nectar` (<https://nectar.free.componentdock.com>).
+> Do not scaffold `apps/bumble`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nectar/spec.md`.
 
 **Source:** ColorLib Bee → https://preview.colorlib.com/theme/bee/
 **New name:** bumble

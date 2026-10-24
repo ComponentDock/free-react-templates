@@ -1,4 +1,9 @@
 # Grinwell (ColorLib Dentures) — Tasks & Design Notes
+<!-- prep-status: shipped-as=molars -->
+> **SHIPPED-UNDER** — the ColorLib `dentures` design this prep describes already
+> ships as `apps/molars` (<https://molars.free.componentdock.com>).
+> Do not scaffold `apps/grinwell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-molars/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-grinwell`. Recreation name: **Grinwell** (NEW name —

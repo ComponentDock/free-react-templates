@@ -1,4 +1,9 @@
 # Novelist (ColorLib Mellisa) — Tasks & Design Notes
+<!-- prep-status: shipped-as=folio -->
+> **SHIPPED-UNDER** — the ColorLib `mellisa` design this prep describes already
+> ships as `apps/folio` (<https://folio.free.componentdock.com>).
+> Do not scaffold `apps/novelist`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-folio/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-novelist`.

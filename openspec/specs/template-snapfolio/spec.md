@@ -1,4 +1,9 @@
 # Template: Snapfolio (Gallery)
+<!-- prep-status: shipped-as=galleryvue -->
+> **SHIPPED-UNDER** — the ColorLib `capture` design this prep describes already
+> ships as `apps/galleryvue` (<https://galleryvue.free.componentdock.com>).
+> Do not scaffold `apps/snapfolio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-galleryvue/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Pitmaster — Prep Notes
+<!-- prep-status: shipped-as=carnivor -->
+> **SHIPPED-UNDER** — the ColorLib `steakshop` design this prep describes already
+> ships as `apps/carnivor` (<https://carnivor.free.componentdock.com>).
+> Do not scaffold `apps/pitmaster`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carnivor/spec.md`.
 
 ## Source
 - ColorLib: Steakshop (https://colorlib.com/wp/template/steakshop/)

@@ -1,4 +1,9 @@
 # Template: Commune (Co-Working Space)
+<!-- prep-status: shipped-as=workhive -->
+> **SHIPPED-UNDER** — the ColorLib `sharespace` design this prep describes already
+> ships as `apps/workhive` (<https://workhive.free.componentdock.com>).
+> Do not scaffold `apps/commune`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-workhive/spec.md`.
 
 ## Purpose
 

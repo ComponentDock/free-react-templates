@@ -1,4 +1,9 @@
 # Oathsworn (ColorLib Notary) — Tasks & Design Notes
+<!-- prep-status: shipped-as=oathmark -->
+> **SHIPPED-UNDER** — the ColorLib `notary` design this prep describes already
+> ships as `apps/oathmark` (<https://oathmark.free.componentdock.com>).
+> Do not scaffold `apps/oathsworn`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-oathmark/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-oathsworn`. Recreation name: **Oathsworn** (NEW name

@@ -1,4 +1,9 @@
 # Respawn (ColorLib Amin) — Tasks & Design Notes
+<!-- prep-status: shipped-as=fragstorm -->
+> **SHIPPED-UNDER** — the ColorLib `amin` design this prep describes already
+> ships as `apps/fragstorm` (<https://fragstorm.free.componentdock.com>).
+> Do not scaffold `apps/respawn`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fragstorm/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-respawn`. Recreation name: **Respawn** (NEW name —

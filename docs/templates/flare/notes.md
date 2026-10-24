@@ -1,4 +1,9 @@
 # Flare — Implementation Notes
+<!-- prep-status: shipped-as=luma -->
+> **SHIPPED-UNDER** — the ColorLib `photon` design this prep describes already
+> ships as `apps/luma` (<https://luma.free.componentdock.com>).
+> Do not scaffold `apps/flare`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-luma/spec.md`.
 
 Source: ColorLib Photon (https://preview.colorlib.com/theme/photon/)
 New name: Flare

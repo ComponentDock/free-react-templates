@@ -1,4 +1,9 @@
 # Template: Hearthside (Restaurant)
+<!-- prep-status: shipped-as=tavern -->
+> **SHIPPED-UNDER** — the ColorLib `eatery` design this prep describes already
+> ships as `apps/tavern` (<https://tavern.free.componentdock.com>).
+> Do not scaffold `apps/hearthside`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tavern/spec.md`.
 
 ## Purpose
 

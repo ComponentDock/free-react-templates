@@ -1,4 +1,9 @@
 # Template: Marquee (Navigation Menu Dropdown)
+<!-- prep-status: shipped-as=dropvex -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-08` design this prep describes already
+> ships as `apps/dropvex` (<https://dropvex.free.componentdock.com>).
+> Do not scaffold `apps/marquee`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropvex/spec.md`.
 
 ## Purpose
 

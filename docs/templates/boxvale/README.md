@@ -1,4 +1,9 @@
 # Boxvale — Design Notes & Implementation Todo
+<!-- prep-status: shipped-as=boxpulse -->
+> **SHIPPED-UNDER** — the ColorLib `boxus` design this prep describes already
+> ships as `apps/boxpulse` (<https://boxpulse.free.componentdock.com>).
+> Do not scaffold `apps/boxvale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-boxpulse/spec.md`.
 
 **Source:** ColorLib Boxus (https://colorlib.com/wp/template/boxus/)
 **Preview:** https://preview.colorlib.com/theme/boxus/

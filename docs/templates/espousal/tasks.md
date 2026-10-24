@@ -1,4 +1,9 @@
 # Espousal (ColorLib Hookup) — Tasks & Design Notes
+<!-- prep-status: shipped-as=nuptial -->
+> **SHIPPED-UNDER** — the ColorLib `hookup` design this prep describes already
+> ships as `apps/nuptial` (<https://nuptial.free.componentdock.com>).
+> Do not scaffold `apps/espousal`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nuptial/spec.md`.
 
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-espousal`.

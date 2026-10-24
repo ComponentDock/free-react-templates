@@ -1,4 +1,9 @@
 # Template: Daybeam (Portfolio)
+<!-- prep-status: shipped-as=daybreak -->
+> **SHIPPED-UNDER** — the ColorLib `sun` design this prep describes already
+> ships as `apps/daybreak` (<https://daybreak.free.componentdock.com>).
+> Do not scaffold `apps/daybeam`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-daybreak/spec.md`.
 
 ## Purpose
 

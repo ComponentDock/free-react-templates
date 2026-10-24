@@ -1,4 +1,9 @@
 # Template: RegNoir (Event Registration Form)
+<!-- prep-status: shipped-as=regpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-3` design this prep describes already
+> ships as `apps/regpad` (<https://regpad.free.componentdock.com>).
+> Do not scaffold `apps/regnoir`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regpad/spec.md`.
 
 ## Purpose
 

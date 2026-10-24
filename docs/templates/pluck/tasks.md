@@ -1,4 +1,9 @@
 # Pluck (ColorLib Multiselect 08) — Tasks & Design Notes
+<!-- prep-status: shipped-as=optbundle -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-08` design this prep describes already
+> ships as `apps/optbundle` (<https://optbundle.free.componentdock.com>).
+> Do not scaffold `apps/pluck`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optbundle/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Pluck** (NEW name —
 > the ColorLib source keeps its name "Multiselect 08"). Implementation ships

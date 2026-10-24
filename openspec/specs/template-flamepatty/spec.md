@@ -1,4 +1,9 @@
 # Template: Flamepatty (Restaurant/Burger)
+<!-- prep-status: shipped-as=griddle -->
+> **SHIPPED-UNDER** — the ColorLib `burger` design this prep describes already
+> ships as `apps/griddle` (<https://griddle.free.componentdock.com>).
+> Do not scaffold `apps/flamepatty`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-griddle/spec.md`.
 
 ## Purpose
 

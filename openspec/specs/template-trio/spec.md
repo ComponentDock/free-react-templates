@@ -1,4 +1,9 @@
 # Template: Trio (Bootstrap Checkbox States Demo — Round Variant)
+<!-- prep-status: shipped-as=coralbit -->
+> **SHIPPED-UNDER** — the ColorLib `checkbox-13` design this prep describes already
+> ships as `apps/coralbit` (<https://coralbit.free.componentdock.com>).
+> Do not scaffold `apps/trio`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-coralbit/spec.md`.
 
 ## Purpose
 

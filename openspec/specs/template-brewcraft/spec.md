@@ -1,4 +1,9 @@
 # Template: Brewcraft (Coffee Shop)
+<!-- prep-status: shipped-as=perk -->
+> **SHIPPED-UNDER** — the ColorLib `coffee` design this prep describes already
+> ships as `apps/perk` (<https://perk.free.componentdock.com>).
+> Do not scaffold `apps/brewcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-perk/spec.md`.
 
 ## Purpose
 

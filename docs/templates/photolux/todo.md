@@ -1,4 +1,9 @@
 # PhotoLux — Implementation Notes
+<!-- prep-status: shipped-as=optic -->
+> **SHIPPED-UNDER** — the ColorLib `credo` design this prep describes already
+> ships as `apps/optic` (<https://optic.free.componentdock.com>).
+> Do not scaffold `apps/photolux`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optic/spec.md`.
 
 Source: ColorLib Credo (https://colorlib.com/wp/template/credo/)
 Preview: https://preview.colorlib.com/theme/credo/

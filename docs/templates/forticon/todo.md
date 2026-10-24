@@ -1,4 +1,9 @@
 # Forticon — Task Outline & Design Notes
+<!-- prep-status: shipped-as=sitecraft -->
+> **SHIPPED-UNDER** — the ColorLib `complex` design this prep describes already
+> ships as `apps/sitecraft` (<https://sitecraft.free.componentdock.com>).
+> Do not scaffold `apps/forticon`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sitecraft/spec.md`.
 
 ## Source
 - **ColorLib template:** Complex

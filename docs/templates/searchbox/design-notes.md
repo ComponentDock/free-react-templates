@@ -1,4 +1,9 @@
 # Searchbox — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=searchpeak -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-7` design this prep describes already
+> ships as `apps/searchpeak` (<https://searchpeak.free.componentdock.com>).
+> Do not scaffold `apps/searchbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-searchpeak/spec.md`.
 
 Source: ColorLib Search Form V7
 Preview: https://colorlib.com/etc/searchf/colorlib-search-7/

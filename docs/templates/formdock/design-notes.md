@@ -1,4 +1,9 @@
 # Formdock — Design Notes & Task Outline
+<!-- prep-status: shipped-as=touchback -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-12` design this prep describes already
+> ships as `apps/touchback` (<https://touchback.free.componentdock.com>).
+> Do not scaffold `apps/formdock`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-touchback/spec.md`.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

@@ -1,4 +1,9 @@
 # Template: Gustoso (Restaurant / Fine Dining)
+<!-- prep-status: shipped-as=flavor -->
+> **SHIPPED-UNDER** — the ColorLib `luto` design this prep describes already
+> ships as `apps/flavor` (<https://flavor.free.componentdock.com>).
+> Do not scaffold `apps/gustoso`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flavor/spec.md`.
 
 ## Purpose
 

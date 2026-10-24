@@ -1,4 +1,9 @@
 # Strategos — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=stratagem -->
+> **SHIPPED-UNDER** — the ColorLib `conbusi` design this prep describes already
+> ships as `apps/stratagem` (<https://stratagem.free.componentdock.com>).
+> Do not scaffold `apps/strategos`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stratagem/spec.md`.
 
 Source: ColorLib "Conbusi" (slug: conbusi)
 Preview: https://preview.colorlib.com/theme/conbusi/

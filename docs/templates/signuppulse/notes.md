@@ -1,4 +1,9 @@
 # SignupPulse — Implementation Notes
+<!-- prep-status: shipped-as=signuplink -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-09` design this prep describes already
+> ships as `apps/signuplink` (<https://signuplink.free.componentdock.com>).
+> Do not scaffold `apps/signuppulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signuplink/spec.md`.
 
 ## Source
 - ColorLib slug: `signup-form-09`

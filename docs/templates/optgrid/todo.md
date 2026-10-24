@@ -1,4 +1,9 @@
 # OptGrid — Implementation Notes
+<!-- prep-status: shipped-as=optflow -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-20` design this prep describes already
+> ships as `apps/optflow` (<https://optflow.free.componentdock.com>).
+> Do not scaffold `apps/optgrid`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optflow/spec.md`.
 
 **Source:** ColorLib Multiselect 20
 **Preview:** https://preview.colorlib.com/theme/bootstrap/multiselect-20/

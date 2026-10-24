@@ -1,4 +1,9 @@
 # Gilt (ColorLib Royal) — Tasks & Design Notes
+<!-- prep-status: shipped-as=hostelry -->
+> **SHIPPED-UNDER** — the ColorLib `royal` design this prep describes already
+> ships as `apps/hostelry` (<https://hostelry.free.componentdock.com>).
+> Do not scaffold `apps/gilt`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hostelry/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Gilt** (NEW name
 > — the ColorLib source keeps its name "Royal" / "Royal Hotel").

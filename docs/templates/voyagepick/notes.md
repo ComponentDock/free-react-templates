@@ -1,4 +1,9 @@
 # Voyagepick — Implementation Notes
+<!-- prep-status: shipped-as=spotly -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-16` design this prep describes already
+> ships as `apps/spotly` (<https://spotly.free.componentdock.com>).
+> Do not scaffold `apps/voyagepick`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-spotly/spec.md`.
 
 ## Source
 - ColorLib template: Search Form V16 (`colorlib-search-16`)

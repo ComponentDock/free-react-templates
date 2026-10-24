@@ -1,4 +1,9 @@
 # Template: Husk (Multiselect Dropdown)
+<!-- prep-status: shipped-as=selkit -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-16` design this prep describes already
+> ships as `apps/selkit` (<https://selkit.free.componentdock.com>).
+> Do not scaffold `apps/husk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-selkit/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Teaser (ColorLib 08 Comming Soon) — Tasks & Design Notes
+<!-- prep-status: shipped-as=horizon -->
+> **SHIPPED-UNDER** — the ColorLib `08-comming-soon` design this prep describes already
+> ships as `apps/horizon` (<https://horizon.free.componentdock.com>).
+> Do not scaffold `apps/teaser`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-horizon/spec.md`.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

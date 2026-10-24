@@ -1,4 +1,9 @@
 # Ingot (ColorLib Industrial) — Tasks & Design Notes
+<!-- prep-status: shipped-as=metalwork -->
+> **SHIPPED-UNDER** — the ColorLib `industrial` design this prep describes already
+> ships as `apps/metalwork` (<https://metalwork.free.componentdock.com>).
+> Do not scaffold `apps/ingot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-metalwork/spec.md`.
 
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-ingot`.

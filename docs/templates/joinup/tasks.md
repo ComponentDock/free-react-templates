@@ -1,4 +1,9 @@
 # Joinup (ColorLib Signup Form 05) — Tasks & Design Notes
+<!-- prep-status: shipped-as=signupcraft -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-05` design this prep describes already
+> ships as `apps/signupcraft` (<https://signupcraft.free.componentdock.com>).
+> Do not scaffold `apps/joinup`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-signupcraft/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-joinup`. Recreation name: **Joinup** (NEW name —

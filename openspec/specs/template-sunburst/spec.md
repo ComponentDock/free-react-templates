@@ -1,4 +1,9 @@
 # Template: SunBurst (Ecommerce / Fashion Shop)
+<!-- prep-status: shipped-as=mercato -->
+> **SHIPPED-UNDER** — the ColorLib `karma` design this prep describes already
+> ships as `apps/mercato` (<https://mercato.free.componentdock.com>).
+> Do not scaffold `apps/sunburst`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mercato/spec.md`.
 
 ## Purpose
 

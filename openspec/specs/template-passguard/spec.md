@@ -1,4 +1,9 @@
 # PassGuard — Login Form Template Spec
+<!-- prep-status: shipped-as=gatepass -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-05` design this prep describes already
+> ships as `apps/gatepass` (<https://gatepass.free.componentdock.com>).
+> Do not scaffold `apps/passguard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gatepass/spec.md`.
 
 ## Purpose
 

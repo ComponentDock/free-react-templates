@@ -1,4 +1,9 @@
 # Template: Curator (Creative Portfolio Grid)
+<!-- prep-status: shipped-as=gallery -->
+> **SHIPPED-UNDER** — the ColorLib `reopen` design this prep describes already
+> ships as `apps/gallery` (<https://gallery.free.componentdock.com>).
+> Do not scaffold `apps/curator`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gallery/spec.md`.
 
 ## Purpose
 

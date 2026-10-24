@@ -1,4 +1,9 @@
 # Scribe (ColorLib Moose) — Tasks & Design Notes
+<!-- prep-status: shipped-as=antler -->
+> **SHIPPED-UNDER** — the ColorLib `moose` design this prep describes already
+> ships as `apps/antler` (<https://antler.free.componentdock.com>).
+> Do not scaffold `apps/scribe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-antler/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-scribe`.

@@ -1,4 +1,9 @@
 # Template: Opus (Music Band)
+<!-- prep-status: shipped-as=melodica -->
+> **SHIPPED-UNDER** — the ColorLib `music-2` design this prep describes already
+> ships as `apps/melodica` (<https://melodica.free.componentdock.com>).
+> Do not scaffold `apps/opus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-melodica/spec.md`.
 
 ## Purpose
 

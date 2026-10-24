@@ -1,4 +1,9 @@
 # Modelo (Colorlib Modelo) — Tasks & Design Notes
+<!-- prep-status: shipped-as=allure -->
+> **SHIPPED-UNDER** — the ColorLib `modelo` design this prep describes already
+> ships as `apps/allure` (<https://allure.free.componentdock.com>).
+> Do not scaffold `apps/modelo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-allure/spec.md`.
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
 > Implementation ships later on `feat/template-modelo`.

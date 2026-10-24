@@ -1,4 +1,9 @@
 # Signhook (ColorLib Login Form 04) — Tasks & Design Notes
+<!-- prep-status: shipped-as=passgate -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-04` design this prep describes already
+> ships as `apps/passgate` (<https://passgate.free.componentdock.com>).
+> Do not scaffold `apps/signhook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-passgate/spec.md`.
 
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**

@@ -1,4 +1,9 @@
 # Template: Dateline (News & Magazine Template)
+<!-- prep-status: shipped-as=bulletin -->
+> **SHIPPED-UNDER** — the ColorLib `newsflex` design this prep describes already
+> ships as `apps/bulletin` (<https://bulletin.free.componentdock.com>).
+> Do not scaffold `apps/dateline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bulletin/spec.md`.
 
 ## Purpose
 

@@ -1,6 +1,11 @@
 > **Prep status (re-verified 2026-10-13):** this file was a `git show` dump instead of the todo list; the real blob is restored from `198bdf11d`.
 
 # Kickflip — Implementation Notes
+<!-- prep-status: shipped-as=cruiser -->
+> **SHIPPED-UNDER** — the ColorLib `skater` design this prep describes already
+> ships as `apps/cruiser` (<https://cruiser.free.componentdock.com>).
+> Do not scaffold `apps/kickflip`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cruiser/spec.md`.
 
 Source: ColorLib Skater (https://preview.colorlib.com/theme/skater/)
 New name: kickflip

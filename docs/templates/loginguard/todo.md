@@ -1,4 +1,9 @@
 # LoginGuard — Implementation Notes
+<!-- prep-status: shipped-as=accessway -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-19` design this prep describes already
+> ships as `apps/accessway` (<https://accessway.free.componentdock.com>).
+> Do not scaffold `apps/loginguard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-accessway/spec.md`.
 
 ## Source
 

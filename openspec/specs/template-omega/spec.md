@@ -1,4 +1,9 @@
 # Template: Omega (Footer)
+<!-- prep-status: shipped-as=topaz -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-14` design this prep describes already
+> ships as `apps/topaz` (<https://topaz.free.componentdock.com>).
+> Do not scaffold `apps/omega`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-topaz/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Scholium (ColorLib Onlineedu) — Tasks & Design Notes
+<!-- prep-status: shipped-as=orenda -->
+> **SHIPPED-UNDER** — the ColorLib `onlineedu` design this prep describes already
+> ships as `apps/orenda` (<https://orenda.free.componentdock.com>).
+> Do not scaffold `apps/scholium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-orenda/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-scholium/` is the claim marker —

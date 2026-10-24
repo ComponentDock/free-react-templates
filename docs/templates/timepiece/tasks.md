@@ -1,4 +1,9 @@
 # Timepiece (ColorLib Watch) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bezel -->
+> **SHIPPED-UNDER** — the ColorLib `watch` design this prep describes already
+> ships as `apps/bezel` (<https://bezel.free.componentdock.com>).
+> Do not scaffold `apps/timepiece`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bezel/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-timepiece`. Recreation name: **Timepiece** (NEW name —

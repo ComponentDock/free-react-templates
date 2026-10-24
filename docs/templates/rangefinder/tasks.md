@@ -1,4 +1,9 @@
 # Rangefinder (ColorLib Photographer) — Tasks & Design Notes
+<!-- prep-status: shipped-as=photofolio -->
+> **SHIPPED-UNDER** — the ColorLib `photographer` design this prep describes already
+> ships as `apps/photofolio` (<https://photofolio.free.componentdock.com>).
+> Do not scaffold `apps/rangefinder`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-photofolio/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Rangefinder** (NEW
 > name — the ColorLib source keeps its name "Photographer"). Implementation

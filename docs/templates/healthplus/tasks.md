@@ -1,4 +1,9 @@
 # HealthPlus (ColorLib Health) — Tasks & Design Notes
+<!-- prep-status: shipped-as=vitaheal -->
+> **SHIPPED-UNDER** — the ColorLib `health` design this prep describes already
+> ships as `apps/vitaheal` (<https://vitaheal.free.componentdock.com>).
+> Do not scaffold `apps/healthplus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vitaheal/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-healthplus`. Recreation name: **HealthPlus** (NEW

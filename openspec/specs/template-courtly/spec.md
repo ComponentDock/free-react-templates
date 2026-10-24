@@ -1,4 +1,9 @@
 # Template: Courtly (Law Firm / Legal)
+<!-- prep-status: shipped-as=briefly -->
+> **SHIPPED-UNDER** — the ColorLib `lawful` design this prep describes already
+> ships as `apps/briefly` (<https://briefly.free.componentdock.com>).
+> Do not scaffold `apps/courtly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-briefly/spec.md`.
 
 ## Purpose
 

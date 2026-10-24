@@ -1,4 +1,9 @@
 # Quorly (ColorLib Accordion 17) — Tasks & Design Notes
+<!-- prep-status: shipped-as=crank -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-17` design this prep describes already
+> ships as `apps/crank` (<https://crank.free.componentdock.com>).
+> Do not scaffold `apps/quorly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crank/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Quorly** (NEW name —
 > the ColorLib source keeps its name "Accordion 17"). Implementation ships on

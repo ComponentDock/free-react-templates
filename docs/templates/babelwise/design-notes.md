@@ -1,4 +1,9 @@
 # BabelWise — Design Notes
+<!-- prep-status: shipped-as=lingo -->
+> **SHIPPED-UNDER** — the ColorLib `lingua` design this prep describes already
+> ships as `apps/lingo` (<https://lingo.free.componentdock.com>).
+> Do not scaffold `apps/babelwise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lingo/spec.md`.
 
 ## Source
 - ColorLib: Lingua (https://colorlib.com/wp/template/lingua/)

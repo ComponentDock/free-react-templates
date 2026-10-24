@@ -1,4 +1,9 @@
 # Arcanum Tasks & Design Notes (ColorLib Wizard 26)
+<!-- prep-status: shipped-as=stepforge -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-26` design this prep describes already
+> ships as `apps/stepforge` (<https://stepforge.free.componentdock.com>).
+> Do not scaffold `apps/arcanum`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stepforge/spec.md`.
 
 ## Source
 

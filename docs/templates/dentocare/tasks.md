@@ -1,4 +1,9 @@
 # Dentocare Task Outline & Design Notes
+<!-- prep-status: shipped-as=odonto -->
+> **SHIPPED-UNDER** — the ColorLib `toothcare` design this prep describes already
+> ships as `apps/odonto` (<https://odonto.free.componentdock.com>).
+> Do not scaffold `apps/dentocare`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-odonto/spec.md`.
 
 ## Source Reference
 

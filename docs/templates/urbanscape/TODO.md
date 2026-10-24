@@ -1,4 +1,9 @@
 # Urbanscape — Implementation TODO
+<!-- prep-status: shipped-as=townhub -->
+> **SHIPPED-UNDER** — the ColorLib `citylisting` design this prep describes already
+> ships as `apps/townhub` (<https://townhub.free.componentdock.com>).
+> Do not scaffold `apps/urbanscape`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-townhub/spec.md`.
 
 Source: ColorLib CityListing (https://colorlib.com/wp/template/citylisting/)
 Preview: https://preview.colorlib.com/theme/citylisting/

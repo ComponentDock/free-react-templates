@@ -1,4 +1,9 @@
 # Charm (Colorlib Wizard 6) — Tasks & Design Notes
+<!-- prep-status: shipped-as=runic -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-6` design this prep describes already
+> ships as `apps/runic` (<https://runic.free.componentdock.com>).
+> Do not scaffold `apps/charm`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-runic/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-charm`. Recreation name: **Charm** (NEW name —

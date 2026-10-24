@@ -1,4 +1,9 @@
 # Unwrap (ColorLib Unfold) — Tasks & Design Notes
+<!-- prep-status: shipped-as=reveal -->
+> **SHIPPED-UNDER** — the ColorLib `unfold` design this prep describes already
+> ships as `apps/reveal` (<https://reveal.free.componentdock.com>).
+> Do not scaffold `apps/unwrap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reveal/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-unwrap`. Recreation name: **Unwrap** (NEW name —

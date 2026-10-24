@@ -1,4 +1,9 @@
 # Template: Vespera (Hotel / Luxury Resort)
+<!-- prep-status: shipped-as=belmont -->
+> **SHIPPED-UNDER** — the ColorLib `samira` design this prep describes already
+> ships as `apps/belmont` (<https://belmont.free.componentdock.com>).
+> Do not scaffold `apps/vespera`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-belmont/spec.md`.
 
 ## Purpose
 

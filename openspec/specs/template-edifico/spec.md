@@ -1,4 +1,9 @@
 # Template: Edifico (Construction Company Landing)
+<!-- prep-status: shipped-as=crane -->
+> **SHIPPED-UNDER** — the ColorLib `constructo` design this prep describes already
+> ships as `apps/crane` (<https://crane.free.componentdock.com>).
+> Do not scaffold `apps/edifico`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crane/spec.md`.
 
 ## Purpose
 

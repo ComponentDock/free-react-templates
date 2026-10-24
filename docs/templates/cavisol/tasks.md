@@ -1,4 +1,9 @@
 # Tasks: Cavisol (Dental Clinic Template)
+<!-- prep-status: shipped-as=dentalink -->
+> **SHIPPED-UNDER** — the ColorLib `dentist` design this prep describes already
+> ships as `apps/dentalink` (<https://dentalink.free.componentdock.com>).
+> Do not scaffold `apps/cavisol`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dentalink/spec.md`.
 
 ## Phase 1: Setup & Scaffold
 

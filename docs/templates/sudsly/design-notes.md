@@ -1,4 +1,9 @@
 # Sudsly — Design Notes & Task Outline
+<!-- prep-status: shipped-as=washbox -->
+> **SHIPPED-UNDER** — the ColorLib `carwash` design this prep describes already
+> ships as `apps/washbox` (<https://washbox.free.componentdock.com>).
+> Do not scaffold `apps/sudsly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-washbox/spec.md`.
 
 Source: ColorLib "Carwash" (https://colorlib.com/wp/template/carwash/)
 Preview: https://preview.colorlib.com/theme/carwash/

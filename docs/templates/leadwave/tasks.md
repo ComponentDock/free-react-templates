@@ -1,4 +1,9 @@
 # Leadwave (ColorLib "Ultim8") — Tasks & Design Notes
+<!-- prep-status: shipped-as=prime -->
+> **SHIPPED-UNDER** — the ColorLib `ultim8` design this prep describes already
+> ships as `apps/prime` (<https://prime.free.componentdock.com>).
+> Do not scaffold `apps/leadwave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-prime/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-leadwave` by an implementer stream.

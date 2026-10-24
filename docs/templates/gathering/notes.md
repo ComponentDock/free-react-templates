@@ -1,4 +1,9 @@
 # Gathering — Design & Structure Notes
+<!-- prep-status: shipped-as=lineup -->
+> **SHIPPED-UNDER** — the ColorLib `agenda` design this prep describes already
+> ships as `apps/lineup` (<https://lineup.free.componentdock.com>).
+> Do not scaffold `apps/gathering`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lineup/spec.md`.
 
 Source: ColorLib Agenda (https://colorlib.com/wp/template/agenda/)
 Preview: https://preview.colorlib.com/theme/agenda/

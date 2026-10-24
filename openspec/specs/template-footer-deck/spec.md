@@ -1,4 +1,9 @@
 # Template: FooterDeck (Footer)
+<!-- prep-status: shipped-as=rosenook -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-13` design this prep describes already
+> ships as `apps/rosenook` (<https://rosenook.free.componentdock.com>).
+> Do not scaffold `apps/footer-deck`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rosenook/spec.md`.
 
 ## Purpose
 

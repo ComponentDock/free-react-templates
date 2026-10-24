@@ -1,4 +1,9 @@
 # Btnglow Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=btnridge -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-12` design this prep describes already
+> ships as `apps/btnridge` (<https://btnridge.free.componentdock.com>).
+> Do not scaffold `apps/btnglow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnridge/spec.md`.
 
 - **Source**: ColorLib Bootstrap Buttons V12 (`https://colorlib.com/wp/template/bootstrap-buttons-12/`)
 - **New Name**: `btnglow` (`apps/btnglow`)

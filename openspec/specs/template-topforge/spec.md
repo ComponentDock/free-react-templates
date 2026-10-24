@@ -1,4 +1,9 @@
 # Template: TopForge (Construction Company)
+<!-- prep-status: shipped-as=constructo -->
+> **SHIPPED-UNDER** — the ColorLib `topbuilder` design this prep describes already
+> ships as `apps/constructo` (<https://constructo.free.componentdock.com>).
+> Do not scaffold `apps/topforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-constructo/spec.md`.
 
 ## Purpose
 

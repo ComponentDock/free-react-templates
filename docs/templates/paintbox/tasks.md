@@ -1,4 +1,9 @@
 # PaintBox — Implementation Notes
+<!-- prep-status: shipped-as=artful -->
+> **SHIPPED-UNDER** — the ColorLib `five-star` design this prep describes already
+> ships as `apps/artful` (<https://artful.free.componentdock.com>).
+> Do not scaffold `apps/paintbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-artful/spec.md`.
 
 ## Source
 - ColorLib: Five Star (https://colorlib.com/wp/template/five-star/)

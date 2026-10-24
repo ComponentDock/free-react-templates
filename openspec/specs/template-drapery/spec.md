@@ -1,4 +1,9 @@
 # Template: Drapery (Fashion Boutique)
+<!-- prep-status: shipped-as=bespoke -->
+> **SHIPPED-UNDER** — the ColorLib `fashion` design this prep describes already
+> ships as `apps/bespoke` (<https://bespoke.free.componentdock.com>).
+> Do not scaffold `apps/drapery`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bespoke/spec.md`.
 
 ## Purpose
 

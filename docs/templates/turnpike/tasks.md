@@ -1,4 +1,9 @@
 # Turnpike (ColorLib Car Rental) — Tasks & Design Notes
+<!-- prep-status: shipped-as=fleetly -->
+> **SHIPPED-UNDER** — the ColorLib `car-rental` design this prep describes already
+> ships as `apps/fleetly` (<https://fleetly.free.componentdock.com>).
+> Do not scaffold `apps/turnpike`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fleetly/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-turnpike`.

@@ -1,4 +1,9 @@
 # Template: Furnly (Furniture / Business — Bootstrap)
+<!-- prep-status: shipped-as=wainscot -->
+> **SHIPPED-UNDER** — the ColorLib `tangre` design this prep describes already
+> ships as `apps/wainscot` (<https://wainscot.free.componentdock.com>).
+> Do not scaffold `apps/furnly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wainscot/spec.md`.
 
 ## Purpose
 

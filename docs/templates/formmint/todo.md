@@ -1,4 +1,9 @@
 # Formmint — Implementation Todo
+<!-- prep-status: shipped-as=formzen -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-v10` design this prep describes already
+> ships as `apps/formzen` (<https://formzen.free.componentdock.com>).
+> Do not scaffold `apps/formmint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formzen/spec.md`.
 
 ## Pre-implementation
 - [x] Spec written: `openspec/specs/template-formmint/spec.md`

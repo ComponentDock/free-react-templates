@@ -1,4 +1,9 @@
 # EduSlot — Task Checklist
+<!-- prep-status: shipped-as=regwell -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-12` design this prep describes already
+> ships as `apps/regwell` (<https://regwell.free.componentdock.com>).
+> Do not scaffold `apps/eduslot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regwell/spec.md`.
 
 ## Pre-Implementation
 - [x] Spec written (openspec/specs/template-eduslot/spec.md)

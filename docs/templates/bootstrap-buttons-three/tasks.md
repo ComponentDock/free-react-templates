@@ -1,4 +1,9 @@
 # Bootstrap Buttons Three — Research & Tasks
+<!-- prep-status: shipped-as=btnstack -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-03` design this prep describes already
+> ships as `apps/btnstack` (<https://btnstack.free.componentdock.com>).
+> Do not scaffold `apps/bootstrap-buttons-three`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnstack/spec.md`.
 
 - **Source**: ColorLib Bootstrap Buttons 03 (https://colorlib.com/wp/template/bootstrap-buttons-03/)
 - **New Name**: `bootstrap-buttons-three`

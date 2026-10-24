@@ -1,4 +1,9 @@
 # Somersault (Carousel 01) — Implementation Plan & Tasks
+<!-- prep-status: shipped-as=revolve -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-01` design this prep describes already
+> ships as `apps/revolve` (<https://revolve.free.componentdock.com>).
+> Do not scaffold `apps/somersault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-revolve/spec.md`.
 
 ## Overview
 

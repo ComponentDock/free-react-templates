@@ -1,4 +1,9 @@
 # Template: PeekView (Bootstrap Modal / Sign-Up Modal)
+<!-- prep-status: shipped-as=modalize -->
+> **SHIPPED-UNDER** — the ColorLib `modal-05` design this prep describes already
+> ships as `apps/modalize` (<https://modalize.free.componentdock.com>).
+> Do not scaffold `apps/peekview`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalize/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: CalmPrayer (Nonprofit/Church)
+<!-- prep-status: shipped-as=compassion -->
+> **SHIPPED-UNDER** — the ColorLib `inward` design this prep describes already
+> ships as `apps/compassion` (<https://compassion.free.componentdock.com>).
+> Do not scaffold `apps/calmprayer`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-compassion/spec.md`.
 
 ## Purpose
 

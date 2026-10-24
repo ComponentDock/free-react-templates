@@ -1,4 +1,9 @@
 # Tonecraft — Implementation Notes
+<!-- prep-status: shipped-as=stave -->
+> **SHIPPED-UNDER** — the ColorLib `musico` design this prep describes already
+> ships as `apps/stave` (<https://stave.free.componentdock.com>).
+> Do not scaffold `apps/tonecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-stave/spec.md`.
 
 **Source:** ColorLib "Musico" — https://preview.colorlib.com/theme/musico/
 **New name:** Tonecraft

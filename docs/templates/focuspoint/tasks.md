@@ -1,4 +1,9 @@
 # Focuspoint (ColorLib Halo) — Tasks & Design Notes
+<!-- prep-status: shipped-as=beacon -->
+> **SHIPPED-UNDER** — the ColorLib `halo` design this prep describes already
+> ships as `apps/beacon` (<https://beacon.free.componentdock.com>).
+> Do not scaffold `apps/focuspoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-beacon/spec.md`.
 
 > Prep artifacts prepared on `main` under the source name (template-halo);
 > renamed to the NEW name **Focuspoint** in the implementation PR.

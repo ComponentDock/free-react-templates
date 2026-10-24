@@ -1,4 +1,9 @@
 # Dateline (ColorLib Newsflex) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bulletin -->
+> **SHIPPED-UNDER** — the ColorLib `newsflex` design this prep describes already
+> ships as `apps/bulletin` (<https://bulletin.free.componentdock.com>).
+> Do not scaffold `apps/dateline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bulletin/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-dateline` by an implementer stream.

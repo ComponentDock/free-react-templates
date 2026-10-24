@@ -1,4 +1,9 @@
 # Template: Studiohaus (Interior Design Studio)
+<!-- prep-status: shipped-as=chamfer -->
+> **SHIPPED-UNDER** — the ColorLib `theinterior` design this prep describes already
+> ships as `apps/chamfer` (<https://chamfer.free.componentdock.com>).
+> Do not scaffold `apps/studiohaus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chamfer/spec.md`.
 
 ## Purpose
 

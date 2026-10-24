@@ -1,4 +1,9 @@
 # Template: SpellStep (Multi-step Account Creation Wizard)
+<!-- prep-status: shipped-as=runic -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-6` design this prep describes already
+> ships as `apps/runic` (<https://runic.free.componentdock.com>).
+> Do not scaffold `apps/spellstep`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-runic/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Stillframe — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=focal -->
+> **SHIPPED-UNDER** — the ColorLib `bato` design this prep describes already
+> ships as `apps/focal` (<https://focal.free.componentdock.com>).
+> Do not scaffold `apps/stillframe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-focal/spec.md`.
 
 Source: ColorLib Bato — https://colorlib.com/wp/template/bato/
 Preview: https://preview.colorlib.com/theme/bato/

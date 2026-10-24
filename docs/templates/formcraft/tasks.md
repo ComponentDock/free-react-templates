@@ -1,4 +1,9 @@
 # FormCraft (ColorLib Contact Form 20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=talkwell -->
+> **SHIPPED-UNDER** — the ColorLib `contact-form-20` design this prep describes already
+> ships as `apps/talkwell` (<https://talkwell.free.componentdock.com>).
+> Do not scaffold `apps/formcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-talkwell/spec.md`.
 
 <!-- ref-reverify:2026-10-22 -->
 

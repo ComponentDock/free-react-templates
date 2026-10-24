@@ -1,4 +1,9 @@
 # ApertureX — Implementation Todo
+<!-- prep-status: shipped-as=lens -->
+> **SHIPPED-UNDER** — the ColorLib `elit` design this prep describes already
+> ships as `apps/lens` (<https://lens.free.componentdock.com>).
+> Do not scaffold `apps/aperturex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lens/spec.md`.
 
 ## Setup
 - [ ] Copy simplest existing app as base, rename package to `@free-react-templates/aperturex`

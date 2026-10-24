@@ -1,4 +1,9 @@
 # Template: SlideCraft (Carousel / Showcase)
+<!-- prep-status: shipped-as=lattice -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-02` design this prep describes already
+> ships as `apps/lattice` (<https://lattice.free.componentdock.com>).
+> Do not scaffold `apps/slidecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lattice/spec.md`.
 
 ## Purpose
 

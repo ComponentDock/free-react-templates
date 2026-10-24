@@ -1,4 +1,9 @@
 # Calflow Tasks & Design Notes
+<!-- prep-status: shipped-as=caldesk -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-14` design this prep describes already
+> ships as `apps/caldesk` (<https://caldesk.free.componentdock.com>).
+> Do not scaffold `apps/calflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-caldesk/spec.md`.
 
 Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`).
 

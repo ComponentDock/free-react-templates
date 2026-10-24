@@ -1,4 +1,9 @@
 # Template: Fragwave (Gaming Blog / News)
+<!-- prep-status: shipped-as=fragstorm -->
+> **SHIPPED-UNDER** — the ColorLib `amin` design this prep describes already
+> ships as `apps/fragstorm` (<https://fragstorm.free.componentdock.com>).
+> Do not scaffold `apps/fragwave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fragstorm/spec.md`.
 
 ## Purpose
 

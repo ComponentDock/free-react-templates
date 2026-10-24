@@ -1,4 +1,9 @@
 # Template: AccordionFifteen (Widget / Accordion)
+<!-- prep-status: shipped-as=foldkit -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-15` design this prep describes already
+> ships as `apps/foldkit` (<https://foldkit.free.componentdock.com>).
+> Do not scaffold `apps/accordion-fifteen`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-foldkit/spec.md`.
 
 ## Purpose
 

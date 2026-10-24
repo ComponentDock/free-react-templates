@@ -1,4 +1,9 @@
 # Template: SketchCraft (Personal Portfolio)
+<!-- prep-status: shipped-as=boldcraft -->
+> **SHIPPED-UNDER** — the ColorLib `calvin` design this prep describes already
+> ships as `apps/boldcraft` (<https://boldcraft.free.componentdock.com>).
+> Do not scaffold `apps/sketchcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-boldcraft/spec.md`.
 
 ## Purpose
 

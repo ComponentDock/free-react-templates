@@ -1,4 +1,9 @@
 # SerpQuest — Prep Notes
+<!-- prep-status: shipped-as=seoflow -->
+> **SHIPPED-UNDER** — the ColorLib `seogo` design this prep describes already
+> ships as `apps/seoflow` (<https://seoflow.free.componentdock.com>).
+> Do not scaffold `apps/serpquest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seoflow/spec.md`.
 
 Source: ColorLib Seogo (https://colorlib.com/wp/template/seogo/)
 Preview: https://preview.colorlib.com/theme/seogo/

@@ -1,4 +1,9 @@
 # Template: Reap (Bootstrap Multiselect — Semantic UI Widget)
+<!-- prep-status: shipped-as=topicdrop -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-07` design this prep describes already
+> ships as `apps/topicdrop` (<https://topicdrop.free.componentdock.com>).
+> Do not scaffold `apps/reap`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-topicdrop/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Espousal (Wedding Template)
+<!-- prep-status: shipped-as=nuptial -->
+> **SHIPPED-UNDER** — the ColorLib `hookup` design this prep describes already
+> ships as `apps/nuptial` (<https://nuptial.free.componentdock.com>).
+> Do not scaffold `apps/espousal`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-nuptial/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: LineCraft (Creative Agency Landing)
+<!-- prep-status: shipped-as=atelier -->
+> **SHIPPED-UNDER** — the ColorLib `design` design this prep describes already
+> ships as `apps/atelier` (<https://atelier.free.componentdock.com>).
+> Do not scaffold `apps/linecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-atelier/spec.md`.
 
 ## Purpose
 

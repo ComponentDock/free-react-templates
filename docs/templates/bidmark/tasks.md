@@ -1,4 +1,9 @@
 # Bidmark (ColorLib Auction) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bidcraft -->
+> **SHIPPED-UNDER** — the ColorLib `auction` design this prep describes already
+> ships as `apps/bidcraft` (<https://bidcraft.free.componentdock.com>).
+> Do not scaffold `apps/bidmark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bidcraft/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-bidmark`. Recreation name: **Bidmark** (NEW name

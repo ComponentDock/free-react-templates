@@ -1,4 +1,9 @@
 # SliceHaus — Design Notes & Task Outline
+<!-- prep-status: shipped-as=pepperoni -->
+> **SHIPPED-UNDER** — the ColorLib `pizza` design this prep describes already
+> ships as `apps/pepperoni` (<https://pepperoni.free.componentdock.com>).
+> Do not scaffold `apps/slicehaus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pepperoni/spec.md`.
 
 ## Source
 - ColorLib: Pizza (https://colorlib.com/wp/template/pizza/)

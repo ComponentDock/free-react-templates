@@ -1,4 +1,9 @@
 # Template: Regforge (Registration Form)
+<!-- prep-status: shipped-as=regify -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-8` design this prep describes already
+> ships as `apps/regify` (<https://regify.free.componentdock.com>).
+> Do not scaffold `apps/regforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regify/spec.md`.
 
 ## Purpose
 

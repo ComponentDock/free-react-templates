@@ -1,4 +1,9 @@
 # SearchBeacon — Search Form Bar Template
+<!-- prep-status: shipped-as=seekdot -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-03` design this prep describes already
+> ships as `apps/seekdot` (<https://seekdot.free.componentdock.com>).
+> Do not scaffold `apps/searchbeacon`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekdot/spec.md`.
 
 Recreation of ColorLib **Search Form Bar 03**
 (https://colorlib.com/wp/template/search-form-bar-03/)

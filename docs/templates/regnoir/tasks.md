@@ -1,4 +1,9 @@
 # RegNoir (Colorlib Regform 3) — Tasks & Design Notes
+<!-- prep-status: shipped-as=regpad -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-3` design this prep describes already
+> ships as `apps/regpad` (<https://regpad.free.componentdock.com>).
+> Do not scaffold `apps/regnoir`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regpad/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-regnoir`. Recreation name: **RegNoir** (NEW name —

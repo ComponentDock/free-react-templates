@@ -1,4 +1,9 @@
 # Template: Beguile (Circle-Steps Sign-Up Wizard)
+<!-- prep-status: shipped-as=grimoire -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-16` design this prep describes already
+> ships as `apps/grimoire` (<https://grimoire.free.componentdock.com>).
+> Do not scaffold `apps/beguile`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-grimoire/spec.md`.
 
 ## Purpose
 

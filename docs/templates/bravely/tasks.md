@@ -1,4 +1,9 @@
 # Bravely — Task Outline & Design Notes
+<!-- prep-status: shipped-as=crux -->
+> **SHIPPED-UNDER** — the ColorLib `bbs` design this prep describes already
+> ships as `apps/crux` (<https://crux.free.componentdock.com>).
+> Do not scaffold `apps/bravely`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crux/spec.md`.
 
 Source: ColorLib "Bbs" (https://colorlib.com/wp/template/bbs/)
 New name: bravely

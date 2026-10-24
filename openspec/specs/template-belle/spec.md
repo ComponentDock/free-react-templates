@@ -1,4 +1,9 @@
 # Template: Belle (Beauty Salon Landing)
+<!-- prep-status: shipped-as=rouge -->
+> **SHIPPED-UNDER** — the ColorLib `diva` design this prep describes already
+> ships as `apps/rouge` (<https://rouge.free.componentdock.com>).
+> Do not scaffold `apps/belle`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rouge/spec.md`.
 
 ## Purpose
 

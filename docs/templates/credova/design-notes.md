@@ -1,4 +1,9 @@
 # Credova — Design Notes & Task Outline
+<!-- prep-status: shipped-as=loanforge -->
+> **SHIPPED-UNDER** — the ColorLib `loan` design this prep describes already
+> ships as `apps/loanforge` (<https://loanforge.free.componentdock.com>).
+> Do not scaffold `apps/credova`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loanforge/spec.md`.
 
 ## Source mapping
 

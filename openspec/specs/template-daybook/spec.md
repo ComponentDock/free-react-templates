@@ -1,4 +1,9 @@
 # Template: Daybook (Productivity / Calendar)
+<!-- prep-status: shipped-as=caldesk -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-14` design this prep describes already
+> ships as `apps/caldesk` (<https://caldesk.free.componentdock.com>).
+> Do not scaffold `apps/daybook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-caldesk/spec.md`.
 
 ## Purpose
 

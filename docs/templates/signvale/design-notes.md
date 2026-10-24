@@ -1,4 +1,9 @@
 # SignVale — Implementation Notes
+<!-- prep-status: shipped-as=submitbox -->
+> **SHIPPED-UNDER** — the ColorLib `signup-form-13` design this prep describes already
+> ships as `apps/submitbox` (<https://submitbox.free.componentdock.com>).
+> Do not scaffold `apps/signvale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-submitbox/spec.md`.
 
 **Source:** ColorLib Signup Form 13
 **Preview:** https://preview.colorlib.com/theme/bootstrap/signup-form-13/

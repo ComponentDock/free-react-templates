@@ -1,4 +1,9 @@
 # Onward — Prep Notes
+<!-- prep-status: shipped-as=pyxis -->
+> **SHIPPED-UNDER** — the ColorLib `ozberk` design this prep describes already
+> ships as `apps/pyxis` (<https://pyxis.free.componentdock.com>).
+> Do not scaffold `apps/onward`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pyxis/spec.md`.
 
 Source: ColorLib Ozberk (https://preview.colorlib.com/theme/ozberk/)
 

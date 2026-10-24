@@ -1,4 +1,9 @@
 # Template: SignFlux (Login Form)
+<!-- prep-status: shipped-as=keycard -->
+> **SHIPPED-UNDER** — the ColorLib `creative-login-form` design this prep describes already
+> ships as `apps/keycard` (<https://keycard.free.componentdock.com>).
+> Do not scaffold `apps/signflux`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-keycard/spec.md`.
 
 ## Purpose
 

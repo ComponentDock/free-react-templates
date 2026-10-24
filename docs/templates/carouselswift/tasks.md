@@ -1,4 +1,9 @@
 # CarouselSwift — Development Tasks & Design Notes
+<!-- prep-status: shipped-as=spinwheel -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-17` design this prep describes already
+> ships as `apps/spinwheel` (<https://spinwheel.free.componentdock.com>).
+> Do not scaffold `apps/carouselswift`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-spinwheel/spec.md`.
 
 ## Overview
 

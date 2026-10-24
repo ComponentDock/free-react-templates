@@ -1,4 +1,9 @@
 # Yogawell — Prep Notes
+<!-- prep-status: shipped-as=asana -->
+> **SHIPPED-UNDER** — the ColorLib `doyoga` design this prep describes already
+> ships as `apps/asana` (<https://asana.free.componentdock.com>).
+> Do not scaffold `apps/yogawell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-asana/spec.md`.
 
 Source: ColorLib Doyoga (https://colorlib.com/wp/template/doyoga/)
 Preview: https://preview.colorlib.com/theme/doyoga/

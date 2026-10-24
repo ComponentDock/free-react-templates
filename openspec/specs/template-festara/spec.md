@@ -1,4 +1,9 @@
 # Template: Festara (Event / Conference)
+<!-- prep-status: shipped-as=confetti -->
+> **SHIPPED-UNDER** — the ColorLib `eventz` design this prep describes already
+> ships as `apps/confetti` (<https://confetti.free.componentdock.com>).
+> Do not scaffold `apps/festara`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-confetti/spec.md`.
 
 ## Purpose
 

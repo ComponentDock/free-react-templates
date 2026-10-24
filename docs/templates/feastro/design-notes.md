@@ -1,4 +1,9 @@
 # Feastro — Design Notes & Task Outline
+<!-- prep-status: shipped-as=supper -->
+> **SHIPPED-UNDER** — the ColorLib `meal` design this prep describes already
+> ships as `apps/supper` (<https://supper.free.componentdock.com>).
+> Do not scaffold `apps/feastro`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-supper/spec.md`.
 
 Source: ColorLib Meal — https://preview.colorlib.com/theme/meal/
 

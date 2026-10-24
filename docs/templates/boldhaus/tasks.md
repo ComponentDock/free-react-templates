@@ -1,4 +1,9 @@
 # Boldhaus — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=prism -->
+> **SHIPPED-UNDER** — the ColorLib `dup` design this prep describes already
+> ships as `apps/prism` (<https://prism.free.componentdock.com>).
+> Do not scaffold `apps/boldhaus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-prism/spec.md`.
 
 **Source:** ColorLib "Dup" — https://colorlib.com/wp/template/dup/
 **Preview:** https://preview.colorlib.com/theme/dup/

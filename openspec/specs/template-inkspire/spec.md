@@ -1,4 +1,9 @@
 # Template: Inkspire (Author Portfolio)
+<!-- prep-status: shipped-as=pageturn -->
+> **SHIPPED-UNDER** — the ColorLib `author` design this prep describes already
+> ships as `apps/pageturn` (<https://pageturn.free.componentdock.com>).
+> Do not scaffold `apps/inkspire`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pageturn/spec.md`.
 
 ## Purpose
 

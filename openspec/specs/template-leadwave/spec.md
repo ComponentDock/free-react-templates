@@ -1,4 +1,9 @@
 # Template: Leadwave (Digital Agency)
+<!-- prep-status: shipped-as=prime -->
+> **SHIPPED-UNDER** — the ColorLib `ultim8` design this prep describes already
+> ships as `apps/prime` (<https://prime.free.componentdock.com>).
+> Do not scaffold `apps/leadwave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-prime/spec.md`.
 
 > **SUPERSEDED** — this spec duplicates the ColorLib Ultim8 source that shipped
 > as **Prime** (apps/prime, PR #456, https://prime.free.componentdock.com).

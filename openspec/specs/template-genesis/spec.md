@@ -1,4 +1,9 @@
 # Template: Genesis (Creative Agency Portfolio)
+<!-- prep-status: shipped-as=canvas -->
+> **SHIPPED-UNDER** — the ColorLib `approach` design this prep describes already
+> ships as `apps/canvas` (<https://canvas.free.componentdock.com>).
+> Do not scaffold `apps/genesis`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-canvas/spec.md`.
 
 > **SUPERSEDED** — do NOT implement. This spec was prepped for the SAME
 > ColorLib source as Canvas (`template-canvas`): "Approach"

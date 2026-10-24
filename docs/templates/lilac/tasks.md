@@ -1,4 +1,9 @@
 # Lilac (ColorLib Dropdown 12) — Tasks & Design Notes
+<!-- prep-status: shipped-as=dropcall -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-12` design this prep describes already
+> ships as `apps/dropcall` (<https://dropcall.free.componentdock.com>).
+> Do not scaffold `apps/lilac`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropcall/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-lilac`.

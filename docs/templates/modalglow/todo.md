@@ -1,4 +1,9 @@
 # ModalGlow — Implementation Tasks
+<!-- prep-status: shipped-as=modalshift -->
+> **SHIPPED-UNDER** — the ColorLib `modal-17` design this prep describes already
+> ships as `apps/modalshift` (<https://modalshift.free.componentdock.com>).
+> Do not scaffold `apps/modalglow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-modalshift/spec.md`.
 
 Source: ColorLib Modal 17 (https://colorlib.com/wp/template/modal-17/)
 Preview: https://preview.colorlib.com/theme/bootstrap/modal-17/

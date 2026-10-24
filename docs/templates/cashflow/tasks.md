@@ -1,4 +1,9 @@
 # Cashflow — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=reckoner -->
+> **SHIPPED-UNDER** — the ColorLib `book-keeping` design this prep describes already
+> ships as `apps/reckoner` (<https://reckoner.free.componentdock.com>).
+> Do not scaffold `apps/cashflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reckoner/spec.md`.
 
 Source: ColorLib "Book Keeping" (slug: bookkeeping)
 Preview: https://preview.colorlib.com/theme/bookkeeping/

@@ -1,4 +1,9 @@
 # Template: Nuptia (Wedding)
+<!-- prep-status: shipped-as=wedlock -->
+> **SHIPPED-UNDER** — the ColorLib `wordpress-wedding-themes` design this prep describes already
+> ships as `apps/wedlock` (<https://wedlock.free.componentdock.com>).
+> Do not scaffold `apps/nuptia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wedlock/spec.md`.
 
 ## Purpose
 

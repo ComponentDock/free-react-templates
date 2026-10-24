@@ -1,4 +1,9 @@
 # Marjoram (ColorLib Accordion 18) — Tasks & Design Notes
+<!-- prep-status: shipped-as=crinkle -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-18` design this prep describes already
+> ships as `apps/crinkle` (<https://crinkle.free.componentdock.com>).
+> Do not scaffold `apps/marjoram`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crinkle/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Marjoram** (NEW name —
 > the ColorLib source keeps its name "Accordion 18"). Implementation ships on

@@ -1,4 +1,9 @@
 # Template: Collegium (Education & School)
+<!-- prep-status: shipped-as=scholara -->
+> **SHIPPED-UNDER** — the ColorLib `universityedu` design this prep describes already
+> ships as `apps/scholara` (<https://scholara.free.componentdock.com>).
+> Do not scaffold `apps/collegium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-scholara/spec.md`.
 
 ## Purpose
 

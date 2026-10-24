@@ -1,4 +1,9 @@
 # Sideboard — Implementation Notes
+<!-- prep-status: shipped-as=sidewell -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-sidebar-07` design this prep describes already
+> ships as `apps/sidewell` (<https://sidewell.free.componentdock.com>).
+> Do not scaffold `apps/sideboard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sidewell/spec.md`.
 
 Source: ColorLib Bootstrap Sidebar 07
 Preview: https://preview.colorlib.com/theme/bootstrap-sidebar-07/ (404)

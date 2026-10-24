@@ -1,4 +1,9 @@
 # HealthPulse — Implementation Todo & Design Notes
+<!-- prep-status: shipped-as=vitaflow -->
+> **SHIPPED-UNDER** — the ColorLib `healthcoach` design this prep describes already
+> ships as `apps/vitaflow` (<https://vitaflow.free.componentdock.com>).
+> Do not scaffold `apps/healthpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vitaflow/spec.md`.
 
 ## Template Identity
 

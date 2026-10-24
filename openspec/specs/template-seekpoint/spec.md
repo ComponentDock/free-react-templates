@@ -1,4 +1,9 @@
 # Template: Seekpoint (Search Form Bar)
+<!-- prep-status: shipped-as=searchflow -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-18` design this prep describes already
+> ships as `apps/searchflow` (<https://searchflow.free.componentdock.com>).
+> Do not scaffold `apps/seekpoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-searchflow/spec.md`.
 
 ## Purpose
 

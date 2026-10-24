@@ -1,4 +1,9 @@
 # Template: Chaff (Multiselect Dropdown)
+<!-- prep-status: shipped-as=groupcap -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-18` design this prep describes already
+> ships as `apps/groupcap` (<https://groupcap.free.componentdock.com>).
+> Do not scaffold `apps/chaff`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-groupcap/spec.md`.
 
 ## Purpose
 

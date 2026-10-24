@@ -1,4 +1,9 @@
 # Revelry — Implementation Notes
+<!-- prep-status: shipped-as=venuepoint -->
+> **SHIPPED-UNDER** — the ColorLib `thevenue` design this prep describes already
+> ships as `apps/venuepoint` (<https://venuepoint.free.componentdock.com>).
+> Do not scaffold `apps/revelry`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-venuepoint/spec.md`.
 
 ## Source
 - ColorLib: The Venue (https://colorlib.com/wp/template/thevenue/)

@@ -1,4 +1,9 @@
 # Template: Roamcraft (Travel Agency)
+<!-- prep-status: shipped-as=tidal -->
+> **SHIPPED-UNDER** — the ColorLib `pacific` design this prep describes already
+> ships as `apps/tidal` (<https://tidal.free.componentdock.com>).
+> Do not scaffold `apps/roamcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tidal/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Rankline (ColorLib Echo) — Tasks & Design Notes
+<!-- prep-status: shipped-as=resonance -->
+> **SHIPPED-UNDER** — the ColorLib `echo` design this prep describes already
+> ships as `apps/resonance` (<https://resonance.free.componentdock.com>).
+> Do not scaffold `apps/rankline`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-resonance/spec.md`.
 
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-rankline`. Source: ColorLib "Echo" — SEO / SEM agency

@@ -1,4 +1,9 @@
 # Servecraft — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=fulcrum -->
+> **SHIPPED-UNDER** — the ColorLib `services` design this prep describes already
+> ships as `apps/fulcrum` (<https://fulcrum.free.componentdock.com>).
+> Do not scaffold `apps/servecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fulcrum/spec.md`.
 
 ## Source
 - ColorLib "Services" template: https://colorlib.com/wp/template/services/

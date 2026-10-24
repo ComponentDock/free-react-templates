@@ -1,4 +1,9 @@
 # Signpilot — Implementation Notes
+<!-- prep-status: shipped-as=yogaflow -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-22` design this prep describes already
+> ships as `apps/yogaflow` (<https://yogaflow.free.componentdock.com>).
+> Do not scaffold `apps/signpilot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-yogaflow/spec.md`.
 
 ## Source
 

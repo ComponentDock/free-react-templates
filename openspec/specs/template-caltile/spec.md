@@ -1,4 +1,9 @@
 # Template: CalTile (Productivity / Calendar)
+<!-- prep-status: shipped-as=calio -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-20` design this prep describes already
+> ships as `apps/calio` (<https://calio.free.componentdock.com>).
+> Do not scaffold `apps/caltile`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calio/spec.md`.
 
 ## Purpose
 

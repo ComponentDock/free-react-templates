@@ -1,4 +1,9 @@
 # Chophouse (ColorLib Steak) — Tasks & Design Notes
+<!-- prep-status: shipped-as=smokehouse -->
+> **SHIPPED-UNDER** — the ColorLib `steak` design this prep describes already
+> ships as `apps/smokehouse` (<https://smokehouse.free.componentdock.com>).
+> Do not scaffold `apps/chophouse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-smokehouse/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-chophouse`. Recreation name: **Chophouse** (NEW name

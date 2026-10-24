@@ -1,4 +1,9 @@
 # Grind (ColorLib Flawless) — Tasks & Design Notes
+<!-- prep-status: shipped-as=sculpt -->
+> **SHIPPED-UNDER** — the ColorLib `flawless` design this prep describes already
+> ships as `apps/sculpt` (<https://sculpt.free.componentdock.com>).
+> Do not scaffold `apps/grind`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sculpt/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-grind`.

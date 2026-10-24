@@ -1,4 +1,9 @@
 # Template: GreenVale (Real Estate)
+<!-- prep-status: shipped-as=fern -->
+> **SHIPPED-UNDER** — the ColorLib `ecoverde` design this prep describes already
+> ships as `apps/fern` (<https://fern.free.componentdock.com>).
+> Do not scaffold `apps/greenvale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fern/spec.md`.
 
 ## Purpose
 

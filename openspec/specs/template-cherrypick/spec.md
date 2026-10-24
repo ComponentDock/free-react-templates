@@ -1,4 +1,9 @@
 # Template: CherryPick (Multiselect Form Component)
+<!-- prep-status: shipped-as=optpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-01` design this prep describes already
+> ships as `apps/optpick` (<https://optpick.free.componentdock.com>).
+> Do not scaffold `apps/cherrypick`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optpick/spec.md`.
 
 ## Purpose
 

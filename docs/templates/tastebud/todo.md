@@ -1,4 +1,9 @@
 # Tastebud — Implementation Notes
+<!-- prep-status: shipped-as=feastly -->
+> **SHIPPED-UNDER** — the ColorLib `foodfun` design this prep describes already
+> ships as `apps/feastly` (<https://feastly.free.componentdock.com>).
+> Do not scaffold `apps/tastebud`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-feastly/spec.md`.
 
 Source: ColorLib Foodfun
 Preview: https://preview.colorlib.com/theme/foodfun/

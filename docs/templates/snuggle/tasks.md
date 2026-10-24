@@ -1,4 +1,9 @@
 # Snuggle (Colorlib Petsitting) — Tasks & Design Notes
+<!-- prep-status: shipped-as=petsitting -->
+> **SHIPPED-UNDER** — the ColorLib `petsitting` design this prep describes already
+> ships as `apps/petsitting` (<https://petsitting.free.componentdock.com>).
+> Do not scaffold `apps/snuggle`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-petsitting/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-snuggle`.

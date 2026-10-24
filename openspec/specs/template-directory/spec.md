@@ -1,4 +1,9 @@
 # Template: Directory (Real Estate / Directory)
+<!-- prep-status: shipped-as=placeboard -->
+> **SHIPPED-UNDER** — the ColorLib `listed` design this prep describes already
+> ships as `apps/placeboard` (<https://placeboard.free.componentdock.com>).
+> Do not scaffold `apps/directory`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-placeboard/spec.md`.
 
 ## Purpose
 

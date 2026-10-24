@@ -1,4 +1,9 @@
 # Template: PressPlay (Music)
+<!-- prep-status: shipped-as=vinylspin -->
+> **SHIPPED-UNDER** — the ColorLib `mixtape` design this prep describes already
+> ships as `apps/vinylspin` (<https://vinylspin.free.componentdock.com>).
+> Do not scaffold `apps/pressplay`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vinylspin/spec.md`.
 
 ## Purpose
 

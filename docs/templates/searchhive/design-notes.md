@@ -1,4 +1,9 @@
 # SearchHive — Design Notes
+<!-- prep-status: shipped-as=findbox -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-11` design this prep describes already
+> ships as `apps/findbox` (<https://findbox.free.componentdock.com>).
+> Do not scaffold `apps/searchhive`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-findbox/spec.md`.
 
 <!-- ref-reverify:2026-10-22 -->
 

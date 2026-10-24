@@ -1,4 +1,9 @@
 # Template: Savorly (Restaurant)
+<!-- prep-status: shipped-as=ravida -->
+> **SHIPPED-UNDER** — the ColorLib `buri` design this prep describes already
+> ships as `apps/ravida` (<https://ravida.free.componentdock.com>).
+> Do not scaffold `apps/savorly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ravida/spec.md`.
 
 ## Purpose
 

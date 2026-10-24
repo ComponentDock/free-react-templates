@@ -5,6 +5,12 @@ source: bootstrap-buttons-14
 preview_url: https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/
 ---
 
+<!-- prep-status: shipped-as=btnvortex -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-14` design this prep describes already
+> ships as `apps/btnvortex` (<https://btnvortex.free.componentdock.com>).
+> Do not scaffold `apps/btncast`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnvortex/spec.md`.
+
 # Template: BtnCast (Bootstrap Buttons Showcase & Design System)
 
 ## Purpose

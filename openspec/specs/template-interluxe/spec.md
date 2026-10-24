@@ -1,4 +1,9 @@
 # Template: Interluxe (Interior Design Website)
+<!-- prep-status: shipped-as=timber -->
+> **SHIPPED-UNDER** — the ColorLib `balay` design this prep describes already
+> ships as `apps/timber` (<https://timber.free.componentdock.com>).
+> Do not scaffold `apps/interluxe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-timber/spec.md`.
 
 ## Purpose
 

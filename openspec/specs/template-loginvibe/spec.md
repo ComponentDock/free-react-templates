@@ -1,4 +1,9 @@
 # Template: LoginVibe (Login Form)
+<!-- prep-status: shipped-as=logingem -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v4` design this prep describes already
+> ships as `apps/logingem` (<https://logingem.free.componentdock.com>).
+> Do not scaffold `apps/loginvibe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-logingem/spec.md`.
 
 ## Purpose
 

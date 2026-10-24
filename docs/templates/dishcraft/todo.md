@@ -1,4 +1,9 @@
 # Dishcraft (ColorLib Meal) — Implementation Notes
+<!-- prep-status: shipped-as=supper -->
+> **SHIPPED-UNDER** — the ColorLib `meal` design this prep describes already
+> ships as `apps/supper` (<https://supper.free.componentdock.com>).
+> Do not scaffold `apps/dishcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-supper/spec.md`.
 
 Source: https://colorlib.com/wp/template/meal/
 Preview: https://preview.colorlib.com/theme/meal/

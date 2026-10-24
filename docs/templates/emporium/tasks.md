@@ -1,4 +1,9 @@
 # Emporium (ColorLib Coza Store) — Tasks & Design Notes
+<!-- prep-status: shipped-as=mannequin -->
+> **SHIPPED-UNDER** — the ColorLib `coza-store` design this prep describes already
+> ships as `apps/mannequin` (<https://mannequin.free.componentdock.com>).
+> Do not scaffold `apps/emporium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-mannequin/spec.md`.
 
 > Prep artifacts prepared on `main`. Recreation name: **Emporium** (NEW name —
 > the ColorLib source keeps its name "Coza Store"/`coza-store`). Implementation

@@ -1,4 +1,9 @@
 # Template: Plead (Lawyer)
+<!-- prep-status: shipped-as=litigator -->
+> **SHIPPED-UNDER** — the ColorLib `justice` design this prep describes already
+> ships as `apps/litigator` (<https://litigator.free.componentdock.com>).
+> Do not scaffold `apps/plead`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-litigator/spec.md`.
 
 ## Purpose
 

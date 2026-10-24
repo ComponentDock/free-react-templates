@@ -1,4 +1,9 @@
 # Ease — Implementation Notes
+<!-- prep-status: shipped-as=solace -->
+> **SHIPPED-UNDER** — the ColorLib `unwind` design this prep describes already
+> ships as `apps/solace` (<https://solace.free.componentdock.com>).
+> Do not scaffold `apps/ease`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-solace/spec.md`.
 
 ## Source
 

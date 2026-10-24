@@ -1,4 +1,9 @@
 # Template: Gearbox (Automotive / Garage Services)
+<!-- prep-status: shipped-as=motorly -->
+> **SHIPPED-UNDER** — the ColorLib `automotive` design this prep describes already
+> ships as `apps/motorly` (<https://motorly.free.componentdock.com>).
+> Do not scaffold `apps/gearbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-motorly/spec.md`.
 
 ## Purpose
 

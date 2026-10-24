@@ -1,4 +1,9 @@
 # Template: OptionVault (Multiselect With Categories)
+<!-- prep-status: shipped-as=optbundle -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-08` design this prep describes already
+> ships as `apps/optbundle` (<https://optbundle.free.componentdock.com>).
+> Do not scaffold `apps/optionvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optbundle/spec.md`.
 
 ## Purpose
 

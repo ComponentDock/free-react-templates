@@ -6,6 +6,11 @@
 > spec under the name `betrothal`**; the checklist line is already `[x]`. Kept only as research.
 
 # Template: Betrothal (Wedding)
+<!-- prep-status: shipped-as=cherish -->
+> **SHIPPED-UNDER** — the ColorLib `dreamwed` design this prep describes already
+> ships as `apps/cherish` (<https://cherish.free.componentdock.com>).
+> Do not scaffold `apps/betrothal`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cherish/spec.md`.
 
 ## Purpose
 

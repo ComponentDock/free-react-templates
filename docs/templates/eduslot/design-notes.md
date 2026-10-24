@@ -1,4 +1,9 @@
 # EduSlot — Implementation Tasks
+<!-- prep-status: shipped-as=regwell -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-12` design this prep describes already
+> ships as `apps/regwell` (<https://regwell.free.componentdock.com>).
+> Do not scaffold `apps/eduslot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regwell/spec.md`.
 
 ## Overview
 Education appointment form template. Full-viewport background image with dark overlay, left-aligned white card containing a multi-section form. Clean, minimal design.

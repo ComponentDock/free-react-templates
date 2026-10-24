@@ -1,4 +1,9 @@
 # Sidebardock — Design Notes & Task Outline
+<!-- prep-status: shipped-as=marginote -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v10` design this prep describes already
+> ships as `apps/marginote` (<https://marginote.free.componentdock.com>).
+> Do not scaffold `apps/sidebardock`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-marginote/spec.md`.
 
 Source: ColorLib Sidebar V10
 Slug: colorlib-sidebar-v10

@@ -1,4 +1,9 @@
 # Template: LoginVista (Login Form)
+<!-- prep-status: shipped-as=loginaura -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v12` design this prep describes already
+> ships as `apps/loginaura` (<https://loginaura.free.componentdock.com>).
+> Do not scaffold `apps/loginvista`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loginaura/spec.md`.
 
 ## Purpose
 

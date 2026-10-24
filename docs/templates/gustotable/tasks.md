@@ -1,4 +1,9 @@
 # GustoTable (ColorLib Restauco) — Tasks & Design Notes
+<!-- prep-status: shipped-as=bonquet -->
+> **SHIPPED-UNDER** — the ColorLib `restauco` design this prep describes already
+> ships as `apps/bonquet` (<https://bonquet.free.componentdock.com>).
+> Do not scaffold `apps/gustotable`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bonquet/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-gustotable`. Recreation name: **GustoTable** (NEW name —

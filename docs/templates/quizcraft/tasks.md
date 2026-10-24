@@ -1,4 +1,9 @@
 # QuizCraft — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=topicdrop -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-07` design this prep describes already
+> ships as `apps/topicdrop` (<https://topicdrop.free.componentdock.com>).
+> Do not scaffold `apps/quizcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-topicdrop/spec.md`.
 
 ## Template Overview
 

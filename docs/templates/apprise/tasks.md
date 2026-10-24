@@ -1,4 +1,9 @@
 # Apprise — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=appnova -->
+> **SHIPPED-UNDER** — the ColorLib `ca-app` design this prep describes already
+> ships as `apps/appnova` (<https://appnova.free.componentdock.com>).
+> Do not scaffold `apps/apprise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-appnova/spec.md`.
 
 Source: ColorLib "CA App Landing" — https://colorlib.com/wp/template/ca-app/
 Preview: https://preview.colorlib.com/#ca-app (unavailable at prep time)

@@ -1,4 +1,9 @@
 # EntryVault — Implementation Notes
+<!-- prep-status: shipped-as=logdrop -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-11` design this prep describes already
+> ships as `apps/logdrop` (<https://logdrop.free.componentdock.com>).
+> Do not scaffold `apps/entryvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-logdrop/spec.md`.
 
 Source: ColorLib Login Form V11 (slug: `login-form-11`)
 Preview: `https://preview.colorlib.com/theme/bootstrap/login-form-11/`

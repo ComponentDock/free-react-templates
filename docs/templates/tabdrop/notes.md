@@ -1,4 +1,9 @@
 # TabDrop Template Tasks & Design Notes
+<!-- prep-status: shipped-as=lamina -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-07` design this prep describes already
+> ships as `apps/lamina` (<https://lamina.free.componentdock.com>).
+> Do not scaffold `apps/tabdrop`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lamina/spec.md`.
 
 ## Overview
 

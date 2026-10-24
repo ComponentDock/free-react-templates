@@ -1,4 +1,9 @@
 # Spec: Promptly — Minimal Text Modal Template
+<!-- prep-status: shipped-as=popup -->
+> **SHIPPED-UNDER** — the ColorLib `modal-11` design this prep describes already
+> ships as `apps/popup` (<https://popup.free.componentdock.com>).
+> Do not scaffold `apps/promptly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-popup/spec.md`.
 
 > Recreation of ColorLib Modal 11
 > (https://colorlib.com/wp/template/modal-11/)

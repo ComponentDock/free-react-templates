@@ -1,4 +1,9 @@
 # Template: SidebarPanel (Sidebar Contact Panel)
+<!-- prep-status: shipped-as=sideframe -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v04` design this prep describes already
+> ships as `apps/sideframe` (<https://sideframe.free.componentdock.com>).
+> Do not scaffold `apps/sidebarpanel`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sideframe/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Kensei (Personal Portfolio)
+<!-- prep-status: shipped-as=drifter -->
+> **SHIPPED-UNDER** — the ColorLib `ronin` design this prep describes already
+> ships as `apps/drifter` (<https://drifter.free.componentdock.com>).
+> Do not scaffold `apps/kensei`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-drifter/spec.md`.
 
 ## Purpose
 

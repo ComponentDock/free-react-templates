@@ -1,4 +1,9 @@
 # Relic (ColorLib Unearth) — Tasks & Design Notes
+<!-- prep-status: shipped-as=digger -->
+> **SHIPPED-UNDER** — the ColorLib `unearth` design this prep describes already
+> ships as `apps/digger` (<https://digger.free.componentdock.com>).
+> Do not scaffold `apps/relic`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-digger/spec.md`.
 
 > Prep artifacts prepared on `main` under the source name (template-unearth);
 > renamed to the NEW name **Relic** in the implementation PR.

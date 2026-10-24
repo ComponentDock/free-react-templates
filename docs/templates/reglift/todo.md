@@ -1,4 +1,9 @@
 # RegLift — Implementation Outline
+<!-- prep-status: shipped-as=formly -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-5` design this prep describes already
+> ships as `apps/formly` (<https://formly.free.componentdock.com>).
+> Do not scaffold `apps/reglift`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formly/spec.md`.
 
 Source: Colorlib Reg Form V5
 Demo: https://colorlib.com/etc/regform/colorlib-regform-5/

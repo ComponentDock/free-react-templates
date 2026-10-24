@@ -1,4 +1,9 @@
 # Template: Accordion Ten (UI Component Showcase & FAQ)
+<!-- prep-status: shipped-as=gather -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-10` design this prep describes already
+> ships as `apps/gather` (<https://gather.free.componentdock.com>).
+> Do not scaffold `apps/accordion-ten`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gather/spec.md`.
 
 ## Purpose
 

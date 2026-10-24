@@ -1,4 +1,9 @@
 # Portfolium — Implementation Notes
+<!-- prep-status: shipped-as=forger -->
+> **SHIPPED-UNDER** — the ColorLib `niko` design this prep describes already
+> ships as `apps/forger` (<https://forger.free.componentdock.com>).
+> Do not scaffold `apps/portfolium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-forger/spec.md`.
 
 Source: ColorLib "Niko" — https://preview.colorlib.com/theme/niko/
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

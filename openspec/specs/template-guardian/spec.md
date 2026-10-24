@@ -1,4 +1,9 @@
 # Template: Guardian (Pet Care & Animal Welfare Landing)
+<!-- prep-status: shipped-as=vetly -->
+> **SHIPPED-UNDER** — the ColorLib `thepetcare` design this prep describes already
+> ships as `apps/vetly` (<https://vetly.free.componentdock.com>).
+> Do not scaffold `apps/guardian`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vetly/spec.md`.
 
 ## Purpose
 

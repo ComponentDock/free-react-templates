@@ -1,4 +1,9 @@
 # Template: Helpdesk (Customer Support / Call Center)
+<!-- prep-status: shipped-as=dialpad -->
+> **SHIPPED-UNDER** — the ColorLib `callcenter` design this prep describes already
+> ships as `apps/dialpad` (<https://dialpad.free.componentdock.com>).
+> Do not scaffold `apps/helpdesk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dialpad/spec.md`.
 
 ## Purpose
 

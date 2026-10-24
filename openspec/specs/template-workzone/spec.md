@@ -1,4 +1,9 @@
 # Template: Workzone (Conference / Event)
+<!-- prep-status: shipped-as=seminar -->
+> **SHIPPED-UNDER** — the ColorLib `workshop` design this prep describes already
+> ships as `apps/seminar` (<https://seminar.free.componentdock.com>).
+> Do not scaffold `apps/workzone`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seminar/spec.md`.
 
 ## Purpose
 

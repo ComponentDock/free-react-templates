@@ -1,4 +1,9 @@
 # Sattva (ColorLib Yogalax) — Tasks & Design Notes
+<!-- prep-status: shipped-as=shanti -->
+> **SHIPPED-UNDER** — the ColorLib `yogalax` design this prep describes already
+> ships as `apps/shanti` (<https://shanti.free.componentdock.com>).
+> Do not scaffold `apps/sattva`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shanti/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-sattva` by an implementer stream.

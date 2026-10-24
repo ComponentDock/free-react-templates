@@ -1,4 +1,9 @@
 # Travelgate — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=journeybar -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-17` design this prep describes already
+> ships as `apps/journeybar` (<https://journeybar.free.componentdock.com>).
+> Do not scaffold `apps/travelgate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-journeybar/spec.md`.
 
 ## Source
 - **ColorLib:** Search Form V17

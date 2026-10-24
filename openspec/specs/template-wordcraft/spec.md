@@ -1,4 +1,9 @@
 # Template: Wordcraft (Author / Book Portfolio)
+<!-- prep-status: shipped-as=pageturn -->
+> **SHIPPED-UNDER** — the ColorLib `author` design this prep describes already
+> ships as `apps/pageturn` (<https://pageturn.free.componentdock.com>).
+> Do not scaffold `apps/wordcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pageturn/spec.md`.
 
 ## Purpose
 

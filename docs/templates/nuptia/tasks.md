@@ -1,4 +1,9 @@
 # Nuptia (ColorLib Wordpress Wedding Themes) — Tasks & Design Notes
+<!-- prep-status: shipped-as=wedlock -->
+> **SHIPPED-UNDER** — the ColorLib `wordpress-wedding-themes` design this prep describes already
+> ships as `apps/wedlock` (<https://wedlock.free.componentdock.com>).
+> Do not scaffold `apps/nuptia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wedlock/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-nuptia` by an implementer stream.

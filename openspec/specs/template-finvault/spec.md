@@ -1,4 +1,9 @@
 # Template: FinVault (Finance/Banking Corporate)
+<!-- prep-status: shipped-as=finflow -->
+> **SHIPPED-UNDER** — the ColorLib `finances` design this prep describes already
+> ships as `apps/finflow` (<https://finflow.free.componentdock.com>).
+> Do not scaffold `apps/finvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-finflow/spec.md`.
 
 ## Purpose
 

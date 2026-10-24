@@ -1,4 +1,9 @@
 # JobLink Design Notes
+<!-- prep-status: shipped-as=jobgrid -->
+> **SHIPPED-UNDER** — the ColorLib `jobhub` design this prep describes already
+> ships as `apps/jobgrid` (<https://jobgrid.free.componentdock.com>).
+> Do not scaffold `apps/joblink`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-jobgrid/spec.md`.
 
 Recreation of ColorLib "Jobhub" (https://colorlib.com/wp/template/jobhub/).
 

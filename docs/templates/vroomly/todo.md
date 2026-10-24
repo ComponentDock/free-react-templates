@@ -1,4 +1,9 @@
 # Vroomly — Implementation Notes
+<!-- prep-status: shipped-as=fleetly -->
+> **SHIPPED-UNDER** — the ColorLib `car-rental` design this prep describes already
+> ships as `apps/fleetly` (<https://fleetly.free.componentdock.com>).
+> Do not scaffold `apps/vroomly`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-fleetly/spec.md`.
 
 Source: ColorLib "Car Rental" (slug: `car-rental`)
 Preview: https://preview.colorlib.com/theme/carrental/

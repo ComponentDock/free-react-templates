@@ -1,4 +1,9 @@
 # Template: Regale (Hotel)
+<!-- prep-status: shipped-as=opulux -->
+> **SHIPPED-UNDER** — the ColorLib `deluxe` design this prep describes already
+> ships as `apps/opulux` (<https://opulux.free.componentdock.com>).
+> Do not scaffold `apps/regale`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-opulux/spec.md`.
 
 ## Purpose
 

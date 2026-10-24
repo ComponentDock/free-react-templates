@@ -1,4 +1,9 @@
 # Flagship — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=draped -->
+> **SHIPPED-UNDER** — the ColorLib `dealers` design this prep describes already
+> ships as `apps/draped` (<https://draped.free.componentdock.com>).
+> Do not scaffold `apps/flagship`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-draped/spec.md`.
 
 **Source:** ColorLib Dealers (https://colorlib.com/wp/template/dealers/)
 **Preview:** https://preview.colorlib.com/theme/dealers/

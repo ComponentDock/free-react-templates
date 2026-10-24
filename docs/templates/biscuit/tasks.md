@@ -1,4 +1,9 @@
 # Biscuit (Colorlib Pawpal) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pawpal -->
+> **SHIPPED-UNDER** — the ColorLib `pawpal` design this prep describes already
+> ships as `apps/pawpal` (<https://pawpal.free.componentdock.com>).
+> Do not scaffold `apps/biscuit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pawpal/spec.md`.
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-biscuit`.

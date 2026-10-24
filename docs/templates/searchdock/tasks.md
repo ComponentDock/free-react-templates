@@ -1,4 +1,9 @@
 # SearchDock — Design Notes & Task Outline
+<!-- prep-status: shipped-as=seekstream -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-8` design this prep describes already
+> ships as `apps/seekstream` (<https://seekstream.free.componentdock.com>).
+> Do not scaffold `apps/searchdock`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-seekstream/spec.md`.
 
 Source: ColorLib colorlib-search-8
 Preview: https://colorlib.com/etc/searchf/colorlib-search-8/

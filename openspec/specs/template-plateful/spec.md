@@ -1,4 +1,9 @@
 # Template: Plateful (Restaurant / Hospitality)
+<!-- prep-status: shipped-as=gastronome -->
+> **SHIPPED-UNDER** — the ColorLib `pato` design this prep describes already
+> ships as `apps/gastronome` (<https://gastronome.free.componentdock.com>).
+> Do not scaffold `apps/plateful`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gastronome/spec.md`.
 
 ## Purpose
 

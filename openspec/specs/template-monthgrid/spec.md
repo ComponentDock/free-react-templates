@@ -1,4 +1,9 @@
 # Template: MonthGrid (Calendar 03)
+<!-- prep-status: shipped-as=calday -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-03` design this prep describes already
+> ships as `apps/calday` (<https://calday.free.componentdock.com>).
+> Do not scaffold `apps/monthgrid`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calday/spec.md`.
 
 - **Category**: Productivity / Calendar
 - **Source**: ColorLib Calendar 03 (`https://colorlib.com/wp/template/calendar-03/`)

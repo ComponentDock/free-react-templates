@@ -1,4 +1,9 @@
 # Rigcraft — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=squadly -->
+> **SHIPPED-UNDER** — the ColorLib `equipo` design this prep describes already
+> ships as `apps/squadly` (<https://squadly.free.componentdock.com>).
+> Do not scaffold `apps/rigcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-squadly/spec.md`.
 
 **Source:** ColorLib Equipo — https://colorlib.com/wp/template/equipo/
 **Preview:** https://preview.colorlib.com/theme/equipo/

@@ -1,4 +1,9 @@
 # Template: Sidebarium (Portfolio Sidebar Navigation)
+<!-- prep-status: shipped-as=sidelane -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-sidebar-05` design this prep describes already
+> ships as `apps/sidelane` (<https://sidelane.free.componentdock.com>).
+> Do not scaffold `apps/sidebarium`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sidelane/spec.md`.
 
 ## Purpose
 

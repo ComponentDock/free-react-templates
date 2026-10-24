@@ -1,4 +1,9 @@
 # LoanPath — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=loanworks -->
+> **SHIPPED-UNDER** — the ColorLib `finloans` design this prep describes already
+> ships as `apps/loanworks` (<https://loanworks.free.componentdock.com>).
+> Do not scaffold `apps/loanpath`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-loanworks/spec.md`.
 
 **Source:** ColorLib Finloans (https://preview.colorlib.com/theme/finloans/)
 **New name:** loanpath

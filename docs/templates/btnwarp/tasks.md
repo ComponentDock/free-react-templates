@@ -1,4 +1,9 @@
 # BtnWarp Template Tasks & Design Notes
+<!-- prep-status: shipped-as=btnkit -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-13` design this prep describes already
+> ships as `apps/btnkit` (<https://btnkit.free.componentdock.com>).
+> Do not scaffold `apps/btnwarp`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnkit/spec.md`.
 
 - **Source**: ColorLib Bootstrap Buttons 13 (`https://colorlib.com/wp/template/bootstrap-buttons-13/`)
 - **Preview URL**: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-13/`

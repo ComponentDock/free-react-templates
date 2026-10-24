@@ -1,4 +1,9 @@
 # Datebook Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=calgrid -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-12` design this prep describes already
+> ships as `apps/calgrid` (<https://calgrid.free.componentdock.com>).
+> Do not scaffold `apps/datebook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calgrid/spec.md`.
 
 Recreation of ColorLib Calendar 12 (`calendar-12`).
 

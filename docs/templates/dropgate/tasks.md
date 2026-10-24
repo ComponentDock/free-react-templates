@@ -1,4 +1,9 @@
 # DropGate (ColorLib Dropdown V20) — Tasks & Design Notes
+<!-- prep-status: shipped-as=droplist -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-20` design this prep describes already
+> ships as `apps/droplist` (<https://droplist.free.componentdock.com>).
+> Do not scaffold `apps/dropgate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-droplist/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-dropgate`. Recreation name: **DropGate** (NEW name —

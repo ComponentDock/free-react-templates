@@ -1,4 +1,9 @@
 # GoingOnce — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=bidcraft -->
+> **SHIPPED-UNDER** — the ColorLib `auction` design this prep describes already
+> ships as `apps/bidcraft` (<https://bidcraft.free.componentdock.com>).
+> Do not scaffold `apps/goingonce`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bidcraft/spec.md`.
 
 ## Source
 - ColorLib slug: `auction`

@@ -1,4 +1,9 @@
 # TownScope — Prep Notes
+<!-- prep-status: shipped-as=credentia -->
+> **SHIPPED-UNDER** — the ColorLib `civic` design this prep describes already
+> ships as `apps/credentia` (<https://credentia.free.componentdock.com>).
+> Do not scaffold `apps/townscope`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-credentia/spec.md`.
 
 **Source:** ColorLib Civic (https://colorlib.com/wp/template/civic/)
 **Preview:** https://preview.colorlib.com/theme/civic/

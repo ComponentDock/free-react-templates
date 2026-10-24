@@ -1,4 +1,9 @@
 # Template: Tide (Yacht & Sea Travel Template)
+<!-- prep-status: shipped-as=marina -->
+> **SHIPPED-UNDER** — the ColorLib `waterboat` design this prep describes already
+> ships as `apps/marina` (<https://marina.free.componentdock.com>).
+> Do not scaffold `apps/tide`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-marina/spec.md`.
 
 ## Purpose
 

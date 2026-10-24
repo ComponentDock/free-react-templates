@@ -1,4 +1,9 @@
 # Template: Masthead (Blog / Lifestyle Magazine Template)
+<!-- prep-status: shipped-as=ochre -->
+> **SHIPPED-UNDER** — the ColorLib `lifeleck` design this prep describes already
+> ships as `apps/ochre` (<https://ochre.free.componentdock.com>).
+> Do not scaffold `apps/masthead`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ochre/spec.md`.
 
 ## Purpose
 

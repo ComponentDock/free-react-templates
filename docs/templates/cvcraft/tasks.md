@@ -1,4 +1,9 @@
 # CVCraft (ColorLib Cvportfolio) — Tasks & Design Notes
+<!-- prep-status: shipped-as=credence -->
+> **SHIPPED-UNDER** — the ColorLib `cvportfolio` design this prep describes already
+> ships as `apps/credence` (<https://credence.free.componentdock.com>).
+> Do not scaffold `apps/cvcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-credence/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cvcraft`. Recreation name: **CVCraft** (NEW name —

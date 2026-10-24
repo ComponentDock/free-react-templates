@@ -1,4 +1,9 @@
 # Fotocast — Implementation Todo
+<!-- prep-status: shipped-as=photonic -->
+> **SHIPPED-UNDER** — the ColorLib `fotograp` design this prep describes already
+> ships as `apps/photonic` (<https://photonic.free.componentdock.com>).
+> Do not scaffold `apps/fotocast`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-photonic/spec.md`.
 
 ## Setup
 - [ ] Copy simplest existing app as base, rename package to `@free-react-templates/fotocast`

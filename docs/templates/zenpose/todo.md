@@ -1,4 +1,9 @@
 # Zenpose — Implementation Notes
+<!-- prep-status: shipped-as=namastay -->
+> **SHIPPED-UNDER** — the ColorLib `yogafun` design this prep describes already
+> ships as `apps/namastay` (<https://namastay.free.componentdock.com>).
+> Do not scaffold `apps/zenpose`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-namastay/spec.md`.
 
 Source: ColorLib Yogafun (https://colorlib.com/wp/template/yogafun/)
 Preview: https://preview.colorlib.com/theme/yogafun/

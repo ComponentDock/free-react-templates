@@ -1,4 +1,9 @@
 # Roamwise — Implementation Notes
+<!-- prep-status: shipped-as=dune -->
+> **SHIPPED-UNDER** — the ColorLib `safario` design this prep describes already
+> ships as `apps/dune` (<https://dune.free.componentdock.com>).
+> Do not scaffold `apps/roamwise`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dune/spec.md`.
 
 ## Source
 

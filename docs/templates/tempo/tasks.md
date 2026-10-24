@@ -1,4 +1,9 @@
 # Tempo (ColorLib "Djoz") — Tasks & Design Notes
+<!-- prep-status: shipped-as=rhythm -->
+> **SHIPPED-UNDER** — the ColorLib `djoz` design this prep describes already
+> ships as `apps/rhythm` (<https://rhythm.free.componentdock.com>).
+> Do not scaffold `apps/tempo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rhythm/spec.md`.
 
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-tempo` by an implementer stream.

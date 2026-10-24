@@ -1,4 +1,9 @@
 # Rotator Tasks & Design Notes
+<!-- prep-status: shipped-as=carousel-vane -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-16` design this prep describes already
+> ships as `apps/carousel-vane` (<https://carousel-vane.free.componentdock.com>).
+> Do not scaffold `apps/rotator`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carousel-vane/spec.md`.
 
 - **Source Template:** ColorLib Carousel 16 (`https://colorlib.com/wp/template/carousel-16/`)
 - **Assigned Name:** `rotator` (`apps/rotator`)

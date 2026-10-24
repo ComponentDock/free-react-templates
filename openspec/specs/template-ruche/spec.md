@@ -1,4 +1,9 @@
 # OpenSpec: Template Ruche (Accordion Component)
+<!-- prep-status: shipped-as=ripples -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-11` design this prep describes already
+> ships as `apps/ripples` (<https://ripples.free.componentdock.com>).
+> Do not scaffold `apps/ruche`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ripples/spec.md`.
 
 ## Purpose
 

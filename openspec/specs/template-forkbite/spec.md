@@ -1,4 +1,9 @@
 # Template: Forkbite (Restaurant / Food)
+<!-- prep-status: shipped-as=feastcraft -->
+> **SHIPPED-UNDER** — the ColorLib `meal2` design this prep describes already
+> ships as `apps/feastcraft` (<https://feastcraft.free.componentdock.com>).
+> Do not scaffold `apps/forkbite`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-feastcraft/spec.md`.
 
 ## Purpose
 

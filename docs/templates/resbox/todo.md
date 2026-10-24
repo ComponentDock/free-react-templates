@@ -1,4 +1,9 @@
 # Resbox — Implementation Notes
+<!-- prep-status: shipped-as=redawn -->
+> **SHIPPED-UNDER** — the ColorLib `rea` design this prep describes already
+> ships as `apps/redawn` (<https://redawn.free.componentdock.com>).
+> Do not scaffold `apps/resbox`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-redawn/spec.md`.
 
 **Source:** ColorLib Rea (https://colorlib.com/wp/template/rea/)
 **Preview:** https://preview.colorlib.com/theme/rea/

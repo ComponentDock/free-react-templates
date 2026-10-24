@@ -1,4 +1,9 @@
 # SeekCove — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=searchgrid -->
+> **SHIPPED-UNDER** — the ColorLib `search-form-bar-12` design this prep describes already
+> ships as `apps/searchgrid` (<https://searchgrid.free.componentdock.com>).
+> Do not scaffold `apps/seekcove`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-searchgrid/spec.md`.
 
 Source: ColorLib "Search Form Bar 12" (slug: `search-form-bar-12`)
 New name: `seekcove`

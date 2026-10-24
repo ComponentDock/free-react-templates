@@ -1,4 +1,9 @@
 # Gearshift — Implementation Notes
+<!-- prep-status: shipped-as=highway -->
+> **SHIPPED-UNDER** — the ColorLib `autoroad` design this prep describes already
+> ships as `apps/highway` (<https://highway.free.componentdock.com>).
+> Do not scaffold `apps/gearshift`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-highway/spec.md`.
 
 ## Source
 - ColorLib Autoroad: https://colorlib.com/wp/template/autoroad/

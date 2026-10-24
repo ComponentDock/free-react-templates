@@ -1,4 +1,9 @@
 # Techpulse — Implementation Notes
+<!-- prep-status: shipped-as=bytepress -->
+> **SHIPPED-UNDER** — the ColorLib `techmag` design this prep describes already
+> ships as `apps/bytepress` (<https://bytepress.free.componentdock.com>).
+> Do not scaffold `apps/techpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bytepress/spec.md`.
 
 Source: ColorLib Techmag (https://preview.colorlib.com/theme/techmag/)
 

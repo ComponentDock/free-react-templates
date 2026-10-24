@@ -1,4 +1,9 @@
 # Apex (ColorLib Pointer) — Tasks & Design Notes
+<!-- prep-status: shipped-as=compass -->
+> **SHIPPED-UNDER** — the ColorLib `pointer` design this prep describes already
+> ships as `apps/compass` (<https://compass.free.componentdock.com>).
+> Do not scaffold `apps/apex`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-compass/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-apex/` is the claim marker — implementers

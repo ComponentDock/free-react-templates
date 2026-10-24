@@ -1,4 +1,9 @@
 # Swansong (ColorLib Bootstrap Footer 19) — Tasks & Design Notes
+<!-- prep-status: shipped-as=amethyst -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-19` design this prep describes already
+> ships as `apps/amethyst` (<https://amethyst.free.componentdock.com>).
+> Do not scaffold `apps/swansong`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-amethyst/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-swansong`.

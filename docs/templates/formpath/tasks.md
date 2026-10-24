@@ -1,4 +1,9 @@
 # Formpath — Implementation Tasks
+<!-- prep-status: shipped-as=codex -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-29` design this prep describes already
+> ships as `apps/codex` (<https://codex.free.componentdock.com>).
+> Do not scaffold `apps/formpath`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-codex/spec.md`.
 
 **Source:** ColorLib Wizard 29  
 **Preview URL:** https://preview.colorlib.com/theme/colorlib-wizard-29/ (404 — design based on screenshot + metadata)  

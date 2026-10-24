@@ -4,6 +4,11 @@
 > with the uplink URL.
 
 # Template: Nexnode (Hosting)
+<!-- prep-status: shipped-as=uplink -->
+> **SHIPPED-UNDER** — the ColorLib `hosthub` design this prep describes already
+> ships as `apps/uplink` (<https://uplink.free.componentdock.com>).
+> Do not scaffold `apps/nexnode`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-uplink/spec.md`.
 
 ## Purpose
 

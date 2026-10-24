@@ -1,4 +1,9 @@
 # Template: HealthPulse (Health & Wellness)
+<!-- prep-status: shipped-as=vitaflow -->
+> **SHIPPED-UNDER** — the ColorLib `healthcoach` design this prep describes already
+> ships as `apps/vitaflow` (<https://vitaflow.free.componentdock.com>).
+> Do not scaffold `apps/healthpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-vitaflow/spec.md`.
 
 ## Purpose
 HealthPulse is a single-page health & wellness coaching landing page in the

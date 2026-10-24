@@ -1,4 +1,9 @@
 # Pennant — Design Notes & Task Outline
+<!-- prep-status: shipped-as=byline -->
+> **SHIPPED-UNDER** — the ColorLib `nikki` design this prep describes already
+> ships as `apps/byline` (<https://byline.free.componentdock.com>).
+> Do not scaffold `apps/pennant`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-byline/spec.md`.
 
 **Source:** ColorLib Nikki (https://preview.colorlib.com/theme/nikki/)
 **New name:** pennant

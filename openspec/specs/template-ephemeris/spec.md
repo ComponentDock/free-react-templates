@@ -1,4 +1,9 @@
 # Template: Ephemeris (Calendar — Bootstrap)
+<!-- prep-status: shipped-as=calwave -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-06` design this prep describes already
+> ships as `apps/calwave` (<https://calwave.free.componentdock.com>).
+> Do not scaffold `apps/ephemeris`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calwave/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Consultia (Business Consulting Landing)
+<!-- prep-status: shipped-as=bizmark -->
+> **SHIPPED-UNDER** — the ColorLib `bizcon` design this prep describes already
+> ships as `apps/bizmark` (<https://bizmark.free.componentdock.com>).
+> Do not scaffold `apps/consultia`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bizmark/spec.md`.
 
 ## Purpose
 

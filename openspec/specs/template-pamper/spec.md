@@ -1,4 +1,9 @@
 # Template: Pamper (Pet Care & Adoption Landing)
+<!-- prep-status: shipped-as=snoutly -->
+> **SHIPPED-UNDER** — the ColorLib `leopet` design this prep describes already
+> ships as `apps/snoutly` (<https://snoutly.free.componentdock.com>).
+> Do not scaffold `apps/pamper`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-snoutly/spec.md`.
 
 ## Purpose
 

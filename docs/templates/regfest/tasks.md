@@ -1,4 +1,9 @@
 # Regfest — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=regvault -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-21` design this prep describes already
+> ships as `apps/regvault` (<https://regvault.free.componentdock.com>).
+> Do not scaffold `apps/regfest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regvault/spec.md`.
 
 Source: ColorLib Regform 21
 Preview: https://preview.colorlib.com/theme/colorlib-regform-21/ (unreachable; screenshot used)

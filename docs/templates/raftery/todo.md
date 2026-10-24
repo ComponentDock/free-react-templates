@@ -1,4 +1,9 @@
 # Raftery — Implementation Notes
+<!-- prep-status: shipped-as=shingle -->
+> **SHIPPED-UNDER** — the ColorLib `roofing` design this prep describes already
+> ships as `apps/shingle` (<https://shingle.free.componentdock.com>).
+> Do not scaffold `apps/raftery`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-shingle/spec.md`.
 
 ## Source
 - ColorLib slug: `roofing`

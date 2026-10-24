@@ -1,4 +1,9 @@
 # Template: Fotocast (Photography Portfolio)
+<!-- prep-status: shipped-as=photonic -->
+> **SHIPPED-UNDER** — the ColorLib `fotograp` design this prep describes already
+> ships as `apps/photonic` (<https://photonic.free.componentdock.com>).
+> Do not scaffold `apps/fotocast`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-photonic/spec.md`.
 
 ## Purpose
 

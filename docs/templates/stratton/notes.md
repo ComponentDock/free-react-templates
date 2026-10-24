@@ -1,4 +1,9 @@
 # Stratton — Design Notes & Task Outline
+<!-- prep-status: shipped-as=clearpoint -->
+> **SHIPPED-UNDER** — the ColorLib `schmidt` design this prep describes already
+> ships as `apps/clearpoint` (<https://clearpoint.free.componentdock.com>).
+> Do not scaffold `apps/stratton`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-clearpoint/spec.md`.
 
 ## Source Mapping
 - **ColorLib source:** Schmidt (https://colorlib.com/wp/template/schmidt/)

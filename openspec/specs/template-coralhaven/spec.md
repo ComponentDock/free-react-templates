@@ -1,4 +1,9 @@
 # Template: CoralHaven (Hotel / Resort)
+<!-- prep-status: shipped-as=cayo -->
+> **SHIPPED-UNDER** — the ColorLib `islagrande` design this prep describes already
+> ships as `apps/cayo` (<https://cayo.free.componentdock.com>).
+> Do not scaffold `apps/coralhaven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-cayo/spec.md`.
 
 ## Purpose
 

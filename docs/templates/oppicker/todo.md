@@ -1,4 +1,9 @@
 # Oppicker — Implementation TODO
+<!-- prep-status: shipped-as=optpick -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-01` design this prep describes already
+> ships as `apps/optpick` (<https://optpick.free.componentdock.com>).
+> Do not scaffold `apps/oppicker`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optpick/spec.md`.
 
 ## Setup
 - [ ] Copy simplest existing app as starter (e.g. apps/bolt or similar minimal)

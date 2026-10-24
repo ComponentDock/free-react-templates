@@ -1,4 +1,9 @@
 # Curriculum — Implementation Notes
+<!-- prep-status: shipped-as=ethos -->
+> **SHIPPED-UNDER** — the ColorLib `university` design this prep describes already
+> ships as `apps/ethos` (<https://ethos.free.componentdock.com>).
+> Do not scaffold `apps/curriculum`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-ethos/spec.md`.
 
 ColorLib source: https://colorlib.com/wp/template/university/
 Preview: https://preview.colorlib.com/theme/university/

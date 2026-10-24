@@ -1,4 +1,9 @@
 # Template: Spelldesk (Profile Builder Wizard)
+<!-- prep-status: shipped-as=enthrall -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-14` design this prep describes already
+> ships as `apps/enthrall` (<https://enthrall.free.componentdock.com>).
+> Do not scaffold `apps/spelldesk`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-enthrall/spec.md`.
 
 ## Purpose
 

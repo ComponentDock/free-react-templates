@@ -1,4 +1,9 @@
 # Tabloid — Implementation Notes
+<!-- prep-status: shipped-as=spread -->
+> **SHIPPED-UNDER** — the ColorLib `mag` design this prep describes already
+> ships as `apps/spread` (<https://spread.free.componentdock.com>).
+> Do not scaffold `apps/tabloid`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-spread/spec.md`.
 
 ## Replication Reference
 

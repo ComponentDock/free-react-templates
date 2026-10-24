@@ -1,4 +1,9 @@
 # Spec: TitanFit
+<!-- prep-status: shipped-as=peakform -->
+> **SHIPPED-UNDER** — the ColorLib `ironmuscle` design this prep describes already
+> ships as `apps/peakform` (<https://peakform.free.componentdock.com>).
+> Do not scaffold `apps/titanfit`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-peakform/spec.md`.
 
 ## Purpose
 

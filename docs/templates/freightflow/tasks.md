@@ -1,4 +1,9 @@
 # Tasks for FreightFlow (ColorLib Thelogistico Recreation)
+<!-- prep-status: shipped-as=logistix -->
+> **SHIPPED-UNDER** — the ColorLib `thelogistico` design this prep describes already
+> ships as `apps/logistix` (<https://logistix.free.componentdock.com>).
+> Do not scaffold `apps/freightflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-logistix/spec.md`.
 
 ## Overview
 

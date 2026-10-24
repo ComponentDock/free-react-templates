@@ -1,4 +1,9 @@
 # Prismo — Implementation Notes
+<!-- prep-status: shipped-as=doflo -->
+> **SHIPPED-UNDER** — the ColorLib `dizzi` design this prep describes already
+> ships as `apps/doflo` (<https://doflo.free.componentdock.com>).
+> Do not scaffold `apps/prismo`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-doflo/spec.md`.
 
 **Source:** ColorLib Dizzi (https://preview.colorlib.com/theme/dizzi/)
 **Category:** Business / Digital Agency

@@ -1,4 +1,9 @@
 # SpellForge — Implementation Todo
+<!-- prep-status: shipped-as=steppr -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-21` design this prep describes already
+> ships as `apps/steppr` (<https://steppr.free.componentdock.com>).
+> Do not scaffold `apps/spellforge`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-steppr/spec.md`.
 
 ## Source
 - ColorLib template: "Colorlib Wizard 21"

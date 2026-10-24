@@ -1,4 +1,9 @@
 # Template: TagCache (Multiselect Form Component)
+<!-- prep-status: shipped-as=optselect -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-06` design this prep describes already
+> ships as `apps/optselect` (<https://optselect.free.componentdock.com>).
+> Do not scaffold `apps/tagcache`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-optselect/spec.md`.
 
 ## Purpose
 

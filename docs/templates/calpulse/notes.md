@@ -1,4 +1,9 @@
 # Calpulse — Tasks & Design Notes
+<!-- prep-status: shipped-as=calmark -->
+> **SHIPPED-UNDER** — the ColorLib `calendar-05` design this prep describes already
+> ships as `apps/calmark` (<https://calmark.free.componentdock.com>).
+> Do not scaffold `apps/calpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-calmark/spec.md`.
 
 ## Structure & Section Order
 

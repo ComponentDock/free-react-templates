@@ -1,4 +1,9 @@
 # Chateau — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=regalia -->
+> **SHIPPED-UNDER** — the ColorLib `luxury-hotel` design this prep describes already
+> ships as `apps/regalia` (<https://regalia.free.componentdock.com>).
+> Do not scaffold `apps/chateau`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regalia/spec.md`.
 
 ## Source Mapping
 

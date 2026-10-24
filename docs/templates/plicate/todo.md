@@ -1,4 +1,9 @@
 # Template: Plicate (Accordion 05)
+<!-- prep-status: shipped-as=expanda -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-05` design this prep describes already
+> ships as `apps/expanda` (<https://expanda.free.componentdock.com>).
+> Do not scaffold `apps/plicate`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-expanda/spec.md`.
 
 ## Tasks & Outline
 

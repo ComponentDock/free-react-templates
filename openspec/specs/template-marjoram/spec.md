@@ -1,4 +1,9 @@
 # Template: Marjoram (Bootstrap Accordion — FAQ Accordion)
+<!-- prep-status: shipped-as=crinkle -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-18` design this prep describes already
+> ships as `apps/crinkle` (<https://crinkle.free.componentdock.com>).
+> Do not scaffold `apps/marjoram`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-crinkle/spec.md`.
 
 ## Purpose
 

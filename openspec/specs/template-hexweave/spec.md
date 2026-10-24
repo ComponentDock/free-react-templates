@@ -7,6 +7,12 @@ description: >
   Warm peach/beige background (#f5e6d3), peach-orange accent (#e8a87c), white card.
 ---
 
+<!-- prep-status: shipped-as=divine -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-5` design this prep describes already
+> ships as `apps/divine` (<https://divine.free.componentdock.com>).
+> Do not scaffold `apps/hexweave`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-divine/spec.md`.
+
 ## Purpose
 
 Hexweave is a multi-step billing/checkout form wizard that recreates the ColorLib Wizard 5

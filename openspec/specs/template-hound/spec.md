@@ -1,4 +1,9 @@
 # Template: Hound (Dog Breeds Website)
+<!-- prep-status: shipped-as=wagly -->
+> **SHIPPED-UNDER** — the ColorLib `breed` design this prep describes already
+> ships as `apps/wagly` (<https://wagly.free.componentdock.com>).
+> Do not scaffold `apps/hound`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wagly/spec.md`.
 
 ## Purpose
 

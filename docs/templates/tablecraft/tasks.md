@@ -1,4 +1,9 @@
 # Tasks & Research Notes: Tablecraft (Colorlib Wizard 7)
+<!-- prep-status: shipped-as=platter -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-7` design this prep describes already
+> ships as `apps/platter` (<https://platter.free.componentdock.com>).
+> Do not scaffold `apps/tablecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-platter/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream (stream 4).
 > Implementation ships later on a feature branch.

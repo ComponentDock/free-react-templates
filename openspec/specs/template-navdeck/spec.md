@@ -1,4 +1,9 @@
 # Template: Navdeck (Sidebar Profile Navigation)
+<!-- prep-status: shipped-as=sidebarvault -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-sidebar-v01` design this prep describes already
+> ships as `apps/sidebarvault` (<https://sidebarvault.free.componentdock.com>).
+> Do not scaffold `apps/navdeck`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-sidebarvault/spec.md`.
 
 ## Purpose
 

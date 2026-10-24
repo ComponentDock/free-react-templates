@@ -1,4 +1,9 @@
 # Template: Placecraft (Directory / Listings)
+<!-- prep-status: shipped-as=spotlight -->
+> **SHIPPED-UNDER** — the ColorLib `listed2` design this prep describes already
+> ships as `apps/spotlight` (<https://spotlight.free.componentdock.com>).
+> Do not scaffold `apps/placecraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-spotlight/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: OptPool (Multiselect Snippet)
+<!-- prep-status: shipped-as=multibox -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-19` design this prep describes already
+> ships as `apps/multibox` (<https://multibox.free.componentdock.com>).
+> Do not scaffold `apps/optpool`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-multibox/spec.md`.
 
 ## Purpose
 

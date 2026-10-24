@@ -1,4 +1,9 @@
 # Bootstrap Buttons Ten — Tasks & Design Notes
+<!-- prep-status: shipped-as=btnclick -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-buttons-10` design this prep describes already
+> ships as `apps/btnclick` (<https://btnclick.free.componentdock.com>).
+> Do not scaffold `apps/bootstrap-buttons-ten`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-btnclick/spec.md`.
 
 ## Overview
 

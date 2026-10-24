@@ -1,4 +1,9 @@
 # CarouselPulse — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=reel -->
+> **SHIPPED-UNDER** — the ColorLib `carousel-11` design this prep describes already
+> ships as `apps/reel` (<https://reel.free.componentdock.com>).
+> Do not scaffold `apps/carouselpulse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reel/spec.md`.
 
 ## Source & Mapping
 

@@ -1,4 +1,9 @@
 # Template: Lilac (Two-Column Settings Dropdown)
+<!-- prep-status: shipped-as=dropcall -->
+> **SHIPPED-UNDER** — the ColorLib `dropdown-12` design this prep describes already
+> ships as `apps/dropcall` (<https://dropcall.free.componentdock.com>).
+> Do not scaffold `apps/lilac`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dropcall/spec.md`.
 
 ## Purpose
 

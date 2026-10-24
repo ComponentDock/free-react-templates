@@ -1,4 +1,9 @@
 # FooterWoven — Implementation Notes
+<!-- prep-status: shipped-as=footerlume -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-17` design this prep describes already
+> ships as `apps/footerlume` (<https://footerlume.free.componentdock.com>).
+> Do not scaffold `apps/footerwoven`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footerlume/spec.md`.
 
 Source: ColorLib Bootstrap Footer 17
 Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-17/

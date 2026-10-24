@@ -1,4 +1,9 @@
 # Template: Editrix (News / Magazine)
+<!-- prep-status: shipped-as=editorial -->
+> **SHIPPED-UNDER** — the ColorLib `megazine` design this prep describes already
+> ships as `apps/editorial` (<https://editorial.free.componentdock.com>).
+> Do not scaffold `apps/editrix`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-editorial/spec.md`.
 
 ## Purpose
 

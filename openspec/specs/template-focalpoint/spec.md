@@ -1,4 +1,9 @@
 # Template: Focalpoint (Photography Portfolio)
+<!-- prep-status: shipped-as=pana -->
+> **SHIPPED-UNDER** — the ColorLib `tulen` design this prep describes already
+> ships as `apps/pana` (<https://pana.free.componentdock.com>).
+> Do not scaffold `apps/focalpoint`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pana/spec.md`.
 
 ## Purpose
 

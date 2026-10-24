@@ -1,4 +1,9 @@
 # Inkcraft — Implementation Notes
+<!-- prep-status: shipped-as=inkvibe -->
+> **SHIPPED-UNDER** — the ColorLib `tattooz` design this prep describes already
+> ships as `apps/inkvibe` (<https://inkvibe.free.componentdock.com>).
+> Do not scaffold `apps/inkcraft`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-inkvibe/spec.md`.
 
 Source: ColorLib Tattooz
 Preview: https://preview.colorlib.com/theme/tattooz/tattoo/index.html

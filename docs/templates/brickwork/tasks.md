@@ -1,4 +1,9 @@
 # Brickwork (ColorLib Construct) — Tasks & Design Notes
+<!-- prep-status: shipped-as=rivet -->
+> **SHIPPED-UNDER** — the ColorLib `construct` design this prep describes already
+> ships as `apps/rivet` (<https://rivet.free.componentdock.com>).
+> Do not scaffold `apps/brickwork`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-rivet/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-brickwork`. Recreation name: **Brickwork** (NEW name —

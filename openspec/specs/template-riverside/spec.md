@@ -1,4 +1,9 @@
 # Template: Riverside (Personal Portfolio)
+<!-- prep-status: shipped-as=clydson -->
+> **SHIPPED-UNDER** — the ColorLib `clyde` design this prep describes already
+> ships as `apps/clydson` (<https://clydson.free.componentdock.com>).
+> Do not scaffold `apps/riverside`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-clydson/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Adieu (ColorLib Bootstrap Footer 16) — Tasks & Design Notes
+<!-- prep-status: shipped-as=footercrest -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-footer-16` design this prep describes already
+> ships as `apps/footercrest` (<https://footercrest.free.componentdock.com>).
+> Do not scaffold `apps/adieu`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-footercrest/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-adieu`.

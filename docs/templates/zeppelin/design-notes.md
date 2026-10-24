@@ -1,4 +1,9 @@
 # Zeppelin — Design Notes
+<!-- prep-status: shipped-as=talon -->
+> **SHIPPED-UNDER** — the ColorLib `zeta` design this prep describes already
+> ships as `apps/talon` (<https://talon.free.componentdock.com>).
+> Do not scaffold `apps/zeppelin`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-talon/spec.md`.
 
 Recreation of ColorLib Zeta (https://colorlib.com/wp/template/zeta/).
 Preview: https://preview.colorlib.com/theme/zeta/

@@ -1,4 +1,9 @@
 # Shopfront — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=wares -->
+> **SHIPPED-UNDER** — the ColorLib `e-shop` design this prep describes already
+> ships as `apps/wares` (<https://wares.free.componentdock.com>).
+> Do not scaffold `apps/shopfront`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-wares/spec.md`.
 
 **Source:** ColorLib E Shop (https://preview.colorlib.com/theme/e-shop/)
 **New name:** shopfront

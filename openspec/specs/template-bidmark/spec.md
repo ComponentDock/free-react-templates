@@ -1,4 +1,9 @@
 # Template: Bidmark (Auction Website)
+<!-- prep-status: shipped-as=bidcraft -->
+> **SHIPPED-UNDER** — the ColorLib `auction` design this prep describes already
+> ships as `apps/bidcraft` (<https://bidcraft.free.componentdock.com>).
+> Do not scaffold `apps/bidmark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bidcraft/spec.md`.
 
 ## Purpose
 

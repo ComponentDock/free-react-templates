@@ -1,4 +1,9 @@
 # EduHub — Design Notes
+<!-- prep-status: shipped-as=classroom -->
+> **SHIPPED-UNDER** — the ColorLib `oneschool` design this prep describes already
+> ships as `apps/classroom` (<https://classroom.free.componentdock.com>).
+> Do not scaffold `apps/eduhub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-classroom/spec.md`.
 
 ## Source
 - ColorLib: OneSchool (https://colorlib.com/wp/template/oneschool/)

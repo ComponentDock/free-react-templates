@@ -1,4 +1,9 @@
 # Template: Timepiece (Tech Product Landing)
+<!-- prep-status: shipped-as=bezel -->
+> **SHIPPED-UNDER** — the ColorLib `watch` design this prep describes already
+> ships as `apps/bezel` (<https://bezel.free.componentdock.com>).
+> Do not scaffold `apps/timepiece`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bezel/spec.md`.
 
 ## Purpose
 

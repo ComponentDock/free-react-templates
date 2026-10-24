@@ -1,4 +1,9 @@
 # Rep (ColorLib Gymer) — Tasks & Design Notes
+<!-- prep-status: shipped-as=pumply -->
+> **SHIPPED-UNDER** — the ColorLib `gymer` design this prep describes already
+> ships as `apps/pumply` (<https://pumply.free.componentdock.com>).
+> Do not scaffold `apps/rep`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pumply/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-rep`.

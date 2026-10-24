@@ -1,4 +1,9 @@
 # Template: Grandview (Hotel Landing)
+<!-- prep-status: shipped-as=lodgely -->
+> **SHIPPED-UNDER** — the ColorLib `sogo` design this prep describes already
+> ships as `apps/lodgely` (<https://lodgely.free.componentdock.com>).
+> Do not scaffold `apps/grandview`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lodgely/spec.md`.
 
 ## Purpose
 

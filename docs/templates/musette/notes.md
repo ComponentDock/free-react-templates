@@ -1,4 +1,9 @@
 # Musette (ColorLib Accordion 13 Replication)
+<!-- prep-status: shipped-as=pleat -->
+> **SHIPPED-UNDER** — the ColorLib `accordion-13` design this prep describes already
+> ships as `apps/pleat` (<https://pleat.free.componentdock.com>).
+> Do not scaffold `apps/musette`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pleat/spec.md`.
 
 - **Source Template:** ColorLib Accordion 13 (`https://colorlib.com/wp/template/accordion-13/`)
 - **Preview URL:** `https://preview.colorlib.com/theme/bac/accordion-13/`

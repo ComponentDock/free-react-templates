@@ -1,4 +1,9 @@
 # PickSet (ColorLib Multiselect 10) — Tasks & Design Notes
+<!-- prep-status: shipped-as=statelist -->
+> **SHIPPED-UNDER** — the ColorLib `multiselect-10` design this prep describes already
+> ships as `apps/statelist` (<https://statelist.free.componentdock.com>).
+> Do not scaffold `apps/pickset`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-statelist/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-pickset`. Recreation name: **PickSet** (NEW name —

@@ -1,4 +1,9 @@
 # StayBook — Design Notes & Implementation Outline
+<!-- prep-status: shipped-as=hexcraft -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-2` design this prep describes already
+> ships as `apps/hexcraft` (<https://hexcraft.free.componentdock.com>).
+> Do not scaffold `apps/staybook`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hexcraft/spec.md`.
 
 Source: ColorLib Wizard 2
 Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-2/index.html

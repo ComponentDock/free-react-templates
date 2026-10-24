@@ -1,4 +1,9 @@
 # Template: Scroll (Blog)
+<!-- prep-status: shipped-as=quill -->
+> **SHIPPED-UNDER** — the ColorLib `blogger` design this prep describes already
+> ships as `apps/quill` (<https://quill.free.componentdock.com>).
+> Do not scaffold `apps/scroll`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-quill/spec.md`.
 
 ## Purpose
 

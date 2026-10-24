@@ -1,4 +1,9 @@
 # Template: Penumbra (Education — Course Platform)
+<!-- prep-status: shipped-as=corona -->
+> **SHIPPED-UNDER** — the ColorLib `eclipse` design this prep describes already
+> ships as `apps/corona` (<https://corona.free.componentdock.com>).
+> Do not scaffold `apps/penumbra`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-corona/spec.md`.
 
 > **SUPERSEDED** — do not implement. This ColorLib source (Eclipse) already
 > shipped as **Corona** (PR #340, merged 2026-08-12, live at

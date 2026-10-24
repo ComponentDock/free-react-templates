@@ -1,4 +1,9 @@
 # Soundbyte — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=onair -->
+> **SHIPPED-UNDER** — the ColorLib `razo` design this prep describes already
+> ships as `apps/onair` (<https://onair.free.componentdock.com>).
+> Do not scaffold `apps/soundbyte`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-onair/spec.md`.
 
 ## Source
 - ColorLib: Razo (https://colorlib.com/wp/template/razo/)

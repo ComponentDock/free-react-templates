@@ -1,4 +1,9 @@
 # Template: Satnell (Personal Portfolio)
+<!-- prep-status: shipped-as=kael -->
+> **SHIPPED-UNDER** — the ColorLib `satner` design this prep describes already
+> ships as `apps/kael` (<https://kael.free.componentdock.com>).
+> Do not scaffold `apps/satnell`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-kael/spec.md`.
 
 ## Purpose
 

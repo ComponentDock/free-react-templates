@@ -1,4 +1,9 @@
 # Smelter (ColorLib Braxit) — Tasks & Design Notes
+<!-- prep-status: shipped-as=machina -->
+> **SHIPPED-UNDER** — the ColorLib `braxit` design this prep describes already
+> ships as `apps/machina` (<https://machina.free.componentdock.com>).
+> Do not scaffold `apps/smelter`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-machina/spec.md`.
 
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-smelter` by an implementer stream.

@@ -1,4 +1,9 @@
 # Template: PropVault (Real Estate)
+<!-- prep-status: shipped-as=turnkey -->
+> **SHIPPED-UNDER** — the ColorLib `holmes` design this prep describes already
+> ships as `apps/turnkey` (<https://turnkey.free.componentdock.com>).
+> Do not scaffold `apps/propvault`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-turnkey/spec.md`.
 
 ## Purpose
 

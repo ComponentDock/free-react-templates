@@ -1,4 +1,9 @@
 # PopupLayer — Task Outline & Design Notes
+<!-- prep-status: shipped-as=bellpush -->
+> **SHIPPED-UNDER** — the ColorLib `modal-10` design this prep describes already
+> ships as `apps/bellpush` (<https://bellpush.free.componentdock.com>).
+> Do not scaffold `apps/popuplayer`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-bellpush/spec.md`.
 
 ## Source
 - **ColorLib:** Modal 10

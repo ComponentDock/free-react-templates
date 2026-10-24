@@ -1,4 +1,9 @@
 # Template: Siderail (Sidebar Navigation Layout)
+<!-- prep-status: shipped-as=flank -->
+> **SHIPPED-UNDER** — the ColorLib `bootstrap-sidebar-03` design this prep describes already
+> ships as `apps/flank` (<https://flank.free.componentdock.com>).
+> Do not scaffold `apps/siderail`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-flank/spec.md`.
 
 ## Purpose
 

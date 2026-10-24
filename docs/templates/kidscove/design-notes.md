@@ -1,4 +1,9 @@
 # KidsCove — Design Notes
+<!-- prep-status: shipped-as=tadpole -->
+> **SHIPPED-UNDER** — the ColorLib `kindergarten` design this prep describes already
+> ships as `apps/tadpole` (<https://tadpole.free.componentdock.com>).
+> Do not scaffold `apps/kidscove`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-tadpole/spec.md`.
 
 ## Source
 - ColorLib: Kindergarten (https://colorlib.com/wp/template/kindergarten/)

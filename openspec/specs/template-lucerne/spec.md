@@ -1,4 +1,9 @@
 # Template: Lucerne (Hotel Landing)
+<!-- prep-status: shipped-as=regent -->
+> **SHIPPED-UNDER** — the ColorLib `suites` design this prep describes already
+> ships as `apps/regent` (<https://regent.free.componentdock.com>).
+> Do not scaffold `apps/lucerne`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-regent/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Logingrove (Login Form)
+<!-- prep-status: shipped-as=gatepost -->
+> **SHIPPED-UNDER** — the ColorLib `login-form-v16` design this prep describes already
+> ships as `apps/gatepost` (<https://gatepost.free.componentdock.com>).
+> Do not scaffold `apps/logingrove`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-gatepost/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Shopvibe (Ecommerce)
+<!-- prep-status: shipped-as=catalogly -->
+> **SHIPPED-UNDER** — the ColorLib `listashop` design this prep describes already
+> ships as `apps/catalogly` (<https://catalogly.free.componentdock.com>).
+> Do not scaffold `apps/shopvibe`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-catalogly/spec.md`.
 
 ## Purpose
 

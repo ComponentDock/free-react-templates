@@ -1,4 +1,9 @@
 # Scepter — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=reign -->
+> **SHIPPED-UNDER** — the ColorLib `monarchy` design this prep describes already
+> ships as `apps/reign` (<https://reign.free.componentdock.com>).
+> Do not scaffold `apps/scepter`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-reign/spec.md`.
 
 ColorLib source: Monarchy
 Preview: https://preview.colorlib.com/theme/monarchy/

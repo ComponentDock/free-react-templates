@@ -1,4 +1,9 @@
 # Furrow — Design Notes
+<!-- prep-status: shipped-as=greenfield -->
+> **SHIPPED-UNDER** — the ColorLib `farmland` design this prep describes already
+> ships as `apps/greenfield` (<https://greenfield.free.componentdock.com>).
+> Do not scaffold `apps/furrow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-greenfield/spec.md`.
 
 **Source**: ColorLib Farmland (https://preview.colorlib.com/theme/farmland/)
 **Category**: Agriculture / Farming landing page

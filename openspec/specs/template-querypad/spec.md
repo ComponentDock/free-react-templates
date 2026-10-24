@@ -1,4 +1,9 @@
 # Template: Querypad (Search Form)
+<!-- prep-status: shipped-as=travenzo -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-search-15` design this prep describes already
+> ships as `apps/travenzo` (<https://travenzo.free.componentdock.com>).
+> Do not scaffold `apps/querypad`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-travenzo/spec.md`.
 
 ## Purpose
 

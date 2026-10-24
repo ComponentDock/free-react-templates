@@ -1,4 +1,9 @@
 # Grillhouse (ColorLib Steakshop) — Tasks & Design Notes
+<!-- prep-status: shipped-as=carnivor -->
+> **SHIPPED-UNDER** — the ColorLib `steakshop` design this prep describes already
+> ships as `apps/carnivor` (<https://carnivor.free.componentdock.com>).
+> Do not scaffold `apps/grillhouse`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-carnivor/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-grillhouse`. Recreation name: **Grillhouse** (NEW name —

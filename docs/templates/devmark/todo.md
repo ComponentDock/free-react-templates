@@ -1,4 +1,9 @@
 # DevMark — Implementation Tasks & Design Notes
+<!-- prep-status: shipped-as=pivot -->
+> **SHIPPED-UNDER** — the ColorLib `martin` design this prep describes already
+> ships as `apps/pivot` (<https://pivot.free.componentdock.com>).
+> Do not scaffold `apps/devmark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-pivot/spec.md`.
 
 Source: ColorLib Martin (https://preview.colorlib.com/theme/martin/)
 New name: devmark

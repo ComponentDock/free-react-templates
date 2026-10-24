@@ -1,4 +1,9 @@
 # Template: Cabin (Real Estate Template)
+<!-- prep-status: shipped-as=residium -->
+> **SHIPPED-UNDER** — the ColorLib `hus` design this prep describes already
+> ships as `apps/residium` (<https://residium.free.componentdock.com>).
+> Do not scaffold `apps/cabin`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-residium/spec.md`.
 
 ## Purpose
 

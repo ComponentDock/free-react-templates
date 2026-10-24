@@ -1,4 +1,9 @@
 # Template: Kasumi (Hotel)
+<!-- prep-status: shipped-as=hibiscus -->
+> **SHIPPED-UNDER** — the ColorLib `hiroto` design this prep describes already
+> ships as `apps/hibiscus` (<https://hibiscus.free.componentdock.com>).
+> Do not scaffold `apps/kasumi`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-hibiscus/spec.md`.
 
 ## Purpose
 

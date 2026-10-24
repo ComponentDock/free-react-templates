@@ -1,4 +1,9 @@
 # Template: Guac (Creative Agency Portfolio)
+<!-- prep-status: shipped-as=minima -->
+> **SHIPPED-UNDER** — the ColorLib `avo` design this prep describes already
+> ships as `apps/minima` (<https://minima.free.componentdock.com>).
+> Do not scaffold `apps/guac`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-minima/spec.md`.
 
 ## Purpose
 

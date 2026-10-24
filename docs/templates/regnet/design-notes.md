@@ -1,4 +1,9 @@
 # Regnet — Implementation TODO & Design Notes
+<!-- prep-status: shipped-as=formloom -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-regform-15` design this prep describes already
+> ships as `apps/formloom` (<https://formloom.free.componentdock.com>).
+> Do not scaffold `apps/regnet`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formloom/spec.md`.
 
 ## Structure (section order)
 

@@ -1,4 +1,9 @@
 # Template: WashHub (Laundry Service)
+<!-- prep-status: shipped-as=presswell -->
+> **SHIPPED-UNDER** — the ColorLib `laundry` design this prep describes already
+> ships as `apps/presswell` (<https://presswell.free.componentdock.com>).
+> Do not scaffold `apps/washhub`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-presswell/spec.md`.
 
 ## Purpose
 

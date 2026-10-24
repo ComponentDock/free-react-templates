@@ -1,4 +1,9 @@
 # Template: Tonsor (Beauty — Barbershop)
+<!-- prep-status: shipped-as=dapper -->
+> **SHIPPED-UNDER** — the ColorLib `barcut` design this prep describes already
+> ships as `apps/dapper` (<https://dapper.free.componentdock.com>).
+> Do not scaffold `apps/tonsor`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-dapper/spec.md`.
 
 ## Purpose
 

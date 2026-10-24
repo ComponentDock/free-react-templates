@@ -1,4 +1,9 @@
 # Clarion — Prep Notes & Task Outline
+<!-- prep-status: shipped-as=lightwell -->
+> **SHIPPED-UNDER** — the ColorLib `cellon` design this prep describes already
+> ships as `apps/lightwell` (<https://lightwell.free.componentdock.com>).
+> Do not scaffold `apps/clarion`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-lightwell/spec.md`.
 
 Source: ColorLib CellOn (https://colorlib.com/wp/template/cellon/)
 Preview: https://preview.colorlib.com/theme/cellon/

@@ -1,4 +1,9 @@
 # Template: Amicus (Legal / Law Firm)
+<!-- prep-status: shipped-as=chambers -->
+> **SHIPPED-UNDER** — the ColorLib `lawfirm` design this prep describes already
+> ships as `apps/chambers` (<https://chambers.free.componentdock.com>).
+> Do not scaffold `apps/amicus`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-chambers/spec.md`.
 
 ## Purpose
 

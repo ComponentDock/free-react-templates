@@ -1,4 +1,9 @@
 # Beguile (ColorLib Wizard 16) — Tasks & Design Notes
+<!-- prep-status: shipped-as=grimoire -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-16` design this prep describes already
+> ships as `apps/grimoire` (<https://grimoire.free.componentdock.com>).
+> Do not scaffold `apps/beguile`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-grimoire/spec.md`.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-beguile`. Recreation name: **Beguile** (NEW name —

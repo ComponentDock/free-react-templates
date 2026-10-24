@@ -1,4 +1,9 @@
 # Halmark — Implementation Notes
+<!-- prep-status: shipped-as=captura -->
+> **SHIPPED-UNDER** — the ColorLib `halen` design this prep describes already
+> ships as `apps/captura` (<https://captura.free.componentdock.com>).
+> Do not scaffold `apps/halmark`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-captura/spec.md`.
 
 ## Replication Reference
 

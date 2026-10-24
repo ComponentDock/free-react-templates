@@ -1,4 +1,9 @@
 # Template: Wellnest (Medical / Dental Care)
+<!-- prep-status: shipped-as=healwise -->
+> **SHIPPED-UNDER** — the ColorLib `drcare` design this prep describes already
+> ships as `apps/healwise` (<https://healwise.free.componentdock.com>).
+> Do not scaffold `apps/wellnest`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-healwise/spec.md`.
 
 ## Purpose
 

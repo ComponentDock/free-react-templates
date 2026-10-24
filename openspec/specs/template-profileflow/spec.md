@@ -1,4 +1,9 @@
 # Template: ProfileFlow (Multi-Step User Profile Wizard)
+<!-- prep-status: shipped-as=formvane -->
+> **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-9` design this prep describes already
+> ships as `apps/formvane` (<https://formvane.free.componentdock.com>).
+> Do not scaffold `apps/profileflow`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-formvane/spec.md`.
 
 ## Purpose
 

@@ -1,4 +1,9 @@
 # Template: Springboard (Business / Startup)
+<!-- prep-status: shipped-as=venture -->
+> **SHIPPED-UNDER** — the ColorLib `startupbusiness` design this prep describes already
+> ships as `apps/venture` (<https://venture.free.componentdock.com>).
+> Do not scaffold `apps/springboard`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-venture/spec.md`.
 
 ## Purpose
 

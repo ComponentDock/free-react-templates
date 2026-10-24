@@ -1,4 +1,9 @@
 # Template: Fortitude (Health Fitness)
+<!-- prep-status: shipped-as=powergrip -->
+> **SHIPPED-UNDER** — the ColorLib `robust` design this prep describes already
+> ships as `apps/powergrip` (<https://powergrip.free.componentdock.com>).
+> Do not scaffold `apps/fortitude`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-powergrip/spec.md`.
 
 ## Purpose
 

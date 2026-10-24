@@ -1,4 +1,9 @@
 # Template: Fiduciary (Finance & Consultation)
+<!-- prep-status: shipped-as=unioncorp -->
+> **SHIPPED-UNDER** — the ColorLib `unioncorp` design this prep describes already
+> ships as `apps/unioncorp` (<https://unioncorp.free.componentdock.com>).
+> Do not scaffold `apps/fiduciary`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-unioncorp/spec.md`.
 
 ## Purpose
 

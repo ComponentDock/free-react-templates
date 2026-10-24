@@ -1,4 +1,9 @@
 # BizSpot — Design Notes
+<!-- prep-status: shipped-as=listhub -->
+> **SHIPPED-UNDER** — the ColorLib `listio` design this prep describes already
+> ships as `apps/listhub` (<https://listhub.free.componentdock.com>).
+> Do not scaffold `apps/bizspot`: the unchecked items below are prep history, not work.
+> Fidelity reference: `openspec/specs/template-listhub/spec.md`.
 
 Source: ColorLib "Listio" (https://preview.colorlib.com/theme/listio/)
 New name: bizspot
