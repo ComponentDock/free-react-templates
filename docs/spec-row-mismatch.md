@@ -60,7 +60,9 @@ spec's design and of the row's design, and the winner names the stale record:
 | `SLUG-OWNER` subjects              | 30    |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
-row-map fix below, `15` after the two provenance corrections below.
+row-map fix below, `15` after the two provenance corrections below, then `13` on the
+2026-10-24 re-read and `12` after the `bistro` rewrite (spec `accordion-02` → `allfood`;
+census `AGREE=1691 DRIFT=12` at that commit).
 
 ## The 15 drift cases (adjudicated against the live previews)
 
@@ -94,6 +96,7 @@ provenance-only.
 | `jobboard` | ColorLib "Careers", tokens `#1644ba`/Nunito, Careers sections | ColorLib "Jobboard", measured lime `#89ba16`, the nine reference bands, Requirements aligned to the app | the app's copy is Jobboard's; the row already said `jobboard`; tokens re-measured from `css/style.css` + `custom-bs.css` |
 | `medical` | ColorLib "Medical Wordpress Themes" (a round-up article, no demo) | ColorLib "Medical" | the body, tokens and section order were already measured from `/theme/medical/`; only the name was wrong |
 | `ledger` | ColorLib "Accounting", green `#1BA12D`/Montserrat, accounting sections | ColorLib "Daren", measured red `#ef1313` + `"Source Serif Pro"` display face, the eight Daren bands | the app's copy is Daren's (`Creative & Design`, `Search Objects`, `LOADING MORE`); **both** spec and `docs/templates/ledger/` were rewritten, tokens re-measured from `theme/daren/css/style.css` (123,435 B, sha `427b90d0…`) |
+| `bistro` | ColorLib "Accordion 02", warm-cream `#fcf8f2`/amber `#d4a373`, an "Our Specialties" Breakfast–Lunch–Dinner–Drink–Wine accordion | ColorLib "Allfood", measured orange `#ff5600` (+ sweep `#e74d00`), Josefin Sans/Poppins, the ten reference bands (hero · about · menu mosaic · about 2 · booking · services · subscribe · blog · footer) | the app's copy is Allfood's (`About Our Restaurant`, `Delicious Food`, `Best Chef`, `Quality Food`, `Our Recnet News`); **both** spec and `docs/templates/bistro/` were rewritten, tokens re-measured from `theme/allfood/assets/css/style.css` (58,090 B, sha `8e1b11a8…`). Two rows (330 `## Bootstrap`, 2666 `## Restaurant`) link `bistro` for this one design — `ROW-MULTI`, no pointer to move, no rename (`bistro` ≠ `allfood`) |
 
 Both corrections make the rule-5 audit **louder, not quieter**: the folders
 `apps/jobboard` and `apps/medical` now normalise to their own source slug, so
@@ -105,9 +108,10 @@ names. Renaming is the rename stream's call, not the prep stream's.
 
 ## Queue (docs-only, in order of yield)
 
-1. **Six spec rewrites** — `bistro`→allfood, `concertina`→accordion-16,
+1. **Five spec rewrites** — `concertina`→accordion-16,
    `formwell`→contact-form-08, `prose`→author, `vellum`→readit,
-   `zenith`→saasify (`ledger`→daren landed 2026-10-24, spec **and** docs). Each needs the
+   `zenith`→saasify (`ledger`→daren and `bistro`→allfood landed 2026-10-24, spec **and**
+   docs). Each needs the
    provenance *and* the body rewritten from the winner's live DOM (the token tables
    currently carry the other design's palette), plus `docs/templates/<app>/` — a corrected
    spec with a stale brief still misdirects the implementer. One app per run.
