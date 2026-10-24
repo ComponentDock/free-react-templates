@@ -92,7 +92,7 @@ it was built from a spec with no visual reference).
   try `curl -4` before declaring the preview unreachable.
 - **Resolve the snippet's stylesheet against the page URL:** the accordion
   family's CSS is `<page>/css/style.css?v=…`
-  (`/theme/bac/accordion-12/css/style.css`), *not*
+  (`/theme/bac/accordion-12/css/style.css`), _not_
   `/theme/bac/css/style.css` — the latter 404s with a 9-byte "Not Found".
   The page's own `href` is the authority.
 - The **Website Menus** family (`website-menu-*`) does **not** live at
@@ -124,3 +124,12 @@ it was built from a spec with no visual reference).
   `docs/ai-context.md`) or the click can silently be dropped from the suite.
 - If the preview is unreachable, fall back to the screenshot as the sole
   reference and say so in the PR.
+- **A `[x]` row is a claim, not proof.** `TEMPLATES.md` rows can credit an app
+  that renders a _different_ design (measured 2026-10-24: 10 such rows, incl.
+  Spark → `apps/spark`, which is Appco's at 25 exclusive copy hits vs 0).
+  Before treating the backlog as closed, adjudicate with
+  `python3 scripts/verify-spec-row-mismatch.py --network --only <app>`: a
+  `ROW-POINTER` verdict means the row's design was never built. Re-point the
+  row at the app you build (never edit the other app's source to "become" the
+  design) and mark **every** copy of a duplicated row — the same design often
+  appears on 2–3 rows in different categories.
