@@ -17,13 +17,13 @@ footer.
 - **Archive:** `downloads/free/bootstrap-buttons-02.zip` — HTTP 200, 110,958 B, sha256 `cb99a1ee…`; its `README.md` is titled "Button 07", so the archive agrees with the live `<title>`. It self-hosts Poppins 300–900 + an Ionicons subset as woff2.
 
 **Corrected 2026-10-24.** This spec previously named `bootstrap-buttons-14`
-("Button 04") and a `#4f46e5` / `#7c3aed` indigo palette. That is a **different
-design** — its live page opens with "Button #04", its four action colours are
-violet `#5635ea`, violet-2 `#a15bf0`, cyan `#32c5f6` and green `#48da79`, and its
-band list is Pick Your Style / Pick Your Size / Pick Your Color / Social /
-Dropdown / Group / Checkboxes / Radios. `TEMPLATES.md`, the brief and the app all
-name `-02`, so the spec was the stale layer (`docs/docs-source-drift.md`,
-SPEC-STALE).
+("Button 04") and that sibling design's `#4f46e5` / `#7c3aed` indigo palette.
+That is a **different design** — its live page opens with "Button #04", its four
+action colours are violet `#5635ea`, violet-2 `#a15bf0`, cyan `#32c5f6` and
+green `#48da79`, and its band list is Pick Your Style / Pick Your Size /
+Pick Your Color / Social / Dropdown / Group / Checkboxes / Radios.
+`TEMPLATES.md`, the brief and the app all name `-02`, so the spec was the stale
+layer (`docs/docs-source-drift.md`, SPEC-STALE).
 
 ## Source map (live preview, re-read 2026-10-24)
 
