@@ -5,8 +5,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Scholara brand palette — recreated from ColorLib "Universityedu"
-     css/style.css: green #007A5C primary, cream #FCF2EB sections,
+  /* Scholara brand palette — measured from the reference stylesheet
+     (css/style.css): green #007A5C primary, cream #FCF2EB sections,
      dark green #305534 split sections, headings #32404D. */
   --color-brand: #007a5c;
   --color-brand-dark: #005e45;

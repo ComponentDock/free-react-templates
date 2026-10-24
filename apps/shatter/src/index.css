@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Shatter brand palette — recreated from the ColorLib Smashed design tokens:
+  /* Shatter brand palette — measured from the reference design tokens:
      crimson red #ff1857, near-black headings #222222, grey body text #777777. */
   --color-brand: #ff1857;
   --color-brand-dark: #e0104d;

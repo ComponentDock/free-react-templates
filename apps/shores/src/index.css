@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Shores brand palette — recreated from the ColorLib "Seelife" design
+  /* Shores brand palette — measured from the reference design
      (css/style.css): green #60bc0f accents/buttons, yellow #fdbb00 secondary,
      dark #222222 headings, gray #777777 body text. */
   --color-brand: #60bc0f;

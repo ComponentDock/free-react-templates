@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Seekly brand blue — inspired by the original ColorLib Search Form 1
-     (blue search button). */
+  /* Seekly brand blue — inspired by the reference design (blue search button). */
   --color-brand: #6c7ae0;
 
   --color-primary-50: #f0f0ff;

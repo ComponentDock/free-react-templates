@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Seaview brand — from ColorLib Marimar preview
-     (https://preview.colorlib.com/theme/marimar/ + styles/main_styles.css):
-     a hotel landing theme with orange #ff9000 primary,
+  /* Seaview brand — measured from the reference design
+     (styles/main_styles.css): a hotel landing theme with orange #ff9000 primary,
      dark navy #0e0923 background, and Playfair Display headings. */
   --color-primary-400: #ff9000;
   --color-primary-500: #e88200;

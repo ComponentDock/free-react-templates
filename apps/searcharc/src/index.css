@@ -5,9 +5,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* SearchArc brand palette — from the ColorLib "Colorlib Search 3"
-     preview: a lavender/purple background with a white card form,
-     green search button, and Poppins font. */
+  /* SearchArc brand palette — measured from the reference stylesheet:
+     a lavender/purple background with a white card form, a green search
+     button, and the Poppins font. */
 
   /* Lavender background (#a598ee) */
   --color-lavender: #a598ee;
