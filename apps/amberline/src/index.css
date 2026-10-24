@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* Amberline palette — measured from the reference stylesheet and computed styles:
+   brand amber #ffa62b (wordmark block, active nav pill, CTA sheet, primary fill,
+   counters, featured pricing border), ink charcoal #3d424a (navbar, dark cards,
+   overlays, rotated experience strip, blog date tile), deep amber #a66000
+   (section eyebrows, testimonial roles, top-bar glyphs), footer/top-bar #363b42
+   (one step darker than the navbar), body copy #6e6e6e, page #f8f8f8,
+   light band #f8f9fa, excluded pricing rows #757575, pagination #ddd.
+   Type: Poppins only (400/500/600/700/800); body 16px/1.8.
+   Shape language: square (0 radius) buttons and inputs, skewed 20deg sheets,
+   2px chips and footer social squares, 4px cards, 5px video/newsletter,
+   20px "Most Popular" pill, 50% avatars and play control.
+   Rhythm: 128px section padding (96px mobile), 48px intro band, 96px counters,
+   60px newsletter, 112px footer top. */
+@theme {
+  --color-brand: #ffa62b;
+  --color-ink: #3d424a;
+  --color-deep-amber: #a66000;
+  --color-footer: #363b42;
+  --color-body: #6e6e6e;
+  --color-page: #f8f8f8;
+  --color-band: #f8f9fa;
+  --color-muted: #757575;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #f8f8f8;
+    color: #6e6e6e;
+    font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: rgb(0 0 0 / 0.8);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  ::selection {
+    background: #ffa62b;
+    color: #3d424a;
+  }
+  :focus-visible {
+    outline: 2px solid #ffa62b;
+    outline-offset: 2px;
+  }
+}
