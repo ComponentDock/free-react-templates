@@ -358,6 +358,6 @@ of this rewrite.
 - [x] Tokens re-measured from the reference sheet (`theme/readit/css/style.css`, 65,873 B)
 - [x] Reference recorded per `docs/replication.md`: live DOM, stylesheet, anchor census, font delivery, screenshot
 - [x] Spec ↔ row agreement: row 282 links `readit` and `vellum` (`docs/spec-row-mismatch.md` drift case retired)
-- [ ] `npm run spec:validate` passes for `template-vellum`
+- [x] `npm run spec:validate` passes for `template-vellum` (validated 2026-10-24 with the main tree's `openspec` binary: "Specification 'template-vellum' is valid")
 - [ ] Typecheck / lint / 100% coverage / build — per-app gate, run by the implementer on any app change
 - [ ] Skin parity with the reference (see "Known app delta"): transparent navbar over the gradient hero, gold middle letters in the wordmark, 50px share chips, circular pagination, `#222831` footer
