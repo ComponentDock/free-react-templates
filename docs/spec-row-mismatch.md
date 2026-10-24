@@ -212,5 +212,13 @@ missing axis is **docs-source vs spec-source**: parse the source slug out of
 `colorlib.com/wp/template/<slug>/` URL) and compare it with the spec's `Source
 slug:` — a mismatch is the same `SPEC-STALE` finding one layer down. Until it
 ships, treat any drift fix as **two artefacts**: `spec.md` *and*
-`docs/templates/<app>/`. Remaining briefs to correct by hand: `jobboard` (above),
-plus the six rewrites still in the queue.
+`docs/templates/<app>/`.
+
+Both briefs were corrected in this run: `ledger` (with its spec) and `jobboard`
+(brief only — its spec was already right). The jobboard brief prescribed Careers'
+blue `#1644ba` in a `@theme` block and Careers' copy anchors ("Job Board
+Statistics", "Featured Jobs", "Top Companies Hiring", "Ready to Start?") where the
+live reference renders "JobBoard Site Stats", "Company We've Helped" and "Looking
+For A Job?"; it also omitted the reference's testimonial carousel band, which the
+app legitimately does not ship. The remaining six rewrites in the queue must carry
+their briefs with them.

@@ -1,12 +1,22 @@
 # Jobboard — Implementation Tasks
 
-Source design: **Jobboard** (`https://colorlib.com/wp/template/careers/`) → recreation name **jobboard**. Shipped at https://jobboard.free.componentdock.com.
+Source design: ColorLib **Jobboard** (`https://colorlib.com/wp/template/jobboard/`, preview
+`https://preview.colorlib.com/theme/jobboard/`) → recreation name **jobboard**. Shipped at
+https://jobboard.free.componentdock.com.
 
-Row note: `TEMPLATES.md` links the slug `jobboard` for this app while the spec records `careers`. This brief follows the SPEC — the disagreement is recorded, not resolved (ROW-MULTIPLICITY class, see the SPEC-REFERENCE audit, main `4820f472b`).
+Row note: `TEMPLATES.md` links the slug `jobboard` for this app, and the spec records the
+same slug — no disagreement. (Until 2026-10-24 both the spec and this brief recorded ColorLib
+"Careers" and its blue `#1644ba`; the app never rendered that design. The `SPEC-STALE`
+verdict in `docs/spec-row-mismatch.md` settled it; tokens here are re-measured from
+`css/style.css` 37,406 B + `css/custom-bs.css` 36,236 B — lime `#89ba16`, Nunito.)
 
-Scope: A careers template with hero, stats banner, job listings, company logos and cta banner sections. Recreation of ColorLib's **Careers** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Scope: a job-board landing page with hero search, trending keywords, a stats band, job
+cards, a "Looking For A Job?" call to action, a client-logo row, a mobile-app band and a
+four-column footer. Recreation of ColorLib's **Jobboard** template as a React 19 + Vite +
+Tailwind 4 + TypeScript single-page application.
 
-> The spec carries no section-level requirements (it predates that convention), so THIS brief is the authoritative structure: the order below is the shipped order in `apps/jobboard/src/App.tsx`.
+> The spec carries the measured section list and the token table; this brief mirrors it and
+> adds the app's one documented omission (the reference's testimonial carousel band).
 
 ## Component breakdown
 
