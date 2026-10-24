@@ -1,17 +1,17 @@
-# Itkol — Design Notes
+# Vantix — Design Notes
 
 Reference: **Itkol** — `https://colorlib.com/wp/template/itkol/`  
 Live preview: `https://preview.colorlib.com/theme/itkol/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/itkol-free-template.jpg  
-Shipped: https://itkol.free.componentdock.com
+Shipped: https://vantix.free.componentdock.com
 
-Itkol is a single-page IT-services landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "IT-Solution" (Itkol) website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Vantix is a single-page IT-services landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Itkol" (marketing title "IT-Solution") website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Josefin Sans**, **Josefin Sans:wght@500;600;700**, **Mulish**
 
-## Design tokens (`apps/itkol/src/index.css` `@theme`)
+## Design tokens (`apps/vantix/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ Fonts loaded by `index.html` (Google Fonts): **Josefin Sans**, **Josefin Sans:wg
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Itkol", anchor links to the page's sections, a "Get Free Quote" button, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Vantix", anchor links to the page's sections, a "Get Free Quote" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline and a blurb.
@@ -92,8 +92,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/itkol/` may name the source designer,
+- **Provenance ban.** No file under `apps/vantix/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/itkol/public/CNAME` = `itkol.free.componentdock.com`
-  and the package `homepage` = `https://itkol.free.componentdock.com`.
+- **Deploy identity.** `apps/vantix/public/CNAME` = `vantix.free.componentdock.com`
+  and the package `homepage` = `https://vantix.free.componentdock.com`.

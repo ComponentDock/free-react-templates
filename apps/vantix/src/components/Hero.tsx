@@ -17,8 +17,8 @@ export function Hero() {
           </ButtonLink>
         </div>
         <img
-          src="https://picsum.photos/seed/itkol-hero/640/560"
-          alt="Itkol IT solution preview"
+          src="https://picsum.photos/seed/vantix-hero/640/560"
+          alt="Vantix IT solution preview"
           className="mx-auto w-full max-w-md rounded-xl shadow-xl"
         />
       </div>

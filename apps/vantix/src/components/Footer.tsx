@@ -12,7 +12,7 @@ const importantLinks = [
 const contactLines = [
   { icon: MapPin, text: '600/B, South Bhadalta, Bagbazar' },
   { icon: Phone, text: '+1 234 567 890' },
-  { icon: Mail, text: 'hello@itkol.example' },
+  { icon: Mail, text: 'hello@vantix.example' },
 ] as const
 
 export function Footer() {
@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <h2 className="font-display text-2xl font-bold text-white">About Us</h2>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
-              Itkol delivers modern IT solutions — data, security, and cloud — for startups and
+              Vantix delivers modern IT solutions — data, security, and cloud — for startups and
               enterprises that want to grow without limits.
             </p>
             <div className="mt-6">
@@ -97,9 +97,9 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-gray-800 pt-8 text-sm text-gray-500 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} Itkol. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Vantix. All rights reserved.</p>
           <p>
-            Made with <span aria-hidden="true">♥</span> by Itkol
+            Made with <span aria-hidden="true">♥</span> by Vantix
           </p>
         </div>
       </div>

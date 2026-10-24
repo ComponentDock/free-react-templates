@@ -2,17 +2,17 @@ const cases = [
   {
     title: 'Inspire Design Studio',
     blurb: 'A complete digital experience for a leading creative studio.',
-    image: 'https://picsum.photos/seed/itkol-case-1/640/420',
+    image: 'https://picsum.photos/seed/vantix-case-1/640/420',
   },
   {
     title: 'Inspire Design Studio',
     blurb: 'Scalable platform architecture for a fast-growing agency.',
-    image: 'https://picsum.photos/seed/itkol-case-2/640/420',
+    image: 'https://picsum.photos/seed/vantix-case-2/640/420',
   },
   {
     title: 'Inspire Design Studio',
     blurb: 'Cloud migration and security hardening for enterprise teams.',
-    image: 'https://picsum.photos/seed/itkol-case-3/640/420',
+    image: 'https://picsum.photos/seed/vantix-case-3/640/420',
   },
 ] as const
 

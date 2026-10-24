@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, all sections, and the footer with the correct landmarks and title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Itkol — App Landing Template')
+    expect(document.title).toBe('Vantix — App Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -24,7 +24,7 @@ describe('App', () => {
       screen.getByRole('heading', { level: 2, name: /IT services customized for your industry/ }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { level: 2, name: 'ITKol - Partner for Your Business' }),
+      screen.getByRole('heading', { level: 2, name: 'Vantix - Partner for Your Business' }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { level: 2, name: 'Some of Our Great Stuffs' }),

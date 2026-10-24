@@ -7,7 +7,7 @@ describe('About', () => {
     render(<About />)
 
     expect(
-      screen.getByRole('heading', { level: 2, name: 'ITKol - Partner for Your Business' }),
+      screen.getByRole('heading', { level: 2, name: 'Vantix - Partner for Your Business' }),
     ).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Request a Quote' })).toBeInTheDocument()
 

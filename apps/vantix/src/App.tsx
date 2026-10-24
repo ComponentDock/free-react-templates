@@ -11,7 +11,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Itkol — App Landing Template'
+    document.title = 'Vantix — App Landing Template'
   }, [])
 
   return (

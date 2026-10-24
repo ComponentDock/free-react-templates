@@ -11,14 +11,14 @@ export function About() {
     <section id="about" aria-label="About" className="bg-paper py-16 sm:py-24 dark:bg-gray-900">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
         <img
-          src="https://picsum.photos/seed/itkol-about/640/520"
-          alt="Itkol team at work"
+          src="https://picsum.photos/seed/vantix-about/640/520"
+          alt="Vantix team at work"
           className="w-full rounded-xl shadow-lg"
           loading="lazy"
         />
         <div>
           <h2 className="font-display text-3xl font-bold text-navy sm:text-4xl dark:text-white">
-            ITKol - Partner for Your Business
+            Vantix - Partner for Your Business
           </h2>
           <p className="mt-5 leading-relaxed text-body dark:text-gray-400">
             We understand the complexities of modern markets and translate them into real business

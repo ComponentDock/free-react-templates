@@ -1,11 +1,11 @@
-# Itkol (Colorlib IT-Solution) — Tasks & Design Notes
+# Vantix (Colorlib Itkol) — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-itkol`.
+> Implementation ships later on `feat/template-vantix`.
 
 ## Design notes (replication findings)
 
-- **Original:** ColorLib "IT-Solution" (TEMPLATES.md name: Itkol) — IT
+- **Original:** ColorLib "Itkol" (marketing title "IT-Solution") — IT
   services / tech solutions site (source: https://colorlib.com/wp/template/itkol/).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/itkol/
   (HTTP 200, full rendered DOM + `assets/css/style.css` (67KB) extracted).
@@ -28,7 +28,7 @@
      customized for your industry" + **Industries & Manufacturing,
      Education & Health, Retail & Ecommerce, Travel & Hospitality**.
   6. CTA (`collection`): "Need a Technology support?" + **Get Started Now**.
-  7. About: "ITKol - Partner for Your Business" + blurb + **Request a
+  7. About: "Vantix - Partner for Your Business" + blurb + **Request a
      Quote** + stats **2500+ / 350+ / 20+**.
   8. Case studies: "Some of Our Great Stuffs" + "inspire design studio"
      cards x3.
@@ -38,10 +38,11 @@
   - Light bgs `#f9f9ff`.
   - Fonts: **"Josefin Sans"** + **"Mulish"** (Google Fonts `<link>`).
   - Pink rounded buttons with white text.
-- **Recreation name:** Itkol (kept — TEMPLATES.md name; package-safe).
-  App folder `apps/itkol`, package `@free-react-templates/itkol`.
+- **Recreation name:** Vantix — an original IT-services name, distinct from
+  the source design name. App folder `apps/vantix`, package
+  `@free-react-templates/vantix`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/itkol-<n>/<w>/<h>`); lucide-react icons; Josefin
+  (`picsum.photos/seed/vantix-<n>/<w>/<h>`); lucide-react icons; Josefin
   Sans + Mulish via Google Fonts; forms prevent default (no backend); pink
   primary + navy in `@theme`; repo-standard Navbar (dark-mode toggle) +
   Footer chrome.
@@ -49,16 +50,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-itkol/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-vantix/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/itkol` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/itkol`).
+- [x] Create `apps/vantix` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/vantix`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [x] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [x] Push `feat/template-itkol`, open PR (source template, preview URL,
+- [x] Push `feat/template-vantix`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -71,8 +72,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/itkol/` may name the source designer,
+- **Provenance ban.** No file under `apps/vantix/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/itkol/public/CNAME` = `itkol.free.componentdock.com`
-  and the package `homepage` = `https://itkol.free.componentdock.com`.
+- **Deploy identity.** `apps/vantix/public/CNAME` = `vantix.free.componentdock.com`
+  and the package `homepage` = `https://vantix.free.componentdock.com`.

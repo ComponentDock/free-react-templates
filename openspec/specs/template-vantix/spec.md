@@ -1,16 +1,16 @@
-# Template: Itkol (App Landing Page)
+# Template: Vantix (App Landing Page)
 
 ## Purpose
 
-Itkol is a single-page IT-services landing template in the
+Vantix is a single-page IT-services landing template in the
 free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "IT-Solution" (Itkol) website template design (see
+ColorLib free "Itkol" (marketing title "IT-Solution") website template design (see
 TEMPLATES.md), built under a different name with the monorepo stack: Vite +
 React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design reference (replication findings)
 
-- **Original:** ColorLib "IT-Solution" — IT services / tech solutions site
+- **Original:** ColorLib "Itkol" (marketing title "IT-Solution") — IT services / tech solutions site
   (source: https://colorlib.com/wp/template/itkol/).
 - **Demo DOM analyzed:** https://preview.colorlib.com/theme/itkol/
   (HTTP 200, full rendered DOM + `assets/css/style.css` (67KB) extracted).
@@ -26,7 +26,7 @@ React 19 + Tailwind CSS 4 + TypeScript.
   More) → Industries ("Industries We Serve — IT services customized for
   your industry" + Industries & Manufacturing, Education & Health, Retail &
   Ecommerce, Travel & Hospitality) → CTA ("Need a Technology support?" +
-  Get Started Now) → About ("ITKol - Partner for Your Business" + Request a
+  Get Started Now) → About ("Vantix - Partner for Your Business" + Request a
   Quote + stats 2500+/350+/20+) → Case studies ("Some of Our Great Stuffs"
   - inspire design studio x3) → Footer.
 - **Design tokens extracted from `style.css`:**
@@ -36,10 +36,10 @@ React 19 + Tailwind CSS 4 + TypeScript.
   - Fonts: **"Josefin Sans"** + **"Mulish"** (Google Fonts).
   - Pink rounded buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/itkol-<n>/<w>/<h>`); icons → lucide-react; forms
+  (`picsum.photos/seed/vantix-<n>/<w>/<h>`); icons → lucide-react; forms
   prevent default (no backend); no assets copied.
 
-Itkol lives in `apps/itkol` and uses shared components from `packages/ui`
+Vantix lives in `apps/vantix` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -55,15 +55,15 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Itkol",
+The system SHALL render a top navigation bar with the site name "Vantix",
 anchor links to the page's sections, a "Get Free Quote" button, and a
 dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Itkol page is rendered
+- **GIVEN** the Vantix page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Itkol" and links to Home, Services, About, and Contact
+- **THEN** the navbar SHALL show the site name "Vantix" and links to Home, Services, About, and Contact
 - **AND** the navbar SHALL show a "Get Free Quote" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -130,7 +130,7 @@ Quote" button, and stats.
 
 - **GIVEN** the page is rendered
 - **WHEN** the about section is displayed
-- **THEN** it SHALL contain a heading "ITKol - Partner for Your Business"
+- **THEN** it SHALL contain a heading "Vantix - Partner for Your Business"
 - **AND** it SHALL show a "Request a Quote" button and at least three stats
 
 ### Requirement: CTA band
@@ -177,10 +177,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Itkol app is rendered
+- **GIVEN** the Vantix app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Itkol — App Landing Template"
+- **AND** the document title SHALL be "Vantix — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -200,7 +200,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/itkol/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/vantix/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -209,7 +209,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/itkol/` is inspected
+- **WHEN** every non-test file under `apps/vantix/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -217,12 +217,12 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Itkol" and links to Home, Services, About, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Vantix" and links to Home, Services, About, and Contact
 - [x] Hero section — it SHALL contain a level-1 heading "We provide best IT solution"
 - [x] Services section — it SHALL contain a heading "IT solutions for startup and enterprises"
 - [x] Features section — it SHALL contain a heading "Grow your business fast."
 - [x] Industries section — it SHALL contain a heading "IT services customized for your industry"
-- [x] About section — it SHALL contain a heading "ITKol - Partner for Your Business"
+- [x] About section — it SHALL contain a heading "Vantix - Partner for Your Business"
 - [x] CTA band — it SHALL contain the heading "Innovative IT Solution for your Business & Startup"
 - [x] Case studies — it SHALL contain the heading "Some of Our Great Stuffs"
 - [ ] Footer — it SHALL show link columns and a copyright line

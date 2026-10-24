@@ -26,7 +26,7 @@ export function Navbar() {
           href="#home"
           className="font-display text-2xl font-bold tracking-wide text-primary-500 dark:text-primary-400"
         >
-          Itkol
+          Vantix
         </a>
 
         <div className="flex items-center gap-4">
