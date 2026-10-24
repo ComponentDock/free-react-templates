@@ -47,17 +47,17 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24k, main `a9d7d2298` + this commit — the `prose` and `vellum` rewrites and the #1858 `flint` row fix are all in; the steps that got here are in the chain below)
+## Census (re-measured 2026-10-24l, main `8e8ae25cc` + this commit — the `prose`, `vellum` and `zenith` rewrites and the #1858 `flint` row fix are all in; the steps that got here are in the chain below)
 
 |                                    | count |
 | ---------------------------------- | ----: |
 | specs                              | 3,229 |
 | apps                               | 1,704 |
-| `AGREE`                            | 1,696 |
-| `DRIFT`                            | **7** |
+| `AGREE`                            | 1,697 |
+| `DRIFT`                            | **6** |
 | `PREP` (spec-only)                 | 1,525 |
 | `ROW-MULTI` apps                   | 36    |
-| `SLUG-OWNER` subjects              | 14    |
+| `SLUG-OWNER` subjects              | 12    |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
 row-map fix below, `15` after the two provenance corrections below, then `13` on the
@@ -66,10 +66,11 @@ after the `concertina` rewrite (spec `accordion-05` → `accordion-16`; census
 `AGREE=1692 DRIFT=11` at that commit), `10` after the `formwell` rewrite (spec
 `contact-form-v15` → `contact-form-08`; census `AGREE=1693 DRIFT=10`), `9` after the `prose`
 rewrite (spec `blogger` → `author`; census `AGREE=1694 DRIFT=9`), `8` after #1858 re-pointed
-both `spark` rows to the rebuilt `flint` (`AGREE=1695 DRIFT=8`), and `7` after the `vellum` rewrite
-(spec `accordion-16` → `readit`; census `AGREE=1696 DRIFT=7` at this commit, apps `1704`).
+both `spark` rows to the rebuilt `flint` (`AGREE=1695 DRIFT=8`), `7` after the `vellum` rewrite
+(spec `accordion-16` → `readit`; census `AGREE=1696 DRIFT=7`), and `6` after the `zenith` rewrite
+(spec `bootstrap-buttons-05` → `saasify`; census `AGREE=1697 DRIFT=6` at this commit, apps `1704`).
 
-## The 7 remaining drift cases (adjudicated against the live previews)
+## The 6 remaining drift cases (adjudicated against the live previews)
 
 | app | verdict | spec says | row says | copy found on the winner |
 | --- | --- | --- | --- | --- |
@@ -79,13 +80,12 @@ both `spark` rows to the rebuilt `flint` (`AGREE=1695 DRIFT=8`), and `7` after t
 | `logistico` | `ROW-POINTER` | thelogistico | logistico | "We Give You Complete Control", "of Your Shipments" |
 | `stride` | `ROW-POINTER` | stamina | accordion-19 | "We Believe Little Things Matter", "Stay Healthy" |
 | `sudsy` | `ROW-POINTER` | carwash | sparkleclean | "Your car will look as your new one", "We have an application" |
-| `zenith` | `SPEC-STALE` | bootstrap-buttons-05 | saasify | "Active users", "Uptime SLA", "Everything you need to ship faster" |
 
 Three of the ten were **spec-side** (`prose`, `vellum`, `zenith`): the spec described a design the
 app does not render, and in all three the body (token table, section list, Requirements) was the
-other design's too — only `jobboard` and `medical` were provenance-only. `prose` and `vellum` are
-now fixed, so **one** spec-side case remains (`zenith`). Four are **row pointers**
-(`givehope`, `logistico`, `stride`, `sudsy`), one is **both-stale** (`bellows`) and one is still
+other design's too — only `jobboard` and `medical` were provenance-only. `prose`, `vellum` and
+`zenith` are now fixed, so **no** spec-side case remains: the six left are four **row pointers**
+(`givehope`, `logistico`, `stride`, `sudsy`), one **both-stale** (`bellows`) and one still
 **unresolved** (`cirrus`). `spark` left this table when #1858 re-pointed both of its rows to the
 rebuilt `flint`.
 
@@ -102,6 +102,7 @@ rebuilt `flint`.
 | `formwell` | ColorLib "Contact Form V15" (`/template/contact-form-v15/`, demo `etc/cf/ContactFrom_v15/`, 12,176 B sheet, Poppins + `#57b846`), a map-`iframe` page behind a banner card with "Contact Us" / "Feel free to drop us a line below!" and Phone + underline fields | ColorLib "Contact Form 08", measured green `#71a95a` (+ hover `#5a8947`), 5px radii, 50px borderless white fields under `0 8px 19px -13px rgba(0,0,0,.09)`, 83.33% card with a 58.33% form column on a photo ground, 12px/600 uppercase labels | the app's copy is contact-form-08's (`Get in touch with us` 1/0, `Email Address` 1/0, `Send Message` 1/0, `Subject` 2/0 against v15); **both** spec and `docs/templates/formwell/` were rewritten, tokens re-measured from `theme/bootstrap/contact-form-08/css/style.css` (14,838 B, sha `2e795975…`, plus `snippet.js` 2,687 B sha `dd02a14f…`); the zip's two files hash identically, so the archive is the live twin. Row **1411** already said `contact-form-08`, no rename (`formwell` ≠ `contact-form-08`) |
 | `spark` (rows 626 + 1177) | ColorLib "Spark" credited to `apps/spark`, a 25→0 copy match for **Appco** | the Spark design rebuilt as **`flint`** (`apps/flint`); both rows re-pointed at it | the app's own copy is Appco's at 25 exclusive hits vs 0 for Spark (`--network --only spark`), and Appco is already shipped as `flowly` (row 56). `apps/spark` therefore leaves the DRIFT bucket and becomes the census's first `UNLINKED` app — a surplus duplicate of `flowly`, the `bellows`/`pleat` shape, not a second ship of Spark. Fidelity measured from `theme/spark/css/style.css` (60,200 B, sha `d463cfe0…`, teal `#367f7c`) |
 | `vellum` | ColorLib "Accordion 16" (`/theme/bac/accordion-16/`, lime `#72c02c`, one accordion band) | ColorLib "Readit", measured gold `#ffd369` + the `45deg #f200ff → #ffba42` hero wash at `.8`, Poppins, the five reference bands (navbar · gradient hero · nine magazine rows · five-page pagination · four-column `#222831` footer) | the app's copy is Readit's (`Hello! Welcome to` 1/0, `Build a website in minutes with Adobe Templates` 9/0, `latest News` 1/0, `Have a Questions?` 1/0, `203 Fake St. Mountain View…` 1/0); **both** spec and `docs/templates/vellum/` were rewritten, tokens re-measured from `theme/readit/css/style.css` (65,873 B, sha `925bebf2…`) and `js/main.js` (6,101 B, sha `62bfa488…`). One row (282, `## Blog (60)`) links `vellum` for this design — no pointer to move, no rename (`vellum` ≠ `readit`) |
+| `zenith` | ColorLib "Bootstrap Buttons 05" (`/template/bootstrap-buttons-05/`, indigo `#4f46e5`, Inter, a button gallery: solid/outline/ghost variants, shape and size demos, a live prop playground) | ColorLib "Saasify", measured violet `#7c3aed` (+ `#6d28d9` hover, `#8b5cf6` mid, `#5b21b6` deep) with a cyan `#06b6d4` gradient endpoint, Inter 5.2.8, one hashed Astro sheet, the seven reference bands (navbar · hero + stats + dashboard · six features · three tiers + billing switch · three testimonials · gradient CTA · `#111827` footer) | the app's copy is Saasify's (`Active users` 1/0, `Uptime SLA` 1/0, `Everything you need to ship faster` 1/0 against bootstrap-buttons-05); **both** spec and `docs/templates/zenith/` were rewritten, tokens re-measured from `theme/saasify/_astro/Base.D0NGrHY1.css` (46,802 B, sha `4c1d7758…`). Two rows (158 `## Astro (48)`, 2929 `## Tailwind Css (48)`) list the same design and both link `zenith` — the same slug twice, so no `ROW-MULTI`, no pointer to move, no rename (`zenith` ≠ `saasify`) |
 
 Both corrections make the rule-5 audit **louder, not quieter**: the folders
 `apps/jobboard` and `apps/medical` now normalise to their own source slug, so
@@ -113,14 +114,15 @@ names. Renaming is the rename stream's call, not the prep stream's.
 
 ## Queue (docs-only, in order of yield)
 
-1. **One spec rewrite** — `zenith`→saasify
-   (`ledger`→daren, `bistro`→allfood, `concertina`→accordion-16,
-   `formwell`→contact-form-08, `prose`→author and `vellum`→readit landed 2026-10-24, spec **and**
-   docs). Each needs the provenance *and* the body rewritten from the winner's live DOM (the token tables
-   currently carry the other design's palette), plus `docs/templates/<app>/` — a corrected
-   spec with a stale brief still misdirects the implementer. One app per run.
-   The family demos live under a prefix: `zenith`'s saasify is `/theme/saasify/` (the landed `prose` used `/theme/author/`, and
-   `formwell` needed the `/theme/bootstrap/` prefix, which the slug-only ladder cannot resolve).
+1. **No spec rewrites left.** All seven spec-side cases are closed — `ledger`→daren,
+   `bistro`→allfood, `concertina`→accordion-16, `formwell`→contact-form-08, `prose`→author,
+   `vellum`→readit and `zenith`→saasify landed 2026-10-24, spec **and** docs each time. The census now
+   reads `AGREE=1697 DRIFT=6` with **zero** `SPEC-STALE` subjects; what remains is row-pointer,
+   both-stale and unresolved work, which belongs to the implementer/rename stream (items 2–5).
+   The family-demo prefixes still matter for anyone re-reading those designs: `accordion-*` is
+   `/theme/bac/`, `bootstrap-buttons-*` is `/theme/bb/`, `contact-form-*` is `/theme/bootstrap/`,
+   and the four-page business themes resolve from the bare slug (`/theme/saasify/`,
+   `/theme/author/`, `/theme/readit/`).
 2. **Four row pointers** (implementer/rename stream) — the rows below credit the
    app with a design it does not recreate, so they are false `[x]`s and their
    designs are, in fact, unshipped:
