@@ -1,10 +1,10 @@
 const projects = [
-  { src: 'https://picsum.photos/seed/mosh-work-1/600/480', name: 'DFR Corp. Branding' },
-  { src: 'https://picsum.photos/seed/mosh-work-2/600/480', name: 'Nova Identity' },
-  { src: 'https://picsum.photos/seed/mosh-work-3/600/480', name: 'Pulse App Design' },
-  { src: 'https://picsum.photos/seed/mosh-work-4/600/480', name: 'Atlas Photography' },
-  { src: 'https://picsum.photos/seed/mosh-work-5/600/480', name: 'Vertex Web Design' },
-  { src: 'https://picsum.photos/seed/mosh-work-6/600/480', name: 'Orbit Print Pack' },
+  { src: 'https://picsum.photos/seed/motif-work-1/600/480', name: 'DFR Corp. Branding' },
+  { src: 'https://picsum.photos/seed/motif-work-2/600/480', name: 'Nova Identity' },
+  { src: 'https://picsum.photos/seed/motif-work-3/600/480', name: 'Pulse App Design' },
+  { src: 'https://picsum.photos/seed/motif-work-4/600/480', name: 'Atlas Photography' },
+  { src: 'https://picsum.photos/seed/motif-work-5/600/480', name: 'Vertex Web Design' },
+  { src: 'https://picsum.photos/seed/motif-work-6/600/480', name: 'Orbit Print Pack' },
 ] as const
 
 export function Portfolio() {

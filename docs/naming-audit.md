@@ -13,9 +13,19 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Mosh → Motif (2026-10-24f)
+
+**8 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/expo`, `apps/justlaw`, `apps/nurture`, `apps/oraxol`, `apps/pawpal`,
+`apps/petsitting`, `apps/petvet`, `apps/unioncorp`), plus `apps/itkol`, which a
+name-only test still cannot see. `apps/mosh` → `motif` cleared the first of the
+nine visible violations; the source name survives only in the spec's
+`ColorLib "Mosh"` provenance line and in the reference's own `.mosh-preloader`
+selector, which the token evidence quotes verbatim.
+
 ## State after Medico → Sanara + the provenance-grammar backfill (2026-10-24e)
 
-**10 apps reuse their source name.** `apps/medico` → `sanara` (#1839) landed
+**10 apps reused their source name.** `apps/medico` → `sanara` (#1839) landed
 first, which left 4 in the name-only count; the prep stream's provenance-grammar
 axis (`docs/provenance-grammar.md`) then made the audit readable for the 445 specs
 that carried no machine-readable `ColorLib "X"` line and found 5 more, plus one
@@ -28,7 +38,6 @@ not see before**:
 
 | app              | source design | note                                                    |
 | ---------------- | ------------- | ------------------------------------------------------- |
-| apps/mosh        | Mosh          | known since the first batch                             |
 | apps/pawpal      | PawPal        | known                                                   |
 | apps/petsitting  | Petsitting    | known                                                   |
 | apps/petvet      | Petvet        | known                                                   |
@@ -52,11 +61,11 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
-`massive` → `appmint` (#1838), `medico` → `sanara` (#1839).
+`massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
+`mosh` → `motif` (#1840).
 
 | app             | source design |
 | --------------- | ------------- |
-| apps/mosh       | Mosh          |
 | apps/pawpal     | PawPal        |
 | apps/petsitting | Petsitting    |
 | apps/petvet     | Petvet        |

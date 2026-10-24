@@ -1,10 +1,10 @@
 const clients = [
-  { src: 'https://picsum.photos/seed/mosh-client-1/240/120', name: 'Client Alpha' },
-  { src: 'https://picsum.photos/seed/mosh-client-2/240/120', name: 'Client Beta' },
-  { src: 'https://picsum.photos/seed/mosh-client-3/240/120', name: 'Client Gamma' },
-  { src: 'https://picsum.photos/seed/mosh-client-4/240/120', name: 'Client Delta' },
-  { src: 'https://picsum.photos/seed/mosh-client-5/240/120', name: 'Client Epsilon' },
-  { src: 'https://picsum.photos/seed/mosh-client-6/240/120', name: 'Client Zeta' },
+  { src: 'https://picsum.photos/seed/motif-client-1/240/120', name: 'Client Alpha' },
+  { src: 'https://picsum.photos/seed/motif-client-2/240/120', name: 'Client Beta' },
+  { src: 'https://picsum.photos/seed/motif-client-3/240/120', name: 'Client Gamma' },
+  { src: 'https://picsum.photos/seed/motif-client-4/240/120', name: 'Client Delta' },
+  { src: 'https://picsum.photos/seed/motif-client-5/240/120', name: 'Client Epsilon' },
+  { src: 'https://picsum.photos/seed/motif-client-6/240/120', name: 'Client Zeta' },
 ] as const
 
 export function Clients() {

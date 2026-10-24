@@ -1,8 +1,8 @@
-# Template: Mosh (App Landing Page)
+# Template: Motif (App Landing Page)
 
 ## Purpose
 
-Mosh is a single-page creative-business landing template in the
+Motif is a single-page creative-business landing template in the
 free-react-templates monorepo. It is an original React recreation of the
 ColorLib free "Mosh" website template design (see TEMPLATES.md), built
 under a different name with the monorepo stack: Vite + React 19 + Tailwind
@@ -33,10 +33,10 @@ CSS 4 + TypeScript.
   - Font: **"Roboto"** (Google Fonts).
   - Blue buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/mosh-<n>/<w>/<h>`); icons → lucide-react; no assets
+  (`picsum.photos/seed/motif-<n>/<w>/<h>`); icons → lucide-react; no assets
   copied.
 
-Mosh lives in `apps/mosh` and uses shared components from `packages/ui`
+Motif lives in `apps/motif` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
 
 ## Design tokens
@@ -52,15 +52,15 @@ Recorded so the palette is machine-readable: the prep already states this colour
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Mosh",
+The system SHALL render a top navigation bar with the site name "Motif",
 anchor links to the page's sections, a "Login" link, and a dark-mode toggle
 button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Mosh page is rendered
+- **GIVEN** the Motif page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Mosh" and links to Home, About, Services, Portfolio, and Contact
+- **THEN** the navbar SHALL show the site name "Motif" and links to Home, About, Services, Portfolio, and Contact
 - **AND** the navbar SHALL show a "Login" link and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -182,10 +182,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Mosh app is rendered
+- **GIVEN** the Motif app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Mosh — App Landing Template"
+- **AND** the document title SHALL be "Motif — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -205,7 +205,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/mosh/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/motif/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -214,7 +214,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/mosh/` is inspected
+- **WHEN** every non-test file under `apps/motif/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -222,7 +222,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Mosh" and links to Home, About, Services, Portfolio, and Contact
+- [x] Navigation bar — the navbar SHALL show the site name "Motif" and links to Home, About, Services, Portfolio, and Contact
 - [ ] Hero section — it SHALL contain a level-1 heading "A Clean and Modern Template"
 - [x] Highlights section — it SHALL show numbered items including "No1 in Sales!", "Online Marketing", and "Modern Design"
 - [x] Clients section — it SHALL contain a heading "All our clients love our work"

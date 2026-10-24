@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Mosh brand colors — measured from the reference stylesheet
+  /* Motif brand colors — measured from the reference stylesheet
      stylesheet:
      primary blue #4a7aec (buttons/accents), light blue #a2baff, dark text
      #211b31, secondary text #404551, light gray #f1f2f3. */

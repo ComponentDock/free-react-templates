@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('shows the site name, section links, login link, and dark-mode toggle', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: 'Mosh' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Motif' })).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
     for (const label of ['Home', 'About Us', 'Services', 'Portfolio', 'Contact']) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()

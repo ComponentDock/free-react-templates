@@ -1,7 +1,7 @@
-# Mosh (Colorlib Mosh) — Tasks & Design Notes
+# Motif (recreation of ColorLib "Mosh") — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-mosh`.
+> Implementation ships later on `feat/template-motif`.
 
 ## Design notes (replication findings)
 
@@ -14,7 +14,7 @@
   hero, 6 numbered highlight cards, clients strip, services, and feature
   cards.
 - **Structure (1:1, section order):**
-  1. Navbar: logo "Mosh" + Home, Pages, About Us, Services, Portfolio,
+  1. Navbar: logo "Motif" + Home, Pages, About Us, Services, Portfolio,
      Blog, Contact + **Login / Register**.
   2. Hero: h1 "A Clean and Modern Template" + **Get your freebie template
      now!**.
@@ -31,27 +31,28 @@
   - Dark text `#211b31`, `#404551`; light gray bgs.
   - Font: **"Roboto"** (Google Fonts `<link>`).
   - Blue buttons with white text.
-- **Recreation name:** Mosh (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/mosh`, package
-  `@free-react-templates/mosh`.
+- **Recreation name:** Motif — a new, original name (AGENTS.md rule 5).
+  App folder `apps/motif`, package `@free-react-templates/motif`; the
+  ColorLib source name appears only in this prep doc, the spec provenance
+  line, TEMPLATES.md and the PR.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/mosh-<n>/<w>/<h>`); lucide-react icons; Roboto via
+  (`picsum.photos/seed/motif-<n>/<w>/<h>`); lucide-react icons; Roboto via
   Google Fonts; blue primary in `@theme`; repo-standard Navbar (dark-mode
   toggle) + Footer chrome.
 - Reuse `packages/ui` (Button, ButtonLink, Badge, Card, cn).
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-mosh/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-motif/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/mosh` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/mosh`).
+- [x] Create `apps/motif` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/motif`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-mosh`, open PR (source template, preview URL,
+- [ ] Push `feat/template-motif`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -64,8 +65,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/mosh/` may name the source designer,
+- **Provenance ban.** No file under `apps/motif/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/mosh/public/CNAME` = `mosh.free.componentdock.com`
-  and the package `homepage` = `https://mosh.free.componentdock.com`.
+- **Deploy identity.** `apps/motif/public/CNAME` = `motif.free.componentdock.com`
+  and the package `homepage` = `https://motif.free.componentdock.com`.

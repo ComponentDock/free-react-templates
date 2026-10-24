@@ -9,7 +9,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <h3 className="font-display text-xl font-bold text-white">About Mosh</h3>
+            <h3 className="font-display text-xl font-bold text-white">About Motif</h3>
             <p className="mt-4 text-sm leading-relaxed text-gray-400">
               A free creative business template built with React, Tailwind CSS, and TypeScript.
             </p>
@@ -64,16 +64,16 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-primary-400" aria-hidden="true" />
-                <span className="text-gray-400">info@mosh.com</span>
+                <span className="text-gray-400">info@motif.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col items-center gap-4 border-t border-white/10 pt-8 text-sm text-gray-400 sm:flex-row sm:justify-between">
-          <p>Copyright © {new Date().getFullYear()} Mosh. All rights reserved.</p>
+          <p>Copyright © {new Date().getFullYear()} Motif. All rights reserved.</p>
           <p>
-            Made with <span aria-hidden="true">♥</span> by Mosh
+            Made with <span aria-hidden="true">♥</span> by Motif
           </p>
         </div>
       </div>
