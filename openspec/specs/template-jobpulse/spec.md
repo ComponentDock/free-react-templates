@@ -6,18 +6,27 @@ A full-viewport job search form template with a solid blue background, centered 
 
 ## Source
 
-- ColorLib slug: `search-form-bar-08`
-- Preview URL: `https://preview.colorlib.com/theme/search-form-bar-08/` (404 — using screenshot as reference)
+- **Source slug:** `search-form-bar-08`
+- Preview URL: `https://preview.colorlib.com/theme/bootstrap/search-form-bar-08/` — **HTTP 200**,
+  4,963 B (the slug-only `preview.colorlib.com/theme/search-form-bar-08/` answers **404**; the
+  `search-form-bar-*` family lives under the `/theme/bootstrap/` prefix). The live DOM is the
+  reference, not the screenshot: 1 anchor (the dead `#` CTA), one `<form>`, 2 inputs + 1 `<select>`.
+- Sheet: `css/style.css?v=1b7b7dc0` — 15,416 B, sha256 `84ad4e04c002…`, identical to the copy
+  inside `downloads/free/search-form-bar-08.zip` (256,693 B) ⇒ live preview verified, the
+  archive is its un-versioned twin.
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-08.jpg`
 
 ## Design Tokens (from screenshot)
 
-- **Background**: Solid blue (`#4a90d9`) covering full viewport
+- **Background**: Solid blue **`#1089ff`** covering the full viewport (`body { background: #1089ff }`,
+  9 sheet literals). The screenshot's bed pixel-samples `#3d89f7` — a marketing re-render; when a
+  `body` rule exists the sheet wins. The app ships `#4a90d9` (see `## App deltas (as shipped)`).
 - **Font**: Poppins (Google Fonts)
 - **Heading**: White, large, centered
 - **Input fields**: White background, light gray border, rounded corners, search icon
-- **Budget dropdown**: White background, styled select
-- **Search button**: Black background, white text, uppercase, rectangular
+- **Budget dropdown**: White 40px field with a blue chevron; **five** options —
+  `$100 - $200`, `$200 - $300`, `$300 - $400`, `$400 - $500`, `$500 - $600`
+- **Search button**: Black `#000`, 40px tall, 4px corners, uppercase 500, white text — `.booking-form .cl-btn-primary` overrides the bundled Bootstrap `#007bff` base rule
 - **Footer**: White text on blue, links to Component Dock
 - **Surface (measured):** `#1089ff` — paints it ×9 — `background` on `body`; style.css?v=1b7b7dc0 (15,416 B, sha256 84ad4e04c002) · <https://preview.colorlib.com/theme/bootstrap/search-form-bar-08/>
 
@@ -32,7 +41,7 @@ A full-viewport job search form template with a solid blue background, centered 
 3. **Search form** — The template SHALL provide a horizontal search form with keyword input, location input, budget dropdown, and search button.
 4. **Keyword input** — The search form SHALL include a text input for job keywords with placeholder "Keywords (e.g Job Title, Position...)" and a search icon.
 5. **Location input** — The search form SHALL include a text input for location with placeholder "Location (City, Country...)" and a search icon.
-6. **Budget dropdown** — The search form SHALL include a dropdown select for budget range with options from $100-$200 to $1000+.
+6. **Budget dropdown** — The search form SHALL include a dropdown select for budget range with the reference's five options, `$100 - $200` through `$500 - $600`.
 7. **Search button** — The search form SHALL include a "Search Job" submit button styled with black background and white text.
 8. **Form submission** — The search form SHALL call an onSearch callback with keywords, location, and budget values on submit.
 9. **Responsive layout** — The search form SHALL stack vertically on small screens and display horizontally on larger screens.

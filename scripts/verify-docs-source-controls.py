@@ -8,7 +8,7 @@ asserts the bucket the axis must return.
 A GATE case disables one guard (or removes the evidence) and proves the payload
 then fires — a control that cannot fail proves nothing.
 
-Run: python3 scripts/verify-docs-source-controls.py   # expects 14/14 (4 GATE)
+Run: python3 scripts/verify-docs-source-controls.py   # expects 15/15 (4 GATE)
 """
 from __future__ import annotations
 
@@ -222,7 +222,7 @@ def c10g():
 
 
 def c11():
-    """corpus: 1,703 apps, buckets partition once, smithy + buildwell + 4 citations fixed (27 -> 21, 2026-10-24)."""
+    """corpus: 1,703 apps, buckets partition once, 9 flags left after batch 5 (2026-10-24)."""
     root = os.path.dirname(HERE)
     res = V.audit(root)
     assert res['total'] == 1703, res['total']
@@ -242,7 +242,9 @@ def c11():
     assert by_app.get('btnspark') == 'AGREE', by_app.get('btnspark')       # spec re-read from -02 2026-10-24
     for app in ('captura', 'crux', 'derrick'):                            # briefs re-measured 2026-10-24 (batch 4)
         assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
-    assert len(res['flags']) == 14, len(res['flags'])
+    for app in ('querybar', 'searchgate', 'jobpulse', 'reachform', 'dropform'):  # briefs re-measured 2026-10-24 (batch 5)
+        assert by_app.get(app) == 'AGREE', (app, by_app.get(app))
+    assert len(res['flags']) == 9, len(res['flags'])
 
 
 CASES = [
@@ -260,7 +262,7 @@ CASES = [
     (c09, 'brief without provenance -> DOC-SILENT note', False),
     (c10, 'the labelled `Source slug:` tier wins over a later URL', False),
     (c10g, 'GATE  disabling the label tier reads the later URL', True),
-    (c11, 'corpus: 1,703 apps, 17 flags, smithy + buildwell + 4 citations + 3 briefs + btnspark spec re-measured', False),
+    (c11, 'corpus: 1,703 apps, 9 flags, the 18 brief/spec fixes through batch 5 all AGREE', False),
 ]
 
 

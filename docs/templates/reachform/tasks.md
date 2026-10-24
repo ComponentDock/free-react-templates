@@ -9,7 +9,7 @@ Scope: ReachForm is a centered contact form template in the free-react-templates
 Render order as composed in `apps/reachform/src/App.tsx`:
 
 ### 1. ContactForm
-- The form card shall display a bold serif heading "Contact Us".
+- The form card shall display a bold heading "Contact Us".
 - Scenario — User sees the form title:
   - **WHEN** the page loads
   - **THEN** the heading "Contact Us" is visible in the form card

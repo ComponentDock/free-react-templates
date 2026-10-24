@@ -11,22 +11,61 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 The original is a full-page contact form with a mountain landscape background
 image overlaid with a pink-to-coral gradient. A centered white card contains
 the form with three fields (Name, Email, Message) using underline-style inputs
-and a gradient submit button. The title uses a serif/display font.
+and a gradient submit button. The title is set in a bold geometric sans
+(Poppins-Bold, 39px).
 
-## Design Tokens
+## Design Tokens (reference measured 2026-10-24)
 
-- **Font Family (title):** Playfair Display, serif (display heading)
-- **Font Family (body):** DM Sans, sans-serif (labels, inputs, button)
-- **Background:** Mountain landscape image with pink-coral gradient overlay
-  - Gradient: linear-gradient from `#e84393` (pink) to `#fd7e14` (coral-orange)
-  - Image: picsum.photos seeded placeholder (mountain landscape)
-- **Card:** White `#ffffff`, rounded corners (8px), subtle shadow
-- **Title:** Dark charcoal `#2d3748`, bold, centered
-- **Input labels:** Gray uppercase `#999999`, small text
-- **Input borders:** Light gray `#dddddd` (default), pink `#e84393` (focused)
-- **Button:** Pink-to-coral gradient, white text, rounded (4px)
-- **Spacing:** Generous card padding (40px+)
-- **Brand measured:** `#d5007d` — live sheet paints it ×12 — `background` on `.focus-input2::before`; style.css?v=6c4ee4df (10,677 B, sha256 fe59dd56fc10) · <https://colorlib.com/etc/cf/ContactFrom_v2/index.html>
+Reference: **live demo** `https://colorlib.com/etc/cf/ContactFrom_v2/` (HTTP 200, 1,685 B,
+`<title>` "Contact V2") — the `/etc/cf/` demo folder IS the design;
+`preview.colorlib.com/theme/contact-form-v2/` and `/theme/bootstrap/contact-form-v2/` both
+answer **404**. Sheet `css/style.css?v=6c4ee4df` — 10,677 B, sha256 `fe59dd56fc10aec2…`,
+identical to the copy inside `downloads/free/contact-form-v2.zip` (460,365 B) ⇒ live preview
+verified, the archive is its un-versioned twin. The page holds **0** anchors, one `<form>`,
+2 inputs + 1 textarea (the e-mail field is `type="text" name="email"`, validated by regex).
+
+- **Font Family:** **Poppins** only — `Poppins-Bold` 39px title, `Poppins-Regular` 15px
+  fields, `Poppins-Medium` 16px button (8 `font-family` declarations; the source
+  self-hosts the woff2 trio). There is no serif/display face in this design.
+- **Background:** photograph `images/bg-01.jpg` (mountain landscape) with a **45° wash** on
+  `.container-contact2`: `linear-gradient(45deg, rgba(213,0,125,.8), rgba(229,57,53,.8))` —
+  80 % alpha, so the photo reads through as texture; page is `min-height: 100vh`, 15px padding
+- **Gradient:** `#d5007d → #e53935` at 45° (page wash, 80 % alpha) and at full strength for
+  the field focus rule (`45deg`) and the button sweep (`-135deg`, four stops)
+- **Card:** White `#ffffff`, **790px**, `border-radius: 10px`, `padding: 72px 55px 90px 55px`
+  (`72/15/90/15` ≤576px), **no shadow**
+- **Title:** `#333333`, 39px, `Poppins-Bold`, **centred**, `padding-bottom: 90px`
+- **Input labels:** floating label inside the field — `#999999`, 13px `Poppins-Regular`,
+  `top: 16px` at rest, `top: -13px` on focus or when the field has a value (the markup's
+  `data-placeholder` reads `NAME` / `EMAIL` / `MESSAGE`)
+- **Input borders:** **2px `#adadad` bottom rule only** (no box, no radius), fields 37px
+  apart; input 45px tall, textarea `min-height: 115px`; focus draws a 2px pink→red rule from
+  `width: 0` to `100%` in .4s
+- **Button:** `linear-gradient(-135deg, #d5007d, #e53935, #d5007d, #e53935)` on a **300 %-wide**
+  child parked at `left: -100%` that slides to `0` on hover; `244px × 50px`, radius 2px,
+  `Poppins-Medium` 16px white
+- **Field text:** `#555555` 15px; placeholder colour `#999999`
+- **Error state:** white bubble, `1px solid #c80000`, radius 2px, `#c80000` 13px
+- **Spacing:** card `72/55/90/55`; title `90px` below; button block `padding-top: 13px`
+- **Brand measured:** `#d5007d` — live sheet paints it ×12 — 45° page wash, field focus rule
+  and button sweep; style.css?v=6c4ee4df (10,677 B, sha256 fe59dd56fc10) · <https://colorlib.com/etc/cf/ContactFrom_v2/index.html>
+
+## App deltas (as shipped)
+
+The app was built from a pre-correction token list (Playfair Display / DM Sans,
+`#e84393` / `#fd7e14`) and is **not** changed by this prep correction. Its measured deviations from the reference:
+
+- Title face is `--font-display` **Playfair Display 700** and body **DM Sans**; the reference
+  is Poppins-Bold 39px / Poppins-Regular 15px.
+- Wash is `linear-gradient(135deg, #e84393, #fd7e14)` at `opacity .85`; the reference is
+  `45deg rgba(213,0,125,.8) → rgba(229,57,53,.8)`.
+- Labels are printed above the field (`text-xs uppercase`), not floated inside it.
+- Card is `rounded-lg` (8px) with `shadow-xl`, capped at 520px; the reference is 10px, no
+  shadow, 790px.
+- Button is a static `to-r` gradient fill at `px-8 py-3`; the reference sweeps a 300 %-wide
+  gradient child on a 244 × 50 slab.
+- The reference has no success state and no footer; the app adds both (footer is the
+  Component Dock credit required by AGENTS.md rule 5).
 
 ## Requirements
 
@@ -44,7 +83,7 @@ containing the contact form.
 
 ### Requirement 2: Contact Form Title
 
-The form card shall display a bold serif heading "Contact Us".
+The form card shall display a bold heading "Contact Us".
 
 #### Scenario: User sees the form title
 

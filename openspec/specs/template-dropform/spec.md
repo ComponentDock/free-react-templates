@@ -5,7 +5,7 @@
 A clean contact form with a map background, white card layout, and green accent button. DropForm is a React recreation of the ColorLib free "Contact Form V8" template.
 
 - **Source**: ColorLib Contact Form V8 (`https://colorlib.com/wp/template/contact-form-v8/`)
-- **Preview URL**: `https://preview.colorlib.com/theme/contact-form-v8/`
+- **Preview URL**: `https://colorlib.com/etc/cf/ContactFrom_v8/` — **HTTP 200** (the `/etc/cf/` demo folder IS the design; `/theme/contact-form-v8/` and `/theme/bootstrap/contact-form-v8/` answer **404**)
 - **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript (monorepo standard)
 
 Design tokens captured from the original (see docs/replication.md):
@@ -30,8 +30,8 @@ DropForm lives in `apps/dropform` and uses shared components from `packages/ui`.
 ## Design tokens (reference re-check, 2026-10-23)
 
 - **Source**: ColorLib **Contact Form V8** — https://colorlib.com/wp/template/contact-form-v8/
-- **Preview**: **no live demo** — `/theme/contact-form-v8/`, `/theme/bootstrap/`, `/theme/bft/`, `/theme/bb/`, `/theme/bac/`, `/theme/sidebar/` and `/etc/{regform,bforms}/` all answered **404** on 2026-10-23. The reference is the official source archive `https://preview.colorlib.com/downloads/free/contact-form-v8.zip` (HTTP 200, 81,489 B): `contact-form-v8/index.html` 1,988 B, title `Contact V8`.
-- **Stylesheet measured**: `css/style.css` inside the archive — 11,120 bytes, sha256 `5ed785486f99…`. Archive-only evidence; there is no live twin to hash against.
+- **Preview (corrected 2026-10-24)**: the design **is live** at `https://colorlib.com/etc/cf/ContactFrom_v8/` — HTTP 200, 2,115 B, `<title>` "Contact V8". The 2026-10-23 "no live demo" note was a probe-scope error: it tried `/theme/*` and `/etc/{regform,bforms}/`, but the contact-form family is served from `/etc/cf/<folder>/`. `/theme/contact-form-v8/` and `/theme/bootstrap/contact-form-v8/` do answer 404. Archive for comparison: `https://preview.colorlib.com/downloads/free/contact-form-v8.zip` (HTTP 200, 81,489 B; `contact-form-v8/index.html` 2,045 B, sha256 `fc21d79b8fd15867…`).
+- **Stylesheet measured**: `css/style.css?v=dfe4dfb6` — **11,120 bytes, sha256 `5ed785486f991766…`**, byte-identical in the live demo and in the archive ⇒ live preview verified, the archive is its un-versioned twin (no longer "archive-only evidence").
 - **Measured how**: hex-literal census of the sheet + winning rule per selector.
 
 ### Colors
@@ -68,7 +68,7 @@ Both faces ship as local woff2 files. Substitutes on Google Fonts: **Josefin San
 | Checkbox | native input hidden; 20px square `#e6e6e6` box with a FontAwesome check that turns `#57b846` when checked; label `padding-left: 32px` |
 | Button | `height: 42px`, `min-width: 160px`, `padding: 0 20px`, green fill, hover `#1b3815` |
 
-Section order measured in the archive DOM: map iframe → centered card [`contact100-form-title "Contact Us"` → Name / Email / Message (each a bordered `.wrap-input100`) → checkbox "Send copy to my-email" → submit `Send Email`] → end. No footer in the reference; the app appends the Component Dock footer.
+Section order measured in the live DOM (identical in the archive): map iframe → centered card [`contact100-form-title "Contact Us"` → Name / Email / Message (each a bordered `.wrap-input100`) → checkbox "Send copy to my-email" → submit `Send Email`] → end. No footer in the reference; the app appends the Component Dock footer.
 
 ## Requirements
 

@@ -5,15 +5,21 @@
 A standalone animated search form bar with a circular search icon button that expands the input on hover/focus. Recreation of ColorLib "Search Form Bar 06".
 
 > Source: https://colorlib.com/wp/template/search-form-bar-06/
-> Preview: https://preview.colorlib.com/theme/search-form-bar-06/
+> Preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-06/ (**HTTP 200**,
+> 1,976 B; the slug-only `preview.colorlib.com/theme/search-form-bar-06/` answers **404** —
+> the `search-form-bar-*` family is served under the `/theme/bootstrap/` prefix)
 > Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/search-form-bar-06.jpg
+> Sheet: `css/style.css?v=7aee19ab` — 10,477 B, sha256 `08ba0f75b30d2bc1…` (identical to
+> the copy inside `downloads/free/search-form-bar-06.zip` 254,876 B ⇒ live preview verified,
+> the archive is its un-versioned twin). Page holds **0** anchors, one `<form>` with one
+> `<input>`, and **no** script: the width animation is pure CSS (`:hover` / `:focus`).
 
 ## Design Tokens
 
 | Token                  | Value                    | Notes                    |
 | ---------------------- | ------------------------ | ------------------------ |
 | Brand color            | `#76a21e` (olive green)  | Button background        |
-| Brand hover            | `#6b9319` (darker olive) | Button hover state       |
+| Brand hover            | `#6b9319` (darker olive) | **app-side** — the sheet declares no hover colour for the circle |
 | Background             | `#fafafa` (off-white)    | Page background          |
 | Input background       | `#ffffff` (white)        | Search input field       |
 | Font family            | `"Poppins", sans-serif`  | Google Fonts             |
