@@ -4,7 +4,7 @@
 
 A restaurant template with hero, about, menu, reservation, services, counter, news and map sections. Recreation of ColorLib's **Steak** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page restaurant website.
 
-- **Source**: ColorLib Steak — https://colorlib.com/wp/template/steak/
+- **Source**: ColorLib "Steak" — https://colorlib.com/wp/template/steak/
 - **Preview**: https://preview.colorlib.com/theme/steak/
 - **New name**: `smokehouse` (apps/smokehouse, package `@free-react-templates/smokehouse`)
 - **Stack**: Vite latest, React 19, Tailwind CSS 4, TypeScript strict, Vitest + Testing Library

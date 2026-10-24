@@ -11,6 +11,7 @@
 - **Preview URL:** https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-16.jpg
 - **Design Category:** Carousel / Interactive UI Component Showcase
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript
+- **Source design:** ColorLib "Carousel 16" — https://colorlib.com/wp/template/carousel-16/
 
 ## Design Tokens (Extracted from Screenshot & Standard Theme Palette)
 

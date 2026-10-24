@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib **Jackson** (https://colorlib.com/wp/template/jackson/) personal resume and portfolio template as a React 19 + Tailwind CSS 4 + TypeScript application. The template features a fixed left sidebar navigation, full-height hero slideshow, and scrollable content sections for about, services, skills, education, experience, work portfolio, blog, and contact.
+Recreate the ColorLib "Jackson" (https://colorlib.com/wp/template/jackson/) personal resume and portfolio template as a React 19 + Tailwind CSS 4 + TypeScript application. The template features a fixed left sidebar navigation, full-height hero slideshow, and scrollable content sections for about, services, skills, education, experience, work portfolio, blog, and contact.
 
 ## Requirements
 

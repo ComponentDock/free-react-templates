@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Blueline** template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript application.
+Recreation of the ColorLib "Blueline" template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript application.
 
 - **Source:** https://colorlib.com/wp/template/blueline/
 - **Preview:** https://preview.colorlib.com/theme/blueline/

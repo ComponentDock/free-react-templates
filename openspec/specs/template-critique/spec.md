@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 19** — a modern split-screen product review modal
+Recreation of ColorLib "Modal 19" — a modern split-screen product review modal
 that builds customer trust via star ratings, social proof counters, and a
 prominent product image.
 

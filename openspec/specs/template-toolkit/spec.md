@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A UI kit template with hero, navbar, basic elements showcase and footer sections. Recreation of ColorLib **Tools Ui Kit** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A UI kit template with hero, navbar, basic elements showcase and footer sections. Recreation of ColorLib "Tools Ui Kit" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/tools-ui-kit/
 - Preview: https://preview.colorlib.com/theme/tools-ui-kit/ (404 — preview unreachable; fallback to screenshot)

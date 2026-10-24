@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **DigiLab** template (`https://colorlib.com/wp/template/digilab/`).
+Recreation of the ColorLib "DigiLab" template (`https://colorlib.com/wp/template/digilab/`).
 Preview URL: `https://preview.colorlib.com/theme/digilab/`
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.

@@ -13,6 +13,7 @@ Recreation of ColorLib **Colorlib Search Form V7** — a centered, advanced sear
 - **Preview:** https://colorlib.com/etc/searchf/colorlib-search-7/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Search Form / Search Bar
+- **Source design:** ColorLib "Colorlib Search 7" — https://colorlib.com/wp/template/colorlib-search-7/
 
 ## Design Tokens
 

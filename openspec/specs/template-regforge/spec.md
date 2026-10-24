@@ -14,6 +14,7 @@ Recreation of ColorLib **Regform 8** — a clean, single-card signup form with a
 - **Live demo:** https://colorlib.com/etc/regform/colorlib-regform-8/
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **New name:** `regforge` (app: `apps/regforge`, package: `@free-react-templates/regforge`)
+- **Source design:** ColorLib "Colorlib Regform 8" — https://colorlib.com/wp/template/colorlib-regform-8/
 
 ## Design tokens
 

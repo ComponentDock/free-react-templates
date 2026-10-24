@@ -9,6 +9,7 @@ A Food Bar / Restaurant template with buttons & shapes, hero, top dishes showcas
 - **Screenshot:** ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodbar-free-template.jpg)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Restaurant / Food Bar — single-page restaurant site with hero banner, top dishes showcase, menu list, photo gallery, testimonials, reservation form, and footer.
+- **Source design:** ColorLib "Foodbar" — https://colorlib.com/wp/template/foodbar/
 
 ## Design Tokens (extracted from preview stylesheet)
 

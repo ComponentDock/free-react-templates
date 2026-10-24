@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Carousel & Testimonials Showcase template with header navigation and footer attribution sections. Recreation of ColorLib **Carousel 14** (`https://colorlib.com/wp/template/carousel-14/`), implemented as a modern React 19 + Tailwind CSS 4 single-page template named **lenslide**.
+A Carousel & Testimonials Showcase template with header navigation and footer attribution sections. Recreation of ColorLib "Carousel 14" (`https://colorlib.com/wp/template/carousel-14/`), implemented as a modern React 19 + Tailwind CSS 4 single-page template named **lenslide**.
 
 - Preview URL: `https://preview.colorlib.com/theme/bootstrap/carousel-14/`
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons, and `packages/ui` components.

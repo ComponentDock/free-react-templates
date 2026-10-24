@@ -1,7 +1,7 @@
 ---
 name: roster
 description: >
-  Recreation of ColorLib Listco (https://colorlib.com/wp/template/listco/) —
+  Recreation of ColorLib "Listco" (https://colorlib.com/wp/template/listco/) —
   a directory listing landing page with hero search, city cards, directory
   carousel, how-it-works steps, and footer.
 stack:

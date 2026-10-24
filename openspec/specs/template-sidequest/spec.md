@@ -10,6 +10,7 @@ bar, completed/pending step items, and a user profile at the bottom.
 Source: https://colorlib.com/wp/template/colorlib-sidebar-v07/
 Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v07/ (404;
 spec based on screenshot analysis)
+- **Source design:** ColorLib "Colorlib Sidebar V07" — https://colorlib.com/wp/template/colorlib-sidebar-v07/
 
 ## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **CareMed** (`https://colorlib.com/wp/template/caremed/`).
+Recreation of ColorLib "CareMed" (`https://colorlib.com/wp/template/caremed/`).
 Preview: `https://preview.colorlib.com/theme/caremed/`
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.

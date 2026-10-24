@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **LifeCoach** template.
+Recreation of ColorLib "LifeCoach" template.
 - Source slug: `lifecoach`
 - Preview URL: https://preview.colorlib.com/theme/lifecoach/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/lifecoach-free-template.jpg

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Boxus** template.
+Recreation of the ColorLib "Boxus" template.
 - **Source:** https://colorlib.com/wp/template/boxus/
 - **Preview:** https://preview.colorlib.com/theme/boxus/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/boxus-creative-digital-agency-free-website-template.jpg

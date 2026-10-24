@@ -7,6 +7,7 @@ A Contact Form template with form and checkbox sections. Recreation of ColorLib 
 A minimal, centered contact form with Oswald font, left-aligned icon inputs,
 a custom checkbox, and a gradient pink-to-red submit button on a light gray
 background. No navbar or sidebar — full-viewport form layout.
+- **Source design:** ColorLib "Contact Form V7" — https://colorlib.com/wp/template/contact-form-v7/
 
 ## Design Tokens (from original CSS)
 

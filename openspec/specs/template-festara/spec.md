@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Eventz** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page event/conference landing page.
+Recreation of the ColorLib "Eventz" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page event/conference landing page.
 
 - **Source:** [ColorLib Eventz](https://colorlib.com/wp/template/eventz/)
 - **Preview:** https://preview.colorlib.com/theme/eventz/

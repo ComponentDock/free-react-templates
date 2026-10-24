@@ -14,6 +14,7 @@ Recreation of ColorLib's **Marian** template as a React 19 + Vite + Tailwind 4 +
 - **Live preview:** https://preview.colorlib.com/theme/marian/
 - **New name:** `tidecrest` (package `@free-react-templates/tidecrest`)
 - **Surge target:** `tidecrest.free.componentdock.com`
+- **Source design:** ColorLib "Marian" — https://colorlib.com/wp/template/marian/
 
 ## Design Tokens (extracted from preview CSS)
 

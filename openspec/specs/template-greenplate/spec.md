@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib Vegefoods design as a React 19 + Tailwind CSS 4 + TypeScript single-page grocery/organic food e-commerce landing page. The original design is a Bootstrap 4 template featuring a hero slider, product grid, deal countdown, testimonials, and newsletter subscription. Greenplate uses the fresh green brand color (#82ae46) with Poppins and Lora fonts.
+Recreate the ColorLib "Vegefoods" design as a React 19 + Tailwind CSS 4 + TypeScript single-page grocery/organic food e-commerce landing page. The original design is a Bootstrap 4 template featuring a hero slider, product grid, deal countdown, testimonials, and newsletter subscription. Greenplate uses the fresh green brand color (#82ae46) with Poppins and Lora fonts.
 
 **Source:** https://colorlib.com/wp/template/vegefoods/
 **Preview:** https://preview.colorlib.com/theme/vegefoods/

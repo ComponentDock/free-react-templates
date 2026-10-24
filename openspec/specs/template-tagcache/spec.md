@@ -13,6 +13,7 @@ Recreation of ColorLib's **Multiselect 06** template — a modern, tag-style mul
 - **Preview**: https://preview.colorlib.com/theme/bootstrap/multiselect-06/
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-06.jpg
 - **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
+- **Source design:** ColorLib "Multiselect 06" — https://colorlib.com/wp/template/multiselect-06/
 
 ## Design Tokens
 

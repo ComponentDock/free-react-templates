@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V12** — a full-screen, centered login page
+Recreation of ColorLib "Login Form V12" — a full-screen, centered login page
 with user avatar, name display, and styled form fields on a city-skyline
 background with blue gradient overlay.
 

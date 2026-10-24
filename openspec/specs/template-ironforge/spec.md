@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Robust** (https://colorlib.com/wp/template/robust/)
+Recreation of ColorLib "Robust" (https://colorlib.com/wp/template/robust/)
 Preview: https://preview.colorlib.com/theme/robust/
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript

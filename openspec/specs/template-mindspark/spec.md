@@ -14,6 +14,7 @@ Recreation of ColorLib's **Knowledge** template as a React 19 + Vite + Tailwind 
 - **Live preview:** https://preview.colorlib.com/theme/knowledge/
 - **New app name:** `mindspark`
 - **Package:** `@free-react-templates/mindspark`
+- **Source design:** ColorLib "Knowledge" — https://colorlib.com/wp/template/knowledge/
 
 ## Design tokens
 

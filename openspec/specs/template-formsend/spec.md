@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V12** — a centered card contact form with
+Recreation of ColorLib "Contact Form V12" — a centered card contact form with
 a purple gradient background overlay on a city skyline image. Two-column layout:
 left side shows a decorative envelope illustration with geometric shapes, right
 side contains a clean "Get in touch" form with Name, Email, Message fields and a

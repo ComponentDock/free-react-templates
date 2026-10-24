@@ -8,6 +8,7 @@ A free yoga class registration form template that suits other sports and activit
 - **Preview (Colorlib):** https://colorlib.com/etc/regform/colorlib-regform-22/
 - **New name:** `yogaflow`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Colorlib Regform 22" — https://colorlib.com/wp/template/colorlib-regform-22/
 
 ## Design tokens
 

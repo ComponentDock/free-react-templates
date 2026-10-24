@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Industries** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Industries" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source slug:** `industries`
 - **ColorLib page:** https://colorlib.com/wp/template/industries/

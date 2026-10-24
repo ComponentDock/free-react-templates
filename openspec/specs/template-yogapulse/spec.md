@@ -13,7 +13,7 @@ source: https://preview.colorlib.com/theme/zogin/
 
 ## Purpose
 
-Recreation of ColorLib Zogin (https://colorlib.com/wp/template/zogin/) — a yoga studio landing page with hero slider, about section, yoga services, "Why Choose Us" with counters, upcoming courses, gallery, instructors, appointment form, and testimonials. The new name is "Yogapulse".
+Recreation of ColorLib "Zogin" (https://colorlib.com/wp/template/zogin/) — a yoga studio landing page with hero slider, about section, yoga services, "Why Choose Us" with counters, upcoming courses, gallery, instructors, appointment form, and testimonials. The new name is "Yogapulse".
 
 ### Design Tokens
 

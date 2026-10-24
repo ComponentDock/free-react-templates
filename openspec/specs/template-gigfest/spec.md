@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Eventcon** (https://colorlib.com/wp/template/eventcon/).
+Recreation of ColorLib "Eventcon" (https://colorlib.com/wp/template/eventcon/).
 Preview: https://preview.colorlib.com/theme/eventcon/
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.

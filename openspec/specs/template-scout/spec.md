@@ -12,6 +12,7 @@ and Value of Money. Step 2 shows a textarea for a written review. Step 3
 shows contact information fields (First Name, Last Name, Email, Phone).
 Each step has a figure illustration on the left and form content on the right.
 The original uses jQuery Steps; we use React state for step navigation.
+- **Source design:** ColorLib "Colorlib Wizard 18" — https://colorlib.com/wp/template/colorlib-wizard-18/
 
 ## Design Tokens
 

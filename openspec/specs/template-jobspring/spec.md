@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Job Board 2** — a professional job directory website
+Recreation of ColorLib "Job Board 2" — a professional job directory website
 template. Source: https://colorlib.com/wp/template/job-board-2/
 
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Dropdown 01** (`https://colorlib.com/wp/template/dropdown-01/`).
+- Recreation of ColorLib "Dropdown 01" (`https://colorlib.com/wp/template/dropdown-01/`).
 - Preview URL: `https://preview.colorlib.com/theme/bootstrap/dropdown-01/` (HTTP 200, 13,217 bytes DOM; fetched 2026-09-01). Note: the standard preview path `https://preview.colorlib.com/theme/dropdown-01/` returns 404 — the "Bootstrap Dropdowns" series lives under the `/theme/bootstrap/` prefix.
 - Stylesheets: `css/style.css` (Bootstrap 4.3.1 + template custom CSS, bundled in one file).
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict), Lucide React icons, Vitest + Testing Library (100% coverage).

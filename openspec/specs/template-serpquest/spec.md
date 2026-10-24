@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Seogo** (https://colorlib.com/wp/template/seogo/).
+Recreation of ColorLib "Seogo" (https://colorlib.com/wp/template/seogo/).
 Preview: https://preview.colorlib.com/theme/seogo/
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.

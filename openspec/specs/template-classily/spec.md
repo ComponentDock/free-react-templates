@@ -11,6 +11,7 @@ A Classified Ads Platform template with hero, category stats and featured ads se
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 - New name: **classily** (`apps/classily`, `@free-react-templates/classily`)
 - Footer link: https://www.componentdock.com/ ("Component Dock")
+- **Source design:** ColorLib "Classy Ads" — https://colorlib.com/wp/template/classy-ads/
 
 ## Design tokens (extracted from screenshot)
 

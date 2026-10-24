@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Cakes** template.
+Recreation of ColorLib "Cakes" template.
 - Source: <https://colorlib.com/wp/template/cakes/>
 - Preview: <https://preview.colorlib.com/theme/cakes/>
 - Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

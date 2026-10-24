@@ -16,6 +16,7 @@ preview_url: https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 14 (`https://colorlib.com/wp/template/bootstrap-buttons-14/`, preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/`). A clean, modern UI component showcase featuring button styles (solid, outline, rounded), sizes (small, regular, large), color variants (primary `#5735ea`, secondary `#32c5f6`, tertiary `#48da79`, gradient `#5635ea` to `#a15bf0`), brand buttons (Twitter `#69b6f0`, Facebook `#4f69a2`, LinkedIn `#2884ba`, Pinterest `#d03940`, Dribbble `#ea6294`), icon integration (Ionicons), and copy-to-clipboard code snippets, built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Bootstrap Buttons 14" — https://colorlib.com/wp/template/bootstrap-buttons-14/
 
 ## Design Tokens
 

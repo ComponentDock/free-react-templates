@@ -12,6 +12,7 @@
 - **New Name**: `tablecraft` (App directory: `apps/tablecraft`, Package: `@free-react-templates/tablecraft`)
 - **Category**: Bootstrap Wizards / Multi-step Form Wizard
 - **Description**: A dark-themed, upscale 3-step restaurant table reservation wizard. Features a two-column overlapping layout: a full-height food image on the left and a dark form panel on the right. Steps cover booking details (people, date, time), contact info (name, phone, email), and a success confirmation screen.
+- **Source design:** ColorLib "Colorlib Wizard 7" — https://colorlib.com/wp/template/colorlib-wizard-7/
 
 ## Design Tokens
 

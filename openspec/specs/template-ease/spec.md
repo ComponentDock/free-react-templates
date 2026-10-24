@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Unwind** template — a hotel booking agency single-page website.
+Recreation of the ColorLib "Unwind" template — a hotel booking agency single-page website.
 
 - **Source:** https://colorlib.com/wp/template/unwind/
 - **Preview:** https://preview.colorlib.com/theme/unwind/

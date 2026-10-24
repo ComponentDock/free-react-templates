@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Seogo** — a single-page SEO agency/landing template.
+Recreation of ColorLib "Seogo" — a single-page SEO agency/landing template.
 
 - **ColorLib source:** <https://colorlib.com/wp/template/seogo/>
 - **Preview URL:** <https://preview.colorlib.com/theme/seogo/>

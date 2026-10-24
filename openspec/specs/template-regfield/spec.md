@@ -16,6 +16,7 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.
 A centered ticket-booking form card on a teal background. The form occupies the
 left side; two stacked images with left/right navigation arrows sit on the right.
 Fonts: Lora (serif heading) + Raleway (sans-serif body/inputs).
+- **Source design:** ColorLib "Colorlib Regform 29" — https://colorlib.com/wp/template/colorlib-regform-29/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Design** (slug: `design`).
+Recreation of ColorLib "Design" (slug: `design`).
 Preview: https://preview.colorlib.com/theme/design/
 ColorLib page: https://colorlib.com/wp/template/design/
 

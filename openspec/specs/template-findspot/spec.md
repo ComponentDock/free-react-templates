@@ -1,6 +1,6 @@
 # Template: Findspot (Search Form Bar)
 
-Recreation of ColorLib **Search Form Bar 02**
+Recreation of ColorLib "Search Form Bar 02"
 (https://colorlib.com/wp/template/search-form-bar-02/)
 
 ## Purpose

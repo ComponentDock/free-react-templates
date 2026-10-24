@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V3** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "Login Form V3" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source slug:** `login-form-v3`
 - **Preview URL:** https://preview.colorlib.com/theme/login-form-v3/ (404 — using screenshot + ColorLib page)

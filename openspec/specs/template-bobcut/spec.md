@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Akame** hair salon template as a React 19 + Vite + Tailwind CSS 4 + TypeScript app.
+Recreation of ColorLib "Akame" hair salon template as a React 19 + Vite + Tailwind CSS 4 + TypeScript app.
 
 - **ColorLib source:** <https://colorlib.com/wp/template/akame/>
 - **Live preview:** <https://preview.colorlib.com/theme/akame/>

@@ -9,6 +9,7 @@ An industrial construction template with top header, hero slider, brand logos, s
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/durg-free-template.jpg
 - **Package:** `@free-react-templates/industrix`
 - **Surge target:** `https://industrix.free.componentdock.com`
+- **Source design:** ColorLib "Durg" — https://colorlib.com/wp/template/durg/
 
 ## Design Tokens
 

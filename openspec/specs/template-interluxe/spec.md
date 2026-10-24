@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Balay** — a best interior design website template with
+Recreation of ColorLib "Balay" — a best interior design website template with
 sidebar navigation, hero slider, about section, services, blog, and contact.
 
 - **Source:** https://colorlib.com/wp/template/balay/

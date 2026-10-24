@@ -18,6 +18,7 @@ split-screen layout with decorative hero image, centered white card with
 email/password fields, social login buttons (Google, Facebook), remember me
 checkbox, forgot password link, and create account link. Responsive design
 shows hero image above form on mobile.
+- **Source design:** ColorLib "Login Form 05" — https://colorlib.com/wp/template/login-form-05/
 
 ## Design tokens
 

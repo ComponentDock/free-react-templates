@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Schmidt** (`https://colorlib.com/wp/template/schmidt/`), a minimalist personal portfolio / freelancer template with a full-viewport hero, dark split-layout design, gold accent color, and multiple inner pages (about, services, experience, works, blog, contact).
+Recreation of ColorLib "Schmidt" (`https://colorlib.com/wp/template/schmidt/`), a minimalist personal portfolio / freelancer template with a full-viewport hero, dark split-layout design, gold accent color, and multiple inner pages (about, services, experience, works, blog, contact).
 
 - **Preview URL:** https://preview.colorlib.com/theme/schmidt/
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons.

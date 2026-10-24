@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Lawful** law firm template.
+Recreation of ColorLib "Lawful" law firm template.
 
 - **Source slug:** `lawful`
 - **Preview URL:** https://preview.colorlib.com/theme/lawful/

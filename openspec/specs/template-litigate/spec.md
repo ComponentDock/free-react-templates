@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Whisper** template
+Recreation of the ColorLib "Whisper" template
 (preview: https://preview.colorlib.com/theme/whisper/,
 source: https://colorlib.com/wp/template/whisper/).
 

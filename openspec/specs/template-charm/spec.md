@@ -33,6 +33,7 @@ indicator at the bottom.
   custom step-click handlers + form-holder focus toggle)
 - **Screenshot fallback**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-6.jpg`
 - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict)
+- **Source design:** ColorLib "Colorlib Wizard 6" — https://colorlib.com/wp/template/colorlib-wizard-6/
 
 ## Naming
 

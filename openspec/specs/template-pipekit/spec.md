@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Pexman** (`https://colorlib.com/wp/template/pexman/`).
+Recreation of ColorLib "Pexman" (`https://colorlib.com/wp/template/pexman/`).
 Preview: `https://preview.colorlib.com/theme/pexman/`
 
 **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict).

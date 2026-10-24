@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Ecoverde** — a real estate agent/property template.
+Recreation of ColorLib "Ecoverde" — a real estate agent/property template.
 
 - **Source slug:** `ecoverde`
 - **ColorLib page:** https://colorlib.com/wp/template/ecoverde/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Luto** restaurant template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of ColorLib "Luto" restaurant template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source:** [colorlib.com/wp/template/luto/](https://colorlib.com/wp/template/luto/)
 - **Preview:** [preview.colorlib.com/theme/luto/](https://preview.colorlib.com/theme/luto/)

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Gym** template.
+Recreation of ColorLib "Gym" template.
 - Source slug: `gym`
 - Preview URL: https://preview.colorlib.com/theme/gym/
 - Source screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/gym-free-template.jpg

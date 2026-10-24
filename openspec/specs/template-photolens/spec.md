@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib [Photosen](https://colorlib.com/wp/template/photosen/) (preview: https://preview.colorlib.com/theme/photosen/), implemented as `@free-react-templates/photolens` using Vite, React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Photosen" — https://colorlib.com/wp/template/photosen/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Education Wordpress Themes — a university/education website template with top utility bar, navigation with university branding, hero with student imagery, feature icons, admission call-to-action, and educational content sections.
+Recreation of ColorLib "Education Wordpress Themes" — a university/education website template with top utility bar, navigation with university branding, hero with student imagery, feature icons, admission call-to-action, and educational content sections.
 
 - **Source:** https://colorlib.com/wp/template/education-wordpress-themes/
 - **Preview:** https://preview.colorlib.com/theme/education-wordpress-themes/ (UNAVAILABLE at prep time — 404)

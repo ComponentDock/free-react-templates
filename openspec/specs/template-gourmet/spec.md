@@ -14,6 +14,7 @@ Recreation of ColorLib's **Bootstrap Footer 15** — a comprehensive dark footer
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
 - **Note:** Preview titled "Footer 05"; features blog posts, product cards, and Instagram grid.
+- **Source design:** ColorLib "Bootstrap Footer 15" — https://colorlib.com/wp/template/bootstrap-footer-15/
 
 ## Design Tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A clean multiselect dropdown demonstration page with categorized groupings. Recreation of ColorLib **Multiselect 08**.
+A clean multiselect dropdown demonstration page with categorized groupings. Recreation of ColorLib "Multiselect 08".
 
 - **Source**: https://colorlib.com/wp/template/multiselect-08/
 - **Preview**: https://preview.colorlib.com/theme/bootstrap/multiselect-08/

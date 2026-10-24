@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib **Woodwork** template (https://colorlib.com/wp/template/woodwork/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page landing template for a woodworking and construction company. The app lives at `apps/graincraft/` under the package name `@free-react-templates/graincraft`.
+Recreate the ColorLib "Woodwork" template (https://colorlib.com/wp/template/woodwork/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page landing template for a woodworking and construction company. The app lives at `apps/graincraft/` under the package name `@free-react-templates/graincraft`.
 
 ## Design tokens
 

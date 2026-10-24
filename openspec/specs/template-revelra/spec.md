@@ -13,6 +13,7 @@ Recreation of ColorLib's **Evento** template for event/conference landing pages.
 - **Preview:** https://preview.colorlib.com/theme/evento/
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **Category:** Event / Conference / Multi-section landing page
+- **Source design:** ColorLib "Evento" — https://colorlib.com/wp/template/evento/
 
 ## Design Tokens (extracted from preview CSS)
 

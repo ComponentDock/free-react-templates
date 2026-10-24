@@ -14,6 +14,7 @@ monorepo. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Source slug: `victor`
 Preview URL: https://preview.colorlib.com/theme/victor/
 New name: `triumph` (apps/triumph, @free-react-templates/triumph)
+- **Source design:** ColorLib "Victor" — https://colorlib.com/wp/template/victor/
 
 ## Design tokens (extracted from preview CSS)
 

@@ -12,6 +12,7 @@ footer. Built with React 19, Vite, Tailwind CSS 4, and TypeScript.
 
 Source slug: `karl`
 Preview URL: https://preview.colorlib.com/theme/karl/
+- **Source design:** ColorLib "Karl" — https://colorlib.com/wp/template/karl/
 
 ## Design tokens
 

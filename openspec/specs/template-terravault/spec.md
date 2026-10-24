@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A real estate website template with a hero property showcase, search form, featured listings, agents, and blog. Recreation of ColorLib **Azenta**.
+A real estate website template with a hero property showcase, search form, featured listings, agents, and blog. Recreation of ColorLib "Azenta".
 
 - **Source:** https://colorlib.com/wp/template/azenta/
 - **Preview:** https://preview.colorlib.com/theme/azenta/

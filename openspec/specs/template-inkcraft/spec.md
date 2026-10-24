@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Tattooz** — a dark, moody tattoo parlor website template.
+Recreation of ColorLib "Tattooz" — a dark, moody tattoo parlor website template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/tattooz/
 - **Preview URL:** https://preview.colorlib.com/theme/tattooz/tattoo/index.html

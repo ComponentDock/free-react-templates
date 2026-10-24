@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A contact page with a horizontal info bar at the top (four items with circular teal icons) and a two-column card below. It also includes image on right). Recreation of ColorLib **Contact Form 03**.
+A contact page with a horizontal info bar at the top (four items with circular teal icons) and a two-column card below. It also includes image on right). Recreation of ColorLib "Contact Form 03".
 
 - **Source slug:** `contact-form-03`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-03/

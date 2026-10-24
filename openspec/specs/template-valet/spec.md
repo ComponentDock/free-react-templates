@@ -11,6 +11,7 @@ A Virtual Assistant / Business Services template with hero, why choose us, servi
 - **Stack:** Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **App folder:** `apps/valet`
 - **Package:** `@free-react-templates/valet`
+- **Source design:** ColorLib "Virtualassistant" — https://colorlib.com/wp/template/virtualassistant/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Caviar](https://colorlib.com/wp/template/caviar/) — a premium restaurant single-page template.
+Recreation of [ColorLib "Caviar"](https://colorlib.com/wp/template/caviar/) — a premium restaurant single-page template.
 Preview URL: https://preview.colorlib.com/theme/caviar/
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.

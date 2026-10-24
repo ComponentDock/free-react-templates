@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A logistics and freight services website template. Recreation of ColorLib **Carries**.
+A logistics and freight services website template. Recreation of ColorLib "Carries".
 
 - **ColorLib source:** https://colorlib.com/wp/template/carries/
 - **Live preview:** https://preview.colorlib.com/theme/carries/

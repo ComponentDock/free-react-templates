@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A centered login form on a vibrant blue-to-pink gradient background, with Poppins/Raleway fonts. It also includes email/password inputs with left-aligned icons, remember-me checkbox, pink login button, Facebook/Google social buttons, and "Not a member? Sign up now" CTA. Recreation of ColorLib Login Form V11 as Loginsplash.
+A centered login form on a vibrant blue-to-pink gradient background, with Poppins/Raleway fonts. It also includes email/password inputs with left-aligned icons, remember-me checkbox, pink login button, Facebook/Google social buttons, and "Not a member? Sign up now" CTA. Recreation of ColorLib "Login Form V11" as Loginsplash.
 
 - Source: https://colorlib.com/wp/template/login-form-v11/
 - Preview: https://colorlib.com/etc/lf/Login_v11/index.html

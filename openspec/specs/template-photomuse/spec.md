@@ -1,6 +1,6 @@
 # Template: Photomuse (Photography)
 
-Recreation of ColorLib Louie (https://colorlib.com/wp/template/louie/)
+Recreation of ColorLib "Louie" (https://colorlib.com/wp/template/louie/)
 
 ## Purpose
 

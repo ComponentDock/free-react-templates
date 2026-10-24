@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Laundry** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+Recreation of ColorLib "Laundry" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/laundry/
 - Live demo: https://technext.github.io/laundry/ (verified reachable)

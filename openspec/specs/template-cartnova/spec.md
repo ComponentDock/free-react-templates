@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Karma** — a fashion/e-commerce single-page template with product carousels, exclusive deal countdown, and brand showcase.
+Recreation of ColorLib "Karma" — a fashion/e-commerce single-page template with product carousels, exclusive deal countdown, and brand showcase.
 
 - **ColorLib source:** [karma](https://colorlib.com/wp/template/karma/)
 - **Live preview:** https://preview.colorlib.com/theme/karma/

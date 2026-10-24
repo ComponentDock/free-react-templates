@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Login Form V1 as Logincraft — a split-screen login form with a purple-to-blue gradient background, white card, decorative illustration with tilt effect, green pill-shaped inputs and button, Poppins + Montserrat fonts.
+Recreation of ColorLib "Login Form V1" as Logincraft — a split-screen login form with a purple-to-blue gradient background, white card, decorative illustration with tilt effect, green pill-shaped inputs and button, Poppins + Montserrat fonts.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v1/
 - **Demo (live):** https://colorlib.com/etc/lf/Login_v1/index.html

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 12** (`https://colorlib.com/wp/template/accordion-12/`, preview URL: `https://colorlib.com/preview/theme/accordion-12/`).
+Recreation of ColorLib "Accordion 12" (`https://colorlib.com/wp/template/accordion-12/`, preview URL: `https://colorlib.com/preview/theme/accordion-12/`).
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 
 ## Design tokens

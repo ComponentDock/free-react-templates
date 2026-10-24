@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bato** (slug: `bato`).
+Recreation of ColorLib "Bato" (slug: `bato`).
 Preview: https://preview.colorlib.com/theme/bato/
 ColorLib page: https://colorlib.com/wp/template/bato/
 

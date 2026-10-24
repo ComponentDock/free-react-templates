@@ -8,6 +8,7 @@
 ## Purpose
 
 SlideSync is a fully responsive, modern React 19 component template recreating the ColorLib `carousel-12` template. It features an interactive testimonial/content carousel slider with smooth transitions, navigation controls (arrows and pagination dots), author avatars, rating stars, and a clean card-based layout ideal for client testimonials, product highlights, or feature showcases.
+- **Source design:** ColorLib "Carousel 12" — https://colorlib.com/wp/template/carousel-12/
 
 ## Design Tokens (Extracted from Reference & Visual Inspection)
 

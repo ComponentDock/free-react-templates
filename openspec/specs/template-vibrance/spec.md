@@ -1,6 +1,6 @@
 # Template: Vibrance (Design Studio Landing)
 
-Recreation of ColorLib **Taxx** (https://colorlib.com/wp/template/taxx/).
+Recreation of ColorLib "Taxx" (https://colorlib.com/wp/template/taxx/).
 Live preview: https://preview.colorlib.com/theme/taxx/
 
 ## Purpose

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Stodeo** (`https://colorlib.com/wp/template/stodeo/`), preview URL: `https://preview.colorlib.com/theme/stodeo/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Stodeo" (`https://colorlib.com/wp/template/stodeo/`), preview URL: `https://preview.colorlib.com/theme/stodeo/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens
 

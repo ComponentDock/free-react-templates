@@ -14,6 +14,7 @@ Recreation of ColorLib's **Roofing** contractor/construction company template as
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/roofing-free-template.jpg
 - **Package:** `@free-react-templates/roofcrest`
 - **Surge target:** `https://roofcrest.free.componentdock.com`
+- **Source design:** ColorLib "Roofing" — https://colorlib.com/wp/template/roofing/
 
 ## Design Tokens
 

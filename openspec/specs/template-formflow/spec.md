@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Wizard 4** — a multi-step academic course registration wizard.
+Recreation of ColorLib "Colorlib Wizard 4" — a multi-step academic course registration wizard.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-wizard-4/
 - **Preview:** https://colorlib.com/etc/bwiz/colorlib-wizard-4/index.html

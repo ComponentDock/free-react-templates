@@ -5,7 +5,7 @@
 
 ## Purpose
 
-Spotlight is a business directory template. It recreates the ColorLib **Listed2** design (https://colorlib.com/wp/template/listed2/, preview: https://preview.colorlib.com/theme/listed2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Spotlight is a business directory template. It recreates the ColorLib "Listed2" design (https://colorlib.com/wp/template/listed2/, preview: https://preview.colorlib.com/theme/listed2/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Design Tokens (extracted from preview CSS)
 

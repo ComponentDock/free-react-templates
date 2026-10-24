@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 02 (https://colorlib.com/wp/template/bootstrap-buttons-02/). A comprehensive, elegant UI button showcase featuring creative hover effects, animated buttons, drop shadows, gradients, social buttons, pill shapes, outline variations, and interactive code snippets, built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Bootstrap Buttons 02" — https://colorlib.com/wp/template/bootstrap-buttons-02/
 
 ## Design tokens
 

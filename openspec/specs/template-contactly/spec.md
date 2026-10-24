@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A two-column contact page with a green/teal info panel on the left and a form with underline-style inputs on the right. Recreation of ColorLib **Contact Form 02**.
+A two-column contact page with a green/teal info panel on the left and a form with underline-style inputs on the right. Recreation of ColorLib "Contact Form 02".
 
 - **Source slug:** `contact-form-02`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-02/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Faith 2** template for church/nonprofit websites.
+Recreation of ColorLib "Faith 2" template for church/nonprofit websites.
 - **Source slug:** `faith-2` (also `faith2`)
 - **Preview URL:** https://preview.colorlib.com/theme/faith2/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/faith2-free-template.jpg

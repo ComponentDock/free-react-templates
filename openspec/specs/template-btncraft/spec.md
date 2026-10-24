@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 01** (`https://colorlib.com/wp/template/bootstrap-buttons-01/`).
+Recreation of ColorLib "Bootstrap Buttons 01" (`https://colorlib.com/wp/template/bootstrap-buttons-01/`).
 Note: The live preview URL returned 404, so replication fidelity is based on the official ColorLib screenshot and standard modern Bootstrap design principles.
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript · Lucide icons.
 New Name: `btncraft` (Package: `@free-react-templates/btncraft`).

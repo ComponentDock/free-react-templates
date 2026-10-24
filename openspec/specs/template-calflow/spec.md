@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`), implemented as a modern React 19 + Tailwind CSS 4 application (`apps/calflow`).
+- **Source design:** ColorLib "Calendar 14" — https://colorlib.com/wp/template/calendar-14/
 
 ## Design Tokens & Aesthetic
 

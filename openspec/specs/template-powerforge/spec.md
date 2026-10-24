@@ -17,6 +17,7 @@ Recreation of ColorLib's **Ironmuscle** template as a React 19 + Vite + Tailwind
 
 A dark-accented, red-branded fitness/gym template with a hero slider, featured
 classes, a class schedule, testimonials, trainer profiles, and a 4-column footer.
+- **Source design:** ColorLib "Ironmuscle" — https://colorlib.com/wp/template/ironmuscle/
 
 ## Design tokens
 

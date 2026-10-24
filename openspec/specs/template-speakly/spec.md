@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Lingua** — a language learning school template.
+Recreation of ColorLib "Lingua" — a language learning school template.
 - Source slug: `lingua`
 - Preview URL: https://preview.colorlib.com/theme/lingua/
 - Stack: React 19, Vite, Tailwind CSS 4, TypeScript

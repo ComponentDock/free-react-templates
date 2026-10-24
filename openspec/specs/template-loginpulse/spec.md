@@ -20,6 +20,7 @@ A Login Form template with hover effects, focus effects, social login buttons, u
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Login Form V5" — https://colorlib.com/wp/template/login-form-v5/
 
 ## Design Tokens
 

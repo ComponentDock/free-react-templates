@@ -14,6 +14,7 @@ preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-19/
 ## Purpose
 
 FooterDusk recreates the ColorLib Bootstrap Footer 19 template as a React + Tailwind CSS component. It features a dark purple gradient (#2a1a5e → #5126a7) footer split into four equal columns: About (with address, phone, email, and email subscribe form), Latest News (two blog post cards with thumbnails and metadata), Information (link list), and Instagram (3x2 image grid). The design uses Poppins font, pink/magenta (#fe59d7) accent links and icon circles, white headings, and a lighter pink (#fe8ce3) submit button.
+- **Source design:** ColorLib "Bootstrap Footer 19" — https://colorlib.com/wp/template/bootstrap-footer-19/
 
 ## Design Tokens
 

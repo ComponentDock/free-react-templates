@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Medica** template as a React 19 + Vite + Tailwind 4 + TypeScript application.
+Recreation of the ColorLib "Medica" template as a React 19 + Vite + Tailwind 4 + TypeScript application.
 
 - **Source slug:** `medica`
 - **ColorLib page:** https://colorlib.com/wp/template/medica/

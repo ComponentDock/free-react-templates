@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib [Charilife](https://colorlib.com/wp/template/charilife/) as a free React template. Heartward is a charity and donation landing page with hero banner, about section, feature highlights, cause cards with progress, call-to-action banner, events with countdown, blog, newsletter, and footer.
+- **Source design:** ColorLib "Charilife" — https://colorlib.com/wp/template/charilife/
 
 ## Design Tokens
 

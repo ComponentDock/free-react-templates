@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Bitcoin** template — a cryptocurrency landing page
+Recreation of the ColorLib "Bitcoin" template — a cryptocurrency landing page
 featuring a hero with live price display, currency converter, services, pricing
 cards, and blog. This spec covers a React 19 + Vite + Tailwind 4 + TypeScript
 implementation faithful to the original design.

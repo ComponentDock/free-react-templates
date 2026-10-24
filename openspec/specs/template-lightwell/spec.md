@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A light consulting company template. Recreation of ColorLib **Cellon**.
+A light consulting company template. Recreation of ColorLib "Cellon".
 
 - **Source slug:** `cellon`
 - **Source URL:** https://colorlib.com/wp/template/cellon/

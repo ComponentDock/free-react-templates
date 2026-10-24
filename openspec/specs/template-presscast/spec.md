@@ -15,6 +15,7 @@ with multiple article sections, video content, and newsletter subscription.
 - **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Source slug**: `megasis`
 - **Template name**: `presscast` (NEW — never reuse ColorLib source name)
+- **Source design:** ColorLib "Megasis" — https://colorlib.com/wp/template/megasis/
 
 ## Design tokens
 

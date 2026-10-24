@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Blueline** template as a React single-page
+Recreation of the ColorLib "Blueline" template as a React single-page
 application.
 
 - **Source slug:** `blueline`

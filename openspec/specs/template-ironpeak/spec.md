@@ -11,7 +11,7 @@ preview_url: https://preview.colorlib.com/theme/fitnezz/
 
 ## Purpose
 
-Ironpeak is a fitness and gym landing page with featured classes, a schedule grid, trainer profiles, testimonials and blog cards. It recreates the ColorLib **Fitnezz** design (https://colorlib.com/wp/template/fitnezz/).
+Ironpeak is a fitness and gym landing page with featured classes, a schedule grid, trainer profiles, testimonials and blog cards. It recreates the ColorLib "Fitnezz" design (https://colorlib.com/wp/template/fitnezz/).
 
 ## Design tokens
 

@@ -12,6 +12,7 @@ Recreation of ColorLib Multi-Select 17 — a Bootstrap-based multi-select dropdo
 - **Source:** https://colorlib.com/wp/template/multiselect-17/
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/multiselect-17/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Multiselect 17" — https://colorlib.com/wp/template/multiselect-17/
 
 ## Source mapping
 

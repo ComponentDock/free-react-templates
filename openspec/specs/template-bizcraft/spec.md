@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Bizcon](https://colorlib.com/wp/template/bizcon/).
+Recreation of [ColorLib "Bizcon"](https://colorlib.com/wp/template/bizcon/).
 Preview: https://preview.colorlib.com/theme/bizcon/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg
 

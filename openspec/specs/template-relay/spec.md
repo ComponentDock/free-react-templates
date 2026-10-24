@@ -9,6 +9,7 @@ A single-page React template featuring a centered launch button that opens a
 confirmation modal for email/newsletter subscriptions. The modal displays a
 gradient header with a skewed bottom edge, an email envelope icon, a
 "You've Got Mail!" heading, and the recipient's email address.
+- **Source design:** ColorLib "Modal 08" — https://colorlib.com/wp/template/modal-08/
 
 ## Requirements
 

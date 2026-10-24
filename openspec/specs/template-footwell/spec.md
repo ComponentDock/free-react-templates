@@ -10,6 +10,7 @@ a focused footer component template, not a full-page website template.
 - **Preview URL:** https://preview.colorlib.com/theme/bft/bootstrap-footer-01/
 - **New name:** `footwell` (footer + well, a deep section)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Bootstrap Footer 01" — https://colorlib.com/wp/template/bootstrap-footer-01/
 
 ## Design Tokens
 

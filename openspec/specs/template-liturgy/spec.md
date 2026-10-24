@@ -8,6 +8,7 @@ A church template with hero slider, upcoming events, worship time and recent ser
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg`
 - **Stack:** Vite latest · React 19 · Tailwind CSS 4 · TypeScript strict
 - **Deploy:** `https://liturgy.free.componentdock.com` (Surge)
+- **Source design:** ColorLib "Advent" — https://colorlib.com/wp/template/advent/
 
 ## Requirements
 

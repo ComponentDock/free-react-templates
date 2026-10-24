@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Logistic** (preview URL: https://preview.colorlib.com/theme/logistic/), built with Vite, React 19, Tailwind CSS 4, and TypeScript. A professional logistics, shipping, freight forwarding, and cargo transport website featuring hero slider, services grid, solutions overview, shipment quote calculator, client testimonials, and interactive contact/tracking sections.
+Recreation of ColorLib "Logistic" (preview URL: https://preview.colorlib.com/theme/logistic/), built with Vite, React 19, Tailwind CSS 4, and TypeScript. A professional logistics, shipping, freight forwarding, and cargo transport website featuring hero slider, services grid, solutions overview, shipment quote calculator, client testimonials, and interactive contact/tracking sections.
 
 ## Design Tokens
 

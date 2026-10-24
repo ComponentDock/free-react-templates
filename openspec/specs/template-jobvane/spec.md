@@ -11,6 +11,7 @@ Built with React 19, Vite, Tailwind CSS 4, and TypeScript.
 
 Source slug: `jobpply`
 Preview URL: https://preview.colorlib.com/theme/jobpply/
+- **Source design:** ColorLib "Jobpply" — https://colorlib.com/wp/template/jobpply/
 
 ## Design tokens
 

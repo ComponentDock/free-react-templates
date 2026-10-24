@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Login Form V10 as Loginstar — a minimalist, centered login form on a plain white background. Ubuntu font family, lavender-purple brand color (#827ffe), full-width inputs with light gray backgrounds, a full-width purple submit button, "Remember me" checkbox, and "Forgot?" link. No images, no split layout — pure form.
+Recreation of ColorLib "Login Form V10" as Loginstar — a minimalist, centered login form on a plain white background. Ubuntu font family, lavender-purple brand color (#827ffe), full-width inputs with light gray backgrounds, a full-width purple submit button, "Remember me" checkbox, and "Forgot?" link. No images, no split layout — pure form.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v10/
 - **Preview (ColorLib):** https://preview.colorlib.com/theme/login-form-v10/ (HTTP 404 at time of prep; fallback to download ZIP + screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)

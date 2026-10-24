@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Domicile is a real estate property listing landing page with search filters and a property grid. It recreates the ColorLib **Homespace** design (https://colorlib.com/wp/template/homespace/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+Domicile is a real estate property listing landing page with search filters and a property grid. It recreates the ColorLib "Homespace" design (https://colorlib.com/wp/template/homespace/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 ## Design tokens
 

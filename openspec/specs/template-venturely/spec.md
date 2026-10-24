@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Bravo — a free business/investment website template
+Recreation of ColorLib "Bravo" — a free business/investment website template
 with a hero slider, about section, services, testimonials, team, and contact.
 The original is a Bootstrap-based template for investment and business
 consulting websites.

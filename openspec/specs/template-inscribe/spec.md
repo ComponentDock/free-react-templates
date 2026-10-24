@@ -17,6 +17,7 @@ Provide a 3-step event registration form wizard with a split-screen layout: a he
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Bootstrap Wizards (event registration form wizard)
 - **New name:** Inscribe
+- **Source design:** ColorLib "Colorlib Wizard 3" — https://colorlib.com/wp/template/colorlib-wizard-3/
 
 ## Design tokens
 

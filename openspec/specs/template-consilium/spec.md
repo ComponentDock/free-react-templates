@@ -9,7 +9,7 @@
 
 Recreation of ColorLib's **Consula** template as a React 19 + Vite + Tailwind 4 + TypeScript application.
 
-- **Source template**: ColorLib Consula — https://colorlib.com/wp/template/consula/
+- **Source template**: ColorLib "Consula" — https://colorlib.com/wp/template/consula/
 - **Live preview**: https://preview.colorlib.com/theme/consula/
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/consula-free-template.jpg
 - **New name**: `consilium` (apps/consilium)

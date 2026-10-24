@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Creative Agency / Portfolio template with hero, services, portfolio, about and cta sections. Recreation of ColorLib **Innova** template.
+A Creative Agency / Portfolio template with hero, services, portfolio, about and cta sections. Recreation of ColorLib "Innova" template.
 
 - Source slug: `innova`
 - Preview URL: https://preview.colorlib.com/theme/innova/

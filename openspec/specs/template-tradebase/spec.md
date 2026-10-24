@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bizcon** (`bizcon`), a business/corporate website template with a warm orange gradient accent, hero banner, about section, services grid, testimonials, portfolio cards, blog section, and footer.
+Recreation of ColorLib "Bizcon" (`bizcon`), a business/corporate website template with a warm orange gradient accent, hero banner, about section, services grid, testimonials, portfolio cards, blog section, and footer.
 
 - **Source slug:** `bizcon`
 - **Source URL:** https://colorlib.com/wp/template/bizcon/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bitcoin** (`https://colorlib.com/wp/template/bitcoin/`), built as a cryptocurrency landing page with hero, converter, features, pricing, and blog sections using React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Bitcoin" (`https://colorlib.com/wp/template/bitcoin/`), built as a cryptocurrency landing page with hero, converter, features, pricing, and blog sections using React 19, Tailwind CSS 4, and TypeScript.
 
 - **Source Slug**: `bitcoin`
 - **Preview URL**: `https://preview.colorlib.com/theme/bitcoin/`

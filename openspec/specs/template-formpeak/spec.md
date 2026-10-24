@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 05** — a two-column contact page with a
+Recreation of ColorLib "Contact Form 05" — a two-column contact page with a
 white form/info panel on the left and a full-height image on the right. Features
 a gold/amber button, three-column contact info row, and social media links.
 

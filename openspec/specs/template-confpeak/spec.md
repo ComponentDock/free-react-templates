@@ -15,6 +15,7 @@ Recreation of ColorLib's **Eventalk** template as a React 19 + Vite + Tailwind C
 - **App name:** `confpeak`
 - **Package:** `@free-react-templates/confpeak`
 - **Deploy:** `https://confpeak.free.componentdock.com`
+- **Source design:** ColorLib "Eventalk" — https://colorlib.com/wp/template/eventalk/
 
 ## Design tokens (extracted from live preview)
 

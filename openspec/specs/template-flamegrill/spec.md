@@ -8,6 +8,7 @@ Recreation of ColorLib's **Burger** template as a React 19 + Vite + Tailwind 4 +
 - **Screenshot:** ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/burger-free-template.jpg)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Restaurant / Food — single-page burger restaurant site with carousel hero, menu grid, about, video CTA, testimonials, Instagram gallery, and footer with locations + newsletter.
+- **Source design:** ColorLib "Burger" — https://colorlib.com/wp/template/burger/
 
 ## Design Tokens (extracted from preview stylesheet)
 

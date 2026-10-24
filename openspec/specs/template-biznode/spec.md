@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Bbs** template — a small company / creative agency
+Recreation of the ColorLib "Bbs" template — a small company / creative agency
 website template. This spec covers a React 19 + Vite + Tailwind 4 + TypeScript
 implementation faithful to the original design.
 

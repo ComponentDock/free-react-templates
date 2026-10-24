@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Educature** (https://colorlib.com/wp/template/educature/) — an education and online courses landing page. The template features a gradient hero with course search, about section, course categories, features grid, faculty members, testimonials, and a multi-column footer.
+Recreation of ColorLib "Educature" (https://colorlib.com/wp/template/educature/) — an education and online courses landing page. The template features a gradient hero with course search, about section, course categories, features grid, faculty members, testimonials, and a multi-column footer.
 
 ## Design tokens
 

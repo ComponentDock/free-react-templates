@@ -9,6 +9,7 @@ A Fitness / Gym template with hero, services, cta banner, classes, trainer sched
 - **Source screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ponigym-free-template.jpg
 - **New name:** `ironshed` (apps/ironshed, @free-react-templates/ironshed)
 - **Deploy target:** https://ironshed.free.componentdock.com
+- **Source design:** ColorLib "Ponigym" — https://colorlib.com/wp/template/ponigym/
 
 ## Design tokens
 

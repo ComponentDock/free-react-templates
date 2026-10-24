@@ -18,6 +18,7 @@ Recreation of **Colorlib Reg Form V5** — an event registration form with a gra
 Research used the actual demo at `colorlib.com/etc/regform/colorlib-regform-5/` and the CSS file
 (`css/style.css`, 686 lines — custom styles, no framework). The screenshot was referenced for
 visual confirmation.
+- **Source design:** ColorLib "Colorlib Regform 5" — https://colorlib.com/wp/template/colorlib-regform-5/
 
 ## Design tokens captured from the original
 

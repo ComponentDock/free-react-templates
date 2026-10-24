@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Medi** (also called "Medi Plus"), a medical/healthcare
+Recreation of ColorLib "Medi" (also called "Medi Plus"), a medical/healthcare
 landing page template.
 
 - **Source slug**: `medi`

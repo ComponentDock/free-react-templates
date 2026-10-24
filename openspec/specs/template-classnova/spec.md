@@ -14,6 +14,7 @@ Recreation of ColorLib's **Eskwela** template as a React 19 + Vite + Tailwind 4 
 - **Live preview:** https://preview.colorlib.com/theme/eskwela/
 - **New app name:** `classnova`
 - **Package:** `@free-react-templates/classnova`
+- **Source design:** ColorLib "Eskwela" — https://colorlib.com/wp/template/eskwela/
 
 ## Design tokens
 

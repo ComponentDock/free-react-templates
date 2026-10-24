@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 13** (`modal-13`) — a free subscription form
+Recreation of ColorLib "Modal 13" (`modal-13`) — a free subscription form
 snippet with a light pink background, dual action buttons, and Instagram branding.
 
 - **Source:** https://colorlib.com/wp/template/modal-13/

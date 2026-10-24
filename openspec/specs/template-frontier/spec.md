@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Martine** — a travel agency / hotel booking template.
+Recreation of ColorLib "Martine" — a travel agency / hotel booking template.
 
 - **Source slug:** `martine`
 - **Source URL:** https://colorlib.com/wp/template/martine/

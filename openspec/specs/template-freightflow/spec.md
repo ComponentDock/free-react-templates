@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Thelogistico** (`https://colorlib.com/wp/template/thelogistico/`), renamed to **FreightFlow** (`apps/freightflow`), serving as a modern logistics, cargo transport, and freight forwarding agency template built with React 19, Vite, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Thelogistico" (`https://colorlib.com/wp/template/thelogistico/`), renamed to **FreightFlow** (`apps/freightflow`), serving as a modern logistics, cargo transport, and freight forwarding agency template built with React 19, Vite, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens & Styling
 

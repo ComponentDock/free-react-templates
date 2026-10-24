@@ -10,6 +10,7 @@ A Job Portal template with header/nav, hero, recent jobs, features and blog sect
 - **App folder:** `apps/joblaunch`
 - **Package:** `@free-react-templates/joblaunch`
 - **Surge target:** `joblaunch.free.componentdock.com`
+- **Source design:** ColorLib "Jobstart" — https://colorlib.com/wp/template/jobstart/
 
 ## Design tokens
 

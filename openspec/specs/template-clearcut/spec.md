@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Whitespace** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Whitespace" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source slug:** `whitespace`
 - **Preview URL:** https://preview.colorlib.com/theme/whitespace/

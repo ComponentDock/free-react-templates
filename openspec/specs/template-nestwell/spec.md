@@ -1,6 +1,6 @@
 # Template: Nestwell (Real Estate Agency)
 
-Recreation of ColorLib Homeland (https://colorlib.com/wp/template/homeland/).
+Recreation of ColorLib "Homeland" (https://colorlib.com/wp/template/homeland/).
 
 ## Purpose
 

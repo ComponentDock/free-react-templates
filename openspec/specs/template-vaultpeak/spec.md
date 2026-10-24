@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Banker** template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page template.
+Recreation of ColorLib "Banker" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page template.
 
 - **Source:** https://colorlib.com/wp/template/banker/
 - **Preview:** https://preview.colorlib.com/theme/banker/

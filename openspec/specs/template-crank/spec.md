@@ -1,6 +1,6 @@
 # Template: Crank (FAQ Accordion)
 
-Recreation of ColorLib Accordion V17 (https://colorlib.com/wp/template/accordion-17/)
+Recreation of ColorLib "Accordion V17" (https://colorlib.com/wp/template/accordion-17/)
 
 ## Purpose
 

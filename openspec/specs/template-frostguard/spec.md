@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An HVAC company template with hero, benefits, services, products, quote request, counter and testimonials sections. Recreation of the ColorLib **Hvacompany** template
+An HVAC company template with hero, benefits, services, products, quote request, counter and testimonials sections. Recreation of the ColorLib "Hvacompany" template
 ([colorlib.com/wp/template/hvacompany/](https://colorlib.com/wp/template/hvacompany/)),
 preview at [preview.colorlib.com/theme/hvacompany/](https://preview.colorlib.com/theme/hvacompany/).
 

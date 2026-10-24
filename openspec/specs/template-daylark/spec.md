@@ -12,6 +12,7 @@ Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-1
 - **Source Template**: ColorLib Calendar 12
 - **Preview URL**: `https://preview.colorlib.com/theme/calendar-12/` (fallback to screenshot analysis)
 - **Stack**: Vite, React 19, Tailwind CSS 4, Lucide React, Vitest
+- **Source design:** ColorLib "Calendar 12" — https://colorlib.com/wp/template/calendar-12/
 
 ## Design Tokens
 

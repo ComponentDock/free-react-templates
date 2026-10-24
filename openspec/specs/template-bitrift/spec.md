@@ -15,6 +15,7 @@ Tailwind 4 + TypeScript single-page app.
 - **New name:** `bitrift` (apps/bitrift, @free-react-templates/bitrift)
 - **Deploy:** https://bitrift.free.componentdock.com
 - **Category:** Cryptocurrency / Fintech Landing Page
+- **Source design:** ColorLib "Bitcoin" — https://colorlib.com/wp/template/bitcoin/
 
 ## Design tokens (extracted from live preview DOM + CSS)
 

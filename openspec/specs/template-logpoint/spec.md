@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form 17** as a standalone React page.
+Recreation of ColorLib "Login Form 17" as a standalone React page.
 - **Source slug:** `login-form-17`
 - **Preview URL:** https://preview.colorlib.com/theme/login-form-17/
 - **ColorLib page:** https://colorlib.com/wp/template/login-form-17/

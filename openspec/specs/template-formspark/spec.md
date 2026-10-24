@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 04** — a two-column contact page with a
+Recreation of ColorLib "Contact Form 04" — a two-column contact page with a
 deep purple form panel on the left and a white contact-info panel on the right,
 centered on a light gray background.
 

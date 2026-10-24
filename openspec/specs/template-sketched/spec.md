@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Calvin** template.
+Recreation of ColorLib "Calvin" template.
 - Preview URL: https://preview.colorlib.com/theme/calvin/
 - ColorLib page: https://colorlib.com/wp/template/calvin/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/calvin-free-template.jpg

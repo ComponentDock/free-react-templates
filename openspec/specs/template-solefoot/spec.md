@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Footer 14** as a React + Tailwind template.
+Recreation of ColorLib "Bootstrap Footer 14" as a React + Tailwind template.
 
 - **Source:** https://colorlib.com/wp/template/bootstrap-footer-14/
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-14/

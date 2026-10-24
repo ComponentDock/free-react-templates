@@ -9,6 +9,7 @@ An Education / Online Courses template with header/nav, home slider, featured co
 - **Live preview:** https://preview.colorlib.com/theme/elearn/
 - **New app name:** `learnpeak`
 - **Package:** `@free-react-templates/learnpeak`
+- **Source design:** ColorLib "Elearn" — https://colorlib.com/wp/template/elearn/
 
 ## Design tokens
 

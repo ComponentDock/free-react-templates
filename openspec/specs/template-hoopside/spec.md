@@ -9,7 +9,7 @@ source: https://preview.colorlib.com/theme/thebasketball/
 
 ## Purpose
 
-Recreation of ColorLib Thebasketball (https://colorlib.com/wp/template/thebasketball/) — a basketball sports landing page with hero countdown, latest match results, team roster, player statistics with tabs, latest videos carousel, product shop, and a fan club CTA. The new name is "Hoopside".
+Recreation of ColorLib "Thebasketball" (https://colorlib.com/wp/template/thebasketball/) — a basketball sports landing page with hero countdown, latest match results, team roster, player statistics with tabs, latest videos carousel, product shop, and a fan club CTA. The new name is "Hoopside".
 
 ### Design Tokens
 

@@ -1,6 +1,6 @@
 # Template: Namastay (Yoga Instructor)
 
-**Recreation of:** ColorLib Yogafun
+**Recreation of:** ColorLib "Yogafun"
 **Source:** https://colorlib.com/wp/template/yogafun/
 **Preview:** https://preview.colorlib.com/theme/yogafun/
 **New name:** Namastay

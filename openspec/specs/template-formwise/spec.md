@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib Regform 7 (https://colorlib.com/wp/template/colorlib-regform-7/). A creative signup form template featuring two alternative form layouts with underline-style inputs, workspace illustrations, and a steel-blue register button.
+- **Source design:** ColorLib "Colorlib Regform 7" — https://colorlib.com/wp/template/colorlib-regform-7/
 
 ## Requirements
 

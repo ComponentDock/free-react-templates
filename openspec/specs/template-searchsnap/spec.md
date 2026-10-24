@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 14** — a full-screen overlay search form with a single centered pill-shaped search bar and an "X" close button in the top-right corner. Minimalist, clean design focused entirely on the search input.
+Recreation of ColorLib "Search Form Bar 14" — a full-screen overlay search form with a single centered pill-shaped search bar and an "X" close button in the top-right corner. Minimalist, clean design focused entirely on the search input.
 
 - **Source slug:** `search-form-bar-14`
 - **Source:** https://colorlib.com/wp/template/search-form-bar-14/

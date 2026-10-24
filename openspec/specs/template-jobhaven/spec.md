@@ -14,6 +14,7 @@ TypeScript.
 Source slug: `joblisting`
 Preview URL: https://preview.colorlib.com/theme/joblisting/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/joblisting-free-template.jpg
+- **Source design:** ColorLib "Joblisting" — https://colorlib.com/wp/template/joblisting/
 
 ## Design tokens
 

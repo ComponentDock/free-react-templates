@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dropdown 11** as a React component.
+Recreation of ColorLib "Dropdown 11" as a React component.
 
 - **Source:** https://colorlib.com/wp/template/dropdown-11/
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/dropdown-11/

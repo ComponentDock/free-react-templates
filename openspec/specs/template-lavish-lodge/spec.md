@@ -14,6 +14,7 @@ Recreation of ColorLib's **LuxuryHotel** template as a React 19 + Vite + Tailwin
 - **Live preview:** https://preview.colorlib.com/theme/luxury-hotel/
 - **New name:** `lavish-lodge` (package `@free-react-templates/lavish-lodge`)
 - **Surge target:** `lavish-lodge.free.componentdock.com`
+- **Source design:** ColorLib "Luxury Hotel" — https://colorlib.com/wp/template/luxury-hotel/
 
 ## Design Tokens (extracted from preview CSS)
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Cakes** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site for a bakery / cake shop.
+Recreation of ColorLib "Cakes" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site for a bakery / cake shop.
 
 - **ColorLib source:** https://colorlib.com/wp/template/cakes/
 - **Preview URL:** https://preview.colorlib.com/theme/cakes/

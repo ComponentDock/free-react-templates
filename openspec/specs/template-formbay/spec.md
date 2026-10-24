@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 11** — a clean, minimalist two-column
+Recreation of ColorLib "Contact Form 11" — a clean, minimalist two-column
 contact page with a large bold heading, underline-style form on the left, and
 a text block with a "Read more" link on the right. Features a coral/pink accent.
 

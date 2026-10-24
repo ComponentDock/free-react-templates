@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V7** — a clean, minimal, single-page
+Recreation of ColorLib "Contact Form V7" — a clean, minimal, single-page
 contact form template centered on a neutral background.
 
 - **Source slug:** `contact-form-v7`

@@ -1,6 +1,6 @@
 ---
 name: Strider
-description: Fashion e-commerce shop landing page — recreation of ColorLib Karma
+description: Fashion e-commerce shop landing page — recreation of ColorLib "Karma"
 source: https://colorlib.com/wp/template/karma/
 preview: https://preview.colorlib.com/theme/karma/
 ---

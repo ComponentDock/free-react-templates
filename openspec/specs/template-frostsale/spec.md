@@ -11,6 +11,7 @@ Frostsale is a winter sale notification modal template recreating ColorLib Modal
 **Source:** [ColorLib Modal 03](https://colorlib.com/wp/template/modal-03/)
 **Preview URL:** https://preview.colorlib.com/theme/bootstrap/modal-03/
 **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Modal 03" — https://colorlib.com/wp/template/modal-03/
 
 ## Design tokens
 

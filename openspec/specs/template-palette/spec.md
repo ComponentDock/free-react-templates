@@ -4,7 +4,7 @@ Recreation of ColorLib Clyde (https://colorlib.com/wp/template/clyde/)
 
 ## Purpose
 
-Palette is a personal portfolio landing page with a navbar, hero, stat counters, about band, skills, services, projects, testimonials and blog. It recreates the ColorLib **Clyde** design (https://colorlib.com/wp/template/clyde/, preview: https://preview.colorlib.com/theme/clyde/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Palette is a personal portfolio landing page with a navbar, hero, stat counters, about band, skills, services, projects, testimonials and blog. It recreates the ColorLib "Clyde" design (https://colorlib.com/wp/template/clyde/, preview: https://preview.colorlib.com/theme/clyde/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Overview
 

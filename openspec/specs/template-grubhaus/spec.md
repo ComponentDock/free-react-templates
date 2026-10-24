@@ -8,6 +8,7 @@ Recreation of ColorLib's **Foodbar** template as a React 19 + Vite + Tailwind 4 
 - **Screenshot:** ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foodbar-free-template.jpg)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Food / Restaurant — single-page restaurant site with split hero, featured dishes grid, menu list, photo gallery, testimonial carousel, reservation form, and multi-column footer.
+- **Source design:** ColorLib "Foodbar" — https://colorlib.com/wp/template/foodbar/
 
 ## Design Tokens (extracted from preview stylesheet)
 

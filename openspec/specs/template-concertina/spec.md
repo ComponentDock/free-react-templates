@@ -16,6 +16,7 @@ An Accordion & FAQ Showcase template with sticky navigation header, hero banner,
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Accordion 05" — https://colorlib.com/wp/template/accordion-05/
 
 ## Design Tokens
 

@@ -10,6 +10,7 @@ A careers template with hero, stats banner, job listings, company logos and cta 
 - **App folder:** `apps/jobboard`
 - **Package:** `@free-react-templates/jobboard`
 - **Surge target:** `jobboard.free.componentdock.com`
+- **Source design:** ColorLib "Careers" — https://colorlib.com/wp/template/careers/
 
 ## Design tokens
 

@@ -16,6 +16,7 @@ template, not a full-page layout.
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/modal-16/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Bootstrap Modal (registration form)
+- **Source design:** ColorLib "Modal 16" — https://colorlib.com/wp/template/modal-16/
 
 ## Design tokens
 

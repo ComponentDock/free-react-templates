@@ -6,6 +6,7 @@ A social-media-style sidebar navigation template with a profile panel, stats, ic
 
 Source: https://colorlib.com/wp/template/colorlib-sidebar-v01/
 Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v01/
+- **Source design:** ColorLib "Colorlib Sidebar V01" — https://colorlib.com/wp/template/colorlib-sidebar-v01/
 
 ## Design tokens
 

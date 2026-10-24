@@ -10,6 +10,7 @@ Tailwind CSS 4 + TypeScript single-page application.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/virtualassistant-free-template.jpg
 - **Stack:** Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Deploy target:** `taskfly.free.componentdock.com`
+- **Source design:** ColorLib "Virtualassistant" — https://colorlib.com/wp/template/virtualassistant/
 
 ## Design tokens
 

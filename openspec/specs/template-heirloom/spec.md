@@ -15,6 +15,7 @@ Recreation of ColorLib's **Classic** one-page business template.
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 - New name: **heirloom** (`apps/heirloom`, `@free-react-templates/heirloom`)
 - Footer link: https://www.componentdock.com/ ("Component Dock")
+- **Source design:** ColorLib "Classic" — https://colorlib.com/wp/template/classic/
 
 ## Design tokens (extracted from preview CSS)
 

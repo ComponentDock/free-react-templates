@@ -14,6 +14,7 @@ Recreation of ColorLib's **Ezuca** template as a React 19 + Vite + Tailwind 4 + 
 - **Live preview:** https://preview.colorlib.com/theme/ezuca/
 - **New app name:** `learnbase`
 - **Package:** `@free-react-templates/learnbase`
+- **Source design:** ColorLib "Ezuca" — https://colorlib.com/wp/template/ezuca/
 
 ## Design tokens
 

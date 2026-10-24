@@ -6,7 +6,7 @@
 > Fidelity reference: `openspec/specs/template-cleanslate/spec.md`.
 
 ## Purpose
-Recreation of ColorLib **Cleaning Company** template.
+Recreation of ColorLib "Cleaning Company" template.
 - Source slug: `cleaning-company`
 - Preview URL: `https://preview.colorlib.com/#cleaning-company` (iframe-based, no standalone page)
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningcompany.jpg`

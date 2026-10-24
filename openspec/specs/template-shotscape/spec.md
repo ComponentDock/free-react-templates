@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Phozogy** photography studio template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Phozogy" photography studio template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source:** https://colorlib.com/wp/template/phozogy/
 - **Preview:** https://preview.colorlib.com/theme/phozogy/

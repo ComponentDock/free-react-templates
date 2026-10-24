@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Security** template as a single-page React 19 +
+Recreation of the ColorLib "Security" template as a single-page React 19 +
 Vite + Tailwind 4 + TypeScript application. Deploys to
 `https://ironwatch.free.componentdock.com`.
 

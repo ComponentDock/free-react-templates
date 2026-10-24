@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib `accordion-02` (Free Food Menu Accordion), previewed at `https://colorlib.com/wp/template/accordion-02/`. Built as a modern, interactive food menu and category accordion featuring categorized dishes, expandable accordions, price tags, high-quality dish imagery, dietary badges, and a responsive layout using Vite, React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Accordion 02" — https://colorlib.com/wp/template/accordion-02/
 
 ## Design Tokens
 

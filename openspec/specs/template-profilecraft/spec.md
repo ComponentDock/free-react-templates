@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Breed2 — a free personal profile/portfolio website
+Recreation of ColorLib "Breed2" — a free personal profile/portfolio website
 template with a hero banner, stats, about section, services, testimonials,
 portfolio grid, blog, and footer. The original is a Bootstrap-based template
 for creative professionals and freelancers.

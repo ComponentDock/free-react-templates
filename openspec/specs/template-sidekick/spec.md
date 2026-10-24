@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Sidebar 10** (slug: `bootstrap-sidebar-10`).
+Recreation of ColorLib "Bootstrap Sidebar 10" (slug: `bootstrap-sidebar-10`).
 Source: https://colorlib.com/wp/template/bootstrap-sidebar-10/
 Preview: https://colorlib.com/etc/bootstrap-sidebar/sidebar-10/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170724.jpg

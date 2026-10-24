@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Financial & Business Consulting template with hero banner, services grid, statistics & counters and footer attribution sections. Recreation of ColorLib **Unioncorp** (`https://colorlib.com/wp/template/unioncorp/`, preview: `https://preview.colorlib.com/theme/unioncorp/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`@free-react-templates/unioncorp`).
+A Financial & Business Consulting template with hero banner, services grid, statistics & counters and footer attribution sections. Recreation of ColorLib "Unioncorp" (`https://colorlib.com/wp/template/unioncorp/`, preview: `https://preview.colorlib.com/theme/unioncorp/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`@free-react-templates/unioncorp`).
 
 ## Design Tokens & Aesthetic
 

@@ -9,7 +9,7 @@
 
 Recreation of ColorLib's **Jonson** personal portfolio template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
 
-- **Source template:** ColorLib Jonson
+- **Source template:** ColorLib "Jonson"
 - **ColorLib URL:** https://colorlib.com/wp/template/jonson/
 - **Preview URL:** https://preview.colorlib.com/theme/jonson/
 - **New name:** Prismark (`apps/prismark`, package `@free-react-templates/prismark`)

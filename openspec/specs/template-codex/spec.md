@@ -8,6 +8,7 @@ Recreation of ColorLib Wizard 29 — a free registration wizard template with a 
 - **Preview URL**: `https://colorlib.com/etc/bwiz/colorlib-wizard-29/index.html` (live preview reachable; the `preview.colorlib.com` URL returns 404)
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-29.jpg`
 - **Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict)
+- **Source design:** ColorLib "Colorlib Wizard 29" — https://colorlib.com/wp/template/colorlib-wizard-29/
 
 ## Design Tokens
 

@@ -15,7 +15,7 @@ the header by 180px, creating a layered card effect.
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Modal 10** — https://colorlib.com/wp/template/modal-10/
+- **Source**: ColorLib "Modal 10" — https://colorlib.com/wp/template/modal-10/
 - **Preview**: slug-only `https://preview.colorlib.com/theme/modal-10/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/modal-10/ — **HTTP 200** on 2026-10-23, title "Modal 10". Its `css/style.css` is byte-identical (sha256 `7fea63534e8a8c9f...`, 22,678 bytes) to `modal-10/css/style.css` in `https://preview.colorlib.com/downloads/free/modal-10.zip`.
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-10.jpg
 - **Measured how**: hex-literal census of the live `css/style.css?v=a5859e5d` (22,678 bytes, archive-identical).

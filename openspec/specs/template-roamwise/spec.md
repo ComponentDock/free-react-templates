@@ -15,6 +15,7 @@ Recreation of ColorLib's **Safario** travel agency template.
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/safario-free-template.jpg
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **Output:** `apps/roamwise` — package `@free-react-templates/roamwise`
+- **Source design:** ColorLib "Safario" — https://colorlib.com/wp/template/safario/
 
 ## Design tokens
 

@@ -10,6 +10,7 @@ A modern transparent login form template with social sign-in options, built on a
 - **New name:** `purplesign`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Login Form
+- **Source design:** ColorLib "Login Form 12" — https://colorlib.com/wp/template/login-form-12/
 
 ## Design Tokens (from reference CSS)
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A full-viewport centered login with a circular avatar, blue gradient background (#005bea → #00c6fb) with photo overlay. It also includes username/password inputs with left icons, dark Login button with gradient hover reveal, and "Create new account" CTA. Recreation of ColorLib Login Form V12 as Loginaura.
+A full-viewport centered login with a circular avatar, blue gradient background (#005bea → #00c6fb) with photo overlay. It also includes username/password inputs with left icons, dark Login button with gradient hover reveal, and "Create new account" CTA. Recreation of ColorLib "Login Form V12" as Loginaura.
 
 - Source: https://colorlib.com/wp/template/login-form-v12/
 - Preview: https://colorlib.com/etc/lf/Login_v12/index.html

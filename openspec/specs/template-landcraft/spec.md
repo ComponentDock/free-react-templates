@@ -1,6 +1,6 @@
 ---
 name: landcraft
-description: Landscaping company landing page — recreation of ColorLib Martxa (https://colorlib.com/wp/template/martxa/)
+description: Landscaping company landing page — recreation of ColorLib "Martxa" (https://colorlib.com/wp/template/martxa/)
 stack:
   - React 19
   - Vite

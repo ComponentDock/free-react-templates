@@ -13,6 +13,7 @@ Recreation of ColorLib's **Bootstrap Footer 16** — a dark-themed footer with a
 - **Preview URL:** `https://preview.colorlib.com/theme/bft/bootstrap-footer-16/`
 - **ColorLib page:** `https://colorlib.com/wp/template/bootstrap-footer-16/`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
+- **Source design:** ColorLib "Bootstrap Footer 16" — https://colorlib.com/wp/template/bootstrap-footer-16/
 
 ## Design tokens
 

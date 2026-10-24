@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Shotgear** — a photography studio / creative agency template.
+Recreation of ColorLib "Shotgear" — a photography studio / creative agency template.
 - **Source slug:** `shotgear`
 - **Preview URL:** https://preview.colorlib.com/theme/shotgear/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/shotgear-free-template.jpg

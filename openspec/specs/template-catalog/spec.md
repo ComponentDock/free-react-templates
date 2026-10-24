@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate ColorLib Directoryads as a React 19 + Vite + Tailwind CSS 4 + TypeScript
+Recreate ColorLib "Directoryads" as a React 19 + Vite + Tailwind CSS 4 + TypeScript
 template named "Catalog". The original uses Nanum Gothic font, blue (#2f89fc) primary
 color, and dark (#333) footer. No ColorLib assets are copied; images use
 picsum.photos placeholders, icons use lucide-react, and brand icons use inline SVGs.

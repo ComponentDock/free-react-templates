@@ -20,6 +20,7 @@ expands on focus. A clear (X) button appears inside the first input when
 text is entered.
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
+- **Source design:** ColorLib "Colorlib Search 21" — https://colorlib.com/wp/template/colorlib-search-21/
 
 ## Design Tokens
 

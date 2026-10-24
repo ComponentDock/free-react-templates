@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 05** (`https://colorlib.com/wp/template/carousel-05/`), a modern slide/carousel interface template featuring high-impact hero carousel slides, interactive navigation controls, feature cards, testimonial slider, call-to-action sections, and fully responsive layout. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Carousel 05" (`https://colorlib.com/wp/template/carousel-05/`), a modern slide/carousel interface template featuring high-impact hero carousel slides, interactive navigation controls, feature cards, testimonial slider, call-to-action sections, and fully responsive layout. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens (Extracted from Preview / Screenshot Reference)
 

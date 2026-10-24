@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Gym** — a fitness/gym HTML template.
+Recreation of ColorLib "Gym" — a fitness/gym HTML template.
 
 - **Source:** https://colorlib.com/wp/template/gym/
 - **Preview:** https://preview.colorlib.com/theme/gym/

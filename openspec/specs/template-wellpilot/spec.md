@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Healthcoach** (https://colorlib.com/wp/template/healthcoach/).
+Recreation of ColorLib "Healthcoach" (https://colorlib.com/wp/template/healthcoach/).
 Preview: https://preview.colorlib.com/theme/healthcoach/
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict).

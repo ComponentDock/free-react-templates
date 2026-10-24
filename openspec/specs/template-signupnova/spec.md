@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 16** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "Signup Form 16" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 - **ColorLib source:** https://colorlib.com/wp/template/signup-form-16/
 - **Preview URL:** https://preview.colorlib.com/theme/signup-form-16/ (Note: preview returned 404 at time of research; design captured from screenshot.) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, Vitest + Testing Library

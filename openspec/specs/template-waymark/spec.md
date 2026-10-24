@@ -16,6 +16,7 @@ Recreation of ColorLib's **Tour** template as a React 19 + Vite + Tailwind 4 + T
 - **App folder:** `apps/waymark`
 - **Package:** `@free-react-templates/waymark`
 - **Deploy URL:** `https://waymark.free.componentdock.com`
+- **Source design:** ColorLib "Tour" — https://colorlib.com/wp/template/tour/
 
 ## Design tokens
 

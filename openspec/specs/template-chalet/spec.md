@@ -9,7 +9,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Schmidt** (`https://colorlib.com/wp/template/schmidt/`) — a single-page personal portfolio template for a UI/UX designer & developer.
+Recreation of ColorLib "Schmidt" (`https://colorlib.com/wp/template/schmidt/`) — a single-page personal portfolio template for a UI/UX designer & developer.
 
 - **Source template:** Schmidt (ColorLib)
 - **Preview URL:** `https://preview.colorlib.com/theme/schmidt/`

@@ -11,6 +11,7 @@ The template displays a centered landing page with a "Launch Modal" button that
 opens a two-column modal dialog: a left panel with a background image and a
 right panel with an olive-toned consultation contact form (name, email, subject,
 message, submit).
+- **Source design:** ColorLib "Modal 07" — https://colorlib.com/wp/template/modal-07/
 
 ## Design Tokens
 

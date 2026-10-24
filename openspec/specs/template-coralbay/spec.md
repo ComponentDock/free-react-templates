@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Marimar** hotel template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+Recreation of the ColorLib "Marimar" hotel template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 - **Source slug:** `marimar`
 - **Source URL:** https://colorlib.com/wp/template/marimar/

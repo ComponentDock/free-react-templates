@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Razo** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+Recreation of ColorLib "Razo" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/razo/
 - Preview: https://preview.colorlib.com/theme/razo/

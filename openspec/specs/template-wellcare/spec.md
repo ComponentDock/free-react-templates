@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Medicare** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Medicare" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source template:** https://colorlib.com/wp/template/medicare/
 - **Preview URL:** https://preview.colorlib.com/theme/medicare/

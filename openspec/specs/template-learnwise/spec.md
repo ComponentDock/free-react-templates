@@ -11,7 +11,7 @@ Recreation of ColorLib's "Clever" template — an education and online courses w
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Clever** — https://colorlib.com/wp/template/clever/
+- **Source**: ColorLib "Clever" — https://colorlib.com/wp/template/clever/
 - **Preview**: `https://preview.colorlib.com/theme/clever/` — HTTP 200 on 2026-10-23, **33,694 bytes**, title `Clever - Education & Courses Template | Home`.
 - **Stylesheet measured**: `style.css` — **59,857 bytes**, sha256 `28551082308e…`. One theme sheet; it `@import`s `css/classy-nav.min.css` and links Font Awesome, so the census below is the theme layer only.
 - **Measured how**: hex-literal census of the theme sheet, then the winning rule per selector. Not a rebuild — no `?v=` marker, no `/kit/`, Bootstrap-4-era markup.

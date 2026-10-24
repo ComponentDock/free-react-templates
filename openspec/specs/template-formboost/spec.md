@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Wizard 5** as a React 19 + Vite + Tailwind 4 +
+Recreation of ColorLib "Colorlib Wizard 5" as a React 19 + Vite + Tailwind 4 +
 TypeScript template. A four-step order/wizard form with split layout (decorative
 image left, form right), step progress indicators, and navigation buttons.
 

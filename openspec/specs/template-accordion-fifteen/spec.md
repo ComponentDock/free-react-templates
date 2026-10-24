@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Accordion 15 (`https://colorlib.com/wp/template/accordion-15/`, preview: `https://preview.colorlib.com/theme/bac/accordion-15/`). Built as a modern React 19 + Tailwind CSS 4 widget component featuring expandable profile accordion sections (Profile, Messages, Settings, Logout) with nested navigation links and clean typography.
+- **Source design:** ColorLib "Accordion 15" — https://colorlib.com/wp/template/accordion-15/
 
 ## Design Tokens
 

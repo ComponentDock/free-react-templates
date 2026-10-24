@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Imahe** (https://colorlib.com/wp/template/imahe/)
+Recreation of ColorLib "Imahe" (https://colorlib.com/wp/template/imahe/)
 via live preview at https://preview.colorlib.com/theme/imahe/
 
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).

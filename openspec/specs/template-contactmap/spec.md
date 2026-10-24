@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V8** — a centered single-column contact
+Recreation of ColorLib "Contact Form V8" — a centered single-column contact
 form floating over a full-page Google Maps background, with underline-style
 input fields, a "send copy" checkbox, and a solid green submit button. The
 defining visual feature is the interactive map filling the entire viewport

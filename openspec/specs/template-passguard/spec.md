@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form 05** under the NEW name **PassGuard**.
+Recreation of ColorLib "Login Form 05" under the NEW name **PassGuard**.
 A split-screen login page with a full-height kitchen-lifestyle background
 image on the left and a centered white login card on the right containing
 username/password fields, a "Remember me" checkbox, "Forgot Password" link,

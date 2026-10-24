@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Automotive** template as a single-page React site.
+Recreation of the ColorLib "Automotive" template as a single-page React site.
 
 - **Source:** [colorlib.com/wp/template/automotive/](https://colorlib.com/wp/template/automotive/)
 - **Preview:** [preview.colorlib.com/theme/automotive/](https://preview.colorlib.com/theme/automotive/)

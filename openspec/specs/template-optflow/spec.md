@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect V20** (`multiselect-20`), a multi-select snippet showing three color-variant dropdowns with a max-selection limit. This is a **snippet/component template**, not a full-page layout — it renders a centered heading and three styled multi-select dropdowns, each with a distinct tag color.
+Recreation of ColorLib "Multiselect V20" (`multiselect-20`), a multi-select snippet showing three color-variant dropdowns with a max-selection limit. This is a **snippet/component template**, not a full-page layout — it renders a centered heading and three styled multi-select dropdowns, each with a distinct tag color.
 
 - **Source slug:** `multiselect-20`
 - **Source URL:** https://colorlib.com/wp/template/multiselect-20/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Sharespace](https://colorlib.com/wp/template/sharespace/)
+Recreation of [ColorLib "Sharespace"](https://colorlib.com/wp/template/sharespace/)
 as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Preview URL**: https://preview.colorlib.com/theme/sharespace/

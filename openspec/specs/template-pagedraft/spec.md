@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **PageOne** template as a modern React SPA.
+Recreation of the ColorLib "PageOne" template as a modern React SPA.
 
 - **Source:** https://colorlib.com/wp/template/pageone/
 - **Preview:** https://preview.colorlib.com/theme/pageone/

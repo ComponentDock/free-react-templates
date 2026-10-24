@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Sintec** construction company template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of the ColorLib "Sintec" construction company template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** [ColorLib Sintec](https://colorlib.com/wp/template/sintec/)
 - **Preview:** https://preview.colorlib.com/theme/sintec/

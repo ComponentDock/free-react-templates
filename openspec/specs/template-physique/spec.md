@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fitness** template
+Recreation of ColorLib "Fitness" template
 (https://colorlib.com/wp/template/fitness/).
 Preview: https://preview.colorlib.com/theme/fitness/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fitness-free-template.jpg

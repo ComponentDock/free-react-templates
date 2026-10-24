@@ -21,6 +21,7 @@ Shipping, Payment, Confirm) with a warm peach/beige background, peach-orange acc
 and a split-screen layout featuring a decorative illustration panel on the left and a white
 form card on the right. Users fill in billing information, shipping details, payment
 preferences, and review a summary before submitting.
+- **Source design:** ColorLib "Colorlib Wizard 5" — https://colorlib.com/wp/template/colorlib-wizard-5/
 
 ## Source
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Meal** restaurant template.
+Recreation of ColorLib "Meal" restaurant template.
 Preview: https://preview.colorlib.com/theme/meal/
 Source: https://colorlib.com/wp/template/meal/
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript

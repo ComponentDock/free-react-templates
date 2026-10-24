@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 13** — a full-page gradient background
+Recreation of ColorLib "Contact Form 13" — a full-page gradient background
 (blue-to-teal) with contact info and two location blocks on the left, and a
 white form card on the right. Features an olive/yellow-green button and
 uppercase letter-spaced form heading.

@@ -12,6 +12,7 @@ website template.
 - **New name:** `subdivide` (structured subdivisions of content — a multi-column footer)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Source slug:** `bootstrap-footer-06`
+- **Source design:** ColorLib "Bootstrap Footer 06" — https://colorlib.com/wp/template/bootstrap-footer-06/
 
 ## Design Tokens
 

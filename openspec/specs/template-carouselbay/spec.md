@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **carousel-17** (`https://colorlib.com/wp/template/carousel-17/`), implemented as a modern React 19 + TypeScript + Tailwind CSS 4 single-page template (`@free-react-templates/carouselbay`).
+Recreation of ColorLib "carousel-17" (`https://colorlib.com/wp/template/carousel-17/`), implemented as a modern React 19 + TypeScript + Tailwind CSS 4 single-page template (`@free-react-templates/carouselbay`).
 
 ## Design tokens
 

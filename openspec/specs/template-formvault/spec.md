@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 13** — a two-column contact page with a
+Recreation of ColorLib "Contact Form 13" — a two-column contact page with a
 blue-to-cyan gradient background, a left-side contact info panel with two
 location columns, and a white card form on the right.
 

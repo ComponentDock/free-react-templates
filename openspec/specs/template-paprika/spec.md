@@ -8,6 +8,7 @@ A premium restaurant landing page with top bar, navbar, hero slider, services gr
 - **Preview:** https://preview.colorlib.com/theme/redcayenne/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Restaurant
+- **Source design:** ColorLib "Redcayenne" — https://colorlib.com/wp/template/redcayenne/
 
 ## Design Tokens
 

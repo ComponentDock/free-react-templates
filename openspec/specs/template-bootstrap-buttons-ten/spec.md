@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 10 (`https://colorlib.com/wp/template/bootstrap-buttons-10/`). A modern UI component showcase highlighting gradient, shadow-enhanced, and pill-shaped button variations with rich interactive hover and click states, built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Bootstrap Buttons 10" — https://colorlib.com/wp/template/bootstrap-buttons-10/
 
 ## Design tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Victor** (`https://colorlib.com/wp/template/victor/`, preview: `https://preview.colorlib.com/theme/victor/`).
+Recreation of ColorLib "Victor" (`https://colorlib.com/wp/template/victor/`, preview: `https://preview.colorlib.com/theme/victor/`).
 A business consulting and agency website template built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 Designed for business consultancies, digital agencies, financial services, and professional service firms.
 

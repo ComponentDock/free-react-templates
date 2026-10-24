@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Drcare** (`https://colorlib.com/wp/template/drcare/`, preview: `https://preview.colorlib.com/theme/drcare/`). Built as a modern React 19 + Tailwind CSS 4 healthcare/medical landing page.
+Recreation of ColorLib "Drcare" (`https://colorlib.com/wp/template/drcare/`, preview: `https://preview.colorlib.com/theme/drcare/`). Built as a modern React 19 + Tailwind CSS 4 healthcare/medical landing page.
 
 ## Design tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Boxus** as a React 19 + Vite + Tailwind CSS 4 + TypeScript
+Recreation of ColorLib "Boxus" as a React 19 + Vite + Tailwind CSS 4 + TypeScript
 single-page application. Original preview:
 https://preview.colorlib.com/theme/boxus/
 Source: https://colorlib.com/wp/template/boxus/

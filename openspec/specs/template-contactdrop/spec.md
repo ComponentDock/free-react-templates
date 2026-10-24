@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A centered single-column contact form modal on a full-page purple gradient background, with icon-labeled fields. It also includes field validation indicators, a header image banner, and a pill-shaped submit button. Recreation of ColorLib **Contact Form V16**.
+A centered single-column contact form modal on a full-page purple gradient background, with icon-labeled fields. It also includes field validation indicators, a header image banner, and a pill-shaped submit button. Recreation of ColorLib "Contact Form V16".
 
 - **Source slug:** `contact-form-v16`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v16/

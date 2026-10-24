@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Complex** template
+Recreation of the ColorLib "Complex" template
 (https://colorlib.com/wp/template/complex/) as a React 19 + Vite + Tailwind 4
 + TypeScript template.
 

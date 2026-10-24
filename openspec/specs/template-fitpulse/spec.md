@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fitnessclub** template.
+Recreation of ColorLib "Fitnessclub" template.
 - Source slug: `fitnessclub`
 - Preview URL: https://preview.colorlib.com/theme/fitnessclub/
 - Source screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fitnessclub-free-template.jpg

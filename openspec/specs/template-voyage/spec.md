@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Bootstrap 5 template with hero section, about section, destinations carousel, faq accordion and blog / recent posts sections. Recreation of ColorLib Passport (`https://colorlib.com/wp/template/passport/`, preview: `https://preview.colorlib.com/theme/passport/`) as a modern React 19 + Tailwind CSS 4 travel and tourism landing template (`@free-react-templates/voyage`).
+A Bootstrap 5 template with hero section, about section, destinations carousel, faq accordion and blog / recent posts sections. Recreation of ColorLib "Passport" (`https://colorlib.com/wp/template/passport/`, preview: `https://preview.colorlib.com/theme/passport/`) as a modern React 19 + Tailwind CSS 4 travel and tourism landing template (`@free-react-templates/voyage`).
 
 ## Design Tokens
 

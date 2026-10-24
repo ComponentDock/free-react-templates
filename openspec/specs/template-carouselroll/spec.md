@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An easy-to-use, modern, mobile-friendly free vertical carousel template for beautiful slideshows. Recreation of ColorLib **Carousel V13** (`https://colorlib.com/wp/template/carousel-13/`), an easy-to-use, modern, and mobile-friendly free vertical carousel template for creating beautiful slideshows and showcases, built with React 19, Tailwind CSS 4, and TypeScript.
+An easy-to-use, modern, mobile-friendly free vertical carousel template for beautiful slideshows. Recreation of ColorLib "Carousel V13" (`https://colorlib.com/wp/template/carousel-13/`), an easy-to-use, modern, and mobile-friendly free vertical carousel template for creating beautiful slideshows and showcases, built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design tokens
 

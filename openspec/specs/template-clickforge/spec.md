@@ -20,6 +20,7 @@ Preview URL: https://colorlib.com/wp/template/bootstrap-buttons-12/ (Preview URL
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
 Stack: React 19, Tailwind CSS 4, TypeScript, Lucide Icons.
+- **Source design:** ColorLib "Bootstrap Buttons 12" — https://colorlib.com/wp/template/bootstrap-buttons-12/
 
 ## Design Tokens
 

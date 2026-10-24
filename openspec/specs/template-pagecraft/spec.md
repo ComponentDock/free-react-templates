@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Pageone** (`https://colorlib.com/wp/template/pageone/`), a modern agency and corporate portfolio template. Preview URL: `https://preview.colorlib.com/theme/pageone/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript (strict).
+Recreation of ColorLib "Pageone" (`https://colorlib.com/wp/template/pageone/`), a modern agency and corporate portfolio template. Preview URL: `https://preview.colorlib.com/theme/pageone/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript (strict).
 
 ## Design Tokens
 

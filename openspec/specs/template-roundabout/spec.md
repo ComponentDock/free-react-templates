@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel V06** (`https://colorlib.com/wp/template/carousel-06/`), styled as a modern interactive multi-item carousel and slider showcase for digital agencies and product features.
+Recreation of ColorLib "Carousel V06" (`https://colorlib.com/wp/template/carousel-06/`), styled as a modern interactive multi-item carousel and slider showcase for digital agencies and product features.
 
 - **Source Slug:** `carousel-06`
 - **Preview URL:** `https://roundabout.free.componentdock.com`

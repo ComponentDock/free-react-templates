@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Autorepair** template for React 19 + Vite + Tailwind 4 + TypeScript.
+Recreation of ColorLib "Autorepair" template for React 19 + Vite + Tailwind 4 + TypeScript.
 
 - **Source slug:** `autorepair`
 - **Source URL:** https://colorlib.com/wp/template/autorepair/

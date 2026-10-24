@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A dark, cinematic video production / videographer portfolio site. Recreation of the ColorLib **Videograph** template.
+A dark, cinematic video production / videographer portfolio site. Recreation of the ColorLib "Videograph" template.
 
 - **Source:** https://colorlib.com/wp/template/videograph/
 - **Preview:** https://preview.colorlib.com/theme/videograph/

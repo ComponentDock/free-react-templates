@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 02 (`https://colorlib.com/wp/template/bb/bootstrap-buttons-02/`). A comprehensive, modern button and UI component showcase featuring multiple button variants (primary, secondary, tertiary, quaternary), pill/rounded shapes, outline styles, icon buttons, dropdown menus, button groups, interactive checkboxes/radios, animated slide buttons, and social brand buttons (Facebook, Twitter, LinkedIn, Pinterest, Dribbble), built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Buttons" — https://colorlib.com/wp/template/bb/
 
 ## Design Tokens
 

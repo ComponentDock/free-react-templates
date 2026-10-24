@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Kiddos** template as a single-page React app.
+Recreation of the ColorLib "Kiddos" template as a single-page React app.
 
 - **Source:** https://colorlib.com/wp/template/kiddos/
 - **Preview:** https://preview.colorlib.com/theme/kiddos/

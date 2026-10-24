@@ -15,6 +15,7 @@ A law firm landing page with a dark top bar, sticky navbar, fullscreen hero with
 video overlay, 4-column feature strip, about section with video play, stat
 counters, practice area cards, case gallery, attorney team grid, and a 5-column
 footer with dark bottom bar.
+- **Source design:** ColorLib "Lawfirm" — https://colorlib.com/wp/template/lawfirm/
 
 ## Design Tokens
 

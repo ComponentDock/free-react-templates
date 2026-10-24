@@ -14,6 +14,7 @@ Recreation of ColorLib's **Lingua** template as a React 19 + Vite + Tailwind 4 +
 - **Live preview:** https://preview.colorlib.com/theme/lingua/
 - **New app name:** `babelwise`
 - **Package:** `@free-react-templates/babelwise`
+- **Source design:** ColorLib "Lingua" — https://colorlib.com/wp/template/lingua/
 
 ## Design tokens
 

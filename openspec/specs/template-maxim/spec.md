@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib Neutral law firm template as "Maxim" — a single-page
+Recreate the ColorLib "Neutral" law firm template as "Maxim" — a single-page
 React website with hero, counter stats, about section, testimonials carousel,
 vertical-tabbed practice areas, attorney grid, blog cards, contact form, and
 footer. Built with React 19, Tailwind CSS 4, and TypeScript.

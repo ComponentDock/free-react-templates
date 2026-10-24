@@ -1,6 +1,6 @@
 # Template: Knob (Bootstrap Checkboxes)
 
-Recreation of ColorLib Checkbox V18 (https://colorlib.com/wp/template/checkbox-18/)
+Recreation of ColorLib "Checkbox V18" (https://colorlib.com/wp/template/checkbox-18/)
 
 ## Purpose
 

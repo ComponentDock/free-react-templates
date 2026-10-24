@@ -14,6 +14,7 @@ Recreation of ColorLib's **Hamlet** template as a React 19 + Vite + Tailwind CSS
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/hamlet-free-template-1.jpg
 - **New name:** `estate-haven` (package: `@free-react-templates/estate-haven`)
 - **Category:** Real Estate Agency
+- **Source design:** ColorLib "Hamlet" — https://colorlib.com/wp/template/hamlet/
 
 ## Design Tokens
 

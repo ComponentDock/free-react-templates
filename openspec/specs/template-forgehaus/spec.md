@@ -9,6 +9,7 @@ Recreation of ColorLib's **Create** template.
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
 - Category: Creative Agency / Studio one-page
 - Style: Clean, modern agency site with dark accents, teal brand color, Quicksand font, pill-shaped buttons, and a single-page scroll layout with typed text hero animation.
+- **Source design:** ColorLib "Create" — https://colorlib.com/wp/template/create/
 
 ## Section Order (from live preview DOM)
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Cleanex** (`https://colorlib.com/wp/template/cleanex/`),
+Recreation of ColorLib "Cleanex" (`https://colorlib.com/wp/template/cleanex/`),
 a cleaning company landing page template with hero, booking form, services,
 how-it-works, pricing, testimonials, blog, and footer sections.
 

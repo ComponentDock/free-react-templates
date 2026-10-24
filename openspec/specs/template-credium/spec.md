@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Credit](https://colorlib.com/wp/template/credit/) — a loan and credit company HTML template, converted to React 19 + Vite + Tailwind CSS 4 + TypeScript.
+Recreation of [ColorLib "Credit"](https://colorlib.com/wp/template/credit/) — a loan and credit company HTML template, converted to React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
 Preview URL: https://preview.colorlib.com/theme/credit/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/credit-free-template.jpg

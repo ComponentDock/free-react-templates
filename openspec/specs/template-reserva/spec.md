@@ -20,6 +20,7 @@ https://colorlib.com/etc/bwiz/colorlib-wizard-19/index.html (which was
 accessible) and the page metadata on colorlib.com. The screenshot
 (colorlib-free-wizard-19.jpg, AVIF format, 1200×972) was also analyzed
 via page context.
+- **Source design:** ColorLib "Colorlib Wizard 19" — https://colorlib.com/wp/template/colorlib-wizard-19/
 
 ## Design Tokens
 

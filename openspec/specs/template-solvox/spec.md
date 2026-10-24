@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Eroo** — a dark-themed digital innovation / creative
+Recreation of ColorLib "Eroo" — a dark-themed digital innovation / creative
 agency website template.
 
 - **Source:** https://colorlib.com/wp/template/eroo/

@@ -1,6 +1,6 @@
 # Template: Hamlin (Real Estate Agency)
 
-Recreation of ColorLib Hamlet (https://colorlib.com/wp/template/hamlet/).
+Recreation of ColorLib "Hamlet" (https://colorlib.com/wp/template/hamlet/).
 
 ## Purpose
 

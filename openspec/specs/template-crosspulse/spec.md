@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Crossbody** — a crossfit/gym landing page.
+Recreation of ColorLib "Crossbody" — a crossfit/gym landing page.
 
 - **Source slug:** `crossbody`
 - **ColorLib URL:** https://colorlib.com/wp/template/crossbody/

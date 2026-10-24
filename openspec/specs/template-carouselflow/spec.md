@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 12** (`https://colorlib.com/wp/template/carousel-12/`), preview URL: `https://preview.colorlib.com/theme/bootstrap/carousel-12/`.
+Recreation of ColorLib "Carousel 12" (`https://colorlib.com/wp/template/carousel-12/`), preview URL: `https://preview.colorlib.com/theme/bootstrap/carousel-12/`.
 New original name: `carouselflow` (`@free-react-templates/carouselflow`). Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 
 ## Design Tokens (Extracted from Reference)

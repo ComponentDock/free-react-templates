@@ -6,7 +6,7 @@ A light, editorial blog-and-magazine landing template: sticky white navbar, full
 photographic hero with a story meta bar, a three-card "latest" carousel, a travel
 media-list band, a four-column fashion grid with "Load More", a team band with a
 brand-tinted hover overlay, and a dark three-column footer carrying the newsletter form.
-Recreation of the ColorLib **Blogger** template
+Recreation of the ColorLib "Blogger" template
 (https://colorlib.com/wp/template/blogger/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 

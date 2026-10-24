@@ -10,6 +10,7 @@ A business template with header / navigation, hero / slider, services section, a
 - **New name:** `advisory`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Deploy target:** https://advisory.free.componentdock.com
+- **Source design:** ColorLib "Consulto" — https://colorlib.com/wp/template/consulto/
 
 ## Design Tokens
 

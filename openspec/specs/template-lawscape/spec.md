@@ -1,7 +1,7 @@
 ---
 name: Lawscape
 description: >
-  Recreation of ColorLib Lawride — a lawyer & legal firm landing page template
+  Recreation of ColorLib "Lawride" — a lawyer & legal firm landing page template
   with a top bar, orange navbar, hero banner, statistics, about section, practice
   areas, testimonials, team, CTA, blog, and footer.
 source:

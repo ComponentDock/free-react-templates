@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A medical/healthcare website template with top bar, navbar, hero banner, feature cards, services, about section, team cards. It also includes appointment area (FAQ + form), blog carousel, brand logos, and footer. Recreation of ColorLib **Medcare**.
+A medical/healthcare website template with top bar, navbar, hero banner, feature cards, services, about section, team cards. It also includes appointment area (FAQ + form), blog carousel, brand logos, and footer. Recreation of ColorLib "Medcare".
 
 - **Source slug:** `medcare`
 - **Preview URL:** https://preview.colorlib.com/theme/medcare/

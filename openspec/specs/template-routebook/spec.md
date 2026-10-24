@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Directing** — a local services directory / listing template.
+Recreation of ColorLib "Directing" — a local services directory / listing template.
 - **Source slug:** `directing`
 - **Preview URL:** https://preview.colorlib.com/theme/directing/
 - **ColorLib page:** https://colorlib.com/wp/template/directing/

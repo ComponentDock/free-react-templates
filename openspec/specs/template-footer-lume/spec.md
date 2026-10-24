@@ -23,6 +23,7 @@ Recreation of ColorLib's **Bootstrap Footer 17** — a simple, modern, minimal d
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Bootstrap Footer 17" — https://colorlib.com/wp/template/bootstrap-footer-17/
 
 ## Design Tokens
 

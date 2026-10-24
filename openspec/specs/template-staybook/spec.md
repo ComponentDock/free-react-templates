@@ -23,6 +23,7 @@ items, VAT, total, and payment option radio (Full Payment / 10% Deposit).
 The layout is split: an image panel on the left with "Your reservation" heading,
 and the wizard form on the right. The original uses jQuery Steps; we use React
 state for step navigation.
+- **Source design:** ColorLib "Colorlib Wizard 2" — https://colorlib.com/wp/template/colorlib-wizard-2/
 
 ## Design Tokens
 

@@ -5,6 +5,7 @@ Recreation of ColorLib Search 16 (https://colorlib.com/wp/template/colorlib-sear
 ## Purpose
 
 A modern, responsive travel services search form template with a full-page hero and centered search card containing fields for destination, travel dates, and guests. Clean, minimal design with a warm amber color palette.
+- **Source design:** ColorLib "Colorlib Search 16" — https://colorlib.com/wp/template/colorlib-search-16/
 
 ## Design tokens
 

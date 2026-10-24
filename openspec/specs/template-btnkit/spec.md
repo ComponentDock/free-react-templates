@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An UI Component Showcase & Buttons Gallery template with navigation header, hero section and solid buttons showcase sections. Recreation of ColorLib **Bootstrap Buttons 13** (https://colorlib.com/wp/template/bootstrap-buttons-13/).
+An UI Component Showcase & Buttons Gallery template with navigation header, hero section and solid buttons showcase sections. Recreation of ColorLib "Bootstrap Buttons 13" (https://colorlib.com/wp/template/bootstrap-buttons-13/).
 
 - **New Name:** BtnKit
 - **Category:** UI Component Showcase / Dark Mode Buttons & Interactive Elements

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Coinbuzz** template
+Recreation of the ColorLib "Coinbuzz" template
 (https://colorlib.com/wp/template/coinbuzz/).
 Preview URL: https://preview.colorlib.com/theme/coinbuzz/coinbuzz/index.html
 

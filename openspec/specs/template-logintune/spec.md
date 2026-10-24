@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Login Form template with full-viewport green, username input field, password input field and green login button sections. Recreation of ColorLib **WordPress Login Customizer** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Login Form template with full-viewport green, username input field, password input field and green login button sections. Recreation of ColorLib "WordPress Login Customizer" as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/wordpress-login-customizer/
 - **Preview URL:** https://preview.colorlib.com/theme/wordpress-login-customizer/ (404 — preview unavailable; design captured from screenshot only)

@@ -10,6 +10,7 @@
 Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`), built as a modern React 19 + Vite + Tailwind CSS 4 application named `calnest`.
 
 _Note: The live preview URL (`https://preview.colorlib.com/theme/calendar-12/`) returned 404, so design, layout, and structure were faithfully derived from the official ColorLib screenshot (`https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-12.jpg`)._
+- **Source design:** ColorLib "Calendar 12" — https://colorlib.com/wp/template/calendar-12/
 
 ## Design tokens
 

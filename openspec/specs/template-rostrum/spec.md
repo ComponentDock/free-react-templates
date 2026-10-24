@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Eventalk** (https://colorlib.com/wp/template/eventalk/)
+Recreation of ColorLib "Eventalk" (https://colorlib.com/wp/template/eventalk/)
 Preview: https://preview.colorlib.com/theme/eventalk/
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript

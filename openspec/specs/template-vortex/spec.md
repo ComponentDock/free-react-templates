@@ -11,6 +11,7 @@
 - **Preview URL:** https://colorlib.com/wp/template/accordion-05/
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript
 - **Design Category:** Bootstrap Accordions / Account Management
+- **Source design:** ColorLib "Accordion 05" — https://colorlib.com/wp/template/accordion-05/
 
 ## Design Tokens (Extracted from ColorLib Reference & Screenshot)
 

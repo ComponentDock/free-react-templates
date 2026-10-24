@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Portfolio 2** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+Recreation of ColorLib "Portfolio 2" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/portfolio-2/
 - Preview: https://preview.colorlib.com/theme/portfolio2/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A standalone search form bar template with an inline search input and submit button. Recreation of ColorLib **Search Form Bar 13** as a standalone React component template.
+A standalone search form bar template with an inline search input and submit button. Recreation of ColorLib "Search Form Bar 13" as a standalone React component template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/search-form-bar-13/
 - **Preview URL:** https://preview.colorlib.com/theme/bootstrap/search-form-bar-13/

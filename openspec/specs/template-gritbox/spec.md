@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A crossfit/gym landing page with hero slider, program carousel, trainer spotlight, exercise grid, testimonials, and footer. Recreation of ColorLib **Crossfits**.
+A crossfit/gym landing page with hero slider, program carousel, trainer spotlight, exercise grid, testimonials, and footer. Recreation of ColorLib "Crossfits".
 
 - **Source slug:** `crossfits`
 - **ColorLib URL:** https://colorlib.com/wp/template/crossfits/

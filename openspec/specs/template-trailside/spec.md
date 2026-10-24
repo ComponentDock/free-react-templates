@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Ecoland** travel/eco-tourism template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of the ColorLib "Ecoland" travel/eco-tourism template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source**: [ColorLib Ecoland](https://colorlib.com/wp/template/ecoland/)
 - **Preview**: https://preview.colorlib.com/theme/ecoland/

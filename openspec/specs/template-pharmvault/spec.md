@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Pharmative** template.
+Recreation of ColorLib "Pharmative" template.
 - **Source slug:** `pharmative`
 - **ColorLib URL:** https://colorlib.com/wp/template/pharmative/
 - **Preview URL:** https://preview.colorlib.com/theme/pharmative/

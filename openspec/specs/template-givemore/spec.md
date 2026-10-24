@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib [Bcharity](https://colorlib.com/wp/template/bcharity/) as a free React template. GiveMore is a charity and donation landing page with hero banner, feature highlights, cause cards with progress bars, volunteer profiles, blog, partner logos, and newsletter signup.
+- **Source design:** ColorLib "Bcharity" — https://colorlib.com/wp/template/bcharity/
 
 ## Design tokens
 

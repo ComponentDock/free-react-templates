@@ -10,6 +10,7 @@
 Recreation of ColorLib `carousel-07` (`https://colorlib.com/wp/template/carousel-07/`).
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
 New original name: `swivel` (`apps/swivel`).
+- **Source design:** ColorLib "Carousel 07" — https://colorlib.com/wp/template/carousel-07/
 
 ## Design Tokens
 

@@ -15,6 +15,7 @@ file upload, and blue submit button.
 - **Preview URL:** https://colorlib.com/wp/template/colorlib-regform-6/
 - **Live demo:** https://colorlib.com/etc/regform/colorlib-regform-6/
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Regform 6" — https://colorlib.com/wp/template/colorlib-regform-6/
 
 ## Design Tokens
 

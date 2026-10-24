@@ -14,6 +14,7 @@
 ## Purpose
 
 A clean, modern two-month interactive calendar template featuring dual-month side-by-side display, month navigation controls, event management, and a clean minimalist aesthetic.
+- **Source design:** ColorLib "Calendar 03" — https://colorlib.com/wp/template/calendar-03/
 
 ## Design Tokens (Captured from Reference)
 

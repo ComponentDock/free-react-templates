@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Consula** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "Consula" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/consula/
 - **Preview:** https://preview.colorlib.com/theme/consula/

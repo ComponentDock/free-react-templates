@@ -9,7 +9,7 @@
 
 Recreation of ColorLib's **Mona** template as a React 19 + Vite + Tailwind 4 + TypeScript application.
 
-- **Source:** [ColorLib Mona](https://colorlib.com/wp/template/mona/)
+- **Source:** [ColorLib "Mona"](https://colorlib.com/wp/template/mona/)
 - **Preview:** https://preview.colorlib.com/theme/mona/
 - **Screenshot:** ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/mona-free-template.jpg) — hot-pink header accent, large hero with model portrait, tabbed model portfolio, testimonials, CTA, blog, footer.
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript (strict) · Vitest + Testing Library · 100% coverage

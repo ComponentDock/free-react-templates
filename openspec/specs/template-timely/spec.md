@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar V09 (`https://colorlib.com/wp/template/calendar-09/`), previewed at `https://preview.colorlib.com/theme/calendar-09/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript (strict).
+Recreation of ColorLib "Calendar V09" (`https://colorlib.com/wp/template/calendar-09/`), previewed at `https://preview.colorlib.com/theme/calendar-09/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript (strict).
 
 ## Design Tokens
 

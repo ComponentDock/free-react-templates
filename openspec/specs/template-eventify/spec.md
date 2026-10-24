@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Evento** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site.
+Recreation of the ColorLib "Evento" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site.
 
 - **Source:** https://colorlib.com/wp/template/evento/
 - **Preview:** https://preview.colorlib.com/theme/evento/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Real Estate 2** — a real estate investor website template
+Recreation of ColorLib "Real Estate 2" — a real estate investor website template
 with property search, listings, and agent features.
 - Source: https://colorlib.com/wp/template/real-estate-2/
 - Preview: https://preview.colorlib.com/#real-estate-2 (WordPress-only; no standalone HTML preview)

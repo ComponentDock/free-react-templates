@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Inds** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
+Recreation of the ColorLib "Inds" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page site.
 
 - **Source slug:** `inds`
 - **ColorLib URL:** https://colorlib.com/wp/template/inds/

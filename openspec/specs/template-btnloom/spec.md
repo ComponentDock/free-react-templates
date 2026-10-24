@@ -10,6 +10,7 @@
 - **Recreation of ColorLib source**: `bootstrap-buttons-14` (`https://colorlib.com/wp/template/bootstrap-buttons-14/`)
 - **Preview URL**: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-14/`
 - **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons.
+- **Source design:** ColorLib "Bootstrap Buttons 14" — https://colorlib.com/wp/template/bootstrap-buttons-14/
 
 ## Design Tokens (Extracted from Reference)
 

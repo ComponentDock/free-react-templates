@@ -14,6 +14,7 @@ Recreation of ColorLib's **The River** template as a React 19 + Vite + Tailwind 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg
 - **Original name:** The River — must NOT appear in app code, comments, or assets.
 - **Category:** Hotel / Resort / Luxury Stay
+- **Source design:** ColorLib "Theriver" — https://colorlib.com/wp/template/theriver/
 
 ## Design Tokens (extracted from live preview CSS)
 

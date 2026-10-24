@@ -2,7 +2,7 @@
 name: brightpath
 description: Education and online courses landing page
 category: Education
-source: ColorLib Edusmart
+source: ColorLib "Edusmart"
 source_url: https://colorlib.com/wp/template/edusmart/
 preview_url: https://preview.colorlib.com/theme/edusmart/
 ---

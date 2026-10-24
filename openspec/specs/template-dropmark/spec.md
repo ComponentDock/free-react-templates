@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dropdown 13** — a Bootstrap filetype dropdown with blue
+Recreation of ColorLib "Dropdown 13" — a Bootstrap filetype dropdown with blue
 accent hover animation.
 Preview: https://preview.colorlib.com/theme/bootstrap/dropdown-13/
 Source page: https://colorlib.com/wp/template/dropdown-13/

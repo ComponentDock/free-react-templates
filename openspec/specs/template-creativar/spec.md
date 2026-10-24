@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Evans](https://colorlib.com/wp/template/evans/) as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of [ColorLib "Evans"](https://colorlib.com/wp/template/evans/) as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source slug:** `evans`
 - **Preview URL:** https://preview.colorlib.com/theme/evans/

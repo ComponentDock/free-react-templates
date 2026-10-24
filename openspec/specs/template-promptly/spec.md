@@ -20,6 +20,7 @@ in a clean pop-up."
 **Preview URL:** https://preview.colorlib.com/theme/modal-11/
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/modal-11.jpg
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Modal 11" — https://colorlib.com/wp/template/modal-11/
 
 ## Design Tokens
 

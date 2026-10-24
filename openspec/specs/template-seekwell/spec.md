@@ -8,6 +8,7 @@ A Travel Search template with page shell and background, tab navigation, search 
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-18/ (404 at time of implementation — falling back to screenshot)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-18.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Search 18" — https://colorlib.com/wp/template/colorlib-search-18/
 
 ## Design tokens
 

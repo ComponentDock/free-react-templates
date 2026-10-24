@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Megapod** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+Recreation of ColorLib "Megapod" as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/megapod/
 - **Preview URL:** https://preview.colorlib.com/theme/megapod/

@@ -14,6 +14,7 @@ Recreation of ColorLib's **Bootstrap Footer 13** — a light pinkish-beige foote
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
 - **Note:** Preview titled "Footer 03"; described as "Free Feminine Footer Template" by ColorLib.
+- **Source design:** ColorLib "Bootstrap Footer 13" — https://colorlib.com/wp/template/bootstrap-footer-13/
 
 ## Design Tokens
 

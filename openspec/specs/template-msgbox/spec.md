@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 12** — a clean, minimal two-column contact
+Recreation of ColorLib "Contact Form 12" — a clean, minimal two-column contact
 page with a heading + description + contact info on the left and a simple
 general-inquiry form on the right. Bootstrap-inspired flat design on a white
 background.

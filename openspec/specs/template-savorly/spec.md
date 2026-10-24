@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Buri** — a single-page restaurant landing template.
+Recreation of ColorLib "Buri" — a single-page restaurant landing template.
 
 - **Source slug:** `buri`
 - **Preview URL:** https://preview.colorlib.com/theme/buri/

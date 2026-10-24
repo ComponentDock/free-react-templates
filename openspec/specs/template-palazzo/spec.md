@@ -14,6 +14,7 @@ Recreation of ColorLib's **Roberto** — a hotel & resort website template.
 - **Preview URL:** https://preview.colorlib.com/theme/roberto/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Hospitality / Hotel & Resort
+- **Source design:** ColorLib "Roberto" — https://colorlib.com/wp/template/roberto/
 
 ## Design tokens (extracted from live preview)
 

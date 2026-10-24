@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Photosen** — a photography portfolio template with a full-bleed image grid. Each category card shows a grayscale photo that transitions to color on hover, with the category name and a "More Photos" CTA overlaid in the center.
+Recreation of ColorLib "Photosen" — a photography portfolio template with a full-bleed image grid. Each category card shows a grayscale photo that transitions to color on hover, with the category name and a "More Photos" CTA overlaid in the center.
 
 - **Source slug:** `photosen`
 - **Preview URL:** https://preview.colorlib.com/theme/photosen/

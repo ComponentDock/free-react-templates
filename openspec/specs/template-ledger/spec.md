@@ -4,6 +4,8 @@
 
 Recreation of ColorLib [Accounting](https://colorlib.com/wp/template/accounting/) (`https://preview.colorlib.com/theme/accounting/`), built as a high-conversion modern React single-page application using Vite, React 19, Tailwind CSS 4, and TypeScript. Designed for accounting, financial advisory, and professional consulting firms with hero carousel, services overview, core features grid, counters, blog/news section, pricing packages, consultation form, and contact footer.
 
+- **Source design:** ColorLib "Accounting" — https://colorlib.com/wp/template/accounting/
+
 ## Design Tokens
 
 - **Brand Primary:** Professional Emerald/Green (`#1BA12D`), Hover (`#148122`)

@@ -8,6 +8,7 @@ A dark-themed footer with a charcoal background, golden amber accent color, four
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-14/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 14" — https://colorlib.com/wp/template/bootstrap-footer-14/
 
 ## Design Tokens
 

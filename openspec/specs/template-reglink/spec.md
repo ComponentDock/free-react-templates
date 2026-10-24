@@ -8,6 +8,7 @@ Recreation of **Colorlib Regform 27** — a 3-step wizard registration form with
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-regform-27/ (design extracted from downloaded zip archive)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-27.jpg
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Colorlib Regform 27" — https://colorlib.com/wp/template/colorlib-regform-27/
 
 ## Design Tokens (extracted from zip CSS)
 

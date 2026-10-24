@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 15** (preview URL: `https://colorlib.com/wp/template/accordion-15/`), built as a modern, responsive React 19 + Tailwind CSS 4 single-page application.
+Recreation of ColorLib "Accordion 15" (preview URL: `https://colorlib.com/wp/template/accordion-15/`), built as a modern, responsive React 19 + Tailwind CSS 4 single-page application.
 
 - **Design Category**: UI Components / Accordions / Profile Widgets
 - **Tech Stack**: React 19, Vite, Tailwind CSS 4, TypeScript (strict), Lucide React.

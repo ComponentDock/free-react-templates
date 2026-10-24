@@ -12,6 +12,7 @@ Recreation of ColorLib's **Louie** template as a modern React 19 + Vite + Tailwi
 - **Source:** https://colorlib.com/wp/template/louie/
 - **Preview:** https://preview.colorlib.com/theme/louie/
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
+- **Source design:** ColorLib "Louie" — https://colorlib.com/wp/template/louie/
 
 ## Design tokens (extracted from preview CSS)
 

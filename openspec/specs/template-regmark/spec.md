@@ -8,6 +8,7 @@ under a different name.
 
 **Source:** https://preview.colorlib.com/theme/colorlib-regform-10/
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-10.jpg
+- **Source design:** ColorLib "Colorlib Regform 10" — https://colorlib.com/wp/template/colorlib-regform-10/
 
 ## Design tokens
 

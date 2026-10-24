@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Search 6** (`colorlib-search-6`).
+Recreation of ColorLib "Colorlib Search 6" (`colorlib-search-6`).
 
 - **Source:** https://colorlib.com/wp/template/colorlib-search-6/
 - **Preview:** https://colorlib.com/etc/searchf/colorlib-search-6/

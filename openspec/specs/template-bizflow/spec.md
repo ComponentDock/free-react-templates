@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Busicol** — a business/corporate template with green accent.
+Recreation of ColorLib "Busicol" — a business/corporate template with green accent.
 
 - **Source:** https://colorlib.com/wp/template/busicol/
 - **Preview:** https://preview.colorlib.com/theme/busicol/

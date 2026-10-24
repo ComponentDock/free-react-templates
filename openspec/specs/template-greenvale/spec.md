@@ -14,6 +14,7 @@ Recreation of ColorLib's **Ecoverde** real estate template as a React 19 + Vite 
 - **Stack**: React 19 · Vite · Tailwind CSS 4 · TypeScript strict
 - **New name**: `greenvale` (apps/greenvale)
 - **Package**: `@free-react-templates/greenvale`
+- **Source design:** ColorLib "Ecoverde" — https://colorlib.com/wp/template/ecoverde/
 
 ## Design tokens (extracted from preview stylesheet)
 

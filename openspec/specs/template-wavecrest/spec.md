@@ -9,6 +9,7 @@ A Beach Hotel / Resort template with hero, search / booking box, room features a
 - **Live preview:** https://preview.colorlib.com/theme/major/
 - **New name:** `wavecrest` (package `@free-react-templates/wavecrest`)
 - **Surge target:** `wavecrest.free.componentdock.com`
+- **Source design:** ColorLib "Major" — https://colorlib.com/wp/template/major/
 
 ## Design Tokens (extracted from preview CSS)
 

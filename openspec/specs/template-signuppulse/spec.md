@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 09** (`signup-form-09`).
+Recreation of ColorLib "Signup Form 09" (`signup-form-09`).
 Preview URL: https://preview.colorlib.com/theme/signup-form-09/
 ColorLib page: https://colorlib.com/wp/template/signup-form-09/
 

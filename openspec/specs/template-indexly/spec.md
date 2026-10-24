@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Browse** — a directory/listing website template with
+Recreation of ColorLib "Browse" — a directory/listing website template with
 a hero search bar, visited-places cards, categories, how-it-works steps,
 testimonials, blog articles, and a multi-column footer.
 

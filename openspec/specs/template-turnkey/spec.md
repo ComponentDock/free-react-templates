@@ -10,7 +10,7 @@ Preview: https://preview.colorlib.com/theme/holmes/
 
 ## Purpose
 
-Turnkey is a real estate template with a navbar, hero, properties, city gallery, testimonials, blog and footer. It recreates the ColorLib **Holmes** design (https://colorlib.com/wp/template/holmes/, preview: https://preview.colorlib.com/theme/holmes/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Turnkey is a real estate template with a navbar, hero, properties, city gallery, testimonials, blog and footer. It recreates the ColorLib "Holmes" design (https://colorlib.com/wp/template/holmes/, preview: https://preview.colorlib.com/theme/holmes/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Design Tokens
 

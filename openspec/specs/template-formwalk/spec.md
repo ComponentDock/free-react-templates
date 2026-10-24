@@ -7,6 +7,7 @@
 - **New Name**: `formwalk` (App directory: `apps/formwalk`, Package: `@free-react-templates/formwalk`)
 - **Category**: Forms / Multi-step Form Wizard
 - **Description**: A centered white card wizard on a full-page background image. Blue header bar with "FORM WIZARD" heading. Three circular step indicators connected by gray lines. Step 1: First Name + Last Name. Step 2: Email + Password. Step 3: Subject dropdown + Comment. Pill-shaped blue Next/Back buttons. Montserrat font, clean minimal aesthetic.
+- **Source design:** ColorLib "Colorlib Wizard 30" — https://colorlib.com/wp/template/colorlib-wizard-30/
 
 ## Design tokens
 

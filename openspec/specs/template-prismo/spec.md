@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dizzi** — a professional business / digital agency
+Recreation of ColorLib "Dizzi" — a professional business / digital agency
 website template. Single-page React app; all sections on one page.
 
 - **Source slug:** `dizzi`

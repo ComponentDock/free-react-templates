@@ -14,6 +14,7 @@ Recreation of ColorLib's **Kiddos** template — a kids' learning school website
 - **Preview URL:** https://preview.colorlib.com/theme/kiddos/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/kiddos-free-template.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Kiddos" — https://colorlib.com/wp/template/kiddos/
 
 ## Design tokens (extracted from preview CSS)
 

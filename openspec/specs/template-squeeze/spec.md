@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib Accordion 16 (`https://colorlib.com/wp/template/accordion-16/`), preview URL `https://preview.colorlib.com/theme/bac/accordion-16/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript (strict). Designed as a clean, rounded accordion FAQ/help component.
+- **Source design:** ColorLib "Accordion 16" — https://colorlib.com/wp/template/accordion-16/
 
 ## Design tokens
 

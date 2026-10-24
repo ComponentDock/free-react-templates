@@ -14,6 +14,7 @@ Recreation of ColorLib's **Ezuca** template (https://colorlib.com/wp/template/ez
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ezuca-free-template.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Category:** Education / Online Learning
+- **Source design:** ColorLib "Ezuca" — https://colorlib.com/wp/template/ezuca/
 
 ## Design Tokens
 

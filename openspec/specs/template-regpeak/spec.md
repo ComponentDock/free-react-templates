@@ -8,6 +8,7 @@ A split-screen registration form with a dark-to-cyan gradient background, left-s
 - **Live preview:** https://colorlib.com/etc/regform/colorlib-regform-32/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-32.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Regform 32" — https://colorlib.com/wp/template/colorlib-regform-32/
 
 ## Design tokens (extracted from CSS)
 

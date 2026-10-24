@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Webuilder** — a construction company website template.
+Recreation of ColorLib "Webuilder" — a construction company website template.
 - **Source:** https://colorlib.com/wp/template/webuilder/
 - **Preview:** https://preview.colorlib.com/theme/webuilder/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript

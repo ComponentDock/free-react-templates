@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Fitness / Gym template with hero, services, classes, team, banner and register form collects user sections. Recreation of ColorLib **Gutim** — a fitness/gym HTML template.
+A Fitness / Gym template with hero, services, classes, team, banner and register form collects user sections. Recreation of ColorLib "Gutim" — a fitness/gym HTML template.
 
 - **Source:** https://colorlib.com/wp/template/gutim/
 - **Preview:** https://preview.colorlib.com/theme/gutim/

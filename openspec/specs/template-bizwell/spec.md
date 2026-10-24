@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **BizPro** template.
+Recreation of ColorLib "BizPro" template.
 - Source: https://colorlib.com/wp/template/bizpro/
 - Preview: https://preview.colorlib.com/theme/bizpro/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bizpro-free-classic-website-template.jpg

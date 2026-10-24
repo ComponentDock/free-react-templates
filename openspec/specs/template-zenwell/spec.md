@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Counselor** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+Recreation of ColorLib "Counselor" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/counselor/
 - Preview: https://preview.colorlib.com/theme/counselor/

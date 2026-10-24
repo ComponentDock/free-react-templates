@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Blueline** — a fullscreen business/design agency
+Recreation of ColorLib "Blueline" — a fullscreen business/design agency
 website template.
 
 - **Source:** https://colorlib.com/wp/template/blueline/

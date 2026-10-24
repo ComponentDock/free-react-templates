@@ -13,6 +13,7 @@ Recreation of ColorLib Login Form 18 as LoginScape — a centered-card login for
 - Preview: https://preview.colorlib.com/theme/login-form-18/ (404 — design captured from screenshot)
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-18-2.jpg
 - Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Login Form 18" — https://colorlib.com/wp/template/login-form-18/
 
 ## Design Tokens
 

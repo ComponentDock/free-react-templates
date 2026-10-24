@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Solicitor** (`https://preview.colorlib.com/theme/solicitor/`, source: `https://colorlib.com/wp/template/solicitor/`).
+Recreation of ColorLib "Solicitor" (`https://preview.colorlib.com/theme/solicitor/`, source: `https://colorlib.com/wp/template/solicitor/`).
 A professional dark-themed legal, investigative, and security consulting website template built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens

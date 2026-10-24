@@ -13,6 +13,7 @@ Recreation of [ColorLib Wizard 14](https://colorlib.com/wp/template/colorlib-wiz
 **Preview:** https://colorlib.com/etc/bwiz/colorlib-wizard-14/index.html  
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-14.jpg  
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
+- **Source design:** ColorLib "Colorlib Wizard 14" — https://colorlib.com/wp/template/colorlib-wizard-14/
 
 ## Design Tokens
 

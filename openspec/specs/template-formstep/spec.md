@@ -14,6 +14,7 @@
 - **Preview URL**: `https://colorlib.com/etc/bwiz/colorlib-wizard-1/index.html`
 - **Source slug**: `colorlib-wizard-1`
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-1.jpg`
+- **Source design:** ColorLib "Colorlib Wizard 1" — https://colorlib.com/wp/template/colorlib-wizard-1/
 
 ## Design Tokens
 

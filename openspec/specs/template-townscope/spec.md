@@ -9,7 +9,7 @@
 
 Recreation of ColorLib's **Civic** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page CV/resume portfolio.
 
-- **Source:** [ColorLib Civic](https://colorlib.com/wp/template/civic/)
+- **Source:** [ColorLib "Civic"](https://colorlib.com/wp/template/civic/)
 - **Preview:** https://preview.colorlib.com/theme/civic/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/civic-free-template-1.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript

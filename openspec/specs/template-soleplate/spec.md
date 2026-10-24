@@ -12,6 +12,7 @@ A Clean White Footer template with site logo and horizontal navigation sections.
 - **Deploy URL:** `https://soleplate.free.componentdock.com`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 09" — https://colorlib.com/wp/template/bootstrap-footer-09/
 
 ## Design Tokens
 

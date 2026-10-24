@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Industries** template for use as a React 19 + Vite
+Recreation of the ColorLib "Industries" template for use as a React 19 + Vite
 + Tailwind CSS 4 + TypeScript single-page app under the name `mill`.
 
 - **ColorLib source:** https://colorlib.com/wp/template/industries/

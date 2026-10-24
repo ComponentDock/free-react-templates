@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Vcard2](https://colorlib.com/wp/template/vcard2/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of [ColorLib "Vcard2"](https://colorlib.com/wp/template/vcard2/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 **Source slug:** `vcard2`
 **Preview URL:** https://preview.colorlib.com/theme/vcard2/

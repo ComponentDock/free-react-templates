@@ -6,7 +6,7 @@ Recreation of ColorLib Accordion 12 (https://colorlib.com/wp/template/accordion-
 
 | Field          | Value                                                                      |
 | -------------- | -------------------------------------------------------------------------- |
-| Source design  | ColorLib **Accordion 12** — https://colorlib.com/wp/template/accordion-12/ |
+| Source design  | ColorLib "Accordion 12" — https://colorlib.com/wp/template/accordion-12/ |
 | Source slug    | `accordion-12`                                                             |
 | Source preview | https://preview.colorlib.com/theme/bac/accordion-12/                       |
 | Preview title  | `Accordion #2` (rendered heading: "Bootstrap Accordion #2")                |

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Adept is a consulting/business onepage template that recreates the ColorLib Expert design (https://colorlib.com/wp/template/expert/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. The template features a hero carousel, about section with counters, project gallery, process steps, testimonials, services grid, pricing tiers, contact form, and footer with Component Dock branding.
+Adept is a consulting/business onepage template that recreates the ColorLib "Expert" design (https://colorlib.com/wp/template/expert/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript application. The template features a hero carousel, about section with counters, project gallery, process steps, testimonials, services grid, pricing tiers, contact form, and footer with Component Dock branding.
 
 ## Design tokens
 

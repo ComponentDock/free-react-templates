@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 20** — a minimal single-page contact form
+Recreation of ColorLib "Contact Form 20" — a minimal single-page contact form
 centered in a white card on a light gray background. Clean underline-style
 inputs, a "Let's Talk" heading, and a blue pill-shaped submit button.
 

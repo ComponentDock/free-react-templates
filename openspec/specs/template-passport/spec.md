@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Travelers** template.
+Recreation of ColorLib "Travelers" template.
 Preview URL: https://preview.colorlib.com/theme/travelers/
 Source slug: `travelers`
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.

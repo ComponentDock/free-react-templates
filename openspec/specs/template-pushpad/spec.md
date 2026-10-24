@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 02** (`https://colorlib.com/wp/template/bootstrap-buttons-02/`).
+Recreation of ColorLib "Bootstrap Buttons 02" (`https://colorlib.com/wp/template/bootstrap-buttons-02/`).
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript · Lucide icons.
 New Name: `pushpad` (Package: `@free-react-templates/pushpad`).
 

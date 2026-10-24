@@ -14,6 +14,7 @@ Recreation of ColorLib's **Kindergarten** template as a React 19 + Vite + Tailwi
 - **Live preview:** https://preview.colorlib.com/theme/kindergarten/
 - **New app name:** `kidscove`
 - **Package:** `@free-react-templates/kidscove`
+- **Source design:** ColorLib "Kindergarten" — https://colorlib.com/wp/template/kindergarten/
 
 ## Design tokens
 

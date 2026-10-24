@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An E-Commerce Tech Store template with navigation and search, hero banner with product and newsletter signup sections. Recreation of ColorLib **Onetech** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site for a tech/electronics e-commerce store.
+An E-Commerce Tech Store template with navigation and search, hero banner with product and newsletter signup sections. Recreation of ColorLib "Onetech" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page site for a tech/electronics e-commerce store.
 
 - **ColorLib source:** https://colorlib.com/wp/template/onetech/
 - **Preview URL:** https://preview.colorlib.com/theme/onetech/

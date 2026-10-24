@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Blueline** template.
+Recreation of ColorLib "Blueline" template.
 - Source: https://colorlib.com/wp/template/blueline/
 - Preview: https://preview.colorlib.com/theme/blueline/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/blueline-free-fullscreen-business-website-template.jpg

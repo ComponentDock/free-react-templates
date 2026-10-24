@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel V06** (`https://colorlib.com/wp/template/carousel-06/`).
+Recreation of ColorLib "Carousel V06" (`https://colorlib.com/wp/template/carousel-06/`).
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 A responsive and flexible split-screen carousel template featuring imagery, descriptive text, feature highlights, and interactive CTA buttons.
 

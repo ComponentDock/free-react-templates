@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Bootstrap Buttons 13** (`https://colorlib.com/wp/template/bootstrap-buttons-13/`).
+- Recreation of ColorLib "Bootstrap Buttons 13" (`https://colorlib.com/wp/template/bootstrap-buttons-13/`).
 - Preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-13/` (Live preview analyzed — dark-themed button showcase with social, dropdown, group, checkbox, and radio button sections).
 - Stack: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons.
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Nitro (`https://colorlib.com/wp/template/nitro/`, preview: `https://preview.colorlib.com/theme/nitro/`). Built as a modern React 19 + Tailwind CSS 4 business agency landing template with hero, about, features, team, portfolio, services, testimonials, pricing, FAQ, blog, contact, and footer sections.
+Recreation of ColorLib "Nitro" (`https://colorlib.com/wp/template/nitro/`, preview: `https://preview.colorlib.com/theme/nitro/`). Built as a modern React 19 + Tailwind CSS 4 business agency landing template with hero, about, features, team, portfolio, services, testimonials, pricing, FAQ, blog, contact, and footer sections.
 
 ## Design Tokens
 

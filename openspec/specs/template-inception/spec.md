@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Create](https://colorlib.com/wp/template/create/) — a creative agency one-page website template.
+Recreation of [ColorLib "Create"](https://colorlib.com/wp/template/create/) — a creative agency one-page website template.
 Preview URL: https://preview.colorlib.com/theme/create/
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript.

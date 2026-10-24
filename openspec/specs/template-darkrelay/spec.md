@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 07** — a dark-themed contact form page
+Recreation of ColorLib "Contact Form 07" — a dark-themed contact form page
 with a two-column card layout: contact information on the left and a
 full-featured contact form on the right, set against a light gray page
 background.

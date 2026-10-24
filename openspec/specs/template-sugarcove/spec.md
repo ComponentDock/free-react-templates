@@ -12,6 +12,7 @@
 - **New Name**: `sugarcove` (App directory: `apps/sugarcove`, Package: `@free-react-templates/sugarcove`)
 - **Category**: Business Website — Cake Shop / Bakery
 - **Description**: A warm, inviting cake shop website with a hero section featuring a large background image and decorative "Delicious" watermark text, a product carousel of popular cakes, an about section, services grid, testimonials carousel, Instagram feed area, and a multi-column footer. Bright orange-red brand color with DM Sans + Quicksand typography.
+- **Source design:** ColorLib "Cakes" — https://colorlib.com/wp/template/cakes/
 
 ## Design Tokens
 

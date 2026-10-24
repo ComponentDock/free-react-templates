@@ -14,6 +14,7 @@ Recreation of ColorLib's "Photosen" template — a minimal photography portfolio
 - **Source screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/photosen-free-template.jpg
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **New name:** `photopia` (apps/photopia, package @free-react-templates/photopia)
+- **Source design:** ColorLib "Photosen" — https://colorlib.com/wp/template/photosen/
 
 ## Design Tokens
 

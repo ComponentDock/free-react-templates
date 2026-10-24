@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 19** — a split-screen product review modal.
+Recreation of ColorLib "Modal 19" — a split-screen product review modal.
 A centered Bootstrap modal with product image on the left half and review content
 (rating stars, description, social actions) on the right half, designed for quick
 product review display.

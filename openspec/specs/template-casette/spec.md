@@ -15,6 +15,7 @@ Recreation of ColorLib **CA App Landing** template.
 - **Category**: App Landing / SaaS / Creative
 - **Description**: Minimal and modern mobile app landing page for Android/iOS app showcase, suitable for SaaS and technology landing/sales pages. One-page scroll layout.
 - **Stack**: React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Ca App" — https://colorlib.com/wp/template/ca-app/
 
 ## Design tokens (extracted from screenshot)
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Login Form V16 as Authgate — a split-screen card login form centered on a light gray background. Left panel (white) holds the sign-in form with underline-style inputs; right panel (dusty mauve) holds the submit button, remember-me/forgot-password options, and social login icons.
+Recreation of ColorLib "Login Form V16" as Authgate — a split-screen card login form centered on a light gray background. Left panel (white) holds the sign-in form with underline-style inputs; right panel (dusty mauve) holds the submit button, remember-me/forgot-password options, and social login icons.
 
 - Source: https://colorlib.com/wp/template/login-form-v16/
 - Preview: https://preview.colorlib.com/theme/login-form-v16/ (404 at time of prep — design captured from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)

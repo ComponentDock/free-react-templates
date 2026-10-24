@@ -9,6 +9,7 @@ Sovereign is a modern hotel booking website with a booking-form hero, room types
 - **Preview URL:** https://preview.colorlib.com/theme/the-palatin/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Hospitality / Hotel Booking
+- **Source design:** ColorLib "The Palatin" — https://colorlib.com/wp/template/the-palatin/
 
 ## Design tokens
 

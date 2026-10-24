@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 05** (`https://colorlib.com/wp/template/modal-05/`).
+Recreation of ColorLib "Modal 05" (`https://colorlib.com/wp/template/modal-05/`).
 Preview: `https://preview.colorlib.com/theme/bootstrap/modal-05/`.
 
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.

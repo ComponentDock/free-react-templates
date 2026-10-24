@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Calendar 19** (source slug: `calendar-19`, preview URL: `https://preview.colorlib.com/theme/calendar-19/` — **unreachable at prep time**, fell back to ColorLib template page screenshot and DOM analysis of the live FullCalendar instance at the preview domain).
+Recreation of ColorLib "Calendar 19" (source slug: `calendar-19`, preview URL: `https://preview.colorlib.com/theme/calendar-19/` — **unreachable at prep time**, fell back to ColorLib template page screenshot and DOM analysis of the live FullCalendar instance at the preview domain).
 
 Stack: Vite · React 19 · TypeScript (strict) · Tailwind CSS 4 · `@fullcalendar/react` + `@fullcalendar/daygrid` + `@fullcalendar/interaction` + `@fullcalendar/timegrid` (for timed events) + `@fullcalendar/list` (optional list view).
 

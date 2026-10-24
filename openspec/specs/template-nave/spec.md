@@ -9,6 +9,7 @@ A church ministry template with hero slider, upcoming events, worship times, ser
 - **New name:** `nave` (the central part of a church building)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/advent-free-template.jpg
+- **Source design:** ColorLib "Advent" — https://colorlib.com/wp/template/advent/
 
 ## Requirements
 

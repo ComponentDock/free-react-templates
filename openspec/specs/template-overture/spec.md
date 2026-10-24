@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Coming Soon template with heading and subtext, countdown timer, notify us button and social media sections. Recreation of ColorLib **06 Comming Soon** (`https://colorlib.com/wp/template/06-comming-soon/`) as a React 19 + Vite + Tailwind 4 + TypeScript template.
+A Coming Soon template with heading and subtext, countdown timer, notify us button and social media sections. Recreation of ColorLib "06 Comming Soon" (`https://colorlib.com/wp/template/06-comming-soon/`) as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Preview URL:** `https://preview.colorlib.com/theme/06-comming-soon/` (404 — preview unavailable; design extracted from screenshot)
 - **Source screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/coming-soon-21.jpg`

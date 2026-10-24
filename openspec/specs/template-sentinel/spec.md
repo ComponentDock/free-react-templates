@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Victor** (`https://colorlib.com/wp/template/victor/`), preview URL: `https://preview.colorlib.com/theme/victor/`. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of ColorLib "Victor" (`https://colorlib.com/wp/template/victor/`), preview URL: `https://preview.colorlib.com/theme/victor/`. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design Tokens
 

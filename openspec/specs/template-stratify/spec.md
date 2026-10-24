@@ -15,6 +15,7 @@ Recreation of ColorLib's **Bizcon** template as a React 19 + Vite + Tailwind CSS
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg
 - **New app name:** `stratify` (app folder: `apps/stratify`, package: `@free-react-templates/stratify`)
 - **Deploy target:** https://stratify.free.componentdock.com
+- **Source design:** ColorLib "Bizcon" — https://colorlib.com/wp/template/bizcon/
 
 ## Design tokens (extracted from preview CSS)
 

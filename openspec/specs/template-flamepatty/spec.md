@@ -14,6 +14,7 @@ Recreation of ColorLib's **Burger** template.
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/burger-free-template.jpg`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **New name:** Flamepatty (replaces original "Burger" branding)
+- **Source design:** ColorLib "Burger" — https://colorlib.com/wp/template/burger/
 
 ## Design Tokens
 

@@ -9,7 +9,7 @@
 
 A recreation of ColorLib's **Login Form V17** as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
-- **Source:** [ColorLib Login Form V17](https://colorlib.com/wp/template/login-form-v17/)
+- **Source:** [ColorLib "Login Form V17"](https://colorlib.com/wp/template/login-form-v17/)
 - **Preview URL:** `https://preview.colorlib.com/theme/login-form-v17/` (404 — unreachable at time of prep; design derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict)
 - **Package:** `@free-react-templates/logincrux`

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V14** — a single-page contact form with
+Recreation of ColorLib "Contact Form V14" — a single-page contact form with
 a vivid pink-to-purple gradient background and a centered white card containing
 a multi-field form with underline-style inputs, inline validation, and a dark
 pill-shaped submit button.

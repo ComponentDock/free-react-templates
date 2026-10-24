@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V14** — a centered contact form card on a
+Recreation of ColorLib "Contact Form V14" — a centered contact form card on a
 vivid pink-to-purple gradient background, featuring validation states with
 checkmarks and error indicators.
 

@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-14/`), preview URL `https://preview.colorlib.com/theme/bootstrap/calendar-14/`. Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+- **Source design:** ColorLib "Calendar 14" — https://colorlib.com/wp/template/calendar-14/
 
 ## Design Tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Caviar** — a premium restaurant template with hero slider,
+Recreation of ColorLib "Caviar" — a premium restaurant template with hero slider,
 about section, dish menu, awards bar, testimonials carousel, reservation form, and
 dark footer.
 

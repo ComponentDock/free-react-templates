@@ -15,6 +15,7 @@ Recreation of ColorLib's **Medi 2** template as a React 19 + Vite + Tailwind 4 +
 - **Stack**: Vite (latest) · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Package**: `@free-react-templates/mediflow`
 - **Deploy**: `https://mediflow.free.componentdock.com`
+- **Source design:** ColorLib "Medi 2" — https://colorlib.com/wp/template/medi-2/
 
 ## Design Tokens
 

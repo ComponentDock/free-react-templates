@@ -1,6 +1,6 @@
 ---
 name: threadcraft
-description: Fashion eCommerce website template — recreation of ColorLib Fashi
+description: Fashion eCommerce website template — recreation of ColorLib "Fashi"
 source: https://colorlib.com/wp/template/fashi/
 preview: https://preview.colorlib.com/theme/fashi/
 ---

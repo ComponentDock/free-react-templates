@@ -15,6 +15,7 @@ Single-page React 19 + Vite + Tailwind 4 + TypeScript template for a roofing
 services company. Dark navbar, full-height hero carousel, appointment form,
 stats counter, tabbed services, project gallery, testimonials, blog cards,
 pricing tiers, and a dark footer.
+- **Source design:** ColorLib "Roofing" — https://colorlib.com/wp/template/roofing/
 
 ## Design Tokens
 

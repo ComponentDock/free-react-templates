@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 08** — a confirmation/modal dialog component
+Recreation of ColorLib "Modal 08" — a confirmation/modal dialog component
 for newsletter subscriptions and account confirmations.
 
 - **Source**: https://colorlib.com/wp/template/modal-08/

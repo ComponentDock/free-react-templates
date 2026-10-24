@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Personify** — a personal/vCard website template.
+Recreation of ColorLib "Personify" — a personal/vCard website template.
 
 - **Source:** https://colorlib.com/wp/template/personify/
 - **Preview:** https://preview.colorlib.com/theme/personify/

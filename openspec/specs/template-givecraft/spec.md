@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Seelife** — a charity/nonprofit website template with a bold green brand, hero imagery of children in nature, and cause-focused sections.
+Recreation of ColorLib "Seelife" — a charity/nonprofit website template with a bold green brand, hero imagery of children in nature, and cause-focused sections.
 
 - **Source slug:** `seelife`
 - **Preview URL:** https://preview.colorlib.com/theme/seelife/

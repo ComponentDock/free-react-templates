@@ -15,6 +15,7 @@ Tailwind CSS 4 + TypeScript single-page application.
 - **Preview URL:** https://preview.colorlib.com/theme/real-estate/ (404 — screenshot only)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/realestate-free-realstate-website-template.jpg
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
+- **Source design:** ColorLib "Real Estate" — https://colorlib.com/wp/template/real-estate/
 
 ## Design tokens
 

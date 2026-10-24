@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 03** (`https://colorlib.com/wp/template/carousel-03/`, preview: `https://preview.colorlib.com/theme/bootstrap/carousel-03/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`@free-react-templates/glide`).
+Recreation of ColorLib "Carousel 03" (`https://colorlib.com/wp/template/carousel-03/`, preview: `https://preview.colorlib.com/theme/bootstrap/carousel-03/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`@free-react-templates/glide`).
 
 ## Design Tokens & Aesthetic
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Hiroto** — a luxury hotel landing page template with a dark hero, golden accent palette, booking form, and elegant gallery.
+Recreation of ColorLib "Hiroto" — a luxury hotel landing page template with a dark hero, golden accent palette, booking form, and elegant gallery.
 
 - **ColorLib source:** https://colorlib.com/wp/template/hiroto/
 - **Live preview:** https://preview.colorlib.com/theme/hiroto/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Unwind** (`https://colorlib.com/wp/template/unwind/`, preview: `https://preview.colorlib.com/theme/unwind/`).
+Recreation of ColorLib "Unwind" (`https://colorlib.com/wp/template/unwind/`, preview: `https://preview.colorlib.com/theme/unwind/`).
 A luxury hotel booking and hospitality website template built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 Designed for hotels, resorts, hospitality agencies, and bed-and-breakfasts.
 

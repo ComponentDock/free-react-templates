@@ -14,6 +14,7 @@
 - **App Directory:** `apps/counselhub`
 - **Package Name:** `@free-react-templates/counselhub`
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript (strict), Lucide React icons.
+- **Source design:** ColorLib "Lawfirm" — https://colorlib.com/wp/template/lawfirm/
 
 ## Design Tokens (Extracted from Lawfirm)
 

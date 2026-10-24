@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Wizard 26** (`https://colorlib.com/wp/template/colorlib-wizard-26/`, preview URL: `https://preview.colorlib.com/theme/colorlib-wizard-26/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`apps/arcanum`, `@free-react-templates/arcanum`).
+Recreation of ColorLib "Colorlib Wizard 26" (`https://colorlib.com/wp/template/colorlib-wizard-26/`, preview URL: `https://preview.colorlib.com/theme/colorlib-wizard-26/`) as a modern React 19 + TypeScript + Tailwind CSS 4 application (`apps/arcanum`, `@free-react-templates/arcanum`).
 
 ## Design Tokens (Extracted from Reference & Screenshot)
 

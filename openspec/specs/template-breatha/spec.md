@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Yogalife** WordPress theme as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
+Recreation of ColorLib "Yogalife" WordPress theme as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page template.
 
 - **Source:** https://colorlib.com/wp/template/yogalife/
 - **Preview:** https://preview.colorlib.com/theme/yogalife/

@@ -17,6 +17,7 @@ agency website.
 | Preview URL | https://preview.colorlib.com/theme/book-keeping/ (unreachable — 404 at prep time; design reconstructed from screenshot + source page description) |
 | Category | Business / Finance |
 | Stack | React 19 · Vite · Tailwind CSS 4 · TypeScript |
+- **Source design:** ColorLib "Book Keeping" — https://colorlib.com/wp/template/book-keeping/
 
 ## Design tokens (extracted from screenshot + source page)
 

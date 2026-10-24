@@ -16,6 +16,7 @@ Recreation of ColorLib's **Clyde** personal portfolio template as a React 19 + V
 - **App folder:** `apps/riverside`
 - **Package:** `@free-react-templates/riverside`
 - **Deploy target:** `riverside.free.componentdock.com`
+- **Source design:** ColorLib "Clyde" — https://colorlib.com/wp/template/clyde/
 
 ## Design Tokens
 

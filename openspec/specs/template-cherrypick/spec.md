@@ -13,6 +13,7 @@ Recreation of ColorLib's **Multiselect 01** template — a clean, minimal multi-
 - **Preview**: https://preview.colorlib.com/theme/bootstrap/multiselect-01/
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-01.jpg
 - **Stack**: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
+- **Source design:** ColorLib "Multiselect 01" — https://colorlib.com/wp/template/multiselect-01/
 
 ## Design Tokens
 

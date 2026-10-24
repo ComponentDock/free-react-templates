@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 04** (`https://colorlib.com/wp/template/bootstrap-buttons-04/`).
+Recreation of ColorLib "Bootstrap Buttons 04" (`https://colorlib.com/wp/template/bootstrap-buttons-04/`).
 Preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-04/`
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript · Lucide icons.
 New Name: `btnpulse` (Package: `@free-react-templates/btnpulse`).

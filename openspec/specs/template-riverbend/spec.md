@@ -14,6 +14,7 @@ Recreation of ColorLib's **The River** hotel/resort template as a React 19 + Vit
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/theriver-free-template.jpg
 - **Package:** `@free-react-templates/riverbend`
 - **Surge target:** `https://riverbend.free.componentdock.com`
+- **Source design:** ColorLib "Theriver" — https://colorlib.com/wp/template/theriver/
 
 ## Design Tokens
 

@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib `accordion-04` (`https://preview.colorlib.com/theme/bac/accordion-04/`), an interactive accordion component showcase featuring stylish collapsible accordion cards, custom numbers/icons, smooth expand/collapse behavior, and a clean modern aesthetic. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Accordion 04" — https://colorlib.com/wp/template/accordion-04/
 
 ## Design Tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 08** (slug: `contact-form-08`).
+Recreation of ColorLib "Contact Form 08" (slug: `contact-form-08`).
 
 - **ColorLib source:** https://colorlib.com/wp/template/contact-form-08/
 - **Preview URL:** https://preview.colorlib.com/theme/bootstrap/contact-form-08/

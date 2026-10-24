@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Unwind** (`https://colorlib.com/wp/template/unwind/`).
+- Recreation of ColorLib "Unwind" (`https://colorlib.com/wp/template/unwind/`).
 - Preview URL: `https://preview.colorlib.com/theme/unwind/`
 - Tech Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
 

@@ -22,6 +22,7 @@ Checkout button.
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Sidebar V09" — https://colorlib.com/wp/template/colorlib-sidebar-v09/
 
 ## Design tokens (from source screenshot + Colorlib page CSS)
 

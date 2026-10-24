@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Cake** template
+Recreation of the ColorLib "Cake" template
 (https://colorlib.com/wp/template/cake/) as a React 19 + Vite + Tailwind 4 +
 TypeScript single-page app. Live preview:
 https://preview.colorlib.com/theme/cake/.

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Finances** (`https://colorlib.com/wp/template/finances/`).
+Recreation of ColorLib "Finances" (`https://colorlib.com/wp/template/finances/`).
 Preview URL: `https://preview.colorlib.com/theme/finances/` (reachable — live DOM + CSS analyzed).
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 

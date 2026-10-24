@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 10** — a two-column registration page with social login buttons on the left and a traditional registration form on the right, separated by an "- or -" divider.
+Recreation of ColorLib "Signup Form 10" — a two-column registration page with social login buttons on the left and a traditional registration form on the right, separated by an "- or -" divider.
 
 - **Source:** [ColorLib Signup Form 10](https://colorlib.com/wp/template/signup-form-10/)
 - **Preview:** https://preview.colorlib.com/theme/signup-form-10/ (404 — using screenshot as reference)

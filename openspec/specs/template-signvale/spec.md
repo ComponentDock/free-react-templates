@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Signup Form 13** (`https://colorlib.com/wp/template/signup-form-13/`).
+Recreation of ColorLib "Signup Form 13" (`https://colorlib.com/wp/template/signup-form-13/`).
 Preview: `https://preview.colorlib.com/theme/bootstrap/signup-form-13/` (live — tokens extracted from CSS).
 
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.

@@ -10,6 +10,7 @@
 - Recreation of ColorLib Carousel 12 (`https://colorlib.com/wp/template/carousel-12/`, preview: `https://preview.colorlib.com/theme/bootstrap/carousel-12/`).
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React.
 - Design category: Carousel / UI component showcase.
+- **Source design:** ColorLib "Carousel 12" — https://colorlib.com/wp/template/carousel-12/
 
 ## Design Tokens (Extracted from Reference)
 

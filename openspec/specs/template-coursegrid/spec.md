@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dropdown 19** — a courses dropdown snippet featuring a
+Recreation of ColorLib "Dropdown 19" — a courses dropdown snippet featuring a
 3-column mega-menu navigation organized by subject category (Math, Computing,
 Economic), each with colored left-border accents and uppercase headings.
 Preview: https://preview.colorlib.com/theme/bootstrap/dropdown-19/

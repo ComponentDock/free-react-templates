@@ -17,6 +17,7 @@ Recreation of ColorLib's **Solestyle** template as a modern React component.
 - **Deploy URL:** `https://solebound.free.componentdock.com`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** E-Commerce / Footwear Landing Page
+- **Source design:** ColorLib "Solestyle" — https://colorlib.com/wp/template/solestyle/
 
 ## Design Tokens
 

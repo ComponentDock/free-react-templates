@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Fashe** template as a modern fashion e-commerce
+Recreation of the ColorLib "Fashe" template as a modern fashion e-commerce
 landing page. Source: https://colorlib.com/wp/template/fashe/
 Preview: https://preview.colorlib.com/theme/fashe/
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib Chiropractic template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application under the name "AlignWell". The template is a chiropractic and wellness landing page with a top bar, sticky navbar, hero carousel, appointment booking form, services grid, team cards, about section with counters, testimonials, gallery, blog cards, and a branded footer.
+Recreate the ColorLib "Chiropractic" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application under the name "AlignWell". The template is a chiropractic and wellness landing page with a top bar, sticky navbar, hero carousel, appointment booking form, services grid, team cards, about section with counters, testimonials, gallery, blog cards, and a branded footer.
 
 ## Source
 

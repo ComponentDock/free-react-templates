@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V1** — a full-page blue gradient
+Recreation of ColorLib "Contact Form V1" — a full-page blue gradient
 background with a centered white card containing a "Get in touch" form on the
 right and an illustration on the left. Features pill-shaped inputs with gray
 backgrounds and a green submit button with arrow icon.

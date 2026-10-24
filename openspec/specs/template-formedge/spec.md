@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 10** — a full-width dark background image
+Recreation of ColorLib "Contact Form 10" — a full-width dark background image
 (city skyline) with a white form card overlaid on the right and contact info on
 the left. Features a blue "Send Message" button.
 

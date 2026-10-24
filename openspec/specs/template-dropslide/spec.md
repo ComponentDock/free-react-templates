@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Dropslide is a custom dropdown menu template. It recreates the ColorLib **Dropdown 11** design (https://colorlib.com/wp/template/dropdown-11/, preview: https://preview.colorlib.com/theme/bootstrap/dropdown-11/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Dropslide is a custom dropdown menu template. It recreates the ColorLib "Dropdown 11" design (https://colorlib.com/wp/template/dropdown-11/, preview: https://preview.colorlib.com/theme/bootstrap/dropdown-11/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Overview
 

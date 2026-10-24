@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Agenda** template — a bold, purple-gradient event/conference website with a full-width hero slider, countdown timer, masonry featured-events grid, regional event slider, and newsletter subscribe section.
+Recreation of the ColorLib "Agenda" template — a bold, purple-gradient event/conference website with a full-width hero slider, countdown timer, masonry featured-events grid, regional event slider, and newsletter subscribe section.
 
 - **ColorLib source**: [Agenda](https://colorlib.com/wp/template/agenda/)
 - **Preview URL**: https://preview.colorlib.com/theme/agenda/

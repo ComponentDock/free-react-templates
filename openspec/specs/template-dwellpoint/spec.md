@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A real estate multi-property website template with a hero banner, advanced property search, welcome section, property cards. It also includes testimonials carousel, cities showcase, features grid, client logos, and dark footer with newsletter and social links. Recreation of ColorLib SEL.
+A real estate multi-property website template with a hero banner, advanced property search, welcome section, property cards. It also includes testimonials carousel, cities showcase, features grid, client logos, and dark footer with newsletter and social links. Recreation of ColorLib "SEL."
 
 - **Source:** https://colorlib.com/wp/template/sel/
 - **Preview:** https://preview.colorlib.com/theme/sel/

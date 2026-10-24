@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A personal vCard portfolio template with sidebar, about, services, portfolio, testimonials and blog sections. Recreation of the ColorLib **Noah** template as a personal portfolio / vCard
+A personal vCard portfolio template with sidebar, about, services, portfolio, testimonials and blog sections. Recreation of the ColorLib "Noah" template as a personal portfolio / vCard
 template built with React 19 + Vite + Tailwind CSS 4 + TypeScript.
 
 - **Source slug:** `noah`

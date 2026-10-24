@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Calendar 02** (`https://colorlib.com/wp/template/calendar-02/`, preview `https://preview.colorlib.com/theme/calendar-02/`).
+- Recreation of ColorLib "Calendar 02" (`https://colorlib.com/wp/template/calendar-02/`, preview `https://preview.colorlib.com/theme/calendar-02/`).
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons, Vitest.
 - Design category: Vertical Calendar Widget / Scheduling UI.
 

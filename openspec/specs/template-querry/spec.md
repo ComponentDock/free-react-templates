@@ -1,6 +1,6 @@
 # Template: Querry (Fashion Search Form Hero)
 
-Recreation of ColorLib **Colorlib Search 4** (https://colorlib.com/wp/template/colorlib-search-4/).
+Recreation of ColorLib "Colorlib Search 4" (https://colorlib.com/wp/template/colorlib-search-4/).
 
 ## Purpose
 

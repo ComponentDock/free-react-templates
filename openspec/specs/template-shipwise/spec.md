@@ -16,6 +16,7 @@ Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
 New name: `shipwise` (never "carries" — naming rule enforced)
 
 ---
+- **Source design:** ColorLib "Carries" — https://colorlib.com/wp/template/carries/
 
 ## Design tokens (extracted from preview + style.css)
 

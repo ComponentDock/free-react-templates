@@ -13,6 +13,7 @@ Recreation of ColorLib Login Form 19 as LoginGuard — a centered dark-card logi
 - Preview: https://preview.colorlib.com/theme/login-form-19/ (404 — design captured from screenshot)
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-19-1.jpg
 - Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Login Form 19" — https://colorlib.com/wp/template/login-form-19/
 
 ## Design Tokens
 

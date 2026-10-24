@@ -12,6 +12,7 @@ Recreation of ColorLib **Bootstrap Accordion V02** (`accordion-02`), a free food
 - **Source template**: ColorLib `accordion-02` (`https://colorlib.com/wp/template/accordion-02/`)
 - **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library (100% coverage).
 - **Domain**: Food & Drink, Restaurant Menu, Interactive Accordion Showcase.
+- **Source design:** ColorLib "Accordion 02" — https://colorlib.com/wp/template/accordion-02/
 
 ## Design Tokens
 

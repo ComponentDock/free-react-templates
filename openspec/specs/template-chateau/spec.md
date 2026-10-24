@@ -14,6 +14,7 @@ Recreation of ColorLib's **Luxury Hotel** template as a React 19 + Vite + Tailwi
 - **Screenshot:** `![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/luxuryhotel-free-template.jpg)`
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **New name:** `chateau` (apps/chateau, @free-react-templates/chateau)
+- **Source design:** ColorLib "Luxury Hotel" — https://colorlib.com/wp/template/luxury-hotel/
 
 ## Design Tokens (extracted from preview CSS)
 

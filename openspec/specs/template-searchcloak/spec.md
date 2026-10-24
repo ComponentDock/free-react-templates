@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A search form bar template with a navbar, expanding search overlay and content section. Recreation of ColorLib **Search Form Bar 20**
+A search form bar template with a navbar, expanding search overlay and content section. Recreation of ColorLib "Search Form Bar 20"
 
 - Source slug: `search-form-bar-20`
 - Source: https://colorlib.com/wp/template/search-form-bar-20/

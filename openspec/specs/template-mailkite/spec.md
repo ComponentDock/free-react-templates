@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of **ColorLib Contact Form V2** — a single-page, full-screen contact form with a striking gradient-over-photo background and a centered white form card.
+Recreation of **ColorLib "Contact Form V2"** — a single-page, full-screen contact form with a striking gradient-over-photo background and a centered white form card.
 
 - **Source:** https://colorlib.com/wp/template/contact-form-v2/
 - **Preview:** https://preview.colorlib.com/theme/contact-form-v2/ (404 — offline at time of prep)

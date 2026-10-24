@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Gotrip** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Gotrip" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **ColorLib source:** https://colorlib.com/wp/template/gotrip/
 - **Live preview:** https://preview.colorlib.com/theme/gotrip/

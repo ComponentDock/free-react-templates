@@ -15,6 +15,7 @@ Tailwind 4 + TypeScript single-page app.
   `cleaningcompany` without dash on ColorLib's preview server)
 - **New name:** `scrubly` (apps/scrubly, @free-react-templates/scrubly)
 - **Deploy:** https://scrubly.free.componentdock.com
+- **Source design:** ColorLib "Cleaning Company" — https://colorlib.com/wp/template/cleaning-company/
 
 ## Design tokens (extracted from live preview DOM + CSS)
 

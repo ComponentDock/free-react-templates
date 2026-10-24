@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Bootstrap 4 e-commerce template with product listings, category banners, deal countdown, and blog section. Recreation of ColorLib **Coloshop**.
+A Bootstrap 4 e-commerce template with product listings, category banners, deal countdown, and blog section. Recreation of ColorLib "Coloshop".
 
 - **Source:** https://colorlib.com/wp/template/coloshop/
 - **Preview:** https://preview.colorlib.com/theme/coloshop/

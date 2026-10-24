@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 07** (`https://colorlib.com/wp/template/bootstrap-buttons-07/`), preview URL: `https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-07.jpg`, stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Recreation of ColorLib "Bootstrap Buttons 07" (`https://colorlib.com/wp/template/bootstrap-buttons-07/`), preview URL: `https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-07.jpg`, stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Design Tokens (Inferred from reference aesthetic)
 

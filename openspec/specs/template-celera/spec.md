@@ -15,6 +15,7 @@ Poppins typography.
 - **Preview:** https://preview.colorlib.com/theme/cellon/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Technology / Consulting / Landing Page
+- **Source design:** ColorLib "Cellon" — https://colorlib.com/wp/template/cellon/
 
 ## Design Tokens (extracted from preview CSS)
 

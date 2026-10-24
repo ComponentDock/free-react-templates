@@ -14,6 +14,7 @@
 - **Description**: A split-screen 3-step restaurant table booking wizard. Left panel shows a full-height food/restaurant image; right panel is a dark charcoal form area with warm gold accents. Steps: (1) Book a Table — people count, date, time; (2) Contact Details — name, phone, email; (3) Confirmation — "Your table is ready" with gold checkmark circle.
 - **Source slug**: `colorlib-wizard-7`
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-7.jpg` (1200×972, shows split-screen: food image left, dark form right with gold script tagline)
+- **Source design:** ColorLib "Colorlib Wizard 7" — https://colorlib.com/wp/template/colorlib-wizard-7/
 
 ## Design Tokens (from reference CSS)
 

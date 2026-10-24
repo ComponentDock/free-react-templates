@@ -4,7 +4,7 @@ Recreation of ColorLib Bootstrap Buttons 06 under the original name **BtnVibe**.
 
 ## Purpose
 
-Btnvibe is a bootstrap button component page. It recreates the ColorLib **Bootstrap Buttons 06** design (https://colorlib.com/wp/template/bootstrap-buttons-06/, preview: https://preview.colorlib.com/theme/bb/bootstrap-buttons-06/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+Btnvibe is a bootstrap button component page. It recreates the ColorLib "Bootstrap Buttons 06" design (https://colorlib.com/wp/template/bootstrap-buttons-06/, preview: https://preview.colorlib.com/theme/bb/bootstrap-buttons-06/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
 
 ## Design tokens
 

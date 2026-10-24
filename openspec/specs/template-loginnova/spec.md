@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A side-by-side login form template with gradient panel, account sign-in card, input validation and forgot-password link. Recreation of ColorLib **Login Form V20** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+A side-by-side login form template with gradient panel, account sign-in card, input validation and forgot-password link. Recreation of ColorLib "Login Form V20" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source slug:** `login-form-v20`
 - **Preview URL:** https://preview.colorlib.com/theme/login-form-v20/ (404 — using screenshot + source CSS)

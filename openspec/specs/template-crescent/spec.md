@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Crose** (https://colorlib.com/wp/template/crose/).
+Recreation of ColorLib "Crose" (https://colorlib.com/wp/template/crose/).
 Preview URL: https://preview.colorlib.com/theme/crose/
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript (strict).

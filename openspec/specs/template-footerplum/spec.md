@@ -14,6 +14,7 @@ Recreation of ColorLib's **Bootstrap Footer 19** — a purple gradient footer wi
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
 - **Note:** Primary preview URL `preview.colorlib.com/theme/bootstrap-footer-19/` returns 404; used alternate path `bft/bootstrap-footer-19/` for DOM and CSS extraction.
+- **Source design:** ColorLib "Bootstrap Footer 19" — https://colorlib.com/wp/template/bootstrap-footer-19/
 
 ## Design Tokens
 

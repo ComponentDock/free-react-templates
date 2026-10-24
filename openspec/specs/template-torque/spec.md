@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Force** magazine template.
+Recreation of ColorLib "Force" magazine template.
 - Source: https://colorlib.com/wp/template/force/
 - Preview: https://preview.colorlib.com/theme/force/
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript

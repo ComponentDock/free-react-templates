@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Car Rental** template.
+Recreation of ColorLib "Car Rental" template.
 - Source: https://colorlib.com/wp/template/car-rental/
 - Preview (analyzed): https://preview.colorlib.com/theme/carrental/
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript

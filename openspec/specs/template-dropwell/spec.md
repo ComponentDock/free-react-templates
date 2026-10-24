@@ -5,6 +5,7 @@
 ## Purpose
 
 Provide a multi-level nested dropdown menu component showcasing expandable submenu items in a Bootstrap-style dropdown pattern.
+- **Source design:** ColorLib "Dropdown 07" — https://colorlib.com/wp/template/dropdown-07/
 
 ## Design tokens
 

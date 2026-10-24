@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Boxus** — a one-page creative digital agency template.
+Recreation of ColorLib "Boxus" — a one-page creative digital agency template.
 
 - **Source slug:** `boxus`
 - **Preview URL:** https://preview.colorlib.com/theme/boxus/

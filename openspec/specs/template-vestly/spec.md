@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Invest** template.
+Recreation of ColorLib "Invest" template.
 - **Source slug:** `invest`
 - **Preview URL:** https://preview.colorlib.com/theme/invest/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/invest-free-template.jpg

@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of Colorlib **Calendar V05** (`https://colorlib.com/wp/template/calendar-05/`), implemented as a modern React 19 + TypeScript + Tailwind CSS 4 application (`apps/calendo`).
+- **Source design:** ColorLib "Calendar 05" — https://colorlib.com/wp/template/calendar-05/
 
 ## Design Tokens (Reference Extraction)
 

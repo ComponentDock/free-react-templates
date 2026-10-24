@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Careers** template.
+Recreation of ColorLib "Careers" template.
 - Source: https://colorlib.com/wp/template/careers/
 - Preview: https://preview.colorlib.com/theme/careers/
 - Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

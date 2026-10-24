@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Callcenter** template
+Recreation of ColorLib "Callcenter" template
 (preview: https://preview.colorlib.com/theme/callcenter/,
 source: https://colorlib.com/wp/template/callcenter/).
 

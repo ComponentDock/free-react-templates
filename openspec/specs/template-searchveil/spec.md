@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 16** — a fullscreen/viewport-height search overlay snippet. When toggled, it covers the entire viewport with a clean, centered search input and minimal chrome. Designed as a modal search experience.
+Recreation of ColorLib "Search Form Bar 16" — a fullscreen/viewport-height search overlay snippet. When toggled, it covers the entire viewport with a clean, centered search input and minimal chrome. Designed as a modal search experience.
 
 - **Source:** [ColorLib Search Form Bar 16](https://colorlib.com/wp/template/search-form-bar-16/)
 - **Preview:** https://preview.colorlib.com/theme/search-form-bar-16/ (404 — unreachable at prep time; screenshot used as sole reference)

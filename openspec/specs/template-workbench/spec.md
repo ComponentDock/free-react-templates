@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Work** template.
+Recreation of ColorLib "Work" template.
 - **Source:** https://colorlib.com/wp/template/work/
 - **Preview:** https://preview.colorlib.com/theme/work/
 - **New name:** `workbench` (apps/workbench, `@free-react-templates/workbench`)

@@ -9,6 +9,7 @@
 
 Recreation of ColorLib Calendar 05 (`https://colorlib.com/wp/template/calendar-05/`, preview: `https://preview.colorlib.com/theme/bootstrap/calendar-05/`).
 A modern, interactive scheduling and date picker calendar application built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Calendar 05" — https://colorlib.com/wp/template/calendar-05/
 
 ## Design tokens
 

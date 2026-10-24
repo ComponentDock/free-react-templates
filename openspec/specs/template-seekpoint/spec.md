@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 18** — a minimal search page with a white header containing a centered search form (input + blue submit button) and a large gray content area below. An "X" close button appears in the top-right corner.
+Recreation of ColorLib "Search Form Bar 18" — a minimal search page with a white header containing a centered search form (input + blue submit button) and a large gray content area below. An "X" close button appears in the top-right corner.
 
 - **Source slug:** `search-form-bar-18`
 - **Source:** https://colorlib.com/wp/template/search-form-bar-18/

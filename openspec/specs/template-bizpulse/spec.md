@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **BizPro** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page business website.
+Recreation of ColorLib "BizPro" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page business website.
 
 - **Source slug:** `bizpro`
 - **Source URL:** https://colorlib.com/wp/template/bizpro/

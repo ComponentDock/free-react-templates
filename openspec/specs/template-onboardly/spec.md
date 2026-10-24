@@ -6,7 +6,7 @@ Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-20/index.html
 
 ## Purpose
 
-Onboardly is a multi-step wizard form page with a footer. It recreates the ColorLib **Colorlib Wizard 20** design (https://colorlib.com/wp/template/colorlib-wizard-20/, preview: https://colorlib.com/etc/bwiz/colorlib-wizard-20/index.html) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+Onboardly is a multi-step wizard form page with a footer. It recreates the ColorLib "Colorlib Wizard 20" design (https://colorlib.com/wp/template/colorlib-wizard-20/, preview: https://colorlib.com/etc/bwiz/colorlib-wizard-20/index.html) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
 
 ## Design Tokens (from preview CSS)
 

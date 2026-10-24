@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 19** (`https://colorlib.com/wp/template/bootstrap-buttons-19/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-19/`). A rich interactive UI component showcase featuring styled color-coded action buttons, statistic card buttons with left/right icons, gradient variants, hover states, and responsive grid layouts. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Bootstrap Buttons 19" (`https://colorlib.com/wp/template/bootstrap-buttons-19/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-19/`). A rich interactive UI component showcase featuring styled color-coded action buttons, statistic card buttons with left/right icons, gradient variants, hover states, and responsive grid layouts. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens
 

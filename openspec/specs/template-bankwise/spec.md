@@ -15,6 +15,7 @@ as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 **New name:** `bankwise` (apps/bankwise)
 **Package:** `@free-react-templates/bankwise`
 **Deploy target:** https://bankwise.free.componentdock.com
+- **Source design:** ColorLib "Banker" — https://colorlib.com/wp/template/banker/
 
 ## Design tokens
 

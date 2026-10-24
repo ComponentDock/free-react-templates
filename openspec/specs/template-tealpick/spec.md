@@ -11,6 +11,7 @@ and name-based options. Select2-style UI with live search, tag pills, and
 comma-separated display.
 
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+- **Source design:** ColorLib "Multiselect 13" — https://colorlib.com/wp/template/multiselect-13/
 
 ## Design Tokens
 

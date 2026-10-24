@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Meal** template
+Recreation of ColorLib "Meal" template
 (preview: https://preview.colorlib.com/theme/meal/).
 
 **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript (strict).

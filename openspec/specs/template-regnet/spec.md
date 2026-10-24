@@ -15,6 +15,7 @@ background.
 - **Preview URL:** `https://colorlib.com/etc/regform/colorlib-regform-15/`
 - **ColorLib page:** `https://colorlib.com/wp/template/colorlib-regform-15/`
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Regform 15" — https://colorlib.com/wp/template/colorlib-regform-15/
 
 ## Design tokens
 

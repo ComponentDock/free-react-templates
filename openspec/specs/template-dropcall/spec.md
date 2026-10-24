@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dropdown 12** — a wide two-column Bootstrap dropdown
+Recreation of ColorLib "Dropdown 12" — a wide two-column Bootstrap dropdown
 snippet with icon-labeled items.
 Preview: https://preview.colorlib.com/theme/bootstrap/dropdown-12/
 Source page: https://colorlib.com/wp/template/dropdown-12/

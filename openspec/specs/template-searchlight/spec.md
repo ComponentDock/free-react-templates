@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Seo** template for the free-react-templates
+Recreation of the ColorLib "Seo" template for the free-react-templates
 monorepo.
 
 - **Source:** https://colorlib.com/wp/template/seo/

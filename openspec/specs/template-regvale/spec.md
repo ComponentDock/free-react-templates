@@ -6,6 +6,7 @@ Recreation of ColorLib Regform 36
 (https://colorlib.com/wp/template/colorlib-regform-36/) as a React 19 +
 Tailwind CSS 4 registration form template. Preview was unavailable at time of
 implementation; screenshot used as primary reference.
+- **Source design:** ColorLib "Colorlib Regform 36" — https://colorlib.com/wp/template/colorlib-regform-36/
 
 ## Design Tokens
 

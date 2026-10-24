@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Civic** — a single-page CV/resume template.
+Recreation of ColorLib "Civic" — a single-page CV/resume template.
 
 - **Source slug:** `civic`
 - **ColorLib page:** https://colorlib.com/wp/template/civic/

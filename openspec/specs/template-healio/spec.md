@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Health** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+Recreation of the ColorLib "Health" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 - **Source:** [ColorLib Health](https://colorlib.com/wp/template/health/)
 - **Preview:** https://preview.colorlib.com/theme/health/

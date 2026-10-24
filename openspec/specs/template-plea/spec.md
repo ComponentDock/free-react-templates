@@ -27,6 +27,7 @@ A Counseling / Legal Services template with top, hero, intro feature boxes, how 
 | Button border-radius  | `0px` (sharp/square)          | Primary and white buttons                            |
 | Button primary bg     | `#589167`                     | CTA buttons                                          |
 | Button primary hover  | `#4a7d59` (darker green)      | Hover state                                          |
+- **Source design:** ColorLib "Counselor" — https://colorlib.com/wp/template/counselor/
 
 ## Requirements
 

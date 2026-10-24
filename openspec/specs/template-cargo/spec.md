@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Logistic** free website template (`https://colorlib.com/wp/template/logistic/`), previewed at `https://preview.colorlib.com/theme/logistic/`. Built as a modern, high-performance React 19 + Tailwind CSS v4 single-page application for shipping, logistics, freight forwarding, and supply chain businesses.
+Recreation of ColorLib "Logistic" free website template (`https://colorlib.com/wp/template/logistic/`), previewed at `https://preview.colorlib.com/theme/logistic/`. Built as a modern, high-performance React 19 + Tailwind CSS v4 single-page application for shipping, logistics, freight forwarding, and supply chain businesses.
 
 ## Design Tokens (Extracted from Live Preview)
 

@@ -14,6 +14,7 @@ Recreation of ColorLib's **Royalestate** template as a React 19 + Vite + Tailwin
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript (strict)
 - **New name:** `premises` (app folder: `apps/premises`, package: `@free-react-templates/premises`)
 - **Deploy target:** `https://premises.free.componentdock.com`
+- **Source design:** ColorLib "Royalestate" — https://colorlib.com/wp/template/royalestate/
 
 ## Design tokens
 

@@ -21,6 +21,7 @@ Teacher, Tour Guide, Business, Artist) with background images, and Step 3
 collects address details (street name, street number, city, country). Navigation
 uses pill-shaped Back/Next buttons with Material Design icons and a dot-based
 step indicator below the card.
+- **Source design:** ColorLib "Colorlib Wizard 6" — https://colorlib.com/wp/template/colorlib-wizard-6/
 
 ## Design Tokens
 

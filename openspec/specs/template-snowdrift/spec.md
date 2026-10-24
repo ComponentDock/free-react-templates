@@ -10,6 +10,7 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 The template displays a centered landing page with a "Launch" button that opens
 a two-column modal dialog: a teal left panel with a winter sale announcement
 (40% off) and a right panel with a background image and "Shop now" CTA.
+- **Source design:** ColorLib "Modal 03" — https://colorlib.com/wp/template/modal-03/
 
 ## Design Tokens
 

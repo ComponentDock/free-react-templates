@@ -24,6 +24,7 @@ Recreation of ColorLib's **Login Form V4** template as a React 19 + Vite + Tailw
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Login Form V4" — https://colorlib.com/wp/template/login-form-v4/
 
 ## Design Tokens
 

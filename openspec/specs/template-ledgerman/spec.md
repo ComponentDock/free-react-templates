@@ -14,6 +14,7 @@ Recreation of ColorLib's **Jackson** — a sidebar-based personal portfolio/resu
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/jackson-free-personal-resume-website-template.jpg
 - **New name:** Ledgerman (`apps/ledgerman`, `@free-react-templates/ledgerman`)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Jackson" — https://colorlib.com/wp/template/jackson/
 
 ## Design Tokens
 

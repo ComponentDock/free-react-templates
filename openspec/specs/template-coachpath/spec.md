@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Coaching** template as a modern React 19 + Vite +
+Recreation of the ColorLib "Coaching" template as a modern React 19 + Vite +
 Tailwind CSS 4 + TypeScript single-page coaching / personal-branding website.
 
 - **Source**: ColorLib Coaching — https://colorlib.com/wp/template/coaching/

@@ -18,6 +18,7 @@ Recreation of ColorLib's **Bootstrap Footer 18** — a dark footer with a center
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Bootstrap Footer 18" — https://colorlib.com/wp/template/bootstrap-footer-18/
 
 ## Design Tokens
 

@@ -10,6 +10,7 @@ A clean, centered multi-select dropdown component for choosing programming
 languages. The original uses Semantic UI's styled multi-select with a Lato
 font and a minimalist layout. This recreation uses a custom React combobox
 with checkbox-style selection, keyboard navigation, and accessibility.
+- **Source design:** ColorLib "Multiselect 03" — https://colorlib.com/wp/template/multiselect-03/
 
 ## Requirements
 

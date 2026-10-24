@@ -14,6 +14,7 @@ Recreation of ColorLib's **OneSchool** template as a React 19 + Vite + Tailwind 
 - **Live preview:** https://preview.colorlib.com/theme/oneschool/
 - **New app name:** `eduhub`
 - **Package:** `@free-react-templates/eduhub`
+- **Source design:** ColorLib "Oneschool" — https://colorlib.com/wp/template/oneschool/
 
 ## Design tokens
 

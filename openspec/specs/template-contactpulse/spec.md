@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A centered single-column contact form on a vibrant full-page gradient background with underline-style inputs. It also includes field validation indicators, and a dark pill-shaped submit button. Recreation of ColorLib **Contact Form V14**.
+A centered single-column contact form on a vibrant full-page gradient background with underline-style inputs. It also includes field validation indicators, and a dark pill-shaped submit button. Recreation of ColorLib "Contact Form V14".
 
 - **Source slug:** `contact-form-v14`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v14/

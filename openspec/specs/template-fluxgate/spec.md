@@ -24,6 +24,7 @@
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Wizard 30" — https://colorlib.com/wp/template/colorlib-wizard-30/
 
 ## Design Tokens (from reference)
 

@@ -14,6 +14,7 @@ Recreation of ColorLib's **Dealers** template — a fashion e-commerce website w
 - **Preview URL:** https://preview.colorlib.com/theme/dealers/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/dealers-free-template.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Dealers" — https://colorlib.com/wp/template/dealers/
 
 ## Design Tokens
 

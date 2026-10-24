@@ -5,6 +5,7 @@ Recreation of ColorLib Checkbox 13 (https://colorlib.com/wp/template/checkbox-13
 ## Purpose
 
 A lightweight, circular custom checkbox component showcase with coral pink (#f67280) accent color, box-shadow depth, and Roboto typography. Demonstrates accessible checkbox patterns with disabled states.
+- **Source design:** ColorLib "Checkbox 13" — https://colorlib.com/wp/template/checkbox-13/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Lingua** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of the ColorLib "Lingua" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** [colorlib.com/wp/template/lingua/](https://colorlib.com/wp/template/lingua/)
 - **Preview:** [preview.colorlib.com/theme/lingua/](https://preview.colorlib.com/theme/lingua/)

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Unfold** — a creative design agency / portfolio template
+Recreation of ColorLib "Unfold" — a creative design agency / portfolio template
 with dark theme, parallax hero, and split navigation.
 
 - **Source slug**: `unfold`

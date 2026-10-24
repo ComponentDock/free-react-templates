@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **University** — a multi-section education / university
+Recreation of ColorLib "University" — a multi-section education / university
 landing template with search, courses, teachers, blog, and newsletter. The
 React version lives in `apps/curriculum`.
 

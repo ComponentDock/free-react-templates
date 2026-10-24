@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Thelook** photo gallery template as a React 19 +
+Recreation of the ColorLib "Thelook" photo gallery template as a React 19 +
 Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/thelook/

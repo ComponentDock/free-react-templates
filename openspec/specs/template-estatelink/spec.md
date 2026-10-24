@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Royalestate** — a real estate property listing template.
+Recreation of ColorLib "Royalestate" — a real estate property listing template.
 - Source: https://colorlib.com/wp/template/royalestate/
 - Preview: https://preview.colorlib.com/theme/royalestate/
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript

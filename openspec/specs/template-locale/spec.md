@@ -15,7 +15,7 @@ pale-blue footer with a newsletter form. The recreation is built from scratch
 
 | Field            | Value                                                                     |
 | ---------------- | ------------------------------------------------------------------------- |
-| Source design    | ColorLib **Gricklo** — https://colorlib.com/wp/template/gricklo/          |
+| Source design    | ColorLib "Gricklo" — https://colorlib.com/wp/template/gricklo/          |
 | Source preview   | https://preview.colorlib.com/theme/gricklo/                               |
 | Source slug      | `gricklo`                                                                 |
 | Recreated as     | `locale` (`apps/locale`, `@free-react-templates/locale`)                  |

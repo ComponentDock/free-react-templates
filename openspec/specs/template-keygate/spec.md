@@ -25,6 +25,7 @@ Recreation of ColorLib Login Form 13 (https://colorlib.com/wp/template/login-for
 - Body text: #212529
 - Muted text: #999999
 - Font weight 300 for Sign In heading
+- **Source design:** ColorLib "Login Form 13" — https://colorlib.com/wp/template/login-form-13/
 
 ## Requirements
 

@@ -10,7 +10,7 @@
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Colorlib Wizard 3** — https://colorlib.com/wp/template/colorlib-wizard-3/
+- **Source**: ColorLib "Colorlib Wizard 3" — https://colorlib.com/wp/template/colorlib-wizard-3/
 - **Preview**: https://colorlib.com/etc/bwiz/colorlib-wizard-3/index.html — HTTP 200 on 2026-10-23; measured `css/style.css` (8,327 bytes). Title served: "FormWizard_v3".
 - **Path note**: This slug has no `/theme/` demo (`https://preview.colorlib.com/theme/colorlib-wizard-3/` is 404) — **re-probed 2026-10-23: the demo serves** (measured record below); the live page is the catalog's own `url` for `colorlib-wizard-3` in `assets/js/catalog-products-*.js`.
 - **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).

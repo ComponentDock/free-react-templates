@@ -17,6 +17,7 @@ Recreation of ColorLib Calendar 14 (`https://colorlib.com/wp/template/calendar-1
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Calendar 14" — https://colorlib.com/wp/template/calendar-14/
 
 ## Design Tokens
 

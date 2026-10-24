@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **WebUni** — a free education/online-courses landing page template.
+Recreation of ColorLib "WebUni" — a free education/online-courses landing page template.
 
 - **Source:** https://colorlib.com/wp/template/webuni/
 - **Preview:** https://preview.colorlib.com/theme/webuni/

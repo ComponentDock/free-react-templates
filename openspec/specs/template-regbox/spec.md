@@ -8,6 +8,7 @@ A clean, centered account registration form with a light blue full-viewport back
 - **Live preview:** https://colorlib.com/etc/regform/colorlib-regform-26/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-26.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Regform 26" — https://colorlib.com/wp/template/colorlib-regform-26/
 
 ## Design tokens
 

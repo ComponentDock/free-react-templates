@@ -19,7 +19,7 @@ Design tokens: brand coral-red #ef4444, font Inter, card shadow, light gray-blue
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Contact Form V20** — https://colorlib.com/wp/template/contact-form-v20/
+- **Source**: ColorLib "Contact Form V20" — https://colorlib.com/wp/template/contact-form-v20/
 - **Preview**: **no live demo** — `/theme/contact-form-v20/`, `/theme/bootstrap/`, `/theme/bft/`, `/theme/bb/`, `/theme/bac/`, `/theme/sidebar/` and `/etc/{regform,bforms}/` all answered **404** on 2026-10-23. The reference is the official source archive `https://preview.colorlib.com/downloads/free/contact-form-v20.zip` (HTTP 200, 71,150 B): `contact-form-v20/index.html` 1,761 B, title `Contact V20`.
 - **Stylesheet measured**: `css/style.css` inside the archive — 11,349 bytes, sha256 `a12b10eedd02…`. No live twin exists to hash against, so this is archive-only evidence (stated as such, not as a verified live page).
 - **Measured how**: hex-literal census of that sheet + winning rule per selector.

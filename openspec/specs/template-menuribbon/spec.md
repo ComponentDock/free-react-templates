@@ -4,7 +4,7 @@
 
 Menuribbon is a **grey utility top bar + blue-wordmark navigation header over a
 full-viewport hero band** page in the free-react-templates monorepo. It is an
-original React recreation of the ColorLib free **"Website Menu 04"** snippet
+original React recreation of the ColorLib "Website Menu 04" snippet
 (source slug `website-menu-04` — the Website Menus family's **sticky top-bar
 menu**): a **`#eee` contact/social utility bar** (`.top-bar`, `padding:.5rem 0`)
 carrying an **envelope icon + `info@yourdomain.com`** and a **phone icon +

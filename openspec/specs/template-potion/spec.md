@@ -14,6 +14,7 @@ with avatar upload, category selection grid, and address form.
 - **Demo (original):** https://colorlib.com/etc/bwiz/colorlib-wizard-6/index.html
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript
 - **Design category:** Multi-step form wizard (onboarding/registration)
+- **Source design:** ColorLib "Colorlib Wizard 6" — https://colorlib.com/wp/template/colorlib-wizard-6/
 
 ## Design tokens (extracted from original CSS)
 

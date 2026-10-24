@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Toothcare** (`https://colorlib.com/wp/template/toothcare/`), preview URL: `https://preview.colorlib.com/theme/toothcare/`.
+Recreation of ColorLib "Toothcare" (`https://colorlib.com/wp/template/toothcare/`), preview URL: `https://preview.colorlib.com/theme/toothcare/`.
 Built as a responsive React 19 + Tailwind CSS 4 + TypeScript template with 100% test coverage.
 
 ## Design Tokens

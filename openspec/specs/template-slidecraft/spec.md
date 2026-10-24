@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Carousel V02 (`https://colorlib.com/wp/template/carousel-02/`), preview URL: `https://preview.colorlib.com/theme/carousel-02/`.
+Recreation of ColorLib "Carousel V02" (`https://colorlib.com/wp/template/carousel-02/`), preview URL: `https://preview.colorlib.com/theme/carousel-02/`.
 Built with Vite, React 19, Tailwind CSS 4, TypeScript, and Lucide React icons.
 
 ## Design Tokens (extracted from reference screenshot & standard ColorLib carousel archetype)

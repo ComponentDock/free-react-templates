@@ -11,6 +11,7 @@ A four-step sign-up wizard form with a split-screen layout. The left panel
 The right panel (lavender #efeeff) contains a multi-step form with Previous/Next/Finish
 buttons and a "Step X / 4" indicator. The original uses jQuery Steps; we use
 React state for step navigation.
+- **Source design:** ColorLib "Colorlib Wizard 17" — https://colorlib.com/wp/template/colorlib-wizard-17/
 
 ## Design Tokens
 

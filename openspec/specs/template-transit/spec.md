@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Logistic** (`https://colorlib.com/wp/template/logistic/`), a modern and professional logistics and transport services website template based on Bootstrap 5.
+Recreation of ColorLib "Logistic" (`https://colorlib.com/wp/template/logistic/`), a modern and professional logistics and transport services website template based on Bootstrap 5.
 
 - **New Name:** `transit`
 - **Source Slug:** `logistic`

@@ -8,6 +8,7 @@ A bakery and restaurant template with hero banner, about story, canvas and full 
 - **Preview:** https://preview.colorlib.com/theme/bakery2/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Design category:** Restaurant / Bakery / Food
+- **Source design:** ColorLib "Bakery2" — https://colorlib.com/wp/template/bakery2/
 
 ## Design Tokens (extracted from preview)
 

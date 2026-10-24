@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 10** — a newsletter subscription modal with a background image header, email form, and centered layout.
+Recreation of ColorLib "Modal 10" — a newsletter subscription modal with a background image header, email form, and centered layout.
 
 - **Source:** https://colorlib.com/wp/template/modal-10/
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/modal-10/

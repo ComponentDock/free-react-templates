@@ -1,6 +1,6 @@
 ---
 name: ironpulse
-description: Crossfit & Fitness landing page template — recreation of ColorLib Crossbody
+description: Crossfit & Fitness landing page template — recreation of ColorLib "Crossbody"
 template: ironpulse
 original: crossbody
 original_url: https://colorlib.com/wp/template/crossbody/

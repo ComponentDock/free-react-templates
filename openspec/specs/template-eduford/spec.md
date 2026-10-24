@@ -14,6 +14,7 @@ Recreation of ColorLib's **Universityedu** template.
 - **Source page:** https://colorlib.com/wp/template/universityedu/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **New name:** `eduford` (apps/eduford, `@free-react-templates/eduford`)
+- **Source design:** ColorLib "Universityedu" — https://colorlib.com/wp/template/universityedu/
 
 ## Design Tokens (extracted from live preview CSS)
 

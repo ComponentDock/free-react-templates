@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An interactive button showcase template with hero, features, pricing, testimonials and CTA sections. Recreation of ColorLib **Bootstrap Buttons 05** (`https://colorlib.com/wp/template/bootstrap-buttons-05/`), built as a modern, interactive Bootstrap-inspired button showcase landing page using React 19, Tailwind CSS 4, and TypeScript.
+An interactive button showcase template with hero, features, pricing, testimonials and CTA sections. Recreation of ColorLib "Bootstrap Buttons 05" (`https://colorlib.com/wp/template/bootstrap-buttons-05/`), built as a modern, interactive Bootstrap-inspired button showcase landing page using React 19, Tailwind CSS 4, and TypeScript.
 
 - **Source Slug**: `bootstrap-buttons-05`
 - **Preview URL**: `https://preview.colorlib.com/theme/bootstrap-buttons-05/`

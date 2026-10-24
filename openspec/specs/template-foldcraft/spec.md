@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 12** (`https://colorlib.com/wp/template/accordion-12/`, live preview `https://preview.colorlib.com/theme/bac/accordion-12/`), built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Accordion 12" (`https://colorlib.com/wp/template/accordion-12/`, live preview `https://preview.colorlib.com/theme/bac/accordion-12/`), built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 Provides a clean, elegant vertical accordion widget with smooth expand/collapse states, distinct active styling, and responsive layout.
 
 ## Design tokens

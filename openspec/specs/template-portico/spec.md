@@ -33,6 +33,7 @@ authoritative again — CSS values are canonical over the screenshot
 **Low-chroma values the sheet actually uses** — `#6c757d`, `#212529`,
 `#495057`, `#b3b3b3`; any sampled Tailwind grey above is an approximation of
 these.
+- **Source design:** ColorLib "Login Form 01" — https://colorlib.com/wp/template/login-form-01/
 
 ## Design tokens
 

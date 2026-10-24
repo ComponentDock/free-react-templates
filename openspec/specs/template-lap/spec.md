@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 14** (`https://colorlib.com/wp/template/accordion-14/`), built as a modern, responsive React template (`@free-react-templates/lap`) using Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Accordion 14" (`https://colorlib.com/wp/template/accordion-14/`), built as a modern, responsive React template (`@free-react-templates/lap`) using Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 - **Source Template**: ColorLib Accordion 14 (`https://colorlib.com/wp/template/accordion-14/`)
 - **Live Preview URL**: `https://preview.colorlib.com/theme/accordion-14/` (Note: preview URL returned 404 during automated prep; faithful replication derived from canonical ColorLib screenshot and structured accordion design patterns).

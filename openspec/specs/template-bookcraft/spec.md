@@ -8,6 +8,7 @@ A Book / Author template with hero, sticky navigation, features, about author, n
 - **Preview URL:** https://preview.colorlib.com/theme/booke/
 - **New name:** `bookcraft` (apps/bookcraft, package `@free-react-templates/bookcraft`)
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, shared `packages/ui`
+- **Source design:** ColorLib "Booke" — https://colorlib.com/wp/template/booke/
 
 ## Design tokens (extracted from preview)
 

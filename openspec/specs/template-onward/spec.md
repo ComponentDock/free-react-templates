@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Ozberk** — a fullscreen business website template with a dark hero banner, yellow accent palette, parallax video section, testimonials, and a services grid.
+Recreation of ColorLib "Ozberk" — a fullscreen business website template with a dark hero banner, yellow accent palette, parallax video section, testimonials, and a services grid.
 
 - **Source:** https://colorlib.com/wp/template/ozberk/
 - **Preview:** https://preview.colorlib.com/theme/ozberk/

@@ -14,6 +14,7 @@ Recreation of ColorLib's **Etrain** template as a modern React 19 + Vite + Tailw
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/etrain-free-template.jpg
 - **Stack:** React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict)
 - **Deploy target:** https://learnvibe.free.componentdock.com
+- **Source design:** ColorLib "Etrain" — https://colorlib.com/wp/template/etrain/
 
 ## Design tokens
 

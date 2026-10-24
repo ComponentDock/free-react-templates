@@ -5,7 +5,7 @@
 > Do not scaffold `apps/probebar`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-searchgate/spec.md`.
 
-Recreation of ColorLib **Search Form/Bar 06**
+Recreation of ColorLib "Search Form/Bar 06"
 (https://colorlib.com/wp/template/search-form-bar-06/)
 
 ## Purpose

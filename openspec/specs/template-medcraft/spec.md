@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **MedArt** (`https://colorlib.com/wp/template/medart/`).
+Recreation of ColorLib "MedArt" (`https://colorlib.com/wp/template/medart/`).
 
 - **Preview URL:** `https://preview.colorlib.com/theme/medart/`
 - **Screenshot:** `https://colorlib.com/wp/wp-content/uploads/sites/2/medart-free-template.jpg`

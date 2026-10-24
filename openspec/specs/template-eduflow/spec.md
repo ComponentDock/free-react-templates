@@ -8,7 +8,7 @@
 ## Purpose
 
 EduFlow is an online education and courses platform template. It is an original
-React recreation of the ColorLib free **Onedu** template
+React recreation of the ColorLib "Onedu" template
 (preview: `https://preview.colorlib.com/theme/onedu/`), built under the new name
 `eduflow` with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 

@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib **Bootstrap Accordion V05** (`https://colorlib.com/wp/template/accordion-05/`), preview URL `https://preview.colorlib.com/theme/accordion-05/`. Built with Vite, React 19, Tailwind CSS 4, TypeScript (strict), and Lucide React icons.
+- **Source design:** ColorLib "Accordion 05" — https://colorlib.com/wp/template/accordion-05/
 
 ## Design tokens
 

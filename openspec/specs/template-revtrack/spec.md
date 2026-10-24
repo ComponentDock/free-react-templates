@@ -12,6 +12,7 @@
 - **Screenshot**: `https://colorlib.com/wp/wp-content/uploads/sites/2/carrentals-free-template.jpg`
 - **Stack**: React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **New name**: RevTrack (no ColorLib references in app code)
+- **Source design:** ColorLib "Carrentals" — https://colorlib.com/wp/template/carrentals/
 
 ## Design Tokens (extracted from preview)
 

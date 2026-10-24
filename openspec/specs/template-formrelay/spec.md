@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 06** — a two-column contact page with a
+Recreation of ColorLib "Contact Form 06" — a two-column contact page with a
 form on the left and a map on the right, plus a row of contact info items with
 large circular navy icons below the card.
 

@@ -17,6 +17,7 @@ Recreation of ColorLib's **Solestyle** shoe store template as a modern React com
 - **Deploy URL:** `https://soleshine.free.componentdock.com`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** E-Commerce / Shoe Store
+- **Source design:** ColorLib "Solestyle" — https://colorlib.com/wp/template/solestyle/
 
 ## Design Tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Travello** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+Recreation of ColorLib "Travello" as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/travello/
 - **Preview:** https://preview.colorlib.com/theme/travello/

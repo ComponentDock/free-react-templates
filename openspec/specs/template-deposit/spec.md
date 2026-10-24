@@ -13,6 +13,7 @@ Recreation of ColorLib's **Banker** template as a React 19 + Vite + Tailwind CSS
 - **Preview:** https://preview.colorlib.com/theme/banker/
 - **New name:** `deposit` (apps/deposit, @free-react-templates/deposit)
 - **Design category:** Banking / Financial Services
+- **Source design:** ColorLib "Banker" — https://colorlib.com/wp/template/banker/
 
 ## Design tokens (extracted from live preview CSS)
 

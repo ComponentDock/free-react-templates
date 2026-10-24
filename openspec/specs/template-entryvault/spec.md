@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V11** (slug: `login-form-11`).
+Recreation of ColorLib "Login Form V11" (slug: `login-form-11`).
 Preview: `https://preview.colorlib.com/theme/bootstrap/login-form-11/`
 Source page: `https://colorlib.com/wp/template/login-form-11/`
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A portfolio template with intro and portfolio sections. Recreation of ColorLib **Riddle** portfolio template.
+A portfolio template with intro and portfolio sections. Recreation of ColorLib "Riddle" portfolio template.
 
 - **Source:** https://colorlib.com/wp/template/riddle/
 - **Preview:** https://preview.colorlib.com/theme/riddle/

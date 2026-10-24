@@ -16,6 +16,7 @@ Recreation of ColorLib's **Ronin** template as a React 19 + Vite + Tailwind 4 + 
 - **New name:** `lancer` (avoids reuse of ColorLib source name; no collision with existing apps)
 - **Package:** `@free-react-templates/lancer`
 - **Deploy:** `https://lancer.free.componentdock.com`
+- **Source design:** ColorLib "Ronin" — https://colorlib.com/wp/template/ronin/
 
 ## Design tokens (extracted from preview CSS)
 

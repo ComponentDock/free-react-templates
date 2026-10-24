@@ -17,6 +17,7 @@ Recreation of ColorLib's **Listed2** template as a React 19 + Vite + Tailwind 4 
 A local business directory / listings template with a hero search bar,
 category grid, listing cards, testimonials, blog posts, FAQ accordion, and
 a newsletter CTA.
+- **Source design:** ColorLib "Listed2" — https://colorlib.com/wp/template/listed2/
 
 ## Design tokens
 

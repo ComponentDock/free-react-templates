@@ -7,6 +7,7 @@
 ## Purpose
 
 Portalink provides a centered white login card on a light gray background with a hero image spanning the top of the card. It features social login icons (Facebook, Twitter), username and password fields with a password visibility toggle, a green pill-shaped "Sign In" button, remember-me checkbox, forgot-password link, and sign-up CTA. Designed for authentication pages needing a clean, modern card-based layout.
+- **Source design:** ColorLib "Login Form 15" — https://colorlib.com/wp/template/login-form-15/
 
 ## Design Tokens
 

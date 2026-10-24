@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V10** — a minimal, centered contact form
+Recreation of ColorLib "Contact Form V10" — a minimal, centered contact form
 with pill-shaped inputs on a light gray background. The design is
 mobile-inspired with rounded edges and an expanding focus animation.
 

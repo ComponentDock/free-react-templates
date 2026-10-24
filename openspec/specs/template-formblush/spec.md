@@ -8,6 +8,7 @@ A free sign-up form template with a split-screen layout featuring a decorative p
 - **Preview (Colorlib):** https://preview.colorlib.com/theme/colorlib-regform-24/ (404 — using screenshot as reference)
 - **New name:** `formblush`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Colorlib Regform 24" — https://colorlib.com/wp/template/colorlib-regform-24/
 
 ## Design tokens
 

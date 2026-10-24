@@ -9,6 +9,7 @@ An Events / Conference template with hero section fills viewport, about section 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/event-free-template.jpg
 - **New name:** `gathervenue` (package: `@free-react-templates/gathervenue`)
 - **Deploy target:** `gathervenue.free.componentdock.com`
+- **Source design:** ColorLib "Event" — https://colorlib.com/wp/template/event/
 
 ## Design tokens
 

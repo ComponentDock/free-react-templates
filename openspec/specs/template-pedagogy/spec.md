@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Onedu** — an education / online course platform template.
+Recreation of ColorLib "Onedu" — an education / online course platform template.
 
 - **Source slug:** `onedu`
 - **Preview URL:** https://preview.colorlib.com/theme/onedu/

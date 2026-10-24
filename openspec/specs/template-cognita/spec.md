@@ -1,6 +1,6 @@
 # Template: Cognita (Online Learning)
 
-Recreation of ColorLib **Eskwela** (https://colorlib.com/wp/template/eskwela/).
+Recreation of ColorLib "Eskwela" (https://colorlib.com/wp/template/eskwela/).
 
 ## Purpose
 

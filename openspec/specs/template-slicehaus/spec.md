@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Pizza** — a free pizza restaurant website template with hero slider, about, services, gallery, counters, tabbed menu, blog, and contact form.
+Recreation of ColorLib "Pizza" — a free pizza restaurant website template with hero slider, about, services, gallery, counters, tabbed menu, blog, and contact form.
 
 - **Source:** [colorlib.com/wp/template/pizza/](https://colorlib.com/wp/template/pizza/)
 - **Preview:** [preview.colorlib.com/theme/pizza/](https://preview.colorlib.com/theme/pizza/)

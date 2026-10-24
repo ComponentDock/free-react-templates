@@ -6,7 +6,7 @@ Recreation of ColorLib Signup Form 12 as a free React signup form template with 
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Signup Form 12** — https://colorlib.com/wp/template/signup-form-12/
+- **Source**: ColorLib "Signup Form 12" — https://colorlib.com/wp/template/signup-form-12/
 - **Preview**: the slug-only path is a 404; the live demo is the Bootstrap-form
   family path **`https://preview.colorlib.com/theme/bootstrap/signup-form-12/`**
   — HTTP 200, title `Sign Up 01` (the served title is the demo label, not the slug).

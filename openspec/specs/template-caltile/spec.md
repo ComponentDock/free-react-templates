@@ -11,6 +11,7 @@ Recreation of ColorLib Calendar 20 (`https://colorlib.com/wp/template/calendar-2
 
 - **Preview URL:** `https://preview.colorlib.com/theme/calendar-20/` (fallback reference: ColorLib screenshot thumbnail `https://colorlib.com/wp/wp-content/uploads/sites/2/calendar-20.jpg`)
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons.
+- **Source design:** ColorLib "Calendar 20" — https://colorlib.com/wp/template/calendar-20/
 
 ## Design Tokens (Inferred from Screenshot / Standard Calendar UI)
 

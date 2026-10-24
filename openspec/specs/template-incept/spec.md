@@ -15,6 +15,7 @@ contact sections.
 - **ColorLib URL:** https://colorlib.com/wp/template/create/
 - **Preview URL:** https://preview.colorlib.com/theme/create/
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Create" — https://colorlib.com/wp/template/create/
 
 ## Design Tokens (extracted from preview CSS)
 

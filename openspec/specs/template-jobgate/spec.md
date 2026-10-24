@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Comport** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Comport" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **ColorLib source:** [Comport](https://colorlib.com/wp/template/comport/)
 - **Preview URL:** https://preview.colorlib.com/theme/comport/

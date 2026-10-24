@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **CellOn** template as a single-page React site.
+Recreation of the ColorLib "CellOn" template as a single-page React site.
 Source: https://colorlib.com/wp/template/cellon/
 Preview: https://preview.colorlib.com/theme/cellon/
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).

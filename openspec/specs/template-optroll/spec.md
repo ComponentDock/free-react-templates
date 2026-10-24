@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect 14** — a free Bootstrap multiselect
+Recreation of ColorLib "Multiselect 14" — a free Bootstrap multiselect
 checkbox dropdown with search and "Select All" feature. The original uses
 the ms-dropdown jQuery plugin. We recreate it as a standalone React
 component page.

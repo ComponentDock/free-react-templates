@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **colorlib-search-8** — a single-page advanced search form bar template.
+Recreation of ColorLib "colorlib-search-8" — a single-page advanced search form bar template.
 
 - **Source:** https://colorlib.com/wp/template/colorlib-search-8/
 - **Preview:** https://colorlib.com/etc/searchf/colorlib-search-8/

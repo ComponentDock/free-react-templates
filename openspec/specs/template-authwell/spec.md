@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V07** (slug: `login-form-07`).
+Recreation of ColorLib "Login Form V07" (slug: `login-form-07`).
 Preview URL: `https://preview.colorlib.com/theme/bootstrap/login-form-07/`
 Source page: `https://colorlib.com/wp/template/login-form-07/`
 Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-07.jpg`

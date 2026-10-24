@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Etrain** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of ColorLib "Etrain" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** [ColorLib Etrain](https://colorlib.com/wp/template/etrain/)
 - **Preview:** https://preview.colorlib.com/theme/etrain/

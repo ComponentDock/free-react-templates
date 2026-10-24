@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Selling** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of the ColorLib "Selling" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/selling/
 - **Preview:** https://preview.colorlib.com/theme/selling/

@@ -1,6 +1,6 @@
 # Template: Blitz (Business)
 
-Recreation of ColorLib Rango (https://colorlib.com/wp/template/rango/), preview
+Recreation of ColorLib "Rango" (https://colorlib.com/wp/template/rango/), preview
 `https://preview.colorlib.com/theme/rango/`, rebuilt from scratch on
 Vite + React 19 + Tailwind CSS 4 + TypeScript (no assets copied).
 

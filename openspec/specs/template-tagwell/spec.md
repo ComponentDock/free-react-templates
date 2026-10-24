@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect 12** — a free Bootstrap multiselect
+Recreation of ColorLib "Multiselect 12" — a free Bootstrap multiselect
 dropdown with live search and tag-style selection. The original is a
 single-section form component demo using select2.js. We recreate it as
 a standalone React component page.

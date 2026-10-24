@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Universityedu** (`https://colorlib.com/wp/template/universityedu/`) as a modern React 19 + Tailwind CSS 4 + TypeScript application (`apps/campusly`).
+Recreation of ColorLib "Universityedu" (`https://colorlib.com/wp/template/universityedu/`) as a modern React 19 + Tailwind CSS 4 + TypeScript application (`apps/campusly`).
 
 ## Stack & Conventions
 

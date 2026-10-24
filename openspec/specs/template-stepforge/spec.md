@@ -15,6 +15,7 @@ Stepforge is a multi-step booking form wizard that recreates the ColorLib Wizard
 different name. It provides a three-step flow (Personal Info, Booking, Confirm) with a dark navy
 background, teal accent colors, and Open Sans typography. Users fill in personal details, select
 booking preferences, and review a summary before submitting.
+- **Source design:** ColorLib "Colorlib Wizard 26" — https://colorlib.com/wp/template/colorlib-wizard-26/
 
 ## Design tokens
 

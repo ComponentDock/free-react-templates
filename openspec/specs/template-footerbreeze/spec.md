@@ -8,6 +8,7 @@ A dark-themed footer with a black background, four-column layout (brand descript
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-07/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 07" — https://colorlib.com/wp/template/bootstrap-footer-07/
 
 ## Design Tokens
 

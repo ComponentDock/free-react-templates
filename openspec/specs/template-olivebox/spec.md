@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 14** — a two-column professional contact
+Recreation of ColorLib "Contact Form 14" — a two-column professional contact
 page with an olive green background, a text panel on the left ("Let's work
 together"), and a white card with offset drop shadow on the right containing a
 detailed project inquiry form (budget, target launch, etc.).

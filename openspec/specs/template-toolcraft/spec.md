@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Handyman** template.
+Recreation of the ColorLib "Handyman" template.
 - Source: https://colorlib.com/wp/template/handyman/
 - Preview: https://preview.colorlib.com/theme/handyman/
 - Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

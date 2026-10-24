@@ -15,6 +15,7 @@ Recreation of ColorLib's **CityListing** template as a React 19 + Vite + Tailwin
 - **Surge target:** `urbanscape.free.componentdock.com`
 
 A city directory and listing landing page with a search-driven hero, popular locations grid, step-by-step how-it-works section, featured categories, statistics, testimonials, newsletter, blog cards, and a multi-column footer.
+- **Source design:** ColorLib "Citylisting" — https://colorlib.com/wp/template/citylisting/
 
 ## Design Tokens
 

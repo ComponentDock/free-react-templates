@@ -9,6 +9,7 @@ A Real Estate template with hero, search box, featured properties, workflow, cit
 - **New name:** `manor` (apps/manor, @free-react-templates/manor)
 - **Stack:** Vite (latest), React 19, Tailwind CSS 4, TypeScript (strict)
 - **Category:** Real Estate
+- **Source design:** ColorLib "Theestate" — https://colorlib.com/wp/template/theestate/
 
 ## Design tokens
 

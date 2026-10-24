@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Bootstrap Buttons 13** (`https://colorlib.com/wp/template/bootstrap-buttons-13/`).
+- Recreation of ColorLib "Bootstrap Buttons 13" (`https://colorlib.com/wp/template/bootstrap-buttons-13/`).
 - Preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-13/`
 - Stack: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons.
 

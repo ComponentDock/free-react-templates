@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **E Shop** template.
+Recreation of the ColorLib "E Shop" template.
 
 - **Source slug:** `e-shop`
 - **ColorLib URL:** https://colorlib.com/wp/template/e-shop/

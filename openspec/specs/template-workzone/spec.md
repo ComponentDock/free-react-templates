@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Workshop** template.
+Recreation of the ColorLib "Workshop" template.
 - Source slug: `workshop`
 - ColorLib URL: https://colorlib.com/wp/template/workshop/
 - Preview URL: https://preview.colorlib.com/theme/workshop/

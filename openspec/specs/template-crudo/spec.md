@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Caviar** template.
+Recreation of ColorLib "Caviar" template.
 - **Source slug:** `caviar`
 - **Preview URL:** https://preview.colorlib.com/theme/caviar/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/caviar-free-template.jpg

@@ -16,6 +16,7 @@ reveal, a dark showcase section with sticky content, testimonial, and blog grid.
 - **Preview:** https://preview.colorlib.com/theme/cruise/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Technology / SaaS / Landing Page
+- **Source design:** ColorLib "Cruise" — https://colorlib.com/wp/template/cruise/
 
 ## Design Tokens (extracted from preview CSS)
 

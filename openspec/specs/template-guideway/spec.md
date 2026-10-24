@@ -10,6 +10,7 @@ A consulting and IT agency template with top utility bar, hero banner, features,
 - **New name:** `guideway`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Deploy target:** https://guideway.free.componentdock.com
+- **Source design:** ColorLib "Consulotion" — https://colorlib.com/wp/template/consulotion/
 
 ## Design Tokens
 

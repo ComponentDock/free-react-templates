@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Finloans** template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page template.
+Recreation of ColorLib "Finloans" template as a modern React 19 + Vite + Tailwind 4 + TypeScript single-page template.
 
 - **Source:** https://colorlib.com/wp/template/finloans/
 - **Preview:** https://preview.colorlib.com/theme/finloans/

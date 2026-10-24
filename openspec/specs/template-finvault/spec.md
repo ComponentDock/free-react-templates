@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Finances** template
+Recreation of ColorLib "Finances" template
 (preview: https://preview.colorlib.com/theme/finances/,
 source: https://colorlib.com/wp/template/finances/)
 

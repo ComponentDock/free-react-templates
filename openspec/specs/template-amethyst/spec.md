@@ -12,6 +12,7 @@ screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-
 
 Recreation of ColorLib Bootstrap Footer 19 (https://colorlib.com/wp/template/bootstrap-footer-19/).
 A purple gradient footer with 4 columns: About, Latest News, Information, and Instagram.
+- **Source design:** ColorLib "Bootstrap Footer 19" — https://colorlib.com/wp/template/bootstrap-footer-19/
 
 ## Design tokens
 

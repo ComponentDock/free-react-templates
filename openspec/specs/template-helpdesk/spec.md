@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Callcenter** template.
+Recreation of ColorLib "Callcenter" template.
 - Source: https://colorlib.com/wp/template/callcenter/
 - Preview: https://preview.colorlib.com/theme/callcenter/
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)

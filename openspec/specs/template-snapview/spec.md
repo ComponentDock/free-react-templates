@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Bato** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+Recreation of the ColorLib "Bato" template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source:** https://colorlib.com/wp/template/bato/
 - **Preview analyzed:** https://preview.colorlib.com/theme/bato/

@@ -22,6 +22,7 @@ event registration form with a two-column card layout over a gradient background
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Regform 21" — https://colorlib.com/wp/template/colorlib-regform-21/
 
 ## Design Tokens
 

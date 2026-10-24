@@ -8,6 +8,7 @@ Recreation of ColorLib's **Bootstrap Footer 16** — a deep purple/charcoal foot
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-16/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 16" — https://colorlib.com/wp/template/bootstrap-footer-16/
 
 ## Design Tokens
 

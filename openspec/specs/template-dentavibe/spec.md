@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Toothcare** (`https://colorlib.com/wp/template/toothcare/`), live preview at `https://preview.colorlib.com/theme/toothcare/`.
+Recreation of ColorLib "Toothcare" (`https://colorlib.com/wp/template/toothcare/`), live preview at `https://preview.colorlib.com/theme/toothcare/`.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons.
 
 ## Design tokens

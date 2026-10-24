@@ -14,6 +14,7 @@ Recreation of **ColorLib Reg Form V31** (`colorlib-regform-31`) as a React 19 + 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-31.jpg
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
 - **Description:** A single-column centered registration form card on a teal background. The form contains Full Name, Email, Password fields (each with an inline icon), a "Register Account Form" heading with a blue underline bar, and a blue submit button with box shadow. Simpler than Reg Form V30 — no left info panel, no split layout.
+- **Source design:** ColorLib "Colorlib Regform 31" — https://colorlib.com/wp/template/colorlib-regform-31/
 
 ## Design Tokens
 

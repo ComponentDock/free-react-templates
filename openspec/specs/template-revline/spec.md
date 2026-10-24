@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **AutoMotive** (`https://colorlib.com/wp/template/automotive/`), built as a modern automotive garage landing page using React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "AutoMotive" (`https://colorlib.com/wp/template/automotive/`), built as a modern automotive garage landing page using React 19, Tailwind CSS 4, and TypeScript.
 
 - **Source Slug**: `automotive`
 - **Preview URL**: `https://preview.colorlib.com/theme/automotive/`

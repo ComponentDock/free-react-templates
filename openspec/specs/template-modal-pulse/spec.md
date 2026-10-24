@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 18** — a free offer-with-CTA modal template.
+Recreation of ColorLib "Modal 18" — a free offer-with-CTA modal template.
 The modal promotes an exclusive offer or product launch, featuring a centered
 dialog with an illustration, headline, description, and dual-action buttons
 (dismiss + primary CTA).

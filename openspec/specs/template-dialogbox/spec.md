@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal 05** — a simple and modern free login registration
+Recreation of ColorLib "Modal 05" — a simple and modern free login registration
 modal form template with social media icons and responsive layout.
 
 - **Source:** https://colorlib.com/wp/template/modal-05/

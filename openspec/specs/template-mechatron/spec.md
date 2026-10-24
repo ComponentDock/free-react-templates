@@ -15,6 +15,7 @@ Recreation of ColorLib's "Robotics" template
 **Source slug:** `robotics`
 **New name:** `mechatron` (never reuse source name)
 **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict)
+- **Source design:** ColorLib "Robotics" — https://colorlib.com/wp/template/robotics/
 
 ## Design Tokens
 

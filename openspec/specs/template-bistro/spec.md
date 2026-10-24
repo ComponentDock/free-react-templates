@@ -3,6 +3,7 @@
 ## Purpose
 
 A restaurant menu accordion template with hero slider, about, services, gallery, booking form and blog sections. Recreation of ColorLib [Bootstrap Accordion V02](https://colorlib.com/wp/template/accordion-02/) (preview URL: `https://preview.colorlib.com/theme/accordion-02/`), built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Accordion 02" — https://colorlib.com/wp/template/accordion-02/
 
 ## Design Tokens
 

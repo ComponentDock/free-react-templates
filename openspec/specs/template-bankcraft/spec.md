@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A finance and banking template with hero, loan and savings, services, how-it-works, pricing and team sections. Recreation of the ColorLib **Banker** template as a React 19 + Vite + Tailwind 4 + TypeScript site.
+A finance and banking template with hero, loan and savings, services, how-it-works, pricing and team sections. Recreation of the ColorLib "Banker" template as a React 19 + Vite + Tailwind 4 + TypeScript site.
 
 - **Source:** https://colorlib.com/wp/template/banker/
 - **Preview analyzed:** https://preview.colorlib.com/theme/banker/

@@ -14,6 +14,7 @@ Recreation of **ColorLib Reg Form V30** (`colorlib-regform-30`) as a React 19 + 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-30.jpg
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
 - **Description:** A membership registration form with a split layout — left information panel (blue background) and right registration form on white card, centered on a teal full-page background.
+- **Source design:** ColorLib "Colorlib Regform 30" — https://colorlib.com/wp/template/colorlib-regform-30/
 
 ## Design Tokens
 

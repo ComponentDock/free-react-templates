@@ -7,6 +7,7 @@ A Restaurant / Dining template with hero, intro, video, signature dish and reser
 - Source: https://colorlib.com/wp/template/thevenue/
 - Preview: https://preview.colorlib.com/theme/thevenue/
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
+- **Source design:** ColorLib "Thevenue" — https://colorlib.com/wp/template/thevenue/
 
 ## Requirements
 

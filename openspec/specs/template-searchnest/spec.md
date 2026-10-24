@@ -8,6 +8,7 @@ A hotel booking search form widget template with filter fields and a branded sea
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-14/ (unreachable at time of prep — falling back to screenshot)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-14.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Search 14" — https://colorlib.com/wp/template/colorlib-search-14/
 
 ## Design tokens (from screenshot)
 

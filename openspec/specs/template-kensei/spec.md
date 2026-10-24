@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Ronin** template.
+Recreation of the ColorLib "Ronin" template.
 - **Source:** https://colorlib.com/wp/template/ronin/
 - **Preview:** https://preview.colorlib.com/theme/ronin/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/ronin-free-template.jpg

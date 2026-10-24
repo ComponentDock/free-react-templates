@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Login Form template with form title, input fields, sign in button, forgot password and sign up and form validation sections. Recreation of ColorLib **Login Form V17** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+A Login Form template with form title, input fields, sign in button, forgot password and sign up and form validation sections. Recreation of ColorLib "Login Form V17" as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v17/
 - **Preview URL:** https://colorlib.com/etc/lf/Login_v17/index.html — **HTTP 200, 1,763 bytes** (re-verified 2026-10-23). The form templates were never published under `preview.colorlib.com/theme/<slug>/`: that path 404s, `colorlib.com/etc/login-form-v17/` and `colorlib.com/etc/lf/login-form-v17/` 404 too, and the wp template page's `downloads/free/login-form-v17.zip` link is dead. `/etc/lf/Login_v17/index.html` is the canonical live demo and the only reference with a stylesheet.

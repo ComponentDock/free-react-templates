@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Calendar 12** (`https://colorlib.com/wp/template/calendar-12/`), previewed at `https://preview.colorlib.com/theme/calendar-12/`.
+Recreation of ColorLib "Calendar 12" (`https://colorlib.com/wp/template/calendar-12/`), previewed at `https://preview.colorlib.com/theme/calendar-12/`.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons, Vitest.
 
 ## Design tokens

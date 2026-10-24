@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib UniversityEdu (`https://colorlib.com/wp/template/universityedu/`), preview URL: `https://preview.colorlib.com/theme/universityedu/`.
+Recreation of ColorLib "UniversityEdu" (`https://colorlib.com/wp/template/universityedu/`), preview URL: `https://preview.colorlib.com/theme/universityedu/`.
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript + Lucide React.
 New original name: `collegium` (replaces ColorLib source name `universityedu`).
 

@@ -13,6 +13,7 @@
 - **Description**: A premium car rental landing page with a full-viewport hero section, booking form, how-it-works steps, promo/about section, car listings grid, features grid, testimonials, CTA banner, and a multi-column footer.
 - **Preview URL**: https://preview.colorlib.com/theme/carrentals/ (verified HTTP 200)
 - **Stack**: Bootstrap-based original; React 19 + Tailwind CSS 4 + TypeScript recreation. Replace Bootstrap grid/utilities with Tailwind. Replace icomoon + flaticon icon fonts with `lucide-react`.
+- **Source design:** ColorLib "Carrentals" — https://colorlib.com/wp/template/carrentals/
 
 ## Section Structure (top to bottom)
 

@@ -11,6 +11,7 @@ news, pricing plans, and a footer.
 - **Preview:** https://preview.colorlib.com/theme/nurture/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **New name:** `nurture` (no collision with existing apps/specs)
+- **Source design:** ColorLib "Nurture" — https://colorlib.com/wp/template/nurture/
 
 ## Design Tokens
 

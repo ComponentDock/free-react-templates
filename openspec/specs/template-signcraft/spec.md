@@ -15,6 +15,7 @@ Recreation of Colorlib "Reg Form V33" — a split-screen registration/signup for
 - **Preview URL**: https://colorlib.com/etc/regform/colorlib-regform-33/
 - **Screenshot URL**: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-33.jpg
 - **Stack**: React 19 · Vite · Tailwind CSS 4 · TypeScript (strict) · Vitest + Testing Library
+- **Source design:** ColorLib "Colorlib Regform 33" — https://colorlib.com/wp/template/colorlib-regform-33/
 
 ## Design Tokens (from live preview CSS)
 

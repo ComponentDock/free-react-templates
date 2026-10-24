@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bbs** — a small company / creative agency website
+Recreation of ColorLib "Bbs" — a small company / creative agency website
 template. Recreated as a single-page React application.
 
 - **ColorLib source:** https://colorlib.com/wp/template/bbs/

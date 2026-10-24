@@ -1,6 +1,6 @@
 ---
 name: Structura
-description: Architecture & interior design studio landing page — recreation of ColorLib Archirio
+description: Architecture & interior design studio landing page — recreation of ColorLib "Archirio"
 source: https://colorlib.com/wp/template/archirio/
 preview: https://preview.colorlib.com/theme/archirio/
 ---

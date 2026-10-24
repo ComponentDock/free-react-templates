@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Business / Corporate template with hero banner, about, services, parallax banner, team and skills sections. Recreation of ColorLib **BizPro** template as a business and corporate landing page.
+A Business / Corporate template with hero banner, about, services, parallax banner, team and skills sections. Recreation of ColorLib "BizPro" template as a business and corporate landing page.
 
 - **Source slug:** `bizpro`
 - **Preview URL:** https://preview.colorlib.com/theme/bizpro/

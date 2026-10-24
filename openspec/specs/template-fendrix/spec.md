@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Buri** template — a premium fine-dining restaurant
+Recreation of the ColorLib "Buri" template — a premium fine-dining restaurant
 website with a moody, sophisticated aesthetic.
 
 - **Source**: https://colorlib.com/wp/template/buri/

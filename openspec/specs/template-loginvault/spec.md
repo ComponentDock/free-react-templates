@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V5** as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
+Recreation of ColorLib "Login Form V5" as a React 19 + Vite + Tailwind CSS 4 + TypeScript template.
 
 - **Source:** https://colorlib.com/wp/template/login-form-v5/
 - **Preview URL:** https://preview.colorlib.com/theme/login-form-v5/ (404 at prep time — unreachable; design tokens extracted from downloaded screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below)

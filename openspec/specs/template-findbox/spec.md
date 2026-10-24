@@ -4,7 +4,7 @@ Recreation of ColorLib Search Form Bar 11 (https://colorlib.com/wp/template/sear
 
 ## Purpose
 
-Findbox is a search form bar component with a navbar and footer. It recreates the ColorLib **Search Form Bar 11** design (https://colorlib.com/wp/template/search-form-bar-11/, preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-11/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Findbox is a search form bar component with a navbar and footer. It recreates the ColorLib "Search Form Bar 11" design (https://colorlib.com/wp/template/search-form-bar-11/, preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-11/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Overview
 

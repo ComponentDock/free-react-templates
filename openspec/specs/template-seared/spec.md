@@ -9,6 +9,7 @@ A Restaurant / Fine Dining template with buttons & shapes and site header and na
 - **Screenshot:** ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/diner-free-template.jpg)
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Restaurant / Fine Dining — single-page restaurant site with hero banner, features/services row, specialties carousel, testimonial carousel, tabbed menu, chef profiles, menu pricing accordion, events section, and footer.
+- **Source design:** ColorLib "Diner" — https://colorlib.com/wp/template/diner/
 
 ## Design Tokens (extracted from preview stylesheet)
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Sidelane is a sidebar navigation layout with a sidebar, topbar and main content. It recreates the ColorLib **Bootstrap Sidebar 05** design (https://colorlib.com/wp/template/bootstrap-sidebar-05/, preview: https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
+Sidelane is a sidebar navigation layout with a sidebar, topbar and main content. It recreates the ColorLib "Bootstrap Sidebar 05" design (https://colorlib.com/wp/template/bootstrap-sidebar-05/, preview: https://colorlib.com/etc/bootstrap-sidebar/sidebar-05/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template. ⚠️ Prep note: this slug's demo is NOT on the slug-only preview path — the live preview URL above is the authoritative one.
 
 ## Overview
 

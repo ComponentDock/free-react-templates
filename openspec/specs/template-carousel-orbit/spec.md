@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Carousel V12 (`https://colorlib.com/wp/template/carousel-12/`), preview URL: `https://preview.colorlib.com/theme/carousel-12/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Carousel V12" (`https://colorlib.com/wp/template/carousel-12/`), preview URL: `https://preview.colorlib.com/theme/carousel-12/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens
 

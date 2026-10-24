@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- **Source Template**: ColorLib Pato (`https://colorlib.com/wp/template/pato/`)
+- **Source Template**: ColorLib "Pato" (`https://colorlib.com/wp/template/pato/`)
 - **Preview URL**: `https://preview.colorlib.com/theme/pato/`
 - **New Name**: `tavola` (App path: `apps/tavola`)
 - **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React

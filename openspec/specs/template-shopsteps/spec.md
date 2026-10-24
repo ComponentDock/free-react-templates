@@ -15,6 +15,7 @@ and cart totals steps.
 - **Preview (live):** https://colorlib.com/etc/bwiz/colorlib-wizard-8/index.html (ColorLib listing page: https://colorlib.com/wp/template/colorlib-wizard-8/)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Category:** Form Wizard / Multi-Step Checkout
+- **Source design:** ColorLib "Colorlib Wizard 8" — https://colorlib.com/wp/template/colorlib-wizard-8/
 
 ## Design Tokens (extracted from preview CSS)
 

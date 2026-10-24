@@ -1,6 +1,6 @@
 # Template: Pressbox (Magazine)
 
-Recreation of ColorLib **Magnews** — https://colorlib.com/wp/template/magnews/
+Recreation of ColorLib "Magnews" — https://colorlib.com/wp/template/magnews/
 
 ## Purpose
 

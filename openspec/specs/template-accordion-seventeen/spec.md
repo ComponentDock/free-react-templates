@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib **Bootstrap Accordion V17** (`https://colorlib.com/wp/template/accordion-17/`), previewed at `https://preview.colorlib.com/theme/bac/accordion-17/`. Built as a modern, responsive React 19 + Tailwind CSS 4 widget component showcasing collapsible accordion items with plus/minus toggles, clean typography (Roboto), and themed accent styling (`#72c02c`).
+- **Source design:** ColorLib "Accordion 17" — https://colorlib.com/wp/template/accordion-17/
 
 ## Design Tokens & Styling
 

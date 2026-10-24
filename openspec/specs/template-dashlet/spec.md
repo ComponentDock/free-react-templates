@@ -5,6 +5,7 @@ Recreation of ColorLib Sidebar V05 (https://colorlib.com/wp/template/colorlib-si
 ## Purpose
 
 A left-sidebar navigation template with a content grid. The sidebar contains branding, navigation links, and a "Featured Users" section with avatar cards. The main content area shows article cards in a 2-column grid.
+- **Source design:** ColorLib "Colorlib Sidebar V05" — https://colorlib.com/wp/template/colorlib-sidebar-v05/
 
 ## Design tokens
 

@@ -9,6 +9,7 @@ A business/consulting website with a gradient-orange accent, clean corporate aes
 - **Preview URL:** https://preview.colorlib.com/theme/bizcon/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bizcon-free-template.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Bizcon" — https://colorlib.com/wp/template/bizcon/
 
 ## Design Tokens
 

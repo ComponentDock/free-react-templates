@@ -8,6 +8,7 @@ A legal and investigation services template with hero, practice areas, consultan
 - **App Directory:** `apps/lawguard`
 - **Package Name:** `@free-react-templates/lawguard`
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript (strict), Lucide React icons.
+- **Source design:** ColorLib "Solicitor" — https://colorlib.com/wp/template/solicitor/
 
 ## Design Tokens (Extracted from Solicitor)
 

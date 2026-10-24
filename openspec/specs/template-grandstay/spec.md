@@ -9,6 +9,7 @@ A Hotel & Hospitality template with hero, room availability, about, guestbook, i
 - **Screenshot:** `![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hotel-free-template.jpg)`
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **New name:** `grandstay` (apps/grandstay, @free-react-templates/grandstay)
+- **Source design:** ColorLib "Hotel" — https://colorlib.com/wp/template/hotel/
 
 ## Design Tokens (extracted from preview CSS)
 

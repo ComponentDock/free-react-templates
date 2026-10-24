@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Robust** — a fitness/gym template with dark overlays, motivational hero sliders, and a comprehensive class schedule system.
+Recreation of ColorLib "Robust" — a fitness/gym template with dark overlays, motivational hero sliders, and a comprehensive class schedule system.
 
 - **Source slug:** `robust`
 - **Source URL:** https://colorlib.com/wp/template/robust/

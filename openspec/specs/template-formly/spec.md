@@ -17,6 +17,7 @@ An Event Registration Form template with name field, company field, email field,
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Regform 5" — https://colorlib.com/wp/template/colorlib-regform-5/
 
 ## Design Tokens (extracted from screenshot)
 

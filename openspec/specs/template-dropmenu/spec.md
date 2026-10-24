@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dropdown 18** — a profile dropdown snippet for membership
+Recreation of ColorLib "Dropdown 18" — a profile dropdown snippet for membership
 sites and social networks, featuring a circular avatar, name/location, and a
 dropdown menu with icon-labeled items and badges.
 Preview: https://preview.colorlib.com/theme/bootstrap/dropdown-18/

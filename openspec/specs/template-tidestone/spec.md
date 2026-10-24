@@ -1,6 +1,6 @@
 # Template: Tidestone (Luxury Hotel / Residence)
 
-Recreation of ColorLib Seapalace (https://colorlib.com/wp/template/seapalace/)
+Recreation of ColorLib "Seapalace" (https://colorlib.com/wp/template/seapalace/)
 
 ## Purpose
 

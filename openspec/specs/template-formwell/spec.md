@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A single-page contact form with a full-page Google Maps background, a centered white card with a banner image. It also includes and underline-style form inputs with a green submit button. Recreation of ColorLib **Contact Form V15**.
+A single-page contact form with a full-page Google Maps background, a centered white card with a banner image. It also includes and underline-style form inputs with a green submit button. Recreation of ColorLib "Contact Form V15".
 
 - **Source slug:** `contact-form-v15`
 - **Source URL:** https://colorlib.com/wp/template/contact-form-v15/

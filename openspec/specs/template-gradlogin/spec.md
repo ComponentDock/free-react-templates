@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Login Form V17 as Gradlogin — a split-screen sign-in form template with a pink-to-red gradient decorative panel, Lato font, Facebook/Twitter social icons, and "Welcome to login / Sign Up" CTA on the decorative side.
+Recreation of ColorLib "Login Form V17" as Gradlogin — a split-screen sign-in form template with a pink-to-red gradient decorative panel, Lato font, Facebook/Twitter social icons, and "Welcome to login / Sign Up" CTA on the decorative side.
 
 - Source: https://colorlib.com/wp/template/login-form-17/
 - Preview: https://preview.colorlib.com/theme/bootstrap/login-form-17/

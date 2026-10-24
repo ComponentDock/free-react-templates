@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **The Lawyer** template as a single-page React application.
+Recreation of ColorLib "The Lawyer" template as a single-page React application.
 - Source: [colorlib.com/wp/template/thelawyer/](https://colorlib.com/wp/template/thelawyer/)
 - Preview: [preview.colorlib.com/theme/thelawyer/](https://preview.colorlib.com/theme/thelawyer/)
 - Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

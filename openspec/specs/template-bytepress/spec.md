@@ -1,6 +1,6 @@
 # Template: BytePress (Magazine)
 
-Recreation of ColorLib **Techmag** (https://colorlib.com/wp/template/techmag/)
+Recreation of ColorLib "Techmag" (https://colorlib.com/wp/template/techmag/)
 
 ## Purpose
 

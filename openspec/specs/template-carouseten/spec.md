@@ -7,6 +7,7 @@ A Carousel Showcase template with hero banner & overview, interactive thumbnail,
 - **Preview URL:** https://preview.colorlib.com/theme/carousel-10/
 - **Original Source Slug:** `carousel-10`
 - **Stack:** Vite, React 19, Tailwind CSS 4, Lucide React, Vitest + Testing Library (100% coverage).
+- **Source design:** ColorLib "Carousel 10" — https://colorlib.com/wp/template/carousel-10/
 
 ## Design Tokens
 

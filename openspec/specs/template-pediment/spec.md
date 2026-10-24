@@ -8,6 +8,7 @@ Live preview: `https://preview.colorlib.com/theme/staging/`.
 Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/staging-free-template.jpg`.
 
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict).
+- **Source design:** ColorLib "Staging" — https://colorlib.com/wp/template/staging/
 
 ## Design tokens
 

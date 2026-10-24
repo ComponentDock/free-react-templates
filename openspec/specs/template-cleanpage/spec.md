@@ -9,6 +9,7 @@ A Business Consulting template with hero section, about section, services grid, 
 - Preview URL: https://preview.colorlib.com/theme/whitespace/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/whitespace-free-template.jpg
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Whitespace" — https://colorlib.com/wp/template/whitespace/
 
 ## Design Tokens
 

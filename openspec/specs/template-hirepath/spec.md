@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Careers** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of the ColorLib "Careers" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source slug**: `careers`
 - **ColorLib page**: https://colorlib.com/wp/template/careers/

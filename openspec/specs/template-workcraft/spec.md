@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Work** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
+Recreation of the ColorLib "Work" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page app.
 
 - **Source**: [ColorLib Work](https://colorlib.com/wp/template/work/)
 - **Preview URL**: https://preview.colorlib.com/theme/work/

@@ -17,6 +17,7 @@ Recreation of ColorLib's **Calvin** personal portfolio template.
 A single-page personal portfolio for a digital product designer, featuring a
 split hero with portrait, about info bar, services grid, portfolio gallery,
 skill bars, brand carousel, testimonials, blog, dark CTA, and footer.
+- **Source design:** ColorLib "Calvin" — https://colorlib.com/wp/template/calvin/
 
 ## Design tokens
 

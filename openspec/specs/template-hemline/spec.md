@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fashi** — a fashion e-commerce single-page template.
+Recreation of ColorLib "Fashi" — a fashion e-commerce single-page template.
 
 - **Source:** https://colorlib.com/wp/template/fashi/
 - **Preview:** https://preview.colorlib.com/theme/fashi/

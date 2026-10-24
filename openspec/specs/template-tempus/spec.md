@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Calendar 03 (`https://colorlib.com/wp/template/calendar-03/`), renamed to **Tempus**, built as a responsive React 19 + Tailwind CSS 4 template for calendar scheduling, event management, and upcoming schedule organization.
+- **Source design:** ColorLib "Calendar 03" — https://colorlib.com/wp/template/calendar-03/
 
 ## Design Tokens (Extracted from Reference & Visual Inspection)
 

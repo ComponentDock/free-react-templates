@@ -9,6 +9,7 @@
 
 Recreation of ColorLib [Pato](https://colorlib.com/wp/template/pato/) template (`https://colorlib.com/wp/template/pato/`), preview URL: `https://preview.colorlib.com/theme/pato/`.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide icons, Vitest.
+- **Source design:** ColorLib "Pato" — https://colorlib.com/wp/template/pato/
 
 ## Design tokens
 

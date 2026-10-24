@@ -19,6 +19,7 @@ Recreation of [ColorLib Reg Form V1](https://colorlib.com/wp/template/colorlib-r
 <!-- unreachable-reprobe:end -->
 
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript · Vitest + Testing Library
+- **Source design:** ColorLib "Colorlib Regform 1" — https://colorlib.com/wp/template/colorlib-regform-1/
 
 ## Source
 

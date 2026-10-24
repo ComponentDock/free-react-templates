@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreate the ColorLib **Gutim** design (https://colorlib.com/wp/template/gutim/) as a React 19 + Tailwind CSS 4 + TypeScript single-page template under the name "FitZone". The template serves as a free, production-ready fitness and gym website with hero, about, services, classes, banner, membership pricing, registration, blog, and footer sections.
+Recreate the ColorLib "Gutim" design (https://colorlib.com/wp/template/gutim/) as a React 19 + Tailwind CSS 4 + TypeScript single-page template under the name "FitZone". The template serves as a free, production-ready fitness and gym website with hero, about, services, classes, banner, membership pricing, registration, blog, and footer sections.
 
 **Preview:** https://preview.colorlib.com/theme/gutim/
 **Source slug:** gutim

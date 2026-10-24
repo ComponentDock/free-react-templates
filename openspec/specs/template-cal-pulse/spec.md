@@ -10,6 +10,7 @@
 Recreation of ColorLib Calendar 11 (`https://colorlib.com/wp/template/calendar-11/`).
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
 Preview URL (source): `https://colorlib.com/wp/template/calendar-11/`
+- **Source design:** ColorLib "Calendar 11" — https://colorlib.com/wp/template/calendar-11/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Buri — a free restaurant/food HTML5 Bootstrap template
+Recreation of ColorLib "Buri" — a free restaurant/food HTML5 Bootstrap template
 with a full-width hero banner, about section, food menu grid, video background,
 testimonials carousel, contact info, and a dark footer. The original is a
 jQuery-based Bootstrap template for restaurant websites.

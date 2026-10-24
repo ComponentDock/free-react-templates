@@ -9,6 +9,7 @@ A professional cleaning services website with a top contact bar, dark navbar wit
 - **Preview URL:** https://preview.colorlib.com/theme/cleaningcompany/ (note: slug on preview server is `cleaningcompany` without hyphen)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/cleaningcompany.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Cleaning Company" — https://colorlib.com/wp/template/cleaning-company/
 
 ## Design Tokens
 

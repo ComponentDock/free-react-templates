@@ -5,6 +5,7 @@ Recreation of ColorLib Reg Form V13 (https://colorlib.com/wp/template/colorlib-r
 ## Purpose
 
 A split-screen dinner event booking form with a warm peach background, dark form panel, floating labels, dropdown selectors, and a person-count radio group with an active pill indicator.
+- **Source design:** ColorLib "Colorlib Regform 13" — https://colorlib.com/wp/template/colorlib-regform-13/
 
 ## Design tokens
 

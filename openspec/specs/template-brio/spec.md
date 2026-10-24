@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Brio is a bright app landing page template recreating the ColorLib Typo design.
+Brio is a bright app landing page template recreating the ColorLib "Typo" design.
 It showcases a hero with warm gradient, feature sections, a dark offer area,
 process grid, newsletter subscription, and a full footer — all built with
 React 19, Tailwind CSS 4, and TypeScript.

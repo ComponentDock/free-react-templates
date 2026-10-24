@@ -10,6 +10,7 @@ onepage website template.
 - **Source screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/create-free-template.jpg
 - **New name:** `forgecraft`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript · Vitest
+- **Source design:** ColorLib "Create" — https://colorlib.com/wp/template/create/
 
 ## Design Tokens
 

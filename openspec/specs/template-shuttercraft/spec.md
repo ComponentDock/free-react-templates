@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Photography (`https://colorlib.com/wp/template/photography/`). A photographer portfolio/personal site featuring a hero carousel with full-bleed background images, about section with portrait + text, dark-themed masonry gallery, call-to-action banner, blog grid, split contact form with image, and a dark footer. Built with React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Photography" (`https://colorlib.com/wp/template/photography/`). A photographer portfolio/personal site featuring a hero carousel with full-bleed background images, about section with portrait + text, dark-themed masonry gallery, call-to-action banner, blog grid, split contact form with image, and a dark footer. Built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design tokens
 

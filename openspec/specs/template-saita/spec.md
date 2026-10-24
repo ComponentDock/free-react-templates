@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Saita** (`https://colorlib.com/wp/template/saita/`), a modern digital agency template featuring a bold teal-blue gradient hero, services grid, animated counters, portfolio gallery, team section, pricing tables, testimonials, and blog posts.
+Recreation of ColorLib "Saita" (`https://colorlib.com/wp/template/saita/`), a modern digital agency template featuring a bold teal-blue gradient hero, services grid, animated counters, portfolio gallery, team section, pricing tables, testimonials, and blog posts.
 
 - **Preview URL:** https://preview.colorlib.com/theme/saita/
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons.

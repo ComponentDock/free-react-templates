@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib Calendar 04 (https://colorlib.com/wp/template/calendar-04/). A modern interactive calendar and event schedule application featuring month navigation, event creation, date selection details panel, and responsive sidebar navigation.
+- **Source design:** ColorLib "Calendar 04" — https://colorlib.com/wp/template/calendar-04/
 
 ## Design tokens
 

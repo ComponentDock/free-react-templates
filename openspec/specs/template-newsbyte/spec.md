@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Magnews** template.
+Recreation of the ColorLib "Magnews" template.
 - **Source slug:** `magnews`
 - **Source URL:** https://colorlib.com/wp/template/magnews/
 - **Preview URL:** https://preview.colorlib.com/theme/magnews/

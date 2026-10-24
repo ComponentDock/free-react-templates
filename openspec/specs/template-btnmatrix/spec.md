@@ -5,6 +5,7 @@
 Recreation of ColorLib [Bootstrap Buttons 20](https://colorlib.com/wp/template/bootstrap-buttons-20/) (preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-20/`).
 Design category: UI Components & Buttons Showroom.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons (`lucide-react`).
+- **Source design:** ColorLib "Bootstrap Buttons 20" — https://colorlib.com/wp/template/bootstrap-buttons-20/
 
 ## Design tokens
 

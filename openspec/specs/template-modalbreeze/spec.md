@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Modal V18** — a free Bootstrap modal popup template
+Recreation of ColorLib "Modal V18" — a free Bootstrap modal popup template
 featuring a centered promotional modal with SVG illustration, heading, copy,
 and dual-action buttons.
 

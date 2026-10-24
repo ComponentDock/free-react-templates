@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A business template with hero, features, video, services section with split, newsletter subscription and contact form with split sections. Recreation of ColorLib **Blueline** template as a fullscreen business landing page.
+A business template with hero, features, video, services section with split, newsletter subscription and contact form with split sections. Recreation of ColorLib "Blueline" template as a fullscreen business landing page.
 
 - **Source slug:** `blueline`
 - **Preview URL:** https://preview.colorlib.com/theme/blueline/

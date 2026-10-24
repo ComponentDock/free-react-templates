@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Gym2** — a bold, dark-themed fitness/gym website template with a red accent palette.
+Recreation of ColorLib "Gym2" — a bold, dark-themed fitness/gym website template with a red accent palette.
 
 - **Source:** [colorlib.com/wp/template/gym2/](https://colorlib.com/wp/template/gym2/)
 - **Preview:** [preview.colorlib.com/theme/gym2/](https://preview.colorlib.com/theme/gym2/)

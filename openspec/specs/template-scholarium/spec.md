@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Unicat** — a multi-section e-learning / university
+Recreation of ColorLib "Unicat" — a multi-section e-learning / university
 landing template. The React version lives in `apps/scholarium`.
 
 - **ColorLib source**: https://colorlib.com/wp/template/unicat/

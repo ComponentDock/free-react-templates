@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V5** — an advanced single-page contact
+Recreation of ColorLib "Contact Form V5" — an advanced single-page contact
 form with validation states, a services dropdown, product-type radio buttons,
 a budget range slider, a message textarea, and a full-width pill-shaped submit
 button, all on a light gray background inside a centered white card.

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Pexcon** template
+Recreation of the ColorLib "Pexcon" template
 (https://colorlib.com/wp/template/pexcon/) as a single-page React
 application. Live preview analyzed:
 https://preview.colorlib.com/theme/pexcon/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Author** template
+Recreation of the ColorLib "Author" template
 (`https://colorlib.com/wp/template/author/`).
 
 **Live preview analyzed:** `https://preview.colorlib.com/theme/author/`

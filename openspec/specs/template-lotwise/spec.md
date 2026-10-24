@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Auction** (`https://colorlib.com/wp/template/auction/`), built as a modern auction marketplace landing page with product listings, "How It Works" steps, testimonials, and a registration CTA using React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Auction" (`https://colorlib.com/wp/template/auction/`), built as a modern auction marketplace landing page with product listings, "How It Works" steps, testimonials, and a registration CTA using React 19, Tailwind CSS 4, and TypeScript.
 
 - **Source Slug**: `auction`
 - **Preview URL**: `https://preview.colorlib.com/theme/auction/`

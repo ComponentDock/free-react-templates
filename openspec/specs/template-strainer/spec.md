@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect 12** ("Multiselect V12") as a standalone React component.
+Recreation of ColorLib "Multiselect 12" ("Multiselect V12") as a standalone React component.
 
 - **Source slug:** `multiselect-12`
 - **ColorLib URL:** https://colorlib.com/wp/template/multiselect-12/

@@ -13,6 +13,7 @@ Recreation of ColorLib's **Bootstrap Footer 15** — a green-themed footer with 
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-15/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 15" — https://colorlib.com/wp/template/bootstrap-footer-15/
 
 ## Design Tokens
 

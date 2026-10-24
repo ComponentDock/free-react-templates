@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A minimal, clean search bar snippet with a centered heading, white input, and mint-green search button on a light background. Recreation of ColorLib **Search Form/Bar V09**.
+A minimal, clean search bar snippet with a centered heading, white input, and mint-green search button on a light background. Recreation of ColorLib "Search Form/Bar V09".
 
 > Source: https://colorlib.com/wp/template/search-form-bar-09/
 > Preview: https://preview.colorlib.com/theme/bootstrap/search-form-bar-09/

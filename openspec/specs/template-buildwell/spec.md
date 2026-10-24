@@ -9,6 +9,7 @@ A Construction Company template with header navigation, hero, about, stats, port
 - **New name:** `buildwell`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Construction / Corporate
+- **Source design:** ColorLib "Celt" — https://colorlib.com/wp/template/celt/
 
 ## Design tokens
 

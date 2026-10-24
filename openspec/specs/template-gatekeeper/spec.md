@@ -7,6 +7,7 @@ A Login Form template with heading, icon circle, username input field, password 
 - **ColorLib source**: https://colorlib.com/wp/template/login-form-18/
 - **Live preview**: https://preview.colorlib.com/theme/bootstrap/login-form-18/
 - **Stack**: Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Login Form 18" — https://colorlib.com/wp/template/login-form-18/
 
 ## Design Tokens
 

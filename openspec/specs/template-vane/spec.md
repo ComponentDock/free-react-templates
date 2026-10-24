@@ -14,6 +14,7 @@ product designer & art director single-page site.
 - **ColorLib URL:** https://colorlib.com/wp/template/martin/
 - **Preview URL:** https://preview.colorlib.com/theme/martin/
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Martin" — https://colorlib.com/wp/template/martin/
 
 ## Design Tokens (extracted from preview CSS)
 

@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/bootstrap-buttons-06/`, preview: `https://preview.colorlib.com/theme/bootstrap-buttons-06/`). A clean, modern UI component showcase featuring an extensive palette of bootstrap-inspired button variants, size scales (Large, Medium, Small), solid color variations (Primary, Secondary, Success, Info, Warning, Danger, Light, Orange, Indigo, Pink, Deep Orange, Aqua, Dark, Black, Purple, Blue, Brown, Blue Gray, White), and full-width block buttons, built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Bootstrap Buttons 06" — https://colorlib.com/wp/template/bootstrap-buttons-06/
 
 ## Design Tokens
 

@@ -13,7 +13,7 @@ Roboto font family.
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Modal 09** — https://colorlib.com/wp/template/modal-09/
+- **Source**: ColorLib "Modal 09" — https://colorlib.com/wp/template/modal-09/
 - **Preview**: slug-only `https://preview.colorlib.com/theme/modal-09/` returns **HTTP 404**; the live demo is https://preview.colorlib.com/theme/bootstrap/modal-09/ — **HTTP 200** on 2026-10-23, title "Modal 09". Its `css/style.css` is byte-identical (sha256 `895ecf05eb789c21...`, 24,417 bytes) to `modal-09/css/style.css` in `https://preview.colorlib.com/downloads/free/modal-09.zip`.
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/modal-09.jpg
 - **Measured how**: hex-literal census of the live `css/style.css?v=322536ef` (24,417 bytes, archive-identical).

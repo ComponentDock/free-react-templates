@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Auction** template as a single-page React app.
+Recreation of ColorLib "Auction" template as a single-page React app.
 
 - **Source slug:** `auction`
 - **ColorLib page:** https://colorlib.com/wp/template/auction/

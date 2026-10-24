@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 15** (`https://colorlib.com/wp/template/carousel-15/`), an interactive carousel and slider showcase template featuring thumbnail navigation, smooth sliding transitions, caption overlays, and responsive layout.
+Recreation of ColorLib "Carousel 15" (`https://colorlib.com/wp/template/carousel-15/`), an interactive carousel and slider showcase template featuring thumbnail navigation, smooth sliding transitions, caption overlays, and responsive layout.
 
 - **New Name**: CarouselCraft (`apps/carouselcraft`)
 - **Source Slug**: `carousel-15`

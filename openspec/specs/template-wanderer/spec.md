@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Travelers** template.
+Recreation of ColorLib "Travelers" template.
 - **Source slug:** `travelers`
 - **ColorLib page:** https://colorlib.com/wp/template/travelers/
 - **Preview URL:** https://preview.colorlib.com/theme/travelers/

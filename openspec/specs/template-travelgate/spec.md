@@ -14,6 +14,7 @@ Recreation of ColorLib Search Form V17 — a multi-tab travel search form widget
 - **ColorLib page:** https://colorlib.com/wp/template/colorlib-search-17/
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **Category:** Search Form / Widget
+- **Source design:** ColorLib "Colorlib Search 17" — https://colorlib.com/wp/template/colorlib-search-17/
 
 ## Design Tokens
 

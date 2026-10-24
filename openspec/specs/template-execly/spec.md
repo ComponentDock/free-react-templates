@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Corporate Business template with header with sticky, hero banner, about section with features, services and portfolio gallery sections. Recreation of the ColorLib **Corporate** business template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+A Corporate Business template with header with sticky, hero banner, about section with features, services and portfolio gallery sections. Recreation of the ColorLib "Corporate" business template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/corporate/
 - **Preview:** https://preview.colorlib.com/theme/corporate/

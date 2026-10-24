@@ -8,6 +8,7 @@ A Registration Form template with full-page background, card container, card hea
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-31.jpg
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
 - **Description:** A simple registration form with a single white card centered on a teal full-page background. The card contains a heading, three icon-adorned input fields (Full Name, Email, Password), and a centered Register button.
+- **Source design:** ColorLib "Colorlib Regform 31" — https://colorlib.com/wp/template/colorlib-regform-31/
 
 ## Design Tokens
 

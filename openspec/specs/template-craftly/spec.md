@@ -16,6 +16,7 @@ Recreation of ColorLib's **Create** template as a React 19 + Vite + Tailwind CSS
 - **App name:** `craftly` (never reuse ColorLib source name "create")
 - **Package:** `@free-react-templates/craftly`
 - **Surge:** `craftly.free.componentdock.com`
+- **Source design:** ColorLib "Create" — https://colorlib.com/wp/template/create/
 
 ## Design Tokens (from preview CSS)
 

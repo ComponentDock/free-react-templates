@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 05** (`https://colorlib.com/wp/template/accordion-05/`, preview: `https://preview.colorlib.com/theme/bac/accordion-05/`), built as a modern React 19 + Tailwind CSS 4 + TypeScript interactive widget suite.
+Recreation of ColorLib "Accordion 05" (`https://colorlib.com/wp/template/accordion-05/`, preview: `https://preview.colorlib.com/theme/bac/accordion-05/`), built as a modern React 19 + Tailwind CSS 4 + TypeScript interactive widget suite.
 
 ## Design Tokens
 

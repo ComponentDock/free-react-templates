@@ -16,6 +16,7 @@ A left fixed sidebar with a profile section (avatar, name, role) and an
 accordion navigation menu. The main content area shows a 2-column grid of
 post entries (thumbnail + title + meta). The sidebar slides in/out via a
 burger toggle with smooth CSS transitions.
+- **Source design:** ColorLib "Colorlib Sidebar V08" — https://colorlib.com/wp/template/colorlib-sidebar-v08/
 
 ## Design Tokens
 

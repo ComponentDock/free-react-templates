@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Caviar** restaurant template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of the ColorLib "Caviar" restaurant template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/caviar/
 - **Preview:** https://preview.colorlib.com/theme/caviar/

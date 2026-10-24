@@ -8,6 +8,7 @@ A Registration Form template with form fields and form submission sections. Recr
 - **Preview URL:** https://colorlib.com/etc/regform/colorlib-regform-4/ (preview.colorlib.com returns 404; demo page + screenshot used as reference)
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-4.jpg
 - **Stack:** React 19, Vite (latest), Tailwind CSS 4, TypeScript (strict), Vitest + Testing Library
+- **Source design:** ColorLib "Colorlib Regform 4" — https://colorlib.com/wp/template/colorlib-regform-4/
 
 ## Design Tokens (extracted from demo CSS)
 

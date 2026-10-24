@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Calendar 12 (`https://colorlib.com/wp/template/calendar-12/`, preview URL: `https://preview.colorlib.com/theme/bootstrap/calendar-12/`), built with React 19, Tailwind CSS 4, and TypeScript. A clean, minimalist date picker widget application with centered layout and interactive calendar date selection.
+- **Source design:** ColorLib "Calendar 12" — https://colorlib.com/wp/template/calendar-12/
 
 ## Design Tokens
 

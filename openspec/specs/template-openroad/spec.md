@@ -15,6 +15,7 @@ about section, blog cards, and a multi-column dark footer.
 - **Source:** Autoroad — https://colorlib.com/wp/template/autoroad/
 - **Preview:** https://preview.colorlib.com/theme/autoroad/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Autoroad" — https://colorlib.com/wp/template/autoroad/
 
 ## Design Tokens (extracted from preview)
 

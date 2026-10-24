@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib BBS — a small company website template with a purple gradient hero, features grid, about section with tabs, video area, blog cards, story section, newsletter, and footer.
+Recreation of ColorLib "BBS" — a small company website template with a purple gradient hero, features grid, about section with tabs, video area, blog cards, story section, newsletter, and footer.
 
 - **Source:** https://colorlib.com/wp/template/bbs/
 - **Preview:** https://preview.colorlib.com/theme/bbs/

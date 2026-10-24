@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Steak** template.
+Recreation of ColorLib "Steak" template.
 Preview: https://preview.colorlib.com/theme/steak/
 Source: https://colorlib.com/wp/template/steak/
 Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript

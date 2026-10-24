@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Bitcoin — a free cryptocurrency website template with a
+Recreation of ColorLib "Bitcoin" — a free cryptocurrency website template with a
 dark-themed hero, currency converter, services, about section, pricing, blog,
 and footer. The original is a Bootstrap-based single-page template for crypto
 businesses.

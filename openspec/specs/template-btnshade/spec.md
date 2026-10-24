@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 11 (`https://colorlib.com/wp/template/bootstrap-buttons-11/`, preview: `https://preview.colorlib.com/theme/bootstrap-buttons-11/`). A comprehensive, clean Bootstrap 4 style button showcase featuring comprehensive sizes (large, medium, small), extensive color variants (Primary `#007bff`, Secondary `#6c757d`, Success `#28a745`, Info `#17a2b8`, Warning `#ffc107`, Danger `#dc3545`, Light `#f8f9fa`, Orange `#fd7e14`, Indigo `#6610f2`, Pink `#e83e8c`, Deep Orange `#ffac8e`, Aqua `#3fc5f0`, Dark `#393e46`, Black `#000000`, Purple `#6f42c1`, Blue `#007bff`, Brown `#a0855b`, Blue Gray `#3f4d71`), full-width buttons, and interactive copy/paste code snippets, built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Bootstrap Buttons 11" — https://colorlib.com/wp/template/bootstrap-buttons-11/
 
 ## Design tokens
 

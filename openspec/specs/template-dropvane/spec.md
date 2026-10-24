@@ -37,6 +37,7 @@ dropdown snippet that reveals a consultation form when the user clicks a
 font, olive-green accent (#94aa2a), and a white dropdown panel with shadow
 and arrow indicator. The form includes fields for full name, email address,
 subject, and message, plus a submit button.
+- **Source design:** ColorLib "Dropdown 10" — https://colorlib.com/wp/template/dropdown-10/
 
 ## Design tokens
 

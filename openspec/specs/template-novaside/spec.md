@@ -15,6 +15,7 @@ Recreation of ColorLib **Sidebar V03** (`colorlib-sidebar-v03`).
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Source slug:** `colorlib-sidebar-v03`
 - **New name:** `novaside`
+- **Source design:** ColorLib "Colorlib Sidebar V03" — https://colorlib.com/wp/template/colorlib-sidebar-v03/
 
 ## Design tokens (extracted from preview stylesheet)
 

@@ -5,6 +5,7 @@
 ## Purpose
 
 InboxLane is a two-column contact form template with a dark-themed map section. It provides a clean, professional way for visitors to send messages, with form validation and a responsive layout.
+- **Source design:** ColorLib "Contact Form 18" — https://colorlib.com/wp/template/contact-form-18/
 
 ## Design tokens
 

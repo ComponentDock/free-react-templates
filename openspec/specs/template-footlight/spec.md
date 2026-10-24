@@ -15,6 +15,7 @@ social icons, and a simple copyright bar.
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-09/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 09" — https://colorlib.com/wp/template/bootstrap-footer-09/
 
 ## Design Tokens
 

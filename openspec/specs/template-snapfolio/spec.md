@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Capture photography gallery template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of ColorLib "Capture" photography gallery template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source template:** Capture
 - **Source slug:** capture

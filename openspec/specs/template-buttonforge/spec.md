@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 16** (`https://colorlib.com/wp/template/bootstrap-buttons-16/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-16/`). A modern administrative stats and metric button component library dashboard built with React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Bootstrap Buttons 16" (`https://colorlib.com/wp/template/bootstrap-buttons-16/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-16/`). A modern administrative stats and metric button component library dashboard built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens
 

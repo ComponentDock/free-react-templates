@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Constructo** — a construction company landing page template.
+Recreation of ColorLib "Constructo" — a construction company landing page template.
 
 - **Source:** https://colorlib.com/wp/template/constructo/
 - **Preview:** https://preview.colorlib.com/theme/constructo/

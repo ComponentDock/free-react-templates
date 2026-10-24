@@ -16,6 +16,7 @@ The template displays a centered multi-step registration form over a full-page
 background image. A blue header reads "FORM WIZARD", followed by a 3-step
 progress indicator (circular numbered steps connected by lines), a form area
 with two-column input layouts per step, and Previous/Next action buttons.
+- **Source design:** ColorLib "Colorlib Wizard 30" — https://colorlib.com/wp/template/colorlib-wizard-30/
 
 ## Design Tokens
 

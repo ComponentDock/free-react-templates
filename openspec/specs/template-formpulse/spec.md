@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 19** — a minimalist centered contact card
+Recreation of ColorLib "Contact Form 19" — a minimalist centered contact card
 with underline-style inputs, a budget dropdown, and a red pill-shaped CTA button.
 
 - **Source slug:** `contact-form-19`

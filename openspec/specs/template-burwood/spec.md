@@ -13,6 +13,7 @@ Recreation of ColorLib's **Buri** template as a modern restaurant website.
 - **Preview:** https://preview.colorlib.com/theme/buri/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/buri-free-template.jpg
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Buri" — https://colorlib.com/wp/template/buri/
 
 ## Design tokens
 

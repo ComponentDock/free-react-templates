@@ -9,7 +9,7 @@
 
 Recreation of ColorLib's "Toothsy" template as a React 19 + Vite + Tailwind 4 + TypeScript dental clinic website.
 
-- **Source template:** [ColorLib Toothsy](https://colorlib.com/wp/template/toothsy/)
+- **Source template:** [ColorLib "Toothsy"](https://colorlib.com/wp/template/toothsy/)
 - **Preview URL:** https://preview.colorlib.com/theme/toothsy/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/toothsy-free-template.jpg
 - **Stack:** React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict)

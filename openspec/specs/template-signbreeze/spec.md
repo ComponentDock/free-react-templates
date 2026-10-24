@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form V06** — a split-screen login template with social media authentication options.
+Recreation of ColorLib "Login Form V06" — a split-screen login template with social media authentication options.
 
 - **ColorLib source:** `https://colorlib.com/wp/template/login-form-06/`
 - **Preview URL:** `https://preview.colorlib.com/theme/bootstrap/login-form-06/`

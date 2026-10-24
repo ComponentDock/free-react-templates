@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A centered signup form with pill-shaped inputs, golden accent, social login buttons, and "Sign In" link. Recreation of ColorLib **Signup Form 14**.
+A centered signup form with pill-shaped inputs, golden accent, social login buttons, and "Sign In" link. Recreation of ColorLib "Signup Form 14".
 
 - **Source:** [ColorLib Signup Form 14](https://colorlib.com/wp/template/signup-form-14/)
 - **Preview:** https://preview.colorlib.com/theme/bootstrap/signup-form-14/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Jellyfish UI Kit** — a Bootstrap-based UI component
+Recreation of ColorLib "Jellyfish UI Kit" — a Bootstrap-based UI component
 showcase with color swatches, cards, features, pricing, alerts, badges,
 buttons, carousel, dropdowns, and forms. This is NOT a single-purpose
 landing page; it demonstrates reusable UI components in a scrollable

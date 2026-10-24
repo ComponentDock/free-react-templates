@@ -5,7 +5,7 @@
 > Do not scaffold `apps/formmint`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-formzen/spec.md`.
 
-> Recreation of ColorLib **Contact Form V10**
+> Recreation of ColorLib "Contact Form V10"
 > (https://colorlib.com/wp/template/contact-form-v10/)
 > Preview: https://colorlib.com/etc/cf/ContactFrom_v10/index.html
 

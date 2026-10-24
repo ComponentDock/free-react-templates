@@ -5,6 +5,7 @@
 - Recreation of ColorLib Accordion 05 (`https://colorlib.com/wp/template/accordion-05/`, preview URL: `https://colorlib.com/preview/theme/accordion-05/`)
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict), Lucide icons.
 - Category: Dashboard / Interactive Accordion & Settings
+- **Source design:** ColorLib "Accordion 05" — https://colorlib.com/wp/template/accordion-05/
 
 ## Design Tokens
 

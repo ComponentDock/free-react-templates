@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate ColorLib Dizzi as a React 19 + Vite + Tailwind CSS 4 + TypeScript
+Recreate ColorLib "Dizzi" as a React 19 + Vite + Tailwind CSS 4 + TypeScript
 template named "Doflo". The original uses Open Sans font, green (#00d089) primary
 color, and dark (#1a1a2e) footer. No ColorLib assets are copied; images use
 picsum.photos placeholders, icons use lucide-react, and brand icons use inline SVGs.

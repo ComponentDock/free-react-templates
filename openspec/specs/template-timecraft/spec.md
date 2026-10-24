@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Watch** — a smartwatch/tech product landing page template.
+Recreation of ColorLib "Watch" — a smartwatch/tech product landing page template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/watch/
 - **Preview URL:** https://preview.colorlib.com/theme/watch/

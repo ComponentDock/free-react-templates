@@ -14,6 +14,7 @@ Recreation of ColorLib's **Topbuilder** template as a React 19 + Vite + Tailwind
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/topbuilder-construction-company-website-template.jpg
 - **Stack:** Vite (latest), React 19, Tailwind CSS 4, TypeScript (strict)
 - **Deploy target:** `https://buildmark.free.componentdock.com`
+- **Source design:** ColorLib "Topbuilder" — https://colorlib.com/wp/template/topbuilder/
 
 ## Design Tokens
 

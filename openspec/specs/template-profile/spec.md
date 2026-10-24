@@ -16,6 +16,7 @@ single-page application with multi-page navigation.
 - **New name:** `profile` (apps/profile, @free-react-templates/profile)
 - **Category:** Personal
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Schmidt" — https://colorlib.com/wp/template/schmidt/
 
 ## Design tokens (extracted from preview CSS)
 

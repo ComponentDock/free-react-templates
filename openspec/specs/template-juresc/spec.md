@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Lawfirm** template.
+Recreation of ColorLib "Lawfirm" template.
 - Source slug: `lawfirm`
 - Source URL: https://colorlib.com/wp/template/lawfirm/
 - Preview URL: https://preview.colorlib.com/theme/lawfirm/

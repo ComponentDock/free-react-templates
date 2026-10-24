@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V14** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "Contact Form V14" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source**: https://colorlib.com/wp/template/contact-form-v14/
 - **Preview URL**: https://preview.colorlib.com/theme/contact-form-v14/ (returned 404 at time of research — screenshot used as sole reference) — **re-probed 2026-10-23: the demo serves** (measured record below)

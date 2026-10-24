@@ -9,6 +9,7 @@ dropdown menu. A bell icon with a badge count triggers a dropdown panel listing
 notification items with avatars and text descriptions, some marked as unread.
 The design uses Bootstrap-style dropdown mechanics with smooth opacity/margin
 transitions.
+- **Source design:** ColorLib "Dropdown 15" — https://colorlib.com/wp/template/dropdown-15/
 
 ## Design Reference
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Carousel V03** (`https://colorlib.com/wp/template/carousel-03/`).
+- Recreation of ColorLib "Carousel V03" (`https://colorlib.com/wp/template/carousel-03/`).
 - Preview URL: `https://preview.colorlib.com/theme/carousel-03/` (Note: preview URL is unreachable/404 on ColorLib CDN; replicated faithfully from the ColorLib screenshot and standard Bootstrap carousel patterns).
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons, Tailwind Carousel / interactive slider.
 

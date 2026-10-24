@@ -9,6 +9,7 @@ A single-page photography portfolio template. Recreation of ColorLib's **Alime**
 - **Source page:** https://colorlib.com/wp/template/alime/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/alime-free-template.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Alime" — https://colorlib.com/wp/template/alime/
 
 ## Design tokens (extracted from preview CSS)
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Portfolio** template (`portfolio`) as a React 19 + Vite + Tailwind 4 + TypeScript single-page portfolio showcase.
+Recreation of the ColorLib "Portfolio" template (`portfolio`) as a React 19 + Vite + Tailwind 4 + TypeScript single-page portfolio showcase.
 
 - **Source:** https://colorlib.com/wp/template/portfolio/
 - **Preview:** https://preview.colorlib.com/theme/portfolio/

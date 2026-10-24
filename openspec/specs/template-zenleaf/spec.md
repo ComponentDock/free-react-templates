@@ -13,7 +13,7 @@ source: https://preview.colorlib.com/theme/yogabest/
 
 ## Purpose
 
-Recreation of ColorLib Yogabest (https://colorlib.com/wp/template/yogabest/) — a yoga studio landing page with hero, services, about with video, counters, classes, testimonials, schedule calendar, trainers, blog, and footer. The new name is "Zenleaf".
+Recreation of ColorLib "Yogabest" (https://colorlib.com/wp/template/yogabest/) — a yoga studio landing page with hero, services, about with video, counters, classes, testimonials, schedule calendar, trainers, blog, and footer. The new name is "Zenleaf".
 
 ### Design Tokens
 

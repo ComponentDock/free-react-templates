@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A standalone animated search form bar with a circular search icon button that expands the input on hover/focus. Recreation of ColorLib **Search Form Bar 06**.
+A standalone animated search form bar with a circular search icon button that expands the input on hover/focus. Recreation of ColorLib "Search Form Bar 06".
 
 > Source: https://colorlib.com/wp/template/search-form-bar-06/
 > Preview: https://preview.colorlib.com/theme/search-form-bar-06/

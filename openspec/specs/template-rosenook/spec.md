@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Footer 13** (`bootstrap-footer-13`), a feminine multi-column footer template targeting fashion/lifestyle sites. Light pink background (#f8f1f1), salmon/coral accent (#f17e7e), three link columns (Men, Women, Kids), social icons as 40x40 circles, newsletter subscription form, and copyright bar.
+Recreation of ColorLib "Bootstrap Footer 13" (`bootstrap-footer-13`), a feminine multi-column footer template targeting fashion/lifestyle sites. Light pink background (#f8f1f1), salmon/coral accent (#f17e7e), three link columns (Men, Women, Kids), social icons as 40x40 circles, newsletter subscription form, and copyright bar.
 
 - **Source:** Bootstrap Footer 13 — https://colorlib.com/wp/template/bootstrap-footer-13/
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-13/

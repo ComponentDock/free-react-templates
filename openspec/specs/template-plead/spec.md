@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Plead is a lawyer and legal firm website template. It recreates the ColorLib Justice design (https://colorlib.com/wp/template/justice/) with a dark professional aesthetic, Rubik font, and tan/gold accent (#b49c73). Sections: navbar, hero, practice areas, statistics counters, testimonials carousel, expertise cards, CTA banner, and footer.
+Plead is a lawyer and legal firm website template. It recreates the ColorLib "Justice" design (https://colorlib.com/wp/template/justice/) with a dark professional aesthetic, Rubik font, and tan/gold accent (#b49c73). Sections: navbar, hero, practice areas, statistics counters, testimonials carousel, expertise cards, CTA banner, and footer.
 
 - **Source**: https://colorlib.com/wp/template/justice/
 - **Preview**: https://preview.colorlib.com/theme/justice/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Healthcare** — a medical/healthcare website template with top bar, navbar, hero image slider, services bar, about section with accordion FAQ, feature grid, doctor team cards, testimonials, blog entries, and footer with appointment form.
+Recreation of ColorLib "Healthcare" — a medical/healthcare website template with top bar, navbar, hero image slider, services bar, about section with accordion FAQ, feature grid, doctor team cards, testimonials, blog entries, and footer with appointment form.
 
 - **Source slug:** `healthcare`
 - **Preview URL:** https://preview.colorlib.com/theme/healthcare/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Eatery** restaurant template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of the ColorLib "Eatery" restaurant template as a modern React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source**: [ColorLib Eatery](https://colorlib.com/wp/template/eatery/)
 - **Preview**: https://preview.colorlib.com/theme/eatery/

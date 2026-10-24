@@ -7,6 +7,7 @@ Recreation of ColorLib `toothcare` (`https://preview.colorlib.com/theme/toothcar
 - **New Name**: BrightMolar (`brightmolar`)
 - **Category**: Healthcare / Dental Clinic / Medical
 - **Stack**: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide Icons.
+- **Source design:** ColorLib "Toothcare" — https://colorlib.com/wp/template/toothcare/
 
 ## Design Tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Services** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+Recreation of the ColorLib "Services" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 - Source slug: `services`
 - Preview URL: https://preview.colorlib.com/theme/services/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/services-free-template.jpg

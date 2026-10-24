@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 07** (`carousel-07`), a modern interactive carousel and slide showcase website template.
+Recreation of ColorLib "Carousel 07" (`carousel-07`), a modern interactive carousel and slide showcase website template.
 
 - **Source Slug**: `carousel-07`
 - **Preview URL**: `https://preview.colorlib.com/theme/carousel-07/` _(Note: Preview URL returned 404; designed using architectural recovery and screenshot fallback)._

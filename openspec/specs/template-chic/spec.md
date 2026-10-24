@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Malefashion** — a men's fashion e-commerce template with hero slider, promotional banners, product grid, categories, Instagram feed, and blog/latest trends section.
+Recreation of ColorLib "Malefashion" — a men's fashion e-commerce template with hero slider, promotional banners, product grid, categories, Instagram feed, and blog/latest trends section.
 
 - **ColorLib source:** [Malefashion](https://colorlib.com/wp/template/malefashion/)
 - **Preview URL:** https://preview.colorlib.com/theme/malefashion/

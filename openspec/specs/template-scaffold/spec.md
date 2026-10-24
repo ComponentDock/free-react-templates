@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Construct** — a construction company website template with hero slider, services showcase, project gallery, blog, and testimonials.
+Recreation of ColorLib "Construct" — a construction company website template with hero slider, services showcase, project gallery, blog, and testimonials.
 
 - **Source slug:** `construct`
 - **Preview URL:** https://preview.colorlib.com/theme/construct/

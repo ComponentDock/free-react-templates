@@ -14,6 +14,7 @@ Recreation of ColorLib's **Onedu** template as a React single-page application.
 - **Preview URL:** https://preview.colorlib.com/theme/onedu/
 - **New name:** EduNova (apps/edunova)
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Onedu" — https://colorlib.com/wp/template/onedu/
 
 ## Design Tokens
 

@@ -16,6 +16,7 @@ left; a hamburger toggle sits on the right edge.
 - **Source:** https://colorlib.com/wp/template/colorlib-sidebar-v05/
 - **Preview:** https://preview.colorlib.com/theme/sidebar/colorlib-sidebar-v05/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Sidebar V05" — https://colorlib.com/wp/template/colorlib-sidebar-v05/
 
 ## Design tokens (from live preview CSS + screenshot analysis)
 

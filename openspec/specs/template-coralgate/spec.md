@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Login Form 17** (source slug: `login-form-17`).
+Recreation of ColorLib "Login Form 17" (source slug: `login-form-17`).
 Preview URL: `https://preview.colorlib.com/theme/login-form-17/` (unreachable at prep time — 404).
 Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/login-form-17-2.jpg` (primary reference).
 

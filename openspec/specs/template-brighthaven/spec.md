@@ -14,6 +14,7 @@ Recreation of ColorLib's **Genius** template as a React 19 + Vite + Tailwind 4 +
 - **Live preview:** https://preview.colorlib.com/theme/genius/
 - **New app name:** `brighthaven`
 - **Package:** `@free-react-templates/brighthaven`
+- **Source design:** ColorLib "Genius" — https://colorlib.com/wp/template/genius/
 
 ## Design tokens
 

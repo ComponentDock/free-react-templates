@@ -5,6 +5,7 @@
 Recreation of ColorLib Regform 14 (https://colorlib.com/wp/template/colorlib-regform-14/).
 A centered registration form on a light blue background with gender toggle buttons,
 collapsible additional info section, and clean uppercase labels.
+- **Source design:** ColorLib "Colorlib Regform 14" — https://colorlib.com/wp/template/colorlib-regform-14/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Inward** church website template.
+Recreation of the ColorLib "Inward" church website template.
 - Source: https://colorlib.com/wp/template/inward/
 - Preview: https://preview.colorlib.com/theme/inward/
 - Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Spinwheel is a single-page template built around a testimonial carousel. It recreates the ColorLib **Carousel 17** design (https://colorlib.com/wp/template/carousel-17/).
+Spinwheel is a single-page template built around a testimonial carousel. It recreates the ColorLib "Carousel 17" design (https://colorlib.com/wp/template/carousel-17/).
 
 ## Design tokens
 

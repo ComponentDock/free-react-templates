@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Startupbusiness** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page business website.
+Recreation of ColorLib "Startupbusiness" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page business website.
 
 - **ColorLib source:** https://colorlib.com/wp/template/startupbusiness/
 - **Preview URL:** https://preview.colorlib.com/theme/startupbusiness/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel V12** (`https://colorlib.com/wp/template/carousel-12/`), a product list and item showcase carousel template built with React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Carousel V12" (`https://colorlib.com/wp/template/carousel-12/`), a product list and item showcase carousel template built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design tokens
 

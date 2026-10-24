@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An Interactive Accordion Showcase & FAQ template with interactive accordion and footer brand sections. Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accordion-11/`), preview URL: `https://preview.colorlib.com/theme/bac/accordion-11/`.
+An Interactive Accordion Showcase & FAQ template with interactive accordion and footer brand sections. Recreation of ColorLib "Accordion 11" (`https://colorlib.com/wp/template/accordion-11/`), preview URL: `https://preview.colorlib.com/theme/bac/accordion-11/`.
 
 Design category: UI Component Showcase & FAQ / Interactive Accordion.
 New app name: `ripples` (`@free-react-templates/ripples`).

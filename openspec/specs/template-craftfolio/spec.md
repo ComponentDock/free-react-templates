@@ -10,6 +10,7 @@ A Portfolio / Personal template with hero / banner carousel, portfolio / work an
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Package:** `@free-react-templates/craftfolio`
 - **Deploy target:** `craftfolio.free.componentdock.com`
+- **Source design:** ColorLib "Steve" — https://colorlib.com/wp/template/steve/
 
 ## Design tokens (from preview CSS)
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Autoroad** — a car rental website template.
+Recreation of ColorLib "Autoroad" — a car rental website template.
 - **Source:** https://colorlib.com/wp/template/autoroad/
 - **Preview:** https://preview.colorlib.com/theme/autoroad/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript

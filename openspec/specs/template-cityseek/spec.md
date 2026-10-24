@@ -22,6 +22,7 @@ Preview URL: `https://preview.colorlib.com/theme/colorlib-search-1/` (unreachabl
 **Category**: Search Form & Bar Templates
 **Stack**: Vite · React 19 · Tailwind CSS 4 · TypeScript
 **Description**: A free city search template for directory, listing, or travel-related websites. Features a full-viewport hero with a cityscape background image, a large white heading, and a semi-transparent dark search bar with two input fields and a blue Search button.
+- **Source design:** ColorLib "Colorlib Search 1" — https://colorlib.com/wp/template/colorlib-search-1/
 
 ## Design Tokens
 

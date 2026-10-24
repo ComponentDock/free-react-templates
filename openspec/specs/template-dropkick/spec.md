@@ -30,6 +30,7 @@ Recreate the ColorLib Dropdown 09 template as "Dropkick" — a responsive dropdo
 that reveals an image and descriptive text when the user clicks a "View Details" button.
 The design uses a clean light background, Roboto font, sky-blue accent button, and a
 white dropdown panel with shadow and arrow indicator.
+- **Source design:** ColorLib "Dropdown 09" — https://colorlib.com/wp/template/dropdown-09/
 
 ## Design tokens
 

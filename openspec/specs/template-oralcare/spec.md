@@ -18,7 +18,7 @@ Oralcare is a professional React 19 + Tailwind CSS 4 dental clinic template recr
 
 ## Design Tokens
 
-Derived from ColorLib Toothcare stylesheet (`/css/style.css`):
+Derived from ColorLib "Toothcare" stylesheet (`/css/style.css`):
 
 - **Primary Brand Color**: Cyan / Teal `#00bcd4` (hover `#0b5ed7`, gradient `#00bcd4` to `#65c4cf`)
 - **Secondary / Dark Color**: `#111111` / `#212529` (Dark text and neutral blocks)

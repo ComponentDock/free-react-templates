@@ -4,7 +4,7 @@ Recreation of ColorLib [Leramiz](https://colorlib.com/wp/template/leramiz/).
 
 ## Purpose
 
-Propwell is a real estate landing page with a header bar, hero, filter bar, recent properties, services, featured listings and looking property. It recreates the ColorLib **Leramiz** design (https://colorlib.com/wp/template/leramiz/, preview: https://preview.colorlib.com/theme/leramiz/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Propwell is a real estate landing page with a header bar, hero, filter bar, recent properties, services, featured listings and looking property. It recreates the ColorLib "Leramiz" design (https://colorlib.com/wp/template/leramiz/, preview: https://preview.colorlib.com/theme/leramiz/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Design tokens (from CSS analysis)
 

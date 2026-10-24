@@ -4,7 +4,7 @@
 
 Recreation of ColorLib's "Deluxe" hotel template as a React 19 + Vite + Tailwind 4 + TypeScript template. The Opulux template provides a luxury hotel/resort website with booking functionality, room showcases, testimonials, and Instagram feed sections.
 
-- **Source:** [ColorLib Deluxe](https://colorlib.com/wp/template/deluxe/)
+- **Source:** [ColorLib "Deluxe"](https://colorlib.com/wp/template/deluxe/)
 - **Preview:** https://preview.colorlib.com/theme/deluxe/
 - **New name:** Opulux
 - **App folder:** `apps/opulux`

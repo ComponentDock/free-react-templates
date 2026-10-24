@@ -5,6 +5,7 @@ Recreation of ColorLib Search 8 (https://colorlib.com/wp/template/colorlib-searc
 ## Purpose
 
 Seekstream provides a full-viewport advanced search form with keyword input and six category filter dropdowns, styled with a split white/dark card over a gray background. Users SHALL be able to type keywords, filter by category, view result counts, and trigger search/reset actions.
+- **Source design:** ColorLib "Colorlib Search 8" — https://colorlib.com/wp/template/colorlib-search-8/
 
 ## Design tokens
 

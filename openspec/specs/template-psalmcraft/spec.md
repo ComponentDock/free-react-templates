@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Libchurch** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "Libchurch" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 - **Source:** https://colorlib.com/wp/template/libchurch/
 - **Preview:** https://preview.colorlib.com/theme/libchurch/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/libchurch-free-template.jpg

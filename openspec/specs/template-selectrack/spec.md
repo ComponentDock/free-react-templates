@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect 10** — a free Bootstrap multiselect
+Recreation of ColorLib "Multiselect 10" — a free Bootstrap multiselect
 dropdown with live search. The original is a single-section form component
 demo, not a full website template. We recreate it as a standalone React
 component page.

@@ -19,6 +19,7 @@ Recreation of ColorLib's **BrotherlyLove** church template.
 Church/community website with a hero overlay, sermon announcement bar,
 welcome section with video, three-column features, services carousel,
 sermons + events grid, testimonials, and a multi-column footer.
+- **Source design:** ColorLib "Brotherlylove" — https://colorlib.com/wp/template/brotherlylove/
 
 ## Design tokens
 

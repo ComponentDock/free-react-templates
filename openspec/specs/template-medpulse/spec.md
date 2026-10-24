@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Medex** template as a single-page React 19 + Vite + Tailwind CSS 4 + TypeScript app.
+Recreation of the ColorLib "Medex" template as a single-page React 19 + Vite + Tailwind CSS 4 + TypeScript app.
 
 - **Source:** https://colorlib.com/wp/template/medex/
 - **Preview:** https://preview.colorlib.com/theme/medex/

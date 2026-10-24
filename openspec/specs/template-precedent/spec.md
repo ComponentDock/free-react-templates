@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Lawfirm 2** (https://colorlib.com/wp/template/lawfirm-2/) as a professional law firm landing page. Preview URL was unreachable (404); design tokens extracted from screenshot + ColorLib listing page.
+Recreation of ColorLib "Lawfirm 2" (https://colorlib.com/wp/template/lawfirm-2/) as a professional law firm landing page. Preview URL was unreachable (404); design tokens extracted from screenshot + ColorLib listing page.
 
 **New name:** Precedent  
 **Original:** ColorLib Lawfirm 2  

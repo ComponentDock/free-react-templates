@@ -3,7 +3,7 @@
 ## Purpose
 
 Veloce is a free automotive service landing page template that recreates the
-ColorLib Automotive design (https://colorlib.com/wp/template/automotive/) under
+ColorLib "Automotive" design (https://colorlib.com/wp/template/automotive/) under
 a new name. It provides a professional auto garage landing page with hero,
 services grid, product cards, testimonials, stats, and a news section.
 

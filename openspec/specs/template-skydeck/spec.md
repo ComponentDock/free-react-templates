@@ -19,6 +19,7 @@ Recreation of ColorLib's **Rooftop** restaurant template as a single-page React
 | App name (new) | skydeck |
 | Workspace | `@free-react-templates/skydeck` |
 | Deploy target | `https://skydeck.free.componentdock.com` |
+- **Source design:** ColorLib "Rooftop" — https://colorlib.com/wp/template/rooftop/
 
 ## Design tokens (from preview CSS)
 

@@ -12,6 +12,7 @@ Recreation of ColorLib's **Boxus** — a creative digital agency one-page templa
 - **Source URL:** https://colorlib.com/wp/template/boxus/
 - **Preview URL:** https://preview.colorlib.com/theme/boxus/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Boxus" — https://colorlib.com/wp/template/boxus/
 
 ## Section order (from live preview DOM)
 

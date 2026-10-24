@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Nikki** — a blog and magazine template with a hero carousel, featured blog posts, sidebar widgets, and an Instagram feed.
+Recreation of ColorLib "Nikki" — a blog and magazine template with a hero carousel, featured blog posts, sidebar widgets, and an Instagram feed.
 
 - **Source slug:** `nikki`
 - **Preview URL:** https://preview.colorlib.com/theme/nikki/

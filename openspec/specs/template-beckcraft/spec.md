@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Beckham** — a personal portfolio/resume template with green accent.
+Recreation of ColorLib "Beckham" — a personal portfolio/resume template with green accent.
 
 - **Source:** https://colorlib.com/wp/template/beckham/
 - **Preview:** https://preview.colorlib.com/theme/beckham/

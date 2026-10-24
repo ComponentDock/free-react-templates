@@ -17,6 +17,7 @@ Preview: https://preview.colorlib.com/theme/colorlib-sidebar-v06/ (unreachable �
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Sidebar V06" — https://colorlib.com/wp/template/colorlib-sidebar-v06/
 
 ## Design tokens (from screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)
 

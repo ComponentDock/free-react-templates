@@ -13,6 +13,7 @@ Recreation of ColorLib's **Rooftop** — a fine dining restaurant landing page w
 - **Preview:** https://preview.colorlib.com/theme/rooftop/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Food & Drinks
+- **Source design:** ColorLib "Rooftop" — https://colorlib.com/wp/template/rooftop/
 
 ## Design Tokens
 

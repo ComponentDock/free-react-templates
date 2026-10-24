@@ -5,6 +5,7 @@ Recreation of ColorLib Checkbox 17 (https://colorlib.com/wp/template/checkbox-17
 ## Purpose
 
 A modern, minimal checkbox template featuring smooth animation effects on toggle. The design uses bold geometric checkbox styling with a vibrant indigo accent color, clean typography, and satisfying check/uncheck transitions. Demonstrates accessible checkbox patterns with disabled states.
+- **Source design:** ColorLib "Checkbox 17" — https://colorlib.com/wp/template/checkbox-17/
 
 ## Requirements
 

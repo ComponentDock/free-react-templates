@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form V4** (`colorlib-search-4`).
+Recreation of ColorLib "Search Form V4" (`colorlib-search-4`).
 Preview: https://colorlib.com/etc/searchf/colorlib-search-4/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-search-form-4.jpg
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dentist** (`https://colorlib.com/wp/template/dentist/`), preview URL: `https://preview.colorlib.com/theme/dentist/`.
+Recreation of ColorLib "Dentist" (`https://colorlib.com/wp/template/dentist/`), preview URL: `https://preview.colorlib.com/theme/dentist/`.
 Built as a responsive React 19 + Tailwind CSS 4 + TypeScript template with 100% test coverage.
 
 ## Design Tokens

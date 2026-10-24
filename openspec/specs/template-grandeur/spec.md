@@ -9,6 +9,7 @@ A luxury hotel template with hero, booking form, about, rooms, blog posts and fo
 - **Screenshot:** `![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/radisson-free-template.jpg)`
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **New name:** `grandeur` (apps/grandeur, @free-react-templates/grandeur)
+- **Source design:** ColorLib "Radisson" — https://colorlib.com/wp/template/radisson/
 
 ## Design Tokens (extracted from preview CSS)
 

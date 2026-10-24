@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Car Rental template with hero, how it works, promo, car listings, features and cta banner sections. Recreation of ColorLib **Carrentals** template.
+A Car Rental template with hero, how it works, promo, car listings, features and cta banner sections. Recreation of ColorLib "Carrentals" template.
 
 - Source: https://colorlib.com/wp/template/carrentals/
 - Preview: https://preview.colorlib.com/theme/carrentals/

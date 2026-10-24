@@ -8,6 +8,7 @@ A Food / Recipe Blog template with top header, sticky, hero carousel, top catego
 - **Preview URL:** https://preview.colorlib.com/theme/delicious/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript (strict)
 - **Category:** Food / Recipe Blog
+- **Source design:** ColorLib "Delicious" — https://colorlib.com/wp/template/delicious/
 
 ## Design tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Samira** — a luxury hotel / resort single-page website.
+Recreation of ColorLib "Samira" — a luxury hotel / resort single-page website.
 
 - **Source:** https://colorlib.com/wp/template/samira/
 - **Preview:** https://preview.colorlib.com/theme/samira/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Multiselect 09** template.
+Recreation of the ColorLib "Multiselect 09" template.
 
 - **Source slug:** `multiselect-09`
 - **Source URL:** https://colorlib.com/wp/template/multiselect-09/

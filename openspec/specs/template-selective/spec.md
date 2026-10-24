@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Multiselect 10** — a clean, centered multi-select dropdown component with search and checkbox selection.
+Recreation of ColorLib "Multiselect 10" — a clean, centered multi-select dropdown component with search and checkbox selection.
 
 - **Source:** https://colorlib.com/wp/template/multiselect-10/
 - **Preview (original):** https://preview.colorlib.com/theme/bootstrap/multiselect-10/

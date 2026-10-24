@@ -7,6 +7,7 @@ Recreation of ColorLib Checkbox 05 (https://colorlib.com/wp/template/checkbox-05
 Tickwell is a modern animated checkmark checkbox UI component template. It provides
 a clean, interactive checkbox experience with smooth SVG stroke-dashoffset animation
 for the checkmark drawing effect, indigo brand accent color, and a minimal centered layout.
+- **Source design:** ColorLib "Checkbox 05" — https://colorlib.com/wp/template/checkbox-05/
 
 ## Design tokens
 

@@ -15,6 +15,7 @@ video callout, blog cards, story highlight, newsletter subscription, and footer.
 - **Preview:** https://preview.colorlib.com/theme/bbs/
 - **New name:** `bravely` (apps/bravely, @free-react-templates/bravely)
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Bbs" — https://colorlib.com/wp/template/bbs/
 
 ## Design Tokens
 

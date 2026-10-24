@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Workshop** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page conference/workshop event site.
+Recreation of the ColorLib "Workshop" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page conference/workshop event site.
 
 - **Source:** https://colorlib.com/wp/template/workshop/
 - **Preview:** https://preview.colorlib.com/theme/workshop/

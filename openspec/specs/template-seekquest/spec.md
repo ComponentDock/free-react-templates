@@ -6,7 +6,7 @@
 > Fidelity reference: `openspec/specs/template-propsearch/spec.md`.
 
 ## Purpose
-Recreation of ColorLib **Search Form Bar 07** — a property/booking search form with four filter fields (Location, Property Type, Property Status, Price Limit) and a prominent pink CTA button. Desktop layout is a horizontal 4-column row with a full-width submit button; stacks vertically on mobile.
+Recreation of ColorLib "Search Form Bar 07" — a property/booking search form with four filter fields (Location, Property Type, Property Status, Price Limit) and a prominent pink CTA button. Desktop layout is a horizontal 4-column row with a full-width submit button; stacks vertically on mobile.
 
 - **Source slug:** `search-form-bar-07`
 - **Preview URL:** https://preview.colorlib.com/theme/search-form-bar-07/ (404; bootstrap variant: https://preview.colorlib.com/theme/bootstrap/search-form-bar-07/)

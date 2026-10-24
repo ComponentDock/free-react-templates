@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Calendar 09** — a minimal, single-purpose date/time
+Recreation of ColorLib "Calendar 09" — a minimal, single-purpose date/time
 picker page built on Bootstrap 4. The template showcases a calendar datetime
 picker with a pill-shaped input field, centered on a light background.
 

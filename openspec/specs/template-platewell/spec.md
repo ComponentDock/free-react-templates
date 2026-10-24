@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **EatWell** template.
+Recreation of ColorLib "EatWell" template.
 - **Source slug:** `eatwell`
 - **Preview URL:** https://preview.colorlib.com/theme/eatwell/
 - **Source screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/eatwell-free-template.jpg

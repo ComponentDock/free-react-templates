@@ -17,6 +17,7 @@ Source: https://colorlib.com/wp/template/colorlib-regform-21/
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-21.jpg
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
+- **Source design:** ColorLib "Colorlib Regform 21" — https://colorlib.com/wp/template/colorlib-regform-21/
 
 ## Design tokens
 

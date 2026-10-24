@@ -8,6 +8,7 @@ A creative portfolio and blog template with a masonry grid layout, animated typi
 - **Preview:** https://preview.colorlib.com/theme/rea/
 - **New name:** `revive`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Rea" — https://colorlib.com/wp/template/rea/
 
 ## Design Tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Akame** — a multi-page hair salon website with a
+Recreation of ColorLib "Akame" — a multi-page hair salon website with a
 full-width hero slider, about section, 4-column services grid, "Why Choose Us"
 feature, filterable portfolio gallery, team experts with certificates, blog
 posts, a CTA section, and a 3-column footer. Gold-and-dark aesthetic with

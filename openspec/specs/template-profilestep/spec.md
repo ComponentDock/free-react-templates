@@ -15,6 +15,7 @@ form fields, step indicator, and a category-selection grid.
 - **Preview:** https://colorlib.com/etc/bwiz/colorlib-wizard-9/index.html
 - **Category:** Bootstrap Wizard / Multi-step Form
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Colorlib Wizard 9" — https://colorlib.com/wp/template/colorlib-wizard-9/
 
 ## Design Tokens
 

@@ -11,6 +11,7 @@ A cleaning services template with topbar, hero, features, process, industries, p
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 - New name: **tidywash** (`apps/tidywash`, `@free-react-templates/tidywash`)
 - Footer link: https://www.componentdock.com/ ("Component Dock")
+- **Source design:** ColorLib "Cleanex" — https://colorlib.com/wp/template/cleanex/
 
 ## Design tokens (extracted from live preview CSS)
 

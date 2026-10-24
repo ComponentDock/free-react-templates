@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Startright** (`https://colorlib.com/wp/template/startright/`, live preview: `https://preview.colorlib.com/theme/startright/`).
+Recreation of ColorLib "Startright" (`https://colorlib.com/wp/template/startright/`, live preview: `https://preview.colorlib.com/theme/startright/`).
 A professional business and SaaS startup landing page featuring hero section with offset image card, logo cloud, two-column feature split, productivity features grid, stats counter bar, feature link cards, and newsletter footer.
 
 ## Design Tokens (Extracted from reference CSS)

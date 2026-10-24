@@ -9,6 +9,8 @@
 
 Recreation of ColorLib [Restauco](https://colorlib.com/wp/template/restauco/) (`https://preview.colorlib.com/theme/restauco/`), built as a high-conversion modern React single-page application using Vite, React 19, Tailwind CSS 4, and TypeScript. Designed for restaurants, cafes, and hospitality businesses with online table reservation, categorized menu showcase, services overview, customer testimonials, and contact integration.
 
+- **Source design:** ColorLib "Restauco" — https://colorlib.com/wp/template/restauco/
+
 ## Design Tokens
 
 - **Brand Primary:** Coral Orange (`#FE5F41`), Hover (`#ec583a`)

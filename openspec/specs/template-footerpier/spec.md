@@ -22,6 +22,7 @@ Recreation of ColorLib's **Bootstrap Footer 19** — a purple footer with a four
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Bootstrap Footer 19" — https://colorlib.com/wp/template/bootstrap-footer-19/
 
 ## Design Tokens
 

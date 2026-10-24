@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Loanday** — a loan/financial services single-page
+Recreation of ColorLib "Loanday" — a loan/financial services single-page
 template. Source: https://colorlib.com/wp/template/loanday/
 Preview: https://preview.colorlib.com/theme/loanday/
 

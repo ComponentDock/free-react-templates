@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Cohost** (slug: `cohost`).
+Recreation of ColorLib "Cohost" (slug: `cohost`).
 Preview: https://preview.colorlib.com/theme/cohost/
 ColorLib page: https://colorlib.com/wp/template/cohost/
 

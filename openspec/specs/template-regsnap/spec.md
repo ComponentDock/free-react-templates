@@ -5,6 +5,7 @@
 Recreate Colorlib Regform 2 as a React template named Regsnap. This is a food class registration form with a split-screen card layout: hero image on the left, form fields on the right, set against a vibrant red background.
 
 Source: https://colorlib.com/wp/template/colorlib-regform-2/
+- **Source design:** ColorLib "Colorlib Regform 2" — https://colorlib.com/wp/template/colorlib-regform-2/
 
 ## Design tokens (reference re-check, 2026-10-23)
 

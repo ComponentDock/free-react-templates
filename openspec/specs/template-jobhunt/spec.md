@@ -10,6 +10,7 @@ A Job Portal template with header/nav, hero, top jobs, about and job categories 
 - **App folder:** `apps/jobhunt`
 - **Package:** `@free-react-templates/jobhunt`
 - **Surge target:** `jobhunt.free.componentdock.com`
+- **Source design:** ColorLib "Jobsco" — https://colorlib.com/wp/template/jobsco/
 
 ## Design tokens
 

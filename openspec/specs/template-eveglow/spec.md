@@ -19,6 +19,7 @@ media icons. Minimal, single-page layout — no navigation, no multi-section flo
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript. Google Fonts (Open Sans
 + Poppins) loaded via `<link>` in `index.html`. Placeholder hero image from
 `picsum.photos`. Icons from `lucide-react`.
+- **Source design:** ColorLib "06 Comming Soon" — https://colorlib.com/wp/template/06-comming-soon/
 
 ## Design Tokens
 

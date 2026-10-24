@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Buri** — a premium fine-dining restaurant template
+Recreation of ColorLib "Buri" — a premium fine-dining restaurant template
 with a moody, upscale aesthetic. The React 19 + Vite + Tailwind 4 + TypeScript
 recreation preserves section order, design tokens, and layout fidelity while
 using placeholder images and the Component Dock brand.

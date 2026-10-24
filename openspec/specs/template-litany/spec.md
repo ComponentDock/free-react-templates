@@ -27,6 +27,7 @@ Recreation of ColorLib's **Faith 2** template — a church landing page with eve
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Faith 2" — https://colorlib.com/wp/template/faith-2/
 
 ## Design tokens (extracted from preview screenshot)
 

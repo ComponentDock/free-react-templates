@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Evento** — a conference/event landing page template.
+Recreation of ColorLib "Evento" — a conference/event landing page template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/evento/
 - **Live preview:** https://preview.colorlib.com/theme/evento/

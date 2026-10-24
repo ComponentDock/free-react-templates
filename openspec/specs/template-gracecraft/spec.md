@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A church/nonprofit website template. Recreation of ColorLib **Mimosan**.
+A church/nonprofit website template. Recreation of ColorLib "Mimosan".
 
 - **Source slug:** `mimosan`
 - **Preview URL:** https://preview.colorlib.com/theme/mimosan/

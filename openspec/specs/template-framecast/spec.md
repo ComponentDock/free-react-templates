@@ -9,6 +9,7 @@ A personal template with header navigation, hero, portfolio, services and blog s
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/portfolio2-free-template.jpg
 - **Category:** Personal / Portfolio Website Template
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript (strict)
+- **Source design:** ColorLib "Portfolio 2" — https://colorlib.com/wp/template/portfolio-2/
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Oraxol** (`https://colorlib.com/wp/template/oraxol/`), preview URL: `https://preview.colorlib.com/theme/oraxol/`.
+Recreation of ColorLib "Oraxol" (`https://colorlib.com/wp/template/oraxol/`), preview URL: `https://preview.colorlib.com/theme/oraxol/`.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 
 ## Design Tokens

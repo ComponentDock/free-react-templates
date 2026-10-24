@@ -8,6 +8,7 @@ A Health & Wellness template with hero, services row, about / why choose us, ser
 - Preview: https://preview.colorlib.com/theme/acupuncture/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/acupuncture-free-template.jpg
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Acupuncture" — https://colorlib.com/wp/template/acupuncture/
 
 ## Design Tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Portech** (https://colorlib.com/wp/template/portech/).
+Recreation of ColorLib "Portech" (https://colorlib.com/wp/template/portech/).
 Preview: https://preview.colorlib.com/theme/portech/
 
 A creative studio / IT agency landing page with full-height slider hero, service

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Classic** — a one-page business/agency website template.
+Recreation of ColorLib "Classic" — a one-page business/agency website template.
 
 - **Source**: https://colorlib.com/wp/template/classic/
 - **Preview URL**: https://preview.colorlib.com/theme/classic/

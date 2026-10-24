@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Hnband** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of the ColorLib "Hnband" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source template**: [Hnband](https://colorlib.com/wp/template/hnband/)
 - **Preview URL**: https://preview.colorlib.com/theme/hnband/

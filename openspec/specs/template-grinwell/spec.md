@@ -5,7 +5,7 @@
 > Do not scaffold `apps/grinwell`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-molars/spec.md`.
 
-Recreation of ColorLib **Dentures** (https://colorlib.com/wp/template/dentures/).
+Recreation of ColorLib "Dentures" (https://colorlib.com/wp/template/dentures/).
 
 ## Purpose
 

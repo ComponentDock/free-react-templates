@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 12** (`https://colorlib.com/wp/template/carousel-12/`), built as a modern, accessible React 19 + Vite + Tailwind CSS 4 template (`apps/carousel-sweep`).
+Recreation of ColorLib "Carousel 12" (`https://colorlib.com/wp/template/carousel-12/`), built as a modern, accessible React 19 + Vite + Tailwind CSS 4 template (`apps/carousel-sweep`).
 Preview URL fallback: ColorLib WordPress screenshot archive (preview.colorlib.com was unreachable).
 
 ## Design tokens

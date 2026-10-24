@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **DirectoryAds** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+Recreation of ColorLib "DirectoryAds" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **ColorLib source**: https://colorlib.com/wp/template/directoryads/
 - **Preview URL**: https://preview.colorlib.com/theme/directoryads/

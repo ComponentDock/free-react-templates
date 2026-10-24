@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Eventro** template as a single-page event/conference website.
+Recreation of the ColorLib "Eventro" template as a single-page event/conference website.
 
 - **Source slug:** `eventro`
 - **Preview URL:** https://preview.colorlib.com/theme/eventro/

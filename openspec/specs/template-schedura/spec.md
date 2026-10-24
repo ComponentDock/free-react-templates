@@ -4,7 +4,7 @@ Recreation of ColorLib Calendar 13 (`https://colorlib.com/wp/template/calendar-1
 
 ## Purpose
 
-Schedura is a bootstrap calendar component page. It recreates the ColorLib **Calendar 13** design (https://colorlib.com/wp/template/calendar-13/, preview: https://preview.colorlib.com/theme/bootstrap/calendar-13/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
+Schedura is a bootstrap calendar component page. It recreates the ColorLib "Calendar 13" design (https://colorlib.com/wp/template/calendar-13/, preview: https://preview.colorlib.com/theme/bootstrap/calendar-13/) as a Vite + React 19 + Tailwind CSS 4 + TypeScript template.
 
 ## Design tokens
 

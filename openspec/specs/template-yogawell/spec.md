@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of [ColorLib Doyoga](https://colorlib.com/wp/template/doyoga/) — a yoga studio website template.
+Recreation of [ColorLib "Doyoga"](https://colorlib.com/wp/template/doyoga/) — a yoga studio website template.
 
 - **Source slug:** `doyoga`
 - **Preview URL:** https://preview.colorlib.com/theme/doyoga/

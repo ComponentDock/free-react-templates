@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A centered card login form template with account login fields and a pill-shaped sign-in button. Recreation of ColorLib **Login Form V14** as a React 19 + Vite + Tailwind 4 + TypeScript template.
+A centered card login form template with account login fields and a pill-shaped sign-in button. Recreation of ColorLib "Login Form V14" as a React 19 + Vite + Tailwind 4 + TypeScript template.
 
 - **Source slug:** `login-form-v14`
 - **Preview URL:** https://colorlib.com/etc/lf/Login_v14/index.html

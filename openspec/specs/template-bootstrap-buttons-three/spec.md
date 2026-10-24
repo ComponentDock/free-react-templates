@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 03 (https://colorlib.com/wp/template/bootstrap-buttons-03/). A polished UI component library showcasing solid fill buttons, modern outline styles, dual-tone variants, badge integrations, and interactive states, built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Bootstrap Buttons 03" — https://colorlib.com/wp/template/bootstrap-buttons-03/
 
 ## Design tokens
 

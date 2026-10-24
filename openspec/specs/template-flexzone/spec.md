@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fitnezz** template.
+Recreation of ColorLib "Fitnezz" template.
 - Source slug: `fitnezz`
 - Preview URL: https://preview.colorlib.com/theme/fitnezz/
 - Source screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fitnezz-free-template.jpg

@@ -5,6 +5,7 @@ Recreation of ColorLib Bootstrap Footer 11 (https://colorlib.com/wp/template/boo
 ## Purpose
 
 Bedrock is a multi-column footer template with a dark navy background, purple accent links, and a four-column layout containing brand info, latest news blog cards, quick links navigation, and contact details. Includes a centered hero section and a copyright bar with Component Dock attribution.
+- **Source design:** ColorLib "Bootstrap Footer 11" — https://colorlib.com/wp/template/bootstrap-footer-11/
 
 ## Design Tokens
 

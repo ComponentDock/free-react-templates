@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Dropdown 05** — a cart dropdown menu snippet for
+Recreation of ColorLib "Dropdown 05" — a cart dropdown menu snippet for
 eCommerce sites.
 
 - **Source:** [dropdown-05](https://colorlib.com/wp/template/dropdown-05/)

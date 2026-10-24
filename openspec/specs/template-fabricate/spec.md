@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Industry** template.
+Recreation of ColorLib "Industry" template.
 - Source slug: `industry`
 - Preview URL: https://preview.colorlib.com/theme/industry/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/industry-free-template.jpg

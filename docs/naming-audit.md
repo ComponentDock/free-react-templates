@@ -13,11 +13,32 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Medico → Sanara
+## State after Medico → Sanara + the provenance-grammar backfill (2026-10-24e)
 
-4 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
-`ColorLib "X"` line, so the true count can only be equal to or higher than this
-list — record the mapping when those specs are next touched.
+**10 apps reuse their source name.** `apps/medico` → `sanara` (#1839) landed
+first, which left 4 in the name-only count; the prep stream's provenance-grammar
+axis (`docs/provenance-grammar.md`) then made the audit readable for the 445 specs
+that carried no machine-readable `ColorLib "X"` line and found 5 more, plus one
+(`apps/itkol`) that a name-only test still cannot see.
+
+The backfill (`scripts/fix-provenance-grammar.py`, 1,089 specs edited, no app
+touched) moved this audit from `unknown: 445, violations: 4` to
+`unknown: 0, violations: 9` — **five of the nine are violations the audit could
+not see before**:
+
+| app              | source design | note                                                    |
+| ---------------- | ------------- | ------------------------------------------------------- |
+| apps/mosh        | Mosh          | known since the first batch                             |
+| apps/pawpal      | PawPal        | known                                                   |
+| apps/petsitting  | Petsitting    | known                                                   |
+| apps/petvet      | Petvet        | known                                                   |
+| apps/expo        | Expo          | **new** — the spec named its source in prose only       |
+| apps/justlaw     | Justlaw       | **new**                                                 |
+| apps/nurture     | Nurture       | **new**                                                 |
+| apps/oraxol      | Oraxol        | **new**                                                 |
+| apps/unioncorp   | Unioncorp     | **new**                                                 |
+| apps/itkol       | Itkol (`itkol`) | **new, still hidden** — the spec quotes the marketing title `"IT-Solution"`, so the folder equals the SLUG and the name test passes. Comparing the folder with the slug as well (as `verify-provenance-grammar.py` does → `RULE5-HIDDEN`) closes it. |
+
 
 Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `animal-shelter` → `furhaven` (#1814), `horse-club` → `canter` (#1815), `appco` →

@@ -17,6 +17,7 @@ Recreation of ColorLib **CarRental** template.
 
 A single-page car rental website with a hero search form, how-it-works steps,
 car listing cards, features grid, testimonials, CTA banner, and footer.
+- **Source design:** ColorLib "Carrentals" — https://colorlib.com/wp/template/carrentals/
 
 ## Design Tokens
 

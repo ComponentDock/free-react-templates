@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Landing Page template with top bar with utility, full-viewport hero with art, three info cards with icons and decorative quote sections. Recreation of ColorLib **Art Museum** template as a free React museum and art gallery website template.
+A Landing Page template with top bar with utility, full-viewport hero with art, three info cards with icons and decorative quote sections. Recreation of ColorLib "Art Museum" template as a free React museum and art gallery website template.
 
 - Source slug: `art-museum`
 - Preview URL: https://preview.colorlib.com/theme/art-museum/ (unreachable — fell back to screenshot analysis) — **re-probed 2026-10-23: the demo serves** (measured record below)

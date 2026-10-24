@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 14** — a full-page olive green background
+Recreation of ColorLib "Contact Form 14" — a full-page olive green background
 with a "Let's work together" text section on the left and a white form card on
 the right. Features a complex form with Name/Organization side by side, Budget
 dropdown, Target Lunch field, and an olive/yellow-green button.

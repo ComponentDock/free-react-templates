@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A crossfit/gym landing page with hero, features, subscription, portfolio, testimonials, pricing plans, CTA banner, and footer. Recreation of ColorLib **Crossfit**.
+A crossfit/gym landing page with hero, features, subscription, portfolio, testimonials, pricing plans, CTA banner, and footer. Recreation of ColorLib "Crossfit".
 
 - **Source slug:** `crossfit`
 - **ColorLib URL:** https://colorlib.com/wp/template/crossfit/

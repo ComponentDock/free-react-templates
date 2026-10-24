@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Travelers** template
+Recreation of the ColorLib "Travelers" template
 (preview: https://preview.colorlib.com/theme/travelers/).
 
 A modern travel/tourism website template featuring a hero slider,

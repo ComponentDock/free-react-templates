@@ -1,6 +1,6 @@
 # Template: Squadly (Heavy Equipment Rental Landing)
 
-Recreation of ColorLib **Equipo** (https://colorlib.com/wp/template/equipo/).
+Recreation of ColorLib "Equipo" (https://colorlib.com/wp/template/equipo/).
 
 ## Purpose
 

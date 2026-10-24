@@ -4,7 +4,7 @@
 
 Navpill is a **transparent header + dropdown navigation over a full-viewport
 hero band** page in the free-react-templates monorepo. It is an original React
-recreation of the ColorLib free **"Website Menu 03"** snippet (source slug
+recreation of the ColorLib "Website Menu 03" snippet (source slug
 `website-menu-03` — the Website Menus family's **blue-pill dropdown menu**): an
 **absolutely positioned, non-sticky, transparent header** (`top:2rem`,
 `z-index:1999`) floating over a **frame-filling photographic hero** (`100vh`,

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Creative Login Form — a minimal, centered login form page with a green gradient background, white card, and simple username/password inputs.
+Recreation of ColorLib "Creative Login Form" — a minimal, centered login form page with a green gradient background, white card, and simple username/password inputs.
 
 - **Source:** https://colorlib.com/wp/template/creative-login-form/
 - **Preview:** https://preview.colorlib.com/theme/creative-login-form/ (unreachable at prep time; design based on screenshot)

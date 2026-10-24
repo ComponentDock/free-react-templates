@@ -5,6 +5,7 @@ Recreation of ColorLib Bootstrap Sidebar 07 (https://colorlib.com/wp/template/bo
 ## Purpose
 
 Sidewell is a sidebar navigation template featuring a fixed blue sidebar with icon-labeled navigation, a sticky top bar with navigation links, and a clean white content area. Designed for dashboards, portfolios, and documentation sites.
+- **Source design:** ColorLib "Bootstrap Sidebar 07" — https://colorlib.com/wp/template/bootstrap-sidebar-07/
 
 ## Design tokens
 

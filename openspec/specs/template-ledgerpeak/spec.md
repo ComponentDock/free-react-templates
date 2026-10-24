@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Book Keeping** template.
+Recreation of ColorLib "Book Keeping" template.
 - Source slug: `book-keeping` (ColorLib slug resolves to `bookkeeping`)
 - Preview URL: `https://preview.colorlib.com/theme/bookkeeping/`
 - Screenshot: `https://colorlib.com/wp/wp-content/uploads/sites/2/bookkeeping-free-template.jpg`

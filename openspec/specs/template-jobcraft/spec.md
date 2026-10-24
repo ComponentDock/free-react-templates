@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Careers** template.
+Recreation of ColorLib "Careers" template.
 
 - Source slug: `careers`
 - Preview URL: https://preview.colorlib.com/theme/careers/

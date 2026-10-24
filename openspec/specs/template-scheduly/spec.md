@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Calendar 09 (`https://colorlib.com/wp/template/calendar-09/`), preview unavailable (404), designed from screenshot reference. Built with React 19, Vite, Tailwind CSS 4, TypeScript, and Lucide icons.
+- **Source design:** ColorLib "Calendar 09" — https://colorlib.com/wp/template/calendar-09/
 
 ## Design Tokens (derived from screenshot reference)
 

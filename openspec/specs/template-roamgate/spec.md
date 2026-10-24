@@ -9,6 +9,7 @@ template with tabbed search forms for Hotels, Car, and Flight queries.
 - **Preview URL:** https://preview.colorlib.com/theme/colorlib-search-18/ (404 at time of prep — screenshot used as primary reference)
 - **Category:** Search Form & Bar Templates
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Colorlib Search 18" — https://colorlib.com/wp/template/colorlib-search-18/
 
 ## Design Tokens
 

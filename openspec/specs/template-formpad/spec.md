@@ -8,6 +8,7 @@ A free multi-step course registration form wizard template. Recreation of ColorL
 - **Source URL:** https://colorlib.com/wp/template/colorlib-wizard-4/
 - **Preview/demo URL:** https://colorlib.com/etc/bwiz/colorlib-wizard-4/index.html
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Colorlib Wizard 4" — https://colorlib.com/wp/template/colorlib-wizard-4/
 
 ## Design Tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 16** — a minimalist two-column contact
+Recreation of ColorLib "Contact Form 16" — a minimalist two-column contact
 page with an illustration and heading on the left and a clean form with
 rounded input fields on the right.
 

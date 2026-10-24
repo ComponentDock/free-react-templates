@@ -12,6 +12,7 @@ darker `#148F77` hover, a white card container with rounded corners, and a
 full-page background image. (An earlier capture named the accent `#6DAB3C`; that
 value appears nowhere in the source — 0 hits across every stylesheet, page and
 script in the bundle.)
+- **Source design:** ColorLib "Colorlib Wizard 16" — https://colorlib.com/wp/template/colorlib-wizard-16/
 
 ## Design tokens
 

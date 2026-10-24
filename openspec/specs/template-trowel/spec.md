@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A construction company template with hero, about, services, projects, stats, testimonials and blog sections. Recreation of the ColorLib **Sintec** building company template as a React 19 +
+A construction company template with hero, about, services, projects, stats, testimonials and blog sections. Recreation of the ColorLib "Sintec" building company template as a React 19 +
 Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/sintec/

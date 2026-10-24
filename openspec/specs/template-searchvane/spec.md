@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 02** — a minimalist, centered search bar component with a blue circular search icon button that expands into a full input field on hover/interaction. Single-page, single-section template focused on the animated search widget.
+Recreation of ColorLib "Search Form Bar 02" — a minimalist, centered search bar component with a blue circular search icon button that expands into a full input field on hover/interaction. Single-page, single-section template focused on the animated search widget.
 
 ## Source
 

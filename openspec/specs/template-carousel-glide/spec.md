@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 18** (`https://colorlib.com/wp/template/carousel-18/`), a modern split-design responsive carousel featuring an immersive image showcase on one side and interactive testimonial/content cards with smooth slide navigation on the other. Built for Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Carousel 18" (`https://colorlib.com/wp/template/carousel-18/`), a modern split-design responsive carousel featuring an immersive image showcase on one side and interactive testimonial/content cards with smooth slide navigation on the other. Built for Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens & Theme
 

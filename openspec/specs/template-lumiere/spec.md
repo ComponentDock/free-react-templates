@@ -1,6 +1,6 @@
 # Template: Lumiere (Photography Portfolio)
 
-Recreation of ColorLib **Mostudio** (https://colorlib.com/wp/template/mostudio/).
+Recreation of ColorLib "Mostudio" (https://colorlib.com/wp/template/mostudio/).
 
 ## Purpose
 

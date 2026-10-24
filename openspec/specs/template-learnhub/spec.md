@@ -1,6 +1,6 @@
 # Template: Learnhub (Online Education Platform)
 
-Recreation of ColorLib **Etrain** (https://colorlib.com/wp/template/etrain/).
+Recreation of ColorLib "Etrain" (https://colorlib.com/wp/template/etrain/).
 
 ## Purpose
 

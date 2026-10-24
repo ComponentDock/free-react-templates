@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Restaurant Landing template with hero banner with headline, welcome section with cta, food menu and reservation cta banner sections. Recreation of ColorLib **Foodfun** (https://colorlib.com/wp/template/foodfun/) as a single-page restaurant landing template with a golden-yellow brand palette, Playfair Display headings, and a warm, inviting aesthetic.
+A Restaurant Landing template with hero banner with headline, welcome section with cta, food menu and reservation cta banner sections. Recreation of ColorLib "Foodfun" (https://colorlib.com/wp/template/foodfun/) as a single-page restaurant landing template with a golden-yellow brand palette, Playfair Display headings, and a warm, inviting aesthetic.
 
 ## Requirements
 

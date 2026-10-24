@@ -10,6 +10,7 @@ A Photography Portfolio template with hero banner, about, services, portfolio ga
 - **Stack:** React 19 + Vite + Tailwind CSS 4 + TypeScript
 - **App folder:** `apps/lenscraft`
 - **Package:** `@free-react-templates/lenscraft`
+- **Source design:** ColorLib "Proshoot" — https://colorlib.com/wp/template/proshoot/
 
 ## Design tokens
 

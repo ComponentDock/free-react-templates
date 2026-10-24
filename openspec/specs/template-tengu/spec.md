@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Ronin** — a personal portfolio / creative agency template for a freelance designer or architect.
+Recreation of ColorLib "Ronin" — a personal portfolio / creative agency template for a freelance designer or architect.
 
 - **Source slug:** `ronin`
 - **Preview URL:** https://preview.colorlib.com/theme/ronin/

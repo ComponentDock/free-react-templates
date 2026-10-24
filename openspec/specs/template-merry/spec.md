@@ -3,6 +3,7 @@
 ## Purpose
 
 A modern interactive multi-item carousel and card showcase template with hero, carousel, features, newsletter, and footer sections. Recreate the ColorLib Carousel 07 template (`https://colorlib.com/wp/template/carousel-07/`) as `merry`.
+- **Source design:** ColorLib "Carousel 07" — https://colorlib.com/wp/template/carousel-07/
 
 ## Design tokens
 

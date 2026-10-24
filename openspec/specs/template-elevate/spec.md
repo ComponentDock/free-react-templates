@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Coaching / Consulting template with navbar navigation, hero slider, about, services, statistics counters and pricing plans sections. Recreation of the ColorLib **Life Coaching** template for a coaching/consulting landing page.
+A Coaching / Consulting template with navbar navigation, hero slider, about, services, statistics counters and pricing plans sections. Recreation of the ColorLib "Life Coaching" template for a coaching/consulting landing page.
 
 - **Source template:** [Life Coaching](https://colorlib.com/wp/template/life-coaching/)
 - **Preview URL:** https://preview.colorlib.com/theme/life-coaching/ (404 — unreachable; fallback to screenshot analysis)

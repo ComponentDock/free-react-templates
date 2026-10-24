@@ -15,6 +15,7 @@ Recreation of ColorLib's **Deluxe** hotel template as a React 19 + Vite + Tailwi
 - **Stack:** React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict)
 - **Package:** `@free-react-templates/opulence` → `apps/opulence`
 - **Deploy target:** `opulence.free.componentdock.com`
+- **Source design:** ColorLib "Deluxe" — https://colorlib.com/wp/template/deluxe/
 
 ## Design Tokens
 

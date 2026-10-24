@@ -9,6 +9,7 @@
 ## Purpose
 
 A minimal, clean registration form template with floating label inputs, custom checkbox, social login buttons, and a centered layout. Recreates the ColorLib Signup Form 09 design in React + Tailwind CSS.
+- **Source design:** ColorLib "Signup Form 09" — https://colorlib.com/wp/template/signup-form-09/
 
 ## Design Tokens
 

@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Bootstrap Buttons 06 (`https://colorlib.com/wp/template/bootstrap-buttons-06/`, preview URL: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-06/`) as a modern React + Vite + Tailwind CSS 4 application (`apps/btnforge`, `@free-react-templates/btnforge`).
+- **Source design:** ColorLib "Bootstrap Buttons 06" — https://colorlib.com/wp/template/bootstrap-buttons-06/
 
 ## Design Tokens & Styling
 

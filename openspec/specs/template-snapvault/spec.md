@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fotograp** — a single-photographer portfolio template with hero cover, specialty cards, testimonial carousel, photo gallery grid, CTA banner, and dark footer.
+Recreation of ColorLib "Fotograp" — a single-photographer portfolio template with hero cover, specialty cards, testimonial carousel, photo gallery grid, CTA banner, and dark footer.
 
 - **Source slug:** `fotograp`
 - **Preview URL:** https://preview.colorlib.com/theme/fotograp/

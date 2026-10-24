@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Docket is a law firm landing page template. It recreates the ColorLib Lawfirm design (https://colorlib.com/wp/template/lawfirm/) with a dark professional aesthetic, Roboto font, and Bootstrap blue accent (#007bff). Sections: top bar, navbar, hero, intro cards, trust features, statistics counters, practice areas, case studies, testimonials carousel, CTA banner, blog, and footer.
+Docket is a law firm landing page template. It recreates the ColorLib "Lawfirm" design (https://colorlib.com/wp/template/lawfirm/) with a dark professional aesthetic, Roboto font, and Bootstrap blue accent (#007bff). Sections: top bar, navbar, hero, intro cards, trust features, statistics counters, practice areas, case studies, testimonials carousel, CTA banner, blog, and footer.
 
 - **Source**: https://colorlib.com/wp/template/lawfirm/
 - **Preview**: https://preview.colorlib.com/theme/lawfirm/

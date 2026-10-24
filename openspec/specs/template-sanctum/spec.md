@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Sanctum is a single-page church website with a hero, a bible-study countdown, a services grid, video sermon cards, testimonies, event dates and blog. It recreates the ColorLib **Wisdom** design (https://colorlib.com/wp/template/wisdom/).
+Sanctum is a single-page church website with a hero, a bible-study countdown, a services grid, video sermon cards, testimonies, event dates and blog. It recreates the ColorLib "Wisdom" design (https://colorlib.com/wp/template/wisdom/).
 
 ## Design tokens
 

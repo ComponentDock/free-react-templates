@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Photosen** (`https://colorlib.com/wp/template/photosen/`), previewed at `https://preview.colorlib.com/theme/photosen/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Photosen" (`https://colorlib.com/wp/template/photosen/`), previewed at `https://preview.colorlib.com/theme/photosen/`. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens & Styling
 

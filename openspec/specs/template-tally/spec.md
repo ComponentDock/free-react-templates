@@ -1,6 +1,6 @@
 # Template: Tally (Accounting & Business Consulting)
 
-Recreation of ColorLib **Accounting** (https://colorlib.com/wp/template/accounting/).
+Recreation of ColorLib "Accounting" (https://colorlib.com/wp/template/accounting/).
 
 ## Purpose
 

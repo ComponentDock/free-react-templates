@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 11** (`https://colorlib.com/wp/template/carousel-11/`), preview URL: `https://preview.colorlib.com/theme/carousel-11/`.
+Recreation of ColorLib "Carousel 11" (`https://colorlib.com/wp/template/carousel-11/`), preview URL: `https://preview.colorlib.com/theme/carousel-11/`.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React.
 
 ## Design Tokens

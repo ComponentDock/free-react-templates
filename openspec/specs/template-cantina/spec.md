@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Luigis** — a pizza/pasta restaurant landing page.
+Recreation of ColorLib "Luigis" — a pizza/pasta restaurant landing page.
 
 - **ColorLib source:** https://colorlib.com/wp/template/luigis/
 - **Live preview:** https://preview.colorlib.com/theme/luigis/

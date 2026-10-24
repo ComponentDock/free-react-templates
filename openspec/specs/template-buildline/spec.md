@@ -18,6 +18,7 @@ Recreation of ColorLib's **Consto** construction company template as a React 19
 | Screenshot | https://colorlib.com/wp/wp-content/uploads/sites/2/consto-free-template.jpg |
 | Category | Construction / Contractor |
 | Stack | React 19 · Vite · Tailwind CSS 4 · TypeScript |
+- **Source design:** ColorLib "Consto" — https://colorlib.com/wp/template/consto/
 
 ## Design tokens (extracted from live preview CSS + screenshot)
 

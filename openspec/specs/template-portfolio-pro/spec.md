@@ -12,6 +12,7 @@ Preview: https://preview.colorlib.com/theme/beckham/
 
 Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript.
 Images: https://picsum.photos/seed/portfolio-pro-<n>/w/h placeholders.
+- **Source design:** ColorLib "Beckham" — https://colorlib.com/wp/template/beckham/
 
 ## Design tokens (from preview CSS)
 

@@ -8,6 +8,7 @@ Recreation of ColorLib's **Bootstrap Footer 12** (titled "Footer 02" in the prev
 - **Preview:** https://preview.colorlib.com/theme/bft/bootstrap-footer-12/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 12" — https://colorlib.com/wp/template/bootstrap-footer-12/
 
 ## Design Tokens
 

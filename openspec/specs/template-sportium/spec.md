@@ -9,7 +9,7 @@ source: https://preview.colorlib.com/theme/sportsfit/
 
 ## Purpose
 
-Recreation of ColorLib Sportsfit (https://colorlib.com/wp/template/sportsfit/) — a fitness/gym landing page. The new name is "Sportium".
+Recreation of ColorLib "Sportsfit" (https://colorlib.com/wp/template/sportsfit/) — a fitness/gym landing page. The new name is "Sportium".
 
 ### Design Tokens
 

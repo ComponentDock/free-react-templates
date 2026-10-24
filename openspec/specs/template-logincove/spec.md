@@ -7,6 +7,7 @@ A split-screen sign-in form template with gold accent, Lato font, Facebook/Twitt
 - Source: https://colorlib.com/wp/template/login-form-14/
 - Preview: https://preview.colorlib.com/theme/bootstrap/login-form-14/
 - Stack: React 19 + Vite + Tailwind CSS 4 + TypeScript
+- **Source design:** ColorLib "Login Form 14" — https://colorlib.com/wp/template/login-form-14/
 
 ## Design Tokens
 

@@ -8,6 +8,7 @@ A restaurant/food landing page with dark navbar, hero slider, about section, gal
 - **Preview:** https://preview.colorlib.com/theme/gourmet/
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Food & Drinks
+- **Source design:** ColorLib "Gourmet" — https://colorlib.com/wp/template/gourmet/
 
 ## Design Tokens
 

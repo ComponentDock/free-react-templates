@@ -12,6 +12,7 @@ Recreation of ColorLib's **Calvin** template as a React 19 + Vite + Tailwind 4 +
 - Source: https://colorlib.com/wp/template/calvin/
 - Live preview: https://preview.colorlib.com/theme/calvin/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/calvin-free-template.jpg
+- **Source design:** ColorLib "Calvin" — https://colorlib.com/wp/template/calvin/
 
 ## Design tokens (extracted from preview CSS)
 

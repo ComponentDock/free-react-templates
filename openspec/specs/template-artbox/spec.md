@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Boxus** — a creative digital agency one-page template.
+Recreation of ColorLib "Boxus" — a creative digital agency one-page template.
 - **Source:** https://colorlib.com/wp/template/boxus/
 - **Preview:** https://preview.colorlib.com/theme/boxus/
 - **New name:** `artbox` (apps/artbox, @free-react-templates/artbox)

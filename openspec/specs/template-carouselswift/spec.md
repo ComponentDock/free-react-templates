@@ -12,6 +12,7 @@ Recreation of ColorLib [Carousel 17](https://colorlib.com/wp/template/carousel-1
 - **Source template**: ColorLib Carousel 17 (`https://colorlib.com/wp/template/carousel-17/`)
 - **Preview / Aesthetic**: Modern carousel & slider showcase layout featuring hero banner, interactive card carousels, feature highlights grid, testimonial slider, newsletter signup, and footer linking to Component Dock.
 - **Tech Stack**: React 19, TypeScript, Tailwind CSS 4, Lucide React icons, Vite.
+- **Source design:** ColorLib "Carousel 17" — https://colorlib.com/wp/template/carousel-17/
 
 ## Design Tokens
 

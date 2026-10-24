@@ -1,6 +1,6 @@
 # Template: Drape (Ecommerce)
 
-Recreation of ColorLib **Fashe** (https://colorlib.com/wp/template/fashe/).
+Recreation of ColorLib "Fashe" (https://colorlib.com/wp/template/fashe/).
 
 ## Purpose
 

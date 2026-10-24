@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Innova** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+Recreation of the ColorLib "Innova" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source slug:** `innova`
 - **ColorLib page:** https://colorlib.com/wp/template/innova/

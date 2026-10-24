@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Sidebar V04**.
+Recreation of ColorLib "Bootstrap Sidebar V04".
 - Source: https://colorlib.com/wp/template/bootstrap-sidebar-04/
 - Preview (downloadable): https://preview.colorlib.com/downloads/free/bootstrap-sidebar-04.zip
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170630.jpg

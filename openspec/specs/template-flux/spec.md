@@ -11,6 +11,7 @@ A Digital Agency template with category tiles, newsletter subscription and conta
 - Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 - New name: **flux** (`apps/flux`, `@free-react-templates/flux`)
 - Footer link: https://www.componentdock.com/ ("Component Dock")
+- **Source design:** ColorLib "Pixel" — https://colorlib.com/wp/template/pixel/
 
 ## Design tokens
 

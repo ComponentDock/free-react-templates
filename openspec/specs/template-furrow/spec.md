@@ -11,7 +11,7 @@ Recreation of ColorLib's **Farmland** template — a professional agriculture/fa
 landing page with parallax hero, service cards, about section, project gallery,
 testimonials, FAQ accordion, and newsletter.
 
-- **Source**: [ColorLib Farmland](https://colorlib.com/wp/template/farmland/)
+- **Source**: [ColorLib "Farmland"](https://colorlib.com/wp/template/farmland/)
 - **Preview**: https://preview.colorlib.com/theme/farmland/
 - **New name**: `furrow` (apps/furrow, `@free-react-templates/furrow`)
 - **Surge**: `furrow.free.componentdock.com`

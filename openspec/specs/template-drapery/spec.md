@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fashion** — a fashion boutique / shop landing page template.
+Recreation of ColorLib "Fashion" — a fashion boutique / shop landing page template.
 
 - **ColorLib source:** https://colorlib.com/wp/template/fashion/
 - **Live preview:** https://preview.colorlib.com/theme/fashion/

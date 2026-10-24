@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Health** (`https://colorlib.com/wp/template/health/`, preview: `https://preview.colorlib.com/theme/health/`). A full-width medical/healthcare landing page with hero, service info boxes, appointment booking, CTA banner, services grid, departments carousel, FAQ accordion, latest news, and a comprehensive footer. Built with React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Health" (`https://colorlib.com/wp/template/health/`, preview: `https://preview.colorlib.com/theme/health/`). A full-width medical/healthcare landing page with hero, service info boxes, appointment booking, CTA banner, services grid, departments carousel, FAQ accordion, latest news, and a comprehensive footer. Built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens (extracted from preview)
 

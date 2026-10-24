@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Myhome** — a real estate property listing template.
+Recreation of ColorLib "Myhome" — a real estate property listing template.
 
 - **Source slug:** `myhome`
 - **Source URL:** https://colorlib.com/wp/template/myhome/

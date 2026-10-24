@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 13** (`https://colorlib.com/wp/template/carousel-13/`), preview URL: `https://preview.colorlib.com/theme/bootstrap/carousel-13/`.
+Recreation of ColorLib "Carousel 13" (`https://colorlib.com/wp/template/carousel-13/`), preview URL: `https://preview.colorlib.com/theme/bootstrap/carousel-13/`.
 Stack: Vite, React 19, Tailwind CSS 4, TypeScript (strict).
 
 ## Design tokens

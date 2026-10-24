@@ -9,6 +9,7 @@ A photography portfolio template with sidebar navigation, portfolio gallery, abo
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Package:** `@free-react-templates/shotlab`
 - **Deploy:** `https://shotlab.free.componentdock.com`
+- **Source design:** ColorLib "Mostudio" — https://colorlib.com/wp/template/mostudio/
 
 ## Design Tokens
 

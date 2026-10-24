@@ -14,6 +14,7 @@ Recreation of ColorLib's **Bootstrap Footer 17** — a dark, minimal footer with
 - **Preview URL:** https://preview.colorlib.com/theme/bft/bootstrap-footer-17/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript (strict)
 - **Category:** Footer
+- **Source design:** ColorLib "Bootstrap Footer 17" — https://colorlib.com/wp/template/bootstrap-footer-17/
 
 ## Design Tokens
 

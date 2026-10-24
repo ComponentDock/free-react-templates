@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **CareMed** — a medical / healthcare center website template.
+Recreation of ColorLib "CareMed" — a medical / healthcare center website template.
 
 - **Source slug:** `caremed`
 - **Preview URL:** https://preview.colorlib.com/theme/caremed/

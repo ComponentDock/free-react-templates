@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Portfolio / Creative Agency template with hero, portfolio overlap, what we do, recent blog posts and cta sections. Recreation of ColorLib **Strategy** portfolio/creative agency template.
+A Portfolio / Creative Agency template with hero, portfolio overlap, what we do, recent blog posts and cta sections. Recreation of ColorLib "Strategy" portfolio/creative agency template.
 
 - **Source:** https://colorlib.com/wp/template/strategy/
 - **Preview:** https://preview.colorlib.com/theme/strategy/

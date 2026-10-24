@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 05** — a centered two-column card contact
+Recreation of ColorLib "Contact Form 05" — a centered two-column card contact
 page with a white form panel on the left and a full-height background image on
 the right, featuring underline-style inputs, a golden accent button, and social
 media links.

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Rehomes** — a real estate agency template featuring a
+Recreation of ColorLib "Rehomes" — a real estate agency template featuring a
 full-width map hero, advanced search form, property listings, feature highlights,
 property categories, CTA, blog, partner logos, and a dark overlay footer.
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar V07 (`https://colorlib.com/wp/template/calendar-07/`), a calendar widget with an integrated image background and events display, built using Vite, React 19, Tailwind CSS 4, and TypeScript (strict).
+Recreation of ColorLib "Calendar V07" (`https://colorlib.com/wp/template/calendar-07/`), a calendar widget with an integrated image background and events display, built using Vite, React 19, Tailwind CSS 4, and TypeScript (strict).
 
 ## Design Tokens
 

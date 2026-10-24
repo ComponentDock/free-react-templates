@@ -15,6 +15,7 @@ Recreation of ColorLib's **Videograph** template as a React 19 + Vite + Tailwind
 - **New name:** `cinelux` (cinema + lux, evoking light/film)
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript (strict)
 - **Tests:** Vitest + Testing Library, 100% coverage enforced
+- **Source design:** ColorLib "Videograph" — https://colorlib.com/wp/template/videograph/
 
 ## Design Tokens
 

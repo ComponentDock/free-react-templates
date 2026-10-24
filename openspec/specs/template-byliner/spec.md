@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Author** template.
+Recreation of ColorLib "Author" template.
 - Source slug: `author`
 - Source URL: https://colorlib.com/wp/template/author/
 - Preview URL: https://preview.colorlib.com/theme/author/

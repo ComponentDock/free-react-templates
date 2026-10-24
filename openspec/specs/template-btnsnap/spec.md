@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons 20** (`https://colorlib.com/wp/template/bootstrap-buttons-20/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-20/`). A comprehensive interactive UI component showcase featuring default buttons, outline buttons, color variants (primary `#007bff`, secondary `#6c757d`, tertiary `#ff4893`, quaternary `#01d28e`), social buttons (Twitter, Facebook, LinkedIn, Pinterest, Dribbble) with various styles (solid, outline, rounded, with counter badges), and icon integrations. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Bootstrap Buttons 20" (`https://colorlib.com/wp/template/bootstrap-buttons-20/`, live preview: `https://preview.colorlib.com/theme/bb/bootstrap-buttons-20/`). A comprehensive interactive UI component showcase featuring default buttons, outline buttons, color variants (primary `#007bff`, secondary `#6c757d`, tertiary `#ff4893`, quaternary `#01d28e`), social buttons (Twitter, Facebook, LinkedIn, Pinterest, Dribbble) with various styles (solid, outline, rounded, with counter badges), and icon integrations. Built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens
 

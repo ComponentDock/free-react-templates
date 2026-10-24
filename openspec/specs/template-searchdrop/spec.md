@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 17** (slug: `search-form-bar-17`).
+Recreation of ColorLib "Search Form Bar 17" (slug: `search-form-bar-17`).
 Preview: https://preview.colorlib.com/theme/search-form-bar-17/ (unreachable at time of prep; screenshot analyzed).
 ColorLib page: https://colorlib.com/wp/template/search-form-bar-17/
 Description: "A free dropdown search form snippet that works without a hitch on mobile and desktop."

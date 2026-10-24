@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Credo** — a photographer/personal portfolio template.
+Recreation of ColorLib "Credo" — a photographer/personal portfolio template.
 
 - **Source:** https://colorlib.com/wp/template/credo/
 - **Preview:** https://preview.colorlib.com/theme/credo/

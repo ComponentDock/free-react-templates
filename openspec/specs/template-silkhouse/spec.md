@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Fashion / E-Commerce template with hero slider, new arrivals, collection promo, popular products and features sections. Recreation of ColorLib **Shionhouse** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript fashion e-commerce storefront.
+A Fashion / E-Commerce template with hero slider, new arrivals, collection promo, popular products and features sections. Recreation of ColorLib "Shionhouse" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript fashion e-commerce storefront.
 
 - **Source:** https://colorlib.com/wp/template/shionhouse/
 - **Preview:** https://preview.colorlib.com/theme/shionhouse/

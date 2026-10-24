@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Pressure Washing** template.
+Recreation of the ColorLib "Pressure Washing" template.
 - **Source slug:** `pressurewashing`
 - **ColorLib page:** https://colorlib.com/wp/template/pressure-washing/
 - **Live preview:** https://preview.colorlib.com/theme/pressurewashing/

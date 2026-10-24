@@ -14,6 +14,7 @@ Recreation of ColorLib's **Cryptian** cryptocurrency and ICO landing page templa
 - **New name:** `tokenly`
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Category:** Cryptocurrency / ICO Landing Page
+- **Source design:** ColorLib "Cryptian" — https://colorlib.com/wp/template/cryptian/
 
 ## Design tokens
 

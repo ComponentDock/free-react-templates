@@ -9,6 +9,7 @@ Recreation of ColorLib's **Mona** template as a React 19 + Vite + Tailwind 4 + T
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/mona-free-template.jpg
 - **Stack:** React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict)
 - **Package name:** `@free-react-templates/canvas-gallery`
+- **Source design:** ColorLib "Mona" — https://colorlib.com/wp/template/mona/
 
 ## Design Tokens (extracted from preview CSS)
 

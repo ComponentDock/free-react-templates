@@ -80,7 +80,7 @@ Extracted from the live preview CSS (`css/style.css`) and HTML structure.
 
 ## Design tokens (reference re-check, 2026-10-23)
 
-- **Source**: ColorLib **Bootstrap Footer 04** — https://colorlib.com/wp/template/bootstrap-footer-04/
+- **Source**: ColorLib "Bootstrap Footer 04" — https://colorlib.com/wp/template/bootstrap-footer-04/
 - **Preview**: https://preview.colorlib.com/theme/bft/bootstrap-footer-04/ — HTTP 200 on 2026-10-23; measured `css/style.css` (8,306 bytes). Title served: "Footer 04".
 - **Measured how**: hex-literal census of `css/style.css`; the count column is the number of literal occurrences in that sheet (smaller than the number of rules that use it when a declaration repeats the value).
 

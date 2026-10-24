@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Casahotel** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
+Recreation of the ColorLib "Casahotel" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page application.
 
 - **Source slug:** `casahotel`
 - **Source URL:** https://colorlib.com/wp/template/casahotel/

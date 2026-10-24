@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Startright (`https://colorlib.com/wp/template/startright/`), built as a modern React 19 + Tailwind CSS 4 + TypeScript application (`@free-react-templates/startwell`).
+Recreation of ColorLib "Startright" (`https://colorlib.com/wp/template/startright/`), built as a modern React 19 + Tailwind CSS 4 + TypeScript application (`@free-react-templates/startwell`).
 
 ## Design Tokens
 

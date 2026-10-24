@@ -15,6 +15,7 @@ Recreation of ColorLib's **Wordpress Restaurant Themes** — a luxury restaurant
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
 - **Category:** Food & Drinks
 - **Note:** The ColorLib item "Wordpress Restaurant Themes" is a blog post (collection page) at `colorlib.com/wp/wordpress-restaurant-themes/`, not a template slug. The screenshot shows the Jevelin WordPress theme's restaurant demo (hosted at `jevelin.shufflehound.com`). The preview at `preview.colorlib.com/theme/wordpress-restaurant-themes/` returns 404. All design data derived from the screenshot.
+- **Source design:** ColorLib "Wordpress Restaurant Themes" — https://colorlib.com/wp/template/wordpress-restaurant-themes/
 
 ## Design Tokens
 

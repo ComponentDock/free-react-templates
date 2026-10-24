@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 12** (`https://colorlib.com/wp/template/accordion-12/`), preview URL: `https://preview.colorlib.com/theme/accordion-12/` (preview unreachable, fell back to screenshot and standard ColorLib accordion theme specifications) — **re-probed 2026-10-23: the demo serves** (measured record below).
+Recreation of ColorLib "Accordion 12" (`https://colorlib.com/wp/template/accordion-12/`), preview URL: `https://preview.colorlib.com/theme/accordion-12/` (preview unreachable, fell back to screenshot and standard ColorLib accordion theme specifications) — **re-probed 2026-10-23: the demo serves** (measured record below).
 
 <!-- unreachable-reprobe:start -->
 > **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://preview.colorlib.com/theme/bac/accordion-12/` — HTTP 200, 4,272 B, title `Accordion #2`.

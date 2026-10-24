@@ -7,7 +7,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Bootstrap Buttons V12** (`https://colorlib.com/wp/template/bootstrap-buttons-12/`).
+- Recreation of ColorLib "Bootstrap Buttons V12" (`https://colorlib.com/wp/template/bootstrap-buttons-12/`).
 - Preview URL: `https://preview.colorlib.com/theme/bootstrap-buttons-12/` (Note: Live preview URL is unreachable; designed from the official ColorLib screenshot and description showing a comprehensive collection of styled dark buttons, neon glows, gradients, icons, states, and interactive button groups) — **re-probed 2026-10-23: the demo serves** (measured record below).
 - Stack: React 19, Vite, Tailwind CSS 4, TypeScript, Lucide Icons.
 

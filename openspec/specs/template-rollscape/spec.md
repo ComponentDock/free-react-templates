@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Rolast** — a real estate property listing template.
+Recreation of ColorLib "Rolast" — a real estate property listing template.
 
 - **Source**: https://colorlib.com/wp/template/rolast/
 - **Preview**: https://preview.colorlib.com/theme/rolast/

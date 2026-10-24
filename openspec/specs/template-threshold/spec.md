@@ -7,6 +7,7 @@
 ## Purpose
 
 Threshold provides a 50/50 split-screen login form template with a light form panel on the left and a full-height decorative image on the right. It uses the Roboto font (weights 300, 400) and a distinctive orange (#fb771a) checkbox accent. Designed for authentication pages that need a modern, minimal aesthetic with visual depth.
+- **Source design:** ColorLib "Login Form 02" — https://colorlib.com/wp/template/login-form-02/
 
 ## Design tokens
 

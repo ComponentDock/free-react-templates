@@ -9,6 +9,7 @@ A Hotel & Resort template with hero slider with slide, services grid with image,
 - **Live preview:** https://preview.colorlib.com/theme/roxandrea/
 - **New name:** `roxyglow` (package `@free-react-templates/roxyglow`)
 - **Surge target:** `roxyglow.free.componentdock.com`
+- **Source design:** ColorLib "Roxandrea" — https://colorlib.com/wp/template/roxandrea/
 
 ## Requirements
 

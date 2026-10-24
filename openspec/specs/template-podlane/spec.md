@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A podcast template with hero and bi-weekly sections. Recreation of ColorLib **Mypodcast** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A podcast template with hero and bi-weekly sections. Recreation of ColorLib "Mypodcast" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - Source: https://colorlib.com/wp/template/mypodcast/
 - Preview: https://preview.colorlib.com/theme/mypodcast/

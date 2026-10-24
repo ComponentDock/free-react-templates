@@ -5,7 +5,7 @@
 > Do not scaffold `apps/searchbeacon`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-seekdot/spec.md`.
 
-Recreation of ColorLib **Search Form Bar 03**
+Recreation of ColorLib "Search Form Bar 03"
 (https://colorlib.com/wp/template/search-form-bar-03/)
 
 Preview: https://preview.colorlib.com/theme/search-form-bar-03/

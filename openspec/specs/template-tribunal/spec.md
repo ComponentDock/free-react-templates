@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Theorder** (`https://colorlib.com/wp/template/theorder/`).
+Recreation of ColorLib "Theorder" (`https://colorlib.com/wp/template/theorder/`).
 Preview URL: `https://preview.colorlib.com/theme/theorder/`.
 Stack: Vite + React 19 + Tailwind CSS 4 + TypeScript (strict).
 New name: **Tribunal** (`apps/tribunal`, `@free-react-templates/tribunal`).

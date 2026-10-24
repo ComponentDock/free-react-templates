@@ -11,6 +11,7 @@
 - **Preview URL:** `https://preview.colorlib.com/theme/repeat/`
 - **Tech Stack:** React 19, Vite, Tailwind CSS 4, TypeScript, Lucide React
 - **New Name:** Recur (`@free-react-templates/recur`)
+- **Source design:** ColorLib "Repeat" — https://colorlib.com/wp/template/repeat/
 
 ## Design Tokens & Visual Notes
 

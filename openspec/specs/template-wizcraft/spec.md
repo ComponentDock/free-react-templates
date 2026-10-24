@@ -27,6 +27,7 @@ jQuery-based Bootstrap template for e-commerce checkout flows.
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Wizard 5" — https://colorlib.com/wp/template/colorlib-wizard-5/
 
 ## Design tokens
 

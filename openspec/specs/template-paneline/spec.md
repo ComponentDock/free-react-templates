@@ -5,6 +5,7 @@ Recreation of ColorLib Bootstrap Sidebar 08 (https://colorlib.com/wp/template/bo
 ## Purpose
 
 Paneline is a sidebar navigation template featuring a right-aligned sidebar with collapsible product categories, a tag cloud, and a newsletter subscription form. The sidebar has a clean white design with pink accent color, designed for product catalogs and e-commerce dashboards.
+- **Source design:** ColorLib "Bootstrap Sidebar 08" — https://colorlib.com/wp/template/bootstrap-sidebar-08/
 
 ## Requirements
 

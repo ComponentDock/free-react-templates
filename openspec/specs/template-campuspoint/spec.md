@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **University** template.
+Recreation of ColorLib "University" template.
 - Source slug: `university`
 - Preview URL: https://preview.colorlib.com/theme/university/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/university-free-template.jpg

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Megazine** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application.
+Recreation of the ColorLib "Megazine" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript application.
 
 - **Source:** https://colorlib.com/wp/template/megazine/
 - **Preview:** https://preview.colorlib.com/theme/megazine/

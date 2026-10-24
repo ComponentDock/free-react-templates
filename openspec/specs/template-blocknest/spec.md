@@ -13,6 +13,7 @@ Recreation of ColorLib's **Cryptian** template as a React 19 + Vite + Tailwind 4
 - **Preview:** [preview.colorlib.com/theme/cryptian/](https://preview.colorlib.com/theme/cryptian/)
 - **New name:** `blocknest` (apps/blocknest, @free-react-templates/blocknest)
 - **Category:** Cryptocurrency / ICO / Blockchain landing page
+- **Source design:** ColorLib "Cryptian" — https://colorlib.com/wp/template/cryptian/
 
 ## Design tokens (extracted from live preview CSS)
 

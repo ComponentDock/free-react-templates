@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form 08** — a two-column contact page with a
+Recreation of ColorLib "Contact Form 08" — a two-column contact page with a
 form on the left and an image on the right, featuring an olive green button and
 bordered-box inputs.
 

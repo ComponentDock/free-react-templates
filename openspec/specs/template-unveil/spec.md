@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`, preview: `https://preview.colorlib.com/theme/unbrew/`), implemented as a modern React 19 + Tailwind CSS 4 + Vite application (`apps/unveil`), packaged as `@free-react-templates/unveil`.
+Recreation of ColorLib "Unbrew" (`https://colorlib.com/wp/template/unbrew/`, preview: `https://preview.colorlib.com/theme/unbrew/`), implemented as a modern React 19 + Tailwind CSS 4 + Vite application (`apps/unveil`), packaged as `@free-react-templates/unveil`.
 
 ## Design tokens
 

@@ -8,6 +8,7 @@
 ## Purpose
 
 Recreation of ColorLib Accordion 20 (`https://colorlib.com/wp/template/accordion-20/`). A sleek, modern accordion and FAQ showcase featuring multi-level collapsible groups, search filtering, smooth animated expand/collapse transitions, rich content panels with icons and code snippets, and a fully responsive layout built with React 19, Tailwind CSS 4, and TypeScript.
+- **Source design:** ColorLib "Accordion 20" — https://colorlib.com/wp/template/accordion-20/
 
 ## Design Tokens
 

@@ -13,6 +13,7 @@ Recreation of ColorLib's **Lovecare** charity theme as a React single-page app.
 - **Preview:** https://preview.colorlib.com/theme/lovecare/
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **New name:** `tenderly` (apps/tenderly, @free-react-templates/tenderly)
+- **Source design:** ColorLib "Lovecare" — https://colorlib.com/wp/template/lovecare/
 
 ## Design Tokens
 

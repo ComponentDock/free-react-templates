@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Rea** — a resource-sharing blog/portfolio template with
+Recreation of ColorLib "Rea" — a resource-sharing blog/portfolio template with
 masonry grid layout, animated headline, category system, and heart/like
 interaction on each item.
 

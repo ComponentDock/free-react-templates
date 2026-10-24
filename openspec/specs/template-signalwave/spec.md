@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Fastnet** (`https://colorlib.com/wp/template/fastnet/`).
+Recreation of ColorLib "Fastnet" (`https://colorlib.com/wp/template/fastnet/`).
 Preview URL: `https://preview.colorlib.com/theme/fastnet/` (reachable — live DOM + CSS analyzed).
 Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript.
 

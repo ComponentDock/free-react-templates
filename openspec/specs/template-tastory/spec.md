@@ -1,6 +1,6 @@
 # Template: Tastory (Restaurant Landing)
 
-**Recreation of ColorLib Eatwell** (https://colorlib.com/wp/template/eatwell/)
+**Recreation of ColorLib "Eatwell"** (https://colorlib.com/wp/template/eatwell/)
 
 ## Purpose
 

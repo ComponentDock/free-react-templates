@@ -9,6 +9,7 @@ A Vacation Rental / Apartment template with hero, book your apartment, services,
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/vacationrental-free-template.jpg
 - **Package:** `@free-react-templates/getawaypad`
 - **Surge target:** `https://getawaypad.free.componentdock.com`
+- **Source design:** ColorLib "Vacation Rental" — https://colorlib.com/wp/template/vacation-rental/
 
 ## Design Tokens
 

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Unbrew** (`https://colorlib.com/wp/template/unbrew/`), preview URL: `https://preview.colorlib.com/theme/unbrew/`. Built as a Vite + React 19 + Tailwind CSS 4 SPA in `apps/perkup`.
+Recreation of ColorLib "Unbrew" (`https://colorlib.com/wp/template/unbrew/`), preview URL: `https://preview.colorlib.com/theme/unbrew/`. Built as a Vite + React 19 + Tailwind CSS 4 SPA in `apps/perkup`.
 
 ## Design tokens
 

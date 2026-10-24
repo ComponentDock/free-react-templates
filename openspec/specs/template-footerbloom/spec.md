@@ -10,6 +10,7 @@ preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-15/
 ## Purpose
 
 FooterBloom recreates the ColorLib Bootstrap Footer 15 template as a React + Tailwind CSS component. It features a green (#68983b) footer with a 4-column layout containing brand info, blog posts, a product showcase, and an Instagram gallery, along with a subscribe form and copyright bar.
+- **Source design:** ColorLib "Bootstrap Footer 15" — https://colorlib.com/wp/template/bootstrap-footer-15/
 
 ## Design tokens
 

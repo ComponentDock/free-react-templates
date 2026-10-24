@@ -10,6 +10,7 @@ A personal template with header / navigation, hero carousel, about section, serv
 - **New name:** `vizier`
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **Deploy target:** https://vizier.free.componentdock.com
+- **Source design:** ColorLib "Mona" — https://colorlib.com/wp/template/mona/
 
 ## Design Tokens
 

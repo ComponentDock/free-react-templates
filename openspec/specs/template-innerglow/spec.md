@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Ahana** — a yoga/wellness HTML template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of ColorLib "Ahana" — a yoga/wellness HTML template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source template:** [Ahana](https://colorlib.com/wp/template/ahana/)
 - **Live preview:** https://preview.colorlib.com/theme/ahana/

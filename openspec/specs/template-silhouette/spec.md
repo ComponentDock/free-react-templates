@@ -1,6 +1,6 @@
 # Template: Silhouette (Apparel Store Landing)
 
-Recreation of ColorLib **Fashion 2** (https://colorlib.com/wp/template/fashion-2/).
+Recreation of ColorLib "Fashion 2" (https://colorlib.com/wp/template/fashion-2/).
 
 **Preview unreachable** — design inferred from ColorLib description, screenshot URL,
 and the related Fashion template structure (section-1 hero, section-4 products,

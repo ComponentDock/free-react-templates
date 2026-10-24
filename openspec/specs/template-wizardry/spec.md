@@ -3,6 +3,7 @@
 ## Purpose
 
 A Bootstrap Wizards template with multi-step form wizard, form validation prevents, successful submission and navigation buttons sections. - **Recreation of ColorLib source**: Colorlib Wizard 27 (`https://colorlib.com/wp/template/colorlib-wizard-27/`) - **New Name**: `wizardry` (App directory: `apps/wizardry`, Package: `@free-react-templates/wizardry`) - **Category**: Forms / Multi-step Wizard - **Description**: A clean, modern vertical form wizard template featuring step-by-step navigation, account setup, billing details, agreement steps, and responsive layout.
+- **Source design:** ColorLib "Colorlib Wizard 27" — https://colorlib.com/wp/template/colorlib-wizard-27/
 
 ## Requirements
 

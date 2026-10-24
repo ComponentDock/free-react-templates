@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Conference / Event template with hero, services strip, about, schedule, gallery and pricing sections. Recreation of the ColorLib **Plataforma** template as a React 19 + Vite + Tailwind 4 + TypeScript app.
+A Conference / Event template with hero, services strip, about, schedule, gallery and pricing sections. Recreation of the ColorLib "Plataforma" template as a React 19 + Vite + Tailwind 4 + TypeScript app.
 
 - **ColorLib source:** https://colorlib.com/wp/template/plataforma/
 - **Live preview:** https://preview.colorlib.com/theme/plataforma/

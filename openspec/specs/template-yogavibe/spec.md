@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Doyoga** — a yoga studio landing page with hero video CTA, featured classes carousel, schedule grid, about section with overlapping images, events, filterable gallery, contact form, and newsletter footer.
+Recreation of ColorLib "Doyoga" — a yoga studio landing page with hero video CTA, featured classes carousel, schedule grid, about section with overlapping images, events, filterable gallery, contact form, and newsletter footer.
 
 - **Source slug:** `doyoga`
 - **ColorLib URL:** https://colorlib.com/wp/template/doyoga/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Pestcontrol** template
+Recreation of the ColorLib "Pestcontrol" template
 (https://colorlib.com/wp/template/pestcontrol/) as a single-page React
 application. Live preview analyzed:
 https://preview.colorlib.com/theme/pestcontrol/

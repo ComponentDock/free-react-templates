@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Accordion 11** (`https://colorlib.com/wp/template/accordion-11/`), styled as **Ruche** — an interactive, elegant accordion component showcase and FAQ documentation template. Built with React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Accordion 11" (`https://colorlib.com/wp/template/accordion-11/`), styled as **Ruche** — an interactive, elegant accordion component showcase and FAQ documentation template. Built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens (Inferred from Screenshot / Standard Component Themes)
 

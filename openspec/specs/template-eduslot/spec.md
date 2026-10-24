@@ -22,6 +22,7 @@ Recreation of ColorLib template **Reg Form V12** (`colorlib-regform-12`).
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Regform 12" — https://colorlib.com/wp/template/colorlib-regform-12/
 
 ## Design Tokens
 

@@ -1,6 +1,6 @@
 # Template: Cuddle (Charity & Donation Landing Page)
 
-Recreation of ColorLib **Lovecare** (https://colorlib.com/wp/template/lovecare/) — preview: https://preview.colorlib.com/theme/lovecare/
+Recreation of ColorLib "Lovecare" (https://colorlib.com/wp/template/lovecare/) — preview: https://preview.colorlib.com/theme/lovecare/
 
 ## Purpose
 

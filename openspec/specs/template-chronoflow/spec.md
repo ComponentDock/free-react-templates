@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Calendar 12** (`https://colorlib.com/wp/template/calendar-12/`), named **Chronoflow** (`apps/chronoflow`).
+Recreation of ColorLib "Calendar 12" (`https://colorlib.com/wp/template/calendar-12/`), named **Chronoflow** (`apps/chronoflow`).
 A clean, elegant date picker and calendar scheduling interface featuring a focused input card, modern date selection, responsive form layout, and smooth interactions.
 
 ## Design Tokens

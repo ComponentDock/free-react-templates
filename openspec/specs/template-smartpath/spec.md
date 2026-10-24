@@ -14,6 +14,7 @@ Recreation of ColorLib's **Edusmart** template as a React 19 + Vite + Tailwind 4
 - **Live preview:** https://preview.colorlib.com/theme/edusmart/
 - **New app name:** `smartpath`
 - **Package:** `@free-react-templates/smartpath`
+- **Source design:** ColorLib "Edusmart" — https://colorlib.com/wp/template/edusmart/
 
 ## Design tokens
 

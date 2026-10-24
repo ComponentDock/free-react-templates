@@ -11,6 +11,7 @@ Recreation of ColorLib's **Yogabest** template.
 - Source: https://colorlib.com/wp/template/yogabest/
 - Live preview: https://preview.colorlib.com/theme/yogabest/
 - Stack: React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Yogabest" — https://colorlib.com/wp/template/yogabest/
 
 ## Design Tokens
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Carousel V16 (`https://colorlib.com/wp/template/carousel-16/`), a modern and minimal free feedback/testimonial carousel template featuring customer reviews, opinions, avatars, and ratings. Built as a Vite + React 19 + Tailwind CSS 4 + TypeScript app in `apps/carousel-vane`.
+Recreation of ColorLib "Carousel V16" (`https://colorlib.com/wp/template/carousel-16/`), a modern and minimal free feedback/testimonial carousel template featuring customer reviews, opinions, avatars, and ratings. Built as a Vite + React 19 + Tailwind CSS 4 + TypeScript app in `apps/carousel-vane`.
 
 ## Design Tokens & Theme
 

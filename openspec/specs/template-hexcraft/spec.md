@@ -10,6 +10,7 @@ A multi-step online booking/reservation wizard template. Recreation of ColorLib'
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **New name:** `hexcraft` (apps/hexcraft, @free-react-templates/hexcraft)
 - **Deploy:** hexcraft.free.componentdock.com
+- **Source design:** ColorLib "Colorlib Wizard 2" — https://colorlib.com/wp/template/colorlib-wizard-2/
 
 ## Design Tokens (extracted from preview CSS)
 

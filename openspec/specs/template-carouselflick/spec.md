@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Carousel V11 (`https://colorlib.com/wp/template/carousel-11/`), built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Carousel V11" (`https://colorlib.com/wp/template/carousel-11/`), built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 Features an immersive image & content carousel showcase, portfolio highlights, interactive slide controls, captions, thumbnail navigation, feature grid, and newsletter CTA.
 
 ## Design Tokens

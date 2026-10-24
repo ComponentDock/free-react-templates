@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Author** — a personal author/book promotion one-page template with book showcase, chapters, testimonials, and contact form.
+Recreation of ColorLib "Author" — a personal author/book promotion one-page template with book showcase, chapters, testimonials, and contact form.
 - **Source:** https://colorlib.com/wp/template/author/
 - **Preview:** https://preview.colorlib.com/theme/author/
 - **New name:** `typeset` (apps/typeset, @free-react-templates/typeset)

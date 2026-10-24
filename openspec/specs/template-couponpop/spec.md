@@ -15,6 +15,7 @@ Stack: Vite · React 19 · Tailwind CSS 4 · TypeScript
 The template displays a centered landing page with a "Launch" button that opens
 a modal dialog: a coupon/discount popup with a coupon code, percentage discount,
 expiration info, and a "Shop Now" CTA.
+- **Source design:** ColorLib "Modal 04" — https://colorlib.com/wp/template/modal-04/
 
 ## Design Tokens
 

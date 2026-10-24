@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Unearth** template.
+Recreation of ColorLib "Unearth" template.
 - Preview URL: https://preview.colorlib.com/theme/unearth/
 - ColorLib page: https://colorlib.com/wp/template/unearth/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/unearth-free-template.jpg

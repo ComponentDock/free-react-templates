@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Studylab** as a React 19 + Vite + Tailwind 4 + TypeScript
+Recreation of ColorLib "Studylab" as a React 19 + Vite + Tailwind 4 + TypeScript
 template. Studium is an online learning platform landing page featuring a hero with
 registration form, course categories, course cards, testimonials, features, blog
 posts, and a multi-column footer.

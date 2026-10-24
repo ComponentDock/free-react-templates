@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 16** (`https://colorlib.com/wp/template/carousel-16/`), a responsive testimonial/content carousel template built with Vite, React 19, Tailwind CSS 4, and TypeScript.
+Recreation of ColorLib "Carousel 16" (`https://colorlib.com/wp/template/carousel-16/`), a responsive testimonial/content carousel template built with Vite, React 19, Tailwind CSS 4, and TypeScript.
 
 ## Design Tokens & Reference
 

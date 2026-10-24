@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **The Venue** restaurant template.
+Recreation of ColorLib "The Venue" restaurant template.
 - Source slug: `thevenue`
 - Preview URL: https://preview.colorlib.com/theme/thevenue/
 - Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/thevenue-free-template.jpg

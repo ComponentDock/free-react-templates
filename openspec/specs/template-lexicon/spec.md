@@ -9,6 +9,7 @@ A hotel template with hero, about, rooms, services, video, guest reviews and bra
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **New name:** `lexicon` (apps/lexicon, @free-react-templates/lexicon)
 - **Deploy target:** https://lexicon.free.componentdock.com
+- **Source design:** ColorLib "Rolax" — https://colorlib.com/wp/template/rolax/
 
 ## Design tokens
 

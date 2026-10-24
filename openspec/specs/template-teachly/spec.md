@@ -14,6 +14,7 @@ Recreation of ColorLib's **Edusmart** education template as a React 19 + Vite + 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/edusmart-free-template-1.jpg
 - **New name:** `teachly` (apps/teachly, package `@free-react-templates/teachly`)
 - **Deploy target:** https://teachly.free.componentdock.com
+- **Source design:** ColorLib "Edusmart" — https://colorlib.com/wp/template/edusmart/
 
 ## Design Tokens
 

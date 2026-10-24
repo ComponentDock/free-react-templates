@@ -3,6 +3,7 @@
 ## Purpose
 
 Recreation of ColorLib **Bootstrap Accordion V16** (`https://colorlib.com/wp/template/accordion-16/`), previewed at `https://colorlib.com/etc/accordion/colorlib-accordion-16/`. Built as a modern, responsive React component showcasing collapsible accordion items with smooth transitions, clean typography (Open Sans & Roboto Slab), and themed styling.
+- **Source design:** ColorLib "Accordion 16" — https://colorlib.com/wp/template/accordion-16/
 
 ## Requirements
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-An Industrial / Manufacturing template with header / nav, hero / slider, services, safe industry solutions, gallery / works and team sections. Recreation of the ColorLib **Inds** template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
+An Industrial / Manufacturing template with header / nav, hero / slider, services, safe industry solutions, gallery / works and team sections. Recreation of the ColorLib "Inds" template as a React 19 + Vite + Tailwind 4 + TypeScript single-page app.
 
 - **Source slug:** `inds`
 - **ColorLib page:** https://colorlib.com/wp/template/inds/

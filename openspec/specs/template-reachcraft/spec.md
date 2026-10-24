@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V15** — a minimal centered contact form card
+Recreation of ColorLib "Contact Form V15" — a minimal centered contact form card
 overlaying a full-page Google Maps background, with a green-accented header banner,
 underline-style inputs, and a rounded green submit button.
 

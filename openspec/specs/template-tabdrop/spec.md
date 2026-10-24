@@ -11,6 +11,7 @@
 - **Live Preview URL:** `https://preview.colorlib.com/theme/accordion-07/`
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript (strict), Lucide React icons, shadcn/tailwind styling patterns.
 - **App Workspace:** `apps/tabdrop` (`@free-react-templates/tabdrop`)
+- **Source design:** ColorLib "Accordion 07" — https://colorlib.com/wp/template/accordion-07/
 
 ## Design Tokens (captured from live preview & screenshot)
 

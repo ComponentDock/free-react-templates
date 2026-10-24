@@ -13,6 +13,7 @@ ColorLib's **Calvin** template.
 - **Preview:** https://preview.colorlib.com/theme/calvin/
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 - **New name:** `designov` (apps/designov, `@free-react-templates/designov`)
+- **Source design:** ColorLib "Calvin" — https://colorlib.com/wp/template/calvin/
 
 ## Design Tokens (extracted from preview CSS)
 

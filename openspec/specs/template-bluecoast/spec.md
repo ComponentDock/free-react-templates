@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A real estate website template with hero carousel, property search, recent listings, city exploration, testimonials, and newsletter signup. Recreation of ColorLib **Bluesky**.
+A real estate website template with hero carousel, property search, recent listings, city exploration, testimonials, and newsletter signup. Recreation of ColorLib "Bluesky".
 
 - **Source:** https://colorlib.com/wp/template/bluesky/
 - **Preview:** https://preview.colorlib.com/theme/bluesky/

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib **Fitnessclub** design (https://colorlib.com/wp/template/fitnessclub/) as a React 19 + Tailwind CSS 4 + TypeScript single-page template under the name "FitCore". The template serves as a free, production-ready health and fitness club website with hero, about, services, testimonials, gallery, trainers, schedule, and contact sections.
+Recreate the ColorLib "Fitnessclub" design (https://colorlib.com/wp/template/fitnessclub/) as a React 19 + Tailwind CSS 4 + TypeScript single-page template under the name "FitCore". The template serves as a free, production-ready health and fitness club website with hero, about, services, testimonials, gallery, trainers, schedule, and contact sections.
 
 ## Design tokens
 

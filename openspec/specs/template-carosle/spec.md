@@ -2,7 +2,7 @@
 
 ## Purpose
 
-- Recreation of ColorLib **Carousel V04** (`https://colorlib.com/wp/template/carousel-04/`).
+- Recreation of ColorLib "Carousel V04" (`https://colorlib.com/wp/template/carousel-04/`).
 - Preview URL: `https://preview.colorlib.com/theme/carousel-04/`
 - Stack: Vite, React 19, Tailwind CSS 4, TypeScript, Lucide React icons, interactive Testimonial Slider / Carousel.
 

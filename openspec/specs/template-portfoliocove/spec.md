@@ -9,6 +9,7 @@ A Minimalist Portfolio template with breadcrumb navigation, portfolio grid and d
 - **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript
 - **Package:** `@free-react-templates/portfoliocove`
 - **Deploy:** `https://portfoliocove.free.componentdock.com`
+- **Source design:** ColorLib "Po Portfolio" — https://colorlib.com/wp/template/po-portfolio/
 
 ## Design Tokens
 

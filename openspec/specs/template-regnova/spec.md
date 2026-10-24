@@ -23,6 +23,7 @@ Recreation of **ColorLib Regform 32** — a split-card registration form with a 
 >
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
+- **Source design:** ColorLib "Colorlib Regform 32" — https://colorlib.com/wp/template/colorlib-regform-32/
 
 ## Design Tokens
 

@@ -38,6 +38,7 @@ its brand, its headlines or its copy.
   `ls openspec/specs/` hold no `cherish`, and no `[x]` line in `TEMPLATES.md` uses it.
   Alternates considered and also free: *betroth*, *forever*, *honeymoon*.
 - **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Dreamwed" — https://colorlib.com/wp/template/dreamwed/
 
 ## Design reference (replication findings)
 

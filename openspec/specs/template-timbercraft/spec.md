@@ -14,6 +14,7 @@ Recreation of ColorLib's **Woodwork** carpentry/woodworking company template as 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/woodwork-colorlib-template.jpg
 - **Package:** `@free-react-templates/timbercraft`
 - **Surge target:** `https://timbercraft.free.componentdock.com`
+- **Source design:** ColorLib "Woodwork" — https://colorlib.com/wp/template/woodwork/
 
 ## Design Tokens
 

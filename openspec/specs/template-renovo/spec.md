@@ -1,6 +1,6 @@
 # Template: Renovo (Business)
 
-Recreation of ColorLib **Repair** (https://colorlib.com/wp/template/repair/).
+Recreation of ColorLib "Repair" (https://colorlib.com/wp/template/repair/).
 
 ## Purpose
 

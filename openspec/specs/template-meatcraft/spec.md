@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **SteakShop** template.
+Recreation of the ColorLib "SteakShop" template.
 
 - **Source:** <https://colorlib.com/wp/template/steakshop/>
 - **Preview:** <https://preview.colorlib.com/theme/steakshop/>

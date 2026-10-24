@@ -5,7 +5,7 @@
 > Do not scaffold `apps/attire`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-threadcraft/spec.md`.
 
-Recreation of ColorLib **Fashi** (https://colorlib.com/wp/template/fashi/).
+Recreation of ColorLib "Fashi" (https://colorlib.com/wp/template/fashi/).
 Preview: https://preview.colorlib.com/theme/fashi/
 
 ## Purpose

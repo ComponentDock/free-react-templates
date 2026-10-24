@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Consulto** template.
+Recreation of ColorLib "Consulto" template.
 
 - Source: https://colorlib.com/wp/template/consulto/
 - Preview (analyzed): https://preview.colorlib.com/theme/consulto/

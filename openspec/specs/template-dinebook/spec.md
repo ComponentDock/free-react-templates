@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Colorlib Wizard 7** — a 3-step restaurant table
+Recreation of ColorLib "Colorlib Wizard 7" — a 3-step restaurant table
 reservation wizard. The template is a single-page form wizard with a split
 layout: full-height food photography on the left, a dark form panel on the
 right that advances through three steps.

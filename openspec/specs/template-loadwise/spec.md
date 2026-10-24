@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Logistic** template (source: https://colorlib.com/wp/template/logistic/, preview: https://preview.colorlib.com/theme/logistic/) as a modern React + Tailwind single-page marketing site for logistics, freight, and transportation businesses.
+Recreation of the ColorLib "Logistic" template (source: https://colorlib.com/wp/template/logistic/, preview: https://preview.colorlib.com/theme/logistic/) as a modern React + Tailwind single-page marketing site for logistics, freight, and transportation businesses.
 
 **Stack**: Vite · React 19 · Tailwind CSS 4 · TypeScript (strict) · Vitest + Testing Library (100% coverage)
 

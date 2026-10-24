@@ -15,6 +15,7 @@ Recreation of ColorLib's **Dento** template as a free React component.
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
 
 ---
+- **Source design:** ColorLib "Dento" — https://colorlib.com/wp/template/dento/
 
 ## Design Tokens (extracted from live preview CSS)
 

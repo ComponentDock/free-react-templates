@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Pacific** — a travel agency website template with a dark hero banner, tour search/booking form, destination carousels, tour cards, testimonials, and blog section.
+Recreation of ColorLib "Pacific" — a travel agency website template with a dark hero banner, tour search/booking form, destination carousels, tour cards, testimonials, and blog section.
 
 - **Source:** https://colorlib.com/wp/template/pacific/
 - **Preview:** https://preview.colorlib.com/theme/pacific/

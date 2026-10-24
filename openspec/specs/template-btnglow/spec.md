@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bootstrap Buttons V12** (`https://colorlib.com/wp/template/bootstrap-buttons-12/`), built as a modern React 19 + Tailwind CSS 4 UI component showcase template. Live preview URL: `https://colorlib.com/wp/template/bootstrap-buttons-12/`.
+Recreation of ColorLib "Bootstrap Buttons V12" (`https://colorlib.com/wp/template/bootstrap-buttons-12/`), built as a modern React 19 + Tailwind CSS 4 UI component showcase template. Live preview URL: `https://colorlib.com/wp/template/bootstrap-buttons-12/`.
 
 ## Design tokens
 

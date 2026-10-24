@@ -14,6 +14,7 @@ Recreation of ColorLib's **Eatwell** template as a React 19 + Vite + Tailwind 4 
 - **New name:** `gustable` (from "gust" — taste/enjoyment)
 - **Package:** `@free-react-templates/gustable`
 - **Deploy target:** `gustable.free.componentdock.com`
+- **Source design:** ColorLib "Eatwell" — https://colorlib.com/wp/template/eatwell/
 
 ## Design tokens
 

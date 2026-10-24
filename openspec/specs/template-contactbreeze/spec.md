@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V4** — a minimalist single-column contact
+Recreation of ColorLib "Contact Form V4" — a minimalist single-column contact
 form on a full-page cyan-to-magenta gradient background, with labeled underline
 input fields, two dropdown selects (services + budget), a message textarea, and
 a gradient submit button. No nav bar or footer in the original viewport; the

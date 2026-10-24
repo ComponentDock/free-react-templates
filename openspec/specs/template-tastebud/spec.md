@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Foodfun** — a food/restaurant landing page template.
+Recreation of ColorLib "Foodfun" — a food/restaurant landing page template.
 - **Source slug:** `foodfun`
 - **Preview URL:** https://preview.colorlib.com/theme/foodfun/
 - **ColorLib page:** https://colorlib.com/wp/template/foodfun/

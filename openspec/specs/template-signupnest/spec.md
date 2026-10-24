@@ -7,6 +7,7 @@ A split-panel registration form with a hero image on the left and a form on the 
 - **Source:** https://colorlib.com/wp/template/colorlib-regform-28/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-reg-form-28.jpg
 - **Stack:** React 19 · Vite · Tailwind CSS 4 · TypeScript
+- **Source design:** ColorLib "Colorlib Regform 28" — https://colorlib.com/wp/template/colorlib-regform-28/
 
 ## Design tokens
 

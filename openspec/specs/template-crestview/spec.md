@@ -14,6 +14,7 @@ Recreation of ColorLib's **Radisson** template as a React 19 + Vite + Tailwind 4
 - **Live preview:** https://preview.colorlib.com/theme/radisson/
 - **New name:** `crestview` (package `@free-react-templates/crestview`)
 - **Surge target:** `crestview.free.componentdock.com`
+- **Source design:** ColorLib "Radisson" — https://colorlib.com/wp/template/radisson/
 
 ## Design Tokens (extracted from preview CSS)
 

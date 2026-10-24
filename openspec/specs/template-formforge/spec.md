@@ -16,6 +16,7 @@ FormForge is a multi-step form wizard that recreates the ColorLib Wizard 28 desi
 different name. It provides a three-step flow (Personal Info, Address, Payment) with a vibrant
 gradient background, green accent colors, and Roboto/Montserrat typography. Users fill in
 personal details, enter their address, and provide payment information before submitting.
+- **Source design:** ColorLib "Colorlib Wizard 28" — https://colorlib.com/wp/template/colorlib-wizard-28/
 
 ## Design tokens
 

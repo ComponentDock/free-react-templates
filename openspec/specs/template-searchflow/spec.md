@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 18** — a full-viewport dark overlay with a white search bar strip at the top. The search bar contains a text input with "Search..." placeholder, a blue "Search" button, and an "X" close button in the top-right corner. The overlay covers the entire page with a dark gray background, focusing attention on the search input.
+Recreation of ColorLib "Search Form Bar 18" — a full-viewport dark overlay with a white search bar strip at the top. The search bar contains a text input with "Search..." placeholder, a blue "Search" button, and an "X" close button in the top-right corner. The overlay covers the entire page with a dark gray background, focusing attention on the search input.
 
 - **Source slug:** `search-form-bar-18`
 - **Source:** https://colorlib.com/wp/template/search-form-bar-18/

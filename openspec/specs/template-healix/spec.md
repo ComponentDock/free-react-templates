@@ -1,6 +1,6 @@
 # Template: Healix (Medical)
 
-Recreation of ColorLib **Medex** (https://colorlib.com/wp/template/medex/)
+Recreation of ColorLib "Medex" (https://colorlib.com/wp/template/medex/)
 
 ## Purpose
 

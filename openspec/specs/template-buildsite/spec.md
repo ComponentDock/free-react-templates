@@ -14,6 +14,7 @@ Recreation of ColorLib's **Constructioncompany** template as a React 19 + Vite +
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/constructioncompany-free-template.jpg
 - **Stack:** Vite (latest), React 19, Tailwind CSS 4, TypeScript (strict)
 - **Deploy target:** `https://buildsite.free.componentdock.com`
+- **Source design:** ColorLib "Constructioncompany" — https://colorlib.com/wp/template/constructioncompany/
 
 ## Design Tokens
 

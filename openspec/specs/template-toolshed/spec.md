@@ -13,6 +13,7 @@ Recreation of ColorLib's **Tools UI Kit** template as a React 19 + Vite + Tailwi
 - **Preview URL:** https://preview.colorlib.com/theme/tools-ui-kit/ (404 at time of research — design derived from screenshot)
 - **New name:** `toolshed` (apps/toolshed, `@free-react-templates/toolshed`)
 - **Stack:** React 19, Vite, Tailwind CSS 4, TypeScript
+- **Source design:** ColorLib "Tools Ui Kit" — https://colorlib.com/wp/template/tools-ui-kit/
 
 ## Design Tokens
 

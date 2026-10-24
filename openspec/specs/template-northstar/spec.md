@@ -15,6 +15,7 @@ A life coaching / personal development single-page template with a hero image
 slider, founder about section, training carousel, services icons, photo gallery
 with lightbox, testimonial carousel, blog entries, contact form, and a 3-column
 footer with newsletter subscription.
+- **Source design:** ColorLib "Coach" — https://colorlib.com/wp/template/coach/
 
 ## Design Tokens
 

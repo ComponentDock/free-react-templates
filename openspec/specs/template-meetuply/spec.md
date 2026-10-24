@@ -9,6 +9,7 @@ An event conference template with full-viewport hero, venue features, fun facts 
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/eventalk-free-template.jpg
 - **New name:** `meetuply` (package: `@free-react-templates/meetuply`)
 - **Deploy target:** `meetuply.free.componentdock.com`
+- **Source design:** ColorLib "Eventalk" — https://colorlib.com/wp/template/eventalk/
 
 ## Design tokens
 

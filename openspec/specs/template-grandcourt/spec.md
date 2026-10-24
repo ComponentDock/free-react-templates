@@ -8,6 +8,7 @@ Recreation of ColorLib's **Luxehotel** template as a React 19 + Vite + Tailwind 
 - **Preview URL:** https://preview.colorlib.com/theme/luxehotel/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/luxehotel-free-template.jpg
 - **Stack:** React 19 · Vite (latest) · Tailwind CSS 4 · TypeScript (strict) · Vitest + Testing Library (100% coverage)
+- **Source design:** ColorLib "Luxehotel" — https://colorlib.com/wp/template/luxehotel/
 
 ## Design tokens
 

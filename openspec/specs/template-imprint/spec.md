@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreate the ColorLib **Evans** template (https://colorlib.com/wp/template/evans/)
+Recreate the ColorLib "Evans" template (https://colorlib.com/wp/template/evans/)
 as a React 19 + Vite + Tailwind CSS 4 + TypeScript app named **Imprint**.
 The template is a personal portfolio and freelance designer page featuring a
 dark hero, intro section, services grid, and alternating portfolio gallery.

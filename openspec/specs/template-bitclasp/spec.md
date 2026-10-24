@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Bitcoin** template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
+Recreation of ColorLib "Bitcoin" template as a React 19 + Vite + Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/bitcoin/
 - **Preview:** https://preview.colorlib.com/theme/bitcoin/

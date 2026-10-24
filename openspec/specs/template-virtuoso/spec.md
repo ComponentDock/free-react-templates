@@ -16,6 +16,7 @@ Recreation of ColorLib's **Virtualassistant** template as a modern React 19 + Vi
 - **Package**: `@free-react-templates/virtuoso`
 - **Deploy target**: `virtuoso.free.componentdock.com`
 - **Design category**: Virtual Assistant / Digital Services landing page
+- **Source design:** ColorLib "Virtualassistant" — https://colorlib.com/wp/template/virtualassistant/
 
 ## Design tokens
 

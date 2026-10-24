@@ -2,7 +2,7 @@
 
 ## Purpose
 
-LoginGlimmer is a clean, minimalist login form template that recreates ColorLib Login Form V19 (preview: https://colorlib.com/wp/template/login-form-v19/; live preview unreachable — spec derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below). It provides a centered card layout with a login form (email, password) on a light blue-gray background, with forgot password and sign-up links. Fully responsive down to mobile.
+LoginGlimmer is a clean, minimalist login form template that recreates ColorLib "Login Form V19" (preview: https://colorlib.com/wp/template/login-form-v19/; live preview unreachable — spec derived from screenshot) — **re-probed 2026-10-23: the demo serves** (measured record below). It provides a centered card layout with a login form (email, password) on a light blue-gray background, with forgot password and sign-up links. Fully responsive down to mobile.
 
 <!-- unreachable-reprobe:start -->
 > **Re-probe 2026-10-23** (`scripts/verify-unreachable-claims.py`): the reference DOES serve at `https://colorlib.com/etc/lf/Login_v19/index.html` — HTTP 200, 1,829 B, title `Login V19`.

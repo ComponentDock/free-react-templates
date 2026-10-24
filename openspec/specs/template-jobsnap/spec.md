@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Search Form Bar 19** — a simple job search template with a header, full-width hero image, and a white search card overlaying the hero bottom. The search card contains a text input with magnifying glass icon, a categories dropdown, and a blue search button in a horizontal layout.
+Recreation of ColorLib "Search Form Bar 19" — a simple job search template with a header, full-width hero image, and a white search card overlaying the hero bottom. The search card contains a text input with magnifying glass icon, a categories dropdown, and a blue search button in a horizontal layout.
 
 - **Source slug:** `search-form-bar-19`
 - **Source:** https://colorlib.com/wp/template/search-form-bar-19/

@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Music** template as a single-page React app.
+Recreation of the ColorLib "Music" template as a single-page React app.
 - **ColorLib source:** https://colorlib.com/wp/template/music/
 - **Preview:** https://preview.colorlib.com/theme/music/
 - **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/music-free-fullscreen-musician-website-template.jpg

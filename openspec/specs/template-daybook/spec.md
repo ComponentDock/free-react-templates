@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib Calendar V14 (`https://colorlib.com/wp/template/calendar-14/`), preview URL `https://colorlib.com/etc/calendar/cal_14/` (or similar ColorLib calendar demo format), built as a modern React 19 + Tailwind CSS 4 application using TypeScript.
+Recreation of ColorLib "Calendar V14" (`https://colorlib.com/wp/template/calendar-14/`), preview URL `https://colorlib.com/etc/calendar/cal_14/` (or similar ColorLib calendar demo format), built as a modern React 19 + Tailwind CSS 4 application using TypeScript.
 
 ## Design Tokens
 

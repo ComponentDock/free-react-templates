@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of the ColorLib **Videograph** template — a dark, cinematic video production portfolio site with hero slider, service cards, project gallery, team showcase, blog, and CTA section. Designed for videographers and production companies.
+Recreation of the ColorLib "Videograph" template — a dark, cinematic video production portfolio site with hero slider, service cards, project gallery, team showcase, blog, and CTA section. Designed for videographers and production companies.
 
 - **ColorLib source:** https://colorlib.com/wp/template/videograph/
 - **Live preview:** https://preview.colorlib.com/theme/videograph/

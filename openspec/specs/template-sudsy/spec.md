@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A Car Wash & Detailing template with hero, about, pricing, services and video/cta sections. Recreation of ColorLib **Carwash** template as a car wash and detailing business landing page.
+A Car Wash & Detailing template with hero, about, pricing, services and video/cta sections. Recreation of ColorLib "Carwash" template as a car wash and detailing business landing page.
 
 - **Source:** https://colorlib.com/wp/template/carwash/
 - **Preview:** https://preview.colorlib.com/theme/carwash/

@@ -10,6 +10,7 @@
 - **Recreation of:** ColorLib [Restauco](https://colorlib.com/wp/template/restauco/) (`https://preview.colorlib.com/theme/restauco/`)
 - **App Name:** `plated` (`@free-react-templates/plated`)
 - **Stack:** Vite, React 19, Tailwind CSS 4, TypeScript
+- **Source design:** ColorLib "Restauco" — https://colorlib.com/wp/template/restauco/
 
 ## Design Tokens (Extracted from Reference)
 

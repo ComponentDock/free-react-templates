@@ -13,7 +13,7 @@ source: https://preview.colorlib.com/theme/zacson/
 
 ## Purpose
 
-Recreation of ColorLib Zacson (https://colorlib.com/wp/template/zacson/) — a gym trainer personal landing page with hero slider, training categories, gallery, pricing plans, about section, and blog. The new name is "Musclepeak".
+Recreation of ColorLib "Zacson" (https://colorlib.com/wp/template/zacson/) — a gym trainer personal landing page with hero slider, training categories, gallery, pricing plans, about section, and blog. The new name is "Musclepeak".
 
 ### Design Tokens
 

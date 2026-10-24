@@ -1,6 +1,6 @@
 # Template: Formbloom (Contact Form)
 
-> Recreation of ColorLib **Contact Form 15**
+> Recreation of ColorLib "Contact Form 15"
 > (https://colorlib.com/wp/template/contact-form-15/)
 
 ## Purpose

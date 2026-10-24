@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Carousel 07** (`https://colorlib.com/wp/template/carousel-07/`), implemented as a modern React 19 + Tailwind CSS 4 + TypeScript template named **Slideway**.
+Recreation of ColorLib "Carousel 07" (`https://colorlib.com/wp/template/carousel-07/`), implemented as a modern React 19 + Tailwind CSS 4 + TypeScript template named **Slideway**.
 
 - **Preview URL**: `https://preview.colorlib.com/theme/carousel-07/` (preview unreachable during prep; built from screenshot & standard carousel layout conventions)
 - **Stack**: Vite, React 19, Tailwind CSS 4, Lucide React, TypeScript (strict).

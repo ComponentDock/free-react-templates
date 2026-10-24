@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Recreation of ColorLib **Contact Form V1** — a simple, centered contact card
+Recreation of ColorLib "Contact Form V1" — a simple, centered contact card
 on a blue gradient background with a decorative envelope illustration on the
 left and a form with rounded inputs on the right.
 

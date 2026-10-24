@@ -16,6 +16,7 @@ A single-page travel search form with three tabbed panels (Hotels, Car, Flight),
 a full-viewport scenic background image, and a centered white card with a
 colored tab bar. The form provides date pickers, dropdown selects, a traveller
 quantity selector, and checkbox options.
+- **Source design:** ColorLib "Colorlib Search 16" — https://colorlib.com/wp/template/colorlib-search-16/
 
 ## Source structure (from downloaded zip)
 

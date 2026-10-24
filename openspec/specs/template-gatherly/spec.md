@@ -3,8 +3,7 @@
 ## Purpose
 
 An events and conference landing template with a hero slider, countdown, speakers, a
-day-tabbed schedule, ticket tiers, blog and contact sections. Recreation of the ColorLib
-**MeetUp** template (https://colorlib.com/wp/template/meetup/) as a React 19 + Vite +
+day-tabbed schedule, ticket tiers, blog and contact sections. Recreation of the ColorLib "MeetUp" template (https://colorlib.com/wp/template/meetup/) as a React 19 + Vite +
 Tailwind CSS 4 + TypeScript single-page application.
 
 - **Source slug:** `meetup`

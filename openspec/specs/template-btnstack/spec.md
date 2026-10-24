@@ -5,6 +5,7 @@ Recreation of ColorLib Bootstrap Buttons 03 (`https://colorlib.com/wp/template/b
 ## Purpose
 
 BtnStack is a single-page button showcase template demonstrating solid and outline Bootstrap 4 button variants across multiple colors, sizes, shapes, and states, with an interactive playground for live preview.
+- **Source design:** ColorLib "Bootstrap Buttons 03" — https://colorlib.com/wp/template/bootstrap-buttons-03/
 
 ## Design tokens
 
