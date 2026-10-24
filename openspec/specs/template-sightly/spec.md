@@ -14,19 +14,20 @@ call-to-action banner, and a dark-purple footer.
 ## Design tokens
 
 <!-- design-tokens-backfill:2026-10-23 -->
+
 Measured from the live reference, not sampled off the screenshot:
 https://preview.colorlib.com/theme/expo/ (HTTP 200, 24,853 B, fetched 2026-10-23) and its theme stylesheet `theme/expo/assets/css/style.css` (182,950 B, sha256 `7853eb7de51f…`).
 CSS values are canonical over any screenshot sample.
 
-| Token | Value | Evidence in the reference |
-| --- | --- | --- |
-| Accent (most-used chromatic) | `#ff5700` | 27 declarations — `.border-btn`, `.boxed-btn:hover` |
-| Other chromatic values | `#1f2b7b`, `#423f8d`, `#415094` | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#423f8d` × 10 (h1); `#415094` × 7 (.genric-btn.default) |
-| Surface | `#ffffff` | 68 declarations — `.boxed-btn:hover`, `a` |
-| Ink / dark surface | `#000000` | 2 declarations — `.single-post-area .navigation-area .nav-left .thumb`, `.single-post-area .navigation-area .nav-right .thumb` |
-| Typeface | `"Roboto", sans-serif` (7 rules — body)<br>`"Josefin Sans", sans-serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
-| Body type | `font-weight: normal; font-size: 16px` | `body{…}` rule |
-| Radii | `50%`, `3px`, `5px` | `50%` (#back-top); `3px` (.genric-btn.radius); `5px` (.btn) |
+| Token                        | Value                                                                                  | Evidence in the reference                                                                                                      |
+| ---------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Accent (most-used chromatic) | `#ff5700`                                                                              | 27 declarations — `.border-btn`, `.boxed-btn:hover`                                                                            |
+| Other chromatic values       | `#1f2b7b`, `#423f8d`, `#415094`                                                        | `#1f2b7b` × 19 (.contact-info .media-body h3 a:hover); `#423f8d` × 10 (h1); `#415094` × 7 (.genric-btn.default)                |
+| Surface                      | `#ffffff`                                                                              | 68 declarations — `.boxed-btn:hover`, `a`                                                                                      |
+| Ink / dark surface           | `#000000`                                                                              | 2 declarations — `.single-post-area .navigation-area .nav-left .thumb`, `.single-post-area .navigation-area .nav-right .thumb` |
+| Typeface                     | `"Roboto", sans-serif` (7 rules — body)<br>`"Josefin Sans", sans-serif` (3 rules — h1) | `font-family` declarations in the theme sheet                                                                                  |
+| Body type                    | `font-weight: normal; font-size: 16px`                                                 | `body{…}` rule                                                                                                                 |
+| Radii                        | `50%`, `3px`, `5px`                                                                    | `50%` (#back-top); `3px` (.genric-btn.radius); `5px` (.btn)                                                                    |
 
 Palette in order of use: `#ffffff` ×68, `#f9f9ff` ×27, `#ff5700` ×27, `#1f2b7b` ×19, `#423f8d` ×10, `#999999` ×10.
 

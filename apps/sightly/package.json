@@ -1,7 +1,7 @@
 {
-  "name": "@free-react-templates/expo",
+  "name": "@free-react-templates/sightly",
   "private": true,
-  "homepage": "https://expo.free.componentdock.com",
+  "homepage": "https://sightly.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

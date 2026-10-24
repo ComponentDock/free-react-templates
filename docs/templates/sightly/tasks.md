@@ -11,38 +11,47 @@ Scope: Expo is an SEO / digital marketing landing page. It recreates the ColorLi
 Render order as composed in `apps/expo/src/App.tsx`:
 
 ### 1. Navbar
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: banner · Expo
 
 ### 2. Hero
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: Build audience and grow your brand · Explore Us
 
 ### 3. Brands
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: Trusted by over 3,000 world&apos;s leading companies
 
 ### 4. About
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: We take a steps to build a successful business · Explore Us
 
 ### 5. Features
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: How we can help
 
 ### 6. ProjectUs
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: We are here to help you for better solutions
 
 ### 7. Pricing
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: Affordable pricing plan · Get Started Now
 
 ### 8. CallToAction
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: Let&apos;s talk about your project · Start Talking
 
 ### 9. Footer
+
 - No dedicated spec block — hold this band to the design notes.
 - Anchors: contentinfo · Facebook · Twitter · LinkedIn
 
