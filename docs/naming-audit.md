@@ -15,6 +15,9 @@ node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 
 ## State after Massive → Appmint
 
+> **In flight:** `Medico` → `Sanara` (claimed; renames in the table below
+> disappear as each PR merges).
+
 5 apps reuse their source name. 445 of the 1,703 specs carry no auto-detectable
 `ColorLib "X"` line, so the true count can only be equal to or higher than this
 list — record the mapping when those specs are next touched.
