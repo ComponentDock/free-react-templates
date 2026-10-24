@@ -1,10 +1,14 @@
-# Jobboard — Implementation Tasks
+# Rosterly — Implementation Tasks
 
 Source design: ColorLib **Jobboard** (`https://colorlib.com/wp/template/jobboard/`, preview
-`https://preview.colorlib.com/theme/jobboard/`) → recreation name **jobboard**. Shipped at
-https://jobboard.free.componentdock.com.
+`https://preview.colorlib.com/theme/jobboard/`) → recreation name **rosterly**. Shipped at
+https://rosterly.free.componentdock.com.
 
-Row note: `TEMPLATES.md` links the slug `jobboard` for this app, and the spec records the
+Naming (AGENTS.md rule 5): the template ships as **Rosterly**; the source name stays out of
+every app file. Provenance lives only in this brief, the spec, `TEMPLATES.md` and the PR.
+The folder was `apps/jobboard` until the rule-5 rename, i.e. it reused the source slug.
+
+Row note: `TEMPLATES.md` links the slug `rosterly` for this app, and the spec records the
 same slug — no disagreement. (Until 2026-10-24 both the spec and this brief recorded ColorLib
 "Careers" and its blue `#1644ba`; the app never rendered that design. The `SPEC-STALE`
 verdict in `docs/spec-row-mismatch.md` settled it; tokens here are re-measured from
@@ -20,11 +24,11 @@ Tailwind 4 + TypeScript single-page application.
 
 ## Component breakdown
 
-Render order as composed in `apps/jobboard/src/App.tsx`:
+Render order as composed in `apps/rosterly/src/App.tsx`:
 
 ### 1. Navbar
 - No dedicated spec block — hold this band to the design notes.
-- Anchors: JobBoard · Post a Job · Log In
+- Anchors: Rosterly · Post a Job · Log In
 
 ### 2. Hero
 - No dedicated spec block — hold this band to the design notes.
@@ -36,7 +40,7 @@ Render order as composed in `apps/jobboard/src/App.tsx`:
 
 ### 4. StatsCounter
 - No dedicated spec block — hold this band to the design notes.
-- Anchors: JobBoard Site Stats
+- Anchors: Rosterly Site Stats
 
 ### 5. JobListings
 - No dedicated spec block — hold this band to the design notes.
@@ -56,14 +60,14 @@ Render order as composed in `apps/jobboard/src/App.tsx`:
 
 ### 9. Footer
 - No dedicated spec block — hold this band to the design notes.
-- Anchors: JobBoard · Search Trending · Company · Support · Contact Us · New York, NY
+- Anchors: Rosterly · Search Trending · Company · Support · Contact Us · New York, NY
 
 ## Verification
 
-- [x] `apps/jobboard` ships on https://jobboard.free.componentdock.com
+- [x] `apps/rosterly` ships on https://rosterly.free.componentdock.com
 - [x] Typecheck / lint / tests / build pass at the repo gate
 - [x] Section order and copy match the design notes
-- [x] No source-designer name, source URL or source template name under `apps/jobboard/`
+- [x] No source-designer name, source URL or source template name under `apps/rosterly/`
 - [x] Footer links Component Dock
 
 ## Delivery contract (repo rules — non-negotiable)
@@ -74,8 +78,8 @@ Render order as composed in `apps/jobboard/src/App.tsx`:
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/jobboard/` may name the source designer,
+- **Provenance ban.** No file under `apps/rosterly/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/jobboard/public/CNAME` = `jobboard.free.componentdock.com`
-  and the package `homepage` = `https://jobboard.free.componentdock.com`.
+- **Deploy identity.** `apps/rosterly/public/CNAME` = `rosterly.free.componentdock.com`
+  and the package `homepage` = `https://rosterly.free.componentdock.com`.

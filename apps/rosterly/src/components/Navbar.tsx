@@ -29,7 +29,7 @@ export function Navbar() {
             scrolled ? 'text-lime-400' : 'text-white',
           )}
         >
-          JobBoard
+          Rosterly
         </a>
 
         <nav className="hidden lg:flex items-center gap-2">

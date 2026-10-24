@@ -11,7 +11,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'JobBoard — Find Your Dream Job'
+    document.title = 'Rosterly — Find Your Dream Job'
   }, [])
 
   return (

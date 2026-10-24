@@ -1,5 +1,5 @@
 {
-  "name": "@free-react-templates/jobboard",
+  "name": "@free-react-templates/rosterly",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jobboard.free.componentdock.com"
+  "homepage": "https://rosterly.free.componentdock.com"
 }

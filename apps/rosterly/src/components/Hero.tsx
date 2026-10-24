@@ -10,7 +10,7 @@ export function Hero() {
     <section
       id="home"
       className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: "url('https://picsum.photos/seed/jobboard-hero/1920/800')" }}
+      style={{ backgroundImage: "url('https://picsum.photos/seed/rosterly-hero/1920/800')" }}
     >
       {/* Green overlay */}
       <div className="absolute inset-0 bg-lime-400/90" />

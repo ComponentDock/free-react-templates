@@ -55,12 +55,12 @@ export function StatsCounter() {
   return (
     <section
       className="relative py-16 bg-cover bg-center"
-      style={{ backgroundImage: "url('https://picsum.photos/seed/jobboard-stats/1920/400')" }}
+      style={{ backgroundImage: "url('https://picsum.photos/seed/rosterly-stats/1920/400')" }}
     >
       <div className="absolute inset-0 bg-lime-400/90" />
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">
-          JobBoard Site Stats
+          Rosterly Site Stats
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s) => (

@@ -13,14 +13,14 @@ beforeEach(() => {
 describe('App', () => {
   it('renders all main sections', () => {
     render(<App />)
-    // Navbar + Footer both say "JobBoard"
-    expect(screen.getAllByText('JobBoard').length).toBeGreaterThanOrEqual(2)
+    // Navbar + Footer both say "Rosterly"
+    expect(screen.getAllByText('Rosterly').length).toBeGreaterThanOrEqual(2)
     // Hero
     expect(screen.getByText('The Easiest Way To Get Your Dream Job')).toBeInTheDocument()
     // Trending Keywords
     expect(screen.getByText('Trending Keywords:')).toBeInTheDocument()
     // Stats
-    expect(screen.getByRole('heading', { name: 'JobBoard Site Stats' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Rosterly Site Stats' })).toBeInTheDocument()
     // Job Listings
     expect(screen.getByRole('heading', { name: /43,167/ })).toBeInTheDocument()
     // CTA
@@ -35,6 +35,6 @@ describe('App', () => {
 
   it('sets page title', () => {
     render(<App />)
-    expect(document.title).toBe('JobBoard — Find Your Dream Job')
+    expect(document.title).toBe('Rosterly — Find Your Dream Job')
   })
 })

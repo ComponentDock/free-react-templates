@@ -1,4 +1,4 @@
-# Template: JobBoard (Job Board / Careers Portal)
+# Template: Rosterly (Job Board / Careers Portal)
 
 ## Purpose
 
@@ -11,21 +11,26 @@ Tailwind 4 + TypeScript single-page application.
 
 - **Source:** https://colorlib.com/wp/template/jobboard/
 - **Preview:** https://preview.colorlib.com/theme/jobboard/
-- **New name:** `jobboard`
-- **App folder:** `apps/jobboard`
-- **Package:** `@free-react-templates/jobboard`
-- **Surge target:** `jobboard.free.componentdock.com`
+- **New name:** `rosterly`
+- **App folder:** `apps/rosterly`
+- **Package:** `@free-react-templates/rosterly`
+- **Surge target:** `rosterly.free.componentdock.com`
 - **Source design:** ColorLib "Jobboard" — https://colorlib.com/wp/template/jobboard/
 
 > **Provenance correction (2026-10-24f, `verify-spec-row-mismatch.py`).** This
 > spec named ColorLib "Careers" until this run, and its token table carried that
 > design's royal blue `#1644ba`. The app never rendered that design: its copy
-> ("The Easiest Way To Get Your Dream Job", "JobBoard Site Stats", "Get The
+> ("The Easiest Way To Get Your Dream Job", "Rosterly Site Stats", "Get The
 > Mobile Apps") is the Jobboard demo's, and its palette is Jobboard's lime
 > `#89ba16`. The spec now records the design the app actually recreates, which
-> is also the design on the row that links it. Note that the folder is the
-> source slug — the naming audit reports this app as a rule-5 rename candidate
-> (`docs/spec-row-mismatch.md`).
+> is also the design on the row that links it.
+
+**Naming (AGENTS.md rule 5).** The template ships as **Rosterly**. The folder,
+package, CNAME and wordmark were `jobboard` until 2026-10-24 — the source slug,
+which the naming audit reported as a rule-5 violation; the rename is recorded in
+`docs/naming-audit.md`. The source name now survives only in this spec's
+provenance line, the reference's own colorlib.com URLs, and the quoted reference
+strings the token evidence needs.
 
 ## Design tokens
 
@@ -49,13 +54,13 @@ Measured from the live preview, not a screenshot: `css/style.css` (37,406 B) and
 
 ## Section structure (page order)
 
-1. **Navbar** — "JobBoard" wordmark, links (Home, About, Job Listings, Pages,
+1. **Navbar** — "Rosterly" wordmark, links (Home, About, Job Listings, Pages,
    Services, Blog, Contact), "Post a Job" + "Log In" on the right.
 2. **Hero** — full-width photo with dark overlay, headline "The Easiest Way To
    Get Your Dream Job", a search form (text "Job title, Company…", two selects
    "Select Region" / "Select Job Type", submit button).
 3. **Trending keywords** — "Trending Keywords:" label + tag chips.
-4. **Stats counter** — "JobBoard Site Stats" and "43,167 Job Listed" over a
+4. **Stats counter** — "Rosterly Site Stats" and "43,167 Job Listed" over a
    photo band, four counters.
 5. **Job listings** — three-column card grid (Product Designer, Digital
    Marketing Director, Back-end Engineer (Python), Senior Art Director …), each
@@ -71,7 +76,7 @@ Measured from the live preview, not a screenshot: `css/style.css` (37,406 B) and
 
 ### Requirement: Navbar
 
-The header SHALL show the JobBoard wordmark, the page links and the two
+The header SHALL show the Rosterly wordmark, the page links and the two
 right-hand actions, and collapse to a menu below the `lg` breakpoint.
 
 #### Scenario: Navigation renders
@@ -121,7 +126,7 @@ A photo band SHALL show the reference statistics headline and counters.
 #### Scenario: Counters render
 
 - **GIVEN** the stats band is in view
-- **THEN** "JobBoard Site Stats" and the "43,167 Job Listed" figure are visible
+- **THEN** "Rosterly Site Stats" and the "43,167 Job Listed" figure are visible
 - **AND** every counter shows a numeric value (no blank counters if the
   intersection observer never fires)
 
@@ -185,12 +190,12 @@ The footer SHALL carry the reference link columns and the Component Dock credit.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/jobboard/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/rosterly/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name beyond the product name itself.
 
 #### Scenario: Source scan
 
-- **GIVEN** the shipped `apps/jobboard` tree
+- **GIVEN** the shipped `apps/rosterly` tree
 - **WHEN** it is searched for `colorlib` (case-insensitive)
 - **THEN** no file matches
 

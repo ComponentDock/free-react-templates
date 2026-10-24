@@ -13,6 +13,16 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Jobboard → Rosterly (2026-10-24i)
+
+**7 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/medical`, `apps/nurture`, `apps/oraxol`, `apps/pawpal`, `apps/petsitting`,
+`apps/petvet`, `apps/unioncorp`), plus `apps/itkol`, which a name-only test still
+cannot see. `apps/jobboard` → `rosterly` cleared the first of the eight visible
+violations; the source name survives only in the spec's `ColorLib "Jobboard"`
+provenance line and the reference's own colorlib.com URLs, because the token
+evidence quotes the source sheets' measured declarations verbatim.
+
 ## State after Expo → Sightly (2026-10-24h)
 
 **8 apps reuse their source name** (`node scripts/audit-naming.mjs`:
@@ -90,11 +100,10 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
 `massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
 `mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`
-(#1842).
+(#1842), `jobboard` → `rosterly` (this PR).
 
 | app              | source design |
 | ---------------- | ------------- |
-| apps/jobboard    | Jobboard      |
 | apps/medical     | Medical       |
 | apps/nurture     | Nurture       |
 | apps/oraxol      | Oraxol        |

@@ -1,25 +1,26 @@
-# JobBoard — Design Notes
+# Rosterly — Design Notes
 
 Source: ColorLib **Jobboard** — `https://colorlib.com/wp/template/jobboard/`
 Live preview: `https://preview.colorlib.com/theme/jobboard/` (HTTP 200, 25,563 B, re-read 2026-10-24)
 Served title: `JobBoard — Website Template by Colorlib`
 Sheets (token authority): `css/style.css` 37,406 B · `css/custom-bs.css` 36,236 B
-Shipped: https://jobboard.free.componentdock.com
+Shipped: https://rosterly.free.componentdock.com
 
 A job-board landing page: lime-on-white, Nunito throughout — hero with a three-field
 search bar over a photo, a trending-keyword chip row, a stats band on the same photo
 overlay, a job-card grid, a "Looking For A Job?" CTA, a client-logo row, a testimonial
 carousel, a mobile-app band and a four-column footer.
 
-Provenance note (2026-10-24): this brief and `openspec/specs/template-jobboard/spec.md`
+Provenance note (2026-10-24): this brief and `openspec/specs/template-rosterly/spec.md`
 were corrected together. Both previously recorded ColorLib "Careers" and its royal blue
 `#1644ba`; the app has never rendered that design — its copy is Jobboard's and its palette
 is Jobboard's lime `#89ba16` (measured: 20 declarations in `style.css`, 21 in
 `custom-bs.css`; the sheets' other frequent literals are `#212529`, `#6c757d`, `#f8f9fa`,
 `#fff568`, `#7f848c`). `verify-spec-row-mismatch.py` adjudicated the app's own strings
-(`SPEC-STALE`, `docs/spec-row-mismatch.md` main `268627962`). The folder equals the source
-slug, so the naming audit reports this app as a rule-5 rename candidate — that rename is the
-rename stream's call, not the prep stream's.
+(`SPEC-STALE`, `docs/spec-row-mismatch.md` main `268627962`). The folder reused the source
+slug until 2026-10-24, when the rule-5 rename moved it to `apps/rosterly` (this brief,
+`docs/templates/rosterly/`); the source name now survives only in this provenance line and
+the reference's own colorlib.com URLs.
 
 ## Design tokens (reference, measured)
 
@@ -38,7 +39,7 @@ rename stream's call, not the prep stream's.
 | buttons | solid lime, ink text, `0.25rem`, no shadow | `.btn-primary` |
 | overlay | dark photo overlay (`.section-hero.overlay`, `.overlay-primary`) | hero, stats, CTA, mobile-app bands share it |
 
-`apps/jobboard/src/index.css` expresses the brand as a full lime scale
+`apps/rosterly/src/index.css` expresses the brand as a full lime scale
 (`--color-lime-400: #89ba16`, 500 `#7aa814`, 600 `#62850f`, tint 50 `#f7fae8` … 900 `#2a3a08`)
 plus `--font-sans: 'Nunito', …`; there is no `--color-brand` token. That is an app-side
 expression of the same measured brand, not a second palette.
@@ -47,10 +48,10 @@ expression of the same measured brand, not a second palette.
 
 | # | reference section | app band |
 | --- | --- | --- |
-| 1 | `header.site-navbar` — "JobBoard" wordmark, links (Home, About, Job Listings, Pages, Services, Blog, Contact), "Post a Job" + "Log In" | `Navbar` |
+| 1 | `header.site-navbar` — "Rosterly" wordmark, links (Home, About, Job Listings, Pages, Services, Blog, Contact), "Post a Job" + "Log In" | `Navbar` |
 | 2 | `section.home-section.section-hero.overlay.bg-image` — "The Easiest Way To Get Your Dream Job" + search bar (title, region, type) | `Hero` |
 | 3 | trending keyword chips — "Trending Keywords:" | `TrendingKeywords` |
-| 4 | stats band on the photo overlay — "JobBoard Site Stats", "43,167 Job Listed", four counters | `StatsCounter` |
+| 4 | stats band on the photo overlay — "Rosterly Site Stats", "43,167 Job Listed", four counters | `StatsCounter` |
 | 5 | `section.site-section` — job cards (Product Designer, Digital Marketing Director, Back-end Engineer (Python), Senior Art Director …) | `JobListings` |
 | 6 | CTA band on the photo overlay — "Looking For A Job?" | `CtaBanner` |
 | 7 | `section.site-section.py-4` — "Company We've Helped" + client logo row | `CompanyLogos` |
@@ -98,7 +99,7 @@ expression of the same measured brand, not a second palette.
 
 - **Footer credit.** The footer SHALL link [Component Dock](https://www.componentdock.com/);
   it is the only attribution line the recreation carries.
-- **Provenance ban.** No file under `apps/jobboard/` may name the source designer, carry a
+- **Provenance ban.** No file under `apps/rosterly/` may name the source designer, carry a
   `colorlib.com` URL, or reuse the source template's name (AGENTS.md rule 5).
-- **Deploy identity.** `apps/jobboard/public/CNAME` = `jobboard.free.componentdock.com` and
-  the package `homepage` = `https://jobboard.free.componentdock.com`.
+- **Deploy identity.** `apps/rosterly/public/CNAME` = `rosterly.free.componentdock.com` and
+  the package `homepage` = `https://rosterly.free.componentdock.com`.

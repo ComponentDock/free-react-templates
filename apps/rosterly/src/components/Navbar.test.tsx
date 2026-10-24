@@ -5,7 +5,7 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('renders brand name', () => {
     render(<Navbar />)
-    expect(screen.getByText('JobBoard')).toBeInTheDocument()
+    expect(screen.getByText('Rosterly')).toBeInTheDocument()
   })
 
   it('renders navigation links', () => {
