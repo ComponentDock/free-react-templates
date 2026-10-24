@@ -21,13 +21,13 @@ python3 scripts/verify-row-multiplicity.py --self-test     # 8/8
 python3 scripts/verify-row-multiplicity-controls.py        # 15/15 (4 GATE)
 ```
 
-Measured state (`main` after PR #1865, which shipped `grithaus` and re-pointed the two
-`fitnessgym` rows; offline census):
+Measured state (`main` after PR #1867, which shipped `landly` and re-pointed the three
+`realtors` rows; offline census):
 
 ```
-rows 2,857 · slugs 1,646 · multi-row slugs 775 · extra rows 1,211 · flags 98
-  CONSISTENT   677   one app, and its spec claims the slug
-  SPEC-STALE    21   one app, whose spec does NOT claim the slug
+rows 2,857 · slugs 1,646 · multi-row slugs 775 · extra rows 1,211 · flags 97
+  CONSISTENT   678   one app, and its spec claims the slug
+  SPEC-STALE    20   one app, whose spec does NOT claim the slug
   DUPLICATE     73   >=2 apps, >=2 of them claiming the slug
   ROW-POINTER    4   >=2 apps, exactly ONE claims the slug
   SLUG-ORPHAN    0   no app claims the slug
@@ -41,7 +41,7 @@ collision — the rows really do point at one visual design.
 
 ## The buckets, and the one that is not a defect
 
-`CONSISTENT` (677) is the healthy case, and the reason the axis needed a
+`CONSISTENT` (678) is the healthy case, and the reason the axis needed a
 measurement before a fix: the overwhelming majority of repeated rows are
 correct. The other buckets are three different defects that need three different
 fixes — rows, apps, and spec lines respectively.
@@ -142,7 +142,7 @@ Nine of the 73 do **not** reach that evidence bar. They are reported, not fixed:
 | `reopen` | 2 (2080,2556) | reprise, gallery | UNRESOLVED | one shared phrase only: reprise+gallery:1 |
 | `satner` | 3 (2426,2561,2726) | smithy, kael | UNRESOLVED | one shared phrase only: smithy+kael:1 |
 
-### 2. APP-WRONG-DESIGN — the row is a false `[x]` (14 slugs / 34 rows)
+### 2. APP-WRONG-DESIGN — the row is a false `[x]` (13 slugs / 31 rows)
 
 One app is credited by the rows of a design it does not recreate, and its own
 copy matches the design its spec names far better. The test compares EXCLUSIVE
@@ -150,7 +150,6 @@ phrases only (see "Identity" below), so each pair is `row-excl / spec-excl`:
 
 | slug | rows (lines) | app | its spec says | row-excl / spec-excl |
 |---|---|---|---|---|
-| `realtors` | 3 (485,1149,2608) | roost | `stayhome` | 0 / 32 |
 | `topgym` | 3 (515,1206,1883) | ironpulse | `crossbody` | 0 / 21 |
 | `buildream` | 2 (553,1339) | mortar | `grunt` | 1 / 4 |
 | `jackco` | 3 (593,2398,2523) | dossier | `alias` | 1 / 25 |
@@ -165,16 +164,17 @@ phrases only (see "Identity" below), so each pair is `row-excl / spec-excl`:
 | `amplify` | 3 (2287,2379,2496) | amplify | `uza` | 1 / 23 |
 | `resume` | 2 (2422,2724) | resume | `personalportfolio` | 0 / 17 |
 
-Those **14** ColorLib designs have **no app**, while their rows say `[x]`. Four have left this
+Those **13** ColorLib designs have **no app**, while their rows say `[x]`. Five have left this
 table: PR #1862 built `dreamrs` as **`manorly`** (rows 106 / 1967 / 2587), PR #1863 built
 `shopmax` as **`drapely`** (rows 230 / 1602 / 1730), PR #1864 built `juli` as **`saffron`**
-(rows 266 / 2402) and PR #1865 built `fitnessgym` as **`grithaus`** (rows 397 / 1846) — the
-bucket is now **14 slugs / 34 rows**. The
+(rows 266 / 2402), PR #1865 built `fitnessgym` as **`grithaus`** (rows 397 / 1846) and PR #1867
+built `realtors` as **`landly`** (rows 485 / 1149 / 2608) — the bucket is now **13 slugs / 31
+rows**. The
 recurring shape is a name collision — an app was given the invented name of
 *another* ColorLib design (`villa`, `summit`, `glamour`, `vigor`, `nova`,
 `orbit`, `depot`, `resume`, `amplify`, `imagine` are all ColorLib slugs that also
 name a shipped app), and the row pointer then matched the row to the subdomain by
-name. Two of the 14 are thin and need a human eye first: `nova` (2 exclusive
+name. Two of the 13 are thin and need a human eye first: `nova` (2 exclusive
 phrases — the error page it ships barely has copy) and `buildream` (1 / 4 against
 the short Grunt studio page).
 
@@ -253,7 +253,7 @@ from the live side alone.
 1. **Re-point the 8 stale rows** in §4 (`sudsy`→`gleam` ×2, `batterly`→`crumbs`,
    `glint`→`lumen` ×4, and `saas` once the tail is adjudicated). `TEMPLATES.md`
    only; no marker flips, no app edits.
-2. **Re-open the 15 designs** left in §2: their rows are `[x]` and no app recreates
+2. **Re-open the 13 designs** left in §2: their rows are `[x]` and no app recreates
    them. Point the rows at an app that does, or build them — and stop naming apps
    after ColorLib slugs, which is what created the class.
 3. **Decide the 64 duplicates** in §1: one product per design. The table names

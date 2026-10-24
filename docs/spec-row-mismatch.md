@@ -47,16 +47,16 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24s, main after PR #1865 — the two `fitnessgym` rows now point at the built `grithaus` app, so that design left §2 of `docs/row-multiplicity.md`)
+## Census (re-measured 2026-10-24t, main after PR #1867 — the three `realtors` rows now point at the built `landly` app, so that design left §2 of `docs/row-multiplicity.md`)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,237 |
-| apps                               | 1,711 |
-| `AGREE`                            | 1,704 |
+| specs                              | 3,240 |
+| apps                               | 1,713 |
+| `AGREE`                            | 1,705 |
 | `DRIFT`                            | **3** |
-| `PREP` (spec-only)                 | 1,526 |
-| `ROW-MULTI` apps                   | 33    |
+| `PREP` (spec-only)                 | 1,527 |
+| `ROW-MULTI` apps                   | 32    |
 | `SLUG-OWNER` subjects              | 6     |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
@@ -84,8 +84,11 @@ design — whose two rows credited `petal` while that app recreates Florist — 
 specs `3,237`, `ROW-MULTI` 33, `SLUG-OWNER` 6), and the Fitnessgym design — whose two rows credited
 `vigor` while that app recreates Endurance — was built as **`grithaus`** (PR #1865) and its rows
 397 / 1846 re-pointed (`AGREE=1704 DRIFT=3`, apps `1,711`, specs `3,237`, `PREP` 1,526, `ROW-MULTI`
-33, `SLUG-OWNER` 6). `dreamrs`, `shopmax`, `juli` and `fitnessgym` therefore leave
-`docs/row-multiplicity.md` §2, which now counts **14** designs with no app.
+33, `SLUG-OWNER` 6), and the Realtors design — whose three rows credited `roost` while that app
+recreates Stayhome — was built as **`landly`** (PR #1867) and its rows 485 / 1149 / 2608
+re-pointed (`AGREE=1705 DRIFT=3`, apps `1,713`, specs `3,240`, `PREP` 1,527, `ROW-MULTI` 32,
+`SLUG-OWNER` 6). `dreamrs`, `shopmax`, `juli`, `fitnessgym` and `realtors` therefore leave
+`docs/row-multiplicity.md` §2, which now counts **13** designs with no app.
 
 ## The 3 remaining drift cases (adjudicated against the live previews)
 
