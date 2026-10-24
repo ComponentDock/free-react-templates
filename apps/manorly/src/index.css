@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Manorly brand palette — measured from the reference sheet: */
+  /* brand red #ff3334 (61 declarations), hero gradient #f73347 → indigo at .2, */
+  /* mist #f9f9ff, panel #f4f4f4, ink #000, footer #030305, muted #999999 */
+  --color-brand: #ff3334;
+  --color-brand-deep: #f73347;
+  --color-mist: #f9f9ff;
+  --color-panel: #f4f4f4;
+  --color-ink: #030305;
+  --color-muted: #999999;
+
+  /* Poppins — the reference's only typeface */
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
