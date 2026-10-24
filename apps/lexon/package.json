@@ -1,7 +1,7 @@
 {
-  "name": "@free-react-templates/justlaw",
+  "name": "@free-react-templates/lexon",
   "private": true,
-  "homepage": "https://justlaw.free.componentdock.com",
+  "homepage": "https://lexon.free.componentdock.com",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
