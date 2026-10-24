@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Flint brand palette:
+     - teal #367f7c (accent: pill buttons, section rules, icon chips, footer
+       links) · hover #2e6c69 · active #2b6663 · light #45a39f (social hover)
+     - surfaces: white #fff · band #efefef (footer, arrow borders) · icon-chip
+       tint rgba(54,127,124,.1)
+     - ink #000 (headings) · body #212529 · muted #6c757d · footer #888/#777
+     - fonts: Playfair Display (headings/logo) + Open Sans (body), Google Fonts */
+  --color-brand: #367f7c;
+  /* primary scale so shared Button/ButtonLink (bg-primary-600) render teal */
+  --color-primary: #367f7c;
+  --color-primary-50: #eef5f5;
+  --color-primary-100: #d7e7e6;
+  --color-primary-200: #b0d0ce;
+  --color-primary-300: #86b7b5;
+  --color-primary-400: #5c9d9a;
+  --color-primary-500: #428c88;
+  --color-primary-600: #367f7c;
+  --color-primary-700: #2e6c69;
+  --color-primary-800: #2b6663;
+  --color-primary-900: #245452;
+  --color-brand-dark: #2b6663;
+  --color-brand-light: #45a39f;
+  --color-surface: #ffffff;
+  --color-band: #efefef;
+  --color-ink: #000000;
+  --color-body: #212529;
+  --color-muted: #6c757d;
+  --color-footer-text: #888888;
+  --color-footer-link: #777777;
+
+  /* Playfair Display (headings/logo) · Open Sans (body) · Georgia (quotes),
+     loaded via Google Fonts <link> in index.html. */
+  --font-sans: 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-serif: Georgia, ui-serif, serif;
+}
+
+@layer base {
+  body {
+    background: #ffffff;
+    color: #212529;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
