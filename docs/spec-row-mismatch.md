@@ -87,12 +87,13 @@ not render, and in seven of those the body (token table, section list,
 Requirements) is the other design's too — only `jobboard` and `medical` were
 provenance-only.
 
-## Fixed in this run (`47b990932` + this commit)
+## Fixed so far
 
 | app | was | now | why it was safe |
 | --- | --- | --- | --- |
 | `jobboard` | ColorLib "Careers", tokens `#1644ba`/Nunito, Careers sections | ColorLib "Jobboard", measured lime `#89ba16`, the nine reference bands, Requirements aligned to the app | the app's copy is Jobboard's; the row already said `jobboard`; tokens re-measured from `css/style.css` + `custom-bs.css` |
 | `medical` | ColorLib "Medical Wordpress Themes" (a round-up article, no demo) | ColorLib "Medical" | the body, tokens and section order were already measured from `/theme/medical/`; only the name was wrong |
+| `ledger` | ColorLib "Accounting", green `#1BA12D`/Montserrat, accounting sections | ColorLib "Daren", measured red `#ef1313` + `"Source Serif Pro"` display face, the eight Daren bands | the app's copy is Daren's (`Creative & Design`, `Search Objects`, `LOADING MORE`); **both** spec and `docs/templates/ledger/` were rewritten, tokens re-measured from `theme/daren/css/style.css` (123,435 B, sha `427b90d0…`) |
 
 Both corrections make the rule-5 audit **louder, not quieter**: the folders
 `apps/jobboard` and `apps/medical` now normalise to their own source slug, so
@@ -104,11 +105,12 @@ names. Renaming is the rename stream's call, not the prep stream's.
 
 ## Queue (docs-only, in order of yield)
 
-1. **Seven spec rewrites** — `bistro`→allfood, `concertina`→accordion-16,
-   `formwell`→contact-form-08, `ledger`→daren, `prose`→author, `vellum`→readit,
-   `zenith`→saasify. Each needs the provenance *and* the body rewritten from the
-   winner's live DOM (the token tables currently carry the other design's
-   palette). One app per run, the normal prep shape.
+1. **Six spec rewrites** — `bistro`→allfood, `concertina`→accordion-16,
+   `formwell`→contact-form-08, `prose`→author, `vellum`→readit,
+   `zenith`→saasify (`ledger`→daren landed 2026-10-24, spec **and** docs). Each needs the
+   provenance *and* the body rewritten from the winner's live DOM (the token tables
+   currently carry the other design's palette), plus `docs/templates/<app>/` — a corrected
+   spec with a stale brief still misdirects the implementer. One app per run.
 2. **Five row pointers** (implementer/rename stream) — the rows below credit the
    app with a design it does not recreate, so they are false `[x]`s and their
    designs are, in fact, unshipped:
@@ -184,3 +186,31 @@ names. Renaming is the rename stream's call, not the prep stream's.
 - **`-p2` has no `node_modules`**, so `npm run spec:validate` cannot run there;
   the structural gate used here is `## Purpose` + `## Requirements` + at least one
   `#### Scenario:` per edited spec, plus the heading count unchanged elsewhere.
+
+## The docs layer of a drift case (found 2026-10-24 while rewriting `ledger`)
+
+A corrected spec is not a corrected prep. `ledger`'s spec was rewritten, but its
+`docs/templates/ledger/tasks.md` still said "follows the SPEC" while quoting the
+*other* design, and its `design-notes.md` wrote a token table in the shape
+`## Design tokens (`apps/<name>/src/index.css` `@theme`)` whose values belonged to
+the discarded palette. Implementers read the brief first; a spec-only fix leaves
+the misdirection in place. `ledger` therefore had spec **and** docs rewritten
+together, and its jobboard-style sibling shows the residual:
+
+- `docs/templates/jobboard/design-notes.md:86` defines `--color-brand: #1644ba;`
+  (Careers blue) and `:14`/`:24`/`:52` prescribe it for buttons and card accents,
+  while `openspec/specs/template-jobboard/spec.md:37` measures Jobboard's lime
+  `#89ba16`. The brief is now the wrong design's brief.
+- `docs/templates/jobboard/tasks.md:3` says the spec records `careers` — it records
+  `jobboard`.
+
+`verify-docs-drift.py` cannot see this class: it flags a dead-reference claim and a
+hex the spec's `#old → #new` delta line supersedes, and a provenance-only rewrite
+carries no such delta line (731 flags corpus-wide, none of them `jobboard`). The
+missing axis is **docs-source vs spec-source**: parse the source slug out of
+`docs/templates/<app>/` (the `Source`/`Reference` line and any
+`colorlib.com/wp/template/<slug>/` URL) and compare it with the spec's `Source
+slug:` — a mismatch is the same `SPEC-STALE` finding one layer down. Until it
+ships, treat any drift fix as **two artefacts**: `spec.md` *and*
+`docs/templates/<app>/`. Remaining briefs to correct by hand: `jobboard` (above),
+plus the six rewrites still in the queue.
