@@ -1,13 +1,18 @@
-# Template: Medical (Healthcare Landing)
+# Template: Verdia (Healthcare Landing)
 
 ## Purpose
 
-Medical is a single-page healthcare template in the free-react-templates
+Verdia is a single-page healthcare template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib "Medical" design
 (`https://colorlib.com/wp/template/medical/`, preview
 `https://preview.colorlib.com/theme/medical/`), built under the monorepo
 stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
+- **Recreation name:** **Verdia** — app folder `apps/verdia`, package
+  `@free-react-templates/verdia`, deploy target
+  `https://verdia.free.componentdock.com`. Renamed from the folder `medical`
+  (which reused the source slug, AGENTS.md rule 5) on 2026-10-24j; the design
+  and tokens are unchanged.
 - **Source design:** ColorLib "Medical" — https://colorlib.com/wp/template/medical/
 
 > **Provenance correction (2026-10-24f, `verify-spec-row-mismatch.py`).** This
@@ -18,7 +23,9 @@ stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 > token table below and the section order were already measured from
 > `/theme/medical/`; only the provenance name was wrong. The folder equals the
 > source slug, so the naming audit reports this app as a rule-5 rename
-> candidate (`docs/spec-row-mismatch.md`).
+> candidate (`docs/spec-row-mismatch.md`). **Resolved 2026-10-24j:** the app
+> moved to `apps/verdia` under the new name Verdia; only the provenance line
+> and the reference URLs above still name the source.
 
 The original is a green-accented medical page: a banner ("We Care for Your
 Health Every Moment"), a servicing-hours / appointment band ("Book an
@@ -28,7 +35,7 @@ Emergency, Intensive Care, Family Planning), an offered-services section
 ("Our Consultants": Andy Florence), a client feedback band ("Enjoy our
 Client's Feedback": Fannie Rowe), a recent-blogs row ("Portable Fashion for
 women", "Summer ware are coming"), and a footer with Top Products / Contact
-Us / Newsletter columns. Medical recreates that structure section-for-section
+Us / Newsletter columns. Verdia recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
 
@@ -72,23 +79,23 @@ assets copied).
   appointment band; facilities cards; services with lucide icons; consultant
   cards with initials avatars; feedback band; blog cards with seeded photos;
   footer with link columns; all images picsum-seeded
-  (`picsum.photos/seed/medical-N/w/h`); Google Fonts via `<link>`.
+  (`picsum.photos/seed/verdia-N/w/h`); Google Fonts via `<link>`.
 
-Medical lives in `apps/medical` and uses shared components from `packages/ui`
+Verdia lives in `apps/verdia` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Medical", a
+The system SHALL render a top navigation bar with the site name "Verdia", a
 "Home" link, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Medical page is rendered
+- **GIVEN** the Verdia page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Medical" and a "Home" link pointing to the page root
+- **THEN** the navbar SHALL show the site name "Verdia" and a "Home" link pointing to the page root
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -187,7 +194,7 @@ The system SHALL render a footer with the site name and link columns.
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Medical"
+- **THEN** it SHALL show the site name "Verdia"
 - **AND** it SHALL show link columns (Top Products, Contact Us, Newsletter)
 
 ### Requirement: Component Dock attribution
@@ -208,7 +215,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/medical/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/verdia/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -217,7 +224,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/medical/` is inspected
+- **WHEN** every non-test file under `apps/verdia/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -225,7 +232,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Medical" and a "Home" link pointing to the page root
+- [x] Navigation bar — the navbar SHALL show the site name "Verdia" and a "Home" link pointing to the page root
 - [x] Banner hero — it SHALL show a level-1 headline (e.g. "We Care for Your Health Every Moment")
 - [x] Appointment band — it SHALL show the heading "Servicing Hours"
 - [x] Facilities — it SHALL show the heading "Our Latest Facilities"
@@ -233,4 +240,4 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Consultants — it SHALL show the heading "Our Consultants"
 - [ ] Client feedback — it SHALL show the heading "Enjoy our Client's Feedback"
 - [x] Recent blogs — it SHALL show the heading "Our Recent Blogs"
-- [x] Footer — it SHALL show the site name "Medical"
+- [x] Footer — it SHALL show the site name "Verdia"

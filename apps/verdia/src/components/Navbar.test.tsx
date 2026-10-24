@@ -5,7 +5,7 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('renders site name', () => {
     render(<Navbar />)
-    expect(screen.getByText('Medical')).toBeInTheDocument()
+    expect(screen.getByText('Verdia')).toBeInTheDocument()
   })
 
   it('renders desktop nav links', () => {

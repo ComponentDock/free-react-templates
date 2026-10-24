@@ -10,7 +10,7 @@ describe('UtilityBar', () => {
 
   it('renders email', () => {
     render(<UtilityBar />)
-    expect(screen.getByText('support@medical.com')).toBeInTheDocument()
+    expect(screen.getByText('support@verdia.com')).toBeInTheDocument()
   })
 
   it('renders book appointment link', () => {

@@ -17,7 +17,7 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 bg-ink/90 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <a href="#" className="text-lg font-bold text-white">
-          Medical
+          Verdia
         </a>
 
         {/* Desktop links */}

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Medical brand palette — measured from the reference design:
+  /* Verdia brand palette — measured from the reference design:
      brand green #69be00, dark text #222, body #777, section bg #f9f9ff,
      footer #222. */
   --color-brand: #69be00;
