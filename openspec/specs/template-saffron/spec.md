@@ -24,7 +24,7 @@ social icons.
 
 - **Original:** ColorLib "Juli" — lifestyle / fashion blog template (source:
   https://colorlib.com/wp/template/juli/). TEMPLATES.md has TWO copies of this
-  item (lines 266 and 2400 — mark EVERY copy `[x]` when done).
+  item (lines 266 and 2402 — mark EVERY copy `[x]` when done).
 - **Preview URL:** the bare `https://preview.colorlib.com/theme/juli/` returns
   HTTP 404 (this template's demo lives at a numbered path). The real demo is
   **https://preview.colorlib.com/theme/juli/01-homepage.html** (HTTP 200,
@@ -390,47 +390,46 @@ footer with copyright and social icons.
 
 ## Verification checklist
 
-- [ ] `npm run spec:validate` passes
-- [ ] `apps/saffron` created from a blog/landing app pattern, package renamed
-      to `@free-react-templates/saffron`
-- [ ] TDD: tests written first (red), then implementation (green)
-- [ ] 100% coverage lines/functions/branches/statements (`npm run
-    test:coverage -- --project apps/saffron` or `scripts/verify-app.sh
-    saffron`)
-- [ ] Brand orange `#FFAD4D` + dark slate `#29333C` + title `#444` + body
-      gray `#555` + date grays `#888/#999` in `@theme`; Roboto + Maven Pro
-      via Google Fonts link
-- [ ] Section order matches the original 1:1 (see Design reference)
-- [ ] Header: italic welcome bar (greeting + email left, search + 5 social
+- [x] `npm run spec:validate` passes (3,237 specs, 0 failed)
+- [x] `apps/saffron` created with the `injectUiSource()` vite pattern,
+      package renamed to `@free-react-templates/saffron`
+- [x] TDD: tests written first (red — 7 suites failed on missing modules),
+      then implementation (green — 34 tests)
+- [x] 100% coverage lines/functions/branches/statements
+      (`bash scripts/verify-app.sh saffron` green)
+- [x] Brand orange `#FFAD4D` + dark slate `#29333C` + title `#444` + body
+      `#555` + muted `#888` + date `#999` + rule `#DDD` in `@theme`; Roboto
+      + Maven Pro + Dancing Script via Google Fonts link
+- [x] Section order matches the original 1:1 (see Design reference)
+- [x] Header: italic welcome bar (greeting + email left, search + 5 social
       icons right), centered Saffron wordmark + "PERSONAL BLOG" tagline,
-      centered uppercase nav (HOME▾ dropdown with nested CATEGORIES ▸,
+      centered uppercase nav (HOME dropdown with nested category submenu,
       FEATURED, ABOUT, CATEGORIES, CONTACT); mobile hamburger toggles the
       menu
-- [ ] Hero: 2 full-bleed slides (1600×800) with `rgba(0,0,0,0.6)` card
+- [x] Hero: 2 full-bleed slides (1600×800) with `rgba(0,0,0,0.6)` card
       (radius 3px) — orange TRAVEL chip, letter-spaced bold headline, date;
-      accessible prev/next + slide indicators
-- [ ] Blog list: post 1-2 full width, posts 3-6 in 2-col grid, post 7 split
-      card (image left / details right); each with category chip, Share/03/06
-      meta, italic date, title (orange hover), excerpt, white READ MORE
-      (orange border, soft shadow); LOAD OLDER POSTS button
-- [ ] Sidebar: about-author card with upward-overlapping portrait, signature,
+      accessible prev/next + slide indicators + 6s autoplay
+- [x] Blog list: post 1-2 full width, posts 3-6 in 2-col grid, post 7 split
+      card (image left / details right); each with category chip, share /
+      likes / comments meta, italic date, title (orange hover), excerpt,
+      white READ MORE (orange border, soft shadow); LOAD OLDER POSTS button
+- [x] Sidebar: about-author card with upward-overlapping portrait, signature,
       orange READ MORE; search underline field; dark newsletter box (white
-      heading + orange SUBSCRIBE outline, confirm on submit); 4 category
+      heading + orange SUBSCRIBE outline, confirms on submit); 4 category
       images with orange name bars (TRAVEL/FASHION/LIFESTYLE/DESIGN); 4
       latest posts with 80px thumbnails; Advertisement + DISCOVER overlay;
-      3×2 Instagram grid; Tags list
-- [ ] Footer: 7-image "Follow me © instagram" strip (top border `#ccc`);
-      dark footer with copyright (year + heart + credit) and right-aligned
-      social icons
-- [ ] Radii: 1px buttons, 3px slider card + author portrait; nothing else
-      rounded
-- [ ] Placeholder images via `picsum.photos/seed/saffron-<n>/<w>/<h>`; logo
-      as text wordmark; lucide icons + inline SVG brand icons; no assets
-      copied
-- [ ] Demo typos fixed ("througn" → "throw", tag "fasinon" → "fashion");
+      3×2 Instagram grid; 7 tag pills
+- [x] Footer: 7-image "Follow me © instagram" strip (top border `#ccc`);
+      dark footer with copyright (year + heart + Component Dock credit) and
+      right-aligned social icons
+- [x] Radii: 1px buttons/chips, 3px slider card + author portrait; nothing
+      else rounded
+- [x] Placeholder images via `picsum.photos/seed/saffron-*`; logo as text
+      wordmark; lucide icons + inline SVG brand icons; no assets copied
+- [x] Demo typos fixed ("througn" → "throw", tag "fasinon" → "fashion");
       slide-2 headline paraphrased (demo duplicates slide 1 copy)
-- [ ] PR description: source template, preview URL (incl. the
+- [x] PR description: source template, preview URL (incl. the
       `01-homepage.html` demo path), design tokens, what differs
-- [ ] After merge: TEMPLATES.md Juli (lines 266 and 2400) `[~]` → `[x]` +
-      Surge URL (`petal.free.componentdock.com`) + homepage + `npm
-    run readme:status`
+- [x] After merge: TEMPLATES.md Juli rows 266 + 2402 `[x]` + Surge URL
+      `saffron.free.componentdock.com` (re-pointed from the stale `petal`
+      link) + homepage + `npm run readme:status`

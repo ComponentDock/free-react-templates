@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+/* Saffron palette — measured from the reference stylesheet:
+   brand orange #FFAD4D (chips, buttons, name bars, hover), dark slate
+   #29333C (newsletter box + footer), heading ink #444, body #555,
+   dates #999, muted #888, rules #DDD. Type: Roboto (UI), Maven Pro
+   (paragraphs), Dancing Script (wordmark + signature). */
+@theme {
+  --color-brand: #ffad4d;
+  --color-midnight: #29333c;
+  --color-ink: #444444;
+  --color-body: #555555;
+  --color-date: #999999;
+  --color-muted: #888888;
+  --color-rule: #dddddd;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Maven Pro', ui-sans-serif, system-ui, sans-serif;
+  --font-script: 'Dancing Script', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  ::selection {
+    background: #ffad4d;
+    color: #fff;
+  }
+}

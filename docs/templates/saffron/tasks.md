@@ -7,7 +7,7 @@
 
 - **Original:** ColorLib "Juli" — lifestyle / fashion blog template (source:
   https://colorlib.com/wp/template/juli/). TEMPLATES.md has TWO copies of
-  this item (lines 266 and 2400 — mark EVERY copy `[x]` when done).
+  this item (lines 266 and 2402 — mark EVERY copy `[x]` when done).
 - **Demo DOM analyzed:** `https://preview.colorlib.com/theme/juli/` 404s (this
   template's demo is at a numbered path) — the real demo is
   **https://preview.colorlib.com/theme/juli/01-homepage.html** (HTTP 200,
@@ -138,16 +138,16 @@ solid #ccc`): centered h5 "Follow me © instagram" (padding 20px 0) +
 
 ## Implementation tasks
 
-- [ ] Spec-first: `openspec/specs/template-saffron/spec.md` already on main
+- [x] Spec-first: `openspec/specs/template-saffron/spec.md` already on main
       (prep). Open a `feat/template-saffron` branch.
-- [ ] Copy the simplest existing blog app (e.g. `apps/volt` or another blog
+- [x] Copy the simplest existing blog app (e.g. `apps/volt` or another blog
       template), rename package to `@free-react-templates/saffron`, run
       `npm install` at root so `package-lock.json` registers the workspace
       (grep `free-react-templates/saffron`).
-- [ ] Ensure `vite.config.ts` registers `injectUiSource()` (see
+- [x] Ensure `vite.config.ts` registers `injectUiSource()` (see
       docs/conventions.md) and app imports Button/ButtonLink/cn from
       `packages/ui` (knip trap — see repo memory notes).
-- [ ] TDD: tests first per spec requirement, then implement:
+- [x] TDD: tests first per spec requirement, then implement:
 
 1. `TopBar` — italic welcome bar: greeting + email left (with `#ddd`
    separators), search input + button and 5 social icon links right.
@@ -185,25 +185,26 @@ solid #ccc`): centered h5 "Follow me © instagram" (padding 20px 0) +
     photography, adventure.
 14. `InstagramStrip` — centered "Follow me © instagram" + 7 equal-width
     images (14.285% each) above the footer.
-15. `Footer` — dark `#29333C`: copyright line (year + heart + Colorlib
-    credit → credit Saffron's author) + right-aligned 5 social icons.
+15. `Footer` — dark `#29333C`: copyright line (year + heart + a
+    "Component Dock" credit link to https://www.componentdock.com/) +
+    right-aligned 5 social icons.
 
-- [ ] Theme tokens in `@theme`: `--color-brand: #FFAD4D`, `--color-ink:
-    #29333C` (dark slate), title `#444`, body `#555`, date grays
-      `#888/#999`, border `#ddd`/`#bbb`/`#ccc`.
-- [ ] Roboto (300,400,500) + Maven Pro Google Fonts `<link>` in index.html.
-- [ ] Placeholders: `picsum.photos/seed/saffron-<n>/<w>/<h>`; lucide-react
+- [x] Theme tokens in `@theme`: `--color-brand: #FFAD4D`,
+      `--color-midnight: #29333C` (dark slate), `--color-ink: #444`,
+      `--color-body: #555`, `--color-muted: #888`, `--color-date: #999`,
+      `--color-rule: #DDD`.
+- [x] Roboto (300,400,500) + Maven Pro + Dancing Script Google Fonts `<link>` in index.html.
+- [x] Placeholders: `picsum.photos/seed/saffron-*`; lucide-react
       icons (search, share-2, heart, message-circle, chevron-left/right,
       menu; inline SVG social brand icons — lucide-react has no brand
       icons).
-- [ ] Paraphrase demo copy: hero headlines, post titles/excerpts, about
+- [x] Paraphrase demo copy: hero headlines, post titles/excerpts, about
       bio, newsletter heading; fix demo typos ("througn" → "throw",
       "fasinon" → "fashion"); slide-2 headline distinct from slide 1.
-- [ ] Verify: `scripts/verify-app.sh saffron` (typecheck + lint + 100%
+- [x] Verify: `scripts/verify-app.sh saffron` (typecheck + lint + 100%
       coverage + build). Then push branch, open PR, squash-merge
       immediately (`gh pr merge --squash --delete-branch`).
-- [ ] After merge: mark TEMPLATES.md Juli lines 266 and 2400
-      `[~]`→`[x]` with Surge URL
-      `https://petal.free.componentdock.com` + homepage, run
-      `npm run readme:status`, commit + push. Verify `npx knip` + curl the
-      Surge URL.
+- [x] After merge: TEMPLATES.md Juli rows 266 + 2402 `[x]` with the Surge
+      URL `https://saffron.free.componentdock.com` (re-pointed away from the
+      stale `petal` pointer), homepage set, `npm run readme:status`, commit +
+      push.
