@@ -1,7 +1,17 @@
 # Zesty — Design Notes
 
+> **Reference identity (measured 2026-10-24).** `theme/yummy/` serves the
+> **other** post of this pair: the catalogue keys `yummy` → `/wp/template/yummy-2/`
+> and `catalog-134132` → `/wp/template/yummy/`, and the alias `yummy-2 → yummy`
+> means the `-2` design is what the directory renders. Everything measured below
+> is therefore the `yummy-2` (magazine) surface — the design `umami` owns. This
+> row's own coral "Yummy Blog" design (the screenshot) has no demo on any prefix
+> and no archive zip. Full chain: `openspec/specs/template-zesty/spec.md`
+> §Reference identity.
+
 Reference: **Yummy** — `https://colorlib.com/wp/template/yummy/`  
-Live preview: `https://preview.colorlib.com/theme/yummy/`  
+Live preview: `https://preview.colorlib.com/theme/yummy/` (serves the `yummy-2`
+design — see the identity note above)  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-minimal-food-blog-website-template.jpg  
 Shipped: https://zesty.free.componentdock.com
 

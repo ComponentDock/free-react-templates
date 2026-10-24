@@ -183,6 +183,31 @@ button and `Footer.test.tsx` asserts it — that is the reference delta this
 block exposes.
 <!-- reference-revalue:end -->
 
+## Reference identity (this row owns the shared directory — measured 2026-10-24)
+
+The catalogue map keys **two** ColorLib posts to one demo directory, and this
+row is the side that directory actually belongs to:
+
+| key | `details` | thumbnail |
+| --- | --- | --- |
+| `yummy` (bare slug) | `/wp/template/yummy-2/` — "Yummy – Free Food **Magazine** Website Template Design 2026", tag `Restaurant` | `yummy-free-template-768x605.jpg` |
+| `catalog-134132` | `/wp/template/yummy/` — "Yummy – Free **Creative Food Blog** Website Template", tag `Blog Website Templates` | `yummy-minimal-food-blog-website-template-768x632.jpg` |
+
+`colorlibPreviewAliases` carries `"yummy-2":"yummy"`, so no `theme/yummy-2/`
+directory exists — the row's own slug is reachable only as `theme/yummy/`
+(200, 21,709 B). The live directory renders **this** design: serif-italic
+"Yummy / Food Blog" wordmark, nav Home · Pages · Recipes · Best Of · Contact,
+the `March 10, 2019` post grid — checked against this row's thumbnail on
+2026-10-24 (`yummy-free-template.jpg`, the magazine layout), and the opposite
+of the coral "Yummy Blog" collage that TEMPLATES.md rows 298 / 1501 / 2483
+show for the other post.
+
+Consequences: (a) `template-zesty` and the duplicate prep `template-simmer`
+cite `theme/yummy/` too and therefore describe this row's design — the
+sibling design has no demo on any prefix (`yummy-2`, `yummy2`, `yummy-blog`,
+`yummy1`, `bootstrap/yummy`, `bb/yummy` all 404) and no archive zip;
+(b) this document is the authoritative prep for anything built from that URL.
+
 ## Design tokens
 
 <!-- brand-claim:2026-10-23 -->

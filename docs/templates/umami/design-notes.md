@@ -1,7 +1,9 @@
 # Umami — Design Notes
 
 Reference: **Yummy 2** — `https://colorlib.com/wp/template/yummy-2/`  
-Live preview: `https://preview.colorlib.com/theme/yummy-2/`  
+Live preview: `https://preview.colorlib.com/theme/yummy/` (the only path: the
+slug's own directory 404s — `colorlibPreviewAliases` maps `yummy-2 → yummy`;
+this row owns the shared directory, see the identity note in the spec)  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg  
 Shipped: https://umami.free.componentdock.com
 

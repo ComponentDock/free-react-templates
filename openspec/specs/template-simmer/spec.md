@@ -21,14 +21,28 @@ CSS 4 + TypeScript.
   (source: https://colorlib.com/wp/template/yummy/, category "Food / Blog").
 - **Preview DOM analyzed:** the official preview
   (`https://preview.colorlib.com/theme/yummy/`) is REACHABLE (HTTP 200,
-  ~21.7 KB HTML + `css/style.css` ~42.7 KB parsed for tokens). Structure
-  below comes from the live preview DOM, which is authoritative.
+  21,709 B HTML + `css/style.css` 42,720 B `d08c771dd457` parsed for tokens).
+  Structure below comes from the live preview DOM, which is authoritative.
+- **Reference identity (catalogue URL collision — measured 2026-10-24):** that
+  directory serves the *sibling* post, not this slug's own design. The
+  catalogue map keys `yummy` (bare slug) → `/wp/template/yummy-2/` ("Food
+  Magazine … Design 2026") and `catalog-134132` → `/wp/template/yummy/`
+  ("Creative Food Blog"), and `colorlibPreviewAliases` carries
+  `"yummy-2":"yummy"` — hence `theme/yummy-2/` 404 while `theme/yummy/`
+  renders the `-2` design (serif "Yummy / Food Blog" wordmark, `March 10,
+  2019` grid). This slug's own design — the coral "Yummy Blog" collage of
+  `yummy-minimal-food-blog-website-template.jpg` — has no demo on any prefix
+  (`yummy-2`, `yummy2`, `yummy-blog`, `yummy1`, `bootstrap/yummy`,
+  `bb/yummy` all 404) and no archive zip. Full measurement lives in
+  `template-zesty` §Reference identity; the same design ships as
+  `apps/{zesty,umami}`, i.e. twice.
 - **Screenshot note:** the TEMPLATES.md screenshot
-  (`yummy-minimal-food-blog-website-template.jpg`) shows an OLDER "Yummy
-  Blog" variant (top social bar + Sign in/Sign up, handwritten-style script
-  logo, category cards Food/Cooking/Life Style). The live preview is the
-  current design and is used as the reference; the implementer should follow
-  the live preview, not the screenshot.
+  (`yummy-minimal-food-blog-website-template.jpg`) is this slug's own
+  thumbnail — a "Yummy Blog" collage (top social bar + Sign in/Sign up,
+  handwritten-style script logo, category cards Food/Cooking/Life Style) —
+  and the live preview does NOT render it (see the identity note above); it
+  shows the sibling `-2` design. The live preview is the reference for what
+  exists; the screenshot is the only evidence for the design this slug names.
 - **Section order (1:1, from live preview DOM):**
   1. Header: centered logo image, centered nav (Home, Pages dropdown →
      About Me / Categories / Recipe / Blog / Contact, Recipes, Best Of,

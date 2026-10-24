@@ -4,13 +4,75 @@
 
 Zesty is a minimal food-blog home-page template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Yummy"
-template design (see TEMPLATES.md — appears 3×: lines 298, 1499, 2481; all
+template design (see TEMPLATES.md — appears 3×: lines 298, 1501, 2483; all
 three rows point to the same source, one prep covers all; verified with
 `grep -c 'wp/template/yummy/'` = 3), built under a different name with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 Source: https://colorlib.com/wp/template/yummy/ (minimal food blog template)
 Preview URL: https://preview.colorlib.com/theme/yummy/
+
+## Reference identity (catalogue URL collision — measured 2026-10-24)
+
+`https://preview.colorlib.com/theme/yummy/` serves **two different ColorLib
+posts**. The preview host's own catalogue map
+(`assets/js/catalog-products-20261009-trace-developer.js`, 633,990 B, 1,961
+entries) keys both to that one directory:
+
+| key | `details` (the post) | `img` (that post's thumbnail) |
+| --- | --- | --- |
+| `yummy` (bare slug) | `/wp/template/yummy-2/` — "Yummy – Free **Food Magazine** Website Template Design 2026", tag `Restaurant` | `yummy-free-template-768x605.jpg` |
+| `catalog-134132` | `/wp/template/yummy/` — "Yummy – Free **Creative Food Blog** Website Template", tag `Blog Website Templates` | `yummy-minimal-food-blog-website-template-768x632.jpg` |
+
+`colorlibPreviewAliases` also carries `"yummy-2":"yummy"`, which is why no
+`theme/yummy-2/` directory exists: **the alias and the bare key both resolve to
+`theme/yummy/`**. The same tell already adjudicated for `fashion`, `lawfirm`
+and `music` holds here a fourth time — the bare-slug key's `details` is the
+`-2` post, and the directory renders that post's design.
+
+Which design the directory actually renders (measured render, 2026-10-24):
+
+* `theme/yummy/` → 200, **21,709 B**, `<title>Yummy | Template</title>`;
+  `/index.html` → 200 and byte-identical (a no-op link, never a 404).
+* Header: serif-italic "Yummy / Food Blog" wordmark with a pot glyph, nav
+  Home · Pages · Recipes · Best Of · Contact plus a search trigger, active link
+  underlined `#FC0254` — the **magazine** header of
+  `yummy-free-template-768x605.jpg`, not this row's thumbnail.
+* Copy matches that thumbnail card-for-card: `March 10, 2019`,
+  "Cannellini Aglio e Olio with Salmon", "Raw Vegan Carrot Cake Bites with
+  Avocado", "One Pot Weeknight Lasagna Soup Recipe", "Beef Burger with French
+  Fries and Salad", "Raspberry Pancakes with Honey and Butter".
+* Inner pages are LIVE: `about-me.html` 17,518 B · `categories.html` 23,228 B ·
+  `recipe.html` 23,299 B · `blog.html` 18,095 B · `contact.html` 13,373 B.
+* Anchors on `index.html`: **35 total — 16 dead `#`**, `./index.html` ×2,
+  `about-me.html` ×2, `categories.html` ×4, `recipe.html` ×4, `blog.html` ×2,
+  `contact.html` ×4, `colorlib.com` ×1. Two forms: `.subscribe-form`
+  (`action="#"`, `input[type=email]` placeholder "Your e-mail" + submit) and
+  `.search-model-form` (text input "Search here.....").
+* Sheets: `css/style.css` **42,720 B** `d08c771dd457` is the only theme sheet;
+  `bootstrap.min.css` 24,284 B `0539a15ea797`, `font-awesome.min.css` 2,107 B
+  `7329707e9486`, `nice-select.css` 3,881 B `22259204ce35`,
+  `slicknav.min.css` 94 B `276ef74bba4c`, `js/main.js` 1,948 B
+  `e3cffd361b66`. The theme sheet carries **no `@font-face`** — the host
+  injects a `/cf-fonts/s/pt-sans/5.2.8/{latin,latin-ext,cyrillic,…}/{400,700}/normal.woff2`
+  block, so PT Sans *is* delivered and is the rendered face (measured
+  `font-family` = `"PT Sans", sans-serif` on `body` and on `.main-menu a`).
+
+So the *Requirements* below describe the **served** (`yummy-2`) design, which is
+the design TEMPLATES.md row 299 (`Yummy 2` → `umami`) owns. This row's own
+design — the coral "Yummy Blog" collage of
+`yummy-minimal-food-blog-website-template.jpg` (script logo, utility bar with
+sign in / sign up, `GET PATTERN` button, Food / Cooking / Life Style category
+cards) — has **no demo anywhere**: `theme/yummy-2/`, `theme/yummy2/`,
+`theme/yummy-blog/`, `theme/yummy1/`, `theme/bootstrap/yummy/`,
+`theme/bb/yummy/` all 404, and both `downloads/free/yummy.zip` and
+`yummy-2.zip` 404.
+
+Consequence to carry forward: `apps/zesty` reproduces the served design
+faithfully (its components and headline copy match the live page), so it is
+**correct-but-mislabelled** — row 298's own design is unbuildable from a live
+reference. `apps/zesty` and `apps/umami` therefore ship one design twice;
+repointing the row is a catalogue decision, not a rebuild.
 
 ## Design reference (replication findings)
 
@@ -35,11 +97,13 @@ Preview URL: https://preview.colorlib.com/theme/yummy/
   nice-select.css, slicknav.min.css; jQuery + slicknav + mixitup-style
   filtering, NOT Tailwind).
 - **Screenshot note:** `yummy-minimal-food-blog-website-template.jpg`
-  (1200×988) does NOT match the live template — it shows an older/different
-  "Yummy Blog" variant (utility bar, script logo, GET PATTERN button) and
-  pixel-sampling shows a gray-dominant palette with no pink accent. The live
-  preview DOM + stylesheet are the authoritative reference; the screenshot is
-  not used for fidelity decisions.
+  (1200×988) is this row's own thumbnail — a coral "Yummy Blog" collage
+  (utility bar with sign in / sign up, script logo, `GET PATTERN` button,
+  Food / Cooking / Life Style cards) that the live directory does **not**
+  render. That is not a stale screenshot: the directory serves the sibling post
+  `yummy-2` (see §Reference identity). The live DOM + stylesheet are the
+  authoritative reference for what exists; the screenshot documents the design
+  this row names but nothing serves.
 
 ### Section structure (from the live DOM, top to bottom)
 
@@ -138,15 +202,24 @@ align-items-center justify-content-center`) with `div.search-close-switch`
 | brand-pink    | `#FC0254`       | section-title bars, cat-name pills, plus-icon box, subscribe button bg/border, nav hover underline (2px) |
 | ink           | `#353535`       | nav links, all recipe headlines (h3/h4/h5), filter pills, subscribe h3, input text                       |
 | meta-gray     | `#878787`       | page-top category `span`                                                                                 |
-| section-bg    | `#F8F9FB`       | `.top-recipe`, `.categories-filter-section`, `.feature-recipe` backgrounds                               |
+| section-bg    | `#F8F9FB`       | `.top-recipe` and `.feature-recipe` ONLY — measured, the filter band between them is white (`.categories-filter-section` sets no `background`) |
 | footer-bg     | `#EAEDF2`       | `.footer-section` background                                                                             |
 | copyright     | `#b8c1d0`       | `.copyright-text` color                                                                                  |
 | paper         | `#ffffff`       | page bg, `pt-recipe-text` card, nav, subscribe input border                                              |
 | hover-overlay | `rgba(0,0,0,…)` | `.pt-recipe-img::after` opacity 0.34, `.top-recipe-img::after` opacity 0.5 gradient overlays             |
 | font-body     | "PT Sans"       | whole site (`font-family: "PT Sans", sans-serif`, antialiased) — headings 700                            |
 
-Radii: none (square corners everywhere — pills are the only rounded element
-via 25px horizontal padding on cat-name, not radius). Spacing: header 65px/30px
+Font delivery: the theme sheet carries no `@font-face` and the page loads no
+Google Fonts link — the preview host injects a `/cf-fonts/s/pt-sans/5.2.8/…`
+block (weights 400 and 700), so PT Sans is the rendered face on the live page.
+The recreation must load PT Sans from Google Fonts itself.
+
+Radii (measured: 7 × `border-radius: 50%`, 1 × `60px`, otherwise `0` in
+`style.css`): buttons, cat-name pills, filter pills and the section-title bar
+are square; the **featured-recipe thumbnails are circles**
+(`.fr-item .fr-item-img img{border-radius:50%}`, live render 280 px wide,
+computed `50%`), as is `.search-close-switch`; the single `60px` belongs to the
+`#ftco-loader` ring, not to any card. Spacing: header 65px/30px
 padding; `.spad` 100px section padding; section-title bar 470×auto pink with
 18px vertical padding; pt-recipe-text overlaps image by -56px (padding 19px
 35px 30px); top-recipe large image 514px tall; subscribe input 64px tall;
@@ -337,6 +410,34 @@ Dock (`https://www.componentdock.com/`) instead.
 - **WHEN** every non-test file under `apps/zesty/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
+
+## Measured geometry (live render, 1440 px viewport, 2026-10-24)
+
+| band | y | height | background |
+| --- | --- | --- | --- |
+| header | 0 | 333 | transparent (white page) |
+| page-top | 333 | 954 | transparent |
+| top-recipe | 1,287 | 1,012 | `#F8F9FB` |
+| categories filter | 2,299 | 697 | **transparent** |
+| feature-recipe | 2,996 | 390 | `#F8F9FB` |
+| footer | 3,386 | 430 | `#EAEDF2` |
+
+Document height 3,816. Counts: `.pt-recipe-item` 5 · `.top-recipe-item` 5 ·
+`.cf-item` 5 · `.fr-item` 2 · filter pills 4 (Vegetarian / Most popular /
+Meat Lover / Gluten Free). Both section-title bars measure 470 px wide at
+`top:-57px` in `#FC0254`; the plus-icon box is 80×57 `#FC0254`, square-cornered.
+
+## Fidelity delta (app-side — implementer work, never from the prep clone)
+
+Measured against the live reference; these are the gaps `apps/zesty` carries:
+
+- **Featured thumbnails are not circular** — the reference rounds
+  `.fr-item .fr-item-img img` to `50%`; `apps/zesty/src/components/FeaturedRecipes.tsx`
+  carries no radius class, so the shipped cards are square.
+- **Row mislabelling** — the app renders the `yummy-2` design (see
+  §Reference identity above); the coral "Yummy Blog" design this row names has
+  no demo anywhere. Repointing the TEMPLATES.md row (or retiring the duplicate
+  against `apps/umami`) is a catalogue decision, not a code change.
 
 ## Verification checklist
 

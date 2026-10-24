@@ -13,14 +13,20 @@
 
 - **Original:** ColorLib "Yummy" — minimal food blog website template
   (source: https://colorlib.com/wp/template/yummy/).
+- **Reference identity (2026-10-24):** the preview directory serves the sibling
+  `yummy-2` post, not this one — the catalogue keys `yummy` → `/wp/template/yummy-2/`
+  and `catalog-134132` → `/wp/template/yummy/`, alias `yummy-2 → yummy`. The
+  research below therefore describes the served (`-2`) design; this slug's own
+  design has no demo on any prefix and no zip.
 - **Preview DOM analyzed:** `https://preview.colorlib.com/theme/yummy/`
-  (HTTP 200, ~21.7 KB HTML + `css/style.css` ~42.7 KB parsed for tokens).
-  The live preview is the authoritative reference.
+  (HTTP 200, 21,709 B HTML + `css/style.css` 42,720 B `d08c771dd457` parsed for
+  tokens). The live preview is the authoritative reference for what exists.
 - **Screenshot discrepancy:** the TEMPLATES.md screenshot
-  (`yummy-minimal-food-blog-website-template.jpg`) shows an OLDER "Yummy
-  Blog" variant — top social bar with Sign in/Sign up, handwritten-style
-  script logo, category cards (Food / Cooking / Life Style). Follow the
-  LIVE PREVIEW structure below, not the screenshot.
+  (`yummy-minimal-food-blog-website-template.jpg`) is this slug's own thumbnail
+  — a "Yummy Blog" collage (top social bar with Sign in/Sign up,
+  handwritten-style script logo, category cards Food / Cooking / Life Style) —
+  which the live directory does not render (see the identity note above). Follow
+  the LIVE PREVIEW structure below, not the screenshot.
 - **Visual design (from live preview):** clean minimal white food blog —
   centered logo + centered nav with a pink accent (#FC0254) on active/hover
   links; hero is a 3-column grid of food-photo recipe cards whose white

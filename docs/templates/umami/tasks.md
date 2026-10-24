@@ -1,5 +1,13 @@
 # Umami (ColorLib Yummy 2) — Tasks & Design Notes
 
+> **Reference identity (measured 2026-10-24).** This row OWNS the shared
+> directory: the catalogue keys `yummy` → `/wp/template/yummy-2/` (this post)
+> and `catalog-134132` → `/wp/template/yummy/` (zesty's rows), and
+> `colorlibPreviewAliases` maps `yummy-2 → yummy`, which is why
+> `theme/yummy-2/` 404s and `theme/yummy/` renders this design. The
+> "PREVIEW UNREACHABLE" note further down is superseded — read the pointer
+> status block in the same section.
+
 > Prep artifacts committed on `main` (prep stream). Implementation ships
 > later on `feat/template-umami` (implementer stream).
 

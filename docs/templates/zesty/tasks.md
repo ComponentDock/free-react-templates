@@ -5,9 +5,15 @@
 
 ## Source mapping
 
-- **ColorLib item:** "Yummy" (TEMPLATES.md — appears 3×: lines 298, 1499,
-  2481; all three rows point to the same source, one prep covers all;
+- **ColorLib item:** "Yummy" (TEMPLATES.md — appears 3×: lines 298, 1501,
+  2483; all three rows point to the same source, one prep covers all;
   verified with `grep -c 'wp/template/yummy/'` = 3).
+- **Reference identity (2026-10-24):** the preview directory serves the
+  `yummy-2` post, not this one — the catalogue keys `yummy` → `/wp/template/yummy-2/`
+  and `catalog-134132` → `/wp/template/yummy/`, with `yummy-2 → yummy` in
+  `colorlibPreviewAliases`. The research below is the served (`-2`) design; this
+  row's own design has no demo and no zip. See `template-zesty` §Reference
+  identity.
 - **Source URL:** https://colorlib.com/wp/template/yummy/
 - **Preview URL:** https://preview.colorlib.com/theme/yummy/ — **HTTP 200,
   live** (confirmed 2026-08-11, ~21.7 KB HTML). Do not redo this lookup.
@@ -20,11 +26,12 @@
 
 ### Screenshot (`yummy-minimal-food-blog-website-template.jpg`, 1200×988)
 
-**DO NOT USE for fidelity.** The listing screenshot shows an older/different
-"Yummy Blog" variant (utility bar, script logo, GET PATTERN button) and
-pixel-sampling shows a gray-dominant palette with no pink accent — it does
-not match the live template at all. The live preview DOM + parsed stylesheet
-are the authoritative reference.
+Not buildable from a live reference. This is this row's OWN thumbnail — a coral
+"Yummy Blog" collage (utility bar with sign in / sign up, script logo, GET
+PATTERN button, Food/Cooking/Life Style cards) whose design nothing serves: the
+six other prefixes and both archive zips 404 (2026-10-24). The live preview DOM
++ parsed stylesheet below describe the sibling `yummy-2` design that the shared
+directory actually renders — keep that distinction when quoting this brief.
 
 ### Live DOM (primary reference — section order verified against fetched HTML + parsed CSS)
 
