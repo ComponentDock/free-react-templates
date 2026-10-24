@@ -1,12 +1,12 @@
 import { ExternalLink } from 'lucide-react'
 
 const projects = [
-  { id: 1, seed: 'oraxol-portfolio-1' },
-  { id: 2, seed: 'oraxol-portfolio-2' },
-  { id: 3, seed: 'oraxol-portfolio-3' },
-  { id: 4, seed: 'oraxol-portfolio-4' },
-  { id: 5, seed: 'oraxol-portfolio-5' },
-  { id: 6, seed: 'oraxol-portfolio-6' },
+  { id: 1, seed: 'obsidian-portfolio-1' },
+  { id: 2, seed: 'obsidian-portfolio-2' },
+  { id: 3, seed: 'obsidian-portfolio-3' },
+  { id: 4, seed: 'obsidian-portfolio-4' },
+  { id: 5, seed: 'obsidian-portfolio-5' },
+  { id: 6, seed: 'obsidian-portfolio-6' },
 ] as const
 
 export function Portfolio() {

@@ -2,22 +2,22 @@ const team = [
   {
     name: 'John McArthur',
     role: 'Designer',
-    seed: 'oraxol-team-1',
+    seed: 'obsidian-team-1',
   },
   {
     name: 'Mark Sky',
     role: 'Developer',
-    seed: 'oraxol-team-2',
+    seed: 'obsidian-team-2',
   },
   {
     name: 'Kyle Becker',
     role: 'Web Designer',
-    seed: 'oraxol-team-3',
+    seed: 'obsidian-team-3',
   },
   {
     name: 'Alan Nortwood',
     role: 'Photographer',
-    seed: 'oraxol-team-4',
+    seed: 'obsidian-team-4',
   },
 ] as const
 

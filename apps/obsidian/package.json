@@ -1,5 +1,5 @@
 {
-  "name": "@free-react-templates/oraxol",
+  "name": "@free-react-templates/obsidian",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://oraxol.free.componentdock.com"
+  "homepage": "https://obsidian.free.componentdock.com"
 }

@@ -10,7 +10,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Oraxol — Portfolio & Creative Agency'
+    document.title = 'Obsidian — Portfolio & Creative Agency'
   }, [])
 
   return (

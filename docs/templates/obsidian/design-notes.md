@@ -1,9 +1,9 @@
-# Oraxol — Design Notes
+# Obsidian — Design Notes
 
 Reference: **Oraxol** — `https://colorlib.com/wp/template/oraxol/`  
 Live preview: `https://preview.colorlib.com/theme/oraxol/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg  
-Shipped: https://oraxol.free.componentdock.com
+Shipped: https://obsidian.free.componentdock.com
 
 Recreation of ColorLib **Oraxol** (`https://colorlib.com/wp/template/oraxol/`), preview URL: `https://preview.colorlib.com/theme/oraxol/`. Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 
@@ -11,7 +11,7 @@ Recreation of ColorLib **Oraxol** (`https://colorlib.com/wp/template/oraxol/`), 
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/oraxol/src/index.css` `@theme`)
+## Design tokens (`apps/obsidian/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 | `--color-muted` | `#aaaaaa` | muted |
 | `--color-accent` | `#c8a97e` | accent |
 
-> The spec has no section-level requirements; the order below is read from `apps/oraxol/src/App.tsx` and the copy anchors from each component.
+> The spec has no section-level requirements; the order below is read from `apps/obsidian/src/App.tsx` and the copy anchors from each component.
 
 ## Document order
 
@@ -42,7 +42,7 @@ Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400
 Bands marked *anchors only* have no dedicated requirement block in the spec; hold them to the reference screenshot and the token table.
 
 ### `Navbar`
-*anchors only* — Oraxol · Work · Blog · About · Contact
+*anchors only* — Obsidian · Work · Blog · About · Contact
 
 ### `Hero`
 *anchors only* — Hero · Twitter · Facebook · Instagram · Dribbble
@@ -80,8 +80,8 @@ Bands marked *anchors only* have no dedicated requirement block in the spec; hol
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/oraxol/` may name the source designer,
+- **Provenance ban.** No file under `apps/obsidian/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/oraxol/public/CNAME` = `oraxol.free.componentdock.com`
-  and the package `homepage` = `https://oraxol.free.componentdock.com`.
+- **Deploy identity.** `apps/obsidian/public/CNAME` = `obsidian.free.componentdock.com`
+  and the package `homepage` = `https://obsidian.free.componentdock.com`.
