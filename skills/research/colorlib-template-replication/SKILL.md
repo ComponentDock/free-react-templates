@@ -40,7 +40,14 @@ it was built from a spec with no visual reference).
    `css/main.css`): extract brand colors (`background:` on `.banner-area`,
    `.newsletter-area`, `.footer-area`), font family (often
    `font-family: "Poppins", sans-serif`), button styling (radius, padding),
-   section backgrounds.
+   section backgrounds. **Resolve the cascade, don't just grep**: a grep hit is
+   the *declared* value, not the painted one. Elements carry several classes, so
+   check specificity + declaration order before writing a token — measured on
+   `readit` (2026-10-24): the footer element carries `ftco-footer ftco-bg-dark`,
+   `.ftco-bg-dark{background:#3c312e}` precedes `.ftco-footer{background:#222831}`
+   at equal specificity, so `#222831` paints while the grep table says `#3c312e`;
+   and `.ftco-footer .ftco-heading-2{color:#000}` is dead because the more
+   specific `.ftco-footer .ftco-footer-widget h2` paints those headings white.
 3. **Screenshot** — template screenshots are on the ColorLib template page
    (`https://colorlib.com/wp/template/<slug>/`) under
    `/wp-content/uploads/sites/2/<slug>*.jpg`, and in sitemap image tags.
