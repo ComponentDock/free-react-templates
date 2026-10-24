@@ -13,6 +13,28 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Itkol → Vantix (2026-10-24q, this PR)
+
+**Naming debt is closed — 0 visible and 0 hidden violations.**
+`apps/itkol` shipped with the folder equal to the source slug (`itkol`), and the
+spec quoted the marketing title (`"IT-Solution"`) as its `ColorLib "X"` line, so
+the name-only audit could not see it (`specs without a ColorLib provenance line:
+1`). The app is now `apps/vantix` (`@free-react-templates/vantix`,
+`vantix.free.componentdock.com`) and the provenance line names the source design
+properly — `ColorLib "Itkol" (marketing title "IT-Solution")` — so the audit's
+grammar matches the folder rule instead of hiding the case. The design is
+unchanged — same brand pink (`#ff4495`) and nine bands; wordmark, footer
+copyright, `document.title`, meta description, `hello@vantix.example` and picsum
+seeds `vantix-*` moved with the name, and the About heading
+(`ITKol - Partner for Your Business`) reads `Vantix - Partner for Your Business`.
+All three `Itkol` rows in `TEMPLATES.md` (71, 1065, 2058) now link `vantix`.
+
+`node scripts/audit-naming.mjs` → `no app folder reuses its source design name`.
+The one remaining `specs without a ColorLib provenance line: 1` is
+`openspec/specs/template-btnspark/` (provenance written in prose —
+`ColorLib's **Bootstrap Buttons 02**` — so the grammar cannot read it); that is a
+provenance-grammar gap, not a naming violation, and is the next audit item.
+
 ## State after Petsitting → Pawstay (2026-10-24p, this PR)
 
 **0 apps reuse their source name in the visible count** — the last visible
@@ -206,11 +228,12 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 (#1842), `jobboard` → `rosterly` (#1843), `medical` → `verdia` (#1844),
 `nurture` → `cradle` (#1845), `oraxol` → `obsidian` (#1846),
 `unioncorp` → `meridia` (#1847), `petvet` → `vetora` (#1848), `pawpal` →
-`groomly` (#1851), `petsitting` → `pawstay` (this PR).
+`groomly` (#1851), `petsitting` → `pawstay` (#1853), `itkol` → `vantix`
+(this PR).
 
 | app              | source design |
 | ---------------- | ------------- |
-| apps/itkol       | Itkol (hidden — folder equals the slug) |
+| —                | none left    |
 
 ## Pitfall — a design can carry two TEMPLATES.md rows
 
