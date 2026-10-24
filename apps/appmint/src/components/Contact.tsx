@@ -24,7 +24,7 @@ export function Contact() {
               Get In Touch
             </h2>
             <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-400">
-              Have a question about Massive? Send us a message and we&apos;ll respond as soon as
+              Have a question about Appmint? Send us a message and we&apos;ll respond as soon as
               possible.
             </p>
             <form onSubmit={handleSubmit} className="mt-8 grid gap-4">
@@ -99,8 +99,8 @@ export function Contact() {
               <h3 className="mt-3 font-display text-lg font-semibold text-ink dark:text-white">
                 Email Us
               </h3>
-              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">hello@massive.app</p>
-              <p className="text-sm text-gray-600 dark:text-gray-400">support@massive.app</p>
+              <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">hello@appmint.app</p>
+              <p className="text-sm text-gray-600 dark:text-gray-400">support@appmint.app</p>
             </div>
             <div className="rounded-2xl border border-gray-100 bg-white p-6 dark:border-gray-800 dark:bg-gray-950">
               <h3 className="font-display text-lg font-semibold text-ink dark:text-white">

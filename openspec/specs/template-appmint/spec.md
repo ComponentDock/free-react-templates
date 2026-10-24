@@ -1,8 +1,8 @@
-# Template: Massive (App Landing Page)
+# Template: Appmint (App Landing Page)
 
 ## Purpose
 
-Massive is a single-page app landing template in the free-react-templates
+Appmint is a single-page app landing template in the free-react-templates
 monorepo. It is an original React recreation of the ColorLib free "Massive"
 website template design (see TEMPLATES.md), built under a different name
 with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
@@ -17,7 +17,7 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   reference; the design below is reconstructed from the DOM structure and
   CSS tokens.
 - **Section order (1:1):** Navbar (SignUp, home, Features, App, Video,
-  Screenshot, Team, Pricing, Contact) → Hero ("Welcome To Massive App
+  Screenshot, Team, Pricing, Contact) → Hero ("Welcome To Appmint App
   Store." + Get App Now / Discover More) → Features ("welcome to app
   features" + Rapidiously monetize..., Premium Quality, Chat with love, 3d
   Display + Learn More) → App split ("all you want from app" + Awesome
@@ -31,11 +31,16 @@ with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
   - Fonts: **"Open Sans"** + **"Libre Baskerville"** (Google Fonts).
   - Gradient buttons with white text.
 - **Recreation decisions:** photos → seeded picsum placeholders
-  (`picsum.photos/seed/massive-<n>/<w>/<h>`); icons → lucide-react; video
+  (`picsum.photos/seed/appmint-<n>/<w>/<h>`); icons → lucide-react; video
   button → styled play button; no assets copied.
 
-Massive lives in `apps/massive` and uses shared components from `packages/ui`
+Appmint lives in `apps/appmint` and uses shared components from `packages/ui`
 (Button, ButtonLink, Badge, Card, cn).
+
+**Naming (rule 5).** The app, package and deploy host carry the original name
+**Appmint**; the source design name (ColorLib "Massive") appears only in this
+spec, `TEMPLATES.md` and the PR. Renamed from `apps/massive` — the folder had
+reused the source name.
 
 ## Design tokens
 
@@ -50,14 +55,14 @@ Measured from the live theme stylesheet: the most-painted colour that paints a s
 
 ### Requirement: Navigation bar
 
-The system SHALL render a top navigation bar with the site name "Massive",
+The system SHALL render a top navigation bar with the site name "Appmint",
 anchor links to the page's sections, and a dark-mode toggle button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Massive page is rendered
+- **GIVEN** the Appmint page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Massive" and links to Home, Features, App, Video, and Contact
+- **THEN** the navbar SHALL show the site name "Appmint" and links to Home, Features, App, Video, and Contact
 - **AND** the navbar SHALL show a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -76,7 +81,7 @@ buttons.
 
 - **GIVEN** the page is rendered
 - **WHEN** the hero is displayed
-- **THEN** it SHALL contain a level-1 heading "Welcome To Massive App Store."
+- **THEN** it SHALL contain a level-1 heading "Welcome To Appmint App Store."
 - **AND** it SHALL show "Get App Now" and "Discover More" buttons
 
 ### Requirement: Features section
@@ -159,7 +164,7 @@ buttons.
 
 - **GIVEN** the page is rendered
 - **WHEN** the download section is displayed
-- **THEN** it SHALL contain a heading "Get Download Massive app"
+- **THEN** it SHALL contain a heading "Get Download Appmint app"
 - **AND** it SHALL show "Download From Google Play" and "Download On The App
   Store" buttons
 
@@ -229,10 +234,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Massive app is rendered
+- **GIVEN** the Appmint app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, all sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Massive — App Landing Template"
+- **AND** the document title SHALL be "Appmint — App Landing Template"
 
 ### Requirement: Component Dock attribution
 
@@ -252,7 +257,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/massive/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/appmint/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -261,7 +266,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/massive/` is inspected
+- **WHEN** every non-test file under `apps/appmint/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -269,15 +274,15 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Massive" and links to Home, Features, App, Video, and Contact
-- [x] Hero section — it SHALL contain a level-1 heading "Welcome To Massive App Store."
+- [x] Navigation bar — the navbar SHALL show the site name "Appmint" and links to Home, Features, App, Video, and Contact
+- [x] Hero section — it SHALL contain a level-1 heading "Welcome To Appmint App Store."
 - [x] Features section — it SHALL contain a heading "App Features"
 - [x] App split section — it SHALL contain a heading "All you want from app"
 - [x] Video section — it SHALL contain a heading "Description With Video"
 - [x] Work section — it SHALL contain a heading "How it work"
 - [x] Screenshots section — it SHALL contain a heading "Awesome Screenshot"
 - [ ] Testimonials section — it SHALL contain a heading "What's say our Clients"
-- [x] Download section — it SHALL contain a heading "Get Download Massive app"
+- [x] Download section — it SHALL contain a heading "Get Download Appmint app"
 - [x] Team section — it SHALL contain a heading "Our Expert Team"
 - [x] Pricing section — it SHALL contain a heading "Pricing Table"
 - [x] Blog section — it SHALL contain a heading "From Blog"

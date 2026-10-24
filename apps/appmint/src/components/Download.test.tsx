@@ -7,7 +7,7 @@ describe('Download', () => {
     render(<Download />)
 
     const heading = screen.getByRole('heading')
-    expect(heading.textContent).toMatch(/Get Download Massive app/)
+    expect(heading.textContent).toMatch(/Get Download Appmint app/)
 
     expect(screen.getByRole('link', { name: /Download From Google Play/ })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /Download On The App Store/ })).toBeInTheDocument()

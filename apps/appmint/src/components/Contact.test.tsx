@@ -20,7 +20,7 @@ describe('Contact', () => {
 
     await user.type(screen.getByLabelText('Name'), 'Ada Lovelace')
     await user.type(screen.getByLabelText('Email address'), 'ada@example.com')
-    await user.type(screen.getByLabelText('Message'), 'Hello Massive!')
+    await user.type(screen.getByLabelText('Message'), 'Hello Appmint!')
     await user.click(screen.getByRole('button', { name: 'Send Message' }))
 
     expect(screen.getByLabelText('Name')).toHaveValue('Ada Lovelace')

@@ -1,21 +1,21 @@
 const members = [
   {
-    src: 'https://picsum.photos/seed/massive-team-1/320/320',
+    src: 'https://picsum.photos/seed/appmint-team-1/320/320',
     name: 'Alex Morgan',
     role: 'Chief Executive Officer',
   },
   {
-    src: 'https://picsum.photos/seed/massive-team-2/320/320',
+    src: 'https://picsum.photos/seed/appmint-team-2/320/320',
     name: 'Sofiya Rahman',
     role: 'Lead Product Designer',
   },
   {
-    src: 'https://picsum.photos/seed/massive-team-3/320/320',
+    src: 'https://picsum.photos/seed/appmint-team-3/320/320',
     name: 'Jason Doe',
     role: 'Head of Engineering',
   },
   {
-    src: 'https://picsum.photos/seed/massive-team-4/320/320',
+    src: 'https://picsum.photos/seed/appmint-team-4/320/320',
     name: 'Emma Wilson',
     role: 'Marketing Director',
   },

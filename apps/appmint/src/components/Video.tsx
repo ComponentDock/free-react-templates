@@ -10,7 +10,7 @@ export function Video() {
       <div
         className="absolute inset-0 opacity-25"
         style={{
-          backgroundImage: "url('https://picsum.photos/seed/massive-video/1600/700')",
+          backgroundImage: "url('https://picsum.photos/seed/appmint-video/1600/700')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

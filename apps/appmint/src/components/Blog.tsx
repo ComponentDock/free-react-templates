@@ -1,20 +1,20 @@
 const posts = [
   {
-    src: 'https://picsum.photos/seed/massive-blog-1/640/400',
+    src: 'https://picsum.photos/seed/appmint-blog-1/640/400',
     category: 'Design',
     title: 'Experience And Resources By Your Side',
     blurb:
       'Rapidiously monetize market-driven web services. Completely synthesize end-to-end models and emerging niches.',
   },
   {
-    src: 'https://picsum.photos/seed/massive-blog-2/640/400',
+    src: 'https://picsum.photos/seed/appmint-blog-2/640/400',
     category: 'Development',
     title: 'The Most Effective App For mobile',
     blurb:
       'Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures.',
   },
   {
-    src: 'https://picsum.photos/seed/massive-blog-3/640/400',
+    src: 'https://picsum.photos/seed/appmint-blog-3/640/400',
     category: 'Business',
     title: 'We Help Your Time Work For Your Company',
     blurb:

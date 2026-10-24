@@ -1,17 +1,17 @@
-# Massive — Design Notes
+# Appmint — Design Notes
 
 Reference: **Massive** — `https://colorlib.com/wp/template/massive/`  
 Live preview: `https://preview.colorlib.com/theme/massive/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/massive-free-template.jpg  
-Shipped: https://massive.free.componentdock.com
+Shipped: https://appmint.free.componentdock.com
 
-Massive is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Massive" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Appmint is a single-page app landing template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Massive" website template design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Libre Baskerville**, **Libre Baskerville:ital,wght@0,400;0,700;1,400**, **Open Sans**
 
-## Design tokens (`apps/massive/src/index.css` `@theme`)
+## Design tokens (`apps/appmint/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -49,7 +49,7 @@ Fonts loaded by `index.html` (Google Fonts): **Libre Baskerville**, **Libre Bask
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Massive", anchor links to the page's sections, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Appmint", anchor links to the page's sections, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a full-width hero with a headline, a blurb, and two buttons.
@@ -105,8 +105,8 @@ The system SHALL render a footer with link columns, social links, and a copyrigh
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/massive/` may name the source designer,
+- **Provenance ban.** No file under `apps/appmint/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/massive/public/CNAME` = `massive.free.componentdock.com`
-  and the package `homepage` = `https://massive.free.componentdock.com`.
+- **Deploy identity.** `apps/appmint/public/CNAME` = `appmint.free.componentdock.com`
+  and the package `homepage` = `https://appmint.free.componentdock.com`.

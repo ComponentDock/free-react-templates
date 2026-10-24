@@ -1,19 +1,19 @@
 const screenshots = [
   {
-    src: 'https://picsum.photos/seed/massive-shot-1/420/760',
-    alt: 'Massive app home screen',
+    src: 'https://picsum.photos/seed/appmint-shot-1/420/760',
+    alt: 'Appmint app home screen',
   },
   {
-    src: 'https://picsum.photos/seed/massive-shot-2/420/760',
-    alt: 'Massive app analytics screen',
+    src: 'https://picsum.photos/seed/appmint-shot-2/420/760',
+    alt: 'Appmint app analytics screen',
   },
   {
-    src: 'https://picsum.photos/seed/massive-shot-3/420/760',
-    alt: 'Massive app chat screen',
+    src: 'https://picsum.photos/seed/appmint-shot-3/420/760',
+    alt: 'Appmint app chat screen',
   },
   {
-    src: 'https://picsum.photos/seed/massive-shot-4/420/760',
-    alt: 'Massive app settings screen',
+    src: 'https://picsum.photos/seed/appmint-shot-4/420/760',
+    alt: 'Appmint app settings screen',
   },
 ] as const
 

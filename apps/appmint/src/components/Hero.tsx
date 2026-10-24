@@ -5,7 +5,7 @@ export function Hero() {
     <section id="home" className="bg-gradient-to-br from-teal via-ocean to-navy py-20 sm:py-28">
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
         <h1 className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl">
-          Welcome To Massive App Store.
+          Welcome To Appmint App Store.
         </h1>
         <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-teal-50">
           Rapidiously monetize market-driven web services. Completely synthesize end-to-end models
