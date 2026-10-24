@@ -161,8 +161,8 @@ The queue's three named pairs, re-measured:
 
 | pair | left | right | verdict |
 | --- | --- | --- | --- |
-| `cake` / `cakes` | 59,957 B, `<title>` "Cake \| Template" | 28,721 B, "Cakes - Template" | **TWO-DESIGNS** — both live, disjoint section sets |
-| `academia` / `academics` | 78,609 B, "Academia - Online Courses & Learning" | 32,115 B, "Academics — Website by Colorlib" | **TWO-DESIGNS** |
+| `cake` / `cakes` | 59,957 B, `<title>` "Cake \| Template", 6 headings | 28,721 B, "Cakes - Template", 12 headings | **TWO-DESIGNS** — 0 shared headings |
+| `academia` / `academics` | 78,609 B, "Academia - Online Courses & Learning", 44 headings | 32,115 B, "Academics — Website by Colorlib", 24 headings | **TWO-DESIGNS** — 0 shared headings |
 | `fashion` / `fashion-2` | 26,945 B, shared directory | 26,945 B, shared directory | **SHARED-URL** — already adjudicated above |
 
 One pair cannot be decided by the census and is recorded as a note, not a flag:
