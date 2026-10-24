@@ -13,7 +13,7 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
-## State after Medical → Verdia (2026-10-24j)
+## State after Medical → Verdia (2026-10-24j, #1844)
 
 **6 apps reuse their source name** (`node scripts/audit-naming.mjs`:
 `apps/nurture`, `apps/oraxol`, `apps/pawpal`, `apps/petsitting`, `apps/petvet`,
