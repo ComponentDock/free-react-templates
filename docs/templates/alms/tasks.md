@@ -44,6 +44,6 @@
 - [x] `bash scripts/verify-app.sh alms` (typecheck + lint + 100 % coverage + build)
 - [x] `npm run spec:validate`
 - [x] Self-review (`docs/self-review.md`)
-- [ ] PR to `main` with source, preview URL, tokens, coverage, screenshots note
-- [ ] Merge immediately, then bookkeeping: TEMPLATES.md row 1270 re-pointed
+- [x] PR to `main` with source, preview URL, tokens, coverage, screenshots note
+- [x] Merge immediately, then bookkeeping: TEMPLATES.md row 1270 re-pointed
       from `givehope` to `alms`, `npm run readme:status`

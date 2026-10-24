@@ -47,17 +47,17 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24l, main `8e8ae25cc` + this commit — the `prose`, `vellum` and `zenith` rewrites and the #1858 `flint` row fix are all in; the steps that got here are in the chain below)
+## Census (re-measured 2026-10-24m, main `b8a74cad5` + this commit — the `prose`, `vellum` and `zenith` rewrites, the #1858 `flint` row fix and the `alms` Givehope rebuild + row re-point are all in; the steps that got here are in the chain below)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,229 |
-| apps                               | 1,704 |
-| `AGREE`                            | 1,697 |
-| `DRIFT`                            | **6** |
+| specs                              | 3,230 |
+| apps                               | 1,705 |
+| `AGREE`                            | 1,698 |
+| `DRIFT`                            | **5** |
 | `PREP` (spec-only)                 | 1,525 |
 | `ROW-MULTI` apps                   | 36    |
-| `SLUG-OWNER` subjects              | 12    |
+| `SLUG-OWNER` subjects              | 10    |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
 row-map fix below, `15` after the two provenance corrections below, then `13` on the
@@ -67,16 +67,17 @@ after the `concertina` rewrite (spec `accordion-05` → `accordion-16`; census
 `contact-form-v15` → `contact-form-08`; census `AGREE=1693 DRIFT=10`), `9` after the `prose`
 rewrite (spec `blogger` → `author`; census `AGREE=1694 DRIFT=9`), `8` after #1858 re-pointed
 both `spark` rows to the rebuilt `flint` (`AGREE=1695 DRIFT=8`), `7` after the `vellum` rewrite
-(spec `accordion-16` → `readit`; census `AGREE=1696 DRIFT=7`), and `6` after the `zenith` rewrite
-(spec `bootstrap-buttons-05` → `saasify`; census `AGREE=1697 DRIFT=6` at this commit, apps `1704`).
+(spec `accordion-16` → `readit`; census `AGREE=1696 DRIFT=7`), `6` after the `zenith` rewrite
+(spec `bootstrap-buttons-05` → `saasify`; census `AGREE=1697 DRIFT=6` at that commit, apps `1704`),
+and `5` after the Givehope design was built as **`alms`** and row 1270 re-pointed to it
+(`AGREE=1698 DRIFT=5`, apps `1705`).
 
-## The 6 remaining drift cases (adjudicated against the live previews)
+## The 5 remaining drift cases (adjudicated against the live previews)
 
 | app | verdict | spec says | row says | copy found on the winner |
 | --- | --- | --- | --- | --- |
 | `bellows` | `BOTH-STALE` → `accordion-01` | accordion-15 | accordion-03 | "Accordion #01", "Spa Therapies", "Face Treatments" |
 | `cirrus` | `UNRESOLVED` | cloudtemplate | saas | — (app copy is fintech; neither demo carries it) |
-| `givehope` | `ROW-POINTER` | bcharity | givehope | "Bless others with your gift", "Become A Volunteer" |
 | `logistico` | `ROW-POINTER` | thelogistico | logistico | "We Give You Complete Control", "of Your Shipments" |
 | `stride` | `ROW-POINTER` | stamina | accordion-19 | "We Believe Little Things Matter", "Stay Healthy" |
 | `sudsy` | `ROW-POINTER` | carwash | sparkleclean | "Your car will look as your new one", "We have an application" |
@@ -84,15 +85,18 @@ both `spark` rows to the rebuilt `flint` (`AGREE=1695 DRIFT=8`), `7` after the `
 Three of the ten were **spec-side** (`prose`, `vellum`, `zenith`): the spec described a design the
 app does not render, and in all three the body (token table, section list, Requirements) was the
 other design's too — only `jobboard` and `medical` were provenance-only. `prose`, `vellum` and
-`zenith` are now fixed, so **no** spec-side case remains: the six left are four **row pointers**
-(`givehope`, `logistico`, `stride`, `sudsy`), one **both-stale** (`bellows`) and one still
+`zenith` are now fixed, so **no** spec-side case remains: the five left are three **row pointers**
+(`logistico`, `stride`, `sudsy`), one **both-stale** (`bellows`) and one still
 **unresolved** (`cirrus`). `spark` left this table when #1858 re-pointed both of its rows to the
-rebuilt `flint`.
+rebuilt `flint`, and `givehope` left it when the design was rebuilt as `alms` and row 1270
+re-pointed — `apps/givehope` is now the census's second `UNLINKED` app, a surplus duplicate of
+`givemore` (Bcharity), the same shape as `spark` → `flint`.
 
 ## Fixed so far
 
 | app | was | now | why it was safe |
 | --- | --- | --- | --- |
+| `alms`(new) + row 1270 | ColorLib "Givehope" credited to `apps/givehope`, an app whose copy is Bcharity's (already shipped as `givemore`, row 1253) — so the Givehope design was never built | ColorLib "Givehope" rebuilt as **`alms`** (`apps/alms`), measured yellow `#f7ca44` on `#fff`/`#fafafa`, `#404040` footer, Dosis/Overpass, the ten reference bands (nav · hero · counter + intro · features · fundraisers · donations · success story · news · volunteer form · footer) | the new app's copy is Givehope's own ("Served Over", "Children in 150 Countries", "Latest Fundraisers", "Latest Donations", "We have raised $100,000"); tokens re-measured from `theme/givehope/css/style.css` (23,189 B, sha `48b382c5…`); spec `template-alms` + `docs/templates/alms/` written with it and row 1270 re-pointed to `alms` (PR #1859), leaving `apps/givehope` as the second `UNLINKED` surplus duplicate |
 | `jobboard` | ColorLib "Careers", tokens `#1644ba`/Nunito, Careers sections | ColorLib "Jobboard", measured lime `#89ba16`, the nine reference bands, Requirements aligned to the app | the app's copy is Jobboard's; the row already said `jobboard`; tokens re-measured from `css/style.css` + `custom-bs.css` |
 | `medical` | ColorLib "Medical Wordpress Themes" (a round-up article, no demo) | ColorLib "Medical" | the body, tokens and section order were already measured from `/theme/medical/`; only the name was wrong |
 | `ledger` | ColorLib "Accounting", green `#1BA12D`/Montserrat, accounting sections | ColorLib "Daren", measured red `#ef1313` + `"Source Serif Pro"` display face, the eight Daren bands | the app's copy is Daren's (`Creative & Design`, `Search Objects`, `LOADING MORE`); **both** spec and `docs/templates/ledger/` were rewritten, tokens re-measured from `theme/daren/css/style.css` (123,435 B, sha `427b90d0…`) |
@@ -117,26 +121,28 @@ names. Renaming is the rename stream's call, not the prep stream's.
 1. **No spec rewrites left.** All seven spec-side cases are closed — `ledger`→daren,
    `bistro`→allfood, `concertina`→accordion-16, `formwell`→contact-form-08, `prose`→author,
    `vellum`→readit and `zenith`→saasify landed 2026-10-24, spec **and** docs each time. The census now
-   reads `AGREE=1697 DRIFT=6` with **zero** `SPEC-STALE` subjects; what remains is row-pointer,
+   reads `AGREE=1698 DRIFT=5` with **zero** `SPEC-STALE` subjects; what remains is row-pointer,
    both-stale and unresolved work, which belongs to the implementer/rename stream (items 2–5).
    The family-demo prefixes still matter for anyone re-reading those designs: `accordion-*` is
    `/theme/bac/`, `bootstrap-buttons-*` is `/theme/bb/`, `contact-form-*` is `/theme/bootstrap/`,
    and the four-page business themes resolve from the bare slug (`/theme/saasify/`,
    `/theme/author/`, `/theme/readit/`).
-2. **Four row pointers** (implementer/rename stream) — the rows below credit the
+2. **Two row pointers left** (implementer/rename stream) — the rows below credit the
    app with a design it does not recreate, so they are false `[x]`s and their
    designs are, in fact, unshipped:
 
    | row | line | links | which recreates |
    | --- | ---: | --- | --- |
-   | Givehope | 1270 | `givehope` | bcharity |
+   | ~~Givehope~~ | ~~1270~~ | ~~`alms`~~ | — **fixed**: the design was built as `alms` and row 1270 re-pointed to it |
    | Logistico | 2966 | `logistico` | thelogistico |
    | ~~Spark~~ | ~~626~~ | ~~`spark`~~ | appco — **fixed**: rows 626/1177 now link `flint`, which recreates Spark |
    | Accordion 19 | 658 | `stride` | stamina |
    | Sparkleclean | 1178 | `sudsy` | carwash |
 
    `apps/spark` and `apps/logistico` also collide with a *different* design's
-   slug — the `itkol` shape from `docs/provenance-grammar.md`.
+   slug — the `itkol` shape from `docs/provenance-grammar.md`. `Sparkleclean` needs
+   no rebuild: `gleam` already ships that design (row 166) and `sudsy` is a
+   duplicate of `washbox` (Carwash), so row 1178 only needs re-pointing.
 3. **One duplicate app pair** — `bellows` and `pleat` both recreate
    `accordion-01`; the `accordion-01` row links `pleat`, and `bellows` sits on
    the `accordion-03` row while rendering accordion-01's price list.
