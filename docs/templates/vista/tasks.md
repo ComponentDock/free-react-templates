@@ -1,5 +1,9 @@
 # Vista (Colorlib Error 404 11) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/vista`
+> (<https://vista.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Drift PR awaits review.
 > Implementation ships on `feat/template-vista` (PR #4).
 

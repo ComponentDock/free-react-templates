@@ -1,5 +1,9 @@
 # Dashlet — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/dashlet`
+> (<https://dashlet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Sidebar V05 (https://colorlib.com/wp/template/colorlib-sidebar-v05/)
 
 ## Design Analysis

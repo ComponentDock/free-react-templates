@@ -1,5 +1,9 @@
 # Gridhost — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/gridhost`
+> (<https://gridhost.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Webhostingservice"** (source slug `webhostingservice`
 — the Web Hosting family's **midnight-navy-and-pink hosting showcase**: a
 `#020230` hero with a **65 px/700 white Oswald headline**, a white sub-line, a

@@ -1,5 +1,9 @@
 # Foretaste — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/foretaste`
+> (<https://foretaste.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V15" (source slug `comingsoon_15` — the
 coming-soon family's **full-bleed gradient skyline** page: ONE `min-height:100vh`
 shell showing a single cover photograph (a washed downtown skyline, source file

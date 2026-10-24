@@ -1,5 +1,9 @@
 # Framecast — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/framecast`
+> (<https://framecast.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source Mapping
 - **ColorLib source:** Portfolio 2
 - **Preview URL:** https://preview.colorlib.com/theme/portfolio2/

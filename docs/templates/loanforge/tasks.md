@@ -1,5 +1,9 @@
 # Loanforge — Design Notes & Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/loanforge`
+> (<https://loanforge.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template identity
 
 - **New name:** Loanforge

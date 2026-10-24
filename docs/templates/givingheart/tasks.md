@@ -1,5 +1,9 @@
 # GivingHeart (ColorLib Charity 2) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/givingheart`
+> (<https://givingheart.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Token re-read (2026-10-24s) — superseded values below
 
 This task list was written before the live sheet was re-measured. Where it names

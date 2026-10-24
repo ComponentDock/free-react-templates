@@ -1,5 +1,9 @@
 # Trekly — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/trekly`
+> (<https://trekly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Write spec (openspec/specs/template-trekly/spec.md)
 - [x] Write design notes (docs/templates/trekly/)
 - [ ] Scaffold app from tavern template

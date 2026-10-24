@@ -1,5 +1,9 @@
 # Depot (ColorLib "Warehouse") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/depot`
+> (<https://depot.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-depot` by an implementer stream.
 

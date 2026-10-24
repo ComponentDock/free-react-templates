@@ -1,5 +1,9 @@
 # Razor (Colorlib Barbero) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/razor`
+> (<https://razor.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` under the original slug
 > (`template-barbero`); renamed to the new template name `razor` during
 > implementation (spec folder + docs folder).

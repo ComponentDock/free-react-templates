@@ -1,5 +1,9 @@
 # Amity (ColorLib "The Charity") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/amity`
+> (<https://amity.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-amity` by an implementer stream.
 

@@ -1,5 +1,9 @@
 # Sentient (ColorLib NeuralFlow) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sentient`
+> (<https://sentient.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "NeuralFlow"
 > (https://colorlib.com/wp/template/neuralflow/) under the NEW name
 > **Sentient** (sentient AI), per the monorepo naming mandate (never

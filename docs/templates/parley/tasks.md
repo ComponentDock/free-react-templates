@@ -1,5 +1,9 @@
 # Parley (ColorLib Negotiate) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/parley`
+> (<https://parley.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Negotiate — Free Bootstrap 4 Template by Colorlib"
 > (https://colorlib.com/wp/template/negotiate/) under the NEW name **Parley**
 > (a discussion/negotiation between parties — the consulting theme; single

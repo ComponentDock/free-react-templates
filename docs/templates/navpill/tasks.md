@@ -1,5 +1,9 @@
 # Navpill — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/navpill`
+> (<https://navpill.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu 03"** (source slug `website-menu-03` — the
 Website Menus family's **blue-pill dropdown menu**: a **transparent, non-sticky
 header** `position:absolute; top:2rem; z-index:1999` floating over a

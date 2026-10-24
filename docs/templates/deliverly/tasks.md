@@ -1,5 +1,9 @@
 # Deliverly (ColorLib Dusk) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/deliverly`
+> (<https://deliverly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-deliverly`. Source: ColorLib "Dusk" — logistics &
 > delivery company template (https://colorlib.com/wp/template/dusk/).

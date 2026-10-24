@@ -1,5 +1,9 @@
 # Signvane — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/signvane`
+> (<https://signvane.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template: Signvane (ColorLib Signup Form 14)
 
 ### Phase 1: Scaffold

@@ -1,5 +1,9 @@
 # Soarly (ColorLib Booking 9) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/soarly`
+> (<https://soarly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V9 — Free Flight Booking Form"
 > (https://colorlib.com/wp/template/colorlib-booking-9/) under the NEW name
 > **Soarly** ("soar" + "-ly", following the Booking Forms family convention

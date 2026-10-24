@@ -1,5 +1,9 @@
 # Coursely (ColorLib Learnhub) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/coursely`
+> (<https://coursely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Learnhub"
 > (https://colorlib.com/wp/template/learnhub/) under the NEW name
 > **Coursely** (courses + learning), per the monorepo naming mandate

@@ -1,5 +1,9 @@
 # Trove (ColorLib Bounty) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/trove`
+> (<https://trove.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-trove` by an implementer stream.
 

@@ -1,5 +1,9 @@
 # Sudsy — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/sudsy`
+> (<https://sudsy.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Template: Sudsy (recreation of ColorLib Carwash)
 Preview: https://preview.colorlib.com/theme/carwash/
 

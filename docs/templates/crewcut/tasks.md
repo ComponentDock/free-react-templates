@@ -1,5 +1,9 @@
 # Crewcut (Colorlib Barber) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/crewcut`
+> (<https://crewcut.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts renamed from the pre-naming-rule `template-barber` prep
 > (2026-08-09): the ColorLib source name "Barber" is FORBIDDEN as the app
 > name — the recreation is **Crewcut** (barber theme). Spec rewritten

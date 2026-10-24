@@ -1,5 +1,9 @@
 # Nightgrid (ColorLib Css Table 16) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/nightgrid`
+> (<https://nightgrid.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-nightgrid`. Recreation name: **Nightgrid** (NEW
 > name — the ColorLib source keeps its name "Css Table 16").

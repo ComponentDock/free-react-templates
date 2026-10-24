@@ -1,5 +1,9 @@
 # Workhive — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/workhive`
+> (<https://workhive.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib Sharespace: https://colorlib.com/wp/template/sharespace/

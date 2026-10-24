@@ -1,5 +1,9 @@
 # Tears (Colorlib Error 404 12) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/tears`
+> (<https://tears.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Drift PR awaits review.
 > Implementation ships later on `feat/template-tears`.
 

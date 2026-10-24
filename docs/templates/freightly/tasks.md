@@ -1,5 +1,9 @@
 # Freightly (ColorLib Logitrans) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/freightly`
+> (<https://freightly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Logitrans"
 > (https://colorlib.com/wp/template/logitrans/) under the NEW name
 > **Freightly** (freight + -ly), per the monorepo naming mandate (never

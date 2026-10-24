@@ -1,5 +1,9 @@
 # Tandem — Tasks & Design Notes (recreation of ColorLib "Appy")
 
+> **SHIPPED** — this prep's design shipped as `apps/tandem`
+> (<https://tandem.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Shipped as `apps/tandem` (<https://tandem.free.componentdock.com>). The
 > checklist below is prep/implementation history, not outstanding work.
 

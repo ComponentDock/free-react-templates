@@ -1,5 +1,9 @@
 # Shotglow — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/shotglow`
+> (<https://shotglow.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Shotgear (photography studio portfolio).
 
 ## Tasks

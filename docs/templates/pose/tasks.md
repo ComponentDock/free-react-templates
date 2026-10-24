@@ -1,5 +1,9 @@
 # Pose (ColorLib Stylistic) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/pose`
+> (<https://pose.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts for the model-agency template (renamed Stylistic → Pose on
 > claim). Implementation ships on `feat/template-pose`.
 

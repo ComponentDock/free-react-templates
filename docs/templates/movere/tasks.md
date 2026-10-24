@@ -1,5 +1,9 @@
 # Movere (ColorLib SwiftMove) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/movere`
+> (<https://movere.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "SwiftMove"
 > (https://colorlib.com/wp/template/swiftmove/) under the NEW name **Movere**
 > (Latin for "to move", single lowercase word), per the monorepo naming

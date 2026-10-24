@@ -1,5 +1,9 @@
 # Topdeck — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/topdeck`
+> (<https://topdeck.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V07"** (source slug `website-menu-07` —
 the Website Menus family's **two-tier transparent header** variant: a **utility
 top bar** (envelope + phone left, four socials right, closed by a

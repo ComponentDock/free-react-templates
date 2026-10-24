@@ -1,5 +1,9 @@
 # Laurel — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/laurel`
+> (<https://laurel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Phase 1: Scaffold
 
 - [ ] Copy apps/courselex to apps/laurel

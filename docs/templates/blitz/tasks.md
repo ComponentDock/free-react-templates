@@ -1,5 +1,9 @@
 # Blitz — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/blitz`
+> (<https://blitz.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Spec written (openspec/specs/template-blitz/spec.md)
 - [x] Replication research (preview HTML + CSS tokens)
 - [x] App scaffold (apps/blitz/)

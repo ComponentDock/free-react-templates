@@ -1,5 +1,9 @@
 # Shuttervibe — Design Notes & Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/shuttervibe`
+> (<https://shuttervibe.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Thumber" (https://colorlib.com/wp/template/thumber/)
 Preview: https://preview.colorlib.com/theme/thumber/
 

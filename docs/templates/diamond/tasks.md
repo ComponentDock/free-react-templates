@@ -1,5 +1,9 @@
 # Diamond (Colorlib Error 404 9) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/diamond`
+> (<https://diamond.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-diamond`.
 

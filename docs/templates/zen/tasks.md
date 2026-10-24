@@ -1,5 +1,9 @@
 # Zen Template — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/zen`
+> (<https://zen.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## ColorLib Source
 - Template: Namaste (https://preview.colorlib.com/theme/namaste/)
 - Yoga/wellness landing page

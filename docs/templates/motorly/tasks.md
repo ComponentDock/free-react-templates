@@ -1,5 +1,9 @@
 # Motorly (ColorLib Automotive) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/motorly`
+> (<https://motorly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of https://colorlib.com/wp/template/automotive/ under the new
 > name **Motorly** (brand: **Motorly Garage**). Full spec:
 > `openspec/specs/template-motorly/spec.md`.

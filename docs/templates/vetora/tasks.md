@@ -1,5 +1,9 @@
 # Vetora — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/vetora`
+> (<https://vetora.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Petvet" (https://colorlib.com/wp/template/petvet/),
 > shipped under the new name Vetora.
 >

@@ -1,5 +1,9 @@
 # Sponson — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/sponson`
+> (<https://sponson.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V19"** (source slug `website-menu-19` — the Website Menus
 family's **fixed left side rail + floated 80 % content column + push-style off-canvas drawer**: a
 **`20 %`-wide white rail** pinned to the left edge at **`100vh`/`100dvh`**

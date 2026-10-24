@@ -1,5 +1,9 @@
 # Wainscot — tasks outline
 
+> **SHIPPED** — this prep's design shipped as `apps/wainscot`
+> (<https://wainscot.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **Tangre** (https://colorlib.com/wp/template/tangre/)
 as **Wainscot** — furniture & interior design landing page.
 

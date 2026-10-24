@@ -1,5 +1,9 @@
 # Harbor — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/harbor`
+> (<https://harbor.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Deerhost"** (source slug `deerhost` — the hosting
 family's **navy + isometric-illustration** page: a `#120851` shell whose hero
 carries a light-on-dark headline beside a large isometric city-server

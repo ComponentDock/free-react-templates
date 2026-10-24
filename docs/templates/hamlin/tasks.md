@@ -1,5 +1,9 @@
 # Hamlin — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/hamlin`
+> (<https://hamlin.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Spec written
 - [ ] App scaffold (copy quest, rename)
 - [ ] index.css theme tokens (Rubik, Playfair Display, brand colors)

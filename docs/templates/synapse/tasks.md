@@ -1,5 +1,9 @@
 # Synapse (ColorLib Nexus) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/synapse`
+> (<https://synapse.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Nexus" (https://colorlib.com/wp/template/nexus/)
 > under the NEW name **Synapse** (naming rule: must differ from the ColorLib
 > slug; the older `template-nexus` prep was superseded by this folder).

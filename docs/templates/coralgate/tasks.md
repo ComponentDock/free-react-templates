@@ -1,5 +1,9 @@
 # Coralgate — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/coralgate`
+> (<https://coralgate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template Info
 
 - **Name:** Coralgate

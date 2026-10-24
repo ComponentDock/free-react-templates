@@ -1,5 +1,9 @@
 # Folium (ColorLib Papers) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/folium`
+> (<https://folium.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-folium/` is the claim marker —
 > implementers start here.

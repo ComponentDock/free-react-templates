@@ -1,5 +1,9 @@
 # Blaze (Colorlib Error 404 13) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/blaze`
+> (<https://blaze.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; refined during implementation on
 > `feat/template-blaze` with live-demo replication findings.
 

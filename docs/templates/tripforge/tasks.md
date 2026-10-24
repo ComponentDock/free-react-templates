@@ -1,5 +1,9 @@
 # Tripforge — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/tripforge`
+> (<https://tripforge.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Direngine" (Travel). Spec:
 `openspec/specs/template-tripforge/spec.md`. New name: **tripforge**
 (source slug `direngine` — never reuse it in app files).

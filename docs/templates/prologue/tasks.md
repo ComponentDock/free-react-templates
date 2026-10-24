@@ -1,5 +1,9 @@
 # Prologue — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/prologue`
+> (<https://prologue.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V14" (source slug `comingsoon_14` — the
 coming-soon family's **light split-screen** page: one `min-height:100vh` flex row
 at `align-items:stretch` split into an opaque WHITE **37%** left panel and a

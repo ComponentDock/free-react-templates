@@ -1,5 +1,9 @@
 # Polenta — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/polenta`
+> (<https://polenta.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template
 
 - **Name:** Polenta

@@ -1,5 +1,9 @@
 # Counsel (ColorLib Solicitor) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/counsel`
+> (<https://counsel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `solicitor` in an
 > earlier prep of `counsel`. The spec, the TEMPLATES.md row and the app are

@@ -1,5 +1,9 @@
 # Jamboree — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/jamboree`
+> (<https://jamboree.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib "Eventasia" (https://colorlib.com/wp/template/eventasia/)
 **Preview:** https://preview.colorlib.com/theme/eventasia/
 **New name:** Jamboree

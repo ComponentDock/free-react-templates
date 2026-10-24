@@ -1,5 +1,9 @@
 # Tasks & Design Notes: FormWell (Contact Form 08)
 
+> **SHIPPED** — this prep's design shipped as `apps/formwell`
+> (<https://formwell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Overview
 
 Recreation of ColorLib **Contact Form 08** (`https://colorlib.com/wp/template/contact-form-08/`,

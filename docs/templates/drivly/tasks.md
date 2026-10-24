@@ -1,5 +1,9 @@
 # Drivly (ColorLib Booking 4) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/drivly`
+> (<https://drivly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V4 — Free Car Booking Form"
 > (https://colorlib.com/wp/template/colorlib-booking-4/) under the NEW name
 > **Drivly** ("drive" + "-ly", following the Booking Forms family convention

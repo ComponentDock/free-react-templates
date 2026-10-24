@@ -1,5 +1,9 @@
 # Helios (ColorLib Solarshift) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/helios`
+> (<https://helios.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Solarshift"
 > (https://colorlib.com/wp/template/solarshift/) under the NEW name
 > **Helios** (the Greek sun god), per the monorepo naming mandate (never

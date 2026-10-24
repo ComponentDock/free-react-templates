@@ -1,5 +1,9 @@
 # Feast (Colorlib Foodblog) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/feast`
+> (<https://feast.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder `openspec/specs/template-feast/` is the claim marker — implementers
 > pick this template when it is the first `- [ ]` item with a spec.

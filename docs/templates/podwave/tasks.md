@@ -1,5 +1,9 @@
 # Podwave — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/podwave`
+> (<https://podwave.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Podca" (podcast template)
 
 ## Setup

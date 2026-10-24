@@ -1,5 +1,9 @@
 # Truss (ColorLib Kraft) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/truss`
+> (<https://truss.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts renamed from the ColorLib source name (`template-kraft`) to
 > the new original name (`template-truss`) per the naming rule. Implementation
 > ships on `feat/template-truss`.

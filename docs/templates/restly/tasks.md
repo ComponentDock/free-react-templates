@@ -1,5 +1,9 @@
 # Restly (ColorLib Booking 6) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/restly`
+> (<https://restly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V6 — Free Reservation Form"
 > (https://colorlib.com/wp/template/colorlib-booking-6/) under the NEW name
 > **Restly** ("rest" + "-ly", following the Booking Forms family convention

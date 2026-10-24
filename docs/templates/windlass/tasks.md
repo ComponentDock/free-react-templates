@@ -1,5 +1,9 @@
 # Windlass — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/windlass`
+> (<https://windlass.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V14"** (source slug `website-menu-14` — the Website Menus
 family's **white floating card with a pink accent and a social row**: a centred heading band
 (`padding:112px 0`) over the page's **`#fafafa`**, then a **white card** (`padding:10px`,

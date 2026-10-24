@@ -1,5 +1,9 @@
 # Lumen (Colorlib Error 404 20) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lumen`
+> (<https://lumen.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-error-404-20` in an
 > earlier prep of `lumen`. The spec, the TEMPLATES.md row and the app are

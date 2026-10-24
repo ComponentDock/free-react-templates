@@ -1,5 +1,9 @@
 # Nomad (ColorLib "Explore") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/nomad`
+> (<https://nomad.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-nomad` by an implementer stream.
 

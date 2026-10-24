@@ -1,5 +1,9 @@
 # Wingly (ColorLib Booking 5) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/wingly`
+> (<https://wingly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V5 — Free Airline Flight
 > Booking Form" (https://colorlib.com/wp/template/colorlib-booking-5/) under
 > the NEW name **Wingly** ("wing" + "-ly", following the Booking Forms family

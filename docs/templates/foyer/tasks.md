@@ -1,5 +1,9 @@
 # Foyer (ColorLib Interior) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/foyer`
+> (<https://foyer.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` under the ColorLib source name
 > "interior"; the recreation ships as **Foyer** on `feat/template-interior`
 > (renamed to `apps/foyer`, package `@free-react-templates/foyer`).

@@ -1,5 +1,9 @@
 # Glamour (ColorLib Look) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/glamour`
+> (<https://glamour.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Look" — free Bootstrap 4 model agency website
 > template (https://colorlib.com/wp/template/look/) under the NEW name
 > **Glamour** (allure/beauty — the fashion-model theme; single lowercase

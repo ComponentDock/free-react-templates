@@ -1,5 +1,9 @@
 # BytePress — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/bytepress`
+> (<https://bytepress.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Techmag
 
 ## Tasks

@@ -1,5 +1,9 @@
 # MicDrop — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/micdrop`
+> (<https://micdrop.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Prep Notes
 - **Source:** ColorLib "The Hustle Hour" (`the-hustle-hour`)
 - **Preview:** 404 — design based on screenshot analysis

@@ -1,5 +1,9 @@
 # ArtGallery — Design Notes & Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/artgallery`
+> (<https://artgallery.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib slug: `art-museum`

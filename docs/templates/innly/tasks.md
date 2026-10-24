@@ -1,5 +1,9 @@
 # Innly (ColorLib Booking 15) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/innly`
+> (<https://innly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V15 — Free Resort Reservation
 > Template" (https://colorlib.com/wp/template/colorlib-booking-15/) under
 > the NEW name **Innly** ("inn" — a small hotel/lodge, fitting the resort

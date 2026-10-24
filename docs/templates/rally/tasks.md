@@ -1,5 +1,9 @@
 # Rally (ColorLib "Eventure") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/rally`
+> (<https://rally.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-rally` by an implementer stream.
 

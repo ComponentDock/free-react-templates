@@ -1,5 +1,9 @@
 # Cortex (Colorlib Agentforge) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/cortex`
+> (<https://cortex.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-cortex`.
 

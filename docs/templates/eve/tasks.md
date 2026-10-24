@@ -1,5 +1,9 @@
 # Eve — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/eve`
+> (<https://eve.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V04" (source slug `comingsoon_04` — a
 full-viewport purple→violet gradient screen with a white uppercase "Coming
 Soon" headline, a light under-construction line, four white rounded-square

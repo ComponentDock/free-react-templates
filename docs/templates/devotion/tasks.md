@@ -1,5 +1,9 @@
 # Devotion — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/devotion`
+> (<https://devotion.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Faithful" (https://colorlib.com/wp/template/faithful/)
 Preview: https://preview.colorlib.com/theme/faithful/
 New name: devotion

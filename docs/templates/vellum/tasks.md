@@ -1,5 +1,9 @@
 # Tasks: Vellum (Readit)
 
+> **SHIPPED** — this prep's design shipped as `apps/vellum`
+> (<https://vellum.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Overview
 
 Recreation of ColorLib **Readit** (`https://colorlib.com/wp/template/readit/`, live demo

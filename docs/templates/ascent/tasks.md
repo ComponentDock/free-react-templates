@@ -1,5 +1,9 @@
 # Ascent (ColorLib "Startup 2") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/ascent`
+> (<https://ascent.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact. Implementation ships on `feat/template-ascent`.
 
 ## Design notes (replication findings)

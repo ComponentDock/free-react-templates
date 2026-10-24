@@ -1,5 +1,9 @@
 # Classily — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/classily`
+> (<https://classily.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Classy Ads (https://colorlib.com/wp/template/classy-ads/)
 Preview: https://preview.colorlib.com/theme/classy-ads/ (404 — screenshot used)
 New name: classily

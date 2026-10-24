@@ -1,5 +1,9 @@
 # ModalRosa — Design Notes & Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/modalrosa`
+> (<https://modalrosa.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Modal 13 (https://colorlib.com/wp/template/modal-13/)
 Preview: https://preview.colorlib.com/theme/bootstrap/modal-13/
 

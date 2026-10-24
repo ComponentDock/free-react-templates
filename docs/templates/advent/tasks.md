@@ -1,5 +1,9 @@
 # Advent — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/advent`
+> (<https://advent.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V05" (source slug `comingsoon_05` — a
 single pink→coral gradient screen with a white countdown bar pinned flush to
 the top edge (four hairline-split cells), a centred white uppercase "Coming

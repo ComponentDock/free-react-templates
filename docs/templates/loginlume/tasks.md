@@ -1,5 +1,9 @@
 # LoginLume — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/loginlume`
+> (<https://loginlume.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Tasks
 
 - [x] Write spec (openspec/specs/template-loginlume/spec.md)

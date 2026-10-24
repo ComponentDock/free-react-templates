@@ -1,5 +1,9 @@
 # Jockford — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/jockford`
+> (<https://jockford.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib Jackson
 **Preview:** https://preview.colorlib.com/theme/jackson/
 **Spec:** openspec/specs/template-jockford/spec.md

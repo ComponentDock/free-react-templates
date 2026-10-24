@@ -1,5 +1,9 @@
 # Griddle Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/griddle`
+> (<https://griddle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Spec written
 - [ ] Scaffold app (copy bistro, rename)
 - [ ] Data file with all content

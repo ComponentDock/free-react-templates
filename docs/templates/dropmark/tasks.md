@@ -1,5 +1,9 @@
 # Dropmark — Implementation TODO
 
+> **SHIPPED** — this prep's design shipped as `apps/dropmark`
+> (<https://dropmark.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Pre-implementation
 - [x] Spec written: openspec/specs/template-dropmark/spec.md
 - [x] Design notes: docs/templates/dropmark/design-notes.md

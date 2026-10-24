@@ -1,5 +1,9 @@
 # Blueprint (ColorLib Unapp) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/blueprint`
+> (<https://blueprint.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prepared by the prep stream on `main`; implementation ships on
 > `feat/template-blueprint`. The recreation is named **Blueprint** (new,
 > original name — the ColorLib source name "Unapp" is never reused).

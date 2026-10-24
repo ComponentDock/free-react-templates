@@ -1,5 +1,9 @@
 # Zephyrine — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/zephyrine`
+> (<https://zephyrine.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Dinomuz (https://colorlib.com/wp/template/dinomuz/)
 Preview: https://preview.colorlib.com/theme/dinomuz/
 

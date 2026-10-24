@@ -1,5 +1,9 @@
 # Starboard — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/starboard`
+> (<https://starboard.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V05"** (source slug `website-menu-05` — the
 Website Menus family's **sidebar vertical menu**: a **transparent header** over a
 **100vh full-bleed background image**, a white uppercase **"BRAND"** wordmark at

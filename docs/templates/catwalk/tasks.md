@@ -1,5 +1,9 @@
 # Catwalk (Colorlib Topmodel) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/catwalk`
+> (<https://catwalk.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-catwalk`.
 

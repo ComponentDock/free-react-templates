@@ -1,5 +1,9 @@
 # Aisle — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/aisle`
+> (<https://aisle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts written on `main` by the prep stream. Implementation ships
 > later on `feat/template-aisle`. Nothing here is marked `[~]`/`[x]` by prep.
 >

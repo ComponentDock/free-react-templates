@@ -1,5 +1,9 @@
 # Dropcall — Implementation TODO
 
+> **SHIPPED** — this prep's design shipped as `apps/dropcall`
+> (<https://dropcall.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Pre-implementation
 - [x] Spec written: openspec/specs/template-dropcall/spec.md
 - [x] Design notes: docs/templates/dropcall/design-notes.md

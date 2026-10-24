@@ -1,5 +1,9 @@
 # Odyssey (ColorLib Ruft) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/odyssey`
+> (<https://odyssey.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-odyssey`.
 

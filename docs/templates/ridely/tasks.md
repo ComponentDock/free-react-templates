@@ -1,5 +1,9 @@
 # Ridely (ColorLib Booking 13) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/ridely`
+> (<https://ridely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V13 — Free Book A Taxi
 > Template" (https://colorlib.com/wp/template/colorlib-booking-13/) under
 > the NEW name **Ridely** ("ride" — a taxi ride + "-ly", matching the Booking

@@ -1,5 +1,9 @@
 # Lensly (ColorLib Capture 2) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lensly`
+> (<https://lensly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-lensly` by an implementer stream.
 

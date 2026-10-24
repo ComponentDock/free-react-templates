@@ -1,5 +1,9 @@
 # Tradewell — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/tradewell`
+> (<https://tradewell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of **ColorLib Investpro** (https://colorlib.com/wp/template/investpro/)
 under the NEW name **Tradewell**. Preview: https://investpro-colorlib.pages.dev/
 (portal URL `preview.colorlib.com/theme/investpro/` 404s — demo is on

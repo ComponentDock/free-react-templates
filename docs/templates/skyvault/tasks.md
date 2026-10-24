@@ -1,5 +1,9 @@
 # Skyvault — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/skyvault`
+> (<https://skyvault.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Hostspace"** (source slug `hostspace` — the Web
 Hosting family's **violet night-sky** page: a transparent nav floating over an
 `821px` hero painted with a `#200e35 → #4d1d85` gradient, a violet line-art city

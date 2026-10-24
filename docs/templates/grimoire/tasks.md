@@ -1,5 +1,9 @@
 # Grimoire (ColorLib Wizard 21) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/grimoire`
+> (<https://grimoire.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-wizard-21` in an
 > earlier prep of `grimoire`. The spec, the TEMPLATES.md row and the app are

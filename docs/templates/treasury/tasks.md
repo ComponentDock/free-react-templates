@@ -1,5 +1,9 @@
 # Treasury — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/treasury`
+> (<https://treasury.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Setup
 
 - [x] Create apps/treasury from apps/amber template

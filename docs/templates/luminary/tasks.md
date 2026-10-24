@@ -1,5 +1,9 @@
 # Luminary — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/luminary`
+> (<https://luminary.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib Inspire (https://preview.colorlib.com/theme/inspire/)
 **New name:** luminary
 **Stack:** React 19 + Vite + Tailwind 4 + TypeScript

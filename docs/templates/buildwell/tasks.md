@@ -1,5 +1,9 @@
 # BuildWell — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/buildwell`
+> (<https://buildwell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib **Celt** (https://preview.colorlib.com/theme/celt/ — HTTP 200, 31,820 B,
 re-read 2026-10-24) · new name **buildwell** · construction / corporate, single page.
 

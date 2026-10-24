@@ -1,5 +1,9 @@
 # Larboard — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/larboard`
+> (<https://larboard.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V06"** (source slug `website-menu-06` —
 the Website Menus family's **left-hand sidebar** variant: a **transparent
 header** over a **100vh full-bleed background image**, a **white ≈28 px

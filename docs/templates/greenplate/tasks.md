@@ -1,5 +1,9 @@
 # Greenplate — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/greenplate`
+> (<https://greenplate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib Vegefoods (https://colorlib.com/wp/template/vegefoods/)
 **Preview:** https://preview.colorlib.com/theme/vegefoods/
 **New name:** Greenplate

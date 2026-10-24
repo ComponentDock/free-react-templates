@@ -1,5 +1,9 @@
 # Highway (Colorlib Autoroad) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/highway`
+> (<https://highway.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Design notes
 
 - **Original:** ColorLib "Autoroad" — free car rental website template

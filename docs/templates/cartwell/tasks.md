@@ -1,5 +1,9 @@
 # Cartwell — Template Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/cartwell`
+> (<https://cartwell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib Dropdown 05: https://colorlib.com/wp/template/dropdown-05/

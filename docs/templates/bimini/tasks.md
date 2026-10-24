@@ -1,5 +1,9 @@
 # Bimini — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/bimini`
+> (<https://bimini.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V20"** (source slug `website-menu-20` — the Website Menus
 family's **full-screen overlay menu over a full-viewport charcoal hero**: a whole-viewport sheet
 (`nav#colorlib-main-nav`, `position:absolute; inset:0`, **`width:100%` + `height:100%`**,

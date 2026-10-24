@@ -1,5 +1,9 @@
 # Modalize — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/modalize`
+> (<https://modalize.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **Modal 05** (`https://colorlib.com/wp/template/modal-05/`).
 
 ## Design & Structure Notes

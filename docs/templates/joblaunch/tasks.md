@@ -1,5 +1,9 @@
 # JobLaunch — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/joblaunch`
+> (<https://joblaunch.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Jobstart" (`jobstart`)
 Preview: https://preview.colorlib.com/theme/jobstart/
 

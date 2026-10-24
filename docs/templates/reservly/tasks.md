@@ -1,5 +1,9 @@
 # Reservly (ColorLib Booking Form V1) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/reservly`
+> (<https://reservly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V1"
 > (https://colorlib.com/wp/template/colorlib-booking-1/) under the NEW name
 > **Reservly** (a reservation), per the monorepo naming mandate (never reuse

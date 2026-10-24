@@ -1,5 +1,9 @@
 # Guild (ColorLib "The Quest") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/guild`
+> (<https://guild.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-guild` by an implementer stream.
 

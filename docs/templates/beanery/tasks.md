@@ -1,5 +1,9 @@
 # Beanery (ColorLib Decoffee) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/beanery`
+> (<https://beanery.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-beanery`. Source: ColorLib "Decoffee" — boutique coffee
 > shop / cafe template (https://colorlib.com/wp/template/decoffee/).

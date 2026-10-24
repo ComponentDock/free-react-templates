@@ -1,5 +1,9 @@
 # Tasks: Zenith (Saasify)
 
+> **SHIPPED** — this prep's design shipped as `apps/zenith`
+> (<https://zenith.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Overview
 
 Recreation of ColorLib **Saasify** (`https://colorlib.com/wp/template/saasify/`, live demo

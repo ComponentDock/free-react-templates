@@ -1,5 +1,9 @@
 # Dentora (ColorLib Brightsmile) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/dentora`
+> (<https://dentora.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Implementation artifact for the `feat/template-dentora` run. Dentora is the
 > NEW original name for the recreation of ColorLib "Brightsmile"
 > (https://colorlib.com/wp/template/brightsmile/).

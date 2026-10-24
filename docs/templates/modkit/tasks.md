@@ -1,5 +1,9 @@
 # Modkit — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/modkit`
+> (<https://modkit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Next Ui Kit" (purple/indigo UI kit showcase).
 Spec: `openspec/specs/template-modkit/spec.md`. New name: **modkit**
 (source slug `next-ui-kit`, theme preview slug `next` — never reuse

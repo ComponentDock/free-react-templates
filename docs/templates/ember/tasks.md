@@ -1,5 +1,9 @@
 # Ember (Colorlib Error 404 4) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/ember`
+> (<https://ember.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `colorlib-error-404-4` in an
 > earlier prep of `ember`. The spec, the TEMPLATES.md row and the app are

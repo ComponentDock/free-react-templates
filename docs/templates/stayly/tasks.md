@@ -1,5 +1,9 @@
 # Stayly (ColorLib Booking 12) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/stayly`
+> (<https://stayly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V12"
 > (https://colorlib.com/wp/template/colorlib-booking-12/) under the NEW name
 > **Stayly** ("stay" — a place to stay + "-ly"; single lowercase word, no

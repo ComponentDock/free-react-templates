@@ -1,5 +1,9 @@
 # Roostly (ColorLib Booking 11) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/roostly`
+> (<https://roostly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V11"
 > (https://colorlib.com/wp/template/colorlib-booking-11/) under the NEW name
 > **Roostly** (roost — a place to rest/stay; single lowercase word, no

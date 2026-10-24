@@ -1,5 +1,9 @@
 # Bedrock — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/bedrock`
+> (<https://bedrock.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `bootstrap-footer-05` in an
 > earlier prep of `bedrock`. The spec, the TEMPLATES.md row and the app are

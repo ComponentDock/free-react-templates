@@ -1,5 +1,9 @@
 # Torquely (ColorLib Autorepair) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/torquely`
+> (<https://torquely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of https://colorlib.com/wp/template/autorepair/ under the new
 > name **Torquely** (brand: **Torquely Auto Repair**). Full spec:
 > `openspec/specs/template-torquely/spec.md`.

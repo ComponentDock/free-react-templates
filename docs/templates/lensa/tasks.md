@@ -1,5 +1,9 @@
 # Lensa (ColorLib Nissa) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lensa`
+> (<https://lensa.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Nissa" (https://colorlib.com/wp/template/nissa/)
 > under the NEW name **Lensa** (lens-themed word for the photography-studio
 > design; single lowercase word, no collision with `apps/`,

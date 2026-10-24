@@ -1,5 +1,9 @@
 # Passgate — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/passgate`
+> (<https://passgate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Spec
 
 - [x] Write spec: `openspec/specs/template-passgate/spec.md`

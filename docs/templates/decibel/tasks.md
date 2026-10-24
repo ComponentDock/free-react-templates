@@ -1,5 +1,9 @@
 # Decibel (ColorLib Deejee) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/decibel`
+> (<https://decibel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Deejee" (https://colorlib.com/wp/template/deejee/)
 > under the NEW name **Decibel** (the unit of sound intensity — a
 > DJ/radio-themed brand; single lowercase word, no collision with `apps/`

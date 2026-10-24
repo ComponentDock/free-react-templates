@@ -1,5 +1,9 @@
 # Reimagine — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/reimagine`
+> (<https://reimagine.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Dinomuz" (https://colorlib.com/wp/template/dinomuz/)
 Preview: https://preview.colorlib.com/theme/dinomuz/
 New name: reimagine

@@ -1,5 +1,9 @@
 # Amber (Colorlib The Barber) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/amber`
+> (<https://amber.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Old-style prep (source-name folder) renamed by the implementer to the new
 > name `amber` (git mv, matching the hipstyle → stylely pattern).
 

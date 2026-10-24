@@ -1,5 +1,9 @@
 # Pexflow — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/pexflow`
+> (<https://pexflow.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## ColorLib source
 - **Template name:** Pexcon
 - **Slug:** pexcon

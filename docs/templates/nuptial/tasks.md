@@ -1,5 +1,9 @@
 # Nuptial (ColorLib Hookup) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/nuptial`
+> (<https://nuptial.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Hookup" (https://colorlib.com/wp/template/hookup/)
 > under the NEW original name **Nuptial**. Spec lives at
 > `openspec/specs/template-nuptial/spec.md`; app folder `apps/nuptial`,

@@ -1,5 +1,9 @@
 # Kicks Template — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/kicks`
+> (<https://kicks.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Footwear (https://colorlib.com/wp/template/footwear/)
 
 ## Design Research

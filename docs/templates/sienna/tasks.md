@@ -1,5 +1,9 @@
 # Sienna (ColorLib Remake) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sienna`
+> (<https://sienna.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
 > Implementation ships later on `feat/template-sienna`.
 

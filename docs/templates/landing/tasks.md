@@ -1,5 +1,9 @@
 # Landing Page (Colorlib Landing Page Wordpress Themes) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/landing`
+> (<https://landing.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-landing`.
 

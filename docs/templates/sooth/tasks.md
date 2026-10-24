@@ -1,5 +1,9 @@
 # Sooth (ColorLib Serenite) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sooth`
+> (<https://sooth.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Serenite"
 > (https://colorlib.com/wp/template/serenite/) under the NEW name
 > **Sooth** (the calm a great spa leaves you with), per the monorepo

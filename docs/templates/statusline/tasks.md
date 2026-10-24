@@ -1,5 +1,9 @@
 # Statusline (ColorLib Table 05) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/statusline`
+> (<https://statusline.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation
 > ships later on `feat/template-statusline`. Recreation name:
 > **Statusline** (NEW name — the ColorLib source keeps its name

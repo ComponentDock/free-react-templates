@@ -1,5 +1,9 @@
 # Stratum — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/stratum`
+> (<https://stratum.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - **ColorLib**: Unearth

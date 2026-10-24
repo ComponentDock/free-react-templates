@@ -1,5 +1,9 @@
 # Tasks: Reel (Carousel 11)
 
+> **SHIPPED** — this prep's design shipped as `apps/reel`
+> (<https://reel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Write OpenSpec spec (`openspec/specs/template-reel/spec.md`)
 - [ ] Scaffold `apps/reel` (copy `apps/abjure` structure, update package name, install dependencies)
 - [ ] Write unit tests for Reel components (Navbar, HeroCarousel, FeaturesSection, NewsletterSection, Footer with Component Dock link) ensuring 100% test coverage

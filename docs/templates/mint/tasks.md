@@ -1,5 +1,9 @@
 # Mint (ColorLib Interior Design) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/mint`
+> (<https://mint.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Interior Design"
 > (https://colorlib.com/wp/template/interior-design/). Built as **Mint**
 > (new original name — evokes the teal `#98ccd3` brand palette).

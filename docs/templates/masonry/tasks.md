@@ -1,5 +1,9 @@
 # Masonry (Colorlib Astral) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/masonry`
+> (<https://masonry.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` under the source name (template-astral);
 > renamed to the NEW name **Masonry** in the implementation PR.
 

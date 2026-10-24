@@ -1,5 +1,9 @@
 # PayGate — Design Notes & Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/paygate`
+> (<https://paygate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Colorlib Wizard 25"
 Preview: https://preview.colorlib.com/theme/colorlib-wizard-25/ (404 — screenshot used as primary reference)
 Spec: openspec/specs/template-paygate/spec.md

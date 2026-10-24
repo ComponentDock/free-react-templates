@@ -1,5 +1,9 @@
 # Journee (ColorLib "Tourbi") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/journee`
+> (<https://journee.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-journee` by an implementer stream.
 

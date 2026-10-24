@@ -1,5 +1,9 @@
 # Mane (Colorlib Haircare) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/mane`
+> (<https://mane.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` (spec at `openspec/specs/template-haircare`,
 > renamed to `template-mane` on the implementation branch).
 

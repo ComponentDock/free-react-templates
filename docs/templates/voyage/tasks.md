@@ -1,5 +1,9 @@
 # Tasks: Voyage (Travel & Tourism Landing Template)
 
+> **SHIPPED** — this prep's design shipped as `apps/voyage`
+> (<https://voyage.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [ ] Workspace setup: create `apps/voyage` copying structure from `apps/nexus`
 - [ ] Configure `package.json` with `@free-react-templates/voyage` and workspaces
 - [ ] Configure `vite.config.ts` with `injectUiSource()` helper

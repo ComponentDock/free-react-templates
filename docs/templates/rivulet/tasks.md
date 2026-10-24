@@ -1,5 +1,9 @@
 # Rivulet (ColorLib "Droppler") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/rivulet`
+> (<https://rivulet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-rivulet` by an implementer stream.
 

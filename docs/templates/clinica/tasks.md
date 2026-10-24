@@ -1,5 +1,9 @@
 # Clinica (ColorLib Medicalcenter) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/clinica`
+> (<https://clinica.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Medicalcenter — Free Medical HTML Template"
 > (https://colorlib.com/wp/template/medicalcenter/) under the NEW name
 > **Clinica** ("clinic" in Spanish/Italian — fits the hospital /

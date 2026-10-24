@@ -1,5 +1,9 @@
 # Bowsprit — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/bowsprit`
+> (<https://bowsprit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V08"** (source slug `website-menu-08` — the
 Website Menus family's **CTA variant**: one transparent dark-on-photo nav row with
 the wordmark at the left, a **five-item** nav list (third item a **hover + click

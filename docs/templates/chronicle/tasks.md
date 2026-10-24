@@ -1,5 +1,9 @@
 # Chronicle (ColorLib "Content") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/chronicle`
+> (<https://chronicle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-chronicle` by an implementer stream.
 

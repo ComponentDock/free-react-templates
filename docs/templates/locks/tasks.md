@@ -1,5 +1,9 @@
 # Locks (ColorLib Trim) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/locks`
+> (<https://locks.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Implementer tasks. Claimed on `feat/template-locks` (2026-08-09) — the
 > ColorLib source is "Trim"; the recreation is named **Locks** per the
 > new-original-name rule.

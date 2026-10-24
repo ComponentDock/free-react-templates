@@ -1,5 +1,9 @@
 # Bazaar (ColorLib ShopMax) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/bazaar`
+> (<https://bazaar.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
 > Implementation ships later on `feat/template-bazaar`.
 

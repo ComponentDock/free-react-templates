@@ -1,5 +1,9 @@
 # Chrono (ColorLib "Timezone") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/chrono`
+> (<https://chrono.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-chrono` by an implementer stream.
 

@@ -1,5 +1,9 @@
 # Trailquest — Implementation TODO
 
+> **SHIPPED** — this prep's design shipped as `apps/trailquest`
+> (<https://trailquest.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Tasks
 
 - [ ] Scaffold app: copy simplest existing app, rename to `trailquest`, update package name

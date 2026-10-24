@@ -1,5 +1,9 @@
 # Orenda (ColorLib Onlineedu) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/orenda`
+> (<https://orenda.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts (spec + research) prepared on `main` by the prep stream.
 > Implementation ships later on `feat/template-orenda` by an implementer
 > stream — this folder is the handoff.

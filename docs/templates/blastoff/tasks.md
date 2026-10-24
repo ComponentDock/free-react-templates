@@ -1,5 +1,9 @@
 # Blastoff (ColorLib Launchpad) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/blastoff`
+> (<https://blastoff.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Launchpad"
 > (https://colorlib.com/wp/template/launchpad/) under the NEW name
 > **Blastoff** (launch/rocket imagery), per the monorepo naming mandate

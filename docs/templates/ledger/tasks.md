@@ -1,5 +1,9 @@
 # Ledger — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/ledger`
+> (<https://ledger.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: ColorLib **Daren** (`https://colorlib.com/wp/template/daren/`, preview
 `https://preview.colorlib.com/theme/daren/`) → recreation name **ledger**. Shipped at
 https://ledger.free.componentdock.com.

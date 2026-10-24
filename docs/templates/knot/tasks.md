@@ -1,5 +1,9 @@
 # Knot (ColorLib "Sunshine") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/knot`
+> (<https://knot.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-knot` by an implementer stream.
 

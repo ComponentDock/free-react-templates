@@ -1,5 +1,9 @@
 # Twilight (ColorLib Calendar 07) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/twilight`
+> (<https://twilight.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`. Recreation name: **Twilight** (NEW name —
 > the ColorLib source keeps its name "Calendar 07"). Implementation ships on
 > `feat/template-twilight` per the standard PR flow.

@@ -1,5 +1,9 @@
 # Gloss (Colorlib Makeup Artist) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gloss`
+> (<https://gloss.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Claimed by the implementer stream: ColorLib "Makeup Artist" is recreated
 > under the NEW name **Gloss** (apps/gloss, package
 > `@free-react-templates/gloss`). The prep folder was source-named

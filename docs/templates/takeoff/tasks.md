@@ -1,5 +1,9 @@
 # Takeoff (Colorlib Appson) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/takeoff`
+> (<https://takeoff.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`. Implementation ships on
 > `feat/template-takeoff` and lands via PR.
 

@@ -1,5 +1,9 @@
 # Panorama — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/panorama`
+> (<https://panorama.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib Scenic: https://colorlib.com/wp/template/scenic/

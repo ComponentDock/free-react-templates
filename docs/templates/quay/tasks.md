@@ -1,5 +1,9 @@
 # Quay (ColorLib Harbor) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/quay`
+> (<https://quay.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Harbor"
 > (https://colorlib.com/wp/template/harbor/) under the NEW name **Quay**
 > (a stone landing place on a harbor — nautical echo of "Harbor" without

@@ -1,5 +1,9 @@
 # Drively (ColorLib Carrent) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/drively`
+> (<https://drively.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Lagoon PR awaits review.
 > Implementation ships later on `feat/template-drively`.
 

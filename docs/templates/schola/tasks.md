@@ -1,5 +1,9 @@
 # Schola (Colorlib Academix) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/schola`
+> (<https://schola.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Academix" (education landing). Prep artifacts were
 > originally written under the source name; the implementer renamed them to
 > the new template name **Schola** (source names are never reused).

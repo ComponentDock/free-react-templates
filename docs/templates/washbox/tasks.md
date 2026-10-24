@@ -1,5 +1,9 @@
 # WashBox — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/washbox`
+> (<https://washbox.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Carwash → washbox
 Spec: openspec/specs/template-washbox/spec.md
 

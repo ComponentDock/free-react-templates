@@ -1,5 +1,9 @@
 # Hex (ColorLib Wizard 23) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/hex`
+> (<https://hex.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep stream output (stream 3). Implementer: branch `feat/template-hex`,
 > app `apps/hex`, package `@free-react-templates/hex`, deploy
 > `hex.free.componentdock.com`. Full requirements + Gherkin scenarios in

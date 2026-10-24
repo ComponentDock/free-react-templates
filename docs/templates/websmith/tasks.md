@@ -1,5 +1,9 @@
 # Websmith (ColorLib Accent) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/websmith`
+> (<https://websmith.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-websmith`. Source: ColorLib "Accent" — digital agency /
 > web studio one-pager (https://colorlib.com/wp/template/accent/).

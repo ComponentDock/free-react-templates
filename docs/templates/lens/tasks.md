@@ -1,5 +1,9 @@
 # Lens — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/lens`
+> (<https://lens.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Phase 1: Scaffold
 
 - [x] Create apps/lens/ from simplest existing app (drift or similar 404 app)

@@ -1,5 +1,9 @@
 # TalentGate (ColorLib Jobportal) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/talentgate`
+> (<https://talentgate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-talentgate`. Recreation name: **TalentGate** (NEW
 > name — the ColorLib source keeps its name "Jobportal").

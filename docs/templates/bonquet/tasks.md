@@ -1,5 +1,9 @@
 # Tasks: Bonquet (Restauco recreation)
 
+> **SHIPPED** — this prep's design shipped as `apps/bonquet`
+> (<https://bonquet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [ ] Scaffold `apps/bonquet` workspace package (`@free-react-templates/bonquet`)
 - [ ] Configure `vite.config.ts` with `injectUiSource()` and `public/CNAME` (`bonquet.free.componentdock.com`)
 - [ ] Set up Tailwind theme tokens (coral primary `#FE5F41`, warm backgrounds `#FFF4F2`, `#FFF7F3`, Raleway + Mitr fonts)

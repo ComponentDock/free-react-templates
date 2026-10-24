@@ -1,5 +1,9 @@
 # Capstan — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/capstan`
+> (<https://capstan.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V13"** (source slug `website-menu-13` — the Website
 Menus family's **minimal transparent white bar** variant: a centred heading band (`padding:112px
 0`) over the page's `#fff`, then a **transparent, hairline-bounded strip** (`1px solid

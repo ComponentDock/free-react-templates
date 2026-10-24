@@ -1,5 +1,9 @@
 # Querry — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/querry`
+> (<https://querry.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template info
 
 - **Original**: ColorLib Colorlib Search 4

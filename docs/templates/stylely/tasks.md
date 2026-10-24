@@ -1,5 +1,9 @@
 # Stylely (ColorLib Hipstyle) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/stylely`
+> (<https://stylely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Hipstyle" (https://colorlib.com/wp/template/hipstyle/)
 > under the NEW original name **Stylely**. Prep artifacts were written on
 > `main` under the original slug; the implementer renamed the folders to

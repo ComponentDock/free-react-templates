@@ -1,5 +1,9 @@
 # Appdeck (ColorLib Prantokon) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/appdeck`
+> (<https://appdeck.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts for the recreation of ColorLib "Prantokon" under the NEW
 > original name **Appdeck** (the ColorLib source name must never be reused).
 > Written while the OnePage PR (#56) bookkeeping landed on `main`.

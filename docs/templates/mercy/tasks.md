@@ -1,5 +1,9 @@
 # Mercy — Charity & Nonprofit Template
 
+> **SHIPPED** — this prep's design shipped as `apps/mercy`
+> (<https://mercy.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Unicare"
 
 - Preview: https://preview.colorlib.com/theme/unicare/

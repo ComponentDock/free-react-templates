@@ -1,5 +1,9 @@
 # Verdia (ColorLib "Medical") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/verdia`
+> (<https://verdia.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > **Reference identity (measured 2026-10-24).** The `theme/medical/` page these
 > notes were built from is **post `medical-2`** (og `medical-free-template.jpg`,
 > rows 1864 / 2246, `apps/medlink`), not the `medical` post named above: "We Care

@@ -1,5 +1,9 @@
 # Sneakly (ColorLib Minishop) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sneakly`
+> (<https://sneakly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Minishop" — free Bootstrap 4 eCommerce / shoe-store
 > template (https://colorlib.com/wp/template/minishop/) under the NEW name
 > **Sneakly** (sneaker + the friendly "-ly" family suffix — Wingly, Drivly,

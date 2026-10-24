@@ -1,5 +1,9 @@
 # Kinesis (ColorLib Dazko) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/kinesis`
+> (<https://kinesis.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-kinesis`. Source: ColorLib "Dazko" — crossfit workout
 > training center template (https://colorlib.com/wp/template/dazko/).

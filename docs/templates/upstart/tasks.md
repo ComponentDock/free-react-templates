@@ -1,5 +1,9 @@
 # Upstart (ColorLib Started) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/upstart`
+> (<https://upstart.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-upstart`. Recreation name: **Upstart** (NEW name —
 > the ColorLib source keeps its name "Started").

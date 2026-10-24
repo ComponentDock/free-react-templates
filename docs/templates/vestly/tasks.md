@@ -1,5 +1,9 @@
 # Vestly — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/vestly`
+> (<https://vestly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Invest (https://preview.colorlib.com/theme/invest/)
 New name: Vestly (apps/vestly)
 Package: @free-react-templates/vestly

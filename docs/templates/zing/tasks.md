@@ -1,5 +1,9 @@
 # Zing — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/zing`
+> (<https://zing.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: **Tasteit** (`https://colorlib.com/wp/template/tasteit/`) →
 recreation name **zing**. Shipped at https://zing.free.componentdock.com.
 

@@ -1,5 +1,9 @@
 # Atrium (ColorLib Ararat) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/atrium`
+> (<https://atrium.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts (pre-correction, name==slug) renamed on the fly by the
 > implementer: `template-ararat` → `template-atrium`, Ararat → **Atrium**
 > (new original name; the ColorLib source keeps its name in TEMPLATES.md).

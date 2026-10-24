@@ -1,5 +1,9 @@
 # QueryWell — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/querywell`
+> (<https://querywell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Prep status: DONE (stream 3)
 
 ## Tasks

@@ -1,5 +1,9 @@
 # Unfurl — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/unfurl`
+> (<https://unfurl.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Phase 1: Scaffold
 
 - [x] Copy drift app structure, rename to unfurl

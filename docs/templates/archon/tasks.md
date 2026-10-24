@@ -1,5 +1,9 @@
 # Archon (ColorLib Alpha) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/archon`
+> (<https://archon.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts (renamed from the pre-correction `template-alpha` spec —
 > the ColorLib source name may not be reused). Implementation ships on
 > `feat/template-archon`.

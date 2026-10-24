@@ -1,5 +1,9 @@
 # Sidecraft — Template Replication Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sidecraft`
+> (<https://sidecraft.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib Bootstrap Sidebar 02  
 **Preview:** https://preview.colorlib.com/theme/bootstrap-sidebar-02/ (unreachable — 404)  
 **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-sidebar-170618.jpg  

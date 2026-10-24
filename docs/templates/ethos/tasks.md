@@ -1,5 +1,9 @@
 # Ethos — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/ethos`
+> (<https://ethos.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template: Ethos (ColorLib University)
 
 ### Scaffold

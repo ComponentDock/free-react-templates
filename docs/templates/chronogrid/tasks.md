@@ -1,5 +1,9 @@
 # ChronoGrid — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/chronogrid`
+> (<https://chronogrid.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: **Calendar 02** — https://colorlib.com/wp/template/calendar-02/ (`TEMPLATES.md` row 688)
 Live preview: https://preview.colorlib.com/theme/bootstrap/calendar-02/ (HTTP 200, 4,370 B, sha256 `929d60ec0752ebcaafbb…`)
 Sheet: `css/style.css?v=7d4a7424` (10,994 B, sha256 `d5d1e3bf00aa2cbba711…`) · Script: `js/snippet.js?v=15e86eb9` (5,604 B, sha256 `60889b5b40e24a5590cf…`)

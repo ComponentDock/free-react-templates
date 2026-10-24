@@ -1,5 +1,9 @@
 # Fellowship — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/fellowship`
+> (<https://fellowship.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Brotherlylove (church community landing template).
 
 ## Checklist

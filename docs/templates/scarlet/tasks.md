@@ -1,5 +1,9 @@
 # Scarlet (Colorlib Error 404 16) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/scarlet`
+> (<https://scarlet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Spec + design notes for the Scarlet recreation (Colorlib Error 404 16).
 > Implementation ships on `feat/template-scarlet`.
 

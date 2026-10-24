@@ -1,5 +1,9 @@
 # Violet (ColorLib Sierra) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/violet`
+> (<https://violet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally on `main` under the name "sierra"; **renamed to
 > Violet** on `feat/template-violet` because the mandatory naming rule
 > requires a NEW name different from the ColorLib source slug ("Sierra").

@@ -1,5 +1,9 @@
 # Showkit (Colorlib SuSan) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/showkit`
+> (<https://showkit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally prepared under `template-susan` on `main`;
 > renamed to `template-showkit` when the template was claimed (the
 > recreation MUST get a NEW name, never the ColorLib source name).

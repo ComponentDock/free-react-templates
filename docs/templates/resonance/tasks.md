@@ -1,5 +1,9 @@
 # Resonance (ColorLib Echo) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/resonance`
+> (<https://resonance.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Echo" (https://colorlib.com/wp/template/echo/),
 > a free Bootstrap 5 digital-marketing & SEO agency website template.
 > Implemented on `feat/template-resonance` and shipped as `apps/resonance`

@@ -1,5 +1,9 @@
 # Nimbus (ColorLib Cloudnest) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/nimbus`
+> (<https://nimbus.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `cloudnest` in an
 > earlier prep of `nimbus`. The spec, the TEMPLATES.md row and the app are

@@ -1,5 +1,9 @@
 # Arlo (ColorLib Alex Rivera) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/arlo`
+> (<https://arlo.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Design notes (replication findings)
 
 - **Original:** ColorLib "Alex Rivera" — personal portfolio template

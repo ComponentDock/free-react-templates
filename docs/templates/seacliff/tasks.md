@@ -1,5 +1,9 @@
 # Seacliff (ColorLib The Grand Azure) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/seacliff`
+> (<https://seacliff.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "The Grand Azure"
 > (https://colorlib.com/wp/template/the-grand-azure/) under the NEW name
 > **Seacliff** (single lowercase word, no collision with `apps/` or spec

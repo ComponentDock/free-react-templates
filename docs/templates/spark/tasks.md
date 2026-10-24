@@ -1,5 +1,9 @@
 # Spark (Colorlib Appco) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/spark`
+> (<https://spark.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-spark`.
 

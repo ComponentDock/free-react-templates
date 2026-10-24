@@ -1,5 +1,9 @@
 # Maison (Colorlib Loaft) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/maison`
+> (<https://maison.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared for the implementer. Implementation ships on
 > `feat/template-maison`.
 

@@ -1,5 +1,9 @@
 # Innkeep (ColorLib Regform 25) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/innkeep`
+> (<https://innkeep.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Regform 25" — free Bootstrap room-booking
 > form template (https://colorlib.com/wp/template/colorlib-regform-25/) under
 > the NEW name **Innkeep** (an inn/hotel reservation keeper — single lowercase

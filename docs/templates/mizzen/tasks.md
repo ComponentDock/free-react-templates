@@ -1,5 +1,9 @@
 # Mizzen — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/mizzen`
+> (<https://mizzen.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V17"** (source slug `website-menu-17` — the Website Menus
 family's **fluid social-circle row + centred two-line wordmark + red pill search over a dark bar with
 a red underline wipe**: a centred heading band (`112px 0`) over the page's **`#fafafa`**, then a

@@ -1,5 +1,9 @@
 # Marginalia (ColorLib "Blog Wordpress Themes") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/marginalia`
+> (<https://marginalia.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-marginalia` by an implementer stream.
 

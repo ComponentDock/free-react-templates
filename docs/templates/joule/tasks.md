@@ -1,5 +1,9 @@
 # Joule (ColorLib Electro) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/joule`
+> (<https://joule.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the pipeline runs.
 > Implementation ships later on `feat/template-joule`.
 

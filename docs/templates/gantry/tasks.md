@@ -1,5 +1,9 @@
 # Gantry (ColorLib "Engineers") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gantry`
+> (<https://gantry.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-gantry` by an implementer stream.
 

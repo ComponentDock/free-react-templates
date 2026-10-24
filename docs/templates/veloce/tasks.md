@@ -1,5 +1,9 @@
 # Veloce — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/veloce`
+> (<https://veloce.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Spec written (openspec/specs/template-veloce/spec.md)
 - [ ] Scaffold app (apps/veloce)
 - [ ] Implement HeaderTop component

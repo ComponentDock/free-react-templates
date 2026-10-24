@@ -1,5 +1,9 @@
 # Dozely (ColorLib Booking 8) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/dozely`
+> (<https://dozely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V8 — Free Reservation Form"
 > (https://colorlib.com/wp/template/colorlib-booking-8/) under the NEW name
 > **Dozely** ("doze" + "-ly", following the Booking Forms family convention

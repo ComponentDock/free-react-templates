@@ -1,5 +1,9 @@
 # Harbinger — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/harbinger`
+> (<https://harbinger.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## 1. Scaffold
 
 - [ ] Create `apps/harbinger/` from Novus scaffold

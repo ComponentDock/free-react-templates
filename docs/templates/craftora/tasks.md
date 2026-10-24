@@ -1,5 +1,9 @@
 # Craftora (recreation of Colorlib Chimper) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/craftora`
+> (<https://craftora.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Shipped as `apps/craftora` and deployed to
 > https://craftora.free.componentdock.com. Renamed from the
 > source-name-reusing folder under AGENTS.md rule 5 (new-original-name rule).

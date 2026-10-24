@@ -1,5 +1,9 @@
 # Shatter (ColorLib Smashed) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/shatter`
+> (<https://shatter.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-shatter`. Recreation name: **Shatter** (NEW name —
 > the ColorLib source keeps its name "Smashed").

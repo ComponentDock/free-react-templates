@@ -1,5 +1,9 @@
 # Miscellany (Colorlib Stuff) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/miscellany`
+> (<https://miscellany.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact written on `main` by the prep stream so implementers start
 > instantly. Implementation ships later on `feat/template-miscellany`.
 

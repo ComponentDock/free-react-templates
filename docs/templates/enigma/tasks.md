@@ -1,5 +1,9 @@
 # Enigma — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/enigma`
+> (<https://enigma.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Riddle (https://colorlib.com/wp/template/riddle/)
 
 ## Task Breakdown

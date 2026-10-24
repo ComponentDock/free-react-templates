@@ -1,5 +1,9 @@
 # Deskly (ColorLib Workhub) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/deskly`
+> (<https://deskly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Workhub"
 > (https://colorlib.com/wp/template/workhub/) under the NEW name **Deskly**
 > (coworking desks, single lowercase word), per the monorepo naming mandate

@@ -1,5 +1,9 @@
 # Propvale — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/propvale`
+> (<https://propvale.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Real Estate 2" (https://colorlib.com/wp/template/real-estate-2/)
 
 ## Scaffold

@@ -1,5 +1,9 @@
 # Bastion (Colorlib Tough) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/bastion`
+> (<https://bastion.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreated from the ColorLib "Tough" architecture template. Claimed on
 > `feat/template-bastion` (2026-08-08); original prep artifacts lived under
 > the source name `template-tough` and were renamed to Bastion per the

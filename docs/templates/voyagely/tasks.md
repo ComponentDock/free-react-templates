@@ -1,5 +1,9 @@
 # Voyagely (ColorLib Regform 11) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/voyagely`
+> (<https://voyagely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Reg Form V11" — free booking-with-datepicker
 > template (https://colorlib.com/wp/template/colorlib-regform-11/) under the
 > NEW name **Voyagely** (a voyage/travel booking — single lowercase word, no

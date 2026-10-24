@@ -1,5 +1,9 @@
 # Boost (ColorLib Webapp) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/boost`
+> (<https://boost.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "WebApp" under the NEW original name **Boost** (the
 > original prep used the source name "WebApp", which predates the mandatory
 > new-name rule — the spec/docs/app were renamed to Boost on

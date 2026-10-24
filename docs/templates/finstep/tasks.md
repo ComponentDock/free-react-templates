@@ -1,5 +1,9 @@
 # FinStep — Design Notes & Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/finstep`
+> (<https://finstep.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Colorlib Wizard 24"
 Preview: https://colorlib.com/etc/bwiz/colorlib-wizard-24/index.html
 Spec: openspec/specs/template-finstep/spec.md

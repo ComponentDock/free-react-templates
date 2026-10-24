@@ -1,5 +1,9 @@
 # Driven (ColorLib Sasu) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/driven`
+> (<https://driven.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Sasu" under the NEW name **Driven**
 > (source: https://colorlib.com/wp/template/sasu/).
 > Implementation ships on `feat/template-driven` (renamed from the earlier

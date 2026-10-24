@@ -1,5 +1,9 @@
 # Shear (ColorLib Barberz) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/shear`
+> (<https://shear.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreated as **Shear** (new original name; the ColorLib source is "Barberz").
 > Prep artifacts were prepared on `main` by the prep stream; implementation
 > ships on `feat/template-shear` (spec folder `template-barberz` was renamed to

@@ -1,5 +1,9 @@
 # Wanderly — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/wanderly`
+> (<https://wanderly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Scaffolding
 
 - [x] Create apps/wanderly/ from driven scaffold

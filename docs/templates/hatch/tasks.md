@@ -1,5 +1,9 @@
 # Hatch (recreation of ColorLib "Apps") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/hatch`
+> (<https://hatch.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation shipped on `feat/template-hatch`; the app folder, package and
 deploy host were renamed from the pre-rule-5 placeholder to **Hatch**.

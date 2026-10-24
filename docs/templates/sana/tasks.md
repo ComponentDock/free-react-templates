@@ -1,5 +1,9 @@
 # Sana (ColorLib Hospice) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sana`
+> (<https://sana.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-sana`.
 

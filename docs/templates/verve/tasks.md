@@ -1,5 +1,9 @@
 # Verve (ColorLib Racks) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/verve`
+> (<https://verve.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally prepared on `main` under the working name
 > "Racks"; renamed to **Verve** (the ColorLib source slug may not be reused
 > as the new template name). Implementation ships on

@@ -1,5 +1,9 @@
 # Artisan (ColorLib Kenedy) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/artisan`
+> (<https://artisan.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Kenedy"
 > (https://colorlib.com/wp/template/kenedy/) under the NEW name **Artisan**
 > (a skilled creative craftsperson — fits the personal-portfolio positioning),

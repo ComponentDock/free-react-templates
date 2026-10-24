@@ -1,5 +1,9 @@
 # Keycard — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/keycard`
+> (<https://keycard.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Pre-implementation
 
 - [x] Claim template in TEMPLATES.md (`[~]` mark)

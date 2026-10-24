@@ -1,5 +1,9 @@
 # Smilewell — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/smilewell`
+> (<https://smilewell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template
 
 - **New name:** Smilewell

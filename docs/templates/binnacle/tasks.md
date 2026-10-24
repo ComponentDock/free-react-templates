@@ -1,5 +1,9 @@
 # Binnacle — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/binnacle`
+> (<https://binnacle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V16"** (source slug `website-menu-16` — the Website Menus
 family's **dark utility strip + white in-flow bar + centred gold-slab rows + search field**: a
 centred heading band (`112px 0`) over the page's **`#fafafa`**, then a full-bleed

@@ -1,5 +1,9 @@
 # Awaited — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/awaited`
+> (<https://awaited.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V09" (source slug `comingsoon_09` — one
 full-viewport screen behind a fixed, full-screen cross-fading background
 slideshow of two `1900×900` photographs, washed by a `#b224ef` (bottom) →

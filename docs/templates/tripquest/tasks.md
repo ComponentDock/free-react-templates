@@ -1,5 +1,9 @@
 # Tripquest — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/tripquest`
+> (<https://tripquest.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Travel" (travel agency landing). Spec:
 `openspec/specs/template-tripquest/spec.md`. New name: **tripquest**
 (source slug `travel` — never reuse it in app files; screenshot demo

@@ -1,5 +1,9 @@
 # Regpeak — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/regpeak`
+> (<https://regpeak.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: **Colorlib Regform 32** (`https://colorlib.com/wp/template/colorlib-regform-32/`) → recreation name **regpeak**. Shipped at https://regpeak.free.componentdock.com.
 
 Scope: A split-screen registration form with a dark-to-cyan gradient background, left-side image panel, and a centered white card containing the form. Recreation of **Colorlib Reg Form V32**.

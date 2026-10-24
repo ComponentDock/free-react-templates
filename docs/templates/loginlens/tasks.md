@@ -1,5 +1,9 @@
 # LoginLens — Design Notes & Implementation Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/loginlens`
+> (<https://loginlens.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 - **ColorLib template**: Login Form V7
 - **Preview URL**: https://preview.colorlib.com/theme/login-form-v7/ (404 — design derived from live preview + CSS + screenshot)

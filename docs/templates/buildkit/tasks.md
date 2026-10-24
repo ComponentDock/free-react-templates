@@ -1,5 +1,9 @@
 # Buildkit — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/buildkit`
+> (<https://buildkit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Buildex Ui Kit" (tools/workshop UI kit showcase).
 Spec: `openspec/specs/template-buildkit/spec.md`. New name: **buildkit**
 (source slug `buildex-ui-kit`, theme preview slug `buildex` — never reuse

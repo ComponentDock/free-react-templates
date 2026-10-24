@@ -1,5 +1,9 @@
 # Imminent — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/imminent`
+> (<https://imminent.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V07" (source slug `comingsoon_07` — one
 full-viewport softly blurred office photograph under a magenta→indigo gradient
 wash (`#b224ef` bottom → `#7579ff` top, 90% opacity), a wordmark top-left and

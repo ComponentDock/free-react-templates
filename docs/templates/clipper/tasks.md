@@ -1,5 +1,9 @@
 # Clipper (Colorlib Alotan) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/clipper`
+> (<https://clipper.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` (originally as "Alotan"); implementation
 > ships on `feat/template-clipper`. Recreation name: **Clipper** (NEW name —
 > the ColorLib source keeps its name "Alotan").

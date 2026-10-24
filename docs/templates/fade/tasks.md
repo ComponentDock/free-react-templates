@@ -1,5 +1,9 @@
 # Fade (ColorLib Barberkraft) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/fade`
+> (<https://fade.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of https://colorlib.com/wp/template/barberkraft/ under the new
 > name **Fade** (barbershop skin-fade; evokes the craft). Implemented on
 > `feat/template-fade`.

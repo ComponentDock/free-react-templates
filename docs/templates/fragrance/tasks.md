@@ -1,5 +1,9 @@
 # Fragrance (ColorLib Aroma) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/fragrance`
+> (<https://fragrance.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by stream 3 (prep).
 > Implementation ships later on `feat/template-fragrance`.
 

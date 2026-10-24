@@ -1,5 +1,9 @@
 # FitNest — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/fitnest`
+> (<https://fitnest.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `fitnezz` in an
 > earlier prep of `fitnest`. The spec, the TEMPLATES.md row and the app are

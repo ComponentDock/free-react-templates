@@ -1,5 +1,9 @@
 # Scholarly (ColorLib Education Wordpress Themes) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/scholarly`
+> (<https://scholarly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally prepared on `main` under the working name
 > "Education Wordpress Themes"; renamed to **Scholarly** (the ColorLib source
 > slug may not be reused as the new template name). Implementation ships on

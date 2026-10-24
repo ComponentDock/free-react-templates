@@ -1,5 +1,9 @@
 # Voyara — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/voyara`
+> (<https://voyara.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Platina" (Travel). Spec:
 `openspec/specs/template-voyara/spec.md`. New name: **voyara**
 (source slug `platina` — never reuse it in app files).

@@ -1,5 +1,9 @@
 # Research & Task Outline: SlideSync (ColorLib carousel-12)
 
+> **SHIPPED** — this prep's design shipped as `apps/slidesync`
+> (<https://slidesync.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Overview
 
 - **New Name**: `slidesync`

@@ -1,5 +1,9 @@
 # Dealflow (ColorLib Pipelineiq) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/dealflow`
+> (<https://dealflow.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Pipelineiq"
 > (https://colorlib.com/wp/template/pipelineiq/) under the NEW name
 > **Dealflow** (deals + pipeline flow), per the monorepo naming mandate

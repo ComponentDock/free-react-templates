@@ -1,5 +1,9 @@
 # TopicDrop — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/topicdrop`
+> (<https://topicdrop.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Multiselect 07 → new name: topicdrop
 Preview: https://preview.colorlib.com/theme/bootstrap/multiselect-07/
 

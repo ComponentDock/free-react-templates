@@ -1,5 +1,9 @@
 # Navpoint — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/navpoint`
+> (<https://navpoint.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: **Directoryplus** (`https://colorlib.com/wp/template/directoryplus/`) → recreation name **navpoint**. Shipped at https://navpoint.free.componentdock.com.
 
 Scope: Navpoint is a directory & city guide template with a navbar, hero, categories, locations, food grid, how it works, clients and footer.

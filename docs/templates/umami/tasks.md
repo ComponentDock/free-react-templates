@@ -1,5 +1,9 @@
 # Umami (ColorLib Yummy 2) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/umami`
+> (<https://umami.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > **Reference identity (measured 2026-10-24).** This row OWNS the shared
 > directory: the catalogue keys `yummy` → `/wp/template/yummy-2/` (this post)
 > and `catalog-134132` → `/wp/template/yummy/` (zesty's rows), and

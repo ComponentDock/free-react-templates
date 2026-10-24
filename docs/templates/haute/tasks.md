@@ -1,5 +1,9 @@
 # Haute (ColorLib Instylr) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/haute`
+> (<https://haute.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream (as Instylr), renamed
 > to Haute on claim: the ColorLib source name must never be reused.
 

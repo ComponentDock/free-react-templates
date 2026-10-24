@@ -1,5 +1,9 @@
 # GrandStay — Implementation TODO
 
+> **SHIPPED** — this prep's design shipped as `apps/grandstay`
+> (<https://grandstay.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Pre-implementation
 - [x] Replication research: preview DOM fetched, CSS tokens extracted
 - [x] Spec written: openspec/specs/template-grandstay/spec.md

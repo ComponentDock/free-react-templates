@@ -1,5 +1,9 @@
 # Spinnaker — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/spinnaker`
+> (<https://spinnaker.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V18"** (source slug `website-menu-18` — the Website Menus
 family's **mega-menu variant**: an **inset navy rounded bar** with right-aligned amber-hover rows and a
 **full-bar-width panel of four `25 %` columns** — four plain links first, then **three image cards** —

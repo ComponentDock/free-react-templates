@@ -1,5 +1,9 @@
 # Abode (Colorlib Belara) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/abode`
+> (<https://abode.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` under the source name (template-belara);
 > renamed to the NEW name **Abode** in the implementation PR.
 

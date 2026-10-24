@@ -1,5 +1,9 @@
 # Signgate — Design Notes & Implementation Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/signgate`
+> (<https://signgate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib slug: `modal-15`

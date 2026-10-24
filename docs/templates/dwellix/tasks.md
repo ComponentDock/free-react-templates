@@ -1,5 +1,9 @@
 # Dwellix — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/dwellix`
+> (<https://dwellix.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Rehomes" (https://colorlib.com/wp/template/rehomes/)
 
 ## Tasks

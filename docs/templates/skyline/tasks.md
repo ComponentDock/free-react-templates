@@ -1,5 +1,9 @@
 # Skyline (ColorLib Dreamrs) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/skyline`
+> (<https://skyline.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts written by the prep stream under the SOURCE name (dreamrs);
 > renamed to the new name (skyline) by the implementer. Implementation ships
 > on `feat/template-skyline`.

@@ -1,5 +1,9 @@
 # Elevation (ColorLib Buildarch) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/elevation`
+> (<https://elevation.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreated from the live preview at https://preview.colorlib.com/theme/buildarch/
 > (DOM + `css/style.css` extracted on 2026-08-08) plus the TEMPLATES.md
 > screenshot. Implementation ships on `feat/template-elevation`.

@@ -1,5 +1,9 @@
 # Moda (ColorLib Shopper) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/moda`
+> (<https://moda.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts committed on `main` (prep stream). Implementation ships
 > later on `feat/template-moda` (implementer stream).
 

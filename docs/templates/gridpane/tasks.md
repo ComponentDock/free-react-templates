@@ -1,5 +1,9 @@
 # Gridpane (ColorLib Css Table 15) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gridpane`
+> (<https://gridpane.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-gridpane`. Recreation name: **Gridpane** (NEW
 > name — the ColorLib source keeps its name "Css Table 15").

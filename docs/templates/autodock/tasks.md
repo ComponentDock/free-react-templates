@@ -1,5 +1,9 @@
 # AutoDock — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/autodock`
+> (<https://autodock.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Cardoor. Preview: https://preview.colorlib.com/theme/cardoor/
 
 ## Phase 1: Scaffold

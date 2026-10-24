@@ -1,5 +1,9 @@
 # Sovereign — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/sovereign`
+> (<https://sovereign.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template info
 
 - **Name:** Sovereign

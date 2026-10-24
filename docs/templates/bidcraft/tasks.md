@@ -1,5 +1,9 @@
 # Bidcraft — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/bidcraft`
+> (<https://bidcraft.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Spec
 
 - [x] Write spec (openspec/specs/template-bidcraft/spec.md)

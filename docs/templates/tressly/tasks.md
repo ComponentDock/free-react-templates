@@ -1,5 +1,9 @@
 # Tressly (Colorlib HairSal) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/tressly`
+> (<https://tressly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
 > Implementation ships on `feat/template-tressly` (prep folders renamed from
 > the original slug `template-hairsal` by the implementer).

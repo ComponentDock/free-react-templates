@@ -1,5 +1,9 @@
 # Roost — Real Estate Home Services Template
 
+> **SHIPPED** — this prep's design shipped as `apps/roost`
+> (<https://roost.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Task Outline
 
 - [x] Spec written (openspec/specs/template-roost/spec.md)

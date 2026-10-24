@@ -1,5 +1,9 @@
 # Studium — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/studium`
+> (<https://studium.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Studylab (https://colorlib.com/wp/template/studylab/)
 Preview: https://preview.colorlib.com/theme/studylab/
 New name: studium (apps/studium, @free-react-templates/studium)

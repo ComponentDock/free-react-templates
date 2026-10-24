@@ -1,5 +1,9 @@
 # Lintel (ColorLib Marga) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lintel`
+> (<https://lintel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream (under the source name
 > "Marga"); renamed to **Lintel** by the implementer (new-original-name rule).
 > Implementation ships on `feat/template-lintel`.

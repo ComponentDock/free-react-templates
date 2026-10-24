@@ -1,5 +1,9 @@
 # Statelist — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/statelist`
+> (<https://statelist.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Design notes
 
 - ColorLib slug: `multiselect-10`

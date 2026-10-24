@@ -1,5 +1,9 @@
 # Regline — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/regline`
+> (<https://regline.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template: Regline (ColorLib Regform 6)
 **Category**: Job Application Form  
 **Source**: https://colorlib.com/wp/template/colorlib-regform-6/  

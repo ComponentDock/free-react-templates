@@ -1,5 +1,9 @@
 # Stratos (ColorLib Cloudnest) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/stratos`
+> (<https://stratos.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Cloudnest"
 > (https://colorlib.com/wp/template/cloudnest/) under the NEW name
 > **Stratos** (cloud platform → stratosphere), per the monorepo naming

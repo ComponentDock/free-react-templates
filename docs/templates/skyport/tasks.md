@@ -1,5 +1,9 @@
 # Skyport — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/skyport`
+> (<https://skyport.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Hosting"** (source slug `hosting` — the hosting
 family's **azure-on-blue-photo** page: a `#222222` utility top bar carrying a
 flat azure `#3898f8` purchase button above a white fixed header, then a

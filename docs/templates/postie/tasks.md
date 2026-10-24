@@ -1,5 +1,9 @@
 # Postie (ColorLib Standout) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/postie`
+> (<https://postie.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally on `main` under the name "standout"; **renamed to
 > Postie** on `feat/template-postie` because the mandatory naming rule
 > requires a NEW name different from the ColorLib source slug ("Standout").

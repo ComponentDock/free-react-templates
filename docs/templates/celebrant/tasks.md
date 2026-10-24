@@ -1,5 +1,9 @@
 # Celebrant — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/celebrant`
+> (<https://celebrant.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Wedding Officiant"** (source slug `wedding-officiant`,
 TEMPLATES.md line 3106) — a mint-and-white one-page wedding-officiant site: a
 **white sticky header** with a grey "Get Quote" pill, a **full-width cover-photo

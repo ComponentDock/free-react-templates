@@ -1,5 +1,9 @@
 # Cura (ColorLib Vitality) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/cura`
+> (<https://cura.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
 > The spec (`openspec/specs/template-cura/spec.md`, section

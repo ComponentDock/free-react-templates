@@ -1,5 +1,9 @@
 # Flairkit — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/flairkit`
+> (<https://flairkit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Regen Ui Kit" (pink/rose UI kit showcase).
 Spec: `openspec/specs/template-flairkit/spec.md`. New name: **flairkit**
 (source slug `regen-ui-kit`, theme preview slug `regen` — never reuse

@@ -1,5 +1,9 @@
 # Presto — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/presto`
+> (<https://presto.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Fastes"** (source slug `fastes` — the hosting family's
 **coral-on-violet** page: a `#73469F`→`#3B2774` gradient hero with layered wave
 silhouettes and a white cloud-scallop divider, a centred caption over a white

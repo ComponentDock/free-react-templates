@@ -1,5 +1,9 @@
 # Cloud (Colorlib Error 404 14) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/cloud`
+> (<https://cloud.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Drift PR awaits review.
 > Implementation ships later on `feat/template-cloud`.
 

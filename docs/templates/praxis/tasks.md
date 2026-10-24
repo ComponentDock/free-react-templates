@@ -1,5 +1,9 @@
 # Praxis — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/praxis`
+> (<https://praxis.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: **Drpro** (`https://colorlib.com/wp/template/drpro/`) → recreation
 name **praxis**. Shipped at https://praxis.free.componentdock.com.
 

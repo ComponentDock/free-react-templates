@@ -1,5 +1,9 @@
 # Tasks & Design Notes: Prose (Author)
 
+> **SHIPPED** — this prep's design shipped as `apps/prose`
+> (<https://prose.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Overview
 
 Recreation of ColorLib **Author** (`https://colorlib.com/wp/template/author/`, live demo

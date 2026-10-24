@@ -1,5 +1,9 @@
 # Galleryvue Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/galleryvue`
+> (<https://galleryvue.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Write spec (openspec/specs/template-galleryvue/spec.md)
 - [ ] Scaffold app (apps/galleryvue)
 - [ ] Write tests (Sidebar, Gallery, Footer)

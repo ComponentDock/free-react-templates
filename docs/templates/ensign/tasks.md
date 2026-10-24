@@ -1,5 +1,9 @@
 # Ensign — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/ensign`
+> (<https://ensign.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V11"** (source slug `website-menu-11` — the
 Website Menus family's **coloured-bar / full-height-CTA / hover-and-click-dropdown
 variant**: one **full-bleed `#1089ff` bar** in normal flow with a left-pinned **uppercase

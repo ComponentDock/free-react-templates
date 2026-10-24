@@ -1,5 +1,9 @@
 # Serenity (ColorLib Energen) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/serenity`
+> (<https://serenity.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`. Implementation ships later on
 > `feat/template-serenity` (or as claimed by an implementer stream).
 

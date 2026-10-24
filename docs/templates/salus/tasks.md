@@ -1,5 +1,9 @@
 # Salus (ColorLib Docmed) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/salus`
+> (<https://salus.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Docmed"
 > (https://colorlib.com/wp/template/docmed/) under the NEW name **Salus**
 > (Latin for "health/well-being"), per the monorepo naming mandate (never

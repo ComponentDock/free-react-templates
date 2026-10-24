@@ -1,5 +1,9 @@
 # Syllabus (ColorLib Ednews) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/syllabus`
+> (<https://syllabus.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `ednews` in an
 > earlier prep of `syllabus`. The spec, the TEMPLATES.md row and the app are

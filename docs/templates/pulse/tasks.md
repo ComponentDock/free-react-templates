@@ -1,5 +1,9 @@
 # Pulse — Tasks (ColorLib "Saita", digital agency)
 
+> **SHIPPED** — this prep's design shipped as `apps/pulse`
+> (<https://pulse.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for `apps/pulse`. Source mapping lives here and in
 > `openspec/specs/template-pulse/spec.md` — never in app code.
 > Corrected 2026-10-23: this brief previously named "Colorlib Error 404 V16",

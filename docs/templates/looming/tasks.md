@@ -1,5 +1,9 @@
 # Looming — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/looming`
+> (<https://looming.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- docs-drift:2026-10-22 -->
 > **⚠ Reference re-read 2026-10-22 — this brief is stale below.**
 > The spec (`openspec/specs/template-looming/spec.md`, section

@@ -1,5 +1,9 @@
 # Swish (ColorLib "Basketball") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/swish`
+> (<https://swish.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Implementer artifact. Implemented on `feat/template-swish` by an
 > implementer stream. Recreates ColorLib "Basketball".
 

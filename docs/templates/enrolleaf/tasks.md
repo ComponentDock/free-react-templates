@@ -1,5 +1,9 @@
 # Enrolleaf — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/enrolleaf`
+> (<https://enrolleaf.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 - ColorLib: Signup Form V01
 - Slug: signup-form-01

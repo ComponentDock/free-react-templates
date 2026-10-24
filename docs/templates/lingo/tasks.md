@@ -1,5 +1,9 @@
 # Lingo — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/lingo`
+> (<https://lingo.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Lingua" (https://colorlib.com/wp/template/lingua/)
 Preview: https://preview.colorlib.com/theme/lingua/
 New name: Lingo (`apps/lingo`, `@free-react-templates/lingo`)

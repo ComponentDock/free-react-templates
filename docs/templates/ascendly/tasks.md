@@ -1,5 +1,9 @@
 # Ascendly — implementation tasks + design notes
 
+> **SHIPPED** — this prep's design shipped as `apps/ascendly`
+> (<https://ascendly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreates ColorLib **Arcwork** (business consulting landing) as **Ascendly**.
 Full spec: `openspec/specs/template-ascendly/spec.md` (tokens, Gherkin, checklist).
 Preview: https://preview.colorlib.com/theme/arcwork/ · Source page:

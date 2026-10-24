@@ -1,5 +1,9 @@
 # Coverly (ColorLib Shieldguard) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/coverly`
+> (<https://coverly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Shieldguard"
 > (https://colorlib.com/wp/template/shieldguard/) under the NEW name
 > **Coverly** (coverage, made personal), per the monorepo naming mandate

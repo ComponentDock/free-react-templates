@@ -1,5 +1,9 @@
 # GiveHope — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/givehope`
+> (<https://givehope.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib "Bcharity" → https://preview.colorlib.com/theme/bcharity/
 **New name:** GiveHope (apps/givehope)
 **Stack:** Vite + React 19 + Tailwind CSS 4 + TypeScript

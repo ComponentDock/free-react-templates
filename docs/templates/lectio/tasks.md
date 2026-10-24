@@ -1,5 +1,9 @@
 # Lectio — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lectio`
+> (<https://lectio.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 - ColorLib: Academica (https://colorlib.com/wp/template/academica/)
 - Preview: https://preview.colorlib.com/theme/academica/

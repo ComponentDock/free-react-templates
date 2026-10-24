@@ -1,5 +1,9 @@
 # Matrimony — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/matrimony`
+> (<https://matrimony.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Wed"** (source slug `wed`, TEMPLATES.md line 3104) —
 a scarlet-and-white one-page wedding site: a **white fixed header**, a
 full-bleed couple-photo hero with a **left-aligned** caption, **Playfair

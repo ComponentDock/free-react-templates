@@ -1,5 +1,9 @@
 # Keynote (Colorlib Ai Summit) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/keynote`
+> (<https://keynote.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-keynote`.
 

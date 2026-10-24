@@ -1,5 +1,9 @@
 # Clareo — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/clareo`
+> (<https://clareo.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Replication
 
 - [x] Fetch preview HTML from https://preview.colorlib.com/theme/imahe/

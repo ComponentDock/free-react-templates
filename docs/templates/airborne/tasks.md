@@ -1,5 +1,9 @@
 # Airborne — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/airborne`
+> (<https://airborne.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V06" (source slug `comingsoon_06` — one
 full-viewport hot-air-balloon photograph under a blue→green gradient wash
 (`#009efd` top → `#2af598` bottom, 80% opacity), a wordmark top-left and three

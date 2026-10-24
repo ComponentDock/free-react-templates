@@ -1,5 +1,9 @@
 # Perk — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/perk`
+> (<https://perk.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Setup
 
 - [x] Copy scaffold from amber

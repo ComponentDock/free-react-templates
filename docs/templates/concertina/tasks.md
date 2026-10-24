@@ -1,5 +1,9 @@
 # Tasks & Design Notes: Concertina (Accordion 16)
 
+> **SHIPPED** — this prep's design shipped as `apps/concertina`
+> (<https://concertina.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Overview
 
 Recreation of ColorLib **Accordion 16** (`https://colorlib.com/wp/template/accordion-16/`,

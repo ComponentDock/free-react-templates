@@ -1,5 +1,9 @@
 # Sojourn (ColorLib Sasha) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sojourn`
+> (<https://sojourn.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-sojourn`.
 

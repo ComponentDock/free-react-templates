@@ -1,5 +1,9 @@
 # Bistro — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/bistro`
+> (<https://bistro.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: ColorLib **Allfood** (`https://colorlib.com/wp/template/allfood/`, preview
 `https://preview.colorlib.com/theme/allfood/`) → recreation name **bistro**. Shipped at
 https://bistro.free.componentdock.com.

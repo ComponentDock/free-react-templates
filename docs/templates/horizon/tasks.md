@@ -1,5 +1,9 @@
 # Horizon — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/horizon`
+> (<https://horizon.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Scaffold
 
 - [x] Create `apps/horizon/` (copy from signal)

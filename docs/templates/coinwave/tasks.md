@@ -1,5 +1,9 @@
 # CoinWave — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/coinwave`
+> (<https://coinwave.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Phase 1: Setup
 - [ ] Create `apps/coinwave/` from simplest existing app scaffold
 - [ ] Rename package to `@free-react-templates/coinwave`

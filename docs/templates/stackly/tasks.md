@@ -1,5 +1,9 @@
 # Tasks for Stackly (ColorLib Accordion 08)
 
+> **SHIPPED** — this prep's design shipped as `apps/stackly`
+> (<https://stackly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## 1. Setup & Scaffolding
 
 - [ ] Initialize `apps/stackly` workspace (copy structure from simplest template, e.g. `lamina`)

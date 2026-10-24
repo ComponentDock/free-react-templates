@@ -1,5 +1,9 @@
 # Giveback (ColorLib Charitee) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/giveback`
+> (<https://giveback.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Charitee" (https://colorlib.com/wp/template/charitee/)
 > under the NEW original name **Giveback**. Spec lives at
 > `openspec/specs/template-giveback/spec.md`; app folder `apps/giveback`,

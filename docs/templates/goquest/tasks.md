@@ -1,5 +1,9 @@
 # GoQuest — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/goquest`
+> (<https://goquest.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source**: ColorLib Gotrip (https://preview.colorlib.com/theme/gotrip/)
 **New name**: goquest
 **Category**: Travel / Tour Booking

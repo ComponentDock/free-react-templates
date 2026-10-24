@@ -1,5 +1,9 @@
 # Vignette — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/vignette`
+> (<https://vignette.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib **Karl** (https://preview.colorlib.com/theme/karl/ — HTTP 200,
 51,776 B, `css/core-style.min.css?v=3.0.0` 235,452 B sha256 `88f8c2fa2f6c…`,
 re-read 2026-10-24) · new name **vignette** · fashion e-commerce, multi-page source

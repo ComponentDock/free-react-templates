@@ -1,5 +1,9 @@
 # Dropform — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/dropform`
+> (<https://dropform.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source design: **Contact Form V8** (`https://colorlib.com/wp/template/contact-form-v8/`) → recreation name **dropform**. Shipped at https://dropform.free.componentdock.com.
 
 Scope: A clean contact form with a map background, white card layout, and green accent button. DropForm is a React recreation of the ColorLib free "Contact Form V8" template.

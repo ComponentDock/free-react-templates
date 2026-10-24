@@ -1,5 +1,9 @@
 # Obscura (ColorLib Porto) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/obscura`
+> (<https://obscura.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts for the PREP stream. Implementation ships later on
 > `feat/template-obscura` by an implementer stream.
 

@@ -1,5 +1,9 @@
 # Exposure (ColorLib Myphotography) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/exposure`
+> (<https://exposure.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Myphotography" — free HTML photography website
 > template (https://colorlib.com/wp/template/myphotography/ —
 > "MyPhotography - Free HTML Photography Website Template 2026 — the most

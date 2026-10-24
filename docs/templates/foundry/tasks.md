@@ -1,5 +1,9 @@
 # Foundry (ColorLib Architect) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/foundry`
+> (<https://foundry.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Architect" under the new name **Foundry**.
 > Implementation ships on `feat/template-foundry`.
 

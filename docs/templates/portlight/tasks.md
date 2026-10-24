@@ -1,5 +1,9 @@
 # Portlight — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/portlight`
+> (<https://portlight.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Status: IN PROGRESS
 
 ## Completed

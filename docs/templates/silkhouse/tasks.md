@@ -1,5 +1,9 @@
 # SilkHouse — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/silkhouse`
+> (<https://silkhouse.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib Shionhouse (https://colorlib.com/wp/template/shionhouse/)
 **Preview:** https://preview.colorlib.com/theme/shionhouse/
 **New name:** silkhouse

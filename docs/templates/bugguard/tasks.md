@@ -1,5 +1,9 @@
 # BugGuard — Implementation TODO + Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/bugguard`
+> (<https://bugguard.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Pestcontrol (https://colorlib.com/wp/template/pestcontrol/)
 Preview: https://preview.colorlib.com/theme/pestcontrol/
 New name: `bugguard` · Package: `@free-react-templates/bugguard`

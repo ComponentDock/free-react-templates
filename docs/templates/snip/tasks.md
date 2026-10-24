@@ -1,5 +1,9 @@
 # Snip (ColorLib Hairsalone) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/snip`
+> (<https://snip.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` (folder renamed from `hairsalone` on the
 > implementer branch: original ColorLib slug → new name Snip).
 > Implementation ships on `feat/template-snip`.

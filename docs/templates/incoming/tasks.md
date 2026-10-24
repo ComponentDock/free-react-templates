@@ -1,5 +1,9 @@
 # Incoming — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/incoming`
+> (<https://incoming.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V03" (source slug `comingsoon_03` — a
 single centred translucent white card over a full-bleed light photo, holding a
 logo wordmark, one grey under-construction line, a row of four dark rounded

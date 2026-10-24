@@ -1,5 +1,9 @@
 # Subdivide — Design Notes & Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/subdivide`
+> (<https://subdivide.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 - ColorLib: Bootstrap Footer 06 (slug: `bootstrap-footer-06`)
 - Preview: https://preview.colorlib.com/theme/bft/bootstrap-footer-06/

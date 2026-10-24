@@ -1,5 +1,9 @@
 # Canvas — implementation tasks + design notes
 
+> **SHIPPED** — this prep's design shipped as `apps/canvas`
+> (<https://canvas.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreates ColorLib **Approach** (creative agency) as **Canvas**.
 Full spec: `openspec/specs/template-canvas/spec.md` (tokens, Gherkin, checklist).
 Preview: https://preview.colorlib.com/theme/approach/ · Source page:

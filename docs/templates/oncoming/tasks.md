@@ -1,5 +1,9 @@
 # Oncoming — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/oncoming`
+> (<https://oncoming.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- ref-reverify:2026-10-22 -->
 
 > **Reference re-verified live 2026-10-22** —

@@ -1,5 +1,9 @@
 # AccessGate — Design Notes & Implementation Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/accessgate`
+> (<https://accessgate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 - **ColorLib template**: Login Form V6
 - **Preview URL**: https://preview.colorlib.com/theme/login-form-v6/ (unreachable at prep time — design derived from screenshot + GitHub reference)

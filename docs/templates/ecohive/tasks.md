@@ -1,5 +1,9 @@
 # Ecohive — tasks / todo outline (prep)
 
+> **SHIPPED** — this prep's design shipped as `apps/ecohive`
+> (<https://ecohive.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Spec: `openspec/specs/template-ecohive/spec.md`
 Design notes: `docs/templates/ecohive/design-notes.md`
 Source: ColorLib **Ecohosting** (`ecohosting`) —

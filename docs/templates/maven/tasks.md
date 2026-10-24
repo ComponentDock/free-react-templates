@@ -1,5 +1,9 @@
 # Maven (ColorLib Kanox) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/maven`
+> (<https://maven.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Kanox"
 > (https://colorlib.com/wp/template/kanox/) under the NEW name **Maven**
 > (an expert/authority — fits the creative-agency positioning), per the

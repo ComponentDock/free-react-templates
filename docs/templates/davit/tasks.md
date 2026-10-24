@@ -1,5 +1,9 @@
 # Davit — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/davit`
+> (<https://davit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V15"** (source slug `website-menu-15` — the Website Menus
 family's **white floating card with an amber accent and a circular cart link**: a centred heading
 band (`padding:112px 0`) over the page's **`#fafafa`**, then a **white card** (`padding:10px`,

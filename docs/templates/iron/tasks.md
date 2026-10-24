@@ -1,5 +1,9 @@
 # Iron Template — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/iron`
+> (<https://iron.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Setup
 
 - [x] Create apps/iron workspace (copy from driven, rename)

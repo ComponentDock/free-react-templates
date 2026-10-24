@@ -1,5 +1,9 @@
 # Trousseau — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/trousseau`
+> (<https://trousseau.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Honey"** (source slug `honey`) — a bright single-page
 wedding site on a **white canvas** with a hot **pink accent `#ff2f92`** and white
 **ornate flourish ornaments**. Header is one slim row (logo + wordmark left,

@@ -1,5 +1,9 @@
 # Pixora (ColorLib Yaseen) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/pixora`
+> (<https://pixora.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Implementer-owned prep: no prep-stream spec existed for this source, so the
 > implementer wrote the spec (`openspec/specs/template-pixora/spec.md`) as
 > part of the claim work. Implementation ships on `feat/template-pixora`.

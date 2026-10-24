@@ -1,5 +1,9 @@
 # JobHunt — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/jobhunt`
+> (<https://jobhunt.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Jobsco" (`jobsco`)
 Preview: https://preview.colorlib.com/theme/jobsco/
 

@@ -1,5 +1,9 @@
 # ConfWell — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/confwell`
+> (<https://confwell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - **ColorLib**: Colorlib Wizard 3

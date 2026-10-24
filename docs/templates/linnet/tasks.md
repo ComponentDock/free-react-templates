@@ -1,5 +1,9 @@
 # Linnet — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/linnet`
+> (<https://linnet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Tasks
 
 - [x] Spec written (openspec/specs/template-linnet/spec.md)

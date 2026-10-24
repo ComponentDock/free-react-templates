@@ -1,5 +1,9 @@
 # Propwise Template — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/propwise`
+> (<https://propwise.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## ColorLib Source
 - Template: Real Estate (https://colorlib.com/wp/template/real-estate/)
 - Real estate agency landing page

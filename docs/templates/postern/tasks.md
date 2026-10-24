@@ -1,5 +1,9 @@
 # Postern (ColorLib Modal 12) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/postern`
+> (<https://postern.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`. Recreation name: **Postern** (NEW name —
 > the ColorLib source keeps its name "Modal 12"/`modal-12`). Implementation
 > ships on `feat/template-postern` per the standard PR flow.

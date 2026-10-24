@@ -1,5 +1,9 @@
 # Gatekeeper — Design Notes & Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/gatekeeper`
+> (<https://gatekeeper.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source**: ColorLib Login Form V18 (`login-form-18`)
 **Preview**: https://preview.colorlib.com/theme/bootstrap/login-form-18/
 **New name**: gatekeeper

@@ -1,5 +1,9 @@
 # Pearly (ColorLib Dental) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/pearly`
+> (<https://pearly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-pearly`. Source: ColorLib "Dental" — dental clinic
 > template (https://colorlib.com/wp/template/dental/).

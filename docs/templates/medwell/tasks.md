@@ -1,5 +1,9 @@
 # Medwell (ColorLib Medcare) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/medwell`
+> (<https://medwell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-medwell`. Recreation name: **Medwell** (NEW name —
 > the ColorLib source keeps its name "Medcare").

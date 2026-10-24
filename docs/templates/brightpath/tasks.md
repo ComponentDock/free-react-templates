@@ -1,5 +1,9 @@
 # BrightPath — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/brightpath`
+> (<https://brightpath.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Spec
 
 - [x] Research ColorLib Edusmart preview (DOM + CSS tokens)

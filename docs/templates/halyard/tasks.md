@@ -1,5 +1,9 @@
 # Halyard — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/halyard`
+> (<https://halyard.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V10"** (source slug `website-menu-10` — the
 Website Menus family's **solid-menu / split-nav variant**: one **opaque white** bar in
 normal flow, a **three-column grid** whose outer thirds hold six destinations as two

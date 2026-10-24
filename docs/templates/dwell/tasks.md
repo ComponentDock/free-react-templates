@@ -1,5 +1,9 @@
 # Dwell (ColorLib Apart) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/dwell`
+> (<https://dwell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Apart" — free Bootstrap real-estate/apartment
 > template (https://colorlib.com/wp/template/apart/) under the NEW name
 > **Dwell** (to dwell = to live/reside — single lowercase word, no collision

@@ -1,5 +1,9 @@
 # Endpoint (Colorlib Apiforge) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/endpoint`
+> (<https://endpoint.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts renamed to the NEW original name "Endpoint" by the
 > implementer (the ColorLib source name "Apiforge" is never reused).
 

@@ -1,5 +1,9 @@
 # Pending — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/pending`
+> (<https://pending.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V13" (source slug `comingsoon_13` — the
 coming-soon family's **full-screen slider** page: a `position:fixed`
 100%×100% FOUR-photograph cross-fading slideshow over `#000` at `z-index:0`, one

@@ -1,5 +1,9 @@
 # Savory (ColorLib "Bueno") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/savory`
+> (<https://savory.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-savory` by an implementer stream.
 

@@ -1,5 +1,9 @@
 # Vitae (ColorLib Me) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/vitae`
+> (<https://vitae.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Me" — free Bootstrap 4 personal CV website
 > template (https://colorlib.com/wp/template/me/) under the NEW name
 > **Vitae** (curriculum vitae — matches the personal-CV theme; single

@@ -1,5 +1,9 @@
 # Gangway — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/gangway`
+> (<https://gangway.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V09"** (source slug `website-menu-09` — the
 Website Menus family's **job-board / dashboard variant**: one transparent
 dark-on-photo bar holding a **wordmark pinned at `left:5%`**, a **centred** `xl`-only

@@ -1,5 +1,9 @@
 # Airy — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/airy`
+> (<https://airy.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Phase 1: Scaffolding
 - [ ] Copy simplest existing app (e.g. `apps/adept`) to `apps/airy`
 - [ ] Update `package.json`: name → `@free-react-templates/airy`

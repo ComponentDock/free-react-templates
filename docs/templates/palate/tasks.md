@@ -1,5 +1,9 @@
 # Palate — implementation tasks + design notes
 
+> **SHIPPED** — this prep's design shipped as `apps/palate`
+> (<https://palate.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreates ColorLib **Appetizer** (restaurant) as **Palate**.
 Full spec: `openspec/specs/template-palate/spec.md` (tokens, Gherkin, checklist).
 Preview: https://preview.colorlib.com/theme/appetizer/ · Source page:

@@ -1,5 +1,9 @@
 # Bespoke — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/bespoke`
+> (<https://bespoke.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## 1. Scaffold
 
 - [x] Create apps/bespoke/ from apps/azure template

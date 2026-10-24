@@ -1,5 +1,9 @@
 # Strider — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/strider`
+> (<https://strider.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Spec
 
 - [x] Write spec (openspec/specs/template-strider/spec.md)

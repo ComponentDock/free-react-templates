@@ -1,5 +1,9 @@
 # Thrive (ColorLib Startright) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/thrive`
+> (<https://thrive.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Startright" — free Bootstrap 5 startup / SaaS
 > landing-page website template
 > (https://colorlib.com/wp/template/startright/) under the NEW name **Thrive**

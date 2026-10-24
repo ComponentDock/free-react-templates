@@ -1,5 +1,9 @@
 # Travelogue (ColorLib Travel Wordpress Themes) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/travelogue`
+> (<https://travelogue.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Design notes
 
 - **Original:** ColorLib "Travel Wordpress Themes" — free travel agency

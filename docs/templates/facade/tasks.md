@@ -1,5 +1,9 @@
 # Facade (ColorLib Arclabs) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/facade`
+> (<https://facade.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts (originally prepped as `arclabs`, renamed to the mandatory
 > new original name `Facade` on implementation — ColorLib source names are
 > never reused). Implementation ships on `feat/template-facade`.

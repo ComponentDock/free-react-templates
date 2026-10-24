@@ -1,5 +1,9 @@
 # Opulux — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/opulux`
+> (<https://opulux.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Deluxe" hotel template.
 Source: https://colorlib.com/wp/template/deluxe/
 Preview: https://preview.colorlib.com/theme/deluxe/

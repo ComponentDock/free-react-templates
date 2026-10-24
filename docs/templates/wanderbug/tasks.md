@@ -1,5 +1,9 @@
 # Wanderbug — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/wanderbug`
+> (<https://wanderbug.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Tralive" (Travel). Spec:
 `openspec/specs/template-wanderbug/spec.md`. New name: **wanderbug**
 (source slug `tralive` — never reuse it in app files).

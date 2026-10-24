@@ -1,5 +1,9 @@
 # Batterly — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/batterly`
+> (<https://batterly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Pre-implementation
 
 - [x] Replication research (DOM + CSS tokens extracted)

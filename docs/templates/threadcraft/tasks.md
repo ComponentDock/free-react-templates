@@ -1,5 +1,9 @@
 # Threadcraft — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/threadcraft`
+> (<https://threadcraft.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Spec
 
 - [x] Spec written: `openspec/specs/template-threadcraft/spec.md`

@@ -1,5 +1,9 @@
 # Creel — Task & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/creel`
+> (<https://creel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib Accordion 12 (`accordion-12`).
 
 ## Section Structure

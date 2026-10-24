@@ -1,5 +1,9 @@
 # Girder (Colorlib Constructed) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/girder`
+> (<https://girder.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Implementation ships on `feat/template-girder` (new original name; the
 > ColorLib source name "Constructed" is never reused).
 

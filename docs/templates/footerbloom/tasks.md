@@ -1,5 +1,9 @@
 # FooterBloom — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/footerbloom`
+> (<https://footerbloom.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Spec & Research
 
 - [x] Analyze ColorLib Bootstrap Footer 15 preview and screenshot

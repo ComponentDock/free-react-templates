@@ -1,5 +1,9 @@
 # Spotlight — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/spotlight`
+> (<https://spotlight.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template: Spotlight (ColorLib Listed2)
 
 - Source: https://colorlib.com/wp/template/listed2/

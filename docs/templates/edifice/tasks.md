@@ -1,5 +1,9 @@
 # Edifice (Colorlib Construction) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/edifice`
+> (<https://edifice.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Implementation ships on `feat/template-edifice` (new original name; the
 > ColorLib source name "Construction" is never reused).
 

@@ -1,5 +1,9 @@
 # Outpost — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/outpost`
+> (<https://outpost.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Taxa" (Travel / adventure agency). Spec:
 `openspec/specs/template-outpost/spec.md`. New name: **outpost**
 (source slug `taxa` — never reuse it in app files).

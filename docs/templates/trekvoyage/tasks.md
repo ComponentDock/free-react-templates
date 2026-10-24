@@ -1,5 +1,9 @@
 # Trekvoyage — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/trekvoyage`
+> (<https://trekvoyage.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Travel2" (travel agency landing). Spec:
 `openspec/specs/template-trekvoyage/spec.md`. New name: **trekvoyage**
 (source slug `travel2` — never reuse it in app files; screenshot demo

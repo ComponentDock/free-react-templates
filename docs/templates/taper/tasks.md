@@ -1,5 +1,9 @@
 # Taper (Colorlib Brber) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/taper`
+> (<https://taper.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` (originally as "Brber"); implementation
 > ships on `feat/template-taper`. Recreation name: **Taper** (NEW name — the
 > ColorLib source keeps its name "Brber").

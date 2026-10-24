@@ -1,5 +1,9 @@
 # Namastay — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/namastay`
+> (<https://namastay.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## 1. Scaffold App
 
 - [ ] Copy pranayama as base

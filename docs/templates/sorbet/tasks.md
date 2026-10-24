@@ -1,5 +1,9 @@
 # Sorbet — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/sorbet`
+> (<https://sorbet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Smash" (sky-blue Bootstrap 4 UI kit: sunset
 hero + overlapping feature cards + 15 component showcase bands +
 carousel + login card + download CTA).

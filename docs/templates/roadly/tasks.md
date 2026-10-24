@@ -1,5 +1,9 @@
 # Roadly (Colorlib Autoroad) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/roadly`
+> (<https://roadly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Autoroad"
 > (https://colorlib.com/wp/template/autoroad/) under the NEW name **Roadly**
 > (per the naming rule: never reuse the source name). Implementation ships on

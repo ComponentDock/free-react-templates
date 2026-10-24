@@ -1,5 +1,9 @@
 # Paperie — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/paperie`
+> (<https://paperie.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Invits"** (source slug `invits`) — a romantic
 single-page invitation site on a **white page** with a **magenta-purple brand
 `#800098`**, an orange-brown heading ink `#362d2b`, **Playfair Display** headings

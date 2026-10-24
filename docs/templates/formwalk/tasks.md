@@ -1,5 +1,9 @@
 # FormWalk — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/formwalk`
+> (<https://formwalk.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source mapping
 - **Original:** ColorLib Wizard 30
 - **Slug:** `colorlib-wizard-30`

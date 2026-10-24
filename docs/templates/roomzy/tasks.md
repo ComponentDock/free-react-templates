@@ -1,5 +1,9 @@
 # Roomzy (ColorLib Booking 10) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/roomzy`
+> (<https://roomzy.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking 10"
 > (https://colorlib.com/wp/template/colorlib-booking-10/) under the NEW name
 > **Roomzy** (room + "easy" booking; single lowercase word, no collision with

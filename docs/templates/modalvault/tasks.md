@@ -1,5 +1,9 @@
 # ModalVault — Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/modalvault`
+> (<https://modalvault.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Prep (PREP stream)
 
 - [x] Fetch preview DOM from ColorLib Modal 20

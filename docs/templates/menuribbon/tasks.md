@@ -1,5 +1,9 @@
 # Menuribbon — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/menuribbon`
+> (<https://menuribbon.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu 04"** (source slug `website-menu-04` — the
 Website Menus family's **sticky top-bar menu**: a **`#eee` contact/social utility
 bar** (`.top-bar`, `padding:.5rem 0`) carrying `info@yourdomain.com` + phone at the

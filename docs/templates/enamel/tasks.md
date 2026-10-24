@@ -1,5 +1,9 @@
 # Enamel (ColorLib Dentista) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/enamel`
+> (<https://enamel.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Dentista"
 > (https://colorlib.com/wp/template/dentista/) under the NEW name
 > **Enamel** (the hard outer layer of a tooth — a dental-brand word;

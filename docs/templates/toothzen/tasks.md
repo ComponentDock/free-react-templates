@@ -1,5 +1,9 @@
 # Toothzen — Design Notes & Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/toothzen`
+> (<https://toothzen.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Dentamax" (https://colorlib.com/wp/template/dentamax/)
 Preview: https://preview.colorlib.com/theme/dentamax/
 

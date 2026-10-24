@@ -1,5 +1,9 @@
 # Chroma (ColorLib Transcend) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/chroma`
+> (<https://chroma.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally on `main` under the name "transcend"; **renamed
 > to Chroma** on `feat/template-chroma` because the mandatory naming rule
 > requires a NEW name different from the ColorLib source slug ("Transcend").

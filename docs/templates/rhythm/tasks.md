@@ -1,5 +1,9 @@
 # Rhythm (ColorLib "Djoz") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/rhythm`
+> (<https://rhythm.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-rhythm` by an implementer stream.
 

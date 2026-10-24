@@ -1,5 +1,9 @@
 # Capitex — Design Notes & Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/capitex`
+> (<https://capitex.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Finlone" (https://preview.colorlib.com/theme/finlone/)
 New name: Capitex | App: apps/capitex | Package: @free-react-templates/capitex
 

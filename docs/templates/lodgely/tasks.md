@@ -1,5 +1,9 @@
 # Lodgely (ColorLib Booking 16) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lodgely`
+> (<https://lodgely.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V16 — Free Online Hotel
 > Booking Widget" (https://colorlib.com/wp/template/colorlib-booking-16/)
 > under the NEW name **Lodgely** ("lodge" — a small hotel/accommodation,

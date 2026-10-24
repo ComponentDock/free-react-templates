@@ -1,5 +1,9 @@
 # Impending — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/impending`
+> (<https://impending.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon V10" (source slug `comingsoon_10` — one
 full-viewport screen behind a fixed, full-screen cross-fading slideshow of THREE
 `1900×900` photographs on a `#000`-backed layer covered by ONE

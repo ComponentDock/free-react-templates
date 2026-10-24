@@ -1,5 +1,9 @@
 # Sleeply (ColorLib Booking 7) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sleeply`
+> (<https://sleeply.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V7 — Free Reservation Form"
 > (https://colorlib.com/wp/template/colorlib-booking-7/) under the NEW name
 > **Sleeply** ("sleep" + "-ly", following the Booking Forms family convention

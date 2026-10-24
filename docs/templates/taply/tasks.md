@@ -1,5 +1,9 @@
 # Taply (ColorLib Mobapp) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/taply`
+> (<https://taply.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "MobApp" — free one-page mobile app landing
 > template (https://colorlib.com/wp/template/mobapp/) under the NEW name
 > **Taply** ("tap" — the core mobile-app interaction — plus the friendly

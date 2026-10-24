@@ -1,5 +1,9 @@
 # Stratagem (ColorLib Conbusi) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/stratagem`
+> (<https://stratagem.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Conbusi"
 > (https://colorlib.com/wp/template/conbusi/) under the NEW name
 > **Stratagem** (a scheme or plan of action — consulting fitting), per the

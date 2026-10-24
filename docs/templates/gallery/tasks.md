@@ -1,5 +1,9 @@
 # Gallery (ColorLib Portfolio Wordpress Themes) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gallery`
+> (<https://gallery.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- ref-reverify:2026-10-22 -->
 
 > **Reference re-verified live 2026-10-22** —

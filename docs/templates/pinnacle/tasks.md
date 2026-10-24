@@ -1,5 +1,9 @@
 # Pinnacle (ColorLib Sparsh) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/pinnacle`
+> (<https://pinnacle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Sparsh" (https://colorlib.com/wp/template/sparsh/).
 > Implemented on `feat/template-pinnacle` (source-name spec/docs renamed:
 > template-sparsh → template-pinnacle).

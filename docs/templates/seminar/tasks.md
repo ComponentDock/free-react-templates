@@ -1,5 +1,9 @@
 # Seminar (ColorLib "Workshop") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/seminar`
+> (<https://seminar.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream; implementation ships on `feat/template-seminar`.
 >
 > **Re-synced 2026-10-22.** This brief previously carried the **Forge** prep's body

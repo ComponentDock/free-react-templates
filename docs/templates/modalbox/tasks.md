@@ -1,5 +1,9 @@
 # Modalbox — Design Notes & Implementation Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/modalbox`
+> (<https://modalbox.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib slug: `modal-14`

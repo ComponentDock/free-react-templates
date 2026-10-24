@@ -1,5 +1,9 @@
 # Treadly (ColorLib Solestyle) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/treadly`
+> (<https://treadly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Solestyle"
 > (https://colorlib.com/wp/template/solestyle/) under the NEW name
 > **Treadly** (a playful nod to shoe treads), per the monorepo naming

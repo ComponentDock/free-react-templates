@@ -1,5 +1,9 @@
 # Gable (ColorLib Kd) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gable`
+> (<https://gable.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Kd" (https://colorlib.com/wp/template/kd/). Built
 > as **Gable** (new original name — the prep stream had kept the ColorLib
 > name "Kd", which violates the mandatory new-name rule; renamed by the

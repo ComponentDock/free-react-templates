@@ -1,5 +1,9 @@
 # Affiance — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/affiance`
+> (<https://affiance.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Twohearts"** (source slug `twohearts`) — a romantic
 one-page wedding site on a **white page** with a **mauve-pink brand `#d291bc`**,
 a **Rochester** script display face over **Source Sans Pro** body text, and a

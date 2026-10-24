@@ -1,5 +1,9 @@
 # Facet (ColorLib Square) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/facet`
+> (<https://facet.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Square" (architecture template) under the NEW
 > original name **Facet** (prep artifacts were renamed from
 > `template-square` → `template-facet` when the implementation branch

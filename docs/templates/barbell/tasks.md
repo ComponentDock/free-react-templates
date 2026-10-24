@@ -1,5 +1,9 @@
 # Barbell (ColorLib Crossfit 2) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/barbell`
+> (<https://barbell.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Crossfit 2"
 > (https://colorlib.com/wp/template/crossfit-2/) under the NEW name
 > **Barbell** (a weightlifting bar; single lowercase word, no collision with

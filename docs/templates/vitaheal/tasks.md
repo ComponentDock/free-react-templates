@@ -1,5 +1,9 @@
 # Vitaheal — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/vitaheal`
+> (<https://vitaheal.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template Info
 
 - **New Name:** Vitaheal

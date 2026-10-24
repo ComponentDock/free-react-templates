@@ -1,5 +1,9 @@
 # Dwelling (ColorLib Oakberry) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/dwelling`
+> (<https://dwelling.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 <!-- brief-file-consensus: superseded design -->
 > **SUPERSEDED DESIGN** — this file was written for ColorLib `oakberry` in an
 > earlier prep of `dwelling`. The spec, the TEMPLATES.md row and the app are

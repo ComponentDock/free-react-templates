@@ -1,5 +1,9 @@
 # FormVane — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/formvane`
+> (<https://formvane.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Phase 1: Scaffold
 
 - [ ] Create `apps/formvane/` (copy minimal existing app, rename package to `@free-react-templates/formvane`)

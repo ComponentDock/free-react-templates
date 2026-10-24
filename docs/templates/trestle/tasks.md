@@ -1,5 +1,9 @@
 # Trestle (Colorlib Arcade) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/trestle`
+> (<https://trestle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts originally prepared for the Arcade claim; renamed to
 > Trestle per the mandatory new-original-name rule (never reuse the
 > ColorLib source name). Implementation ships on `feat/template-trestle`.

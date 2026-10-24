@@ -1,5 +1,9 @@
 # Lexicon — Template Prep Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/lexicon`
+> (<https://lexicon.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 **Source:** ColorLib Rolax (https://colorlib.com/wp/template/rolax/)
 **Preview:** https://preview.colorlib.com/theme/rolax/
 **New name:** lexicon

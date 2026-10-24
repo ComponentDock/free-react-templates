@@ -1,5 +1,9 @@
 # Settle — implementation tasks + design notes
 
+> **SHIPPED** — this prep's design shipped as `apps/settle`
+> (<https://settle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreates ColorLib **Aranoz** (furniture e-commerce shop) as **Settle**.
 Full spec: `openspec/specs/template-settle/spec.md` (tokens, Gherkin, checklist).
 Preview: https://preview.colorlib.com/theme/aranoz/ · Source page:

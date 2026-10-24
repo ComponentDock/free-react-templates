@@ -1,5 +1,9 @@
 # Gunwale — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/gunwale`
+> (<https://gunwale.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu V12"** (source slug `website-menu-12` — the Website
 Menus family's **brand-strip-over-a-dark-bar / search-field / hover-slab variant**: a centred
 heading band (`padding:112px 0`) over a **72 px white strip** carrying a **two-line uppercase

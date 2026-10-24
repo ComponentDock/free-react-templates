@@ -1,5 +1,9 @@
 # Sakura (ColorLib Calendar 08) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/sakura`
+> (<https://sakura.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`. Recreation name: **Sakura** (NEW name —
 > the ColorLib source keeps its name "Calendar 08"). Implementation ships on
 > `feat/template-sakura` per the standard PR flow.

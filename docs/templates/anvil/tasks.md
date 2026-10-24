@@ -1,5 +1,9 @@
 # Anvil (ColorLib Industrie) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/anvil`
+> (<https://anvil.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` under the ColorLib source name
 > "industrie"; the recreation ships as **Anvil** on `feat/template-industrie`
 > (renamed to `apps/anvil`, package `@free-react-templates/anvil`).

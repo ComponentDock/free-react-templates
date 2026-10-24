@@ -1,5 +1,9 @@
 # Wander (ColorLib Hepta) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/wander`
+> (<https://wander.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Hepta"
 > (https://colorlib.com/wp/template/hepta/) under the NEW name **Wander**
 > (a travel-themed word — the "Travel & Tours" spirit of "Hepta" without

@@ -1,5 +1,9 @@
 # Roamly (ColorLib Wanderlust) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/roamly`
+> (<https://roamly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts committed on `main` (prep stream). Implementation ships
 > later on `feat/template-roamly` (implementer stream).
 

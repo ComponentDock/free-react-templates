@@ -1,5 +1,9 @@
 # Rackline — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/rackline`
+> (<https://rackline.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Server"** (source slug `server` — the Web Hosting
 family's **lime-and-slate data-centre** page: a white utility bar (wordmark +
 support/e-mail/live-chat blocks) over a flat `#343a40` nav strip whose links are

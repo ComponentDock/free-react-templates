@@ -1,5 +1,9 @@
 # Pump (Colorlib Muscle) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/pump`
+> (<https://pump.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
 > Implementation ships later on `feat/template-pump`.
 

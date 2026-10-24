@@ -1,5 +1,9 @@
 # Airwave (ColorLib The Hustle Hour) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/airwave`
+> (<https://airwave.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts committed on `main` (prep stream). Implementation ships
 > later on `feat/template-airwave` (implementer stream).
 

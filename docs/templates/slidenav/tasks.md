@@ -1,5 +1,9 @@
 # Slidenav — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/slidenav`
+> (<https://slidenav.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu 02"** (source slug `website-menu-02` — the
 Website Menus family's **coral-band minimal menu**: a **transparent,
 non-sticky header** floating over a flat **100vh `#eb4d55`** band, a **16 px

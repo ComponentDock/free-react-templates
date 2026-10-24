@@ -1,5 +1,9 @@
 # Brightoral — Design Notes & Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/brightoral`
+> (<https://brightoral.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Dente" (https://colorlib.com/wp/template/dente/)
 Preview: https://preview.colorlib.com/theme/dente/
 

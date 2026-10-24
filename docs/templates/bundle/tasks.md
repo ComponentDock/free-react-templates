@@ -1,5 +1,9 @@
 # Bundle (Colorlib BulkApp) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/bundle`
+> (<https://bundle.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
 > Implementation ships later on `feat/template-bundle`.
 

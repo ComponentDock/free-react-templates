@@ -1,5 +1,9 @@
 # Premiere — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/premiere`
+> (<https://premiere.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Coming Soon 2" (source slug `comingsoon_02` — a
 single centred column over a full-bleed cross-fading photo slideshow, with a
 row of four translucent countdown circles and a pill e-mail form). Spec:

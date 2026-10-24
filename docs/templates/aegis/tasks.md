@@ -1,5 +1,9 @@
 # Aegis (ColorLib Shieldnet) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/aegis`
+> (<https://aegis.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Shieldnet"
 > (https://colorlib.com/wp/template/shieldnet/) under the NEW name
 > **Aegis** (the shield), per the monorepo naming mandate (never reuse the

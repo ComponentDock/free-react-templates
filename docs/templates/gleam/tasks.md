@@ -1,5 +1,9 @@
 # Gleam (ColorLib Sparkleclean) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gleam`
+> (<https://gleam.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Sparkleclean"
 > (https://colorlib.com/wp/template/sparkleclean/) under the NEW name
 > **Gleam** (the shine left behind by a professional clean), per the

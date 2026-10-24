@@ -1,5 +1,9 @@
 # Lenscape — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/lenscape`
+> (<https://lenscape.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib **Schmidt** (https://preview.colorlib.com/theme/schmidt/ — HTTP 200,
 7,602 B index, re-read 2026-10-24) · new name **lenscape** · personal portfolio,
 multi-page source consolidated to one page.

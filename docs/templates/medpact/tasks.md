@@ -1,5 +1,9 @@
 # Medpact — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/medpact`
+> (<https://medpact.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Medicare" (https://colorlib.com/wp/template/medicare/)
 as "Medpact" — hospital & clinics website template.
 

@@ -1,5 +1,9 @@
 # Soar (ColorLib Raptor) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/soar`
+> (<https://soar.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main`; implementation ships on
 > `feat/template-soar`. NOTE: the recreation is named **Soar**, NOT
 > "Raptor" (mandatory naming rule — the new name must differ from the

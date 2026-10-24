@@ -1,5 +1,9 @@
 # Snapfold (ColorLib Photogallery) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/snapfold`
+> (<https://snapfold.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Design notes
 
 - **Original:** ColorLib "Photogallery" — free photography gallery website

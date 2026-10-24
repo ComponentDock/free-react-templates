@@ -1,5 +1,9 @@
 # Wayfarer (ColorLib "Travelo") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/wayfarer`
+> (<https://wayfarer.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-wayfarer` by an implementer stream.
 

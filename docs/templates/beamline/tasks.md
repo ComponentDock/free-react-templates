@@ -1,5 +1,9 @@
 # Beamline (Colorlib Archlab) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/beamline`
+> (<https://beamline.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Archlab" under the NEW name **Beamline** (the old
 > prep spec kept the source name, which violates the mandatory new-name rule;
 > renamed on the implementation branch).

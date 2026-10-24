@@ -1,5 +1,9 @@
 # Keystone — tasks outline
 
+> **SHIPPED** — this prep's design shipped as `apps/keystone`
+> (<https://keystone.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib "Archi" (https://colorlib.com/wp/template/archi/)
 as `apps/keystone` (package `@free-react-templates/keystone`).
 

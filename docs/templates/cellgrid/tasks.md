@@ -1,5 +1,9 @@
 # Cellgrid (ColorLib Css Table 18) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/cellgrid`
+> (<https://cellgrid.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cellgrid`. Recreation name: **Cellgrid** (NEW
 > name — the ColorLib source keeps its name "Css Table 18").

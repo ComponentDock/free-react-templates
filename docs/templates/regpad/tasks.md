@@ -1,5 +1,9 @@
 # RegPad — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/regpad`
+> (<https://regpad.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Pre-implementation (done)
 - [x] Fetch live demo HTML + CSS from https://colorlib.com/etc/regform/colorlib-regform-3/
 - [x] Analyze design tokens (gradient, card, form fields, button)

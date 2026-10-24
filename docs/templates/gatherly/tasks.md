@@ -1,5 +1,9 @@
 # Gatherly — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/gatherly`
+> (<https://gatherly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib **MeetUp** (`colorlib.com/wp/template/meetup/`) ·
 preview `https://preview.colorlib.com/theme/meetup/` · app `apps/gatherly`.
 

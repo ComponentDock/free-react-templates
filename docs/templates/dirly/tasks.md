@@ -1,5 +1,9 @@
 # Dirly — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/dirly`
+> (<https://dirly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 - [x] Write spec (openspec/specs/template-dirly/spec.md)
 - [ ] Scaffold app (copy from roster, rename package)
 - [ ] Write tests (Navbar, Hero, PopularCategories, Footer, App)

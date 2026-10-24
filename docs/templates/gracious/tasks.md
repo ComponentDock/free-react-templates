@@ -1,5 +1,9 @@
 # Gracious (ColorLib "Welfare") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/gracious`
+> (<https://gracious.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-gracious` by an implementer stream.
 

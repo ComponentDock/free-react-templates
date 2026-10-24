@@ -1,5 +1,9 @@
 # Modista (ColorLib Persuit) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/modista`
+> (<https://modista.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-modista`. Recreation name: **Modista** (NEW name —
 > the ColorLib source keeps its name "Persuit").

@@ -1,5 +1,9 @@
 # Menutree — implementation tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/menutree`
+> (<https://menutree.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Website Menu 01"** (source slug `website-menu-01` — the
 Website Menus family's **slate-canvas mega-menu**: a **transparent header**
 floating over a flat **100vh `#5d5b6a`** band, a **24 px "Brand."** wordmark whose

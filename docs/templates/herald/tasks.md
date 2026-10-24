@@ -1,5 +1,9 @@
 # Herald (ColorLib "Ednews") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/herald`
+> (<https://herald.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-herald` by an implementer stream.
 

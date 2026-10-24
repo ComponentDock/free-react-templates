@@ -1,5 +1,9 @@
 # Villa (Colorlib Layal) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/villa`
+> (<https://villa.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts renamed from the ColorLib source name "Layal" to the NEW
 > template name "Villa" (per the new-original-name mandate) on
 > `feat/template-villa`. Implementation ships on that branch.

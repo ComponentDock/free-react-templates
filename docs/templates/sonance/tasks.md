@@ -1,5 +1,9 @@
 # Sonance — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/sonance`
+> (<https://sonance.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Template Info
 
 - **Name:** Sonance

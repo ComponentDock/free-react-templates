@@ -1,5 +1,9 @@
 # Canter (Colorlib Horse Club) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/canter`
+> (<https://canter.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-canter`.
 

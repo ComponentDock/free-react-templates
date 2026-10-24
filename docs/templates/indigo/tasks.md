@@ -1,5 +1,9 @@
 # Indigo — Implementation Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/indigo`
+> (<https://indigo.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Parason" (https://colorlib.com/wp/template/parason/)
 
 ## Pre-work (done)

@@ -1,5 +1,9 @@
 # Flint (ColorLib Spark) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/flint`
+> (<https://flint.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Written by this run's implementer stream (the design had no prepped spec: both
 > its TEMPLATES.md rows credited an app that renders a different design).
 > Implementation ships on `feat/template-flint`.

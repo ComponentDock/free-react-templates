@@ -1,5 +1,9 @@
 # Succor (ColorLib Aid) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/succor`
+> (<https://succor.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Aid" — free Bootstrap 4 charity website template
 > (https://colorlib.com/wp/template/aid/) under the NEW name **Succor**
 > (help or relief given in time of need — the charity theme; single

@@ -1,5 +1,9 @@
 # LoginGlimmer — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/loginglimmer`
+> (<https://loginglimmer.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Replication Reference
 
 - **Source:** ColorLib Login Form V19

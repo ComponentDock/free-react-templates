@@ -1,5 +1,9 @@
 # Trek (ColorLib "Trips") — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/trek`
+> (<https://trek.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifact for the PREP stream. Implementation ships later on
 > `feat/template-trek` by an implementer stream.
 

@@ -1,5 +1,9 @@
 # Smilecraft — Design Notes & Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/smilecraft`
+> (<https://smilecraft.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib "Dentacare" (https://colorlib.com/wp/template/dentacare/)
 Preview: https://preview.colorlib.com/theme/dentacare/
 

@@ -1,5 +1,9 @@
 # Forgefit (ColorLib Ironforge) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/forgefit`
+> (<https://forgefit.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Ironforge"
 > (https://colorlib.com/wp/template/ironforge/) under the NEW name
 > **Forgefit** (forge/iron + fitness), per the monorepo naming mandate

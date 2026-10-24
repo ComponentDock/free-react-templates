@@ -1,5 +1,9 @@
 # Vesper (ColorLib Christian) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/vesper`
+> (<https://vesper.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Christian" (https://colorlib.com/wp/template/christian/)
 > under the NEW original name **Vesper**. Spec lives at
 > `openspec/specs/template-vesper/spec.md`; app folder `apps/vesper`,

@@ -1,5 +1,9 @@
 # Haulage (ColorLib Cargo) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/haulage`
+> (<https://haulage.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-haulage`.
 

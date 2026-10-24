@@ -1,5 +1,9 @@
 # Triply (ColorLib Booking 14) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/triply`
+> (<https://triply.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Colorlib Booking Form V14 — Free Dark Booking Form
 > Template" (https://colorlib.com/wp/template/colorlib-booking-14/) under
 > the NEW name **Triply** ("trip" — a taxi trip + "-ly", matching the Booking

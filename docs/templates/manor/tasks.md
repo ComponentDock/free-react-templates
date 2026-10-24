@@ -1,5 +1,9 @@
 # Manor — Implementation Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/manor`
+> (<https://manor.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib The Estate (https://preview.colorlib.com/theme/theestate/)
 New name: manor (apps/manor)
 

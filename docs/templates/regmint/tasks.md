@@ -1,5 +1,9 @@
 # RegMint — Implementation Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/regmint`
+> (<https://regmint.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source Template
 - **ColorLib Name**: Signup Form 02
 - **ColorLib Slug**: signup-form-02

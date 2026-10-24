@@ -1,5 +1,9 @@
 # Meliora (ColorLib Chariter) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/meliora`
+> (<https://meliora.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Chariter" (https://colorlib.com/wp/template/chariter/)
 > under the NEW original name **Meliora**. Spec lives at
 > `openspec/specs/template-meliora/spec.md`; app folder `apps/meliora`,

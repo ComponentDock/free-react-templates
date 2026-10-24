@@ -1,5 +1,9 @@
 # Forma (Colorlib Atelier) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/forma`
+> (<https://forma.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts renamed to the NEW original name "Forma" by the
 > implementer (the ColorLib source name "Atelier" is never reused).
 

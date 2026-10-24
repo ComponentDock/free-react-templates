@@ -1,5 +1,9 @@
 # Habitat (ColorLib Homes) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/habitat`
+> (<https://habitat.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Homes"
 > (https://colorlib.com/wp/template/homes/) under the NEW name **Habitat**
 > (a real-estate-themed word — the "homes/property" spirit of "Homes"

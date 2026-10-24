@@ -1,5 +1,9 @@
 # Chambers Template — Task Outline
 
+> **SHIPPED** — this prep's design shipped as `apps/chambers`
+> (<https://chambers.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 ## Source
 
 - ColorLib Lawfirm: https://colorlib.com/wp/template/lawfirm/

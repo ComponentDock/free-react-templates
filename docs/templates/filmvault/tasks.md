@@ -1,5 +1,9 @@
 # FilmVault — Implementation Todo
 
+> **SHIPPED** — this prep's design shipped as `apps/filmvault`
+> (<https://filmvault.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Source: ColorLib Rettro (https://preview.colorlib.com/theme/rettro/)
 New name: filmvault
 

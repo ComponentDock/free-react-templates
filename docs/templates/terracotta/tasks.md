@@ -1,5 +1,9 @@
 # Terracotta (ColorLib Heaven) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/terracotta`
+> (<https://terracotta.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Recreation of ColorLib "Heaven" (https://colorlib.com/wp/template/heaven/).
 > Built as **Terracotta** (new original name — evokes the warm orange brand).
 > Branch: `feat/template-terracotta`.

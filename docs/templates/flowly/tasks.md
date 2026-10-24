@@ -1,5 +1,9 @@
 # Flowly (Colorlib Appco) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/flowly`
+> (<https://flowly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
 > Implementation ships later on `feat/template-flowly`.
 

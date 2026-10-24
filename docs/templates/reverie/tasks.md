@@ -1,5 +1,9 @@
 # tasks — Reverie (ColorLib Weddingdreams)
 
+> **SHIPPED** — this prep's design shipped as `apps/reverie`
+> (<https://reverie.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Prepped 2026-10-12 by the prep stream. Nothing below is checked until the
 implementer ships it and the deploy is live.
 

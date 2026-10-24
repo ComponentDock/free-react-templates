@@ -1,5 +1,9 @@
 # Rently (Colorlib Carbook) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/rently`
+> (<https://rently.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` while the Cloud PR (#7) awaits review.
 > Implementation ships later on `feat/template-rently`.
 

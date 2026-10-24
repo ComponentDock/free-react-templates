@@ -1,5 +1,9 @@
 # Nuptials (ColorLib Wordpress Wedding Themes / Wedding) — Tasks & Design Notes
 
+> **SHIPPED** — this prep's design shipped as `apps/nuptials`
+> (<https://nuptials.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 > Prep artifacts prepared on `main` by the prep stream (stream 3). The spec
 > folder is the claim marker; implementation ships later on
 > `feat/template-nuptials` by an implementer stream.
