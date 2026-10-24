@@ -5,6 +5,18 @@ Live preview: `https://preview.colorlib.com/theme/fashion/`
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-bold-free-fashion-website-template.jpg  
 Shipped: https://bespoke.free.componentdock.com
 
+**Reference identity note (2026-10-24).** The screenshot above is *not* what the
+preview serves. `theme/fashion/` (200, 26,584 B; `css/style.css` 29,430 B, sha256
+`75499322b02a2b2d…`) now renders the coral `Fashion.` page that
+`/wp/template/fashion-2/` publishes — the 2026 rebuild — while `/wp/template/fashion/`
+still shows the bold green→yellow variant, which has no live demo on any prefix and
+no archive zip (all 404). Both entries' preview buttons resolve to this one
+directory, so this app correctly follows the live sheet: coral `#ff6363`, Lato +
+Playfair Display, pill radius 30 px. If a bold-variant app is ever wanted, the only
+reference is the thumbnail; its pixel samples (hero ramp `#8dfe72`→`#eec33e`, pill
+`#6f1dfa`→`#e81eb0`) are recorded in `openspec/specs/template-drapery/spec.md`
+§Thumbnail-sampled values.
+
 Provide a free, production-ready fashion boutique landing page template with a hero carousel, product collections, about section, testimonials, blog grid, and a full footer. Built with React 19, Tailwind CSS 4, and TypeScript.
 
 ## Typography

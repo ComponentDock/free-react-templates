@@ -15,7 +15,12 @@ demo is dead.
 
 Note on the sibling row: the *other* ColorLib fashion entry in `TEMPLATES.md`
 (the bold green→yellow gradient design) is a different page — this spec's
-reference is the coral "Fashion." design only.
+reference is the coral "Fashion." design only. That entry's catalog key
+(`catalog-141306`) resolves to this same directory while its own featured image
+is the bold page, and the bold page has no reachable demo on any prefix and no
+archive zip (all 404), so the directory's identity is settled by the live render
+(coral, `#ff6363` ×30). The measured chain is in
+`openspec/specs/template-drapery/spec.md` §Reference identity.
 
 ## Purpose
 

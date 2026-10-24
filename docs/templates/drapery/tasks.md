@@ -9,9 +9,17 @@
 
 - **ColorLib slug:** `fashion`
 - **ColorLib page:** https://colorlib.com/wp/template/fashion/
-- **Preview (live):** https://preview.colorlib.com/theme/fashion/
-- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-bold-free-fashion-website-template.jpg
-- **Research source:** Live preview HTML + css/style.css extracted 2026-09-21
+- **Preview (live):** https://preview.colorlib.com/theme/fashion/ — 200, 26,584 B, `css/style.css` 29,430 B (sha256 `75499322b02a2b2d…`); **serves the 2026 rebuild of this directory, not the row thumbnail**
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/fashion-bold-free-fashion-website-template.jpg — bold variant, retired, no reachable demo (all prefixes + zip 404)
+- **Research source:** Live preview HTML + css/style.css extracted 2026-09-21; reference-identity chain re-measured 2026-10-24
+
+> **Reference identity flag (2026-10-24).** Two ColorLib entries claim this one
+> demo directory: `/wp/template/fashion/` (row 1709, bold green→yellow thumbnail,
+> no reachable demo) and `/wp/template/fashion-2/` (row 1710, coral thumbnail —
+> the page the directory actually renders). The catalogue map has both keys
+> resolving to `theme/fashion/`, so a 200 proves nothing about identity. Build the
+> coral page; the bold variant's only reference is its thumbnail, pixel-sampled in
+> `openspec/specs/template-drapery/spec.md` §Thumbnail-sampled values.
 
 ## Structure order (top to bottom)
 

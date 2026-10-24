@@ -2,6 +2,19 @@
 
 Recreation of ColorLib "Fashion" (https://colorlib.com/wp/template/fashion/)
 
+**Reference identity (measured 2026-10-24).** The demo this app was built from is
+`https://preview.colorlib.com/theme/fashion/` — HTTP **200**, **26,584 B**, theme
+sheet `css/style.css` **29,430 B**, sha256 `75499322b02a2b2d…` (`#ff6363` ×30,
+`#000000` ×17, `#efefef` ×5; `"Lato", sans-serif` body + `"Playfair Display",
+serif` headings; `border-radius: 30px` pill). Two ColorLib entries claim that one
+directory: `/wp/template/fashion/` (whose own featured image is a **bold
+green→yellow gradient page that has no reachable demo** — every prefix and the
+archive 404, see `template-drapery` §Reference identity) and `/wp/template/fashion-2/`
+(the 2026 rebuild, whose featured image is this coral page). The directory serves
+the rebuild, so the sheet above — not the bold thumbnail — is this template's
+reference. The thin sibling prep `template-silhouette` describes the same page, so
+this design is published twice on purpose.
+
 ## Purpose
 
 Provide a free, production-ready fashion boutique landing page template with a hero carousel, product collections, about section, testimonials, blog grid, and a full footer. Built with React 19, Tailwind CSS 4, and TypeScript.
