@@ -201,3 +201,9 @@ rule is changed to bytes.
    row is a false `[x]`") does **not** hold for this corpus — every side of every
    pair is live and renders its own document, so this class contributes no false
    `[x]`. Re-run only as a control, not as a queue item.
+6. ~~Row multiplicity (2,857 rows over 1,646 slugs)~~ — done 2026-10-25a
+   (`scripts/verify-row-multiplicity.py`, controls 15/15): **775 multi-row slugs ·
+   CONSISTENT 673 · DUPLICATE 73 · SPEC-STALE 25 · ROW-POINTER 4**, and on copy
+   evidence **64 designs built twice (142 apps)** plus **18 rows whose `[x]` is
+   false** (the row credits a same-named app that recreates another design).
+   Full census + fix queue: `docs/row-multiplicity.md`.
