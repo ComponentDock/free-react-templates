@@ -47,16 +47,16 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24q, main after PR #1863 — the three `shopmax` rows now point at the built `drapely` app, so that design left §2 of `docs/row-multiplicity.md`)
+## Census (re-measured 2026-10-24r, main after PR #1864 — the two `juli` rows now point at the built `saffron` app, so that design left §2 of `docs/row-multiplicity.md`)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,236 |
-| apps                               | 1,709 |
-| `AGREE`                            | 1,702 |
+| specs                              | 3,237 |
+| apps                               | 1,710 |
+| `AGREE`                            | 1,703 |
 | `DRIFT`                            | **3** |
 | `PREP` (spec-only)                 | 1,527 |
-| `ROW-MULTI` apps                   | 34    |
+| `ROW-MULTI` apps                   | 33    |
 | `SLUG-OWNER` subjects              | 6     |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
@@ -78,9 +78,11 @@ credited `skyline` while that app recreates Rooftop — was built as **`manorly`
 rows 106 / 1967 / 2587 re-pointed (`AGREE=1701 DRIFT=3`, apps `1,708`, specs `3,233`, `ROW-MULTI`
 35, `SLUG-OWNER` 6), and the Shopmax design — whose three rows credited `bazaar` while that app
 recreates Store — was built as **`drapely`** (PR #1863) and its rows 230 / 1602 / 1730 re-pointed
-(`AGREE=1702 DRIFT=3`, apps `1,709`, specs `3,236`, `ROW-MULTI` 34, `SLUG-OWNER` 6). `dreamrs` and
-`shopmax` therefore leave `docs/row-multiplicity.md` §2, which now counts **16** designs with no
-app.
+(`AGREE=1702 DRIFT=3`, apps `1,709`, specs `3,236`, `ROW-MULTI` 34, `SLUG-OWNER` 6), and the Juli
+design — whose two rows credited `petal` while that app recreates Florist — was built as
+**`saffron`** (PR #1864) and its rows 266 / 2402 re-pointed (`AGREE=1703 DRIFT=3`, apps `1,710`,
+specs `3,237`, `ROW-MULTI` 33, `SLUG-OWNER` 6). `dreamrs`, `shopmax` and `juli` therefore leave
+`docs/row-multiplicity.md` §2, which now counts **15** designs with no app.
 
 ## The 3 remaining drift cases (adjudicated against the live previews)
 
