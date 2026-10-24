@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('shows the site name, section links, consultation button, and the dark-mode toggle', () => {
     render(<Navbar />)
 
-    expect(screen.getByRole('link', { name: /Petvet/ })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Vetora/ })).toBeInTheDocument()
     for (const label of ['Home', 'About', 'Groomers', 'Services', 'Blog', 'Pricing', 'Contact']) {
       expect(screen.getByRole('link', { name: label })).toBeInTheDocument()
     }

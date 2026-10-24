@@ -25,7 +25,7 @@ export function Navbar() {
     <header className="bg-white/95 backdrop-blur dark:bg-gray-950/95">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-4 py-4 sm:px-6 lg:flex-row lg:justify-between">
         <a href="#top" className="text-2xl font-black text-brand dark:text-brand">
-          Petvet<span className="text-gray-900 dark:text-white"> Pet Care</span>
+          Vetora<span className="text-gray-900 dark:text-white"> Pet Care</span>
         </a>
         <div className="flex items-center gap-4">
           <nav className="hidden items-center lg:flex" aria-label="Main">

@@ -1,7 +1,10 @@
-# Petvet (Colorlib Petvet) — Tasks & Design Notes
+# Vetora — Tasks & Design Notes
 
+> Recreation of ColorLib "Petvet" (https://colorlib.com/wp/template/petvet/),
+> shipped under the new name Vetora.
+>
 > Prep artifacts prepared on `main` while the Scarlet PR awaits review.
-> Implementation ships later on `feat/template-petvet`.
+> Implementation ships later on `feat/template-vetora`.
 
 ## Design notes
 
@@ -12,7 +15,7 @@
 - **Structure observed (1:1, section order):**
   1. Navbar — Home, About, Groomers, Services, Blog, Pricing, Contact us +
      "Free Consultation".
-  2. Hero — brand "Petvet Pet Care", h1 "The Kind of Care Your Pets
+  2. Hero — brand "Vetora Pet Care", h1 "The Kind of Care Your Pets
      Deserve", "Make An Appointment", phone 11-234-5678-9102.
   3. Intro (`bg-light`) — Veterinary Service, Pet Grooming, Pet Setting.
   4. Counters — stat strip.
@@ -24,18 +27,19 @@
      $79/mos, Business $109/mos (5 Dog Walk, 3 Vet Visit, 3 Pet Spa, Free
      Supports + "Get Started").
   9. Blog (`bg-light`) — "Latest Blog Updates"; 3 posts + "Read more".
-  10. Footer — "Petvet Pet Care" + blurb, Services / Links / "Have a
+  10. Footer — "Vetora Pet Care" + blurb, Services / Links / "Have a
       Questions?", bottom bar.
 - **Design tokens:** brand pink **#fd4c82** (primary), accent green
   **#91c235**; dark text **#212529**, muted **#6c757d**, light sections
   **#f8f9fa**; font **Roboto** via Google Fonts; filled rounded pink
   buttons.
-- **Recreation name:** Petvet (keeps the original name — it is already a
-  distinct working name, not a ColorLib brand). App folder `apps/petvet`,
-  package `@free-react-templates/petvet`.
+- **Recreation name:** Vetora — a new, original name that evokes the
+  veterinary design. (The app previously shipped under the source design's
+  name; the folder was renamed so no app reuses a ColorLib name.) App folder
+  `apps/vetora`, package `@free-react-templates/vetora`.
 - **Design approach:** pink brand tokens in `@theme`
   (`--color-brand: #fd4c82`); seeded picsum placeholders
-  `https://picsum.photos/seed/petvet-<n>/<w>/<h>`; lucide-react icons
+  `https://picsum.photos/seed/vetora-<n>/<w>/<h>`; lucide-react icons
   (Stethoscope, Scissors, PawPrint for intro services); repo-standard Navbar
   (dark-mode toggle) and Footer chrome; social icons (GitHub, X, LinkedIn)
   inline SVG.
@@ -46,11 +50,11 @@
 
 ## Tasks
 
-- [ ] Write `openspec/specs/template-petvet/spec.md` (Gherkin requirements +
+- [ ] Write `openspec/specs/template-vetora/spec.md` (Gherkin requirements +
       scenarios + replication findings) — DONE on main (this prep).
 - [ ] Validate spec: `npm run spec:validate`.
-- [ ] Create `apps/petvet` (copy `apps/sage`; rename package to
-      `@free-react-templates/petvet`).
+- [ ] Create `apps/vetora` (copy `apps/sage`; rename package to
+      `@free-react-templates/vetora`).
 - [ ] TDD: tests first for Navbar, Hero, Intro Services, Counters, Services,
       Groomers, Testimonials, Pricing, Blog, Footer, App composition; run
       red.
@@ -69,8 +73,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/petvet/` may name the source designer,
+- **Provenance ban.** No file under `apps/vetora/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/petvet/public/CNAME` = `petvet.free.componentdock.com`
-  and the package `homepage` = `https://petvet.free.componentdock.com`.
+- **Deploy identity.** `apps/vetora/public/CNAME` = `vetora.free.componentdock.com`
+  and the package `homepage` = `https://vetora.free.componentdock.com`.

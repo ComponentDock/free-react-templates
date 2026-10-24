@@ -1,17 +1,17 @@
-# Petvet — Design Notes
+# Vetora — Design Notes
 
 Reference: **Petvet** — `https://colorlib.com/wp/template/petvet/`  
 Live preview: `https://preview.colorlib.com/theme/petvet/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg  
-Shipped: https://petvet.free.componentdock.com
+Shipped: https://vetora.free.componentdock.com
 
-Petvet is a multi-section pet-care/veterinary website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Petvet" design (see TEMPLATES.md), built under a different name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Vetora is a multi-section pet-care/veterinary website template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Petvet" design (see TEMPLATES.md), shipped under the new name Vetora with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Roboto**, **Roboto:wght@400;500;700;900**
 
-## Design tokens (`apps/petvet/src/index.css` `@theme`)
+## Design tokens (`apps/vetora/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Fonts loaded by `index.html` (Google Fonts): **Roboto**, **Roboto:wght@400;500;7
 ## Section-by-section fidelity
 
 ### `Navbar`
-The system SHALL render a navigation bar with the site name "Petvet", links to the main sections, a "Free Consultation" button, and a dark-mode toggle button.
+The system SHALL render a navigation bar with the site name "Vetora", links to the main sections, a "Free Consultation" button, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a hero section with the headline "The Kind of Care Your Pets Deserve", an appointment CTA, and a phone number.
@@ -63,7 +63,7 @@ The system SHALL render an "Affordable Packages" section with three plans (Basic
 The system SHALL render a blog section titled "Latest Blog Updates" with at least three posts, each with a title and an excerpt.
 
 ### `Footer`
-The system SHALL render a footer with the site name "Petvet", an about blurb, link columns (Services, Links, Have a Questions?), and social links.
+The system SHALL render a footer with the site name "Vetora", an about blurb, link columns (Services, Links, Have a Questions?), and social links.
 
 ## Deltas from the reference
 
@@ -80,8 +80,8 @@ The system SHALL render a footer with the site name "Petvet", an about blurb, li
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/petvet/` may name the source designer,
+- **Provenance ban.** No file under `apps/vetora/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/petvet/public/CNAME` = `petvet.free.componentdock.com`
-  and the package `homepage` = `https://petvet.free.componentdock.com`.
+- **Deploy identity.** `apps/vetora/public/CNAME` = `vetora.free.componentdock.com`
+  and the package `homepage` = `https://vetora.free.componentdock.com`.

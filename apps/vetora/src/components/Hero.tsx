@@ -5,14 +5,14 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden bg-paper dark:bg-gray-900">
       <div className="absolute inset-0">
         <img
-          src="https://picsum.photos/seed/petvet-hero/1600/800"
+          src="https://picsum.photos/seed/vetora-hero/1600/800"
           alt=""
           className="h-full w-full object-cover opacity-20 dark:opacity-10"
           fetchPriority="high"
         />
       </div>
       <div className="relative mx-auto max-w-6xl px-4 py-24 text-center sm:px-6 md:py-36">
-        <p className="text-sm font-bold uppercase tracking-[0.3em] text-brand">Petvet Pet Care</p>
+        <p className="text-sm font-bold uppercase tracking-[0.3em] text-brand">Vetora Pet Care</p>
         <h1 className="mx-auto mt-4 max-w-3xl text-4xl font-black text-gray-900 sm:text-5xl dark:text-white">
           The Kind of Care Your Pets Deserve
         </h1>

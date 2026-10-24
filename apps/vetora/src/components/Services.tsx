@@ -14,7 +14,7 @@ export function Services() {
     <section id="services" className="py-16 dark:bg-gray-950 md:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <p className="text-center text-sm font-bold uppercase tracking-[0.3em] text-brand">
-          Welcome to Petvet
+          Welcome to Vetora
         </p>
         <h2 className="mx-auto mt-4 max-w-2xl text-center text-3xl font-black text-gray-900 sm:text-4xl dark:text-white">
           We Are Best Agency For Your Pets

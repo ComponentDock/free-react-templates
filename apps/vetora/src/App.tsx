@@ -11,7 +11,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Petvet — Pet Care & Veterinary Website Template'
+    document.title = 'Vetora — Pet Care & Veterinary Website Template'
   }, [])
 
   return (

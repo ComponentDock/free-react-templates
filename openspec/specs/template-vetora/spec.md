@@ -1,16 +1,16 @@
-# Template: Petvet (Pet Care & Veterinary Website)
+# Template: Vetora (Pet Care & Veterinary Website)
 
 ## Purpose
 
-Petvet is a multi-section pet-care/veterinary website template in the
+Vetora is a multi-section pet-care/veterinary website template in the
 free-react-templates monorepo. It is an original React recreation of the
-ColorLib free "Petvet" design (see TEMPLATES.md), built under a different
-name with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+ColorLib free "Petvet" design (see TEMPLATES.md), shipped under the new
+name Vetora with the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original design is a pink pet-care landing page: hero with a "The Kind
 of Care Your Pets Deserve" headline, three intro services, a counter strip,
 a services/about block, a groomers team, testimonials, affordable pricing
-packages, blog updates, and a multi-column footer. Petvet follows the same
+packages, blog updates, and a multi-column footer. Vetora follows the same
 structure and adds the repo's standard dark-mode toggle and accessible
 patterns. All imagery is recreated with seeded placeholder images (no assets
 copied).
@@ -24,7 +24,7 @@ copied).
 - **Structure (1:1, section order):**
   1. Navbar — Home, About, Groomers, Services, Blog, Pricing, Contact us +
      "Free Consultation" button.
-  2. Hero (`hero-wrap`) — brand "Petvet Pet Care", h1 "The Kind of Care Your
+  2. Hero (`hero-wrap`) — brand "Vetora Pet Care", h1 "The Kind of Care Your
      Pets Deserve", "Make An Appointment" button, phone 11-234-5678-9102.
   3. Intro (`bg-light`) — three service blocks: Veterinary Service, Pet
      Grooming, Pet Setting (icon + title + copy).
@@ -39,7 +39,7 @@ copied).
      3 Pet Spa, Free Supports + "Get Started").
   9. Blog (`bg-light`) — h2 "Latest Blog Updates"; three posts (image,
      meta, title, excerpt, "Read more").
-  10. Footer (`ftco-footer`) — brand "Petvet Pet Care" + blurb, Services /
+  10. Footer (`ftco-footer`) — brand "Vetora Pet Care" + blurb, Services /
       Links / "Have a Questions?" columns, bottom bar.
 - **Design tokens extracted from the stylesheet (`css/style.css`):**
   - Brand color: **#fd4c82** (pink/rose — primary buttons, headings
@@ -51,26 +51,26 @@ copied).
 - **Recreation decisions:** the repo-standard Navbar (with dark-mode toggle)
   wraps the header; sections recreated with Tailwind tokens
   (`--color-brand` = `#fd4c82`, pink scale in `@theme`); placeholder images
-  via `https://picsum.photos/seed/petvet-<n>/<w>/<h>`; icons from
+  via `https://picsum.photos/seed/vetora-<n>/<w>/<h>`; icons from
   lucide-react; consultation/appointment CTA links; social icons inline SVG;
   no assets copied.
 
-Petvet lives in `apps/petvet` and uses shared components from `packages/ui`
+Vetora lives in `apps/vetora` and uses shared components from `packages/ui`
 (Button, ButtonLink, Card, Badge, cn).
 
 ## Requirements
 
 ### Requirement: Navigation bar
 
-The system SHALL render a navigation bar with the site name "Petvet", links
+The system SHALL render a navigation bar with the site name "Vetora", links
 to the main sections, a "Free Consultation" button, and a dark-mode toggle
 button.
 
 #### Scenario: Navbar content
 
-- **GIVEN** the Petvet page is rendered
+- **GIVEN** the Vetora page is rendered
 - **WHEN** the page loads
-- **THEN** the navbar SHALL show the site name "Petvet" and links to the main sections
+- **THEN** the navbar SHALL show the site name "Vetora" and links to the main sections
 - **AND** the navbar SHALL show a "Free Consultation" button and a dark-mode toggle button
 
 #### Scenario: Dark mode toggle
@@ -165,14 +165,14 @@ least three posts, each with a title and an excerpt.
 
 ### Requirement: Footer
 
-The system SHALL render a footer with the site name "Petvet", an about
+The system SHALL render a footer with the site name "Vetora", an about
 blurb, link columns (Services, Links, Have a Questions?), and social links.
 
 #### Scenario: Footer content
 
 - **GIVEN** the page is rendered
 - **WHEN** the footer is displayed
-- **THEN** it SHALL show the site name "Petvet" and an about blurb
+- **THEN** it SHALL show the site name "Vetora" and an about blurb
 - **AND** it SHALL show link columns and social links
 
 ### Requirement: Page composition
@@ -182,10 +182,10 @@ and a document title.
 
 #### Scenario: Full page render
 
-- **GIVEN** the Petvet app is rendered
+- **GIVEN** the Vetora app is rendered
 - **WHEN** the page loads
 - **THEN** the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark
-- **AND** the document title SHALL be "Petvet — Pet Care & Veterinary Website Template"
+- **AND** the document title SHALL be "Vetora — Pet Care & Veterinary Website Template"
 
 ### Requirement: Component Dock attribution
 
@@ -205,7 +205,7 @@ change the footer's own layout or copy beyond the credit line.
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/petvet/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/vetora/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -214,7 +214,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/petvet/` is inspected
+- **WHEN** every non-test file under `apps/vetora/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 
@@ -222,7 +222,7 @@ Dock (`https://www.componentdock.com/`) instead.
 
 - [x] Footer credits Component Dock with a link to https://www.componentdock.com/
 - [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
-- [x] Navigation bar — the navbar SHALL show the site name "Petvet" and links to the main sections
+- [x] Navigation bar — the navbar SHALL show the site name "Vetora" and links to the main sections
 - [x] Hero section — it SHALL contain a level-1 heading matching "The Kind of Care Your Pets Deserve"
 - [ ] Intro services section — it SHALL show the three service blocks, each with an icon, title, and copy
 - [x] Services section — it SHALL show the heading "We Are Best Agency For Your Pets"
@@ -230,5 +230,5 @@ Dock (`https://www.componentdock.com/`) instead.
 - [x] Testimonials section — it SHALL show the heading "happy Customers Says"
 - [x] Pricing section — it SHALL show the heading "Affordable Packages"
 - [x] Blog section — it SHALL show the heading "Latest Blog Updates"
-- [x] Footer — it SHALL show the site name "Petvet" and an about blurb
+- [x] Footer — it SHALL show the site name "Vetora" and an about blurb
 - [ ] Page composition — the page SHALL compose the Navbar in the banner landmark, the sections in the main landmark, and the Footer in the contentinfo landmark

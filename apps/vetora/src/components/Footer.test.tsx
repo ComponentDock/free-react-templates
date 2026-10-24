@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('shows the brand, about blurb, link columns, contact details, socials, and copyright', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('heading', { name: /Petvet/ }).textContent).toContain('Pet Care')
+    expect(screen.getByRole('heading', { name: /Vetora/ }).textContent).toContain('Pet Care')
     expect(screen.getByText(/Far far away, behind the word mountains/)).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Services' })).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Menu' })).toBeInTheDocument()

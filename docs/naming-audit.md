@@ -13,6 +13,20 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Petvet → Vetora (2026-10-24n, #1848)
+
+**2 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/pawpal`, `apps/petsitting`), plus `apps/itkol`, which a name-only test
+still cannot see. `apps/petvet` → `vetora` cleared the sixth of the eight
+visible violations listed at #1839; the source name survives only in the spec's
+`ColorLib "Petvet"` provenance lines, the reference's own colorlib.com URLs and
+`petvet-free-template.jpg`, because the token evidence quotes the source
+stylesheets verbatim. The design is unchanged — same pink (`#fd4c82`), green
+accent (`#91c235`), Roboto, same ten bands. Both `Petvet` rows in `TEMPLATES.md`
+(51, 1131) now point at `vetora`, and the derived `shipped-as` pointers in
+`openspec/specs/template-tender/` + `docs/templates/tender/` were repointed at
+`apps/vetora`.
+
 ## State after Unioncorp → Meridia (2026-10-24m, #1847)
 
 **3 apps reuse their source name** (`node scripts/audit-naming.mjs`:
@@ -131,7 +145,6 @@ not see before**:
 | ---------------- | ------------- | ------------------------------------------------------- |
 | apps/pawpal      | PawPal        | known                                                   |
 | apps/petsitting  | Petsitting    | known                                                   |
-| apps/petvet      | Petvet        | known                                                   |
 | apps/expo        | Expo          | **new** — the spec named its source in prose only       |
 | apps/justlaw     | Justlaw       | **new**                                                 |
 | apps/nurture     | Nurture       | **new**                                                 |
@@ -154,7 +167,9 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
 `massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
 `mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`
-(#1842), `jobboard` → `rosterly` (#1843).
+(#1842), `jobboard` → `rosterly` (#1843), `medical` → `verdia` (#1844),
+`nurture` → `cradle` (#1845), `oraxol` → `obsidian` (#1846),
+`unioncorp` → `meridia` (#1847), `petvet` → `vetora` (#1848).
 
 | app              | source design |
 | ---------------- | ------------- |
@@ -162,7 +177,6 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 | apps/oraxol      | Oraxol        |
 | apps/pawpal      | PawPal        |
 | apps/petsitting  | Petsitting    |
-| apps/petvet      | Petvet        |
 | apps/unioncorp   | Unioncorp     |
 | apps/itkol       | Itkol (hidden — folder equals the slug) |
 
