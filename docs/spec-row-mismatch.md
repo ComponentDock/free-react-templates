@@ -47,16 +47,16 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24t, main after PR #1867 — the three `realtors` rows now point at the built `landly` app, so that design left §2 of `docs/row-multiplicity.md`)
+## Census (re-measured 2026-10-24u, main after PR #1868 — the two `buildream` rows now point at the built `amberline` app, so that design left §2 of `docs/row-multiplicity.md`; the `topgym` rows moved to `stryve` in PR #1866 and are counted out too)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,240 |
-| apps                               | 1,713 |
-| `AGREE`                            | 1,705 |
+| specs                              | 3,243 |
+| apps                               | 1,714 |
+| `AGREE`                            | 1,707 |
 | `DRIFT`                            | **3** |
-| `PREP` (spec-only)                 | 1,527 |
-| `ROW-MULTI` apps                   | 32    |
+| `PREP` (spec-only)                 | 1,529 |
+| `ROW-MULTI` apps                   | 30    |
 | `SLUG-OWNER` subjects              | 6     |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
@@ -87,8 +87,13 @@ specs `3,237`, `ROW-MULTI` 33, `SLUG-OWNER` 6), and the Fitnessgym design — wh
 33, `SLUG-OWNER` 6), and the Realtors design — whose three rows credited `roost` while that app
 recreates Stayhome — was built as **`landly`** (PR #1867) and its rows 485 / 1149 / 2608
 re-pointed (`AGREE=1705 DRIFT=3`, apps `1,713`, specs `3,240`, `PREP` 1,527, `ROW-MULTI` 32,
-`SLUG-OWNER` 6). `dreamrs`, `shopmax`, `juli`, `fitnessgym` and `realtors` therefore leave
-`docs/row-multiplicity.md` §2, which now counts **13** designs with no app.
+`SLUG-OWNER` 6), and the Topgym design — whose three rows credited `ironpulse` while that app
+recreates Crossbody — was built as **`stryve`** (PR #1866) and its rows 515 / 1206 / 1883
+re-pointed, and the Buildream design — whose two rows credited `mortar` while that app recreates
+Grunt — was built as **`amberline`** (PR #1868) and its rows 553 / 1339 re-pointed
+(`apps=1714 specs=3243 AGREE=1707 DRIFT=3`, `PREP` 1,529, `ROW-MULTI` 30, `SLUG-OWNER` 6).
+`dreamrs`, `shopmax`, `juli`, `fitnessgym`, `topgym`, `realtors` and `buildream` therefore leave
+`docs/row-multiplicity.md` §2, which now counts **11** designs with no app.
 
 ## The 3 remaining drift cases (adjudicated against the live previews)
 

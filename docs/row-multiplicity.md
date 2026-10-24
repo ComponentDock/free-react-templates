@@ -142,7 +142,7 @@ Nine of the 73 do **not** reach that evidence bar. They are reported, not fixed:
 | `reopen` | 2 (2080,2556) | reprise, gallery | UNRESOLVED | one shared phrase only: reprise+gallery:1 |
 | `satner` | 3 (2426,2561,2726) | smithy, kael | UNRESOLVED | one shared phrase only: smithy+kael:1 |
 
-### 2. APP-WRONG-DESIGN — the row is a false `[x]` (13 slugs / 31 rows)
+### 2. APP-WRONG-DESIGN — the row is a false `[x]` (11 slugs / 26 rows)
 
 One app is credited by the rows of a design it does not recreate, and its own
 copy matches the design its spec names far better. The test compares EXCLUSIVE
@@ -150,8 +150,6 @@ phrases only (see "Identity" below), so each pair is `row-excl / spec-excl`:
 
 | slug | rows (lines) | app | its spec says | row-excl / spec-excl |
 |---|---|---|---|---|
-| `topgym` | 3 (515,1206,1883) | ironpulse | `crossbody` | 0 / 21 |
-| `buildream` | 2 (553,1339) | mortar | `grunt` | 1 / 4 |
 | `jackco` | 3 (593,2398,2523) | dossier | `alias` | 1 / 25 |
 | `nova` | 2 (608,1871) | nova | `colorlib-error-404-19` | 0 / 2 |
 | `ariclaw` | 2 (896,2116) | counsel | `whisper` | 1 / 28 |
@@ -164,19 +162,20 @@ phrases only (see "Identity" below), so each pair is `row-excl / spec-excl`:
 | `amplify` | 3 (2287,2379,2496) | amplify | `uza` | 1 / 23 |
 | `resume` | 2 (2422,2724) | resume | `personalportfolio` | 0 / 17 |
 
-Those **13** ColorLib designs have **no app**, while their rows say `[x]`. Five have left this
+Those **11** ColorLib designs have **no app**, while their rows say `[x]`. Seven have left this
 table: PR #1862 built `dreamrs` as **`manorly`** (rows 106 / 1967 / 2587), PR #1863 built
 `shopmax` as **`drapely`** (rows 230 / 1602 / 1730), PR #1864 built `juli` as **`saffron`**
-(rows 266 / 2402), PR #1865 built `fitnessgym` as **`grithaus`** (rows 397 / 1846) and PR #1867
-built `realtors` as **`landly`** (rows 485 / 1149 / 2608) — the bucket is now **13 slugs / 31
-rows**. The
+(rows 266 / 2402), PR #1865 built `fitnessgym` as **`grithaus`** (rows 397 / 1846), PR #1866
+built `topgym` as **`stryve`** (rows 515 / 1206 / 1883), PR #1867 built `realtors` as
+**`landly`** (rows 485 / 1149 / 2608) and PR #1868 built `buildream` as **`amberline`**
+(rows 553 / 1339) — the bucket is now **11 slugs / 26 rows**. The
 recurring shape is a name collision — an app was given the invented name of
 *another* ColorLib design (`villa`, `summit`, `glamour`, `vigor`, `nova`,
 `orbit`, `depot`, `resume`, `amplify`, `imagine` are all ColorLib slugs that also
 name a shipped app), and the row pointer then matched the row to the subdomain by
-name. Two of the 13 are thin and need a human eye first: `nova` (2 exclusive
-phrases — the error page it ships barely has copy) and `buildream` (1 / 4 against
-the short Grunt studio page).
+name. One of the 11 is thin and needs a human eye first: `nova` (2 exclusive
+phrases — the error page it ships barely has copy, and the copy it does carry
+matches the 404 design it names).
 
 ### 3. SPEC-PROVENANCE-STALE — the row is right, the spec line is not (3 slugs)
 
@@ -253,7 +252,7 @@ from the live side alone.
 1. **Re-point the 8 stale rows** in §4 (`sudsy`→`gleam` ×2, `batterly`→`crumbs`,
    `glint`→`lumen` ×4, and `saas` once the tail is adjudicated). `TEMPLATES.md`
    only; no marker flips, no app edits.
-2. **Re-open the 13 designs** left in §2: their rows are `[x]` and no app recreates
+2. **Re-open the 11 designs** left in §2: their rows are `[x]` and no app recreates
    them. Point the rows at an app that does, or build them — and stop naming apps
    after ColorLib slugs, which is what created the class.
 3. **Decide the 64 duplicates** in §1: one product per design. The table names
