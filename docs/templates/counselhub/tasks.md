@@ -12,6 +12,19 @@
 - **Aesthetic:** Professional law firm website with warm gold accents (`#cbb88c`), dark charcoal backgrounds (`#1d2227`), and clean Roboto typography. Full-width hero with video popup, feature strip, split about section, stat counters, practice area grid, case gallery, testimonials carousel, blog entries, and a comprehensive 5-column dark footer.
 
 ## Section Implementation Order
+> **Reference identity (measured 2026-10-24).** The demo directory
+> `https://preview.colorlib.com/theme/lawfirm/` serves the **v3.0.2 rebuild** of this
+> design (Bootstrap 5.3.8 · Swiper 14 · Jarallax · self-hosted Roboto, 8 live pages).
+> The `lawfirm` catalogue entry's row thumbnail — the serif full-screen
+> `…fullscreen-lawyer…` page — is a **retired** design with no demo (13 prefixes → 404)
+> and no archive (both zips → 404), so rows 1387/1760/2123 all resolve to this one
+> design. Measured tokens: gold `#cbb88c` (CTA fill, text `#1d2227`), ink `#1d2227`,
+> deep gold `#7e6939`, panel `#f5f4f0`, strip ramp `#161a1e`/`#121518`/`#0e1013`,
+> Roboto only. `#007bff` is the compiled-Bootstrap frame and is **never painted** —
+> where this brief still lists it as "primary", the app lags the reference (implementer
+> repaint), never the reverse. Evidence: `openspec/specs/template-counselhub/spec.md`
+> §Reference identity.
+
 
 1. **TopBar (`TopBar.tsx`)**: Dark bar with phone number and email on left, social media icons (Facebook, Twitter, Instagram, Dribbble) on right. Background `#1d2227`, gold accent text.
 2. **Navbar (`Navbar.tsx`)**: Dark sticky navigation (`#1d2227`), brand "CounselHub" in gold (`#cbb88c`), nav links (Home, About, Practice Areas, Cases, Attorneys, Blog, Contact), mobile hamburger toggle. Scrolled state: white background, dark text.
@@ -28,9 +41,9 @@
 
 ## Design Fidelity Notes
 
-- **Colors:** Brand gold `#cbb88c`, dark background `#1d2227`, Bootstrap primary blue `#007bff` for buttons, white `#ffffff`, light gray `#f7f7f7` for alternating sections.
+- **Colors:** Brand gold `#cbb88c` (CTA fill, text `#1d2227`), dark background `#1d2227`, deep gold `#7e6939` for sub-labels, white `#ffffff`, warm off-white `#f5f4f0` for alternating sections (the `#007bff`/`#f7f7f7` pair belongs to the compiled Bootstrap frame, never painted)s.
 - **Typography:** Google Font `Roboto` (weights 300, 400, 500, 700). Headings bold, body regular.
-- **Buttons:** Bootstrap-style with `rounded` radius (`0.25rem`). Primary: blue bg + white text. White: white bg + dark text. Both with hover darken effect.
+- **Buttons:** Bootstrap-style with `rounded` radius (`0.25rem`). Primary: gold `#cbb88c` bg + `#1d2227` text. White: white bg + dark text. Both with hover darken effect.
 - **Section Rhythm:** Alternating white / light gray / image-backed sections with generous vertical padding (`py-16` to `py-24`).
 - **Images:** Deterministic Picsum seed URLs (`https://picsum.photos/seed/counselhub-<n>/<w>/<h>`). No real images copied from ColorLib.
 - **Icons:** Lucide React for all icons (replace Font Awesome + Flaticon from original).

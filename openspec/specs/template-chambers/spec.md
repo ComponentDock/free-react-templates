@@ -17,18 +17,83 @@ counters, practice area cards, case gallery, attorney team grid, and a 5-column
 footer with dark bottom bar.
 - **Source design:** ColorLib "Lawfirm" — https://colorlib.com/wp/template/lawfirm/
 
+## Reference identity — catalog URL collision (measured 2026-10-24)
+
+This entry's row thumbnail and its demo directory disagree, and the disagreement is
+ColorLib's, not a slug-only 404. Two catalogue keys resolve to
+`https://preview.colorlib.com/theme/lawfirm/` in the host's own 1,961-entry map
+(`assets/js/catalog-products-*.js`):
+
+| catalogue key | `details` post | that entry's `img` |
+| --- | --- | --- |
+| `catalog-141453` | `/wp/template/lawfirm/` — "Best Lawyer & Attorney Website Template" (December 13, 2021) | `lawfirm-free-fullscreen-lawyer-website-template.jpg` — a **serif, gold-on-white, navy-CTA full-screen** page (hero "We Help to Solve Business Law Solution") |
+| `lawfirm` | `/wp/template/lawfirm-2/` — "Free Law Business Website Template Design 2026", *Updated October 2026 · v3.0.2* | `lawfirm-free-template.jpg` — the **`ftco`** page the directory actually serves (`Law Firm` wordmark, hero "Don't Feel Helpless We Fight for Justice") |
+
+Each post's own Preview button points at this one directory (the 2021 post at
+`#catalog-141453`, the 2026 post at `#lawfirm`), so neither button adjudicates identity.
+The directory serves the **2026 v3.0.2 rebuild** — the `lawfirm-2` design. Measured
+chain (all fetched 2026-10-24, `curl -4`, Chrome/124 UA):
+
+| Fact | Reading |
+| --- | --- |
+| demo dir | `theme/lawfirm/` HTTP **200**, **46,599 B**; `theme/lawfirm/index.html` 200, same 46,599 B — a no-op link, never a 404 |
+| theme sheet | `css/style.min.css` **202,719 B**, sha256 `93358180c45c4b5c282960a248ca56cc0dfe1aaf4f2030f2ad79445c0379d82d` (linked as `?v=3.0.2`); un-minified `css/style.css` **251,276 B**, sha256 `71595d25ca1a6bed8050605a604d5bf8339bc0ca3c289b12e18c3c07e6525977` |
+| script / vendor | `js/main.min.js` **45,942 B**; `vendor/bootstrap/5.3.8`, `vendor/swiper/14.3.0`, `vendor/jarallax/3.1.0`, `vendor/fontawesome/7.3.1` (subset) — the 3.0 rebuild the 2026 post describes |
+| faces | self-hosted **Roboto** 400/500/700 (`fonts/roboto/*.woff2`, latin + latin-ext; `roboto-latin-400-normal.woff2` 21,884 B); **no Google Fonts link, no serif face anywhere** |
+| sheet census | `#fff` ×94 · **`#cbb88c` ×65** · `#000` ×61 · `#007bff` ×25 (compiled-Bootstrap frame only) · **`#1d2227` ×20** · `#6c757d` ×19 · `#343a40` ×19 · `#f8f9fa` ×16 · **`#7e6939` ×11** · **`#f5f4f0` ×4** |
+| radii | `50%` ×20 · `4px` ×6 · `5px` ×4 · `1rem` ×4 · `30px` ×1 · `2px` (navbar CTA) |
+| pages | **8 live pages, all 200**: `index.html` 46,599 B · `about.html` 30,959 B · `practice-area.html` 23,575 B · `cases.html` 16,355 B · `attorney.html` 23,028 B · `blog.html` 18,769 B · `blog-single.html` 32,041 B · `contact.html` 18,415 B |
+| anchors | 307 across the eight pages, **115 dead `href="#"`** (index: 44 anchors, 18 dead); the menu resolves seven real pages, `index.html` is a no-op link |
+| forms | `.appointment` → `includes/send-email.php` on index/about/practice-area (`name`/`email`/`area`/`message`, honeypot `cl_hp_url`, hidden `subject`); `contact.html` adds `#contactForm` (`name`/`email`/`subject`/`message`) |
+| archive | `downloads/free/lawfirm.zip` **404** and `downloads/free/lawfirm-2.zip` **404** — the live directory is the only reference that exists |
+
+The **row thumbnail is the retired variant**:
+`lawfirm-free-fullscreen-lawyer-website-template.jpg` (1024×798, 50,676 B; AVIF served
+for a `.jpg` name, decoded with PIL) shows a page that exists nowhere on the preview
+host and has no archive — `theme/lawfirm-fullscreen/`, `theme/lawfirmfs/`,
+`theme/lawfirm2/`, `theme/lawfirm-2/`, `theme/fullscreen-lawfirm/`, `theme/law-firm/`,
+`theme/lawfirm-serif/`, `theme/lawfirm-2021/`, `theme/lawfirm-old/`,
+`theme/bootstrap/lawfirm/`, `theme/bb/lawfirm/`, `etc/lawfirm/index.html`,
+`colorlib.com/etc/lawfirm/index.html` → all **404**. Its values are pixel samples,
+never CSS declarations:
+
+| Sampled role | Value | Where it was read |
+| --- | --- | --- |
+| nav bar | `#ffffff` | (200,48)–(420,62) |
+| nav CTA pill "MAKE AN APPOINTMENT" | `#c0a44a` | (745,60)–(880,85) |
+| hero CTA pill "Make An Appointment" | `#2f486e` | (435,500)–(585,528) |
+
+The v3.0.2 sheet also settles the accent: `.btn.btn-primary{background:#cbb88c!important;
+border:1px solid #cbb88c!important;color:#1d2227!important}`, and the hero markup's two
+buttons are `btn btn-primary` + `btn btn-white`. `#007bff` survives only inside the
+compiled Bootstrap 5.3.8 frame (`--bs-btn-bg` on the vendor `.btn-primary` rule, the
+`0 0 0 .25rem #007bff40` focus ring, `.form-check-input:checked`) and is **never painted
+by this design** — a token table that names it "primary" points an implementer at a
+colour the page does not use.
+
+**Consequence for the implementer:** build the design the demo serves (the `ftco` page) — that is what `apps/chambers`
+ships. Do **not** reproduce the row thumbnail: it has no DOM, no stylesheet and no
+archive, so there is nothing left to measure. All three `**Lawfirm**` rows in
+`TEMPLATES.md` (lines 1387, 1760, 2123) point at this single directory, so
+`chambers`/`statutory`/`docket` are a documented duplicate of one design, not three
+designs. App debt from this reading: `apps/chambers` still paints `#007bff` and no
+`#cbb88c` — an implementer repaint, never a prep edit.
+
 ## Design Tokens
 
 | Token         | Value                  | Usage                      |
 | ------------- | ---------------------- | -------------------------- |
-| primary       | `#007bff`              | Buttons, links, accent     |
-| primary-hover | `#0069d9`              | Button hover state         |
+| primary       | `#cbb88c`              | CTA fill, links, icon accents (`.btn.btn-primary` = `#cbb88c` bg + `#1d2227` text) |
+| primary-hover | transparent + `#cbb88c` border | `.btn.btn-primary:hover`, `.btn-outline-primary` |
+| primary-ink   | `#1d2227`              | Text on the gold CTA       |
+| accent-deep   | `#7e6939`              | Section sub-labels, staff roles, blog date day, contact labels |
+| vendor-blue   | `#007bff` (never painted) | Compiled Bootstrap 5.3.8 frame only; the vendor `.btn-primary` vars are overridden |
 | text-dark     | `#212529`              | Headings, strong text      |
 | text-body     | `#333333`              | Body text                  |
 | text-muted    | `#6c757d`              | Secondary text, captions   |
 | bg-dark       | `#161a1e`              | Intro strip, footer bg     |
 | bg-darker     | `#121518`              | Alternate intro panels     |
-| bg-light      | `#f8f9fa`              | About section bg           |
+| bg-light      | `#f5f4f0`              | About section bg (`.bg-light`, `!important`) |
 | font-body     | `'Roboto', sans-serif` | Body text, UI elements     |
 | font-heading  | `'Roboto', sans-serif` | Headings (bold/700 weight) |
 

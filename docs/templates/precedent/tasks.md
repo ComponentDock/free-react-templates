@@ -18,9 +18,20 @@
 14. **Verify** — `scripts/verify-app.sh precedent`
 
 ## Design Notes
+> **Reference identity (measured 2026-10-24).** The demo directory
+> `https://preview.colorlib.com/theme/lawfirm/` serves the **v3.0.2 rebuild** — this
+> row's design, and the design this brief describes. The earlier note that the preview
+> was unreachable is void: the page answers 200 with `css/style.min.css` (202,719 B,
+> `?v=3.0.2`). Measured tokens: gold `#cbb88c` (CTA fill, text `#1d2227`), ink
+> `#1d2227`, deep gold `#7e6939`, panel `#f5f4f0`, strip ramp
+> `#161a1e`/`#121518`/`#0e1013`, **Roboto only — no serif face and no Inter anywhere**
+> in the sheet. The invented `#c5a55a` / `#1a1a2e` / Georgia / Inter palette in the app
+> table below is app debt (implementer repaint). Evidence:
+> `openspec/specs/template-precedent/spec.md` §Reference identity.
 
-- **Color palette:** Gold accent (#c5a55a), dark backgrounds (#333), white text
-- **Typography:** Serif headings (Georgia), sans-serif body (Inter)
+
+- **Color palette:** Gold accent **#cbb88c** (CTA fill, text #1d2227), ink #1d2227, accent-deep #7e6939, panel #f5f4f0, white text
+- **Typography:** **Roboto 400/500/700 only** — the sheet carries no serif face and no Inter
 - **Layout:** Single-page landing, sectioned vertically
 - **Images:** Use picsum.photos seeded placeholders, lucide-react icons
 - **Brand icons:** Use inline SVG (lucide-react removed brand icons)

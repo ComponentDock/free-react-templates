@@ -2,28 +2,85 @@
 
 ## Purpose
 
-Recreation of ColorLib "Lawfirm 2" (https://colorlib.com/wp/template/lawfirm-2/) as a professional law firm landing page. Preview URL was unreachable (404); design tokens extracted from screenshot + ColorLib listing page.
+Recreation of ColorLib "Lawfirm 2" (https://colorlib.com/wp/template/lawfirm-2/) as a professional law firm landing page. The live preview is `https://preview.colorlib.com/theme/lawfirm/` (HTTP 200, v3.0.2 rebuild — measured 2026-10-24, see §Reference identity); the tokens below are read from its stylesheet.
 
 **New name:** Precedent  
 **Original:** ColorLib Lawfirm 2  
 **Category:** Legal  
-**Design style:** Professional, dark + gold accent, serif headings, clean layout
+**Design style:** Professional, dark `#1d2227` + gold `#cbb88c` accent, Roboto only (no serif face in the sheet), warm off-white `#f5f4f0` panels
 
-## Design Tokens (from screenshot)
+## Reference identity — catalog URL collision (measured 2026-10-24)
+
+This entry's demo directory is shared by two catalogue posts, and the directory serves
+the **2026 v3.0.2 rebuild** — this row's design. Two keys resolve to
+`https://preview.colorlib.com/theme/lawfirm/` in the host's own 1,961-entry map
+(`assets/js/catalog-products-*.js`):
+
+| catalogue key | `details` post | that entry's `img` |
+| --- | --- | --- |
+| `lawfirm` | `/wp/template/lawfirm-2/` — "Free Law Business Website Template Design 2026", *Updated October 2026 · v3.0.2* — **this row** | `lawfirm-free-template.jpg` — the `ftco` page the directory serves |
+| `catalog-141453` | `/wp/template/lawfirm/` — "Best Lawyer & Attorney Website Template" (December 13, 2021) | `lawfirm-free-fullscreen-lawyer-website-template.jpg` — a **retired** serif gold/navy full-screen page |
+
+Measured chain (all fetched 2026-10-24, `curl -4`, Chrome/124 UA):
+
+| Fact | Reading |
+| --- | --- |
+| demo dir | `theme/lawfirm/` HTTP **200**, **46,599 B**; `theme/lawfirm/index.html` 200, same 46,599 B — a no-op link, never a 404 |
+| theme sheet | `css/style.min.css` **202,719 B**, sha256 `93358180c45c4b5c282960a248ca56cc0dfe1aaf4f2030f2ad79445c0379d82d` (linked as `?v=3.0.2`); un-minified `css/style.css` **251,276 B**, sha256 `71595d25ca1a6bed8050605a604d5bf8339bc0ca3c289b12e18c3c07e6525977` |
+| script / vendor | `js/main.min.js` **45,942 B**; `vendor/bootstrap/5.3.8`, `vendor/swiper/14.3.0`, `vendor/jarallax/3.1.0`, `vendor/fontawesome/7.3.1` (subset) — the 3.0 rebuild the 2026 post describes |
+| faces | self-hosted **Roboto** 400/500/700 (`fonts/roboto/*.woff2`, latin + latin-ext; `roboto-latin-400-normal.woff2` 21,884 B); **no Google Fonts link, no serif face anywhere** |
+| sheet census | `#fff` ×94 · **`#cbb88c` ×65** · `#000` ×61 · `#007bff` ×25 (compiled-Bootstrap frame only) · **`#1d2227` ×20** · `#6c757d` ×19 · `#343a40` ×19 · `#f8f9fa` ×16 · **`#7e6939` ×11** · **`#f5f4f0` ×4** |
+| radii | `50%` ×20 · `4px` ×6 · `5px` ×4 · `1rem` ×4 · `30px` ×1 · `2px` (navbar CTA) |
+| pages | **8 live pages, all 200**: `index.html` 46,599 B · `about.html` 30,959 B · `practice-area.html` 23,575 B · `cases.html` 16,355 B · `attorney.html` 23,028 B · `blog.html` 18,769 B · `blog-single.html` 32,041 B · `contact.html` 18,415 B |
+| anchors | 307 across the eight pages, **115 dead `href="#"`** (index: 44 anchors, 18 dead); the menu resolves seven real pages, `index.html` is a no-op link |
+| forms | `.appointment` → `includes/send-email.php` on index/about/practice-area (`name`/`email`/`area`/`message`, honeypot `cl_hp_url`, hidden `subject`); `contact.html` adds `#contactForm` (`name`/`email`/`subject`/`message`) |
+| archive | `downloads/free/lawfirm.zip` **404** and `downloads/free/lawfirm-2.zip` **404** — the live directory is the only reference that exists |
+
+The **row thumbnail is that same page**: `lawfirm-free-template.jpg` (1200×946,
+143,174 B) shows the dark top bar, the `Law Firm` wordmark, the hero "Don't Feel
+Helpless We Fight for Justice" and the cream `WELCOME TO LAW FIRM` panel. The only
+wording drift against the live page is the pre-3.0 feature strip ("Case Dismissed /
+Court Performance / Court Performance"), which v3.0.2 renders as "Case Review /
+Court Hearings / Legal Research". The **retired** design belongs to the sibling entry:
+a serif, gold-on-white, navy-CTA full-screen page that exists nowhere on the preview
+host (13 prefix probes → 404, both archives → 404); its pixel samples live in
+`template-chambers`' §Reference identity.
+
+The v3.0.2 sheet also settles the accent: `.btn.btn-primary{background:#cbb88c!important;
+border:1px solid #cbb88c!important;color:#1d2227!important}`, and the hero markup's two
+buttons are `btn btn-primary` + `btn btn-white`. `#007bff` survives only inside the
+compiled Bootstrap 5.3.8 frame (`--bs-btn-bg` on the vendor `.btn-primary` rule, the
+`0 0 0 .25rem #007bff40` focus ring, `.form-check-input:checked`) and is **never painted
+by this design** — a token table that names it "primary" points an implementer at a
+colour the page does not use.
+
+**Consequence for the implementer:** build the design the demo serves (the `ftco`
+page) — the only design in this family with a live DOM and a stylesheet. The earlier
+reading in this file ("Preview URL was unreachable (404) … tokens extracted from
+screenshot") was wrong in both halves: the preview has served all along, and the
+palette it invented (`#c5a55a` gold, `#1a1a2e` navy, Georgia headings, Inter body)
+occurs nowhere in the sheet — this design is Roboto-only. App debt: `apps/precedent`
+paints that invented palette (`#c5a55a` ×37) — implementer repaint, never a prep edit.
+
+## Design Tokens (measured 2026-10-24, live `css/style.min.css` v3.0.2)
 
 | Token                   | Value                  | Usage                                         |
 | ----------------------- | ---------------------- | --------------------------------------------- |
-| `--color-primary`       | `#c5a55a` (gold/amber) | CTA buttons, accent icons, feature highlights |
-| `--color-dark`          | `#333333`              | Top bar, feature strip, footer backgrounds    |
-| `--color-heading`       | `#1a1a2e`              | Section headings                              |
-| `--color-body`          | `#666666`              | Body text                                     |
-| `--color-white`         | `#ffffff`              | Hero text, feature strip text                 |
-| `--color-bg`            | `#ffffff`              | Page background, card backgrounds             |
-| `--color-light-bg`      | `#f8f9fa`              | Alternating section backgrounds               |
-| Font heading            | Georgia / serif        | Professional, authoritative feel              |
-| Font body               | Inter / sans-serif     | Clean readability                             |
-| Border radius (buttons) | 4px                    | Slightly rounded CTA buttons                  |
-| Hero overlay            | Dark semi-transparent  | Dark gradient over hero image                 |
+| `--color-primary`       | `#cbb88c` (warm gold)  | `.btn.btn-primary` fill (text `#1d2227`), links, active nav, icon accents, `.bg-primary` |
+| `--color-ink`           | `#1d2227`              | `.wrap` top bar, navbar, `.intro` strip, hero overlay (`opacity .5`), appointment overlay (`.95`), testimony band (`.95`), footer socials |
+| `--color-accent-deep`   | `#7e6939`              | `.subheading` (12px, 600, 2px tracking, uppercase), staff positions, blog date day, contact labels, pagination |
+| `--color-surface`       | `#f5f4f0`              | `.bg-light` cream panels (the about block), hover states of the icon circles |
+| `--color-strip-1`       | `#161a1e`              | `.intro.color-1`                              |
+| `--color-strip-2`       | `#121518`              | `.intro.color-2`                              |
+| `--color-strip-3`       | `#0e1013`              | `.intro.color-3`                              |
+| `--color-white`         | `#ffffff`              | page background, hero text, `btn-white` fill  |
+| `--color-body`          | `#212529`              | body copy (Bootstrap 5 body colour)           |
+| `--color-muted`         | `#6c757d`              | secondary captions                            |
+| Font family             | `Roboto` 400/500/700   | self-hosted woff2, latin + latin-ext — **no serif, no Inter** |
+| Hero                    | `600px` tall           | `.overlay` `#1d2227` at `opacity .5`; h1 `60px`/1.1/`500` `#fff`; subtext `18px` `#ffffffe6` |
+| Button radius           | `2px` navbar CTA, `4px`/`5px` body buttons | `.nav-item.cta>a` = gold fill, `18px` side padding; scrolled variant `5px` |
+| Circles                 | `50%`                  | `170px` intro/service icon, `50px` footer social, `100px` blog date badge |
+| Vendor blue             | `#007bff`              | compiled-Bootstrap frame only — overridden, never painted |
 
 ## Requirements
 

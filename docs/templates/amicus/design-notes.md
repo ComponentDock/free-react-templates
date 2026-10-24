@@ -9,13 +9,26 @@
 **Preview:** https://preview.colorlib.com/theme/lawfirm/
 **New name:** Amicus (Latin: amicus curiae — friend of the court)
 
+> **Reference identity (measured 2026-10-24).** The demo directory
+> `https://preview.colorlib.com/theme/lawfirm/` serves the **v3.0.2 rebuild** of this
+> design (Bootstrap 5.3.8 · Swiper 14 · Jarallax · self-hosted Roboto, 8 live pages).
+> The `lawfirm` catalogue entry's row thumbnail — the serif full-screen
+> `…fullscreen-lawyer…` page — is a **retired** design with no demo (13 prefixes → 404)
+> and no archive (both zips → 404), so rows 1387/1760/2123 all resolve to this one
+> design. Measured tokens: gold `#cbb88c` (CTA fill, text `#1d2227`), ink `#1d2227`,
+> deep gold `#7e6939`, panel `#f5f4f0`, strip ramp `#161a1e`/`#121518`/`#0e1013`,
+> Roboto only. `#007bff` is the compiled-Bootstrap frame and is **never painted** —
+> where this brief still lists it as "primary", the app lags the reference (implementer
+> repaint), never the reverse. Evidence: `openspec/specs/template-amicus/spec.md`
+> §Reference identity.
+
 ---
 
 ## Section structure (top → bottom)
 
 1. **TopBar** — phone + email on left, social icons on right. Dark bg.
 2. **Navbar** — "Amicus" logo, 7 nav links, hamburger toggle. Dark bg (#1d2227), darkens to #000 on scroll.
-3. **Hero** — full-width bg image, dark overlay, split layout: heading + subtitle + 2 buttons (primary blue "Contact us", white "Read more") on left, video play icon on right.
+3. **Hero** — full-width bg image, dark overlay, split layout: heading + subtitle + 2 buttons (gold "Contact us", white "Read more") on left, video play icon on right.
 4. **IntroBoxes** — 4 dark boxes in a row. Each: icon + title + description. Progressive dark backgrounds.
 5. **CounterStats** — 4 items with animated count-up numbers. Icon + number + label.
 6. **AboutSection** — split: bg image left, light panel right. Subheading + heading + 4 service items (Expert Attorneys, Great Discount, Legal Advisory, Quick Charges).
@@ -45,7 +58,7 @@
 - Fixed height (600px desktop), full-width bg image
 - Dark overlay (rgba) for text legibility
 - Split: left side has content, right side has video play button
-- Two buttons: primary blue (#007bff) and white outline
+- Two buttons: primary **gold #cbb88c with #1d2227 text** and white outline (#007bff is vendor frame, never painted)
 - Use picsum.photos for bg image
 
 ### IntroBoxes

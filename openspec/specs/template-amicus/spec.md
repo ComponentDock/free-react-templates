@@ -17,7 +17,7 @@ monorepo naming mandate: never reuse the ColorLib source name), with the
 monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 The original is a full-featured Bootstrap 4 law firm landing page (Roboto
-font, blue `#007bff` primary brand, dark navbar/footer, dark intro boxes)
+font, gold `#cbb88c` primary brand, dark navbar/footer, dark intro boxes)
 with: top contact bar, sticky dark navbar, full-width hero with video play
 button, 4 intro stat boxes, counter stats row, 6 practice area cards with
 rotating icon animation, 8 case study image cards, testimonial slider with
@@ -31,6 +31,65 @@ lucide-react).
 > name. **Amicus** is the new, original name — single lowercase word,
 > no collision with `apps/`, `openspec/specs/`, `docs/templates/` or any
 > TEMPLATES.md name (verified 2026-09-21: zero hits across all namespaces).
+
+## Reference identity — catalog URL collision (measured 2026-10-24)
+
+This entry's row thumbnail and its demo directory disagree, and the disagreement is
+ColorLib's, not a slug-only 404. Two catalogue keys resolve to
+`https://preview.colorlib.com/theme/lawfirm/` in the host's own 1,961-entry map
+(`assets/js/catalog-products-*.js`):
+
+| catalogue key | `details` post | that entry's `img` |
+| --- | --- | --- |
+| `catalog-141453` | `/wp/template/lawfirm/` — "Best Lawyer & Attorney Website Template" (December 13, 2021) | `lawfirm-free-fullscreen-lawyer-website-template.jpg` — a **serif, gold-on-white, navy-CTA full-screen** page (hero "We Help to Solve Business Law Solution") |
+| `lawfirm` | `/wp/template/lawfirm-2/` — "Free Law Business Website Template Design 2026", *Updated October 2026 · v3.0.2* | `lawfirm-free-template.jpg` — the **`ftco`** page the directory actually serves (`Law Firm` wordmark, hero "Don't Feel Helpless We Fight for Justice") |
+
+Each post's own Preview button points at this one directory (the 2021 post at
+`#catalog-141453`, the 2026 post at `#lawfirm`), so neither button adjudicates identity.
+The directory serves the **2026 v3.0.2 rebuild** — the `lawfirm-2` design. Measured
+chain (all fetched 2026-10-24, `curl -4`, Chrome/124 UA):
+
+| Fact | Reading |
+| --- | --- |
+| demo dir | `theme/lawfirm/` HTTP **200**, **46,599 B**; `theme/lawfirm/index.html` 200, same 46,599 B — a no-op link, never a 404 |
+| theme sheet | `css/style.min.css` **202,719 B**, sha256 `93358180c45c4b5c282960a248ca56cc0dfe1aaf4f2030f2ad79445c0379d82d` (linked as `?v=3.0.2`); un-minified `css/style.css` **251,276 B**, sha256 `71595d25ca1a6bed8050605a604d5bf8339bc0ca3c289b12e18c3c07e6525977` |
+| script / vendor | `js/main.min.js` **45,942 B**; `vendor/bootstrap/5.3.8`, `vendor/swiper/14.3.0`, `vendor/jarallax/3.1.0`, `vendor/fontawesome/7.3.1` (subset) — the 3.0 rebuild the 2026 post describes |
+| faces | self-hosted **Roboto** 400/500/700 (`fonts/roboto/*.woff2`, latin + latin-ext; `roboto-latin-400-normal.woff2` 21,884 B); **no Google Fonts link, no serif face anywhere** |
+| sheet census | `#fff` ×94 · **`#cbb88c` ×65** · `#000` ×61 · `#007bff` ×25 (compiled-Bootstrap frame only) · **`#1d2227` ×20** · `#6c757d` ×19 · `#343a40` ×19 · `#f8f9fa` ×16 · **`#7e6939` ×11** · **`#f5f4f0` ×4** |
+| radii | `50%` ×20 · `4px` ×6 · `5px` ×4 · `1rem` ×4 · `30px` ×1 · `2px` (navbar CTA) |
+| pages | **8 live pages, all 200**: `index.html` 46,599 B · `about.html` 30,959 B · `practice-area.html` 23,575 B · `cases.html` 16,355 B · `attorney.html` 23,028 B · `blog.html` 18,769 B · `blog-single.html` 32,041 B · `contact.html` 18,415 B |
+| anchors | 307 across the eight pages, **115 dead `href="#"`** (index: 44 anchors, 18 dead); the menu resolves seven real pages, `index.html` is a no-op link |
+| forms | `.appointment` → `includes/send-email.php` on index/about/practice-area (`name`/`email`/`area`/`message`, honeypot `cl_hp_url`, hidden `subject`); `contact.html` adds `#contactForm` (`name`/`email`/`subject`/`message`) |
+| archive | `downloads/free/lawfirm.zip` **404** and `downloads/free/lawfirm-2.zip` **404** — the live directory is the only reference that exists |
+
+The **row thumbnail is the retired variant**:
+`lawfirm-free-fullscreen-lawyer-website-template.jpg` (1024×798, 50,676 B; AVIF served
+for a `.jpg` name, decoded with PIL) shows a page that exists nowhere on the preview
+host and has no archive — `theme/lawfirm-fullscreen/`, `theme/lawfirmfs/`,
+`theme/lawfirm2/`, `theme/lawfirm-2/`, `theme/fullscreen-lawfirm/`, `theme/law-firm/`,
+`theme/lawfirm-serif/`, `theme/lawfirm-2021/`, `theme/lawfirm-old/`,
+`theme/bootstrap/lawfirm/`, `theme/bb/lawfirm/`, `etc/lawfirm/index.html`,
+`colorlib.com/etc/lawfirm/index.html` → all **404**. Its values are pixel samples,
+never CSS declarations:
+
+| Sampled role | Value | Where it was read |
+| --- | --- | --- |
+| nav bar | `#ffffff` | (200,48)–(420,62) |
+| nav CTA pill "MAKE AN APPOINTMENT" | `#c0a44a` | (745,60)–(880,85) |
+| hero CTA pill "Make An Appointment" | `#2f486e` | (435,500)–(585,528) |
+
+The v3.0.2 sheet also settles the accent: `.btn.btn-primary{background:#cbb88c!important;
+border:1px solid #cbb88c!important;color:#1d2227!important}`, and the hero markup's two
+buttons are `btn btn-primary` + `btn btn-white`. `#007bff` survives only inside the
+compiled Bootstrap 5.3.8 frame (`--bs-btn-bg` on the vendor `.btn-primary` rule, the
+`0 0 0 .25rem #007bff40` focus ring, `.form-check-input:checked`) and is **never painted
+by this design** — a token table that names it "primary" points an implementer at a
+colour the page does not use.
+
+**Consequence for the implementer:** no app to build here — `apps/chambers` ships this design (see the SHIPPED-UNDER
+banner). The block above supersedes the 2026-09-21 reading below: the title tag and the
+Bootstrap-4 / Owl-Carousel / flaticon asset set are pre-3.0, while the current page is
+Bootstrap 5.3.8 + Swiper 14 + Jarallax with self-hosted Roboto and Lucide SVG icons.
 
 ## Design reference (replication findings)
 
@@ -59,8 +118,11 @@ lucide-react).
 |---|---|---|
 | Font family | `"Roboto", Arial, sans-serif` | All text (headings, body, nav) |
 | Font weights | 300 (light), 400 (regular), 500 (medium), 700 (bold) | Headings 600-700, body 400, nav 500 |
-| Primary brand | `#007bff` (blue) | Buttons, active nav, links, accents |
-| Accent/loader | `#F96D00` (orange) | Loader spinner stroke, accent highlights |
+| Primary brand | `#cbb88c` (gold) | `.btn.btn-primary` fill, links, active nav, icon accents |
+| Primary ink | `#1d2227` | Text on the gold CTA; dark bands |
+| Accent deep | `#7e6939` | Sub-labels, staff roles, blog date day |
+| Vendor blue | `#007bff` (never painted) | Compiled Bootstrap 5.3.8 frame only |
+| ~~Accent/loader~~ | ~~`#F96D00`~~ **gone in v3.0.2** | The full-screen preloader was removed in 3.0 — the hex no longer occurs in `style.min.css` |
 | Navbar bg | `#1d2227` (dark) | Default navbar background |
 | Navbar scrolled | `#000000` (black) | Navbar on scroll |
 | Intro box default | `#1d2227` (dark) | First intro box background |
@@ -197,7 +259,7 @@ lucide-react).
 - [ ] Appointment section has background image with overlay, features list, consultation form with dropdown
 - [ ] Blog section has 3 cards with date overlays, titles, descriptions
 - [ ] Footer has dark bg (#121518), 5 widget columns, social icons, contact info, dark bottom bar with copyright and Component Dock link
-- [ ] All colors match design tokens (primary #007bff, footer #121518, navbar #1d2227, etc.)
+- [ ] All colors match design tokens (primary #cbb88c, ink #1d2227, footer #121518, panels #f5f4f0)
 - [ ] Buttons are Bootstrap-default rounded (border-radius: 0.25rem)
 - [ ] Font is Roboto throughout
 - [ ] Responsive layout works (mobile hamburger menu, stacked columns)
