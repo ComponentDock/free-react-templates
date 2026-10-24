@@ -56,8 +56,8 @@ export function AppSplit() {
         </div>
         <div className="flex justify-center">
           <img
-            src="https://picsum.photos/seed/massive-app/480/640"
-            alt="Massive app preview"
+            src="https://picsum.photos/seed/appmint-app/480/640"
+            alt="Appmint app preview"
             className="max-h-[32rem] w-full max-w-sm rounded-3xl object-cover shadow-2xl"
             loading="lazy"
           />

@@ -6,7 +6,7 @@ describe('App', () => {
   it('composes the navbar, all sections, and the footer with correct landmarks and title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Massive — App Landing Template')
+    expect(document.title).toBe('Appmint — App Landing Template')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
@@ -15,7 +15,7 @@ describe('App', () => {
     expect(main).toBeInTheDocument()
 
     const heading = screen.getByRole('heading', { level: 1 })
-    expect(heading.textContent).toMatch(/Welcome To Massive App Store/)
+    expect(heading.textContent).toMatch(/Welcome To Appmint App Store/)
 
     for (const name of [
       'App Features',
@@ -31,7 +31,7 @@ describe('App', () => {
     ]) {
       expect(screen.getByRole('heading', { name })).toBeInTheDocument()
     }
-    expect(screen.getByRole('heading', { name: /Get Download Massive app/ })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Get Download Appmint app/ })).toBeInTheDocument()
 
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()
   })

@@ -1,7 +1,7 @@
-# Massive (Colorlib Massive) — Tasks & Design Notes
+# Appmint (recreation of ColorLib "Massive") — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Tears PR (#5) awaits review.
-> Implementation ships later on `feat/template-massive`.
+> Implementation ships later on `feat/template-appmint`.
 
 ## Design notes (replication findings)
 
@@ -11,12 +11,12 @@
   (HTTP 200, full rendered DOM + `style.css` (61KB) extracted).
 - **Visual design (from DOM + CSS tokens):** app landing with a **teal/cyan
   gradient** brand (`#00e2d9` → `#1193d4`), Open Sans + Libre Baskerville
-  fonts, a "Welcome To Massive App Store" hero, 4 feature tiles, app split,
+  fonts, a "Welcome To Appmint App Store" hero, 4 feature tiles, app split,
   video band, screenshots, team, and pricing.
 - **Structure (1:1, section order):**
   1. Navbar: logo + SignUp, home, Features, App, Video, Screenshot, Team,
      Pricing, Contact.
-  2. Hero: h1 "Welcome To Massive App Store." + blurb + **Get App Now /
+  2. Hero: h1 "Welcome To Appmint App Store." + blurb + **Get App Now /
      Discover More**.
   3. Features (`features-top-area`): "welcome to app features" + tiles —
      Rapidiously monetize..., **Premium Quality, Chat with love, 3d
@@ -38,11 +38,11 @@
   - Fonts: **"Open Sans"** + **"Libre Baskerville"** (Google Fonts
     `<link>`).
   - Gradient buttons with white text.
-- **Recreation name:** Massive (kept — matches ColorLib name, distinct from
-  existing names). App folder `apps/massive`, package
-  `@free-react-templates/massive`.
+- **Recreation name:** Appmint — an original name (the source name is never
+  reused; AGENTS.md rule 5). App folder `apps/appmint`, package
+  `@free-react-templates/appmint`.
 - **Recreation approach:** seeded picsum placeholders
-  (`picsum.photos/seed/massive-<n>/<w>/<h>`); lucide-react icons; Open Sans
+  (`picsum.photos/seed/appmint-<n>/<w>/<h>`); lucide-react icons; Open Sans
   - Libre Baskerville via Google Fonts; video button as styled play button;
     teal gradient primary in `@theme`; repo-standard Navbar (dark-mode
     toggle) + Footer chrome.
@@ -50,16 +50,16 @@
 
 ## Tasks
 
-- [x] Write `openspec/specs/template-massive/spec.md` (Gherkin requirements +
+- [x] Write `openspec/specs/template-appmint/spec.md` (Gherkin requirements +
       scenarios reflecting the REAL sections above).
 - [x] Validate spec: `npm run spec:validate`.
-- [x] Create `apps/massive` (copy the section-rich landing app pattern —
-      Aurora; rename package to `@free-react-templates/massive`).
+- [x] Create `apps/appmint` (copy the section-rich landing app pattern —
+      Aurora; rename package to `@free-react-templates/appmint`).
 - [x] TDD: tests first for each section component; run red.
 - [x] Implement components (green) at 100% coverage.
 - [ ] Full gate: typecheck → lint → test:coverage → build → knip → fallow →
       spec:validate.
-- [ ] Push `feat/template-massive`, open PR (source template, preview URL,
+- [ ] Push `feat/template-appmint`, open PR (source template, preview URL,
       design tokens, what differs).
 - [ ] After merge: TEMPLATES.md `[~]` → `[x]` + Surge URL + homepage
       (bookkeeping on main, state D).
@@ -72,8 +72,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/massive/` may name the source designer,
+- **Provenance ban.** No file under `apps/appmint/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/massive/public/CNAME` = `massive.free.componentdock.com`
-  and the package `homepage` = `https://massive.free.componentdock.com`.
+- **Deploy identity.** `apps/appmint/public/CNAME` = `appmint.free.componentdock.com`
+  and the package `homepage` = `https://appmint.free.componentdock.com`.

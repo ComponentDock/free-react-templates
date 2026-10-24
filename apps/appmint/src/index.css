@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Massive brand colors — measured from the reference stylesheet
+  /* Appmint brand colors — measured from the reference stylesheet
      stylesheet:
      primary teal/cyan gradient #00e2d9 → #1193d4 with accents #81ee8e,
      #2deab6, #00d7f2, #00c9fd; accent red #ef494d; dark navy #1a264a;

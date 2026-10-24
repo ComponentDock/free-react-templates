@@ -9,7 +9,7 @@ export function Download() {
     >
       <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
         <h2 className="font-display text-3xl font-bold text-ink sm:text-4xl dark:text-white">
-          Get Download Massive app !
+          Get Download Appmint app !
         </h2>
         <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-gray-600 dark:text-gray-400">
           Rapidiously monetize market-driven web services. Completely synthesize end-to-end models

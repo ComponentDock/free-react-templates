@@ -16,7 +16,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Massive — App Landing Template'
+    document.title = 'Appmint — App Landing Template'
   }, [])
 
   return (

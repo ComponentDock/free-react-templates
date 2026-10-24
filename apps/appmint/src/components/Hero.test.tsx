@@ -7,7 +7,7 @@ describe('Hero', () => {
     render(<Hero />)
 
     const heading = screen.getByRole('heading', { level: 1 })
-    expect(heading.textContent).toMatch(/Welcome To Massive App Store/)
+    expect(heading.textContent).toMatch(/Welcome To Appmint App Store/)
 
     expect(screen.getByRole('link', { name: 'Get App Now' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Discover More' })).toBeInTheDocument()

@@ -29,7 +29,7 @@ export function Navbar() {
           href="#home"
           className="font-display text-2xl font-bold tracking-wide text-teal dark:text-cyan"
         >
-          Massive
+          Appmint
         </a>
 
         <div className="flex items-center gap-3">
