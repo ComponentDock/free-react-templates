@@ -121,6 +121,23 @@ disk, which is the rule CI already applies (`deploy-surge.yml` lists a changed
 app only when `apps/<app>/package.json` exists). If a rename push dies this way
 again, fix the hook — do not `--no-verify` past it.
 
+### Pitfall — the new name may already be a prep spec
+
+`ls apps/` is not enough to clear a candidate name. The prep stream writes
+`openspec/specs/template-<name>/` and `docs/templates/<name>/` for designs that
+have no app yet, so a name can be **reserved without an app**. `git mv a b`
+also **nests** `a` inside `b` when `b` already exists — `git mv
+openspec/specs/template-massive openspec/specs/template-apex` with
+`template-apex/` already present silently produced
+`template-apex/template-massive/` (recoverable with `git reset --hard`, but the
+whole rename pass is lost). Check all three before starting:
+
+```bash
+for n in <candidates>; do test -e apps/$n || test -e openspec/specs/template-$n || test -e docs/templates/$n || echo "$n free"; done
+```
+
+`Apex` was taken exactly that way (a superseded ColorLib Pointer spec).
+
 ## Pitfall — `ColorLib free "X"` escapes an exact-match restore
 
 The provenance restore after a blanket swap has to cover every phrasing the
