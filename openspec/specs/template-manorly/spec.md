@@ -8,7 +8,7 @@ counter row, a filterable project portfolio on a lavender ground, a four-card se
 closes on a red "Services" call-out, a four-card luxury-apartment gallery, three blog teasers, and a
 near-black four-column footer with a newsletter form.
 
-Recreation of the ColorLib **"Dreamrs"** design (https://colorlib.com/wp/template/dreamrs/,
+Recreation of the ColorLib "Dreamrs" design (https://colorlib.com/wp/template/dreamrs/,
 live preview https://preview.colorlib.com/theme/dreamrs/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 

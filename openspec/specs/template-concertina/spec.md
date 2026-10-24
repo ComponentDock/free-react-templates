@@ -9,7 +9,7 @@ page: its title and its plus/minus glyph turn lime (`#72c02c`), every closed row
 `#999`. The body copy is `#888`, the typeface is Roboto. The whole snippet is one band
 padded `7rem` top and bottom.
 
-Recreation of the ColorLib **"Accordion 16"** snippet
+Recreation of the ColorLib "Accordion 16" snippet
 (https://colorlib.com/wp/template/accordion-16/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 

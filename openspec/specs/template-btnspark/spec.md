@@ -25,6 +25,8 @@ Pick Your Color / Social / Dropdown / Group / Checkboxes / Radios.
 `TEMPLATES.md`, the brief and the app all name `-02`, so the spec was the stale
 layer (`docs/docs-source-drift.md`, SPEC-STALE).
 
+- **Source design:** ColorLib "Bootstrap Buttons 02" — https://colorlib.com/wp/template/bootstrap-buttons-02/
+
 ## Source map (live preview, re-read 2026-10-24)
 
 | page | status | bytes | notes |

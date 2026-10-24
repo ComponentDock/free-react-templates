@@ -14,7 +14,7 @@ hover and a 12px `rgba(0,0,0,.2)` "date | read time" meta line — followed by a
 items, "Information" with four arrow links, "Have a Questions?" with address / phone / e-mail, and
 the copyright line.
 
-Recreation of the ColorLib **"Readit"** template
+Recreation of the ColorLib "Readit" template
 (https://colorlib.com/wp/template/readit/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript
 single-page application.
 

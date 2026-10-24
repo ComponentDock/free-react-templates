@@ -11,7 +11,7 @@ chevron at its far right turn lime (`#72c02c`). Closed labels sit in `#999`, pan
 pill-shaped accordion demos, this one has square corners, no row gap and no fill — the list is
 the page.
 
-Recreation of the ColorLib **"Accordion 19"** snippet
+Recreation of the ColorLib "Accordion 19" snippet
 (https://colorlib.com/wp/template/accordion-19/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 

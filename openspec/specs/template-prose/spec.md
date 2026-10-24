@@ -14,7 +14,7 @@ a photograph washed in `#17b978`, an eight-cover "My Other Books" grid with a ho
 author biography with a 120-book pill over the portrait, and a contact band (four light info cards,
 the form on the right, a Google map panel on the left) over a black four-column footer.
 
-Recreation of the ColorLib **"Author"** one-page template
+Recreation of the ColorLib "Author" one-page template
 (https://colorlib.com/wp/template/author/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript
 single-page application.
 

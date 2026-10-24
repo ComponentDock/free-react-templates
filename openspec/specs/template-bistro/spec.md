@@ -10,7 +10,7 @@ three icon captions, a menu mosaic under a dark hover overlay, a "Book A Table" 
 floats on a photo band, three service cards, a subscribe/search band, three blog cards
 whose caption boxes overhang their images, and a footer that repeats the photo band.
 
-Recreation of the ColorLib **"Allfood"** template
+Recreation of the ColorLib "Allfood" template
 (https://colorlib.com/wp/template/allfood/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 

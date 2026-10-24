@@ -8,7 +8,7 @@ CTA, a two-column "Why Choose Us?" block, a counter strip, a white rounded testi
 photograph, and a near-black "Get free Estimate" band whose six-field quote form sits beside two
 location cards — closing on a four-column white footer.
 
-Recreation of the ColorLib **"Logistico"** design (https://colorlib.com/wp/template/logistico/,
+Recreation of the ColorLib "Logistico" design (https://colorlib.com/wp/template/logistico/,
 live preview https://preview.colorlib.com/theme/logistico/) as a React 19 + Vite + Tailwind CSS 4
 
 - TypeScript single-page application.

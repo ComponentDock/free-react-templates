@@ -14,7 +14,7 @@ warning line or the green "Your message was sent, thank you!" for 6.6 seconds. T
 snippet: no navigation, no hero, no footer — and **zero anchors**, so the credit line is the
 recreation's own addition.
 
-Recreation of the ColorLib **"Contact Form 08"** snippet
+Recreation of the ColorLib "Contact Form 08" snippet
 (https://colorlib.com/wp/template/contact-form-08/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 

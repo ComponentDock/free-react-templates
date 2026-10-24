@@ -151,6 +151,41 @@ prep, so it is left to the rename stream.
 * 2 `NO-SOURCE-URL` (`searchhub`, `whiteroom`): the name came from prose and the
   spec cites no source URL at all; quoted in place, no URL invented.
 
+## Regression sweep (measured 2026-10-24f, main `9f8a354d4`)
+
+The batch above was not durable: the **ten preps written after it** re-broke the
+grammar in the same three prose shapes, so `UNSEEN` climbed back 0 → 10 while the
+census still claimed 0. New preps are the axis's real adversary, not old ones.
+
+```
+before: specs=3233 PARSED=3223 RESOLVABLE=10 NO-EVIDENCE=0 flags=10
+after : specs=3233 PARSED=3233 RESOLVABLE=0  NO-EVIDENCE=0 flags=0
+```
+
+| spec | source design | shape | why it was unseen |
+| ---- | ------------- | ----- | ----------------- |
+| `bistro` | Allfood | `quote-bold` | `ColorLib **"Allfood"**` — bold wraps the quotes |
+| `cargonaut` | Logistico | `quote-bold` | `ColorLib **"Logistico"**` |
+| `clasp` | Accordion 19 | `quote-bold` | `ColorLib **"Accordion 19"**` |
+| `concertina` | Accordion 16 | `quote-bold` | `ColorLib **"Accordion 16"**` |
+| `formwell` | Contact Form 08 | `quote-bold` | `ColorLib **"Contact Form 08"**` |
+| `manorly` | Dreamrs | `quote-bold` | `ColorLib **"Dreamrs"**` |
+| `prose` | Author | `quote-bold` | `ColorLib **"Author"**` |
+| `vellum` | Readit | `quote-bold` | `ColorLib **"Readit"**` |
+| `zenith` | Saasify | `quote-bold` | `ColorLib **"Saasify"**` |
+| `btnspark` | Bootstrap Buttons 02 | `insert` | Purpose named no source; one `- **Source design:**` bullet added |
+
+`fix-provenance-grammar.py` handled all ten with no new logic (the shapes were
+already in the fixer). Second run is a byte-identical no-op; heading count
+unchanged in every file; `verify-provenance-grammar-controls.py` 25/25 (8 GATE).
+
+**Why it regressed and how to stop it:** the spec-writing habit that produces
+`**"Name"**` is the prep/implementer templates, not a fixer gap. A spec whose
+first source mention is bold-wrapped is invisible to `audit-naming.mjs` exactly
+like an unquoted one, so the check belongs in `verify-app.sh`'s doc step (or a
+pre-commit hook) — a fixer run only finds it after the fact. Until then: after
+any batch of new preps, re-run this axis before trusting the census.
+
 ## Next axes
 
 1. The 20 `SPEC-ROW-MISMATCH` preps: resolve each against the live preview and

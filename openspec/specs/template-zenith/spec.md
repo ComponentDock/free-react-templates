@@ -16,7 +16,7 @@ initial avatars, and a full-width `from-primary-600 to-primary-800` CTA band. Th
 `#111827` footer — brand column with three square social tiles, three link columns, a newsletter
 field, and a bordered copyright bar.
 
-Recreation of the ColorLib **"Saasify"** template
+Recreation of the ColorLib "Saasify" template
 (https://colorlib.com/wp/template/saasify/) as a React 19 + Vite + Tailwind CSS 4 + TypeScript
 single-page application.
 
