@@ -7,8 +7,8 @@ Regenerate with:
 
 ## What this is
 
-`openspec/specs/template-<name>/` exists for 3228 folders but only 1703 of them
-own an `apps/<name>`. The other **1525** are prep history: a spec (and usually a
+`openspec/specs/template-<name>/` exists for 3234 folders but only 1708 of them
+own an `apps/<name>`. The other **1526** are prep history: a spec (and usually a
 `docs/templates/<name>/` brief) written for a design that shipped under a different
 invented name, or for a design that has no app at all. Nothing here is wasted work —
 it is research that a second prep would otherwise have to redo — but nothing here is
@@ -30,14 +30,14 @@ duplicate from handing out build work for a folder that does not exist.
 (the row links an app, but ownership is the slug MENTION only, or that app cites a
 different slug — a human read is still owed).
 
-## Duplicates — the design shipped under another folder (1477)
+## Duplicates — the design shipped under another folder (1478)
 
 ```
 template-acadex                     oneschool                  -> apps/classroom          (row 2350, banner)
 template-accordion-fifteen          accordion-15               -> apps/foldkit            (row 654, banner)
 template-accordion-fourteen         accordion-14               -> apps/stave              (row 653, unproven)
 template-accordion-seventeen        accordion-17               -> apps/crank              (row 656, banner)
-template-accordion-sixteen          accordion-16               -> apps/concertina         (row 655, unproven)
+template-accordion-sixteen          accordion-16               -> apps/concertina         (row 655, row)
 template-accordion-ten              accordion-10               -> apps/gather             (row 648, banner)
 template-accordion-twelve           accordion-12               -> apps/creel              (row 651, banner)
 template-accordion-twenty           accordion-20               -> apps/jade               (row 659, banner)
@@ -535,7 +535,7 @@ template-formpilot                  colorlib-wizard-21         -> apps/steppr   
 template-formpulse                  contact-form-19            -> apps/formgate           (row 1422, banner)
 template-formrelay                  contact-form-06            -> apps/formlink           (row 1409, banner)
 template-formspark                  contact-form-04            -> apps/formdrop           (row 1407, banner)
-template-formspot                   contact-form-08            -> apps/formwell           (row 1411, unproven)
+template-formspot                   contact-form-08            -> apps/formwell           (row 1411, row)
 template-formstep                   colorlib-wizard-1          -> apps/conjure            (row 848, banner)
 template-formtouch                  contact-form-v20           -> apps/formcast           (row 1436, banner)
 template-formtrail                  colorlib-wizard-9          -> apps/formvane           (row 877, banner)
@@ -631,7 +631,7 @@ template-healthnova                 medi                       -> apps/medflow  
 template-healthplus                 health                     -> apps/vitaheal           (row 2236, banner)
 template-healthpulse                healthcoach                -> apps/vitaflow           (row 1857, banner)
 template-healwave                   medi                       -> apps/medflow            (row 2242, unproven)
-template-hearthly                   spark                      -> apps/spark              (row 1177, unproven)
+template-hearthly                   spark                      -> apps/flint              (row 1177, row)
 template-hearthside                 eatery                     -> apps/tavern             (row 2677, banner)
 template-heirloom                   classic                    -> apps/linnet             (row 1369, banner)
 template-helpdesk                   callcenter                 -> apps/dialpad            (row 2025, banner)
@@ -1043,7 +1043,7 @@ template-rangefinder                photographer               -> apps/photofoli
 template-rankline                   echo                       -> apps/resonance          (row 2782, unproven)
 template-rankpulse                  seogo                      -> apps/seoflow            (row 2786, banner)
 template-reachcraft                 contact-form-v15           -> apps/linewell           (row 1430, banner)
-template-reachpad                   contact-form-08            -> apps/formwell           (row 1411, unproven)
+template-reachpad                   contact-form-08            -> apps/formwell           (row 1411, row)
 template-reachpoint                 contact-form-11            -> apps/formreach          (row 1414, banner)
 template-reachwell                  contact-form-v10           -> apps/formzen            (row 1425, banner)
 template-reap                       multiselect-07             -> apps/topicdrop          (row 831, banner)
@@ -1118,6 +1118,7 @@ template-roundtable                 workshop                   -> apps/seminar  
 template-routebook                  directing                  -> apps/localfinder        (row 1526, banner)
 template-rover                      doglife                    -> apps/houndly            (row 2315, unproven)
 template-ruche                      accordion-11               -> apps/ripples            (row 649, banner)
+template-ruffle                     accordion-19               -> apps/clasp              (row 658, row)
 template-rune                       colorlib-wizard-22         -> apps/arcane             (row 862, banner)
 template-runeform                   colorlib-wizard-9          -> apps/formvane           (row 877, banner)
 template-runemark                   colorlib-wizard-21         -> apps/steppr             (row 861, banner)
@@ -1288,7 +1289,7 @@ template-sprig                      accordion-09               -> apps/stanza   
 template-springboard                startupbusiness            -> apps/venture            (row 2864, banner)
 template-squeakly                   cleanex                    -> apps/tidywash           (row 938, banner)
 template-squeaky                    cleanex                    -> apps/tidywash           (row 938, row)
-template-squeeze                    accordion-16               -> apps/concertina         (row 655, unproven)
+template-squeeze                    accordion-16               -> apps/concertina         (row 655, row)
 template-stagefront                 staging                    -> apps/pediment           (row 1986, banner)
 template-stamina                    endurance                  -> apps/vigor              (row 1842, banner)
 template-startline                  startright                 -> apps/thrive             (row 1183, banner)
@@ -1358,7 +1359,7 @@ template-talently                   careers                    -> apps/jobquest 
 template-taormina                   carousel-14                -> apps/lenslide           (row 723, banner)
 template-tare                       multiselect-19             -> apps/multibox           (row 843, banner)
 template-tarmac                     autoroad                   -> apps/highway            (row 2950, banner)
-template-tarragon                   accordion-16               -> apps/concertina         (row 655, unproven)
+template-tarragon                   accordion-16               -> apps/concertina         (row 655, row)
 template-taskfly                    virtualassistant           -> apps/valet              (row 2099, row)
 template-taskfolio                  work                       -> apps/taskflow           (row 2579, banner)
 template-taskly                     checkbox-09                -> apps/tickpick           (row 741, banner)
@@ -1555,12 +1556,12 @@ template-printcraft    publishingcompany          (no row)
 template-regista       -                          (no row)
 template-reglift       colorlib-regform-5         (no row)
 template-regspot       colorlib-regform-7         (no row)
-template-ruffle        accordion-19               (no row)
 template-scholarkit    eskwela                    (no row)
 template-searchhub     -                          (no row)
 template-skillforge    ezuca                      (no row)
 template-smartpath     edusmart                   (no row)
 template-teachly       edusmart                   (no row)
+template-thermly       airwise                    (no row)
 template-tidypro       cleaningcompany            (no row)
 template-vestibule     modal-02                   (no row)
 ```
