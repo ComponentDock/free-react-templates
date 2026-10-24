@@ -46,6 +46,7 @@ free-react-templates/
 ├── docs/                     # AI context, conventions, contracts, ADRs
 │   ├── naming-audit.md       # apps still reusing a source name + rename recipe
 │   ├── app-fidelity-delta.md # app palette vs the brand colours its prep measured
+│   ├── app-live-tokens.md    # app palette vs the LIVE sheet (third edge, spec-free)
 │   ├── app-fidelity-sheet-only.md # does the reference page render the claimed block?
 │   ├── evidence-cells.md     # do the token tables' counts + selectors re-read?
 │   └── templates/<name>/     # Per-template prep: tasks/todo outline, notes
