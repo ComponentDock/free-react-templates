@@ -47,16 +47,16 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24u, main after PR #1868 — the two `buildream` rows now point at the built `amberline` app, so that design left §2 of `docs/row-multiplicity.md`; the `topgym` rows moved to `stryve` in PR #1866 and are counted out too)
+## Census (re-measured 2026-10-24v, main after PR #1869 — the three `jackco` rows now point at the built `portray` app, so that design left §2 of `docs/row-multiplicity.md`)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,243 |
-| apps                               | 1,714 |
-| `AGREE`                            | 1,707 |
+| specs                              | 3,244 |
+| apps                               | 1,715 |
+| `AGREE`                            | 1,708 |
 | `DRIFT`                            | **3** |
 | `PREP` (spec-only)                 | 1,529 |
-| `ROW-MULTI` apps                   | 30    |
+| `ROW-MULTI` apps                   | 29    |
 | `SLUG-OWNER` subjects              | 6     |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
@@ -91,9 +91,12 @@ re-pointed (`AGREE=1705 DRIFT=3`, apps `1,713`, specs `3,240`, `PREP` 1,527, `RO
 recreates Crossbody — was built as **`stryve`** (PR #1866) and its rows 515 / 1206 / 1883
 re-pointed, and the Buildream design — whose two rows credited `mortar` while that app recreates
 Grunt — was built as **`amberline`** (PR #1868) and its rows 553 / 1339 re-pointed
-(`apps=1714 specs=3243 AGREE=1707 DRIFT=3`, `PREP` 1,529, `ROW-MULTI` 30, `SLUG-OWNER` 6).
-`dreamrs`, `shopmax`, `juli`, `fitnessgym`, `topgym`, `realtors` and `buildream` therefore leave
-`docs/row-multiplicity.md` §2, which now counts **11** designs with no app.
+(`apps=1714 specs=3243 AGREE=1707 DRIFT=3`, `PREP` 1,529, `ROW-MULTI` 30, `SLUG-OWNER` 6), and
+the Jackco design — whose three rows credited `dossier` while that app recreates Alias — was built
+as **`portray`** (PR #1869) and its rows 593 / 2398 / 2523 re-pointed
+(`apps=1715 specs=3244 AGREE=1708 DRIFT=3`, `PREP` 1,529, `ROW-MULTI` 29, `SLUG-OWNER` 6).
+`dreamrs`, `shopmax`, `juli`, `fitnessgym`, `topgym`, `realtors`, `buildream` and `jackco`
+therefore leave `docs/row-multiplicity.md` §2, which now counts **10** designs with no app.
 
 ## The 3 remaining drift cases (adjudicated against the live previews)
 
