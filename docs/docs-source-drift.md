@@ -34,22 +34,25 @@ Every shipped app lands in exactly one bucket:
 Notes: `NEAR-SLUG` (one normalised slug is a prefix of the other — spelling
 variant, not drift), `ROW-MULTI`, `BRIEF-PICKS-OTHER-SIBLING`.
 
-## Measured state (2026-10-24, `origin/main` @ `78f852265`, re-run after the second fix batch)
+## Measured state (2026-10-24, working tree on top of `origin/main` @ `3d09ae788`, re-run after the btnspark spec fix)
 
 `shipped apps read: 1703 · TEMPLATES.md rows: 2857`
 
 | bucket | count |
 | --- | --- |
-| `AGREE` | 1,681 |
+| `AGREE` | 1,682 |
 | `DOCS-STALE` | 17 |
-| `SPEC-STALE` | 1 |
+| `SPEC-STALE` | 0 |
 | `ROW-MULTI` | 3 (`counsel`, `reachout`, `roost` — the known row-multiplicity pairs) |
 | `DOC-SILENT` | 1 (`splitmodal`) |
 
-**18 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
+**17 flags**, down from 27 when the axis shipped: 27 → 26 (`smithy`), → 25 (`buildwell`),
 → **21** (the four citation defects), → **18** (`lenscape`, `craftwork`, `vignette` —
 three briefs that described Bato / “Design” over a Schmidt or Karl spec, re-measured
-from the live sheets 2026-10-24). Controls `15/15` at this figure.
+from the live sheets 2026-10-24), → **17** (`btnspark` — the last SPEC-STALE, its spec
+rewritten from the live `bootstrap-buttons-02` sheet 2026-10-24). Controls `15/15` at this figure.
+`SPEC-STALE` is now an **empty bucket**: no shipped app has a spec that names a design
+its row does not.
 
 ⚠️ **Scope: the axis reads SHIPPED apps only.** `docs/templates/` holds **3,236** briefs while
 `apps/` holds 1,703 — so **1,533 prepped-but-unshipped briefs are unjudged**, and a stale brief
@@ -64,7 +67,7 @@ next axis (spec ↔ brief over `openspec/specs/`, not `apps/`). Adjudicated with
 
 | app | bucket | spec | brief | row | class |
 | --- | --- | --- | --- | --- | --- |
-| `btnspark` | SPEC-STALE | bootstrap-buttons-14 | bootstrap-buttons-02 | bootstrap-buttons-02 | spec-side |
+| `btnspark` | ~~SPEC-STALE~~ **FIXED** | ~~bootstrap-buttons-14~~ bootstrap-buttons-02 | bootstrap-buttons-02 | bootstrap-buttons-02 | spec-side — spec rewritten from the live `-02` sheet 2026-10-24 |
 | `buildwell` | ~~DOCS-STALE~~ **FIXED** | celt | ~~balay~~ celt | celt | design drift — brief rewritten from the live Celt sheet 2026-10-24 |
 | `captura` | DOCS-STALE | halen | bato | halen | design drift |
 | `craftwork` | ~~DOCS-STALE~~ **FIXED** | schmidt | ~~design~~ schmidt | schmidt | design drift — brief re-measured from the live Schmidt sheet 2026-10-24 |
@@ -110,9 +113,18 @@ Classes:
   `medical` cites the category slug `medical-wordpress-themes` (wp 301) for `medical`;
   `soundbite` cites the demo folder `hustlehour` (theme 200) for the article slug
   `the-hustle-hour` (wp 200). These are one-line fixes, no rewrite.
-- **spec-side (1)** — `btnspark`: spec says `bootstrap-buttons-14`, row + brief say
-  `bootstrap-buttons-02`, and the app paints Bootstrap's default `#0d6efd` set
-  (the `-02` brief's palette). Fix the spec.
+- **spec-side (1, fixed 2026-10-24)** — `btnspark`: the spec said
+  `bootstrap-buttons-14`, row + brief say `bootstrap-buttons-02`, and the app
+  paints Bootstrap's default `#0d6efd` set (the `-02` family's palette).
+  Rewritten from the live `-02` sheet: preview 200 / 51,199 B (`<title>`
+  "Button 07"), `css/style.css` 30,764 B sha `4226c497…`, archive 200 /
+  110,958 B. The design is a bare four-colour button swatch (coral `#ec8f6a`,
+  sage `#8bbabb`, gold `#e2c275`, mauve `#b96b9f`, Poppins, 5px/40px radii,
+  45px white icon panels) with **no navbar, hero or footer**; `-14` is a
+  different design ("Button #04", violet `#5635ea` / `#a15bf0` / cyan
+  `#32c5f6`). The app's Bootstrap-default palette and its invented
+  Navbar/Hero/Playground are recorded as `## App deltas (as shipped)` in the
+  spec — the app is not touched.
 
 ## Guards, and the four extraction traps this axis hit
 
@@ -153,9 +165,14 @@ Classes:
    (`the-hustle-hour` wp 200 as the design, `theme/hustlehour/` 200 as the demo folder,
    `wp/template/hustlehour/` 404). All four needed the labelled `Source slug:` tier —
    the axes read `ColorLib slug:` as no label at all.
-4. 20 remaining design-drift briefs, one per run, each with a live re-read of the
+4. 17 remaining design-drift briefs, one per run, each with a live re-read of the
    spec's slug (the `-24f` rewrite queue overlaps: `bistro`, `concertina`,
    `formwell`, `prose`, `vellum`, `zenith` are spec-side there).
-5. `btnspark` — spec slug correction (`bootstrap-buttons-02`), then re-run this
-   axis to confirm 21 → 20.
+5. ~~`btnspark`~~ — spec rewritten from the live `bootstrap-buttons-02` sheet
+   2026-10-24 (preview 200 / 51,199 B, `<title>` "Button 07"; `css/style.css`
+   30,764 B sha `4226c497…`; archive 200 / 110,958 B; 72 `<button>` + 12 dead
+   anchors; no nav/hero/footer). The old claim (`-14`, `#4f46e5` / `#7c3aed`)
+   described a **different** design — `-14` opens with "Button #04" and paints
+   violet `#5635ea` / `#a15bf0` / cyan `#32c5f6` / green `#48da79`. Bucket
+   `SPEC-STALE` is now empty (18 → 17).
 6. **Next axis:** spec ↔ brief over `openspec/specs/` (the 1,533 unshipped briefs).
