@@ -13,9 +13,19 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Justlaw → Lexon (2026-10-24g)
+
+**7 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/expo`, `apps/nurture`, `apps/oraxol`, `apps/pawpal`, `apps/petsitting`,
+`apps/petvet`, `apps/unioncorp`), plus `apps/itkol`, which a name-only test still
+cannot see. `apps/justlaw` → `lexon` cleared the second of the nine visible
+violations; the source name survives only in the spec's `ColorLib "Justlaw"`
+provenance line and in the reference's own colorlib.com URLs, which the token
+evidence quotes verbatim.
+
 ## State after Mosh → Motif (2026-10-24f)
 
-**8 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+**8 apps reused their source name** (`node scripts/audit-naming.mjs`:
 `apps/expo`, `apps/justlaw`, `apps/nurture`, `apps/oraxol`, `apps/pawpal`,
 `apps/petsitting`, `apps/petvet`, `apps/unioncorp`), plus `apps/itkol`, which a
 name-only test still cannot see. `apps/mosh` → `motif` cleared the first of the
@@ -62,7 +72,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
 `massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
-`mosh` → `motif` (#1840).
+`mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841).
 
 | app             | source design |
 | --------------- | ------------- |

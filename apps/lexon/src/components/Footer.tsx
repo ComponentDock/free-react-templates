@@ -23,7 +23,7 @@ export function Footer() {
         {/* Logo & description */}
         <div>
           <a href="#home" className="font-display text-2xl font-bold tracking-wide text-white">
-            Justlaw
+            Lexon
           </a>
           <p className="mt-4 text-sm leading-relaxed">
             Dedicated legal professionals committed to fighting for justice with integrity and

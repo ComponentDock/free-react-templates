@@ -1,6 +1,6 @@
 ---
-name: justlaw
-template: Justlaw
+name: lexon
+template: Lexon
 colorlib:
   slug: justlaw
   url: https://colorlib.com/wp/template/justlaw/
@@ -9,11 +9,15 @@ category: Lawyers
 status: in-progress
 ---
 
-# Template: Justlaw (Lawyer)
+# Template: Lexon (Lawyer)
 
 ## Purpose
 
-Justlaw is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib "Justlaw" design (https://colorlib.com/wp/template/justlaw/).
+Lexon is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib "Justlaw" design (https://colorlib.com/wp/template/justlaw/).
+
+The recreation ships as **Lexon** (`apps/lexon`, `@free-react-templates/lexon`,
+`https://lexon.free.componentdock.com`). The source title survives only in this
+provenance line, `TEMPLATES.md` and the PR — never in app source.
 
 ## Design tokens
 
@@ -78,7 +82,7 @@ The template SHALL display three practice area cards (Vehicle Accident, Health L
 
 ### Requirement: About section with stats
 
-The template SHALL display an "About Just Law" section with description text, counter stats (250+ Happy Clients, 920+ Winning Cases), and overlapping images.
+The template SHALL display an "About Lexon" section with description text, counter stats (250+ Happy Clients, 920+ Winning Cases), and overlapping images.
 
 #### Scenario: About section shows stats
 
@@ -167,7 +171,7 @@ The template SHALL display a 4-column footer (logo + description + social, Compa
 ### Requirement: No source-site references in the app
 
 The application SHALL NOT carry the source design's provenance: no file under
-`apps/justlaw/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
+`apps/lexon/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the
 source template's name — code, comments, CSS, markup, metadata and filenames
 included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where
 the source paints its own credit line, the recreation SHALL credit Component
@@ -176,7 +180,7 @@ Dock (`https://www.componentdock.com/`) instead.
 #### Scenario: Clean provenance
 
 - **GIVEN** the template is implemented from this spec
-- **WHEN** every non-test file under `apps/justlaw/` is inspected
+- **WHEN** every non-test file under `apps/lexon/` is inspected
 - **THEN** none SHALL contain the source site's name, domain or a URL pointing at it
 - **AND** the footer credit SHALL link to `https://www.componentdock.com/`
 

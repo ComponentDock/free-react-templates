@@ -5,7 +5,7 @@ import { About } from './About'
 describe('About', () => {
   it('renders the section heading', () => {
     render(<About />)
-    expect(screen.getByRole('heading', { name: /about just law/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /about lexon/i })).toBeInTheDocument()
   })
 
   it('renders the description text', () => {

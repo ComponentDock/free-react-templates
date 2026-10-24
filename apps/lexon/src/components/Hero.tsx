@@ -6,7 +6,7 @@ export function Hero() {
       id="home"
       className="relative flex min-h-[500px] items-center bg-cover bg-center bg-no-repeat md:min-h-[700px]"
       style={{
-        backgroundImage: `url('https://picsum.photos/seed/justlaw-hero/1920/1080')`,
+        backgroundImage: `url('https://picsum.photos/seed/lexon-hero/1920/1080')`,
       }}
     >
       <div className="absolute inset-0 bg-black/50" />

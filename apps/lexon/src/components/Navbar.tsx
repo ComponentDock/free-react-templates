@@ -16,7 +16,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 bg-header-bg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8">
         <a href="#home" className="font-display text-2xl font-bold tracking-wide text-white">
-          Justlaw
+          Lexon
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">

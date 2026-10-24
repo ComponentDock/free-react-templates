@@ -1,19 +1,19 @@
-# Justlaw — Implementation Tasks
+# Lexon — Implementation Tasks
 
-Source design: **Justlaw** (`https://colorlib.com/wp/template/justlaw/`) → recreation name **justlaw**. Shipped at https://justlaw.free.componentdock.com.
+Source design: **Justlaw** (`https://colorlib.com/wp/template/justlaw/`) → recreation name **lexon**. Shipped at https://lexon.free.componentdock.com.
 
-Scope: Justlaw is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).
+Scope: Lexon is a lawyer and legal-firm landing page with a consultation hero, practice areas, tabbed case studies, testimonials, team members and stats. It recreates the ColorLib **Justlaw** design (https://colorlib.com/wp/template/justlaw/).
 
 ## Component breakdown
 
-Render order as composed in `apps/justlaw/src/App.tsx`:
+Render order as composed in `apps/lexon/src/App.tsx`:
 
 ### 1. Navbar
 - The template SHALL display a sticky dark navbar with logo, navigation links (Home, Services, About, Case Studies, Blog), and a "Free Consultation" CTA button. A mobile hamburger menu SHALL toggle navigation on small screens.
 - Scenario — Desktop navbar renders all links:
   - **GIVEN** the page loads on a desktop viewport
   - **WHEN** I look at the top navigation
-  - **THEN** I see the logo "Justlaw", five nav links, and a "Free Consultation" button
+  - **THEN** I see the logo "Lexon", five nav links, and a "Free Consultation" button
 - Scenario — Mobile menu toggles on button click:
   - **GIVEN** the page loads on a mobile viewport
   - **WHEN** I tap the hamburger menu button
@@ -34,7 +34,7 @@ Render order as composed in `apps/justlaw/src/App.tsx`:
   - **THEN** I see three cards with titles and descriptions
 
 ### 4. About
-- The template SHALL display an "About Just Law" section with description text, counter stats (250+ Happy Clients, 920+ Winning Cases), and overlapping images.
+- The template SHALL display an "About Lexon" section with description text, counter stats (250+ Happy Clients, 920+ Winning Cases), and overlapping images.
 - Scenario — About section shows stats:
   - **GIVEN** the page loads
   - **WHEN** I scroll to the about section
@@ -96,15 +96,15 @@ Render order as composed in `apps/justlaw/src/App.tsx`:
 
 ### Cross-cutting requirements
 
-- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/justlaw/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
-  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/justlaw/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
+- **No source-site references in the app** — The application SHALL NOT carry the source design's provenance: no file under `apps/lexon/` may contain "ColorLib"/"Colorlib", a colorlib.com URL, or the source template's name — code, comments, CSS, markup, metadata and filenames included. Provenance lives only in this spec, `TEMPLATES.md` and the PR; where the source paints its own credit line, the recreation SHALL credit Component Dock (`https://www.componentdock.com/`) instead.
+  - Scenario — Clean provenance: **GIVEN** the template is implemented from this spec; **WHEN** every non-test file under `apps/lexon/` is inspected; **THEN** none SHALL contain the source site's name, domain or a URL pointing at it; **AND** the footer credit SHALL link to `https://www.componentdock.com/`; [ ] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR
 
 ## Verification
 
-- [x] `apps/justlaw` ships on https://justlaw.free.componentdock.com
+- [x] `apps/lexon` ships on https://lexon.free.componentdock.com
 - [x] Typecheck / lint / tests / build pass at the repo gate
 - [x] Section order and copy match the design notes
-- [x] No source-designer name, source URL or source template name under `apps/justlaw/`
+- [x] No source-designer name, source URL or source template name under `apps/lexon/`
 - [x] Footer links Component Dock
 
 ## Delivery contract (repo rules — non-negotiable)
@@ -115,8 +115,8 @@ Render order as composed in `apps/justlaw/src/App.tsx`:
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/justlaw/` may name the source designer,
+- **Provenance ban.** No file under `apps/lexon/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/justlaw/public/CNAME` = `justlaw.free.componentdock.com`
-  and the package `homepage` = `https://justlaw.free.componentdock.com`.
+- **Deploy identity.** `apps/lexon/public/CNAME` = `justlaw.free.componentdock.com`
+  and the package `homepage` = `https://lexon.free.componentdock.com`.

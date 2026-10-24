@@ -6,7 +6,7 @@ import { Navbar } from './Navbar'
 describe('Navbar', () => {
   it('renders logo and navigation links', () => {
     render(<Navbar />)
-    expect(screen.getByText('Justlaw')).toBeInTheDocument()
+    expect(screen.getByText('Lexon')).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /home/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /services/i })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: /about/i })).toBeInTheDocument()

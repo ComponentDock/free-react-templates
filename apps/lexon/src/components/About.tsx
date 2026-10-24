@@ -4,7 +4,7 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-2 lg:px-8">
         <div>
           <h2 className="mb-8 font-display text-4xl font-bold text-navy md:text-5xl">
-            About Just Law
+            About Lexon
           </h2>
           <p className="mb-10 leading-relaxed text-smoke">
             We are a dedicated team of legal professionals committed to fighting for justice. With
@@ -26,13 +26,13 @@ export function About() {
 
         <div className="relative">
           <img
-            src="https://picsum.photos/seed/justlaw-about-front/600/400"
+            src="https://picsum.photos/seed/lexon-about-front/600/400"
             alt="Lawyer at desk"
             className="relative z-10 w-full rounded-lg shadow-lg"
             loading="lazy"
           />
           <img
-            src="https://picsum.photos/seed/justlaw-about-back/600/400"
+            src="https://picsum.photos/seed/lexon-about-back/600/400"
             alt="Courtroom"
             className="absolute -bottom-6 -right-6 z-0 w-2/3 rounded-lg shadow-md opacity-80"
             loading="lazy"

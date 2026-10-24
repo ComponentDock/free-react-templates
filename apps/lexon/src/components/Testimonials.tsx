@@ -38,7 +38,7 @@ export function Testimonials() {
               </p>
               <div className="flex flex-col items-center gap-3">
                 <img
-                  src={`https://picsum.photos/seed/justlaw-${item.name.toLowerCase().replace(/\s+/g, '-')}/80/80`}
+                  src={`https://picsum.photos/seed/lexon-${item.name.toLowerCase().replace(/\s+/g, '-')}/80/80`}
                   alt={item.name}
                   className="h-16 w-16 rounded-full object-cover"
                   loading="lazy"

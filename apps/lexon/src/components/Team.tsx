@@ -2,17 +2,17 @@ const teamMembers = [
   {
     name: 'Jhon Smith',
     title: 'Senior Lawyer',
-    image: 'https://picsum.photos/seed/justlaw-team1/400/400',
+    image: 'https://picsum.photos/seed/lexon-team1/400/400',
   },
   {
     name: 'Emma Bunton',
     title: 'Professional Lawyer',
-    image: 'https://picsum.photos/seed/justlaw-team2/400/400',
+    image: 'https://picsum.photos/seed/lexon-team2/400/400',
   },
   {
     name: 'Bunton Jonathon',
     title: 'Top Rated Lawyer',
-    image: 'https://picsum.photos/seed/justlaw-team3/400/400',
+    image: 'https://picsum.photos/seed/lexon-team3/400/400',
   },
 ] as const
 

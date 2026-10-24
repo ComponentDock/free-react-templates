@@ -14,7 +14,7 @@ export function ConsultationForm() {
       id="consultation"
       className="relative bg-cover bg-center bg-no-repeat py-24"
       style={{
-        backgroundImage: `url('https://picsum.photos/seed/justlaw-contact-bg/1920/800')`,
+        backgroundImage: `url('https://picsum.photos/seed/lexon-contact-bg/1920/800')`,
       }}
     >
       <div className="absolute inset-0 bg-navy/80" />
