@@ -25,6 +25,11 @@ nine visible violations; the source name survives only in the spec's
 `jobboard` and `medical` are back in the count because the spec↔row axis
 re-pointed their specs at the rows they actually ship.
 
+The merge's Surge publish was quota-deferred (`Aborted - Rate limited. (account).
+... try again in 2 hours.`); the per-app gate in the same job passed. `sightly`
+is queued in `/tmp/surge-pending.txt` for `redeploy-resume.sh` and the nightly
+fleet audit.
+
 ## State after Justlaw → Lexon (2026-10-24g)
 
 **7 apps reuse their source name** (`node scripts/audit-naming.mjs`:
@@ -84,7 +89,8 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
 `massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
-`mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`.
+`mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`
+(#1842).
 
 | app              | source design |
 | ---------------- | ------------- |
