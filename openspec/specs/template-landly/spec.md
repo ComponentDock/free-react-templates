@@ -55,11 +55,11 @@ Template by Colorlib</title>`) — no subpath quirk (unlike the
 > over the dark hero photo (modern interior with fireplace), green
 > `$1,570,000` price, white "Beautiful House In Australia" headline, address
 > with pin, 2911 Sq Ft / 2 / 2 specs, green "Learn More" button, and the
-> solid green search bar overlapping the hero bottom with "For Rent" (white
-> bg / green text, active) and "For Sale" (green bg / white text) tabs and
-> white form fields + black "Submit" button. The screenshot cuts off right
-> after the filter bar; the live DOM is authoritative for the sections
-> below the fold.
+> solid green search bar overlapping the hero bottom with "For Rent" (active:
+> brand-green bg / white text, per the stylesheet's `.active` rule) and "For
+> Sale" (white bg / green text) tabs and white form fields + black "Submit"
+> button. The screenshot cuts off right after the filter bar; the live DOM is
+> authoritative for the sections below the fold.
 
 ## Design reference (replication findings)
 
@@ -318,8 +318,11 @@ edge with For Rent / For Sale tabs and the reference search form.
 - **WHEN** the user views it
 - **THEN** the bar SHALL have a solid `#91b029` background and overlap the
   hero's bottom edge
-- **AND** two tabs SHALL render: **For Rent** (active — white background,
-  green text) and **For Sale** (green background, white text)
+- **AND** two tabs SHALL render: **For Rent** (active — brand-green
+  background, white text) and **For Sale** (white background, brand-green
+  text), matching the reference stylesheet's `.active` rule and its computed
+  styles (measured: `rgb(145,176,41)`/white for the active tab,
+  white/`rgb(145,176,41)` for the inactive one)
 - **AND** clicking a tab SHALL switch the active state and show its form
   pane
 
