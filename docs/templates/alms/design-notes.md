@@ -47,7 +47,8 @@ border and the sheet's `0 5px 20px -5px rgba(0,0,0,.5)` shadow.
 
 1. Navbar — absolute over the hero, transparent on desktop, `#000` on mobile,
    wide-tracked uppercase wordmark, seven links, hamburger panel.
-2. Hero — 70vh cover photo, 40 % black scrim, centred 70px light-weight
+2. Hero — 70vh cover photo, black scrim at 50 % (the sheet's 40 % raised so the
+   picsum placeholder keeps white text legible), centred 70px light-weight
    headline, 50px white-outline play circle with a yellow "Watch Video" label.
 3. Counter + introduction — left yellow panel (`padding: 50px`, black ink,
    "Served Over", 70px figure, "Children in 150 Countries", white square

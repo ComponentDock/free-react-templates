@@ -43,9 +43,10 @@ TypeScript.
      transparent on desktop, `#000` on mobile; wordmark + Home · How It Works ·
      Donate · Gallery · Blog · About · Contact; hamburger below 992px.
   2. `div.block-31` → `div.block-30.block-30-sm` — 70vh cover-photo carousel
-     (single slide in the DOM), `:before` black scrim at 40 % opacity, centred
-     `.heading` at 70px, and a `Watch Video` play link (50px circle, 1px white
-     border, yellow label).
+     (single slide in the DOM), `:before` black scrim at 40 % opacity (the
+     recreation uses 50 % so the picsum placeholder keeps the white headline
+     legible), centred `.heading` at 70px, and a `Watch Video` play link (50px
+     circle, 1px white border, yellow label).
   3. `div.site-section.section-counter` — two columns: left `block-48` **yellow
      panel** (`padding: 50px`, black text, "Served Over", 70px counter
      `1,321,901`, "Children in 150 Countries", white square "View Our Program"
