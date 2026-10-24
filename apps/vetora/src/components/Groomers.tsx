@@ -19,7 +19,7 @@ export function Groomers() {
               className="rounded-2xl bg-white p-6 text-center shadow-sm dark:bg-gray-800"
             >
               <img
-                src={`https://picsum.photos/seed/petvet-groomer-${index + 1}/300/300`}
+                src={`https://picsum.photos/seed/vetora-groomer-${index + 1}/300/300`}
                 alt={`Portrait of ${groomer.name}`}
                 className="mx-auto h-32 w-32 rounded-full object-cover"
               />

@@ -48,7 +48,7 @@
 - [x] **Pawpal** — [colorlib](https://colorlib.com/wp/template/pawpal/) · [pawpal](https://pawpal.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pawpal-template-1770211334322.jpg)
 - [x] **Petcare** — [colorlib](https://colorlib.com/wp/template/petcare/) · [pawly](https://pawly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petcare-free-template.jpg)
 - [x] **Petsitting** — [colorlib](https://colorlib.com/wp/template/petsitting/) · [petsitting](https://petsitting.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petsitting-free-template.jpg)
-- [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://petvet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
+- [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [vetora](https://vetora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [x] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · [vetly](https://vetly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)
 
 ## App Landing Page (35)
@@ -1128,7 +1128,7 @@
 - [x] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg) · [gastronome](https://gastronome.free.componentdock.com)
 - [x] **Persuit** — [colorlib](https://colorlib.com/wp/template/persuit/) · [modista](https://modista.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/persuit-free-template.jpg)
 - [x] **Pestcontrol** — [colorlib](https://colorlib.com/wp/template/pestcontrol/) · [bugguard](https://bugguard.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pestcontrol-colorlib-template.jpg)
-- [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [petvet](https://petvet.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
+- [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [vetora](https://vetora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [x] **Pexcon** — [colorlib](https://colorlib.com/wp/template/pexcon/) · [pexflow](https://pexflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexcon-free-template.jpg)
 - [x] **Pexman** — [colorlib](https://colorlib.com/wp/template/pexman/) · [pipekit](https://pipekit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexman-colorlib-template.jpg)
 - [x] **Pharma** — [colorlib](https://colorlib.com/wp/template/pharma/) · [elixir](https://elixir.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pharma-free-template.jpg)

@@ -33,7 +33,7 @@ export function Blog() {
               className="overflow-hidden rounded-2xl bg-white shadow-sm dark:bg-gray-800"
             >
               <img
-                src={`https://picsum.photos/seed/petvet-blog-${index + 1}/480/280`}
+                src={`https://picsum.photos/seed/vetora-blog-${index + 1}/480/280`}
                 alt=""
                 className="h-44 w-full object-cover"
               />

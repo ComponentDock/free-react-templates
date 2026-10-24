@@ -6,7 +6,7 @@ describe('Services', () => {
   it('shows the eyebrow, heading, CTA, stats, and offered services checklist', () => {
     render(<Services />)
 
-    expect(screen.getByText('Welcome to Petvet')).toBeInTheDocument()
+    expect(screen.getByText('Welcome to Vetora')).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { name: 'We Are Best Agency For Your Pets' }),
     ).toBeInTheDocument()

@@ -25,7 +25,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="text-xl font-black text-white">
-              Petvet<span className="text-brand"> Pet Care</span>
+              Vetora<span className="text-brand"> Pet Care</span>
             </h3>
             <p className="mt-5 max-w-xs text-sm font-medium leading-relaxed">
               Far far away, behind the word mountains, far from the countries Vokalia and
@@ -75,7 +75,7 @@ export function Footer() {
         </div>
         <div className="mt-12 flex flex-col items-center justify-between gap-6 border-t border-white/10 pt-8 sm:flex-row">
           <p className="text-sm font-medium">
-            Copyright © {new Date().getFullYear()} Petvet. All rights reserved.
+            Copyright © {new Date().getFullYear()} Vetora. All rights reserved.
           </p>
           <SocialLinks />
         </div>

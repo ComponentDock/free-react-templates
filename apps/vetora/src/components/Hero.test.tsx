@@ -6,7 +6,7 @@ describe('Hero', () => {
   it('shows the brand eyebrow, headline, appointment CTA, and phone number', () => {
     const { container } = render(<Hero />)
 
-    expect(screen.getByText('Petvet Pet Care')).toBeInTheDocument()
+    expect(screen.getByText('Vetora Pet Care')).toBeInTheDocument()
     expect(screen.getByRole('heading', { level: 1 }).textContent).toContain(
       'The Kind of Care Your Pets Deserve',
     )
@@ -21,6 +21,6 @@ describe('Hero', () => {
 
     const image = container.querySelector('img')
     expect(image).not.toBeNull()
-    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/petvet-hero/)
+    expect(image?.getAttribute('src')).toMatch(/picsum\.photos\/seed\/vetora-hero/)
   })
 })
