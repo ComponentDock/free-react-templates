@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Scholarly brand colors — from the ColorLib "Education Wordpress Themes"
-     screenshot analysis:
+  /* Scholarly brand colors — measured from the reference screenshot:
      a university/education theme with a dark navy top bar,
      green accent (#4CAF50), white navbar, and hero with image overlay. */
   --color-primary-50: #e8f5e9;
@@ -30,7 +29,7 @@
   --color-ink: #222222;
 
   /* Playfair Display (headings) + Roboto (body) via Google Fonts <link>
-     in index.html — matching the ColorLib font pairing. */
+     in index.html — matching the reference font pairing. */
   --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
   --font-display: 'Playfair Display', ui-serif, Georgia, serif;
 }

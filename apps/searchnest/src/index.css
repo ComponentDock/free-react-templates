@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Searchnest brand palette — recreated from the ColorLib Search 14 template
+  /* Searchnest brand palette — measured from the reference design
      (peach gradient, gold CTA #f0c75e, neutral inputs). */
   --color-searchnest-peach-start: #f9e4d4;
   --color-searchnest-peach-end: #f5d6cc;

@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Shingle brand palette — recreated from the ColorLib "Roofing" design.
+  /* Shingle brand palette — measured from the reference design.
      Primary blue #007bff, gold accent #d9ba2b, dark wrap #202020,
      navbar white #fff, body text gray, headings rgba(0,0,0,0.8). */
 

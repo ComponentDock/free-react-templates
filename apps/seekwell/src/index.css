@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Seekwell brand palette — recreated from the ColorLib Search 18 template
+  /* Seekwell brand palette — measured from the reference design
      (dark card on beach sunset, purple CTA #6c63ff, white inputs). */
   --color-seekwell-card: rgba(20, 20, 40, 0.88);
   --color-seekwell-purple: #6c63ff;
