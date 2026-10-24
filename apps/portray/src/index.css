@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+/* Portray palette — measured from the reference stylesheet and its computed
+   styles: neon green #01ff56 (eyebrows, bar fills, expertise box, quote band,
+   footer ground), band green #5aff80 (hero band and sticky header),
+   hover green #00e64d (nav hover only), ink #150303 (every text run, buttons,
+   dividers at 20% and 40%), body grey #656565, "at" grey #928888, hairline
+   #e2e2e2. Type: Shippori Mincho (headings + wordmark) over Chivo (body, nav,
+   sublines, quote). Shape language: square (0 radius) buttons and inputs; the
+   only circles are the 50px social buttons, the 40px back-to-top control and
+   the hero portrait disc. Rhythm: 120px section padding (100 / 70 mobile),
+   900px hero, 662px quote band. */
+@theme {
+  --color-neon: #01ff56;
+  --color-band: #5aff80;
+  --color-hover: #00e64d;
+  --color-ink: #150303;
+  --color-body: #656565;
+  --color-muted: #928888;
+  --color-hair: #e2e2e2;
+  --color-page: #ffffff;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Shippori Mincho', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  /* The ink colour sits on the page root, not on `p` alone. */
+  body {
+    background: #ffffff;
+    color: #150303;
+    font-family: 'Chivo', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #150303;
+    font-family: 'Shippori Mincho', ui-serif, Georgia, serif;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  ::selection {
+    background: #01ff56;
+    color: #150303;
+  }
+  :focus-visible {
+    outline: 2px solid #150303;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}

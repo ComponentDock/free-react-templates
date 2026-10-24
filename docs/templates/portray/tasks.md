@@ -118,3 +118,17 @@ first commit, and re-mark them with the live URL after merge. `dossier` is not
 yours — it stays credited to ColorLib **Alias**. Provenance (slug, ColorLib
 links) lives only in the spec, `TEMPLATES.md` and the PR; `apps/portray` must
 contain no `colorlib` string.
+
+## Delivered (`feat/template-portray`)
+
+| Item | Result |
+|---|---|
+| Components | `Header` (absolute → sticky), `Hero`, `About` (skill bars), `Expertise`, `Timeline` (shared by Experience + Education), `QuoteBand`, `Gallery` (5 tiles + lightbox), `Footer` (validating form), `BackToTop` |
+| Tests | 35 across 10 files; **100%** statements / branches / functions / lines (123/63/50/113) |
+| Gate | `scripts/verify-app.sh portray` green — typecheck, oxlint (0 findings), coverage, `vite build` (275 kB JS / 27.5 kB CSS) |
+| Render at 1440 | scrollWidth 1440 = clientWidth (no overflow), document 5,852px (source 6,017), hero `#5AFF80` 900px, footer `#01FF56` 880px, h1 80/96 Shippori −2px, sticky header `0 10px 15px rgba(25,25,25,.1)` on `#5AFF80`, back-to-top 40px |
+| Render at 390 | scrollWidth 390 = clientWidth (the source's 9px overflow is **not** reproduced), document 6,355px, h1 45px, portrait + disc hidden, `MENU +` toggle |
+| Delta | nav carries five in-page links (Home · About · Expertise · Portfolio · Contact) instead of a `Blog` label over a submenu of pages that this one-page recreation does not ship — documented in the spec |
+| Tokens | neon `#01ff56`, band `#5aff80`, hover `#00e64d`, ink `#150303`, body `#656565`, "at" `#928888`, hair `#e2e2e2`; Chivo + Shippori Mincho via one Google Fonts link |
+| Imagery | `picsum.photos/seed/portray-*` only (portrait, desk band, quote photo, five tiles) |
+| Attribution | footer links `https://www.componentdock.com/` as "Component Dock"; `git grep -i colorlib apps/portray` = 0 |
