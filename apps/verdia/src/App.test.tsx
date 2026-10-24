@@ -6,7 +6,7 @@ describe('App', () => {
   it('renders all major sections', () => {
     render(<App />)
 
-    expect(screen.getByText('Medical')).toBeInTheDocument()
+    expect(screen.getByText('Verdia')).toBeInTheDocument()
     expect(screen.getByText('We Care for Your Health Every Moment')).toBeInTheDocument()
     expect(screen.getByText('Servicing Hours')).toBeInTheDocument()
     expect(screen.getByText('Book an Appointment')).toBeInTheDocument()
@@ -19,6 +19,6 @@ describe('App', () => {
 
   it('sets the document title', () => {
     render(<App />)
-    expect(document.title).toBe('Medical — Healthcare Clinic Template')
+    expect(document.title).toBe('Verdia — Healthcare Clinic Template')
   })
 })

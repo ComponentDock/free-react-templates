@@ -1,7 +1,8 @@
-# Medical (Colorlib Medical Wordpress Themes) — Tasks & Design Notes
+# Verdia (ColorLib "Medical") — Tasks & Design Notes
 
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
-> Implementation ships later on `feat/template-medical`.
+> Implementation shipped; the app was renamed to `verdia` on 2026-10-24j
+> (`feat/rename-medical-verdia`).
 
 ## Design notes
 
@@ -23,13 +24,14 @@
 - **Design tokens:** brand green **#69be00** + dark **#222222** text; light
   **#f9f9ff** sections; font **Poppins** via Google Fonts; green filled
   uppercase buttons; FontAwesome icons (recreated with lucide-react).
-- **Recreation name:** Medical. App folder `apps/medical`, package
-  `@free-react-templates/medical`.
+- **Recreation name:** **Verdia** (renamed 2026-10-24j from `medical`, which
+  reused the source slug — AGENTS.md rule 5). App folder `apps/verdia`, package
+  `@free-react-templates/verdia`.
 - **Design approach:** light theme with green accents; banner = seeded
   picsum photo + headline; appointment band; facilities cards; services
   with lucide icons; consultant cards with initials avatars; feedback band;
   blog cards with seeded photos; footer with link columns; all images
-  picsum-seeded (`picsum.photos/seed/medical-N/w/h`); Google Fonts via
+  picsum-seeded (`picsum.photos/seed/verdia-N/w/h`); Google Fonts via
   `<link>`.
 - Reuse `packages/ui` (Button, ButtonLink, Card, Badge, cn) — do NOT
   duplicate components.
@@ -39,10 +41,10 @@
 
 ## Tasks
 
-- [ ] Create branch `feat/template-medical` from latest origin/main.
-- [ ] Mark Medical `[~]` in TEMPLATES.md on the branch.
-- [ ] Refine spec with any additional replication findings (openspec/specs/template-medical/spec.md).
-- [ ] Scaffold `apps/medical` (copy simplest multi-section app, rename package to `@free-react-templates/medical`).
+- [ ] Create branch `feat/template-verdia` from latest origin/main.
+- [ ] Mark the row `[~]` in TEMPLATES.md on the branch.
+- [ ] Refine spec with any additional replication findings (openspec/specs/template-verdia/spec.md).
+- [ ] Scaffold `apps/verdia` (copy simplest multi-section app, rename package to `@free-react-templates/verdia`).
 - [ ] Write tests first (TDD, red phase): Navbar, banner, appointment,
       facilities, services, consultants, feedback, blog, footer + dark mode.
 - [ ] Implement components using `packages/ui` + `cn()`, picsum-seeded
@@ -60,8 +62,8 @@
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/medical/` may name the source designer,
+- **Provenance ban.** No file under `apps/verdia/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/medical/public/CNAME` = `medical.free.componentdock.com`
-  and the package `homepage` = `https://medical.free.componentdock.com`.
+- **Deploy identity.** `apps/verdia/public/CNAME` = `verdia.free.componentdock.com`
+  and the package `homepage` = `https://verdia.free.componentdock.com`.

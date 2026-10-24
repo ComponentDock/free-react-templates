@@ -13,7 +13,7 @@ import { Footer } from './components/Footer'
 
 export function App() {
   useEffect(() => {
-    document.title = 'Medical — Healthcare Clinic Template'
+    document.title = 'Verdia — Healthcare Clinic Template'
   }, [])
 
   return (

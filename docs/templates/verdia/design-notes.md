@@ -1,19 +1,20 @@
-# Medical — Design Notes
+# Verdia — Design Notes
 
 Reference: **Medical Wordpress Themes** — **Source slug:** `medical` (`https://colorlib.com/wp/template/medical/`, HTTP 200, 110,970 B; re-checked 2026-10-24).  
 Live preview: `https://preview.colorlib.com/theme/medical/` — HTTP 200, 34,704 B.  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/medical-free-clean-health-website-template.jpg — the ROW's slug `medical`, not the spec's `medical-wordpress-themes`  
-Shipped: https://medical.free.componentdock.com
+Shipped: https://verdia.free.componentdock.com  
+Renamed 2026-10-24j: folder `medical` → `verdia` (AGENTS.md rule 5 — the folder reused the source slug); design, tokens and sections unchanged.
 
 Row note: `TEMPLATES.md` links the slug `medical` for this app while the spec records `medical-wordpress-themes`. This brief follows the SPEC — the disagreement is recorded, not resolved (ROW-MULTIPLICITY class, see the SPEC-REFERENCE audit, main `4820f472b`).
 
-Medical is a single-page healthcare template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Medical Wordpress Themes" design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
+Verdia is a single-page healthcare template in the free-react-templates monorepo. It is an original React recreation of the ColorLib free "Medical Wordpress Themes" design (see TEMPLATES.md), built under the monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 
 ## Typography
 
 Fonts loaded by `index.html` (Google Fonts): **Poppins**, **Poppins:wght@300;400;500;600;700**
 
-## Design tokens (`apps/medical/src/index.css` `@theme`)
+## Design tokens (`apps/verdia/src/index.css` `@theme`)
 
 | token | value | role |
 | --- | --- | --- |
@@ -61,7 +62,7 @@ Bands marked *anchors only* have no dedicated requirement block in the spec; hol
 *anchors only* — BOOK APPOINTMENT
 
 ### `Navbar`
-The system SHALL render a top navigation bar with the site name "Medical", a "Home" link, and a dark-mode toggle button.
+The system SHALL render a top navigation bar with the site name "Verdia", a "Home" link, and a dark-mode toggle button.
 
 ### `Hero`
 The system SHALL render a banner section with a level-1 headline.
@@ -105,8 +106,8 @@ The system SHALL render a footer with the site name and link columns.
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/medical/` may name the source designer,
+- **Provenance ban.** No file under `apps/verdia/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/medical/public/CNAME` = `medical.free.componentdock.com`
-  and the package `homepage` = `https://medical.free.componentdock.com`.
+- **Deploy identity.** `apps/verdia/public/CNAME` = `verdia.free.componentdock.com`
+  and the package `homepage` = `https://verdia.free.componentdock.com`.

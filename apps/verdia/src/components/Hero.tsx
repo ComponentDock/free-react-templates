@@ -4,7 +4,7 @@ export function Hero() {
       id="home"
       className="relative flex min-h-[500px] items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage: "url('https://picsum.photos/seed/medical-hero/1920/800')",
+        backgroundImage: "url('https://picsum.photos/seed/verdia-hero/1920/800')",
       }}
     >
       <div className="absolute inset-0 bg-ink/60" />

@@ -10,11 +10,11 @@ export function UtilityBar() {
             <span>+953 012 3654 896</span>
           </a>
           <a
-            href="mailto:support@medical.com"
+            href="mailto:support@verdia.com"
             className="flex items-center gap-1 hover:text-brand-100"
           >
             <Mail className="h-3 w-3" />
-            <span>support@medical.com</span>
+            <span>support@verdia.com</span>
           </a>
         </div>
         <a

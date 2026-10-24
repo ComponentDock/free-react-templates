@@ -13,6 +13,18 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Medical → Verdia (2026-10-24j)
+
+**6 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/nurture`, `apps/oraxol`, `apps/pawpal`, `apps/petsitting`, `apps/petvet`,
+`apps/unioncorp`), plus `apps/itkol`, which a name-only test still cannot see.
+`apps/medical` → `verdia` cleared the fourth of the eight visible violations;
+the source name survives only in the spec's `ColorLib "Medical"` provenance
+line and the reference's own colorlib.com URLs and asset filename, because the
+token evidence quotes the source sheets' measured declarations verbatim. The
+design is unchanged — same green palette (`#69be00`), Poppins, same nine
+sections.
+
 ## State after Jobboard → Rosterly (2026-10-24i)
 
 **7 apps reuse their source name** (`node scripts/audit-naming.mjs`:
@@ -104,7 +116,6 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 
 | app              | source design |
 | ---------------- | ------------- |
-| apps/medical     | Medical       |
 | apps/nurture     | Nurture       |
 | apps/oraxol      | Oraxol        |
 | apps/pawpal      | PawPal        |
