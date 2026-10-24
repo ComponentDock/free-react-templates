@@ -122,6 +122,64 @@ Lesson, the same one `docs/docs-source-drift.md` records for briefs: **the note
 belongs in every file that cites the directory, not in one canonical place.** A
 cross-reference is not a note — a brief is read alone.
 
+## Sibling pairs — the other half of the class (adjudicated 2026-10-24z)
+
+`verify-catalog-collisions.py` only sees a collision when two keys share one
+`url`. The other half is a pair of keys that differ only by an inflection — a
+plural (`cake`/`cakes`, `shopper`/`shoppers`), a numeric re-post
+(`bakery`/`bakery2`), or the latin `-a`/`-ics` tail (`academia`/`academics`) —
+and therefore reach **different** directories, where no collision ever fires. The
+queue's premise was that a dead second directory hides in that gap and makes a
+row a false `[x]`.
+
+```sh
+python3 scripts/verify-sibling-pairs.py                # census
+python3 scripts/verify-sibling-pairs.py --strict        # exit 1 on any flag
+python3 scripts/verify-sibling-pairs.py --pair cake:cakes
+python3 scripts/verify-sibling-pairs.py --self-test     # controls, 17/17
+python3 scripts/verify-sibling-pairs-controls.py        # mutation harness, 18/18 (4 GATE)
+```
+
+Measured 2026-10-24z: **53 pairs · 74 directories · TWO-DESIGNS 44 ·
+SHARED-URL 8 · NO-IDENTITY 1 · ONE-DEAD 0 · BOTH-DEAD 0.** The premise does not
+hold for this corpus: every side of every pair answers 200 and renders its own
+document, so the class contributes no false `[x]`.
+
+The two scanners read different halves of the same data, and diffing them is the
+cross-check. The census's 8 `SHARED-URL` pairs are **alias spellings** —
+`fashion`/`fashion-2`, `lawfirm`/`lawfirm-2`, `legaledge`/`legaledge-2`,
+`listed`/`listed2`, `medi`/`medi-2`, `medical`/`medical-2`, `music`/`music-2`,
+`yummy`/`yummy-2`. The collision scanner's 8 directories are pairs of **distinct
+posts** behind one directory — `fashion`, `lawfirm`, `lawyer`, `listed`,
+`medical`, `mediplus`, `music`, `yummy`. Six appear in both lists; the census
+adds `legaledge` + `medi` (one post, two keys — nothing to adjudicate), the
+scanner adds `lawyer` + `mediplus` (two posts whose keys are not inflections of
+each other, so this rule cannot reach them by construction). The symmetric
+difference is fully explained, which is what closes the class.
+
+The queue's three named pairs, re-measured:
+
+| pair | left | right | verdict |
+| --- | --- | --- | --- |
+| `cake` / `cakes` | 59,957 B, `<title>` "Cake \| Template" | 28,721 B, "Cakes - Template" | **TWO-DESIGNS** — both live, disjoint section sets |
+| `academia` / `academics` | 78,609 B, "Academia - Online Courses & Learning" | 32,115 B, "Academics — Website by Colorlib" | **TWO-DESIGNS** |
+| `fashion` / `fashion-2` | 26,945 B, shared directory | 26,945 B, shared directory | **SHARED-URL** — already adjudicated above |
+
+One pair cannot be decided by the census and is recorded as a note, not a flag:
+`vcard` (8,377 B, `<title>` "Vcard - Resume CV & Vcard Template") vs `vcard2`
+(10,812 B, `<title>` "About") — both live, different sizes and titles, but
+`vcard2` carries no `<h1>`–`<h4>` at all, so the heading signature is empty and
+identity has to be settled by screenshot, not by the scanner.
+
+**Identity is a heading signature, never a byte digest.** A preview page's bytes
+are request-unstable: two GETs of `theme/industries/` in the same run returned
+27,976 B with two different sha256s. A byte rule would report "two designs" for
+one document, and — worse — "one design" for two pages whose only difference is
+copy. The signature is the sorted, lowercased set of `<h1>`–`<h4>` texts; two
+pages match at an identical signature or at ≥4 shared headings with ≥0.8 Jaccard.
+The 8 GATE/mutation controls in `verify-sibling-pairs-controls.py` fail if the
+rule is changed to bytes.
+
 ## Queue
 
 1. ~~Inventory: 8 colliding directories~~ — done; all 8 adjudicated and noted.
@@ -136,8 +194,10 @@ cross-reference is not a note — a brief is read alone.
    green→yellow design) and `lawfirm` (row 1387/1760/2123, 2021 serif design) all
    credit an app that recreates the sibling. Those rows need re-pointing or the
    designs building, which is `docs/spec-row-mismatch.md` §Queue work.
-4. **Sibling pairs worth one census pass** — `cakes`/`cake`, `academia`/
-   `academics`, `fashion`/`fashion-2`: near-duplicate catalogue listings that the
-   collision scanner only sees when they *share* a `url`. Where a pair has two
-   live directories, nothing is broken; where the second 404s, the post is dead
-   and its row is a false `[x]`.
+5. ~~Sibling pairs worth one census pass~~ — done 2026-10-24z
+   (`scripts/verify-sibling-pairs.py`, controls 18/18): **53 pairs · 74
+   directories · TWO-DESIGNS 44 · SHARED-URL 8 · NO-IDENTITY 1 · ONE-DEAD 0 ·
+   BOTH-DEAD 0**. The premise ("where the second 404s the post is dead and its
+   row is a false `[x]`") does **not** hold for this corpus — every side of every
+   pair is live and renders its own document, so this class contributes no false
+   `[x]`. Re-run only as a control, not as a queue item.
