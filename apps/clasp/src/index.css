@@ -1,0 +1,25 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Page ground — brand palette: #ffffff. */
+  --color-page: #ffffff;
+  /* Hairline between rows — brand palette: #f9f9f9. */
+  --color-separator: #f9f9f9;
+  /* Closed row label ink — brand palette: #999999. */
+  --color-label: #999999;
+  /* Panel copy ink — brand palette: #888888. */
+  --color-body: #888888;
+  /* Heading ink — brand palette: #212529. */
+  --color-ink: #212529;
+  /* Accent / open row + chevron — brand palette: #72c02c. */
+  --color-accent: #72c02c;
+
+  /* Roboto — the reference's only text face. */
+  --font-sans: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-ink);
+}
