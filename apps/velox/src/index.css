@@ -5,7 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Velox brand palette — recreated from the ColorLib "Ronin" design
+  /* Velox brand palette — measured from the reference design
      (periwinkle blue #8490ff, gradient to #62bdfc). */
   --color-periwinkle-50: #f0f1ff;
   --color-periwinkle-100: #e0e3ff;

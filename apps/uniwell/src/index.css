@@ -5,8 +5,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Uniwell brand palette — from the ColorLib "Unicat" preview
-     (https://preview.colorlib.com/theme/unicat/):
+  /* Uniwell brand palette — measured from the reference stylesheet:
      an e-learning / university landing theme with a teal #34c3eb primary,
      a dark navy #1b1b2f top bar, light gray backgrounds, and serif
      headings. */

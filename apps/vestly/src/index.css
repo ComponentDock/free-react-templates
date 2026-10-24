@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Brand palette — extracted from ColorLib Invest stylesheet.
+  /* Brand palette — extracted from the reference stylesheet.
      Primary amber/gold #ffa800, dark #11100e, footer #15191f, body text #a5a5a5. */
   --color-brand: #ffa800;
   --color-brand-hover: #e69600;

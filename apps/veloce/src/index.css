@@ -3,8 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Veloce brand colors — from the ColorLib "Automotive" preview
-     (https://preview.colorlib.com/theme/automotive/ + css/style.css):
+  /* Veloce brand colors — measured from the reference stylesheet:
      an automotive garage theme with a blue-violet #5F67FF primary,
      dark backgrounds #25282C / #353535, light section bg #f7f7f7,
      and text colors #111111 / #353535 / #727171. */
@@ -19,7 +18,7 @@
   --color-primary-800: #222568;
   --color-primary-900: #1a1c50;
 
-  /* Muted copy (ColorLib #727171 / #353535). */
+  /* Muted copy (#727171 / #353535). */
   --color-smoke: #727171;
   --color-ink: #111111;
   --color-body: #353535;

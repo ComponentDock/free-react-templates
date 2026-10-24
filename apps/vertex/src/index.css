@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Vertex brand palette — recreated from ColorLib Boxus design tokens:
+  /* Vertex brand palette — measured from the reference design tokens:
      nav #221C5A, body #23214c, green accent #32DB8A, pink hover #ee87a4. */
   --color-brand: #32db8a;
   --color-brand-dark: #28b872;
