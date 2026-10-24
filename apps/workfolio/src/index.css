@@ -3,9 +3,8 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Workfolio brand palette — ColorLib Gilb preview
-     (https://preview.colorlib.com/theme/gilb/ + css/style.css):
-     dark navy resume/portfolio template with coral accent. */
+  /* Workfolio brand palette — measured from the reference design
+     (css/style.css): dark navy resume/portfolio template with coral accent. */
   --color-navy: #0d0f5b;
   --color-navy-deep: #0a0b4d;
   --color-coral: #ea5267;

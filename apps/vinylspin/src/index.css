@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  /* Vinylspin brand palette — from the ColorLib "Mixtape" preview:
+  /* Vinylspin brand palette — from the reference stylesheet:
      dark music/band landing with black bg, white text, red accent. */
 
   --color-primary-50: #fef2f0;
@@ -17,7 +17,7 @@
   --color-primary-800: #52160d;
   --color-primary-900: #2b0b07;
 
-  /* Salmon accent (ColorLib hover #ffa07f). */
+  /* Salmon accent (hover #ffa07f). */
   --color-accent-300: #ffcdb8;
   --color-accent-400: #ffa07f;
   --color-accent-500: #e08060;

@@ -9,7 +9,7 @@
      as primary accent, dark blue for headings, light blue for links,
      gold for star ratings. */
 
-  /* Orange primary (#fe5c24 — ColorLib Martine .btn_1, .place_btn). */
+  /* Orange primary (#fe5c24 — buttons `.btn_1`, `.place_btn`). */
   --color-primary-50: #fff4ec;
   --color-primary-100: #ffe3cc;
   --color-primary-200: #ffc599;
@@ -25,7 +25,7 @@
   --color-coral-400: #ff7e5f;
   --color-coral-500: #ff6b45;
 
-  /* Dark blue headings (#0c3e72 — ColorLib Martine h1/h2/h3). */
+  /* Dark blue headings (#0c3e72 — headings h1/h2/h3). */
   --color-navy: #0c3e72;
 
   /* Light blue (#2493e0 — social icons). */
