@@ -204,6 +204,23 @@ email or try again in 10 hours.` (Surge free-tier quota). That is not a rename
 Prefer names that evoke the design (pet care → `Vetly`, horse club → `Canter`), a
 single lowercase word, no collision with `ls apps/`.
 
+## Pitfall — a "free" app name can still be taken by a prep spec
+
+Choosing a name from `ls apps/` alone is not enough. `openspec/specs/template-<name>`
+and `docs/templates/<name>` carry prep surplus for designs that never shipped
+(`noir`, `onyx`, `umbra`, `penumbra`, `vellum`, … — 1,525 unused spec dirs). When
+the target folder already exists, `git mv openspec/specs/template-old
+openspec/specs/template-new` does **not** fail: it nests the source inside the
+existing folder (`openspec/specs/template-new/template-old/spec.md`), and the
+same happens for `docs/templates/`. Check all three paths before committing:
+
+```bash
+for n in <candidates>; do
+  ls -d apps/$n openspec/specs/template-$n docs/templates/$n 2>/dev/null || echo "FREE $n"
+done
+```
+
+
 ## Pitfall — the provenance URL contains the source slug
 
 A blind `farmie` → `harvest` find/replace also rewrites
