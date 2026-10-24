@@ -47,16 +47,16 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (re-measured 2026-10-24p, main after PR #1862 — the three `dreamrs` rows now point at the built `manorly` app, so that design left §2 of `docs/row-multiplicity.md`)
+## Census (re-measured 2026-10-24q, main after PR #1863 — the three `shopmax` rows now point at the built `drapely` app, so that design left §2 of `docs/row-multiplicity.md`)
 
 |                                    | count |
 | ---------------------------------- | ----: |
-| specs                              | 3,233 |
-| apps                               | 1,708 |
-| `AGREE`                            | 1,701 |
+| specs                              | 3,236 |
+| apps                               | 1,709 |
+| `AGREE`                            | 1,702 |
 | `DRIFT`                            | **3** |
-| `PREP` (spec-only)                 | 1,525 |
-| `ROW-MULTI` apps                   | 35    |
+| `PREP` (spec-only)                 | 1,527 |
+| `ROW-MULTI` apps                   | 34    |
 | `SLUG-OWNER` subjects              | 6     |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
@@ -76,8 +76,11 @@ after the Logistico design was rebuilt as **`cargonaut`** and row 2966 re-pointe
 (`AGREE=1700 DRIFT=3`, apps `1707`, specs `3,232`), and the Dreamrs design — whose three rows
 credited `skyline` while that app recreates Rooftop — was built as **`manorly`** (PR #1862) and its
 rows 106 / 1967 / 2587 re-pointed (`AGREE=1701 DRIFT=3`, apps `1,708`, specs `3,233`, `ROW-MULTI`
-35, `SLUG-OWNER` 6). `dreamrs` therefore leaves `docs/row-multiplicity.md` §2, which now counts
-**17** designs with no app.
+35, `SLUG-OWNER` 6), and the Shopmax design — whose three rows credited `bazaar` while that app
+recreates Store — was built as **`drapely`** (PR #1863) and its rows 230 / 1602 / 1730 re-pointed
+(`AGREE=1702 DRIFT=3`, apps `1,709`, specs `3,236`, `ROW-MULTI` 34, `SLUG-OWNER` 6). `dreamrs` and
+`shopmax` therefore leave `docs/row-multiplicity.md` §2, which now counts **16** designs with no
+app.
 
 ## The 3 remaining drift cases (adjudicated against the live previews)
 
@@ -162,10 +165,10 @@ names. Renaming is the rename stream's call, not the prep stream's.
    own prose; decide from the screenshot) and `cirrus` (the app is a
    fintech/investment landing; neither CloudTemplate nor SaaS carries a single
    one of its strings, so its true source is a third design).
-5. **36 `ROW-MULTI` apps** — every one of these is linked from two different
+5. **34 `ROW-MULTI` apps** — every one of these is linked from two different
    designs' rows, so at least one row per pair credits an app with a design it
    cannot ship: `amplify(uza/amplify) atelier(ashion/design)
-   batterly(cakes/cake) bazaar(shopmax/store) counsel(ariclaw/whisper)
+   batterly(cakes/cake) counsel(ariclaw/whisper)
    depot(warehouse/depot) domicile(occupy/homespace) dossier(jackco/alias)
    feast(foodblog/flatter) gallery(portfolio-wordpress-themes/reopen)
    glamour(look/glamour) glint(prodent/glint) groove(hnband/colorlib-regform-35)
