@@ -31,7 +31,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `ecobit` → `nodely` (#1832), `farmie` → `harvest` (#1833),
 `favison` → `upswing` (#1834), `gaas` → `upleap` (#1835),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
-`massive` → `appmint` (this PR).
+`massive` → `appmint` (#1838).
 
 | app             | source design |
 | --------------- | ------------- |
