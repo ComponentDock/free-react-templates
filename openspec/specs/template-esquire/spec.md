@@ -12,6 +12,33 @@ monorepo stack: Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Source: https://colorlib.com/wp/template/lawyer/ (law firm template)
 Preview URL: https://preview.colorlib.com/theme/lawyer/
 
+## Reference identity (measured 2026-10-24)
+
+`https://preview.colorlib.com/theme/lawyer/` now serves the post's **2026
+rebuild (v3.0.0)**, not the classic page this spec describes: the title is
+`Thoughtful conversations, clear next steps | Lawyer`, the og:image is
+`lawyer-3.0.0.jpg`, the page is 23,707 B, and it layers `css/modern.min.css`
+(16,493 B) over the classic `css/style.min.css` (66,057 B) plus Bootstrap 5.3.8,
+with `poppins` + `playfair display` in `css/fonts.min.css`. The classic copy is
+gone from the DOM — no "High Quality Law Advice and Support", no "About Lawyer
+Justice", no "93% Success Case" — and no prefix still renders it
+(`theme/lawyer-2/`, `lawyer-3/`, `lawyer3/`, `law-firm/` all 404,
+`/downloads/free/lawyer.zip` 404), so the row thumbnail
+(`lawyer-free-template.jpg`, dark hero + gold CTA) is a **retired design**.
+
+The token table below still measures true: the rebuild reuses the classic theme
+sheet, so `#f2c64d` (x26), Poppins body + Playfair Display headings and the
+`3px`/`8px`/`50%` radii all survive. What does not survive is the layout and the
+copy — `apps/esquire` renders the classic one-pager, so it is **DRIFT** against
+the live reference (a rebuild, not a prep error: `measure-reference-tokens.py`
+prints `rebuilt: True`).
+
+The directory's second catalogue key `catalog-199854` (post `lawful`) carries
+`url: theme/lawyer/` — a **catalogue data bug**: Lawful has its own demo at
+`theme/lawful/` (200, 25,104 B, `LAWFUL LAWFIRM`, h1 "We Combine Business with
+Finance", Raleway + Playfair Display, `#f13d80 -> #f48464` gradient, `#f8b600`)
+and ships as `apps/briefly`, which is a different design.
+
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Lawyer" (`<title>Lawyer</title>`). A dark,

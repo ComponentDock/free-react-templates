@@ -30,6 +30,24 @@ and `verify-shape-tokens.py` resolve demos catalogue-FIRST, so a colliding key
 makes them measure a spec against its SIBLING's page — a source of false
 TOKEN-UNVERIFIED / SHAPE-WRONG verdicts (`NO_CATALOG=1` is the A/B control).
 
+VARIANT 2 (measured 2026-10-24, `theme/lawyer/`, `theme/medical/`,
+`theme/mediplus/`): the three shapes the first corpus did not cover.
+  * `lawyer` + `catalog-199854` — the directory serves the FIRST key, and its
+    page has been REBUILT (v3.0.0, `css/modern.min.css` over the classic sheet).
+    The second key (`lawful`) has its own classic demo at `theme/lawful/`. The
+    retired classic layout is DRIFT, not a prep error (`rebuilt: True`).
+  * `medical` + `medical-2` — the directory serves the SECOND key's design
+    (`medical-2`: green `#69be00`, "We Care for Your Health Every Moment"). The
+    FIRST key's clean "TEAM OF EXCELLENCE" design has no demo at any prefix and
+    no archive, so that row can never be re-measured; its app is a row mismatch.
+  * `mediplus` + `catalog-141348` — the directory serves the FIRST key (rebuilt
+    v3.0.1); the second key's post (`medi`) lives at `theme/medi/` and its alias
+    `theme/medi-plus/` (both v3.0.0 rebuilds). `/wp/template/medi-plus/` 404s:
+    an alias directory is not a post.
+Adjudicate by each post's `og:image` on `colorlib.com/wp/template/<slug>/`,
+not by the catalogue key's `name` — `catalog-141348` is called "Medi+" but its
+`details` is the `medi` post.
+
 Buckets (partition, each group exactly once):
     NOTED        at least one citing spec carries a collision note
     UNNOTED      specs cite the directory and none records the collision (flag)

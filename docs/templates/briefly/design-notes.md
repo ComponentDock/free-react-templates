@@ -1,5 +1,16 @@
 # Briefly — Design Notes
 
+> **Reference identity (measured 2026-10-24).** The token backfill measured
+> `theme/lawyer/`, which is **Lawyer's** page (2026 rebuild v3.0.0, `#f2c64d` gold,
+> Poppins) — not Lawful's. Two catalogue keys share that URL (`lawyer`, and
+> `catalog-199854` whose `details` is `/wp/template/lawful/`): a catalogue data
+> bug. Lawful's own demo is `theme/lawful/` (200, 25,104 B, `LAWFUL LAWFIRM`, h1
+> "We Combine Business with Finance", `css/style.css` 80,241 B, Raleway body +
+> Playfair Display headings, `.primary-btn` gradient `#f13d80 -> #f48464`,
+> `.genric-btn.primary` `#f8b600`). The spec's table has been re-measured there;
+> `apps/briefly` already ships this palette, so only the prep was wrong.
+> Authority: `openspec/specs/template-briefly/spec.md`.
+
 Reference: **Lawful** — `https://colorlib.com/wp/template/lawful/`  
 Live preview: `https://preview.colorlib.com/theme/lawful/`  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/lawful-free-template.jpg  

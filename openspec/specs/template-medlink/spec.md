@@ -17,6 +17,30 @@ Preview was unreachable (404) — design derived from the TEMPLATES.md screensho
 > Recorded by the PREP audit; the app delta (if any) is a separate fidelity follow-up — this block is evidence, not a re-value.
 <!-- unreachable-reprobe:end -->
 
+## Reference identity (measured 2026-10-24)
+
+`https://preview.colorlib.com/theme/medical/` serves **this row's design** —
+post `medical-2` (`medical-free-template.jpg`, rows 1864 / 2246) — so the
+re-probe above was right about the directory and wrong only in reading it as the
+`medical` key's page. Measured: 34,682 B, `<title>Medical</title>`, classic
+Bootstrap 4 sheets (`css/bootstrap.css` 17,224 B, `css/main.css` 69,500 B), h1
+"We Care for Your Health Every Moment", then Servicing Hours / Book an
+Appointment / Our Latest Facilities / Our Offered Services / Departments / Our
+Consultants / Enjoy our Client's Feedback / Our Recent Blogs. Theme-sheet
+census: `#69be00` x67, `#222222` x29, `#777777` x26, `Poppins` (with Helvetica /
+Segoe UI / Roboto fallbacks). The screenshot brand `#76b900` occurs nowhere —
+`#69be00` is the measured brand.
+
+Post `medical-2` has **no directory of its own** (`theme/medical-2/`,
+`medical2/`, `medical-care/`, `medicalcare/`, `medical-clinic/`, `medic/`,
+`clinic/`, `health-care/` all 404; `/downloads/free/medical.zip` and
+`medical-2.zip` 404), which is why both keys land on the `medical` slug. The
+sibling key `medical`'s design — cyan "WE ARE THE TEAM OF EXCELLENCE",
+`medical-free-clean-health-website-template.jpg` — is **retired**: no live page
+and no archive renders it. `apps/medlink` therefore recreates the right design;
+`template-verdia` (post `medical`) recreates this same page, so the two preps
+overlap by one design.
+
 **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript.
 **Deploy target:** `https://medlink.free.componentdock.com`.
 

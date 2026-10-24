@@ -1,5 +1,17 @@
 # Verdia — Design Notes
 
+> **Reference identity (measured 2026-10-24).** The `theme/medical/` page these
+> notes were built from is **post `medical-2`** (og `medical-free-template.jpg`,
+> rows 1864 / 2246, `apps/medlink`), not the `medical` post named above: "We Care
+> for Your Health Every Moment" + Servicing Hours + Book an Appointment +
+> Facilities / Services / Consultants / Feedback / Blogs, `#69be00` x67, Poppins.
+> The `medical` row (2245) thumbnail — cyan "WE ARE THE TEAM OF EXCELLENCE",
+> `medical-free-clean-health-website-template.jpg` — has **no live demo** (10
+> prefixes 404, both archives 404), so the section order and tokens below are the
+> `medical-2` reference and the row pointer is a row mismatch. The app still
+> matches what it was built from. Authority:
+> `openspec/specs/template-verdia/spec.md`.
+
 Reference: **Medical Wordpress Themes** — **Source slug:** `medical` (`https://colorlib.com/wp/template/medical/`, HTTP 200, 110,970 B; re-checked 2026-10-24).  
 Live preview: `https://preview.colorlib.com/theme/medical/` — HTTP 200, 34,704 B.  
 Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/medical-free-clean-health-website-template.jpg — the ROW's slug `medical`, not the spec's `medical-wordpress-themes`  

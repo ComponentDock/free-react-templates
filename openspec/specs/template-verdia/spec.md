@@ -39,6 +39,31 @@ Us / Newsletter columns. Verdia recreates that structure section-for-section
 with matching layout, colors, typography, and content types (no ColorLib
 assets copied).
 
+## Reference identity (measured 2026-10-24) — this is the `medical-2` design
+
+`https://preview.colorlib.com/theme/medical/` (HTTP 200, 34,682 B,
+`<title>Medical</title>`) renders the page whose og:image is
+`medical-free-template.jpg` — **post `medical-2`** (rows 1864 / 2246, shipped as
+`apps/medlink`): "We Care for Your Health Every Moment" hero, Servicing Hours,
+Book an Appointment, Our Latest Facilities, Our Offered Services, Departments,
+Our Consultants, Enjoy our Client's Feedback, Our Recent Blogs; `#69be00` x67 /
+`#222222` x29 / `#777777` x26, Poppins.
+
+The post this prep names — `medical`, row 2245, thumbnail
+`medical-free-clean-health-website-template-768x604.jpg` (cyan "WE ARE THE TEAM
+OF EXCELLENCE", 24/7 Emergency / X-Ray cards, "GET STARTED") — has **no live
+demo**: `theme/medical-2/`, `medical2/`, `medical-clean/`, `clean-medical/`,
+`medical-care/`, `medicalcare/`, `medical-clinic/`, `medic/`, `clinic/`,
+`health-care/` all 404, and both archive zips 404. Its thumbnail is the only
+remaining reference for that design.
+
+Consequences: the DOM, token table and section order below are the `medical-2`
+reference and stay valid exactly as measured — `apps/verdia` reproduces them
+section-for-section — but the `medical` row's pointer is a **row mismatch**, and
+this prep duplicates `template-medlink`'s design. Any future "Medical" work must
+not claim the clean thumbnail's design without saying the only reference is the
+screenshot.
+
 ## Design reference (replication findings)
 
 - **Original:** ColorLib "Medical" — free medical website template

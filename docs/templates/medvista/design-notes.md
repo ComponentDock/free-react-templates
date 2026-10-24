@@ -1,5 +1,15 @@
 # Medvista — Design Notes & Implementation Guide
 
+> **Reference identity (measured 2026-10-24).** `theme/mediplus/` serves this
+> row's design (post `mediplus`) as a 2026 **rebuild v3.0.1** — 66,295 B,
+> `css/style.min.css?v=3.0.1` (195,684 B), h1 "We are here for your Care", Poppins,
+> `#207dff` x54 / `#fe5f55` x16 — so the sections and tokens below still measure
+> true. The directory's second catalogue key `catalog-141348` ("Medi+", post
+> `medi`) is a catalogue data bug: that design lives at `theme/medi/` (200,
+> 25,844 B, "Plan your clinic visit | Medi") and `theme/medi-plus/` (200, 31,105
+> B), both v3.0.0 rebuilds. Authority:
+> `openspec/specs/template-medvista/spec.md`.
+
 Source: ColorLib **Mediplus** (https://colorlib.com/wp/template/mediplus/)
 Preview: https://preview.colorlib.com/theme/mediplus/
 New name: `medvista`

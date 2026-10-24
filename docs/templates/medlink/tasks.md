@@ -1,5 +1,16 @@
 # Medlink — Implementation Tasks
 
+> **Reference identity (measured 2026-10-24).** `theme/medical/` serves **this
+> row's design** (post `medical-2`, `medical-free-template.jpg`): 34,682 B, classic
+> Bootstrap 4 + `css/main.css` (69,500 B), "We Care for Your Health Every Moment",
+> Servicing Hours, Book an Appointment, Facilities, Offered Services, Departments,
+> Consultants, Feedback, Recent Blogs; `#69be00` x67 / `#222222` x29 / `#777777`
+> x26, Poppins (the screenshot sample `#76b900` never occurs). Post `medical-2`
+> has no directory of its own (8 prefixes 404, both archives 404) — it shares the
+> `medical` slug, whose own clean "TEAM OF EXCELLENCE" design is retired with no
+> demo. `template-verdia` recreates this same page. Authority:
+> `openspec/specs/template-medlink/spec.md`.
+
 Source design: **Medical 2** (`https://colorlib.com/wp/template/medical-2/`) → recreation name **medlink**. Shipped at https://medlink.free.componentdock.com.
 
 Scope: Recreation of **ColorLib "Medical 2"** template (https://colorlib.com/wp/template/medical-2/). Preview was unreachable (404) — design derived from the TEMPLATES.md screenshot. **Stack:** Vite · React 19 · Tailwind CSS 4 · TypeScript. **Deploy target:** `https://medlink.free.componentdock.com`.

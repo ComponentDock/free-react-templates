@@ -1,5 +1,17 @@
 # Verdia (ColorLib "Medical") — Tasks & Design Notes
 
+> **Reference identity (measured 2026-10-24).** The `theme/medical/` page these
+> notes were built from is **post `medical-2`** (og `medical-free-template.jpg`,
+> rows 1864 / 2246, `apps/medlink`), not the `medical` post named above: "We Care
+> for Your Health Every Moment" + Servicing Hours + Book an Appointment +
+> Facilities / Services / Consultants / Feedback / Blogs, `#69be00` x67, Poppins.
+> The `medical` row (2245) thumbnail — cyan "WE ARE THE TEAM OF EXCELLENCE",
+> `medical-free-clean-health-website-template.jpg` — has **no live demo** (10
+> prefixes 404, both archives 404), so the section order and tokens below are the
+> `medical-2` reference and the row pointer is a row mismatch. The app still
+> matches what it was built from. Authority:
+> `openspec/specs/template-verdia/spec.md`.
+
 > Prep artifacts prepared on `main` while the Cove PR awaits review.
 > Implementation shipped; the app was renamed to `verdia` on 2026-10-24j
 > (`feat/rename-medical-verdia`).

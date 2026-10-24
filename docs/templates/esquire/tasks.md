@@ -1,5 +1,17 @@
 # Esquire (ColorLib Lawyer) — Tasks & Design Notes
 
+> **Reference identity (measured 2026-10-24).** `theme/lawyer/` now serves the
+> post's 2026 **rebuild v3.0.0** (`Thoughtful conversations, clear next steps |
+> Lawyer`, og `lawyer-3.0.0.jpg`, `css/modern.min.css` layered over the classic
+> `css/style.min.css`), so the classic one-pager these notes describe is a retired
+> design — no prefix or archive renders it. The tokens still hold: the rebuild
+> reuses the old sheet (`#f2c64d` x26, Poppins + Playfair Display), so
+> `apps/esquire` is **DRIFT** against the live page, not a prep error. The same
+> directory also carries a second catalogue key, `catalog-199854` (post `lawful`) —
+> a catalogue data bug; Lawful's demo is `theme/lawful/` (Raleway + Playfair,
+> `#f13d80 -> #f48464`, `#f8b600`) and ships as `apps/briefly`. Authority:
+> `openspec/specs/template-esquire/spec.md`.
+
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-esquire`.
 

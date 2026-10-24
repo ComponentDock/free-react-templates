@@ -13,25 +13,46 @@ Vite + React 19 + Tailwind CSS 4 + TypeScript.
 Source: https://colorlib.com/wp/template/lawful/
 Preview URL: https://preview.colorlib.com/theme/lawful/
 
+## Reference identity (measured 2026-10-24)
+
+Two catalogue keys claim `https://preview.colorlib.com/theme/lawyer/`, and the
+directory serves **Lawyer**, not Lawful: key `catalog-199854` (this prep's post,
+`details /wp/template/lawful/`) carries a `url` copied from key `lawyer`
+(`details /wp/template/lawyer/`) — a **catalogue data bug**, not a shared page.
+The page under it is the Lawyer 2026 rebuild v3.0.0 (`Thoughtful conversations,
+clear next steps | Lawyer`, og `lawyer-3.0.0.jpg`, `css/modern.min.css`,
+`#f2c64d` gold, Poppins + Playfair Display).
+
+Lawful's own demo is `https://preview.colorlib.com/theme/lawful/` (HTTP 200,
+25,104 B, `<title>LAWFUL LAWFIRM</title>`, h1 "We Combine Business with
+Finance", Bootstrap 4 + `css/style.css` 80,241 B / sha256 `37013421cbe6...`),
+which matches the row thumbnail (`lawful-free-template.jpg`). The token table
+below has been re-measured there: the previous table was read off
+`theme/lawyer/`, so its gold `#f2c64d` / Poppins values were **Lawyer's**, not
+this design's. `apps/briefly` already ships the correct palette
+(`#f13d80 -> #f48464` gradient, Raleway + Playfair Display) — only the prep was
+wrong.
+
 ## Design tokens
 
-<!-- design-tokens-backfill:2026-10-23 -->
+<!-- design-tokens-backfill:2026-10-23; re-measured 2026-10-24 on the lawful page -->
 Measured from the live reference, not sampled off the screenshot:
-https://preview.colorlib.com/theme/lawyer/ (HTTP 200, 23,712 B, fetched 2026-10-23) and its theme stylesheet `theme/lawyer/css/style.min.css` (66,057 B, sha256 `e33bbf06e2ed…`).
+https://preview.colorlib.com/theme/lawful/ (HTTP 200, 25,104 B, fetched 2026-10-24) and its theme stylesheet `theme/lawful/css/style.css` (80,241 B, sha256 `37013421cbe6…`).
 CSS values are canonical over any screenshot sample.
 
 | Token | Value | Evidence in the reference |
 | --- | --- | --- |
-| Accent (most-used chromatic) | `#f2c64d` | 24 declarations — `.boxed-btn4`, `.boxed-btn5` |
-| Other chromatic values | `#ff5e13`, `#415094`, `#4cd3e3` | `#ff5e13` × 16 (.contact-info .media-body h3 a:hover); `#415094` × 7 (.genric-btn.default); `#4cd3e3` × 5 (.genric-btn.success) |
-| Surface | `#ffffff` | 76 declarations — `a:focus`, `::-moz-selection` |
-| Ink / dark surface | `#000000` | 29 declarations — `.boxed-btn`, `.boxed-btn:hover` |
-| Typeface | `Poppins, sans-serif` (12 rules — body)<br>`Playfair Display, serif` (3 rules — h1) | `font-family` declarations in the theme sheet |
-| Body type | `font-weight: 400` | `body{…}` rule |
-| Radii | `50%`, `3px`, `8px` | `50%` (.header-area .social_media_links ul li a); `3px` (.slicknav_btn); `8px` (.primary-radio) |
-| Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (80,241 B, sha256 37013421cbe6) · <https://preview.colorlib.com/theme/lawful/> |
+| Primary gradient | `#f13d80 → #f48464` (90deg) | `.primary-btn:after, .service-area, .contact_form .primary-btn, .single-footer-widget .click-btn { background: linear-gradient(90deg,#f13d80 0%,#f48464 100%) }` (style.css L91-95) |
+| Gold button | `#f8b600` | `.genric-btn.primary { color:#fff; background:#f8b600 }`; hover inverts to `#fff` bg + `#f8b600` text/border (L1899-1910) |
+| Ink / headings | `#222222` | `h1,h2,h3,h4,h5,h6 { font-family:"Playfair Display",serif; font-weight:700; color:#222222 }` (L46-49) |
+| Body text | `#777777` | `body { font-size:14px; font-family:"Raleway",sans-serif; font-weight:400; color:#777777 }` (L39-43) |
+| Surface | `#ffffff` | 91 declarations |
+| Light section bg | `#f9f9ff` | 16 declarations (`background` on muted panels) |
+| Other chromatic | `#4cd3e3` | 11 declarations |
+| Typeface | `Raleway, sans-serif` (6 rules — body)<br>`Playfair Display, serif` (2 rules — h1–h6) | `font-family` declarations in the theme sheet |
+| Radii | `0px` (14), `3px` (8), `8px` (6), `50%` (6) | `border-radius` census of the theme sheet — square by default, `50%` on circular social/icon chips |
 
-Palette in order of use: `#ffffff` ×76, `#000000` ×29, `#f9f9ff` ×27, `#f2c64d` ×24, `#ff5e13` ×16, `#999999` ×11.
+Palette in order of use: `#ffffff` ×91, `#f13d80` ×40, `#222222` ×39, `#f8b600` ×19, `#777777` ×16, `#f9f9ff` ×16, `#4cd3e3` ×11, `#f48464` ×10.
 
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.
 - Do not invent shades: the full census above is the sheet's own vocabulary; hovers reuse the listed values.

@@ -10,6 +10,26 @@ A Medical / Healthcare template with hero, about, services, cta banner, doctors 
 - **Category:** Medical/Healthcare
 - **Design reference:** Screenshot at https://colorlib.com/wp/wp-content/uploads/sites/2/mediplus-free-template.jpg
 
+## Reference identity (measured 2026-10-24)
+
+`https://preview.colorlib.com/theme/mediplus/` serves **this row's design** —
+post `mediplus` (rows 1096 / 2255 / 2340, thumbnail
+`mediplus-free-template.jpg`) — as a **2026 rebuild (v3.0.1)**: title
+`Mediplus — Medical Clinic and Family Doctors in Mountain View`, og
+`mediplus-3.0.0.jpg`, 66,295 B, one theme sheet `css/style.min.css?v=3.0.1`
+(195,684 B), h1 "We are here for your Care", Poppins, `#207dff` x54 /
+`#fe5f55` x16 / `#f8f9fa` x17 / `#343a40` x18. The token table below still
+measures true and `apps/medvista` follows it.
+
+The directory's second key `catalog-141348` (name "Medi+", post `medi`,
+thumbnail `medi-plus-free-medical-website-template.jpg`, blue "MEDI+ / We Care
+For You") is a **catalogue data bug**: no page here reproduces that design. The
+`medi` post lives at `theme/medi/` (200, 25,844 B, "Plan your clinic visit |
+Medi", og `medi-3.0.0.jpg`, Work Sans + Roboto, `#296dff` x28) with a sibling
+rebuild `theme/medi-plus/` (200, 31,105 B, "Medi+ — Practical visit planning");
+`/wp/template/medi-plus/` 404s, so the alias belongs to the same post. Both are
+v3.0.0 rebuilds, so the blue "MEDI+" thumbnail is a retired design with no demo.
+
 ## Design tokens
 
 Extracted from the live preview CSS (`css/style.css`) and inline styles:
