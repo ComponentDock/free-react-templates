@@ -47,24 +47,25 @@ spec's design and of the row's design, and the winner names the stale record:
 | `BOTH-STALE` | the app matches a third design in the same family            | both                |
 | `UNRESOLVED` | no candidate carries the copy (rebuild, re-skin, twin demos) | prep, by hand       |
 
-## Census (measured 2026-10-24f, main `47b990932`)
+## Census (measured 2026-10-24f, main `47b990932`; re-measured 2026-10-24g after the `concertina` rewrite)
 
 |                                    | count |
 | ---------------------------------- | ----: |
 | specs                              | 3,228 |
 | apps                               | 1,703 |
-| `AGREE`                            | 1,688 |
-| `DRIFT`                            | **15** |
+| `AGREE`                            | 1,692 |
+| `DRIFT`                            | **11** |
 | `PREP` (spec-only)                 | 1,525 |
 | `ROW-MULTI` apps                   | 36    |
 | `SLUG-OWNER` subjects              | 30    |
 
 The chain that got here: `19` row-mismatch subjects measured, `17` after the
 row-map fix below, `15` after the two provenance corrections below, then `13` on the
-2026-10-24 re-read and `12` after the `bistro` rewrite (spec `accordion-02` → `allfood`;
-census `AGREE=1691 DRIFT=12` at that commit).
+2026-10-24 re-read, `12` after the `bistro` rewrite (spec `accordion-02` → `allfood`), and `11`
+after the `concertina` rewrite (spec `accordion-05` → `accordion-16`; census
+`AGREE=1692 DRIFT=11` at that commit).
 
-## The 15 drift cases (adjudicated against the live previews)
+## The 11 remaining drift cases (adjudicated against the live previews)
 
 | app | verdict | spec says | row says | copy found on the winner |
 | --- | --- | --- | --- | --- |
@@ -72,7 +73,6 @@ census `AGREE=1691 DRIFT=12` at that commit).
 | `bistro` | `SPEC-STALE` | accordion-02 | allfood | "Delicious Food", "Best Chef", "About Our Restaurant" |
 | `btnspark` | `UNRESOLVED` | bootstrap-buttons-14 | bootstrap-buttons-02 | — (button demos carry no prose; both are 3.1.0 rebuilds) |
 | `cirrus` | `UNRESOLVED` | cloudtemplate | saas | — (app copy is fintech; neither demo carries it) |
-| `concertina` | `SPEC-STALE` | accordion-05 | accordion-16 | "Bootstrap Accordion #6", "How to link your paypal…" |
 | `formwell` | `SPEC-STALE` | contact-form-v15 | contact-form-08 | "Get in touch with us", "Full Name", "Email Address" |
 | `givehope` | `ROW-POINTER` | bcharity | givehope | "Bless others with your gift", "Become A Volunteer" |
 | `ledger` | `SPEC-STALE` | accounting | daren | "Creative & Design" + the Daren lorem blocks |
@@ -97,6 +97,7 @@ provenance-only.
 | `medical` | ColorLib "Medical Wordpress Themes" (a round-up article, no demo) | ColorLib "Medical" | the body, tokens and section order were already measured from `/theme/medical/`; only the name was wrong |
 | `ledger` | ColorLib "Accounting", green `#1BA12D`/Montserrat, accounting sections | ColorLib "Daren", measured red `#ef1313` + `"Source Serif Pro"` display face, the eight Daren bands | the app's copy is Daren's (`Creative & Design`, `Search Objects`, `LOADING MORE`); **both** spec and `docs/templates/ledger/` were rewritten, tokens re-measured from `theme/daren/css/style.css` (123,435 B, sha `427b90d0…`) |
 | `bistro` | ColorLib "Accordion 02", warm-cream `#fcf8f2`/amber `#d4a373`, an "Our Specialties" Breakfast–Lunch–Dinner–Drink–Wine accordion | ColorLib "Allfood", measured orange `#ff5600` (+ sweep `#e74d00`), Josefin Sans/Poppins, the ten reference bands (hero · about · menu mosaic · about 2 · booking · services · subscribe · blog · footer) | the app's copy is Allfood's (`About Our Restaurant`, `Delicious Food`, `Best Chef`, `Quality Food`, `Our Recnet News`); **both** spec and `docs/templates/bistro/` were rewritten, tokens re-measured from `theme/allfood/assets/css/style.css` (58,090 B, sha `8e1b11a8…`). Two rows (330 `## Bootstrap`, 2666 `## Restaurant`) link `bistro` for this one design — `ROW-MULTI`, no pointer to move, no rename (`bistro` ≠ `allfood`) |
+| `concertina` | ColorLib "Accordion 05" (Poppins, mint `#75d6d1`, a seven-band marketing page) | ColorLib "Accordion 16", measured lime `#72c02c` on `#efefef`, `#f9f9f9` 40px pills, one band | the app's copy is Accordion 16's (`Bootstrap Accordion #6`, `How to download and register`, `How to link your paypal and bank account` — each 1 hit in a16, 0 in a05); **both** spec and `docs/templates/concertina/` were rewritten, tokens re-measured from `theme/bac/accordion-16/css/style.css` (9,013 B, sha `e61cfd1c…`). No row moved (`[concertina]` already sat on row 655, `## Bootstrap Accordions (20)`), no rename |
 
 Both corrections make the rule-5 audit **louder, not quieter**: the folders
 `apps/jobboard` and `apps/medical` now normalise to their own source slug, so
@@ -108,13 +109,16 @@ names. Renaming is the rename stream's call, not the prep stream's.
 
 ## Queue (docs-only, in order of yield)
 
-1. **Five spec rewrites** — `concertina`→accordion-16,
-   `formwell`→contact-form-08, `prose`→author, `vellum`→readit,
-   `zenith`→saasify (`ledger`→daren and `bistro`→allfood landed 2026-10-24, spec **and**
-   docs). Each needs the
+1. **Four spec rewrites** — `formwell`→contact-form-08, `prose`→author,
+   `vellum`→readit, `zenith`→saasify (`ledger`→daren, `bistro`→allfood and
+   `concertina`→accordion-16 landed 2026-10-24, spec **and** docs). Each needs the
    provenance *and* the body rewritten from the winner's live DOM (the token tables
    currently carry the other design's palette), plus `docs/templates/<app>/` — a corrected
    spec with a stale brief still misdirects the implementer. One app per run.
+   The family demos live under a prefix: `formwell`'s contact-form-08 is
+   `/theme/bootstrap/contact-form-08/`, `vellum`'s readit is `/theme/readit/`,
+   `zenith`'s saasify is `/theme/saasify/`, `prose`'s author is `/theme/author/` — the
+   slug-only ladder resolves only the last three.
 2. **Five row pointers** (implementer/rename stream) — the rows below credit the
    app with a design it does not recreate, so they are false `[x]`s and their
    designs are, in fact, unshipped:
