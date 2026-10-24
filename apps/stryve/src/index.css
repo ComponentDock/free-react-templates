@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+/* Stryve palette — measured from the reference stylesheet:
+   brand electric blue #233EDE (buttons, icon circles, trainer tabs, prices),
+   ink #212122 (the single dark band + dark buttons), heading #111111,
+   subtitle #353535, body #7b7b7b, hairline #E5E7F3 (2px card border),
+   rail #081624 (social circles), search #073B4C (full-screen overlay).
+   Type: Roboto only (one family, 300–900). Geometry: radius 0 everywhere. */
+@theme {
+  --color-brand: #233ede;
+  --color-brand-deep: #1a30b8;
+  --color-ink: #212122;
+  --color-heading: #111111;
+  --color-subtitle: #353535;
+  --color-body: #7b7b7b;
+  --color-hairline: #e5e7f3;
+  --color-rail: #081624;
+  --color-search: #073b4c;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #7b7b7b;
+    font-family: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #111111;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  p {
+    color: #7b7b7b;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  ::selection {
+    background: #233ede;
+    color: #ffffff;
+  }
+}
