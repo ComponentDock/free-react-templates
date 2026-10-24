@@ -100,7 +100,7 @@ Renamed so far: `thepetcare` → `vetly` (#1810), `petcare` → `pawly` (#1812),
 `launch` → `embark` (#1836), `leopet` → `snoutly` (#1837),
 `massive` → `appmint` (#1838), `medico` → `sanara` (#1839),
 `mosh` → `motif` (#1840), `justlaw` → `lexon` (#1841), `expo` → `sightly`
-(#1842), `jobboard` → `rosterly` (this PR).
+(#1842), `jobboard` → `rosterly` (#1843).
 
 | app              | source design |
 | ---------------- | ------------- |
