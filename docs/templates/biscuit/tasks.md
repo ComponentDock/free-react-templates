@@ -1,9 +1,15 @@
 # Biscuit (Colorlib Pawpal) — Tasks & Design Notes
-<!-- prep-status: shipped-as=pawpal -->
+<!-- prep-status: shipped-as=groomly -->
 > **SHIPPED-UNDER** — the ColorLib `pawpal` design this prep describes already
-> ships as `apps/pawpal` (<https://pawpal.free.componentdock.com>).
+> ships as `apps/groomly` (<https://groomly.free.componentdock.com>).
 > Do not scaffold `apps/biscuit`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-pawpal/spec.md`.
+> Fidelity reference: `openspec/specs/template-groomly/spec.md`.
+>
+> **Re-pointed (measured 2026-10-25).** The marker named `pawpal`, an app that no
+> longer exists: rule-5 rename `eef65bb17` ("Groomly — rename of the Pawpal app,
+> ColorLib PawPal source-name reuse") moved `apps/pawpal` to `apps/groomly`.
+> `groomly`'s spec recreates the same `wp/template/pawpal/` design, so the
+> marker and banner now name it (found by `scripts/verify-marker-drift.py`).
 
 > Prep artifacts prepared on `main` while the Vista PR (#4) awaits review.
 > Implementation ships later on `feat/template-biscuit`.
@@ -31,9 +37,9 @@ stylesheet
 36,398 B sha256 `9d8f8d8ad717…` and carries all 4 hex tokens recorded below
 (Poppins, Lora), so the live build matches the design the mirror served. The
 Cloudflare Pages mirror `https://pawpal-colorlib.pages.dev` is still
-**NXDOMAIN** (re-checked 2026-10-13d). The app for this template has not
-shipped yet, so this live path is the authoritative reference to build
-against.
+**NXDOMAIN** (re-checked 2026-10-13d). The design shipped as
+`apps/groomly` (see the marker above), so this live path is the fidelity
+reference for that app.
 - **Visual design (from DOM + CSS tokens):** modern premium pet-care landing
   in **pink** (`#db2777` primary, hover `#be185d`, pink-50 `#fce7f3`
   sections), **Lora** serif display headings over **Poppins** body text,

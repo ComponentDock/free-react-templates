@@ -1,19 +1,22 @@
 # Tasks & Design Notes: Cruiseo (ColorLib Car Rentals)
-<!-- prep-status: shipped-as=fleetly -->
-> **SHIPPED-UNDER** — the ColorLib `car-rental` design this prep describes already
-> ships as `apps/fleetly` (<https://fleetly.free.componentdock.com>).
+<!-- prep-status: shipped-as=drivego -->
+> **SHIPPED-UNDER** — the ColorLib `carrentals` design this prep describes already
+> ships as `apps/drivego` (<https://drivego.free.componentdock.com>).
 > Do not scaffold `apps/cruiseo`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-fleetly/spec.md`.
+> Fidelity reference: `openspec/specs/template-drivego/spec.md`.
 >
-> **Correction (measured 2026-10-24).** This header pointed at `drivego`, which
-> recreates the *sibling* design `carrentals` (row 929, "CarRental — Car Rental
-> Made Simple"), not the design these notes measure. The gold `#F9A826` /
-> "THE ROYAL ESSENCE OF JOURNEY" hero and the `carrental-free-template.jpg`
-> screenshot below are the `car-rental` row (924), and that design ships as
-> `fleetly`. Preview re-probed the same day, so the URL in "Source Mapping" is
-> corrected too: `theme/carrental/` = 200 (33,626 B, `<title>` "Car Rentals —
-> Car Hire by the Day or Week"); `theme/car-rental/` = 404 (9 B);
-> `theme/carrentals/` = 200 (34,955 B) but that is drivego's design, not this one.
+> **Re-pointed (measured 2026-10-25).** The 2026-10-24 pass below was WRONG:
+> it flipped this marker to `fleetly` from ONE citation — the
+> `carrental-free-template.jpg` basename in the screenshot analysis — while the
+> prep's own Source Mapping and section list describe `carrentals` (row 929,
+> `<title>` "CarRental — Car Rental Made Simple", hero "Rent a car is within
+> your fingertips", 6 car listings). Live re-probe of both demos' `<title>`s
+> confirms two different designs: `theme/carrentals/` vs `theme/carrental/`
+> (33,626 B, "Car Rentals — Car Hire by the Day"). `apps/drivego` recreates the
+> former, so the marker now points there again; the screenshot-analysis tokens
+> below are the sibling's and must not drive the recreation.
+> Superseded: the 2026-10-24 note (removed above) claimed these notes measure
+> the `car-rental` row; the section list and the app's own spec say otherwise.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
 > later on `feat/template-cruiseo`. Recreation name: **Cruiseo** (NEW name —

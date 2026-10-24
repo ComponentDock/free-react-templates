@@ -1,14 +1,18 @@
 # Tidecrest — Design Notes & Task Outline
-<!-- prep-status: shipped-as=havenshore -->
-> **SHIPPED-UNDER** — the ColorLib `ocheandeview` design this prep describes already
-> ships as `apps/havenshore` (<https://havenshore.free.componentdock.com>).
+<!-- prep-status: shipped-as=pavilion -->
+> **SHIPPED-UNDER** — the ColorLib `marian` design this prep describes already
+> ships as `apps/pavilion` (<https://pavilion.free.componentdock.com>).
 > Do not scaffold `apps/tidecrest`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-havenshore/spec.md`.
+> Fidelity reference: `openspec/specs/template-pavilion/spec.md`.
 >
-> **Correction (measured 2026-10-24).** The header named `pavilion`, which recreates
-> the `marian` design. These notes derive from Ocheandeview (hero slider,
-> floating booking form, room cards, gallery), and Ocheandeview ships as
-> `havenshore` — the same target the sibling Ocheandeview prep records.
+> **Re-pointed (measured 2026-10-25).** The 2026-10-24 pass below was WRONG:
+> it flipped this marker to `havenshore` while the spec it belongs to
+> (`openspec/specs/template-tidecrest/spec.md`) names `marian`, carries
+> Marian's tokens (`#dca73a` gold, Noto Serif/Lato) and quotes Marian's own
+> `<h1>` "top hotel in the city" in the section notes below. `apps/pavilion`
+> recreates `marian`; `apps/havenshore` recreates `ocheandeview`, whose `<h1>`
+> is "Ochean de View". Superseded: the 2026-10-24 note (removed above) had
+> flipped the marker away from `pavilion` on that basis.
 
 Source: ColorLib Ocheandeview (https://preview.colorlib.com/theme/ocheandeview/)
 Preview analyzed: 2026-08-24
