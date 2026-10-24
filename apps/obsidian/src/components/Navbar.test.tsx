@@ -7,7 +7,7 @@ describe('Navbar', () => {
   it('shows the brand logo and navigation links', () => {
     render(<Navbar />)
 
-    expect(screen.getAllByText('Oraxol').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Obsidian').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByRole('link', { name: 'Work' })).toHaveAttribute('href', '#portfolio')
     expect(screen.getByRole('link', { name: 'Blog' })).toHaveAttribute('href', '#blog')
     expect(screen.getByRole('link', { name: 'About' })).toHaveAttribute('href', '#team')

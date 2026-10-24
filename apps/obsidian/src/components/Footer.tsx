@@ -15,7 +15,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
         {/* Brand */}
         <div>
-          <h2 className="text-xl font-bold text-white">Oraxol</h2>
+          <h2 className="text-xl font-bold text-white">Obsidian</h2>
           <p className="mt-4 text-sm leading-relaxed">
             A small river named Duden flows by their place and supplies it with the necessary
             regelialia.
@@ -158,7 +158,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-4 py-5 sm:flex-row sm:px-6">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} Oraxol. All rights reserved.
+            &copy; {new Date().getFullYear()} Obsidian. All rights reserved.
           </p>
           <p className="text-xs text-muted">
             Made with{' '}

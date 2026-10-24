@@ -1,9 +1,9 @@
 import { MessageCircle } from 'lucide-react'
 
 const posts = [
-  { id: 1, seed: 'oraxol-blog-1' },
-  { id: 2, seed: 'oraxol-blog-2' },
-  { id: 3, seed: 'oraxol-blog-3' },
+  { id: 1, seed: 'obsidian-blog-1' },
+  { id: 2, seed: 'obsidian-blog-2' },
+  { id: 3, seed: 'obsidian-blog-3' },
 ] as const
 
 export function Blog() {

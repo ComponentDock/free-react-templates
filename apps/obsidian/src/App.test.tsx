@@ -6,7 +6,7 @@ describe('App', () => {
   it('renders all major sections and sets the document title', () => {
     render(<App />)
 
-    expect(document.title).toBe('Oraxol — Portfolio & Creative Agency')
+    expect(document.title).toBe('Obsidian — Portfolio & Creative Agency')
 
     expect(screen.getByRole('banner')).toBeInTheDocument()
     expect(screen.getByRole('contentinfo')).toBeInTheDocument()

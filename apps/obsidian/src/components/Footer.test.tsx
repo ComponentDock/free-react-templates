@@ -6,7 +6,7 @@ describe('Footer', () => {
   it('renders the brand name and description', () => {
     render(<Footer />)
 
-    expect(screen.getByRole('heading', { level: 2, name: 'Oraxol' })).toHaveTextContent('Oraxol')
+    expect(screen.getByRole('heading', { level: 2, name: 'Obsidian' })).toHaveTextContent('Obsidian')
     expect(screen.getByText(/small river named Duden/i)).toBeInTheDocument()
   })
 

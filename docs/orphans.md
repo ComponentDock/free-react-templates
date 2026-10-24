@@ -862,7 +862,7 @@ template-newsbyte                   magnews                    -> apps/pressbox 
 template-newscast                   aznews                     -> apps/frontpage          (row 2194, row)
 template-nexnode                    hosthub                    -> apps/uplink             (row 3059, row)
 template-nocturnal                  bootstrap-buttons-12       -> apps/btnridge           (row 674, row)
-template-noir                       oraxol                     -> apps/oraxol             (row 2539, banner)
+template-noir                       oraxol                     -> apps/obsidian             (row 2539, banner)
 template-nonet                      checkbox-19                -> apps/checkpad           (row 751, banner)
 template-notifly                    dropdown-15                -> apps/pings              (row 770, banner)
 template-novaside                   colorlib-sidebar-v03       -> apps/sidenote           (row 2804, row)

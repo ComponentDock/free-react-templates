@@ -1,4 +1,4 @@
-# Template: Oraxol (Portfolio / Creative Agency)
+# Template: Obsidian (Portfolio / Creative Agency)
 
 ## Purpose
 
@@ -23,11 +23,11 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 
 #### Scenario: 1. Navigation Header
 
-- **Requirement:** The header shall display the brand logo ("Oraxol"), navigation links ("Work", "Blog", "About", "Contact"), and a search or menu action.
+- **Requirement:** The header shall display the brand logo ("Obsidian"), navigation links ("Work", "Blog", "About", "Contact"), and a search or menu action.
 - **Scenario:** Viewing the header
-- **GIVEN** the user loads the Oraxol landing page
+- **GIVEN** the user loads the Obsidian landing page
 - **WHEN** the navigation bar is rendered
-- **THEN** it shows the "Oraxol" logo and links for Work, Blog, About, and Contact
+- **THEN** it shows the "Obsidian" logo and links for Work, Blog, About, and Contact
 
 ### 2. Hero Section
 
@@ -105,7 +105,7 @@ Stack: Vite, React 19, Tailwind CSS 4, TypeScript.
 - [ ] All sections implemented with 100% test coverage
 - [x] Footer links to `https://www.componentdock.com/`
 - [x] No mention of ColorLib in app source code
-- [x] 1. Navigation Header — it shows the "Oraxol" logo and links for Work, Blog, About, and Contact
+- [x] 1. Navigation Header — it shows the "Obsidian" logo and links for Work, Blog, About, and Contact
 - [ ] 2. Hero Section — it presents the core value proposition and freelance availability indicator
 - [ ] 3. Services / Solutions Section — each card shows a title, description, and icon
 - [ ] 4. Portfolio / Gallery Section — multiple design project cards are displayed with hover effects

@@ -13,6 +13,20 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Oraxol → Obsidian (2026-10-24l)
+
+**4 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/pawpal`, `apps/petsitting`, `apps/petvet`, `apps/unioncorp`), plus
+`apps/itkol`, which a name-only test still cannot see. `apps/oraxol` → `obsidian`
+cleared the sixth of the eight visible violations; the source name survives only
+in the spec's `ColorLib "Oraxol"` provenance line, the reference's own
+colorlib.com URLs and `oraxol-free-template.jpg`, because the token evidence
+quotes the source sheets' measured declarations verbatim. The design is
+unchanged — same near-black canvas (`#161719`/`#18191c`), Poppins, same eight
+bands (nav, hero, services, portfolio, testimonials, team, blog, footer). `midnight`/`onyx`/`noir`/`umbra` were all already taken by prep specs, so
+the app ships as `obsidian`; `openspec/specs/template-noir` keeps its
+`SHIPPED-UNDER → apps/obsidian` pointer and `docs/orphans.md` follows.
+
 ## State after Nurture → Cradle (2026-10-24k, #1845)
 
 **5 apps reuse their source name** (`node scripts/audit-naming.mjs`:

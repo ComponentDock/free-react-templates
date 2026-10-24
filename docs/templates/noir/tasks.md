@@ -1,7 +1,7 @@
 # Noir (ColorLib Oraxol) — Tasks & Design Notes
 <!-- prep-status: shipped-as=oraxol -->
 > **SHIPPED-UNDER** — the ColorLib `oraxol` design this prep describes shipped
-> as `apps/oraxol` (<https://oraxol.free.componentdock.com>).
+> as `apps/obsidian` (<https://obsidian.free.componentdock.com>).
 > The unchecked items below are prep history, not outstanding work.
 
 > Prep artifacts prepared on `main` by the prep stream. Implementation ships
@@ -126,7 +126,7 @@ decoration-…`); pill button "Available for freelance work" +
 
 ## Tasks (implementation checklist)
 
-- [x] Scaffold `apps/noir` from the simplest existing app; rename package to — superseded: shipped as `apps/oraxol`
+- [x] Scaffold `apps/noir` from the simplest existing app; rename package to — superseded: shipped as `apps/obsidian`
       `@free-react-templates/noir`; `public/CNAME` `noir.free.componentdock.com`;
       homepage `https://noir.free.componentdock.com`; `npm install` at root
       so the lockfile registers the workspace (deploy Action runs `npm ci`)
