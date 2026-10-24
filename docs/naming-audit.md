@@ -13,6 +13,21 @@ node scripts/audit-naming.mjs           # report only
 node scripts/audit-naming.mjs --strict  # exit 1 when violations exist
 ```
 
+## State after Unioncorp → Meridia (2026-10-24m)
+
+**3 apps reuse their source name** (`node scripts/audit-naming.mjs`:
+`apps/pawpal`, `apps/petsitting`, `apps/petvet`), plus `apps/itkol`, which a
+name-only test still cannot see. `apps/unioncorp` → `meridia` cleared the
+seventh of the eight visible violations; the source name survives only in the
+spec's `ColorLib "Unioncorp"` provenance lines, the reference's own colorlib.com
+URLs and `unioncorp-colorlib-template.jpg`, because the token evidence quotes
+the source sheets' measured declarations verbatim. The design is unchanged —
+same bright blue (`#4f86f9`), deep navy (`#052c43`), green accent (`#3bd381`),
+Poppins, same thirteen bands. Three `Unioncorp` rows in `TEMPLATES.md` (632,
+1397, 1766) now point at `meridia`. The app's `index.css` token comment was
+rewritten as a design-token note, closing the remaining `ColorLib` string in an
+app source file.
+
 ## State after Oraxol → Obsidian (2026-10-24l, #1846)
 
 **4 apps reuse their source name** (`node scripts/audit-naming.mjs`:

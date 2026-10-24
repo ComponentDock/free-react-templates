@@ -1,14 +1,14 @@
-# Unioncorp — Implementation Tasks
+# Meridia — Implementation Tasks
 
-Source design: **Unioncorp** (`https://colorlib.com/wp/template/unioncorp/`) → recreation name **unioncorp**. Shipped at https://unioncorp.free.componentdock.com.
+Source design: **Unioncorp** (`https://colorlib.com/wp/template/unioncorp/`) → recreation name **meridia**. Shipped at https://meridia.free.componentdock.com.
 
 Scope: A Financial & Business Consulting template with hero banner, services grid, statistics & counters and footer attribution sections.
 
-> The spec carries no section-level requirements (it predates that convention), so THIS brief is the authoritative structure: the order below is the shipped order in `apps/unioncorp/src/App.tsx`.
+> The spec carries no section-level requirements (it predates that convention), so THIS brief is the authoritative structure: the order below is the shipped order in `apps/meridia/src/App.tsx`.
 
 ## Component breakdown
 
-Render order as composed in `apps/unioncorp/src/App.tsx`:
+Render order as composed in `apps/meridia/src/App.tsx`:
 
 ### 1. TopBar
 - No dedicated spec block — hold this band to the design notes.
@@ -16,7 +16,7 @@ Render order as composed in `apps/unioncorp/src/App.tsx`:
 
 ### 2. Navbar
 - No dedicated spec block — hold this band to the design notes.
-- Anchors: navigation · Main navigation · Unioncorp. · Finance & Consultation · Get Started
+- Anchors: navigation · Main navigation · Meridia. · Finance & Consultation · Get Started
 
 ### 3. Hero
 - No dedicated spec block — hold this band to the design notes.
@@ -60,14 +60,14 @@ Render order as composed in `apps/unioncorp/src/App.tsx`:
 
 ### 13. Footer
 - No dedicated spec block — hold this band to the design notes.
-- Anchors: contentinfo · Unioncorp. · Services · Recent Posts · Have a Questions? · San Francisco, California, USA
+- Anchors: contentinfo · Meridia. · Services · Recent Posts · Have a Questions? · San Francisco, California, USA
 
 ## Verification
 
-- [x] `apps/unioncorp` ships on https://unioncorp.free.componentdock.com
+- [x] `apps/meridia` ships on https://meridia.free.componentdock.com
 - [x] Typecheck / lint / tests / build pass at the repo gate
 - [x] Section order and copy match the design notes
-- [x] No source-designer name, source URL or source template name under `apps/unioncorp/`
+- [x] No source-designer name, source URL or source template name under `apps/meridia/`
 - [x] Footer links Component Dock
 
 ## Delivery contract (repo rules — non-negotiable)
@@ -78,8 +78,8 @@ Render order as composed in `apps/unioncorp/src/App.tsx`:
 - **Source credit is reading, not copy.** Where the research above quotes the
   source's own credit string ("… made with ♥ by …"), it is what the source band
   renders: the recreation replaces it with the Component Dock credit.
-- **Provenance ban.** No file under `apps/unioncorp/` may name the source designer,
+- **Provenance ban.** No file under `apps/meridia/` may name the source designer,
   carry a `colorlib.com` URL, or reuse the source template's name — code,
   comments, CSS, markup, metadata and filenames included (AGENTS.md rule 5).
-- **Deploy identity.** `apps/unioncorp/public/CNAME` = `unioncorp.free.componentdock.com`
-  and the package `homepage` = `https://unioncorp.free.componentdock.com`.
+- **Deploy identity.** `apps/meridia/public/CNAME` = `meridia.free.componentdock.com`
+  and the package `homepage` = `https://meridia.free.componentdock.com`.

@@ -13,7 +13,7 @@ export function Hero({ className }: HeroProps) {
     >
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: 'url(https://picsum.photos/seed/unioncorp-hero/1920/800)' }}
+        style={{ backgroundImage: 'url(https://picsum.photos/seed/meridia-hero/1920/800)' }}
       />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h1 className="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">

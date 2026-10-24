@@ -19,7 +19,7 @@ export function Navbar({ className }: NavbarProps) {
     >
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <a href="#" className="flex flex-col leading-tight text-ink">
-          <span className="text-xl font-bold">Unioncorp.</span>
+          <span className="text-xl font-bold">Meridia.</span>
           <span className="text-xs text-smoke">Finance & Consultation</span>
         </a>
 

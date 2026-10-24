@@ -1,9 +1,9 @@
 # Template: Fiduciary (Finance & Consultation)
-<!-- prep-status: shipped-as=unioncorp -->
+<!-- prep-status: shipped-as=meridia -->
 > **SHIPPED-UNDER** — the ColorLib `unioncorp` design this prep describes already
-> ships as `apps/unioncorp` (<https://unioncorp.free.componentdock.com>).
+> ships as `apps/meridia` (<https://meridia.free.componentdock.com>).
 > Do not scaffold `apps/fiduciary`: the unchecked items below are prep history, not work.
-> Fidelity reference: `openspec/specs/template-unioncorp/spec.md`.
+> Fidelity reference: `openspec/specs/template-meridia/spec.md`.
 
 ## Purpose
 
