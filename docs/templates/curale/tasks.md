@@ -25,7 +25,7 @@
   in medical excellence" headline, blue "TAKE APPOINTMENT" button), right =
   doctor-with-stethoscope photo. Modern airy sans-serif typography.
 - **KEY DIFFERENCES vs other medical preps — do NOT copy:** Medico
-  (shipped, `apps/medico`) and Medicalcenter → Clinica (`template-clinica`)
+  (shipped, `apps/sanara`) and Medicalcenter → Clinica (`template-clinica`)
   are different designs. Curale is the **blue-cyan-gradient clinic**:
   Ubuntu+Roboto fonts, `#244cfd → #15e4fd` gradient CTAs, `#f9f9fd` card
   sections, dark `#12151f` footer with newsletter + Instagram feed,
@@ -75,7 +75,7 @@ rgba(21,228,253,0.9), rgba(36,76,253,0.9))`; inputs w100% p12-20 no
 
 ## Task list (implementation order)
 
-1. [ ] Scaffold app: copy the simplest existing app (e.g. `apps/medico`),
+1. [ ] Scaffold app: copy the simplest existing app (e.g. `apps/sanara`),
        rename package to `@free-react-templates/curale`, add workspace
        entry (root `npm install` so `package-lock.json` registers it).
 2. [ ] `index.html`: title "Curale — Medical Clinic Template", Google Fonts
