@@ -96,10 +96,11 @@ provenance-only.
 
 Both corrections make the rule-5 audit **louder, not quieter**: the folders
 `apps/jobboard` and `apps/medical` now normalise to their own source slug, so
-`verify-provenance-grammar.py` reports them as `RULE5` (8 → 10 violations, one of
-them `RULE5-HIDDEN`). That is the correct reading of the repo — the wrong spec
-was hiding two unchanged source names. Renaming is the rename stream's call, not
-the prep stream's.
+`verify-provenance-grammar.py` lists them among the `RULE5` violations (it read
+8 `RULE5` + 1 `RULE5-HIDDEN` before this run; `justlaw` was renamed to `lexon`
+concurrently, and the two corrections replace it: 9 + 1 after). That is the
+correct reading of the repo — the wrong spec was hiding two unchanged source
+names. Renaming is the rename stream's call, not the prep stream's.
 
 ## Queue (docs-only, in order of yield)
 
