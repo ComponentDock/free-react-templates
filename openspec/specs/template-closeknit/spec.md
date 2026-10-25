@@ -4,7 +4,7 @@
 
 A subscription landing page for a **deliberately small social network**: the whole page argues one
 idea — posts go to a circle you choose, nothing is ranked, nothing is public, and there is no
-advertising business to protect. Every band is built to *prove* that claim rather than say it: a
+advertising business to protect. Every band is built to _prove_ that claim rather than say it: a
 typewriter headline, a four-cell counter strip, a masonry feed of five invented posts that each name
 the circle they went to, six circle cards, four member cards with "in N circles with you", a privacy
 band that reads as a spec sheet of defaults, three subscription tiers with a monthly/yearly switch,
@@ -14,29 +14,29 @@ Recreation of the ColorLib **"Circles"** design (https://colorlib.com/wp/templat
 preview https://preview.colorlib.com/theme/circles/) as a React 19 + Vite + Tailwind CSS 4 +
 TypeScript single-page application.
 
-* **Source slug:** `circles`
-* **ColorLib page:** https://colorlib.com/wp/template/circles/ — HTTP 200, 111,467 B, `<title>`
+- **Source slug:** `circles`
+- **ColorLib page:** https://colorlib.com/wp/template/circles/ — HTTP 200, 111,467 B, `<title>`
   **"Circles - Social Network Website Template 2026 - Colorlib"**
-* **Live preview:** https://preview.colorlib.com/theme/circles/ — HTTP 200, 92,289 B, page
+- **Live preview:** https://preview.colorlib.com/theme/circles/ — HTTP 200, 92,289 B, page
   `<title>` **"Home | Circles"** (read 2026-10-25 with `curl -4`; this host resolves an IPv6 address
   that is banned, so every fetch needs `-4`)
-* **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/circles-template.jpg
+- **Screenshot:** https://colorlib.com/wp/wp-content/uploads/sites/2/circles-template.jpg
   (served as **JPEG**, 311,833 B, 2400×1892 — a macOS-window-framed capture of the header, the whole
   hero and the hero figure; nothing below the hero is visible in it)
-* **New name:** `closeknit` (apps/closeknit, `@free-react-templates/closeknit`) — one lowercase word
-  meaning *close-knit*, i.e. the small trusted group the product is about; differs from the source
+- **New name:** `closeknit` (apps/closeknit, `@free-react-templates/closeknit`) — one lowercase word
+  meaning _close-knit_, i.e. the small trusted group the product is about; differs from the source
   slug and has **zero** substring hits repo-wide (`git grep -i closeknit origin/main` → empty), no
   `apps/closeknit`, no `openspec/specs/template-closeknit/`, no `docs/templates/closeknit/`, and no
   `**Closeknit**` bold name in `TEMPLATES.md`
-* **Deploy target:** https://closeknit.free.componentdock.com (`apps/closeknit/public/CNAME`,
+- **Deploy target:** https://closeknit.free.componentdock.com (`apps/closeknit/public/CNAME`,
   `homepage` in `apps/closeknit/package.json`)
-* **Category:** **no `TEMPLATES.md` row exists yet** — see *Why this design has no row* below.
+- **Category:** **no `TEMPLATES.md` row exists yet** — see _Why this design has no row_ below.
   Suggested home: `## App Landing Page (35)` (line 54), the section that already holds the
   product/subscription landings (`appco` → `flowly`, `appy` → `tandem`, `massive` → `appmint`).
 
 ### Why this design has no row (catalogue gap, measured 2026-10-24)
 
-`TEMPLATES.md` is exhausted — 0 `- [ ]`, 2,857 `[x]`, every row resolving to an app and a spec — but
+`TEMPLATES.md` is exhausted — 0 `- [x]`, 2,857 `[x]`, every row resolving to an app and a spec — but
 the **catalogue is not complete**: all 40 pages of https://colorlib.com/wp/templates/ were crawled
 and compared with the 1,631 slugs the checklist cites, and **256 designs are on the listing that the
 checklist never recorded** (42 standalone + 214 snippet variants). The census, its commands, the open
@@ -59,18 +59,18 @@ Do not invent a second row for the same slug.
 
 ## Reference readings (2026-10-25, `curl -4`)
 
-| artefact | bytes | sha256 |
-| --- | ---: | --- |
-| `theme/circles/` page (DOM authority) | 92,289 | `c634579cd48e0176a68ca1a0f054130ef7acc8374019b8573853014e04ad37e0` |
-| `theme/circles/_astro/Base.D79t8nIj.css` (token authority) | 63,718 | `db40d037cec30cbdd660896b89c6f73b175ebd187c76aa39151d63707f5759fa` |
-| `theme/circles/_astro/Base.astro_astro_type_script_index_0_lang.BLoalVWc.js` | 16,233 | `e26cc055dec23e63fafecd3386a2edaa4132534a9c945f6210adec2fd90a92f2` |
-| `theme/circles/_astro/ClientRouter.astro…CYDbzu1r.js` | 16,357 | `69eb3ac5c16a8d9a6aee7b815f71aa468701cc9c731c9dd5660b58e0dd5e399c` (view-transition router; no design content) |
-| inline `<style>` in the page (9,816 B — the **only** font source) | — | Manrope 300/400/500/600/700/800, `@font-face` pointing at the preview's own `/cf-fonts/v/manrope/5.2.8/{latin,latin-ext,cyrillic,cyrillic-ext,greek,vietnamese}/wght/normal.woff2`, `font-display: swap` |
-| catalog screenshot `circles-template.jpg` | 311,833 | `ce9c50df146398bfa8fa67dce005b2354c450c0c0b05311765a3fe0711bcb829` (real JPEG, 2400×1892 — see §Screenshot analysis) |
-| `colorlib.com/wp/template/circles/` (catalog entry) | 111,467 | — |
-| `assets/img/logo.svg` / `logo-light.svg` | 487 / 487 | `98e431836cf6dfebd1da87b3e9ccbf301268a92bec112646383e8ff7cfdf3821` / `59c47cd36846b3425b267de3fe55c209112bd4ffac7d59ac6b15043cee070460` |
-| `favicon.svg` | 377 | `5d183df4c100257454ea9657642d6dcdbee62f744542c97b5b6c64b3075d9aa7` |
-| `downloads/free/circles.zip` | — | **HTTP 404** — there is no archive twin, so the live preview is the sole DOM/CSS reference |
+| artefact                                                                     |     bytes | sha256                                                                                                                                                                                                   |
+| ---------------------------------------------------------------------------- | --------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `theme/circles/` page (DOM authority)                                        |    92,289 | `c634579cd48e0176a68ca1a0f054130ef7acc8374019b8573853014e04ad37e0`                                                                                                                                       |
+| `theme/circles/_astro/Base.D79t8nIj.css` (token authority)                   |    63,718 | `db40d037cec30cbdd660896b89c6f73b175ebd187c76aa39151d63707f5759fa`                                                                                                                                       |
+| `theme/circles/_astro/Base.astro_astro_type_script_index_0_lang.BLoalVWc.js` |    16,233 | `e26cc055dec23e63fafecd3386a2edaa4132534a9c945f6210adec2fd90a92f2`                                                                                                                                       |
+| `theme/circles/_astro/ClientRouter.astro…CYDbzu1r.js`                        |    16,357 | `69eb3ac5c16a8d9a6aee7b815f71aa468701cc9c731c9dd5660b58e0dd5e399c` (view-transition router; no design content)                                                                                           |
+| inline `<style>` in the page (9,816 B — the **only** font source)            |         — | Manrope 300/400/500/600/700/800, `@font-face` pointing at the preview's own `/cf-fonts/v/manrope/5.2.8/{latin,latin-ext,cyrillic,cyrillic-ext,greek,vietnamese}/wght/normal.woff2`, `font-display: swap` |
+| catalog screenshot `circles-template.jpg`                                    |   311,833 | `ce9c50df146398bfa8fa67dce005b2354c450c0c0b05311765a3fe0711bcb829` (real JPEG, 2400×1892 — see §Screenshot analysis)                                                                                     |
+| `colorlib.com/wp/template/circles/` (catalog entry)                          |   111,467 | —                                                                                                                                                                                                        |
+| `assets/img/logo.svg` / `logo-light.svg`                                     | 487 / 487 | `98e431836cf6dfebd1da87b3e9ccbf301268a92bec112646383e8ff7cfdf3821` / `59c47cd36846b3425b267de3fe55c209112bd4ffac7d59ac6b15043cee070460`                                                                  |
+| `favicon.svg`                                                                |       377 | `5d183df4c100257454ea9657642d6dcdbee62f744542c97b5b6c64b3075d9aa7`                                                                                                                                       |
+| `downloads/free/circles.zip`                                                 |         — | **HTTP 404** — there is no archive twin, so the live preview is the sole DOM/CSS reference                                                                                                               |
 
 The preview is an **Astro 5 build with Tailwind 4.3.3 output**: one stylesheet, one deferred kit
 script, one client router, no framework bundle. Every band carries `dark:` variants (the sheet
@@ -84,7 +84,7 @@ compiled rule in `Base.D79t8nIj.css` verbatim, and the only two that do not (`[&
 is no comingsoon_13-style "class with no rule" to floor into the spec.
 
 **Fonts load in the source** — the `@font-face` rules live in an inline `<style>` block, not in the
-CSS file, so grepping the sheet alone looks like a missing face. Manrope is the *whole* UI (the html
+CSS file, so grepping the sheet alone looks like a missing face. Manrope is the _whole_ UI (the html
 element itself is `font-family: Manrope, system-ui, sans-serif; line-height: 1.5`), and no other
 family is loaded. The recreation loads Manrope (300/400/500/600/700/800) from Google Fonts via
 `<link>` in `index.html`; `css2?family=Manrope` and
@@ -97,92 +97,92 @@ family is loaded. The recreation loads Manrope (300/400/500/600/700/800) from Go
 
 The design does **not** define custom theme tokens; it uses Tailwind's `sky` scale, compiled to the
 literals below. This is the single most important fidelity fact on the page: the brand blue is
-`#0284c7`, *not* an indigo/violet.
+`#0284c7`, _not_ an indigo/violet.
 
-| token | hex | where the reference uses it |
-| --- | --- | --- |
-| `primary-50` | `#f0f9ff` | **hero gradient start** (`from-primary-50`), person-circle chips, hero badge ground |
+| token         | hex       | where the reference uses it                                                                              |
+| ------------- | --------- | -------------------------------------------------------------------------------------------------------- |
+| `primary-50`  | `#f0f9ff` | **hero gradient start** (`from-primary-50`), person-circle chips, hero badge ground                      |
 | `primary-100` | `#e0f2fe` | eyebrow pills (`Circles`, `Plans`, `Why people moved`, `Questions`), testimonial avatar discs, hero blob |
-| `primary-200` | `#bae6fd` | hero badge border, hero blob, privacy call-out border |
-| `primary-300` | `#7dd3fc` | dark-mode text accent only |
-| `primary-400` | `#38bdf8` | **typewriter gradient end**, review stars, avatar gradient start, dark-mode accents |
-| `primary-500` | `#0ea5e9` | focus rings, badge dot, avatar gradient mid-stop |
-| `primary-600` | `#0284c7` | **brand** — every solid button, pricing ring, toggle-fill, progress bar, link accents |
-| `primary-700` | `#0369a1` | button hover, eyebrow-pill text, chip text, closing-CTA label colour |
-| `primary-800` | `#075985` | **closing CTA gradient end** (`to-primary-800`) |
-| `primary-900` | `#0c4a6e` | dark-mode grounds only (not used in the light recreation) |
+| `primary-200` | `#bae6fd` | hero badge border, hero blob, privacy call-out border                                                    |
+| `primary-300` | `#7dd3fc` | dark-mode text accent only                                                                               |
+| `primary-400` | `#38bdf8` | **typewriter gradient end**, review stars, avatar gradient start, dark-mode accents                      |
+| `primary-500` | `#0ea5e9` | focus rings, badge dot, avatar gradient mid-stop                                                         |
+| `primary-600` | `#0284c7` | **brand** — every solid button, pricing ring, toggle-fill, progress bar, link accents                    |
+| `primary-700` | `#0369a1` | button hover, eyebrow-pill text, chip text, closing-CTA label colour                                     |
+| `primary-800` | `#075985` | **closing CTA gradient end** (`to-primary-800`)                                                          |
+| `primary-900` | `#0c4a6e` | dark-mode grounds only (not used in the light recreation)                                                |
 
 ### Accent ramp — `accent` (fuchsia)
 
-A second, genuinely-used brand hue — it is *not* decoration: it colours the heart reaction, the
+A second, genuinely-used brand hue — it is _not_ decoration: it colours the heart reaction, the
 avatar gradients and two of the five eyebrow pills.
 
-| token | hex | where |
-| --- | --- | --- |
-| `accent-100` | `#fae8ff` | **`Your feed` and `People` eyebrow pills** |
-| `accent-300` | `#f0abfc` | dark-mode text accent only |
+| token        | hex       | where                                                    |
+| ------------ | --------- | -------------------------------------------------------- |
+| `accent-100` | `#fae8ff` | **`Your feed` and `People` eyebrow pills**               |
+| `accent-300` | `#f0abfc` | dark-mode text accent only                               |
 | `accent-500` | `#d946ef` | **heart icons** (`text-accent-500`), avatar gradient end |
-| `accent-700` | `#a21caf` | eyebrow-pill text on the two accent pills |
+| `accent-700` | `#a21caf` | eyebrow-pill text on the two accent pills                |
 
 The logo SVG uses `#c026d3` (fuchsia-600) as its third circle, i.e. the mark sits between the two
 ramps.
 
 ### Grays, and the stock Tailwind values below them
 
-| token | hex | where |
-| --- | --- | --- |
-| body ink | `#111827` | `body` colour (`gray-900`); also the footer ground and `nav-active` text |
-| `gray-50` | `#f9fafb` | **stats band**, circles band, privacy band, testimonials band grounds; pricing card ground; `btn-secondary` hover |
-| `gray-100` | `#f3f4f6` | post-type badges (`Photo`, `Poll`), FAQ icon discs, mobile-CTA secondary button, closing-CTA hover |
-| `gray-200` | `#e5e7eb` | header bottom border, stats-band borders, all card borders, FAQ dividers, billing-switch track |
-| `gray-300` | `#d1d5db` | hero secondary button border, cookie `Decline` button border |
-| `gray-400` | `#9ca3af` | excluded pricing features (`×` glyphs), footer brand copy |
-| `gray-500` | `#6b7280` | handles (`@lea`), meta lines, legal bar, placeholders |
-| `gray-600` | `#4b5563` | **all band ledes and card body copy** |
-| `gray-700` | `#374151` | feed post body, secondary-button label, included feature text |
-| `gray-800` | `#1f2937` | footer social tiles, newsletter field, footer link hover ground |
-| `gray-900` | `#111827` | **footer ground**, headline colour |
+| token      | hex       | where                                                                                                             |
+| ---------- | --------- | ----------------------------------------------------------------------------------------------------------------- |
+| body ink   | `#111827` | `body` colour (`gray-900`); also the footer ground and `nav-active` text                                          |
+| `gray-50`  | `#f9fafb` | **stats band**, circles band, privacy band, testimonials band grounds; pricing card ground; `btn-secondary` hover |
+| `gray-100` | `#f3f4f6` | post-type badges (`Photo`, `Poll`), FAQ icon discs, mobile-CTA secondary button, closing-CTA hover                |
+| `gray-200` | `#e5e7eb` | header bottom border, stats-band borders, all card borders, FAQ dividers, billing-switch track                    |
+| `gray-300` | `#d1d5db` | hero secondary button border, cookie `Decline` button border                                                      |
+| `gray-400` | `#9ca3af` | excluded pricing features (`×` glyphs), footer brand copy                                                         |
+| `gray-500` | `#6b7280` | handles (`@lea`), meta lines, legal bar, placeholders                                                             |
+| `gray-600` | `#4b5563` | **all band ledes and card body copy**                                                                             |
+| `gray-700` | `#374151` | feed post body, secondary-button label, included feature text                                                     |
+| `gray-800` | `#1f2937` | footer social tiles, newsletter field, footer link hover ground                                                   |
+| `gray-900` | `#111827` | **footer ground**, headline colour                                                                                |
 
 One non-palette accent: the `Save 20%` pill is stock Tailwind `green-100` ground / `green-700` text
 (≈ `#dcfce7` / `#15803d`, both compiled as `var(--color-green-*)` `oklch()` tokens).
 
 ### Typography
 
-* **Family:** `Manrope, system-ui, sans-serif` for all text (weights 300/400/500/600/700/800); the
+- **Family:** `Manrope, system-ui, sans-serif` for all text (weights 300/400/500/600/700/800); the
   only `monospace` reference is the framework default (`--font-mono`) and nothing on the page uses it.
-* **h1:** `text-4xl sm:text-5xl lg:text-6xl` (2.25 → 3 → 3.75 rem), `font-bold`, `tracking-tight`
+- **h1:** `text-4xl sm:text-5xl lg:text-6xl` (2.25 → 3 → 3.75 rem), `font-bold`, `tracking-tight`
   (−0.025em), `text-gray-900`, centred, `max-w-4xl`. The second line is a `<span class="text-gradient">`
   — `linear-gradient(to right, #0284c7, #38bdf8)` with `background-clip: text` and transparent text.
-* **h2 (band heads):** `text-3xl sm:text-4xl` (1.875 → 2.25 rem), `tracking-tight`;
+- **h2 (band heads):** `text-3xl sm:text-4xl` (1.875 → 2.25 rem), `tracking-tight`;
   `font-extrabold` on the feed / circles / people / privacy bands, `font-bold` on pricing /
   testimonials / FAQ; `text-gray-900`; contact h2 is `text-white` at `text-3xl sm:text-4xl lg:text-5xl`.
-* **h3 (card titles):** feed posts have no h3; circle cards `text-lg font-bold`; person cards
+- **h3 (card titles):** feed posts have no h3; circle cards `text-lg font-bold`; person cards
   `font-bold`; privacy items `font-bold`; pricing tiers `text-xl font-semibold`.
-* **Body:** band ledes `text-lg text-gray-600` (`sm:text-xl` in the hero); card copy `text-sm
-  leading-relaxed text-gray-600`; feed post body `text-sm leading-relaxed text-gray-700`; meta and
+- **Body:** band ledes `text-lg text-gray-600` (`sm:text-xl` in the hero); card copy `text-sm
+leading-relaxed text-gray-600`; feed post body `text-sm leading-relaxed text-gray-700`; meta and
   footer `text-xs`/`text-sm` in `gray-500`/`gray-400`.
-* **Eyebrow pills:** `inline-flex rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider`
+- **Eyebrow pills:** `inline-flex rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider`
   — ground `primary-100`, text `primary-700`, **or** ground `accent-100`, text `accent-700`
   (the feed and people bands use the accent pair; circles, privacy, pricing, testimonials and FAQ use
   the primary pair).
-* **Post-type badge:** `rounded-full bg-gray-100 px-2.5 py-0.5 text-[10px] font-bold uppercase
-  tracking-wide text-gray-600` (`Photo`, `Poll`).
-* **Numerals:** every count (`24`, `7`, `6 members`, `9 avg`) is `tabular-nums`.
+- **Post-type badge:** `rounded-full bg-gray-100 px-2.5 py-0.5 text-[10px] font-bold uppercase
+tracking-wide text-gray-600` (`Photo`, `Poll`).
+- **Numerals:** every count (`24`, `7`, `6 members`, `9 avg`) is `tabular-nums`.
 
 ### Buttons, forms, cards
 
-| element | measured |
-| --- | --- |
-| `.btn-primary` | `inline-flex`, `border-radius: 0.5rem` (`--radius-lg`), padding `0.625rem 1.25rem`, `font-size: 0.875rem`, weight 500, white, `background: #0284c7`, shadow `0 10px 15px -3px #0284c740, 0 4px 6px -4px #0284c740`; hover `#0369a1` + deeper shadow; focus ring 2 px `#0ea5e9`, offset 2 |
-| `.btn-secondary` | white ground, 1 px `#d1d5db` border, `#374151` text, same padding/radius; hover `#f9fafb`; focus ring 2 px `#6b7280` |
-| hero CTAs | `rounded-lg px-6 py-3 text-base font-medium`; primary `#0284c7` + `shadow-lg shadow-primary-600/25` + arrow icon, hover `#0369a1`; secondary white + 1 px `gray-300`, label `gray-700`, hover `gray-50` |
-| watch-demo control | 48 px (`h-12 w-12`) `rounded-full` `#0284c7` play disc with its own `shadow-lg`, label `text-sm font-medium` to its right; hover on the disc deepens the shadow |
-| billing switch | `h-7 w-14 rounded-full` track (`bg-gray-200` → `#0284c7` when yearly), 20 px white knob, `role="switch"` + `aria-checked`, knob travels 28 px |
-| closing CTA pair | white solid `px-8 py-4` label `#0369a1` (hover `#f3f4f6`) + **2 px** `border-white/30` outline with white label (hover `border-white` + `bg-white/10`), both `rounded-lg text-base font-medium` |
-| inputs | newsletter: `rounded-lg`, 1 px `gray-700` on `gray-800`, `px-4 py-2.5`, white text, placeholder `gray-500`, focus `border-primary-500` + 1 px `primary-500` ring; contact form (inner page): white ground, `border-gray-300`, focus ring `primary-500` |
-| cards | feed article `rounded-3xl border border-gray-200 bg-white p-5 shadow-sm`, hover `shadow-md`; circle card `rounded-3xl … overflow-hidden`, hover `-translate-y-1` + `shadow-lg`, image 128 px (`h-32`) with `group-hover:scale-105`; person card `rounded-3xl … p-6 text-center`; privacy item `rounded-2xl … p-5`; pricing card `rounded-2xl p-8 shadow-soft`, hover `shadow-soft-lg`, featured card adds `ring-2 ring-primary-600` and a `-top-4` `Most Popular` badge; testimonial card `rounded-2xl bg-white p-8 shadow-soft` |
-| avatars | feed 40 px (`h-10 w-10`) `rounded-full` **gradient** `from-primary-400 to-accent-500`, `text-xs font-bold`; person card 64 px (`h-16 w-16`) gradient `from-primary-400 via-primary-500 to-accent-500`, `text-lg font-extrabold`; testimonial 48 px solid `primary-100` / `primary-600` text |
-| privacy toggle glyph | 44 × 24 px (`h-6 w-11`) `rounded-full p-1`, `bg-primary-600` + knob `justify-end` (on) vs `bg-gray-200` + `justify-start` (off), `role="img"` with an `aria-label` mirroring the status line |
+| element              | measured                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `.btn-primary`       | `inline-flex`, `border-radius: 0.5rem` (`--radius-lg`), padding `0.625rem 1.25rem`, `font-size: 0.875rem`, weight 500, white, `background: #0284c7`, shadow `0 10px 15px -3px #0284c740, 0 4px 6px -4px #0284c740`; hover `#0369a1` + deeper shadow; focus ring 2 px `#0ea5e9`, offset 2                                                                                                                                                                                                                                         |
+| `.btn-secondary`     | white ground, 1 px `#d1d5db` border, `#374151` text, same padding/radius; hover `#f9fafb`; focus ring 2 px `#6b7280`                                                                                                                                                                                                                                                                                                                                                                                                             |
+| hero CTAs            | `rounded-lg px-6 py-3 text-base font-medium`; primary `#0284c7` + `shadow-lg shadow-primary-600/25` + arrow icon, hover `#0369a1`; secondary white + 1 px `gray-300`, label `gray-700`, hover `gray-50`                                                                                                                                                                                                                                                                                                                          |
+| watch-demo control   | 48 px (`h-12 w-12`) `rounded-full` `#0284c7` play disc with its own `shadow-lg`, label `text-sm font-medium` to its right; hover on the disc deepens the shadow                                                                                                                                                                                                                                                                                                                                                                  |
+| billing switch       | `h-7 w-14 rounded-full` track (`bg-gray-200` → `#0284c7` when yearly), 20 px white knob, `role="switch"` + `aria-checked`, knob travels 28 px                                                                                                                                                                                                                                                                                                                                                                                    |
+| closing CTA pair     | white solid `px-8 py-4` label `#0369a1` (hover `#f3f4f6`) + **2 px** `border-white/30` outline with white label (hover `border-white` + `bg-white/10`), both `rounded-lg text-base font-medium`                                                                                                                                                                                                                                                                                                                                  |
+| inputs               | newsletter: `rounded-lg`, 1 px `gray-700` on `gray-800`, `px-4 py-2.5`, white text, placeholder `gray-500`, focus `border-primary-500` + 1 px `primary-500` ring; contact form (inner page): white ground, `border-gray-300`, focus ring `primary-500`                                                                                                                                                                                                                                                                           |
+| cards                | feed article `rounded-3xl border border-gray-200 bg-white p-5 shadow-sm`, hover `shadow-md`; circle card `rounded-3xl … overflow-hidden`, hover `-translate-y-1` + `shadow-lg`, image 128 px (`h-32`) with `group-hover:scale-105`; person card `rounded-3xl … p-6 text-center`; privacy item `rounded-2xl … p-5`; pricing card `rounded-2xl p-8 shadow-soft`, hover `shadow-soft-lg`, featured card adds `ring-2 ring-primary-600` and a `-top-4` `Most Popular` badge; testimonial card `rounded-2xl bg-white p-8 shadow-soft` |
+| avatars              | feed 40 px (`h-10 w-10`) `rounded-full` **gradient** `from-primary-400 to-accent-500`, `text-xs font-bold`; person card 64 px (`h-16 w-16`) gradient `from-primary-400 via-primary-500 to-accent-500`, `text-lg font-extrabold`; testimonial 48 px solid `primary-100` / `primary-600` text                                                                                                                                                                                                                                      |
+| privacy toggle glyph | 44 × 24 px (`h-6 w-11`) `rounded-full p-1`, `bg-primary-600` + knob `justify-end` (on) vs `bg-gray-200` + `justify-start` (off), `role="img"` with an `aria-label` mirroring the status line                                                                                                                                                                                                                                                                                                                                     |
 
 Radii: `--radius-lg .5rem`, `--radius-xl .75rem`, `--radius-2xl 1rem`, `--radius-3xl 1.5rem`,
 pills `9999px`. Custom shadows: `shadow-soft` = `0 4px 16px -4px #0000001a`,
@@ -190,74 +190,74 @@ pills `9999px`. Custom shadows: `shadow-soft` = `0 4px 16px -4px #0000001a`,
 
 ### Rhythm
 
-* Sections: `py-20 sm:py-28` (feed, circles, people, privacy); `py-20 lg:py-28` (pricing,
+- Sections: `py-20 sm:py-28` (feed, circles, people, privacy); `py-20 lg:py-28` (pricing,
   testimonials, FAQ, contact); the hero `py-20 lg:py-32`; the stats band `py-16 lg:py-20`; the footer
   `pt-16 lg:pt-24` with `py-8` on the legal bar.
-* Container: `.container` = `width: 100%`, `margin-inline: auto`, `padding-inline` 1 → 1.5 → 2 → 2.5 →
+- Container: `.container` = `width: 100%`, `margin-inline: auto`, `padding-inline` 1 → 1.5 → 2 → 2.5 →
   3 rem across its max-width steps (`--container-2xl 42rem` … `--container-7xl 80rem`). Inner caps:
   `max-w-7xl` (circles, people), `max-w-5xl` (feed, privacy, hero figure), `max-w-4xl` (hero copy),
   `max-w-3xl` (pricing / testimonials / FAQ heads, contact block, FAQ list), `max-w-2xl` (band heads,
   hero lede), `max-w-xl` (contact lede), `max-w-xs` (footer blurb).
-* Band grounds alternate: `primary-50→white` gradient hero → `gray-50` stats → **white** feed →
+- Band grounds alternate: `primary-50→white` gradient hero → `gray-50` stats → **white** feed →
   `gray-50` circles → white people → `gray-50` privacy → white pricing → `gray-50` testimonials →
   white FAQ → `primary-600→primary-800` gradient contact → `gray-900` footer.
-* Header: `sticky top-0 z-50`, `bg-white/80 backdrop-blur-lg`, 1 px `gray-200` bottom border, 64 px
+- Header: `sticky top-0 z-50`, `bg-white/80 backdrop-blur-lg`, 1 px `gray-200` bottom border, 64 px
   tall (`lg: 80 px`); `shadow-lg` is added by script past `scrollY > 50`.
-* Grid: hero stats `grid-cols-2 sm:grid-cols-4`; feed is a **CSS multi-column** masonry
+- Grid: hero stats `grid-cols-2 sm:grid-cols-4`; feed is a **CSS multi-column** masonry
   (`columns-1 sm:columns-2`, `gap-5`, children `mb-5 break-inside-avoid`); circles
   `sm:grid-cols-2 lg:grid-cols-3`; people `sm:grid-cols-2 lg:grid-cols-4`; privacy
   `sm:grid-cols-2`; pricing `lg:grid-cols-3`; footer `lg:grid-cols-12` (brand 4 / links 5 / newsletter 3).
-* Decorative motion: two blurred blobs in the hero (`bg-primary-200/50`, `bg-primary-100/40`,
+- Decorative motion: two blurred blobs in the hero (`bg-primary-200/50`, `bg-primary-100/40`,
   `blur-3xl`, `h-[500px]`/`h-[400px]`) animated by `hero-float` — 8 s and 10 s (reversed) ease-in-out
   loops that translate ±30 px and scale 0.95–1.05, driven by `data-parallax` (0.15 / −0.1); a white
   radial-dot grid at 10 % opacity over the closing CTA (`radial-gradient(circle at 1px 1px, white 1px,
-  transparent 0)`, 40 px pitch).
+transparent 0)`, 40 px pitch).
 
 ## Reference document order (page chrome, header, ten bands, footer)
 
-| # | id | ground | content |
-| --- | --- | --- | --- |
-| — | `#preloader` | white | fixed full-screen overlay holding a 40 px `animate-spin` ring (`border-4` `gray-200` with a `primary-600` top edge), removed on `load` + 300 ms fade |
-| — | skip link | — | `#main-content`, visually hidden until focused |
-| — | `#scroll-progress` | — | fixed 2 px (`h-0.5`) `primary-600` bar, width = scrolled % |
-| — | `header` | white/80 blurred | three-circle logo mark + `Circles` wordmark; nav `Feed`, `Circles`, `People`, `Privacy`, `About`, `Plans`, `Blog`, `Contact`; dark-mode toggle; `Create your circle`; a mobile disclosure below `lg` (same eight links + CTA) |
-| 1 | hero | `primary-50`→white gradient + 2 blobs | badge `No public feed. No follower count. No algorithm.` (with a ping dot) · h1 `Share with the people` / **typewriter** `you actually meant` (`you actually meant` / `who were there` / `who will care`) · lede · `Create your circle` + `See how it works` + `Watch Demo` · four stats `9 avg / People per circle`, `0 / Ads served`, `100% / Chronological`, `2.8k / Circles created` · **hero figure**: one landscape photograph in a `rounded-2xl` `ring-1` `shadow-2xl` frame, `max-w-5xl` |
-| 2 | stats band | `gray-50`, `border-y` | four **animated counters** `9 / Average circle size`, `100% / Chronological feed`, `0 / Ads, ever`, `31 sec / Median export time` in `text-4xl lg:text-5xl` `primary-600` |
-| 3 | `#feed` | white | accent pill `Your feed`; h2 `Everything, in the order it happened`; lede `No ranking, no suggested posts… it says so and stops.`; **five** posts in a two-column masonry, each `avatar initials · name · in <circle> · time` + optional `Photo`/`Poll` badge + body + optional 4:3 image + `heart 24 · bubble 7` footer |
-| 4 | `#circles` | `gray-50` | primary pill `Circles`; h2 `A circle for each part of your life`; lede; **six** cards — 128 px image with a white `Private` / `Invite only` pill, h3 name, blurb, and a hairline row `N members` + `Active today/this week/this month` |
-| 5 | `#people` | white | accent pill `People`; h2 `Real connections, not a follower count`; lede; **four** cards — 64 px gradient avatar initials, name, `@handle`, blurb, circle chip list, `In N circles with you`, full-width `Follow` (`btn-primary`) |
-| 6 | `#privacy` | `gray-50` | primary pill `Privacy`; h2 `The settings other networks bury`; lede; **six** two-column items, each a switch glyph + h3 + body + a status line (`On by default` ×3, `Permanently off`, `Off by default`, `Always available`); a `primary-50` bordered call-out paragraph under the grid |
-| 7 | `#pricing` | white | primary pill `Plans`; h2 `You are the customer, so there is a price`; lede; **Monthly/Yearly switch** with a green `Save 20%` pill; **three** tiers (`Free $0`, `Member $5` + `Most Popular` ribbon + `ring-2`, `Family $12`), each a description, a price line, a billing note, five features (included `✓` in `primary-600` / excluded `×` in `gray-400`+`gray-500`), and a full-width CTA (`Start free` grey / `Become a member` / `Set up a family plan` blue) |
-| 8 | `#testimonials` | `gray-50` | primary pill `Why people moved`; h2 `Smaller turned out to be the feature`; lede; **carousel** of three `shadow-soft` cards — five `primary-400` stars, quote, 48 px `primary-100` initial disc, name + role; dots below, prev/next discs at `≥ sm`, 3 slides at `lg` / 2 at `sm` / 1 below, 5 s autoplay, pause on hover |
-| 9 | `#faq` | white | primary pill `Questions`; h2 `The things people check first`; lede `Mostly about what we do not do.`; **five** rows divided by hairlines, each a button with a 32 px `gray-100` `+` disc that rotates 45° when open; **exclusive** — opening one closes the rest |
-| 10 | `#contact` | `primary-600`→`primary-800` gradient + dot grid + 2 white blobs | h2 `Start with one circle`; one line; white solid `Create your circle` + 2 px outline `Read the privacy defaults` |
-| — | `footer` | `gray-900` | brand column (light logo, blurb, three `gray-800` social tiles, address, phone, email) · three link columns `Spaces` (4), `Company` (2), `Support` (2) · `Stay Updated` newsletter (`gray-800` field + `Subscribe`) · legal bar `© 2026 Circles. All rights reserved.` + `Privacy Policy` / `Terms of Service` / `Style Guide` |
-| — | `#mobile-cta` | white, `lg:hidden` | fixed bottom bar, two equal buttons — `Call Now` (`tel:`, `gray-100`) and `Book a Tour` (`#contact`, `primary-600`) |
-| — | `#cookie-consent` | white | `role="dialog"`, slides up 1.5 s after load, one sentence + `Decline` (outline) / `Accept All` (solid) |
-| — | `#back-to-top` | `primary-600` | 48 px circle, appears past 300 px, returns to top |
+| #   | id                 | ground                                                          | content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| --- | ------------------ | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| —   | `#preloader`       | white                                                           | fixed full-screen overlay holding a 40 px `animate-spin` ring (`border-4` `gray-200` with a `primary-600` top edge), removed on `load` + 300 ms fade                                                                                                                                                                                                                                                                                                                                             |
+| —   | skip link          | —                                                               | `#main-content`, visually hidden until focused                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| —   | `#scroll-progress` | —                                                               | fixed 2 px (`h-0.5`) `primary-600` bar, width = scrolled %                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| —   | `header`           | white/80 blurred                                                | three-circle logo mark + `Circles` wordmark; nav `Feed`, `Circles`, `People`, `Privacy`, `About`, `Plans`, `Blog`, `Contact`; dark-mode toggle; `Create your circle`; a mobile disclosure below `lg` (same eight links + CTA)                                                                                                                                                                                                                                                                    |
+| 1   | hero               | `primary-50`→white gradient + 2 blobs                           | badge `No public feed. No follower count. No algorithm.` (with a ping dot) · h1 `Share with the people` / **typewriter** `you actually meant` (`you actually meant` / `who were there` / `who will care`) · lede · `Create your circle` + `See how it works` + `Watch Demo` · four stats `9 avg / People per circle`, `0 / Ads served`, `100% / Chronological`, `2.8k / Circles created` · **hero figure**: one landscape photograph in a `rounded-2xl` `ring-1` `shadow-2xl` frame, `max-w-5xl` |
+| 2   | stats band         | `gray-50`, `border-y`                                           | four **animated counters** `9 / Average circle size`, `100% / Chronological feed`, `0 / Ads, ever`, `31 sec / Median export time` in `text-4xl lg:text-5xl` `primary-600`                                                                                                                                                                                                                                                                                                                        |
+| 3   | `#feed`            | white                                                           | accent pill `Your feed`; h2 `Everything, in the order it happened`; lede `No ranking, no suggested posts… it says so and stops.`; **five** posts in a two-column masonry, each `avatar initials · name · in <circle> · time` + optional `Photo`/`Poll` badge + body + optional 4:3 image + `heart 24 · bubble 7` footer                                                                                                                                                                          |
+| 4   | `#circles`         | `gray-50`                                                       | primary pill `Circles`; h2 `A circle for each part of your life`; lede; **six** cards — 128 px image with a white `Private` / `Invite only` pill, h3 name, blurb, and a hairline row `N members` + `Active today/this week/this month`                                                                                                                                                                                                                                                           |
+| 5   | `#people`          | white                                                           | accent pill `People`; h2 `Real connections, not a follower count`; lede; **four** cards — 64 px gradient avatar initials, name, `@handle`, blurb, circle chip list, `In N circles with you`, full-width `Follow` (`btn-primary`)                                                                                                                                                                                                                                                                 |
+| 6   | `#privacy`         | `gray-50`                                                       | primary pill `Privacy`; h2 `The settings other networks bury`; lede; **six** two-column items, each a switch glyph + h3 + body + a status line (`On by default` ×3, `Permanently off`, `Off by default`, `Always available`); a `primary-50` bordered call-out paragraph under the grid                                                                                                                                                                                                          |
+| 7   | `#pricing`         | white                                                           | primary pill `Plans`; h2 `You are the customer, so there is a price`; lede; **Monthly/Yearly switch** with a green `Save 20%` pill; **three** tiers (`Free $0`, `Member $5` + `Most Popular` ribbon + `ring-2`, `Family $12`), each a description, a price line, a billing note, five features (included `✓` in `primary-600` / excluded `×` in `gray-400`+`gray-500`), and a full-width CTA (`Start free` grey / `Become a member` / `Set up a family plan` blue)                               |
+| 8   | `#testimonials`    | `gray-50`                                                       | primary pill `Why people moved`; h2 `Smaller turned out to be the feature`; lede; **carousel** of three `shadow-soft` cards — five `primary-400` stars, quote, 48 px `primary-100` initial disc, name + role; dots below, prev/next discs at `≥ sm`, 3 slides at `lg` / 2 at `sm` / 1 below, 5 s autoplay, pause on hover                                                                                                                                                                        |
+| 9   | `#faq`             | white                                                           | primary pill `Questions`; h2 `The things people check first`; lede `Mostly about what we do not do.`; **five** rows divided by hairlines, each a button with a 32 px `gray-100` `+` disc that rotates 45° when open; **exclusive** — opening one closes the rest                                                                                                                                                                                                                                 |
+| 10  | `#contact`         | `primary-600`→`primary-800` gradient + dot grid + 2 white blobs | h2 `Start with one circle`; one line; white solid `Create your circle` + 2 px outline `Read the privacy defaults`                                                                                                                                                                                                                                                                                                                                                                                |
+| —   | `footer`           | `gray-900`                                                      | brand column (light logo, blurb, three `gray-800` social tiles, address, phone, email) · three link columns `Spaces` (4), `Company` (2), `Support` (2) · `Stay Updated` newsletter (`gray-800` field + `Subscribe`) · legal bar `© 2026 Circles. All rights reserved.` + `Privacy Policy` / `Terms of Service` / `Style Guide`                                                                                                                                                                   |
+| —   | `#mobile-cta`      | white, `lg:hidden`                                              | fixed bottom bar, two equal buttons — `Call Now` (`tel:`, `gray-100`) and `Book a Tour` (`#contact`, `primary-600`)                                                                                                                                                                                                                                                                                                                                                                              |
+| —   | `#cookie-consent`  | white                                                           | `role="dialog"`, slides up 1.5 s after load, one sentence + `Decline` (outline) / `Accept All` (solid)                                                                                                                                                                                                                                                                                                                                                                                           |
+| —   | `#back-to-top`     | `primary-600`                                                   | 48 px circle, appears past 300 px, returns to top                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 ## Behaviour the recreation must reproduce (read from `Base…BLoalVWc.js`, 16,233 B)
 
 The kit wires 20 behaviours on `astro:page-load`. The home page exercises:
 
-| behaviour | measured detail |
-| --- | --- |
-| reveal animation | `[data-animate]` starts `opacity:0; translateY(20px)`, resolves to `1 / 0` through an `IntersectionObserver` (threshold 0.1, `rootMargin: 0 0 -10% 0`), each element's `data-delay` (0–500 ms) becoming a CSS transition delay; **skipped entirely** when `prefers-reduced-motion: reduce` matches |
-| typewriter | `[data-typewriter]` cycles `JSON.parse` phrases every **3 s**, fading out 300 ms, swapping `textContent`, fading back in; the element's initial text is the first phrase, so the list has 3 entries and the first is not repeated |
-| counters | `[data-counter]` animates from 0 to its value over **2 s** with an ease-out cubic, honouring `%`, `K`, `M`, `+` and `$` suffixes; starts on `threshold: 0.5`; the final frame assigns the **verbatim** string (`31 sec`, `9 avg`) |
-| hero blobs | `[data-parallax]` translates by `scrollY × factor` (0.15 / −0.1) while on screen |
-| header | `shadow-lg` toggles at `scrollY > 50` |
-| nav spy | `[data-nav-link]` matching a section id in the page gets `.nav-active` (`#111827`, weight 600) from an observer with `rootMargin: -20% 0 -70% 0` |
-| anchor scroll | in-page anchors scroll smoothly to `top - (headerHeight + 20)` and `history.pushState` the hash |
-| billing switch | flips `aria-checked`, fills the track `#0284c7`, moves the knob 28 px, swaps label emphasis, rewrites every `[data-price-monthly]` text to `$<yearly>` after a 150 ms fade, and toggles `[data-show-monthly]` / `[data-show-yearly]` |
-| FAQ | **exclusive**: any other open panel is collapsed to `maxHeight: 0; opacity: 0` and its icon reset; the clicked panel opens to `scrollHeight` px, opacity 1, icon `rotate(45deg)` |
-| carousel | slide width = container/slots (3 at ≥1024, 2 at ≥640, 1 below), track translated by `index × width`, dots rebuilt as `w-8` active / `w-2.5` inactive, arrows hidden when `maxIndex === 0`, autoplay 5 s reset on interaction, paused on `mouseenter` |
-| cookie strip | shown after 1.5 s unless `localStorage['cookie-consent']` is set; either button slides it out and removes it after 300 ms |
-| back to top | visible past 300 px, smooth `scrollTo(0)` |
-| video modal | `[data-video-modal]` injects a fixed overlay (`bg-black/80 backdrop-blur-sm`, opacity fade), a `max-w-4xl` `aspect-video` iframe with `?autoplay=1`, a close button, backdrop-click and `Escape` handlers, and locks body scroll |
-| toast + validation | `form[data-validate]` blocks submit, marks empty/`type=email` invalid fields `!border-red-500` with a `text-red-500` message, and on success resets and shows a fixed top-right green toast for 4 s |
-| scroll progress | `#scroll-progress` width = `scrollY / (scrollHeight - innerHeight) × 100 %` |
-| lazy shimmer | `img[loading=lazy]` gets an animated `img-shimmer` gradient until it loads |
+| behaviour          | measured detail                                                                                                                                                                                                                                                                                    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| reveal animation   | `[data-animate]` starts `opacity:0; translateY(20px)`, resolves to `1 / 0` through an `IntersectionObserver` (threshold 0.1, `rootMargin: 0 0 -10% 0`), each element's `data-delay` (0–500 ms) becoming a CSS transition delay; **skipped entirely** when `prefers-reduced-motion: reduce` matches |
+| typewriter         | `[data-typewriter]` cycles `JSON.parse` phrases every **3 s**, fading out 300 ms, swapping `textContent`, fading back in; the element's initial text is the first phrase, so the list has 3 entries and the first is not repeated                                                                  |
+| counters           | `[data-counter]` animates from 0 to its value over **2 s** with an ease-out cubic, honouring `%`, `K`, `M`, `+` and `$` suffixes; starts on `threshold: 0.5`; the final frame assigns the **verbatim** string (`31 sec`, `9 avg`)                                                                  |
+| hero blobs         | `[data-parallax]` translates by `scrollY × factor` (0.15 / −0.1) while on screen                                                                                                                                                                                                                   |
+| header             | `shadow-lg` toggles at `scrollY > 50`                                                                                                                                                                                                                                                              |
+| nav spy            | `[data-nav-link]` matching a section id in the page gets `.nav-active` (`#111827`, weight 600) from an observer with `rootMargin: -20% 0 -70% 0`                                                                                                                                                   |
+| anchor scroll      | in-page anchors scroll smoothly to `top - (headerHeight + 20)` and `history.pushState` the hash                                                                                                                                                                                                    |
+| billing switch     | flips `aria-checked`, fills the track `#0284c7`, moves the knob 28 px, swaps label emphasis, rewrites every `[data-price-monthly]` text to `$<yearly>` after a 150 ms fade, and toggles `[data-show-monthly]` / `[data-show-yearly]`                                                               |
+| FAQ                | **exclusive**: any other open panel is collapsed to `maxHeight: 0; opacity: 0` and its icon reset; the clicked panel opens to `scrollHeight` px, opacity 1, icon `rotate(45deg)`                                                                                                                   |
+| carousel           | slide width = container/slots (3 at ≥1024, 2 at ≥640, 1 below), track translated by `index × width`, dots rebuilt as `w-8` active / `w-2.5` inactive, arrows hidden when `maxIndex === 0`, autoplay 5 s reset on interaction, paused on `mouseenter`                                               |
+| cookie strip       | shown after 1.5 s unless `localStorage['cookie-consent']` is set; either button slides it out and removes it after 300 ms                                                                                                                                                                          |
+| back to top        | visible past 300 px, smooth `scrollTo(0)`                                                                                                                                                                                                                                                          |
+| video modal        | `[data-video-modal]` injects a fixed overlay (`bg-black/80 backdrop-blur-sm`, opacity fade), a `max-w-4xl` `aspect-video` iframe with `?autoplay=1`, a close button, backdrop-click and `Escape` handlers, and locks body scroll                                                                   |
+| toast + validation | `form[data-validate]` blocks submit, marks empty/`type=email` invalid fields `!border-red-500` with a `text-red-500` message, and on success resets and shows a fixed top-right green toast for 4 s                                                                                                |
+| scroll progress    | `#scroll-progress` width = `scrollY / (scrollHeight - innerHeight) × 100 %`                                                                                                                                                                                                                        |
+| lazy shimmer       | `img[loading=lazy]` gets an animated `img-shimmer` gradient until it loads                                                                                                                                                                                                                         |
 
 The home page has **no** `data-blog-filters`, `data-blog-search`, `data-lightbox` or `data-carousel`
 beyond the testimonial one — those live on `/blog` and `/elements`.
@@ -266,38 +266,38 @@ beyond the testimonial one — those live on `/blog` and `/elements`.
 
 The live page holds **52 anchors**:
 
-| target | count | verdict |
-| --- | --- | --- |
-| `/theme/circles/#circles` | 8 | live fragment — desktop nav, mobile nav and **all six circle cards** (the cards re-anchor to their own band) |
-| `/theme/circles/pricing` | 6 | live — 308 → `/pricing/` 200 |
-| `/theme/circles/contact` | 5 | live — 308 → `/contact/` 200 (incl. all three plan CTAs) |
-| `/theme/circles/#spaces` | 4 | **dead fragment** — no element on the page has `id="spaces"` (the four footer "Spaces" links) |
-| `/theme/circles/about` | 3 | live — 308 → 200 |
-| `/theme/circles/blog` | 3 | live — 308 → 200 |
-| `#` | 3 | **dead** — the footer's Twitter / Instagram / LinkedIn tiles |
-| `/theme/circles/` | 2 | live — the header wordmark and the footer logo |
-| `/theme/circles/#feed` · `#people` · `#privacy` · `#contact` | 2 each | live fragments — desktop + mobile nav |
-| `/theme/circles/terms` | 2 | live — 308 → 200 |
-| `#main-content` | 1 | live — the skip link |
-| `#circles` · `#privacy` | 1 each | live — hero's `See how it works`, closing CTA's privacy link |
-| `tel:(555) 908-2277` | 1 | **malformed** tel URI (spaces and a parenthesis inside the number) |
-| `tel:5556789012` | 1 | live — the mobile bar's `Call Now` |
-| `mailto:hello@circles.social` | 1 | live (`.social` demo mailbox) |
-| `/theme/circles/privacy` · `/elements` | 1 each | live — 308 → 200 |
+| target                                                       | count  | verdict                                                                                                      |
+| ------------------------------------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------ |
+| `/theme/circles/#circles`                                    | 8      | live fragment — desktop nav, mobile nav and **all six circle cards** (the cards re-anchor to their own band) |
+| `/theme/circles/pricing`                                     | 6      | live — 308 → `/pricing/` 200                                                                                 |
+| `/theme/circles/contact`                                     | 5      | live — 308 → `/contact/` 200 (incl. all three plan CTAs)                                                     |
+| `/theme/circles/#spaces`                                     | 4      | **dead fragment** — no element on the page has `id="spaces"` (the four footer "Spaces" links)                |
+| `/theme/circles/about`                                       | 3      | live — 308 → 200                                                                                             |
+| `/theme/circles/blog`                                        | 3      | live — 308 → 200                                                                                             |
+| `#`                                                          | 3      | **dead** — the footer's Twitter / Instagram / LinkedIn tiles                                                 |
+| `/theme/circles/`                                            | 2      | live — the header wordmark and the footer logo                                                               |
+| `/theme/circles/#feed` · `#people` · `#privacy` · `#contact` | 2 each | live fragments — desktop + mobile nav                                                                        |
+| `/theme/circles/terms`                                       | 2      | live — 308 → 200                                                                                             |
+| `#main-content`                                              | 1      | live — the skip link                                                                                         |
+| `#circles` · `#privacy`                                      | 1 each | live — hero's `See how it works`, closing CTA's privacy link                                                 |
+| `tel:(555) 908-2277`                                         | 1      | **malformed** tel URI (spaces and a parenthesis inside the number)                                           |
+| `tel:5556789012`                                             | 1      | live — the mobile bar's `Call Now`                                                                           |
+| `mailto:hello@circles.social`                                | 1      | live (`.social` demo mailbox)                                                                                |
+| `/theme/circles/privacy` · `/elements`                       | 1 each | live — 308 → 200                                                                                             |
 
 Every route was probed (2026-10-25): `/pricing`, `/contact`, `/about`, `/blog`, `/terms`, `/privacy`,
 `/elements` all answer **308 → `/<page>/` → 200**, with their own `<title>` and 34–55 KB DOMs. They
 are the authoritative reference for anything the single page compresses:
 
-| inner page | bytes | `<title>` | what it holds (authoritative for) |
-| --- | ---: | --- | --- |
-| `/about/` | 35,391 | `About Circles \| Circles` | "Small was the missing feature" + "Three things we will not build" (three stated refusals), "Who runs it" with four named people (Founder / Engineering / Trust & safety / Support) |
-| `/blog/` | 40,917 | `Blog \| Circles` | `Insights & Updates`, category filter pills (`All`, `Product`, `Privacy`, `Safety`) and a card grid with dates 2032, authors, read times |
-| `/contact/` | 34,386 | `Contact Circles \| Circles` | a four-field message form (name, email, subject, message) + "Other routes" (email, phone, address, support hours) |
-| `/pricing/` | 45,192 | `Plans \| Circles` | **the same three tiers** as the home band (identical markup + a second FAQ block) |
-| `/privacy/` | 36,449 | `Privacy Policy \| Circles` | a numbered policy (6 sections) |
-| `/terms/` | 35,188 | `Terms of Service \| Circles` | a numbered policy (12 sections) |
-| `/elements/` | 54,989 | `Elements \| Circles` | the template's own style guide: heading levels, lead/body/small text, a blockquote, button variants (primary / secondary / outline), sizes (small / default / large / disabled) |
+| inner page   |  bytes | `<title>`                     | what it holds (authoritative for)                                                                                                                                                   |
+| ------------ | -----: | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/about/`    | 35,391 | `About Circles \| Circles`    | "Small was the missing feature" + "Three things we will not build" (three stated refusals), "Who runs it" with four named people (Founder / Engineering / Trust & safety / Support) |
+| `/blog/`     | 40,917 | `Blog \| Circles`             | `Insights & Updates`, category filter pills (`All`, `Product`, `Privacy`, `Safety`) and a card grid with dates 2032, authors, read times                                            |
+| `/contact/`  | 34,386 | `Contact Circles \| Circles`  | a four-field message form (name, email, subject, message) + "Other routes" (email, phone, address, support hours)                                                                   |
+| `/pricing/`  | 45,192 | `Plans \| Circles`            | **the same three tiers** as the home band (identical markup + a second FAQ block)                                                                                                   |
+| `/privacy/`  | 36,449 | `Privacy Policy \| Circles`   | a numbered policy (6 sections)                                                                                                                                                      |
+| `/terms/`    | 35,188 | `Terms of Service \| Circles` | a numbered policy (12 sections)                                                                                                                                                     |
+| `/elements/` | 54,989 | `Elements \| Circles`         | the template's own style guide: heading levels, lead/body/small text, a blockquote, button variants (primary / secondary / outline), sizes (small / default / large / disabled)     |
 
 `/elements/` is the design system's own documentation — the most direct evidence that the button
 system is the `.btn-primary` / `.btn-secondary` pair measured above.
@@ -312,14 +312,14 @@ solid `#0284c7` `Create your circle` button at 8 px radius).
 The hero is a **centre-aligned, sky-tinted** block: the ground is a soft `#f0f9ff` that fades to white
 by the stats row, and the whole viewport feels airy rather than dense. At the top a small pill —
 `#f0f9ff` ground, `#bae6fd` border, `#0369a1` 12 px text — carries a 2 px pulsing dot and the line
-*"No public feed. No follower count. No algorithm."*. The headline is two centred lines of very large
-dark text (≈ 60 px at this width, Manrope bold, tight tracking): *"Share with the people"* in
-`#111827`, then *"you actually meant"* in a **left-to-right blue gradient** from `#0284c7` to
+_"No public feed. No follower count. No algorithm."_. The headline is two centred lines of very large
+dark text (≈ 60 px at this width, Manrope bold, tight tracking): _"Share with the people"_ in
+`#111827`, then _"you actually meant"_ in a **left-to-right blue gradient** from `#0284c7` to
 `#38bdf8`, clipped to the glyphs. Under it one 18–20 px `gray-600` paragraph at `max-w-2xl`.
 
 The action row is three items, not two: a solid blue rounded-8 px button with a right arrow, a white
 button with a 1 px grey border, and a **circular 48 px blue play disc** followed by the words
-*"Watch Demo"* — the third control is deliberately lighter than a button. Below, separated by a full
+_"Watch Demo"_ — the third control is deliberately lighter than a button. Below, separated by a full
 hairline rule, four small stat blocks: 28–32 px bold values in `#111827` over 14 px `gray-600`
 labels in a 4-column row.
 
@@ -705,44 +705,44 @@ copied from the reference.
 
 ## Verification checklist
 
-- [ ] Spec validates: `openspec validate template-closeknit --type spec` prints
+- [x] Spec validates: `openspec validate template-closeknit --type spec` prints
       `Specification 'template-closeknit' is valid`
-- [ ] `apps/closeknit` scaffolded from the simplest existing app, package renamed
+- [x] `apps/closeknit` scaffolded from the simplest existing app, package renamed
       `@free-react-templates/closeknit`, `public/CNAME` = `closeknit.free.componentdock.com`, `homepage`
       = `https://closeknit.free.componentdock.com`
-- [ ] Tokens: `primary` = sky ramp with `#0284c7` brand, `accent` = fuchsia with `#d946ef` heart /
+- [x] Tokens: `primary` = sky ramp with `#0284c7` brand, `accent` = fuchsia with `#d946ef` heart /
       `#fae8ff` pill ground, Manrope 300–800, radii `.5/1/1.5 rem`, `shadow-soft`
       `0 4px 16px -4px #0000001a`
-- [ ] Header: sticky, `white/80` + `backdrop-blur`, eight links, mobile disclosure with
+- [x] Header: sticky, `white/80` + `backdrop-blur`, eight links, mobile disclosure with
       `aria-expanded`, shadow past 50 px, active nav item on scroll
-- [ ] Hero: badge with ping dot, `h1` two lines with gradient span, three controls (solid, outline,
+- [x] Hero: badge with ping dot, `h1` two lines with gradient span, three controls (solid, outline,
       48 px play disc), four stats, framed figure; typewriter cycles three phrases every 3 s and is
       inert under reduced motion
-- [ ] Counter band: four counters animate once on view and settle on `9`, `100%`, `0`, `31 sec`
-- [ ] Feed: five posts in a `columns-1 sm:columns-2` masonry with the reference order, per-post
+- [x] Counter band: four counters animate once on view and settle on `9`, `100%`, `0`, `31 sec`
+- [x] Feed: five posts in a `columns-1 sm:columns-2` masonry with the reference order, per-post
       type badges, heart/comment counts `24/7`, `5/11`, `18/22`, `12/4`, `63/29`
-- [ ] Circles: six cards with `Private` / `Invite only` pills, member counts and activity strings in
+- [x] Circles: six cards with `Private` / `Invite only` pills, member counts and activity strings in
       the reference order, hover lift + image zoom
-- [ ] People: four cards with gradient initials avatars, `@handle`, circle chips, `In N circles with
-      you`, toggleable `Follow`
-- [ ] Privacy: six items with switch glyphs whose `aria-label` matches the status line, the four
+- [x] People: four cards with gradient initials avatars, `@handle`, circle chips, `In N circles with
+    you`, toggleable `Follow`
+- [x] Privacy: six items with switch glyphs whose `aria-label` matches the status line, the four
       status strings in order, and the bordered call-out paragraph
-- [ ] Pricing: three tiers, `role="switch"` billing toggle rewriting `$0/$5/$12` ↔ `$0/$50/$120` and
+- [x] Pricing: three tiers, `role="switch"` billing toggle rewriting `$0/$5/$12` ↔ `$0/$50/$120` and
       the notes, included `✓` vs excluded `×`, featured `Most Popular` ribbon with the 2 px ring
-- [ ] Testimonials: three quotes, five stars each, carousel dots and `sm`+ arrows, 5 s autoplay paused
+- [x] Testimonials: three quotes, five stars each, carousel dots and `sm`+ arrows, 5 s autoplay paused
       on hover, no autoplay under reduced motion
-- [ ] FAQ: five rows, **exclusive** expansion, `aria-expanded` toggles, disc rotates 45°
-- [ ] Closing CTA: `#0284c7 → #075985` gradient with the dot grid, white solid + 2 px white/30
+- [x] FAQ: five rows, **exclusive** expansion, `aria-expanded` toggles, disc rotates 45°
+- [x] Closing CTA: `#0284c7 → #075985` gradient with the dot grid, white solid + 2 px white/30
       outline, both labels ≥ 4.5:1
-- [ ] Footer: brand column, `Product` / `Company` / `Support` columns, newsletter with validation,
+- [x] Footer: brand column, `Product` / `Company` / `Support` columns, newsletter with validation,
       legal bar with the `Component Dock` link to `https://www.componentdock.com/`
-- [ ] Mobile action bar below `lg` with a digits-only `tel:` and an in-page primary link
-- [ ] Cookie strip dismisses into state; back-to-top past 300 px; scroll-progress bar; skip link
-- [ ] No ColorLib / `circles.social` / source-URL string in any file under `apps/closeknit`; no copied
+- [x] Mobile action bar below `lg` with a digits-only `tel:` and an in-page primary link
+- [x] Cookie strip dismisses into state; back-to-top past 300 px; scroll-progress bar; skip link
+- [x] No ColorLib / `circles.social` / source-URL string in any file under `apps/closeknit`; no copied
       SVG, font file or stylesheet; placeholder images from `picsum.photos/seed/closeknit-<n>/…`
-- [ ] `grep -ril "colorlib" apps/closeknit` → empty; no app file uses the source design's name as a
+- [x] `grep -ril "colorlib" apps/closeknit` → empty; no app file uses the source design's name as a
       brand or links its URLs (the common noun **circle** / the `#circles` anchor is product
       vocabulary and is allowed — the brand, copyright line and CNAME all say `closeknit`)
-- [ ] Row added for the design under `## App Landing Page (35)` and flipped to `[x]` with the
+- [x] Row added for the design under `## App Landing Page (35)` and flipped to `[x]` with the
       bookkeeping commit (the exact line is in §Purpose)
-- [ ] `npm run spec:validate`, `scripts/verify-app.sh closeknit` and the CI gate are green
+- [x] `npm run spec:validate`, `scripts/verify-app.sh closeknit` and the CI gate are green

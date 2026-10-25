@@ -1,0 +1,155 @@
+@import 'tailwindcss';
+
+/* Closeknit tokens — measured from the reference stylesheet (one compiled
+   Tailwind sheet, 63,718 B) and its live render. The brand is Tailwind's own
+   `sky` ramp rather than a custom blue, and there is a second, genuinely used
+   hue (fuchsia) for warmth: hearts, avatar gradients and two eyebrow pills.
+   Shape: 8 / 12 / 16 / 24 px radii, two soft shadows, Manrope 300–800. */
+@theme {
+  --font-sans: 'Manrope', system-ui, sans-serif;
+
+  /* brand — sky */
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-200: #bae6fd;
+  --color-primary-300: #7dd3fc;
+  --color-primary-400: #38bdf8; /* gradient end, stars, avatar start */
+  --color-primary-500: #0ea5e9; /* focus ring, badge dot */
+  --color-primary-600: #0284c7; /* brand: solid buttons, rings, progress */
+  --color-primary-700: #0369a1; /* hover, pill text, CTA label */
+  --color-primary-800: #075985; /* closing-CTA gradient end */
+
+  /* second brand hue — fuchsia */
+  --color-accent-100: #fae8ff; /* feed / people eyebrow grounds */
+  --color-accent-300: #f0abfc;
+  --color-accent-400: #e879f9;
+  --color-accent-500: #d946ef; /* hearts, avatar gradient end */
+  --color-accent-700: #a21caf; /* eyebrow text */
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+  --shadow-soft-lg: 0 12px 32px -8px #00000024;
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #0ea5e9;
+    outline-offset: 2px;
+  }
+
+  /* Every animated band resolves to visible content when motion is reduced. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* the only gradient clipped to glyphs on the page */
+  .text-gradient {
+    background-image: linear-gradient(to right, #0284c7, #38bdf8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-lg);
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #0284c7;
+    box-shadow:
+      0 10px 15px -3px #0284c740,
+      0 4px 6px -4px #0284c740;
+    transition: all 150ms;
+  }
+  .btn-primary:hover {
+    background-color: #0369a1;
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-lg);
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    transition: all 150ms;
+  }
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+  }
+
+  /* eyebrow pill — the page's repeat device above every band heading */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .pill-primary {
+    background-color: #e0f2fe;
+    color: #0369a1;
+  }
+  .pill-accent {
+    background-color: #fae8ff;
+    color: #a21caf;
+  }
+
+  /* two blurred hero blobs: 8 s and 10 s loops at opposite phases */
+  .hero-float {
+    animation: hero-float 8s ease-in-out infinite;
+  }
+  .hero-float-reverse {
+    animation: hero-float 10s ease-in-out infinite reverse;
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 30px, 0) scale(1.05);
+  }
+}
