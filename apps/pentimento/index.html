@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Painter working in oil on linen. Works, exhibition history, studio notes and acquisition enquiries."
+    />
+    <meta name="theme-color" content="#faf9f7" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kjeldsen — painting the hour before the light goes" />
+    <meta
+      property="og:description"
+      content="Oil on linen, worked slowly and mostly from observation. Recent paintings, current exhibitions and how to acquire work directly from the studio."
+    />
+    <meta property="og:url" content="https://pentimento.free.componentdock.com" />
+    <meta property="og:image" content="https://picsum.photos/seed/pentimento-og/1200/630" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1815'/%3E%3Cpath d='M9 25 16 8l7 17z' fill='none' stroke='%23df7484' stroke-width='2'/%3E%3Ccircle cx='16' cy='19' r='2' fill='%23df7484'/%3E%3C/svg%3E"
+    />
+    <title>Kjeldsen — paintings, exhibitions and how to acquire work</title>
+    <script>
+      ;(function () {
+        try {
+          var stored = window.localStorage.getItem('theme')
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (error) {
+          document.documentElement.classList.remove('dark')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
