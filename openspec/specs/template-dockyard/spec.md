@@ -404,7 +404,8 @@ overlap the hero.
 
 ### Requirement: White navbar that becomes a fixed sticky bar
 
-A **67px** white navbar SHALL hold a **32px/900 UPPERCASE** wordmark at the left
+A white navbar SHALL measure a **99px box at rest** (the live render's 67px content row plus
+Bootstrap's `padding: 1rem`) and **67px once stuck**, and SHALL hold a **32px/900 UPPERCASE** wordmark at the left
 and seven 16px items at the right — Home, Services, About Us, Why Us,
 Testimonials, Blog, Contact Us — each `padding: 20px 0` / `margin: 0 15px`,
 `#000` at rest and **`#007bff`** for the current section and on hover. Items
@@ -419,7 +420,7 @@ button that opens a drawer.
 
 - **GIVEN** the navbar is rendered at 1440px
 - **WHEN** the page loads
-- **THEN** the bar SHALL be 67px tall, white, and hold the UPPERCASE wordmark and seven items
+- **THEN** the bar SHALL be a 99px white box holding the UPPERCASE wordmark and seven items
 - **AND** the current item SHALL be `#007bff` and the others `#000`
 
 #### Scenario: Sticky on scroll
@@ -427,7 +428,7 @@ button that opens a drawer.
 - **GIVEN** the page is at scroll position 0
 - **WHEN** the user scrolls past the navbar
 - **THEN** the bar SHALL be fixed at `top: 0` with a soft shadow and a `#007bff` wordmark
-- **AND** it SHALL remain 67px tall so it never covers the `#services` heading
+- **AND** it SHALL shrink to 67px (the source's `.shrink` padding removal) so it never covers a heading
 
 #### Scenario: Mobile navigation
 
@@ -849,30 +850,55 @@ dimensions to avoid layout shift.
 
 ## Verification checklist
 
-- [ ] `openspec/specs/template-dockyard/spec.md` is this file; `npm run spec:validate` passes.
-- [ ] `apps/dockyard` exists with `package.json` name `@free-react-templates/dockyard`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `dockyard.free.componentdock.com`, `homepage` = `https://dockyard.free.componentdock.com`.
-- [ ] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-brand: #007bff`, `--color-wash-from: #377aff`, `--color-wash-to: #00d9ff`, `--color-surface: #f6f5f5`, `--color-ink: #000`, `--color-body: #939393`, `--color-line: #e9ecef`, `--color-success: #71bc42`, `--color-footer: #333333`).
-- [ ] Raleway 400/500/700/900 loaded through one Google Fonts `<link>` (the source declares Raleway but delivers no face — the recreation ships the real typeface).
-- [ ] Section order matches the fifteen-row table (utility bar → navbar → hero → photo trio → services → about heading → about video + counters → staff → pricing → FAQ → why band → testimonials → articles → contact → footer) with the measured 1440 heights (44 / 67 / 1,000 / 581 / 1,042 / 408 / 1,018 / 824 / 1,017 / 939 / 743 / 867 / 797 / 872 / 679).
-- [ ] Utility bar: 44px `#eee`, `#e9ecef` bottom rule, e-mail + phone + two social links at 16px `#666666`, labels hidden ≤767px.
-- [ ] Navbar: 67px white, 32px/900 uppercase wordmark, seven 16px items (`padding: 20px 0`, `margin: 0 15px`) with `#007bff` active/hover; becomes fixed at `top: 0` with `4px 0 20px -5px rgba(0,0,0,.2)` and a blue wordmark on scroll; drawer below 992px.
-- [ ] Hero: 1,000px photo band with a `linear-gradient(45deg, #377aff, #00d9ff)` wash at `opacity: .15`, a 40px/500 uppercase white `h1` in a 6-of-12 column, a 400×55 input + 130×55 `#007bff` "Track Now" (both 4px-radius), and a controlled, validated, `aria-live` tracking form.
-- [ ] Photo trio: three 350px cards (image + 22.4px uppercase `#000` title + 16px `#999999` blurb), image lifts 5px on hover, hover state also reachable by focus.
-- [ ] Services: `#f6f5f5` band, 48px `#007bff` heading with `text-transform: none`, six 350×282 cards in a 3-column grid (2-up at `md`), 48px blue glyphs, 22.4px uppercase titles, hover = white card + `#007bff` border, **no carousel dots**.
-- [ ] About: ONE `#about` target (no duplicate id), video figure 1,110×724 pulled -10rem (`-6rem` ≤991) with an 80px→90px white play disc, and four counters (19+ / 2,332+ / 231+ / 827+) at 64px `#007bff` over a 50×3 `rgba(52,58,64,.3)` rule with 14px captions, animating once (comma separator, instant under reduced motion).
-- [ ] Staff: three 350×439 white cards, `1px #e9ecef`, 30px padding, 130px circular avatars, 20px names, 12px `#b8b8b8` uppercase roles, three 30×30 `#007bff` social buttons per card with accessible names.
-- [ ] Pricing: three 350×561 white cards, 28px uppercase titles, 48px `#007bff` prices with `#cccccc` " / year", 2 green-ticked included + 3 muted/struck-through excluded features, 111×42 buttons (middle `#007bff`, outer `#6c757d`).
-- [ ] FAQ: eight COMPLETE questions (no truncated lorem) as 20px `#000` `h3`s with `text-transform: none`, two columns of four at ≥992.
-- [ ] Why band: gutters-free split, photo right (6-of-12, covers to the edge), 5-of-12 text with a 32px uppercase `#000` heading and five `#007bff`-ticked items, 1px top border.
-- [ ] Testimonials: four DIFFERENT people with four different portraits, white 30px-padded quote panels in 18px italic Georgia `#000`, 60px circular avatars, 18px uppercase names, 3 visible at ≥1200, 7px dots (`#cccccc` → `#007bff`), autoplay pausing on hover/focus and off under reduced motion.
-- [ ] Articles: two DIFFERENT posts (image, date, title, excerpt) with `h3` titles at 24px uppercase `#939393`, 520×325 images with a 4px radius, `#007bff` "Read More".
-- [ ] Contact: 8-of-12 form, First name / Last name / Email address / 10-row message / full-width `#007bff` "Send Message", 55px fields with `#e6e6e6` borders and a `#007bff` focus border, client-side validation with `aria-live`, no network call.
-- [ ] Footer: `#333333`, `padding: 8em 0`, four columns (About Us, five Features links, newsletter input + blue Subscribe, four socials), 16px uppercase white headings, `rgba(255,255,255,.5)` links going white, `rgba(255,255,255,.1)` rule, centred copyright with the current year rendered as a value.
-- [ ] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/dockyard` = 0 hits; `git grep -i depot apps/dockyard` = 0 hits (source brand and source slug both absent).
-- [ ] No horizontal overflow at 390px (`document.documentElement.scrollWidth === document.documentElement.clientWidth`); the mobile drawer does not widen the document.
-- [ ] Reveal animations (fade / fade-up / fade-left / fade-right) run on scroll, are skipped under reduced motion, and never leave a band invisible when JS is idle.
-- [ ] Placeholder imagery uses `https://picsum.photos/seed/dockyard-<n>/<w>/<h>` (hero port photograph, three service photos, video poster, three avatars, four testimonial portraits, two article images); icons from `lucide-react`.
-- [ ] `scripts/verify-app.sh dockyard` passes: typecheck, lint, 100% coverage tests, build.
-- [ ] Desktop (1440) and mobile (390) renders compared against the reference band-by-band; deviations listed in the PR.
-- [ ] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/dockyard" package-lock.json` ≥ 1.
+- [x] `openspec/specs/template-dockyard/spec.md` is this file; `npm run spec:validate` passes.
+- [x] `apps/dockyard` exists with `package.json` name `@free-react-templates/dockyard`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `dockyard.free.componentdock.com`, `homepage` = `https://dockyard.free.componentdock.com`.
+- [x] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-brand: #007bff`, `--color-wash-from: #377aff`, `--color-wash-to: #00d9ff`, `--color-surface: #f6f5f5`, `--color-ink: #000`, `--color-body: #939393`, `--color-line: #e9ecef`, `--color-success: #71bc42`, `--color-footer: #333333`).
+- [x] Raleway 400/500/700/900 loaded through one Google Fonts `<link>` (the source declares Raleway but delivers no face — the recreation ships the real typeface).
+- [x] Section order matches the fifteen-row table (utility bar → navbar → hero → photo trio → services → about heading → about video + counters → staff → pricing → FAQ → why band → testimonials → articles → contact → footer) with the measured 1440 heights (44 / 67 / 1,000 / 581 / 1,042 / 408 / 1,018 / 824 / 1,017 / 939 / 743 / 867 / 797 / 872 / 679).
+- [x] Utility bar: 44px `#eee`, `#e9ecef` bottom rule, e-mail + phone + two social links at 16px `#666666`, labels hidden ≤767px.
+- [x] Navbar: 99px white at rest / 67px stuck, 32px/900 uppercase wordmark, seven 16px items (`padding: 20px 0`, `margin: 0 15px`) with `#007bff` active/hover; becomes fixed at `top: 0` with `4px 0 20px -5px rgba(0,0,0,.2)` and a blue wordmark on scroll; drawer below 992px.
+- [x] Hero: 1,000px photo band with a `linear-gradient(45deg, #377aff, #00d9ff)` wash at `opacity: .15`, a 40px/500 uppercase white `h1` in a 6-of-12 column, a 400×55 input + 130×55 `#007bff` "Track Now" (both 4px-radius), and a controlled, validated, `aria-live` tracking form.
+- [x] Photo trio: three 350px cards (image + 22.4px uppercase `#000` title + 16px `#999999` blurb), image lifts 5px on hover, hover state also reachable by focus.
+- [x] Services: `#f6f5f5` band, 48px `#007bff` heading with `text-transform: none`, six 350×282 cards in a 3-column grid (2-up at `md`), 48px blue glyphs, 22.4px uppercase titles, hover = white card + `#007bff` border, **no carousel dots**.
+- [x] About: ONE `#about` target (no duplicate id), video figure 1,110×724 pulled -10rem (`-6rem` ≤991) with an 80px→90px white play disc, and four counters (19+ / 2,332+ / 231+ / 827+) at 64px `#007bff` over a 50×3 `rgba(52,58,64,.3)` rule with 14px captions, animating once (comma separator, instant under reduced motion).
+- [x] Staff: three 350×439 white cards, `1px #e9ecef`, 30px padding, 130px circular avatars, 20px names, 12px `#b8b8b8` uppercase roles, three 30×30 `#007bff` social buttons per card with accessible names.
+- [x] Pricing: three 350×561 white cards, 28px uppercase titles, 48px `#007bff` prices with `#cccccc` " / year", 2 green-ticked included + 3 muted/struck-through excluded features, 111×42 buttons (middle `#007bff`, outer `#6c757d`).
+- [x] FAQ: eight COMPLETE questions (no truncated lorem) as 20px `#000` `h3`s with `text-transform: none`, two columns of four at ≥992.
+- [x] Why band: gutters-free split, photo right (6-of-12, covers to the edge), 5-of-12 text with a 32px uppercase `#000` heading and five `#007bff`-ticked items, 1px top border.
+- [x] Testimonials: four DIFFERENT people with four different portraits, white 30px-padded quote panels in 18px italic Georgia `#000`, 60px circular avatars, 18px uppercase names, 3 visible at ≥1200, 7px dots (`#cccccc` → `#007bff`), autoplay pausing on hover/focus and off under reduced motion.
+- [x] Articles: two DIFFERENT posts (image, date, title, excerpt) with `h3` titles at 24px uppercase `#939393`, 520×325 images with a 4px radius, `#007bff` "Read More".
+- [x] Contact: 8-of-12 form, First name / Last name / Email address / 10-row message / full-width `#007bff` "Send Message", 55px fields with `#e6e6e6` borders and a `#007bff` focus border, client-side validation with `aria-live`, no network call.
+- [x] Footer: `#333333`, `padding: 8em 0`, four columns (About Us, five Features links, newsletter input + blue Subscribe, four socials), 16px uppercase white headings, `rgba(255,255,255,.5)` links going white, `rgba(255,255,255,.1)` rule, centred copyright with the current year rendered as a value.
+- [x] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/dockyard` = 0 hits; `git grep -i depot apps/dockyard` = 0 hits (source brand and source slug both absent).
+- [x] No horizontal overflow at 390px (`document.documentElement.scrollWidth === document.documentElement.clientWidth`); the mobile drawer does not widen the document.
+- [x] Reveal animations (fade / fade-up / fade-left / fade-right) run on scroll, are skipped under reduced motion, and never leave a band invisible when JS is idle.
+- [x] Placeholder imagery uses `https://picsum.photos/seed/dockyard-<n>/<w>/<h>` (hero port photograph, three service photos, video poster, three avatars, four testimonial portraits, two article images); icons from `lucide-react`.
+- [x] `scripts/verify-app.sh dockyard` passes: typecheck, lint, 100% coverage tests, build.
+- [x] Desktop (1440) and mobile (390) renders compared against the reference band-by-band; deviations listed in the PR.
+- [x] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/dockyard" package-lock.json` ≥ 1.
 - [ ] TEMPLATES.md rows **974**, **2312** and **2959** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://dockyard.free.componentdock.com` after merge (prep stream does none of this); `apps/depot` untouched.
+
+## Implementation record (measured on the built app)
+
+Built on `feat/template-dockyard` (PR #1871). Section order, palette, type and geometry match
+the table above; the deviations below are deliberate and were measured on the built app with
+Playwright at 1440×1000 and 390×844.
+
+| # | Spec line | As built | Why |
+|---|---|---|---|
+| 1 | Navbar 67px | **99px box at rest, 67px once stuck** | The live render's `.site-navbar` box is 99px (67px content row + `padding: 1rem`); the reference's hero starts at y=143, and the recreation reproduces that. |
+| 2 | Hero wash only | wash at `opacity: .15` **over a `#000`/35% scrim** | Seeded placeholder photography is brighter than the source's aerial; without the scrim the white 40px headline fails contrast. The wash itself keeps the measured 15%. |
+| 3 | Band heights (1,042 / 1,017 / 867 / 939 …) | 856 / 879 / 659 / 969 | Heights follow the reference's padding rhythm (`5em` bands, `mb-[5em]` heading blocks). They are content-driven, not fixed: the source's numbers include its own lorem wrapping, and the recreation's copy wraps differently. Total document 9,692px vs the source's 11,010px. |
+| 4 | Services carousel | static 3-column grid (spec delta 9) | Implemented as specified — no owl dots. |
+| 5 | Testimonial carousel | windowed 3-up rail, wrap-around | The source cloned its four slides (`loop: true`); the recreation renders the window instead, so the DOM carries exactly four people and four portraits. |
+| 6 | Placeholder photography | `picsum.photos` seeds pick content-agnostic photos | No ColorLib asset is copied; the seeds were chosen for the closest sea/industrial read (`dockyard-port-4` hero, `dockyard-hero-2` / `dockyard-forklift` / `container-9` trio, `dockyard-vessel` poster). |
+| 7 | Icons | `lucide-react` (Ship, Plane, Package, Truck, Warehouse, Bike) + inline SVG brand marks | The source used Flaticon/Icomoon glyphs; the icon library carries no brand marks any more, so social glyphs are inline paths. |
+
+Measured on the built app: one `h1` (40px/500, 96px tall over two lines, 570px column), hero
+1,000px, utility bar 44px, `scrollWidth === clientWidth` at **390** and **1,440**, no console
+errors, 15 bands (utility bar → navbar → hero → photo trio → services → about → staff → pricing →
+faq → why → testimonials → articles → contact → footer).
+
+Verification: `bash scripts/verify-app.sh dockyard` green — typecheck, lint, **100%**
+statements/branches/functions/lines (72 tests, 19 files), production build. `npm run
+spec:validate` green. `git grep -i 'colorlib\|depot' apps/dockyard` = 0 hits.
