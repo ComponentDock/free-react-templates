@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+/* Octavo tokens — warm paper, ink text, and three category hues. The chrome is
+   ink-on-paper with no brand colour: colour on this page is a content
+   category (blue #1d4ed8, green #047857, magenta #a21caf), reused by that
+   card's chip text, avatar disc and focus ring. #f1efe9 is the read pill's
+   grey-beige surface, #e7e5e0 the meta hairline, #e5e7eb the cover ground. */
+@theme {
+  --color-paper: #fbfaf7;
+  --color-ink: #111827;
+  --color-muted: #4b5563;
+  --color-chip-blue: #1d4ed8;
+  --color-chip-green: #047857;
+  --color-chip-magenta: #a21caf;
+  --color-pill: #f1efe9;
+  --color-pill-ink: #374151;
+  --color-line: #e7e5e0;
+  --color-media: #e5e7eb;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* The photograph is clipped by the cover's own 14px radius; only it moves on
+     hover, and only when the pointer is anywhere over the card. */
+  .card-photo {
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+
+  .card:hover .card-photo {
+    transform: scale(1.06);
+  }
+
+  /* The headline is the card's only anchor. Its underline is a gradient whose
+     background-size grows from 0 to 100% of a 1.5px line on *card* hover, and
+     an invisible overlay at inset 0 makes the whole card the click target. */
+  .card-link {
+    color: inherit;
+    text-decoration: none;
+    background: linear-gradient(currentColor, currentColor) 0 100% / 0 1.5px no-repeat;
+    transition: background-size 0.35s ease;
+  }
+
+  .card:hover .card-link {
+    background-size: 100% 1.5px;
+  }
+
+  .card-link::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 14px;
+  }
+
+  .card-link:focus-visible {
+    outline: none;
+  }
+
+  .card-link:focus-visible::after {
+    outline: 3px solid var(--chip);
+    outline-offset: 6px;
+  }
+
+  /* The sheet's only motion query: two transitions still, no hover zoom. */
+  @media (prefers-reduced-motion: reduce) {
+    .card-photo,
+    .card-link {
+      transition: none;
+    }
+
+    .card:hover .card-photo {
+      transform: none;
+    }
+  }
+}
