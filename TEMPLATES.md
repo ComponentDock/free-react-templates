@@ -2499,7 +2499,7 @@
 - [x] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg) · [tribune](https://tribune.free.componentdock.com)
 - [x] **Politics** — [colorlib](https://colorlib.com/wp/template/politics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/politics-free-template-1.jpg) · [civicpulse](https://civicpulse.free.componentdock.com)
 
-## Portfolio (89)
+## Portfolio (90)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg) · [arlo](https://arlo.free.componentdock.com)
@@ -2524,6 +2524,7 @@
 - [x] **Digilab** — [colorlib](https://colorlib.com/wp/template/digilab/) · [byteops](https://byteops.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/digilab-free-template.jpg)
 - [x] **Eroo** — [colorlib](https://colorlib.com/wp/template/eroo/) · [innovex](https://innovex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/eroo-colorlib-template.jpg)
 - [x] **Evans** — [colorlib](https://colorlib.com/wp/template/evans/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/evans-free-template.jpg) · [imprint](https://imprint.free.componentdock.com)
+- [~] **Fieldnotes Student** — [colorlib](https://colorlib.com/wp/template/fieldnotes-student/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fieldnotes-student-featured.jpg)
 - [x] **Fplus** — [colorlib](https://colorlib.com/wp/template/fplus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fplus-free-template.jpg) · [foliox](https://foliox.free.componentdock.com)
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [glint](https://glint.free.componentdock.com)
 - [x] **Go Crepe** — [colorlib](https://colorlib.com/wp/template/go-crepe/) · [batter](https://batter.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/go-crepe-creative-digital-agency-website-template.jpg)
