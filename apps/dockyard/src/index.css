@@ -1,0 +1,85 @@
+@import 'tailwindcss';
+
+/* Dockyard palette — measured from the reference stylesheet and its computed
+   styles: brand blue #007bff (23 occurrences: section headings, active nav,
+   service glyphs, counter figures, prices, primary buttons, testimonial dots),
+   hero wash endpoints #377aff → #00d9ff painted at 15% over the photograph,
+   success green #71bc42 for the included pricing ticks, warm grey surface
+   #f6f5f5 for the alternating bands, utility bar #eee, hairlines #e9ecef,
+   body copy #939393, secondary meta #999999, muted #b8b8b8, utility links
+   #666666, price suffix #cccccc and the #333333 footer. Type: Raleway
+   (400/500/700/900) everywhere; Georgia italic is reserved for the quote
+   panels. Shape language: a flat 4px radius on buttons, cards and photographs. */
+@theme {
+  --color-brand: #007bff;
+  --color-brand-dark: #0069d9;
+  --color-secondary: #6c757d;
+  --color-secondary-dark: #5a6268;
+  --color-wash-from: #377aff;
+  --color-wash-to: #00d9ff;
+  --color-surface: #f6f5f5;
+  --color-bar: #eeeeee;
+  --color-ink: #000000;
+  --color-body: #939393;
+  --color-meta: #999999;
+  --color-muted: #b8b8b8;
+  --color-utility: #666666;
+  --color-line: #e9ecef;
+  --color-field: #e6e6e6;
+  --color-price-suffix: #cccccc;
+  --color-success: #71bc42;
+  --color-footer: #333333;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+  --font-quote: Georgia, ui-serif, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #939393;
+    font-family: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000000;
+    font-family: 'Raleway', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  p {
+    color: #939393;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  ::selection {
+    background: #007bff;
+    color: #ffffff;
+  }
+  :focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
