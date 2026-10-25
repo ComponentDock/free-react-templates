@@ -1,0 +1,181 @@
+@import 'tailwindcss';
+
+/* Kettle palette — measured from the reference stylesheet and the live render.
+   One brand ramp (burnt orange) and one warm-grey ink ramp; stock Tailwind
+   `gray` carries the dark chrome (footer, review band, FAQ rules) because the
+   reference keeps that split. Light-only: this page ships no dark theme.
+   Type: Manrope 400/500/600/700/800 with JetBrains Mono 500/700 for numerals.
+   Shape: 8px controls, 16px cards, pills at 9999px. */
+@theme {
+  --font-sans: 'Manrope', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  /* brand — burnt orange */
+  --color-primary-50: #fff8ec;
+  --color-primary-100: #ffedd0;
+  --color-primary-200: #fcd79e;
+  --color-primary-300: #f6bb63; /* tankless output number */
+  --color-primary-400: #e99c31; /* selected chips, review stars, panel bars */
+  --color-primary-500: #d07e16; /* input focus ring */
+  --color-primary-600: #ae6211; /* brand */
+  --color-primary-700: #8d4e12; /* eyebrows, prices, hover, closing band */
+
+  /* warm grey — keeps the orange domestic rather than industrial */
+  --color-ink-50: #f7f7f7;
+  --color-ink-100: #ededed;
+  --color-ink-200: #dadada;
+  --color-ink-300: #b4b4b4; /* placeholder grey the reference never defined */
+  --color-ink-400: #858585;
+  --color-ink-500: #636363;
+  --color-ink-600: #494949;
+  --color-ink-700: #373737;
+  --color-ink-800: #242424;
+  --color-ink-900: #161616;
+
+  --radius-lg: 0.5rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #111827;
+    font-family: 'Manrope', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #242424;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  :focus-visible {
+    outline: 2px solid #8d4e12;
+    outline-offset: 2px;
+  }
+  /* The saturated grounds need a pale ring to stay visible at all. */
+  .on-brand :focus-visible,
+  .on-dark :focus-visible,
+  .on-foot :focus-visible {
+    outline-color: #fff8ec;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+}
+
+@layer components {
+  .section {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  @media (width >= 64rem) {
+    .section {
+      padding-block: calc(var(--spacing) * 28);
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-lg);
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4;
+    transition:
+      background-color 150ms ease,
+      color 150ms ease,
+      border-color 150ms ease;
+  }
+  .btn-primary {
+    background-color: #ae6211;
+    color: #ffffff;
+    box-shadow:
+      0 10px 15px -3px #ae621140,
+      0 4px 6px -4px #ae621140;
+  }
+  .btn-primary:hover {
+    background-color: #8d4e12;
+  }
+
+  .nav-active {
+    color: #242424;
+    font-weight: 600;
+  }
+
+  /* Sizing chips: a visually hidden input plus a peer-driven sibling, which is
+     how the reference keeps one keyboard-operable control per chip. */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 9999px;
+    border: 1px solid rgb(255 255 255 / 0.2);
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: rgb(255 255 255 / 0.7);
+    transition:
+      color 150ms ease,
+      background-color 150ms ease,
+      border-color 150ms ease;
+  }
+  .chip-unit {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 0.75rem;
+    opacity: 0.7;
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-toast-in {
+    animation: toast-in 250ms ease-out;
+  }
+  .animate-fade-up {
+    animation: fade-up 300ms ease-out;
+  }
+}
