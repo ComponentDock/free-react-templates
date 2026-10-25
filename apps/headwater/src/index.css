@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 defaults `dark:` to
+   prefers-color-scheme, but the design's toggle writes a class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Headwater tokens — measured from the reference design's compiled sheet and
+   its live render at 1440 px. Three ramps: warm `sand` paper (the light bands
+   are three *different* creams), warm charcoal-green `ink` for every string of
+   text and hairline, and a deep sage `primary` used as line work and price ink
+   far more than as fill. Shape: 8 / 12 / 16 px radii, full-round pills, one
+   soft shadow, 80 / 112 px band rhythm. */
+@theme {
+  /* sand — the warm paper of the light bands */
+  --color-sand-50: #fbf8f3;
+  --color-sand-100: #f5efe6;
+
+  /* ink — warm charcoal-green */
+  --color-ink-50: #f6f5f1;
+  --color-ink-100: #eae8e1;
+  --color-ink-200: #d3cfc3;
+  --color-ink-300: #aaa595;
+  --color-ink-400: #78725f;
+  --color-ink-500: #57523f;
+  --color-ink-600: #3d3a2c;
+  --color-ink-700: #2c2a22;
+  --color-ink-800: #22301f;
+  --color-ink-900: #161e14;
+
+  /* primary — deep sage green */
+  --color-primary-50: #f1f7f3;
+  --color-primary-100: #dfede4;
+  --color-primary-200: #bfdbca;
+  --color-primary-300: #94c2a7;
+  --color-primary-400: #63a57f;
+  --color-primary-500: #4a9268;
+  --color-primary-600: #3f8f5f;
+  --color-primary-700: #33724c;
+  --color-primary-800: #2a5b3e;
+  --color-primary-900: #234a33;
+
+  --color-star: #fbbf24;
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #2c2a22;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #e5e7eb;
+  }
+
+  :focus-visible {
+    outline: 2px solid #4a9268;
+    outline-offset: 2px;
+  }
+
+  /* Every band that is an anchor target clears the sticky header (81 px) and
+     the kit's 20 px scroll offset. */
+  [id] {
+    scroll-margin-top: 6.3rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm. The
+     hero carries its own insets. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+}
