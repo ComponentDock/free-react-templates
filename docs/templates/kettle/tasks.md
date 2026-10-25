@@ -6,10 +6,10 @@ Vite + Tailwind 4 + TypeScript app under the name **Kettle** (`apps/kettle`).
 > **No `TEMPLATES.md` row exists for this design yet.** The catalogue is incomplete (see
 > `docs/catalog-coverage.md`): `everhot` is one of the 42 standalone designs on
 > https://colorlib.com/wp/templates/ that the checklist never listed. Add the row under `## Business`
-> *before* opening the PR — the exact line is in the spec, §Purpose — **between `Ecoland` and
-> `Eiser`** (the section is sorted by the ColorLib source name). On `origin/main` `b62ea3b6d` the
-> heading reads `## Business (368)` over 368 rows, so the honest value after adding Everhot is
-> **`(369)`** — or `(370)` if Aquifer's row lands first. Re-count the rows, do not copy the number.
+> *before* opening the PR — the exact line is in the spec, §Purpose — **between `Evento` and
+> `Expert`** (source-name alphabetical order; the E-section is only loosely sorted, so count the rows
+> rather than trusting the neighbourhood). On `origin/main` `d089ec83e` the heading read
+> `## Business (370)` over 370 rows, so the honest value after adding Everhot was **`(371)`**.
 
 ## Pre-flight (done by the prep stream, 2026-10-25)
 
@@ -71,18 +71,18 @@ Vite + Tailwind 4 + TypeScript app under the name **Kettle** (`apps/kettle`).
 
 ## Scaffold
 
-- [ ] Copy the single-app scaffold (`package.json`, `vite.config.ts` with `injectUiSource()`,
+- [x] Copy the single-app scaffold (`package.json`, `vite.config.ts` with `injectUiSource()`,
       `vitest.config.ts`, `tsconfig.json`, `index.html`, `src/main.tsx`, `src/test/setup.ts`,
       `public/CNAME`)
-- [ ] `npm install` at the repo root so `package-lock.json` registers the workspace
-- [ ] `homepage` = `https://kettle.free.componentdock.com`, `public/CNAME` = same host
-- [ ] `index.html`: `<title>Kettle — water heaters sized on what runs at once</title>`, meta description,
+- [x] `npm install` at the repo root so `package-lock.json` registers the workspace
+- [x] `homepage` = `https://kettle.free.componentdock.com`, `public/CNAME` = same host
+- [x] `index.html`: `<title>Kettle — water heaters sized on what runs at once</title>`, meta description,
       OG tags (no dangling `og-image.jpg` — generate one or omit the tag), the two Google Fonts
       `<link>`s, inline SVG favicon
-- [ ] `src/index.css`: the `@theme` block from `design-notes.md` (burnt-orange `primary` 50–700, `ink`
+- [x] `src/index.css`: the `@theme` block from `design-notes.md` (burnt-orange `primary` 50–700, `ink`
       50–900 **plus a decided `ink-300`**, `--font-sans`, `--font-mono`, `--shadow-soft`), `.section`,
       `.btn`, `.btn-primary`, `.nav-active`, `.chip`
-- [ ] Draw the wordmark inline (an orange mark beside `Kettle` in Manrope 700 with a letterspaced
+- [x] Draw the wordmark inline (an orange mark beside `Kettle` in Manrope 700 with a letterspaced
       `WATER HEATERS` in JetBrains Mono) — do not copy `logo.svg`
 
 ## Sections (tests first, reference order)
@@ -133,23 +133,23 @@ Vite + Tailwind 4 + TypeScript app under the name **Kettle** (`apps/kettle`).
 
 ## Wiring and verification
 
-- [ ] Band ids: `#quote`, `#size`, `#emergency`, `#options`, `#why-us`, `#process`, `#areas`,
+- [x] Band ids: `#quote`, `#size`, `#emergency`, `#options`, `#why-us`, `#process`, `#areas`,
       `#testimonials`, `#faq`, `#contact` — nav mapping per spec Requirement 16
       (`Services` → three steps, `Tank vs tankless` → options, `About` → why-us)
-- [ ] Quote form + newsletter: required/format validation on submit and blur, inline errors with
+- [x] Quote form + newsletter: required/format validation on submit and blur, inline errors with
       `aria-invalid`/`aria-describedby`, reset + toast on success, **no network**
-- [ ] Sizing tool: unit tests for the defaults checksum, the three verdict branches, the four tank
+- [x] Sizing tool: unit tests for the defaults checksum, the three verdict branches, the four tank
       thresholds and the empty-fixture branch (spec Requirement 6 lists every expected string)
-- [ ] Carousel: 3/2/1 per view, 5 s, hover pause, dots `w-8`/`w-2.5`, **arrows hidden below `lg`**, no
+- [x] Carousel: 3/2/1 per view, 5 s, hover pause, dots `w-8`/`w-2.5`, **arrows hidden below `lg`**, no
       autoplay under `prefers-reduced-motion`
-- [ ] FAQ exclusive, `aria-expanded`/`aria-controls`, icon rotation, `max-height` transition
-- [ ] All decorative SVGs `aria-hidden`; the flow panel `role="img"` + name; visible focus rings on
+- [x] FAQ exclusive, `aria-expanded`/`aria-controls`, icon rotation, `max-height` transition
+- [x] All decorative SVGs `aria-hidden`; the flow panel `role="img"` + name; visible focus rings on
       `#ae6211`, `#8d4e12`, `#161616`, `#111827`; the `sr-only` chip inputs stay keyboard-operable with a
       `peer-focus-visible` ring on the styled sibling
-- [ ] No `colorlib`, no `Everhot` string, no `office@everhotwater.example`, no copied SVG/stylesheet, no
+- [x] No `colorlib`, no `Everhot` string, no `office@everhotwater.example`, no copied SVG/stylesheet, no
       copied JSON-LD under `apps/kettle`
-- [ ] Row added for Everhot under `## Business` between `Ecoland` and `Eiser`, heading re-counted,
+- [x] Row added for Everhot under `## Business` between `Ecoland` and `Eiser`, heading re-counted,
       marker `[x]` with the bookkeeping commit
-- [ ] `npm run spec:validate`, `scripts/verify-app.sh kettle`, CI gate green; then the surge deploy
+- [x] `npm run spec:validate`, `scripts/verify-app.sh kettle`, CI gate green; then the surge deploy
       (`gh workflow run deploy-surge.yml -f app="kettle"`) and the R2 zip/catalog wiring by the owning
       streams

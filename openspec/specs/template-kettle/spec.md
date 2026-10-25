@@ -73,8 +73,9 @@ hand-off pattern this spec follows. No spec on main names `theme/everhot` (`grep
 openspec/specs` → nothing) and no app named `everhot` exists, so this prep is not a duplicate.
 
 **Implementer note:** because there is no row yet, add one **before** the PR claims a row — paste this
-line into `## Business` **in source-name alphabetical order** (the section is ordered by the ColorLib
-source name; `Everhot` sits between **Ecoland** and **Eiser**), and bump the heading count:
+line into `## Business` **in source-name alphabetical order** — measured on `main` the run lands between
+**Evento** and **Expert** (`Evans` → `Evento` → `Everhot` → `Expert`; this spec's earlier
+`Ecoland`/`Eiser` note was an E-section miscount) — and bump the heading count:
 
 ```
 - [x] **Everhot** — [colorlib](https://colorlib.com/wp/template/everhot/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/everhot-template.jpg) · [kettle](https://kettle.free.componentdock.com)
@@ -977,57 +978,57 @@ The app SHALL meet the house accessibility baseline and SHALL NOT reference the 
 
 ## Verification checklist
 
-- [ ] Spec validates: `openspec validate template-kettle --type spec` prints
+- [x] Spec validates: `openspec validate template-kettle --type spec` prints
       `Specification 'template-kettle' is valid`
-- [ ] `apps/kettle` scaffolded from the simplest existing app, package renamed
+- [x] `apps/kettle` scaffolded from the simplest existing app, package renamed
       `@free-react-templates/kettle`, `public/CNAME` = `kettle.free.componentdock.com`, `homepage` =
       `https://kettle.free.componentdock.com`
-- [ ] Tokens: `primary` `#fff8ec` → `#8d4e12` with **`#ae6211`** as the brand and `#8d4e12` as its
+- [x] Tokens: `primary` `#fff8ec` → `#8d4e12` with **`#ae6211`** as the brand and `#8d4e12` as its
       hover/ground, `ink` `#f7f7f7` → `#161616`, stock `gray` 50–900 for the footer and the
       testimonial/FAQ bands, `amber-400` for the licence star and **`primary-400` `#e99c31`** for the
       testimonial stars and the selected chips; radii 8/16 px; `shadow-soft` `0 4px 16px -4px #0000001a`
-- [ ] Fonts: **Manrope 400–800** and **JetBrains Mono 500/700** via two `<link>`s; `tabular-nums` on both
+- [x] Fonts: **Manrope 400–800** and **JetBrains Mono 500/700** via two `<link>`s; `tabular-nums` on both
       sizing numbers and on the `01`–`03` numerals; no third family
-- [ ] `.section` (80 → 112 px at `lg`) / `.btn` / `.btn-primary` / `.nav-active` reproduced; the **ping**
+- [x] `.section` (80 → 112 px at `lg`) / `.btn` / `.btn-primary` / `.nav-active` reproduced; the **ping**
       dot and the **spin** preloader are the only keyframes used — no float, no typewriter, no counter
-- [ ] Licence strip: 36 px `#242424`, licence number + certification + region + `4.9`/`410+ (sample)`
+- [x] Licence strip: 36 px `#242424`, licence number + certification + region + `4.9`/`410+ (sample)`
       rating, two middle facts hidden below `sm`
-- [ ] Header: sticky `white/90` + blur, 64/80 px, **six** links from **`xl`**, phone pill from `md`,
+- [x] Header: sticky `white/90` + blur, 64/80 px, **six** links from **`xl`**, phone pill from `md`,
       location pill only at `2xl`, CTA from `xl`, hamburger below `xl`, `shadow-lg` past 50 px
-- [ ] Hero: `#f7f7f7` ground, 12-col split (7/5), eyebrow, 60 px `h1` with `is the wrong question.` in
+- [x] Hero: `#f7f7f7` ground, 12-col split (7/5), eyebrow, 60 px `h1` with `is the wrong question.` in
       `#ae6211`, 18 px lede, five amber stars + sample rating, 2×2 tick checklist, **no image**
-- [ ] Quote card: `rounded-2xl`/16 px, white, `1px #ededed`, 32 px padding, `shadow-md`, 3 fields with the
+- [x] Quote card: `rounded-2xl`/16 px, white, `1px #ededed`, 32 px padding, `shadow-md`, 3 fields with the
       six-option problem select, full-width `Get my answer`, footnote
-- [ ] Forms: local validation (required + phone/email), inline errors with `aria-invalid`/
+- [x] Forms: local validation (required + phone/email), inline errors with `aria-invalid`/
       `aria-describedby`, reset on success, kit-styled green toast, **no navigation and no network**
-- [ ] **Sizing tool**: three fieldsets with the reference's chip order and data, defaults
+- [x] **Sizing tool**: three fieldsets with the reference's chip order and data, defaults
       (both showers + Virginia average + 4 people) producing `4.0 gpm` / `40 gallon` / peak hour `52` and
       the "reasonable fit" verdict; `≤70/≤85/≤105/else → 40/50/65/80`; both verdict thresholds; the
       empty-fixture branch; `aria-live="polite"` on both numbers; sample footnote
-- [ ] Emergency band: `#ae6211`, pinging 8 px dot, 14 px uppercase eyebrow, bold 18/20 px headline,
+- [x] Emergency band: `#ae6211`, pinging 8 px dot, 14 px uppercase eyebrow, bold 18/20 px headline,
       `opacity-90` paragraph, white `rounded-full` pill on the right from `lg`
-- [ ] Sticky call bar: `lg:hidden`, fixed `z-40`, white, 12 px padding, 97 px tall, one full-width orange
+- [x] Sticky call bar: `lg:hidden`, fixed `z-40`, white, 12 px padding, 97 px tall, one full-width orange
       pill; hidden from `lg` up; cookie strip paints over it
-- [ ] Options grid: 6 cells in the reference order, `gap-px` over an `#ededed` block, prices
+- [x] Options grid: 6 cells in the reference order, `gap-px` over an `#ededed` block, prices
       `$1,450` / `$1,750` / `$2,900` / `$3,600` / `$2,200` / `$180`, sample-data footnote, `flex-1` bodies
-- [ ] Why-us: `#f7f7f7`, figure left from `lg` (below the copy under `lg`), redrawn flow panel with
+- [x] Why-us: `#f7f7f7`, figure left from `lg` (below the copy under `lg`), redrawn flow panel with
       `role="img"`, caption, four `border-l-2 border-primary-600` rows, figure 576 px at 1440
-- [ ] Three steps: `<ol>` 3/1 columns, mono `01`–`03` + hairline rule, the three headings in order, the
+- [x] Three steps: `<ol>` 3/1 columns, mono `01`–`03` + hairline rule, the three headings in order, the
       three durations in order, 36 px `h2`
-- [ ] Areas: 12 towns in order, `grid-cols-2 sm:grid-cols-3`, hairline rows, replace-me footnote
-- [ ] Testimonials: 3 quotes with initials discs and towns; 3-up at `lg` with no dots, arrows
+- [x] Areas: 12 towns in order, `grid-cols-2 sm:grid-cols-3`, hairline rows, replace-me footnote
+- [x] Testimonials: 3 quotes with initials discs and towns; 3-up at `lg` with no dots, arrows
       `hidden lg:flex`; dots + swipe below; 5 s autoplay paused on hover, off under reduced motion
-- [ ] FAQ: five rows, **exclusive**, `aria-expanded`/`aria-controls`, 32 px disc rotates 45°,
+- [x] FAQ: five rows, **exclusive**, `aria-expanded`/`aria-controls`, 32 px disc rotates 45°,
       `max-height` transition, the five questions in the reference order
-- [ ] Closing band: flat `#8d4e12`, 112 px pad, white solid CTA + `border-2 border-white/40` ghost with
+- [x] Closing band: flat `#8d4e12`, 112 px pad, white solid CTA + `border-2 border-white/40` ghost with
       phone glyph
-- [ ] Footer: brand block + `Services`/`Company`/`Support`/`Stay Updated`, working newsletter validation,
+- [x] Footer: brand block + `Services`/`Company`/`Support`/`Stay Updated`, working newsletter validation,
       legal bar with the `Component Dock` link to `https://www.componentdock.com/`
-- [ ] Chrome: no preloader overlay, skip link, 2 px progress bar, 48 px back-to-top, cookie strip in state
+- [x] Chrome: no preloader overlay, skip link, 2 px progress bar, 48 px back-to-top, cookie strip in state
       and `role="dialog"`
-- [ ] No `colorlib` string, no source brand, no `office@everhotwater.example`, no copied SVG or stylesheet
+- [x] No `colorlib` string, no source brand, no `office@everhotwater.example`, no copied SVG or stylesheet
       under `apps/kettle`; wordmark and flow panel redrawn; no copied JSON-LD
-- [ ] Row added for the design under `## Business` **between `Ecoland` and `Eiser`** with the heading
-      re-measured (`(369)`, or `(370)` if Aquifer landed first) and flipped to `[x]` with the bookkeeping
-      commit (the exact line is in §Purpose)
-- [ ] `npm run spec:validate`, `scripts/verify-app.sh kettle` and the CI gate are green
+- [x] Row added for the design under `## Business` between **`Evento` and `Expert`**, heading
+      re-measured to **`(371)`** on `main` `d089ec83e`, marker flipped to `[x]` with the bookkeeping
+      commit
+- [x] `npm run spec:validate`, `scripts/verify-app.sh kettle` and the CI gate are green
