@@ -1,0 +1,262 @@
+@import 'tailwindcss';
+
+/* Quarto tokens — the design is built on a seven-value sheet (paper, ink,
+   muted, line, green, yellow, cream) plus the notebook card's own four
+   surfaces. Colours are measured literals, not a stock Tailwind ramp: the
+   brand is a deep ink-green (#244b3b), the only saturated surface is the
+   highlighter-yellow contact panel (#e7ed92), and every hairline is the same
+   warm grey (#d8dbcf). Shape: 3 / 4 / 30 px radii and no shadows at all —
+   the page separates with rules, not elevation. */
+@theme {
+  /* the seven-value sheet */
+  --color-paper: #f7f5ef; /* body + header ground */
+  --color-ink: #262923; /* text, headings, active pill ground */
+  --color-muted: #62675d; /* secondary copy, eyebrows, meta, dates, footer */
+  --color-line: #d8dbcf; /* every hairline */
+  --color-green: #244b3b; /* brand: solid button, links, availability dot */
+  --color-yellow: #e7ed92; /* contact panel ground */
+  --color-cream: #fffef8; /* declared in the sheet, used by zero rules */
+
+  /* reacting colours are literals in the sheet — named here for reuse */
+  --color-green-hover: #0e3020; /* link hover */
+  --color-green-deep: #163a2a; /* button hover ground */
+  --color-focus: #9d461d; /* focus ring — the only warm orange on the page */
+
+  /* notebook card */
+  --color-note: #e5e8dc;
+  --color-tape: #e6cf99b8; /* 72 % washi tape */
+  --color-note-rule: #b3baa7;
+  --color-stamp: #65785f;
+
+  /* image mats + concept-art grounds */
+  --color-mat: #e9e8df;
+  --color-sage: #e2e7dc;
+  --color-clay: #eedfcd;
+  --color-chrome: #f5f4ed;
+  --color-dots: #c6cbbb;
+  --color-route: #527f61;
+
+  --font-sans: Inter, Arial, sans-serif;
+  --font-serif: Georgia, 'Gelasio', 'Times New Roman', serif;
+
+  --radius-btn: 3px;
+  --radius-panel: 4px;
+  --radius-pill: 30px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: -0.055em;
+    line-height: 1.06;
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--color-green);
+    text-underline-offset: 5px;
+  }
+
+  a:hover {
+    color: var(--color-green-hover);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 5px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+@layer components {
+  /* 1256 px + 12 px gutters; 22 px gutters below 576 px */
+  .q-container {
+    width: 100%;
+    max-width: 1256px;
+    margin-inline: auto;
+    padding-inline: 12px;
+  }
+
+  @media (max-width: 575px) {
+    .q-container {
+      padding-inline: 22px;
+    }
+  }
+
+  /* band rhythm: 85/70 px hero, 74 px sections, 55 px below 992 px */
+  .q-hero {
+    padding: 85px 0 70px;
+  }
+
+  .q-section {
+    padding: 74px 0;
+    border-top: 1px solid var(--color-line);
+  }
+
+  @media (max-width: 991px) {
+    .q-hero {
+      padding: 55px 0;
+    }
+    .q-section {
+      padding: 55px 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .q-hero {
+      padding-top: 40px;
+    }
+  }
+
+  /* the measured type clamps */
+  .q-h1 {
+    font-size: clamp(3rem, 6.7vw, 6.1rem);
+  }
+
+  .q-h2 {
+    font-size: clamp(2rem, 4vw, 3.65rem);
+  }
+
+  .q-h2-contact {
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+  }
+
+  /* the signature surface: a taped, tilted page of field notes */
+  .q-notebook {
+    position: relative;
+    min-height: 430px;
+    padding: 42px 30px;
+    border-radius: 3px;
+    background-color: var(--color-note);
+    margin-left: 15px;
+    transform: rotate(2deg);
+  }
+
+  .q-notebook::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: calc(50% - 65px);
+    width: 130px;
+    height: 28px;
+    background-color: var(--color-tape);
+    transform: rotate(-6deg);
+  }
+
+  .q-stamp {
+    display: grid;
+    place-items: center;
+    width: 62px;
+    height: 62px;
+    border: 1px solid var(--color-stamp);
+    border-radius: 50%;
+    font-size: 0.62rem;
+    line-height: 1.4;
+    text-align: center;
+    transform: rotate(-14deg);
+  }
+
+  /* buttons: 3 px radius, 24 px label-to-glyph gap, 52 px tall */
+  .q-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 48px;
+    padding: 13px 21px;
+    border: 1px solid var(--color-green);
+    border-radius: 3px;
+    background-color: var(--color-green);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+  }
+
+  .q-btn:hover {
+    background-color: var(--color-green-deep);
+    color: #fff;
+  }
+
+  .q-btn-outline,
+  .q-btn-outline:hover {
+    background-color: transparent;
+    color: var(--color-green);
+  }
+
+  /* filter pill */
+  .q-pill {
+    min-height: 42px;
+    padding: 8px 17px;
+    border: 1px solid var(--color-line);
+    border-radius: 30px;
+    background-color: transparent;
+    color: var(--color-ink);
+    font-size: 0.76rem;
+    line-height: 1.5;
+  }
+
+  .q-pill[aria-pressed='true'] {
+    border-color: var(--color-ink);
+    background-color: var(--color-ink);
+    color: #fff;
+  }
+
+  /* skill chip: hairline box, no ground */
+  .q-chip {
+    padding: 5px 12px;
+    border: 1px solid var(--color-line);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 991px) {
+    .q-notebook {
+      min-height: 360px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .q-h1 {
+      font-size: 3.35rem;
+    }
+    .q-btn {
+      gap: 14px;
+    }
+    .q-notebook {
+      min-height: 350px;
+      margin: 35px 2px 0;
+      padding: 30px 22px;
+      transform: rotate(1deg);
+    }
+  }
+}
