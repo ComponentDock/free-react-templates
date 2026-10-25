@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+/* Flowcert palette — measured from the reference stylesheet. One accent: an
+   indigo-blue ramp (#2d4fd0 brand, #263fa8 closing band and eyebrows), and a
+   cool slate ink ramp (#242932 headlines, #161a20 deepest ground) on
+   alternating #f6f7f9 / white grounds. The page is flat: no gradients, no
+   photography, and the single structural device is a 1 px hairline grid whose
+   dividers are the block's own ground showing through 1 px gaps. Shape
+   language: 0.5rem controls, 0.75rem chips, 1rem cards, pills at 9999px.
+   Type: Inter (400–800) for the UI, JetBrains Mono (500/700) for the wordmark
+   sub-label only, both loaded from Google Fonts in index.html. */
+@theme {
+  --color-primary-50: #eef4ff;
+  --color-primary-100: #dce7fd;
+  --color-primary-200: #bfd3fc;
+  --color-primary-300: #94b5f9;
+  --color-primary-400: #628ef3;
+  --color-primary-500: #3f6be8;
+  --color-primary-600: #2d4fd0;
+  --color-primary-700: #263fa8;
+
+  --color-ink-50: #f6f7f9;
+  --color-ink-100: #eceef2;
+  --color-ink-200: #d8dce4;
+  --color-ink-300: #b0b7c6;
+  --color-ink-400: #818b9f;
+  --color-ink-500: #606a7e;
+  --color-ink-600: #475061;
+  --color-ink-700: #373e4b;
+  --color-ink-800: #242932;
+  --color-ink-900: #161a20;
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-card: 0 4px 16px -4px #0000001a;
+  --shadow-btn: 0 10px 15px -3px #2d4fd040, 0 4px 6px -4px #2d4fd040;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #606a7e;
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #242932;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  :focus-visible {
+    outline: 2px solid #3f6be8;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Band rhythm: 5rem, 7rem from lg — the reference's `.section`. */
+  .section-band {
+    padding-block: 5rem;
+  }
+  @media (min-width: 1024px) {
+    .section-band {
+      padding-block: 7rem;
+    }
+  }
+
+  /* Pricing and services are one bordered block divided by hairlines, not cards. */
+  .hairline-grid {
+    display: grid;
+    gap: 1px;
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
+    border: 1px solid #eceef2;
+    background-color: #eceef2;
+  }
+}

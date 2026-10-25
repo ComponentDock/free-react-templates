@@ -1,5 +1,9 @@
 # Flowcert — Tasks
 
+**Status: implemented 2026-10-25** — `apps/flowcert` ships 77 tests at 100% lines/functions/branches/
+statements, the reference re-read live (HTTP 200, 74,502 B, identical h2 order and section ids) and
+`scripts/verify-app.sh flowcert` green. Deployment is automatic on merge.
+
 Recreation of ColorLib **"Backstop"** (https://colorlib.com/wp/template/backstop/) as a React 19 +
 Vite + Tailwind 4 + TypeScript app under the name **Flowcert** (`apps/flowcert`).
 
@@ -32,64 +36,64 @@ Vite + Tailwind 4 + TypeScript app under the name **Flowcert** (`apps/flowcert`)
 
 ## Scaffold
 
-- [ ] Copy the single-app scaffold (`package.json`, `vite.config.ts` with `injectUiSource()`,
+- [x] Copy the single-app scaffold (`package.json`, `vite.config.ts` with `injectUiSource()`,
       `vitest.config.ts`, `tsconfig.json`, `index.html`, `src/main.tsx`, `src/test/setup.ts`,
       `public/CNAME`)
-- [ ] `npm install` at the repo root so `package-lock.json` registers the workspace
-- [ ] `homepage` = `https://flowcert.free.componentdock.com`, `public/CNAME` = same host
-- [ ] `index.html`: `<title>Flowcert — backflow testing, priced and filed</title>`, meta description,
+- [x] `npm install` at the repo root so `package-lock.json` registers the workspace
+- [x] `homepage` = `https://flowcert.free.componentdock.com`, `public/CNAME` = same host
+- [x] `index.html`: `<title>Flowcert — backflow testing, priced and filed</title>`, meta description,
       Inter + JetBrains Mono `<link>` (`family=Inter:wght@400;500;600;700;800` and
       `family=JetBrains+Mono:wght@500;700`)
-- [ ] `src/index.css`: `@theme` with the `primary` ramp (`50 #eef4ff`, `100 #dce7fd`, `200 #bfd3fc`,
+- [x] `src/index.css`: `@theme` with the `primary` ramp (`50 #eef4ff`, `100 #dce7fd`, `200 #bfd3fc`,
       `300 #94b5f9`, `400 #628ef3`, `500 #3f6be8`, `600 #2d4fd0`, `700 #263fa8`) and the `ink` ramp
       (`50 #f6f7f9`, `100 #eceef2`, `200 #d8dce4`, `300 #b0b7c6`, `400 #818b9f`, `500 #606a7e`,
       `600 #475061`, `700 #373e4b`, `800 #242932`, `900 #161a20`); radii `lg .5rem` / `xl .75rem` /
       `2xl 1rem`; shadows `card 0 4px 16px -4px #0000001a` and `btn 0 10px 15px -3px #2d4fd040, 0 4px
       6px -4px #2d4fd040`
-- [ ] `src/data/` typed tables: `steps` (4), `prices` (6), `services` (6), `reasons` (4), `towns` (12),
+- [x] `src/data/` typed tables: `steps` (4), `prices` (6), `services` (6), `reasons` (4), `towns` (12),
       `reviews` (3), `faqs` (5), `reasons-for-booking` (6 select options)
 
 ## Sections (tests first, reference order)
 
-- [ ] **Licence strip** — three label/value pairs, `4.9` + amber star + `380+ reviews`, hidden
+- [x] **Licence strip** — three label/value pairs, `4.9` + amber star + `380+ reviews`, hidden
       secondary items below `sm`
-- [ ] **Header** — sticky blurred white, lockup, six links (`#process`, `#pricing`, `#services`,
+- [x] **Header** — sticky blurred white, lockup, six links (`#process`, `#pricing`, `#services`,
       `#areas`, `#why-us`, `#contact`), location pill, well-formed `tel:` link, solid CTA; nav on at
       `xl`, city pill at `2xl`; disclosure below `xl` with `aria-expanded` + close on navigate
-- [ ] **Hero** — eyebrow, two-tone `h1`, lede, rating line, four ticks; card in `lg:col-span-5`
-- [ ] **Quick-book card** — name / phone / select (placeholder + 6 options), inline demo confirmation,
+- [x] **Hero** — eyebrow, two-tone `h1`, lede, rating line, four ticks; card in `lg:col-span-5`
+- [x] **Quick-book card** — name / phone / select (placeholder + 6 options), inline demo confirmation,
       no navigation; empty submit blocked
-- [ ] **Explainer** — `<ol>` of 4, ordinals `01`–`04`, `aria-hidden` rules, blue micro-links
-- [ ] **Price list** — one hairline block of 6 cells (`gap-px` on `bg-ink-100`), price lines, footnote
-- [ ] **Why-us** — 4:3 figure + caption, `<dl>` of 4 items with 2 px `primary-600` left borders
-- [ ] **Services** — same block component as pricing, 6 cells, `Free` on the reminder
-- [ ] **Coverage** — 12 towns, bordered rows, 2→3 columns, replace-the-list note
-- [ ] **Reviews** — 3 cards, five labelled stars, initial avatars, carousel with 3/2/1 per view,
+- [x] **Explainer** — `<ol>` of 4, ordinals `01`–`04`, `aria-hidden` rules, blue micro-links
+- [x] **Price list** — one hairline block of 6 cells (`gap-px` on `bg-ink-100`), price lines, footnote
+- [x] **Why-us** — 4:3 figure + caption, `<dl>` of 4 items with 2 px `primary-600` left borders
+- [x] **Services** — same block component as pricing, 6 cells, `Free` on the reminder
+- [x] **Coverage** — 12 towns, bordered rows, 2→3 columns, replace-the-list note
+- [x] **Reviews** — 3 cards, five labelled stars, initial avatars, carousel with 3/2/1 per view,
       dots, `lg` arrows, 5 s autoplay with pause-on-hover
-- [ ] **FAQ** — 5 rows, exclusive expansion, `aria-expanded`, `+` rotating 45°
-- [ ] **Closing band** — `#263fa8`, white solid CTA + 2 px white/40 outline `tel:` CTA
-- [ ] **Footer** — brand block (3 social tiles, address, phone, email), `Services` 4 / `Company` 4 /
+- [x] **FAQ** — 5 rows, exclusive expansion, `aria-expanded`, `+` rotating 45°
+- [x] **Closing band** — `#263fa8`, white solid CTA + 2 px white/40 outline `tel:` CTA
+- [x] **Footer** — brand block (3 social tiles, address, phone, email), `Services` 4 / `Company` 4 /
       `Support` 3, `Stay Updated` newsletter with inline confirmation, legal bar with the
       `Component Dock` link to `https://www.componentdock.com/`
-- [ ] **Chrome** — skip link first, scroll-progress bar, back-to-top past 300 px, cookie strip
+- [x] **Chrome** — skip link first, scroll-progress bar, back-to-top past 300 px, cookie strip
       (component state), reveal hook that never traps content under reduced motion
 
 ## Polish and gates
 
-- [ ] Shared `HairlineGrid` component reused by pricing + services (no duplicated markup)
-- [ ] `useReveal` hook: no `setState` in an effect, resolves visible without `IntersectionObserver`
-- [ ] Carousel: fake timers in tests, arrows hidden when the track has one position, `aria-label`s on
+- [x] Shared `HairlineGrid` component reused by pricing + services (no duplicated markup)
+- [x] `useReveal` hook: no `setState` in an effect, resolves visible without `IntersectionObserver`
+- [x] Carousel: fake timers in tests, arrows hidden when the track has one position, `aria-label`s on
       dots and arrows
-- [ ] Contrast: `#263fa8` band with white text (≥ 4.5:1), `primary-700` price lines on white
+- [x] Contrast: `#263fa8` band with white text (≥ 4.5:1), `primary-700` price lines on white
       (≥ 4.5:1), `ink-400` fine print checked against its own ground
-- [ ] No ColorLib / "Backstop" / "backstopbackflow" string anywhere under `apps/flowcert`; images (if
+- [x] No ColorLib / "Backstop" / "backstopbackflow" string anywhere under `apps/flowcert`; images (if
       any) `https://picsum.photos/seed/flowcert-<n>/…`; no copied SVG, font file or stylesheet
-- [ ] `npx tsc --noEmit`, `npm run lint`, `npm run test:coverage --workspace
+- [x] `npx tsc --noEmit`, `npm run lint`, `npm run test:coverage --workspace
       @free-react-templates/flowcert` (100%), `npm run build --workspace
       @free-react-templates/flowcert`, `scripts/verify-app.sh flowcert`
-- [ ] Row added under `## Business (365)` as `[~]`, then flipped to `[x]` with the surge URL +
+- [x] Row added under `## Business (365)` as `[~]`, then flipped to `[x]` with the surge URL +
       `npm run readme:status` bookkeeping commit
-- [ ] Footer links `https://www.componentdock.com/` as "Component Dock"
+- [x] Footer links `https://www.componentdock.com/` as "Component Dock"
 
 ## Deploy
 

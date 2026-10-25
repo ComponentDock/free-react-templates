@@ -10,7 +10,8 @@ Token authority: `theme/backstop/_astro/Base.DGmaIQ3L.css` (54,746 B, sha256
 `669d475db003541d6c08b9ba020bac226120a5b14ed12ce9b1593da7499a7453`)
 Behaviour authority: `_astro/Base.astro_astro_type_script_index_0_lang.BLoalVWc.js` (16,233 B)
 Spec: `openspec/specs/template-flowcert/spec.md`
-Shipped: — (not built yet; no `TEMPLATES.md` row exists)
+Shipped: **2026-10-25** — `apps/flowcert` (https://flowcert.free.componentdock.com); `TEMPLATES.md` row added
+under `## Business (366)` and flipped to `[x]` by the bookkeeping commit
 
 An indigo-blue trade page (`#2d4fd0`) on alternating `#f6f7f9` / white grounds, set in Inter with a
 mono sub-wordmark. Its argument is **"short, priced, filed"**: a licence strip states the credential
