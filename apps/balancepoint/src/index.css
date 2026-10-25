@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 defaults `dark:` to
+   prefers-color-scheme, but the design's toggle writes a class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Balancepoint tokens — measured from the reference design's compiled sheet and
+   its live render at 1440 px. A lime `primary` used as signal (text, ticks,
+   stars, one closing band) against a cool blue-slate `ink` that carries every
+   heading, every hairline and the two dark bands. Shape: 8 px buttons, 12 px
+   ledger rows, 16 px cards, full-round pills, one soft shadow, 80 / 112 px
+   band rhythm. The mono face is reserved for money. */
+@theme {
+  /* primary — lime green (the brand) */
+  --color-primary-50: #f4fbe8;
+  --color-primary-100: #e6f6cb;
+  --color-primary-200: #ceec9c;
+  --color-primary-300: #b0dc66;
+  --color-primary-400: #93c63c;
+  --color-primary-500: #78a926;
+  --color-primary-600: #5d861b;
+  --color-primary-700: #4a6918;
+
+  /* ink — cool blue-slate: every heading, every hairline */
+  --color-ink-50: #f5f7f8;
+  --color-ink-100: #e8ecef;
+  --color-ink-200: #d0d8dd;
+  --color-ink-300: #a6b3bc;
+  --color-ink-400: #748592;
+  --color-ink-500: #546472;
+  --color-ink-600: #3e4b56;
+  --color-ink-700: #303a43;
+  --color-ink-800: #1f262c;
+  --color-ink-900: #13181c;
+
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #546472;
+    font-family: 'Outfit', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #e5e7eb;
+  }
+
+  :focus-visible {
+    outline: 2px solid #78a926;
+    outline-offset: 2px;
+  }
+
+  /* Every anchor target clears the 37 px licence strip plus the sticky header. */
+  [id] {
+    scroll-margin-top: 6.6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+}
