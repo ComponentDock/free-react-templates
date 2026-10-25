@@ -1041,7 +1041,7 @@
 - [x] **Glint** — [colorlib](https://colorlib.com/wp/template/glint/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/glint-simple-website-template.jpeg) · [lumen](https://lumen.free.componentdock.com)
 - [x] **Gourmet** — [colorlib](https://colorlib.com/wp/template/gourmet/) · [dine](https://dine.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gourmet-free-template.jpg)
 - [x] **Gravity** — [colorlib](https://colorlib.com/wp/template/gravity/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/gravity-free-template.jpg) · [plumb](https://plumb.free.componentdock.com)
-- [~] **Groundwork** — [colorlib](https://colorlib.com/wp/template/groundwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/groundwork-template.jpg) · [hedgerow](https://hedgerow.free.componentdock.com)
+- [x] **Groundwork** — [colorlib](https://colorlib.com/wp/template/groundwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/groundwork-template.jpg) · [hedgerow](https://hedgerow.free.componentdock.com)
 - [x] **Grunt** — [colorlib](https://colorlib.com/wp/template/grunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grunt-free-template.jpg) · [mortar](https://mortar.free.componentdock.com)
 - [x] **Haircare** — [colorlib](https://colorlib.com/wp/template/haircare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/haircare-free-template.jpg) · [mane](https://mane.free.componentdock.com)
 - [x] **Hairsal** — [colorlib](https://colorlib.com/wp/template/hairsal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hairsal-free-template.jpg) · [tressly](https://tressly.free.componentdock.com)
