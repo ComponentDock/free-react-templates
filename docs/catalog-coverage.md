@@ -68,7 +68,7 @@ prep needs a different invented name.
 | `groundwork`         | app exists (other design); orphan prep (other design) |
 | `halfpast`           | **shipped** as Slotline — `apps/slotline`              |
 | `heatline`           | **shipped** as Emberly — `apps/emberly`                |
-| `journeyman`         | preview 200, 53087 B                                  |
+| `journeyman`         | **shipped** as Pipewright — `apps/pipewright`          |
 | `kinetic`            | app exists (other design); orphan prep (other design) |
 | `lantern`            | app exists (other design); orphan prep (other design) |
 | `mainline`           | preview 200, 69579 B                                  |
@@ -94,6 +94,7 @@ prep needs a different invented name.
 | `voltway`            | preview 200, 71946 B                                  |
 | `zephyr`             | orphan prep (other design)                            |
 
+`journeyman` is shipped as **Pipewright** (`apps/pipewright`, https://pipewright.free.componentdock.com);
 `overprint` is shipped as **Makeready** (`apps/makeready`, https://makeready.free.componentdock.com); `airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
 own row under `## Business`, `circles` as **Closeknit** (`apps/closeknit`, row added under
 `## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt; `perimeter` is shipped as

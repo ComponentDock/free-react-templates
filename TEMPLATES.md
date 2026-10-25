@@ -1080,7 +1080,7 @@
 - [x] **Itkol** — [colorlib](https://colorlib.com/wp/template/itkol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itkol-free-template.jpg) · [vantix](https://vantix.free.componentdock.com)
 - [x] **Itlock** — [colorlib](https://colorlib.com/wp/template/itlock/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/itlock-colorlib-template.jpg) · [netora](https://netora.free.componentdock.com)
 - [x] **Jobpply** — [colorlib](https://colorlib.com/wp/template/jobpply/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/jobpply-free-template.jpg) · [jobvane](https://jobvane.free.componentdock.com)
-- [~] **Journeyman** — [colorlib](https://colorlib.com/wp/template/journeyman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/journeyman-template.jpg) · [pipewright](https://pipewright.free.componentdock.com)
+- [x] **Journeyman** — [colorlib](https://colorlib.com/wp/template/journeyman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/journeyman-template.jpg) · [pipewright](https://pipewright.free.componentdock.com)
 - [x] **Kanox** — [colorlib](https://colorlib.com/wp/template/kanox/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kanox-free-template.jpg) · [maven](https://maven.free.componentdock.com)
 - [x] **Karl** — [colorlib](https://colorlib.com/wp/template/karl/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/karl-free-template.jpg) · [vignette](https://vignette.free.componentdock.com)
 - [x] **Kayelux** — [colorlib](https://colorlib.com/wp/template/kayelux/) · [terra](https://terra.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/kayelux-colorlib-template.jpg)
