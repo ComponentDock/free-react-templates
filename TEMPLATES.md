@@ -1976,7 +1976,7 @@
 - [x] **Industry Inc** — [colorlib](https://colorlib.com/wp/template/industry-inc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/industryinc-free-template.jpg) · [dynamo](https://dynamo.free.componentdock.com)
 - [x] **Lendo** — [colorlib](https://colorlib.com/wp/template/lendo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/lendo-free-template.jpg) · [steelcraft](https://steelcraft.free.componentdock.com)
 - [x] **Roofing** — [colorlib](https://colorlib.com/wp/template/roofing/) · [shingle](https://shingle.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/roofing-free-template.jpg)
-- [~] **Springwell** — [colorlib](https://colorlib.com/wp/template/springwell/) · [headwater](https://headwater.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/springwell-template.jpg)
+- [x] **Springwell** — [colorlib](https://colorlib.com/wp/template/springwell/) · [headwater](https://headwater.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/springwell-template.jpg)
 - [x] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg) · [stamp](https://stamp.free.componentdock.com)
 - [x] **Woodwork** — [colorlib](https://colorlib.com/wp/template/woodwork/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/woodwork-colorlib-template.jpg) · [graincraft](https://graincraft.free.componentdock.com)
 
