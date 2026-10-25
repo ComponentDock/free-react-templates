@@ -651,33 +651,112 @@ social rail of five glyphs (25px apart) and "Terms and Conditions" at the right.
 
 ## Verification checklist
 
-- [ ] `openspec/specs/template-keynoter/spec.md` is this file; `npm run spec:validate` passes.
-- [ ] `apps/keynoter` exists with `package.json` name `@free-react-templates/keynoter`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `keynoter.free.componentdock.com`, `homepage` = `https://keynoter.free.componentdock.com`.
-- [ ] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-brand: #6063ed`, `--color-navy: #201d6d`, `--color-action: #4aca59`, `--color-pink: #f21e7d`, `--color-hero-start: #ff1a6b`, `--color-hero-end: #2a34d0`, `--color-card: #f5f5f5`, `--color-band: #f3f3f3`, `--color-ink: #272727`, `--color-body: #484848`, `--color-page: #ffffff`).
-- [ ] Lato 400/700/900 loaded through one Google Fonts `<link>` (`css2?family=Lato:wght@400;700;900&display=swap`, verified HTTP 200); the source ships no webfont of its own.
-- [ ] Section order and measured 1440 heights match the eight-row band table (101 / 976 / 241 / 978 / 784 / 1,330 / 519 / 528; document ≈5,441px ±3%).
-- [ ] Header: 101px, absolute over the hero, `linear-gradient(to right, #ff1a6b, #2a34d0)` at .75 behind the bar, 160×39 wordmark at x = 15, five 16px/900 uppercase nav items with the active pill `#6063ED` at 4px radius, five social glyphs and a 55×55 `#6063ED` search square 15px from the right edge.
-- [ ] All four nav items are in-page anchors with real targets (`#speakers`, `#workshops`, `#talks`, `#contact`); no `href="#"` anywhere in the app and no link to a missing route.
-- [ ] Mobile ≤767: wordmark + labelled menu button with `aria-expanded`, full-width drawer of the five items and five social glyphs, Escape closes it, no horizontal scroll.
-- [ ] Search overlay: fixed `#073B4C`, 0.3s fade, centred 500px panel, ~399px `1px #ddd` field, 100×50 `#233EDE` submit, close control at the top-right, focus moved in and returned on close.
-- [ ] Hero: 976px band, four distinct photos each under a `#ff1a6b → #2a34d0` wash at ≈.75, kicker at y ≈ 320 (36px/400 white with superscript ordinals), the page's single `h1` at 100px/100/900 uppercase white, venue line 36px/700, vertical 11px dot rail (3px ring, white / `#ff1a6b`) at `right: 65px`.
-- [ ] Hero autoplay 1.2s per slide, pause on hover, dot controls switch slides, inactive slide copy is not exposed as headings, `prefers-reduced-motion` stops the rotation.
-- [ ] Hero steps down: 60px/66 at ≤767 with `padding: 200px 0 150px`, 40px/50 at ≤479, dots move to `right: 35px` (20px at ≤479).
-- [ ] Counter band: 241px `#201D6D`, 60px/900 "Next Event", date 24px/400 with a 16px white-on-`#F21E7D` time pill, four 60px/900 numerals with 18px labels 60px apart.
-- [ ] Counter shows a REAL countdown to a future date and ticks every second (the source's 2019 target renders 00 — do not copy that).
-- [ ] Speakers: 60px/900 section title with 88px bottom margin, three 362px cards with 362×412 duotone portraits (6px radius), 30px/900 names with 18px/400 roles, three DISTINCT names and roles, centred 231×67 "ALL SPEAKERS" indigo button.
-- [ ] Workshop: 784px `#f3f3f3`, flush-left photo 612px wide (full band height), text column 588px at x = 720 with 24px/700 `h4`, 60px/700/72 `h2`, 18px paragraph, indigo More Info (200×67) + green Buy Tickets (206×67) 27px apart.
-- [ ] Workshop stacks ≤767 with a 500px photo, 100px text top padding and a 53px/35px heading; buttons keep 67px height and do not overflow at 390.
-- [ ] Talks: six 362×520 `#f5f5f5` cards (6px radius, 34/18/40/35 padding), topics 36px/900/50 with 198px bottom margin, bylines pinned at the card's bottom-left, hover/focus flood `#FB3ABE → #F149E3` in 0.4s with white text.
-- [ ] Talks reflow to two columns at ≤991 and one at ≤767; card heights stay 520px and no card clips its topic (the longest topic is 5 lines).
-- [ ] Subscribe: 519px photo band, 60px/900 white title with the source's negative-bottom-margin rhythm, 18px white paragraph, 830×62 transparent `2px #F1F1F1` field (6px radius, 18px white, italic .35 placeholder) + 200×62 `#4ACA59` button, flex `gap` layout that never overlaps at 1440/1024/768/390.
-- [ ] Subscribe validates client-side (`aria-invalid` + inline error), announces success via `aria-live`, makes no network call; stacks the button under the field ≤767.
-- [ ] Footer: 528px `#201D6D`, four 294px columns (24px/900 headings, 18px/400 white .5 items 24px apart), pink `#D51E7B` contact glyphs with 33px indent, 1px `#F21E7D` rule, 95px copyright bar (14px white .5, rendered year, five social glyphs 25px apart, terms at the right).
-- [ ] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/keynoter` = 0 hits; `git grep -i summit apps/keynoter` = 0 hits.
-- [ ] 6px radius on buttons, cards, portraits and the subscribe field; 4px on the nav pill and search square; 50% only on the hero dots; no card shadows.
-- [ ] Placeholder imagery uses `https://picsum.photos/seed/keynoter-<n>/<w>/<h>` (four hero slides, three speaker portraits, one workshop photo, one subscribe backdrop) and the duotone comes from CSS, never from a copied source JPEG; icons come from `lucide-react`.
-- [ ] No horizontal overflow at 390px (`document.documentElement.scrollWidth === document.documentElement.clientWidth`).
-- [ ] `scripts/verify-app.sh keynoter` passes: typecheck, lint, 100% coverage tests, build.
-- [ ] Desktop (1440) and mobile (390) renders compared band-by-band against the reference; deviations listed in the PR.
-- [ ] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/keynoter" package-lock.json` ≥ 1.
-- [ ] TEMPLATES.md rows **1193** and **1688** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://keynoter.free.componentdock.com` after merge (prep stream does none of this); `apps/summit` untouched.
+- [x] `openspec/specs/template-keynoter/spec.md` is this file; `npm run spec:validate` passes.
+- [x] `apps/keynoter` exists with `package.json` name `@free-react-templates/keynoter`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `keynoter.free.componentdock.com`, `homepage` = `https://keynoter.free.componentdock.com`.
+- [x] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-brand: #6063ed`, `--color-navy: #201d6d`, `--color-action: #4aca59`, `--color-pink: #f21e7d`, `--color-hero-start: #ff1a6b`, `--color-hero-end: #2a34d0`, `--color-card: #f5f5f5`, `--color-band: #f3f3f3`, `--color-ink: #272727`, `--color-body: #484848`, `--color-page: #ffffff`).
+- [x] Lato 400/700/900 loaded through one Google Fonts `<link>` (`css2?family=Lato:wght@400;700;900&display=swap`, verified HTTP 200); the source ships no webfont of its own.
+- [x] Section order and measured 1440 heights match the eight-row band table (101 / 976 / 241 / 978 / 784 / 1,330 / 519 / 528; document ≈5,441px ±3%).
+- [x] Header: 101px, absolute over the hero, `linear-gradient(to right, #ff1a6b, #2a34d0)` at .75 behind the bar, 160×39 wordmark at x = 15, five 16px/900 uppercase nav items with the active pill `#6063ED` at 4px radius, five social glyphs and a 55×55 `#6063ED` search square 15px from the right edge.
+- [x] All four nav items are in-page anchors with real targets (`#speakers`, `#workshops`, `#talks`, `#contact`); no `href="#"` anywhere in the app and no link to a missing route.
+- [x] Mobile ≤767: wordmark + labelled menu button with `aria-expanded`, full-width drawer of the five items and five social glyphs, Escape closes it, no horizontal scroll.
+- [x] Search overlay: fixed `#073B4C`, 0.3s fade, centred 500px panel, ~399px `1px #ddd` field, 100×50 `#233EDE` submit, close control at the top-right, focus moved in and returned on close.
+- [x] Hero: 976px band, four distinct photos each under a `#ff1a6b → #2a34d0` wash at ≈.75, kicker at y ≈ 320 (36px/400 white with superscript ordinals), the page's single `h1` at 100px/100/900 uppercase white, venue line 36px/700, vertical 11px dot rail (3px ring, white / `#ff1a6b`) at `right: 65px`.
+- [x] Hero autoplay 1.2s per slide, pause on hover, dot controls switch slides, inactive slide copy is not exposed as headings, `prefers-reduced-motion` stops the rotation.
+- [x] Hero steps down: 60px/66 at ≤767 with `padding: 200px 0 150px`, 40px/50 at ≤479, dots move to `right: 35px` (20px at ≤479).
+- [x] Counter band: 241px `#201D6D`, 60px/900 "Next Event", date 24px/400 with a 16px white-on-`#F21E7D` time pill, four 60px/900 numerals with 18px labels 60px apart.
+- [x] Counter shows a REAL countdown to a future date and ticks every second (the source's 2019 target renders 00 — do not copy that).
+- [x] Speakers: 60px/900 section title with 88px bottom margin, three 362px cards with 362×412 duotone portraits (6px radius), 30px/900 names with 18px/400 roles, three DISTINCT names and roles, centred 231×67 "ALL SPEAKERS" indigo button.
+- [x] Workshop: 784px `#f3f3f3`, flush-left photo 612px wide (full band height), text column 588px at x = 720 with 24px/700 `h4`, 60px/700/72 `h2`, 18px paragraph, indigo More Info (200×67) + green Buy Tickets (206×67) 27px apart.
+- [x] Workshop stacks ≤767 with a 500px photo, 100px text top padding and a 53px/35px heading; buttons keep 67px height and do not overflow at 390.
+- [x] Talks: six 362×520 `#f5f5f5` cards (6px radius, 34/18/40/35 padding), topics 36px/900/50 with 198px bottom margin, bylines pinned at the card's bottom-left, hover/focus flood `#FB3ABE → #F149E3` in 0.4s with white text.
+- [x] Talks reflow to two columns at ≤991 and one at ≤767; card heights stay 520px and no card clips its topic (the longest topic is 5 lines).
+- [x] Subscribe: 519px photo band, 60px/900 white title with the source's negative-bottom-margin rhythm, 18px white paragraph, 830×62 transparent `2px #F1F1F1` field (6px radius, 18px white, italic .35 placeholder) + 200×62 `#4ACA59` button, flex `gap` layout that never overlaps at 1440/1024/768/390.
+- [x] Subscribe validates client-side (`aria-invalid` + inline error), announces success via `aria-live`, makes no network call; stacks the button under the field ≤767.
+- [x] Footer: 528px `#201D6D`, four 294px columns (24px/900 headings, 18px/400 white .5 items 24px apart), pink `#D51E7B` contact glyphs with 33px indent, 1px `#F21E7D` rule, 95px copyright bar (14px white .5, rendered year, five social glyphs 25px apart, terms at the right).
+- [x] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/keynoter` = 0 hits; `git grep -i summit apps/keynoter` = 0 hits.
+- [x] 6px radius on buttons, cards, portraits and the subscribe field; 4px on the nav pill and search square; 50% only on the hero dots; no card shadows.
+- [x] Placeholder imagery uses `https://picsum.photos/seed/keynoter-<n>/<w>/<h>` (four hero slides, three speaker portraits, one workshop photo, one subscribe backdrop) and the duotone comes from CSS, never from a copied source JPEG; icons come from `lucide-react`.
+- [x] No horizontal overflow at 390px (`document.documentElement.scrollWidth === document.documentElement.clientWidth`).
+- [x] `scripts/verify-app.sh keynoter` passes: typecheck, lint, 100% coverage tests, build.
+- [x] Desktop (1440) and mobile (390) renders compared band-by-band against the reference; deviations listed in the PR.
+- [x] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/keynoter" package-lock.json` ≥ 1.
+- [x] TEMPLATES.md rows **1193** and **1688** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://keynoter.free.componentdock.com` after merge (prep stream does none of this); `apps/summit` untouched.
+
+## Implementation record (shipped)
+
+**App:** `apps/keynoter` · `@free-react-templates/keynoter` · deploy
+`keynoter.free.componentdock.com`. Built from the prep research above; the live
+preview was re-fetched at implementation time (`22,465 B` HTML, `css/style.css`
+`33,880 B` / sha256 `84fb598d…` — the sheet hash matches the prep's, the HTML
+hash differs only because the host injects a rotating request id).
+
+### Files
+
+`src/App.tsx` (band order) · `src/content.ts` (every string) ·
+`src/index.css` (`@theme` tokens + `.shell` / `.duotone` / `.band`) ·
+`src/components/{Chrome,Header,SearchOverlay,Hero,Counter,Speakers,Workshop,Talks,Subscribe,Footer,ui}.tsx` ·
+`src/lib/{countdown,forms,motion}.ts` · 14 test files (48 tests).
+
+### Documented deltas as built
+
+1. **No preloader element at all** — the source's `#preloder` is a black
+   full-screen overlay that survives a failed `load` event. The requirement's
+   scenario ("absent on the first painted frame") is met by not rendering it;
+   nothing is trapped and no timer is needed.
+2. **Live countdown** to `NEXT_EVENT.iso = 2027-02-09T09:00:00+01:00` through
+   `remainingParts()` (floors at zero), ticking once a second and clearing its
+   interval on unmount. The source renders `00` because its target is in 2019.
+3. **Both dates agree** — hero kicker and counter label are both February 9–15,
+   2027 (the source contradicts itself: 9–15 Feb 2019 vs 25 Aug 2019).
+4. **Nav → in-page anchors:** Home `#top`, Speakers `#speakers`, Tickets
+   `#workshops`, Blog `#talks`, Contact `#contact`. Zero `href="#"` in the app;
+   social glyphs and "Terms and Conditions" point at
+   `https://www.componentdock.com/`, "All Speakers" → `#talks`, "More Info" →
+   `#talks`, "Buy Tickets" → `#contact`.
+5. **Duotone is CSS, not JPEG:** one
+   `linear-gradient(to right, #ff1a6b, #2a34d0)` at `.75` (`.duotone::after`)
+   over grayscale picsum placeholders — hero ×4, portraits ×3, workshop photo,
+   subscribe backdrop. The subscribe band adds a `bg-navy/30` veil so the white
+   body copy keeps its contrast over a bright placeholder.
+6. **Subscribe layout is a flex row with a gap** (field `max-w-[830px]`, button
+   `200×62`), never the source's absolute overlap; it stacks under `md`.
+7. **Typos fixed:** "Useful Links", "Your E-mail Address", clean `<title>`
+   (`Keynoter — Conference 2027`).
+8. **Outline:** exactly one `h1` (active hero slide); the three inactive slides
+   render their headline as a `<p>` and the slide is `aria-hidden`; talk topics
+   are `h3`, not a seventh `h2`.
+9. **Mobile step-downs tuned to the 390 render** rather than copied verbatim:
+   hero `h1` 48px (source 40px), hero top padding 180px, workshop photo 320px
+   tall, speaker portraits 330px. Nothing overflows and the document reads at
+   the reference's proportions (see the table) — these are the only places the
+   recreation departs from the source's px ladder.
+
+### Measured verification (Playwright, `prefers-reduced-motion` to freeze slide 0)
+
+| band        | reference 1440 | keynoter 1440 |        Δ |
+| ----------- | -------------: | ------------: | -------: |
+| header      |            101 |           101 |        0 |
+| hero        |            976 |           976 |        0 |
+| counter     |            241 |           229 |    −5.0% |
+| speakers    |            978 |           975 |    −0.3% |
+| workshop    |            784 |           784 |        0 |
+| talks       |          1,330 |         1,300 |    −2.3% |
+| subscribe   |            519 |           510 |    −1.7% |
+| footer      |            528 |           521 |    −1.3% |
+| **document**|      **5,441** |     **5,380** | **−1.1%** |
+
+Hero `h1` = **100px / `rgb(255,255,255)`** at 1440 and 48px at 390, three lines
+(kicker at y = 384, venue at y ≈ 696 — the reference's own offsets); body 16px /
+1.875; `document.fonts` reports **Lato 400, 700, 900** loaded (no synthesis);
+`scrollWidth − clientWidth` = **0** at 1440 and 390.
+
+### Gate results
+
+- `bash scripts/verify-app.sh keynoter` — typecheck ✓, lint ✓, **48 tests**,
+  coverage **100% statements / 100% branches / 100% functions / 100% lines**,
+  build ✓ (`dist/index-*.js` 276 kB / 86 kB gzip).
+- `npm run spec:validate` — **3,292 passed, 0 failed**.
+- `git grep -i colorlib apps/keynoter` = **0** and `git grep -i summit
+  apps/keynoter` = **0**.
+- `npm install` at the root registered the workspace
+  (`grep -c "@free-react-templates/keynoter" package-lock.json` = 2).

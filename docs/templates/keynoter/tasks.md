@@ -68,112 +68,121 @@
 
 ### 0. Claim (implementer, not prep)
 
-- [ ] `git fetch origin`, branch `feat/template-keynoter`.
-- [ ] Re-open rows **1193** and **1688** in `TEMPLATES.md` (`[x]` → `[ ]`),
+- [x] `git fetch origin`, branch `feat/template-keynoter`.
+- [x] Re-open rows **1193** and **1688** in `TEMPLATES.md` (`[x]` → `[ ]`),
       commit and push the claim (they are false `[x]` — see §2 of
       `docs/row-multiplicity.md`). Do NOT touch `apps/summit`.
-- [ ] Copy the smallest shipped app (`apps/amberline` is a good base), rename to
+- [x] Copy the smallest shipped app (`apps/amberline` is a good base), rename to
       `keynoter`, set `@free-react-templates/keynoter`, `public/CNAME`,
       `homepage`.
 
 ### 1. Scaffold + tokens
 
-- [ ] `vite.config.ts` keeps `injectUiSource()`; `src/index.css` `@theme` block
+- [x] `vite.config.ts` keeps `injectUiSource()`; `src/index.css` `@theme` block
       with `--color-brand: #6063ed`, `--color-navy: #201d6d`,
       `--color-action: #4aca59`, `--color-pink: #f21e7d`,
       `--color-hero-start: #ff1a6b`, `--color-hero-end: #2a34d0`,
       `--color-card: #f5f5f5`, `--color-band: #f3f3f3`,
       `--color-ink: #272727`, `--color-body: #484848`.
-- [ ] `index.html`: Lato 400/700/900 via
+- [x] `index.html`: Lato 400/700/900 via
       `https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap`,
       Keynoter `<title>` + meta description, `preconnect` to
       `fonts.gstatic.com` and `picsum.photos`.
-- [ ] Test first: shell renders 9 bands in order, one `h1`, no `href="#"`.
+- [x] Test first: shell renders 9 bands in order, one `h1`, no `href="#"`.
 
 ### 2. Header + search overlay
 
-- [ ] Absolute 101px header over the hero; gradient wash at .75 behind the bar.
-- [ ] 160px wordmark (text or inline SVG, no source PNG), five nav items
+- [x] Absolute 101px header over the hero; gradient wash at .75 behind the bar.
+- [x] 160px wordmark (text or inline SVG, no source PNG), five nav items
       (`#speakers`, `#workshops`, `#talks`, `#contact`, Home → `#top`), five
       social glyphs (`aria-label`ed buttons/links), 55×55 search square.
-- [ ] Active-section tracking sets the `#6063ED` pill.
-- [ ] Mobile ≤767: labelled menu button + drawer (`aria-expanded`, Escape,
+- [x] Active-section tracking sets the `#6063ED` pill.
+- [x] Mobile ≤767: labelled menu button + drawer (`aria-expanded`, Escape,
       focus return), social glyphs inside the drawer.
-- [ ] Search overlay: `#073B4C`, 0.3s fade, 500px panel, ~399px field,
+- [x] Search overlay: `#073B4C`, 0.3s fade, 500px panel, ~399px field,
       100×50 `#233EDE` submit, close at top-right, focus in/out, Escape closes.
-- [ ] Tests: nav targets exist, drawer toggles, overlay opens/closes and clears.
+- [x] Tests: nav targets exist, drawer toggles, overlay opens/closes and clears.
 
 ### 3. Hero carousel
 
-- [ ] 976px band; four picsum photos; single CSS gradient wash
+- [x] 976px band; four picsum photos; single CSS gradient wash
       `to right, #ff1a6b → #2a34d0` at ≈.75 over each (the source's duotone is
       baked into its JPEGs — never copy them).
-- [ ] Kicker (36px/400 white, superscript ordinals), `h1` 100px/100/900
+- [x] Kicker (36px/400 white, superscript ordinals), `h1` 100px/100/900
       uppercase white over 3 lines, venue 36px/700 white.
-- [ ] Autoplay 1.2s, pause on hover, `prefers-reduced-motion` stops rotation,
+- [x] Autoplay 1.2s, pause on hover, `prefers-reduced-motion` stops rotation,
       dot rail 11px rings at `right: 65px` (vertical, 10px apart).
-- [ ] Inactive slides must not expose headings (`aria-hidden` copy).
-- [ ] Tests: exactly one `h1`, slide change updates the active dot, reduced
+- [x] Inactive slides must not expose headings (`aria-hidden` copy).
+- [x] Tests: exactly one `h1`, slide change updates the active dot, reduced
       motion freezes autoplay.
 
 ### 4. Next Event counter
 
-- [ ] 241px `#201D6D` band; 60px/900 heading, date + `#F21E7D` time pill.
-- [ ] Real countdown to a future `NEXT_EVENT` constant (source's 2019 target
+- [x] 241px `#201D6D` band; 60px/900 heading, date + `#F21E7D` time pill.
+- [x] Real countdown to a future `NEXT_EVENT` constant (source's 2019 target
       renders 00 — do not copy); pads to 2 digits; ticks each second; cleans up
       its interval on unmount.
-- [ ] Tests with fake timers: initial render, tick decrements, zero-floor, no
+- [x] Tests with fake timers: initial render, tick decrements, zero-floor, no
       interval leak, label text.
 
 ### 5. Keynote speakers
 
-- [ ] 60px/900 title + 88px margin; three 362px cards (portrait 362×412 with
+- [x] 60px/900 title + 88px margin; three 362px cards (portrait 362×412 with
       the duotone wash, 6px radius); 30px/900 name + 18px/400 role, distinct
       names/roles; centred 231×67 indigo "ALL SPEAKERS" → `#talks`.
-- [ ] Tests: three cards, three unique names, link target.
+- [x] Tests: three cards, three unique names, link target.
 
 ### 6. Workshop split
 
-- [ ] 784px `#f3f3f3`; flush-left photo 612px (`calc(50% - 108px)`), text
+- [x] 784px `#f3f3f3`; flush-left photo 612px (`calc(50% - 108px)`), text
       column at 50% (`padding: 185px 0 155px`); `h4` 24/700, `h2` 60/700/72,
       18px copy; More Info (indigo) + Buy Tickets (green).
-- [ ] ≤767 stacks (500px photo, 100px top padding, `h2` 53px → 35px at ≤479).
-- [ ] Tests: both CTAs exist with distinct styles and real targets; no overflow
+- [x] ≤767 stacks (500px photo, 100px top padding, `h2` 53px → 35px at ≤479).
+- [x] Tests: both CTAs exist with distinct styles and real targets; no overflow
       at 390.
 
 ### 7. "We will speak about" grid
 
-- [ ] Six cards, 362×520, `#f5f5f5`, 6px radius, 34/18/40/35 padding; topic
+- [x] Six cards, 362×520, `#f5f5f5`, 6px radius, 34/18/40/35 padding; topic
       36/900/50 with 198px bottom margin; byline pinned bottom-left.
-- [ ] Hover AND `:focus-visible` flood `#FB3ABE → #F149E3` in 0.4s, text →
+- [x] Hover AND `:focus-visible` flood `#FB3ABE → #F149E3` in 0.4s, text →
       white; 2 columns ≤991, 1 column ≤767.
-- [ ] Tests: six distinct topics, focusable cards, class/aria state on
+- [x] Tests: six distinct topics, focusable cards, class/aria state on
       hover/focus, tallest topic does not clip.
 
 ### 8. Subscribe band
 
-- [ ] 519px photo band with the source's negative-margin heading rhythm; 18px
+- [x] 519px photo band with the source's negative-margin heading rhythm; 18px
       white copy; 830×62 field + 200×62 `#4ACA59` button in a flex row with
       `gap` (never the source's absolute overlap).
-- [ ] Validation: `aria-invalid` + inline error, `aria-live` success, no
+- [x] Validation: `aria-invalid` + inline error, `aria-live` success, no
       network; stacks ≤767 with the button under the field.
-- [ ] Tests: empty/invalid/valid paths, live region text, layout classes.
+- [x] Tests: empty/invalid/valid paths, live region text, layout classes.
 
 ### 9. Footer + attribution
 
-- [ ] 528px `#201D6D`; four 294px columns (24/900 headings, 18/400 white @ .5,
+- [x] 528px `#201D6D`; four 294px columns (24/900 headings, 18/400 white @ .5,
       24px apart; pink glyphs, 33px indent); 1px `#F21E7D` rule; 95px
       copyright bar with rendered year, five social glyphs, terms link.
-- [ ] Footer credits https://www.componentdock.com/ as "Component Dock".
-- [ ] Tests: four column headings, rendered year, attribution link.
+- [x] Footer credits https://www.componentdock.com/ as "Component Dock".
+- [x] Tests: four column headings, rendered year, attribution link.
 
 ### 10. Verify + ship
 
-- [ ] `scripts/verify-app.sh keynoter` (typecheck, lint, 100% coverage, build).
-- [ ] `git grep -i colorlib apps/keynoter` = 0 and `git grep -i summit
+- [x] `scripts/verify-app.sh keynoter` (typecheck, lint, 100% coverage, build).
+- [x] `git grep -i colorlib apps/keynoter` = 0 and `git grep -i summit
       apps/keynoter` = 0.
-- [ ] 1440 + 390 screenshots compared band-by-band with
+- [x] 1440 + 390 screenshots compared band-by-band with
       `docs/templates/keynoter/design-notes.md`.
-- [ ] `npm install` at the root so `package-lock.json` registers the workspace.
-- [ ] PR → squash merge → rows 1193/1688 `[x]` + surge URL + `npm run
+- [x] `npm install` at the root so `package-lock.json` registers the workspace.
+- [x] PR → squash merge → rows 1193/1688 `[x]` + surge URL + `npm run
       readme:status` → `gh workflow run deploy-surge.yml -f app="keynoter"`.
+
+## Shipped
+
+Implemented on `feat/template-keynoter` as `apps/keynoter` (48 tests, 100 %
+coverage, per-app gate green). All ten task groups above are done; the deltas
+that were decided while building — no preloader element, live countdown to
+`2027-02-09`, in-page nav anchors, flex subscribe row, CSS-only duotone, `h3`
+talk topics and the tuned 390 step-downs — are recorded with measurements in
+`openspec/specs/template-keynoter/spec.md` → "Implementation record".

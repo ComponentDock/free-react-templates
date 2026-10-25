@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+
+/* Keynoter tokens — measured from the reference's own sheet: one indigo
+   (#6063ed) carries every primary button, the active nav pill and the search
+   square; navy (#201d6d) is the page's two dark anchors (event counter and
+   footer); green (#4aca59) is the single commercial action; hot pink (#f21e7d)
+   is the accent used for the counter's time pill and the copyright rule. The
+   signature is the magenta→indigo duotone (#ff1a6b → #2a34d0) that grades the
+   hero, the portraits and the workshop photo. Type is Lato only, 400 / 700 /
+   900. Every surface is rounded 6px, the nav pill and search square 4px. */
+@theme {
+  --color-brand: #6063ed;
+  --color-brand-dark: #4b4ed6;
+  --color-navy: #201d6d;
+  --color-action: #4aca59;
+  --color-action-dark: #3eb44d;
+  --color-pink: #f21e7d;
+  --color-hero-start: #ff1a6b;
+  --color-hero-end: #2a34d0;
+  --color-ink: #272727;
+  --color-body: #484848;
+  --color-card: #f5f5f5;
+  --color-band: #f3f3f3;
+  --color-field: #f1f1f1;
+  --color-search: #073b4c;
+
+  /* The shared packages/ui Button paints `primary-*`; point that ramp at the
+     same indigo so shared components inherit the brand instead of a default. */
+  --color-primary-50: #eeeffe;
+  --color-primary-100: #dcdcfa;
+  --color-primary-200: #b9b9f5;
+  --color-primary-300: #9696f0;
+  --color-primary-400: #7373ea;
+  --color-primary-500: #6063ed;
+  --color-primary-600: #6063ed;
+  --color-primary-700: #4b4ed6;
+
+  --font-sans: 'Lato', system-ui, sans-serif;
+  --font-display: 'Lato', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-body);
+    font-family: 'Lato', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.875;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    font-family: 'Lato', system-ui, sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+  }
+
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The reference's 1140px container with a 15px gutter. */
+  .shell {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 1140px;
+    padding-inline: 15px;
+  }
+
+  /* Magenta→indigo grade: the reference bakes the tint into its JPEGs, so the
+     recreation lays one gradient over a neutral photo instead. */
+  .duotone {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .duotone img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.05);
+  }
+
+  .duotone::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(to right, var(--color-hero-start), var(--color-hero-end));
+    opacity: 0.75;
+  }
+
+  .band {
+    padding-block: 5.3rem 6.25rem;
+  }
+}
