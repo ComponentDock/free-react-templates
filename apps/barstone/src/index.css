@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+/* Barstone palette — measured from the reference stylesheet and its computed
+   styles: bronze gold #ab7636 (buttons, icon discs, hover fills, CTA band),
+   light gold #d7af7e (gradient stops, the 20%-opacity quotation mark), ink
+   #161d22 (headings), cream #f3f1ef (services, attorneys, testimonials) and a
+   warmer hero cream #F5EFE8, navy #162b45 (footer) with a #45556a rule,
+   #dde0e3 hairlines, #777777 body copy, #666666 section copy, #999999 footer
+   links. Type: Cardo (headings, nav, wordmark, buttons) with Rufina reserved
+   for the hero h1 and Roboto for every paragraph. Shape language: one pill (the
+   header CTA) and otherwise square corners; the only circles are the 90px
+   service discs and the framed 55px testimonial arrows. */
+@theme {
+  --color-gold: #ab7636;
+  --color-gold-soft: #d7af7e;
+  --color-ink: #161d22;
+  --color-body: #777777;
+  --color-muted: #666666;
+  --color-cream: #f3f1ef;
+  --color-hero-cream: #f5efe8;
+  --color-navy: #162b45;
+  --color-navy-rule: #45556a;
+  --color-footer-link: #999999;
+  --color-social: #cccccc;
+  --color-hairline: #dde0e3;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-serif: 'Cardo', ui-serif, Georgia, serif;
+  --font-display: 'Rufina', ui-serif, Georgia, serif;
+  --font-sans: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #161d22;
+    font-family: 'Cardo', ui-serif, Georgia, serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #161d22;
+    font-family: 'Cardo', ui-serif, Georgia, serif;
+    line-height: 1.25;
+  }
+  p {
+    color: #777777;
+    font-family: 'Roboto', ui-sans-serif, system-ui, sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.8;
+  }
+  ::selection {
+    background: #ab7636;
+    color: #ffffff;
+  }
+  :focus-visible {
+    outline: 2px solid #ab7636;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
