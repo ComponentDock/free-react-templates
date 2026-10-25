@@ -59,7 +59,7 @@ prep needs a different invented name.
 | `commons` | preview 200, 84310 B |
 | `curbline` | preview 200, 75675 B |
 | `dowser` | preview 200, 70377 B |
-| `everhot` | preview 200, 85846 B |
+| `everhot` | **shipped** as Kettle — `apps/kettle` |
 | `fernhill` | preview 200, 75015 B |
 | `fieldline` | preview 200, 70376 B |
 | `fieldnotes-student` | preview 200, 7216 B |
