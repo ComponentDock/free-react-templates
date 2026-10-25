@@ -1266,7 +1266,7 @@
 - [x] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg) · [ignite](https://ignite.free.componentdock.com)
 - [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://umami.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 - [x] **Zeta** — [colorlib](https://colorlib.com/wp/template/zeta/) · [talon](https://talon.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeta-free-template.jpg)
-- [~] **Zephyr** — [colorlib](https://colorlib.com/wp/template/zephyr/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zephyr-template.jpg)
+- [x] **Zephyr** — [colorlib](https://colorlib.com/wp/template/zephyr/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zephyr-template.jpg) · [airshed](https://airshed.free.componentdock.com)
 
 ## Charity (37)
 
