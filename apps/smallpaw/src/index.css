@@ -1,0 +1,192 @@
+@import 'tailwindcss';
+
+/* Smallpaw palette — measured from the reference sheet and the live render.
+   Two ramps only: `primary` (plum/rose magenta) and `accent` (amber), plus stock
+   Tailwind `gray` for chrome. The reference defines NO custom properties for the
+   palette (it was a Tailwind config compiled to literals), so these values are
+   read out of the compiled rules, not out of `--color-*` declarations.
+   Type: Plus Jakarta Sans 400/500/600/700, loaded in index.html.
+   Shape: 8px controls, 12px plan CTAs, 16px cards/artefacts, 24px plan cards,
+   pills at 9999px. Light-only: this page ships no dark theme. */
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* brand — plum / rose magenta */
+  --color-primary-50: #fdf4f8;
+  --color-primary-100: #fbe8f1;
+  --color-primary-200: #f6d0e3;
+  --color-primary-400: #df77a9;
+  --color-primary-500: #c9508a;
+  --color-primary-600: #a83a6f; /* brand */
+  --color-primary-700: #8a2f5b; /* plans eyebrow, fee thead, plan CTAs, featured card */
+  --color-primary-800: #6f284b; /* out-of-hours band, schedule cells, gradient end */
+  --color-primary-900: #5b2440; /* text on amber */
+
+  /* accent — amber */
+  --color-accent-50: #fdf8ed;
+  --color-accent-100: #f9edcf;
+  --color-accent-300: #e9be62;
+  --color-accent-400: #d4a24c; /* phone button, featured ring, callout rules */
+  --color-accent-800: #684324;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+
+  --animate-hero-float: hero-float 8s ease-in-out infinite;
+  --animate-hero-float-reverse: hero-float 10s ease-in-out infinite reverse;
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translate(0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -20px) scale(1.05);
+    }
+    66% {
+      transform: translate(-20px, 15px) scale(0.95);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #111827;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #111827;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  :focus-visible {
+    outline: 2px solid #a83a6f;
+    outline-offset: 2px;
+  }
+  /* The saturated grounds need a light ring to stay visible. */
+  .on-plum :focus-visible,
+  .on-accent :focus-visible,
+  .on-gradient :focus-visible {
+    outline-color: #fdf4f8;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+/* The h1's second line: gradient-clipped text and the typewriter target. It has
+   to stay a text node with `background-clip: text` — swapping it for a coloured
+   block loses the gradient entirely. */
+.text-gradient {
+  background-image: linear-gradient(to right, #a83a6f, #df77a9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@layer components {
+  .section {
+    padding-block: 5rem;
+  }
+  @media (width >= 40rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+
+  /* 8px controls, measured 12/24px padding at 16px medium. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-lg);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition:
+      background-color 150ms ease,
+      color 150ms ease,
+      border-color 150ms ease;
+  }
+  .btn-primary {
+    background-color: #a83a6f;
+    color: #ffffff;
+  }
+  .btn-primary:hover {
+    background-color: #8a2f5b;
+  }
+  .btn-secondary {
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #374151;
+  }
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+  }
+
+  .nav-active {
+    color: #111827;
+    font-weight: 600;
+  }
+
+  /* Fee-table money cells and plan prices share one numeric rhythm. */
+  .figure {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-toast-in {
+    animation: toast-in 250ms ease-out;
+  }
+  .animate-fade-up {
+    animation: fade-up 300ms ease-out;
+  }
+}
