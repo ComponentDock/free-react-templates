@@ -36,6 +36,11 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`):
 | Card shadow | `0px 24px 48px -13px rgba(0,0,0,0.05)` | `.services-2` cards |
 | Pricing card radius | `4px` | `.block-7` pricing cards |
 
+
+<!-- heading-role-tokens: virtualassistant/ink/template-virtuoso -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#212529`, but the page declares it only for non-heading elements (body; .btn; .btn:hover) — no heading rule carries it. The rendered headings paint rgba(0, 0, 0, 0.8) x13, rgb(0, 0, 0) x9, rgb(255, 255, 255) x7.
+<!-- /heading-role-tokens -->
+
 **Visual notes from screenshot**: Clean, professional layout with a hero area featuring a large background image and dark overlay. Green accent lines flank the section subheading labels. Dark footer and testimonial sections contrast with light card-based content sections. The "How It Works" section uses a stepped numbered layout with hover-reveal descriptions.
 
 <!-- role-rule-tokens: virtualassistant/body -->

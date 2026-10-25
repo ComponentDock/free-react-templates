@@ -123,6 +123,11 @@ Dock (`https://www.componentdock.com/`) instead.
 | font-body     | Josefin Sans | Body text                   |
 | button-radius | 3px          | Subtle rounded buttons      |
 
+
+<!-- heading-role-tokens: listio/ink/template-listhub -->
+**Heading-ink role (measured 2026-10-25):** the `heading-color` row states `#1f2b7b`, but the page declares it only for non-heading elements (.contact-info .media-body h3 a:hover; b,sup,sub,u,del; .genric-btn.primary:hover) — no heading rule carries it. The rendered headings paint rgb(20, 12, 64) x29, rgb(7, 35, 102) x6, rgb(0, 31, 56) x3.
+<!-- /heading-role-tokens -->
+
 ## Verification checklist
 
 - [x] No references to ColorLib (name, domain or URL) in any app file or filename — provenance stays in this spec, TEMPLATES.md and the PR

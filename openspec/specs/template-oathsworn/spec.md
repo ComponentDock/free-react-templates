@@ -125,6 +125,11 @@ URL are recorded below.
 | `--card-shadow-lg`   | `0 15px 30px rgba(0,0,0,0.1)`     | Testimonial cards                                              |
 | `--icon-size`        | `50px`                             | Practice area icons                                            |
 
+
+<!-- heading-role-tokens: notary/ink/template-oathsworn -->
+**Heading-ink role (measured 2026-10-25):** the `--color-ink` row states `#999999`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(54, 77, 89) x8, rgb(255, 255, 255) x6, rgb(0, 0, 0) x6; the most-painted heading colour is `rgb(54, 77, 89)`.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Navigation bar

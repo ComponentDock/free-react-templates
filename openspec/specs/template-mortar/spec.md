@@ -13,6 +13,10 @@ A Creative Agency template with hero, services, about, team, portfolio showcases
 
 ## Design Tokens
 
+<!-- heading-role-tokens: grunt/ink/template-mortar -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#1a1a2e`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(0, 0, 0) x12, rgb(189, 18, 32) x7, rgb(255, 255, 255) x3; the most-painted heading colour is `rgb(0, 0, 0)`.
+<!-- /heading-role-tokens -->
+
 Extracted from the live preview stylesheet (style.css at
 preview.colorlib.com/theme/grunt/):
 

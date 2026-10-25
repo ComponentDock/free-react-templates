@@ -111,6 +111,10 @@ than copying `(375)` — a concurrent prep may land first.
 
 ## Design tokens (measured from `Base.C952if9S.css`, 58,248 B, and from `getComputedStyle` at 1440 px)
 
+<!-- heading-role-tokens: mainline/ink/template-standpipe -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#111827`, which is the page's paragraph/body colour, not an ink: no heading paints it (headings render rgb(15, 34, 55) x16, rgb(255, 255, 255) x5).
+<!-- /heading-role-tokens -->
+
 ### Brand ramp — `primary` (**a custom blue, not a stock Tailwind ramp**)
 
 Emitted as plain escaped utilities (`.bg-primary-600{background-color:#1a8fd8}`), **not** as

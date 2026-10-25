@@ -162,6 +162,11 @@ font-weight:600`.
 | Icons            | lucide-react equivalents (Calendar, MessageCircle, ArrowRight, Folder, Search, Facebook, Twitter, Instagram, Dribbble, Behance, ArrowRight/LongArrowRight) | banner strip, meta, Read More, category, search, footer                          |
 | Surface (measured) | `#4cd3e3` | paints it ×7 — `background` on `.genric-btn.success`; main.css (46,946 B, sha256 9a33ff383125) · <https://preview.colorlib.com/theme/revive/> |
 
+
+<!-- heading-role-tokens: revive/ink/template-rekindle -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#000000`, but the page declares it only for non-heading elements (.close; .close:not(:disabled):not(.disabled):focus; .datepicker table tr td.today, .datepicker table tr td.today:hover) — no heading rule carries it. The rendered headings paint rgb(19, 17, 58) x17, rgb(255, 255, 255) x12.
+<!-- /heading-role-tokens -->
+
 ## Recreation decisions
 
 - Deliverable: single-page blog/magazine landing — white sticky navbar with

@@ -40,6 +40,11 @@ Recreation of ColorLib "Karma" — a clean, white e-commerce fashion/shoe shop t
 | Search bar bg       | `linear-gradient(270deg, #ffba00, #ff6c00)` | Gold-to-orange gradient (reversed) for search input bg   |
 | Button hover skew   | `skew(40deg)`                         | Skewed pseudo-element sweep on primary button hover           |
 
+
+<!-- heading-role-tokens: karma/ink/template-loomwell -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#222222`, the FIRST colour declared in that declaration block (`h1, h2, h3, h4, h5, h6`); a later `color` in the same block wins, and the rendered headings paint rgb(34, 34, 34) x138, rgb(204, 204, 204) x63, rgb(255, 255, 255) x5.
+<!-- /heading-role-tokens -->
+
 ## Page Structure (section order)
 
 1. **Header** — Sticky top navbar: logo (left), nav menu (right) with dropdowns: Home, Shop (→ Shop Category, Product Details, Product Checkout, Shopping Cart, Confirmation), Blog (→ Blog, Blog Details), Pages (→ Login, Tracking, Elements), Contact. Right side: cart icon (ti-bag), search toggle icon. Below nav: expandable search input bar with gradient bg.

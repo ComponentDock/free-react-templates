@@ -199,6 +199,11 @@ white circle; testimonial photos are 100px circles.
 | input border | `#e6e6e6` | hero search inputs |
 | white | `#FFFFFF` | cards, chips, hero text |
 
+
+<!-- heading-role-tokens: direngine/ink/template-tripforge -->
+**Heading-ink role (measured 2026-10-25):** the `heading` row states `#212529`, but the page declares it only for non-heading elements (body; .btn-primary; .btn-primary:hover) — no heading rule carries it. The rendered headings paint rgb(0, 0, 0) x28, rgb(255, 255, 255) x6.
+<!-- /heading-role-tokens -->
+
 - Fonts: Poppins 300/400/500/600/700 (Google Fonts `<link>` in
   `index.html`; body default Poppins 14px/300, line-height 1.8).
 - Type scale: hero h1 60px weight 200 (first line 700); hero p 20px/300

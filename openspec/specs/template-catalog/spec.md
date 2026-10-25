@@ -23,6 +23,11 @@ picsum.photos placeholders, icons use lucide-react, and brand icons use inline S
 | card-bg     | #e9ecef      | Category count badges                                                |
 | font        | Nanum Gothic | All text                                                             |
 
+
+<!-- heading-role-tokens: directoryads/ink/template-catalog -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#1a1a1a`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(77, 77, 77) x26, rgb(255, 255, 255) x6, rgb(47, 137, 252) x4; the most-painted heading colour is `rgb(77, 77, 77)`.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Page renders all nine sections in order

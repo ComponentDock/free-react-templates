@@ -42,6 +42,11 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 | Mobile menu | White bg, 300px wide, slides from right | Offcanvas mobile nav |
 | Card borders | `1px solid #edf0f5` | Light border on sections |
 
+
+<!-- heading-role-tokens: fotograp/ink/template-fotocast -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#000000`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(255, 255, 255) x13, rgb(25, 25, 25) x11; the most-painted heading colour is `rgb(255, 255, 255)`.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (in page order)
 
 ### 1. Header / Navbar

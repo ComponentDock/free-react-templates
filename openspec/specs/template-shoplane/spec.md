@@ -30,6 +30,11 @@ Extracted from the live preview CSS (`styles/main_styles.css`) and DOM.
 | New bubble         | `#fe4c50` (red)         | "New" badge on products                            |
 | Font import        | Google Fonts Poppins    | `@import url(...)` in CSS                          |
 
+
+<!-- heading-role-tokens: coloshop/ink/template-shoplane -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#1e1e27`, which is the page's paragraph/body colour, not an ink: no heading paints it (headings render rgb(40, 40, 40) x31).
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Top navigation bar

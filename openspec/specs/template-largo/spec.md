@@ -28,6 +28,10 @@ and red highlights. The footer is dark navy with a two-column layout.
 
 ## Design Tokens
 
+<!-- heading-role-tokens: musico/ink/template-largo -->
+**Heading-ink role (measured 2026-10-25):** the `--color-heading` row states `#1f1f1f`, but the page declares it only for non-heading elements (a:focus,a:hover,.portfolio-cat a:hover,.footer -menu li a:hover; a,button) — no heading rule carries it. The rendered headings paint rgb(0, 29, 56) x6, rgb(255, 255, 255) x5.
+<!-- /heading-role-tokens -->
+
 Extracted from the live preview stylesheet (style.css at preview.colorlib.com/theme/musico/):
 
 ### Colors

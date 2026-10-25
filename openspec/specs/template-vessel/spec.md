@@ -38,6 +38,11 @@ Extracted from `https://preview.colorlib.com/theme/carries/style.css`:
 | Hexagon icon bg | `#F5F7F9`                           | Hex-shaped service icon containers         |
 | Section padding | Generous (class: `section-padding`) | ~80px vertical                             |
 
+
+<!-- heading-role-tokens: carries/ink/template-vessel -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#1a1a1a`, but the page declares it only for non-heading elements () — no heading rule carries it. The rendered headings paint rgb(60, 74, 98) x17, rgb(255, 255, 255) x8, rgb(166, 94, 0) x7.
+<!-- /heading-role-tokens -->
+
 ## Section Order
 
 1. **Navbar** — dark background (`#212121`), logo left (icon + "Vessel" text),

@@ -35,6 +35,11 @@ Extracted from the preview's CSS (`css/style.css`):
 | Border radius (buttons) | `5px` | Pricing CTA, form submit |
 | Border radius (cards) | `15px` | Pricing cards, blog post cards |
 
+
+<!-- heading-role-tokens: bizpro/ink/template-bizpulse -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#373a3f`, but the page declares it only for non-heading elements (#team-section .team-member-wrapper .single-team-member .img .opacity p; #team-section .team-member-wrapper .single-team-member .member-name p) — no heading rule carries it. The rendered headings paint rgb(41, 41, 41) x43, rgb(255, 255, 255) x4, rgb(105, 111, 120) x3.
+<!-- /heading-role-tokens -->
+
 ### Section Backgrounds
 
 | Section | Background |

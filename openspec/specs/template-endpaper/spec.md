@@ -178,6 +178,10 @@ same families, same weights, no substitution to document. Do **not** add a serif
 
 ## Design tokens (measured from `Base.CtG3PydY.css`, 62,940 B, and from `getComputedStyle` at 1440 px)
 
+<!-- heading-role-tokens: lantern/ink/template-endpaper -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#f3f4f6`, but the page declares it only for non-heading elements (body:is(.dark *)) — no heading rule carries it. The rendered headings paint rgb(17, 24, 39) x19, rgb(255, 255, 255) x10.
+<!-- /heading-role-tokens -->
+
 ### Brand ramp — `primary` (**custom blue-grey, not a stock Tailwind ramp**)
 
 | token | hex | where it carries the design |

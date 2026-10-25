@@ -104,6 +104,10 @@ sheet for the ramps.
 
 ## Design tokens
 
+<!-- heading-role-tokens: zephyr/ink/template-airshed/#7247dc -->
+**Heading-ink role (measured 2026-10-25):** the `h1` row states `#7247dc`, but the page declares it only for non-heading elements (.text-primary-600; .hover\:text-primary-600:hover) — no heading rule carries it. The rendered headings paint rgb(39, 39, 51) x17, rgb(255, 255, 255) x5.
+<!-- /heading-role-tokens -->
+
 ### Colour
 
 Three ramps, all read back out of the compiled sheet. The brand ramp is **Tailwind `violet` renamed

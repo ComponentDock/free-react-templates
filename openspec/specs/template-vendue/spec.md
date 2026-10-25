@@ -33,6 +33,11 @@ multi-column footer with newsletter subscribe.
 | `--border-radius-btn` | `0` (square, `rounded-0`) | All buttons |
 | `--border-radius-tag` | `50%` | Sale badge (circular) |
 
+
+<!-- heading-role-tokens: dealers/ink/template-vendue -->
+**Heading-ink role (measured 2026-10-25):** the `--color-heading` row states `#25262a`, declared on `.site-section-heading`; that rule does not win anywhere the headings render — they paint rgb(0, 0, 0) x28.
+<!-- /heading-role-tokens -->
+
 ## Sections (HTML structure order)
 
 1. **Navbar** — White background, sticky. Logo left ("Vendue"), nav links center (Collection with dropdown [Men/Women/Children], Shop, Catalogs, Contact), icons right (search, heart/wishlist, shopping cart with count badge). Mobile hamburger toggle.

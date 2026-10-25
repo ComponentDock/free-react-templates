@@ -146,6 +146,11 @@ Bootstrap 5.3.8 + Swiper 14 + Jarallax with self-hosted Roboto and Lucide SVG ic
 | Hero overlay | semi-transparent dark | Image overlay for text legibility |
 | Testimonial bg | background image with dark overlay | Parallax-style background |
 
+
+<!-- heading-role-tokens: lawfirm/ink/template-amicus/#1d2227 -->
+**Heading-ink role (measured 2026-10-25):** the `primary ink` row states `#1d2227`, but the page declares it only for non-heading elements (.ftco-navbar-light.scrolled .navbar-brand; .ftco-navbar-light.scrolled .navbar-brand:hover; .btn.btn-primary) — no heading rule carries it. The rendered headings paint rgb(255, 255, 255) x22, rgba(0, 0, 0, 0.7) x13, rgb(126, 105, 57) x4.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Feature: Amicus — Law Firm Website Template

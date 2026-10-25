@@ -41,6 +41,11 @@ Recreation of the ColorLib "Careers" template as a React 19 + Vite + Tailwind 4 
 | Background: job listings   | `#fff`                         | White section                        |
 | Background: company logos  | white, top border              | `site-section py-4 mb-5 border-top`  |
 
+
+<!-- heading-role-tokens: careers/ink/template-hirepath -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#212529`, but the page declares it only for non-heading elements (.text-bg-info; .text-bg-warning; .text-bg-light) — no heading rule carries it. The rendered headings paint rgb(23, 36, 62) x21, rgb(255, 255, 255) x2.
+<!-- /heading-role-tokens -->
+
 ## Section structure (order from preview DOM)
 
 1. **Navbar** — sticky top, logo "HirePath", nav links (Home, Job Listings, About, Services, Blog), Contact Us CTA button (primary blue). Mobile hamburger menu.

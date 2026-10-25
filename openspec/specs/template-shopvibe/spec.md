@@ -43,6 +43,11 @@ four-column footer with newsletter signup.
 | Top menu bg        | `#ffffff`               | White, light border                        |
 | Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (98,647 B, sha256 9557400c0929) · <https://preview.colorlib.com/theme/listashop/> |
 
+
+<!-- heading-role-tokens: listashop/ink/template-shopvibe -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#222222`, the FIRST colour declared in that declaration block (`.main_title h2`); a later `color` in the same block wins, and the rendered headings paint rgb(34, 34, 34) x48, rgb(119, 119, 119) x36.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (top-to-bottom, 1:1 fidelity)
 
 1. **TopMenu** — thin bar with contact email + welcome text left, social icons right

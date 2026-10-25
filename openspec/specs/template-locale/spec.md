@@ -61,6 +61,11 @@ lifts.
 | `edge`        | `#DEE0E5` | hairline borders around carousel arrows, footer rule             |
 | `paper`       | `#FFFFFF` | page and card surfaces                                           |
 
+
+<!-- heading-role-tokens: gricklo/ink/template-locale -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#140c40`, but the page declares it only for non-heading elements (.slider-area form.search-box .input-form input; .login-form-area .login-form .login-heading span; .login-form-area .login-form .input-box .single-input-fields label) — no heading rule carries it. The rendered headings paint rgb(26, 33, 61) x47, rgb(0, 0, 0) x5, rgb(255, 255, 255) x4.
+<!-- /heading-role-tokens -->
+
 Typography: `Work Sans` (display — headings, buttons, nav) and `Mulish` (body),
 loaded through the `<link>`s in `index.html`. The shared `Button`/`ButtonLink`
 read their `primary` skin from a `--color-primary-*` scale that re-points to

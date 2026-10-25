@@ -77,6 +77,11 @@ dark footer with social links.
 | Date badge      | `#c6a16e` bg, `#fff` text, radius `5px`      | blog post date overlay on image                                                           |
 | Preloader       | `#f7f7f7` bg, `#c6a16e` spinner border       | loading screen with rotating circle                                                       |
 
+
+<!-- heading-role-tokens: sharespace/ink/template-commune -->
+**Heading-ink role (measured 2026-10-25):** the `heading ink` row states `#101a31`, but the page declares it only for non-heading elements (.feature-area .single-offers .offers-cap p) — no heading rule carries it. The rendered headings paint rgb(0, 0, 0) x13, rgb(7, 35, 102) x4, rgb(255, 255, 255) x1.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Feature: Navbar

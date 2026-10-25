@@ -43,6 +43,11 @@ Extracted from the live preview CSS (`assets/css/style.css`) at https://preview.
 | Section heading size | 50px, weight 600, line-height 1.1 | Section titles |
 | Hero heading | Large serif, white text | "World Class Accommodation" |
 
+
+<!-- heading-role-tokens: ecoho/ink/template-leafhaven -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#140c40`, but the page declares it only for non-heading elements (.contact-info .media-body h3 a:hover; b,sup,sub,u,del; .genric-btn.primary:hover) — no heading rule carries it. The rendered headings paint rgb(57, 31, 20) x28, rgb(168, 84, 50) x3, rgb(255, 255, 255) x2.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (in page order)
 
 ### 1. Navbar

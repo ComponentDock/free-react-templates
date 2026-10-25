@@ -31,6 +31,11 @@ Extracted from the live preview stylesheet (`css/style.css` at `preview.colorlib
 | Profile pic | `border-radius: 50%`, `max-width: 200px` | Circular headshot |
 | Card shadow | `0 0 10px 0 rgba(0,0,0,0.1)` | `.site-block-half` subtle box-shadow |
 
+
+<!-- heading-role-tokens: fotograp/ink/template-snapvault/#000000 -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#000000`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(255, 255, 255) x13, rgb(25, 25, 25) x11; the most-painted heading colour is `rgb(255, 255, 255)`.
+<!-- /heading-role-tokens -->
+
 ## Section order (from preview DOM)
 
 1. **Navbar** — Logo "fotograp." (text with primary dot), nav links (Home, Photography dropdown, Services, About, Contact), social icons (Facebook, Twitter, Instagram, YouTube)

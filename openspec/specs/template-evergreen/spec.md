@@ -39,6 +39,11 @@ Extracted from `https://preview.colorlib.com/theme/classic/style.css`:
 | **Video play button** | `border: 5px solid #ffffff; border-radius: 50%` | Circle play overlay |
 | **Overlay on hero** | `rgba(0, 0, 0, 0.4)` | Header area dark overlay |
 
+
+<!-- heading-role-tokens: classic/ink/template-evergreen -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#4f4f4f`, declared on `h1, h2, h3, h4, h5, h6`; that rule does not win anywhere the headings render — they paint rgb(39, 55, 70) x50, rgb(255, 255, 255) x1.
+<!-- /heading-role-tokens -->
+
 ## Section order (from live DOM)
 
 1. **Navbar** — sticky, logo left, utility icons (user, search, language dropdown) top-right, primary menu right: Home, Services, Portfolio, Team, Price, Blog, Contact. Scroll-spy active state.

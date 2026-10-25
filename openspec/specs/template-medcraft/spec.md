@@ -36,6 +36,11 @@ Extracted from the live preview CSS (`style.css`) and screenshot analysis:
 | Font family | `Raleway` (200–700) | Google Fonts, sans-serif |
 | Section padding | `80px–110px` vertical | Generous whitespace |
 
+
+<!-- heading-role-tokens: medart/ink/template-medcraft -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#262626`, declared on `.elements-page .elements-heading .entry-title`; that rule does not win anywhere the headings render — they paint rgb(64, 64, 64) x19, rgb(255, 255, 255) x11.
+<!-- /heading-role-tokens -->
+
 ## Sections (in order)
 
 1. **Navbar** — Sticky top bar with logo left, nav links center-right (Home, About us, Services, News, Contact), emergency phone button with gradient bg right. Rounded container. Mobile: hamburger menu.

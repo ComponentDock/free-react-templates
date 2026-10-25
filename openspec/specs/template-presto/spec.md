@@ -176,6 +176,11 @@ verbatim.
 | transitions            | `0.3s` (links, cards) · `0.4s linear` (button label colour) · `0.5s` sliding fills                                                                                        | interaction                                             |
 | attribution            | footer line links `https://www.componentdock.com/` ("Component Dock") replacing the source's Colorlib credit                                                                                             | ADDED vs the reference                                  |
 
+
+<!-- heading-role-tokens: fastes/ink/template-presto -->
+**Heading-ink role (measured 2026-10-25):** the `section title` row states `#7a8290`, but the page declares it only for non-heading elements (.section-tittle p) — no heading rule carries it. The rendered headings paint rgb(20, 12, 64) x14, rgb(255, 255, 255) x7, rgb(253, 143, 95) x3.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Feature: Header (transparent overlay nav with a coral Sign-In pill)

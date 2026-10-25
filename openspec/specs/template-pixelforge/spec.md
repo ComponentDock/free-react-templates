@@ -38,6 +38,11 @@ and assets for a striking web presence." Published September 18, 2022.
 | Preloader bg         | `#688bfe`    | Full-screen preloader with white dots                    |
 | Link color           | `#000000`    | Links default to black, font-weight 500, font-size 16px  |
 
+
+<!-- heading-role-tokens: pixel/ink/template-pixelforge -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#000000`, declared on `h1, h2, h3, h4, h5, h6`; that rule does not win anywhere the headings render — they paint rgb(255, 255, 255) x4, rgb(33, 33, 33) x2.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (from live preview DOM)
 
 1. **Navbar** — `.header-area` → `.pixel-main-menu` (sticky on scroll via `#sticker`). Logo left, nav links right: Home, About, Services, Pages (dropdown with nested submenus), Contact. Hamburger menu on mobile with slide-in panel.

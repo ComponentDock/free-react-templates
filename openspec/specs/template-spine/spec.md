@@ -238,6 +238,11 @@ youtube` → lucide `Facebook`, `Instagram`, `Linkedin`, `Youtube`;
 | Hero dots          | Slick dots, bottom 28px; active dot = 23px circle with 2px white border ring (radius 50%)                                                                                                                                                                               | `.dot-style .slick-dots`                                                               |
 | Icons              | lucide: `Search`, `Star`/`StarHalf`, `ShoppingCart`, `Facebook`, `Instagram`, `Linkedin`, `Youtube`, `ChevronLeft`/`ChevronRight`, `ArrowUp` (back-to-top)                                                                                                              | preview HTML icon classes → lucide mapping                                             |
 
+
+<!-- heading-role-tokens: abcbook/ink/template-spine -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#1a1a1a`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(31, 43, 123) x24, rgb(255, 255, 255) x5; the most-painted heading colour is `rgb(31, 43, 123)`.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Page composition

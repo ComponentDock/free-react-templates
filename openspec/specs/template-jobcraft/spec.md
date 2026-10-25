@@ -34,6 +34,11 @@ Extracted from `css/style.css` on the live preview:
 | Section padding    | `7rem` top/bottom         | `.site-section`                                            |
 | Overlay primary bg | blue tint over hero image | Stats + CTA sections reuse hero_1.jpg                      |
 
+
+<!-- heading-role-tokens: careers/ink/template-jobcraft -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#000000`, declared on `h1,.h1,h2,.h2,h3,.h3,h4,.h4`; that rule does not win anywhere the headings render — they paint rgb(23, 36, 62) x21, rgb(255, 255, 255) x2.
+<!-- /heading-role-tokens -->
+
 ## Visual design (from screenshot reference)
 
 The template is a **job board / careers portal** with a professional, clean

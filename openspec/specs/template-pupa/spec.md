@@ -32,6 +32,11 @@ Extracted from `https://preview.colorlib.com/theme/cocoon/assets/css/main.css`:
 | Section title underline | 2px solid `#99896e`, width 30px | Section headings |
 | Loader | Circular spinner, `#99896e` border | Page load animation |
 
+
+<!-- heading-role-tokens: cocoon/ink/template-pupa -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#18181c`, declared on `h3, h4, h5`; that rule does not win anywhere the headings render — they paint rgb(153, 137, 110) x1.
+<!-- /heading-role-tokens -->
+
 ## Layout Structure
 
 The template uses a **sidebar + content** layout:

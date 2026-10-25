@@ -45,6 +45,11 @@ a newsletter subscription form, and a multi-column footer.
 | font-family | Poppins   | All text (weights 300–700)         |
 | Surface (measured) | `#9870fc` | paints it ×5 — `background` on `#colorlib-hero .flexslider .slides li .overlay`; style.css (35,859 B, sha256 20e69d9163ac) · <https://preview.colorlib.com/theme/complex/> |
 
+
+<!-- heading-role-tokens: complex/ink/template-sitecraft -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#111827`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(0, 0, 0) x15, rgb(255, 255, 255) x9, rgba(255, 255, 255, 0.7) x4; the most-painted heading colour is `rgb(0, 0, 0)`.
+<!-- /heading-role-tokens -->
+
 ## Sections (in order)
 
 ### 1. Navbar

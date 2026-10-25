@@ -15,6 +15,10 @@ Justly lives in `apps/justly` and uses shared components from `packages/ui`
 
 ## Design tokens (reference re-check, 2026-10-23)
 
+<!-- heading-role-tokens: zacson/ink/template-justly -->
+**Heading-ink role (measured 2026-10-25):** the `heading ink` row states `#2c234d`, the FIRST colour declared in that declaration block (`h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6`); a later `color` in the same block wins, and the rendered headings paint rgb(255, 255, 255) x16, rgb(44, 35, 77) x5.
+<!-- /heading-role-tokens -->
+
 - **Source**: ColorLib **Zacson** — https://colorlib.com/wp/template/zacson/
 - **Preview**: `https://preview.colorlib.com/theme/zacson/` — HTTP 200, **37,905 bytes**, title `Zacson | Personal Trainer and Gym Coaching`; a **3.0.4 rebuild** (`?v=3.0.4` on every asset, Bootstrap 5.3 variable layer inlined in the theme sheet).
 - **Stylesheet measured**: `assets/css/style.min.css?v=3.0.4` — **216,977 bytes** (theme + inlined Bootstrap + self-hosted `@font-face` weights); `vendor/fontawesome/7.3.1/css/fontawesome.subset.css?v=3.0.4` — 1,737 B, icons only.

@@ -45,6 +45,11 @@ Screenshot: https://colorlib.com/wp/wp-content/uploads/sites/2/theinterior-free-
 | Team card gradient | top-to-bottom `rgba(2,26,71,0)` → `rgba(2,26,71,0.6)` | Dark overlay on team member cards |
 | Surface (measured) | `#ff1313` | paints it ×33 — `background` on `.btn`; style.css (206,276 B, sha256 ef72f846001e) · <https://preview.colorlib.com/theme/theinterior/> |
 
+
+<!-- heading-role-tokens: theinterior/ink/template-studiohaus -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#0b1c39`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(255, 255, 255) x19, rgb(0, 0, 0) x1, rgb(255, 19, 19) x1; the most-painted heading colour is `rgb(255, 255, 255)`.
+<!-- /heading-role-tokens -->
+
 ### Section structure (from live preview DOM, in order)
 
 1. **Header/Navbar** — Transparent sticky header with logo, nav links (Home, About, Services, Work, Blog, Contact), and CTA button. Becomes white/sticky on scroll.

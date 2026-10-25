@@ -27,6 +27,11 @@ testimonials, contact form, and a 4-column footer.
 | heading    | `#000000` | Heading text color                |
 | font-sans  | Raleway   | All text                          |
 
+
+<!-- heading-role-tokens: consto/ink/template-structa -->
+**Heading-ink role (measured 2026-10-25):** the `heading` row states `#000000`, declared on `h1,h2,h3,h4,h5,h6`; that rule does not win anywhere the headings render — they paint rgb(23, 23, 23) x13, rgb(255, 255, 255) x6.
+<!-- /heading-role-tokens -->
+
 ## Sections (in order)
 
 1. **Navbar** — Sticky header with logo ("Structa" + orange dot), address

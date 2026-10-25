@@ -40,6 +40,11 @@ Extracted from the live preview CSS (`css/style.css`) and inline styles:
 | Episode card overlay | Dark gradient | Image bg with text overlay at bottom |
 | Site button | `#6763fd` bg | Subscribe button in footer form |
 
+
+<!-- heading-role-tokens: megapod/ink/template-podvault -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#111111`, declared on `h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6`; that rule does not win anywhere the headings render — they paint rgb(255, 255, 255) x11, rgb(53, 53, 53) x6.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Header

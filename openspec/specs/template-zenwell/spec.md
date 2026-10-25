@@ -31,6 +31,11 @@ Recreation of ColorLib "Counselor" template as a React 19 + Vite + Tailwind 4 + 
 | Button outlined | white border, transparent bg | Secondary CTA (Read more) |
 | Section spacing | `ftco-section` default padding | Consistent vertical rhythm |
 
+
+<!-- heading-role-tokens: counselor/ink/template-zenwell -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#1a1a1a`, but the page declares it only for non-heading elements (.categories li a,.sidelink li a) — no heading rule carries it. The rendered headings paint rgba(0, 0, 0, 0.7) x12, rgb(255, 255, 255) x10, rgb(0, 0, 0) x1.
+<!-- /heading-role-tokens -->
+
 ## Page structure (section order, from live preview DOM)
 
 1. **Top utility bar** — green `#589167` background, phone + email left-aligned, social icons (Facebook, Twitter, Instagram, Dribbble) right-aligned, white text

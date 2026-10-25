@@ -36,6 +36,11 @@ Recreation of the ColorLib "Consula" template as a React 19 + Vite + Tailwind 4 
 | Card border-radius | 0px                                             | No border-radius on cards                    |
 | Section padding    | `site-section` (default Bootstrap-like spacing) |
 
+
+<!-- heading-role-tokens: consula/ink/template-consultly -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#25262a`, but the page declares it only for non-heading elements (.site-navbar .site-navigation .site-menu .has-children .dropdown > li ; .site-navbar .site-navigation .site-menu .has-children .dropdown > li.; .site-mobile-menu .site-mobile-menu-header .site-mobile-menu-close spa) — no heading rule carries it. The rendered headings paint rgb(128, 128, 128) x15, rgb(70, 221, 176) x7, rgb(0, 123, 255) x7.
+<!-- /heading-role-tokens -->
+
 ## Page structure (section order, from DOM analysis)
 
 1. **Navbar** — Fixed top, white bg, logo "Consula." left, nav links (Home, About Us, Team, Services, Testimonials, Blog, Contact), mobile hamburger

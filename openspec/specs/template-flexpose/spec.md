@@ -34,6 +34,11 @@ Extracted from live preview HTML + `css/style.css`.
 | Button shape | Circular (70×70px), `border-radius: 50%` | Video play button, social media icons |
 | Section padding | ~6em vertical | `ftco-section` default |
 
+
+<!-- heading-role-tokens: yogabest/ink/template-flexpose -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#212529`, but the page declares it only for non-heading elements (body; pre; .table) — no heading rule carries it. The rendered headings paint rgba(0, 0, 0, 0.8) x24, rgb(255, 255, 255) x5, rgb(0, 0, 0) x1.
+<!-- /heading-role-tokens -->
+
 ## Visual Design Notes
 
 - **Hero**: Full-width background image with dark semi-transparent overlay, diagonal/angled bottom-right edge (`degree-right` class). White heading + Reenie Beanie subheading. Circular green play button on the right half.

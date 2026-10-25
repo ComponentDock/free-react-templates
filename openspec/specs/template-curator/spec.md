@@ -121,6 +121,11 @@ https://preview.colorlib.com/theme/reopen/
 | `--btn-radius`      | 2px                                    | Contact form submit button                                        |
 | `--btn-pulse`       | box-shadow 0→10px rgba(242,119,174,0.4)→0 | Portfolio item hover animation (pink glow pulse)              |
 
+
+<!-- heading-role-tokens: reopen/ink/template-curator -->
+**Heading-ink role (measured 2026-10-25):** the `--color-ink` row states `#222222`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(51, 51, 51) x5; the most-painted heading colour is `rgb(51, 51, 51)`.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Page shell

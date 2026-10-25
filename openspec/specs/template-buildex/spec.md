@@ -34,6 +34,11 @@ Extracted from the live preview CSS (`style.css`) and screenshot analysis.
 | **Border button**   | `1px solid #FF5E14`, no fill | Outline variant for secondary CTAs          |
 | **Section padding** | `120px top / 110px bottom`   | Standard section rhythm                     |
 
+
+<!-- heading-role-tokens: consto/ink/template-buildex -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#1a1a1a`, declared on `.footer-area .footer-tittle h4`; that rule does not win anywhere the headings render — they paint rgb(23, 23, 23) x13, rgb(255, 255, 255) x6.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (in order)
 
 ### 1. Navbar

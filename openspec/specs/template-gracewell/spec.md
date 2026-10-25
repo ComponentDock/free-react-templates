@@ -40,6 +40,11 @@ Extracted from the ColorLib preview stylesheet (`css/style.css`).
 | Section padding    | `120px` vertical                | `.p_120` class on major sections       |
 | Parallax           | `background-attachment: fixed`  | Banner overlay background image        |
 
+
+<!-- heading-role-tokens: kindity/ink/template-gracewell -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#04091e`, but the page declares it only for non-heading elements () — no heading rule carries it. The rendered headings paint rgb(34, 34, 34) x50, rgb(255, 255, 255) x16, rgb(119, 119, 119) x12.
+<!-- /heading-role-tokens -->
+
 ### Color helpers for Tailwind `@theme`
 
 ```css

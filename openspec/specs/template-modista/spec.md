@@ -72,6 +72,10 @@ and filtering.
 
 ## Design tokens
 
+<!-- heading-role-tokens: persuit/ink/template-modista -->
+**Heading-ink role (measured 2026-10-25):** the `text-heading` row states `#333333`, declared on `.tp-caption.miami_title_60px_dark,.miami_title_60px_dark`; that rule does not win anywhere the headings render — they paint rgb(217, 21, 34) x47, rgb(11, 16, 51) x34, rgb(0, 0, 0) x28.
+<!-- /heading-role-tokens -->
+
 Extracted from `https://preview.colorlib.com/theme/persuit/css/style.css`
 (139 KB) and inline styles in the preview HTML.
 

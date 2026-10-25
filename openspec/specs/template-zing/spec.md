@@ -8,6 +8,10 @@ The original is a Bootstrap-based restaurant template with a hero slider, reserv
 
 ## Design tokens (reference re-check, 2026-10-23)
 
+<!-- heading-role-tokens: tasteit/ink/template-zing/#333333 -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#333333`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgba(0, 0, 0, 0.8) x36, rgb(255, 255, 255) x10; the most-painted heading colour is `rgba(0, 0, 0, 0.8)`.
+<!-- /heading-role-tokens -->
+
 - **Source**: ColorLib **Tasteit** — https://colorlib.com/wp/template/tasteit/
 - **Preview**: `https://preview.colorlib.com/theme/tasteit/` — HTTP 200, title
   `Taste.it | Family Restaurant Since 1958`. The demo is a **3.0.0 rebuild**

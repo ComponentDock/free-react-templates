@@ -45,6 +45,11 @@ Extracted from `style.css` and the customized Bootstrap CSS on the live preview:
 | Border radius small    | `2px`–`4px`                        | Blog cards, minor elements                             |
 | Border radius round    | `50%`                              | Service icons, social circles                          |
 
+
+<!-- heading-role-tokens: credo/ink/template-snapshot -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#212529`, but the page declares it only for non-heading elements (body; pre; .table) — no heading rule carries it. The rendered headings paint rgb(0, 0, 0) x17, rgb(255, 255, 255) x3.
+<!-- /heading-role-tokens -->
+
 ## Visual Design (from screenshot)
 
 The Credo template is a clean, warm photographer portfolio:

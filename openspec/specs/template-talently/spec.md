@@ -36,6 +36,11 @@ Extracted from the live preview CSS (`css/style.css`):
 | Nav link color | `rgba(255,255,255,0.5)` on hero | Fades to white on hover |
 | Site logo | White text, `1.5rem`, `letter-spacing: 0.2rem`, uppercase | Top-left on hero |
 
+
+<!-- heading-role-tokens: careers/ink/template-talently -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#000000`, declared on `h1,.h1,h2,.h2,h3,.h3,h4,.h4`; that rule does not win anywhere the headings render — they paint rgb(23, 36, 62) x21, rgb(255, 255, 255) x2.
+<!-- /heading-role-tokens -->
+
 ## Sections (in order)
 
 1. **Navbar** — Fixed-position over hero. Logo "Talently" (white, uppercase, spaced). Nav links: Home, Job Listings, About, Services, Blog. CTA "Contact Us" button (primary, white text, icon). Hamburger menu on mobile.

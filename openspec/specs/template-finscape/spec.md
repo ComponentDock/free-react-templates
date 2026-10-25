@@ -27,6 +27,10 @@ FAQ accordion, blog, and contact form.
 
 ## Design tokens
 
+<!-- heading-role-tokens: finances/ink/template-finscape -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#343a40`, but the page declares it only for non-heading elements (.filters .btn) — no heading rule carries it. The rendered headings paint rgb(0, 0, 0) x28, rgb(0, 123, 255) x17, rgb(255, 255, 255) x11.
+<!-- /heading-role-tokens -->
+
 ### Colors
 
 | Token             | Hex       | Usage                                          |

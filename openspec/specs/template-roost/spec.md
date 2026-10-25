@@ -20,6 +20,10 @@ Roost lives in `apps/roost` and uses shared components from `packages/ui`
 
 ## Design tokens (reference re-check, 2026-10-23)
 
+<!-- heading-role-tokens: stayhome/ink/template-roost -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#000000`, the FIRST colour declared in that declaration block (`h1, h2, h3, h4, .h1, .h2, .h3, .h4`); a later `color` in the same block wins, and the rendered headings paint no heading.
+<!-- /heading-role-tokens -->
+
 - **Source**: ColorLib **Stayhome** — https://colorlib.com/wp/template/stayhome/
 - **Preview**: https://preview.colorlib.com/theme/stayhome/ — HTTP 200 on 2026-10-23; measured `css/style.css` (85,936 bytes).
 - **Screenshot**: https://colorlib.com/wp/wp-content/uploads/sites/2/stayhome-free-template.jpg

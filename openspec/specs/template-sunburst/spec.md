@@ -33,6 +33,11 @@ Recreation of the ColorLib "Karma" template as a single-page React 19 + Vite + T
 | Button radius | `50px` (pill) | `.primary-btn { border-radius }` |
 | Section padding | `100px 0` desktop / `80px 0` mobile | `.section_gap` |
 
+
+<!-- heading-role-tokens: karma/ink/template-sunburst -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#222222`, the FIRST colour declared in that declaration block (`h1, h2, h3, h4, h5, h6`); a later `color` in the same block wins, and the rendered headings paint rgb(34, 34, 34) x138, rgb(204, 204, 204) x63, rgb(255, 255, 255) x5.
+<!-- /heading-role-tokens -->
+
 ## Visual Design (from screenshot)
 
 Clean, modern ecommerce storefront with a warm golden-orange accent palette. White background, generous whitespace. The hero banner is full-width with a product image on the right and bold headline + CTA on the left. Feature icons sit in a clean row below. Category cards use image overlays with hover effects. Product cards are minimal with image, name, and price. A bold countdown deal section splits the viewport (text left, product carousel right). Brand logos appear in a simple row. Footer is dark with social links.

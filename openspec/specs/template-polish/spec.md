@@ -101,6 +101,11 @@ Extracted from the live preview CSS (`css/style.css`):
 | btn-secondary   | bg transparent, border 1px solid #fff, color #fff | Outline button on dark hero                   |
 | hero-gradient   | Diagonal clip (degree-right CSS class)            | Hero bottom edge shape                        |
 
+
+<!-- heading-role-tokens: cleanex/ink/template-polish -->
+**Heading-ink role (measured 2026-10-25):** the `heading-color` row states `#000000`, declared on `.ftco-footer .ftco-heading-2`; that rule does not win anywhere the headings render — they paint rgb(22, 22, 85) x15, rgb(255, 255, 255) x7, rgb(34, 90, 225) x1.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Feature: Polish template behaviour

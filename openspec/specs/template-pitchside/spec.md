@@ -83,6 +83,11 @@ screenshot; CSS values are canonical)
 | Footer             | `.footer-section` set-bg photo + dark treatment, `.fs-social` circular icons hover `#dd1515`, copyright bar border-top `#2d2e30`, `#636363` 14px text |                                                                                                                                                                      |
 | Copyright          | border-top `1px solid #2d2e30`, co-text 14px `#636363`                                                                                                | replace attribution with Component Dock link                                                                                                                         |
 
+
+<!-- heading-role-tokens: specer/ink/template-pitchside/#f2f2f2 -->
+**Heading-ink role (measured 2026-10-25):** the `section title` row states `#f2f2f2`, but the page declares it only for non-heading elements () — no heading rule carries it. The rendered headings paint rgb(255, 255, 255) x38, rgb(17, 17, 17) x19, rgb(21, 22, 24) x6.
+<!-- /heading-role-tokens -->
+
 ## Section structure (from the live DOM)
 
 1. **Header** (`.header-section`, solid `#dd1515` bar) — logo/wordmark

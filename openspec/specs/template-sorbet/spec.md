@@ -188,6 +188,11 @@ text-transform:capitalize;letter-spacing:0}` (borderless, chevron
 | carousel photos      | 3 full-bleed slides (picsum seeded `sorbet-slide-1..3`)                                                                                              | carousel                                                                                                                    |
 | portrait             | person photo (picsum seeded `sorbet-person`)                                                                                                         | images band, hero byline avatar                                                                                             |
 
+
+<!-- heading-role-tokens: smash/ink/template-sorbet -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#212529`, but the page declares it only for non-heading elements (body; pre; .table) — no heading rule carries it. The rendered headings paint rgb(44, 44, 44) x38, rgb(255, 255, 255) x3, rgb(119, 119, 119) x1.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Feature: Navbar

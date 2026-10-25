@@ -94,6 +94,11 @@ Extracted from the live preview stylesheet (`css/style.css`):
 | nav-pill-radius      | `30px`                       | Active/hover nav item, category badge, search wrap |
 | nav-dropdown-border  | `#7971ea` (top)              | 2px solid top border on dropdown           |
 
+
+<!-- heading-role-tokens: listed2/ink/template-placecraft -->
+**Heading-ink role (measured 2026-10-25):** the `heading-color` row states `#000000`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(255, 255, 255) x10, rgb(121, 113, 234) x6, rgb(77, 77, 77) x3; the most-painted heading colour is `rgb(255, 255, 255)`.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### 1. Navbar

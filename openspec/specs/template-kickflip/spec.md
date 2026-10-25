@@ -45,6 +45,11 @@ Recreation of ColorLib "Skater" template as a React 19 + Vite + Tailwind 4 + Typ
 | Overlay | `rgba(0,0,0,0.3)` on `.site-section-cover.overlay::before` | Hero carousel slides |
 | Hero heading | 4.5rem, white, centered | Carousel slide headings |
 
+
+<!-- heading-role-tokens: skater/ink/template-kickflip -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#222222`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(255, 139, 0) x21, rgb(255, 255, 255) x18, rgb(147, 147, 147) x2; the most-painted heading colour is `rgb(255, 139, 0)`.
+<!-- /heading-role-tokens -->
+
 ## Page structure (section order, from live preview DOM)
 
 1. **Navbar** — Sticky header. Left: logo text "Kickflip" with green primary accent. Right: nav links (Home, Services, About [dropdown: Team, Pricing, FAQ], Testimonials, Blog, Contact). Mobile: hamburger toggle with slide-in menu. Transparent background over hero, becomes solid on scroll.

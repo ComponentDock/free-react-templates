@@ -160,6 +160,10 @@ sticky header's top edge moves as it scrolls away.
 
 ## Design tokens (measured from `Base.D9sh5N6u.css`, 56,014 B, plus `getComputedStyle` at 1440 px)
 
+<!-- heading-role-tokens: switchover/ink/template-balancepoint -->
+**Heading-ink role (measured 2026-10-25):** the `h1` row states `#5d861b`, but the page declares it only for non-heading elements (.text-primary-600; .hover\:text-primary-600:hover) — no heading rule carries it. The rendered headings paint rgb(31, 38, 44) x11, rgb(255, 255, 255) x6.
+<!-- /heading-role-tokens -->
+
 > **Delivery note for the implementer:** Tailwind 4 inlines custom theme colours as **literal hex values**, so the
 > sheet contains **no `--color-primary-*` / `--color-ink-*` custom properties** — only Tailwind's generated
 > defaults (`--radius-lg .5rem` / `xl .75rem` / `2xl 1rem`, `--spacing .25rem`, `--font-weight-*`). The two ramps

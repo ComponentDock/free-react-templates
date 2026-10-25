@@ -69,6 +69,11 @@ gradient section backgrounds (departments area), and rounded UI elements
 | **Subscribe bg** | Dark background image with overlay | Newsletter banner section |
 | **Departments bg** | Gradient overlay (`#32c8fa → #587de4`) on dark bg image | Departments section wrap |
 
+
+<!-- heading-role-tokens: medart/ink/template-medcanvas -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#262626`, declared on `.elements-page .elements-heading .entry-title`; that rule does not win anywhere the headings render — they paint rgb(64, 64, 64) x19, rgb(255, 255, 255) x11.
+<!-- /heading-role-tokens -->
+
 ### Color palette summary
 
 - Brand blue: `#18a3eb`

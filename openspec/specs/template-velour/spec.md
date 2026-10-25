@@ -147,6 +147,11 @@ Preview URL: https://preview.colorlib.com/theme/eiser/
 | `--social-radius`    | `0` (square)                       | Footer social icon buttons — square with `rgba(255,255,255,0.15)` bg   |
 | Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (66,694 B, sha256 747e8b83fc95) · <https://preview.colorlib.com/theme/eiser/> |
 
+
+<!-- heading-role-tokens: eiser/ink/template-velour -->
+**Heading-ink role (measured 2026-10-25):** the `--color-heading` row states `#2a2a2a`, the FIRST colour declared in that declaration block (`h1,h2,h3,h4,h5,h6`); a later `color` in the same block wins, and the rendered headings paint rgb(74, 74, 74) x17, rgb(42, 42, 42) x14, rgb(255, 255, 255) x7.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Page shell

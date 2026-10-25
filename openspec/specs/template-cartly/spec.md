@@ -28,6 +28,11 @@ featured products, offer banner, new products, blog, newsletter, and footer.
 | Product hover  | green overlay | 60% opacity lime background                  |
 | Surface (measured) | `#f8b600` | paints it ×19 — `background` on `.genric-btn.primary`; style.css (66,694 B, sha256 747e8b83fc95) · <https://preview.colorlib.com/theme/eiser/> |
 
+
+<!-- heading-role-tokens: eiser/ink/template-cartly -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#2a2a2a`, the FIRST colour declared in that declaration block (`h1,h2,h3,h4,h5,h6`); a later `color` in the same block wins, and the rendered headings paint rgb(74, 74, 74) x17, rgb(42, 42, 42) x14, rgb(255, 255, 255) x7.
+<!-- /heading-role-tokens -->
+
 ## Sections (in order)
 
 1. **TopBar** — phone + email on left, gift card/track order/contact links on right

@@ -21,6 +21,10 @@ Shingle lives in `apps/shingle` and uses shared components from `packages/ui`.
 
 ## Design tokens (reference re-check, 2026-10-23)
 
+<!-- heading-role-tokens: roofing/ink/template-shingle -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#212529`, but the page declares it only for non-heading elements (body; mark,.mark; caption) — no heading rule carries it. The rendered headings paint rgb(255, 255, 255) x13, rgba(0, 0, 0, 0.8) x10, rgb(217, 186, 43) x4.
+<!-- /heading-role-tokens -->
+
 - **Source**: ColorLib **Roofing** — https://colorlib.com/wp/template/roofing/
 - **Preview**: https://preview.colorlib.com/theme/roofing/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (197,792 bytes). Title served: "Roofing | Roof Installation, Repair and Solar-Ready Roofs".
 - **Path note**: The demo is a REBUILT build (`?v=3.0.0`, `Roofing 3.0.0`, Bootstrap 5.3.8) whose layout no longer starts with the classic photo hero — treat mismatch as DRIFT, not as a prep error.

@@ -34,6 +34,10 @@ Sprout lives in `apps/sprout` and uses shared components from `packages/ui`.
 
 ## Design tokens (reference re-check, 2026-10-23)
 
+<!-- heading-role-tokens: spring/ink/template-sprout -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#212529`, but the page declares it only for non-heading elements (.kit-map__placeholder; body; mark,.mark) — no heading rule carries it. The rendered headings paint rgba(0, 0, 0, 0.8) x16, rgb(255, 255, 255) x7, rgb(0, 0, 0) x6.
+<!-- /heading-role-tokens -->
+
 - **Source**: ColorLib **Spring** — https://colorlib.com/wp/template/spring/
 - **Preview**: https://preview.colorlib.com/theme/spring/ — HTTP 200 on 2026-10-23; measured `css/style.min.css` (194,600 bytes). Title served: "Spring Church | Helping Grow Your Faith".
 - **Path note**: Rebuilt build (`?v=3.0.1`, `vendor/` kit partials, Bootstrap 5.3.8) — drift on this demo is not a prep error.

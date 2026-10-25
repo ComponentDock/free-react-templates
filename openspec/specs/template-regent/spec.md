@@ -200,3 +200,7 @@ Dock (`https://www.componentdock.com/`) instead.
 - [ ] Gallery section shows hotel images — I see 8 gallery images
 - [ ] Events section displays upcoming events — I see 3 event cards with titles and dates
 - [ ] Testimonials section shows guest reviews — I see 3 testimonials with names and quotes
+
+<!-- heading-role-tokens: suites/ink/template-regent -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#333333`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(0, 0, 0) x48, rgb(255, 255, 255) x19; the most-painted heading colour is `rgb(0, 0, 0)`.
+<!-- /heading-role-tokens -->

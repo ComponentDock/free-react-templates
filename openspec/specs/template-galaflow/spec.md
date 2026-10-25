@@ -33,6 +33,11 @@ A conference/event landing page template. Recreation of ColorLib "Eventro".
 | Subtitle span               | 20px Oswald, `#140C40`, uppercase      | Letter-spacing 0.05em                                  |
 | Surface (measured) | `#1f2b7b` | paints it ×20 — `background` on `.genric-btn.primary`; style.css (66,819 B, sha256 c4843396a9ac) · <https://preview.colorlib.com/theme/eventro/> |
 
+
+<!-- heading-role-tokens: eventro/ink/template-galaflow -->
+**Heading-ink role (measured 2026-10-25):** the `section title` row states `#fde449`, but the page declares it only for non-heading elements (.boxed-btn; .header-btn; .btn_1:hover) — no heading rule carries it. The rendered headings paint rgb(48, 32, 114) x12, rgb(255, 255, 255) x4, rgba(255, 255, 255, 0.2) x1.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (in order)
 
 1. **Navbar** — Transparent header over hero. Logo left, centered nav links (Home, About, Programs, Speakers, Blog dropdown, Contact), "Buy Ticket" button right (`#302072` bg, `#FDE449` text). Sticky on scroll with white bg.

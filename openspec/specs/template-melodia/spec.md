@@ -48,6 +48,11 @@ typographic hierarchy.
 | Cart badge | 15×15px circle, bg `#232323`, border 1px solid `#fff` | 9px text |
 | Scroll-to-top | bg `#000`, no radius, 40×40px, white icon | Hover: white bg, dark text |
 
+
+<!-- heading-role-tokens: onemusic/ink/template-melodia -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#000000`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(17, 17, 17) x43, rgb(255, 255, 255) x5; the most-painted heading colour is `rgb(17, 17, 17)`.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (order from preview DOM)
 
 1. **Navbar** — transparent over hero, logo left, nav links center, login/register + cart right; sticky black on scroll

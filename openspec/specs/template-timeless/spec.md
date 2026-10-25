@@ -138,6 +138,11 @@ gradient (#a1c4fd to #c2e9fb) brand accent, and fully-rounded pill buttons.
 | Pricing card bg    | `#ffffff`, border-radius `5px`                                 |
 | Pricing active     | `.price-box.active` highlight class                            |
 
+
+<!-- heading-role-tokens: classic/ink/template-timeless -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#4f4f4f`, declared on `h1, h2, h3, h4, h5, h6`; that rule does not win anywhere the headings render — they paint rgb(39, 55, 70) x50, rgb(255, 255, 255) x1.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Feature: Timeless — Corporate Business Landing Page

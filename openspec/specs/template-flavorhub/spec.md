@@ -41,6 +41,11 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 | Button text (primary) | `#FFFFFF` | White on brand |
 | Button hover (primary) | `background: #fff; color: #FFC000; border: 1px solid #fff` | Inverted on hover |
 
+
+<!-- heading-role-tokens: tastyrecipes/ink/template-flavorhub -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#1f1f1f`, but the page declares it only for non-heading elements (a, button) — no heading rule carries it. The rendered headings paint rgb(0, 0, 0) x24, rgb(255, 255, 255) x6.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (in page order)
 
 ### 1. Navbar

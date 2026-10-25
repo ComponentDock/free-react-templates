@@ -42,6 +42,11 @@ Recreation of ColorLib "Auction" template.
 | Testimonial text  | color #fff, font-size 20px                                       |
 | Footer background | `#f8f9fa`                                                        |
 
+
+<!-- heading-role-tokens: auction/ink/template-bidwell -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#212529`, but the page declares it only for non-heading elements (body; .dropdown-menu; .dropdown-item) — no heading rule carries it. The rendered headings paint rgb(255, 255, 255) x14, rgb(0, 0, 0) x11, rgb(243, 113, 33) x11.
+<!-- /heading-role-tokens -->
+
 ## Visual design notes (from screenshot analysis)
 
 - **Overall aesthetic**: Clean, modern, approachable auction/e-commerce landing. Warm, trustworthy feel with a muted photographic hero and white content sections.

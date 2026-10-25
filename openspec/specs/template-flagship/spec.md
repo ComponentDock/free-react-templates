@@ -18,6 +18,10 @@ Recreation of ColorLib's **Dealers** template — a fashion e-commerce website w
 
 ## Design Tokens
 
+<!-- heading-role-tokens: dealers/ink/template-flagship -->
+**Heading-ink role (measured 2026-10-25):** the `--color-heading` row states `#25262a`, declared on `.site-section-heading`; that rule does not win anywhere the headings render — they paint rgb(0, 0, 0) x28.
+<!-- /heading-role-tokens -->
+
 Extracted from the live preview CSS (`css/style.css`) and screenshot analysis:
 
 ### Colors

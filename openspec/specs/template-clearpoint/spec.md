@@ -21,6 +21,10 @@ typography, and content types (no ColorLib assets copied).
 
 ## Design Tokens
 
+<!-- heading-role-tokens: schmidt/ink/template-clearpoint -->
+**Heading-ink role (measured 2026-10-25):** the `--color-ink` row states `#1a1a1a`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(34, 34, 34) x1; the most-painted heading colour is `rgb(34, 34, 34)`.
+<!-- /heading-role-tokens -->
+
 ### Colors
 
 | Token           | Hex       | Usage                                      |

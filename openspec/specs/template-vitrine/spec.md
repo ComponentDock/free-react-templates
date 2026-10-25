@@ -33,6 +33,11 @@ Recreation of the ColorLib "Portfolio" template (`portfolio`) as a React 19 + Vi
 | Section spacing | `section-gap` | ~100px padding top/bottom |
 | Filter active | `#8ab92d` | Underline indicator on active filter tab |
 
+
+<!-- heading-role-tokens: portfolio/ink/template-vitrine -->
+**Heading-ink role (measured 2026-10-25):** the `headings` row states `#222222`, declared on `h1,h2,h3,h4,h5,h6`; that rule does not win anywhere the headings render — they paint rgb(4, 9, 30) x21, rgb(255, 255, 255) x5.
+<!-- /heading-role-tokens -->
+
 ## Visual design notes (from TEMPLATES.md screenshot)
 
 - Dark hero banner with background image, white text, green CTA pill button.

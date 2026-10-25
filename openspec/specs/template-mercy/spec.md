@@ -23,6 +23,11 @@ Mercy is a charity & nonprofit landing page with a top bar, navbar, hero, about 
 | mist        | #999999              | body text                      |
 | font        | Montserrat (300-800) | Google Fonts via link          |
 
+
+<!-- heading-role-tokens: unicare/ink/template-mercy -->
+**Heading-ink role (measured 2026-10-25):** the `ink` row states `#333333`, but the page declares it only for non-heading elements (.mfp-close-btn-in .mfp-close; .datepicker.dropdown-menu; .blog-entry .meta > div a:hover) — no heading rule carries it. The rendered headings paint rgb(255, 255, 255) x30, rgba(0, 0, 0, 0.8) x9, rgb(253, 100, 91) x3.
+<!-- /heading-role-tokens -->
+
 ## Sections (in order)
 
 1. **TopBar** — phone/email left, social icons right, dark background

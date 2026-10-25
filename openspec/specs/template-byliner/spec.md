@@ -40,6 +40,11 @@ Extracted from the live preview stylesheet (`css/style.css`):
 | Subheading text      | Small uppercase, green `#17b978`          | Used for "Best Seller Book Of The Week", section labels |
 | Heading color        | `#000000`                                | Dark/black for h2/h3 headings                      |
 
+
+<!-- heading-role-tokens: author/ink/template-byliner -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#000000`, declared on `.ftco-footer .ftco-heading-2`; that rule does not win anywhere the headings render — they paint rgb(38, 59, 94) x26, rgb(255, 255, 255) x5.
+<!-- /heading-role-tokens -->
+
 <!-- role-rule-tokens: author/ink -->
 **Role rule (measured 2026-10-25):** 10 rule(s) own ink; strongest `.h5{color:#263b5e}` — the design declares `#263b5e`; this prep states `#000000`, which no rule that owns the heading ink declares. The sibling prep `wordcraft` states the measured value.
 <!-- /role-rule-tokens -->

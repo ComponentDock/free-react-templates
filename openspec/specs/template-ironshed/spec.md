@@ -32,6 +32,11 @@ Extracted from `https://preview.colorlib.com/theme/ponigym/css/style.css` and th
 | Section title accent | Left bar: 3px wide, 29px tall, `#f34e3a`, absolute positioned                                                    | Decorative left border                                                             |
 | Spacing              | `.spad`: padding-top 100px, padding-bottom 100px                                                                 | Consistent section padding                                                         |
 
+
+<!-- heading-role-tokens: ponigym/ink/template-ironshed -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#111111`, declared on `h1, h2, h3, h4, h5, h6`; that rule does not win anywhere the headings render — they paint rgb(25, 25, 25) x16, rgb(255, 255, 255) x9, rgb(243, 78, 58) x9.
+<!-- /heading-role-tokens -->
+
 ## Section structure (from live DOM)
 
 Page order (single-page React app — all sections composed in App.tsx):

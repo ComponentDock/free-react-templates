@@ -35,6 +35,11 @@ Recreation of ColorLib's **Eventalk** template as a React 19 + Vite + Tailwind C
 | Heading color | `#212529` | Dark, near-black |
 | Section separator | Parallax image with `#6b76ff` solid bg fallback | Newsletter section |
 
+
+<!-- heading-role-tokens: eventalk/ink/template-confpeak -->
+**Heading-ink role (measured 2026-10-25):** the `heading color` row states `#212529`, but the page declares it only for non-heading elements (body; .btn-primary; .btn-primary:hover) — no heading rule carries it. The rendered headings paint rgba(0, 0, 0, 0.8) x17, rgb(255, 255, 255) x4, rgb(107, 118, 255) x1.
+<!-- /heading-role-tokens -->
+
 <!-- role-rule-tokens: eventalk/ink -->
 **Role rule (measured 2026-10-25):** 6 rule(s) own ink; strongest `.h3{color:rgba(0, 0, 0, 0.8)}` — the design declares `#000000`; this prep states `#212529`, which no rule that owns the heading ink declares. The sibling prep `meetuply` states the measured value.
 <!-- /role-rule-tokens -->

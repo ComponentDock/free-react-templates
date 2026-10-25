@@ -22,6 +22,11 @@ A construction company website template with hero section, features strip, about
 | Heading text     | `#1b1b1b` (near-black)         | Section headings               |
 | Button radius    | `4px` (slight rounding)        | Standard buttons               |
 
+
+<!-- heading-role-tokens: wilcon/ink/template-ironclad -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#1b1b1b`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgba(0, 0, 0, 0.9) x18, rgb(255, 255, 255) x10, rgb(4, 14, 38) x1; the most-painted heading colour is `rgba(0, 0, 0, 0.9)`.
+<!-- /heading-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Hero section displays construction company heading

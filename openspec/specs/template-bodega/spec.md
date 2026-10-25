@@ -183,6 +183,11 @@ change the footer's own layout or copy beyond the credit line.
 | Font family      | `Roboto, Arial, sans-serif` | All text                                         |
 | Button radius    | `0` (square/sharp)          | All buttons                                      |
 
+
+<!-- heading-role-tokens: store/ink/template-bodega -->
+**Heading-ink role (measured 2026-10-25):** the `heading text` row states `#333333`, which is declared by no rule in this page's stylesheets and appears in no inline style or style attribute. The rendered headings paint rgb(0, 0, 0) x26, rgb(34, 34, 34) x12, rgb(118, 86, 0) x1; the most-painted heading colour is `rgb(0, 0, 0)`.
+<!-- /heading-role-tokens -->
+
 ## Section Structure (in order)
 
 1. Navbar — Logo "Bodega", nav links, Shop dropdown, Cart icon

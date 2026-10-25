@@ -18,6 +18,11 @@ Griddle is a burger restaurant template with a header bar, hero slider, menu gri
 | font-display | Montserrat | Headings + buttons                         |
 | font-sans    | Raleway    | Body text, navigation                      |
 
+
+<!-- heading-role-tokens: burger/ink/template-griddle -->
+**Heading-ink role (measured 2026-10-25):** the `heading` row states `#1f1f1f`, declared on `h1, h2, h3, h4, h5`; that rule does not win anywhere the headings render — they paint rgb(26, 13, 1) x14, rgb(255, 255, 255) x9, rgb(4, 14, 39) x7.
+<!-- /heading-role-tokens -->
+
 ## Section order (1:1 with source)
 
 1. **Header** — sticky nav: home / menu / about / blog ▾ / pages ▾ / contact; centered logo; right social icons + phone number
