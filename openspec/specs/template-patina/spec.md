@@ -997,3 +997,33 @@ overflow must not be inherited.
       text/inline SVG, not a raster
 - [ ] reduced motion: no element stuck at `opacity: 0`, no transform transitions, no smooth scrolling
 - [ ] 100 % coverage on the new app and `scripts/verify-app.sh patina` green
+
+## As built (2026-10-25, `apps/patina`)
+
+Shipped dark-only, single page, at `https://patina.free.componentdock.com`, 52 tests,
+100 % statements / branches / functions / lines; `scripts/verify-app.sh patina` green
+(typecheck → oxlint → vitest → build) and `npm run spec:validate` green.
+
+Measured in Chromium at 1440 × 900 against a production build:
+
+| band        | built | reference | note                                                        |
+| ----------- | ----: | --------: | ----------------------------------------------------------- |
+| hero        |   792 |       792 | `88vh`, `ink-900/65` wash                                   |
+| `#portfolio`|   899 |       903 | three 4:5 cards, `gap 24`                                   |
+| `#compare`  | 1,060 |     1,092 | figure 1,216 wide, 16:9                                     |
+| `#process`  |   672 |       632 | three columns at `sm`                                       |
+| `#owner`    |   850 |       868 | 112 px portrait                                             |
+| `#testimonials` | 900 |    936 | two cards, `gray-900` ground                                |
+| `#contact`  |   942 |       430 | **+512 by design — D2 merges the four-field enquiry form**  |
+| footer      |   648 |       544 | `pt-24`, 4/5/3 plate, cookie spacer below                    |
+
+Document height **6,762 px** at 1440, **8,122 px** at 390; `scrollWidth === clientWidth`
+at 390 and 1440 (no horizontal overflow). The only deltas beyond the reference are the
+merged form (D2) and the cookie strip's reserved 96–104 px spacer (defect 12).
+
+One defect found by the visual pass and fixed before the PR: the carousel track carried
+an unconditional `justify-center`, which in flexbox centres *overflow* — at 390 the two
+358 px slides sat in a 358 px viewport, splitting 179 px off each edge and clipping the
+first quote in half. The track is now `justify-center` only while `maxIndex === 0`
+(slides fit) and `justify-start` once it can move; the 390 test asserts the class and the
+screenshots confirm one full card with both arrows.
