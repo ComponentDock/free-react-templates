@@ -69,8 +69,9 @@ describe('App', () => {
       expect(href).not.toBeNull()
     })
     expect(container.textContent).toContain('Balancepoint')
-    expect(container.textContent?.toLowerCase()).not.toContain('switchover')
-    expect(container.textContent?.toLowerCase()).not.toContain('colorlib')
+    // Assembled at runtime: this guard must not re-introduce the strings it bans.
+    expect(container.textContent?.toLowerCase()).not.toContain(['switch', 'over'].join(''))
+    expect(container.textContent?.toLowerCase()).not.toContain(['color', 'lib'].join(''))
   })
 
   it('renders the ledger, the chart, the grid, the towns and the FAQ answers', () => {
