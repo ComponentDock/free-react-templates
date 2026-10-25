@@ -1630,7 +1630,7 @@
 - [x] **Academics** — [colorlib](https://colorlib.com/wp/template/academics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academics-free-template.jpeg) · [learnly](https://learnly.free.componentdock.com)
 - [x] **Academix** — [colorlib](https://colorlib.com/wp/template/academix/) · [schola](https://schola.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academix-template-1770211029932.jpg)
 - [x] **Academy** — [colorlib](https://colorlib.com/wp/template/academy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/academy-free-template.jpg) · [campus](https://campus.free.componentdock.com)
-- [~] **Cairn** — [colorlib](https://colorlib.com/wp/template/cairn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cairn-template.jpg) · [chalkline](https://chalkline.free.componentdock.com)
+- [x] **Cairn** — [colorlib](https://colorlib.com/wp/template/cairn/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cairn-template.jpg) · [chalkline](https://chalkline.free.componentdock.com)
 - [x] **Clever** — [colorlib](https://colorlib.com/wp/template/clever/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/clever-free-template.jpg) · [learnwise](https://learnwise.free.componentdock.com)
 - [x] **Course** — [colorlib](https://colorlib.com/wp/template/course/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/course-free-template.jpg) · [syllabus](https://syllabus.free.componentdock.com)
 - [x] **Courses** — [colorlib](https://colorlib.com/wp/template/courses/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/courses-free-template.jpg) · [edify](https://edify.free.componentdock.com)
