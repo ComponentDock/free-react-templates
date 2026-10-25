@@ -6,7 +6,6 @@
 
 export const BRAND = 'Percline'
 export const BRAND_SUBLABEL = 'SEPTIC'
-export const BRAND_FULL = 'Percline Septic'
 
 export const PHONE_LABEL = '(555) 110-1100'
 export const PHONE_HREF = 'tel:+15551101100'
@@ -19,9 +18,8 @@ export const LICENCE_REGION = 'Sedgwick County'
 export const RATING = '4.9'
 export const RATING_NOTE = '240+ reviews on Google (sample)'
 export const COMPONENTDOCK_HREF = 'https://www.componentdock.com/'
-export const SAMPLE_NOTE = 'Starting prices are sample data for demonstration.'
 
-export interface NavLink {
+interface NavLink {
   readonly label: string
   readonly id: string
 }
@@ -80,7 +78,7 @@ export const QUOTE = {
   success: 'Thanks — we will call you back within the hour on weekdays.',
 } as const
 
-export interface TimelineRow {
+interface TimelineRow {
   readonly day: string
   readonly actor: string
   readonly index: string
@@ -162,7 +160,7 @@ export const EMERGENCY = {
   stickyLabel: 'Backing up into the house?',
 } as const
 
-export interface ServiceItem {
+interface ServiceItem {
   readonly name: string
   readonly body: string
   readonly price: string
@@ -257,7 +255,7 @@ export const AREAS = {
     'Replace this list with your own towns. Written as plain text it is the cheapest local search signal a trade site has.',
 } as const
 
-export interface Testimonial {
+interface Testimonial {
   readonly quote: string
   readonly initial: string
   readonly name: string
