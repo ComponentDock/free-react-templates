@@ -1,5 +1,9 @@
 # Thermly — Tasks
 
+> **SHIPPED** — this prep's design shipped as `apps/thermly`
+> (<https://thermly.free.componentdock.com>). The unchecked items below are
+> prep history, not outstanding work.
+
 Recreation of ColorLib **"Airwise"** (https://colorlib.com/wp/template/airwise/) as a React 19 +
 Vite + Tailwind 4 + TypeScript app under the name **Thermly** (`apps/thermly`).
 

@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+/* Thermly palette — measured from the reference stylesheet. Two accents, used
+   one at a time: a cooling teal ramp (#187e83 brand, #156669 hover and closing
+   band) and a heating amber ramp (#a9691a pressed pill, #8a5517 heating prices).
+   The neutrals are a cool near-black ink ramp (#182225 headlines, #0f1719
+   footer) on alternating #f5f7f8 / white grounds. Shape language: 0.5rem
+   buttons and inputs, 0.75rem day chips, 1rem cards, pills at 9999px. Type:
+   Plus Jakarta Sans (400–800), loaded from Google Fonts in index.html. */
+@theme {
+  --color-primary-50: #effafa;
+  --color-primary-100: #d6f2f2;
+  --color-primary-200: #aae4e5;
+  --color-primary-400: #3eb2b5;
+  --color-primary-500: #22979b;
+  --color-primary-600: #187e83;
+  --color-primary-700: #156669;
+  --color-primary-800: #145256;
+
+  --color-heat-100: #fbf1e4;
+  --color-heat-600: #a9691a;
+  --color-heat-700: #8a5517;
+
+  --color-ink-50: #f5f7f8;
+  --color-ink-100: #e8ecee;
+  --color-ink-200: #ced6d9;
+  --color-ink-400: #6e8085;
+  --color-ink-500: #4d5e63;
+  --color-ink-600: #334347;
+  --color-ink-700: #243134;
+  --color-ink-800: #182225;
+  --color-ink-900: #0f1719;
+
+  --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+  --shadow-soft-lg: 0 12px 32px -8px #00000024;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #4d5e63;
+    font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #182225;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  :focus-visible {
+    outline: 2px solid #22979b;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Band rhythm: 5rem, 7rem from lg — the reference's `.section`. */
+  .section-band {
+    padding-block: 5rem;
+  }
+  @media (min-width: 1024px) {
+    .section-band {
+      padding-block: 7rem;
+    }
+  }
+
+  /* The services grid is one bordered block divided by hairlines, not six cards. */
+  .hairline-grid {
+    display: grid;
+    gap: 1px;
+    overflow: hidden;
+    border-radius: var(--radius-2xl);
+    border: 1px solid #e8ecee;
+    background-color: #e8ecee;
+  }
+}

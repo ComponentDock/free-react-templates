@@ -51,7 +51,7 @@ prep needs a different invented name.
 
 | source slug | status |
 | --- | --- |
-| `airwise` | preview 200, 94591 B |
+| `airwise` | **shipped** as Thermly — `apps/thermly` |
 | `backstop` | preview 200, 74502 B |
 | `cairn` | app exists (other design); orphan prep (other design) |
 | `circles` | preview 200, 92289 B |
@@ -94,7 +94,9 @@ prep needs a different invented name.
 | `voltway` | preview 200, 71946 B |
 | `zephyr` | orphan prep (other design) |
 
-`airwise` is prepped as **Thermly** (`openspec/specs/template-thermly/`); the other 41 are open.
+`airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
+own row under `## Business`; `backstop` (prepped as **Flowcert**) and `circles` (prepped as
+**Closeknit**) are prepped and still unbuilt, so the other 39 of the 42 remain open.
 
 ### The 214 snippet variants, by family
 
