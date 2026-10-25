@@ -1,0 +1,117 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 defaults `dark:` to
+   prefers-color-scheme, but the design's toggle writes a class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Punchlist tokens — one orange signal ramp on cream/white, one slate ramp for
+   the page's single dark band and its pre-table head. Shape: 8 px buttons and
+   inputs, 16 px cards and table shell, full radius on pills and chips, one
+   soft shadow. One typeface (DM Sans); the mono stack is reserved for postcode
+   registers and policy lines. */
+@theme {
+  /* primary — orange (the brand) */
+  --color-primary-50: #fff7ed;
+  --color-primary-100: #ffedd5;
+  --color-primary-200: #fed7aa;
+  --color-primary-300: #fdba74;
+  --color-primary-400: #fb923c;
+  --color-primary-500: #f97316;
+  --color-primary-600: #ea580c;
+  --color-primary-700: #c2410c;
+  --color-primary-800: #9a3412;
+  --color-primary-900: #7c2d12;
+
+  /* accent — slate: the coverage band, the rates table head, dark-band text */
+  --color-accent-300: #cbd5e1;
+  --color-accent-400: #94a3b8;
+  --color-accent-900: #0f172a;
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #4b5563;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #e5e7eb;
+  }
+
+  :focus-visible {
+    outline: 2px solid #f97316;
+    outline-offset: 2px;
+  }
+
+  /* Anchor targets clear the 81 px sticky header (65 px below lg). */
+  [id] {
+    scroll-margin-top: 5.25rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from sm — the measured band rhythm. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 40rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+
+  /* The hero's two decor discs: 8 s and 10 s reverse. */
+  .float-slow {
+    animation: hero-float 8s ease-in-out infinite;
+  }
+  .float-slower {
+    animation: hero-float 10s ease-in-out infinite reverse;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .float-slow,
+    .float-slower {
+      animation: none;
+    }
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -20px, 0) scale(1.05);
+  }
+}
