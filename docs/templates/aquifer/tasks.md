@@ -143,6 +143,21 @@ Vite + Tailwind 4 + TypeScript app under the name **Aquifer** (`apps/aquifer`).
       copied JSON-LD under `apps/aquifer`
 - [ ] Row added for Dowser under `## Business` in source-name order, heading re-counted, marker `[x]`
       with the bookkeeping commit
-- [ ] `npm run spec:validate`, `scripts/verify-app.sh aquifer`, CI gate green; then the surge deploy
-      (`gh workflow run deploy-surge.yml -f app="aquifer"`) and the R2 zip/catalog wiring by the
-      owning streams
+- [x] `npm run spec:validate` (3,255 items, 0 failed), `scripts/verify-app.sh aquifer` green
+      (typecheck, oxlint, 76 tests at 100% coverage, build), CI merge gate green — see *Deploy* below;
+      the R2 zip/catalog wiring stays with the owning streams
+
+## Deploy
+
+- [x] PR #1877 squash-merged to `main` as `f31c0c68c`; bookkeeping `42b3ffed8`
+      (`TEMPLATES.md` row `[x]`, README status 1651/1651)
+- [x] deploy-on-merge fired (run `40162450524`, `Verify + deploy changed templates: success`,
+      including its own "Verify the deployments are live" step)
+- [x] Surge origin serves the build: `curl -H 'Host: aquifer.free.componentdock.com'
+      https://na-west1.surge.sh/` → **200**, `<title>Aquifer — leak detection in Louisville, located
+      before anything is opened</title>`, no source-brand string in the markup
+- [x] The branded edge `https://aquifer.free.componentdock.com/` still answers with the fleet-wide
+      Cloudflare Universal-SSL gap for second-level wildcards (`sslv3 alert handshake failure`),
+      recorded in `docs/deployment.md` and seen on the four previous catalogue-gap ships — not
+      app-specific, no redeploy required
+- [ ] R2 zip + `catalog.downloadUrl` wiring for `aquifer` (owning stream)
