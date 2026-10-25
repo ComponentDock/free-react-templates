@@ -863,3 +863,27 @@ shot. Treat it as the confirmation that the hero's *airiness* is deliberate: the
 - **Copy discipline.** Keep the British voice — `£`, `tradespeople`, `call-out`, `Part P`, `DBS`, postcodes — and
   the blunt disclaimers (*"we would rather say that plainly than take the job"*). That tone is the design.
 - **Second face:** there is none. If you add one, you have changed the template.
+
+## Implementation decisions (this run)
+
+Documented so the spec and the shipped app agree. Each is a deliberate deviation from the reference, made
+because the reference's version is a defect (§Reference defects) or because a single-page build has no inner
+routes to point at.
+
+- **Single-page build, so the nav is seven live labels.** The reference's eight labels include *About*,
+  *Blog* and *Pricing* routes; this build ships no inner routes, so every label targets a band that exists
+  (`#rates`, `#work`, `#areas`, `#credentials`, `#testimonials`, `#faq`, `#contact`). No label points at a
+  page that would 404, and there are zero `href="#"` anchors.
+- **The enquiry form is a dialog, not a route.** The closing band keeps its two actions and no form
+  (§Feature `#contact` → *Orange closing band*); the four-control form with per-field errors, a success state
+  and the phone/email/workshop/hours sidebar lives in the `QuoteDialog` that every "Get a fixed quote" /
+  "Send the list" control opens. Escape, the close control and the backdrop all dismiss it; reopening
+  resets it.
+- **No video control in the hero.** The reference's *Watch Demo* opens a third-party embed in an
+  undialogued overlay (§Reference defects 7); this build ships no demo clip at all rather than a fake one.
+- **No Privacy/Terms links in the bottom bar.** There are no legal pages in a single-page template, so the
+  bottom bar carries the copyright line and the Component Dock link only — no dead legal anchors.
+- **The newsletter success message replaces the form** rather than sitting beside it, so the confirmation is
+  the only thing in that column after submitting.
+- **Counters, typewriter and carousel** follow `docs/conventions.md`: the authored figure/phrase is what
+  renders before animation, all animation is additive, and `prefers-reduced-motion` stops all three.
