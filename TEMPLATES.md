@@ -732,7 +732,7 @@
 
 ## Bootstrap Cards (20)
 
-- [~] **Card 01** — [colorlib](https://colorlib.com/wp/template/card-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-01.jpg) · [nameplate](https://nameplate.free.componentdock.com)
+- [x] **Card 01** — [colorlib](https://colorlib.com/wp/template/card-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-01.jpg) · [nameplate](https://nameplate.free.componentdock.com)
 
 ## Bootstrap Checkboxes (20)
 
