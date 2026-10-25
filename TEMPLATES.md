@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (376)
+## Business (377)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1122,6 +1122,7 @@
 - [x] **Negotiate** — [colorlib](https://colorlib.com/wp/template/negotiate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/negotiate-free-template.jpg) · [parley](https://parley.free.componentdock.com)
 - [x] **Neos** — [colorlib](https://colorlib.com/wp/template/neos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neos-free-template.jpg) · [verdant](https://verdant.free.componentdock.com)
 - [x] **Neutral** — [colorlib](https://colorlib.com/wp/template/neutral/) · [maxim](https://maxim.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neutral-free-template.jpg)
+- [~] **Nightshift** — [colorlib](https://colorlib.com/wp/template/nightshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nightshift-template.jpg)
 - [x] **Nissa** — [colorlib](https://colorlib.com/wp/template/nissa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nissa-free-template.jpg) · [lensa](https://lensa.free.componentdock.com)
 - [x] **Nitro** — [colorlib](https://colorlib.com/wp/template/nitro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nitro-free-template.jpg) · [turbo](https://turbo.free.componentdock.com)
 - [x] **Noxen** — [colorlib](https://colorlib.com/wp/template/noxen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/noxen-free-template.jpg) · [emblem](https://emblem.free.componentdock.com)

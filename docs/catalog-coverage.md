@@ -74,7 +74,7 @@ prep needs a different invented name.
 | `mainline`           | preview 200, 69579 B                                  |
 | `marrow`             | preview 200, 85785 B                                  |
 | `metroflow`          | preview 200, 52720 B                                  |
-| `nightshift`         | preview 200, 84493 B                                  |
+| `nightshift`         | **shipped** as Nightwatch — `apps/nightwatch`         |
 | `nodig`              | preview 200, 79808 B                                  |
 | `onyx`               | orphan prep (other design)                            |
 | `ostend`             | preview 200, 69797 B                                  |

@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* design-token note: the page runs on two ramps only — a navy "ink" neutral
+     that carries every heading, hairline and ground, and an amber "primary"
+     that carries CTAs, eyebrows and figures. Stock greys are reserved for the
+     testimonial band, the FAQ and the footer. */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, 'Courier New', monospace;
+
+  --color-ink-50: #f4f6fa;
+  --color-ink-100: #e6eaf2;
+  --color-ink-200: #cad3e4;
+  --color-ink-300: #9aaac8;
+  --color-ink-400: #65799f;
+  --color-ink-500: #465a80;
+  --color-ink-600: #314262;
+  --color-ink-700: #22304a;
+  --color-ink-800: #162135;
+  --color-ink-900: #0d1522;
+
+  --color-primary-50: #fffbea;
+  --color-primary-100: #fff3c4;
+  --color-primary-200: #fce588;
+  --color-primary-300: #fadb5f;
+  --color-primary-400: #f7c948;
+  --color-primary-500: #f0b429;
+  --color-primary-600: #de911d;
+  --color-primary-700: #cb6e17;
+  --color-primary-800: #b44d12;
+  --color-primary-900: #8d2b0b;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: var(--color-ink-900);
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #f3f4f6;
+  }
+
+  /* 37 px licence bar + 81 px sticky header — every in-page anchor must clear it. */
+  section[id],
+  main [id] {
+    scroll-margin-top: 101px;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-300);
+    color: var(--color-ink-900);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
