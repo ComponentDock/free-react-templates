@@ -1058,8 +1058,8 @@ The app SHALL render a `#111827` footer in a 12-column grid (4 / 5 / 3) with a l
 
 - **GIVEN** a 1440 px viewport
 - **THEN** the footer is **567 px** tall, `padding-top: 96px`, text `#d1d5db`, columns **384 / 488 / 280**
-- **AND** the brand column holds the logo at **210 × 40**, a `max-w-xs` blurb, three social chips, the
-  address, the phone and the email at 14/20 `gray-400`
+- **AND** the brand column holds the wordmark at **40 px** tall, a `max-w-xs` blurb, the address, the
+  phone and the email at 14/20 `gray-400`
 - **AND** the link block is three columns of headings (Services 4, Company 4, Support 5) with 14/600
   uppercase `+0.7 px` white headings and `gray-400` links
 - **AND** the third column is "Stay Updated" with a 46 px email field (`#1f2937`, border `#374151`) and an
@@ -1165,3 +1165,46 @@ as in-page anchors that clear the sticky header.
 - [ ] zero bare `#` anchors; `#service-areas` replaced by `#areas`; every `tel:` well formed; every image
       has `alt`; the roster panel is an inline SVG/CSS composition, not a photo of a person
 - [ ] 100% coverage on the new app, `scripts/verify-app.sh nightwatch` green
+
+## Implementation notes (shipped 2026-10-25, `apps/nightwatch`)
+
+Measured in the built page at 1440 × 900 with Playwright, same probes the reference table was taken with.
+
+**Matched exactly:** licence bar 37 px `#162135`; header 81 px sticky `white / 90 %` + `blur(16px)`;
+hero top offset 118 px, copy column 469 px, estimator column 683 px, `h1` 60 / 64.8 with −1.5 px tracking
+and the second clause in `#f7c948`; `#why-us` 876 px with the panel at 576 × 432; `#process` 788 px with
+four steps in `sm:grid-cols-3`; `#areas` 513 px with fourteen towns; industry cells 404 × 208 and the
+1 px `gap-px` wrapper; scope header row 53 px, `<dt>` 464 px (2/5 of the 1,166 px row) with a JetBrains
+Mono `<dd>`; FAQ rows 81 px; footer columns 384 / 488 / 280; the three published readings ($2,050–$2,750,
+$5,800–$7,800, $6,050–$8,200) and the em dash; 0 px horizontal overflow at 320 / 390 / 768 / 1024 / 1280 /
+1440 / 1600 (the reference overflows to 401 px at 320 and 390).
+
+**Documented deltas** (none of them changes a layout decision):
+
+| what | reference | ship | why |
+| ---- | --------: | ---: | --- |
+| hero band | 1,028 | 1,008 | follows the card height below |
+| estimator card | 683 × 836 | 683 × 816 | 20 px of internal rhythm; the four rows, the range box and the submit all sit at their measured heights |
+| `#scope` band / row | 1,190 / 75 | 1,167 / 56 | the reference's 75 px rows carry two-line `<dd>`s; every one of ours fits one line at 700 px, and the padding is the specified `16 px 24 px` |
+| `#testimonials` band / card | 812 / 336 | 764 / 332 | card height follows the quote wrap |
+| footer | 567 | 475 | the reference's logo asset is 210 × 40 of artwork; ours is a 40 px wordmark, and no dead newsletter markup is carried |
+| `#contact` | 440 | 436 | button block is 2 px shorter than the measured reference |
+
+**Copy and structure decisions**
+
+- The three dead `#` social chips are **removed** and replaced by the required Component Dock line in the
+  bottom bar ("More templates at Component Dock"), per Requirement 14's "real destinations or removed".
+- The footer's Support column carries five links (Privacy and Terms included), and the legal bar repeats
+  Privacy Policy / Terms of Service as the reference does.
+- The newsletter form is **wired** (an inline confirmation and an inline invalid-email message) instead of
+  the reference's dead markup, and carries `noValidate` so our own message is the one users see.
+- Every reference route (`/services`, `/pricing`, …) is an in-page anchor per §Anchor map; the city pill
+  points at `#areas`, not the reference's dead `#service-areas`.
+- The address is normalised to "1230 North Capitol Avenue, Indianapolis, IN 46204" — one city, one state,
+  as §Known reference defects 6 asks.
+- The roster panel is **drawn** as inline SVG from a 5 × 5 relief matrix (21 named-crew chips, 4 relief
+  chips), never a photograph.
+- The cookie strip records `accepted` / `essential` and removes itself on the decision; the reference's
+  300 ms slide-down is dropped because the strip must not animate under reduced motion.
+- The reveal layer (`Reveal.tsx`) is applied to the hero copy column and the `#why-us` panel + rules only,
+  mirroring the reference's `data-animate` bands, and bails out entirely under `prefers-reduced-motion`.
