@@ -66,7 +66,7 @@ prep needs a different invented name.
 | `fixtura`            | **shipped** as Brassworks — `apps/brassworks`         |
 | `flowpage`           | preview 200, 45731 B                                  |
 | `groundwork`         | app exists (other design); orphan prep (other design) |
-| `halfpast`           | preview 200, 105852 B                                 |
+| `halfpast`           | **shipped** as Slotline — `apps/slotline`              |
 | `heatline`           | preview 200, 64887 B                                  |
 | `journeyman`         | preview 200, 53087 B                                  |
 | `kinetic`            | app exists (other design); orphan prep (other design) |
@@ -98,7 +98,7 @@ prep needs a different invented name.
 own row under `## Business`, `circles` as **Closeknit** (`apps/closeknit`, row added under
 `## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt; `perimeter` is shipped as
 **Sealwise** (`apps/sealwise`, https://sealwise.free.componentdock.com), row added under `## Business`.
-So the other 37 of the 42 remain open.
+So the other 36 of the 42 remain open.
 
 ### The 214 snippet variants, by family
 
