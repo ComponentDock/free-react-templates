@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — the design's toggle writes a
+   class, and an inline script re-applies it before the first paint. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Airshed tokens — read back from the reference design's compiled stylesheet and
+   its live render at 1440 / 768 / 390 px. Brand palette: a Tailwind-violet ramp
+   (#f5f3ff → #6138bc) carrying every accent, tick, star, price and the one
+   saturated closing band; a warm-neutral "ink" ramp (#f8f8fa → #171720) for
+   headings, hairlines and body copy; amber reserved for the two star rows.
+   Shape: 8 px buttons and inputs, 16 px cards, one soft shadow, 80 / 112 px
+   band rhythm, hairlines instead of shadows. */
+@theme {
+  /* brand violet */
+  --color-primary-50: #f5f3ff;
+  --color-primary-100: #ede8ff;
+  --color-primary-200: #dcd4fe;
+  --color-primary-300: #c4b4fa;
+  --color-primary-400: #a288f7;
+  --color-primary-500: #8663ee;
+  --color-primary-600: #7247dc;
+  --color-primary-700: #6138bc;
+
+  /* warm neutral — every heading, hairline and paragraph */
+  --color-ink-50: #f8f8fa;
+  --color-ink-100: #efeff3;
+  --color-ink-200: #dedee6;
+  --color-ink-300: #b9b9c8;
+  --color-ink-400: #8b8ba0;
+  --color-ink-500: #696980;
+  --color-ink-600: #4f4f63;
+  --color-ink-700: #3c3c4c;
+  --color-ink-800: #272733;
+  --color-ink-900: #171720;
+
+  /* the only accent that is not violet: two rows of stars */
+  --color-accent-400: #fbbf24;
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #696980;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #d1d5db;
+  }
+
+  :focus-visible {
+    outline: 2px solid #7247dc;
+    outline-offset: 2px;
+  }
+
+  /* Every anchor target clears the 37 px licence strip plus the sticky header. */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+}

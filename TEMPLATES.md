@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (386)
+## Business (387)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1266,6 +1266,7 @@
 - [x] **Youthconnect** — [colorlib](https://colorlib.com/wp/template/youthconnect/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/youthconnect-template-1770211452999.jpg) · [ignite](https://ignite.free.componentdock.com)
 - [x] **Yummy 2** — [colorlib](https://colorlib.com/wp/template/yummy-2/) · [umami](https://umami.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/yummy-free-template.jpg)
 - [x] **Zeta** — [colorlib](https://colorlib.com/wp/template/zeta/) · [talon](https://talon.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zeta-free-template.jpg)
+- [~] **Zephyr** — [colorlib](https://colorlib.com/wp/template/zephyr/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/zephyr-template.jpg)
 
 ## Charity (37)
 
