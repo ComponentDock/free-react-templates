@@ -1,0 +1,121 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design-token note: one warm-grey "primary" ramp that is not a hue — it is a
+     paper/charcoal scale, chroma ≈ 0 in every step — carries every ground,
+     hairline, body colour and filled button. "accent" is a two-step lime and
+     appears only as small marks: eyebrow chips, price labels, figcaption
+     plates, the rules beside each brief, the process numerals and the 1.5 px
+     squares in the process footnotes. The greys used by the testimonial band,
+     the FAQ and the footer are Tailwind's own, so they are not re-declared. */
+  --color-primary-50: #f7f7f6;
+  --color-primary-100: #eeeeec;
+  --color-primary-200: #d8d8d4;
+  --color-primary-300: #b5b5af;
+  --color-primary-400: #8b8b84;
+  --color-primary-500: #6e6e67;
+  --color-primary-600: #575751;
+  --color-primary-700: #464642;
+  --color-primary-800: #2b2b28;
+  --color-primary-900: #141413;
+
+  --color-accent-400: #c3f53c;
+  --color-accent-500: #a8dc1f;
+
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  /* The technical layer — the operating system's mono, never a webfont. */
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+
+  --radius-lg: 0.5rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #f3f4f6;
+  }
+
+  /* The header is 81 px at lg and 65 px below it; in-page anchors clear both. */
+  section[id],
+  main [id] {
+    scroll-margin-top: 81px;
+  }
+
+  @media (max-width: 1023px) {
+    section[id],
+    main [id] {
+      scroll-margin-top: 65px;
+    }
+  }
+
+  ::selection {
+    background-color: var(--color-accent-400);
+    color: var(--color-primary-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-primary-600);
+    outline-offset: 2px;
+  }
+}
+
+/* The h1's second line. Hand-written in the reference and deliberately
+   un-inverted: it is the one element on the page that ignores the theme. */
+.text-gradient {
+  background-image: linear-gradient(to right in oklab, #575751 0%, #8b8b84 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* The typewriter's fade: 300 ms out, swap, 300 ms back in. */
+.typewriter-line {
+  display: inline-block;
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.typewriter-line[data-fading='true'] {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes faq-open {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .typewriter-line {
+    transition: none;
+  }
+}
