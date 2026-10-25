@@ -76,7 +76,7 @@ prep needs a different invented name.
 | `metroflow`          | preview 200, 52720 B                                  |
 | `nightshift`         | **shipped** as Nightwatch — `apps/nightwatch`         |
 | `nodig`              | preview 200, 79808 B                                  |
-| `onyx`               | orphan prep (other design)                            |
+| `onyx`               | **shipped** as Patina — `apps/patina`                 |
 | `ostend`             | preview 200, 69797 B                                  |
 | `overprint`          | preview 200, 68551 B                                  |
 | `perimeter`          | preview 200, 89710 B                                  |
