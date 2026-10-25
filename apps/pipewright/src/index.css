@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+/* Pipewright tokens — measured from the reference design's compiled sheet
+   (55,230 B) and its live render at 1440 px. Two hand-picked ramps: a warm
+   grey-brown `ink` that replaces every neutral in the page chrome, and a
+   bronze `primary` whose brand value is #b8863b. Shape: 8 / 16 px radii plus
+   the full-round phone pills, one soft shadow, 80 / 112 px band rhythm. */
+@theme {
+  /* neutral: warm ink, not tailwind gray */
+  --color-ink-50: #faf8f5;
+  --color-ink-100: #f0ece6;
+  --color-ink-200: #ded6cb;
+  --color-ink-300: #bcb0a1;
+  --color-ink-400: #8a7d6d;
+  --color-ink-500: #615648;
+  --color-ink-600: #453d33;
+  --color-ink-700: #332d26;
+  --color-ink-800: #2a2622;
+  --color-ink-900: #1c1916;
+
+  /* brand: bronze */
+  --color-primary-50: #fbf7f0;
+  --color-primary-100: #f5eddd;
+  --color-primary-200: #ead9ba;
+  --color-primary-300: #dcc08d;
+  --color-primary-400: #cba45f;
+  --color-primary-500: #be8f46;
+  --color-primary-600: #b8863b; /* brand */
+  --color-primary-700: #946a2d;
+  --color-primary-800: #735225;
+  --color-primary-900: #5a401f;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --radius-lg: 0.5rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #faf8f5;
+    color: #2a2622;
+    font-family: Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid #be8f46;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm. The
+     hero and the emergency strip opt out and carry their own insets. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+}
