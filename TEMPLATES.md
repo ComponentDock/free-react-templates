@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (372)
+## Business (373)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -946,6 +946,7 @@
 - [x] **Coaching** — [colorlib](https://colorlib.com/wp/template/coaching/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coaching-free-template.jpg) · [clarity](https://clarity.free.componentdock.com)
 - [x] **Cohost** — [colorlib](https://colorlib.com/wp/template/cohost/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cohost-free-template.jpg) · [hostcraft](https://hostcraft.free.componentdock.com)
 - [x] **Coinbuzz** — [colorlib](https://colorlib.com/wp/template/coinbuzz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coinbuzz-free-template.jpg) · [coincast](https://coincast.free.componentdock.com)
+- [~] **Coldsnap** — [colorlib](https://colorlib.com/wp/template/coldsnap/) · [stoke](https://stoke.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coldsnap-template.jpg)
 - [x] **Colid** — [colorlib](https://colorlib.com/wp/template/colid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colid-free-app-landing-page-website-template.jpg) · [Pitchly](https://pitchly.free.componentdock.com)
 - [x] **Coloshop** — [colorlib](https://colorlib.com/wp/template/coloshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coloshop-free-bootstrap-ecommerce-website-template.jpg) · [shoplane](https://shoplane.free.componentdock.com)
 - [x] **Complex** — [colorlib](https://colorlib.com/wp/template/complex/) · [sitecraft](https://sitecraft.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/complex-free-template.jpg)
