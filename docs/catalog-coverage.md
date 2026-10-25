@@ -78,7 +78,7 @@ prep needs a different invented name.
 | `nodig`              | preview 200, 79808 B                                  |
 | `onyx`               | **shipped** as Patina — `apps/patina`                 |
 | `ostend`             | **shipped** as Pentimento — `apps/pentimento`          |
-| `overprint`          | preview 200, 68551 B                                  |
+| `overprint`          | **shipped** as Makeready — `apps/makeready`           |
 | `perimeter`          | preview 200, 89710 B                                  |
 | `relay-auth`         | preview 200, 4052 B                                   |
 | `ridgeline`          | preview 200, 92808 B                                  |
@@ -94,7 +94,7 @@ prep needs a different invented name.
 | `voltway`            | preview 200, 71946 B                                  |
 | `zephyr`             | orphan prep (other design)                            |
 
-`airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
+`overprint` is shipped as **Makeready** (`apps/makeready`, https://makeready.free.componentdock.com); `airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
 own row under `## Business`, `circles` as **Closeknit** (`apps/closeknit`, row added under
 `## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt, so the
 other 38 of the 42 remain open.
