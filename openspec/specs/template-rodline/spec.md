@@ -784,6 +784,20 @@ The app SHALL contain no reference-site strings and SHALL satisfy the repository
 7. **No `astro` behaviour is reproduced** that the page does not use: no view transitions, no lightbox, no
    counters, no typewriter, no billing toggle, no cookie panel, no back-to-top disc (none of them exist
    in this document).
+8. **Measured recreation heights (2026-10-25, built app, Chromium).** The recreation reproduces the
+   document at **3,912 / 3,912 / 4,056 px** at 1440 / 1280 / 1024 — **+8 px** against the reference's
+   3,904 / 3,904 / 4,048, inside the ±24 px tolerance of Requirement 14. At 992/768 it is 4,925 (+30),
+   at 390 it is 5,387 (+54), at 360 5,485 (+30) and at 576 4,899 (−106): the giveaway copy is rewritten
+   for a different crew (Deviation 6), so the demo review quotes and service blurbs wrap to a different
+   number of lines at the widths where the layout is 1-up or 2-up. The band *order* and every structural
+   measurement (offer 44, header 73/65, hero 656/692, why 688, services 626, reviews 748, FAQ 820,
+   closing 116/168, footer 141 at ≥1024) match the table; the intermediate-width document total does not,
+   and that is a copy-length artefact rather than a layout one.
+9. **The reviews track scrolls; it does not paginate.** With three slides at 3-per-view (≥1024) the
+   reference has one page and hides its arrows and dots. Below 1024 the recreation keeps all three cards
+   in a scroll-snapping track (one per view under 640, two per view to 1023) instead of building the
+   reference's JS carousel: the visible state — one or two cards, no arrows, no dots — is the same, and
+   the band height stays within ±8 px of the reference at 640–1023 and at 390.
 
 ## Verification checklist
 

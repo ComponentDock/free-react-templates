@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  /* brand: royal blue */
+  --color-primary-50: #eef1fe;
+  --color-primary-100: #dde3fd;
+  --color-primary-200: #bac6fb;
+  --color-primary-300: #8e9ff8;
+  --color-primary-400: #5e72f6;
+  --color-primary-500: #3854f4;
+  --color-primary-600: #2447f2;
+  --color-primary-700: #1734c8;
+  --color-primary-900: #0f2179;
+
+  /* cool neutral ink */
+  --color-ink-50: #f6f7fb;
+  --color-ink-100: #eceef4;
+  --color-ink-200: #d6dae4;
+  --color-ink-300: #aeb5c6;
+  --color-ink-400: #727c93;
+  --color-ink-500: #4b5468;
+  --color-ink-600: #2e3648;
+  --color-ink-700: #1c2333;
+  --color-ink-800: #101828;
+  --color-ink-900: #0a101c;
+
+  /* the greys the bands and the dark variant use */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+
+  --color-amber-400: #fbbf24;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.dark body {
+  background-color: #030712;
+  color: #e5e7eb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
