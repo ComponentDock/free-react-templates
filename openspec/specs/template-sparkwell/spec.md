@@ -285,210 +285,182 @@ bottom bar *© 2026 Voltway. All rights reserved.* + Privacy Policy · Terms of 
 
 *As a visitor the page must feel like a finished product site, not a mock.*
 
-```gherkin
-Scenario: The page loads with a branded shell
-  Given the app is served at the site root
-  Then the document title contains "Sparkwell"
-  And a skip link to #main-content is the first focusable element
-  And the preloader disappears without trapping the page when JavaScript has already finished loading
-  And a 2 px blue progress bar tracks scroll position
+#### Scenario: The page loads with a branded shell
+- **GIVEN** the app is served at the site root
+- **THEN** the document title contains "Sparkwell"
+- **AND** a skip link to #main-content is the first focusable element
+- **AND** the preloader disappears without trapping the page when JavaScript has already finished loading
+- **AND** a 2 px blue progress bar tracks scroll position
 
-Scenario: Back to top
-  Given the visitor has scrolled more than 300 px
-  Then a 48 px round blue "Back to top" button is visible bottom-right
-  And activating it returns the window to the top
-```
+#### Scenario: Back to top
+- **GIVEN** the visitor has scrolled more than 300 px
+- **THEN** a 48 px round blue "Back to top" button is visible bottom-right
+- **AND** activating it returns the window to the top
 
 ### R2 — Header
 
-```gherkin
-Scenario: Sticky translucent header
-  Given the viewport is 1440 px wide
-  Then the header is 80 px tall, sticky, white at 80 % with a backdrop blur and a 1 px #e5e7eb rule
-  And it shows the Sparkwell wordmark, five in-page anchors and a blue "Book an EICR" button
+#### Scenario: Sticky translucent header
+- **GIVEN** the viewport is 1440 px wide
+- **THEN** the header is 80 px tall, sticky, white at 80 % with a backdrop blur and a 1 px #e5e7eb rule
+- **AND** it shows the Sparkwell wordmark, five in-page anchors and a blue "Book an EICR" button
 
-Scenario: Header anchors reach their sections
-  When the visitor activates "Warning signs"
-  Then the page scrolls to the section whose heading is "What your installation is telling you"
-  And every anchor has a matching section id in the document
+#### Scenario: Header anchors reach their sections
+- **WHEN** the visitor activates "Warning signs"
+- **THEN** the page scrolls to the section whose heading is "What your installation is telling you"
+- **AND** every anchor has a matching section id in the document
 
-Scenario: Mobile navigation
-  Given the viewport is 390 px wide
-  Then the links are hidden and a menu button with aria-expanded="false" is shown
-  When the visitor toggles the menu
-  Then a full-width panel below the bar lists the same links and aria-expanded is "true"
+#### Scenario: Mobile navigation
+- **GIVEN** the viewport is 390 px wide
+- **THEN** the links are hidden and a menu button with aria-expanded="false" is shown
+- **WHEN** the visitor toggles the menu
+- **THEN** a full-width panel below the bar lists the same links and aria-expanded is "true"
 
-Scenario: Dark-mode toggle
-  When the visitor activates the moon button
-  Then the html element gains the "dark" class, the page switches to the dark palette and the control is labelled for screen readers
-```
+#### Scenario: Dark-mode toggle
+- **WHEN** the visitor activates the moon button
+- **THEN** the html element gains the "dark" class, the page switches to the dark palette and the control is labelled for screen readers
 
 ### R3 — Hero
 
-```gherkin
-Scenario: Rotating headline
-  Given IntersectionObserver and requestAnimationFrame exist
-  Then the h1 reads "Electrical work that" followed by one of "passes inspection", "comes with the paperwork", "a surveyor will accept"
-  And the rotating phrase is styled with the blue gradient text treatment
-  And the phrase cycles at least once every 6 seconds and never leaves the heading empty
+#### Scenario: Rotating headline
+- **GIVEN** IntersectionObserver and requestAnimationFrame exist
+- **THEN** the h1 reads "Electrical work that" followed by one of "passes inspection", "comes with the paperwork", "a surveyor will accept"
+- **AND** the rotating phrase is styled with the blue gradient text treatment
+- **AND** the phrase cycles at least once every 6 seconds and never leaves the heading empty
 
-Scenario: Reduced motion or no animation APIs
-  Given the browser reports prefers-reduced-motion: reduce, or the animation APIs are missing
-  Then the h1 renders the first phrase statically
+#### Scenario: Reduced motion or no animation APIs
+- **GIVEN** the browser reports prefers-reduced-motion: reduce, or the animation APIs are missing
+- **THEN** the h1 renders the first phrase statically
 
-Scenario: Hero controls
-  Then "Book an EICR" is a blue filled button with an arrow icon
-  And "See certificate prices" is an outlined button
-  And "Watch Demo" is a round play chip that opens a dialog
+#### Scenario: Hero controls
+- **THEN** "Book an EICR" is a blue filled button with an arrow icon
+- **AND** "See certificate prices" is an outlined button
+- **AND** "Watch Demo" is a round play chip that opens a dialog
 
-Scenario: Fact row and photograph
-  Then four facts read 24/7 Emergency line, 90 min Average response, 6,100+ Certificates issued, 18 Years NICEIC approved
-  And a 2:1 photograph is shown in a 16 px card with a 1 px ring and a large shadow
-  And the photograph is a placeholder image seeded from the template name, never a copied asset
+#### Scenario: Fact row and photograph
+- **THEN** four facts read 24/7 Emergency line, 90 min Average response, 6,100+ Certificates issued, 18 Years NICEIC approved
+- **AND** a 2:1 photograph is shown in a 16 px card with a 1 px ring and a large shadow
+- **AND** the photograph is a placeholder image seeded from the template name, never a copied asset
 
-Scenario: Video dialog
-  When the visitor activates "Watch Demo"
-  Then a modal dialog opens with a 16:9 placeholder panel
-  And Escape closes it and focus returns to the trigger
-```
+#### Scenario: Video dialog
+- **WHEN** the visitor activates "Watch Demo"
+- **THEN** a modal dialog opens with a 16:9 placeholder panel
+- **AND** Escape closes it and focus returns to the trigger
 
 ### R4 — Emergency band
 
-```gherkin
-Scenario: Hazard band
-  Then a #facc15 band with a 45-degree black and yellow stripe rule across its top edge sits directly under the hero
-  And it shows a dark pill labelled "24-hour emergency line", a heading, one paragraph, a phone button and three response times
+#### Scenario: Hazard band
+- **THEN** a #facc15 band with a 45-degree black and yellow stripe rule across its top edge sits directly under the hero
+- **AND** it shows a dark pill labelled "24-hour emergency line", a heading, one paragraph, a phone button and three response times
 
-Scenario: Phone link
-  Then the phone button is a tel: link labelled with the number
-  And the three service windows read "08:00 – 18:00 weekdays / Within 90 minutes", "18:00 – 23:00 and weekends / Within 2 hours", "23:00 – 08:00 / Within 3 hours"
+#### Scenario: Phone link
+- **THEN** the phone button is a tel: link labelled with the number
+- **AND** the three service windows read "08:00 – 18:00 weekdays / Within 90 minutes", "18:00 – 23:00 and weekends / Within 2 hours", "23:00 – 08:00 / Within 3 hours"
 
-Scenario: Call-out charge is disclosed
-  Then a sentence on the band states the out-of-hours call-out charge before the visitor calls
-```
+#### Scenario: Call-out charge is disclosed
+- **THEN** a sentence on the band states the out-of-hours call-out charge before the visitor calls
 
 ### R5 — Counter strip
 
-```gherkin
-Scenario: Four animated figures
-  Given the strip scrolls into view
-  Then the figures count from 0 to 6,100, 90 min, 18 and 100% once each
-  And the final values are exactly what the labels describe
+#### Scenario: Four animated figures
+- **GIVEN** the strip scrolls into view
+- **THEN** the figures count from 0 to 6,100, 90 min, 18 and 100% once each
+- **AND** the final values are exactly what the labels describe
 
-Scenario: Counters without IntersectionObserver
-  Given IntersectionObserver is unavailable
-  Then the final values render immediately and no state-update warning is logged
-```
+#### Scenario: Counters without IntersectionObserver
+- **GIVEN** IntersectionObserver is unavailable
+- **THEN** the final values render immediately and no state-update warning is logged
 
 ### R6 — Certificate grid
 
-```gherkin
-Scenario: Four priced documents
-  Then the section shows an eyebrow "Certification", the heading "Which certificate you actually need" and one lede paragraph
-  And four cards are laid out two per row at 1440 px and one per row below 1024 px
-  And each card shows a monospaced code tag, its full name, a price, a validity line, and "Who needs it" plus "What it covers"
-  And the prices read £180 / Included / £45 / £3.50 per item
+#### Scenario: Four priced documents
+- **THEN** the section shows an eyebrow "Certification", the heading "Which certificate you actually need" and one lede paragraph
+- **AND** four cards are laid out two per row at 1440 px and one per row below 1024 px
+- **AND** each card shows a monospaced code tag, its full name, a price, a validity line, and "Who needs it" plus "What it covers"
+- **AND** the prices read £180 / Included / £45 / £3.50 per item
 
-Scenario: Price note
-  Then an amber note bar with a 4 px yellow left rule follows the grid and explains the quoting basis
-```
+#### Scenario: Price note
+- **THEN** an amber note bar with a 4 px yellow left rule follows the grid and explains the quoting basis
 
 ### R7 — Warning signs (dark band)
 
-```gherkin
-Scenario: Eight severity-tagged rows
-  Then the band background is #030712 and all text on it is white or #9ca3af
-  And eight rows are listed, each with a severity pill, a title and a body sentence
-  And the pills are "Stop using it" (red, 3 rows), "Book this week" (yellow, 3 rows) and "Mention at next visit" (grey, 2 rows)
-  And rows are one per line at 1440 px with the pill in a fixed left column
+#### Scenario: Eight severity-tagged rows
+- **THEN** the band background is #030712 and all text on it is white or #9ca3af
+- **AND** eight rows are listed, each with a severity pill, a title and a body sentence
+- **AND** the pills are "Stop using it" (red, 3 rows), "Book this week" (yellow, 3 rows) and "Mention at next visit" (grey, 2 rows)
+- **AND** rows are one per line at 1440 px with the pill in a fixed left column
 
-Scenario: Closing instruction
-  Then a note after the rows tells the visitor to isolate the circuit and call
-```
+#### Scenario: Closing instruction
+- **THEN** a note after the rows tells the visitor to isolate the circuit and call
 
 ### R8 — Compliance cards
 
-```gherkin
-Scenario: Four standards
-  Then four cards read BS 7671 / Part P / EICR / NICEIC with a subtitle, a body and a monospaced footnote each
-  And every card carries a 36 px yellow square at its top-right corner
-  And the codes are set in the monospace stack in #1d4ed8
-```
+#### Scenario: Four standards
+- **THEN** four cards read BS 7671 / Part P / EICR / NICEIC with a subtitle, a body and a monospaced footnote each
+- **AND** every card carries a 36 px yellow square at its top-right corner
+- **AND** the codes are set in the monospace stack in #1d4ed8
 
 ### R9 — Testimonial carousel
 
-```gherkin
-Scenario: Three quotes in a carousel
-  Then three quote cards each show five stars, the quote, an initial avatar and a name plus role line
-  And at 1440 px one card is visible at a time with previous/next circular buttons
-  And the buttons are hidden below 1024 px where the track scrolls instead
-  And dot indicators show which quote is active and are buttons with accessible names
+#### Scenario: Three quotes in a carousel
+- **THEN** three quote cards each show five stars, the quote, an initial avatar and a name plus role line
+- **AND** at 1440 px one card is visible at a time with previous/next circular buttons
+- **AND** the buttons are hidden below 1024 px where the track scrolls instead
+- **AND** dot indicators show which quote is active and are buttons with accessible names
 
-Scenario: Keyboard
-  Then the carousel is reachable by keyboard and each control reports its state
-```
+#### Scenario: Keyboard
+- **THEN** the carousel is reachable by keyboard and each control reports its state
 
 ### R10 — FAQ accordion
 
-```gherkin
-Scenario: Five exclusive items
-  Then five questions render as buttons with aria-expanded="false"
-  When the visitor opens the third question
-  Then only that answer is visible, its button reports aria-expanded="true" and the plus icon has rotated
-  When the visitor opens another question
-  Then the previously open answer closes
-```
+#### Scenario: Five exclusive items
+- **THEN** five questions render as buttons with aria-expanded="false"
+- **WHEN** the visitor opens the third question
+- **THEN** only that answer is visible, its button reports aria-expanded="true" and the plus icon has rotated
+- **WHEN** the visitor opens another question
+- **THEN** the previously open answer closes
 
 ### R11 — Closing band
 
-```gherkin
-Scenario: Gradient call to action
-  Then the band uses a blue gradient from #2563eb to #1e40af with a faint dot grid and two blurred discs
-  And it shows a white heading, one paragraph, a white filled button and an outlined button
-  And both buttons are keyboard reachable with visible focus rings
-```
+#### Scenario: Gradient call to action
+- **THEN** the band uses a blue gradient from #2563eb to #1e40af with a faint dot grid and two blurred discs
+- **AND** it shows a white heading, one paragraph, a white filled button and an outlined button
+- **AND** both buttons are keyboard reachable with visible focus rings
 
 ### R12 — Footer
 
-```gherkin
-Scenario: Footer content
-  Then the footer background is #111827 with #9ca3af copy
-  And it shows the brand blurb, a postal address, a tel: link and a mailto: link
-  And it shows three link columns plus a newsletter column with an email input and a Subscribe button
+#### Scenario: Footer content
+- **THEN** the footer background is #111827 with #9ca3af copy
+- **AND** it shows the brand blurb, a postal address, a tel: link and a mailto: link
+- **AND** it shows three link columns plus a newsletter column with an email input and a Subscribe button
 
-Scenario: Newsletter validation
-  When the visitor submits an empty or malformed address
-  Then an inline error is shown and no success message appears
-  When the visitor submits a valid address
-  Then the form shows a confirmation and the input is cleared
+#### Scenario: Newsletter validation
+- **WHEN** the visitor submits an empty or malformed address
+- **THEN** an inline error is shown and no success message appears
+- **WHEN** the visitor submits a valid address
+- **THEN** the form shows a confirmation and the input is cleared
 
-Scenario: Component Dock attribution
-  Then the footer links to https://www.componentdock.com/ labelled "Component Dock"
-```
+#### Scenario: Component Dock attribution
+- **THEN** the footer links to https://www.componentdock.com/ labelled "Component Dock"
 
 ### R13 — No provenance leakage
 
-```gherkin
-Scenario: The shipped app is brand-clean
-  Then no file under apps/sparkwell contains "colorlib", "Voltway" or the preview URL
-  And the wordmark, document title, meta description, copyright line and email domain are all "Sparkwell"
-  And every image is a picsum placeholder seeded "sparkwell-<n>" or a local asset
-```
+#### Scenario: The shipped app is brand-clean
+- **THEN** no file under apps/sparkwell contains "colorlib", "Voltway" or the preview URL
+- **AND** the wordmark, document title, meta description, copyright line and email domain are all "Sparkwell"
+- **AND** every image is a picsum placeholder seeded "sparkwell-<n>" or a local asset
 
 ### R14 — Responsive and accessible
 
-```gherkin
-Scenario: No horizontal overflow
-  Given viewport widths 1440, 1024, 768 and 390
-  Then document scrollWidth equals the viewport width at every step
+#### Scenario: No horizontal overflow
+- **GIVEN** viewport widths 1440, 1024, 768 and 390
+- **THEN** document scrollWidth equals the viewport width at every step
 
-Scenario: Heading order
-  Then the document has exactly one h1 and section h2s, with card h3s nested beneath them
+#### Scenario: Heading order
+- **THEN** the document has exactly one h1 and section h2s, with card h3s nested beneath them
 
-Scenario: Interactive affordances
-  Then every icon-only control carries an aria-label
-  And focus-visible rings are visible on every button, link and input
-```
+#### Scenario: Interactive affordances
+- **THEN** every icon-only control carries an aria-label
+- **AND** focus-visible rings are visible on every button, link and input
 
 ## Known defects in the reference (do not reproduce)
 
