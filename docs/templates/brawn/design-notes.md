@@ -96,71 +96,263 @@ footer.site-footer                           730px #333, padding 7em 0
 ## CSS token reference (verbatim from `css/style.css`)
 
 ```css
-body                     { font-family: "Oxygen", …; font-size: 1.05rem; line-height: 1.8;
-                           color: #6c757d; background-color: #fff; }
-h1, h2, h3               { color: #000; line-height: 1.5; font-family: "Montserrat", sans-serif;
-                           font-weight: 900; }
-.heading                 { color: #000; font-size: 3rem; line-height: 1; }   /* 48px/48px */
-.bg-primary              { background-color: #007bff !important; }
-.bg-light                { background-color: #f8f9fa !important; }
-.btn                     { font-size: 13px; text-transform: uppercase; letter-spacing: .2em;
-                           font-weight: 900; padding: .375rem .75rem; border-radius: .25rem; }
-.btn-warning             { color: #212529; background-color: #ffc107; border-color: #ffc107; }
-.btn-warning:hover       { background-color: #e0a800; border-color: #d39e00; }
-.section                 { padding: 7em 0; }
-header                   { position: relative; top: 0; left: 0; width: 100%; z-index: 5;
-                           background: #fff; }
-header .navbar           { padding-top: 0; padding-bottom: 0; background: none !important;
-                           position: relative; font-family: "Montserrat", sans-serif; }
-header .navbar-brand     { text-transform: uppercase; letter-spacing: .2em; font-weight: 400; }
-header .navbar .nav-link { padding: 1.7rem 1rem; font-size: 1.05rem; font-weight: 300;
-                           color: #666666; }
-header .navbar .nav-link.active { color: #007bff; }
-header .navbar .dropdown-menu { font-size: 14px; border-radius: 4px; border: none;
-                           box-shadow: 0 2px 30px 0 rgba(0,0,0,.2); min-width: 13em; margin-top: -10px; }
-header .navbar .dropdown-menu .dropdown-item:hover { background: #007bff; color: #000; }
-header .search-form .form-control { padding-left: 30px; border: none; height: 44px; border-radius: 0;
-                           background: transparent; border-bottom: 1px solid rgba(0,0,0,.3); color: #000; }
-header .search-form .icon { position: absolute; top: 50%; font-size: 1.2rem; left: 0; }
-.slider-item             { background-size: cover; background-repeat: no-repeat;
-                           background-position: top center; height: calc(100vh);
-                           min-height: 700px; position: relative; }
-.slider-item:before      { content: ""; position: absolute; inset: 0; background: #000; opacity: .4; }
-.slider-item .slider-text h1 { font-size: 5rem; color: #fff; line-height: 1.2;
-                           font-weight: 700 !important; text-transform: uppercase;
-                           margin-bottom: 30px; margin-left: 0.5em; }
-.slider-item .slider-text p  { font-size: 20px; line-height: 1.5; font-weight: 300; color: #fff; }
-.slider-item .slider-text h1 span { color: #fff; background-color: #007bff;
-                           box-shadow: .5em 0 0 #007bff, -.5em 0 0 #007bff; }   /* UNUSED: no span in markup */
-.btn-play                { width: 60px; height: 60px; background: #fff; border-radius: 50%;
-                           position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
-                           transition: .3s all ease-in-out; }
-.btn-play:hover          { width: 80px; height: 80px; }
-.service-box .square-figure { width: 90px; height: 90px; border: 2px solid #007bff;
-                           display: inline-block; border-radius: 7px; transform: rotate(45deg);
-                           margin-bottom: 2rem; }
-.service-box .square-figure span { font-size: 3rem; transform: translate(-50%,-50%) rotate(-45deg); }
-.service-box h3          { font-size: 1.2rem; }                              /* 19.2px */
-.block-6 .media-body .heading { font-size: 20px; }
-.block-6 .media-body p        { font-size: 16px; }
-.img-1, .img-2           { position: absolute; left: 0; top: 0; width: 50%; bottom: 0;
-                           background-size: cover; background-position: center center; }
-.img-2                   { right: 0; left: auto !important; }
-.padding-tb              { padding-top: 4rem; padding-bottom: 4rem; }
-.block-33                { background: #fff; max-width: 700px; margin: 0 auto; padding: 40px; }
-.block-33 .vcard .image img   { border-radius: 50%; }
-.block-33 .vcard .name-text .heading { font-size: 18px; font-weight: 300; line-height: 1.5; }
-.block-33 .vcard .name-text .meta    { color: #a6a6a6; }
-.block-33 .text blockquote { padding: 0; margin-bottom: 0; border: none !important; font-size: 16px; }
-.block-11 .owl-nav       { position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); }
-.block-11 .owl-nav .owl-prev span, .block-11 .owl-nav .owl-next span { font-size: 30px; padding: 20px; }
-.block-11 .owl-nav .disabled { opacity: .2; }
-.element-animate         { opacity: 0; visibility: hidden; }                 /* waypoint gates it */
-.site-footer             { padding: 7em 0; background: #333; }
-.site-footer h3          { font-size: 1rem; letter-spacing: .1em; font-weight: bold; color: #fff; }
-.site-footer a           { color: rgba(255,255,255,.7); text-decoration: underline; }
-.site-footer a:hover     { color: #fff; text-decoration: none; }
-.form-control            { height: 50px; border-width: 2px; }                /* footer subscribe */
+body {
+  font-family: 'Oxygen', …;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #6c757d;
+  background-color: #fff;
+}
+h1,
+h2,
+h3 {
+  color: #000;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.heading {
+  color: #000;
+  font-size: 3rem;
+  line-height: 1;
+} /* 48px/48px */
+.bg-primary {
+  background-color: #007bff !important;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+.btn {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+.btn-warning {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+.btn-warning:hover {
+  background-color: #e0a800;
+  border-color: #d39e00;
+}
+.section {
+  padding: 7em 0;
+}
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background: #fff;
+}
+header .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: none !important;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+header .navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+header .navbar .nav-link {
+  padding: 1.7rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: #666666;
+}
+header .navbar .nav-link.active {
+  color: #007bff;
+}
+header .navbar .dropdown-menu {
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.2);
+  min-width: 13em;
+  margin-top: -10px;
+}
+header .navbar .dropdown-menu .dropdown-item:hover {
+  background: #007bff;
+  color: #000;
+}
+header .search-form .form-control {
+  padding-left: 30px;
+  border: none;
+  height: 44px;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+header .search-form .icon {
+  position: absolute;
+  top: 50%;
+  font-size: 1.2rem;
+  left: 0;
+}
+.slider-item {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: calc(100vh);
+  min-height: 700px;
+  position: relative;
+}
+.slider-item:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.4;
+}
+.slider-item .slider-text h1 {
+  font-size: 5rem;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: 0.5em;
+}
+.slider-item .slider-text p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #fff;
+}
+.slider-item .slider-text h1 span {
+  color: #fff;
+  background-color: #007bff;
+  box-shadow:
+    0.5em 0 0 #007bff,
+    -0.5em 0 0 #007bff;
+} /* UNUSED: no span in markup */
+.btn-play {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s all ease-in-out;
+}
+.btn-play:hover {
+  width: 80px;
+  height: 80px;
+}
+.service-box .square-figure {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #007bff;
+  display: inline-block;
+  border-radius: 7px;
+  transform: rotate(45deg);
+  margin-bottom: 2rem;
+}
+.service-box .square-figure span {
+  font-size: 3rem;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.service-box h3 {
+  font-size: 1.2rem;
+} /* 19.2px */
+.block-6 .media-body .heading {
+  font-size: 20px;
+}
+.block-6 .media-body p {
+  font-size: 16px;
+}
+.img-1,
+.img-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+}
+.img-2 {
+  right: 0;
+  left: auto !important;
+}
+.padding-tb {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.block-33 {
+  background: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.block-33 .vcard .image img {
+  border-radius: 50%;
+}
+.block-33 .vcard .name-text .heading {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.block-33 .vcard .name-text .meta {
+  color: #a6a6a6;
+}
+.block-33 .text blockquote {
+  padding: 0;
+  margin-bottom: 0;
+  border: none !important;
+  font-size: 16px;
+}
+.block-11 .owl-nav {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.block-11 .owl-nav .owl-prev span,
+.block-11 .owl-nav .owl-next span {
+  font-size: 30px;
+  padding: 20px;
+}
+.block-11 .owl-nav .disabled {
+  opacity: 0.2;
+}
+.element-animate {
+  opacity: 0;
+  visibility: hidden;
+} /* waypoint gates it */
+.site-footer {
+  padding: 7em 0;
+  background: #333;
+}
+.site-footer h3 {
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  color: #fff;
+}
+.site-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: underline;
+}
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.form-control {
+  height: 50px;
+  border-width: 2px;
+} /* footer subscribe */
 ```
 
 Colour census (literals, count of declarations): `#fff` 41 · **`#007bff` 23** ·
@@ -175,18 +367,18 @@ diamond)** · `16px` 1 · `0` ×1. `@font-face` count in the sheet: **0**.
 
 Legend: top/height in CSS px at the stated viewport.
 
-| band | 1440×900 | 390×844 |
-|---|---|---|
-| header | 0 → 85 | 0 → 62 (hamburger) |
-| hero `.slider-item` | 85 → 900 | 62 → 844 |
-| services `.section` | 985 → 540 | 906 → 1,430 (1 column) |
-| Enjoy The Fitness | 1,525 → 504 | 2,336 → 1,043 (image 390×400 on top) |
-| program `.bg-primary` | 2,029 → 449 | 3,379 → 876 |
-| Be Fit & Healthy | 2,478 → 504 | 4,255 → 1,043 |
-| testimonials `.bg-light` | 2,982 → 717 | 5,298 → 889 |
-| CTA `.py-5` | 3,698 → 312 | 6,187 → 348 |
-| footer | 4,010 → 730 | 6,535 → 1,286 |
-| **document** | **4,739** (`scrollH`) | **7,821** |
+| band                     | 1440×900              | 390×844                              |
+| ------------------------ | --------------------- | ------------------------------------ |
+| header                   | 0 → 85                | 0 → 62 (hamburger)                   |
+| hero `.slider-item`      | 85 → 900              | 62 → 844                             |
+| services `.section`      | 985 → 540             | 906 → 1,430 (1 column)               |
+| Enjoy The Fitness        | 1,525 → 504           | 2,336 → 1,043 (image 390×400 on top) |
+| program `.bg-primary`    | 2,029 → 449           | 3,379 → 876                          |
+| Be Fit & Healthy         | 2,478 → 504           | 4,255 → 1,043                        |
+| testimonials `.bg-light` | 2,982 → 717           | 5,298 → 889                          |
+| CTA `.py-5`              | 3,698 → 312           | 6,187 → 348                          |
+| footer                   | 4,010 → 730           | 6,535 → 1,286                        |
+| **document**             | **4,739** (`scrollH`) | **7,821**                            |
 
 At 768×1024 the split bands put a **768×400** image above the text (image y
 1,919 / text y 2,319), the nav is collapsed and the header search form measures
@@ -197,7 +389,7 @@ horizontal scroll**; do not "fix" a defect that is not there.
 
 ## Section-by-section fidelity notes
 
-1. **Header.** White, `position: relative`, so the hero begins *below* it —
+1. **Header.** White, `position: relative`, so the hero begins _below_ it —
    the single most common way to get this template wrong is to make the bar
    absolute. The `.bg-dark` class on `nav` is dead (overridden by
    `background: none !important`). Measured: brand 86×46 at (31,19) with
@@ -254,19 +446,19 @@ horizontal scroll**; do not "fix" a defect that is not there.
 
 ## Source → React adaptation table
 
-| source construct | React build |
-|---|---|
-| `header .navbar .dropdown` hover via jQuery (`.hover()` adds `.show`) | `Header` with hover-open on `pointer: fine`, click/keyboard-open otherwise (`aria-expanded`, Escape closes, focus returns) |
-| `.slider-item` single static band | `<section>` with `min-h-screen min-h-[700px]` + `bg-[url(picsum)]` + `before:` overlay `bg-black/40` |
-| `a.btn-play` → fancybox lightbox | `<a href={videoUrl} target="_blank" rel="noopener noreferrer" aria-label="Watch the Brawn video">` with hover scale (or a focus-visible ring, same disc) |
-| `.service-box .square-figure` rotate transform | `rotate-45 rounded-[7px] border-2 border-brand` wrapper + inner `-rotate-45` glyph (`lucide-react` icons: dumbbell / weight / bike / activity) |
-| `.img-1` / `.img-2` absolute half-bleed | `SplitBand` component, `absolute inset-y-0 left-0 w-1/2` (or `right-0`), image `bg-cover bg-center`, text `lg:col-span-5` with `ml-auto`/`mr-auto` |
-| `.element-animate` + waypoints + 100ms stagger | `useReveal` (IntersectionObserver) adding a class once; `motion-reduce:` variant disables transform/opacity; default state visible when JS is off (render the class only after mount, or gate on a `hasJS` attribute) |
-| Owl `.nonloop-block-11` (one card, arrows, no autoplay) | accessible carousel: `role="group" aria-roledescription="carousel"`, slides `aria-roledescription="slide" aria-label="1 of 4"`, prev/next buttons with `aria-disabled` at the ends, `translate-x` transition ~1s |
-| Bootstrap `input-group` subscribe (input + `.btn-warning`) | `<form>` with `type="email"`, `aria-invalid`, inline message, button `type="submit"`; no network call, show a success line |
-| `.btn.btn-warning.px-4.py-3` | `Button` from `packages/ui` styled with `bg-action text-[#212529] uppercase tracking-[.2em] text-[13px] font-black px-6 py-4 rounded` |
-| flaticon / ionicons / fontawesome glyphs | `lucide-react` (dumbbell, bike, activity, watch, twitter/facebook/linkedin/instagram, search, play) |
-| theme JPEGs (`hero_1`, `hero_2`, `person_1..3`) | `https://picsum.photos/seed/brawn-{hero,split-a,split-b,avatar-1..4}/…` |
+| source construct                                                      | React build                                                                                                                                                                                                           |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `header .navbar .dropdown` hover via jQuery (`.hover()` adds `.show`) | `Header` with hover-open on `pointer: fine`, click/keyboard-open otherwise (`aria-expanded`, Escape closes, focus returns)                                                                                            |
+| `.slider-item` single static band                                     | `<section>` with `min-h-screen min-h-[700px]` + `bg-[url(picsum)]` + `before:` overlay `bg-black/40`                                                                                                                  |
+| `a.btn-play` → fancybox lightbox                                      | `<a href={videoUrl} target="_blank" rel="noopener noreferrer" aria-label="Watch the Brawn video">` with hover scale (or a focus-visible ring, same disc)                                                              |
+| `.service-box .square-figure` rotate transform                        | `rotate-45 rounded-[7px] border-2 border-brand` wrapper + inner `-rotate-45` glyph (`lucide-react` icons: dumbbell / weight / bike / activity)                                                                        |
+| `.img-1` / `.img-2` absolute half-bleed                               | `SplitBand` component, `absolute inset-y-0 left-0 w-1/2` (or `right-0`), image `bg-cover bg-center`, text `lg:col-span-5` with `ml-auto`/`mr-auto`                                                                    |
+| `.element-animate` + waypoints + 100ms stagger                        | `useReveal` (IntersectionObserver) adding a class once; `motion-reduce:` variant disables transform/opacity; default state visible when JS is off (render the class only after mount, or gate on a `hasJS` attribute) |
+| Owl `.nonloop-block-11` (one card, arrows, no autoplay)               | accessible carousel: `role="group" aria-roledescription="carousel"`, slides `aria-roledescription="slide" aria-label="1 of 4"`, prev/next buttons with `aria-disabled` at the ends, `translate-x` transition ~1s      |
+| Bootstrap `input-group` subscribe (input + `.btn-warning`)            | `<form>` with `type="email"`, `aria-invalid`, inline message, button `type="submit"`; no network call, show a success line                                                                                            |
+| `.btn.btn-warning.px-4.py-3`                                          | `Button` from `packages/ui` styled with `bg-action text-[#212529] uppercase tracking-[.2em] text-[13px] font-black px-6 py-4 rounded`                                                                                 |
+| flaticon / ionicons / fontawesome glyphs                              | `lucide-react` (dumbbell, bike, activity, watch, twitter/facebook/linkedin/instagram, search, play)                                                                                                                   |
+| theme JPEGs (`hero_1`, `hero_2`, `person_1..3`)                       | `https://picsum.photos/seed/brawn-{hero,split-a,split-b,avatar-1..4}/…`                                                                                                                                               |
 
 ## Documented deltas (recap)
 
@@ -292,14 +484,28 @@ horizontal scroll**; do not "fix" a defect that is not there.
 
 ## Sibling comparison (same category, different designs)
 
-| app / prep | source | palette | shape |
-|---|---|---|---|
-| `stryve` | ColorLib **Topgym** | indigo `#233EDE` | long marketing page, hero-first |
-| `grithaus` | ColorLib **Fitnessgym** | green `#38b143` | gym site with program cards |
-| `vigor` (app) / `stamina` (prep) | ColorLib **Endurance** | yellow `#fcd307` + orange `#fc6b29` + pink `#fd0054`, Roboto | **11 bands**: navbar → hero → about → services → classes → pricing → testimonies → appointment → blog → counter → footer |
-| **`brawn` (this prep)** | ColorLib **Vigor** | Bootstrap primary `#007bff` + amber `#ffc107`, Montserrat/Oxygen | **9 bands**, no pricing/counter/blog, two half-bleed splits, one-card testimonial carousel |
+| app / prep                       | source                  | palette                                                          | shape                                                                                                                    |
+| -------------------------------- | ----------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `stryve`                         | ColorLib **Topgym**     | indigo `#233EDE`                                                 | long marketing page, hero-first                                                                                          |
+| `grithaus`                       | ColorLib **Fitnessgym** | green `#38b143`                                                  | gym site with program cards                                                                                              |
+| `vigor` (app) / `stamina` (prep) | ColorLib **Endurance**  | yellow `#fcd307` + orange `#fc6b29` + pink `#fd0054`, Roboto     | **11 bands**: navbar → hero → about → services → classes → pricing → testimonies → appointment → blog → counter → footer |
+| **`brawn` (this prep)**          | ColorLib **Vigor**      | Bootstrap primary `#007bff` + amber `#ffc107`, Montserrat/Oxygen | **9 bands**, no pricing/counter/blog, two half-bleed splits, one-card testimonial carousel                               |
 
 The `vigor` app is **Endurance** — same Bootstrap blue in its palette but a
 different page: different typography (Roboto), different band set, different
 hero treatment. Do not port any component from `apps/vigor` believing it is the
 same design; only the palette overlaps.
+
+## Built (2026-10-25, implementer run)
+
+`apps/brawn` shipped on `feat/template-brawn`. The measured geometry above was re-checked against
+the live render with Playwright at 1440 × 900 and 390 × 844 after the build:
+
+- Document height **4,634 px** vs the reference's 4,739 px (**−2.2 %**), band deltas between −10.3 %
+  (footer) and +3.2 % (second split).
+- Header 85 / hero 900 / CTA 313 faithful to the pixel; `scrollWidth − clientWidth` = 0 at 390.
+- Fonts load as real faces (`Montserrat 400/700/900`, `Oxygen 300/400/700`), so the heading weight is
+  no longer synthesised — which is why the split `h2` carries `-0.02em` tracking (real 900 is 457 px
+  where the reference's faux-bold measures 439 px inside the 445 px column).
+- Full delta list, band table and gate results: `openspec/specs/template-brawn/spec.md`
+  § _Implementation notes_.
