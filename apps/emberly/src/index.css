@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+/* Emberly tokens — measured from the reference design's compiled Tailwind 4
+   sheet (59,082 B) and its live render at 1440 px. Three ramps: a steel trade
+   blue `primary` (#1e6fa8 at its centre), a cool navy-grey `ink` neutral that
+   keeps the blue reading warm rather than corporate, and one ember accent
+   `heat` used only in the seasonal band and the logo flame. Shape: 8 / 12 /
+   16 px radii, one soft shadow. */
+@theme {
+  /* brand: steel blue (measured literals, not stock tailwind blue) */
+  --color-primary-50: #eff6fb;
+  --color-primary-100: #dbebf6;
+  --color-primary-200: #b4d5ec;
+  --color-primary-300: #83b8dd;
+  --color-primary-400: #4a95c8;
+  --color-primary-500: #2a7cb4;
+  --color-primary-600: #1e6fa8; /* brand */
+  --color-primary-700: #185887;
+  --color-primary-900: #113954;
+
+  /* neutral: cool navy-grey, not tailwind gray */
+  --color-ink-50: #f4f8fb;
+  --color-ink-100: #e5eef4;
+  --color-ink-200: #c8dae6;
+  --color-ink-300: #9bb6c9;
+  --color-ink-400: #5f7f96;
+  --color-ink-500: #3d5e76;
+  --color-ink-600: #26485e;
+  --color-ink-700: #1a3a4e;
+  --color-ink-800: #14324a;
+  --color-ink-900: #0e2434;
+
+  /* the single warm accent: ember */
+  --color-heat-50: #fef2f0;
+  --color-heat-300: #f6a899;
+  --color-heat-400: #f0705a;
+  --color-heat-500: #e55940;
+  --color-heat-600: #ce4630;
+  --color-heat-700: #a93727;
+  --color-heat-900: #4a2a20;
+
+  /* the finance band's ground (measured #e3f2fa, warmer than stock sky-100) */
+  --color-sky-100: #e3f2fa;
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #2a7cb4;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+}
