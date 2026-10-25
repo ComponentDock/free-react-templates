@@ -58,48 +58,48 @@
 
 ## Build tasks (order)
 
-- [ ] Scaffold `apps/modeline` from the simplest existing app; package name,
+- [x] Scaffold `apps/modeline` from the simplest existing app; package name,
       `homepage`, `public/CNAME` = `modeline.free.componentdock.com`;
       `vite.config.ts` keeps `injectUiSource()`.
-- [ ] `src/index.css` — `@theme` palette (`--color-ink: #081624`,
+- [x] `src/index.css` — `@theme` palette (`--color-ink: #081624`,
       `--color-popup: #161024`, `--color-body: #60656b`,
       `--color-steel: #8d9eaf`, `--color-surface: #fff`,
       `--color-line: #efefef`), Jost via one Google Fonts `<link>`, and the
       halftone utility (`.halftone` = `radial-gradient(circle,
       rgba(29,29,27,.17) 1.2px, transparent 1.4px)` `background-size: 24px
       24px`).
-- [ ] `Navbar.tsx` + `MobileMenu` state (hamburger `aria-expanded`, white
+- [x] `Navbar.tsx` + `MobileMenu` state (hamburger `aria-expanded`, white
       drawer, `Escape`), search square, wordmark = crest glyph + MODELINE.
-- [ ] `SearchOverlay.tsx` (focus trap, clear on close, `aria-label`).
-- [ ] `Preloader.tsx` (derive from `document.readyState === 'complete'` rather
+- [x] `SearchOverlay.tsx` (focus trap, clear on close, `aria-label`).
+- [x] `Preloader.tsx` (derive from `document.readyState === 'complete'` rather
       than setState from an effect — oxlint `react(set-state-in-effect)` is an
       error here).
-- [ ] `Hero.tsx` — two slides, halftone panel, single `h1` at 160px, two CTAs,
+- [x] `Hero.tsx` — two slides, halftone panel, single `h1` at 160px, two CTAs,
       social rail, rotated brand line, 84×84 controls; autoplay pauses on
       hover/focus and under reduced motion; `IntersectionObserver` NOT needed
       (no reveal animation on this design).
-- [ ] `Quote.tsx` (paraphrased aphorism + attribution).
-- [ ] `Portfolio.tsx` — CSS grid 5×3 with the measured map: `gap` 0, the
+- [x] `Quote.tsx` (paraphrased aphorism + attribution).
+- [x] `Portfolio.tsx` — CSS grid 5×3 with the measured map: `gap` 0, the
       empty tile rendering the halftone, the 2×2 tile via `grid-column/row:
       span 2`, `aspect-ratio: 1` on every tile (never measure with JS),
       overlay `#161024` at 80%→100% with focus parity.
-- [ ] `AboutStatement.tsx` — text column + absolutely positioned portrait
+- [x] `AboutStatement.tsx` — text column + absolutely positioned portrait
       (`right: -63px`) inside `overflow-hidden`, signature placeholder.
-- [ ] `AboutSplit.tsx` — flush-left photo + inset text column
+- [x] `AboutSplit.tsx` — flush-left photo + inset text column
       (`padding-left: 171px`, `max-width: 655px`), offset halftone panel.
-- [ ] `Shop.tsx` — four distinct products, inline `aria-live` add-to-cart
+- [x] `Shop.tsx` — four distinct products, inline `aria-live` add-to-cart
       confirmation, no network.
-- [ ] `Newsletter.tsx` — client-side validation, `aria-invalid` + inline
+- [x] `Newsletter.tsx` — client-side validation, `aria-invalid` + inline
       error, `aria-live` success, no UA inset border (deliberate focus ring).
-- [ ] `Footer.tsx` — wordmark, faded copyright with a rendered year, contact
+- [x] `Footer.tsx` — wordmark, faded copyright with a rendered year, contact
       list, `id="contact"`, **Component Dock** link to
       https://www.componentdock.com/.
-- [ ] Tests before implementation per component (mirror the spec's Gherkin
+- [x] Tests before implementation per component (mirror the spec's Gherkin
       scenarios one-to-one); `npm install` at the repo root so the lockfile
       registers the workspace.
-- [ ] Re-open rows **1028 / 1583 / 1712** `[x]` → `[ ]` on the branch; after
+- [x] Re-open rows **1028 / 1583 / 1712** `[x]` → `[ ]` on the branch; after
       merge mark them `[x]` with the surge URL and run `npm run readme:status`.
-- [ ] `scripts/verify-app.sh modeline` green; desktop + mobile compared
+- [x] `scripts/verify-app.sh modeline` green; desktop + mobile compared
       band-by-band against the reference; PR lists the deltas
       (`docs/templates/modeline/design-notes.md` §Deltas).
 

@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+/* Modeline palette — measured from the reference stylesheet and its computed
+   styles: brand navy #081624 (the single most-used value: header bar, every
+   button fill, every heading, the hero headline, the social circles, the shop
+   control, the newsletter band, the quote text and the contact labels), the
+   popup navy #161024 that the reference paints on its hover overlays, body copy
+   #60656b, the muted steel #8d9eaf reserved for role labels, white surfaces and
+   the #efefef drawer rules. Type: Jost (300/400/700 + 400 italic) — the
+   geometric stand-in for the reference's proprietary grotesque. Shape language:
+   square everywhere (radius 0); the only circles are the hero social rail and
+   the search close disc. */
+@theme {
+  --color-ink: #081624;
+  --color-popup: #161024;
+  --color-body: #60656b;
+  --color-steel: #8d9eaf;
+  --color-surface: #ffffff;
+  --color-line: #efefef;
+
+  /* Loaded from Google Fonts in index.html — no bundled font files. */
+  --font-sans: 'Jost', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #60656b;
+    font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #081624;
+    font-family: 'Jost', ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  p {
+    color: #60656b;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  ::selection {
+    background: #081624;
+    color: #ffffff;
+  }
+  :focus-visible {
+    outline: 2px solid #161024;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* The reference hides its decoration in three PNGs; this reproduces the same
+     screen: a 24px dot grid, ~2px dots, 17% charcoal. No image is copied. */
+  .halftone {
+    background-image: radial-gradient(circle, rgba(29, 29, 27, 0.17) 1.2px, transparent 1.4px);
+    background-size: 24px 24px;
+  }
+
+  /* 186x66 navy / white call to action with square corners. */
+  .site-btn {
+    display: inline-block;
+    min-width: 186px;
+    padding: 23px 20px;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: background-color 0.3s ease;
+  }
+}
