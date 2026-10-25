@@ -30,101 +30,102 @@ PY
 
 ## What it measures (2026-10-24, `main` `a0142cb89`)
 
-| | count |
-| --- | ---: |
-| catalogue pages crawled | 40 |
-| distinct `wp/template/<slug>/` links on the listing | 1,874 |
-| distinct slugs cited by `TEMPLATES.md` (2,857 rows) | 1,631 |
-| **on the listing, absent from `TEMPLATES.md`** | **256** |
-| — of those, standalone designs | 42 |
-| — of those, snippet variants (19 families) | 214 |
-| cited by `TEMPLATES.md`, absent from the listing | 13 |
+|                                                     |   count |
+| --------------------------------------------------- | ------: |
+| catalogue pages crawled                             |      40 |
+| distinct `wp/template/<slug>/` links on the listing |   1,874 |
+| distinct slugs cited by `TEMPLATES.md` (2,857 rows) |   1,631 |
+| **on the listing, absent from `TEMPLATES.md`**      | **256** |
+| — of those, standalone designs                      |      42 |
+| — of those, snippet variants (19 families)          |     214 |
+| cited by `TEMPLATES.md`, absent from the listing    |      13 |
 
 All 35 standalone previews that were probed answer **HTTP 200** (6.5 s for 35 `curl -4` calls), so
 none of them is a dead catalogue entry.
 
 ### The 42 standalone designs (no `-NN` suffix)
 
-Status column: whether the slug's *name* is already in use for something else. A slug that is
+Status column: whether the slug's _name_ is already in use for something else. A slug that is
 "app exists (other design)" is still unbuilt — that app recreates a different ColorLib design, so the
 prep needs a different invented name.
 
-| source slug | status |
-| --- | --- |
-| `airwise` | **shipped** as Thermly — `apps/thermly` |
-| `backstop` | preview 200, 74502 B |
-| `cairn` | app exists (other design); orphan prep (other design) |
-| `circles` | preview 200, 92289 B |
-| `coldsnap` | preview 200, 74998 B |
-| `commons` | preview 200, 84310 B |
-| `curbline` | preview 200, 75675 B |
-| `dowser` | preview 200, 70377 B |
-| `everhot` | **shipped** as Kettle — `apps/kettle` |
-| `fernhill` | preview 200, 75015 B |
-| `fieldline` | preview 200, 70376 B |
-| `fieldnotes-student` | preview 200, 7216 B |
-| `fixtura` | **shipped** as Brassworks — `apps/brassworks` |
-| `flowpage` | preview 200, 45731 B |
-| `groundwork` | app exists (other design); orphan prep (other design) |
-| `halfpast` | preview 200, 105852 B |
-| `heatline` | preview 200, 64887 B |
-| `journeyman` | preview 200, 53087 B |
-| `kinetic` | app exists (other design); orphan prep (other design) |
-| `lantern` | app exists (other design); orphan prep (other design) |
-| `mainline` | preview 200, 69579 B |
-| `marrow` | preview 200, 85785 B |
-| `metroflow` | preview 200, 52720 B |
-| `nightshift` | preview 200, 84493 B |
-| `nodig` | preview 200, 79808 B |
-| `onyx` | orphan prep (other design) |
-| `ostend` | preview 200, 69797 B |
-| `overprint` | preview 200, 68551 B |
-| `perimeter` | preview 200, 89710 B |
-| `relay-auth` | preview 200, 4052 B |
-| `ridgeline` | preview 200, 92808 B |
-| `rightsize` | preview 200, 77779 B |
-| `rooter24` | preview 200, 53195 B |
-| `springwell` | preview 200, 74202 B |
-| `steelworks` | preview 200, 57659 B |
-| `switchover` | preview 200, 72073 B |
-| `threadline` | app exists (other design); orphan prep (other design) |
-| `toolbelt` | preview 200, 66621 B |
-| `trace-developer` | preview 200, 7638 B |
-| `upright` | preview 200, 75500 B |
-| `voltway` | preview 200, 71946 B |
-| `zephyr` | orphan prep (other design) |
+| source slug          | status                                                |
+| -------------------- | ----------------------------------------------------- |
+| `airwise`            | **shipped** as Thermly — `apps/thermly`               |
+| `backstop`           | preview 200, 74502 B                                  |
+| `cairn`              | app exists (other design); orphan prep (other design) |
+| `circles`            | **shipped** as Closeknit — `apps/closeknit`           |
+| `coldsnap`           | preview 200, 74998 B                                  |
+| `commons`            | preview 200, 84310 B                                  |
+| `curbline`           | preview 200, 75675 B                                  |
+| `dowser`             | preview 200, 70377 B                                  |
+| `everhot`            | **shipped** as Kettle — `apps/kettle`                 |
+| `fernhill`           | preview 200, 75015 B                                  |
+| `fieldline`          | preview 200, 70376 B                                  |
+| `fieldnotes-student` | preview 200, 7216 B                                   |
+| `fixtura`            | **shipped** as Brassworks — `apps/brassworks`         |
+| `flowpage`           | preview 200, 45731 B                                  |
+| `groundwork`         | app exists (other design); orphan prep (other design) |
+| `halfpast`           | preview 200, 105852 B                                 |
+| `heatline`           | preview 200, 64887 B                                  |
+| `journeyman`         | preview 200, 53087 B                                  |
+| `kinetic`            | app exists (other design); orphan prep (other design) |
+| `lantern`            | app exists (other design); orphan prep (other design) |
+| `mainline`           | preview 200, 69579 B                                  |
+| `marrow`             | preview 200, 85785 B                                  |
+| `metroflow`          | preview 200, 52720 B                                  |
+| `nightshift`         | preview 200, 84493 B                                  |
+| `nodig`              | preview 200, 79808 B                                  |
+| `onyx`               | orphan prep (other design)                            |
+| `ostend`             | preview 200, 69797 B                                  |
+| `overprint`          | preview 200, 68551 B                                  |
+| `perimeter`          | preview 200, 89710 B                                  |
+| `relay-auth`         | preview 200, 4052 B                                   |
+| `ridgeline`          | preview 200, 92808 B                                  |
+| `rightsize`          | preview 200, 77779 B                                  |
+| `rooter24`           | preview 200, 53195 B                                  |
+| `springwell`         | preview 200, 74202 B                                  |
+| `steelworks`         | preview 200, 57659 B                                  |
+| `switchover`         | preview 200, 72073 B                                  |
+| `threadline`         | app exists (other design); orphan prep (other design) |
+| `toolbelt`           | preview 200, 66621 B                                  |
+| `trace-developer`    | preview 200, 7638 B                                   |
+| `upright`            | preview 200, 75500 B                                  |
+| `voltway`            | preview 200, 71946 B                                  |
+| `zephyr`             | orphan prep (other design)                            |
 
 `airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
-own row under `## Business`; `backstop` (prepped as **Flowcert**) and `circles` (prepped as
-**Closeknit**) are prepped and still unbuilt, so the other 39 of the 42 remain open.
+own row under `## Business`, `circles` as **Closeknit** (`apps/closeknit`, row added under
+`## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt, so the
+other 38 of the 42 remain open.
 
 ### The 214 snippet variants, by family
 
 `card` runs to 20; the other eighteen families stop at 12 or 10.
 
-| family | variants |
-| --- | ---: |
-| `card-01…20` | 20 |
-| `alert-01…12` | 12 |
-| `hero-01…12` | 12 |
-| `pricing-table-01…12` | 12 |
-| `progress-bar-01…12` | 12 |
-| `shopping-cart-01…12` | 12 |
-| `tabs-01…12` | 12 |
-| `toast-01…12` | 12 |
-| `appointment-form-01…10` | 10 |
-| `breadcrumb-01…10` | 10 |
-| `coming-soon-page-01…10` | 10 |
-| `error-page-01…10` | 10 |
-| `job-application-form-01…10` | 10 |
-| `login-page-01…10` | 10 |
-| `newsletter-form-01…10` | 10 |
-| `offcanvas-01…10` | 10 |
-| `pagination-01…10` | 10 |
-| `registration-page-01…10` | 10 |
-| `survey-form-01…10` | 10 |
+| family                       | variants |
+| ---------------------------- | -------: |
+| `card-01…20`                 |       20 |
+| `alert-01…12`                |       12 |
+| `hero-01…12`                 |       12 |
+| `pricing-table-01…12`        |       12 |
+| `progress-bar-01…12`         |       12 |
+| `shopping-cart-01…12`        |       12 |
+| `tabs-01…12`                 |       12 |
+| `toast-01…12`                |       12 |
+| `appointment-form-01…10`     |       10 |
+| `breadcrumb-01…10`           |       10 |
+| `coming-soon-page-01…10`     |       10 |
+| `error-page-01…10`           |       10 |
+| `job-application-form-01…10` |       10 |
+| `login-page-01…10`           |       10 |
+| `newsletter-form-01…10`      |       10 |
+| `offcanvas-01…10`            |       10 |
+| `pagination-01…10`           |       10 |
+| `registration-page-01…10`    |       10 |
+| `survey-form-01…10`          |       10 |
 
-These are the same *kind* of item the repo has shipped before — `bootstrap-buttons-*`,
+These are the same _kind_ of item the repo has shipped before — `bootstrap-buttons-*`,
 `bootstrap-footer-*`, `accordion-*`, `colorlib-regform-*` are all snippet designs already in
 `TEMPLATES.md`. So 214 of the 256 are not a new category of work, only unlisted instances of an old
 one.
@@ -144,7 +145,7 @@ Every prep-stream audit so far reads the repo against **itself**: `verify-proven
 (spec ↔ `TEMPLATES.md`), `verify-spec-row-mismatch.py` (spec ↔ row ↔ app), `verify-row-multiplicity.py`
 (row ↔ app), `index-orphans.py` (spec ↔ app), `verify-catalog-collisions.py` (catalogue keys),
 `audit-naming.mjs` (folder ↔ quoted source). A design that was never listed has no row, no spec and no
-app, so it is absent from *both* sides of every one of those comparisons — the whole class of gap is
+app, so it is absent from _both_ sides of every one of those comparisons — the whole class of gap is
 structurally invisible to them. It needs the upstream catalogue as the reference, which is what this
 page records.
 
@@ -160,5 +161,5 @@ batch decision, not a prep-run side effect. Two options:
 2. **Leave the catalogue as the scope** and treat this page as the record of what was deliberately
    not shipped. Nothing is lost — the crawl is reproducible and the designs stay unclaimed.
 
-Either way, a design that *is* prepped needs a row before its implementer can claim it; the Thermly
+Either way, a design that _is_ prepped needs a row before its implementer can claim it; the Thermly
 spec carries the exact line to paste.
