@@ -85,7 +85,7 @@ prep needs a different invented name.
 | `rightsize`          | preview 200, 77779 B                                  |
 | `rooter24`           | preview 200, 53195 B                                  |
 | `springwell`         | preview 200, 74202 B                                  |
-| `steelworks`         | preview 200, 57659 B                                  |
+| `steelworks`         | **shipped** as Mandrel — `apps/mandrel`               |
 | `switchover`         | preview 200, 72073 B                                  |
 | `threadline`         | app exists (other design); orphan prep (other design) |
 | `toolbelt`           | preview 200, 66621 B                                  |
