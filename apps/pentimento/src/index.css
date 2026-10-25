@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design-token note: two ramps carry the page. A warm-grey "primary" stone
+     scale draws every ground, hairline, body colour and filled button; a
+     rosewood "accent" appears in exactly three steps and only ever as a small
+     mark — a tag ground, a status dot, a numeral or a 2 px rule. The greys
+     below are Tailwind's own and are used for the footer and the FAQ only, so
+     they are not re-declared here. */
+  --color-primary-50: #faf9f7;
+  --color-primary-100: #f2f0ec;
+  --color-primary-200: #e4e0d9;
+  --color-primary-300: #cdc7bc;
+  --color-primary-400: #a9a196;
+  --color-primary-500: #847c71;
+  --color-primary-600: #655e55;
+  --color-primary-700: #4a453e;
+  --color-primary-800: #2e2b26;
+  --color-primary-900: #1a1815;
+
+  --color-accent-400: #df7484;
+  --color-accent-600: #a82f47;
+  --color-accent-700: #8a253b;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-2xl: 1rem;
+
+  --animate-hero-float: hero-float 8s ease-in-out infinite;
+  --animate-hero-float-reverse: hero-float 10s ease-in-out infinite reverse;
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(0, -18px, 0) scale(1.04);
+    }
+  }
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #f3f4f6;
+  }
+
+  /* The header is 81 px at lg and 65 px below it; in-page anchors clear both. */
+  section[id],
+  main [id] {
+    scroll-margin-top: 81px;
+  }
+
+  @media (max-width: 1023px) {
+    section[id],
+    main [id] {
+      scroll-margin-top: 65px;
+    }
+  }
+
+  ::selection {
+    background-color: var(--color-accent-600);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-600);
+    outline-offset: 2px;
+  }
+}
+
+/* The h1's second line. Hand-written in the reference and deliberately
+   un-inverted: it is the one element on the page that ignores the theme. */
+.text-gradient {
+  background-image: linear-gradient(to right in oklab, #655e55 0%, #a9a196 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* The typewriter's fade: 300 ms out, swap, 300 ms back in. */
+.typewriter-line {
+  display: inline-block;
+  transition:
+    opacity 300ms ease,
+    transform 300ms ease;
+}
+
+.typewriter-line[data-fading='true'] {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .typewriter-line {
+    transition: none;
+  }
+}
