@@ -79,7 +79,7 @@ prep needs a different invented name.
 | `onyx`               | **shipped** as Patina — `apps/patina`                 |
 | `ostend`             | **shipped** as Pentimento — `apps/pentimento`          |
 | `overprint`          | **shipped** as Makeready — `apps/makeready`           |
-| `perimeter`          | preview 200, 89710 B                                  |
+| `perimeter`          | **shipped** as Sealwise — `apps/sealwise`             |
 | `relay-auth`         | preview 200, 4052 B                                   |
 | `ridgeline`          | preview 200, 92808 B                                  |
 | `rightsize`          | preview 200, 77779 B                                  |
@@ -96,8 +96,9 @@ prep needs a different invented name.
 
 `overprint` is shipped as **Makeready** (`apps/makeready`, https://makeready.free.componentdock.com); `airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
 own row under `## Business`, `circles` as **Closeknit** (`apps/closeknit`, row added under
-`## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt, so the
-other 38 of the 42 remain open.
+`## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt; `perimeter` is shipped as
+**Sealwise** (`apps/sealwise`, https://sealwise.free.componentdock.com), row added under `## Business`.
+So the other 37 of the 42 remain open.
 
 ### The 214 snippet variants, by family
 
