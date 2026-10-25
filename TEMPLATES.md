@@ -877,7 +877,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (371)
+## Business (372)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1023,6 +1023,7 @@
 - [x] **Findstate** — [colorlib](https://colorlib.com/wp/template/findstate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/findstate-free-template.jpg) · [keyhold](https://keyhold.free.componentdock.com)
 - [x] **Finlone** — [colorlib](https://colorlib.com/wp/template/finlone/) · [capitex](https://capitex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finlone-free-template.jpg)
 - [x] **Fitzone 2** — [colorlib](https://colorlib.com/wp/template/fitzone-2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fitzone2-free-template.jpg) · [gains](https://gains.free.componentdock.com)
+- [~] **Fixtura** — [colorlib](https://colorlib.com/wp/template/fixtura/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fixtura-template.jpg) · [brassworks](https://brassworks.free.componentdock.com)
 - [x] **Flatter** — [colorlib](https://colorlib.com/wp/template/flatter/) · [feast](https://feast.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flatter-free-template.jpg)
 - [x] **Florist** — [colorlib](https://colorlib.com/wp/template/florist/) · [petal](https://petal.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/florist-free-template.jpg)
 - [x] **Foundation2** — [colorlib](https://colorlib.com/wp/template/foundation2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foundation2-free-template.jpg) · [consignly](https://consignly.free.componentdock.com)
