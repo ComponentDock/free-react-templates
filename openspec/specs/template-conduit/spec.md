@@ -1238,3 +1238,45 @@ in-page anchors that clear the sticky header.
 - [ ] zero bare `#` anchors; `#service-areas` replaced by `#areas`; every `tel:` well formed; every image and
       SVG has an accessible name; the pipe panel is an inline SVG/CSS composition, not a photo
 - [ ] 100% coverage on the new app, `scripts/verify-app.sh conduit` green
+
+## Recreation decisions (implementation, 2026-10-25)
+
+Built at `apps/conduit` as a single-page app. Where the reference and the contract disagreed, the
+contract won; everything else follows the measurements above.
+
+- **Routes become anchors.** The seven inner routes are not built: the six nav labels, both city
+  pills, the hero CTA and the closing-band buttons all resolve to ids on the page (`#process`,
+  `#compare`, `#services`, `#areas`, `#why-us`, `#contact`, `#quote`). `#service-areas` is gone —
+  both pills point at `#areas` (defect 1).
+- **The survey form is wired.** Submitting with all three answers swaps the form for a confirmation
+  naming the caller and the number we will ring; submitting with a gap shows an inline `role="alert"`
+  and clears it on the next edit. Nothing reloads, and `action` is not reproduced (defect 2). The
+  full form stays mounted under `noValidate` so the app owns every message.
+- **The newsletter is wired.** `Subscribe` stores the address under `localStorage['newsletter']` and
+  replaces the row with a one-line confirmation; a blank submit is ignored (defect 3). Both forms net
+  the app 100 % branch coverage without a test-only seam.
+- **One phone number, one format.** Every `tel:` is `tel:5550700700` and the address block links
+  `mailto:office@conduitrelining.example` (defect 4). The malformed `tel:(555) 070-0700` and the
+  mismatched JSON-LD number are not reproduced.
+- **No dead anchors at all.** The three footer social chips link `#contact` rather than `#`
+  (defect 6), asserted by a test that walks every `a[href]` on the page.
+- **The licence bar wraps.** Facts are `flex-wrap` with whole items hidden below `sm`, so the strip
+  reads as fine print at 390 instead of clipping mid-token (defect 8).
+- **The footer newsletter row wraps.** `flex-wrap` on the input/button row means the track never
+  exceeds its container: measured `scrollWidth === clientWidth` at **320, 390, 768, 1024, 1280,
+  1440 and 1600**, where the reference reports 401 px at 320 and 390 (defect 7).
+- **The panel is drawn, not photographed.** `LinerPanel` is an inline `<svg viewBox="0 0 800 600">`
+  with `role="img"` and the reference's `alt` text: `#161614` ground, `#242420` plate, `#4a4a40`
+  ground bar, `#383830` old pipe, `#b4643b` liner, `#161614` bore, two `#f6f6f4` shafts, a two-item
+  legend and the title in Fraunces 26/700. The two `access point` labels were moved out of the pipe
+  body to sit beside the shafts — the reference draws them on top of the artwork where they are
+  illegible at 576 px wide.
+- **Brand marks are inline SVG.** The icon library no longer ships brand glyphs, so X, Instagram and
+  LinkedIn live in `BrandIcons.tsx` and inherit `currentColor`.
+- **`#process` keeps its 3 + 1 rhythm** (defect 9), the review carousel renders **no dots and no
+  arrows at `lg`** because `maxIndex` is 0 there (11), and `.font-display` is applied to nothing but
+  the artwork (12).
+- **Measured after build (Playwright, 1440 × 900):** document 7,948 px; hero 668, `#emergency` 168,
+  `#compare` 1,404, `#process` 780, `#services` 927, `#why-us` 864, `#areas` 468, `#testimonials`
+  728, `#faq` 820, `#contact` 440 — within 33 px of every reference band, and the four bands that
+  differ are the ones whose copy the recreation shortened.

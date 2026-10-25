@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design-token note: two ramps carry the page. A warm-grey "ink" neutral draws
+     every ground, hairline and heading; a terracotta "primary" draws every CTA,
+     eyebrow and figure. Stock Tailwind greys are used only by the review band,
+     the FAQ and the footer, and that split is deliberate — do not unify it. */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+
+  --color-ink-50: #f6f6f4;
+  --color-ink-100: #ebebe7;
+  --color-ink-200: #d6d6ce;
+  --color-ink-300: #b2b2a6;
+  --color-ink-400: #848475;
+  --color-ink-500: #636356;
+  --color-ink-600: #4a4a40;
+  --color-ink-700: #383830;
+  --color-ink-800: #242420;
+  --color-ink-900: #161614;
+
+  --color-primary-50: #fbf4ef;
+  --color-primary-100: #f5e5d9;
+  --color-primary-200: #e9c8b1;
+  --color-primary-300: #dba582;
+  --color-primary-400: #c97f55;
+  --color-primary-500: #b4643b;
+  --color-primary-600: #974e2c;
+  --color-primary-700: #7b3f26;
+  --color-primary-800: #653624;
+  --color-primary-900: #553021;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+  --shadow-soft-lg: 0 12px 32px -8px rgb(0 0 0 / 0.14);
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #f3f4f6;
+  }
+
+  /* 37 px licence bar + 81 px sticky header — every in-page anchor clears both. */
+  section[id],
+  main [id] {
+    scroll-margin-top: 101px;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-200);
+    color: var(--color-ink-900);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
