@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design-token note: two ramps carry the page. A warm-grey "ink" neutral draws
+     every ground, hairline and heading body; a brass "primary" draws every
+     eyebrow, numeral, star and outline. The page is dark only — there is no
+     light half to keep in sync, so no value below is overridden by a variant. */
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+
+  --color-ink-50: #ede9e0;
+  --color-ink-100: #d7d2c6;
+  --color-ink-200: #ada69a;
+  --color-ink-300: #7e786e;
+  --color-ink-400: #565149;
+  --color-ink-500: #3a3631;
+  --color-ink-600: #26231f;
+  --color-ink-700: #161616;
+  --color-ink-800: #101010;
+  --color-ink-900: #0b0b0b;
+
+  --color-primary-50: #fbf7ea;
+  --color-primary-100: #f5edd0;
+  --color-primary-200: #eadca2;
+  --color-primary-300: #dcc66d;
+  --color-primary-400: #cfb143;
+  --color-primary-500: #c9a227;
+  --color-primary-600: #ac8a1f;
+  --color-primary-700: #8a6e19;
+  --color-primary-800: #6b5514;
+  --color-primary-900: #54430f;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+  --shadow-soft-lg: 0 12px 32px -8px rgb(0 0 0 / 0.14);
+  --radius-lg: 0.5rem;
+  --radius-2xl: 1rem;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0b0b0b;
+    color: #ede9e0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* The header is 97 px at lg and 81 px below it; in-page anchors clear both. */
+  section[id],
+  main [id] {
+    scroll-margin-top: 97px;
+  }
+
+  ::selection {
+    background-color: var(--color-primary-500);
+    color: var(--color-ink-900);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
