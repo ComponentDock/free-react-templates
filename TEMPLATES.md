@@ -1213,7 +1213,7 @@
 - [x] **Suitcase** — [colorlib](https://colorlib.com/wp/template/suitcase/) · [packr](https://packr.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suitcase-free-template.jpg)
 - [x] **Summit** — [colorlib](https://colorlib.com/wp/template/summit/) · [summit](https://summit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/summit-free-template.jpg)
 - [x] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg) · [stamp](https://stamp.free.componentdock.com)
-- [~] **Switchover** — [colorlib](https://colorlib.com/wp/template/switchover/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/switchover-template.jpg)
+- [x] **Switchover** — [colorlib](https://colorlib.com/wp/template/switchover/) · [balancepoint](https://balancepoint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/switchover-template.jpg)
 - [x] **Tailor** — [colorlib](https://colorlib.com/wp/template/tailor/) · [stitchly](https://stitchly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tailor-free-template.jpg)
 - [x] **Tangre** — [colorlib](https://colorlib.com/wp/template/tangre/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tangre-free-template.jpg) · [wainscot](https://wainscot.free.componentdock.com)
 - [x] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg) · [inkvibe](https://inkvibe.free.componentdock.com)
