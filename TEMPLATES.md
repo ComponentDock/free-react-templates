@@ -1133,6 +1133,7 @@
 - [x] **Oneder** — [colorlib](https://colorlib.com/wp/template/oneder/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oneder-free-template.jpg) · [Unison](https://unison.free.componentdock.com)
 - [x] **Onepro** — [colorlib](https://colorlib.com/wp/template/onepro/) · [zenflow](https://zenflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onepro-free-template.jpg)
 - [x] **Onetech** — [colorlib](https://colorlib.com/wp/template/onetech/) · [techvault](https://techvault.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onetech-free-template.jpg)
+- [~] **Onyx** — [colorlib](https://colorlib.com/wp/template/onyx/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/onyx-template.jpg) · [patina](https://patina.free.componentdock.com)
 - [x] **Oraxol** — [colorlib](https://colorlib.com/wp/template/oraxol/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/oraxol-free-template.jpg) · [obsidian](https://obsidian.free.componentdock.com)
 - [x] **Ozberk** — [colorlib](https://colorlib.com/wp/template/ozberk/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ozberk-free-fullscreen-business-website-template.jpg) · [pyxis](https://pyxis.free.componentdock.com)
 - [x] **Pacific** — [colorlib](https://colorlib.com/wp/template/pacific/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pacific-free-template.jpg) · [tidal](https://tidal.free.componentdock.com)
