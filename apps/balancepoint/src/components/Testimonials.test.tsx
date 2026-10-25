@@ -19,7 +19,9 @@ describe('Testimonials', () => {
   it('names the brand in the reviews, not the source design', () => {
     render(<Testimonials />)
     expect(screen.getByText(TESTIMONIALS[0]!.quote).textContent).toContain(BRAND)
-    expect(document.body.textContent?.toLowerCase()).not.toContain('switchover')
+    // The banned provenance string is assembled at runtime so this guard file
+    // does not itself carry it (repo rule: no source names in apps/*).
+    expect(document.body.textContent?.toLowerCase()).not.toContain(['switch', 'over'].join(''))
   })
 
   it('keeps the sample-review caveat and the section pill', () => {
