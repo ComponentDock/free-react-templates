@@ -1,0 +1,120 @@
+@import 'tailwindcss';
+
+/* Design-token note: two hand-picked ramps carry the page. "primary" is the
+   plum family — every solid button, the closing band, the calendar's pressed
+   day and the utilisation fill. "accent" is the sage family — kicker pills,
+   the live dot, the scarce-slot tint, the held chips and the settings values.
+   The ramp stops at accent-500 as the brand weight and jumps to 700: there is
+   no accent-600, and inventing one would lighten every sage surface. Chrome
+   greys (gray-50 … gray-900) are Tailwind's own, measured as such. Two faces:
+   Inter for interface and body, Fraunces for the hero and the left-aligned
+   band headings. */
+@theme {
+  --color-primary-50: #faf6fa;
+  --color-primary-100: #f4ecf3;
+  --color-primary-200: #e9dae8;
+  --color-primary-300: #d5bcd3;
+  --color-primary-400: #b894b5;
+  --color-primary-500: #9a7096;
+  --color-primary-600: #7e587a;
+  --color-primary-700: #684a64;
+  --color-primary-800: #563f53;
+  --color-primary-900: #493748;
+
+  --color-accent-50: #f4f7f1;
+  --color-accent-100: #e5ecdf;
+  --color-accent-200: #cddac2;
+  --color-accent-300: #abc09b;
+  --color-accent-400: #86a273;
+  --color-accent-500: #688554;
+  --color-accent-700: #3f5335;
+  --color-accent-800: #35442d;
+  --color-accent-900: #2e3a28;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: Fraunces, Georgia, serif;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+  --shadow-soft-lg: 0 12px 32px -8px #00000024;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 104px;
+  }
+
+  body {
+    background-color: #fff;
+    color: var(--color-gray-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-700);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+@layer components {
+  /* The headline's second line: plum to pale plum, clipped to the glyphs. */
+  .text-gradient {
+    background-image: linear-gradient(to right, #7e587a, #b894b5);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .nav-active {
+    color: var(--color-gray-900);
+    font-weight: 600;
+  }
+
+  /* Two blurred shapes behind the hero, drifting on opposite clocks. */
+  .animate-hero-float {
+    animation: hero-float 8s ease-in-out infinite;
+  }
+
+  .animate-hero-float-reverse {
+    animation: hero-float 10s ease-in-out infinite reverse;
+  }
+
+  /* A lazily loaded photo holds its frame until the bytes land. */
+  .img-shimmer {
+    background: linear-gradient(100deg, #f3f4f6 20%, #e5e7eb 40%, #f3f4f6 60%);
+    background-size: 200% 100%;
+    animation: img-shimmer 1.4s linear infinite;
+  }
+}
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translate(0) scale(1);
+  }
+  50% {
+    transform: translate(0, -24px) scale(1.04);
+  }
+}
+
+@keyframes img-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
