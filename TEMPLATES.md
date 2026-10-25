@@ -877,7 +877,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (366)
+## Business (368)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -971,6 +971,7 @@
 - [x] **Cryptian** — [colorlib](https://colorlib.com/wp/template/cryptian/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptian-free-template.jpg) · [coinforge](https://coinforge.free.componentdock.com)
 - [x] **Crypto Currency** — [colorlib](https://colorlib.com/wp/template/crypto-currency/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptocurrency-free-template.jpg) · [coinly](https://coinly.free.componentdock.com)
 - [x] **Cryptos** — [colorlib](https://colorlib.com/wp/template/cryptos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cryptos-free-template.jpg) · [ledgerly](https://ledgerly.free.componentdock.com)
+- [~] **Curbline** — [colorlib](https://colorlib.com/wp/template/curbline/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/curbline-template.jpg) · [plantroom](https://plantroom.free.componentdock.com)
 - [x] **Datarc** — [colorlib](https://colorlib.com/wp/template/datarc/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/datarc-digital-agency-free-website-template.jpg) · [bytecraft](https://bytecraft.free.componentdock.com)
 - [x] **Dealers** — [colorlib](https://colorlib.com/wp/template/dealers/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dealers-free-template.jpg) · [draped](https://draped.free.componentdock.com)
 - [x] **Dentista** — [colorlib](https://colorlib.com/wp/template/dentista/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dentista-free-template.jpg) · [enamel](https://enamel.free.componentdock.com)

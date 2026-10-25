@@ -1,5 +1,19 @@
 # Plantroom — Tasks
 
+> **Shipped.** `apps/plantroom` recreated the design and passed the per-app gate:
+> `npm run typecheck`, `oxlint`, 87 tests at 100 % lines / branches / functions / statements, and a
+> production build. Live render re-verified in Chromium at 320 / 390 / 640 / 900 / 1100 / 1280 / 1440 /
+> 1600 px: no horizontal overflow at any width, `h1` 60 px / 66 px / −1.5 px, hero `rgb(245,246,247)`,
+> `#response` `rgb(19,23,26)` at 112 px, featured tier border `rgb(71,156,240)` on `white/7 %`, SLA
+> JetBrains Mono 30 px `rgb(123,188,251)`, hairline grid ground `rgb(233,235,237)` with 32 px white
+> cells, closing band `rgb(23,80,144)`, header 81 px at `lg`, nav only from 1280 px, carousel dots
+> 3 / 2 / 0 at 390 / 900 / ≥1024 and the arrows clamped inside the card edge below `sm`.
+>
+> Two implementation notes beyond the spec: the legal-bar `Privacy Policy` / `Terms of Service` labels
+> and the Support column's `Privacy` / `Terms` render as **plain text**, because a single-page build has
+> no route to point them at and a `href="#"` anchor would contradict Requirement 15; and the footer
+> newsletter stacks the field above a full-width button below `sm` so the row cannot overflow at 320 px.
+
 Recreation of ColorLib **"Curbline"** (https://colorlib.com/wp/template/curbline/) as a React 19 +
 Vite + Tailwind 4 + TypeScript app under the name **Plantroom** (`apps/plantroom`).
 
@@ -62,91 +76,91 @@ Vite + Tailwind 4 + TypeScript app under the name **Plantroom** (`apps/plantroom
 
 ## Scaffold
 
-- [ ] Copy the single-app scaffold (`package.json`, `vite.config.ts` with `injectUiSource()`,
+- [x] Copy the single-app scaffold (`package.json`, `vite.config.ts` with `injectUiSource()`,
       `vitest.config.ts`, `tsconfig.json`, `index.html`, `src/main.tsx`, `src/test/setup.ts`,
       `public/CNAME`)
-- [ ] `npm install` at the repo root so `package-lock.json` registers the workspace
-- [ ] `homepage` = `https://plantroom.free.componentdock.com`, `public/CNAME` = same host
-- [ ] `index.html`: `<title>Plantroom — commercial mechanical, with response tiers in the agreement</title>`,
+- [x] `npm install` at the repo root so `package-lock.json` registers the workspace
+- [x] `homepage` = `https://plantroom.free.componentdock.com`, `public/CNAME` = same host
+- [x] `index.html`: `<title>Plantroom — commercial mechanical, with response tiers in the agreement</title>`,
       meta description, OG tags (no dangling `og-image.jpg` — generate one or omit the tag), the two
       Google Fonts `<link>`s, inline SVG favicon
-- [ ] `src/index.css`: the `@theme` block from `design-notes.md` (blue `primary` 50–900, `ink` 50–900,
+- [x] `src/index.css`: the `@theme` block from `design-notes.md` (blue `primary` 50–900, `ink` 50–900,
       `--color-amber-panel`, `--font-sans`, `--font-mono`, `--shadow-soft`), `.section`, `.btn`,
       `.btn-primary`, `.nav-active`
-- [ ] Draw the wordmark inline (dark rounded square + blue bar + two pale dots, `Plantroom` / `MECHANICAL`)
+- [x] Draw the wordmark inline (dark rounded square + blue bar + two pale dots, `Plantroom` / `MECHANICAL`)
       — do not copy `logo.svg`
 
 ## Sections (tests first, reference order)
 
-- [ ] Chrome: skip link → `#main-content`, 2 px scroll-progress bar, back-to-top disc past 300 px
+- [x] Chrome: skip link → `#main-content`, 2 px scroll-progress bar, back-to-top disc past 300 px
       (48 px, `primary-600`, `shadow-primary-600/25`), **no preloader overlay**, cookie strip as
       `role="dialog"` dismissed into state
-- [ ] Licence strip: 36 px, `bg-ink-800`, licence + insurance + county + `4.8`/`70+ (sample)` rating,
+- [x] Licence strip: 36 px, `bg-ink-800`, licence + insurance + county + `4.8`/`70+ (sample)` rating,
       the two middle facts hidden below `sm`, no wrap
-- [ ] Header: sticky `white/90` + `backdrop-blur-lg`, `border-b ink-100`, 64/80 px, **six** links from
+- [x] Header: sticky `white/90` + `backdrop-blur-lg`, `border-b ink-100`, 64/80 px, **six** links from
       **`xl`** (1280 px), location pill only at `2xl`, phone pill from `md`, CTA from `xl`, hamburger
       below `xl` with `aria-expanded` + glyph swap, `shadow-lg` past 50 px, scroll-spy `.nav-active`
       on `response`
-- [ ] Hero: `bg-ink-50`, `py-14 lg:py-20`, `lg:grid-cols-12` 7/5; eyebrow; `h1` 36→48→60 px with the
+- [x] Hero: `bg-ink-50`, `py-14 lg:py-20`, `lg:grid-cols-12` 7/5; eyebrow; `h1` 36→48→60 px with the
       second sentence in `text-primary-600`; 18 px `text-ink-500` lede; five `amber-400` stars + `4.8` +
       sample disclosure; `sm:grid-cols-2` checklist with four `primary-600` ticks; **no image, no
       gradient, no blobs**
-- [ ] Survey card `#quote`: `rounded-2xl border-ink-100 bg-white p-6 lg:p-8 shadow-md`, `h2`, three
+- [x] Survey card `#quote`: `rounded-2xl border-ink-100 bg-white p-6 lg:p-8 shadow-md`, `h2`, three
       fields (name / e-mail / 7-option select), full-width CTA, `No obligation…` footnote
-- [ ] Forms: local required + e-mail validation, inline errors (`aria-invalid` + `aria-describedby`),
+- [x] Forms: local required + e-mail validation, inline errors (`aria-invalid` + `aria-describedby`),
       reset + green toast on success, **no navigation, no network**
-- [ ] Response band: `#13171a` + `.section`, left-aligned `max-w-2xl` head; three cards, card 1 with
+- [x] Response band: `#13171a` + `.section`, left-aligned `max-w-2xl` head; three cards, card 1 with
       `border-primary-400 bg-white/[0.07]`; mono 30 px SLA in `#7bbcfb`; `dt/dd` `What qualifies` /
       `If we miss it` over `border-t border-white/10`; sample-data footnote + `.btn-primary` CTA
-- [ ] Agreement grid: six cells in order, `gap-px` over `bg-ink-100`, `rounded-2xl overflow-hidden`,
+- [x] Agreement grid: six cells in order, `gap-px` over `bg-ink-100`, `rounded-2xl overflow-hidden`,
       badges `In the monthly fee` ×5 + `Quoted per job`, sample footnote
-- [ ] Why-us: `bg-ink-50`, `lg:grid-cols-2`, figure **left** at `lg` and below the text on a phone,
+- [x] Why-us: `bg-ink-50`, `lg:grid-cols-2`, figure **left** at `lg` and below the text on a phone,
       redrawn asset-register SVG (5 rows, `Replace` in `#f6bb63`, call-out box), caption, four
       `border-l-2 border-primary-600 pl-5` definitions under a *"Three things"* heading (keep both)
-- [ ] Sectors grid: same component, six cells, badges `Priority one by default` ×3 (restaurants, data
+- [x] Sectors grid: same component, six cells, badges `Priority one by default` ×3 (restaurants, data
       rooms, **medical last**), `Priority two, upgradeable` ×2, `Quoted per site` ×1, sample footnote
-- [ ] Areas: `lg:grid-cols-12` 5/7, 12 towns in order in `grid-cols-2 sm:grid-cols-3` hairline rows,
+- [x] Areas: `lg:grid-cols-12` 5/7, 12 towns in order in `grid-cols-2 sm:grid-cols-3` hairline rows,
       replace-me footnote
-- [ ] Testimonials: `gray-50`, pill eyebrow, 3 cards (`rounded-2xl bg-white p-8 shadow-soft`, five
+- [x] Testimonials: `gray-50`, pill eyebrow, 3 cards (`rounded-2xl bg-white p-8 shadow-soft`, five
       `primary-400` stars, `text-lg font-medium` quote, 48 px `primary-100` initial disc);
       **static 3-up with no dots and no arrows at ≥1024 px**, 2-up at 640–1023 with dots + arrows,
       1-up below; 5 s autoplay paused on hover, off under reduced motion; arrows clamped inside the
       viewport below `sm`
-- [ ] FAQ: white, five rows in order, **exclusive**, `aria-expanded`/`aria-controls`, 32 px
+- [x] FAQ: white, five rows in order, **exclusive**, `aria-expanded`/`aria-controls`, 32 px
       `bg-gray-100` disc rotating 45°, panel starting at `max-height: 0; opacity: 0`
-- [ ] Closing band: flat `bg-primary-700` (no gradient, no dots, no blobs), `h2` 30→36 px white,
+- [x] Closing band: flat `bg-primary-700` (no gradient, no dots, no blobs), `h2` 30→36 px white,
       `text-primary-100` lede, white solid CTA (`text-primary-700`) + `border-2 border-white/40` ghost
       with a phone glyph
-- [ ] Footer: `gray-900`, brand block (light wordmark, blurb, three `rounded-lg bg-gray-800 p-2.5`
+- [x] Footer: `gray-900`, brand block (light wordmark, blurb, three `rounded-lg bg-gray-800 p-2.5`
       social tiles with real hrefs, address / phone / `service@plantroom.example`), `Services` (four
       plant labels), `Company`, `Support`, `Stay Updated` newsletter (validated, confirmation without
       navigation), legal bar with **`Component Dock` → https://www.componentdock.com/**
-- [ ] Navigation mapping: six nav labels → `response`, `agreement`, `sectors`, `areas`, `why-us`,
+- [x] Navigation mapping: six nav labels → `response`, `agreement`, `sectors`, `areas`, `why-us`,
       `contact`; location pill → `areas` (**repairs the reference's broken `#service-areas`**); every
       CTA → the survey card; in-page links offset by `header.offsetHeight + 20`
 
 ## Polish and gates
 
-- [ ] Contrast pass: `text-white/70` body on `#13171a` and white on `#175090` verified ≥ 4.5:1;
+- [x] Contrast pass: `text-white/70` body on `#13171a` and white on `#175090` verified ≥ 4.5:1;
       `text-white/40` micro-labels lifted to `/60` where they carry the only instance of a fact;
       `ink-500` on `ink-50` verified
-- [ ] Reduced-motion pass: reveal skipped, carousel autoplay off, smooth scroll still functional —
+- [x] Reduced-motion pass: reveal skipped, carousel autoplay off, smooth scroll still functional —
       no information is carried by motion on this page
-- [ ] Keyboard pass: skip link, mobile disclosure, carousel arrows + dots, both forms, all five FAQ
+- [x] Keyboard pass: skip link, mobile disclosure, carousel arrows + dots, both forms, all five FAQ
       rows, back-to-top
-- [ ] Numeric pass: every visible figure matches the reference (`4.8`, `70+`, `2 hours`,
+- [x] Numeric pass: every visible figure matches the reference (`4.8`, `70+`, `2 hours`,
       `Next working day`, `On the agreed date`, `$5M`, `TX TACLA #00000C`, 3 tiers, 6 + 6 grid cells,
       4 commitments, 12 towns, 3 testimonials, 5 FAQs, 7 select options, 5 register rows)
-- [ ] No `colorlib` / source brand (`Curbline`) / `service@curblinemech.example` / copied SVG or
+- [x] No `colorlib` / source brand (`Curbline`) / `service@curblinemech.example` / copied SVG or
       stylesheet anywhere in `apps/plantroom`
-- [ ] `npm run spec:validate` and `scripts/verify-app.sh plantroom` green (typecheck, lint, 100 %
+- [x] `npm run spec:validate` and `scripts/verify-app.sh plantroom` green (typecheck, lint, 100 %
       coverage, build)
 
 ## Deploy
 
-- [ ] Row added under `## Business` with the heading corrected to `(368)` (the line is in the spec,
+- [x] Row added under `## Business` with the heading corrected to `(368)` (the line is in the spec,
       §Purpose), flipped to `[x]` in the same bookkeeping commit that writes the surge URL
-- [ ] PR titled `feat: Plantroom — commercial HVAC response-tier template (ColorLib Curbline)`, merged
+- [x] PR titled `feat: Plantroom — commercial HVAC response-tier template (ColorLib Curbline)`, merged
       immediately (`gh pr merge --squash --delete-branch`)
-- [ ] Deploy `plantroom.free.componentdock.com`, then verify with the house probe:
+- [x] Deploy `plantroom.free.componentdock.com`, then verify with the house probe:
       HTTPS 200 + `ssl_verify_result=0`

@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+
+/* Plantroom palette — measured from the reference sheet (one stylesheet, Tailwind 4
+   output). Three colour systems coexist on purpose: `primary` is the cool
+   corporate blue that carries every action and the closing band, `ink` is a
+   warm-neutral grey ramp the design defines itself (hero, the three content
+   grids, every card border), and the footer plus the reference bands use stock
+   Tailwind `gray`. The split is deliberate — dark chrome recedes, blue-greys
+   carry content.
+   Type: Inter 400–800 for the page, JetBrains Mono 400–700 for numerals and
+   machine-y labels, both loaded in index.html.
+   Shape: 0.5rem controls, 0.75rem hero card, 1rem every card/grid, pills at 9999px. */
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  /* brand — cool corporate blue */
+  --color-primary-50: #edf6ff;
+  --color-primary-100: #d7ebff;
+  --color-primary-200: #afd7ff;
+  --color-primary-300: #7bbcfb;
+  --color-primary-400: #479cf0;
+  --color-primary-500: #247edc;
+  --color-primary-600: #1963b4;
+  --color-primary-700: #175090;
+  --color-primary-800: #194375;
+  --color-primary-900: #183961;
+
+  /* warm-neutral ink ramp */
+  --color-ink-50: #f5f6f7;
+  --color-ink-100: #e9ebed;
+  --color-ink-200: #d2d6da;
+  --color-ink-300: #a9b0b7;
+  --color-ink-400: #78828c;
+  --color-ink-500: #57626c;
+  --color-ink-600: #3f4951;
+  --color-ink-700: #30383f;
+  --color-ink-800: #1f252a;
+  --color-ink-900: #13171a;
+
+  /* the register panel's only non-ramp colour */
+  --color-amber-panel: #f6bb63;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #57626c;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #1f252a;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  :focus-visible {
+    outline: 2px solid #1963b4;
+    outline-offset: 2px;
+  }
+  /* The two dark grounds need their own ring to stay visible. */
+  .on-ink :focus-visible,
+  .on-brand :focus-visible {
+    outline-color: #7bbcfb;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* .section — 80px, 112px from 64rem, as measured. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (width >= 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+
+  /* .btn — 8px radius, 10/20px padding, 14px medium, brand-tinted shadow. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-lg);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: all 150ms ease;
+  }
+  .btn-primary {
+    background-color: #1963b4;
+    color: #ffffff;
+    box-shadow:
+      0 10px 15px -3px #1963b440,
+      0 4px 6px -4px #1963b440;
+  }
+  .btn-primary:hover {
+    background-color: #175090;
+  }
+  .btn-secondary {
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #374151;
+  }
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+  }
+
+  .nav-active {
+    color: #111827;
+    font-weight: 600;
+  }
+
+  /* Field chrome shared by the survey card and the footer newsletter. */
+  .field {
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-ink-200);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    color: #1f252a;
+    background-color: #ffffff;
+    transition: border-color 150ms ease;
+  }
+  .field::placeholder {
+    color: var(--color-ink-300);
+  }
+  .field:focus {
+    border-color: #1963b4;
+    outline: none;
+  }
+  .field-error {
+    border-color: #dc2626;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-slide-up {
+    animation: slide-up 400ms ease-out;
+  }
+  .animate-toast-in {
+    animation: toast-in 250ms ease-out;
+  }
+}
