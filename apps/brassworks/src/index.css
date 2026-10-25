@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode: the theme bootstrap in index.html toggles `.dark` on
+   <html> before first paint, so no utility here may depend on the media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Brassworks tokens — measured from the reference stylesheet and its live
+   render. One fired-clay brand ramp, one graphite ink ramp, and the single
+   sand step the reference declared but never emitted (it renders as the body
+   ground, so that is the value recorded here). Type: Poppins 400–700, with
+   Georgia/Gelasio serif in exactly two places. Shape: 8 / 12 / 16 px radii and
+   only two shadows (scrolled header, back-to-top disc). */
+@theme {
+  /* the reference's container stops at 475 px before it stops at 640 — that
+     one extra step is what makes its 576 px layout two 213 px cards wide */
+  --breakpoint-xs: 475px;
+  --font-sans: 'Poppins', system-ui, sans-serif;
+  --font-serif: Georgia, 'Gelasio', 'Times New Roman', serif;
+
+  /* brand — fired clay */
+  --color-primary-50: #fbf3ee;
+  --color-primary-100: #f6e5d9;
+  --color-primary-200: #ebc8b0;
+  --color-primary-300: #dea481;
+  --color-primary-400: #cc7e51; /* eyebrow on dark grounds */
+  --color-primary-500: #be6b38; /* focus ring, hover borders */
+  --color-primary-600: #b5652f; /* brand: solid buttons, progress bar, disc */
+  --color-primary-700: #925026; /* eyebrows on light grounds, closing band */
+
+  /* graphite neutrals */
+  --color-ink-50: #fafaf9;
+  --color-ink-100: #f0f0ee;
+  --color-ink-200: #dededb;
+  --color-ink-300: #b5b5b0;
+  --color-ink-400: #7c7c76;
+  --color-ink-500: #57574f;
+  --color-ink-600: #3a3a34;
+  --color-ink-700: #2a2a26;
+  --color-ink-800: #1f2328;
+  --color-ink-900: #14171a;
+
+  /* the band that is not on the ink ramp */
+  --color-sand-50: #fafaf9;
+
+  /* dark-mode greys (recorded so every dark: utility is explicit) */
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+  --color-gray-950: #030712;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #fafaf9;
+    color: #1f2328;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* The page ground follows the theme: without this the document behind the
+     app stays off-white in dark mode and shows through on overscroll. */
+  html.dark body {
+    background-color: #030712;
+    color: #e5e7eb;
+  }
+
+  :focus-visible {
+    outline: 2px solid #be6b38;
+    outline-offset: 2px;
+  }
+
+  /* The reference ships smooth scrolling and no reduced-motion guard; the
+     guard is added here so the preference wins over the animation. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+}
+
+@layer components {
+  .section {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  @media (width >= 64rem) {
+    .section {
+      padding-block: calc(var(--spacing) * 28);
+    }
+  }
+
+  .eyebrow {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #925026;
+  }
+
+  .eyebrow-dark {
+    color: #cc7e51;
+  }
+}
