@@ -699,26 +699,47 @@ use `loading="lazy"` below the fold.
 
 ## Verification checklist
 
-- [ ] `openspec/specs/template-barstone/spec.md` is this file; `npm run spec:validate` passes.
-- [ ] `apps/barstone` exists with `package.json` name `@free-react-templates/barstone`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `barstone.free.componentdock.com`, `homepage` = `https://barstone.free.componentdock.com`.
-- [ ] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-gold: #ab7636`, `--color-gold-soft: #d7af7e`, `--color-ink: #161d22`, `--color-cream: #f3f1ef`, `--color-hero-cream: #F5EFE8`, `--color-navy: #162b45`).
-- [ ] Fonts Cardo (400/700), Rufina (400) and Roboto (400 + 400 italic) loaded through one Google Fonts `<link>`; hero `h1` in Rufina, headings and nav in Cardo, every paragraph in Roboto.
-- [ ] Section order matches the ten-row table (header → hero → about → services → case study → attorneys → CTA → testimonials → blog → footer) with the measured 1440 heights (88 / 1,000 / 994 / 590 / 971 / 964 / 423 / 747 / 912 / 545).
-- [ ] Header is absolute and transparent at 88px with a gold scales + "Barstone" wordmark, six 16px Cardo items (`padding: 38px 25px`), a Blog dropdown on hover **and** focus, and a 151×44 white pill with a `#dde0e3` border and gold label.
-- [ ] Hero: 1,000px `#F5EFE8` band (700 ≤1200/≤991, 650 ≤575) with a **CSS diagonal** top-right cut, gavel/cap watermarks, a 46%-wide cut-out portrait anchored right (hidden ≤991), a 50px/400 Rufina `h1`, a 15px/1.8 subline and a **square** gold-gradient CTA (186×50, `background-size: 200% auto`, hover slides right).
-- [ ] About: centred 36px/700 statement in an 8-col measure, a 7/5 two-image collage with no radius, and a centred 15px paragraph at `margin-top: 60px`.
-- [ ] Services: four 330px white cards on `#f3f1ef`, 90px `linear-gradient(0deg, #ab7636, #d7af7e)` icon discs with 40px white glyphs, 18px UPPERCASE headings, and the hover state (gradient `-117deg`, 72px white disc, 22px capitalize white heading, white description).
-- [ ] Case study: three distinct captioned images in a `container-fluid` row with 7.5px gutters and a 1px gold frame inset 22px on hover/focus.
-- [ ] Attorneys: three portrait cards on `#f3f1ef` with unique names, roles and e-mails, an overlay on hover/focus and 22px names at `margin-top: 26px`.
-- [ ] CTA: 423px `#ab7636` band, `padding: 115.5px 0`, white 36px centred `h2`, white **0-radius** button (278×53) whose label turns gold on hover.
-- [ ] Testimonials: 115×100 quotation mark in `#d7af7e` at 20% opacity, 18px italic quote, 22px name, 22px/500 Cardo, 3-visible thumbnail rail with 55px arrows framed `5px #dde0e3`, autoplay ≈2s pausing on hover/focus and disabled under reduced motion, **four** quotes with four thumbnails.
-- [ ] Blog: three cards with gold category, date, 22px title, 15px excerpt, like/comment meta and a white 90%-opacity hover wash; 10px white gutters; stacked at 390px.
-- [ ] Footer: `#162b45`, `padding: 130px 0 20px`, four columns (wordmark + blurb + four `#cccccc` socials, six-link "Our Service", "Contact Info" with icons, six-tile Instagram grid), `#45556a` rule at `margin-top: 95px`, 15px copyright with the current year and a four-item menu.
-- [ ] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/barstone` = 0 hits; the source wordmark/e-mail domain "ariclaw" appears nowhere in `apps/barstone`.
-- [ ] No horizontal overflow at 390px (`document.documentElement.scrollWidth === 390`); the mobile hero content fits inside its 650px band; no `document.write`.
-- [ ] Vendor palette (`#f9f9ff`, `#f0e9ff`, `#415094`, `#4cd3e3`, `#38a4ff`, `#f4e700`, `#f44a40`) is **not** in `@theme` — it belongs to the source's Elements page only.
-- [ ] Placeholder imagery uses `https://picsum.photos/seed/barstone-<n>/<w>/<h>` (hero portrait, two about images, three case images, three attorney portraits, four avatars, three blog images, six footer tiles); icons from `lucide-react`.
-- [ ] `scripts/verify-app.sh barstone` passes: typecheck, lint, 100% coverage tests, build.
-- [ ] Desktop (1440) and mobile (390) renders compared against the reference fold-by-fold; deviations listed in the PR.
-- [ ] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/barstone" package-lock.json` ≥ 1.
-- [ ] TEMPLATES.md rows **896** and **2116** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://barstone.free.componentdock.com` after merge (prep stream does none of this).
+- [x] `openspec/specs/template-barstone/spec.md` is this file; `npm run spec:validate` passes.
+- [x] `apps/barstone` exists with `package.json` name `@free-react-templates/barstone`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `barstone.free.componentdock.com`, `homepage` = `https://barstone.free.componentdock.com`.
+- [x] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-gold: #ab7636`, `--color-gold-soft: #d7af7e`, `--color-ink: #161d22`, `--color-cream: #f3f1ef`, `--color-hero-cream: #F5EFE8`, `--color-navy: #162b45`).
+- [x] Fonts Cardo (400/700), Rufina (400) and Roboto (400 + 400 italic) loaded through one Google Fonts `<link>`; hero `h1` in Rufina, headings and nav in Cardo, every paragraph in Roboto.
+- [x] Section order matches the ten-row table (header → hero → about → services → case study → attorneys → CTA → testimonials → blog → footer) with the measured 1440 heights (88 / 1,000 / 994 / 590 / 971 / 964 / 423 / 747 / 912 / 545).
+- [x] Header is absolute and transparent at 88px with a gold scales + "Barstone" wordmark, six 16px Cardo items (`padding: 38px 25px`), a Blog dropdown on hover **and** focus, and a 151×44 white pill with a `#dde0e3` border and gold label.
+- [x] Hero: 1,000px `#F5EFE8` band (700 ≤1200/≤991, 650 ≤575) with a **CSS diagonal** top-right cut, gavel/cap watermarks, a 46%-wide cut-out portrait anchored right (hidden ≤991), a 50px/400 Rufina `h1`, a 15px/1.8 subline and a **square** gold-gradient CTA (186×50, `background-size: 200% auto`, hover slides right).
+- [x] About: centred 36px/700 statement in an 8-col measure, a 7/5 two-image collage with no radius, and a centred 15px paragraph at `margin-top: 60px`.
+- [x] Services: four 330px white cards on `#f3f1ef`, 90px `linear-gradient(0deg, #ab7636, #d7af7e)` icon discs with 40px white glyphs, 18px UPPERCASE headings, and the hover state (gradient `-117deg`, 72px white disc, 22px capitalize white heading, white description).
+- [x] Case study: three distinct captioned images in a `container-fluid` row with 7.5px gutters and a 1px gold frame inset 22px on hover/focus.
+- [x] Attorneys: three portrait cards on `#f3f1ef` with unique names, roles and e-mails, an overlay on hover/focus and 22px names at `margin-top: 26px`.
+- [x] CTA: 423px `#ab7636` band, `padding: 115.5px 0`, white 36px centred `h2`, white **0-radius** button (278×53) whose label turns gold on hover.
+- [x] Testimonials: 115×100 quotation mark in `#d7af7e` at 20% opacity, 18px italic quote, 22px name, 22px/500 Cardo, 3-visible thumbnail rail with 55px arrows framed `5px #dde0e3`, autoplay ≈2s pausing on hover/focus and disabled under reduced motion, **four** quotes with four thumbnails.
+- [x] Blog: three cards with gold category, date, 22px title, 15px excerpt, like/comment meta and a white 90%-opacity hover wash; 10px white gutters; stacked at 390px.
+- [x] Footer: `#162b45`, `padding: 130px 0 20px`, four columns (wordmark + blurb + four `#cccccc` socials, six-link "Our Service", "Contact Info" with icons, six-tile Instagram grid), `#45556a` rule at `margin-top: 95px`, 15px copyright with the current year and a four-item menu.
+- [x] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/barstone` = 0 hits; the source wordmark/e-mail domain "ariclaw" appears nowhere in `apps/barstone`.
+- [x] No horizontal overflow at 390px (`document.documentElement.scrollWidth === 390`); the mobile hero content fits inside its 650px band; no `document.write`.
+- [x] Vendor palette (`#f9f9ff`, `#f0e9ff`, `#415094`, `#4cd3e3`, `#38a4ff`, `#f4e700`, `#f44a40`) is **not** in `@theme` — it belongs to the source's Elements page only.
+- [x] Placeholder imagery uses `https://picsum.photos/seed/barstone-<n>/<w>/<h>` (hero portrait, two about images, three case images, three attorney portraits, four avatars, three blog images, six footer tiles); icons from `lucide-react`.
+- [x] `scripts/verify-app.sh barstone` passes: typecheck, lint, 100% coverage tests, build.
+- [x] Desktop (1440) and mobile (390) renders compared against the reference fold-by-fold; deviations listed in the PR.
+- [x] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/barstone" package-lock.json` ≥ 1.
+- [x] TEMPLATES.md rows **896** and **2116** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://barstone.free.componentdock.com` after merge (prep stream does none of this).
+
+### Implementation notes and documented deviations (PR #1870)
+
+Measured on the built app with a headless Chromium pass at 1440×1000 and 390×844:
+
+- Band heights at 1440: **88 / 1,000 / 1,012 / 590 / 947 / 970 / 419 / 707 / 962 / 521**
+  (reference 88 / 1,000 / 994 / 590 / 971 / 964 / 423 / 747 / 912 / 545 — every band within
+  ±10%, document 7,128px vs the reference 7,146px).
+- At 390×844: document 10,131px with `scrollWidth === clientWidth === 390`; hero 650px,
+  header 40px, portrait hidden.
+- **Deviation 1 — portrait width.** The hero portrait frame is **44%** of the band (source
+  46%, `right: 10%`); at 46% the frame's left edge crossed the headline's 520px measure at
+  1440px. It is anchored `right: 7%`, bottom-cropped, hidden ≤991px, with a soft top fade
+  standing in for the source's transparent cut-out (no assets are copied).
+- **Deviation 2 — thumbnail rail.** All **four** thumbnails render at 55px rather than the
+  source's three-visible window over six duplicated slides (the slider duplicated markup);
+  the active thumbnail keeps a gold 2px frame and `aria-pressed`.
+- Source defects deliberately not reproduced: identical case captions, one shared attorney
+  e-mail, six thumbnails over four quotes, dead `#` nav, `document.write` year, the 700px
+  content column inside the 650px mobile band, and the bitmap diagonal (CSS `clip-path`
+  `polygon(0 15%, 100% 27%, 100% 100%, 0 100%)` instead).
