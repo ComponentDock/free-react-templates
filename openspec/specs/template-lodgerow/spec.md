@@ -680,7 +680,8 @@ The app SHALL keep the reference's copy verbatim (paraphrase only where a string
 5. **`fetchpriority="high" decoding="sync"` on two ~100 KB JPEGs above the fold** — a synchronously
    decoded hero pair. Use `loading="lazy" decoding="async"` in the recreation.
 6. **The reference's own totals don't multiply.** €214 × 5 = 1,070 ≠ **€1,180**; €96 × 5 = 480 ≠
-   **€520**; only card 3 (€168 × 5 = **€840**, from a struck €990 = €198 × 5, a real 15 % off) is
+   **€520**; only card 3 (€168 × 5 = **€840**, from a struck €990 = €198 × 5 — a **15.15 %** cut against a
+   badge that says "15 % off") is
    consistent. Treat the totals as **copy**. Do not compute them, and do not "fix" them in either
    direction — computing would silently change two cards' prices.
 7. **`min-height: 220px` on the media is dead on desktop** (always ≥ 263.75) and is reset to `0` in the
