@@ -51,7 +51,7 @@
 - [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [vetora](https://vetora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [x] **Thepetcare** — [colorlib](https://colorlib.com/wp/template/thepetcare/) · [vetly](https://vetly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/thepetcare-free-template.jpg)
 
-## App Landing Page (35)
+## App Landing Page (36)
 
 - [x] **Appco** — [colorlib](https://colorlib.com/wp/template/appco/) · [flowly](https://flowly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/appco-free-template.jpg)
 - [x] **Applab** — [colorlib](https://colorlib.com/wp/template/applab/) · [velocity](https://velocity.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/applab-free-template.jpg)
@@ -64,6 +64,7 @@
 - [x] **Bulkapp** — [colorlib](https://colorlib.com/wp/template/bulkapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bulkapp-free-template.jpg) · [Bundle](https://bundle.free.componentdock.com)
 - [x] **Chimper** — [colorlib](https://colorlib.com/wp/template/chimper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chimper-free-template.jpg) · [craftora](https://craftora.free.componentdock.com)
 - [x] **Colid** — [colorlib](https://colorlib.com/wp/template/colid/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colid-free-app-landing-page-website-template.jpg) · [Pitchly](https://pitchly.free.componentdock.com)
+- [~] **Commons** — [colorlib](https://colorlib.com/wp/template/commons/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/commons-template.jpg) · [veranda](https://veranda.free.componentdock.com)
 - [x] **Crafted** — [colorlib](https://colorlib.com/wp/template/crafted/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/crafted-free-template.jpg) · [Makerly](https://makerly.free.componentdock.com)
 - [x] **Ecobit** — [colorlib](https://colorlib.com/wp/template/ecobit/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ecobit-free-template.jpg) · [nodely](https://nodely.free.componentdock.com)
 - [x] **Favison** — [colorlib](https://colorlib.com/wp/template/favison/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/favison-free-template.jpg) · [Upswing](https://upswing.free.componentdock.com)
