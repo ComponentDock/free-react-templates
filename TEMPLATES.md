@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (374)
+## Business (375)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1029,6 +1029,7 @@
 - [x] **Fixtura** — [colorlib](https://colorlib.com/wp/template/fixtura/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fixtura-template.jpg) · [brassworks](https://brassworks.free.componentdock.com)
 - [x] **Flatter** — [colorlib](https://colorlib.com/wp/template/flatter/) · [feast](https://feast.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flatter-free-template.jpg)
 - [x] **Florist** — [colorlib](https://colorlib.com/wp/template/florist/) · [petal](https://petal.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/florist-free-template.jpg)
+- [~] **Flowpage** — [colorlib](https://colorlib.com/wp/template/flowpage/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/flowpage-template.jpg)
 - [x] **Foundation2** — [colorlib](https://colorlib.com/wp/template/foundation2/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/foundation2-free-template.jpg) · [consignly](https://consignly.free.componentdock.com)
 - [x] **Fplus** — [colorlib](https://colorlib.com/wp/template/fplus/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fplus-free-template.jpg) · [foliox](https://foliox.free.componentdock.com)
 - [x] **Funder** — [colorlib](https://colorlib.com/wp/template/funder/) · [refuge](https://refuge.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/funder-free-template.jpg)
