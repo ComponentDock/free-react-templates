@@ -730,6 +730,10 @@
 - [x] **Carousel 19** — [colorlib](https://colorlib.com/wp/template/carousel-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-19.jpg) · [corniglia](https://corniglia.free.componentdock.com)
 - [x] **Carousel 20** — [colorlib](https://colorlib.com/wp/template/carousel-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carousel-20.jpg) · [studio](https://studio.free.componentdock.com)
 
+## Bootstrap Cards (20)
+
+- [~] **Card 01** — [colorlib](https://colorlib.com/wp/template/card-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-01.jpg) · [nameplate](https://nameplate.free.componentdock.com)
+
 ## Bootstrap Checkboxes (20)
 
 - [x] **Checkbox 01** — [colorlib](https://colorlib.com/wp/template/checkbox-01/) · [tickmark](https://tickmark.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/checkbox-01.jpg)
