@@ -1032,3 +1032,8 @@ The app SHALL meet the house accessibility baseline and SHALL NOT reference the 
       re-measured to **`(371)`** on `main` `d089ec83e`, marker flipped to `[x]` with the bookkeeping
       commit
 - [x] `npm run spec:validate`, `scripts/verify-app.sh kettle` and the CI gate are green
+- [x] **Deployed** (2026-10-25): `Deploy to Surge.sh` run 40166441121 on `4efe37d1c` succeeded;
+      `curl -H 'Host: kettle.free.componentdock.com' https://na-west1.surge.sh/` → **200** with the
+      app's own `<title>`. The edge host `https://kettle.free.componentdock.com` still fails the TLS
+      handshake — the documented `*.free.componentdock.com` Cloudflare Universal SSL gap
+      (`docs/catalog-coverage.md` / fleet audit), not an app or deploy defect.
