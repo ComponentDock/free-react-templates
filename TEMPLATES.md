@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (380)
+## Business (383)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1050,6 +1050,7 @@
 - [x] **Handyman** — [colorlib](https://colorlib.com/wp/template/handyman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/handyman-free-template.jpg) · [fixero](https://fixero.free.componentdock.com)
 - [x] **Harbor** — [colorlib](https://colorlib.com/wp/template/harbor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/harbor-free-template.jpg) · [quay](https://quay.free.componentdock.com)
 - [x] **Hardenero** — [colorlib](https://colorlib.com/wp/template/hardenero/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hardenero-free-template.jpg) · [verdure](https://verdure.free.componentdock.com)
+- [~] **Heatline** — [colorlib](https://colorlib.com/wp/template/heatline/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/heatline-template.jpg) · [emberly](https://emberly.free.componentdock.com)
 - [x] **Heaven** — [colorlib](https://colorlib.com/wp/template/heaven/) · [terracotta](https://terracotta.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/heaven-free-template.jpg)
 - [x] **Hepta** — [colorlib](https://colorlib.com/wp/template/hepta/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hepta-free-template.jpg) · [wander](https://wander.free.componentdock.com)
 - [x] **Hipstyle** — [colorlib](https://colorlib.com/wp/template/hipstyle/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hipstyle-free-template.jpg) · [stylely](https://stylely.free.componentdock.com)
