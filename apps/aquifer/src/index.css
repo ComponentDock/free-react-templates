@@ -1,0 +1,195 @@
+@import 'tailwindcss';
+
+/* Aquifer palette — measured from the reference sheet (one stylesheet, Tailwind 4
+   output). Two colour systems coexist on purpose: `primary` is the cyan/teal ramp
+   that carries every action, the emergency band and the closing band; `ink` is a
+   blue-grey ramp the design defines itself (hero, both content grids, every card
+   border). The footer, the testimonial ground and the FAQ rules use stock
+   Tailwind `gray`. The split is deliberate — dark chrome recedes, blue-greys
+   carry content.
+   Type: Space Grotesk 400–700 for the page, JetBrains Mono 500/700 for the
+   `01`–`06` numerals and machine labels, both loaded in index.html.
+   Shape: 0.5rem controls, 0.75rem inset panel, 1rem every card/grid, pills at
+   9999px. Light-only: this page has no dark theme. */
+@theme {
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  /* brand — cyan/teal */
+  --color-primary-50: #ecfdff;
+  --color-primary-100: #cff8fe;
+  --color-primary-200: #a5effc;
+  --color-primary-300: #67e0f9;
+  --color-primary-400: #22c8ee;
+  --color-primary-500: #06a8d4;
+  --color-primary-600: #0886b2;
+  --color-primary-700: #0e6b90;
+  --color-primary-800: #155875;
+  --color-primary-900: #164a63;
+
+  /* blue-grey ink ramp */
+  --color-ink-50: #f5f6fa;
+  --color-ink-100: #e9ebf3;
+  --color-ink-200: #d2d6e6;
+  --color-ink-300: #a9b0cc;
+  --color-ink-400: #7a84a8;
+  --color-ink-500: #59628a;
+  --color-ink-600: #414970;
+  --color-ink-700: #323858;
+  --color-ink-800: #20243a;
+  --color-ink-900: #141726;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #59628a;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #20243a;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+  :focus-visible {
+    outline: 2px solid #0886b2;
+    outline-offset: 2px;
+  }
+  /* The two dark grounds need their own ring to stay visible. */
+  .on-ink :focus-visible,
+  .on-brand :focus-visible {
+    outline-color: #a5effc;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* .section — 80px, 112px from 64rem, as measured. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (width >= 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+
+  /* .btn — 8px radius, 10/20px padding, 14px medium, brand-tinted shadow. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: var(--radius-lg);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: all 150ms ease;
+  }
+  .btn-primary {
+    background-color: #0886b2;
+    color: #ffffff;
+    box-shadow:
+      0 10px 15px -3px #0886b240,
+      0 4px 6px -4px #0886b240;
+  }
+  .btn-primary:hover {
+    background-color: #0e6b90;
+  }
+  .btn-secondary {
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #374151;
+  }
+  .btn-secondary:hover {
+    background-color: #f9fafb;
+  }
+
+  .nav-active {
+    color: #20243a;
+    font-weight: 600;
+  }
+
+  /* Field chrome shared by the booking card and the footer newsletter. */
+  .field {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-ink-200);
+    background-color: #ffffff;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    color: #20243a;
+    transition:
+      border-color 150ms ease,
+      box-shadow 150ms ease;
+  }
+  .field::placeholder {
+    color: var(--color-ink-300);
+  }
+  .field:focus {
+    border-color: #06a8d4;
+    outline: none;
+    box-shadow: 0 0 0 2px #06a8d433;
+  }
+  .field-error {
+    border-color: #dc2626;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-slide-up {
+    animation: slide-up 400ms ease-out;
+  }
+  .animate-toast-in {
+    animation: toast-in 250ms ease-out;
+  }
+}

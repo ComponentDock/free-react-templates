@@ -877,7 +877,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (368)
+## Business (369)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -984,6 +984,7 @@
 - [x] **Dizzi** — [colorlib](https://colorlib.com/wp/template/dizzi/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dizzi-free-template.jpg) · [doflo](https://doflo.free.componentdock.com)
 - [x] **Doglife** — [colorlib](https://colorlib.com/wp/template/doglife/) · [houndly](https://houndly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/doglife-free-template.jpg)
 - [x] **Dorne** — [colorlib](https://colorlib.com/wp/template/dorne/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dorne-directory-listing-free-template.jpg) · [quest](https://quest.free.componentdock.com)
+- [~] **Dowser** — [colorlib](https://colorlib.com/wp/template/dowser/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dowser-template.jpg) · [aquifer](https://aquifer.free.componentdock.com)
 - [x] **Dreams** — [colorlib](https://colorlib.com/wp/template/dreams/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dreams-free-template.jpg) · [gearly](https://gearly.free.componentdock.com)
 - [x] **Drimo** — [colorlib](https://colorlib.com/wp/template/drimo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/drimo-free-multi-purpose-template.jpg) · [ripply](https://ripply.free.componentdock.com)
 - [x] **Dronephotography** — [colorlib](https://colorlib.com/wp/template/dronephotography/) · [skylens](https://skylens.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/dronephotography-free-template.jpg)
