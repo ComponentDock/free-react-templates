@@ -1125,7 +1125,7 @@
 - [x] **Nightshift** — [colorlib](https://colorlib.com/wp/template/nightshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nightshift-template.jpg) · [nightwatch](https://nightwatch.free.componentdock.com)
 - [x] **Nissa** — [colorlib](https://colorlib.com/wp/template/nissa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nissa-free-template.jpg) · [lensa](https://lensa.free.componentdock.com)
 - [x] **Nitro** — [colorlib](https://colorlib.com/wp/template/nitro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nitro-free-template.jpg) · [turbo](https://turbo.free.componentdock.com)
-- [~] **Nodig** — [colorlib](https://colorlib.com/wp/template/nodig/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nodig-template.jpg)
+- [x] **Nodig** — [colorlib](https://colorlib.com/wp/template/nodig/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nodig-template.jpg) · [conduit](https://conduit.free.componentdock.com)
 - [x] **Noxen** — [colorlib](https://colorlib.com/wp/template/noxen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/noxen-free-template.jpg) · [emblem](https://emblem.free.componentdock.com)
 - [x] **Occupy** — [colorlib](https://colorlib.com/wp/template/occupy/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/occupy-free-template.jpg) · [domicile](https://domicile.free.componentdock.com)
 - [x] **Ogani** — [colorlib](https://colorlib.com/wp/template/ogani/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ogani-free-template.jpeg) · [grocerly](https://grocerly.free.componentdock.com)
