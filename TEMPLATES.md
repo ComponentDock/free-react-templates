@@ -2514,7 +2514,7 @@
 - [x] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg) · [tribune](https://tribune.free.componentdock.com)
 - [x] **Politics** — [colorlib](https://colorlib.com/wp/template/politics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/politics-free-template-1.jpg) · [civicpulse](https://civicpulse.free.componentdock.com)
 
-## Portfolio (90)
+## Portfolio (91)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg) · [arlo](https://arlo.free.componentdock.com)
@@ -2598,6 +2598,7 @@
 - [x] **Sun** — [colorlib](https://colorlib.com/wp/template/sun/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sun-free-template.jpg) · [daybreak](https://daybreak.free.componentdock.com)
 - [x] **Sunzine** — [colorlib](https://colorlib.com/wp/template/sunzine/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/sunzine-free-template.jpg) · [aperture](https://aperture.free.componentdock.com)
 - [x] **Tough** — [colorlib](https://colorlib.com/wp/template/tough/) · [bastion](https://bastion.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tough-free-template.jpg)
+- [~] **Trace Developer** — [colorlib](https://colorlib.com/wp/template/trace-developer/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/trace-developer-featured.jpg) · [devfolio](https://devfolio.free.componentdock.com)
 - [x] **Transcend** — [colorlib](https://colorlib.com/wp/template/transcend/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/transcend-free-template-1.jpg) · [chroma](https://chroma.free.componentdock.com)
 - [x] **Tulen** — [colorlib](https://colorlib.com/wp/template/tulen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tulen-free-template.jpg) · [pana](https://pana.free.componentdock.com)
 - [x] **Unfold** — [colorlib](https://colorlib.com/wp/template/unfold/) · [unfurl](https://unfurl.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/unfold-free-template.jpeg)
