@@ -69,14 +69,14 @@ Vigor).
 
 ### Why the name is not the source name
 
-| check | result |
-|---|---|
-| `git grep -il brawn origin/main` | 0 hits (no file path, no spec, no doc, no app) |
-| `ls apps/ \| grep brawn` | no match |
-| `grep -ic '\*\*[^*]*brawn' TEMPLATES.md` | 0 (not a ColorLib row name) |
-| `colorlib.com/wp/template/brawn/` | **404** |
-| `preview.colorlib.com/theme/brawn/` | **404** |
-| `preview.colorlib.com/theme/bootstrap/brawn/` | **404** |
+| check                                         | result                                         |
+| --------------------------------------------- | ---------------------------------------------- |
+| `git grep -il brawn origin/main`              | 0 hits (no file path, no spec, no doc, no app) |
+| `ls apps/ \| grep brawn`                      | no match                                       |
+| `grep -ic '\*\*[^*]*brawn' TEMPLATES.md`      | 0 (not a ColorLib row name)                    |
+| `colorlib.com/wp/template/brawn/`             | **404**                                        |
+| `preview.colorlib.com/theme/brawn/`           | **404**                                        |
+| `preview.colorlib.com/theme/bootstrap/brawn/` | **404**                                        |
 
 ## Design reference (replication findings)
 
@@ -140,33 +140,33 @@ footer.site-footer[role=contentinfo]               ← #333
 
 1440×900 (document **4,739px**, `scrollWidth == clientWidth == 1440`):
 
-| # | band | top | height | paint |
-|---|---|---|---|---|
-| 1 | `header` | 0 | **85** | white `#fff`, flat, **not** absolute — the hero starts *below* it |
-| 2 | `.slider-item` hero | 85 | **900** (`100vh`, `min-height:700px`) | `hero_2.jpg` cover, `#000` wash at **.4** |
-| 3 | `.section` services | 985 | **540** | white, `.section{padding:7em 0}` = 117.6px top/bottom |
-| 4 | `.site-section` Enjoy The Fitness | 1,525 | **504** | white text right; `.img-1` = 720×504 at x 0 (left half) |
-| 5 | `.section.bg-primary` program | 2,029 | **449** | `#007bff` |
-| 6 | `.site-section` Be Fit & Healthy | 2,478 | **504** | white text left; `.img-2` = 720×504 at x 720 (right half) |
-| 7 | `.section.bg-light.block-11` testimonials | 2,982 | **717** | `#f8f9fa`; card 700×242 at x 370 |
-| 8 | `.bg-primary.py-5` CTA | 3,698 | **312** | `#007bff`, 48px padding |
-| 9 | `footer.site-footer` | 4,010 | **730** | `#333`, 117.6px padding |
+| #   | band                                      | top   | height                                | paint                                                             |
+| --- | ----------------------------------------- | ----- | ------------------------------------- | ----------------------------------------------------------------- |
+| 1   | `header`                                  | 0     | **85**                                | white `#fff`, flat, **not** absolute — the hero starts _below_ it |
+| 2   | `.slider-item` hero                       | 85    | **900** (`100vh`, `min-height:700px`) | `hero_2.jpg` cover, `#000` wash at **.4**                         |
+| 3   | `.section` services                       | 985   | **540**                               | white, `.section{padding:7em 0}` = 117.6px top/bottom             |
+| 4   | `.site-section` Enjoy The Fitness         | 1,525 | **504**                               | white text right; `.img-1` = 720×504 at x 0 (left half)           |
+| 5   | `.section.bg-primary` program             | 2,029 | **449**                               | `#007bff`                                                         |
+| 6   | `.site-section` Be Fit & Healthy          | 2,478 | **504**                               | white text left; `.img-2` = 720×504 at x 720 (right half)         |
+| 7   | `.section.bg-light.block-11` testimonials | 2,982 | **717**                               | `#f8f9fa`; card 700×242 at x 370                                  |
+| 8   | `.bg-primary.py-5` CTA                    | 3,698 | **312**                               | `#007bff`, 48px padding                                           |
+| 9   | `footer.site-footer`                      | 4,010 | **730**                               | `#333`, 117.6px padding                                           |
 
 390×844 (document **7,821px**, `scrollWidth == clientWidth == 390` — **no
 horizontal overflow**; the Owl `.owl-stage` children sit past the right edge but
 are clipped, they do not extend the document):
 
-| # | band | top | height |
-|---|---|---|---|
-| 1 | `header` (hamburger) | 0 | **62** |
-| 2 | hero | 62 | **844** (`100vh`) |
-| 3 | services (1 column × 4) | 906 | 1,430 |
-| 4 | Enjoy The Fitness (image **above** text) | 2,336 | 1,043 (`.img-1` 390×400 at top 2,336) |
-| 5 | program band (3 stacked) | 3,379 | 876 |
-| 6 | Be Fit & Healthy (image **above** text) | 4,255 | 1,043 |
-| 7 | testimonials | 5,298 | 889 |
-| 8 | CTA | 6,187 | 348 |
-| 9 | footer (4 stacked blocks) | 6,535 | 1,286 |
+| #   | band                                     | top   | height                                |
+| --- | ---------------------------------------- | ----- | ------------------------------------- |
+| 1   | `header` (hamburger)                     | 0     | **62**                                |
+| 2   | hero                                     | 62    | **844** (`100vh`)                     |
+| 3   | services (1 column × 4)                  | 906   | 1,430                                 |
+| 4   | Enjoy The Fitness (image **above** text) | 2,336 | 1,043 (`.img-1` 390×400 at top 2,336) |
+| 5   | program band (3 stacked)                 | 3,379 | 876                                   |
+| 6   | Be Fit & Healthy (image **above** text)  | 4,255 | 1,043                                 |
+| 7   | testimonials                             | 5,298 | 889                                   |
+| 8   | CTA                                      | 6,187 | 348                                   |
+| 9   | footer (4 stacked blocks)                | 6,535 | 1,286                                 |
 
 768×1024: the split bands keep their halves but the image becomes a **400px-tall
 full-width block above** the text (`.img-1` 768×400 at y 1,919, text at y 2,319),
@@ -194,14 +194,14 @@ prescribe a search control inside the drawer instead of deleting search.
 The theme is **multi-page**; all five siblings are LIVE (same `<title>`, same
 header/footer chrome):
 
-| page | status | bytes | what it holds (and what the single-page build maps there) |
-|---|---|---|---|
-| `about.html` | 200 | 15,455 | `h1` About Us, "We Have Unique Fitness Programs" (feature list), a second "Be Fit & Healthy" split, "Meet Our Team" (3 coach cards) → nav **About** anchor |
-| `services.html` | 200 | 15,000 | `h1` Our Services + **six** icon cards (Quality Service, Spacious Gym, Live Healthy, Crossfit, Weight Lifting, Roping) → nav **Services** anchor |
-| `gallery.html` | 200 | 13,408 | `h1` Our Gallery (fancybox image grid) → nav **Gallery** anchor |
-| `coaches.html` | 200 | 14,743 | `h1` Our Coaches + six coach cards (Mellisa Howard, Mike Richardson, Laura Smith ×2) → nav **Coaches** anchor |
-| `contact.html` | 200 | 14,155 | `h1` Contact Us + contact form (the 3rd form on the theme) → nav **Contact** anchor and the CTA button target |
-| `elements.html`, `blog.html` | **404** | 9 | not part of this theme |
+| page                         | status  | bytes  | what it holds (and what the single-page build maps there)                                                                                                  |
+| ---------------------------- | ------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `about.html`                 | 200     | 15,455 | `h1` About Us, "We Have Unique Fitness Programs" (feature list), a second "Be Fit & Healthy" split, "Meet Our Team" (3 coach cards) → nav **About** anchor |
+| `services.html`              | 200     | 15,000 | `h1` Our Services + **six** icon cards (Quality Service, Spacious Gym, Live Healthy, Crossfit, Weight Lifting, Roping) → nav **Services** anchor           |
+| `gallery.html`               | 200     | 13,408 | `h1` Our Gallery (fancybox image grid) → nav **Gallery** anchor                                                                                            |
+| `coaches.html`               | 200     | 14,743 | `h1` Our Coaches + six coach cards (Mellisa Howard, Mike Richardson, Laura Smith ×2) → nav **Coaches** anchor                                              |
+| `contact.html`               | 200     | 14,155 | `h1` Contact Us + contact form (the 3rd form on the theme) → nav **Contact** anchor and the CTA button target                                              |
+| `elements.html`, `blog.html` | **404** | 9      | not part of this theme                                                                                                                                     |
 
 So the single-page Brawn maps its six nav items to in-page anchors
 (`#top`, `#about`, `#services`, `#gallery`, `#coaches`, `#contact`) and keeps the
@@ -215,7 +215,7 @@ program names, not as links that go nowhere.
 - Declared: `body` → `font-family: "Oxygen", -apple-system, …` at **1.05rem
   (16.8px) / 1.8 (30.24px) / 400**, colour `#6c757d`; headings →
   `h1,h2,h3 { color:#000; line-height:1.5; font-family:"Montserrat", sans-serif;
-  font-weight:900 }`; `header .navbar` → Montserrat.
+font-weight:900 }`; `header .navbar` → Montserrat.
 - **The source ships no `@font-face`** (`grep -c @font-face` in `style.css` = 0)
   and **no Google Fonts `<link>`** (`document.querySelectorAll('link[rel=stylesheet]')`
   matched `fonts.googleapis` = 0). The **preview host injects 17 `@font-face`
@@ -263,44 +263,44 @@ program names, not as links that go nowhere.
 
 ### Source defects and documented deltas (do not copy these)
 
-| source behaviour | delta Brawn ships |
-|---|---|
-| Testimonials repeat **John Smith ×3** + Joshua Darren, all "XYZ Inc. Client", with lorem quotes | 4 **distinct** people (name + role + quote), same card anatomy; roles stay "client" register |
-| `.element-animate` = `opacity:0; visibility:hidden` until a jQuery waypoint fires | IntersectionObserver reveal, `prefers-reduced-motion` → no transform, content visible without JS |
-| Header search: placeholder-only input, no submit, no label, removed from the layout below 992px | labelled input (`aria-label="Search"`) + submit button, moved into the mobile drawer |
-| Footer `.col-md-3` empty spacer + subscribe `<h3>Subscribe</h3>` above a button also labelled "Subscribe" | drop the spacer; keep the heading, label the button "Subscribe" with an `aria-label` that says what it subscribes to |
-| Copyright bar credits **Colorlib** and auto-writes the year via `document.write` | "© {currentYear} Brawn — built with Component Dock" linking **https://www.componentdock.com/** (AGENTS.md rule 5); year rendered in React |
-| Hero `h1` rule also styles `h1 span` as a blue highlighter, but the markup has **no** span | no highlight span; do not add one |
-| Services glyphs inherit body grey `#6c757d`; only the diamond **border** is blue | same: grey glyph on a `2px solid #007bff` diamond |
-| `body` declares 1.05rem (16.8px) — a non-standard base | keep 16.8px/30.24px as the reference rhythm (Tailwind `text-[1.05rem]` or a `--text-body` token) |
-| No `lang`, no meta description on the source page | `<html lang="en">` + a Brawn meta description |
-| All images are theme JPEGs | `https://picsum.photos/seed/brawn-<n>/<w>/<h>` placeholders (deterministic), lucide-react icons for flaticon/ionicons glyphs |
+| source behaviour                                                                                          | delta Brawn ships                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Testimonials repeat **John Smith ×3** + Joshua Darren, all "XYZ Inc. Client", with lorem quotes           | 4 **distinct** people (name + role + quote), same card anatomy; roles stay "client" register                                              |
+| `.element-animate` = `opacity:0; visibility:hidden` until a jQuery waypoint fires                         | IntersectionObserver reveal, `prefers-reduced-motion` → no transform, content visible without JS                                          |
+| Header search: placeholder-only input, no submit, no label, removed from the layout below 992px           | labelled input (`aria-label="Search"`) + submit button, moved into the mobile drawer                                                      |
+| Footer `.col-md-3` empty spacer + subscribe `<h3>Subscribe</h3>` above a button also labelled "Subscribe" | drop the spacer; keep the heading, label the button "Subscribe" with an `aria-label` that says what it subscribes to                      |
+| Copyright bar credits **Colorlib** and auto-writes the year via `document.write`                          | "© {currentYear} Brawn — built with Component Dock" linking **https://www.componentdock.com/** (AGENTS.md rule 5); year rendered in React |
+| Hero `h1` rule also styles `h1 span` as a blue highlighter, but the markup has **no** span                | no highlight span; do not add one                                                                                                         |
+| Services glyphs inherit body grey `#6c757d`; only the diamond **border** is blue                          | same: grey glyph on a `2px solid #007bff` diamond                                                                                         |
+| `body` declares 1.05rem (16.8px) — a non-standard base                                                    | keep 16.8px/30.24px as the reference rhythm (Tailwind `text-[1.05rem]` or a `--text-body` token)                                          |
+| No `lang`, no meta description on the source page                                                         | `<html lang="en">` + a Brawn meta description                                                                                             |
+| All images are theme JPEGs                                                                                | `https://picsum.photos/seed/brawn-<n>/<w>/<h>` placeholders (deterministic), lucide-react icons for flaticon/ionicons glyphs              |
 
 ## Design tokens (from preview `css/style.css` + live computed styles)
 
-| token | value | measured evidence |
-|---|---|---|
-| `--brand` (primary) | **`#007bff`** | 23 declarations; `.bg-primary`, active/hover nav + dropdown item, `.navbar-brand` link colour, `.service-box .square-figure` 2px border, `.form-control:focus` ring, `.slider-text p a`. Live: program band `rgb(0,123,255)`, diamond border, wordmark |
-| `--action` (CTA) | **`#ffc107`** hover `#e0a800` | `.btn-warning` (6 declarations); button text `#212529`; measured CTA button `rgb(255,193,7)`, 174×54 |
-| `--ink` | **`#000`** | `h1,h2,h3{color:#000}`; `.heading{color:#000}` |
-| `--body` | **`#6c757d`** | `body{color:#6c757d}` (12 declarations), service copy, quotes, footer copy |
-| `--surface-light` | **`#f8f9fa`** | `.bg-light` (3) — testimonial band |
-| `--surface-dark` | **`#333`** | `.site-footer{background:#333}` |
-| `--meta` | **`#a6a6a6`** | `.block-33 .vcard .name-text .meta` (16.8px, "XYZ Inc. Client") |
-| nav idle / active | **`#666666`** / **`#007bff`** | `header .navbar .nav-link` / `.nav-link.active` (16.8px, weight 300, Montserrat) |
-| footer links | `rgba(255,255,255,.7)` underlined → `#fff` no underline | `.site-footer a` / `:hover` |
-| input border | `#6c757d` at **2px** (subscribe), `rgba(0,0,0,.3)` 1px underline (search) | `footer .form-control{border-width:2px}`; measured `2px solid rgb(108,117,125)` |
-| radii | **4px** on every button + form control (`0.25rem`); **7px** on the service diamond; `50%` on the play disc and the 60px avatar; header search field square | 7 × `0.25rem`, `7px`, 4 × `50%`, `border-radius:0` on the search field |
-| heading scale | h1 **80px / 96px / 700 / UPPERCASE** (hero, 40px below 768px) · h2 `.heading` **48px / 48px / 900** · h3 **28px** base, **19.2px** inside `.service-box` (`1.2rem`), **20px** in the program band (`.block-6`), **18px / 300** for a testimonial name (`.block-33`), **16px / 700 / 1.6px tracking** in the footer | live computed styles per element |
-| body type | **16.8px / 30.24px / 400** Oxygen | `body{font-size:1.05rem;line-height:1.8}` |
-| buttons | `.btn` base `font-size:13px; font-weight:900; letter-spacing:.2em (2.6px); text-transform:uppercase`; CTA `padding:16px 24px` (`px-4 py-3`), radius **4px**, `#212529` on `#ffc107`; subscribe button `padding:6px 12px`, **118×50**, radius `0 4px 4px 0` | live measured |
-| hero | `height:100vh; min-height:700px`, `background: url(hero_2) top center / cover`, `:before` `#000` at **opacity .4**; h1 `margin-left:.5em`, `margin-bottom:30px`; play disc **60×60** → 80×80; "Watch Video" 16.8px white | live measured (900px tall at 900 viewport) |
-| section rhythm | `.section { padding: 7em 0 }` = **117.6px**; split bands have no vertical padding — the text column carries `.padding-tb { padding: 64px 0 }`; CTA `py-5` = **48px**; footer `7em 0` | live measured band heights |
-| split bands | `.img-1/.img-2` = `position:absolute; width:50%; top:0; bottom:0; background: cover center`; text = `.col-lg-5` (445px at 1440) pushed to the opposite edge (`ml-auto` / `mr-auto`); inner content 376px tall | `.img-1` 720×504 @ x0; `.img-2` 720×504 @ x720; text 445×504 @ x830 / x165 |
-| testimonial card | **700px** max-width, `padding:40px`, white, **no shadow**; 60px round avatar + 20px gap; name 18px/300 `#000`; meta 16.8px `#a6a6a6`; quote 16px/28.8 `#6c757d` wrapped in typographic quotes; band heading 48px/900 centered | measured 700×242 @ x370, y3249 |
-| header | **85px** tall, white, `position: relative` (in flow), nav items `padding:27.2px 8px` (69×85 each), brand 20px/400/uppercase/`letter-spacing:4px` blue, search field **234×44** right-aligned with 30px left padding and a 1px `rgba(0,0,0,.3)` underline | live measured |
-| footer | `#333`, `7em 0`, 3 columns (4 / 5 / 3) + empty spacer; headings 16px/700 white `letter-spacing:1.6px`; 4 social glyphs 30×30 `rgba(255,255,255,.7)`; subscribe field 295×50 + 118×50 button; copyright centered 16.8px | live measured |
-| motion | play-disc 0.3s; button/nav 0.15s; carousel `smartSpeed:1000`; reveal = 100ms stagger per card after the waypoint; no parallax, no AOS library | `style.css` transitions + `main.js` |
+| token               | value                                                                                                                                                                                                                                                                                                              | measured evidence                                                                                                                                                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--brand` (primary) | **`#007bff`**                                                                                                                                                                                                                                                                                                      | 23 declarations; `.bg-primary`, active/hover nav + dropdown item, `.navbar-brand` link colour, `.service-box .square-figure` 2px border, `.form-control:focus` ring, `.slider-text p a`. Live: program band `rgb(0,123,255)`, diamond border, wordmark |
+| `--action` (CTA)    | **`#ffc107`** hover `#e0a800`                                                                                                                                                                                                                                                                                      | `.btn-warning` (6 declarations); button text `#212529`; measured CTA button `rgb(255,193,7)`, 174×54                                                                                                                                                   |
+| `--ink`             | **`#000`**                                                                                                                                                                                                                                                                                                         | `h1,h2,h3{color:#000}`; `.heading{color:#000}`                                                                                                                                                                                                         |
+| `--body`            | **`#6c757d`**                                                                                                                                                                                                                                                                                                      | `body{color:#6c757d}` (12 declarations), service copy, quotes, footer copy                                                                                                                                                                             |
+| `--surface-light`   | **`#f8f9fa`**                                                                                                                                                                                                                                                                                                      | `.bg-light` (3) — testimonial band                                                                                                                                                                                                                     |
+| `--surface-dark`    | **`#333`**                                                                                                                                                                                                                                                                                                         | `.site-footer{background:#333}`                                                                                                                                                                                                                        |
+| `--meta`            | **`#a6a6a6`**                                                                                                                                                                                                                                                                                                      | `.block-33 .vcard .name-text .meta` (16.8px, "XYZ Inc. Client")                                                                                                                                                                                        |
+| nav idle / active   | **`#666666`** / **`#007bff`**                                                                                                                                                                                                                                                                                      | `header .navbar .nav-link` / `.nav-link.active` (16.8px, weight 300, Montserrat)                                                                                                                                                                       |
+| footer links        | `rgba(255,255,255,.7)` underlined → `#fff` no underline                                                                                                                                                                                                                                                            | `.site-footer a` / `:hover`                                                                                                                                                                                                                            |
+| input border        | `#6c757d` at **2px** (subscribe), `rgba(0,0,0,.3)` 1px underline (search)                                                                                                                                                                                                                                          | `footer .form-control{border-width:2px}`; measured `2px solid rgb(108,117,125)`                                                                                                                                                                        |
+| radii               | **4px** on every button + form control (`0.25rem`); **7px** on the service diamond; `50%` on the play disc and the 60px avatar; header search field square                                                                                                                                                         | 7 × `0.25rem`, `7px`, 4 × `50%`, `border-radius:0` on the search field                                                                                                                                                                                 |
+| heading scale       | h1 **80px / 96px / 700 / UPPERCASE** (hero, 40px below 768px) · h2 `.heading` **48px / 48px / 900** · h3 **28px** base, **19.2px** inside `.service-box` (`1.2rem`), **20px** in the program band (`.block-6`), **18px / 300** for a testimonial name (`.block-33`), **16px / 700 / 1.6px tracking** in the footer | live computed styles per element                                                                                                                                                                                                                       |
+| body type           | **16.8px / 30.24px / 400** Oxygen                                                                                                                                                                                                                                                                                  | `body{font-size:1.05rem;line-height:1.8}`                                                                                                                                                                                                              |
+| buttons             | `.btn` base `font-size:13px; font-weight:900; letter-spacing:.2em (2.6px); text-transform:uppercase`; CTA `padding:16px 24px` (`px-4 py-3`), radius **4px**, `#212529` on `#ffc107`; subscribe button `padding:6px 12px`, **118×50**, radius `0 4px 4px 0`                                                         | live measured                                                                                                                                                                                                                                          |
+| hero                | `height:100vh; min-height:700px`, `background: url(hero_2) top center / cover`, `:before` `#000` at **opacity .4**; h1 `margin-left:.5em`, `margin-bottom:30px`; play disc **60×60** → 80×80; "Watch Video" 16.8px white                                                                                           | live measured (900px tall at 900 viewport)                                                                                                                                                                                                             |
+| section rhythm      | `.section { padding: 7em 0 }` = **117.6px**; split bands have no vertical padding — the text column carries `.padding-tb { padding: 64px 0 }`; CTA `py-5` = **48px**; footer `7em 0`                                                                                                                               | live measured band heights                                                                                                                                                                                                                             |
+| split bands         | `.img-1/.img-2` = `position:absolute; width:50%; top:0; bottom:0; background: cover center`; text = `.col-lg-5` (445px at 1440) pushed to the opposite edge (`ml-auto` / `mr-auto`); inner content 376px tall                                                                                                      | `.img-1` 720×504 @ x0; `.img-2` 720×504 @ x720; text 445×504 @ x830 / x165                                                                                                                                                                             |
+| testimonial card    | **700px** max-width, `padding:40px`, white, **no shadow**; 60px round avatar + 20px gap; name 18px/300 `#000`; meta 16.8px `#a6a6a6`; quote 16px/28.8 `#6c757d` wrapped in typographic quotes; band heading 48px/900 centered                                                                                      | measured 700×242 @ x370, y3249                                                                                                                                                                                                                         |
+| header              | **85px** tall, white, `position: relative` (in flow), nav items `padding:27.2px 8px` (69×85 each), brand 20px/400/uppercase/`letter-spacing:4px` blue, search field **234×44** right-aligned with 30px left padding and a 1px `rgba(0,0,0,.3)` underline                                                           | live measured                                                                                                                                                                                                                                          |
+| footer              | `#333`, `7em 0`, 3 columns (4 / 5 / 3) + empty spacer; headings 16px/700 white `letter-spacing:1.6px`; 4 social glyphs 30×30 `rgba(255,255,255,.7)`; subscribe field 295×50 + 118×50 button; copyright centered 16.8px                                                                                             | live measured                                                                                                                                                                                                                                          |
+| motion              | play-disc 0.3s; button/nav 0.15s; carousel `smartSpeed:1000`; reveal = 100ms stagger per card after the waypoint; no parallax, no AOS library                                                                                                                                                                      | `style.css` transitions + `main.js`                                                                                                                                                                                                                    |
 
 ## Requirements
 
@@ -581,3 +581,65 @@ followed by a centred copyright line that links Component Dock.
 - [ ] Images are `picsum.photos/seed/brawn-*` placeholders; no theme assets, no copied icons (lucide-react)
 - [ ] `packages/ui` components and `cn()` reused where they fit; no new runtime dependency
 - [ ] `TEMPLATES.md` rows 1222 and 1884 flipped to `[x]` with the `brawn.free.componentdock.com` link by the implementer; README status regenerated
+
+## Implementation notes (2026-10-25, implementer run)
+
+Shipped as `apps/brawn` (branch `feat/template-brawn`). Everything in the requirements above was
+reproduced section-for-section; the deltas below are the deliberate ones.
+
+- **Own copy everywhere a string is the design's own.** Brand (Brawn), the four service cards, the
+  two split bands, the three program columns, the four testimonials (four distinct people — the
+  source repeats "John Smith" three times), the CTA line, the contact rows and the quick links are
+  all written for this recreation. The **layout** words the requirements fix are kept verbatim:
+  `Best Fitness In The City`, `Enjoy The Fitness`, `Be Fit & Healthy`, `Testimonial`,
+  `Join With Us Now!`, `Get In Touch!`, `About Brawn`, `Contact Info`, `Subscribe`, `Quick Links`,
+  `Watch Video`, and the four service titles (`Quality Service · Spacious Gym · Live Healthy ·
+Crossfit`) plus the three program titles and the six dropdown program names.
+- **Split-band `h2` carries `-0.02em` tracking.** The reference renders with a _synthesised_ 900
+  (only Montserrat 400/700 are delivered, so the browser faux-bolds 700). Real Montserrat 900
+  measures **457 px** for "Enjoy The Fitness" inside the 445 px column, which wrapped the heading to
+  two lines (96 px). With the tracking the heading fits at 48 px, matching the measured reference
+  (`h2` = 445 × 48, one line).
+- **Testimonial controls are 54 × 54** (the reference's `.owl-nav` buttons measure 110 × 54);
+  `aria-disabled` at both ends instead of the source's `.disabled { opacity: .2 }` only.
+- **Quick Links:** `About` and `Contact` are real in-page links; `Terms of Use` and `Disclaimers`
+  have no page in a single-page build and are rendered as plain text rather than dead `href="#"`
+  links.
+- **Nav mapping:** `Gallery` → the second split band (`#gallery`), `Coaches` → the testimonial band
+  (`#coaches`). The theme's separate interior pages have no bands here, so those two labels point at
+  the band that carries the same register (imagery / people).
+- **Header search** is a labelled input with a `Go` submit and an inline message; the source posts
+  to `#` with a placeholder-only input and no label. It never makes a request.
+- **Subscribe** validates with one email rule (`src/lib/forms.ts`), marks the field `aria-invalid`
+  and shows a polite status; the source posts to `#`.
+- **Icons** are `lucide-react` (Award / Warehouse / HeartPulse / Dumbbell, Activity / Flame /
+  Repeat, Play, Chevron*, Menu, X) with the four social marks as inline SVG paths (brand icons are
+  not in the icon set). Images are `picsum.photos/seed/brawn-*` placeholders.
+- **Reveal** is `IntersectionObserver` + `prefers-reduced-motion`, with content visible when the
+  observer or the API is missing — the source's `.element-animate { opacity: 0 }` alone would hide
+  the band forever without jQuery.
+
+### Measured verification (Playwright, 1440 × 900 and 390 × 844)
+
+| band              | reference |     brawn |         Δ |
+| ----------------- | --------: | --------: | --------: |
+| header            |        85 |        85 |         0 |
+| hero              |       900 |       900 |         0 |
+| services          |       540 |       553 |     +2.4% |
+| Enjoy The Fitness |       504 |       496 |     −1.6% |
+| program band      |       449 |       440 |     −2.0% |
+| Be Fit & Healthy  |       504 |       520 |     +3.2% |
+| testimonials      |       717 |       671 |     −6.4% |
+| CTA               |       312 |       313 |     +0.3% |
+| footer            |       730 |       655 |    −10.3% |
+| **document**      | **4,739** | **4,634** | **−2.2%** |
+
+Hero `h1` = 80 px / `rgb(255,255,255)` at 1440 and 40 px at 390; body 16.8 px; Montserrat
+400/700/**900** and Oxygen 300/400/700 reported as _loaded_ by `document.fonts` (no synthesis);
+`scrollWidth − clientWidth` = **0** at both widths.
+
+### Gate results
+
+- `bash scripts/verify-app.sh brawn` — typecheck ✓, lint ✓, **43 tests**, coverage 100 %
+  statements / 100 % branches / 100 % functions / 100 % lines, build ✓.
+- `npm run spec:validate` — passes (3,291 items, 0 failed).
