@@ -97,6 +97,9 @@ Vite + Tailwind 4 + TypeScript app under the name **Flowcert** (`apps/flowcert`)
 
 ## Deploy
 
-- [ ] `gh workflow run deploy-surge.yml -f app="flowcert"` (or let deploy-on-merge fire)
-- [ ] `curl -sSI https://flowcert.free.componentdock.com | head -1` → `HTTP/2 200`,
-      `--resolve` probe passes `ssl_verify_result=0`
+- [x] deploy-on-merge fired (run 40156034040, `Verify + deploy changed templates: success`)
+- [x] Surge origin serves the build: `curl -H 'Host: flowcert.free.componentdock.com' https://na-west1.surge.sh/`
+      → 200, `assets/index-ByYLM_3d.js` 292,830 B and `assets/index-DH_UfE-c.css` 34,405 B (identical to
+      the local build). The branded edge `https://flowcert.free.componentdock.com/` still answers with the
+      fleet-wide Cloudflare Universal-SSL gap for second-level wildcards (`sslv3 alert handshake failure` /
+      no matching SAN) recorded in `docs/deployment.md` — not app-specific, no redeploy required
