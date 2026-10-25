@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Design-token note: two hand-built ten-step ramps carry the whole page.
+     "ink" is a warm, green-cast neutral: every ground, hairline, border and
+     text colour on the first nine bands. "primary" is the single green hue —
+     it fills every primary button, the emergency strip and the closing band,
+     and it is the only accent the diagram uses. Tailwind's own grey ramp is
+     used deliberately on the last three bands (reviews, questions, footer),
+     so those greys are not re-declared: ink there would warm the band by a
+     visible few units per channel. One family, five weights, no italic. */
+  --color-ink-50: #f5f6f4;
+  --color-ink-100: #e7eae5;
+  --color-ink-200: #ccd2c8;
+  --color-ink-300: #a4ae9f;
+  --color-ink-400: #76826f;
+  --color-ink-500: #566151;
+  --color-ink-600: #3d473a;
+  --color-ink-700: #2b332a;
+  --color-ink-800: #1a201a;
+  --color-ink-900: #0e120e;
+
+  --color-primary-50: #f2fbe9;
+  --color-primary-100: #e1f6cc;
+  --color-primary-200: #c4ec9c;
+  --color-primary-300: #a2de66;
+  --color-primary-400: #84cc3c;
+  --color-primary-500: #69b024;
+  --color-primary-600: #528c1a;
+  --color-primary-700: #426e18;
+  --color-primary-800: #375818;
+  --color-primary-900: #2e4917;
+
+  --font-sans: 'Outfit', system-ui, -apple-system, sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px #0000001a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-white font-sans text-gray-900 antialiased;
+  }
+
+  /* One visible ring, everywhere, in the brand green. */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary-500;
+  }
+
+  :where(h1, h2, h3) {
+    text-wrap: balance;
+  }
+}
+
+@utility section {
+  /* 80 px of air, 112 px from `lg` up — the reference's band rhythm. */
+  padding-block: 5rem;
+
+  @variant lg {
+    padding-block: 7rem;
+  }
+}

@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (378)
+## Business (379)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1144,6 +1144,7 @@
 - [x] **Pastel** — [colorlib](https://colorlib.com/wp/template/pastel/) · [tint](https://tint.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pastel-free-template.jpg)
 - [x] **Pato** — [colorlib](https://colorlib.com/wp/template/pato/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pato-free-modern-restuarant-website-template.jpg) · [gastronome](https://gastronome.free.componentdock.com)
 - [x] **Persuit** — [colorlib](https://colorlib.com/wp/template/persuit/) · [modista](https://modista.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/persuit-free-template.jpg)
+- [~] **Perimeter** — [colorlib](https://colorlib.com/wp/template/perimeter/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/perimeter-template.jpg) · [sealwise](https://sealwise.free.componentdock.com)
 - [x] **Pestcontrol** — [colorlib](https://colorlib.com/wp/template/pestcontrol/) · [bugguard](https://bugguard.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pestcontrol-colorlib-template.jpg)
 - [x] **Petvet** — [colorlib](https://colorlib.com/wp/template/petvet/) · [vetora](https://vetora.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/petvet-free-template.jpg)
 - [x] **Pexcon** — [colorlib](https://colorlib.com/wp/template/pexcon/) · [pexflow](https://pexflow.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pexcon-free-template.jpg)

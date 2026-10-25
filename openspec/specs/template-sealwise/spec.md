@@ -10,7 +10,7 @@ in the `h1` as a two-part sentence in two colours:
 The page opens on a **9-tab pest finder** (`#identify`) that asks the visitor to pick the animal before the
 site starts talking, and answers each pick with four numbers-worth of honesty: *Visits*, *One-off price* (the
 only field rendered in `primary-300`), *We can be there*, and one paragraph saying whether the **quarterly plan
-already covers it**. Six of the nine say **"On the plan."**; three say **"Not on the plan."** — a page that
+already covers it**. Five of the nine say **"On the plan."**; four say **"Not on the plan."** — a page that
 admits what it does not sell is the design's voice, and a recreation that makes all nine covered has deleted
 it.
 
@@ -329,9 +329,14 @@ treatment"** → `/book?pest=<slug>` and an outline **"See the quarterly plan"**
 | Mosquitoes | barrier on foliage + larvicide in standing water | Monthly, April to October | **From $65 per visit** | Usually within 3 days | **Not on the plan.** |
 | Fleas | interior treatment + growth regulator + yard treatment | Two, at 14 days | **From $240** | Usually within 2 days | **Not on the plan.** |
 
-**Six "On the plan." / three "Not on the plan." is the design's honesty mechanism** — keep the split, and keep
+**Five "On the plan." / four "Not on the plan." is the design's honesty mechanism** — keep the split, and keep
 the three refusal sentences identical in shape (*"This one is quoted and treated on its own, because it needs a
 different product and a different follow-up."*).
+
+> **Measured correction (implementer run, 2026-10-25):** the live index carries **five** `On the plan.`
+> notes (ants, roaches, mice and rats, wasps, spiders) and **four** `Not on the plan.` notes (termites,
+> bed bugs, mosquitoes, fleas), not the six/three this spec first recorded. The table above was always
+> right; the prose was not. The recreation follows the live page and its own test asserts 5 / 4.
 
 ### 3 — `#emergency` (164 px, `primary-600`, `py-6 lg:py-8`)
 
@@ -784,7 +789,7 @@ The app SHALL render a non-sticky 37 px compliance strip above a sticky header t
 ### Requirement 4: `#identify` — the nine-pest finder
 
 The app SHALL render the dark finder band with nine selectable pests, a single-open detail panel, and the
-"on the plan / not on the plan" split preserved exactly (six covered, three not).
+"on the plan / not on the plan" split preserved exactly (five covered, four not).
 
 #### Scenario: Band and frame
 
@@ -1048,7 +1053,7 @@ The app SHALL render the dark finder band with nine selectable pests, a single-o
       403 × 52
 - [ ] `#identify` **971 px** `#0e120e`: nine tabs **223 × 95** radius 12 in a 3-up grid (`lg:col-span-7`),
       panel **483 × 507** (`lg:col-span-5`), selected tab = `#84cc3c` border + `#84cc3c14` fill, prices in
-      `#a2de66`, **six "On the plan." / three "Not on the plan."**, `aria-expanded` single-open, ants default
+      `#a2de66`, **five "On the plan." / four "Not on the plan."**, `aria-expanded` single-open, ants default
 - [ ] `#emergency` **164 px** `#528c1a` with the 8 px pinging dot and the **211 × 52** white `rounded-full`
       phone pill
 - [ ] `#plans` **970 px** white: three **389 × 442** cards radius 16 pad 24, middle ringed `#528c1a` +
