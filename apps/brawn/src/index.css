@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+/* Brawn tokens — brand palette: the one saturated blue (#007bff) carries the
+   wordmark, the active nav item, every service diamond, the program band and the
+   CTA band; a warm-neutral "body" grey (#6c757d) carries copy; amber (#ffc107)
+   is reserved for the single call-to-action button; #f8f9fa is the testimonial
+   surface and #333 the footer. Shape: 4 px on every button and input, 7 px on
+   the service diamonds, circles for the play disc and the avatars. Rhythm:
+   1.05rem / 1.8 body, 48 px band headings, 117.6 px band padding. */
+@theme {
+  --color-brand: #007bff;
+  --color-brand-dark: #0056b3;
+  --color-action: #ffc107;
+  --color-action-dark: #e0a800;
+  --color-ink: #000000;
+  --color-body: #6c757d;
+  --color-nav: #666666;
+  --color-surface-light: #f8f9fa;
+  --color-surface-dark: #333333;
+  --color-meta: #a6a6a6;
+
+  /* The shared packages/ui Button paints `primary-*`; point that ramp at the
+     same blue so shared components inherit the brand instead of a default. */
+  --color-primary-50: #e6f1ff;
+  --color-primary-100: #cce3ff;
+  --color-primary-200: #99c7ff;
+  --color-primary-300: #66aaff;
+  --color-primary-400: #3396ff;
+  --color-primary-500: #1a8cff;
+  --color-primary-600: #007bff;
+  --color-primary-700: #0056b3;
+
+  --font-sans: 'Oxygen', system-ui, sans-serif;
+  --font-display: 'Montserrat', system-ui, sans-serif;
+
+  --radius-btn: 0.25rem;
+  --radius-diamond: 7px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #6c757d;
+    font-family: 'Oxygen', system-ui, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #000000;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 900;
+    line-height: 1.5;
+  }
+
+  :focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+
+  [id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 117.6 px vertical padding on the reference's standard band rhythm. */
+  .band {
+    padding-block: 7.35rem;
+  }
+
+  .diamond {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border: 2px solid var(--color-brand);
+    border-radius: var(--radius-diamond);
+    transform: rotate(45deg);
+  }
+
+  .diamond > svg {
+    transform: rotate(-45deg);
+  }
+}
