@@ -130,7 +130,7 @@ effect — this prep touches no shared file.)
 | archive README    | 1,260 B; also claims `images/` — **no `images/` directory** (**defect**)                                          |
 | fonts             | Newsreader **400 italic** + **500** normal, `latin` + `latin-ext`; **4 woff2 files = 4 distinct binaries**          |
 | images            | **none** — 0 `<img>`, 0 in the archive                                                                          |
-| SVG               | **18 inline**: 15 star glyphs (3 cards × 5) + 3 brand marks; all unclassed, styled by descendant selectors          |
+| SVG               | **18 inline**: 15 star glyphs (3 cards × 5, the one on card 3 carrying `cl-card05__off`) + 3 brand marks |
 | classes           | **18** in the markup, **19** selected by the sheet → **1 dead selector** (`.cl-icon`), 0 markup-only classes       |
 | anchors           | **0** — the page has nothing to click                                                                            |
 | forms / buttons   | **0 / 0**                                                                                                       |
@@ -627,8 +627,9 @@ shadow are catalogue furniture** — none of it belongs in the app (the app's gr
    `card-01`, `card-03` and `card-04`; `card-02` is the only sibling that really ships JS. Do not port a script
    and do not add photography.
 2. **`.cl-icon` is a dead selector** — fourth sibling in a row. The sheet styles it (`height: 1em; width: auto;
-   fill: currentColor; display: inline-block`) and the markup never uses it: the 18 SVGs are unclassed and
-   styled through `.cl-card05__stars svg` and `.cl-card05__logo svg`. Omit it.
+   fill: currentColor; display: inline-block`) and the markup never uses it: the 18 SVGs are styled through
+   `.cl-card05__stars svg` and `.cl-card05__logo svg`, with exactly one class in play (`cl-card05__off` on card
+   3's fifth star). Omit `.cl-icon`.
 3. **The `:where(html) … { all: revert; }` guard is 55 lines of anti-framework reset** (plus six
    `::-webkit-datetime-edit` selectors and a `[hidden]` re-hide) that exists so the snippet renders identically
    inside a Bootstrap host page. Tailwind's preflight is the equivalent; port **none** of it. Note the side
