@@ -1,0 +1,116 @@
+@import 'tailwindcss';
+
+/* Percline tokens — measured from the reference design's compiled Tailwind 4
+   sheet (56,139 B) and its live render at 1440 px. The brand is a grass-green
+   ramp (#41712f at its centre), not a stock Tailwind green; the neutral is a
+   warm stone `ink` ramp that keeps the green from reading institutional. Two
+   dark grounds (#191713, #111827) and two green bands (#41712f, #365a28) are
+   the whole saturated budget. Shape: 8 / 12 / 16 px radii, one soft shadow. */
+@theme {
+  /* brand: grass green (measured literals, not stock tailwind green) */
+  --color-primary-50: #f1f7ee;
+  --color-primary-100: #deedd6;
+  --color-primary-200: #bedcaf;
+  --color-primary-300: #95c47f;
+  --color-primary-400: #6ea857;
+  --color-primary-500: #548d3d;
+  --color-primary-600: #41712f; /* brand */
+  --color-primary-700: #365a28;
+  --color-primary-800: #2e4a24;
+  --color-primary-900: #283e21;
+
+  /* neutral: warm stone, not tailwind gray */
+  --color-ink-50: #f7f6f4;
+  --color-ink-100: #edebe6;
+  --color-ink-200: #dcd8cf;
+  --color-ink-300: #b9b2a4; /* placeholder colour only */
+  --color-ink-400: #8d8574;
+  --color-ink-500: #6b6454;
+  --color-ink-600: #514c3f;
+  --color-ink-700: #3d3931;
+  --color-ink-800: #282520;
+  --color-ink-900: #191713;
+
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #548d3d;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary-600);
+    color: #ffffff;
+    box-shadow:
+      0 10px 15px -3px rgb(65 113 47 / 0.25),
+      0 4px 6px -4px rgb(65 113 47 / 0.25);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-primary-700);
+  }
+
+  /* the sticky header's emphasised link once a band is in view */
+  .nav-active {
+    color: var(--color-ink-800);
+    font-weight: 600;
+  }
+}
