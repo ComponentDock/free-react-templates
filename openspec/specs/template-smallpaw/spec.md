@@ -814,51 +814,51 @@ band that exists.
 
 ## Verification checklist
 
-- [ ] Spec validates: `openspec validate template-smallpaw --type spec` prints
+- [x] Spec validates: `openspec validate template-smallpaw --type spec` prints
       `Specification 'template-smallpaw' is valid`
-- [ ] `apps/smallpaw` scaffolded from the simplest existing app, package renamed
+- [x] `apps/smallpaw` scaffolded from the simplest existing app, package renamed
       `@free-react-templates/smallpaw`, `public/CNAME` = `smallpaw.free.componentdock.com`, `homepage` =
       `https://smallpaw.free.componentdock.com`, `vite.config.ts` still calls `injectUiSource()`
-- [ ] Tokens: `primary` `#fdf4f8` → `#5b2440` with **`#a83a6f`** as the brand and `#8a2f5b` / `#6f284b` as the
+- [x] Tokens: `primary` `#fdf4f8` → `#5b2440` with **`#a83a6f`** as the brand and `#8a2f5b` / `#6f284b` as the
       two dark band grounds; `accent` `#fdf8ed` → `#684324` with **`#d4a24c`**; stock `gray` 50–900 for chrome;
       radii 8/12/16/24 px; `shadow-soft` `0 4px 16px -4px #0000001a`
-- [ ] Fonts: **Plus Jakarta Sans 400/500/600/700** via one `<link>`; `tabular-nums` on plan prices and both fee
+- [x] Fonts: **Plus Jakarta Sans 400/500/600/700** via one `<link>`; `tabular-nums` on plan prices and both fee
       columns; **no second family, no mono face**
-- [ ] `.text-gradient` (`#a83a6f` → `#df77a9`, `background-clip:text`) and the `hero-float` keyframe
+- [x] `.text-gradient` (`#a83a6f` → `#df77a9`, `background-clip:text`) and the `hero-float` keyframe
       (8 s / 10 s reverse) reproduced; `shimmer` not added; `ping` and `spin` are the only other animations
-- [ ] Header: sticky `white/80` + blur, 64/80 px, **eight** links from **`lg`**, CTA from `lg`, hamburger below,
+- [x] Header: sticky `white/80` + blur, 64/80 px, **eight** links from **`lg`**, CTA from `lg`, hamburger below,
       `shadow-lg` past 50 px, disclosure with `aria-expanded`
-- [ ] Hero: `primary-50`→white gradient, two parallax blobs (`0.15`, `-0.1`), ping-dot pill, 60 px `h1` with the
+- [x] Hero: `primary-50`→white gradient, two parallax blobs (`0.15`, `-0.1`), ping-dot pill, 60 px `h1` with the
       gradient span, 20 px lede, solid + outlined CTA, four static facts (`£46`, `24/7`, `4,100`, `16`),
       photograph 1024×512 from a `picsum` seed
-- [ ] Typewriter: three phrases in order, 3 s cadence, 300 ms fade, `display:inline-block`, gradient preserved,
+- [x] Typewriter: three phrases in order, 3 s cadence, 300 ms fade, `display:inline-block`, gradient preserved,
       static under reduced motion, no `Watch Demo` button
-- [ ] Out-of-hours band: `#6f284b`, 56 px padding, amber pill with ping dot, 30 px white `h2`, amber
+- [x] Out-of-hours band: `#6f284b`, 56 px padding, amber pill with ping dot, 30 px white `h2`, amber
       `rounded-2xl` phone button with valid `tel:`, provider card (`484×148`-ish) with the distance chip,
       three-cell schedule on `white/10` gutters, closing footnote
-- [ ] Stats strip: `bg-gray-50` + `border-y`, `py-16`, 2→4 columns, four counters (`4,100`, `16`, `5`, `100%`)
+- [x] Stats strip: `bg-gray-50` + `border-y`, `py-16`, 2→4 columns, four counters (`4,100`, `16`, `5`, `100%`)
       animating once at 50 % visibility over 2 s, final values in the DOM without `IntersectionObserver`
-- [ ] Species: six cards in the reference order, `lg:grid-cols-3`, four bordered-white and two dashed-grey with
+- [x] Species: six cards in the reference order, `lg:grid-cols-3`, four bordered-white and two dashed-grey with
       `Referred on` chips, `Routine care` rows, accent callout below
-- [ ] Health plans: three `rounded-3xl` cards, featured `Adult` (`#8a2f5b` + amber ring, amber badge, amber
+- [x] Health plans: three `rounded-3xl` cards, featured `Adult` (`#8a2f5b` + amber ring, amber badge, amber
       ticks, white CTA), `£17` / `£21` / `£29`, five inclusions each, footnote
-- [ ] Fee table: eight rows in order, `primary-700` `thead`, `Standard` / `On a plan` columns right-aligned,
+- [x] Fee table: eight rows in order, `primary-700` `thead`, `Standard` / `On a plan` columns right-aligned,
       `Included` / discounted / em dash values, descriptions, accent callout
-- [ ] Testimonials: three cards, 3/2/1 per view, 5 s autoplay paused on hover, dots at every width, arrows from
+- [x] Testimonials: three cards, 3/2/1 per view, 5 s autoplay paused on hover, dots at every width, arrows from
       `lg`, stars `#df77a9`, initial discs `bg-primary-100`
-- [ ] FAQ: five exclusive rows, `aria-expanded`/`aria-controls`, 32 px disc rotating 45°, `max-height`
+- [x] FAQ: five exclusive rows, `aria-expanded`/`aria-controls`, 32 px disc rotating 45°, `max-height`
       transition, the five questions in the reference order
-- [ ] Closing band: `#a83a6f`→`#6f284b` diagonal gradient, 40 px dot grid at 10 %, two blurred blobs, 48 px
+- [x] Closing band: `#a83a6f`→`#6f284b` diagonal gradient, 40 px dot grid at 10 %, two blurred blobs, 48 px
       white `h2`, white solid + ghost CTA
-- [ ] Footer: brand block + practice columns (no `Spaces`), social tiles with real hrefs, `tel:` without
+- [x] Footer: brand block + practice columns (no `Spaces`), social tiles with real hrefs, `tel:` without
       spaces, `.example` mailbox, wired newsletter with inline errors + toast, legal bar with the
       **`Component Dock`** link to `https://www.componentdock.com/`
-- [ ] Mobile bar: `lg:hidden`, 69 px, `Call` → the practice's real `tel:`, second button → `#contact`; cookie
+- [x] Mobile bar: `lg:hidden`, 69 px, `Call` → the practice's real `tel:`, second button → `#contact`; cookie
       strip paints above it
-- [ ] No `colorlib` string, no source brand, no source mailbox/wordmark/stylesheet under `apps/smallpaw`; paw
+- [x] No `colorlib` string, no source brand, no source mailbox/wordmark/stylesheet under `apps/smallpaw`; paw
       mark redrawn; no copied JSON-LD; favicon replaced with the brand mark
-- [ ] Every internal fragment resolves; **no `#spaces` link anywhere**
-- [ ] Row added for the design under `## Business` **between `Feliciano` and `Finances`** with the heading
+- [x] Every internal fragment resolves; **no `#spaces` link anywhere**
+- [x] Row added for the design under `## Business` **between `Feliciano` and `Finances`** with the heading
       re-measured (`(369)`, or `(370)` if Kettle landed first) and flipped to `[x]` with the bookkeeping commit
       (the exact line is in §Purpose)
 - [ ] `npm run spec:validate`, `scripts/verify-app.sh smallpaw` and the CI gate are green
