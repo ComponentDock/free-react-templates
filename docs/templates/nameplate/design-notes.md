@@ -10,8 +10,8 @@ A **hand-written static snippet**, not a theme build: 7 KB of HTML, one 9,249 B 
 all** (`js/snippet.js` → 404; the archive has no `js/` directory even though its README lists one), Bootstrap 5
 present only as a
 `:where(html) … { all: revert; }` reset guard so the snippet renders the same inside any host page. The
-stylesheet's header says it plainly: *"Every style this snippet uses, and nothing else. No framework, no build
-step."*
+stylesheet's header says it plainly: _"Every style this snippet uses, and nothing else. No framework, no build
+step."_
 
 The live sheet is byte-identical to the copy inside `downloads/free/card-01.zip`
 (sha256 `9b58f1397a874412606301630759acb635e18317cf0e621459c155c6c3a0f0cb`, 9,249 B), and the live HTML is the
@@ -21,13 +21,13 @@ hints). So: **live preview verified; the archive is its un-versioned twin.**
 
 ## Structure order (measured at 1440 × 900)
 
-| # | band                          | hook                     | ground    |   top | height |
-| - | ----------------------------- | ------------------------ | --------- | ----: | -----: |
-| 0 | page                          | `body`                   | `#f6f3ee` |     0 |  786.1 |
-| 1 | container                     | `.cl-card01-demo`        | —         |     0 |  786.1 |
-| 2 | header (eyebrow + `h1`)       | `__head`                 | —         |    72 |   67.2 |
-| 3 | roster grid (4 × 282)         | `.cl-card01-grid`        | —         | 171.2 |  542.9 |
-| — | *nothing else*                | —                        | —         |     — |      — |
+| #   | band                    | hook              | ground    |   top | height |
+| --- | ----------------------- | ----------------- | --------- | ----: | -----: |
+| 0   | page                    | `body`            | `#f6f3ee` |     0 |  786.1 |
+| 1   | container               | `.cl-card01-demo` | —         |     0 |  786.1 |
+| 2   | header (eyebrow + `h1`) | `__head`          | —         |    72 |   67.2 |
+| 3   | roster grid (4 × 282)   | `.cl-card01-grid` | —         | 171.2 |  542.9 |
+| —   | _nothing else_          | —                 | —         |     — |      — |
 
 There is **no footer, nav, hero or second section in the reference** — the document ends with the grid. The
 recreation adds exactly one thing the repo requires: a single small-print line linking Component Dock
@@ -72,7 +72,7 @@ White, radius **22**, 1 px `#ece7df` border, **10 px** padding, two-layer shadow
    concentric-but-cheap. The `center 25%` crop is doing real work: the source portraits are 600 × 720 and the
    window is 260 × 280.8, so a centre crop would cut foreheads.
 2. **tag** — a `<span>`, absolutely positioned **left 12 / bottom 12**, pill radius, `rgba(255,255,255,.92)`,
-   12/700 with `+0.02em`, padding `5px 12px`, `0 4px 12px rgba(0,0,0,.12)`. It is *on* the photograph, not
+   12/700 with `+0.02em`, padding `5px 12px`, `0 4px 12px rgba(0,0,0,.12)`. It is _on_ the photograph, not
    under it. Measured 79.7 × 28.6 for "Founder".
 3. **body** (`flex: 1`, padding `18px 10px 6px`) — `<h2>` name 19/700 `−0.19px`; role 14/600 `#c2410c` with
    `margin: 2px 0 10px`; bio 14/400 `#57534e`.
@@ -133,3 +133,37 @@ URLs for the brand/second discs, `#contact`-style anchors or the profile section
   mathematical consequence of the `auto-fit` track, and a ladder will disagree with them at 520/600/1180.
 - Do not name ColorLib, `card-01`, or the source title anywhere in `apps/nameplate` — the footer credits
   Component Dock (`https://www.componentdock.com/`), and provenance lives in this file, the spec and the PR.
+
+## Implementation record (shipped 2026-10-26)
+
+Built at `apps/nameplate` (React 19 + Vite + Tailwind 4 + TS strict, 100% coverage, 22 tests),
+deployed to https://nameplate.free.componentdock.com. Measured with Playwright 1.62 Chromium against
+the built bundle (1,440 × 900 unless stated):
+
+| what                 | recreation                                                                           | reference          | note                                                                                                |
+| -------------------- | ------------------------------------------------------------------------------------ | ------------------ | --------------------------------------------------------------------------------------------------- |
+| container            | 1,232 outer / 1,200 content at x 104                                                 | same               | `max-w-[1232px] px-4` because Tailwind is border-box                                                |
+| card                 | **282 × 542.92**                                                                     | 282 × 542.9        | a 0.02 px delta on the whole plate                                                                  |
+| media                | **260 × 280.8**, radius 16                                                           | same               | `aspect-[5/5.4]`                                                                                    |
+| tag                  | 73.69 × **28.59**                                                                    | 79.7 × 28.6        | height exact; width −6 px (real Plus Jakarta Sans advances vs the reference's variable-weight file) |
+| head / h1 / grid top | 66.78 / 95.6 / 170.8                                                                 | 67.2 / 96 / 171.2  | `leading-[1.2]` on the eyebrow is what aligns it                                                    |
+| name / role / bio    | 24.69 / 21.69 / 86.75                                                                | 24.7 / 21.7 / 86.8 | `leading-[1.55]` must be explicit — `text-sm` would set 20px                                        |
+| foot                 | 51 tall, all four at y **649.6**                                                     | 51, one baseline   | `li { display:flex }` + `flex-1` body, no fixed height                                              |
+| discs                | 36 × 36, glyph 17                                                                    | same               | hover fills `#c2410c`, `-2px`, `.2s`                                                                |
+| documents            | 900 at 1,280–1,920 (no scroll); 2,652 at 390                                         | 900 / 2,624        | +28 at 390 = the required Component Dock line (48) minus four 6.7 px-shorter cards                  |
+| columns              | 1/1/1/1/2/2/2/3/4/4/4/4 at 320/360/390/520/600/700/768/1,024/1,180/1,280/1,440/1,920 | same               | card widths 288/328/358/488/272/322/356/314.66/269/282                                              |
+| horizontal scroll    | none at any probed width                                                             | none               | `scrollWidth === clientWidth` everywhere                                                            |
+
+Two things the implementation had to get right that the sheet alone does not reveal:
+
+1. **Reduced motion must target `translate`/`scale`, not `transform`.** Tailwind 4 compiles
+   `-translate-y-1` / `scale-105` to the standalone `translate` / `scale` properties, so a
+   `transform: none !important` override does nothing — and Lightning CSS _rewrites_ a
+   `translate:none; scale:none` pair into `transform: translate(0) scale(1)`, which also does nothing.
+   The working solution is `motion-reduce:hover:translate-y-0` / `motion-reduce:group-hover:scale-100`
+   on the utilities themselves (verified: `translate: 0px`, `scale: 1`, `transition-duration: 0s` under
+   `reduce`; `-4px` / `1.05` / `.3s`–`.6s` without it). The `transition: none !important` base rule is
+   enough for the durations.
+2. **`min-h-screen` belongs on the page wrapper, not on `<main>`.** With `main` at `min-h-screen` the
+   attribution line is pushed below a full 900 px band and the page scrolls at 1440 (948 px); a
+   `flex min-h-screen flex-col` wrapper with `main { flex-1 }` keeps the document at exactly 900.

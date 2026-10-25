@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+/* Nameplate tokens — one warm sand ground, five warm neutrals, and two rusts:
+   #c2410c carries the role line, the disc hover fill and the focus ring;
+   #9a3412 is the eyebrow only, one step darker on purpose. */
+@theme {
+  --color-sand: #f6f3ee;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-accent: #c2410c;
+  --color-ember: #9a3412;
+  --color-line: #ece7df;
+  --color-media: #e7e1d8;
+  --color-chip: #f5f1ea;
+  --radius-card: 22px;
+  --radius-media: 16px;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-sand);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* The reference holds all three hover behaviours still under reduced motion:
+     no lift, no photo zoom, no disc hop. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+    }
+  }
+}
