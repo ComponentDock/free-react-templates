@@ -63,7 +63,7 @@ prep needs a different invented name.
 | `fernhill` | preview 200, 75015 B |
 | `fieldline` | preview 200, 70376 B |
 | `fieldnotes-student` | preview 200, 7216 B |
-| `fixtura` | preview 200, 41456 B |
+| `fixtura` | **shipped** as Brassworks — `apps/brassworks` |
 | `flowpage` | preview 200, 45731 B |
 | `groundwork` | app exists (other design); orphan prep (other design) |
 | `halfpast` | preview 200, 105852 B |
