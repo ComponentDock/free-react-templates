@@ -1,0 +1,92 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+
+  /* design-token note: brand palette is a two-ramp split — green for action and
+     every plant cue, warm stone for the portfolio ground and the dark band */
+  --color-primary-50: #f0fdf4;
+  --color-primary-100: #dcfce7;
+  --color-primary-200: #bbf7d0;
+  --color-primary-300: #86efac;
+  --color-primary-400: #4ade80;
+  --color-primary-500: #22c55e;
+  --color-primary-600: #16a34a;
+  --color-primary-700: #15803d;
+  --color-primary-800: #166534;
+  --color-primary-900: #14532d;
+
+  --color-accent-50: #fafaf9;
+  --color-accent-100: #f5f5f4;
+  --color-accent-200: #e7e5e4;
+  --color-accent-300: #d6d3d1;
+  --color-accent-400: #a8a29e;
+  --color-accent-500: #78716c;
+  --color-accent-600: #57534e;
+  --color-accent-700: #44403c;
+  --color-accent-800: #292524;
+  --color-accent-900: #1c1917;
+
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+
+  --animate-hero-float: hero-float 8s ease-in-out infinite;
+  --animate-hero-float-reverse: hero-float 10s ease-in-out infinite reverse;
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    33% {
+      transform: translate3d(18px, -24px, 0) scale(1.04);
+    }
+    to {
+      transform: translate3d(-14px, 16px, 0) scale(0.98);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* the headline's second line only: brand green to its light tint, clipped to the glyphs */
+.text-gradient {
+  background-image: linear-gradient(to right, #16a34a, #4ade80);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
