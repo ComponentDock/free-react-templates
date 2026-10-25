@@ -32,6 +32,10 @@ card pattern.
 | Muted          | `#64748b`             | Secondary copy                     |
 | Light band     | `#f1f5f9`             | Alternating section background     |
 
+<!-- body-role-tokens: travelers/body/jetpath -->
+**Body-text role (measured 2026-10-25):** this prep states `#1e293b`, which is declared by no rule in the linked sheets and painted by no element — body resolves to #4d4d4d and no p rule exists. `body{color:#4d4d4d}; #1e293b is declared by no rule in the ten linked sheets`. The measured value is `#4d4d4d`.
+<!-- /body-role-tokens -->
+
 ## Requirements
 
 ### Requirement 1: Navbar With Search

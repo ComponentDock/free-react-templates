@@ -55,6 +55,10 @@
 | Step connector active | `2px solid #4f46e5` | Line between completed steps |
 | Transitions | Smooth fade/slide between steps | Elegant transitions between sections |
 
+<!-- body-role-tokens: colorlib-wizard-30/typeface/fluxgate -->
+**Typeface role (measured 2026-10-25):** this prep states `Poppins`, which the render contradicts: the sheet declares no Poppins rule (.wizard-v10-content{font-family:'Montserrat', sans-serif}). The sibling prep `formwalk` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Requirements
 
 ### Feature: FluxGate — Multi-Step Form Wizard

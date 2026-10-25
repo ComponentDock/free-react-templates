@@ -59,6 +59,10 @@ Extracted from the preview stylesheet (`css/style.css`) and HTML structure:
 | Page layout                 | Full viewport height, centered                | style.css `.content` = `100vh` |
 | Logo width                  | `70px`                                        | style.css `.logo img`          |
 
+<!-- body-role-tokens: modal-19/body/piazza -->
+**Body-text role (measured 2026-10-25):** this prep states `#b3b3b3`, which is a real rule that LOSES: both rendered paragraphs are #777777, because .cl-modal .cl-modal-content .cl-modal-body p{color:#777} out-ranks p{color:#b3b3b3}. The prep's second row naming `#777777` is the value that paints. The sibling prep `reviewcard` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Visual design (from preview HTML)
 
 The template shows a full-viewport centered layout with a light background. In the center is a heading "Modal #9" and a Bootstrap secondary button labeled "Launch modal". When clicked, a large centered modal dialog appears with:

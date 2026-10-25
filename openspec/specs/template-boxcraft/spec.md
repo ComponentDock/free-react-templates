@@ -52,6 +52,10 @@ Extracted from `style.css` of the live preview at preview.colorlib.com:
 | `font-tertiary` | `'Roboto', sans-serif` | Some auxiliary text |
 | `content-width` | `1170px` | Max content width (content-1170) |
 
+<!-- body-role-tokens: boxus/brand/boxcraft -->
+**Brand-fill role (measured 2026-10-25):** this prep states `#23214c`, which the render contradicts: the CTA paints #e54b76 on its text and border; #23214c is the page ink (a.button{border:2px solid #e54b76; color:#e54b76} (common.css)). The sibling prep `artbox` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ### Visual description
 
 - Dark navy-purple (#23214c) is the dominant brand color, used in dark section backgrounds and headings

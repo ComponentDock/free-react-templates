@@ -39,6 +39,10 @@ Extracted from the preview page's `css/style.css` and inline styles.
 | Share icon         | `#ccc`, hover `#000`             | Top-right corner share icon               |
 | Price badge        | White text, absolute top-left    | `$2000` overlay on product image          |
 
+<!-- body-role-tokens: modal-19/body/critique -->
+**Body-text role (measured 2026-10-25):** this prep states `#b3b3b3`, which is a real rule that LOSES: both rendered paragraphs are #777777, because .cl-modal .cl-modal-content .cl-modal-body p{color:#777} out-ranks p{color:#b3b3b3}. The prep's second row naming `#777777` is the value that paints. The sibling prep `reviewcard` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Section Structure (order preserved from preview)
 
 1. **Trigger Button** — centered on page, launches the modal

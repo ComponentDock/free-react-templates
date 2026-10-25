@@ -39,6 +39,10 @@ Extracted from the live preview CSS (`css/style.css`) at https://preview.colorli
 | Footer bg | `#302939` (dark purple) | Full footer area |
 | Reservation bg | `#302939` (dark purple) | Reservation form section |
 
+<!-- body-role-tokens: luto/footer/gustoso -->
+**Footer role (measured 2026-10-25):** this prep states `#302939`, which the render contradicts: the footer ground paints rgb(48,48,48) = #303030 (an unclassed footer wrapper div; #302939 paints .colorlib-intro, the strip above the hero). The sibling prep `mealmuse` states the value the render supports.
+<!-- /body-role-tokens -->
+
 <!-- role-rule-tokens: luto/body -->
 **Role rule (measured 2026-10-25):** 1 rule(s) own body; strongest `body{color:#7d7d7d}` — the design declares `#7d7d7d`; this prep states `#404044`, which no rule that owns the body text colour declares. The sibling prep `mealmuse` states the measured value.
 <!-- /role-rule-tokens -->

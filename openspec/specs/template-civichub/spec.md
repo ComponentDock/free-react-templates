@@ -35,6 +35,10 @@ It recreates the ColorLib **Civic** design (https://colorlib.com/wp/template/civ
 | Footer bg        | #40424a      | Footer section                               |
 | Footer text      | #fff         | Footer copyright text                        |
 
+<!-- body-role-tokens: civic/body/civichub -->
+**Body-text role (measured 2026-10-25):** this prep states `#505259`, which the render contradicts: paragraphs render #808181 x12 (p{color:#808181}; #505259 paints .single-review .qut only). The sibling prep `resumeta` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Section Structure (in order)
 
 1. **Header** — Fixed top bar with logo "CivicHub" (h2) + tagline "Enhance your online presence" left-aligned; two pill buttons right-aligned: "Download CV" + "Discover me". Background: #f2f7f8.

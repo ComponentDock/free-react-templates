@@ -31,6 +31,10 @@ Extracted from live preview (`css/style.css`) and Google Fonts reference.
 | Button primary | `#ef6c57` bg, white text, sharp corners | `.btn-primary` |
 | Button outline | `#ef6c57` border, transparent bg, sharp corners | `.btn-outline-primary.border-2` |
 
+<!-- body-role-tokens: travelers/body/passport -->
+**Body-text role (measured 2026-10-25):** this prep states `#333333`, which the render contradicts: body resolves to #4d4d4d (body{color:#4d4d4d}; #333333 paints .site-footer, a background, not text). The measured value is `#4d4d4d`.
+<!-- /body-role-tokens -->
+
 ## Section structure (in order)
 
 ### 1. Navbar

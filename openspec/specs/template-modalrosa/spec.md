@@ -32,6 +32,10 @@ A centered full-viewport page with a Bootstrap-style light pink modal popup feat
 | Separator line        | `1px solid rgba(255,255,255,0.3)`                            | style.css `.line`            |
 | Brand (measured) | `#c13584` | live sheet paints it ×5 — `background-color` on `.cl-btn-primary`; style.css?v=bec13280 (18,948 B, sha256 175bee4636fd) · <https://preview.colorlib.com/theme/bootstrap/modal-13/> |
 
+<!-- body-role-tokens: modal-13/body/modalrosa -->
+**Body-text role (measured 2026-10-25):** this prep states `#b3b3b3`, which is a real rule that LOSES: both rendered paragraphs are #777777, because .cl-modal .cl-modal-content .cl-modal-body p{color:#777} out-ranks p{color:#b3b3b3}. The prep's second row naming `#777777` is the value that paints. The sibling prep `subbox` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Visual design (from screenshot + HTML)
 
 The template shows a full-viewport centered layout with a light background. In the center is a heading "Modal #3" and a Bootstrap secondary button labeled "Launch modal". When clicked, a modal dialog appears centered on screen with:

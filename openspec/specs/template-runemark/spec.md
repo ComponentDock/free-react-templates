@@ -52,6 +52,10 @@ Extracted from the preview stylesheet (`css/style.css`):
 | Card width | `851px` (desktop) | `.wizard-v1-content` |
 | Card vertical margin | `162px 0` | `.wizard-v1-content` |
 
+<!-- body-role-tokens: colorlib-wizard-21/ink/runemark -->
+**Heading-ink role (measured 2026-10-25):** this prep states `#333`, which the render contradicts: step titles render #000000 and the form heading #ffffff (h2.title; no `.wizard-header` rule exists in the sheet and `.inner h3` is #fff). The sibling prep `steppr` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Section Structure (3-step wizard)
 
 ### Step 1 — Account Information

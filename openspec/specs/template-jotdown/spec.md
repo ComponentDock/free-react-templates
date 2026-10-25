@@ -31,6 +31,10 @@ Extracted from the ColorLib screenshot:
 | Border radius (card)   | `8px` (rounded-lg)                  | Rounded card corners       |
 | Border radius (button) | `0` (rounded)                       | Rectangular submit button  |
 
+<!-- body-role-tokens: contact-form-v19/typeface/jotdown -->
+**Typeface role (measured 2026-10-25):** this prep states `DM Sans`, which the render contradicts: every text node resolves to OpenSans-Regular (body{font-family:'OpenSans-Regular', sans-serif} — no DM Sans rule exists). The sibling prep `cartofield` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Page layout

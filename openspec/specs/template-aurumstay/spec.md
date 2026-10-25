@@ -34,6 +34,10 @@ Extracted from the ColorLib Hiroto preview stylesheet:
 | Letter Spacing   | `2px` (buttons), `4px` (labels)  | CTA and section subtitles                    |
 | Section Padding  | `spad` (~80px vertical)          | Hero, services, rooms, testimonials, gallery  |
 
+<!-- body-role-tokens: hiroto/body/aurumstay -->
+**Body-text role (measured 2026-10-25):** this prep states `#111111`, which the render contradicts: paragraphs render #777c81 x12 (p{color:#777C81}; #111111 is the h1–h6 ink). The sibling prep `kasumi` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ---
 
 ## Section Structure (in order)

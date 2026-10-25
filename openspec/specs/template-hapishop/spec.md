@@ -35,6 +35,10 @@ Recreation of the ColorLib "Coloshop" template as a modern React 19 + Vite + Tai
 | Green accent         | `#51a042`                 | "New" product badge                                |
 | Red badge            | `#FE7C7F` (bubble bg)     | Discount product bubble                            |
 
+<!-- body-role-tokens: coloshop/body/hapishop -->
+**Body-text role (measured 2026-10-25):** this prep states `#989898`, which is a real rule that LOSES: all five rendered paragraphs are #51545f, because p{color:#989898} never paints: .benefit_content p and .newsletter_text p out-rank it. The prep's second row naming `#51545f` is the value that paints. The sibling prep `shoplane` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Section Structure (from preview DOM)
 
 1. **Header** — Fixed top bar. Top nav strip (dark navy bg, free shipping text, currency/language/account dropdowns). Main nav: logo, menu links (home, shop, categories, pages), user icons, hamburger menu.

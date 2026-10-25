@@ -31,6 +31,10 @@ Recreation of the ColorLib "Sportify" template as a React 19 + Vite + Tailwind C
 | Icon circles | `border-radius: 50%` | Intro boxes, footer icons |
 | Hero overlay | Dark transparent overlay on slider images | `.home_slider_overlay` |
 
+<!-- body-role-tokens: sportify/brand/sportsclub -->
+**Brand-fill role (measured 2026-10-25):** this prep states `#7800ff`, which the render contradicts: the outline CTA and the active carousel dot paint #ff0e3b (.button{border:2px solid #ff0e3b}; #7800ff is the hero slider overlay). The sibling prep `prowess` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Page sections (from live DOM)
 
 1. **Navbar** — Fixed top, centered logo, 5 nav links (home, about us, classes, blog, contact), social icons. Transparent over hero, white on scroll. Hamburger menu on mobile.

@@ -23,6 +23,10 @@ CSS values are canonical over any screenshot sample.
 | Typeface | `"Roboto", sans-serif` (2 rules — body)<br>`-apple-system, sans-serif` (1 rule — body) | `font-family` declarations in the theme sheet |
 | Radii | `0.25rem`, `4px`, `5px` | `0.25rem` (.cl-form-control); `4px` (.cl-form-control); `5px` (.cl-btn) |
 
+<!-- body-role-tokens: dropdown-07/ink/dropwell -->
+**Heading-ink role (measured 2026-10-25):** this prep states `#212529` — the visible section heading is #ffffff and the base h3 is #000000 (.heading-section{color:#fff}; h2,h3{color:#000}. #212529 is the body colour, not a heading), so the value is the BODY colour, not a heading colour. The sibling prep `onboard` states the value the render supports.
+<!-- /body-role-tokens -->
+
 Palette in order of use: `#ffffff` ×14, `#6c757d` ×6, `#007bff` ×5, `#212529` ×5, `#0062cc` ×2, `#2161dd` ×2.
 
 - Put the accent, surface and ink in `@theme` (`--color-brand`, `--color-surface`, `--color-ink`) and use them through utilities / `cn()`.

@@ -38,6 +38,10 @@ Extracted from the template page analysis and screenshot:
 | Modal corners    | Rounded                           | ~12px radius              |
 | Image            | Promo/offer image                 | Top section or background |
 
+<!-- body-role-tokens: modal-18/body/modaloffer -->
+**Body-text role (measured 2026-10-25):** this prep states `#666666`, which the render contradicts: the rendered paragraph is #777777 (.cl-modal .cl-modal-content .cl-modal-body p{color:#777}; no #666666 rule exists). The sibling prep `modalbreeze` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Visual Design
 
 From the screenshot: A centered modal with a promotional offer layout. The modal features a headline like "Special Offer" or "Limited Time Deal", a promotional image or graphic, descriptive text about the offer, and a prominent orange CTA button. The design is clean and focused on conversion, with visual hierarchy guiding the eye from headline to image to CTA. The overall aesthetic is modern, urgent, and conversion-oriented.

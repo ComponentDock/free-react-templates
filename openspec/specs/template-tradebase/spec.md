@@ -41,6 +41,14 @@ Extracted from `css/style.css` of the ColorLib preview (fetched 2026-09-07):
 | Card border-radius | `5px` | style.css `.card` |
 | Navbar brand | Logo image | HTML |
 
+<!-- body-role-tokens: bizcon/footer/tradebase -->
+**Footer role (measured 2026-10-25):** this prep states `#2f373d`, which the render contradicts: the footer band paints #f7f7f7 and the copyright strip #303030 (.copyright_part{background-color:#303030}; #2f373d is the heading ink). The sibling prep `bizmark` states the value the render supports.
+<!-- /body-role-tokens -->
+
+<!-- body-role-tokens: bizcon/body/tradebase -->
+**Body-text role (measured 2026-10-25):** this prep states `#666666`, which the render contradicts: paragraphs render #646464 x8 (the `p` block declares #666666 then #646464 — the later declaration wins). The sibling prep `bizcraft` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Section structure (from preview DOM)
 
 1. **Header/Navbar** — Logo, nav links: Home, About, Blog (dropdown: Blog, Single blog), Page (dropdown: Project, Project Details, Services, Elements), Contact. Transparent/white navbar over banner.

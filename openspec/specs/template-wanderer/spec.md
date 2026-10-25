@@ -31,6 +31,10 @@ Recreation of ColorLib "Travelers" template.
 | Hero overlay | Linear gradient top-to-bottom: transparent → 80% black | Dark gradient over full-width carousel images |
 | Section rhythm | Full-width `site-section` alternating white/light gray (`bg-light`) | Consistent padding between sections |
 
+<!-- body-role-tokens: travelers/body/wanderer -->
+**Body-text role (measured 2026-10-25):** this prep states `#25262a`, which the render contradicts: body resolves to #4d4d4d (body{color:#4d4d4d}; #25262a paints a dropdown hover state only). The measured value is `#4d4d4d`.
+<!-- /body-role-tokens -->
+
 ## Section Structure (order from live preview)
 
 1. **Navbar** — Fixed top, brand logo left, nav links center, hamburger on mobile

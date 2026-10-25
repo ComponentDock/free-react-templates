@@ -27,6 +27,10 @@ A centered full-viewport page with a split-screen product review modal featuring
 | Share icon color      | `#ccc`, hover `#000`                |
 | Brand (stated in this prep) | `#ed5107` — live sheet paints it ×1 — `color` on `a`; style.css?v=e255e3d8 (16,572 B, sha256 f34087127e10) · <https://preview.colorlib.com/theme/bootstrap/modal-19/> |
 
+<!-- body-role-tokens: modal-19/body/splitmodal -->
+**Body-text role (measured 2026-10-25):** this prep states `#b3b3b3`, which is a real rule that LOSES: both rendered paragraphs are #777777, because .cl-modal .cl-modal-content .cl-modal-body p{color:#777} out-ranks p{color:#b3b3b3}. The prep's second row naming `#777777` is the value that paints. The sibling prep `reviewcard` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Design reference (replication findings)
 
 - **Source:** ColorLib "Modal V19" — https://colorlib.com/wp/template/modal-19/

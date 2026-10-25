@@ -86,6 +86,10 @@ The ColorLib source name "Modal 08" is FORBIDDEN as the app name (and
 
 ## Design tokens
 
+<!-- body-role-tokens: modal-08/brand/mailpuff -->
+**Brand-fill role (measured 2026-10-25):** this prep states `#007bff`, which the render contradicts: the launch button paints #fb8691 (.cl-btn.cl-btn-primary{background:#fb8691 !important} out-ranks .cl-btn-primary{background-color:#007bff}). The sibling prep `dimbox` states the value the render supports.
+<!-- /body-role-tokens -->
+
 Extracted from the preview's `css/style.css` (custom styles, after Bootstrap
 4.3.1 reset):
 

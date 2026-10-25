@@ -39,6 +39,10 @@ Recreation of ColorLib "Modal 10" — a newsletter subscription modal with a bac
 | Modal border-radius  | `0.3rem`                   | Slight rounding                                    |
 | Icon circle          | `200px × 200px`            | Background rgba(255,255,255,0.2), 50% border-radius |
 
+<!-- body-role-tokens: modal-10/brand/popuplayer -->
+**Brand-fill role (measured 2026-10-25):** this prep states `#007bff`, which the render contradicts: both buttons paint #3e64ff (.cl-btn.cl-btn-primary{background:#3e64ff !important} out-ranks .cl-btn-primary{background-color:#007bff}). The sibling prep `poppy` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Requirements
 
 ### Feature: PopupLayer template behaviour

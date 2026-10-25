@@ -47,6 +47,10 @@ Extracted from the preview stylesheet (`css/style.css`) and HTML structure:
 | Form control border      | `transparent`                                                | style.css `.form-control`        |
 | Logo width               | `70px`                                                       | style.css `.logo img`            |
 
+<!-- body-role-tokens: modal-14/body/modalnova -->
+**Body-text role (measured 2026-10-25):** this prep states `#b3b3b3`, which is a real rule that LOSES: all three rendered paragraphs are #777777, because .cl-modal .cl-modal-content .cl-modal-body p{color:#777} out-ranks p{color:#b3b3b3}. The prep's second row naming `#777777` is the value that paints. The sibling prep `dealbounce` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Visual design (from screenshot + preview HTML)
 
 The template shows a full-viewport centered layout with a light background. In the center is a heading "Modal #4" and a Bootstrap secondary button labeled "Launch modal". When clicked, a modal dialog appears centered on screen with:

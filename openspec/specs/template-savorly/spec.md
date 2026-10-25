@@ -39,6 +39,10 @@ Recreation of ColorLib "Buri" — a single-page restaurant landing template.
 | Border / divider   | `#d6ad86` (tan)                 | Consistent with primary accent                       |
 | Button radius      | Rounded (border-radius ~4px)    | Small rounded corners on buttons                     |
 
+<!-- body-role-tokens: buri/body/savorly -->
+**Body-text role (measured 2026-10-25):** this prep states `#828bb2`, which the render contradicts: paragraphs render #555555 x10 (p{color:#555555}; #828bb2 belongs to the .typography demo headings). The sibling prep `craver` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ### Color palette (menu item category dots)
 - Category dots: `#d6ad86` (tan), `#415094` (navy), `#4cd3e3` (sky blue), `#f44a40` (red-orange), `#f4e700` (yellow), `#38a4ff` (blue), `#73fbaf` (green), `#6382e6` (purple), `#e66686` (pink), `#ffb830` (amber)
 

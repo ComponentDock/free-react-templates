@@ -41,6 +41,10 @@ Extracted from the preview CSS (`style.css`) on 2026-09-28.
 | **Footer text** | `#cccccc` | Footer body text |
 | **Footer heading** | `#fff` | Footer column headings |
 
+<!-- body-role-tokens: burger/body/flamepatty -->
+**Body-text role (measured 2026-10-25):** this prep states `#1f1f1f`, which the render contradicts: paragraphs render #6e6e6e x8 (one still reads #4d4d4d) (.best_burgers_area .single_delicious .info p{color:#6E6E6E}; #1F1F1F is the heading/anchor ink). The sibling prep `griddle` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ### Visual Design Notes (from screenshot + DOM)
 
 - **Header:** Sticky, transparent/dark, centered logo, nav links on left, social icons + phone on right. Mobile hamburger menu.

@@ -55,6 +55,10 @@ and the PR.
 | Font weights      | 300, 400, 500, 600, 700                       | Light through bold                                             |
 | Surface (measured) | `#1a5ed1` | paints it ×12 — `background` on `.site-btn.btn-3`; style.css (28,889 B, sha256 8f73e1ab413d) · <https://preview.colorlib.com/theme/academica/> |
 
+<!-- body-role-tokens: academica/body/lectio -->
+**Body-text role (measured 2026-10-25):** this prep states `#333333`, which the render contradicts: paragraphs render #ffffff x6 on dark bands and #838383 x6 on light ones (p{color:#838383} (style.css)). The sibling prep `brainery` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Requirements
 
 ### Requirement: Navbar

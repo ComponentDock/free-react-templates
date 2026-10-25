@@ -42,6 +42,10 @@
 | Completed step indicator | Checkmark icon | Series convention |
 | Surface (measured) | `#2f8be0` | paints it ×3 — `background` on `.inner .cl-form-row .form-holder select`; style.css?v=c9f02cd3 (13,082 B, sha256 92e16f8d53d8) · <https://colorlib.com/etc/bwiz/colorlib-wizard-21/index.html> |
 
+<!-- body-role-tokens: colorlib-wizard-21/typeface/formpilot -->
+**Typeface role (measured 2026-10-25):** this prep states `Open Sans`, which the render contradicts: the sheet declares no Open Sans rule (.wizard-v1-content{font-family:'Raleway', sans-serif} — Raleway is the only face declared). The sibling prep `runemark` states the value the render supports.
+<!-- /body-role-tokens -->
+
 ## Requirements
 
 ### Feature: Multi-Step Account and Payment Wizard
