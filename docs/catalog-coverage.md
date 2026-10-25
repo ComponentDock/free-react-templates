@@ -86,7 +86,7 @@ prep needs a different invented name.
 | `rooter24`           | preview 200, 53195 B                                  |
 | `springwell`         | preview 200, 74202 B                                  |
 | `steelworks`         | **shipped** as Mandrel — `apps/mandrel`               |
-| `switchover`         | preview 200, 72073 B                                  |
+| `switchover`         | **shipped** as Balancepoint — `apps/balancepoint`      |
 | `threadline`         | app exists (other design); orphan prep (other design) |
 | `toolbelt`           | preview 200, 66621 B                                  |
 | `trace-developer`    | preview 200, 7638 B                                   |
@@ -98,8 +98,9 @@ prep needs a different invented name.
 `overprint` is shipped as **Makeready** (`apps/makeready`, https://makeready.free.componentdock.com); `airwise` is shipped as **Thermly** (`apps/thermly`, https://thermly.free.componentdock.com) with its
 own row under `## Business`, `circles` as **Closeknit** (`apps/closeknit`, row added under
 `## App Landing Page`), and `backstop` (prepped as **Flowcert**) is prepped and still unbuilt; `perimeter` is shipped as
-**Sealwise** (`apps/sealwise`, https://sealwise.free.componentdock.com), row added under `## Business`.
-So the other 35 of the 42 remain open.
+**Sealwise** (`apps/sealwise`, https://sealwise.free.componentdock.com), row added under `## Business`;
+`switchover` is shipped as **Balancepoint** (`apps/balancepoint`, https://balancepoint.free.componentdock.com),
+row added under `## Business`. So the other 34 of the 42 remain open.
 
 ### The 214 snippet variants, by family
 
