@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+/* Class-based dark mode (toggled on <html>) — Tailwind v4 defaults `dark:` to
+   prefers-color-scheme, but the design's toggle writes a class. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Mandrel tokens — measured from the reference design's compiled sheet and its
+   live render at 1440 px. Two ramps carry the whole page: a steel-blue
+   `primary` used as line work and ink more than as fill, and a cool slate `ink`
+   for every string of text and every hairline. Shape: 8 px buttons, 12 px
+   cards, full-round pills, one soft shadow, 80 / 112 px band rhythm. */
+@theme {
+  /* primary — steel blue (the brand) */
+  --color-primary-50: #f1f4f7;
+  --color-primary-100: #e2e8ee;
+  --color-primary-200: #c4d0dc;
+  --color-primary-300: #93a9bf;
+  --color-primary-400: #6b87a3;
+  --color-primary-500: #4e6b89;
+  --color-primary-600: #3c5a78;
+  --color-primary-700: #31485f;
+  --color-primary-800: #273a4c;
+
+  /* ink — cool slate: every heading, every hairline */
+  --color-ink-50: #f3f4f6;
+  --color-ink-100: #e5e7eb;
+  --color-ink-200: #d1d5db;
+  --color-ink-300: #9ca3af;
+  --color-ink-400: #6b7280;
+  --color-ink-500: #4b5563;
+  --color-ink-600: #374151;
+  --color-ink-700: #1f2937;
+  --color-ink-800: #111827;
+  --color-ink-900: #0a0f1a;
+
+  --font-sans: 'Manrope', system-ui, sans-serif;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #4b5563;
+    font-family: 'Manrope', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .dark body {
+    background-color: #030712;
+    color: #e5e7eb;
+  }
+
+  :focus-visible {
+    outline: 2px solid #4e6b89;
+    outline-offset: 2px;
+  }
+
+  /* Every anchor target clears the 37 px licence bar plus the sticky header. */
+  [id] {
+    scroll-margin-top: 6.6rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm. */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+}
