@@ -77,7 +77,7 @@ prep needs a different invented name.
 | `nightshift`         | **shipped** as Nightwatch — `apps/nightwatch`         |
 | `nodig`              | preview 200, 79808 B                                  |
 | `onyx`               | **shipped** as Patina — `apps/patina`                 |
-| `ostend`             | preview 200, 69797 B                                  |
+| `ostend`             | **shipped** as Pentimento — `apps/pentimento`          |
 | `overprint`          | preview 200, 68551 B                                  |
 | `perimeter`          | preview 200, 89710 B                                  |
 | `relay-auth`         | preview 200, 4052 B                                   |
