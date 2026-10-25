@@ -11,7 +11,7 @@ Token authority: `theme/airwise/_astro/Base.C_WkB4-N.css` (60,585 B, sha256
 Full render: Playwright, 1440 × 7,459 px (the eight bands below the fold are `opacity:0` until their
 `data-animate` observer fires, so a plain screenshot cannot see them)
 Spec: `openspec/specs/template-thermly/spec.md`
-Shipped: — (not built yet; no `TEMPLATES.md` row exists)
+Shipped: https://thermly.free.componentdock.com
 
 A trades page in teal (`#187e83`) on alternating `#f5f7f8` / white grounds, set entirely in
 Plus Jakarta Sans. Its argument is the **arrival window**: the hero is a booking wizard (what needs
