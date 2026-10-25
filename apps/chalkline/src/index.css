@@ -1,0 +1,104 @@
+@import 'tailwindcss';
+
+/* Chalkline palette — two hand-picked ramps measured from the reference
+   stylesheet, everything else Tailwind's neutral grey ramp. Teal is the brand
+   (counters, checks, the middle pricing ring, the closing gradient); the warm
+   coral is punctuation only (the "Most chosen" ribbon, at-risk scores, stage
+   numbers, the role meta labels). Shape language: 8 px buttons and inputs,
+   12 px cards, 16 px pricing cards. Type: Outfit for everything, JetBrains
+   Mono for eyebrows, table labels and numerals. */
+@theme {
+  --color-primary-50: #eefbfa;
+  --color-primary-100: #d3f4f2;
+  --color-primary-200: #ace9e7;
+  --color-primary-400: #3bbcbc;
+  --color-primary-500: #20a0a1;
+  --color-primary-600: #188082;
+  --color-primary-700: #186769;
+  --color-primary-800: #195356;
+  --color-primary-900: #194648;
+
+  --color-accent-100: #ffe6e0;
+  --color-accent-400: #fd8163;
+  --color-accent-500: #f45c38;
+  --color-accent-600: #e2411a;
+  --color-accent-800: #9d2d15;
+  --color-accent-900: #822b18;
+
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  --shadow-soft: 0 1px 2px 0 #1118270a, 0 8px 24px -12px #1118271a;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background: #ffffff;
+    color: #111827;
+    font-family: 'Outfit', system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #111827;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  :focus-visible {
+    outline: 2px solid #188082;
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.001ms !important;
+      animation-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Band rhythm: 5rem, 7rem from lg — the reference's section padding. */
+  .section-band {
+    padding-block: 5rem;
+  }
+  @media (min-width: 1024px) {
+    .section-band {
+      padding-block: 6.5rem;
+    }
+  }
+
+  /* The second line of the hero headline: teal painted through the glyphs. */
+  .text-gradient {
+    background-image: linear-gradient(to right, #188082, #3bbcbc);
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Reveal used by every band: a 12 px fade-in-up, 100 ms staggered. */
+  .reveal {
+    animation: reveal-up 500ms ease-out both;
+  }
+  @keyframes reveal-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
