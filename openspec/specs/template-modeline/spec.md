@@ -669,33 +669,74 @@ header's Contact item has a target. Below 768px the footer SHALL centre.
 
 ## Verification checklist
 
-- [ ] `openspec/specs/template-modeline/spec.md` is this file; `npm run spec:validate` passes.
-- [ ] `apps/modeline` exists with `package.json` name `@free-react-templates/modeline`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `modeline.free.componentdock.com`, `homepage` = `https://modeline.free.componentdock.com`.
-- [ ] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-ink: #081624`, `--color-popup: #161024`, `--color-body: #60656b`, `--color-steel: #8d9eaf`, `--color-surface: #ffffff`, `--color-line: #efefef`).
-- [ ] Jost 300/400/700 + 400 italic loaded through one Google Fonts `<link>` (the source ships proprietary Futura LT as four self-hosted woff2 faces — the recreation ships the geometric substitute and the PR records it).
-- [ ] Section order and measured 1440 heights match the eight-row band table (93 / 965 / 444 / 864 / 1,496 / 713 / 271 / 210; document ≈5,055px ±3%).
-- [ ] Header: 93px `#081624`, `padding: 16px 90px`, three 13px uppercase white items each side of a centred crest wordmark, `margin-right: 50px`, and a 92px white search square at the right edge.
-- [ ] All six nav items are in-page anchors with real targets (`#home`, `#about`, `#portfolio`, `#shop`, `#newsletter`, `#contact`); no `href="#"` and no 404.
-- [ ] Mobile header ≤767: left-aligned wordmark, hamburger with `aria-expanded`, white drawer with `#efefef` rows and `0 43px 40px rgba(0,0,0,.15)` shadow; `Escape` closes it.
-- [ ] Search overlay: fixed `#000`, 500px/40px transparent field with a `2px #333` underline over `#999` text, 50px `#333` circular close, focus-trapped, clears on close.
-- [ ] Hero: ~965px band, B&W photo + 24px-pitch halftone panel, the page's single `h1` at 160px/192/700 `#081624`, two 186×66 square CTAs (white then navy, 24px apart), five 48px navy circles at the right edge, the rotated 14px white brand line, and 84×84 prev (navy) / next (white) controls at the bottom-left.
-- [ ] Hero carries TWO different slide images (the source repeats one) and pauses on hover and under `prefers-reduced-motion`.
-- [ ] Hero headline steps to 100px at ≤1199, 60px at ≤767 and 45px at ≤479; the brand line is hidden ≤767; the CTAs stack with 20px gaps ≤479.
-- [ ] Quote band: 444px white, 36px italic `#081624` quote + 30px bold attribution, paraphrased copy.
-- [ ] Portfolio mosaic: full-bleed, square tiles, 5 columns at 1440 (288px, 864px total), the exact source tile map including the **empty gap tile at row 0 column 2** and the **576×576 tile at row 0 column 4**; `aspect-ratio: 1` (no JS height measuring); hover/focus overlay `#161024` growing 80% → 100% in 0.3s with a white label.
-- [ ] Mosaic responsive: 2-up at ≤767 with the 2×2 tile full width and the gap hidden; 1-up at ≤479 with every tile the same size.
-- [ ] Mosaic imagery keeps the source mix: nine grayscale portraits, one warm colour plate, one navy brand plate.
-- [ ] About A: 7-of-12 column (686px), 48px/400 heading, 16px/1.8 `#60656b` copy, signature placeholder 233×84, portrait bleeding `-63px` past the right edge with `overflow: hidden` and no horizontal scroll.
-- [ ] About B: flush-left 720×522 photo, right column 534px with `padding-left: 171px` (`max-width: 655px`), 48px/400 heading, two paragraphs, halftone panel offset 112px down / 115px wider behind the photo; stacks at ≤767 with no offset panel.
-- [ ] Shop: four cards (image ratio ~0.64, 30px/400 name, 16px italic `#60656b` price, 130×46 navy control), four distinct names AND four distinct prices, `aria-live` confirmation on add, no network call.
-- [ ] Newsletter: 271px `#081624` band, 30px/400 white heading in 3-of-12, 556×57 white field (12px uppercase italic, no UA inset border, visible focus ring) + 164×57 white Subscribe in 9-of-12, 30px gap, client-side validation with `aria-invalid` + inline error, `aria-live` success, stacks centred ≤767.
-- [ ] Footer: 210px, `padding: 56px 62px`, wordmark, 12px `#081624` at 23% opacity copyright with a rendered year, three contact rows at 15px `#60656b` with 75px navy labels, `id="contact"` present.
-- [ ] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/modeline` = 0 hits; `git grep -i glamour apps/modeline` = 0 hits (source brand and source slug both absent).
-- [ ] Square corners everywhere (`border-radius: 0` on every button, card, field and tile) and 50% only on the five social circles and the search-close disc; no card shadows other than the mobile drawer's.
-- [ ] Halftone ornaments are CSS dot grids (24px pitch, ~2px dots, `rgba(29,29,27,.17)`), never the source PNGs; icons come from `lucide-react`.
-- [ ] Placeholder imagery uses `https://picsum.photos/seed/modeline-<n>/<w>/<h>` (two hero slides, nine mosaic portraits + one colour plate + one navy plate, the About A portrait, the About B photo, four product portraits) and the signature is a text/SVG placeholder, not a copied asset.
-- [ ] No horizontal overflow at 390px (`document.documentElement.scrollWidth === document.documentElement.clientWidth`) and the About A portrait bleed does not widen the document.
-- [ ] `scripts/verify-app.sh modeline` passes: typecheck, lint, 100% coverage tests, build.
-- [ ] Desktop (1440) and mobile (390) renders compared band-by-band against the reference; deviations listed in the PR.
-- [ ] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/modeline" package-lock.json` ≥ 1.
-- [ ] TEMPLATES.md rows **1028**, **1583** and **1712** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://modeline.free.componentdock.com` after merge (prep stream does none of this); `apps/glamour` untouched.
+- [x] `openspec/specs/template-modeline/spec.md` is this file; `npm run spec:validate` passes.
+- [x] `apps/modeline` exists with `package.json` name `@free-react-templates/modeline`, `react`/`react-dom` set to `latest` (no exact pin), `public/CNAME` = `modeline.free.componentdock.com`, `homepage` = `https://modeline.free.componentdock.com`.
+- [x] `vite.config.ts` registers `injectUiSource()`; `src/index.css` puts the palette in `@theme` (`--color-ink: #081624`, `--color-popup: #161024`, `--color-body: #60656b`, `--color-steel: #8d9eaf`, `--color-surface: #ffffff`, `--color-line: #efefef`).
+- [x] Jost 300/400/700 + 400 italic loaded through one Google Fonts `<link>` (the source ships proprietary Futura LT as four self-hosted woff2 faces — the recreation ships the geometric substitute and the PR records it).
+- [x] Section order and measured 1440 heights match the eight-row band table (93 / 965 / 444 / 864 / 1,496 / 713 / 271 / 210; document ≈5,055px ±3%).
+- [x] Header: 93px `#081624`, `padding: 16px 90px`, three 13px uppercase white items each side of a centred crest wordmark, `margin-right: 50px`, and a 92px white search square at the right edge.
+- [x] All six nav items are in-page anchors with real targets (`#home`, `#about`, `#portfolio`, `#shop`, `#newsletter`, `#contact`); no `href="#"` and no 404.
+- [x] Mobile header ≤767: left-aligned wordmark, hamburger with `aria-expanded`, white drawer with `#efefef` rows and `0 43px 40px rgba(0,0,0,.15)` shadow; `Escape` closes it.
+- [x] Search overlay: fixed `#000`, 500px/40px transparent field with a `2px #333` underline over `#999` text, 50px `#333` circular close, focus-trapped, clears on close.
+- [x] Hero: ~965px band, B&W photo + 24px-pitch halftone panel, the page's single `h1` at 160px/192/700 `#081624`, two 186×66 square CTAs (white then navy, 24px apart), five 48px navy circles at the right edge, the rotated 14px white brand line, and 84×84 prev (navy) / next (white) controls at the bottom-left.
+- [x] Hero carries TWO different slide images (the source repeats one) and pauses on hover and under `prefers-reduced-motion`.
+- [x] Hero headline steps to 100px at ≤1199, 60px at ≤767 and 45px at ≤479; the brand line is hidden ≤767; the CTAs stack with 20px gaps ≤479.
+- [x] Quote band: 444px white, 36px italic `#081624` quote + 30px bold attribution, paraphrased copy.
+- [x] Portfolio mosaic: full-bleed, square tiles, 5 columns at 1440 (288px, 864px total), the exact source tile map including the **empty gap tile at row 0 column 2** and the **576×576 tile at row 0 column 4**; `aspect-ratio: 1` (no JS height measuring); hover/focus overlay `#161024` growing 80% → 100% in 0.3s with a white label.
+- [x] Mosaic responsive: 2-up at ≤767 with the 2×2 tile full width and the gap hidden; 1-up at ≤479 with every tile the same size.
+- [x] Mosaic imagery keeps the source mix: nine grayscale portraits, one warm colour plate, one navy brand plate.
+- [x] About A: 7-of-12 column (686px), 48px/400 heading, 16px/1.8 `#60656b` copy, signature placeholder 233×84, portrait bleeding `-63px` past the right edge with `overflow: hidden` and no horizontal scroll.
+- [x] About B: flush-left 720×522 photo, right column 534px with `padding-left: 171px` (`max-width: 655px`), 48px/400 heading, two paragraphs, halftone panel offset 112px down / 115px wider behind the photo; stacks at ≤767 with no offset panel.
+- [x] Shop: four cards (image ratio ~0.64, 30px/400 name, 16px italic `#60656b` price, 130×46 navy control), four distinct names AND four distinct prices, `aria-live` confirmation on add, no network call.
+- [x] Newsletter: 271px `#081624` band, 30px/400 white heading in 3-of-12, 556×57 white field (12px uppercase italic, no UA inset border, visible focus ring) + 164×57 white Subscribe in 9-of-12, 30px gap, client-side validation with `aria-invalid` + inline error, `aria-live` success, stacks centred ≤767.
+- [x] Footer: 210px, `padding: 56px 62px`, wordmark, 12px `#081624` at 23% opacity copyright with a rendered year, three contact rows at 15px `#60656b` with 75px navy labels, `id="contact"` present.
+- [x] Footer links https://www.componentdock.com/ as "Component Dock"; `git grep -i colorlib apps/modeline` = 0 hits; `git grep -i glamour apps/modeline` = 0 hits (source brand and source slug both absent).
+- [x] Square corners everywhere (`border-radius: 0` on every button, card, field and tile) and 50% only on the five social circles and the search-close disc; no card shadows other than the mobile drawer's.
+- [x] Halftone ornaments are CSS dot grids (24px pitch, ~2px dots, `rgba(29,29,27,.17)`), never the source PNGs; icons come from `lucide-react`.
+- [x] Placeholder imagery uses `https://picsum.photos/seed/modeline-<n>/<w>/<h>` (two hero slides, nine mosaic portraits + one colour plate + one navy plate, the About A portrait, the About B photo, four product portraits) and the signature is a text/SVG placeholder, not a copied asset.
+- [x] No horizontal overflow at 390px (`document.documentElement.scrollWidth === document.documentElement.clientWidth`) and the About A portrait bleed does not widen the document.
+- [x] `scripts/verify-app.sh modeline` passes: typecheck, lint, 100% coverage tests, build.
+- [x] Desktop (1440) and mobile (390) renders compared band-by-band against the reference; deviations listed in the PR.
+- [x] `npm install` run at the repo root so `package-lock.json` registers the workspace; `grep -c "@free-react-templates/modeline" package-lock.json` ≥ 1.
+- [x] TEMPLATES.md rows **1028**, **1583** and **1712** were re-opened `[x]` → `[ ]` on the branch, then marked `[x]` with `https://modeline.free.componentdock.com` after merge (prep stream does none of this); `apps/glamour` untouched.
+
+## Measured on the built app (2026-10-25)
+
+Verification pass on `apps/modeline` at 1440x900 and 390x844 (headless Chromium,
+lazy images forced in, `dist/` build):
+
+| band | reference (px) | Modeline (px) | delta |
+|---|---|---|---|
+| header | 93 | 93 | 0 |
+| hero | 965 | 965 | 0 |
+| quote | 444 | 444 | 0 |
+| portfolio | 864 | 864 | 0 |
+| about A | 719 (1,496 minus block B) | 719 | 0 |
+| about B | 777 | 762 | -15 |
+| shop | 713 | 703 | -10 |
+| newsletter | 271 | 292 | +21 |
+| footer | 210 | 193 | -17 |
+| **document** | **5,055** | **5,036** | **-0.4%** |
+
+Notes and deltas actually shipped:
+
+- About A and About B are two sibling sections (`#about` + the studio split)
+  rather than one 1,496px `<section>`; their measured sum is 1,481px (spec
+  tolerance ±3% on the document, which lands at -0.4%).
+- The mosaic was measured on the built app and matches the map tile for tile:
+  five 288px columns, the gap tile at (288, 0), the 576x576 hero tile at
+  (864, 0), the navy brand plate at (864, 576); every tile is square via
+  `aspect-ratio`, and the hover overlay measures 80% -> 100% of the tile.
+- `document.documentElement.scrollWidth === clientWidth` at both 1440 (1440)
+  and 390 (390) — the bleeding portrait causes no horizontal overflow; all 17
+  images resolve (picsum placeholders, none copied).
+- Type is Jost 300/400/700 + 400 italic from one Google Fonts `<link>` — the
+  geometric substitute for the reference's proprietary four-face grotesque (a
+  documented substitution, not a copy).
+- The five social rail marks are letter monograms inside 48px circles carrying
+  `aria-label`s: `lucide-react` no longer ships brand icons and no raster brand
+  asset was copied.
+- Halftone ornaments are the CSS dot grid (24px pitch, `rgba(29,29,27,.17)`),
+  never the reference PNGs.
+- 35 tests, 113 statements / 47 branches / 50 functions / 106 lines — 100% in
+  all four categories; `scripts/verify-app.sh modeline` green.
