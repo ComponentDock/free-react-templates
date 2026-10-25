@@ -2514,7 +2514,7 @@
 - [x] **Plataforma** — [colorlib](https://colorlib.com/wp/template/plataforma/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/plataforma-free-template.jpg) · [tribune](https://tribune.free.componentdock.com)
 - [x] **Politics** — [colorlib](https://colorlib.com/wp/template/politics/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/politics-free-template-1.jpg) · [civicpulse](https://civicpulse.free.componentdock.com)
 
-## Portfolio (90)
+## Portfolio (91)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Alex Rivera** — [colorlib](https://colorlib.com/wp/template/alex-rivera/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alexrivera-template-1771943723675.jpg) · [arlo](https://arlo.free.componentdock.com)
