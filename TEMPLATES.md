@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (379)
+## Business (380)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1045,6 +1045,7 @@
 - [x] **Grunt** — [colorlib](https://colorlib.com/wp/template/grunt/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/grunt-free-template.jpg) · [mortar](https://mortar.free.componentdock.com)
 - [x] **Haircare** — [colorlib](https://colorlib.com/wp/template/haircare/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/haircare-free-template.jpg) · [mane](https://mane.free.componentdock.com)
 - [x] **Hairsal** — [colorlib](https://colorlib.com/wp/template/hairsal/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hairsal-free-template.jpg) · [tressly](https://tressly.free.componentdock.com)
+- [~] **Halfpast** — [colorlib](https://colorlib.com/wp/template/halfpast/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halfpast-template.jpg) · [slotline](https://slotline.free.componentdock.com)
 - [x] **Halo** — [colorlib](https://colorlib.com/wp/template/halo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/halo-free-template.jpg) · [glowlens](https://glowlens.free.componentdock.com)
 - [x] **Handyman** — [colorlib](https://colorlib.com/wp/template/handyman/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/handyman-free-template.jpg) · [fixero](https://fixero.free.componentdock.com)
 - [x] **Harbor** — [colorlib](https://colorlib.com/wp/template/harbor/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/harbor-free-template.jpg) · [quay](https://quay.free.componentdock.com)
