@@ -1122,7 +1122,7 @@
 - [x] **Negotiate** — [colorlib](https://colorlib.com/wp/template/negotiate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/negotiate-free-template.jpg) · [parley](https://parley.free.componentdock.com)
 - [x] **Neos** — [colorlib](https://colorlib.com/wp/template/neos/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neos-free-template.jpg) · [verdant](https://verdant.free.componentdock.com)
 - [x] **Neutral** — [colorlib](https://colorlib.com/wp/template/neutral/) · [maxim](https://maxim.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/neutral-free-template.jpg)
-- [~] **Nightshift** — [colorlib](https://colorlib.com/wp/template/nightshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nightshift-template.jpg)
+- [x] **Nightshift** — [colorlib](https://colorlib.com/wp/template/nightshift/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nightshift-template.jpg) · [nightwatch](https://nightwatch.free.componentdock.com)
 - [x] **Nissa** — [colorlib](https://colorlib.com/wp/template/nissa/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nissa-free-template.jpg) · [lensa](https://lensa.free.componentdock.com)
 - [x] **Nitro** — [colorlib](https://colorlib.com/wp/template/nitro/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nitro-free-template.jpg) · [turbo](https://turbo.free.componentdock.com)
 - [x] **Noxen** — [colorlib](https://colorlib.com/wp/template/noxen/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/noxen-free-template.jpg) · [emblem](https://emblem.free.componentdock.com)
