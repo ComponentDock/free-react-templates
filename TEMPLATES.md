@@ -877,7 +877,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (369)
+## Business (370)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1017,6 +1017,7 @@
 - [x] **Fastnet** — [colorlib](https://colorlib.com/wp/template/fastnet/) · [blinkwave](https://blinkwave.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fastnet-free-template.jpg)
 - [x] **Favison** — [colorlib](https://colorlib.com/wp/template/favison/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/favison-free-template.jpg) · [Upswing](https://upswing.free.componentdock.com)
 - [x] **Feliciano** — [colorlib](https://colorlib.com/wp/template/feliciano/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/feliciano-free-template.jpg) · [forno](https://forno.free.componentdock.com)
+- [~] **Fernhill** — [colorlib](https://colorlib.com/wp/template/fernhill/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/fernhill-template.jpg)
 - [x] **Finances** · [finflow](https://finflow.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/finances/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finances-free-template.jpg)
 - [x] **Findstate** — [colorlib](https://colorlib.com/wp/template/findstate/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/findstate-free-template.jpg) · [keyhold](https://keyhold.free.componentdock.com)
 - [x] **Finlone** — [colorlib](https://colorlib.com/wp/template/finlone/) · [capitex](https://capitex.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/finlone-free-template.jpg)
