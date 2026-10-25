@@ -153,6 +153,20 @@ it was built from a spec with no visual reference).
   size reads as an empty page and the inner-page census silently comes back
   blank. Their links are absolute (`/theme/<slug>/docs/`), so a one-pager must
   map them to on-page anchors rather than copying `href`s.
+- **Copy the layout utility, not a lookalike wrapper.** Astro/Tailwind sources
+  wrap every band in `container mx-auto px-4 lg:px-8`, **not**
+  `mx-auto max-w-7xl px-4`. The two only agree at 1280 and 1440: `container`
+  steps its max-width at each theme breakpoint (475 / 640 / 768 / 1024 / 1280),
+  so at 992 the reference's 4-column card row collapses to two **360 px** cards
+  and at 576 to two **213 px** cards, while `max-w-7xl` keeps the row full-bleed
+  (472 / 264 px). Reproduce it by using `container` and declaring the source's
+  extra step (`--breakpoint-xs: 475px`) in `@theme` — measured on
+  `theme/fixtura/` (2026-10-25), where the delta was 24–110 px per card.
+- **`bg-<name>-50` can be a phantom class.** A sheet may use a utility it never
+  emitted (Astro content scanning misses dynamic strings); on
+  `theme/fixtura/` `bg-sand-50` has no rule, so the band renders the body
+  ground. Measure the band's computed background before "restoring" the tint,
+  define the token at the **rendered** value, and note the deviation in the PR.
 - **Measure the census before and after a spec rewrite.** `git stash push --
   openspec/specs/template-<name> docs/templates/<name>` → run
   `verify-spec-row-mismatch.py` → `git stash pop` gives the true "before"
