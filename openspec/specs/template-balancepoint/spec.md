@@ -770,47 +770,47 @@ photography**, so the chart panel and the ledger rows carry all the visual weigh
 
 ## Verification checklist
 
-- [ ] `apps/balancepoint` exists, `@free-react-templates/balancepoint` in `package.json`, `public/CNAME` =
+- [x] `apps/balancepoint` exists, `@free-react-templates/balancepoint` in `package.json`, `public/CNAME` =
       `balancepoint.free.componentdock.com`, `homepage` the same
-- [ ] footer links `https://www.componentdock.com/`; **no** ColorLib string in any app file (comments included);
+- [x] footer links `https://www.componentdock.com/`; **no** ColorLib string in any app file (comments included);
       the app never says "Switchover"
-- [ ] bands in this order: **licence strip → sticky header → hero → `#incentives` → `#why-us` → `#services` →
+- [x] bands in this order: **licence strip → sticky header → hero → `#incentives` → `#why-us` → `#services` →
       `#areas` → `#testimonials` → `#faq` → `#contact` → footer** (+ fixed preloader / progress / back-to-top /
       cookie)
-- [ ] strip **37 px** `#1f262c` above the header, in flow; three credential pairs, the last two `hidden` below
+- [x] strip **37 px** `#1f262c` above the header, in flow; three credential pairs, the last two `hidden` below
       `sm`; rating on the right
-- [ ] header **81 px** sticky (white 90 % + `blur(16px)`, 1 px `#e8ecef`), **65 px** below `xl`; six labels
+- [x] header **81 px** sticky (white 90 % + `blur(16px)`, 1 px `#e8ecef`), **65 px** below `xl`; six labels
       14/600 `#3e4b56`; phone pill from `md`; **location pill only at ≥ 1536**; lime CTA radius 8;
       `shadow-lg` past 50 px; working mobile disclosure
-- [ ] hero **684 px** `#f5f7f8`, 12-col **7 / 5**, `gap-64`; `h1` **60/66 700 −1.5 `#1f262c`** + lime second
+- [x] hero **684 px** `#f5f7f8`, 12-col **7 / 5**, `gap-64`; `h1` **60/66 700 −1.5 `#1f262c`** + lime second
       line; eyebrow 14/700 `#4a6918`; four ticks; quote card **469 × 524** with three labelled fields and a
       working submit
-- [ ] `#incentives` **1,200 px** `#13181c`; six checkbox rows with mono `−$` amounts and verbatim conditions;
+- [x] `#incentives` **1,200 px** `#13181c`; six checkbox rows with mono `−$` amounts and verbatim conditions;
       selected rows lime-bordered via `has-[:checked]`; summary + `aria-live` net figure
-- [ ] arithmetic: load **−$4,400 / $10,400**, all six **−$8,300 / $6,500**, none **−$0 / $14,800**; U+2212 minus;
+- [x] arithmetic: load **−$4,400 / $10,400**, all six **−$8,300 / $6,500**, none **−$0 / $14,800**; U+2212 minus;
       `tabular-nums`
-- [ ] `#why-us` **936 px** `#f5f7f8`; four `dl` entries with 2 px lime left borders; **inline SVG chart** in the
+- [x] `#why-us` **936 px** `#f5f7f8`; four `dl` entries with 2 px lime left borders; **inline SVG chart** in the
       page's tokens + figcaption
-- [ ] `#services` **903 px**; hairline **3 × 2** grid (`gap: 1px` on `#e8ecef`), cells 404 × 208, six `h3` +
+- [x] `#services` **903 px**; hairline **3 × 2** grid (`gap: 1px` on `#e8ecef`), cells 404 × 208, six `h3` +
       blurb + lime price line, sample-price footnote, and the `h2` no longer miscounts four over six
-- [ ] `#areas` **468 px**; twelve towns in 2 → 3 columns with 1 px rules; town footnote
-- [ ] `#testimonials` **768 px** `#f9fafb`; three **405 × 320** `shadow-soft` cards, lime stars, initial discs;
+- [x] `#areas` **468 px**; twelve towns in 2 → 3 columns with 1 px rules; town footnote
+- [x] `#testimonials` **768 px** `#f9fafb`; three **405 × 320** `shadow-soft` cards, lime stars, initial discs;
       caveat kept; **no dead arrows and no empty dot row**
-- [ ] `#faq` **820 px**; five disclosures that actually open, `aria-expanded` + `aria-controls`, first open, all
+- [x] `#faq` **820 px**; five disclosures that actually open, `aria-expanded` + `aria-controls`, first open, all
       five answers verbatim
-- [ ] `#contact` **440 px** `#4a6918`; white pill + 2 px outline pill; `tel:` well formed
-- [ ] footer **567 px** `#111827`; 12-col **4 / 5 / 3**; light wordmark 190 × 40; three link lists; newsletter
+- [x] `#contact` **440 px** `#4a6918`; white pill + 2 px outline pill; `tel:` well formed
+- [x] footer **567 px** `#111827`; 12-col **4 / 5 / 3**; light wordmark 190 × 40; three link lists; newsletter
       that validates without imposing a fixed minimum width; bottom bar
-- [ ] chrome: 2 px `#5d861b` progress bar, skip link, 48 px back-to-top past 300 px, cookie strip that stores
+- [x] chrome: 2 px `#5d861b` progress bar, skip link, 48 px back-to-top past 300 px, cookie strip that stores
       `accepted` / `essential`, preloader removed when ready
-- [ ] 14 `fade-in-up` reveals on exactly the testimonials + FAQ targets, none under `prefers-reduced-motion`
-- [ ] dark mode: `.dark` on `<html>`, `localStorage.theme`, ground `#030712`, ledger stays `#13181c`, contact
+- [x] 14 `fade-in-up` reveals on exactly the testimonials + FAQ targets, none under `prefers-reduced-motion`
+- [x] dark mode: `.dark` on `<html>`, `localStorage.theme`, ground `#030712`, ledger stays `#13181c`, contact
       stays `#4a6918`, accents `primary-400`
-- [ ] `body.scrollWidth === clientWidth` at **320** / 390 / 768 / 1024 / 1280 / 1440; the reference's 320 px
+- [x] `body.scrollWidth === clientWidth` at **320** / 390 / 768 / 1024 / 1280 / 1440; the reference's 320 px
       overflow is fixed, not reproduced
-- [ ] **zero** `href="#"`; **zero** dead `#service-areas` anchors; every `tel:` well formed; every icon-only
+- [x] **zero** `href="#"`; **zero** dead `#service-areas` anchors; every `tel:` well formed; every icon-only
       control named; valid JSON-LD or none
-- [ ] 100% coverage on the new app, `scripts/verify-app.sh balancepoint` green
+- [x] 100% coverage on the new app, `scripts/verify-app.sh balancepoint` green
 
 ## Implementation notes for the port (not requirements)
 

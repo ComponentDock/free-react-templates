@@ -878,7 +878,7 @@
 - [x] **Colorlib Wizard 8** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-8/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-8.jpg) · [wizlane](https://wizlane.free.componentdock.com)
 - [x] **Colorlib Wizard 9** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-9/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-9.jpg) · [formvane](https://formvane.free.componentdock.com)
 
-## Business (384)
+## Business (385)
 
 - [x] **Accent** — [colorlib](https://colorlib.com/wp/template/accent/) · [websmith](https://websmith.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accent-free-template.jpg)
 - [x] **Accounting** — [colorlib](https://colorlib.com/wp/template/accounting/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accounting-free-template.jpg) · [tally](https://tally.free.componentdock.com)
@@ -1213,6 +1213,7 @@
 - [x] **Suitcase** — [colorlib](https://colorlib.com/wp/template/suitcase/) · [packr](https://packr.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/suitcase-free-template.jpg)
 - [x] **Summit** — [colorlib](https://colorlib.com/wp/template/summit/) · [summit](https://summit.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/summit-free-template.jpg)
 - [x] **Supreme** — [colorlib](https://colorlib.com/wp/template/supreme/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/supreme-free-template-1.jpg) · [stamp](https://stamp.free.componentdock.com)
+- [~] **Switchover** — [colorlib](https://colorlib.com/wp/template/switchover/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/switchover-template.jpg)
 - [x] **Tailor** — [colorlib](https://colorlib.com/wp/template/tailor/) · [stitchly](https://stitchly.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tailor-free-template.jpg)
 - [x] **Tangre** — [colorlib](https://colorlib.com/wp/template/tangre/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tangre-free-template.jpg) · [wainscot](https://wainscot.free.componentdock.com)
 - [x] **Tattooz** — [colorlib](https://colorlib.com/wp/template/tattooz/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/tattooz-free-template.jpg) · [inkvibe](https://inkvibe.free.componentdock.com)
