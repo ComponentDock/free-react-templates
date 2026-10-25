@@ -1,0 +1,100 @@
+@import 'tailwindcss';
+
+/* Stoke tokens — measured from the reference design's compiled Tailwind sheet
+   (58,651 B) and its live render at 1600 px. The brand is a custom red
+   (#d41f1f), not stock Tailwind red; the neutral is a blue-cast `ink` ramp; the
+   cold half of the palette is `ice`, used for the hero ground, the eyebrow and
+   the overnight promise. Inter carries everything, JetBrains Mono carries the
+   clock. Shape: 8 / 12 / 16 px radii and one soft shadow plus the brand glow. */
+@theme {
+  /* brand: red ramp (measured literals, not stock tailwind red) */
+  --color-primary-50: #fff1f1;
+  --color-primary-100: #ffdfdf;
+  --color-primary-200: #ffc4c4;
+  --color-primary-300: #ff9b9b;
+  --color-primary-400: #fb6363;
+  --color-primary-500: #ee3b3b;
+  --color-primary-600: #d41f1f; /* brand */
+  --color-primary-700: #b11717;
+  --color-primary-800: #921717;
+  --color-primary-900: #7a1a1a;
+
+  /* neutral: blue-cast, not tailwind gray */
+  --color-ink-50: #f6f7f8;
+  --color-ink-100: #eceef1;
+  --color-ink-200: #d6dae0;
+  --color-ink-300: #b0b7c2;
+  --color-ink-400: #7e8898;
+  --color-ink-500: #5d6879;
+  --color-ink-600: #454e5e;
+  --color-ink-700: #333a47;
+  --color-ink-800: #20242d;
+  --color-ink-900: #14171d;
+
+  /* cold half */
+  --color-ice-50: #f2f8fb;
+  --color-ice-200: #c4e0ee;
+  --color-ice-300: #95c9e0;
+  --color-ice-700: #285a7c;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', Consolas, monospace;
+
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  --shadow-soft: 0 4px 16px -4px rgb(0 0 0 / 0.1);
+  --shadow-brand:
+    0 10px 15px -3px rgb(212 31 31 / 0.25), 0 4px 6px -4px rgb(212 31 31 / 0.25);
+}
+
+@layer base {
+  html {
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #111827;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid #d41f1f;
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* 80 px on small screens, 112 px from lg — the measured band rhythm */
+  .section {
+    padding-block: 5rem;
+  }
+  @media (min-width: 64rem) {
+    .section {
+      padding-block: 7rem;
+    }
+  }
+
+  /* the sticky header's emphasised link once a band is in view */
+  .nav-active {
+    color: var(--color-ink-900);
+    font-weight: 600;
+  }
+}
