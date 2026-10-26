@@ -745,6 +745,7 @@
 - [x] **Card 11** — [colorlib](https://colorlib.com/wp/template/card-11/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-11.jpg) · [showbill](https://showbill.free.componentdock.com)
 - [x] **Card 12** — [colorlib](https://colorlib.com/wp/template/card-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-12.jpg) · [coursebook](https://coursebook.free.componentdock.com)
 - [x] **Card 13** — [colorlib](https://colorlib.com/wp/template/card-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-13.jpg) · [shortlist](https://shortlist.free.componentdock.com)
+- [~] **Card 14** — [colorlib](https://colorlib.com/wp/template/card-14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-14.jpg) · [baylist](https://baylist.free.componentdock.com)
 
 ## Bootstrap Checkboxes (20)
 
