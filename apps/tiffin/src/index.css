@@ -1,0 +1,66 @@
+/**
+ * Tiffin design tokens.
+ *
+ * One warm paper ground, one white card surface and three pastel tints — the
+ * only saturated colour on the page is the rust accent, used for the course
+ * line, the difficulty dots and the keyboard ring.
+ *
+ * - ground        #fbf6ee — the page, the only non-white surface
+ * - ink           #2a1d12 — headline, card titles, stat values
+ * - muted         #5c4a3a — blurbs and stat labels (8.41:1 on white)
+ * - accent        #c2410c — course line, dots, focus ring (5.18:1 on white)
+ * - eyebrow       #9a3412 — the darker rust above the headline (6.79:1)
+ * - tag-ink       #3d2a18 — pill text on every tint (11.4:1 or better)
+ * - rule          #e5d8c8 — the two dashed stat rules (decorative, 1.40:1)
+ * - tint peach    #fde7d9 — card 1 band and pills
+ * - tint sage     #e3f1dc — card 2 band and pills
+ * - tint butter   #fbeec2 — card 3 band and pills
+ *
+ * The display face is the only webfont (DM Serif Display 400). Body copy,
+ * course lines, labels and pills stay on the system UI stack — that pairing is
+ * the design's typographic signature.
+ */
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --color-ground: #fbf6ee;
+  --color-ink: #2a1d12;
+  --color-muted: #5c4a3a;
+  --color-accent: #c2410c;
+  --color-eyebrow: #9a3412;
+  --color-tag-ink: #3d2a18;
+  --color-rule: #e5d8c8;
+  --color-tint-peach: #fde7d9;
+  --color-tint-sage: #e3f1dc;
+  --color-tint-butter: #fbeec2;
+  --radius-card: 28px;
+  --shadow-card: 0 30px 50px -40px rgb(80 40 10 / 0.5);
+  --shadow-plate: 0 18px 30px -12px rgb(80 40 10 / 0.45);
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The card-wide link paints its ring on the ::after overlay, so the ring
+   traces the whole card at radius 28, four pixels outside it, instead of
+   hugging the two lines of title text. */
+.tiffin-card-link:focus-visible {
+  outline: none;
+}
+
+.tiffin-card-link:focus-visible::after {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 4px;
+}
