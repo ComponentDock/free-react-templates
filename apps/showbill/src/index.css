@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+
+/* Showbill tokens. The ground is a warm putty (#f5f3ef) — not a grey and not
+   white — so the pure-white cards read as cut-outs on paper. Everything else is
+   a stock Tailwind step: blue-700 (#1d4ed8) is the single accent, blue-800 the
+   status line, neutral-900/700/600 the ink ramp, amber-400/950 the ticket flag,
+   green-50/700 the saved state. Only the perforation hairline (#e5e1d8) and the
+   focus ring (#2563eb, blue-600 — the sheet's blue-300 ring fails 3:1) are
+   declared here. */
+@theme {
+  --color-paper: #f5f3ef;
+  --color-ticket: #e5e1d8;
+
+  /* One face, four instances (400 / 500 / 600 / 800). There is no 700 in the
+     family, so the type scale uses font-extrabold and font-semibold only. */
+  --font-sans: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-paper);
+    color: #171717;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
