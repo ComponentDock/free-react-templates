@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+
+/* Roadbook tokens — a warm near-black ground (#111210, one digit off neutral)
+   carrying four full-bleed photo plates, a bone-white band ink (#f4f1ea) and a
+   single lime accent (#d9f99d) that never fills anything larger than a chip:
+   three uses only, the eyebrow, the destination kicker and the fact chips.
+   Space Grotesk is the only face, 400/500/700 from one Google Fonts link. */
+@theme {
+  --color-ground: #111210;
+  --color-ink: #f4f1ea;
+  --color-accent: #d9f99d;
+  --color-accent-ink: #1a2e05;
+  --color-card-fallback: #2a2c28;
+  --color-card-text: #f1efe8;
+
+  --radius-card: 22px;
+
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Each card is one link: the anchor's ::after is stretched over the whole
+   article, so the pill, the kicker and the chips are decoration inside its hit
+   area. The ring is drawn on that overlay with a negative offset — inside the
+   card's overflow clip — and carries a dark twin, because lime on a white
+   photograph is 1.17:1 and would otherwise vanish. */
+.guide-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 22px;
+}
+
+.guide-card__link:focus-visible {
+  outline: none;
+}
+
+.guide-card__link:focus-visible::after {
+  outline: 3px solid var(--color-accent);
+  outline-offset: -5px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.6);
+}
+
+/* A touch device has no hover, so the reveal would be unreachable. The panel
+   stays open there — no JavaScript in either case. */
+@media (hover: none) {
+  .guide-card__more {
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+}
+
+/* Reduced motion removes the zoom as well as the easing: a scaled photograph is
+   still motion, even when it arrives instantly. Tailwind v4 scales with the
+   standalone `scale` property, so both spellings are reset here. */
+@media (prefers-reduced-motion: reduce) {
+  .guide-card__img,
+  .guide-card__shade,
+  .guide-card__more {
+    transition: none;
+  }
+
+  .guide-card:hover .guide-card__img,
+  .guide-card:focus-within .guide-card__img {
+    transform: none;
+  }
+}
