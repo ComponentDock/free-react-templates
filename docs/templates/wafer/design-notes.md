@@ -184,7 +184,8 @@ should assert, because it is the part the reference gets right.
 
 `wafer` is the family's only variant that is **persistent until decided**, the only one that **grows** (134.75 →
 408.5), and the only one whose four "tones" are **categories** rather than severities. It is also the last one:
-twelve of twelve prepped, none shipped yet, so the alert family is now closed for prep and the queue moves to the
+twelve of twelve prepped (`alert-01` has since shipped as `apps/noticeboard`), so the alert family is now closed
+for prep and the queue moves to the
 **`hero` family (12)**, starting at `hero-01`.
 
 ## 7. Measurement traps (this run)

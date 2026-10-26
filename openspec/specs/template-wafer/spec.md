@@ -83,7 +83,8 @@ region without adding a second card.
 this design comes from `docs/catalog-coverage.md`: designs on colorlib.com's own listing that the checklist never
 recorded. `alert-12` is one of the **214 snippet variants in 19 families**; the 42 standalone designs in that gap
 are all prepped. Families are worked **in family order, then variant number** — the card family (20) is
-**closed**, and this run **closes the alert family** (twelve prepped, **none shipped yet**).
+**closed**, and this run **closes the alert family** (twelve prepped — `alert-01` **shipped** as
+`apps/noticeboard` on `ebcebf074`, the other eleven still waiting).
 
 `TEMPLATES.md` has **no `## Bootstrap Alerts` section on main yet**, so this row is the **twelfth** entry of a
 section that does not exist. It belongs **between `## Bootstrap Accordions (20)` (line 639, its last row
