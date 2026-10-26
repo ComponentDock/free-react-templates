@@ -834,6 +834,7 @@
 - [x] **Hero 03** — [colorlib](https://colorlib.com/wp/template/hero-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-03.jpg) · [presswork](https://presswork.free.componentdock.com)
 - [x] **Hero 04** — [colorlib](https://colorlib.com/wp/template/hero-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-04.jpg) · [tendril](https://tendril.free.componentdock.com)
 - [x] **Hero 05** — [colorlib](https://colorlib.com/wp/template/hero-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-05.jpg) · [epistle](https://epistle.free.componentdock.com)
+- [~] **Hero 06** — [colorlib](https://colorlib.com/wp/template/hero-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-06.jpg) · [overtone](https://overtone.free.componentdock.com)
 
 ## Bootstrap Modals (20)
 
