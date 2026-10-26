@@ -332,9 +332,9 @@ transparent)` fades the _photograph's own_ bottom, so the section behind it (the
 12. **Six `@font-face` rules, two binaries per subset.** The 500 and 600 roman files are byte-identical in size
     (38,460 / 20,980); the _italic_ 500 is a separate, smaller pair (23,100 / 14,124). Do not conclude the
     download is corrupted — and do not copy the binaries: load Playfair from Google Fonts.
-13. **`.cl-icon` is dead again** (nineteenth consecutive snippet), and the `:where(html) … { all: revert }` guard
-    (23 declarations) plus its `[hidden]` re-declaration exist only to survive a host page's Bootstrap reboot.
-    Neither belongs in the port.
+13. **`.cl-icon` is dead again** (nineteenth consecutive snippet), and the `:where(html) :is(…)` reset list —
+    whose last selector is `:is(html, body) { all: revert }`, 23 `revert` declarations in all — plus its `[hidden]`
+    re-declaration exist only to survive a host page's Bootstrap reboot. Neither belongs in the port.
 14. **`is-enhanced` gates the whole mobile bar.** Without it the ≤860 block styles nothing and the bar falls back
     to a centred stacked layout (`:not(.is-enhanced)`). React renders the enhanced state, so the panel must be in
     the DOM and reachable, and the toggle must keep `aria-expanded` + `aria-label` in sync.
@@ -632,7 +632,7 @@ table` / `View tonight's menu` SHALL scroll to a real section or open the bookin
    reason they paint above its background at all.
 7. **Footer.** Add the Component Dock footer the reference lacks.
 
-**Do not port:** the `:where(html) … { …: revert }` guard block (**23** `revert` declarations — Tailwind's
+**Do not port:** the `:is(html, body) { all: revert }` reset list (**23** `revert` declarations — Tailwind's
 preflight covers it), the `[hidden]` re-declaration that only exists to undo it, the `is-enhanced` no-JS path as
 _separate_ CSS (React renders the enhanced state), the source's `#` anchors and redacted `tel:`, the six copied
 font binaries, or the macOS screenshot frame.
@@ -656,8 +656,8 @@ font binaries, or the macOS screenshot frame.
       **906** at 640; **901** at 584; **900** at 583 and 521; **1195** at 520; **1191** at 480; **1235** at 432;
       **1278** at 428; **1277** at 390; **1276** at 360; **1324** at 320
 - [ ] `scrollWidth === clientWidth` at every width above (the zoomed photograph is clipped, never scrolled)
-- [ ] bar height **83.89** at ≥1194 and at ≤860, **88.19** at 861–1193, **81** at ≤520; the phone is `display:none`
-      at **1080** and visible at **1081**
+- [ ] bar height **83.89** with a one-line nav (from **1194**) and at ≤860, **88.19** across **861–1193** where the
+      links wrap inside themselves, **81** at ≤520; the phone is `display:none` at **1080** and visible at **1081**
 - [ ] title size follows `clamp(2.6rem, 1.3rem + 4.6vw, 5.6rem)`: **87.04** at 1440, 79.68 at 1280, 70.48 at 1080,
       65.01 at 961, **41.6** (floor, reached at 452) from 452 down; the balanced breaks give **3** lines at
       1416–1440 and ≤428, **2** at 1226–1415 and 429–960, **3** at 961–1225
