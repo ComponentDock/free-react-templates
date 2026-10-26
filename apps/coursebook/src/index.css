@@ -1,0 +1,33 @@
+@import 'tailwindcss';
+
+/* Coursebook tokens. The ground is a blue-leaning grey (#f6f7fb), not warm
+   paper, so the white cards read as panels on a dashboard. Ink is #161a2e,
+   muted #4b5168, hairline #e6e8f0; the three accent/soft pairs live on each
+   card as --accent / --soft because they are per-card data, not a theme. */
+@theme {
+  --font-sans: 'Lexend', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: #f6f7fb;
+    color: #161a2e;
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The card-wide link's overlay carries the focus ring, in the card's own
+   accent (6.29 / 5.47 / 5.02 on white — all above the 3:1 non-text floor). */
+.coursebook-card-link:focus-visible {
+  outline: none;
+}
+
+.coursebook-card-link:focus-visible::after {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
