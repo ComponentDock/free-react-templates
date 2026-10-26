@@ -660,6 +660,10 @@
 - [x] **Accordion 19** — [colorlib](https://colorlib.com/wp/template/accordion-19/) · [clasp](https://clasp.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-19.jpg)
 - [x] **Accordion 20** — [colorlib](https://colorlib.com/wp/template/accordion-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/accordion-20.jpg) · [jade](https://jade.free.componentdock.com)
 
+## Bootstrap Alerts (12)
+
+- [~] **Alert 01** — [colorlib](https://colorlib.com/wp/template/alert-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alert-01.jpg) · noticeboard (building)
+
 ## Bootstrap Buttons (20)
 
 - [x] **Bootstrap Buttons 01** — [colorlib](https://colorlib.com/wp/template/bootstrap-buttons-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-buttons-01.jpg) · [btncraft](https://btncraft.free.componentdock.com)
