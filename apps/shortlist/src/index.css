@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+/* Shortlist tokens. The ground is a sage grey (#f4f6f3), not warm paper, and
+   the ink is a deep green (#13201a) so the page reads as a hiring board rather
+   than a dashboard. One lime signal (#d9f99d) marks the default work-mode pill
+   and the saved bookmark; the saved card tints to #fbfdf6 with a #a3c76a
+   border. Line height is set on the card (1.45) and nowhere else, so the head
+   and the announcement keep the browser's normal leading. The focus ring is #3f6212 — lime enough to match the palette and
+   dark enough to clear 3:1 on both white and the ground. */
+@theme {
+  --font-sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-ground: #f4f6f3;
+  --color-ink: #13201a;
+  --color-muted: #4b5a52;
+  --color-line: #e3e8e4;
+  --color-lime: #d9f99d;
+  --color-lime-ink: #1a2e05;
+  --color-saved: #fbfdf6;
+  --color-saved-line: #a3c76a;
+  --color-hybrid: #e0f2fe;
+  --color-hybrid-ink: #0c4a6e;
+  --color-office: #f1f1ee;
+  --color-office-ink: #3f3f3a;
+  --color-focus: #3f6212;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The card-wide link paints its ring on the ::after overlay, so the ring
+   traces the card's outline instead of the text baseline. */
+.shortlist-card-link:focus-visible {
+  outline: none;
+}
+
+.shortlist-card-link:focus-visible::after {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
