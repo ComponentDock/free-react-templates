@@ -1,0 +1,308 @@
+@import 'tailwindcss';
+
+/* Tierline tokens — a near-black ground (#0c0f1d) and a blue-black card plate
+   (#151a2e) separated by one hairline (#262c47): nine levels of luminance in a
+   single hue family, which is why the dark plans read as outlines rather than
+   grey boxes. The violet is split by ground: the light lavender (#b7a8ff) is
+   the dark plans' accent, the saturated #5b3df5 is the white plan's. The two
+   gradients are different pairs on purpose — the ribbon runs violet→magenta
+   (#6d4dff → #b04dff) and the featured CTA violet→purple (#5b3df5 → #9333ea).
+   Manrope is the only family; 400/500/700/800 are loaded, weight 600 is not. */
+@theme {
+  --color-night: #0c0f1d;
+  --color-plate: #151a2e;
+  --color-plate-line: #262c47;
+  --color-plate-ink: #e5e7f5;
+  --color-plate-muted: #a9aecb;
+  --color-lavender: #b7a8ff;
+  --color-violet: #5b3df5;
+  --color-violet-deep: #9333ea;
+  --color-ribbon-a: #6d4dff;
+  --color-ribbon-b: #b04dff;
+  --color-paper: #ffffff;
+  --color-paper-ink: #14142b;
+  --color-paper-muted: #4d5170;
+  --color-paper-rule: #ebe8fb;
+  --color-tick-ground: #efeaff;
+  --color-cta-line: #3a4166;
+
+  --radius-card: 22px;
+  --radius-cta: 12px;
+
+  --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-night);
+    color: var(--color-plate-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* The band is 1,152 px wide including its 16 px gutters, so the content box
+     is 1,120 — the width at which the three 360 px cards and the 20 px gaps
+     add up exactly. The glow is the container's own background image: a
+     691 × 478 ellipse anchored to its top edge, invisible by y ≈ 239. */
+  .band {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: clamp(40px, 7vw, 88px) 16px;
+    color: var(--color-plate-ink);
+    background-image: radial-gradient(
+      60% 50% at 50% 0%,
+      rgba(124, 92, 255, 0.22),
+      transparent 70%
+    );
+  }
+
+  .band-head {
+    max-width: 620px;
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+
+  .band-eyebrow {
+    margin: 0;
+    color: var(--color-lavender);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  .band-title {
+    margin: 10px 0 12px;
+    color: #fff;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.12;
+  }
+
+  .band-sub {
+    margin: 0;
+    color: var(--color-plate-muted);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* Three fixed tracks above 880, one 440 px capped track below — never two
+     columns at any width. `align-items: center` is what lifts the taller
+     featured plan out of the row instead of stretching its neighbours. */
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: center;
+    gap: 20px;
+  }
+
+  @media (max-width: 880px) {
+    .plan-grid {
+      grid-template-columns: minmax(0, 440px);
+      justify-content: center;
+    }
+  }
+
+  /* The dark plate. The 1 px border is content, not decoration: with it the
+     content width is 302 on every card, the featured one included. */
+  .plan {
+    position: relative;
+    padding: 30px 28px 32px;
+    border: 1px solid var(--color-plate-line);
+    border-radius: var(--radius-card);
+    background-color: var(--color-plate);
+    color: var(--color-plate-ink);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Inverted, never scaled: white surface, +14/+12 px padding, and the border
+     stays 1 px — only its colour goes transparent. */
+  .plan-featured {
+    padding-top: 44px;
+    padding-bottom: 44px;
+    border-color: transparent;
+    background-color: var(--color-paper);
+    color: var(--color-paper-ink);
+    box-shadow:
+      0 0 0 1px rgba(139, 114, 255, 0.6),
+      0 30px 80px -20px rgba(124, 92, 255, 0.55);
+  }
+
+  /* Half its own height above the padding edge — because the box is bordered,
+     that measures 14.4 px above the card's outer top, not 15.4. */
+  .plan-ribbon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-image: linear-gradient(90deg, var(--color-ribbon-a), var(--color-ribbon-b));
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+  }
+
+  .plan-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .plan-featured .plan-name {
+    color: var(--color-violet);
+  }
+
+  /* `min-height: 3em` is 45 px here (3 × the card's 15 px), i.e. two lines of
+     22.5 — the block keeps all three price rows on one baseline. */
+  .plan-pitch {
+    min-height: 3em;
+    margin: 6px 0 22px;
+    color: var(--color-plate-muted);
+  }
+
+  .plan-featured .plan-pitch {
+    color: var(--color-paper-muted);
+  }
+
+  /* Baseline alignment, not centring: the unit's box top lands 26 px below the
+     amount's, so it hangs into the bottom half of the row. */
+  .plan-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    margin: 0 0 22px;
+  }
+
+  .plan-amount {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+  }
+
+  .plan-per {
+    color: var(--color-plate-muted);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .plan-featured .plan-per {
+    color: var(--color-paper-muted);
+  }
+
+  /* 13 + 13 padding + a 22.5 line + 2 px of border = 50.5 tall. The label is
+     centred; nothing else in the card is. */
+  .plan-cta {
+    display: block;
+    padding: 13px 18px;
+    border: 1px solid var(--color-cta-line);
+    border-radius: var(--radius-cta);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      background-color 0.2s ease,
+      border-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .plan-cta:hover {
+    background-color: #222844;
+    border-color: #4d5580;
+  }
+
+  .plan-cta:focus-visible {
+    outline: 3px solid var(--color-lavender);
+    outline-offset: 3px;
+  }
+
+  .plan-featured .plan-cta {
+    border-color: transparent;
+    background-image: linear-gradient(90deg, var(--color-violet), var(--color-violet-deep));
+    box-shadow: 0 10px 24px -10px rgba(91, 61, 245, 0.8);
+  }
+
+  .plan-featured .plan-cta:hover {
+    background-image: linear-gradient(90deg, #4c2fe0, #7e22ce);
+    transform: translateY(-1px);
+  }
+
+  .plan-featured .plan-cta:focus-visible {
+    outline-color: var(--color-violet);
+  }
+
+  .plan-list-title {
+    margin: 26px 0 12px;
+    padding-top: 22px;
+    border-top: 1px solid var(--color-plate-line);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .plan-featured .plan-list-title {
+    border-top-color: var(--color-paper-rule);
+  }
+
+  .plan-list {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .plan-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* A 20 px disc with 2 px of padding, so the 20-unit glyph is drawn at 16 px
+     and its 2.4 stroke lands at 1.92. */
+  .plan-tick {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: rgba(139, 114, 255, 0.18);
+    fill: none;
+    stroke: var(--color-lavender);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .plan-featured .plan-tick {
+    background-color: var(--color-tick-ground);
+    stroke: var(--color-violet);
+  }
+
+  /* The only motion query on the page, because the CTA is the only thing that
+     moves: no card hover, no fade, no keyframes. */
+  @media (prefers-reduced-motion: reduce) {
+    .plan-cta {
+      transition: none;
+    }
+
+    .plan-featured .plan-cta:hover {
+      transform: none;
+    }
+  }
+}
