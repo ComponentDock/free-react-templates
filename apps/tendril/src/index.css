@@ -1,0 +1,775 @@
+@import 'tailwindcss';
+
+/* Tendril's palette: a mint ground with a soft radial halo, deep pine ink, one
+   green accent, one lime highlight and the phone mock's own neutrals. Twenty-
+   five colours in all — the phones' screens carry a set of their own, which is
+   why the list is longer than the shell's six brand values. */
+@theme {
+  --color-ground: #e9f4ee;
+  --color-ground-top: #f3faf6;
+  --color-halo: #c9ecd8;
+  --color-ink: #0f2e22;
+  --color-muted: #3d5a4d;
+  --color-green: #127a4f;
+  --color-lime: #c6f36b;
+  --color-phone: #0b0f0d;
+  --color-rim: #2c3a33;
+  --color-store-hover: #1d2a24;
+  --color-screen: #fbfdfb;
+  --color-well: #e6f7ea;
+  --color-cell: #eef5f0;
+  --color-cell-ink: #45604f;
+  --color-card-line: #e3ece6;
+  --color-done: #54705f;
+  --color-strike: #9ab8a5;
+  --color-box: #b7cdbf;
+  --color-avatar: #fde68a;
+  --color-avatar-ink: #713f12;
+  --color-stars: #b45309;
+  --color-stats: #d6ebe0;
+  --color-track: #cfe8d7;
+  --color-today-label: #cfe5d8;
+
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Tailwind's type scale cannot express either ramp: the display line has to
+     reach 83.2px at 1440 and stop at 41.6px below 448px. */
+  --text-display: clamp(2.6rem, 1.2rem + 5vw, 5.2rem);
+  --text-lede: clamp(1.02rem, 0.95rem + 0.35vw, 1.2rem);
+}
+
+@layer base {
+  /* One gutter for the shell and for the footer that sits outside it. */
+  :root {
+    --gutter: clamp(16px, 4vw, 40px);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    /* The webfont's optical-size axis is instanced automatically at the display
+       ramp only; body copy keeps the default instance, which is what the
+       reference's static files render. */
+    font-optical-sizing: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* One full-height column. `main { flex: 1 }` is what centres the hero under
+     the bar — padding the hero to the viewport instead drifts the whole section
+     by 68.375px at 1440 and by 0 at 960. */
+  .td-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+      radial-gradient(50% 60% at 78% 55%, var(--color-halo) 0%, transparent 70%),
+      linear-gradient(180deg, var(--color-ground-top), var(--color-ground));
+    color: var(--color-ink);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  /* Colour is set per link, never inherited: the store buttons must stay white
+     on their dark ground rather than pick up the copy column's ink. */
+  .td-root a {
+    text-decoration: none;
+  }
+
+  .td-root a:focus-visible,
+  .td-root button:focus-visible {
+    outline: 3px solid var(--color-green);
+    outline-offset: 3px;
+  }
+
+  /* Screen-reader copy that carries the toast's claim for assistive tech
+     without moving a single measured box. */
+  .td-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(50%);
+  }
+
+  /* ---- the bar ----------------------------------------------------------- */
+
+  .td-bar {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* Sized by the wordmark: 34 + 22 + 22 = 83.25 (the mark's 34px line box plus
+     22px of padding either side). */
+  .td-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px var(--gutter);
+  }
+
+  .td-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-ink);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+
+  .td-logo-mark {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+    background: var(--color-ink);
+    color: var(--color-lime);
+  }
+
+  .td-nav {
+    margin-left: auto;
+  }
+
+  /* The links carry their own 8px padding, so the pill adds none: with a 5px
+     inset the bar grows to 93.25 and the whole hero drops 5px. */
+  .td-links {
+    display: flex;
+    gap: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .td-link {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    color: var(--color-muted);
+    font-size: 15px;
+    font-weight: 500;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .td-link:hover {
+    color: var(--color-ink);
+    background: #fff;
+  }
+
+  .td-link[aria-current='page'] {
+    background: var(--color-ink);
+    color: #fff;
+  }
+
+  .td-menu-btn {
+    display: none;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    background: #fff;
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .td-menu-close {
+    display: none;
+  }
+
+  .td-bar.is-open .td-menu-open {
+    display: none;
+  }
+
+  .td-bar.is-open .td-menu-close {
+    display: block;
+  }
+
+  /* ---- the hero ---------------------------------------------------------- */
+
+  .td-main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  .td-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(32px, 5vw, 64px);
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(24px, 4vw, 48px) var(--gutter) clamp(40px, 6vw, 72px);
+  }
+
+  .td-rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .td-score {
+    padding: 2px 10px;
+    border-radius: 8px;
+    background: var(--color-ink);
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .td-stars {
+    color: var(--color-stars);
+    letter-spacing: 2px;
+  }
+
+  /* Two nodes, two lines: the bare text node stays on line one, the block span
+     takes line two, and the pair never reflows into three lines. */
+  .td-title {
+    margin: 20px 0 18px;
+    font-optical-sizing: auto;
+    font-size: var(--text-display);
+    font-weight: 800;
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+  }
+
+  .td-title span {
+    display: block;
+    color: var(--color-green);
+  }
+
+  .td-sub {
+    max-width: 30em;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: var(--text-lede);
+  }
+
+  .td-stores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  /* 190px is a floor, so the label text can change without moving a pixel. */
+  .td-store {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 190px;
+    padding: 10px 22px 10px 16px;
+    border-radius: 14px;
+    background: var(--color-phone);
+    color: #fff;
+    box-shadow: 0 12px 24px -12px rgba(11, 15, 13, 0.6);
+    transition:
+      transform 0.2s,
+      background-color 0.2s;
+  }
+
+  .td-store:hover {
+    transform: translateY(-2px);
+    background: var(--color-store-hover);
+  }
+
+  .td-store > span {
+    display: grid;
+    line-height: 1.15;
+  }
+
+  .td-store-top {
+    font-size: 11.5px;
+    opacity: 0.85;
+  }
+
+  .td-store-name {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* A dot list, not bullets: the 7px dot sits at `.6em` so its optical centre
+     follows the first line at any type size. */
+  .td-facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+    margin-top: 30px;
+    color: var(--color-muted);
+    font-size: 14.5px;
+  }
+
+  .td-facts li {
+    position: relative;
+    padding-left: 16px;
+  }
+
+  .td-facts li::before {
+    content: '';
+    position: absolute;
+    top: 0.6em;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-green);
+  }
+
+  .td-facts strong {
+    color: var(--color-ink);
+  }
+
+  /* ---- the product shot -------------------------------------------------- */
+
+  .td-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 560px;
+  }
+
+  /* The disc is not centred on the phones: it sits 40px right of centre, so its
+     right edge lands exactly on the visual's right edge. */
+  .td-visual::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--color-lime);
+    transform: translate(-40%, -50%);
+  }
+
+  .td-phone {
+    position: relative;
+    width: 270px;
+    height: 556px;
+    padding: 10px;
+    border-radius: 44px;
+    background: var(--color-phone);
+    box-shadow:
+      0 0 0 2px var(--color-rim) inset,
+      0 40px 70px -30px rgba(15, 46, 34, 0.6);
+  }
+
+  .td-phone--front {
+    z-index: 2;
+    animation: td-bob 6s ease-in-out infinite;
+  }
+
+  .td-phone--back {
+    position: absolute;
+    top: 40px;
+    left: calc(50% + 10px);
+    width: 240px;
+    height: 494px;
+    transform: rotate(8deg);
+  }
+
+  .td-notch {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+    width: 84px;
+    height: 24px;
+    border-radius: 999px;
+    background: var(--color-phone);
+    transform: translateX(-50%);
+  }
+
+  .td-screen {
+    height: 100%;
+    overflow: hidden;
+    padding: 52px 16px 16px;
+    border-radius: 34px;
+    background: var(--color-screen);
+    font-size: 12.5px;
+  }
+
+  .td-app-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .td-hello {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+
+  .td-avatar {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--color-avatar);
+    color: var(--color-avatar-ink);
+    font-weight: 800;
+  }
+
+  .td-days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .td-days span {
+    display: grid;
+    justify-items: center;
+    gap: 2px;
+    padding: 6px 0;
+    border-radius: 12px;
+    background: var(--color-cell);
+    color: var(--color-cell-ink);
+    font-size: 10.5px;
+    font-weight: 500;
+  }
+
+  .td-days b {
+    color: var(--color-ink);
+    font-size: 14px;
+  }
+
+  .td-days .is-today {
+    background: var(--color-ink);
+    color: var(--color-today-label);
+  }
+
+  .td-days .is-today b {
+    color: #fff;
+  }
+
+  .td-ring-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 18px;
+    background: var(--color-well);
+  }
+
+  .td-ring {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: conic-gradient(var(--color-green) var(--p), var(--color-track) 0);
+  }
+
+  .td-ring > span {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-well);
+    color: var(--color-cell-ink);
+    font-size: 9.5px;
+    line-height: 1.1;
+  }
+
+  .td-ring b {
+    color: var(--color-ink);
+    font-size: 15px;
+  }
+
+  .td-ring-text {
+    color: var(--color-cell-ink);
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .td-ring-text b {
+    display: block;
+    color: var(--color-ink);
+    font-size: 13.5px;
+  }
+
+  .td-habits {
+    display: grid;
+    gap: 7px;
+    margin-top: 12px;
+  }
+
+  .td-habits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border: 1px solid var(--color-card-line);
+    border-radius: 14px;
+    background: #fff;
+    font-weight: 500;
+  }
+
+  .td-box {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-box);
+    border-radius: 6px;
+  }
+
+  /* The tick is a data-URI checkmark, so a done row needs no icon font. */
+  .td-habits .is-done {
+    color: var(--color-done);
+    text-decoration: line-through;
+    text-decoration-color: var(--color-strike);
+  }
+
+  .td-habits .is-done .td-box {
+    border-color: var(--color-green);
+    background: var(--color-green)
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 8.5 2.5 2.5 5.5-6' fill='none' stroke='%23fff' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+      center / 14px no-repeat;
+  }
+
+  .td-screen--stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 44px 18px 16px 110px;
+    background: var(--color-ink);
+    color: var(--color-stats);
+    text-align: right;
+  }
+
+  .td-s-label {
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+
+  .td-streak {
+    margin-top: 6px;
+    color: var(--color-lime);
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+  }
+
+  .td-s-sub {
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .td-week {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    height: 110px;
+    margin-top: 26px;
+  }
+
+  .td-week span {
+    flex: 1;
+    height: calc(var(--v) * 100%);
+    border-radius: 6px;
+    background: rgba(198, 243, 107, 0.85);
+  }
+
+  .td-week-days {
+    align-self: stretch;
+    display: flex;
+    gap: 8px;
+    margin-top: 6px;
+    font-size: 10px;
+  }
+
+  .td-week-days span {
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Anchored to the visual, not the page: 50% − 300px resolves against the
+     528px column and lands the toast 8px over the front phone's left edge. */
+  .td-toast {
+    position: absolute;
+    z-index: 3;
+    top: 60%;
+    left: calc(50% - 300px);
+    padding: 12px 18px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 18px 40px -16px rgba(15, 46, 34, 0.45);
+    font-size: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    animation: td-bob 6s ease-in-out -3s infinite;
+  }
+
+  /* ---- the closing line -------------------------------------------------- */
+
+  .td-footer {
+    background: var(--color-ink);
+    color: var(--color-stats);
+    font-size: 14px;
+    text-align: center;
+    padding: 20px var(--gutter);
+  }
+
+  .td-footer a {
+    color: var(--color-lime);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+@keyframes td-bob {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 960px) {
+  .td-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .td-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .td-stores,
+  .td-facts {
+    justify-content: center;
+  }
+
+  .td-sub {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .td-bar.is-enhanced .td-menu-btn {
+    display: grid;
+  }
+
+  .td-bar.is-enhanced .td-nav {
+    position: absolute;
+    top: calc(100% - 8px);
+    right: var(--gutter);
+    left: var(--gutter);
+    display: none;
+  }
+
+  .td-bar.is-enhanced.is-open .td-nav {
+    display: block;
+  }
+
+  .td-bar.is-enhanced .td-links {
+    flex-direction: column;
+    padding: 8px;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 24px 48px -18px rgba(15, 46, 34, 0.35);
+  }
+
+  .td-bar.is-enhanced .td-link {
+    padding: 13px 16px;
+    font-size: 17px;
+  }
+
+  .td-bar:not(.is-enhanced) .td-bar-inner,
+  .td-bar:not(.is-enhanced) .td-links {
+    flex-wrap: wrap;
+  }
+}
+
+/* The re-anchor starts at 640, not 520: below ~641px the 50% − 300px offset
+   computes negative enough to push the toast past the left edge of the page and
+   the shell's `overflow: hidden` eats it (the reference loses 20px at 560 and
+   39.5px at 521). Centring it under the phone from 640 removes the clip. */
+@media (max-width: 640px) {
+  .td-toast {
+    top: auto;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .td-stores {
+    width: 100%;
+  }
+
+  .td-store {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .td-visual {
+    min-height: 500px;
+    margin-top: 8px;
+  }
+
+  .td-visual::before {
+    width: 320px;
+    transform: translate(-50%, -50%);
+  }
+
+  .td-phone--front {
+    width: 244px;
+    height: 500px;
+  }
+
+  .td-phone--back {
+    display: none;
+  }
+
+  .td-hello {
+    font-size: 15px;
+  }
+
+  .td-facts {
+    gap: 6px 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .td-root *,
+  .td-root *::before,
+  .td-root *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
