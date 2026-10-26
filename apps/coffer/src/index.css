@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+/* Coffer tokens — the stage is a three-stop gradient (indigo-950 → violet-900 →
+   pink-900, all stock Tailwind steps), the ink is white, the secondary ink is
+   violet-100, the one warm accent is amber-200 (gold: the ring, the chip, the
+   focus ring) and the one green is green-200 / green-900 (the "On track" pill
+   and credits). Two values are not Tailwind steps and live here: the flat glass
+   fallback (#3b1a6e) and the violet scrim under the white glass layer. Sora is
+   the only face — 400..700 from one variable Google Fonts cut. */
+@theme {
+  --color-glass-fallback: #3b1a6e;
+  --color-scrim: rgba(20, 8, 40, 0.5);
+  --color-gold: #fde68a;
+
+  --font-sans: 'Sora', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    /* The stage paints the gradient; the body matches its TOP stop so a
+       rubber-band overscroll never flashes a different colour. */
+    background-color: #1e1b4b;
+    color: #fff;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The card is one glass surface: a violet scrim, then the white glass gradient
+   on top of it. The page gradient and the three blobs still read through the
+   card, but dimmed enough that every text run clears WCAG AA — the source
+   design's blobs sat under the copy at up to 2.05:1. Browsers without
+   backdrop-filter get the flat violet instead of unreadable glass. */
+.glass-card {
+  position: relative;
+  background-color: var(--color-glass-fallback);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  .glass-card {
+    background-color: var(--color-scrim);
+    background-image: linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.06)
+    );
+    -webkit-backdrop-filter: blur(22px) saturate(160%);
+    backdrop-filter: blur(22px) saturate(160%);
+  }
+}
+
+/* The page's only motion: a 1px lift on the CTA. */
+.money-btn {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.money-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Gold, not white: the surface behind both controls is violet. */
+.money-btn:focus-visible,
+.ledger-link:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .money-btn {
+    transition: none;
+  }
+
+  .money-btn:hover {
+    transform: none;
+  }
+}
