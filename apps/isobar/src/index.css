@@ -1,0 +1,209 @@
+/**
+ * Isobar design tokens.
+ *
+ * Three surfaces carry the page and nothing else: a blue 160° gradient panel, a
+ * white forecast panel and an indigo 170° night panel, all 26 px radius on one
+ * pale blue ground. The palette is measured from the recreation's reference:
+ *
+ * - ground        #e8eef6 — the page behind the row
+ * - ink           #0f2239 — page label, forecast text (16.05:1 on white)
+ * - muted         #4a5d74 — forecast secondary text (6.75:1 on white)
+ * - sky-1/2/3     #1d4ed8 → #2563eb 45% → #0e7490 — conditions gradient
+ * - sky-muted     #e0f2fe — conditions secondary text (4.50:1 at the mid stop,
+ *                   the tightest text pair on the page — do not lighten it)
+ * - night-1/2     #1e1b4b → #312e81 — night gradient
+ * - night-muted   #c7d2fe — night secondary text (7.66:1 at the light end)
+ * - night-cloud   #e0e7ff on #a5b4fc — the snow glyph over indigo
+ * - sun           #fcd34d on #f59e0b — rays at 3 px
+ * - cloud         #fff on #c9d6e6 — 2 px stroke
+ * - rain          #38bdf8 — 3 px
+ * - bolt          #facc15 on #ca8a04 — 1.5 px
+ * - snow          #bae6fd — 2.5 px
+ * - note          #fef08a on rgb(253 224 71 / .16) — the icy-roads strip
+ * - tile          rgb(255 255 255 / .14) — the four detail tiles
+ * - rule          #eaf0f6 — forecast row hairlines
+ * - track         #edf2f7 — the unfilled range bar
+ * - heat-1/2/3    #38bdf8 → #fbbf24 60% → #f97316 — range fill
+ *
+ * One family (Albert Sans 300/400/500/600/700) carries every role; the display
+ * temperature is the only 300 and the only negative tracking on the page.
+ */
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Albert Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-ground: #e8eef6;
+  --color-ink: #0f2239;
+  --color-muted: #4a5d74;
+  --color-card: #ffffff;
+  --color-sky-1: #1d4ed8;
+  --color-sky-2: #2563eb;
+  --color-sky-3: #0e7490;
+  --color-sky-muted: #e0f2fe;
+  --color-night-1: #1e1b4b;
+  --color-night-2: #312e81;
+  --color-night-muted: #c7d2fe;
+  --color-night-cloud: #e0e7ff;
+  --color-night-cloud-edge: #a5b4fc;
+  --color-sun: #fcd34d;
+  --color-sun-edge: #f59e0b;
+  --color-cloud: #ffffff;
+  --color-cloud-edge: #c9d6e6;
+  --color-rain: #38bdf8;
+  --color-bolt: #facc15;
+  --color-bolt-edge: #ca8a04;
+  --color-snow: #bae6fd;
+  --color-note: #fef08a;
+  --color-note-bg: rgb(253 224 71 / 0.16);
+  --color-tile: rgb(255 255 255 / 0.14);
+  --color-rule: #eaf0f6;
+  --color-track: #edf2f7;
+  --color-heat-1: #38bdf8;
+  --color-heat-2: #fbbf24;
+  --color-heat-3: #f97316;
+  --radius-card: 26px;
+  --radius-tile: 14px;
+  --radius-note: 12px;
+  --shadow-card: 0 24px 50px -34px rgb(15 34 57 / 0.5);
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/**
+ * The row is fr arithmetic, not thirds: 1.25 : 1 : .8 gives 442.61 / 354.11 /
+ * 283.28 inside 1,120. Below 980 the fr split cannot hold — the tracks become
+ * `auto-fit`, so three 300 px columns need 940 px of row and two need 620. Those
+ * thresholds are arithmetic, which is why they are a media query here and not
+ * `md:`/`lg:` utilities.
+ */
+.isobar-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(0, 0.8fr);
+  align-items: start;
+  gap: 20px;
+}
+
+@media (max-width: 980px) {
+  .isobar-grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  }
+}
+
+/* Four tiles in one row until 480, then two columns of two. The card's height
+   follows the wrapping: 61.14 (1 line) / 82.89 (2) / 104.64 (3). */
+.isobar-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 22px 0 18px;
+}
+
+/* 96 px in a 96 px line box, 80 below 480. The night card's 64 is its own class
+   and never inherits this step. */
+.isobar-temp {
+  margin: 4px 0 0;
+  font-size: 96px;
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+@media (max-width: 480px) {
+  .isobar-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .isobar-temp {
+    font-size: 80px;
+  }
+}
+
+/* The conditions panel repaints the muted token so every secondary line inside
+   it reads on the gradient instead of on white. */
+.isobar-now {
+  --color-muted: var(--color-sky-muted);
+}
+
+.isobar-now .isobar-cloud {
+  stroke: rgb(255 255 255 / 0.5);
+}
+
+.isobar-night {
+  --color-muted: var(--color-night-muted);
+}
+
+.isobar-night .isobar-cloud {
+  fill: var(--color-night-cloud);
+  stroke: var(--color-night-cloud-edge);
+}
+
+/* Glyph palette — six shapes, one set of rules, sized by the parent utility. */
+.isobar-sun circle {
+  fill: var(--color-sun);
+  stroke: var(--color-sun-edge);
+  stroke-width: 2;
+}
+
+.isobar-sun path {
+  fill: none;
+  stroke: var(--color-sun-edge);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.isobar-cloud {
+  fill: var(--color-cloud);
+  stroke: var(--color-cloud-edge);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.isobar-rain {
+  fill: none;
+  stroke: var(--color-rain);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.isobar-bolt {
+  fill: var(--color-bolt);
+  stroke: var(--color-bolt-edge);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+
+.isobar-snow path {
+  fill: none;
+  stroke: var(--color-snow);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+/* The page's only motion: the conditions sun turns once every 30 s. */
+.isobar-spin {
+  transform-origin: 24px 24px;
+  animation: isobar-spin 30s linear infinite;
+}
+
+@keyframes isobar-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .isobar-spin {
+    animation: none;
+  }
+}
