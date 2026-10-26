@@ -663,7 +663,7 @@
 ## Bootstrap Alerts (12)
 
 - [x] **Alert 01** — [colorlib](https://colorlib.com/wp/template/alert-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alert-01.jpg) · [noticeboard](https://noticeboard.free.componentdock.com)
-- [~] **Alert 02** — [colorlib](https://colorlib.com/wp/template/alert-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alert-02.jpg)
+- [x] **Alert 02** — [colorlib](https://colorlib.com/wp/template/alert-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alert-02.jpg) · [allclear](https://allclear.free.componentdock.com)
 
 ## Bootstrap Buttons (20)
 
