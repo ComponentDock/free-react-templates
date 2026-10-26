@@ -557,6 +557,32 @@ best expressed as four `@theme` colour pairs or as a `Record<Severity, {bg,line,
 through inline `style` custom properties — either way the **title** colour must stay the darkened shade,
 not the accent.
 
+## Port deltas measured in this build (2026-10-26, built bundle, Playwright 1.62)
+
+Every structural number lands exactly: panel **680 × 577** at (380, 88), head **101**, alerts
+**680 × 101.5** at **217 / 332.5 / 448 / 563.5**, icon **22 × 22** at (399, 235), panel cap at vw
+**712**, the 481 → 480 step (padding 16 → 14, gap 14 → 12, card 122.5 → 118.5), 320 → panel 288 with
+alerts **160.5 / 139.5 / 139.5 / 160.5**, `scrollX 0`, document height **900**.
+
+Three rows in the matrix above depend on *text advance widths*, and those cannot match: this port
+loads Inter from Google Fonts (`wght@400..700`, the sanctioned substitute) while the reference ships
+its own Inter static binaries. Measured differences at the same size/weight:
+
+| run                    | reference | port   | delta            |
+| ---------------------- | --------: | -----: | ---------------- |
+| intro, 15 px / 400     |     640   |  661   | **+3.3 %** wider |
+| alert title, 15 px/600 |     220   |  213   | −3.2 % narrower  |
+| `h1`, 30 px / 700      |  322.41   | 323.41 | +1 px            |
+| eyebrow, 13 px / 600   |  136.38   | 135.38 | −1 px            |
+
+Consequences (accept and do **not** chase with `letter-spacing`):
+
+- the intro wraps one line earlier — **3 lines at 320** instead of 2, and **2 lines at 672** instead
+  of 1 (it needs 693 px of viewport, not 672);
+- at **560** the warning body stays **2 lines** (card 101.5, not 122.5) — the 600 instance is narrower
+  in the port, and 520 is the first width where it reaches 3 lines;
+- everything else in the responsive matrix matches to the 0.5 px.
+
 ## Verification checklist
 
 - [ ] `apps/noticeboard` exists, package `@free-react-templates/noticeboard`, `public/CNAME` =

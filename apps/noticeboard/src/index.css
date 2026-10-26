@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* The reference's compact step is `@media (max-width: 480px)` — inclusive, so a
+   480 px viewport still gets the 14 px insets. Tailwind's `max-[480px]` variant
+   compiles to `width < 480px`, which silently skips that width, so the family
+   declares the query once and the alert uses a named variant. */
+@custom-variant alert-compact (@media (max-width: 480px));
+
+/* Noticeboard tokens. The ground is a blue-leaning grey (#f5f6f8) — not white
+   and not warm paper — so the four pale tinted cards read as notices pinned on
+   a desk. The ink ramp is one cool grey family: #111827 headings, #4b5563 for
+   the eyebrow and intro, and a single #374151 body grey shared by all four
+   severities. Each severity's own quad (ground / hairline / darkened title /
+   accent icon) is declared in `src/data/alerts.ts`, not here, because the title
+   must stay darker than the accent that paints the icon. */
+@theme {
+  --color-ground: #f5f6f8;
+  --color-ink: #111827;
+  --color-muted: #4b5563;
+  --color-body: #374151;
+
+  /* One variable face, three instances (400 / 600 / 700). There is no 500 and
+     no 800: a `font-medium` step would render as 400 and `font-extrabold` as
+     700, so the type scale uses font-normal/semibold/bold only. */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Font note, so nobody "fixes" a line break: the reference ships Inter static
+   binaries; this port loads Google's Inter variable face (the sanctioned
+   substitute). At 15 px the 400 instance runs ~3 % wider and the 600 instance
+   ~3 % narrower here, so the intro wraps one line earlier than the reference
+   and the third notice's body does not reach three lines until 520 px. Do not
+   compensate with letter-spacing — it breaks the four card heights, which are
+   exact at every other width. */
