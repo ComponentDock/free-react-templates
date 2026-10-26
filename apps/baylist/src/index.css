@@ -1,0 +1,84 @@
+/**
+ * Baylist design tokens.
+ *
+ * The page is one warm paper ground and one white card surface: nothing else is
+ * painted, so the photograph and the two gold accents carry all the colour.
+ *
+ * - ground   #f7f5f1 — the page, the only non-white surface
+ * - ink      #0f1c2e — price, address, dark badge, heart outline
+ * - muted    #4d5869 — the area line and the spec labels (7.2:1 on white)
+ * - gold     #b7791f — spec glyphs and the link focus ring (graphical, 3.64:1)
+ * - gold-deep#8a5a00 — the eyebrow and the footer link (5.44:1, small text)
+ * - gold-soft#fbbf24 — the "new" badge ground and the heart focus ring
+ * - gold-ink #3b2600 — text on the gold badge (8.6:1)
+ * - heart    #e11d48 — the pressed heart (4.7:1 on white)
+ * - rule     #ece8e1 — the spec row hairline and the cell dividers
+ * - media    #e7e2d9 — the media ground before the photograph paints
+ */
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Urbanist', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-ground: #f7f5f1;
+  --color-ink: #0f1c2e;
+  --color-muted: #4d5869;
+  --color-gold: #b7791f;
+  --color-gold-deep: #8a5a00;
+  --color-gold-soft: #fbbf24;
+  --color-gold-ink: #3b2600;
+  --color-heart: #e11d48;
+  --color-rule: #ece8e1;
+  --color-media-ground: #e7e2d9;
+  --radius-card: 20px;
+  --radius-pill: 8px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The card-wide link paints its ring on the ::after overlay, so the ring
+   traces the card's own inset edge at radius 20 instead of hugging 17 px of
+   text. */
+.baylist-card-link:focus-visible {
+  outline: none;
+}
+
+.baylist-card-link:focus-visible::after {
+  outline: 3px solid var(--color-gold);
+  outline-offset: -3px;
+}
+
+/* One pop per press: the glyph is remounted on a state counter, so the
+   animation replays in both directions. Reduced motion keeps the state and
+   drops the motion. */
+@keyframes baylist-pop {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.baylist-pop {
+  animation: baylist-pop 0.4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .baylist-pop {
+    animation: none;
+  }
+}
