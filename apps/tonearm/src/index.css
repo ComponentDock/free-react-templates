@@ -1,0 +1,150 @@
+/**
+ * Tonearm design tokens.
+ *
+ * Two surfaces carry the whole page: a near-black podcast panel and a cream
+ * album panel, both 28 px radius on a warm greige ground. The accents are the
+ * design's only saturated colour — an amber-to-rose gradient on the episode
+ * bar, flat teal on the album.
+ *
+ * - ground         #ebe5da — the page behind both cards
+ * - night          #17151f — podcast surface
+ * - night-ink      #f6f3ff — podcast text (16.49:1 on the panel)
+ * - night-muted    #b9b4c9 — podcast byline, times (8.97:1)
+ * - night-track    rgba(255,255,255,.16) — the unfilled episode bar
+ * - amber          #ffb27a — podcast eyebrow, focus ring (10.23:1)
+ * - amber-deep     #ff8a3d — the play disc's shadow colour
+ * - rose           #ff5f8f — far end of the episode fill gradient
+ * - cream          #fffdf8 — album surface
+ * - cream-ink      #1d2422 — album text (15.56:1)
+ * - cream-muted    #56625e — album byline, times, track metadata (6.25:1)
+ * - cream-track    #e4ebe8 — the unfilled song bar (decorative, 1.19:1)
+ * - teal           #0f766e — album accent, focus ring, play disc
+ * - teal-ink       #0b5a54 — the current track's text (7.13:1 on teal-row)
+ * - teal-row       #e6f4f1 — the current track's background
+ * - row-hover      #f1f5f3 — a hovered non-current track
+ *
+ * One family (Rubik 400/600/700) carries every role; hierarchy is size,
+ * tracking and the accent switch. Real weights, not synthesised bold.
+ */
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Rubik', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-ground: #ebe5da;
+  --color-night: #17151f;
+  --color-night-ink: #f6f3ff;
+  --color-night-muted: #b9b4c9;
+  --color-night-track: rgb(255 255 255 / 0.16);
+  --color-amber: #ffb27a;
+  --color-amber-deep: #ff8a3d;
+  --color-rose: #ff5f8f;
+  --color-cream: #fffdf8;
+  --color-cream-ink: #1d2422;
+  --color-cream-muted: #56625e;
+  --color-cream-track: #e4ebe8;
+  --color-teal: #0f766e;
+  --color-teal-ink: #0b5a54;
+  --color-teal-row: #e6f4f1;
+  --color-row-hover: #f1f5f3;
+  --radius-card: 28px;
+  --radius-cover: 20px;
+  --radius-cover-sm: 16px;
+  --radius-row: 12px;
+  --shadow-card: 0 30px 60px -30px rgb(23 21 31 / 0.6);
+  --shadow-play: 0 10px 24px -8px rgb(255 138 61 / 0.6);
+  --shadow-play-sm: 0 8px 18px -8px rgb(15 118 110 / 0.8);
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-cream-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The play and pause glyphs are both in the DOM; the pressed state is what
+   swaps them. Kept in CSS rather than a conditional render so the swap paints
+   in the same frame as the attribute change. */
+.tonearm-play .tonearm-i-pause {
+  display: none;
+}
+
+.tonearm-play[aria-pressed='true'] .tonearm-i-play {
+  display: none;
+}
+
+.tonearm-play[aria-pressed='true'] .tonearm-i-pause {
+  display: block;
+}
+
+/* The number cell and the equaliser share grid cell 1 / 1, so the number can
+   become a meter without moving the track name. */
+.tonearm-eq {
+  display: none;
+}
+
+.tonearm-card[data-playing='true'] .tonearm-row[aria-current='true'] .tonearm-num {
+  visibility: hidden;
+}
+
+.tonearm-card[data-playing='true'] .tonearm-row[aria-current='true'] .tonearm-eq {
+  display: flex;
+}
+
+@keyframes tonearm-eq {
+  from {
+    transform: scaleY(0.25);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes tonearm-pulse {
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+.tonearm-card[data-playing='true'] .tonearm-eq i {
+  animation: tonearm-eq 0.9s ease-in-out infinite alternate;
+}
+
+.tonearm-card[data-playing='true'] .tonearm-eq i:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.tonearm-card[data-playing='true'] .tonearm-eq i:nth-child(3) {
+  animation-delay: -0.6s;
+}
+
+.tonearm-card[data-playing='true'] .tonearm-cover circle {
+  animation: tonearm-pulse 2.4s ease-in-out infinite;
+  transform-origin: 150px 104px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tonearm-fill,
+  .tonearm-play,
+  .tonearm-row,
+  .tonearm-skip,
+  .tonearm-speed {
+    transition: none;
+  }
+
+  .tonearm-card[data-playing='true'] .tonearm-eq i,
+  .tonearm-card[data-playing='true'] .tonearm-cover circle {
+    animation: none;
+  }
+
+  .tonearm-card[data-playing='true'] .tonearm-eq i:nth-child(2) {
+    transform: scaleY(0.6);
+  }
+}
