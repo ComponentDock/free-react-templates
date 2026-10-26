@@ -169,3 +169,37 @@ transition is **`none`**. There are no keyframes, no scroll reveal, no `[data-an
 between `## Bootstrap Carousels (20)` (line ~710) and `## Bootstrap Checkboxes (20)` (line ~733) — *Card 06* →
 `statline`.
 Next prep in the family: **`card-07`**.
+
+## Shipped (implementer stream, 2026-10-26)
+
+`apps/statline` — `@free-react-templates/statline`, 35 tests, per-app gate green. Measured against the live
+reference at 1440 × 900 (`curl -4` + Playwright Chromium, webfonts loaded): band **1,232 × 481.38** at x 104
+with `padding: 72px 16px`, head **1,200 × 57** at y 72, `h1` **34** tall (`28/700/−0.56px`), sub **19**
+(`15/400`, `margin-top: 4`), chip **206 × 37** at x **1,114** (`9px 14px`, `1px #d8dee8`, radius **10**),
+grid **4 × 286.5** with gap **18**, cards **286.5 × 256.38** (content **244.5**), `__top` **34** → value **33**
+→ pill **24.19** → spark **244.5 × 56** (stroke **2 px**, `non-scaling-stroke`, rendered line **36.4** tall).
+
+Column ladder reproduced by the intrinsic track alone: **1** at 320–529, **2** at 530–787, **3** at 788–1,045,
+**4** at ≥ 1,046; card widths **288 / 328 / 358 / 448 / 497 / 240 / 359 / 368.5 / 240 / 318.66 / 325.66 / 240 /
+286.5 / 286.5** and band heights **1,296.5 / 1,277.5 / 703.91 / 706.19 / 706.28 / 734.63 / 737.13 / 462.88 /
+481.38** matching the prepped matrix; `scrollWidth − clientWidth` is **0** at all fourteen probed widths. The
+four 12 % tints serialise to the reference's exact `color(srgb …)` values and the four accents to
+`rgb(79,70,229)` / `rgb(8,145,178)` / `rgb(219,39,119)` / `rgb(22,163,74)`.
+
+Deltas from the prepped sheet, all measured rather than assumed:
+
+1. **Line-height is the one token Tailwind changes by default.** Preflight's `line-height: 1.5` made the `h1`
+   **42** (not 34), the sub **22.5** (not 19) and the chip **41** (not 37), which pushed the band to
+   **492.88**. `leading-[normal]` on all three restores **481.38** and makes the 57 px head exact at ≥ 700.
+2. **Real Inter 400/500/600/700** instead of the reference's four faux-bold files, so two text runs are ~1–2 px
+   narrower: the chip measures **206** vs 208 and the pills **72 / 64 / 74 / 74** vs 73 / 64 / 75 / 76. Heights,
+   paddings, radii and colours are identical; the delta is glyph advance only (spec §Known defects 4).
+3. **Motion is pinned**: `ease-[ease]` keeps `transition: border-color 0.2s, box-shadow 0.2s` serialising
+   without a cubic-bezier, and `motion-reduce:transition-none motion-reduce:duration-0` makes the reduced-motion
+   computed value `none 0s` rather than `none 0.2s`.
+4. **Gradient ids are per instance** — `` `spark-${useId()}` `` stripped of `:`/`«»` punctuation, so two cards on
+   one page cannot share a `linearGradient`.
+5. **Container is `max-w-[1232px]`** (`w-full px-4 py-[clamp(32px,6vw,72px)]`): the 1,200 px content box depends
+   on writing the border-box width the content-box reference produces (spec §Known defects 7).
+6. The **Component Dock** line is the only addition to the reference — the page's sole anchor and only focusable
+   element, set in the same 13 px `#64748b` footnote ink.

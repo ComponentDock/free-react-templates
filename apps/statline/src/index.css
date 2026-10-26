@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+/* Statline tokens — a cool blue-grey ground (#eef1f6) under white metric
+   plates, a slate type ramp and four per-card accents (indigo #4f46e5,
+   cyan #0891b2, pink #db2777, green #16a34a). The accents are content, not
+   stylesheet: each card carries its own --accent custom property. Inter is
+   the only face — 400/500/600/700 from one Google Fonts link. */
+@theme {
+  --color-ground: #eef1f6;
+  --color-ink: #0f172a;
+  --color-sub: #475569;
+
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* 1,232 px outer because the 16 px gutters sit outside the 1,200 px content
+     box — the width at which four 286.5 px cards and three 18 px gaps add up.
+     Below 1,232 the band is edge-to-edge with 16 px padding. */
+  .band {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: clamp(32px, 6vw, 72px) 16px;
+    color: var(--color-ink);
+  }
+
+  /* The chip's ground is the card accent at 12% over white; the flat grey
+     declaration in front of it is the fallback for engines without color-mix(). */
+  .metric-icon {
+    background: #f1f5f9;
+    background: color-mix(in srgb, var(--accent) 12%, #fff);
+    color: var(--accent);
+  }
+}
