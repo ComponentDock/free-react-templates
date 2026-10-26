@@ -662,7 +662,7 @@
 
 ## Bootstrap Alerts (12)
 
-- [~] **Alert 01** — [colorlib](https://colorlib.com/wp/template/alert-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alert-01.jpg) · noticeboard (building)
+- [x] **Alert 01** — [colorlib](https://colorlib.com/wp/template/alert-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/alert-01.jpg) · [noticeboard](https://noticeboard.free.componentdock.com)
 
 ## Bootstrap Buttons (20)
 
