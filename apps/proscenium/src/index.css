@@ -1,0 +1,203 @@
+@import 'tailwindcss';
+
+/* The reference's three width steps are INCLUSIVE (`max-width: 960/860/560`),
+   while Tailwind's `max-[860px]` variant compiles to `width < 860px`. The two
+   differ at exactly 860 and 560 px, so the mobile-nav step and the phone step
+   are declared once here as named variants and used from JSX. */
+@custom-variant heroMd (@media (max-width: 860px));
+@custom-variant heroSm (@media (max-width: 560px));
+
+/* Proscenium tokens. A cool off-white ground carries a violet bloom in the top
+   right and a weaker one bottom-left; the accent is a single indigo-violet used
+   for the CTA fill, the pill tag, the chart's active bar and the rail's active
+   tile. The mock needs a slightly deeper edge than the divider line, so the
+   palette keeps both. */
+@theme {
+  --color-ground: #f7f7fb;
+  --color-accent: #5b3df5;
+  --color-accent-hover: #4a2ee0;
+  --color-accent-2: #9333ea;
+  --color-ink: #121229;
+  --color-muted: #535470;
+  --color-line: #e6e5f0;
+  --color-surface: #ffffff;
+  --color-mock-edge: #dcd9ec;
+  --color-mock-chrome: #fbfbfe;
+  --color-kpi-label: #5e5f78;
+  --color-range-ink: #55566e;
+  --color-bar: #d9d3fb;
+  --color-row-rule: #f0eff6;
+  --color-up-bg: #dcfce7;
+  --color-up-fg: #166534;
+  --color-down-bg: #e0f2fe;
+  --color-down-fg: #075985;
+  --color-success: #16a34a;
+  --color-rail-tile: #eceaf5;
+
+  /* One variable face: 400/500/600/700/800 are instances of the same axis, so a
+     single Google Fonts request covers the whole type scale (no 300, no 900). */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-mock: 18px;
+  --radius-cta: 12px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Three layers of ground: the base colour plus two radial blooms. */
+  .hero-ground {
+    --gutter: clamp(16px, 4vw, 40px);
+    background:
+      radial-gradient(60% 60% at 85% 20%, rgba(139, 92, 246, 0.16), transparent 70%),
+      radial-gradient(40% 50% at 10% 90%, rgba(91, 61, 245, 0.08), transparent 70%), #f7f7fb;
+  }
+
+  /* A 1 px dot grid on a 22 px pitch, masked so it fades out by the lower
+     quarter. Decorative, so it never takes a pointer event. */
+  .hero-ground::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(18, 18, 41, 0.09) 1px, transparent 1px);
+    background-size: 22px 22px;
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent 75%);
+    mask-image: linear-gradient(180deg, #000, transparent 75%);
+    pointer-events: none;
+  }
+
+  .hero-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding: 20px var(--gutter);
+  }
+
+  /* The section box: 1240 × 720.78 at 1440. Vertical placement is the flex
+     parent's job (main is centred), not the padding's. */
+  .hero-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
+    margin-inline: auto;
+    padding: clamp(32px, 6vw, 88px) var(--gutter) clamp(56px, 8vw, 112px);
+  }
+
+  @media (max-width: 960px) {
+    .hero-section {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-copy {
+      max-width: 640px;
+    }
+  }
+
+  .hero-title {
+    margin: 22px 0 18px;
+    font-size: clamp(2.35rem, 1.4rem + 3.6vw, 4.1rem);
+    font-weight: 800;
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+  }
+
+  /* An inline span, never a block: at 1440 its rect merges two line boxes. */
+  .hero-accent {
+    background: linear-gradient(92deg, #5b3df5, #9333ea);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .hero-sub {
+    max-width: 34em;
+    margin: 0;
+    font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
+  }
+
+  /* The tilted dashboard: 570 × 522 as a box, 592.15 × 542.28 as a rect. */
+  .hero-mock {
+    overflow: hidden;
+    border: 1px solid var(--color-mock-edge);
+    border-radius: var(--radius-mock);
+    background: var(--color-surface);
+    box-shadow:
+      0 2px 4px rgba(18, 18, 41, 0.04),
+      0 40px 80px -30px rgba(52, 34, 150, 0.35);
+    font-size: 13px;
+    transform: perspective(1600px) rotateY(-6deg) rotateX(2deg);
+    transform-origin: left center;
+  }
+
+  /* The tilt is a desktop flourish; on narrow screens the mock is flat. This
+     block sits after the base rule on purpose — same specificity, so the later
+     declaration is the one that wins inside the query. */
+  @media (max-width: 960px) {
+    .hero-mock {
+      transform: none;
+    }
+  }
+
+  /* The toast hangs off the mock's lower-left corner at -28 px. The reference
+     is clipped for 561–699 px of viewport, where the visual column starts at a
+     gutter below 28 px and the root's overflow shaves the badge; capping the
+     overhang at the gutter keeps the -28 px at every width that fits it and
+     lands the badge exactly on the edge where it does not. */
+  .hero-toast {
+    left: max(-28px, calc(-1 * var(--gutter)));
+    bottom: -44px;
+  }
+
+  @media (max-width: 560px) {
+    .hero-toast {
+      left: 12px;
+      bottom: -40px;
+    }
+
+    .hero-visual {
+      margin-bottom: 24px;
+    }
+  }
+
+  /* The last six bars start 0.15 s later so the chart fills left to right. */
+  .hero-bars > span:nth-child(n + 7) {
+    animation-delay: 0.15s;
+  }
+}
+
+/* Motion is two keyframes: the bars grow once on load, the toast bobs forever. */
+@keyframes grow {
+  from {
+    transform: scaleY(0.1);
+  }
+}
+
+@keyframes bob {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-motion,
+  .hero-motion * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

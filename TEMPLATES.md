@@ -827,6 +827,10 @@
 - [x] **Bootstrap Footer 19** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-19/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-19.jpg) · [amethyst](https://amethyst.free.componentdock.com)
 - [x] **Bootstrap Footer 20** — [colorlib](https://colorlib.com/wp/template/bootstrap-footer-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bootstrap-footer-20.jpg) · [footerpulse](https://footerpulse.free.componentdock.com)
 
+## Bootstrap Heroes (12)
+
+- [~] **Hero 01** — [colorlib](https://colorlib.com/wp/template/hero-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-01.jpg) · [proscenium](https://proscenium.free.componentdock.com)
+
 ## Bootstrap Modals (20)
 
 - [x] **Modal 01** · [overlay](https://overlay.free.componentdock.com) — [colorlib](https://colorlib.com/wp/template/modal-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/modal-01.jpg)
