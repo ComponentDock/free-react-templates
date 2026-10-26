@@ -275,7 +275,7 @@ the gap from bar to strip is **20 px** on cards 1 and 3 and **43.39 px** on card
 
 ### Responsive matrix (measured; card heights are content-driven, never fixed)
 
-| vw   | cols | track px | thumb px        | card h | strip h (1 / 2 / 3)  | title h (1 / 2 / 3)  | content h |
+| vw   | cols | track px | thumb px        | card h | strip h (1 / 2 / 3)  | title h (1 / 2 / 3)  | content h † |
 | ---: | ---: | -------: | --------------: | -----: | -------------------: | -------------------: | --------: |
 | 1440 |    3 |   372.00 | 350.00 × 196.88 | 504.41 | 57.50 / 57.50 / 57.50 | 46.78 / 46.78 / 23.39 |      715.41 |
 | 1024 |    3 |   316.00 | 294.00 × 165.38 | 478.41 | **63.00 / 63.00** / 57.50 | 46.78 / 46.78 / 46.78 | 900 |
@@ -288,6 +288,11 @@ the gap from bar to strip is **20 px** on cards 1 and 3 and **43.39 px** on card
 |  520 |    1 |   488.00 | 466.00 × 262.13 | 569.66 | 57.50 / 57.50 / 57.50 | 46.78 / 46.78 / 23.39 | 1,851 |
 |  390 |    1 |   358.00 | 336.00 × 189.00 | 496.53 | 57.50 / 57.50 / 57.50 | 46.78 / 46.78 / 23.39 | 1,675 |
 |  320 |    1 |   290.00 | 268.00 × 150.75 | 487.17 | 63.00 / 63.00 / 57.50 | **70.17 / 70.17** / 46.78 | 1,642 |
+
+† The last column prints **`body.scrollHeight`** where the content is shorter than the viewport
+(715.41 at 1,440) and the document height where the viewport is the shorter of the two (900 at
+1,024 / 960 / 950, i.e. the 900 px probe window) — the page has **no** `min-height`, so those three
+rows are viewport-bound, not content-bound. All other rows are true content heights.
 
 Three consequences an implementer must not "fix":
 
