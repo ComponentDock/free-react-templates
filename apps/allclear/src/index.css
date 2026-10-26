@@ -1,0 +1,70 @@
+@import 'tailwindcss';
+
+/* The reference's compact step is `@media (max-width: 480px)` — inclusive, so a
+   480 px viewport still tightens the panel and widens its content box.
+   Tailwind's `max-[480px]` variant is `width < 480px` and would skip that
+   width, so the query is declared once here and used as a named variant. */
+@custom-variant compact (@media (max-width: 480px));
+
+/* Allclear tokens. The ground is a lavender base under two blooms — a violet one
+   at the top-left and a blue one at the bottom-right — because the panel is
+   glass (rgba(255,255,255,.72)) and those corner tints are what it picks up. A
+   flat ground would leave the panel looking grey. */
+@theme {
+  --color-ground: #eceafd;
+  --color-bloom-a: #d9d3ff;
+  --color-bloom-b: #cfe9ff;
+  --color-ink: #1c1a33;
+  --color-muted: #5b5876;
+  --color-focus: #5b3fe0;
+  --color-empty-line: #c9c3ec;
+
+  /* One variable face: 400, 600, 700 and 800 are instances of the same axis,
+     so a single Google Fonts <link> covers the whole type scale. */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The design's only motion: dismissing a row collapses its grid track from 1fr
+   to 0fr while it fades at 0.6 × the speed and slides 24 px right. The inner box
+   carries `min-height: 0` — without it the track cannot collapse — and its 12 px
+   `padding-bottom` sits outside the animated track, which is why a 12 px sliver
+   survives until the row is removed. */
+@layer components {
+  .notice-item {
+    --speed: 0.38s;
+    display: grid;
+    grid-template-rows: 1fr;
+    transition:
+      grid-template-rows var(--speed) cubic-bezier(0.4, 0, 0.2, 1),
+      opacity calc(var(--speed) * 0.6) ease,
+      transform var(--speed) cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .notice-item.is-leaving {
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transform: translateX(24px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .notice-item {
+      --speed: 0s;
+    }
+
+    .notice-item.is-leaving {
+      transform: none;
+    }
+  }
+}
