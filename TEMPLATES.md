@@ -829,7 +829,7 @@
 
 ## Bootstrap Heroes (12)
 
-- [~] **Hero 01** — [colorlib](https://colorlib.com/wp/template/hero-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-01.jpg) · [proscenium](https://proscenium.free.componentdock.com)
+- [x] **Hero 01** — [colorlib](https://colorlib.com/wp/template/hero-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/hero-01.jpg) · [proscenium](https://proscenium.free.componentdock.com)
 
 ## Bootstrap Modals (20)
 
