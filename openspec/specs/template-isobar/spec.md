@@ -691,6 +691,29 @@ temperature's degree glyph is `aria-hidden` while the hidden unit text renders o
 on the night card) since jsdom cannot resolve media queries. Every branch of `rangeFill` (lo at the
 window's floor, hi at its top, a single-degree day) needs a case to hold 100 % lines/branches.
 
+## Implementation notes (2026-10-26, `apps/isobar`)
+
+Built to the readings above; the per-app gate passes (**45** tests, **100 %** statements / branches /
+functions / lines). Chromium measurements of the port against the live reference:
+
+| what                    | reference                       | port                                                      |
+| ----------------------- | ------------------------------- | --------------------------------------------------------- |
+| main / grid at 1,440    | 1,120 at x **160**              | **1,120 at x 160** (1,152 outer = 1,120 + 2 × 16 padding, `box-content`) |
+| tracks at 1,440         | 442.61 / 354.11 / 283.28        | **442.61 / 354.11 / 283.28**                              |
+| card heights at 1,440   | 497.67 / 368.84 / 300.31        | **497.67 / 368.84 / 280.75** (see below)                  |
+| columns                 | 3 at 972, 2 at 971, 2 at 652, 1 at 651 | **identical** (300.33 / 459.50 / 300.50 / 619)     |
+| heights at 980 / 390    | 519.42 / 529.06 · 368.84 · 280.75 / 296.75 | 519.42 / 529.06 · 368.84 · **280.75** (defect 1 fixed) |
+| horizontal scroll       | none, 390 → 1,440               | **none** — overflow **0** at all 16 swept widths           |
+
+**The one delta: the night card's warning strip.** With real Albert Sans 600 the string *"Icy roads
+warning until 18:00"* measures **181** px; the reference's measures **191** px because all ten of its
+`@font-face` rules point at one outline and the browser **synthesises** 600 (defect 5). The strip's text box
+is **185.28** px at 1,440 (235.28 − 24 padding − 18 glyph − 8 gap), so the real-metrics port fits the
+sentence on **one** line where the reference wraps to two: the card is **280.75** instead of **300.31**.
+The height is still text-driven, not pinned — the note wraps to two lines (**300.31**) at 981–1,120, where
+the text box drops below 181 px. Forcing the second line at 1,440 would need a fixed width on the strip,
+which the design does not have and requirement 10 forbids.
+
 ## Verification checklist
 
 - [ ] `apps/isobar` exists, package `@free-react-templates/isobar`, `public/CNAME` =
