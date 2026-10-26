@@ -746,6 +746,7 @@
 - [x] **Card 12** — [colorlib](https://colorlib.com/wp/template/card-12/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-12.jpg) · [coursebook](https://coursebook.free.componentdock.com)
 - [x] **Card 13** — [colorlib](https://colorlib.com/wp/template/card-13/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-13.jpg) · [shortlist](https://shortlist.free.componentdock.com)
 - [x] **Card 14** — [colorlib](https://colorlib.com/wp/template/card-14/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-14.jpg) · [baylist](https://baylist.free.componentdock.com)
+- [~] **Card 15** — [colorlib](https://colorlib.com/wp/template/card-15/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/card-15.jpg) · tiffin (building)
 
 ## Bootstrap Checkboxes (20)
 
