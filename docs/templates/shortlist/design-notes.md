@@ -217,3 +217,45 @@ Focus colour is the one deliberate change from the reference: `#65a30d` measures
   visible text; it costs one extra data field. Optional.
 - **The `<ul aria-label="Skills">`.** It is a real list and the label is what gives a screen reader the
   grouping. Keep both; a `div` of spans measures identically and reads worse.
+
+## 7 — Shipped deltas (`apps/shortlist`, 2026-10-26)
+
+Built and measured against the live reference in this run (Playwright 1.62 Chromium, 1,440 × 900 and
+390 × 844). What matches the reference to the pixel:
+
+- `main` box **1072 × 835.78 at x 184** (content **1040 at x 200**), `h1` at **y 72, 36 px / 39.59**
+  line box, head **63.59** tall, grid at **y 159.59**, tracks **512 / 512**, card **512 × 253.84**,
+  card border `#e3e8e4` and radius **18**.
+- Saved card: ground **`rgb(251,253,246)`**, border **`rgb(163,199,106)`**, button **`rgb(19,32,26)`**
+  with a **`rgb(217,249,157)`** glyph — driven by React state, not `:has()` (defect 5).
+- Behaviour: first render `["false","true","false","false"]` and **Saved jobs: 1**; clicking card 3
+  gives **Saved jobs: 2** and the exact sentence *"UX Writer (Contract, 6 months) saved to your
+  list."*.
+- Census **1 `h1` / 4 `h2` / 9 `svg` / 13 `li` / 4 `button` / 5 `a`** (the fifth anchor is the
+  Component Dock footer line, which the reference does not have), no `a[href="#"]`, no `<img>`,
+  `lang="en"`.
+- 390 px: one **358 px** track, the saved line wraps under the title at x 16,
+  `scrollWidth − clientWidth = 0`.
+
+Deliberate deltas (all documented as defects in the spec):
+
+1. **Focus ring `#3f6212`** instead of `#65a30d` — 7.08:1 on white, 6.51:1 on the ground (defect 1).
+2. **The button's accessible name flips** to `Remove <title> from saved jobs` when pressed (defect 2).
+3. **Anchors are in-page** (`#job-<id>`, each `article` carries that `id`) instead of `href="#"`
+   (defect 3) — the `coursebook` pattern; `a[href="#"]` is asserted at **0**.
+4. **The three pill variants are named tokens** — `MODE_STYLES.remote | hybrid | office` (defect 4).
+5. **One source of truth** for the saved set: `initialSavedIds()` seeds the state and the head counter
+   is `savedIds.length`, so the reference's hand-written "1" cannot drift (defect 6).
+6. **One Component Dock line** under the status line (`mt-6`, 13 px muted) — the repo's footer rule.
+
+Two measurement notes for future card-family builds:
+
+- **Line height is not inherited from `body`.** The reference sets `line-height: 1.45` only on the
+  card, so the head and the status line use the browser's *normal* leading — **18 px at 15 px** in its
+  static Figtree build. Google Fonts' variable Figtree has taller metrics (≈ 21.75 px), so the port
+  pins `leading-[18px]` on the sub-line and the saved line to reproduce the head height (**63.59**, not
+  67.34). Putting `line-height: 1.45` on `body` instead makes the head 3.75 px too tall and pushes the
+  grid to y 163.34.
+- **The `h1` measures 362.17 px** against the reference's 370.17 px — the same 36 px / 800 in the
+  variable face is ~2 % narrower than the static `woff2`. Nothing else moves, because the head is
+  `space-between`.
