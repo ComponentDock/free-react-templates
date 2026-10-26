@@ -629,7 +629,7 @@ resetting, and the speed button SHALL cycle **1 → 1.5 → 2 → 1**.
 
 - **GIVEN** the podcast at 1122 / 2538
 - **WHEN** `+30` is activated
-- **THEN** `aria-valuenow` SHALL be **1154** and the value text **"19:14 of 42:18"**, with playback
+- **THEN** `aria-valuenow` SHALL be **1152** and the value text **"19:12 of 42:18"**, with playback
   state unchanged
 - **AND** skipping back from **0:03** by **15** SHALL land on **0**, and skipping forward by **30** at
   **2520** SHALL land on **2538**, not beyond it
@@ -818,7 +818,7 @@ ignore`-free path to keep 100 % lines/branches.
 - [ ] row states: hover `#f1f5f3`, current `#e6f4f1` / `#0b5a54` / **600**; equaliser three **3 px**
       bars in the accent, **14** tall, `gap: 2`, number hidden while playing
 - [ ] behaviour: play → `aria-pressed="true"`, `.is-playing`, icon swap, **+1 s / 1 s**; pause holds;
-      `+30` → **1154** / `"19:14 of 42:18"`; skips clamp at **0** and at **2538**; speed
+      `+30` → **1152** / `"19:12 of 42:18"`; skips clamp at **0** and at **2538**; speed
       **1.5× → 2× → 1×** with **U+00D7**; row 3 → `max 198`, **`0:01 of 3:18`**, **`-3:18`**;
       clicking the playing row pauses; track 4 → track 5 auto-advance; last track clamps and pauses
 - [ ] a11y: **1** hidden `h1`, **2** `h2`, **11** focusable buttons in the reference's tab order, labels
