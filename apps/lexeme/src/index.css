@@ -1,0 +1,109 @@
+@import 'tailwindcss';
+
+/* Lexeme tokens — a lavender ground (#f1eefb), a near-black band ink (#1e1b2e),
+   one violet for the eyebrow and both back-face labels (#5b21b6, Tailwind
+   violet-800 exactly), a muted run for the sub-line and the counter (#4a4560)
+   and the tinted example well (#f4f2fb). The four card faces are per-card
+   inline custom properties — coral, indigo, amber, teal — so the page has no
+   neutral brand fill at all: colour is carried by the tiles, and only the
+   ground and the violet repeat. Bricolage Grotesque is the only face
+   (400/600/800 from one Google Fonts link, a variable cut). */
+@theme {
+  --color-ground: #f1eefb;
+  --color-ink: #1e1b2e;
+  --color-accent: #5b21b6;
+  --color-muted: #4a4560;
+  --color-well: #f4f2fb;
+
+  --font-sans: 'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* The flip is the page's only motion. `perspective` sits on the list item,
+   `transform-style: preserve-3d` on this wrapper and `backface-visibility` on
+   both faces (all as utilities); the transition lives here so the reduced-motion
+   block can switch mechanism instead of shortening it. */
+.flip-card__inner {
+  transition: transform 0.7s cubic-bezier(0.3, 0.8, 0.3, 1);
+}
+
+@media (hover: hover) {
+  .flip-card:hover .flip-card__inner {
+    transform: rotateY(180deg);
+  }
+
+  /* The first activation latches the card, so hover can no longer fight the
+     toggle — the pointer can stay on the tile while the card stays open. */
+  .flip-card[data-manual] .flip-card__inner {
+    transform: none;
+  }
+}
+
+/* Declared after the hover block on purpose: a latched card that is also
+   *flipped* still has to rotate while the pointer happens to rest on it. */
+.flip-card[data-flipped] .flip-card__inner {
+  transform: rotateY(180deg);
+}
+
+/* Drawn outside the tile, on the lavender ground, and independent of the card's
+   own colour — 14.67:1 in ink. */
+.flip-card__toggle:focus-visible {
+  outline: 3px solid var(--color-ink);
+  outline-offset: 4px;
+}
+
+/* Reduced motion is a different mechanism, not a faster spin: the rotation is
+   removed entirely and the two faces crossfade. */
+@media (prefers-reduced-motion: reduce) {
+  .flip-card__inner {
+    transition: none;
+  }
+
+  .flip-card .flip-card__inner,
+  .flip-card[data-flipped] .flip-card__inner {
+    transform: none;
+  }
+
+  .flip-card__face {
+    transition: opacity 0.2s linear;
+  }
+
+  .flip-card__front {
+    opacity: 1;
+  }
+
+  .flip-card__back {
+    transform: none;
+    opacity: 0;
+  }
+
+  .flip-card[data-flipped] .flip-card__front {
+    opacity: 0;
+  }
+
+  .flip-card[data-flipped] .flip-card__back {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) and (hover: hover) {
+  .flip-card:not([data-manual]):hover .flip-card__front {
+    opacity: 0;
+  }
+
+  .flip-card:not([data-manual]):hover .flip-card__back {
+    opacity: 1;
+  }
+}
