@@ -1,0 +1,114 @@
+/**
+ * Postbox design tokens.
+ *
+ * A single-screen signup pair on a periwinkle ground: a navy card (art left,
+ * form right) beside a white card (one column). Every value below is measured
+ * from the recreation's reference render at 1,440:
+ *
+ * - ground          #eef2ff — the page behind the pair
+ * - navy            #1e3a8a — the primary card's surface (10.36:1 against white)
+ * - navy-soft       #1e40af — the compact card's eyebrow (8.72:1 on white)
+ * - gold            #fde047 — the primary eyebrow and the Subscribe button
+ * - ink             #111827 — the compact card's text and every control's label
+ * - muted-navy      #dbe4ff — body copy and fine print on navy (8.16:1)
+ * - muted           #4b5563 — body copy on white (7.56:1)
+ * - error-navy      #fecaca — the primary card's error line (7.16:1 on navy)
+ * - error           #b91c1c — the compact card's error line (6.47:1 on white)
+ * - invalid         #ef4444 — the invalid input's 2 px border (3.76:1, non-text)
+ * - tick            #22c55e — the 52 px success disc
+ * - line            #dfe5f5 — the compact card's 1 px border
+ * - line-input      #c7d2ea — the compact input's resting border
+ * - placeholder     #6b7280 — both inputs' placeholder (4.83:1 on white)
+ *
+ * One family, Epilogue, carries every role. The reference declares three
+ * weights (400 / 700 / 800) and ships no 500 or 600 face, so nothing on the page
+ * is `font-medium` and `font-semibold` is never used where 700 is meant.
+ */
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Epilogue', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-ground: #eef2ff;
+  --color-navy: #1e3a8a;
+  --color-navy-soft: #1e40af;
+  --color-gold: #fde047;
+  --color-ink: #111827;
+  --color-muted-navy: #dbe4ff;
+  --color-muted: #4b5563;
+  --color-error-navy: #fecaca;
+  --color-error: #b91c1c;
+  --color-invalid: #ef4444;
+  --color-tick: #22c55e;
+  --color-line: #dfe5f5;
+  --color-line-input: #c7d2ea;
+  --color-placeholder: #6b7280;
+  --radius-card: 28px;
+  --radius-control: 14px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .signup-input {
+    transition:
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .signup-submit {
+    transition:
+      transform 0.15s ease,
+      filter 0.2s ease;
+  }
+
+  .signup-submit:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+  }
+
+  .signup-submit:active {
+    transform: translateY(0);
+  }
+
+  .signup-done {
+    animation: signup-in 0.4s ease both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .signup-input,
+    .signup-submit {
+      transition: none;
+    }
+
+    .signup-submit:hover {
+      transform: none;
+    }
+
+    .signup-done {
+      animation: none;
+    }
+  }
+}
+
+@keyframes signup-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

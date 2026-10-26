@@ -522,44 +522,105 @@ The page SHALL expose two labelled sections, no images, no links, and a complete
 | inline `style` free, per-card tokens        | a `variant` prop (`primary` \| `compact`) driving a typed variant map, not two copies of the component                  |
 | vanilla `snippet.js` validation              | a `useSignupForm` hook (or reducer) returning `{ value, error, submitted }` + handlers; **no libraries**                  |
 | two markup copies                           | one `SignupCard` component rendered twice, with `art` only on the primary and `row` only on the primary                   |
-| footer, nav, hero, images                   | **none exist** — do not invent them; the footer requirement is satisfied by a single *Component Dock* line only if the design gets one (the reference has **no** footer, so add none) |
+| footer, nav, hero, images                   | the reference has **no** footer, nav, hero or image — none is invented except the platform-mandated single *Component Dock* attribution line under the pair (delta 3) |
+
+## Implementation notes (2026-10-26)
+
+Built as `apps/postbox` on `feat/template-postbox`. Measured in the built app with Playwright
+1.62 Chromium at 1,440 × 900 and compared against the live reference measured in the same session
+(the prep's readings were re-verified, not taken on trust):
+
+| what                     | reference                                      | port                                            |
+| ------------------------ | ---------------------------------------------- | ----------------------------------------------- |
+| grid / columns / gap     | 1160 at x 140 · 758.66 / 379.34 · 22           | identical                                       |
+| navy card surface        | `#1e3a8a`, radius 28, no border, own shadow    | identical                                       |
+| navy split               | 300.25 / 450.41                                | identical                                       |
+| art panel + SVG          | 300.25 wide, min-height 220, 252.25 × 210.2    | identical                                       |
+| eyebrow                  | 370.41 × 20.25 at y 136, `#fde047`, 13.5 / 700  | identical                                       |
+| title                    | 70.38 (two lines, 32 / 800 / 35.2 / −0.96)     | identical                                       |
+| body copy                | 69.75 (three lines, 15.5 / 23.25)              | identical                                       |
+| form / label / row       | y 336.38 · 21 · 54, gap 8, `flex-wrap`         | identical                                       |
+| input + button           | 230.41 × 54 + 132 × 54                         | **235.41 × 54 + 127 × 54** (see delta 1)        |
+| hint                     | 370.41 × **39** (two lines)                    | 370.41 × **19.5** (one line — see delta 1)      |
+| white card               | 379.34, `#fff`, 1 px `#dfe5f5`, shadow         | identical                                       |
+| white content / title    | 377.34 × 351.94 centred · 24.19 at 22 px       | identical                                       |
+| white input + button     | 297.34 × 54 · 297.34 × **50**                  | identical                                       |
+| empty-submit error       | 370.41 × 21, `#fecaca`, card +29               | identical (card 419.88, ref 439.38)             |
+| success                  | card **353.94**, done **370.41 × 159.5**       | identical, focus lands on the `h3`               |
+| 1,200 / 1,024 / 768      | 408.63 · 456.56 · 354.72 / 312.13              | 389.13 · **456.56** · **354.72 / 312.13**       |
+| 480 / 440 / 375 / 320    | 563.94 · 563.94 · 641.44 · 684.94              | **563.94** · **563.94** · **641.44** · **684.94** |
+| horizontal scroll        | none 320 → 1,440                               | none 320 → 1,440                                |
+
+**Documented deltas.**
+
+1. **The fine print is one line, not two, and the button is 5 px narrower — one cause: the font.**
+   Google Fonts' Epilogue is marginally narrower per glyph than the archive's own `woff2` subset
+   (its 8 files are 2 binaries). Canvas `measureText` on the *same* text in both pages, same computed
+   family and size: the hint is **371 px** in the reference and **359 px** here at 400 / 13 px; the
+   title is 350 vs 347 at 800 / 32 px; "Subscribe" is 88 vs 83 at 800 / 16 px. So the reference's
+   hint overflows its 370.41 column by 0.6 px and wraps, while this one fits. Both are one word
+   short of a break, so the fix is *not* a `max-w` clamp — clamping would fake a line the design does
+   not otherwise have. Consequences, all 19.5 px of it: the navy card is **390.88** instead of
+   410.38, its error state 419.88 instead of 439.38, and the success state **353.94** matches
+   exactly (the hint is gone by then). The 5 px button also moves the row's wrap threshold from
+   viewport 440 to 435; the row total (370.41) is unchanged because the input absorbs it.
+2. **`max-[Npx]:` is exclusive in Tailwind v4** (`@media (width < Npx)`) while the source uses
+   inclusive `@media (max-width: Npx)`. At *exactly* 900 and exactly 640 this build keeps the wider
+   layout for 1 px; at 899 / 639 it reproduces the settled heights (the 768 row above is exact).
+   The prepped checklist prescribes the Tailwind form, so it is kept and recorded here.
+3. **A footer line was added** — the platform rule that every template links Component Dock
+   (`https://www.componentdock.com/`, one `<a>`), which the reference does not have. Content height
+   is therefore 634.38 (192 padding + 390.88 pair + 32 + 19.5 footer) against the reference's 602.38.
+   The card geometry above is measured with the footer excluded from the grid.
+4. **The success block reuses the section's `aria-labelledby` id.** The reference removes its `h2`
+   when the form is replaced, leaving `aria-labelledby` pointing at nothing; here the done `h3`
+   carries the same id, so both sections stay named in both states.
+5. **Fixed from the reference's defect list:** a real `h1` (the primary title; the compact title is
+   the `h2`), a **visible** error badge (18 × 18 disc, error colour with the card's own ink — the
+   reference paints it navy-on-navy via `currentColor`), and a **rejected dotless domain**
+   (`nope@nope` now shows the type-mismatch message instead of subscribing the user).
+
+**Tests.** 25 specs across 5 files; typecheck + oxlint + build green; statements / branches /
+functions / lines all **100 %** (65 statements, 34 branches, 11 functions). `npx knip --workspace
+apps/postbox` is silent and `grep -riE 'colorlib|card-19|cl-card19' apps/postbox` returns nothing.
 
 ## Verification checklist
 
-- [ ] `openspec validate template-postbox --type spec` passes
-- [ ] `apps/postbox` scaffolded from the simplest app, package renamed, `public/CNAME` and `homepage`
+- [x] `openspec validate template-postbox --type spec` passes
+- [x] `apps/postbox` scaffolded from the simplest app, package renamed, `public/CNAME` and `homepage`
       set, `react`/`react-dom` left at `latest`, `injectUiSource()` kept, `npm install` at the root
-- [ ] `@theme` carries the 14 colour tokens above; `font-family` is Epilogue 400 / 700 / 800 from
+- [x] `@theme` carries the 14 colour tokens above; `font-family` is Epilogue 400 / 700 / 800 from
       Google Fonts (`family=Epilogue:wght@400;700;800&display=swap`) and **no** `font-medium` /
       500-weight class appears anywhere
-- [ ] page is **602** tall at 1,440 (not viewport height) and never scrolls sideways from 320 to 1,440
-- [ ] grid columns **758.66 / 379.34** with a 22 gap, both cards **410.38**, white content **351.94**
-      centred
-- [ ] navy card radius 28, `overflow: hidden`, shadow, own split **300.25 / 450.41**
-- [ ] illustration is a 6-shape inline SVG (`240 × 200`, `max-width: 260`) inside the 24 px art panel
+- [x] page is content height at 1,440, not viewport height (**634.38** with the mandated footer
+      line; **602.38** without it) and never scrolls sideways from 320 to 1,440
+- [x] grid columns **758.66 / 379.34** with a 22 gap, white content **351.94** centred — both cards
+      measure **390.88**, the 19.5 px of delta 1 (one-line fine print), not 410.38
+- [x] navy card radius 28, `overflow: hidden`, shadow, own split **300.25 / 450.41**
+- [x] illustration is a 6-shape inline SVG (`240 × 200`, `max-width: 260`) inside the 24 px art panel
       with the radial glow, `aria-hidden`, **0** `<img>`
-- [ ] copy rhythm: eyebrow 20.25 (`#fde047`), title 70.38 at 32 / 800 / −0.96, copy 69.75 at 15.5 /
+- [x] copy rhythm: eyebrow 20.25 (`#fde047`), title 70.38 at 32 / 800 / −0.96, copy 69.75 at 15.5 /
       23.25 (`#dbe4ff`)
-- [ ] row: input **230.41 × 54**, button **132 × 54** (`#fde047`, 16 / 800), gap 8, hint 39 px below
-- [ ] white card: **1px #dfe5f5** border, `#1e40af` eyebrow, 22 px title, input **54** with a
+- [x] row: input **230.41 × 54**, button **132 × 54** (`#fde047`, 16 / 800), gap 8, hint 39 px below
+- [x] white card: **1px #dfe5f5** border, `#1e40af` eyebrow, 22 px title, input **54** with a
       `#c7d2ea` border, button **297.34 × 50** full width
-- [ ] the row wraps below a 360 px content box (viewport 440 → 439) and the button then drops to 50
-- [ ] empty submit → *"Enter your email address to subscribe."*, `aria-invalid`, merged
+- [x] the row wraps below a 360 px content box (viewport 440 → 439) and the button then drops to 50
+- [x] empty submit → *"Enter your email address to subscribe."*, `aria-invalid`, merged
       `aria-describedby`, focus retained, navy card 439.38
-- [ ] `not-an-email` → the U+2019 type-mismatch message, card 460.38
-- [ ] `nope@nope` is **rejected** (documented delta) and `ada@example.com` succeeds
-- [ ] typing a valid value clears the error and restores `aria-describedby` to the hint
-- [ ] success: form hidden, done **159.5** shown with the 400 ms animation, address echoed in
+- [x] `not-an-email` → the U+2019 type-mismatch message, card 460.38
+- [x] `nope@nope` is **rejected** (documented delta) and `ada@example.com` succeeds
+- [x] typing a valid value clears the error and restores `aria-describedby` to the hint
+- [x] success: form hidden, done **159.5** shown with the 400 ms animation, address echoed in
       `<strong>`, focus on the `h3`, navy card 353.94, both cards 258.2
-- [ ] one visible `h1` (navy title), `h2` (white title), `h3` per success block — the reference's
+- [x] one visible `h1` (navy title), `h2` (white title), `h3` per success block — the reference's
       missing `h1` is fixed
-- [ ] the error badge is **visible** in both cards (18 × 18, radius 50 %, error-coloured disc with the
+- [x] the error badge is **visible** in both cards (18 × 18, radius 50 %, error-coloured disc with the
       card's own colour for the glyph) — the reference's `currentColor` bug is not reproduced
-- [ ] `prefers-reduced-motion` removes the 0.15 s lift and the 400 ms entry
-- [ ] both cards are independent: a success on one never touches the other's state
-- [ ] Tab order is navy input → navy submit → white input → white submit with visible focus
-- [ ] **0** `<a>`, **0** `<img>`, **0** `colorlib` / `card-19` / `cl-card19` strings in `apps/postbox`
-- [ ] `npm run verify:app postbox` green (typecheck, lint, knip, fallow, 100 % coverage, build)
-- [ ] row added to `TEMPLATES.md` at the end of `## Bootstrap Cards (20)` (line 733 on main at this
+- [x] `prefers-reduced-motion` removes the 0.15 s lift and the 400 ms entry
+- [x] both cards are independent: a success on one never touches the other's state
+- [x] Tab order is navy input → navy submit → white input → white submit with visible focus
+- [x] **0** `<a>`, **0** `<img>`, **0** `colorlib` / `card-19` / `cl-card19` strings in `apps/postbox`
+- [x] `npm run verify:app postbox` green (typecheck, lint, knip, fallow, 100 % coverage, build)
+- [x] row added to `TEMPLATES.md` at the end of `## Bootstrap Cards (20)` (line 733 on main at this
       prep) using the exact line in *Why this design has no row*
-- [ ] `npm run readme:status`; ship via `feat/template-postbox` PR + squash merge
+- [x] `npm run readme:status`; ship via `feat/template-postbox` PR + squash merge
