@@ -1,0 +1,80 @@
+/**
+ * Notebell design tokens.
+ *
+ * The page is one 620 px column on a near-black ground — the column itself has no
+ * surface; the four notification cards are the only surfaces. Every value below is
+ * measured from the recreation's reference render:
+ *
+ * - ground         #0d0f14 — the page behind the column (the counter's ink too)
+ * - ink            #eef0f6 — panel text, unread bodies (14.46:1 on unread surface)
+ * - muted          #a3a9b8 — meta lines, empty note, ghost button (7.39:1 on read
+ *                    surface; the third ink level — do not lighten it)
+ * - surface        #171a22 — a read card
+ * - surface-unread #1b1e30 — an unread card (a 2 % luminance step over `surface`;
+ *                    it only reads as unread because the border jumps as well)
+ * - line           #262a35 — read border
+ * - line-unread    #3a3f78 — unread border (the signal that makes the tint visible)
+ * - accent         #818cf8 — counter ground, unread dot, quotes, links (6.43:1)
+ * - accent-wash    rgb(129 140 248 / .12) — hover wash on the violet text buttons
+ * - text-dim       #c9cdd8 — body text on a read card (10.94:1)
+ * - quote-ink      #d5d8e2 / quote-bg rgb(255 255 255 / .04) — the quoted comment
+ * - btn            #222634 / btn-line #343a4a — the solid action button
+ * - btn-hover      #2a2f3f / btn-line-hover #4a5166 — its hover state
+ * - ghost-hover    rgb(255 255 255 / .06) — archive button hover, no border at rest
+ * - count-zero     #2a2f3b — the counter pill once nothing is unread (5.69:1)
+ * - toast          #262a35 — the status line's ground while it has a message
+ * - avatar-1..4    #6d28d9 · #15803d · #b45309 · #be123c — the four avatar grounds
+ *                    (violet and amber initials, green check, rose warning); the data
+ *                    layer carries the same four values for per-card inline painting
+ *
+ * One family, Instrument Sans 400/500/600/700, carries every role. The reference
+ * ships a 500 face it never declares; here the weight is real but unused — nothing
+ * on the page is `font-medium`.
+ */
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --color-ground: #0d0f14;
+  --color-ink: #eef0f6;
+  --color-muted: #a3a9b8;
+  --color-surface: #171a22;
+  --color-surface-unread: #1b1e30;
+  --color-line: #262a35;
+  --color-line-unread: #3a3f78;
+  --color-accent: #818cf8;
+  --color-accent-wash: rgb(129 140 248 / 0.12);
+  --color-accent-glow: rgb(99 102 241 / 0.18);
+  --color-text-dim: #c9cdd8;
+  --color-quote-ink: #d5d8e2;
+  --color-quote-bg: rgb(255 255 255 / 0.04);
+  --color-btn: #222634;
+  --color-btn-line: #343a4a;
+  --color-btn-hover: #2a2f3f;
+  --color-btn-line-hover: #4a5166;
+  --color-ghost-hover: rgb(255 255 255 / 0.06);
+  --color-count-zero: #2a2f3b;
+  --color-toast: #262a35;
+  --color-avatar-1: #6d28d9;
+  --color-avatar-2: #15803d;
+  --color-avatar-3: #b45309;
+  --color-avatar-4: #be123c;
+  --radius-card: 16px;
+  --radius-avatar-icon: 12px;
+  --radius-btn: 9px;
+  --radius-toast: 12px;
+  --radius-quote: 10px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
