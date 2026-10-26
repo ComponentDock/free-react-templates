@@ -294,3 +294,39 @@ New with this variant, worth carrying forward to the remaining seven: **the hero
 `scrollWidth === clientWidth`, so an overflow probe alone will not find it; **the field is the pill and the button
 lives inside the border**, so focus lives on `:focus-within` and the input has no outline at all; and **a coral
 focus ring on a coral button is a 1 : 1 ring**.
+
+
+## Port deltas — measured after the build (2026-10-26, Playwright Chromium, motion disabled)
+
+The shipped app at 1440 × 900, re-measured off `apps/epistle/dist` on `document.fonts.ready`.
+The eight numbers hold, with two expected departures and one addition:
+
+| element | reference | port |
+| --- | --- | --- |
+| bar / inner | 1440 × 73.8 · 1200 × 72.8 at (120, 0) | **identical** |
+| wordmark | 173.45 × 34.09 at (160, 19.34) | **104.77** × 34.09 at (160, 19.34) — "The Epistle" is 5 characters shorter |
+| nav | 297 × 36.8 at (983, 18) | **287** × 36.8 at (**993**, 18) — right edge still 1280; the Google-served Outfit variable measures ~10px narrower across four labels than the packaged copies |
+| hero / copy | 1200 × 854.8 at (120, 73.8) · 594.31 × 694.8 | **identical** |
+| issue pill | 242 × 34.47 | **231** × 34.47 (same 11px text-run delta) |
+| `h1` | 594.31 × 300.25 at (160, 210.27), 73.6 / 75.072 / 4 lines, −2.944px | **identical** |
+| `<em>` | 431.73, one rect | **432.73**, one rect |
+| lede | 594.31 × 90.7 (3 lines) | **identical** |
+| signup / field / input / submit / hint | 540 × 131.38 · 540 × 66 at (160, 680.91) · 314 × 48 · 162 × 50 at (530, 688.91) · 540 × 21.69 | **identical** heights and positions; input **320** wide, submit **156** wide at (**536**, 688.91) — the label run again |
+| readers | 594.31 × 36 at (160, 812.59) | **identical** |
+| stack / cards / art / sticker | 439.3 × 460 at (840.7, 271.19) · 399 × 420 each · 110 (116.04 rect) · 113.86² at (1181.07, 254.26) | **identical** — art renders 116.0 rect = 110 box |
+
+- **The document is 991px, not 929, because the port has the mandatory footer.** The
+  100vh shell measures **928.6** (73.8 + 854.8) — the reference's 929 — and the footer adds
+  **62.4** below it (20 + 20 padding, a 21.69 line and the 1px rule). The same offset applies to
+  the two states: **1022** on an empty submit (shell 959.6 = 929 + 30.6 of error + the grown block)
+  and **963** on success (shell 900.6, hero **809.02**, block **85.59** — both exact).
+- **Ladder re-read:** `h1` 4 lines at 961 (475.22 column) → 2 lines at 960 (883.22); bar 73.8 at 861 →
+  **81** at 860; field **66** at 521 → **122** at 520; `h1` **38.4px** and 3 lines at 419 and 390;
+  `scrollX === 0` and `scrollWidth === clientWidth` at every step.
+- **Below 521 the front card returns to the flow.** Its contents need **454px** at 320 (the art is now a
+  fixed 90px, not the reference's collapsed 8), which is taller than the 400px stack — an absolutely
+  positioned card would be clipped by the shell's `overflow:hidden`. The rotations also flatten to
+  +4° / −3°, which keeps the yellow card's rect at **308.16** of 320 and the sticker at **311.4** —
+  inside the viewport, where the reference lost 8.5px.
+- **320 is 1432px tall, not 1299.** The 133px difference is the footer (62.4) plus the artwork the port
+  refuses to collapse (70) — the spec's prescribed fix, not a regression.

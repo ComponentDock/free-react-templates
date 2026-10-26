@@ -1,0 +1,763 @@
+@import 'tailwindcss';
+
+/* Epistle's palette: a warm cream ground with a peach radial glow in the corner,
+   near-black ink, one coral accent with a soft highlighter tint, and the mock
+   issue's own set of colours. Twenty-five values — the rotated stack, the mint
+   sticker and the four reader discs each carry their own, which is why the list
+   is longer than the shell's seven. */
+@theme {
+  --color-ground: #fff6ea;
+  --color-glow: #ffe2cf;
+  --color-ink: #231a13;
+  --color-muted: #5f5145;
+  --color-coral: #d13f26;
+  --color-coral-deep: #b23117;
+  --color-coral-soft: #ffd9c9;
+  --color-line: #ecdcc8;
+  --color-error: #b42318;
+  --color-success: #e7f6ec;
+  --color-success-ink: #137a3a;
+  --color-card-yellow: #ffd35c;
+  --color-card-blue: #9ad7ff;
+  --color-mint: #c8f0d2;
+  --color-placeholder: #857566;
+  --color-art-1: #f3e7d7;
+  --color-art-2: #ffe39a;
+  --color-avatar-amber: #f59e0b;
+  --color-avatar-sky: #0ea5e9;
+  --color-avatar-violet: #6d28d9;
+  --color-avatar-emerald: #10b981;
+  --color-avatar-ink: #1b130c;
+
+  --font-sans: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Tailwind's type scale cannot express either ramp: the display line has to
+     reach 73.6px at 1440 and stop at 38.4px below 419. */
+  --text-display: clamp(2.4rem, 1.3rem + 4.2vw, 4.6rem);
+  --text-lede: clamp(1.05rem, 1rem + 0.3vw, 1.22rem);
+}
+
+@layer base {
+  /* One gutter for the shell and for the footer that sits outside it. */
+  :root {
+    --gutter: clamp(16px, 4vw, 40px);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* One full-height column. `main { flex: 1 }` is what centres the hero under
+     the bar — padding the hero to the viewport instead drifts the whole section
+     by 28.6px at 1440 and by 0 at 960. */
+  .ep-root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  /* A 62vw circle anchored past the corner: 892.8px at 1440, and the copy
+     column stays over flat cream for all but its last few pixels. */
+  .ep-root::before {
+    content: '';
+    position: absolute;
+    top: -20vw;
+    right: -12vw;
+    width: 62vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-glow) 0%, rgb(255 226 207 / 0%) 68%);
+    pointer-events: none;
+  }
+
+  .ep-root *,
+  .ep-root *::before,
+  .ep-root *::after {
+    box-sizing: border-box;
+  }
+
+  /* Colour is set per link, never inherited: the issue card's white type must
+     stay white on its coral tile rather than pick up the column's ink. */
+  .ep-root a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .ep-root ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ep-root a:focus-visible,
+  .ep-root button:focus-visible {
+    outline: 3px solid var(--color-coral);
+    outline-offset: 3px;
+  }
+
+  /* ---- the bar ----------------------------------------------------------- */
+
+  .ep-bar {
+    position: relative;
+    z-index: 5;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  /* Sized by the nav links, not the wordmark: 36.8 + 36 padding + 1 border. */
+  .ep-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px var(--gutter);
+  }
+
+  .ep-logo {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+
+  /* Deepened coral: the accent at 22px fails AA on cream (4.41), this passes. */
+  .ep-logo-the {
+    color: var(--color-coral-deep);
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .ep-nav {
+    margin-left: auto;
+  }
+
+  .ep-links {
+    display: flex;
+    gap: 28px;
+  }
+
+  .ep-link {
+    position: relative;
+    display: block;
+    padding: 6px 0;
+    color: var(--color-muted);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .ep-link:hover {
+    color: var(--color-ink);
+  }
+
+  .ep-link[aria-current='page'] {
+    color: var(--color-ink);
+  }
+
+  /* Lands on the bar's hairline: 6 + 19 = the link's own box plus the rule. */
+  .ep-link[aria-current='page']::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -19px;
+    left: 0;
+    height: 3px;
+    border-radius: 3px 3px 0 0;
+    background: var(--color-coral);
+  }
+
+  .ep-menu-btn {
+    display: none;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 0;
+    border: 1.5px solid var(--color-ink);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .ep-menu-close {
+    display: none;
+  }
+
+  .ep-bar.is-open .ep-menu-open {
+    display: none;
+  }
+
+  .ep-bar.is-open .ep-menu-close {
+    display: block;
+  }
+
+  /* ---- the hero ---------------------------------------------------------- */
+
+  .ep-main {
+    position: relative;
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  /* 1.15fr / .85fr of 1120 − 86.4 = 594.31 / 439.3. */
+  .ep-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: clamp(40px, 6vw, 96px);
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(36px, 6vw, 80px) var(--gutter);
+  }
+
+  .ep-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 0 0 1px var(--color-line);
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+
+  /* A ring, not a border: a border would widen the pill by 8px. */
+  .ep-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 4px var(--color-coral-soft);
+  }
+
+  .ep-title {
+    margin: 22px 0 18px;
+    font-size: var(--text-display);
+    font-weight: 700;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+  }
+
+  /* The band is a gradient stop at 70%, so it follows the words on every line
+     and the `<em>` stays a single client rect. */
+  .ep-title em {
+    color: var(--color-coral);
+    font-style: normal;
+    background: linear-gradient(transparent 70%, var(--color-coral-soft) 70%);
+  }
+
+  .ep-sub {
+    max-width: 32em;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: var(--text-lede);
+  }
+
+  .ep-signup {
+    max-width: 540px;
+    margin-top: 32px;
+  }
+
+  .ep-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  /* The field is the pill: a 2px ink border, a hard 5 × 5 px offset shadow, and
+     the submit button inside it. Focus lives on the field, not the input. */
+  .ep-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 6px 6px 18px;
+    border: 2px solid var(--color-ink);
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 5px 5px 0 var(--color-ink);
+    transition:
+      box-shadow 0.2s,
+      border-color 0.2s;
+  }
+
+  .ep-field:focus-within {
+    box-shadow: 5px 5px 0 var(--color-coral);
+  }
+
+  .ep-field-icon {
+    flex: none;
+    color: var(--color-muted);
+  }
+
+  .ep-input {
+    flex: 1;
+    min-width: 0;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-ink);
+    font: inherit;
+    font-size: 17px;
+  }
+
+  .ep-input::placeholder {
+    color: var(--color-placeholder);
+  }
+
+  .ep-input:focus {
+    outline: none;
+  }
+
+  .ep-form.is-error .ep-field {
+    border-color: var(--color-error);
+    box-shadow: 5px 5px 0 var(--color-error);
+  }
+
+  .ep-submit {
+    flex: none;
+    height: 50px;
+    padding: 0 24px;
+    border: 0;
+    border-radius: 999px;
+    background: var(--color-coral);
+    color: #fff;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      background-color 0.2s,
+      transform 0.2s;
+  }
+
+  .ep-submit:hover {
+    background: var(--color-coral-deep);
+  }
+
+  .ep-submit:active {
+    transform: scale(0.97);
+  }
+
+  /* Coral on coral is 1 : 1, so this one control takes an ink ring. */
+  .ep-submit:focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+
+  .ep-hint {
+    margin: 14px 0 0;
+    color: var(--color-muted);
+    font-size: 14px;
+  }
+
+  .ep-error {
+    margin: 8px 0 0;
+    color: var(--color-error);
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+
+  /* The alert is always in the DOM so the input's describedby never dangles;
+     an empty one takes no room and announces nothing. */
+  .ep-error:empty {
+    display: none;
+  }
+
+  .ep-done-box {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    border: 2px solid var(--color-ink);
+    border-radius: 20px;
+    background: var(--color-success);
+    box-shadow: 5px 5px 0 var(--color-ink);
+    font-size: 16px;
+  }
+
+  .ep-done-icon {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-success-ink);
+    color: #fff;
+  }
+
+  .ep-done-text {
+    margin: 0;
+  }
+
+  .ep-readers {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 30px;
+    color: var(--color-muted);
+    font-size: 15px;
+  }
+
+  .ep-readers strong {
+    color: var(--color-ink);
+  }
+
+  .ep-faces {
+    display: flex;
+  }
+
+  .ep-face {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    margin-left: -9px;
+    border: 2.5px solid var(--color-ground);
+    border-radius: 50%;
+    color: var(--color-avatar-ink);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .ep-face:first-child {
+    margin-left: 0;
+  }
+
+  /* The violet disc takes white initials: near-black on it is 4.33, white is
+     7.1. The other three keep the warm ink at 6.6–8.5. */
+  .ep-face--amber {
+    background: var(--color-avatar-amber);
+  }
+
+  .ep-face--sky {
+    background: var(--color-avatar-sky);
+  }
+
+  .ep-face--violet {
+    background: var(--color-avatar-violet);
+    color: #fff;
+  }
+
+  .ep-face--emerald {
+    background: var(--color-avatar-emerald);
+  }
+
+  /* ---- the issue stack --------------------------------------------------- */
+
+  .ep-stack {
+    position: relative;
+    min-height: 460px;
+  }
+
+  /* `height: auto` with a min-height instead of a fixed 420: the card grows when
+     its contents need the room, so the 110px artwork never collapses. */
+  .ep-card {
+    position: absolute;
+    inset: 20px 10px auto 30px;
+    min-height: 420px;
+    border: 2px solid var(--color-ink);
+    border-radius: 24px;
+    background: #fff;
+  }
+
+  .ep-card--b {
+    background: var(--color-card-yellow);
+    transform: rotate(7deg) translate(18px, 8px);
+  }
+
+  .ep-card--c {
+    background: var(--color-card-blue);
+    transform: rotate(-5deg) translate(-14px, 10px);
+  }
+
+  .ep-card--a {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    box-shadow: 8px 8px 0 var(--color-ink);
+    transform: rotate(-1deg);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .ep-stack:hover .ep-card--a {
+    transform: rotate(0) translateY(-6px);
+  }
+
+  .ep-mail-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 14px;
+    border-bottom: 1px dashed var(--color-line);
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .ep-mail-avatar {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--color-coral);
+    color: #fff;
+    font-weight: 800;
+  }
+
+  .ep-mail-heading {
+    display: grid;
+  }
+
+  .ep-mail-heading span {
+    color: var(--color-muted);
+  }
+
+  .ep-mail-title {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  .ep-mail-art {
+    display: grid;
+    flex: none;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    height: 110px;
+  }
+
+  .ep-mail-art span {
+    border-radius: 12px;
+    background: var(--color-art-1);
+  }
+
+  .ep-mail-art span:first-child {
+    grid-row: span 2;
+    background: linear-gradient(135deg, #ffb18f, var(--color-coral));
+  }
+
+  .ep-mail-art span:nth-child(2) {
+    background: var(--color-art-2);
+  }
+
+  .ep-mail-list {
+    display: grid;
+    gap: 8px;
+    font-size: 14.5px;
+  }
+
+  .ep-mail-list li {
+    display: flex;
+    gap: 10px;
+  }
+
+  .ep-mail-list b {
+    color: var(--color-coral);
+  }
+
+  .ep-sticker {
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    display: grid;
+    place-items: center;
+    width: 96px;
+    height: 96px;
+    border: 2px solid var(--color-ink);
+    border-radius: 50%;
+    background: var(--color-mint);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.05;
+    text-align: center;
+    transform: rotate(12deg);
+  }
+
+  /* ---- the closing line -------------------------------------------------- */
+
+  .ep-footer {
+    border-top: 1px solid var(--color-line);
+    background: var(--color-ground);
+    color: var(--color-muted);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .ep-footer p {
+    margin: 0;
+    padding: 20px var(--gutter);
+  }
+
+  .ep-footer-link {
+    color: var(--color-ink);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-coral);
+    text-underline-offset: 3px;
+  }
+
+  .ep-footer-link:hover {
+    color: var(--color-coral-deep);
+  }
+}
+
+@media (max-width: 960px) {
+  .ep-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .ep-stack {
+    width: min(100%, 440px);
+    min-height: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 860px) {
+  .ep-bar.is-enhanced .ep-menu-btn {
+    display: grid;
+  }
+
+  /* Absolute against the bar, so the panel covers the hero instead of pushing
+     it: the bar grows to 81px and the page below moves by 7.2px, not by a panel. */
+  .ep-bar.is-enhanced .ep-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    padding: 8px var(--gutter) 16px;
+    border-bottom: 2px solid var(--color-ink);
+    background: var(--color-ground);
+  }
+
+  .ep-bar.is-enhanced.is-open .ep-nav {
+    display: block;
+  }
+
+  .ep-bar.is-enhanced .ep-links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ep-bar.is-enhanced .ep-link {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-line);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .ep-bar.is-enhanced .ep-link[aria-current='page']::after {
+    display: none;
+  }
+
+  .ep-bar:not(.is-enhanced) .ep-bar-inner {
+    flex-wrap: wrap;
+  }
+
+  .ep-bar:not(.is-enhanced) .ep-links {
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .ep-field {
+    flex-wrap: wrap;
+    padding: 6px;
+    border-radius: 22px;
+  }
+
+  /* Keeps the icon off the tighter rounded edge. */
+  .ep-field-icon {
+    margin-left: 12px;
+  }
+
+  .ep-submit {
+    flex: 1 1 100%;
+  }
+
+  .ep-stack {
+    min-height: 400px;
+  }
+
+  .ep-card {
+    inset: 16px 14px auto 14px;
+    min-height: 370px;
+  }
+
+  /* The front card returns to the flow here: its contents are taller than the
+     400px stack at 320–390, and an absolutely positioned card would be clipped
+     by the shell's `overflow:hidden`. Back cards stay behind it. */
+  .ep-card--a {
+    position: relative;
+    inset: auto;
+    margin: 16px 14px 0;
+    padding: 20px;
+  }
+
+  /* Shallower rotations and a shorter throw than the reference: at 390 and 320
+     the yellow card's rect would otherwise run past the shell's `overflow:hidden`
+     (the reference loses 8.2px and 8.5px) and the corner is cut off. */
+  .ep-card--b {
+    transform: rotate(4deg) translate(6px, 6px);
+  }
+
+  .ep-card--c {
+    transform: rotate(-3deg) translate(-4px, 8px);
+  }
+
+  .ep-mail-title {
+    font-size: 21px;
+  }
+
+  .ep-mail-art {
+    height: 90px;
+  }
+
+  .ep-sticker {
+    top: -6px;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    font-size: 13px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ep-root *,
+  .ep-root *::before,
+  .ep-root *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
