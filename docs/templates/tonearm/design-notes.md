@@ -223,3 +223,25 @@ the teal highlight on row 1.
 6. Row 1 current, teal-tinted, and the equaliser **replaces** its number when playing.
 7. Play → pause icon + `aria-pressed="true"` + **"Pause"** label; speed cycles through three states.
 8. Auto-advance at the end of a track; the last one clamps and stops.
+
+## 8 — Shipped deltas (implementer, 2026-10-26)
+
+Three readings changed between prep and the build. Each is arithmetic or an accessible-name fix, not a
+visual change.
+
+1. **`+30` lands on `1152`, not `1154`.** The prep's live measurement (`aria-valuenow=1154`,
+   `19:14 of 42:18`) was taken *after* ~2 s of simulated playback, so it folded clock drift into a skip
+   that the scenario states as `1122 → +30`. `1122 + 30 = 1152` → `19:12 of 42:18`; the spec's normative
+   scenario and verification checklist now carry that number, and the measured line stays as the record
+   of what the live page read at the moment of the probe.
+2. **Track rows carry an explicit accessible name.** The reference concatenates its four spans with no
+   separators, so row 3 announces *"3Harbour Cats3:18"*. The port sets
+   `aria-label="3. Harbour Cats, 3:18"` on the row button — same visible text, a name a screen reader can
+   read. Class-for-class the markup is unchanged.
+3. **The speed control is labelled, not concatenated.** `"Playback speed "` + `"1×"` in two spans loses
+   its word gap in the accessible-name computation (`"Playback speed1×"`), so the button carries
+   `aria-label="Playback speed 1×"` while the visible glyph stays the bare rate.
+
+Also shipped as designed: a visually hidden `h1` (the reference has none), the queue button as a real
+`aria-pressed` toggle, the read-only `progressbar` kept out of the tab order, and both covers re-authored
+as inline SVG with no `<img>` anywhere on the page.
