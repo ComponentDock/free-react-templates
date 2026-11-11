@@ -324,3 +324,51 @@ the *shape* of its test list (rect assertions per band, a ladder, a contrast tab
 7. **The trap of the run**: the reference's own Rookie description fits by **0.66 px** (300.00 in 300.66). With the
    Google face it is 307 and wraps, so a port that copies the string reproduces the *reference's* rhythm only on the
    archive face. Pick copy with slack and assert the **row heights**.
+
+## 10. As built (2026-11-11, `apps/limelight`, Chromium 1440 × 900, `document.fonts.ready`)
+
+Measured on the built `dist/` served over `python3 -m http.server` — not on the dev server, so the numbers include the
+production CSS. Every rect the spec fixes reproduces, because the layout is a direct port of the reference's own rules:
+
+| Reading | Reference (spec) | As built |
+| --- | --- | --- |
+| `main` | 1440 × 1081.77, `padding: 104px 16px` | **1440 × 1081.77** ✓ |
+| section | 1120 × 873.77 @ (160, 104) | **1120 × 873.77 @ (160, 104)** ✓ |
+| head | 640 × 178.45 @ (400, 104) | **640 × 178.45 @ (400, 104)** ✓ |
+| eyebrow | 196 × 34.14 | **193 × 34.14** (the copy is shorter; the box height is the reference's) |
+| dot | 8 × 8 @ (637, 117.06) | **8 × 8 @ (638.5, 117.06)** ✓ |
+| `h1` | 61.19 @ y 156.14, 1 line, 60/700/−1.8/61.2 | **61.19 @ 156.14** ✓ |
+| glow span | 77 tall @ y 148.14 (inline box, not the line box) | **124.02 × 77 @ (842.39, 148.14)** ✓ |
+| lede | 51.13 (2 lines) @ y 231.33 | **51.13** ✓ |
+| grid | 1120 × 577.63 @ (160, 338.45) | **1120 × 577.63 @ (160, 338.45)** ✓ |
+| tracks | 358.656 / 358.672 / 358.656 | **358.656 / 358.672 / 358.656** ✓ |
+| cards | 577.63 tall at x 160 / 540.66 / 921.33 | **577.63** at **160 / 540.66 / 921.33** ✓ |
+| icon | 46 × 46 @ y 369.45 | **46 × 46 @ y 369.45** ✓ |
+| name | 34.09 @ y 435.45 | **y 435.45** ✓ |
+| descriptions | 22.47 / 44.94 / 44.94 | **22.47 / 44.94 / 44.94** ✓ (the free copy is 1 line — `Everything you need to go live.`) |
+| price rows | 73 tall @ 518.02 / 540.48 / 540.48 | **73** @ **518.02 / 540.48 / 540.48** ✓ |
+| amounts | 94 / 58 / 86 wide | **96 / 57 / 85** (Google's face — the spec's own Google column) |
+| `/ month` | @ y 565.48 on the two paid plans | **@ 565.48**, two spans only ✓ |
+| lists | 194.81 / 174.34 / 172.34 | **194.81 / 174.34 / 172.34** ✓ (the stretch slack) |
+| CTAs | 51.25 / 49.25 / 51.25, every bottom 887.08 | **51.25 / 49.25 / 51.25, bottoms 887.08** ✓ |
+| flag | 145.09 × 26.59 @ (729.23, 367.45) | **140.09 × 26.59 @ (734.23, 367.45)** — the spec's Google-font column exactly |
+| foot | 21.69 @ (160, 956.08) | **21.69 @ (160, 956.08)** ✓ |
+| port footer | 44.14 below the page | **44.14**, so the document is **1126** |
+
+Ladder without the footer (`scrollHeight − 44.14`): **1126 → 1081.86** at 1440 ✓ · 1078.86 at 1280 (1079) · 1065.86 at 1200
+(1066) · 1052.86 at 1120 (1053) · 1108.86 at 960 (1109) · 1099.86 at 920 (1100) · 1095.86 at 901 (1096) · **2103.86 at
+900** (2103) · 2081.86 at 800 · 2074.86 at 768 · 2059.86 at 700 · 2038.86 at 600 · 2059.86 at 560 · 2085.86 at 480 ·
+2130.86 at 390 (2131). The narrow-end rows that differ (375 → 2130.86 vs 2153, 360 → 2178.86 vs 2224, 331/320 → 2245.86
+vs 2348, 1024/1000) are **copy-dependent**: this port's bullets are shorter than the reference's, so fewer of them wrap
+once the column is 299 px. The structure they measure (one column, `max-width: 460`, unequal card heights, CTAs pinned)
+is unchanged.
+
+Behaviour, same run: card hover `matrix(1,0,0,1,0,-4)` + border `.2 → .45`; `Tab` → `Download free` with
+`3px solid rgb(34,211,238)` at `offset 3px`; `prefers-reduced-motion: reduce` → `transition-duration: 0s` and no lift;
+`scrollX = 0` and `scrollWidth === clientWidth` at all 26 probed widths; the featured card computes a **two-layer**
+`background-image` (padding-box gradient + 135° border-box gradient) with the three shadows intact; the ghost CTA's
+border computes `rgba(167, 139, 250, 0.6)` — the port's one colour repair.
+
+Deltas recorded for the PR: copy is paraphrased (product *Nightwave*, plans Spark / Creator / Studio), the three CTAs
+resolve to Component Dock instead of `href="#"`, and the ghost border is raised from 45 % to 60 % violet (2.35 → 3.14 : 1
+on the card top).
