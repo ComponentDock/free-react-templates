@@ -1,0 +1,376 @@
+@import 'tailwindcss';
+
+/* Tallyboard's palette: a warm cream ground, three near-white cards and one
+   solid forest panel. Lime appears exactly three times — the savings chip, the
+   featured flag and the featured CTA — and never as a background band.
+   `track` is deliberately darker than the usual stone step so the switch's OFF
+   state clears 3 : 1 as a control boundary against the ground and the knob. */
+@theme {
+  --color-ground: #fbf7ef;
+  --color-card: #fffdf8;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-line: #e7e0d2;
+  --color-forest: #14532d;
+  --color-lime: #bef264;
+  --color-lime-ink: #1a2e05;
+  --color-pop: #f7fee7;
+  --color-pop-muted: #d9f99d;
+  --color-track: #8a8079;
+  --color-cta-hover: #44403c;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-card: 22px;
+  --radius-pill: 999px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* The page's only gutter: 92 above 1315, `7vw` in between, 40 below 571.
+     Nothing else insets the document. */
+  .tb-main {
+    padding: clamp(40px, 7vw, 92px) 16px;
+    background-color: var(--color-ground);
+  }
+
+  .tb-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--color-ink);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  /* One visually-hidden utility for the toggle's name and the live region:
+     both must be readable by assistive tech and invisible on screen. */
+  .tb-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* ---- the centred head -------------------------------------------------- */
+
+  /* 680 px with no bottom margin: the billing row's own 36 px top margin is the
+     only clearance between the lede and the switch. */
+  .tb-head {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tb-title {
+    margin: 0 0 14px;
+    font-size: clamp(30px, 4.5vw, 48px);
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+
+  .tb-lede {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 16.5px;
+    text-wrap: balance;
+  }
+
+  /* ---- the billing row --------------------------------------------------- */
+
+  .tb-billing {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 36px 0 44px;
+    font-weight: 600;
+  }
+
+  /* Only the active period is ink; the other one stays muted. */
+  .tb-side {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-muted);
+    transition: color 0.2s ease;
+  }
+
+  .tb-side--on {
+    color: var(--color-ink);
+  }
+
+  .tb-save {
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-lime);
+    color: var(--color-lime-ink);
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+
+  /* State is carried three ways: aria-pressed, the track fill and the knob's
+     position. The 300 ms overshoot on the knob is the reference's own bounce —
+     an `ease` here reads flat. */
+  .tb-switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    padding: 0;
+    border: 0;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-track);
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+
+  .tb-switch[aria-pressed='true'] {
+    background-color: var(--color-forest);
+  }
+
+  .tb-knob {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.25);
+    transition: transform 0.3s cubic-bezier(0.3, 1.4, 0.5, 1);
+  }
+
+  .tb-switch[aria-pressed='true'] .tb-knob {
+    transform: translateX(26px);
+  }
+
+  .tb-switch:focus-visible {
+    outline: 3px solid var(--color-forest);
+    outline-offset: 3px;
+  }
+
+  /* ---- the plan grid ----------------------------------------------------- */
+
+  /* `minmax(0, 1fr)` and not `1fr`: with `minmax(auto, 1fr)` the longest bullet
+     would set a column floor and push the 1200 px grid into overflow. */
+  .tb-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .tb-plan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 24px 30px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    background-color: var(--color-card);
+  }
+
+  /* The featured panel differs in fill, text colour and CTA only: no 2 px
+     border, no negative margin, no extra padding, no shadow. */
+  .tb-plan--pop {
+    border-color: var(--color-forest);
+    background-color: var(--color-forest);
+    color: var(--color-pop);
+  }
+
+  .tb-flag {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-lime);
+    color: var(--color-lime-ink);
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .tb-name {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  .tb-views {
+    margin: 4px 0 0;
+    color: var(--color-muted);
+    font-size: 14px;
+  }
+
+  .tb-plan--pop .tb-views,
+  .tb-plan--pop .tb-per,
+  .tb-plan--pop .tb-note {
+    color: var(--color-pop-muted);
+  }
+
+  .tb-price {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin: 22px 0 2px;
+  }
+
+  /* Tabular figures so a count-up cannot jitter the baseline "/ mo" beside it. */
+  .tb-amount {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tb-per {
+    color: var(--color-muted);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* The 23 px floor keeps the CTA level across cards even if one note wraps. */
+  .tb-note {
+    min-height: 23px;
+    margin: 0 0 22px;
+    color: var(--color-muted);
+    font-size: 13.5px;
+  }
+
+  .tb-cta {
+    display: block;
+    padding: 11px 16px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-ink);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-align: center;
+    text-decoration: none;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .tb-cta:hover {
+    background-color: var(--color-cta-hover);
+    transform: translateY(-1px);
+  }
+
+  .tb-plan--pop .tb-cta {
+    background-color: var(--color-lime);
+    color: var(--color-lime-ink);
+  }
+
+  .tb-plan--pop .tb-cta:hover {
+    background-color: var(--color-pop-muted);
+  }
+
+  .tb-cta:focus-visible {
+    outline: 3px solid var(--color-forest);
+    outline-offset: 3px;
+  }
+
+  .tb-plan--pop .tb-cta:focus-visible {
+    outline-color: var(--color-lime);
+  }
+
+  .tb-list {
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tb-list li {
+    position: relative;
+    padding: 5px 0 5px 26px;
+    font-size: 14.5px;
+  }
+
+  /* A bare 14 px tick inside the item's 26 px left padding — no disc behind it. */
+  .tb-tick {
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    color: var(--color-forest);
+  }
+
+  .tb-plan--pop .tb-tick {
+    color: var(--color-lime);
+  }
+
+  /* ---- the port's only addition ----------------------------------------- */
+
+  .tb-footer {
+    padding: 0 16px 20px;
+    background-color: var(--color-ground);
+  }
+
+  .tb-footer-line {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--color-muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .tb-footer-link {
+    color: var(--color-ink);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .tb-footer-link:focus-visible {
+    outline: 2px solid var(--color-forest);
+    outline-offset: 2px;
+  }
+
+  /* ---- the width ladder -------------------------------------------------- */
+
+  @media (max-width: 1080px) {
+    .tb-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .tb-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  /* The reference's whole motion budget: four transitions, zero keyframes. */
+  @media (prefers-reduced-motion: reduce) {
+    .tb-switch,
+    .tb-knob,
+    .tb-side,
+    .tb-cta {
+      transition: none;
+    }
+
+    .tb-cta:hover {
+      transform: none;
+    }
+  }
+}
