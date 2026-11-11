@@ -1,0 +1,456 @@
+@import 'tailwindcss';
+
+/* Parity's palette: one teal accent on a white card over a cool grey ground,
+   with pale mint reserved for the featured plan's column. Two colours are
+   deliberate repairs to the reference — the cross glyph (`cross`) failed 1.4.11
+   inside the tinted column, and the two bulk controls' 1 px border (`line`)
+   sat at 1.25 : 1 against white, so it is replaced by `control-line`. */
+@theme {
+  --color-ground: #f2f4f3;
+  --color-card: #ffffff;
+  --color-accent: #0f766e;
+  --color-accent-deep: #115e59;
+  --color-tint: #effaf8;
+  --color-head-tint: #f0faf8;
+  --color-ink: #0f1f1d;
+  --color-row-head: #26332f;
+  --color-muted: #4a5a57;
+  --color-line: #e1e7e5;
+  --color-hover: #f7f9f8;
+  --color-cross: #6b7a76;
+  --color-control-line: #8a9793;
+
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-card: 20px;
+  --radius-card-sm: 16px;
+  --radius-pop: 14px;
+  --radius-control: 8px;
+  --radius-pill: 999px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* The page's only gutter: 80 above 1334, `6vw` in between, 36 below 600. */
+  .pt-main {
+    padding: clamp(36px, 6vw, 80px) 16px;
+    background-color: var(--color-ground);
+  }
+
+  /* One card, and the page's only shadow. `--pad` is inside the cap so the
+     content box stays 1080 at every width where the cap binds. */
+  .pt-card {
+    --pad: clamp(24px, 4vw, 48px);
+    max-width: calc(1080px + 2 * var(--pad));
+    margin: 0 auto;
+    padding: var(--pad);
+    border-radius: var(--radius-card);
+    background-color: var(--color-card);
+    box-shadow:
+      0 1px 2px rgba(15, 31, 29, 0.05),
+      0 20px 50px -30px rgba(15, 31, 29, 0.25);
+    color: var(--color-ink);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Visually hidden, still in the accessibility tree: the caption, the per-plan
+     qualifier on each CTA, and the words behind every tick and cross. */
+  .pt-sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .pt-head {
+    margin-bottom: 32px;
+  }
+
+  .pt-eyebrow {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .pt-title {
+    margin: 8px 0;
+    font-size: clamp(26px, 3.6vw, 38px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .pt-lede {
+    margin: 0;
+    color: var(--color-muted);
+  }
+
+  .pt-tools {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .pt-all {
+    padding: 7px 14px;
+    border: 1px solid var(--color-control-line);
+    border-radius: var(--radius-control);
+    background-color: var(--color-card);
+    color: var(--color-ink);
+    font: inherit;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .pt-all:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .pt-all:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* `separate` + fixed layout are load-bearing: collapse would drop both the
+     sticky cells' rules and the featured header's top radius. */
+  .pt-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+  }
+
+  .pt-colf {
+    width: 34%;
+  }
+
+  .pt-table thead th,
+  .pt-corner {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 18px 14px 16px;
+    border-bottom: 1px solid var(--color-line);
+    background-color: rgba(255, 255, 255, 0.96);
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  .pt-table thead th.pt-pop {
+    background-color: var(--color-head-tint);
+    border-radius: var(--radius-pop) var(--radius-pop) 0 0;
+  }
+
+  @supports (backdrop-filter: blur(6px)) {
+    .pt-table thead th,
+    .pt-corner {
+      backdrop-filter: blur(6px);
+    }
+  }
+
+  /* It is the box, not the column, that wraps — hence the max-width. */
+  .pt-note {
+    display: block;
+    max-width: 200px;
+    color: var(--color-muted);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .pt-tag {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 2px 9px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-accent);
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .pt-plan {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .pt-price {
+    display: block;
+    margin-top: 2px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+  }
+
+  .pt-per {
+    display: block;
+    color: var(--color-muted);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .pt-cta {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 7px 16px;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-control);
+    color: var(--color-accent);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .pt-cta:hover,
+  .pt-pop .pt-cta {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+
+  .pt-pop .pt-cta:hover {
+    background-color: var(--color-accent-deep);
+  }
+
+  .pt-cta:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  .pt-ghead th {
+    padding: 0;
+    border-bottom: 1px solid var(--color-line);
+  }
+
+  .pt-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 26px 14px 10px;
+    border: 0;
+    background: none;
+    color: var(--color-ink);
+    font: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .pt-count {
+    color: var(--color-muted);
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .pt-chev {
+    margin-left: auto;
+    color: var(--color-muted);
+    transition: transform 0.2s ease;
+  }
+
+  .pt-toggle[aria-expanded='false'] .pt-chev {
+    transform: rotate(-90deg);
+  }
+
+  .pt-toggle:hover {
+    color: var(--color-accent);
+  }
+
+  /* Inset, because the toggle is a full-width row inside the card's padding. */
+  .pt-toggle:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: -3px;
+    border-radius: var(--radius-control);
+  }
+
+  .pt-row th,
+  .pt-row td {
+    padding: 13px 14px;
+    border-bottom: 1px solid var(--color-line);
+    vertical-align: middle;
+  }
+
+  .pt-row th {
+    color: var(--color-row-head);
+    font-size: 14.5px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .pt-row td {
+    font-size: 14px;
+  }
+
+  .pt-row:hover th,
+  .pt-row:hover td {
+    background-color: var(--color-hover);
+  }
+
+  /* The featured column keeps its tint on hover — flattening it would lose the
+     only thing that marks the plan on a row the visitor is reading. */
+  .pt-row td.pt-pop,
+  .pt-row:hover td.pt-pop {
+    background-color: var(--color-tint);
+  }
+
+  .pt-val {
+    font-weight: 500;
+  }
+
+  .pt-ic {
+    display: block;
+  }
+
+  .pt-ic--yes {
+    fill: var(--color-accent);
+  }
+
+  .pt-ic--no {
+    color: var(--color-cross);
+  }
+
+  /* Phone-only sign-up path: the header CTA is hidden at this width. */
+  .pt-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .pt-mobile-cta {
+    flex: 1 1 120px;
+    padding: 9px 12px;
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-control);
+    color: var(--color-accent);
+    font-size: 13.5px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .pt-mobile-cta--pop {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+
+  .pt-footer {
+    padding: 0 16px 24px;
+    background-color: var(--color-ground);
+  }
+
+  .pt-footer-line {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .pt-footer-link {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .pt-footer-link:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* One step at 720: a narrower card, a wider first column, smaller type, and
+     no per-plan note or header CTA. The table gets WIDER here, not narrower. */
+  @media (max-width: 720px) {
+    .pt-card {
+      max-width: none;
+      padding: 20px 12px;
+      border-radius: var(--radius-card-sm);
+    }
+
+    .pt-colf {
+      width: 37%;
+    }
+
+    .pt-table thead th,
+    .pt-corner {
+      padding: 12px 6px 10px;
+    }
+
+    .pt-note {
+      font-size: 11.5px;
+    }
+
+    .pt-tag {
+      padding: 1px 7px;
+      font-size: 10.5px;
+    }
+
+    .pt-plan {
+      font-size: 14px;
+    }
+
+    .pt-price {
+      font-size: 20px;
+    }
+
+    .pt-per,
+    .pt-cta {
+      display: none;
+    }
+
+    .pt-row th,
+    .pt-row td {
+      padding: 11px 6px;
+    }
+
+    .pt-row th {
+      font-size: 13.5px;
+    }
+
+    .pt-row td {
+      font-size: 12.5px;
+      overflow-wrap: anywhere;
+    }
+
+    .pt-toggle {
+      flex-wrap: wrap;
+      padding: 20px 6px 10px;
+      row-gap: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .pt-chev,
+    .pt-cta {
+      transition: none;
+    }
+  }
+}

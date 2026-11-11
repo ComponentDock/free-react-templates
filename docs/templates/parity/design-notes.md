@@ -308,3 +308,42 @@ What does carry: the teal-on-white accent band, the fill-only "pop" tint idea, a
   `unicode-range` starts `U+0000-00FF`. That mistake inflated every width by 3–20 % **in the wrong direction** and
   `document.fonts.check()` still answered `true`.
 - Contrast computed from sRGB relative luminance (WCAG 2.2 formula), not sampled from screenshots.
+
+## 10. Port verification (2026-11-12, `apps/parity`)
+
+Measured on the built app (`vite build`, `python3 -m http.server`, Chromium 1440 × 900, after `document.fonts.ready` +
+300 ms). Every reading below is the **port's**, taken from `getBoundingClientRect`; the spec's table is above.
+
+| Reading | Spec (port) | Port as built |
+| --- | ---: | ---: |
+| `main` | 1440 × 1704.44, pad `80 16` | **1440 × 1704.44**, pad `80 16` |
+| card | 1176 × 1544.44 at (132, 80) | **1176 × 1544.44** at (132, 80) |
+| head | 1080 × 155.94 at (180, 128) | **1080 × 155.94** at (180, 128) |
+| toolbar buttons | 97 × 36.25 / 105 × 36.25 | **97 / 105**, height 36.25 |
+| table | 1080 × 1260.5 at (180, 315.94) | **1080 × 1260.5** at (180, 315.94) |
+| columns | 367.19 / 237.59 / 237.59 / 237.63 | **367.19 / 237.59 / 237.59 / 237.63** |
+| thead row | 193.75 | **193.75** |
+| pill | 64.63 × 21.25 at (798.78, 334.94) | **64.63 × 21.25** at (798.78, 334.94) |
+| plan / price / per / CTA | 25.5 @362.19 · 34.5 @389.69 · 19.5 @424.19 · 37 @455.69 | **identical** (Basic's CTA is **82** wide — its label is `Sign up`, not `Start trial`) |
+| group 1 head | 59.5 (toggle 58.5) at y 509.69 | **59.5 / 58.5** at y 509.69 |
+| rows | 48.75 | **48.75** |
+| groups | 303.25 / 254.5 / 254.5 / 254.5 | **303.25 / 254.5 / 254.5 / 254.5** |
+| sticky at scroll 200 / 400 / 804 | 115.94 / 0 / 0 | **115.94 / 0 / 0** |
+| collapse g1 | −243 | **−244** (243.75, rounded) |
+| collapse all | doc → viewport floor, table 431.75 | **919** = 900 floor + 43.5 footer; table **431.75** |
+| fresh load at 390 | doc 923, table 584.75 | doc **1071**, table **584.75** — the **+104.5** is the phone CTA block (delta 8, below) |
+| resize 1440 → 390 | all four stay open, doc 1598 | **all four open, doc 1598.28** |
+| height ladder 1280…721 | 1698 … 1579 | **1698.03 … 1578.8** (≤0.4 px) |
+| 721 → 720 inversion | table 631.34 → 664 | **631.34 → 664** (+32.66) |
+| horizontal overflow | 0 at every width | **0 at all 26 probed widths**, `scrollX` stays 0 |
+| fonts | `IBMPlexSans-Regular`, `isCustomFont: true` | **confirmed via `CSS.getPlatformFontsForNode`** on `.pt-cta` |
+
+Deltas this port carries on purpose (all in the PR body):
+
+1. **Phone CTA block** (spec delta 8): three anchors below the table, rendered only on a page that loaded ≤ 720. At 390
+   they wrap to two rows, which is the **+104.5** in the mobile ladder above. The desktop ladder is untouched.
+2. **`Sign up` CTA is 82 wide**, not 97: the reference's 97 was measured on `Start trial`. Same padding, shorter label.
+3. **Mobile row seam**: `Task lists and boards` takes its third line at 390 (63.5) rather than at 389 (60.5) — a
+   **1 px** column-width seam; the spec's own note says to assert row heights rather than copy.
+4. The two contrast repairs are in (`cross` `#6b7a76`, `control-line` `#8a9793`), so the toolbar's border is visibly
+   darker than the reference's and the crosses are darker than the reference's.
