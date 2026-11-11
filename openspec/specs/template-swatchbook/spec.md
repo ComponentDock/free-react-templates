@@ -62,7 +62,7 @@ being sold*, not of the component (*pricing table*, *tabs*, *card*) — it pairs
 
 ## Why this design has no row in `TEMPLATES.md` (catalogue gap, measured 2026-11-11)
 
-`TEMPLATES.md` is fully `[x]` (2,926 rows, 0 `- [ ]`, 0 `[~]`), so this item comes from the **catalogue-gap queue** in
+`TEMPLATES.md` is fully `[x]` (2,927 rows, 0 `- [ ]`, 0 `[~]`), so this item comes from the **catalogue-gap queue** in
 `docs/catalog-coverage.md`: 256 ColorLib-listed designs that the checklist never recorded — 42 stand-alone pages plus
 **214 snippet variants in 19 families**. The `pricing-table` family is **8 of 12** prepped after this run (`ratecard` 01,
 `tallyboard` 02, `parity` 03, `limelight` 04, `prorata` 05 and `runrate` 06 **shipped**; `perch` 07 and `swatchbook` 08
@@ -71,7 +71,7 @@ prepped and unbuilt), and only variants 01–06 have rows.
 ## Where the row goes once this ships (the prep must not add it)
 
 The implementer appends the row under `## Bootstrap Pricing Tables (12)` (header at **line 891**, rows 01–06 at **893**,
-**894**, **895**, **896**, **897** and **898**, `## Bootstrap Wizards (30)` at **900** as of `262793dff`) — grammar
+**894**, **895**, **896**, **897** and **898**, `## Bootstrap Wizards (30)` at **900** as of `39147da36`) — grammar
 `[colorlib] · ![preview] · [app]`, exactly as its six siblings:
 
 ```
