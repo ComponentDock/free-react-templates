@@ -1,0 +1,549 @@
+@import 'tailwindcss';
+
+/* Belvedere's palette: one pale blue ground carrying a single hard-edged disc,
+   a navy ink, a muted blue-grey, exactly one brand blue (the filled CTA and the
+   focus ring) and exactly one yellow (the highlight, the sticker, the monogram
+   glyph and a tile's icon on hover). Bricolage Grotesque is the page's only
+   face, loaded once in index.html at 400–700. */
+@theme {
+  --color-ground: #e8f0fa;
+  --color-disc: #d4e3f7;
+  --color-ink: #0f1f3d;
+  --color-muted: #43526e;
+  --color-brand: #2456d6;
+  --color-brand-deep: #1b45b5;
+  --color-sun: #ffd23f;
+  --color-card: #ffffff;
+  --color-frame: #cbd9ee;
+  --color-ping: #34d399;
+
+  --font-sans:
+    'Bricolage Grotesque', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+
+  /* The two clamps the reference uses; Tailwind's scale cannot express either. */
+  --text-title: clamp(2.3rem, 1.3rem + 3.6vw, 4.3rem);
+  --text-intro: clamp(1rem, 0.96rem + 0.25vw, 1.15rem);
+  --text-bio: clamp(1.02rem, 0.98rem + 0.25vw, 1.15rem);
+}
+
+@layer base {
+  :root {
+    /* One gutter for the bar, the hero and the footer; one column gap. */
+    --gutter: clamp(16px, 4vw, 48px);
+    --hero-gap: clamp(36px, 6vw, 96px);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* One full-height screen. The background is a single declaration: a circle
+     with no explicit size resolves its stops against the farthest corner, so
+     22% lands at ~298 px on a 1440 × 944 box and the disc is clipped by the
+     viewport edge — which is what makes it read as an arc, not a circle. */
+  .bv-shell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 18% 70%, var(--color-disc) 0 22%, transparent 22.2%),
+      var(--color-ground);
+    color: var(--color-ink);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .bv-shell *,
+  .bv-shell *::before,
+  .bv-shell *::after {
+    box-sizing: border-box;
+  }
+
+  /* `:where()` keeps the reset at zero specificity so every component rule
+     below still wins on its own. */
+  .bv-shell :where(a) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .bv-shell :where(ul, dl) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bv-shell :where(p, h1, dd) {
+    margin: 0;
+  }
+
+  .bv-shell a:focus-visible {
+    outline: 3px solid var(--color-brand);
+    outline-offset: 3px;
+  }
+
+  /* ---- the bar ----------------------------------------------------------- */
+
+  /* 88.80 px tall: 24 block padding around a 34 px monogram. */
+  .bv-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px var(--gutter);
+  }
+
+  .bv-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* The glyph is optically centred: 20 px type on a 34 px disc needs the 3 px
+     of bottom padding, not `line-height: 1`. */
+  .bv-logo span {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    background: var(--color-ink);
+    color: var(--color-sun);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .bv-links {
+    display: flex;
+    gap: 4px;
+  }
+
+  .bv-link {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: var(--color-muted);
+    font-weight: 500;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .bv-link:hover {
+    background: rgb(15 31 61 / 7%);
+    color: var(--color-ink);
+  }
+
+  .bv-link[aria-current='page'] {
+    background: var(--color-card);
+    color: var(--color-ink);
+    box-shadow: 0 1px 2px rgb(15 31 61 / 8%);
+  }
+
+  /* ---- the hero ---------------------------------------------------------- */
+
+  .bv-main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  /* The copy column is widest at 1200 and narrowest at 1600+: the gap is 6vw
+     inside a box capped at 1180, so the gap eats the columns as the viewport
+     grows. Every seam in the page follows from that one fact. */
+  .bv-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: var(--hero-gap);
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: clamp(20px, 4vw, 48px) var(--gutter) clamp(48px, 7vw, 88px);
+  }
+
+  .bv-portrait {
+    position: relative;
+    max-width: 420px;
+  }
+
+  /* 999 px on the top two corners collapses to half the width — a Roman arch —
+     while the bottom two keep a 28 px softening. `overflow: hidden` is what
+     crops the square source. */
+  .bv-frame {
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    border: 6px solid var(--color-card);
+    border-radius: 999px 999px 28px 28px;
+    background: var(--color-frame);
+    box-shadow: 0 30px 60px -30px rgb(15 31 61 / 45%);
+  }
+
+  .bv-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 30%;
+    filter: saturate(1.05);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* Hover lives on the block, not the image, so the pill and the sticker keep
+     their places while the photograph zooms. */
+  .bv-portrait:hover .bv-img {
+    transform: scale(1.04);
+  }
+
+  .bv-status {
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: var(--color-ink);
+    color: #fff;
+    font-size: 14.5px;
+    font-weight: 500;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    box-shadow: 0 12px 24px -10px rgb(15 31 61 / 50%);
+  }
+
+  .bv-pulse {
+    position: relative;
+    flex: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-ping);
+  }
+
+  .bv-pulse::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: var(--color-ping);
+    animation: bv-ping 1.8s ease-out infinite;
+  }
+
+  @keyframes bv-ping {
+    to {
+      transform: scale(2.8);
+      opacity: 0;
+    }
+  }
+
+  /* 64 px square, but its bounding rect is always larger: it is rotating. */
+  .bv-sticker {
+    position: absolute;
+    top: 12%;
+    right: -22px;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--color-sun);
+    color: var(--color-ink);
+    box-shadow: 0 10px 20px -10px rgb(15 31 61 / 50%);
+    animation: bv-turn 12s linear infinite;
+  }
+
+  @keyframes bv-turn {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* ---- the copy column --------------------------------------------------- */
+
+  .bv-hello {
+    color: var(--color-muted);
+    font-size: var(--text-intro);
+    font-weight: 500;
+  }
+
+  /* 68.8 px at 1440 with a 36.8 px floor, -2.408 px of tracking and balanced
+     breaks: 4 lines at 1440, 2 at 900, 3 at 800. */
+  .bv-title {
+    margin: 16px 0 20px;
+    font-size: var(--text-title);
+    font-weight: 700;
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  /* Padding and radius in em so they scale with the clamp. `clone` is what
+     paints two independent bands when the phrase wraps instead of one broken
+     rectangle. */
+  .bv-mark {
+    padding: 0 0.12em;
+    border-radius: 0.18em;
+    background: var(--color-sun);
+    color: inherit;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .bv-bio {
+    max-width: 34em;
+    color: var(--color-muted);
+    font-size: var(--text-bio);
+  }
+
+  .bv-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+  }
+
+  .bv-primary,
+  .bv-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 0 22px;
+    border-radius: 14px;
+    font-weight: 600;
+    transition:
+      transform 0.2s,
+      background-color 0.2s,
+      border-color 0.2s;
+  }
+
+  /* The white is set on the control itself: the reference needs `!important`
+     because its base `a { color: inherit }` out-specifies the class, and an
+     inherited ink label would be 2.63 : 1 on this blue. */
+  .bv-primary {
+    background: var(--color-brand);
+    color: #fff;
+    box-shadow: 0 10px 22px -12px rgb(36 86 214 / 80%);
+  }
+
+  .bv-primary:hover {
+    background: var(--color-brand-deep);
+    transform: translateY(-2px);
+  }
+
+  /* Declared 1.5 px — the renderer paints it 1 px, exactly as the reference. */
+  .bv-secondary {
+    border: 1.5px solid rgb(15 31 61 / 20%);
+    background: rgb(255 255 255 / 60%);
+  }
+
+  .bv-secondary:hover {
+    border-color: var(--color-ink);
+    background: #fff;
+  }
+
+  .bv-secondary span {
+    color: var(--color-muted);
+    font-weight: 400;
+  }
+
+  /* ---- the meta band ----------------------------------------------------- */
+
+  .bv-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 36px;
+    margin-top: 36px;
+    padding-top: 26px;
+    border-top: 1px solid rgb(15 31 61 / 14%);
+  }
+
+  .bv-social {
+    display: flex;
+    gap: 8px;
+  }
+
+  .bv-social-link {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--color-card);
+    color: var(--color-ink);
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      transform 0.2s;
+  }
+
+  .bv-social-link:hover {
+    background: var(--color-ink);
+    color: var(--color-sun);
+    transform: translateY(-2px);
+  }
+
+  /* Blue on ink is 2.63 : 1 — the hover state takes the yellow ring (11.33). */
+  .bv-social-link:focus-visible {
+    outline-color: var(--color-sun);
+  }
+
+  .bv-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+  }
+
+  .bv-stats dt {
+    color: var(--color-muted);
+    font-size: 12.5px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .bv-stats dd {
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  /* ---- the closing line (the reference has no footer) -------------------- */
+
+  .bv-footer {
+    color: var(--color-muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .bv-footer p {
+    padding: 18px var(--gutter);
+  }
+
+  .bv-footer-link {
+    color: var(--color-ink);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-sun);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+  }
+
+  .bv-footer-link:hover {
+    color: var(--color-brand);
+  }
+}
+
+@media (max-width: 900px) {
+  .bv-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .bv-portrait {
+    width: min(72%, 320px);
+    margin: 0 auto 12px;
+  }
+
+  .bv-copy {
+    text-align: center;
+  }
+
+  .bv-bio {
+    margin-inline: auto;
+  }
+
+  .bv-actions,
+  .bv-meta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .bv-bar {
+    padding-block: 16px;
+  }
+
+  .bv-logo {
+    font-size: 16px;
+  }
+
+  .bv-link {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+
+  /* 70% is *wider* than min(72%, 320px): the portrait grows 18.6 px at the
+     breakpoint while the viewport shrinks by one. Faithful, not a bug. */
+  .bv-portrait {
+    width: 70%;
+  }
+
+  .bv-sticker {
+    right: -18px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .bv-sticker svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .bv-status {
+    padding: 9px 14px;
+    font-size: 13.5px;
+  }
+
+  .bv-actions > * {
+    flex: 1 1 100%;
+  }
+
+  .bv-stats {
+    justify-content: center;
+  }
+
+  .bv-stats > div {
+    text-align: center;
+  }
+}
+
+/* The reference's one faithfulness break: its bar never wraps, so below 356 px
+   `overflow: hidden` cuts 36 px off the last pill. The port centres the nav on
+   its own line instead. */
+@media (max-width: 380px) {
+  .bv-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bv-shell *,
+  .bv-shell *::before,
+  .bv-shell *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
