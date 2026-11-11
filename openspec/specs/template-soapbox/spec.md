@@ -140,6 +140,7 @@ carry their own.
 | hero gap             | `clamp(32px, 5vw, 80px)`       | **72** at 1440 (5vw = 72 exactly), 64 at 1280, 51.2 at 1024, 32 at ≤640       |
 | card padding         | `clamp(20px, 2.5vw, 30px)`     | 30 at ≥1200, 25.6 at 1024, 20 at ≤800                                       |
 | bar                  | `padding: 22px gutter`, `gap: 32`, `max-width: 1280` | **92.8** tall at ≥861, **90** at ≤860 (the 46 px button is shorter than the 48.8 px nav) |
+| tickets pill         | `16px / 700`, `padding: 10px 20px`, `border: 2px` | the rule declares no `font-size`, so the pill inherits the shell's **16 px**; `16 × 1.55 = 24.8` + 24 = **48.8** tall, and the bar's 92.8 = 22 + 48.8 + 22. Width **105** with the reference's static Space Grotesk cut, **99** with Google's variable delivery — the pill never wraps, so only its own width moves |
 
 **Radius / shadow note for the port:** Tailwind covers `rounded-full` (999), `rounded-2xl` (16, at 1 rem = 16 px);
 the card's **28** and the panel's **22** need arbitrary values (`rounded-[28px]`, `rounded-[22px]`), and the tiles'
@@ -366,7 +367,9 @@ holding a copy column and a countdown card, with no form and no photograph.
 - **THEN** there SHALL be exactly one `<header>`, one `<nav aria-label="Main">`, one `<main>`, **one**
   `<section aria-labelledby>` and **one** `<aside aria-labelledby>` inside it
 - **AND** there SHALL be exactly **one** `<h1>` ("Frontend North 2027"), **one** `<h2>` ("Doors open in"), **zero**
-  `<h3>`, **0** `<img>`, **0** `<form>`, **0** `<input>`, **1** `<button>`, **4** `<svg>` and **8** `<a>`
+  `<h3>`, **0** `<img>`, **0** `<form>`, **0** `<input>`, **4** `<svg>` and **8** `<a>`
+- **AND** there SHALL be **two** `<button>`s — the menu toggle (the reference's only one) plus the card CTA, which
+  the port turns into a button so it can open the seat step (see fix 2 and "Delivered deltas")
 - **AND** the document SHALL be **900 px** tall with `scrollX === 0` and `scrollWidth === clientWidth`
 - **AND** the four `<time>`-bearing facts SHALL be a `dl` with **three** `dt`/`dd` pairs
 
@@ -420,7 +423,8 @@ The header SHALL hold a two-part wordmark, a right-aligned four-link nav and an 
 - **AND** the nav SHALL be **954.47 × 48.8** at (357.53, 22) with `flex:1; justify-content: flex-end; gap: 24`, its
   link list **352 × 36.8** at (831, 28) at `gap: 28`, each link `padding: 6px 0`, **16 px / 500**
 - **AND** the Tickets pill SHALL be **105 × 48.8** at (1207, 22) — `padding: 10px 20px`, **2 px** lime border,
-  radius **999**, **17 px / 700**, and its text SHALL render **white**, the colour the cascade gives it (trap 2)
+  radius **999**, **16 px / 700** (inherited — the rule sets no size), and its text SHALL render **white**, the
+  colour the cascade gives it (trap 2)
 
 #### Scenario: Link hover and the bar's focus ring
 
@@ -688,13 +692,57 @@ preflight covers it), the `[hidden]` re-declaration that only exists to undo it,
 - [ ] menu: button appears at **860** (46 × 46, bar **90**, nav `display:none`), disappears at **861**; panel
       **791.22 × 312.8** at (34.39, 90) radius 22 with ink ground; `aria-expanded` / `aria-label` toggle and the
       icons swap; Escape (focus returns), outside click, panel link and crossing 861 each close it
-- [ ] anchors: the port has **no** `href="#"` left — nav links, tickets, CTA and schedule link all resolve or act;
-      `aria-current="page"` is on one nav item
-- [ ] exactly **one** `<h1>`, **one** `<h2>`, **0** `<img>`, **0** `<form>`, **1** button, **8** anchors and **3** ids
-      in the reference shape; the footer links `https://www.componentdock.com/`
+- [ ] anchors: the port has **no** `href="#"` left — four nav links, the Tickets pill and the schedule link resolve
+      to in-page targets (`#soapbox-speakers`, `#soapbox-count-title`, `#soapbox-venue`, `#soapbox-facts`), the CTA
+      acts (`aria-live="off"` status note), and the footer anchor is the marketplace; `aria-current="page"` is on
+      the Schedule row
+- [ ] exactly **one** `<h1>`, **one** `<h2>`, **0** `<img>`, **0** `<form>`, **2** buttons (menu + CTA), **8**
+      anchors, **4** inline svg and **7** ids (the three reference ones plus four anchor targets); the footer links
+      `https://www.componentdock.com/`
 - [ ] no ColorLib asset or string is copied: the wordmark is **soapbox**, icons are inline SVG or `lucide-react`,
       Space Grotesk comes from Google Fonts
 - [ ] contrast: white/blue **7.71**, soft/blue **6.08**, lime/blue **6.70**, ink/lime **15.89**, white/ink **18.28**,
       label/ink **11.18**; the menu button's ring is **ink**, not lime
 - [ ] `git grep -il 'colorlib\|hero-07\|frontend/north' apps/soapbox` → **no hits** (provenance lives only in this
       spec, `TEMPLATES.md` and the PR)
+
+## Delivered deltas (measured in `apps/soapbox`, 2026-11-11)
+
+Built and measured with Playwright Chromium at DPR 1, `reducedMotion: reduce`, after `document.fonts.ready`. The
+reference was re-measured live in the same browser session, so every pair below is like-for-like.
+
+| what                                   | reference            | `apps/soapbox`        | note |
+| -------------------------------------- | -------------------- | --------------------- | ---- |
+| shell height at 1440 … 1001            | 900                  | **900**               | exact; the document also carries the 62 px footer outside the shell (962 total) |
+| shell height at 1000 / 960 / 900 / 861 | 1020 / 1005 / 983 / 968 | **1020 / 1005 / 983 / 968** | exact |
+| shell height at 860 / 768 / 700 / 679  | 965 / 932 / 910 / 904 | **965 / 932 / 910 / 904** | exact |
+| shell height at 520 / 480 / 430 / 390  | 957 / 950 / 942 / 985 | **957 / 950 / 942 / 985** | exact |
+| shell height at 320                    | 1032                 | **1032**              | exact |
+| bar / inner at 1440                    | 1440 × 92.8 / 1280 × 92.8 at (80, 0) | **same** | after the pill's inherited 16 px line box |
+| hero at 1440                           | 1280 × 623.34 at (80, 184.72) | **same** | exact |
+| `h1` at 1440                           | 750.59 × 235.53 at (128, 284.41) at 136.96 / 117.786 | **same** | exact, two lines |
+| standfirst / facts at 1440             | 679.67 × 87.75 at y 539.94 / 750.59 × 76.38 at y 659.69 | **same** | exact |
+| card at 1440                           | 361.41 × 355.41 at (950.59, 306.69), `12px 12px 0` | **same** | exact, radius 28 |
+| count grid at 1440                     | 301.41 × 83.17, tracks 71.72 / 67.98 / 68 / 69.7 | **301.41 × 83.17**, tracks 73.72 / 67.89 / 67.89 / 67.91 | same total; the per-track split follows each tile's min-content, so a ±2 px digit-width difference redistributes it |
+| menu at 860                            | button 46 × 46, bar 90, panel 791.22 × 312.8 at (34.39, 90) | **same** | exact |
+| `scrollX` / `scrollWidth`              | 0 / viewport at every width 320–1440 | **same** | rings clipped, never scrolled |
+| wordmark                               | 197.53 × 30 ("FRONTEND/NORTH") | **119.77 × 30** ("soapbox") | intended rename; the nav is right-aligned so only its left edge moves |
+| Tickets pill                           | 105 × 48.8           | **99 × 48.8**         | same box height; Google's variable Space Grotesk is ~6 % narrower at 700 than the reference's static cut |
+| nav links list                         | 352 × 36.8           | **344 × 36.8**        | same 1.5 px-per-label font-delivery difference |
+| facts wrap seam                        | wraps at ≤678        | **wraps at ≤640**     | the three items are ~2 px narrower in total, so the 624.69 px seam moves ~38 px |
+| price wrap at 360                      | one line (984 total) | **two lines (1007)**  | same cause; at 320 both wrap and agree at 1032 |
+| buttons / anchors / ids                | 1 / 8 / 3            | **2 / 8 / 7**         | the CTA is a button (fix 2) and the four nav links needed real targets |
+
+**Deliberate departures, all prescribed by this spec or forced by the cascade:**
+
+1. **The CTA is a `<button>`, not an anchor.** It holds a seat in place and writes an honest status note
+   ("This is a template demo, so there is no payment step") — fix 2's "open a ticket step". Everything else keeps
+   the reference's anchor counts (8 including the added footer).
+2. **Seven ids instead of three.** `soapbox-nav`, `soapbox-title` and `soapbox-count-title` are the reference's;
+   `soapbox-facts`, `soapbox-when`, `soapbox-venue` and `soapbox-speakers` exist because fix 2 requires the four nav
+   links and the schedule link to reach something real.
+3. **The document is 962 at 1440, not 900.** The Component Dock footer sits outside the 100vh shell by design, so
+   the *shell* is still exactly 900 — every measurement above the footer is the reference's.
+4. **The Tickets pill renders 16 px, not 17.** The reference CSS declares no `font-size` on the pill; the 48.8 px
+   height only follows from the inherited 16 px × 1.55. Copying the measured "17 px" would have made the bar 94.34
+   and moved every y on the page by 1.54 px.
