@@ -52,14 +52,15 @@ component.
 
 ## Why this design has no row in `TEMPLATES.md` (catalogue gap, measured 2026-11-11)
 
-`TEMPLATES.md` is fully `[x]` — **2,921** `[x]` rows, **0** `- [ ]` and **0** `[~]` — and
+`TEMPLATES.md` is fully `[x]` — **2,922** `[x]` rows, **0** `- [ ]` and **0** `[~]` — and
 `python3 ~/.hermes/skills/automation/componentdock-prep-stream/scripts/find-next-unprepped.py` reports
-`open items: 0 | prepped slugs on origin/main: 1897 | items with NO spec on main: 0` (main `96e1c3dbf`, **3,335**
-spec folders). So this design comes from `docs/catalog-coverage.md`, which lists **214 snippet variants in 19
-families** that ColorLib's own listing carries and the checklist never recorded. The `pricing-table` family is
-**family 4** in that document's order; its first three variants are prepped (`ratecard` `6211c30be`, `tallyboard`
-`d7c78c0c0`, `parity` `5c1674c68`, all still unbuilt — `ls apps/` has none of them) and **this is the fourth**.
-`grep -c pricing-table TEMPLATES.md` is **0**, so the section itself does not exist yet.
+`open items: 0 | prepped slugs on origin/main: 1898 | items with NO spec on main: 0` (main `d09980172`, **3,335**
+spec folders before this one). So this design comes from `docs/catalog-coverage.md`, which lists **214 snippet
+variants in 19 families** that ColorLib's own listing carries and the checklist never recorded. The `pricing-table`
+family is **family 4** in that document's order; its first three variants are prepped (`ratecard` `6211c30be` — **and
+shipped while this prep ran**, PR #1941, bookkeeping `d09980172` — `tallyboard` `d7c78c0c0`, `parity` `5c1674c68`) and
+**this is the fourth**. `grep -c pricing-table TEMPLATES.md` is **1** line (the ratecard row) — the section only
+appeared with that shipment.
 
 Family census (probed 2026-11-11 under `theme/bootstrap/`): **01 4,254 B · 02 5,085 B · 03 25,337 B · 04 4,686 B ·
 06 4,550 B · 12 6,683 B** — all **HTTP 200**. This variant belongs to the **small-card-grid** branch of the family
@@ -70,20 +71,18 @@ from scratch.
 
 ## Where the row goes once this ships (the prep must not add it)
 
-`TEMPLATES.md` has **no** `## Bootstrap Pricing Tables` section. The `## Bootstrap*` sections are alphabetical:
-Accordions (639) · Alerts (663) · Buttons (668) · Calendars (692) · Carousels (715) · Cards (738) · Checkboxes (761) ·
-Dropdowns (784) · Footers (807) · Heroes (830) · Modals (845) · Multiselect (868) · **Wizards (891)**. The
-bookkeeping commit should open **`## Bootstrap Pricing Tables (12)` immediately before `## Bootstrap Wizards (30)`**
-(currently line **891**, i.e. after the Multiselect block ends at 890) and put the row in it, in the family's own row
-grammar (source · preview · app):
+`TEMPLATES.md` now **has** the section: `## Bootstrap Pricing Tables (12)` exists at line **891**, opened by
+`ratecard`'s shipment, with one row in it (**Pricing Table 01**, `ratecard`). `## Bootstrap Wizards (30)` moved to line
+**895**. The bookkeeping commit should **append this row after the Pricing Table 01 row** (variant order — do **not**
+create a second section), in the family's own row grammar (source · preview · app):
 
 ```
 - [x] **Pricing Table 04** — [colorlib](https://colorlib.com/wp/template/pricing-table-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-04.jpg) · [limelight](https://limelight.free.componentdock.com)
 ```
 
-If a sibling (`ratecard`, `tallyboard`, `parity`) ships first it will have created the section; then append this row in
-variant order instead of creating anything. Re-read `TEMPLATES.md` **after** the final `git pull --rebase` — a sibling's
-bookkeeping moved these line numbers in each of the last four prep runs.
+If `tallyboard` or `parity` ships first it will have added its own row above this one; re-read `TEMPLATES.md` **after**
+the final `git pull --rebase` — a sibling's bookkeeping moved these line numbers in each of the last five prep runs
+(`ratecard`'s merge landed mid-prep here and moved Wizards 891 → 895).
 
 ## Design tokens (read off `style.css`, 10,976 B, sha256 `0990c056…`)
 
@@ -623,6 +622,6 @@ The template SHALL end with the repo's standard footer strip linking `https://ww
       the dot, the three icons and the sparkle markers are `aria-hidden`/decorative; the flag is not part of a heading;
       three resolving CTAs (no `href="#"`)
 - [ ] footer strip links `https://www.componentdock.com/` as **Component Dock**
-- [ ] bookkeeping: `npm run readme:status`, then the `TEMPLATES.md` row under `## Bootstrap Pricing Tables (12)`
-      (create the section before `## Bootstrap Wizards (30)`, line **891**, if no sibling shipped first) and
-      `gh workflow run deploy-surge.yml -f app="limelight"`
+- [ ] bookkeeping: `npm run readme:status`, then **append** the `TEMPLATES.md` row under
+      `## Bootstrap Pricing Tables (12)` (line **891**, after the Pricing Table 01 row; `## Bootstrap Wizards (30)` is
+      at **895**) and `gh workflow run deploy-surge.yml -f app="limelight"`

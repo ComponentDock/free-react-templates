@@ -106,6 +106,7 @@ breaks. Build it top-down and assert rects as you go.
 - [ ] Component Dock footer strip as the last element, one link to `https://www.componentdock.com/`
 - [ ] `npm run verify:app limelight`; `openspec validate template-limelight --type spec`
 - [ ] `grep -riE 'colorlib|pricing-table-04|glitchcast' apps/limelight` → **0**
-- [ ] bookkeeping: `npm run readme:status`; `TEMPLATES.md` row **Pricing Table 04** under `## Bootstrap Pricing Tables
-      (12)` (create it before `## Bootstrap Wizards (30)`, line **891**, unless a sibling shipped first);
+- [ ] bookkeeping: `npm run readme:status`; **append** the `TEMPLATES.md` row **Pricing Table 04** under
+      `## Bootstrap Pricing Tables (12)` (line **891**, after the Pricing Table 01 row — the section exists now, opened
+      by `ratecard`'s shipment; `## Bootstrap Wizards (30)` is at **895**);
       `gh workflow run deploy-surge.yml -f app="limelight"`
