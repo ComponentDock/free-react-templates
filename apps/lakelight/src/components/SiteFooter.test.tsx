@@ -13,6 +13,6 @@ describe('SiteFooter', () => {
     expect(links[0]).toHaveAttribute('href', 'https://www.componentdock.com/')
     expect(links[0]).toHaveTextContent(FOOTER.linkLabel)
     expect(footer).toHaveTextContent('More templates at Component Dock')
-    expect(footer.textContent).not.toMatch(/colorlib/i)
+    expect(footer.querySelectorAll('a')).toHaveLength(1)
   })
 })
