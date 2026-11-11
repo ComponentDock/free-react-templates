@@ -585,3 +585,21 @@ The template SHALL carry a footer that names and links Component Dock, because t
       mentions ColorLib
 - [ ] contrast asserted in a test: ink 17.74, muted 7.56 / 7.05, accent 6.4 / 5.97, white-on-accent 6.4, tick 5.5,
       ghost border **3.49** (the fixed `#7f8a9c`)
+
+## Deltas recorded after the port shipped (2026-11-11)
+
+Every number in this spec reproduced to the hundredth in `apps/ratecard` except the four font-dependent widths listed
+above (amount 88.25, flag 130, description lines, footnote link 144) and one copy-length seam:
+
+1. **The footnote's wrap seam is 575, not 620.** The port's note is not the source's sentence (rule: copy shape, not
+   copy), and copy length alone decides the split. `Prices in USD, excluding sales tax. Annual billing saves 15%.`
+   plus the link measures **542 px** at 14 px, so the note takes two lines from **≤575** instead of the reference's
+   620. All four asserted ladder stops are unaffected (2023 at 640, 2060 at 560, 2082 at 480, 2257 at 320); only the
+   576…620 window differs, by one 21.69 px line. A 600 px sentence restored 620 but pushed 320 to 2278 (three lines),
+   and a 505 px sentence collapsed 560 to 2039 — 542 is the only width that satisfies both asserted stops.
+2. **The banned-copy grep is not literally 0 hits.** `grep -riE 'relaylane|every inbox|starter|growth|scale|…'`
+   matches 10 lines inside `apps/ratecard`, all of them the guard test's own banned-token list
+   (`src/data/site.test.ts`) plus `initial-scale` in the required viewport meta. No rendered copy carries them; the
+   test is the enforcement, and the grep is expected to find its subject.
+3. **`min-height: 48px` is preserved as-is**, including its deliberate break at 901 (price rows 417.33 / 418.33 /
+   397.92). It was not "fixed" with a `2lh` or a 44.94 px value.
