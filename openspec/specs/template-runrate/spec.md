@@ -63,22 +63,23 @@ describe the component (_pricing table_, _slider_, _calculator_), and it is **no
 `TEMPLATES.md` is fully `[x]` (**2,923** rows, 0 `- [ ]`, 0 `[~]`), so this item comes from the **catalogue-gap queue**
 in `docs/catalog-coverage.md`: 256 ColorLib-listed designs that the checklist never recorded — 42 stand-alone pages plus
 **214 snippet variants in 19 families**. The `pricing-table` family is **6 of 12** prepped after this run
-(`ratecard` 01 built, `tallyboard` 02 built, `parity` 03, `limelight` 04 and `prorata` 05 prepped and unbuilt), and only
-variants 01 and 02 have rows so far.
+(`ratecard` 01, `tallyboard` 02, `parity` 03 and `limelight` 04 **shipped** — `parity` and `limelight` landed while this
+prep ran — with `prorata` 05 and `runrate` 06 prepped and unbuilt), and variants 01–04 have rows.
 
 ## Where the row goes once this ships (the prep must not add it)
 
-The implementer appends the row under `## Bootstrap Pricing Tables (12)` (header at **line 891**, rows 01/02 at **893**
-and **894**, `## Bootstrap Wizards (30)` at **896** as of `cb462ce41`) — grammar `[colorlib] · ![preview] · [app]`,
-exactly as its two siblings:
+The implementer appends the row under `## Bootstrap Pricing Tables (12)` (header at **line 891**, rows 01–04 at **893**,
+**894**, **895** and **896**, `## Bootstrap Wizards (30)` at **898** as of `9dc996e10`'s rebase onto `fdfcd1627`) —
+grammar `[colorlib] · ![preview] · [app]`, exactly as its four siblings:
 
 ```
 - [x] **Pricing Table 06** — [colorlib](https://colorlib.com/wp/template/pricing-table-06/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-06.jpg) · [runrate](https://runrate.free.componentdock.com)
 ```
 
-Rows 03/04/05 are still absent (their preps carry the same instruction), so the row order is decided by **when each app
+Variant 05's row is still absent (its prep carries the same instruction), so the row order is decided by **when each app
 ships**, not by the variant number. Re-read `TEMPLATES.md` **after every rebase** — a sibling has landed mid-prep in each
-of the last eight runs.
+of the last nine runs (this one: `parity` and `limelight` both shipped between the first push and the rebase, which moved
+the Wizards header 896 → **898**).
 
 ## Design tokens (read off `style.css`, 10,930 B, sha256 `807b65ac…`)
 
@@ -803,5 +804,5 @@ The template SHALL NOT reproduce the reference's host-neutralising CSS, its dead
 - [ ] footer links `https://www.componentdock.com/` as **Component Dock**
 - [ ] `openspec validate template-runrate --type spec` → _is valid_
 - [ ] `grep -riE 'colorlib|pricing-table-06|parcelbase' apps/runrate` → **0**
-- [ ] bookkeeping: append the `TEMPLATES.md` row under `## Bootstrap Pricing Tables (12)` (after line 894), re-read the
-      file **after** the rebase, `npm run readme:status`, `gh workflow run deploy-surge.yml -f app="runrate"`
+- [ ] bookkeeping: append the `TEMPLATES.md` row under `## Bootstrap Pricing Tables (12)` (after line **896**), re-read
+      the file **after** the rebase, `npm run readme:status`, `gh workflow run deploy-surge.yml -f app="runrate"`

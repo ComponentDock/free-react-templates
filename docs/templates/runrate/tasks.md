@@ -176,6 +176,7 @@ and **copy-length** (five strings are length-tuned against the served face).
 - [ ] `npm run verify:app runrate`; `openspec validate template-runrate --type spec`
 - [ ] `grep -riE 'colorlib|pricing-table-06|parcelbase' apps/runrate` → **0**
 - [ ] bookkeeping: `npm run readme:status`; **append** the `TEMPLATES.md` row **Pricing Table 06** under
-      `## Bootstrap Pricing Tables (12)` (header line **891**, rows 01/02 at **893/894**, `## Bootstrap Wizards (30)` at
-      **896** as of `cb462ce41`) — grammar `[colorlib] · ![preview] · [app]`, and re-read the file **after** the rebase;
+      `## Bootstrap Pricing Tables (12)` (header line **891**, rows 01–04 at **893–896**, `## Bootstrap Wizards (30)` at
+      **898** as of the rebase onto `fdfcd1627`) — grammar `[colorlib] · ![preview] · [app]`, and re-read the file
+      **after** the rebase;
       `gh workflow run deploy-surge.yml -f app="runrate"`
