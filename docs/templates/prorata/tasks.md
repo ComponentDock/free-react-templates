@@ -157,5 +157,5 @@ two formatters, a 51-seat reflow). Build the pure functions first, then the layo
 - [ ] `npm run verify:app prorata`; `openspec validate template-prorata --type spec`
 - [ ] `grep -riE 'colorlib|pricing-table-05|inkpost' apps/prorata` → **0**
 - [ ] bookkeeping: `npm run readme:status`; **append** the `TEMPLATES.md` row **Pricing Table 05** under
-      `## Bootstrap Pricing Tables (12)` (line **891**, after the Pricing Table 01 row; `## Bootstrap Wizards (30)` is at
-      **895**); `gh workflow run deploy-surge.yml -f app="prorata"`
+      `## Bootstrap Pricing Tables (12)` (line **891**, after the Pricing Table 02 / `tallyboard` row at **894**;
+      `## Bootstrap Wizards (30)` is at **896** as of `20a394769`); `gh workflow run deploy-surge.yml -f app="prorata"`

@@ -66,9 +66,9 @@ seat), it does not describe the component (_pricing table_, _calculator_), and i
 **3,336** spec folders before this one). So this design comes from `docs/catalog-coverage.md`, which lists **214
 snippet variants in 19 families** the ColorLib listing carries and the checklist never recorded. The `pricing-table`
 family is **family 4** in that document's order; its first four variants are prepped (`ratecard` `6211c30be` — the only
-one **shipped**, PR #1941 / `d09980172` — `tallyboard` `d7c78c0c0`, `parity` `5c1674c68`, `limelight` `a79233b0b`) and
-**this is the fifth**. `grep -c pricing-table TEMPLATES.md` is **2** lines: the section header and the single ratecard
-row.
+one **shipped**, PR #1941 / `d09980172` — `tallyboard` `d7c78c0c0` — **shipped while this prep ran**, bookkeeping `2b26a41eb`, PR-merged row at line **894** —
+`parity` `5c1674c68`, `limelight` `a79233b0b`) and **this is the fifth**. `grep -c pricing-table TEMPLATES.md` is **3**
+lines: the section header and the two shipped rows (ratecard, tallyboard).
 
 Family census (probed 2026-11-11 under `theme/bootstrap/`, all **HTTP 200**): **01 4,254 B · 02 5,085 B · 03 25,337 B ·
 04 4,686 B · 05 3,631 B · 06 4,550 B · 07 5,648 B · 08 19,821 B · 09 5,510 B · 10 5,484 B · 11 5,422 B · 12 6,683 B**.
@@ -80,17 +80,19 @@ billing switch, no `<form>` submission and **no imagery**. Read each variant's D
 ## Where the row goes once this ships (the prep must not add it)
 
 `TEMPLATES.md` **has** the section: `## Bootstrap Pricing Tables (12)` at line **891**, opened by `ratecard`'s
-shipment, with exactly one row in it (**Pricing Table 01**, `ratecard`). `## Bootstrap Wizards (30)` is at line **895**.
-The bookkeeping commit should **append this row after the Pricing Table 01 row** (variant order — do **not** create a
-second section), in the family's own row grammar (source · preview · app):
+shipment, with **two** rows in it — **Pricing Table 01** (`ratecard`, line **893**) and **Pricing Table 02**
+(`tallyboard`, line **894**; it shipped while this prep was running, bookkeeping `2b26a41eb` + tasks tick `20a394769`,
+so the rebase landed its row and moved `## Bootstrap Wizards (30)` from 895 to **896**). The bookkeeping commit should
+**append this row after the Pricing Table 02 row** (variant order — do **not** create a second section), in the
+family's own row grammar (source · preview · app):
 
 ```
 - [x] **Pricing Table 05** — [colorlib](https://colorlib.com/wp/template/pricing-table-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-05.jpg) · [prorata](https://prorata.free.componentdock.com)
 ```
 
-If `tallyboard`, `parity` or `limelight` ships first it will have added its own row above this one; re-read
-`TEMPLATES.md` **after** the final `git pull --rebase` — a sibling's bookkeeping moved these line numbers in each of the
-last six prep runs (`ratecard`'s merge moved Wizards 891 → 895 mid-prep).
+If `parity` or `limelight` ships first it will add its own row above this one; re-read `TEMPLATES.md` **after** the
+final `git pull --rebase` — a sibling's bookkeeping moved these line numbers in each of the last seven prep runs
+(`ratecard` moved Wizards 891 → 895, `tallyboard` moved them 895 → 896, both mid-prep).
 
 ## Design tokens (read off `style.css`, 13,491 B, sha256 `3e8ea994…`)
 
@@ -753,10 +755,10 @@ The template SHALL ship exactly three transitions and **zero** keyframes, and SH
 - [ ] structure: **1** `h1`, **1** `h2`, **1** `form`, **1** `ul` (6 `li`), **1** `ol` (3 `li`), **2** `input`
       (number + range), **1** `output`, **2** `a`, **0** `img` / `svg` / `button` / `script` in the port's own sections
 - [ ] arithmetic: `1 → $12 · 2 → $24 · 9 → $108 · 10 → $120 · 11 → $130 · 12 → $140 · 13 → $150 · 30 → $320 ·
-  50 → $520 · 51 → $528 · 60 → $600 · 100 → $920 · 150 → $1,320 · 199 → $1,712 · 200 → $1,720`, averages
+50 → $520 · 51 → $528 · 60 → $600 · 100 → $920 · 150 → $1,320 · 199 → $1,712 · 200 → $1,720`, averages
       `$11.67` / `$10.00` / `$8.60`, `$1,720` grouped, `--fill` `0% … 100%`
 - [ ] chip states: 1 seat → `used current / – / –`; 12 → `used / used current / –`; 51 and 200 → `used / used /
-  used current`; ink fill `#0c0a09`, used fill `#f5f5f4`, suffix `#d6d3d1` on the current chip
+used current`; ink fill `#0c0a09`, used fill `#f5f5f4`, suffix `#d6d3d1` on the current chip
 - [ ] reflow: at 51 seats the detail is **44.78**, the card **638.73**, the CTA y **617.34** and the info column y
       **211.41**, with the document still **900**
 - [ ] height ladder (document / content; **+ the port footer**): 1440 **900 / 836.34** · 1360 **900 / 833.94** ·
@@ -785,5 +787,6 @@ The template SHALL ship exactly three transitions and **zero** keyframes, and SH
       anchors (no `href="#"`)
 - [ ] footer strip links `https://www.componentdock.com/` as **Component Dock**
 - [ ] bookkeeping: `npm run readme:status`, then **append** the `TEMPLATES.md` row under
-      `## Bootstrap Pricing Tables (12)` (line **891**, after the Pricing Table 01 row; `## Bootstrap Wizards (30)` is
-      at **895**) and `gh workflow run deploy-surge.yml -f app="prorata"`
+      `## Bootstrap Pricing Tables (12)` (line **891**, after the Pricing Table 02 / `tallyboard` row at **894** —
+      re-read the file first, `## Bootstrap Wizards (30)` sits at **896** as of `20a394769`) and
+      `gh workflow run deploy-surge.yml -f app="prorata"`
