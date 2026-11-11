@@ -57,7 +57,7 @@ for the third time in a third shape.
 
 ## Why this design has no row in `TEMPLATES.md` (catalogue gap, measured 2026-11-11)
 
-`TEMPLATES.md` is fully `[x]` — **0** `- [ ]` and **0** `[~]` rows, **2,920** `[x]` rows — and
+`TEMPLATES.md` is fully `[x]` — **0** `- [ ]` and **0** `[~]` rows, **2,921** `[x]` rows — and
 `python3 ~/.hermes/skills/automation/componentdock-prep-stream/scripts/find-next-unprepped.py` reports
 `open items: 0 | prepped slugs on origin/main: 1896 | items with NO spec on main: 0` (main `d7c78c0c0`, **3,334**
 spec folders). So this design comes from `docs/catalog-coverage.md`, which lists **214 snippet variants in 19
@@ -77,7 +77,7 @@ that item prepped.
 
 `TEMPLATES.md` has **no** `## Bootstrap Pricing Tables` section yet — `grep -c 'Bootstrap Pricing Tables'
 TEMPLATES.md` is **0** — because neither of the two prepped variants has shipped. `## Bootstrap Wizards (30)` is
-**line 890** at `d7c78c0c0`. The bookkeeping commit should either **append to** `## Bootstrap Pricing Tables (12)` if
+**line 891** at `04511c2cc` (890 at `d7c78c0c0` — a sibling's bookkeeping landed one row mid-prep). The bookkeeping commit should either **append to** `## Bootstrap Pricing Tables (12)` if
 an implementer opened it first, or **create it immediately before `## Bootstrap Wizards (30)`** and add all three rows.
 Row grammar verified against the file (`[colorlib] · ![preview] · [app]`):
 
@@ -642,5 +642,5 @@ the reference has no footer at all and the repo's rule 5 requires one.
       CTAs (no `href="#"`); a mobile CTA path that exists
 - [ ] footer strip links `https://www.componentdock.com/`; no app file mentions ColorLib, Tallyboard or the slug
 - [ ] bookkeeping: `npm run readme:status`, then the `TEMPLATES.md` row under `## Bootstrap Pricing Tables (12)`
-      (create the section before `## Bootstrap Wizards (30)`, line 890, if no sibling shipped first) and
+      (create the section before `## Bootstrap Wizards (30)`, line 891, if no sibling shipped first) and
       `gh workflow run deploy-surge.yml -f app="parity"`
