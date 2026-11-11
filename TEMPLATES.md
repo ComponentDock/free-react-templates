@@ -894,7 +894,7 @@
 - [x] **Pricing Table 02** — [colorlib](https://colorlib.com/wp/template/pricing-table-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-02.jpg) · [tallyboard](https://free-react-templates-tallyboard.surge.sh)
 - [x] **Pricing Table 03** — [colorlib](https://colorlib.com/wp/template/pricing-table-03/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-03.jpg) · [parity](https://parity.free.componentdock.com)
 - [x] **Pricing Table 04** — [colorlib](https://colorlib.com/wp/template/pricing-table-04/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-04.jpg) · [limelight](https://limelight.free.componentdock.com)
-- [~] **Pricing Table 05** — [colorlib](https://colorlib.com/wp/template/pricing-table-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-05.jpg) · [prorata](https://prorata.free.componentdock.com)
+- [x] **Pricing Table 05** — [colorlib](https://colorlib.com/wp/template/pricing-table-05/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-05.jpg) · [prorata](https://prorata.free.componentdock.com)
 
 ## Bootstrap Wizards (30)
 
