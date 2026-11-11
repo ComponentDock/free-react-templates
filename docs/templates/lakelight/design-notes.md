@@ -271,3 +271,12 @@ What makes 12 different from its siblings, in one line each:
     Do not add a reveal animation to "match the family" — this variant has none.
 16. **The URL ladder**: `theme/hero-12/` 404s; only `theme/bootstrap/hero-12/` is live. Never write "preview
     unreachable" off the slug-only probe.
+
+## Implementation run (2026-11-11)
+
+The shipped app is `apps/lakelight` (PR: feat: Lakelight — holiday-rental lake hero). It reproduced the
+**live** preview's 1440 × 900 geometry exactly — bar 1320 × 86.8, hero 1320 × 663.81 at (60, 161.48),
+copy 548.56 × 538.11, `h1` 548.56 × 255.33 in three lines, media 603.44 × 538.11, panel 1137.61 × 93.7 at
+(194.39, 667.59) — after re-measuring the preview, which showed a **two-line** sub (60.47) where this
+folder's notes recorded three lines. The full table of deltas, the copy-driven widths and the five
+deliberate divergences live in `openspec/specs/template-lakelight/spec.md` → "Port notes".

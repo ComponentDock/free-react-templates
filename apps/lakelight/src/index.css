@@ -1,0 +1,624 @@
+@import 'tailwindcss';
+
+/* Lakelight's palette is five tokens on warm paper — a sand ground, an ink, a
+   muted grey-green, a lake teal and one warm orange — plus a hairline for the
+   field separators and the three field states. Every radius on the page comes
+   out of that list: 999 for the Log in pill, 120 for the photograph's
+   bottom-left corner, 32/24/18/16/12/10 for everything else. Urbanist is the
+   only webfont, loaded once in index.html across 400–800 with its italic axis
+   (the accent word is a real slanted cut, not a synthesis). */
+@theme {
+  --color-sand: #f7efe3;
+  --color-ink: #102a27;
+  --color-muted: #4b5f5b;
+  --color-teal: #0e5c55;
+  --color-orange: #e0703a;
+  --color-line: #e4d8c6;
+  --color-field: #f8f3ea;
+  --color-field-hover: #faf6ef;
+  --color-field-focus: #f1f8f6;
+  --color-on-orange: #1c0d04;
+  --color-submit-hover: #f08a55;
+  /* Both of these are darker than the reference on purpose: its placeholder
+     sits under 4.5 : 1 on the field grounds and its focus ring under 3 : 1 on
+     the sand, so the port keeps the hue and fixes the ratio. */
+  --color-placeholder: #566258;
+  --color-ring: #b4551f;
+
+  --font-sans:
+    'Urbanist', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* The two fluid clamps. The headline is 89.6 px from vw 1440 and bottoms out
+     at 43.2 px; the paragraph is 19.52 px from vw 736. */
+  --text-title: clamp(2.7rem, 1.3rem + 5vw, 5.6rem);
+  --text-sub: clamp(1.05rem, 1rem + 0.3vw, 1.22rem);
+}
+
+@layer base {
+  :root {
+    /* One gutter for the bar and the hero: 48 at 1200 and above, 16 at 400. */
+    --gutter: clamp(16px, 4vw, 48px);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-sand);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* The shell is a 100vh-floored flex column holding the bar and one hero.
+     The footer is deliberately a sibling of it, so the document grows by the
+     footer's height instead of taking the space out of `main`. */
+  .lk-shell {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--color-sand);
+    color: var(--color-ink);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .lk-shell *,
+  .lk-shell *::before,
+  .lk-shell *::after,
+  .lk-footer *,
+  .lk-footer *::before,
+  .lk-footer *::after {
+    box-sizing: border-box;
+  }
+
+  .lk-shell a,
+  .lk-footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .lk-shell ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .lk-shell a:focus-visible,
+  .lk-shell button:focus-visible,
+  .lk-footer a:focus-visible {
+    outline: 3px solid var(--color-ring);
+    outline-offset: 3px;
+  }
+
+  .lk-bar {
+    position: relative;
+    z-index: 5;
+  }
+
+  .lk-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 20px var(--gutter);
+  }
+
+  .lk-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+  }
+
+  /* The glyph tile: a rounded teal square with the sand ridge inside it. */
+  .lk-logo-mark {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    background: var(--color-teal);
+    color: var(--color-sand);
+  }
+
+  .lk-nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .lk-links {
+    display: flex;
+    gap: 4px;
+  }
+
+  .lk-link {
+    display: block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: var(--color-muted);
+    font-size: 16px;
+    font-weight: 600;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .lk-link:hover {
+    background: rgb(16 42 39 / 0.06);
+    color: var(--color-ink);
+  }
+
+  .lk-link[aria-current='page'] {
+    color: var(--color-teal);
+  }
+
+  .lk-login {
+    padding: 10px 20px;
+    border: 1px solid var(--color-ink);
+    border-radius: 999px;
+    font-weight: 700;
+    transition:
+      background-color 0.2s,
+      color 0.2s;
+  }
+
+  .lk-login:hover {
+    background: var(--color-ink);
+    color: var(--color-sand);
+  }
+
+  .lk-menu-btn {
+    display: none;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid var(--color-ink);
+    border-radius: 12px;
+    background: transparent;
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  .lk-main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  .lk-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    grid-template-areas:
+      'copy media'
+      'search search';
+    column-gap: clamp(32px, 5vw, 72px);
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: clamp(16px, 3vw, 32px) var(--gutter) clamp(40px, 5vw, 64px);
+  }
+
+  .lk-copy {
+    grid-area: copy;
+    align-self: center;
+    padding-bottom: 72px;
+  }
+
+  .lk-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    color: var(--color-teal);
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .lk-eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 2px;
+    background: var(--color-orange);
+  }
+
+  .lk-title {
+    margin: 16px 0 18px;
+    font-family: var(--font-sans);
+    font-size: var(--text-title);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+  }
+
+  .lk-title em {
+    color: var(--color-teal);
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  .lk-sub {
+    max-width: 30em;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: var(--text-sub);
+  }
+
+  /* Two classes, not one: the list reset above is a class plus an element and
+     would otherwise win the `margin-top` — the same specificity artefact the
+     reference papers over with `!important`. */
+  .lk-shell .lk-proof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 26px;
+    margin-top: 26px;
+    color: var(--color-muted);
+    font-size: 15px;
+  }
+
+  .lk-proof strong {
+    color: var(--color-ink);
+    font-size: 17px;
+  }
+
+  .lk-media {
+    grid-area: media;
+    position: relative;
+    margin: 0;
+  }
+
+  /* The frame is taller than the photograph whenever the copy column is taller
+     than 58vh, so the card is anchored to the figure — exactly as in the
+     reference, where the panel's negative margin covers the difference. */
+  .lk-photo {
+    display: block;
+    width: 100%;
+    height: clamp(380px, 58vh, 600px);
+    border-radius: 32px 32px 32px 120px;
+    object-fit: cover;
+  }
+
+  .lk-card {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    display: grid;
+    gap: 2px;
+    min-width: 230px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgb(255 255 255 / 0.95);
+    box-shadow: 0 16px 36px -16px rgb(16 42 39 / 0.45);
+    font-size: 14px;
+  }
+
+  .lk-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 15.5px;
+    font-weight: 700;
+  }
+
+  .lk-card-rating {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  .lk-card-place {
+    color: var(--color-muted);
+  }
+
+  .lk-card-price {
+    margin-top: 4px;
+  }
+
+  .lk-card-price strong {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .lk-search {
+    grid-area: search;
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr auto;
+    align-items: stretch;
+    margin: -64px 0 0 clamp(0px, 6vw, 96px);
+    padding: 10px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow:
+      0 30px 60px -30px rgb(16 42 39 / 0.45),
+      0 0 0 1px rgb(16 42 39 / 0.06);
+  }
+
+  .lk-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: 10px 18px;
+    border-radius: 16px;
+    transition: background-color 0.2s;
+  }
+
+  .lk-field + .lk-field::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 20%;
+    width: 1px;
+    background: var(--color-line);
+  }
+
+  .lk-field:hover::before,
+  .lk-field:focus-within::before,
+  .lk-field:hover + .lk-field::before,
+  .lk-field:focus-within + .lk-field::before {
+    opacity: 0;
+  }
+
+  .lk-field:hover {
+    background: var(--color-field-hover);
+  }
+
+  .lk-field:focus-within {
+    background: var(--color-field-focus);
+    box-shadow: inset 0 0 0 2px var(--color-teal);
+  }
+
+  .lk-label {
+    color: var(--color-ink);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .lk-input {
+    width: 100%;
+    min-width: 0;
+    margin-top: 2px;
+    padding: 2px 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-ink);
+    font: inherit;
+    font-size: 16.5px;
+    font-weight: 500;
+  }
+
+  /* The reference reverts the native date editor's own padding, which makes the
+     two date controls one pixel taller at each end than the text inputs. */
+  .lk-input[type='date'] {
+    padding: 3px 0;
+  }
+
+  .lk-input::placeholder {
+    color: var(--color-placeholder);
+    opacity: 1;
+  }
+
+  .lk-input:focus {
+    outline: none;
+  }
+
+  .lk-select {
+    appearance: none;
+    padding-right: 20px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23102a27' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E")
+      right center / 14px no-repeat;
+    cursor: pointer;
+  }
+
+  .lk-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 64px;
+    margin-left: 8px;
+    padding: 0 30px;
+    border: 0;
+    border-radius: 18px;
+    background: var(--color-orange);
+    color: var(--color-on-orange);
+    font: inherit;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    transition:
+      background-color 0.2s,
+      transform 0.15s;
+  }
+
+  .lk-submit:hover {
+    background: var(--color-submit-hover);
+  }
+
+  .lk-submit:active {
+    transform: scale(0.98);
+  }
+
+  .lk-status {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0 18px;
+    color: var(--color-teal);
+    font-weight: 600;
+  }
+
+  .lk-status:not(:empty) {
+    padding: 10px 18px 6px;
+  }
+
+  .lk-footer {
+    display: flex;
+    justify-content: center;
+    padding: 14px var(--gutter) 16px;
+    color: var(--color-muted);
+    font-size: 13px;
+  }
+
+  .lk-footer p {
+    margin: 0;
+  }
+
+  .lk-footer a {
+    color: var(--color-ink);
+    font-weight: 600;
+  }
+
+  @media (max-width: 1080px) {
+    .lk-search {
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      margin-left: 0;
+    }
+
+    .lk-field {
+      background: var(--color-field);
+    }
+
+    .lk-field + .lk-field::before {
+      display: none;
+    }
+
+    .lk-submit {
+      grid-column: 1 / -1;
+      margin: 2px 0 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .lk-hero {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'copy'
+        'media'
+        'search';
+    }
+
+    .lk-copy {
+      padding-bottom: 28px;
+    }
+
+    .lk-photo {
+      height: 360px;
+      border-radius: 28px 28px 28px 80px;
+    }
+
+    .lk-search {
+      margin: -48px 12px 0;
+    }
+  }
+
+  @media (max-width: 860px) {
+    .lk-menu-btn {
+      display: grid;
+    }
+
+    .lk-nav {
+      position: absolute;
+      top: calc(100% - 4px);
+      left: var(--gutter);
+      right: var(--gutter);
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+      padding: 12px;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 24px 48px -18px rgb(16 42 39 / 0.4);
+    }
+
+    .lk-bar.is-open .lk-nav {
+      display: flex;
+    }
+
+    .lk-links {
+      flex-direction: column;
+    }
+
+    .lk-link {
+      padding: 12px;
+      font-size: 18px;
+    }
+
+    .lk-login {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .lk-photo {
+      height: 300px;
+      border-radius: 24px 24px 24px 64px;
+    }
+
+    .lk-card {
+      top: 14px;
+      right: 14px;
+      left: 14px;
+      min-width: 0;
+      padding: 12px 14px;
+    }
+
+    .lk-search {
+      grid-template-columns: 1fr 1fr;
+      margin: -40px 0 0;
+      padding: 8px;
+      border-radius: 22px;
+    }
+
+    .lk-field--where,
+    .lk-field--guests {
+      grid-column: 1 / -1;
+    }
+
+    .lk-field {
+      padding: 10px 12px;
+    }
+
+    .lk-input {
+      font-size: 16px;
+    }
+
+    .lk-submit {
+      min-height: 56px;
+    }
+
+    .lk-proof {
+      gap: 6px 18px;
+      font-size: 14px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .lk-shell *,
+    .lk-shell *::before,
+    .lk-shell *::after,
+    .lk-footer *,
+    .lk-footer *::before,
+    .lk-footer *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
