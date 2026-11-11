@@ -252,3 +252,46 @@ own `--fill`) and do **not** reuse its contrast token (`#8f877f` was measured ag
 `seatmeter`, `seatwise`, `seatline`, `tariffwise`, `gradus`, `scalewise`, `benchcount`, `seatcount`, `rampway`,
 `slideline`, `calcseat`, `seatprice` (from the `prorata` run) plus `meterage`, `metron`, `usagemeter` — but re-grep
 `origin/main` before using any of them.
+
+## Build log — measured on the shipped app (2026-11-11)
+
+Built as `apps/runrate` (72 tests, 100 % lines / branches / functions / statements). Served from `dist` over
+`python3 -m http.server` and measured in Chromium at 1440 → 320 with `document.fonts.ready` — the Google face
+(`css2?family=DM+Sans:wght@400;600;700`) is what these numbers were read with, so they are comparable with the spec's
+replica, not with the archive's variable cut.
+
+| vw   | document | main (wrapper) | section | panel  | bill   | support row | fine print | ref section |
+| ---: | -------: | -------------: | ------: | -----: | -----: | ----------: | ---------: | ----------: |
+| 1440 |  **903** |         859.19 |  667.19 | 441.81 | 484.25 |       77.38 |      38.75 |      667.19 |
+| 1024 |  **900** |         806.58 |  663.23 | 441.81 | 481.31 |       77.38 |      38.75 |      663.23 |
+|  861 |  **900** |         783.09 |  662.56 | 434.69 | 488.38 |       77.38 |      58.13 |      662.56 |
+|  860 | **1225** |        1180.92 | 1060.55 | 412.91 | 449.52 |       55.69 |      19.38 |     1060.55 |
+|  768 | **1193** |        1148.86 | 1041.36 | 405.56 | 442.03 |       55.69 |      19.38 |     1041.36 |
+|  600 | **1183** |        1139.13 | 1055.13 | 413.81 | 451.66 |       77.38 |      38.75 |     1055.13 |
+|  520 | **1175** |        1131.13 | 1051.13 | 409.81 | 451.66 |       77.38 |      38.75 |     1051.13 |
+|  480 | **1233** |        1189.08 | 1109.08 | 409.81 | 451.66 |       77.38 |      38.75 |     1109.08 |
+|  414 | **1254** |        1210.00 | 1130.00 | 430.73 | 451.66 |       77.38 |      38.75 |     1130.00 |
+|  375 | **1276** |        1231.69 | 1151.69 | 452.42 | 451.66 |       99.06 |      38.75 |     1151.69 |
+|  360 | **1321** |        1276.63 | 1196.63 | 452.42 | 471.03 |       99.06 |      58.13 |     1171.06 |
+|  320 | **1342** |        1276.63 | 1218.31 | 474.11 | 471.03 |      120.75 |      58.13 |     1218.31 |
+
+Every document height is the reference's own **plus 44.14** for the Component Dock strip (spec §10.10). Eleven of the
+twelve widths reproduce the reference section, panel and bill to the hundredth; `scrollX = 0` and
+`scrollWidth === clientWidth` at all twelve.
+
+**The two predicted deltas are gone.** The support row's copy was one word short in the served face — the prescribed
+string measured 473.13 in a 473.13 box, i.e. it fitted by 0 px and collapsed to one line (panel 420.13). Adding `team`
+(to 508) restores the reference's two-line row (77.38) and, with it, the reference's panel heights at 1440 (441.81),
+861 (434.69), 414 (**430.73**, the old delta 2) and 320 (**474.11**, the old delta 1). The spec's copy table and its
+"tightest fit" paragraph were corrected to match.
+
+**The one remaining delta is at 360** — the lede takes a fourth line there (head 209.17 vs the reference's 183.61, so the
+document is 1321 vs 1295 + footer), because the served face's 3→4 wrap seam sits at ~365 rather than the reference's
+~340. It is a font-metric seam, the same class as the two the spec already records; the copy was not tuned further.
+
+Arithmetic and interaction, read in the browser: the calls ladder prints
+`$30.40 · $30.40 · $31.90 · $34.40 · $39.40 · $54.40 · $79.40 · $129.40 · $279.40 · $529.40 · $1,029.40`, the storage ladder
+`$34.00 · $34.00 · $34.60 · $36.40 · $39.40 · $45.40 · $63.40 · $93.40 · $153.40 · $273.40 · $633.40 · $1,233.40`, the
+corners `$25.00` / `$2,372.40` / `$1,173.00` / `$1,373.40` / `$332.40`, `ArrowRight` moves exactly one stop (1M → 2.5M)
+and fires `input`, and the status node speaks `Estimated total $39.40 per month.` once the dragging stops. Segment
+widths at the defaults are **249.92 / 89.97 / 53.98 / 0** from `flex-grow` 25 / 9 / 5.4 / 0.
