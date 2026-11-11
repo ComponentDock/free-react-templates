@@ -888,6 +888,10 @@
 - [x] **Multiselect 19** — [colorlib](https://colorlib.com/wp/template/multiselect-19/) · [multibox](https://multibox.free.componentdock.com) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-19.jpg)
 - [x] **Multiselect 20** — [colorlib](https://colorlib.com/wp/template/multiselect-20/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/multiselect-20.jpg) · [optflow](https://optflow.free.componentdock.com)
 
+## Bootstrap Pricing Tables (12)
+
+- [~] **Pricing Table 01** — [colorlib](https://colorlib.com/wp/template/pricing-table-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-01.jpg) · [ratecard](https://ratecard.free.componentdock.com)
+
 ## Bootstrap Wizards (30)
 
 - [x] **Colorlib Wizard 1** — [colorlib](https://colorlib.com/wp/template/colorlib-wizard-1/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/colorlib-free-wizard-1.jpg) · [conjure](https://conjure.free.componentdock.com)
