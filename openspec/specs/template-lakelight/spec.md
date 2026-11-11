@@ -687,3 +687,58 @@ The template SHALL carry a footer that names and links Component Dock, because t
 - [ ] `prefers-reduced-motion: reduce` → all transitions `0s`, no `@keyframes` anywhere in the app
 - [ ] every anchor resolves (no `href="#"`), the footer links `https://www.componentdock.com/`, and no app file
       mentions ColorLib
+
+## Port notes — measured deltas against this spec (implementation run, 2026-11-11)
+
+The build re-measured the **live preview** (`preview.colorlib.com/theme/bootstrap/hero-12/`, HTTP 200) in
+Chromium at 1440 × 900 with `document.fonts.ready`, and the live page disagreed with this spec in four
+places. The live page is the reference, so the port follows it; the spec's earlier numbers are kept above
+for history.
+
+| Reading | This spec | Live preview, re-measured | Port |
+| --- | --- | --- | --- |
+| sub | **90.7** tall, **3** lines (538 / 515 / 30) | **60.47**, **2** lines | **60.47**, 2 lines |
+| copy | **568.34** | **538.11** | **538.11** |
+| hero | 1320 × **694.05** at (60, **146.38**) | 1320 × **663.81** at (60, **161.48**) | identical to live |
+| submit | **147.02** × 73.7 | **144.03** × 73.7 | **144.03** × 73.7 |
+| card | **257.91** × 109.59 at (1046.09, 206.38) | **243.28** at (1060.72, 221.48) | **250.45** at (1053.55, 221.48) |
+| fields | 320.86 / 213.92 / 213.91 / 213.91 | 321.86 / 214.58 / 214.58 / 214.56 | identical to live |
+
+Everything else reproduced exactly against the live page: bar **1320 × 86.8** at (60, 0) with
+`padding: 20px 48px` and `gap: 36`, `main` **813.2**, `h1` **548.56 × 255.33** at (108, 237.11) in **3**
+lines at **89.6 / 85.12** with `letter-spacing: -4.032px`, proof **548.56 × 62.69** in **2** rows at
+(108, 596.91) with `margin-top: 26`, media **603.44 × 538.11**, photograph **603.44 × 522** with radius
+**32 32 32 120**, search panel **1137.61 × 93.7** at (194.39, 667.59) with `margin: -64px 0 0 86.4px`, and
+the submit **144.03 × 73.7**.
+
+Copy-driven widths (the only deltas that are not geometry bugs):
+
+- **eyebrow 278.7** vs 238.84 — `Hand-picked cabins in the Pyrenees` is 40 px longer than the source's line;
+  the shape and the 28 × 2 orange rule are unchanged.
+- **logo 124.59** vs 116.45 — the new wordmark is one syllable longer.
+- **link row 401.88** vs 401.88 at rest; the four links measure 67.77 / 114.02 / 77.5 / 130.59 (the spec's
+  per-link figures included the 4 px `gap`, which is why they read 72 / 119 / 82 / 138).
+- **document 950** at 1440 × 900 — **900 shell + 50.14 footer**. The footer is a sibling of the `100vh`
+  shell, so the hero keeps the reference's offset and only the document grows (the accepted delta from
+  "The Component Dock footer").
+
+Fidelity ladders, port vs live: `h1` **3** lines at 1440 (3), **1** at 900 / 860 / 736 (1), **2** at 520 and
+390 (2), **2** at 320 where the reference reads 3; shell height **984.64** at 900 (985), **976.33** at 860
+(976), **962.56** at 736 (963), **1053.02** at 390 (1049), **1114.59** at 320 (1148); **1034.47** at 520
+(1058) because the two-line sub gives back one 30.26 line there. `scrollWidth === clientWidth` and
+`scrollX = 0` at every width measured.
+
+Divergences that are deliberate:
+
+1. **The photograph is a seeded placeholder** — `picsum.photos/seed/alpine/900/960` (a jetty over water)
+   rather than `seed/lakelight-1`, whose crop read as forest floor under a lake caption.
+2. **The date controls are 1 px taller at each end** (`padding: 3px 0` on `input[type=date]`) — the
+   reference reaches the same 31.56 px by reverting the native date editor's own padding; without it the
+   field measures 71.7 instead of 73.7 and the panel 91.7 instead of 93.7.
+3. **Nav links paint their intended hierarchy** (muted at rest) instead of the reference's specificity
+   accident that renders all three ink, as the spec requires.
+4. **Focus ring `#b4551f`, placeholder `#566258`** — both pass (5.5 : 1 and 6.5 : 1 on the sand and on
+   white) and both are asserted by `src/contrast.test.ts`, which reads the tokens out of `index.css`.
+5. **The status line always describes the current attempt**: `noValidate` on the form, `Choose a
+   destination.` / `Check out has to be after check in.` replacing a previous sentence, `role="status"`
+   kept.
