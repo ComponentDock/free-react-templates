@@ -1,0 +1,816 @@
+@import 'tailwindcss';
+
+/* Alpenglow's palette is four tokens plus the scene's own stops: a night
+   ground, a white ink, a cool soft grey and one amber accent, with a red dot as
+   the only fifth colour. Every radius on the page comes from that list — a full
+   circle for the discs and the pill, 20 for the dialog and the dropdown, 12 for
+   the control bar, 4 for the inline code sample. Figtree is the only webfont,
+   loaded once in index.html at 400–800. */
+@theme {
+  --color-night: #0f1426;
+  --color-ink: #fff;
+  --color-soft: #dfe3f1;
+  --color-amber: #ffb86b;
+  --color-live: #ff5d5d;
+  --color-hairline: rgb(255 255 255 / 0.22);
+  --color-sky-1: #1a2150;
+  --color-sky-2: #43377a;
+  --color-sky-3: #b95d8a;
+  --color-sky-4: #f59a6c;
+  --color-sky-5: #ffd48e;
+  --color-range-far: #6d3f78;
+  --color-range-mid: #392d5c;
+  --color-range-near: #161b33;
+  --color-dialog: #0b0f1f;
+
+  --font-sans:
+    'Figtree', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* The two fluid clamps; no Tailwind step expresses either. The headline is
+     99.2 px from vw 1400 and 44.8 px at 320; the paragraph is 19.2 px from 736. */
+  --text-title: clamp(2.8rem, 1.3rem + 5.6vw, 6.2rem);
+  --text-sub: clamp(1.02rem, 0.98rem + 0.3vw, 1.2rem);
+}
+
+@layer base {
+  :root {
+    /* One gutter for the bar, the main column and the dropdown's edges:
+       48 at 1200 and above, 16 at 400 and below. */
+    --gutter: clamp(16px, 4vw, 48px);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-night);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* `min-height: 100vh` plus `overflow: hidden` is what turns the sun into light
+     spilling off the bottom edge instead of a disc that stretches the page. */
+  .ap-shell {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--color-night);
+    color: var(--color-ink);
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .ap-shell *,
+  .ap-shell *::before,
+  .ap-shell *::after {
+    box-sizing: border-box;
+  }
+
+  /* `:where()` keeps the resets at zero specificity, so a component rule always
+     paints its own colour: a bare `a { color: inherit }` would out-specify the
+     resting nav colour and repaint every link white. */
+  :where(.ap-shell) :where(a) {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  :where(.ap-shell) :where(ul) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  :where(.ap-shell) :where(p, h1, h2) {
+    margin: 0;
+  }
+
+  .ap-shell a:focus-visible,
+  .ap-shell button:focus-visible {
+    outline: 3px solid var(--color-amber);
+    outline-offset: 3px;
+  }
+
+  /* ---- the drawn landscape ----------------------------------------------- */
+
+  /* Seven absolutely positioned spans: sky, stars, sun, three ridges, grain.
+     The scene is `aria-hidden` and takes no pointer events, so nothing in it
+     can be tabbed to or read out. */
+  .ap-scene {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .ap-scene > span {
+    position: absolute;
+  }
+
+  /* Five stops on a 160 %-tall canvas, panned slowly: the sky is the only layer
+     whose movement is visible at rest. */
+  .ap-sky {
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      var(--color-sky-1) 0%,
+      var(--color-sky-2) 30%,
+      var(--color-sky-3) 55%,
+      var(--color-sky-4) 75%,
+      var(--color-sky-5) 100%
+    );
+    background-size: 100% 160%;
+    animation: ap-sky 16s ease-in-out infinite alternate;
+  }
+
+  @keyframes ap-sky {
+    to {
+      background-position: 0 100%;
+    }
+  }
+
+  .ap-stars {
+    inset: 0 0 45% 0;
+    background-image:
+      radial-gradient(1.5px 1.5px at 12% 20%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 46% 30%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 63% 12%, #fff 50%, transparent 51%),
+      radial-gradient(1.5px 1.5px at 81% 24%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 92% 6%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 5% 40%, #fff 50%, transparent 51%),
+      radial-gradient(1.2px 1.2px at 71% 42%, #fff 50%, transparent 51%);
+    opacity: 0.7;
+    animation: ap-twinkle 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes ap-twinkle {
+    to {
+      opacity: 0.3;
+    }
+  }
+
+  /* 34vmin, so the sun is sized by the shorter edge and never becomes a band on
+     a wide window. Its drift is 12 % of its own height. */
+  .ap-sun {
+    left: 62%;
+    bottom: 22%;
+    width: 34vmin;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      #fff0c2 0 30%,
+      #ffd08a 31%,
+      rgb(255 190 120 / 0.5) 40%,
+      rgb(255 160 120 / 0) 70%
+    );
+    animation: ap-sun 16s ease-in-out infinite alternate;
+  }
+
+  @keyframes ap-sun {
+    to {
+      transform: translateY(12%);
+      opacity: 0.8;
+    }
+  }
+
+  /* Three ridge bands as inline SVG data URIs, drawn for this template. The
+     `background-size` widths are what stretch a 1200 / 1000 / 800 px tile to the
+     viewport, and `repeat-x` is what makes the pan seamless. */
+  .ap-range {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    animation: ap-pan linear infinite;
+  }
+
+  .ap-range-far {
+    height: 46%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 300' preserveAspectRatio='none'%3E%3Cpath d='M0 300V180l70-55 95 60 130-120 105 95 75-45 125 105 115-125 145 115 95-65 105 75 140-40z' fill='%236d3f78'/%3E%3C/svg%3E");
+    background-size: 1200px 100%;
+    opacity: 0.85;
+    animation-duration: 120s;
+  }
+
+  .ap-range-mid {
+    height: 34%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 300' preserveAspectRatio='none'%3E%3Cpath d='M0 300V200l90-70 75 55 120-130 110 120 80-55 135 105 95-75 125 90 170-40z' fill='%23392d5c'/%3E%3C/svg%3E");
+    background-size: 1000px 100%;
+    animation-duration: 70s;
+  }
+
+  .ap-range-near {
+    height: 22%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 200' preserveAspectRatio='none'%3E%3Cpath d='M0 200V130l85-50 75 40 105-75 95 65 85-30 115 55 105-55 135 50z' fill='%23161b33'/%3E%3C/svg%3E");
+    background-size: 800px 100%;
+    animation-duration: 40s;
+  }
+
+  /* One keyframe per band: the tile widths differ, so the pans have to travel
+     different distances to stay seamless. */
+  .ap-range-mid {
+    animation-name: ap-pan-mid;
+  }
+
+  .ap-range-near {
+    animation-name: ap-pan-near;
+  }
+
+  @keyframes ap-pan {
+    to {
+      background-position: -2400px 100%;
+    }
+  }
+
+  @keyframes ap-pan-mid {
+    to {
+      background-position: -2000px 100%;
+    }
+  }
+
+  @keyframes ap-pan-near {
+    to {
+      background-position: -1600px 100%;
+    }
+  }
+
+  /* The wash: a horizontal scrim that is opaque at the left edge and gone by the
+     right, plus a 3 px scanline. Drop either and the headline stops reading. */
+  .ap-grain {
+    inset: 0;
+    background:
+      linear-gradient(
+        90deg,
+        rgb(10 13 28 / 0.78) 0%,
+        rgb(10 13 28 / 0.35) 55%,
+        rgb(10 13 28 / 0) 100%
+      ),
+      repeating-linear-gradient(0deg, rgb(255 255 255 / 0.025) 0 1px, transparent 1px 3px);
+  }
+
+  /* One class pauses every layer at once; the film dialog sets it. */
+  .ap-shell.is-paused .ap-scene * {
+    animation-play-state: paused;
+  }
+
+  /* ---- the bar ----------------------------------------------------------- */
+
+  .ap-bar {
+    position: relative;
+    z-index: 5;
+  }
+
+  .ap-bar-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 24px var(--gutter);
+  }
+
+  .ap-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .ap-logo svg {
+    display: block;
+    width: 26px;
+    height: 26px;
+  }
+
+  .ap-nav {
+    margin-left: auto;
+  }
+
+  .ap-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  /* 24.8 line box + 8 padding + 2 border = 34.8, which is what the dropdown
+     step measures against the 46 px menu button. */
+  .ap-link {
+    display: block;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    color: var(--color-soft);
+    font-size: 16px;
+    font-weight: 500;
+    transition:
+      color 0.2s,
+      border-color 0.2s;
+  }
+
+  .ap-link:hover {
+    border-color: rgb(255 255 255 / 0.5);
+    color: var(--color-ink);
+  }
+
+  .ap-link[aria-current='page'] {
+    border-color: var(--color-amber);
+    color: var(--color-ink);
+  }
+
+  .ap-menu-btn {
+    display: none;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid rgb(255 255 255 / 0.35);
+    border-radius: 50%;
+    background: rgb(15 20 38 / 0.35);
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+
+  /* ---- the hero ---------------------------------------------------------- */
+
+  /* `justify-content: center` centres the hero *and* the chapter strip as one
+     group inside main, which is why the hero's top edge is not simply the bar's
+     height plus its own padding. */
+  .ap-main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .ap-hero {
+    max-width: 720px;
+    padding: clamp(40px, 8vw, 96px) 0 clamp(32px, 5vw, 56px);
+  }
+
+  /* Inline-level on purpose: the kicker occupies a 24.8 px strut, so the
+     headline's 18 px top margin starts from the strut's foot, not the padding
+     edge. Blockifying it lifts everything below by 2.15 px. */
+  .ap-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-amber);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .ap-kicker::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-live);
+    box-shadow: 0 0 0 4px rgb(255 93 93 / 0.25);
+  }
+
+  /* 99.2 px / 94.24, -3.968 px of tracking, balanced breaks. */
+  .ap-title {
+    margin: 18px 0 20px;
+    font-size: var(--text-title);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+    text-shadow: 0 2px 30px rgb(10 13 28 / 0.35);
+  }
+
+  /* Capped at 34em of its own size (652.8 px at 19.2), not at a pixel value. */
+  .ap-sub {
+    max-width: 34em;
+    color: var(--color-soft);
+    font-size: var(--text-sub);
+  }
+
+  .ap-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px 28px;
+    margin-top: 36px;
+  }
+
+  .ap-play {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px 0 0;
+    border: 0;
+    background: none;
+    color: var(--color-ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  /* The rings are the disc's pseudo-elements, so they can scale past 1.7
+     without touching the button's own box. */
+  .ap-play-disc {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    padding-left: 3px;
+    border-radius: 50%;
+    background: var(--color-ink);
+    color: var(--color-night);
+    transition: transform 0.25s;
+  }
+
+  .ap-play-disc::before,
+  .ap-play-disc::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 2px solid rgb(255 255 255 / 0.6);
+    border-radius: 50%;
+    animation: ap-ripple 2.4s ease-out infinite;
+  }
+
+  .ap-play-disc::after {
+    animation-delay: 1.2s;
+  }
+
+  @keyframes ap-ripple {
+    to {
+      transform: scale(1.7);
+      opacity: 0;
+    }
+  }
+
+  .ap-play:hover .ap-play-disc {
+    transform: scale(1.06);
+  }
+
+  .ap-play-text {
+    display: grid;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.25;
+  }
+
+  .ap-play-text span {
+    color: var(--color-soft);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  /* 1 px, not the 1.5 declared upstream — a hairline border rounds to one device
+     pixel anyway, and the 54.8 px height proves it: 24.8 + 28 + 2. */
+  .ap-shop {
+    padding: 14px 24px;
+    border: 1px solid rgb(255 255 255 / 0.45);
+    border-radius: 999px;
+    background: rgb(15 20 38 / 0.25);
+    font-size: 16px;
+    font-weight: 600;
+    transition:
+      background-color 0.2s,
+      border-color 0.2s,
+      color 0.2s;
+  }
+
+  .ap-shop:hover {
+    border-color: var(--color-ink);
+    background: var(--color-ink);
+    color: var(--color-night);
+  }
+
+  /* Full main width, not the hero's column: the rule is the page's only
+     divider, so it has to run edge to edge. */
+  .ap-chapters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 40px;
+    padding: 22px 0 32px;
+    border-top: 1px solid var(--color-hairline);
+    color: var(--color-soft);
+    font-size: 15px;
+  }
+
+  .ap-chapters li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .ap-chapters li span {
+    color: var(--color-amber);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  /* ---- the film dialog --------------------------------------------------- */
+
+  .ap-dialog {
+    /* Tailwind's preflight zeroes every margin, which also kills the UA's own
+       `margin: auto` — without this the modal pins itself to the top-left
+       corner instead of centring in the viewport. */
+    margin: auto;
+    width: min(960px, calc(100% - 32px));
+    max-height: calc(100% - 32px);
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+    background: var(--color-dialog);
+    color: var(--color-ink);
+    box-shadow: 0 40px 100px -20px rgb(0 0 0 / 0.7);
+    overflow: hidden;
+  }
+
+  .ap-dialog::backdrop {
+    background: rgb(6 8 18 / 0.82);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+
+  .ap-dialog[open] {
+    animation: ap-pop 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  @keyframes ap-pop {
+    from {
+      opacity: 0;
+      transform: translateY(16px) scale(0.97);
+    }
+  }
+
+  .ap-dialog-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 14px 14px 22px;
+  }
+
+  .ap-dialog-title {
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .ap-close {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.1);
+    color: var(--color-ink);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .ap-close:hover {
+    background: rgb(255 255 255 / 0.2);
+  }
+
+  .ap-dialog button:focus-visible {
+    outline-offset: 2px;
+  }
+
+  .ap-player {
+    position: relative;
+  }
+
+  /* 16 : 9 on desktop, 4 : 3 on a phone — the aspect ratio is what fixes the
+     dialog's 610 px height at 960 wide. */
+  .ap-screen {
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    gap: 10px;
+    aspect-ratio: 16 / 9;
+    padding: 24px;
+    background:
+      radial-gradient(circle at 70% 70%, rgb(255 184 107 / 0.45), transparent 45%),
+      linear-gradient(160deg, #1d2550, #5a3470 55%, #c0607a);
+    text-align: center;
+  }
+
+  .ap-screen-label {
+    padding: 6px 14px;
+    border: 1px dashed rgb(255 255 255 / 0.6);
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .ap-screen-note {
+    max-width: 32em;
+    color: #eef0f8;
+    font-size: 15px;
+  }
+
+  .ap-screen-note code {
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: rgb(0 0 0 / 0.3);
+    font-size: 0.92em;
+  }
+
+  /* A picture of a player: 4 px track at 28 %, 13 px tabular time, no controls. */
+  .ap-controls {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: rgb(6 8 18 / 0.6);
+    font-size: 13px;
+  }
+
+  .ap-ctl-play {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--color-ink);
+    color: var(--color-dialog);
+  }
+
+  .ap-ctl-track {
+    position: relative;
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background: rgb(255 255 255 / 0.3);
+  }
+
+  .ap-ctl-track span {
+    position: absolute;
+    inset: 0 72% 0 0;
+    border-radius: 2px;
+    background: var(--color-amber);
+  }
+
+  .ap-ctl-time {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- the closing strip (the reference has no footer) ------------------- */
+
+  .ap-footer {
+    position: relative;
+    z-index: 1;
+    border-top: 1px solid rgb(255 255 255 / 0.12);
+    color: var(--color-soft);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .ap-footer p {
+    padding: 14px var(--gutter);
+  }
+
+  .ap-footer-link {
+    color: var(--color-ink);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-amber);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .ap-footer-link:hover {
+    color: var(--color-amber);
+  }
+}
+
+/* Below 861 the links become a panel hanging off the bar's padding box, the
+   wash rotates to a top-down scrim and the sun drops to the lower left. */
+@media (max-width: 860px) {
+  .ap-bar.is-enhanced .ap-menu-btn {
+    display: grid;
+  }
+
+  .ap-bar.is-enhanced .ap-nav {
+    position: absolute;
+    top: 100%;
+    left: var(--gutter);
+    right: var(--gutter);
+    display: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    background: rgb(15 20 38 / 0.96);
+    box-shadow: 0 24px 48px -16px rgb(0 0 0 / 0.6);
+  }
+
+  .ap-bar.is-enhanced.is-open .ap-nav {
+    display: block;
+  }
+
+  .ap-bar.is-enhanced .ap-links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ap-bar.is-enhanced .ap-link {
+    padding: 14px 0;
+    border-bottom: 1px solid rgb(255 255 255 / 0.1);
+    font-size: 19px;
+  }
+
+  .ap-bar.is-enhanced .ap-links li:last-child .ap-link {
+    border-bottom: 0;
+  }
+
+  .ap-bar:not(.is-enhanced) .ap-bar-inner,
+  .ap-bar:not(.is-enhanced) .ap-links {
+    flex-wrap: wrap;
+  }
+
+  .ap-grain {
+    background:
+      linear-gradient(
+        180deg,
+        rgb(10 13 28 / 0.55) 0%,
+        rgb(10 13 28 / 0.6) 60%,
+        rgb(10 13 28 / 0.2) 100%
+      ),
+      repeating-linear-gradient(0deg, rgb(255 255 255 / 0.025) 0 1px, transparent 1px 3px);
+  }
+
+  .ap-sun {
+    left: 45%;
+    bottom: 14%;
+    width: 50vmin;
+  }
+}
+
+/* Below 521 the disc shrinks, the pill takes the row, the chapters stack and
+   the dialog's screen turns 4 : 3. */
+@media (max-width: 520px) {
+  .ap-play-disc {
+    width: 64px;
+    height: 64px;
+  }
+
+  .ap-shop {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .ap-chapters {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ap-controls {
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    padding: 6px 10px;
+  }
+
+  .ap-screen-note {
+    font-size: 13px;
+  }
+
+  .ap-screen {
+    aspect-ratio: 4 / 3;
+    padding: 16px 16px 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ap-shell *,
+  .ap-shell *::before,
+  .ap-shell *::after,
+  .ap-dialog,
+  .ap-dialog * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
