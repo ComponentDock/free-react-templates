@@ -328,8 +328,11 @@ step at a settled 300 ms):
 **The tightest fit on the page is the support row's text: 3.13 px.** In the archive face it measures **471.00** in a
 **474.13** box at 1440, which is why it wraps to **two** lines and why the panel is 77.38 tall instead of 55.69. Google's
 DM Sans v17 measures the same string at **459.00** (−2.55 %) → **one line**, and the panel collapses to **420.13**
-(−21.68) at every width ≥ ~1120. The copy prescribed below was chosen inside that band (measured **467.00** in the
-served face) so the two-line render survives; any later copy edit must be re-measured against this 474.13 box.
+(−21.68) at every width ≥ ~1120. The copy prescribed below was length-tuned against the **built** page (the served face,
+measured across 320 … 1440): the shorter wording fitted the 473.13 box by **0 px** and collapsed the row, so one word was
+added — the string now measures **508**, wraps to **two** lines at 1440 and 861, survives on **one** line at 860 where the
+panel is 828 wide, and reproduces the reference's panel heights (441.81 / 434.69 / 430.73 / 474.11). Any later copy edit
+must be re-measured against this 474.13 box.
 
 **Google-vs-archive drift** (same strings, `getBoundingClientRect` on a cloned span at the element's own size, weight and
 tracking — never `measureText`, which ignores `letter-spacing`):
@@ -402,7 +405,7 @@ background: rgba(45,212,191,.06)`. In React this is a `data-checked` attribute (
    | ----------- | ------------------------------------------------------------------------------------------------------------------------------- | ----------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | `h1`        | _Pay for what your app really uses_                                                                                             | **694.47** in 760 | the reference is 747.70 in 760 (12.3 px slack); the archive is 684.70. No paraphrase with an extra word fits (the next candidate measures 913.67) — accept a **16 px** earlier 2-line seam (488 vs 505) and assert heights at 1440/861 |
    | lede        | _Runrate bills a flat platform fee plus metered API calls and object storage. Move the sliders to estimate this month's total._ |    **902** in 760 | the reference measures 895 / Google 895 — the 3→2 seam lands within 4 px of the reference's 485                                                                                                                                        |
-   | support row | _Priority support — one-hour replies and a shared channel. $149 / month._ (`Priority support` in `<strong>`)                    | **467** in 474.13 | the reference's 471 wraps by 3.13 px; anything ≤ 460 collapses the row to one line and the panel to 420.13                                                                                                                             |
+   | support row | _Priority support — one-hour replies and a shared team channel. $149 / month._ (`Priority support` in `<strong>`)            | **508** in 473.13 | the reference's 471 sits 3.13 px over its 474.13 box; the shorter wording measures 473.13 in the served face and fits by 0 px, collapsing the row to one line (panel 420.13) — `team` restores the two-line row (77.38) and the reference's panel heights |
    | fine print  | _An estimate only — you're billed on actual usage, and every account carries a spend cap and alerts._                           | **568** in 393.88 | the reference measures 566 → same 2-line render at 1440 and the same 3-line render at 861                                                                                                                                              |
    | calls hint  | _First 100,000 API calls are free, then $1.00 per 100,000._                                                                     | **345** in 540.13 | the reference measures 342; it must wrap at 414 (box 336) and not at 440 (box 362) — 345 sits in that band                                                                                                                             |
 

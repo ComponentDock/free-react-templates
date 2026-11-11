@@ -1,0 +1,452 @@
+@import 'tailwindcss';
+
+/* Runrate's palette: an ink-navy ground, one teal accent, and one light card
+   that carries the money. Five of these are the page's own custom properties —
+   the panel and the track are the two surfaces the eye compares, so the navies
+   are hand-picked rather than a renamed Tailwind ramp. The last two are the
+   port's repairs: the reference's resting slider track and its dashed support
+   border both sit under the 3 : 1 a control boundary needs. */
+@theme {
+  --color-teal: #2dd4bf;
+  --color-ink: #e2e8f0;
+  --color-muted: #a3b0c2;
+  --color-panel: #111a2e;
+  --color-line: #22304a;
+  --color-ground: #0b1120;
+  --color-track-rest: #506890;
+  --color-check-line: #546c8f;
+  --color-card: #f8fafc;
+  --color-card-ink: #0f172a;
+  --color-card-muted: #475569;
+  --color-card-key: #334155;
+  --color-card-rule: #e2e8f0;
+  --color-seg-calls: #14b8a6;
+  --color-seg-storage: #3b82f6;
+  --color-seg-support: #f43f5e;
+
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-panel: 20px;
+  --radius-check: 14px;
+  --radius-cta: 12px;
+  --radius-thumb: 6px;
+  --radius-key: 3px;
+  --radius-pill: 999px;
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* The demo band: one radial teal glow in the top-right corner over the ink
+     ground, and 96px of air above the head on a 900px viewport. */
+  .rr-main {
+    padding: clamp(40px, 7vw, 96px) 16px;
+    background-image: radial-gradient(
+      60% 50% at 80% 0%,
+      rgba(45, 212, 191, 0.12),
+      transparent 70%
+    );
+    background-color: var(--color-ground);
+  }
+
+  .rr-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: var(--color-ink);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .rr-head {
+    max-width: 760px;
+    margin-bottom: 40px;
+  }
+
+  .rr-eyebrow {
+    margin: 0;
+    color: var(--color-teal);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .rr-title {
+    margin: 10px 0 12px;
+    color: #fff;
+    font-size: clamp(30px, 4.4vw, 46px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+  }
+
+  .rr-lede {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 16.5px;
+  }
+
+  /* Two tracks, 1.35fr against 1fr. `align-items: start` is load-bearing: the
+     control panel is 42.44px shorter than the bill card, so the two share a top
+     edge and the left column leaves dead space under the panel. */
+  .rr-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+
+  .rr-controls {
+    display: grid;
+    gap: 34px;
+    padding: clamp(22px, 4vw, 38px);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-panel);
+    background-color: var(--color-panel);
+  }
+
+  .rr-field {
+    margin: 0;
+  }
+
+  .rr-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .rr-label {
+    font-weight: 600;
+  }
+
+  .rr-value {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.55;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rr-hint {
+    margin: 10px 0 0;
+    color: var(--color-muted);
+    font-size: 13.5px;
+  }
+
+  /* The track is a hard-stop gradient keyed to `--fill`, which React writes
+     inline on the input. The resting half is the repaired token, not the
+     reference's 1.52 : 1 navy. */
+  .rr-range {
+    display: block;
+    width: 100%;
+    height: 26px;
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .rr-range:focus-visible {
+    outline: none;
+  }
+
+  .rr-range::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: var(--radius-pill);
+    background-image: linear-gradient(
+      90deg,
+      var(--color-teal) var(--fill, 40%),
+      var(--color-track-rest) var(--fill, 40%)
+    );
+  }
+
+  .rr-range::-webkit-slider-thumb {
+    width: 22px;
+    height: 22px;
+    margin-top: -8px;
+    border: 0;
+    border-radius: var(--radius-thumb);
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.35);
+  }
+
+  /* Firefox paints the two halves as two pseudo-elements, so the fill stops at
+     the thumb's centre rather than at the gradient's stop. */
+  .rr-range::-moz-range-track {
+    height: 6px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-track-rest);
+  }
+
+  .rr-range::-moz-range-progress {
+    height: 6px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-teal);
+  }
+
+  .rr-range::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border: 0;
+    border-radius: var(--radius-thumb);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(45, 212, 191, 0.35);
+  }
+
+  .rr-range:focus-visible::-webkit-slider-thumb {
+    box-shadow:
+      0 0 0 3px var(--color-ground),
+      0 0 0 6px #fff;
+  }
+
+  .rr-range:focus-visible::-moz-range-thumb {
+    box-shadow:
+      0 0 0 3px var(--color-ground),
+      0 0 0 6px #fff;
+  }
+
+  /* The dashed support row. Its checked paint is driven by a `data-checked`
+     attribute rather than a modern relational selector, so the state is
+     testable without CSSOM gymnastics. */
+  .rr-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border: 1px dashed var(--color-check-line);
+    border-radius: var(--radius-check);
+    color: var(--color-muted);
+    font-size: 14px;
+    line-height: 1.55;
+    cursor: pointer;
+  }
+
+  .rr-check strong {
+    color: #fff;
+  }
+
+  .rr-check[data-checked='true'] {
+    border-style: solid;
+    border-color: var(--color-teal);
+    background-color: rgba(45, 212, 191, 0.06);
+  }
+
+  .rr-check:focus-within {
+    outline: 3px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+
+  .rr-box {
+    flex: none;
+    width: 20px;
+    height: 20px;
+    margin: 1px 0 0;
+    accent-color: var(--color-teal);
+    cursor: pointer;
+  }
+
+  .rr-box:focus-visible {
+    outline: 3px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+
+  /* The one light surface. It sticks once the document is taller than the
+     viewport, which only happens at 860 and below. */
+  .rr-bill {
+    position: sticky;
+    top: 24px;
+    padding: clamp(22px, 3.5vw, 32px);
+    border-radius: var(--radius-panel);
+    background-color: var(--color-card);
+    color: var(--color-card-ink);
+    box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
+  }
+
+  .rr-bill-title {
+    margin: 0;
+    color: var(--color-card-muted);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .rr-total {
+    margin: 4px 0 18px;
+  }
+
+  .rr-out {
+    font-size: clamp(42px, 5vw, 54px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rr-bar {
+    display: flex;
+    height: 10px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-card-rule);
+  }
+
+  /* `flex: 0 1 0` with a per-line `flex-grow` in *dollars*: the transition then
+     animates the split, and a zero-priced line really is zero wide. */
+  .rr-seg {
+    flex: 0 1 0;
+    min-width: 0;
+    box-shadow: inset -2px 0 var(--color-card);
+    transition: flex-grow 0.35s ease;
+  }
+
+  .rr-seg--base,
+  .rr-key--base {
+    background-color: var(--color-card-ink);
+  }
+
+  .rr-seg--calls,
+  .rr-key--calls {
+    background-color: var(--color-seg-calls);
+  }
+
+  .rr-seg--storage,
+  .rr-key--storage {
+    background-color: var(--color-seg-storage);
+  }
+
+  .rr-seg--support,
+  .rr-key--support {
+    background-color: var(--color-seg-support);
+  }
+
+  .rr-lines {
+    margin: 0 0 24px;
+  }
+
+  .rr-line {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 0;
+    border-top: 1px solid var(--color-card-rule);
+    font-size: 14.5px;
+  }
+
+  .rr-line dt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-card-key);
+  }
+
+  .rr-line dd {
+    margin: 0;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rr-key {
+    width: 10px;
+    height: 10px;
+    border-radius: var(--radius-key);
+  }
+
+  /* Visually hidden, not `display: none`: the status node has to stay in the
+     accessibility tree, and it clips rather than disappears. */
+  .rr-vh {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .rr-cta {
+    display: block;
+    padding: 13px 18px;
+    border-radius: var(--radius-cta);
+    background-color: var(--color-card-ink);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+
+  .rr-cta:hover {
+    background-color: #134e4a;
+  }
+
+  .rr-cta:focus-visible {
+    outline: 3px solid #0d9488;
+    outline-offset: 3px;
+  }
+
+  .rr-fine {
+    margin: 14px 0 0;
+    color: var(--color-card-muted);
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+
+  .rr-footer {
+    padding: 0 16px 24px;
+  }
+
+  .rr-footer-line {
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .rr-footer-link {
+    color: var(--color-teal);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .rr-footer-link:focus-visible {
+    outline: 3px solid var(--color-teal);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 860px) {
+    .rr-body {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .rr-bill {
+      position: static;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rr-seg,
+    .rr-cta {
+      transition: none;
+    }
+  }
+}
