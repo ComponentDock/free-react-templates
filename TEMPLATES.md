@@ -891,7 +891,7 @@
 ## Bootstrap Pricing Tables (12)
 
 - [x] **Pricing Table 01** — [colorlib](https://colorlib.com/wp/template/pricing-table-01/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-01.jpg) · [ratecard](https://ratecard.free.componentdock.com)
-- [~] **Pricing Table 02** — [colorlib](https://colorlib.com/wp/template/pricing-table-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-02.jpg)
+- [x] **Pricing Table 02** — [colorlib](https://colorlib.com/wp/template/pricing-table-02/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/pricing-table-02.jpg) · [tallyboard](https://free-react-templates-tallyboard.surge.sh)
 
 ## Bootstrap Wizards (30)
 
