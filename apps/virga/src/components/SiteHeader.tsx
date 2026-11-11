@@ -57,11 +57,7 @@ export function SiteHeader() {
           aria-label={open ? MENU_LABEL.close : MENU_LABEL.open}
           onClick={toggle}
         >
-          {open ? (
-            <X size={20} aria-hidden="true" />
-          ) : (
-            <Menu size={20} aria-hidden="true" />
-          )}
+          {open ? <X size={20} aria-hidden="true" /> : <Menu size={20} aria-hidden="true" />}
         </button>
 
         <nav id={NAV_ID} className="vg-nav" aria-label="Main">

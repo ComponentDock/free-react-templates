@@ -1,12 +1,6 @@
 import { render, screen, within } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
-import {
-  NETWORK_ID,
-  STATS,
-  UPTIME_BARS,
-  UPTIME_DIP_INDEX,
-  UPTIME_SUMMARY,
-} from '../data/site'
+import { NETWORK_ID, STATS, UPTIME_BARS, UPTIME_DIP_INDEX, UPTIME_SUMMARY } from '../data/site'
 import { StatsBand } from './StatsBand'
 
 const strip = () => document.querySelector('.vg-bars') as HTMLElement

@@ -17,8 +17,7 @@ export function HeroCopy() {
       </a>
 
       <h1 className="vg-title" id={TITLE_ID}>
-        {HEADLINE.lead}{' '}
-        <span className="vg-title-tail">{HEADLINE.tail}</span>
+        {HEADLINE.lead} <span className="vg-title-tail">{HEADLINE.tail}</span>
       </h1>
 
       <p className="vg-sub">{SUB}</p>

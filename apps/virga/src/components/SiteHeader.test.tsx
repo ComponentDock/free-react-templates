@@ -1,7 +1,15 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, expect, it } from 'vitest'
-import { BRAND, MENU_LABEL, NAV_ID, NAV_LINKS, SIGN_IN, DEPLOY_NOW, WORDMARK_HREF } from '../data/site'
+import {
+  BRAND,
+  MENU_LABEL,
+  NAV_ID,
+  NAV_LINKS,
+  SIGN_IN,
+  DEPLOY_NOW,
+  WORDMARK_HREF,
+} from '../data/site'
 import { SiteHeader } from './SiteHeader'
 
 const header = () => screen.getByRole('banner')
