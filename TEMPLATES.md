@@ -555,7 +555,7 @@
 - [x] **Buildream** — [colorlib](https://colorlib.com/wp/template/buildream/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/buildream-free-template.jpg) · [amberline](https://componentdock-demo-amberline.surge.sh)
 - [x] **Byfaith** — [colorlib](https://colorlib.com/wp/template/byfaith/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/byfaith-free-template.jpg) · [sanctus](https://componentdock-demo-sanctus.surge.sh)
 - [x] **Cakeshop** — [colorlib](https://colorlib.com/wp/template/cakeshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cakeshop-colorlib-template.jpg) · [patisserie](https://componentdock-demo-patisserie.surge.sh)
-- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly.free.componentdock.com](https://componentdock-demo-reachly.surge.sh)
+- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly](https://componentdock-demo-reachly.surge.sh)
 - [x] **Capitalshop** — [colorlib](https://colorlib.com/wp/template/capitalshop/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/capitalshop-free-template.jpg) · [emporio](https://componentdock-demo-emporio.surge.sh)
 - [x] **Carepair** — [colorlib](https://colorlib.com/wp/template/carepair/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/carepair-free-template-1.jpg) · [fixly](https://componentdock-demo-fixly.surge.sh)
 - [x] **Charitee** — [colorlib](https://colorlib.com/wp/template/charitee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/charitee-colorlib-template.jpg) · [giveback](https://componentdock-demo-giveback.surge.sh)
@@ -2103,7 +2103,7 @@
 - [x] **Bulkapp** — [colorlib](https://colorlib.com/wp/template/bulkapp/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/bulkapp-free-template.jpg) · [Bundle](https://componentdock-demo-bundle.surge.sh)
 - [x] **Ca App** — [colorlib](https://colorlib.com/wp/template/ca-app/) · [appnova](https://componentdock-demo-appnova.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/ca-app-showcase-website-template.jpg)
 - [x] **Callcenter** — [colorlib](https://colorlib.com/wp/template/callcenter/) · [dialpad](https://componentdock-demo-dialpad.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/callcenter-free-call-center-website-template.jpg)
-- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly.free.componentdock.com](https://componentdock-demo-reachly.surge.sh)
+- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly](https://componentdock-demo-reachly.surge.sh)
 - [x] **Chimper** — [colorlib](https://colorlib.com/wp/template/chimper/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/chimper-free-template.jpg) · [craftora](https://componentdock-demo-craftora.surge.sh)
 - [x] **Cloud83** — [colorlib](https://colorlib.com/wp/template/cloud83/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/cloud83-free-template.jpg) · [Stratus](https://componentdock-demo-stratus.surge.sh)
 - [x] **Coffee** — [colorlib](https://colorlib.com/wp/template/coffee/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/coffee-free-template.jpg) · [perk](https://componentdock-demo-perk.surge.sh)
@@ -2860,7 +2860,7 @@
 
 ## Seo (8)
 
-- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly.free.componentdock.com](https://componentdock-demo-reachly.surge.sh)
+- [x] **Calvino** — [colorlib](https://colorlib.com/wp/template/calvino/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/calvino-free-template.jpg) · [reachly](https://componentdock-demo-reachly.surge.sh)
 - [x] **Echo** — [colorlib](https://colorlib.com/wp/template/echo/) · [resonance](https://componentdock-demo-resonance.surge.sh) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/echo-free-template.jpg)
 - [x] **Expo** — [colorlib](https://colorlib.com/wp/template/expo/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/expo-free-template.jpg) · [sightly](https://componentdock-demo-sightly.surge.sh)
 - [x] **Personal Wordpress Themes** — [colorlib](https://colorlib.com/wp/template/personal-wordpress-themes/) · ![preview](https://colorlib.com/wp/wp-content/uploads/sites/2/personal-website-templates.jpg) · [persona](https://componentdock-demo-persona.surge.sh)
