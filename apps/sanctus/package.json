@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/sanctus",
   "private": true,
-  "homepage": "https://sanctus.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sanctus.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

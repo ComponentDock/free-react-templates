@@ -2,7 +2,7 @@
   "name": "@free-react-templates/cargolane",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://cargolane.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cargolane.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

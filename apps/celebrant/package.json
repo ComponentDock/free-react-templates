@@ -2,7 +2,7 @@
   "name": "@free-react-templates/celebrant",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://celebrant.free.componentdock.com",
+  "homepage": "https://componentdock-demo-celebrant.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

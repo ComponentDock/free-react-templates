@@ -2,7 +2,7 @@
   "name": "@free-react-templates/modalrosa",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://modalrosa.free.componentdock.com",
+  "homepage": "https://componentdock-demo-modalrosa.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

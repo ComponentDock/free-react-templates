@@ -2,7 +2,7 @@
   "name": "@free-react-templates/cellmate",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://cellmate.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cellmate.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

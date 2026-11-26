@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://marginalia.free.componentdock.com"
+  "homepage": "https://componentdock-demo-marginalia.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://lookupbar.free.componentdock.com"
+  "homepage": "https://componentdock-demo-lookupbar.surge.sh"
 }

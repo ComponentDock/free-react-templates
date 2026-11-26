@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://blastoff.free.componentdock.com"
+  "homepage": "https://componentdock-demo-blastoff.surge.sh"
 }

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://sendwave.free.componentdock.com"
+  "homepage": "https://componentdock-demo-sendwave.surge.sh"
 }

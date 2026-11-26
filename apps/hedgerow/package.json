@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://hedgerow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-hedgerow.surge.sh"
 }

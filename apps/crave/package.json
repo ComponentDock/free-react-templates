@@ -2,7 +2,7 @@
   "name": "@free-react-templates/crave",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://crave.free.componentdock.com",
+  "homepage": "https://componentdock-demo-crave.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

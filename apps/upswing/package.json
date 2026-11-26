@@ -2,7 +2,7 @@
   "name": "@free-react-templates/upswing",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://upswing.free.componentdock.com",
+  "homepage": "https://componentdock-demo-upswing.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://modalize.free.componentdock.com"
+  "homepage": "https://componentdock-demo-modalize.surge.sh"
 }

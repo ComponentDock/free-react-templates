@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://photonic.free.componentdock.com"
+  "homepage": "https://componentdock-demo-photonic.surge.sh"
 }

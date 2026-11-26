@@ -27,5 +27,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://deliverly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-deliverly.surge.sh"
 }

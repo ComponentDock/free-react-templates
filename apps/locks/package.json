@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://locks.free.componentdock.com"
+  "homepage": "https://componentdock-demo-locks.surge.sh"
 }

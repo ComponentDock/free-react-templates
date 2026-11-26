@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://brightpath.free.componentdock.com"
+  "homepage": "https://componentdock-demo-brightpath.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://prowess.free.componentdock.com"
+  "homepage": "https://componentdock-demo-prowess.surge.sh"
 }

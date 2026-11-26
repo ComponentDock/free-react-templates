@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://portlight.free.componentdock.com"
+  "homepage": "https://componentdock-demo-portlight.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/incoming",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://incoming.free.componentdock.com",
+  "homepage": "https://componentdock-demo-incoming.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

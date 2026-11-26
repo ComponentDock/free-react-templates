@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://orbit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-orbit.surge.sh"
 }

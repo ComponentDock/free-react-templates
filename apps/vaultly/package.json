@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://vaultly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-vaultly.surge.sh"
 }

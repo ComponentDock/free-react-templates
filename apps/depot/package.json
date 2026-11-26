@@ -2,7 +2,7 @@
   "name": "@free-react-templates/depot",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://depot.free.componentdock.com",
+  "homepage": "https://componentdock-demo-depot.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

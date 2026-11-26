@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://filament.free.componentdock.com"
+  "homepage": "https://componentdock-demo-filament.surge.sh"
 }

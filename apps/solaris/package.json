@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://solaris.free.componentdock.com",
+  "homepage": "https://componentdock-demo-solaris.surge.sh",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

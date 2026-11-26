@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://airy.free.componentdock.com"
+  "homepage": "https://componentdock-demo-airy.surge.sh"
 }

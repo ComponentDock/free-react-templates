@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pawly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pawly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pawly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

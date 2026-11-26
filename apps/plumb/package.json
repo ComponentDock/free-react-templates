@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/plumb",
   "private": true,
-  "homepage": "https://plumb.free.componentdock.com",
+  "homepage": "https://componentdock-demo-plumb.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

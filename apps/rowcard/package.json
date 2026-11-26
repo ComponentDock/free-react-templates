@@ -2,7 +2,7 @@
   "name": "@free-react-templates/rowcard",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://rowcard.free.componentdock.com",
+  "homepage": "https://componentdock-demo-rowcard.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

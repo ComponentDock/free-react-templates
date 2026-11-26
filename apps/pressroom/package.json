@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://pressroom.free.componentdock.com"
+  "homepage": "https://componentdock-demo-pressroom.surge.sh"
 }

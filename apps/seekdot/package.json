@@ -2,7 +2,7 @@
   "name": "@free-react-templates/seekdot",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://seekdot.free.componentdock.com",
+  "homepage": "https://componentdock-demo-seekdot.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

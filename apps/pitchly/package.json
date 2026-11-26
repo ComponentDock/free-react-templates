@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pitchly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pitchly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pitchly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

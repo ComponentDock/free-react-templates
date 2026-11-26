@@ -2,7 +2,7 @@
   "name": "@free-react-templates/stride",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://stride.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stride.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

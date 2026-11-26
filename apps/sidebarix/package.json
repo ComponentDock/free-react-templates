@@ -2,7 +2,7 @@
   "name": "@free-react-templates/sidebarix",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://sidebarix.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sidebarix.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

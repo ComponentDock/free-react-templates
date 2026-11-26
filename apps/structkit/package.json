@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://structkit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-structkit.surge.sh"
 }

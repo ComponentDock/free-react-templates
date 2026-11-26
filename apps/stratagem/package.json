@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://stratagem.free.componentdock.com"
+  "homepage": "https://componentdock-demo-stratagem.surge.sh"
 }

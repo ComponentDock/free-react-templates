@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/stackly",
   "private": true,
-  "homepage": "https://stackly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stackly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

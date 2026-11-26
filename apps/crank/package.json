@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/crank",
   "private": true,
-  "homepage": "https://crank.free.componentdock.com",
+  "homepage": "https://componentdock-demo-crank.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

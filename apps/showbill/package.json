@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/showbill",
   "private": true,
-  "homepage": "https://showbill.free.componentdock.com",
+  "homepage": "https://componentdock-demo-showbill.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

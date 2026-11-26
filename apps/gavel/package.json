@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://gavel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-gavel.surge.sh"
 }

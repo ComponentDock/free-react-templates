@@ -2,7 +2,7 @@
   "name": "@free-react-templates/bundle",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://bundle.free.componentdock.com",
+  "homepage": "https://componentdock-demo-bundle.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

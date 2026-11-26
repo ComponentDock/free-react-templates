@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://medprime.free.componentdock.com"
+  "homepage": "https://componentdock-demo-medprime.surge.sh"
 }

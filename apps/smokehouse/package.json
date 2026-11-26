@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://smokehouse.free.componentdock.com"
+  "homepage": "https://componentdock-demo-smokehouse.surge.sh"
 }

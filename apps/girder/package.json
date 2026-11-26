@@ -2,7 +2,7 @@
   "name": "@free-react-templates/girder",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://girder.free.componentdock.com",
+  "homepage": "https://componentdock-demo-girder.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

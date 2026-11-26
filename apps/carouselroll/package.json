@@ -2,7 +2,7 @@
   "name": "@free-react-templates/carouselroll",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://carouselroll.free.componentdock.com",
+  "homepage": "https://componentdock-demo-carouselroll.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

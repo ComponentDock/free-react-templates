@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://pipewright.free.componentdock.com"
+  "homepage": "https://componentdock-demo-pipewright.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://taply.free.componentdock.com"
+  "homepage": "https://componentdock-demo-taply.surge.sh"
 }

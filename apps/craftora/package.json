@@ -2,7 +2,7 @@
   "name": "@free-react-templates/craftora",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://craftora.free.componentdock.com",
+  "homepage": "https://componentdock-demo-craftora.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

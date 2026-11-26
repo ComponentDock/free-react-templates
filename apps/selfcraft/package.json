@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/selfcraft",
   "private": true,
-  "homepage": "https://selfcraft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-selfcraft.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

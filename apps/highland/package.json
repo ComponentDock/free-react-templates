@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://highland.free.componentdock.com"
+  "homepage": "https://componentdock-demo-highland.surge.sh"
 }

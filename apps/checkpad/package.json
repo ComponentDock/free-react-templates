@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://checkpad.free.componentdock.com"
+  "homepage": "https://componentdock-demo-checkpad.surge.sh"
 }

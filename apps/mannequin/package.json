@@ -2,7 +2,7 @@
   "name": "@free-react-templates/mannequin",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://mannequin.free.componentdock.com",
+  "homepage": "https://componentdock-demo-mannequin.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

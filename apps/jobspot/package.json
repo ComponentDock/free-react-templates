@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jobspot.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jobspot.surge.sh"
 }

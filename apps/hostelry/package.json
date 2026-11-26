@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://hostelry.free.componentdock.com",
+  "homepage": "https://componentdock-demo-hostelry.surge.sh",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

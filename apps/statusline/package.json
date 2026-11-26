@@ -2,7 +2,7 @@
   "name": "@free-react-templates/statusline",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://statusline.free.componentdock.com",
+  "homepage": "https://componentdock-demo-statusline.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

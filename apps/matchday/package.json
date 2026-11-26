@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://matchday.free.componentdock.com"
+  "homepage": "https://componentdock-demo-matchday.surge.sh"
 }

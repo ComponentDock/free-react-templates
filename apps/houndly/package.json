@@ -2,7 +2,7 @@
   "name": "@free-react-templates/houndly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://houndly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-houndly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

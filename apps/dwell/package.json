@@ -30,5 +30,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://dwell.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dwell.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://estately.free.componentdock.com"
+  "homepage": "https://componentdock-demo-estately.surge.sh"
 }

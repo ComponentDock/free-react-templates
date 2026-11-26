@@ -27,5 +27,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://townhub.free.componentdock.com"
+  "homepage": "https://componentdock-demo-townhub.surge.sh"
 }

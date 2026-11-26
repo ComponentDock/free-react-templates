@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gracious",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gracious.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gracious.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

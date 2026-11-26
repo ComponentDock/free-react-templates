@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://galleryvue.free.componentdock.com"
+  "homepage": "https://componentdock-demo-galleryvue.surge.sh"
 }

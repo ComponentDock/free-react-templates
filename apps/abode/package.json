@@ -2,7 +2,7 @@
   "name": "@free-react-templates/abode",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://abode.free.componentdock.com",
+  "homepage": "https://componentdock-demo-abode.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

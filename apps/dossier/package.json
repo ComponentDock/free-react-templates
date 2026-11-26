@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dossier.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dossier.surge.sh"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/statline",
   "private": true,
-  "homepage": "https://statline.free.componentdock.com",
+  "homepage": "https://componentdock-demo-statline.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

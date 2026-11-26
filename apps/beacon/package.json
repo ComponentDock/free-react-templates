@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://beacon.free.componentdock.com"
+  "homepage": "https://componentdock-demo-beacon.surge.sh"
 }

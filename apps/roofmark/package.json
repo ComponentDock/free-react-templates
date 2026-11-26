@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/roofmark",
   "private": true,
-  "homepage": "https://roofmark.free.componentdock.com",
+  "homepage": "https://componentdock-demo-roofmark.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

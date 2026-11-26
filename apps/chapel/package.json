@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/chapel",
   "private": true,
-  "homepage": "https://chapel.free.componentdock.com",
+  "homepage": "https://componentdock-demo-chapel.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

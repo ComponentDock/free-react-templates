@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/workhive",
   "private": true,
-  "homepage": "https://workhive.free.componentdock.com",
+  "homepage": "https://componentdock-demo-workhive.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

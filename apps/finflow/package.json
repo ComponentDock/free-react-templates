@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://finflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-finflow.surge.sh"
 }

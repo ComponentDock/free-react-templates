@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://podwave.free.componentdock.com"
+  "homepage": "https://componentdock-demo-podwave.surge.sh"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/focus",
   "private": true,
-  "homepage": "https://focus.free.componentdock.com",
+  "homepage": "https://componentdock-demo-focus.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

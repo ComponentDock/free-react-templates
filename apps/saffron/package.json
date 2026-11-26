@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://saffron.free.componentdock.com"
+  "homepage": "https://componentdock-demo-saffron.surge.sh"
 }

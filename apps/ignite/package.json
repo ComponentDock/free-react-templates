@@ -2,7 +2,7 @@
   "name": "@free-react-templates/ignite",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://ignite.free.componentdock.com",
+  "homepage": "https://componentdock-demo-ignite.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

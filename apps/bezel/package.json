@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://bezel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bezel.surge.sh"
 }

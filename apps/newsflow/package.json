@@ -2,7 +2,7 @@
   "name": "@free-react-templates/newsflow",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://newsflow.free.componentdock.com",
+  "homepage": "https://componentdock-demo-newsflow.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

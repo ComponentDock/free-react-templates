@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lightwell",
   "private": true,
-  "homepage": "https://lightwell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-lightwell.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

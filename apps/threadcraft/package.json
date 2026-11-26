@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://threadcraft.free.componentdock.com"
+  "homepage": "https://componentdock-demo-threadcraft.surge.sh"
 }

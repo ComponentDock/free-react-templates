@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://servhub.free.componentdock.com"
+  "homepage": "https://componentdock-demo-servhub.surge.sh"
 }

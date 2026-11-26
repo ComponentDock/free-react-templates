@@ -29,5 +29,5 @@
     "jsdom": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jade.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jade.surge.sh"
 }

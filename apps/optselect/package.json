@@ -2,7 +2,7 @@
   "name": "@free-react-templates/optselect",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://optselect.free.componentdock.com",
+  "homepage": "https://componentdock-demo-optselect.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

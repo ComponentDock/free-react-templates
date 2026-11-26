@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/clasp",
   "private": true,
-  "homepage": "https://clasp.free.componentdock.com",
+  "homepage": "https://componentdock-demo-clasp.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

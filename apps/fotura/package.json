@@ -2,7 +2,7 @@
   "name": "@free-react-templates/fotura",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://fotura.free.componentdock.com",
+  "homepage": "https://componentdock-demo-fotura.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

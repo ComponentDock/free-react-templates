@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://calstack.free.componentdock.com"
+  "homepage": "https://componentdock-demo-calstack.surge.sh"
 }

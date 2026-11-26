@@ -2,7 +2,7 @@
   "name": "@free-react-templates/giveback",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://giveback.free.componentdock.com",
+  "homepage": "https://componentdock-demo-giveback.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

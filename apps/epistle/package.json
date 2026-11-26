@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/epistle",
   "private": true,
-  "homepage": "https://epistle.free.componentdock.com",
+  "homepage": "https://componentdock-demo-epistle.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

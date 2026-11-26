@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://glider.free.componentdock.com"
+  "homepage": "https://componentdock-demo-glider.surge.sh"
 }

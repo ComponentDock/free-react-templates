@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://airwave.free.componentdock.com"
+  "homepage": "https://componentdock-demo-airwave.surge.sh"
 }

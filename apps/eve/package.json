@@ -2,7 +2,7 @@
   "name": "@free-react-templates/eve",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://eve.free.componentdock.com",
+  "homepage": "https://componentdock-demo-eve.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

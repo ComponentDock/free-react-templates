@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/joblaunch",
   "private": true,
-  "homepage": "https://joblaunch.free.componentdock.com",
+  "homepage": "https://componentdock-demo-joblaunch.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

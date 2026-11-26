@@ -2,7 +2,7 @@
   "name": "@free-react-templates/endpoint",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://endpoint.free.componentdock.com",
+  "homepage": "https://componentdock-demo-endpoint.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

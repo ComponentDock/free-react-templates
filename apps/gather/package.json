@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/gather",
   "private": true,
-  "homepage": "https://gather.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gather.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

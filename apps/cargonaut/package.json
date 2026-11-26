@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/cargonaut",
   "private": true,
-  "homepage": "https://cargonaut.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cargonaut.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

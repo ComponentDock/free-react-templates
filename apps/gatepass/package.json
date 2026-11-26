@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gatepass",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gatepass.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gatepass.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

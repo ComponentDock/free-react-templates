@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/tonearm",
   "private": true,
-  "homepage": "https://tonearm.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tonearm.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

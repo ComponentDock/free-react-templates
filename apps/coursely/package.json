@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://coursely.free.componentdock.com"
+  "homepage": "https://componentdock-demo-coursely.surge.sh"
 }

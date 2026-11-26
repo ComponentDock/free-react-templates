@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://synod.free.componentdock.com"
+  "homepage": "https://componentdock-demo-synod.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://searchgrid.free.componentdock.com"
+  "homepage": "https://componentdock-demo-searchgrid.surge.sh"
 }

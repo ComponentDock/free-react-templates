@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/vendly",
   "private": true,
-  "homepage": "https://vendly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vendly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/slate",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://slate.free.componentdock.com",
+  "homepage": "https://componentdock-demo-slate.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

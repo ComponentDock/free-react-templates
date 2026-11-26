@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regvibe",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regvibe.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regvibe.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

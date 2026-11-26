@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://sonority.free.componentdock.com"
+  "homepage": "https://componentdock-demo-sonority.surge.sh"
 }

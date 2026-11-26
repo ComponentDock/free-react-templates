@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jobfield.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jobfield.surge.sh"
 }

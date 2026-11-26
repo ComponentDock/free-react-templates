@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://glint.free.componentdock.com"
+  "homepage": "https://componentdock-demo-glint.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://spectra.free.componentdock.com"
+  "homepage": "https://componentdock-demo-spectra.surge.sh"
 }

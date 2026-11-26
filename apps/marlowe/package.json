@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://marlowe.free.componentdock.com"
+  "homepage": "https://componentdock-demo-marlowe.surge.sh"
 }

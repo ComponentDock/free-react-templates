@@ -2,7 +2,7 @@
   "name": "@free-react-templates/optwell",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://optwell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-optwell.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

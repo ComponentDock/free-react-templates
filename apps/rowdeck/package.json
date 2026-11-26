@@ -2,7 +2,7 @@
   "name": "@free-react-templates/rowdeck",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://rowdeck.free.componentdock.com",
+  "homepage": "https://componentdock-demo-rowdeck.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

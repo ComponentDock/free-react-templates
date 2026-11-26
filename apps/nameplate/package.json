@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/nameplate",
   "private": true,
-  "homepage": "https://nameplate.free.componentdock.com",
+  "homepage": "https://componentdock-demo-nameplate.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regnest",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regnest.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regnest.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

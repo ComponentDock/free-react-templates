@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://console.free.componentdock.com"
+  "homepage": "https://componentdock-demo-console.surge.sh"
 }

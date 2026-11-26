@@ -2,7 +2,7 @@
   "name": "@free-react-templates/advent",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://advent.free.componentdock.com",
+  "homepage": "https://componentdock-demo-advent.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

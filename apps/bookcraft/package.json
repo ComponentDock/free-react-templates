@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://bookcraft.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bookcraft.surge.sh"
 }

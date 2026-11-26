@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/belvedere",
   "private": true,
-  "homepage": "https://belvedere.free.componentdock.com",
+  "homepage": "https://componentdock-demo-belvedere.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

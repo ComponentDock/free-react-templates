@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://presswell.free.componentdock.com"
+  "homepage": "https://componentdock-demo-presswell.surge.sh"
 }

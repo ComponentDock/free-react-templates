@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://logintune.free.componentdock.com"
+  "homepage": "https://componentdock-demo-logintune.surge.sh"
 }

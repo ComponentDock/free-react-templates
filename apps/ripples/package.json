@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/ripples",
   "private": true,
-  "homepage": "https://ripples.free.componentdock.com",
+  "homepage": "https://componentdock-demo-ripples.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

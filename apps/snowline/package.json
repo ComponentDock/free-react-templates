@@ -2,7 +2,7 @@
   "name": "@free-react-templates/snowline",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://snowline.free.componentdock.com",
+  "homepage": "https://componentdock-demo-snowline.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

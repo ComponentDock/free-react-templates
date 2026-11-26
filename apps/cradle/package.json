@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://cradle.free.componentdock.com"
+  "homepage": "https://componentdock-demo-cradle.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/foundry",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://foundry.free.componentdock.com",
+  "homepage": "https://componentdock-demo-foundry.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

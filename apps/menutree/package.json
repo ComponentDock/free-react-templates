@@ -2,7 +2,7 @@
   "name": "@free-react-templates/menutree",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://menutree.free.componentdock.com",
+  "homepage": "https://componentdock-demo-menutree.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

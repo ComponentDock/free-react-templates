@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/crinkle",
   "private": true,
-  "homepage": "https://crinkle.free.componentdock.com",
+  "homepage": "https://componentdock-demo-crinkle.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://formpost.free.componentdock.com"
+  "homepage": "https://componentdock-demo-formpost.surge.sh"
 }

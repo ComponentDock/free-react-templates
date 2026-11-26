@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://cuddle.free.componentdock.com"
+  "homepage": "https://componentdock-demo-cuddle.surge.sh"
 }

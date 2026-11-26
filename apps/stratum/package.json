@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/stratum",
   "private": true,
-  "homepage": "https://stratum.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stratum.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

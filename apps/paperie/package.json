@@ -2,7 +2,7 @@
   "name": "@free-react-templates/paperie",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://paperie.free.componentdock.com",
+  "homepage": "https://componentdock-demo-paperie.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

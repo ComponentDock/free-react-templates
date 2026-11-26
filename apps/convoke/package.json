@@ -2,7 +2,7 @@
   "name": "@free-react-templates/convoke",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://convoke.free.componentdock.com",
+  "homepage": "https://componentdock-demo-convoke.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

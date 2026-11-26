@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://peakform.free.componentdock.com"
+  "homepage": "https://componentdock-demo-peakform.surge.sh"
 }

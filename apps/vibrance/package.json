@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/vibrance",
   "private": true,
-  "homepage": "https://vibrance.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vibrance.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

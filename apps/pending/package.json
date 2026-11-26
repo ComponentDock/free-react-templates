@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pending",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pending.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pending.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

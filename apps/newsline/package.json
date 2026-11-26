@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://newsline.free.componentdock.com"
+  "homepage": "https://componentdock-demo-newsline.surge.sh"
 }

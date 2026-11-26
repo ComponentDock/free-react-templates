@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://coinforge.free.componentdock.com"
+  "homepage": "https://componentdock-demo-coinforge.surge.sh"
 }

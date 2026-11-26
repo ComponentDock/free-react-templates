@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://rouge.free.componentdock.com"
+  "homepage": "https://componentdock-demo-rouge.surge.sh"
 }

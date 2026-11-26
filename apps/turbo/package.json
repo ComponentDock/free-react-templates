@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/turbo",
   "private": true,
-  "homepage": "https://turbo.free.componentdock.com",
+  "homepage": "https://componentdock-demo-turbo.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

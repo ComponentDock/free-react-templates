@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://draped.free.componentdock.com"
+  "homepage": "https://componentdock-demo-draped.surge.sh"
 }

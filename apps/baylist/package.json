@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/baylist",
   "private": true,
-  "homepage": "https://baylist.free.componentdock.com",
+  "homepage": "https://componentdock-demo-baylist.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jamboree.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jamboree.surge.sh"
 }

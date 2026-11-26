@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://photomuse.free.componentdock.com"
+  "homepage": "https://componentdock-demo-photomuse.surge.sh"
 }

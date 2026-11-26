@@ -2,7 +2,7 @@
   "name": "@free-react-templates/tally",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://tally.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tally.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

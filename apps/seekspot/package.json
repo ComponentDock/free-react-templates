@@ -2,7 +2,7 @@
   "name": "@free-react-templates/seekspot",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://seekspot.free.componentdock.com",
+  "homepage": "https://componentdock-demo-seekspot.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

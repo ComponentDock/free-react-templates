@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://signvane.free.componentdock.com"
+  "homepage": "https://componentdock-demo-signvane.surge.sh"
 }

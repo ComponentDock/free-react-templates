@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/violet",
   "private": true,
-  "homepage": "https://violet.free.componentdock.com",
+  "homepage": "https://componentdock-demo-violet.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

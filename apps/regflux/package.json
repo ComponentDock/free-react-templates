@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regflux",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regflux.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regflux.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

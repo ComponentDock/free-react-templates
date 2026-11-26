@@ -2,7 +2,7 @@
   "name": "@free-react-templates/filterpick",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://filterpick.free.componentdock.com",
+  "homepage": "https://componentdock-demo-filterpick.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

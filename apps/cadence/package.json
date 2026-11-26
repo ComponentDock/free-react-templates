@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://cadence.free.componentdock.com"
+  "homepage": "https://componentdock-demo-cadence.surge.sh"
 }

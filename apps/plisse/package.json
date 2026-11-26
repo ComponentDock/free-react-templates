@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/plisse",
   "private": true,
-  "homepage": "https://plisse.free.componentdock.com",
+  "homepage": "https://componentdock-demo-plisse.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

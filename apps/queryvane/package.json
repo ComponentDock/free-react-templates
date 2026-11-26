@@ -2,7 +2,7 @@
   "name": "@free-react-templates/queryvane",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://queryvane.free.componentdock.com",
+  "homepage": "https://componentdock-demo-queryvane.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

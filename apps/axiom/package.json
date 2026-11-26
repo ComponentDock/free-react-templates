@@ -2,7 +2,7 @@
   "name": "@free-react-templates/axiom",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://axiom.free.componentdock.com",
+  "homepage": "https://componentdock-demo-axiom.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

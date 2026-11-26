@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://residium.free.componentdock.com"
+  "homepage": "https://componentdock-demo-residium.surge.sh"
 }

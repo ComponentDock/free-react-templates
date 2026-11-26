@@ -29,5 +29,5 @@
     "vite": "latest",
     "@testing-library/user-event": "latest"
   },
-  "homepage": "https://feast.free.componentdock.com"
+  "homepage": "https://componentdock-demo-feast.surge.sh"
 }

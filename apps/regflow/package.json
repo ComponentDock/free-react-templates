@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regflow",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regflow.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regflow.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

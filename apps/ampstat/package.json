@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://ampstat.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ampstat.surge.sh"
 }

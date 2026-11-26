@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://clareo.free.componentdock.com"
+  "homepage": "https://componentdock-demo-clareo.surge.sh"
 }

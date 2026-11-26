@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/steeple",
   "private": true,
-  "homepage": "https://steeple.free.componentdock.com",
+  "homepage": "https://componentdock-demo-steeple.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

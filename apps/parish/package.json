@@ -2,7 +2,7 @@
   "name": "@free-react-templates/parish",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://parish.free.componentdock.com",
+  "homepage": "https://componentdock-demo-parish.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

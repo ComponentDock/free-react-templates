@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/coffer",
   "private": true,
-  "homepage": "https://coffer.free.componentdock.com",
+  "homepage": "https://componentdock-demo-coffer.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

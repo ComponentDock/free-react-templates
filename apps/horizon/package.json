@@ -2,7 +2,7 @@
   "name": "@free-react-templates/horizon",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://horizon.free.componentdock.com",
+  "homepage": "https://componentdock-demo-horizon.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

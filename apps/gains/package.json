@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://gains.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gains.surge.sh",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",

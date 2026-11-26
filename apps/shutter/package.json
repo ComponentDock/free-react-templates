@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://shutter.free.componentdock.com"
+  "homepage": "https://componentdock-demo-shutter.surge.sh"
 }

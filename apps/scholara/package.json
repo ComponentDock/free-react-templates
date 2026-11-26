@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/scholara",
   "private": true,
-  "homepage": "https://scholara.free.componentdock.com",
+  "homepage": "https://componentdock-demo-scholara.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

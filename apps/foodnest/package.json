@@ -2,7 +2,7 @@
   "name": "@free-react-templates/foodnest",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://foodnest.free.componentdock.com",
+  "homepage": "https://componentdock-demo-foodnest.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://capitex.free.componentdock.com"
+  "homepage": "https://componentdock-demo-capitex.surge.sh"
 }

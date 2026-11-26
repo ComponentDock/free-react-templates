@@ -2,7 +2,7 @@
   "name": "@free-react-templates/debut",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://debut.free.componentdock.com",
+  "homepage": "https://componentdock-demo-debut.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

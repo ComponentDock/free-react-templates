@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://propstack.free.componentdock.com"
+  "homepage": "https://componentdock-demo-propstack.surge.sh"
 }

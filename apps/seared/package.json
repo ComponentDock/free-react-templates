@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://seared.free.componentdock.com"
+  "homepage": "https://componentdock-demo-seared.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/rowspan",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://rowspan.free.componentdock.com",
+  "homepage": "https://componentdock-demo-rowspan.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

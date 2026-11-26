@@ -29,5 +29,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://bookly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bookly.surge.sh"
 }

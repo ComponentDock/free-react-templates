@@ -2,7 +2,7 @@
   "name": "@free-react-templates/trestle",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://trestle.free.componentdock.com",
+  "homepage": "https://componentdock-demo-trestle.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

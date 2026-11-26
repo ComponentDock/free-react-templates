@@ -2,7 +2,7 @@
   "name": "@free-react-templates/fixero",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://fixero.free.componentdock.com",
+  "homepage": "https://componentdock-demo-fixero.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

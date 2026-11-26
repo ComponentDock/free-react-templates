@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/precedent",
   "private": true,
-  "homepage": "https://precedent.free.componentdock.com",
+  "homepage": "https://componentdock-demo-precedent.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

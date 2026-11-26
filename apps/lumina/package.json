@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lumina",
   "private": true,
-  "homepage": "https://lumina.free.componentdock.com",
+  "homepage": "https://componentdock-demo-lumina.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

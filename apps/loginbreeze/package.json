@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginbreeze",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginbreeze.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginbreeze.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://trowel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-trowel.surge.sh"
 }

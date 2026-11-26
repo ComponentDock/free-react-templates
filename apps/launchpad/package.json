@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://launchpad.free.componentdock.com"
+  "homepage": "https://componentdock-demo-launchpad.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://nightwatch.free.componentdock.com"
+  "homepage": "https://componentdock-demo-nightwatch.surge.sh"
 }

@@ -30,5 +30,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://griddle.free.componentdock.com"
+  "homepage": "https://componentdock-demo-griddle.surge.sh"
 }

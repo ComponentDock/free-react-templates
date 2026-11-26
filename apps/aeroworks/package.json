@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/aeroworks",
   "private": true,
-  "homepage": "https://aeroworks.free.componentdock.com",
+  "homepage": "https://componentdock-demo-aeroworks.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://calgrid.free.componentdock.com"
+  "homepage": "https://componentdock-demo-calgrid.surge.sh"
 }

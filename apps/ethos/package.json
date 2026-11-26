@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://ethos.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ethos.surge.sh"
 }

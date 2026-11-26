@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/tendril",
   "private": true,
-  "homepage": "https://tendril.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tendril.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

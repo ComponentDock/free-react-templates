@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://bulwark.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bulwark.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://reserva.free.componentdock.com"
+  "homepage": "https://componentdock-demo-reserva.surge.sh"
 }

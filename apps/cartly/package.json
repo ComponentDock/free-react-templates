@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://cartly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-cartly.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/amity",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://amity.free.componentdock.com",
+  "homepage": "https://componentdock-demo-amity.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gridpane",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gridpane.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gridpane.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

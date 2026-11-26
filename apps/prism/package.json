@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/prism",
   "private": true,
-  "homepage": "https://prism.free.componentdock.com",
+  "homepage": "https://componentdock-demo-prism.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

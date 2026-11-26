@@ -2,7 +2,7 @@
   "name": "@free-react-templates/formloom",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://formloom.free.componentdock.com",
+  "homepage": "https://componentdock-demo-formloom.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

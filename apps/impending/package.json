@@ -2,7 +2,7 @@
   "name": "@free-react-templates/impending",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://impending.free.componentdock.com",
+  "homepage": "https://componentdock-demo-impending.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

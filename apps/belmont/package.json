@@ -2,7 +2,7 @@
   "name": "@free-react-templates/belmont",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://belmont.free.componentdock.com",
+  "homepage": "https://componentdock-demo-belmont.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/boldcraft",
   "private": true,
-  "homepage": "https://boldcraft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-boldcraft.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

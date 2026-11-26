@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pearly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pearly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pearly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regpeak",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regpeak.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regpeak.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

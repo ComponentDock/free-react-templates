@@ -2,7 +2,7 @@
   "name": "@free-react-templates/mizzen",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://mizzen.free.componentdock.com",
+  "homepage": "https://componentdock-demo-mizzen.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

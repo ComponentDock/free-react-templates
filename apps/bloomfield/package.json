@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://bloomfield.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bloomfield.surge.sh"
 }

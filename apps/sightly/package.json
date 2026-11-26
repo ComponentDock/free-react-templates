@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/sightly",
   "private": true,
-  "homepage": "https://sightly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sightly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

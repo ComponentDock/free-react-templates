@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://casepoint.free.componentdock.com"
+  "homepage": "https://componentdock-demo-casepoint.surge.sh"
 }

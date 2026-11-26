@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/joystick",
   "private": true,
-  "homepage": "https://joystick.free.componentdock.com",
+  "homepage": "https://componentdock-demo-joystick.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

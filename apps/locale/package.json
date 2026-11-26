@@ -2,7 +2,7 @@
   "name": "@free-react-templates/locale",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://locale.free.componentdock.com",
+  "homepage": "https://componentdock-demo-locale.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://modista.free.componentdock.com"
+  "homepage": "https://componentdock-demo-modista.surge.sh"
 }

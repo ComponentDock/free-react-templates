@@ -27,5 +27,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://pipeflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-pipeflow.surge.sh"
 }

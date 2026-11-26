@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pressline",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pressline.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pressline.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

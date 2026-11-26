@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://medvista.free.componentdock.com"
+  "homepage": "https://componentdock-demo-medvista.surge.sh"
 }

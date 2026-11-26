@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://mocha.free.componentdock.com"
+  "homepage": "https://componentdock-demo-mocha.surge.sh"
 }

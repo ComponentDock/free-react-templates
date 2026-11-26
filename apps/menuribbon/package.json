@@ -2,7 +2,7 @@
   "name": "@free-react-templates/menuribbon",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://menuribbon.free.componentdock.com",
+  "homepage": "https://componentdock-demo-menuribbon.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

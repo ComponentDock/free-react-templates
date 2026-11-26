@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://balancepoint.free.componentdock.com"
+  "homepage": "https://componentdock-demo-balancepoint.surge.sh"
 }
