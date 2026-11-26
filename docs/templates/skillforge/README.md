@@ -1,7 +1,7 @@
 # SkillForge — Prep Notes
 <!-- prep-status: shipped-as=learnpath -->
 > **SHIPPED-UNDER** — the ColorLib `ezuca` design this prep describes already
-> ships as `apps/learnpath` (<https://learnpath.free.componentdock.com>).
+> ships as `apps/learnpath` (<https://componentdock-demo-learnpath.surge.sh>).
 > Do not scaffold `apps/skillforge`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-learnpath/spec.md`.
 

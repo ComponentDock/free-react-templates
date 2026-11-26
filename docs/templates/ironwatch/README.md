@@ -1,7 +1,7 @@
 # IronWatch — Implementation Tasks & Design Notes
 <!-- prep-status: shipped-as=bulwark -->
 > **SHIPPED-UNDER** — the ColorLib `security` design this prep describes already
-> ships as `apps/bulwark` (<https://bulwark.free.componentdock.com>).
+> ships as `apps/bulwark` (<https://componentdock-demo-bulwark.surge.sh>).
 > Do not scaffold `apps/ironwatch`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-bulwark/spec.md`.
 

@@ -1,7 +1,7 @@
 # Chronoboard — Implementation Tasks & Design Notes
 <!-- prep-status: shipped-as=timescape -->
 > **SHIPPED-UNDER** — the ColorLib `calendar-19` design this prep describes shipped
-> as `apps/timescape` (<https://timescape.free.componentdock.com>).
+> as `apps/timescape` (<https://componentdock-demo-timescape.surge.sh>).
 > The unchecked items below are prep history, not outstanding work.
 
 <!-- docs-drift:2026-10-22 -->

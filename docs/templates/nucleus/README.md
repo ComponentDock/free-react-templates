@@ -1,7 +1,7 @@
 # Nucleus — Design Notes & Implementation Tasks
 <!-- prep-status: shipped-as=proton -->
 > **SHIPPED-UNDER** — the ColorLib `atomic` design this prep describes already
-> ships as `apps/proton` (<https://proton.free.componentdock.com>).
+> ships as `apps/proton` (<https://componentdock-demo-proton.surge.sh>).
 > Do not scaffold `apps/nucleus`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-proton/spec.md`.
 
@@ -43,7 +43,7 @@
 - [ ] Copy simplest existing app, rename to `nucleus`
 - [ ] Set package name `@free-react-templates/nucleus`
 - [ ] Update `public/CNAME` to `nucleus.free.componentdock.com`
-- [ ] Update `package.json` homepage to `https://nucleus.free.componentdock.com`
+- [ ] Update `package.json` homepage to `https://componentdock-demo-nucleus.surge.sh`
 - [ ] Run `npm install` at repo root for lockfile registration
 - [ ] Set up `vite.config.ts` with `injectUiSource()`
 - [ ] Set up `src/index.css` with Tailwind + theme tokens

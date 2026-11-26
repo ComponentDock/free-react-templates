@@ -1,7 +1,7 @@
 # FormPilot — Implementation Tasks & Design Notes
 <!-- prep-status: shipped-as=steppr -->
 > **SHIPPED-UNDER** — the ColorLib `colorlib-wizard-21` design this prep describes already
-> ships as `apps/steppr` (<https://steppr.free.componentdock.com>).
+> ships as `apps/steppr` (<https://componentdock-demo-steppr.surge.sh>).
 > Do not scaffold `apps/formpilot`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-steppr/spec.md`.
 

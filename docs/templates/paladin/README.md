@@ -1,7 +1,7 @@
 # Paladin — Implementation Notes
 <!-- prep-status: shipped-as=fragzone -->
 > **SHIPPED-UNDER** — the ColorLib `game-warrior` design this prep describes already
-> ships as `apps/fragzone` (<https://fragzone.free.componentdock.com>).
+> ships as `apps/fragzone` (<https://componentdock-demo-fragzone.surge.sh>).
 > Do not scaffold `apps/paladin`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-fragzone/spec.md`.
 

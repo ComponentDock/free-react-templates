@@ -1,7 +1,7 @@
 # Tradebase — Design Notes & Task Outline
 <!-- prep-status: shipped-as=bizmark -->
 > **SHIPPED-UNDER** — the ColorLib `bizcon` design this prep describes already
-> ships as `apps/bizmark` (<https://bizmark.free.componentdock.com>).
+> ships as `apps/bizmark` (<https://componentdock-demo-bizmark.surge.sh>).
 > Do not scaffold `apps/tradebase`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-bizmark/spec.md`.
 

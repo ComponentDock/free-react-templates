@@ -1,7 +1,7 @@
 # ScholarNest — Implementation Notes
 <!-- prep-status: shipped-as=courselex -->
 > **SHIPPED-UNDER** — the ColorLib `educature` design this prep describes already
-> ships as `apps/courselex` (<https://courselex.free.componentdock.com>).
+> ships as `apps/courselex` (<https://componentdock-demo-courselex.surge.sh>).
 > Do not scaffold `apps/scholarnest`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-courselex/spec.md`.
 

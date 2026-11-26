@@ -1,7 +1,7 @@
 # Carousel Orbit — Task Outline & Design Notes
 <!-- prep-status: shipped-as=slidesync -->
 > **SHIPPED-UNDER** — the ColorLib `carousel-12` design this prep describes already
-> ships as `apps/slidesync` (<https://slidesync.free.componentdock.com>).
+> ships as `apps/slidesync` (<https://componentdock-demo-slidesync.surge.sh>).
 > Do not scaffold `apps/carousel-orbit`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-slidesync/spec.md`.
 

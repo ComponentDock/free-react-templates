@@ -1,7 +1,7 @@
 # Chalet — Implementation Tasks & Design Notes
 <!-- prep-status: shipped-as=lenscape -->
 > **SHIPPED-UNDER** — the ColorLib `schmidt` design this prep describes shipped
-> as `apps/lenscape` (<https://lenscape.free.componentdock.com>).
+> as `apps/lenscape` (<https://componentdock-demo-lenscape.surge.sh>).
 > The unchecked items below are prep history, not outstanding work.
 
 ## Task Outline
@@ -9,7 +9,7 @@
 ### Phase 1: Scaffold & Config
 
 - [x] Create `apps/chalet/` from template (copy `apps/aurora` or simplest existing) — superseded: shipped as `apps/lenscape`
-- [ ] Update `package.json`: name `@free-react-templates/chalet`, homepage `https://chalet.free.componentdock.com`
+- [ ] Update `package.json`: name `@free-react-templates/chalet`, homepage `https://componentdock-demo-chalet.surge.sh`
 - [ ] Add `public/CNAME` with `chalet.free.componentdock.com`
 - [ ] Configure `vite.config.ts` with `injectUiSource()` (copy pattern from existing app)
 - [ ] Run `npm install` at repo root to register workspace in lockfile
