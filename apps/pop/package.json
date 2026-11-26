@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pop",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pop.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pop.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

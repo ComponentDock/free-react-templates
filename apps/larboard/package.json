@@ -2,7 +2,7 @@
   "name": "@free-react-templates/larboard",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://larboard.free.componentdock.com",
+  "homepage": "https://componentdock-demo-larboard.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

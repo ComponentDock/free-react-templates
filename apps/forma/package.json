@@ -2,7 +2,7 @@
   "name": "@free-react-templates/forma",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://forma.free.componentdock.com",
+  "homepage": "https://componentdock-demo-forma.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

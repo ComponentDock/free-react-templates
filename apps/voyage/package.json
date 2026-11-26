@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://voyage.free.componentdock.com"
+  "homepage": "https://componentdock-demo-voyage.surge.sh"
 }

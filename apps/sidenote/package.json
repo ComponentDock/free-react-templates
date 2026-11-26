@@ -2,7 +2,7 @@
   "name": "@free-react-templates/sidenote",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://sidenote.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sidenote.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

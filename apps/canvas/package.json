@@ -30,5 +30,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://canvas.free.componentdock.com"
+  "homepage": "https://componentdock-demo-canvas.surge.sh"
 }

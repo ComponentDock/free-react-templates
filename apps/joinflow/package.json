@@ -2,7 +2,7 @@
   "name": "@free-react-templates/joinflow",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://joinflow.free.componentdock.com",
+  "homepage": "https://componentdock-demo-joinflow.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

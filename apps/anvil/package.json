@@ -2,7 +2,7 @@
   "name": "@free-react-templates/anvil",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://anvil.free.componentdock.com",
+  "homepage": "https://componentdock-demo-anvil.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

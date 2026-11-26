@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://threadline.free.componentdock.com"
+  "homepage": "https://componentdock-demo-threadline.surge.sh"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/bizplanner",
   "private": true,
-  "homepage": "https://bizplanner.free.componentdock.com",
+  "homepage": "https://componentdock-demo-bizplanner.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

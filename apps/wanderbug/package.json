@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://wanderbug.free.componentdock.com"
+  "homepage": "https://componentdock-demo-wanderbug.surge.sh"
 }

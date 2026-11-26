@@ -2,7 +2,7 @@
   "name": "@free-react-templates/davit",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://davit.free.componentdock.com",
+  "homepage": "https://componentdock-demo-davit.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

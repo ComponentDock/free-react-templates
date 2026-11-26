@@ -2,7 +2,7 @@
   "name": "@free-react-templates/calwave",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://calwave.free.componentdock.com",
+  "homepage": "https://componentdock-demo-calwave.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

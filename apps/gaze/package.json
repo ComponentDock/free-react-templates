@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gaze",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gaze.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gaze.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

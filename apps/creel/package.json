@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/creel",
   "private": true,
-  "homepage": "https://creel.free.componentdock.com",
+  "homepage": "https://componentdock-demo-creel.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://orbiter.free.componentdock.com"
+  "homepage": "https://componentdock-demo-orbiter.surge.sh"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/netrise",
   "private": true,
-  "homepage": "https://netrise.free.componentdock.com",
+  "homepage": "https://componentdock-demo-netrise.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

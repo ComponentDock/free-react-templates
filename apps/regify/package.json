@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://regify.free.componentdock.com"
+  "homepage": "https://componentdock-demo-regify.surge.sh"
 }

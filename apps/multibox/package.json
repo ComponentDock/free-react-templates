@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://multibox.free.componentdock.com"
+  "homepage": "https://componentdock-demo-multibox.surge.sh"
 }

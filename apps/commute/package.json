@@ -2,7 +2,7 @@
   "name": "@free-react-templates/commute",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://commute.free.componentdock.com",
+  "homepage": "https://componentdock-demo-commute.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

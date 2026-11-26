@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vetora",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vetora.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vetora.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/windlass",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://windlass.free.componentdock.com",
+  "homepage": "https://componentdock-demo-windlass.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

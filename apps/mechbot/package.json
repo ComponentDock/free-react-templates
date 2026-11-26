@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://mechbot.free.componentdock.com"
+  "homepage": "https://componentdock-demo-mechbot.surge.sh"
 }

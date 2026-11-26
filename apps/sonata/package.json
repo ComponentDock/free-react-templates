@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/sonata",
   "private": true,
-  "homepage": "https://sonata.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sonata.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

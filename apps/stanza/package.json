@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/stanza",
   "private": true,
-  "homepage": "https://stanza.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stanza.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

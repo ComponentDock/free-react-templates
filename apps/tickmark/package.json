@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tickmark.free.componentdock.com"
+  "homepage": "https://componentdock-demo-tickmark.surge.sh"
 }

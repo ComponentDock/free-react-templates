@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://codex.free.componentdock.com"
+  "homepage": "https://componentdock-demo-codex.surge.sh"
 }

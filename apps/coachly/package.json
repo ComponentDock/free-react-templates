@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://coachly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-coachly.surge.sh"
 }

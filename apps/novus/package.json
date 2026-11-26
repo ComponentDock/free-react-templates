@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/novus",
   "private": true,
-  "homepage": "https://novus.free.componentdock.com",
+  "homepage": "https://componentdock-demo-novus.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

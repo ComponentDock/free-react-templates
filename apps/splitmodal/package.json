@@ -2,7 +2,7 @@
   "name": "@free-react-templates/splitmodal",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://splitmodal.free.componentdock.com",
+  "homepage": "https://componentdock-demo-splitmodal.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

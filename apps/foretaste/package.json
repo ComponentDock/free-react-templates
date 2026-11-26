@@ -2,7 +2,7 @@
   "name": "@free-react-templates/foretaste",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://foretaste.free.componentdock.com",
+  "homepage": "https://componentdock-demo-foretaste.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

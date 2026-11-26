@@ -2,7 +2,7 @@
   "name": "@free-react-templates/alpinora",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://alpinora.free.componentdock.com",
+  "homepage": "https://componentdock-demo-alpinora.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/scholar",
   "private": true,
-  "homepage": "https://scholar.free.componentdock.com",
+  "homepage": "https://componentdock-demo-scholar.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

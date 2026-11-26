@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/postbox",
   "private": true,
-  "homepage": "https://postbox.free.componentdock.com",
+  "homepage": "https://componentdock-demo-postbox.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

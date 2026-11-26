@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://chamfer.free.componentdock.com"
+  "homepage": "https://componentdock-demo-chamfer.surge.sh"
 }

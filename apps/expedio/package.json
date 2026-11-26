@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/expedio",
   "private": true,
-  "homepage": "https://expedio.free.componentdock.com",
+  "homepage": "https://componentdock-demo-expedio.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

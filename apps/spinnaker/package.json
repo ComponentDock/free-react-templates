@@ -2,7 +2,7 @@
   "name": "@free-react-templates/spinnaker",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://spinnaker.free.componentdock.com",
+  "homepage": "https://componentdock-demo-spinnaker.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

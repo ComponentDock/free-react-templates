@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://mandrel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-mandrel.surge.sh"
 }

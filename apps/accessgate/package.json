@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://accessgate.free.componentdock.com"
+  "homepage": "https://componentdock-demo-accessgate.surge.sh"
 }

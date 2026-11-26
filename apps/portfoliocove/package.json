@@ -2,7 +2,7 @@
   "name": "@free-react-templates/portfoliocove",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://portfoliocove.free.componentdock.com",
+  "homepage": "https://componentdock-demo-portfoliocove.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

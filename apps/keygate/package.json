@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://keygate.free.componentdock.com"
+  "homepage": "https://componentdock-demo-keygate.surge.sh"
 }

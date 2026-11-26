@@ -2,7 +2,7 @@
   "name": "@free-react-templates/keystone",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://keystone.free.componentdock.com",
+  "homepage": "https://componentdock-demo-keystone.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://calmark.free.componentdock.com"
+  "homepage": "https://componentdock-demo-calmark.surge.sh"
 }

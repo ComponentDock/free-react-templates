@@ -2,7 +2,7 @@
   "name": "@free-react-templates/taper",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://taper.free.componentdock.com",
+  "homepage": "https://componentdock-demo-taper.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

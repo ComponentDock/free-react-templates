@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://ochre.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ochre.surge.sh"
 }

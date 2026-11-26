@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vizier",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vizier.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vizier.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://banknote.free.componentdock.com"
+  "homepage": "https://componentdock-demo-banknote.surge.sh"
 }

@@ -30,6 +30,6 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://landmark.free.componentdock.com",
+  "homepage": "https://componentdock-demo-landmark.surge.sh",
   "description": "Landmark — a free real-estate one-page template with property search, featured listings, services and agents, built with React, Tailwind CSS, and TypeScript."
 }

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://steppr.free.componentdock.com"
+  "homepage": "https://componentdock-demo-steppr.surge.sh"
 }

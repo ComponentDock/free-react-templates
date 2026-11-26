@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://exposely.free.componentdock.com"
+  "homepage": "https://componentdock-demo-exposely.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/glitch",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://glitch.free.componentdock.com",
+  "homepage": "https://componentdock-demo-glitch.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

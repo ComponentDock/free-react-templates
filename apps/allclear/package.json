@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/allclear",
   "private": true,
-  "homepage": "https://allclear.free.componentdock.com",
+  "homepage": "https://componentdock-demo-allclear.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

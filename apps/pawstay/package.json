@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pawstay",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pawstay.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pawstay.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

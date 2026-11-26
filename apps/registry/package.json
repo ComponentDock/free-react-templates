@@ -2,7 +2,7 @@
   "name": "@free-react-templates/registry",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://registry.free.componentdock.com",
+  "homepage": "https://componentdock-demo-registry.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

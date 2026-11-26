@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://spotless.free.componentdock.com"
+  "homepage": "https://componentdock-demo-spotless.surge.sh"
 }

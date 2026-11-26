@@ -2,7 +2,7 @@
   "name": "@free-react-templates/truss",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://truss.free.componentdock.com",
+  "homepage": "https://componentdock-demo-truss.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -33,5 +33,5 @@
     "vitest": "latest",
     "@vitest/coverage-v8": "latest"
   },
-  "homepage": "https://menubox.free.componentdock.com"
+  "homepage": "https://componentdock-demo-menubox.surge.sh"
 }

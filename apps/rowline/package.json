@@ -2,7 +2,7 @@
   "name": "@free-react-templates/rowline",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://rowline.free.componentdock.com",
+  "homepage": "https://componentdock-demo-rowline.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

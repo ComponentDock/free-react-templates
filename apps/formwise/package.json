@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://formwise.free.componentdock.com"
+  "homepage": "https://componentdock-demo-formwise.surge.sh"
 }

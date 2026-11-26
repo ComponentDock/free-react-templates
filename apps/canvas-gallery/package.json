@@ -2,7 +2,7 @@
   "name": "@free-react-templates/canvas-gallery",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://canvas-gallery.free.componentdock.com",
+  "homepage": "https://componentdock-demo-canvas-gallery.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

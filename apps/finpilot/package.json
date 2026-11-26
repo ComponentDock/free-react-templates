@@ -2,7 +2,7 @@
   "name": "@free-react-templates/finpilot",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://finpilot.free.componentdock.com",
+  "homepage": "https://componentdock-demo-finpilot.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

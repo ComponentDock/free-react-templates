@@ -2,7 +2,7 @@
   "name": "@free-react-templates/dapper",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://dapper.free.componentdock.com",
+  "homepage": "https://componentdock-demo-dapper.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

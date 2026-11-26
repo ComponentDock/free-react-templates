@@ -30,5 +30,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://gearly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-gearly.surge.sh"
 }

@@ -30,5 +30,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://quill.free.componentdock.com"
+  "homepage": "https://componentdock-demo-quill.surge.sh"
 }

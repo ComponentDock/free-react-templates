@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/docket",
   "private": true,
-  "homepage": "https://docket.free.componentdock.com",
+  "homepage": "https://componentdock-demo-docket.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

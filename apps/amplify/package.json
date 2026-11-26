@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/amplify",
   "private": true,
-  "homepage": "https://amplify.free.componentdock.com",
+  "homepage": "https://componentdock-demo-amplify.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

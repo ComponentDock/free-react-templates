@@ -2,7 +2,7 @@
   "name": "@free-react-templates/carouseten",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://carouseten.free.componentdock.com",
+  "homepage": "https://componentdock-demo-carouseten.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

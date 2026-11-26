@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://morph.free.componentdock.com"
+  "homepage": "https://componentdock-demo-morph.surge.sh"
 }

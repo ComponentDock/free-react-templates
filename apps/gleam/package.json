@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://gleam.free.componentdock.com"
+  "homepage": "https://componentdock-demo-gleam.surge.sh"
 }

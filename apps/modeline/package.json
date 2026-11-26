@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://modeline.free.componentdock.com"
+  "homepage": "https://componentdock-demo-modeline.surge.sh"
 }

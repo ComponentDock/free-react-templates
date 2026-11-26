@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/tiffin",
   "private": true,
-  "homepage": "https://tiffin.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tiffin.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

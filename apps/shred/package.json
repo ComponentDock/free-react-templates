@@ -2,7 +2,7 @@
   "name": "@free-react-templates/shred",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://shred.free.componentdock.com",
+  "homepage": "https://componentdock-demo-shred.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

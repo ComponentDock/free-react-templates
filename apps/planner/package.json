@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://planner.free.componentdock.com"
+  "homepage": "https://componentdock-demo-planner.surge.sh"
 }

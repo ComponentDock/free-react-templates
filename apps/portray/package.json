@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://portray.free.componentdock.com"
+  "homepage": "https://componentdock-demo-portray.surge.sh"
 }

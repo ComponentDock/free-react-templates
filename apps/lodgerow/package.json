@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lodgerow",
   "private": true,
-  "homepage": "https://lodgerow.free.componentdock.com",
+  "homepage": "https://componentdock-demo-lodgerow.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

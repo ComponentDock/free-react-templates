@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/indigo",
   "private": true,
-  "homepage": "https://indigo.free.componentdock.com",
+  "homepage": "https://componentdock-demo-indigo.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

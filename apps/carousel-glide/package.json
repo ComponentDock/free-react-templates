@@ -33,5 +33,5 @@
     "vitest": "latest",
     "@vitest/coverage-v8": "latest"
   },
-  "homepage": "https://carousel-glide.free.componentdock.com"
+  "homepage": "https://componentdock-demo-carousel-glide.surge.sh"
 }

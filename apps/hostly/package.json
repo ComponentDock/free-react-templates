@@ -29,5 +29,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://hostly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-hostly.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/mintly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://mintly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-mintly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

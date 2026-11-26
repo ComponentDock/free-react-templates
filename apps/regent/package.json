@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/regent",
   "private": true,
-  "homepage": "https://regent.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regent.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

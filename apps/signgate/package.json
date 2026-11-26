@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://signgate.free.componentdock.com"
+  "homepage": "https://componentdock-demo-signgate.surge.sh"
 }

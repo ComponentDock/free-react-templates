@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginveil",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginveil.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginveil.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

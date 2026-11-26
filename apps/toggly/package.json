@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://toggly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-toggly.surge.sh"
 }

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dropslide.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dropslide.surge.sh"
 }

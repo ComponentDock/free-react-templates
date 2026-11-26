@@ -2,7 +2,7 @@
   "name": "@free-react-templates/contactwave",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://contactwave.free.componentdock.com",
+  "homepage": "https://componentdock-demo-contactwave.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/filtera",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://filtera.free.componentdock.com",
+  "homepage": "https://componentdock-demo-filtera.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

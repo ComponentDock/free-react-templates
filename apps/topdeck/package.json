@@ -2,7 +2,7 @@
   "name": "@free-react-templates/topdeck",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://topdeck.free.componentdock.com",
+  "homepage": "https://componentdock-demo-topdeck.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

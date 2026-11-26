@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://roam.free.componentdock.com"
+  "homepage": "https://componentdock-demo-roam.surge.sh"
 }

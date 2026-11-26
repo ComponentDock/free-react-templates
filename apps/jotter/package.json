@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jotter.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jotter.surge.sh"
 }

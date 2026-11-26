@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://vynl.free.componentdock.com"
+  "homepage": "https://componentdock-demo-vynl.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://rally.free.componentdock.com"
+  "homepage": "https://componentdock-demo-rally.surge.sh"
 }

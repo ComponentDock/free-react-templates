@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://flair.free.componentdock.com"
+  "homepage": "https://componentdock-demo-flair.surge.sh"
 }

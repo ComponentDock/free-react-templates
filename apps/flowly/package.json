@@ -2,7 +2,7 @@
   "name": "@free-react-templates/flowly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://flowly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-flowly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

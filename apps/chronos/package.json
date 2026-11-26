@@ -2,7 +2,7 @@
   "name": "@free-react-templates/chronos",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://chronos.free.componentdock.com",
+  "homepage": "https://componentdock-demo-chronos.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

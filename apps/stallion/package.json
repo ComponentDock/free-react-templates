@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://stallion.free.componentdock.com"
+  "homepage": "https://componentdock-demo-stallion.surge.sh"
 }

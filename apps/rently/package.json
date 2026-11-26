@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://rently.free.componentdock.com"
+  "homepage": "https://componentdock-demo-rently.surge.sh"
 }

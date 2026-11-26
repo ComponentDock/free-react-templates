@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://slugger.free.componentdock.com"
+  "homepage": "https://componentdock-demo-slugger.surge.sh"
 }

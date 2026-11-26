@@ -2,7 +2,7 @@
   "name": "@free-react-templates/awaited",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://awaited.free.componentdock.com",
+  "homepage": "https://componentdock-demo-awaited.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

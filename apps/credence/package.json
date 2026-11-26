@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://credence.free.componentdock.com"
+  "homepage": "https://componentdock-demo-credence.surge.sh"
 }

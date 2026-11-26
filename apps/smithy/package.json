@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://smithy.free.componentdock.com"
+  "homepage": "https://componentdock-demo-smithy.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/reverie",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://reverie.free.componentdock.com",
+  "homepage": "https://componentdock-demo-reverie.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

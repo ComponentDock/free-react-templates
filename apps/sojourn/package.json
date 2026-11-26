@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://sojourn.free.componentdock.com"
+  "homepage": "https://componentdock-demo-sojourn.surge.sh"
 }

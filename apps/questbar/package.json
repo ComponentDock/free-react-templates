@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://questbar.free.componentdock.com"
+  "homepage": "https://componentdock-demo-questbar.surge.sh"
 }

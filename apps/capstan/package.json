@@ -2,7 +2,7 @@
   "name": "@free-react-templates/capstan",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://capstan.free.componentdock.com",
+  "homepage": "https://componentdock-demo-capstan.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

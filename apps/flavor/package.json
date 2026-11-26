@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://flavor.free.componentdock.com"
+  "homepage": "https://componentdock-demo-flavor.surge.sh"
 }

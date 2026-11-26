@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/sonance",
   "private": true,
-  "homepage": "https://sonance.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sonance.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

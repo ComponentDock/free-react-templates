@@ -2,7 +2,7 @@
   "name": "@free-react-templates/pieslice",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://pieslice.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pieslice.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

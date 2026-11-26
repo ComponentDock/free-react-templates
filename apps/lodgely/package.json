@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lodgely",
   "private": true,
-  "homepage": "https://lodgely.free.componentdock.com",
+  "homepage": "https://componentdock-demo-lodgely.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

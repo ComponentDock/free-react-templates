@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/notebell",
   "private": true,
-  "homepage": "https://notebell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-notebell.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

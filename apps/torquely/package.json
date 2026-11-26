@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://torquely.free.componentdock.com"
+  "homepage": "https://componentdock-demo-torquely.surge.sh"
 }

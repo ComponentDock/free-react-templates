@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/venuepoint",
   "private": true,
-  "homepage": "https://venuepoint.free.componentdock.com",
+  "homepage": "https://componentdock-demo-venuepoint.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

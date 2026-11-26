@@ -30,5 +30,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://bistro.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bistro.surge.sh"
 }

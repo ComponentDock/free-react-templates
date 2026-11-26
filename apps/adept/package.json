@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://adept.free.componentdock.com"
+  "homepage": "https://componentdock-demo-adept.surge.sh"
 }

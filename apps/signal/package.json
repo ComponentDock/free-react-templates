@@ -2,7 +2,7 @@
   "name": "@free-react-templates/signal",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://signal.free.componentdock.com",
+  "homepage": "https://componentdock-demo-signal.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

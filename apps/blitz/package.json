@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://blitz.free.componentdock.com"
+  "homepage": "https://componentdock-demo-blitz.surge.sh"
 }

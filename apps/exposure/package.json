@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://exposure.free.componentdock.com"
+  "homepage": "https://componentdock-demo-exposure.surge.sh"
 }

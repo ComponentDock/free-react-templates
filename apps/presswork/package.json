@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/presswork",
   "private": true,
-  "homepage": "https://presswork.free.componentdock.com",
+  "homepage": "https://componentdock-demo-presswork.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/harbinger",
   "private": true,
-  "homepage": "https://harbinger.free.componentdock.com",
+  "homepage": "https://componentdock-demo-harbinger.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

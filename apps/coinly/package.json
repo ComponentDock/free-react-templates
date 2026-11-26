@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://coinly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-coinly.surge.sh"
 }

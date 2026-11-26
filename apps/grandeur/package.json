@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/grandeur",
   "private": true,
-  "homepage": "https://grandeur.free.componentdock.com",
+  "homepage": "https://componentdock-demo-grandeur.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

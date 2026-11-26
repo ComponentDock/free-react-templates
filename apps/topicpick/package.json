@@ -2,7 +2,7 @@
   "name": "@free-react-templates/topicpick",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://topicpick.free.componentdock.com",
+  "homepage": "https://componentdock-demo-topicpick.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

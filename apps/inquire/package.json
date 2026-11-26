@@ -2,7 +2,7 @@
   "name": "@free-react-templates/inquire",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://inquire.free.componentdock.com",
+  "homepage": "https://componentdock-demo-inquire.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

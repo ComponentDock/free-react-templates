@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://rivulet.free.componentdock.com"
+  "homepage": "https://componentdock-demo-rivulet.surge.sh"
 }

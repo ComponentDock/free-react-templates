@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vitesse",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vitesse.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vitesse.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

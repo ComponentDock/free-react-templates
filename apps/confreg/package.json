@@ -2,7 +2,7 @@
   "name": "@free-react-templates/confreg",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://confreg.free.componentdock.com",
+  "homepage": "https://componentdock-demo-confreg.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

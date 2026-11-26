@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dockyard.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dockyard.surge.sh"
 }

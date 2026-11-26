@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/dictum",
   "private": true,
-  "homepage": "https://dictum.free.componentdock.com",
+  "homepage": "https://componentdock-demo-dictum.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

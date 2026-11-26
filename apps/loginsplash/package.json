@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginsplash",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginsplash.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginsplash.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/travelogue",
   "private": true,
-  "homepage": "https://travelogue.free.componentdock.com",
+  "homepage": "https://componentdock-demo-travelogue.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

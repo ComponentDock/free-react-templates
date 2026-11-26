@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/concierge",
   "private": true,
-  "homepage": "https://concierge.free.componentdock.com",
+  "homepage": "https://componentdock-demo-concierge.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

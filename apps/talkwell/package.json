@@ -2,7 +2,7 @@
   "name": "@free-react-templates/talkwell",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://talkwell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-talkwell.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

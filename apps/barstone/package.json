@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://barstone.free.componentdock.com"
+  "homepage": "https://componentdock-demo-barstone.surge.sh"
 }

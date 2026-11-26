@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://unison.free.componentdock.com"
+  "homepage": "https://componentdock-demo-unison.surge.sh"
 }

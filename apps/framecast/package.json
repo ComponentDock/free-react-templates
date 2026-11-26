@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://framecast.free.componentdock.com"
+  "homepage": "https://componentdock-demo-framecast.surge.sh"
 }

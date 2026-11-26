@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/keycraft",
   "private": true,
-  "homepage": "https://keycraft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-keycraft.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

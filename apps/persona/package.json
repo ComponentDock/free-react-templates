@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://persona.free.componentdock.com"
+  "homepage": "https://componentdock-demo-persona.surge.sh"
 }

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://msgdrop.free.componentdock.com"
+  "homepage": "https://componentdock-demo-msgdrop.surge.sh"
 }

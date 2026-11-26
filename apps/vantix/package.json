@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vantix",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vantix.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vantix.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/serverly",
   "private": true,
-  "homepage": "https://serverly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-serverly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

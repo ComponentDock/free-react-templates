@@ -2,7 +2,7 @@
   "name": "@free-react-templates/seekmint",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://seekmint.free.componentdock.com",
+  "homepage": "https://componentdock-demo-seekmint.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

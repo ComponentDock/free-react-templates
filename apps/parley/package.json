@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://parley.free.componentdock.com"
+  "homepage": "https://componentdock-demo-parley.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/logdrop",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://logdrop.free.componentdock.com",
+  "homepage": "https://componentdock-demo-logdrop.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

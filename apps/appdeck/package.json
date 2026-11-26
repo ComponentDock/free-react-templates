@@ -2,7 +2,7 @@
   "name": "@free-react-templates/appdeck",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://appdeck.free.componentdock.com",
+  "homepage": "https://componentdock-demo-appdeck.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

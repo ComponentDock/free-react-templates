@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://uplink.free.componentdock.com"
+  "homepage": "https://componentdock-demo-uplink.surge.sh"
 }

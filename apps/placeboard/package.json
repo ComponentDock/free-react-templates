@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://placeboard.free.componentdock.com"
+  "homepage": "https://componentdock-demo-placeboard.surge.sh"
 }

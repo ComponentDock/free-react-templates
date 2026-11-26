@@ -2,7 +2,7 @@
   "name": "@free-react-templates/accessway",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://accessway.free.componentdock.com",
+  "homepage": "https://componentdock-demo-accessway.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

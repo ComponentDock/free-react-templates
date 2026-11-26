@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://vendio.free.componentdock.com"
+  "homepage": "https://componentdock-demo-vendio.surge.sh"
 }

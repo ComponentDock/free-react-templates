@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://forger.free.componentdock.com"
+  "homepage": "https://componentdock-demo-forger.surge.sh"
 }

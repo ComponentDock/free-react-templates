@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dropvex.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dropvex.surge.sh"
 }

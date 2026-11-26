@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://kindred.free.componentdock.com"
+  "homepage": "https://componentdock-demo-kindred.surge.sh"
 }

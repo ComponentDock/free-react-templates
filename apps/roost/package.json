@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://roost.free.componentdock.com"
+  "homepage": "https://componentdock-demo-roost.surge.sh"
 }

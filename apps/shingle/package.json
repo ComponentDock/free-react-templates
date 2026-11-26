@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://shingle.free.componentdock.com"
+  "homepage": "https://componentdock-demo-shingle.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://bluecoast.free.componentdock.com"
+  "homepage": "https://componentdock-demo-bluecoast.surge.sh"
 }

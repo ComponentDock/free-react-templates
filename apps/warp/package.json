@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://warp.free.componentdock.com"
+  "homepage": "https://componentdock-demo-warp.surge.sh"
 }

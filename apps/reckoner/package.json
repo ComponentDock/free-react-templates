@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/reckoner",
   "private": true,
-  "homepage": "https://reckoner.free.componentdock.com",
+  "homepage": "https://componentdock-demo-reckoner.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

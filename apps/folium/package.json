@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://folium.free.componentdock.com"
+  "homepage": "https://componentdock-demo-folium.surge.sh"
 }

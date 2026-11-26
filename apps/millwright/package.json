@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://millwright.free.componentdock.com"
+  "homepage": "https://componentdock-demo-millwright.surge.sh"
 }

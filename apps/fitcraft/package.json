@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/fitcraft",
   "private": true,
-  "homepage": "https://fitcraft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-fitcraft.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

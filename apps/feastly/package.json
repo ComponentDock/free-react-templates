@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/feastly",
   "private": true,
-  "homepage": "https://feastly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-feastly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/searchflow",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://searchflow.free.componentdock.com",
+  "homepage": "https://componentdock-demo-searchflow.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

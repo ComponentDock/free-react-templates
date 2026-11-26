@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/cruiser",
   "private": true,
-  "homepage": "https://cruiser.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cruiser.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://sanctuary.free.componentdock.com"
+  "homepage": "https://componentdock-demo-sanctuary.surge.sh"
 }

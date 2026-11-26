@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/playbook",
   "private": true,
-  "homepage": "https://playbook.free.componentdock.com",
+  "homepage": "https://componentdock-demo-playbook.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

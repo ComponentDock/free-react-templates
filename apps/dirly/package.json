@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dirly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dirly.surge.sh"
 }

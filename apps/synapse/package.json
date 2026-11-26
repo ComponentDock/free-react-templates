@@ -2,7 +2,7 @@
   "name": "@free-react-templates/synapse",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://synapse.free.componentdock.com",
+  "homepage": "https://componentdock-demo-synapse.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

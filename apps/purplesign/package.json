@@ -2,7 +2,7 @@
   "name": "@free-react-templates/purplesign",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://purplesign.free.componentdock.com",
+  "homepage": "https://componentdock-demo-purplesign.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

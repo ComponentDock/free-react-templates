@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://flint.free.componentdock.com"
+  "homepage": "https://componentdock-demo-flint.surge.sh"
 }

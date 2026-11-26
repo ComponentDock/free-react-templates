@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://vex.free.componentdock.com"
+  "homepage": "https://componentdock-demo-vex.surge.sh"
 }

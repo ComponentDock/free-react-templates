@@ -2,7 +2,7 @@
   "name": "@free-react-templates/appmint",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://appmint.free.componentdock.com",
+  "homepage": "https://componentdock-demo-appmint.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regcraft",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regcraft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regcraft.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

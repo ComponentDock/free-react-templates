@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/runrate",
   "private": true,
-  "homepage": "https://runrate.free.componentdock.com",
+  "homepage": "https://componentdock-demo-runrate.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

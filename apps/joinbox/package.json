@@ -2,7 +2,7 @@
   "name": "@free-react-templates/joinbox",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://joinbox.free.componentdock.com",
+  "homepage": "https://componentdock-demo-joinbox.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

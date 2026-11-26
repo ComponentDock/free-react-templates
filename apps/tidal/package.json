@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tidal.free.componentdock.com"
+  "homepage": "https://componentdock-demo-tidal.surge.sh"
 }

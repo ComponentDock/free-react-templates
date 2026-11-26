@@ -2,7 +2,7 @@
   "name": "@free-react-templates/scholarly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://scholarly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-scholarly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://treadly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-treadly.surge.sh"
 }

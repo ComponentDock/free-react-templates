@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://statelist.free.componentdock.com"
+  "homepage": "https://componentdock-demo-statelist.surge.sh"
 }

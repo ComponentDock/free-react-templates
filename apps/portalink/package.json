@@ -2,7 +2,7 @@
   "name": "@free-react-templates/portalink",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://portalink.free.componentdock.com",
+  "homepage": "https://componentdock-demo-portalink.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

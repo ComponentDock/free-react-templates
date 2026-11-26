@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://loanpilot.free.componentdock.com"
+  "homepage": "https://componentdock-demo-loanpilot.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vetly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vetly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vetly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

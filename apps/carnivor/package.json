@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://carnivor.free.componentdock.com"
+  "homepage": "https://componentdock-demo-carnivor.surge.sh"
 }

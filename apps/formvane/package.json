@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://formvane.free.componentdock.com"
+  "homepage": "https://componentdock-demo-formvane.surge.sh"
 }

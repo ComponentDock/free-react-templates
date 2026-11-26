@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gridkit",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gridkit.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gridkit.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

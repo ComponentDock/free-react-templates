@@ -2,7 +2,7 @@
   "name": "@free-react-templates/stylely",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://stylely.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stylely.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

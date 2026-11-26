@@ -33,5 +33,5 @@
     "vitest": "latest",
     "@vitest/coverage-v8": "latest"
   },
-  "homepage": "https://spinwheel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-spinwheel.surge.sh"
 }

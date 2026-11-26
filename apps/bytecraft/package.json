@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/bytecraft",
   "private": true,
-  "homepage": "https://bytecraft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-bytecraft.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

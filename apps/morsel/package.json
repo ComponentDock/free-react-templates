@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://morsel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-morsel.surge.sh"
 }

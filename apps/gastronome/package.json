@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://gastronome.free.componentdock.com"
+  "homepage": "https://componentdock-demo-gastronome.surge.sh"
 }

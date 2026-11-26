@@ -30,5 +30,5 @@
     "typescript": "^5.7.3",
     "vite": "latest"
   },
-  "homepage": "https://searchgate.free.componentdock.com"
+  "homepage": "https://componentdock-demo-searchgate.surge.sh"
 }

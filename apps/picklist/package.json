@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://picklist.free.componentdock.com"
+  "homepage": "https://componentdock-demo-picklist.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/adviso",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://adviso.free.componentdock.com",
+  "homepage": "https://componentdock-demo-adviso.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",
