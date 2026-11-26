@@ -1,7 +1,7 @@
 # Bookwright — Implementation Task Outline
 <!-- prep-status: shipped-as=reckoner -->
 > **SHIPPED-UNDER** — the ColorLib `book-keeping` design this prep describes already
-> ships as `apps/reckoner` (<https://reckoner.free.componentdock.com>).
+> ships as `apps/reckoner` (<https://componentdock-demo-reckoner.surge.sh>).
 > Do not scaffold `apps/bookwright`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-reckoner/spec.md`.
 

@@ -1,7 +1,7 @@
 # Roundabout (Carousel V06) — Tasks & Design Notes
 <!-- prep-status: shipped-as=slidespot -->
 > **SHIPPED-UNDER** — the ColorLib `carousel-06` design this prep describes already
-> ships as `apps/slidespot` (<https://slidespot.free.componentdock.com>).
+> ships as `apps/slidespot` (<https://componentdock-demo-slidespot.surge.sh>).
 > Do not scaffold `apps/roundabout`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-slidespot/spec.md`.
 

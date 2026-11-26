@@ -1,7 +1,7 @@
 # Loginsphere — Implementation Notes
 <!-- prep-status: shipped-as=portalink -->
 > **SHIPPED-UNDER** — the ColorLib `login-form-15` design this prep describes already
-> ships as `apps/portalink` (<https://portalink.free.componentdock.com>).
+> ships as `apps/portalink` (<https://componentdock-demo-portalink.surge.sh>).
 > Do not scaffold `apps/loginsphere`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-portalink/spec.md`.
 

@@ -1,7 +1,7 @@
 # Carouseldash — Implementation Tasks & Design Notes
 <!-- prep-status: shipped-as=carousel-glide -->
 > **SHIPPED-UNDER** — the ColorLib `carousel-18` design this prep describes already
-> ships as `apps/carousel-glide` (<https://carousel-glide.free.componentdock.com>).
+> ships as `apps/carousel-glide` (<https://componentdock-demo-carousel-glide.surge.sh>).
 > Do not scaffold `apps/carouseldash`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-carousel-glide/spec.md`.
 
@@ -97,7 +97,7 @@ src/
 
 - [ ] Scaffold app: copy simplest existing app, rename to `carouseldash`, package `@free-react-templates/carouseldash`
 - [ ] Add `public/CNAME` → `carouseldash.free.componentdock.com`
-- [ ] Add `homepage` in package.json → `https://carouseldash.free.componentdock.com`
+- [ ] Add `homepage` in package.json → `https://componentdock-demo-carouseldash.surge.sh`
 - [ ] Run `npm install` at repo root (registers workspace in lockfile)
 - [ ] Configure `vite.config.ts` with `injectUiSource()`
 - [ ] Add Google Fonts to `index.html`

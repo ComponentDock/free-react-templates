@@ -1,7 +1,7 @@
 # Toolshed — Design Notes & Task Outline
 <!-- prep-status: shipped-as=toolkit -->
 > **SHIPPED-UNDER** — the ColorLib `tools-ui-kit` design this prep describes already
-> ships as `apps/toolkit` (<https://toolkit.free.componentdock.com>).
+> ships as `apps/toolkit` (<https://componentdock-demo-toolkit.surge.sh>).
 > Do not scaffold `apps/toolshed`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-toolkit/spec.md`.
 

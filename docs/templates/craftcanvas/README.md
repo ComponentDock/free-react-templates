@@ -1,7 +1,7 @@
 # CraftCanvas — Prep Notes & Task Outline
 <!-- prep-status: shipped-as=atelier -->
 > **SHIPPED-UNDER** — the ColorLib `design` design this prep describes shipped
-> as `apps/atelier` (<https://atelier.free.componentdock.com>).
+> as `apps/atelier` (<https://componentdock-demo-atelier.surge.sh>).
 > The unchecked items below are prep history, not outstanding work.
 
 Source: ColorLib "Design" → https://colorlib.com/wp/template/design/

@@ -1,7 +1,7 @@
 # TripNest -- Implementation Notes
 <!-- prep-status: shipped-as=treklore -->
 > **SHIPPED-UNDER** — the ColorLib `travello` design this prep describes already
-> ships as `apps/treklore` (<https://treklore.free.componentdock.com>).
+> ships as `apps/treklore` (<https://componentdock-demo-treklore.surge.sh>).
 > Do not scaffold `apps/tripnest`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-treklore/spec.md`.
 

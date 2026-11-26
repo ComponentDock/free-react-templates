@@ -1,7 +1,7 @@
 # Tripselect — Implementation Notes
 <!-- prep-status: shipped-as=optflow -->
 > **SHIPPED-UNDER** — the ColorLib `multiselect-20` design this prep describes already
-> ships as `apps/optflow` (<https://optflow.free.componentdock.com>).
+> ships as `apps/optflow` (<https://componentdock-demo-optflow.surge.sh>).
 > Do not scaffold `apps/tripselect`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-optflow/spec.md`.
 

@@ -1,7 +1,7 @@
 # Consultflow — Implementation Task Outline
 <!-- prep-status: shipped-as=stratagem -->
 > **SHIPPED-UNDER** — the ColorLib `conbusi` design this prep describes already
-> ships as `apps/stratagem` (<https://stratagem.free.componentdock.com>).
+> ships as `apps/stratagem` (<https://componentdock-demo-stratagem.surge.sh>).
 > Do not scaffold `apps/consultflow`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-stratagem/spec.md`.
 

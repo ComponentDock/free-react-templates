@@ -1,7 +1,7 @@
 # Mentorly — Implementation Todo & Design Notes
 <!-- prep-status: shipped-as=northstar -->
 > **SHIPPED-UNDER** — the ColorLib `coach` design this prep describes shipped
-> as `apps/northstar` (<https://northstar.free.componentdock.com>).
+> as `apps/northstar` (<https://componentdock-demo-northstar.surge.sh>).
 > The unchecked items below are prep history, not outstanding work.
 
 ## Source
@@ -15,7 +15,7 @@
 - [x] Copy simplest existing app (e.g. `apps/clarity`) to `apps/mentorly` — superseded: shipped as `apps/northstar`
 - [ ] Rename package to `@free-react-templates/mentorly`
 - [ ] Create `public/CNAME` with `mentorly.free.componentdock.com`
-- [ ] Update `package.json` homepage to `https://mentorly.free.componentdock.com`
+- [ ] Update `package.json` homepage to `https://componentdock-demo-mentorly.surge.sh`
 - [ ] Run `npm install` at repo root to register workspace in lockfile
 - [ ] Set up `index.html` with Google Fonts: Playfair Display (headings) + Open Sans (body)
 - [ ] Set up `src/index.css` with Tailwind `@theme` tokens:

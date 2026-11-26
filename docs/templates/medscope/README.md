@@ -1,7 +1,7 @@
 # Medscope — Implementation TODO & Design Notes
 <!-- prep-status: shipped-as=carepath -->
 > **SHIPPED-UNDER** — the ColorLib `medcare` design this prep describes already
-> ships as `apps/carepath` (<https://carepath.free.componentdock.com>).
+> ships as `apps/carepath` (<https://componentdock-demo-carepath.surge.sh>).
 > Do not scaffold `apps/medscope`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-carepath/spec.md`.
 
