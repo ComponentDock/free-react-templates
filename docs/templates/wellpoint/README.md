@@ -1,7 +1,7 @@
 # Wellpoint — Design Notes & Implementation Checklist
 <!-- prep-status: shipped-as=clinipoint -->
 > **SHIPPED-UNDER** — the ColorLib `medica` design this prep describes already
-> ships as `apps/clinipoint` (<https://clinipoint.free.componentdock.com>).
+> ships as `apps/clinipoint` (<https://componentdock-demo-clinipoint.surge.sh>).
 > Do not scaffold `apps/wellpoint`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-clinipoint/spec.md`.
 

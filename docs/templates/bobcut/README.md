@@ -1,7 +1,7 @@
 # Bobcut — Design Notes
 <!-- prep-status: shipped-as=gilded -->
 > **SHIPPED-UNDER** — the ColorLib `akame` design this prep describes already
-> ships as `apps/gilded` (<https://gilded.free.componentdock.com>).
+> ships as `apps/gilded` (<https://componentdock-demo-gilded.surge.sh>).
 > Do not scaffold `apps/bobcut`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-gilded/spec.md`.
 

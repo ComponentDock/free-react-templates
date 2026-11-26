@@ -1,7 +1,7 @@
 # Buildex — Implementation Todo & Design Notes
 <!-- prep-status: shipped-as=structa -->
 > **SHIPPED-UNDER** — the ColorLib `consto` design this prep describes shipped
-> as `apps/structa` (<https://structa.free.componentdock.com>).
+> as `apps/structa` (<https://componentdock-demo-structa.surge.sh>).
 > The unchecked items below are prep history, not outstanding work.
 
 ## Source

@@ -1,7 +1,7 @@
 # Hearthside — ColorLib Eatery Replication
 <!-- prep-status: shipped-as=tavern -->
 > **SHIPPED-UNDER** — the ColorLib `eatery` design this prep describes already
-> ships as `apps/tavern` (<https://tavern.free.componentdock.com>).
+> ships as `apps/tavern` (<https://componentdock-demo-tavern.surge.sh>).
 > Do not scaffold `apps/hearthside`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-tavern/spec.md`.
 

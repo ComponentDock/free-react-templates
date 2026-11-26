@@ -1,7 +1,7 @@
 # Throne — Design Notes & Task Outline
 <!-- prep-status: shipped-as=reign -->
 > **SHIPPED-UNDER** — the ColorLib `monarchy` design this prep describes shipped
-> as `apps/reign` (<https://reign.free.componentdock.com>).
+> as `apps/reign` (<https://componentdock-demo-reign.surge.sh>).
 > The unchecked items below are prep history, not outstanding work.
 
 ## Source

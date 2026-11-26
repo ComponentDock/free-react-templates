@@ -1,7 +1,7 @@
 # CarouselFlick (Carousel V11 Recreation)
 <!-- prep-status: shipped-as=reel -->
 > **SHIPPED-UNDER** — the ColorLib `carousel-11` design this prep describes already
-> ships as `apps/reel` (<https://reel.free.componentdock.com>).
+> ships as `apps/reel` (<https://componentdock-demo-reel.surge.sh>).
 > Do not scaffold `apps/carouselflick`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-reel/spec.md`.
 

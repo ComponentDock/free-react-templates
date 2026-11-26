@@ -1,7 +1,7 @@
 # Civitas Template Design & Task Outline
 <!-- prep-status: shipped-as=orbiter -->
 > **SHIPPED-UNDER** — the ColorLib `stodeo` design this prep describes already
-> ships as `apps/orbiter` (<https://orbiter.free.componentdock.com>).
+> ships as `apps/orbiter` (<https://componentdock-demo-orbiter.surge.sh>).
 > Do not scaffold `apps/civitas`: the unchecked items below are prep history, not work.
 > Fidelity reference: `openspec/specs/template-orbiter/spec.md`.
 
