@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/octavo",
   "private": true,
-  "homepage": "https://octavo.free.componentdock.com",
+  "homepage": "https://componentdock-demo-octavo.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

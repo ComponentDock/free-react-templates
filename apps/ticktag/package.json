@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://ticktag.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ticktag.surge.sh"
 }

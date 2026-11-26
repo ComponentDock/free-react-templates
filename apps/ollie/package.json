@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/ollie",
   "private": true,
-  "homepage": "https://ollie.free.componentdock.com",
+  "homepage": "https://componentdock-demo-ollie.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

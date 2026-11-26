@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dealflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dealflow.surge.sh"
 }

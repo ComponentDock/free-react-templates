@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/rentora",
   "private": true,
-  "homepage": "https://rentora.free.componentdock.com",
+  "homepage": "https://componentdock-demo-rentora.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

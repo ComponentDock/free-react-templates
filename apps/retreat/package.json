@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://retreat.free.componentdock.com"
+  "homepage": "https://componentdock-demo-retreat.surge.sh"
 }

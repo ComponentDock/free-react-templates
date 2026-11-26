@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://pulse.free.componentdock.com"
+  "homepage": "https://componentdock-demo-pulse.surge.sh"
 }

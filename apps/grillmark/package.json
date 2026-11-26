@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://grillmark.free.componentdock.com"
+  "homepage": "https://componentdock-demo-grillmark.surge.sh"
 }

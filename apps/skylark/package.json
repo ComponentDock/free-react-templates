@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/skylark",
   "private": true,
-  "homepage": "https://skylark.free.componentdock.com",
+  "homepage": "https://componentdock-demo-skylark.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

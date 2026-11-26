@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/learnpath",
   "private": true,
-  "homepage": "https://learnpath.free.componentdock.com",
+  "homepage": "https://componentdock-demo-learnpath.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

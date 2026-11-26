@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://structura.free.componentdock.com"
+  "homepage": "https://componentdock-demo-structura.surge.sh"
 }

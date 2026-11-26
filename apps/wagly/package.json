@@ -2,7 +2,7 @@
   "name": "@free-react-templates/wagly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://wagly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-wagly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

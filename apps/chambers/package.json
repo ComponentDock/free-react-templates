@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://chambers.free.componentdock.com"
+  "homepage": "https://componentdock-demo-chambers.surge.sh"
 }

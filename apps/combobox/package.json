@@ -2,7 +2,7 @@
   "name": "@free-react-templates/combobox",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://combobox.free.componentdock.com",
+  "homepage": "https://componentdock-demo-combobox.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

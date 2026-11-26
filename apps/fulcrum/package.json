@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/fulcrum",
   "private": true,
-  "homepage": "https://fulcrum.free.componentdock.com",
+  "homepage": "https://componentdock-demo-fulcrum.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

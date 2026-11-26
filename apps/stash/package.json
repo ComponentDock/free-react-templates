@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/stash",
   "private": true,
-  "homepage": "https://stash.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stash.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

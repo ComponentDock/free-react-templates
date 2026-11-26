@@ -2,7 +2,7 @@
   "name": "@free-react-templates/stayquest",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://stayquest.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stayquest.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

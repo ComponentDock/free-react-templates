@@ -2,7 +2,7 @@
   "name": "@free-react-templates/facade",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://facade.free.componentdock.com",
+  "homepage": "https://componentdock-demo-facade.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

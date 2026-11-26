@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/jobnest",
   "private": true,
-  "homepage": "https://jobnest.free.componentdock.com",
+  "homepage": "https://componentdock-demo-jobnest.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

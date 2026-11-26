@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/interiora",
   "private": true,
-  "homepage": "https://interiora.free.componentdock.com",
+  "homepage": "https://componentdock-demo-interiora.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

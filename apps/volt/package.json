@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://volt.free.componentdock.com"
+  "homepage": "https://componentdock-demo-volt.surge.sh"
 }

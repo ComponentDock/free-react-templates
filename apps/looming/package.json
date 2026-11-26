@@ -2,7 +2,7 @@
   "name": "@free-react-templates/looming",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://looming.free.componentdock.com",
+  "homepage": "https://componentdock-demo-looming.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

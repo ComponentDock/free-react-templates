@@ -2,7 +2,7 @@
   "name": "@free-react-templates/fragstorm",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://fragstorm.free.componentdock.com",
+  "homepage": "https://componentdock-demo-fragstorm.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

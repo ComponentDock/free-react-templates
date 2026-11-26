@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://taskflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-taskflow.surge.sh"
 }

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://formly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-formly.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://greenplate.free.componentdock.com"
+  "homepage": "https://componentdock-demo-greenplate.surge.sh"
 }

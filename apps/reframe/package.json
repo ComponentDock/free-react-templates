@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://reframe.free.componentdock.com"
+  "homepage": "https://componentdock-demo-reframe.surge.sh"
 }

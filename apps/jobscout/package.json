@@ -2,7 +2,7 @@
   "name": "@free-react-templates/jobscout",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://jobscout.free.componentdock.com",
+  "homepage": "https://componentdock-demo-jobscout.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

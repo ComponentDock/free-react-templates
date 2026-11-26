@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://modkit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-modkit.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/sideframe",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://sideframe.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sideframe.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

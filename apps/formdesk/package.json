@@ -2,7 +2,7 @@
   "name": "@free-react-templates/formdesk",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://formdesk.free.componentdock.com",
+  "homepage": "https://componentdock-demo-formdesk.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

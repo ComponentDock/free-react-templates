@@ -2,7 +2,7 @@
   "name": "@free-react-templates/stall",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://stall.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stall.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

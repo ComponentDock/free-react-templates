@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/tidywash",
   "private": true,
-  "homepage": "https://tidywash.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tidywash.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

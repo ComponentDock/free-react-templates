@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/wavelength",
   "private": true,
-  "homepage": "https://wavelength.free.componentdock.com",
+  "homepage": "https://componentdock-demo-wavelength.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

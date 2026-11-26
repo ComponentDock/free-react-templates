@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://knot.free.componentdock.com"
+  "homepage": "https://componentdock-demo-knot.surge.sh"
 }

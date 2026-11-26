@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/netforge",
   "private": true,
-  "homepage": "https://netforge.free.componentdock.com",
+  "homepage": "https://componentdock-demo-netforge.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

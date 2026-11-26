@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginnova",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginnova.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginnova.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

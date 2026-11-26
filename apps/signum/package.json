@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://signum.free.componentdock.com"
+  "homepage": "https://componentdock-demo-signum.surge.sh"
 }

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://guideway.free.componentdock.com"
+  "homepage": "https://componentdock-demo-guideway.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/flexure",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://flexure.free.componentdock.com",
+  "homepage": "https://componentdock-demo-flexure.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

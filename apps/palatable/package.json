@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://palatable.free.componentdock.com"
+  "homepage": "https://componentdock-demo-palatable.surge.sh"
 }

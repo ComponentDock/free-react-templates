@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/homestead",
   "private": true,
-  "homepage": "https://homestead.free.componentdock.com",
+  "homepage": "https://componentdock-demo-homestead.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

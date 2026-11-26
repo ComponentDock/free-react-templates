@@ -2,7 +2,7 @@
   "name": "@free-react-templates/podlane",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://podlane.free.componentdock.com",
+  "homepage": "https://componentdock-demo-podlane.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

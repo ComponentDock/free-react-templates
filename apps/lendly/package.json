@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://lendly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-lendly.surge.sh"
 }

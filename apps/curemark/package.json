@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://curemark.free.componentdock.com"
+  "homepage": "https://componentdock-demo-curemark.surge.sh"
 }

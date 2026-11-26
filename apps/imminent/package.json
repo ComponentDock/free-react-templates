@@ -2,7 +2,7 @@
   "name": "@free-react-templates/imminent",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://imminent.free.componentdock.com",
+  "homepage": "https://componentdock-demo-imminent.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

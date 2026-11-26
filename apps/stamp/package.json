@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://stamp.free.componentdock.com"
+  "homepage": "https://componentdock-demo-stamp.surge.sh"
 }

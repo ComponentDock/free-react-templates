@@ -2,7 +2,7 @@
   "name": "@free-react-templates/forthcoming",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://forthcoming.free.componentdock.com",
+  "homepage": "https://componentdock-demo-forthcoming.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

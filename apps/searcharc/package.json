@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/searcharc",
   "private": true,
-  "homepage": "https://searcharc.free.componentdock.com",
+  "homepage": "https://componentdock-demo-searcharc.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

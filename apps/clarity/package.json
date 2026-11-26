@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://clarity.free.componentdock.com"
+  "homepage": "https://componentdock-demo-clarity.surge.sh"
 }

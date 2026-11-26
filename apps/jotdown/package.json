@@ -2,7 +2,7 @@
   "name": "@free-react-templates/jotdown",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://jotdown.free.componentdock.com",
+  "homepage": "https://componentdock-demo-jotdown.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://pyxis.free.componentdock.com"
+  "homepage": "https://componentdock-demo-pyxis.surge.sh"
 }

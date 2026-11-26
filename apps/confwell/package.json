@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://confwell.free.componentdock.com"
+  "homepage": "https://componentdock-demo-confwell.surge.sh"
 }

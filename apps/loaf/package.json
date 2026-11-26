@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://loaf.free.componentdock.com"
+  "homepage": "https://componentdock-demo-loaf.surge.sh"
 }

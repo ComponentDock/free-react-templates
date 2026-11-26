@@ -27,5 +27,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://borough.free.componentdock.com"
+  "homepage": "https://componentdock-demo-borough.surge.sh"
 }

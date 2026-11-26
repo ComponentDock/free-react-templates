@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://lodge.free.componentdock.com"
+  "homepage": "https://componentdock-demo-lodge.surge.sh"
 }

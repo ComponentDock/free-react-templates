@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regmark",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regmark.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regmark.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://relay.free.componentdock.com"
+  "homepage": "https://componentdock-demo-relay.surge.sh"
 }

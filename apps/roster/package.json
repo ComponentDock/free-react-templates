@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://roster.free.componentdock.com"
+  "homepage": "https://componentdock-demo-roster.surge.sh"
 }

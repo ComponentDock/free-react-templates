@@ -2,7 +2,7 @@
   "name": "@free-react-templates/snoutly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://snoutly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-snoutly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

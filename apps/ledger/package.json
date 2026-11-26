@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://ledger.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ledger.surge.sh"
 }

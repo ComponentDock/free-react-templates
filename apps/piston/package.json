@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://piston.free.componentdock.com"
+  "homepage": "https://componentdock-demo-piston.surge.sh"
 }

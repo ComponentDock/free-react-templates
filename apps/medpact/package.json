@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://medpact.free.componentdock.com"
+  "homepage": "https://componentdock-demo-medpact.surge.sh"
 }

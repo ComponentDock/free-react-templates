@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/expanda",
   "private": true,
-  "homepage": "https://expanda.free.componentdock.com",
+  "homepage": "https://componentdock-demo-expanda.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

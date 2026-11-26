@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://constructo.free.componentdock.com"
+  "homepage": "https://componentdock-demo-constructo.surge.sh"
 }

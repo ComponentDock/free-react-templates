@@ -29,5 +29,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://triply.free.componentdock.com"
+  "homepage": "https://componentdock-demo-triply.surge.sh"
 }

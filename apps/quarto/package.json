@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://quarto.free.componentdock.com"
+  "homepage": "https://componentdock-demo-quarto.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://ember.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ember.surge.sh"
 }

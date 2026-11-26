@@ -2,7 +2,7 @@
   "name": "@free-react-templates/terracotta",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://terracotta.free.componentdock.com",
+  "homepage": "https://componentdock-demo-terracotta.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://skylens.free.componentdock.com"
+  "homepage": "https://componentdock-demo-skylens.surge.sh"
 }

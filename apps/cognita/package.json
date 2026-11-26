@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/cognita",
   "private": true,
-  "homepage": "https://cognita.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cognita.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

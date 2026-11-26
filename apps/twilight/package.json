@@ -2,7 +2,7 @@
   "name": "@free-react-templates/twilight",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://twilight.free.componentdock.com",
+  "homepage": "https://componentdock-demo-twilight.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

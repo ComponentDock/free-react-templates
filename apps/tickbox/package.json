@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tickbox.free.componentdock.com"
+  "homepage": "https://componentdock-demo-tickbox.surge.sh"
 }

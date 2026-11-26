@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://artisan.free.componentdock.com"
+  "homepage": "https://componentdock-demo-artisan.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://percline.free.componentdock.com"
+  "homepage": "https://componentdock-demo-percline.surge.sh"
 }

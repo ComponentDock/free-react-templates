@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://shiply.free.componentdock.com"
+  "homepage": "https://componentdock-demo-shiply.surge.sh"
 }

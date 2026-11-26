@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/inkvibe",
   "private": true,
-  "homepage": "https://inkvibe.free.componentdock.com",
+  "homepage": "https://componentdock-demo-inkvibe.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

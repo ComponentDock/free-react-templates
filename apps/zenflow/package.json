@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://zenflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-zenflow.surge.sh"
 }

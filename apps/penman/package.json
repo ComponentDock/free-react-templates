@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/penman",
   "private": true,
-  "homepage": "https://penman.free.componentdock.com",
+  "homepage": "https://componentdock-demo-penman.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

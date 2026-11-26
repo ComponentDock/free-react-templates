@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://savory.free.componentdock.com"
+  "homepage": "https://componentdock-demo-savory.surge.sh"
 }

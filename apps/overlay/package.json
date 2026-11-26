@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://overlay.free.componentdock.com"
+  "homepage": "https://componentdock-demo-overlay.surge.sh"
 }

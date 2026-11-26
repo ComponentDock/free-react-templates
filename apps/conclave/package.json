@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/conclave",
   "private": true,
-  "homepage": "https://conclave.free.componentdock.com",
+  "homepage": "https://componentdock-demo-conclave.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

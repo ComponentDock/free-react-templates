@@ -2,7 +2,7 @@
   "name": "@free-react-templates/keycard",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://keycard.free.componentdock.com",
+  "homepage": "https://componentdock-demo-keycard.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

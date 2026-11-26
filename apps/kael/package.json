@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/kael",
   "private": true,
-  "homepage": "https://kael.free.componentdock.com",
+  "homepage": "https://componentdock-demo-kael.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

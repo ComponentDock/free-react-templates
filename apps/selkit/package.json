@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://selkit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-selkit.surge.sh"
 }

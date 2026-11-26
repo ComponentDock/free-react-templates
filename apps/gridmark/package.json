@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gridmark",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gridmark.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gridmark.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

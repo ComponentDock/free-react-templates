@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://flamingo.free.componentdock.com"
+  "homepage": "https://componentdock-demo-flamingo.surge.sh"
 }

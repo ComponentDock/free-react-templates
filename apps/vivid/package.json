@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vivid",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vivid.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vivid.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

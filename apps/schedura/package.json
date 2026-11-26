@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://schedura.free.componentdock.com"
+  "homepage": "https://componentdock-demo-schedura.surge.sh"
 }

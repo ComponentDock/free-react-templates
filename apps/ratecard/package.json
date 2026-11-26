@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/ratecard",
   "private": true,
-  "homepage": "https://ratecard.free.componentdock.com",
+  "homepage": "https://componentdock-demo-ratecard.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

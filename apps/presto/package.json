@@ -2,7 +2,7 @@
   "name": "@free-react-templates/presto",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://presto.free.componentdock.com",
+  "homepage": "https://componentdock-demo-presto.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

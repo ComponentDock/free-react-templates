@@ -30,5 +30,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://sapor.free.componentdock.com"
+  "homepage": "https://componentdock-demo-sapor.surge.sh"
 }

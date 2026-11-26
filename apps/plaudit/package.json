@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/plaudit",
   "private": true,
-  "homepage": "https://plaudit.free.componentdock.com",
+  "homepage": "https://componentdock-demo-plaudit.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://joule.free.componentdock.com"
+  "homepage": "https://componentdock-demo-joule.surge.sh"
 }

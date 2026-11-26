@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://erudit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-erudit.surge.sh"
 }

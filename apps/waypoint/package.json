@@ -2,7 +2,7 @@
   "name": "@free-react-templates/waypoint",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://waypoint.free.componentdock.com",
+  "homepage": "https://componentdock-demo-waypoint.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

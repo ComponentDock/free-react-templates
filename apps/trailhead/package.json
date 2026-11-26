@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://trailhead.free.componentdock.com"
+  "homepage": "https://componentdock-demo-trailhead.surge.sh"
 }

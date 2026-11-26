@@ -30,5 +30,5 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://ripply.free.componentdock.com"
+  "homepage": "https://componentdock-demo-ripply.surge.sh"
 }

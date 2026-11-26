@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://knob.free.componentdock.com"
+  "homepage": "https://componentdock-demo-knob.surge.sh"
 }

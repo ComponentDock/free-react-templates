@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://hireflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-hireflow.surge.sh"
 }

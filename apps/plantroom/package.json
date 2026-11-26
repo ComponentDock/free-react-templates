@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://plantroom.free.componentdock.com"
+  "homepage": "https://componentdock-demo-plantroom.surge.sh"
 }

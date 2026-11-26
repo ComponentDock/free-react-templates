@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/driven",
   "private": true,
-  "homepage": "https://driven.free.componentdock.com",
+  "homepage": "https://componentdock-demo-driven.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

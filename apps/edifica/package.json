@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/edifica",
   "private": true,
-  "homepage": "https://edifica.free.componentdock.com",
+  "homepage": "https://componentdock-demo-edifica.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

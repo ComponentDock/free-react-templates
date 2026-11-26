@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://lattice.free.componentdock.com"
+  "homepage": "https://componentdock-demo-lattice.surge.sh"
 }

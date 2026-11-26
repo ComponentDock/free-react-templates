@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/imminence",
   "private": true,
-  "homepage": "https://imminence.free.componentdock.com",
+  "homepage": "https://componentdock-demo-imminence.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

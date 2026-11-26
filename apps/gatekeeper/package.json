@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://gatekeeper.free.componentdock.com"
+  "homepage": "https://componentdock-demo-gatekeeper.surge.sh"
 }

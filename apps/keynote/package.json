@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://keynote.free.componentdock.com"
+  "homepage": "https://componentdock-demo-keynote.surge.sh"
 }

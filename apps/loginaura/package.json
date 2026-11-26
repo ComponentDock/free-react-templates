@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginaura",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginaura.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginaura.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://rodline.free.componentdock.com"
+  "homepage": "https://componentdock-demo-rodline.surge.sh"
 }

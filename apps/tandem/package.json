@@ -2,7 +2,7 @@
   "name": "@free-react-templates/tandem",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://tandem.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tandem.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/seaview",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://seaview.free.componentdock.com",
+  "homepage": "https://componentdock-demo-seaview.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

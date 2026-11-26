@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/merch",
   "private": true,
-  "homepage": "https://merch.free.componentdock.com",
+  "homepage": "https://componentdock-demo-merch.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/tallyboard",
   "private": true,
-  "homepage": "https://tallyboard.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tallyboard.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

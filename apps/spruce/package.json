@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/spruce",
   "private": true,
-  "homepage": "https://spruce.free.componentdock.com",
+  "homepage": "https://componentdock-demo-spruce.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

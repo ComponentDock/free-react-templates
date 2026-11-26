@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://chrono.free.componentdock.com"
+  "homepage": "https://componentdock-demo-chrono.surge.sh"
 }

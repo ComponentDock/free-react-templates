@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://buildwell.free.componentdock.com"
+  "homepage": "https://componentdock-demo-buildwell.surge.sh"
 }

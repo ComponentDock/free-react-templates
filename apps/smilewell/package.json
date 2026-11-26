@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/smilewell",
   "private": true,
-  "homepage": "https://smilewell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-smilewell.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://medflow.free.componentdock.com"
+  "homepage": "https://componentdock-demo-medflow.surge.sh"
 }

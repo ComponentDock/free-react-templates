@@ -2,7 +2,7 @@
   "name": "@free-react-templates/skybound",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://skybound.free.componentdock.com",
+  "homepage": "https://componentdock-demo-skybound.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

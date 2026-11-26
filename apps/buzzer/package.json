@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://buzzer.free.componentdock.com"
+  "homepage": "https://componentdock-demo-buzzer.surge.sh"
 }

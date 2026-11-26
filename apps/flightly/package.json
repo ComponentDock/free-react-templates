@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://flightly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-flightly.surge.sh"
 }

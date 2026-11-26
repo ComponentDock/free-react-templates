@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/hiredly",
   "private": true,
-  "homepage": "https://hiredly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-hiredly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

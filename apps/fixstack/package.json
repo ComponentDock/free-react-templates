@@ -2,7 +2,7 @@
   "name": "@free-react-templates/fixstack",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://fixstack.free.componentdock.com",
+  "homepage": "https://componentdock-demo-fixstack.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

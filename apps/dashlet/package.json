@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dashlet.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dashlet.surge.sh"
 }

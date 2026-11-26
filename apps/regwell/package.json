@@ -2,7 +2,7 @@
   "name": "@free-react-templates/regwell",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://regwell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-regwell.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/haven",
   "private": true,
-  "homepage": "https://haven.free.componentdock.com",
+  "homepage": "https://componentdock-demo-haven.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/sponson",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://sponson.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sponson.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

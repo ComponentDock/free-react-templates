@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/talon",
   "private": true,
-  "homepage": "https://talon.free.componentdock.com",
+  "homepage": "https://componentdock-demo-talon.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

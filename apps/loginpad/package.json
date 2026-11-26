@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginpad",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginpad.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginpad.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

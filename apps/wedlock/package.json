@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://wedlock.free.componentdock.com"
+  "homepage": "https://componentdock-demo-wedlock.surge.sh"
 }

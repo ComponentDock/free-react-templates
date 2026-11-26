@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://pentimento.free.componentdock.com"
+  "homepage": "https://componentdock-demo-pentimento.surge.sh"
 }

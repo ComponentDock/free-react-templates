@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://keyforge.free.componentdock.com"
+  "homepage": "https://componentdock-demo-keyforge.surge.sh"
 }

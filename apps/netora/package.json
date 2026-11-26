@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/netora",
   "private": true,
-  "homepage": "https://netora.free.componentdock.com",
+  "homepage": "https://componentdock-demo-netora.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

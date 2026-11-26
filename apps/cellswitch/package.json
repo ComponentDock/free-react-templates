@@ -2,7 +2,7 @@
   "name": "@free-react-templates/cellswitch",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://cellswitch.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cellswitch.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lexeme",
   "private": true,
-  "homepage": "https://lexeme.free.componentdock.com",
+  "homepage": "https://componentdock-demo-lexeme.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

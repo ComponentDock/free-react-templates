@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://oathmark.free.componentdock.com"
+  "homepage": "https://componentdock-demo-oathmark.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/threshold",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://threshold.free.componentdock.com",
+  "homepage": "https://componentdock-demo-threshold.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

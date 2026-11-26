@@ -2,7 +2,7 @@
   "name": "@free-react-templates/contactdrop",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://contactdrop.free.componentdock.com",
+  "homepage": "https://componentdock-demo-contactdrop.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

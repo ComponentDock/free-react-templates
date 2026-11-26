@@ -2,7 +2,7 @@
   "name": "@free-react-templates/soundbite",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://soundbite.free.componentdock.com",
+  "homepage": "https://componentdock-demo-soundbite.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

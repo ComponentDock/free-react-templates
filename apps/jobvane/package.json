@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/jobvane",
   "private": true,
-  "homepage": "https://jobvane.free.componentdock.com",
+  "homepage": "https://componentdock-demo-jobvane.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

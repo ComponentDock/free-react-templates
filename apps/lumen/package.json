@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/lumen",
   "private": true,
-  "homepage": "https://lumen.free.componentdock.com",
+  "homepage": "https://componentdock-demo-lumen.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

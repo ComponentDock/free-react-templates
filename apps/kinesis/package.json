@@ -2,7 +2,7 @@
   "name": "@free-react-templates/kinesis",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://kinesis.free.componentdock.com",
+  "homepage": "https://componentdock-demo-kinesis.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

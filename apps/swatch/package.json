@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/swatch",
   "private": true,
-  "homepage": "https://swatch.free.componentdock.com",
+  "homepage": "https://componentdock-demo-swatch.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

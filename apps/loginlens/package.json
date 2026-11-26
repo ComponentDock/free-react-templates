@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://loginlens.free.componentdock.com"
+  "homepage": "https://componentdock-demo-loginlens.surge.sh"
 }

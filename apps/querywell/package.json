@@ -2,7 +2,7 @@
   "name": "@free-react-templates/querywell",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://querywell.free.componentdock.com",
+  "homepage": "https://componentdock-demo-querywell.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

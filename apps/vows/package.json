@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://vows.free.componentdock.com"
+  "homepage": "https://componentdock-demo-vows.surge.sh"
 }

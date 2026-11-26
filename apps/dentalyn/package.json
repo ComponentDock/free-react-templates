@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/dentalyn",
   "private": true,
-  "homepage": "https://dentalyn.free.componentdock.com",
+  "homepage": "https://componentdock-demo-dentalyn.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

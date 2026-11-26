@@ -2,7 +2,7 @@
   "name": "@free-react-templates/postern",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://postern.free.componentdock.com",
+  "homepage": "https://componentdock-demo-postern.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

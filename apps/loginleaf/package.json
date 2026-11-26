@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginleaf",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginleaf.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginleaf.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

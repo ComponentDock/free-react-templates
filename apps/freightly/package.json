@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://freightly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-freightly.surge.sh"
 }

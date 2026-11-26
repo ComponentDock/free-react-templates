@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://conjure.free.componentdock.com"
+  "homepage": "https://componentdock-demo-conjure.surge.sh"
 }

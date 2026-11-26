@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://brio.free.componentdock.com"
+  "homepage": "https://componentdock-demo-brio.surge.sh"
 }

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://sarto.free.componentdock.com"
+  "homepage": "https://componentdock-demo-sarto.surge.sh"
 }

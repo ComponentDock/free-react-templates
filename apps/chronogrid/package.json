@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://chronogrid.free.componentdock.com"
+  "homepage": "https://componentdock-demo-chronogrid.surge.sh"
 }

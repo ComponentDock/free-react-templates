@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://drifter.free.componentdock.com"
+  "homepage": "https://componentdock-demo-drifter.surge.sh"
 }

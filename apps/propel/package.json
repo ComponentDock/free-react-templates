@@ -30,5 +30,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://propel.free.componentdock.com"
+  "homepage": "https://componentdock-demo-propel.surge.sh"
 }

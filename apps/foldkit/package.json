@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/foldkit",
   "private": true,
-  "homepage": "https://foldkit.free.componentdock.com",
+  "homepage": "https://componentdock-demo-foldkit.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

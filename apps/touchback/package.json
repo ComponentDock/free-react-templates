@@ -28,5 +28,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://touchback.free.componentdock.com"
+  "homepage": "https://componentdock-demo-touchback.surge.sh"
 }

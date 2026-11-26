@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jurist.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jurist.surge.sh"
 }

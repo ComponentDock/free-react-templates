@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://panorama.free.componentdock.com"
+  "homepage": "https://componentdock-demo-panorama.surge.sh"
 }

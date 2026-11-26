@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://deskly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-deskly.surge.sh"
 }

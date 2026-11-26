@@ -2,7 +2,7 @@
   "name": "@free-react-templates/nova",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://nova.free.componentdock.com",
+  "homepage": "https://componentdock-demo-nova.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

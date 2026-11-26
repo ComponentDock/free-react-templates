@@ -2,7 +2,7 @@
   "name": "@free-react-templates/drayage",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://drayage.free.componentdock.com",
+  "homepage": "https://componentdock-demo-drayage.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

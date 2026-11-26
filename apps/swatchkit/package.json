@@ -30,5 +30,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://swatchkit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-swatchkit.surge.sh"
 }

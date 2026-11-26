@@ -2,7 +2,7 @@
   "name": "@free-react-templates/premiere",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://premiere.free.componentdock.com",
+  "homepage": "https://componentdock-demo-premiere.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

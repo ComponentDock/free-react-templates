@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://carouselhub.free.componentdock.com"
+  "homepage": "https://componentdock-demo-carouselhub.surge.sh"
 }

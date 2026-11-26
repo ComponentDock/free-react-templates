@@ -2,7 +2,7 @@
   "name": "@free-react-templates/strive",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://strive.free.componentdock.com",
+  "homepage": "https://componentdock-demo-strive.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

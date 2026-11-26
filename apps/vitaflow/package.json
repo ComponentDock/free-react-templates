@@ -2,7 +2,7 @@
   "name": "@free-react-templates/vitaflow",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://vitaflow.free.componentdock.com",
+  "homepage": "https://componentdock-demo-vitaflow.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

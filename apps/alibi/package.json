@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://alibi.free.componentdock.com"
+  "homepage": "https://componentdock-demo-alibi.surge.sh"
 }

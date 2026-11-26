@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://landly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-landly.surge.sh"
 }

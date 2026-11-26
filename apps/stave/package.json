@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/stave",
   "private": true,
-  "homepage": "https://stave.free.componentdock.com",
+  "homepage": "https://componentdock-demo-stave.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

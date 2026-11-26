@@ -2,7 +2,7 @@
   "name": "@free-react-templates/skyvault",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://skyvault.free.componentdock.com",
+  "homepage": "https://componentdock-demo-skyvault.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://aperture.free.componentdock.com"
+  "homepage": "https://componentdock-demo-aperture.surge.sh"
 }

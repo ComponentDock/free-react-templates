@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://modalpoint.free.componentdock.com"
+  "homepage": "https://componentdock-demo-modalpoint.surge.sh"
 }

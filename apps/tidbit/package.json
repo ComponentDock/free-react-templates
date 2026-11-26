@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tidbit.free.componentdock.com"
+  "homepage": "https://componentdock-demo-tidbit.surge.sh"
 }

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/cantrip",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://cantrip.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cantrip.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

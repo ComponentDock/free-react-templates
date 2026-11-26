@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://closet.free.componentdock.com"
+  "homepage": "https://componentdock-demo-closet.surge.sh"
 }

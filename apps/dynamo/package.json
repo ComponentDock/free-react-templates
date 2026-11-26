@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://dynamo.free.componentdock.com"
+  "homepage": "https://componentdock-demo-dynamo.surge.sh"
 }

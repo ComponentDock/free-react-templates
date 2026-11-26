@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/ascent",
   "private": true,
-  "homepage": "https://ascent.free.componentdock.com",
+  "homepage": "https://componentdock-demo-ascent.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

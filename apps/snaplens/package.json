@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://snaplens.free.componentdock.com"
+  "homepage": "https://componentdock-demo-snaplens.surge.sh"
 }

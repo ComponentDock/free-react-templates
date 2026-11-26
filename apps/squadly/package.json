@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://squadly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-squadly.surge.sh"
 }

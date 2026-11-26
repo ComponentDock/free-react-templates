@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://jetpath.free.componentdock.com"
+  "homepage": "https://componentdock-demo-jetpath.surge.sh"
 }

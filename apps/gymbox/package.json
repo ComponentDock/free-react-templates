@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/gymbox",
   "private": true,
-  "homepage": "https://gymbox.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gymbox.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

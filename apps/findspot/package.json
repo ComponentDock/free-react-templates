@@ -2,7 +2,7 @@
   "name": "@free-react-templates/findspot",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://findspot.free.componentdock.com",
+  "homepage": "https://componentdock-demo-findspot.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

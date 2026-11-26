@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/banter",
   "private": true,
-  "homepage": "https://banter.free.componentdock.com",
+  "homepage": "https://componentdock-demo-banter.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

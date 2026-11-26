@@ -2,7 +2,7 @@
   "name": "@free-react-templates/relaybox",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://relaybox.free.componentdock.com",
+  "homepage": "https://componentdock-demo-relaybox.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

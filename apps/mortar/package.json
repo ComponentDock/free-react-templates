@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/mortar",
   "private": true,
-  "homepage": "https://mortar.free.componentdock.com",
+  "homepage": "https://componentdock-demo-mortar.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

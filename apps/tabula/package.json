@@ -2,7 +2,7 @@
   "name": "@free-react-templates/tabula",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://tabula.free.componentdock.com",
+  "homepage": "https://componentdock-demo-tabula.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

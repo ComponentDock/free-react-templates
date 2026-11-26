@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/colloquium",
   "private": true,
-  "homepage": "https://colloquium.free.componentdock.com",
+  "homepage": "https://componentdock-demo-colloquium.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

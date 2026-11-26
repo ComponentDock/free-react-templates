@@ -2,7 +2,7 @@
   "name": "@free-react-templates/nodely",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://nodely.free.componentdock.com",
+  "homepage": "https://componentdock-demo-nodely.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

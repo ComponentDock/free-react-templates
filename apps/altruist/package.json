@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/altruist",
   "private": true,
-  "homepage": "https://altruist.free.componentdock.com",
+  "homepage": "https://componentdock-demo-altruist.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

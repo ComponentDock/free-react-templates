@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://fellowship.free.componentdock.com"
+  "homepage": "https://componentdock-demo-fellowship.surge.sh"
 }

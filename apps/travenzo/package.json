@@ -2,7 +2,7 @@
   "name": "@free-react-templates/travenzo",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://travenzo.free.componentdock.com",
+  "homepage": "https://componentdock-demo-travenzo.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

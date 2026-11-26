@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/limelight",
   "private": true,
-  "homepage": "https://limelight.free.componentdock.com",
+  "homepage": "https://componentdock-demo-limelight.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

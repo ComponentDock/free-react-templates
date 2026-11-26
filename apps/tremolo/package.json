@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tremolo.free.componentdock.com"
+  "homepage": "https://componentdock-demo-tremolo.surge.sh"
 }

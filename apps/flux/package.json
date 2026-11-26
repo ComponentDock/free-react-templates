@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://flux.free.componentdock.com"
+  "homepage": "https://componentdock-demo-flux.surge.sh"
 }

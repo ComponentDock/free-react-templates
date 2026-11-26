@@ -2,7 +2,7 @@
   "name": "@free-react-templates/barkly",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://barkly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-barkly.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

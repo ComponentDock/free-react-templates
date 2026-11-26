@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://prelude.free.componentdock.com"
+  "homepage": "https://componentdock-demo-prelude.surge.sh"
 }

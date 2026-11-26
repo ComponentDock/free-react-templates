@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://coverly.free.componentdock.com"
+  "homepage": "https://componentdock-demo-coverly.surge.sh"
 }

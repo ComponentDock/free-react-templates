@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://fitforge.free.componentdock.com"
+  "homepage": "https://componentdock-demo-fitforge.surge.sh"
 }

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/medair",
   "private": true,
-  "homepage": "https://medair.free.componentdock.com",
+  "homepage": "https://componentdock-demo-medair.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

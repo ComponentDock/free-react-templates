@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/concertina",
   "private": true,
-  "homepage": "https://concertina.free.componentdock.com",
+  "homepage": "https://componentdock-demo-concertina.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

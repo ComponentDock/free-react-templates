@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/batter",
   "private": true,
-  "homepage": "https://batter.free.componentdock.com",
+  "homepage": "https://componentdock-demo-batter.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

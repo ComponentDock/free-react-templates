@@ -31,6 +31,6 @@
     "vite": "latest",
     "vitest": "latest"
   },
-  "homepage": "https://juris.free.componentdock.com",
+  "homepage": "https://componentdock-demo-juris.surge.sh",
   "description": "Juris \u2014 a free law-firm one-page template with practice areas, a quote form, testimonials, news and a CTA band, built with React, Tailwind CSS, and TypeScript."
 }

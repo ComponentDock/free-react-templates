@@ -2,7 +2,7 @@
   "name": "@free-react-templates/gallery",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://gallery.free.componentdock.com",
+  "homepage": "https://componentdock-demo-gallery.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/shutterly",
   "private": true,
-  "homepage": "https://shutterly.free.componentdock.com",
+  "homepage": "https://componentdock-demo-shutterly.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

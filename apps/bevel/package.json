@@ -2,7 +2,7 @@
   "name": "@free-react-templates/bevel",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://bevel.free.componentdock.com",
+  "homepage": "https://componentdock-demo-bevel.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/counsel",
   "private": true,
-  "homepage": "https://counsel.free.componentdock.com",
+  "homepage": "https://componentdock-demo-counsel.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

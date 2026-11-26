@@ -2,7 +2,7 @@
   "name": "@free-react-templates/carousel-vane",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://carousel-vane.free.componentdock.com",
+  "homepage": "https://componentdock-demo-carousel-vane.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

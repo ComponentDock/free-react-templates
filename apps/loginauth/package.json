@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginauth",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginauth.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginauth.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

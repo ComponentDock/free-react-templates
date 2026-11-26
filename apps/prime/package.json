@@ -2,7 +2,7 @@
   "name": "@free-react-templates/prime",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://prime.free.componentdock.com",
+  "homepage": "https://componentdock-demo-prime.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

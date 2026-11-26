@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/pleat",
   "private": true,
-  "homepage": "https://pleat.free.componentdock.com",
+  "homepage": "https://componentdock-demo-pleat.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/loginox",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://loginox.free.componentdock.com",
+  "homepage": "https://componentdock-demo-loginox.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,7 +2,7 @@
   "name": "@free-react-templates/cloud",
   "private": true,
   "version": "0.1.0",
-  "homepage": "https://cloud.free.componentdock.com",
+  "homepage": "https://componentdock-demo-cloud.surge.sh",
   "type": "module",
   "scripts": {
     "dev": "vite",

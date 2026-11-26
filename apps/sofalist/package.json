@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/sofalist",
   "private": true,
-  "homepage": "https://sofalist.free.componentdock.com",
+  "homepage": "https://componentdock-demo-sofalist.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

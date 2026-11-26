@@ -29,5 +29,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://arlo.free.componentdock.com"
+  "homepage": "https://componentdock-demo-arlo.surge.sh"
 }

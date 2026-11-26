@@ -1,7 +1,7 @@
 {
   "name": "@free-react-templates/weft",
   "private": true,
-  "homepage": "https://weft.free.componentdock.com",
+  "homepage": "https://componentdock-demo-weft.surge.sh",
   "version": "0.1.0",
   "type": "module",
   "scripts": {

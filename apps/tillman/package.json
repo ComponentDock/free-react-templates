@@ -27,5 +27,5 @@
     "typescript": "latest",
     "vite": "latest"
   },
-  "homepage": "https://tillman.free.componentdock.com"
+  "homepage": "https://componentdock-demo-tillman.surge.sh"
 }
